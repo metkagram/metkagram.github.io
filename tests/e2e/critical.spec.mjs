@@ -1,0 +1,52 @@
+import { expect, test } from "@playwright/test";
+
+test("English and Russian interfaces stay separate and locale switch preserves context", async ({ page }) => {
+  await page.goto("/en/explore/german/dialogues/");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Dialogues");
+  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await expect(page).toHaveURL(/\/ru\/explore\/german\/dialogues\/$/);
+  await expect(page.locator("html")).toHaveAttribute("lang", "ru");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Диалоги");
+});
+
+test("English and German practice filters work", async ({ page }) => {
+  await page.goto("/en/practice/");
+  const rows = page.locator("[data-pattern-list] > a");
+  await expect(rows).toHaveCount(236);
+  await page.locator('[data-language-filter="de"]').click();
+  const visible = page.locator("[data-pattern-list] > a:visible");
+  await expect(visible).not.toHaveCount(0);
+  await expect(visible.first()).toHaveAttribute("data-language", /en/);
+});
+
+test("review queue saves an SRS result", async ({ page }) => {
+  await page.goto("/en/review/");
+  await expect(page.locator("[data-review-title]")).not.toBeEmpty();
+  await page.locator("[data-reveal]").click();
+  await page.locator('[data-grade="1"]').click();
+  const stored = await page.evaluate(() => localStorage.getItem("metkagram:progress:v2"));
+  expect(stored).toContain('"reps":1');
+});
+
+test("progress page renders stored statistics", async ({ page }) => {
+  await page.goto("/en/progress/");
+  await page.evaluate(() => {
+    const state = { id: "CON001", reps: 1, ease: 2.5, interval: 1, last: Date.now(), next: Date.now() + 86400000, history: [{ t: Date.now(), grade: 1 }] };
+    localStorage.setItem("metkagram:progress:v2", JSON.stringify({ schemaVersion: 2, exportedAt: new Date().toISOString(), records: { CON001: state } }));
+  });
+  await page.reload();
+  await expect(page.locator("[data-stat-reviewed]")).toHaveText("1");
+  await expect(page.locator("[data-progress-rows] tr")).toHaveCount(1);
+});
+
+test("mobile navigation opens and keyboard focus is visible", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile", "mobile-only assertion");
+  await page.goto("/ru/");
+  const menu = page.locator("[data-menu-toggle]");
+  await expect(menu).toBeVisible();
+  await menu.click();
+  await expect(page.locator("#site-nav")).toHaveAttribute("data-open", "true");
+  await page.keyboard.press("Tab");
+  await expect(page.locator(":focus")).toBeVisible();
+});

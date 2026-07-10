@@ -1,0 +1,21 @@
+{
+  "name": "metkagram.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static bilingual Metkagram language notation workspace",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "test:e2e": "playwright test",
+    "verify": "npm run build && npm test && npm run check:links"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
