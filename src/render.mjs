@@ -57,7 +57,7 @@ function header(locale, pathname) {
   ];
   return `<a class="skip-link" href="#content">${t.skip}</a>
   <header class="site-header">
-    <a class="wordmark" href="/${locale}/"><span aria-hidden="true">M:</span> Metkagram</a>
+    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><span class="brand-metka" aria-hidden="true">Metka</span><span class="brand-gram" aria-hidden="true">gram</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">${t.menu}</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
@@ -73,7 +73,7 @@ function header(locale, pathname) {
 function footer(locale) {
   const t = ui[locale];
   return `<footer class="site-footer">
-    <p class="footer-mark">M: Metkagram</p>
+    <p class="footer-mark"><span class="brand-metka">Metka</span><span class="brand-gram">gram</span></p>
     <nav aria-label="Footer"><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/data/catalog.json">${t.datasets}</a><a href="/${locale}/about/#privacy">${t.privacy}</a></nav>
     <p>${t.connected}</p>
   </footer>`;
@@ -146,18 +146,14 @@ export function localeHome(locale, content) {
     counts[target.key] = Object.fromEntries(collectionKeys.map((key) => [key, content.collections[target.key][key].documents.length]));
   }
   const pathname = `/${locale}/`;
-  const body = `<section class="intro-grid section-pad">
-    <div class="intro-copy"><p class="eyebrow">Metkagram · notation workspace</p><h1>${t.statement}</h1><p class="lede">${t.statementDetail}</p>${languageTabs(locale)}</div>
-    ${annotatedPreview()}
-  </section>
-  <section class="entry-points section-pad ruled" aria-labelledby="entry-title">
-    <div class="section-heading"><p class="eyebrow">01 · ${t.collections}</p><h2 id="entry-title">${t.collectionOverview}</h2></div>
-    <div class="entry-list">
-      ${collectionKeys.map((key, index) => `<a href="/${locale}/explore/english/${key}/"><span class="entry-index">0${index + 1}</span><strong>${t[key]}</strong><span>${counts.english[key]} EN · ${counts.german[key]} DE ${t.sets}</span><span aria-hidden="true">↗</span></a>`).join("")}
-      <a href="/${locale}/practice/"><span class="entry-index">04</span><strong>${t.navPractice}</strong><span>${content.advancedPatterns.length} B2–C1 ${t.patterns.toLowerCase()}</span><span aria-hidden="true">↗</span></a>
+  const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
+  const body = `<section class="home-hero section-pad">
+    <div class="home-copy"><p class="eyebrow">Metkagram · language notation</p><h1>${t.statement}</h1><p class="lede">${t.statementDetail}</p>
+      <section class="language-picker" aria-labelledby="language-picker-title"><div><h2 id="language-picker-title">${t.homeLanguageTitle}</h2><p>${t.homeLanguageDetail}</p></div><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>
     </div>
+    <div class="home-example">${annotatedPreview()}</div>
   </section>
-  <section class="method-strip section-pad" aria-labelledby="method-title"><div><p class="eyebrow">02 · ${t.navMethod}</p><h2 id="method-title">${t.methodTitle}</h2></div><ol><li>${t.methodSentence}</li><li>${t.methodAnnotation}</li><li>${t.methodPatterns}</li><li>${t.methodSrs}</li></ol><a class="text-link" href="/${locale}/method/">${t.navMethod} →</a></section>`;
+  <section class="next-actions section-pad ruled" aria-labelledby="next-actions-title"><div class="section-heading"><p class="eyebrow">01 · ${t.home}</p><h2 id="next-actions-title">${t.homeStartTitle}</h2></div><div class="next-action-grid"><a href="/${locale}/explore/"><span class="entry-index">01</span><strong>${t.navExplore}</strong><p>${t.homeExploreDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/practice/"><span class="entry-index">02</span><strong>${t.navPractice}</strong><p>${t.homePracticeDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/method/"><span class="entry-index">03</span><strong>${t.navMethod}</strong><p>${t.homeMethodDetail}</p><span aria-hidden="true">→</span></a></div></section>`;
   const structuredData = [
     { "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] },
     { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Metkagram", applicationCategory: "EducationalApplication", operatingSystem: "Web", url: `${SITE_URL}/${locale}/`, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }
@@ -310,7 +306,7 @@ export function aboutPage(locale) {
 
 export function gatewayPage() {
   const t = ui.en;
-  const body = `<section class="gateway"><a class="wordmark" href="/en/"><span aria-hidden="true">M:</span> Metkagram</a><div>${annotatedPreview()}<p class="eyebrow">${t.chooseInterface}</p><h1>${t.gatewayText}</h1><nav><a href="/en/" lang="en"><strong>English</strong><span>Open interface →</span></a><a href="/ru/" lang="ru"><strong>Русский</strong><span>Открыть интерфейс →</span></a></nav><aside data-locale-suggestion hidden><p>${t.browserSuggestion}</p><a href="/ru/">${t.openRussian}</a><button type="button" data-dismiss-locale>${t.stayEnglish}</button></aside></div><footer><a href="https://github.com/metkagram/metkagram.github.io">GitHub</a><a href="/llms.txt">llms.txt</a></footer></section>`;
+  const body = `<section class="gateway"><a class="wordmark" href="/en/" aria-label="Metkagram"><span class="brand-metka" aria-hidden="true">Metka</span><span class="brand-gram" aria-hidden="true">gram</span></a><div>${annotatedPreview()}<p class="eyebrow">${t.chooseInterface}</p><h1>${t.gatewayText}</h1><nav><a href="/en/" lang="en"><strong>English</strong><span>Open interface →</span></a><a href="/ru/" lang="ru"><strong>Русский</strong><span>Открыть интерфейс →</span></a></nav><aside data-locale-suggestion hidden><p>${t.browserSuggestion}</p><a href="/ru/">${t.openRussian}</a><button type="button" data-dismiss-locale>${t.stayEnglish}</button></aside></div><footer><a href="https://github.com/metkagram/metkagram.github.io">GitHub</a><a href="/llms.txt">llms.txt</a></footer></section>`;
   return layout({ locale: "en", pathname: "/", title: "Metkagram — choose your interface language", description: t.gatewayText, body, root: true, bodyClass: "gateway-body", structuredData: [{ "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] }] });
 }
 

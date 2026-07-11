@@ -25,11 +25,11 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
   const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
   assert.match(en, /<html lang="en">/);
-  assert.match(en, /See how a sentence works/);
-  assert.doesNotMatch(en, /Разберите устройство фразы/);
+  assert.match(en, /Read the sentence\. Reuse the pattern\./);
+  assert.doesNotMatch(en, /Читайте фразу\. Используйте паттерн\./);
   assert.match(ru, /<html lang="ru">/);
-  assert.match(ru, /Разберите устройство фразы/);
-  assert.doesNotMatch(ru, /See how a sentence works/);
+  assert.match(ru, /Читайте фразу\. Используйте паттерн\./);
+  assert.doesNotMatch(ru, /Read the sentence\. Reuse the pattern\./);
 });
 
 test("localized route switch preserves path context", () => {
