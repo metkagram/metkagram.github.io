@@ -2,12 +2,21 @@
 
 ## Visual thesis
 
-Metkagram is a precise language-notation workspace: part warm paper notebook, part structured data explorer. The sentence is the main visual object. Interface chrome stays quiet enough for grammar roles, translations and reusable patterns to remain primary.
+Metkagram is a precise grammar-markup workspace: part quiet reading surface, part structured pattern explorer. The sentence is the main visual object. Interface chrome stays quiet enough for grammar roles, translations and reusable patterns to remain primary.
+
+## Brand assets
+
+- Use `/public/assets/logo/metkagram-logo-light.svg` on paper and white surfaces.
+- Use `/public/assets/logo/metkagram-logo-dark.svg` only on dark surfaces.
+- Use `/public/assets/icons/metkagram-mark.svg` for compact app/icon contexts.
+- Use `/public/assets/social/metkagram-social-preview-1200x630.png` for Open Graph and social cards.
+- Preserve the logo’s yellow tag, angle-bracket construction and clear space. Do not recreate the lockup with text or CSS.
 
 ## Foundations
 
-- **Surface**: warm paper `#f2efe6`, deep paper `#e7e1d4`, light working surface `#faf8f1`.
-- **Ink**: graphite `#1d211f`; secondary copy `#656963`.
+- **Surface**: brand off-white `#F7F7F3`, deep paper `#EDEDE7`, white reading surface `#FFFFFF`.
+- **Ink**: brand black `#111111`; secondary copy `#5F5F5A`.
+- **Accent**: brand yellow `#FFC400` is reserved for the logo tag, a primary hover accent and subject markup.
 - **Lines**: thin neutral rules create a baseline/grid rhythm without boxing every region.
 - **Typography**: Inter for reading and IBM Plex Mono for grammar tags, IDs, counts, controls and technical notation. Both have system fallbacks.
 - **Spacing**: six-step scale from `.375rem` through `4.5rem`; page width is capped at `82rem`.
