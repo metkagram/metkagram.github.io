@@ -18,6 +18,8 @@ test("English and German practice filters work", async ({ page }) => {
   const visible = page.locator("[data-pattern-list] > a:visible");
   await expect(visible).not.toHaveCount(0);
   await expect(visible.first()).toHaveAttribute("data-language", /en/);
+  await page.locator("[data-pattern-search]").fill("would");
+  await expect(page.locator("[data-pattern-count]")).toHaveText("Showing 7 patterns");
 });
 
 test("review queue saves an SRS result", async ({ page }) => {

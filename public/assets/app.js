@@ -2,8 +2,8 @@ import { CODE_PATTERN, dueIds, loadCode, loadProgress, mergeStates, normalizeEnv
 
 const locale = document.documentElement.lang === "ru" ? "ru" : "en";
 const copy = {
-  en: { reviewSaved: "Review saved.", counter: "due", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", syncDone: "Progress synchronized.", syncError: "Synchronization failed. Your local progress is safe.", syncWorking: "Synchronizing…", invalidCode: "Use 3–64 letters, numbers, - or _.", days: "days", due: "Due", yes: "yes", no: "no" },
-  ru: { reviewSaved: "Повторение сохранено.", counter: "к повторению", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", syncDone: "Прогресс синхронизирован.", syncError: "Не удалось синхронизировать. Локальный прогресс сохранён.", syncWorking: "Идёт синхронизация…", invalidCode: "Используйте 3–64 буквы, цифры, - или _.", days: "дней", due: "Сейчас", yes: "да", no: "нет" }
+  en: { reviewSaved: "Review saved.", counter: "due", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", syncDone: "Progress synchronized.", syncError: "Synchronization failed. Your local progress is safe.", syncWorking: "Synchronizing…", invalidCode: "Use 3–64 letters, numbers, - or _.", days: "days", due: "Due", yes: "yes", no: "no", showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
+  ru: { reviewSaved: "Повторение сохранено.", counter: "к повторению", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", syncDone: "Прогресс синхронизирован.", syncError: "Не удалось синхронизировать. Локальный прогресс сохранён.", syncWorking: "Идёт синхронизация…", invalidCode: "Используйте 3–64 буквы, цифры, - или _.", days: "дней", due: "Сейчас", yes: "да", no: "нет", showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
 }[locale];
 
 function setupMenu() {
@@ -33,6 +33,7 @@ function setupCollectionSearch() {
   if (!input || !list) return;
   const items = [...list.querySelectorAll("a[data-search-text]")];
   const empty = list.querySelector("[data-empty-state]");
+  const count = document.querySelector("[data-collection-count]");
   input.addEventListener("input", () => {
     const query = input.value.trim().toLocaleLowerCase(locale);
     let visible = 0;
@@ -42,6 +43,7 @@ function setupCollectionSearch() {
       if (match) visible += 1;
     }
     if (empty) empty.hidden = visible > 0;
+    if (count) count.textContent = `${copy.showing} ${visible} ${copy.of} ${items.length} ${copy.sets}`;
   });
 }
 
@@ -53,6 +55,7 @@ function setupPatternFilters() {
   const search = document.querySelector("[data-pattern-search]");
   const items = [...list.querySelectorAll("a[data-language]")];
   const empty = list.querySelector("[data-empty-state]");
+  const count = document.querySelector("[data-pattern-count]");
   const apply = () => {
     const active = buttons.filter((button) => button.getAttribute("aria-pressed") === "true").map((button) => button.dataset.languageFilter);
     const query = search?.value.trim().toLocaleLowerCase(locale) || "";
@@ -67,6 +70,7 @@ function setupPatternFilters() {
       if (match) visible += 1;
     }
     if (empty) empty.hidden = visible > 0;
+    if (count) count.textContent = `${copy.showing} ${visible} ${copy.patterns}`;
   };
   buttons.forEach((button) => button.addEventListener("click", () => {
     const next = button.getAttribute("aria-pressed") !== "true";
