@@ -8,7 +8,7 @@
 - Trailing-slash policy: directory URLs with trailing slash
 - Progress compatibility: metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added
 
-## Automated verification (2026-07-10)
+## Automated verification (2026-07-11)
 
 - Static build: pass
 - Node content/migration/SRS tests: **12 passed**
@@ -19,10 +19,13 @@
 - MetalHatsCats typecheck: pass
 - MetalHatsCats production build: pass
 - MetalHatsCats migration validator: **2502 old URLs mapped**
+- Live Pages routes and assets: pass
+- Live slash/non-slash redirects: direct 308 pass
+- Live SRS preflight CORS: 204 pass
 
 Screenshots are stored in `reports/screenshots/`; Lighthouse JSON is stored at `reports/lighthouse-home.json`.
 
 ## External steps
 
-- Enable GitHub Pages with GitHub Actions as the source after the initial push.
-- Keep the MetalHatsCats SRS compatibility API and transfer utility available during migration.
+- No launch blockers remain.
+- Retain the MetalHatsCats SRS compatibility API, transfer utility, and permanent redirects for at least one year (preferably indefinitely).
