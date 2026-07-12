@@ -162,10 +162,8 @@ export function localeHome(locale, content) {
   const pathname = `/${locale}/`;
   const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
   const body = `<section class="home-hero section-pad">
-    <div class="home-copy"><p class="eyebrow">Metkagram · language notation</p><h1>${t.statement}</h1><p class="lede">${t.statementDetail}</p>
-      <section class="language-picker" aria-labelledby="language-picker-title"><div><h2 id="language-picker-title">${t.homeLanguageTitle}</h2><p>${t.homeLanguageDetail}</p></div><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>
-    </div>
-    <div class="home-example">${annotatedPreview()}</div>
+    <h1 class="sr-only">${t.statement}</h1>
+    <div class="home-example">${annotatedPreview()}<section class="home-language-bar" aria-labelledby="language-picker-title"><p class="eyebrow" id="language-picker-title">${t.homeLanguageTitle}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section></div>
   </section>
   <section class="next-actions section-pad ruled" aria-labelledby="next-actions-title"><div class="section-heading"><p class="eyebrow">01 · ${t.home}</p><h2 id="next-actions-title">${t.homeStartTitle}</h2></div><div class="next-action-grid"><a href="/${locale}/explore/"><span class="entry-index">01</span><strong>${t.navExplore}</strong><p>${t.homeExploreDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/practice/"><span class="entry-index">02</span><strong>${t.navPractice}</strong><p>${t.homePracticeDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/method/"><span class="entry-index">03</span><strong>${t.navMethod}</strong><p>${t.homeMethodDetail}</p><span aria-hidden="true">→</span></a></div></section>`;
   const structuredData = [
