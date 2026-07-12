@@ -36,6 +36,10 @@ Repository settings must use **GitHub Actions** as the Pages source. This is an 
 
 No secrets are required by the static site. Progress synchronization calls the retained MetalHatsCats compatibility API from the browser. The API allows only the production Metkagram origin and keeps existing sync codes compatible.
 
+## License
+
+Metkagram materials are available under [CC BY-NC 4.0](LICENSE): free for personal, educational, research, and other non-commercial use with attribution. Commercial use requires prior written permission.
+
 ## Content updates
 
 Canonical source files are under `data/`:

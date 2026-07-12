@@ -70,11 +70,11 @@ function header(locale, pathname) {
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
     </nav>
-    <div class="locale-switch" aria-label="${t.chooseInterface}">
+    ${pathname === `/${locale}/` ? "" : `<div class="locale-switch" aria-label="${t.chooseInterface}">
       <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
       <span aria-hidden="true">/</span>
       <a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}>RU</a>
-    </div>
+    </div>`}
   </header>`;
 }
 
@@ -82,7 +82,7 @@ function footer(locale) {
   const t = ui[locale];
   return `<footer class="site-footer">
     <a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a>
-    <nav aria-label="Footer"><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/data/catalog.json">${t.datasets}</a><a href="/${locale}/about/#privacy">${t.privacy}</a></nav>
+    <nav aria-label="Footer"><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a><a href="/${locale}/about/#privacy">${t.privacy}</a></nav>
     <p>${t.connected}</p>
   </footer>`;
 }
@@ -161,10 +161,13 @@ export function localeHome(locale, content) {
   const pathname = `/${locale}/`;
   const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
   const body = `<section class="home-hero section-pad">
-    <h1 class="sr-only">${t.statement}</h1>
-    <div class="home-example">${annotatedPreview()}<section class="home-language-bar" aria-labelledby="language-picker-title"><p class="eyebrow" id="language-picker-title">${t.homeLanguageTitle}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section></div>
+    <div class="home-intro"><div><p class="eyebrow">Metkagram · language notation</p><h1>${t.statement}</h1><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p></div>
+      <aside class="interface-choice" aria-labelledby="interface-language-title"><p class="eyebrow" id="interface-language-title">${t.homeInterfaceTitle}</p><p>${t.homeInterfaceDetail}</p><nav><a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}><strong>EN</strong><span>English</span></a><a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}><strong>RU</strong><span>Русский</span></a></nav></aside>
+    </div>
   </section>
-  <section class="next-actions section-pad ruled" aria-labelledby="next-actions-title"><div class="section-heading"><p class="eyebrow">01 · ${t.home}</p><h2 id="next-actions-title">${t.homeStartTitle}</h2></div><div class="next-action-grid"><a href="/${locale}/explore/"><span class="entry-index">01</span><strong>${t.navExplore}</strong><p>${t.homeExploreDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/practice/"><span class="entry-index">02</span><strong>${t.navPractice}</strong><p>${t.homePracticeDetail}</p><span aria-hidden="true">→</span></a><a href="/${locale}/method/"><span class="entry-index">03</span><strong>${t.navMethod}</strong><p>${t.homeMethodDetail}</p><span aria-hidden="true">→</span></a></div></section>`;
+  <section class="home-paths section-pad ruled" aria-labelledby="home-paths-title"><div class="section-heading"><p class="eyebrow">01 · ${t.home}</p><h2 id="home-paths-title">${t.homeStartTitle}</h2></div><div class="home-path-grid"><a href="/${locale}/explore/"><span class="entry-index">01</span><div><strong>${t.homeSetsTitle}</strong><p>${t.homeSetsDetail}</p></div><span aria-hidden="true">→</span></a><a href="/${locale}/practice/"><span class="entry-index">02</span><div><strong>${t.homePatternsTitle}</strong><p>${t.homePatternsDetail}</p></div><span aria-hidden="true">→</span></a></div>
+  <section class="study-language" aria-labelledby="language-picker-title"><p class="eyebrow" id="language-picker-title">${t.homeLanguageTitle}</p><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section></section>
+  <section class="home-method section-pad ruled" aria-labelledby="home-method-title"><div><p class="eyebrow">02 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span>${step}</li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.navMethod} →</a></div></section>`;
   const structuredData = [
     { "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] },
     { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Metkagram", applicationCategory: "EducationalApplication", operatingSystem: "Web", url: `${SITE_URL}/${locale}/`, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }
@@ -311,8 +314,16 @@ export function methodPage(locale) {
 export function aboutPage(locale) {
   const t = ui[locale];
   const pathname = `/${locale}/about/`;
-  const body = `<section class="page-head section-pad"><p class="eyebrow">M: · project notes</p><h1>${t.aboutTitle}</h1><p class="lede">${t.aboutIntro}</p></section><section class="about-sections section-pad ruled"><article><h2>${t.license}</h2><p>${locale === "ru" ? "Структурированные коллекции публикуются для обучения и исследовательского использования с указанием Metkagram как источника. Проверьте файл LICENSE перед повторной публикацией данных." : "Structured collections are published for learning and research use with Metkagram attribution. Check LICENSE before redistributing the datasets."}</p><a href="/data/catalog.json">${t.datasets} →</a></article><article id="privacy"><h2>${t.privacy}</h2><p>${t.privacyText}</p></article><article><h2>${t.source}</h2><p>${t.connected}</p><a href="https://github.com/metkagram/metkagram.github.io">GitHub ↗</a></article></section>`;
+  const body = `<section class="page-head section-pad"><p class="eyebrow">M: · project notes</p><h1>${t.aboutTitle}</h1><p class="lede">${t.aboutIntro}</p></section><section class="about-sections section-pad ruled"><article id="license"><h2>${t.license}</h2><p>${locale === "ru" ? "Материалы проекта доступны бесплатно для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для коммерческого использования требуется отдельное разрешение." : "Project materials are free for personal, educational, and other non-commercial use with Metkagram attribution. Commercial use requires separate permission."}</p><a href="/LICENSE">CC BY-NC 4.0 →</a></article><article id="privacy"><h2>${t.privacy}</h2><p>${t.privacyText}</p></article><article><h2>${t.source}</h2><p>${t.connected}</p><a href="https://github.com/metkagram/metkagram.github.io">GitHub ↗</a></article></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "About Metkagram grammar markup" : "О разметке грамматики Metkagram", description: t.aboutIntro, body, structuredData: [breadcrumbJson(pathname, t.aboutTitle, locale), { "@context": "https://schema.org", "@type": "Organization", name: "Metkagram", url: SITE_URL, sameAs: ["https://github.com/metkagram"] }] });
+}
+
+export function roadmapPage(locale) {
+  const t = ui[locale];
+  const pathname = `/${locale}/roadmap/`;
+  const items = [[t.roadmapNow, t.roadmapNowDetail], [t.roadmapNext, t.roadmapNextDetail], [t.roadmapLater, t.roadmapLaterDetail]];
+  const body = `<section class="page-head section-pad"><p class="eyebrow">M: · public notes</p><h1>${t.roadmapTitle}</h1><p class="lede">${t.roadmapIntro}</p></section><section class="roadmap-grid section-pad ruled">${items.map(([label, detail], index) => `<article><span>0${index + 1}</span><h2>${label}</h2><p>${detail}</p></article>`).join("")}</section><section class="changelog section-pad ruled" id="changelog"><p class="eyebrow">${t.changelog}</p><h2>${t.changelogTitle}</h2><p class="lede">${t.changelogIntro}</p><article><time datetime="2026-07">${t.changelogCurrent}</time><p>${t.changelogCurrentDetail}</p></article></section>`;
+  return layout({ locale, pathname, title: locale === "en" ? "Metkagram roadmap and changelog" : "Планы и изменения Metkagram", description: `${t.roadmapIntro} ${t.changelogIntro}`, body, structuredData: [breadcrumbJson(pathname, t.roadmap, locale)] });
 }
 
 export function gatewayPage() {

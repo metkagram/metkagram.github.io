@@ -16,6 +16,7 @@ import {
   patternPage,
   practicePage,
   progressPage,
+  roadmapPage,
   reviewPage,
   rulesPage
 } from "../src/render.mjs";
@@ -162,6 +163,7 @@ function build() {
     writeRoute(`/${locale}/progress/`, progressPage(locale));
     writeRoute(`/${locale}/method/`, methodPage(locale));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
+    writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
     for (const target of Object.values(targetMeta)) {
       writeRoute(`/${locale}/explore/${target.key}/`, languageHub(locale, target.key, content));
       writeRoute(`/${locale}/explore/${target.key}/annotation-rules/`, rulesPage(locale, target.key));
@@ -180,6 +182,7 @@ function build() {
 
   writeFile("404.html", notFoundPage("en"));
   writeFile(".nojekyll", "");
+  writeFile("LICENSE", fs.readFileSync(path.join(ROOT, "LICENSE"), "utf8"));
   writeFile("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc></url>`).join("")}\n</urlset>\n`);
   writeFile("llms.txt", `# Metkagram\n\n> A bilingual annotated-language workspace for English and German learning.\n\nCanonical site: ${SITE_URL}/\nInterfaces: ${SITE_URL}/en/ and ${SITE_URL}/ru/\nCollections catalog: ${SITE_URL}/data/catalog.json\nAdvanced patterns dataset: ${SITE_URL}/data/advanced-patterns.json\nMethod: ${SITE_URL}/en/method/\nLicense and attribution: ${SITE_URL}/en/about/\n\nMetkagram exposes crawlable HTML detail pages for every collection and pattern. Interface locale (English or Russian) is independent from target language (English or German).\n`);
