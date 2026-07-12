@@ -148,8 +148,7 @@ export function languageTabs(locale, current = "english", suffix = "") {
 
 export function annotatedPreview() {
   return `<div class="sentence-stage" aria-label="Annotated example sentence">
-    <p class="sentence-line"><span class="annotation subject" data-tag="S">We</span> <span class="annotation verb" data-tag="V">learn</span> <span class="annotation object" data-tag="p2">language patterns</span> <span class="annotation helper" data-tag="Hf">by using them</span>.</p>
-    <div class="annotation-legend" aria-label="Annotation legend"><span><i class="subject"></i>S · subject</span><span><i class="verb"></i>V · verb</span><span><i class="object"></i>p2 · predicate</span><span><i class="helper"></i>Hf · helper</span></div>
+    <p class="annotated-line"><span class="grammar-tag subject">S</span> We <span class="grammar-tag verb">V</span> learn <span class="grammar-tag object">p2</span> language patterns <span class="grammar-tag helper">Hf</span> by using them.</p>
   </div>`;
 }
 
