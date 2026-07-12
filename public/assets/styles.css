@@ -234,6 +234,15 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
 .changelog h2 { margin-bottom: 1rem; }
 .changelog article { max-width: 55rem; margin-top: 2.5rem; padding: 1.25rem 0; border-top: 1px solid var(--line-dark); }
 .changelog time { font-family: var(--mono); font-size: .72rem; }
+.history-head { min-height: min(34rem, calc(100svh - 4rem)); display: grid; align-content: center; }
+.history-head h1 { max-width: 12ch; }
+.history-timeline { display: grid; }
+.history-timeline article { display: grid; grid-template-columns: minmax(5rem, .35fr) minmax(0, 1fr); gap: 2rem; padding: clamp(2rem, 6vw, 5rem) 0; border-bottom: 1px solid var(--line); }
+.history-timeline article > span { font-family: var(--mono); font-size: .72rem; }
+.history-timeline h2 { max-width: 14ch; margin-bottom: 1rem; }
+.history-timeline p { max-width: 58ch; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.2rem); }
+.history-sources nav { display: grid; max-width: 48rem; margin-top: 1.5rem; border-top: 1px solid var(--line-dark); }
+.history-sources a { display: flex; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: .78rem; }
 
 .site-footer { display: grid; grid-template-columns: 1fr 1fr 1.5fr; gap: 2rem; width: min(100%, var(--content)); margin-inline: auto; padding: 2rem clamp(1rem, 4vw, 4rem) 3rem; border-top: 1px solid var(--line-dark); color: var(--muted); font-size: .75rem; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; }
@@ -264,6 +273,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .method-strip .text-link { grid-column: 1; }
   .language-planes, .pattern-languages, .rules-grid, .method-details, .about-sections, .roadmap-grid { grid-template-columns: 1fr; }
   .home-path-grid { grid-template-columns: 1fr; }
+  .history-timeline article { grid-template-columns: 3rem 1fr; gap: 1rem; }
   .next-action-grid { grid-template-columns: 1fr; }
   .next-action-grid a, .next-action-grid a:first-child { min-height: auto; border-left: 1px solid var(--line-dark); }
   .collection-toolbar { align-items: stretch; flex-direction: column; }

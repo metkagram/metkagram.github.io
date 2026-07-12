@@ -9,6 +9,7 @@ import {
   documentPage,
   explorePage,
   gatewayPage,
+  historyPage,
   languageHub,
   localeHome,
   methodPage,
@@ -163,6 +164,7 @@ function build() {
     writeRoute(`/${locale}/progress/`, progressPage(locale));
     writeRoute(`/${locale}/method/`, methodPage(locale));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
+    writeRoute(`/${locale}/history/`, historyPage(locale));
     writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
     for (const target of Object.values(targetMeta)) {
       writeRoute(`/${locale}/explore/${target.key}/`, languageHub(locale, target.key, content));
