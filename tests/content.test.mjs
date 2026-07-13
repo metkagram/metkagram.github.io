@@ -38,9 +38,9 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
   assert.match(en, /<html lang="en">/);
   assert.match(en, /See the structure\. Use the phrase\./);
-  assert.doesNotMatch(en, /Видьте структуру\. Используйте фразу\./);
+  assert.doesNotMatch(en, /Понимайте структуру\. Говорите фразами\./);
   assert.match(ru, /<html lang="ru">/);
-  assert.match(ru, /Видьте структуру\. Используйте фразу\./);
+  assert.match(ru, /Понимайте структуру\. Говорите фразами\./);
   assert.doesNotMatch(ru, /See the structure\. Use the phrase\./);
 });
 
