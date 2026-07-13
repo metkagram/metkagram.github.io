@@ -10,6 +10,25 @@ test("English and Russian interfaces stay separate and locale switch preserves c
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Диалоги");
 });
 
+test("home keeps the interface switch in the header and leads into a study language", async ({ page }) => {
+  await page.goto("/en/");
+  await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
+  await expect(page.locator(".annotation-sheet")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Choose a language to study", exact: true })).toHaveAttribute("href", "/en/explore/");
+  await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
+});
+
+test("grammar tags expose a readable rule on click and keyboard focus", async ({ page }) => {
+  await page.goto("/en/explore/english/dialogues/iglIrNfAke7r4OZ0KxuB/");
+  const tag = page.locator('[aria-describedby="tag-rule-1-S-1"]');
+  await expect(tag).toHaveAttribute("aria-expanded", "false");
+  await tag.focus();
+  await expect(tag.locator("[role=tooltip]")).toContainText("The main actor or receiver in the sentence.");
+  await tag.click();
+  await expect(tag).toHaveAttribute("aria-expanded", "true");
+  await expect(tag.locator("[role=tooltip]")).toContainText("Use it to find who or what the sentence is about.");
+});
+
 test("English and German practice filters work", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");

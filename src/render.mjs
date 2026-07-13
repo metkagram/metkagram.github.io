@@ -70,11 +70,11 @@ function header(locale, pathname) {
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
     </nav>
-    ${pathname === `/${locale}/` ? "" : `<div class="locale-switch" aria-label="${t.chooseInterface}">
+    <div class="locale-switch" aria-label="${t.chooseInterface}">
       <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
       <span aria-hidden="true">/</span>
       <a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}>RU</a>
-    </div>`}
+    </div>
   </header>`;
 }
 
@@ -161,13 +161,11 @@ export function localeHome(locale, content) {
   const pathname = `/${locale}/`;
   const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
   const body = `<section class="home-hero section-pad">
-    <div class="home-intro"><div><p class="eyebrow">${t.homeEyebrow}</p><h1>${t.statement}</h1><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p></div>
-      <aside class="interface-choice" aria-labelledby="interface-language-title"><p class="eyebrow" id="interface-language-title">${t.homeInterfaceTitle}</p><p>${t.homeInterfaceDetail}</p><nav><a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}><strong>EN</strong><span>English</span></a><a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}><strong>RU</strong><span>Русский</span></a></nav></aside>
-    </div>
+    <div class="home-rail" aria-label="${t.homeJourneyLabel}"><span>01 · ${t.homeJourneyStart}</span><span>02 · ${t.homeLanguageTitle}</span><span>03 · ${t.homeJourneyUnderstand}</span><span>04 · ${t.homeJourneyReuse}</span></div>
+    <div class="home-intro"><div><p class="eyebrow">${t.homeEyebrow}</p><h1>${t.statement}</h1></div><div class="home-action"><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></div></div>
   </section>
-  <section class="home-paths section-pad ruled" aria-labelledby="home-paths-title"><div class="section-heading"><p class="eyebrow">01 · ${t.home}</p><h2 id="home-paths-title">${t.homeStartTitle}</h2></div><div class="home-path-grid"><a href="/${locale}/explore/"><span class="entry-index">01</span><div><strong>${t.homeSetsTitle}</strong><p>${t.homeSetsDetail}</p></div><span aria-hidden="true">→</span></a><a href="/${locale}/practice/"><span class="entry-index">02</span><div><strong>${t.homePatternsTitle}</strong><p>${t.homePatternsDetail}</p></div><span aria-hidden="true">→</span></a></div>
-  <section class="study-language" aria-labelledby="language-picker-title"><p class="eyebrow" id="language-picker-title">${t.homeLanguageTitle}</p><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section></section>
-  <section class="home-method section-pad ruled" aria-labelledby="home-method-title"><div><p class="eyebrow">02 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span>${step}</li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.navMethod} →</a></div></section>`;
+  <section class="home-method section-pad ruled" aria-labelledby="home-method-title"><div><p class="eyebrow">01 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span><div><strong>${step}</strong><small>${t.homeMethodNotes[index]}</small></div></li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></section>
+  <section class="study-language section-pad ruled" aria-labelledby="language-picker-title"><div><p class="eyebrow" id="language-picker-title">02 · ${t.homeLanguageTitle}</p><h2>${t.homeStartTitle}</h2></div><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets} · ${target.native}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>`;
   const structuredData = [
     { "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] },
     { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Metkagram", applicationCategory: "EducationalApplication", operatingSystem: "Web", url: `${SITE_URL}/${locale}/`, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } }
@@ -226,10 +224,15 @@ function tokenClass(tag) {
   return "object";
 }
 
-function renderAnnotation(annotation, locale, index) {
+function renderAnnotation(annotation, locale, targetKey, index) {
   const t = ui[locale];
-  const tokens = flattenSpan(annotation.text_span).map((token) => {
-    if (token.tag === "tag") return `<span class="grammar-tag ${tokenClass(token.text.trim())}" title="${escapeHtml(token.extra || t.notation)}">${escapeHtml(token.text.trim())}${token.extra ? `<small>${escapeHtml(token.extra)}</small>` : ""}</span>`;
+  const tokens = flattenSpan(annotation.text_span).map((token, tokenIndex) => {
+    if (token.tag === "tag") {
+      const tag = token.text.trim();
+      const rule = tagRule(locale, targetKey, tag, token.extra);
+      const tooltipId = `tag-rule-${index + 1}-${tag.replaceAll(/[^a-z0-9]/gi, "") || "mark"}-${tokenIndex + 1}`;
+      return `<button class="grammar-tag tag-trigger ${tokenClass(tag)}" type="button" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}${token.extra ? `<small>${escapeHtml(token.extra)}</small>` : ""}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>`;
+    }
     return escapeHtml(token.text);
   }).join("");
   const translation = locale === "ru" ? annotation.translations?.ru || annotation.translated_text : annotation.translations?.en;
@@ -241,7 +244,7 @@ export function documentPage(locale, targetKey, collectionKey, document) {
   const target = targetMeta[targetKey];
   const pathname = itemUrl(locale, targetKey, collectionKey, document);
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/explore/`, label: t.navExplore }, { href: `/${locale}/explore/${targetKey}/`, label: t[targetKey] }, { href: `/${locale}/explore/${targetKey}/${collectionKey}/`, label: t[collectionKey] }, { href: pathname, label: document.title }])}
-  <article class="document-page"><header class="document-head section-pad"><p class="eyebrow">${target.flag} · ${t[collectionKey]}</p><h1>${escapeHtml(document.title)}</h1><div class="document-context"><p>${t.documentContains} <strong>${document.annotations.length}</strong> ${t.sentences}.</p><p class="document-guide">${t.readingGuide}</p></div>${document.version ? `<p class="version">${t.updated}: ${escapeHtml(document.version)}</p>` : ""}</header><div class="annotation-sheet section-pad">${document.annotations.map((annotation, index) => renderAnnotation(annotation, locale, index)).join("")}</div></article>`;
+  <article class="document-page"><header class="document-head section-pad"><p class="eyebrow">${target.flag} · ${t[collectionKey]}</p><h1>${escapeHtml(document.title)}</h1><div class="document-context"><p>${t.documentContains} <strong>${document.annotations.length}</strong> ${t.sentences}.</p><p class="document-guide">${t.readingGuide}</p></div>${document.version ? `<p class="version">${t.updated}: ${escapeHtml(document.version)}</p>` : ""}</header><div class="annotation-sheet section-pad">${document.annotations.map((annotation, index) => renderAnnotation(annotation, locale, targetKey, index)).join("")}</div></article>`;
   const learningResource = { "@context": "https://schema.org", "@type": "LearningResource", name: document.title, url: `${SITE_URL}${pathname}`, inLanguage: target.dataKey, educationalLevel: "Intermediate to advanced", learningResourceType: collectionLabel(locale, collectionKey), isAccessibleForFree: true };
   return layout({ locale, pathname, title: locale === "en" ? `${document.title}: ${document.annotations.length} annotated sentences | Metkagram` : `${document.title}: ${document.annotations.length} аннотированных предложений | Metkagram`, description: locale === "en" ? `${document.title}: read ${document.annotations.length} annotated ${target.native} sentences, then open grammar explanations only when you need them.` : `${document.title}: ${document.annotations.length} аннотированных предложений на ${target.native} с объяснениями по запросу.`, body, type: "article", structuredData: [breadcrumbJson(pathname, document.title, locale), learningResource] });
 }
@@ -254,6 +257,20 @@ const rules = {
     ["S", "Subjekt", "Die handelnde oder betroffene Person."], ["S*", "Subjekt, betont", "Ein zusätzlich hervorgehobenes Subjekt."], ["st", "Zustand", "Ein Zustand oder eine Bedingung."], ["st*", "Passiver Zustand", "Ein Zustandsmarker für Passivkonstruktionen."], ["v2", "Zweites Verb", "Ein Verbteil an zweiter Position."], ["vI", "Infinitiv", "Ein infinitiver Verbteil."], ["/→", "Akkusativ", "Das direkte Objekt: wen oder was?"], ["\\→", "Dativ", "Das indirekte Objekt: wem?"], ["\\?", "Genitiv", "Besitz oder Zugehörigkeit: wessen?"], ["←…", "Inversion", "Eine Umstellung im Satz."], ["vP", "Partizip", "Ein Partizip in zusammengesetzten Zeiten."], ["Vp", "Partizip, alternativ", "Alternative Partizip-Notation."], ["Hr", "Hilfsverb Resultat", "Ein Hilfsverb für ein abgeschlossenes Ergebnis."], ["Hst", "Hilfsverb Zustand", "Ein Hilfsverb für eine Zustandsveränderung."], ["Hf", "Hilfsverb Zukunft", "Ein Hilfsverb, das in die Zukunft verweist."], ["V", "Hauptverb", "Das grundlegende Verb der Aussage."], ["M", "Modalverb", "Ein Modalverb für Fähigkeit oder Pflicht."]
   ]
 };
+
+function tagRule(locale, targetKey, tag, extra) {
+  const rule = rules[targetKey].find(([key]) => key === tag) || rules[targetKey].find(([key]) => key.toLowerCase() === tag.toLowerCase());
+  const fallback = extra || ui[locale].notation;
+  if (!rule) return { title: fallback, description: ui[locale].tagRuleFallback, use: ui[locale].tagRuleFallbackUse };
+  const [, title, description] = rule;
+  const useByClass = {
+    subject: ui[locale].tagRuleSubjectUse,
+    verb: ui[locale].tagRuleVerbUse,
+    object: ui[locale].tagRuleObjectUse,
+    helper: ui[locale].tagRuleHelperUse
+  };
+  return { title, description, use: useByClass[tokenClass(tag)] };
+}
 
 export function rulesPage(locale, targetKey) {
   const t = ui[locale];

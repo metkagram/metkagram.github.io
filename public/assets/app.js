@@ -27,6 +27,30 @@ function setupLocaleSuggestion() {
   });
 }
 
+function setupTagRules() {
+  const triggers = [...document.querySelectorAll("[data-tag-trigger]")];
+  if (!triggers.length) return;
+  const closeAll = (except) => triggers.forEach((trigger) => {
+    if (trigger !== except) trigger.setAttribute("aria-expanded", "false");
+  });
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const next = trigger.getAttribute("aria-expanded") !== "true";
+      closeAll(trigger);
+      trigger.setAttribute("aria-expanded", String(next));
+    });
+    trigger.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        trigger.setAttribute("aria-expanded", "false");
+        trigger.blur();
+      }
+    });
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest("[data-tag-trigger]")) closeAll();
+  });
+}
+
 function setupCollectionSearch() {
   const input = document.querySelector("[data-collection-search]");
   const list = document.querySelector("[data-collection-list]");
@@ -246,6 +270,7 @@ async function setupProgressPage() {
 
 setupMenu();
 setupLocaleSuggestion();
+setupTagRules();
 setupCollectionSearch();
 setupPatternFilters();
 setupInlineReview();
