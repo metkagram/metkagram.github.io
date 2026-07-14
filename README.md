@@ -1,6 +1,6 @@
 # Metkagram
 
-Metkagram is a bilingual, static language-notation workspace. The interface is available in English and Russian; English and German are independent learning-language filters. It combines 2,240 annotated Metkagram documents with 236 B2–C1 patterns and the original MetkaX spaced-repetition model.
+Metkagram is a bilingual, static language-notation workspace. The interface is available in English and Russian; English and German are independent learning-language filters. It combines 2,240 annotated Metkagram documents with 260 B2–C1 patterns and the original MetkaX spaced-repetition model.
 
 Production: [https://metkagram.github.io](https://metkagram.github.io)
 

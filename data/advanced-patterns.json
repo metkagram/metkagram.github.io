@@ -31819,5 +31819,3221 @@
       ],
       "notes": ""
     }
+  },
+  {
+    "id": "EPI001",
+    "group_id": "EPI",
+    "title_ru": "Насколько я могу судить…",
+    "metaphor_ru": "Мягкий способ поделиться выводом, не выдавая его за окончательную истину. Фраза сигналит: «это моя текущая оценка на основе того, что я вижу», и оставляет место для уточнения.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "As far as I can tell, + clause",
+        "example": "As far as I can tell, the release is on schedule.",
+        "translation": "Насколько я могу судить, релиз идёт по графику.",
+        "examples": [
+          {
+            "text": "As far as **I can tell**, the release is on schedule.",
+            "translation_ru": "Насколько я могу судить, релиз идёт по графику."
+          },
+          {
+            "text": "As far as **we can tell**, the data supports the decision.",
+            "translation_ru": "Насколько мы можем судить, данные подтверждают решение."
+          },
+          {
+            "text": "As far as **she can tell**, the client is ready to sign.",
+            "translation_ru": "Насколько она может судить, клиент готов подписать."
+          },
+          {
+            "text": "As far as **he can tell**, the bug is finally fixed.",
+            "translation_ru": "Насколько он может судить, баг наконец исправлен."
+          },
+          {
+            "text": "As far as **they can tell**, demand is still growing.",
+            "translation_ru": "Насколько они могут судить, спрос всё ещё растёт."
+          },
+          {
+            "text": "As far as **I can tell**, this is not a real blocker.",
+            "translation_ru": "Насколько я могу судить, это не настоящий блокер."
+          },
+          {
+            "text": "As far as **we can tell**, the model has not improved.",
+            "translation_ru": "Насколько мы можем судить, модель не улучшилась."
+          },
+          {
+            "text": "As far as **she can tell**, he has lost interest in the project.",
+            "translation_ru": "Насколько она может судить, он потерял интерес к проекту."
+          },
+          {
+            "text": "As far as **I can tell**, you have already done enough.",
+            "translation_ru": "Насколько я могу судить, ты уже сделал достаточно."
+          },
+          {
+            "text": "As far as **you can tell**, is the plan still realistic?",
+            "translation_ru": "Насколько ты можешь судить, план всё ещё реалистичен?"
+          },
+          {
+            "text": "As far as **they can tell**, has anything actually changed?",
+            "translation_ru": "Насколько они могут судить, что-то действительно изменилось?"
+          },
+          {
+            "text": "As far as **I can tell**, we are solving the wrong problem.",
+            "translation_ru": "Насколько я могу судить, мы решаем не ту проблему."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Soweit ich das beurteilen kann, + Nebensatz (Verb am Ende)",
+        "example": "Soweit ich das beurteilen kann, läuft die Veröffentlichung planmäßig.",
+        "translation": "Насколько я могу судить, релиз идёт по графику.",
+        "examples": [
+          {
+            "text": "Soweit **ich das beurteilen kann**, läuft die Veröffentlichung planmäßig.",
+            "translation_ru": "Насколько я могу судить, релиз идёт по графику."
+          },
+          {
+            "text": "Soweit **wir das beurteilen können**, stützen die Daten die Entscheidung.",
+            "translation_ru": "Насколько мы можем судить, данные подтверждают решение."
+          },
+          {
+            "text": "Soweit **sie das beurteilen kann**, ist der Kunde zur Unterschrift bereit.",
+            "translation_ru": "Насколько она может судить, клиент готов подписать."
+          },
+          {
+            "text": "Soweit **er das beurteilen kann**, ist der Fehler endlich behoben.",
+            "translation_ru": "Насколько он может судить, баг наконец исправлен."
+          },
+          {
+            "text": "Soweit **sie das beurteilen können**, wächst die Nachfrage weiter.",
+            "translation_ru": "Насколько они могут судить, спрос всё ещё растёт."
+          },
+          {
+            "text": "Soweit **ich das beurteilen kann**, ist das kein echtes Hindernis.",
+            "translation_ru": "Насколько я могу судить, это не настоящее препятствие."
+          },
+          {
+            "text": "Soweit **wir das beurteilen können**, hat sich das Modell nicht verbessert.",
+            "translation_ru": "Насколько мы можем судить, модель не улучшилась."
+          },
+          {
+            "text": "Soweit **sie das beurteilen kann**, hat er das Interesse am Projekt verloren.",
+            "translation_ru": "Насколько она может судить, он потерял интерес к проекту."
+          },
+          {
+            "text": "Soweit **ich das beurteilen kann**, hast du bereits genug getan.",
+            "translation_ru": "Насколько я могу судить, ты уже сделал достаточно."
+          },
+          {
+            "text": "Soweit **du das beurteilen kannst**, ist der Plan noch realistisch?",
+            "translation_ru": "Насколько ты можешь судить, план всё ещё реалистичен?"
+          },
+          {
+            "text": "Soweit **sie das beurteilen können**, hat sich tatsächlich etwas geändert?",
+            "translation_ru": "Насколько они могут судить, что-то действительно изменилось?"
+          },
+          {
+            "text": "Soweit **ich das beurteilen kann**, lösen wir das falsche Problem.",
+            "translation_ru": "Насколько я могу судить, мы решаем не ту проблему."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "As far as I can tell, + clause",
+      "Soweit ich das beurteilen kann, + Nebensatz (Verb am Ende)"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "EPI002",
+    "group_id": "EPI",
+    "title_ru": "Я могу ошибаться, но…",
+    "metaphor_ru": "Смягчает утверждение и заранее снимает давление: ты высказываешь позицию, но признаёшь, что можешь ошибиться. Удобно в споре и когда данных мало.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I may be wrong, but + clause",
+        "example": "I may be wrong, but this looks like a design problem.",
+        "translation": "Я могу ошибаться, но это похоже на проблему в дизайне.",
+        "examples": [
+          {
+            "text": "**I may be wrong, but** this looks like a design problem.",
+            "translation_ru": "Я могу ошибаться, но это похоже на проблему в дизайне."
+          },
+          {
+            "text": "**I may be wrong, but** I think we are moving too fast.",
+            "translation_ru": "Я могу ошибаться, но, кажется, мы движемся слишком быстро."
+          },
+          {
+            "text": "**We may be wrong, but** the numbers simply do not add up.",
+            "translation_ru": "Мы можем ошибаться, но цифры просто не сходятся."
+          },
+          {
+            "text": "**She may be wrong, but** she raised a fair concern.",
+            "translation_ru": "Она может ошибаться, но она подняла справедливое опасение."
+          },
+          {
+            "text": "**He may be wrong, but** his point is worth checking.",
+            "translation_ru": "Он может ошибаться, но его довод стоит проверить."
+          },
+          {
+            "text": "**They may be wrong, but** they have real experience here.",
+            "translation_ru": "Они могут ошибаться, но у них есть реальный опыт в этом."
+          },
+          {
+            "text": "**I may be wrong, but** the deadline feels unrealistic.",
+            "translation_ru": "Я могу ошибаться, но срок кажется нереалистичным."
+          },
+          {
+            "text": "**I may be wrong, but** I would not ship it yet.",
+            "translation_ru": "Я могу ошибаться, но я бы пока не выпускал это."
+          },
+          {
+            "text": "**We may be wrong, but** the risk seems higher than the reward.",
+            "translation_ru": "Мы можем ошибаться, но риск кажется выше выгоды."
+          },
+          {
+            "text": "**You may be wrong, but** your concern is understandable.",
+            "translation_ru": "Ты можешь ошибаться, но твоё опасение понятно."
+          },
+          {
+            "text": "**I may be wrong, but** is this really the priority?",
+            "translation_ru": "Я могу ошибаться, но это правда приоритет?"
+          },
+          {
+            "text": "**I may be wrong, but** we never agreed on this.",
+            "translation_ru": "Я могу ошибаться, но мы об этом не договаривались."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich könnte mich irren, aber + clause",
+        "example": "Ich könnte mich irren, aber das wirkt wie ein Designproblem.",
+        "translation": "Я могу ошибаться, но это похоже на проблему в дизайне.",
+        "examples": [
+          {
+            "text": "**Ich könnte mich irren, aber** das wirkt wie ein Designproblem.",
+            "translation_ru": "Я могу ошибаться, но это похоже на проблему в дизайне."
+          },
+          {
+            "text": "**Ich könnte mich irren, aber** ich glaube, wir sind zu schnell.",
+            "translation_ru": "Я могу ошибаться, но, кажется, мы движемся слишком быстро."
+          },
+          {
+            "text": "**Wir könnten uns irren, aber** die Zahlen passen einfach nicht zusammen.",
+            "translation_ru": "Мы можем ошибаться, но цифры просто не сходятся."
+          },
+          {
+            "text": "**Sie könnte sich irren, aber** sie hat ein berechtigtes Anliegen geäußert.",
+            "translation_ru": "Она может ошибаться, но она подняла справедливое опасение."
+          },
+          {
+            "text": "**Er könnte sich irren, aber** sein Punkt ist eine Prüfung wert.",
+            "translation_ru": "Он может ошибаться, но его довод стоит проверить."
+          },
+          {
+            "text": "**Sie könnten sich irren, aber** sie haben hier echte Erfahrung.",
+            "translation_ru": "Они могут ошибаться, но у них есть реальный опыт в этом."
+          },
+          {
+            "text": "**Ich könnte mich irren, aber** der Termin wirkt unrealistisch.",
+            "translation_ru": "Я могу ошибаться, но срок кажется нереалистичным."
+          },
+          {
+            "text": "**Ich könnte mich irren, aber** ich würde es noch nicht freigeben.",
+            "translation_ru": "Я могу ошибаться, но я бы пока не выпускал это."
+          },
+          {
+            "text": "**Wir könnten uns irren, aber** das Risiko scheint höher als der Nutzen.",
+            "translation_ru": "Мы можем ошибаться, но риск кажется выше выгоды."
+          },
+          {
+            "text": "**Du könntest dich irren, aber** deine Sorge ist verständlich.",
+            "translation_ru": "Ты можешь ошибаться, но твоё опасение понятно."
+          },
+          {
+            "text": "**Ich könnte mich irren, aber** ist das wirklich die Priorität?",
+            "translation_ru": "Я могу ошибаться, но это правда приоритет?"
+          },
+          {
+            "text": "**Ich könnte mich irren, aber** darauf haben wir uns nie geeinigt.",
+            "translation_ru": "Я могу ошибаться, но мы об этом не договаривались."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "I may be wrong, but + clause",
+      "Ich könnte mich irren, aber + clause"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "EPI003",
+    "group_id": "EPI",
+    "title_ru": "Есть веские основания полагать, что…",
+    "metaphor_ru": "Формулировка уверенности без категоричности. Говоришь, что основания сильные, но не утверждаешь стопроцентно — идеально для выводов из данных.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "There is good reason to believe that + clause",
+        "example": "There is good reason to believe that demand will grow.",
+        "translation": "Есть веские основания полагать, что спрос будет расти.",
+        "examples": [
+          {
+            "text": "There is **good reason to believe that** demand will grow.",
+            "translation_ru": "Есть веские основания полагать, что спрос будет расти."
+          },
+          {
+            "text": "There is **good reason to believe that** the fix actually works.",
+            "translation_ru": "Есть веские основания полагать, что исправление действительно работает."
+          },
+          {
+            "text": "There is **good reason to believe that** we underestimated the cost.",
+            "translation_ru": "Есть веские основания полагать, что мы недооценили стоимость."
+          },
+          {
+            "text": "There is **good reason to believe that** she is the right person for this.",
+            "translation_ru": "Есть веские основания полагать, что она подходящий человек для этого."
+          },
+          {
+            "text": "There is **good reason to believe that** the delay is only temporary.",
+            "translation_ru": "Есть веские основания полагать, что задержка лишь временная."
+          },
+          {
+            "text": "There is **good reason to believe that** the data supports this.",
+            "translation_ru": "Есть веские основания полагать, что данные это подтверждают."
+          },
+          {
+            "text": "There is **good reason to believe that** he will change his mind.",
+            "translation_ru": "Есть веские основания полагать, что он передумает."
+          },
+          {
+            "text": "There is **little reason to believe that** the plan will fail.",
+            "translation_ru": "Есть мало оснований полагать, что план провалится."
+          },
+          {
+            "text": "There is **no good reason to believe that** the numbers are wrong.",
+            "translation_ru": "Нет веских оснований полагать, что цифры неверны."
+          },
+          {
+            "text": "There is **good reason to believe that** they already knew.",
+            "translation_ru": "Есть веские основания полагать, что они уже знали."
+          },
+          {
+            "text": "Is there **good reason to believe that** the trend will continue?",
+            "translation_ru": "Есть ли веские основания полагать, что тренд продолжится?"
+          },
+          {
+            "text": "There is **good reason to believe that** a smaller scope is safer.",
+            "translation_ru": "Есть веские основания полагать, что меньший объём безопаснее."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es gibt gute Gründe anzunehmen, dass + Nebensatz",
+        "example": "Es gibt gute Gründe anzunehmen, dass die Nachfrage wachsen wird.",
+        "translation": "Есть веские основания полагать, что спрос будет расти.",
+        "examples": [
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** die Nachfrage wachsen wird.",
+            "translation_ru": "Есть веские основания полагать, что спрос будет расти."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** die Lösung tatsächlich funktioniert.",
+            "translation_ru": "Есть веские основания полагать, что исправление действительно работает."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** wir die Kosten unterschätzt haben.",
+            "translation_ru": "Есть веские основания полагать, что мы недооценили стоимость."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** sie die richtige Person dafür ist.",
+            "translation_ru": "Есть веские основания полагать, что она подходящий человек для этого."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** die Verzögerung nur vorübergehend ist.",
+            "translation_ru": "Есть веские основания полагать, что задержка лишь временная."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** die Daten dies stützen.",
+            "translation_ru": "Есть веские основания полагать, что данные это подтверждают."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** er seine Meinung ändern wird.",
+            "translation_ru": "Есть веские основания полагать, что он передумает."
+          },
+          {
+            "text": "Es gibt **wenig Grund anzunehmen, dass** der Plan scheitern wird.",
+            "translation_ru": "Есть мало оснований полагать, что план провалится."
+          },
+          {
+            "text": "Es gibt **keinen guten Grund anzunehmen, dass** die Zahlen falsch sind.",
+            "translation_ru": "Нет веских оснований полагать, что цифры неверны."
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** sie es bereits wussten.",
+            "translation_ru": "Есть веские основания полагать, что они уже знали."
+          },
+          {
+            "text": "Gibt es **gute Gründe anzunehmen, dass** der Trend anhalten wird?",
+            "translation_ru": "Есть ли веские основания полагать, что тренд продолжится?"
+          },
+          {
+            "text": "Es gibt **gute Gründe anzunehmen, dass** ein kleinerer Umfang sicherer ist.",
+            "translation_ru": "Есть веские основания полагать, что меньший объём безопаснее."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "There is good reason to believe that + clause",
+      "Es gibt gute Gründe anzunehmen, dass + Nebensatz"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CLR001",
+    "group_id": "CLR",
+    "title_ru": "Когда ты говоришь X, ты имеешь в виду Y?",
+    "metaphor_ru": "Проверка понимания до того, как спорить. Переводишь чужую формулировку в свою и спрашиваешь подтверждение — это предотвращает разговор «мимо друг друга».",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "When you say X, do you mean Y?",
+        "example": "When you say soon, do you mean this week?",
+        "translation": "Когда ты говоришь «скоро», ты имеешь в виду на этой неделе?",
+        "examples": [
+          {
+            "text": "**When you say** soon, **do you mean** this week?",
+            "translation_ru": "Когда ты говоришь «скоро», ты имеешь в виду на этой неделе?"
+          },
+          {
+            "text": "**When you say** done, **do you mean** ready to ship?",
+            "translation_ru": "Когда ты говоришь «готово», ты имеешь в виду готово к выпуску?"
+          },
+          {
+            "text": "**When you say** they, **do you mean** the whole team?",
+            "translation_ru": "Когда ты говоришь «они», ты имеешь в виду всю команду?"
+          },
+          {
+            "text": "**When you say** cheaper, **do you mean** lower quality too?",
+            "translation_ru": "Когда ты говоришь «дешевле», ты имеешь в виду и ниже качеством?"
+          },
+          {
+            "text": "**When you say** we, **do you mean** you and me?",
+            "translation_ru": "Когда ты говоришь «мы», ты имеешь в виду тебя и меня?"
+          },
+          {
+            "text": "**When you say** later, **do you mean** after the deadline?",
+            "translation_ru": "Когда ты говоришь «позже», ты имеешь в виду после срока?"
+          },
+          {
+            "text": "**When she says** flexible, **does she mean** unpaid overtime?",
+            "translation_ru": "Когда она говорит «гибко», она имеет в виду неоплачиваемые переработки?"
+          },
+          {
+            "text": "**When he says** simple, **does he mean** fewer features?",
+            "translation_ru": "Когда он говорит «проще», он имеет в виду меньше функций?"
+          },
+          {
+            "text": "**When they say** urgent, **do they mean** today?",
+            "translation_ru": "Когда они говорят «срочно», они имеют в виду сегодня?"
+          },
+          {
+            "text": "**When you say** free, **do you mean** without any cost?",
+            "translation_ru": "Когда ты говоришь «бесплатно», ты имеешь в виду совсем без оплаты?"
+          },
+          {
+            "text": "**When we say** stable, **do we mean** it never changes?",
+            "translation_ru": "Когда мы говорим «стабильно», мы имеем в виду, что оно никогда не меняется?"
+          },
+          {
+            "text": "**When you say** risk, **do you mean** a real financial risk?",
+            "translation_ru": "Когда ты говоришь «риск», ты имеешь в виду реальный финансовый риск?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn du X sagst, meinst du damit Y?",
+        "example": "Wenn du bald sagst, meinst du damit diese Woche?",
+        "translation": "Когда ты говоришь «скоро», ты имеешь в виду на этой неделе?",
+        "examples": [
+          {
+            "text": "**Wenn du** bald **sagst, meinst du damit** diese Woche?",
+            "translation_ru": "Когда ты говоришь «скоро», ты имеешь в виду на этой неделе?"
+          },
+          {
+            "text": "**Wenn du** fertig **sagst, meinst du damit** bereit zur Auslieferung?",
+            "translation_ru": "Когда ты говоришь «готово», ты имеешь в виду готово к выпуску?"
+          },
+          {
+            "text": "**Wenn du** sie **sagst, meinst du damit** das ganze Team?",
+            "translation_ru": "Когда ты говоришь «они», ты имеешь в виду всю команду?"
+          },
+          {
+            "text": "**Wenn du** günstiger **sagst, meinst du damit** auch schlechtere Qualität?",
+            "translation_ru": "Когда ты говоришь «дешевле», ты имеешь в виду и ниже качеством?"
+          },
+          {
+            "text": "**Wenn du** wir **sagst, meinst du damit** dich und mich?",
+            "translation_ru": "Когда ты говоришь «мы», ты имеешь в виду тебя и меня?"
+          },
+          {
+            "text": "**Wenn du** später **sagst, meinst du damit** nach dem Termin?",
+            "translation_ru": "Когда ты говоришь «позже», ты имеешь в виду после срока?"
+          },
+          {
+            "text": "**Wenn sie** flexibel **sagt, meint sie damit** unbezahlte Überstunden?",
+            "translation_ru": "Когда она говорит «гибко», она имеет в виду неоплачиваемые переработки?"
+          },
+          {
+            "text": "**Wenn er** einfach **sagt, meint er damit** weniger Funktionen?",
+            "translation_ru": "Когда он говорит «проще», он имеет в виду меньше функций?"
+          },
+          {
+            "text": "**Wenn sie** dringend **sagen, meinen sie damit** heute?",
+            "translation_ru": "Когда они говорят «срочно», они имеют в виду сегодня?"
+          },
+          {
+            "text": "**Wenn du** kostenlos **sagst, meinst du damit** ganz ohne Kosten?",
+            "translation_ru": "Когда ты говоришь «бесплатно», ты имеешь в виду совсем без оплаты?"
+          },
+          {
+            "text": "**Wenn wir** stabil **sagen, meinen wir damit**, dass es sich nie ändert?",
+            "translation_ru": "Когда мы говорим «стабильно», мы имеем в виду, что оно никогда не меняется?"
+          },
+          {
+            "text": "**Wenn du** Risiko **sagst, meinst du damit** ein echtes finanzielles Risiko?",
+            "translation_ru": "Когда ты говоришь «риск», ты имеешь в виду реальный финансовый риск?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "When you say X, do you mean Y?",
+      "Wenn du X sagst, meinst du damit Y?"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CLR002",
+    "group_id": "CLR",
+    "title_ru": "Позволь мне сформулировать это иначе.",
+    "metaphor_ru": "Инструмент самокоррекции: если мысль вышла неясной, не молчишь, а спокойно перестраиваешь фразу. Это признак сильного, а не слабого уровня.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Let me put that another way",
+        "example": "Let me put that another way: we need focus, not more features.",
+        "translation": "Позволь мне сказать иначе: нам нужен фокус, а не больше функций.",
+        "examples": [
+          {
+            "text": "**Let me put that another way**: we need focus, not more features.",
+            "translation_ru": "Позволь мне сказать иначе: нам нужен фокус, а не больше функций."
+          },
+          {
+            "text": "**Let me put that another way**: the deadline is the real problem.",
+            "translation_ru": "Позволь мне сказать иначе: настоящая проблема — срок."
+          },
+          {
+            "text": "**Let me put that another way**: I am not ready to commit yet.",
+            "translation_ru": "Позволь мне сказать иначе: я пока не готов брать обязательство."
+          },
+          {
+            "text": "**Let me put that another way**: quality matters more than speed here.",
+            "translation_ru": "Позволь мне сказать иначе: здесь качество важнее скорости."
+          },
+          {
+            "text": "**Let me put that another way**: we agree on the goal, not the method.",
+            "translation_ru": "Позволь мне сказать иначе: мы согласны в цели, но не в методе."
+          },
+          {
+            "text": "**Let me put that another way**: this is a risk, not a blocker.",
+            "translation_ru": "Позволь мне сказать иначе: это риск, а не блокер."
+          },
+          {
+            "text": "**Let me put that another way**: I would start much smaller.",
+            "translation_ru": "Позволь мне сказать иначе: я бы начал гораздо с меньшего."
+          },
+          {
+            "text": "**Let me put that another way**: the data is incomplete, not wrong.",
+            "translation_ru": "Позволь мне сказать иначе: данные неполные, а не неверные."
+          },
+          {
+            "text": "**Let me put that another way**: she is cautious, not negative.",
+            "translation_ru": "Позволь мне сказать иначе: она осторожна, а не негативна."
+          },
+          {
+            "text": "**Let me put that another way**: we should test before we scale.",
+            "translation_ru": "Позволь мне сказать иначе: нам стоит протестировать, прежде чем масштабировать."
+          },
+          {
+            "text": "**Let me put that another way**: the cost is high, but the risk is low.",
+            "translation_ru": "Позволь мне сказать иначе: стоимость высока, но риск низок."
+          },
+          {
+            "text": "Could I **put that another way**?",
+            "translation_ru": "Можно я скажу это иначе?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Lass mich das anders formulieren",
+        "example": "Lass mich das anders formulieren: Wir brauchen Fokus, nicht mehr Funktionen.",
+        "translation": "Позволь мне сказать иначе: нам нужен фокус, а не больше функций.",
+        "examples": [
+          {
+            "text": "**Lass mich das anders formulieren**: Wir brauchen Fokus, nicht mehr Funktionen.",
+            "translation_ru": "Позволь мне сказать иначе: нам нужен фокус, а не больше функций."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Der Termin ist das eigentliche Problem.",
+            "translation_ru": "Позволь мне сказать иначе: настоящая проблема — срок."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Ich bin noch nicht bereit, mich festzulegen.",
+            "translation_ru": "Позволь мне сказать иначе: я пока не готов брать обязательство."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Qualität ist hier wichtiger als Tempo.",
+            "translation_ru": "Позволь мне сказать иначе: здесь качество важнее скорости."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Wir sind uns beim Ziel einig, nicht beim Weg.",
+            "translation_ru": "Позволь мне сказать иначе: мы согласны в цели, но не в пути."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Das ist ein Risiko, kein Hindernis.",
+            "translation_ru": "Позволь мне сказать иначе: это риск, а не препятствие."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Ich würde viel kleiner anfangen.",
+            "translation_ru": "Позволь мне сказать иначе: я бы начал гораздо с меньшего."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Die Daten sind unvollständig, nicht falsch.",
+            "translation_ru": "Позволь мне сказать иначе: данные неполные, а не неверные."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Sie ist vorsichtig, nicht negativ.",
+            "translation_ru": "Позволь мне сказать иначе: она осторожна, а не негативна."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Wir sollten testen, bevor wir skalieren.",
+            "translation_ru": "Позволь мне сказать иначе: нам стоит протестировать, прежде чем масштабировать."
+          },
+          {
+            "text": "**Lass mich das anders formulieren**: Die Kosten sind hoch, aber das Risiko ist gering.",
+            "translation_ru": "Позволь мне сказать иначе: стоимость высока, но риск низок."
+          },
+          {
+            "text": "Darf ich **das anders formulieren**?",
+            "translation_ru": "Можно я скажу это иначе?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Let me put that another way",
+      "Lass mich das anders formulieren"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CLR003",
+    "group_id": "CLR",
+    "title_ru": "Это не совсем то, что я имел в виду.",
+    "metaphor_ru": "Мягкая коррекция без обвинения собеседника. Ты возвращаешь разговор к своей исходной мысли, не говоря «ты меня не понял» напрямую.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "That is not quite what I meant",
+        "example": "That is not quite what I meant; I was talking about the timeline.",
+        "translation": "Это не совсем то, что я имел в виду; я говорил о сроках.",
+        "examples": [
+          {
+            "text": "**That is not quite what I meant**; I was talking about the timeline.",
+            "translation_ru": "Это не совсем то, что я имел в виду; я говорил о сроках."
+          },
+          {
+            "text": "**That is not quite what I meant**; let me clarify.",
+            "translation_ru": "Это не совсем то, что я имел в виду; позволь уточнить."
+          },
+          {
+            "text": "**That is not quite what I meant** by done.",
+            "translation_ru": "Это не совсем то, что я имел в виду под «готово»."
+          },
+          {
+            "text": "**That is not quite what I meant**; the cost is the real issue.",
+            "translation_ru": "Это не совсем то, что я имел в виду; настоящая проблема — стоимость."
+          },
+          {
+            "text": "**That is not quite what she meant**; she meant the process.",
+            "translation_ru": "Это не совсем то, что она имела в виду; она имела в виду процесс."
+          },
+          {
+            "text": "**That is not quite what we meant** when we agreed.",
+            "translation_ru": "Это не совсем то, что мы имели в виду, когда договаривались."
+          },
+          {
+            "text": "**That is not quite what I meant**, but you are close.",
+            "translation_ru": "Это не совсем то, что я имел в виду, но ты близко."
+          },
+          {
+            "text": "**That is not quite what he meant**; he meant next quarter.",
+            "translation_ru": "Это не совсем то, что он имел в виду; он имел в виду следующий квартал."
+          },
+          {
+            "text": "**That is not quite what they meant** by the deadline.",
+            "translation_ru": "Это не совсем то, что они имели в виду под сроком."
+          },
+          {
+            "text": "**That is not quite what I meant**; I meant the opposite.",
+            "translation_ru": "Это не совсем то, что я имел в виду; я имел в виду противоположное."
+          },
+          {
+            "text": "**That is not quite what I meant**, but it is a fair point.",
+            "translation_ru": "Это не совсем то, что я имел в виду, но это справедливое замечание."
+          },
+          {
+            "text": "Is **that not quite what you meant**?",
+            "translation_ru": "Это не совсем то, что ты имел в виду?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das ist nicht ganz das, was ich gemeint habe",
+        "example": "Das ist nicht ganz das, was ich gemeint habe; ich sprach über den Zeitplan.",
+        "translation": "Это не совсем то, что я имел в виду; я говорил о сроках.",
+        "examples": [
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**; ich sprach über den Zeitplan.",
+            "translation_ru": "Это не совсем то, что я имел в виду; я говорил о сроках."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**; lass mich das klarstellen.",
+            "translation_ru": "Это не совсем то, что я имел в виду; позволь уточнить."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich** mit fertig **gemeint habe**.",
+            "translation_ru": "Это не совсем то, что я имел в виду под «готово»."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**; es geht um die Kosten.",
+            "translation_ru": "Это не совсем то, что я имел в виду; настоящая проблема — стоимость."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was sie gemeint hat**; sie meinte den Prozess.",
+            "translation_ru": "Это не совсем то, что она имела в виду; она имела в виду процесс."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was wir gemeint haben**, als wir zugestimmt haben.",
+            "translation_ru": "Это не совсем то, что мы имели в виду, когда договаривались."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**, aber du bist nah dran.",
+            "translation_ru": "Это не совсем то, что я имел в виду, но ты близко."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was er gemeint hat**; er meinte das nächste Quartal.",
+            "translation_ru": "Это не совсем то, что он имел в виду; он имел в виду следующий квартал."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was sie** mit dem Termin **gemeint haben**.",
+            "translation_ru": "Это не совсем то, что они имели в виду под сроком."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**; ich meinte das Gegenteil.",
+            "translation_ru": "Это не совсем то, что я имел в виду; я имел в виду противоположное."
+          },
+          {
+            "text": "**Das ist nicht ganz das, was ich gemeint habe**, aber es ist ein fairer Punkt.",
+            "translation_ru": "Это не совсем то, что я имел в виду, но это справедливое замечание."
+          },
+          {
+            "text": "Ist **das nicht ganz das, was du gemeint hast**?",
+            "translation_ru": "Это не совсем то, что ты имел в виду?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "That is not quite what I meant",
+      "Das ist nicht ganz das, was ich gemeint habe"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DEC001",
+    "group_id": "DEC",
+    "title_ru": "Учитывая X, я склоняюсь к Y.",
+    "metaphor_ru": "Показывает направление решения без окончательного обязательства. Ты привязываешь склонность к конкретному фактору — это звучит взвешенно, а не импульсивно.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Given X, I am leaning toward Y",
+        "example": "Given the budget, I am leaning toward the simpler option.",
+        "translation": "Учитывая бюджет, я склоняюсь к более простому варианту.",
+        "examples": [
+          {
+            "text": "**Given** the budget, **I am leaning toward** the simpler option.",
+            "translation_ru": "Учитывая бюджет, я склоняюсь к более простому варианту."
+          },
+          {
+            "text": "**Given** the deadline, **I am leaning toward** a smaller scope.",
+            "translation_ru": "Учитывая срок, я склоняюсь к меньшему объёму."
+          },
+          {
+            "text": "**Given** the risk, **we are leaning toward** waiting.",
+            "translation_ru": "Учитывая риск, мы склоняемся к ожиданию."
+          },
+          {
+            "text": "**Given** her experience, **I am leaning toward** trusting her call.",
+            "translation_ru": "Учитывая её опыт, я склоняюсь довериться её решению."
+          },
+          {
+            "text": "**Given** the data, **they are leaning toward** a redesign.",
+            "translation_ru": "Учитывая данные, они склоняются к редизайну."
+          },
+          {
+            "text": "**Given** the cost, **he is leaning toward** postponing.",
+            "translation_ru": "Учитывая стоимость, он склоняется к переносу."
+          },
+          {
+            "text": "**Given** the feedback, **I am leaning toward** changing course.",
+            "translation_ru": "Учитывая обратную связь, я склоняюсь изменить курс."
+          },
+          {
+            "text": "**Given** the weather, **we are leaning toward** staying home.",
+            "translation_ru": "Учитывая погоду, мы склоняемся остаться дома."
+          },
+          {
+            "text": "**Given** his track record, **she is leaning toward** hiring him.",
+            "translation_ru": "Учитывая его послужной список, она склоняется нанять его."
+          },
+          {
+            "text": "**Given** the uncertainty, **I am not leaning toward** either option yet.",
+            "translation_ru": "Учитывая неопределённость, я пока не склоняюсь ни к одному варианту."
+          },
+          {
+            "text": "**Given** the constraints, **we are leaning toward** a compromise.",
+            "translation_ru": "Учитывая ограничения, мы склоняемся к компромиссу."
+          },
+          {
+            "text": "**Given** all this, which option **are you leaning toward**?",
+            "translation_ru": "Учитывая всё это, к какому варианту ты склоняешься?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Angesichts von X tendiere ich zu Y",
+        "example": "Angesichts des Budgets tendiere ich zur einfacheren Option.",
+        "translation": "Учитывая бюджет, я склоняюсь к более простому варианту.",
+        "examples": [
+          {
+            "text": "**Angesichts** des Budgets **tendiere ich zur** einfacheren Option.",
+            "translation_ru": "Учитывая бюджет, я склоняюсь к более простому варианту."
+          },
+          {
+            "text": "**Angesichts** des Termins **tendiere ich zu** einem kleineren Umfang.",
+            "translation_ru": "Учитывая срок, я склоняюсь к меньшему объёму."
+          },
+          {
+            "text": "**Angesichts** des Risikos **tendieren wir zum** Abwarten.",
+            "translation_ru": "Учитывая риск, мы склоняемся к ожиданию."
+          },
+          {
+            "text": "**Angesichts** ihrer Erfahrung **tendiere ich dazu**, ihrer Entscheidung zu vertrauen.",
+            "translation_ru": "Учитывая её опыт, я склоняюсь довериться её решению."
+          },
+          {
+            "text": "**Angesichts** der Daten **tendieren sie zu** einer Neugestaltung.",
+            "translation_ru": "Учитывая данные, они склоняются к редизайну."
+          },
+          {
+            "text": "**Angesichts** der Kosten **tendiert er zum** Verschieben.",
+            "translation_ru": "Учитывая стоимость, он склоняется к переносу."
+          },
+          {
+            "text": "**Angesichts** der Rückmeldungen **tendiere ich zu** einem Kurswechsel.",
+            "translation_ru": "Учитывая обратную связь, я склоняюсь изменить курс."
+          },
+          {
+            "text": "**Angesichts** des Wetters **tendieren wir dazu**, zu Hause zu bleiben.",
+            "translation_ru": "Учитывая погоду, мы склоняемся остаться дома."
+          },
+          {
+            "text": "**Angesichts** seiner Erfolge **tendiert sie dazu**, ihn einzustellen.",
+            "translation_ru": "Учитывая его послужной список, она склоняется нанять его."
+          },
+          {
+            "text": "**Angesichts** der Unsicherheit **tendiere ich noch zu keiner** der Optionen.",
+            "translation_ru": "Учитывая неопределённость, я пока не склоняюсь ни к одному варианту."
+          },
+          {
+            "text": "**Angesichts** der Einschränkungen **tendieren wir zu** einem Kompromiss.",
+            "translation_ru": "Учитывая ограничения, мы склоняемся к компромиссу."
+          },
+          {
+            "text": "Zu welcher Option **tendierst du angesichts** all dessen?",
+            "translation_ru": "Учитывая всё это, к какому варианту ты склоняешься?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Given X, I am leaning toward Y",
+      "Angesichts von X tendiere ich zu Y"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DEC002",
+    "group_id": "DEC",
+    "title_ru": "Компромисс приходится искать между X и Y.",
+    "metaphor_ru": "Называет суть выбора одной фразой: что приходится взвешивать. Хорошо структурирует обсуждение и показывает, что ты видишь обе стороны.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The trade-off is between X and Y",
+        "example": "The trade-off is between speed and quality.",
+        "translation": "Компромисс приходится искать между скоростью и качеством.",
+        "examples": [
+          {
+            "text": "**The trade-off is between** speed and quality.",
+            "translation_ru": "Компромисс приходится искать между скоростью и качеством."
+          },
+          {
+            "text": "**The trade-off is between** cost and flexibility.",
+            "translation_ru": "Компромисс приходится искать между стоимостью и гибкостью."
+          },
+          {
+            "text": "**The trade-off is between** control and convenience.",
+            "translation_ru": "Компромисс приходится искать между контролем и удобством."
+          },
+          {
+            "text": "**The trade-off is between** short-term gain and long-term stability.",
+            "translation_ru": "Компромисс между краткосрочной выгодой и долгосрочной устойчивостью."
+          },
+          {
+            "text": "**The trade-off is between** doing it now and doing it right.",
+            "translation_ru": "Компромисс между «сделать сейчас» и «сделать правильно»."
+          },
+          {
+            "text": "**The trade-off here is between** risk and reward.",
+            "translation_ru": "Здесь компромисс между риском и выгодой."
+          },
+          {
+            "text": "**The trade-off is between** privacy and personalization.",
+            "translation_ru": "Компромисс между приватностью и персонализацией."
+          },
+          {
+            "text": "**The trade-off is between** depth and breadth.",
+            "translation_ru": "Компромисс между глубиной и широтой."
+          },
+          {
+            "text": "**The trade-off is between** hiring fast and hiring well.",
+            "translation_ru": "Компромисс между «нанять быстро» и «нанять хорошо»."
+          },
+          {
+            "text": "**The real trade-off is not between** tools, **but between** goals.",
+            "translation_ru": "Настоящий компромисс не между инструментами, а между целями."
+          },
+          {
+            "text": "**The trade-off is between** saying yes and protecting our time.",
+            "translation_ru": "Компромисс между «согласиться» и защитой нашего времени."
+          },
+          {
+            "text": "What exactly **is the trade-off between**?",
+            "translation_ru": "Между чем именно приходится искать компромисс?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Der Zielkonflikt besteht zwischen X und Y",
+        "example": "Der Zielkonflikt besteht zwischen Tempo und Qualität.",
+        "translation": "Компромисс приходится искать между скоростью и качеством.",
+        "examples": [
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Tempo und Qualität.",
+            "translation_ru": "Компромисс приходится искать между скоростью и качеством."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Kosten und Flexibilität.",
+            "translation_ru": "Компромисс приходится искать между стоимостью и гибкостью."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Kontrolle und Bequemlichkeit.",
+            "translation_ru": "Компромисс приходится искать между контролем и удобством."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** kurzfristigem Gewinn und langfristiger Stabilität.",
+            "translation_ru": "Компромисс между краткосрочной выгодой и долгосрочной устойчивостью."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** sofortigem und sorgfältigem Handeln.",
+            "translation_ru": "Компромисс между «сделать сейчас» и «сделать правильно»."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht hier zwischen** Risiko und Ertrag.",
+            "translation_ru": "Здесь компромисс между риском и выгодой."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Privatsphäre und Personalisierung.",
+            "translation_ru": "Компромисс между приватностью и персонализацией."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Tiefe und Breite.",
+            "translation_ru": "Компромисс между глубиной и широтой."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** schnellem und gutem Einstellen.",
+            "translation_ru": "Компромисс между «нанять быстро» и «нанять хорошо»."
+          },
+          {
+            "text": "**Der eigentliche Zielkonflikt besteht nicht zwischen** den Werkzeugen, **sondern zwischen** den Zielen.",
+            "translation_ru": "Настоящий компромисс не между инструментами, а между целями."
+          },
+          {
+            "text": "**Der Zielkonflikt besteht zwischen** Zusagen und dem Schutz unserer Zeit.",
+            "translation_ru": "Компромисс между «согласиться» и защитой нашего времени."
+          },
+          {
+            "text": "**Zwischen was genau besteht** der Zielkonflikt?",
+            "translation_ru": "Между чем именно приходится искать компромисс?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The trade-off is between X and Y",
+      "Der Zielkonflikt besteht zwischen X und Y"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DEC003",
+    "group_id": "DEC",
+    "title_ru": "Что должно быть правдой, чтобы X сработало?",
+    "metaphor_ru": "Вопрос, который проверяет скрытые допущения плана. Вместо спора «сработает / не сработает» ты выясняешь, при каких условиях идея верна.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "What would have to be true for X to work?",
+        "example": "What would have to be true for this plan to work?",
+        "translation": "Что должно быть правдой, чтобы этот план сработал?",
+        "examples": [
+          {
+            "text": "**What would have to be true for** this plan **to work**?",
+            "translation_ru": "Что должно быть правдой, чтобы этот план сработал?"
+          },
+          {
+            "text": "**What would have to be true for** the deadline **to be realistic**?",
+            "translation_ru": "Что должно быть правдой, чтобы срок был реалистичным?"
+          },
+          {
+            "text": "**What would have to be true for** this approach **to scale**?",
+            "translation_ru": "Что должно быть правдой, чтобы этот подход масштабировался?"
+          },
+          {
+            "text": "**What would have to be true for** us **to say yes**?",
+            "translation_ru": "Что должно быть правдой, чтобы мы согласились?"
+          },
+          {
+            "text": "**What would have to be true for** the cost **to be worth it**?",
+            "translation_ru": "Что должно быть правдой, чтобы стоимость оправдалась?"
+          },
+          {
+            "text": "**What would have to be true for** her idea **to succeed**?",
+            "translation_ru": "Что должно быть правдой, чтобы её идея удалась?"
+          },
+          {
+            "text": "**What would have to be true for** the merger **to make sense**?",
+            "translation_ru": "Что должно быть правдой, чтобы слияние имело смысл?"
+          },
+          {
+            "text": "**What would have to be true for** them **to change their mind**?",
+            "translation_ru": "Что должно быть правдой, чтобы они передумали?"
+          },
+          {
+            "text": "**What would have to be true for** this **to be the right call**?",
+            "translation_ru": "Что должно быть правдой, чтобы это было верным решением?"
+          },
+          {
+            "text": "**What would have to be true for** us **to be wrong** here?",
+            "translation_ru": "Что должно быть правдой, чтобы мы здесь ошибались?"
+          },
+          {
+            "text": "**What would have to be true for** a small team **to pull this off**?",
+            "translation_ru": "Что должно быть правдой, чтобы маленькая команда справилась с этим?"
+          },
+          {
+            "text": "Let us ask **what would have to be true for** this **to work**.",
+            "translation_ru": "Давай спросим, что должно быть правдой, чтобы это сработало."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Was müsste zutreffen, damit X funktioniert?",
+        "example": "Was müsste zutreffen, damit dieser Plan funktioniert?",
+        "translation": "Что должно быть правдой, чтобы этот план сработал?",
+        "examples": [
+          {
+            "text": "**Was müsste zutreffen, damit** dieser Plan **funktioniert**?",
+            "translation_ru": "Что должно быть правдой, чтобы этот план сработал?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** der Termin **realistisch ist**?",
+            "translation_ru": "Что должно быть правдой, чтобы срок был реалистичным?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** dieser Ansatz **skaliert**?",
+            "translation_ru": "Что должно быть правдой, чтобы этот подход масштабировался?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** wir **zustimmen**?",
+            "translation_ru": "Что должно быть правдой, чтобы мы согласились?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** sich die Kosten **lohnen**?",
+            "translation_ru": "Что должно быть правдой, чтобы стоимость оправдалась?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** ihre Idee **gelingt**?",
+            "translation_ru": "Что должно быть правдой, чтобы её идея удалась?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** die Fusion **sinnvoll ist**?",
+            "translation_ru": "Что должно быть правдой, чтобы слияние имело смысл?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** sie **ihre Meinung ändern**?",
+            "translation_ru": "Что должно быть правдой, чтобы они передумали?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** das **die richtige Entscheidung ist**?",
+            "translation_ru": "Что должно быть правдой, чтобы это было верным решением?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** wir hier **falsch liegen**?",
+            "translation_ru": "Что должно быть правдой, чтобы мы здесь ошибались?"
+          },
+          {
+            "text": "**Was müsste zutreffen, damit** ein kleines Team **das schafft**?",
+            "translation_ru": "Что должно быть правдой, чтобы маленькая команда справилась с этим?"
+          },
+          {
+            "text": "Fragen wir, **was zutreffen müsste, damit** das **funktioniert**.",
+            "translation_ru": "Давай спросим, что должно быть правдой, чтобы это сработало."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "What would have to be true for X to work?",
+      "Was müsste zutreffen, damit X funktioniert?"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "WRK001",
+    "group_id": "WRK",
+    "title_ru": "Главное препятствие сейчас — это…",
+    "metaphor_ru": "Фокусирует встречу на одном узком месте. Вместо общих жалоб ты называешь конкретный блокер, который нужно снять, чтобы двинуться дальше.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The main blocker at this point is + noun",
+        "example": "The main blocker at this point is the missing approval.",
+        "translation": "Главное препятствие сейчас — отсутствующее согласование.",
+        "examples": [
+          {
+            "text": "**The main blocker at this point is** the missing approval.",
+            "translation_ru": "Главное препятствие сейчас — отсутствующее согласование."
+          },
+          {
+            "text": "**The main blocker at this point is** the unclear ownership.",
+            "translation_ru": "Главное препятствие сейчас — неясная ответственность."
+          },
+          {
+            "text": "**The main blocker at this point is** a dependency on another team.",
+            "translation_ru": "Главное препятствие сейчас — зависимость от другой команды."
+          },
+          {
+            "text": "**The main blocker at this point is** the lack of reliable data.",
+            "translation_ru": "Главное препятствие сейчас — нехватка надёжных данных."
+          },
+          {
+            "text": "**The main blocker at this point is** the pending budget decision.",
+            "translation_ru": "Главное препятствие сейчас — ожидающее решение по бюджету."
+          },
+          {
+            "text": "**The main blocker at this point is** not the code, **but** the scope.",
+            "translation_ru": "Главное препятствие сейчас — не код, а объём работ."
+          },
+          {
+            "text": "**The main blocker at this point is** waiting for legal feedback.",
+            "translation_ru": "Главное препятствие сейчас — ожидание юридической обратной связи."
+          },
+          {
+            "text": "**The main blocker at this point is** the missing test coverage.",
+            "translation_ru": "Главное препятствие сейчас — недостаточное покрытие тестами."
+          },
+          {
+            "text": "**The main blocker at this point is** a single overworked reviewer.",
+            "translation_ru": "Главное препятствие сейчас — один перегруженный проверяющий."
+          },
+          {
+            "text": "**The main blocker at this point is** unclear requirements.",
+            "translation_ru": "Главное препятствие сейчас — неясные требования."
+          },
+          {
+            "text": "**The main blocker at this point is** not technical, **but** political.",
+            "translation_ru": "Главное препятствие сейчас — не техническое, а политическое."
+          },
+          {
+            "text": "What **is the main blocker at this point**?",
+            "translation_ru": "Какое сейчас главное препятствие?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das größte Hindernis besteht derzeit in + noun",
+        "example": "Das größte Hindernis besteht derzeit in der fehlenden Freigabe.",
+        "translation": "Главное препятствие сейчас — отсутствующее согласование.",
+        "examples": [
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** der fehlenden Freigabe.",
+            "translation_ru": "Главное препятствие сейчас — отсутствующее согласование."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** der unklaren Verantwortung.",
+            "translation_ru": "Главное препятствие сейчас — неясная ответственность."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** einer Abhängigkeit von einem anderen Team.",
+            "translation_ru": "Главное препятствие сейчас — зависимость от другой команды."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit im** Mangel an zuverlässigen Daten.",
+            "translation_ru": "Главное препятствие сейчас — нехватка надёжных данных."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** der ausstehenden Budgetentscheidung.",
+            "translation_ru": "Главное препятствие сейчас — ожидающее решение по бюджету."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit nicht** im Code, **sondern** im Umfang.",
+            "translation_ru": "Главное препятствие сейчас — не код, а объём работ."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit im** Warten auf die rechtliche Rückmeldung.",
+            "translation_ru": "Главное препятствие сейчас — ожидание юридической обратной связи."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** der fehlenden Testabdeckung.",
+            "translation_ru": "Главное препятствие сейчас — недостаточное покрытие тестами."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** einem einzigen überlasteten Prüfer.",
+            "translation_ru": "Главное препятствие сейчас — один перегруженный проверяющий."
+          },
+          {
+            "text": "**Das größte Hindernis besteht derzeit in** unklaren Anforderungen.",
+            "translation_ru": "Главное препятствие сейчас — неясные требования."
+          },
+          {
+            "text": "**Das größte Hindernis ist derzeit nicht** technisch, **sondern** politisch.",
+            "translation_ru": "Главное препятствие сейчас — не техническое, а политическое."
+          },
+          {
+            "text": "**Worin besteht derzeit** das größte Hindernis?",
+            "translation_ru": "Какое сейчас главное препятствие?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The main blocker at this point is + noun",
+      "Das größte Hindernis besteht derzeit in + noun"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "WRK002",
+    "group_id": "WRK",
+    "title_ru": "Прежде чем брать обязательства, нам необходимо…",
+    "metaphor_ru": "Ставит условие перед обещанием. Защищает от поспешных обязательств и показывает, что решение нужно принимать на фактах, а не под давлением.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Before we commit, we need to + verb",
+        "example": "Before we commit, we need to see the full scope.",
+        "translation": "Прежде чем брать обязательства, нам нужно увидеть полный объём.",
+        "examples": [
+          {
+            "text": "**Before we commit, we need to** see the full scope.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно увидеть полный объём."
+          },
+          {
+            "text": "**Before we commit, we need to** understand the total cost.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно понять полную стоимость."
+          },
+          {
+            "text": "**Before we commit, we need to** talk to a few users.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно поговорить с несколькими пользователями."
+          },
+          {
+            "text": "**Before they commit, they need to** review the risks.",
+            "translation_ru": "Прежде чем брать обязательства, им нужно оценить риски."
+          },
+          {
+            "text": "**Before she commits, she needs to** read the contract.",
+            "translation_ru": "Прежде чем брать обязательства, ей нужно прочитать договор."
+          },
+          {
+            "text": "**Before we commit, we need to** check the dependencies.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно проверить зависимости."
+          },
+          {
+            "text": "**Before we commit, we need to** agree on the owner.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно договориться об ответственном."
+          },
+          {
+            "text": "**Before he commits, he needs to** see the numbers.",
+            "translation_ru": "Прежде чем брать обязательства, ему нужно увидеть цифры."
+          },
+          {
+            "text": "**Before we commit, we should not** promise a date.",
+            "translation_ru": "Прежде чем брать обязательства, нам не следует обещать дату."
+          },
+          {
+            "text": "**Before we commit, we need to** test the assumption.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно проверить допущение."
+          },
+          {
+            "text": "**Before you commit, you need to** know the exit terms.",
+            "translation_ru": "Прежде чем брать обязательства, тебе нужно знать условия выхода."
+          },
+          {
+            "text": "What do we **need to** do **before we commit**?",
+            "translation_ru": "Что нам нужно сделать, прежде чем брать обязательства?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Bevor wir uns festlegen, müssen wir + infinitive",
+        "example": "Bevor wir uns festlegen, müssen wir den vollen Umfang sehen.",
+        "translation": "Прежде чем брать обязательства, нам нужно увидеть полный объём.",
+        "examples": [
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** den vollen Umfang sehen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно увидеть полный объём."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** die Gesamtkosten verstehen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно понять полную стоимость."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** mit einigen Nutzern sprechen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно поговорить с несколькими пользователями."
+          },
+          {
+            "text": "**Bevor sie sich festlegen, müssen sie** die Risiken prüfen.",
+            "translation_ru": "Прежде чем брать обязательства, им нужно оценить риски."
+          },
+          {
+            "text": "**Bevor sie sich festlegt, muss sie** den Vertrag lesen.",
+            "translation_ru": "Прежде чем брать обязательства, ей нужно прочитать договор."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** die Abhängigkeiten prüfen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно проверить зависимости."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** uns auf die Verantwortung einigen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно договориться об ответственном."
+          },
+          {
+            "text": "**Bevor er sich festlegt, muss er** die Zahlen sehen.",
+            "translation_ru": "Прежде чем брать обязательства, ему нужно увидеть цифры."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, sollten wir** keinen Termin versprechen.",
+            "translation_ru": "Прежде чем брать обязательства, нам не следует обещать дату."
+          },
+          {
+            "text": "**Bevor wir uns festlegen, müssen wir** die Annahme testen.",
+            "translation_ru": "Прежде чем брать обязательства, нам нужно проверить допущение."
+          },
+          {
+            "text": "**Bevor du dich festlegst, musst du** die Ausstiegsbedingungen kennen.",
+            "translation_ru": "Прежде чем брать обязательства, тебе нужно знать условия выхода."
+          },
+          {
+            "text": "**Was müssen wir** tun, **bevor wir uns festlegen**?",
+            "translation_ru": "Что нам нужно сделать, прежде чем брать обязательства?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Before we commit, we need to + verb",
+      "Bevor wir uns festlegen, müssen wir + infinitive"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "WRK003",
+    "group_id": "WRK",
+    "title_ru": "Нам нужен ответственный и конкретный срок.",
+    "metaphor_ru": "Превращает расплывчатую договорённость в исполнимую задачу. Без владельца и срока «мы сделаем» обычно означает «никто не сделает».",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "We need an owner and a clear deadline",
+        "example": "We need an owner and a clear deadline for this task.",
+        "translation": "Нам нужен ответственный и конкретный срок для этой задачи.",
+        "examples": [
+          {
+            "text": "**We need an owner and a clear deadline** for this task.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для этой задачи."
+          },
+          {
+            "text": "**We need an owner and a clear deadline**, not a vague maybe.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок, а не расплывчатое «может быть»."
+          },
+          {
+            "text": "**We need an owner and a clear deadline** before we leave this meeting.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок, прежде чем мы закончим встречу."
+          },
+          {
+            "text": "**Every action needs an owner and a clear deadline**.",
+            "translation_ru": "У каждого действия должен быть ответственный и конкретный срок."
+          },
+          {
+            "text": "**We need an owner and a clear deadline** for the decision.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для решения."
+          },
+          {
+            "text": "**This needs an owner and a clear deadline** to move forward.",
+            "translation_ru": "Этому нужен ответственный и конкретный срок, чтобы двигаться дальше."
+          },
+          {
+            "text": "**We do not just need agreement; we need an owner and a clear deadline**.",
+            "translation_ru": "Нам нужно не просто согласие; нам нужен ответственный и конкретный срок."
+          },
+          {
+            "text": "**The migration needs an owner and a clear deadline**.",
+            "translation_ru": "Миграции нужен ответственный и конкретный срок."
+          },
+          {
+            "text": "**Without an owner and a clear deadline**, nothing will happen.",
+            "translation_ru": "Без ответственного и конкретного срока ничего не произойдёт."
+          },
+          {
+            "text": "**We need an owner and a clear deadline** for each open question.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для каждого открытого вопроса."
+          },
+          {
+            "text": "**Someone needs to own this, and we need a clear deadline**.",
+            "translation_ru": "Кто-то должен это взять на себя, и нам нужен конкретный срок."
+          },
+          {
+            "text": "Do we **have an owner and a clear deadline** yet?",
+            "translation_ru": "У нас уже есть ответственный и конкретный срок?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wir brauchen eine verantwortliche Person und eine klare Frist",
+        "example": "Wir brauchen eine verantwortliche Person und eine klare Frist für diese Aufgabe.",
+        "translation": "Нам нужен ответственный и конкретный срок для этой задачи.",
+        "examples": [
+          {
+            "text": "**Wir brauchen eine verantwortliche Person und eine klare Frist** für diese Aufgabe.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для этой задачи."
+          },
+          {
+            "text": "**Wir brauchen eine verantwortliche Person und eine klare Frist**, kein vages Vielleicht.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок, а не расплывчатое «может быть»."
+          },
+          {
+            "text": "**Wir brauchen eine verantwortliche Person und eine klare Frist**, bevor wir das Meeting beenden.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок, прежде чем мы закончим встречу."
+          },
+          {
+            "text": "**Jede Maßnahme braucht eine verantwortliche Person und eine klare Frist**.",
+            "translation_ru": "У каждого действия должен быть ответственный и конкретный срок."
+          },
+          {
+            "text": "**Wir brauchen eine verantwortliche Person und eine klare Frist** für die Entscheidung.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для решения."
+          },
+          {
+            "text": "**Dafür brauchen wir eine verantwortliche Person und eine klare Frist**, um voranzukommen.",
+            "translation_ru": "Этому нужен ответственный и конкретный срок, чтобы двигаться дальше."
+          },
+          {
+            "text": "**Wir brauchen nicht nur Zustimmung; wir brauchen eine verantwortliche Person und eine klare Frist**.",
+            "translation_ru": "Нам нужно не просто согласие; нам нужен ответственный и конкретный срок."
+          },
+          {
+            "text": "**Die Migration braucht eine verantwortliche Person und eine klare Frist**.",
+            "translation_ru": "Миграции нужен ответственный и конкретный срок."
+          },
+          {
+            "text": "**Ohne eine verantwortliche Person und eine klare Frist** wird nichts passieren.",
+            "translation_ru": "Без ответственного и конкретного срока ничего не произойдёт."
+          },
+          {
+            "text": "**Wir brauchen eine verantwortliche Person und eine klare Frist** für jede offene Frage.",
+            "translation_ru": "Нам нужен ответственный и конкретный срок для каждого открытого вопроса."
+          },
+          {
+            "text": "**Jemand muss das übernehmen, und wir brauchen eine klare Frist**.",
+            "translation_ru": "Кто-то должен это взять на себя, и нам нужен конкретный срок."
+          },
+          {
+            "text": "**Haben wir schon eine verantwortliche Person und eine klare Frist**?",
+            "translation_ru": "У нас уже есть ответственный и конкретный срок?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "We need an owner and a clear deadline",
+      "Wir brauchen eine verantwortliche Person und eine klare Frist"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DIS001",
+    "group_id": "DIS",
+    "title_ru": "Я понимаю твою логику, но не согласен с выводом.",
+    "metaphor_ru": "Разделяет логику и вывод: ты признаёшь, что рассуждение разумно, но не принимаешь итог. Это снимает личный конфликт и переносит спор на уровень аргументов.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I understand your reasoning, but I disagree with the conclusion",
+        "example": "I understand your reasoning, but I disagree with the conclusion.",
+        "translation": "Я понимаю твою логику, но не согласен с выводом.",
+        "examples": [
+          {
+            "text": "**I understand your reasoning, but I disagree with the conclusion**.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с выводом."
+          },
+          {
+            "text": "**I understand your reasoning, but I disagree with** the recommendation.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с рекомендацией."
+          },
+          {
+            "text": "**We understand your reasoning, but we disagree with the conclusion**.",
+            "translation_ru": "Мы понимаем твою логику, но не согласны с выводом."
+          },
+          {
+            "text": "**I understand her reasoning, but I disagree with** her conclusion.",
+            "translation_ru": "Я понимаю её логику, но не согласен с её выводом."
+          },
+          {
+            "text": "**I understand their reasoning, but I disagree with** their priorities.",
+            "translation_ru": "Я понимаю их логику, но не согласен с их приоритетами."
+          },
+          {
+            "text": "**He understands the reasoning, but he disagrees with the conclusion**.",
+            "translation_ru": "Он понимает логику, но не согласен с выводом."
+          },
+          {
+            "text": "**I understand your reasoning, but I do not share** the conclusion.",
+            "translation_ru": "Я понимаю твою логику, но не разделяю вывод."
+          },
+          {
+            "text": "**She understands the reasoning, but she disagrees with** the premise.",
+            "translation_ru": "Она понимает логику, но не согласна с предпосылкой."
+          },
+          {
+            "text": "**I understand the reasoning, but I disagree with** the timeline.",
+            "translation_ru": "Я понимаю логику, но не согласен со сроками."
+          },
+          {
+            "text": "**We understand the reasoning, but we disagree with** the trade-off.",
+            "translation_ru": "Мы понимаем логику, но не согласны с компромиссом."
+          },
+          {
+            "text": "**I understand your reasoning, but I disagree with** how you got there.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с тем, как ты к этому пришёл."
+          },
+          {
+            "text": "Do you **understand my reasoning**, even if you **disagree with the conclusion**?",
+            "translation_ru": "Ты понимаешь мою логику, даже если не согласен с выводом?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich verstehe deine Argumentation, stimme der Schlussfolgerung aber nicht zu",
+        "example": "Ich verstehe deine Argumentation, stimme der Schlussfolgerung aber nicht zu.",
+        "translation": "Я понимаю твою логику, но не согласен с выводом.",
+        "examples": [
+          {
+            "text": "**Ich verstehe deine Argumentation, stimme der Schlussfolgerung aber nicht zu**.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с выводом."
+          },
+          {
+            "text": "**Ich verstehe deine Argumentation, stimme der** Empfehlung **aber nicht zu**.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с рекомендацией."
+          },
+          {
+            "text": "**Wir verstehen deine Argumentation, stimmen der Schlussfolgerung aber nicht zu**.",
+            "translation_ru": "Мы понимаем твою логику, но не согласны с выводом."
+          },
+          {
+            "text": "**Ich verstehe ihre Argumentation, stimme ihrer Schlussfolgerung aber nicht zu**.",
+            "translation_ru": "Я понимаю её логику, но не согласен с её выводом."
+          },
+          {
+            "text": "**Ich verstehe ihre Argumentation, stimme ihren** Prioritäten **aber nicht zu**.",
+            "translation_ru": "Я понимаю их логику, но не согласен с их приоритетами."
+          },
+          {
+            "text": "**Er versteht die Argumentation, stimmt der Schlussfolgerung aber nicht zu**.",
+            "translation_ru": "Он понимает логику, но не согласен с выводом."
+          },
+          {
+            "text": "**Ich verstehe deine Argumentation, teile die Schlussfolgerung aber nicht**.",
+            "translation_ru": "Я понимаю твою логику, но не разделяю вывод."
+          },
+          {
+            "text": "**Sie versteht die Argumentation, stimmt der** Prämisse **aber nicht zu**.",
+            "translation_ru": "Она понимает логику, но не согласна с предпосылкой."
+          },
+          {
+            "text": "**Ich verstehe die Argumentation, stimme dem** Zeitplan **aber nicht zu**.",
+            "translation_ru": "Я понимаю логику, но не согласен со сроками."
+          },
+          {
+            "text": "**Wir verstehen die Argumentation, stimmen dem** Kompromiss **aber nicht zu**.",
+            "translation_ru": "Мы понимаем логику, но не согласны с компромиссом."
+          },
+          {
+            "text": "**Ich verstehe deine Argumentation, stimme aber nicht zu**, wie du dorthin gekommen bist.",
+            "translation_ru": "Я понимаю твою логику, но не согласен с тем, как ты к этому пришёл."
+          },
+          {
+            "text": "**Verstehst du meine Argumentation**, auch wenn du der Schlussfolgerung **nicht zustimmst**?",
+            "translation_ru": "Ты понимаешь мою логику, даже если не согласен с выводом?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "I understand your reasoning, but I disagree with the conclusion",
+      "Ich verstehe deine Argumentation, stimme der Schlussfolgerung aber nicht zu"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DIS002",
+    "group_id": "DIS",
+    "title_ru": "В целом это может быть верно, но здесь ситуация другая.",
+    "metaphor_ru": "Признаёшь общее правило, но аккуратно показываешь, что конкретный случай — исключение. Так ты не споришь с собеседником, а уточняешь границы применимости.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "That may be true in general, but it does not apply here",
+        "example": "That may be true in general, but it does not apply here.",
+        "translation": "В целом это может быть верно, но здесь это не применимо.",
+        "examples": [
+          {
+            "text": "**That may be true in general, but it does not apply here**.",
+            "translation_ru": "В целом это может быть верно, но здесь это не применимо."
+          },
+          {
+            "text": "**That may be true in general, but it does not apply** to our case.",
+            "translation_ru": "В целом это может быть верно, но к нашему случаю не применимо."
+          },
+          {
+            "text": "**That may be true in general, but it does not apply** to this team.",
+            "translation_ru": "В целом это может быть верно, но к этой команде не применимо."
+          },
+          {
+            "text": "**This may be true in general, but it does not apply** to small projects.",
+            "translation_ru": "В целом это может быть верно, но к маленьким проектам не применимо."
+          },
+          {
+            "text": "**That may be true in theory, but it does not apply** in practice.",
+            "translation_ru": "В теории это может быть верно, но на практике не применимо."
+          },
+          {
+            "text": "**That may be true in general, but** the situation here is different.",
+            "translation_ru": "В целом это может быть верно, но ситуация здесь иная."
+          },
+          {
+            "text": "**That may be true in general, but it does not apply** to her role.",
+            "translation_ru": "В целом это может быть верно, но к её роли не применимо."
+          },
+          {
+            "text": "**That may be true for large companies, but it does not apply** to us.",
+            "translation_ru": "Это может быть верно для крупных компаний, но к нам не применимо."
+          },
+          {
+            "text": "**That may be true in general, but it does not apply** to this market.",
+            "translation_ru": "В целом это может быть верно, но к этому рынку не применимо."
+          },
+          {
+            "text": "**That may be true in general, but** the data here tells another story.",
+            "translation_ru": "В целом это может быть верно, но данные здесь говорят о другом."
+          },
+          {
+            "text": "**That may be true in general, but it does not apply** to beginners.",
+            "translation_ru": "В целом это может быть верно, но к новичкам не применимо."
+          },
+          {
+            "text": "Does that really **apply here**, even if it is **true in general**?",
+            "translation_ru": "Это правда применимо здесь, даже если верно в целом?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das mag allgemein stimmen, trifft hier aber nicht zu",
+        "example": "Das mag allgemein stimmen, trifft hier aber nicht zu.",
+        "translation": "В целом это может быть верно, но здесь это не применимо.",
+        "examples": [
+          {
+            "text": "**Das mag allgemein stimmen, trifft hier aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но здесь это не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf unseren Fall **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к нашему случаю не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf dieses Team **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к этой команде не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf kleine Projekte **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к маленьким проектам не применимо."
+          },
+          {
+            "text": "**Das mag in der Theorie stimmen, trifft** in der Praxis **aber nicht zu**.",
+            "translation_ru": "В теории это может быть верно, но на практике не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen,** die Situation hier **ist aber anders**.",
+            "translation_ru": "В целом это может быть верно, но ситуация здесь иная."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf ihre Rolle **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к её роли не применимо."
+          },
+          {
+            "text": "**Das mag für große Unternehmen stimmen, trifft** auf uns **aber nicht zu**.",
+            "translation_ru": "Это может быть верно для крупных компаний, но к нам не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf diesen Markt **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к этому рынку не применимо."
+          },
+          {
+            "text": "**Das mag allgemein stimmen,** die Daten hier **erzählen aber** eine andere Geschichte.",
+            "translation_ru": "В целом это может быть верно, но данные здесь говорят о другом."
+          },
+          {
+            "text": "**Das mag allgemein stimmen, trifft** auf Anfänger **aber nicht zu**.",
+            "translation_ru": "В целом это может быть верно, но к новичкам не применимо."
+          },
+          {
+            "text": "**Trifft das** hier wirklich **zu**, auch wenn es **allgemein stimmt**?",
+            "translation_ru": "Это правда применимо здесь, даже если верно в целом?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "That may be true in general, but it does not apply here",
+      "Das mag allgemein stimmen, trifft hier aber nicht zu"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "DIS003",
+    "group_id": "DIS",
+    "title_ru": "Я возражаю не против цели, а против способа.",
+    "metaphor_ru": "Уточняет, с чем именно ты не согласен: с целью или с методом. Это спасает сотрудничество — ты поддерживаешь намерение, но оспариваешь путь.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I am not objecting to the goal; I am objecting to the approach",
+        "example": "I am not objecting to the goal; I am objecting to the approach.",
+        "translation": "Я возражаю не против цели, а против подхода.",
+        "examples": [
+          {
+            "text": "**I am not objecting to the goal; I am objecting to the approach**.",
+            "translation_ru": "Я возражаю не против цели, а против подхода."
+          },
+          {
+            "text": "**I am not objecting to the goal; I am objecting to** the timeline.",
+            "translation_ru": "Я возражаю не против цели, а против сроков."
+          },
+          {
+            "text": "**We are not objecting to the goal; we are objecting to** the cost.",
+            "translation_ru": "Мы возражаем не против цели, а против стоимости."
+          },
+          {
+            "text": "**I am not objecting to the change; I am objecting to** the way it was made.",
+            "translation_ru": "Я возражаю не против изменения, а против того, как оно было сделано."
+          },
+          {
+            "text": "**She is not objecting to the goal; she is objecting to** the risk.",
+            "translation_ru": "Она возражает не против цели, а против риска."
+          },
+          {
+            "text": "**I am not objecting to the goal; I am objecting to** the lack of evidence.",
+            "translation_ru": "Я возражаю не против цели, а против отсутствия доказательств."
+          },
+          {
+            "text": "**I am not objecting to the idea; I am objecting to** the pace.",
+            "translation_ru": "Я возражаю не против идеи, а против темпа."
+          },
+          {
+            "text": "**He is not objecting to the plan; he is objecting to** the budget.",
+            "translation_ru": "Он возражает не против плана, а против бюджета."
+          },
+          {
+            "text": "**I am not objecting to the goal; I am objecting to** the process.",
+            "translation_ru": "Я возражаю не против цели, а против процесса."
+          },
+          {
+            "text": "**We are not objecting to the decision; we are objecting to** how it was communicated.",
+            "translation_ru": "Мы возражаем не против решения, а против того, как его сообщили."
+          },
+          {
+            "text": "**I am not objecting to the goal; I am objecting to** the assumptions behind it.",
+            "translation_ru": "Я возражаю не против цели, а против стоящих за ней допущений."
+          },
+          {
+            "text": "Are you **objecting to the goal** or **to the approach**?",
+            "translation_ru": "Ты возражаешь против цели или против подхода?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich widerspreche nicht dem Ziel, sondern dem Vorgehen",
+        "example": "Ich widerspreche nicht dem Ziel, sondern dem Vorgehen.",
+        "translation": "Я возражаю не против цели, а против подхода.",
+        "examples": [
+          {
+            "text": "**Ich widerspreche nicht dem Ziel, sondern dem Vorgehen**.",
+            "translation_ru": "Я возражаю не против цели, а против подхода."
+          },
+          {
+            "text": "**Ich widerspreche nicht dem Ziel, sondern dem** Zeitplan.",
+            "translation_ru": "Я возражаю не против цели, а против сроков."
+          },
+          {
+            "text": "**Wir widersprechen nicht dem Ziel, sondern den** Kosten.",
+            "translation_ru": "Мы возражаем не против цели, а против стоимости."
+          },
+          {
+            "text": "**Ich widerspreche nicht der Änderung, sondern der** Art, wie sie gemacht wurde.",
+            "translation_ru": "Я возражаю не против изменения, а против того, как оно было сделано."
+          },
+          {
+            "text": "**Sie widerspricht nicht dem Ziel, sondern dem** Risiko.",
+            "translation_ru": "Она возражает не против цели, а против риска."
+          },
+          {
+            "text": "**Ich widerspreche nicht dem Ziel, sondern dem** Mangel an Belegen.",
+            "translation_ru": "Я возражаю не против цели, а против отсутствия доказательств."
+          },
+          {
+            "text": "**Ich widerspreche nicht der Idee, sondern dem** Tempo.",
+            "translation_ru": "Я возражаю не против идеи, а против темпа."
+          },
+          {
+            "text": "**Er widerspricht nicht dem Plan, sondern dem** Budget.",
+            "translation_ru": "Он возражает не против плана, а против бюджета."
+          },
+          {
+            "text": "**Ich widerspreche nicht dem Ziel, sondern dem** Prozess.",
+            "translation_ru": "Я возражаю не против цели, а против процесса."
+          },
+          {
+            "text": "**Wir widersprechen nicht der Entscheidung, sondern der** Art, wie sie kommuniziert wurde.",
+            "translation_ru": "Мы возражаем не против решения, а против того, как его сообщили."
+          },
+          {
+            "text": "**Ich widerspreche nicht dem Ziel, sondern den** Annahmen dahinter.",
+            "translation_ru": "Я возражаю не против цели, а против стоящих за ней допущений."
+          },
+          {
+            "text": "**Widersprichst du dem Ziel** oder **dem Vorgehen**?",
+            "translation_ru": "Ты возражаешь против цели или против подхода?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "I am not objecting to the goal; I am objecting to the approach",
+      "Ich widerspreche nicht dem Ziel, sondern dem Vorgehen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CAU001",
+    "group_id": "CAU",
+    "title_ru": "Это привело к X, что, в свою очередь, вызвало Y.",
+    "metaphor_ru": "Показывает цепочку последствий, а не одну причину. Полезно для анализа: одно событие запускает следующее, и ты видишь всю связку.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This led to X, which in turn caused Y",
+        "example": "This led to delays, which in turn caused extra costs.",
+        "translation": "Это привело к задержкам, что, в свою очередь, вызвало дополнительные расходы.",
+        "examples": [
+          {
+            "text": "**This led to** delays, **which in turn caused** extra costs.",
+            "translation_ru": "Это привело к задержкам, что, в свою очередь, вызвало дополнительные расходы."
+          },
+          {
+            "text": "**This led to** confusion, **which in turn caused** mistakes.",
+            "translation_ru": "Это привело к путанице, что, в свою очередь, вызвало ошибки."
+          },
+          {
+            "text": "**This led to** a redesign, **which in turn caused** a longer timeline.",
+            "translation_ru": "Это привело к редизайну, что, в свою очередь, удлинило срок."
+          },
+          {
+            "text": "**That led to** frustration, **which in turn caused** people to leave.",
+            "translation_ru": "Это привело к разочарованию, что, в свою очередь, привело к уходу людей."
+          },
+          {
+            "text": "**This led to** more meetings, **which in turn caused** less focus.",
+            "translation_ru": "Это привело к большему числу встреч, что, в свою очередь, снизило фокус."
+          },
+          {
+            "text": "**The change led to** bugs, **which in turn caused** a rollback.",
+            "translation_ru": "Изменение привело к багам, что, в свою очередь, вызвало откат."
+          },
+          {
+            "text": "**This led to** growth, **which in turn caused** new problems.",
+            "translation_ru": "Это привело к росту, что, в свою очередь, породило новые проблемы."
+          },
+          {
+            "text": "**The outage led to** lost data, **which in turn caused** a loss of trust.",
+            "translation_ru": "Сбой привёл к потере данных, что, в свою очередь, вызвало потерю доверия."
+          },
+          {
+            "text": "**This led to** overtime, **which in turn caused** burnout.",
+            "translation_ru": "Это привело к переработкам, что, в свою очередь, вызвало выгорание."
+          },
+          {
+            "text": "**The error led to** a wrong forecast, **which in turn caused** overstocking.",
+            "translation_ru": "Ошибка привела к неверному прогнозу, что, в свою очередь, вызвало избыток запасов."
+          },
+          {
+            "text": "**This led to** a pricing change, **which in turn caused** complaints.",
+            "translation_ru": "Это привело к изменению цены, что, в свою очередь, вызвало жалобы."
+          },
+          {
+            "text": "Did **this lead to** delays, **which in turn caused** the extra costs?",
+            "translation_ru": "Это привело к задержкам, которые, в свою очередь, вызвали дополнительные расходы?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das führte zu X, was wiederum Y verursachte",
+        "example": "Das führte zu Verzögerungen, was wiederum zusätzliche Kosten verursachte.",
+        "translation": "Это привело к задержкам, что, в свою очередь, вызвало дополнительные расходы.",
+        "examples": [
+          {
+            "text": "**Das führte zu** Verzögerungen, **was wiederum** zusätzliche Kosten **verursachte**.",
+            "translation_ru": "Это привело к задержкам, что, в свою очередь, вызвало дополнительные расходы."
+          },
+          {
+            "text": "**Das führte zu** Verwirrung, **was wiederum** Fehler **verursachte**.",
+            "translation_ru": "Это привело к путанице, что, в свою очередь, вызвало ошибки."
+          },
+          {
+            "text": "**Das führte zu** einer Neugestaltung, **was wiederum** einen längeren Zeitplan **verursachte**.",
+            "translation_ru": "Это привело к редизайну, что, в свою очередь, удлинило срок."
+          },
+          {
+            "text": "**Das führte zu** Frustration, **was wiederum dazu führte**, dass Leute gingen.",
+            "translation_ru": "Это привело к разочарованию, что, в свою очередь, привело к уходу людей."
+          },
+          {
+            "text": "**Das führte zu** mehr Meetings, **was wiederum** weniger Fokus **verursachte**.",
+            "translation_ru": "Это привело к большему числу встреч, что, в свою очередь, снизило фокус."
+          },
+          {
+            "text": "**Die Änderung führte zu** Fehlern, **was wiederum** ein Zurücksetzen **verursachte**.",
+            "translation_ru": "Изменение привело к багам, что, в свою очередь, вызвало откат."
+          },
+          {
+            "text": "**Das führte zu** Wachstum, **was wiederum** neue Probleme **verursachte**.",
+            "translation_ru": "Это привело к росту, что, в свою очередь, породило новые проблемы."
+          },
+          {
+            "text": "**Der Ausfall führte zu** Datenverlust, **was wiederum** einen Vertrauensverlust **verursachte**.",
+            "translation_ru": "Сбой привёл к потере данных, что, в свою очередь, вызвало потерю доверия."
+          },
+          {
+            "text": "**Das führte zu** Überstunden, **was wiederum** Burnout **verursachte**.",
+            "translation_ru": "Это привело к переработкам, что, в свою очередь, вызвало выгорание."
+          },
+          {
+            "text": "**Der Fehler führte zu** einer falschen Prognose, **was wiederum** Überbestände **verursachte**.",
+            "translation_ru": "Ошибка привела к неверному прогнозу, что, в свою очередь, вызвало избыток запасов."
+          },
+          {
+            "text": "**Das führte zu** einer Preisänderung, **was wiederum** Beschwerden **verursachte**.",
+            "translation_ru": "Это привело к изменению цены, что, в свою очередь, вызвало жалобы."
+          },
+          {
+            "text": "**Führte das zu** Verzögerungen, **was wiederum** die zusätzlichen Kosten **verursachte**?",
+            "translation_ru": "Это привело к задержкам, которые, в свою очередь, вызвали дополнительные расходы?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "This led to X, which in turn caused Y",
+      "Das führte zu X, was wiederum Y verursachte"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CAU002",
+    "group_id": "CAU",
+    "title_ru": "Непосредственной причиной был X, но основная причина — Y.",
+    "metaphor_ru": "Разводит поверхностную и глубинную причину. Это признак зрелого анализа: ты не останавливаешься на очевидном, а докапываешься до корня.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The immediate cause was X, but the underlying cause was Y",
+        "example": "The immediate cause was a bug, but the underlying cause was missing tests.",
+        "translation": "Непосредственной причиной был баг, но основная причина — отсутствие тестов.",
+        "examples": [
+          {
+            "text": "**The immediate cause was** a bug, **but the underlying cause was** missing tests.",
+            "translation_ru": "Непосредственной причиной был баг, но основная причина — отсутствие тестов."
+          },
+          {
+            "text": "**The immediate cause was** the deadline, **but the underlying cause was** poor planning.",
+            "translation_ru": "Непосредственной причиной был срок, но основная причина — плохое планирование."
+          },
+          {
+            "text": "**The immediate cause was** a misunderstanding, **but the underlying cause was** unclear roles.",
+            "translation_ru": "Непосредственной причиной было недопонимание, но основная причина — неясные роли."
+          },
+          {
+            "text": "**The immediate cause was** the outage, **but the underlying cause was** old hardware.",
+            "translation_ru": "Непосредственной причиной был сбой, но основная причина — старое оборудование."
+          },
+          {
+            "text": "**The immediate cause was** his mistake, **but the underlying cause was** no review.",
+            "translation_ru": "Непосредственной причиной была его ошибка, но основная причина — отсутствие проверки."
+          },
+          {
+            "text": "**The immediate cause was** the budget cut, **but the underlying cause was** falling revenue.",
+            "translation_ru": "Непосредственной причиной было сокращение бюджета, но основная причина — падающая выручка."
+          },
+          {
+            "text": "**The immediate cause was** stress, **but the underlying cause was** too much work.",
+            "translation_ru": "Непосредственной причиной был стресс, но основная причина — слишком много работы."
+          },
+          {
+            "text": "**The immediate cause was** the resignation, **but the underlying cause was** low morale.",
+            "translation_ru": "Непосредственной причиной была отставка, но основная причина — низкий моральный дух."
+          },
+          {
+            "text": "**The immediate cause was** the typo, **but the underlying cause was** no proofreading.",
+            "translation_ru": "Непосредственной причиной была опечатка, но основная причина — отсутствие вычитки."
+          },
+          {
+            "text": "**The immediate cause was** the complaint, **but the underlying cause was** slow support.",
+            "translation_ru": "Непосредственной причиной была жалоба, но основная причина — медленная поддержка."
+          },
+          {
+            "text": "**The immediate cause was** the missed deadline, **but the underlying cause was** unclear scope.",
+            "translation_ru": "Непосредственной причиной был сорванный срок, но основная причина — неясный объём."
+          },
+          {
+            "text": "Was a bug **the immediate cause**, or was **the underlying cause** deeper?",
+            "translation_ru": "Баг был непосредственной причиной, или основная причина лежала глубже?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die unmittelbare Ursache war X, die eigentliche Ursache jedoch Y",
+        "example": "Die unmittelbare Ursache war ein Fehler, die eigentliche Ursache jedoch fehlende Tests.",
+        "translation": "Непосредственной причиной был баг, но основная причина — отсутствие тестов.",
+        "examples": [
+          {
+            "text": "**Die unmittelbare Ursache war** ein Fehler, **die eigentliche Ursache jedoch** fehlende Tests.",
+            "translation_ru": "Непосредственной причиной был баг, но основная причина — отсутствие тестов."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** der Termin, **die eigentliche Ursache jedoch** schlechte Planung.",
+            "translation_ru": "Непосредственной причиной был срок, но основная причина — плохое планирование."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** ein Missverständnis, **die eigentliche Ursache jedoch** unklare Rollen.",
+            "translation_ru": "Непосредственной причиной было недопонимание, но основная причина — неясные роли."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** der Ausfall, **die eigentliche Ursache jedoch** alte Hardware.",
+            "translation_ru": "Непосредственной причиной был сбой, но основная причина — старое оборудование."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** sein Fehler, **die eigentliche Ursache jedoch** die fehlende Prüfung.",
+            "translation_ru": "Непосредственной причиной была его ошибка, но основная причина — отсутствие проверки."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** die Budgetkürzung, **die eigentliche Ursache jedoch** sinkende Einnahmen.",
+            "translation_ru": "Непосредственной причиной было сокращение бюджета, но основная причина — падающая выручка."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** Stress, **die eigentliche Ursache jedoch** zu viel Arbeit.",
+            "translation_ru": "Непосредственной причиной был стресс, но основная причина — слишком много работы."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** die Kündigung, **die eigentliche Ursache jedoch** niedrige Moral.",
+            "translation_ru": "Непосредственной причиной была отставка, но основная причина — низкий моральный дух."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** der Tippfehler, **die eigentliche Ursache jedoch** das fehlende Korrekturlesen.",
+            "translation_ru": "Непосредственной причиной была опечатка, но основная причина — отсутствие вычитки."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** die Beschwerde, **die eigentliche Ursache jedoch** der langsame Support.",
+            "translation_ru": "Непосредственной причиной была жалоба, но основная причина — медленная поддержка."
+          },
+          {
+            "text": "**Die unmittelbare Ursache war** der verpasste Termin, **die eigentliche Ursache jedoch** ein unklarer Umfang.",
+            "translation_ru": "Непосредственной причиной был сорванный срок, но основная причина — неясный объём."
+          },
+          {
+            "text": "**War** ein Fehler **die unmittelbare Ursache**, oder **lag die eigentliche Ursache** tiefer?",
+            "translation_ru": "Баг был непосредственной причиной, или основная причина лежала глубже?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The immediate cause was X, but the underlying cause was Y",
+      "Die unmittelbare Ursache war X, die eigentliche Ursache jedoch Y"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "CAU003",
+    "group_id": "CAU",
+    "title_ru": "Закономерность, которую я постоянно замечаю, состоит в…",
+    "metaphor_ru": "Обобщает повторяющееся наблюдение в устойчивый паттерн. Вместо разовой жалобы ты показываешь систему — и к ней уже можно подбирать решение.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The pattern I keep seeing is that + clause",
+        "example": "The pattern I keep seeing is that we start too many things at once.",
+        "translation": "Закономерность, которую я постоянно замечаю: мы начинаем слишком много дел одновременно.",
+        "examples": [
+          {
+            "text": "**The pattern I keep seeing is that** we start too many things at once.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы начинаем слишком много дел одновременно."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** small issues become big ones.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мелкие проблемы становятся большими."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** we skip the review step.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы пропускаем этап проверки."
+          },
+          {
+            "text": "**The pattern she keeps seeing is that** people avoid hard talks.",
+            "translation_ru": "Закономерность, которую она постоянно замечает: люди избегают трудных разговоров."
+          },
+          {
+            "text": "**The pattern we keep seeing is that** deadlines slip every quarter.",
+            "translation_ru": "Закономерность, которую мы постоянно замечаем: сроки срываются каждый квартал."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** we underestimate the effort.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы недооцениваем усилия."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** good ideas die without an owner.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: хорошие идеи гибнут без ответственного."
+          },
+          {
+            "text": "**The pattern he keeps seeing is that** we optimize the wrong metric.",
+            "translation_ru": "Закономерность, которую он постоянно замечает: мы оптимизируем не ту метрику."
+          },
+          {
+            "text": "**The pattern they keep seeing is that** new hires lack context.",
+            "translation_ru": "Закономерность, которую они постоянно замечают: новым сотрудникам не хватает контекста."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** we ship before we test.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы выпускаем, не протестировав."
+          },
+          {
+            "text": "**The pattern I keep seeing is that** we confuse activity with progress.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы путаем активность с прогрессом."
+          },
+          {
+            "text": "What **pattern do you keep seeing**?",
+            "translation_ru": "Какую закономерность ты постоянно замечаешь?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das Muster, das ich immer wieder sehe, ist, dass + Nebensatz",
+        "example": "Das Muster, das ich immer wieder sehe, ist, dass wir zu viele Dinge gleichzeitig anfangen.",
+        "translation": "Закономерность, которую я постоянно замечаю: мы начинаем слишком много дел одновременно.",
+        "examples": [
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** wir zu viele Dinge gleichzeitig anfangen.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы начинаем слишком много дел одновременно."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** kleine Probleme zu großen werden.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мелкие проблемы становятся большими."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** wir den Prüfschritt auslassen.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы пропускаем этап проверки."
+          },
+          {
+            "text": "**Das Muster, das sie immer wieder sieht, ist, dass** Leute schwierige Gespräche vermeiden.",
+            "translation_ru": "Закономерность, которую она постоянно замечает: люди избегают трудных разговоров."
+          },
+          {
+            "text": "**Das Muster, das wir immer wieder sehen, ist, dass** Termine jedes Quartal verrutschen.",
+            "translation_ru": "Закономерность, которую мы постоянно замечаем: сроки срываются каждый квартал."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** wir den Aufwand unterschätzen.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы недооцениваем усилия."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** gute Ideen ohne Verantwortlichen scheitern.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: хорошие идеи гибнут без ответственного."
+          },
+          {
+            "text": "**Das Muster, das er immer wieder sieht, ist, dass** wir die falsche Kennzahl optimieren.",
+            "translation_ru": "Закономерность, которую он постоянно замечает: мы оптимизируем не ту метрику."
+          },
+          {
+            "text": "**Das Muster, das sie immer wieder sehen, ist, dass** neuen Mitarbeitenden der Kontext fehlt.",
+            "translation_ru": "Закономерность, которую они постоянно замечают: новым сотрудникам не хватает контекста."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** wir ausliefern, bevor wir testen.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы выпускаем, не протестировав."
+          },
+          {
+            "text": "**Das Muster, das ich immer wieder sehe, ist, dass** wir Aktivität mit Fortschritt verwechseln.",
+            "translation_ru": "Закономерность, которую я постоянно замечаю: мы путаем активность с прогрессом."
+          },
+          {
+            "text": "Welches **Muster siehst du immer wieder**?",
+            "translation_ru": "Какую закономерность ты постоянно замечаешь?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The pattern I keep seeing is that + clause",
+      "Das Muster, das ich immer wieder sehe, ist, dass + Nebensatz"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "BND001",
+    "group_id": "BND",
+    "title_ru": "Я могу помочь с X, но не могу взять на себя Y.",
+    "metaphor_ru": "Предлагает помощь, но проводит границу ответственности. Ты не отказываешь полностью, а честно разделяешь: что готов сделать и за что не отвечаешь.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I can help with X, but I cannot take responsibility for Y",
+        "example": "I can help with the research, but I cannot take responsibility for the decision.",
+        "translation": "Я могу помочь с исследованием, но не могу взять на себя ответственность за решение.",
+        "examples": [
+          {
+            "text": "**I can help with** the research, **but I cannot take responsibility for** the decision.",
+            "translation_ru": "Я могу помочь с исследованием, но не могу взять на себя ответственность за решение."
+          },
+          {
+            "text": "**I can help with** the draft, **but I cannot take responsibility for** the final text.",
+            "translation_ru": "Я могу помочь с черновиком, но не могу отвечать за финальный текст."
+          },
+          {
+            "text": "**I can help with** the setup, **but I cannot take responsibility for** maintenance.",
+            "translation_ru": "Я могу помочь с настройкой, но не могу отвечать за поддержку."
+          },
+          {
+            "text": "**We can help with** the analysis, **but we cannot take responsibility for** the outcome.",
+            "translation_ru": "Мы можем помочь с анализом, но не можем отвечать за результат."
+          },
+          {
+            "text": "**She can help with** the planning, **but she cannot take responsibility for** the budget.",
+            "translation_ru": "Она может помочь с планированием, но не может отвечать за бюджет."
+          },
+          {
+            "text": "**I can help with** the meeting, **but I cannot take responsibility for** the follow-up.",
+            "translation_ru": "Я могу помочь со встречей, но не могу отвечать за дальнейшие шаги."
+          },
+          {
+            "text": "**I can help with** the code, **but I cannot take responsibility for** the deadline.",
+            "translation_ru": "Я могу помочь с кодом, но не могу отвечать за срок."
+          },
+          {
+            "text": "**He can help with** the design, **but he cannot take responsibility for** the content.",
+            "translation_ru": "Он может помочь с дизайном, но не может отвечать за содержание."
+          },
+          {
+            "text": "**I can help with** the interview, **but I cannot take responsibility for** the hiring decision.",
+            "translation_ru": "Я могу помочь с собеседованием, но не могу отвечать за решение о найме."
+          },
+          {
+            "text": "**We can help with** the migration, **but we cannot take responsibility for** the data quality.",
+            "translation_ru": "Мы можем помочь с миграцией, но не можем отвечать за качество данных."
+          },
+          {
+            "text": "**I can help with** the presentation, **but I cannot take responsibility for** the numbers.",
+            "translation_ru": "Я могу помочь с презентацией, но не могу отвечать за цифры."
+          },
+          {
+            "text": "**Can you help with** the draft, even if you **cannot take responsibility for** it?",
+            "translation_ru": "Ты можешь помочь с черновиком, даже если не можешь за него отвечать?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich kann bei X helfen, aber ich kann keine Verantwortung für Y übernehmen",
+        "example": "Ich kann bei der Recherche helfen, aber ich kann keine Verantwortung für die Entscheidung übernehmen.",
+        "translation": "Я могу помочь с исследованием, но не могу взять на себя ответственность за решение.",
+        "examples": [
+          {
+            "text": "**Ich kann bei der** Recherche **helfen, aber ich kann keine Verantwortung für** die Entscheidung **übernehmen**.",
+            "translation_ru": "Я могу помочь с исследованием, но не могу взять на себя ответственность за решение."
+          },
+          {
+            "text": "**Ich kann beim** Entwurf **helfen, aber ich kann keine Verantwortung für** den finalen Text **übernehmen**.",
+            "translation_ru": "Я могу помочь с черновиком, но не могу отвечать за финальный текст."
+          },
+          {
+            "text": "**Ich kann bei der** Einrichtung **helfen, aber ich kann keine Verantwortung für** die Wartung **übernehmen**.",
+            "translation_ru": "Я могу помочь с настройкой, но не могу отвечать за поддержку."
+          },
+          {
+            "text": "**Wir können bei der** Analyse **helfen, aber wir können keine Verantwortung für** das Ergebnis **übernehmen**.",
+            "translation_ru": "Мы можем помочь с анализом, но не можем отвечать за результат."
+          },
+          {
+            "text": "**Sie kann bei der** Planung **helfen, aber sie kann keine Verantwortung für** das Budget **übernehmen**.",
+            "translation_ru": "Она может помочь с планированием, но не может отвечать за бюджет."
+          },
+          {
+            "text": "**Ich kann beim** Meeting **helfen, aber ich kann keine Verantwortung für** die Nachbereitung **übernehmen**.",
+            "translation_ru": "Я могу помочь со встречей, но не могу отвечать за дальнейшие шаги."
+          },
+          {
+            "text": "**Ich kann beim** Code **helfen, aber ich kann keine Verantwortung für** den Termin **übernehmen**.",
+            "translation_ru": "Я могу помочь с кодом, но не могу отвечать за срок."
+          },
+          {
+            "text": "**Er kann beim** Design **helfen, aber er kann keine Verantwortung für** den Inhalt **übernehmen**.",
+            "translation_ru": "Он может помочь с дизайном, но не может отвечать за содержание."
+          },
+          {
+            "text": "**Ich kann beim** Vorstellungsgespräch **helfen, aber ich kann keine Verantwortung für** die Einstellungsentscheidung **übernehmen**.",
+            "translation_ru": "Я могу помочь с собеседованием, но не могу отвечать за решение о найме."
+          },
+          {
+            "text": "**Wir können bei der** Migration **helfen, aber wir können keine Verantwortung für** die Datenqualität **übernehmen**.",
+            "translation_ru": "Мы можем помочь с миграцией, но не можем отвечать за качество данных."
+          },
+          {
+            "text": "**Ich kann bei der** Präsentation **helfen, aber ich kann keine Verantwortung für** die Zahlen **übernehmen**.",
+            "translation_ru": "Я могу помочь с презентацией, но не могу отвечать за цифры."
+          },
+          {
+            "text": "**Kannst du beim** Entwurf **helfen**, auch wenn du **keine Verantwortung dafür übernehmen kannst**?",
+            "translation_ru": "Ты можешь помочь с черновиком, даже если не можешь за него отвечать?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "I can help with X, but I cannot take responsibility for Y",
+      "Ich kann bei X helfen, aber ich kann keine Verantwortung für Y übernehmen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "BND002",
+    "group_id": "BND",
+    "title_ru": "Мне нужно больше времени, прежде чем я смогу согласиться.",
+    "metaphor_ru": "Честная просьба о времени вместо поспешного «да». Ты не отказываешь, а называешь условие, при котором сможешь взять обязательство осознанно.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I need more time before I can commit",
+        "example": "I need more time before I can commit to this.",
+        "translation": "Мне нужно больше времени, прежде чем я смогу взять на себя обязательство.",
+        "examples": [
+          {
+            "text": "**I need more time before I can commit** to this.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу взять на себя обязательство."
+          },
+          {
+            "text": "**I need more time before I can commit** to a date.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу назвать дату."
+          },
+          {
+            "text": "**We need more time before we can commit** to the plan.",
+            "translation_ru": "Нам нужно больше времени, прежде чем мы сможем согласиться на план."
+          },
+          {
+            "text": "**She needs more time before she can commit** to the role.",
+            "translation_ru": "Ей нужно больше времени, прежде чем она сможет принять роль."
+          },
+          {
+            "text": "**I need more information before I can commit**.",
+            "translation_ru": "Мне нужно больше информации, прежде чем я смогу решиться."
+          },
+          {
+            "text": "**I need more time before I can commit** to the budget.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу утвердить бюджет."
+          },
+          {
+            "text": "**They need more time before they can commit** to the deadline.",
+            "translation_ru": "Им нужно больше времени, прежде чем они смогут принять срок."
+          },
+          {
+            "text": "**He needs more time before he can commit** to the move.",
+            "translation_ru": "Ему нужно больше времени, прежде чем он сможет решиться на переезд."
+          },
+          {
+            "text": "**I need more data before I can commit** to a forecast.",
+            "translation_ru": "Мне нужно больше данных, прежде чем я смогу дать прогноз."
+          },
+          {
+            "text": "**We need more time before we can commit** to a long-term contract.",
+            "translation_ru": "Нам нужно больше времени, прежде чем мы сможем подписать долгосрочный договор."
+          },
+          {
+            "text": "**I need more clarity before I can commit** to the decision.",
+            "translation_ru": "Мне нужно больше ясности, прежде чем я смогу принять решение."
+          },
+          {
+            "text": "How much time do you **need before you can commit**?",
+            "translation_ru": "Сколько времени тебе нужно, прежде чем ты сможешь решиться?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich brauche mehr Zeit, bevor ich mich festlegen kann",
+        "example": "Ich brauche mehr Zeit, bevor ich mich dazu festlegen kann.",
+        "translation": "Мне нужно больше времени, прежде чем я смогу взять на себя обязательство.",
+        "examples": [
+          {
+            "text": "**Ich brauche mehr Zeit, bevor ich mich** dazu **festlegen kann**.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу взять на себя обязательство."
+          },
+          {
+            "text": "**Ich brauche mehr Zeit, bevor ich mich** auf einen Termin **festlegen kann**.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу назвать дату."
+          },
+          {
+            "text": "**Wir brauchen mehr Zeit, bevor wir uns** auf den Plan **festlegen können**.",
+            "translation_ru": "Нам нужно больше времени, прежде чем мы сможем согласиться на план."
+          },
+          {
+            "text": "**Sie braucht mehr Zeit, bevor sie sich** auf die Rolle **festlegen kann**.",
+            "translation_ru": "Ей нужно больше времени, прежде чем она сможет принять роль."
+          },
+          {
+            "text": "**Ich brauche mehr Informationen, bevor ich mich festlegen kann**.",
+            "translation_ru": "Мне нужно больше информации, прежде чем я смогу решиться."
+          },
+          {
+            "text": "**Ich brauche mehr Zeit, bevor ich mich** auf das Budget **festlegen kann**.",
+            "translation_ru": "Мне нужно больше времени, прежде чем я смогу утвердить бюджет."
+          },
+          {
+            "text": "**Sie brauchen mehr Zeit, bevor sie sich** auf den Termin **festlegen können**.",
+            "translation_ru": "Им нужно больше времени, прежде чем они смогут принять срок."
+          },
+          {
+            "text": "**Er braucht mehr Zeit, bevor er sich** auf den Umzug **festlegen kann**.",
+            "translation_ru": "Ему нужно больше времени, прежде чем он сможет решиться на переезд."
+          },
+          {
+            "text": "**Ich brauche mehr Daten, bevor ich mich** auf eine Prognose **festlegen kann**.",
+            "translation_ru": "Мне нужно больше данных, прежде чем я смогу дать прогноз."
+          },
+          {
+            "text": "**Wir brauchen mehr Zeit, bevor wir uns** auf einen langfristigen Vertrag **festlegen können**.",
+            "translation_ru": "Нам нужно больше времени, прежде чем мы сможем подписать долгосрочный договор."
+          },
+          {
+            "text": "**Ich brauche mehr Klarheit, bevor ich mich** auf die Entscheidung **festlegen kann**.",
+            "translation_ru": "Мне нужно больше ясности, прежде чем я смогу принять решение."
+          },
+          {
+            "text": "Wie viel Zeit **brauchst du, bevor du dich festlegen kannst**?",
+            "translation_ru": "Сколько времени тебе нужно, прежде чем ты сможешь решиться?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "I need more time before I can commit",
+      "Ich brauche mehr Zeit, bevor ich mich festlegen kann"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "BND003",
+    "group_id": "BND",
+    "title_ru": "Это не работает для меня, потому что…",
+    "metaphor_ru": "Называет проблему через свою сторону, а не через обвинение. «Не работает для меня, потому что…» звучит спокойнее, чем «ты делаешь неправильно», и открывает разговор.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This is not working for me because + clause",
+        "example": "This is not working for me because the scope keeps changing.",
+        "translation": "Это не работает для меня, потому что объём постоянно меняется.",
+        "examples": [
+          {
+            "text": "**This is not working for me because** the scope keeps changing.",
+            "translation_ru": "Это не работает для меня, потому что объём постоянно меняется."
+          },
+          {
+            "text": "**This is not working for me because** I have no clear owner.",
+            "translation_ru": "Это не работает для меня, потому что у меня нет чёткого ответственного."
+          },
+          {
+            "text": "**This is not working for me because** the deadlines are unrealistic.",
+            "translation_ru": "Это не работает для меня, потому что сроки нереалистичны."
+          },
+          {
+            "text": "**This is not working for us because** the priorities are unclear.",
+            "translation_ru": "Это не работает для нас, потому что приоритеты неясны."
+          },
+          {
+            "text": "**This is not working for me because** I am blocked on a decision.",
+            "translation_ru": "Это не работает для меня, потому что я заблокирован решением."
+          },
+          {
+            "text": "**This is not working for her because** she lacks the data.",
+            "translation_ru": "Это не работает для неё, потому что ей не хватает данных."
+          },
+          {
+            "text": "**This is not working for me because** we keep reopening the question.",
+            "translation_ru": "Это не работает для меня, потому что мы постоянно переоткрываем вопрос."
+          },
+          {
+            "text": "**This is not working for them because** the tool is unreliable.",
+            "translation_ru": "Это не работает для них, потому что инструмент ненадёжен."
+          },
+          {
+            "text": "**This is not working for me because** the goals keep moving.",
+            "translation_ru": "Это не работает для меня, потому что цели постоянно меняются."
+          },
+          {
+            "text": "**This is not working for him because** he has no support.",
+            "translation_ru": "Это не работает для него, потому что у него нет поддержки."
+          },
+          {
+            "text": "**This is not working for me because** the process is too slow.",
+            "translation_ru": "Это не работает для меня, потому что процесс слишком медленный."
+          },
+          {
+            "text": "Why **is this not working for you**?",
+            "translation_ru": "Почему это не работает для тебя?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das funktioniert für mich nicht, weil + Nebensatz",
+        "example": "Das funktioniert für mich nicht, weil sich der Umfang ständig ändert.",
+        "translation": "Это не работает для меня, потому что объём постоянно меняется.",
+        "examples": [
+          {
+            "text": "**Das funktioniert für mich nicht, weil** sich der Umfang ständig ändert.",
+            "translation_ru": "Это не работает для меня, потому что объём постоянно меняется."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** ich keine klare Verantwortung habe.",
+            "translation_ru": "Это не работает для меня, потому что у меня нет чёткого ответственного."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** die Termine unrealistisch sind.",
+            "translation_ru": "Это не работает для меня, потому что сроки нереалистичны."
+          },
+          {
+            "text": "**Das funktioniert für uns nicht, weil** die Prioritäten unklar sind.",
+            "translation_ru": "Это не работает для нас, потому что приоритеты неясны."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** ich auf eine Entscheidung warte.",
+            "translation_ru": "Это не работает для меня, потому что я заблокирован решением."
+          },
+          {
+            "text": "**Das funktioniert für sie nicht, weil** ihr die Daten fehlen.",
+            "translation_ru": "Это не работает для неё, потому что ей не хватает данных."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** wir die Frage ständig neu öffnen.",
+            "translation_ru": "Это не работает для меня, потому что мы постоянно переоткрываем вопрос."
+          },
+          {
+            "text": "**Das funktioniert für sie nicht, weil** das Werkzeug unzuverlässig ist.",
+            "translation_ru": "Это не работает для них, потому что инструмент ненадёжен."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** sich die Ziele ständig verschieben.",
+            "translation_ru": "Это не работает для меня, потому что цели постоянно меняются."
+          },
+          {
+            "text": "**Das funktioniert für ihn nicht, weil** er keine Unterstützung hat.",
+            "translation_ru": "Это не работает для него, потому что у него нет поддержки."
+          },
+          {
+            "text": "**Das funktioniert für mich nicht, weil** der Prozess zu langsam ist.",
+            "translation_ru": "Это не работает для меня, потому что процесс слишком медленный."
+          },
+          {
+            "text": "Warum **funktioniert das für dich nicht**?",
+            "translation_ru": "Почему это не работает для тебя?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "This is not working for me because + clause",
+      "Das funktioniert für mich nicht, weil + Nebensatz"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "AIX001",
+    "group_id": "AIX",
+    "title_ru": "Воспринимай это как черновик, а не как проверенный факт.",
+    "metaphor_ru": "Задаёт правильный статус для результата ИИ: это заготовка для доработки, а не готовая истина. Снимает ложное доверие к гладкому тексту.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Treat this as a draft, not as a verified fact",
+        "example": "Treat this as a draft, not as a verified fact.",
+        "translation": "Воспринимай это как черновик, а не как проверенный факт.",
+        "examples": [
+          {
+            "text": "**Treat this as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Treat** the summary **as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай сводку как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**We should treat** this output **as a draft, not as a verified fact**.",
+            "translation_ru": "Нам следует воспринимать этот результат как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Treat** the translation **as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай перевод как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**I would treat this as a draft, not as a verified fact**.",
+            "translation_ru": "Я бы воспринимал это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Treat** the numbers **as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай цифры как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Let us treat this as a draft, not as a verified fact**.",
+            "translation_ru": "Давай воспринимать это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Treat** the recommendation **as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай рекомендацию как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**We should treat** the generated code **as a draft, not as a verified fact**.",
+            "translation_ru": "Нам следует воспринимать сгенерированный код как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Treat** the timeline **as a draft, not as a verified fact**.",
+            "translation_ru": "Воспринимай сроки как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**She treats** every model answer **as a draft, not as a verified fact**.",
+            "translation_ru": "Она воспринимает каждый ответ модели как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "Should we **treat this as a draft** or **as a verified fact**?",
+            "translation_ru": "Нам воспринимать это как черновик или как проверенный факт?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "etwas als Entwurf behandeln, nicht als bestätigte Tatsache",
+        "example": "Wir sollten das als Entwurf behandeln, nicht als bestätigte Tatsache.",
+        "translation": "Воспринимай это как черновик, а не как проверенный факт.",
+        "examples": [
+          {
+            "text": "**Behandle das als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandle** die Zusammenfassung **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай сводку как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Wir sollten** dieses Ergebnis **als Entwurf behandeln, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Нам следует воспринимать этот результат как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandle** die Übersetzung **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай перевод как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Ich würde das als Entwurf behandeln, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Я бы воспринимал это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandle** die Zahlen **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай цифры как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandeln wir das als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Давай воспринимать это как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandle** die Empfehlung **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай рекомендацию как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Wir sollten** den generierten Code **als Entwurf behandeln, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Нам следует воспринимать сгенерированный код как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Behandle** den Zeitplan **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Воспринимай сроки как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Sie behandelt** jede Modellantwort **als Entwurf, nicht als bestätigte Tatsache**.",
+            "translation_ru": "Она воспринимает каждый ответ модели как черновик, а не как проверенный факт."
+          },
+          {
+            "text": "**Sollten wir das als Entwurf** oder **als bestätigte Tatsache behandeln**?",
+            "translation_ru": "Нам воспринимать это как черновик или как проверенный факт?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Treat this as a draft, not as a verified fact",
+      "etwas als Entwurf behandeln, nicht als bestätigte Tatsache"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "AIX002",
+    "group_id": "AIX",
+    "title_ru": "Модель может сгенерировать X, но не может проверить Y.",
+    "metaphor_ru": "Чётко разделяет две способности ИИ: создавать текст и проверять истину. Понимание этой границы — ключ к безопасной работе с ИИ-результатами.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The model can generate X, but it cannot verify Y",
+        "example": "The model can generate text, but it cannot verify the facts.",
+        "translation": "Модель может сгенерировать текст, но не может проверить факты.",
+        "examples": [
+          {
+            "text": "**The model can generate** text, **but it cannot verify** the facts.",
+            "translation_ru": "Модель может сгенерировать текст, но не может проверить факты."
+          },
+          {
+            "text": "**The model can generate** code, **but it cannot verify** that it runs.",
+            "translation_ru": "Модель может сгенерировать код, но не может проверить, что он запускается."
+          },
+          {
+            "text": "**The model can generate** a summary, **but it cannot verify** the sources.",
+            "translation_ru": "Модель может сгенерировать сводку, но не может проверить источники."
+          },
+          {
+            "text": "**The model can generate** ideas, **but it cannot verify** their quality.",
+            "translation_ru": "Модель может сгенерировать идеи, но не может проверить их качество."
+          },
+          {
+            "text": "**The model can generate** an answer, **but it cannot verify** the context.",
+            "translation_ru": "Модель может сгенерировать ответ, но не может проверить контекст."
+          },
+          {
+            "text": "**The model can generate** a translation, **but it cannot verify** the nuance.",
+            "translation_ru": "Модель может сгенерировать перевод, но не может проверить нюансы."
+          },
+          {
+            "text": "**The model can generate** options, **but it cannot verify** which is best.",
+            "translation_ru": "Модель может сгенерировать варианты, но не может проверить, какой лучший."
+          },
+          {
+            "text": "**The model can generate** a contract, **but it cannot verify** the legal risk.",
+            "translation_ru": "Модель может сгенерировать договор, но не может проверить юридический риск."
+          },
+          {
+            "text": "**The model can generate** numbers, **but it cannot verify** their accuracy.",
+            "translation_ru": "Модель может сгенерировать цифры, но не может проверить их точность."
+          },
+          {
+            "text": "**The model can generate** a plan, **but it cannot verify** the assumptions.",
+            "translation_ru": "Модель может сгенерировать план, но не может проверить допущения."
+          },
+          {
+            "text": "**The model can generate** a diagnosis, **but it cannot verify** the cause.",
+            "translation_ru": "Модель может сгенерировать диагноз, но не может проверить причину."
+          },
+          {
+            "text": "Can the model **verify** this, or can it only **generate** it?",
+            "translation_ru": "Модель может это проверить или только сгенерировать?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das Modell kann X erzeugen, aber es kann Y nicht überprüfen",
+        "example": "Das Modell kann Text erzeugen, aber es kann die Fakten nicht überprüfen.",
+        "translation": "Модель может сгенерировать текст, но не может проверить факты.",
+        "examples": [
+          {
+            "text": "**Das Modell kann** Text **erzeugen, aber es kann** die Fakten **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать текст, но не может проверить факты."
+          },
+          {
+            "text": "**Das Modell kann** Code **erzeugen, aber es kann nicht überprüfen**, ob er läuft.",
+            "translation_ru": "Модель может сгенерировать код, но не может проверить, что он запускается."
+          },
+          {
+            "text": "**Das Modell kann** eine Zusammenfassung **erzeugen, aber es kann** die Quellen **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать сводку, но не может проверить источники."
+          },
+          {
+            "text": "**Das Modell kann** Ideen **erzeugen, aber es kann** ihre Qualität **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать идеи, но не может проверить их качество."
+          },
+          {
+            "text": "**Das Modell kann** eine Antwort **erzeugen, aber es kann** den Kontext **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать ответ, но не может проверить контекст."
+          },
+          {
+            "text": "**Das Modell kann** eine Übersetzung **erzeugen, aber es kann** die Nuancen **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать перевод, но не может проверить нюансы."
+          },
+          {
+            "text": "**Das Modell kann** Optionen **erzeugen, aber es kann nicht überprüfen**, welche die beste ist.",
+            "translation_ru": "Модель может сгенерировать варианты, но не может проверить, какой лучший."
+          },
+          {
+            "text": "**Das Modell kann** einen Vertrag **erzeugen, aber es kann** das rechtliche Risiko **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать договор, но не может проверить юридический риск."
+          },
+          {
+            "text": "**Das Modell kann** Zahlen **erzeugen, aber es kann** ihre Genauigkeit **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать цифры, но не может проверить их точность."
+          },
+          {
+            "text": "**Das Modell kann** einen Plan **erzeugen, aber es kann** die Annahmen **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать план, но не может проверить допущения."
+          },
+          {
+            "text": "**Das Modell kann** eine Diagnose **erzeugen, aber es kann** die Ursache **nicht überprüfen**.",
+            "translation_ru": "Модель может сгенерировать диагноз, но не может проверить причину."
+          },
+          {
+            "text": "**Kann das Modell das überprüfen**, oder kann es es nur **erzeugen**?",
+            "translation_ru": "Модель может это проверить или только сгенерировать?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The model can generate X, but it cannot verify Y",
+      "Das Modell kann X erzeugen, aber es kann Y nicht überprüfen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
+  },
+  {
+    "id": "AIX003",
+    "group_id": "AIX",
+    "title_ru": "Правдоподобный ответ не обязательно является правильным.",
+    "metaphor_ru": "Предупреждение против ловушки уверенного тона ИИ. Текст может звучать гладко и убедительно, но быть неверным — поэтому его нужно проверять.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "A plausible answer is not necessarily a correct answer",
+        "example": "A plausible answer is not necessarily a correct answer.",
+        "translation": "Правдоподобный ответ не обязательно является правильным.",
+        "examples": [
+          {
+            "text": "**A plausible answer is not necessarily a correct answer**.",
+            "translation_ru": "Правдоподобный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A plausible explanation is not necessarily a correct** explanation.",
+            "translation_ru": "Правдоподобное объяснение не обязательно является правильным."
+          },
+          {
+            "text": "**A fluent answer is not necessarily a correct answer**.",
+            "translation_ru": "Свободно звучащий ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A confident answer is not necessarily a correct answer**.",
+            "translation_ru": "Уверенный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A plausible result is not necessarily a correct** result.",
+            "translation_ru": "Правдоподобный результат не обязательно является правильным."
+          },
+          {
+            "text": "**A plausible summary is not necessarily a correct** summary.",
+            "translation_ru": "Правдоподобная сводка не обязательно является правильной."
+          },
+          {
+            "text": "**A fast answer is not necessarily a correct answer**.",
+            "translation_ru": "Быстрый ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A detailed answer is not necessarily a correct answer**.",
+            "translation_ru": "Подробный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A polished answer is not necessarily a correct answer**.",
+            "translation_ru": "Отшлифованный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**A plausible translation is not necessarily a correct** translation.",
+            "translation_ru": "Правдоподобный перевод не обязательно является правильным."
+          },
+          {
+            "text": "**A well-structured answer is not necessarily a correct answer**.",
+            "translation_ru": "Хорошо структурированный ответ не обязательно является правильным."
+          },
+          {
+            "text": "Is **a plausible answer** always **a correct answer**?",
+            "translation_ru": "Правдоподобный ответ всегда правильный?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Eine plausible Antwort ist nicht unbedingt eine richtige Antwort",
+        "example": "Eine plausible Antwort ist nicht unbedingt eine richtige Antwort.",
+        "translation": "Правдоподобный ответ не обязательно является правильным.",
+        "examples": [
+          {
+            "text": "**Eine plausible Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Правдоподобный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Eine plausible Erklärung ist nicht unbedingt eine richtige** Erklärung.",
+            "translation_ru": "Правдоподобное объяснение не обязательно является правильным."
+          },
+          {
+            "text": "**Eine flüssige Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Свободно звучащий ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Eine selbstsichere Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Уверенный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Ein plausibles Ergebnis ist nicht unbedingt ein richtiges** Ergebnis.",
+            "translation_ru": "Правдоподобный результат не обязательно является правильным."
+          },
+          {
+            "text": "**Eine plausible Zusammenfassung ist nicht unbedingt eine richtige** Zusammenfassung.",
+            "translation_ru": "Правдоподобная сводка не обязательно является правильной."
+          },
+          {
+            "text": "**Eine schnelle Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Быстрый ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Eine detaillierte Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Подробный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Eine ausgefeilte Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Отшлифованный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Eine plausible Übersetzung ist nicht unbedingt eine richtige** Übersetzung.",
+            "translation_ru": "Правдоподобный перевод не обязательно является правильным."
+          },
+          {
+            "text": "**Eine gut strukturierte Antwort ist nicht unbedingt eine richtige Antwort**.",
+            "translation_ru": "Хорошо структурированный ответ не обязательно является правильным."
+          },
+          {
+            "text": "**Ist eine plausible Antwort** immer **eine richtige Antwort**?",
+            "translation_ru": "Правдоподобный ответ всегда правильный?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "A plausible answer is not necessarily a correct answer",
+      "Eine plausible Antwort ist nicht unbedingt eine richtige Antwort"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T14:13:08.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "functional-batch-1"
+    }
   }
 ]
