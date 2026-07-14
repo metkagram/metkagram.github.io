@@ -324,7 +324,13 @@ export function methodPage(locale) {
   const t = ui[locale];
   const pathname = `/${locale}/method/`;
   const steps = [t.methodSentence, t.methodAnnotation, t.methodPatterns, t.methodSrs];
-  const body = `<section class="page-head section-pad"><p class="eyebrow">Metkagram method</p><h1>${t.methodTitle}</h1><p class="lede">${t.methodIntro}</p>${annotatedPreview()}</section><section class="method-details section-pad ruled">${steps.map((step, index) => `<article><span>0${index + 1}</span><h2>${step}</h2></article>`).join("")}</section>`;
+  const sources = [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3390154/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5002427/",
+    "https://pubmed.ncbi.nlm.nih.gov/33006925/",
+    "https://pubmed.ncbi.nlm.nih.gov/30670661/"
+  ];
+  const body = `<section class="page-head section-pad method-hero"><p class="eyebrow">Metkagram method</p><h1>${t.methodTitle}</h1><p class="lede">${t.methodIntro}</p>${annotatedPreview()}</section><section class="method-details section-pad ruled">${steps.map((step, index) => `<article><span>0${index + 1}</span><h2>${step}</h2></article>`).join("")}</section><section class="method-evidence section-pad ruled" aria-labelledby="method-evidence-title"><div class="method-evidence-intro"><p class="eyebrow">${t.methodEvidenceEyebrow}</p><h2 id="method-evidence-title">${t.methodEvidenceTitle}</h2><p class="lede">${t.methodEvidenceIntro}</p></div><div class="method-evidence-grid">${t.methodEvidenceTitles.map((title, index) => `<article><span>0${index + 1}</span><h3>${title}</h3><p>${t.methodEvidenceDetails[index]}</p></article>`).join("")}</div></section><section class="method-boundary section-pad ruled"><div><p class="eyebrow">Metkagram · limits</p><h2>${t.methodBoundaryTitle}</h2></div><p class="lede">${t.methodBoundary}</p></section><section class="method-sources section-pad ruled" aria-labelledby="method-sources-title"><div><p class="eyebrow">Sources</p><h2 id="method-sources-title">${t.methodSourcesTitle}</h2><p class="lede">${t.methodSourcesIntro}</p></div><ol>${sources.map((href, index) => `<li><a href="${href}" target="_blank" rel="noreferrer"><span>0${index + 1}</span>${t.methodSources[index]} <b aria-hidden="true">↗</b></a></li>`).join("")}</ol></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "How Metkagram grammar markup works" : "Как работает разметка Metkagram", description: t.methodIntro, body, structuredData: [breadcrumbJson(pathname, t.methodTitle, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: t.methodTitle, learningResourceType: "Method", url: `${SITE_URL}${pathname}` }] });
 }
 

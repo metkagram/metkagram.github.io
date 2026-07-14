@@ -10,12 +10,27 @@ test("English and Russian interfaces stay separate and locale switch preserves c
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Диалоги");
 });
 
-test("home keeps the interface switch in the header and leads into a study language", async ({ page }) => {
+test("home keeps the interface switch in the header and leads into a study language", async ({ page }, testInfo) => {
   await page.goto("/en/");
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Choose a language to study", exact: true })).toHaveAttribute("href", "/en/explore/");
   await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
+  if (testInfo.project.name === "desktop") {
+    const layout = await page.locator(".home-method ol").evaluate((list) => ({
+      columns: getComputedStyle(list).gridTemplateColumns.split(" ").length,
+      titleSize: Number.parseFloat(getComputedStyle(document.querySelector(".home-intro h1")).fontSize)
+    }));
+    expect(layout.columns).toBe(2);
+    expect(layout.titleSize).toBeLessThan(90);
+  }
+});
+
+test("method page explains the learning loop and names its research sources", async ({ page }) => {
+  await page.goto("/en/method/");
+  await expect(page.getByRole("heading", { name: "A learning loop, not a rulebook." })).toBeVisible();
+  await expect(page.getByText("Tags are not a shortcut around practice")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Retrieval practice and long-term learning" })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
 test("grammar tags expose a readable rule on click and keyboard focus", async ({ page }) => {

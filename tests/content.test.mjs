@@ -62,7 +62,7 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
 });
 
 test("every generated page carries the current brand and discoverability metadata", () => {
-  const files = htmlFiles(DIST).filter((file) => !file.startsWith(path.join(DIST, "assets")));
+  const files = htmlFiles(DIST).filter((file) => !file.startsWith(path.join(DIST, "assets")) && !/^google[a-z0-9_-]*\.html$/i.test(path.basename(file)));
   assert.ok(files.length >= 4988, "expected the complete generated page set");
   for (const file of files) {
     const html = fs.readFileSync(file, "utf8");
