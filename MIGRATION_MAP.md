@@ -2505,8 +2505,8 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 | `https://metalhatscats.com/ru/metkax/LEX417` | `https://metkagram.github.io/ru/practice/lex417/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/products/metkagram` | `https://metkagram.github.io/en/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/apps/metkagram` | `https://metkagram.github.io/en/` | ready | Vercel permanent framework redirect |
-| `https://metalhatscats.com/products/metkagram/privacy` | `https://metkagram.github.io/en/about/#privacy` | ready | Vercel permanent framework redirect |
-| `https://metalhatscats.com/products/metkagram/terms` | `https://metkagram.github.io/en/about/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/products/metkagram/privacy` | `https://metkagram.github.io/en/legal/privacy/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/products/metkagram/terms` | `https://metkagram.github.io/en/legal/terms/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/products/metkagram/delete-data` | `https://metkagram.github.io/en/progress/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/datasets/metkagram-library` | `https://metkagram.github.io/en/explore/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/datasets/metkagram-library/download` | `https://metkagram.github.io/data/catalog.json` | ready | Vercel permanent framework redirect |

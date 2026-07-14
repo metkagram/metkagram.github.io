@@ -5,6 +5,7 @@ import { collectionKeys, locales, targetMeta, ui } from "../src/i18n.mjs";
 import {
   SITE_URL,
   aboutPage,
+  appsPage,
   collectionPage,
   documentPage,
   explorePage,
@@ -14,6 +15,7 @@ import {
   localeHome,
   methodPage,
   notFoundPage,
+  legalPage,
   patternPage,
   practicePage,
   progressPage,
@@ -80,8 +82,8 @@ function buildRedirectManifest(content) {
   }
   add("/products/metkagram", `${SITE_URL}/en/`);
   add("/apps/metkagram", `${SITE_URL}/en/`);
-  add("/products/metkagram/privacy", `${SITE_URL}/en/about/#privacy`);
-  add("/products/metkagram/terms", `${SITE_URL}/en/about/`);
+  add("/products/metkagram/privacy", `${SITE_URL}/en/legal/privacy/`);
+  add("/products/metkagram/terms", `${SITE_URL}/en/legal/terms/`);
   add("/products/metkagram/delete-data", `${SITE_URL}/en/progress/`);
   add("/datasets/metkagram-library", `${SITE_URL}/en/explore/`);
   add("/datasets/metkagram-library/download", `${SITE_URL}/data/catalog.json`);
@@ -164,6 +166,9 @@ function build() {
     writeRoute(`/${locale}/progress/`, progressPage(locale));
     writeRoute(`/${locale}/method/`, methodPage(locale));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
+    writeRoute(`/${locale}/apps/`, appsPage(locale));
+    writeRoute(`/${locale}/legal/privacy/`, legalPage(locale, "privacy"));
+    writeRoute(`/${locale}/legal/terms/`, legalPage(locale, "terms"));
     writeRoute(`/${locale}/history/`, historyPage(locale));
     writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
     for (const target of Object.values(targetMeta)) {
@@ -187,7 +192,7 @@ function build() {
   writeFile("LICENSE", fs.readFileSync(path.join(ROOT, "LICENSE"), "utf8"));
   writeFile("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc></url>`).join("")}\n</urlset>\n`);
-  writeFile("llms.txt", `# Metkagram\n\n> A bilingual annotated-language workspace for English and German learning.\n\nCanonical site: ${SITE_URL}/\nInterfaces: ${SITE_URL}/en/ and ${SITE_URL}/ru/\nCollections catalog: ${SITE_URL}/data/catalog.json\nAdvanced patterns dataset: ${SITE_URL}/data/advanced-patterns.json\nMethod: ${SITE_URL}/en/method/\nLicense and attribution: ${SITE_URL}/en/about/\n\nMetkagram exposes crawlable HTML detail pages for every collection and pattern. Interface locale (English or Russian) is independent from target language (English or German).\n`);
+  writeFile("llms.txt", `# Metkagram\n\n> A bilingual annotated-language workspace for English and German learning.\n\nCanonical site: ${SITE_URL}/\nInterfaces: ${SITE_URL}/en/ and ${SITE_URL}/ru/\nCollections catalog: ${SITE_URL}/data/catalog.json\nAdvanced patterns dataset: ${SITE_URL}/data/advanced-patterns.json\nMethod: ${SITE_URL}/en/method/\nMobile apps: ${SITE_URL}/en/apps/\nPrivacy Policy: ${SITE_URL}/en/legal/privacy/\nTerms of Use: ${SITE_URL}/en/legal/terms/\nLicense and attribution: ${SITE_URL}/en/about/\n\nMetkagram exposes crawlable HTML detail pages for every collection and pattern. Interface locale (English or Russian) is independent from target language (English or German).\n`);
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
   for (const target of Object.values(targetMeta)) {

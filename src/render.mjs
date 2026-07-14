@@ -2,6 +2,58 @@ import { collectionKeys, collectionLabel, targetMeta, ui } from "./i18n.mjs";
 
 export const SITE_URL = "https://metkagram.github.io";
 
+export const STORE_LINKS = {
+  googlePlay: "https://play.google.com/store/apps/details?id=app.metkagram.android",
+  appStore: "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918"
+};
+
+function metkagramEntityGraph() {
+  const applicationId = `${SITE_URL}/#mobile-application`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "Metkagram",
+        url: SITE_URL,
+        logo: `${SITE_URL}/assets/icons/metkagram-icon-512x512.png`,
+        sameAs: ["https://github.com/metkagram/metkagram.github.io"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        name: "Metkagram",
+        url: SITE_URL,
+        inLanguage: ["en", "ru"],
+        publisher: { "@id": `${SITE_URL}/#organization` }
+      },
+      {
+        "@type": ["MobileApplication", "SoftwareApplication"],
+        "@id": applicationId,
+        name: "Metkagram",
+        url: `${SITE_URL}/en/apps/`,
+        mainEntityOfPage: `${SITE_URL}/en/apps/`,
+        applicationCategory: "EducationalApplication",
+        applicationSubCategory: "Language learning",
+        operatingSystem: "Android, iOS",
+        isAccessibleForFree: true,
+        featureList: ["Grammar flashcards", "Minimal pairs", "Grammar drills", "Spaced repetition"],
+        image: `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`,
+        screenshot: `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`,
+        publisher: { "@id": `${SITE_URL}/#organization` },
+        downloadUrl: STORE_LINKS.googlePlay,
+        installUrl: STORE_LINKS.appStore,
+        sameAs: [STORE_LINKS.googlePlay, STORE_LINKS.appStore],
+        offers: [
+          { "@type": "Offer", name: "Metkagram for Android", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: STORE_LINKS.googlePlay },
+          { "@type": "Offer", name: "Metkagram for iOS", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: STORE_LINKS.appStore }
+        ]
+      }
+    ]
+  };
+}
+
 export function escapeHtml(value = "") {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -82,7 +134,7 @@ function footer(locale) {
   const t = ui[locale];
   return `<footer class="site-footer">
     <a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a>
-    <nav aria-label="Footer"><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/history/">${t.history}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a><a href="/${locale}/about/#privacy">${t.privacy}</a></nav>
+    <nav aria-label="Footer"><a href="/${locale}/apps/">${t.apps}</a><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/history/">${t.history}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a></nav>
     <p>${t.connected}</p>
   </footer>`;
 }
@@ -124,7 +176,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <link rel="manifest" href="/assets/web/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
   <meta name="metkagram-sync-endpoint" content="https://metalhatscats.com/api/metkax/srs">
-  ${structuredData.map(jsonLd).join("\n")}
+  ${[metkagramEntityGraph(), ...structuredData].map(jsonLd).join("\n")}
 </head>
 <body class="${escapeHtml(bodyClass)}" data-locale="${locale}">
   ${root ? "" : header(locale, pathname)}
@@ -332,6 +384,89 @@ export function methodPage(locale) {
   ];
   const body = `<section class="page-head section-pad method-hero"><p class="eyebrow">Metkagram method</p><h1>${t.methodTitle}</h1><p class="lede">${t.methodIntro}</p>${annotatedPreview()}</section><section class="method-details section-pad ruled">${steps.map((step, index) => `<article><span>0${index + 1}</span><h2>${step}</h2></article>`).join("")}</section><section class="method-evidence section-pad ruled" aria-labelledby="method-evidence-title"><div class="method-evidence-intro"><p class="eyebrow">${t.methodEvidenceEyebrow}</p><h2 id="method-evidence-title">${t.methodEvidenceTitle}</h2><p class="lede">${t.methodEvidenceIntro}</p></div><div class="method-evidence-grid">${t.methodEvidenceTitles.map((title, index) => `<article><span>0${index + 1}</span><h3>${title}</h3><p>${t.methodEvidenceDetails[index]}</p></article>`).join("")}</div></section><section class="method-boundary section-pad ruled"><div><p class="eyebrow">Metkagram · limits</p><h2>${t.methodBoundaryTitle}</h2></div><p class="lede">${t.methodBoundary}</p></section><section class="method-sources section-pad ruled" aria-labelledby="method-sources-title"><div><p class="eyebrow">Sources</p><h2 id="method-sources-title">${t.methodSourcesTitle}</h2><p class="lede">${t.methodSourcesIntro}</p></div><ol>${sources.map((href, index) => `<li><a href="${href}" target="_blank" rel="noreferrer"><span>0${index + 1}</span>${t.methodSources[index]} <b aria-hidden="true">↗</b></a></li>`).join("")}</ol></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "How Metkagram grammar markup works" : "Как работает разметка Metkagram", description: t.methodIntro, body, structuredData: [breadcrumbJson(pathname, t.methodTitle, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: t.methodTitle, learningResourceType: "Method", url: `${SITE_URL}${pathname}` }] });
+}
+
+function legalSections(locale, kind) {
+  const en = locale === "en";
+  if (kind === "privacy") {
+    return en ? {
+      eyebrow: "Metkagram · legal",
+      title: "Privacy Policy",
+      intro: "How the Metkagram website and its legacy mobile apps handle information.",
+      updated: "Last updated: 14 July 2026 · Legacy policy first published: 16 April 2023",
+      sections: [
+        ["Scope", "This policy applies to the Metkagram website, its learning-progress tools and the Android and iOS applications listed below. It describes the current public website and preserves the relevant terms for the legacy mobile apps."],
+        ["Information on the website", "The public website does not require an account. It does not use advertising trackers. Your review progress and an optional sync code are stored in your browser. If you choose to synchronise, the code and the progress record are sent to the Metkagram compatibility service hosted by MetalHatsCats solely to perform that sync."],
+        ["Legacy mobile apps", "The mobile apps may use the information needed to provide their features, support a user account where available, process a purchase through the relevant app store, and maintain or secure the service. The apps may rely on platform, cloud, analytics or sign-in services; those providers process data under their own policies."],
+        ["Sharing and security", "We do not sell personal information. Information may be processed by service providers that help operate the apps, by app stores when you install or purchase, or where disclosure is required by law. Reasonable safeguards are used, but no online service can promise absolute security."],
+        ["Your choices", "You can clear local website data in your browser, export or remove your local review record, and manage app permissions or purchases in the relevant store. For requests concerning the legacy apps or this policy, use the MetalHatsCats contact page."],
+        ["Children and changes", "The service is not directed to children under 13. We may update this policy when the service changes; the date above indicates the current version."]
+      ]
+    } : {
+      eyebrow: "Metkagram · правовая информация",
+      title: "Политика конфиденциальности",
+      intro: "Как сайт Metkagram и прежние мобильные приложения работают с информацией.",
+      updated: "Обновлено: 14 июля 2026 · Исходная политика опубликована: 16 апреля 2023",
+      sections: [
+        ["Область действия", "Политика относится к сайту Metkagram, инструментам прогресса и приложениям для Android и iOS, ссылки на которые приведены ниже. В ней описан текущий публичный сайт и сохранены применимые условия для прежних мобильных приложений."],
+        ["Информация на сайте", "Публичный сайт не требует учётной записи и не использует рекламные трекеры. Прогресс повторения и необязательный код синхронизации хранятся в браузере. Если вы запускаете синхронизацию, код и запись прогресса передаются в сервис совместимости Metkagram на MetalHatsCats только для выполнения этой синхронизации."],
+        ["Прежние мобильные приложения", "Мобильные приложения могут использовать данные, необходимые для работы функций, поддержки учётной записи, если она доступна, обработки покупки через соответствующий магазин и защиты сервиса. Приложения могут использовать платформенные, облачные, аналитические или сервисы входа; такие поставщики обрабатывают данные по собственным правилам."],
+        ["Передача и защита", "Мы не продаём персональные данные. Информация может обрабатываться поставщиками, которые помогают работе приложений, магазинами приложений при установке или покупке, а также в случаях, предусмотренных законом. Используются разумные меры защиты, но ни один онлайн-сервис не может гарантировать абсолютную безопасность."],
+        ["Ваш выбор", "Вы можете очистить локальные данные сайта в браузере, экспортировать или удалить локальную запись прогресса, а также управлять разрешениями и покупками в соответствующем магазине. По вопросам о прежних приложениях и этой политике используйте страницу контактов MetalHatsCats."],
+        ["Дети и изменения", "Сервис не предназначен для детей младше 13 лет. Мы можем обновлять политику при изменении сервиса; дата выше обозначает текущую версию."]
+      ]
+    };
+  }
+  return en ? {
+    eyebrow: "Metkagram · legal",
+    title: "Terms of Use",
+    intro: "Terms for using the Metkagram website, learning materials and legacy mobile apps.",
+    updated: "Last updated: 14 July 2026 · Legacy terms first published: 16 April 2023",
+    sections: [
+      ["Acceptance and scope", "By using Metkagram, you agree to these terms and the Privacy Policy. They apply to the public website, its learning materials, and the Android and iOS applications listed below."],
+      ["Educational use", "Metkagram provides language-learning materials and practice tools. They are offered for general educational use, not as professional, academic-certification or language-assessment advice. Use your own judgement when applying any material."],
+      ["Content and acceptable use", "The website materials are available for personal, educational and other non-commercial use with Metkagram attribution under the licence shown on the About page. Do not misuse the service, interfere with its availability, attempt unauthorised access, or redistribute material beyond the applicable licence."],
+      ["Mobile stores and purchases", "The legacy Android and iOS applications are distributed by Google Play and the App Store. Installations, purchases, refunds, subscriptions and device permissions are also subject to the applicable store's terms and policies."],
+      ["Availability and liability", "The service is provided as available and may change, pause or end. To the extent permitted by law, Metkagram provides no warranty that materials or services will always be available, error-free or suitable for a particular purpose, and is not liable for indirect or consequential loss arising from their use."],
+      ["Changes and contact", "We may update these terms when the service changes. Continuing to use the service after a revised version is published means you accept it. Questions about these terms or the legacy apps can be sent through MetalHatsCats."]
+    ]
+  } : {
+    eyebrow: "Metkagram · правовая информация",
+    title: "Условия использования",
+    intro: "Условия использования сайта Metkagram, учебных материалов и прежних мобильных приложений.",
+    updated: "Обновлено: 14 июля 2026 · Исходные условия опубликованы: 16 апреля 2023",
+    sections: [
+      ["Принятие и область действия", "Пользуясь Metkagram, вы принимаете эти условия и Политику конфиденциальности. Они относятся к публичному сайту, учебным материалам и приложениям для Android и iOS, ссылки на которые приведены ниже."],
+      ["Учебное использование", "Metkagram предлагает материалы и инструменты для изучения языка. Они предназначены для общего обучения, а не для профессиональной консультации, академической сертификации или официальной языковой оценки. Применяйте материалы с собственным суждением."],
+      ["Материалы и допустимое использование", "Материалы сайта доступны для личного, учебного и другого некоммерческого использования с указанием Metkagram на условиях лицензии со страницы «О проекте». Нельзя злоупотреблять сервисом, мешать его работе, пытаться получить несанкционированный доступ или распространять материалы за пределами применимой лицензии."],
+      ["Магазины приложений и покупки", "Прежние приложения для Android и iOS распространяются через Google Play и App Store. Установка, покупки, возвраты, подписки и разрешения устройства также регулируются правилами соответствующего магазина."],
+      ["Доступность и ответственность", "Сервис предоставляется по мере доступности и может изменяться, приостанавливаться или завершаться. В пределах, разрешённых законом, Metkagram не гарантирует постоянную доступность, отсутствие ошибок или пригодность материалов для конкретной цели и не отвечает за косвенные убытки, связанные с их использованием."],
+      ["Изменения и контакт", "Мы можем обновлять условия при изменении сервиса. Продолжая пользоваться сервисом после публикации новой версии, вы принимаете её. Вопросы об условиях и прежних приложениях можно направить через MetalHatsCats."]
+    ]
+  };
+}
+
+function storeLinks(locale) {
+  const en = locale === "en";
+  return `<div class="store-links"><a class="primary-link" href="${STORE_LINKS.googlePlay}" target="_blank" rel="noreferrer">Google Play <span aria-hidden="true">↗</span></a><a class="primary-link store-link-secondary" href="${STORE_LINKS.appStore}" target="_blank" rel="noreferrer">App Store <span aria-hidden="true">↗</span></a><a class="text-link" href="/${locale}/legal/privacy/">${en ? "Privacy Policy" : "Политика конфиденциальности"} <span aria-hidden="true">→</span></a></div>`;
+}
+
+export function appsPage(locale) {
+  const en = locale === "en";
+  const pathname = `/${locale}/apps/`;
+  const title = en ? "Metkagram mobile apps for grammar practice" : "Мобильные приложения Metkagram для грамматики";
+  const intro = en ? "The original Metkagram mobile apps remain available in their stores. Use the web workspace for reading annotated sentences and the apps for the original flashcard and drill experience." : "Оригинальные мобильные приложения Metkagram остаются в магазинах. Для чтения фраз с разметкой используйте веб-версию, а для карточек и упражнений — приложения.";
+  const body = `<section class="app-hero section-pad"><p class="eyebrow">Metkagram · mobile apps</p><h1>${en ? "The original practice apps." : "Оригинальные приложения для практики."}</h1><p class="lede">${intro}</p>${storeLinks(locale)}</section><section class="app-details section-pad ruled"><div><p class="eyebrow">${en ? "What they contain" : "Что внутри"}</p><h2>${en ? "A focused grammar practice tool." : "Инструмент для целенаправленной практики грамматики."}</h2></div><div class="app-feature-list"><article><span>01</span><h3>${en ? "Flashcards" : "Карточки"}</h3><p>${en ? "Short sessions built around recurring grammar choices." : "Короткие сессии вокруг повторяющихся грамматических выборов."}</p></article><article><span>02</span><h3>${en ? "Minimal pairs" : "Минимальные пары"}</h3><p>${en ? "Compare nearby structures and make the contrast visible." : "Сопоставляйте близкие конструкции и замечайте разницу."}</p></article><article><span>03</span><h3>${en ? "Spaced return" : "Возврат через интервалы"}</h3><p>${en ? "Return to patterns over time instead of endlessly rereading them." : "Возвращайтесь к моделям через время, а не перечитывайте их бесконечно."}</p></article></div></section><section class="app-trust section-pad ruled"><div><p class="eyebrow">${en ? "Status & policies" : "Статус и правила"}</p><h2>${en ? "Mobile history, clear links." : "История приложений и понятные ссылки."}</h2></div><div><p class="lede">${en ? "The applications are maintained as part of Metkagram's product history and remain subject to the policies below and the terms of the relevant store." : "Приложения остаются частью истории продукта Metkagram и регулируются правилами ниже и условиями соответствующего магазина."}</p><p class="legal-inline-links"><a href="/${locale}/legal/privacy/">${en ? "Privacy Policy" : "Политика конфиденциальности"}</a><a href="/${locale}/legal/terms/">${en ? "Terms of Use" : "Условия использования"}</a></p></div></section>`;
+  return layout({ locale, pathname, title, description: intro, body, structuredData: [breadcrumbJson(pathname, en ? "Mobile apps" : "Мобильные приложения", locale), { "@context": "https://schema.org", "@type": "WebPage", name: title, url: `${SITE_URL}${pathname}`, isPartOf: { "@id": `${SITE_URL}/#website` }, mainEntity: { "@id": `${SITE_URL}/#mobile-application` } }] });
+}
+
+export function legalPage(locale, kind) {
+  const t = legalSections(locale, kind);
+  const pathname = `/${locale}/legal/${kind}/`;
+  const otherKind = kind === "privacy" ? "terms" : "privacy";
+  const otherLabel = locale === "en" ? (otherKind === "privacy" ? "Privacy Policy" : "Terms of Use") : (otherKind === "privacy" ? "Политика конфиденциальности" : "Условия использования");
+  const body = `<section class="legal-head section-pad"><p class="eyebrow">${t.eyebrow}</p><h1>${t.title}</h1><p class="lede">${t.intro}</p><p class="legal-updated">${t.updated}</p></section><section class="legal-layout section-pad ruled"><nav class="legal-toc" aria-label="${locale === "en" ? "On this page" : "На странице"}"><p class="eyebrow">${locale === "en" ? "On this page" : "На странице"}</p><ol>${t.sections.map(([heading], index) => `<li><a href="#legal-${index + 1}">${String(index + 1).padStart(2, "0")} · ${heading}</a></li>`).join("")}</ol></nav><article class="legal-document">${t.sections.map(([heading, text], index) => `<section id="legal-${index + 1}"><span>${String(index + 1).padStart(2, "0")}</span><h2>${heading}</h2><p>${text}</p></section>`).join("")}</article></section><section class="legal-related section-pad ruled"><p class="eyebrow">${locale === "en" ? "Related" : "Связанные страницы"}</p><nav><a href="/${locale}/apps/">${locale === "en" ? "Mobile apps" : "Мобильные приложения"} <span aria-hidden="true">→</span></a><a href="/${locale}/legal/${otherKind}/">${otherLabel} <span aria-hidden="true">→</span></a><a href="https://metalhatscats.com/contact">${locale === "en" ? "Contact MetalHatsCats" : "Связаться с MetalHatsCats"} <span aria-hidden="true">↗</span></a></nav></section>`;
+  return layout({ locale, pathname, title: `${t.title} — Metkagram`, description: t.intro, body, structuredData: [breadcrumbJson(pathname, t.title, locale), { "@context": "https://schema.org", "@type": "WebPage", name: t.title, url: `${SITE_URL}${pathname}`, dateModified: "2026-07-14", inLanguage: locale, isPartOf: { "@id": `${SITE_URL}/#website` }, about: { "@id": `${SITE_URL}/#mobile-application` } }] });
 }
 
 export function aboutPage(locale) {

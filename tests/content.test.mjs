@@ -61,6 +61,20 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/con001\//);
 });
 
+test("mobile apps and legal pages have direct routes, store links, and entity markup", () => {
+  const apps = fs.readFileSync(path.join(DIST, "en/apps/index.html"), "utf8");
+  const privacy = fs.readFileSync(path.join(DIST, "en/legal/privacy/index.html"), "utf8");
+  const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
+  assert.match(apps, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.metkagram\.android/);
+  assert.match(apps, /https:\/\/apps\.apple\.com\/us\/app\/grammar-cards-ai-tutor\/id6502211918/);
+  assert.match(apps, /"MobileApplication"/);
+  assert.match(apps, /"SoftwareApplication"/);
+  assert.match(privacy, /<h1>Privacy Policy<\/h1>/);
+  assert.match(privacy, /"@type":"WebPage"/);
+  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/apps\//);
+  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/legal\/privacy\//);
+});
+
 test("every generated page carries the current brand and discoverability metadata", () => {
   const files = htmlFiles(DIST).filter((file) => !file.startsWith(path.join(DIST, "assets")) && !/^google[a-z0-9_-]*\.html$/i.test(path.basename(file)));
   assert.ok(files.length >= 4988, "expected the complete generated page set");

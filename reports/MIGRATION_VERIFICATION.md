@@ -1,6 +1,6 @@
 # Migration verification
 
-- Generated routes: **4991**
+- Generated routes: **4997**
 - Annotated documents: **2240**
 - Annotated sentences: **25116**
 - Advanced B2–C1 patterns: **236**

@@ -33,6 +33,16 @@ test("method page explains the learning loop and names its research sources", as
   await expect(page.getByRole("link", { name: "Retrieval practice and long-term learning" })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
+test("mobile app and legal pages expose store and policy links", async ({ page }) => {
+  await page.goto("/en/apps/");
+  await expect(page.getByRole("heading", { name: "The original practice apps." })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
+  await expect(page.getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
+  await page.getByRole("link", { name: "Privacy Policy" }).first().click();
+  await expect(page).toHaveURL(/\/en\/legal\/privacy\/$/);
+  await expect(page.getByRole("heading", { name: "Privacy Policy" })).toBeVisible();
+});
+
 test("grammar tags expose a readable rule on click and keyboard focus", async ({ page }) => {
   await page.goto("/en/explore/english/dialogues/iglIrNfAke7r4OZ0KxuB/");
   const tag = page.locator('[aria-describedby="tag-rule-1-S-1"]');
