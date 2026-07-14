@@ -21,7 +21,7 @@ function decodeEntities(value) {
 
 test("all source content validates and migrated counts match", () => {
   const content = loadContent();
-  assert.deepEqual(contentCounts(content), { annotatedDocuments: 2240, annotatedSentences: 25116, advancedPatterns: 260 });
+  assert.deepEqual(contentCounts(content), { annotatedDocuments: 2240, annotatedSentences: 25116, advancedPatterns: 284 });
   assert.equal(content.collections.english.dialogues.documents.length, 111);
   assert.equal(content.collections.english.patterns.documents.length, 353);
   assert.equal(content.collections.english.library.documents.length, 455);

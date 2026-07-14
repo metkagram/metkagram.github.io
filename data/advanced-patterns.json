@@ -35035,5 +35035,3221 @@
       ],
       "notes": "functional-batch-1"
     }
+  },
+  {
+    "id": "COL001",
+    "group_id": "COL",
+    "title_ru": "Принять / обосновать / оспорить решение",
+    "metaphor_ru": "Решение — не просто make a decision. У C1 целое семейство глаголов: reach, reverse, justify, stand by, challenge. Каждый даёт свой оттенок — от принятия до защиты.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "reach / make / reverse / justify a decision",
+        "example": "We need to reach a decision by Friday.",
+        "translation": "Нам нужно принять решение к пятнице.",
+        "examples": [
+          {
+            "text": "We need to **reach a decision** by Friday.",
+            "translation_ru": "Нам нужно принять решение к пятнице."
+          },
+          {
+            "text": "The board will **make a decision** next week.",
+            "translation_ru": "Совет примет решение на следующей неделе."
+          },
+          {
+            "text": "They may **reverse the decision** if the data changes.",
+            "translation_ru": "Они могут отменить решение, если данные изменятся."
+          },
+          {
+            "text": "She had to **justify her decision** to the team.",
+            "translation_ru": "Ей пришлось обосновать своё решение перед командой."
+          },
+          {
+            "text": "I will **stand by my decision**, whatever happens.",
+            "translation_ru": "Я буду стоять на своём решении, что бы ни случилось."
+          },
+          {
+            "text": "He decided to **challenge the decision** in court.",
+            "translation_ru": "Он решил оспорить решение в суде."
+          },
+          {
+            "text": "We should **delay the decision** until we have more data.",
+            "translation_ru": "Нам стоит отложить решение, пока не будет больше данных."
+          },
+          {
+            "text": "They finally **reached a decision** after hours of debate.",
+            "translation_ru": "Они наконец приняли решение после часов споров."
+          },
+          {
+            "text": "I cannot **make this decision** alone.",
+            "translation_ru": "Я не могу принять это решение в одиночку."
+          },
+          {
+            "text": "Have you **reached a decision** yet?",
+            "translation_ru": "Вы уже приняли решение?"
+          },
+          {
+            "text": "She refused to **reverse her decision**.",
+            "translation_ru": "Она отказалась отменять своё решение."
+          },
+          {
+            "text": "We must **justify every decision** we make.",
+            "translation_ru": "Мы должны обосновывать каждое своё решение."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "eine Entscheidung treffen / revidieren / begründen",
+        "example": "Wir müssen bis Freitag eine Entscheidung treffen.",
+        "translation": "Нам нужно принять решение к пятнице.",
+        "examples": [
+          {
+            "text": "Wir müssen bis Freitag **eine Entscheidung treffen**.",
+            "translation_ru": "Нам нужно принять решение к пятнице."
+          },
+          {
+            "text": "Der Vorstand wird nächste Woche **eine Entscheidung treffen**.",
+            "translation_ru": "Совет примет решение на следующей неделе."
+          },
+          {
+            "text": "Sie können **die Entscheidung revidieren**, wenn sich die Daten ändern.",
+            "translation_ru": "Они могут отменить решение, если данные изменятся."
+          },
+          {
+            "text": "Sie musste **ihre Entscheidung** vor dem Team **begründen**.",
+            "translation_ru": "Ей пришлось обосновать своё решение перед командой."
+          },
+          {
+            "text": "Ich werde **zu meiner Entscheidung stehen**, was auch passiert.",
+            "translation_ru": "Я буду стоять на своём решении, что бы ни случилось."
+          },
+          {
+            "text": "Er beschloss, **die Entscheidung** vor Gericht **anzufechten**.",
+            "translation_ru": "Он решил оспорить решение в суде."
+          },
+          {
+            "text": "Wir sollten **die Entscheidung verschieben**, bis wir mehr Daten haben.",
+            "translation_ru": "Нам стоит отложить решение, пока не будет больше данных."
+          },
+          {
+            "text": "Sie **trafen** nach stundenlangen Debatten endlich **eine Entscheidung**.",
+            "translation_ru": "Они наконец приняли решение после часов споров."
+          },
+          {
+            "text": "Ich kann **diese Entscheidung** nicht allein **treffen**.",
+            "translation_ru": "Я не могу принять это решение в одиночку."
+          },
+          {
+            "text": "Haben Sie schon **eine Entscheidung getroffen**?",
+            "translation_ru": "Вы уже приняли решение?"
+          },
+          {
+            "text": "Sie weigerte sich, **ihre Entscheidung zu revidieren**.",
+            "translation_ru": "Она отказалась отменять своё решение."
+          },
+          {
+            "text": "Wir müssen **jede Entscheidung begründen**, die wir treffen.",
+            "translation_ru": "Мы должны обосновывать каждое своё решение."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "reach / make / reverse / justify a decision",
+      "eine Entscheidung treffen / revidieren / begründen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "COL002",
+    "group_id": "COL",
+    "title_ru": "Поднять / решить / озвучить опасение",
+    "metaphor_ru": "Concern тоже имеет своё семейство: raise (поднять), address (заняться), resolve (снять), voice (озвучить), dismiss (отмести). Правильный глагол делает речь естественной.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "raise / address / resolve / voice a concern",
+        "example": "She raised a concern about the timeline.",
+        "translation": "Она подняла опасение по поводу сроков.",
+        "examples": [
+          {
+            "text": "She **raised a concern** about the timeline.",
+            "translation_ru": "Она подняла опасение по поводу сроков."
+          },
+          {
+            "text": "We need to **address this concern** before launch.",
+            "translation_ru": "Нам нужно проработать это опасение до запуска."
+          },
+          {
+            "text": "They quickly **resolved the concern** with a clear answer.",
+            "translation_ru": "Они быстро сняли опасение чётким ответом."
+          },
+          {
+            "text": "He **voiced a concern** about the budget.",
+            "translation_ru": "Он озвучил опасение по поводу бюджета."
+          },
+          {
+            "text": "I want to **raise a concern** about the scope.",
+            "translation_ru": "Я хочу поднять опасение по поводу объёма."
+          },
+          {
+            "text": "The manager **addressed every concern** in the meeting.",
+            "translation_ru": "Руководитель проработал каждое опасение на встрече."
+          },
+          {
+            "text": "We should not **dismiss their concerns** so quickly.",
+            "translation_ru": "Нам не стоит так быстро отметать их опасения."
+          },
+          {
+            "text": "She **resolved my concern** in one email.",
+            "translation_ru": "Она сняла моё опасение одним письмом."
+          },
+          {
+            "text": "They **raised several concerns** during the review.",
+            "translation_ru": "Они подняли несколько опасений во время проверки."
+          },
+          {
+            "text": "Have you **addressed the concern** yet?",
+            "translation_ru": "Ты уже проработал это опасение?"
+          },
+          {
+            "text": "He **voiced a concern** that others shared.",
+            "translation_ru": "Он озвучил опасение, которое разделяли и другие."
+          },
+          {
+            "text": "We must **address this concern** seriously.",
+            "translation_ru": "Мы должны серьёзно отнестись к этому опасению."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "eine Sorge äußern / ein Anliegen ansprechen / Bedenken ausräumen",
+        "example": "Sie äußerte eine Sorge wegen des Zeitplans.",
+        "translation": "Она подняла опасение по поводу сроков.",
+        "examples": [
+          {
+            "text": "Sie **äußerte eine Sorge** wegen des Zeitplans.",
+            "translation_ru": "Она подняла опасение по поводу сроков."
+          },
+          {
+            "text": "Wir müssen **dieses Anliegen** vor dem Start **ansprechen**.",
+            "translation_ru": "Нам нужно проработать это опасение до запуска."
+          },
+          {
+            "text": "Sie **räumten die Bedenken** mit einer klaren Antwort **aus**.",
+            "translation_ru": "Они быстро сняли опасение чётким ответом."
+          },
+          {
+            "text": "Er **äußerte Bedenken** wegen des Budgets.",
+            "translation_ru": "Он озвучил опасение по поводу бюджета."
+          },
+          {
+            "text": "Ich möchte **eine Sorge** zum Umfang **äußern**.",
+            "translation_ru": "Я хочу поднять опасение по поводу объёма."
+          },
+          {
+            "text": "Die Leitung **sprach jedes Anliegen** im Meeting **an**.",
+            "translation_ru": "Руководитель проработал каждое опасение на встрече."
+          },
+          {
+            "text": "Wir sollten **ihre Bedenken** nicht so schnell **abtun**.",
+            "translation_ru": "Нам не стоит так быстро отметать их опасения."
+          },
+          {
+            "text": "Sie **räumte meine Sorge** mit einer E-Mail **aus**.",
+            "translation_ru": "Она сняла моё опасение одним письмом."
+          },
+          {
+            "text": "Sie **äußerten mehrere Bedenken** während der Prüfung.",
+            "translation_ru": "Они подняли несколько опасений во время проверки."
+          },
+          {
+            "text": "Hast du **das Anliegen** schon **angesprochen**?",
+            "translation_ru": "Ты уже проработал это опасение?"
+          },
+          {
+            "text": "Er **äußerte eine Sorge**, die andere teilten.",
+            "translation_ru": "Он озвучил опасение, которое разделяли и другие."
+          },
+          {
+            "text": "Wir müssen **dieses Anliegen** ernsthaft **ansprechen**.",
+            "translation_ru": "Мы должны серьёзно отнестись к этому опасению."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "raise / address / resolve / voice a concern",
+      "eine Sorge äußern / ein Anliegen ansprechen / Bedenken ausräumen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "COL003",
+    "group_id": "COL",
+    "title_ru": "Оценить / снизить / принять риск",
+    "metaphor_ru": "Risk работает с конкретными глаголами: assess (оценить), mitigate (снизить), accept (принять), pose (нести), run (идти на риск). Это основа любого разговора о решениях.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "assess / mitigate / accept / pose a risk",
+        "example": "We need to assess the risk before we invest.",
+        "translation": "Нам нужно оценить риск, прежде чем инвестировать.",
+        "examples": [
+          {
+            "text": "We need to **assess the risk** before we invest.",
+            "translation_ru": "Нам нужно оценить риск, прежде чем инвестировать."
+          },
+          {
+            "text": "They took steps to **mitigate the risk**.",
+            "translation_ru": "Они приняли меры, чтобы снизить риск."
+          },
+          {
+            "text": "We can **accept this risk**; it is small.",
+            "translation_ru": "Мы можем принять этот риск; он невелик."
+          },
+          {
+            "text": "This change could **pose a risk** to users.",
+            "translation_ru": "Это изменение может нести риск для пользователей."
+          },
+          {
+            "text": "She **assessed the risks** carefully.",
+            "translation_ru": "Она тщательно оценила риски."
+          },
+          {
+            "text": "We must **mitigate the risk** of failure.",
+            "translation_ru": "Мы должны снизить риск неудачи."
+          },
+          {
+            "text": "He decided to **run the risk** anyway.",
+            "translation_ru": "Он решил всё равно пойти на риск."
+          },
+          {
+            "text": "They **accepted the risk** and moved on.",
+            "translation_ru": "Они приняли риск и двинулись дальше."
+          },
+          {
+            "text": "The plan **poses a serious risk**.",
+            "translation_ru": "План несёт серьёзный риск."
+          },
+          {
+            "text": "Have you **assessed the risk** properly?",
+            "translation_ru": "Ты правильно оценил риск?"
+          },
+          {
+            "text": "We should **mitigate every risk** we can.",
+            "translation_ru": "Мы должны снизить каждый риск, который можем."
+          },
+          {
+            "text": "I am not willing to **run that risk**.",
+            "translation_ru": "Я не готов идти на такой риск."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "ein Risiko einschätzen / mindern / eingehen / bergen",
+        "example": "Wir müssen das Risiko einschätzen, bevor wir investieren.",
+        "translation": "Нам нужно оценить риск, прежде чем инвестировать.",
+        "examples": [
+          {
+            "text": "Wir müssen **das Risiko einschätzen**, bevor wir investieren.",
+            "translation_ru": "Нам нужно оценить риск, прежде чем инвестировать."
+          },
+          {
+            "text": "Sie ergriffen Maßnahmen, um **das Risiko zu mindern**.",
+            "translation_ru": "Они приняли меры, чтобы снизить риск."
+          },
+          {
+            "text": "Wir können **dieses Risiko akzeptieren**; es ist gering.",
+            "translation_ru": "Мы можем принять этот риск; он невелик."
+          },
+          {
+            "text": "Diese Änderung könnte **ein Risiko für** die Nutzer **bergen**.",
+            "translation_ru": "Это изменение может нести риск для пользователей."
+          },
+          {
+            "text": "Sie **schätzte die Risiken** sorgfältig **ein**.",
+            "translation_ru": "Она тщательно оценила риски."
+          },
+          {
+            "text": "Wir müssen **das Risiko** eines Scheiterns **mindern**.",
+            "translation_ru": "Мы должны снизить риск неудачи."
+          },
+          {
+            "text": "Er beschloss, **das Risiko** trotzdem **einzugehen**.",
+            "translation_ru": "Он решил всё равно пойти на риск."
+          },
+          {
+            "text": "Sie **akzeptierten das Risiko** und machten weiter.",
+            "translation_ru": "Они приняли риск и двинулись дальше."
+          },
+          {
+            "text": "Der Plan **birgt ein ernstes Risiko**.",
+            "translation_ru": "План несёт серьёзный риск."
+          },
+          {
+            "text": "Hast du **das Risiko** richtig **eingeschätzt**?",
+            "translation_ru": "Ты правильно оценил риск?"
+          },
+          {
+            "text": "Wir sollten **jedes Risiko mindern**, das wir können.",
+            "translation_ru": "Мы должны снизить каждый риск, который можем."
+          },
+          {
+            "text": "Ich bin nicht bereit, **dieses Risiko einzugehen**.",
+            "translation_ru": "Я не готов идти на такой риск."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "assess / mitigate / accept / pose a risk",
+      "ein Risiko einschätzen / mindern / eingehen / bergen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "VRB001",
+    "group_id": "VRB",
+    "title_ru": "Полагаться на / зависеть от",
+    "metaphor_ru": " rely on, depend on, count on — все с on, но с разными оттенками. Управление предлогом — классический разрыв между B2 и C1; ошибка здесь сразу выдаёт уровень.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "rely on / depend on / count on + noun/gerund",
+        "example": "We rely on this tool every day.",
+        "translation": "Мы полагаемся на этот инструмент каждый день.",
+        "examples": [
+          {
+            "text": "We **rely on** this tool every day.",
+            "translation_ru": "Мы полагаемся на этот инструмент каждый день."
+          },
+          {
+            "text": "You can **count on** me to finish it.",
+            "translation_ru": "Ты можешь рассчитывать на меня — я это закончу."
+          },
+          {
+            "text": "It **depends on** the budget.",
+            "translation_ru": "Это зависит от бюджета."
+          },
+          {
+            "text": "She **relies on** her team for support.",
+            "translation_ru": "Она полагается на свою команду в поддержке."
+          },
+          {
+            "text": "We **depend on** accurate data.",
+            "translation_ru": "Мы зависим от точных данных."
+          },
+          {
+            "text": "You should not **rely on** luck.",
+            "translation_ru": "Не стоит полагаться на удачу."
+          },
+          {
+            "text": "They **count on** us to deliver.",
+            "translation_ru": "Они рассчитывают, что мы справимся."
+          },
+          {
+            "text": "It all **depends on** the weather.",
+            "translation_ru": "Всё зависит от погоды."
+          },
+          {
+            "text": "I **rely on** clear deadlines.",
+            "translation_ru": "Я полагаюсь на чёткие сроки."
+          },
+          {
+            "text": "Can we **count on** your vote?",
+            "translation_ru": "Мы можем рассчитывать на твой голос?"
+          },
+          {
+            "text": "He **depends on** regular feedback.",
+            "translation_ru": "Он зависит от регулярной обратной связи."
+          },
+          {
+            "text": "We **rely on** each other to succeed.",
+            "translation_ru": "Мы полагаемся друг на друга, чтобы добиться успеха."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "sich verlassen auf / abhängen von / zählen auf",
+        "example": "Wir verlassen uns jeden Tag auf dieses Werkzeug.",
+        "translation": "Мы полагаемся на этот инструмент каждый день.",
+        "examples": [
+          {
+            "text": "Wir **verlassen uns** jeden Tag **auf** dieses Werkzeug.",
+            "translation_ru": "Мы полагаемся на этот инструмент каждый день."
+          },
+          {
+            "text": "Du kannst **dich auf** mich **verlassen**, dass ich es fertig mache.",
+            "translation_ru": "Ты можешь рассчитывать на меня — я это закончу."
+          },
+          {
+            "text": "Es **hängt vom** Budget **ab**.",
+            "translation_ru": "Это зависит от бюджета."
+          },
+          {
+            "text": "Sie **verlässt sich auf** ihr Team.",
+            "translation_ru": "Она полагается на свою команду."
+          },
+          {
+            "text": "Wir **sind auf** genaue Daten **angewiesen**.",
+            "translation_ru": "Мы зависим от точных данных."
+          },
+          {
+            "text": "Du solltest **dich nicht auf** Glück **verlassen**.",
+            "translation_ru": "Не стоит полагаться на удачу."
+          },
+          {
+            "text": "Sie **zählen auf** uns, dass wir liefern.",
+            "translation_ru": "Они рассчитывают, что мы справимся."
+          },
+          {
+            "text": "Es **hängt ganz vom** Wetter **ab**.",
+            "translation_ru": "Всё зависит от погоды."
+          },
+          {
+            "text": "Ich **verlasse mich auf** klare Fristen.",
+            "translation_ru": "Я полагаюсь на чёткие сроки."
+          },
+          {
+            "text": "Können wir **auf** deine Stimme **zählen**?",
+            "translation_ru": "Мы можем рассчитывать на твой голос?"
+          },
+          {
+            "text": "Er **ist auf** regelmäßiges Feedback **angewiesen**.",
+            "translation_ru": "Он зависит от регулярной обратной связи."
+          },
+          {
+            "text": "Wir **verlassen uns aufeinander**, um erfolgreich zu sein.",
+            "translation_ru": "Мы полагаемся друг на друга, чтобы добиться успеха."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "rely on / depend on / count on + noun/gerund",
+      "sich verlassen auf / abhängen von / zählen auf"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "VRB002",
+    "group_id": "VRB",
+    "title_ru": "Объяснять / происходить из / приводить к",
+    "metaphor_ru": "account for, stem from, result in — три способа говорить о причинах через предлоги. Без них объяснения звучат плоско; с ними — точно и по-взрослому.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "account for / stem from / result in + noun",
+        "example": "These factors account for most of the delay.",
+        "translation": "Эти факторы объясняют большую часть задержки.",
+        "examples": [
+          {
+            "text": "These factors **account for** most of the delay.",
+            "translation_ru": "Эти факторы объясняют большую часть задержки."
+          },
+          {
+            "text": "The problem **stems from** poor planning.",
+            "translation_ru": "Проблема происходит из плохого планирования."
+          },
+          {
+            "text": "The change **resulted in** lower costs.",
+            "translation_ru": "Изменение привело к снижению расходов."
+          },
+          {
+            "text": "How do you **account for** this difference?",
+            "translation_ru": "Как ты объяснишь эту разницу?"
+          },
+          {
+            "text": "His success **stems from** hard work.",
+            "translation_ru": "Его успех происходит из упорного труда."
+          },
+          {
+            "text": "The error **resulted in** a data loss.",
+            "translation_ru": "Ошибка привела к потере данных."
+          },
+          {
+            "text": "Demand **accounts for** half of the growth.",
+            "translation_ru": "Спрос составляет половину роста."
+          },
+          {
+            "text": "The delay **stems from** a missing approval.",
+            "translation_ru": "Задержка происходит из-за отсутствующего согласования."
+          },
+          {
+            "text": "The merger **resulted in** new jobs.",
+            "translation_ru": "Слияние привело к новым рабочим местам."
+          },
+          {
+            "text": "This **accounts for** why sales fell.",
+            "translation_ru": "Это объясняет, почему продажи упали."
+          },
+          {
+            "text": "Her confidence **stems from** experience.",
+            "translation_ru": "Её уверенность происходит из опыта."
+          },
+          {
+            "text": "The policy **resulted in** more complaints.",
+            "translation_ru": "Политика привела к большему числу жалоб."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "erklären / herrühren von / führen zu / ausmachen",
+        "example": "Diese Faktoren erklären den Großteil der Verzögerung.",
+        "translation": "Эти факторы объясняют большую часть задержки.",
+        "examples": [
+          {
+            "text": "Diese Faktoren **erklären** den Großteil der Verzögerung.",
+            "translation_ru": "Эти факторы объясняют большую часть задержки."
+          },
+          {
+            "text": "Das Problem **rührt von** schlechter Planung **her**.",
+            "translation_ru": "Проблема происходит из плохого планирования."
+          },
+          {
+            "text": "Die Änderung **führte zu** niedrigeren Kosten.",
+            "translation_ru": "Изменение привело к снижению расходов."
+          },
+          {
+            "text": "Wie **erklärst du** diesen Unterschied?",
+            "translation_ru": "Как ты объяснишь эту разницу?"
+          },
+          {
+            "text": "Sein Erfolg **rührt von** harter Arbeit **her**.",
+            "translation_ru": "Его успех происходит из упорного труда."
+          },
+          {
+            "text": "Der Fehler **führte zu** einem Datenverlust.",
+            "translation_ru": "Ошибка привела к потере данных."
+          },
+          {
+            "text": "Die Nachfrage **macht** die Hälfte des Wachstums **aus**.",
+            "translation_ru": "Спрос составляет половину роста."
+          },
+          {
+            "text": "Die Verzögerung **rührt von** einer fehlenden Freigabe **her**.",
+            "translation_ru": "Задержка происходит из-за отсутствующего согласования."
+          },
+          {
+            "text": "Die Fusion **führte zu** neuen Arbeitsplätzen.",
+            "translation_ru": "Слияние привело к новым рабочим местам."
+          },
+          {
+            "text": "Das **erklärt**, warum die Verkäufe fielen.",
+            "translation_ru": "Это объясняет, почему продажи упали."
+          },
+          {
+            "text": "Ihr Selbstvertrauen **rührt von** Erfahrung **her**.",
+            "translation_ru": "Её уверенность происходит из опыта."
+          },
+          {
+            "text": "Die Richtlinie **führte zu** mehr Beschwerden.",
+            "translation_ru": "Политика привела к большему числу жалоб."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "account for / stem from / result in + noun",
+      "erklären / herrühren von / führen zu / ausmachen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "VRB003",
+    "group_id": "VRB",
+    "title_ru": "Возражать против / настаивать на / обвинять в",
+    "metaphor_ru": "object to, insist on, accuse of — после них идёт герундий (doing). Это типичная ловушка: хочется поставить инфинитив, а нужно -ing. Частая ошибка именно на B2–C1.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "object to / insist on / accuse someone of + gerund",
+        "example": "I object to working weekends without pay.",
+        "translation": "Я возражаю против работы по выходным без оплаты.",
+        "examples": [
+          {
+            "text": "I **object to working** weekends without pay.",
+            "translation_ru": "Я возражаю против работы по выходным без оплаты."
+          },
+          {
+            "text": "She **insists on checking** everything twice.",
+            "translation_ru": "Она настаивает на том, чтобы проверять всё дважды."
+          },
+          {
+            "text": "They **accused him of breaking** the rules.",
+            "translation_ru": "Они обвинили его в нарушении правил."
+          },
+          {
+            "text": "We **object to changing** the terms now.",
+            "translation_ru": "Мы возражаем против изменения условий сейчас."
+          },
+          {
+            "text": "He **insists on being** involved.",
+            "translation_ru": "Он настаивает на том, чтобы быть вовлечённым."
+          },
+          {
+            "text": "She **accused them of hiding** the truth.",
+            "translation_ru": "Она обвинила их в сокрытии правды."
+          },
+          {
+            "text": "I **object to paying** extra fees.",
+            "translation_ru": "Я возражаю против оплаты дополнительных сборов."
+          },
+          {
+            "text": "They **insist on doing** it their way.",
+            "translation_ru": "Они настаивают на том, чтобы делать это по-своему."
+          },
+          {
+            "text": "He **accused her of lying** about the cost.",
+            "translation_ru": "Он обвинил её во лжи о стоимости."
+          },
+          {
+            "text": "Do you **object to waiting** a week?",
+            "translation_ru": "Ты возражаешь против того, чтобы подождать неделю?"
+          },
+          {
+            "text": "We **insist on getting** a clear answer.",
+            "translation_ru": "Мы настаиваем на получении чёткого ответа."
+          },
+          {
+            "text": "She **objected to being** blamed unfairly.",
+            "translation_ru": "Она возразила против того, чтобы её несправедливо обвиняли."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "etwas ablehnen / darauf bestehen, etw. zu tun / jmdn beschuldigen, etw. getan zu haben",
+        "example": "Ich lehne es ab, unbezahlt an Wochenenden zu arbeiten.",
+        "translation": "Я возражаю против работы по выходным без оплаты.",
+        "examples": [
+          {
+            "text": "Ich **lehne es ab**, unbezahlt an Wochenenden **zu arbeiten**.",
+            "translation_ru": "Я возражаю против работы по выходным без оплаты."
+          },
+          {
+            "text": "Sie **besteht darauf**, alles zweimal **zu prüfen**.",
+            "translation_ru": "Она настаивает на том, чтобы проверять всё дважды."
+          },
+          {
+            "text": "Sie **beschuldigten ihn**, die Regeln **gebrochen zu haben**.",
+            "translation_ru": "Они обвинили его в нарушении правил."
+          },
+          {
+            "text": "Wir **lehnen es ab**, die Bedingungen jetzt **zu ändern**.",
+            "translation_ru": "Мы возражаем против изменения условий сейчас."
+          },
+          {
+            "text": "Er **besteht darauf**, einbezogen **zu werden**.",
+            "translation_ru": "Он настаивает на том, чтобы быть вовлечённым."
+          },
+          {
+            "text": "Sie **beschuldigte sie**, die Wahrheit **verschwiegen zu haben**.",
+            "translation_ru": "Она обвинила их в сокрытии правды."
+          },
+          {
+            "text": "Ich **lehne es ab**, zusätzliche Gebühren **zu zahlen**.",
+            "translation_ru": "Я возражаю против оплаты дополнительных сборов."
+          },
+          {
+            "text": "Sie **bestehen darauf**, es auf ihre Art **zu tun**.",
+            "translation_ru": "Они настаивают на том, чтобы делать это по-своему."
+          },
+          {
+            "text": "Er **beschuldigte sie**, über die Kosten **gelogen zu haben**.",
+            "translation_ru": "Он обвинил её во лжи о стоимости."
+          },
+          {
+            "text": "**Lehnst du es ab**, eine Woche **zu warten**?",
+            "translation_ru": "Ты возражаешь против того, чтобы подождать неделю?"
+          },
+          {
+            "text": "Wir **bestehen darauf**, eine klare Antwort **zu bekommen**.",
+            "translation_ru": "Мы настаиваем на получении чёткого ответа."
+          },
+          {
+            "text": "Sie **lehnte es ab**, unfair **beschuldigt zu werden**.",
+            "translation_ru": "Она возразила против того, чтобы её несправедливо обвиняли."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "object to / insist on / accuse someone of + gerund",
+      "etwas ablehnen / darauf bestehen, etw. zu tun / jmdn beschuldigen, etw. getan zu haben"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "REP001",
+    "group_id": "REP",
+    "title_ru": "Указать / утверждать / объяснить, что…",
+    "metaphor_ru": "C1 говорит не только от себя. point out, argue, explain that — нейтральная и поддерживающая передача чужой позиции. Без них любой анализ превращается в монолог.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "point out / argue / explain that + clause",
+        "example": "She pointed out that the deadline was unrealistic.",
+        "translation": "Она указала на то, что срок был нереалистичным.",
+        "examples": [
+          {
+            "text": "She **pointed out that** the deadline was unrealistic.",
+            "translation_ru": "Она указала на то, что срок был нереалистичным."
+          },
+          {
+            "text": "He **argued that** we should wait.",
+            "translation_ru": "Он утверждал, что нам стоит подождать."
+          },
+          {
+            "text": "They **explained that** the change was temporary.",
+            "translation_ru": "Они объяснили, что изменение временное."
+          },
+          {
+            "text": "She **pointed out that** the data was incomplete.",
+            "translation_ru": "Она указала на то, что данные неполные."
+          },
+          {
+            "text": "He **argued that** the cost was too high.",
+            "translation_ru": "Он утверждал, что стоимость слишком высока."
+          },
+          {
+            "text": "They **pointed out that** we had missed a step.",
+            "translation_ru": "Они указали на то, что мы пропустили шаг."
+          },
+          {
+            "text": "She **explained that** the delay was unavoidable.",
+            "translation_ru": "Она объяснила, что задержка была неизбежна."
+          },
+          {
+            "text": "He **pointed out that** this had happened before.",
+            "translation_ru": "Он указал на то, что такое уже случалось."
+          },
+          {
+            "text": "They **argued that** a smaller scope was safer.",
+            "translation_ru": "Они утверждали, что меньший объём безопаснее."
+          },
+          {
+            "text": "She **pointed out that** nobody owned the task.",
+            "translation_ru": "Она указала на то, что за задачу никто не отвечает."
+          },
+          {
+            "text": "He **explained that** the risk was low.",
+            "translation_ru": "Он объяснил, что риск невелик."
+          },
+          {
+            "text": "Did she **point out that** the plan had changed?",
+            "translation_ru": "Она указала на то, что план изменился?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "darauf hinweisen / argumentieren / erklären, dass",
+        "example": "Sie wies darauf hin, dass der Termin unrealistisch war.",
+        "translation": "Она указала на то, что срок был нереалистичным.",
+        "examples": [
+          {
+            "text": "Sie **wies darauf hin**, dass der Termin unrealistisch war.",
+            "translation_ru": "Она указала на то, что срок был нереалистичным."
+          },
+          {
+            "text": "Er **argumentierte**, dass wir warten sollten.",
+            "translation_ru": "Он утверждал, что нам стоит подождать."
+          },
+          {
+            "text": "Sie **erklärten**, dass die Änderung vorübergehend war.",
+            "translation_ru": "Они объяснили, что изменение временное."
+          },
+          {
+            "text": "Sie **wies darauf hin**, dass die Daten unvollständig waren.",
+            "translation_ru": "Она указала на то, что данные неполные."
+          },
+          {
+            "text": "Er **argumentierte**, dass die Kosten zu hoch waren.",
+            "translation_ru": "Он утверждал, что стоимость слишком высока."
+          },
+          {
+            "text": "Sie **wiesen darauf hin**, dass wir einen Schritt ausgelassen hatten.",
+            "translation_ru": "Они указали на то, что мы пропустили шаг."
+          },
+          {
+            "text": "Sie **erklärte**, dass die Verzögerung unvermeidbar war.",
+            "translation_ru": "Она объяснила, что задержка была неизбежна."
+          },
+          {
+            "text": "Er **wies darauf hin**, dass dies schon einmal passiert war.",
+            "translation_ru": "Он указал на то, что такое уже случалось."
+          },
+          {
+            "text": "Sie **argumentierten**, dass ein kleinerer Umfang sicherer war.",
+            "translation_ru": "Они утверждали, что меньший объём безопаснее."
+          },
+          {
+            "text": "Sie **wies darauf hin**, dass niemand die Aufgabe besaß.",
+            "translation_ru": "Она указала на то, что за задачу никто не отвечает."
+          },
+          {
+            "text": "Er **erklärte**, dass das Risiko gering war.",
+            "translation_ru": "Он объяснил, что риск невелик."
+          },
+          {
+            "text": "**Wies sie darauf hin**, dass sich der Plan geändert hatte?",
+            "translation_ru": "Она указала на то, что план изменился?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "point out / argue / explain that + clause",
+      "darauf hinweisen / argumentieren / erklären, dass"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "REP002",
+    "group_id": "REP",
+    "title_ru": "Заявлять / предполагать / настаивать, что…",
+    "metaphor_ru": "claim, suggest, maintain — передача позиции с оттенком дистанции. claim часто намекает на сомнение, suggest — на мягкое предложение, maintain — на упорство. Тон решает всё.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "claim / suggest / maintain that + clause",
+        "example": "They claimed that the system was secure.",
+        "translation": "Они заявляли, что система безопасна.",
+        "examples": [
+          {
+            "text": "They **claimed that** the system was secure.",
+            "translation_ru": "Они заявляли, что система безопасна."
+          },
+          {
+            "text": "She **suggested that** we try a different approach.",
+            "translation_ru": "Она предположила, что нам стоит попробовать другой подход."
+          },
+          {
+            "text": "He **maintained that** he was right.",
+            "translation_ru": "Он настаивал на том, что был прав."
+          },
+          {
+            "text": "They **claimed that** the results were final.",
+            "translation_ru": "Они заявляли, что результаты окончательные."
+          },
+          {
+            "text": "She **suggested that** the meeting be postponed.",
+            "translation_ru": "Она предложила перенести встречу."
+          },
+          {
+            "text": "He **claimed that** he had not been informed.",
+            "translation_ru": "Он утверждал, что его не проинформировали."
+          },
+          {
+            "text": "They **maintained that** the data was accurate.",
+            "translation_ru": "Они настаивали на том, что данные точны."
+          },
+          {
+            "text": "She **claimed that** the cost would fall.",
+            "translation_ru": "Она заявляла, что стоимость снизится."
+          },
+          {
+            "text": "He **suggested that** we test it first.",
+            "translation_ru": "Он предложил сначала это протестировать."
+          },
+          {
+            "text": "They **claimed that** the delay was not their fault.",
+            "translation_ru": "Они утверждали, что задержка не их вина."
+          },
+          {
+            "text": "She **maintained that** the plan would work.",
+            "translation_ru": "Она настаивала на том, что план сработает."
+          },
+          {
+            "text": "Did they **claim that** the issue was resolved?",
+            "translation_ru": "Они заявляли, что проблема решена?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "behaupten / nahelegen / beharren darauf, dass",
+        "example": "Sie behaupteten, dass das System sicher war.",
+        "translation": "Они заявляли, что система безопасна.",
+        "examples": [
+          {
+            "text": "Sie **behaupteten**, dass das System sicher war.",
+            "translation_ru": "Они заявляли, что система безопасна."
+          },
+          {
+            "text": "Sie **legte nahe**, dass wir einen anderen Ansatz versuchen.",
+            "translation_ru": "Она предположила, что нам стоит попробовать другой подход."
+          },
+          {
+            "text": "Er **beharrte darauf**, dass er Recht hatte.",
+            "translation_ru": "Он настаивал на том, что был прав."
+          },
+          {
+            "text": "Sie **behaupteten**, dass die Ergebnisse endgültig waren.",
+            "translation_ru": "Они заявляли, что результаты окончательные."
+          },
+          {
+            "text": "Sie **schlug vor**, dass das Meeting verschoben wird.",
+            "translation_ru": "Она предложила перенести встречу."
+          },
+          {
+            "text": "Er **behauptete**, dass er nicht informiert worden war.",
+            "translation_ru": "Он утверждал, что его не проинформировали."
+          },
+          {
+            "text": "Sie **beharrten darauf**, dass die Daten korrekt waren.",
+            "translation_ru": "Они настаивали на том, что данные точны."
+          },
+          {
+            "text": "Sie **behauptete**, dass die Kosten sinken würden.",
+            "translation_ru": "Она заявляла, что стоимость снизится."
+          },
+          {
+            "text": "Er **legte nahe**, dass wir es zuerst testen.",
+            "translation_ru": "Он предложил сначала это протестировать."
+          },
+          {
+            "text": "Sie **behaupteten**, dass die Verzögerung nicht ihre Schuld war.",
+            "translation_ru": "Они утверждали, что задержка не их вина."
+          },
+          {
+            "text": "Sie **beharrte darauf**, dass der Plan funktionieren würde.",
+            "translation_ru": "Она настаивала на том, что план сработает."
+          },
+          {
+            "text": "**Behaupteten sie**, dass das Problem gelöst war?",
+            "translation_ru": "Они заявляли, что проблема решена?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "claim / suggest / maintain that + clause",
+      "behaupten / nahelegen / beharren darauf, dass"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "REP003",
+    "group_id": "REP",
+    "title_ru": "Признать / уступить / предупредить, что…",
+    "metaphor_ru": "acknowledge, concede, warn — передача позиции с уступкой или предостережением. Эти глаголы показывают зрелость: ты слышишь другую сторону и честно называешь риски.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "acknowledge / concede / warn that + clause",
+        "example": "She acknowledged that the plan had flaws.",
+        "translation": "Она признала, что у плана есть недостатки.",
+        "examples": [
+          {
+            "text": "She **acknowledged that** the plan had flaws.",
+            "translation_ru": "Она признала, что у плана есть недостатки."
+          },
+          {
+            "text": "He **conceded that** we had a point.",
+            "translation_ru": "Он признал, что в наших словах есть смысл."
+          },
+          {
+            "text": "They **warned that** the costs might rise.",
+            "translation_ru": "Они предупредили, что расходы могут вырасти."
+          },
+          {
+            "text": "She **acknowledged that** she had made a mistake.",
+            "translation_ru": "Она признала, что допустила ошибку."
+          },
+          {
+            "text": "He **conceded that** the task was harder than expected.",
+            "translation_ru": "Он признал, что задача оказалась сложнее, чем ожидалось."
+          },
+          {
+            "text": "They **warned that** the deadline might slip.",
+            "translation_ru": "Они предупредили, что срок может сорваться."
+          },
+          {
+            "text": "She **acknowledged that** more data was needed.",
+            "translation_ru": "Она признала, что нужно больше данных."
+          },
+          {
+            "text": "He **conceded that** the criticism was fair.",
+            "translation_ru": "Он признал, что критика была справедливой."
+          },
+          {
+            "text": "They **warned that** the system could fail.",
+            "translation_ru": "Они предупредили, что система может дать сбой."
+          },
+          {
+            "text": "She **acknowledged that** the team was under pressure.",
+            "translation_ru": "Она признала, что команда была под давлением."
+          },
+          {
+            "text": "He **conceded that** he had been wrong.",
+            "translation_ru": "Он признал, что был неправ."
+          },
+          {
+            "text": "Did they **warn that** the risk was high?",
+            "translation_ru": "Они предупредили, что риск высок?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "einräumen / zugeben / warnen, dass",
+        "example": "Sie räumte ein, dass der Plan Schwächen hatte.",
+        "translation": "Она признала, что у плана есть недостатки.",
+        "examples": [
+          {
+            "text": "Sie **räumte ein**, dass der Plan Schwächen hatte.",
+            "translation_ru": "Она признала, что у плана есть недостатки."
+          },
+          {
+            "text": "Er **gab zu**, dass wir einen Punkt hatten.",
+            "translation_ru": "Он признал, что в наших словах есть смысл."
+          },
+          {
+            "text": "Sie **warnten**, dass die Kosten steigen könnten.",
+            "translation_ru": "Они предупредили, что расходы могут вырасти."
+          },
+          {
+            "text": "Sie **räumte ein**, dass sie einen Fehler gemacht hatte.",
+            "translation_ru": "Она признала, что допустила ошибку."
+          },
+          {
+            "text": "Er **gab zu**, dass die Aufgabe schwerer war als erwartet.",
+            "translation_ru": "Он признал, что задача оказалась сложнее, чем ожидалось."
+          },
+          {
+            "text": "Sie **warnten**, dass der Termin verrutschen könnte.",
+            "translation_ru": "Они предупредили, что срок может сорваться."
+          },
+          {
+            "text": "Sie **räumte ein**, dass mehr Daten nötig waren.",
+            "translation_ru": "Она признала, что нужно больше данных."
+          },
+          {
+            "text": "Er **gab zu**, dass die Kritik berechtigt war.",
+            "translation_ru": "Он признал, что критика была справедливой."
+          },
+          {
+            "text": "Sie **warnten**, dass das System ausfallen könnte.",
+            "translation_ru": "Они предупредили, что система может дать сбой."
+          },
+          {
+            "text": "Sie **räumte ein**, dass das Team unter Druck stand.",
+            "translation_ru": "Она признала, что команда была под давлением."
+          },
+          {
+            "text": "Er **gab zu**, dass er sich geirrt hatte.",
+            "translation_ru": "Он признал, что был неправ."
+          },
+          {
+            "text": "**Warnten sie**, dass das Risiko hoch war?",
+            "translation_ru": "Они предупредили, что риск высок?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "acknowledge / concede / warn that + clause",
+      "einräumen / zugeben / warnen, dass"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "EMP001",
+    "group_id": "EMP",
+    "title_ru": "Только после X я понял (инверсия)",
+    "metaphor_ru": "Only after/when меняет порядок слов: вспомогательный глагол идёт перед подлежащим. Это и есть C1-акцент — «только тогда я понял». В немецком после Erst nach X глагол стоит на втором месте.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Only after/when X did + subj + verb",
+        "example": "Only after the meeting did I realize how much work remained.",
+        "translation": "Только после встречи я понял, сколько работы осталось.",
+        "examples": [
+          {
+            "text": "Only after the meeting **did I realize** how much work remained.",
+            "translation_ru": "Только после встречи я понял, сколько работы осталось."
+          },
+          {
+            "text": "Only when she apologized **did he finally calm** down.",
+            "translation_ru": "Только когда она извинилась, он наконец успокоился."
+          },
+          {
+            "text": "Only after losing the contract **did the company change** its strategy.",
+            "translation_ru": "Только потеряв контракт, компания изменила стратегию."
+          },
+          {
+            "text": "Only after I had read the report **did the problem become** clear.",
+            "translation_ru": "Только прочитав отчёт, я понял суть проблемы."
+          },
+          {
+            "text": "Only then **did we notice** the error in the data.",
+            "translation_ru": "Только тогда мы заметили ошибку в данных."
+          },
+          {
+            "text": "Only after a year abroad **did I feel** truly fluent.",
+            "translation_ru": "Только после года за границей я почувствовал, что говорю свободно."
+          },
+          {
+            "text": "Only when the deadline passed **did they take** it seriously.",
+            "translation_ru": "Только когда срок прошёл, они отнеслись к этому серьёзно."
+          },
+          {
+            "text": "Only in recent years **has this view changed**.",
+            "translation_ru": "Только в последние годы это мнение изменилось."
+          },
+          {
+            "text": "Only after asking twice **did she get** an answer.",
+            "translation_ru": "Только после двух повторов она получила ответ."
+          },
+          {
+            "text": "Only when you lose something **do you appreciate** it.",
+            "translation_ru": "Только потеряв что-то, ты начинаешь это ценить."
+          },
+          {
+            "text": "Only after the scandal broke **did he resign**.",
+            "translation_ru": "Только после того, как разразился скандал, он подал в отставку."
+          },
+          {
+            "text": "Only rarely **do we see** results like these.",
+            "translation_ru": "Лишь изредка мы видим такие результаты."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Erst nach/als X wurde/war mir klar, dass …",
+        "example": "Erst nach dem Meeting wurde mir klar, wie viel Arbeit übrig war.",
+        "translation": "Только после встречи я понял, сколько работы осталось.",
+        "examples": [
+          {
+            "text": "Erst nach dem Meeting **wurde mir klar**, wie viel Arbeit übrig war.",
+            "translation_ru": "Только после встречи я понял, сколько работы осталось."
+          },
+          {
+            "text": "Erst als sie sich entschuldigte, **beruhigte er sich** endlich.",
+            "translation_ru": "Только когда она извинилась, он наконец успокоился."
+          },
+          {
+            "text": "Erst nach dem Verlust des Auftrags **änderte die Firma** ihre Strategie.",
+            "translation_ru": "Только потеряв заказ, фирма изменила стратегию."
+          },
+          {
+            "text": "Erst nachdem ich den Bericht gelesen hatte, **wurde das Problem klar**.",
+            "translation_ru": "Только прочитав отчёт, я понял проблему."
+          },
+          {
+            "text": "Erst dann **bemerkten wir** den Fehler in den Daten.",
+            "translation_ru": "Только тогда мы заметили ошибку в данных."
+          },
+          {
+            "text": "Erst nach einem Jahr im Ausland **fühlte ich mich** wirklich sicher.",
+            "translation_ru": "Только после года за границей я почувствовал себя уверенно."
+          },
+          {
+            "text": "Erst als die Frist abgelaufen war, **nahmen sie es** ernst.",
+            "translation_ru": "Только когда срок истёк, они отнеслись к этому серьёзно."
+          },
+          {
+            "text": "Erst in den letzten Jahren **hat sich** diese Ansicht geändert.",
+            "translation_ru": "Только в последние годы это мнение изменилось."
+          },
+          {
+            "text": "Erst nach zwei Nachfragen **bekam sie** eine Antwort.",
+            "translation_ru": "Только после двух повторных запросов она получила ответ."
+          },
+          {
+            "text": "Erst wenn man etwas verliert, **schätzt man es**.",
+            "translation_ru": "Только потеряв что-то, начинаешь это ценить."
+          },
+          {
+            "text": "Erst nachdem der Skandal bekannt wurde, **trat er zurück**.",
+            "translation_ru": "Только после того, как скандал стал известен, он подал в отставку."
+          },
+          {
+            "text": "Erst nach langem Zögern **stimmte er** schließlich zu.",
+            "translation_ru": "Только после долгих колебаний он наконец согласился."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Only after/when X did + subj + verb",
+      "Erst nach/als X wurde/war mir klar, dass …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "EMP002",
+    "group_id": "EMP",
+    "title_ru": "Had it not been for X / Ohne X wäre",
+    "metaphor_ru": "Инверсия условия без if: Had it not been for… — «если бы не…». Очень письменный и речевой C1-оборот. В немецком то же даёт Ohne + Konj II: Ohne X wäre Y nicht passiert.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Had it not been for X, Y would not have + pp",
+        "example": "Had it not been for her quick thinking, the launch would have failed.",
+        "translation": "Если бы не её быстрая реакция, запуск провалился бы.",
+        "examples": [
+          {
+            "text": "**Had it not been for** her quick thinking, the launch would have failed.",
+            "translation_ru": "Если бы не её быстрая реакция, запуск бы провалился."
+          },
+          {
+            "text": "**Had it not been for** the warning, we would have lost everything.",
+            "translation_ru": "Если бы не предупреждение, мы бы всё потеряли."
+          },
+          {
+            "text": "**Had it not been for** his support, I would have given up.",
+            "translation_ru": "Если бы не его поддержка, я бы сдался."
+          },
+          {
+            "text": "**Had it not been for** the traffic, we would have arrived on time.",
+            "translation_ru": "Если бы не пробки, мы бы приехали вовремя."
+          },
+          {
+            "text": "**Had it not been for** their mistake, the project would have succeeded.",
+            "translation_ru": "Если бы не их ошибка, проект бы удался."
+          },
+          {
+            "text": "**Had it not been for** the rain, the event would have been outdoors.",
+            "translation_ru": "Если бы не дождь, мероприятие прошло бы на улице."
+          },
+          {
+            "text": "**Had it not been for** one missing document, the deal would have closed.",
+            "translation_ru": "Если бы не один недостающий документ, сделка бы состоялась."
+          },
+          {
+            "text": "**Had it not been for** your advice, I would have made a serious error.",
+            "translation_ru": "Если бы не твой совет, я бы допустил серьёзную ошибку."
+          },
+          {
+            "text": "**Had it not been for** the delay, they would have won the contract.",
+            "translation_ru": "Если бы не задержка, они бы выиграли контракт."
+          },
+          {
+            "text": "**Had it not been for** luck, none of this would have happened.",
+            "translation_ru": "Если бы не удача, ничего этого бы не случилось."
+          },
+          {
+            "text": "**Had it not been for** the new evidence, the case would have been closed.",
+            "translation_ru": "Если бы не новые доказательства, дело было бы закрыто."
+          },
+          {
+            "text": "Would you have stayed **had it not been for** the team?",
+            "translation_ru": "Ты бы остался, если бы не команда?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ohne X wäre Y nicht + pp (Konj II)",
+        "example": "Ohne ihre schnelle Reaktion wäre der Start gescheitert.",
+        "translation": "Если бы не её быстрая реакция, запуск бы провалился.",
+        "examples": [
+          {
+            "text": "**Ohne** ihre schnelle Reaktion **wäre** der Start gescheitert.",
+            "translation_ru": "Если бы не её быстрая реакция, запуск бы провалился."
+          },
+          {
+            "text": "**Ohne** die Warnung **hätten wir** alles verloren.",
+            "translation_ru": "Если бы не предупреждение, мы бы всё потеряли."
+          },
+          {
+            "text": "**Ohne** seine Unterstützung **hätte ich** aufgegeben.",
+            "translation_ru": "Если бы не его поддержка, я бы сдался."
+          },
+          {
+            "text": "**Ohne** den Stau **wären wir** pünktlich angekommen.",
+            "translation_ru": "Если бы не пробку, мы бы приехали вовремя."
+          },
+          {
+            "text": "**Ohne** ihren Fehler **wäre** das Projekt geglückt.",
+            "translation_ru": "Если бы не их ошибку, проект бы удался."
+          },
+          {
+            "text": "**Ohne** den Regen **hätte** die Veranstaltung draußen stattgefunden.",
+            "translation_ru": "Если бы не дождь, мероприятие прошло бы на улице."
+          },
+          {
+            "text": "**Ohne** das fehlende Dokument **wäre** der Vertrag zustande gekommen.",
+            "translation_ru": "Если бы не недостающий документ, договор состоялся бы."
+          },
+          {
+            "text": "**Ohne** deinen Rat **hätte ich** einen ernsten Fehler gemacht.",
+            "translation_ru": "Если бы не твой совет, я бы допустил серьёзную ошибку."
+          },
+          {
+            "text": "**Ohne** die Verzögerung **hätten sie** den Auftrag gewonnen.",
+            "translation_ru": "Если бы не задержку, они бы выиграли заказ."
+          },
+          {
+            "text": "**Ohne** Glück **wäre** nichts davon passiert.",
+            "translation_ru": "Если бы не удача, ничего этого бы не случилось."
+          },
+          {
+            "text": "**Ohne** die neuen Beweise **wäre** der Fall abgeschlossen worden.",
+            "translation_ru": "Если бы не новые доказательства, дело было бы закрыто."
+          },
+          {
+            "text": "**Wärst du ohne** das Team geblieben?",
+            "translation_ru": "Ты бы остался, если бы не команда?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "Had it not been for X, Y would not have + pp",
+      "Ohne X wäre Y nicht + pp (Konj II)"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "EMP003",
+    "group_id": "EMP",
+    "title_ru": "What surprised me was… (расщеплённое предложение)",
+    "metaphor_ru": "Cleft sentence: выносим главное в начало — What surprised me most was… По-немецки: Was mich überrascht hat, war… Глагол в was-части уходит в конец.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "What + verb + me (most) was …",
+        "example": "What surprised me most was how quickly they adapted.",
+        "translation": "Что удивило меня больше всего — как быстро они адаптировались.",
+        "examples": [
+          {
+            "text": "**What surprised me most was** how quickly they adapted.",
+            "translation_ru": "Что удивило меня больше всего — как быстро они адаптировались."
+          },
+          {
+            "text": "**What annoyed me was** the constant noise.",
+            "translation_ru": "Что раздражало меня — постоянный шум."
+          },
+          {
+            "text": "**What impressed her was** his honesty.",
+            "translation_ru": "Что впечатлило её — его честность."
+          },
+          {
+            "text": "**What worried the team was** the lack of time.",
+            "translation_ru": "Что беспокоило команду — нехватка времени."
+          },
+          {
+            "text": "**What surprised us was** that nobody complained.",
+            "translation_ru": "Что удивило нас — что никто не жаловался."
+          },
+          {
+            "text": "**What I find difficult is** staying focused.",
+            "translation_ru": "Что я считаю сложным — оставаться сосредоточенным."
+          },
+          {
+            "text": "**What shocked everyone was** the sudden announcement.",
+            "translation_ru": "Что шокировало всех — внезапное объявление."
+          },
+          {
+            "text": "**What matters most is** consistency.",
+            "translation_ru": "Что важнее всего — последовательность."
+          },
+          {
+            "text": "**What disappointed me was** the quality of the work.",
+            "translation_ru": "Что разочаровало меня — качество работы."
+          },
+          {
+            "text": "**What she needed was** a little more time.",
+            "translation_ru": "Что ей было нужно — ещё немного времени."
+          },
+          {
+            "text": "**What made the difference was** careful planning.",
+            "translation_ru": "Что решило исход — тщательное планирование."
+          },
+          {
+            "text": "**What surprised me wasn't** the cost but the delay.",
+            "translation_ru": "Что удивило меня — не цена, а задержка."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Was mich (am meisten) überrascht hat, war …",
+        "example": "Was mich am meisten überrascht hat, war, wie schnell sie sich angepasst haben.",
+        "translation": "Что удивило меня больше всего — как быстро они адаптировались.",
+        "examples": [
+          {
+            "text": "**Was mich am meisten überrascht hat, war**, wie schnell sie sich angepasst haben.",
+            "translation_ru": "Что удивило меня больше всего — как быстро они адаптировались."
+          },
+          {
+            "text": "**Was mich genervt hat, war** der ständige Lärm.",
+            "translation_ru": "Что раздражало меня — постоянный шум."
+          },
+          {
+            "text": "**Was sie beeindruckt hat, war** seine Ehrlichkeit.",
+            "translation_ru": "Что впечатлило её — его честность."
+          },
+          {
+            "text": "**Was das Team beunruhigt hat, war** der Zeitmangel.",
+            "translation_ru": "Что беспокоило команду — нехватка времени."
+          },
+          {
+            "text": "**Was uns überrascht hat, war**, dass sich niemand beschwert hat.",
+            "translation_ru": "Что удивило нас — что никто не жаловался."
+          },
+          {
+            "text": "**Was ich schwierig finde, ist**, konzentriert zu bleiben.",
+            "translation_ru": "Что я считаю сложным — оставаться сосредоточенным."
+          },
+          {
+            "text": "**Was alle schockiert hat, war** die plötzliche Ankündigung.",
+            "translation_ru": "Что шокировало всех — внезапное объявление."
+          },
+          {
+            "text": "**Was am wichtigsten ist, ist** Beständigkeit.",
+            "translation_ru": "Что важнее всего — постоянство."
+          },
+          {
+            "text": "**Was mich enttäuscht hat, war** die Qualität der Arbeit.",
+            "translation_ru": "Что разочаровало меня — качество работы."
+          },
+          {
+            "text": "**Was sie gebraucht hat, war** ein bisschen mehr Zeit.",
+            "translation_ru": "Что ей было нужно — ещё немного времени."
+          },
+          {
+            "text": "**Was den Unterschied gemacht hat, war** die sorgfältige Planung.",
+            "translation_ru": "Что решило исход — тщательное планирование."
+          },
+          {
+            "text": "**Was mich überrascht hat, war** nicht der Preis, sondern die Verzögerung.",
+            "translation_ru": "Что удивило меня — не цена, а задержка."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "What + verb + me (most) was …",
+      "Was mich (am meisten) überrascht hat, war …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "HED001",
+    "group_id": "HED",
+    "title_ru": "It could be argued that… (осторожная позиция)",
+    "metaphor_ru": "C1 говорит осторожно, не категорично. It could be argued that… — «можно утверждать, что…». По-немецки: Man könnte argumentieren, dass…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It could be argued that …",
+        "example": "It could be argued that the policy has done more harm than good.",
+        "translation": "Можно утверждать, что эта политика принесла больше вреда, чем пользы.",
+        "examples": [
+          {
+            "text": "**It could be argued that** the policy has done more harm than good.",
+            "translation_ru": "Можно утверждать, что политика принесла больше вреда, чем пользы."
+          },
+          {
+            "text": "**It could be argued that** remote work increases productivity.",
+            "translation_ru": "Можно утверждать, что удалённая работа повышает продуктивность."
+          },
+          {
+            "text": "**It could be argued that** the cost outweighs the benefit.",
+            "translation_ru": "Можно утверждать, что затраты перевешивают выгоду."
+          },
+          {
+            "text": "**It could be argued that** we acted too quickly.",
+            "translation_ru": "Можно утверждать, что мы действовали слишком быстро."
+          },
+          {
+            "text": "**It could be argued that** the data is incomplete.",
+            "translation_ru": "Можно утверждать, что данные неполны."
+          },
+          {
+            "text": "**It could be argued that** competition drives innovation.",
+            "translation_ru": "Можно утверждать, что конкуренция стимулирует инновации."
+          },
+          {
+            "text": "**It could be argued that** the decision was justified.",
+            "translation_ru": "Можно утверждать, что решение было оправдано."
+          },
+          {
+            "text": "**It could be argued that** the opposite is true.",
+            "translation_ru": "Можно утверждать, что верно обратное."
+          },
+          {
+            "text": "**It could be argued that** education should be free.",
+            "translation_ru": "Можно утверждать, что образование должно быть бесплатным."
+          },
+          {
+            "text": "**It could be argued that** the plan needs revision.",
+            "translation_ru": "Можно утверждать, что план требует пересмотра."
+          },
+          {
+            "text": "**It could be argued that** nobody is entirely blameless here.",
+            "translation_ru": "Можно утверждать, что здесь никто полностью не безупречен."
+          },
+          {
+            "text": "**Could it be argued that** the risk was underestimated?",
+            "translation_ru": "Можно ли утверждать, что риск был недооценён?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Man könnte argumentieren, dass …",
+        "example": "Man könnte argumentieren, dass die Politik mehr geschadet als genutzt hat.",
+        "translation": "Можно утверждать, что эта политика принесла больше вреда, чем пользы.",
+        "examples": [
+          {
+            "text": "**Man könnte argumentieren, dass** die Politik mehr geschadet als genutzt hat.",
+            "translation_ru": "Можно утверждать, что политика принесла больше вреда, чем пользы."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** Heimarbeit die Produktivität erhöht.",
+            "translation_ru": "Можно утверждать, что удалённая работа повышает продуктивность."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** die Kosten den Nutzen überwiegen.",
+            "translation_ru": "Можно утверждать, что затраты перевешивают пользу."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** wir zu schnell gehandelt haben.",
+            "translation_ru": "Можно утверждать, что мы действовали слишком быстро."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** die Daten unvollständig sind.",
+            "translation_ru": "Можно утверждать, что данные неполны."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** Wettbewerb Innovation fördert.",
+            "translation_ru": "Можно утверждать, что конкуренция стимулирует инновации."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** die Entscheidung gerechtfertigt war.",
+            "translation_ru": "Можно утверждать, что решение было оправдано."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** das Gegenteil zutrifft.",
+            "translation_ru": "Можно утверждать, что верно обратное."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** Bildung kostenlos sein sollte.",
+            "translation_ru": "Можно утверждать, что образование должно быть бесплатным."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** der Plan überarbeitet werden muss.",
+            "translation_ru": "Можно утверждать, что план нужно пересмотреть."
+          },
+          {
+            "text": "**Man könnte argumentieren, dass** hier niemand völlig unschuldig ist.",
+            "translation_ru": "Можно утверждать, что здесь никто полностью не безупречен."
+          },
+          {
+            "text": "**Könnte man argumentieren, dass** das Risiko unterschätzt wurde?",
+            "translation_ru": "Можно ли утверждать, что риск был недооценён?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "It could be argued that …",
+      "Man könnte argumentieren, dass …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "HED002",
+    "group_id": "HED",
+    "title_ru": "It remains to be seen whether… (пока неясно)",
+    "metaphor_ru": "Ещё один осторожный C1-оборот: It remains to be seen whether… — «ещё предстоит выяснить». По-немецки: Es bleibt abzuwarten, ob…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It remains to be seen whether …",
+        "example": "It remains to be seen whether the reform will work.",
+        "translation": "Ещё предстоит выяснить, сработает ли реформа.",
+        "examples": [
+          {
+            "text": "**It remains to be seen whether** the reform will work.",
+            "translation_ru": "Ещё предстоит выяснить, сработает ли реформа."
+          },
+          {
+            "text": "**It remains to be seen whether** they will accept the offer.",
+            "translation_ru": "Ещё предстоит выяснить, примут ли они предложение."
+          },
+          {
+            "text": "**It remains to be seen whether** the costs can be recovered.",
+            "translation_ru": "Ещё предстоит выяснить, удастся ли возместить расходы."
+          },
+          {
+            "text": "**It remains to be seen whether** the weather will improve.",
+            "translation_ru": "Ещё предстоит выяснить, улучшится ли погода."
+          },
+          {
+            "text": "**It remains to be seen whether** he will keep his promise.",
+            "translation_ru": "Ещё предстоит выяснить, сдержит ли он обещание."
+          },
+          {
+            "text": "**It remains to be seen whether** the new law will help.",
+            "translation_ru": "Ещё предстоит выяснить, поможет ли новый закон."
+          },
+          {
+            "text": "**It remains to be seen whether** the trend will continue.",
+            "translation_ru": "Ещё предстоит выяснить, продолжится ли тенденция."
+          },
+          {
+            "text": "**It remains to be seen whether** we can meet the deadline.",
+            "translation_ru": "Ещё предстоит выяснить, успеем ли мы к сроку."
+          },
+          {
+            "text": "**It remains to be seen whether** the treatment is effective.",
+            "translation_ru": "Ещё предстоит выяснить, эффективно ли лечение."
+          },
+          {
+            "text": "**It remains to be seen whether** she will return.",
+            "translation_ru": "Ещё предстоит выяснить, вернётся ли она."
+          },
+          {
+            "text": "**It remains to be seen whether** the market will stabilize.",
+            "translation_ru": "Ещё предстоит выяснить, стабилизируется ли рынок."
+          },
+          {
+            "text": "**It remains to be seen whether** any of this was worth it.",
+            "translation_ru": "Ещё предстоит выяснить, стоило ли всё это того."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es bleibt abzuwarten, ob …",
+        "example": "Es bleibt abzuwarten, ob die Reform funktionieren wird.",
+        "translation": "Ещё предстоит выяснить, сработает ли реформа.",
+        "examples": [
+          {
+            "text": "**Es bleibt abzuwarten, ob** die Reform funktionieren wird.",
+            "translation_ru": "Ещё предстоит выяснить, сработает ли реформа."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sie das Angebot annehmen werden.",
+            "translation_ru": "Ещё предстоит выяснить, примут ли они предложение."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sich die Kosten decken lassen.",
+            "translation_ru": "Ещё предстоит выяснить, удастся ли покрыть расходы."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** das Wetter besser wird.",
+            "translation_ru": "Ещё предстоит выяснить, улучшится ли погода."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** er sein Versprechen hält.",
+            "translation_ru": "Ещё предстоит выяснить, сдержит ли он обещание."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** das neue Gesetz helfen wird.",
+            "translation_ru": "Ещё предстоит выяснить, поможет ли новый закон."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sich der Trend fortsetzt.",
+            "translation_ru": "Ещё предстоит выяснить, продолжится ли тенденция."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** wir den Termin einhalten können.",
+            "translation_ru": "Ещё предстоит выяснить, успеем ли мы к сроку."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** die Behandlung wirkt.",
+            "translation_ru": "Ещё предстоит выяснить, действует ли лечение."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sie zurückkommt.",
+            "translation_ru": "Ещё предстоит выяснить, вернётся ли она."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sich der Markt stabilisiert.",
+            "translation_ru": "Ещё предстоит выяснить, стабилизируется ли рынок."
+          },
+          {
+            "text": "**Es bleibt abzuwarten, ob** sich all das gelohnt hat.",
+            "translation_ru": "Ещё предстоит выяснить, стоило ли всё это того."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "It remains to be seen whether …",
+      "Es bleibt abzuwarten, ob …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "HED003",
+    "group_id": "HED",
+    "title_ru": "There is (some) evidence that… (ссылка на доказательства)",
+    "metaphor_ru": "C1 опирается на доказательства, а не на голословные утверждения: There is growing/strong/little evidence that… По-немецки: Es gibt Hinweise darauf, dass…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "There is (some/growing/little) evidence that …",
+        "example": "There is growing evidence that sleep affects memory.",
+        "translation": "Есть всё больше доказательств того, что сон влияет на память.",
+        "examples": [
+          {
+            "text": "**There is growing evidence that** sleep affects memory.",
+            "translation_ru": "Есть всё больше доказательств того, что сон влияет на память."
+          },
+          {
+            "text": "**There is some evidence that** the method works.",
+            "translation_ru": "Есть некоторые доказательства того, что метод работает."
+          },
+          {
+            "text": "**There is little evidence that** the policy helped.",
+            "translation_ru": "Есть мало доказательств того, что политика помогла."
+          },
+          {
+            "text": "**There is strong evidence that** exercise improves mood.",
+            "translation_ru": "Есть убедительные доказательства того, что спорт улучшает настроение."
+          },
+          {
+            "text": "**There is no evidence that** he was involved.",
+            "translation_ru": "Нет доказательств того, что он был причастен."
+          },
+          {
+            "text": "**There is mounting evidence that** the climate is changing.",
+            "translation_ru": "Есть всё больше доказательств того, что климат меняется."
+          },
+          {
+            "text": "**There is clear evidence that** demand is falling.",
+            "translation_ru": "Есть явные доказательства того, что спрос падает."
+          },
+          {
+            "text": "**There is emerging evidence that** the drug is safe.",
+            "translation_ru": "Появляются доказательства того, что препарат безопасен."
+          },
+          {
+            "text": "**There is limited evidence that** the plan will succeed.",
+            "translation_ru": "Есть ограниченные доказательства того, что план сработает."
+          },
+          {
+            "text": "**There is considerable evidence that** prices are rising.",
+            "translation_ru": "Есть значительные доказательства того, что цены растут."
+          },
+          {
+            "text": "**There is scant evidence that** the change was necessary.",
+            "translation_ru": "Есть скудные доказательства того, что изменение было необходимо."
+          },
+          {
+            "text": "**Is there any evidence that** the claim is true?",
+            "translation_ru": "Есть ли какие-либо доказательства того, что утверждение верно?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es gibt (einige/wenige) Hinweise darauf, dass …",
+        "example": "Es gibt immer mehr Hinweise darauf, dass Schlaf das Gedächtnis beeinflusst.",
+        "translation": "Есть всё больше доказательств того, что сон влияет на память.",
+        "examples": [
+          {
+            "text": "**Es gibt immer mehr Hinweise darauf, dass** Schlaf das Gedächtnis beeinflusst.",
+            "translation_ru": "Есть всё больше доказательств того, что сон влияет на память."
+          },
+          {
+            "text": "**Es gibt einige Hinweise darauf, dass** die Methode funktioniert.",
+            "translation_ru": "Есть некоторые доказательства того, что метод работает."
+          },
+          {
+            "text": "**Es gibt wenige Hinweise darauf, dass** die Politik geholfen hat.",
+            "translation_ru": "Есть мало доказательств того, что политика помогла."
+          },
+          {
+            "text": "**Es gibt deutliche Hinweise darauf, dass** Sport die Stimmung verbessert.",
+            "translation_ru": "Есть явные доказательства того, что спорт улучшает настроение."
+          },
+          {
+            "text": "**Es gibt keine Hinweise darauf, dass** er beteiligt war.",
+            "translation_ru": "Нет доказательств того, что он был причастен."
+          },
+          {
+            "text": "**Es gibt zunehmend Hinweise darauf, dass** sich das Klima verändert.",
+            "translation_ru": "Есть всё больше доказательств того, что климат меняется."
+          },
+          {
+            "text": "**Es gibt klare Hinweise darauf, dass** die Nachfrage sinkt.",
+            "translation_ru": "Есть явные доказательства того, что спрос падает."
+          },
+          {
+            "text": "**Es gibt erste Hinweise darauf, dass** das Medikament sicher ist.",
+            "translation_ru": "Есть первые доказательства того, что препарат безопасен."
+          },
+          {
+            "text": "**Es gibt begrenzte Hinweise darauf, dass** der Plan gelingen wird.",
+            "translation_ru": "Есть ограниченные доказательства того, что план сработает."
+          },
+          {
+            "text": "**Es gibt erhebliche Hinweise darauf, dass** die Preise steigen.",
+            "translation_ru": "Есть значительные доказательства того, что цены растут."
+          },
+          {
+            "text": "**Es gibt kaum Hinweise darauf, dass** die Änderung nötig war.",
+            "translation_ru": "Есть скудные доказательства того, что изменение было необходимо."
+          },
+          {
+            "text": "**Gibt es Hinweise darauf, dass** die Behauptung stimmt?",
+            "translation_ru": "Есть ли доказательства того, что утверждение верно?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "There is (some/growing/little) evidence that …",
+      "Es gibt (einige/wenige) Hinweise darauf, dass …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "CHNK001",
+    "group_id": "CHNK",
+    "title_ru": "That being said / Trotzdem (уступка + контраст)",
+    "metaphor_ru": "Разговорный C1-связующий оборот: признаём, потом противопоставляем. That being said, … По-немецки: Trotzdem / Dennoch… После Dennoch — инверсия.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "That being said, …",
+        "example": "The work is hard. That being said, it's worth it.",
+        "translation": "Работа тяжёлая. При этом она того стоит.",
+        "examples": [
+          {
+            "text": "The work is hard. **That being said**, it's worth it.",
+            "translation_ru": "Работа тяжёлая. При этом она того стоит."
+          },
+          {
+            "text": "The price is high. **That being said**, the quality is excellent.",
+            "translation_ru": "Цена высокая. При этом качество отличное."
+          },
+          {
+            "text": "I disagree. **That being said**, I see your point.",
+            "translation_ru": "Я не согласен. При этом я понимаю твою точку зрения."
+          },
+          {
+            "text": "The plan is risky. **That being said**, we have few alternatives.",
+            "translation_ru": "План рискованный. При этом у нас мало альтернатив."
+          },
+          {
+            "text": "It rained all week. **That being said**, we enjoyed the trip.",
+            "translation_ru": "Всю неделю шёл дождь. При этом нам понравилась поездка."
+          },
+          {
+            "text": "The report is long. **That being said**, it's very thorough.",
+            "translation_ru": "Отчёт длинный. При этом он очень подробный."
+          },
+          {
+            "text": "He's inexperienced. **That being said**, he learns fast.",
+            "translation_ru": "У него мало опыта. При этом он быстро учится."
+          },
+          {
+            "text": "The meeting dragged on. **That being said**, we made progress.",
+            "translation_ru": "Встреча затянулась. При этом мы добились прогресса."
+          },
+          {
+            "text": "The software has bugs. **That being said**, it's improving.",
+            "translation_ru": "У программы есть ошибки. При этом она совершенствуется."
+          },
+          {
+            "text": "The exam was tough. **That being said**, most students passed.",
+            "translation_ru": "Экзамен был сложным. При этом большинство студентов сдали."
+          },
+          {
+            "text": "It's an old building. **That being said**, it has character.",
+            "translation_ru": "Это старое здание. При этом у него есть характер."
+          },
+          {
+            "text": "The deadline is tight. **That being said**, we can manage it.",
+            "translation_ru": "Срок сжатый. При этом мы справимся."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Trotzdem / Dennoch, …",
+        "example": "Die Arbeit ist hart. Trotzdem lohnt sie sich.",
+        "translation": "Работа тяжёлая. При этом она того стоит.",
+        "examples": [
+          {
+            "text": "Die Arbeit ist hart. **Trotzdem** lohnt sie sich.",
+            "translation_ru": "Работа тяжёлая. При этом она того стоит."
+          },
+          {
+            "text": "Der Preis ist hoch. **Dennoch ist** die Qualität ausgezeichnet.",
+            "translation_ru": "Цена высокая. При этом качество отличное."
+          },
+          {
+            "text": "Ich bin anderer Meinung. **Trotzdem** verstehe ich deinen Punkt.",
+            "translation_ru": "Я другого мнения. При этом я понимаю твою точку зрения."
+          },
+          {
+            "text": "Der Plan ist riskant. **Trotzdem** haben wir kaum Alternativen.",
+            "translation_ru": "План рискованный. При этом у нас почти нет альтернатив."
+          },
+          {
+            "text": "Es hat die ganze Woche geregnet. **Trotzdem** hat uns die Reise gefallen.",
+            "translation_ru": "Всю неделю шёл дождь. При этом нам понравилась поездка."
+          },
+          {
+            "text": "Der Bericht ist lang. **Dennoch ist** er sehr gründlich.",
+            "translation_ru": "Отчёт длинный. При этом он очень подробный."
+          },
+          {
+            "text": "Er ist unerfahren. **Trotzdem** lernt er schnell.",
+            "translation_ru": "У него мало опыта. При этом он быстро учится."
+          },
+          {
+            "text": "Das Meeting hat sich hingezogen. **Trotzdem** haben wir Fortschritte gemacht.",
+            "translation_ru": "Встреча затянулась. При этом мы добились прогресса."
+          },
+          {
+            "text": "Die Software hat Fehler. **Dennoch wird** sie besser.",
+            "translation_ru": "У программы есть ошибки. При этом она становится лучше."
+          },
+          {
+            "text": "Die Prüfung war schwer. **Trotzdem** haben die meisten bestanden.",
+            "translation_ru": "Экзамен был сложным. При этом большинство сдало."
+          },
+          {
+            "text": "Es ist ein altes Gebäude. **Trotzdem** hat es Charakter.",
+            "translation_ru": "Это старое здание. При этом у него есть характер."
+          },
+          {
+            "text": "Der Termin ist knapp. **Trotzdem** schaffen wir es.",
+            "translation_ru": "Срок сжатый. При этом мы справимся."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "That being said, …",
+      "Trotzdem / Dennoch, …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "CHNK002",
+    "group_id": "CHNK",
+    "title_ru": "To be fair / Fairerweise (будем справедливы)",
+    "metaphor_ru": "To be fair, … — «честно говоря / по справедливости». Смягчает критику и звучит естественно. По-немецки: Fairerweise muss man sagen, dass…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "To be fair, …",
+        "example": "To be fair, she had very little time to prepare.",
+        "translation": "Честно говоря, у неё было очень мало времени на подготовку.",
+        "examples": [
+          {
+            "text": "**To be fair**, she had very little time to prepare.",
+            "translation_ru": "Честно говоря, у неё было мало времени на подготовку."
+          },
+          {
+            "text": "**To be fair**, he did warn us about the risks.",
+            "translation_ru": "Честно говоря, он предупреждал нас о рисках."
+          },
+          {
+            "text": "**To be fair**, the team worked incredibly hard.",
+            "translation_ru": "Честно говоря, команда работала очень усердно."
+          },
+          {
+            "text": "**To be fair**, it was a difficult situation for everyone.",
+            "translation_ru": "Честно говоря, это была сложная ситуация для всех."
+          },
+          {
+            "text": "**To be fair**, the product is good value for money.",
+            "translation_ru": "Честно говоря, продукт стоит своих денег."
+          },
+          {
+            "text": "**To be fair**, nobody could have predicted this.",
+            "translation_ru": "Честно говоря, никто не мог этого предсказать."
+          },
+          {
+            "text": "**To be fair**, they apologized immediately.",
+            "translation_ru": "Честно говоря, они сразу извинились."
+          },
+          {
+            "text": "**To be fair**, the criticism was partly justified.",
+            "translation_ru": "Честно говоря, критика была отчасти справедлива."
+          },
+          {
+            "text": "**To be fair**, we also made mistakes.",
+            "translation_ru": "Честно говоря, мы тоже допустили ошибки."
+          },
+          {
+            "text": "**To be fair**, the weather ruined most of the plans.",
+            "translation_ru": "Честно говоря, погода испортила большинство планов."
+          },
+          {
+            "text": "**To be fair**, he's new to the job.",
+            "translation_ru": "Честно говоря, он новичок в этой работе."
+          },
+          {
+            "text": "**To be fair**, haven't we all done the same?",
+            "translation_ru": "Честно говоря, разве мы все не делали так же?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Fairerweise muss man sagen, dass …",
+        "example": "Fairerweise muss man sagen, dass sie sehr wenig Zeit hatte.",
+        "translation": "Честно говоря, у неё было очень мало времени.",
+        "examples": [
+          {
+            "text": "**Fairerweise muss man sagen, dass** sie sehr wenig Zeit hatte.",
+            "translation_ru": "Честно говоря, у неё было мало времени."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** er uns vor den Risiken gewarnt hat.",
+            "translation_ru": "Честно говоря, он предупреждал нас о рисках."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** das Team sehr hart gearbeitet hat.",
+            "translation_ru": "Честно говоря, команда работала очень усердно."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** es für alle eine schwierige Situation war.",
+            "translation_ru": "Честно говоря, это была сложная ситуация для всех."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** das Produkt sein Geld wert ist.",
+            "translation_ru": "Честно говоря, продукт стоит своих денег."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** das niemand vorhersehen konnte.",
+            "translation_ru": "Честно говоря, никто не мог этого предсказать."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** sie sich sofort entschuldigt haben.",
+            "translation_ru": "Честно говоря, они сразу извинились."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** die Kritik teilweise berechtigt war.",
+            "translation_ru": "Честно говоря, критика была отчасти справедлива."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** auch wir Fehler gemacht haben.",
+            "translation_ru": "Честно говоря, мы тоже допустили ошибки."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** das Wetter die meisten Pläne ruiniert hat.",
+            "translation_ru": "Честно говоря, погода испортила большинство планов."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** er neu im Job ist.",
+            "translation_ru": "Честно говоря, он новичок в этой работе."
+          },
+          {
+            "text": "**Fairerweise muss man sagen, dass** wir alle schon Ähnliches getan haben.",
+            "translation_ru": "Честно говоря, мы все уже делали нечто подобное."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "To be fair, …",
+      "Fairerweise muss man sagen, dass …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "CHNK003",
+    "group_id": "CHNK",
+    "title_ru": "At the end of the day / The thing is (подводя итог)",
+    "metaphor_ru": "Два живых разговорных оборота: At the end of the day… — «в конечном счёте», и The thing is… — «дело в том, что». По-немецки: Letztendlich… / Die Sache ist…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "At the end of the day, … / The thing is, …",
+        "example": "At the end of the day, what matters is trust.",
+        "translation": "В конечном счёте важно доверие.",
+        "examples": [
+          {
+            "text": "**At the end of the day**, what matters is trust.",
+            "translation_ru": "В конечном счёте важно доверие."
+          },
+          {
+            "text": "**The thing is**, we simply don't have the budget.",
+            "translation_ru": "Дело в том, что у нас просто нет бюджета."
+          },
+          {
+            "text": "**At the end of the day**, results speak louder than words.",
+            "translation_ru": "В конечном счёте результаты говорят громче слов."
+          },
+          {
+            "text": "**The thing is**, nobody told me about the change.",
+            "translation_ru": "Дело в том, что мне никто не сказал об изменении."
+          },
+          {
+            "text": "**At the end of the day**, it's your decision to make.",
+            "translation_ru": "В конечном счёте это твоё решение."
+          },
+          {
+            "text": "**The thing is**, I've already tried that approach.",
+            "translation_ru": "Дело в том, что я уже пробовал этот подход."
+          },
+          {
+            "text": "**At the end of the day**, we all want the same thing.",
+            "translation_ru": "В конечном счёте мы все хотим одного и того же."
+          },
+          {
+            "text": "**The thing is**, the timing couldn't be worse.",
+            "translation_ru": "Дело в том, что время не могло быть хуже."
+          },
+          {
+            "text": "**At the end of the day**, quality beats quantity.",
+            "translation_ru": "В конечном счёте качество побеждает количество."
+          },
+          {
+            "text": "**The thing is**, she never actually agreed to it.",
+            "translation_ru": "Дело в том, что она так и не согласилась."
+          },
+          {
+            "text": "**At the end of the day**, money isn't everything.",
+            "translation_ru": "В конечном счёте деньги — не всё."
+          },
+          {
+            "text": "**At the end of the day**, isn't honesty what counts?",
+            "translation_ru": "В конечном счёте разве не честность главное?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Letztendlich, … / Die Sache ist, …",
+        "example": "Letztendlich zählt das Vertrauen.",
+        "translation": "В конечном счёте важно доверие.",
+        "examples": [
+          {
+            "text": "**Letztendlich** zählt das Vertrauen.",
+            "translation_ru": "В конечном счёте важно доверие."
+          },
+          {
+            "text": "**Die Sache ist**, wir haben einfach kein Budget.",
+            "translation_ru": "Дело в том, что у нас просто нет бюджета."
+          },
+          {
+            "text": "**Letztendlich** sprechen Ergebnisse lauter als Worte.",
+            "translation_ru": "В конечном счёте результаты говорят громче слов."
+          },
+          {
+            "text": "**Die Sache ist**, niemand hat mir von der Änderung erzählt.",
+            "translation_ru": "Дело в том, что мне никто не сказал об изменении."
+          },
+          {
+            "text": "**Letztendlich** ist es deine Entscheidung.",
+            "translation_ru": "В конечном счёте это твоё решение."
+          },
+          {
+            "text": "**Die Sache ist**, ich habe diesen Ansatz schon versucht.",
+            "translation_ru": "Дело в том, что я уже пробовал этот подход."
+          },
+          {
+            "text": "**Letztendlich** wollen wir alle dasselbe.",
+            "translation_ru": "В конечном счёте мы все хотим одного и того же."
+          },
+          {
+            "text": "**Die Sache ist**, das Timing könnte nicht schlechter sein.",
+            "translation_ru": "Дело в том, что время не могло быть хуже."
+          },
+          {
+            "text": "**Letztendlich** schlägt Qualität die Quantität.",
+            "translation_ru": "В конечном счёте качество побеждает количество."
+          },
+          {
+            "text": "**Die Sache ist**, sie hat nie wirklich zugestimmt.",
+            "translation_ru": "Дело в том, что она так и не согласилась."
+          },
+          {
+            "text": "**Letztendlich** ist Geld nicht alles.",
+            "translation_ru": "В конечном счёте деньги — не всё."
+          },
+          {
+            "text": "**Letztendlich** zählt doch die Ehrlichkeit, oder?",
+            "translation_ru": "В конечном счёте главное — честность, не так ли?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "At the end of the day, … / The thing is, …",
+      "Letztendlich, … / Die Sache ist, …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "ABS001",
+    "group_id": "ABS",
+    "title_ru": "This raises a broader question about… (выход на общее)",
+    "metaphor_ru": "C1 умеет обобщать: This raises a broader question about… — «это ставит более общий вопрос». По-немецки: Das wirft die Frage auf… (aufwerfen — отделяемый глагол).",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This raises a broader question about …",
+        "example": "This raises a broader question about how we value privacy.",
+        "translation": "Это ставит более общий вопрос о том, как мы ценим приватность.",
+        "examples": [
+          {
+            "text": "**This raises a broader question about** how we value privacy.",
+            "translation_ru": "Это ставит более общий вопрос о том, как мы ценим приватность."
+          },
+          {
+            "text": "**This raises a broader question about** the role of technology.",
+            "translation_ru": "Это ставит более общий вопрос о роли технологий."
+          },
+          {
+            "text": "**This raises a broader question about** who should be responsible.",
+            "translation_ru": "Это ставит более общий вопрос о том, кто должен нести ответственность."
+          },
+          {
+            "text": "**This raises a broader question about** the meaning of progress.",
+            "translation_ru": "Это ставит более общий вопрос о смысле прогресса."
+          },
+          {
+            "text": "**This raises a broader question about** fairness in hiring.",
+            "translation_ru": "Это ставит более общий вопрос о справедливости при найме."
+          },
+          {
+            "text": "**This raises a broader question about** how we measure success.",
+            "translation_ru": "Это ставит более общий вопрос о том, как мы измеряем успех."
+          },
+          {
+            "text": "**This raises a broader question about** the limits of free speech.",
+            "translation_ru": "Это ставит более общий вопрос о границах свободы слова."
+          },
+          {
+            "text": "**This raises a broader question about** education and inequality.",
+            "translation_ru": "Это ставит более общий вопрос об образовании и неравенстве."
+          },
+          {
+            "text": "**This raises a broader question about** what we owe each other.",
+            "translation_ru": "Это ставит более общий вопрос о том, что мы должны друг другу."
+          },
+          {
+            "text": "**This raises a broader question about** the future of work.",
+            "translation_ru": "Это ставит более общий вопрос о будущем работы."
+          },
+          {
+            "text": "**This raises a broader question about** trust in institutions.",
+            "translation_ru": "Это ставит более общий вопрос о доверии к институтам."
+          },
+          {
+            "text": "**Doesn't this raise a broader question about** our priorities?",
+            "translation_ru": "Разве это не ставит более общий вопрос о наших приоритетах?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das wirft die grundsätzlichere Frage auf, …",
+        "example": "Das wirft die grundsätzlichere Frage auf, wie wir Privatsphäre bewerten.",
+        "translation": "Это ставит более общий вопрос о том, как мы ценим приватность.",
+        "examples": [
+          {
+            "text": "**Das wirft die grundsätzlichere Frage auf**, wie wir Privatsphäre bewerten.",
+            "translation_ru": "Это ставит более общий вопрос о том, как мы ценим приватность."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach der Rolle der Technologie **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о роли технологий."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage auf**, wer verantwortlich sein sollte.",
+            "translation_ru": "Это ставит более общий вопрос о том, кто должен быть ответственным."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach dem Sinn des Fortschritts **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о смысле прогресса."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach Fairness bei der Einstellung **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о справедливости при найме."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage auf**, wie wir Erfolg messen.",
+            "translation_ru": "Это ставит более общий вопрос о том, как мы измеряем успех."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach den Grenzen der Meinungsfreiheit **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о границах свободы слова."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach Bildung und Ungleichheit **auf**.",
+            "translation_ru": "Это ставит более общий вопрос об образовании и неравенстве."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage auf**, was wir einander schulden.",
+            "translation_ru": "Это ставит более общий вопрос о том, что мы должны друг другу."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach der Zukunft der Arbeit **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о будущем работы."
+          },
+          {
+            "text": "**Das wirft die grundsätzlichere Frage** nach dem Vertrauen in Institutionen **auf**.",
+            "translation_ru": "Это ставит более общий вопрос о доверии к институтам."
+          },
+          {
+            "text": "**Wirft das nicht die grundsätzlichere Frage** nach unseren Prioritäten **auf**?",
+            "translation_ru": "Разве это не ставит более общий вопрос о наших приоритетах?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "This raises a broader question about …",
+      "Das wirft die grundsätzlichere Frage auf, …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "ABS002",
+    "group_id": "ABS",
+    "title_ru": "The underlying principle is… (суть принципа)",
+    "metaphor_ru": "Формулируем принцип абстрактно: The underlying principle is that… По-немецки: Das zugrunde liegende Prinzip ist, dass…",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The underlying principle is …",
+        "example": "The underlying principle is that everyone deserves a fair chance.",
+        "translation": "Основной принцип в том, что каждый заслуживает честного шанса.",
+        "examples": [
+          {
+            "text": "**The underlying principle is** that everyone deserves a fair chance.",
+            "translation_ru": "Основной принцип в том, что каждый заслуживает честного шанса."
+          },
+          {
+            "text": "**The underlying principle is** simple: less is more.",
+            "translation_ru": "Основной принцип прост: меньше — значит больше."
+          },
+          {
+            "text": "**The underlying principle is** that prevention beats cure.",
+            "translation_ru": "Основной принцип в том, что профилактика лучше лечения."
+          },
+          {
+            "text": "**The underlying principle is** that data should drive decisions.",
+            "translation_ru": "Основной принцип в том, что решения должны опираться на данные."
+          },
+          {
+            "text": "**The underlying principle is** that trust takes time to build.",
+            "translation_ru": "Основной принцип в том, что доверие строится со временем."
+          },
+          {
+            "text": "**The underlying principle is** that clarity comes before speed.",
+            "translation_ru": "Основной принцип в том, что ясность важнее скорости."
+          },
+          {
+            "text": "**The underlying principle is** that no one is above the law.",
+            "translation_ru": "Основной принцип в том, что никто не выше закона."
+          },
+          {
+            "text": "**The underlying principle is** that feedback fuels growth.",
+            "translation_ru": "Основной принцип в том, что обратная связь питает рост."
+          },
+          {
+            "text": "**The underlying principle is** that simplicity wins.",
+            "translation_ru": "Основной принцип в том, что простота побеждает."
+          },
+          {
+            "text": "**The underlying principle is** that we learn by doing.",
+            "translation_ru": "Основной принцип в том, что мы учимся на практике."
+          },
+          {
+            "text": "**The underlying principle is** that small steps add up.",
+            "translation_ru": "Основной принцип в том, что маленькие шаги накапливаются."
+          },
+          {
+            "text": "**Is the underlying principle** really that hard to grasp?",
+            "translation_ru": "Неужели основной принцип так трудно понять?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das zugrunde liegende Prinzip ist, dass …",
+        "example": "Das zugrunde liegende Prinzip ist, dass jeder eine faire Chance verdient.",
+        "translation": "Основной принцип в том, что каждый заслуживает честного шанса.",
+        "examples": [
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** jeder eine faire Chance verdient.",
+            "translation_ru": "Основной принцип в том, что каждый заслуживает честного шанса."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist** einfach: Weniger ist mehr.",
+            "translation_ru": "Основной принцип прост: меньше — значит больше."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Vorsorge besser ist als Nachsorge.",
+            "translation_ru": "Основной принцип в том, что профилактика лучше лечения."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Entscheidungen auf Daten beruhen sollten.",
+            "translation_ru": "Основной принцип в том, что решения должны опираться на данные."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Vertrauen Zeit braucht.",
+            "translation_ru": "Основной принцип в том, что доверию нужно время."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Klarheit vor Tempo kommt.",
+            "translation_ru": "Основной принцип в том, что ясность важнее скорости."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** niemand über dem Gesetz steht.",
+            "translation_ru": "Основной принцип в том, что никто не выше закона."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Feedback das Wachstum fördert.",
+            "translation_ru": "Основной принцип в том, что обратная связь питает рост."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** Einfachheit gewinnt.",
+            "translation_ru": "Основной принцип в том, что простота побеждает."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** wir durch Tun lernen.",
+            "translation_ru": "Основной принцип в том, что мы учимся на практике."
+          },
+          {
+            "text": "**Das zugrunde liegende Prinzip ist, dass** sich kleine Schritte summieren.",
+            "translation_ru": "Основной принцип в том, что маленькие шаги накапливаются."
+          },
+          {
+            "text": "**Ist das zugrunde liegende Prinzip** wirklich so schwer zu verstehen?",
+            "translation_ru": "Неужели основной принцип так трудно понять?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "The underlying principle is …",
+      "Das zugrunde liegende Prinzip ist, dass …"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "ABS003",
+    "group_id": "ABS",
+    "title_ru": "This reflects a wider trend toward… (общая тенденция)",
+    "metaphor_ru": "Связываем частное с общим: This reflects a wider trend toward… По-немецки: Dies spiegelt einen Trend zu … wider (widerspiegeln — отделяемый).",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This reflects a wider trend toward …",
+        "example": "This reflects a wider trend toward remote work.",
+        "translation": "Это отражает более общую тенденцию к удалённой работе.",
+        "examples": [
+          {
+            "text": "**This reflects a wider trend toward** remote work.",
+            "translation_ru": "Это отражает более общую тенденцию к удалённой работе."
+          },
+          {
+            "text": "**This reflects a wider trend toward** healthier eating.",
+            "translation_ru": "Это отражает более общую тенденцию к более здоровому питанию."
+          },
+          {
+            "text": "**This reflects a wider trend toward** digital payments.",
+            "translation_ru": "Это отражает более общую тенденцию к цифровым платежам."
+          },
+          {
+            "text": "**This reflects a wider trend toward** lifelong learning.",
+            "translation_ru": "Это отражает более общую тенденцию к обучению в течение всей жизни."
+          },
+          {
+            "text": "**This reflects a wider trend toward** smaller households.",
+            "translation_ru": "Это отражает более общую тенденцию к уменьшению домохозяйств."
+          },
+          {
+            "text": "**This reflects a wider trend toward** sustainable products.",
+            "translation_ru": "Это отражает более общую тенденцию к экологичным продуктам."
+          },
+          {
+            "text": "**This reflects a wider trend toward** shorter attention spans.",
+            "translation_ru": "Это отражает более общую тенденцию к сокращению концентрации внимания."
+          },
+          {
+            "text": "**This reflects a wider trend toward** personalized services.",
+            "translation_ru": "Это отражает более общую тенденцию к персонализированным услугам."
+          },
+          {
+            "text": "**This reflects a wider trend toward** urban living.",
+            "translation_ru": "Это отражает более общую тенденцию к городской жизни."
+          },
+          {
+            "text": "**This reflects a wider trend toward** greater transparency.",
+            "translation_ru": "Это отражает более общую тенденцию к большей прозрачности."
+          },
+          {
+            "text": "**This reflects a wider trend toward** flexible working hours.",
+            "translation_ru": "Это отражает более общую тенденцию к гибкому рабочему времени."
+          },
+          {
+            "text": "**Does this reflect a wider trend toward** automation?",
+            "translation_ru": "Отражает ли это более общую тенденцию к автоматизации?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Dies spiegelt einen allgemeineren Trend zu … wider",
+        "example": "Dies spiegelt einen allgemeineren Trend zur Heimarbeit wider.",
+        "translation": "Это отражает более общую тенденцию к удалённой работе.",
+        "examples": [
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zur Heimarbeit **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к удалённой работе."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu gesünderer Ernährung **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к более здоровому питанию."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu digitalen Zahlungen **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к цифровым платежам."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zum lebenslangen Lernen **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к обучению в течение всей жизни."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu kleineren Haushalten **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к уменьшению домохозяйств."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu nachhaltigen Produkten **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к экологичным продуктам."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu kürzeren Aufmerksamkeitsspannen **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к сокращению концентрации."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu personalisierten Diensten **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к персонализированным услугам."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zum städtischen Leben **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к городской жизни."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu mehr Transparenz **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к большей прозрачности."
+          },
+          {
+            "text": "**Dies spiegelt einen allgemeineren Trend** zu flexiblen Arbeitszeiten **wider**.",
+            "translation_ru": "Это отражает более общую тенденцию к гибкому рабочему времени."
+          },
+          {
+            "text": "**Spiegelt dies einen allgemeineren Trend** zur Automatisierung **wider**?",
+            "translation_ru": "Отражает ли это более общую тенденцию к автоматизации?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "This reflects a wider trend toward …",
+      "Dies spiegelt einen allgemeineren Trend zu … wider"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "DATA001",
+    "group_id": "DATA",
+    "title_ru": "rise / grow from X to Y (описание данных)",
+    "metaphor_ru": "C1 описывает цифры точно: rise/increase/grow from X to Y. По-немецки: steigen/wachsen von X auf Y. Обратите внимание на предлог from…to / von…auf.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "increase / rise / grow from X to Y",
+        "example": "Sales rose from 10 to 15 million in a year.",
+        "translation": "Продажи выросли с 10 до 15 миллионов за год.",
+        "examples": [
+          {
+            "text": "Sales **rose from** 10 **to** 15 million in a year.",
+            "translation_ru": "Продажи выросли с 10 до 15 миллионов за год."
+          },
+          {
+            "text": "The price **increased from** $20 **to** $25.",
+            "translation_ru": "Цена выросла с 20 до 25 долларов."
+          },
+          {
+            "text": "Temperatures **climbed from** 15 **to** 28 degrees.",
+            "translation_ru": "Температура поднялась с 15 до 28 градусов."
+          },
+          {
+            "text": "The population **grew from** one **to** two million.",
+            "translation_ru": "Население выросло с одного до двух миллионов."
+          },
+          {
+            "text": "Unemployment **fell from** 8% **to** 5%.",
+            "translation_ru": "Безработица упала с 8% до 5%."
+          },
+          {
+            "text": "Profits **jumped from** 2 **to** 5 billion.",
+            "translation_ru": "Прибыль подскочила с 2 до 5 миллиардов."
+          },
+          {
+            "text": "The number of users **rose from** 100 **to** 500.",
+            "translation_ru": "Число пользователей выросло со 100 до 500."
+          },
+          {
+            "text": "Interest rates **increased from** 1% **to** 3%.",
+            "translation_ru": "Процентные ставки выросли с 1% до 3%."
+          },
+          {
+            "text": "Attendance **dropped from** 300 **to** 200 people.",
+            "translation_ru": "Посещаемость упала с 300 до 200 человек."
+          },
+          {
+            "text": "The budget **expanded from** 50 **to** 80 million.",
+            "translation_ru": "Бюджет вырос с 50 до 80 миллионов."
+          },
+          {
+            "text": "Traffic **increased from** 1,000 **to** 3,000 cars a day.",
+            "translation_ru": "Трафик вырос с 1000 до 3000 машин в день."
+          },
+          {
+            "text": "Did sales really **rise from** 10 **to** 15 million?",
+            "translation_ru": "Действительно ли продажи выросли с 10 до 15 миллионов?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "steigen / wachsen von X auf Y",
+        "example": "Die Verkäufe stiegen von 10 auf 15 Millionen in einem Jahr.",
+        "translation": "Продажи выросли с 10 до 15 миллионов за год.",
+        "examples": [
+          {
+            "text": "Die Verkäufe **stiegen von** 10 **auf** 15 Millionen in einem Jahr.",
+            "translation_ru": "Продажи выросли с 10 до 15 миллионов за год."
+          },
+          {
+            "text": "Der Preis **stieg von** 20 **auf** 25 Dollar.",
+            "translation_ru": "Цена выросла с 20 до 25 долларов."
+          },
+          {
+            "text": "Die Temperaturen **kletterten von** 15 **auf** 28 Grad.",
+            "translation_ru": "Температура поднялась с 15 до 28 градусов."
+          },
+          {
+            "text": "Die Bevölkerung **wuchs von** einer **auf** zwei Millionen.",
+            "translation_ru": "Население выросло с одного до двух миллионов."
+          },
+          {
+            "text": "Die Arbeitslosigkeit **sank von** 8% **auf** 5%.",
+            "translation_ru": "Безработица упала с 8% до 5%."
+          },
+          {
+            "text": "Die Gewinne **sprangen von** 2 **auf** 5 Milliarden.",
+            "translation_ru": "Прибыль подскочила с 2 до 5 миллиардов."
+          },
+          {
+            "text": "Die Zahl der Nutzer **stieg von** 100 **auf** 500.",
+            "translation_ru": "Число пользователей выросло со 100 до 500."
+          },
+          {
+            "text": "Die Zinsen **stiegen von** 1% **auf** 3%.",
+            "translation_ru": "Процентные ставки выросли с 1% до 3%."
+          },
+          {
+            "text": "Die Besucherzahlen **fielen von** 300 **auf** 200.",
+            "translation_ru": "Посещаемость упала с 300 до 200."
+          },
+          {
+            "text": "Das Budget **wuchs von** 50 **auf** 80 Millionen.",
+            "translation_ru": "Бюджет вырос с 50 до 80 миллионов."
+          },
+          {
+            "text": "Der Verkehr **stieg von** 1.000 **auf** 3.000 Autos pro Tag.",
+            "translation_ru": "Трафик вырос с 1000 до 3000 машин в день."
+          },
+          {
+            "text": "**Stiegen** die Verkäufe wirklich **von** 10 **auf** 15 Millionen?",
+            "translation_ru": "Действительно ли продажи выросли с 10 до 15 миллионов?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "increase / rise / grow from X to Y",
+      "steigen / wachsen von X auf Y"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "DATA002",
+    "group_id": "DATA",
+    "title_ru": "remain relatively stable / decline slightly",
+    "metaphor_ru": "Не всё резко растёт или падает. C1 описывает слабую динамику: remain relatively stable, decline slightly. По-немецки: relativ stabil bleiben / leicht zurückgehen.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "remain relatively stable / decline slightly",
+        "example": "Prices remained relatively stable throughout the year.",
+        "translation": "Цены оставались относительно стабильными в течение года.",
+        "examples": [
+          {
+            "text": "Prices **remained relatively stable** throughout the year.",
+            "translation_ru": "Цены оставались относительно стабильными в течение года."
+          },
+          {
+            "text": "Sales **declined slightly** in the second quarter.",
+            "translation_ru": "Продажи немного снизились во втором квартале."
+          },
+          {
+            "text": "The unemployment rate **remained relatively stable**.",
+            "translation_ru": "Уровень безработицы оставался относительно стабильным."
+          },
+          {
+            "text": "Demand **fell slightly** after the holiday season.",
+            "translation_ru": "Спрос немного упал после праздников."
+          },
+          {
+            "text": "Temperatures **stayed relatively stable** overnight.",
+            "translation_ru": "Температура оставалась относительно стабильной ночью."
+          },
+          {
+            "text": "The number of visitors **declined slightly** this month.",
+            "translation_ru": "Число посетителей в этом месяце немного снизилось."
+          },
+          {
+            "text": "Support for the plan **remained relatively stable**.",
+            "translation_ru": "Поддержка плана оставалась относительно стабильной."
+          },
+          {
+            "text": "Profits **dipped slightly** but recovered quickly.",
+            "translation_ru": "Прибыль немного просела, но быстро восстановилась."
+          },
+          {
+            "text": "The exchange rate **remained relatively stable**.",
+            "translation_ru": "Обменный курс оставался относительно стабильным."
+          },
+          {
+            "text": "Costs **rose slightly** over the summer.",
+            "translation_ru": "Расходы за лето немного выросли."
+          },
+          {
+            "text": "Interest in the course **stayed relatively stable**.",
+            "translation_ru": "Интерес к курсу оставался относительно стабильным."
+          },
+          {
+            "text": "Did sales really **remain relatively stable**?",
+            "translation_ru": "Действительно ли продажи оставались относительно стабильными?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "relativ stabil bleiben / leicht zurückgehen",
+        "example": "Die Preise blieben das ganze Jahr über relativ stabil.",
+        "translation": "Цены оставались относительно стабильными в течение года.",
+        "examples": [
+          {
+            "text": "Die Preise **blieben** das ganze Jahr über **relativ stabil**.",
+            "translation_ru": "Цены оставались относительно стабильными в течение года."
+          },
+          {
+            "text": "Die Verkäufe **gingen** im zweiten Quartal **leicht zurück**.",
+            "translation_ru": "Продажи немного снизились во втором квартале."
+          },
+          {
+            "text": "Die Arbeitslosenquote **blieb relativ stabil**.",
+            "translation_ru": "Уровень безработицы оставался относительно стабильным."
+          },
+          {
+            "text": "Die Nachfrage **ging** nach den Feiertagen **leicht zurück**.",
+            "translation_ru": "Спрос немного упал после праздников."
+          },
+          {
+            "text": "Die Temperaturen **blieben** über Nacht **relativ stabil**.",
+            "translation_ru": "Температура оставалась относительно стабильной ночью."
+          },
+          {
+            "text": "Die Zahl der Besucher **ging** diesen Monat **leicht zurück**.",
+            "translation_ru": "Число посетителей в этом месяце немного снизилось."
+          },
+          {
+            "text": "Die Unterstützung für den Plan **blieb relativ stabil**.",
+            "translation_ru": "Поддержка плана оставалась относительно стабильной."
+          },
+          {
+            "text": "Die Gewinne **gingen leicht zurück**, erholten sich aber schnell.",
+            "translation_ru": "Прибыль немного просела, но быстро восстановилась."
+          },
+          {
+            "text": "Der Wechselkurs **blieb relativ stabil**.",
+            "translation_ru": "Обменный курс оставался относительно стабильным."
+          },
+          {
+            "text": "Die Kosten **stiegen** über den Sommer **leicht an**.",
+            "translation_ru": "Расходы за лето немного выросли."
+          },
+          {
+            "text": "Das Interesse am Kurs **blieb relativ stabil**.",
+            "translation_ru": "Интерес к курсу оставался относительно стабильным."
+          },
+          {
+            "text": "**Blieben** die Verkäufe wirklich **relativ stabil**?",
+            "translation_ru": "Действительно ли продажи оставались относительно стабильными?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "remain relatively stable / decline slightly",
+      "relativ stabil bleiben / leicht zurückgehen"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
+  },
+  {
+    "id": "DATA003",
+    "group_id": "DATA",
+    "title_ru": "correlation does not imply causation",
+    "metaphor_ru": "Ключевой мыслительный C1-оборот: correlation does not (necessarily) imply causation — «корреляция не означает причинность». По-немецки: Korrelation bedeutet nicht zwangsläufig Kausalität.",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "correlation does not (necessarily) imply causation",
+        "example": "Correlation does not necessarily imply causation.",
+        "translation": "Корреляция не обязательно означает причинность.",
+        "examples": [
+          {
+            "text": "**Correlation does not necessarily imply causation**.",
+            "translation_ru": "Корреляция не обязательно означает причинность."
+          },
+          {
+            "text": "We must remember that **correlation does not imply causation**.",
+            "translation_ru": "Мы должны помнить, что корреляция не означает причинность."
+          },
+          {
+            "text": "Just because two things correlate does not mean one causes the other.",
+            "translation_ru": "То, что две вещи коррелируют, не значит, что одна вызывает другую."
+          },
+          {
+            "text": "The study shows a correlation, but that **does not imply causation**.",
+            "translation_ru": "Исследование показывает корреляцию, но это не означает причинность."
+          },
+          {
+            "text": "**Correlation alone does not imply causation**.",
+            "translation_ru": "Одна лишь корреляция не означает причинность."
+          },
+          {
+            "text": "It's a classic mistake to assume that correlation implies causation.",
+            "translation_ru": "Классическая ошибка — считать, что корреляция означает причинность."
+          },
+          {
+            "text": "A strong correlation **does not necessarily imply** a causal link.",
+            "translation_ru": "Сильная корреляция не обязательно означает причинную связь."
+          },
+          {
+            "text": "Ice cream sales and drowning correlate, but that **does not imply causation**.",
+            "translation_ru": "Продажи мороженого и утопления коррелируют, но это не означает причинность."
+          },
+          {
+            "text": "**Correlation does not imply causation**; a third factor may be at play.",
+            "translation_ru": "Корреляция не означает причинность; может действовать третий фактор."
+          },
+          {
+            "text": "We found a correlation, yet we cannot imply causation.",
+            "translation_ru": "Мы нашли корреляцию, но не можем утверждать причинность."
+          },
+          {
+            "text": "The correlation is striking, but **correlation does not imply causation**.",
+            "translation_ru": "Корреляция поразительна, но корреляция не означает причинность."
+          },
+          {
+            "text": "Does correlation really imply causation in this case?",
+            "translation_ru": "Действительно ли корреляция означает причинность в этом случае?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Korrelation bedeutet nicht zwangsläufig Kausalität",
+        "example": "Korrelation bedeutet nicht zwangsläufig Kausalität.",
+        "translation": "Корреляция не обязательно означает причинность.",
+        "examples": [
+          {
+            "text": "**Korrelation bedeutet nicht zwangsläufig Kausalität**.",
+            "translation_ru": "Корреляция не обязательно означает причинность."
+          },
+          {
+            "text": "Wir müssen bedenken, dass Korrelation keine Kausalität bedeutet.",
+            "translation_ru": "Мы должны помнить, что корреляция не означает причинность."
+          },
+          {
+            "text": "Nur weil zwei Dinge korrelieren, bedeutet das nicht, dass eines das andere verursacht.",
+            "translation_ru": "То, что две вещи коррелируют, не значит, что одна вызывает другую."
+          },
+          {
+            "text": "Die Studie zeigt eine Korrelation, aber das **bedeutet keine Kausalität**.",
+            "translation_ru": "Исследование показывает корреляцию, но это не означает причинность."
+          },
+          {
+            "text": "**Korrelation allein bedeutet keine Kausalität**.",
+            "translation_ru": "Одна лишь корреляция не означает причинность."
+          },
+          {
+            "text": "Es ist ein klassischer Fehler anzunehmen, dass Korrelation Kausalität bedeutet.",
+            "translation_ru": "Классическая ошибка — считать, что корреляция означает причинность."
+          },
+          {
+            "text": "Eine starke Korrelation **bedeutet nicht zwangsläufig** einen ursächlichen Zusammenhang.",
+            "translation_ru": "Сильная корреляция не обязательно означает причинную связь."
+          },
+          {
+            "text": "Eisverkauf und Ertrinken korrelieren, aber das **bedeutet keine Kausalität**.",
+            "translation_ru": "Продажи мороженого и утопления коррелируют, но это не означает причинность."
+          },
+          {
+            "text": "**Korrelation bedeutet keine Kausalität**; ein dritter Faktor kann eine Rolle spielen.",
+            "translation_ru": "Корреляция не означает причинность; может действовать третий фактор."
+          },
+          {
+            "text": "Wir fanden eine Korrelation, können aber keine Kausalität behaupten.",
+            "translation_ru": "Мы нашли корреляцию, но не можем утверждать причинность."
+          },
+          {
+            "text": "Die Korrelation ist auffällig, aber **Korrelation bedeutet keine Kausalität**.",
+            "translation_ru": "Корреляция поразительна, но корреляция не означает причинность."
+          },
+          {
+            "text": "Bedeutet Korrelation in diesem Fall wirklich Kausalität?",
+            "translation_ru": "Действительно ли корреляция означает причинность в этом случае?"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      "correlation does not (necessarily) imply causation",
+      "Korrelation bedeutet nicht zwangsläufig Kausalität"
+    ],
+    "gen": {
+      "status": "generated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-07-14T15:03:54.000Z",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "c1-readiness-batch-2"
+    }
   }
 ]

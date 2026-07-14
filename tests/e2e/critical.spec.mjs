@@ -57,7 +57,7 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
 test("English and German practice filters work", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  await expect(rows).toHaveCount(260);
+  await expect(rows).toHaveCount(284);
   await page.locator('[data-language-filter="de"]').click();
   const visible = page.locator("[data-pattern-list] > a:visible");
   await expect(visible).not.toHaveCount(0);

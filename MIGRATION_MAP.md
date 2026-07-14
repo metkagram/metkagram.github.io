@@ -3,8 +3,8 @@
 Generated from the validated source datasets. Trailing-slash variants are handled by the same Vercel route rules and redirect directly to the same final URL.
 
 - Annotated documents moved: **2240**
-- Advanced patterns moved: **260**
-- URL records: **2528**
+- Advanced patterns moved: **284**
+- URL records: **2552**
 - Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
 
 | Old URL | Exact new URL | Status | Redirect implementation / moved capability |
@@ -2527,6 +2527,30 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 | `https://metalhatscats.com/ru/metkax/AIX001` | `https://metkagram.github.io/ru/practice/aix001/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/AIX002` | `https://metkagram.github.io/ru/practice/aix002/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/AIX003` | `https://metkagram.github.io/ru/practice/aix003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/COL001` | `https://metkagram.github.io/ru/practice/col001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/COL002` | `https://metkagram.github.io/ru/practice/col002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/COL003` | `https://metkagram.github.io/ru/practice/col003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/VRB001` | `https://metkagram.github.io/ru/practice/vrb001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/VRB002` | `https://metkagram.github.io/ru/practice/vrb002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/VRB003` | `https://metkagram.github.io/ru/practice/vrb003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/REP001` | `https://metkagram.github.io/ru/practice/rep001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/REP002` | `https://metkagram.github.io/ru/practice/rep002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/REP003` | `https://metkagram.github.io/ru/practice/rep003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/EMP001` | `https://metkagram.github.io/ru/practice/emp001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/EMP002` | `https://metkagram.github.io/ru/practice/emp002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/EMP003` | `https://metkagram.github.io/ru/practice/emp003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/HED001` | `https://metkagram.github.io/ru/practice/hed001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/HED002` | `https://metkagram.github.io/ru/practice/hed002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/HED003` | `https://metkagram.github.io/ru/practice/hed003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/CHNK001` | `https://metkagram.github.io/ru/practice/chnk001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/CHNK002` | `https://metkagram.github.io/ru/practice/chnk002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/CHNK003` | `https://metkagram.github.io/ru/practice/chnk003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/ABS001` | `https://metkagram.github.io/ru/practice/abs001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/ABS002` | `https://metkagram.github.io/ru/practice/abs002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/ABS003` | `https://metkagram.github.io/ru/practice/abs003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/DATA001` | `https://metkagram.github.io/ru/practice/data001/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/DATA002` | `https://metkagram.github.io/ru/practice/data002/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/DATA003` | `https://metkagram.github.io/ru/practice/data003/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/products/metkagram` | `https://metkagram.github.io/en/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/apps/metkagram` | `https://metkagram.github.io/en/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/products/metkagram/privacy` | `https://metkagram.github.io/en/legal/privacy/` | ready | Vercel permanent framework redirect |

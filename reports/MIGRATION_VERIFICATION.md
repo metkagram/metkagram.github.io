@@ -1,10 +1,10 @@
 # Migration verification
 
-- Generated routes: **5045**
+- Generated routes: **5093**
 - Annotated documents: **2240**
 - Annotated sentences: **25116**
-- Advanced B2–C1 patterns: **260**
-- Redirect records: **2528**
+- Advanced B2–C1 patterns: **284**
+- Redirect records: **2552**
 - Trailing-slash policy: directory URLs with trailing slash
 - Progress compatibility: metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added
 
@@ -18,7 +18,7 @@
 - MetalHatsCats lint: pass with 11 pre-existing Konturo warnings and no errors
 - MetalHatsCats typecheck: pass
 - MetalHatsCats production build: pass
-- MetalHatsCats migration validator: **2526 old URLs mapped**
+- MetalHatsCats migration validator: **2550 old URLs mapped**
 - Live Pages routes and assets: pass
 - Live slash/non-slash redirects: direct 308 pass
 - Live SRS preflight CORS: 204 pass
