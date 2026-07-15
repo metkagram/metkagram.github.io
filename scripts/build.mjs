@@ -88,18 +88,6 @@ function buildRedirectManifest(content) {
   add("/datasets/metkagram-library", `${SITE_URL}/en/explore/`);
   add("/datasets/metkagram-library/download", `${SITE_URL}/data/catalog.json`);
   add("/datasets/metkagram-library/schema", `${SITE_URL}/data/schema.json`);
-  redirects.push({
-    source: "/ru/metkax/transfer-progress",
-    destination: "/ru/metkax/transfer-progress",
-    status: "retained temporarily",
-    implementation: "MetalHatsCats client-side localStorage export utility"
-  });
-  redirects.push({
-    source: "/api/metkax/srs",
-    destination: "/api/metkax/srs",
-    status: "retained compatibility service",
-    implementation: "Vercel API with CORS restricted to the Metkagram origin"
-  });
   return redirects;
 }
 
@@ -112,7 +100,7 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 - Annotated documents moved: **${counts.annotatedDocuments}**
 - Advanced patterns moved: **${counts.advancedPatterns}**
 - URL records: **${redirects.length}**
-- Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
+- Redirect policy: permanent 308 at the MetalHatsCats framework layer. Progress is local-first and can be moved with JSON export/import.
 
 | Old URL | Exact new URL | Status | Redirect implementation / moved capability |
 |---|---|---|---|

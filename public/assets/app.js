@@ -1,9 +1,9 @@
-import { CODE_PATTERN, dueIds, loadCode, loadProgress, mergeStates, normalizeEnvelope, progressStats, saveCode, saveProgress, scheduleReview } from "./srs-core.js";
+import { dueIds, loadProgress, mergeStates, normalizeEnvelope, progressStats, saveProgress, scheduleReview } from "./srs-core.js";
 
 const locale = document.documentElement.lang === "ru" ? "ru" : "en";
 const copy = {
-  en: { reviewSaved: "Review saved.", counter: "due", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", syncDone: "Progress synchronized.", syncError: "Synchronization failed. Your local progress is safe.", syncWorking: "Synchronizing…", invalidCode: "Use 3–64 letters, numbers, - or _.", days: "days", due: "Due", yes: "yes", no: "no", showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
-  ru: { reviewSaved: "Повторение сохранено.", counter: "к повторению", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", syncDone: "Прогресс синхронизирован.", syncError: "Не удалось синхронизировать. Локальный прогресс сохранён.", syncWorking: "Идёт синхронизация…", invalidCode: "Используйте 3–64 буквы, цифры, - или _.", days: "дней", due: "Сейчас", yes: "да", no: "нет", showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
+  en: { reviewSaved: "Review saved.", counter: "due", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", days: "days", due: "Due", yes: "yes", no: "no", showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
+  ru: { reviewSaved: "Повторение сохранено.", counter: "к повторению", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", days: "дней", due: "Сейчас", yes: "да", no: "нет", showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
 }[locale];
 
 function setupMenu() {
@@ -190,22 +190,6 @@ function downloadProgress() {
   URL.revokeObjectURL(link.href);
 }
 
-async function syncProgress(endpoint, code, status) {
-  status.textContent = copy.syncWorking;
-  try {
-    const getResponse = await fetch(`${endpoint}?code=${encodeURIComponent(code)}`, { cache: "no-store" });
-    const remote = getResponse.ok ? (await getResponse.json()).payload || {} : {};
-    const merged = mergeStates(loadProgress(), remote);
-    const postResponse = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code, payload: merged }) });
-    if (!postResponse.ok) throw new Error("sync failed");
-    saveProgress(merged);
-    status.textContent = copy.syncDone;
-    document.dispatchEvent(new CustomEvent("metkagram:progress"));
-  } catch {
-    status.textContent = copy.syncError;
-  }
-}
-
 async function setupProgressPage() {
   const page = document.querySelector("[data-progress-page]");
   if (!page) return;
@@ -234,21 +218,6 @@ async function setupProgressPage() {
     }));
     page.querySelector("[data-progress-empty]").hidden = states.length > 0;
   };
-  const codeInput = page.querySelector("[data-sync-code]");
-  const status = page.querySelector("[data-sync-status]");
-  codeInput.value = loadCode();
-  page.querySelector("[data-save-code]").addEventListener("click", () => {
-    if (!CODE_PATTERN.test(codeInput.value.trim())) { status.textContent = copy.invalidCode; return; }
-    saveCode(codeInput.value);
-    status.textContent = copy.syncDone;
-  });
-  page.querySelector("[data-sync-now]").addEventListener("click", () => {
-    const code = codeInput.value.trim();
-    if (!CODE_PATTERN.test(code)) { status.textContent = copy.invalidCode; return; }
-    saveCode(code);
-    const endpoint = document.querySelector('meta[name="metkagram-sync-endpoint"]')?.content;
-    syncProgress(endpoint, code, status);
-  });
   page.querySelector("[data-export-progress]").addEventListener("click", downloadProgress);
   const importInput = page.querySelector("[data-import-progress]");
   const importStatus = page.querySelector("[data-import-status]");

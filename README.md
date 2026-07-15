@@ -34,7 +34,7 @@ The workflow at `.github/workflows/deploy-pages.yml` builds and validates the si
 
 Repository settings must use **GitHub Actions** as the Pages source. This is an organization/user Pages repository, so assets are rooted at `/`; no repository-name base path is used.
 
-No secrets are required by the static site. Progress synchronization calls the retained MetalHatsCats compatibility API from the browser. The API allows only the production Metkagram origin and keeps existing sync codes compatible.
+No secrets or server APIs are required by the static site. Progress is local-first; users can move it between devices with JSON export and import.
 
 ## License
 
@@ -54,11 +54,8 @@ The generator produces stable public exports at `/data/collections/{en,de}/{coll
 
 ## Progress migration
 
-The client reads and writes the legacy keys `metkax:srs:v1` and `metkax:srs:code`, while also maintaining the versioned keys `metkagram:progress:v2` and `metkagram:sync-code:v2`.
+The client reads the legacy `metkax:srs:v1` key and maintains the versioned `metkagram:progress:v2` key.
 
-Users can migrate in either way:
-
-1. Enter an existing synchronization code on `/en/progress/` or `/ru/progress/`; or
-2. export JSON from the temporary MetalHatsCats `/ru/metkax/transfer-progress` utility and import it on the new progress page.
+Users can export a JSON backup on one device and import it on `/en/progress/` or `/ru/progress/` on another device.
 
 See [MIGRATION_MAP.md](MIGRATION_MAP.md), [ARCHITECTURE.md](ARCHITECTURE.md), and [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).

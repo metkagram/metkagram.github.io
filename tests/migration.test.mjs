@@ -19,7 +19,7 @@ test("every migrated old URL is unique and mapped", () => {
   assert.ok(sources.includes("/metkagram/en/dialogues"));
   assert.ok(sources.includes("/metkagram/de/library"));
   assert.ok(sources.includes("/ru/metkax/CON001"));
-  assert.equal(redirects.filter((redirect) => redirect.status === "ready").length, redirects.length - 2);
+  assert.equal(redirects.filter((redirect) => redirect.status === "ready").length, redirects.length);
 });
 
 test("all new-domain redirect targets exist", () => {

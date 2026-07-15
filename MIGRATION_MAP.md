@@ -4,8 +4,8 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 
 - Annotated documents moved: **2240**
 - Advanced patterns moved: **284**
-- URL records: **2552**
-- Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
+- URL records: **2550**
+- Redirect policy: permanent 308 at the MetalHatsCats framework layer. Progress is local-first and can be moved with JSON export/import.
 
 | Old URL | Exact new URL | Status | Redirect implementation / moved capability |
 |---|---|---|---|
@@ -2559,5 +2559,3 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 | `https://metalhatscats.com/datasets/metkagram-library` | `https://metkagram.github.io/en/explore/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/datasets/metkagram-library/download` | `https://metkagram.github.io/data/catalog.json` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/datasets/metkagram-library/schema` | `https://metkagram.github.io/data/schema.json` | ready | Vercel permanent framework redirect |
-| `https://metalhatscats.com/ru/metkax/transfer-progress` | `https://metalhatscats.com/ru/metkax/transfer-progress` | retained temporarily | MetalHatsCats client-side localStorage export utility |
-| `https://metalhatscats.com/api/metkax/srs` | `https://metalhatscats.com/api/metkax/srs` | retained compatibility service | Vercel API with CORS restricted to the Metkagram origin |

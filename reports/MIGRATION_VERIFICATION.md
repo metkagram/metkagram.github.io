@@ -4,7 +4,7 @@
 - Annotated documents: **2240**
 - Annotated sentences: **25116**
 - Advanced B2–C1 patterns: **284**
-- Redirect records: **2552**
+- Redirect records: **2550**
 - Trailing-slash policy: directory URLs with trailing slash
 - Progress compatibility: metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added
 

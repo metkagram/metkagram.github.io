@@ -17,7 +17,7 @@ const failures = [];
 const oldRoutePattern = /https:\/\/metalhatscats\.com\/(?:metkagram|ru\/metkax)(?:\/|["'])/i;
 for (const file of htmlFiles.sort()) {
   const html = fs.readFileSync(file, "utf8");
-  if (oldRoutePattern.test(html) && !html.includes("https://metalhatscats.com/ru/metkax/transfer-progress")) {
+  if (oldRoutePattern.test(html)) {
     failures.push(`${path.relative(DIST, file)}: points to an obsolete MetalHatsCats product route`);
   }
   const links = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((match) => match[1]);

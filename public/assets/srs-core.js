@@ -1,9 +1,6 @@
 export const LEGACY_STATE_KEY = "metkax:srs:v1";
-export const LEGACY_CODE_KEY = "metkax:srs:code";
 export const STATE_KEY = "metkagram:progress:v2";
-export const CODE_KEY = "metkagram:sync-code:v2";
 export const SCHEMA_VERSION = 2;
-export const CODE_PATTERN = /^[a-zA-Z0-9_-]{3,64}$/;
 
 export function emptyState(id) {
   return { id, reps: 0, ease: 2.5, interval: 0, last: 0, next: 0, history: [] };
@@ -71,18 +68,6 @@ export function saveProgress(records, storage = window.localStorage) {
   storage.setItem(STATE_KEY, JSON.stringify(envelope));
   storage.setItem(LEGACY_STATE_KEY, JSON.stringify(records));
   return envelope;
-}
-
-export function loadCode(storage = window.localStorage) {
-  return storage.getItem(CODE_KEY) || storage.getItem(LEGACY_CODE_KEY) || "";
-}
-
-export function saveCode(code, storage = window.localStorage) {
-  const trimmed = code.trim();
-  if (!CODE_PATTERN.test(trimmed)) throw new Error("invalid sync code");
-  storage.setItem(CODE_KEY, trimmed);
-  storage.setItem(LEGACY_CODE_KEY, trimmed);
-  return trimmed;
 }
 
 export function dueIds(ids, records, timestamp = Date.now()) {

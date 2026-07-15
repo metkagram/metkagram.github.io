@@ -9,9 +9,8 @@ Metkagram uses a small Node.js static generator instead of a client-only SPA or 
 1. **Canonical content** — source JSON in `data/` holds all English/German annotated documents and advanced patterns. Interface translations are separate in `src/i18n.mjs`.
 2. **Validation and loading** — `src/content.mjs` checks required identifiers, titles, annotations, learning-language records, uniqueness and index/document parity. Invalid records fail the build.
 3. **Static rendering** — `src/render.mjs` owns shared layout, localized navigation, metadata, hreflang, structured data and every page type. `scripts/build.mjs` writes directory-style URLs to `dist/`.
-4. **Progressive enhancement** — `public/assets/app.js` adds filters, mobile navigation, SRS review, progress, sync and export/import. Core content and links remain useful without JavaScript.
-5. **Persistence** — `public/assets/srs-core.js` preserves the MetkaX scheduling algorithm and legacy keys, adds a version-2 export envelope, and merges sync snapshots by the most recent review timestamp.
-6. **Compatibility backend** — GitHub Pages hosts no server functions. Existing sync codes continue through the retained `https://metalhatscats.com/api/metkax/srs` Vercel API with production-origin CORS.
+4. **Progressive enhancement** — `public/assets/app.js` adds filters, mobile navigation, SRS review, and JSON export/import. Core content and links remain useful without JavaScript.
+5. **Persistence** — `public/assets/srs-core.js` preserves the MetkaX scheduling algorithm and legacy progress key, then stores the version-2 export envelope locally.
 
 ## URL policy
 
@@ -39,9 +38,4 @@ GitHub Actions validates and builds, uploads `dist/`, then deploys through `acti
 
 ## Migration boundary
 
-MetalHatsCats keeps only two intentionally scoped MetkaX surfaces:
-
-- the SRS compatibility API, because static hosting cannot replace it;
-- the temporary transfer page, because localStorage is origin-bound.
-
-All product pages and generation/admin routes move out or are removed. The old site supplies permanent, direct redirects from every public content URL to its closest new route.
+MetalHatsCats keeps no MetkaX application surface. The old site supplies permanent, direct redirects from every public URL to its closest new route; progress remains portable through JSON export/import.
