@@ -72,21 +72,16 @@ summary { cursor: pointer; }
 .section-heading { display: grid; grid-template-columns: minmax(8rem, 1fr) 3fr; gap: 2rem; }
 .section-heading h2 { max-width: 14ch; }
 
-.home-hero { display: grid; align-content: center; min-height: min(43rem, calc(100svh - 4rem)); padding-block: clamp(2.5rem, 7vw, 6rem); }
-.home-intro { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(19rem, .95fr); gap: clamp(2.5rem, 9vw, 10rem); align-items: center; width: 100%; }
+.home-hero { display: grid; align-content: center; min-height: min(38rem, calc(100svh - 4rem)); padding-block: clamp(3rem, 9vw, 8rem); }
+.home-intro { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(17rem, .75fr); gap: clamp(2.5rem, 12vw, 14rem); align-items: end; width: 100%; }
 .home-copy { max-width: 43rem; }
-.home-intro h1 { max-width: 11ch; margin-bottom: clamp(1.5rem, 3vw, 2.35rem); font-size: clamp(3.1rem, 6.1vw, 6.4rem); line-height: .96; }
-.home-kicker { max-width: 25ch; margin-bottom: .8rem; font-size: clamp(1.15rem, 1.9vw, 1.5rem); font-weight: 550; line-height: 1.25; }
-.home-copy .lede { margin-bottom: 1.8rem; }
-.home-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.15rem 2rem; }
+.home-intro h1 { max-width: 9ch; margin: 0; font-size: clamp(3.25rem, 6.1vw, 6rem); line-height: .93; }
+.home-links { display: grid; width: min(100%, 23rem); border-top: 1px solid var(--line-dark); }
+.home-links a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.7rem; padding: .7rem 0; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: .78rem; font-weight: 600; text-decoration: none; transition: padding 150ms ease, background-color 150ms ease; }
+.home-links a:not(.primary-link):hover { padding-inline: .65rem; background: var(--surface); }
+.home-links .primary-link { width: 100%; border: 0; border-bottom: 1px solid var(--ink); }
 .primary-link { display: inline-flex; align-items: center; justify-content: space-between; min-width: min(100%, 18rem); padding: .9rem 1.05rem; border: 1px solid var(--ink); background: var(--brand); font-family: var(--mono); font-size: .78rem; font-weight: 700; text-decoration: none; transition: background-color 150ms ease, transform 150ms ease; }
 .primary-link:hover { background: var(--surface); transform: translateY(-2px); }
-.home-specimen { position: relative; margin: 0; padding: clamp(2.6rem, 6vw, 5.5rem) clamp(1.1rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.6rem); border-block: 1px solid var(--line-dark); }
-.home-specimen::before { content: ""; position: absolute; inset: 0 0 auto; height: 4px; background: var(--brand); }
-.home-specimen figcaption { position: absolute; top: 1rem; left: 0; color: var(--muted); font-family: var(--mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; }
-.home-specimen .sentence-stage { padding: 0; border: 0; }
-.home-specimen .sentence-stage::before { display: none; }
-.home-specimen .annotated-line { font-size: clamp(1.45rem, 3.2vw, 3.05rem); line-height: 1.75; }
 .home-method { display: grid; grid-template-columns: minmax(14rem, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 8vw, 8rem); align-items: start; }
 .home-method h2 { max-width: 10ch; font-size: clamp(1.9rem, 3.4vw, 3.5rem); }
 .home-method ol { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 2rem; margin: 2.25rem 0 1.75rem; padding: 0; list-style: none; border-top: 1px solid var(--line-dark); }
@@ -335,7 +330,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .site-nav[data-open="true"] { display: flex; }
   .home-hero { min-height: auto; }
   .home-intro, .section-heading, .method-strip, .progress-grid, .gateway > div, .home-method, .study-language { grid-template-columns: 1fr; }
-  .home-intro { gap: 2.5rem; }
+  .home-intro { gap: 2.5rem; align-items: start; }
   .home-method ol { grid-template-columns: 1fr; }
   .home-method li, .home-method li + li { min-height: auto; padding: 1rem 0; border-left: 0; }
   .home-method li span { margin-bottom: .6rem; }
@@ -380,6 +375,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .site-footer > p:last-child { grid-column: auto; }
   .gateway { padding: 1rem; }
   .home-intro h1 { font-size: clamp(2.65rem, 13vw, 3.9rem); }
+  .home-links { width: 100%; }
   .primary-link { width: 100%; }
   .study-language .language-choices { grid-column: auto; }
   .tag-tooltip { left: min(-2rem, 0px); width: min(18rem, 82vw); }
