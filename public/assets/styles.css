@@ -369,9 +369,9 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
 .gateway-body { min-height: 100svh; }
 .gateway { display: grid; grid-template-rows: auto 1fr auto; width: min(100%, 76rem); min-height: 100svh; margin-inline: auto; padding: clamp(1rem, 3vw, 2.5rem); }
 .gateway > .wordmark { padding-bottom: 1rem; border-bottom: 1px solid var(--line-dark); }
-.gateway > div { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 7vw, 7rem); align-items: center; padding-block: 2rem; }
-.gateway .sentence-stage { grid-row: 1 / span 4; }
+.gateway > div { display: grid; align-content: center; max-width: 56rem; padding-block: clamp(3rem, 10vw, 8rem); }
 .gateway h1 { max-width: 12ch; font-size: clamp(2.3rem, 5vw, 4.8rem); }
+.gateway .lede { margin-bottom: 2.25rem; }
 .gateway nav { display: grid; }
 .gateway nav a { display: flex; justify-content: space-between; padding: 1rem 0; border-top: 1px solid var(--line); text-decoration: none; }
 .gateway nav a:last-child { border-bottom: 1px solid var(--line); }
