@@ -38,9 +38,9 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
   assert.match(en, /<html lang="en">/);
   assert.match(en, /See the structure\. Use the phrase\./);
-  assert.doesNotMatch(en, /Понимайте структуру\. Говорите фразами\./);
+  assert.doesNotMatch(en, /Читайте фразы\. Замечайте структуру\./);
   assert.match(ru, /<html lang="ru">/);
-  assert.match(ru, /Понимайте структуру\. Говорите фразами\./);
+  assert.match(ru, /Читайте фразы\. Замечайте структуру\./);
   assert.doesNotMatch(ru, /See the structure\. Use the phrase\./);
 });
 
@@ -48,6 +48,30 @@ test("localized route switch preserves path context", () => {
   const file = path.join(DIST, "en/explore/german/dialogues/index.html");
   const html = fs.readFileSync(file, "utf8");
   assert.match(html, /href="\/ru\/explore\/german\/dialogues\/" lang="ru"/);
+});
+
+test("English and German tag guides are sentence-first and grouped by purpose", () => {
+  const english = fs.readFileSync(path.join(DIST, "en/explore/english/annotation-rules/index.html"), "utf8");
+  const german = fs.readFileSync(path.join(DIST, "ru/explore/german/annotation-rules/index.html"), "utf8");
+  assert.match(english, /<h1>How to read English tags<\/h1>/);
+  assert.match(english, /Sentence first, tags second/);
+  assert.match(english, /class="rule-group rule-group-subject"/);
+  assert.match(english, /class="rule-group rule-group-helper"/);
+  assert.match(german, /<h1>Как читать разметку немецких фраз<\/h1>/);
+  assert.match(german, /Винительный падеж/);
+  assert.match(german, /Модальный глагол/);
+});
+
+test("method routes keep the learning loop and annotation readable without JavaScript", () => {
+  const en = fs.readFileSync(path.join(DIST, "en/method/index.html"), "utf8");
+  const ru = fs.readFileSync(path.join(DIST, "ru/method/index.html"), "utf8");
+  assert.match(en, /Sentence → Signal → Structure → Pattern → Variation → Recall/);
+  assert.match(en, /What is original about Metkagram\?/);
+  assert.match(en, /spaced repetition\?/);
+  assert.match(en, /role="tooltip"/);
+  assert.match(en, /aria-describedby="method-tag-/);
+  assert.match(ru, /В чём ноу-хау Metkagram\?/);
+  assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
 test("canonical, hreflang and sitemap use the production Pages origin", () => {

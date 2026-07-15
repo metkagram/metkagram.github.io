@@ -28,9 +28,9 @@ test("home keeps the interface switch in the header and leads into a study langu
 
 test("method page explains the learning loop and names its research sources", async ({ page }) => {
   await page.goto("/en/method/");
-  await expect(page.getByRole("heading", { name: "A learning loop, not a rulebook." })).toBeVisible();
-  await expect(page.getByText("Tags are not a shortcut around practice")).toBeVisible();
-  await expect(page.getByRole("link", { name: "Retrieval practice and long-term learning" })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
+  await expect(page.getByRole("heading", { name: "Sentence → Signal → Structure → Pattern → Variation → Recall" })).toBeVisible();
+  await expect(page.getByText("These mechanisms support the design logic")).toBeVisible();
+  await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
 test("mobile app and legal pages expose store and policy links", async ({ page }) => {
