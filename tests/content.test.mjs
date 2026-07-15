@@ -42,6 +42,10 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.match(ru, /<html lang="ru">/);
   assert.match(ru, /Читайте фразы\. Замечайте структуру\./);
   assert.doesNotMatch(ru, /See the structure\. Use the phrase\./);
+  assert.match(en, /Open to thoughtful collaborations\./);
+  assert.match(ru, /Открыты к содержательным коллаборациям\./);
+  assert.match(en, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.metkagram\.android/);
+  assert.match(en, /https:\/\/apps\.apple\.com\/us\/app\/grammar-cards-ai-tutor\/id6502211918/);
 });
 
 test("localized route switch preserves path context", () => {

@@ -51,6 +51,22 @@ function setupTagRules() {
   });
 }
 
+function setupAnnotationMode() {
+  const controls = document.querySelector("[data-annotation-controls]");
+  if (!controls) return;
+  const buttons = [...controls.querySelectorAll("[data-annotation-mode]")];
+  const details = [...document.querySelectorAll("[data-annotation-details]")];
+  const copy = controls.querySelector("[data-annotation-mode-copy]");
+  const messages = { reading: controls.dataset.readingCopy, study: controls.dataset.studyCopy };
+  const setMode = (mode) => {
+    const studying = mode === "study";
+    details.forEach((item) => { item.open = studying; });
+    buttons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.annotationMode === mode)));
+    if (copy) copy.textContent = messages[mode];
+  };
+  buttons.forEach((button) => button.addEventListener("click", () => setMode(button.dataset.annotationMode)));
+}
+
 function setupCollectionSearch() {
   const input = document.querySelector("[data-collection-search]");
   const list = document.querySelector("[data-collection-list]");
@@ -271,6 +287,7 @@ async function setupProgressPage() {
 setupMenu();
 setupLocaleSuggestion();
 setupTagRules();
+setupAnnotationMode();
 setupCollectionSearch();
 setupPatternFilters();
 setupInlineReview();

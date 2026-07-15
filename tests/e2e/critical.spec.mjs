@@ -16,6 +16,10 @@ test("home keeps the interface switch in the header and leads into a study langu
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Choose a language to study", exact: true })).toHaveAttribute("href", "/en/explore/");
   await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
+  await expect(page.getByRole("heading", { name: "Open to thoughtful collaborations." })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "https://metalhatscats.com/contact");
+  await expect(page.locator(".home-store-links").getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
+  await expect(page.locator(".home-store-links").getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
   if (testInfo.project.name === "desktop") {
     const layout = await page.locator(".home-method ol").evaluate((list) => ({
       columns: getComputedStyle(list).gridTemplateColumns.split(" ").length,
@@ -41,6 +45,18 @@ test("mobile app and legal pages expose store and policy links", async ({ page }
   await page.getByRole("link", { name: "Privacy Policy" }).first().click();
   await expect(page).toHaveURL(/\/en\/legal\/privacy\/$/);
   await expect(page.getByRole("heading", { name: "Privacy Policy" })).toBeVisible();
+});
+
+test("document reading mode can reveal explanations for the whole set", async ({ page }) => {
+  await page.goto("/ru/explore/german/dialogues/hgq8uVS1vaEM9KsnC8zC/");
+  const details = page.locator("[data-annotation-details]");
+  await expect(details.first()).not.toHaveAttribute("open", "");
+  await page.getByRole("button", { name: "Показать разбор" }).click();
+  await expect(details).toHaveCount(11);
+  await expect(details.first()).toHaveAttribute("open", "");
+  await expect(details.nth(10)).toHaveAttribute("open", "");
+  await page.getByRole("button", { name: "Читать фразы" }).click();
+  await expect(details.first()).not.toHaveAttribute("open", "");
 });
 
 test("grammar tags expose a readable rule on click and keyboard focus", async ({ page }) => {
