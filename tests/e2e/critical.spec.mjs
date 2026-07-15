@@ -10,10 +10,11 @@ test("English and Russian interfaces stay separate and locale switch preserves c
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Диалоги");
 });
 
-test("root landing starts with a clear title instead of an annotated sample", async ({ page }) => {
+test("root landing starts with a phrase-first title instead of an annotated sample", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Read the phrase. Notice the pattern." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Language lives in phrases." })).toBeVisible();
   await expect(page.locator(".gateway .sentence-stage")).toHaveCount(0);
+  await expect(page.locator(".gateway-sentence p")).toHaveAttribute("aria-label", "I want to make this phrase mine.");
   await expect(page.getByRole("link", { name: /Русский/ })).toHaveAttribute("href", "/ru/");
 });
 
