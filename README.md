@@ -1,6 +1,6 @@
 # Metkagram
 
-Metkagram is a bilingual, static language-notation workspace. The interface is available in English and Russian; English and German are independent learning-language filters. It combines 2,240 annotated Metkagram documents with 236 B2–C1 patterns and the original MetkaX spaced-repetition model.
+Metkagram is a bilingual, static language-notation workspace. The interface is available in English and Russian; English and German are independent learning-language filters. It has two clear learning modes: **Annotated Language / Аннотированные фразы** for sentence-first inline grammar annotation, and **Pattern Practice / Практика паттернов** for more than 1,000 reusable B2–C1 English/German patterns organised into study sets and learning paths. It retains the original MetkaX spaced-repetition model and progress compatibility.
 
 Production: [https://metkagram.github.io](https://metkagram.github.io)
 
@@ -46,7 +46,10 @@ Canonical source files are under `data/`:
 
 - `data/metkagram-export/{enGram,deGram}/{dialogues,patterns,library}/documents.json`
 - matching `data.json` collection indexes;
-- `data/advanced-patterns.json` for B2–C1 practice.
+- `data/advanced-patterns.json` for complete B2–C1 practice records.
+- `data/study-sets.json` for named study sets and learning paths.
+
+`src/content.mjs` validates the public curriculum at build time: at least 1,000 patterns, unique IDs and formulas, complete English/German formulas and examples with Russian translations, valid set membership, non-empty study sets, and legacy progress-safe routes.
 
 Update source JSON, run `npm run verify`, inspect `reports/MIGRATION_VERIFICATION.md`, and commit both the source change and any updated migration documentation. Do not edit `dist/`; GitHub Actions regenerates it.
 

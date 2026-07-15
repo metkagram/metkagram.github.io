@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "learningPaths": [
+    {
+      "id": "C1-COMMUNICATE",
+      "title_en": "C1 Communication",
+      "title_ru": "Коммуникация C1",
+      "set_ids": [
+        "ARG",
+        "OPI",
+        "EVD",
+        "AGR",
+        "HED",
+        "PRB",
+        "CLR",
+        "CMP",
+        "CAU",
+        "NEG"
+      ]
+    },
+    {
+      "id": "C1-CONTROL",
+      "title_en": "C1 Control",
+      "title_ru": "Контроль C1",
+      "set_ids": [
+        "PRO",
+        "STO",
+        "LNK",
+        "CND",
+        "MOD",
+        "PSV",
+        "REP",
+        "TAS",
+        "QNN",
+        "DGR"
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "id": "ARG",
+      "title_en": "Argumentation",
+      "title_ru": "Аргументация",
+      "description": "Build and test a line of reasoning.",
+      "level": "B2–C1",
+      "path": "ARG"
+    },
+    {
+      "id": "OPI",
+      "title_en": "Opinions and stance",
+      "title_ru": "Мнение и позиция",
+      "description": "State a position with the right degree of commitment.",
+      "level": "B2–C1",
+      "path": "OPI"
+    },
+    {
+      "id": "EVD",
+      "title_en": "Evidence and inference",
+      "title_ru": "Доказательства и выводы",
+      "description": "Connect a claim to evidence without overclaiming.",
+      "level": "B2–C1",
+      "path": "EVD"
+    },
+    {
+      "id": "AGR",
+      "title_en": "Agreement and disagreement",
+      "title_ru": "Согласие и несогласие",
+      "description": "Respond constructively to another view.",
+      "level": "B2–C1",
+      "path": "AGR"
+    },
+    {
+      "id": "HED",
+      "title_en": "Qualification and hedging",
+      "title_ru": "Оговорки и смягчение",
+      "description": "Make precise, proportionate claims.",
+      "level": "B2–C1",
+      "path": "HED"
+    },
+    {
+      "id": "PRB",
+      "title_en": "Probability and prediction",
+      "title_ru": "Вероятность и прогноз",
+      "description": "Discuss likelihood, risk, and uncertainty.",
+      "level": "B2–C1",
+      "path": "PRB"
+    },
+    {
+      "id": "CLR",
+      "title_en": "Clarification and reformulation",
+      "title_ru": "Уточнение и переформулирование",
+      "description": "Repair and sharpen meaning in conversation.",
+      "level": "B2–C1",
+      "path": "CLR"
+    },
+    {
+      "id": "CMP",
+      "title_en": "Comparison and evaluation",
+      "title_ru": "Сравнение и оценка",
+      "description": "Compare options using nuanced criteria.",
+      "level": "B2–C1",
+      "path": "CMP"
+    },
+    {
+      "id": "CAU",
+      "title_en": "Cause, effect, and consequence",
+      "title_ru": "Причина, следствие и результат",
+      "description": "Explain how one development leads to another.",
+      "level": "B2–C1",
+      "path": "CAU"
+    },
+    {
+      "id": "NEG",
+      "title_en": "Negotiation and decisions",
+      "title_ru": "Переговоры и решения",
+      "description": "Make proposals, trade-offs, and commitments.",
+      "level": "B2–C1",
+      "path": "NEG"
+    },
+    {
+      "id": "PRO",
+      "title_en": "Professional communication",
+      "title_ru": "Профессиональная коммуникация",
+      "description": "Write and speak clearly at work.",
+      "level": "B2–C1",
+      "path": "PRO"
+    },
+    {
+      "id": "STO",
+      "title_en": "Storytelling and reflection",
+      "title_ru": "Истории и рефлексия",
+      "description": "Narrate events and draw a lesson from them.",
+      "level": "B2–C1",
+      "path": "STO"
+    },
+    {
+      "id": "LNK",
+      "title_en": "Advanced connectors",
+      "title_ru": "Продвинутые связки",
+      "description": "Create coherent, well-signposted discourse.",
+      "level": "B2–C1",
+      "path": "LNK"
+    },
+    {
+      "id": "CND",
+      "title_en": "Conditionals and counterfactuals",
+      "title_ru": "Условия и контрфакты",
+      "description": "Reason through possibilities and alternatives.",
+      "level": "B2–C1",
+      "path": "CND"
+    },
+    {
+      "id": "MOD",
+      "title_en": "Modality and obligation",
+      "title_ru": "Модальность и обязанность",
+      "description": "Express necessity, permission, and recommendation.",
+      "level": "B2–C1",
+      "path": "MOD"
+    },
+    {
+      "id": "PSV",
+      "title_en": "Passive and impersonal style",
+      "title_ru": "Пассив и безличные конструкции",
+      "description": "Use formal, process-focused language.",
+      "level": "B2–C1",
+      "path": "PSV"
+    },
+    {
+      "id": "REP",
+      "title_en": "Reported speech and attribution",
+      "title_ru": "Косвенная речь и источник",
+      "description": "Report what people said with accuracy.",
+      "level": "B2–C1",
+      "path": "REP"
+    },
+    {
+      "id": "TAS",
+      "title_en": "Tense and aspect",
+      "title_ru": "Время и аспект",
+      "description": "Position actions in time and show duration or completion.",
+      "level": "B2–C1",
+      "path": "TAS"
+    },
+    {
+      "id": "QNN",
+      "title_en": "Questions, negatives, and reference",
+      "title_ru": "Вопросы, отрицания и отсылки",
+      "description": "Ask precise questions and manage reference.",
+      "level": "B2–C1",
+      "path": "QNN"
+    },
+    {
+      "id": "DGR",
+      "title_en": "German grammar in use",
+      "title_ru": "Немецкая грамматика в речи",
+      "description": "Transfer German word order, cases, and particles into real use.",
+      "level": "B2–C1",
+      "path": "DGR"
+    }
+  ]
+}

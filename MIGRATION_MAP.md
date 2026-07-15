@@ -3,7 +3,7 @@
 Generated from the validated source datasets. Trailing-slash variants are handled by the same Vercel route rules and redirect directly to the same final URL.
 
 - Annotated documents moved: **2240**
-- Advanced patterns moved: **236**
+- Advanced patterns moved: **1036**
 - URL records: **2504**
 - Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
 

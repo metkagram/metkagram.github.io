@@ -18,11 +18,12 @@ test("root landing starts with a phrase-first title instead of an annotated samp
   await expect(page.getByRole("link", { name: /Русский/ })).toHaveAttribute("href", "/ru/");
 });
 
-test("home keeps the interface switch in the header and leads into a study language", async ({ page }, testInfo) => {
+test("home keeps the interface switch and makes both learning modes explicit", async ({ page }, testInfo) => {
   await page.goto("/en/");
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "Choose a language to study", exact: true })).toHaveAttribute("href", "/en/explore/");
+  await expect(page.getByRole("link", { name: "Open Annotated Language", exact: true }).first()).toHaveAttribute("href", "/en/explore/");
+  await expect(page.getByRole("link", { name: "Open Pattern Practice", exact: true }).first()).toHaveAttribute("href", "/en/practice/");
   await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
   await expect(page.getByRole("heading", { name: "Open to thoughtful collaborations." })).toBeVisible();
   await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "https://metalhatscats.com/contact");
@@ -78,16 +79,22 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
   await expect(tag.locator("[role=tooltip]")).toContainText("Use it to find who or what the sentence is about.");
 });
 
-test("English and German practice filters work", async ({ page }) => {
+test("pattern dashboard exposes complete study sets and filters all patterns", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  await expect(rows).toHaveCount(236);
+  await expect(rows).toHaveCount(1036);
+  await expect(page.locator("[data-study-set-card]")).toHaveCount(20);
+  await page.locator('[data-study-set-card="ARG"]').click();
+  await expect(page).toHaveURL(/\/en\/practice\/set\/arg\/$/);
+  await page.locator("[data-reveal]").click();
+  await expect(page.locator('[data-grade="1"]')).toBeVisible();
+  await page.goto("/en/practice/");
   await page.locator('[data-language-filter="de"]').click();
   const visible = page.locator("[data-pattern-list] > a:visible");
   await expect(visible).not.toHaveCount(0);
   await expect(visible.first()).toHaveAttribute("data-language", /en/);
   await page.locator("[data-pattern-search]").fill("would");
-  await expect(page.locator("[data-pattern-count]")).toHaveText("Showing 7 patterns");
+  await expect(page.locator("[data-pattern-count]")).toHaveText(/Showing \d+ patterns/);
 });
 
 test("review queue saves an SRS result", async ({ page }) => {

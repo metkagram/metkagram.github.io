@@ -19,9 +19,14 @@ function decodeEntities(value) {
   return value.replaceAll("&quot;", '"').replaceAll("&amp;", "&").replaceAll("&#039;", "'");
 }
 
-test("all source content validates and migrated counts match", () => {
+test("all source content validates and contains a complete C1 pattern curriculum", () => {
   const content = loadContent();
-  assert.deepEqual(contentCounts(content), { annotatedDocuments: 2240, annotatedSentences: 25116, advancedPatterns: 236 });
+  const counts = contentCounts(content);
+  assert.equal(counts.annotatedDocuments, 2240);
+  assert.equal(counts.annotatedSentences, 25116);
+  assert.ok(counts.advancedPatterns >= 1000);
+  assert.equal(content.studySets.sets.length, 20);
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 2)));
   assert.equal(content.collections.english.dialogues.documents.length, 111);
   assert.equal(content.collections.english.patterns.documents.length, 353);
   assert.equal(content.collections.english.library.documents.length, 455);

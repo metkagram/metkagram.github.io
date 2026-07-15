@@ -21,7 +21,8 @@ import {
   progressPage,
   roadmapPage,
   reviewPage,
-  rulesPage
+  rulesPage,
+  studySetPage
 } from "../src/render.mjs";
 
 const ROOT = process.cwd();
@@ -78,6 +79,7 @@ function buildRedirectManifest(content) {
   add("/ru/metkax/generator", `${SITE_URL}/ru/practice/`);
   add("/ru/metkax/patterns", `${SITE_URL}/data/advanced-patterns.json`);
   for (const pattern of content.advancedPatterns) {
+    if (pattern.id.startsWith("C1")) continue;
     add(`/ru/metkax/${pattern.id}`, `${SITE_URL}/ru/practice/${pattern.id.toLowerCase()}/`);
   }
   add("/products/metkagram", `${SITE_URL}/en/`);
@@ -145,6 +147,8 @@ function buildCatalog(content, counts) {
     advancedPatterns: {
       count: content.advancedPatterns.length,
       dataset: `${SITE_URL}/data/advanced-patterns.json`,
+      studySetsDataset: `${SITE_URL}/data/study-sets.json`,
+      studySetCount: content.studySets.sets.length,
       routes: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/practice/`]))
     }
   };
@@ -161,7 +165,7 @@ function build() {
   for (const locale of locales) {
     writeRoute(`/${locale}/`, localeHome(locale, content));
     writeRoute(`/${locale}/explore/`, explorePage(locale, content));
-    writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns));
+    writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns, content.studySets));
     writeRoute(`/${locale}/review/`, reviewPage(locale));
     writeRoute(`/${locale}/progress/`, progressPage(locale));
     writeRoute(`/${locale}/method/`, methodPage(locale));
@@ -185,6 +189,9 @@ function build() {
     for (const pattern of content.advancedPatterns) {
       writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern));
     }
+    for (const set of content.studySets.sets) {
+      writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));
+    }
   }
 
   writeFile("404.html", notFoundPage("en"));
@@ -195,6 +202,7 @@ function build() {
   writeFile("llms.txt", `# Metkagram\n\n> A bilingual annotated-language workspace for English and German learning.\n\nCanonical site: ${SITE_URL}/\nInterfaces: ${SITE_URL}/en/ and ${SITE_URL}/ru/\nCollections catalog: ${SITE_URL}/data/catalog.json\nAdvanced patterns dataset: ${SITE_URL}/data/advanced-patterns.json\nMethod: ${SITE_URL}/en/method/\nMobile apps: ${SITE_URL}/en/apps/\nPrivacy Policy: ${SITE_URL}/en/legal/privacy/\nTerms of Use: ${SITE_URL}/en/legal/terms/\nLicense and attribution: ${SITE_URL}/en/about/\n\nMetkagram exposes crawlable HTML detail pages for every collection and pattern. Interface locale (English or Russian) is independent from target language (English or German).\n`);
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
+  writeFile("data/study-sets.json", `${JSON.stringify(content.studySets, null, 2)}\n`);
   for (const target of Object.values(targetMeta)) {
     for (const collectionKey of collectionKeys) {
       writeFile(`data/collections/${target.dataKey}/${collectionKey}.json`, `${JSON.stringify(content.collections[target.key][collectionKey].documents)}\n`);
@@ -202,7 +210,7 @@ function build() {
   }
   const catalog = buildCatalog(content, counts);
   writeFile("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
-  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents and advanced patterns.", properties: { catalog: { type: "object", required: ["schemaVersion", "collections", "advancedPatterns"] }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "title_ru", "langs"] } } }, null, 2)}\n`);
+  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, complete advanced patterns, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "collections", "advancedPatterns"] }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
   writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: ["en", "de"], architecture: "deterministic static HTML with progressive enhancement", catalog: `${SITE_URL}/data/catalog.json` }, null, 2)}\n`);
 
   const redirects = buildRedirectManifest(content);

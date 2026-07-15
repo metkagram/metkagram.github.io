@@ -194,6 +194,54 @@ async function setupReviewQueue() {
   render();
 }
 
+async function setupStudySetQueue() {
+  const workspace = document.querySelector("[data-study-workspace]");
+  if (!workspace) return;
+  const patterns = (await loadPatterns()).filter((pattern) => pattern.set_id === workspace.dataset.studySet);
+  let position = 0;
+  const card = workspace.querySelector("[data-review-card]");
+  const empty = workspace.querySelector("[data-review-empty]");
+  const counter = workspace.querySelector("[data-review-counter]");
+  const answer = workspace.querySelector("[data-review-answer]");
+  const reveal = workspace.querySelector("[data-reveal]");
+  const grades = [...workspace.querySelectorAll("[data-grade]")];
+  const render = () => {
+    const pattern = patterns[position];
+    if (!pattern) { card.hidden = true; empty.hidden = false; counter.textContent = `0 ${copy.counter}`; return; }
+    const lang = pattern.langs[0];
+    card.hidden = false; empty.hidden = true;
+    counter.textContent = `${patterns.length - position} ${copy.counter}`;
+    workspace.querySelector("[data-review-title]").textContent = locale === "ru" ? pattern.title_ru : lang.formula;
+    workspace.querySelector("[data-review-formula]").textContent = lang.formula;
+    workspace.querySelector("[data-review-example]").textContent = lang.example;
+    workspace.querySelector("[data-review-translation]").textContent = lang.translation || "";
+    answer.hidden = true; reveal.hidden = false; grades.forEach((button) => { button.hidden = true; });
+  };
+  reveal.addEventListener("click", () => { answer.hidden = false; reveal.hidden = true; grades.forEach((button) => { button.hidden = false; }); });
+  grades.forEach((button) => button.addEventListener("click", () => { storeReview(patterns[position].id, Number(button.dataset.grade)); position += 1; render(); }));
+  render();
+}
+
+async function setupPracticeDashboard() {
+  const dashboard = document.querySelector("[data-practice-status]");
+  if (!dashboard) return;
+  const patterns = await loadPatterns();
+  const render = () => {
+    const records = loadProgress();
+    const stats = progressStats(records, patterns.map((pattern) => pattern.id));
+    dashboard.querySelector("[data-practice-due]").textContent = stats.due;
+    const next = patterns.find((pattern) => !records[pattern.id]?.history?.length) || patterns.find((pattern) => records[pattern.id]?.next <= Date.now());
+    dashboard.querySelector("[data-practice-continue]").textContent = next ? (locale === "ru" ? next.title_ru : next.langs[0].formula) : copy.queueEmpty;
+    document.querySelectorAll("[data-set-progress]").forEach((output) => {
+      const group = patterns.filter((pattern) => pattern.set_id === output.dataset.setProgress);
+      const reviewed = group.filter((pattern) => records[pattern.id]?.history?.length).length;
+      output.textContent = `${Math.round((reviewed / group.length) * 100)}%`;
+    });
+  };
+  document.addEventListener("metkagram:progress", render);
+  render();
+}
+
 function downloadProgress() {
   const envelope = saveProgress(loadProgress());
   const blob = new Blob([JSON.stringify(envelope, null, 2)], { type: "application/json" });
@@ -292,4 +340,6 @@ setupCollectionSearch();
 setupPatternFilters();
 setupInlineReview();
 setupReviewQueue().catch(() => {});
+setupStudySetQueue().catch(() => {});
+setupPracticeDashboard().catch(() => {});
 setupProgressPage().catch(() => {});
