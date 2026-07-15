@@ -198,7 +198,18 @@ export const ui = {
     privacyText: "Metkagram does not use advertising trackers. Learning progress is stored locally unless you enter a synchronization code.",
     notFound: "Page not found",
     notFoundText: "The requested notation page does not exist.",
-    home: "Home"
+    home: "Home",
+    forAiDevelopers: "For AI & Developers",
+    aiTitle: "Metkagram API & agent resources",
+    aiIntro: "Stable, static, machine-readable language datasets with built-in attribution.",
+    aiApiOverview: "API overview",
+    aiDatasets: "Available datasets",
+    aiEndpoints: "Endpoints",
+    aiAttribution: "Attribution & citation",
+    aiAgents: "Agent examples",
+    aiMcp: "MCP usage",
+    aiDownloads: "Downloads",
+    aiCollaborate: "Collaborate"
   },
   ru: {
     languageName: "Русский",
@@ -397,7 +408,18 @@ export const ui = {
     privacyText: "Metkagram не использует рекламные трекеры. Прогресс хранится локально, пока вы не введёте код синхронизации.",
     notFound: "Страница не найдена",
     notFoundText: "Такой страницы с языковыми обозначениями не существует.",
-    home: "Главная"
+    home: "Главная",
+    forAiDevelopers: "Для ИИ и разработчиков",
+    aiTitle: "API Metkagram и ресурсы для агентов",
+    aiIntro: "Стабильные статические машиночитаемые языковые датасеты со встроенной атрибуцией.",
+    aiApiOverview: "Обзор API",
+    aiDatasets: "Доступные датасеты",
+    aiEndpoints: "Конечные точки",
+    aiAttribution: "Атрибуция и цитирование",
+    aiAgents: "Примеры для агентов",
+    aiMcp: "Использование MCP",
+    aiDownloads: "Загрузки",
+    aiCollaborate: "Сотрудничество"
   }
 };
 

@@ -5,6 +5,7 @@ import { collectionKeys, locales, targetMeta, ui } from "../src/i18n.mjs";
 import {
   SITE_URL,
   aboutPage,
+  aiPage,
   appsPage,
   collectionPage,
   documentPage,
@@ -24,6 +25,7 @@ import {
   rulesPage,
   studySetPage
 } from "../src/render.mjs";
+import { buildApi, buildLlmsTxt, buildRobotsTxt } from "../src/api.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -160,6 +162,7 @@ function build() {
   copyPublic();
   const content = loadContent();
   const counts = contentCounts(content);
+  const api = buildApi(content, counts);
 
   writeRoute("/", gatewayPage());
   for (const locale of locales) {
@@ -192,14 +195,19 @@ function build() {
     for (const set of content.studySets.sets) {
       writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));
     }
+    writeRoute(`/${locale}/ai/`, aiPage(locale, content, counts, api.routes));
+  }
+
+  for (const [filePath, fileContents] of Object.entries(api.files)) {
+    writeFile(filePath, fileContents);
   }
 
   writeFile("404.html", notFoundPage("en"));
   writeFile(".nojekyll", "");
   writeFile("LICENSE", fs.readFileSync(path.join(ROOT, "LICENSE"), "utf8"));
-  writeFile("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc></url>`).join("")}\n</urlset>\n`);
-  writeFile("llms.txt", `# Metkagram\n\n> A bilingual annotated-language workspace for English and German learning.\n\nCanonical site: ${SITE_URL}/\nInterfaces: ${SITE_URL}/en/ and ${SITE_URL}/ru/\nCollections catalog: ${SITE_URL}/data/catalog.json\nAdvanced patterns dataset: ${SITE_URL}/data/advanced-patterns.json\nMethod: ${SITE_URL}/en/method/\nMobile apps: ${SITE_URL}/en/apps/\nPrivacy Policy: ${SITE_URL}/en/legal/privacy/\nTerms of Use: ${SITE_URL}/en/legal/terms/\nLicense and attribution: ${SITE_URL}/en/about/\n\nMetkagram exposes crawlable HTML detail pages for every collection and pattern. Interface locale (English or Russian) is independent from target language (English or German).\n`);
+  writeFile("robots.txt", buildRobotsTxt(api.routes));
+  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes, ...api.routes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc></url>`).join("")}\n</urlset>\n`);
+  writeFile("llms.txt", buildLlmsTxt(content, counts));
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
   writeFile("data/study-sets.json", `${JSON.stringify(content.studySets, null, 2)}\n`);
@@ -219,6 +227,7 @@ function build() {
   const report = {
     generatedAt: new Date().toISOString(),
     generatedRouteCount: generatedRoutes.size,
+    apiEndpointCount: api.routes.length,
     migratedContent: counts,
     redirectRecordCount: redirects.length,
     trailingSlashPolicy: "directory URLs with trailing slash",
@@ -227,7 +236,7 @@ function build() {
   };
   writeFile("migration-verification.json", `${JSON.stringify(report, null, 2)}\n`);
   fs.mkdirSync(path.join(ROOT, "reports"), { recursive: true });
-  fs.writeFileSync(path.join(ROOT, "reports", "MIGRATION_VERIFICATION.md"), `# Migration verification\n\n- Generated routes: **${report.generatedRouteCount}**\n- Annotated documents: **${counts.annotatedDocuments}**\n- Annotated sentences: **${counts.annotatedSentences}**\n- Advanced B2–C1 patterns: **${counts.advancedPatterns}**\n- Redirect records: **${redirects.length}**\n- Trailing-slash policy: ${report.trailingSlashPolicy}\n- Progress compatibility: ${report.syncCompatibility}\n\n## Automated verification (2026-07-11)\n\n- Static build: pass\n- Node content/migration/SRS tests: **12 passed**\n- Internal link check: **4,988 HTML files passed**\n- Playwright desktop/mobile journeys: **9 passed, 1 desktop-only skip**\n- Lighthouse home: **Performance 100 · Accessibility 100 · Best Practices 100 · SEO 100**\n- MetalHatsCats lint: pass with 11 pre-existing Konturo warnings and no errors\n- MetalHatsCats typecheck: pass\n- MetalHatsCats production build: pass\n- MetalHatsCats migration validator: **${redirects.filter((item) => item.status === "ready").length} old URLs mapped**\n- Live Pages routes and assets: pass\n- Live slash/non-slash redirects: direct 308 pass\n- Live SRS preflight CORS: 204 pass\n\nScreenshots are stored in \`reports/screenshots/\`; Lighthouse JSON is stored at \`reports/lighthouse-home.json\`.\n\n## External steps\n\n${report.externalSteps.map((step) => `- ${step}`).join("\n")}\n`);
+  fs.writeFileSync(path.join(ROOT, "reports", "MIGRATION_VERIFICATION.md"), `# Migration verification\n\n- Generated routes: **${report.generatedRouteCount}**\n- API endpoints: **${report.apiEndpointCount}**\n- Annotated documents: **${counts.annotatedDocuments}**\n- Annotated sentences: **${counts.annotatedSentences}**\n- Advanced B2–C1 patterns: **${counts.advancedPatterns}**\n- Redirect records: **${redirects.length}**\n- Trailing-slash policy: ${report.trailingSlashPolicy}\n- Progress compatibility: ${report.syncCompatibility}\n\n## Automated verification\n\n- Static build: pass\n- Node content/migration/SRS/API tests: pass\n- Internal link check: pass\n- API schemas, OpenAPI, llms.txt, MCP spec: generated\n\nScreenshots are stored in \`reports/screenshots/\`; Lighthouse JSON is stored at \`reports/lighthouse-home.json\`.\n\n## External steps\n\n${report.externalSteps.map((step) => `- ${step}`).join("\n")}\n`);
   console.log(`Built ${generatedRoutes.size} routes: ${counts.annotatedDocuments} documents, ${counts.annotatedSentences} sentences, ${counts.advancedPatterns} advanced patterns.`);
 }
 

@@ -1,6 +1,8 @@
 import { collectionKeys, collectionLabel, targetMeta, ui } from "./i18n.mjs";
+import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
+import { SITE_URL } from "./site.mjs";
 
-export const SITE_URL = "https://metkagram.github.io";
+export { SITE_URL };
 
 export const STORE_LINKS = {
   googlePlay: "https://play.google.com/store/apps/details?id=app.metkagram.android",
@@ -134,7 +136,7 @@ function footer(locale) {
   const t = ui[locale];
   return `<footer class="site-footer">
     <a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a>
-    <nav aria-label="Footer"><a href="/${locale}/apps/">${t.apps}</a><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/history/">${t.history}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a></nav>
+    <nav aria-label="Footer"><a href="/${locale}/apps/">${t.apps}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/history/">${t.history}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a></nav>
     <p>${t.connected}</p>
   </footer>`;
 }
@@ -214,7 +216,7 @@ export function localeHome(locale, content) {
   const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
   const body = `<section class="home-hero section-pad">
     <div class="home-rail" aria-label="${t.homeJourneyLabel}"><span>01 · ${t.homeJourneyStart}</span><span>02 · ${t.homeLanguageTitle}</span><span>03 · ${t.homeJourneyUnderstand}</span><span>04 · ${t.homeJourneyReuse}</span></div>
-    <div class="home-intro"><div><p class="eyebrow">${t.homeEyebrow}</p><h1>${t.statement}</h1></div><div class="home-action"><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/practice/">${t.homePractice} <span aria-hidden="true">→</span></a></div></div></div>
+    <div class="home-intro"><div><p class="eyebrow">${t.homeEyebrow}</p><h1>${t.statement}</h1></div><div class="home-action"><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/practice/">${t.homePractice} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/ai/">${t.forAiDevelopers} <span aria-hidden="true">→</span></a></div></div></div>
   </section>
   <section class="mode-doors section-pad ruled" aria-labelledby="mode-doors-title"><div><p class="eyebrow">01 · Metkagram</p><h2 id="mode-doors-title">${t.homeModesTitle}</h2></div><div class="mode-door-list"><a class="mode-door annotated-door" href="/${locale}/explore/"><span>01</span><div><p class="eyebrow">${t.navExplore}</p><h3>${t.navExplore}</h3><p>${t.homeAnnotatedIntro}</p></div><b aria-hidden="true">→</b></a><a class="mode-door practice-door" href="/${locale}/practice/"><span>02</span><div><p class="eyebrow">B2–C1</p><h3>${t.navPractice}</h3><p>${t.homePracticeIntro}</p></div><b aria-hidden="true">→</b></a></div></section>
   <section class="home-method section-pad ruled" aria-labelledby="home-method-title"><div><p class="eyebrow">01 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span><div><strong>${step}</strong><small>${t.homeMethodNotes[index]}</small></div></li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></section>
@@ -552,6 +554,107 @@ export function historyPage(locale) {
   const chapters = [["01", t.historyMobileTitle, t.historyMobileDetail], ["02", t.historyIdeaTitle, t.historyIdeaDetail], ["03", t.historyWebTitle, t.historyWebDetail]];
   const body = `<section class="history-head section-pad"><p class="eyebrow">${t.historyEyebrow}</p><h1>${t.historyTitle}</h1><p class="lede">${t.historyIntro}</p></section><section class="history-timeline section-pad ruled">${chapters.map(([index, title, detail]) => `<article><span>${index}</span><div><h2>${title}</h2><p>${detail}</p></div></article>`).join("")}</section><section class="history-sources section-pad ruled"><p class="eyebrow">${t.historySources}</p><nav><a href="https://metalhatscats.com/products/metkagram">${t.historyProductSource} ↗</a><a href="https://play.google.com/store/apps/details?id=app.metkagram.android">${t.historyGoogleSource} ↗</a><a href="https://apps.apple.com/co/app/tarjetas-gram%C3%A1tica-metkagram/id6502211918">${t.historyAppleSource} ↗</a></nav></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "The history of Metkagram" : "История Metkagram", description: t.historyIntro, body, structuredData: [breadcrumbJson(pathname, t.history, locale), { "@context": "https://schema.org", "@type": "AboutPage", name: t.historyTitle, url: `${SITE_URL}${pathname}` }] });
+}
+
+const API_URL = `${SITE_URL}/api/v1`;
+
+export function aiPage(locale, content, counts, apiRoutes) {
+  const t = ui[locale];
+  const en = locale === "en";
+  const pathname = `/${locale}/ai/`;
+  const title = en ? "Metkagram for AI & Developers" : "Metkagram для ИИ и разработчиков";
+  const intro = en
+    ? "A static, versioned, machine-readable API for patterns, study sets, annotated sentences and search. Every response includes provenance and attribution."
+    : "Статическое версионированное машиночитаемое API для паттернов, наборов, аннотированных предложений и поиска. Каждый ответ содержит происхождение и атрибуцию.";
+
+  const endpointRows = [
+    ["GET", `${API_URL}/index.json`, en ? "API index" : "Индекс API", true],
+    ["GET", `${API_URL}/patterns.json`, en ? "All patterns" : "Все паттерны", true],
+    ["GET", `${API_URL}/patterns/index.json`, en ? "Paginated summaries" : "Постраничные сводки", true],
+    ["GET", `${API_URL}/patterns/{id}.json`, en ? "Single pattern" : "Один паттерн", false],
+    ["GET", `${API_URL}/sets.json`, en ? "Study sets" : "Учебные наборы", true],
+    ["GET", `${API_URL}/sets/{id}.json`, en ? "Set with patterns" : "Набор с паттернами", false],
+    ["GET", `${API_URL}/categories.json`, en ? "Categories" : "Категории", true],
+    ["GET", `${API_URL}/categories/{id}.json`, en ? "Patterns in a category" : "Паттерны в категории", false],
+    ["GET", `${API_URL}/languages.json`, en ? "Languages" : "Языки", true],
+    ["GET", `${API_URL}/subsets/language/{en|de}.json`, en ? "Language subset" : "Подмножество по языку", false],
+    ["GET", `${API_URL}/annotations/{target}/{collection}.json`, en ? "Annotated documents" : "Аннотированные документы", false],
+    ["GET", `${API_URL}/search-index.json`, en ? "Static search index" : "Индекс поиска", true],
+    ["GET", `${API_URL}/openapi.json`, en ? "OpenAPI spec" : "Спецификация OpenAPI", true],
+    ["GET", `${API_URL}/mcp-server.json`, en ? "MCP tool spec" : "Спецификация инструментов MCP", true],
+    ["GET", `${API_URL}/attribution.json`, en ? "Attribution policy" : "Политика атрибуции", true],
+  ].map(([method, url, desc, linked]) => `<tr><td><code>${method}</code></td><td><code>${linked ? `<a href="${url}">${url}</a>` : escapeHtml(url)}</code></td><td>${desc}</td></tr>`).join("");
+
+  const datasets = [
+    { id: "patterns", label: en ? "Advanced patterns" : "Продвинутые паттерны", count: counts.advancedPatterns, url: `${API_URL}/patterns.json`, download: `${API_URL}/download/full-patterns.json`, schema: `${API_URL}/schemas/pattern.json` },
+    { id: "sets", label: en ? "Study sets" : "Учебные наборы", count: content.studySets.sets.length, url: `${API_URL}/sets.json`, schema: `${API_URL}/schemas/set.json` },
+    { id: "annotations", label: en ? "Annotated documents" : "Аннотированные документы", count: counts.annotatedDocuments, url: `${API_URL}/annotations/en/dialogues.json`, schema: `${API_URL}/schemas/document.json` },
+  ].map((ds) => `<article class="dataset-card"><h3>${ds.label}</h3><p>${en ? "Records" : "Записей"}: <strong>${ds.count.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")}</strong></p><nav><a href="${ds.url}">${en ? "API" : "API"}</a>${ds.download ? `<a href="${ds.download}">${en ? "Download" : "Скачать"}</a>` : ""}${ds.schema ? `<a href="${ds.schema}">${en ? "Schema" : "Схема"}</a>` : ""}</nav></article>`).join("");
+
+  const attributionText = ATTRIBUTION.attribution_text;
+  const citeWeb = `${attributionText}. Available at {canonical_url}.`;
+  const citeAcademic = `Metkagram (${new Date().getFullYear()}). B2–C1 English and German language patterns. ${SITE_URL}. ${ATTRIBUTION.license}.`;
+  const citeAi = "This answer uses data from Metkagram (https://metkagram.github.io/). See the source page for the full pattern and attribution.";
+
+  const agentExamples = [
+    ["ChatGPT / Claude / Gemini", `${API_URL}/patterns/index.json`, en ? "Fetch summaries, then retrieve /patterns/{id}.json for details." : "Загрузите сводки, затем получите /patterns/{id}.json для деталей."],
+    ["Codex & custom agents", `${API_URL}/openapi.json`, en ? "Generate clients from the OpenAPI spec." : "Генерируйте клиенты из спецификации OpenAPI."],
+    ["MCP clients", `${API_URL}/mcp-server.json`, en ? "Resolve tool calls by fetching the static URLs in the spec." : "Разрешайте вызовы инструментов, загружая статические URL из спецификации."],
+  ].map(([tool, url, desc]) => `<tr><td>${tool}</td><td><code><a href="${url}">${url}</a></code></td><td>${desc}</td></tr>`).join("");
+
+  const mcpCode = `// MCP tool call resolved statically
+const tool = "metkagram_get_pattern";
+const id = "C1OP001";
+const response = await fetch(\`https://metkagram.github.io/api/v1/patterns/\${id.toLowerCase()}.json\`);
+const { provenance, data } = await response.json();
+// Always include provenance.canonical_url and provenance.attribution_text in your output.`;
+
+  const body = `<section class="page-head section-pad"><p class="eyebrow">${t.forAiDevelopers}</p><h1>${title}</h1><p class="lede">${intro}</p><div class="ai-status"><a href="${API_URL}/index.json"><span>API index</span><code>${API_URL}/index.json</code></a><a href="${API_URL}/openapi.json"><span>OpenAPI</span><code>${API_URL}/openapi.json</code></a><a href="${API_URL}/mcp-server.json"><span>MCP</span><code>${API_URL}/mcp-server.json</code></a></div></section>
+
+<section class="ai-section section-pad ruled" id="datasets"><div><p class="eyebrow">01 · ${t.aiDatasets}</p><h2>${t.aiDatasets}</h2></div><div class="dataset-grid">${datasets}</div></section>
+
+<section class="ai-section section-pad ruled" id="endpoints"><div><p class="eyebrow">02 · ${t.aiEndpoints}</p><h2>${t.aiEndpoints}</h2></div><div class="table-wrap"><table class="endpoint-table"><thead><tr><th>${en ? "Method" : "Метод"}</th><th>${en ? "URL" : "URL"}</th><th>${en ? "Description" : "Описание"}</th></tr></thead><tbody>${endpointRows}</tbody></table></div></section>
+
+<section class="ai-section section-pad ruled" id="attribution"><div><p class="eyebrow">03 · ${t.aiAttribution}</p><h2>${t.aiAttribution}</h2></div><div class="ai-columns"><article><h3>${en ? "Required attribution" : "Обязательная атрибуция"}</h3><ul><li>${en ? "Keep the name" : "Сохраняйте название"} <strong>Metkagram</strong>.</li><li>${en ? "Link to" : "Ссылка на"} <a href="${SITE_URL}">${SITE_URL}</a>.</li><li>${en ? "Credit" : "Указывайте"} <a href="${ATTRIBUTION.creator_url}">${ATTRIBUTION.creator}</a> ${en ? "and" : "и"} <a href="${ATTRIBUTION.maintainer_url}">${ATTRIBUTION.maintainer}</a>.</li><li>${en ? "State the dataset version" : "Указывайте версию датасета"}: <code>${getDatasetVersion()}</code>.</li><li>${en ? "Link back to the canonical page for every record shown." : "Давайте обратную ссылку на каноническую страницу каждой показанной записи."}</li></ul></article><article><h3>${en ? "Copy-paste citations" : "Готовые цитаты"}</h3><dl class="citation-list"><div><dt>${en ? "Web / app" : "Веб / приложение"}</dt><dd><code>${citeWeb}</code></dd></div><div><dt>${en ? "Academic" : "Академическая"}</dt><dd><code>${citeAcademic}</code></dd></div><div><dt>${en ? "AI-generated answer" : "Ответ ИИ"}</dt><dd><code>${citeAi}</code></dd></div></dl></article></div><p class="legal-note"><a href="${API_URL}/attribution.json">${en ? "Machine-readable attribution policy" : "Машиночитаемая политика атрибуции"}</a> · <a href="/LICENSE">CC BY-NC 4.0</a></p></section>
+
+<section class="ai-section section-pad ruled" id="agents"><div><p class="eyebrow">04 · ${t.aiAgents}</p><h2>${t.aiAgents}</h2></div><div class="table-wrap"><table class="endpoint-table"><thead><tr><th>${en ? "Tool" : "Инструмент"}</th><th>${en ? "Entry point" : "Точка входа"}</th><th>${en ? "How to use" : "Как использовать"}</th></tr></thead><tbody>${agentExamples}</tbody></table></div></section>
+
+<section class="ai-section section-pad ruled" id="mcp"><div><p class="eyebrow">05 · ${t.aiMcp}</p><h2>${t.aiMcp}</h2></div><p class="lede">${en ? "No backend server is required. The MCP specification maps tool names to static URLs. Your client fetches the JSON directly from GitHub Pages." : "Бэкенд-сервер не требуется. Спецификация MCP сопоставляет имена инструментов со статическими URL. Ваш клиент загружает JSON напрямую с GitHub Pages."}</p><pre class="code-block"><code>${escapeHtml(mcpCode)}</code></pre><p><a href="${API_URL}/mcp-server.json">${en ? "Download MCP server specification" : "Скачать спецификацию MCP"}</a></p></section>
+
+<section class="ai-section section-pad ruled" id="downloads"><div><p class="eyebrow">06 · ${t.aiDownloads}</p><h2>${t.aiDownloads}</h2></div><nav class="download-list"><a href="${API_URL}/download/full-patterns.json">${en ? "Full patterns JSON" : "Все паттерны JSON"}</a><a href="${API_URL}/patterns.json">${en ? "Patterns API response" : "API-ответ паттернов"}</a><a href="${API_URL}/sets.json">${en ? "Study sets JSON" : "Учебные наборы JSON"}</a><a href="${API_URL}/search-index.json">${en ? "Search index JSON" : "Поисковый индекс JSON"}</a><a href="${API_URL}/openapi.json">${en ? "OpenAPI JSON" : "OpenAPI JSON"}</a><a href="${API_URL}/mcp-server.json">${en ? "MCP spec JSON" : "MCP JSON"}</a></nav></section>
+
+<section class="ai-section section-pad ruled" id="collaborate"><div><p class="eyebrow">07 · ${t.aiCollaborate}</p><h2>${t.aiCollaborate}</h2></div><p class="lede">${en ? "We welcome research, teaching, content and language-data collaborations that keep attribution intact." : "Мы приветствуем исследовательские, образовательные, контентные и языковые проекты с сохранением атрибуции."}</p><nav class="download-list"><a href="${ATTRIBUTION.contact_url}">${en ? "Contact MetalHatsCats" : "Связаться с MetalHatsCats"}</a><a href="${ATTRIBUTION.source_repository}">${en ? "GitHub repository" : "Репозиторий GitHub"}</a></nav></section>`;
+
+  const structuredData = [
+    breadcrumbJson(pathname, title, locale),
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: title,
+      url: `${SITE_URL}${pathname}`,
+      inLanguage: locale,
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: {
+        "@type": "Dataset",
+        name: "Metkagram language patterns and annotations",
+        url: `${API_URL}/index.json`,
+        license: ATTRIBUTION.license_url,
+        creator: { "@type": "Organization", name: ATTRIBUTION.creator, url: ATTRIBUTION.creator_url, sameAs: [ATTRIBUTION.source_repository] },
+        maintainer: { "@type": "Organization", name: ATTRIBUTION.maintainer, url: ATTRIBUTION.maintainer_url },
+        publisher: { "@id": `${SITE_URL}/#organization` },
+        version: getDatasetVersion(),
+        datePublished: ATTRIBUTION.release_date || getDatasetVersion().split("+")[1],
+        distribution: [
+          { "@type": "DataDownload", contentUrl: `${API_URL}/patterns.json`, encodingFormat: "application/json" },
+          { "@type": "DataDownload", contentUrl: `${API_URL}/sets.json`, encodingFormat: "application/json" },
+        ],
+      },
+    },
+    { "@context": "https://schema.org", "@type": "LearningResource", name: title, educationalLevel: "B2–C1", inLanguage: ["en", "de", "ru"], url: `${SITE_URL}${pathname}`, isPartOf: { "@id": `${SITE_URL}/#website` } },
+    { "@context": "https://schema.org", "@type": "CreativeWork", name: "Metkagram API documentation", url: `${SITE_URL}${pathname}`, creator: { "@type": "Organization", name: ATTRIBUTION.creator, url: ATTRIBUTION.creator_url }, license: ATTRIBUTION.license_url },
+  ];
+
+  return layout({ locale, pathname, title: `${title} — Metkagram`, description: intro, body, structuredData });
 }
 
 export function gatewayPage() {
