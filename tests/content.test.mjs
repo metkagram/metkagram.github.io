@@ -26,7 +26,10 @@ test("all source content validates and contains a complete C1 pattern curriculum
   assert.equal(counts.annotatedSentences, 25116);
   assert.ok(counts.advancedPatterns >= 1000);
   assert.equal(content.studySets.sets.length, 20);
-  assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 2)));
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
+  const hedPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === "HED");
+  assert.equal(hedPatterns.length, 40);
+  assert.ok(hedPatterns.every((pattern) => pattern.langs.every((lang) => lang.examples.length === 12)), "every HED pattern should match CON006 with 12 examples per language");
   assert.equal(content.collections.english.dialogues.documents.length, 111);
   assert.equal(content.collections.english.patterns.documents.length, 353);
   assert.equal(content.collections.english.library.documents.length, 455);
@@ -34,6 +37,10 @@ test("all source content validates and contains a complete C1 pattern curriculum
   assert.equal(content.collections.german.patterns.documents.length, 496);
   assert.equal(content.collections.german.library.documents.length, 496);
 });
+
+function langComplete(pattern) {
+  return pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 8);
+}
 
 test("GitHub Pages artifact has root files and localized HTML", () => {
   for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json"]) {

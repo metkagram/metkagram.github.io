@@ -2,9 +2,10 @@ import { CODE_PATTERN, dueIds, loadCode, loadProgress, mergeStates, normalizeEnv
 
 const locale = document.documentElement.lang === "ru" ? "ru" : "en";
 const copy = {
-  en: { reviewSaved: "Review saved.", counter: "due", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", syncDone: "Progress synchronized.", syncError: "Synchronization failed. Your local progress is safe.", syncWorking: "Synchronizing…", invalidCode: "Use 3–64 letters, numbers, - or _.", days: "days", due: "Due", yes: "yes", no: "no", showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
-  ru: { reviewSaved: "Повторение сохранено.", counter: "к повторению", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", syncDone: "Прогресс синхронизирован.", syncError: "Не удалось синхронизировать. Локальный прогресс сохранён.", syncWorking: "Идёт синхронизация…", invalidCode: "Используйте 3–64 буквы, цифры, - или _.", days: "дней", due: "Сейчас", yes: "да", no: "нет", showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
+  en: { reviewSaved: "Review saved.", counter: "in queue", importDone: "Progress imported.", importError: "This file is not a valid Metkagram progress export.", syncDone: "Progress synchronized.", syncError: "Synchronization failed. Your local progress is safe.", syncWorking: "Synchronizing…", invalidCode: "Use 3–64 letters, numbers, - or _.", days: "days", due: "Due", yes: "yes", no: "no", showing: "Showing", of: "of", sets: "sets", patterns: "patterns", dueReviews: "Due reviews", availablePatterns: "Available patterns", continueLearning: "Continue learning", startWith: "Start with", availableToLearn: "Ready to learn" },
+  ru: { reviewSaved: "Повторение сохранено.", counter: "в очереди", importDone: "Прогресс импортирован.", importError: "Файл не является корректным экспортом прогресса Metkagram.", syncDone: "Прогресс синхронизирован.", syncError: "Не удалось синхронизировать. Локальный прогресс сохранён.", syncWorking: "Идёт синхронизация…", invalidCode: "Используйте 3–64 буквы, цифры, - или _.", days: "дней", due: "Сейчас", yes: "да", no: "нет", showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов", dueReviews: "К повторению", availablePatterns: "Доступно моделей", continueLearning: "Продолжить", startWith: "Начните с", availableToLearn: "Можно начать" }
 }[locale];
+const formatCount = (value) => value.toLocaleString(locale === "ru" ? "ru-RU" : "en-US");
 
 function setupMenu() {
   const button = document.querySelector("[data-menu-toggle]");
@@ -172,7 +173,7 @@ async function setupReviewQueue() {
     const lang = pattern.langs[0];
     card.hidden = false;
     empty.hidden = true;
-    counter.textContent = `${queue.length - position} ${copy.counter}`;
+    counter.textContent = `${formatCount(queue.length - position)} ${copy.counter}`;
     workspace.querySelector("[data-review-title]").textContent = locale === "ru" ? pattern.title_ru : lang.formula;
     workspace.querySelector("[data-review-formula]").textContent = lang.formula;
     workspace.querySelector("[data-review-example]").textContent = lang.example;
@@ -210,7 +211,7 @@ async function setupStudySetQueue() {
     if (!pattern) { card.hidden = true; empty.hidden = false; counter.textContent = `0 ${copy.counter}`; return; }
     const lang = pattern.langs[0];
     card.hidden = false; empty.hidden = true;
-    counter.textContent = `${patterns.length - position} ${copy.counter}`;
+    counter.textContent = `${formatCount(patterns.length - position)} ${copy.counter}`;
     workspace.querySelector("[data-review-title]").textContent = locale === "ru" ? pattern.title_ru : lang.formula;
     workspace.querySelector("[data-review-formula]").textContent = lang.formula;
     workspace.querySelector("[data-review-example]").textContent = lang.example;
@@ -229,7 +230,10 @@ async function setupPracticeDashboard() {
   const render = () => {
     const records = loadProgress();
     const stats = progressStats(records, patterns.map((pattern) => pattern.id));
-    dashboard.querySelector("[data-practice-due]").textContent = stats.due;
+    const isFirstRun = stats.reviewed === 0;
+    dashboard.querySelector("[data-practice-due]").textContent = formatCount(isFirstRun ? patterns.length : stats.due);
+    dashboard.querySelector("[data-practice-queue-label]").textContent = isFirstRun ? copy.availablePatterns : copy.dueReviews;
+    dashboard.querySelector("[data-practice-continue-label]").textContent = isFirstRun ? copy.startWith : copy.continueLearning;
     const next = patterns.find((pattern) => !records[pattern.id]?.history?.length) || patterns.find((pattern) => records[pattern.id]?.next <= Date.now());
     dashboard.querySelector("[data-practice-continue]").textContent = next ? (locale === "ru" ? next.title_ru : next.langs[0].formula) : copy.queueEmpty;
     document.querySelectorAll("[data-set-progress]").forEach((output) => {
@@ -279,9 +283,10 @@ async function setupProgressPage() {
     const records = loadProgress();
     const ids = patterns.map((pattern) => pattern.id);
     const stats = progressStats(records, ids);
-    page.querySelector("[data-stat-due]").textContent = stats.due;
-    page.querySelector("[data-stat-reviewed]").textContent = stats.reviewed;
-    page.querySelector("[data-stat-reviews]").textContent = stats.totalReviews;
+    page.querySelector("[data-stat-due]").textContent = formatCount(stats.due);
+    page.querySelector("[data-stat-due-label]").textContent = stats.reviewed === 0 ? copy.availableToLearn : copy.dueNow;
+    page.querySelector("[data-stat-reviewed]").textContent = formatCount(stats.reviewed);
+    page.querySelector("[data-stat-reviews]").textContent = formatCount(stats.totalReviews);
     const rows = page.querySelector("[data-progress-rows]");
     const states = Object.values(records).filter((state) => state.history?.length).sort((a, b) => b.last - a.last);
     rows.replaceChildren(...states.map((state) => {
@@ -297,6 +302,7 @@ async function setupProgressPage() {
       return row;
     }));
     page.querySelector("[data-progress-empty]").hidden = states.length > 0;
+    page.querySelector("[data-progress-first-run]").hidden = states.length > 0;
   };
   const codeInput = page.querySelector("[data-sync-code]");
   const status = page.querySelector("[data-sync-status]");

@@ -9,27 +9,27 @@ const original = JSON.parse(fs.readFileSync(patternsFile, "utf8"));
 // These are deliberately communicative frames rather than conjugation drills. Each
 // set is a single C1 move learners can recognise, retrieve, and transfer.
 const sets = [
-  ["ARG", "Argumentation", "Аргументация", "Build and test a line of reasoning."],
-  ["OPI", "Opinions and stance", "Мнение и позиция", "State a position with the right degree of commitment."],
-  ["EVD", "Evidence and inference", "Доказательства и выводы", "Connect a claim to evidence without overclaiming."],
-  ["AGR", "Agreement and disagreement", "Согласие и несогласие", "Respond constructively to another view."],
-  ["HED", "Qualification and hedging", "Оговорки и смягчение", "Make precise, proportionate claims."],
-  ["PRB", "Probability and prediction", "Вероятность и прогноз", "Discuss likelihood, risk, and uncertainty."],
-  ["CLR", "Clarification and reformulation", "Уточнение и переформулирование", "Repair and sharpen meaning in conversation."],
-  ["CMP", "Comparison and evaluation", "Сравнение и оценка", "Compare options using nuanced criteria."],
-  ["CAU", "Cause, effect, and consequence", "Причина, следствие и результат", "Explain how one development leads to another."],
-  ["NEG", "Negotiation and decisions", "Переговоры и решения", "Make proposals, trade-offs, and commitments."],
-  ["PRO", "Professional communication", "Профессиональная коммуникация", "Write and speak clearly at work."],
-  ["STO", "Storytelling and reflection", "Истории и рефлексия", "Narrate events and draw a lesson from them."],
-  ["LNK", "Advanced connectors", "Продвинутые связки", "Create coherent, well-signposted discourse."],
-  ["CND", "Conditionals and counterfactuals", "Условия и контрфакты", "Reason through possibilities and alternatives."],
-  ["MOD", "Modality and obligation", "Модальность и обязанность", "Express necessity, permission, and recommendation."],
-  ["PSV", "Passive and impersonal style", "Пассив и безличные конструкции", "Use formal, process-focused language."],
-  ["REP", "Reported speech and attribution", "Косвенная речь и источник", "Report what people said with accuracy."],
-  ["TAS", "Tense and aspect", "Время и аспект", "Position actions in time and show duration or completion."],
-  ["QNN", "Questions, negatives, and reference", "Вопросы, отрицания и отсылки", "Ask precise questions and manage reference."],
-  ["DGR", "German grammar in use", "Немецкая грамматика в речи", "Transfer German word order, cases, and particles into real use."]
-].map(([id, title_en, title_ru, description]) => ({ id, title_en, title_ru, description, level: "B2–C1", path: id }));
+  ["ARG", "Argumentation", "Аргументация", "Build and test a line of reasoning.", "Выстраивайте и проверяйте ход рассуждения."],
+  ["OPI", "Opinions and stance", "Мнение и позиция", "State a position with the right degree of commitment.", "Формулируйте позицию с нужной степенью уверенности."],
+  ["EVD", "Evidence and inference", "Доказательства и выводы", "Connect a claim to evidence without overclaiming.", "Связывайте утверждение с данными, не делая лишних выводов."],
+  ["AGR", "Agreement and disagreement", "Согласие и несогласие", "Respond constructively to another view.", "Конструктивно отвечайте на другую точку зрения."],
+  ["HED", "Qualification and hedging", "Оговорки и смягчение", "Make precise, proportionate claims.", "Смягчайте и уточняйте утверждения без потери смысла."],
+  ["PRB", "Probability and prediction", "Вероятность и прогноз", "Discuss likelihood, risk, and uncertainty.", "Обсуждайте вероятность, риск и неопределённость."],
+  ["CLR", "Clarification and reformulation", "Уточнение и переформулирование", "Repair and sharpen meaning in conversation.", "Уточняйте и переформулируйте мысль в разговоре."],
+  ["CMP", "Comparison and evaluation", "Сравнение и оценка", "Compare options using nuanced criteria.", "Сравнивайте варианты по содержательным критериям."],
+  ["CAU", "Cause, effect, and consequence", "Причина, следствие и результат", "Explain how one development leads to another.", "Показывайте, как одно событие ведёт к другому."],
+  ["NEG", "Negotiation and decisions", "Переговоры и решения", "Make proposals, trade-offs, and commitments.", "Предлагайте решения, компромиссы и обязательства."],
+  ["PRO", "Professional communication", "Профессиональная коммуникация", "Write and speak clearly at work.", "Пишите и говорите ясно в рабочих ситуациях."],
+  ["STO", "Storytelling and reflection", "Истории и рефлексия", "Narrate events and draw a lesson from them.", "Рассказывайте о событиях и извлекайте из них вывод."],
+  ["LNK", "Advanced connectors", "Продвинутые связки", "Create coherent, well-signposted discourse.", "Связывайте идеи в цельное, понятное высказывание."],
+  ["CND", "Conditionals and counterfactuals", "Условия и контрфакты", "Reason through possibilities and alternatives.", "Рассуждайте о возможностях и альтернативах."],
+  ["MOD", "Modality and obligation", "Модальность и обязанность", "Express necessity, permission, and recommendation.", "Выражайте необходимость, разрешение и рекомендацию."],
+  ["PSV", "Passive and impersonal style", "Пассив и безличные конструкции", "Use formal, process-focused language.", "Используйте формальный, процессно-ориентированный стиль."],
+  ["REP", "Reported speech and attribution", "Косвенная речь и источник", "Report what people said with accuracy.", "Точно передавайте, что сказали или сообщили другие."],
+  ["TAS", "Tense and aspect", "Время и аспект", "Position actions in time and show duration or completion.", "Показывайте время, длительность и завершённость действия."],
+  ["QNN", "Questions, negatives, and reference", "Вопросы, отрицания и отсылки", "Ask precise questions and manage reference.", "Задавайте точные вопросы и управляйте отсылками в речи."],
+  ["DGR", "German grammar in use", "Немецкая грамматика в речи", "Transfer German word order, cases, and particles into real use.", "Переносите немецкий порядок слов, падежи и частицы в живую речь."]
+].map(([id, title_en, title_ru, description, description_ru]) => ({ id, title_en, title_ru, description, description_ru, level: "B2–C1", path: id }));
 
 const contexts = [
   ["a funding proposal", "заявка на финансирование", "einen Förderantrag"],

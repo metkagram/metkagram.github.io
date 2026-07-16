@@ -79,15 +79,17 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
   await expect(tag.locator("[role=tooltip]")).toContainText("Use it to find who or what the sentence is about.");
 });
 
-test("pattern dashboard exposes complete study sets and filters all patterns", async ({ page }) => {
+test("pattern catalogue opens every pattern directly and filters all patterns", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
   await expect(rows).toHaveCount(1036);
-  await expect(page.locator("[data-study-set-card]")).toHaveCount(20);
-  await page.locator('[data-study-set-card="ARG"]').click();
-  await expect(page).toHaveURL(/\/en\/practice\/set\/arg\/$/);
-  await page.locator("[data-reveal]").click();
-  await expect(page.locator('[data-grade="1"]')).toBeVisible();
+  await expect(page.locator("[data-study-set-card]")).toHaveCount(0);
+  await expect(page.locator(".study-dashboard")).toHaveCount(0);
+  await page.locator('[data-category-filter]').selectOption("HED");
+  await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(40);
+  await page.locator('[data-pattern-list] > a:visible').first().click();
+  await expect(page).toHaveURL(/\/en\/practice\/c1hed001\/$/);
+  await expect(page.locator(".example-list li")).toHaveCount(24);
   await page.goto("/en/practice/");
   await page.locator('[data-language-filter="de"]').click();
   const visible = page.locator("[data-pattern-list] > a:visible");
@@ -104,6 +106,19 @@ test("review queue saves an SRS result", async ({ page }) => {
   await page.locator('[data-grade="1"]').click();
   const stored = await page.evaluate(() => localStorage.getItem("metkagram:progress:v2"));
   expect(stored).toContain('"reps":1');
+});
+
+test("a new learner sees available patterns instead of an overdue debt", async ({ page }) => {
+  await page.goto("/ru/practice/");
+  await page.evaluate(() => localStorage.removeItem("metkagram:progress:v2"));
+  await page.reload();
+  await expect(page.locator("[data-practice-queue-label]")).toHaveText("Доступно моделей");
+  await expect(page.locator("[data-practice-due]")).toHaveText(/1\s036/);
+  await page.goto("/ru/progress/");
+  await expect(page.locator("[data-stat-due-label]")).toHaveText("Можно начать");
+  await expect(page.locator("[data-progress-first-run]")).toBeVisible();
+  await page.goto("/ru/practice/set/hed/");
+  await expect(page.locator(".study-set-head .lede")).toHaveText("Смягчайте и уточняйте утверждения без потери смысла.");
 });
 
 test("progress page renders stored statistics", async ({ page }) => {

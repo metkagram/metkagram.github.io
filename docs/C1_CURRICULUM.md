@@ -2,8 +2,8 @@
 
 Metkagram has two complementary modes.
 
-- **Annotated Language / Аннотированные фразы** keeps grammar visible inside complete English and German sentences.
-- **Pattern Practice / Практика паттернов** turns reusable B2–C1 moves into active-recall items, organised in named study sets and two learning paths.
+- **Annotated Language / Карточки с разметкой** keeps grammar visible inside complete English and German sentences.
+- **Pattern Practice / Паттерны** turns reusable B2–C1 moves into active-recall items.
 
 The public curriculum is stored in `data/advanced-patterns.json`; its set catalogue and paths are in `data/study-sets.json`. A pattern is complete only when it includes its stable ID, title, category/set membership, English and German formulas, natural examples, Russian translations, and at least two translated variations for each target language.
 
