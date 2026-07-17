@@ -34,6 +34,23 @@
         "QNN",
         "DGR"
       ]
+    },
+    {
+      "id": "C1-GRAMMAR",
+      "title_en": "Grammar in use",
+      "title_ru": "Грамматика в речи",
+      "set_ids": [
+        "DET",
+        "INF",
+        "SUB",
+        "FCS",
+        "REL",
+        "PRP",
+        "WOR",
+        "CAS",
+        "ADJ",
+        "KON"
+      ]
     }
   ],
   "sets": [
@@ -216,6 +233,96 @@
       "level": "B2–C1",
       "path": "DGR",
       "description_ru": "Переносите немецкий порядок слов, падежи и частицы в живую речь."
+    },
+    {
+      "id": "DET",
+      "title_en": "Determiners and quantifiers",
+      "title_ru": "Определители и квантификаторы",
+      "description": "Make reference, quantity and scope precise.",
+      "description_ru": "Точно обозначайте предмет, количество и охват.",
+      "level": "B2–C1",
+      "path": "DET"
+    },
+    {
+      "id": "INF",
+      "title_en": "Verb complements and non-finite clauses",
+      "title_ru": "Инфинитив, герундий и неличные конструкции",
+      "description": "Choose verb complements and condensed clauses accurately.",
+      "description_ru": "Точно выбирайте дополнения глагола и свёрнутые конструкции.",
+      "level": "B2–C1",
+      "path": "INF"
+    },
+    {
+      "id": "SUB",
+      "title_en": "Subordinate and complement clauses",
+      "title_ru": "Придаточные и изъяснительные конструкции",
+      "description": "Build multi-clause reasoning with clear dependencies.",
+      "description_ru": "Стройте сложные высказывания с ясными зависимостями.",
+      "level": "B2–C1",
+      "path": "SUB"
+    },
+    {
+      "id": "FCS",
+      "title_en": "Focus, inversion and emphasis",
+      "title_ru": "Фокус, инверсия и эмфаза",
+      "description": "Bring the key part of a message into focus.",
+      "description_ru": "Выделяйте ключевую часть сообщения.",
+      "level": "B2–C1",
+      "path": "FCS"
+    },
+    {
+      "id": "REL",
+      "title_en": "Relative and participial clauses",
+      "title_ru": "Относительные и причастные конструкции",
+      "description": "Add precise information without losing the main clause.",
+      "description_ru": "Добавляйте точную информацию, сохраняя главную мысль.",
+      "level": "B2–C1",
+      "path": "REL"
+    },
+    {
+      "id": "PRP",
+      "title_en": "Prepositions and governed complements",
+      "title_ru": "Предлоги и управление",
+      "description": "Use the complements that verbs, nouns and adjectives require.",
+      "description_ru": "Используйте дополнения, которые требуют глаголы, существительные и прилагательные.",
+      "level": "B2–C1",
+      "path": "PRP"
+    },
+    {
+      "id": "WOR",
+      "title_en": "Word order and verb position",
+      "title_ru": "Порядок слов и позиция глагола",
+      "description": "Control sentence structure across statements, questions and clauses.",
+      "description_ru": "Управляйте структурой утверждений, вопросов и придаточных.",
+      "level": "B2–C1",
+      "path": "WOR"
+    },
+    {
+      "id": "CAS",
+      "title_en": "Cases and nominal agreement",
+      "title_ru": "Падежи и согласование в именной группе",
+      "description": "Keep roles and agreement clear inside the noun phrase.",
+      "description_ru": "Сохраняйте ясность ролей и согласования в именной группе.",
+      "level": "B2–C1",
+      "path": "CAS"
+    },
+    {
+      "id": "ADJ",
+      "title_en": "Adjectives and comparison",
+      "title_ru": "Прилагательные и сравнение",
+      "description": "Describe, compare and qualify with accurate noun phrases.",
+      "description_ru": "Точно описывайте, сравнивайте и уточняйте именные группы.",
+      "level": "B2–C1",
+      "path": "ADJ"
+    },
+    {
+      "id": "KON",
+      "title_en": "Mood, modality and reported stance",
+      "title_ru": "Наклонение, модальность и передача позиции",
+      "description": "Express possibility, recommendation and reported judgement precisely.",
+      "description_ru": "Точно выражайте возможность, рекомендацию и переданную позицию.",
+      "level": "B2–C1",
+      "path": "KON"
     }
   ]
 }

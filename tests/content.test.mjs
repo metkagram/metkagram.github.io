@@ -25,11 +25,14 @@ test("all source content validates and contains a complete C1 pattern curriculum
   assert.equal(counts.annotatedDocuments, 2240);
   assert.equal(counts.annotatedSentences, 25116);
   assert.ok(counts.advancedPatterns >= 1000);
-  assert.equal(content.studySets.sets.length, 20);
+  assert.equal(content.studySets.sets.length, 30);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
   const hedPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === "HED");
   assert.equal(hedPatterns.length, 40);
   assert.ok(hedPatterns.every((pattern) => pattern.langs.every((lang) => lang.examples.length === 12)), "every HED pattern should match CON006 with 12 examples per language");
+  const grammarSetIds = ["DET", "INF", "SUB", "FCS", "REL", "PRP", "WOR", "CAS", "ADJ", "KON"];
+  assert.ok(grammarSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all grammar study sets must be present");
+  assert.ok(grammarSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every grammar study set should contain 40 complete patterns");
   assert.equal(content.collections.english.dialogues.documents.length, 111);
   assert.equal(content.collections.english.patterns.documents.length, 353);
   assert.equal(content.collections.english.library.documents.length, 455);
