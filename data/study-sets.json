@@ -51,6 +51,43 @@
         "ADJ",
         "KON"
       ]
+    },
+    {
+      "id": "C1-QUESTIONS",
+      "title_en": "Questions in use",
+      "title_ru": "Вопросы в речи",
+      "set_ids": [
+        "QYN",
+        "QWH",
+        "QSUB",
+        "QOBJ",
+        "QPRE",
+        "QTAG",
+        "QIND",
+        "QNEG",
+        "QCHO",
+        "QCNF",
+        "QCL",
+        "QFOL",
+        "QOP",
+        "QCAU",
+        "QPUR",
+        "QTM",
+        "QPLC",
+        "QPRS",
+        "QQNT",
+        "QCMP",
+        "QHYP",
+        "QPRB",
+        "QPOL",
+        "QWRK",
+        "QACA",
+        "QDEC",
+        "QNGT",
+        "QREP",
+        "QDIS",
+        "QFRM"
+      ]
     }
   ],
   "sets": [
@@ -323,6 +360,276 @@
       "description_ru": "Точно выражайте возможность, рекомендацию и переданную позицию.",
       "level": "B2–C1",
       "path": "KON"
+    },
+    {
+      "id": "QYN",
+      "title_en": "Yes/no questions",
+      "title_ru": "Общие вопросы",
+      "description": "Check a fact, possibility or condition.",
+      "description_ru": "Проверяйте факт, возможность или условие.",
+      "level": "B2–C1",
+      "path": "QYN"
+    },
+    {
+      "id": "QWH",
+      "title_en": "Wh-questions",
+      "title_ru": "Специальные вопросы",
+      "description": "Ask for the missing reason, method, thing or outcome.",
+      "description_ru": "Спрашивайте о причине, способе, предмете или результате.",
+      "level": "B2–C1",
+      "path": "QWH"
+    },
+    {
+      "id": "QSUB",
+      "title_en": "Subject questions",
+      "title_ru": "Вопросы к подлежащему",
+      "description": "Ask who or what performs the key action.",
+      "description_ru": "Спрашивайте, кто или что выполняет ключевое действие.",
+      "level": "B2–C1",
+      "path": "QSUB"
+    },
+    {
+      "id": "QOBJ",
+      "title_en": "Object questions",
+      "title_ru": "Вопросы к дополнению",
+      "description": "Ask what action, evidence or response is needed.",
+      "description_ru": "Спрашивайте, какое действие, доказательство или ответ нужен.",
+      "level": "B2–C1",
+      "path": "QOBJ"
+    },
+    {
+      "id": "QPRE",
+      "title_en": "Preposition questions",
+      "title_ru": "Вопросы с предлогом",
+      "description": "Practise preposition plus question word as one unit.",
+      "description_ru": "Отрабатывайте предлог и вопросительное слово как единое целое.",
+      "level": "B2–C1",
+      "path": "QPRE"
+    },
+    {
+      "id": "QTAG",
+      "title_en": "Tag and checking questions",
+      "title_ru": "Разделительные и проверочные вопросы",
+      "description": "Invite confirmation without sounding abrupt.",
+      "description_ru": "Запрашивайте подтверждение без резкости.",
+      "level": "B2–C1",
+      "path": "QTAG"
+    },
+    {
+      "id": "QIND",
+      "title_en": "Indirect questions",
+      "title_ru": "Косвенные вопросы",
+      "description": "Keep question order inside polite embedded clauses.",
+      "description_ru": "Сохраняйте порядок слов в вежливых вложенных вопросах.",
+      "level": "B2–C1",
+      "path": "QIND"
+    },
+    {
+      "id": "QNEG",
+      "title_en": "Negative questions",
+      "title_ru": "Отрицательные вопросы",
+      "description": "Use negation to question an assumption or prompt action.",
+      "description_ru": "Используйте отрицание, чтобы проверить предположение или подтолкнуть к действию.",
+      "level": "B2–C1",
+      "path": "QNEG"
+    },
+    {
+      "id": "QCHO",
+      "title_en": "Alternative questions",
+      "title_ru": "Альтернативные вопросы",
+      "description": "Compare two routes before making a choice.",
+      "description_ru": "Сравнивайте два пути перед выбором.",
+      "level": "B2–C1",
+      "path": "QCHO"
+    },
+    {
+      "id": "QCNF",
+      "title_en": "Confirmation questions",
+      "title_ru": "Вопросы на подтверждение",
+      "description": "Check a fact carefully before relying on it.",
+      "description_ru": "Тщательно проверяйте факт, прежде чем на него опираться.",
+      "level": "B2–C1",
+      "path": "QCNF"
+    },
+    {
+      "id": "QCL",
+      "title_en": "Clarification questions",
+      "title_ru": "Уточняющие вопросы",
+      "description": "Repair meaning before the conversation moves on.",
+      "description_ru": "Уточняйте смысл до того, как разговор продолжится.",
+      "level": "B2–C1",
+      "path": "QCL"
+    },
+    {
+      "id": "QFOL",
+      "title_en": "Follow-up questions",
+      "title_ru": "Уточняющие вопросы продолжения",
+      "description": "Keep an answer moving toward its implication.",
+      "description_ru": "Развивайте ответ до его следствия.",
+      "level": "B2–C1",
+      "path": "QFOL"
+    },
+    {
+      "id": "QOP",
+      "title_en": "Opinion questions",
+      "title_ru": "Вопросы о мнении",
+      "description": "Invite a view with the right amount of openness.",
+      "description_ru": "Запрашивайте мнение, оставляя пространство для ответа.",
+      "level": "B2–C1",
+      "path": "QOP"
+    },
+    {
+      "id": "QCAU",
+      "title_en": "Cause and reason questions",
+      "title_ru": "Вопросы о причине",
+      "description": "Trace a result back to its likely cause.",
+      "description_ru": "Прослеживайте результат до вероятной причины.",
+      "level": "B2–C1",
+      "path": "QCAU"
+    },
+    {
+      "id": "QPUR",
+      "title_en": "Purpose questions",
+      "title_ru": "Вопросы о цели",
+      "description": "Ask what an action is meant to achieve.",
+      "description_ru": "Спрашивайте, какой цели служит действие.",
+      "level": "B2–C1",
+      "path": "QPUR"
+    },
+    {
+      "id": "QTM",
+      "title_en": "Time questions",
+      "title_ru": "Вопросы о времени",
+      "description": "Place an action, answer or decision on a timeline.",
+      "description_ru": "Помещайте действие, ответ или решение во временную шкалу.",
+      "level": "B2–C1",
+      "path": "QTM"
+    },
+    {
+      "id": "QPLC",
+      "title_en": "Place and setting questions",
+      "title_ru": "Вопросы о месте и формате",
+      "description": "Choose the right place or setting for the next step.",
+      "description_ru": "Выбирайте место или формат для следующего шага.",
+      "level": "B2–C1",
+      "path": "QPLC"
+    },
+    {
+      "id": "QPRS",
+      "title_en": "People and responsibility questions",
+      "title_ru": "Вопросы о людях и ответственности",
+      "description": "Identify who can act, decide or approve.",
+      "description_ru": "Определяйте, кто может действовать, решать или утверждать.",
+      "level": "B2–C1",
+      "path": "QPRS"
+    },
+    {
+      "id": "QQNT",
+      "title_en": "Quantity and degree questions",
+      "title_ru": "Вопросы о количестве и степени",
+      "description": "Ask about scale, frequency and intensity.",
+      "description_ru": "Спрашивайте о масштабе, частоте и степени.",
+      "level": "B2–C1",
+      "path": "QQNT"
+    },
+    {
+      "id": "QCMP",
+      "title_en": "Comparison questions",
+      "title_ru": "Вопросы для сравнения",
+      "description": "Compare options, outcomes and trade-offs.",
+      "description_ru": "Сравнивайте варианты, результаты и компромиссы.",
+      "level": "B2–C1",
+      "path": "QCMP"
+    },
+    {
+      "id": "QHYP",
+      "title_en": "Hypothetical questions",
+      "title_ru": "Гипотетические вопросы",
+      "description": "Explore a possible world before committing to it.",
+      "description_ru": "Исследуйте возможный сценарий до принятия решения.",
+      "level": "B2–C1",
+      "path": "QHYP"
+    },
+    {
+      "id": "QPRB",
+      "title_en": "Probability questions",
+      "title_ru": "Вопросы о вероятности",
+      "description": "Ask about likelihood without claiming certainty.",
+      "description_ru": "Спрашивайте о вероятности без ложной уверенности.",
+      "level": "B2–C1",
+      "path": "QPRB"
+    },
+    {
+      "id": "QPOL",
+      "title_en": "Polite request questions",
+      "title_ru": "Вежливые вопросы-просьбы",
+      "description": "Ask for help, information or action tactfully.",
+      "description_ru": "Тактично просите о помощи, информации или действии.",
+      "level": "B2–C1",
+      "path": "QPOL"
+    },
+    {
+      "id": "QWRK",
+      "title_en": "Workplace questions",
+      "title_ru": "Вопросы на работе",
+      "description": "Coordinate tasks, owners and deadlines at work.",
+      "description_ru": "Координируйте задачи, ответственных и сроки на работе.",
+      "level": "B2–C1",
+      "path": "QWRK"
+    },
+    {
+      "id": "QACA",
+      "title_en": "Academic and research questions",
+      "title_ru": "Академические и исследовательские вопросы",
+      "description": "Turn evidence and uncertainty into researchable questions.",
+      "description_ru": "Превращайте данные и неопределённость в исследовательские вопросы.",
+      "level": "B2–C1",
+      "path": "QACA"
+    },
+    {
+      "id": "QDEC",
+      "title_en": "Decision questions",
+      "title_ru": "Вопросы для принятия решений",
+      "description": "Frame the next decision and its threshold clearly.",
+      "description_ru": "Ясно формулируйте следующее решение и его критерий.",
+      "level": "B2–C1",
+      "path": "QDEC"
+    },
+    {
+      "id": "QNGT",
+      "title_en": "Negotiation questions",
+      "title_ru": "Вопросы для переговоров",
+      "description": "Open room for concessions, pauses and workable compromise.",
+      "description_ru": "Открывайте пространство для уступок, пауз и рабочего компромисса.",
+      "level": "B2–C1",
+      "path": "QNGT"
+    },
+    {
+      "id": "QREP",
+      "title_en": "Reported questions",
+      "title_ru": "Косвенная передача вопросов",
+      "description": "Report what was asked without losing the question's meaning.",
+      "description_ru": "Передавайте заданный вопрос, не теряя его смысла.",
+      "level": "B2–C1",
+      "path": "QREP"
+    },
+    {
+      "id": "QDIS",
+      "title_en": "Discourse-management questions",
+      "title_ru": "Вопросы для управления разговором",
+      "description": "Use questions to steer a conversation with care.",
+      "description_ru": "Используйте вопросы, чтобы бережно направлять разговор.",
+      "level": "B2–C1",
+      "path": "QDIS"
+    },
+    {
+      "id": "QFRM",
+      "title_en": "Question forms and auxiliaries",
+      "title_ru": "Формы вопросов и вспомогательные глаголы",
+      "description": "Control tense, auxiliary verbs and question formation.",
+      "description_ru": "Управляйте временем, вспомогательными глаголами и построением вопроса.",
+      "level": "B2–C1",
+      "path": "QFRM"
     }
   ]
 }

@@ -82,7 +82,7 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
 test("pattern catalogue opens every pattern directly and filters all patterns", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  await expect(rows).toHaveCount(1436);
+  await expect(rows).toHaveCount(2636);
   await expect(page.locator("[data-study-set-card]")).toHaveCount(0);
   await expect(page.locator(".study-dashboard")).toHaveCount(0);
   await page.locator('[data-category-filter]').selectOption("HED");
@@ -113,7 +113,7 @@ test("a new learner sees available patterns instead of an overdue debt", async (
   await page.evaluate(() => localStorage.removeItem("metkagram:progress:v2"));
   await page.reload();
   await expect(page.locator("[data-practice-queue-label]")).toHaveText("Доступно моделей");
-  await expect(page.locator("[data-practice-due]")).toHaveText(/1\s436/);
+  await expect(page.locator("[data-practice-due]")).toHaveText(/2\s636/);
   await page.goto("/ru/progress/");
   await expect(page.locator("[data-stat-due-label]")).toHaveText("Можно начать");
   await expect(page.locator("[data-progress-first-run]")).toBeVisible();
