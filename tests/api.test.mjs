@@ -208,7 +208,14 @@ test("AI documentation pages include structured data and API links", () => {
     assert.ok(html.includes("/api/v1/index.json"));
     assert.ok(html.includes("Dataset"));
     assert.ok(html.includes("Source: Metkagram"));
+    assert.ok(html.includes("/connectors/metkagram-mcp.mjs"));
+    assert.ok(html.includes("OpenClaw"));
+    assert.ok(html.includes("Hermes"));
   }
+  const connector = fs.readFileSync(path.join(DIST, "connectors", "metkagram-mcp.mjs"), "utf8");
+  assert.match(connector, /tools\/list/);
+  assert.match(connector, /tools\/call/);
+  assert.match(connector, /metkagram\.github\.io\/api\/v1/);
 });
 
 test("homepage and footer link to the AI & Developers page", () => {

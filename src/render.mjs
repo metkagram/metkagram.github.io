@@ -606,6 +606,34 @@ const id = "C1OP001";
 const response = await fetch(\`https://metkagram.github.io/api/v1/patterns/\${id.toLowerCase()}.json\`);
 const { provenance, data } = await response.json();
 // Always include provenance.canonical_url and provenance.attribution_text in your output.`;
+  const connectorUrl = `${SITE_URL}/connectors/metkagram-mcp.mjs`;
+  const connectorDownload = en ? "Download the read-only MCP bridge" : "Скачать read-only MCP bridge";
+  const openClawCode = `mkdir -p ~/.local/share/metkagram
+curl -fsSL ${connectorUrl} -o ~/.local/share/metkagram/metkagram-mcp.mjs
+
+openclaw mcp add metkagram \\
+  --command node \\
+  --arg ~/.local/share/metkagram/metkagram-mcp.mjs \\
+  --include 'metkagram_*'
+
+openclaw mcp doctor metkagram --probe`;
+  const hermesCode = `mkdir -p ~/.local/share/metkagram
+curl -fsSL ${connectorUrl} -o ~/.local/share/metkagram/metkagram-mcp.mjs
+
+# Add to ~/.hermes/config.yaml
+mcp_servers:
+  metkagram:
+    command: node
+    args: ["/home/YOU/.local/share/metkagram/metkagram-mcp.mjs"]
+    tools:
+      include: [metkagram_list_patterns, metkagram_get_pattern, metkagram_list_sets, metkagram_get_set, metkagram_search_index, metkagram_list_annotations]
+      prompts: false
+      resources: false
+
+# Then restart Hermes, or run /reload-mcp in a session.`;
+  const agentPrompt = en
+    ? "Find three B2–C1 patterns for making a polite request. Give examples, Russian translations and the canonical Metkagram source for each."
+    : "Найди три паттерна B2–C1 для вежливой просьбы. Дай примеры, переводы на русский и канонический источник Metkagram для каждого.";
 
   const body = `<section class="page-head section-pad"><p class="eyebrow">${t.forAiDevelopers}</p><h1>${title}</h1><p class="lede">${intro}</p><div class="ai-status"><a href="${API_URL}/index.json"><span>API index</span><code>${API_URL}/index.json</code></a><a href="${API_URL}/openapi.json"><span>OpenAPI</span><code>${API_URL}/openapi.json</code></a><a href="${API_URL}/mcp-server.json"><span>MCP</span><code>${API_URL}/mcp-server.json</code></a></div></section>
 
@@ -619,9 +647,11 @@ const { provenance, data } = await response.json();
 
 <section class="ai-section section-pad ruled" id="mcp"><div><p class="eyebrow">05 · ${t.aiMcp}</p><h2>${t.aiMcp}</h2></div><p class="lede">${en ? "No backend server is required. The MCP specification maps tool names to static URLs. Your client fetches the JSON directly from GitHub Pages." : "Бэкенд-сервер не требуется. Спецификация MCP сопоставляет имена инструментов со статическими URL. Ваш клиент загружает JSON напрямую с GitHub Pages."}</p><pre class="code-block"><code>${escapeHtml(mcpCode)}</code></pre><p><a href="${API_URL}/mcp-server.json">${en ? "Download MCP server specification" : "Скачать спецификацию MCP"}</a></p></section>
 
-<section class="ai-section section-pad ruled" id="downloads"><div><p class="eyebrow">06 · ${t.aiDownloads}</p><h2>${t.aiDownloads}</h2></div><nav class="download-list"><a href="${API_URL}/download/full-patterns.json">${en ? "Full patterns JSON" : "Все паттерны JSON"}</a><a href="${API_URL}/patterns.json">${en ? "Patterns API response" : "API-ответ паттернов"}</a><a href="${API_URL}/sets.json">${en ? "Study sets JSON" : "Учебные наборы JSON"}</a><a href="${API_URL}/search-index.json">${en ? "Search index JSON" : "Поисковый индекс JSON"}</a><a href="${API_URL}/openapi.json">${en ? "OpenAPI JSON" : "OpenAPI JSON"}</a><a href="${API_URL}/mcp-server.json">${en ? "MCP spec JSON" : "MCP JSON"}</a></nav></section>
+<section class="ai-section section-pad ruled" id="connectors"><div><p class="eyebrow">06 · ${en ? "Agent connectors" : "Коннекторы для агентов"}</p><h2>${en ? "Connect Metkagram to OpenClaw or Hermes" : "Подключите Metkagram к OpenClaw или Hermes"}</h2></div><p class="lede">${en ? "Use the included read-only stdio bridge. It turns the public static API into MCP tools, requires Node.js 18+ and no API key, and always returns the dataset provenance." : "Используйте встроенный read-only bridge для stdio. Он превращает публичный статический API в MCP-инструменты, требует Node.js 18+ и не требует API-ключа; каждый ответ сохраняет происхождение данных."}</p><div class="ai-columns"><article><h3>OpenClaw</h3><ol><li>${en ? "Download the bridge and register it as a local MCP server." : "Скачайте bridge и зарегистрируйте его как локальный MCP-сервер."}</li><li>${en ? "Use the probe to confirm that the six read-only tools are visible." : "Проверьте через probe, что доступны шесть read-only инструментов."}</li></ol><pre class="code-block"><code>${escapeHtml(openClawCode)}</code></pre><p><a href="https://docs.openclaw.ai/cli/mcp">${en ? "OpenClaw MCP reference" : "Справка OpenClaw MCP"} ↗</a></p></article><article><h3>Hermes</h3><ol><li>${en ? "Download the same bridge, then add the shown block to the MCP configuration." : "Скачайте тот же bridge и добавьте показанный блок в конфигурацию MCP."}</li><li>${en ? "Replace /home/YOU with the absolute path on the machine running Hermes." : "Замените /home/YOU на абсолютный путь на машине, где работает Hermes."}</li></ol><pre class="code-block"><code>${escapeHtml(hermesCode)}</code></pre><p><a href="https://hermes.dhuar.com/en/user-guide/features/mcp/">${en ? "Hermes MCP reference" : "Справка Hermes MCP"} ↗</a></p></article></div><p class="legal-note">${en ? "The connector exposes only read operations. Preserve Metkagram attribution and the canonical URL when an agent presents a record." : "Коннектор открывает только read-операции. Когда агент показывает запись, сохраните атрибуцию Metkagram и канонический URL."}</p><nav class="download-list"><a href="${connectorUrl}">${connectorDownload}</a><a href="${API_URL}/mcp-server.json">${en ? "Inspect tool specification" : "Посмотреть спецификацию инструментов"}</a></nav><h3>${en ? "Try it" : "Попробуйте"}</h3><pre class="code-block"><code>${escapeHtml(agentPrompt)}</code></pre></section>
 
-<section class="ai-section section-pad ruled" id="collaborate"><div><p class="eyebrow">07 · ${t.aiCollaborate}</p><h2>${t.aiCollaborate}</h2></div><p class="lede">${en ? "We welcome research, teaching, content and language-data collaborations that keep attribution intact." : "Мы приветствуем исследовательские, образовательные, контентные и языковые проекты с сохранением атрибуции."}</p><nav class="download-list"><a href="${ATTRIBUTION.contact_url}">${en ? "Contact MetalHatsCats" : "Связаться с MetalHatsCats"}</a><a href="${ATTRIBUTION.source_repository}">${en ? "GitHub repository" : "Репозиторий GitHub"}</a></nav></section>`;
+<section class="ai-section section-pad ruled" id="downloads"><div><p class="eyebrow">07 · ${t.aiDownloads}</p><h2>${t.aiDownloads}</h2></div><nav class="download-list"><a href="${API_URL}/download/full-patterns.json">${en ? "Full patterns JSON" : "Все паттерны JSON"}</a><a href="${API_URL}/patterns.json">${en ? "Patterns API response" : "API-ответ паттернов"}</a><a href="${API_URL}/sets.json">${en ? "Study sets JSON" : "Учебные наборы JSON"}</a><a href="${API_URL}/search-index.json">${en ? "Search index JSON" : "Поисковый индекс JSON"}</a><a href="${API_URL}/openapi.json">${en ? "OpenAPI JSON" : "OpenAPI JSON"}</a><a href="${API_URL}/mcp-server.json">${en ? "MCP spec JSON" : "MCP JSON"}</a></nav></section>
+
+<section class="ai-section section-pad ruled" id="collaborate"><div><p class="eyebrow">08 · ${t.aiCollaborate}</p><h2>${t.aiCollaborate}</h2></div><p class="lede">${en ? "We welcome research, teaching, content and language-data collaborations that keep attribution intact." : "Мы приветствуем исследовательские, образовательные, контентные и языковые проекты с сохранением атрибуции."}</p><nav class="download-list"><a href="${ATTRIBUTION.contact_url}">${en ? "Contact MetalHatsCats" : "Связаться с MetalHatsCats"}</a><a href="${ATTRIBUTION.source_repository}">${en ? "GitHub repository" : "Репозиторий GitHub"}</a></nav></section>`;
 
   const structuredData = [
     breadcrumbJson(pathname, title, locale),
