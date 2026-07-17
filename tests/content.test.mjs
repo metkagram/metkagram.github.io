@@ -25,7 +25,7 @@ test("all source content validates and contains a complete C1 pattern curriculum
   assert.equal(counts.annotatedDocuments, 2240);
   assert.equal(counts.annotatedSentences, 25116);
   assert.ok(counts.advancedPatterns >= 1000);
-  assert.equal(content.studySets.sets.length, 60);
+  assert.equal(content.studySets.sets.length, 80);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
   const hedPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === "HED");
   assert.equal(hedPatterns.length, 40);
@@ -36,6 +36,9 @@ test("all source content validates and contains a complete C1 pattern curriculum
   const questionSetIds = ["QYN", "QWH", "QSUB", "QOBJ", "QPRE", "QTAG", "QIND", "QNEG", "QCHO", "QCNF", "QCL", "QFOL", "QOP", "QCAU", "QPUR", "QTM", "QPLC", "QPRS", "QQNT", "QCMP", "QHYP", "QPRB", "QPOL", "QWRK", "QACA", "QDEC", "QNGT", "QREP", "QDIS", "QFRM"];
   assert.ok(questionSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all question study sets must be present");
   assert.ok(questionSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every question study set should contain 40 complete patterns");
+  const functionalSetIds = ["PFR", "ADV", "RQT", "OFR", "PRM", "CMT", "PLN", "PRI", "GOA", "CNS", "EXM", "SUM", "ORG", "FEL", "TCT", "FBK", "SOL", "RSK", "PRS", "SOC"];
+  assert.ok(functionalSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all functional study sets must be present");
+  assert.ok(functionalSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every functional study set should contain 40 complete patterns");
   assert.equal(content.collections.english.dialogues.documents.length, 111);
   assert.equal(content.collections.english.patterns.documents.length, 353);
   assert.equal(content.collections.english.library.documents.length, 455);

@@ -1,11 +1,11 @@
 # Migration verification
 
-- Generated routes: **9919**
-- API endpoints: **5124**
+- Generated routes: **11559**
+- API endpoints: **5992**
 - Annotated documents: **2240**
 - Annotated sentences: **25116**
-- Advanced B2–C1 patterns: **2636**
-- Redirect records: **4104**
+- Advanced B2–C1 patterns: **3436**
+- Redirect records: **4904**
 - Trailing-slash policy: directory URLs with trailing slash
 - Progress compatibility: metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added
 

@@ -88,6 +88,33 @@
         "QDIS",
         "QFRM"
       ]
+    },
+    {
+      "id": "C1-FUNCTIONS",
+      "title_en": "Functional language",
+      "title_ru": "Функциональная речь",
+      "set_ids": [
+        "PFR",
+        "ADV",
+        "RQT",
+        "OFR",
+        "PRM",
+        "CMT",
+        "PLN",
+        "PRI",
+        "GOA",
+        "CNS",
+        "EXM",
+        "SUM",
+        "ORG",
+        "FEL",
+        "TCT",
+        "FBK",
+        "SOL",
+        "RSK",
+        "PRS",
+        "SOC"
+      ]
     }
   ],
   "sets": [
@@ -630,6 +657,186 @@
       "description_ru": "Управляйте временем, вспомогательными глаголами и построением вопроса.",
       "level": "B2–C1",
       "path": "QFRM"
+    },
+    {
+      "id": "PFR",
+      "title_en": "Preferences and choices",
+      "title_ru": "Предпочтения и выбор",
+      "description": "State a preference and weigh alternatives.",
+      "description_ru": "Выражайте предпочтение и взвешивайте альтернативы.",
+      "level": "B2–C1",
+      "path": "PFR"
+    },
+    {
+      "id": "ADV",
+      "title_en": "Advice and recommendations",
+      "title_ru": "Советы и рекомендации",
+      "description": "Recommend a next step without overstating certainty.",
+      "description_ru": "Рекомендуйте следующий шаг без излишней уверенности.",
+      "level": "B2–C1",
+      "path": "ADV"
+    },
+    {
+      "id": "RQT",
+      "title_en": "Requests and follow-through",
+      "title_ru": "Просьбы и дальнейшие действия",
+      "description": "Make a clear, workable request.",
+      "description_ru": "Формулируйте ясную и выполнимую просьбу.",
+      "level": "B2–C1",
+      "path": "RQT"
+    },
+    {
+      "id": "OFR",
+      "title_en": "Offers and support",
+      "title_ru": "Предложения помощи",
+      "description": "Offer a concrete contribution with an easy next step.",
+      "description_ru": "Предлагайте конкретную помощь с простым следующим шагом.",
+      "level": "B2–C1",
+      "path": "OFR"
+    },
+    {
+      "id": "PRM",
+      "title_en": "Permission and boundaries",
+      "title_ru": "Разрешение и границы",
+      "description": "State what is allowed, required or out of scope.",
+      "description_ru": "Обозначайте, что разрешено, требуется или выходит за рамки.",
+      "level": "B2–C1",
+      "path": "PRM"
+    },
+    {
+      "id": "CMT",
+      "title_en": "Commitments and promises",
+      "title_ru": "Обязательства и обещания",
+      "description": "Make commitments that are specific and accountable.",
+      "description_ru": "Давайте конкретные и проверяемые обязательства.",
+      "level": "B2–C1",
+      "path": "CMT"
+    },
+    {
+      "id": "PLN",
+      "title_en": "Planning and scheduling",
+      "title_ru": "Планирование и расписание",
+      "description": "Sequence actions and make the next step visible.",
+      "description_ru": "Выстраивайте действия по порядку и делайте следующий шаг ясным.",
+      "level": "B2–C1",
+      "path": "PLN"
+    },
+    {
+      "id": "PRI",
+      "title_en": "Priorities and trade-offs",
+      "title_ru": "Приоритеты и компромиссы",
+      "description": "Name what matters most and what can wait.",
+      "description_ru": "Обозначайте, что важнее всего и что может подождать.",
+      "level": "B2–C1",
+      "path": "PRI"
+    },
+    {
+      "id": "GOA",
+      "title_en": "Goals and intentions",
+      "title_ru": "Цели и намерения",
+      "description": "Express what the work is meant to achieve.",
+      "description_ru": "Выражайте, какой цели должна служить работа.",
+      "level": "B2–C1",
+      "path": "GOA"
+    },
+    {
+      "id": "CNS",
+      "title_en": "Concession and contrast",
+      "title_ru": "Уступка и контраст",
+      "description": "Acknowledge a point while keeping the main claim clear.",
+      "description_ru": "Признавайте аргумент, сохраняя ясность главного тезиса.",
+      "level": "B2–C1",
+      "path": "CNS"
+    },
+    {
+      "id": "EXM",
+      "title_en": "Examples and specification",
+      "title_ru": "Примеры и конкретизация",
+      "description": "Make an abstract point concrete and precise.",
+      "description_ru": "Делайте абстрактную мысль конкретной и точной.",
+      "level": "B2–C1",
+      "path": "EXM"
+    },
+    {
+      "id": "SUM",
+      "title_en": "Summaries and conclusions",
+      "title_ru": "Итоги и выводы",
+      "description": "Close a discussion with a proportionate conclusion.",
+      "description_ru": "Завершайте обсуждение соразмерным выводом.",
+      "level": "B2–C1",
+      "path": "SUM"
+    },
+    {
+      "id": "ORG",
+      "title_en": "Organising conversation",
+      "title_ru": "Организация разговора",
+      "description": "Open, sequence and redirect a discussion constructively.",
+      "description_ru": "Открывайте, выстраивайте и перенаправляйте обсуждение конструктивно.",
+      "level": "B2–C1",
+      "path": "ORG"
+    },
+    {
+      "id": "FEL",
+      "title_en": "Feelings and reactions",
+      "title_ru": "Чувства и реакции",
+      "description": "Express a reaction without making it a personal attack.",
+      "description_ru": "Выражайте реакцию без личного обвинения.",
+      "level": "B2–C1",
+      "path": "FEL"
+    },
+    {
+      "id": "TCT",
+      "title_en": "Tact and politeness",
+      "title_ru": "Такт и вежливость",
+      "description": "Make a difficult point easier to receive.",
+      "description_ru": "Смягчайте сложную мысль, чтобы её было легче принять.",
+      "level": "B2–C1",
+      "path": "TCT"
+    },
+    {
+      "id": "FBK",
+      "title_en": "Feedback and evaluation",
+      "title_ru": "Обратная связь и оценка",
+      "description": "Give feedback that points to a concrete improvement.",
+      "description_ru": "Давайте обратную связь, указывающую на конкретное улучшение.",
+      "level": "B2–C1",
+      "path": "FBK"
+    },
+    {
+      "id": "SOL",
+      "title_en": "Problem-solving",
+      "title_ru": "Решение проблем",
+      "description": "Frame a problem around a practical response.",
+      "description_ru": "Формулируйте проблему вокруг практического ответа.",
+      "level": "B2–C1",
+      "path": "SOL"
+    },
+    {
+      "id": "RSK",
+      "title_en": "Risk and precautions",
+      "title_ru": "Риск и меры предосторожности",
+      "description": "Name uncertainty and choose a proportionate safeguard.",
+      "description_ru": "Называйте неопределённость и выбирайте соразмерную защиту.",
+      "level": "B2–C1",
+      "path": "RSK"
+    },
+    {
+      "id": "PRS",
+      "title_en": "Persuasion and influence",
+      "title_ru": "Убеждение и влияние",
+      "description": "Make the case for action without forcing agreement.",
+      "description_ru": "Обосновывайте действие, не вынуждая к согласию.",
+      "level": "B2–C1",
+      "path": "PRS"
+    },
+    {
+      "id": "SOC",
+      "title_en": "Social interaction",
+      "title_ru": "Социальное взаимодействие",
+      "description": "Handle invitations, thanks and shared plans naturally.",
+      "description_ru": "Естественно ведите приглашения, благодарности и общие планы.",
+      "level": "B2–C1",
+      "path": "SOC"
     }
   ]
 }
