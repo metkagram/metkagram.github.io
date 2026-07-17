@@ -20,6 +20,7 @@ import {
   patternPage,
   practicePage,
   roadmapPage,
+  supportPage,
   rulesPage,
   studySetPage
 } from "../src/render.mjs";
@@ -174,6 +175,7 @@ function build() {
     writeRoute(`/${locale}/legal/terms/`, legalPage(locale, "terms"));
     writeRoute(`/${locale}/history/`, historyPage(locale));
     writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
+    writeRoute(`/${locale}/support/`, supportPage(locale));
     for (const target of Object.values(targetMeta)) {
       writeRoute(`/${locale}/explore/${target.key}/`, languageHub(locale, target.key, content));
       writeRoute(`/${locale}/explore/${target.key}/annotation-rules/`, rulesPage(locale, target.key));

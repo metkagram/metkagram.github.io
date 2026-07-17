@@ -125,6 +125,16 @@ test("home pages include a useful FAQ for learners and agents", () => {
   assert.match(ru, /Может ли агент ИИ использовать данные\?/);
 });
 
+test("support pages explain sponsorship without compromising editorial independence", () => {
+  const en = fs.readFileSync(path.join(DIST, "en/support/index.html"), "utf8");
+  const ru = fs.readFileSync(path.join(DIST, "ru/support/index.html"), "utf8");
+  assert.match(en, /Support Metkagram: sponsorship and partnerships/);
+  assert.match(en, /Sponsors do not receive the right to alter/);
+  assert.match(en, /linkedin\.com\/company\/metalhatscats/);
+  assert.match(ru, /Поддержать Metkagram: партнёрство и спонсорство/);
+  assert.match(ru, /Спонсоры не получают права менять/);
+});
+
 test("articles, project notes and documentation offer accessible share actions", () => {
   const article = htmlFiles(DIST).find((file) => /\/explore\/english\/dialogues\/[^/]+\/index\.html$/.test(file));
   assert.ok(article, "an annotated article should exist");

@@ -110,6 +110,16 @@ summary { cursor: pointer; }
 .faq-list summary::marker { color: var(--accent); }
 .faq-list details > div { padding: 0 2rem 1.25rem 0; }
 .faq-list p { max-width: 44rem; margin: 0 0 .8rem; color: var(--muted); line-height: 1.55; }
+.support-ways, .support-promise, .support-contact { display: grid; grid-template-columns: minmax(14rem, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 8vw, 8rem); align-items: start; }
+.support-ways h2, .support-promise h2, .support-contact h2 { max-width: 12ch; margin: 0; font-size: clamp(1.9rem, 3.4vw, 3.5rem); }
+.support-ways > div:last-child { border-top: 1px solid var(--line-dark); }
+.support-ways article { display: grid; grid-template-columns: 2rem 1fr; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.support-ways article > span { font-family: var(--mono); font-size: .7rem; }
+.support-ways h3 { margin: 0; font-size: 1.15rem; }
+.support-ways p { margin: .5rem 0 0; color: var(--muted); line-height: 1.55; }
+.support-promise ul { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line-dark); }
+.support-promise li { position: relative; padding: 1rem 0 1rem 1.5rem; border-bottom: 1px solid var(--line); line-height: 1.5; }
+.support-promise li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
 .home-store-links { display: grid; width: 100%; border-top: 1px solid var(--line-dark); }
 .home-store-links a { display: flex; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: .8rem; font-weight: 600; text-decoration: none; }
 .language-choices { display: grid; }
@@ -432,7 +442,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .site-nav { position: absolute; top: 100%; left: 1rem; right: 1rem; display: none; flex-direction: column; padding: 1rem; border: 1px solid var(--ink); background: var(--surface); }
   .site-nav[data-open="true"] { display: flex; }
   .home-hero, .practice-intro { min-height: auto; }
-  .home-intro, .section-heading, .method-strip, .home-method, .study-language, .home-connect, .home-faq { grid-template-columns: 1fr; }
+  .home-intro, .section-heading, .method-strip, .home-method, .study-language, .home-connect, .home-faq, .support-ways, .support-promise, .support-contact { grid-template-columns: 1fr; }
   .annotation-controls { align-items: start; flex-direction: column; }
   .home-intro { gap: 2rem; }
   .home-action { max-width: 38rem; padding-bottom: 0; }

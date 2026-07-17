@@ -88,7 +88,7 @@ export const ui = {
       ["What is available on the site?", "Annotated English and German sentences, dialogues, reference collections, a notation guide, and a public catalogue of B2–C1 patterns with examples and variations.", "/explore/", "Browse the collections"],
       ["Can an AI agent use the data?", "Yes. The static API, search index, downloadable datasets and MCP specification let agents retrieve patterns, sets and annotated documents. Keep the provenance and canonical link when presenting a record.", "/ai/", "Open agent resources"],
       ["Is this only a learning website?", "No. The token-level annotation scheme is also an open, machine-readable research resource for NLP-oriented analysis, teaching experiments and language-data work.", "/method/", "See the research approach"],
-      ["Can I reuse or contribute to the project?", "The content is free for personal, educational and other non-commercial use with attribution. For collaborations, research or commercial use, contact the project team.", "https://www.linkedin.com/company/metalhatscats", "Contact MetalHatsCats"]
+      ["Can I reuse or contribute to the project?", "The content is free for personal, educational and other non-commercial use with attribution. For sponsorships, collaborations, research or commercial use, see the partnership page.", "/support/", "Support the project"]
     ],
     dialogues: "Dialogues",
     patterns: "Patterns",
@@ -199,6 +199,7 @@ export const ui = {
     aboutTitle: "What Metkagram does",
     aboutIntro: "Metkagram is an open grammar-markup workspace for English and German learners who want to reuse whole phrases.",
     source: "Source",
+    support: "Support the project",
     apps: "Mobile apps",
     terms: "Terms of Use",
     datasets: "Datasets",
@@ -318,7 +319,7 @@ export const ui = {
       ["Что есть на сайте?", "Аннотированные фразы на английском и немецком, диалоги, справочные подборки, гид по разметке и публичный каталог паттернов B2–C1 с примерами и вариациями.", "/explore/", "Открыть подборки"],
       ["Может ли агент ИИ использовать данные?", "Да. Статическое API, поисковый индекс, загружаемые датасеты и спецификация MCP позволяют агентам получать паттерны, наборы и аннотированные документы. При показе записи сохраните её происхождение и каноническую ссылку.", "/ai/", "Ресурсы для агентов"],
       ["Это только сайт для изучения языка?", "Нет. Схема разметки на уровне токенов — ещё и открытый машиночитаемый исследовательский ресурс для NLP-ориентированного анализа, учебных экспериментов и работы с языковыми данными.", "/method/", "Исследовательский подход"],
-      ["Можно использовать материалы или участвовать в проекте?", "Материалы бесплатны для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для коллабораций, исследований или коммерческого использования свяжитесь с командой.", "https://www.linkedin.com/company/metalhatscats", "Связаться с MetalHatsCats"]
+      ["Можно использовать материалы или участвовать в проекте?", "Материалы бесплатны для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для спонсорства, коллабораций, исследований или коммерческого использования откройте страницу партнёрства.", "/support/", "Поддержать проект"]
     ],
     dialogues: "Диалоги",
     patterns: "Речевые модели",
@@ -429,6 +430,7 @@ export const ui = {
     aboutTitle: "О Metkagram",
     aboutIntro: "Открытый способ учить английский и немецкий через живые фразы и понятную разметку.",
     source: "Исходный код",
+    support: "Поддержать проект",
     apps: "Мобильные приложения",
     terms: "Условия использования",
     datasets: "Данные",
