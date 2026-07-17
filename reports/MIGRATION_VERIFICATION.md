@@ -1,13 +1,13 @@
 # Migration verification
 
-- Generated routes: **11559**
+- Generated routes: **11555**
 - API endpoints: **5992**
 - Annotated documents: **2240**
 - Annotated sentences: **25116**
 - Advanced B2–C1 patterns: **3436**
 - Redirect records: **4904**
 - Trailing-slash policy: directory URLs with trailing slash
-- Progress compatibility: metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added
+- Progress compatibility: The public website no longer includes review or progress synchronization features.
 
 ## Automated verification
 
@@ -21,4 +21,4 @@ Screenshots are stored in `reports/screenshots/`; Lighthouse JSON is stored at `
 ## External steps
 
 - No launch blockers remain.
-- Retain the MetalHatsCats SRS compatibility API, transfer utility, and permanent redirects for at least one year (preferably indefinitely).
+- Retain permanent redirects for historical MetalHatsCats URLs.

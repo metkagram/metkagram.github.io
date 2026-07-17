@@ -19,9 +19,7 @@ import {
   legalPage,
   patternPage,
   practicePage,
-  progressPage,
   roadmapPage,
-  reviewPage,
   rulesPage,
   studySetPage
 } from "../src/render.mjs";
@@ -75,8 +73,8 @@ function buildRedirectManifest(content) {
 
   add("/ru/metkax", `${SITE_URL}/ru/practice/`);
   add("/ru/metkax/about", `${SITE_URL}/ru/about/`);
-  add("/ru/metkax/review", `${SITE_URL}/ru/review/`);
-  add("/ru/metkax/stats", `${SITE_URL}/ru/progress/`);
+  add("/ru/metkax/review", `${SITE_URL}/ru/practice/`);
+  add("/ru/metkax/stats", `${SITE_URL}/ru/practice/`);
   add("/ru/metkax/dev", `${SITE_URL}/ru/practice/`);
   add("/ru/metkax/generator", `${SITE_URL}/ru/practice/`);
   add("/ru/metkax/patterns", `${SITE_URL}/data/advanced-patterns.json`);
@@ -88,7 +86,7 @@ function buildRedirectManifest(content) {
   add("/apps/metkagram", `${SITE_URL}/en/`);
   add("/products/metkagram/privacy", `${SITE_URL}/en/legal/privacy/`);
   add("/products/metkagram/terms", `${SITE_URL}/en/legal/terms/`);
-  add("/products/metkagram/delete-data", `${SITE_URL}/en/progress/`);
+  add("/products/metkagram/delete-data", `${SITE_URL}/en/legal/privacy/`);
   add("/datasets/metkagram-library", `${SITE_URL}/en/explore/`);
   add("/datasets/metkagram-library/download", `${SITE_URL}/data/catalog.json`);
   add("/datasets/metkagram-library/schema", `${SITE_URL}/data/schema.json`);
@@ -169,8 +167,6 @@ function build() {
     writeRoute(`/${locale}/`, localeHome(locale, content));
     writeRoute(`/${locale}/explore/`, explorePage(locale, content));
     writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns, content.studySets));
-    writeRoute(`/${locale}/review/`, reviewPage(locale));
-    writeRoute(`/${locale}/progress/`, progressPage(locale));
     writeRoute(`/${locale}/method/`, methodPage(locale));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
     writeRoute(`/${locale}/apps/`, appsPage(locale));
@@ -231,8 +227,8 @@ function build() {
     migratedContent: counts,
     redirectRecordCount: redirects.length,
     trailingSlashPolicy: "directory URLs with trailing slash",
-    syncCompatibility: "metkax:srs:v1 and metkax:srs:code retained; v2 export envelope added",
-    externalSteps: ["No launch blockers remain.", "Retain the MetalHatsCats SRS compatibility API, transfer utility, and permanent redirects for at least one year (preferably indefinitely)."]
+    syncCompatibility: "The public website no longer includes review or progress synchronization features.",
+    externalSteps: ["No launch blockers remain.", "Retain permanent redirects for historical MetalHatsCats URLs."]
   };
   writeFile("migration-verification.json", `${JSON.stringify(report, null, 2)}\n`);
   fs.mkdirSync(path.join(ROOT, "reports"), { recursive: true });

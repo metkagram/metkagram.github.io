@@ -109,39 +109,6 @@ test("pattern catalogue opens every pattern directly and filters all patterns", 
   await expect(page.locator("[data-pattern-count]")).toHaveText(/Showing \d+ patterns/);
 });
 
-test("review queue saves an SRS result", async ({ page }) => {
-  await page.goto("/en/review/");
-  await expect(page.locator("[data-review-title]")).not.toBeEmpty();
-  await page.locator("[data-reveal]").click();
-  await page.locator('[data-grade="1"]').click();
-  const stored = await page.evaluate(() => localStorage.getItem("metkagram:progress:v2"));
-  expect(stored).toContain('"reps":1');
-});
-
-test("a new learner sees available patterns instead of an overdue debt", async ({ page }) => {
-  await page.goto("/ru/practice/");
-  await page.evaluate(() => localStorage.removeItem("metkagram:progress:v2"));
-  await page.reload();
-  await expect(page.locator("[data-practice-queue-label]")).toHaveText("Доступно моделей");
-  await expect(page.locator("[data-practice-due]")).toHaveText(/3\s436/);
-  await page.goto("/ru/progress/");
-  await expect(page.locator("[data-stat-due-label]")).toHaveText("Можно начать");
-  await expect(page.locator("[data-progress-first-run]")).toBeVisible();
-  await page.goto("/ru/practice/set/hed/");
-  await expect(page.locator(".study-set-head .lede")).toHaveText("Смягчайте и уточняйте утверждения без потери смысла.");
-});
-
-test("progress page renders stored statistics", async ({ page }) => {
-  await page.goto("/en/progress/");
-  await page.evaluate(() => {
-    const state = { id: "CON001", reps: 1, ease: 2.5, interval: 1, last: Date.now(), next: Date.now() + 86400000, history: [{ t: Date.now(), grade: 1 }] };
-    localStorage.setItem("metkagram:progress:v2", JSON.stringify({ schemaVersion: 2, exportedAt: new Date().toISOString(), records: { CON001: state } }));
-  });
-  await page.reload();
-  await expect(page.locator("[data-stat-reviewed]")).toHaveText("1");
-  await expect(page.locator("[data-progress-rows] tr")).toHaveCount(1);
-});
-
 test("mobile navigation opens and keyboard focus is visible", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile", "mobile-only assertion");
   await page.goto("/ru/");

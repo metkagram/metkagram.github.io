@@ -75,6 +75,18 @@ test("localized route switch preserves path context", () => {
   assert.match(html, /href="\/ru\/explore\/german\/dialogues\/" lang="ru"/);
 });
 
+test("the public workspace is focused on reading datasets, not SRS features", () => {
+  for (const locale of ["en", "ru"]) {
+    const home = fs.readFileSync(path.join(DIST, locale, "index.html"), "utf8");
+    assert.doesNotMatch(home, new RegExp(`href="/${locale}/review/"`));
+    assert.doesNotMatch(home, new RegExp(`href="/${locale}/progress/"`));
+    assert.ok(fs.existsSync(path.join(DIST, locale, "practice", "index.html")));
+    assert.ok(fs.existsSync(path.join(DIST, locale, "ai", "index.html")));
+    assert.ok(!fs.existsSync(path.join(DIST, locale, "review", "index.html")));
+    assert.ok(!fs.existsSync(path.join(DIST, locale, "progress", "index.html")));
+  }
+});
+
 test("English and German tag guides are sentence-first and grouped by purpose", () => {
   const english = fs.readFileSync(path.join(DIST, "en/explore/english/annotation-rules/index.html"), "utf8");
   const german = fs.readFileSync(path.join(DIST, "ru/explore/german/annotation-rules/index.html"), "utf8");
