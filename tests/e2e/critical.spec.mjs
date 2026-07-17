@@ -42,7 +42,7 @@ test("home keeps the interface switch and makes both learning modes explicit", a
 test("method page explains the learning loop and names its research sources", async ({ page }) => {
   await page.goto("/en/method/");
   await expect(page.getByRole("heading", { name: "Sentence → Signal → Structure → Pattern → Variation → Recall" })).toBeVisible();
-  await expect(page.getByText("These mechanisms support the design logic")).toBeVisible();
+  await expect(page.getByText("A research-oriented, NLP-ready foundation strengthens the method")).toBeVisible();
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 

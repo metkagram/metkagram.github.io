@@ -92,6 +92,8 @@ test("English and German tag guides are sentence-first and grouped by purpose", 
   const german = fs.readFileSync(path.join(DIST, "ru/explore/german/annotation-rules/index.html"), "utf8");
   assert.match(english, /<h1>How to read English tags<\/h1>/);
   assert.match(english, /Sentence first, tags second/);
+  assert.match(english, /research-oriented annotation scheme/);
+  assert.match(english, /NLP work/);
   assert.match(english, /class="rule-group rule-group-subject"/);
   assert.match(english, /class="rule-group rule-group-helper"/);
   assert.match(german, /<h1>Как читать разметку немецких фраз<\/h1>/);
@@ -103,11 +105,13 @@ test("method routes keep the learning loop and annotation readable without JavaS
   const en = fs.readFileSync(path.join(DIST, "en/method/index.html"), "utf8");
   const ru = fs.readFileSync(path.join(DIST, "ru/method/index.html"), "utf8");
   assert.match(en, /Sentence → Signal → Structure → Pattern → Variation → Recall/);
-  assert.match(en, /What is original about Metkagram\?/);
+  assert.match(en, /A research system, not a collection of labels/);
+  assert.match(en, /NLP-ready data/);
   assert.match(en, /spaced repetition\?/);
   assert.match(en, /role="tooltip"/);
   assert.match(en, /aria-describedby="method-tag-/);
-  assert.match(ru, /В чём ноу-хау Metkagram\?/);
+  assert.match(ru, /Исследовательская система, а не набор ярлыков/);
+  assert.match(ru, /NLP-совместимые данные/);
   assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
