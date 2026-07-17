@@ -157,8 +157,10 @@ test("every generated page carries the current brand and discoverability metadat
     const html = fs.readFileSync(file, "utf8");
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);
     assert.match(html, /<meta name="description" content="[^"]+">/, `${file} needs a description`);
+    assert.match(html, /<meta name="robots" content="(?:index,follow|max-image-preview|noindex,follow)/, `${file} needs crawl directives`);
     assert.match(html, /rel="canonical" href="https:\/\/metkagram\.github\.io\//, `${file} needs a production canonical`);
     assert.match(html, /assets\/social\/metkagram-social-preview-1200x630\.png/, `${file} needs the branded social preview`);
+    assert.match(html, /og:image:width" content="1200"/, `${file} needs social image dimensions`);
     assert.match(html, /rel="manifest" href="\/assets\/web\/site\.webmanifest"/, `${file} needs the web manifest`);
     assert.doesNotMatch(html, /assets\/social-preview\.png/, `${file} must not use the legacy social preview`);
     const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");

@@ -144,6 +144,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
   const metaDescription = conciseMeta(description, 155);
   const canonicalPath = notFound ? "/404.html" : slugPath(pathname);
   const canonical = `${SITE_URL}${canonicalPath}`;
+  const robots = notFound ? "noindex,follow" : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
   const alternates = notFound ? "" : root
     ? `<link rel="alternate" hreflang="x-default" href="${SITE_URL}/"><link rel="alternate" hreflang="en" href="${SITE_URL}/en/"><link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">`
     : `<link rel="alternate" hreflang="en" href="${SITE_URL}${equivalentLocalePath(pathname, "en")}"><link rel="alternate" hreflang="ru" href="${SITE_URL}${equivalentLocalePath(pathname, "ru")}"><link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`;
@@ -154,7 +155,8 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(metaTitle)}</title>
   <meta name="description" content="${escapeHtml(metaDescription)}">
-  ${notFound ? '<meta name="robots" content="noindex,follow">' : ""}
+  <meta name="robots" content="${robots}">
+  <meta name="author" content="Metkagram">
   <meta name="theme-color" content="#FFC400">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="${canonical}">
@@ -162,14 +164,19 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <meta property="og:type" content="${type}">
   <meta property="og:site_name" content="Metkagram">
   <meta property="og:locale" content="${locale === "ru" ? "ru_RU" : "en_US"}">
+  <meta property="og:locale:alternate" content="${locale === "ru" ? "en_US" : "ru_RU"}">
   <meta property="og:title" content="${escapeHtml(metaTitle)}">
   <meta property="og:description" content="${escapeHtml(metaDescription)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Metkagram — annotated language patterns for English and German">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(metaTitle)}">
   <meta name="twitter:description" content="${escapeHtml(metaDescription)}">
   <meta name="twitter:image" content="${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png">
+  <meta name="twitter:image:alt" content="Metkagram — annotated language patterns for English and German">
   <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/icons/metkagram-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/icons/metkagram-icon-180x180.png">

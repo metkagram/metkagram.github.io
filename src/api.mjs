@@ -768,6 +768,7 @@ export function buildLlmsTxt(content, counts) {
     `- OpenAPI: ${API_URL}/openapi.json`,
     `- Attribution policy: ${API_URL}/attribution.json`,
     `- MCP tool spec: ${API_URL}/mcp-server.json`,
+    `- Read-only MCP bridge: ${SITE_URL}/connectors/metkagram-mcp.mjs`,
     `- Developer docs: ${SITE_URL}/en/ai/`,
     "",
     "## Public datasets",
@@ -785,7 +786,7 @@ export function buildLlmsTxt(content, counts) {
     "",
     'Web page: "Source: Metkagram — https://metkagram.github.io/" with a link to the relevant pattern or document page.',
     `Academic: Metkagram (${new Date().getFullYear()}). B2–C1 English and German language patterns. ${SITE_URL}. ${ATTRIBUTION.license}.`,
-    'AI-generated answer: "This answer uses data from Metkagram (https://metkagram.github.io/). See the source page for the full pattern and attribution.',
+    'AI-generated answer: "This answer uses data from Metkagram (https://metkagram.github.io/). See the source page for the full pattern and attribution."',
     "",
     "## Contact",
     "",
@@ -796,7 +797,11 @@ export function buildLlmsTxt(content, counts) {
 }
 
 export function buildRobotsTxt(apiRoutes) {
+  const aiAgents = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended"];
   const lines = [
+    "# Explicitly permitted AI agents. Public pages, datasets and MCP metadata are read-only.",
+    ...aiAgents.flatMap((agent) => [`User-agent: ${agent}`, "Allow: /", ""]),
+    "# Default crawl policy",
     "User-agent: *",
     "Allow: /",
     "Allow: /api/v1/",
@@ -805,10 +810,10 @@ export function buildRobotsTxt(apiRoutes) {
     "",
     `Sitemap: ${SITE_URL}/sitemap.xml`,
     "",
-    "# AI agents",
-    `API index: ${API_URL}/index.json`,
-    `OpenAPI: ${API_URL}/openapi.json`,
-    `llms.txt: ${SITE_URL}/llms.txt`,
+    "# AI agent entry points",
+    `# API index: ${API_URL}/index.json`,
+    `# OpenAPI: ${API_URL}/openapi.json`,
+    `# llms.txt: ${SITE_URL}/llms.txt`,
   ];
   return lines.join("\n") + "\n";
 }

@@ -185,19 +185,23 @@ test("downloadable full datasets exist and contain provenance", () => {
   assert.ok(fs.existsSync(path.join(API, "download", "annotations-en-dialogues.json")));
 });
 
-test("llms.txt, robots.txt and sitemap reference the API", () => {
+test("llms.txt, robots.txt and sitemap expose the right surfaces", () => {
   const llms = fs.readFileSync(path.join(DIST, "llms.txt"), "utf8");
   assert.ok(llms.includes("/api/v1/index.json"));
+  assert.ok(llms.includes("/connectors/metkagram-mcp.mjs"));
   assert.ok(llms.includes("Attribution"));
   assert.ok(llms.includes("Source: Metkagram"));
+  assert.ok(llms.includes('attribution."'));
 
   const robots = fs.readFileSync(path.join(DIST, "robots.txt"), "utf8");
   assert.ok(robots.includes("Allow: /api/v1/"));
   assert.ok(robots.includes("Sitemap:"));
-  assert.ok(robots.includes("OpenAPI:"));
+  for (const agent of ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended"]) {
+    assert.ok(robots.includes(`User-agent: ${agent}`));
+  }
 
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
-  assert.ok(sitemap.includes("/api/v1/index.json"));
+  assert.ok(!sitemap.includes("/api/v1/"));
   assert.ok(sitemap.includes("/en/ai/"));
   assert.ok(sitemap.includes("/ru/ai/"));
 });
