@@ -46,6 +46,16 @@ test("method page explains the learning loop and names its research sources", as
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
+test("articles provide compact social sharing controls", async ({ page }) => {
+  await page.goto("/en/method/");
+  const share = page.locator("[data-share-bar]");
+  await expect(share).toBeVisible();
+  await expect(share.getByRole("link", { name: "Telegram" })).toHaveAttribute("href", /t\.me\/share\/url/);
+  await expect(share.getByRole("link", { name: "VK" })).toHaveAttribute("href", /vk\.com\/share\.php/);
+  await expect(share.getByRole("link", { name: "X" })).toHaveAttribute("href", /x\.com\/intent\/post/);
+  await expect(share.getByRole("button", { name: "Copy link" })).toBeVisible();
+});
+
 test("mobile app and legal pages expose store and policy links", async ({ page }) => {
   await page.goto("/en/apps/");
   await expect(page.getByRole("heading", { name: "The original practice apps." })).toBeVisible();

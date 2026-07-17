@@ -99,6 +99,20 @@ test("method routes keep the learning loop and annotation readable without JavaS
   assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
+test("articles, project notes and documentation offer accessible share actions", () => {
+  const article = htmlFiles(DIST).find((file) => /\/explore\/english\/dialogues\/[^/]+\/index\.html$/.test(file));
+  assert.ok(article, "an annotated article should exist");
+  const files = [article, path.join(DIST, "en/method/index.html"), path.join(DIST, "ru/roadmap/index.html"), path.join(DIST, "en/history/index.html"), path.join(DIST, "ru/ai/index.html")];
+  for (const file of files) {
+    const html = fs.readFileSync(file, "utf8");
+    assert.match(html, /data-share-bar/);
+    assert.match(html, /data-copy-link/);
+    assert.match(html, /t\.me\/share\/url/);
+    assert.match(html, /vk\.com\/share\.php/);
+    assert.match(html, /x\.com\/intent\/post/);
+  }
+});
+
 test("canonical, hreflang and sitemap use the production Pages origin", () => {
   const file = path.join(DIST, "ru/explore/english/patterns/index.html");
   const html = fs.readFileSync(file, "utf8");

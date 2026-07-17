@@ -399,6 +399,12 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
 .history-timeline p { max-width: 58ch; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.2rem); }
 .history-sources nav { display: grid; max-width: 48rem; margin-top: 1.5rem; border-top: 1px solid var(--line-dark); }
 .history-sources a { display: flex; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: .78rem; }
+.share-bar { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1rem; padding-block: 1.2rem; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line); }
+.share-label { color: var(--muted); font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
+.share-actions { display: flex; flex-wrap: wrap; gap: .45rem; }
+.share-button { display: inline-flex; align-items: center; min-height: 2rem; padding: .35rem .62rem; border: 1px solid var(--line-dark); background: transparent; color: var(--ink); font: 600 .68rem/1 var(--mono); letter-spacing: .04em; text-decoration: none; cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease; }
+.share-button:hover, .share-button:focus-visible { border-color: var(--ink); background: var(--brand); outline: none; }
+.share-feedback { min-height: 1em; color: var(--muted); font-family: var(--mono); font-size: .68rem; }
 
 .site-footer { display: grid; grid-template-columns: 1fr 1fr 1.5fr; gap: 2rem; width: min(100%, var(--content)); margin-inline: auto; padding: 2rem clamp(1rem, 4vw, 4rem) 3rem; border-top: 1px solid var(--line-dark); color: var(--muted); font-size: .75rem; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 1rem; }
@@ -465,6 +471,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .legal-toc { position: static; }
   .home-path-grid { grid-template-columns: 1fr; }
   .history-timeline article { grid-template-columns: 3rem 1fr; gap: 1rem; }
+  .share-bar { align-items: flex-start; flex-direction: column; gap: .65rem; }
   .next-action-grid { grid-template-columns: 1fr; }
   .next-action-grid a, .next-action-grid a:first-child { min-height: auto; border-left: 1px solid var(--line-dark); }
   .collection-toolbar { align-items: stretch; flex-direction: column; }

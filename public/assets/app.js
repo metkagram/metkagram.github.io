@@ -338,6 +338,46 @@ async function setupProgressPage() {
   render();
 }
 
+async function copyShareUrl(url) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(url);
+    return;
+  }
+  const field = document.createElement("textarea");
+  field.value = url;
+  field.setAttribute("readonly", "");
+  field.style.position = "fixed";
+  field.style.opacity = "0";
+  document.body.append(field);
+  field.select();
+  const copied = document.execCommand("copy");
+  field.remove();
+  if (!copied) throw new Error("copy unavailable");
+}
+
+function setupShareBars() {
+  document.querySelectorAll("[data-share-bar]").forEach((bar) => {
+    const url = bar.dataset.shareUrl;
+    const title = bar.dataset.shareTitle;
+    const feedback = bar.querySelector("[data-share-feedback]");
+    const native = bar.querySelector("[data-native-share]");
+    if (navigator.share && native) {
+      native.hidden = false;
+      native.addEventListener("click", async () => {
+        try { await navigator.share({ title, url }); } catch (error) { if (error.name !== "AbortError") feedback.textContent = url; }
+      });
+    }
+    bar.querySelector("[data-copy-link]")?.addEventListener("click", async () => {
+      try {
+        await copyShareUrl(url);
+        feedback.textContent = bar.dataset.shareCopied;
+      } catch {
+        feedback.textContent = url;
+      }
+    });
+  });
+}
+
 setupMenu();
 setupLocaleSuggestion();
 setupTagRules();
@@ -349,3 +389,4 @@ setupReviewQueue().catch(() => {});
 setupStudySetQueue().catch(() => {});
 setupPracticeDashboard().catch(() => {});
 setupProgressPage().catch(() => {});
+setupShareBars();
