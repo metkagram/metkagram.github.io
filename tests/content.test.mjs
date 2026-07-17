@@ -115,6 +115,16 @@ test("method routes keep the learning loop and annotation readable without JavaS
   assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
+test("home pages include a useful FAQ for learners and agents", () => {
+  const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
+  const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
+  assert.match(en, /What can you do with Metkagram\?/);
+  assert.match(en, /Can an AI agent use the data\?/);
+  assert.match(en, /Open agent resources/);
+  assert.match(ru, /Что можно делать с Metkagram\?/);
+  assert.match(ru, /Может ли агент ИИ использовать данные\?/);
+});
+
 test("articles, project notes and documentation offer accessible share actions", () => {
   const article = htmlFiles(DIST).find((file) => /\/explore\/english\/dialogues\/[^/]+\/index\.html$/.test(file));
   assert.ok(article, "an annotated article should exist");

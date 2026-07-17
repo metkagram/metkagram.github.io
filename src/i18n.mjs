@@ -80,6 +80,16 @@ export const ui = {
     homeAppsDetail: "The original Metkagram practice apps are available for Android and iOS.",
     homeExploreDetail: "Browse dialogues, reusable patterns and reference sets.",
     homePracticeDetail: "Browse the complete public pattern catalogue.",
+    homeFaqEyebrow: "Questions, answered",
+    homeFaqTitle: "What can you do with Metkagram?",
+    homeFaqIntro: "A quick guide for learners, researchers and agents working with the collection.",
+    homeFaqItems: [
+      ["What is the Metkagram method?", "Read a meaningful sentence first, then use minimal functional tags to notice its structure. From there, inspect a reusable pattern, compare variations and return to it later.", "/method/", "Read about the method"],
+      ["What is available on the site?", "Annotated English and German sentences, dialogues, reference collections, a notation guide, and a public catalogue of B2–C1 patterns with examples and variations.", "/explore/", "Browse the collections"],
+      ["Can an AI agent use the data?", "Yes. The static API, search index, downloadable datasets and MCP specification let agents retrieve patterns, sets and annotated documents. Keep the provenance and canonical link when presenting a record.", "/ai/", "Open agent resources"],
+      ["Is this only a learning website?", "No. The token-level annotation scheme is also an open, machine-readable research resource for NLP-oriented analysis, teaching experiments and language-data work.", "/method/", "See the research approach"],
+      ["Can I reuse or contribute to the project?", "The content is free for personal, educational and other non-commercial use with attribution. For collaborations, research or commercial use, contact the project team.", "https://www.linkedin.com/company/metalhatscats", "Contact MetalHatsCats"]
+    ],
     dialogues: "Dialogues",
     patterns: "Patterns",
     library: "Library",
@@ -300,6 +310,16 @@ export const ui = {
     homeAppsDetail: "Оригинальные приложения Metkagram для практики доступны на Android и iOS.",
     homeExploreDetail: "Карточки с разметкой, диалоги и справочные подборки.",
     homePracticeDetail: "Изучайте полный публичный каталог паттернов.",
+    homeFaqEyebrow: "Коротко о главном",
+    homeFaqTitle: "Что можно делать с Metkagram?",
+    homeFaqIntro: "Быстрый ориентир для учащихся, исследователей и агентов, работающих с подборкой.",
+    homeFaqItems: [
+      ["В чём метод Metkagram?", "Сначала прочитайте осмысленную фразу, затем с помощью минимальных функциональных тегов рассмотрите её устройство. После этого можно выделить паттерн, сравнить вариации и вернуться к нему позже.", "/method/", "О методе подробнее"],
+      ["Что есть на сайте?", "Аннотированные фразы на английском и немецком, диалоги, справочные подборки, гид по разметке и публичный каталог паттернов B2–C1 с примерами и вариациями.", "/explore/", "Открыть подборки"],
+      ["Может ли агент ИИ использовать данные?", "Да. Статическое API, поисковый индекс, загружаемые датасеты и спецификация MCP позволяют агентам получать паттерны, наборы и аннотированные документы. При показе записи сохраните её происхождение и каноническую ссылку.", "/ai/", "Ресурсы для агентов"],
+      ["Это только сайт для изучения языка?", "Нет. Схема разметки на уровне токенов — ещё и открытый машиночитаемый исследовательский ресурс для NLP-ориентированного анализа, учебных экспериментов и работы с языковыми данными.", "/method/", "Исследовательский подход"],
+      ["Можно использовать материалы или участвовать в проекте?", "Материалы бесплатны для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для коллабораций, исследований или коммерческого использования свяжитесь с командой.", "https://www.linkedin.com/company/metalhatscats", "Связаться с MetalHatsCats"]
+    ],
     dialogues: "Диалоги",
     patterns: "Речевые модели",
     library: "Библиотека",

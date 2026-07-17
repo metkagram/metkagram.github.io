@@ -101,6 +101,15 @@ summary { cursor: pointer; }
 .home-connect article { display: flex; flex-direction: column; align-items: flex-start; }
 .home-connect h2 { max-width: 12ch; margin: 0; font-size: clamp(1.9rem, 3.4vw, 3.5rem); }
 .home-connect article > p:not(.eyebrow) { max-width: 37rem; margin: 1.15rem 0 1.7rem; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+.home-faq { display: grid; grid-template-columns: minmax(14rem, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 8vw, 8rem); align-items: start; }
+.home-faq h2 { max-width: 11ch; margin: 0; font-size: clamp(1.9rem, 3.4vw, 3.5rem); }
+.home-faq .lede { margin-top: 0; }
+.faq-list { border-top: 1px solid var(--line-dark); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { padding: 1.1rem 2rem 1.1rem 0; cursor: pointer; font-weight: 700; line-height: 1.35; }
+.faq-list summary::marker { color: var(--accent); }
+.faq-list details > div { padding: 0 2rem 1.25rem 0; }
+.faq-list p { max-width: 44rem; margin: 0 0 .8rem; color: var(--muted); line-height: 1.55; }
 .home-store-links { display: grid; width: 100%; border-top: 1px solid var(--line-dark); }
 .home-store-links a { display: flex; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: .8rem; font-weight: 600; text-decoration: none; }
 .language-choices { display: grid; }
@@ -423,7 +432,7 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .site-nav { position: absolute; top: 100%; left: 1rem; right: 1rem; display: none; flex-direction: column; padding: 1rem; border: 1px solid var(--ink); background: var(--surface); }
   .site-nav[data-open="true"] { display: flex; }
   .home-hero, .practice-intro { min-height: auto; }
-  .home-intro, .section-heading, .method-strip, .home-method, .study-language, .home-connect { grid-template-columns: 1fr; }
+  .home-intro, .section-heading, .method-strip, .home-method, .study-language, .home-connect, .home-faq { grid-template-columns: 1fr; }
   .annotation-controls { align-items: start; flex-direction: column; }
   .home-intro { gap: 2rem; }
   .home-action { max-width: 38rem; padding-bottom: 0; }
