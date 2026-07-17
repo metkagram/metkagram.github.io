@@ -51,6 +51,7 @@ test("API index declares stable v1 endpoints and provenance", () => {
 test("attribution policy is machine-readable and requires attribution", () => {
   const policy = readJson(API, "attribution.json");
   assertProvenance(policy, "in attribution.json");
+  assert.strictEqual(policy.provenance.contact_url, "https://www.linkedin.com/company/metalhatscats");
   assert.strictEqual(policy.provenance.attribution_required, true);
   assert.strictEqual(policy.data.attribution_required, true);
   assert.ok(Array.isArray(policy.data.policy.requirements));

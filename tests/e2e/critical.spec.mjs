@@ -26,7 +26,7 @@ test("home keeps the interface switch and makes both learning modes explicit", a
   await expect(page.getByRole("link", { name: "Open Pattern Practice", exact: true }).first()).toHaveAttribute("href", "/en/practice/");
   await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
   await expect(page.getByRole("heading", { name: "Open to thoughtful collaborations." })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "https://metalhatscats.com/contact");
+  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "https://www.linkedin.com/company/metalhatscats");
   await expect(page.locator(".home-store-links").getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
   await expect(page.locator(".home-store-links").getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
   if (testInfo.project.name === "desktop") {
