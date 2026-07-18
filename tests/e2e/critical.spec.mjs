@@ -99,7 +99,7 @@ test("pattern catalogue opens every pattern directly and filters all patterns", 
   await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(40);
   await page.locator('[data-pattern-list] > a:visible').first().click();
   await expect(page).toHaveURL(/\/en\/practice\/c1hed001\/$/);
-  await expect(page.locator(".example-list li")).toHaveCount(24);
+  await expect(page.locator(".pattern-comparison-list li")).toHaveCount(12);
   await page.goto("/en/practice/");
   await page.locator('[data-language-filter="de"]').click();
   const visible = page.locator("[data-pattern-list] > a:visible");

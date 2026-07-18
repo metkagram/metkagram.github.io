@@ -181,6 +181,38 @@ function setupShareBars() {
   });
 }
 
+function setupHomeMotion() {
+  const home = document.querySelector(".home-hero");
+  if (!home || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const root = document.documentElement;
+  root.classList.add("motion-enabled");
+  const revealTargets = [
+    ...document.querySelectorAll(".mode-doors, .home-method, .study-language, .home-connect, .home-faq, .site-footer")
+  ];
+  const observer = new IntersectionObserver((entries, instance) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-revealed");
+      instance.unobserve(entry.target);
+    });
+  }, { threshold: 0.14 });
+  revealTargets.forEach((target) => observer.observe(target));
+
+  const header = document.querySelector(".site-header");
+  let scheduled = false;
+  const updateHeader = () => {
+    scheduled = false;
+    header?.classList.toggle("is-scrolled", window.scrollY > 16);
+  };
+  window.addEventListener("scroll", () => {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(updateHeader);
+  }, { passive: true });
+  updateHeader();
+}
+
 setupMenu();
 setupLocaleSuggestion();
 setupNativeLanguage();
@@ -189,3 +221,4 @@ setupAnnotationMode();
 setupCollectionSearch();
 setupPatternFilters();
 setupShareBars();
+setupHomeMotion();
