@@ -87,6 +87,17 @@ function equivalentLocalePath(pathname, locale) {
   return `/${parts.join("/")}/`;
 }
 
+function nativeLanguageCopy(locale) {
+  return locale === "ru"
+    ? { label: "Язык поддержки", english: "Английский", russian: "Русский", other: "Другой язык", default: "по умолчанию", otherNotice: "Переводы и объяснения на вашем языке пока не добавлены. Английский остаётся языком поддержки." }
+    : { label: "Support language", english: "English", russian: "Russian", other: "Another language", default: "default", otherNotice: "Translations and explanations in your language are not available yet. English remains the support language." };
+}
+
+function nativeLanguageControl(locale) {
+  const copy = nativeLanguageCopy(locale);
+  return `<details class="native-language-control" data-native-language-control><summary><span>${copy.label}</span><strong data-native-language-summary>${copy.english}</strong></summary><div><label>${copy.label}<select data-native-language-select><option value="en">${copy.english} · ${copy.default}</option><option value="ru">${copy.russian}</option><option value="other">${copy.other}</option></select></label><p data-native-other-notice hidden>${copy.otherNotice}</p></div></details>`;
+}
+
 function jsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data).replaceAll("<", "\\u003c")}</script>`;
 }
@@ -123,11 +134,11 @@ function header(locale, pathname) {
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
     </nav>
-    <div class="locale-switch" aria-label="${t.chooseInterface}">
+    <div class="header-preferences"><div class="locale-switch" aria-label="${t.chooseInterface}">
       <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
       <span aria-hidden="true">/</span>
       <a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}>RU</a>
-    </div>
+    </div>${nativeLanguageControl(locale)}</div>
   </header>`;
 }
 
@@ -309,8 +320,8 @@ function renderAnnotation(annotation, locale, targetKey, index) {
       const tooltipId = `tag-rule-${index + 1}-${span.id}`;
       return renderTaggedSpan(span, text, locale, targetKey, tooltipId);
   });
-  const translation = locale === "ru" ? annotation.translations?.ru || annotation.translated_text : annotation.translations?.en;
-  return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${translation || annotation.chunkList ? `<dl class="annotation-notes">${translation ? `<div><dt>${t.translation}</dt><dd>${escapeHtml(translation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
+  const russianTranslation = annotation.translations?.ru || annotation.translated_text;
+  return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${russianTranslation || annotation.chunkList ? `<dl class="annotation-notes">${russianTranslation ? `<div data-native-translation hidden><dt>${t.translation}</dt><dd lang="ru">${escapeHtml(russianTranslation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
 }
 
 export function documentPage(locale, targetKey, collectionKey, document) {
@@ -400,9 +411,10 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     const card = cards.get(lang.lang);
     const targetKey = lang.lang === "en" ? "english" : "german";
     const primary = renderCanonicalText(card, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${lang.lang}-primary-${span.id}`));
-    return `<section class="pattern-language-card" id="${lang.lang}" data-target-language="${lang.lang}"><header><p class="language-code">${lang.lang.toUpperCase()}</p><h2>${lang.lang === "en" ? t.english : t.german}</h2></header><dl class="pattern-reference"><div><dt>${t.formula}</dt><dd><code>${escapeHtml(lang.formula)}</code></dd></div><div class="pattern-primary-example"><dt>${t.example}</dt><dd class="canonical-example">${primary}</dd>${lang.translation ? `<p lang="ru">${escapeHtml(lang.translation)}</p>` : ""}</div></dl>${card.examples?.length ? `<section class="pattern-variations" aria-label="${t.examples}"><h3>${t.examples}<small>${card.examples.length}</small></h3><ol class="example-list">${card.examples.map((example) => `<li><p>${renderCanonicalText(example, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${lang.lang}-${example.id}-${span.id}`))}</p>${example.translation ? `<small lang="ru">${escapeHtml(example.translation)}</small>` : ""}</li>`).join("")}</ol></section>` : ""}</section>`;
+    return `<section class="pattern-language-card" id="${lang.lang}" data-target-language="${lang.lang}"><header><p class="language-code">${lang.lang.toUpperCase()}</p><h2>${lang.lang === "en" ? t.english : t.german}</h2></header><dl class="pattern-reference"><div><dt>${t.formula}</dt><dd><code>${escapeHtml(lang.formula)}</code></dd></div><div class="pattern-primary-example"><dt>${t.example}</dt><dd class="canonical-example">${primary}</dd>${lang.translation ? `<p lang="ru" data-native-translation hidden>${escapeHtml(lang.translation)}</p>` : ""}</div></dl>${card.examples?.length ? `<section class="pattern-variations" aria-label="${t.examples}"><h3>${t.examples}<small>${card.examples.length}</small></h3><ol class="example-list">${card.examples.map((example) => `<li><p>${renderCanonicalText(example, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${lang.lang}-${example.id}-${span.id}`))}</p>${example.translation ? `<small lang="ru" data-native-translation hidden>${escapeHtml(example.translation)}</small>` : ""}</li>`).join("")}</ol></section>` : ""}</section>`;
   }).join("");
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${locale === "en" && pattern.title_ru ? `<details class="source-note"><summary>${t.contentFallback}</summary><p lang="ru">${escapeHtml(pattern.title_ru)}</p>${pattern.metaphor_ru ? `<p lang="ru">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</details>` : pattern.metaphor_ru ? `<p class="lede">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</header><div class="pattern-languages">${languageCards}</div></article>`;
+  const russianDescription = pattern.metaphor_ru ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.metaphor_ru)}</p></div>` : "";
+  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-languages">${languageCards}</div></article>`;
   return layout({ locale, pathname, title: `${title} — B2–C1 pattern | Metkagram`, description: locale === "en" ? `${primary.formula}: a B2–C1 language pattern with examples and translation.` : `${title}: речевая модель B2–C1 с примером и переводом.`, body, type: "article", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }
 

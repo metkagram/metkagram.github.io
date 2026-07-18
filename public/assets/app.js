@@ -25,6 +25,27 @@ function setupLocaleSuggestion() {
   });
 }
 
+function setupNativeLanguage() {
+  const controls = [...document.querySelectorAll("[data-native-language-control]")];
+  if (!controls.length) return;
+  const key = "metkagram:native-language";
+  const labels = controls.map((control) => Object.fromEntries([...control.querySelectorAll("option")].map((option) => [option.value, option.textContent])));
+  const saved = localStorage.getItem(key);
+  const value = ["en", "ru", "other"].includes(saved) ? saved : "en";
+  const apply = (next) => {
+    document.documentElement.dataset.nativeLanguage = next;
+    document.querySelectorAll("[data-native-translation]").forEach((item) => { item.hidden = next !== "ru"; });
+    document.querySelectorAll("[data-native-other-notice]").forEach((item) => { item.hidden = next !== "other"; });
+    controls.forEach((control, index) => {
+      control.querySelector("[data-native-language-select]").value = next;
+      control.querySelector("[data-native-language-summary]").textContent = labels[index][next];
+    });
+    localStorage.setItem(key, next);
+  };
+  controls.forEach((control) => control.querySelector("[data-native-language-select]").addEventListener("change", (event) => apply(event.target.value)));
+  apply(value);
+}
+
 function setupTagRules() {
   const triggers = [...document.querySelectorAll("[data-tag-trigger]")];
   if (!triggers.length) return;
@@ -162,6 +183,7 @@ function setupShareBars() {
 
 setupMenu();
 setupLocaleSuggestion();
+setupNativeLanguage();
 setupTagRules();
 setupAnnotationMode();
 setupCollectionSearch();

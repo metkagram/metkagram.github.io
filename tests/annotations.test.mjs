@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import test from "node:test";
 import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalText, validateAnnotation } from "../src/annotation-schema.mjs";
 
@@ -23,4 +25,15 @@ test("service-produced pattern annotations replace authored-only emphasis", () =
   const [card] = patternToCanonicalCards(pattern, service);
   assert.equal(card.spans[0].label, "S");
   assert.equal(card.examples[0].spans[0].label, "S");
+});
+
+test("support-language preference is available globally and keeps translations opt-in", () => {
+  const root = process.cwd();
+  const html = fs.readFileSync(path.join(root, "dist/en/practice/con003/index.html"), "utf8");
+  const script = fs.readFileSync(path.join(root, "public/assets/app.js"), "utf8");
+  assert.match(html, /data-native-language-control/);
+  assert.match(html, /data-native-translation hidden/);
+  assert.match(html, /Translations and explanations in your language are not available yet/);
+  assert.match(script, /metkagram:native-language/);
+  assert.match(script, /next !== "ru"/);
 });

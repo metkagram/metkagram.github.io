@@ -201,6 +201,16 @@ summary { cursor: pointer; }
 .grammar-tag.verb { border-color: var(--verb); background: color-mix(in srgb, var(--verb) 15%, transparent); }
 .grammar-tag.object { border-color: var(--object); background: color-mix(in srgb, var(--object) 15%, transparent); }
 .grammar-tag.helper { border-color: var(--helper); background: color-mix(in srgb, var(--helper) 15%, transparent); }
+.header-preferences { display: flex; align-items: center; gap: .85rem; }
+.native-language-control { position: relative; font-family: var(--mono); font-size: .65rem; }
+.native-language-control summary { display: flex; gap: .4rem; align-items: baseline; list-style: none; cursor: pointer; text-transform: uppercase; }
+.native-language-control summary::-webkit-details-marker { display: none; }
+.native-language-control summary strong { color: var(--ink); font-weight: 600; }
+.native-language-control > div { position: absolute; z-index: 10; right: 0; top: calc(100% + .65rem); width: min(19rem, 82vw); padding: .85rem; border: 1px solid var(--line-dark); background: var(--paper); box-shadow: 0 .4rem 1.2rem color-mix(in srgb, var(--ink) 12%, transparent); }
+.native-language-control label { display: grid; gap: .4rem; }
+.native-language-control select { width: 100%; font: inherit; }
+.native-language-control p { margin: .7rem 0 0; color: var(--muted); font-family: var(--sans); font-size: .82rem; line-height: 1.4; text-transform: none; }
+[data-native-translation] { margin-top: .55rem; color: var(--muted); }
 .annotated-token { display: inline; }
 .annotated-token.subject { background: color-mix(in srgb, var(--subject) 10%, transparent); }
 .annotated-token.verb { background: color-mix(in srgb, var(--verb) 9%, transparent); }
@@ -450,6 +460,8 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .home-hero, .practice-intro { min-height: auto; }
   .home-intro, .section-heading, .method-strip, .home-method, .study-language, .home-connect, .home-faq, .support-ways, .support-promise, .support-contact { grid-template-columns: 1fr; }
   .annotation-controls { align-items: start; flex-direction: column; }
+  .header-preferences { gap: .55rem; }
+  .native-language-control summary > span { display: none; }
   .home-intro { gap: 2rem; }
   .home-action { max-width: 38rem; padding-bottom: 0; }
   .home-method ol { grid-template-columns: 1fr; }
