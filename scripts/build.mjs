@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, locales, targetMeta, ui } from "../src/i18n.mjs";
 import {
@@ -49,6 +50,14 @@ function writeRoute(route, html) {
 function copyPublic() {
   if (!fs.existsSync(PUBLIC)) return;
   fs.cpSync(PUBLIC, DIST, { recursive: true });
+}
+
+function loadPatternAnnotations() {
+  const source = path.join(ROOT, "data", "pattern-annotations.json.gz");
+  if (!fs.existsSync(source)) return {};
+  const payload = JSON.parse(zlib.gunzipSync(fs.readFileSync(source)).toString("utf8"));
+  if (payload.count !== Object.keys(payload.items || {}).length) throw new Error("Pattern annotation export count is invalid");
+  return payload.items;
 }
 
 function xmlEscape(value) {
@@ -161,6 +170,7 @@ function build() {
   fs.mkdirSync(DIST, { recursive: true });
   copyPublic();
   const content = loadContent();
+  const patternAnnotations = loadPatternAnnotations();
   const canonicalAnnotations = migrateAnnotations();
   if (canonicalAnnotations.report.errors.length) throw new Error(`Canonical annotation migration failed: ${canonicalAnnotations.report.errors.length} invalid records`);
   const counts = contentCounts(content);
@@ -191,7 +201,7 @@ function build() {
       }
     }
     for (const pattern of content.advancedPatterns) {
-      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern));
+      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern, patternAnnotations));
     }
     for (const set of content.studySets.sets) {
       writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));

@@ -23,3 +23,11 @@ def test_unicode_offsets_and_language_validation():
         subject = next(span for span in response.json()["spans"] if span["label"] == "S")
         assert subject["start"] == 0 and subject["end"] == 3
         assert client.post("/v1/annotate", json={"text": "x", "language": "fr"}).status_code == 422
+
+
+def test_batch_annotation_preserves_request_order():
+    with TestClient(app) as client:
+        response = client.post("/v1/annotate/batch", json={"items": [{"text": "I will learn.", "language": "en"}, {"text": "Ich werde lernen.", "language": "de"}]})
+        assert response.status_code == 200
+        assert [item["text"] for item in response.json()] == ["I will learn.", "Ich werde lernen."]
+        assert all(item["validation"]["spacy_loaded"] for item in response.json())

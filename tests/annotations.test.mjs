@@ -16,3 +16,11 @@ test("pattern cards retain reusable slots, translated examples, and marked spans
   assert.equal(card.examples[0].translation, "Не могли бы вы подождать?");
   assert.equal(card.text, "Could you help?");
 });
+
+test("service-produced pattern annotations replace authored-only emphasis", () => {
+  const pattern = { id: "P2", group_id: "request", set_id: "set", langs: [{ lang: "en", formula: "Will + subject + verb", example: "I will learn.", examples: [{ text: "We will practise.", translation_ru: "Мы будем практиковаться." }] }] };
+  const service = { "P2:en:primary": { id: "service-primary", text: "I will learn.", spans: [{ id: "s1", start: 0, end: 1, type: "subject", label: "S" }], validation: { generator: "spacy-dependency" } }, "P2:en:1": { id: "service-example", text: "We will practise.", spans: [{ id: "s1", start: 0, end: 2, type: "subject", label: "S" }], validation: { generator: "spacy-dependency" } } };
+  const [card] = patternToCanonicalCards(pattern, service);
+  assert.equal(card.spans[0].label, "S");
+  assert.equal(card.examples[0].spans[0].label, "S");
+});

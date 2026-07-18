@@ -94,10 +94,12 @@ function spansFromMarkedText(value, id) {
   return { text, spans };
 }
 
-export function patternToCanonicalCards(pattern) {
+export function patternToCanonicalCards(pattern, serviceAnnotations = {}) {
   return pattern.langs.map((lang) => {
-    const primary = spansFromMarkedText(lang.example, `${pattern.id}-${lang.lang}`);
+    const primary = serviceAnnotations[`${pattern.id}:${lang.lang}:primary`] || spansFromMarkedText(lang.example, `${pattern.id}-${lang.lang}`);
     const examples = (lang.examples || []).map((example, index) => {
+      const serviceRecord = serviceAnnotations[`${pattern.id}:${lang.lang}:${index + 1}`];
+      if (serviceRecord) return { id: serviceRecord.id, text: serviceRecord.text, translation: example.translation_ru || "", spans: serviceRecord.spans, validation: serviceRecord.validation };
       const value = spansFromMarkedText(example.text, `${pattern.id}-${lang.lang}-e${index + 1}`);
       return { id: `${pattern.id}-${lang.lang}-e${index + 1}`, text: value.text, translation: example.translation_ru || "", spans: value.spans };
     });
@@ -108,7 +110,7 @@ export function patternToCanonicalCards(pattern) {
       examples, difficulty: "advanced", cefr: "B2–C1", source: { dataset: "advanced-patterns", set_id: pattern.set_id, pattern_id: pattern.id },
       slots: [{ id: "formula", label: lang.formula, substitutions: [] }], spans: primary.spans,
       metadata: { function: pattern.group_id, topic: pattern.set_id, register: "neutral", tags: [pattern.group_id, pattern.set_id], related_patterns: [] },
-      validation: { migrated_from: "advanced-patterns", status: "valid" }
+      validation: primary.validation || { migrated_from: "advanced-patterns", status: "valid" }
     };
   });
 }
