@@ -7,6 +7,9 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
+    "annotations:migrate": "node scripts/annotations.mjs",
+    "annotations:validate": "node scripts/annotations.mjs",
+    "annotations:audit": "annotation_service/.venv/bin/python annotation_service/scripts/audit_patterns.py",
     "test": "node --test tests/*.test.mjs",
     "check:links": "node scripts/check-links.mjs",
     "test:e2e": "playwright test",

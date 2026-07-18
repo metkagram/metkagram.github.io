@@ -1,0 +1,120 @@
+{
+  "patterns": 3436,
+  "representative_natural_examples": 6872,
+  "models": {
+    "en": "3.8.0",
+    "de": "3.8.0"
+  },
+  "languages": {
+    "en": {
+      "examples": 3436,
+      "root_coverage": 1.0,
+      "subject_coverage": 0.9627473806752037,
+      "top_dependencies": [
+        [
+          "det",
+          8553
+        ],
+        [
+          "nsubj",
+          6289
+        ],
+        [
+          "aux",
+          5427
+        ],
+        [
+          "punct",
+          4489
+        ],
+        [
+          "dobj",
+          3752
+        ],
+        [
+          "ROOT",
+          3442
+        ],
+        [
+          "relcl",
+          2545
+        ],
+        [
+          "mark",
+          2452
+        ],
+        [
+          "advmod",
+          2038
+        ],
+        [
+          "ccomp",
+          1671
+        ],
+        [
+          "prep",
+          1667
+        ],
+        [
+          "amod",
+          1663
+        ]
+      ]
+    },
+    "de": {
+      "examples": 3436,
+      "root_coverage": 1.0,
+      "subject_coverage": 0.9845750873108265,
+      "top_dependencies": [
+        [
+          "nk",
+          17986
+        ],
+        [
+          "punct",
+          7449
+        ],
+        [
+          "sb",
+          6834
+        ],
+        [
+          "mo",
+          4577
+        ],
+        [
+          "oa",
+          4107
+        ],
+        [
+          "oc",
+          4039
+        ],
+        [
+          "ROOT",
+          3449
+        ],
+        [
+          "cp",
+          2772
+        ],
+        [
+          "mnr",
+          2392
+        ],
+        [
+          "pd",
+          665
+        ],
+        [
+          "pm",
+          599
+        ],
+        [
+          "re",
+          537
+        ]
+      ]
+    }
+  }
+}

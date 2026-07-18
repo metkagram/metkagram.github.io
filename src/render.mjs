@@ -1,6 +1,7 @@
 import { collectionKeys, collectionLabel, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
 import { SITE_URL } from "./site.mjs";
+import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalText } from "./annotation-schema.mjs";
 
 export { SITE_URL };
 
@@ -296,15 +297,13 @@ function tokenClass(tag) {
 
 function renderAnnotation(annotation, locale, targetKey, index) {
   const t = ui[locale];
-  const tokens = flattenSpan(annotation.text_span).map((token, tokenIndex) => {
-    if (token.tag === "tag") {
-      const tag = token.text.trim();
-      const rule = tagRule(locale, targetKey, tag, token.extra);
-      const tooltipId = `tag-rule-${index + 1}-${tag.replaceAll(/[^a-z0-9]/gi, "") || "mark"}-${tokenIndex + 1}`;
-      return `<button class="grammar-tag tag-trigger ${tokenClass(tag)}" type="button" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}${token.extra ? `<small>${escapeHtml(token.extra)}</small>` : ""}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>`;
-    }
-    return escapeHtml(token.text);
-  }).join("");
+  const canonical = legacyAnnotationToCanonical(annotation, { language: targetMeta[targetKey].dataKey, dataset: "site" });
+  const tokens = renderCanonicalText(canonical, (span, text) => {
+      const tag = span.label;
+      const rule = tagRule(locale, targetKey, tag, span.role);
+      const tooltipId = `tag-rule-${index + 1}-${tag.replaceAll(/[^a-z0-9]/gi, "") || "mark"}-${span.id}`;
+      return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}" type="button" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}${span.role ? `<small>${escapeHtml(span.role)}</small>` : ""}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>${escapeHtml(text)}</span>`;
+  });
   const translation = locale === "ru" ? annotation.translations?.ru || annotation.translated_text : annotation.translations?.en;
   return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${translation || annotation.chunkList ? `<dl class="annotation-notes">${translation ? `<div><dt>${t.translation}</dt><dd>${escapeHtml(translation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
 }
@@ -391,7 +390,12 @@ export function patternPage(locale, pattern) {
   const primary = pattern.langs[0];
   const title = patternTitle(pattern, locale, primary.lang);
   const pathname = `/${locale}/practice/${pattern.id.toLowerCase()}/`;
-  const languageCards = pattern.langs.map((lang) => `<section class="pattern-language-card" id="${lang.lang}" data-target-language="${lang.lang}"><header><p class="language-code">${lang.lang.toUpperCase()}</p><h2>${lang.lang === "en" ? t.english : t.german}</h2></header><dl class="pattern-reference"><div><dt>${t.formula}</dt><dd><code>${escapeHtml(lang.formula)}</code></dd></div><div class="pattern-primary-example"><dt>${t.example}</dt><dd>${escapeHtml(lang.example)}</dd>${lang.translation ? `<p lang="ru">${escapeHtml(lang.translation)}</p>` : ""}</div></dl>${lang.examples?.length ? `<section class="pattern-variations" aria-label="${t.examples}"><h3>${t.examples}<small>${lang.examples.length}</small></h3><ol class="example-list">${lang.examples.map((example) => `<li><p>${markdownStrong(example.text)}</p>${example.translation_ru ? `<small lang="ru">${escapeHtml(example.translation_ru)}</small>` : ""}</li>`).join("")}</ol></section>` : ""}</section>`).join("");
+  const cards = new Map(patternToCanonicalCards(pattern).map((card) => [card.language, card]));
+  const languageCards = pattern.langs.map((lang) => {
+    const card = cards.get(lang.lang);
+    const primary = renderCanonicalText(card, (span, text) => `<mark class="pattern-token">${escapeHtml(text)}<small>${escapeHtml(span.role || span.label)}</small></mark>`);
+    return `<section class="pattern-language-card" id="${lang.lang}" data-target-language="${lang.lang}"><header><p class="language-code">${lang.lang.toUpperCase()}</p><h2>${lang.lang === "en" ? t.english : t.german}</h2></header><dl class="pattern-reference"><div><dt>${t.formula}</dt><dd><code>${escapeHtml(lang.formula)}</code></dd></div><div class="pattern-primary-example"><dt>${t.example}</dt><dd class="canonical-example">${primary}</dd>${lang.translation ? `<p lang="ru">${escapeHtml(lang.translation)}</p>` : ""}</div></dl>${card.examples?.length ? `<section class="pattern-variations" aria-label="${t.examples}"><h3>${t.examples}<small>${card.examples.length}</small></h3><ol class="example-list">${card.examples.map((example) => `<li><p>${renderCanonicalText(example, (span, text) => `<mark class="pattern-token">${escapeHtml(text)}</mark>`)}</p>${example.translation ? `<small lang="ru">${escapeHtml(example.translation)}</small>` : ""}</li>`).join("")}</ol></section>` : ""}</section>`;
+  }).join("");
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${locale === "en" && pattern.title_ru ? `<details class="source-note"><summary>${t.contentFallback}</summary><p lang="ru">${escapeHtml(pattern.title_ru)}</p>${pattern.metaphor_ru ? `<p lang="ru">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</details>` : pattern.metaphor_ru ? `<p class="lede">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</header><div class="pattern-languages">${languageCards}</div></article>`;
   return layout({ locale, pathname, title: `${title} — B2–C1 pattern | Metkagram`, description: locale === "en" ? `${primary.formula}: a B2–C1 language pattern with examples and translation.` : `${title}: речевая модель B2–C1 с примером и переводом.`, body, type: "article", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }

@@ -201,6 +201,12 @@ summary { cursor: pointer; }
 .grammar-tag.verb { border-color: var(--verb); background: color-mix(in srgb, var(--verb) 15%, transparent); }
 .grammar-tag.object { border-color: var(--object); background: color-mix(in srgb, var(--object) 15%, transparent); }
 .grammar-tag.helper { border-color: var(--helper); background: color-mix(in srgb, var(--helper) 15%, transparent); }
+.annotated-token { display: inline; }
+.annotated-token.subject { background: color-mix(in srgb, var(--subject) 10%, transparent); }
+.annotated-token.verb { background: color-mix(in srgb, var(--verb) 9%, transparent); }
+.annotated-token.helper { background: color-mix(in srgb, var(--helper) 9%, transparent); }
+.pattern-token { position: relative; padding: .08em .18em; background: color-mix(in srgb, var(--brand) 42%, transparent); color: inherit; }
+.pattern-token small { display: block; margin-top: .15rem; color: var(--muted); font-family: var(--mono); font-size: .58rem; font-weight: 500; }
 .annotation-row details { max-width: 52rem; color: var(--muted); font-size: .88rem; }
 .annotation-row summary { width: max-content; padding: .1rem 0; color: var(--muted); font-family: var(--mono); font-size: .7rem; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .28em; }
 .annotation-row details[open] summary { color: var(--ink); }

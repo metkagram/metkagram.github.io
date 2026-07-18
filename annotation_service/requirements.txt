@@ -1,0 +1,5 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic==2.11.5
+# 3.8.7 is the newest 3.8 wheel available on the project package index.
+spacy==3.8.7
