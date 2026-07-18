@@ -11,6 +11,34 @@ test("legacy annotations migrate to text-first spans with Unicode-safe offsets",
   assert.equal(renderCanonicalText(record, (span, text) => `[${span.label}:${text}]`), "[S:Ich ][Hf:werde ]lernen.");
 });
 
+test("German legacy annotations preserve gender colors and past-tense markers", () => {
+  const record = legacyAnnotationToCanonical({
+    id: "german-morphology",
+    original_text: "Die Frau gewann mit dem Mann.",
+    text_span: { children: [
+      { tag: "", text: "Die " },
+      { tag: "tag", text: "S" },
+      { tag: "FEM", text: "Frau " },
+      { tag: "tag", text: "V", extra: "Past" },
+      { tag: "ROOT", text: "gewann " },
+      { tag: "", text: "mit dem " },
+      { tag: "MASC", text: "Mann" },
+      { tag: "punct", text: "." }
+    ] }
+  }, { language: "de" });
+  assert.deepEqual(validateAnnotation(record), []);
+  assert.equal(record.spans.find((span) => span.label === "S").gender, "feminine");
+  assert.equal(record.spans.find((span) => span.label === "V").tense, "past");
+  assert.deepEqual(record.spans.find((span) => span.role === "gender"), {
+    id: "german-morphology-s3", start: 24, end: 28, type: "function", label: "Gender", role: "gender", gender: "masculine"
+  });
+});
+
+test("German-only morphology signals are not added to English records", () => {
+  const record = legacyAnnotationToCanonical({ id: "english-control", original_text: "The time passed.", text_span: { children: [{ tag: "FEM", text: "The time " }, { tag: "tag", text: "V", extra: "Past" }, { tag: "ROOT", text: "passed" }, { tag: "punct", text: "." }] } }, { language: "en" });
+  assert.equal(record.spans.some((span) => span.gender || span.tense), false);
+});
+
 test("pattern cards retain reusable slots, translated examples, and marked spans", () => {
   const [card] = patternToCanonicalCards({ id: "P1", group_id: "request", set_id: "set", metaphor_ru: "explanation", langs: [{ lang: "en", formula: "Could + subject + verb", example: "**Could you** help?", translation: "Не могли бы вы помочь?", examples: [{ text: "**Could you** wait?", translation_ru: "Не могли бы вы подождать?" }] }] });
   assert.deepEqual(validateAnnotation(card), []);

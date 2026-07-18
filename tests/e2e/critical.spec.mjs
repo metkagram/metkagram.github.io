@@ -26,7 +26,7 @@ test("home keeps the interface switch and makes both learning modes explicit", a
   await expect(page.getByRole("link", { name: "Open Pattern Practice", exact: true }).first()).toHaveAttribute("href", "/en/practice/");
   await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
   await expect(page.getByRole("heading", { name: "Open to thoughtful collaborations." })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "https://www.linkedin.com/company/metalhatscats");
+  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "/en/support/");
   await expect(page.locator(".home-store-links").getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
   await expect(page.locator(".home-store-links").getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
   if (testInfo.project.name === "desktop") {
@@ -34,8 +34,8 @@ test("home keeps the interface switch and makes both learning modes explicit", a
       columns: getComputedStyle(list).gridTemplateColumns.split(" ").length,
       titleSize: Number.parseFloat(getComputedStyle(document.querySelector(".home-intro h1")).fontSize)
     }));
-    expect(layout.columns).toBe(2);
-    expect(layout.titleSize).toBeLessThan(90);
+    expect(layout.columns).toBe(4);
+    expect(layout.titleSize).toBeLessThan(120);
   }
 });
 
@@ -80,7 +80,7 @@ test("document reading mode can reveal explanations for the whole set", async ({
 
 test("grammar tags expose a readable rule on click and keyboard focus", async ({ page }) => {
   await page.goto("/en/explore/english/dialogues/iglIrNfAke7r4OZ0KxuB/");
-  const tag = page.locator('[aria-describedby="tag-rule-1-S-1"]');
+  const tag = page.locator(".annotation-row").first().locator("[data-tag-trigger]").first();
   await expect(tag).toHaveAttribute("aria-expanded", "false");
   await tag.focus();
   await expect(tag.locator("[role=tooltip]")).toContainText("The main actor or receiver in the sentence.");
@@ -107,6 +107,14 @@ test("pattern catalogue opens every pattern directly and filters all patterns", 
   await expect(visible.first()).toHaveAttribute("data-language", /en/);
   await page.locator("[data-pattern-search]").fill("would");
   await expect(page.locator("[data-pattern-count]")).toHaveText(/Showing \d+ patterns/);
+});
+
+test("German pattern examples show gender and past-tense signals without changing English", async ({ page }) => {
+  await page.goto("/en/practice/lex103/");
+  await expect(page.locator('[data-target-language="de"] .gender-mark').first()).toBeVisible();
+  await expect(page.locator('[data-target-language="de"] .tense-past').first()).toBeVisible();
+  await expect(page.locator('[data-target-language="en"] .gender-mark')).toHaveCount(0);
+  await expect(page.locator('[data-target-language="en"] .tense-past')).toHaveCount(0);
 });
 
 test("mobile navigation opens and keyboard focus is visible", async ({ page }, testInfo) => {

@@ -27,6 +27,8 @@ class Span(BaseModel):
     type: str
     label: str
     role: Optional[str] = None
+    gender: Optional[Literal["feminine", "masculine", "neuter"]] = None
+    tense: Optional[Literal["past"]] = None
 
 
 class AnnotationRequest(BaseModel):
@@ -88,11 +90,16 @@ app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", 
 def _canonical_from_doc(doc, text: str, language: str, locale: Optional[str] = None) -> CanonicalAnnotation:
     spans: list[Span] = []
     role_map = {"nsubj": ("subject", "S", "subject"), "nsubj:pass": ("subject", "S", "passive subject"), "sb": ("subject", "S", "subject"), "ROOT": ("verb", "V", "main verb"), "oc": ("verb", "v2", "verb complement"), "aux": ("helper", "Hf", "verb helper"), "aux:pass": ("helper", "Hst", "passive helper"), "obj": ("function", "p2", "object"), "dobj": ("function", "p2", "object"), "iobj": ("function", "p2", "indirect object"), "oa": ("function", "p2", "accusative object"), "da": ("function", "p2", "dative object")}
+    gender_map = {"Fem": "feminine", "Masc": "masculine", "Neut": "neuter"}
     for token in doc:
         item = role_map.get(token.dep_)
+        gender = gender_map.get(token.morph.get("Gender")[0]) if language == "de" and token.pos_ in {"NOUN", "PROPN"} and token.morph.get("Gender") else None
+        tense = "past" if language == "de" and "Past" in token.morph.get("Tense") else None
         if item:
             span_type, label, role = item
-            spans.append(Span(id=f"s{len(spans)+1}", start=token.idx, end=token.idx + len(token.text), type=span_type, label=label, role=role))
+            spans.append(Span(id=f"s{len(spans)+1}", start=token.idx, end=token.idx + len(token.text), type=span_type, label=label, role=role, gender=gender, tense=tense))
+        elif gender:
+            spans.append(Span(id=f"s{len(spans)+1}", start=token.idx, end=token.idx + len(token.text), type="function", label="Gender", role="gender", gender=gender))
     if not spans:
         words = list(re.finditer(r"[^\W\d_]+", text, flags=re.UNICODE))
         if words:

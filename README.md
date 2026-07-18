@@ -26,7 +26,7 @@ npm run test:e2e      # desktop and mobile critical journeys
 npm run verify        # build + unit/integration tests + link checker
 ```
 
-Malformed documents or pattern records fail the build. Generated output includes `.nojekyll`, root `index.html`, `404.html`, localized pages, detail pages, `sitemap.xml`, `robots.txt`, `llms.txt`, public datasets and the redirect manifest.
+Malformed documents or pattern records fail the build. Generated output includes `.nojekyll`, root `index.html`, `404.html`, localized pages, detail pages, `sitemap.xml`, `robots.txt`, `llms.txt`, `seo/site-pages.json`, public datasets and the redirect manifest.
 
 ## Deployment
 
@@ -55,17 +55,9 @@ Update source JSON, run `npm run verify`, inspect `reports/MIGRATION_VERIFICATIO
 
 The generator produces stable public exports at `/data/collections/{en,de}/{collection}.json`, `/data/advanced-patterns.json`, and `/data/catalog.json`.
 
-See [MIGRATION_MAP.md](MIGRATION_MAP.md), [ARCHITECTURE.md](ARCHITECTURE.md), and [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).
-# Metkagram
+See [MIGRATION_MAP.md](MIGRATION_MAP.md), [ARCHITECTURE.md](ARCHITECTURE.md), [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md), [the research programme](docs/RESEARCH_PROGRAM.md), [partnership brief](docs/PARTNERSHIP_BRIEF.md), [localization strategy](docs/LOCALIZATION_STRATEGY.md), and [SEO reference](docs/SEO.md).
 
-Metkagram is a static bilingual workspace for annotated English and German examples and reusable B2–C1 patterns. GitHub Pages serves only generated assets; the optional Python service is an editorial preview tool and is never required by the public site.
-
-## One-command verification
-
-```sh
-npm install
-npm run verify
-```
+## Annotation pipeline
 
 `npm run build` converts legacy examples and reusable patterns into the canonical annotation dataset at `dist/data/canonical-annotations.json`, renders the static site, and writes an auditable migration report. To write the source-side migration artifacts as well, run `npm run annotations:migrate`.
 

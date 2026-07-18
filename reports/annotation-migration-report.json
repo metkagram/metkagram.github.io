@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0.0",
+  "migrated_at": "2026-07-18T08:02:22.078Z",
+  "sources": [
+    {
+      "dataset": "en/dialogues",
+      "records": 3753
+    },
+    {
+      "dataset": "en/patterns",
+      "records": 6851
+    },
+    {
+      "dataset": "en/library",
+      "records": 11960
+    },
+    {
+      "dataset": "de/dialogues",
+      "records": 16019
+    },
+    {
+      "dataset": "de/patterns",
+      "records": 19543
+    },
+    {
+      "dataset": "de/library",
+      "records": 25116
+    }
+  ],
+  "warnings": [
+    {
+      "id": "LIB-eba9eaab-7545-4154-8624-e49c0d292b4e",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-23f50b43-d3b2-4564-a5d4-0f35475777f2",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-fdabb139-9cab-4f05-824f-5bbd59c60094",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-0c9e392f-d6fb-4350-8708-b97c1888d120",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-1328cc55-21d0-4a65-9034-117845ca6b3f",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-6e4909f0-3850-4cd3-ae18-59149d90a489",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-22b4978c-8858-4141-8a3f-f708925fa980",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a6633f5b-23dc-45ca-924c-04b884c104b0",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-e5fce77a-e2f9-433b-8e2a-23065da30293",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-236fe004-612b-4927-b317-6bfa10411f55",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-41fb880f-3b27-4cc7-9632-f3a3b093b6bc",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-ce11f30f-a8bf-4218-9b92-dd5ae53fb6b0",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-e5829e98-91dc-4760-92ae-0791a56f0f23",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-d4c209d8-2ee6-4bec-86d0-5b17f716ac80",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a9e67bc3-d4ba-4929-b4d1-f4508650753a",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-4c0e874c-1691-48fd-9c2b-013f1b3e3ccf",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-ce695817-ff6f-4d27-8dbf-34d6727491c8",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-b2e0a447-4d25-4629-be53-63f1cae69fbd",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-07db00cf-d787-4599-86b3-01b5891ebf68",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-52ba8df4-0be7-4219-adbd-dd7b528a164b",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-eb0b28c5-93e7-4f47-8c54-99c4d6275d68",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a665c77f-7058-432f-9498-047afbd326a8",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-9dd9eb3a-92a4-46ba-946a-81ea25a81942",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-7ad1b415-4662-4a74-b453-6bdbb9152973",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-fe2f6957-d45f-43cf-904b-e758c55d4375",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-ace3b7fb-75ef-4434-92c6-ece6163fa459",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-b08e6de7-e8b6-41ca-8943-24a99433fda9",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-483ab024-dea9-4a62-b4bb-9adcca94f5db",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a6d37dd4-1bfb-4c82-96b9-66bd4c565e19",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-32e643bd-ff19-435b-8de1-2340af4301cc",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a367ed5d-c3ce-44f0-9761-6f2672a20eef",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-30705ad1-3da5-48a0-b7ff-4a8a62c2b31b",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-1249d018-a303-40d2-8ebd-310da88cf98b",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-9a326b7a-1c6c-41a8-a92e-58e62afab65b",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-d9bb7c51-291d-4c9e-8c39-6d29ba6650ea",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-d7a78428-4f77-4e65-9465-e0a7c50862a0",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-4879bea3-3fc1-4d9c-afd5-17a8ba340f69",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-676f8172-a7ae-4248-b17f-3482281f2a5e",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-f515bf26-c203-4b99-9427-4555b6a6fa97",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-6278b3f3-728c-485d-a285-61c70c2aacf3",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-df0b20db-45b6-440a-84fa-2ab3f9ebcc45",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-cab4e993-a466-4884-b0bc-d84f37ee0fd0",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-598208b3-0833-41e7-ac9b-69a2484501e1",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-3a92475e-3529-4e25-bef7-f6a4e197ff71",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-2d154339-bd6c-4d1e-8475-bb85256eeb89",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-348f3096-4621-4cbc-ad66-3c3c6012dbb0",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-b25ccfd5-7537-48df-8bbb-f2affc35748e",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-4dd94b87-0016-4209-a067-553e3428762d",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-921d5dda-78b5-414b-9ca7-753ffe202c0b",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-4ff59193-8c75-4f5e-a352-9a9c535cf7eb",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-752f82cd-6bee-4213-b8a7-774273fa0d68",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-c43e3e48-21d1-42b0-a61f-8f4b9cad2e35",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-41a376de-154e-46e1-a40f-dacd1eef08a3",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-0f214ee9-42a3-44eb-8bfd-bca7a80e9718",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-78992903-0be9-4c9e-b752-f8a6187fdfb4",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-401905c0-a9e9-4f78-91f4-77d0f4c4ddd2",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-7a8ddcbf-0fd7-44ea-8d86-c133a0c81489",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-8400b9f8-9a45-43bc-8e64-1e632272ebce",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-cc38c9cb-4d78-4723-bffe-bbd74bb9de51",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-0e983881-dc86-4ebe-9fc7-2cf019f01642",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-fd42d4cc-162a-4685-b46c-4b531e65ca59",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-f4b793f0-f11d-4551-8091-0b612d933ea6",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-fb18b7ba-47b7-45bf-9e02-a40abdd023eb",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-a35e34b0-cd85-4bbd-9ed0-9e02f8ed4f43",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-2a4de5d4-a6b9-4744-adee-f18637a3fc59",
+      "warning": "original_text missing; recovered from legacy text_span"
+    },
+    {
+      "id": "LIB-7c531c61-dd8a-4056-afc6-bc40a9ae2642",
+      "warning": "original_text missing; recovered from legacy text_span"
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "missing_translations": 16230,
+    "incomplete_examples": 0,
+    "recovered_text": 66
+  },
+  "counts": {
+    "sentences": 25116,
+    "pattern_cards": 6872,
+    "errors": 0
+  }
+}

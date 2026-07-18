@@ -9,6 +9,7 @@ export function cleanMarkedText(value = "") {
 export function validateAnnotation(record) {
   const errors = [];
   const knownTypes = new Set(["subject", "verb", "helper", "function", "pattern_part"]);
+  const knownGenders = new Set(["feminine", "masculine", "neuter"]);
   if (record.schema_version !== ANNOTATION_SCHEMA_VERSION) errors.push("unsupported schema_version");
   if (!record.id) errors.push("missing id");
   if (!record.text) errors.push("missing text");
@@ -22,6 +23,8 @@ export function validateAnnotation(record) {
     if (!Number.isInteger(span.start) || !Number.isInteger(span.end) || span.start < 0 || span.end <= span.start || span.end > record.text.length) errors.push(`invalid offsets for ${span.id}`);
     if (!span.type || !span.label) errors.push(`incomplete span ${span.id}`);
     if (!knownTypes.has(span.type)) errors.push(`invalid annotation type for ${span.id}`);
+    if (span.gender && !knownGenders.has(span.gender)) errors.push(`invalid gender for ${span.id}`);
+    if (span.tense && span.tense !== "past") errors.push(`invalid tense for ${span.id}`);
     if (span.start < previousEnd) errors.push(`overlapping span ${span.id}`);
     previousEnd = Math.max(previousEnd, span.end);
   }
@@ -42,21 +45,48 @@ function tagKind(tag) {
   return "function";
 }
 
+function legacyGender(tag = "") {
+  const normalized = String(tag).replace(/^Q\//, "");
+  return { FEM: "feminine", MASC: "masculine", NEUT: "neuter" }[normalized] || null;
+}
+
+function legacyTense(extra = "") {
+  return String(extra).toLowerCase() === "past" ? "past" : null;
+}
+
 export function legacyAnnotationToCanonical(annotation, context = {}) {
   const recoveredText = leaves(annotation.text_span).filter((token) => token.tag !== "tag").map((token) => token.text).join("");
   const text = annotation.original_text || recoveredText;
   const spans = [];
   let pendingTag = null;
   let cursor = 0;
+  const isGerman = /^de(?:-|$)/i.test(context.language || "");
   for (const token of leaves(annotation.text_span)) {
     if (token.tag === "tag") { pendingTag = { label: token.text.trim() || "Unclassified", role: token.extra || null }; continue; }
-    if (!pendingTag || !token.text.trim()) continue;
     const start = text.indexOf(token.text, cursor);
-    if (start >= 0) {
-      spans.push({ id: `${annotation.id}-s${spans.length + 1}`, start, end: start + token.text.length, type: tagKind(pendingTag.label), label: pendingTag.label, role: pendingTag.role });
-      cursor = start + token.text.length;
+    if (start < 0) {
+      if (token.text.trim()) pendingTag = null;
+      continue;
     }
-    pendingTag = null;
+    cursor = start + token.text.length;
+    if (!token.text.trim()) continue;
+    const gender = isGerman ? legacyGender(token.tag) : null;
+    if (pendingTag) {
+      const tense = isGerman ? legacyTense(pendingTag.role) : null;
+      spans.push({
+        id: `${annotation.id}-s${spans.length + 1}`,
+        start,
+        end: start + token.text.length,
+        type: tagKind(pendingTag.label),
+        label: pendingTag.label,
+        role: pendingTag.role,
+        ...(gender ? { gender } : {}),
+        ...(tense ? { tense } : {})
+      });
+      pendingTag = null;
+    } else if (gender) {
+      spans.push({ id: `${annotation.id}-s${spans.length + 1}`, start, end: start + token.text.length, type: "function", label: "Gender", role: "gender", gender });
+    }
   }
   return {
     schema_version: ANNOTATION_SCHEMA_VERSION,

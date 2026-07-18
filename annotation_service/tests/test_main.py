@@ -31,3 +31,13 @@ def test_batch_annotation_preserves_request_order():
         assert response.status_code == 200
         assert [item["text"] for item in response.json()] == ["I will learn.", "Ich werde lernen."]
         assert all(item["validation"]["spacy_loaded"] for item in response.json())
+
+
+def test_german_annotations_include_noun_gender_and_past_tense():
+    with TestClient(app) as client:
+        response = client.post("/v1/annotate", json={"text": "Die Frau gewann mit dem Mann.", "language": "de"})
+        assert response.status_code == 200
+        spans = response.json()["spans"]
+        assert next(span for span in spans if span["gender"] == "feminine")["start"] == 4
+        assert next(span for span in spans if span["gender"] == "masculine")["start"] == 24
+        assert next(span for span in spans if span["label"] == "V")["tense"] == "past"

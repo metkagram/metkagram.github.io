@@ -20,18 +20,21 @@ import {
   legalPage,
   patternPage,
   practicePage,
+  researchPage,
   roadmapPage,
   supportPage,
   rulesPage,
   studySetPage
 } from "../src/render.mjs";
 import { buildApi, buildLlmsTxt, buildRobotsTxt } from "../src/api.mjs";
+import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const PUBLIC = path.join(ROOT, "public");
 const generatedRoutes = new Set();
+const seoRecords = [];
 
 function writeFile(relativePath, contents) {
   const output = path.join(DIST, relativePath);
@@ -43,6 +46,14 @@ function writeRoute(route, html) {
   const normalized = route === "/" ? "/" : `/${route.split("/").filter(Boolean).join("/")}/`;
   if (generatedRoutes.has(normalized)) throw new Error(`Duplicate generated route: ${normalized}`);
   generatedRoutes.add(normalized);
+  // Buffer round-trips force independent short strings. Keeping V8 substring
+  // views here would retain every full HTML document until the build ends.
+  const copyMatch = (pattern) => Buffer.from(html.match(pattern)?.[1] || "", "utf8").toString("utf8");
+  const title = copyMatch(/<title>([^<]+)<\/title>/);
+  const description = copyMatch(/<meta name="description" content="([^"]+)">/);
+  const canonical = copyMatch(/<link rel="canonical" href="([^"]+)">/);
+  const language = copyMatch(/<html lang="([^"]+)">/);
+  seoRecords.push({ route: normalized, canonical, language, title, description, lastModified: SITE_RELEASE_DATE });
   const file = normalized === "/" ? "index.html" : path.join(normalized.slice(1), "index.html");
   writeFile(file, html);
 }
@@ -182,13 +193,14 @@ function build() {
     writeRoute(`/${locale}/explore/`, explorePage(locale, content));
     writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns, content.studySets));
     writeRoute(`/${locale}/method/`, methodPage(locale));
+    writeRoute(`/${locale}/research/`, researchPage(locale, counts));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
     writeRoute(`/${locale}/apps/`, appsPage(locale));
     writeRoute(`/${locale}/legal/privacy/`, legalPage(locale, "privacy"));
     writeRoute(`/${locale}/legal/terms/`, legalPage(locale, "terms"));
     writeRoute(`/${locale}/history/`, historyPage(locale));
     writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
-    writeRoute(`/${locale}/support/`, supportPage(locale));
+    writeRoute(`/${locale}/support/`, supportPage(locale, counts));
     for (const target of Object.values(targetMeta)) {
       writeRoute(`/${locale}/explore/${target.key}/`, languageHub(locale, target.key, content));
       writeRoute(`/${locale}/explore/${target.key}/annotation-rules/`, rulesPage(locale, target.key));
@@ -217,7 +229,8 @@ function build() {
   writeFile(".nojekyll", "");
   writeFile("LICENSE", fs.readFileSync(path.join(ROOT, "LICENSE"), "utf8"));
   writeFile("robots.txt", buildRobotsTxt(api.routes));
-  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc></url>`).join("")}\n</urlset>\n`);
+  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc><lastmod>${SITE_RELEASE_DATE}</lastmod></url>`).join("")}\n</urlset>\n`);
+  writeFile("seo/site-pages.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, pageCount: seoRecords.length, pages: seoRecords.sort((a, b) => a.route.localeCompare(b.route)) }, null, 2)}\n`);
   writeFile("llms.txt", buildLlmsTxt(content, counts));
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);

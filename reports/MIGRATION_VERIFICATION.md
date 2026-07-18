@@ -1,6 +1,6 @@
 # Migration verification
 
-- Generated routes: **11557**
+- Generated routes: **11559**
 - API endpoints: **5992**
 - Annotated documents: **2240**
 - Annotated sentences: **25116**

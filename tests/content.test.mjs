@@ -52,7 +52,7 @@ function langComplete(pattern) {
 }
 
 test("GitHub Pages artifact has root files and localized HTML", () => {
-  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json"]) {
+  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "seo/site-pages.json"]) {
     assert.ok(fs.existsSync(path.join(DIST, file)), `${file} must exist`);
   }
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
@@ -128,11 +128,25 @@ test("home pages include a useful FAQ for learners and agents", () => {
 test("support pages explain sponsorship without compromising editorial independence", () => {
   const en = fs.readFileSync(path.join(DIST, "en/support/index.html"), "utf8");
   const ru = fs.readFileSync(path.join(DIST, "ru/support/index.html"), "utf8");
-  assert.match(en, /Support Metkagram: sponsorship and partnerships/);
-  assert.match(en, /Sponsors do not receive the right to alter/);
+  assert.match(en, /Partner with Metkagram: investment, research and language data/);
+  assert.match(en, /Sponsors do not receive the right to alter research findings/);
+  assert.match(en, /25,116/);
+  assert.match(en, /without inventing traction claims/);
   assert.match(en, /linkedin\.com\/company\/metalhatscats/);
-  assert.match(ru, /Поддержать Metkagram: партнёрство и спонсорство/);
-  assert.match(ru, /Спонсоры не получают права менять/);
+  assert.match(ru, /Партнёрство и инвестиции в Metkagram/);
+  assert.match(ru, /Спонсоры не получают права менять результаты исследований/);
+});
+
+test("research programme publishes hypotheses, measures, evidence limits and reproducible assets", () => {
+  const en = fs.readFileSync(path.join(DIST, "en/research/index.html"), "utf8");
+  const ru = fs.readFileSync(path.join(DIST, "ru/research/index.html"), "utf8");
+  assert.match(en, /Measure the method, not just describe it\./);
+  assert.match(en, /Primary measure/);
+  assert.match(en, /no efficacy claim made/);
+  assert.match(en, /"@type":"ResearchProject"/);
+  assert.match(en, /href="\/en\/ai\/"/);
+  assert.match(ru, /Измерять метод, а не только описывать его\./);
+  assert.match(ru, /заявления об эффекте не сделаны/);
 });
 
 test("articles, project notes and documentation offer accessible share actions", () => {
@@ -158,6 +172,20 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   assert.match(html, /hreflang="x-default"/);
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/con001\//);
+  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/research\//);
+  assert.match(sitemap, /<lastmod>2026-07-18<\/lastmod>/);
+});
+
+test("German pattern markup renders gender overlines and past markers only in German", () => {
+  const html = fs.readFileSync(path.join(DIST, "en/practice/lex103/index.html"), "utf8");
+  assert.match(html, /class="gender-mark gender-feminine"/);
+  assert.match(html, /class="gender-mark gender-masculine"/);
+  assert.match(html, /class="gender-mark gender-neuter"/);
+  assert.match(html, /grammar-tag tag-trigger verb tense-past/);
+  const languageBlocks = [...html.matchAll(/<div class="pattern-comparison-language"[^>]*data-target-language="(en|de)"[^>]*>(.*?)<\/div>/gs)];
+  assert.ok(languageBlocks.length > 0);
+  assert.ok(languageBlocks.filter((match) => match[1] === "de").every((match) => match[2].includes("gender-mark")));
+  assert.ok(languageBlocks.filter((match) => match[1] === "en").every((match) => !match[2].includes("gender-mark") && !match[2].includes("tense-past")));
 });
 
 test("mobile apps and legal pages have direct routes, store links, and entity markup", () => {
@@ -183,13 +211,35 @@ test("every generated page carries the current brand and discoverability metadat
     assert.match(html, /<meta name="description" content="[^"]+">/, `${file} needs a description`);
     assert.match(html, /<meta name="robots" content="(?:index,follow|max-image-preview|noindex,follow)/, `${file} needs crawl directives`);
     assert.match(html, /rel="canonical" href="https:\/\/metkagram\.github\.io\//, `${file} needs a production canonical`);
+    assert.match(html, /property="og:url" content="https:\/\/metkagram\.github\.io\//, `${file} needs a canonical social URL`);
     assert.match(html, /assets\/social\/metkagram-social-preview-1200x630\.png/, `${file} needs the branded social preview`);
+    assert.match(html, /property="og:image:type" content="image\/png"/, `${file} needs a social image MIME type`);
     assert.match(html, /og:image:width" content="1200"/, `${file} needs social image dimensions`);
     assert.match(html, /rel="manifest" href="\/assets\/web\/site\.webmanifest"/, `${file} needs the web manifest`);
+    assert.match(html, /"@id":"https:\/\/metkagram\.github\.io\/[^"]*#webpage"/, `${file} needs page-level structured data`);
+    assert.match(html, /"dateModified":"2026-07-18"/, `${file} needs a verified modification date`);
     assert.doesNotMatch(html, /assets\/social-preview\.png/, `${file} must not use the legacy social preview`);
     const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");
     const description = decodeEntities(html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "");
     assert.ok(title.length <= 68, `${file} title must stay concise`);
     assert.ok(description.length <= 155, `${file} description must stay concise`);
+  }
+});
+
+test("SEO inventory covers every generated indexable route", () => {
+  const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo/site-pages.json"), "utf8"));
+  const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
+  assert.equal(inventory.pageCount, inventory.pages.length);
+  assert.ok(inventory.pageCount >= 11500);
+  assert.ok(inventory.pages.every((page) => page.canonical === `https://metkagram.github.io${page.route}` || page.route === "/404.html/"));
+  assert.ok(inventory.pages.every((page) => page.language && page.title && page.description));
+  for (const language of ["en", "ru"]) {
+    const localized = inventory.pages.filter((page) => page.language === language);
+    assert.equal(new Set(localized.map((page) => page.title)).size, localized.length, `${language} SEO titles must be unique`);
+    assert.equal(new Set(localized.map((page) => page.description)).size, localized.length, `${language} SEO descriptions must be unique`);
+  }
+  for (const route of ["/en/", "/en/research/", "/en/support/", "/en/practice/con001/"]) {
+    assert.ok(inventory.pages.some((page) => page.route === route), `SEO inventory missing ${route}`);
+    assert.ok(sitemap.includes(`https://metkagram.github.io${route}`), `sitemap missing ${route}`);
   }
 });
