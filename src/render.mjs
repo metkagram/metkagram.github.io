@@ -1,6 +1,7 @@
 import { collectionKeys, collectionLabel, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
 import { SITE_URL } from "./site.mjs";
+import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalText } from "./annotation-schema.mjs";
 
 export { SITE_URL };
 
@@ -86,6 +87,17 @@ function equivalentLocalePath(pathname, locale) {
   return `/${parts.join("/")}/`;
 }
 
+function nativeLanguageCopy(locale) {
+  return locale === "ru"
+    ? { label: "Язык поддержки", english: "Английский", russian: "Русский", other: "Другой язык", default: "по умолчанию", otherNotice: "Переводы и объяснения на вашем языке пока не добавлены. Английский остаётся языком поддержки." }
+    : { label: "Support language", english: "English", russian: "Russian", other: "Another language", default: "default", otherNotice: "Translations and explanations in your language are not available yet. English remains the support language." };
+}
+
+function nativeLanguageControl(locale) {
+  const copy = nativeLanguageCopy(locale);
+  return `<details class="native-language-control" data-native-language-control><summary><span>${copy.label}</span><strong data-native-language-summary>${copy.english}</strong></summary><div><label>${copy.label}<select data-native-language-select><option value="en">${copy.english} · ${copy.default}</option><option value="ru">${copy.russian}</option><option value="other">${copy.other}</option></select></label><p data-native-other-notice hidden>${copy.otherNotice}</p></div></details>`;
+}
+
 function jsonLd(data) {
   return `<script type="application/ld+json">${JSON.stringify(data).replaceAll("<", "\\u003c")}</script>`;
 }
@@ -122,20 +134,22 @@ function header(locale, pathname) {
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
     </nav>
-    <div class="locale-switch" aria-label="${t.chooseInterface}">
+    <div class="header-preferences"><div class="locale-switch" aria-label="${t.chooseInterface}">
       <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
       <span aria-hidden="true">/</span>
       <a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}>RU</a>
-    </div>
+    </div>${nativeLanguageControl(locale)}</div>
   </header>`;
 }
 
 function footer(locale) {
   const t = ui[locale];
-  return `<footer class="site-footer">
-    <a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a>
-    <nav aria-label="Footer"><a href="/${locale}/apps/">${t.apps}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/support/">${t.support}</a><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a><a href="/${locale}/history/">${t.history}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="/${locale}/roadmap/#changelog">${t.changelog}</a><a href="/${locale}/about/#license">${t.license}</a></nav>
-    <p>${t.connected}</p>
+  return `<footer class="site-footer site-footer--index">
+    <div class="footer-intro"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${locale === "ru" ? "Практика языка через фразы, модели и осознанное повторение." : "Language practice through phrases, patterns, and deliberate return."}</p></div>
+    <nav class="footer-column" aria-label="Learn"><p>${locale === "ru" ? "Учиться" : "Learn"}</p><a href="/${locale}/explore/">${t.navExplore}</a><a href="/${locale}/practice/">${t.navPractice}</a><a href="/${locale}/method/">${t.navMethod}</a><a href="/${locale}/apps/">${t.apps}</a></nav>
+    <nav class="footer-column" aria-label="Project"><p>${locale === "ru" ? "Проект" : "Project"}</p><a href="/${locale}/support/">${t.support}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a></nav>
+    <div class="footer-status"><p>${locale === "ru" ? "Доступные коллекции" : "Available collections"}</p><strong>EN · DE</strong><span>${locale === "ru" ? "Паттерны B2–C1" : "B2–C1 patterns"}</span><div class="footer-legal"><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a></div></div>
+    <p class="footer-credit">${t.connected}</p>
   </footer>`;
 }
 
@@ -227,13 +241,19 @@ export function localeHome(locale, content) {
   }
   const pathname = `/${locale}/`;
   const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
-  const body = `<section class="home-hero section-pad">
-    <div class="home-rail" aria-label="${t.homeJourneyLabel}"><span>01 · ${t.homeJourneyStart}</span><span>02 · ${t.homeLanguageTitle}</span><span>03 · ${t.homeJourneyUnderstand}</span><span>04 · ${t.homeJourneyReuse}</span></div>
-    <div class="home-intro"><div><p class="eyebrow">${t.homeEyebrow}</p><h1>${t.statement}</h1></div><div class="home-action"><p class="home-kicker">${t.homeKicker}</p><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/practice/">${t.homePractice} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/ai/">${t.forAiDevelopers} <span aria-hidden="true">→</span></a></div></div></div>
+  const scheme = locale === "ru"
+    ? [["01", "Прочитать"], ["02", "Увидеть роль"], ["03", "Собрать модель"], ["04", "Использовать"]]
+    : [["01", "Read"], ["02", "See the role"], ["03", "Build the pattern"], ["04", "Use it"]];
+  const body = `<section class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero-shell">
+      <div class="home-hero-top"><p class="eyebrow">${t.homeEyebrow}</p><p class="home-edition">${locale === "ru" ? "ЯЗЫК · В КОНТЕКСТЕ" : "LANGUAGE · IN CONTEXT"}</p></div>
+      <div class="home-intro"><div class="home-hero-copy"><p class="home-brand">Metkagram</p><h1 id="home-title">${t.statement}</h1><p class="home-kicker">${t.homeKicker}</p></div><div class="home-action"><div class="home-schematic" aria-label="${t.homeJourneyLabel}">${scheme.map(([index, label], step) => `<div class="schematic-step" style="--step:${step}"><span>${index}</span><strong>${label}</strong></div>`).join("")}</div><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/practice/">${t.homePractice} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/ai/">${t.forAiDevelopers} <span aria-hidden="true">→</span></a></div></div>
+      <div class="home-signal" aria-label="${t.homeJourneyLabel}"><span>01</span><p>${t.homeJourneyStart}</p><span>→</span><p>${t.homeJourneyUnderstand}</p><span>→</span><p>${t.homeJourneyReuse}</p></div>
+    </div>
   </section>
-  <section class="mode-doors section-pad ruled" aria-labelledby="mode-doors-title"><div><p class="eyebrow">01 · Metkagram</p><h2 id="mode-doors-title">${t.homeModesTitle}</h2></div><div class="mode-door-list"><a class="mode-door annotated-door" href="/${locale}/explore/"><span>01</span><div><p class="eyebrow">${t.navExplore}</p><h3>${t.navExplore}</h3><p>${t.homeAnnotatedIntro}</p></div><b aria-hidden="true">→</b></a><a class="mode-door practice-door" href="/${locale}/practice/"><span>02</span><div><p class="eyebrow">B2–C1</p><h3>${t.navPractice}</h3><p>${t.homePracticeIntro}</p></div><b aria-hidden="true">→</b></a></div></section>
-  <section class="home-method section-pad ruled" aria-labelledby="home-method-title"><div><p class="eyebrow">01 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span><div><strong>${step}</strong><small>${t.homeMethodNotes[index]}</small></div></li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></section>
-  <section class="study-language section-pad ruled" aria-labelledby="language-picker-title"><div><p class="eyebrow" id="language-picker-title">02 · ${t.homeLanguageTitle}</p><h2>${t.homeStartTitle}</h2></div><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets} · ${target.native}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>
+  <section class="mode-doors section-pad" aria-labelledby="mode-doors-title"><div class="section-intro"><p class="eyebrow">01 · Metkagram</p><h2 id="mode-doors-title">${t.homeModesTitle}</h2><p>${locale === "ru" ? "Два режима, один принцип: мыслить целыми фразами." : "Two modes, one principle: think in complete phrases."}</p></div><div class="mode-door-list"><a class="mode-door annotated-door" href="/${locale}/explore/"><span>01</span><div><p class="eyebrow">${t.navExplore}</p><h3>${t.navExplore}</h3><p>${t.homeAnnotatedIntro}</p></div><b aria-hidden="true">→</b></a><a class="mode-door practice-door" href="/${locale}/practice/"><span>02</span><div><p class="eyebrow">B2–C1</p><h3>${t.navPractice}</h3><p>${t.homePracticeIntro}</p></div><b aria-hidden="true">→</b></a></div></section>
+  <section class="home-method section-pad" aria-labelledby="home-method-title"><div><p class="eyebrow">02 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span><div><strong>${step}</strong><small>${t.homeMethodNotes[index]}</small></div></li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></section>
+  <section class="study-language section-pad" aria-labelledby="language-picker-title"><div><p class="eyebrow" id="language-picker-title">03 · ${t.homeLanguageTitle}</p><h2>${t.homeStartTitle}</h2></div><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets} · ${target.native}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>
   <section class="home-connect section-pad ruled" aria-label="${t.homeCollaborationEyebrow} and ${t.homeAppsEyebrow}"><article><p class="eyebrow">03 · ${t.homeCollaborationEyebrow}</p><h2>${t.homeCollaborationTitle}</h2><p>${t.homeCollaborationDetail}</p><a class="text-link" href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer">${t.homeCollaborationLink} <span aria-hidden="true">↗</span></a></article><article><p class="eyebrow">04 · ${t.homeAppsEyebrow}</p><h2>${t.homeAppsTitle}</h2><p>${t.homeAppsDetail}</p><nav class="home-store-links" aria-label="${t.homeAppsEyebrow}"><a href="${STORE_LINKS.googlePlay}" target="_blank" rel="noreferrer">Google Play <span aria-hidden="true">↗</span></a><a href="${STORE_LINKS.appStore}" target="_blank" rel="noreferrer">App Store <span aria-hidden="true">↗</span></a></nav></article></section>
   <section class="home-faq section-pad ruled" aria-labelledby="home-faq-title"><div><p class="eyebrow">05 · ${t.homeFaqEyebrow}</p><h2 id="home-faq-title">${t.homeFaqTitle}</h2></div><div><p class="lede">${t.homeFaqIntro}</p><div class="faq-list">${t.homeFaqItems.map(([question, answer, href, label]) => { const external = href.startsWith("http"); const url = external ? href : `/${locale}${href}`; return `<details><summary>${question}</summary><div><p>${answer}</p><a class="text-link" href="${url}"${external ? ' target="_blank" rel="noreferrer"' : ""}>${label} <span aria-hidden="true">${external ? "↗" : "→"}</span></a></div></details>`; }).join("")}</div></div></section>`;
   const structuredData = [
@@ -294,19 +314,22 @@ function tokenClass(tag) {
   return "object";
 }
 
+function renderTaggedSpan(span, text, locale, targetKey, tooltipId) {
+  const t = ui[locale];
+  const tag = span.label;
+  const rule = tagRule(locale, targetKey, tag, span.role);
+  return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}" type="button" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>${escapeHtml(text)}</span>`;
+}
+
 function renderAnnotation(annotation, locale, targetKey, index) {
   const t = ui[locale];
-  const tokens = flattenSpan(annotation.text_span).map((token, tokenIndex) => {
-    if (token.tag === "tag") {
-      const tag = token.text.trim();
-      const rule = tagRule(locale, targetKey, tag, token.extra);
-      const tooltipId = `tag-rule-${index + 1}-${tag.replaceAll(/[^a-z0-9]/gi, "") || "mark"}-${tokenIndex + 1}`;
-      return `<button class="grammar-tag tag-trigger ${tokenClass(tag)}" type="button" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}${token.extra ? `<small>${escapeHtml(token.extra)}</small>` : ""}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>`;
-    }
-    return escapeHtml(token.text);
-  }).join("");
-  const translation = locale === "ru" ? annotation.translations?.ru || annotation.translated_text : annotation.translations?.en;
-  return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${translation || annotation.chunkList ? `<dl class="annotation-notes">${translation ? `<div><dt>${t.translation}</dt><dd>${escapeHtml(translation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
+  const canonical = legacyAnnotationToCanonical(annotation, { language: targetMeta[targetKey].dataKey, dataset: "site" });
+  const tokens = renderCanonicalText(canonical, (span, text) => {
+      const tooltipId = `tag-rule-${index + 1}-${span.id}`;
+      return renderTaggedSpan(span, text, locale, targetKey, tooltipId);
+  });
+  const russianTranslation = annotation.translations?.ru || annotation.translated_text;
+  return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${russianTranslation || annotation.chunkList ? `<dl class="annotation-notes">${russianTranslation ? `<div data-native-translation hidden><dt>${t.translation}</dt><dd lang="ru">${escapeHtml(russianTranslation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
 }
 
 export function documentPage(locale, targetKey, collectionKey, document) {
@@ -386,13 +409,30 @@ export function patternTitle(pattern, locale, targetLanguage = "en") {
   return pattern.langs.find((lang) => lang.lang === targetLanguage)?.formula || pattern.formulas?.[0] || pattern.id;
 }
 
-export function patternPage(locale, pattern) {
+export function patternPage(locale, pattern, serviceAnnotations = {}) {
   const t = ui[locale];
   const primary = pattern.langs[0];
   const title = patternTitle(pattern, locale, primary.lang);
   const pathname = `/${locale}/practice/${pattern.id.toLowerCase()}/`;
-  const languageCards = pattern.langs.map((lang) => `<section class="pattern-language-card" id="${lang.lang}" data-target-language="${lang.lang}"><header><p class="language-code">${lang.lang.toUpperCase()}</p><h2>${lang.lang === "en" ? t.english : t.german}</h2></header><dl class="pattern-reference"><div><dt>${t.formula}</dt><dd><code>${escapeHtml(lang.formula)}</code></dd></div><div class="pattern-primary-example"><dt>${t.example}</dt><dd>${escapeHtml(lang.example)}</dd>${lang.translation ? `<p lang="ru">${escapeHtml(lang.translation)}</p>` : ""}</div></dl>${lang.examples?.length ? `<section class="pattern-variations" aria-label="${t.examples}"><h3>${t.examples}<small>${lang.examples.length}</small></h3><ol class="example-list">${lang.examples.map((example) => `<li><p>${markdownStrong(example.text)}</p>${example.translation_ru ? `<small lang="ru">${escapeHtml(example.translation_ru)}</small>` : ""}</li>`).join("")}</ol></section>` : ""}</section>`).join("");
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${locale === "en" && pattern.title_ru ? `<details class="source-note"><summary>${t.contentFallback}</summary><p lang="ru">${escapeHtml(pattern.title_ru)}</p>${pattern.metaphor_ru ? `<p lang="ru">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</details>` : pattern.metaphor_ru ? `<p class="lede">${escapeHtml(pattern.metaphor_ru)}</p>` : ""}</header><div class="pattern-languages">${languageCards}</div></article>`;
+  const cards = new Map(patternToCanonicalCards(pattern, serviceAnnotations).map((card) => [card.language, card]));
+  const languages = new Map(pattern.langs.map((lang) => [lang.lang, { ...lang, card: cards.get(lang.lang) }]));
+  const english = languages.get("en");
+  const german = languages.get("de");
+  const renderSentence = (language, item, label) => {
+    if (!language || !item) return "";
+    const targetKey = language.lang === "en" ? "english" : "german";
+    return `<div class="pattern-comparison-language" lang="${language.lang}" data-target-language="${language.lang}"><span class="language-code">${label}</span><p>${renderCanonicalText(item, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${language.lang}-${item.id}-${span.id}`))}</p></div>`;
+  };
+  const renderTranslation = (translation) => translation ? `<div class="pattern-comparison-translation" data-native-translation hidden><span class="language-code">RU · ${t.translation}</span><p lang="ru">${escapeHtml(translation)}</p></div>` : "";
+  const primaryCard = `<section class="pattern-reference-card"><header><p class="eyebrow">${t.formula}</p></header><div class="pattern-formulas"><div><span class="language-code">EN · ${t.english}</span><code>${escapeHtml(english?.formula || "")}</code></div><div><span class="language-code">DE · ${t.german}</span><code>${escapeHtml(german?.formula || "")}</code></div></div><article class="pattern-comparison-card pattern-primary-example"><div class="pattern-comparison-sentences">${renderSentence(english, english?.card, "EN · " + t.english)}${renderSentence(german, german?.card, "DE · " + t.german)}</div>${renderTranslation(english?.translation || german?.translation)}</article></section>`;
+  const variationCount = Math.max(english?.card?.examples?.length || 0, german?.card?.examples?.length || 0);
+  const variations = variationCount ? `<section class="pattern-variations" aria-label="${t.examples}"><h2>${t.examples}<small>${variationCount}</small></h2><ol class="pattern-comparison-list">${Array.from({ length: variationCount }, (_, index) => {
+    const englishExample = english?.card?.examples?.[index];
+    const germanExample = german?.card?.examples?.[index];
+    return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
+  }).join("")}</ol></section>` : "";
+  const russianDescription = pattern.metaphor_ru ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.metaphor_ru)}</p></div>` : "";
+  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
   return layout({ locale, pathname, title: `${title} — B2–C1 pattern | Metkagram`, description: locale === "en" ? `${primary.formula}: a B2–C1 language pattern with examples and translation.` : `${title}: речевая модель B2–C1 с примером и переводом.`, body, type: "article", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }
 

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, locales, targetMeta, ui } from "../src/i18n.mjs";
 import {
@@ -25,6 +26,7 @@ import {
   studySetPage
 } from "../src/render.mjs";
 import { buildApi, buildLlmsTxt, buildRobotsTxt } from "../src/api.mjs";
+import { migrateAnnotations } from "./annotations.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -48,6 +50,14 @@ function writeRoute(route, html) {
 function copyPublic() {
   if (!fs.existsSync(PUBLIC)) return;
   fs.cpSync(PUBLIC, DIST, { recursive: true });
+}
+
+function loadPatternAnnotations() {
+  const source = path.join(ROOT, "data", "pattern-annotations.json.gz");
+  if (!fs.existsSync(source)) return {};
+  const payload = JSON.parse(zlib.gunzipSync(fs.readFileSync(source)).toString("utf8"));
+  if (payload.count !== Object.keys(payload.items || {}).length) throw new Error("Pattern annotation export count is invalid");
+  return payload.items;
 }
 
 function xmlEscape(value) {
@@ -160,6 +170,9 @@ function build() {
   fs.mkdirSync(DIST, { recursive: true });
   copyPublic();
   const content = loadContent();
+  const patternAnnotations = loadPatternAnnotations();
+  const canonicalAnnotations = migrateAnnotations();
+  if (canonicalAnnotations.report.errors.length) throw new Error(`Canonical annotation migration failed: ${canonicalAnnotations.report.errors.length} invalid records`);
   const counts = contentCounts(content);
   const api = buildApi(content, counts);
 
@@ -188,7 +201,7 @@ function build() {
       }
     }
     for (const pattern of content.advancedPatterns) {
-      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern));
+      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern, patternAnnotations));
     }
     for (const set of content.studySets.sets) {
       writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));
@@ -208,6 +221,8 @@ function build() {
   writeFile("llms.txt", buildLlmsTxt(content, counts));
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
+  writeFile("data/canonical-annotations.json", `${JSON.stringify({ schema_version: canonicalAnnotations.report.schema_version, items: canonicalAnnotations.records, pattern_cards: canonicalAnnotations.patternCards })}\n`);
+  writeFile("data/annotation-migration-report.json", `${JSON.stringify(canonicalAnnotations.report, null, 2)}\n`);
   writeFile("data/study-sets.json", `${JSON.stringify(content.studySets, null, 2)}\n`);
   for (const target of Object.values(targetMeta)) {
     for (const collectionKey of collectionKeys) {
@@ -216,7 +231,7 @@ function build() {
   }
   const catalog = buildCatalog(content, counts);
   writeFile("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
-  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, complete advanced patterns, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "collections", "advancedPatterns"] }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
+  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, canonical annotations, complete advanced patterns, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "collections", "advancedPatterns"] }, canonicalAnnotation: { type: "object", required: ["schema_version", "id", "kind", "text", "language", "spans", "source", "validation"], properties: { schema_version: { const: "1.0.0" }, text: { type: "string" }, spans: { type: "array", items: { type: "object", required: ["id", "start", "end", "type", "label"] } } } }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
   writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: ["en", "de"], architecture: "deterministic static HTML with progressive enhancement", catalog: `${SITE_URL}/data/catalog.json` }, null, 2)}\n`);
 
   const redirects = buildRedirectManifest(content);

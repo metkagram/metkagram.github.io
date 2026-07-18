@@ -25,6 +25,27 @@ function setupLocaleSuggestion() {
   });
 }
 
+function setupNativeLanguage() {
+  const controls = [...document.querySelectorAll("[data-native-language-control]")];
+  if (!controls.length) return;
+  const key = "metkagram:native-language";
+  const labels = controls.map((control) => Object.fromEntries([...control.querySelectorAll("option")].map((option) => [option.value, option.textContent])));
+  const saved = localStorage.getItem(key);
+  const value = ["en", "ru", "other"].includes(saved) ? saved : "en";
+  const apply = (next) => {
+    document.documentElement.dataset.nativeLanguage = next;
+    document.querySelectorAll("[data-native-translation]").forEach((item) => { item.hidden = next !== "ru"; });
+    document.querySelectorAll("[data-native-other-notice]").forEach((item) => { item.hidden = next !== "other"; });
+    controls.forEach((control, index) => {
+      control.querySelector("[data-native-language-select]").value = next;
+      control.querySelector("[data-native-language-summary]").textContent = labels[index][next];
+    });
+    localStorage.setItem(key, next);
+  };
+  controls.forEach((control) => control.querySelector("[data-native-language-select]").addEventListener("change", (event) => apply(event.target.value)));
+  apply(value);
+}
+
 function setupTagRules() {
   const triggers = [...document.querySelectorAll("[data-tag-trigger]")];
   if (!triggers.length) return;
@@ -160,10 +181,44 @@ function setupShareBars() {
   });
 }
 
+function setupHomeMotion() {
+  const home = document.querySelector(".home-hero");
+  if (!home || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const root = document.documentElement;
+  root.classList.add("motion-enabled");
+  const revealTargets = [
+    ...document.querySelectorAll(".mode-doors, .home-method, .study-language, .home-connect, .home-faq, .site-footer")
+  ];
+  const observer = new IntersectionObserver((entries, instance) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-revealed");
+      instance.unobserve(entry.target);
+    });
+  }, { threshold: 0.14 });
+  revealTargets.forEach((target) => observer.observe(target));
+
+  const header = document.querySelector(".site-header");
+  let scheduled = false;
+  const updateHeader = () => {
+    scheduled = false;
+    header?.classList.toggle("is-scrolled", window.scrollY > 16);
+  };
+  window.addEventListener("scroll", () => {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(updateHeader);
+  }, { passive: true });
+  updateHeader();
+}
+
 setupMenu();
 setupLocaleSuggestion();
+setupNativeLanguage();
 setupTagRules();
 setupAnnotationMode();
 setupCollectionSearch();
 setupPatternFilters();
 setupShareBars();
+setupHomeMotion();
