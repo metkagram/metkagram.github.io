@@ -196,6 +196,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <meta name="author" content="Metkagram">
   <meta name="theme-color" content="#FFC400">
   <meta name="color-scheme" content="light">
+  <meta name="google-site-verification" content="NVjLGEd7e79H41hAX7li-wqcvb5KLEPmDwml8uLge6g">
   <link rel="canonical" href="${canonical}">
   ${alternates}
   <meta property="og:type" content="${type}">
