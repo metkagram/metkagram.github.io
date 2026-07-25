@@ -64,7 +64,7 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.match(ru, /Читайте фразы\. Замечайте структуру\./);
   assert.doesNotMatch(ru, /See the structure\. Use the phrase\./);
   assert.match(en, /Open to thoughtful collaborations\./);
-  assert.match(ru, /Открыты к содержательным коллаборациям\./);
+  assert.match(ru, /Открыты к полезным партнёрствам\./);
   assert.match(en, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.metkagram\.android/);
   assert.match(en, /https:\/\/apps\.apple\.com\/us\/app\/grammar-cards-ai-tutor\/id6502211918/);
 });
@@ -110,8 +110,8 @@ test("method routes keep the learning loop and annotation readable without JavaS
   assert.match(en, /spaced repetition\?/);
   assert.match(en, /role="tooltip"/);
   assert.match(en, /aria-describedby="method-tag-/);
-  assert.match(ru, /Исследовательская система, а не набор ярлыков/);
-  assert.match(ru, /NLP-совместимые данные/);
+  assert.match(ru, /Система, а не набор ярлыков/);
+  assert.match(ru, /Открытый корпус с функциональной разметкой на уровне слов/);
   assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
@@ -122,7 +122,7 @@ test("home pages include a useful FAQ for learners and agents", () => {
   assert.match(en, /Can an AI agent use the data\?/);
   assert.match(en, /Open agent resources/);
   assert.match(ru, /Что можно делать с Metkagram\?/);
-  assert.match(ru, /Может ли агент ИИ использовать данные\?/);
+  assert.match(ru, /Может ли ИИ использовать данные\?/);
 });
 
 test("support pages explain sponsorship without compromising editorial independence", () => {
