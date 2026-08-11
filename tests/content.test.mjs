@@ -157,6 +157,7 @@ test("articles, project notes and documentation offer accessible share actions",
     const html = fs.readFileSync(file, "utf8");
     assert.match(html, /data-share-bar/);
     assert.match(html, /data-copy-link/);
+    assert.match(html, /data-print-page/);
     assert.match(html, /t\.me\/share\/url/);
     assert.match(html, /vk\.com\/share\.php/);
     assert.match(html, /x\.com\/intent\/post/);
@@ -217,6 +218,8 @@ test("every generated page carries the current brand and discoverability metadat
     assert.match(html, /og:image:width" content="1200"/, `${file} needs social image dimensions`);
     assert.match(html, /rel="manifest" href="\/assets\/web\/site\.webmanifest"/, `${file} needs the web manifest`);
     assert.match(html, /"@id":"https:\/\/metkagram\.github\.io\/[^"]*#webpage"/, `${file} needs page-level structured data`);
+    assert.match(html, /data-share-bar/, `${file} needs page sharing controls`);
+    assert.match(html, /data-print-page/, `${file} needs a print control`);
     assert.match(html, /"dateModified":"2026-07-18"/, `${file} needs a verified modification date`);
     assert.doesNotMatch(html, /assets\/social-preview\.png/, `${file} must not use the legacy social preview`);
     const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");

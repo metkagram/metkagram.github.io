@@ -178,6 +178,7 @@ function setupShareBars() {
         feedback.textContent = url;
       }
     });
+    bar.querySelector("[data-print-page]")?.addEventListener("click", () => window.print());
   });
 }
 

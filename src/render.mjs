@@ -185,6 +185,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
   const alternates = notFound ? "" : root
     ? `<link rel="alternate" hreflang="x-default" href="${SITE_URL}/"><link rel="alternate" hreflang="en" href="${SITE_URL}/en/"><link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">`
     : `<link rel="alternate" hreflang="en" href="${SITE_URL}${equivalentLocalePath(pathname, "en")}"><link rel="alternate" hreflang="ru" href="${SITE_URL}${equivalentLocalePath(pathname, "ru")}"><link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`;
+  const pageActions = body.includes("data-share-bar") ? "" : shareBar(locale, pathname, title);
   return `<!doctype html>
 <html lang="${locale}">
 <head>
@@ -228,6 +229,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
 <body class="${escapeHtml(bodyClass)}" data-locale="${locale}">
   ${root ? "" : header(locale, pathname)}
   <main id="content">${body}</main>
+  ${pageActions}
   ${root ? "" : footer(locale)}
   <script type="module" src="/assets/app.js"></script>
 </body>
@@ -243,7 +245,7 @@ function shareBar(locale, pathname, title) {
   const url = `${SITE_URL}${slugPath(pathname)}`;
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
-  return `<aside class="share-bar section-pad" data-share-bar data-share-url="${escapeHtml(url)}" data-share-title="${escapeHtml(title)}" data-share-copied="${escapeHtml(t.shareCopied)}" aria-label="${escapeHtml(t.shareTitle)}"><span class="share-label">${escapeHtml(t.shareTitle)}</span><div class="share-actions"><button type="button" class="share-button share-button-native" data-native-share hidden>${escapeHtml(t.shareNative)}</button><a class="share-button" href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareTelegram)}</a><a class="share-button" href="https://vk.com/share.php?url=${encodedUrl}&title=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareVk)}</a><a class="share-button" href="https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareX)}</a><button type="button" class="share-button" data-copy-link>${escapeHtml(t.shareCopy)}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>`;
+  return `<aside class="share-bar section-pad" data-share-bar data-share-url="${escapeHtml(url)}" data-share-title="${escapeHtml(title)}" data-share-copied="${escapeHtml(t.shareCopied)}" aria-label="${escapeHtml(t.shareTitle)}"><span class="share-label">${escapeHtml(t.shareTitle)}</span><div class="share-actions"><button type="button" class="share-button share-button-native" data-native-share hidden>${escapeHtml(t.shareNative)}</button><a class="share-button" href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareTelegram)}</a><a class="share-button" href="https://vk.com/share.php?url=${encodedUrl}&title=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareVk)}</a><a class="share-button" href="https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareX)}</a><button type="button" class="share-button" data-copy-link>${escapeHtml(t.shareCopy)}</button><button type="button" class="share-button" data-print-page>${escapeHtml(t.printPage)}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>`;
 }
 
 export function languageTabs(locale, current = "english", suffix = "") {
@@ -488,12 +490,12 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
   }).join("")}</ol></section>` : "";
   const russianDescription = pattern.metaphor_ru ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.metaphor_ru)}</p></div>` : "";
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<article class="pattern-page section-pad"><header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
+  const body = `<article class="pattern-page section-pad">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
   const metaTitle = identifiedMetaTitle(title, pattern.id);
   const metaDescription = locale === "en"
     ? `Pattern ${pattern.id}: ${primary.formula}. Study this B2–C1 structure with English and German examples.`
     : `Паттерн ${pattern.id}: ${title}. Модель B2–C1 с примерами на английском и немецком.`;
-  return layout({ locale, pathname, title: metaTitle, description: metaDescription, body, type: "article", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
+  return layout({ locale, pathname, title: metaTitle, description: metaDescription, body, type: "article", bodyClass: "pattern-reader-body", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }
 
 export function practicePage(locale, patterns, studySets) {
@@ -509,7 +511,7 @@ export function studySetPage(locale, set, patterns) {
   const title = locale === "ru" ? set.title_ru : set.title_en;
   const description = locale === "ru" ? set.description_ru || set.description : set.description;
   const pathname = `/${locale}/practice/set/${set.id.toLowerCase()}/`;
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<section class="page-head section-pad compact study-set-head"><p class="eyebrow">B2–C1 · ${escapeHtml(set.id)} · ${patterns.length} ${t.patterns.toLowerCase()}</p><h1>${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p></section><section class="pattern-index section-pad ruled">${patterns.map((pattern, index) => `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.langs.map((lang) => lang.formula).join(" / "))}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>`;
+  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<section class="page-head section-pad compact study-set-head"><p class="eyebrow">B2–C1 · ${escapeHtml(set.id)} · ${patterns.length} ${t.patterns.toLowerCase()}</p><h1>${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p></section><section class="pattern-index section-pad ruled">${patterns.map((pattern, index) => `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.langs.map((lang) => lang.formula).join(" / "))}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>${shareBar(locale, pathname, title)}`;
   return layout({ locale, pathname, title: `${title} — ${patterns.length} B2–C1 patterns | Metkagram`, description, body, structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, educationalLevel: "B2–C1", numberOfItems: patterns.length }] });
 }
 

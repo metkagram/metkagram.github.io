@@ -46,7 +46,7 @@ test("method page explains the learning loop and names its research sources", as
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
-test("articles provide compact social sharing controls", async ({ page }) => {
+test("articles and study sets provide compact sharing and printing controls", async ({ page }) => {
   await page.goto("/en/method/");
   const share = page.locator("[data-share-bar]");
   await expect(share).toBeVisible();
@@ -54,6 +54,9 @@ test("articles provide compact social sharing controls", async ({ page }) => {
   await expect(share.getByRole("link", { name: "VK" })).toHaveAttribute("href", /vk\.com\/share\.php/);
   await expect(share.getByRole("link", { name: "X" })).toHaveAttribute("href", /x\.com\/intent\/post/);
   await expect(share.getByRole("button", { name: "Copy link" })).toBeVisible();
+  await expect(share.getByRole("button", { name: "Print page" })).toBeVisible();
+  await page.goto("/en/practice/set/arg/");
+  await expect(page.locator("[data-share-bar]").getByRole("button", { name: "Print page" })).toBeVisible();
 });
 
 test("mobile app and legal pages expose store and policy links", async ({ page }) => {
