@@ -1,0 +1,85 @@
+name: IndexNow
+
+on:
+  workflow_run:
+    workflows: ["Deploy GitHub Pages"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 2
+      - name: Submit changed discovery URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          KEY="0b259e71510ed24d1bbcf3dac08ec322"
+          HOST="metkagram.github.io"
+          BASE="https://${HOST}"
+          CHANGED="$(git diff --name-only HEAD^ HEAD || true)"
+          declare -a URLS=()
+
+          add_url() {
+            local candidate="$1"
+            for existing in "${URLS[@]:-}"; do
+              [[ "$existing" == "$candidate" ]] && return
+            done
+            URLS+=("$candidate")
+          }
+
+          if grep -Eq '^(src/mcp-page\.mjs|scripts/search-discovery\.mjs|public/connectors/metkagram-mcp\.mjs|src/api\.mjs)' <<<"$CHANGED"; then
+            add_url "$BASE/en/mcp/"
+            add_url "$BASE/ru/mcp/"
+            add_url "$BASE/api/v1/discovery.json"
+            add_url "$BASE/data/discovery.json"
+            add_url "$BASE/llms.txt"
+          fi
+
+          if grep -Eq '^(data/advanced-patterns\.json|data/study-sets\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice))' <<<"$CHANGED"; then
+            add_url "$BASE/en/practice/"
+            add_url "$BASE/ru/practice/"
+            add_url "$BASE/api/v1/patterns.json"
+          fi
+
+          if grep -Eq '^(src/intents\.mjs|src/intent-|scripts/intent-discovery\.mjs)' <<<"$CHANGED"; then
+            add_url "$BASE/en/practice/intents/"
+            add_url "$BASE/ru/practice/intents/"
+            add_url "$BASE/data/intents.json"
+          fi
+
+          if grep -Eq '^(src/render\.mjs|src/i18n\.mjs)' <<<"$CHANGED"; then
+            add_url "$BASE/en/"
+            add_url "$BASE/ru/"
+            add_url "$BASE/en/method/"
+            add_url "$BASE/ru/method/"
+          fi
+
+          if grep -Eq '^(docs/RESEARCH|scripts/(enhance-research|research-pilot)|data/research)' <<<"$CHANGED"; then
+            add_url "$BASE/en/research/"
+            add_url "$BASE/ru/research/"
+          fi
+
+          if ((${#URLS[@]} == 0)); then
+            echo "No search-facing URLs mapped from this commit."
+            exit 0
+          fi
+
+          printf '%s\n' "${URLS[@]}" | jq -R . | jq -s \
+            --arg host "$HOST" \
+            --arg key "$KEY" \
+            --arg keyLocation "$BASE/${KEY}.txt" \
+            '{host:$host,key:$key,keyLocation:$keyLocation,urlList:.}' > indexnow.json
+
+          cat indexnow.json
+          curl --retry 2 --fail-with-body \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -X POST --data @indexnow.json \
+            https://api.indexnow.org/indexnow
