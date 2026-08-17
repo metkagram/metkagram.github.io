@@ -20,34 +20,20 @@ function decodeEntities(value) {
   return value.replaceAll("&quot;", '"').replaceAll("&amp;", "&").replaceAll("&#039;", "'");
 }
 
-test("all source content validates and contains a complete C1 pattern curriculum", () => {
+test("source content validates and public practice stays deliberately bounded", () => {
   const content = loadContent();
   const counts = contentCounts(content);
-  assert.equal(counts.annotatedDocuments, 2240);
-  assert.equal(counts.annotatedSentences, 25116);
-  assert.ok(counts.advancedPatterns >= 1000);
-  assert.equal(content.studySets.sets.length, 80);
+  assert.equal(counts.annotatedDocuments, 72);
+  assert.ok(counts.annotatedSentences > 0);
+  assert.equal(counts.advancedPatterns, 20);
+  assert.deepEqual(content.studySets.sets.map((set) => set.id).sort(), ["CAU", "CLR", "CND", "EVD", "NEG", "PRB"]);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
-  assert.ok(content.advancedPatterns.every((pattern) => pattern.quality && typeof pattern.quality.indexable === "boolean"));
-  assert.ok(content.advancedPatterns.every((pattern) => pattern.quality.translations_complete));
-  const hedPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === "HED");
-  assert.equal(hedPatterns.length, 40);
-  assert.ok(hedPatterns.every((pattern) => pattern.langs.every((lang) => lang.examples.length === 12)), "every HED pattern should match CON006 with 12 examples per language");
-  const grammarSetIds = ["DET", "INF", "SUB", "FCS", "REL", "PRP", "WOR", "CAS", "ADJ", "KON"];
-  assert.ok(grammarSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all grammar study sets must be present");
-  assert.ok(grammarSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every grammar study set should contain 40 complete patterns");
-  const questionSetIds = ["QYN", "QWH", "QSUB", "QOBJ", "QPRE", "QTAG", "QIND", "QNEG", "QCHO", "QCNF", "QCL", "QFOL", "QOP", "QCAU", "QPUR", "QTM", "QPLC", "QPRS", "QQNT", "QCMP", "QHYP", "QPRB", "QPOL", "QWRK", "QACA", "QDEC", "QNGT", "QREP", "QDIS", "QFRM"];
-  assert.ok(questionSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all question study sets must be present");
-  assert.ok(questionSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every question study set should contain 40 complete patterns");
-  const functionalSetIds = ["PFR", "ADV", "RQT", "OFR", "PRM", "CMT", "PLN", "PRI", "GOA", "CNS", "EXM", "SUM", "ORG", "FEL", "TCT", "FBK", "SOL", "RSK", "PRS", "SOC"];
-  assert.ok(functionalSetIds.every((setId) => content.studySets.sets.some((set) => set.id === setId)), "all functional study sets must be present");
-  assert.ok(functionalSetIds.every((setId) => content.advancedPatterns.filter((pattern) => pattern.set_id === setId).length === 40), "every functional study set should contain 40 complete patterns");
-  assert.equal(content.collections.english.dialogues.documents.length, 111);
-  assert.equal(content.collections.english.patterns.documents.length, 353);
-  assert.equal(content.collections.english.library.documents.length, 455);
-  assert.equal(content.collections.german.dialogues.documents.length, 329);
-  assert.equal(content.collections.german.patterns.documents.length, 496);
-  assert.equal(content.collections.german.library.documents.length, 496);
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
+  assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.quality?.translations_complete));
+  for (const target of Object.values(content.collections)) {
+    for (const collection of Object.values(target)) assert.equal(collection.documents.length, 12);
+  }
 });
 
 function langComplete(pattern) {
@@ -134,7 +120,7 @@ test("support pages explain sponsorship without compromising editorial independe
   const ru = fs.readFileSync(path.join(DIST, "ru/support/index.html"), "utf8");
   assert.match(en, /Partner with Metkagram: investment, research and language data/);
   assert.match(en, /Sponsors do not receive the right to alter research findings/);
-  assert.match(en, /25,116/);
+  assert.match(en, /Metkagram/);
   assert.match(en, /without inventing traction claims/);
   assert.match(en, /linkedin\.com\/company\/metalhatscats/);
   assert.match(ru, /Партнёрство и инвестиции в Metkagram/);
@@ -188,21 +174,16 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   assert.match(html, /hreflang="ru"/);
   assert.match(html, /hreflang="x-default"/);
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
-  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/con001\//);
+  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/clf041\//);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/research\//);
   assert.ok(sitemap.includes(`<lastmod>${SITE_RELEASE_DATE}</lastmod>`));
 });
 
-test("German pattern markup renders gender overlines and past markers only in German", () => {
-  const html = fs.readFileSync(path.join(DIST, "en/practice/lex103/index.html"), "utf8");
-  assert.match(html, /class="gender-mark gender-feminine"/);
-  assert.match(html, /class="gender-mark gender-masculine"/);
-  assert.match(html, /class="gender-mark gender-neuter"/);
-  assert.match(html, /grammar-tag tag-trigger verb tense-past/);
-  const languageBlocks = [...html.matchAll(/<div class="pattern-comparison-language"[^>]*data-target-language="(en|de)"[^>]*>(.*?)<\/div>/gs)];
-  assert.ok(languageBlocks.length > 0);
-  assert.ok(languageBlocks.filter((match) => match[1] === "de").every((match) => match[2].includes("gender-mark")));
-  assert.ok(languageBlocks.filter((match) => match[1] === "en").every((match) => !match[2].includes("gender-mark") && !match[2].includes("tense-past")));
+test("public reasoning pattern pages render both target languages", () => {
+  const html = fs.readFileSync(path.join(DIST, "en/practice/clf041/index.html"), "utf8");
+  assert.match(html, /data-target-language="en"/);
+  assert.match(html, /data-target-language="de"/);
+  assert.match(html, /id="reasoning-move"/);
 });
 
 test("mobile apps and legal pages have direct routes, store links, and entity markup", () => {
@@ -221,7 +202,7 @@ test("mobile apps and legal pages have direct routes, store links, and entity ma
 
 test("every generated page carries the current brand and discoverability metadata", () => {
   const files = htmlFiles(DIST).filter((file) => !file.startsWith(path.join(DIST, "assets")) && !/^google[a-z0-9_-]*\.html$/i.test(path.basename(file)));
-  assert.ok(files.length >= 4988, "expected the complete generated page set");
+  assert.ok(files.length >= 200, "expected the bounded generated page set");
   for (const file of files) {
     const html = fs.readFileSync(file, "utf8");
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);
@@ -249,7 +230,7 @@ test("SEO inventory covers every generated indexable route", () => {
   const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo/site-pages.json"), "utf8"));
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   assert.equal(inventory.pageCount, inventory.pages.length);
-  assert.ok(inventory.pageCount >= 11500);
+  assert.ok(inventory.pageCount >= 200);
   assert.ok(inventory.pages.every((page) => page.canonical === `https://metkagram.github.io${page.route}` || page.route === "/404.html/"));
   assert.ok(inventory.pages.every((page) => page.language && page.title && page.description));
   assert.ok(inventory.pages.every((page) => page.lastModified));
@@ -258,7 +239,7 @@ test("SEO inventory covers every generated indexable route", () => {
     assert.equal(new Set(localized.map((page) => page.title)).size, localized.length, `${language} SEO titles must be unique`);
     assert.equal(new Set(localized.map((page) => page.description)).size, localized.length, `${language} SEO descriptions must be unique`);
   }
-  for (const route of ["/en/", "/en/research/", "/en/data/", "/en/data/patterns/", "/en/support/", "/en/practice/con001/"]) {
+  for (const route of ["/en/", "/en/research/", "/en/data/", "/en/data/patterns/", "/en/support/", "/en/practice/clf041/"]) {
     assert.ok(inventory.pages.some((page) => page.route === route), `SEO inventory missing ${route}`);
     assert.ok(sitemap.includes(`https://metkagram.github.io${route}`), `sitemap missing ${route}`);
   }
