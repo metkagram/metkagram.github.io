@@ -1,0 +1,160 @@
+[
+  {
+    "id": "CLF069",
+    "title_ru": "Решение и основание",
+    "group_id": "CLF",
+    "set_id": "NEG",
+    "logic": "decision with rationale",
+    "metaphor_ru": "Зафиксировать уже принятое решение и сразу показать основание, на котором оно держится.",
+    "formulas": [
+      "Given [X], we decided to [Y] because [Z].",
+      "Angesichts [X] haben wir beschlossen, [Y], weil [Z]."
+    ],
+    "reasoning": {
+      "move": "Decide",
+      "what_it_does_en": "State a completed choice while keeping the reason or decision criterion visible.",
+      "what_it_does_ru": "Сформулировать уже принятое решение и сохранить видимым его основание или критерий.",
+      "when_to_use_en": "Use it after a choice has been made and the reader needs to understand why that option was selected.",
+      "when_to_use_ru": "Используйте после принятия решения, когда важно сразу объяснить, почему выбран именно этот вариант.",
+      "contrast_en": "The choice comes down to X or Y frames the alternatives but does not state which option was selected.",
+      "common_mistake_en": "Do not use because as a post-hoc excuse; the stated reason should reflect the criterion that actually drove the decision.",
+      "common_mistake_ru": "Не превращайте because в оправдание задним числом: причина должна отражать критерий, который действительно определил решение."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Given [X], we decided to [Y] because [Z].",
+        "example": "**Given** the support constraints, we **decided to keep** the simpler workflow **because** the operations team can own it.",
+        "translation": "С учётом ограничений поддержки мы решили сохранить более простой процесс, потому что операционная команда сможет самостоятельно им управлять.",
+        "examples": [
+          {
+            "text": "**Given** the limited observability, we **decided to delay** the launch **because** silent failures would be difficult to detect.",
+            "translation_ru": "С учётом ограниченной наблюдаемости мы решили отложить запуск, потому что скрытые сбои было бы трудно обнаружить."
+          },
+          {
+            "text": "**Given** the migration risk, we **decided to run** both paths in parallel **because** rollback must remain possible.",
+            "translation_ru": "С учётом риска миграции мы решили временно использовать оба пути параллельно, потому что возможность отката должна сохраняться."
+          },
+          {
+            "text": "**Given** the user feedback, we **decided to remove** the extra step **because** it added friction without adding control value.",
+            "translation_ru": "С учётом обратной связи пользователей мы решили убрать дополнительный шаг, потому что он создавал лишнее трение, не добавляя ценности контролю."
+          },
+          {
+            "text": "**Given** the maintenance budget, we **decided to reuse** the existing infrastructure **because** a new service would add ownership cost.",
+            "translation_ru": "С учётом бюджета на поддержку мы решили повторно использовать существующую инфраструктуру, потому что новый сервис увеличил бы стоимость владения."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Angesichts [X] haben wir beschlossen, [Y], weil [Z].",
+        "example": "**Angesichts** der Supportbedingungen **haben wir beschlossen,** den einfacheren Ablauf beizubehalten, **weil** das Betriebsteam ihn selbst betreuen kann.",
+        "translation": "С учётом ограничений поддержки мы решили сохранить более простой процесс, потому что операционная команда сможет самостоятельно им управлять.",
+        "examples": [
+          {
+            "text": "**Angesichts** der begrenzten Beobachtbarkeit **haben wir beschlossen,** den Start zu verschieben, **weil** stille Fehler schwer zu erkennen wären.",
+            "translation_ru": "С учётом ограниченной наблюдаемости мы решили отложить запуск, потому что скрытые сбои было бы трудно обнаружить."
+          },
+          {
+            "text": "**Angesichts** des Migrationsrisikos **haben wir beschlossen,** beide Wege vorübergehend parallel zu betreiben, **weil** ein Rollback möglich bleiben muss.",
+            "translation_ru": "С учётом риска миграции мы решили временно использовать оба пути параллельно, потому что возможность отката должна сохраняться."
+          },
+          {
+            "text": "**Angesichts** des Nutzerfeedbacks **haben wir beschlossen,** den zusätzlichen Schritt zu entfernen, **weil** er Reibung erzeugte, ohne zusätzlichen Kontrollwert zu schaffen.",
+            "translation_ru": "С учётом обратной связи пользователей мы решили убрать дополнительный шаг, потому что он создавал лишнее трение, не добавляя ценности контролю."
+          },
+          {
+            "text": "**Angesichts** des Wartungsbudgets **haben wir beschlossen,** die bestehende Infrastruktur weiterzuverwenden, **weil** ein neuer Service zusätzliche Betriebskosten verursachen würde.",
+            "translation_ru": "С учётом бюджета на поддержку мы решили повторно использовать существующую инфраструктуру, потому что новый сервис увеличил бы стоимость владения."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Added from the reasoning evaluation loop to close the direct decision-rationale coverage gap."
+    }
+  },
+  {
+    "id": "CLF070",
+    "title_ru": "Условие пересмотра вывода",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "revision criterion",
+    "metaphor_ru": "Сделать вывод проверяемым: заранее назвать наблюдение, которое действительно заставило бы его пересмотреть.",
+    "formulas": [
+      "I would revise [X] if [Y].",
+      "Ich würde [X] neu bewerten, wenn [Y]."
+    ],
+    "reasoning": {
+      "move": "Test",
+      "what_it_does_en": "Make the evidence or condition that would change a current conclusion explicit.",
+      "what_it_does_ru": "Явно назвать данные или условие, при которых текущий вывод пришлось бы пересмотреть.",
+      "when_to_use_en": "Use it when a conclusion is provisional and you want to show what observation would genuinely change your mind.",
+      "when_to_use_ru": "Используйте для предварительного вывода, когда важно показать, какое наблюдение действительно изменило бы вашу позицию.",
+      "contrast_en": "A useful test would be whether X proposes a check; this frame states the revision threshold itself.",
+      "common_mistake_en": "Choose a condition that could realistically change the conclusion, not an impossible demand that protects it from revision.",
+      "common_mistake_ru": "Условие должно реально уметь изменить вывод, а не быть недостижимым требованием, которое делает позицию неопровержимой."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I would revise [X] if [Y].",
+        "example": "I **would revise** the current conclusion **if** the same failure appeared with a clean configuration.",
+        "translation": "Я бы пересмотрел текущий вывод, если бы тот же сбой возник при чистой конфигурации.",
+        "examples": [
+          {
+            "text": "I **would revise** the rollout recommendation **if** the rollback test failed under normal load.",
+            "translation_ru": "Я бы пересмотрел рекомендацию по запуску, если бы тест отката провалился при обычной нагрузке."
+          },
+          {
+            "text": "I **would revise** the root-cause hypothesis **if** the timestamps showed that the queue stopped after replication.",
+            "translation_ru": "Я бы пересмотрел гипотезу о первопричине, если бы временные метки показали, что очередь остановилась после репликации."
+          },
+          {
+            "text": "I **would revise** the model choice **if** a simpler baseline matched its accuracy on held-out data.",
+            "translation_ru": "Я бы пересмотрел выбор модели, если бы более простой базовый вариант показал такую же точность на отложенных данных."
+          },
+          {
+            "text": "I **would revise** the priority **if** the customer impact turned out to be negligible.",
+            "translation_ru": "Я бы пересмотрел приоритет, если бы влияние на клиента оказалось незначительным."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich würde [X] neu bewerten, wenn [Y].",
+        "example": "Ich **würde** die aktuelle Schlussfolgerung **neu bewerten, wenn** derselbe Fehler bei einer sauberen Konfiguration aufträte.",
+        "translation": "Я бы пересмотрел текущий вывод, если бы тот же сбой возник при чистой конфигурации.",
+        "examples": [
+          {
+            "text": "Ich **würde** die Empfehlung für den Rollout **neu bewerten, wenn** der Rollback-Test unter normaler Last fehlschlüge.",
+            "translation_ru": "Я бы пересмотрел рекомендацию по запуску, если бы тест отката провалился при обычной нагрузке."
+          },
+          {
+            "text": "Ich **würde** die Hypothese zur Grundursache **neu bewerten, wenn** die Zeitstempel zeigten, dass die Queue erst nach der Replikation gestoppt hat.",
+            "translation_ru": "Я бы пересмотрел гипотезу о первопричине, если бы временные метки показали, что очередь остановилась после репликации."
+          },
+          {
+            "text": "Ich **würde** die Modellwahl **neu bewerten, wenn** eine einfachere Baseline auf zurückgehaltenen Daten die gleiche Genauigkeit erreichte.",
+            "translation_ru": "Я бы пересмотрел выбор модели, если бы более простой базовый вариант показал такую же точность на отложенных данных."
+          },
+          {
+            "text": "Ich **würde** die Priorität **neu bewerten, wenn** sich die Auswirkungen auf Kunden als vernachlässigbar herausstellten.",
+            "translation_ru": "Я бы пересмотрел приоритет, если бы влияние на клиента оказалось незначительным."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Added from the reasoning evaluation loop to close the explicit revision-criterion coverage gap."
+    }
+  }
+]

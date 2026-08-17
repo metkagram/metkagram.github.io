@@ -11,9 +11,12 @@ This repository is the **public publication layer**, not the canonical research 
 The public release deliberately contains enough material to inspect, cite and evaluate the method without publishing the complete research corpus or generation pipeline:
 
 - 72 selected annotated documents, 12 from each English/German collection;
-- 28 curated reasoning-enabled English/German pattern frames;
+- 30 curated reasoning-enabled English/German pattern frames across 9 reasoning moves;
+- a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer;
 - public schemas, provenance, APIs, research documentation and website code;
 - the hosted learning and research interface.
+
+The routing benchmark is an internal regression and editorial-quality signal. It is not independent validation and does not establish language-learning efficacy.
 
 The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, linguistic heuristics, lexical rule tables and unpublished research assets are maintained in a private research core.
 
@@ -38,16 +41,17 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` builds the static site, validates the deliberately public content, runs unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
+`npm run verify` builds the static site, validates the deliberately public content, runs the reasoning-routing regression benchmark, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
 
 ## Public content sources
 
 - `data/metkagram-export/` contains the selected annotation showcase only.
 - `data/reasoning-frames/` contains the curated public reasoning-frame showcase.
+- `data/evaluation/reasoning-intents.json` contains the bounded public routing benchmark over published reasoning frames.
 - `data/study-sets.json` supplies taxonomy metadata; the public build exposes only study sets used by published frames.
 - `data/publication-manifest.json` records the deliberate public sample boundary.
 
-Generated public outputs include `/data/advanced-patterns.json` and `/api/v1/*`, but these represent the **public showcase**, not the private full curriculum.
+Generated public outputs include `/data/advanced-patterns.json`, `/data/reasoning-evaluation.json` and `/api/v1/*`, but these represent the **public showcase**, not the private full curriculum or private evaluation workspace.
 
 ## Research and licensing
 
