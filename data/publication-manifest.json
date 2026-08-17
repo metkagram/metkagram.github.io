@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "documentsPerCollection": 12,
+  "collections": [
+    {
+      "target": "enGram",
+      "collection": "dialogues",
+      "documents": 12
+    },
+    {
+      "target": "enGram",
+      "collection": "patterns",
+      "documents": 12
+    },
+    {
+      "target": "enGram",
+      "collection": "library",
+      "documents": 12
+    },
+    {
+      "target": "deGram",
+      "collection": "dialogues",
+      "documents": 12
+    },
+    {
+      "target": "deGram",
+      "collection": "patterns",
+      "documents": 12
+    },
+    {
+      "target": "deGram",
+      "collection": "library",
+      "documents": 12
+    }
+  ],
+  "totalDocuments": 72
+}

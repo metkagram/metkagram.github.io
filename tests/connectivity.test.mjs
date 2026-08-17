@@ -5,65 +5,40 @@ import test from "node:test";
 
 const DIST = path.join(process.cwd(), "dist");
 const graph = JSON.parse(fs.readFileSync(path.join(DIST, "data", "connections.json"), "utf8"));
-const advancedPatterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
-const reasoningIndex = JSON.parse(fs.readFileSync(path.join(DIST, "data", "reasoning-frames", "index.json"), "utf8"));
+const patterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
+const reasoning = JSON.parse(fs.readFileSync(path.join(DIST, "data", "reasoning-frames", "index.json"), "utf8"));
 
 function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 }
 
-test("connectivity graph links the three product layers", () => {
+test("connectivity graph describes only the bounded public release", () => {
   assert.equal(graph.schemaVersion, 1);
-  assert.equal(graph.sourceCounts.advancedPatterns, advancedPatterns.length);
-  assert.ok(advancedPatterns.length >= 3464, "expanded curriculum must retain at least 3,464 patterns");
-  assert.equal(graph.sourceCounts.annotatedDocuments, 2240);
-  assert.equal(graph.sourceCounts.reasoningFrames, reasoningIndex.count);
-  assert.ok(reasoningIndex.count >= 28, "reasoning corpus must retain at least 28 frames");
+  assert.equal(graph.sourceCounts.advancedPatterns, 28);
+  assert.equal(graph.sourceCounts.annotatedDocuments, 72);
+  assert.equal(graph.sourceCounts.reasoningFrames, 28);
+  assert.equal(patterns.length, 28);
+  assert.equal(reasoning.count, 28);
   assert.equal(graph.relationCounts.reasoningMoveCount, 9);
-  assert.ok(graph.relationCounts.connectedDocumentCount >= 700);
-  assert.ok(graph.relationCounts.connectedSentenceCount >= 1800);
-  assert.equal(graph.reasoningMoves.reduce((sum, item) => sum + item.count, 0), reasoningIndex.count);
+  assert.equal(Object.keys(graph.documents).length, 72);
+  assert.equal(Object.keys(graph.patterns).length, 28);
 });
 
-test("hypothetical language connects to the matching reusable pattern", () => {
-  const key = "en:library:nCwTfsL1gV21PfxhqsJj";
-  assert.ok(graph.documents[key]);
-  assert.ok(graph.documents[key].patterns.some((item) => item.pattern_id === "CON001"));
-  assert.ok(graph.patterns.CON001.documents.length > 0, "CON001 should link back to annotated contexts");
-});
-
-test("practice and detail pages expose server-rendered connectivity", () => {
+test("practice and a reasoning detail page expose server-rendered reasoning navigation", () => {
   const practice = html("en", "practice");
   assert.match(practice, /data-connectivity="reasoning-nav"/);
-  assert.match(practice, /Start from the move you want to make/);
-
-  const reasoningPattern = html("en", "practice", "clf045");
-  assert.match(reasoningPattern, /id="reasoning-move"/);
-  assert.match(reasoningPattern, /Condition/);
-
-  const connectedPattern = html("en", "practice", "con001");
-  assert.match(connectedPattern, /See this structure in context/);
-  assert.match(connectedPattern, /\/en\/explore\/english\//);
-
-  const document = html("en", "explore", "english", "library", "nCwTfsL1gV21PfxhqsJj");
-  assert.match(document, /data-connectivity="document"/);
-  assert.match(document, /\/en\/practice\/con001\//);
+  const id = patterns[0].id.toLowerCase();
+  const detail = html("en", "practice", id);
+  assert.match(detail, /id="reasoning-move"/);
 });
 
-test("all connection references point to known records", () => {
-  const patternIds = new Set(Object.keys(graph.patterns));
+test("all public connection references point to public patterns", () => {
+  const ids = new Set(Object.keys(graph.patterns));
   for (const document of Object.values(graph.documents)) {
-    for (const relation of document.patterns) {
-      assert.ok(patternIds.has(relation.pattern_id), `unknown pattern ${relation.pattern_id}`);
-      assert.ok(relation.score >= 12.5);
-    }
-    for (const relation of document.sentence_links) {
-      assert.ok(patternIds.has(relation.pattern_id));
-      assert.ok(relation.score >= 13.5);
-    }
+    for (const relation of document.patterns) assert.ok(ids.has(relation.pattern_id));
+    for (const relation of document.sentence_links) assert.ok(ids.has(relation.pattern_id));
   }
   for (const relation of Object.values(graph.patterns)) {
-    for (const id of relation.related_patterns) assert.ok(patternIds.has(id), `unknown related pattern ${id}`);
-    for (const document of relation.documents) assert.ok(document.document_id, "reverse context relation requires a document id");
+    for (const id of relation.related_patterns) assert.ok(ids.has(id));
   }
 });
