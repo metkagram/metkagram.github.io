@@ -1,4 +1,4 @@
-import { classifyReasoningSentence } from "./public-learning.mjs";
+import { classifyReasoningSentence, PUBLIC_LEARNING_STRENGTH_RANK } from "./public-learning.mjs";
 import { classifyPatternLensExtraRules } from "./pattern-lens-extra-rules.mjs";
 
 export const LENS_STOP_SEGMENTS = new Set([
@@ -10,6 +10,8 @@ export const LENS_META_CUES = {
   en: /\b(?:word|phrase|term|expression|sentence|paragraph|section|title|chapter|conjunction|adverb|preposition|verb|noun|adjective)\b/iu,
   de: /\b(?:wort|wörter|ausdruck|ausdrücke|satz|sätze|absatz|abschnitt|titel|kapitel|konjunktion|adverb|präposition|verb|nomen|substantiv|adjektiv)\b/iu,
 };
+
+const REASONING_SCORE = Object.freeze({ direct: 18, supported: 16, prompt: 14 });
 
 export function normalizeLensText(value = "") {
   return String(value)
@@ -59,7 +61,11 @@ function reasoningLinksFor(text, language) {
   const base = classifyReasoningSentence(text, language, { maxLinks: 3 });
   const extra = classifyPatternLensExtraRules(text, language);
   const byPattern = new Map();
-  for (const link of [...base, ...extra].sort((a, b) => b.confidence - a.confidence || (b.priority || 0) - (a.priority || 0) || a.rule_id.localeCompare(b.rule_id))) {
+  for (const link of [...base, ...extra].sort((a, b) =>
+    PUBLIC_LEARNING_STRENGTH_RANK[b.strength] - PUBLIC_LEARNING_STRENGTH_RANK[a.strength]
+    || (b.priority || 0) - (a.priority || 0)
+    || a.rule_id.localeCompare(b.rule_id)
+  )) {
     if (!byPattern.has(link.pattern_id)) byPattern.set(link.pattern_id, link);
   }
   return [...byPattern.values()];
@@ -88,7 +94,7 @@ export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
       const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalizeLensText(segment).length / 10), 0)
         + (exampleMatch ? 10 : 0)
         + (hits.length > 1 ? 2 : 0);
-      const reasoningScore = reasoningMatch ? 12 + reasoningMatch.confidence * 6 : 0;
+      const reasoningScore = reasoningMatch ? REASONING_SCORE[reasoningMatch.strength] || 0 : 0;
       const combinedBonus = reasoningMatch && hits.length ? 3 : 0;
       const score = literalScore + reasoningScore + combinedBonus;
       if (!score) return null;
@@ -107,13 +113,14 @@ export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
         example: lang.example,
         translation: lang.translation,
         hits,
-        example_match: exampleMatch || null,
+        example_match: exampleMatch,
         reasoning_match: reasoningMatch,
         evidence_type: evidenceType,
         score: Number(score.toFixed(3)),
         score_breakdown: {
           literal: Number(literalScore.toFixed(3)),
-          reasoning: Number(reasoningScore.toFixed(3)),
+          reasoning: reasoningScore,
+          reasoning_strength: reasoningMatch?.strength || null,
           combined_bonus: combinedBonus,
         },
         coverage: segments.length ? Number((hits.length / segments.length).toFixed(3)) : 0,
