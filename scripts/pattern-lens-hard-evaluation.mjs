@@ -23,7 +23,7 @@ function compactMatch(match) {
     reasoning_match: match.reasoning_match ? {
       rule_id: match.reasoning_match.rule_id,
       intent_id: match.reasoning_match.intent_id,
-      confidence: match.reasoning_match.confidence,
+      strength: match.reasoning_match.strength,
       evidence: match.reasoning_match.evidence,
     } : null,
   };
@@ -77,8 +77,8 @@ function patchResearch(locale, report) {
     ? `Hard benchmark использует ${report.metrics.positive_cases} свежих парафразов и ${report.metrics.negative_cases} ловушек/нейтральных фраз. Pattern hit@3: ${pct(report.metrics.positive_pattern_hit_at_3)}; корректное воздержание на negatives: ${pct(report.metrics.negative_abstention_rate)}.`
     : `The hard benchmark uses ${report.metrics.positive_cases} fresh paraphrases and ${report.metrics.negative_cases} traps/neutral sentences. Pattern hit@3: ${pct(report.metrics.positive_pattern_hit_at_3)}; correct abstention on negatives: ${pct(report.metrics.negative_abstention_rate)}.`;
   const caveat = locale === "ru"
-    ? "Это robustness regression, а не независимый тест эффективности обучения. Кейсы специально проверяют generalisation и false positives."
-    : "This is a robustness regression, not independent evidence of learning efficacy. The cases deliberately probe generalisation and false positives.";
+    ? "Это robustness regression, а не независимый тест эффективности обучения или статистическая оценка precision/recall. Кейсы специально проверяют generalisation, abstention и false positives."
+    : "This is a robustness regression, not independent evidence of learning efficacy or a statistical precision/recall estimate. The cases deliberately probe generalisation, abstention and false positives.";
   const block = `<section class="section-pad ruled" data-pattern-lens-hard-evaluation><p class="eyebrow">Pattern Lens · hard benchmark</p><h2>Generalisation and abstention</h2><p class="lede">${text}</p><p>${caveat}</p><p><a href="/data/pattern-lens-hard-evaluation.json">Machine-readable hard report →</a></p></section>`;
   html = html.replace("</main>", `${block}</main>`);
   fs.writeFileSync(file, html);
@@ -109,7 +109,7 @@ function patchDiscovery(report) {
   if (fs.existsSync(llms)) {
     let text = fs.readFileSync(llms, "utf8");
     if (!text.includes("Pattern Lens hard evaluation:")) {
-      text += `\n- Pattern Lens hard evaluation: ${SITE_URL}/data/pattern-lens-hard-evaluation.json (paraphrases + negative abstention cases; engineering robustness only)\n`;
+      text += `\n- Pattern Lens hard evaluation: ${SITE_URL}/data/pattern-lens-hard-evaluation.json (paraphrases + negative abstention cases; engineering robustness only, not statistical precision/recall)\n`;
       fs.writeFileSync(llms, text);
     }
   }
@@ -123,12 +123,13 @@ export function evaluatePatternLensHard() {
   const negatives = fixture.negativeCases.map((item) => evaluateNegative(content.advancedPatterns, item));
   const metrics = summarize(positives, negatives);
   const report = {
-    schema_version: 1,
+    schema_version: 2,
     dataset_version: getDatasetVersion(),
     release_date: SITE_RELEASE_DATE,
     purpose: fixture.purpose,
     evidence_limit: fixture.scope,
-    architecture: "hybrid deterministic retrieval with explicit abstention requirements",
+    architecture: "hybrid deterministic retrieval with explicit abstention requirements and categorical reasoning strength",
+    reasoning_strength_policy: "direct > supported > prompt; categorical editorial evidence, not probability",
     thresholds: {
       positive_pattern_hit_at_3: 0.9,
       positive_move_hit_at_3: 0.9,
@@ -136,6 +137,7 @@ export function evaluatePatternLensHard() {
       false_positive_rate_max: 0.1
     },
     metrics,
+    excluded_ambiguous_reasoning_cases: fixture.excludedAmbiguousReasoningCases || [],
     positive_cases: positives,
     negative_cases: negatives,
   };
