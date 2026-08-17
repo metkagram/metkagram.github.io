@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "purpose": "Hard retrieval benchmark for Pattern Lens using fresh paraphrases, metalinguistic traps and neutral negative cases.",
-  "scope": "Engineering robustness benchmark. Cases are hand-authored to probe generalisation and abstention; they are not an independent learning-efficacy study.",
+  "schemaVersion": 2,
+  "purpose": "Hard retrieval benchmark for Pattern Lens using fresh paraphrases, metalinguistic traps and neutral negative cases under the reviewed precision-first reasoning policy.",
+  "scope": "Engineering robustness benchmark. Cases are hand-authored to probe generalisation and abstention; they are not an independent learning-efficacy study or statistical precision/recall evidence.",
   "primaryMetrics": ["positive_pattern_hit_at_3", "negative_abstention_rate", "false_positive_rate"],
   "positiveCases": [
     {"id":"HP01","language":"en","sentence":"Poor onboarding leads to lower activation.","expected_pattern":"CLF059","expected_move":"Cause"},
@@ -11,7 +11,6 @@
     {"id":"HP05","language":"de","sentence":"Vermutlich liegt die Verzögerung am Netzwerk.","expected_pattern":"CLF053","expected_move":"Infer"},
     {"id":"HP06","language":"en","sentence":"Compared with the old process, this one is faster.","expected_pattern":"CLF064","expected_move":"Compare"},
     {"id":"HP07","language":"de","sentence":"Der Unterschied zwischen den beiden Ansätzen liegt in den Kosten.","expected_pattern":"CLF063","expected_move":"Compare"},
-    {"id":"HP08","language":"en","sentence":"I prefer asynchronous updates to daily meetings.","expected_pattern":"CLF049","expected_move":"Decide"},
     {"id":"HP09","language":"de","sentence":"Wir müssen uns zwischen Geschwindigkeit und Genauigkeit entscheiden.","expected_pattern":"CLF049","expected_move":"Decide"},
     {"id":"HP10","language":"en","sentence":"I see your point, but the assumption still looks risky.","expected_pattern":"CLF058","expected_move":"Challenge"},
     {"id":"HP11","language":"de","sentence":"Ich verstehe deinen Punkt, aber die Daten sprechen dagegen.","expected_pattern":"CLF058","expected_move":"Challenge"},
@@ -22,7 +21,6 @@
     {"id":"HP16","language":"en","sentence":"Without a rollback plan, we cannot deploy safely.","expected_pattern":"CLF043","expected_move":"Condition"},
     {"id":"HP17","language":"de","sentence":"Ohne Freigabe können wir nicht starten.","expected_pattern":"CLF043","expected_move":"Condition"},
     {"id":"HP18","language":"en","sentence":"If demand doubled, would the system still cope?","expected_pattern":"CLF056","expected_move":"Test"},
-    {"id":"HP19","language":"de","sentence":"Wenn die Last steigt, würden wir mehr Instanzen brauchen.","expected_pattern":"CLF056","expected_move":"Test"},
     {"id":"HP20","language":"en","sentence":"They decided to postpone the migration.","expected_pattern":"CLF069","expected_move":"Decide"},
     {"id":"HP21","language":"en","sentence":"The difference between the two plans is mainly cost.","expected_pattern":"CLF063","expected_move":"Compare"},
     {"id":"HP22","language":"en","sentence":"We chose to postpone the launch.","expected_pattern":"CLF069","expected_move":"Decide"},
@@ -48,5 +46,9 @@
     {"id":"HN13","language":"de","sentence":"Das Team traf sich am Dienstag und besprach die Roadmap.","reason":"neutral prose with no target reasoning frame"},
     {"id":"HN14","language":"en","sentence":"The server is in the rack next to the router.","reason":"neutral factual prose"},
     {"id":"HN15","language":"de","sentence":"Der Server steht neben dem Router.","reason":"neutral factual prose"}
+  ],
+  "excludedAmbiguousReasoningCases": [
+    {"id":"HP08","language":"en","sentence":"I prefer asynchronous updates to daily meetings.","reason":"preference may retrieve a literal language pattern but is not itself evidence of a completed decision"},
+    {"id":"HP19","language":"de","sentence":"Wenn die Last steigt, würden wir mehr Instanzen brauchen.","reason":"ordinary conditional consequence is not automatically hypothesis testing"}
   ]
 }

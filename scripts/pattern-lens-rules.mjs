@@ -3,7 +3,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
-  PUBLIC_LEARNING_MIN_CONFIDENCE,
+  PUBLIC_LEARNING_STRENGTHS,
+  PUBLIC_LEARNING_STRENGTH_RANK,
   publicLearningRules,
 } from "../src/public-learning.mjs";
 import { patternLensExtraRules } from "../src/pattern-lens-extra-rules.mjs";
@@ -12,7 +13,6 @@ import { LENS_META_CUES, LENS_STOP_SEGMENTS } from "../src/pattern-lens-ranking.
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const OUTPUT = path.join(DIST, "data", "pattern-lens-rules.json");
-const GENERIC_CONDITION_RULE_IDS = new Set(["en-condition-if-start", "de-condition-wenn-start"]);
 
 function serializeRule(item) {
   return {
@@ -23,7 +23,7 @@ function serializeRule(item) {
     reasoning_move: item.move,
     intent_id: item.intent_id,
     pattern_id: item.pattern_id,
-    confidence: item.confidence,
+    strength: item.strength,
     scope: item.scope,
     evidence: item.evidence,
     priority: item.priority,
@@ -33,10 +33,11 @@ function serializeRule(item) {
 export function exportPatternLensRules() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the main build first.");
   const payload = {
-    schema_version: 2,
-    min_confidence: PUBLIC_LEARNING_MIN_CONFIDENCE,
+    schema_version: 3,
     max_links_per_sentence: Math.max(3, PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE),
-    generic_condition_rule_ids: [...GENERIC_CONDITION_RULE_IDS],
+    relation_strengths: PUBLIC_LEARNING_STRENGTHS,
+    strength_rank: PUBLIC_LEARNING_STRENGTH_RANK,
+    score_policy: "Categorical editorial strength, not probability or statistical confidence.",
     stop_segments: [...LENS_STOP_SEGMENTS],
     meta_cues: Object.fromEntries(Object.entries(LENS_META_CUES).map(([language, regex]) => [language, { pattern: regex.source, flags: regex.flags }])),
     rules: [...publicLearningRules, ...patternLensExtraRules].map(serializeRule),

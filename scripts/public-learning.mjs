@@ -7,7 +7,8 @@ import { getDatasetVersion } from "../src/provenance.mjs";
 import {
   classifyReasoningSentence,
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
-  PUBLIC_LEARNING_MIN_CONFIDENCE,
+  PUBLIC_LEARNING_STRENGTHS,
+  PUBLIC_LEARNING_STRENGTH_RANK,
   validatePublicLearningRules
 } from "../src/public-learning.mjs";
 
@@ -15,6 +16,7 @@ const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const TARGET_KEY = { en: "english", de: "german" };
 const BASE_URL = "https://metkagram.github.io";
+const QUALITY_BENCHMARK = path.join(ROOT, "data", "evaluation", "public-learning-links.json");
 
 function escapeHtml(value = "") {
   return String(value)
@@ -38,7 +40,9 @@ function intentTitle(intent, locale) {
 }
 
 function relationSort(a, b) {
-  return b.confidence - a.confidence || a.sentence.localeCompare(b.sentence) || a.pattern_id.localeCompare(b.pattern_id);
+  return PUBLIC_LEARNING_STRENGTH_RANK[b.strength] - PUBLIC_LEARNING_STRENGTH_RANK[a.strength]
+    || a.sentence.localeCompare(b.sentence)
+    || a.pattern_id.localeCompare(b.pattern_id);
 }
 
 export function buildPublicLearningGraph(content) {
@@ -122,14 +126,16 @@ export function buildPublicLearningGraph(content) {
 
   const counts = contentCounts(content);
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     version: getDatasetVersion(),
-    purpose: "High-confidence public learning links from real annotated sentences to reasoning intents and recommended frames.",
-    evidenceLimit: "A link means that a visible cue supports the same reasoning move or communicative intent. It is a pedagogical connection, not a claim that the sentence is semantically or syntactically equivalent to the recommended frame.",
+    purpose: "Reviewed public learning links from real annotated sentences to reasoning intents and recommended frames.",
+    evidenceLimit: "A link means that a visible cue supports the same reasoning move or communicative intent. It is a deterministic pedagogical connection, not a probability estimate and not a claim that the source sentence is semantically or syntactically equivalent to the recommended frame.",
     rules: {
-      minimumConfidence: PUBLIC_LEARNING_MIN_CONFIDENCE,
       maximumLinksPerSentence: PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
-      relationScopes: ["frame_structure", "reasoning_move", "intent_prompt"]
+      relationStrengths: PUBLIC_LEARNING_STRENGTHS,
+      relationScopes: ["frame_structure", "reasoning_move", "intent_prompt"],
+      ranking: "direct > supported > prompt, then editorial rule priority",
+      scorePolicy: "No probability or confidence percentage is published. Relation strength is categorical and editorial."
     },
     sourceCounts: {
       annotatedDocuments: counts.annotatedDocuments,
@@ -165,11 +171,12 @@ function stylesheet(html) {
 function relationBlock(locale, relation, patternById) {
   const intent = intentById.get(relation.intent_id);
   const pattern = patternById.get(relation.pattern_id);
-  const scope = localized(locale,
-    relation.scope === "frame_structure" ? "strong structural cue" : relation.scope === "intent_prompt" ? "communicative prompt" : "same reasoning move",
-    relation.scope === "frame_structure" ? "сильный структурный сигнал" : relation.scope === "intent_prompt" ? "коммуникативная задача" : "та же логическая операция"
+  const strength = localized(
+    locale,
+    relation.strength === "direct" ? "direct structural cue" : relation.strength === "prompt" ? "communicative prompt" : "supported reasoning cue",
+    relation.strength === "direct" ? "прямой структурный сигнал" : relation.strength === "prompt" ? "коммуникативная задача" : "поддержанный логический сигнал"
   );
-  return `<div class="sentence-reasoning-link" data-reasoning-move="${escapeHtml(relation.reasoning_move)}" data-intent="${escapeHtml(relation.intent_id)}" data-pattern="${escapeHtml(relation.pattern_id)}"><p><strong>${escapeHtml(relation.reasoning_move)}</strong> · <a href="/${locale}/practice/intents/#intent-${escapeHtml(relation.intent_id)}">${escapeHtml(intentTitle(intent, locale))}</a> → <a href="/${locale}/practice/${relation.pattern_id.toLowerCase()}/#reasoning-move">${escapeHtml(patternFormula(pattern, relation.language))}</a></p><small>${escapeHtml(scope)} · ${escapeHtml(relation.evidence)} · ${Math.round(relation.confidence * 100)}%</small></div>`;
+  return `<div class="sentence-reasoning-link" data-reasoning-move="${escapeHtml(relation.reasoning_move)}" data-intent="${escapeHtml(relation.intent_id)}" data-pattern="${escapeHtml(relation.pattern_id)}" data-strength="${escapeHtml(relation.strength)}"><p><strong>${escapeHtml(relation.reasoning_move)}</strong> · <a href="/${locale}/practice/intents/#intent-${escapeHtml(relation.intent_id)}">${escapeHtml(intentTitle(intent, locale))}</a> → <a href="/${locale}/practice/${relation.pattern_id.toLowerCase()}/#reasoning-move">${escapeHtml(patternFormula(pattern, relation.language))}</a></p><small>${escapeHtml(strength)} · ${escapeHtml(relation.evidence)}</small></div>`;
 }
 
 function injectSentenceLinks(html, locale, documentRelation, patternById) {
@@ -208,7 +215,7 @@ function documentSummary(locale, relation) {
       const intent = intentById.get(item.intent_id);
       return `<a href="/${locale}/practice/intents/#intent-${escapeHtml(item.intent_id)}"><span class="document-number">${String(item.count).padStart(2, "0")}</span><span><strong>${escapeHtml(item.move)}</strong><small>${escapeHtml(intentTitle(intent, locale))}</small></span><span aria-hidden="true">→</span></a>`;
     }).join("");
-  return `<section class="section-pad ruled connectivity-section" data-public-learning="document-summary"><p class="eyebrow">${localized(locale, "Reasoning in context", "Логика в контексте")}</p><h2>${localized(locale, "Move from a real sentence to a reusable frame", "От реального предложения к переиспользуемому каркасу")}</h2><p>${localized(locale, "These links are based on visible reasoning cues. They suggest a next frame to practise; they do not claim that the source sentence and frame mean exactly the same thing.", "Связи строятся по видимым логическим сигналам. Они предлагают следующий каркас для практики, но не утверждают, что исходное предложение и каркас полностью эквивалентны.")}</p><div class="pattern-index connectivity-index">${cards}</div></section>`;
+  return `<section class="section-pad ruled connectivity-section" data-public-learning="document-summary"><p class="eyebrow">${localized(locale, "Reasoning in context", "Логика в контексте")}</p><h2>${localized(locale, "Move from a real sentence to a reusable frame", "От реального предложения к переиспользуемому каркасу")}</h2><p>${localized(locale, "These reviewed links are based on visible reasoning cues. They suggest a next frame to practise; they do not claim that the source sentence and frame mean exactly the same thing.", "Эти проверенные связи строятся по видимым логическим сигналам. Они предлагают следующий каркас для практики, но не утверждают, что исходное предложение и каркас полностью эквивалентны.")}</p><div class="pattern-index connectivity-index">${cards}</div></section>`;
 }
 
 function enhanceDocument(html, locale, relation, patternById) {
@@ -229,7 +236,7 @@ function corpusExampleCard(locale, relation) {
 function enhancePattern(html, locale, patternId, graph) {
   const examples = graph.patterns[patternId]?.sentence_examples || [];
   if (!examples.length || html.includes('data-public-learning="pattern-corpus"')) return html;
-  const section = `<section class="section-pad ruled connectivity-section" data-public-learning="pattern-corpus"><p class="eyebrow">${localized(locale, "Public corpus examples", "Примеры из публичного корпуса")}</p><h2>${localized(locale, "See this reasoning move in real sentences", "Посмотрите эту логическую операцию в реальных предложениях")}</h2><p>${localized(locale, "The source sentence contains a cue that points toward this frame. Treat it as a bridge for practice, not as an equivalence claim.", "В исходном предложении есть сигнал, который ведёт к этому каркасу. Используйте связь как мост для практики, а не как утверждение об эквивалентности.")}</p><div class="pattern-index connectivity-index">${examples.slice(0, 6).map((item) => corpusExampleCard(locale, item)).join("")}</div></section>`;
+  const section = `<section class="section-pad ruled connectivity-section" data-public-learning="pattern-corpus"><p class="eyebrow">${localized(locale, "Public corpus examples", "Примеры из публичного корпуса")}</p><h2>${localized(locale, "See this reasoning move in real sentences", "Посмотрите эту логическую операцию в реальных предложениях")}</h2><p>${localized(locale, "The source sentence contains a reviewed cue that points toward this frame. Treat it as a bridge for practice, not as an equivalence claim.", "В исходном предложении есть проверенный сигнал, который ведёт к этому каркасу. Используйте связь как мост для практики, а не как утверждение об эквивалентности.")}</p><div class="pattern-index connectivity-index">${examples.slice(0, 6).map((item) => corpusExampleCard(locale, item)).join("")}</div></section>`;
   const marker = '<aside class="share-bar';
   const result = html.includes(marker) ? html.replace(marker, `${section}${marker}`) : html.replace("</article></main>", `${section}</article></main>`);
   return stylesheet(result);
@@ -246,7 +253,7 @@ function enhanceIntentPage(html, locale, graph) {
     if (end < 0) continue;
     const article = result.slice(start, end + 10);
     if (article.includes('data-public-learning="intent-corpus"')) continue;
-    const block = `<div class="intent-corpus-examples" data-public-learning="intent-corpus"><p class="eyebrow">${localized(locale, "From the public corpus", "Из публичного корпуса")}</p><div class="pattern-index connectivity-index">${relation.sentence_examples.slice(0, 3).map((item) => corpusExampleCard(locale, item)).join("")}</div></div>`;
+    const block = `<div class="intent-corpus-examples" data-public-learning="intent-corpus"><p class="eyebrow">${localized(locale, "From the reviewed public corpus", "Из проверенного публичного корпуса")}</p><div class="pattern-index connectivity-index">${relation.sentence_examples.slice(0, 3).map((item) => corpusExampleCard(locale, item)).join("")}</div></div>`;
     const updated = article.replace("</article>", `${block}</article>`);
     result = `${result.slice(0, start)}${updated}${result.slice(end + 10)}`;
   }
@@ -265,12 +272,75 @@ function writeJson(relativePath, value) {
   fs.writeFileSync(target, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-function patchCatalog(graph) {
+function countValues(values) {
+  const counts = {};
+  for (const value of values) counts[value] = (counts[value] || 0) + 1;
+  return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
+}
+
+function buildQualityReport(graph) {
+  const benchmark = JSON.parse(fs.readFileSync(QUALITY_BENCHMARK, "utf8"));
+  const positiveResults = benchmark.positive_cases.map((item) => {
+    const links = classifyReasoningSentence(item.sentence, item.language);
+    const passed = links.some((link) =>
+      link.reasoning_move === item.expected_move
+      && link.intent_id === item.expected_intent
+      && link.pattern_id === item.expected_pattern
+    );
+    return { id: item.id, passed };
+  });
+  const negativeResults = benchmark.negative_cases.map((item) => {
+    const links = classifyReasoningSentence(item.sentence, item.language);
+    return { id: item.id, passed: links.length === 0, emittedRules: links.map((link) => link.rule_id) };
+  });
+
+  const relations = Object.values(graph.documents).flatMap((document) => document.sentence_links);
+  const positivePassed = positiveResults.filter((item) => item.passed).length;
+  const negativePassed = negativeResults.filter((item) => item.passed).length;
+
+  return {
+    schemaVersion: 1,
+    graphSchemaVersion: graph.schemaVersion,
+    version: graph.version,
+    purpose: "Precision-oriented editorial audit of the public sentence-to-reasoning connection layer.",
+    evidenceLimit: "Positive and negative controls are curated regression examples from the public corpus. Their pass rates are not statistical precision, recall, or evidence of learning efficacy.",
+    benchmark: {
+      schemaVersion: benchmark.schemaVersion,
+      positiveCases: positiveResults.length,
+      positivePassed,
+      negativeCases: negativeResults.length,
+      negativePassed,
+      positivePassRate: positiveResults.length ? positivePassed / positiveResults.length : 0,
+      negativeControlPassRate: negativeResults.length ? negativePassed / negativeResults.length : 0,
+      gatePassed: positivePassed === positiveResults.length && negativePassed === negativeResults.length
+    },
+    relationCounts: graph.relationCounts,
+    distribution: {
+      byStrength: countValues(relations.map((item) => item.strength)),
+      byScope: countValues(relations.map((item) => item.scope)),
+      byLanguage: countValues(relations.map((item) => item.language)),
+      byRule: countValues(relations.map((item) => item.rule_id))
+    },
+    suppressedBroadMappings: [
+      "ordinary if/wenn condition -> only-if prerequisite",
+      "generic wenn ... würde hypothetical -> hypothesis test",
+      "prefer X to Y -> decision",
+      "assumption noun/phrase -> challenge without a challenge cue",
+      "decision question -> stated decision",
+      "generic what-if scenario -> hypothesis test"
+    ],
+    positiveResults,
+    negativeResults
+  };
+}
+
+function patchCatalog(graph, quality) {
   const catalogPath = path.join(DIST, "data", "catalog.json");
   const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
   catalog.publicLearningConnections = {
     ...graph.relationCounts,
     dataset: `${BASE_URL}/data/learning-connections.json`,
+    qualityReport: `${BASE_URL}/data/learning-connections-quality.json`,
     evidenceLimit: graph.evidenceLimit
   };
   fs.writeFileSync(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`);
@@ -281,16 +351,21 @@ function patchCatalog(graph) {
     linkedSentences: graph.relationCounts.connectedSentenceCount,
     relations: graph.relationCounts.relationCount,
     coveredReasoningMoves: graph.relationCounts.coveredReasoningMoveCount,
-    dataset: `${BASE_URL}/data/learning-connections.json`
+    dataset: `${BASE_URL}/data/learning-connections.json`,
+    qualityReport: `${BASE_URL}/data/learning-connections-quality.json`,
+    qualityGatePassed: quality.benchmark.gatePassed
   };
   fs.writeFileSync(projectPath, `${JSON.stringify(project, null, 2)}\n`);
 
   const llmsPath = path.join(DIST, "llms.txt");
   let llms = fs.readFileSync(llmsPath, "utf8");
   if (!llms.includes("/data/learning-connections.json")) {
-    llms = `${llms.trimEnd()}\n\n## Public learning connections\n- ${BASE_URL}/data/learning-connections.json — cue-based links from published annotated sentences to reasoning intents and recommended frames; pedagogical links, not semantic-equivalence claims.\n`;
-    fs.writeFileSync(llmsPath, llms);
+    llms = `${llms.trimEnd()}\n\n## Public learning connections\n- ${BASE_URL}/data/learning-connections.json — reviewed cue-based links from published annotated sentences to reasoning intents and recommended frames; pedagogical links, not semantic-equivalence claims.\n`;
   }
+  if (!llms.includes("/data/learning-connections-quality.json")) {
+    llms = `${llms.trimEnd()}\n- ${BASE_URL}/data/learning-connections-quality.json — precision-oriented positive/negative-control audit for the public learning links; editorial regression evidence, not statistical precision or learning-efficacy evidence.\n`;
+  }
+  fs.writeFileSync(llmsPath, llms);
 }
 
 function updateHtml(content, graph) {
@@ -324,10 +399,14 @@ function main() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist; run the base static build first");
   const content = loadContent();
   const graph = buildPublicLearningGraph(content);
+  const quality = buildQualityReport(graph);
+  if (!quality.benchmark.gatePassed) throw new Error("Public learning quality benchmark failed");
   writeJson("data/learning-connections.json", serializableGraph(graph));
-  patchCatalog(graph);
+  writeJson("data/learning-connections-quality.json", quality);
+  patchCatalog(graph, quality);
   updateHtml(content, graph);
   process.stdout.write(`Public learning: ${graph.relationCounts.connectedSentenceCount} sentences, ${graph.relationCounts.relationCount} links, ${graph.relationCounts.connectedDocumentCount} documents, ${graph.relationCounts.coveredReasoningMoveCount} reasoning moves.\n`);
+  process.stdout.write(`Public learning quality: ${quality.benchmark.positivePassed}/${quality.benchmark.positiveCases} positive controls, ${quality.benchmark.negativePassed}/${quality.benchmark.negativeCases} negative controls.\n`);
 }
 
 main();
