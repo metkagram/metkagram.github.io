@@ -1,4 +1,5 @@
 import { collectionKeys, targetMeta } from "./i18n.mjs";
+import { buildIntentDataset } from "./intent-discovery.mjs";
 import { wrapList } from "./provenance.mjs";
 import { SITE_URL } from "./site.mjs";
 
@@ -74,6 +75,18 @@ export function buildCompleteSearchIndex(content) {
       }
     }
   }
-  const data = { patterns, sets, categories, documents };
+  const intents = buildIntentDataset(content).items.map((intent) => ({
+    id: intent.id,
+    reasoning_move: intent.reasoning_move,
+    title_en: intent.title_en,
+    title_ru: intent.title_ru,
+    description_en: intent.description_en,
+    description_ru: intent.description_ru,
+    queries_en: intent.queries_en,
+    queries_ru: intent.queries_ru,
+    pattern_ids: intent.pattern_ids,
+    canonical_url: intent.routes.en,
+  }));
+  const data = { patterns, sets, categories, documents, intents };
   return `${JSON.stringify(wrapList(data, { canonical_url: `${API_URL}/search-index.json`, record_type: "search_index" }), null, 2)}\n`;
 }
