@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Regression cases for Pattern Lens retrieval over real sentences already published in the bounded Metkagram corpus.",
+  "scope": "Engineering regression only. The cases are not an independent benchmark and do not measure language-learning efficacy.",
+  "source": "Derived from the published public-learning link fixture so Pattern Lens can be checked against the same bounded sentence-to-pattern bridge.",
+  "primaryMetric": "expected_pattern_hit_at_3",
+  "cases": [
+    {"id":"PL01","language":"en","sentence":"This issue has led to a drop in our customer satisfaction ratings.","expected_pattern":"CLF059","expected_move":"Cause"},
+    {"id":"PL02","language":"en","sentence":"Why did our sales drop?","expected_pattern":"CLF060","expected_move":"Cause"},
+    {"id":"PL03","language":"de","sentence":"Zu viel Alkohol führt zu Leberproblemen.","expected_pattern":"CLF059","expected_move":"Cause"},
+    {"id":"PL04","language":"en","sentence":"Can you write down the advantages and disadvantages of each option to help visualize and compare them?","expected_pattern":"CLF047","expected_move":"Decide"},
+    {"id":"PL05","language":"de","sentence":"Der Unterschied zwischen Gewinnen und Verlieren ist oft klein.","expected_pattern":"CLF063","expected_move":"Compare"},
+    {"id":"PL06","language":"en","sentence":"She prefers coffee to tea.","expected_pattern":"CLF049","expected_move":"Decide"},
+    {"id":"PL07","language":"de","sentence":"Wir müssen uns zwischen Kaffee und Tee entscheiden.","expected_pattern":"CLF049","expected_move":"Decide"},
+    {"id":"PL08","language":"en","sentence":"I agree with your point, but have we considered the potential risks?","expected_pattern":"CLF058","expected_move":"Challenge"},
+    {"id":"PL09","language":"de","sentence":"Ich verstehe deinen Punkt, aber ich sehe es anders.","expected_pattern":"CLF058","expected_move":"Challenge"},
+    {"id":"PL10","language":"de","sentence":"Unter der Annahme, dass alles gut geht, starten wir morgen.","expected_pattern":"CLF066","expected_move":"Challenge"},
+    {"id":"PL11","language":"en","sentence":"Can you stay calm and focus on the issue, not the person?","expected_pattern":"CLF062","expected_move":"Reframe"},
+    {"id":"PL12","language":"en","sentence":"I think we need more data before making a decision.","expected_pattern":"CLF041","expected_move":"Limit"},
+    {"id":"PL13","language":"en","sentence":"Yes, but not actively.","expected_pattern":"CLF065","expected_move":"Limit"},
+    {"id":"PL14","language":"en","sentence":"I think we need more data before making a decision.","expected_pattern":"CLF045","expected_move":"Condition"},
+    {"id":"PL15","language":"de","sentence":"Ohne Hilfe könnte ich das nicht tun.","expected_pattern":"CLF043","expected_move":"Condition"},
+    {"id":"PL16","language":"de","sentence":"Ich gehe spazieren, es sei denn, dass es regnet.","expected_pattern":"CLF044","expected_move":"Condition"},
+    {"id":"PL17","language":"en","sentence":"If these adjustments don't lead to improvement, we may need to consider alternative strategies.","expected_pattern":"CLF070","expected_move":"Test"},
+    {"id":"PL18","language":"de","sentence":"Wenn ich mehr Zeit hätte, würde ich ein Buch schreiben.","expected_pattern":"CLF056","expected_move":"Test"},
+    {"id":"PL19","language":"en","sentence":"Let's review the impact of these changes at the end of the next quarter.","expected_pattern":"CLF067","expected_move":"Test"},
+    {"id":"PL20","language":"en","sentence":"It appears that customer complaints have increased due to shipping delays.","expected_pattern":"CLF053","expected_move":"Infer"},
+    {"id":"PL21","language":"en","sentence":"They decided to call it a day.","expected_pattern":"CLF069","expected_move":"Decide"},
+    {"id":"PL22","language":"en","sentence":"What if you need to make a quick decision?","expected_pattern":"CLF056","expected_move":"Test"}
+  ]
+}
