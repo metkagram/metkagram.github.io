@@ -2,38 +2,16 @@
   "schemaVersion": 2,
   "documentsPerCollection": 12,
   "collections": [
-    {
-      "target": "enGram",
-      "collection": "dialogues",
-      "documents": 12
-    },
-    {
-      "target": "enGram",
-      "collection": "patterns",
-      "documents": 12
-    },
-    {
-      "target": "enGram",
-      "collection": "library",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "dialogues",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "patterns",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "library",
-      "documents": 12
-    }
+    { "target": "enGram", "collection": "dialogues", "documents": 12 },
+    { "target": "enGram", "collection": "patterns", "documents": 12 },
+    { "target": "enGram", "collection": "library", "documents": 12 },
+    { "target": "deGram", "collection": "dialogues", "documents": 12 },
+    { "target": "deGram", "collection": "patterns", "documents": 12 },
+    { "target": "deGram", "collection": "library", "documents": 12 }
   ],
   "totalDocuments": 72,
+  "publishedPracticePatternsMinimum": 1000,
+  "practiceScope": "The full established learner-facing B2–C1 Practice curriculum is deliberately public; generation and annotation machinery remain private.",
   "publishedReasoningFrames": 30,
   "publishedReasoningMoves": 9,
   "publishedEvaluationCases": 54,
