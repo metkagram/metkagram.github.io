@@ -125,6 +125,7 @@ export function buildPublicLearningGraph(content) {
   ]));
 
   const counts = contentCounts(content);
+  const reasoningFrameCount = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move).length;
   return {
     schemaVersion: 2,
     version: getDatasetVersion(),
@@ -140,7 +141,8 @@ export function buildPublicLearningGraph(content) {
     sourceCounts: {
       annotatedDocuments: counts.annotatedDocuments,
       annotatedSentences: counts.annotatedSentences,
-      publicReasoningFrames: content.advancedPatterns.length,
+      publicPracticePatterns: content.advancedPatterns.length,
+      publicReasoningFrames: reasoningFrameCount,
       intents: intentById.size
     },
     relationCounts: {
