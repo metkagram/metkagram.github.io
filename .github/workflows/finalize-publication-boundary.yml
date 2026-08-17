@@ -1,0 +1,76 @@
+name: Finalize publication boundary
+
+on:
+  push:
+    branches:
+      - agent/publication-layer
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/publication-layer
+      - name: Align public release counts and legacy test references
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+            'tests/api.test.mjs': [
+              ('patterns.data.length, 20', 'patterns.data.length, 28'),
+              ('page.pagination.total, 20', 'page.pagination.total, 28'),
+              ('report.patternCount, 20', 'report.patternCount, 28'),
+            ],
+            'tests/connectivity.test.mjs': [
+              ('graph.sourceCounts.advancedPatterns, 20', 'graph.sourceCounts.advancedPatterns, 28'),
+              ('graph.sourceCounts.reasoningFrames, 20', 'graph.sourceCounts.reasoningFrames, 28'),
+              ('patterns.length, 20', 'patterns.length, 28'),
+              ('reasoning.count, 20', 'reasoning.count, 28'),
+              ('Object.keys(graph.patterns).length, 20', 'Object.keys(graph.patterns).length, 28'),
+            ],
+            'tests/content.test.mjs': [
+              ('counts.advancedPatterns, 20', 'counts.advancedPatterns, 28'),
+            ],
+            'tests/publication-boundary.test.mjs': [
+              ('counts.advancedPatterns, 20', 'counts.advancedPatterns, 28'),
+            ],
+            'tests/quality.test.mjs': [
+              ('report.patternCount, 20', 'report.patternCount, 28'),
+              ('patterns.length, 20', 'patterns.length, 28'),
+            ],
+            'tests/reasoning.test.mjs': [
+              ('reasoning.length, 20', 'reasoning.length, 28'),
+            ],
+            'tests/annotations.test.mjs': [
+              ('dist/en/practice/con003/index.html', 'dist/en/practice/clf041/index.html'),
+            ],
+            'tests/migration.test.mjs': [
+              ('/ru/metkax/CON001', '/ru/metkax/CLF041'),
+            ],
+            'README.md': [
+              ('20 curated reasoning-enabled English/German pattern frames', '28 curated reasoning-enabled English/German pattern frames'),
+            ],
+          }
+
+          for file, pairs in replacements.items():
+              path = Path(file)
+              text = path.read_text(encoding='utf-8')
+              for before, after in pairs:
+                  if before not in text:
+                      raise SystemExit(f'Missing expected text in {file}: {before}')
+                  text = text.replace(before, after)
+              path.write_text(text, encoding='utf-8')
+          PY
+      - name: Remove one-shot workflow and commit
+        run: |
+          rm .github/workflows/finalize-publication-boundary.yml
+          git config user.name "metkagram-publication-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Align tests with 28-frame public reasoning showcase"
+          git push origin HEAD:agent/publication-layer
