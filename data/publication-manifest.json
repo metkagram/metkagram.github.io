@@ -2,42 +2,20 @@
   "schemaVersion": 2,
   "documentsPerCollection": 12,
   "collections": [
-    {
-      "target": "enGram",
-      "collection": "dialogues",
-      "documents": 12
-    },
-    {
-      "target": "enGram",
-      "collection": "patterns",
-      "documents": 12
-    },
-    {
-      "target": "enGram",
-      "collection": "library",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "dialogues",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "patterns",
-      "documents": 12
-    },
-    {
-      "target": "deGram",
-      "collection": "library",
-      "documents": 12
-    }
+    {"target":"enGram","collection":"dialogues","documents":12},
+    {"target":"enGram","collection":"patterns","documents":12},
+    {"target":"enGram","collection":"library","documents":12},
+    {"target":"deGram","collection":"dialogues","documents":12},
+    {"target":"deGram","collection":"patterns","documents":12},
+    {"target":"deGram","collection":"library","documents":12}
   ],
   "totalDocuments": 72,
   "publishedReasoningFrames": 30,
   "publishedReasoningMoves": 9,
   "publishedEvaluationCases": 54,
   "evaluationScope": "Internal editorial routing benchmark over the deliberately public reasoning-frame release; not language-learning efficacy evidence.",
-  "publishedLearningLinkEvaluationCases": 22,
-  "publicLearningLinkScope": "Cue-based pedagogical links over the deliberately public corpus; not semantic-equivalence or language-learning efficacy evidence."
+  "publishedLearningLinkEvaluationCases": 28,
+  "publishedLearningLinkPositiveCases": 18,
+  "publishedLearningLinkNegativeCases": 10,
+  "publicLearningLinkScope": "Reviewed cue-based pedagogical links over the deliberately public corpus; relation strength is categorical, not probabilistic, and the benchmark is not statistical precision/recall, semantic-equivalence, or language-learning efficacy evidence."
 }
