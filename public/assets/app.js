@@ -1,3 +1,5 @@
+import "./licensing-runtime.js";
+
 const locale = document.documentElement.lang === "ru" ? "ru" : "en";
 const copy = {
   en: { showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
