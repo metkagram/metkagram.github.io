@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "opportunities": [
+    {
+      "id": "research-pilot",
+      "title_en": "University research pilot",
+      "title_ru": "Университетский исследовательский пилот",
+      "audience_en": "Applied linguistics, SLA, NLP, learning-science groups",
+      "audience_ru": "Группы по прикладной лингвистике, SLA, NLP и науке об обучении",
+      "offer_en": "A versioned corpus, frozen stimuli, annotation schema, reproducible routes and a preregistration-ready research question.",
+      "offer_ru": "Версионированный корпус, фиксированные стимулы, схема разметки, воспроизводимые маршруты и исследовательский вопрос, готовый к preregistration.",
+      "outcome_en": "Run one measurable study on annotation, transfer, retrieval or annotation quality and publish the result regardless of direction.",
+      "outcome_ru": "Провести одно измеримое исследование разметки, переноса, извлечения из памяти или качества аннотаций и опубликовать результат независимо от направления эффекта."
+    },
+    {
+      "id": "teacher-topic-pack",
+      "title_en": "Teacher-curated advanced topic pack",
+      "title_ru": "Продвинутый тематический набор с преподавателем",
+      "audience_en": "Advanced-English/German teachers, schools and serious language creators",
+      "audience_ru": "Преподаватели английского/немецкого B2–C1, школы и авторы учебных материалов",
+      "offer_en": "A co-curated Pattern Atlas topic with printable/shareable cards, canonical links and visible reviewer attribution.",
+      "offer_ru": "Совместно отредактированный раздел Pattern Atlas с карточками для печати и публикации, каноническими ссылками и явной атрибуцией рецензента.",
+      "outcome_en": "Produce one reference-quality topic pack that is useful in a real lesson and can earn natural teacher links and reuse.",
+      "outcome_ru": "Создать один эталонный тематический набор, который реально используется на занятии и естественно распространяется преподавателями."
+    },
+    {
+      "id": "learning-tool-export",
+      "title_en": "Learning-tool distribution pilot",
+      "title_ru": "Пилот распространения через учебные инструменты",
+      "audience_en": "H5P/LMS maintainers, Anki ecosystem, course platforms and educational tooling",
+      "audience_ru": "H5P/LMS, экосистема Anki, учебные платформы и образовательные инструменты",
+      "offer_en": "A compact export of one reviewed study set with formulas, examples, translations, provenance and stable canonical URLs.",
+      "offer_ru": "Компактный экспорт одного проверенного study set с формулами, примерами, переводами, происхождением данных и стабильными каноническими URL.",
+      "outcome_en": "Make Metkagram content usable inside an existing learner workflow instead of requiring another standalone platform.",
+      "outcome_ru": "Сделать материалы Metkagram доступными внутри уже используемого учебного процесса вместо требования ещё одной отдельной платформы."
+    },
+    {
+      "id": "ai-tutor-integration",
+      "title_en": "AI tutor pattern-layer pilot",
+      "title_ru": "Пилот языкового слоя для AI-репетитора",
+      "audience_en": "AI tutors, agent projects and developer tools that need reviewed language objects",
+      "audience_ru": "AI-репетиторы, агентные проекты и developer tools, которым нужны проверенные языковые объекты",
+      "offer_en": "Read-only intent, pattern, related-pattern and provenance retrieval through the public API/MCP layer.",
+      "offer_ru": "Read-only получение intent, pattern, связанных паттернов и provenance через публичный API/MCP слой.",
+      "outcome_en": "Let an external tutor retrieve a canonical reviewed pattern and cite it instead of inventing a grammar explanation from scratch.",
+      "outcome_ru": "Позволить внешнему репетитору получать и цитировать канонический проверенный паттерн вместо генерации объяснения с нуля."
+    }
+  ]
+}
