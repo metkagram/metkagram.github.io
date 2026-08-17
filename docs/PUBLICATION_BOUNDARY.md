@@ -24,6 +24,7 @@ Keep these in the private research core unless a specific release decision says 
 - schemas, provenance and interoperability examples for the public sample;
 - research hypotheses, methodology and aggregate results approved for release;
 - bounded evaluation benchmarks and reports when they operate only on published material and do not expose the private generation pipeline;
+- cue-based pedagogical links between already published sentences, intents and frames when the relation type, confidence and evidence limits are explicit;
 - website/UI code needed to publish and inspect the released material.
 
 ## Current release boundary
@@ -33,11 +34,14 @@ The GitHub Pages publication contains:
 - 12 documents from each of six English/German source collections, 72 documents total;
 - 30 curated reasoning-enabled English/German frames across 9 reasoning moves;
 - only the study-set metadata required by those published frames;
-- a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer, plus its generated evaluation report.
+- a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer, plus its generated evaluation report;
+- a 22-case English/German regression fixture for public sentence → intent → recommended-frame links, derived only from sentences already present in the 72-document release.
 
-The evaluation benchmark is published deliberately for transparency and regression testing. It measures deterministic intent → reasoning move → public frame routing against curated expectations. It is **not** independent validation and **not** evidence that the learning method improves outcomes.
+The routing benchmark is published deliberately for transparency and regression testing. It measures deterministic intent → reasoning move → public frame routing against curated expectations. It is **not** independent validation and **not** evidence that the learning method improves outcomes.
 
-`/data/advanced-patterns.json`, `/api/v1/patterns.json` and similar generated routes are full representations of the **public release only**. They are not exports of the private full corpus.
+The public learning-link layer is also deliberately bounded. A connection means that a visible cue in a published sentence supports the same reasoning move or communicative intent as a recommended public frame. It is a pedagogical bridge, **not** a claim that the source sentence and frame are semantically or syntactically equivalent. The layer must not import the private full curriculum, private annotation engine or unpublished corpus to improve coverage.
+
+`/data/advanced-patterns.json`, `/api/v1/patterns.json` and similar generated routes are full representations of the **public release only**. They are not exports of the private full corpus. `/data/learning-connections.json` is likewise generated only from the bounded public corpus and public reasoning frames.
 
 ## Publication gate
 
@@ -50,6 +54,7 @@ Before merging a public release:
 5. Check licensing/provenance metadata remains attached to machine-readable exports.
 6. Review whether a new file makes reconstruction of the private pipeline materially easier.
 7. If an evaluation artifact is public, confirm that it references only deliberately published material and states its evidence limits.
+8. If public learning connections are generated, confirm every linked frame and intent is public, confidence stays above the release threshold, and regression fixtures reference only published sentences.
 
 ## Forbidden public paths
 

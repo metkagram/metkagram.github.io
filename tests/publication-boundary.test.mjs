@@ -37,4 +37,7 @@ test("publication manifest records every selected collection and approved evalua
   assert.equal(manifest.publishedReasoningMoves, 9);
   assert.equal(manifest.publishedEvaluationCases, 54);
   assert.match(manifest.evaluationScope, /not language-learning efficacy evidence/i);
+  assert.equal(manifest.publishedLearningLinkEvaluationCases, 22);
+  assert.match(manifest.publicLearningLinkScope, /not semantic-equivalence/i);
+  assert.match(manifest.publicLearningLinkScope, /not .*efficacy evidence/i);
 });
