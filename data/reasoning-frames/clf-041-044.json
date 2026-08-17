@@ -1,0 +1,362 @@
+[
+  {
+    "id": "CLF041",
+    "title_ru": "Необходимо, но недостаточно",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "necessary vs sufficient",
+    "metaphor_ru": "Разделить необходимое и достаточное условие: без X нельзя, но одного X ещё мало.",
+    "formulas": [
+      "[X] is necessary but not sufficient for [Y].",
+      "[X] ist notwendig, aber nicht hinreichend für [Y]."
+    ],
+    "reasoning": {
+      "move": "Limit",
+      "what_it_does_en": "Separate a necessary condition from a sufficient one.",
+      "what_it_does_ru": "Разделить необходимое и достаточное условие: без X нельзя, но одного X ещё мало.",
+      "when_to_use_en": "Use it when one required factor is being treated as if it guaranteed the whole result.",
+      "when_to_use_ru": "Разделить необходимое и достаточное условие: без X нельзя, но одного X ещё мало.",
+      "contrast_en": "Having X guarantees Y.",
+      "common_mistake_en": "Do not claim necessity unless X is genuinely required.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] is necessary but not sufficient for [Y].",
+        "example": "Clean source data **is necessary but not sufficient for** reliable automation.",
+        "translation": "Чистые исходные данные необходимы, но недостаточны для надёжной автоматизации.",
+        "examples": [
+          {
+            "text": "A unique identifier **is necessary but not sufficient for** correct correlation.",
+            "translation_ru": "Уникальный идентификатор необходим, но недостаточен для правильной корреляции."
+          },
+          {
+            "text": "Testing **is necessary but not sufficient for** production readiness.",
+            "translation_ru": "Тестирование необходимо, но недостаточно для готовности к продуктиву."
+          },
+          {
+            "text": "Fast execution **is necessary but not sufficient for** a good user experience.",
+            "translation_ru": "Быстрое выполнение необходимо, но недостаточно для хорошего пользовательского опыта."
+          },
+          {
+            "text": "Documentation **is necessary but not sufficient for** process ownership.",
+            "translation_ru": "Документация необходима, но недостаточна для ответственности за процесс."
+          },
+          {
+            "text": "More data **is necessary but not sufficient for** a better prediction.",
+            "translation_ru": "Больше данных может быть необходимо, но этого недостаточно для лучшего прогноза."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] ist notwendig, aber nicht hinreichend für [Y].",
+        "example": "Saubere Quelldaten **sind notwendig, aber nicht hinreichend für** zuverlässige Automatisierung.",
+        "translation": "Чистые исходные данные необходимы, но недостаточны для надёжной автоматизации.",
+        "examples": [
+          {
+            "text": "Eine eindeutige Kennung **ist notwendig, aber nicht hinreichend für** eine korrekte Korrelation.",
+            "translation_ru": "Уникальный идентификатор необходим, но недостаточен для правильной корреляции."
+          },
+          {
+            "text": "Tests **sind notwendig, aber nicht hinreichend für** Produktionsreife.",
+            "translation_ru": "Тестирование необходимо, но недостаточно для готовности к продуктиву."
+          },
+          {
+            "text": "Schnelle Ausführung **ist notwendig, aber nicht hinreichend für** eine gute Nutzererfahrung.",
+            "translation_ru": "Быстрое выполнение необходимо, но недостаточно для хорошего пользовательского опыта."
+          },
+          {
+            "text": "Dokumentation **ist notwendig, aber nicht hinreichend für** klare Prozessverantwortung.",
+            "translation_ru": "Документация необходима, но недостаточна для ответственности за процесс."
+          },
+          {
+            "text": "Mehr Daten **sind notwendig, aber nicht hinreichend für** eine bessere Vorhersage.",
+            "translation_ru": "Больше данных может быть необходимо, но этого недостаточно для лучшего прогноза."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF042",
+    "title_ru": "Одного X недостаточно",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "insufficient evidence",
+    "metaphor_ru": "Отсечь слишком сильный вывод: одного фактора недостаточно для действия или заключения.",
+    "formulas": [
+      "[X] alone is not enough to [V].",
+      "[X] allein reicht nicht aus, um [V]."
+    ],
+    "reasoning": {
+      "move": "Limit",
+      "what_it_does_en": "Block an overconfident conclusion from a single factor.",
+      "what_it_does_ru": "Отсечь слишком сильный вывод: одного фактора недостаточно для действия или заключения.",
+      "when_to_use_en": "Use it when one piece of evidence matters but cannot carry the whole decision.",
+      "when_to_use_ru": "Отсечь слишком сильный вывод: одного фактора недостаточно для действия или заключения.",
+      "contrast_en": "[X] proves that [Y].",
+      "common_mistake_en": "Do not confuse not enough with irrelevant.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] alone is not enough to [V].",
+        "example": "One successful test **alone is not enough to** prove the process is robust.",
+        "translation": "Одного успешного теста недостаточно, чтобы доказать устойчивость процесса.",
+        "examples": [
+          {
+            "text": "A high score **alone is not enough to** choose the model.",
+            "translation_ru": "Одной высокой оценки недостаточно для выбора модели."
+          },
+          {
+            "text": "A matching value **alone is not enough to** identify the record.",
+            "translation_ru": "Одного совпадающего значения недостаточно для идентификации записи."
+          },
+          {
+            "text": "A lower cost **alone is not enough to** justify the change.",
+            "translation_ru": "Одной более низкой стоимости недостаточно, чтобы оправдать изменение."
+          },
+          {
+            "text": "A clean demo **alone is not enough to** predict production behavior.",
+            "translation_ru": "Одного чистого демо недостаточно для прогноза поведения в продуктиве."
+          },
+          {
+            "text": "User agreement **alone is not enough to** remove the control.",
+            "translation_ru": "Одного согласия пользователя недостаточно, чтобы убрать контроль."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] allein reicht nicht aus, um [V].",
+        "example": "Ein erfolgreicher Test **allein reicht nicht aus, um** zu beweisen, dass der Prozess robust ist.",
+        "translation": "Одного успешного теста недостаточно, чтобы доказать устойчивость процесса.",
+        "examples": [
+          {
+            "text": "Ein hoher Score **allein reicht nicht aus, um** das Modell auszuwählen.",
+            "translation_ru": "Одной высокой оценки недостаточно для выбора модели."
+          },
+          {
+            "text": "Ein übereinstimmender Wert **allein reicht nicht aus, um** den Datensatz zu identifizieren.",
+            "translation_ru": "Одного совпадающего значения недостаточно для идентификации записи."
+          },
+          {
+            "text": "Niedrigere Kosten **allein reichen nicht aus, um** die Änderung zu rechtfertigen.",
+            "translation_ru": "Одной более низкой стоимости недостаточно, чтобы оправдать изменение."
+          },
+          {
+            "text": "Eine saubere Demo **allein reicht nicht aus, um** das Produktionsverhalten vorherzusagen.",
+            "translation_ru": "Одного чистого демо недостаточно для прогноза поведения в продуктиве."
+          },
+          {
+            "text": "Die Zustimmung der Nutzer **allein reicht nicht aus, um** die Kontrolle zu entfernen.",
+            "translation_ru": "Одного согласия пользователя недостаточно, чтобы убрать контроль."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF043",
+    "title_ru": "Без X Y невозможно",
+    "group_id": "CLF",
+    "set_id": "CND",
+    "logic": "necessary prerequisite",
+    "metaphor_ru": "Сделать необходимое условие явным: без X требуемый результат невозможен.",
+    "formulas": [
+      "Without [X], [Y] cannot [V].",
+      "Ohne [X] kann [Y] nicht [V]."
+    ],
+    "reasoning": {
+      "move": "Condition",
+      "what_it_does_en": "State a hard prerequisite for an outcome.",
+      "what_it_does_ru": "Сделать необходимое условие явным: без X требуемый результат невозможен.",
+      "when_to_use_en": "Use it when the dependency is genuinely required, not merely helpful.",
+      "when_to_use_ru": "Сделать необходимое условие явным: без X требуемый результат невозможен.",
+      "contrast_en": "With X, Y will definitely happen.",
+      "common_mistake_en": "A necessary condition is not automatically sufficient.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Without [X], [Y] cannot [V].",
+        "example": "**Without** a stable identifier, the pipeline **cannot** correlate records reliably.",
+        "translation": "Без стабильного идентификатора пайплайн не может надёжно сопоставлять записи.",
+        "examples": [
+          {
+            "text": "**Without** an agreed SLA, we **cannot** detect overdue cases consistently.",
+            "translation_ru": "Без согласованного SLA нельзя последовательно определять просроченные случаи."
+          },
+          {
+            "text": "**Without** source timestamps, we **cannot** reconstruct the sequence confidently.",
+            "translation_ru": "Без временных меток источника нельзя уверенно восстановить последовательность."
+          },
+          {
+            "text": "**Without** ownership, the exception **cannot** be resolved predictably.",
+            "translation_ru": "Без ответственности исключение нельзя разрешать предсказуемо."
+          },
+          {
+            "text": "**Without** a fallback, the pilot **cannot** be considered safe.",
+            "translation_ru": "Без резервного сценария пилот нельзя считать безопасным."
+          },
+          {
+            "text": "**Without** reproducible evidence, the claim **cannot** be verified.",
+            "translation_ru": "Без воспроизводимых доказательств утверждение нельзя проверить."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ohne [X] kann [Y] nicht [V].",
+        "example": "**Ohne** eine stabile Kennung **kann** die Pipeline Datensätze nicht zuverlässig korrelieren.",
+        "translation": "Без стабильного идентификатора пайплайн не может надёжно сопоставлять записи.",
+        "examples": [
+          {
+            "text": "**Ohne** ein vereinbartes SLA **können** wir überfällige Fälle nicht konsistent erkennen.",
+            "translation_ru": "Без согласованного SLA нельзя последовательно определять просроченные случаи."
+          },
+          {
+            "text": "**Ohne** Quellzeitstempel **können** wir die Reihenfolge nicht zuverlässig rekonstruieren.",
+            "translation_ru": "Без временных меток источника нельзя уверенно восстановить последовательность."
+          },
+          {
+            "text": "**Ohne** klare Verantwortung **kann** die Ausnahme nicht vorhersehbar gelöst werden.",
+            "translation_ru": "Без ответственности исключение нельзя разрешать предсказуемо."
+          },
+          {
+            "text": "**Ohne** einen Fallback **kann** der Pilot nicht als sicher gelten.",
+            "translation_ru": "Без резервного сценария пилот нельзя считать безопасным."
+          },
+          {
+            "text": "**Ohne** reproduzierbare Evidenz **kann** die Behauptung nicht überprüft werden.",
+            "translation_ru": "Без воспроизводимых доказательств утверждение нельзя проверить."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF044",
+    "title_ru": "Только если X, возможно Y",
+    "group_id": "CLF",
+    "set_id": "CND",
+    "logic": "only-if boundary",
+    "metaphor_ru": "Задать строгую границу: Y возможно только при выполнении X.",
+    "formulas": [
+      "Only if [X] can [Y].",
+      "Nur wenn [X], kann [Y]."
+    ],
+    "reasoning": {
+      "move": "Condition",
+      "what_it_does_en": "Express an only-if condition and narrow the valid cases.",
+      "what_it_does_ru": "Задать строгую границу: Y возможно только при выполнении X.",
+      "when_to_use_en": "Use it when you need to define the boundary of a rule or decision.",
+      "when_to_use_ru": "Задать строгую границу: Y возможно только при выполнении X.",
+      "contrast_en": "If X, then Y.",
+      "common_mistake_en": "Only if means X is required; it does not mean X guarantees Y.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Only if [X] can [Y].",
+        "example": "**Only if** the event is traceable **can** we audit the decision.",
+        "translation": "Только если событие отслеживается, мы можем проверить решение.",
+        "examples": [
+          {
+            "text": "**Only if** both sources agree **can** we auto-approve the record.",
+            "translation_ru": "Только если оба источника согласуются, запись можно одобрить автоматически."
+          },
+          {
+            "text": "**Only if** the rule is explicit **can** it be tested independently.",
+            "translation_ru": "Только если правило задано явно, его можно тестировать независимо."
+          },
+          {
+            "text": "**Only if** the fallback works **can** we reduce manual supervision.",
+            "translation_ru": "Только если резервный сценарий работает, можно уменьшить ручной контроль."
+          },
+          {
+            "text": "**Only if** the timestamp is reliable **can** we use it for ordering.",
+            "translation_ru": "Только если временная метка надёжна, её можно использовать для порядка событий."
+          },
+          {
+            "text": "**Only if** the difference is material **can** it justify a redesign.",
+            "translation_ru": "Только существенная разница может оправдать переделку."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Nur wenn [X], kann [Y].",
+        "example": "**Nur wenn** das Ereignis nachvollziehbar ist, **können** wir die Entscheidung prüfen.",
+        "translation": "Только если событие отслеживается, мы можем проверить решение.",
+        "examples": [
+          {
+            "text": "**Nur wenn** beide Quellen übereinstimmen, **können** wir den Datensatz automatisch freigeben.",
+            "translation_ru": "Только если оба источника согласуются, запись можно одобрить автоматически."
+          },
+          {
+            "text": "**Nur wenn** die Regel explizit ist, **kann** sie unabhängig getestet werden.",
+            "translation_ru": "Только если правило задано явно, его можно тестировать независимо."
+          },
+          {
+            "text": "**Nur wenn** der Fallback funktioniert, **können** wir die manuelle Überwachung reduzieren.",
+            "translation_ru": "Только если резервный сценарий работает, можно уменьшить ручной контроль."
+          },
+          {
+            "text": "**Nur wenn** der Zeitstempel zuverlässig ist, **können** wir ihn zur Reihenfolge verwenden.",
+            "translation_ru": "Только если временная метка надёжна, её можно использовать для порядка событий."
+          },
+          {
+            "text": "**Nur wenn** der Unterschied wesentlich ist, **kann** er ein Redesign rechtfertigen.",
+            "translation_ru": "Только существенная разница может оправдать переделку."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  }
+]

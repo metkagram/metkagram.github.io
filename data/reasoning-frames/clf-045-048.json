@@ -1,0 +1,362 @@
+[
+  {
+    "id": "CLF045",
+    "title_ru": "Прежде чем X, нужно Y",
+    "group_id": "CLF",
+    "set_id": "CND",
+    "logic": "prerequisite sequencing",
+    "metaphor_ru": "Поставить обязательный шаг перед следующим действием и тем самым упорядочить решение.",
+    "formulas": [
+      "Before we can [X], we need to [Y].",
+      "Bevor wir [X] können, müssen wir [Y]."
+    ],
+    "reasoning": {
+      "move": "Condition",
+      "what_it_does_en": "Make a prerequisite step explicit before moving to the next action.",
+      "what_it_does_ru": "Поставить обязательный шаг перед следующим действием и тем самым упорядочить решение.",
+      "when_to_use_en": "Use it when a team is jumping to implementation before resolving an earlier dependency.",
+      "when_to_use_ru": "Поставить обязательный шаг перед следующим действием и тем самым упорядочить решение.",
+      "contrast_en": "We can do X while Y is still undefined.",
+      "common_mistake_en": "Do not invent dependencies merely to delay action.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Before we can [X], we need to [Y].",
+        "example": "**Before we can** automate the check, **we need to** define the rule.",
+        "translation": "Прежде чем автоматизировать проверку, нужно определить правило.",
+        "examples": [
+          {
+            "text": "**Before we can** compare the systems, **we need to** align the identifiers.",
+            "translation_ru": "Прежде чем сравнивать системы, нужно согласовать идентификаторы."
+          },
+          {
+            "text": "**Before we can** close the issue, **we need to** reproduce it.",
+            "translation_ru": "Прежде чем закрывать проблему, нужно её воспроизвести."
+          },
+          {
+            "text": "**Before we can** optimize performance, **we need to** measure the bottleneck.",
+            "translation_ru": "Прежде чем оптимизировать производительность, нужно измерить узкое место."
+          },
+          {
+            "text": "**Before we can** remove the manual step, **we need to** test the fallback.",
+            "translation_ru": "Прежде чем убрать ручной шаг, нужно протестировать резервный сценарий."
+          },
+          {
+            "text": "**Before we can** trust the metric, **we need to** understand what it excludes.",
+            "translation_ru": "Прежде чем доверять метрике, нужно понять, что она исключает."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Bevor wir [X] können, müssen wir [Y].",
+        "example": "**Bevor wir** die Prüfung automatisieren **können, müssen wir** die Regel definieren.",
+        "translation": "Прежде чем автоматизировать проверку, нужно определить правило.",
+        "examples": [
+          {
+            "text": "**Bevor wir** die Systeme vergleichen **können, müssen wir** die Kennungen abstimmen.",
+            "translation_ru": "Прежде чем сравнивать системы, нужно согласовать идентификаторы."
+          },
+          {
+            "text": "**Bevor wir** das Problem schließen **können, müssen wir** es reproduzieren.",
+            "translation_ru": "Прежде чем закрывать проблему, нужно её воспроизвести."
+          },
+          {
+            "text": "**Bevor wir** die Performance optimieren **können, müssen wir** den Engpass messen.",
+            "translation_ru": "Прежде чем оптимизировать производительность, нужно измерить узкое место."
+          },
+          {
+            "text": "**Bevor wir** den manuellen Schritt entfernen **können, müssen wir** den Fallback testen.",
+            "translation_ru": "Прежде чем убрать ручной шаг, нужно протестировать резервный сценарий."
+          },
+          {
+            "text": "**Bevor wir** der Kennzahl vertrauen **können, müssen wir** verstehen, was sie ausschließt.",
+            "translation_ru": "Прежде чем доверять метрике, нужно понять, что она исключает."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF046",
+    "title_ru": "Компромисс между X и Y",
+    "group_id": "CLF",
+    "set_id": "NEG",
+    "logic": "trade-off",
+    "metaphor_ru": "Показать, что улучшение одного критерия имеет цену по другому критерию.",
+    "formulas": [
+      "There is a trade-off between [X] and [Y].",
+      "Es gibt einen Zielkonflikt zwischen [X] und [Y]."
+    ],
+    "reasoning": {
+      "move": "Decide",
+      "what_it_does_en": "Frame a decision as a trade-off rather than pretending one option dominates on every dimension.",
+      "what_it_does_ru": "Показать, что улучшение одного критерия имеет цену по другому критерию.",
+      "when_to_use_en": "Use it when two desirable goals compete.",
+      "when_to_use_ru": "Показать, что улучшение одного критерия имеет цену по другому критерию.",
+      "contrast_en": "We can maximize X and Y at the same time.",
+      "common_mistake_en": "Name the actual competing dimensions; vague trade-offs are not useful.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "There is a trade-off between [X] and [Y].",
+        "example": "**There is a trade-off between** automation and manual control.",
+        "translation": "Есть компромисс между автоматизацией и ручным контролем.",
+        "examples": [
+          {
+            "text": "**There is a trade-off between** speed and auditability.",
+            "translation_ru": "Есть компромисс между скоростью и проверяемостью."
+          },
+          {
+            "text": "**There is a trade-off between** flexibility and predictability.",
+            "translation_ru": "Есть компромисс между гибкостью и предсказуемостью."
+          },
+          {
+            "text": "**There is a trade-off between** model quality and operating cost.",
+            "translation_ru": "Есть компромисс между качеством модели и стоимостью эксплуатации."
+          },
+          {
+            "text": "**There is a trade-off between** a generic framework and scenario-specific simplicity.",
+            "translation_ru": "Есть компромисс между универсальным фреймворком и простотой конкретного сценария."
+          },
+          {
+            "text": "**There is a trade-off between** strict validation and user convenience.",
+            "translation_ru": "Есть компромисс между строгой валидацией и удобством пользователя."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es gibt einen Zielkonflikt zwischen [X] und [Y].",
+        "example": "**Es gibt einen Zielkonflikt zwischen** Automatisierung und manueller Kontrolle.",
+        "translation": "Есть компромисс между автоматизацией и ручным контролем.",
+        "examples": [
+          {
+            "text": "**Es gibt einen Zielkonflikt zwischen** Geschwindigkeit und Nachvollziehbarkeit.",
+            "translation_ru": "Есть компромисс между скоростью и проверяемостью."
+          },
+          {
+            "text": "**Es gibt einen Zielkonflikt zwischen** Flexibilität und Vorhersagbarkeit.",
+            "translation_ru": "Есть компромисс между гибкостью и предсказуемостью."
+          },
+          {
+            "text": "**Es gibt einen Zielkonflikt zwischen** Modellqualität und Betriebskosten.",
+            "translation_ru": "Есть компромисс между качеством модели и стоимостью эксплуатации."
+          },
+          {
+            "text": "**Es gibt einen Zielkonflikt zwischen** einem generischen Framework und szenariospezifischer Einfachheit.",
+            "translation_ru": "Есть компромисс между универсальным фреймворком и простотой конкретного сценария."
+          },
+          {
+            "text": "**Es gibt einen Zielkonflikt zwischen** strenger Validierung und Nutzerkomfort.",
+            "translation_ru": "Есть компромисс между строгой валидацией и удобством пользователя."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF047",
+    "title_ru": "Плюс X, минус Y",
+    "group_id": "CLF",
+    "set_id": "NEG",
+    "logic": "balanced evaluation",
+    "metaphor_ru": "Сбалансированно оценить вариант через явное преимущество и явную цену.",
+    "formulas": [
+      "The advantage of [X] is [Y]; the downside is [Z].",
+      "Der Vorteil von [X] ist [Y]; der Nachteil ist [Z]."
+    ],
+    "reasoning": {
+      "move": "Decide",
+      "what_it_does_en": "Evaluate an option by pairing its main benefit with its main downside.",
+      "what_it_does_ru": "Сбалансированно оценить вариант через явное преимущество и явную цену.",
+      "when_to_use_en": "Use it when comparing options and you want to avoid one-sided advocacy.",
+      "when_to_use_ru": "Сбалансированно оценить вариант через явное преимущество и явную цену.",
+      "contrast_en": "X is better because Y.",
+      "common_mistake_en": "Keep the benefit and downside comparable in scope.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The advantage of [X] is [Y]; the downside is [Z].",
+        "example": "**The advantage of** the simpler architecture **is** lower maintenance; **the downside is** less flexibility.",
+        "translation": "Преимущество более простой архитектуры — меньшие затраты на поддержку; недостаток — меньшая гибкость.",
+        "examples": [
+          {
+            "text": "**The advantage of** manual review **is** control; **the downside is** poor scalability.",
+            "translation_ru": "Преимущество ручной проверки — контроль; недостаток — плохая масштабируемость."
+          },
+          {
+            "text": "**The advantage of** strict matching **is** precision; **the downside is** more unmatched cases.",
+            "translation_ru": "Преимущество строгого сопоставления — точность; недостаток — больше несопоставленных случаев."
+          },
+          {
+            "text": "**The advantage of** a shared service **is** reuse; **the downside is** another dependency.",
+            "translation_ru": "Преимущество общего сервиса — переиспользование; недостаток — ещё одна зависимость."
+          },
+          {
+            "text": "**The advantage of** a local model **is** privacy; **the downside is** weaker capability.",
+            "translation_ru": "Преимущество локальной модели — приватность; недостаток — более слабые возможности."
+          },
+          {
+            "text": "**The advantage of** early validation **is** faster feedback; **the downside is** extra setup.",
+            "translation_ru": "Преимущество ранней валидации — быстрая обратная связь; недостаток — дополнительная настройка."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Der Vorteil von [X] ist [Y]; der Nachteil ist [Z].",
+        "example": "**Der Vorteil der** einfacheren Architektur **ist** der geringere Wartungsaufwand; **der Nachteil ist** die geringere Flexibilität.",
+        "translation": "Преимущество более простой архитектуры — меньшие затраты на поддержку; недостаток — меньшая гибкость.",
+        "examples": [
+          {
+            "text": "**Der Vorteil der** manuellen Prüfung **ist** die Kontrolle; **der Nachteil ist** die geringe Skalierbarkeit.",
+            "translation_ru": "Преимущество ручной проверки — контроль; недостаток — плохая масштабируемость."
+          },
+          {
+            "text": "**Der Vorteil des** strikten Matchings **ist** die Präzision; **der Nachteil sind** mehr nicht zugeordnete Fälle.",
+            "translation_ru": "Преимущество строгого сопоставления — точность; недостаток — больше несопоставленных случаев."
+          },
+          {
+            "text": "**Der Vorteil eines** gemeinsamen Services **ist** die Wiederverwendung; **der Nachteil ist** eine weitere Abhängigkeit.",
+            "translation_ru": "Преимущество общего сервиса — переиспользование; недостаток — ещё одна зависимость."
+          },
+          {
+            "text": "**Der Vorteil eines** lokalen Modells **ist** der Datenschutz; **der Nachteil ist** die geringere Leistungsfähigkeit.",
+            "translation_ru": "Преимущество локальной модели — приватность; недостаток — более слабые возможности."
+          },
+          {
+            "text": "**Der Vorteil einer** frühen Validierung **ist** schnelleres Feedback; **der Nachteil ist** zusätzlicher Einrichtungsaufwand.",
+            "translation_ru": "Преимущество ранней валидации — быстрая обратная связь; недостаток — дополнительная настройка."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  },
+  {
+    "id": "CLF048",
+    "title_ru": "Приоритет X рискует пожертвовать Y",
+    "group_id": "CLF",
+    "set_id": "RSK",
+    "logic": "priority risk",
+    "metaphor_ru": "Связать приоритет с его возможной ценой и сделать риск решения явным.",
+    "formulas": [
+      "If we prioritize [X], we risk sacrificing [Y].",
+      "Wenn wir [X] priorisieren, riskieren wir, [Y] zu opfern."
+    ],
+    "reasoning": {
+      "move": "Decide",
+      "what_it_does_en": "Expose what may be lost when one objective is prioritized.",
+      "what_it_does_ru": "Связать приоритет с его возможной ценой и сделать риск решения явным.",
+      "when_to_use_en": "Use it in prioritization discussions where the hidden cost matters.",
+      "when_to_use_ru": "Связать приоритет с его возможной ценой и сделать риск решения явным.",
+      "contrast_en": "Prioritizing X only affects X.",
+      "common_mistake_en": "Use risk for a plausible downside, not a guaranteed consequence.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "If we prioritize [X], we risk sacrificing [Y].",
+        "example": "**If we prioritize** delivery speed, **we risk sacrificing** test coverage.",
+        "translation": "Если поставить скорость поставки в приоритет, мы рискуем пожертвовать покрытием тестами.",
+        "examples": [
+          {
+            "text": "**If we prioritize** flexibility, **we risk sacrificing** simplicity.",
+            "translation_ru": "Если поставить гибкость в приоритет, мы рискуем пожертвовать простотой."
+          },
+          {
+            "text": "**If we prioritize** recall, **we risk sacrificing** precision.",
+            "translation_ru": "Если поставить полноту поиска в приоритет, мы рискуем пожертвовать точностью."
+          },
+          {
+            "text": "**If we prioritize** automation, **we risk sacrificing** transparency.",
+            "translation_ru": "Если поставить автоматизацию в приоритет, мы рискуем пожертвовать прозрачностью."
+          },
+          {
+            "text": "**If we prioritize** short-term fixes, **we risk sacrificing** maintainability.",
+            "translation_ru": "Если поставить краткосрочные исправления в приоритет, мы рискуем пожертвовать поддерживаемостью."
+          },
+          {
+            "text": "**If we prioritize** a single metric, **we risk sacrificing** a balanced decision.",
+            "translation_ru": "Если поставить одну метрику в приоритет, мы рискуем пожертвовать сбалансированным решением."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn wir [X] priorisieren, riskieren wir, [Y] zu opfern.",
+        "example": "**Wenn wir** Liefergeschwindigkeit **priorisieren, riskieren wir,** Testabdeckung **zu opfern**.",
+        "translation": "Если поставить скорость поставки в приоритет, мы рискуем пожертвовать покрытием тестами.",
+        "examples": [
+          {
+            "text": "**Wenn wir** Flexibilität **priorisieren, riskieren wir,** Einfachheit **zu opfern**.",
+            "translation_ru": "Если поставить гибкость в приоритет, мы рискуем пожертвовать простотой."
+          },
+          {
+            "text": "**Wenn wir** Recall **priorisieren, riskieren wir,** Präzision **zu opfern**.",
+            "translation_ru": "Если поставить полноту поиска в приоритет, мы рискуем пожертвовать точностью."
+          },
+          {
+            "text": "**Wenn wir** Automatisierung **priorisieren, riskieren wir,** Transparenz **zu opfern**.",
+            "translation_ru": "Если поставить автоматизацию в приоритет, мы рискуем пожертвовать прозрачностью."
+          },
+          {
+            "text": "**Wenn wir** kurzfristige Fixes **priorisieren, riskieren wir,** Wartbarkeit **zu opfern**.",
+            "translation_ru": "Если поставить краткосрочные исправления в приоритет, мы рискуем пожертвовать поддерживаемостью."
+          },
+          {
+            "text": "**Wenn wir** eine einzelne Kennzahl **priorisieren, riskieren wir,** eine ausgewogene Entscheidung **zu opfern**.",
+            "translation_ru": "Если поставить одну метрику в приоритет, мы рискуем пожертвовать сбалансированным решением."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-16",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Advanced Reasoning Frame for Metkagram Practice."
+    }
+  }
+]
