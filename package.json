@@ -6,7 +6,7 @@
   "description": "Static bilingual Metkagram language notation workspace",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "build": "node scripts/build.mjs && node scripts/connectivity.mjs",
+    "build": "node scripts/build.mjs && node scripts/connectivity.mjs && node scripts/intent-discovery.mjs",
     "annotations:migrate": "node scripts/annotations.mjs",
     "annotations:validate": "node scripts/annotations.mjs",
     "annotations:audit": "annotation_service/.venv/bin/python annotation_service/scripts/audit_patterns.py",
