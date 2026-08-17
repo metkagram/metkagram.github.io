@@ -11,7 +11,8 @@ const reasoningSources = [
   "/data/reasoning-frames/clf-045-048.json",
   "/data/reasoning-frames/clf-049-052.json",
   "/data/reasoning-frames/clf-053-056.json",
-  "/data/reasoning-frames/clf-057-060.json"
+  "/data/reasoning-frames/clf-057-060.json",
+  "/data/reasoning-frames/clf-061-068.json"
 ];
 
 function setupMenu() {
