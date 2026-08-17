@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sets": [
+    {
+      "id": "CGR",
+      "title_en": "Contrast grammar",
+      "title_ru": "Грамматика через контрасты",
+      "description": "Choose between easily confused structures by meaning, not by rule name.",
+      "description_ru": "Выбирайте между похожими конструкциями по смыслу, а не по названию правила.",
+      "level": "B2–C1",
+      "path": "CGR"
+    },
+    {
+      "id": "SPK",
+      "title_en": "Spoken grammar",
+      "title_ru": "Грамматика живой речи",
+      "description": "Use compact spoken frames that organise an idea naturally in conversation.",
+      "description_ru": "Используйте компактные разговорные каркасы, которые естественно организуют мысль.",
+      "level": "B2–C1",
+      "path": "SPK"
+    },
+    {
+      "id": "INT",
+      "title_en": "Interaction moves",
+      "title_ru": "Управление разговором",
+      "description": "Enter, hold, redirect and close a turn without losing the thread.",
+      "description_ru": "Входите в разговор, удерживайте ход мысли, перенаправляйте и завершайте реплику.",
+      "level": "B2–C1",
+      "path": "INT"
+    },
+    {
+      "id": "REG",
+      "title_en": "Register shifting",
+      "title_ru": "Переключение регистра",
+      "description": "Express the same intent in casual, neutral and professional language.",
+      "description_ru": "Выражайте одну и ту же мысль в разговорном, нейтральном и профессиональном регистре.",
+      "level": "B2–C1",
+      "path": "REG"
+    },
+    {
+      "id": "RTR",
+      "title_en": "Russian-speaker transfer traps",
+      "title_ru": "Ловушки переноса из русского",
+      "description": "Correct recurring English and German structures that Russian speakers tend to transfer literally.",
+      "description_ru": "Исправляйте типичные английские и немецкие конструкции, которые русскоязычные переносят буквально.",
+      "level": "B2–C1",
+      "path": "RTR"
+    },
+    {
+      "id": "TRN",
+      "title_en": "Transformations and reformulation",
+      "title_ru": "Трансформации и переформулирование",
+      "description": "Rebuild the same meaning with a different grammatical or discourse frame.",
+      "description_ru": "Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.",
+      "level": "B2–C1",
+      "path": "TRN"
+    }
+  ],
+  "learningPathAdds": {
+    "C1-GRAMMAR": ["CGR", "RTR"],
+    "C1-FUNCTIONS": ["SPK", "INT", "REG"],
+    "C1-CONTROL": ["TRN"]
+  }
+}
