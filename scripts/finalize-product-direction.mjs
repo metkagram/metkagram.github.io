@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { buildPatternGraph } from "../src/pattern-graph.mjs";
-import { wrapRecord } from "../src/provenance.mjs";
+import { stableHash, wrapRecord } from "../src/provenance.mjs";
 
 const DIST = path.resolve("dist");
 const SITE_URL = "https://metkagram.github.io";
@@ -160,6 +160,7 @@ patchJson("api/v1/attribution.json", (wrapped) => {
   if (policy.citation_formats) {
     policy.citation_formats.academic = `Metkagram (2026). Visual language annotation and reusable reasoning patterns. ${SITE_URL}. Current rights: ${SITE_URL}/en/licensing/.`;
   }
+  if (wrapped.provenance) wrapped.provenance.content_hash = stableHash(wrapped.data);
 });
 
 const llmsFile = path.join(DIST, "llms.txt");
