@@ -1,12 +1,12 @@
 import { classifyReasoningSentence } from "./public-learning.mjs";
 import { classifyPatternLensExtraRules } from "./pattern-lens-extra-rules.mjs";
 
-const LENS_STOP_SEGMENTS = new Set([
+export const LENS_STOP_SEGMENTS = new Set([
   "a", "an", "and", "as", "at", "but", "for", "if", "in", "is", "it", "no", "not", "of", "on", "or", "the", "that", "this", "to", "with", "yes",
   "aber", "am", "das", "dass", "der", "die", "ein", "eine", "es", "für", "im", "ist", "ja", "mit", "nein", "nicht", "und", "von", "wenn", "zu"
 ]);
 
-const META_CUES = {
+export const LENS_META_CUES = {
   en: /\b(?:word|phrase|term|expression|sentence|paragraph|section|title|chapter|conjunction|adverb|preposition|verb|noun|adjective)\b/iu,
   de: /\b(?:wort|wörter|ausdruck|ausdrücke|satz|sätze|absatz|abschnitt|titel|kapitel|konjunktion|adverb|präposition|verb|nomen|substantiv|adjektiv)\b/iu,
 };
@@ -21,7 +21,7 @@ export function normalizeLensText(value = "") {
 }
 
 export function isLensMetalinguistic(text, language = "en") {
-  return Boolean(META_CUES[language]?.test(String(text || "")));
+  return Boolean(LENS_META_CUES[language]?.test(String(text || "")));
 }
 
 export function isInformativeLensSegment(segment = "") {
