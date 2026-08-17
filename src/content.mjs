@@ -54,32 +54,45 @@ function derivePatternQuality(pattern) {
   const languages = {};
   let minUniqueExamples = Number.POSITIVE_INFINITY;
   let completeTranslations = true;
+  let hasVariationDuplicates = false;
 
   for (const lang of pattern.langs || []) {
-    const examples = [lang.example, ...(lang.examples || []).map((item) => item.text)]
-      .filter((value) => typeof value === "string" && value.trim());
-    const uniqueExamples = new Set(examples.map(normalizeExample));
+    const primary = normalizeExample(lang.example);
+    const variations = (lang.examples || [])
+      .map((item) => normalizeExample(item.text))
+      .filter(Boolean);
+    const variationCounts = new Map();
+    for (const value of variations) variationCounts.set(value, (variationCounts.get(value) || 0) + 1);
+    const variationDuplicateCount = [...variationCounts.values()].reduce((sum, count) => sum + Math.max(0, count - 1), 0);
+    const uniqueExamples = new Set([primary, ...variations].filter(Boolean));
     const translatedVariations = (lang.examples || []).filter((item) => typeof item.translation_ru === "string" && item.translation_ru.trim()).length;
     const translationsComplete = Boolean(lang.translation?.trim()) && translatedVariations === (lang.examples || []).length;
+    const primaryRepeatedInVariations = Boolean(primary) && variations.includes(primary);
+
     completeTranslations &&= translationsComplete;
+    hasVariationDuplicates ||= variationDuplicateCount > 0;
     minUniqueExamples = Math.min(minUniqueExamples, uniqueExamples.size);
     languages[lang.lang] = {
-      example_count: examples.length,
+      example_count: (primary ? 1 : 0) + variations.length,
+      variation_count: variations.length,
       unique_example_count: uniqueExamples.size,
-      duplicate_example_count: examples.length - uniqueExamples.size,
+      unique_variation_count: variationCounts.size,
+      variation_duplicate_count: variationDuplicateCount,
+      primary_repeated_in_variations: primaryRepeatedInVariations,
       translations_complete: translationsComplete
     };
   }
 
   if (!Number.isFinite(minUniqueExamples)) minUniqueExamples = 0;
   const editorialStatus = pattern.quality?.status || pattern.gen?.status || "unknown";
-  const indexable = completeTranslations && minUniqueExamples >= 3;
+  const indexable = completeTranslations && minUniqueExamples >= 3 && !hasVariationDuplicates;
 
   return {
     status: editorialStatus,
     indexable,
     min_unique_examples: minUniqueExamples,
     translations_complete: completeTranslations,
+    has_variation_duplicates: hasVariationDuplicates,
     languages
   };
 }
