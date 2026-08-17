@@ -41,7 +41,7 @@ function langComplete(pattern) {
 }
 
 test("GitHub Pages artifact has root files and localized HTML", () => {
-  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "data/quality-report.json", "data/reasoning-frames/index.json", "seo/site-pages.json"]) {
+  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "data/quality-report.json", "data/reasoning-frames/index.json", "seo/site-pages.json", "api/v1/teaching-manifest.json"]) {
     assert.ok(fs.existsSync(path.join(DIST, file)), `${file} must exist`);
   }
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
@@ -54,8 +54,12 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.doesNotMatch(ru, /See the structure\. Use the phrase\./);
   assert.match(en, /Open to thoughtful collaborations\./);
   assert.match(ru, /Открыты к полезным партнёрствам\./);
-  assert.match(en, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.metkagram\.android/);
-  assert.match(en, /https:\/\/apps\.apple\.com\/us\/app\/grammar-cards-ai-tutor\/id6502211918/);
+  assert.ok(fs.existsSync(path.join(DIST, "en/lens/index.html")));
+  assert.ok(fs.existsSync(path.join(DIST, "ru/lens/index.html")));
+  assert.match(en, /href="\/en\/lens\/"/);
+  assert.match(ru, /href="\/ru\/lens\/"/);
+  assert.doesNotMatch(en, /https:\/\/play\.google\.com\/store\/apps/);
+  assert.doesNotMatch(en, /https:\/\/apps\.apple\.com\/us\/app/);
 });
 
 test("localized route switch preserves path context", () => {
@@ -72,6 +76,7 @@ test("the public workspace is focused on reading datasets, not SRS features", ()
     assert.ok(fs.existsSync(path.join(DIST, locale, "practice", "index.html")));
     assert.ok(fs.existsSync(path.join(DIST, locale, "ai", "index.html")));
     assert.ok(fs.existsSync(path.join(DIST, locale, "data", "index.html")));
+    assert.ok(fs.existsSync(path.join(DIST, locale, "lens", "index.html")));
     assert.ok(!fs.existsSync(path.join(DIST, locale, "review", "index.html")));
     assert.ok(!fs.existsSync(path.join(DIST, locale, "progress", "index.html")));
   }
@@ -176,6 +181,7 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/clf041\//);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/research\//);
+  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/lens\//);
   assert.ok(sitemap.includes(`<lastmod>${SITE_RELEASE_DATE}</lastmod>`));
 });
 
@@ -186,14 +192,17 @@ test("public reasoning pattern pages render both target languages", () => {
   assert.match(html, /id="reasoning-move"/);
 });
 
-test("mobile apps and legal pages have direct routes, store links, and entity markup", () => {
+test("archived mobile app route points learners to the web product without active-app schema", () => {
   const apps = fs.readFileSync(path.join(DIST, "en/apps/index.html"), "utf8");
   const privacy = fs.readFileSync(path.join(DIST, "en/legal/privacy/index.html"), "utf8");
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
-  assert.match(apps, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.metkagram\.android/);
-  assert.match(apps, /https:\/\/apps\.apple\.com\/us\/app\/grammar-cards-ai-tutor\/id6502211918/);
-  assert.match(apps, /"MobileApplication"/);
-  assert.match(apps, /"SoftwareApplication"/);
+  assert.match(apps, /The mobile app became a research stage/);
+  assert.match(apps, /href="\/en\/lens\/"/);
+  assert.match(apps, /href="\/en\/practice\/"/);
+  assert.doesNotMatch(apps, /https:\/\/play\.google\.com\/store\/apps/);
+  assert.doesNotMatch(apps, /https:\/\/apps\.apple\.com\/us\/app/);
+  assert.doesNotMatch(apps, /"MobileApplication"/);
+  assert.doesNotMatch(apps, /"SoftwareApplication"/);
   assert.match(privacy, /<h1>Privacy Policy<\/h1>/);
   assert.match(privacy, /"@type":"WebPage"/);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/apps\//);
@@ -239,7 +248,7 @@ test("SEO inventory covers every generated indexable route", () => {
     assert.equal(new Set(localized.map((page) => page.title)).size, localized.length, `${language} SEO titles must be unique`);
     assert.equal(new Set(localized.map((page) => page.description)).size, localized.length, `${language} SEO descriptions must be unique`);
   }
-  for (const route of ["/en/", "/en/research/", "/en/data/", "/en/data/patterns/", "/en/support/", "/en/practice/clf041/"]) {
+  for (const route of ["/en/", "/en/research/", "/en/data/", "/en/data/patterns/", "/en/support/", "/en/practice/clf041/", "/en/lens/"]) {
     assert.ok(inventory.pages.some((page) => page.route === route), `SEO inventory missing ${route}`);
     assert.ok(sitemap.includes(`https://metkagram.github.io${route}`), `sitemap missing ${route}`);
   }
