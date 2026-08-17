@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadContent } from "../src/content.mjs";
+import { rankLensPatterns } from "../src/pattern-lens-ranking.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
-import { rankPatterns } from "./pattern-lens.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -16,7 +16,7 @@ function ratio(value, total) {
 }
 
 function evaluateCase(patterns, item) {
-  const matches = rankPatterns(patterns, item.sentence, item.language, 6);
+  const matches = rankLensPatterns(patterns, item.sentence, item.language, 6);
   const expectedRank = matches.findIndex((match) => match.id === item.expected_pattern);
   const expected = expectedRank >= 0 ? matches[expectedRank] : null;
   const moveRank = matches.findIndex((match) => match.reasoning_move === item.expected_move);
@@ -75,14 +75,13 @@ function patchResearch(locale, report) {
   let html = fs.readFileSync(file, "utf8");
   if (html.includes("data-pattern-lens-evaluation")) return;
   const pct = (value) => `${Math.round(value * 100)}%`;
-  const title = locale === "ru" ? "Pattern Lens: retrieval regression" : "Pattern Lens: retrieval regression";
   const caveat = locale === "ru"
     ? "Это инженерный regression benchmark по уже опубликованным примерам, а не независимое доказательство качества метода или эффективности обучения."
     : "This is an engineering regression benchmark over already published examples, not independent evidence for method quality or learning efficacy.";
   const body = locale === "ru"
     ? `На ${report.metrics.cases} реальных EN/DE фразах из ограниченного public corpus ожидаемый паттерн попадает в top-3 в ${pct(report.metrics.expected_pattern_hit_at_3)} случаев. Lens объединяет буквальные части формулы с reasoning cues.`
     : `Across ${report.metrics.cases} real EN/DE sentences from the bounded public corpus, the expected pattern appears in the top 3 in ${pct(report.metrics.expected_pattern_hit_at_3)} of cases. Lens combines literal formula evidence with reasoning cues.`;
-  const block = `<section class="section-pad ruled" data-pattern-lens-evaluation><p class="eyebrow">Pattern Lens · evaluation</p><h2>${title}</h2><p class="lede">${body}</p><p>${caveat}</p><p><a href="/data/pattern-lens-evaluation.json">Machine-readable report →</a></p></section>`;
+  const block = `<section class="section-pad ruled" data-pattern-lens-evaluation><p class="eyebrow">Pattern Lens · evaluation</p><h2>Pattern Lens: retrieval regression</h2><p class="lede">${body}</p><p>${caveat}</p><p><a href="/data/pattern-lens-evaluation.json">Machine-readable report →</a></p></section>`;
   html = html.replace("</main>", `${block}</main>`);
   fs.writeFileSync(file, html);
 }
