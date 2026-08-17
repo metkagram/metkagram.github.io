@@ -1,6 +1,6 @@
 # H1 cue-utility pilot
 
-Status: protocol frozen before outcome data collection.
+Status: protocol finalized before first production outcome data collection.
 
 Study ID: `H1-CUE-UTILITY-V1`
 
@@ -23,13 +23,16 @@ A useful result must not come with a material loss in sentence-comprehension acc
 - Population: adults aged 18+ learning English, target analysis band CEFR B1–B2.
 - Assignment: one browser session is randomly assigned to `clean` or `tagged` with approximately equal probability.
 - Design: between-participant condition, same eight stimuli in a session-specific random order.
-- Clean condition: identical selectable sentence chunks without functional labels.
-- Tagged condition: the same chunks with compact functional labels visible inline.
+- Shared instruction: before randomization becomes visible, both groups see the same legend for the public canonical English tag subset used by the pilot: `S` subject, `V` main verb, `M` modal/helper, `v2` verb after modal.
+- Clean condition: identical selectable sentence chunks without inline functional labels.
+- Tagged condition: the same chunks with the canonical functional labels visible inline.
 - Task 1: select the chunk carrying a requested role (`subject`, `main verb`, or `helper verb`).
 - Task 2: answer one true/false meaning-comprehension statement about the sentence.
 - End-of-session rating: perceived visual load on a five-point scale.
 
-The chunk boundaries are identical across conditions so the manipulated variable is the visible functional label rather than segmentation.
+The chunk boundaries and notation instructions are identical across conditions. The manipulated variable is whether the functional labels appear inline in the sentence during the task.
+
+Only canonical public Metkagram tags are used in the pilot stimulus file. Non-structural chunks remain untagged instead of introducing simplified experimental labels that do not exist in the public notation system.
 
 ## Outcomes
 
@@ -139,7 +142,7 @@ The frozen public stimulus file is:
 
 `data/research/h1-cue-utility-v1.json`
 
-Any change to wording, role labels, answers or outcome definitions requires a new study version before further data are mixed with version `1.0.0`.
+Version `1.0.0` is the first collection-ready version. Any later change to wording, role labels, answers or outcome definitions requires a new study version before new files are mixed with this version.
 
 ## Reporting boundary
 
