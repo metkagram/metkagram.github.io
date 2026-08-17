@@ -21,11 +21,13 @@
 .lens-hit small{display:block;font-size:.45em;letter-spacing:.09em;line-height:1.15;text-transform:uppercase;color:#6e5700}
 .lens-results{display:grid;gap:.75rem}
 .lens-card{border-top:1px solid #dedbd0;padding:1rem 0 .25rem}
+.lens-card[data-evidence-type="literal+reasoning"]{border-top-color:#b59a32}
 .lens-card h3{font-size:1.12rem;margin:.5rem 0}
 .lens-card-meta,.lens-card-foot{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap;color:#69675f;font-size:.82rem}
 .lens-card-meta code{background:#f1efe7;border-radius:7px;padding:.15rem .35rem}
 .lens-card-meta span{border:1px solid #ddd9cb;border-radius:999px;padding:.12rem .42rem}
 .lens-example{font-weight:700;margin:.45rem 0 .2rem}.lens-translation{color:#66635b;margin:.2rem 0 .65rem}.lens-card-foot{justify-content:space-between}.lens-card-foot a,.lens-explain-grid a{font-weight:800;color:#1f1f1b}
+.lens-evidence{margin:.45rem 0 .7rem;padding:.55rem .65rem;border-left:3px solid #ffc400;background:#fffaf0;color:#56534d;font-size:.86rem;line-height:1.45}
 .lens-empty{padding:1rem;border-radius:14px;background:#f4f1e7;color:#5d5a51}
 .lens-samples{display:flex;gap:.55rem;flex-wrap:wrap;margin:1rem 0 3rem}.lens-samples button{max-width:340px;text-align:left;background:#fffdf7}
 .lens-explain-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}.lens-explain-grid article{border:1px solid #dfddd3;border-radius:22px;padding:1.35rem;background:#fff}.lens-explain-grid h2{font-size:1.45rem;margin:.35rem 0 .65rem}.lens-explain-grid p{line-height:1.6;color:#56534d}
