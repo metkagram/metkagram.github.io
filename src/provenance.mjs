@@ -1,6 +1,9 @@
 import crypto from "node:crypto";
-import { readFileSync } from "node:fs";
-import { SITE_URL } from "./site.mjs";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import zlib from "node:zlib";
+import { SITE_RELEASE_DATE, SITE_URL } from "./site.mjs";
 
 export const ATTRIBUTION = {
   source: "Metkagram",
@@ -21,20 +24,49 @@ export const ATTRIBUTION = {
   collaboration_url: `${SITE_URL}/en/ai/#collaborate`,
 };
 
+const DATA_ROOT = fileURLToPath(new URL("../data/", import.meta.url));
+let cachedDatasetVersion;
+
 function readPackageVersion() {
   try {
-    return JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")).version || "1.0.0";
+    return JSON.parse(fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")).version || "1.0.0";
   } catch {
     return "1.0.0";
   }
 }
 
-export function getDatasetVersion(buildDate = new Date().toISOString().slice(0, 10)) {
-  return `${readPackageVersion()}+${buildDate.replace(/-/g, "")}`;
+function canonicalDataFiles(directory = DATA_ROOT) {
+  if (!fs.existsSync(directory)) return [];
+  return fs.readdirSync(directory, { withFileTypes: true })
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .flatMap((entry) => {
+      const target = path.join(directory, entry.name);
+      if (entry.isDirectory()) return canonicalDataFiles(target);
+      if (!entry.isFile() || (!entry.name.endsWith(".json") && !entry.name.endsWith(".json.gz"))) return [];
+      return [target];
+    });
+}
+
+function datasetFingerprint() {
+  const hash = crypto.createHash("sha256");
+  for (const file of canonicalDataFiles()) {
+    const relative = path.relative(DATA_ROOT, file).replaceAll(path.sep, "/");
+    const bytes = fs.readFileSync(file);
+    hash.update(relative);
+    hash.update("\0");
+    hash.update(file.endsWith(".gz") ? zlib.gunzipSync(bytes) : bytes);
+    hash.update("\0");
+  }
+  return hash.digest("hex").slice(0, 12);
+}
+
+export function getDatasetVersion() {
+  if (!cachedDatasetVersion) cachedDatasetVersion = `${readPackageVersion()}+${datasetFingerprint()}`;
+  return cachedDatasetVersion;
 }
 
 export function getReleaseDate() {
-  return new Date().toISOString().slice(0, 10);
+  return SITE_RELEASE_DATE;
 }
 
 function sortKeys(value) {
