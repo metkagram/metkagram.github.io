@@ -3,6 +3,7 @@ import path from "node:path";
 import { collectionKeys, targetMeta } from "./i18n.mjs";
 
 const ROOT = process.cwd();
+const PRACTICE_QUALITY_SET_IDS = new Set(["CGR", "SPK", "INT", "REG", "RTR", "TRN"]);
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -159,6 +160,39 @@ function mergeSupplementalPatterns(basePatterns, supplementalPatterns) {
   return merged;
 }
 
+function applyPracticeQualityOverrides(patterns) {
+  const file = path.join(ROOT, "data", "practice-quality-overrides.json");
+  if (!fs.existsSync(file)) return patterns;
+
+  const overrides = readJson(file);
+  assert(Array.isArray(overrides), `${file} must be an array`);
+  const byId = new Map(patterns.map((pattern) => [pattern.id, pattern]));
+  const seen = new Set();
+
+  for (const override of overrides) {
+    assert(override && typeof override.pattern_id === "string" && override.pattern_id, `${file}: every override needs pattern_id`);
+    assert(!seen.has(override.pattern_id), `${file}: duplicate override for ${override.pattern_id}`);
+    seen.add(override.pattern_id);
+    const pattern = byId.get(override.pattern_id);
+    assert(pattern, `${file}: unknown pattern ${override.pattern_id}`);
+
+    const langs = new Map((pattern.langs || []).map((lang) => [lang.lang, lang]));
+    for (const [langCode, langOverride] of Object.entries(override.langs || {})) {
+      const lang = langs.get(langCode);
+      assert(lang, `${file}: ${override.pattern_id} has no ${langCode} language record`);
+      if (typeof langOverride.formula === "string") lang.formula = langOverride.formula;
+      if (typeof langOverride.example === "string") lang.example = langOverride.example;
+      if (typeof langOverride.translation === "string") lang.translation = langOverride.translation;
+      if (Array.isArray(langOverride.examples)) lang.examples = langOverride.examples.map((item) => ({ ...item }));
+      if (Array.isArray(langOverride.additional_examples)) {
+        lang.examples = [...(lang.examples || []), ...langOverride.additional_examples.map((item) => ({ ...item }))];
+      }
+    }
+  }
+
+  return patterns;
+}
+
 function validateDocument(doc, file, index) {
   assert(doc && typeof doc === "object", `${file}[${index}] must be an object`);
   assert(typeof doc.id === "string" && doc.id.length > 0, `${file}[${index}].id is required`);
@@ -225,7 +259,7 @@ export function loadContent() {
   for (const pathItem of studySets.learningPaths) for (const setId of pathItem.set_ids || []) assert(validSetIds.has(setId), `learning path ${pathItem.id} references an unknown set ${setId}`);
 
   supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
-  const advancedPatterns = mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns)
+  const advancedPatterns = applyPracticeQualityOverrides(mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns))
     .map((pattern) => ({ ...pattern, quality: derivePatternQuality(pattern) }));
   assert(advancedPatterns.length >= 1000, `advanced-patterns.json requires at least 1,000 patterns; found ${advancedPatterns.length}`);
   const patternIds = new Set();
@@ -238,6 +272,14 @@ export function loadContent() {
       const formula = normalizeFormula(lang.formula);
       assert(!formulas.has(formula), `duplicate advanced pattern formula ${lang.formula}`);
       formulas.add(formula);
+    }
+    if (PRACTICE_QUALITY_SET_IDS.has(pattern.set_id)) {
+      assert(pattern.quality.min_unique_examples >= 5, `${pattern.id} requires at least five unique examples per language`);
+      assert(pattern.quality.translations_complete, `${pattern.id} requires complete Russian translations`);
+      assert(!pattern.quality.has_variation_duplicates, `${pattern.id} contains duplicate example variations`);
+      for (const lang of pattern.langs) {
+        assert(!pattern.quality.languages[lang.lang].primary_repeated_in_variations, `${pattern.id}/${lang.lang} repeats the primary example in variations`);
+      }
     }
   });
   for (const set of studySets.sets) assert(advancedPatterns.some((pattern) => pattern.set_id === set.id), `study set ${set.id} has no complete patterns`);
