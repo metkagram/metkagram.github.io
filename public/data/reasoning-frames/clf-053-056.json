@@ -1,0 +1,80 @@
+[
+  {
+    "id": "CLF053",
+    "title_ru": "Наиболее вероятное объяснение — X",
+    "group_id": "CLF",
+    "set_id": "PRB",
+    "logic": "best explanation",
+    "metaphor_ru": "Выбрать лучшую текущую гипотезу, сохраняя её статус как вероятной, а не доказанной.",
+    "formulas": ["The most likely explanation is that [X].", "Die wahrscheinlichste Erklärung ist, dass [X]."],
+    "reasoning": {
+      "move": "Infer",
+      "what_it_does_en": "State the currently best explanation without pretending certainty.",
+      "what_it_does_ru": "Выбрать лучшую текущую гипотезу, сохраняя её статус как вероятной, а не доказанной.",
+      "when_to_use_en": "Use it after considering alternatives and comparing their fit with the evidence.",
+      "when_to_use_ru": "Выбрать лучшую текущую гипотезу, сохраняя её статус как вероятной, а не доказанной.",
+      "contrast_en": "X is definitely the cause.",
+      "common_mistake_en": "Most likely should reflect evidence, not preference.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {"lang":"en","formula":"The most likely explanation is that [X].","example":"**The most likely explanation is that** the message arrived after the SLA window.","translation":"Наиболее вероятное объяснение в том, что сообщение пришло после окна SLA.","examples":[{"text":"**The most likely explanation is that** the identifier changed upstream.","translation_ru":"Наиболее вероятное объяснение — идентификатор изменился выше по потоку."},{"text":"**The most likely explanation is that** the rule was applied before the mapping update.","translation_ru":"Наиболее вероятное объяснение — правило применили до обновления маппинга."},{"text":"**The most likely explanation is that** users are bypassing the extra step.","translation_ru":"Наиболее вероятное объяснение — пользователи обходят лишний шаг."},{"text":"**The most likely explanation is that** the sample contains duplicate cases.","translation_ru":"Наиболее вероятное объяснение — в выборке есть дубликаты."},{"text":"**The most likely explanation is that** the bottleneck is downstream, not in the model.","translation_ru":"Наиболее вероятное объяснение — узкое место ниже по потоку, а не в модели."}]},
+      {"lang":"de","formula":"Die wahrscheinlichste Erklärung ist, dass [X].","example":"**Die wahrscheinlichste Erklärung ist, dass** die Nachricht nach dem SLA-Fenster angekommen ist.","translation":"Наиболее вероятное объяснение в том, что сообщение пришло после окна SLA.","examples":[{"text":"**Die wahrscheinlichste Erklärung ist, dass** sich die Kennung im Vorsystem geändert hat.","translation_ru":"Наиболее вероятное объяснение — идентификатор изменился выше по потоку."},{"text":"**Die wahrscheinlichste Erklärung ist, dass** die Regel vor dem Mapping-Update angewendet wurde.","translation_ru":"Наиболее вероятное объяснение — правило применили до обновления маппинга."},{"text":"**Die wahrscheinlichste Erklärung ist, dass** Nutzer den zusätzlichen Schritt umgehen.","translation_ru":"Наиболее вероятное объяснение — пользователи обходят лишний шаг."},{"text":"**Die wahrscheinlichste Erklärung ist, dass** die Stichprobe doppelte Fälle enthält.","translation_ru":"Наиболее вероятное объяснение — в выборке есть дубликаты."},{"text":"**Die wahrscheinlichste Erklärung ist, dass** der Engpass nachgelagert liegt und nicht im Modell.","translation_ru":"Наиболее вероятное объяснение — узкое место ниже по потоку, а не в модели."}]}
+    ],
+    "gen": {"status":"curated","iterations":1,"lastGeneratedAt":"2026-08-16","languages":["en","de"],"notes":"Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF054",
+    "title_ru": "Одна возможность X, другая Y",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "competing hypotheses",
+    "metaphor_ru": "Удерживать две гипотезы одновременно, пока данных недостаточно для выбора одной.",
+    "formulas": ["One possibility is that [X]; another is that [Y].", "Eine Möglichkeit ist, dass [X]; eine andere ist, dass [Y]."],
+    "reasoning": {
+      "move": "Compare",
+      "what_it_does_en": "Put competing explanations side by side before choosing between them.",
+      "what_it_does_ru": "Удерживать две гипотезы одновременно, пока данных недостаточно для выбора одной.",
+      "when_to_use_en": "Use it early in diagnosis to avoid anchoring on the first plausible cause.",
+      "when_to_use_ru": "Удерживать две гипотезы одновременно, пока данных недостаточно для выбора одной.",
+      "contrast_en": "The first plausible explanation is probably correct.",
+      "common_mistake_en": "Make alternatives testable where possible.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {"lang":"en","formula":"One possibility is that [X]; another is that [Y].","example":"**One possibility is that** the event was delayed; **another is that** it was never emitted.","translation":"Одна возможность — событие задержалось; другая — оно вообще не было создано.","examples":[{"text":"**One possibility is that** the mapping is wrong; **another is that** the source value changed.","translation_ru":"Одна возможность — неверный маппинг; другая — изменилось исходное значение."},{"text":"**One possibility is that** users missed the control; **another is that** they deliberately bypassed it.","translation_ru":"Одна возможность — пользователи не заметили контроль; другая — сознательно его обошли."},{"text":"**One possibility is that** the model regressed; **another is that** the data distribution shifted.","translation_ru":"Одна возможность — модель деградировала; другая — изменилось распределение данных."},{"text":"**One possibility is that** the retry created the duplicate; **another is that** two systems sent it.","translation_ru":"Одна возможность — дубликат создал retry; другая — его отправили две системы."},{"text":"**One possibility is that** the process is slow; **another is that** the measurement starts too early.","translation_ru":"Одна возможность — процесс медленный; другая — измерение начинается слишком рано."}]},
+      {"lang":"de","formula":"Eine Möglichkeit ist, dass [X]; eine andere ist, dass [Y].","example":"**Eine Möglichkeit ist, dass** das Ereignis verspätet war; **eine andere ist, dass** es nie erzeugt wurde.","translation":"Одна возможность — событие задержалось; другая — оно вообще не было создано.","examples":[{"text":"**Eine Möglichkeit ist, dass** das Mapping falsch ist; **eine andere ist, dass** sich der Quellwert geändert hat.","translation_ru":"Одна возможность — неверный маппинг; другая — изменилось исходное значение."},{"text":"**Eine Möglichkeit ist, dass** Nutzer die Kontrolle übersehen haben; **eine andere ist, dass** sie sie bewusst umgangen haben.","translation_ru":"Одна возможность — пользователи не заметили контроль; другая — сознательно его обошли."},{"text":"**Eine Möglichkeit ist, dass** das Modell schlechter geworden ist; **eine andere ist, dass** sich die Datenverteilung verschoben hat.","translation_ru":"Одна возможность — модель деградировала; другая — изменилось распределение данных."},{"text":"**Eine Möglichkeit ist, dass** der Retry das Duplikat erzeugt hat; **eine andere ist, dass** zwei Systeme es gesendet haben.","translation_ru":"Одна возможность — дубликат создал retry; другая — его отправили две системы."},{"text":"**Eine Möglichkeit ist, dass** der Prozess langsam ist; **eine andere ist, dass** die Messung zu früh beginnt.","translation_ru":"Одна возможность — процесс медленный; другая — измерение начинается слишком рано."}]}
+    ],
+    "gen": {"status":"curated","iterations":1,"lastGeneratedAt":"2026-08-16","languages":["en","de"],"notes":"Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF055",
+    "title_ru": "Нельзя исключать X",
+    "group_id": "CLF",
+    "set_id": "HED",
+    "logic": "cannot rule out",
+    "metaphor_ru": "Сохранить гипотезу в рассмотрении, потому что текущие данные её не опровергают.",
+    "formulas": ["We cannot rule out [X].", "Wir können [X] nicht ausschließen."],
+    "reasoning": {"move":"Challenge","what_it_does_en":"Keep a possibility open because current evidence does not eliminate it.","what_it_does_ru":"Сохранить гипотезу в рассмотрении, потому что текущие данные её не опровергают.","when_to_use_en":"Use it when a hypothesis remains plausible even if it is not the leading explanation.","when_to_use_ru":"Сохранить гипотезу в рассмотрении, потому что текущие данные её не опровергают.","contrast_en":"X is likely.","common_mistake_en":"Cannot rule out does not mean likely.","common_mistake_ru":"Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."},
+    "langs": [
+      {"lang":"en","formula":"We cannot rule out [X].","example":"**We cannot rule out** a source-side change.","translation":"Мы не можем исключить изменение на стороне источника.","examples":[{"text":"**We cannot rule out** a timing issue.","translation_ru":"Мы не можем исключить проблему со временем."},{"text":"**We cannot rule out** user error, but the workflow should make it harder.","translation_ru":"Мы не можем исключить ошибку пользователя, но процесс должен затруднять её."},{"text":"**We cannot rule out** a hidden dependency.","translation_ru":"Мы не можем исключить скрытую зависимость."},{"text":"**We cannot rule out** that the sample is biased.","translation_ru":"Мы не можем исключить смещение выборки."},{"text":"**We cannot rule out** a second failure mode.","translation_ru":"Мы не можем исключить второй тип сбоя."}]},
+      {"lang":"de","formula":"Wir können [X] nicht ausschließen.","example":"**Wir können** eine Änderung auf Quellseite **nicht ausschließen**.","translation":"Мы не можем исключить изменение на стороне источника.","examples":[{"text":"**Wir können** ein Timing-Problem **nicht ausschließen**.","translation_ru":"Мы не можем исключить проблему со временем."},{"text":"**Wir können** einen Nutzerfehler **nicht ausschließen**, aber der Workflow sollte ihn erschweren.","translation_ru":"Мы не можем исключить ошибку пользователя, но процесс должен затруднять её."},{"text":"**Wir können** eine versteckte Abhängigkeit **nicht ausschließen**.","translation_ru":"Мы не можем исключить скрытую зависимость."},{"text":"**Wir können nicht ausschließen**, dass die Stichprobe verzerrt ist.","translation_ru":"Мы не можем исключить смещение выборки."},{"text":"**Wir können** einen zweiten Fehlermodus **nicht ausschließen**.","translation_ru":"Мы не можем исключить второй тип сбоя."}]}
+    ],
+    "gen": {"status":"curated","iterations":1,"lastGeneratedAt":"2026-08-16","languages":["en","de"],"notes":"Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF056",
+    "title_ru": "Если X верно, ожидаем Y",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "prediction from hypothesis",
+    "metaphor_ru": "Превратить гипотезу в проверяемое предсказание: если X объясняет ситуацию, должен наблюдаться Y.",
+    "formulas": ["If [X] were true, we would expect [Y].", "Wenn [X] zuträfe, würden wir [Y] erwarten."],
+    "reasoning": {"move":"Test","what_it_does_en":"Turn a hypothesis into a testable prediction.","what_it_does_ru":"Превратить гипотезу в проверяемое предсказание: если X объясняет ситуацию, должен наблюдаться Y.","when_to_use_en":"Use it to design a diagnostic check instead of arguing from intuition.","when_to_use_ru":"Превратить гипотезу в проверяемое предсказание: если X объясняет ситуацию, должен наблюдаться Y.","contrast_en":"If X sounds plausible, accept it.","common_mistake_en":"The expected observation must actually follow from the hypothesis.","common_mistake_ru":"Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."},
+    "langs": [
+      {"lang":"en","formula":"If [X] were true, we would expect [Y].","example":"**If** the queue **were** the bottleneck, **we would expect** delays across several message types.","translation":"Если бы очередь была узким местом, мы ожидали бы задержки по нескольким типам сообщений.","examples":[{"text":"**If** the mapping **were** wrong, **we would expect** the same mismatch repeatedly.","translation_ru":"Если бы маппинг был неверным, мы ожидали бы повторение одного и того же расхождения."},{"text":"**If** users **were** confused, **we would expect** similar workarounds from different users.","translation_ru":"Если бы пользователи путались, мы ожидали бы похожие обходные решения."},{"text":"**If** the model **were** the cause, **we would expect** the issue to disappear with the previous version.","translation_ru":"Если бы причиной была модель, проблема должна была бы исчезнуть на предыдущей версии."},{"text":"**If** the timestamp **were** unreliable, **we would expect** impossible event orders.","translation_ru":"Если бы временная метка была ненадёжной, мы ожидали бы невозможный порядок событий."},{"text":"**If** volume **were** the main driver, **we would expect** the failure rate to rise with load.","translation_ru":"Если бы объём был главным фактором, частота сбоев росла бы с нагрузкой."}]},
+      {"lang":"de","formula":"Wenn [X] zuträfe, würden wir [Y] erwarten.","example":"**Wenn** die Queue der Engpass **wäre, würden wir** Verzögerungen bei mehreren Nachrichtentypen **erwarten**.","translation":"Если бы очередь была узким местом, мы ожидали бы задержки по нескольким типам сообщений.","examples":[{"text":"**Wenn** das Mapping falsch **wäre, würden wir** dieselbe Abweichung wiederholt **erwarten**.","translation_ru":"Если бы маппинг был неверным, мы ожидали бы повторение одного и того же расхождения."},{"text":"**Wenn** Nutzer verwirrt **wären, würden wir** ähnliche Workarounds bei verschiedenen Nutzern **erwarten**.","translation_ru":"Если бы пользователи путались, мы ожидали бы похожие обходные решения."},{"text":"**Wenn** das Modell die Ursache **wäre, würden wir erwarten**, dass das Problem mit der vorherigen Version verschwindet.","translation_ru":"Если бы причиной была модель, проблема должна была бы исчезнуть на предыдущей версии."},{"text":"**Wenn** der Zeitstempel unzuverlässig **wäre, würden wir** unmögliche Ereignisreihenfolgen **erwarten**.","translation_ru":"Если бы временная метка была ненадёжной, мы ожидали бы невозможный порядок событий."},{"text":"**Wenn** das Volumen der Haupttreiber **wäre, würden wir** eine steigende Fehlerquote unter Last **erwarten**.","translation_ru":"Если бы объём был главным фактором, частота сбоев росла бы с нагрузкой."}]}
+    ],
+    "gen": {"status":"curated","iterations":1,"lastGeneratedAt":"2026-08-16","languages":["en","de"],"notes":"Advanced Reasoning Frame for Metkagram Practice."}
+  }
+]
