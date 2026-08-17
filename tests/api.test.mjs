@@ -73,7 +73,7 @@ test("every pattern record has provenance, canonical URL and quality metadata", 
   const patterns = readJson(API, "patterns.json");
   assertProvenance(patterns, "in patterns.json");
   assert.ok(Array.isArray(patterns.data));
-  assert.strictEqual(patterns.data.length, 30);
+  assert.ok(patterns.data.length >= 1000, `expected at least 1,000 public patterns, found ${patterns.data.length}`);
   for (const item of patterns.data) {
     assertProvenance(item, `for pattern ${item.data?.id}`);
     assert.ok(item.data.id);
@@ -89,7 +89,7 @@ test("paginated pattern summaries include provenance and pagination", () => {
   assertProvenance(page, "in patterns/index.json");
   assert.ok(page.pagination);
   assert.strictEqual(typeof page.pagination.total, "number");
-  assert.strictEqual(page.pagination.total, 30);
+  assert.ok(page.pagination.total >= 1000);
   assert.ok(page.pagination.first);
   assert.ok(page.pagination.last);
 });
@@ -167,7 +167,7 @@ test("search index covers the complete annotated document corpus", () => {
 
 test("quality report is published for editorial and agent use", () => {
   const report = readJson(DIST, "data", "quality-report.json");
-  assert.strictEqual(report.patternCount, 30);
+  assert.ok(report.patternCount >= 1000);
   assert.strictEqual(report.rules.syntheticPaddingAllowed, false);
   assert.strictEqual(report.rules.translationsRequired, true);
   assert.ok(Array.isArray(report.reviewQueue));

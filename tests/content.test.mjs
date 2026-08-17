@@ -20,16 +20,17 @@ function decodeEntities(value) {
   return value.replaceAll("&quot;", '"').replaceAll("&amp;", "&").replaceAll("&#039;", "'");
 }
 
-test("source content validates and public practice stays deliberately bounded", () => {
+test("source content validates and public Practice exposes the full curriculum", () => {
   const content = loadContent();
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
   assert.ok(counts.annotatedSentences > 0);
-  assert.equal(counts.advancedPatterns, 30);
-  assert.deepEqual(content.studySets.sets.map((set) => set.id).sort(), ["CAU", "CLR", "CND", "EVD", "NEG", "PRB"]);
+  assert.ok(counts.advancedPatterns >= 1000, `expected at least 1,000 patterns, found ${counts.advancedPatterns}`);
+  assert.ok(content.studySets.sets.length >= 20);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
-  assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
-  assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
+  const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);
+  assert.ok(reasoningPatterns.length >= 30);
+  assert.equal(new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.quality?.translations_complete));
   for (const target of Object.values(content.collections)) {
     for (const collection of Object.values(target)) assert.equal(collection.documents.length, 12);
@@ -211,7 +212,7 @@ test("archived mobile app route points learners to the web product without activ
 
 test("every generated page carries the current brand and discoverability metadata", () => {
   const files = htmlFiles(DIST).filter((file) => !file.startsWith(path.join(DIST, "assets")) && !/^google[a-z0-9_-]*\.html$/i.test(path.basename(file)));
-  assert.ok(files.length >= 200, "expected the bounded generated page set");
+  assert.ok(files.length >= 200, "expected the generated page set");
   for (const file of files) {
     const html = fs.readFileSync(file, "utf8");
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);

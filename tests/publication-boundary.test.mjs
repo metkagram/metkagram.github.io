@@ -6,9 +6,8 @@ import { contentCounts, loadContent } from "../src/content.mjs";
 
 const ROOT = process.cwd();
 
-test("private-core sources are absent from the public repository", () => {
+test("private research infrastructure stays outside the public repository", () => {
   for (const relative of [
-    "data/advanced-patterns.json",
     "data/pattern-annotations.json.gz",
     "data/source-tag-rules.ts",
     "annotation_service"
@@ -17,14 +16,16 @@ test("private-core sources are absent from the public repository", () => {
   }
 });
 
-test("public content remains deliberately bounded", () => {
+test("the full learner-facing Practice curriculum is public while the annotation corpus stays bounded", () => {
   const content = loadContent();
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
-  assert.equal(counts.advancedPatterns, 30);
-  assert.equal(content.studySets.sets.length, 6);
-  assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning?.move)).size, 9);
-  assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
+  assert.ok(fs.existsSync(path.join(ROOT, "data/advanced-patterns.json")), "the public Practice source must exist");
+  assert.ok(counts.advancedPatterns >= 1000, `expected at least 1,000 public practice patterns, found ${counts.advancedPatterns}`);
+  assert.ok(content.studySets.sets.length >= 20, "the public Practice taxonomy should expose the full study-set catalogue");
+  const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);
+  assert.ok(reasoningPatterns.length >= 30);
+  assert.equal(new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
 });
 
 test("publication manifest records every selected collection and approved evaluation surface", () => {
