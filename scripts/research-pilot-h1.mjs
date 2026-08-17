@@ -27,7 +27,8 @@ function page(locale) {
     intro: 'Этот короткий браузерный эксперимент сравнивает одинаковые английские предложения с функциональными метками и без них. Он измеряет распознавание ролей, скорость ответа и понимание смысла.',
     boundary: 'Это пилот полезности интерфейсного сигнала, а не доказательство того, что Metkagram улучшает владение английским или долгосрочное обучение.',
     protocol: 'Замороженный протокол',
-    privacy: 'Данные остаются в браузере, пока участник сам не экспортирует файл. Имя, email и точная геолокация не запрашиваются.'
+    privacy: 'Данные остаются в браузере, пока участник сам не экспортирует файл. Имя, email и точная геолокация не запрашиваются.',
+    notation: 'Перед стартом обе группы видят одну и ту же легенду обозначений. Разница только в том, появляются ли эти метки прямо в предложениях.'
   } : {
     back: 'Research',
     eyebrow: `${study.study_id} · exploratory pilot`,
@@ -35,7 +36,8 @@ function page(locale) {
     intro: 'This short browser experiment compares the same English sentences with and without functional labels. It measures role identification, response time, and meaning comprehension.',
     boundary: 'This is a cue-utility pilot, not evidence that Metkagram improves English proficiency, long-term learning, retention, or transfer.',
     protocol: 'Frozen protocol',
-    privacy: 'Data stays in the browser unless the participant explicitly exports a file. The pilot does not ask for a name, email address, or precise location.'
+    privacy: 'Data stays in the browser unless the participant explicitly exports a file. The pilot does not ask for a name, email address, or precise location.',
+    notation: 'Before starting, both groups see the same notation legend. The only condition difference is whether those labels appear inline in the sentence.'
   };
   const alternate = locale === 'en' ? 'ru' : 'en';
   const structured = JSON.stringify({
@@ -78,7 +80,7 @@ function page(locale) {
     <nav class="site-nav" aria-label="Research navigation"><a href="/${locale}/research/">← ${copy.back}</a><a href="/${alternate}/research/pilot-h1/">${alternate.toUpperCase()}</a></nav>
   </header>
   <main id="content">
-    <section class="page-head section-pad"><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.headline}</h1><p class="lede">${copy.intro}</p><p>${copy.boundary}</p><p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_PILOT_H1.md">${copy.protocol} ↗</a></p><p><small>${copy.privacy}</small></p></section>
+    <section class="page-head section-pad"><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.headline}</h1><p class="lede">${copy.intro}</p><p>${copy.boundary}</p><p>${copy.notation}</p><div class="pilot-notation-guide" aria-label="Metkagram notation legend"><span><b>S</b> subject</span><span><b>V</b> main verb</span><span><b>M</b> modal / helper</span><span><b>v2</b> verb after modal</span></div><p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_PILOT_H1.md">${copy.protocol} ↗</a></p><p><small>${copy.privacy}</small></p></section>
     <div data-h1-pilot></div>
   </main>
   <script type="module" src="/assets/app.js"></script>
