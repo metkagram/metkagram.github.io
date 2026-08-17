@@ -18,7 +18,7 @@ test("every migrated old URL is unique and mapped", () => {
   assert.equal(new Set(sources).size, sources.length);
   assert.ok(sources.includes("/metkagram/en/dialogues"));
   assert.ok(sources.includes("/metkagram/de/library"));
-  assert.ok(sources.includes("/ru/metkax/CON001"));
+  assert.ok(sources.includes("/ru/metkax/CLF041"));
   assert.equal(redirects.filter((redirect) => redirect.status === "ready").length, redirects.length - 2);
 });
 

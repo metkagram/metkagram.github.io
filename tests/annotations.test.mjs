@@ -57,7 +57,7 @@ test("service-produced pattern annotations replace authored-only emphasis", () =
 
 test("support-language preference is available globally and keeps translations opt-in", () => {
   const root = process.cwd();
-  const html = fs.readFileSync(path.join(root, "dist/en/practice/con003/index.html"), "utf8");
+  const html = fs.readFileSync(path.join(root, "dist/en/practice/clf041/index.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "public/assets/app.js"), "utf8");
   assert.match(html, /data-native-language-control/);
   assert.match(html, /data-native-translation hidden/);

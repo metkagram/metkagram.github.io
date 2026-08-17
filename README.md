@@ -11,7 +11,7 @@ This repository is the **public publication layer**, not the canonical research 
 The public release deliberately contains enough material to inspect, cite and evaluate the method without publishing the complete research corpus or generation pipeline:
 
 - 72 selected annotated documents, 12 from each English/German collection;
-- 20 curated reasoning-enabled English/German pattern frames;
+- 28 curated reasoning-enabled English/German pattern frames;
 - public schemas, provenance, APIs, research documentation and website code;
 - the hosted learning and research interface.
 

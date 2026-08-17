@@ -17,7 +17,7 @@ test("reasoning frame source and public assets stay identical", () => {
 
 test("public reasoning showcase is complete enough to inspect the method", () => {
   const reasoning = loadContent().advancedPatterns;
-  assert.equal(reasoning.length, 20);
+  assert.equal(reasoning.length, 28);
   assert.ok(reasoning.every((pattern) => pattern.reasoning?.move));
   assert.equal(new Set(reasoning.map((pattern) => pattern.reasoning.move)).size, 9);
   assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));

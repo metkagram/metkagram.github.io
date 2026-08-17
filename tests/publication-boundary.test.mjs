@@ -21,7 +21,7 @@ test("public content remains deliberately bounded", () => {
   const content = loadContent();
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
-  assert.equal(counts.advancedPatterns, 20);
+  assert.equal(counts.advancedPatterns, 28);
   assert.equal(content.studySets.sets.length, 6);
   assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning?.move)).size, 9);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
