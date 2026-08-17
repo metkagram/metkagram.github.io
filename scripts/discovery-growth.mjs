@@ -31,6 +31,15 @@ function metadata(route, html, locale) {
   };
 }
 
+function loadPartnershipOpportunities() {
+  const file = path.join(ROOT, "data", "partnership-opportunities.json");
+  const payload = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (payload?.schemaVersion !== 1 || !Array.isArray(payload.opportunities) || !payload.opportunities.length) {
+    throw new Error("data/partnership-opportunities.json must contain schemaVersion 1 and opportunities");
+  }
+  return payload.opportunities;
+}
+
 function addAtlasEntryPoint(locale, topics) {
   const file = routeFile(`/${locale}/practice/`);
   const html = fs.readFileSync(file, "utf8");
@@ -40,6 +49,17 @@ function addAtlasEntryPoint(locale, topics) {
   const marker = `</section><section id="all-patterns"`;
   if (!html.includes(marker)) throw new Error(`Could not find practice-page insertion point for ${locale}`);
   fs.writeFileSync(file, html.replace(marker, `</section>${teaser}<section id="all-patterns"`));
+}
+
+function addPartnershipPilots(locale, opportunities) {
+  const file = routeFile(`/${locale}/support/`);
+  const html = fs.readFileSync(file, "utf8");
+  if (html.includes('id="partnership-pilots"')) return;
+  const ru = locale === "ru";
+  const section = `<section id="partnership-pilots" class="research-questions section-pad ruled"><div><p class="eyebrow">06 · ${ru ? "Конкретные пилоты" : "Concrete pilot packages"}</p><h2>${ru ? "Партнёрство должно начинаться с результата" : "Start with a small outcome, not a vague collaboration"}</h2><p>${ru ? "Каждый формат ниже можно запустить как ограниченный пилот с понятными артефактами, границами лицензии и критерием успеха." : "Each format below can start as a bounded pilot with explicit deliverables, license boundaries and a success criterion."}</p></div><ol>${opportunities.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${ru ? item.title_ru : item.title_en}</h3><p><b>${ru ? "Для кого" : "For"}:</b> ${ru ? item.audience_ru : item.audience_en}</p><p>${ru ? item.offer_ru : item.offer_en}</p><small><b>${ru ? "Результат" : "Pilot outcome"}:</b> ${ru ? item.outcome_ru : item.outcome_en}</small></div></li>`).join("")}</ol></section>`;
+  const closingArticle = html.lastIndexOf("</article>");
+  if (closingArticle < 0) throw new Error(`Could not find support-page article boundary for ${locale}`);
+  fs.writeFileSync(file, `${html.slice(0, closingArticle)}${section}${html.slice(closingArticle)}`);
 }
 
 function updateSitemap(records) {
@@ -67,6 +87,7 @@ function build() {
   if (!fs.existsSync(DIST)) throw new Error("Run the main static build before discovery-growth.mjs");
   const content = loadContent();
   const topics = loadDiscoveryTopics(content);
+  const opportunities = loadPartnershipOpportunities();
   const records = [];
 
   for (const locale of locales) {
@@ -83,13 +104,15 @@ function build() {
     }
 
     addAtlasEntryPoint(locale, topics);
+    addPartnershipPilots(locale, opportunities);
   }
 
   write("data/discovery-topics.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, topics }, null, 2)}\n`);
+  write("data/partnership-opportunities.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, opportunities }, null, 2)}\n`);
   write("seo/discovery-topics.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, canonicalBase: SITE_URL, topicCount: topics.length, routes: records }, null, 2)}\n`);
   updateSitemap(records);
   updateSeoInventory(records);
-  console.log(`Generated ${records.length} Pattern Atlas routes from ${topics.length} editorial topics.`);
+  console.log(`Generated ${records.length} Pattern Atlas routes from ${topics.length} editorial topics and published ${opportunities.length} partnership pilots.`);
 }
 
 build();
