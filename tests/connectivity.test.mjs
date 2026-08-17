@@ -12,23 +12,24 @@ function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 }
 
-test("connectivity graph describes only the bounded public release", () => {
+test("connectivity graph covers full public Practice with a bounded reasoning layer", () => {
   assert.equal(graph.schemaVersion, 1);
-  assert.equal(graph.sourceCounts.advancedPatterns, 30);
+  assert.equal(graph.sourceCounts.advancedPatterns, patterns.length);
+  assert.ok(patterns.length >= 1000, `expected full Practice curriculum, found ${patterns.length}`);
   assert.equal(graph.sourceCounts.annotatedDocuments, 72);
   assert.equal(graph.sourceCounts.reasoningFrames, 30);
-  assert.equal(patterns.length, 30);
   assert.equal(reasoning.count, 30);
   assert.equal(graph.relationCounts.reasoningMoveCount, 9);
   assert.equal(Object.keys(graph.documents).length, 72);
-  assert.equal(Object.keys(graph.patterns).length, 30);
+  assert.equal(Object.keys(graph.patterns).length, patterns.length);
 });
 
 test("practice and a reasoning detail page expose server-rendered reasoning navigation", () => {
   const practice = html("en", "practice");
   assert.match(practice, /data-connectivity="reasoning-nav"/);
-  const id = patterns[0].id.toLowerCase();
-  const detail = html("en", "practice", id);
+  const reasoningPattern = patterns.find((pattern) => pattern.reasoning?.move);
+  assert.ok(reasoningPattern, "expected at least one reasoning-enabled public pattern");
+  const detail = html("en", "practice", reasoningPattern.id.toLowerCase());
   assert.match(detail, /id="reasoning-move"/);
 });
 

@@ -5,6 +5,7 @@ import { SITE_RELEASE_DATE } from '../src/site.mjs';
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://metkagram.github.io';
+const SOCIAL_IMAGE = `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`;
 const source = path.join(ROOT, 'data', 'research', 'h1-cue-utility-v1.json');
 const study = JSON.parse(fs.readFileSync(source, 'utf8'));
 
@@ -28,6 +29,7 @@ function metaFor(locale) {
 function page(locale) {
   const ru = locale === 'ru';
   const { pathname, title, description } = metaFor(locale);
+  const canonical = `${SITE_URL}${pathname}`;
   const copy = ru ? {
     back: 'Исследования',
     eyebrow: `${study.study_id} · exploratory pilot`,
@@ -36,7 +38,11 @@ function page(locale) {
     boundary: 'Это пилот полезности интерфейсного сигнала, а не доказательство того, что Metkagram улучшает владение английским или долгосрочное обучение.',
     protocol: 'Замороженный протокол',
     privacy: 'Данные остаются в браузере, пока участник сам не экспортирует файл. Имя, email и точная геолокация не запрашиваются.',
-    notation: 'Перед стартом обе группы видят одну и ту же легенду обозначений. Разница только в том, появляются ли эти метки прямо в предложениях.'
+    notation: 'Перед стартом обе группы видят одну и ту же легенду обозначений. Разница только в том, появляются ли эти метки прямо в предложениях.',
+    shareLabel: 'Поделиться или распечатать страницу',
+    copyLink: 'Копировать ссылку',
+    print: 'Печать',
+    copied: 'Ссылка скопирована.'
   } : {
     back: 'Research',
     eyebrow: `${study.study_id} · exploratory pilot`,
@@ -45,14 +51,30 @@ function page(locale) {
     boundary: 'This is a cue-utility pilot, not evidence that Metkagram improves English proficiency, long-term learning, retention, or transfer.',
     protocol: 'Frozen protocol',
     privacy: 'Data stays in the browser unless the participant explicitly exports a file. The pilot does not ask for a name, email address, or precise location.',
-    notation: 'Before starting, both groups see the same notation legend. The only condition difference is whether those labels appear inline in the sentence.'
+    notation: 'Before starting, both groups see the same notation legend. The only condition difference is whether those labels appear inline in the sentence.',
+    shareLabel: 'Share or print this page',
+    copyLink: 'Copy link',
+    print: 'Print page',
+    copied: 'Link copied.'
   };
   const alternate = locale === 'en' ? 'ru' : 'en';
-  const structured = JSON.stringify({
+  const pageStructured = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    inLanguage: locale,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: SOCIAL_IMAGE, width: 1200, height: 630 },
+    dateModified: SITE_RELEASE_DATE
+  }).replaceAll('<', '\\u003c');
+  const researchStructured = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'ResearchProject',
     name: title,
-    url: `${SITE_URL}${pathname}`,
+    url: canonical,
     description,
     about: ['functional annotation', 'second-language learning', 'response time', 'sentence structure'],
     identifier: study.study_id
@@ -66,21 +88,30 @@ function page(locale) {
   <title>${title}</title>
   <meta name="description" content="${description}">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-  <link rel="canonical" href="${SITE_URL}${pathname}">
-  <link rel="alternate" hreflang="${locale}" href="${SITE_URL}${pathname}">
+  <link rel="canonical" href="${canonical}">
+  <link rel="alternate" hreflang="${locale}" href="${canonical}">
   <link rel="alternate" hreflang="${alternate}" href="${SITE_URL}/${alternate}/research/pilot-h1/">
   <link rel="alternate" hreflang="x-default" href="${SITE_URL}/en/research/pilot-h1/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Metkagram">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
-  <meta property="og:url" content="${SITE_URL}${pathname}">
-  <meta property="og:image" content="${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${SOCIAL_IMAGE}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Metkagram visual language research pilot">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:image" content="${SOCIAL_IMAGE}">
   <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+  <link rel="manifest" href="/assets/web/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/research-pilot-h1.css">
-  <script type="application/ld+json">${structured}</script>
+  <script type="application/ld+json">${pageStructured}</script>
+  <script type="application/ld+json">${researchStructured}</script>
 </head>
 <body>
   <header class="site-header">
@@ -91,6 +122,7 @@ function page(locale) {
     <section class="page-head section-pad"><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.headline}</h1><p class="lede">${copy.intro}</p><p>${copy.boundary}</p><p>${copy.notation}</p><div class="pilot-notation-guide" aria-label="Metkagram notation legend"><span><b>S</b> subject</span><span><b>V</b> main verb</span><span><b>M</b> modal / helper</span><span><b>v2</b> verb after modal</span></div><p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_PILOT_H1.md">${copy.protocol} ↗</a></p><p><small>${copy.privacy}</small></p></section>
     <div data-h1-pilot></div>
   </main>
+  <aside class="share-bar section-pad" data-share-bar data-share-url="${canonical}" data-share-title="${title}" data-share-copied="${copy.copied}" aria-label="${copy.shareLabel}"><span class="share-label">${copy.shareLabel}</span><div class="share-actions"><button type="button" class="share-button" data-copy-link>${copy.copyLink}</button><button type="button" class="share-button" data-print-page>${copy.print}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>
   <script type="module" src="/assets/app.js"></script>
   <script type="module" src="/assets/research-pilot-h1.js"></script>
 </body>
