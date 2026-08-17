@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { SITE_RELEASE_DATE } from '../src/site.mjs';
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
@@ -13,13 +14,20 @@ function writeFile(relative, content) {
   fs.writeFileSync(target, content);
 }
 
+function metaFor(locale) {
+  const ru = locale === 'ru';
+  return {
+    pathname: `/${locale}/research/pilot-h1/`,
+    title: ru ? 'H1: пилот визуальной разметки | Metkagram' : 'H1 functional-tag cue utility pilot | Metkagram',
+    description: ru
+      ? 'Исследовательский пилот Metkagram: сравнение распознавания структуры в чистом предложении и предложении с функциональными метками.'
+      : 'A Metkagram research pilot comparing structural-role identification in clean and functionally tagged sentences.'
+  };
+}
+
 function page(locale) {
   const ru = locale === 'ru';
-  const pathname = `/${locale}/research/pilot-h1/`;
-  const title = ru ? 'H1: пилот визуальной разметки | Metkagram' : 'H1 functional-tag cue utility pilot | Metkagram';
-  const description = ru
-    ? 'Исследовательский пилот Metkagram: сравнение распознавания структуры в чистом предложении и предложении с функциональными метками.'
-    : 'A Metkagram research pilot comparing structural-role identification in clean and functionally tagged sentences.';
+  const { pathname, title, description } = metaFor(locale);
   const copy = ru ? {
     back: 'Исследования',
     eyebrow: `${study.study_id} · exploratory pilot`,
@@ -103,10 +111,37 @@ function patchResearch(locale) {
   fs.writeFileSync(target, html);
 }
 
+function patchDiscovery() {
+  const sitemapFile = path.join(DIST, 'sitemap.xml');
+  let sitemap = fs.readFileSync(sitemapFile, 'utf8');
+  for (const locale of ['en', 'ru']) {
+    const { pathname } = metaFor(locale);
+    const canonical = `${SITE_URL}${pathname}`;
+    if (!sitemap.includes(`<loc>${canonical}</loc>`)) {
+      sitemap = sitemap.replace('</urlset>', `  <url><loc>${canonical}</loc><lastmod>${SITE_RELEASE_DATE}</lastmod></url>\n</urlset>`);
+    }
+  }
+  fs.writeFileSync(sitemapFile, sitemap);
+
+  const seoFile = path.join(DIST, 'seo', 'site-pages.json');
+  const seo = JSON.parse(fs.readFileSync(seoFile, 'utf8'));
+  seo.pages ||= [];
+  for (const locale of ['en', 'ru']) {
+    const { pathname, title, description } = metaFor(locale);
+    if (!seo.pages.some((pageRecord) => pageRecord.route === pathname)) {
+      seo.pages.push({ route: pathname, canonical: `${SITE_URL}${pathname}`, language: locale, title, description, lastModified: SITE_RELEASE_DATE });
+    }
+  }
+  seo.pages.sort((a, b) => a.route.localeCompare(b.route));
+  seo.pageCount = seo.pages.length;
+  fs.writeFileSync(seoFile, `${JSON.stringify(seo, null, 2)}\n`);
+}
+
 writeFile('data/research/h1-cue-utility-v1.json', `${JSON.stringify(study, null, 2)}\n`);
 for (const locale of ['en', 'ru']) {
   writeFile(`${locale}/research/pilot-h1/index.html`, page(locale));
   patchResearch(locale);
 }
+patchDiscovery();
 
-console.log(`Generated ${study.study_id} pilot pages and frozen stimulus data.`);
+console.log(`Generated ${study.study_id} pilot pages, frozen stimulus data and discovery records.`);
