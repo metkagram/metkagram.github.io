@@ -15,10 +15,11 @@ test("reasoning frame source and public assets stay identical", () => {
   }
 });
 
-test("public reasoning showcase is complete enough to inspect and evaluate the method", () => {
-  const reasoning = loadContent().advancedPatterns;
-  assert.equal(reasoning.length, 30);
-  assert.ok(reasoning.every((pattern) => pattern.reasoning?.move));
+test("reasoning subset remains complete inside the full public Practice curriculum", () => {
+  const curriculum = loadContent().advancedPatterns;
+  assert.ok(curriculum.length >= 1000);
+  const reasoning = curriculum.filter((pattern) => pattern.reasoning?.move);
+  assert.ok(reasoning.length >= 30);
   assert.equal(new Set(reasoning.map((pattern) => pattern.reasoning.move)).size, 9);
   assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));
   assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 2)));
