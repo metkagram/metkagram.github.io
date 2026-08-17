@@ -83,6 +83,38 @@ function updateSeoInventory(records) {
   write("seo/site-pages.json", `${JSON.stringify(inventory, null, 2)}\n`);
 }
 
+function updateMachineDiscovery(topics, opportunities) {
+  const catalogFile = path.join(DIST, "data", "catalog.json");
+  if (fs.existsSync(catalogFile)) {
+    const catalog = JSON.parse(fs.readFileSync(catalogFile, "utf8"));
+    catalog.patternAtlas = {
+      description: "Editorial routes from real learner communication goals to validated Metkagram study sets and canonical patterns.",
+      topicCount: topics.length,
+      dataset: `${SITE_URL}/data/discovery-topics.json`,
+      pages: { en: `${SITE_URL}/en/patterns/`, ru: `${SITE_URL}/ru/patterns/` }
+    };
+    catalog.partnershipOpportunities = {
+      description: "Bounded research, teaching, learning-tool and AI-tutor pilot packages.",
+      count: opportunities.length,
+      dataset: `${SITE_URL}/data/partnership-opportunities.json`,
+      pages: { en: `${SITE_URL}/en/support/#partnership-pilots`, ru: `${SITE_URL}/ru/support/#partnership-pilots` }
+    };
+    write("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
+  }
+
+  const llmsFile = path.join(DIST, "llms.txt");
+  if (fs.existsSync(llmsFile)) {
+    let text = fs.readFileSync(llmsFile, "utf8");
+    if (!text.includes("## Pattern Atlas")) {
+      text += `\n## Pattern Atlas\n- Human-first topic index: ${SITE_URL}/en/patterns/\n- Russian topic index: ${SITE_URL}/ru/patterns/\n- Curated topic map: ${SITE_URL}/data/discovery-topics.json\n- Use Pattern Atlas when the learner knows the communication goal but not a Metkagram ID or grammar label. Prefer the narrowest matching topic, then cite the canonical study-set or pattern URL.\n`;
+    }
+    if (!text.includes("## Partnership pilots")) {
+      text += `\n## Partnership pilots\n- Public collaboration packages: ${SITE_URL}/en/support/#partnership-pilots\n- Machine-readable pilot list: ${SITE_URL}/data/partnership-opportunities.json\n- Treat these as proposed bounded pilots, not as evidence of existing partners or traction.\n`;
+    }
+    fs.writeFileSync(llmsFile, text);
+  }
+}
+
 function build() {
   if (!fs.existsSync(DIST)) throw new Error("Run the main static build before discovery-growth.mjs");
   const content = loadContent();
@@ -112,6 +144,7 @@ function build() {
   write("seo/discovery-topics.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, canonicalBase: SITE_URL, topicCount: topics.length, routes: records }, null, 2)}\n`);
   updateSitemap(records);
   updateSeoInventory(records);
+  updateMachineDiscovery(topics, opportunities);
   console.log(`Generated ${records.length} Pattern Atlas routes from ${topics.length} editorial topics and published ${opportunities.length} partnership pilots.`);
 }
 
