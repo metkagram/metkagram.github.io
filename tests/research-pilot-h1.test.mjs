@@ -31,7 +31,10 @@ test('H1 pilot definition is frozen, bounded and internally valid', () => {
 });
 
 test('production build contains H1 pilot routes, runtime, legend and frozen data', () => {
+  const sitemap = fs.readFileSync(path.resolve('dist/sitemap.xml'), 'utf8');
+  const seo = JSON.parse(fs.readFileSync(path.resolve('dist/seo/site-pages.json'), 'utf8'));
   for (const locale of ['en', 'ru']) {
+    const pathname = `/${locale}/research/pilot-h1/`;
     const htmlPath = path.resolve('dist', locale, 'research', 'pilot-h1', 'index.html');
     assert.ok(fs.existsSync(htmlPath), `${htmlPath} must exist after build`);
     const html = fs.readFileSync(htmlPath, 'utf8');
@@ -45,8 +48,11 @@ test('production build contains H1 pilot routes, runtime, legend and frozen data
 
     const researchIndex = fs.readFileSync(path.resolve('dist', locale, 'research', 'index.html'), 'utf8');
     assert.match(researchIndex, /data-h1-pilot-link/);
-    assert.match(researchIndex, new RegExp(`/${locale}/research/pilot-h1/`));
+    assert.match(researchIndex, new RegExp(pathname));
+    assert.match(sitemap, new RegExp(`<loc>https://metkagram\\.github\\.io${pathname}</loc>`));
+    assert.ok(seo.pages.some((page) => page.route === pathname && page.language === locale));
   }
+  assert.equal(seo.pageCount, seo.pages.length);
   const frozen = JSON.parse(fs.readFileSync(path.resolve('dist/data/research/h1-cue-utility-v1.json'), 'utf8'));
   assert.equal(frozen.study_id, study.study_id);
   assert.equal(frozen.version, study.version);
