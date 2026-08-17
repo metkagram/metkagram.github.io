@@ -2,6 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 const DIST = path.resolve("dist");
+const SITE_URL = "https://metkagram.github.io";
+const RELEASE_DATE = "2026-08-17";
+const SOCIAL_PREVIEW = `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`;
 
 function htmlFiles(directory) {
   if (!fs.existsSync(directory)) return [];
@@ -12,9 +15,17 @@ function htmlFiles(directory) {
   });
 }
 
+function escapeAttribute(value = "") {
+  return value.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
+}
+
 const copy = {
   en: {
     label: "Licensing",
+    copyLink: "Copy link",
+    print: "Print",
+    share: "Share",
+    copied: "Link copied",
     aboutOld: "Project materials are free for personal, educational, and other non-commercial use with Metkagram attribution. Commercial use requires separate permission.",
     aboutNew: "Metkagram is publicly inspectable and the hosted learning site remains available to end users, but the source code, new corpus revisions, annotation scheme and research materials are not open source or open data by default. Substantial reuse, corpus-based research and commercial integration require separate permission.",
     termsOld: "The website materials are available for personal, educational and other non-commercial use with Metkagram attribution under the licence shown on the About page. Do not misuse the service, interfere with its availability, attempt unauthorised access, or redistribute material beyond the applicable licence.",
@@ -27,6 +38,10 @@ const copy = {
   },
   ru: {
     label: "Права",
+    copyLink: "Копировать ссылку",
+    print: "Печать",
+    share: "Поделиться",
+    copied: "Ссылка скопирована",
     aboutOld: "Материалы проекта доступны бесплатно для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для коммерческого использования требуется отдельное разрешение.",
     aboutNew: "Metkagram открыт для просмотра и обычного учебного использования сайта, но код, новые версии корпуса, схема разметки и исследовательские материалы по умолчанию не являются open source или open data. Для существенного повторного использования, исследований с копией корпуса и коммерческой интеграции требуется отдельное разрешение.",
     termsOld: "Материалы сайта доступны для личного, учебного и другого некоммерческого использования с указанием Metkagram на условиях лицензии со страницы «О проекте». Нельзя злоупотреблять сервисом, мешать его работе, пытаться получить несанкционированный доступ или распространять материалы за пределами применимой лицензии.",
@@ -39,7 +54,9 @@ const copy = {
   }
 };
 
-for (const file of htmlFiles(DIST)) {
+const files = htmlFiles(DIST);
+
+for (const file of files) {
   let html = fs.readFileSync(file, "utf8");
   const relative = path.relative(DIST, file).replaceAll(path.sep, "/");
   const locale = relative.startsWith("ru/") ? "ru" : "en";
@@ -51,6 +68,39 @@ for (const file of htmlFiles(DIST)) {
       "</head>",
       `  <meta name="metkagram-rights" content="source-available-not-open-source">\n  <link rel="license" href="${licensingHref}">\n</head>`
     );
+  }
+
+  if (relative === `${locale}/licensing/index.html`) {
+    const canonical = `${SITE_URL}/${locale}/licensing/`;
+    const title = html.match(/<title>([^<]+)<\/title>/)?.[1] || "Metkagram";
+    const description = html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "Metkagram licensing and research use";
+
+    if (!html.includes("assets/social/metkagram-social-preview-1200x630.png")) {
+      html = html.replace(
+        "</head>",
+        `  <meta property="og:image" content="${SOCIAL_PREVIEW}">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="${SOCIAL_PREVIEW}">\n</head>`
+      );
+    }
+    if (!html.includes('rel="manifest" href="/assets/web/site.webmanifest"')) {
+      html = html.replace("</head>", '  <link rel="manifest" href="/assets/web/site.webmanifest">\n</head>');
+    }
+    if (!html.includes(`${canonical}#webpage`)) {
+      const structured = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: title,
+        description,
+        dateModified: RELEASE_DATE,
+        isPartOf: { "@id": `${SITE_URL}/#website` }
+      });
+      html = html.replace("</head>", `  <script type="application/ld+json">${structured}</script>\n</head>`);
+    }
+    if (!html.includes("data-share-bar")) {
+      const shareBar = `<div class="share-bar section-pad" data-share-bar data-share-url="${canonical}" data-share-title="${escapeAttribute(title)}" data-share-copied="${c.copied}"><button type="button" data-copy-link>${c.copyLink}</button><button type="button" data-print-page>${c.print}</button><button type="button" data-native-share hidden>${c.share}</button><span data-share-feedback aria-live="polite"></span></div>`;
+      html = html.replace("</main>", `${shareBar}\n  </main>`);
+    }
   }
 
   if (html.includes('<div class="footer-legal">') && !html.includes(`<div class="footer-legal"><a href="${licensingHref}">`)) {
@@ -69,4 +119,4 @@ for (const file of htmlFiles(DIST)) {
   fs.writeFileSync(file, html);
 }
 
-console.log(`Licensing metadata patched across ${htmlFiles(DIST).length} generated HTML files.`);
+console.log(`Licensing metadata patched across ${files.length} generated HTML files.`);
