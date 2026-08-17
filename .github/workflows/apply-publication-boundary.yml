@@ -1,0 +1,414 @@
+name: Apply publication boundary
+
+on:
+  push:
+    branches:
+      - agent/publication-layer
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout publication branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/publication-layer
+          fetch-depth: 1
+
+      - name: Reduce public corpus and remove private-core sources
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('data/metkagram-export')
+          docs_per_collection = 12
+          manifest = {"schemaVersion": 1, "documentsPerCollection": docs_per_collection, "collections": []}
+
+          for gram in ('enGram', 'deGram'):
+              for collection in ('dialogues', 'patterns', 'library'):
+                  base = root / gram / collection
+                  docs_path = base / 'documents.json'
+                  index_path = base / 'data.json'
+                  docs = json.loads(docs_path.read_text(encoding='utf-8'))
+                  index_data = json.loads(index_path.read_text(encoding='utf-8'))
+                  items = index_data[0]['items']
+                  selected_docs = docs[:docs_per_collection]
+                  selected_ids = {d.get('id') for d in selected_docs} | {d.get('refId') for d in selected_docs}
+                  selected_ids.discard(None)
+                  selected_items = [item for item in items if item.get('refId') in selected_ids]
+                  if len(selected_items) != len(selected_docs):
+                      selected_items = items[:docs_per_collection]
+                      item_refs = {item.get('refId') for item in selected_items}
+                      doc_refs = {d.get('id') for d in selected_docs} | {d.get('refId') for d in selected_docs}
+                      if not all((d.get('id') in item_refs or d.get('refId') in item_refs) for d in selected_docs):
+                          raise SystemExit(f'Unable to preserve index/document mapping for {gram}/{collection}')
+                  index_data[0]['items'] = selected_items
+                  docs_path.write_text(json.dumps(selected_docs, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+                  index_path.write_text(json.dumps(index_data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+                  manifest['collections'].append({"target": gram, "collection": collection, "documents": len(selected_docs)})
+
+          manifest['totalDocuments'] = sum(item['documents'] for item in manifest['collections'])
+          Path('data/publication-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
+
+          package = json.loads(Path('package.json').read_text(encoding='utf-8'))
+          package['scripts'].pop('annotations:audit', None)
+          package['scripts'].pop('annotations:prepare', None)
+          Path('package.json').write_text(json.dumps(package, indent=2) + '\n', encoding='utf-8')
+          PY
+
+          rm -rf annotation_service
+          rm -f data/advanced-patterns.json
+          rm -f data/pattern-annotations.json.gz
+          rm -f data/source-tag-rules.ts
+
+      - name: Document the publication model
+        run: |
+          cat > README.md <<'EOF'
+          # Metkagram
+
+          Metkagram is a research-oriented NLP and language-learning project built around a simple loop: make functional structure visible inside a real sentence, then reuse that structure as a pattern.
+
+          Production: https://metkagram.github.io
+
+          ## Public repository boundary
+
+          This repository is the **public publication layer**, not the canonical research workspace.
+
+          The public release deliberately contains enough material to inspect, cite and evaluate the method without publishing the complete research corpus or generation pipeline:
+
+          - 72 selected annotated documents, 12 from each English/German collection;
+          - 20 curated reasoning-enabled English/German pattern frames;
+          - public schemas, provenance, APIs, research documentation and website code;
+          - the hosted learning and research interface.
+
+          The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, linguistic heuristics, lexical rule tables and unpublished research assets are maintained in a private research core.
+
+          Public access does not grant permission to rebuild, mirror or redistribute the private/full system. See [LICENSE](LICENSE), [LICENSING.md](LICENSING.md) and [docs/PUBLICATION_BOUNDARY.md](docs/PUBLICATION_BOUNDARY.md).
+
+          ## Local development
+
+          Requirements: Node.js 20 or newer.
+
+          ```bash
+          npm install
+          npm run build
+          npm run dev
+          ```
+
+          Open `http://127.0.0.1:4173`.
+
+          ## Validation
+
+          ```bash
+          npm run verify
+          npm run test:e2e
+          ```
+
+          `npm run verify` builds the static site, validates the deliberately public content, runs unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
+
+          ## Public content sources
+
+          - `data/metkagram-export/` contains the selected annotation showcase only.
+          - `data/reasoning-frames/` contains the curated public reasoning-frame showcase.
+          - `data/study-sets.json` supplies taxonomy metadata; the public build exposes only study sets used by published frames.
+          - `data/publication-manifest.json` records the deliberate public sample boundary.
+
+          Generated public outputs include `/data/advanced-patterns.json` and `/api/v1/*`, but these represent the **public showcase**, not the private full curriculum.
+
+          ## Research and licensing
+
+          Metkagram is source-available, not open source or open data by default. Reading, linking and citation are welcome. Substantial reuse, derived corpora, model training, redistribution and commercial integration require scoped permission unless applicable law independently permits the use.
+
+          Research collaborations, institutional evaluation, data/API licensing and commercial proposals are welcome through the process described in [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md).
+
+          ## Important history note
+
+          Earlier repository revisions were public and, before 17 August 2026, were offered under CC BY-NC 4.0. The current publication boundary prevents future HEAD releases from continuing to expose the complete research workspace, but it does not pretend that previously published Git history never existed. History cleanup is a separate repository-maintenance operation and must not be attempted until the private snapshot has been independently verified.
+          EOF
+
+          cat > docs/PUBLICATION_BOUNDARY.md <<'EOF'
+          # Metkagram publication boundary
+
+          Effective: 17 August 2026
+
+          Metkagram uses a **private core → deliberate public release** model.
+
+          ## Private by default
+
+          Keep these in the private research core unless a specific release decision says otherwise:
+
+          - complete pattern curricula and bulk corpus exports;
+          - full annotated document collections;
+          - model-preparation and generated annotation datasets;
+          - annotation-engine implementation, heuristics and lexical rule tables;
+          - generation prompts, intermediate data and evaluation artifacts;
+          - unpublished experiments and research notes;
+          - implementation details whose release would materially reduce the work required to reproduce the complete system.
+
+          ## Suitable for the public publication layer
+
+          - selected examples that explain the method;
+          - a deliberately bounded annotation sample;
+          - curated reasoning frames and reusable language examples;
+          - schemas, provenance and interoperability examples for the public sample;
+          - research hypotheses, methodology and aggregate results approved for release;
+          - website/UI code needed to publish and inspect the released material.
+
+          ## Current release boundary
+
+          The GitHub Pages publication contains:
+
+          - 12 documents from each of six English/German source collections, 72 documents total;
+          - the curated reasoning-frame collection used by public Pattern Practice;
+          - only the study-set metadata required by those published frames.
+
+          `/data/advanced-patterns.json`, `/api/v1/patterns.json` and similar generated routes are full representations of the **public release only**. They are not exports of the private full corpus.
+
+          ## Publication gate
+
+          Before merging a public release:
+
+          1. Run `npm run verify`.
+          2. Confirm `tests/publication-boundary.test.mjs` passes.
+          3. Confirm no private-core path has reappeared.
+          4. Confirm every public dataset is intentionally bounded and documented.
+          5. Check licensing/provenance metadata remains attached to machine-readable exports.
+          6. Review whether a new file makes reconstruction of the private pipeline materially easier.
+
+          ## Forbidden public paths
+
+          The following source paths are intentionally absent from the current public HEAD:
+
+          - `data/advanced-patterns.json` (private full source; a bounded public file is generated at build time)
+          - `data/pattern-annotations.json.gz`
+          - `data/source-tag-rules.ts`
+          - `annotation_service/`
+
+          Do not restore them merely to make local development more convenient. Change the public build contract instead.
+
+          ## Git history
+
+          Removing material from the current branch does not erase prior public Git history or copies already obtained by third parties. Any history rewrite must be treated as a separate security/repository-maintenance operation and only performed after the private snapshot is verified and backed up.
+          EOF
+
+          cat > tests/publication-boundary.test.mjs <<'EOF'
+          import assert from "node:assert/strict";
+          import fs from "node:fs";
+          import path from "node:path";
+          import test from "node:test";
+          import { contentCounts, loadContent } from "../src/content.mjs";
+
+          const ROOT = process.cwd();
+
+          test("private-core sources are absent from the public repository", () => {
+            for (const relative of [
+              "data/advanced-patterns.json",
+              "data/pattern-annotations.json.gz",
+              "data/source-tag-rules.ts",
+              "annotation_service"
+            ]) {
+              assert.equal(fs.existsSync(path.join(ROOT, relative)), false, `${relative} must remain private`);
+            }
+          });
+
+          test("public content remains deliberately bounded", () => {
+            const content = loadContent();
+            const counts = contentCounts(content);
+            assert.equal(counts.annotatedDocuments, 72);
+            assert.equal(counts.advancedPatterns, 20);
+            assert.equal(content.studySets.sets.length, 6);
+            assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning?.move)).size, 9);
+            assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
+          });
+
+          test("publication manifest records every selected collection", () => {
+            const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "data/publication-manifest.json"), "utf8"));
+            assert.equal(manifest.totalDocuments, 72);
+            assert.equal(manifest.collections.length, 6);
+            assert.ok(manifest.collections.every((entry) => entry.documents === 12));
+          });
+          EOF
+
+      - name: Align tests with the bounded public release
+        run: |
+          cat > tests/reasoning.test.mjs <<'EOF'
+          import assert from "node:assert/strict";
+          import fs from "node:fs";
+          import path from "node:path";
+          import test from "node:test";
+          import { loadContent } from "../src/content.mjs";
+
+          const ROOT = process.cwd();
+          const FILES = ["clf-041-044.json", "clf-045-048.json", "clf-049-052.json", "clf-053-056.json", "clf-057-060.json", "clf-061-068.json"];
+
+          test("reasoning frame source and public assets stay identical", () => {
+            for (const name of FILES) {
+              const source = fs.readFileSync(path.join(ROOT, "data", "reasoning-frames", name), "utf8");
+              const published = fs.readFileSync(path.join(ROOT, "public", "data", "reasoning-frames", name), "utf8");
+              assert.equal(published, source, `${name} must stay identical in data and public assets`);
+            }
+          });
+
+          test("public reasoning showcase is complete enough to inspect the method", () => {
+            const reasoning = loadContent().advancedPatterns;
+            assert.equal(reasoning.length, 20);
+            assert.ok(reasoning.every((pattern) => pattern.reasoning?.move));
+            assert.equal(new Set(reasoning.map((pattern) => pattern.reasoning.move)).size, 9);
+            assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));
+            assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 2)));
+            assert.ok(reasoning.every((pattern) => pattern.quality?.translations_complete));
+            assert.ok(reasoning.every((pattern) => pattern.quality?.indexable));
+          });
+
+          test("practice enhancement still loads every published reasoning source", () => {
+            const app = fs.readFileSync(path.join(ROOT, "public", "assets", "app.js"), "utf8");
+            for (const name of FILES) assert.match(app, new RegExp(name.replaceAll(".", "\\.")));
+            assert.match(app, /dataReasoning|dataset\.reasoning/);
+            assert.match(app, /Reasoning move/);
+          });
+          EOF
+
+          cat > tests/connectivity.test.mjs <<'EOF'
+          import assert from "node:assert/strict";
+          import fs from "node:fs";
+          import path from "node:path";
+          import test from "node:test";
+
+          const DIST = path.join(process.cwd(), "dist");
+          const graph = JSON.parse(fs.readFileSync(path.join(DIST, "data", "connections.json"), "utf8"));
+          const patterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
+          const reasoning = JSON.parse(fs.readFileSync(path.join(DIST, "data", "reasoning-frames", "index.json"), "utf8"));
+
+          function html(...parts) {
+            return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
+          }
+
+          test("connectivity graph describes only the bounded public release", () => {
+            assert.equal(graph.schemaVersion, 1);
+            assert.equal(graph.sourceCounts.advancedPatterns, 20);
+            assert.equal(graph.sourceCounts.annotatedDocuments, 72);
+            assert.equal(graph.sourceCounts.reasoningFrames, 20);
+            assert.equal(patterns.length, 20);
+            assert.equal(reasoning.count, 20);
+            assert.equal(graph.relationCounts.reasoningMoveCount, 9);
+            assert.equal(Object.keys(graph.documents).length, 72);
+            assert.equal(Object.keys(graph.patterns).length, 20);
+          });
+
+          test("practice and a reasoning detail page expose server-rendered reasoning navigation", () => {
+            const practice = html("en", "practice");
+            assert.match(practice, /data-connectivity="reasoning-nav"/);
+            const id = patterns[0].id.toLowerCase();
+            const detail = html("en", "practice", id);
+            assert.match(detail, /id="reasoning-move"/);
+          });
+
+          test("all public connection references point to public patterns", () => {
+            const ids = new Set(Object.keys(graph.patterns));
+            for (const document of Object.values(graph.documents)) {
+              for (const relation of document.patterns) assert.ok(ids.has(relation.pattern_id));
+              for (const relation of document.sentence_links) assert.ok(ids.has(relation.pattern_id));
+            }
+            for (const relation of Object.values(graph.patterns)) {
+              for (const id of relation.related_patterns) assert.ok(ids.has(id));
+            }
+          });
+          EOF
+
+          cat > tests/quality.test.mjs <<'EOF'
+          import assert from "node:assert/strict";
+          import fs from "node:fs";
+          import path from "node:path";
+          import test from "node:test";
+
+          const DIST = path.join(process.cwd(), "dist");
+
+          test("quality report covers the bounded public pattern release", () => {
+            const report = JSON.parse(fs.readFileSync(path.join(DIST, "data", "quality-report.json"), "utf8"));
+            assert.equal(report.schemaVersion, 2);
+            assert.equal(report.patternCount, 20);
+            assert.equal(report.variationDuplicatePatternCount, 0);
+            assert.equal(report.nonIndexablePatternCount, 0);
+            assert.equal(report.rules.duplicateVariationsAllowed, false);
+          });
+
+          test("published pattern quality remains machine-readable", () => {
+            const patterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
+            assert.equal(patterns.length, 20);
+            assert.ok(patterns.every((pattern) => typeof pattern.quality?.has_variation_duplicates === "boolean"));
+            assert.ok(patterns.every((pattern) => !pattern.quality.has_variation_duplicates));
+          });
+          EOF
+
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path('tests/content.test.mjs')
+          text = p.read_text(encoding='utf-8')
+          text = re.sub(
+              r'test\("all source content validates and contains a complete C1 pattern curriculum", \(\) => \{.*?\n\}\);\n\nfunction langComplete',
+              '''test("source content validates and public practice stays deliberately bounded", () => {
+            const content = loadContent();
+            const counts = contentCounts(content);
+            assert.equal(counts.annotatedDocuments, 72);
+            assert.ok(counts.annotatedSentences > 0);
+            assert.equal(counts.advancedPatterns, 20);
+            assert.deepEqual(content.studySets.sets.map((set) => set.id).sort(), ["CAU", "CLR", "CND", "EVD", "NEG", "PRB"]);
+            assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
+            assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));
+            assert.equal(new Set(content.advancedPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
+            assert.ok(content.advancedPatterns.every((pattern) => pattern.quality?.translations_complete));
+            for (const target of Object.values(content.collections)) {
+              for (const collection of Object.values(target)) assert.equal(collection.documents.length, 12);
+            }
+          });
+
+          function langComplete''',
+              text,
+              flags=re.S
+          )
+          text = text.replace('assert.match(en, /25,116/);', 'assert.match(en, /Metkagram/);')
+          text = text.replace('assert.match(sitemap, /https:\\/\\/metkagram\\.github\\.io\\/en\\/practice\\/con001\\//);', 'assert.match(sitemap, /https:\\/\\/metkagram\\.github\\.io\\/en\\/practice\\/clf041\\//);')
+          text = text.replace('assert.ok(files.length >= 4988, "expected the complete generated page set");', 'assert.ok(files.length >= 200, "expected the bounded generated page set");')
+          text = text.replace('assert.ok(inventory.pageCount >= 11500);', 'assert.ok(inventory.pageCount >= 200);')
+          text = text.replace('"/en/support/", "/en/practice/con001/"', '"/en/support/", "/en/practice/clf041/"')
+          text = re.sub(
+              r'test\("German pattern markup renders gender overlines and past markers only in German", \(\) => \{.*?\n\}\);\n\ntest\("mobile apps',
+              '''test("public reasoning pattern pages render both target languages", () => {
+            const html = fs.readFileSync(path.join(DIST, "en/practice/clf041/index.html"), "utf8");
+            assert.match(html, /data-target-language="en"/);
+            assert.match(html, /data-target-language="de"/);
+            assert.match(html, /id="reasoning-move"/);
+          });
+
+          test("mobile apps''',
+              text,
+              flags=re.S
+          )
+          p.write_text(text, encoding='utf-8')
+
+          p = Path('tests/api.test.mjs')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace('assert.ok(patterns.data.length >= 1000, `expected at least 1000 patterns, got ${patterns.data.length}`);', 'assert.strictEqual(patterns.data.length, 20);')
+          text = text.replace('assert.ok(page.pagination.total >= 1000);', 'assert.strictEqual(page.pagination.total, 20);')
+          text = text.replace('assert.strictEqual(search.data.documents.length, 2240);', 'assert.strictEqual(search.data.documents.length, 72);')
+          text = text.replace('assert.ok(report.patternCount >= 1000);', 'assert.strictEqual(report.patternCount, 20);')
+          p.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Remove this one-shot migration workflow
+        run: rm .github/workflows/apply-publication-boundary.yml
+
+      - name: Commit publication boundary
+        run: |
+          git config user.name "metkagram-publication-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Separate public publication layer from private research core"
+          git push origin HEAD:agent/publication-layer
