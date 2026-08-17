@@ -28,20 +28,36 @@ if (dataNode && root) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 
-  const literalSegments = (formula = "") => String(formula)
-    .replaceAll("**", "")
-    .split(/\[[^\]]+\]|\{[^}]+\}|<[^>]+>/g)
-    .flatMap((part) => part.split(/\s+(?:\+|\/|\|)\s+|\s*→\s*/g))
-    .map((part) => part
-      .replace(/^[\s,;:.!?()\-–—+/|]+|[\s,;:.!?()\-–—+/|]+$/g, "")
-      .replaceAll(/\s+/g, " ")
-      .trim())
-    .filter((part) => part.length >= 2 && /[\p{L}\p{N}]/u.test(part));
+  const isMetalinguistic = (input) => {
+    const config = reasoningRules?.meta_cues?.[language];
+    if (!config) return false;
+    try {
+      return new RegExp(config.pattern, config.flags).test(input);
+    } catch {
+      return false;
+    }
+  };
+
+  const literalSegments = (formula = "") => {
+    const stop = new Set(reasoningRules?.stop_segments || []);
+    return String(formula)
+      .replaceAll("**", "")
+      .split(/\[[^\]]+\]|\{[^}]+\}|<[^>]+>/g)
+      .flatMap((part) => part.split(/\s+(?:\+|\/|\|)\s+|\s*→\s*/g))
+      .map((part) => part
+        .replace(/^[\s,;:.!?()\-–—+/|]+|[\s,;:.!?()\-–—+/|]+$/g, "")
+        .replaceAll(/\s+/g, " ")
+        .trim())
+      .filter((part) => {
+        const normalized = normalize(part);
+        return normalized && !stop.has(normalized) && /[\p{L}\p{N}]/u.test(normalized);
+      });
+  };
 
   const recordFor = (pattern) => pattern.langs.find((item) => item.lang === language);
 
   const classifyReasoning = (input) => {
-    if (!reasoningRules?.rules?.length) return [];
+    if (!reasoningRules?.rules?.length || isMetalinguistic(input)) return [];
     const minConfidence = reasoningRules.min_confidence || 0.9;
     const genericConditionIds = new Set(reasoningRules.generic_condition_rule_ids || []);
     let matches = reasoningRules.rules
@@ -59,16 +75,28 @@ if (dataNode && root) {
     if (hasStrongTest) matches = matches.filter((item) => !genericConditionIds.has(item.id));
 
     const selected = [];
+    const seenPatterns = new Set();
+    const maxLinks = reasoningRules.max_links_per_sentence || 3;
     for (const item of matches) {
-      if (selected.some((current) => current.reasoning_move === item.reasoning_move)) continue;
+      if (seenPatterns.has(item.pattern_id)) continue;
+      seenPatterns.add(item.pattern_id);
       selected.push(item);
-      if (selected.length >= 3) break;
+      if (selected.length >= maxLinks) break;
     }
     return selected;
   };
 
+  const hasStrongLiteralEvidence = (hits, exampleMatch) => {
+    if (exampleMatch || hits.length >= 2) return true;
+    return hits.some((segment) => {
+      const normalized = normalize(segment);
+      return normalized.split(/\s+/).filter(Boolean).length >= 2 && normalized.length >= 8;
+    });
+  };
+
   const rank = (input) => {
     const normalizedText = normalize(input);
+    if (!normalizedText || isMetalinguistic(input)) return [];
     const reasoningByPattern = new Map(classifyReasoning(input).map((item) => [item.pattern_id, item]));
     return patterns
       .map((pattern) => {
@@ -82,6 +110,7 @@ if (dataNode && root) {
           return normalized.length >= 8 && (normalizedText.includes(normalized) || normalized.includes(normalizedText));
         });
         const reasoningMatch = reasoningByPattern.get(pattern.id) || null;
+        if (!reasoningMatch && !hasStrongLiteralEvidence(hits, exampleMatch)) return null;
         const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalize(segment).length / 10), 0)
           + (exampleMatch ? 10 : 0)
           + (hits.length > 1 ? 2 : 0);
