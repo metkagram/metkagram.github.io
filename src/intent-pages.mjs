@@ -31,6 +31,7 @@ function intentCard(locale, intent, patterns) {
     <p class="eyebrow">${localized(locale, "Reasoning move", "Логическая операция")} · ${escapeHtml(intent.move)}</p>
     <h2>${escapeHtml(titleFor(intent, locale))}</h2>
     <p class="lede">${escapeHtml(descriptionFor(intent, locale))}</p>
+    <p><a class="text-link" href="/${locale}/learn/${intent.id}/">${localized(locale, "Open the learner task guide", "Открыть учебную страницу задачи")} <span aria-hidden="true">→</span></a></p>
     <p><strong>${localized(locale, "You might think", "Так можно сформулировать намерение")}:</strong> ${examples.map((item) => `<code>${escapeHtml(item)}</code>`).join(" · ")}</p>
     <div class="pattern-index">${patternLinks}</div>
   </article>`;
@@ -63,6 +64,7 @@ export function intentDiscoveryPage(locale, content) {
     <h1>${escapeHtml(title)}</h1>
     <p class="lede">${escapeHtml(description)}</p>
     <p>${localized(locale, "You do not need to know the grammar label first. Start with the job the sentence has to perform.", "Не обязательно сначала знать название грамматической конструкции. Начните с задачи, которую должна выполнить фраза.")}</p>
+    <p><a class="primary-link" href="/${locale}/learn/">${localized(locale, "Browse dedicated learner task pages", "Открыть отдельные страницы речевых задач")} <span aria-hidden="true">→</span></a></p>
   </section>
   <section class="section-pad ruled">
     <p class="eyebrow">${localized(locale, "Browse by operation", "По операциям")}</p>
@@ -79,7 +81,7 @@ export function intentDiscoveryPage(locale, content) {
       "@type": "ListItem",
       position: index + 1,
       name: titleFor(intent, locale),
-      url: `${SITE_URL}${pathname}#intent-${intent.id}`
+      url: `${SITE_URL}/${locale}/learn/${intent.id}/`
     }))
   };
 
