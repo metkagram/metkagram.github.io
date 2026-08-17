@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { evaluatePracticeStructure, literalPracticeSegments, nextPracticeReview } from '../public/assets/practice-loop-core.js';
@@ -51,4 +53,22 @@ test('schedules needs-work sooner and expands successful review intervals', () =
   const laterSuccess = nextPracticeReview({ intervalDays: 6, streak: 2 }, 'got-it', now);
   assert.equal(laterSuccess.intervalDays, 12);
   assert.equal(laterSuccess.streak, 3);
+});
+
+test('production build wires practice and Lens bridge into generated pages', (t) => {
+  const dist = path.resolve('dist');
+  const practiceIndex = path.join(dist, 'en', 'practice', 'index.html');
+  if (!fs.existsSync(practiceIndex)) return t.skip('requires npm run build first');
+
+  assert.match(fs.readFileSync(practiceIndex, 'utf8'), /\/assets\/practice-loop\.js/);
+
+  const patternRoot = path.join(dist, 'en', 'practice');
+  const patternDir = fs.readdirSync(patternRoot, { withFileTypes: true })
+    .find((entry) => entry.isDirectory() && entry.name !== 'set');
+  assert.ok(patternDir, 'expected at least one generated pattern page');
+  const patternHtml = fs.readFileSync(path.join(patternRoot, patternDir.name, 'index.html'), 'utf8');
+  assert.match(patternHtml, /\/assets\/practice-loop\.js/);
+
+  const lensHtml = fs.readFileSync(path.join(dist, 'en', 'lens', 'index.html'), 'utf8');
+  assert.match(lensHtml, /\/assets\/lens-practice-bridge\.js/);
 });

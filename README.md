@@ -30,6 +30,14 @@ The production build derives a bounded graph over the public reasoning patterns.
 
 The graph supports related-pattern navigation on pattern pages and is published at `/data/pattern-graph.json` and `/api/v1/pattern-graph.json`. See [docs/PATTERN_GRAPH.md](docs/PATTERN_GRAPH.md).
 
+### Active practice
+
+Each published pattern now supports a local retrieval loop. A learner writes a new English or German example before feedback, receives a conservative signal about whether the published structural frame is visible, self-rates the retrieval and schedules the same stable pattern ID for later review.
+
+Progress is stored only in the browser under `metkagram:practice:v1`; no account or server-side learner profile is required. The Practice index shows a local due-review queue, and Pattern Lens links directly into the practice section. See [docs/PRACTICE_LOOP.md](docs/PRACTICE_LOOP.md).
+
+The deterministic checker does not claim to grade complete grammar, naturalness or meaning. It is a retrieval aid around the canonical pattern object, not a replacement for linguistic feedback.
+
 ### AI tutors and agents
 
 AI is treated as a tutor/interface, not as the Metkagram curriculum. Agents can use the public pattern API and Pattern Graph to choose what a learner should practise, explain a pattern in the learner's context, check an attempt and revisit the same stable learning object later.
@@ -43,6 +51,8 @@ The existing `/api/v1/mcp-server.json` is a **static adapter/tool manifest**, no
 The current sequence is:
 
 **Pattern Lens → Pattern Graph → active practice loop → first pilot study → agent/API integrations → teacher/research/EdTech pilots**
+
+The first three product layers are now implemented in the public web surface. The next major milestone is a small preregistered pilot rather than another broad application layer.
 
 New features should strengthen this loop rather than create a parallel general-purpose learning application.
 
@@ -61,6 +71,7 @@ The public release deliberately contains enough material to inspect, cite and ev
 - a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer;
 - public sentence-to-reasoning practice links generated only from the bounded published corpus;
 - a taxonomy-derived public Pattern Graph built only from published metadata;
+- local-first active retrieval and review around stable public pattern IDs;
 - public schemas, provenance, APIs, research documentation and website code;
 - the hosted learning, Pattern Lens and research interfaces.
 
@@ -89,7 +100,7 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` builds the static site, validates the deliberately public content, generates public-learning links, Pattern Lens and Pattern Graph outputs, runs reasoning and retrieval regression benchmarks, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
+`npm run verify` builds the static site, validates the deliberately public content, generates public-learning links, Pattern Lens and Pattern Graph outputs, wires the active-practice runtime, runs reasoning/retrieval/practice regression tests, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
 
 ## Public content sources
 
