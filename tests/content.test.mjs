@@ -115,7 +115,7 @@ test("method routes keep the learning loop and annotation readable without JavaS
   assert.match(en, /role="tooltip"/);
   assert.match(en, /aria-describedby="method-tag-/);
   assert.match(ru, /Система, а не набор ярлыков/);
-  assert.match(ru, /Открытый корпус с функциональной разметкой на уровне слов/);
+  assert.match(ru, /Публично доступный для изучения корпус с функциональной разметкой на уровне слов/);
   assert.match(ru, /Фраза остаётся живой\. Структура становится видимой\./);
 });
 
