@@ -1,0 +1,578 @@
+[
+  {
+    "id": "XPRCGR001",
+    "title_ru": "Remember doing vs remember to do",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "logic": "contrastive grammar choice",
+    "metaphor_ru": "Различайте воспоминание о прошлом действии и необходимость не забыть сделать действие.",
+    "practice": {"mode": "contrast", "contrast": "remember doing ↔ remember to do"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I remember [doing X], but I remembered to [do Y].",
+        "example": "I remember **sending** the draft, but I also remembered to **notify** the reviewers.",
+        "translation": "Я помню, как отправил черновик, и я также не забыл уведомить проверяющих.",
+        "examples": [
+          {"text": "She remembers **meeting** the client, but she remembered to **send** the minutes afterwards.", "translation_ru": "Она помнит встречу с клиентом и не забыла после неё отправить протокол."},
+          {"text": "I remember **changing** the setting, but I forgot to **document** the reason.", "translation_ru": "Я помню, как изменил настройку, но забыл задокументировать причину."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich erinnere mich daran, [X getan zu haben], aber ich habe daran gedacht, [Y zu tun].",
+        "example": "Ich erinnere mich daran, den Entwurf **geschickt zu haben**, aber ich habe auch daran gedacht, die Prüfer **zu informieren**.",
+        "translation": "Я помню, как отправил черновик, и я также не забыл уведомить проверяющих.",
+        "examples": [
+          {"text": "Sie erinnert sich daran, den Kunden **getroffen zu haben**, und sie hat daran gedacht, danach das Protokoll **zu senden**.", "translation_ru": "Она помнит встречу с клиентом и не забыла после неё отправить протокол."},
+          {"text": "Ich erinnere mich daran, die Einstellung **geändert zu haben**, aber ich habe vergessen, den Grund **zu dokumentieren**.", "translation_ru": "Я помню, как изменил настройку, но забыл задокументировать причину."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Practical contrast grammar extension."}
+  },
+  {
+    "id": "XPRCGR002",
+    "title_ru": "Used to vs be used to",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "logic": "contrastive grammar choice",
+    "metaphor_ru": "Отделяйте прошлую привычку от состояния привычности сейчас.",
+    "practice": {"mode": "contrast", "contrast": "used to do ↔ be used to doing"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[Subject] used to [do X], but is now used to [doing Y].",
+        "example": "The team **used to review** everything manually, but it is now **used to working** with automated checks.",
+        "translation": "Раньше команда проверяла всё вручную, а теперь привыкла работать с автоматическими проверками.",
+        "examples": [
+          {"text": "I **used to work** from the office every day, but I am now **used to joining** remotely.", "translation_ru": "Раньше я каждый день работал из офиса, а теперь привык подключаться удалённо."},
+          {"text": "She **used to avoid** large meetings, but she is now **used to presenting** to senior stakeholders.", "translation_ru": "Раньше она избегала больших встреч, а теперь привыкла выступать перед руководителями."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Früher [tat X], aber inzwischen ist [Subjekt] daran gewöhnt, [Y zu tun].",
+        "example": "Früher **prüfte** das Team alles manuell, aber inzwischen ist es daran **gewöhnt, mit automatisierten Prüfungen zu arbeiten**.",
+        "translation": "Раньше команда проверяла всё вручную, а теперь привыкла работать с автоматическими проверками.",
+        "examples": [
+          {"text": "Früher **arbeitete** ich jeden Tag im Büro, aber inzwischen bin ich daran **gewöhnt, remote teilzunehmen**.", "translation_ru": "Раньше я каждый день работал из офиса, а теперь привык подключаться удалённо."},
+          {"text": "Früher **vermied** sie große Besprechungen, aber inzwischen ist sie daran **gewöhnt, vor Führungskräften zu präsentieren**.", "translation_ru": "Раньше она избегала больших встреч, а теперь привыкла выступать перед руководителями."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Practical contrast grammar extension."}
+  },
+  {
+    "id": "XPRCGR003",
+    "title_ru": "Mustn't vs don't have to",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "logic": "contrastive modality",
+    "metaphor_ru": "Не путайте запрет с отсутствием необходимости.",
+    "practice": {"mode": "contrast", "contrast": "mustn't ↔ don't have to"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "You mustn't [do X]; you don't have to [do Y].",
+        "example": "You **mustn't share** the production data, but you **don't have to anonymise** the synthetic sample.",
+        "translation": "Нельзя передавать продуктивные данные, но синтетический пример не обязательно анонимизировать.",
+        "examples": [
+          {"text": "We **mustn't skip** the approval, but we **don't have to repeat** the full review.", "translation_ru": "Нельзя пропускать согласование, но не обязательно повторять всю проверку."},
+          {"text": "You **mustn't delete** the audit log, but you **don't have to keep** temporary debug files.", "translation_ru": "Нельзя удалять журнал аудита, но временные отладочные файлы хранить не обязательно."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Du darfst [X] nicht tun; du musst [Y] nicht tun.",
+        "example": "Du **darfst** die Produktivdaten **nicht weitergeben**, aber du **musst** das synthetische Beispiel **nicht anonymisieren**.",
+        "translation": "Нельзя передавать продуктивные данные, но синтетический пример не обязательно анонимизировать.",
+        "examples": [
+          {"text": "Wir **dürfen** die Freigabe **nicht überspringen**, aber wir **müssen** die gesamte Prüfung **nicht wiederholen**.", "translation_ru": "Нельзя пропускать согласование, но не обязательно повторять всю проверку."},
+          {"text": "Du **darfst** das Audit-Protokoll **nicht löschen**, aber du **musst** temporäre Debug-Dateien **nicht behalten**.", "translation_ru": "Нельзя удалять журнал аудита, но временные отладочные файлы хранить не обязательно."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Practical contrast grammar extension."}
+  },
+  {
+    "id": "XPRSPK001",
+    "title_ru": "The thing is...",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "logic": "spoken explanation",
+    "metaphor_ru": "Мягко введите главное объяснение вместо резкого возражения.",
+    "practice": {"mode": "produce", "cue": "Introduce the real issue naturally."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The thing is, [X], so [Y].",
+        "example": "**The thing is**, the data is incomplete, **so** any conclusion would be premature.",
+        "translation": "Дело в том, что данные неполные, поэтому любой вывод был бы преждевременным.",
+        "examples": [
+          {"text": "**The thing is**, we only tested one scenario, **so** we do not know how the rule behaves elsewhere.", "translation_ru": "Дело в том, что мы проверили только один сценарий, поэтому не знаем, как правило ведёт себя в других случаях."},
+          {"text": "**The thing is**, the deadline moved, **so** the original plan no longer fits.", "translation_ru": "Дело в том, что срок изменился, поэтому исходный план больше не подходит."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Sache ist die: [X], deshalb [Y].",
+        "example": "**Die Sache ist die:** Die Daten sind unvollständig, **deshalb** wäre jede Schlussfolgerung verfrüht.",
+        "translation": "Дело в том, что данные неполные, поэтому любой вывод был бы преждевременным.",
+        "examples": [
+          {"text": "**Die Sache ist die:** Wir haben nur ein Szenario getestet, **deshalb** wissen wir nicht, wie sich die Regel anderswo verhält.", "translation_ru": "Дело в том, что мы проверили только один сценарий, поэтому не знаем, как правило ведёт себя в других случаях."},
+          {"text": "**Die Sache ist die:** Der Termin wurde verschoben, **deshalb** passt der ursprüngliche Plan nicht mehr.", "translation_ru": "Дело в том, что срок изменился, поэтому исходный план больше не подходит."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Spoken grammar extension."}
+  },
+  {
+    "id": "XPRSPK002",
+    "title_ru": "It's just that...",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "logic": "spoken qualification",
+    "metaphor_ru": "Смягчите объяснение, когда вы не хотите звучать как прямое отрицание.",
+    "practice": {"mode": "produce", "cue": "Add a soft constraint or reservation."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It's just that [X], which makes [Y] difficult.",
+        "example": "**It's just that** we do not have the source file yet, **which makes** validation difficult.",
+        "translation": "Просто у нас пока нет исходного файла, из-за чего проверка затруднена.",
+        "examples": [
+          {"text": "**It's just that** the owner is away today, **which makes** an immediate decision difficult.", "translation_ru": "Просто ответственного сегодня нет, поэтому принять решение сразу сложно."},
+          {"text": "**It's just that** the examples are too similar, **which makes** the distinction difficult to learn.", "translation_ru": "Просто примеры слишком похожи, из-за чего различие трудно выучить."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es ist nur so, dass [X], was [Y] erschwert.",
+        "example": "**Es ist nur so, dass** uns die Quelldatei noch fehlt, **was** die Validierung **erschwert**.",
+        "translation": "Просто у нас пока нет исходного файла, из-за чего проверка затруднена.",
+        "examples": [
+          {"text": "**Es ist nur so, dass** die verantwortliche Person heute nicht da ist, **was** eine sofortige Entscheidung **erschwert**.", "translation_ru": "Просто ответственного сегодня нет, поэтому принять решение сразу сложно."},
+          {"text": "**Es ist nur so, dass** die Beispiele zu ähnlich sind, **was** das Lernen des Unterschieds **erschwert**.", "translation_ru": "Просто примеры слишком похожи, из-за чего различие трудно выучить."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Spoken grammar extension."}
+  },
+  {
+    "id": "XPRSPK003",
+    "title_ru": "What I was going to say was...",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "logic": "spoken repair",
+    "metaphor_ru": "Вернитесь к своей мысли после перебивания или ухода в сторону.",
+    "practice": {"mode": "produce", "cue": "Recover the point you were about to make."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "What I was going to say was [X], not [Y].",
+        "example": "**What I was going to say was** that we need a smaller test, **not** another full rollout.",
+        "translation": "Я хотел сказать, что нам нужен меньший тест, а не ещё один полный запуск.",
+        "examples": [
+          {"text": "**What I was going to say was** that the issue is timing, **not** ownership.", "translation_ru": "Я хотел сказать, что проблема в сроках, а не в ответственности."},
+          {"text": "**What I was going to say was** that we should compare the two cases, **not** merge them.", "translation_ru": "Я хотел сказать, что нужно сравнить два случая, а не объединять их."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Was ich sagen wollte, war [X], nicht [Y].",
+        "example": "**Was ich sagen wollte, war**, dass wir einen kleineren Test brauchen, **nicht** noch einen vollständigen Rollout.",
+        "translation": "Я хотел сказать, что нам нужен меньший тест, а не ещё один полный запуск.",
+        "examples": [
+          {"text": "**Was ich sagen wollte, war**, dass das Problem beim Timing liegt, **nicht** bei der Zuständigkeit.", "translation_ru": "Я хотел сказать, что проблема в сроках, а не в ответственности."},
+          {"text": "**Was ich sagen wollte, war**, dass wir die beiden Fälle vergleichen sollten, **nicht** sie zusammenführen.", "translation_ru": "Я хотел сказать, что нужно сравнить два случая, а не объединять их."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Spoken grammar extension."}
+  },
+  {
+    "id": "XPRINT001",
+    "title_ru": "Войти в разговор",
+    "group_id": "INT",
+    "set_id": "INT",
+    "logic": "turn entry",
+    "metaphor_ru": "Войдите в обсуждение без резкого перебивания.",
+    "practice": {"mode": "interaction", "move": "enter turn"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Can I come in here? I think [X].",
+        "example": "**Can I come in here?** I think we are mixing two separate problems.",
+        "translation": "Можно я здесь подключусь? Мне кажется, мы смешиваем две разные проблемы.",
+        "examples": [
+          {"text": "**Can I come in here?** I think the second option changes the risk profile.", "translation_ru": "Можно я здесь подключусь? Мне кажется, второй вариант меняет профиль риска."},
+          {"text": "**Can I come in here?** I think we already have enough evidence for the first decision.", "translation_ru": "Можно я здесь подключусь? Мне кажется, для первого решения у нас уже достаточно данных."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Darf ich kurz einhaken? Ich denke, [X].",
+        "example": "**Darf ich kurz einhaken?** Ich denke, wir vermischen zwei verschiedene Probleme.",
+        "translation": "Можно я здесь подключусь? Мне кажется, мы смешиваем две разные проблемы.",
+        "examples": [
+          {"text": "**Darf ich kurz einhaken?** Ich denke, die zweite Option verändert das Risikoprofil.", "translation_ru": "Можно я здесь подключусь? Мне кажется, второй вариант меняет профиль риска."},
+          {"text": "**Darf ich kurz einhaken?** Ich denke, für die erste Entscheidung haben wir bereits genügend Belege.", "translation_ru": "Можно я здесь подключусь? Мне кажется, для первого решения у нас уже достаточно данных."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Conversation interaction extension."}
+  },
+  {
+    "id": "XPRINT002",
+    "title_ru": "Не потерять важное перед переходом",
+    "group_id": "INT",
+    "set_id": "INT",
+    "logic": "turn management",
+    "metaphor_ru": "Остановите переход к новой теме, чтобы закрыть важный вопрос.",
+    "practice": {"mode": "interaction", "move": "hold topic"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Before we move on, can we clarify [X]?",
+        "example": "**Before we move on, can we clarify** who owns the final approval?",
+        "translation": "Прежде чем двигаться дальше, можем уточнить, кто отвечает за финальное согласование?",
+        "examples": [
+          {"text": "**Before we move on, can we clarify** whether this rule applies to migrated records?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, распространяется ли это правило на мигрированные записи?"},
+          {"text": "**Before we move on, can we clarify** what evidence would change the decision?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, какие данные изменили бы решение?"}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Bevor wir weitermachen, können wir [X] klären?",
+        "example": "**Bevor wir weitermachen, können wir klären**, wer für die endgültige Freigabe verantwortlich ist?",
+        "translation": "Прежде чем двигаться дальше, можем уточнить, кто отвечает за финальное согласование?",
+        "examples": [
+          {"text": "**Bevor wir weitermachen, können wir klären**, ob diese Regel für migrierte Datensätze gilt?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, распространяется ли это правило на мигрированные записи?"},
+          {"text": "**Bevor wir weitermachen, können wir klären**, welche Belege die Entscheidung ändern würden?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, какие данные изменили бы решение?"}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Conversation interaction extension."}
+  },
+  {
+    "id": "XPRINT003",
+    "title_ru": "Подхватить предыдущую мысль",
+    "group_id": "INT",
+    "set_id": "INT",
+    "logic": "turn continuation",
+    "metaphor_ru": "Свяжите свою реплику с тем, что только что сказал собеседник.",
+    "practice": {"mode": "interaction", "move": "pick up thread"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Just to pick up on that, [X].",
+        "example": "**Just to pick up on that**, the same risk appears in the second workflow.",
+        "translation": "Если продолжить эту мысль, тот же риск появляется и во втором процессе.",
+        "examples": [
+          {"text": "**Just to pick up on that**, we should check whether the assumption still holds after migration.", "translation_ru": "Если продолжить эту мысль, нам стоит проверить, остаётся ли предположение верным после миграции."},
+          {"text": "**Just to pick up on that**, the user problem may be discoverability rather than missing functionality.", "translation_ru": "Если продолжить эту мысль, проблема пользователя может быть в обнаружении функции, а не в её отсутствии."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Um daran anzuknüpfen: [X].",
+        "example": "**Um daran anzuknüpfen:** Dasselbe Risiko zeigt sich auch im zweiten Ablauf.",
+        "translation": "Если продолжить эту мысль, тот же риск появляется и во втором процессе.",
+        "examples": [
+          {"text": "**Um daran anzuknüpfen:** Wir sollten prüfen, ob die Annahme nach der Migration noch gilt.", "translation_ru": "Если продолжить эту мысль, нам стоит проверить, остаётся ли предположение верным после миграции."},
+          {"text": "**Um daran anzuknüpfen:** Das Nutzerproblem könnte eher die Auffindbarkeit als fehlende Funktionalität sein.", "translation_ru": "Если продолжить эту мысль, проблема пользователя может быть в обнаружении функции, а не в её отсутствии."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Conversation interaction extension."}
+  },
+  {
+    "id": "XPRREG001",
+    "title_ru": "Несогласие: разговорно → профессионально",
+    "group_id": "REG",
+    "set_id": "REG",
+    "logic": "register shift",
+    "metaphor_ru": "Сохраните смысл несогласия, меняя степень прямоты.",
+    "practice": {"mode": "transform", "from": "casual", "to": "professional"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I don't think [X]. → I'm not sure [X]. → There are reasons to question whether [X].",
+        "example": "I don't think this will scale. → I'm not sure this will scale. → There are reasons to question whether this approach will scale.",
+        "translation": "Не думаю, что это масштабируется. → Не уверен, что это масштабируется. → Есть основания сомневаться, сможет ли этот подход масштабироваться.",
+        "examples": [
+          {"text": "I don't think the estimate is realistic. → I'm not sure the estimate is realistic. → There are reasons to question whether the estimate is realistic.", "translation_ru": "Не думаю, что оценка реалистична. → Не уверен, что оценка реалистична. → Есть основания сомневаться в реалистичности оценки."},
+          {"text": "I don't think that assumption holds. → I'm not sure that assumption holds. → There are reasons to question whether that assumption still holds.", "translation_ru": "Не думаю, что это предположение верно. → Не уверен, что оно верно. → Есть основания сомневаться, остаётся ли это предположение верным."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich glaube nicht, dass [X]. → Ich bin nicht sicher, ob [X]. → Es gibt Gründe zu bezweifeln, dass [X].",
+        "example": "Ich glaube nicht, dass das skaliert. → Ich bin nicht sicher, ob das skaliert. → Es gibt Gründe zu bezweifeln, dass dieser Ansatz skaliert.",
+        "translation": "Не думаю, что это масштабируется. → Не уверен, что это масштабируется. → Есть основания сомневаться, сможет ли этот подход масштабироваться.",
+        "examples": [
+          {"text": "Ich glaube nicht, dass die Schätzung realistisch ist. → Ich bin nicht sicher, ob die Schätzung realistisch ist. → Es gibt Gründe zu bezweifeln, dass die Schätzung realistisch ist.", "translation_ru": "Не думаю, что оценка реалистична. → Не уверен, что оценка реалистична. → Есть основания сомневаться в реалистичности оценки."},
+          {"text": "Ich glaube nicht, dass diese Annahme gilt. → Ich bin nicht sicher, ob diese Annahme gilt. → Es gibt Gründe zu bezweifeln, dass diese Annahme noch gilt.", "translation_ru": "Не думаю, что это предположение верно. → Не уверен, что оно верно. → Есть основания сомневаться, остаётся ли это предположение верным."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Register shifting extension."}
+  },
+  {
+    "id": "XPRREG002",
+    "title_ru": "Просьба: прямо → вежливо → формально",
+    "group_id": "REG",
+    "set_id": "REG",
+    "logic": "register shift",
+    "metaphor_ru": "Меняйте степень вежливости, не меняя требуемого действия.",
+    "practice": {"mode": "transform", "from": "direct", "to": "formal"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Can you [X]? → Could you [X]? → I would appreciate it if you could [X].",
+        "example": "Can you check the file? → Could you check the file? → I would appreciate it if you could check the file.",
+        "translation": "Можешь проверить файл? → Не мог бы ты проверить файл? → Буду признателен, если вы сможете проверить файл.",
+        "examples": [
+          {"text": "Can you confirm the date? → Could you confirm the date? → I would appreciate it if you could confirm the date.", "translation_ru": "Можешь подтвердить дату? → Не мог бы ты подтвердить дату? → Буду признателен, если вы сможете подтвердить дату."},
+          {"text": "Can you send the evidence? → Could you send the evidence? → I would appreciate it if you could send the supporting evidence.", "translation_ru": "Можешь прислать данные? → Не мог бы ты прислать данные? → Буду признателен, если вы сможете прислать подтверждающие данные."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Kannst du [X]? → Könntest du [X]? → Ich wäre Ihnen dankbar, wenn Sie [X] könnten.",
+        "example": "Kannst du die Datei prüfen? → Könntest du die Datei prüfen? → Ich wäre Ihnen dankbar, wenn Sie die Datei prüfen könnten.",
+        "translation": "Можешь проверить файл? → Не мог бы ты проверить файл? → Буду признателен, если вы сможете проверить файл.",
+        "examples": [
+          {"text": "Kannst du das Datum bestätigen? → Könntest du das Datum bestätigen? → Ich wäre Ihnen dankbar, wenn Sie das Datum bestätigen könnten.", "translation_ru": "Можешь подтвердить дату? → Не мог бы ты подтвердить дату? → Буду признателен, если вы сможете подтвердить дату."},
+          {"text": "Kannst du die Belege senden? → Könntest du die Belege senden? → Ich wäre Ihnen dankbar, wenn Sie die Belege senden könnten.", "translation_ru": "Можешь прислать данные? → Не мог бы ты прислать данные? → Буду признателен, если вы сможете прислать подтверждающие данные."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Register shifting extension."}
+  },
+  {
+    "id": "XPRREG003",
+    "title_ru": "Необходимость: жёстко → нейтрально → осторожно",
+    "group_id": "REG",
+    "set_id": "REG",
+    "logic": "register shift",
+    "metaphor_ru": "Регулируйте силу рекомендации и обязательности.",
+    "practice": {"mode": "transform", "from": "strong", "to": "qualified"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "We need to [X]. → We should consider [X]. → It may be necessary to [X].",
+        "example": "We need to delay the launch. → We should consider delaying the launch. → It may be necessary to delay the launch.",
+        "translation": "Нам нужно отложить запуск. → Нам стоит рассмотреть перенос запуска. → Возможно, запуск потребуется отложить.",
+        "examples": [
+          {"text": "We need to repeat the test. → We should consider repeating the test. → It may be necessary to repeat the test.", "translation_ru": "Нам нужно повторить тест. → Нам стоит рассмотреть повтор теста. → Возможно, тест потребуется повторить."},
+          {"text": "We need to change the rule. → We should consider changing the rule. → It may be necessary to change the rule.", "translation_ru": "Нам нужно изменить правило. → Нам стоит рассмотреть изменение правила. → Возможно, правило потребуется изменить."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wir müssen [X]. → Wir sollten [X] in Betracht ziehen. → Es könnte notwendig sein, [X].",
+        "example": "Wir müssen den Start verschieben. → Wir sollten eine Verschiebung des Starts in Betracht ziehen. → Es könnte notwendig sein, den Start zu verschieben.",
+        "translation": "Нам нужно отложить запуск. → Нам стоит рассмотреть перенос запуска. → Возможно, запуск потребуется отложить.",
+        "examples": [
+          {"text": "Wir müssen den Test wiederholen. → Wir sollten eine Wiederholung des Tests in Betracht ziehen. → Es könnte notwendig sein, den Test zu wiederholen.", "translation_ru": "Нам нужно повторить тест. → Нам стоит рассмотреть повтор теста. → Возможно, тест потребуется повторить."},
+          {"text": "Wir müssen die Regel ändern. → Wir sollten eine Änderung der Regel in Betracht ziehen. → Es könnte notwendig sein, die Regel zu ändern.", "translation_ru": "Нам нужно изменить правило. → Нам стоит рассмотреть изменение правила. → Возможно, правило потребуется изменить."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Register shifting extension."}
+  },
+  {
+    "id": "XPRRTR001",
+    "title_ru": "Не переводить управление буквально",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "transfer correction",
+    "metaphor_ru": "Запоминайте управление как часть конструкции, а не как перевод отдельного слова.",
+    "practice": {"mode": "repair", "audience": "Russian speakers"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ discuss about [X] → ✓ discuss [X]",
+        "example": "❌ We discussed about the issue. → ✓ We **discussed the issue**.",
+        "translation": "Мы обсудили вопрос.",
+        "examples": [
+          {"text": "❌ Let's discuss about the options. → ✓ Let's **discuss the options**.", "translation_ru": "Давайте обсудим варианты."},
+          {"text": "❌ They discussed about the delay. → ✓ They **discussed the delay**.", "translation_ru": "Они обсудили задержку."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ seit [Zeit] + Vergangenheit → ✓ seit [Zeit] + Präsens",
+        "example": "❌ Seit zwei Jahren arbeitete ich hier. → ✓ Seit zwei Jahren **arbeite ich** hier.",
+        "translation": "Я работаю здесь уже два года.",
+        "examples": [
+          {"text": "❌ Seit Montag wartete ich auf die Antwort. → ✓ Seit Montag **warte ich** auf die Antwort.", "translation_ru": "Я жду ответа с понедельника."},
+          {"text": "❌ Seit 2024 lebte sie in Berlin. → ✓ Seit 2024 **lebt sie** in Berlin.", "translation_ru": "Она живёт в Берлине с 2024 года."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Russian-speaker transfer correction extension."}
+  },
+  {
+    "id": "XPRRTR002",
+    "title_ru": "Не копировать русскую структуру дополнения",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "transfer correction",
+    "metaphor_ru": "Проверяйте, какую структуру дополнений требует именно целевой язык.",
+    "practice": {"mode": "repair", "audience": "Russian speakers"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ explain me [X] → ✓ explain [X] to me",
+        "example": "❌ Can you explain me this rule? → ✓ Can you **explain this rule to me**?",
+        "translation": "Можешь объяснить мне это правило?",
+        "examples": [
+          {"text": "❌ She explained me the problem. → ✓ She **explained the problem to me**.", "translation_ru": "Она объяснила мне проблему."},
+          {"text": "❌ Please explain us the change. → ✓ Please **explain the change to us**.", "translation_ru": "Пожалуйста, объясните нам это изменение."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ weil [Subjekt] [Verb] ... → ✓ weil [Subjekt] ... [Verb]",
+        "example": "❌ weil das Problem ist noch offen → ✓ weil das Problem noch **offen ist**",
+        "translation": "потому что проблема всё ещё открыта",
+        "examples": [
+          {"text": "❌ weil wir brauchen mehr Daten → ✓ weil wir mehr Daten **brauchen**", "translation_ru": "потому что нам нужно больше данных"},
+          {"text": "❌ weil der Termin wurde verschoben → ✓ weil der Termin **verschoben wurde**", "translation_ru": "потому что срок был перенесён"}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Russian-speaker transfer correction extension."}
+  },
+  {
+    "id": "XPRRTR003",
+    "title_ru": "Не переносить русскую связку",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "transfer correction",
+    "metaphor_ru": "Не добавляйте связку там, где целевой язык выражает состояние иначе.",
+    "practice": {"mode": "repair", "audience": "Russian speakers"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ I am agree → ✓ I agree",
+        "example": "❌ I am agree with the proposal. → ✓ I **agree with** the proposal.",
+        "translation": "Я согласен с предложением.",
+        "examples": [
+          {"text": "❌ We are agree on the goal. → ✓ We **agree on** the goal.", "translation_ru": "Мы согласны по поводу цели."},
+          {"text": "❌ She is not agree with this point. → ✓ She **does not agree with** this point.", "translation_ru": "Она не согласна с этим пунктом."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ wenn [einmaliges Ereignis in der Vergangenheit] → ✓ als [einmaliges Ereignis in der Vergangenheit]",
+        "example": "❌ Wenn ich gestern ankam, war das Büro leer. → ✓ **Als** ich gestern ankam, war das Büro leer.",
+        "translation": "Когда я вчера приехал, офис был пуст.",
+        "examples": [
+          {"text": "❌ Wenn wir uns 2025 trafen, war das Projekt neu. → ✓ **Als** wir uns 2025 trafen, war das Projekt neu.", "translation_ru": "Когда мы встретились в 2025 году, проект был новым."},
+          {"text": "❌ Wenn sie das erste Mal anrief, wusste ich nichts davon. → ✓ **Als** sie das erste Mal anrief, wusste ich nichts davon.", "translation_ru": "Когда она позвонила в первый раз, я ничего об этом не знал."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Russian-speaker transfer correction extension."}
+  },
+  {
+    "id": "XPRTRN001",
+    "title_ru": "Причина → следствие через which is why",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "logic": "reformulation",
+    "metaphor_ru": "Сохраните причинную связь, перестроив её вокруг результата.",
+    "practice": {"mode": "transform", "operation": "cause to consequence"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Because [X], [Y]. → [X], which is why [Y].",
+        "example": "Because the evidence is incomplete, we should wait. → The evidence is incomplete, **which is why** we should wait.",
+        "translation": "Поскольку данные неполные, нам стоит подождать. → Данные неполные, поэтому нам стоит подождать.",
+        "examples": [
+          {"text": "Because the owner is away, the decision is delayed. → The owner is away, **which is why** the decision is delayed.", "translation_ru": "Поскольку ответственного нет, решение задерживается. → Ответственного нет, поэтому решение задерживается."},
+          {"text": "Because the rule is ambiguous, users make different choices. → The rule is ambiguous, **which is why** users make different choices.", "translation_ru": "Поскольку правило неоднозначно, пользователи выбирают по-разному. → Правило неоднозначно, поэтому пользователи выбирают по-разному."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Weil [X], [Y]. → [X], weshalb [Y].",
+        "example": "Weil die Belege unvollständig sind, sollten wir warten. → Die Belege sind unvollständig, **weshalb** wir warten sollten.",
+        "translation": "Поскольку данные неполные, нам стоит подождать. → Данные неполные, поэтому нам стоит подождать.",
+        "examples": [
+          {"text": "Weil die verantwortliche Person nicht da ist, verzögert sich die Entscheidung. → Die verantwortliche Person ist nicht da, **weshalb** sich die Entscheidung verzögert.", "translation_ru": "Поскольку ответственного нет, решение задерживается. → Ответственного нет, поэтому решение задерживается."},
+          {"text": "Weil die Regel mehrdeutig ist, treffen Nutzer unterschiedliche Entscheidungen. → Die Regel ist mehrdeutig, **weshalb** Nutzer unterschiedliche Entscheidungen treffen.", "translation_ru": "Поскольку правило неоднозначно, пользователи выбирают по-разному. → Правило неоднозначно, поэтому пользователи выбирают по-разному."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Transformation practice extension."}
+  },
+  {
+    "id": "XPRTRN002",
+    "title_ru": "People say → is said to",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "logic": "reformulation",
+    "metaphor_ru": "Перестройте источник сообщения из активной формы в безличную.",
+    "practice": {"mode": "transform", "operation": "reporting passive"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "People say that [X]. → [X] is said to [Y].",
+        "example": "People say that the new process reduces errors. → The new process **is said to reduce** errors.",
+        "translation": "Говорят, что новый процесс снижает количество ошибок. → Считается, что новый процесс снижает количество ошибок.",
+        "examples": [
+          {"text": "People believe that the change will save time. → The change **is believed to save** time.", "translation_ru": "Считают, что изменение сэкономит время. → Считается, что изменение сэкономит время."},
+          {"text": "People expect that the pilot will continue. → The pilot **is expected to continue**.", "translation_ru": "Ожидают, что пилот продолжится. → Ожидается, что пилот продолжится."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Man sagt, dass [X]. → [X] soll [Y].",
+        "example": "Man sagt, dass der neue Prozess Fehler reduziert. → Der neue Prozess **soll Fehler reduzieren**.",
+        "translation": "Говорят, что новый процесс снижает количество ошибок. → Считается, что новый процесс снижает количество ошибок.",
+        "examples": [
+          {"text": "Man glaubt, dass die Änderung Zeit spart. → Die Änderung **soll Zeit sparen**.", "translation_ru": "Считают, что изменение сэкономит время. → Считается, что изменение сэкономит время."},
+          {"text": "Man erwartet, dass das Pilotprojekt fortgesetzt wird. → Das Pilotprojekt **soll fortgesetzt werden**.", "translation_ru": "Ожидают, что пилот продолжится. → Ожидается, что пилот продолжится."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Transformation practice extension."}
+  },
+  {
+    "id": "XPRTRN003",
+    "title_ru": "Only after → inversion",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "logic": "reformulation",
+    "metaphor_ru": "Перенесите ограничивающее обстоятельство вперёд и перестройте порядок слов.",
+    "practice": {"mode": "transform", "operation": "fronting and inversion"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "We only [did X] after [Y]. → Only after [Y] did we [do X].",
+        "example": "We only understood the risk after the second test. → **Only after** the second test **did we understand** the risk.",
+        "translation": "Мы поняли риск только после второго теста. → Только после второго теста мы поняли риск.",
+        "examples": [
+          {"text": "We only found the mismatch after comparing the source files. → **Only after** comparing the source files **did we find** the mismatch.", "translation_ru": "Мы нашли несоответствие только после сравнения исходных файлов. → Только после сравнения исходных файлов мы нашли несоответствие."},
+          {"text": "We only saw the pattern after reviewing several cases. → **Only after** reviewing several cases **did we see** the pattern.", "translation_ru": "Мы увидели закономерность только после проверки нескольких случаев. → Только после проверки нескольких случаев мы увидели закономерность."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wir [taten X] erst nach [Y]. → Erst nach [Y] [Verb] wir [X].",
+        "example": "Wir verstanden das Risiko erst nach dem zweiten Test. → **Erst nach** dem zweiten Test **verstanden wir** das Risiko.",
+        "translation": "Мы поняли риск только после второго теста. → Только после второго теста мы поняли риск.",
+        "examples": [
+          {"text": "Wir fanden die Abweichung erst nach dem Vergleich der Quelldateien. → **Erst nach** dem Vergleich der Quelldateien **fanden wir** die Abweichung.", "translation_ru": "Мы нашли несоответствие только после сравнения исходных файлов. → Только после сравнения исходных файлов мы нашли несоответствие."},
+          {"text": "Wir erkannten das Muster erst nach der Prüfung mehrerer Fälle. → **Erst nach** der Prüfung mehrerer Fälle **erkannten wir** das Muster.", "translation_ru": "Мы увидели закономерность только после проверки нескольких случаев. → Только после проверки нескольких случаев мы увидели закономерность."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-17", "languages": ["en", "de"], "notes": "Transformation practice extension."}
+  }
+]
