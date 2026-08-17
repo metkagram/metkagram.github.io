@@ -78,3 +78,19 @@ test("public partnership page exposes bounded pilot packages", () => {
   const publicOpportunities = JSON.parse(fs.readFileSync(path.join(DIST, "data", "partnership-opportunities.json"), "utf8"));
   assert.equal(publicOpportunities.opportunities.length, opportunitiesSource.opportunities.length);
 });
+
+test("Atlas and partnership pilots are discoverable to agents without pretending they improve Google rankings", () => {
+  const catalog = JSON.parse(fs.readFileSync(path.join(DIST, "data", "catalog.json"), "utf8"));
+  assert.equal(catalog.patternAtlas.topicCount, topicsSource.topics.length);
+  assert.match(catalog.patternAtlas.dataset, /\/data\/discovery-topics\.json$/);
+  assert.match(catalog.patternAtlas.pages.en, /\/en\/patterns\/$/);
+  assert.equal(catalog.partnershipOpportunities.count, opportunitiesSource.opportunities.length);
+  assert.match(catalog.partnershipOpportunities.dataset, /\/data\/partnership-opportunities\.json$/);
+
+  const llms = fs.readFileSync(path.join(DIST, "llms.txt"), "utf8");
+  assert.match(llms, /## Pattern Atlas/);
+  assert.match(llms, /\/data\/discovery-topics\.json/);
+  assert.match(llms, /learner knows the communication goal/i);
+  assert.match(llms, /## Partnership pilots/);
+  assert.match(llms, /not as evidence of existing partners or traction/i);
+});
