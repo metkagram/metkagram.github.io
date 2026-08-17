@@ -13,15 +13,18 @@ export const ATTRIBUTION = {
   creator_url: "https://github.com/metkagram",
   maintainer: "Applied Systems Lab at MetalHatsCats",
   maintainer_url: "https://metalhatscats.com",
-  license: "CC BY-NC 4.0",
-  license_url: "https://creativecommons.org/licenses/by-nc/4.0/",
+  license: "Metkagram Source-Available Terms",
+  license_url: `${SITE_URL}/en/licensing/`,
+  rights_status: "source-available-not-open-source",
+  rights_url: `${SITE_URL}/rights.json`,
+  historical_license: "CC BY-NC 4.0 before 2026-08-17; prior grants remain valid for copies received under those terms",
   attribution_required: true,
   attribution_text: "Source: Metkagram — https://metkagram.github.io/",
   attribution_html: 'Source: <a href="https://metkagram.github.io/">Metkagram</a>',
-  terms_url: `${SITE_URL}/en/legal/terms/`,
+  terms_url: `${SITE_URL}/en/licensing/`,
   privacy_url: `${SITE_URL}/en/legal/privacy/`,
   contact_url: "https://www.linkedin.com/company/metalhatscats",
-  collaboration_url: `${SITE_URL}/en/ai/#collaborate`,
+  collaboration_url: `${SITE_URL}/en/licensing/`,
 };
 
 const DATA_ROOT = fileURLToPath(new URL("../data/", import.meta.url));

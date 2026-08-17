@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "project": "Metkagram",
+  "effectiveDate": "2026-08-17",
+  "status": "source-available-not-open-source",
+  "defaultRights": "all-rights-reserved",
+  "rightsNotice": "https://metkagram.github.io/LICENSE",
+  "humanReadableTerms": {
+    "en": "https://metkagram.github.io/en/licensing/",
+    "ru": "https://metkagram.github.io/ru/licensing/"
+  },
+  "permissionsWithoutSeparateLicense": {
+    "hostedWebsiteEndUserAccess": true,
+    "linking": true,
+    "citation": true,
+    "limitedQuotationWherePermittedByLaw": true,
+    "bulkCopy": false,
+    "redistribution": false,
+    "derivedDatasetDistribution": false,
+    "commercialIntegration": false,
+    "modelTrainingOnSubstantialMaterial": false,
+    "modelFineTuningOnSubstantialMaterial": false,
+    "productionRetrievalCorpus": false
+  },
+  "licensingAvailable": {
+    "academicResearch": true,
+    "supervisedStudentResearch": true,
+    "institutionalEvaluation": true,
+    "teaching": true,
+    "dataApi": true,
+    "commercial": true,
+    "jointResearch": true,
+    "productIntegration": true
+  },
+  "researchPolicy": "https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_USE.md",
+  "contact": "https://www.linkedin.com/company/metalhatscats",
+  "attribution": "Source: Metkagram — https://metkagram.github.io/",
+  "historicalLicense": {
+    "before": "2026-08-17",
+    "license": "CC BY-NC 4.0",
+    "note": "Rights already granted for copies received under prior CC BY-NC 4.0 terms are not revoked."
+  },
+  "exceptions": "Nothing in this file limits rights or exceptions granted independently by applicable law or the limited platform rights required by GitHub's Terms of Service."
+}

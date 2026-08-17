@@ -1,14 +1,55 @@
-SPDX-License-Identifier: CC-BY-NC-4.0
+Metkagram — Copyright and Licensing Notice
 
-Metkagram — CC BY-NC 4.0
+Effective date: 17 August 2026
 
-Copyright (c) 2026 Metkagram
+Copyright (c) 2026 Metkagram. All rights reserved.
 
-Unless a file says otherwise, the material in this repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+1. Default rights
 
-You may copy, share, and adapt this material for non-commercial purposes, provided that you give appropriate credit to Metkagram, link to this license, and indicate if changes were made. Commercial use is not permitted without prior written permission from Metkagram.
+Unless a file or directory contains a different explicit license notice, the material in this repository is source-available but is not open-source or open-data content. No copyright license is granted beyond the permissions stated below, the permissions required to operate the hosted Metkagram website, rights granted by the GitHub Terms of Service for public repositories, and rights that applicable law gives you independently of this notice.
 
-License deed: https://creativecommons.org/licenses/by-nc/4.0/
-Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+2. What you may do without separate permission
 
-Third-party content, trademarks, and source-language material may have separate rights and are not licensed beyond the rights held by Metkagram.
+You may:
+
+- view the public repository and use the hosted Metkagram website as an end user;
+- link to Metkagram pages and public records;
+- cite Metkagram in research, teaching, commentary, or reviews;
+- make limited quotations or other uses where applicable law permits them without a license.
+
+These permissions do not include a right to copy or redistribute substantial parts of the corpus, source code, annotation system, datasets, schemas, translations, pattern collections, research materials, or visual assets.
+
+3. Permission is required
+
+Except where applicable law expressly permits the use, prior written permission is required to:
+
+- copy, mirror, scrape, republish, or redistribute substantial portions of the repository or hosted datasets;
+- modify or distribute the Metkagram source code or create a substantially derived implementation from it;
+- create or redistribute derived corpora, pattern libraries, annotation datasets, or competing training collections based on substantial Metkagram material;
+- use substantial Metkagram material to train or fine-tune models, build production retrieval corpora, or create commercial evaluation datasets;
+- integrate the corpus, API exports, annotation scheme, or pattern collections into a commercial product or paid service;
+- remove or obscure Metkagram provenance, attribution, canonical links, or rights notices.
+
+4. Research and commercial licensing
+
+Metkagram is open to research collaborations, supervised academic projects, institutional evaluation, language-data partnerships, API/data licensing, and commercial licensing. Permission can be scoped to a specific dataset, experiment, publication, integration, or period.
+
+Start with the licensing page at https://metkagram.github.io/en/licensing/ or contact Metkagram through https://www.linkedin.com/company/metalhatscats.
+
+5. Method and research identity
+
+This notice protects copyrightable expression and other rights that may apply to Metkagram's code, documentation, corpus selection and arrangement, annotation materials, datasets, schemas, examples, translations, visual assets, and other concrete works. It does not claim copyright ownership over abstract ideas, general linguistic concepts, facts, or methods that copyright law does not protect.
+
+6. Previous CC BY-NC 4.0 releases
+
+Before 17 August 2026, material in this repository was offered under CC BY-NC 4.0. Rights already granted under that license for copies received under those terms are not revoked by this notice. New revisions and newly added material first distributed under this notice are governed by this notice unless an explicit file-level license says otherwise.
+
+7. Third-party material
+
+Third-party software, source-language material, trademarks, quotations, and other third-party content remain subject to their own licenses and rights. This notice grants no rights that Metkagram does not own or control.
+
+8. No warranty
+
+The repository and website are provided as available and without warranties to the extent permitted by law.
+
+For a practical rights summary, research-use process, and licensing options, see LICENSING.md and docs/RESEARCH_USE.md.
