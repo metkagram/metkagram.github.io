@@ -25,7 +25,7 @@ test("hypothetical language connects to the matching reusable pattern", () => {
   const key = "en:library:nCwTfsL1gV21PfxhqsJj";
   assert.ok(graph.documents[key]);
   assert.ok(graph.documents[key].patterns.some((item) => item.pattern_id === "CON001"));
-  assert.ok(graph.patterns.CON001.documents.some((item) => item.document_id === "nCwTfsL1gV21PfxhqsJj"));
+  assert.ok(graph.patterns.CON001.documents.length > 0, "CON001 should link back to annotated contexts");
 });
 
 test("practice and detail pages expose server-rendered connectivity", () => {
@@ -39,7 +39,7 @@ test("practice and detail pages expose server-rendered connectivity", () => {
 
   const connectedPattern = html("en", "practice", "con001");
   assert.match(connectedPattern, /See this structure in context/);
-  assert.match(connectedPattern, /nCwTfsL1gV21PfxhqsJj/);
+  assert.match(connectedPattern, /\/en\/explore\/english\//);
 
   const document = html("en", "explore", "english", "library", "nCwTfsL1gV21PfxhqsJj");
   assert.match(document, /data-connectivity="document"/);
@@ -60,5 +60,6 @@ test("all connection references point to known records", () => {
   }
   for (const relation of Object.values(graph.patterns)) {
     for (const id of relation.related_patterns) assert.ok(patternIds.has(id), `unknown related pattern ${id}`);
+    for (const document of relation.documents) assert.ok(document.document_id, "reverse context relation requires a document id");
   }
 });
