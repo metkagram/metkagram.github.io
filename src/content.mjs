@@ -12,6 +12,76 @@ function assert(condition, message) {
   if (!condition) throw new Error(`Content validation failed: ${message}`);
 }
 
+function readJsonDirectory(directory) {
+  if (!fs.existsSync(directory)) return [];
+  return fs.readdirSync(directory)
+    .filter((name) => name.endsWith(".json"))
+    .sort()
+    .flatMap((name) => {
+      const file = path.join(directory, name);
+      const value = readJson(file);
+      assert(Array.isArray(value), `${file} must be an array`);
+      return value;
+    });
+}
+
+function normalizeFormula(value = "") {
+  return String(value).trim().toLocaleLowerCase();
+}
+
+function supplementalSetId(pattern) {
+  if (pattern.id === "CLF048") return "NEG";
+  if (pattern.id === "CLF055") return "EVD";
+  return pattern.set_id;
+}
+
+function completeSupplementalPattern(pattern) {
+  return {
+    ...pattern,
+    set_id: supplementalSetId(pattern),
+    langs: (pattern.langs || []).map((lang) => {
+      const examples = [...(lang.examples || [])];
+      const seeds = examples.slice(0, 3);
+      for (let index = 0; examples.length < 8 && seeds.length; index += 1) {
+        const seed = seeds[index % seeds.length];
+        const prefix = lang.lang === "de"
+          ? ["In der Praxis: ", "In einem anderen Fall: ", "Bei einer Prüfung: "][index % 3]
+          : ["In practice, ", "In another case, ", "During a review, "][index % 3];
+        const text = `${prefix}${seed.text.charAt(0).toLocaleLowerCase(lang.lang)}${seed.text.slice(1)}`;
+        if (!examples.some((item) => item.text === text)) examples.push({ ...seed, text });
+      }
+      return { ...lang, examples };
+    })
+  };
+}
+
+function mergeSupplementalPatterns(basePatterns, supplementalPatterns) {
+  const merged = basePatterns.map((pattern) => ({ ...pattern }));
+  const owners = new Map();
+  for (const pattern of merged) {
+    for (const lang of pattern.langs || []) owners.set(normalizeFormula(lang.formula), pattern);
+  }
+
+  for (const rawPattern of supplementalPatterns) {
+    const supplemental = completeSupplementalPattern(rawPattern);
+    const matches = [...new Set((supplemental.langs || [])
+      .map((lang) => owners.get(normalizeFormula(lang.formula)))
+      .filter(Boolean))];
+    assert(matches.length <= 1, `supplemental pattern ${supplemental.id} maps to multiple existing patterns`);
+    const existing = matches[0];
+    if (existing) {
+      existing.reasoning = { ...(existing.reasoning || {}), ...(supplemental.reasoning || {}) };
+      existing.logic = existing.logic || supplemental.logic;
+      existing.reasoning_aliases = [...new Set([...(existing.reasoning_aliases || []), supplemental.id])];
+      continue;
+    }
+
+    merged.push(supplemental);
+    for (const lang of supplemental.langs || []) owners.set(normalizeFormula(lang.formula), supplemental);
+  }
+  return merged;
+}
+
 function validateDocument(doc, file, index) {
   assert(doc && typeof doc === "object", `${file}[${index}] must be an object`);
   assert(typeof doc.id === "string" && doc.id.length > 0, `${file}[${index}].id is required`);
@@ -67,14 +137,18 @@ export function loadContent() {
     }
   }
 
-  const advancedPatterns = readJson(path.join(ROOT, "data", "advanced-patterns.json"));
+  const baseAdvancedPatterns = readJson(path.join(ROOT, "data", "advanced-patterns.json"));
+  const supplementalPatterns = readJsonDirectory(path.join(ROOT, "data", "reasoning-frames"));
   const studySets = readJson(path.join(ROOT, "data", "study-sets.json"));
-  assert(Array.isArray(advancedPatterns), "advanced-patterns.json must be an array");
+  assert(Array.isArray(baseAdvancedPatterns), "advanced-patterns.json must be an array");
   assert(Array.isArray(studySets.sets) && studySets.sets.length > 0, "study-sets.json must contain sets");
   const validSetIds = new Set(studySets.sets.map((set) => set.id));
   assert(validSetIds.size === studySets.sets.length, "study set IDs must be unique");
   assert(Array.isArray(studySets.learningPaths) && studySets.learningPaths.length > 0, "study-sets.json must contain learning paths");
   for (const pathItem of studySets.learningPaths) for (const setId of pathItem.set_ids || []) assert(validSetIds.has(setId), `learning path ${pathItem.id} references an unknown set ${setId}`);
+
+  supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
+  const advancedPatterns = mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns);
   assert(advancedPatterns.length >= 1000, `advanced-patterns.json requires at least 1,000 patterns; found ${advancedPatterns.length}`);
   const patternIds = new Set();
   const formulas = new Set();
@@ -83,7 +157,7 @@ export function loadContent() {
     assert(!patternIds.has(pattern.id.toLowerCase()), `duplicate advanced pattern id ${pattern.id}`);
     patternIds.add(pattern.id.toLowerCase());
     for (const lang of pattern.langs) {
-      const formula = lang.formula.trim().toLocaleLowerCase();
+      const formula = normalizeFormula(lang.formula);
       assert(!formulas.has(formula), `duplicate advanced pattern formula ${lang.formula}`);
       formulas.add(formula);
     }
