@@ -1,0 +1,634 @@
+[
+  {
+    "id": "CLF061",
+    "title_ru": "Не X, а Y",
+    "group_id": "CLF",
+    "set_id": "CLR",
+    "logic": "corrective reframing",
+    "metaphor_ru": "Исправить неверную рамку: проблема не в X, а в Y.",
+    "formulas": [
+      "It's not that [X]; it's that [Y].",
+      "Es geht nicht darum, dass [X], sondern darum, dass [Y]."
+    ],
+    "reasoning": {
+      "move": "Reframe",
+      "what_it_does_en": "Replace an inaccurate interpretation with the distinction that actually matters.",
+      "what_it_does_ru": "Заменить неточную интерпретацию тем различием, которое действительно важно.",
+      "when_to_use_en": "Use it when the other person has identified the wrong problem, motive, or constraint.",
+      "when_to_use_ru": "Используйте, когда собеседник неверно определил проблему, мотив или ограничение.",
+      "contrast_en": "Simply deny X without stating the better explanation.",
+      "common_mistake_en": "Make Y genuinely more precise than X; otherwise the reframe adds no information.",
+      "common_mistake_ru": "Y должно быть действительно точнее X, иначе переопределение ничего не добавляет."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It's not that [X]; it's that [Y].",
+        "example": "**It's not that** the approach is wrong; **it's that** it does not scale beyond the pilot.",
+        "translation": "Дело не в том, что подход неверен; дело в том, что он не масштабируется за пределы пилота.",
+        "examples": [
+          {
+            "text": "**It's not that** we lack data; **it's that** we cannot trust its lineage yet.",
+            "translation_ru": "Дело не в нехватке данных; дело в том, что мы пока не можем доверять их происхождению."
+          },
+          {
+            "text": "**It's not that** the user rejected the feature; **it's that** the value was never made clear.",
+            "translation_ru": "Дело не в том, что пользователь отверг функцию; дело в том, что её ценность так и не стала понятной."
+          },
+          {
+            "text": "**It's not that** the model is slow; **it's that** the workflow calls it too often.",
+            "translation_ru": "Дело не в том, что модель медленная; дело в том, что процесс вызывает её слишком часто."
+          },
+          {
+            "text": "**It's not that** I disagree with the goal; **it's that** the proposed deadline hides the trade-offs.",
+            "translation_ru": "Дело не в том, что я не согласен с целью; дело в том, что предложенный срок скрывает компромиссы."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es geht nicht darum, dass [X], sondern darum, dass [Y].",
+        "example": "**Es geht nicht darum, dass** der Ansatz falsch ist, **sondern darum, dass** er über den Piloten hinaus nicht skaliert.",
+        "translation": "Дело не в том, что подход неверен; дело в том, что он не масштабируется за пределы пилота.",
+        "examples": [
+          {
+            "text": "**Es geht nicht darum, dass** uns Daten fehlen, **sondern darum, dass** wir ihrer Herkunft noch nicht vertrauen können.",
+            "translation_ru": "Дело не в нехватке данных; дело в том, что мы пока не можем доверять их происхождению."
+          },
+          {
+            "text": "**Es geht nicht darum, dass** der Nutzer die Funktion abgelehnt hat, **sondern darum, dass** ihr Nutzen nie klar wurde.",
+            "translation_ru": "Дело не в том, что пользователь отверг функцию; дело в том, что её ценность так и не стала понятной."
+          },
+          {
+            "text": "**Es geht nicht darum, dass** das Modell langsam ist, **sondern darum, dass** der Ablauf es zu oft aufruft.",
+            "translation_ru": "Дело не в том, что модель медленная; дело в том, что процесс вызывает её слишком часто."
+          },
+          {
+            "text": "**Es geht nicht darum, dass** ich dem Ziel widerspreche, **sondern darum, dass** der vorgeschlagene Termin die Zielkonflikte verdeckt.",
+            "translation_ru": "Дело не в том, что я не согласен с целью; дело в том, что предложенный срок скрывает компромиссы."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF062",
+    "title_ru": "Не столько X, сколько Y",
+    "group_id": "CLF",
+    "set_id": "CLR",
+    "logic": "relative reframing",
+    "metaphor_ru": "Сместить главный акцент с X на более важный Y, не отрицая X полностью.",
+    "formulas": [
+      "Not so much [X] as [Y].",
+      "Nicht so sehr [X] als vielmehr [Y]."
+    ],
+    "reasoning": {
+      "move": "Reframe",
+      "what_it_does_en": "Shift the main emphasis from one explanation or quality to another without denying the first completely.",
+      "what_it_does_ru": "Сместить главный акцент с одного объяснения или свойства на другое, не отрицая первое полностью.",
+      "when_to_use_en": "Use it when X is partly true but Y better captures the dominant issue.",
+      "when_to_use_ru": "Используйте, когда X частично верно, но Y лучше описывает главную проблему.",
+      "contrast_en": "It's not X at all; it's Y.",
+      "common_mistake_en": "Do not use this frame when X and Y are unrelated; they should compete as explanations or descriptions.",
+      "common_mistake_ru": "X и Y должны конкурировать как объяснения или характеристики, а не быть несвязанными идеями."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Not so much [X] as [Y].",
+        "example": "The bottleneck is **not so much** computation **as** coordination between the steps.",
+        "translation": "Узкое место связано не столько с вычислениями, сколько с координацией между этапами.",
+        "examples": [
+          {
+            "text": "The risk is **not so much** the initial cost **as** the long-term maintenance burden.",
+            "translation_ru": "Риск связан не столько с первоначальной стоимостью, сколько с долгосрочной нагрузкой на поддержку."
+          },
+          {
+            "text": "The problem is **not so much** missing features **as** unclear defaults.",
+            "translation_ru": "Проблема не столько в недостающих функциях, сколько в непонятных настройках по умолчанию."
+          },
+          {
+            "text": "Success depends **not so much** on adding more rules **as** on making the existing rules observable.",
+            "translation_ru": "Успех зависит не столько от добавления новых правил, сколько от наблюдаемости существующих."
+          },
+          {
+            "text": "The debate is **not so much** technical **as** organizational.",
+            "translation_ru": "Этот спор не столько технический, сколько организационный."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Nicht so sehr [X] als vielmehr [Y].",
+        "example": "Der Engpass liegt **nicht so sehr** in der Rechenleistung **als vielmehr** in der Koordination zwischen den Schritten.",
+        "translation": "Узкое место связано не столько с вычислениями, сколько с координацией между этапами.",
+        "examples": [
+          {
+            "text": "Das Risiko liegt **nicht so sehr** in den Anfangskosten **als vielmehr** im langfristigen Wartungsaufwand.",
+            "translation_ru": "Риск связан не столько с первоначальной стоимостью, сколько с долгосрочной нагрузкой на поддержку."
+          },
+          {
+            "text": "Das Problem sind **nicht so sehr** fehlende Funktionen **als vielmehr** unklare Standardeinstellungen.",
+            "translation_ru": "Проблема не столько в недостающих функциях, сколько в непонятных настройках по умолчанию."
+          },
+          {
+            "text": "Der Erfolg hängt **nicht so sehr** von zusätzlichen Regeln ab **als vielmehr** davon, die bestehenden Regeln beobachtbar zu machen.",
+            "translation_ru": "Успех зависит не столько от добавления новых правил, сколько от наблюдаемости существующих."
+          },
+          {
+            "text": "Die Debatte ist **nicht so sehr** technisch **als vielmehr** organisatorisch.",
+            "translation_ru": "Этот спор не столько технический, сколько организационный."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF063",
+    "title_ru": "X, тогда как Y",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "direct contrast",
+    "metaphor_ru": "Поставить два случая рядом и сделать существенное различие явным.",
+    "formulas": [
+      "[X], whereas [Y].",
+      "[X], wohingegen [Y]."
+    ],
+    "reasoning": {
+      "move": "Compare",
+      "what_it_does_en": "Contrast two cases on the same dimension so the difference becomes explicit.",
+      "what_it_does_ru": "Сопоставить два случая по одной шкале и сделать различие явным.",
+      "when_to_use_en": "Use it when the contrast itself carries the argument or helps explain a choice.",
+      "when_to_use_ru": "Используйте, когда именно различие поддерживает аргумент или помогает объяснить выбор.",
+      "contrast_en": "Mention two cases separately and leave the reader to infer the contrast.",
+      "common_mistake_en": "Compare like with like; unrelated dimensions create a false contrast.",
+      "common_mistake_ru": "Сравнивайте сопоставимые параметры; разные шкалы создают ложное противопоставление."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X], whereas [Y].",
+        "example": "The pilot optimizes for speed, **whereas** the production design prioritizes recoverability.",
+        "translation": "Пилот оптимизирован под скорость, тогда как продуктивный дизайн ставит на первое место восстановление.",
+        "examples": [
+          {
+            "text": "The old process reacts after an error, **whereas** the new one detects risk before the deadline is missed.",
+            "translation_ru": "Старый процесс реагирует после ошибки, тогда как новый выявляет риск до пропуска срока."
+          },
+          {
+            "text": "One option reduces cost, **whereas** the other reduces operational uncertainty.",
+            "translation_ru": "Один вариант снижает стоимость, тогда как другой снижает операционную неопределённость."
+          },
+          {
+            "text": "The dashboard shows status, **whereas** the event model explains what should happen next.",
+            "translation_ru": "Дашборд показывает статус, тогда как модель событий объясняет, что должно произойти дальше."
+          },
+          {
+            "text": "A rule answers whether a case is valid, **whereas** a workflow answers who must act next.",
+            "translation_ru": "Правило отвечает, допустим ли случай, тогда как процесс отвечает, кто должен действовать дальше."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X], wohingegen [Y].",
+        "example": "Der Pilot ist auf Geschwindigkeit optimiert, **wohingegen** das Produktivdesign die Wiederherstellbarkeit priorisiert.",
+        "translation": "Пилот оптимизирован под скорость, тогда как продуктивный дизайн ставит на первое место восстановление.",
+        "examples": [
+          {
+            "text": "Der alte Prozess reagiert erst nach einem Fehler, **wohingegen** der neue ein Risiko erkennt, bevor die Frist verpasst wird.",
+            "translation_ru": "Старый процесс реагирует после ошибки, тогда как новый выявляет риск до пропуска срока."
+          },
+          {
+            "text": "Eine Option senkt die Kosten, **wohingegen** die andere die operative Unsicherheit reduziert.",
+            "translation_ru": "Один вариант снижает стоимость, тогда как другой снижает операционную неопределённость."
+          },
+          {
+            "text": "Das Dashboard zeigt den Status, **wohingegen** das Ereignismodell erklärt, was als Nächstes geschehen soll.",
+            "translation_ru": "Дашборд показывает статус, тогда как модель событий объясняет, что должно произойти дальше."
+          },
+          {
+            "text": "Eine Regel beantwortet, ob ein Fall gültig ist, **wohingegen** ein Workflow festlegt, wer als Nächstes handeln muss.",
+            "translation_ru": "Правило отвечает, допустим ли случай, тогда как процесс отвечает, кто должен действовать дальше."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF064",
+    "title_ru": "По сравнению с X, Y даёт Z",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "dimensioned comparison",
+    "metaphor_ru": "Сделать критерий сравнения явным через конкретное преимущество или отличие Z.",
+    "formulas": [
+      "Compared with [X], [Y] offers [Z].",
+      "Im Vergleich zu [X] bietet [Y] [Z]."
+    ],
+    "reasoning": {
+      "move": "Compare",
+      "what_it_does_en": "Compare alternatives through an explicit advantage, property, or decision-relevant dimension.",
+      "what_it_does_ru": "Сравнить альтернативы через явное преимущество, свойство или важный для решения параметр.",
+      "when_to_use_en": "Use it when saying that Y is simply better would hide the dimension on which it is better.",
+      "when_to_use_ru": "Используйте, когда слово «лучше» скрывает конкретный параметр преимущества Y.",
+      "contrast_en": "Y is better than X.",
+      "common_mistake_en": "State Z precisely enough that the comparison can be checked or challenged.",
+      "common_mistake_ru": "Формулируйте Z достаточно точно, чтобы сравнение можно было проверить или оспорить."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Compared with [X], [Y] offers [Z].",
+        "example": "**Compared with** a free-form log, an event profile **offers** explicit expected steps and deadlines.",
+        "translation": "По сравнению со свободным логом профиль событий даёт явные ожидаемые шаги и сроки.",
+        "examples": [
+          {
+            "text": "**Compared with** a manual checklist, the pipeline **offers** repeatable validation.",
+            "translation_ru": "По сравнению с ручным чек-листом пайплайн даёт воспроизводимую проверку."
+          },
+          {
+            "text": "**Compared with** a single score, the error breakdown **offers** a clearer diagnosis.",
+            "translation_ru": "По сравнению с одной оценкой разбивка ошибок даёт более ясную диагностику."
+          },
+          {
+            "text": "**Compared with** a large settings screen, good defaults **offer** a shorter path to first value.",
+            "translation_ru": "По сравнению с большим экраном настроек хорошие значения по умолчанию дают более короткий путь к первой ценности."
+          },
+          {
+            "text": "**Compared with** polling every system, event-driven updates **offer** lower unnecessary load.",
+            "translation_ru": "По сравнению с постоянным опросом всех систем событийные обновления дают меньшую лишнюю нагрузку."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Im Vergleich zu [X] bietet [Y] [Z].",
+        "example": "**Im Vergleich zu** einem freien Protokoll **bietet** ein Ereignisprofil explizite erwartete Schritte und Fristen.",
+        "translation": "По сравнению со свободным логом профиль событий даёт явные ожидаемые шаги и сроки.",
+        "examples": [
+          {
+            "text": "**Im Vergleich zu** einer manuellen Checkliste **bietet** die Pipeline wiederholbare Validierung.",
+            "translation_ru": "По сравнению с ручным чек-листом пайплайн даёт воспроизводимую проверку."
+          },
+          {
+            "text": "**Im Vergleich zu** einem einzelnen Score **bietet** die Fehleraufschlüsselung eine klarere Diagnose.",
+            "translation_ru": "По сравнению с одной оценкой разбивка ошибок даёт более ясную диагностику."
+          },
+          {
+            "text": "**Im Vergleich zu** einem großen Einstellungsbildschirm **bieten** gute Voreinstellungen einen kürzeren Weg zum ersten Nutzen.",
+            "translation_ru": "По сравнению с большим экраном настроек хорошие значения по умолчанию дают более короткий путь к первой ценности."
+          },
+          {
+            "text": "**Im Vergleich zum** ständigen Abfragen aller Systeme **bieten** ereignisgesteuerte Aktualisierungen weniger unnötige Last.",
+            "translation_ru": "По сравнению с постоянным опросом всех систем событийные обновления дают меньшую лишнюю нагрузку."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF065",
+    "title_ru": "X верно для Y, но не для Z",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "scope qualification",
+    "metaphor_ru": "Ограничить область действия утверждения вместо полного согласия или полного отрицания.",
+    "formulas": [
+      "[X] may be true for [Y], but not for [Z].",
+      "[X] mag für [Y] gelten, aber nicht für [Z]."
+    ],
+    "reasoning": {
+      "move": "Limit",
+      "what_it_does_en": "Qualify a claim by separating the cases where it applies from the cases where it does not.",
+      "what_it_does_ru": "Ограничить утверждение, разделив случаи, где оно применимо, и случаи, где оно не работает.",
+      "when_to_use_en": "Use it when a broad statement contains a useful truth but overgeneralizes beyond its evidence.",
+      "when_to_use_ru": "Используйте, когда широкое утверждение содержит полезную мысль, но выходит за пределы данных.",
+      "contrast_en": "X is always true.",
+      "common_mistake_en": "Y and Z should define a meaningful scope boundary, not arbitrary exceptions.",
+      "common_mistake_ru": "Y и Z должны задавать содержательную границу применимости, а не случайные исключения."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] may be true for [Y], but not for [Z].",
+        "example": "That rule **may be true for** new records, **but not for** migrated ones.",
+        "translation": "Это правило может быть верно для новых записей, но не для мигрированных.",
+        "examples": [
+          {
+            "text": "The shortcut **may be true for** a small pilot, **but not for** a regulated production process.",
+            "translation_ru": "Это упрощение может работать для небольшого пилота, но не для регулируемого продуктивного процесса."
+          },
+          {
+            "text": "The average **may be informative for** the whole cohort, **but not for** a rare subgroup.",
+            "translation_ru": "Среднее может быть информативно для всей группы, но не для редкой подгруппы."
+          },
+          {
+            "text": "That assumption **may be reasonable for** one market, **but not for** every country.",
+            "translation_ru": "Это предположение может быть разумным для одного рынка, но не для каждой страны."
+          },
+          {
+            "text": "The default **may be appropriate for** experienced users, **but not for** first-time users.",
+            "translation_ru": "Настройка по умолчанию может подходить опытным пользователям, но не новичкам."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] mag für [Y] gelten, aber nicht für [Z].",
+        "example": "Diese Regel **mag für** neue Datensätze **gelten, aber nicht für** migrierte.",
+        "translation": "Это правило может быть верно для новых записей, но не для мигрированных.",
+        "examples": [
+          {
+            "text": "Diese Abkürzung **mag für** einen kleinen Piloten **gelten, aber nicht für** einen regulierten Produktivprozess.",
+            "translation_ru": "Это упрощение может работать для небольшого пилота, но не для регулируемого продуктивного процесса."
+          },
+          {
+            "text": "Der Durchschnitt **mag für** die gesamte Kohorte aussagekräftig sein, **aber nicht für** eine seltene Untergruppe.",
+            "translation_ru": "Среднее может быть информативно для всей группы, но не для редкой подгруппы."
+          },
+          {
+            "text": "Diese Annahme **mag für** einen Markt sinnvoll sein, **aber nicht für** jedes Land.",
+            "translation_ru": "Это предположение может быть разумным для одного рынка, но не для каждой страны."
+          },
+          {
+            "text": "Die Voreinstellung **mag für** erfahrene Nutzer passen, **aber nicht für** Erstnutzer.",
+            "translation_ru": "Настройка по умолчанию может подходить опытным пользователям, но не новичкам."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF066",
+    "title_ru": "Это предполагает X, а X может быть неверно",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "assumption challenge",
+    "metaphor_ru": "Вытащить скрытое предположение наружу и проверить, выдерживает ли оно аргумент.",
+    "formulas": [
+      "That assumes that [X], which may not hold.",
+      "Das setzt voraus, dass [X], was möglicherweise nicht zutrifft."
+    ],
+    "reasoning": {
+      "move": "Challenge",
+      "what_it_does_en": "Expose a hidden assumption and question whether the argument can rely on it.",
+      "what_it_does_ru": "Сделать скрытое предположение явным и поставить под вопрос его надёжность.",
+      "when_to_use_en": "Use it when a conclusion depends on something that has been treated as given rather than established.",
+      "when_to_use_ru": "Используйте, когда вывод зависит от предположения, которое приняли как данность, но не доказали.",
+      "contrast_en": "Reject the conclusion without identifying the assumption that supports it.",
+      "common_mistake_en": "State the assumption fairly; do not weaken it into a straw man just to attack it.",
+      "common_mistake_ru": "Формулируйте предположение честно; не превращайте его в удобную карикатуру для критики."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "That assumes that [X], which may not hold.",
+        "example": "**That assumes that** every missing event is an interface failure, **which may not hold**.",
+        "translation": "Это предполагает, что каждое отсутствующее событие является ошибкой интерфейса, а это может быть неверно.",
+        "examples": [
+          {
+            "text": "**That assumes that** users understand the default behavior, **which may not hold** for first-time users.",
+            "translation_ru": "Это предполагает, что пользователи понимают поведение по умолчанию, а для новичков это может быть неверно."
+          },
+          {
+            "text": "**That assumes that** the source timestamp is trustworthy, **which may not hold** after migration.",
+            "translation_ru": "Это предполагает, что временной метке источника можно доверять, а после миграции это может быть неверно."
+          },
+          {
+            "text": "**That assumes that** lower cost is the main decision criterion, **which may not hold** for this customer.",
+            "translation_ru": "Это предполагает, что низкая стоимость является главным критерием решения, а для этого клиента это может быть неверно."
+          },
+          {
+            "text": "**That assumes that** the two groups are comparable, **which may not hold** after the sampling change.",
+            "translation_ru": "Это предполагает, что две группы сопоставимы, а после изменения выборки это может быть неверно."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das setzt voraus, dass [X], was möglicherweise nicht zutrifft.",
+        "example": "**Das setzt voraus, dass** jedes fehlende Ereignis ein Schnittstellenfehler ist, **was möglicherweise nicht zutrifft**.",
+        "translation": "Это предполагает, что каждое отсутствующее событие является ошибкой интерфейса, а это может быть неверно.",
+        "examples": [
+          {
+            "text": "**Das setzt voraus, dass** Nutzer das Standardverhalten verstehen, **was bei Erstnutzern möglicherweise nicht zutrifft**.",
+            "translation_ru": "Это предполагает, что пользователи понимают поведение по умолчанию, а для новичков это может быть неверно."
+          },
+          {
+            "text": "**Das setzt voraus, dass** der Quellzeitstempel verlässlich ist, **was nach einer Migration möglicherweise nicht zutrifft**.",
+            "translation_ru": "Это предполагает, что временной метке источника можно доверять, а после миграции это может быть неверно."
+          },
+          {
+            "text": "**Das setzt voraus, dass** niedrigere Kosten das wichtigste Entscheidungskriterium sind, **was für diesen Kunden möglicherweise nicht zutrifft**.",
+            "translation_ru": "Это предполагает, что низкая стоимость является главным критерием решения, а для этого клиента это может быть неверно."
+          },
+          {
+            "text": "**Das setzt voraus, dass** die beiden Gruppen vergleichbar sind, **was nach der Änderung der Stichprobe möglicherweise nicht zutrifft**.",
+            "translation_ru": "Это предполагает, что две группы сопоставимы, а после изменения выборки это может быть неверно."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF067",
+    "title_ru": "Полезная проверка — выяснить, X ли",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "diagnostic test",
+    "metaphor_ru": "Перевести спор из мнений в наблюдаемую проверку.",
+    "formulas": [
+      "A useful test would be whether [X].",
+      "Ein sinnvoller Test wäre, ob [X]."
+    ],
+    "reasoning": {
+      "move": "Test",
+      "what_it_does_en": "Convert a disputed explanation into a concrete diagnostic question that evidence can answer.",
+      "what_it_does_ru": "Превратить спорное объяснение в конкретный диагностический вопрос, на который могут ответить данные.",
+      "when_to_use_en": "Use it when discussion is circling around competing claims and one observation could reduce uncertainty.",
+      "when_to_use_ru": "Используйте, когда обсуждение ходит по кругу, а одно наблюдение может существенно снизить неопределённость.",
+      "contrast_en": "Keep debating which explanation sounds more plausible without specifying what to inspect.",
+      "common_mistake_en": "Choose a test that can discriminate between explanations, not merely produce another interesting metric.",
+      "common_mistake_ru": "Проверка должна различать объяснения, а не просто давать ещё одну интересную метрику."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "A useful test would be whether [X].",
+        "example": "**A useful test would be whether** the delay begins before or after the replication step.",
+        "translation": "Полезной проверкой было бы выяснить, начинается ли задержка до или после шага репликации.",
+        "examples": [
+          {
+            "text": "**A useful test would be whether** the error disappears when the optional field is removed.",
+            "translation_ru": "Полезной проверкой было бы выяснить, исчезает ли ошибка после удаления необязательного поля."
+          },
+          {
+            "text": "**A useful test would be whether** new users find the action without any instructions.",
+            "translation_ru": "Полезной проверкой было бы выяснить, находят ли новые пользователи нужное действие без инструкций."
+          },
+          {
+            "text": "**A useful test would be whether** the same pattern appears in an independent sample.",
+            "translation_ru": "Полезной проверкой было бы выяснить, появляется ли тот же паттерн в независимой выборке."
+          },
+          {
+            "text": "**A useful test would be whether** the result changes when we control for customer size.",
+            "translation_ru": "Полезной проверкой было бы выяснить, меняется ли результат после контроля размера клиента."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ein sinnvoller Test wäre, ob [X].",
+        "example": "**Ein sinnvoller Test wäre, ob** die Verzögerung vor oder nach dem Replikationsschritt beginnt.",
+        "translation": "Полезной проверкой было бы выяснить, начинается ли задержка до или после шага репликации.",
+        "examples": [
+          {
+            "text": "**Ein sinnvoller Test wäre, ob** der Fehler verschwindet, wenn das optionale Feld entfernt wird.",
+            "translation_ru": "Полезной проверкой было бы выяснить, исчезает ли ошибка после удаления необязательного поля."
+          },
+          {
+            "text": "**Ein sinnvoller Test wäre, ob** neue Nutzer die Aktion ohne Anleitung finden.",
+            "translation_ru": "Полезной проверкой было бы выяснить, находят ли новые пользователи нужное действие без инструкций."
+          },
+          {
+            "text": "**Ein sinnvoller Test wäre, ob** dasselbe Muster in einer unabhängigen Stichprobe auftritt.",
+            "translation_ru": "Полезной проверкой было бы выяснить, появляется ли тот же паттерн в независимой выборке."
+          },
+          {
+            "text": "**Ein sinnvoller Test wäre, ob** sich das Ergebnis ändert, wenn wir die Kundengröße kontrollieren.",
+            "translation_ru": "Полезной проверкой было бы выяснить, меняется ли результат после контроля размера клиента."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  },
+  {
+    "id": "CLF068",
+    "title_ru": "X могло повлиять на Y, но причина не единственная",
+    "group_id": "CLF",
+    "set_id": "CAU",
+    "logic": "causal contribution",
+    "metaphor_ru": "Признать вклад фактора, не превращая сложный результат в историю с одной причиной.",
+    "formulas": [
+      "[X] may have contributed to [Y], but it was not the only cause.",
+      "[X] mag zu [Y] beigetragen haben, war aber nicht die einzige Ursache."
+    ],
+    "reasoning": {
+      "move": "Cause",
+      "what_it_does_en": "Acknowledge a plausible causal contribution without claiming that one factor explains the whole outcome.",
+      "what_it_does_ru": "Признать вероятный причинный вклад фактора, не утверждая, что он объясняет весь результат.",
+      "when_to_use_en": "Use it when evidence supports X as one contributor but the outcome is clearly multi-causal.",
+      "when_to_use_ru": "Используйте, когда данные поддерживают X как один из факторов, но результат явно имеет несколько причин.",
+      "contrast_en": "X caused Y.",
+      "common_mistake_en": "Do not use may have contributed as empty hedging; there should be a plausible mechanism or evidence for X.",
+      "common_mistake_ru": "Не используйте «могло повлиять» как пустую оговорку: для X нужен правдоподобный механизм или данные."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] may have contributed to [Y], but it was not the only cause.",
+        "example": "The release timing **may have contributed to** the incident, **but it was not the only cause**.",
+        "translation": "Время релиза могло повлиять на инцидент, но это была не единственная причина.",
+        "examples": [
+          {
+            "text": "The new default **may have contributed to** the drop in completion, **but it was not the only cause**.",
+            "translation_ru": "Новая настройка по умолчанию могла повлиять на снижение завершения, но это была не единственная причина."
+          },
+          {
+            "text": "Higher load **may have contributed to** the latency, **but it was not the only cause**.",
+            "translation_ru": "Повышенная нагрузка могла повлиять на задержку, но это была не единственная причина."
+          },
+          {
+            "text": "The sampling change **may have contributed to** the observed difference, **but it was not the only cause**.",
+            "translation_ru": "Изменение выборки могло повлиять на наблюдаемое различие, но это была не единственная причина."
+          },
+          {
+            "text": "Poor documentation **may have contributed to** the support volume, **but it was not the only cause**.",
+            "translation_ru": "Слабая документация могла повлиять на объём обращений в поддержку, но это была не единственная причина."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] mag zu [Y] beigetragen haben, war aber nicht die einzige Ursache.",
+        "example": "Der Zeitpunkt des Releases **mag zu** dem Vorfall **beigetragen haben, war aber nicht die einzige Ursache**.",
+        "translation": "Время релиза могло повлиять на инцидент, но это была не единственная причина.",
+        "examples": [
+          {
+            "text": "Die neue Voreinstellung **mag zu** dem Rückgang der Abschlussrate **beigetragen haben, war aber nicht die einzige Ursache**.",
+            "translation_ru": "Новая настройка по умолчанию могла повлиять на снижение завершения, но это была не единственная причина."
+          },
+          {
+            "text": "Die höhere Last **mag zu** der Latenz **beigetragen haben, war aber nicht die einzige Ursache**.",
+            "translation_ru": "Повышенная нагрузка могла повлиять на задержку, но это была не единственная причина."
+          },
+          {
+            "text": "Die Änderung der Stichprobe **mag zu** dem beobachteten Unterschied **beigetragen haben, war aber nicht die einzige Ursache**.",
+            "translation_ru": "Изменение выборки могло повлиять на наблюдаемое различие, но это была не единственная причина."
+          },
+          {
+            "text": "Unzureichende Dokumentation **mag zu** dem Supportaufkommen **beigetragen haben, war aber nicht die einzige Ursache**.",
+            "translation_ru": "Слабая документация могла повлиять на объём обращений в поддержку, но это была не единственная причина."
+          }
+        ]
+      }
+    ],
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-08-17",
+      "languages": ["en", "de"],
+      "notes": "Editorial reasoning-corpus expansion."
+    }
+  }
+]
