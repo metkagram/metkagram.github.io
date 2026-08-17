@@ -30,7 +30,7 @@ Keep these in the private research core unless a specific release decision says 
 The GitHub Pages publication contains:
 
 - 12 documents from each of six English/German source collections, 72 documents total;
-- the curated reasoning-frame collection used by public Pattern Practice;
+- 28 curated reasoning-enabled English/German frames across 9 reasoning moves;
 - only the study-set metadata required by those published frames.
 
 `/data/advanced-patterns.json`, `/api/v1/patterns.json` and similar generated routes are full representations of the **public release only**. They are not exports of the private full corpus.
