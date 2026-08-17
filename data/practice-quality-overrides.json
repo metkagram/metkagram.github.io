@@ -1,0 +1,277 @@
+[
+  {
+    "pattern_id": "XPRCGR001",
+    "langs": {
+      "en": {
+        "additional_examples": [
+          {"text": "I remember **locking** the door, and I remembered to **leave** the key at reception.", "translation_ru": "Я помню, как запер дверь, и не забыл оставить ключ на стойке регистрации."},
+          {"text": "He remembers **seeing** the warning, but he did not remember to **report** it at the time.", "translation_ru": "Он помнит, как видел предупреждение, но тогда не вспомнил, что нужно о нём сообщить."}
+        ]
+      },
+      "de": {
+        "additional_examples": [
+          {"text": "Ich erinnere mich daran, die Tür **abgeschlossen zu haben**, und ich habe daran gedacht, den Schlüssel an der Rezeption **abzugeben**.", "translation_ru": "Я помню, как запер дверь, и не забыл оставить ключ на стойке регистрации."},
+          {"text": "Er erinnert sich daran, die Warnung **gesehen zu haben**, aber damals hat er nicht daran gedacht, sie **zu melden**.", "translation_ru": "Он помнит, как видел предупреждение, но тогда не вспомнил, что нужно о нём сообщить."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRCGR002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "We **used to deploy** once a month, but we are now **used to releasing** smaller updates every week.", "translation_ru": "Раньше мы выпускали обновления раз в месяц, а теперь привыкли делать небольшие релизы каждую неделю."},
+        {"text": "He **used to take** notes on paper, but he is now **used to recording** decisions in the project tool.", "translation_ru": "Раньше он делал заметки на бумаге, а теперь привык фиксировать решения в проектном инструменте."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "Früher **veröffentlichten** wir einmal im Monat eine neue Version, aber inzwischen sind wir daran **gewöhnt, jede Woche kleinere Updates auszuliefern**.", "translation_ru": "Раньше мы выпускали обновления раз в месяц, а теперь привыкли делать небольшие релизы каждую неделю."},
+        {"text": "Früher **machte** er Notizen auf Papier, aber inzwischen ist er daran **gewöhnt, Entscheidungen im Projekttool festzuhalten**.", "translation_ru": "Раньше он делал заметки на бумаге, а теперь привык фиксировать решения в проектном инструменте."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRCGR003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "Visitors **mustn't enter** the server room, but they **don't have to wear** a badge in the public lobby.", "translation_ru": "Посетителям нельзя входить в серверную, но в общедоступном холле им не обязательно носить бейдж."},
+        {"text": "You **mustn't publish** personal data, but you **don't have to remove** names from a completely fictional example.", "translation_ru": "Нельзя публиковать персональные данные, но из полностью вымышленного примера имена удалять не обязательно."}
+      ]},
+      "de": {
+        "formula": "Du darfst [X] nicht; du musst [Y] nicht.",
+        "example": "Du **darfst** die Produktivdaten **nicht weitergeben**, aber du **musst** das synthetische Beispiel **nicht anonymisieren**.",
+        "examples": [
+          {"text": "Wir **dürfen** die Freigabe **nicht überspringen**, aber wir **müssen nicht die gesamte Prüfung wiederholen**.", "translation_ru": "Нельзя пропускать согласование, но не обязательно повторять всю проверку."},
+          {"text": "Du **darfst** das Audit-Protokoll **nicht löschen**, aber du **musst** temporäre Debug-Dateien **nicht behalten**.", "translation_ru": "Нельзя удалять журнал аудита, но временные отладочные файлы хранить не обязательно."},
+          {"text": "Besucher **dürfen** den Serverraum **nicht betreten**, aber in der öffentlichen Lobby **müssen** sie **keinen Ausweis tragen**.", "translation_ru": "Посетителям нельзя входить в серверную, но в общедоступном холле им не обязательно носить бейдж."},
+          {"text": "Du **darfst** keine personenbezogenen Daten **veröffentlichen**, aber bei einem vollständig erfundenen Beispiel **musst** du die Namen **nicht entfernen**.", "translation_ru": "Нельзя публиковать персональные данные, но из полностью вымышленного примера имена удалять не обязательно."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRSPK001",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**The thing is**, the budget is approved, **but** procurement still takes two weeks.", "translation_ru": "Дело в том, что бюджет утверждён, но закупка всё равно занимает две недели."},
+        {"text": "**The thing is**, the interface works in the test system, **but** production uses a different configuration.", "translation_ru": "Дело в том, что интерфейс работает в тестовой системе, но в продуктиве используется другая конфигурация."}
+      ]},
+      "de": {
+        "formula": "Die Sache ist: [X], deshalb/aber [Y].",
+        "example": "**Die Sache ist:** Die Daten sind unvollständig, **deshalb** wäre jede Schlussfolgerung verfrüht.",
+        "examples": [
+          {"text": "**Die Sache ist:** Wir haben nur ein Szenario getestet, **deshalb** wissen wir nicht, wie sich die Regel in anderen Fällen verhält.", "translation_ru": "Дело в том, что мы проверили только один сценарий, поэтому не знаем, как правило ведёт себя в других случаях."},
+          {"text": "**Die Sache ist:** Der Termin wurde verschoben, **deshalb** passt der ursprüngliche Plan nicht mehr.", "translation_ru": "Дело в том, что срок изменился, поэтому исходный план больше не подходит."},
+          {"text": "**Die Sache ist:** Das Budget ist genehmigt, **aber** die Beschaffung dauert trotzdem zwei Wochen.", "translation_ru": "Дело в том, что бюджет утверждён, но закупка всё равно занимает две недели."},
+          {"text": "**Die Sache ist:** Die Schnittstelle funktioniert im Testsystem, **aber** die Produktion verwendet eine andere Konfiguration.", "translation_ru": "Дело в том, что интерфейс работает в тестовой системе, но в продуктиве используется другая конфигурация."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRSPK002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**It's just that** I'm not against the idea; I want to see stronger evidence before we commit.", "translation_ru": "Я не против самой идеи, просто хочу увидеть более убедительные данные, прежде чем мы возьмём на себя обязательства."},
+        {"text": "**It's just that** I can finish the review today, but I still need access to the source system.", "translation_ru": "Я могу закончить проверку сегодня, просто мне всё ещё нужен доступ к исходной системе."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "**Es ist nur so, dass** ich nichts gegen die Idee habe; ich möchte nur stärkere Belege sehen, bevor wir uns festlegen.", "translation_ru": "Я не против самой идеи, просто хочу увидеть более убедительные данные, прежде чем мы возьмём на себя обязательства."},
+        {"text": "**Es ist nur so, dass** ich die Prüfung heute abschließen kann, dafür aber noch Zugriff auf das Quellsystem brauche.", "translation_ru": "Я могу закончить проверку сегодня, просто мне всё ещё нужен доступ к исходной системе."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRSPK003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**What I was going to say was** that we should fix the cause, **not** just the symptom.", "translation_ru": "Я хотел сказать, что нужно исправить причину, а не только симптом."},
+        {"text": "**What I was going to say was** that we need a clear owner, **not** another meeting.", "translation_ru": "Я хотел сказать, что нам нужен понятный ответственный, а не ещё одна встреча."}
+      ]},
+      "de": {
+        "formula": "Was ich sagen wollte: [X], nicht [Y].",
+        "example": "**Was ich sagen wollte:** Wir brauchen einen kleineren Test, **nicht** noch einen vollständigen Rollout.",
+        "examples": [
+          {"text": "**Was ich sagen wollte:** Das Problem liegt beim Timing, **nicht** bei der Zuständigkeit.", "translation_ru": "Я хотел сказать, что проблема в сроках, а не в ответственности."},
+          {"text": "**Was ich sagen wollte:** Wir sollten die beiden Fälle vergleichen, **nicht** zusammenführen.", "translation_ru": "Я хотел сказать, что нужно сравнить два случая, а не объединять их."},
+          {"text": "**Was ich sagen wollte:** Wir sollten die Ursache beheben, **nicht** nur das Symptom.", "translation_ru": "Я хотел сказать, что нужно исправить причину, а не только симптом."},
+          {"text": "**Was ich sagen wollte:** Wir brauchen eine klare Zuständigkeit, **nicht** noch ein Meeting.", "translation_ru": "Я хотел сказать, что нам нужен понятный ответственный, а не ещё одна встреча."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRINT001",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**Can I come in here?** I think there are two different assumptions behind those numbers.", "translation_ru": "Можно я подключусь? Мне кажется, за этими цифрами стоят два разных предположения."},
+        {"text": "**Can I come in here?** I think we may be overlooking one important constraint.", "translation_ru": "Можно я подключусь? Мне кажется, мы можем упускать одно важное ограничение."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "**Darf ich kurz einhaken?** Ich denke, hinter diesen Zahlen stehen zwei unterschiedliche Annahmen.", "translation_ru": "Можно я подключусь? Мне кажется, за этими цифрами стоят два разных предположения."},
+        {"text": "**Darf ich kurz einhaken?** Ich denke, wir übersehen möglicherweise eine wichtige Einschränkung.", "translation_ru": "Можно я подключусь? Мне кажется, мы можем упускать одно важное ограничение."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRINT002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**Before we move on, can we clarify** what success would look like for this pilot?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, что именно будет считаться успехом этого пилота?"},
+        {"text": "**Before we move on, can we clarify** which points are facts and which are still assumptions?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, какие пункты являются фактами, а какие пока остаются предположениями?"}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "**Bevor wir weitermachen, können wir klären**, woran wir den Erfolg dieses Pilotprojekts messen?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, что именно будет считаться успехом этого пилота?"},
+        {"text": "**Bevor wir weitermachen, können wir klären**, welche Punkte Fakten sind und welche noch Annahmen?", "translation_ru": "Прежде чем двигаться дальше, можем уточнить, какие пункты являются фактами, а какие пока остаются предположениями?"}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRINT003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "**Just to pick up on that**, your point about cost also applies to long-term support.", "translation_ru": "Если продолжить эту мысль, замечание о стоимости относится и к долгосрочной поддержке."},
+        {"text": "**Just to pick up on that**, your earlier comment suggests we also need a fallback plan.", "translation_ru": "Если продолжить эту мысль, из предыдущего замечания следует, что нам также нужен резервный план."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "**Um daran anzuknüpfen:** Dein Punkt zu den Kosten gilt auch für den langfristigen Support.", "translation_ru": "Если продолжить эту мысль, замечание о стоимости относится и к долгосрочной поддержке."},
+        {"text": "**Um daran anzuknüpfen:** Dein früherer Hinweis deutet darauf hin, dass wir auch einen Plan B brauchen.", "translation_ru": "Если продолжить эту мысль, из предыдущего замечания следует, что нам также нужен резервный план."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRREG001",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "I don't think the data supports that conclusion. → I'm not sure the data supports that conclusion. → There are reasons to question whether the data supports that conclusion.", "translation_ru": "Не думаю, что данные подтверждают этот вывод. → Не уверен, что данные его подтверждают. → Есть основания сомневаться, подтверждают ли данные этот вывод."},
+        {"text": "I don't think the timeline is achievable. → I'm not sure the timeline is achievable. → There are reasons to question whether the timeline is achievable.", "translation_ru": "Не думаю, что этот срок достижим. → Не уверен, что этот срок достижим. → Есть основания сомневаться, реалистичен ли этот срок."}
+      ]},
+      "de": {
+        "formula": "Ich glaube nicht, dass [X]. → Ich bin nicht sicher, ob [X]. → Es gibt Gründe, daran zu zweifeln, ob [X].",
+        "example": "Ich glaube nicht, dass das skaliert. → Ich bin nicht sicher, ob das skaliert. → Es gibt Gründe, daran zu zweifeln, ob dieser Ansatz skaliert.",
+        "examples": [
+          {"text": "Ich glaube nicht, dass die Schätzung realistisch ist. → Ich bin nicht sicher, ob die Schätzung realistisch ist. → Es gibt Gründe, daran zu zweifeln, ob die Schätzung realistisch ist.", "translation_ru": "Не думаю, что оценка реалистична. → Не уверен, что оценка реалистична. → Есть основания сомневаться в реалистичности оценки."},
+          {"text": "Ich glaube nicht, dass diese Annahme gilt. → Ich bin nicht sicher, ob diese Annahme gilt. → Es gibt Gründe, daran zu zweifeln, ob diese Annahme noch gilt.", "translation_ru": "Не думаю, что это предположение верно. → Не уверен, что оно верно. → Есть основания сомневаться, остаётся ли это предположение верным."},
+          {"text": "Ich glaube nicht, dass die Daten diese Schlussfolgerung stützen. → Ich bin nicht sicher, ob die Daten diese Schlussfolgerung stützen. → Es gibt Gründe, daran zu zweifeln, ob die Daten diese Schlussfolgerung stützen.", "translation_ru": "Не думаю, что данные подтверждают этот вывод. → Не уверен, что данные его подтверждают. → Есть основания сомневаться, подтверждают ли данные этот вывод."},
+          {"text": "Ich glaube nicht, dass der Zeitplan realistisch ist. → Ich bin nicht sicher, ob der Zeitplan realistisch ist. → Es gibt Gründe, daran zu zweifeln, ob der Zeitplan realistisch ist.", "translation_ru": "Не думаю, что этот срок достижим. → Не уверен, что этот срок достижим. → Есть основания сомневаться, реалистичен ли этот срок."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRREG002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "Can you review the numbers before Friday? → Could you review the numbers before Friday? → I would appreciate it if you could review the numbers before Friday.", "translation_ru": "Можешь проверить цифры до пятницы? → Не мог бы ты проверить цифры до пятницы? → Буду признателен, если вы сможете проверить цифры до пятницы."},
+        {"text": "Can you add the source? → Could you add the source? → I would appreciate it if you could add the source.", "translation_ru": "Можешь добавить источник? → Не мог бы ты добавить источник? → Буду признателен, если вы сможете добавить источник."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "Kannst du die Zahlen bis Freitag prüfen? → Könntest du die Zahlen bis Freitag prüfen? → Ich wäre Ihnen dankbar, wenn Sie die Zahlen bis Freitag prüfen könnten.", "translation_ru": "Можешь проверить цифры до пятницы? → Не мог бы ты проверить цифры до пятницы? → Буду признателен, если вы сможете проверить цифры до пятницы."},
+        {"text": "Kannst du die Quelle ergänzen? → Könntest du die Quelle ergänzen? → Ich wäre Ihnen dankbar, wenn Sie die Quelle ergänzen könnten.", "translation_ru": "Можешь добавить источник? → Не мог бы ты добавить источник? → Буду признателен, если вы сможете добавить источник."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRREG003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "We need to reduce the scope. → We should consider reducing the scope. → It may be necessary to reduce the scope.", "translation_ru": "Нам нужно сократить объём. → Нам стоит рассмотреть сокращение объёма. → Возможно, объём потребуется сократить."},
+        {"text": "We need to involve security. → We should consider involving security. → It may be necessary to involve security.", "translation_ru": "Нам нужно подключить безопасность. → Нам стоит рассмотреть подключение команды безопасности. → Возможно, потребуется подключить команду безопасности."}
+      ]},
+      "de": {
+        "formula": "Wir müssen [X]. → Wir sollten erwägen, [X]. → Es könnte notwendig sein, [X].",
+        "example": "Wir müssen den Start verschieben. → Wir sollten **erwägen, den Start zu verschieben**. → Es könnte notwendig sein, den Start zu verschieben.",
+        "examples": [
+          {"text": "Wir müssen den Test wiederholen. → Wir sollten **erwägen, den Test zu wiederholen**. → Es könnte notwendig sein, den Test zu wiederholen.", "translation_ru": "Нам нужно повторить тест. → Нам стоит рассмотреть повтор теста. → Возможно, тест потребуется повторить."},
+          {"text": "Wir müssen die Regel ändern. → Wir sollten **erwägen, die Regel zu ändern**. → Es könnte notwendig sein, die Regel zu ändern.", "translation_ru": "Нам нужно изменить правило. → Нам стоит рассмотреть изменение правила. → Возможно, правило потребуется изменить."},
+          {"text": "Wir müssen den Umfang reduzieren. → Wir sollten **erwägen, den Umfang zu reduzieren**. → Es könnte notwendig sein, den Umfang zu reduzieren.", "translation_ru": "Нам нужно сократить объём. → Нам стоит рассмотреть сокращение объёма. → Возможно, объём потребуется сократить."},
+          {"text": "Wir müssen das Security-Team einbeziehen. → Wir sollten **erwägen, das Security-Team einzubeziehen**. → Es könnte notwendig sein, das Security-Team einzubeziehen.", "translation_ru": "Нам нужно подключить безопасность. → Нам стоит рассмотреть подключение команды безопасности. → Возможно, потребуется подключить команду безопасности."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRRTR001",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "❌ We need to discuss about the next steps. → ✓ We need to **discuss the next steps**.", "translation_ru": "Нам нужно обсудить следующие шаги."},
+        {"text": "❌ They discussed about the contract yesterday. → ✓ They **discussed the contract** yesterday.", "translation_ru": "Вчера они обсудили контракт."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "❌ Seit drei Monaten arbeitete er im neuen Team. → ✓ Seit drei Monaten **arbeitet er** im neuen Team.", "translation_ru": "Он работает в новой команде уже три месяца."},
+        {"text": "❌ Seit letzter Woche kannte ich die Ursache. → ✓ Seit letzter Woche **kenne ich** die Ursache.", "translation_ru": "Я знаю причину с прошлой недели."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRRTR002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "❌ Please explain us the result. → ✓ Please **explain the result to us**.", "translation_ru": "Пожалуйста, объясните нам результат."},
+        {"text": "❌ He explained the client the decision. → ✓ He **explained the decision to the client**.", "translation_ru": "Он объяснил решение клиенту."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "❌ weil wir müssen zuerst testen → ✓ weil wir zuerst **testen müssen**", "translation_ru": "потому что нам сначала нужно протестировать"},
+        {"text": "❌ weil die Daten fehlen noch → ✓ weil die Daten noch **fehlen**", "translation_ru": "потому что данных всё ещё не хватает"}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRRTR003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "❌ I am agree with that conclusion. → ✓ I **agree with** that conclusion.", "translation_ru": "Я согласен с этим выводом."},
+        {"text": "❌ We are not agree on the timing. → ✓ We **do not agree on** the timing.", "translation_ru": "Мы не согласны по срокам."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "❌ Wenn er gestern kam, begann die Besprechung. → ✓ **Als** er gestern kam, begann die Besprechung.", "translation_ru": "Когда он вчера пришёл, началась встреча."},
+        {"text": "❌ Wenn das Projekt begann, hatten wir nur drei Wochen. → ✓ **Als** das Projekt begann, hatten wir nur drei Wochen.", "translation_ru": "Когда проект начался, у нас было всего три недели."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRTRN001",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "Because the source data changed, we reran the comparison. → The source data changed, **which is why** we reran the comparison.", "translation_ru": "Поскольку исходные данные изменились, мы повторили сравнение. → Исходные данные изменились, поэтому мы повторили сравнение."},
+        {"text": "Because no owner was assigned, the task stalled. → No owner was assigned, **which is why** the task stalled.", "translation_ru": "Поскольку ответственный не был назначен, задача застопорилась. → Ответственный не был назначен, поэтому задача застопорилась."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "Weil sich die Quelldaten geändert haben, haben wir den Vergleich wiederholt. → Die Quelldaten haben sich geändert, **weshalb** wir den Vergleich wiederholt haben.", "translation_ru": "Поскольку исходные данные изменились, мы повторили сравнение. → Исходные данные изменились, поэтому мы повторили сравнение."},
+        {"text": "Weil niemand als Verantwortlicher festgelegt war, kam die Aufgabe ins Stocken. → Niemand war als Verantwortlicher festgelegt, **weshalb** die Aufgabe ins Stocken kam.", "translation_ru": "Поскольку ответственный не был назначен, задача застопорилась. → Ответственный не был назначен, поэтому задача застопорилась."}
+      ]}
+    }
+  },
+  {
+    "pattern_id": "XPRTRN002",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "Experts consider the method reliable. → The method **is considered to be reliable**.", "translation_ru": "Эксперты считают метод надёжным. → Метод считается надёжным."},
+        {"text": "Reviewers believe that the results overstate the effect. → The results **are believed to overstate** the effect.", "translation_ru": "Рецензенты считают, что результаты преувеличивают эффект. → Считается, что результаты преувеличивают эффект."}
+      ]},
+      "de": {
+        "formula": "Man geht davon aus, dass [X]. → Es wird davon ausgegangen, dass [X].",
+        "example": "Man geht davon aus, dass der neue Prozess Fehler reduziert. → **Es wird davon ausgegangen, dass** der neue Prozess Fehler reduziert.",
+        "translation": "Предполагают, что новый процесс снижает количество ошибок. → Считается, что новый процесс снижает количество ошибок.",
+        "examples": [
+          {"text": "Man geht davon aus, dass die Änderung Zeit spart. → **Es wird davon ausgegangen, dass** die Änderung Zeit spart.", "translation_ru": "Предполагают, что изменение экономит время. → Считается, что изменение экономит время."},
+          {"text": "Man nimmt an, dass das Pilotprojekt fortgesetzt wird. → **Es wird angenommen, dass** das Pilotprojekt fortgesetzt wird.", "translation_ru": "Предполагают, что пилот продолжится. → Предполагается, что пилот продолжится."},
+          {"text": "Man hält die Methode für zuverlässig. → Die Methode **gilt als zuverlässig**.", "translation_ru": "Метод считают надёжным. → Метод считается надёжным."},
+          {"text": "Man nimmt an, dass die Ergebnisse den Effekt überschätzen. → **Es wird angenommen, dass** die Ergebnisse den Effekt überschätzen.", "translation_ru": "Предполагают, что результаты преувеличивают эффект. → Считается, что результаты преувеличивают эффект."}
+        ]
+      }
+    }
+  },
+  {
+    "pattern_id": "XPRTRN003",
+    "langs": {
+      "en": {"additional_examples": [
+        {"text": "We only noticed the missing field after exporting the data. → **Only after** exporting the data **did we notice** the missing field.", "translation_ru": "Мы заметили отсутствующее поле только после экспорта данных. → Только после экспорта данных мы заметили отсутствующее поле."},
+        {"text": "We only understood the discrepancy after reading the logs. → **Only after** reading the logs **did we understand** the discrepancy.", "translation_ru": "Мы поняли расхождение только после чтения журналов. → Только после чтения журналов мы поняли расхождение."}
+      ]},
+      "de": {"additional_examples": [
+        {"text": "Wir bemerkten das fehlende Feld erst nach dem Datenexport. → **Erst nach** dem Datenexport **bemerkten wir** das fehlende Feld.", "translation_ru": "Мы заметили отсутствующее поле только после экспорта данных. → Только после экспорта данных мы заметили отсутствующее поле."},
+        {"text": "Wir verstanden die Abweichung erst nach dem Lesen der Logs. → **Erst nach** dem Lesen der Logs **verstanden wir** die Abweichung.", "translation_ru": "Мы поняли расхождение только после чтения журналов. → Только после чтения журналов мы поняли расхождение."}
+      ]}
+    }
+  }
+]
