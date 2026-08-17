@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Internal editorial regression benchmark for routing a communicative goal to a Metkagram reasoning intent and reusable frame. It is not evidence of learning efficacy or a statistically independent model benchmark.",
+  "method": {
+    "caseCount": 54,
+    "core": "Two natural-language cases per intent: one English and one Russian.",
+    "near_neighbor": "One additional English case per intent, written to distinguish adjacent intents that share the same reasoning move.",
+    "grading": "Primary intent, reasoning move, and a set of editorially acceptable frames are checked at ranked cutoffs. Multiple frames may be valid.",
+    "limitations": "Cases and taxonomy are curated by the same project. Treat the results as a regression and editorial-quality signal, not external validation."
+  },
+  "cases": [
+    {
+      "id": "B01",
+      "split": "core",
+      "locale": "en",
+      "query": "I need a tactful way to say the rollout conclusion is too strong without sounding confrontational.",
+      "expected_intent": "disagree-politely",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF058", "CLF055", "CLF066"]
+    },
+    {
+      "id": "B02",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно мягко сказать коллеге, что его вывод слишком уверенный и не учитывает часть фактов.",
+      "expected_intent": "disagree-politely",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF058", "CLF055", "CLF066"]
+    },
+    {
+      "id": "B03",
+      "split": "core",
+      "locale": "en",
+      "query": "The proposal quietly assumes users will always be online; I want to challenge that premise.",
+      "expected_intent": "question-an-assumption",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF066"]
+    },
+    {
+      "id": "B04",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу показать, что в рассуждении спрятано сомнительное предположение о стабильности данных.",
+      "expected_intent": "question-an-assumption",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF066"]
+    },
+    {
+      "id": "B05",
+      "split": "core",
+      "locale": "en",
+      "query": "They think the model itself is the problem, but the real issue is how often the workflow calls it.",
+      "expected_intent": "correct-an-assumption",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "B06",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно поправить интерпретацию: дело не в объёме данных, а в том, что их происхождение нельзя проверить.",
+      "expected_intent": "correct-an-assumption",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "B07",
+      "split": "core",
+      "locale": "en",
+      "query": "I do not want to reject the goal; I want to make clear that my concern is the deadline, not the objective.",
+      "expected_intent": "clarify-what-you-mean",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "B08",
+      "split": "core",
+      "locale": "ru",
+      "query": "Надо уточнить: я не против идеи, я говорю о способе её реализации.",
+      "expected_intent": "clarify-what-you-mean",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "B09",
+      "split": "core",
+      "locale": "en",
+      "query": "We can approve the launch only after the rollback path is tested.",
+      "expected_intent": "set-a-condition",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF044", "CLF045"]
+    },
+    {
+      "id": "B10",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу сказать, что запуск возможен только при согласованном и проверенном плане отката.",
+      "expected_intent": "set-a-condition",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF044"]
+    },
+    {
+      "id": "B11",
+      "split": "core",
+      "locale": "en",
+      "query": "Before we automate this process, ownership has to be clear and agreed.",
+      "expected_intent": "state-a-prerequisite",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF043", "CLF045"]
+    },
+    {
+      "id": "B12",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно объяснить, что сначала надо определить владельца процесса, и только потом автоматизировать.",
+      "expected_intent": "state-a-prerequisite",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF043", "CLF045"]
+    },
+    {
+      "id": "B13",
+      "split": "core",
+      "locale": "en",
+      "query": "The delay came from several factors: missing data and a late approval.",
+      "expected_intent": "explain-a-cause",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF060", "CLF068"]
+    },
+    {
+      "id": "B14",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу объяснить, что результат вызван сочетанием двух причин, а не одной.",
+      "expected_intent": "explain-a-cause",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF060", "CLF068"]
+    },
+    {
+      "id": "B15",
+      "split": "core",
+      "locale": "en",
+      "query": "The missing identifier creates bad matches, and those bad matches then produce manual rework.",
+      "expected_intent": "connect-cause-and-effect",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF059"]
+    },
+    {
+      "id": "B16",
+      "split": "core",
+      "locale": "ru",
+      "query": "Надо показать цепочку: ошибка в данных приводит к неверному сопоставлению, а оно затем к ручной работе.",
+      "expected_intent": "connect-cause-and-effect",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF059"]
+    },
+    {
+      "id": "B17",
+      "split": "core",
+      "locale": "en",
+      "query": "The same failure appears in three environments; I want to say this points to a shared configuration issue without claiming proof.",
+      "expected_intent": "draw-a-conclusion",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF051", "CLF052"]
+    },
+    {
+      "id": "B18",
+      "split": "core",
+      "locale": "ru",
+      "query": "Есть несколько наблюдений, из них нужно осторожно сделать вывод, но не выдавать его за доказанный факт.",
+      "expected_intent": "draw-a-conclusion",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF051", "CLF052"]
+    },
+    {
+      "id": "B19",
+      "split": "core",
+      "locale": "en",
+      "query": "Given the logs, the most plausible explanation is that the queue stalled before replication.",
+      "expected_intent": "offer-a-likely-explanation",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF053"]
+    },
+    {
+      "id": "B20",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно предложить наиболее вероятное объяснение сбоя, не выдавая его за установленный факт.",
+      "expected_intent": "offer-a-likely-explanation",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF053", "CLF052"]
+    },
+    {
+      "id": "B21",
+      "split": "core",
+      "locale": "en",
+      "query": "I need to compare option A and option B on maintainability so the comparison helps us choose.",
+      "expected_intent": "compare-alternatives",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF064", "CLF054"]
+    },
+    {
+      "id": "B22",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу сопоставить два варианта по одному критерию, чтобы сравнение помогло принять решение.",
+      "expected_intent": "compare-alternatives",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF064", "CLF054"]
+    },
+    {
+      "id": "B23",
+      "split": "core",
+      "locale": "en",
+      "query": "The pilot optimizes for speed while production needs recoverability; I want that difference to be explicit.",
+      "expected_intent": "show-a-difference",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF063", "CLF064"]
+    },
+    {
+      "id": "B24",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно явно показать, чем два подхода отличаются по надёжности и скорости.",
+      "expected_intent": "show-a-difference",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF063", "CLF064"]
+    },
+    {
+      "id": "B25",
+      "split": "core",
+      "locale": "en",
+      "query": "The rule works for standard orders but not emergency ones; I need to narrow the claim to its real scope.",
+      "expected_intent": "qualify-a-claim",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF065"]
+    },
+    {
+      "id": "B26",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно ограничить утверждение: оно верно для стандартного случая, но не для исключений.",
+      "expected_intent": "qualify-a-claim",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF065"]
+    },
+    {
+      "id": "B27",
+      "split": "core",
+      "locale": "en",
+      "query": "A passing test matters, but one test cannot establish production readiness.",
+      "expected_intent": "show-something-is-not-enough",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF041", "CLF042"]
+    },
+    {
+      "id": "B28",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу сказать, что одного совпадения недостаточно, чтобы считать запись правильно идентифицированной.",
+      "expected_intent": "show-something-is-not-enough",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF041", "CLF042"]
+    },
+    {
+      "id": "B29",
+      "split": "core",
+      "locale": "en",
+      "query": "We need to decide between lower cost and easier recovery and make the trade-off explicit.",
+      "expected_intent": "choose-between-options",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF046", "CLF047"]
+    },
+    {
+      "id": "B30",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно выбрать между скоростью и надёжностью, явно показав компромисс.",
+      "expected_intent": "choose-between-options",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF046", "CLF047"]
+    },
+    {
+      "id": "B31",
+      "split": "core",
+      "locale": "en",
+      "query": "We chose the simpler approach because the support team must own it after launch.",
+      "expected_intent": "state-a-decision",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF069", "CLF049", "CLF048"]
+    },
+    {
+      "id": "B32",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно сформулировать уже принятое решение и сразу объяснить, почему выбрали этот вариант.",
+      "expected_intent": "state-a-decision",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF069", "CLF049", "CLF048"]
+    },
+    {
+      "id": "B33",
+      "split": "core",
+      "locale": "en",
+      "query": "If the hypothesis is right, what observable result should we expect to see?",
+      "expected_intent": "test-an-idea",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF056", "CLF067"]
+    },
+    {
+      "id": "B34",
+      "split": "core",
+      "locale": "ru",
+      "query": "Хочу превратить гипотезу в проверяемое предсказание: что мы должны увидеть, если она верна?",
+      "expected_intent": "test-an-idea",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF056", "CLF067"]
+    },
+    {
+      "id": "B35",
+      "split": "core",
+      "locale": "en",
+      "query": "I want to state what evidence would make me revise my current conclusion.",
+      "expected_intent": "ask-what-would-change-the-conclusion",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF070", "CLF057", "CLF067"]
+    },
+    {
+      "id": "B36",
+      "split": "core",
+      "locale": "ru",
+      "query": "Нужно спросить, при каких новых данных мы изменим нынешний вывод.",
+      "expected_intent": "ask-what-would-change-the-conclusion",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF070", "CLF057", "CLF067"]
+    },
+    {
+      "id": "H01",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "I accept part of their reasoning, but I need to temper the conclusion in a cooperative tone.",
+      "expected_intent": "disagree-politely",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF058", "CLF055", "CLF066"]
+    },
+    {
+      "id": "H02",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "The business case treats perfect adoption as guaranteed; I need to expose that unstated premise.",
+      "expected_intent": "question-an-assumption",
+      "expected_move": "Challenge",
+      "acceptable_patterns": ["CLF066"]
+    },
+    {
+      "id": "H03",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Everyone is blaming the interface, yet the actual bottleneck is the approval process.",
+      "expected_intent": "correct-an-assumption",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "H04",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "My point is being read as opposition to the project; I need to redirect that interpretation toward the timing concern.",
+      "expected_intent": "clarify-what-you-mean",
+      "expected_move": "Reframe",
+      "acceptable_patterns": ["CLF061", "CLF062"]
+    },
+    {
+      "id": "H05",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "The release may proceed, but only once monitoring is active.",
+      "expected_intent": "set-a-condition",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF044", "CLF045"]
+    },
+    {
+      "id": "H06",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Monitoring cannot work until every event has a reliable timestamp.",
+      "expected_intent": "state-a-prerequisite",
+      "expected_move": "Condition",
+      "acceptable_patterns": ["CLF043", "CLF045"]
+    },
+    {
+      "id": "H07",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "The incident was produced by a mix of configuration drift and stale master data.",
+      "expected_intent": "explain-a-cause",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF060", "CLF068"]
+    },
+    {
+      "id": "H08",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Stale master data produces a bad mapping, which then triggers the downstream exception.",
+      "expected_intent": "connect-cause-and-effect",
+      "expected_move": "Cause",
+      "acceptable_patterns": ["CLF059"]
+    },
+    {
+      "id": "H09",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Three independent checks point in the same direction, so I want a cautious inference rather than a certainty.",
+      "expected_intent": "draw-a-conclusion",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF051", "CLF052"]
+    },
+    {
+      "id": "H10",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Among several possibilities, one interpretation fits the evidence best and I want to present it as probable.",
+      "expected_intent": "offer-a-likely-explanation",
+      "expected_move": "Infer",
+      "acceptable_patterns": ["CLF053"]
+    },
+    {
+      "id": "H11",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Put the two designs side by side on recovery time so we can decide between them.",
+      "expected_intent": "compare-alternatives",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF064", "CLF054"]
+    },
+    {
+      "id": "H12",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "One design favors throughput; the other favors resilience. I want the contrast itself to stand out.",
+      "expected_intent": "show-a-difference",
+      "expected_move": "Compare",
+      "acceptable_patterns": ["CLF063", "CLF064"]
+    },
+    {
+      "id": "H13",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "This is true in the pilot, but I do not want the statement generalized to production.",
+      "expected_intent": "qualify-a-claim",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF065"]
+    },
+    {
+      "id": "H14",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "A correlation is useful evidence, yet by itself it cannot justify the migration decision.",
+      "expected_intent": "show-something-is-not-enough",
+      "expected_move": "Limit",
+      "acceptable_patterns": ["CLF041", "CLF042"]
+    },
+    {
+      "id": "H15",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "The team must pick either faster delivery or lower operational risk, and the tradeoff should drive the choice.",
+      "expected_intent": "choose-between-options",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF046", "CLF047"]
+    },
+    {
+      "id": "H16",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "The option has already been selected; now I need one sentence that states the choice and the reason behind it.",
+      "expected_intent": "state-a-decision",
+      "expected_move": "Decide",
+      "acceptable_patterns": ["CLF069", "CLF049", "CLF048"]
+    },
+    {
+      "id": "H17",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "Turn the claim into a prediction that would be visible if the claim were correct.",
+      "expected_intent": "test-an-idea",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF056", "CLF067"]
+    },
+    {
+      "id": "H18",
+      "split": "near_neighbor",
+      "locale": "en",
+      "query": "I want to define the observation that would force us to reconsider the current answer.",
+      "expected_intent": "ask-what-would-change-the-conclusion",
+      "expected_move": "Test",
+      "acceptable_patterns": ["CLF070", "CLF057", "CLF067"]
+    }
+  ]
+}

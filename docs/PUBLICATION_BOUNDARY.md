@@ -12,7 +12,7 @@ Keep these in the private research core unless a specific release decision says 
 - full annotated document collections;
 - model-preparation and generated annotation datasets;
 - annotation-engine implementation, heuristics and lexical rule tables;
-- generation prompts, intermediate data and evaluation artifacts;
+- generation prompts, intermediate data and private/raw evaluation artifacts;
 - unpublished experiments and research notes;
 - implementation details whose release would materially reduce the work required to reproduce the complete system.
 
@@ -23,6 +23,7 @@ Keep these in the private research core unless a specific release decision says 
 - curated reasoning frames and reusable language examples;
 - schemas, provenance and interoperability examples for the public sample;
 - research hypotheses, methodology and aggregate results approved for release;
+- bounded evaluation benchmarks and reports when they operate only on published material and do not expose the private generation pipeline;
 - website/UI code needed to publish and inspect the released material.
 
 ## Current release boundary
@@ -30,8 +31,11 @@ Keep these in the private research core unless a specific release decision says 
 The GitHub Pages publication contains:
 
 - 12 documents from each of six English/German source collections, 72 documents total;
-- 28 curated reasoning-enabled English/German frames across 9 reasoning moves;
-- only the study-set metadata required by those published frames.
+- 30 curated reasoning-enabled English/German frames across 9 reasoning moves;
+- only the study-set metadata required by those published frames;
+- a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer, plus its generated evaluation report.
+
+The evaluation benchmark is published deliberately for transparency and regression testing. It measures deterministic intent → reasoning move → public frame routing against curated expectations. It is **not** independent validation and **not** evidence that the learning method improves outcomes.
 
 `/data/advanced-patterns.json`, `/api/v1/patterns.json` and similar generated routes are full representations of the **public release only**. They are not exports of the private full corpus.
 
@@ -45,6 +49,7 @@ Before merging a public release:
 4. Confirm every public dataset is intentionally bounded and documented.
 5. Check licensing/provenance metadata remains attached to machine-readable exports.
 6. Review whether a new file makes reconstruction of the private pipeline materially easier.
+7. If an evaluation artifact is public, confirm that it references only deliberately published material and states its evidence limits.
 
 ## Forbidden public paths
 

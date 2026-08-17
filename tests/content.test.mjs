@@ -25,7 +25,7 @@ test("source content validates and public practice stays deliberately bounded", 
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
   assert.ok(counts.annotatedSentences > 0);
-  assert.equal(counts.advancedPatterns, 28);
+  assert.equal(counts.advancedPatterns, 30);
   assert.deepEqual(content.studySets.sets.map((set) => set.id).sort(), ["CAU", "CLR", "CND", "EVD", "NEG", "PRB"]);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
   assert.ok(content.advancedPatterns.every((pattern) => pattern.reasoning?.move));

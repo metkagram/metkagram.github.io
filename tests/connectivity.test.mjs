@@ -14,14 +14,14 @@ function html(...parts) {
 
 test("connectivity graph describes only the bounded public release", () => {
   assert.equal(graph.schemaVersion, 1);
-  assert.equal(graph.sourceCounts.advancedPatterns, 28);
+  assert.equal(graph.sourceCounts.advancedPatterns, 30);
   assert.equal(graph.sourceCounts.annotatedDocuments, 72);
-  assert.equal(graph.sourceCounts.reasoningFrames, 28);
-  assert.equal(patterns.length, 28);
-  assert.equal(reasoning.count, 28);
+  assert.equal(graph.sourceCounts.reasoningFrames, 30);
+  assert.equal(patterns.length, 30);
+  assert.equal(reasoning.count, 30);
   assert.equal(graph.relationCounts.reasoningMoveCount, 9);
   assert.equal(Object.keys(graph.documents).length, 72);
-  assert.equal(Object.keys(graph.patterns).length, 28);
+  assert.equal(Object.keys(graph.patterns).length, 30);
 });
 
 test("practice and a reasoning detail page expose server-rendered reasoning navigation", () => {

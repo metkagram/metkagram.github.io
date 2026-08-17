@@ -84,6 +84,9 @@ export function buildCompleteSearchIndex(content) {
     description_ru: intent.description_ru,
     queries_en: intent.queries_en,
     queries_ru: intent.queries_ru,
+    signals_en: intent.signals_en,
+    signals_ru: intent.signals_ru,
+    pattern_priority: intent.pattern_priority,
     pattern_ids: intent.pattern_ids,
     canonical_url: intent.routes.en,
   }));

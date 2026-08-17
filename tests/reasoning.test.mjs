@@ -5,7 +5,7 @@ import test from "node:test";
 import { loadContent } from "../src/content.mjs";
 
 const ROOT = process.cwd();
-const FILES = ["clf-041-044.json", "clf-045-048.json", "clf-049-052.json", "clf-053-056.json", "clf-057-060.json", "clf-061-068.json"];
+const FILES = ["clf-041-044.json", "clf-045-048.json", "clf-049-052.json", "clf-053-056.json", "clf-057-060.json", "clf-061-068.json", "clf-069-070.json"];
 
 test("reasoning frame source and public assets stay identical", () => {
   for (const name of FILES) {
@@ -15,15 +15,24 @@ test("reasoning frame source and public assets stay identical", () => {
   }
 });
 
-test("public reasoning showcase is complete enough to inspect the method", () => {
+test("public reasoning showcase is complete enough to inspect and evaluate the method", () => {
   const reasoning = loadContent().advancedPatterns;
-  assert.equal(reasoning.length, 28);
+  assert.equal(reasoning.length, 30);
   assert.ok(reasoning.every((pattern) => pattern.reasoning?.move));
   assert.equal(new Set(reasoning.map((pattern) => pattern.reasoning.move)).size, 9);
   assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));
   assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 2)));
   assert.ok(reasoning.every((pattern) => pattern.quality?.translations_complete));
   assert.ok(reasoning.every((pattern) => pattern.quality?.indexable));
+
+  const byId = new Map(reasoning.map((pattern) => [pattern.id, pattern]));
+  assert.equal(byId.get("CLF069")?.reasoning.move, "Decide");
+  assert.equal(byId.get("CLF070")?.reasoning.move, "Test");
+  for (const id of ["CLF069", "CLF070"]) {
+    const pattern = byId.get(id);
+    assert.ok(pattern, `${id} must be public`);
+    assert.ok(pattern.langs.every((lang) => lang.examples.length >= 4), `${id} needs four editorial variations per language`);
+  }
 });
 
 test("practice enhancement still loads every published reasoning source", () => {
@@ -31,4 +40,5 @@ test("practice enhancement still loads every published reasoning source", () => 
   for (const name of FILES) assert.match(app, new RegExp(name.replaceAll(".", "\\.")));
   assert.match(app, /dataReasoning|dataset\.reasoning/);
   assert.match(app, /Reasoning move/);
+  assert.match(app, /import "\.\/licensing-runtime\.js"/);
 });

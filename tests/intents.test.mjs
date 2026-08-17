@@ -13,18 +13,27 @@ function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 }
 
-test("intent dataset maps human goals to reasoning moves and patterns", () => {
+test("intent dataset maps human goals to reasoning moves and calibrated patterns", () => {
   const dataset = readJson("data", "intents.json");
-  assert.equal(dataset.schemaVersion, 1);
+  assert.equal(dataset.schemaVersion, 2);
   assert.equal(dataset.intentCount, 18);
   assert.equal(dataset.reasoningMoveCount, 9);
   assert.equal(dataset.items.length, 18);
+  assert.equal(dataset.resolver.type, "deterministic_editorial");
+  assert.equal(dataset.resolver.runtime_ai_required, false);
 
   const ids = new Set(dataset.items.map((intent) => intent.id));
   assert.ok(ids.has("disagree-politely"));
   assert.ok(ids.has("correct-an-assumption"));
   assert.ok(ids.has("draw-a-conclusion"));
   assert.ok(dataset.items.every((intent) => intent.pattern_ids.length > 0));
+  assert.ok(dataset.items.every((intent) => intent.signals_en.length > 0 && intent.signals_ru.length > 0));
+  assert.ok(dataset.items.every((intent) => intent.pattern_priority.length > 0));
+
+  const stateDecision = dataset.items.find((intent) => intent.id === "state-a-decision");
+  assert.equal(stateDecision.pattern_ids[0], "CLF069");
+  const revision = dataset.items.find((intent) => intent.id === "ask-what-would-change-the-conclusion");
+  assert.equal(revision.pattern_ids[0], "CLF070");
 });
 
 test("intent discovery is present in the public search index", () => {
@@ -42,6 +51,7 @@ test("intent browser is server-rendered and indexed", () => {
   assert.match(page, /id="intent-disagree-politely"/);
   assert.match(page, /id="intent-correct-an-assumption"/);
   assert.match(page, /Reasoning move · Challenge/);
+  assert.match(page, /data-reasoning-evaluation="summary"/);
 
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/intents\//);
