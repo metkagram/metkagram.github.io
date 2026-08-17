@@ -1,0 +1,80 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import test from "node:test";
+
+const ROOT = process.cwd();
+const DIST = path.join(ROOT, "dist");
+const topicsSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "discovery-topics.json"), "utf8"));
+const opportunitiesSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "partnership-opportunities.json"), "utf8"));
+const studySets = JSON.parse(fs.readFileSync(path.join(DIST, "data", "study-sets.json"), "utf8"));
+const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
+const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "site-pages.json"), "utf8"));
+
+function html(...parts) {
+  return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
+}
+
+test("Pattern Atlas topics are curated against real study sets", () => {
+  assert.equal(topicsSource.schemaVersion, 1);
+  assert.ok(topicsSource.topics.length >= 10);
+  assert.ok(topicsSource.topics.length <= 30, "discovery layer should stay deliberately curated");
+
+  const validSets = new Set(studySets.sets.map((set) => set.id));
+  const ids = new Set(topicsSource.topics.map((topic) => topic.id));
+  assert.equal(ids.size, topicsSource.topics.length);
+  assert.equal(new Set(topicsSource.topics.map((topic) => topic.slug)).size, topicsSource.topics.length);
+
+  for (const topic of topicsSource.topics) {
+    assert.ok(topic.set_ids.length > 0, `${topic.id} has no study sets`);
+    assert.ok(topic.use_cases_en.length >= 3, `${topic.id} has too few English use cases`);
+    assert.ok(topic.use_cases_ru.length >= 3, `${topic.id} has too few Russian use cases`);
+    for (const setId of topic.set_ids) assert.ok(validSets.has(setId), `${topic.id} references unknown set ${setId}`);
+    for (const related of topic.related) assert.ok(ids.has(related), `${topic.id} references unknown related topic ${related}`);
+  }
+});
+
+test("Pattern Atlas is visible, canonical and included in discovery infrastructure", () => {
+  const routes = new Set(inventory.pages.map((page) => page.route));
+  for (const locale of ["en", "ru"]) {
+    const index = html(locale, "patterns");
+    const practice = html(locale, "practice");
+    assert.match(index, /Pattern Atlas|Атлас языковых паттернов/);
+    assert.match(index, /application\/ld\+json/);
+    assert.doesNotMatch(index, /#mobile-application/);
+    assert.match(practice, new RegExp(`href="/${locale}/patterns/"`));
+    assert.ok(routes.has(`/${locale}/patterns/`));
+    assert.match(sitemap, new RegExp(`<loc>https://metkagram\\.github\\.io/${locale}/patterns/</loc>`));
+
+    for (const topic of topicsSource.topics) {
+      const page = html(locale, "patterns", topic.slug);
+      assert.match(page, /LearningResource/);
+      assert.match(page, /ItemList/);
+      assert.doesNotMatch(page, /#mobile-application/);
+      assert.ok(routes.has(`/${locale}/patterns/${topic.slug}/`));
+      assert.match(sitemap, new RegExp(`<loc>https://metkagram\\.github\\.io/${locale}/patterns/${topic.slug}/</loc>`));
+      for (const setId of topic.set_ids) assert.match(page, new RegExp(`/practice/set/${setId.toLowerCase()}/`));
+    }
+  }
+
+  const publicTopics = JSON.parse(fs.readFileSync(path.join(DIST, "data", "discovery-topics.json"), "utf8"));
+  const seoTopics = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "discovery-topics.json"), "utf8"));
+  assert.equal(publicTopics.topics.length, topicsSource.topics.length);
+  assert.equal(seoTopics.topicCount, topicsSource.topics.length);
+  assert.equal(seoTopics.routes.length, topicsSource.topics.length * 2 + 2);
+});
+
+test("public partnership page exposes bounded pilot packages", () => {
+  assert.equal(opportunitiesSource.schemaVersion, 1);
+  assert.ok(opportunitiesSource.opportunities.length >= 4);
+  for (const locale of ["en", "ru"]) {
+    const support = html(locale, "support");
+    assert.match(support, /id="partnership-pilots"/);
+    for (const item of opportunitiesSource.opportunities) {
+      assert.match(support, new RegExp(locale === "ru" ? item.title_ru : item.title_en));
+    }
+  }
+
+  const publicOpportunities = JSON.parse(fs.readFileSync(path.join(DIST, "data", "partnership-opportunities.json"), "utf8"));
+  assert.equal(publicOpportunities.opportunities.length, opportunitiesSource.opportunities.length);
+});
