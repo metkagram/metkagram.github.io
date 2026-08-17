@@ -26,6 +26,14 @@ A smaller reasoning-enabled subset currently adds explicit reasoning moves, logi
 
 Pattern quantity alone is not evidence of learning quality. The existing curriculum is public because it is the learner-facing product, while generation machinery, private research assets and the full annotation pipeline remain outside the public release boundary.
 
+### Pattern Atlas
+
+`/en/patterns/` and `/ru/patterns/` are the semantic discovery layer over the Practice library. They organise validated study sets around real learner jobs such as argumentation, hedging, disagreement, conditionals, professional communication, advanced questions and German word order rather than requiring a visitor to know an internal pattern ID or category code.
+
+The Atlas is deliberately editorial. `data/discovery-topics.json` maps a small number of substantial communication goals to existing study sets and canonical patterns; it is not generated from long-tail keyword permutations. Topic pages expose visible examples, related routes, stable canonical links and machine-readable `LearningResource` / `ItemList` metadata.
+
+This is also the preferred human entry point when a learner knows **what they want to say** but does not yet know the grammar label.
+
 ### Pattern Graph
 
 The production build derives a bounded graph over the reasoning-enabled public patterns. It connects nearby structures using explicit metadata such as reasoning move, study set and shared logic vocabulary.
@@ -50,11 +58,19 @@ AI is treated as a tutor/interface, not as the canonical curriculum. Agents can 
 
 Machine-readable guidance is published at `/api/v1/teaching-manifest.json`. The existing `/api/v1/mcp-server.json` is a static adapter/tool manifest, not a hosted remote MCP transport endpoint.
 
+The generated data catalog and `llms.txt` also expose Pattern Atlas as an intent-to-pattern entry point. These files help compatible agents discover the resource; they are not presented as ranking shortcuts for web search.
+
+### Distribution and collaboration
+
+The public Support page exposes bounded pilot packages for university research, teacher-curated topic packs, learning-tool distribution and AI-tutor integrations. The machine-readable list is published at `/data/partnership-opportunities.json`.
+
+The broader organic-search, dataset, teacher-distribution and partnership plan is documented in [docs/GROWTH_STRATEGY.md](docs/GROWTH_STRATEGY.md). Search policy and indexability rules are documented in [docs/SEO.md](docs/SEO.md).
+
 ## Product sequence
 
 The working sequence is:
 
-**Pattern Lens → Pattern Graph → active practice loop → H1 pilot → H1 report → agent/API integrations → teacher/research/EdTech pilots**
+**Pattern Lens → Pattern Atlas → Pattern Graph → active practice loop → H1 pilot → H1 report → agent/API integrations → teacher/research/EdTech pilots**
 
 The learner-facing Practice library remains a core content layer underneath that sequence.
 
@@ -68,7 +84,7 @@ The public release intentionally contains:
 - the established 1,000+ reusable B2–C1 Practice curriculum with study sets and learning paths;
 - 30 curated reasoning-enabled English/German frames across 9 reasoning moves;
 - public evaluation fixtures that operate only on deliberately published material;
-- Pattern Lens, Pattern Graph and local-first practice code;
+- Pattern Lens, Pattern Atlas, Pattern Graph and local-first practice code;
 - public schemas, provenance, APIs, research documentation and website code.
 
 The private research core retains the full annotated corpus, bulk annotation/model-preparation exports, annotation engine and spaCy pipeline, linguistic heuristics and lexical rule tables, generation prompts/intermediate assets, participant data and unpublished research work.
@@ -94,18 +110,20 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` validates the full public Practice curriculum, builds the static site, generates public-learning, Pattern Lens and Pattern Graph outputs, runs regression tests and checks internal links. Publication-boundary tests protect private research infrastructure without treating the public Practice corpus as private.
+`npm run verify` validates the full public Practice curriculum, builds the static site, generates public-learning, Pattern Lens, Pattern Atlas and Pattern Graph outputs, runs regression tests and checks internal links. Publication-boundary tests protect private research infrastructure without treating the public Practice corpus as private.
 
 ## Public content sources
 
 - `data/advanced-patterns.json` contains the full learner-facing Practice curriculum.
 - `data/study-sets.json` contains study sets and learning paths.
+- `data/discovery-topics.json` contains the curated Pattern Atlas topic map.
+- `data/partnership-opportunities.json` contains the bounded public collaboration formats.
 - `data/reasoning-frames/` contains the curated reasoning-enabled extension.
 - `data/metkagram-export/` contains the selected annotation showcase only.
 - `data/evaluation/` contains bounded public regression fixtures over published material.
 - `data/publication-manifest.json` records the deliberate release boundary.
 
-Generated outputs include `/data/advanced-patterns.json`, `/data/pattern-graph.json`, `/data/reasoning-evaluation.json`, `/api/v1/*` and `/api/v1/teaching-manifest.json`.
+Generated outputs include `/data/advanced-patterns.json`, `/data/discovery-topics.json`, `/data/pattern-graph.json`, `/data/reasoning-evaluation.json`, `/api/v1/*` and `/api/v1/teaching-manifest.json`.
 
 ## Research and licensing
 
