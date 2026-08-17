@@ -65,7 +65,11 @@ The initial research sequence is:
 
 Negative and null findings are useful outputs and should be retained.
 
-The next major product milestone is a small preregistered pilot. Product usage, local review completion and positive user reactions are useful behavioural signals but are not evidence of learning efficacy.
+The first instrument is now implemented as `H1-CUE-UTILITY-V1`. It randomly assigns a browser session to a clean or tagged sentence condition, measures role-identification accuracy and response time, records confidence and comprehension, collects one visual-load rating, and keeps participant responses local until explicit export.
+
+This H1 pilot measures **cue utility**, not learning efficacy. The next research milestone is to collect eligible B1–B2 sessions and publish the predefined descriptive analysis without changing the protocol after seeing outcomes.
+
+Status: H1 protocol, stimuli, browser experiment, export format and analysis script implemented; outcome data not yet reported.
 
 ### 5. Agent and API layer
 
@@ -75,9 +79,9 @@ The public API should expose enough information to inspect, cite and use the pub
 
 ## Public/private boundary
 
-The public repository is a publication and evaluation layer. It may contain selected annotated documents, selected reasoning frames, evaluation fixtures, public schemas, Pattern Lens rules, derived graph relationships and browser-side practice logic around the published sample.
+The public repository is a publication and evaluation layer. It may contain selected annotated documents, selected reasoning frames, evaluation fixtures, public schemas, Pattern Lens rules, derived graph relationships, browser-side practice logic and bounded public research stimuli around the published sample.
 
-The full curriculum, private corpus, annotation engine, linguistic heuristics, bulk exports and unpublished research assets remain outside the public repository.
+The full curriculum, private corpus, annotation engine, linguistic heuristics, bulk exports, participant research files and unpublished research assets remain outside the public repository.
 
 Public size is not a success metric. A smaller reviewed collection is preferable to a large synthetic catalogue.
 
@@ -90,15 +94,16 @@ The current project does **not** prioritise:
 - maximising the raw number of patterns;
 - streaks, social gamification and account systems before the core loop is useful;
 - publishing the private parser or full research corpus;
-- claiming language-learning efficacy without a direct comparison study.
+- claiming language-learning efficacy without a suitable comparison study;
+- changing H1 outcomes or exclusions after inspecting condition results.
 
 ## Product sequence
 
 The working sequence is:
 
-**Pattern Lens → Pattern Graph → active practice loop → first pilot study → agent/API integrations → teacher/research/EdTech pilots**
+**Pattern Lens → Pattern Graph → active practice loop → H1 pilot → H1 report → H2/H3 experiments → agent/API integrations → teacher/research/EdTech pilots**
 
-The first three layers are now implemented. Work should move toward validating the mechanism and improving the same learning loop rather than opening another parallel product track.
+The Lens, Graph, Practice and first research instrument are now implemented. Work should move toward collecting and reporting H1 data, then improving the same learning loop from evidence rather than opening another parallel product track.
 
 ## Decision rules
 
@@ -121,8 +126,9 @@ Before optimising for revenue or scale, measure whether the method produces usef
 - completion of one short retrieval attempt after viewing a pattern;
 - return to a stable pattern ID when it becomes due;
 - proportion of attempts marked `Needs work` versus `Got it` over repeated reviews;
+- H1 recruitment and completion of at least 40 eligible pilot sessions if feasible;
+- H1 condition estimates with comprehension and visual-load guardrails;
 - annotation agreement and regression quality;
-- ability to recruit and complete a small preregistered pilot;
 - concrete teacher, researcher or EdTech integration interest.
 
 Revenue experiments should follow demonstrated utility rather than substitute for it.
