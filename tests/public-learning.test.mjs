@@ -85,7 +85,8 @@ test("document, intent and frame pages expose the public learning bridge", () =>
 
     const pattern = html(locale, "practice", "clf059");
     assert.match(pattern, /data-public-learning="pattern-corpus"/);
-    assert.match(pattern, /This issue has led to a drop in our customer satisfaction ratings\./);
+    assert.match(pattern, /explore\/(?:english|german)\/(?:dialogues|patterns|library)\/.+?#sentence-/);
+    assert.match(pattern, /(?:led to|führt zu)/i);
 
     const intentPage = html(locale, "practice", "intents");
     const marker = 'id="intent-connect-cause-and-effect"';
@@ -94,7 +95,7 @@ test("document, intent and frame pages expose the public learning bridge", () =>
     const end = intentPage.indexOf("</article>", start);
     const article = intentPage.slice(start, end + 10);
     assert.match(article, /data-public-learning="intent-corpus"/);
-    assert.match(article, /This issue has led to a drop in our customer satisfaction ratings\./);
+    assert.match(article, /explore\/(?:english|german)\/(?:dialogues|patterns|library)\/.+?#sentence-/);
   }
 });
 
