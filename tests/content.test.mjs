@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { contentCounts, loadContent } from "../src/content.mjs";
+import { SITE_RELEASE_DATE } from "../src/site.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -27,6 +28,8 @@ test("all source content validates and contains a complete C1 pattern curriculum
   assert.ok(counts.advancedPatterns >= 1000);
   assert.equal(content.studySets.sets.length, 80);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.quality && typeof pattern.quality.indexable === "boolean"));
+  assert.ok(content.advancedPatterns.every((pattern) => pattern.quality.translations_complete));
   const hedPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === "HED");
   assert.equal(hedPatterns.length, 40);
   assert.ok(hedPatterns.every((pattern) => pattern.langs.every((lang) => lang.examples.length === 12)), "every HED pattern should match CON006 with 12 examples per language");
@@ -48,11 +51,11 @@ test("all source content validates and contains a complete C1 pattern curriculum
 });
 
 function langComplete(pattern) {
-  return pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 8);
+  return pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 2);
 }
 
 test("GitHub Pages artifact has root files and localized HTML", () => {
-  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "seo/site-pages.json"]) {
+  for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "data/quality-report.json", "data/reasoning-frames/index.json", "seo/site-pages.json"]) {
     assert.ok(fs.existsSync(path.join(DIST, file)), `${file} must exist`);
   }
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
@@ -82,6 +85,7 @@ test("the public workspace is focused on reading datasets, not SRS features", ()
     assert.doesNotMatch(home, new RegExp(`href="/${locale}/progress/"`));
     assert.ok(fs.existsSync(path.join(DIST, locale, "practice", "index.html")));
     assert.ok(fs.existsSync(path.join(DIST, locale, "ai", "index.html")));
+    assert.ok(fs.existsSync(path.join(DIST, locale, "data", "index.html")));
     assert.ok(!fs.existsSync(path.join(DIST, locale, "review", "index.html")));
     assert.ok(!fs.existsSync(path.join(DIST, locale, "progress", "index.html")));
   }
@@ -149,6 +153,18 @@ test("research programme publishes hypotheses, measures, evidence limits and rep
   assert.match(ru, /заявления об эффекте не сделаны/);
 });
 
+test("dataset directory exposes human-readable Dataset and DataCatalog pages", () => {
+  for (const locale of ["en", "ru"]) {
+    const index = fs.readFileSync(path.join(DIST, locale, "data", "index.html"), "utf8");
+    assert.match(index, /"@type":"DataCatalog"/);
+    for (const key of ["annotations", "patterns", "reasoning"]) {
+      const page = fs.readFileSync(path.join(DIST, locale, "data", key, "index.html"), "utf8");
+      assert.match(page, /"@type":"Dataset"/);
+      assert.match(page, /Dataset/);
+    }
+  }
+});
+
 test("articles, project notes and documentation offer accessible share actions", () => {
   const article = htmlFiles(DIST).find((file) => /\/explore\/english\/dialogues\/[^/]+\/index\.html$/.test(file));
   assert.ok(article, "an annotated article should exist");
@@ -174,7 +190,7 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/practice\/con001\//);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/research\//);
-  assert.match(sitemap, /<lastmod>2026-07-18<\/lastmod>/);
+  assert.ok(sitemap.includes(`<lastmod>${SITE_RELEASE_DATE}</lastmod>`));
 });
 
 test("German pattern markup renders gender overlines and past markers only in German", () => {
@@ -220,7 +236,7 @@ test("every generated page carries the current brand and discoverability metadat
     assert.match(html, /"@id":"https:\/\/metkagram\.github\.io\/[^"]*#webpage"/, `${file} needs page-level structured data`);
     assert.match(html, /data-share-bar/, `${file} needs page sharing controls`);
     assert.match(html, /data-print-page/, `${file} needs a print control`);
-    assert.match(html, /"dateModified":"2026-07-18"/, `${file} needs a verified modification date`);
+    assert.ok(html.includes(`"dateModified":"${SITE_RELEASE_DATE}"`), `${file} needs a verified modification date`);
     assert.doesNotMatch(html, /assets\/social-preview\.png/, `${file} must not use the legacy social preview`);
     const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");
     const description = decodeEntities(html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "");
@@ -236,12 +252,13 @@ test("SEO inventory covers every generated indexable route", () => {
   assert.ok(inventory.pageCount >= 11500);
   assert.ok(inventory.pages.every((page) => page.canonical === `https://metkagram.github.io${page.route}` || page.route === "/404.html/"));
   assert.ok(inventory.pages.every((page) => page.language && page.title && page.description));
+  assert.ok(inventory.pages.every((page) => page.lastModified));
   for (const language of ["en", "ru"]) {
     const localized = inventory.pages.filter((page) => page.language === language);
     assert.equal(new Set(localized.map((page) => page.title)).size, localized.length, `${language} SEO titles must be unique`);
     assert.equal(new Set(localized.map((page) => page.description)).size, localized.length, `${language} SEO descriptions must be unique`);
   }
-  for (const route of ["/en/", "/en/research/", "/en/support/", "/en/practice/con001/"]) {
+  for (const route of ["/en/", "/en/research/", "/en/data/", "/en/data/patterns/", "/en/support/", "/en/practice/con001/"]) {
     assert.ok(inventory.pages.some((page) => page.route === route), `SEO inventory missing ${route}`);
     assert.ok(sitemap.includes(`https://metkagram.github.io${route}`), `sitemap missing ${route}`);
   }

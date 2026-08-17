@@ -1,6 +1,10 @@
 # Metkagram
 
-Metkagram is a bilingual, static language-notation workspace. The interface is available in English and Russian; English and German are independent learning-language filters. It offers **Annotated Language / Карточки с разметкой** for sentence-first inline grammar annotation and **Pattern Practice / Паттерны** for more than 1,000 reusable B2–C1 English/German patterns. Public datasets and a read-only MCP connector make the material usable by agents.
+Metkagram is an open English/German language-learning and language-data project built around one idea: **make structure visible inside a real sentence, then reuse that structure as a pattern**. The learning loop is sentence → inline marks → visible structure → reusable pattern → variation → recall.
+
+The interface is available in English and Russian; English and German are independent learning-language filters. **Annotated Language / Карточки с разметкой** keeps the sentence readable while placing functional tags directly on the relevant spans. **Pattern Practice / Паттерны** turns recurring structures into reusable B2–C1 frames with examples and Russian translations. Reasoning frames extend the same model to operations such as limiting, comparing, conditioning, reframing and inferring.
+
+The public corpus is also exposed as versioned datasets, a static API, a complete search index and a read-only MCP connector. Every record carries provenance and canonical links back to Metkagram.
 
 Production: [https://metkagram.github.io](https://metkagram.github.io)
 
@@ -20,13 +24,15 @@ Open `http://127.0.0.1:4173`. The local server reads only the generated `dist/` 
 
 ```bash
 npm run build         # validate content and generate deterministic static HTML
-npm test              # content, routes, redirects, localization and SRS tests
+npm test              # content, routes, redirects, localization and API tests
 npm run check:links   # verify every internal href/src in all generated pages
 npm run test:e2e      # desktop and mobile critical journeys
 npm run verify        # build + unit/integration tests + link checker
 ```
 
-Malformed documents or pattern records fail the build. Generated output includes `.nojekyll`, root `index.html`, `404.html`, localized pages, detail pages, `sitemap.xml`, `robots.txt`, `llms.txt`, `seo/site-pages.json`, public datasets and the redirect manifest.
+Malformed documents or pattern records fail the build. Generated output includes `.nojekyll`, root `index.html`, `404.html`, localized pages, detail pages, dataset landing pages, `sitemap.xml`, `robots.txt`, `llms.txt`, `seo/site-pages.json`, public datasets and the redirect manifest.
+
+Pull requests and `agent/**` branches run the permanent `Verify` workflow before merge.
 
 ## Deployment
 
@@ -46,16 +52,49 @@ Canonical source files are under `data/`:
 
 - `data/metkagram-export/{enGram,deGram}/{dialogues,patterns,library}/documents.json`
 - matching `data.json` collection indexes;
-- `data/advanced-patterns.json` for complete B2–C1 practice records.
-- `data/study-sets.json` for named study sets and learning paths.
+- `data/advanced-patterns.json` for the main B2–C1 curriculum;
+- `data/reasoning-frames/*.json` for supplemental reasoning-enabled frames;
+- `data/study-sets.json` for named study sets and learning paths;
+- `data/pattern-annotations.json.gz` for versioned annotation-service output.
 
-`src/content.mjs` validates the public curriculum at build time: at least 1,000 patterns, unique IDs and formulas, complete English/German formulas and examples with Russian translations, valid set membership, and non-empty study sets.
+`src/content.mjs` validates identifiers, formulas, translations, set membership and language coverage. It also derives quality metadata for each public pattern. A pattern is not padded with synthetic examples just to reach a fixed count: at least two genuine variations per language are required, and unique-example/translation quality is reported separately.
 
-Update source JSON, run `npm run verify`, inspect `reports/MIGRATION_VERIFICATION.md`, and commit both the source change and any updated migration documentation. Do not edit `dist/`; GitHub Actions regenerates it.
+Run `npm run verify` before publishing content changes. The build writes `/data/quality-report.json` as an auditable review queue.
 
-The generator produces stable public exports at `/data/collections/{en,de}/{collection}.json`, `/data/advanced-patterns.json`, and `/data/catalog.json`.
+Do not edit `dist/`; GitHub Actions regenerates it.
 
-See [MIGRATION_MAP.md](MIGRATION_MAP.md), [ARCHITECTURE.md](ARCHITECTURE.md), [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md), [the research programme](docs/RESEARCH_PROGRAM.md), [partnership brief](docs/PARTNERSHIP_BRIEF.md), [localization strategy](docs/LOCALIZATION_STRATEGY.md), and [SEO reference](docs/SEO.md).
+## Public data
+
+Human-readable dataset directories:
+
+- `/en/data/`
+- `/ru/data/`
+
+The directories expose dedicated `Dataset` / `DataCatalog` pages for:
+
+- annotated English/German sentences;
+- reusable B2–C1 patterns;
+- reasoning frames.
+
+Stable machine-readable exports include:
+
+- `/data/catalog.json`
+- `/data/advanced-patterns.json`
+- `/data/canonical-annotations.json`
+- `/data/study-sets.json`
+- `/data/quality-report.json`
+- `/data/reasoning-frames/index.json`
+- `/api/v1/search-index.json`
+
+The search index covers the full annotated corpus rather than a truncated preview.
+
+## Versioning and provenance
+
+The canonical schema (`1.0.0`) stores semantic text and spans, never rendered HTML. Each canonical annotation record includes stable offsets, labels, functional roles, translations, source metadata and validation metadata. HTML is generated by the shared renderer.
+
+Dataset versions are deterministic: package version + a fingerprint of canonical JSON data. Rebuilding identical content therefore keeps the same dataset version. API responses additionally carry per-record content hashes and canonical URLs.
+
+`SITE_RELEASE_DATE` is an explicit verified editorial release date, not the date a build happened to run.
 
 ## Annotation pipeline
 
@@ -63,13 +102,7 @@ See [MIGRATION_MAP.md](MIGRATION_MAP.md), [ARCHITECTURE.md](ARCHITECTURE.md), [D
 
 After installing the optional spaCy environment, `npm run annotations:audit` parses the primary example for every English and German reusable pattern in batches and writes `reports/spacy-pattern-audit.json`.
 
-Run `npm run annotations:prepare` to execute the spaCy annotation service over every primary and variation sentence in the reusable-pattern sets. It writes the compressed, versioned static input `data/pattern-annotations.json.gz`; the site build reads it and renders the service-generated tag and role beside every annotated fragment on every pattern card.
-
-## Annotation architecture
-
-The versioned canonical schema (`1.0.0`) is implemented in `src/annotation-schema.mjs` and intentionally stores semantic text and spans, never HTML. Each record includes text, stable UTF-16 start/end offsets, labels, functional role, translations, explanation, examples, CEFR/difficulty, language/locale, source/set metadata, reusable slots, and validation metadata. HTML is generated by the shared renderer; the legacy nested `text_span` remains attached to migrated records for reversible compatibility.
-
-The migration accepts the existing annotated document export and `advanced-patterns.json`; it reports recovered legacy text rather than silently dropping it. Validation catches duplicate IDs, invalid or overlapping offsets, missing required fields, and incomplete spans. Existing translation gaps are preserved as empty values for editorial follow-up.
+Run `npm run annotations:prepare` to execute the spaCy annotation service over primary and variation sentences. It writes the compressed static input `data/pattern-annotations.json.gz`; the site build reads it and renders service-generated tags and roles beside annotated fragments.
 
 ## Optional local annotation service
 
@@ -84,11 +117,14 @@ cd annotation_service && .venv/bin/uvicorn main:app --reload --port 8080
 curl -X POST http://127.0.0.1:8080/v1/annotate -H 'content-type: application/json' -d '{"text":"I will study today.","language":"en"}'
 ```
 
-Run service tests with `cd annotation_service && .venv/bin/python -m pytest tests`. The optional service uses spaCy 3.8.7 plus explicit English and German small pipelines; the static build remains model-independent and reproducible.
+Run service tests with `cd annotation_service && .venv/bin/python -m pytest tests`. The optional service uses spaCy plus explicit English and German pipelines; the production static build remains model-independent.
 
 ## Decisions and limitations
 
-- Static generation is the production path: it is reproducible, offline-friendly, and works on GitHub Pages without a backend.
-- The local service supports editorial previews and can later host richer NLP models without changing public data or rendering.
-- Legacy missing `original_text` values are reconstructed from their legacy span tree and listed in `reports/annotation-migration-report.json`.
-- The spaCy dependency output is an editorial starting point rather than automatic linguistic truth; human review remains the highest-value next improvement.
+- Static generation is the production path: reproducible, offline-friendly and compatible with GitHub Pages without a backend.
+- The original visual-annotation idea and reusable patterns are one system, not competing product directions.
+- Pattern quantity is not treated as proof of quality; quality metadata and a review queue are published explicitly.
+- spaCy output is an editorial starting point rather than automatic linguistic truth; human review remains the highest-value improvement.
+- Metkagram does not claim that this interface outperforms another learning method without evidence.
+
+See [ARCHITECTURE.md](ARCHITECTURE.md), [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md), [the research programme](docs/RESEARCH_PROGRAM.md), [SEO and discoverability](docs/SEO.md), [partnership brief](docs/PARTNERSHIP_BRIEF.md), and [localization strategy](docs/LOCALIZATION_STRATEGY.md).

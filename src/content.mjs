@@ -29,6 +29,14 @@ function normalizeFormula(value = "") {
   return String(value).trim().toLocaleLowerCase();
 }
 
+function normalizeExample(value = "") {
+  return String(value)
+    .replaceAll("**", "")
+    .replaceAll(/\s+/g, " ")
+    .trim()
+    .toLocaleLowerCase();
+}
+
 function supplementalSetId(pattern) {
   if (pattern.id === "CLF048") return "NEG";
   if (pattern.id === "CLF055") return "EVD";
@@ -38,20 +46,41 @@ function supplementalSetId(pattern) {
 function completeSupplementalPattern(pattern) {
   return {
     ...pattern,
-    set_id: supplementalSetId(pattern),
-    langs: (pattern.langs || []).map((lang) => {
-      const examples = [...(lang.examples || [])];
-      const seeds = examples.slice(0, 3);
-      for (let index = 0; examples.length < 8 && seeds.length; index += 1) {
-        const seed = seeds[index % seeds.length];
-        const prefix = lang.lang === "de"
-          ? ["In der Praxis: ", "In einem anderen Fall: ", "Bei einer Prüfung: "][index % 3]
-          : ["In practice, ", "In another case, ", "During a review, "][index % 3];
-        const text = `${prefix}${seed.text.charAt(0).toLocaleLowerCase(lang.lang)}${seed.text.slice(1)}`;
-        if (!examples.some((item) => item.text === text)) examples.push({ ...seed, text });
-      }
-      return { ...lang, examples };
-    })
+    set_id: supplementalSetId(pattern)
+  };
+}
+
+function derivePatternQuality(pattern) {
+  const languages = {};
+  let minUniqueExamples = Number.POSITIVE_INFINITY;
+  let completeTranslations = true;
+
+  for (const lang of pattern.langs || []) {
+    const examples = [lang.example, ...(lang.examples || []).map((item) => item.text)]
+      .filter((value) => typeof value === "string" && value.trim());
+    const uniqueExamples = new Set(examples.map(normalizeExample));
+    const translatedVariations = (lang.examples || []).filter((item) => typeof item.translation_ru === "string" && item.translation_ru.trim()).length;
+    const translationsComplete = Boolean(lang.translation?.trim()) && translatedVariations === (lang.examples || []).length;
+    completeTranslations &&= translationsComplete;
+    minUniqueExamples = Math.min(minUniqueExamples, uniqueExamples.size);
+    languages[lang.lang] = {
+      example_count: examples.length,
+      unique_example_count: uniqueExamples.size,
+      duplicate_example_count: examples.length - uniqueExamples.size,
+      translations_complete: translationsComplete
+    };
+  }
+
+  if (!Number.isFinite(minUniqueExamples)) minUniqueExamples = 0;
+  const editorialStatus = pattern.quality?.status || pattern.gen?.status || "unknown";
+  const indexable = completeTranslations && minUniqueExamples >= 3;
+
+  return {
+    status: editorialStatus,
+    indexable,
+    min_unique_examples: minUniqueExamples,
+    translations_complete: completeTranslations,
+    languages
   };
 }
 
@@ -148,7 +177,8 @@ export function loadContent() {
   for (const pathItem of studySets.learningPaths) for (const setId of pathItem.set_ids || []) assert(validSetIds.has(setId), `learning path ${pathItem.id} references an unknown set ${setId}`);
 
   supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
-  const advancedPatterns = mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns);
+  const advancedPatterns = mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns)
+    .map((pattern) => ({ ...pattern, quality: derivePatternQuality(pattern) }));
   assert(advancedPatterns.length >= 1000, `advanced-patterns.json requires at least 1,000 patterns; found ${advancedPatterns.length}`);
   const patternIds = new Set();
   const formulas = new Set();

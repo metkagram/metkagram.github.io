@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
-import { ATTRIBUTION } from "../src/provenance.mjs";
+import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -33,7 +33,14 @@ function assertProvenance(record, context) {
   assert.strictEqual(record.provenance.attribution_required, true);
   assert.ok(record.provenance.canonical_url, `missing canonical_url ${context}`);
   assert.ok(record.provenance.content_hash, `missing content_hash ${context}`);
+  assert.strictEqual(record.provenance.dataset_version, getDatasetVersion(), `dataset version drift ${context}`);
 }
+
+test("dataset version is content-derived rather than build-date-derived", () => {
+  const version = getDatasetVersion();
+  assert.match(version, /^\d+\.\d+\.\d+\+[a-f0-9]{12}$/);
+  assert.strictEqual(version, getDatasetVersion());
+});
 
 test("API index declares stable v1 endpoints and provenance", () => {
   const index = readJson(API, "index.json");
@@ -62,7 +69,7 @@ test("attribution policy is machine-readable and requires attribution", () => {
   assert.ok(policy.data.policy.citation_formats.application);
 });
 
-test("every pattern record has provenance and canonical URL", () => {
+test("every pattern record has provenance, canonical URL and quality metadata", () => {
   const patterns = readJson(API, "patterns.json");
   assertProvenance(patterns, "in patterns.json");
   assert.ok(Array.isArray(patterns.data));
@@ -72,6 +79,8 @@ test("every pattern record has provenance and canonical URL", () => {
     assert.ok(item.data.id);
     assert.ok(item.data.title_ru);
     assert.ok(item.data.langs.length > 0);
+    assert.ok(item.data.quality);
+    assert.strictEqual(typeof item.data.quality.indexable, "boolean");
   }
 });
 
@@ -136,12 +145,15 @@ test("language subsets are generated for English and German", () => {
   }
 });
 
-test("search index, categories and languages endpoints are generated", () => {
+test("search index covers the complete annotated document corpus", () => {
   const search = readJson(API, "search-index.json");
   assertProvenance(search, "in search-index.json");
   assert.ok(Array.isArray(search.data.patterns));
   assert.ok(Array.isArray(search.data.sets));
   assert.ok(Array.isArray(search.data.categories));
+  assert.ok(Array.isArray(search.data.documents));
+  assert.strictEqual(search.data.documents.length, 2240);
+  assert.ok(search.data.patterns.every((pattern) => pattern.quality));
 
   const categories = readJson(API, "categories.json");
   assertProvenance(categories, "in categories.json");
@@ -151,6 +163,14 @@ test("search index, categories and languages endpoints are generated", () => {
   assertProvenance(languages, "in languages.json");
   assert.ok(languages.data.some((lang) => lang.code === "en"));
   assert.ok(languages.data.some((lang) => lang.code === "de"));
+});
+
+test("quality report is published for editorial and agent use", () => {
+  const report = readJson(DIST, "data", "quality-report.json");
+  assert.ok(report.patternCount >= 1000);
+  assert.strictEqual(report.rules.syntheticPaddingAllowed, false);
+  assert.strictEqual(report.rules.translationsRequired, true);
+  assert.ok(Array.isArray(report.reviewQueue));
 });
 
 test("schemas and OpenAPI are generated with required fields", () => {
@@ -205,6 +225,8 @@ test("llms.txt, robots.txt and sitemap expose the right surfaces", () => {
   assert.ok(!sitemap.includes("/api/v1/"));
   assert.ok(sitemap.includes("/en/ai/"));
   assert.ok(sitemap.includes("/ru/ai/"));
+  assert.ok(sitemap.includes("/en/data/"));
+  assert.ok(sitemap.includes("/ru/data/"));
 });
 
 test("AI documentation pages include structured data and API links", () => {

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 import { loadContent, contentCounts } from "../src/content.mjs";
-import { collectionKeys, locales, targetMeta, ui } from "../src/i18n.mjs";
+import { collectionKeys, locales, targetMeta } from "../src/i18n.mjs";
 import {
   SITE_URL,
   aboutPage,
@@ -27,6 +27,10 @@ import {
   studySetPage
 } from "../src/render.mjs";
 import { buildApi, buildLlmsTxt, buildRobotsTxt } from "../src/api.mjs";
+import { dataIndexPage, datasetKeys, datasetPage } from "../src/data-pages.mjs";
+import { buildQualityReport } from "../src/quality.mjs";
+import { buildCompleteSearchIndex } from "../src/search-index.mjs";
+import { getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
@@ -42,7 +46,7 @@ function writeFile(relativePath, contents) {
   fs.writeFileSync(output, contents);
 }
 
-function writeRoute(route, html) {
+function writeRoute(route, html, lastModified = SITE_RELEASE_DATE) {
   const normalized = route === "/" ? "/" : `/${route.split("/").filter(Boolean).join("/")}/`;
   if (generatedRoutes.has(normalized)) throw new Error(`Duplicate generated route: ${normalized}`);
   generatedRoutes.add(normalized);
@@ -53,7 +57,7 @@ function writeRoute(route, html) {
   const description = copyMatch(/<meta name="description" content="([^"]+)">/);
   const canonical = copyMatch(/<link rel="canonical" href="([^"]+)">/);
   const language = copyMatch(/<html lang="([^"]+)">/);
-  seoRecords.push({ route: normalized, canonical, language, title, description, lastModified: SITE_RELEASE_DATE });
+  seoRecords.push({ route: normalized, canonical, language, title, description, lastModified });
   const file = normalized === "/" ? "index.html" : path.join(normalized.slice(1), "index.html");
   writeFile(file, html);
 }
@@ -109,7 +113,7 @@ function buildRedirectManifest(content) {
   add("/products/metkagram/privacy", `${SITE_URL}/en/legal/privacy/`);
   add("/products/metkagram/terms", `${SITE_URL}/en/legal/terms/`);
   add("/products/metkagram/delete-data", `${SITE_URL}/en/legal/privacy/`);
-  add("/datasets/metkagram-library", `${SITE_URL}/en/explore/`);
+  add("/datasets/metkagram-library", `${SITE_URL}/en/data/`);
   add("/datasets/metkagram-library/download", `${SITE_URL}/data/catalog.json`);
   add("/datasets/metkagram-library/schema", `${SITE_URL}/data/schema.json`);
   redirects.push({
@@ -129,19 +133,7 @@ function buildRedirectManifest(content) {
 
 function migrationMarkdown(redirects, counts) {
   const rows = redirects.map((item) => `| \`https://metalhatscats.com${item.source}\` | \`${item.destination.startsWith("http") ? item.destination : `https://metalhatscats.com${item.destination}`}\` | ${item.status} | ${item.implementation} |`).join("\n");
-  return `# Metkagram migration map
-
-Generated from the validated source datasets. Trailing-slash variants are handled by the same Vercel route rules and redirect directly to the same final URL.
-
-- Annotated documents moved: **${counts.annotatedDocuments}**
-- Advanced patterns moved: **${counts.advancedPatterns}**
-- URL records: **${redirects.length}**
-- Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
-
-| Old URL | Exact new URL | Status | Redirect implementation / moved capability |
-|---|---|---|---|
-${rows}
-`;
+  return `# Metkagram migration map\n\nGenerated from the validated source datasets. Trailing-slash variants are handled by the same Vercel route rules and redirect directly to the same final URL.\n\n- Annotated documents moved: **${counts.annotatedDocuments}**\n- Advanced patterns moved: **${counts.advancedPatterns}**\n- URL records: **${redirects.length}**\n- Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.\n\n| Old URL | Exact new URL | Status | Redirect implementation / moved capability |\n|---|---|---|---|\n${rows}\n`;
 }
 
 function buildCatalog(content, counts) {
@@ -159,12 +151,16 @@ function buildCatalog(content, counts) {
       });
     }
   }
+  const reasoningCount = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move).length;
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
+    version: getDatasetVersion(),
     name: "Metkagram public collection catalog",
-    description: "Annotated English and German documents plus B2–C1 active-recall patterns.",
+    description: "Annotated English and German documents, reusable B2–C1 patterns, and reasoning frames.",
     license: "See https://metkagram.github.io/LICENSE",
-    counts,
+    counts: { ...counts, reasoningFrames: reasoningCount },
+    landingPages: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])),
+    qualityReport: `${SITE_URL}/data/quality-report.json`,
     collections,
     advancedPatterns: {
       count: content.advancedPatterns.length,
@@ -172,8 +168,29 @@ function buildCatalog(content, counts) {
       studySetsDataset: `${SITE_URL}/data/study-sets.json`,
       studySetCount: content.studySets.sets.length,
       routes: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/practice/`]))
+    },
+    reasoningFrames: {
+      count: reasoningCount,
+      dataset: `${SITE_URL}/data/reasoning-frames/index.json`,
+      routes: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/reasoning/`]))
     }
   };
+}
+
+function buildReasoningIndex(content) {
+  const items = content.advancedPatterns
+    .filter((pattern) => pattern.reasoning?.move)
+    .map((pattern) => ({
+      id: pattern.id,
+      set_id: pattern.set_id,
+      group_id: pattern.group_id,
+      move: pattern.reasoning.move,
+      logic: pattern.logic || null,
+      formulas: pattern.langs.map((lang) => ({ lang: lang.lang, formula: lang.formula })),
+      quality: pattern.quality,
+      canonical_url: `${SITE_URL}/en/practice/${pattern.id.toLowerCase()}/`
+    }));
+  return { schemaVersion: 1, version: getDatasetVersion(), count: items.length, items };
 }
 
 function build() {
@@ -186,6 +203,7 @@ function build() {
   if (canonicalAnnotations.report.errors.length) throw new Error(`Canonical annotation migration failed: ${canonicalAnnotations.report.errors.length} invalid records`);
   const counts = contentCounts(content);
   const api = buildApi(content, counts);
+  api.files["/api/v1/search-index.json"] = buildCompleteSearchIndex(content);
 
   writeRoute("/", gatewayPage());
   for (const locale of locales) {
@@ -196,6 +214,8 @@ function build() {
     writeRoute(`/${locale}/research/`, researchPage(locale, counts));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
     writeRoute(`/${locale}/apps/`, appsPage(locale));
+    writeRoute(`/${locale}/data/`, dataIndexPage(locale, counts));
+    for (const key of datasetKeys) writeRoute(`/${locale}/data/${key}/`, datasetPage(locale, key, counts));
     writeRoute(`/${locale}/legal/privacy/`, legalPage(locale, "privacy"));
     writeRoute(`/${locale}/legal/terms/`, legalPage(locale, "terms"));
     writeRoute(`/${locale}/history/`, historyPage(locale));
@@ -213,7 +233,7 @@ function build() {
       }
     }
     for (const pattern of content.advancedPatterns) {
-      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern, patternAnnotations));
+      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern, patternAnnotations), pattern.gen?.lastGeneratedAt || SITE_RELEASE_DATE);
     }
     for (const set of content.studySets.sets) {
       writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));
@@ -229,14 +249,19 @@ function build() {
   writeFile(".nojekyll", "");
   writeFile("LICENSE", fs.readFileSync(path.join(ROOT, "LICENSE"), "utf8"));
   writeFile("robots.txt", buildRobotsTxt(api.routes));
-  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...generatedRoutes].sort().map((route) => `\n  <url><loc>${xmlEscape(`${SITE_URL}${route}`)}</loc><lastmod>${SITE_RELEASE_DATE}</lastmod></url>`).join("")}\n</urlset>\n`);
-  writeFile("seo/site-pages.json", `${JSON.stringify({ schemaVersion: 1, generatedAt: SITE_RELEASE_DATE, pageCount: seoRecords.length, pages: seoRecords.sort((a, b) => a.route.localeCompare(b.route)) }, null, 2)}\n`);
+  const sitemapPages = seoRecords
+    .filter((page) => page.canonical && page.route !== "/404.html/")
+    .sort((a, b) => a.route.localeCompare(b.route));
+  writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemapPages.map((page) => `\n  <url><loc>${xmlEscape(page.canonical)}</loc><lastmod>${page.lastModified}</lastmod></url>`).join("")}\n</urlset>\n`);
+  writeFile("seo/site-pages.json", `${JSON.stringify({ schemaVersion: 2, generatedAt: SITE_RELEASE_DATE, pageCount: seoRecords.length, pages: seoRecords.sort((a, b) => a.route.localeCompare(b.route)) }, null, 2)}\n`);
   writeFile("llms.txt", buildLlmsTxt(content, counts));
 
   writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
   writeFile("data/canonical-annotations.json", `${JSON.stringify({ schema_version: canonicalAnnotations.report.schema_version, items: canonicalAnnotations.records, pattern_cards: canonicalAnnotations.patternCards })}\n`);
   writeFile("data/annotation-migration-report.json", `${JSON.stringify(canonicalAnnotations.report, null, 2)}\n`);
   writeFile("data/study-sets.json", `${JSON.stringify(content.studySets, null, 2)}\n`);
+  writeFile("data/quality-report.json", `${JSON.stringify(buildQualityReport(content), null, 2)}\n`);
+  writeFile("data/reasoning-frames/index.json", `${JSON.stringify(buildReasoningIndex(content), null, 2)}\n`);
   for (const target of Object.values(targetMeta)) {
     for (const collectionKey of collectionKeys) {
       writeFile(`data/collections/${target.dataKey}/${collectionKey}.json`, `${JSON.stringify(content.collections[target.key][collectionKey].documents)}\n`);
@@ -244,14 +269,15 @@ function build() {
   }
   const catalog = buildCatalog(content, counts);
   writeFile("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
-  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, canonical annotations, complete advanced patterns, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "collections", "advancedPatterns"] }, canonicalAnnotation: { type: "object", required: ["schema_version", "id", "kind", "text", "language", "spans", "source", "validation"], properties: { schema_version: { const: "1.0.0" }, text: { type: "string" }, spans: { type: "array", items: { type: "object", required: ["id", "start", "end", "type", "label"] } } } }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
-  writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: ["en", "de"], architecture: "deterministic static HTML with progressive enhancement", catalog: `${SITE_URL}/data/catalog.json` }, null, 2)}\n`);
+  writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, canonical annotations, complete advanced patterns, quality metadata, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "version", "collections", "advancedPatterns"] }, canonicalAnnotation: { type: "object", required: ["schema_version", "id", "kind", "text", "language", "spans", "source", "validation"], properties: { schema_version: { const: "1.0.0" }, text: { type: "string" }, spans: { type: "array", items: { type: "object", required: ["id", "start", "end", "type", "label"] } } } }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs", "quality"] }, patternQuality: { type: "object", required: ["status", "indexable", "min_unique_examples", "translations_complete", "languages"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
+  writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: ["en", "de"], architecture: "deterministic static HTML with progressive enhancement", datasetVersion: getDatasetVersion(), catalog: `${SITE_URL}/data/catalog.json`, dataDirectory: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])) }, null, 2)}\n`);
 
   const redirects = buildRedirectManifest(content);
   writeFile("migration/redirects.json", `${JSON.stringify(redirects, null, 2)}\n`);
   fs.writeFileSync(path.join(ROOT, "MIGRATION_MAP.md"), migrationMarkdown(redirects, counts));
   const report = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: SITE_RELEASE_DATE,
+    datasetVersion: getDatasetVersion(),
     generatedRouteCount: generatedRoutes.size,
     apiEndpointCount: api.routes.length,
     migratedContent: counts,
@@ -262,7 +288,7 @@ function build() {
   };
   writeFile("migration-verification.json", `${JSON.stringify(report, null, 2)}\n`);
   fs.mkdirSync(path.join(ROOT, "reports"), { recursive: true });
-  fs.writeFileSync(path.join(ROOT, "reports", "MIGRATION_VERIFICATION.md"), `# Migration verification\n\n- Generated routes: **${report.generatedRouteCount}**\n- API endpoints: **${report.apiEndpointCount}**\n- Annotated documents: **${counts.annotatedDocuments}**\n- Annotated sentences: **${counts.annotatedSentences}**\n- Advanced B2–C1 patterns: **${counts.advancedPatterns}**\n- Redirect records: **${redirects.length}**\n- Trailing-slash policy: ${report.trailingSlashPolicy}\n- Progress compatibility: ${report.syncCompatibility}\n\n## Automated verification\n\n- Static build: pass\n- Node content/migration/SRS/API tests: pass\n- Internal link check: pass\n- API schemas, OpenAPI, llms.txt, MCP spec: generated\n\nScreenshots are stored in \`reports/screenshots/\`; Lighthouse JSON is stored at \`reports/lighthouse-home.json\`.\n\n## External steps\n\n${report.externalSteps.map((step) => `- ${step}`).join("\n")}\n`);
+  fs.writeFileSync(path.join(ROOT, "reports", "MIGRATION_VERIFICATION.md"), `# Migration verification\n\n- Dataset version: **${report.datasetVersion}**\n- Generated routes: **${report.generatedRouteCount}**\n- API endpoints: **${report.apiEndpointCount}**\n- Annotated documents: **${counts.annotatedDocuments}**\n- Annotated sentences: **${counts.annotatedSentences}**\n- Advanced B2–C1 patterns: **${counts.advancedPatterns}**\n- Redirect records: **${redirects.length}**\n- Trailing-slash policy: ${report.trailingSlashPolicy}\n- Progress compatibility: ${report.syncCompatibility}\n\n## Automated verification\n\n- Static build: pass\n- Node content/migration/SRS/API tests: pass\n- Internal link check: pass\n- API schemas, OpenAPI, llms.txt, MCP spec: generated\n\nScreenshots are stored in \`reports/screenshots/\`; Lighthouse JSON is stored at \`reports/lighthouse-home.json\`.\n\n## External steps\n\n${report.externalSteps.map((step) => `- ${step}`).join("\n")}\n`);
   console.log(`Built ${generatedRoutes.size} routes: ${counts.annotatedDocuments} documents, ${counts.annotatedSentences} sentences, ${counts.advancedPatterns} advanced patterns.`);
 }
 
