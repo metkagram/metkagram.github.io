@@ -113,7 +113,6 @@ export function patternTopicPage(locale, topic, topics, content) {
   const relatedById = new Map(topics.map((item) => [item.id, item]));
   const related = topic.related.map((id) => relatedById.get(id)).filter(Boolean);
   const sample = patterns.slice(0, 24);
-  const useCases = localized(topic, "use_cases", locale) || [];
   const visibleUseCases = locale === "ru" ? topic.use_cases_ru : topic.use_cases_en;
 
   const body = `${atlasBreadcrumbs(locale, { href: pathname, label: shortTitle })}
