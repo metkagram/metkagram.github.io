@@ -32,11 +32,25 @@ The graph supports related-pattern navigation on pattern pages and is published 
 
 ### Active practice
 
-Each published pattern now supports a local retrieval loop. A learner writes a new English or German example before feedback, receives a conservative signal about whether the published structural frame is visible, self-rates the retrieval and schedules the same stable pattern ID for later review.
+Each published pattern supports a local retrieval loop. A learner writes a new English or German example before feedback, receives a conservative signal about whether the published structural frame is visible, self-rates the retrieval and schedules the same stable pattern ID for later review.
 
 Progress is stored only in the browser under `metkagram:practice:v1`; no account or server-side learner profile is required. The Practice index shows a local due-review queue, and Pattern Lens links directly into the practice section. See [docs/PRACTICE_LOOP.md](docs/PRACTICE_LOOP.md).
 
 The deterministic checker does not claim to grade complete grammar, naturalness or meaning. It is a retrieval aid around the canonical pattern object, not a replacement for linguistic feedback.
+
+### H1 research pilot
+
+The first public research instrument is implemented at `/en/research/pilot-h1/` and `/ru/research/pilot-h1/`.
+
+`H1-CUE-UTILITY-V1` randomly assigns a browser session to a clean or tagged sentence condition and measures structural-role identification accuracy, response time, confidence, sentence comprehension and perceived visual load.
+
+The protocol and stimuli were frozen before outcome data collection. Participant responses stay in the browser until explicit JSON or CSV export. The experiment is a cue-utility pilot, not evidence that Metkagram improves English proficiency, retention or transfer. See [docs/RESEARCH_PILOT_H1.md](docs/RESEARCH_PILOT_H1.md).
+
+Collected exports can be analysed with:
+
+```bash
+npm run research:h1:analyse -- path/to/export-or-directory
+```
 
 ### AI tutors and agents
 
@@ -50,9 +64,9 @@ The existing `/api/v1/mcp-server.json` is a **static adapter/tool manifest**, no
 
 The current sequence is:
 
-**Pattern Lens → Pattern Graph → active practice loop → first pilot study → agent/API integrations → teacher/research/EdTech pilots**
+**Pattern Lens → Pattern Graph → active practice loop → H1 pilot → H1 report → H2/H3 experiments → agent/API integrations → teacher/research/EdTech pilots**
 
-The first three product layers are now implemented in the public web surface. The next major milestone is a small preregistered pilot rather than another broad application layer.
+The Lens, Graph, Practice and first research instrument are implemented in the public web surface. The next milestone is to collect and report H1 data without changing the frozen protocol after seeing outcomes.
 
 New features should strengthen this loop rather than create a parallel general-purpose learning application.
 
@@ -72,12 +86,13 @@ The public release deliberately contains enough material to inspect, cite and ev
 - public sentence-to-reasoning practice links generated only from the bounded published corpus;
 - a taxonomy-derived public Pattern Graph built only from published metadata;
 - local-first active retrieval and review around stable public pattern IDs;
+- the frozen public H1 cue-utility stimulus set and browser experiment;
 - public schemas, provenance, APIs, research documentation and website code;
 - the hosted learning, Pattern Lens and research interfaces.
 
-The routing, graph and public-learning benchmarks are internal regression and editorial-quality signals. They are not independent validation and do not establish language-learning efficacy.
+The routing, graph, public-learning and H1 implementation checks are internal regression and research-instrument quality signals. They are not independent validation and do not establish language-learning efficacy.
 
-The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, spaCy pipeline, linguistic heuristics, lexical rule tables and unpublished research assets are maintained in a private research core.
+The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, spaCy pipeline, linguistic heuristics, lexical rule tables, participant research files and unpublished research assets are maintained outside the public publication layer.
 
 Public access does not grant permission to rebuild, mirror or redistribute the private/full system. See [LICENSE](LICENSE), [LICENSING.md](LICENSING.md) and [docs/PUBLICATION_BOUNDARY.md](docs/PUBLICATION_BOUNDARY.md).
 
@@ -100,17 +115,18 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` builds the static site, validates the deliberately public content, generates public-learning links, Pattern Lens and Pattern Graph outputs, wires the active-practice runtime, runs reasoning/retrieval/practice regression tests, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
+`npm run verify` builds the static site, validates the deliberately public content, generates public-learning links, the H1 pilot, Pattern Lens and Pattern Graph outputs, wires the active-practice runtime, runs reasoning/retrieval/practice/research regression tests, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
 
 ## Public content sources
 
 - `data/metkagram-export/` contains the selected annotation showcase only.
 - `data/reasoning-frames/` contains the curated public reasoning-frame showcase.
 - `data/evaluation/reasoning-intents.json` contains the bounded public routing benchmark over published reasoning frames.
+- `data/research/h1-cue-utility-v1.json` contains the frozen H1 public pilot stimuli.
 - `data/study-sets.json` supplies taxonomy metadata; the public build exposes only study sets used by published frames.
 - `data/publication-manifest.json` records the deliberate public sample boundary.
 
-Generated public outputs include `/data/advanced-patterns.json`, `/data/pattern-graph.json`, `/data/reasoning-evaluation.json`, public learning connections, `/api/v1/*` and `/api/v1/teaching-manifest.json`, but these represent the **public showcase**, not the private full curriculum or private evaluation workspace.
+Generated public outputs include `/data/advanced-patterns.json`, `/data/pattern-graph.json`, `/data/research/h1-cue-utility-v1.json`, `/data/reasoning-evaluation.json`, public learning connections, `/api/v1/*` and `/api/v1/teaching-manifest.json`, but these represent the **public showcase**, not the private full curriculum or private evaluation workspace.
 
 ## Research and licensing
 
