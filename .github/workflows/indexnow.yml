@@ -55,6 +55,25 @@ jobs:
             add_url "$BASE/data/intents.json"
           fi
 
+          if grep -Eq '^(data/discovery-topics\.json|src/discovery-pages\.mjs|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
+            add_url "$BASE/en/patterns/"
+            add_url "$BASE/ru/patterns/"
+            if [[ -f data/discovery-topics.json ]]; then
+              while IFS= read -r slug; do
+                [[ -z "$slug" ]] && continue
+                add_url "$BASE/en/patterns/$slug/"
+                add_url "$BASE/ru/patterns/$slug/"
+              done < <(jq -r '.topics[].slug' data/discovery-topics.json)
+            fi
+            add_url "$BASE/data/discovery-topics.json"
+          fi
+
+          if grep -Eq '^(data/partnership-opportunities\.json|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
+            add_url "$BASE/en/support/"
+            add_url "$BASE/ru/support/"
+            add_url "$BASE/data/partnership-opportunities.json"
+          fi
+
           if grep -Eq '^(src/render\.mjs|src/i18n\.mjs)' <<<"$CHANGED"; then
             add_url "$BASE/en/"
             add_url "$BASE/ru/"
