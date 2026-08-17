@@ -40,7 +40,7 @@ function evaluateCase(patterns, item) {
       reasoning_match: match.reasoning_match
         ? {
             intent_id: match.reasoning_match.intent_id,
-            confidence: match.reasoning_match.confidence,
+            strength: match.reasoning_match.strength,
             evidence: match.reasoning_match.evidence,
           }
         : null,
@@ -76,11 +76,11 @@ function patchResearch(locale, report) {
   if (html.includes("data-pattern-lens-evaluation")) return;
   const pct = (value) => `${Math.round(value * 100)}%`;
   const caveat = locale === "ru"
-    ? "Это инженерный regression benchmark по уже опубликованным примерам, а не независимое доказательство качества метода или эффективности обучения."
-    : "This is an engineering regression benchmark over already published examples, not independent evidence for method quality or learning efficacy.";
+    ? "Это инженерный regression benchmark по уже опубликованным positive controls, а не независимое доказательство качества метода, статистической precision/recall или эффективности обучения."
+    : "This is an engineering regression benchmark over already published positive controls, not independent evidence for method quality, statistical precision/recall, or learning efficacy.";
   const body = locale === "ru"
-    ? `На ${report.metrics.cases} реальных EN/DE фразах из ограниченного public corpus ожидаемый паттерн попадает в top-3 в ${pct(report.metrics.expected_pattern_hit_at_3)} случаев. Lens объединяет буквальные части формулы с reasoning cues.`
-    : `Across ${report.metrics.cases} real EN/DE sentences from the bounded public corpus, the expected pattern appears in the top 3 in ${pct(report.metrics.expected_pattern_hit_at_3)} of cases. Lens combines literal formula evidence with reasoning cues.`;
+    ? `На ${report.metrics.cases} проверенных EN/DE фразах из ограниченного public corpus ожидаемый паттерн попадает в top-3 в ${pct(report.metrics.expected_pattern_hit_at_3)} случаев. Lens объединяет буквальные части формулы с категориальными reasoning cues.`
+    : `Across ${report.metrics.cases} reviewed EN/DE sentences from the bounded public corpus, the expected pattern appears in the top 3 in ${pct(report.metrics.expected_pattern_hit_at_3)} of cases. Lens combines literal formula evidence with categorical reasoning cues.`;
   const block = `<section class="section-pad ruled" data-pattern-lens-evaluation><p class="eyebrow">Pattern Lens · evaluation</p><h2>Pattern Lens: retrieval regression</h2><p class="lede">${body}</p><p>${caveat}</p><p><a href="/data/pattern-lens-evaluation.json">Machine-readable report →</a></p></section>`;
   html = html.replace("</main>", `${block}</main>`);
   fs.writeFileSync(file, html);
@@ -114,7 +114,7 @@ function patchDiscovery(report) {
   if (fs.existsSync(llms)) {
     let text = fs.readFileSync(llms, "utf8");
     if (!text.includes("Pattern Lens evaluation:")) {
-      text += `\n- Pattern Lens evaluation: ${SITE_URL}/data/pattern-lens-evaluation.json (engineering regression; not learning-efficacy evidence)\n`;
+      text += `\n- Pattern Lens evaluation: ${SITE_URL}/data/pattern-lens-evaluation.json (curated retrieval regression; not statistical precision/recall or learning-efficacy evidence)\n`;
       fs.writeFileSync(llms, text);
     }
   }
@@ -127,13 +127,14 @@ export function evaluatePatternLens() {
   const results = fixture.cases.map((item) => evaluateCase(content.advancedPatterns, item));
   const summary = metrics(results);
   const report = {
-    schema_version: 1,
+    schema_version: 2,
     dataset_version: getDatasetVersion(),
     release_date: SITE_RELEASE_DATE,
     purpose: fixture.purpose,
     primary_metric: fixture.primaryMetric,
     evidence_limit: fixture.scope,
-    architecture: "hybrid deterministic retrieval: literal reusable-formula evidence + bounded public reasoning cues",
+    architecture: "hybrid deterministic retrieval: literal reusable-formula evidence + reviewed categorical public reasoning cues",
+    reasoning_strength_policy: "direct > supported > prompt; categorical editorial evidence, not probability",
     thresholds: {
       expected_pattern_hit_at_3: 0.95,
       expected_move_hit_at_3: 0.95,
