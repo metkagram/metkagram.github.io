@@ -1,0 +1,115 @@
+{
+  "study_id": "H1-CUE-UTILITY-V1",
+  "version": "1.0.0",
+  "status": "exploratory-pilot",
+  "target_population": "Adults learning English at CEFR B1-B2",
+  "conditions": ["clean", "tagged"],
+  "task": "Identify one requested structural role in the same sentence, then answer a meaning-comprehension check.",
+  "primary_outcomes": ["role_accuracy", "response_time_ms"],
+  "secondary_outcomes": ["confidence", "visual_load"],
+  "guardrail_outcome": "comprehension_accuracy",
+  "stimuli": [
+    {
+      "id": "H1-01",
+      "target_role": "subject",
+      "prompt": "Select the subject.",
+      "chunks": [
+        {"text": "The new analyst", "tag": "S", "role": "subject"},
+        {"text": "checked", "tag": "V", "role": "main_verb"},
+        {"text": "the customer file", "tag": "O", "role": "object"},
+        {"text": "this morning", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The customer file was checked this morning.", "answer": true}
+    },
+    {
+      "id": "H1-02",
+      "target_role": "main_verb",
+      "prompt": "Select the main verb.",
+      "chunks": [
+        {"text": "Our team", "tag": "S", "role": "subject"},
+        {"text": "has", "tag": "H", "role": "helper"},
+        {"text": "completed", "tag": "V", "role": "main_verb"},
+        {"text": "the migration", "tag": "O", "role": "object"},
+        {"text": "successfully", "tag": "A", "role": "adverbial"}
+      ],
+      "comprehension": {"statement": "The migration is still unfinished.", "answer": false}
+    },
+    {
+      "id": "H1-03",
+      "target_role": "helper",
+      "prompt": "Select the helper verb.",
+      "chunks": [
+        {"text": "The client", "tag": "S", "role": "subject"},
+        {"text": "can", "tag": "H", "role": "helper"},
+        {"text": "review", "tag": "V", "role": "main_verb"},
+        {"text": "the proposal", "tag": "O", "role": "object"},
+        {"text": "tomorrow", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The proposal can be reviewed tomorrow.", "answer": true}
+    },
+    {
+      "id": "H1-04",
+      "target_role": "subject",
+      "prompt": "Select the subject.",
+      "chunks": [
+        {"text": "A small change", "tag": "S", "role": "subject"},
+        {"text": "caused", "tag": "V", "role": "main_verb"},
+        {"text": "several errors", "tag": "O", "role": "object"},
+        {"text": "in production", "tag": "L", "role": "location"}
+      ],
+      "comprehension": {"statement": "Several errors appeared after a small change.", "answer": true}
+    },
+    {
+      "id": "H1-05",
+      "target_role": "main_verb",
+      "prompt": "Select the main verb.",
+      "chunks": [
+        {"text": "The support team", "tag": "S", "role": "subject"},
+        {"text": "is", "tag": "H", "role": "helper"},
+        {"text": "investigating", "tag": "V", "role": "main_verb"},
+        {"text": "the issue", "tag": "O", "role": "object"},
+        {"text": "now", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The issue is being investigated now.", "answer": true}
+    },
+    {
+      "id": "H1-06",
+      "target_role": "helper",
+      "prompt": "Select the helper verb.",
+      "chunks": [
+        {"text": "You", "tag": "S", "role": "subject"},
+        {"text": "should", "tag": "H", "role": "helper"},
+        {"text": "confirm", "tag": "V", "role": "main_verb"},
+        {"text": "the mapping", "tag": "O", "role": "object"},
+        {"text": "before the upload", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The mapping should be confirmed after the upload.", "answer": false}
+    },
+    {
+      "id": "H1-07",
+      "target_role": "subject",
+      "prompt": "Select the subject.",
+      "chunks": [
+        {"text": "The final report", "tag": "S", "role": "subject"},
+        {"text": "was", "tag": "H", "role": "helper"},
+        {"text": "sent", "tag": "V", "role": "main_verb"},
+        {"text": "to the manager", "tag": "O", "role": "object"},
+        {"text": "yesterday", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The manager received the final report yesterday.", "answer": true}
+    },
+    {
+      "id": "H1-08",
+      "target_role": "main_verb",
+      "prompt": "Select the main verb.",
+      "chunks": [
+        {"text": "The new process", "tag": "S", "role": "subject"},
+        {"text": "will", "tag": "H", "role": "helper"},
+        {"text": "reduce", "tag": "V", "role": "main_verb"},
+        {"text": "manual work", "tag": "O", "role": "object"},
+        {"text": "next month", "tag": "T", "role": "time"}
+      ],
+      "comprehension": {"statement": "The new process is expected to increase manual work.", "answer": false}
+    }
+  ]
+}
