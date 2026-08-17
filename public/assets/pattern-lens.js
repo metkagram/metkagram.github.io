@@ -40,29 +40,32 @@ if (dataNode && root) {
 
   const recordFor = (pattern) => pattern.langs.find((item) => item.lang === language);
 
+  const strengthRank = (strength) => reasoningRules?.strength_rank?.[strength] || ({ direct: 3, supported: 2, prompt: 1 }[strength] || 0);
+  const reasoningScore = (strength) => ({ direct: 18, supported: 16, prompt: 14 }[strength] || 0);
+  const strengthLabel = (strength) => {
+    if (locale === "ru") return strength === "direct" ? "прямой" : strength === "prompt" ? "задача" : "поддержанный";
+    return strength === "direct" ? "direct" : strength === "prompt" ? "prompt" : "supported";
+  };
+
   const classifyReasoning = (input) => {
     if (!reasoningRules?.rules?.length) return [];
-    const minConfidence = reasoningRules.min_confidence || 0.9;
-    const genericConditionIds = new Set(reasoningRules.generic_condition_rule_ids || []);
-    let matches = reasoningRules.rules
+    const matches = reasoningRules.rules
       .filter((item) => {
-        if (item.language !== language || item.confidence < minConfidence) return false;
+        if (item.language !== language) return false;
         try {
           return new RegExp(item.pattern, item.flags).test(input);
         } catch {
           return false;
         }
       })
-      .sort((a, b) => b.confidence - a.confidence || b.priority - a.priority || a.id.localeCompare(b.id));
-
-    const hasStrongTest = matches.some((item) => item.reasoning_move === "Test" && item.confidence >= 0.95);
-    if (hasStrongTest) matches = matches.filter((item) => !genericConditionIds.has(item.id));
+      .sort((a, b) => strengthRank(b.strength) - strengthRank(a.strength) || b.priority - a.priority || a.id.localeCompare(b.id));
 
     const selected = [];
+    const maxLinks = Math.max(1, Math.min(3, reasoningRules.max_links_per_sentence || 2));
     for (const item of matches) {
       if (selected.some((current) => current.reasoning_move === item.reasoning_move)) continue;
       selected.push(item);
-      if (selected.length >= 3) break;
+      if (selected.length >= maxLinks) break;
     }
     return selected;
   };
@@ -85,9 +88,9 @@ if (dataNode && root) {
         const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalize(segment).length / 10), 0)
           + (exampleMatch ? 10 : 0)
           + (hits.length > 1 ? 2 : 0);
-        const reasoningScore = reasoningMatch ? 12 + reasoningMatch.confidence * 6 : 0;
+        const cueScore = reasoningMatch ? reasoningScore(reasoningMatch.strength) : 0;
         const combinedBonus = reasoningMatch && hits.length ? 3 : 0;
-        const score = literalScore + reasoningScore + combinedBonus;
+        const score = literalScore + cueScore + combinedBonus;
         if (!score) return null;
         return {
           pattern,
@@ -138,7 +141,7 @@ if (dataNode && root) {
     if (hits.length) parts.push(locale === "ru" ? `структура: ${hits.length}` : `structure: ${hits.length} literal cue${hits.length === 1 ? "" : "s"}`);
     if (reasoningMatch) {
       const prefix = locale === "ru" ? "логика" : "reasoning";
-      parts.push(`${prefix}: ${reasoningMatch.reasoning_move} · ${reasoningMatch.evidence}`);
+      parts.push(`${prefix}: ${reasoningMatch.reasoning_move} · ${strengthLabel(reasoningMatch.strength)} · ${reasoningMatch.evidence}`);
     }
     return parts.join(" · ");
   };
@@ -158,9 +161,9 @@ if (dataNode && root) {
       const purpose = (reasoningMatch?.reasoning_move || pattern.reasoning_move) ? `<span>${escapeHtml(reasoningMatch?.reasoning_move || pattern.reasoning_move)}</span>` : "";
       const page = pattern.page_urls?.[locale] || `/${locale}/practice/${pattern.id.toLowerCase()}/`;
       const metric = reasoningMatch
-        ? `${Math.round(reasoningMatch.confidence * 100)}% cue`
-        : `${Math.round(coverage * 100)}% structure`;
-      return `<article class="lens-card" data-evidence-type="${escapeHtml(evidenceType)}">
+        ? (locale === "ru" ? `${strengthLabel(reasoningMatch.strength)} логический сигнал` : `${strengthLabel(reasoningMatch.strength)} reasoning cue`)
+        : (locale === "ru" ? `${Math.round(coverage * 100)}% покрытия структуры` : `${Math.round(coverage * 100)}% structure coverage`);
+      return `<article class="lens-card" data-evidence-type="${escapeHtml(evidenceType)}"${reasoningMatch ? ` data-reasoning-strength="${escapeHtml(reasoningMatch.strength)}"` : ""}>
         <div class="lens-card-meta"><code>${escapeHtml(pattern.id)}</code>${purpose}<span>${escapeHtml(metric)}</span></div>
         <h3>${escapeHtml(lang.formula)}</h3>
         <p class="lens-example">${escapeHtml(lang.example)}</p>
