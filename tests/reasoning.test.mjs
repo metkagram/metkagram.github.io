@@ -15,12 +15,15 @@ test("reasoning frame source and public assets stay identical", () => {
   }
 });
 
-test("advanced reasoning frames are merged into the practice curriculum", () => {
+test("advanced reasoning frames are merged into the practice curriculum without synthetic padding", () => {
   const { advancedPatterns } = loadContent();
   const reasoning = advancedPatterns.filter((pattern) => pattern.reasoning?.move);
   assert.ok(reasoning.length >= 20, "at least twenty reasoning-enabled patterns are required");
   assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));
-  assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 8)));
+  assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 2)));
+  assert.ok(reasoning.every((pattern) => pattern.quality && pattern.quality.translations_complete));
+  const syntheticPrefixes = /^(In practice,|In another case,|During a review,|In der Praxis:|In einem anderen Fall:|Bei einer Prüfung:)/;
+  assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.every((example) => !syntheticPrefixes.test(example.text)))), "reasoning examples must not be padded by mechanical prefixes");
   const moves = new Set(reasoning.map((pattern) => pattern.reasoning.move));
   for (const move of ["Limit", "Condition", "Decide", "Reframe", "Infer", "Compare", "Challenge", "Test", "Cause"]) {
     assert.ok(moves.has(move), `reasoning move ${move} must be represented`);
