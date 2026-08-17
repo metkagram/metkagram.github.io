@@ -3,22 +3,23 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
-  PUBLIC_LEARNING_MIN_CONFIDENCE,
+  PUBLIC_LEARNING_STRENGTHS,
+  PUBLIC_LEARNING_STRENGTH_RANK,
   publicLearningRules,
 } from "../src/public-learning.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const OUTPUT = path.join(DIST, "data", "pattern-lens-rules.json");
-const GENERIC_CONDITION_RULE_IDS = new Set(["en-condition-if-start", "de-condition-wenn-start"]);
 
 export function exportPatternLensRules() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the main build first.");
   const payload = {
-    schema_version: 1,
-    min_confidence: PUBLIC_LEARNING_MIN_CONFIDENCE,
+    schema_version: 2,
     max_links_per_sentence: PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
-    generic_condition_rule_ids: [...GENERIC_CONDITION_RULE_IDS],
+    relation_strengths: PUBLIC_LEARNING_STRENGTHS,
+    strength_rank: PUBLIC_LEARNING_STRENGTH_RANK,
+    score_policy: "Categorical editorial strength, not probability or statistical confidence.",
     rules: publicLearningRules.map((item) => ({
       id: item.id,
       language: item.language,
@@ -27,7 +28,7 @@ export function exportPatternLensRules() {
       reasoning_move: item.move,
       intent_id: item.intent_id,
       pattern_id: item.pattern_id,
-      confidence: item.confidence,
+      strength: item.strength,
       scope: item.scope,
       evidence: item.evidence,
       priority: item.priority,
