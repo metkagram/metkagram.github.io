@@ -5,6 +5,8 @@ import test from "node:test";
 
 const DIST = path.join(process.cwd(), "dist");
 const graph = JSON.parse(fs.readFileSync(path.join(DIST, "data", "connections.json"), "utf8"));
+const advancedPatterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
+const reasoningIndex = JSON.parse(fs.readFileSync(path.join(DIST, "data", "reasoning-frames", "index.json"), "utf8"));
 
 function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
@@ -12,13 +14,15 @@ function html(...parts) {
 
 test("connectivity graph links the three product layers", () => {
   assert.equal(graph.schemaVersion, 1);
-  assert.equal(graph.sourceCounts.advancedPatterns, 3456);
+  assert.equal(graph.sourceCounts.advancedPatterns, advancedPatterns.length);
+  assert.ok(advancedPatterns.length >= 3464, "expanded curriculum must retain at least 3,464 patterns");
   assert.equal(graph.sourceCounts.annotatedDocuments, 2240);
-  assert.equal(graph.sourceCounts.reasoningFrames, 20);
+  assert.equal(graph.sourceCounts.reasoningFrames, reasoningIndex.count);
+  assert.ok(reasoningIndex.count >= 28, "reasoning corpus must retain at least 28 frames");
   assert.equal(graph.relationCounts.reasoningMoveCount, 9);
   assert.ok(graph.relationCounts.connectedDocumentCount >= 700);
   assert.ok(graph.relationCounts.connectedSentenceCount >= 1800);
-  assert.equal(graph.reasoningMoves.reduce((sum, item) => sum + item.count, 0), 20);
+  assert.equal(graph.reasoningMoves.reduce((sum, item) => sum + item.count, 0), reasoningIndex.count);
 });
 
 test("hypothetical language connects to the matching reusable pattern", () => {
