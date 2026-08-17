@@ -17,8 +17,8 @@
       "chunks": [
         {"text": "The new analyst", "tag": "S", "role": "subject"},
         {"text": "checked", "tag": "V", "role": "main_verb"},
-        {"text": "the customer file", "tag": null, "role": "other"},
-        {"text": "this morning", "tag": null, "role": "other"}
+        {"text": "the customer file", "tag": "", "role": "other"},
+        {"text": "this morning", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The customer file was checked this morning.", "answer": true}
     },
@@ -29,8 +29,8 @@
       "chunks": [
         {"text": "Our team", "tag": "S", "role": "subject"},
         {"text": "completed", "tag": "V", "role": "main_verb"},
-        {"text": "the migration", "tag": null, "role": "other"},
-        {"text": "successfully", "tag": null, "role": "other"}
+        {"text": "the migration", "tag": "", "role": "other"},
+        {"text": "successfully", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The migration is still unfinished.", "answer": false}
     },
@@ -42,8 +42,8 @@
         {"text": "The client", "tag": "S", "role": "subject"},
         {"text": "can", "tag": "M", "role": "helper"},
         {"text": "review", "tag": "v2", "role": "main_verb"},
-        {"text": "the proposal", "tag": null, "role": "other"},
-        {"text": "tomorrow", "tag": null, "role": "other"}
+        {"text": "the proposal", "tag": "", "role": "other"},
+        {"text": "tomorrow", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The proposal can be reviewed tomorrow.", "answer": true}
     },
@@ -54,8 +54,8 @@
       "chunks": [
         {"text": "A small change", "tag": "S", "role": "subject"},
         {"text": "caused", "tag": "V", "role": "main_verb"},
-        {"text": "several errors", "tag": null, "role": "other"},
-        {"text": "in production", "tag": null, "role": "other"}
+        {"text": "several errors", "tag": "", "role": "other"},
+        {"text": "in production", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "Several errors appeared after a small change.", "answer": true}
     },
@@ -66,8 +66,8 @@
       "chunks": [
         {"text": "The support team", "tag": "S", "role": "subject"},
         {"text": "investigates", "tag": "V", "role": "main_verb"},
-        {"text": "the issue", "tag": null, "role": "other"},
-        {"text": "now", "tag": null, "role": "other"}
+        {"text": "the issue", "tag": "", "role": "other"},
+        {"text": "now", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The support team is looking into the issue now.", "answer": true}
     },
@@ -79,8 +79,8 @@
         {"text": "You", "tag": "S", "role": "subject"},
         {"text": "should", "tag": "M", "role": "helper"},
         {"text": "confirm", "tag": "v2", "role": "main_verb"},
-        {"text": "the mapping", "tag": null, "role": "other"},
-        {"text": "before the upload", "tag": null, "role": "other"}
+        {"text": "the mapping", "tag": "", "role": "other"},
+        {"text": "before the upload", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The mapping should be confirmed after the upload.", "answer": false}
     },
@@ -91,8 +91,8 @@
       "chunks": [
         {"text": "The final report", "tag": "S", "role": "subject"},
         {"text": "reached", "tag": "V", "role": "main_verb"},
-        {"text": "the manager", "tag": null, "role": "other"},
-        {"text": "yesterday", "tag": null, "role": "other"}
+        {"text": "the manager", "tag": "", "role": "other"},
+        {"text": "yesterday", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The manager received the final report yesterday.", "answer": true}
     },
@@ -103,8 +103,8 @@
       "chunks": [
         {"text": "The new process", "tag": "S", "role": "subject"},
         {"text": "reduces", "tag": "V", "role": "main_verb"},
-        {"text": "manual work", "tag": null, "role": "other"},
-        {"text": "each month", "tag": null, "role": "other"}
+        {"text": "manual work", "tag": "", "role": "other"},
+        {"text": "each month", "tag": "", "role": "other"}
       ],
       "comprehension": {"statement": "The new process increases manual work each month.", "answer": false}
     }
