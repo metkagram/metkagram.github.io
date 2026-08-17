@@ -65,7 +65,7 @@ async function handle(message) {
     });
   }
 
-  if (message.method === "ping") return respond(message.id, {});
+  if (message.method === "ping") return respond(message.id, isModern(message) ? { resultType: "complete" } : {});
 
   if (message.method === "tools/list") {
     const spec = await specification();
