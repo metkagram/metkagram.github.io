@@ -15,7 +15,7 @@ function evidenceSection() {
     {
       title: "Keep visual cues small",
       text: "A meta-analysis of visual input enhancement found a small average benefit for grammar learning, but it also found a possible cost for processing meaning. For Metkagram, this is a reason to test one useful tag against full markup instead of assuming that more highlighting is better.",
-      source: "Lee & Huang (2008) · Visual input enhancement and grammar learning",
+      source: "Lee &amp; Huang (2008) · Visual input enhancement and grammar learning",
       href: "https://www.cambridge.org/core/journals/studies-in-second-language-acquisition/article/visual-input-enhancement-and-grammar-learning-a-metaanalytic-review/B9D0C50B09928C20C94548B37B29A042"
     },
     {
@@ -44,7 +44,7 @@ function evidenceSection() {
     }
   ];
 
-  return `<section id="evidence-notes" class="research-questions section-pad ruled" data-research-enhancement="evidence"><div><p class="eyebrow">02 · Evidence notes</p><h2>What outside research tells us</h2><p>These studies inform questions for Metkagram. They do not prove that the Metkagram interface works better than another method.</p></div><ol>${sources.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${item.title}</h3><p>${item.text}</p><small><b>Source:</b> ${item.source} · <a href="${item.href}">Open paper</a></small></div></li>`).join("")}</ol></section>`;
+  return `<section id="evidence-notes" class="research-questions section-pad ruled" data-research-enhancement="evidence"><div><p class="eyebrow">Evidence notes</p><h2>What outside research tells us</h2><p>These studies inform questions for Metkagram. They do not prove that the Metkagram interface works better than another method.</p></div><ol>${sources.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${item.title}</h3><p>${item.text}</p><small><b>Source:</b> ${item.source} · <a href="${item.href}">Open paper</a></small></div></li>`).join("")}</ol></section>`;
 }
 
 function experimentSection() {
@@ -57,7 +57,7 @@ function experimentSection() {
     ["R06 · Annotation agreement", "Give the same sentence sample to two independent annotators using the same guide.", "Agreement by label, span boundary errors and adjudicated corrections.", "Revise weak labels before expanding the corpus."]
   ];
 
-  return `<section id="experiment-queue" class="research-questions section-pad ruled" data-research-enhancement="experiments"><div><p class="eyebrow">03 · Experiment queue</p><h2>Small tests that can change the product</h2><p>Each test changes one main mechanism. Transfer means using the same structure correctly in a new example, not repeating a sentence from memory.</p></div><ol>${experiments.map(([title, comparison, measure, decision], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p><b>Compare:</b> ${comparison}</p><p><b>Measure:</b> ${measure}</p><small><b>Product decision:</b> ${decision}</small></div></li>`).join("")}</ol></section>`;
+  return `<section id="experiment-queue" class="research-questions section-pad ruled" data-research-enhancement="experiments"><div><p class="eyebrow">Experiment queue</p><h2>Small tests that can change the product</h2><p>Each test changes one main mechanism. Transfer means using the same structure correctly in a new example, not repeating a sentence from memory.</p></div><ol>${experiments.map(([title, comparison, measure, decision], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p><b>Compare:</b> ${comparison}</p><p><b>Measure:</b> ${measure}</p><small><b>Product decision:</b> ${decision}</small></div></li>`).join("")}</ol></section>`;
 }
 
 function decisionSection() {
@@ -70,7 +70,7 @@ function decisionSection() {
     "If a result is small, mixed or negative, keep it in the research record. A useful method should be allowed to discover its own limits."
   ];
 
-  return `<section id="research-decisions" class="research-protocol section-pad ruled" data-research-enhancement="decisions"><div><p class="eyebrow">05 · Decision rules</p><h2>How evidence can change Metkagram</h2><p>Research is useful only when it can change the design.</p></div><ol>${decisions.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span>${item}</li>`).join("")}</ol></section>`;
+  return `<section id="research-decisions" class="research-protocol section-pad ruled" data-research-enhancement="decisions"><div><p class="eyebrow">Decision rules</p><h2>How evidence can change Metkagram</h2><p>Research is useful only when it can change the design.</p></div><ol>${decisions.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span>${item}</li>`).join("")}</ol></section>`;
 }
 
 if (!fs.existsSync(researchFile)) throw new Error(`Research page was not generated: ${researchFile}`);
@@ -85,9 +85,6 @@ html = insertBefore(html, '<section class="research-protocol', evidenceSection()
 html = insertBefore(html, '<section class="research-assets', experimentSection());
 html = insertBefore(html, '<section class="research-boundary', decisionSection());
 html = html.replace(
-  '<a href="/en/method/"><strong>Method and references</strong>',
-  '<a href="/en/method/"><strong>Method and references</strong>'
-).replace(
   '<nav class="research-links">',
   '<nav class="research-links"><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_NOTES.md"><strong>Living research notes</strong><span>Evidence log, experiment IDs and decision rules →</span></a>'
 );
