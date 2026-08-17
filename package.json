@@ -6,7 +6,7 @@
   "description": "Static bilingual Metkagram language notation workspace",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "build": "node scripts/build.mjs && node scripts/connectivity.mjs && node scripts/intent-discovery.mjs && node scripts/reasoning-evaluation.mjs && node scripts/patch-licensing.mjs",
+    "build": "node scripts/build.mjs && node scripts/connectivity.mjs && node scripts/intent-discovery.mjs && node scripts/reasoning-evaluation.mjs && node scripts/patch-licensing.mjs && node scripts/enhance-research.mjs",
     "annotations:migrate": "node scripts/annotations.mjs",
     "annotations:validate": "node scripts/annotations.mjs",
     "test": "node --test tests/*.test.mjs",
