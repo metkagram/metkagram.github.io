@@ -1,8 +1,36 @@
 # Metkagram
 
-Metkagram is a research-oriented NLP and language-learning project built around a simple loop: make functional structure visible inside a real sentence, then reuse that structure as a pattern.
+Metkagram is a research-oriented NLP and language-learning project built around a simple loop:
+
+> **see the structure → learn the pattern → reuse it**
+
+The project connects visual sentence annotation with a curated library of reusable English and German patterns. It does not try to compete with large language models at general writing. Instead, it helps a human notice which structures inside real language are worth learning.
 
 Production: https://metkagram.github.io
+
+## Current product direction
+
+### Pattern Library
+
+Metkagram publishes a bounded set of curated B2–C1 learning patterns with stable IDs, examples, translations, study-set metadata, reasoning moves, provenance and canonical URLs.
+
+### Pattern Lens
+
+`/en/lens/` and `/ru/lens/` provide a public interactive preview: paste a sentence or short paragraph and Metkagram looks for reusable structures from the published pattern collection, then highlights stable parts of likely matches.
+
+The public Lens is deliberately conservative. It demonstrates the method without publishing the complete parser or annotation engine. See [docs/PATTERN_LENS.md](docs/PATTERN_LENS.md).
+
+### AI tutors and agents
+
+AI is treated as a tutor/interface, not as the Metkagram curriculum. Agents can use the public pattern API to choose what a learner should practise, explain a pattern in the learner's context, check an attempt and revisit the same learning object later.
+
+Machine-readable guidance is published at `/api/v1/teaching-manifest.json`.
+
+The existing `/api/v1/mcp-server.json` is a **static adapter/tool manifest**, not a hosted remote MCP transport endpoint.
+
+## Mobile application
+
+The earlier mobile application was an important product experiment for cards, annotation and spaced repetition, but it is no longer the active Metkagram product. The current project is web-first and research-oriented.
 
 ## Public repository boundary
 
@@ -14,11 +42,11 @@ The public release deliberately contains enough material to inspect, cite and ev
 - 30 curated reasoning-enabled English/German pattern frames across 9 reasoning moves;
 - a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer;
 - public schemas, provenance, APIs, research documentation and website code;
-- the hosted learning and research interface.
+- the hosted learning, Pattern Lens and research interfaces.
 
 The routing benchmark is an internal regression and editorial-quality signal. It is not independent validation and does not establish language-learning efficacy.
 
-The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, linguistic heuristics, lexical rule tables and unpublished research assets are maintained in a private research core.
+The complete pattern curriculum, full annotated corpus, bulk annotation exports, annotation engine, spaCy pipeline, linguistic heuristics, lexical rule tables and unpublished research assets are maintained in a private research core.
 
 Public access does not grant permission to rebuild, mirror or redistribute the private/full system. See [LICENSE](LICENSE), [LICENSING.md](LICENSING.md) and [docs/PUBLICATION_BOUNDARY.md](docs/PUBLICATION_BOUNDARY.md).
 
@@ -41,7 +69,7 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` builds the static site, validates the deliberately public content, runs the reasoning-routing regression benchmark, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
+`npm run verify` builds the static site, validates the deliberately public content, generates and checks Pattern Lens, runs the reasoning-routing regression benchmark, executes unit/integration tests and checks internal links. Publication-boundary tests fail if full/private-core paths are accidentally restored.
 
 ## Public content sources
 
@@ -51,13 +79,13 @@ npm run test:e2e
 - `data/study-sets.json` supplies taxonomy metadata; the public build exposes only study sets used by published frames.
 - `data/publication-manifest.json` records the deliberate public sample boundary.
 
-Generated public outputs include `/data/advanced-patterns.json`, `/data/reasoning-evaluation.json` and `/api/v1/*`, but these represent the **public showcase**, not the private full curriculum or private evaluation workspace.
+Generated public outputs include `/data/advanced-patterns.json`, `/data/reasoning-evaluation.json`, `/api/v1/*` and `/api/v1/teaching-manifest.json`, but these represent the **public showcase**, not the private full curriculum or private evaluation workspace.
 
 ## Research and licensing
 
 Metkagram is source-available, not open source or open data by default. Reading, linking and citation are welcome. Substantial reuse, derived corpora, model training, redistribution and commercial integration require scoped permission unless applicable law independently permits the use.
 
-Research collaborations, institutional evaluation, data/API licensing and commercial proposals are welcome through the process described in [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md).
+Research collaborations, teacher/education pilots, institutional evaluation, data/API licensing and commercial proposals are welcome through the process described in [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md).
 
 ## Important history note
 
