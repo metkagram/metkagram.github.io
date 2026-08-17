@@ -26,7 +26,6 @@ function registerPages(pages) {
   inventory.pages.sort((a, b) => a.route.localeCompare(b.route));
   inventory.pageCount = inventory.pages.length;
   writeJson("seo/site-pages.json", inventory);
-
   let sitemap = read("sitemap.xml");
   for (const route of routes) {
     const url = `${SITE_URL}${route}`;
@@ -69,7 +68,6 @@ function discoveryModel(content) {
 function publishDiscovery(model) {
   writeJson("data/discovery.json", model);
   writeJson("api/v1/discovery.json", { provenance: { ...ATTRIBUTION, dataset_version: getDatasetVersion(), release_date: SITE_RELEASE_DATE, canonical_url: `${SITE_URL}/api/v1/discovery.json`, record_type: "capability_recommendation_index" }, data: model });
-
   if (fs.existsSync(full("api/v1/index.json"))) {
     const index = readJson("api/v1/index.json");
     const root = index.data && typeof index.data === "object" ? index.data : index;
@@ -112,10 +110,12 @@ function updateLlms() {
 }
 
 function transformJsonLd(data, relativePath, content) {
-  if (Array.isArray(data?.["@graph"])) data["@graph"] = data["@graph"].filter((node) => node?.["@id"] !== `${SITE_URL}/#mobile-application`);
+  const mobileId = `${SITE_URL}/#mobile-application`;
+  if (Array.isArray(data?.["@graph"])) data["@graph"] = data["@graph"].filter((node) => node?.["@id"] !== mobileId);
+  if (data?.about?.["@id"] === mobileId) delete data.about;
+  if (data?.mainEntity?.["@id"] === mobileId) delete data.mainEntity;
   if (data?.["@type"] === "SoftwareApplication" && data?.name === "Metkagram" && data?.operatingSystem === "Web") return null;
   if (data?.["@type"] !== "LearningResource") return data;
-
   const patternMatch = relativePath.match(/^(en|ru)\/practice\/([^/]+)\/index\.html$/);
   const pattern = patternMatch && content.advancedPatterns.find((item) => item.id.toLowerCase() === patternMatch[2].toLowerCase());
   if (pattern) {
@@ -155,14 +155,12 @@ function patchHtml(relativePath, content) {
       return transformed ? `<script type="application/ld+json">${JSON.stringify(transformed).replaceAll("<", "\\u003c")}</script>` : "";
     } catch { return fullTag; }
   });
-
   const locale = relativePath.startsWith("ru/") ? "ru" : relativePath.startsWith("en/") ? "en" : null;
   if (locale) {
     const footer = /(<nav class="footer-column" aria-label="Project">[\s\S]*?<a href="\/(?:en|ru)\/support\/">[\s\S]*?<\/a>)([\s\S]*?<a href="\/(?:en|ru)\/ai\/">)/;
     if (!html.includes(`href="/${locale}/mcp/"`) && footer.test(html)) html = html.replace(footer, `$1<a href="/${locale}/mcp/">MCP</a>$2`);
     html = html.replaceAll(`href="/${locale}/ai/#connectors"`, `href="/${locale}/mcp/"`);
   }
-
   const setMatch = relativePath.match(/^(en|ru)\/practice\/set\/([^/]+)\/index\.html$/);
   if (setMatch && !html.includes('"@type":"ItemList"')) {
     const set = content.studySets.sets.find((item) => item.id.toLowerCase() === setMatch[2].toLowerCase());
