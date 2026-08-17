@@ -1,5 +1,7 @@
 import { classifyReasoningSentence } from "./public-learning.mjs";
 
+const REASONING_SCORE = Object.freeze({ direct: 18, supported: 16, prompt: 14 });
+
 export function normalizeLensText(value = "") {
   return String(value)
     .replaceAll("**", "")
@@ -46,7 +48,7 @@ export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
       const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalizeLensText(segment).length / 10), 0)
         + (exampleMatch ? 10 : 0)
         + (hits.length > 1 ? 2 : 0);
-      const reasoningScore = reasoningMatch ? 12 + reasoningMatch.confidence * 6 : 0;
+      const reasoningScore = reasoningMatch ? REASONING_SCORE[reasoningMatch.strength] || 0 : 0;
       const combinedBonus = reasoningMatch && hits.length ? 3 : 0;
       const score = literalScore + reasoningScore + combinedBonus;
       if (!score) return null;
@@ -71,7 +73,8 @@ export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
         score: Number(score.toFixed(3)),
         score_breakdown: {
           literal: Number(literalScore.toFixed(3)),
-          reasoning: Number(reasoningScore.toFixed(3)),
+          reasoning: reasoningScore,
+          reasoning_strength: reasoningMatch?.strength || null,
           combined_bonus: combinedBonus,
         },
         coverage: segments.length ? Number((hits.length / segments.length).toFixed(3)) : 0,
