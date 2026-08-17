@@ -12,6 +12,7 @@ if (dataNode && root) {
   const languageButtons = [...root.querySelectorAll("[data-lens-language]")];
   const sampleButtons = [...document.querySelectorAll("[data-lens-sample]")];
   let language = "en";
+  let reasoningRules = null;
 
   const normalize = (value = "") => String(value)
     .replaceAll("**", "")
@@ -39,8 +40,36 @@ if (dataNode && root) {
 
   const recordFor = (pattern) => pattern.langs.find((item) => item.lang === language);
 
+  const classifyReasoning = (input) => {
+    if (!reasoningRules?.rules?.length) return [];
+    const minConfidence = reasoningRules.min_confidence || 0.9;
+    const genericConditionIds = new Set(reasoningRules.generic_condition_rule_ids || []);
+    let matches = reasoningRules.rules
+      .filter((item) => {
+        if (item.language !== language || item.confidence < minConfidence) return false;
+        try {
+          return new RegExp(item.pattern, item.flags).test(input);
+        } catch {
+          return false;
+        }
+      })
+      .sort((a, b) => b.confidence - a.confidence || b.priority - a.priority || a.id.localeCompare(b.id));
+
+    const hasStrongTest = matches.some((item) => item.reasoning_move === "Test" && item.confidence >= 0.95);
+    if (hasStrongTest) matches = matches.filter((item) => !genericConditionIds.has(item.id));
+
+    const selected = [];
+    for (const item of matches) {
+      if (selected.some((current) => current.reasoning_move === item.reasoning_move)) continue;
+      selected.push(item);
+      if (selected.length >= 3) break;
+    }
+    return selected;
+  };
+
   const rank = (input) => {
     const normalizedText = normalize(input);
+    const reasoningByPattern = new Map(classifyReasoning(input).map((item) => [item.pattern_id, item]));
     return patterns
       .map((pattern) => {
         const lang = recordFor(pattern);
@@ -52,11 +81,23 @@ if (dataNode && root) {
           const normalized = normalize(example);
           return normalized.length >= 8 && (normalizedText.includes(normalized) || normalized.includes(normalizedText));
         });
-        const score = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalize(segment).length / 10), 0)
+        const reasoningMatch = reasoningByPattern.get(pattern.id) || null;
+        const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalize(segment).length / 10), 0)
           + (exampleMatch ? 10 : 0)
           + (hits.length > 1 ? 2 : 0);
+        const reasoningScore = reasoningMatch ? 12 + reasoningMatch.confidence * 6 : 0;
+        const combinedBonus = reasoningMatch && hits.length ? 3 : 0;
+        const score = literalScore + reasoningScore + combinedBonus;
         if (!score) return null;
-        return { pattern, lang, hits, score, coverage: segments.length ? hits.length / segments.length : 0 };
+        return {
+          pattern,
+          lang,
+          hits,
+          reasoningMatch,
+          score,
+          evidenceType: reasoningMatch && hits.length ? "literal+reasoning" : reasoningMatch ? "reasoning" : "literal",
+          coverage: segments.length ? hits.length / segments.length : 0,
+        };
       })
       .filter(Boolean)
       .sort((a, b) => b.score - a.score || b.coverage - a.coverage || a.pattern.id.localeCompare(b.pattern.id))
@@ -75,7 +116,7 @@ if (dataNode && root) {
         const index = lower.indexOf(needle, from);
         if (index < 0) break;
         const end = index + needle.length;
-        if (!ranges.some((range) => index < range.end && end > range.start)) ranges.push({ start: index, end, label: hit });
+        if (!ranges.some((range) => index < range.end && end > range.start)) ranges.push({ start: index, end });
         from = end;
       }
     }
@@ -92,6 +133,16 @@ if (dataNode && root) {
     return `<p class="lens-annotated-sentence">${html}</p>`;
   };
 
+  const evidenceText = ({ hits, reasoningMatch }) => {
+    const parts = [];
+    if (hits.length) parts.push(locale === "ru" ? `структура: ${hits.length}` : `structure: ${hits.length} literal cue${hits.length === 1 ? "" : "s"}`);
+    if (reasoningMatch) {
+      const prefix = locale === "ru" ? "логика" : "reasoning";
+      parts.push(`${prefix}: ${reasoningMatch.reasoning_move} · ${reasoningMatch.evidence}`);
+    }
+    return parts.join(" · ");
+  };
+
   const render = () => {
     const input = text.value.trim();
     if (!input) {
@@ -103,20 +154,31 @@ if (dataNode && root) {
     const matches = rank(input);
     empty.hidden = matches.length > 0;
     annotation.innerHTML = highlight(input, matches[0]?.hits || []);
-    results.innerHTML = matches.map(({ pattern, lang, hits, coverage }) => {
-      const purpose = pattern.reasoning_move ? `<span>${escapeHtml(pattern.reasoning_move)}</span>` : "";
+    results.innerHTML = matches.map(({ pattern, lang, hits, reasoningMatch, evidenceType, coverage }) => {
+      const purpose = (reasoningMatch?.reasoning_move || pattern.reasoning_move) ? `<span>${escapeHtml(reasoningMatch?.reasoning_move || pattern.reasoning_move)}</span>` : "";
       const page = pattern.page_urls?.[locale] || `/${locale}/practice/${pattern.id.toLowerCase()}/`;
-      const matchText = hits.length
-        ? (locale === "ru" ? `Совпало устойчивых частей: ${hits.length}` : `${hits.length} stable part${hits.length === 1 ? "" : "s"} matched`)
-        : "";
-      return `<article class="lens-card">
-        <div class="lens-card-meta"><code>${escapeHtml(pattern.id)}</code>${purpose}<span>${Math.round(coverage * 100)}%</span></div>
+      const metric = reasoningMatch
+        ? `${Math.round(reasoningMatch.confidence * 100)}% cue`
+        : `${Math.round(coverage * 100)}% structure`;
+      return `<article class="lens-card" data-evidence-type="${escapeHtml(evidenceType)}">
+        <div class="lens-card-meta"><code>${escapeHtml(pattern.id)}</code>${purpose}<span>${escapeHtml(metric)}</span></div>
         <h3>${escapeHtml(lang.formula)}</h3>
         <p class="lens-example">${escapeHtml(lang.example)}</p>
         <p class="lens-translation">${escapeHtml(lang.translation || "")}</p>
-        <div class="lens-card-foot"><span>${escapeHtml(matchText)}</span><a href="${escapeHtml(page)}">${locale === "ru" ? "Учить паттерн" : "Learn this pattern"} →</a></div>
+        <p class="lens-evidence">${escapeHtml(evidenceText({ hits, reasoningMatch }))}</p>
+        <div class="lens-card-foot"><span>${escapeHtml(evidenceType)}</span><a href="${escapeHtml(page)}">${locale === "ru" ? "Учить паттерн" : "Learn this pattern"} →</a></div>
       </article>`;
     }).join("");
+  };
+
+  const loadReasoningRules = async () => {
+    try {
+      const response = await fetch("/data/pattern-lens-rules.json");
+      if (!response.ok) return;
+      reasoningRules = await response.json();
+    } catch {
+      reasoningRules = null;
+    }
   };
 
   languageButtons.forEach((button) => button.addEventListener("click", () => {
@@ -142,5 +204,5 @@ if (dataNode && root) {
     render();
   });
 
-  render();
+  loadReasoningRules().finally(render);
 }
