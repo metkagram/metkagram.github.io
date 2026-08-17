@@ -73,6 +73,7 @@ test("Research page exposes Pattern Lens evaluation with an evidence limit", () 
   const html = fs.readFileSync(path.join(DIST, "en", "research", "index.html"), "utf8");
   assert.match(html, /data-pattern-lens-evaluation/);
   assert.match(html, /not independent evidence/i);
-  assert.match(html, /not statistical precision\/recall/i);
+  assert.match(html, /statistical precision\/recall/i);
+  assert.match(html, /learning efficacy/i);
   assert.match(html, /pattern-lens-evaluation\.json/);
 });
