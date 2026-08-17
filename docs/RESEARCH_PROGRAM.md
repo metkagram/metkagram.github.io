@@ -1,6 +1,6 @@
 # Metkagram research programme
 
-Status: protocol-ready; no product-efficacy claim has been made.
+Status: H1 cue-utility pilot implemented; no product-efficacy claim has been made and no H1 outcome is reported yet.
 
 Metkagram combines sentence-first reading, minimal functional annotation, reusable pattern variation and delayed retrieval. Research on attention, focus on form, retrieval practice and spacing informs those decisions, but it does not prove that the Metkagram interface itself improves learning. That implementation-specific question must be tested directly.
 
@@ -20,22 +20,29 @@ The hypotheses are directional, but a study may use a non-inferiority design whe
 1. Register the hypothesis, comparison, primary outcome, sample rationale and exclusion criteria before collecting outcome data.
 2. Change one mechanism at a time: annotation, variation, retrieval or spacing.
 3. Use unseen examples for transfer tests. Familiar practice sentences measure memory for the material, not transfer.
-4. Record target language, CEFR band, prior proficiency and relevant accessibility needs.
+4. Record target language, CEFR band, prior proficiency and relevant accessibility needs only when needed for the study.
 5. Version every stimulus against a canonical record ID and dataset version.
 6. Publish null and negative findings with positive findings.
 7. Collect only necessary participant data and keep personal information outside the public language corpus.
 
-## Suggested first pilot
+## First pilot: H1 cue utility
 
-The first pilot should test H1 because it isolates the distinctive interface mechanism with a short, low-risk task.
+The first implemented pilot tests H1 because it isolates the distinctive interface mechanism with a short, low-risk task.
 
-- Participants: adult English learners at B1–B2.
-- Conditions: clean sentence; sentence with Metkagram tags.
-- Task: select the subject, main verb and functional helper in unseen sentences.
-- Primary outcome: correct identification.
-- Secondary outcomes: response time, confidence and perceived visual load.
-- Guardrail: confirm that annotation does not reduce sentence-comprehension accuracy.
-- Reporting: effect estimate with uncertainty, task materials, exclusions, null findings and anonymised aggregate data.
+- Study ID: `H1-CUE-UTILITY-V1`.
+- Participants: adult English learners; B1–B2 is the predefined primary analysis band.
+- Conditions: clean sentence; the same sentence with compact Metkagram functional tags.
+- Task: select the subject, main verb or helper in eight English sentences, then answer a meaning-comprehension check.
+- Co-primary descriptive outcomes: correct role identification and response time.
+- Secondary outcomes: confidence and perceived visual load.
+- Guardrail: sentence-comprehension accuracy.
+- Assignment: approximately 50/50 random between-session assignment to `clean` or `tagged`.
+- Data handling: browser-local storage only; export is explicit and participant-controlled.
+- Reporting: condition estimates, uncertainty, exclusions, role-level breakdowns and null/negative findings.
+
+The pilot is intentionally described as a **cue-utility** test. Because the tagged condition visibly exposes functional labels, it can show whether the notation is useful and efficient in the interface, but it cannot establish learning, retention or transfer.
+
+The frozen protocol is in [`RESEARCH_PILOT_H1.md`](RESEARCH_PILOT_H1.md). Frozen stimuli are in `data/research/h1-cue-utility-v1.json`. The public experiment is generated at `/en/research/pilot-h1/` and `/ru/research/pilot-h1/`.
 
 ## Annotation-quality programme
 
