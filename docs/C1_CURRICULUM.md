@@ -1,18 +1,67 @@
-# Metkagram C1 curriculum
+# Metkagram B2–C1 public pattern programme
 
-Metkagram has two complementary modes.
+Metkagram has two complementary public learning modes.
 
-- **Annotated Language / Карточки с разметкой** keeps grammar visible inside complete English and German sentences.
-- **Pattern Practice / Паттерны** turns reusable B2–C1 moves into active-recall items.
+- **Annotated Language / Карточки с разметкой** keeps functional structure visible inside complete English and German sentences.
+- **Pattern Practice / Паттерны** turns selected B2–C1 reasoning and communication moves into reusable learning objects.
 
-The public curriculum is stored in `data/advanced-patterns.json`; its set catalogue and paths are in `data/study-sets.json`. A pattern is complete only when it includes its stable ID, title, category/set membership, English and German formulas, natural examples, Russian translations, and at least two translated variations for each target language.
+The public repository is intentionally a bounded publication layer. It is not the complete Metkagram curriculum.
 
-## Learning paths
+## Public pattern contract
 
-`C1 Communication` covers argumentation, stance, evidence, agreement and disagreement, qualification, probability, clarification, comparison, cause/effect, and negotiation.
+A published pattern is complete only when it includes:
 
-`C1 Control` covers professional communication, storytelling, connectors, conditionals, modality, passive and impersonal style, reported speech, tense/aspect, questions/negatives/reference, and German grammar in use.
+- a stable ID;
+- study-set and group metadata;
+- a clear reasoning move where applicable;
+- English and German formulas;
+- a natural primary example in each target language;
+- Russian translation support;
+- at least two translated variations for each target language;
+- editorial and provenance metadata used by the public quality gates.
+
+The current public collection is sourced from `data/reasoning-frames/` and exposed through generated datasets and API routes. The full curriculum and unpublished generation assets remain in the private research core.
+
+## Learning organisation
+
+The public taxonomy should prioritise what a learner is trying to do with a thought, for example:
+
+- correct or redefine a claim;
+- limit an overconfident conclusion;
+- express a condition or dependency;
+- compare alternatives;
+- qualify certainty;
+- connect evidence to a conclusion;
+- explain cause and consequence;
+- negotiate, clarify or disagree precisely.
+
+Traditional grammar categories remain useful metadata, but they are not the main product hierarchy.
+
+## Pattern Graph
+
+The production build derives a bounded Pattern Graph from explicit public metadata. Related patterns may share a reasoning move, study set or meaningful logic vocabulary.
+
+The graph supports navigation and practice alternatives. It does not claim that connected patterns are synonyms or that the connection has demonstrated a learning effect. See `PATTERN_GRAPH.md`.
 
 ## Quality gates
 
-The content loader rejects a build when the collection falls below 1,000 patterns; IDs or formulas repeat; any English/German formula, example, Russian translation, or variation is missing; a pattern belongs to an unknown set; a path references an unknown set; or a set has no complete patterns. Existing pattern IDs and detail routes remain unchanged, and the SRS retains the `metkagram:progress:v2` format plus legacy normalization.
+The public build should fail when:
+
+- the deliberately published reasoning showcase falls below its minimum release floor;
+- pattern IDs or language formulas collide;
+- required English/German examples or Russian translations are missing;
+- a pattern refers to an unknown study set;
+- duplicate variations reduce the usable example set below the accepted threshold;
+- publication-boundary checks detect accidental restoration of private/full-curriculum paths.
+
+**Raw pattern count is not a quality gate.** A smaller reviewed public collection is preferable to a large synthetic catalogue.
+
+Stable IDs and canonical routes should remain unchanged once published unless a documented migration is necessary.
+
+## Product loop
+
+The intended progression is:
+
+**sentence → visible structure → reusable pattern → reasoning move → nearby alternatives → retrieval attempt → later return**
+
+AI can generate context and feedback around this loop, but the stable pattern object and its research metadata remain the canonical Metkagram layer.
