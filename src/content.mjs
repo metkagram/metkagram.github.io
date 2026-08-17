@@ -25,6 +25,41 @@ function readJsonDirectory(directory) {
     });
 }
 
+function applyPracticeExtensions(studySets) {
+  const file = path.join(ROOT, "data", "practice-extensions.json");
+  if (!fs.existsSync(file)) return studySets;
+
+  const extension = readJson(file);
+  const extensionSets = Array.isArray(extension.sets) ? extension.sets : [];
+  const existingSetIds = new Set((studySets.sets || []).map((set) => set.id));
+  for (const set of extensionSets) {
+    assert(set && typeof set.id === "string" && set.id, `${file}: every extension set needs an id`);
+    assert(!existingSetIds.has(set.id), `${file}: duplicate study set ${set.id}`);
+    existingSetIds.add(set.id);
+  }
+
+  const learningPaths = (studySets.learningPaths || []).map((item) => ({
+    ...item,
+    set_ids: [...(item.set_ids || [])]
+  }));
+  const pathById = new Map(learningPaths.map((item) => [item.id, item]));
+  for (const [pathId, setIds] of Object.entries(extension.learningPathAdds || {})) {
+    const target = pathById.get(pathId);
+    assert(target, `${file}: unknown learning path ${pathId}`);
+    assert(Array.isArray(setIds), `${file}: learningPathAdds.${pathId} must be an array`);
+    for (const setId of setIds) {
+      assert(existingSetIds.has(setId), `${file}: ${pathId} references unknown study set ${setId}`);
+      if (!target.set_ids.includes(setId)) target.set_ids.push(setId);
+    }
+  }
+
+  return {
+    ...studySets,
+    sets: [...(studySets.sets || []), ...extensionSets],
+    learningPaths
+  };
+}
+
 function normalizeFormula(value = "") {
   return String(value).trim().toLocaleLowerCase();
 }
@@ -181,7 +216,7 @@ export function loadContent() {
 
   const baseAdvancedPatterns = readJson(path.join(ROOT, "data", "advanced-patterns.json"));
   const supplementalPatterns = readJsonDirectory(path.join(ROOT, "data", "reasoning-frames"));
-  const studySets = readJson(path.join(ROOT, "data", "study-sets.json"));
+  const studySets = applyPracticeExtensions(readJson(path.join(ROOT, "data", "study-sets.json")));
   assert(Array.isArray(baseAdvancedPatterns), "advanced-patterns.json must be an array");
   assert(Array.isArray(studySets.sets) && studySets.sets.length > 0, "study-sets.json must contain sets");
   const validSetIds = new Set(studySets.sets.map((set) => set.id));
