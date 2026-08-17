@@ -4,6 +4,14 @@ const copy = {
   ru: { showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
 }[locale];
 
+const reasoningSources = [
+  "/data/reasoning-frames/clf-041-044.json",
+  "/data/reasoning-frames/clf-045-048.json",
+  "/data/reasoning-frames/clf-049-052.json",
+  "/data/reasoning-frames/clf-053-056.json",
+  "/data/reasoning-frames/clf-057-060.json"
+];
+
 function setupMenu() {
   const button = document.querySelector("[data-menu-toggle]");
   const nav = document.querySelector("#site-nav");
@@ -106,7 +114,21 @@ function setupCollectionSearch() {
   });
 }
 
-function setupPatternFilters() {
+function patternIdFromHref(href = "") {
+  const parts = href.split("/").filter(Boolean);
+  return (parts.at(-1) || "").toUpperCase();
+}
+
+async function loadReasoningFrames() {
+  const responses = await Promise.all(reasoningSources.map(async (url) => {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Unable to load ${url}`);
+    return response.json();
+  }));
+  return new Map(responses.flat().map((frame) => [frame.id.toUpperCase(), frame]));
+}
+
+function setupPatternFilters(reasoningFrames = new Map()) {
   const list = document.querySelector("[data-pattern-list]");
   if (!list) return;
   const buttons = [...document.querySelectorAll("[data-language-filter]")];
@@ -115,6 +137,41 @@ function setupPatternFilters() {
   const items = [...list.querySelectorAll("a[data-language]")];
   const empty = list.querySelector("[data-empty-state]");
   const count = document.querySelector("[data-pattern-count]");
+
+  for (const item of items) {
+    const frame = reasoningFrames.get(patternIdFromHref(item.getAttribute("href")));
+    const move = frame?.reasoning?.move || "";
+    item.dataset.reasoning = move;
+    if (frame) {
+      const reasoningSearch = [frame.logic, frame.reasoning?.move, frame.reasoning?.what_it_does_en, frame.reasoning?.what_it_does_ru].filter(Boolean).join(" ");
+      item.dataset.searchText = `${item.dataset.searchText || ""} ${reasoningSearch}`.toLocaleLowerCase(locale);
+    }
+  }
+
+  const moves = [...new Set(items.map((item) => item.dataset.reasoning).filter(Boolean))].sort();
+  let reasoning;
+  if (moves.length) {
+    const tools = document.querySelector(".practice-tools");
+    const searchLabel = search?.closest("label");
+    const label = document.createElement("label");
+    label.textContent = locale === "ru" ? "Логический ход" : "Reasoning move";
+    reasoning = document.createElement("select");
+    reasoning.dataset.reasoningFilter = "";
+    const all = document.createElement("option");
+    all.value = "";
+    all.textContent = locale === "ru" ? "Все логические ходы" : "All reasoning moves";
+    reasoning.append(all);
+    for (const move of moves) {
+      const option = document.createElement("option");
+      option.value = move;
+      option.textContent = move;
+      reasoning.append(option);
+    }
+    label.append(reasoning);
+    if (searchLabel) searchLabel.before(label);
+    else tools?.append(label);
+  }
+
   const apply = () => {
     const active = buttons.filter((button) => button.getAttribute("aria-pressed") === "true").map((button) => button.dataset.languageFilter);
     const query = search?.value.trim().toLocaleLowerCase(locale) || "";
@@ -123,8 +180,9 @@ function setupPatternFilters() {
       const languages = item.dataset.language.split(" ");
       const matchesLanguage = active.some((language) => languages.includes(language));
       const matchesCategory = !category?.value || item.dataset.category === category.value;
+      const matchesReasoning = !reasoning?.value || item.dataset.reasoning === reasoning.value;
       const matchesQuery = !query || item.dataset.searchText.includes(query);
-      const match = matchesLanguage && matchesCategory && matchesQuery;
+      const match = matchesLanguage && matchesCategory && matchesReasoning && matchesQuery;
       item.hidden = !match;
       if (match) visible += 1;
     }
@@ -138,7 +196,59 @@ function setupPatternFilters() {
     apply();
   }));
   category?.addEventListener("change", apply);
+  reasoning?.addEventListener("change", apply);
   search?.addEventListener("input", apply);
+}
+
+function findReasoningFrame(reasoningFrames) {
+  const id = patternIdFromHref(window.location.pathname);
+  const direct = reasoningFrames.get(id);
+  if (direct) return direct;
+  const formulas = [...document.querySelectorAll(".pattern-formulas code")].map((item) => item.textContent.trim().toLocaleLowerCase());
+  return [...reasoningFrames.values()].find((frame) => frame.langs?.some((lang) => formulas.includes(lang.formula.trim().toLocaleLowerCase())));
+}
+
+function appendReasoningField(container, labelText, value) {
+  if (!value) return;
+  const block = document.createElement("div");
+  const label = document.createElement("span");
+  label.className = "language-code";
+  label.textContent = labelText;
+  const text = document.createElement("p");
+  text.textContent = value;
+  block.append(label, text);
+  container.append(block);
+}
+
+function setupReasoningNotes(reasoningFrames) {
+  const page = document.querySelector(".pattern-page");
+  const comparison = page?.querySelector(".pattern-comparison");
+  if (!page || !comparison) return;
+  const frame = findReasoningFrame(reasoningFrames);
+  if (!frame?.reasoning) return;
+
+  const r = frame.reasoning;
+  const section = document.createElement("section");
+  section.className = "pattern-reference-card reasoning-reference";
+  const header = document.createElement("header");
+  const eyebrow = document.createElement("p");
+  eyebrow.className = "eyebrow";
+  eyebrow.textContent = `${locale === "ru" ? "Логический ход" : "Reasoning move"} · ${r.move}`;
+  header.append(eyebrow);
+  section.append(header);
+
+  const firstRow = document.createElement("div");
+  firstRow.className = "pattern-formulas";
+  appendReasoningField(firstRow, locale === "ru" ? "Что делает" : "What it does", locale === "ru" ? r.what_it_does_ru : r.what_it_does_en);
+  appendReasoningField(firstRow, locale === "ru" ? "Когда использовать" : "When to use", locale === "ru" ? r.when_to_use_ru : r.when_to_use_en);
+  section.append(firstRow);
+
+  const secondRow = document.createElement("div");
+  secondRow.className = "pattern-formulas";
+  if (locale === "en") appendReasoningField(secondRow, "Contrast", r.contrast_en);
+  appendReasoningField(secondRow, locale === "ru" ? "Частая ошибка" : "Common mistake", locale === "ru" ? r.common_mistake_ru : r.common_mistake_en);
+  if (secondRow.children.length) section.append(secondRow);
+  comparison.before(section);
 }
 
 async function copyShareUrl(url) {
@@ -220,6 +330,16 @@ setupNativeLanguage();
 setupTagRules();
 setupAnnotationMode();
 setupCollectionSearch();
-setupPatternFilters();
 setupShareBars();
 setupHomeMotion();
+
+if (document.querySelector("[data-pattern-list], .pattern-page")) {
+  loadReasoningFrames()
+    .then((reasoningFrames) => {
+      setupPatternFilters(reasoningFrames);
+      setupReasoningNotes(reasoningFrames);
+    })
+    .catch(() => setupPatternFilters());
+} else {
+  setupPatternFilters();
+}
