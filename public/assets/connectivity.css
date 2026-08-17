@@ -10,4 +10,11 @@
 .sentence-pattern-link{margin:.85rem 0 0;padding-top:.7rem;border-top:1px solid var(--line,#d9d7d0);font-size:.92rem}
 .sentence-pattern-link a{text-decoration-thickness:1px;text-underline-offset:3px}
 .reasoning-move{scroll-margin-top:6rem}
-@media(max-width:720px){.connectivity-notes{grid-template-columns:1fr}.connectivity-index a{align-items:flex-start}}
+.sentence-reasoning-links{margin:.85rem 0 0;padding-top:.75rem;border-top:1px solid var(--line,#d9d7d0);display:grid;gap:.55rem}
+.sentence-reasoning-kicker{margin:0;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+.sentence-reasoning-link{padding:.7rem .8rem;border:1px solid var(--line,#d9d7d0)}
+.sentence-reasoning-link p{margin:0;line-height:1.45}
+.sentence-reasoning-link small{display:block;margin-top:.25rem;line-height:1.4;opacity:.72}
+.sentence-reasoning-link a{text-decoration-thickness:1px;text-underline-offset:3px}
+.intent-corpus-examples{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--line,#d9d7d0)}
+@media(max-width:720px){.connectivity-notes{grid-template-columns:1fr}.connectivity-index a{align-items:flex-start}.sentence-reasoning-link{padding:.65rem}}
