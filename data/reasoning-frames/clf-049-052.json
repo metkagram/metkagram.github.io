@@ -1,0 +1,197 @@
+[
+  {
+    "id": "CLF049",
+    "title_ru": "Выбор сводится к X или Y",
+    "group_id": "CLF",
+    "set_id": "NEG",
+    "logic": "decision reduction",
+    "metaphor_ru": "Свести сложное обсуждение к двум реальным альтернативам, когда остальные детали уже вторичны.",
+    "formulas": [
+      "The choice comes down to [X] or [Y].",
+      "Die Entscheidung läuft auf [X] oder [Y] hinaus."
+    ],
+    "reasoning": {
+      "move": "Decide",
+      "what_it_does_en": "Reduce a complex decision to the two alternatives that actually matter.",
+      "what_it_does_ru": "Свести сложное обсуждение к двум реальным альтернативам, когда остальные детали уже вторичны.",
+      "when_to_use_en": "Use it near the end of analysis, after false options have been eliminated.",
+      "when_to_use_ru": "Свести сложное обсуждение к двум реальным альтернативам, когда остальные детали уже вторичны.",
+      "contrast_en": "There are only ever two possible options.",
+      "common_mistake_en": "Do not use it too early; premature binary framing can hide better options.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The choice comes down to [X] or [Y].",
+        "example": "**The choice comes down to** keeping the manual control **or** accepting more automation risk.",
+        "translation": "Выбор сводится к сохранению ручного контроля или принятию большего риска автоматизации.",
+        "examples": [
+          {"text": "**The choice comes down to** fixing the interface **or** changing the source rule.", "translation_ru": "Выбор сводится к исправлению интерфейса или изменению исходного правила."},
+          {"text": "**The choice comes down to** a generic engine **or** a simpler scenario-specific solution.", "translation_ru": "Выбор сводится к универсальному движку или более простому решению под сценарий."},
+          {"text": "**The choice comes down to** lower cost **or** stronger guarantees.", "translation_ru": "Выбор сводится к более низкой стоимости или более сильным гарантиям."},
+          {"text": "**The choice comes down to** delaying the release **or** reducing scope.", "translation_ru": "Выбор сводится к переносу релиза или сокращению объёма."},
+          {"text": "**The choice comes down to** accepting the exception **or** redesigning the rule.", "translation_ru": "Выбор сводится к принятию исключения или переделке правила."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Entscheidung läuft auf [X] oder [Y] hinaus.",
+        "example": "**Die Entscheidung läuft darauf hinaus,** die manuelle Kontrolle beizubehalten **oder** mehr Automatisierungsrisiko zu akzeptieren.",
+        "translation": "Выбор сводится к сохранению ручного контроля или принятию большего риска автоматизации.",
+        "examples": [
+          {"text": "**Die Entscheidung läuft auf** eine Korrektur der Schnittstelle **oder** eine Änderung der Quellregel hinaus.", "translation_ru": "Выбор сводится к исправлению интерфейса или изменению исходного правила."},
+          {"text": "**Die Entscheidung läuft auf** eine generische Engine **oder** eine einfachere szenariospezifische Lösung hinaus.", "translation_ru": "Выбор сводится к универсальному движку или более простому решению под сценарий."},
+          {"text": "**Die Entscheidung läuft auf** niedrigere Kosten **oder** stärkere Garantien hinaus.", "translation_ru": "Выбор сводится к более низкой стоимости или более сильным гарантиям."},
+          {"text": "**Die Entscheidung läuft auf** eine Verschiebung des Releases **oder** eine Reduzierung des Umfangs hinaus.", "translation_ru": "Выбор сводится к переносу релиза или сокращению объёма."},
+          {"text": "**Die Entscheidung läuft darauf hinaus,** die Ausnahme zu akzeptieren **oder** die Regel neu zu gestalten.", "translation_ru": "Выбор сводится к принятию исключения или переделке правила."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-16", "languages": ["en", "de"], "notes": "Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF050",
+    "title_ru": "Не вопрос, делать ли X, а как сделать Y",
+    "group_id": "CLF",
+    "set_id": "CLR",
+    "logic": "decision reframing",
+    "metaphor_ru": "Переформулировать спор: снять уже решённый вопрос и перенести внимание на способ реализации.",
+    "formulas": ["The question is not whether [X], but how [Y].", "Die Frage ist nicht, ob [X], sondern wie [Y]."],
+    "reasoning": {
+      "move": "Reframe",
+      "what_it_does_en": "Reframe a debate from whether to act to how to act.",
+      "what_it_does_ru": "Переформулировать спор: снять уже решённый вопрос и перенести внимание на способ реализации.",
+      "when_to_use_en": "Use it when the high-level decision is settled and the remaining uncertainty is implementation.",
+      "when_to_use_ru": "Переформулировать спор: снять уже решённый вопрос и перенести внимание на способ реализации.",
+      "contrast_en": "We should stop questioning X in every context.",
+      "common_mistake_en": "Only use it when whether X is genuinely settled.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The question is not whether [X], but how [Y].",
+        "example": "**The question is not whether** we should validate the data, **but how** we can do it cheaply.",
+        "translation": "Вопрос не в том, нужно ли проверять данные, а в том, как сделать это недорого.",
+        "examples": [
+          {"text": "**The question is not whether** to monitor the process, **but how** early we can detect a delay.", "translation_ru": "Вопрос не в том, нужно ли мониторить процесс, а в том, насколько рано можно обнаружить задержку."},
+          {"text": "**The question is not whether** users need control, **but how** much control they need.", "translation_ru": "Вопрос не в том, нужен ли пользователям контроль, а в том, сколько контроля им нужно."},
+          {"text": "**The question is not whether** to automate, **but how** to keep the rule visible.", "translation_ru": "Вопрос не в том, автоматизировать ли, а в том, как сохранить правило видимым."},
+          {"text": "**The question is not whether** the error matters, **but how** often it can occur.", "translation_ru": "Вопрос не в том, важна ли ошибка, а в том, как часто она может возникать."},
+          {"text": "**The question is not whether** to simplify the UI, **but how** far we can simplify it safely.", "translation_ru": "Вопрос не в том, упрощать ли интерфейс, а в том, насколько далеко можно зайти безопасно."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Frage ist nicht, ob [X], sondern wie [Y].",
+        "example": "**Die Frage ist nicht, ob** wir die Daten validieren sollten, **sondern wie** wir das kostengünstig tun können.",
+        "translation": "Вопрос не в том, нужно ли проверять данные, а в том, как сделать это недорого.",
+        "examples": [
+          {"text": "**Die Frage ist nicht, ob** wir den Prozess überwachen sollten, **sondern wie** früh wir eine Verzögerung erkennen können.", "translation_ru": "Вопрос не в том, нужно ли мониторить процесс, а в том, насколько рано можно обнаружить задержку."},
+          {"text": "**Die Frage ist nicht, ob** Nutzer Kontrolle brauchen, **sondern wie viel** Kontrolle sie brauchen.", "translation_ru": "Вопрос не в том, нужен ли пользователям контроль, а в том, сколько контроля им нужно."},
+          {"text": "**Die Frage ist nicht, ob** wir automatisieren sollten, **sondern wie** wir die Regel sichtbar halten.", "translation_ru": "Вопрос не в том, автоматизировать ли, а в том, как сохранить правило видимым."},
+          {"text": "**Die Frage ist nicht, ob** der Fehler relevant ist, **sondern wie** häufig er auftreten kann.", "translation_ru": "Вопрос не в том, важна ли ошибка, а в том, как часто она может возникать."},
+          {"text": "**Die Frage ist nicht, ob** wir die UI vereinfachen sollten, **sondern wie weit** wir sie sicher vereinfachen können.", "translation_ru": "Вопрос не в том, упрощать ли интерфейс, а в том, насколько далеко можно зайти безопасно."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-16", "languages": ["en", "de"], "notes": "Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF051",
+    "title_ru": "X указывает на Y, но не доказывает его",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "evidence vs proof",
+    "metaphor_ru": "Отделить свидетельство от доказательства: X повышает правдоподобие Y, но не закрывает альтернативы.",
+    "formulas": ["[X] suggests that [Y], but it doesn't prove it.", "[X] deutet darauf hin, dass [Y], beweist es aber nicht."],
+    "reasoning": {
+      "move": "Infer",
+      "what_it_does_en": "Distinguish suggestive evidence from proof.",
+      "what_it_does_ru": "Отделить свидетельство от доказательства: X повышает правдоподобие Y, но не закрывает альтернативы.",
+      "when_to_use_en": "Use it whenever an observation supports a hypothesis without uniquely establishing it.",
+      "when_to_use_ru": "Отделить свидетельство от доказательства: X повышает правдоподобие Y, но не закрывает альтернативы.",
+      "contrast_en": "X proves Y.",
+      "common_mistake_en": "Do not weaken decisive evidence unnecessarily; use this when alternatives remain plausible.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] suggests that [Y], but it doesn't prove it.",
+        "example": "The repeated timeout **suggests that** the queue is overloaded, **but it doesn't prove it**.",
+        "translation": "Повторяющийся таймаут указывает на перегрузку очереди, но не доказывает её.",
+        "examples": [
+          {"text": "The lower error rate **suggests that** the new rule is better, **but it doesn't prove it**.", "translation_ru": "Более низкий уровень ошибок указывает на лучшее правило, но не доказывает это."},
+          {"text": "The missing event **suggests that** replication failed, **but it doesn't prove it**.", "translation_ru": "Отсутствующее событие указывает на сбой репликации, но не доказывает его."},
+          {"text": "The user behavior **suggests that** the workflow is confusing, **but it doesn't prove it**.", "translation_ru": "Поведение пользователей указывает на путаный процесс, но не доказывает это."},
+          {"text": "The correlation **suggests that** the systems share a cause, **but it doesn't prove it**.", "translation_ru": "Корреляция указывает на общую причину, но не доказывает её."},
+          {"text": "The first benchmark **suggests that** the model is faster, **but it doesn't prove it**.", "translation_ru": "Первый бенчмарк указывает на более быструю модель, но не доказывает это."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] deutet darauf hin, dass [Y], beweist es aber nicht.",
+        "example": "Die wiederholte Zeitüberschreitung **deutet darauf hin, dass** die Queue überlastet ist, **beweist es aber nicht**.",
+        "translation": "Повторяющийся таймаут указывает на перегрузку очереди, но не доказывает её.",
+        "examples": [
+          {"text": "Die niedrigere Fehlerquote **deutet darauf hin, dass** die neue Regel besser ist, **beweist es aber nicht**.", "translation_ru": "Более низкий уровень ошибок указывает на лучшее правило, но не доказывает это."},
+          {"text": "Das fehlende Ereignis **deutet darauf hin, dass** die Replikation fehlgeschlagen ist, **beweist es aber nicht**.", "translation_ru": "Отсутствующее событие указывает на сбой репликации, но не доказывает его."},
+          {"text": "Das Nutzerverhalten **deutet darauf hin, dass** der Workflow verwirrend ist, **beweist es aber nicht**.", "translation_ru": "Поведение пользователей указывает на путаный процесс, но не доказывает это."},
+          {"text": "Die Korrelation **deutet darauf hin, dass** die Systeme eine gemeinsame Ursache haben, **beweist es aber nicht**.", "translation_ru": "Корреляция указывает на общую причину, но не доказывает её."},
+          {"text": "Der erste Benchmark **deutet darauf hin, dass** das Modell schneller ist, **beweist es aber nicht**.", "translation_ru": "Первый бенчмарк указывает на более быструю модель, но не доказывает это."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-16", "languages": ["en", "de"], "notes": "Advanced Reasoning Frame for Metkagram Practice."}
+  },
+  {
+    "id": "CLF052",
+    "title_ru": "X согласуется с Y, но может означать Z",
+    "group_id": "CLF",
+    "set_id": "EVD",
+    "logic": "alternative explanation",
+    "metaphor_ru": "Признать, что наблюдение совместимо с гипотезой Y, но не уникально для неё.",
+    "formulas": ["[X] is consistent with [Y], but it could also mean [Z].", "[X] passt zu [Y], könnte aber auch [Z] bedeuten."],
+    "reasoning": {
+      "move": "Infer",
+      "what_it_does_en": "Keep alternative explanations alive when evidence fits more than one hypothesis.",
+      "what_it_does_ru": "Признать, что наблюдение совместимо с гипотезой Y, но не уникально для неё.",
+      "when_to_use_en": "Use it when one observation has multiple plausible causes.",
+      "when_to_use_ru": "Признать, что наблюдение совместимо с гипотезой Y, но не уникально для неё.",
+      "contrast_en": "Because X fits Y, Y must be true.",
+      "common_mistake_en": "Name a genuinely plausible alternative, not a token possibility.",
+      "common_mistake_ru": "Не превращайте каркас в автоматический вывод: логическая связь должна подтверждаться контекстом."
+    },
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "[X] is consistent with [Y], but it could also mean [Z].",
+        "example": "The missing record **is consistent with** a replication failure, **but it could also mean** the source never created it.",
+        "translation": "Отсутствующая запись согласуется со сбоем репликации, но может означать и то, что источник её не создал.",
+        "examples": [
+          {"text": "The delay **is consistent with** queue congestion, **but it could also mean** a downstream service is slow.", "translation_ru": "Задержка согласуется с перегрузкой очереди, но может означать медленный нижележащий сервис."},
+          {"text": "The score **is consistent with** a better model, **but it could also mean** the test set is easier.", "translation_ru": "Оценка согласуется с лучшей моделью, но может означать более лёгкий тестовый набор."},
+          {"text": "The duplicate **is consistent with** a retry, **but it could also mean** two sources emitted the same event.", "translation_ru": "Дубликат согласуется с повторной отправкой, но может означать два одинаковых события из разных источников."},
+          {"text": "The complaint **is consistent with** a UX problem, **but it could also mean** the documentation is unclear.", "translation_ru": "Жалоба согласуется с UX-проблемой, но может означать неясную документацию."},
+          {"text": "The drop **is consistent with** a regression, **but it could also mean** the traffic mix changed.", "translation_ru": "Падение согласуется с регрессией, но может означать изменение состава трафика."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "[X] passt zu [Y], könnte aber auch [Z] bedeuten.",
+        "example": "Der fehlende Datensatz **passt zu** einem Replikationsfehler, **könnte aber auch bedeuten, dass** die Quelle ihn nie erstellt hat.",
+        "translation": "Отсутствующая запись согласуется со сбоем репликации, но может означать и то, что источник её не создал.",
+        "examples": [
+          {"text": "Die Verzögerung **passt zu** einer überlasteten Queue, **könnte aber auch bedeuten, dass** ein nachgelagerter Service langsam ist.", "translation_ru": "Задержка согласуется с перегрузкой очереди, но может означать медленный нижележащий сервис."},
+          {"text": "Der Score **passt zu** einem besseren Modell, **könnte aber auch bedeuten, dass** der Testsatz einfacher ist.", "translation_ru": "Оценка согласуется с лучшей моделью, но может означать более лёгкий тестовый набор."},
+          {"text": "Das Duplikat **passt zu** einem Retry, **könnte aber auch bedeuten, dass** zwei Quellen dasselbe Ereignis gesendet haben.", "translation_ru": "Дубликат согласуется с повторной отправкой, но может означать два одинаковых события из разных источников."},
+          {"text": "Die Beschwerde **passt zu** einem UX-Problem, **könnte aber auch bedeuten, dass** die Dokumentation unklar ist.", "translation_ru": "Жалоба согласуется с UX-проблемой, но может означать неясную документацию."},
+          {"text": "Der Rückgang **passt zu** einer Regression, **könnte aber auch bedeuten, dass** sich der Traffic-Mix geändert hat.", "translation_ru": "Падение согласуется с регрессией, но может означать изменение состава трафика."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-16", "languages": ["en", "de"], "notes": "Advanced Reasoning Frame for Metkagram Practice."}
+  }
+]
