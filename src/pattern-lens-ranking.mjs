@@ -1,4 +1,15 @@
 import { classifyReasoningSentence } from "./public-learning.mjs";
+import { classifyPatternLensExtraRules } from "./pattern-lens-extra-rules.mjs";
+
+export const LENS_STOP_SEGMENTS = new Set([
+  "a", "an", "and", "as", "at", "but", "for", "if", "in", "is", "it", "no", "not", "of", "on", "or", "the", "that", "this", "to", "with", "yes",
+  "aber", "am", "das", "dass", "der", "die", "ein", "eine", "es", "für", "im", "ist", "ja", "mit", "nein", "nicht", "und", "von", "wenn", "zu"
+]);
+
+export const LENS_META_CUES = {
+  en: /\b(?:word|phrase|term|expression|sentence|paragraph|section|title|chapter|conjunction|adverb|preposition|verb|noun|adjective)\b/iu,
+  de: /\b(?:wort|wörter|ausdruck|ausdrücke|satz|sätze|absatz|abschnitt|titel|kapitel|konjunktion|adverb|präposition|verb|nomen|substantiv|adjektiv)\b/iu,
+};
 
 export function normalizeLensText(value = "") {
   return String(value)
@@ -7,6 +18,16 @@ export function normalizeLensText(value = "") {
     .replaceAll(/\s+/g, " ")
     .trim()
     .toLocaleLowerCase();
+}
+
+export function isLensMetalinguistic(text, language = "en") {
+  return Boolean(LENS_META_CUES[language]?.test(String(text || "")));
+}
+
+export function isInformativeLensSegment(segment = "") {
+  const normalized = normalizeLensText(segment);
+  if (!normalized || LENS_STOP_SEGMENTS.has(normalized)) return false;
+  return /[\p{L}\p{N}]/u.test(normalized);
 }
 
 export function extractLensLiteralSegments(formula = "") {
@@ -18,17 +39,36 @@ export function extractLensLiteralSegments(formula = "") {
       .replace(/^[\s,;:.!?()\-–—+/|]+|[\s,;:.!?()\-–—+/|]+$/g, "")
       .replaceAll(/\s+/g, " ")
       .trim())
-    .filter((part) => part.length >= 2 && /[\p{L}\p{N}]/u.test(part));
+    .filter(isInformativeLensSegment);
 }
 
 function languageRecord(pattern, language) {
   return pattern.langs?.find((item) => item.lang === language) || null;
 }
 
+function hasStrongLiteralEvidence(hits, exampleMatch) {
+  if (exampleMatch || hits.length >= 2) return true;
+  return hits.some((segment) => {
+    const normalized = normalizeLensText(segment);
+    const words = normalized.split(/\s+/).filter(Boolean);
+    return words.length >= 2 && normalized.length >= 8;
+  });
+}
+
+function reasoningLinksFor(text, language) {
+  const base = classifyReasoningSentence(text, language, { maxLinks: 3 });
+  const extra = classifyPatternLensExtraRules(text, language);
+  const byPattern = new Map();
+  for (const link of [...base, ...extra].sort((a, b) => b.confidence - a.confidence || (b.priority || 0) - (a.priority || 0) || a.rule_id.localeCompare(b.rule_id))) {
+    if (!byPattern.has(link.pattern_id)) byPattern.set(link.pattern_id, link);
+  }
+  return [...byPattern.values()];
+}
+
 export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
   const normalizedText = normalizeLensText(text);
-  if (!normalizedText) return [];
-  const reasoningLinks = classifyReasoningSentence(text, language, { maxLinks: 3 });
+  if (!normalizedText || isLensMetalinguistic(text, language)) return [];
+  const reasoningLinks = reasoningLinksFor(text, language);
   const reasoningByPattern = new Map(reasoningLinks.map((link) => [link.pattern_id, link]));
 
   return patterns
@@ -43,6 +83,8 @@ export function rankLensPatterns(patterns, text, language = "en", limit = 6) {
         return normalized.length >= 8 && (normalizedText.includes(normalized) || normalized.includes(normalizedText));
       });
       const reasoningMatch = reasoningByPattern.get(pattern.id) || null;
+      if (!reasoningMatch && !hasStrongLiteralEvidence(hits, exampleMatch)) return null;
+
       const literalScore = hits.reduce((sum, segment) => sum + 2 + Math.min(3, normalizeLensText(segment).length / 10), 0)
         + (exampleMatch ? 10 : 0)
         + (hits.length > 1 ? 2 : 0);
