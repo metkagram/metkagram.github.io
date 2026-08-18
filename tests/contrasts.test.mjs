@@ -5,7 +5,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const source = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "contrasts.json"), "utf8"));
-const patterns = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "advanced-patterns.json"), "utf8"));
+const patterns = JSON.parse(fs.readFileSync(path.join(ROOT, "dist", "data", "advanced-patterns.json"), "utf8"));
 const patternIds = new Set(patterns.map((pattern) => pattern.id));
 
 const STORE_URLS = [
