@@ -8,9 +8,11 @@ Metkagram is not trying to be a general-purpose language-learning app or a repla
 
 Its distinctive job is narrower:
 
-> **see the structure → identify the reusable move → practise it → reuse it elsewhere**
+> **real language → visible structure → reusable pattern → contrast → practice → reuse**
 
-The project turns language structure into inspectable learning objects. Visual annotation helps a learner notice structure inside a real sentence; reusable patterns capture what can be transferred; reasoning moves explain what the structure does in thought and communication.
+The project turns language structure into inspectable learning objects. Visual annotation helps a learner notice structure inside a real sentence; reusable patterns capture what can be transferred; communicative and reasoning moves explain what the structure does; explicit contrasts show when nearby patterns are not interchangeable.
+
+The durable asset is therefore not raw page count or pattern count. It is the reviewed relationship layer between language, function, examples, alternatives, practice and provenance.
 
 ## Core product layers
 
@@ -20,19 +22,27 @@ The established learner-facing curriculum is a core public asset: **1,000+ reusa
 
 The curriculum should remain broad enough to support real practice. Quantity by itself is not a quality metric, but deleting a useful existing curriculum in the name of minimalism is not a quality strategy either.
 
-A smaller reasoning-enabled subset carries additional research metadata. It is used by the reasoning evaluation layer and Pattern Graph, while ordinary patterns remain fully usable in Practice.
+A smaller reasoning-enabled subset carries additional research metadata. It is used by the reasoning evaluation layer, Pattern Graph and reviewed comparison layers, while ordinary patterns remain fully usable in Practice.
 
 Status: public and build-validated.
 
 ### 2. Pattern Lens
 
-Pattern Lens is the main discovery entry point. A learner brings a sentence or short paragraph. Metkagram identifies high-confidence reusable structures, highlights the stable part and abstains when the available evidence does not support a reliable match.
+Pattern Lens is the text-to-pattern discovery entry point. A learner brings a sentence or short paragraph. Metkagram identifies high-confidence reusable structures, highlights the stable part and abstains when the available evidence does not support a reliable match.
 
 The Lens remains precision-first. It is better to return no pattern than to attach a plausible-looking but weak explanation. The larger Practice library is a candidate space, not permission to lower retrieval precision.
 
 Status: implemented and regression-tested.
 
-### 3. Pattern Graph
+### 3. Pattern Atlas
+
+Pattern Atlas is the intent-to-pattern discovery layer. A learner starts from the communication or reasoning job they need to perform rather than an internal grammar label or pattern ID.
+
+Curated topics connect real jobs such as hedging, disagreement, argumentation, advanced questions and professional communication to validated study sets and canonical patterns. Atlas pages must remain editorial rather than being generated from keyword permutations.
+
+Status: implemented as localized topic hubs, structured discovery data and agent-facing entry points.
+
+### 4. Pattern Graph
 
 The Pattern Graph connects the reasoning-enabled public subset using explicit evidence already present in those records:
 
@@ -44,13 +54,25 @@ The graph is intentionally conservative and reproducible. It does not claim that
 
 Status: implemented as a derived dataset, API object and related-pattern navigation layer.
 
-### 4. Practice loop
+### 5. Contrast Library
+
+The Contrast Library explains when two nearby patterns perform related jobs but should not be treated as equivalent.
+
+A reviewed contrast contains exactly two canonical pattern IDs plus a learner-facing choice question and an explicit distinction. Formulas and examples remain canonical in the source pattern records rather than being copied into a second data model.
+
+A contrast belongs in the public library only when the difference changes meaning, logical strength, framing, register, scope or syntax in a way a learner can act on. Search demand may help prioritise a comparison but does not justify inventing one.
+
+The first pilot includes comparisons around necessary versus insufficient conditions, prerequisite framing and decision trade-offs.
+
+Status: reviewed pilot with localized pages, data/API output and visible links from Practice and Pattern Atlas. See `CONTRAST_LIBRARY.md`.
+
+### 6. Practice loop
 
 A pattern supports a short active loop rather than passive browsing:
 
 1. notice the structure in context;
 2. inspect the reusable formula;
-3. compare variations;
+3. compare variations and, where useful, a reviewed nearby contrast;
 4. attempt a new example before feedback;
 5. self-rate retrieval;
 6. revisit the same stable pattern ID later.
@@ -61,7 +83,7 @@ AI may later generate richer context, feedback and examples around this loop. AI
 
 Status: implemented with local review scheduling and a Practice-page due queue. See `PRACTICE_LOOP.md`.
 
-### 5. Research programme
+### 7. Research programme
 
 Metkagram separates product claims from research hypotheses. The first priority is to test distinctive mechanisms rather than manufacture broad efficacy claims.
 
@@ -76,9 +98,16 @@ The first browser instrument, `H1-CUE-UTILITY-V1`, measures cue utility around c
 
 Status: H1 protocol, stimuli, browser experiment, export format and analysis script implemented; outcome data not yet reported.
 
-### 6. Agent and API layer
+### 8. Agent and API layer
 
 Stable public pattern IDs, provenance and machine-readable datasets let external tutors and agents refer to the same learning objects. Agents can use the full public Practice library while reasoning-specific tools operate on the curated reasoning subset.
+
+The public reference layer should support four bounded operations particularly well:
+
+1. resolve a communicative intent to a small reviewed set;
+2. retrieve one canonical pattern;
+3. retrieve related or contrasting patterns with an explicit relation reason;
+4. preserve provenance and canonical links in downstream answers.
 
 The public API should expose the learner-facing curriculum with attribution and current rights metadata without exposing the private annotation/generation pipeline.
 
@@ -88,8 +117,10 @@ The public repository is both a product and publication layer. It intentionally 
 
 - the full established learner-facing Practice curriculum;
 - study-set taxonomy and learning paths;
+- Pattern Atlas discovery topics;
 - selected annotated documents;
 - selected reasoning frames and evaluation fixtures;
+- reviewed pattern contrasts;
 - public schemas, Pattern Lens rules, derived graph relationships, browser-side practice logic and bounded research stimuli.
 
 The private research core retains the full annotated corpus, bulk annotation/model-preparation exports, annotation engine, spaCy pipeline, linguistic heuristics, lexical rules, generation prompts/intermediate assets, participant research files and unpublished research work.
@@ -103,6 +134,7 @@ The current project does **not** prioritise:
 - rebuilding the discontinued mobile application;
 - competing on generic AI conversation or writing;
 - generating patterns merely to inflate a count;
+- generating thousands of contrast or topic pages from search keywords;
 - streaks, social gamification and account systems before the core loop is useful;
 - publishing the private parser, annotation engine or full research corpus;
 - claiming language-learning efficacy without a suitable comparison study;
@@ -112,9 +144,9 @@ The current project does **not** prioritise:
 
 The working sequence is:
 
-**Pattern Library/Practice → Pattern Lens → Pattern Graph → active practice loop → H1 pilot → H1 report → H2/H3 experiments → agent/API integrations → teacher/research/EdTech pilots**
+**Pattern Library/Practice → Pattern Lens → Pattern Atlas → Pattern Graph → Contrast Library → active practice loop → H1 pilot/report → agent/API integrations → teacher/research/EdTech pilots**
 
-The library is the content substrate. Lens, Graph and active practice make that content easier to discover, understand and reuse.
+The library is the content substrate. Lens and Atlas provide two complementary ways into it: real text and communicative intent. Graph and Contrast Library make relationships inspectable. Practice turns discovery into retrieval and reuse.
 
 ## Decision rules
 
@@ -122,7 +154,8 @@ A proposed feature belongs in Metkagram when it does at least one of the followi
 
 - makes a useful language structure easier to notice;
 - makes a reusable pattern easier to discover or practise;
-- makes the reasoning function of a pattern clearer where such metadata is justified;
+- makes the communicative or reasoning function of a pattern clearer where such metadata is justified;
+- clarifies a reviewed difference between nearby patterns;
 - improves transfer or retrieval practice around a stable pattern;
 - improves corpus quality, provenance or evaluation;
 - lets a tutor, teacher or research workflow reuse the same stable learning object.
@@ -135,6 +168,8 @@ Measure whether the method produces useful behaviour:
 
 - Pattern Lens precision and abstention quality;
 - percentage of Lens matches that lead to opening and practising a pattern;
+- Atlas topic → canonical pattern navigation;
+- contrast page → canonical pattern/practice navigation;
 - completion of short retrieval attempts;
 - return to stable pattern IDs when they become due;
 - study-set coverage and editorial quality across the full Practice library;
