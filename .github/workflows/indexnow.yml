@@ -100,7 +100,7 @@ jobs:
             add_url "$BASE/data/discovery-topics.json"
           fi
 
-          if grep -Eq '^(data/contrasts\.json|scripts/contrast-library\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/(contrasts|contrast-extensions)\.json|scripts/(contrast-library|contrast-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/contrasts/"
             add_url "$BASE/ru/contrasts/"
             if [[ -f data/contrasts.json ]]; then
@@ -110,8 +110,17 @@ jobs:
                 add_url "$BASE/ru/contrasts/$contrast_id/"
               done < <(jq -r '.items[].id' data/contrasts.json)
             fi
+            if [[ -f data/contrast-extensions.json ]]; then
+              while IFS= read -r contrast_id; do
+                [[ -z "$contrast_id" ]] && continue
+                add_url "$BASE/en/contrasts/$contrast_id/"
+                add_url "$BASE/ru/contrasts/$contrast_id/"
+              done < <(jq -r '.pair_items[].id, .grammar_items[].id' data/contrast-extensions.json)
+            fi
             add_url "$BASE/data/contrasts.json"
             add_url "$BASE/api/v1/contrasts.json"
+            add_url "$BASE/data/grammar-contrasts.json"
+            add_url "$BASE/api/v1/grammar-contrasts.json"
           fi
 
           if grep -Eq '^(data/partnership-opportunities\.json|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
