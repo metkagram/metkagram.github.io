@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metkagram.github.io/data/learning-event.schema.json",
+  "title": "Metkagram local learning event",
+  "description": "Privacy-safe event record stored only in the learner's browser unless they explicitly export it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "event_id", "event_name", "occurred_at", "session_id", "locale", "page", "surface"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "event_id": {"type": "string", "minLength": 8, "maxLength": 80},
+    "event_name": {
+      "type": "string",
+      "enum": [
+        "lens_analyze",
+        "learning_object_open",
+        "clinic_feedback_reveal",
+        "pack_step_open",
+        "transfer_feedback_reveal",
+        "export_download"
+      ]
+    },
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "session_id": {"type": "string", "minLength": 8, "maxLength": 80},
+    "locale": {"type": "string", "enum": ["en", "ru"]},
+    "page": {"type": "string", "pattern": "^/"},
+    "surface": {"type": "string", "enum": ["lens", "clinic", "pack", "transfer", "exports", "practice", "other"]},
+    "object_type": {"type": "string", "enum": ["pattern", "contrast", "drill", "pack", "transfer", "export", "none"]},
+    "object_id": {"type": "string", "maxLength": 160},
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "result_count": {"type": "integer", "minimum": 0, "maximum": 20},
+        "result_pattern_ids": {"type": "array", "maxItems": 10, "items": {"type": "string", "pattern": "^[A-Z0-9_-]+$"}},
+        "target_type": {"type": "string", "enum": ["pattern", "contrast", "drill", "pack", "transfer", "export", "other"]},
+        "target_id": {"type": "string", "maxLength": 160},
+        "format": {"type": "string", "enum": ["json", "csv", "tsv"]},
+        "direction": {"type": "string", "enum": ["en-de", "de-en"]}
+      }
+    }
+  }
+}
