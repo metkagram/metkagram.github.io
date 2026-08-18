@@ -100,6 +100,20 @@ jobs:
             add_url "$BASE/data/discovery-topics.json"
           fi
 
+          if grep -Eq '^(data/contrasts\.json|scripts/contrast-library\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+            add_url "$BASE/en/contrasts/"
+            add_url "$BASE/ru/contrasts/"
+            if [[ -f data/contrasts.json ]]; then
+              while IFS= read -r contrast_id; do
+                [[ -z "$contrast_id" ]] && continue
+                add_url "$BASE/en/contrasts/$contrast_id/"
+                add_url "$BASE/ru/contrasts/$contrast_id/"
+              done < <(jq -r '.items[].id' data/contrasts.json)
+            fi
+            add_url "$BASE/data/contrasts.json"
+            add_url "$BASE/api/v1/contrasts.json"
+          fi
+
           if grep -Eq '^(data/partnership-opportunities\.json|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
             add_url "$BASE/en/support/"
             add_url "$BASE/ru/support/"
