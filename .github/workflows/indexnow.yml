@@ -64,10 +64,20 @@ jobs:
             add_url "$BASE/llms.txt"
           fi
 
-          if grep -Eq '^(data/advanced-patterns\.json|data/study-sets\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice))' <<<"$CHANGED"; then
+          if grep -Eq '^(data/(advanced-patterns|study-sets|practice-extensions)\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice|practice-seo\.mjs)|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/practice/"
             add_url "$BASE/ru/practice/"
             add_url "$BASE/api/v1/patterns.json"
+            add_url "$BASE/data/practice-navigation.json"
+            while IFS= read -r set_id; do
+              [[ -z "$set_id" ]] && continue
+              set_slug="$(tr '[:upper:]' '[:lower:]' <<<"$set_id")"
+              add_url "$BASE/en/practice/set/$set_slug/"
+              add_url "$BASE/ru/practice/set/$set_slug/"
+            done < <(
+              jq -r '.sets[].id' data/study-sets.json
+              [[ -f data/practice-extensions.json ]] && jq -r '.sets[].id' data/practice-extensions.json
+            )
           fi
 
           if grep -Eq '^(src/intents\.mjs|src/intent-|scripts/intent-discovery\.mjs)' <<<"$CHANGED"; then
@@ -76,16 +86,17 @@ jobs:
             add_url "$BASE/data/intents.json"
           fi
 
-          if grep -Eq '^(data/discovery-topics\.json|src/discovery-pages\.mjs|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/discovery-topics(-extension)?\.json|src/discovery-pages\.mjs|scripts/(discovery-growth|practice-intent-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/patterns/"
             add_url "$BASE/ru/patterns/"
-            if [[ -f data/discovery-topics.json ]]; then
+            for topic_file in data/discovery-topics.json data/discovery-topics-extension.json; do
+              [[ -f "$topic_file" ]] || continue
               while IFS= read -r slug; do
                 [[ -z "$slug" ]] && continue
                 add_url "$BASE/en/patterns/$slug/"
                 add_url "$BASE/ru/patterns/$slug/"
-              done < <(jq -r '.topics[].slug' data/discovery-topics.json)
-            fi
+              done < <(jq -r '.topics[].slug' "$topic_file")
+            done
             add_url "$BASE/data/discovery-topics.json"
           fi
 
