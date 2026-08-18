@@ -15,11 +15,18 @@ function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 }
 
-test("choice drills stay reviewed and inside their canonical contrast", () => {
+test("choice drills stay reviewed and provide two-sided coverage for every contrast", () => {
   assert.equal(drills.schemaVersion, 1);
   assert.equal(drills.status, "reviewed-pilot");
-  assert.ok(drills.items.length >= 6);
+  assert.equal(drills.items.length, contrasts.items.length * 2);
   assert.equal(new Set(drills.items.map((item) => item.id)).size, drills.items.length);
+
+  for (const contrast of contrasts.items) {
+    const related = drills.items.filter((item) => item.contrast_id === contrast.id);
+    assert.equal(related.length, 2, `${contrast.id} should have exactly two pilot drills`);
+    assert.deepEqual(new Set(related.map((item) => item.answer_pattern)), new Set(contrast.patterns), `${contrast.id} should test both sides`);
+  }
+
   for (const item of drills.items) {
     const contrast = contrastMap.get(item.contrast_id);
     assert.ok(contrast);
@@ -52,7 +59,7 @@ test("each contrast exposes its related decision drills", () => {
     for (const contrast of contrasts.items) {
       const page = html(locale, "contrasts", contrast.id);
       const related = drills.items.filter((item) => item.contrast_id === contrast.id);
-      assert.ok(related.length >= 2);
+      assert.equal(related.length, 2);
       assert.match(page, /data-choice-clinic-drills/);
       assert.match(page, new RegExp(`href="/${locale}/clinic/"`));
       for (const drill of related) assert.match(page, new RegExp(`id="${drill.id}"`));
