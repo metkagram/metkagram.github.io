@@ -1,0 +1,206 @@
+[
+  {
+    "id": "XPRRTR004",
+    "title_ru": "Не пропускать английские артикли",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "article transfer correction",
+    "metaphor_ru": "В русском артиклей нет, поэтому в английском выбор a/an/the нужно замечать как отдельную часть модели.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "articles"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ I sent [document] to [manager]. → ✓ I sent a/the [document] to the [manager].",
+        "example": "❌ I sent email to manager. → ✓ I **sent an email to the manager**.",
+        "translation": "Я отправил письмо менеджеру.",
+        "examples": [
+          {"text": "❌ We discussed problem with client. → ✓ We discussed **the problem with the client**.", "translation_ru": "Мы обсудили проблему с клиентом."},
+          {"text": "❌ She opened file from shared folder. → ✓ She opened **the file from the shared folder**.", "translation_ru": "Она открыла файл из общей папки."},
+          {"text": "❌ I need laptop for meeting. → ✓ I need **a laptop for the meeting**.", "translation_ru": "Мне нужен ноутбук для встречи."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ Ich sprach mit [Manager]. → ✓ Ich sprach mit dem [Manager].",
+        "example": "❌ Ich sprach mit Manager über Problem. → ✓ Ich sprach **mit dem Manager über das Problem**.",
+        "translation": "Я поговорил с менеджером о проблеме.",
+        "examples": [
+          {"text": "❌ Wir öffneten Datei aus Ordner. → ✓ Wir öffneten **die Datei aus dem Ordner**.", "translation_ru": "Мы открыли файл из папки."},
+          {"text": "❌ Sie schickte Bericht an Kunden. → ✓ Sie schickte **den Bericht an den Kunden**.", "translation_ru": "Она отправила отчёт клиенту."},
+          {"text": "❌ Ich brauche Laptop für Besprechung. → ✓ Ich brauche **einen Laptop für die Besprechung**.", "translation_ru": "Мне нужен ноутбук для встречи."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker transfer correction extension; article selection is treated as a form-meaning choice, not a literal translation step."}
+  },
+  {
+    "id": "XPRRTR005",
+    "title_ru": "Учить предлог вместе с глаголом",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "governed preposition transfer correction",
+    "metaphor_ru": "Русский и английский по-разному кодируют управление, поэтому предлог нужно хранить вместе с глаголом.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "prepositions"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ listen [X] / depend from [X] → ✓ listen to [X] / depend on [X]",
+        "example": "❌ We listened the feedback and depended from the old rule. → ✓ We **listened to the feedback** and **depended on the old rule**.",
+        "translation": "Мы выслушали обратную связь и зависели от старого правила.",
+        "examples": [
+          {"text": "❌ Please listen me for a minute. → ✓ Please **listen to me** for a minute.", "translation_ru": "Пожалуйста, послушай меня минуту."},
+          {"text": "❌ The result depends from the input. → ✓ The result **depends on the input**.", "translation_ru": "Результат зависит от входных данных."},
+          {"text": "❌ It belongs for another team. → ✓ It **belongs to another team**.", "translation_ru": "Это относится к другой команде."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ auf [X] warten ohne auf → ✓ auf [X] warten",
+        "example": "❌ Ich warte die Antwort. → ✓ Ich **warte auf die Antwort**.",
+        "translation": "Я жду ответа.",
+        "examples": [
+          {"text": "❌ Wir warten die Freigabe. → ✓ Wir **warten auf die Freigabe**.", "translation_ru": "Мы ждём согласования."},
+          {"text": "❌ Das hängt von die Daten ab. → ✓ Das **hängt von den Daten ab**.", "translation_ru": "Это зависит от данных."},
+          {"text": "❌ Bitte hör mich. → ✓ Bitte **hör mir zu**.", "translation_ru": "Пожалуйста, послушай меня."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker transfer correction extension for governed complements and prepositions."}
+  },
+  {
+    "id": "XPRRTR006",
+    "title_ru": "Длительность до настоящего: Present Perfect",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "tense aspect transfer correction",
+    "metaphor_ru": "Русское настоящее не переносится напрямую на английскую длительность, которая началась раньше и продолжается сейчас.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "present-perfect-duration"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ I am [doing X] for [duration]. → ✓ I have been [doing X] for [duration].",
+        "example": "❌ I am living here for five years. → ✓ I **have been living here for five years**.",
+        "translation": "Я живу здесь уже пять лет.",
+        "examples": [
+          {"text": "❌ We are working on this since Monday. → ✓ We **have been working on this since Monday**.", "translation_ru": "Мы работаем над этим с понедельника."},
+          {"text": "❌ She is waiting for an answer for two hours. → ✓ She **has been waiting for an answer for two hours**.", "translation_ru": "Она ждёт ответа уже два часа."},
+          {"text": "❌ I know him since university. → ✓ I **have known him since university**.", "translation_ru": "Я знаю его со времён университета."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ für [Dauer] bei fortdauernder Situation → ✓ seit [Zeitpunkt/Dauer] + Präsens",
+        "example": "❌ Ich wohne hier für fünf Jahre. → ✓ Ich **wohne seit fünf Jahren hier**.",
+        "translation": "Я живу здесь уже пять лет.",
+        "examples": [
+          {"text": "❌ Wir arbeiten dafür seit Montag. → ✓ Wir **arbeiten seit Montag daran**.", "translation_ru": "Мы работаем над этим с понедельника."},
+          {"text": "❌ Sie wartet für zwei Stunden. → ✓ Sie **wartet seit zwei Stunden**.", "translation_ru": "Она ждёт уже два часа."},
+          {"text": "❌ Ich kenne ihn von Universität. → ✓ Ich **kenne ihn seit der Universität**.", "translation_ru": "Я знаю его со времён университета."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker tense/aspect transfer correction; stative verbs may use present perfect rather than the continuous form."}
+  },
+  {
+    "id": "XPRRTR007",
+    "title_ru": "Не ставить will после if автоматически",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "conditional transfer correction",
+    "metaphor_ru": "Будущее значение в условной части обычно выражается Present Simple, а will остаётся в главной части.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "if-will"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ If [X] will happen, [Y] will happen. → ✓ If [X] happens, [Y] will happen.",
+        "example": "❌ If we will find the cause, we will fix it. → ✓ **If we find the cause, we will fix it**.",
+        "translation": "Если мы найдём причину, мы её исправим.",
+        "examples": [
+          {"text": "❌ If the test will fail, we will stop the release. → ✓ **If the test fails, we will stop the release**.", "translation_ru": "Если тест провалится, мы остановим релиз."},
+          {"text": "❌ If she will confirm today, we can proceed. → ✓ **If she confirms today, we can proceed**.", "translation_ru": "Если она подтвердит сегодня, мы сможем продолжить."},
+          {"text": "❌ When the file will arrive, I will check it. → ✓ **When the file arrives, I will check it**.", "translation_ru": "Когда файл придёт, я его проверю."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ Wenn [X] würde ..., würde [Y] ... → ✓ Wenn [X] ..., würde [Y] ...",
+        "example": "❌ Wenn ich würde mehr Zeit haben, würde ich es prüfen. → ✓ **Wenn ich mehr Zeit hätte, würde ich es prüfen**.",
+        "translation": "Если бы у меня было больше времени, я бы это проверил.",
+        "examples": [
+          {"text": "❌ Wenn wir würden früher starten, wären wir fertig. → ✓ **Wenn wir früher starten würden, wären wir fertig**.", "translation_ru": "Если бы мы начали раньше, мы бы закончили."},
+          {"text": "❌ Wenn er würde zustimmen, könnten wir weitermachen. → ✓ **Wenn er zustimmen würde, könnten wir weitermachen**.", "translation_ru": "Если бы он согласился, мы могли бы продолжить."},
+          {"text": "❌ Wenn ich würde das wissen, hätte ich anders entschieden. → ✓ **Wenn ich das gewusst hätte, hätte ich anders entschieden**.", "translation_ru": "Если бы я это знал, я бы принял другое решение."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker conditional transfer correction. English will can occur in if-clauses for special meanings such as willingness, but not as the default future marker taught here."}
+  },
+  {
+    "id": "XPRRTR008",
+    "title_ru": "Не ставить very перед обычным глаголом",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "adverb placement transfer correction",
+    "metaphor_ru": "Русское «очень» не переносится перед английским смысловым глаголом как very; используйте really или very much.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "very-like"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ I very [verb] [X]. → ✓ I really [verb] [X]. / I [verb] [X] very much.",
+        "example": "❌ I very like this approach. → ✓ I **really like this approach**.",
+        "translation": "Мне очень нравится этот подход.",
+        "examples": [
+          {"text": "❌ We very need this feature. → ✓ We **really need this feature**.", "translation_ru": "Нам очень нужна эта функция."},
+          {"text": "❌ She very wants to join. → ✓ She **really wants to join**.", "translation_ru": "Она очень хочет присоединиться."},
+          {"text": "❌ I like this option very. → ✓ I **like this option very much**.", "translation_ru": "Мне очень нравится этот вариант."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ Ich sehr [Verb] ... → ✓ Ich [Verb] ... sehr / wirklich.",
+        "example": "❌ Ich sehr mag diesen Ansatz. → ✓ Ich **mag diesen Ansatz sehr**.",
+        "translation": "Мне очень нравится этот подход.",
+        "examples": [
+          {"text": "❌ Wir sehr brauchen diese Funktion. → ✓ Wir **brauchen diese Funktion wirklich**.", "translation_ru": "Нам очень нужна эта функция."},
+          {"text": "❌ Sie sehr möchte teilnehmen. → ✓ Sie **möchte wirklich teilnehmen**.", "translation_ru": "Она очень хочет участвовать."},
+          {"text": "❌ Ich sehr schätze die Hilfe. → ✓ Ich **schätze die Hilfe sehr**.", "translation_ru": "Я очень ценю помощь."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker adverb-placement transfer correction."}
+  },
+  {
+    "id": "XPRRTR009",
+    "title_ru": "Feel: английский без myself",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "logic": "reflexive transfer correction",
+    "metaphor_ru": "Русское «чувствовать себя» не требует reflexive pronoun в обычном английском feel + adjective.",
+    "practice": {"mode": "repair", "audience": "Russian speakers", "error_type": "reflexive-feel"},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ I feel myself [adjective]. → ✓ I feel [adjective].",
+        "example": "❌ I feel myself tired today. → ✓ I **feel tired today**.",
+        "translation": "Сегодня я чувствую себя уставшим.",
+        "examples": [
+          {"text": "❌ She feels herself nervous before presentations. → ✓ She **feels nervous before presentations**.", "translation_ru": "Она нервничает перед презентациями."},
+          {"text": "❌ I feel myself much better now. → ✓ I **feel much better now**.", "translation_ru": "Сейчас я чувствую себя намного лучше."},
+          {"text": "❌ Do you feel yourself comfortable here? → ✓ Do you **feel comfortable here**?", "translation_ru": "Тебе здесь комфортно?"}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "EN: feel [adjective] ↔ DE: sich [adjective] fühlen",
+        "example": "English: I **feel tired**. ↔ German: Ich **fühle mich müde**.",
+        "translation": "Я чувствую себя уставшим.",
+        "examples": [
+          {"text": "English: She **feels nervous**. ↔ German: Sie **fühlt sich nervös**.", "translation_ru": "Она нервничает."},
+          {"text": "English: I **feel better**. ↔ German: Ich **fühle mich besser**.", "translation_ru": "Я чувствую себя лучше."},
+          {"text": "English: Do you **feel comfortable**? ↔ German: **Fühlst du dich wohl**?", "translation_ru": "Тебе комфортно?"}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-18", "languages": ["en", "de"], "notes": "Russian-speaker reflexive transfer correction; German is deliberately shown as a useful cross-language contrast because the reflexive pronoun is required there."}
+  }
+]
