@@ -85,6 +85,14 @@ const visibleNameReplacements = [
   ["Cross-language Transfer", "Pattern Bridge"],
   ["Pattern Graph", "Pattern Map"],
   ["Contrast Library", "Pattern Contrasts"],
+  ["A tag is a small attention cue", "A Mark is a small attention cue"],
+  ["Tags make one recurring function easier to spot.", "Marks make one recurring function easier to spot."],
+  ["better explanations for each tag.", "better explanations for each Mark."],
+  ["для этого тега.", "для этой метки."],
+  ["Теги направляют внимание", "Метки направляют внимание"],
+  ["Тег показывает направление", "Метка показывает направление"],
+  ["Теги не заменяют", "Метки не заменяют"],
+  ["один цветной тег сам по себе", "одна цветная метка сама по себе"],
 ];
 
 function writeFile(relativePath, contents) {
@@ -105,7 +113,7 @@ function glossaryCopy(locale) {
         intro: "Metkagram использует небольшой набор терминов. Они описывают путь от визуальной метки в живой фразе до повторного использования структуры и переноса между языками.",
         methodTitle: "Metkagram Mark–Frame Method",
         methodText: "Метод начинается с полной фразы: мы замечаем Mark прямо внутри предложения, извлекаем повторяемый Frame, связываем его с Move и возвращаем структуру в активное использование. Более продвинутый слой добавляет Contrast, Choice, Route и Bridge.",
-        methodBoundary: "Frame и Move — не заявляются как изобретения Metkagram. Проектная методология — это их связка с inline Marks, стабильными учебными объектами, извлечением из памяти и межъязыковым переносом.",
+        methodBoundary: "Frame и Move не заявляются как изобретения Metkagram. Проектная методология — это их связка с inline Marks, стабильными учебными объектами, извлечением из памяти и межъязыковым переносом.",
         chainTitle: "Главная цепочка",
         objectsTitle: "Семь объектов Metkagram",
         surfacesTitle: "Названия разделов",
@@ -187,7 +195,10 @@ function patchVisibleTerminology() {
   for (const file of walkHtml(DIST)) {
     const html = fs.readFileSync(file, "utf8");
     let next = html;
-    for (const [from, to] of visibleNameReplacements) next = next.replaceAll(from, to);
+    for (const [from, to] of visibleNameReplacements) {
+      next = next.replaceAll(from, to);
+      next = next.replaceAll(encodeURIComponent(from), encodeURIComponent(to));
+    }
     if (next !== html) fs.writeFileSync(file, next);
   }
 }
