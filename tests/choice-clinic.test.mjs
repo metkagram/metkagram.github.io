@@ -41,10 +41,11 @@ test("choice drills stay reviewed and provide two-sided coverage for every contr
   }
 });
 
-test("Choice Clinic is server-rendered in both interface languages", () => {
+test("Pattern Choice is server-rendered in both interface languages", () => {
   for (const locale of ["en", "ru"]) {
     const page = html(locale, "clinic");
-    assert.match(page, /Pattern Choice Clinic/);
+    assert.match(page, /Pattern Choice/);
+    assert.doesNotMatch(page, /Pattern Choice Clinic/);
     assert.match(page, /<details/);
     assert.match(page, /LearningResource/);
     for (const item of drills.items) {
@@ -67,7 +68,7 @@ test("each contrast exposes its related decision drills", () => {
   }
 });
 
-test("Choice Clinic is exposed through discovery and agent surfaces", () => {
+test("Pattern Choice keeps legacy discovery IDs and URLs for compatibility", () => {
   const api = JSON.parse(fs.readFileSync(path.join(DIST, "api", "v1", "choice-drills.json"), "utf8"));
   assert.equal(api.data.items.length, drills.items.length);
   assert.equal(api.provenance.record_type, "pattern_choice_drill_collection");

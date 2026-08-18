@@ -2,72 +2,163 @@
 
 ## Decision
 
-Metkagram uses a small Node.js static generator instead of a client-only SPA or server framework. The public learning content does not require a framework runtime. Direct generation preserves crawlable HTML, makes Pages paths deterministic, keeps the agent-facing data reproducible, and avoids shipping unnecessary client code for thousands of content pages.
+Metkagram uses a small Node.js static generator instead of a client-only SPA or server framework. Public learning content does not require a framework runtime. Static generation preserves crawlable HTML, deterministic GitHub Pages paths, reproducible agent-facing data and a small runtime surface.
 
-The product model is intentionally simple: **sentence → visible structure → reusable pattern → variation → recall**. Annotated sentences and reusable patterns are two views of the same language system, not separate products.
+The product model is:
+
+> **real sentence → Mark → Frame → Move → Contrast → Choice → Route → Bridge → reuse**
+
+`Pattern` remains the public umbrella and compatibility term used by the existing curriculum, stable IDs and URLs. The precise domain vocabulary is defined in `docs/TERMINOLOGY.md`.
+
+## Domain objects
+
+Metkagram separates knowledge objects from product surfaces.
+
+Knowledge objects:
+
+1. **Mark** — a visual cue attached to language inside a sentence.
+2. **Frame** — a reusable structure in one specific learning language.
+3. **Move** — the language-independent communicative or reasoning job.
+4. **Contrast** — a reviewed distinction between nearby Frames.
+5. **Choice** — a retrieval task built around a reviewed distinction.
+6. **Route** — an ordered sequence of reviewed learning objects.
+7. **Bridge** — a reviewed relation between Frames across languages.
+
+Learner-facing discovery/practice surfaces use stable names such as Pattern Practice, Pattern Lens, Pattern Atlas and Pattern Map. Technical filenames and legacy URLs may retain earlier names while compatibility requires them.
+
+## Language model
+
+Language is not one global setting. Metkagram models independent capabilities:
+
+1. **interface locale** — navigation, help and product copy;
+2. **learning language** — language whose Frames/examples are studied;
+3. **translation locale** — language used for learner translations/glosses;
+4. **annotation capability** — whether reviewed Metkagram Marks/annotation exist for that learning language.
+
+Current capabilities are registered in `src/language-registry.mjs` and described in `docs/LANGUAGE_ARCHITECTURE.md`.
+
+Current public state:
+
+- interface: `en`, `ru`;
+- learning: `en`, `de`;
+- translation locale in canonical pattern records: `ru`;
+- annotation: `en`, `de`.
+
+These sets are deliberately not assumed to be equal. A future learning language can have Frames and translations before it has annotation or a localized interface.
 
 ## Layers
 
-1. **Canonical content** — source JSON in `data/` holds English/German annotated documents, reusable patterns, study sets and supplemental reasoning frames. Interface translations are separate in `src/i18n.mjs`.
-2. **Validation and quality** — `src/content.mjs` checks required identifiers, titles, annotations, language records, translations, uniqueness and index/document parity. It also derives per-pattern quality metadata. Invalid records fail the build; low variation is reported rather than hidden behind synthetic padding.
-3. **Static rendering** — `src/render.mjs` owns the legacy shared layout and primary page templates. Dataset landing pages live in `src/data-pages.mjs`. `scripts/build.mjs` writes directory-style URLs to `dist/`.
-4. **Discovery and agent surfaces** — `src/api.mjs` builds the static API, `src/search-index.mjs` builds a complete compact index over all annotated documents, and `src/quality.mjs` publishes the editorial review queue.
-5. **Progressive enhancement** — `public/assets/app.js` adds filters, mobile navigation and client interactions. Core content, structured data and links remain useful without JavaScript.
-6. **Optional annotation service** — `annotation_service/` is an editorial NLP tool. Production rendering stays model-independent; service output is versioned static input rather than a runtime dependency.
-7. **Compatibility backend** — GitHub Pages hosts no server functions. The retained `https://metalhatscats.com/api/metkax/srs` endpoint exists only for historical compatibility.
+1. **Canonical content** — source JSON in `data/` holds annotated documents, reusable patterns, study sets and reviewed relation data. UI translations remain separate from learning-language content.
+2. **Language capability registry** — `src/language-registry.mjs` describes which language roles are currently supported. New architecture must derive capabilities from this registry instead of hardcoded English/German branches.
+3. **Validation and quality** — `src/content.mjs` validates identifiers, language records, translations, uniqueness and editorial completeness. Existing validation remains compatibility-oriented while the multilingual schema migrates incrementally.
+4. **Static rendering** — `src/render.mjs` owns the shared layout and primary page templates. Build/post-build scripts add reviewed feature surfaces while keeping GitHub Pages output static.
+5. **Discovery and agent surfaces** — static API, search indexes, relation data, `/data/languages.json` and `/data/terminology.json` expose bounded machine-readable state.
+6. **Progressive enhancement** — browser JavaScript adds filters, navigation and practice interactions. Canonical content remains useful without JavaScript.
+7. **Optional annotation service** — `annotation_service/` is an editorial NLP tool. Production rendering remains model-independent; service output is versioned static input rather than a runtime dependency.
+8. **Compatibility backend** — GitHub Pages hosts no server functions. Historical compatibility services remain separate and must not shape the new domain model.
+
+## Multilingual data direction
+
+The current pattern schema stores language realizations in `langs[]` and translations in fields such as `translation_ru`. This remains valid input during migration.
+
+New translation-aware code should accept the future form:
+
+```json
+{
+  "translations": {
+    "ru": "..."
+  }
+}
+```
+
+The compatibility helper `getTranslation(record, locale)` in `src/language-registry.mjs` reads both the future map and legacy `translation_<locale>` fields.
+
+Long-term, language-independent Moves and language-specific Frames should become explicit rather than being inferred from two entries inside one bilingual record. Cross-language equivalence then belongs in reviewed Bridge records instead of being assumed from record shape.
+
+This matters for expansion because languages do not reliably provide one-to-one realizations of every construction.
 
 ## Data quality boundary
 
 Metkagram does not treat record count as editorial quality.
 
-- Every pattern must contain English and German formulas, examples and Russian translations.
-- At least two genuine variations per language are required for structural completeness.
-- Quality metadata records unique-example counts, duplicate counts and translation completeness.
-- `quality.indexable` is a content signal, not a marketing claim.
-- Synthetic examples created only to satisfy a fixed count are prohibited.
-- `/data/quality-report.json` is the machine-readable review queue.
+For the existing EN/DE curriculum:
 
-The source corpus remains canonical. Quality fields are derived during loading so the policy can improve without rewriting historical source files merely to attach computed metrics.
+- required formulas, examples and Russian learner translations remain build-validated;
+- genuine variation remains preferable to synthetic padding;
+- quality metadata records duplicate and translation completeness signals;
+- `quality.indexable` is an editorial/content signal, not a marketing claim.
+
+For future languages, validation must be capability-aware. A language with `annotation: false` must not fail merely because annotated documents are absent. A language advertised as having translations must fail when its required translation fields are missing.
 
 ## Reproducibility and provenance
 
-Every API record carries canonical source metadata and a content hash. Dataset versions use the package version plus a deterministic fingerprint of canonical JSON data. Rebuilding identical content therefore produces the same dataset version.
+Every API record carries canonical source metadata and a content hash where the current pipeline provides it. Dataset versions combine package/version information with deterministic canonical-data fingerprints.
 
-`SITE_RELEASE_DATE` represents the verified editorial release date for substantial site changes. It is not generated from the wall clock at build time.
+`SITE_RELEASE_DATE` represents the verified editorial release date for substantial changes. It is not generated from wall-clock build time.
 
 ## URL policy
 
 - Canonical origin: `https://metkagram.github.io`.
-- Directory URLs always include a trailing slash.
-- `/` is a crawlable language gateway, not a forced redirect.
-- Interface locale is the first segment: `/en/` or `/ru/`.
-- Learning language is the next relevant segment: `/explore/english/` or `/explore/german/`.
-- Advanced pattern IDs are canonicalized to lowercase in public URLs.
-- Human-readable data hubs live under `/{locale}/data/` while raw canonical exports stay under `/data/` and `/api/v1/`.
+- Directory URLs include a trailing slash.
+- `/` remains a crawlable interface-language gateway rather than a forced redirect.
+- Interface locale is the first segment, currently `/en/` or `/ru/`.
+- Learning language is a separate route dimension, currently readable slugs such as `/explore/english/` and `/explore/german/`.
+- Future learning-language slugs must come from the language registry rather than hardcoded branch logic.
+- Translation locale is normally a learner preference, not a canonical route dimension.
+- Existing pattern IDs and compatibility URLs remain stable unless a deliberate redirect migration has a concrete benefit.
 
-The locale switcher changes only the first segment, preserving the target language, collection and detail ID where equivalent localized routes exist.
+Keeping translation locale out of canonical content routes prevents duplicate SEO pages for the same Frame merely because a learner selected another support language.
 
 ## Generated discovery artifacts
 
-- `sitemap.xml` contains canonical HTML routes with verified modification dates.
-- `robots.txt` points to the production sitemap and exposes read-only agent entry points.
-- `llms.txt` describes the product and stable machine-readable endpoints.
-- `project.json` provides a compact machine-readable product description and dataset version.
-- `data/catalog.json` lists counts, datasets, localized landing pages and quality resources.
-- `data/quality-report.json` exposes content-quality signals and the review queue.
-- `data/reasoning-frames/index.json` exposes reasoning-enabled patterns as a coherent public subset.
-- `/en/data/` and `/ru/data/` publish `DataCatalog` and `Dataset` pages for humans and search engines.
-- JSON-LD uses accurate `WebSite`, `Organization`, `SoftwareApplication`, `LearningResource`, `Dataset`, `DataCatalog`, `BreadcrumbList`, `ItemList` and research entities where relevant.
+The public build includes or may derive:
+
+- `sitemap.xml` and `robots.txt`;
+- `llms.txt` and project metadata;
+- public dataset catalogs and quality reports;
+- reasoning/relation datasets;
+- `/data/languages.json` — current interface/learning/translation/annotation capabilities;
+- `/data/terminology.json` — canonical Metkagram vocabulary and learner-facing surface names;
+- `/en/glossary/` and `/ru/glossary/` — human-readable vocabulary pages;
+- localized data hubs and agent/API entry points.
+
+Machine-readable surfaces must expose actual capability instead of forcing clients to infer support from the presence of pages.
+
+## Adding a language
+
+A new learning language should not require structural changes to global schemas.
+
+Minimum useful addition:
+
+1. register the language with a stable BCP 47-compatible code and readable slug;
+2. enable the capabilities that actually exist;
+3. add reviewed Frames/examples;
+4. add at least one supported translation locale where product policy requires it;
+5. add Bridges where reviewed cross-language relations exist;
+6. add annotation only when an annotation profile is ready;
+7. add an interface locale only when full product copy is localized.
+
+This allows staged expansion. For example, French could enter Pattern Practice with Russian translations while annotated French reading remains unavailable. The product should state that capability honestly rather than generate decorative empty pages.
 
 ## Verification and deployment
 
-The permanent `Verify` workflow runs on pull requests and `agent/**` branches:
+The permanent verification workflow runs installation, build/tests and link checks. The terminology/language-foundation build step runs after existing feature generators so it can:
 
-1. `npm ci`
-2. `npm run verify`
+- publish the glossary and capability datasets;
+- normalize learner-facing names without changing legacy implementation IDs;
+- register glossary routes in sitemap/SEO output.
 
-The main deployment workflow repeats validation, builds `dist/`, uploads the Pages artifact, then deploys through `actions/deploy-pages`. `.nojekyll` prevents Jekyll processing. The custom `404.html` is included at the artifact root.
+The main deployment workflow publishes the resulting static `dist/` artifact through GitHub Pages.
 
 ## Migration boundary
 
-MetalHatsCats keeps only intentionally scoped historical compatibility surfaces. Product pages, datasets, annotations and reusable-pattern discovery belong to `metkagram.github.io`. Permanent redirects should point historical public URLs directly to their closest canonical Metkagram route rather than to generic landing pages.
+The multilingual migration is additive:
+
+1. central terminology and language capability registry;
+2. translation maps alongside legacy `translation_ru`;
+3. explicit language-specific Frame IDs;
+4. explicit Move relationships;
+5. reviewed Bridge records;
+6. new learning languages.
+
+Do not begin with a mass rename of stable public IDs. Domain clarity matters, but breaking every existing reference to achieve naming purity would be a particularly software-shaped form of progress.

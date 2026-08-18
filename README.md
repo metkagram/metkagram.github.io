@@ -1,95 +1,113 @@
 # Metkagram
 
-Metkagram is a research-oriented NLP and language-learning project built around a simple loop:
+Metkagram is a research-oriented NLP and language-learning project built around a simple idea:
 
-> **see the structure → identify the reusable move → practise it → reuse it**
+> **see the structure → reuse the frame → understand the move → choose → transfer**
 
-The project connects visual sentence annotation with a large learner-facing library of reusable English and German patterns. It does not try to compete with large language models at general writing. Instead, it helps a human notice which structures inside real language are worth learning and how nearby structures can express a related communicative or reasoning move.
+The project connects visual sentence annotation with a large learner-facing library of reusable English and German patterns. It does not try to compete with large language models at general writing. Its job is to make useful language structure visible, reusable and comparable.
 
 Production: https://metkagram.github.io
 
-The canonical product direction is documented in [docs/PRODUCT_DIRECTION.md](docs/PRODUCT_DIRECTION.md).
+Canonical project documents:
 
-## Current product direction
+- [Product direction](docs/PRODUCT_DIRECTION.md)
+- [Terminology](docs/TERMINOLOGY.md)
+- [Language architecture](docs/LANGUAGE_ARCHITECTURE.md)
+- [Architecture](ARCHITECTURE.md)
+
+## Metkagram vocabulary
+
+The core domain chain is:
+
+**Mark → Frame → Move → Contrast → Choice → Route → Bridge**
+
+- **Mark** — a visual cue placed inside a real sentence.
+- **Frame** — a reusable structure in one language.
+- **Move** — the communicative or reasoning job behind the Frame.
+- **Contrast** — a reviewed difference between nearby Frames.
+- **Choice** — choose between nearby Frames before feedback.
+- **Route** — an ordered learning sequence.
+- **Bridge** — a reviewed cross-language relation between Frames.
+
+`Pattern` remains the familiar learner-facing umbrella term and the compatibility term used by existing stable IDs, URLs and datasets.
+
+Learner-facing surfaces use one naming family: **Pattern Practice, Pattern Lens, Pattern Atlas, Pattern Map, Pattern Contrasts, Pattern Choice, Pattern Routes and Pattern Bridge**.
+
+Legacy technical names may remain in filenames and URLs while compatibility requires them. Stable identifiers are intentionally not mass-renamed for cosmetic consistency.
+
+## Current product surfaces
+
+### Pattern Practice
+
+The public curriculum contains 1,000+ reusable B2–C1 English/German patterns organised through named study sets and learning paths. Existing pattern records preserve stable IDs, formulas, examples, Russian translations, variations and quality metadata.
+
+A smaller reasoning-enabled subset adds reviewed Moves and relation metadata. It complements the full curriculum rather than replacing it.
 
 ### Pattern Lens
 
-`/en/lens/` and `/ru/lens/` are the main discovery interface: paste a sentence or short paragraph and Metkagram looks for reusable structures from the published collection, then highlights stable parts of likely matches.
-
-The Lens remains precision-first. It should abstain when the available rules do not support a reliable match rather than manufacture a plausible-looking answer. See [docs/PATTERN_LENS.md](docs/PATTERN_LENS.md).
-
-### Pattern Library and Practice
-
-Practice is a substantial public product surface, not a tiny showcase. The repository publishes the established **1,000+ reusable B2–C1 English/German patterns** in `data/advanced-patterns.json`, organised through named study sets and learning paths. Each pattern keeps a stable ID, formulas, examples, Russian translations and quality metadata.
-
-A smaller reasoning-enabled subset currently adds explicit reasoning moves, logic metadata, evaluation fixtures and Pattern Graph relations. That curated subset complements the full Practice curriculum; it does not replace it.
-
-Pattern quantity alone is not evidence of learning quality. The existing curriculum is public because it is the learner-facing product, while generation machinery, private research assets and the full annotation pipeline remain outside the public release boundary.
+`/en/lens/` and `/ru/lens/` are the text-to-pattern entry points. Lens looks for high-confidence reusable structures in a sentence or short paragraph and abstains when the available rules do not support a reliable match.
 
 ### Pattern Atlas
 
-`/en/patterns/` and `/ru/patterns/` are the semantic discovery layer over the Practice library. They organise validated study sets around real learner jobs such as argumentation, hedging, disagreement, conditionals, professional communication, advanced questions and German word order rather than requiring a visitor to know an internal pattern ID or category code.
+`/en/patterns/` and `/ru/patterns/` organise existing patterns around real learner jobs such as hedging, disagreement, argumentation, professional communication, advanced questions and German word order.
 
-The Atlas is deliberately editorial. `data/discovery-topics.json` maps a small number of substantial communication goals to existing study sets and canonical patterns; it is not generated from long-tail keyword permutations. Topic pages expose visible examples, related routes, stable canonical links and machine-readable `LearningResource` / `ItemList` metadata.
+### Pattern Map
 
-This is also the preferred human entry point when a learner knows **what they want to say** but does not yet know the grammar label.
+The build derives reviewed relationships over the reasoning-enabled subset. The underlying data may remain graph-shaped, but the learner-facing surface is called Pattern Map: the important question is why two patterns are connected, not whether the visitor has recently completed a graph-theory course.
 
-### Pattern Graph
+### Pattern Contrasts and Pattern Choice
 
-The production build derives a bounded graph over the reasoning-enabled public patterns. It connects nearby structures using explicit metadata such as reasoning move, study set and shared logic vocabulary.
+Reviewed Contrasts explain actionable differences between nearby patterns. Pattern Choice turns those distinctions into short retrieval tasks: choose first, then reveal bounded feedback.
 
-The graph supports related-pattern navigation and is published at `/data/pattern-graph.json` and `/api/v1/pattern-graph.json`. See [docs/PATTERN_GRAPH.md](docs/PATTERN_GRAPH.md).
+Existing `/clinic/` compatibility routes and technical dataset IDs remain valid during the naming migration.
 
-### Active practice
+### Pattern Routes
 
-Each published pattern supports a local retrieval loop. A learner writes a new English or German example before feedback, receives a conservative signal about whether the structural frame is visible, self-rates the retrieval and schedules the same stable pattern ID for later review.
+Pattern Routes compose canonical objects into short ordered learning sequences without duplicating formulas or explanations into another source of truth.
 
-Progress is stored only in the browser under `metkagram:practice:v1`; no account or server-side learner profile is required. See [docs/PRACTICE_LOOP.md](docs/PRACTICE_LOOP.md).
+### Pattern Bridge
 
-The deterministic checker does not claim to grade complete grammar, naturalness or meaning. It is a retrieval aid around the canonical pattern object.
+Pattern Bridge supports reviewed cross-language retrieval. A Bridge is not a learner translation: translation explains an example in a support language, while a Bridge records how the same or a related communicative Move is naturally realised in another learning language.
 
-### Research programme
+## Multilingual architecture
 
-Metkagram separates product claims from research hypotheses. The current H1 browser pilot measures cue utility around the visual notation; it does not claim language-learning efficacy. Research protocols and evidence limits are documented under `docs/RESEARCH_*`.
+Metkagram treats language as independent capabilities rather than one setting:
 
-### AI tutors and agents
+1. **interface locale** — navigation and product explanations;
+2. **learning language** — language whose Frames are studied;
+3. **translation locale** — support language used for learner translations;
+4. **annotation capability** — whether reviewed Metkagram Marks exist for that language.
 
-AI is treated as a tutor/interface, not as the canonical curriculum. Agents can use stable public pattern IDs and APIs to choose what a learner should practise, explain a pattern in context, check an attempt and revisit the same learning object later.
+Current public state:
 
-Machine-readable guidance is published at `/api/v1/teaching-manifest.json`. The existing `/api/v1/mcp-server.json` is a static adapter/tool manifest, not a hosted remote MCP transport endpoint.
+- interface: English (`en`), Russian (`ru`);
+- learning: English (`en`), German (`de`);
+- canonical learner translations: Russian (`ru`);
+- annotation: English (`en`), German (`de`).
 
-The generated data catalog and `llms.txt` also expose Pattern Atlas as an intent-to-pattern entry point. These files help compatible agents discover the resource; they are not presented as ranking shortcuts for web search.
+The capability registry lives in `src/language-registry.mjs`. The build publishes `/data/languages.json` and `/data/terminology.json` plus localized glossary pages at `/en/glossary/` and `/ru/glossary/`.
 
-### Distribution and collaboration
+This structure allows new languages to arrive incrementally. A future language can support Frames and translations before it has its own annotation profile or fully localized interface.
 
-The public Support page exposes bounded pilot packages for university research, teacher-curated topic packs, learning-tool distribution and AI-tutor integrations. The machine-readable list is published at `/data/partnership-opportunities.json`.
+## Research programme
 
-The broader organic-search, dataset, teacher-distribution and partnership plan is documented in [docs/GROWTH_STRATEGY.md](docs/GROWTH_STRATEGY.md). Search policy and indexability rules are documented in [docs/SEO.md](docs/SEO.md).
+Metkagram separates product claims from research hypotheses. Current research covers visual cue utility, structural noticing, retrieval-first practice, cross-language retrieval and annotation agreement. Research protocols must distinguish evidence about general learning mechanisms from evidence about Metkagram itself.
 
-## Product sequence
-
-The working sequence is:
-
-**Pattern Lens → Pattern Atlas → Pattern Graph → active practice loop → H1 pilot → H1 report → agent/API integrations → teacher/research/EdTech pilots**
-
-The learner-facing Practice library remains a core content layer underneath that sequence.
+AI is treated as a tutor/interface around canonical learning objects, not as the source of truth for the curriculum.
 
 ## Public repository boundary
 
-This repository is the public publication and product layer, not the entire research workspace.
+This repository is the public product and publication layer, not the entire research workspace.
 
-The public release intentionally contains:
+The public release intentionally contains the learner-facing curriculum, selected annotation material, reviewed reasoning relations, public evaluation fixtures, static APIs, research documentation and website code.
 
-- 72 selected annotated documents, 12 from each English/German collection;
-- the established 1,000+ reusable B2–C1 Practice curriculum with study sets and learning paths;
-- 30 curated reasoning-enabled English/German frames across 9 reasoning moves;
-- public evaluation fixtures that operate only on deliberately published material;
-- Pattern Lens, Pattern Atlas, Pattern Graph and local-first practice code;
-- public schemas, provenance, APIs, research documentation and website code.
-
-The private research core retains the full annotated corpus, bulk annotation/model-preparation exports, annotation engine and spaCy pipeline, linguistic heuristics and lexical rule tables, generation prompts/intermediate assets, participant data and unpublished research work.
+The private research core may retain the full annotated corpus, model-preparation exports, annotation engine and spaCy pipeline, linguistic heuristics, generation prompts/intermediate assets, participant data and unpublished research work.
 
 Public visibility does not remove the current licensing and attribution terms. See [LICENSE](LICENSE), [LICENSING.md](LICENSING.md) and [docs/PUBLICATION_BOUNDARY.md](docs/PUBLICATION_BOUNDARY.md).
+
+## Product sequence
+
+**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional languages**
 
 ## Local development
 
@@ -110,26 +128,13 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` validates the full public Practice curriculum, builds the static site, generates public-learning, Pattern Lens, Pattern Atlas and Pattern Graph outputs, runs regression tests and checks internal links. Publication-boundary tests protect private research infrastructure without treating the public Practice corpus as private.
-
-## Public content sources
-
-- `data/advanced-patterns.json` contains the full learner-facing Practice curriculum.
-- `data/study-sets.json` contains study sets and learning paths.
-- `data/discovery-topics.json` contains the curated Pattern Atlas topic map.
-- `data/partnership-opportunities.json` contains the bounded public collaboration formats.
-- `data/reasoning-frames/` contains the curated reasoning-enabled extension.
-- `data/metkagram-export/` contains the selected annotation showcase only.
-- `data/evaluation/` contains bounded public regression fixtures over published material.
-- `data/publication-manifest.json` records the deliberate release boundary.
-
-Generated outputs include `/data/advanced-patterns.json`, `/data/discovery-topics.json`, `/data/pattern-graph.json`, `/data/reasoning-evaluation.json`, `/api/v1/*` and `/api/v1/teaching-manifest.json`.
+`npm run verify` builds the static site, validates the public curriculum, generates discovery/research/practice outputs, publishes the terminology and language capability layer, runs regression tests and checks internal links.
 
 ## Research and licensing
 
 Metkagram is source-available, not open source or open data by default. Reading, linking and citation are welcome. Substantial reuse, derived corpora, model training, redistribution and commercial integration require scoped permission unless applicable law independently permits the use.
 
-Research collaborations, teacher/education pilots, institutional evaluation, data/API licensing and commercial proposals are welcome through [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md).
+Research collaborations, teacher/education pilots, institutional evaluation, data/API licensing and commercial proposals are described in [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md).
 
 ## History note
 
