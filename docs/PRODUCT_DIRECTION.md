@@ -8,11 +8,11 @@ Metkagram is not trying to be a general-purpose language-learning app or a repla
 
 Its distinctive job is narrower:
 
-> **real language → visible structure → reusable pattern → contrast → choose → practice → reuse**
+> **real language → visible structure → reusable pattern → contrast → choose → route → practice → reuse**
 
-The project turns language structure into inspectable learning objects. Visual annotation helps a learner notice structure inside a real sentence; reusable patterns capture what can be transferred; communicative and reasoning moves explain what the structure does; explicit contrasts show when nearby patterns are not interchangeable; choice drills force the distinction to be retrieved before feedback.
+The project turns language structure into inspectable learning objects. Visual annotation helps a learner notice structure inside a real sentence; reusable patterns capture what can be transferred; communicative and reasoning moves explain what the structure does; explicit contrasts show when nearby patterns are not interchangeable; choice drills force the distinction to be retrieved before feedback; curated packs sequence those stable objects into short routes around a real reasoning job.
 
-The durable asset is therefore not raw page count or pattern count. It is the reviewed relationship layer between language, function, examples, alternatives, decisions, practice and provenance.
+The durable asset is therefore not raw page count or pattern count. It is the reviewed relationship layer between language, function, examples, alternatives, decisions, learning routes, practice and provenance.
 
 ## Core product layers
 
@@ -83,7 +83,25 @@ The current pilot contains **18 reviewed drills across 9 contrasts**, with exact
 
 Status: reviewed pilot with localized clinic pages, embedded contrast drills and machine-readable API/MCP output. See `CHOICE_CLINIC.md`.
 
-### 7. Practice loop
+### 7. Reasoning Packs
+
+Reasoning Packs are short curated routes over canonical patterns, contrasts and choice drills.
+
+A pack does not duplicate formulas, explanations or answers. It stores only the ordered object IDs plus an editorial instruction explaining why each next step matters. This makes packs compositional: fixing a canonical pattern or contrast automatically updates every route that points to it.
+
+The first release contains five reviewed routes:
+
+- reason from evidence without overclaiming;
+- turn a hypothesis into a test;
+- make and explain a balanced decision;
+- reframe without flattening nuance;
+- explain causes without forcing a simple story.
+
+A route must solve one coherent job, contain at least four validated steps and remain useful without an AI runtime. This makes packs suitable for learner sessions, teacher pilots and agent-guided lessons while keeping the canonical knowledge layer separate from presentation.
+
+Status: reviewed pilot with localized pack pages and machine-readable API/MCP output. See `REASONING_PACKS.md`.
+
+### 8. Practice loop
 
 A pattern supports a short active loop rather than passive browsing:
 
@@ -91,9 +109,10 @@ A pattern supports a short active loop rather than passive browsing:
 2. inspect the reusable formula;
 3. compare variations and, where useful, a reviewed nearby contrast;
 4. choose between nearby patterns before feedback when the distinction matters;
-5. attempt a new example before feedback;
-6. self-rate retrieval;
-7. revisit the same stable pattern ID later.
+5. follow a short curated pack when the job requires several related moves;
+6. attempt a new example before feedback;
+7. self-rate retrieval;
+8. revisit the same stable pattern ID later.
 
 Where reasoning metadata exists, the learner can additionally name and compare the reasoning move. The deterministic checker does not claim to grade complete grammar, naturalness or meaning. Review state is local-first and stored only in the browser.
 
@@ -101,7 +120,7 @@ AI may later generate richer context, feedback and examples around this loop. AI
 
 Status: implemented with local review scheduling and a Practice-page due queue. See `PRACTICE_LOOP.md`.
 
-### 8. Research programme
+### 9. Research programme
 
 Metkagram separates product claims from research hypotheses. The first priority is to test distinctive mechanisms rather than manufacture broad efficacy claims.
 
@@ -116,17 +135,18 @@ The first browser instrument, `H1-CUE-UTILITY-V1`, measures cue utility around c
 
 Status: H1 protocol, stimuli, browser experiment, export format and analysis script implemented; outcome data not yet reported.
 
-### 9. Agent and API layer
+### 10. Agent and API layer
 
 Stable public pattern IDs, provenance and machine-readable datasets let external tutors and agents refer to the same learning objects. Agents can use the full public Practice library while reasoning-specific tools operate on the curated reasoning subset.
 
-The public reference layer should support five bounded operations particularly well:
+The public reference layer should support six bounded operations particularly well:
 
 1. resolve a communicative intent to a small reviewed set;
 2. retrieve one canonical pattern;
 3. retrieve related or contrasting patterns with an explicit relation reason;
 4. retrieve a reviewed choice drill when two nearby patterns are easy to confuse;
-5. preserve provenance and canonical links in downstream answers.
+5. retrieve a curated reasoning route when the learner needs several linked moves;
+6. preserve provenance and canonical links in downstream answers.
 
 The public API should expose the learner-facing curriculum with attribution and current rights metadata without exposing the private annotation/generation pipeline.
 
@@ -139,7 +159,7 @@ The public repository is both a product and publication layer. It intentionally 
 - Pattern Atlas discovery topics;
 - selected annotated documents;
 - selected reasoning frames and evaluation fixtures;
-- reviewed pattern contrasts and bounded choice drills;
+- reviewed pattern contrasts, bounded choice drills and curated reasoning packs;
 - public schemas, Pattern Lens rules, derived graph relationships, browser-side practice logic and bounded research stimuli.
 
 The private research core retains the full annotated corpus, bulk annotation/model-preparation exports, annotation engine, spaCy pipeline, linguistic heuristics, lexical rules, generation prompts/intermediate assets, participant research files and unpublished research work.
@@ -153,8 +173,9 @@ The current project does **not** prioritise:
 - rebuilding the discontinued mobile application;
 - competing on generic AI conversation or writing;
 - generating patterns merely to inflate a count;
-- generating thousands of contrast, clinic or topic pages from search keywords;
+- generating thousands of contrast, clinic, pack or topic pages from search keywords;
 - claiming that the Choice Clinic is a complete grammar grader;
+- letting AI invent canonical curriculum relationships at runtime;
 - streaks, social gamification and account systems before the core loop is useful;
 - publishing the private parser, annotation engine or full research corpus;
 - claiming language-learning efficacy without a suitable comparison study;
@@ -164,9 +185,9 @@ The current project does **not** prioritise:
 
 The working sequence is:
 
-**Pattern Library/Practice → Pattern Lens → Pattern Atlas → Pattern Graph → Contrast Library → Pattern Choice Clinic → active practice loop → H1 pilot/report → agent/API integrations → teacher/research/EdTech pilots**
+**Pattern Library/Practice → Pattern Lens → Pattern Atlas → Pattern Graph → Contrast Library → Pattern Choice Clinic → Reasoning Packs → active practice loop → H1 pilot/report → agent/API integrations → teacher/research/EdTech pilots**
 
-The library is the content substrate. Lens and Atlas provide two complementary ways into it: real text and communicative intent. Graph and Contrast Library make relationships inspectable. Choice Clinic turns a distinction into an explicit retrieval decision. Practice turns discovery and choice into reuse.
+The library is the content substrate. Lens and Atlas provide two complementary ways into it: real text and communicative intent. Graph and Contrast Library make relationships inspectable. Choice Clinic turns a distinction into an explicit retrieval decision. Packs compose canonical objects into a focused route. Practice turns discovery, choice and sequencing into reuse.
 
 ## Decision rules
 
@@ -177,6 +198,7 @@ A proposed feature belongs in Metkagram when it does at least one of the followi
 - makes the communicative or reasoning function of a pattern clearer where such metadata is justified;
 - clarifies a reviewed difference between nearby patterns;
 - makes the learner retrieve that distinction before seeing feedback;
+- sequences reviewed objects into a coherent learning job without duplicating them;
 - improves transfer or retrieval practice around a stable pattern;
 - improves corpus quality, provenance or evaluation;
 - lets a tutor, teacher or research workflow reuse the same stable learning object.
@@ -192,6 +214,7 @@ Measure whether the method produces useful behaviour:
 - Atlas topic → canonical pattern navigation;
 - contrast page → Choice Clinic / canonical pattern navigation;
 - Choice Clinic reveal → canonical pattern/practice navigation;
+- pack start → ordered-step completion / canonical pattern navigation;
 - two-sided contrast coverage and editorial quality;
 - completion of short retrieval attempts;
 - return to stable pattern IDs when they become due;

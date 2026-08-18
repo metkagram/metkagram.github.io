@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-pilot",
+  "description": "Curated learning routes that sequence canonical Metkagram patterns, reviewed contrasts and choice drills around one reasoning job.",
+  "packs": [
+    {
+      "id": "evidence-without-overclaiming",
+      "title_en": "Reason from evidence without overclaiming",
+      "title_ru": "Делать выводы по данным без переутверждения",
+      "description_en": "Move from a suggestive observation to a calibrated hypothesis while keeping uncertainty and alternatives visible.",
+      "description_ru": "Перейдите от наблюдения к аккуратной гипотезе, сохраняя видимыми неопределённость и альтернативы.",
+      "outcome_en": "Distinguish support from proof, a leading explanation from a merely possible one, and know when to name an alternative explicitly.",
+      "outcome_ru": "Различать поддержку и доказательство, ведущую и просто возможную гипотезу и понимать, когда альтернативу нужно назвать явно.",
+      "audience": ["B2", "C1", "teacher", "AI tutor"],
+      "steps": [
+        {"kind": "pattern", "id": "CLF051", "instruction_en": "Start with calibrated evidence: let an observation support a hypothesis without turning it into proof.", "instruction_ru": "Начните с калибровки свидетельства: наблюдение может поддерживать гипотезу, не превращаясь в доказательство."},
+        {"kind": "contrast", "id": "suggests-vs-alternative-explanation", "instruction_en": "Separate weak proof claims from the different job of keeping a concrete alternative explanation visible.", "instruction_ru": "Отделите ограничение силы доказательства от другой задачи: явно сохранить конкретное альтернативное объяснение."},
+        {"kind": "drill", "id": "missing-record-two-explanations", "instruction_en": "Choose the frame when one observation genuinely supports two specific interpretations.", "instruction_ru": "Выберите каркас для случая, когда одно наблюдение действительно поддерживает две конкретные интерпретации."},
+        {"kind": "contrast", "id": "most-likely-vs-cannot-rule-out", "instruction_en": "Now calibrate rank: leading explanation is much stronger than merely not eliminated.", "instruction_ru": "Теперь откалибруйте ранг: ведущее объяснение намного сильнее, чем просто не исключённая возможность."},
+        {"kind": "drill", "id": "timing-issue-still-possible", "instruction_en": "Practise keeping a hypothesis alive without accidentally calling it likely.", "instruction_ru": "Потренируйтесь сохранять гипотезу среди возможных, не называя её случайно вероятной."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "test-a-hypothesis",
+      "title_en": "Turn a hypothesis into a test",
+      "title_ru": "Превратить гипотезу в проверку",
+      "description_en": "Move from competing explanations to predictions, necessary implications, diagnostic checks and explicit revision criteria.",
+      "description_ru": "Перейдите от конкурирующих объяснений к предсказаниям, необходимым следствиям, диагностическим проверкам и критериям пересмотра.",
+      "outcome_en": "Design language that makes a hypothesis inspectable instead of arguing from plausibility alone.",
+      "outcome_ru": "Формулировать гипотезу так, чтобы её можно было проверять, а не обсуждать только по правдоподобию.",
+      "audience": ["B2", "C1", "teacher", "researcher", "AI tutor"],
+      "steps": [
+        {"kind": "pattern", "id": "CLF054", "instruction_en": "Keep two plausible explanations alive before committing to one.", "instruction_ru": "Сохраните две правдоподобные гипотезы до того, как выбирать одну."},
+        {"kind": "contrast", "id": "expected-observation-vs-required-condition", "instruction_en": "Distinguish a prediction you expect from a condition the hypothesis must satisfy.", "instruction_ru": "Различите ожидаемое предсказание и условие, которому гипотеза обязана соответствовать."},
+        {"kind": "drill", "id": "retry-cause-requires-order", "instruction_en": "Use event order as a necessary implication rather than a vague sign.", "instruction_ru": "Используйте порядок событий как необходимое следствие, а не как расплывчатый признак."},
+        {"kind": "pattern", "id": "CLF058", "instruction_en": "Challenge an explanation by exposing an important observation it still fails to explain.", "instruction_ru": "Проверьте объяснение на полноту через важное наблюдение, которое оно всё ещё не объясняет."},
+        {"kind": "contrast", "id": "diagnostic-test-vs-revision-threshold", "instruction_en": "Separate the next useful check from the evidence that would actually change your conclusion.", "instruction_ru": "Отделите следующую полезную проверку от данных, которые действительно изменят ваш вывод."},
+        {"kind": "drill", "id": "revision-threshold-clean-config", "instruction_en": "Finish by making the conclusion genuinely revisable.", "instruction_ru": "Завершите маршрут явным условием, при котором вывод действительно будет пересмотрен."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "make-a-balanced-decision",
+      "title_en": "Make and explain a balanced decision",
+      "title_ru": "Принять и объяснить взвешенное решение",
+      "description_en": "Separate trade-offs from pros and cons, reduce a mature discussion to real alternatives, and state the final decision with its criterion.",
+      "description_ru": "Отделите компромисс между критериями от плюсов и минусов одного варианта, сведите зрелое обсуждение к реальным альтернативам и зафиксируйте решение с основанием.",
+      "outcome_en": "Move from evaluation to a defensible choice without hiding the cost of the decision.",
+      "outcome_ru": "Перейти от оценки к обоснованному выбору, не скрывая цену решения.",
+      "audience": ["B2", "C1", "professional English", "teacher"],
+      "steps": [
+        {"kind": "contrast", "id": "tradeoff-vs-pros-cons", "instruction_en": "First decide whether you are describing competing goals or evaluating one option from both sides.", "instruction_ru": "Сначала определите, описываете ли вы конфликт двух целей или оцениваете один вариант с двух сторон."},
+        {"kind": "drill", "id": "speed-vs-auditability", "instruction_en": "Practise expressing tension between two desirable dimensions.", "instruction_ru": "Потренируйтесь выражать напряжение между двумя желательными критериями."},
+        {"kind": "pattern", "id": "CLF047", "instruction_en": "Switch from system-level trade-offs to a balanced evaluation of one concrete option.", "instruction_ru": "Перейдите от общего компромисса к сбалансированной оценке одного конкретного варианта."},
+        {"kind": "pattern", "id": "CLF049", "instruction_en": "Only after analysis, reduce the decision to the alternatives that actually remain.", "instruction_ru": "Только после анализа сведите решение к альтернативам, которые действительно остались."},
+        {"kind": "pattern", "id": "CLF069", "instruction_en": "Close the loop by stating the selected option and the criterion that drove it.", "instruction_ru": "Замкните цикл: зафиксируйте выбранный вариант и критерий, который определил решение."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "reframe-with-precision",
+      "title_en": "Reframe without flattening the nuance",
+      "title_ru": "Переопределять мысль без потери нюанса",
+      "description_en": "Learn when to reject the original frame, when to keep part of it, and how to challenge the assumption beneath a broad claim.",
+      "description_ru": "Научитесь понимать, когда исходную рамку нужно заменить, когда часть её следует сохранить и как проверять скрытое предположение под широким утверждением.",
+      "outcome_en": "Correct an interpretation at the right strength instead of using every disagreement as a full negation.",
+      "outcome_ru": "Исправлять интерпретацию с нужной силой, не превращая любое несогласие в полное отрицание.",
+      "audience": ["B2", "C1", "professional English", "teacher"],
+      "steps": [
+        {"kind": "contrast", "id": "corrective-vs-relative-reframe", "instruction_en": "Start by separating full correction from a softer shift of emphasis.", "instruction_ru": "Начните с различия между полной коррекцией и более мягким переносом акцента."},
+        {"kind": "drill", "id": "not-wrong-does-not-scale", "instruction_en": "Use the stronger frame when the original diagnosis itself is wrong.", "instruction_ru": "Используйте более сильный каркас, когда неверен сам исходный диагноз."},
+        {"kind": "drill", "id": "risk-emphasis-maintenance", "instruction_en": "Use the softer frame when the first factor remains real but secondary.", "instruction_ru": "Используйте более мягкий каркас, когда первый фактор остаётся реальным, но вторичным."},
+        {"kind": "pattern", "id": "CLF065", "instruction_en": "Qualify a claim by separating the scope where it works from the scope where it does not.", "instruction_ru": "Ограничьте утверждение, отделив область, где оно работает, от области, где оно не работает."},
+        {"kind": "pattern", "id": "CLF066", "instruction_en": "Go one level deeper and expose the hidden assumption that makes the claim possible.", "instruction_ru": "Спуститесь на уровень глубже и сделайте явным скрытое предположение, на котором держится утверждение."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "explain-causes-carefully",
+      "title_en": "Explain causes without forcing a simple story",
+      "title_ru": "Объяснять причины без слишком простой истории",
+      "description_en": "Separate causal chains from joint causes and acknowledge a contributing factor without pretending it explains the whole outcome.",
+      "description_ru": "Различайте причинную цепочку и совместные причины и признавайте вклад фактора, не выдавая его за полное объяснение результата.",
+      "outcome_en": "Choose causal language that matches the structure of the mechanism rather than merely the chronology of events.",
+      "outcome_ru": "Выбирать причинный каркас по структуре механизма, а не просто по хронологии событий.",
+      "audience": ["B2", "C1", "professional English", "researcher"],
+      "steps": [
+        {"kind": "contrast", "id": "causal-chain-vs-multiple-causes", "instruction_en": "Decide whether the mechanism is sequential or produced by parallel contributing factors.", "instruction_ru": "Определите, является ли механизм последовательным или создаётся параллельными факторами."},
+        {"kind": "drill", "id": "ownership-causal-chain", "instruction_en": "Make the intermediate causal mechanism visible.", "instruction_ru": "Сделайте промежуточный причинный механизм явным."},
+        {"kind": "drill", "id": "incident-joint-causes", "instruction_en": "Switch to a multi-factor frame when causes operate together rather than in sequence.", "instruction_ru": "Перейдите к многофакторному каркасу, когда причины действуют совместно, а не последовательно."},
+        {"kind": "pattern", "id": "CLF068", "instruction_en": "When evidence supports one contributor but not exclusivity, acknowledge contribution without claiming a single cause.", "instruction_ru": "Если данные поддерживают один фактор, но не его исключительность, признайте вклад без утверждения единственной причины."}
+      ],
+      "review_status": "reviewed"
+    }
+  ]
+}
