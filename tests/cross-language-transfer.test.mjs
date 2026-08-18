@@ -45,10 +45,11 @@ test("transfer map does not create cross-ID translation pairs", () => {
   assert.match(map.boundary, /does not claim word-for-word equivalence/i);
 });
 
-test("localized transfer pages expose recall-first EN↔DE practice", () => {
+test("Pattern Bridge pages expose recall-first EN↔DE practice", () => {
   for (const locale of ["en", "ru"]) {
     const page = fs.readFileSync(path.join(DIST, locale, "transfer", "index.html"), "utf8");
-    assert.match(page, /Cross-language Transfer/);
+    assert.match(page, /Pattern Bridge/);
+    assert.doesNotMatch(page, /Cross-language Transfer/);
     assert.match(page, /<details/);
     assert.match(page, /EN → DE/);
     assert.match(page, /DE → EN/);
@@ -59,7 +60,7 @@ test("localized transfer pages expose recall-first EN↔DE practice", () => {
   }
 });
 
-test("Practice, Reasoning Packs and exports bridge into transfer practice", () => {
+test("Practice, Pattern Routes and exports bridge into cross-language practice", () => {
   for (const locale of ["en", "ru"]) {
     for (const parts of [["practice"], ["packs"], ["exports"]]) {
       const page = fs.readFileSync(path.join(DIST, locale, ...parts, "index.html"), "utf8");
@@ -69,7 +70,7 @@ test("Practice, Reasoning Packs and exports bridge into transfer practice", () =
   }
 });
 
-test("cross-language map is exposed through API, MCP, teaching and discovery surfaces", () => {
+test("Pattern Bridge keeps legacy API and discovery IDs for compatibility", () => {
   const api = JSON.parse(fs.readFileSync(path.join(DIST, "api", "v1", "cross-language-map.json"), "utf8"));
   assert.equal(api.data.itemCount, map.itemCount);
   assert.equal(api.provenance.record_type, "cross_language_functional_map");
