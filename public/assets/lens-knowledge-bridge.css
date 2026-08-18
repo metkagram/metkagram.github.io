@@ -1,0 +1,74 @@
+.lens-relations {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(28, 28, 24, 0.14);
+}
+
+.lens-relations-title {
+  margin: 0 0 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.68;
+}
+
+.lens-relation-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.65rem;
+}
+
+.lens-relation-link {
+  display: flex;
+  min-height: 7rem;
+  flex-direction: column;
+  gap: 0.28rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(28, 28, 24, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.52);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.lens-relation-link:hover,
+.lens-relation-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(28, 28, 24, 0.32);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.lens-relation-link span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+
+.lens-relation-link strong {
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.lens-relation-link small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  opacity: 0.72;
+}
+
+@media (max-width: 680px) {
+  .lens-relation-links {
+    grid-template-columns: 1fr;
+  }
+
+  .lens-relation-link {
+    min-height: auto;
+  }
+}
