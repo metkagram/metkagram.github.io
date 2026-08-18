@@ -132,9 +132,17 @@ jobs:
                 add_url "$BASE/en/mistakes/russian-speakers/$slug/"
                 add_url "$BASE/ru/mistakes/russian-speakers/$slug/"
               done < <(jq -r '.items[].slug' data/russian-speaker-errors.json)
+              while IFS= read -r pattern_id; do
+                [[ -z "$pattern_id" ]] && continue
+                pattern_slug="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
+                add_url "$BASE/en/practice/$pattern_slug/"
+                add_url "$BASE/ru/practice/$pattern_slug/"
+                add_url "$BASE/api/v1/patterns/$pattern_slug.json"
+              done < <(jq -r '.items[].pattern_id' data/russian-speaker-errors.json)
             fi
             add_url "$BASE/data/russian-speaker-errors.json"
             add_url "$BASE/api/v1/russian-speaker-errors.json"
+            add_url "$BASE/api/v1/patterns.json"
             add_url "$BASE/en/practice/set/rtr/"
             add_url "$BASE/ru/practice/set/rtr/"
           fi
