@@ -134,7 +134,7 @@ function patchMachineSurfaces(schema) {
       note: "Learning events are browser-local and are never available to a remote MCP client unless a learner explicitly exports and provides them.",
     };
     mcp.tools ||= [];
-    if (!mcp.tools.some((tool) => tool.name === "metkagram_get_learning_event_schema")) mcp.tools.push({ name: "metkagram_get_learning_event_schema", description: "Read the schema for learner-controlled browser-local activity exports.", method: "GET", url: `${SITE_URL}/api/v1/learning-event-schema.json` });
+    if (!mcp.tools.some((tool) => tool.name === "metkagram_get_learning_event_schema")) mcp.tools.push({ name: "metkagram_get_learning_event_schema", description: "Read the schema for learner-controlled browser-local activity exports.", staticUrl: `${SITE_URL}/api/v1/learning-event-schema.json` });
   });
 
   patchJson("api/v1/openapi.json", (openapi) => {
