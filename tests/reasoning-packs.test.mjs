@@ -17,7 +17,7 @@ function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 }
 
-test("Reasoning Packs reference only canonical reviewed objects", () => {
+test("legacy reasoning pack data references only canonical reviewed objects", () => {
   assert.equal(source.schemaVersion, 1);
   assert.equal(source.status, "reviewed-pilot");
   assert.ok(source.packs.length >= 5);
@@ -36,10 +36,11 @@ test("Reasoning Packs reference only canonical reviewed objects", () => {
   }
 });
 
-test("Reasoning Pack pages preserve the ordered canonical route", () => {
+test("Pattern Route pages preserve the ordered canonical route", () => {
   for (const locale of ["en", "ru"]) {
     const index = html(locale, "packs");
-    assert.match(index, /Reasoning Packs/);
+    assert.match(index, /Pattern Routes/);
+    assert.doesNotMatch(index, /Reasoning Packs/);
     assert.match(index, /ItemList/);
     for (const pack of source.packs) {
       assert.match(index, new RegExp(`/${locale}/packs/${pack.id}/`));
@@ -59,7 +60,7 @@ test("Reasoning Pack pages preserve the ordered canonical route", () => {
   }
 });
 
-test("Reasoning Packs are connected to discovery and agent surfaces", () => {
+test("Pattern Routes keep legacy discovery and API IDs for compatibility", () => {
   const api = JSON.parse(fs.readFileSync(path.join(DIST, "api", "v1", "reasoning-packs.json"), "utf8"));
   assert.equal(api.data.packs.length, source.packs.length);
   assert.equal(api.provenance.record_type, "reasoning_pack_collection");
