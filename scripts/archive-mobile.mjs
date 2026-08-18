@@ -80,6 +80,33 @@ function archiveAppsPage(locale) {
   fs.writeFileSync(file, html);
 }
 
+function patchSupport(locale) {
+  const file = path.join(DIST, locale, "support", "index.html");
+  if (!fs.existsSync(file)) return;
+  let html = fs.readFileSync(file, "utf8");
+  const replacements = locale === "ru"
+    ? [
+        ["Помогите превратить открытый языковой корпус в проверяемую учебную систему.", "Помогите развить проверяемый слой речевых моделей для людей, преподавателей и ИИ."],
+        ["Metkagram уже объединяет размеченный контент, повторно используемые паттерны, статический API и приложения. Мы ищем инвесторов и партнёров для проверки метода, редакционного масштабирования и выхода на новые языки — без ложных заявлений о достигнутой аудитории.", "Metkagram объединяет модели B2–C1, выбранные примеры с разметкой, Pattern Lens, Pattern Atlas, проверяемые сравнения и статический слой для агентов. Нужны конкретные исследовательские, преподавательские, EdTech и лицензионные пилоты."],
+        ["Один и тот же материал работает как учебный интерфейс для людей и как машиночитаемый набор данных для агентов и исследователей.", "Один проверенный pattern ID может использоваться в Lens, Atlas, сравнении, практике, преподавательском экспорте и ответе ИИ без конкурирующих определений."],
+        ["Инвестиционный разговор", "Преподавательский / EdTech пилот"],
+        ["Обсудить финансирование этапа, показатели успеха, структуру сделки и границы открытой части проекта.", "Проверить Metkagram в реальном учебном или AI-tutor сценарии с конкретным результатом и обратной связью."],
+        ["Основные учебные материалы остаются доступными бесплатно.", "Публичный учебный каталог остаётся доступным на сайте; существенное переиспользование регулируется текущими условиями лицензирования."],
+        ["Проверить открытый репозиторий", "Проверить публичный репозиторий"],
+      ]
+    : [
+        ["Turn an open language corpus into a testable learning system.", "Build a reviewed language-pattern layer for learners, teachers and AI tutors."],
+        ["Metkagram already combines annotated content, reusable patterns, a static API and mobile apps. We are looking for investors and partners to validate the method, scale editorial quality and expand to new languages—without inventing traction claims.", "Metkagram combines reusable B2–C1 patterns, selected annotated examples, Pattern Lens, Pattern Atlas, reviewed contrasts and a static agent-facing reference layer. We are looking for concrete research, teaching, EdTech and licensing pilots."],
+        ["The same material works as a learning interface for people and as machine-readable data for agents and researchers.", "One reviewed pattern ID can travel through Lens, Atlas, contrasts, practice, teacher exports and AI-tutor answers without competing definitions."],
+        ["Investment conversation", "Teacher / EdTech pilot"],
+        ["Discuss milestone funding, success measures, deal structure and the boundary of the open project.", "Test Metkagram in a real teaching or AI-tutor workflow with a concrete outcome and editorial feedback."],
+        ["Core learning materials remain free to access.", "The public learner-facing catalogue remains accessible on the hosted site; substantial reuse follows the current licensing terms."],
+        ["Inspect the open repository", "Inspect the public repository"],
+      ];
+  html = replaceAllKnown(html, replacements).replaceAll("Open educational data", "Language pattern datasets");
+  fs.writeFileSync(file, html);
+}
+
 function htmlFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   const output = [];
@@ -117,7 +144,8 @@ function patchGlobalHistoryClaims() {
     let html = fs.readFileSync(file, "utf8");
     html = replaceAllKnown(html, replacements);
     html = removeArchivedMobileEntity(html);
-    for (const url of STORE_URLS) html = html.replaceAll(url, "/en/apps/");
+    const localeTarget = file.includes(`${path.sep}ru${path.sep}`) ? "/ru/apps/" : "/en/apps/";
+    for (const url of STORE_URLS) html = html.replaceAll(url, localeTarget);
     fs.writeFileSync(file, html);
   }
 }
@@ -137,6 +165,7 @@ function assertNoActiveStorePromotion() {
 for (const locale of ["en", "ru"]) {
   patchHome(locale);
   archiveAppsPage(locale);
+  patchSupport(locale);
 }
 patchGlobalHistoryClaims();
 assertNoActiveStorePromotion();
