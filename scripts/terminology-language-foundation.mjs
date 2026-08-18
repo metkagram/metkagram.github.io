@@ -7,6 +7,13 @@ import { SITE_RELEASE_DATE } from "../src/site.mjs";
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 
+const methodology = {
+  name: "Metkagram Mark–Frame Method",
+  shortLine: "See the structure. Keep the Frame. Reuse the Move.",
+  coreLoop: ["Sentence", "Mark", "Frame", "Move", "Reuse"],
+  practiceLoop: ["Frame", "Contrast", "Choice", "Route / Bridge", "Reuse"],
+};
+
 const terminology = [
   {
     id: "mark",
@@ -96,6 +103,9 @@ function glossaryCopy(locale) {
         eyebrow: "Metkagram · единый словарь",
         title: "Один язык для всей системы",
         intro: "Metkagram использует небольшой набор терминов. Они описывают путь от визуальной метки в живой фразе до повторного использования структуры и переноса между языками.",
+        methodTitle: "Metkagram Mark–Frame Method",
+        methodText: "Метод начинается с полной фразы: мы замечаем Mark прямо внутри предложения, извлекаем повторяемый Frame, связываем его с Move и возвращаем структуру в активное использование. Более продвинутый слой добавляет Contrast, Choice, Route и Bridge.",
+        methodBoundary: "Frame и Move — не заявляются как изобретения Metkagram. Проектная методология — это их связка с inline Marks, стабильными учебными объектами, извлечением из памяти и межъязыковым переносом.",
         chainTitle: "Главная цепочка",
         objectsTitle: "Семь объектов Metkagram",
         surfacesTitle: "Названия разделов",
@@ -110,6 +120,9 @@ function glossaryCopy(locale) {
         eyebrow: "Metkagram · shared vocabulary",
         title: "One language for the whole system",
         intro: "Metkagram uses a small set of terms. They describe the path from a visual cue inside real language to reusable structure, active choice and cross-language reuse.",
+        methodTitle: "Metkagram Mark–Frame Method",
+        methodText: "The method starts with complete language: notice a Mark inside the sentence, extract the reusable Frame, connect it to the Move, then return the structure to active use. The advanced layer adds Contrast, Choice, Route and Bridge.",
+        methodBoundary: "Frame and Move are not claimed as Metkagram inventions. The project-specific method is their connection to inline Marks, stable learning objects, retrieval and cross-language reuse.",
         chainTitle: "The core chain",
         objectsTitle: "Seven Metkagram objects",
         surfacesTitle: "Product surface names",
@@ -131,6 +144,7 @@ function glossaryPage(locale) {
   }).join("");
   const surfaceRows = surfaceNames.map((surface) => `<tr><th scope="row">${escapeHtml(surface.canonical)}</th><td>${escapeHtml(surface.job)}</td><td>${surface.legacy ? escapeHtml(surface.legacy) : "—"}</td></tr>`).join("");
   const body = `<section class="section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)}</p><h1>${escapeHtml(t.title)}</h1><p class="lede">${escapeHtml(t.intro)}</p></section>
+<section class="section-pad ruled"><p class="eyebrow">${escapeHtml(methodology.shortLine)}</p><h2>${escapeHtml(t.methodTitle)}</h2><p>${escapeHtml(t.methodText)}</p><p>${escapeHtml(t.methodBoundary)}</p><p><strong>${escapeHtml(methodology.coreLoop.join(" → "))}</strong></p></section>
 <section class="section-pad ruled"><p class="eyebrow">${escapeHtml(t.chainTitle)}</p><h2>Mark → Frame → Move → Contrast → Choice → Route → Bridge</h2></section>
 <section class="section-pad ruled"><h2>${escapeHtml(t.objectsTitle)}</h2><div class="pattern-comparison-list">${objectCards}</div></section>
 <section class="section-pad ruled"><h2>${escapeHtml(t.surfacesTitle)}</h2><div class="table-scroll"><table><thead><tr><th>Metkagram</th><th>${escapeHtml(t.job)}</th><th>${escapeHtml(t.legacy)}</th></tr></thead><tbody>${surfaceRows}</tbody></table></div></section>
@@ -171,7 +185,7 @@ function walkHtml(directory) {
 
 function patchVisibleTerminology() {
   for (const file of walkHtml(DIST)) {
-    let html = fs.readFileSync(file, "utf8");
+    const html = fs.readFileSync(file, "utf8");
     let next = html;
     for (const [from, to] of visibleNameReplacements) next = next.replaceAll(from, to);
     if (next !== html) fs.writeFileSync(file, next);
@@ -184,8 +198,8 @@ function patchMethodGlossary(locale) {
   let html = fs.readFileSync(file, "utf8");
   if (html.includes("data-metkagram-glossary")) return;
   const section = locale === "ru"
-    ? `<section class="section-pad ruled" data-metkagram-glossary><p class="eyebrow">Mark → Frame → Move</p><h2>Единый словарь Metkagram</h2><p>Метка показывает структуру, Frame сохраняет повторяемый каркас, Move объясняет его речевую задачу. Дальше Contrast, Choice, Route и Bridge превращают это в практику и межъязыковые связи.</p><a class="text-link" href="/ru/glossary/">Открыть словарь <span aria-hidden="true">→</span></a></section>`
-    : `<section class="section-pad ruled" data-metkagram-glossary><p class="eyebrow">Mark → Frame → Move</p><h2>The Metkagram vocabulary</h2><p>A Mark makes structure visible, a Frame captures reusable form, and a Move explains the communicative job. Contrast, Choice, Route and Bridge turn those objects into practice and cross-language relations.</p><a class="text-link" href="/en/glossary/">Open the glossary <span aria-hidden="true">→</span></a></section>`;
+    ? `<section class="section-pad ruled" data-metkagram-glossary><p class="eyebrow">Metkagram Mark–Frame Method</p><h2>От метки к повторному использованию</h2><p>Полная фраза → Mark → Frame → Move → повторное использование. Contrast, Choice, Route и Bridge добавляют различение, извлечение из памяти и межъязыковый перенос. Разметка остаётся сильной частью метода, но новый изучаемый язык может появиться до готовности собственной системы аннотаций.</p><a class="text-link" href="/ru/glossary/">Открыть единый словарь <span aria-hidden="true">→</span></a></section>`
+    : `<section class="section-pad ruled" data-metkagram-glossary><p class="eyebrow">Metkagram Mark–Frame Method</p><h2>From a visible Mark to reusable language</h2><p>Complete language → Mark → Frame → Move → reuse. Contrast, Choice, Route and Bridge add discrimination, retrieval and cross-language transfer. Annotation remains a strong part of the method, but a new learning language can become useful before its own annotation profile is ready.</p><a class="text-link" href="/en/glossary/">Open the shared vocabulary <span aria-hidden="true">→</span></a></section>`;
   html = html.replace("</main>", `${section}</main>`);
   fs.writeFileSync(file, html);
 }
@@ -238,6 +252,7 @@ function main() {
   writeJson("data/languages.json", publicLanguageMatrix());
   writeJson("data/terminology.json", {
     schemaVersion: 1,
+    methodology,
     vocabulary: terminology,
     surfaces: surfaceNames,
     canonicalChain: terminology.map((term) => term.name),
