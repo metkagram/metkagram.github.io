@@ -11,52 +11,58 @@ function insertBefore(html, marker, block) {
 }
 
 function annotationAuditSection() {
-  const findings = [
+  const mechanism = [
     [
-      "The notation is functional, not just grammatical",
-      "Metkagram marks what a learner needs to notice inside a sentence: subject, main verb, helper, secondary verb form, case, word order and morphology. This is different from showing a full POS or dependency parse.",
-      "Current examples include S / S*, V, vI, v2, vP / Vp, Hf / Hr / Hst, M, German case arrows and gender signals."
+      "1 · Read the sentence as language",
+      "The learner first sees a complete, meaningful sentence. The annotation is not a replacement for the sentence and should not turn reading into a grammar diagram.",
+      "Meaning remains the primary task."
     ],
     [
-      "Text-first spans are the right foundation",
-      "The canonical schema keeps the original sentence separate from annotation spans. A tag points to exact text offsets instead of becoming part of the sentence. The same record can therefore support a learner view, research inspection, accessibility and NLP export.",
-      "Keep this principle in every future schema version."
+      "2 · Notice one function at its exact location",
+      "A compact mark sits directly beside the word or span it describes. S points to the subject, V to the main verb, M to a modal, and v2 or vI to another verb form. The learner does not have to look away from the sentence and map a separate rule back onto the text.",
+      "The hypothesis is that local cues can make structure easier to notice with less split attention."
     ],
     [
-      "Schema 1.0 mixes several layers",
-      "Syntax, morphology, construction structure and learner-facing notation are currently compressed into a small set of types. The broad function fallback can represent very different things, while the display code groups some of the same marks differently.",
-      "The next schema should separate semantic meaning from visual styling."
+      "3 · Reuse the same visual vocabulary",
+      "When the same marks appear in many different sentences, the learner can start recognising recurring relationships rather than memorising one example. The sentence changes; the functional signal stays stable.",
+      "A tag should become a small reusable cue, not extra terminology to memorise."
     ],
     [
-      "Legacy migration is useful but deliberately lossy",
-      "The converter normally attaches a visual mark to the next meaningful token. That works for many simple subject and verb tags, but case, inversion and phrase-level signals can have a wider scope. Some legacy marks such as H, st and st* also need clearer semantic mapping.",
-      "Preserve the original label and add explicit migration tests for difficult constructions."
+      "4 · Compare examples and extract a pattern",
+      "Several annotated examples reveal what changes and what stays constant. A learner can move from one sentence to a reusable frame such as subject + modal + verb, or from a German sentence to a visible case or word-order relation.",
+      "Annotation is useful when it helps the learner generalise beyond the original sentence."
     ],
     [
-      "A better model is layered",
-      "Schema 2.0 should keep compact surface labels while storing independent layers underneath: syntax, morphology, construction, pedagogy and provenance. The same word may be a subject, feminine and part of a reusable pattern without forcing those facts into one label.",
-      "Rich data underneath does not require a visually busy learner interface."
-    ],
-    [
-      "Ten rules define the annotation contract",
-      "Text is the source of truth; annotate the smallest useful span; never hide meaning only in colour; separate Metkagram marks from NLP labels; preserve legacy labels; allow layered annotation; record uncertainty; derive visuals from semantics; mark reusable structure, not bold text; and test every rule on unseen sentences.",
-      "These rules turn visual notation into a reproducible annotation protocol."
-    ],
-    [
-      "The method now creates testable research questions",
-      "The next experiments should measure annotation agreement, legacy-signal preservation, layered annotation quality, minimal learner views and human versus rule/model annotation. A strong notation system should be able to discover where its own rules fail.",
-      "Start with small reviewed samples before expanding or auto-labelling the corpus."
+      "5 · Remove the cue and ask for production",
+      "The annotation should eventually disappear. The learner then has to recognise or produce the structure without the visual support. If performance collapses when the tags are removed, the learner may have learned the cue rather than the language pattern.",
+      "The desired outcome is transfer from annotated input to unannotated language."
     ]
   ];
 
-  return `<section id="annotation-system-audit" class="research-questions section-pad ruled" data-annotation-analysis="v1"><div><p class="eyebrow">Annotation system audit</p><h2>From visual grammar marks to a research annotation protocol</h2><p>Metkagram already has more than a visual tag style. Its old cards contain a domain-specific notation, and the current code is converting that notation into machine-readable spans. This audit asks what should stay, what is ambiguous, and how the method can become a stronger research asset without making the learner view heavier.</p><p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/ANNOTATION_SYSTEM_ANALYSIS.md"><strong>Read the full technical analysis →</strong></a></p></div><ol>${findings.map(([title, text, action], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${text}</p><small><b>Direction:</b> ${action}</small></div></li>`).join("")}</ol></section>`;
+  const evaluation = [
+    ["A · Plain sentence", "The same sentence without Metkagram marks."],
+    ["B · Inline annotation", "Minimal Metkagram marks placed beside the exact target spans."],
+    ["C · Separate explanation", "The sentence plus the same grammar information shown away from the sentence."]
+  ];
+
+  const measures = [
+    "Structure detection: can the learner identify the target role or relation?",
+    "Meaning comprehension: does annotation help without making the sentence harder to understand?",
+    "Transfer: can the learner use the same structure in a new, unannotated sentence?",
+    "Delayed recall: is the effect still visible after a delay rather than only immediately after exposure?",
+    "Response time: after accuracy is established, does the structure become easier to access?"
+  ];
+
+  const example = `<figure class="rules-sample"><figcaption>Inline cue, not a separate grammar screen</figcaption><p><span><b class="grammar-tag subject">S</b>I</span> <span><b class="grammar-tag helper">M</b>can</span> <span><b class="grammar-tag verb">v2</b>see</span> the pattern more clearly.</p><p><small>The exact visual form can change. The research question is whether placing a small functional cue beside its target helps the learner notice, generalise and later retrieve the structure.</small></p></figure>`;
+
+  return `<section id="annotation-system-audit" class="research-questions section-pad ruled" data-annotation-analysis="v2"><div><p class="eyebrow">Inline annotation hypothesis</p><h2>What happens when the learner sees the structure inside the sentence?</h2><p>Metkagram's central idea is not to show more grammar. It is to shorten the distance between a grammatical function and the exact words that realise it. The learner reads the sentence and sees a small structural cue at the same location. We treat the learning benefit as a hypothesis to test, not as a proven effect of the interface.</p>${example}<p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/ANNOTATION_SYSTEM_ANALYSIS.md"><strong>Read the technical annotation analysis →</strong></a></p></div><ol>${mechanism.map(([title, text, direction], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${text}</p><small><b>Why it matters:</b> ${direction}</small></div></li>`).join("")}</ol><div class="research-protocol"><p class="eyebrow">Evaluation design</p><h2>How we can test whether inline annotation actually helps</h2><p>A useful first study does not compare Metkagram with "learning nothing". It compares the same information in different locations.</p><div>${evaluation.map(([title, text]) => `<article><h3>${title}</h3><p>${text}</p></article>`).join("")}</div><h3>Measure more than immediate accuracy</h3><ul>${measures.map((item) => `<li>${item}</li>`).join("")}</ul><p><strong>Success criterion:</strong> inline annotation is interesting only if it improves noticing or learning while preserving sentence comprehension, and if at least part of the advantage transfers to new sentences after the cue is removed.</p></div></section>`;
 }
 
 if (!fs.existsSync(researchFile)) throw new Error(`Research page was not generated: ${researchFile}`);
 
 let html = fs.readFileSync(researchFile, "utf8");
-if (html.includes('data-annotation-analysis="v1"')) {
-  console.log("Annotation system audit already published in Research.");
+if (html.includes('data-annotation-analysis="v2"')) {
+  console.log("Inline annotation research section already published.");
   process.exit(0);
 }
 
@@ -66,4 +72,4 @@ const marker = html.includes(preferredMarker) ? preferredMarker : fallbackMarker
 html = insertBefore(html, marker, annotationAuditSection());
 
 fs.writeFileSync(researchFile, html);
-console.log("Published annotation system audit in /en/research/.");
+console.log("Published inline annotation mechanism and evaluation design in /en/research/.");
