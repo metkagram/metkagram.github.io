@@ -29,15 +29,23 @@ Each drill contains:
 
 A drill is rejected by the build if its options do not match the referenced contrast, if the answer is outside those options, or if a referenced pattern does not exist in the published curriculum.
 
-## Pilot scope
+## Current reviewed coverage
 
-The first release contains six drills, two for each reviewed contrast:
+The current pilot contains **18 drills across 9 reviewed contrasts**, with two-sided coverage for every contrast. Each pair contains at least one scenario where the first pattern is the best fit and one where the second pattern is the best fit.
 
-1. necessary but not sufficient vs one factor alone is not enough;
-2. missing prerequisite vs only-if rule boundary;
-3. competing goals vs benefit/downside of one option.
+Coverage currently includes:
 
-The situations are deliberately close to existing reviewed reasoning-frame semantics. They are not presented as empirical claims about the most common learner mistakes.
+- necessary vs merely insufficient evidence;
+- prerequisite vs only-if boundary;
+- trade-off vs option evaluation;
+- suggestive evidence vs explicit alternative explanations;
+- leading vs merely possible hypotheses;
+- two forms of hypothesis testing;
+- causal chains vs multiple causes;
+- strong vs relative reframing;
+- diagnostic tests vs revision criteria.
+
+The situations stay close to existing reviewed reasoning-frame semantics. They are not presented as empirical claims about the most common learner mistakes.
 
 ## Product surfaces
 
@@ -61,7 +69,8 @@ Add a drill only when all of the following are true:
 3. the situation clearly activates the distinction already documented by the contrast;
 4. the expected choice does not depend on hidden context;
 5. the explanation states the limit of the rejected option instead of calling it universally wrong;
-6. the drill can be solved from meaning or discourse function, not from superficial keyword matching.
+6. the drill can be solved from meaning or discourse function, not from superficial keyword matching;
+7. the contrast receives two-sided coverage so one option is not silently treated as the default answer.
 
 ## What this is not
 
@@ -79,10 +88,10 @@ Its narrower role is to make reviewed distinctions retrievable through deliberat
 
 High-value extensions are:
 
-- more reviewed contrast pairs with two-sided drills;
 - register and politeness choices;
 - direct vs hedged claims;
-- cause vs evidence framing;
+- decision alternatives vs completed decisions;
+- direct vs dimension-specific comparison;
 - English/German matched-function choices;
 - optional local progress over stable drill IDs;
 - AI-tutor retrieval where a detected ambiguity returns the relevant contrast and drill rather than an invented explanation.
