@@ -123,6 +123,22 @@ jobs:
             add_url "$BASE/api/v1/grammar-contrasts.json"
           fi
 
+          if grep -Eq '^(data/russian-speaker-errors\.json|data/reasoning-frames/russian-transfer-extension-v2\.json|scripts/russian-transfer-guide\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+            add_url "$BASE/en/mistakes/russian-speakers/"
+            add_url "$BASE/ru/mistakes/russian-speakers/"
+            if [[ -f data/russian-speaker-errors.json ]]; then
+              while IFS= read -r slug; do
+                [[ -z "$slug" ]] && continue
+                add_url "$BASE/en/mistakes/russian-speakers/$slug/"
+                add_url "$BASE/ru/mistakes/russian-speakers/$slug/"
+              done < <(jq -r '.items[].slug' data/russian-speaker-errors.json)
+            fi
+            add_url "$BASE/data/russian-speaker-errors.json"
+            add_url "$BASE/api/v1/russian-speaker-errors.json"
+            add_url "$BASE/en/practice/set/rtr/"
+            add_url "$BASE/ru/practice/set/rtr/"
+          fi
+
           if grep -Eq '^(data/partnership-opportunities\.json|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then
             add_url "$BASE/en/support/"
             add_url "$BASE/ru/support/"
