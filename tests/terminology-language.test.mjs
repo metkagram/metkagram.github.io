@@ -54,14 +54,17 @@ test("public capability matrix exposes actual supported roles", () => {
   assert.equal(matrix.languages.de.roles.interface, false);
 });
 
-test("canonical terminology is published for humans and machines", () => {
+test("canonical terminology and methodology are published for humans and machines", () => {
   const terminology = json("data", "terminology.json");
+  assert.equal(terminology.methodology.name, "Metkagram Mark–Frame Method");
+  assert.deepEqual(terminology.methodology.coreLoop, ["Sentence", "Mark", "Frame", "Move", "Reuse"]);
   assert.deepEqual(terminology.canonicalChain, ["Mark", "Frame", "Move", "Contrast", "Choice", "Route", "Bridge"]);
   assert.ok(terminology.surfaces.some((surface) => surface.canonical === "Pattern Choice" && surface.legacy === "Pattern Choice Clinic"));
   assert.ok(terminology.surfaces.some((surface) => surface.canonical === "Pattern Bridge" && surface.legacy === "Cross-language Transfer"));
 
   for (const locale of ["en", "ru"]) {
     const page = html(locale, "glossary");
+    assert.match(page, /Metkagram Mark–Frame Method/);
     for (const term of terminology.canonicalChain) assert.match(page, new RegExp(term));
     assert.match(page, /Translation ≠ Bridge/);
   }
@@ -71,6 +74,7 @@ test("method pages connect the visual annotation idea to the canonical vocabular
   for (const locale of ["en", "ru"]) {
     const page = html(locale, "method");
     assert.match(page, /data-metkagram-glossary/);
+    assert.match(page, /Metkagram Mark–Frame Method/);
     assert.match(page, /Mark → Frame → Move/);
     assert.match(page, new RegExp(`href="/${locale}/glossary/"`));
   }
