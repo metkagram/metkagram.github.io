@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-pilot",
+  "description": "Short decision drills that ask learners to choose between two reviewed Metkagram patterns before revealing the explanation.",
+  "items": [
+    {
+      "id": "testing-required-not-guaranteed",
+      "contrast_id": "necessary-vs-not-enough",
+      "options": ["CLF041", "CLF042"],
+      "answer_pattern": "CLF041",
+      "scenario_en": "A production release requires testing, but testing by itself does not guarantee readiness. Express both facts in one frame.",
+      "scenario_ru": "Для выхода в продуктив тестирование обязательно, но само по себе оно не гарантирует готовность. Выразите обе мысли одним каркасом.",
+      "explanation_en": "Choose CLF041 because the message contains both necessity and insufficiency: testing is required, yet it cannot guarantee the whole outcome.",
+      "explanation_ru": "Выбирайте CLF041, потому что здесь одновременно утверждаются необходимость и недостаточность: тестирование обязательно, но не гарантирует весь результат.",
+      "why_other_en": "CLF042 would only say that testing alone is not enough. It would not state that testing is genuinely required.",
+      "why_other_ru": "CLF042 сказал бы только, что одного тестирования недостаточно, но не утверждал бы, что оно действительно обязательно.",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "score-alone-not-decision",
+      "contrast_id": "necessary-vs-not-enough",
+      "options": ["CLF041", "CLF042"],
+      "answer_pattern": "CLF042",
+      "scenario_en": "A model has a high score. You want to reject choosing it on that evidence alone, without claiming that a high score is a mandatory condition.",
+      "scenario_ru": "У модели высокий score. Нужно отвергнуть выбор модели только на этом основании, не утверждая, что высокий score является обязательным условием.",
+      "explanation_en": "Choose CLF042 because the job is to block an overconfident conclusion from one factor, not to define a necessary condition.",
+      "explanation_ru": "Выбирайте CLF042: задача — остановить слишком сильный вывод из одного фактора, а не объявить этот фактор необходимым условием.",
+      "why_other_en": "CLF041 would add a stronger claim: that the high score is necessary. The scenario does not justify that claim.",
+      "why_other_ru": "CLF041 добавил бы более сильное утверждение: высокий score необходим. В условии для этого нет оснований.",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "missing-identifier-blocks-correlation",
+      "contrast_id": "without-vs-only-if",
+      "options": ["CLF043", "CLF044"],
+      "answer_pattern": "CLF043",
+      "scenario_en": "Reliable correlation becomes impossible when a stable identifier is missing. Emphasize the missing prerequisite.",
+      "scenario_ru": "Надёжная корреляция невозможна, если нет стабильного идентификатора. Сделайте акцент на отсутствующем необходимом условии.",
+      "explanation_en": "Choose CLF043 because the sentence is framed from the missing-condition side: remove X and the outcome becomes impossible.",
+      "explanation_ru": "Выбирайте CLF043, потому что мысль строится от отсутствующего условия: без X результат становится невозможным.",
+      "why_other_en": "CLF044 expresses the same necessity from a rule-boundary perspective, but that is not the discourse focus requested here.",
+      "why_other_ru": "CLF044 тоже выражает необходимость, но через границу правила. Здесь нужен именно фокус на отсутствующем условии.",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "auto-approval-rule-boundary",
+      "contrast_id": "without-vs-only-if",
+      "options": ["CLF043", "CLF044"],
+      "answer_pattern": "CLF044",
+      "scenario_en": "Automatic approval is allowed only in cases where both sources agree. State the boundary of the rule.",
+      "scenario_ru": "Автоматическое одобрение разрешено только в случаях, когда оба источника согласуются. Задайте границу правила.",
+      "explanation_en": "Choose CLF044 because the goal is to define the set of cases in which the action is allowed: only if X can Y.",
+      "explanation_ru": "Выбирайте CLF044: нужно определить множество случаев, в которых действие допустимо, то есть задать границу «только если X».",
+      "why_other_en": "CLF043 would emphasize what becomes impossible without the condition. That is valid logic, but a different framing.",
+      "why_other_ru": "CLF043 сделал бы акцент на том, что без условия действие невозможно. Логика близкая, но фокус высказывания другой.",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "speed-vs-auditability",
+      "contrast_id": "tradeoff-vs-pros-cons",
+      "options": ["CLF046", "CLF047"],
+      "answer_pattern": "CLF046",
+      "scenario_en": "Speed and auditability are both desirable, but pushing one further can make the other harder to preserve. Frame the tension between the two goals.",
+      "scenario_ru": "Скорость и проверяемость обе важны, но усиление одного критерия может усложнять сохранение другого. Покажите напряжение между двумя целями.",
+      "explanation_en": "Choose CLF046 because two desirable dimensions compete. The object of the sentence is the relationship between the goals, not one option.",
+      "explanation_ru": "Выбирайте CLF046, потому что конкурируют два желательных критерия. В центре высказывания их взаимосвязь, а не один вариант решения.",
+      "why_other_en": "CLF047 evaluates one option by naming its benefit and downside. No single option is being evaluated here.",
+      "why_other_ru": "CLF047 оценивает один вариант через преимущество и недостаток. Здесь один конкретный вариант не рассматривается.",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "manual-review-pros-cons",
+      "contrast_id": "tradeoff-vs-pros-cons",
+      "options": ["CLF046", "CLF047"],
+      "answer_pattern": "CLF047",
+      "scenario_en": "You are evaluating manual review. Its main benefit is control, while its main downside is poor scalability. Present the option from both sides.",
+      "scenario_ru": "Вы оцениваете ручную проверку. Главное преимущество — контроль, главный недостаток — плохая масштабируемость. Покажите один вариант с двух сторон.",
+      "explanation_en": "Choose CLF047 because the sentence evaluates one concrete option by pairing its strongest benefit with its main downside.",
+      "explanation_ru": "Выбирайте CLF047, потому что здесь оценивается один конкретный вариант через главное преимущество и главный недостаток.",
+      "why_other_en": "CLF046 would frame two competing dimensions as a general trade-off instead of evaluating manual review itself.",
+      "why_other_ru": "CLF046 представил бы два конкурирующих критерия как общий компромисс, а не оценил бы сам вариант ручной проверки.",
+      "review_status": "reviewed"
+    }
+  ]
+}
