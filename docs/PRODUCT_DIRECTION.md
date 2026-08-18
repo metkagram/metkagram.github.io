@@ -62,7 +62,7 @@ A reviewed contrast contains exactly two canonical pattern IDs plus a learner-fa
 
 A contrast belongs in the public library only when the difference changes meaning, logical strength, framing, register, scope or syntax in a way a learner can act on. Search demand may help prioritise a comparison but does not justify inventing one.
 
-The first pilot includes comparisons around necessary versus insufficient conditions, prerequisite framing and decision trade-offs.
+The current reviewed graph contains **9 contrast pairs** spanning logical strength, prerequisite framing, decision framing, evidence interpretation, epistemic strength, hypothesis testing, causal structure, reframing strength and revision criteria.
 
 Status: reviewed pilot with localized pages, data/API output and visible links from Practice and Pattern Atlas. See `CONTRAST_LIBRARY.md`.
 
@@ -79,7 +79,7 @@ A drill presents a situation and two canonical patterns from one reviewed contra
 
 The rejected option is not labelled universally wrong. The explanation is bounded to the scenario and to the already reviewed distinction. This keeps the clinic useful without pretending to be a complete grammar-correction engine.
 
-The first pilot contains six reviewed drills, two for each current contrast.
+The current pilot contains **18 reviewed drills across 9 contrasts**, with exactly two drills per contrast and both source patterns serving once as the best-fit answer. This two-sided rule prevents one pattern from silently becoming the default choice.
 
 Status: reviewed pilot with localized clinic pages, embedded contrast drills and machine-readable API/MCP output. See `CHOICE_CLINIC.md`.
 
@@ -192,6 +192,7 @@ Measure whether the method produces useful behaviour:
 - Atlas topic → canonical pattern navigation;
 - contrast page → Choice Clinic / canonical pattern navigation;
 - Choice Clinic reveal → canonical pattern/practice navigation;
+- two-sided contrast coverage and editorial quality;
 - completion of short retrieval attempts;
 - return to stable pattern IDs when they become due;
 - study-set coverage and editorial quality across the full Practice library;

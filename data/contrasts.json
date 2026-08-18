@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "pilot",
+  "status": "reviewed-pilot",
   "description": "Reviewed comparisons between nearby Metkagram reasoning patterns. A contrast explains when two superficially similar structures are not interchangeable.",
   "items": [
     {
@@ -37,6 +37,78 @@
       "distinction_en": "Use CLF046 when improving one desirable dimension tends to cost another desirable dimension. Use CLF047 when the object of discussion is one option and you want to pair its main benefit with its main downside.",
       "distinction_ru": "CLF046 нужен, когда улучшение одного желательного критерия обычно имеет цену по другому критерию. CLF047 подходит, когда обсуждается один вариант и нужно рядом показать его главное преимущество и главный недостаток.",
       "relation": "decision-framing",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "suggests-vs-alternative-explanation",
+      "patterns": ["CLF051", "CLF052"],
+      "title_en": "X suggests Y vs X fits Y but could also mean Z",
+      "title_ru": "X указывает на Y vs X согласуется с Y, но может означать Z",
+      "question_en": "Do you only need to calibrate how strongly X supports Y, or do you need to name a specific alternative explanation for the same evidence?",
+      "question_ru": "Нужно только показать, насколько X поддерживает Y, или важно назвать конкретное альтернативное объяснение тех же данных?",
+      "distinction_en": "Use CLF051 when X supports Y but does not prove it; alternative explanations can remain implicit. Use CLF052 when the same observation fits Y but you need to keep a specific competing explanation Z visible.",
+      "distinction_ru": "CLF051 подходит, когда X поддерживает Y, но не доказывает его; альтернативы можно оставить неявными. CLF052 нужен, когда то же наблюдение согласуется с Y, но важно явно сохранить конкретное конкурирующее объяснение Z.",
+      "relation": "evidence-interpretation",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "most-likely-vs-cannot-rule-out",
+      "patterns": ["CLF053", "CLF055"],
+      "title_en": "Most likely explanation vs We cannot rule out X",
+      "title_ru": "Наиболее вероятное объяснение vs нельзя исключать X",
+      "question_en": "Are you ranking X as the leading explanation, or merely saying that current evidence has not eliminated it?",
+      "question_ru": "Вы считаете X ведущим объяснением или лишь говорите, что текущие данные пока его не исключили?",
+      "distinction_en": "Use CLF053 when evidence makes X the best current explanation after considering alternatives. Use CLF055 when X only remains possible: 'cannot rule out' does not mean likely and does not rank X above other hypotheses.",
+      "distinction_ru": "CLF053 нужен, когда после сравнения альтернатив X является лучшим текущим объяснением. CLF055 лишь сохраняет X среди возможных: «нельзя исключить» не означает «вероятно» и не ставит X выше других гипотез.",
+      "relation": "epistemic-strength",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "expected-observation-vs-required-condition",
+      "patterns": ["CLF056", "CLF057"],
+      "title_en": "If X were true, expect Y vs For X to be true, Y must hold",
+      "title_ru": "Если X верно, ожидаем Y vs чтобы X было верно, должно быть Y",
+      "question_en": "Are you deriving a testable prediction from X, or stating a condition that must hold for X to remain viable?",
+      "question_ru": "Вы выводите из X проверяемое предсказание или называете условие, без которого X не может оставаться жизнеспособной гипотезой?",
+      "distinction_en": "Use CLF056 to derive an observation you would expect if X were true. Use CLF057 to state a necessary implication: Y would need to hold for X to be true. An expected signal can support diagnosis; a required condition can weaken X when it fails.",
+      "distinction_ru": "CLF056 выводит наблюдение, которое мы ожидаем при истинности X. CLF057 задаёт необходимое следствие: чтобы X было верно, Y должно выполняться. Ожидаемый признак помогает диагностике, а отсутствие необходимого условия ослабляет X.",
+      "relation": "hypothesis-testing",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "causal-chain-vs-multiple-causes",
+      "patterns": ["CLF059", "CLF060"],
+      "title_en": "X leads to Y leads to Z vs X results from Y and Z",
+      "title_ru": "X ведёт к Y, затем к Z vs X возникает из сочетания Y и Z",
+      "question_en": "Are you explaining a sequence of effects, or a result produced jointly by multiple causes?",
+      "question_ru": "Вы объясняете последовательность эффектов или результат, который совместно создают несколько причин?",
+      "distinction_en": "Use CLF059 for a causal chain where Y is an intermediate mechanism between X and Z. Use CLF060 when Y and Z are parallel contributing factors that jointly produce X; neither is merely an intermediate step in the other.",
+      "distinction_ru": "CLF059 нужен для причинной цепочки, где Y является промежуточным механизмом между X и Z. CLF060 подходит, когда Y и Z — параллельные факторы, которые вместе создают X, а не последовательные звенья одной цепи.",
+      "relation": "causal-structure",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "corrective-vs-relative-reframe",
+      "patterns": ["CLF061", "CLF062"],
+      "title_en": "It's not X; it's Y vs Not so much X as Y",
+      "title_ru": "Не X, а Y vs не столько X, сколько Y",
+      "question_en": "Are you replacing an inaccurate interpretation, or only shifting the main emphasis while allowing X to remain partly true?",
+      "question_ru": "Вы заменяете неверную интерпретацию или только смещаете главный акцент, признавая, что X частично верно?",
+      "distinction_en": "Use CLF061 when X is the wrong frame and Y should replace it. Use CLF062 when X still contains some truth but Y is the more important explanation or description. The second frame is deliberately less absolute.",
+      "distinction_ru": "CLF061 нужен, когда X — неверная рамка и её следует заменить на Y. CLF062 подходит, когда в X есть часть правды, но Y лучше передаёт главный акцент. Второй каркас намеренно менее категоричен.",
+      "relation": "reframing-strength",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "diagnostic-test-vs-revision-threshold",
+      "patterns": ["CLF067", "CLF070"],
+      "title_en": "A useful test would be whether X vs I would revise Y if Z",
+      "title_ru": "Полезная проверка — выяснить X vs я пересмотрю Y, если Z",
+      "question_en": "Are you proposing a diagnostic observation to reduce uncertainty, or stating the evidence threshold that would actually change your current conclusion?",
+      "question_ru": "Вы предлагаете диагностическую проверку для снижения неопределённости или называете данные, которые действительно заставят пересмотреть текущий вывод?",
+      "distinction_en": "Use CLF067 to propose a discriminating check when competing explanations need evidence. Use CLF070 when you already hold a provisional conclusion and want to make explicit what observation would change it. A useful test need not overturn your view; a revision criterion is specifically tied to changing it.",
+      "distinction_ru": "CLF067 предлагает различающую проверку, когда конкурирующим объяснениям нужны данные. CLF070 нужен, когда уже есть предварительный вывод и важно заранее назвать наблюдение, которое его изменит. Полезный тест не обязан менять позицию, а критерий пересмотра связан именно с её изменением.",
+      "relation": "testing-decision",
       "review_status": "reviewed"
     }
   ]
