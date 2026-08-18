@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-pilot",
+  "audience": "Russian-speaking learners of English",
+  "level": "B1–C1",
+  "description_en": "A reviewed map of recurring Russian-to-English transfer errors linked to reusable Metkagram practice patterns.",
+  "description_ru": "Проверяемая карта типичных переносов из русского в английский, связанная с практическими паттернами Metkagram.",
+  "research": [
+    {
+      "title": "Definite and indefinite article accuracy in learner English: A multifactorial analysis",
+      "publisher": "Cambridge University Press",
+      "year": 2023,
+      "url": "https://www.cambridge.org/core/journals/studies-in-second-language-acquisition/article/definite-and-indefinite-article-accuracy-in-learner-english-a-multifactorial-analysis/FF80FBB18B93015F568E374921498E9E"
+    },
+    {
+      "title": "Sources of linguistic knowledge in the second language acquisition of English articles",
+      "publisher": "Lingua",
+      "year": 2008,
+      "url": "https://doi.org/10.1016/j.lingua.2006.11.012"
+    },
+    {
+      "title": "The acquisition of the copula be in present simple tense in English by native speakers of Russian",
+      "publisher": "System",
+      "year": 2012,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0346251X12000322"
+    },
+    {
+      "title": "Error Analysis of Written Production: The Case of 6th Grade Students of Kazakhstani School",
+      "publisher": "Procedia - Social and Behavioral Sciences",
+      "year": 2016,
+      "url": "https://doi.org/10.1016/j.sbspro.2016.10.022"
+    }
+  ],
+  "items": [
+    {
+      "id": "discuss-not-discuss-about",
+      "slug": "discuss-not-discuss-about",
+      "pattern_id": "XPRRTR001",
+      "title_en": "Discuss, not discuss about",
+      "title_ru": "Discuss без about",
+      "search_title_en": "Discuss or discuss about? Common English mistake for Russian speakers",
+      "search_title_ru": "Discuss или discuss about: типичная ошибка русскоязычных",
+      "wrong_en": "We discussed about the issue.",
+      "correct_en": "We discussed the issue.",
+      "why_en": "Russian управление can encourage an extra preposition. In English, discuss normally takes its object directly.",
+      "why_ru": "Русское управление подталкивает добавить предлог. В английском discuss обычно принимает дополнение напрямую.",
+      "memory_en": "Store discuss + object as one frame.",
+      "memory_ru": "Запоминайте discuss + object как единую конструкцию."
+    },
+    {
+      "id": "explain-to-me",
+      "slug": "explain-me-vs-explain-to-me",
+      "pattern_id": "XPRRTR002",
+      "title_en": "Explain me vs explain it to me",
+      "title_ru": "Explain me vs explain it to me",
+      "search_title_en": "Explain me or explain it to me? English grammar for Russian speakers",
+      "search_title_ru": "Explain me или explain it to me: как правильно",
+      "wrong_en": "Can you explain me this rule?",
+      "correct_en": "Can you explain this rule to me?",
+      "why_en": "English explain does not use the same double-object pattern as tell. Put the thing explained first, then to + person.",
+      "why_ru": "Explain не строится как tell. Сначала идёт то, что объясняют, затем to + человек.",
+      "memory_en": "explain something to someone",
+      "memory_ru": "explain something to someone"
+    },
+    {
+      "id": "agree-not-am-agree",
+      "slug": "i-agree-not-i-am-agree",
+      "pattern_id": "XPRRTR003",
+      "title_en": "I agree, not I am agree",
+      "title_ru": "I agree, не I am agree",
+      "search_title_en": "I agree or I am agree? English mistake explained",
+      "search_title_ru": "I agree или I am agree: типичная ошибка",
+      "wrong_en": "I am agree with the proposal.",
+      "correct_en": "I agree with the proposal.",
+      "why_en": "Agree is a verb in English, so it does not need the copula be. Russian adjective-like phrasing can make the extra am feel natural.",
+      "why_ru": "Agree в английском — глагол, поэтому am здесь не нужен. Русская конструкция «я согласен» провоцирует лишнюю связку.",
+      "memory_en": "I agree / I disagree; I am in agreement is a different, more formal structure.",
+      "memory_ru": "I agree / I disagree; I am in agreement — другая, более формальная конструкция."
+    },
+    {
+      "id": "english-articles",
+      "slug": "missing-articles-a-an-the",
+      "pattern_id": "XPRRTR004",
+      "title_en": "Missing a, an, and the",
+      "title_ru": "Пропущенные a, an и the",
+      "search_title_en": "English articles for Russian speakers: stop dropping a, an and the",
+      "search_title_ru": "Артикли в английском для русскоязычных: a, an и the",
+      "wrong_en": "I sent email to manager.",
+      "correct_en": "I sent an email to the manager.",
+      "why_en": "Russian has no article system equivalent to English a/an/the. The learner must encode whether a noun is introduced, identifiable, generic, or otherwise determined.",
+      "why_ru": "В русском нет системы артиклей, эквивалентной a/an/the. В английском приходится явно кодировать, вводится ли объект впервые, известен ли он собеседнику и как определяется.",
+      "memory_en": "Do not translate the noun alone; learn noun phrases with their determiner choice.",
+      "memory_ru": "Учите не отдельное существительное, а noun phrase вместе с выбором определителя."
+    },
+    {
+      "id": "verb-prepositions",
+      "slug": "listen-to-depend-on-prepositions",
+      "pattern_id": "XPRRTR005",
+      "title_en": "Listen to, depend on: learn the preposition with the verb",
+      "title_ru": "Listen to, depend on: предлог как часть глагольной модели",
+      "search_title_en": "Listen to and depend on: preposition mistakes Russian speakers make",
+      "search_title_ru": "Listen to и depend on: ошибки с английскими предлогами",
+      "wrong_en": "The result depends from the input.",
+      "correct_en": "The result depends on the input.",
+      "why_en": "Russian and English package verb complements differently. Translating the Russian preposition or case relation word by word produces unstable English.",
+      "why_ru": "Русский и английский по-разному оформляют дополнения при глаголах. Дословный перенос русского предлога или падежа даёт нестабильную конструкцию.",
+      "memory_en": "Learn listen to, depend on, belong to as lexical frames.",
+      "memory_ru": "Учите listen to, depend on, belong to как готовые каркасы."
+    },
+    {
+      "id": "present-perfect-duration",
+      "slug": "present-perfect-for-since-duration",
+      "pattern_id": "XPRRTR006",
+      "title_en": "Present Perfect for a situation that started in the past",
+      "title_ru": "Present Perfect для действия, начавшегося раньше",
+      "search_title_en": "I am living here for five years: why Russian speakers need Present Perfect",
+      "search_title_ru": "I am living here for five years: почему нужен Present Perfect",
+      "wrong_en": "I am living here for five years.",
+      "correct_en": "I have been living here for five years.",
+      "why_en": "Russian can use a present form for a state or activity continuing from the past. English normally marks the connection to the past with Present Perfect or Present Perfect Continuous.",
+      "why_ru": "В русском длительность до настоящего естественно выражается настоящим временем. В английском связь с прошлым обычно кодируется Present Perfect или Present Perfect Continuous.",
+      "memory_en": "since/for + still true now → check Present Perfect.",
+      "memory_ru": "since/for + всё ещё верно сейчас → проверьте Present Perfect."
+    },
+    {
+      "id": "if-will",
+      "slug": "if-will-first-conditional",
+      "pattern_id": "XPRRTR007",
+      "title_en": "If I see..., not If I will see...",
+      "title_ru": "If I see..., не If I will see...",
+      "search_title_en": "If I will or if I do? First conditional mistake explained",
+      "search_title_ru": "If I will или if I do: ошибка в условных предложениях",
+      "wrong_en": "If we will find the cause, we will fix it.",
+      "correct_en": "If we find the cause, we will fix it.",
+      "why_en": "In the ordinary first conditional, future time in the if-clause is normally expressed with Present Simple. Will stays in the result clause. Special uses of will in if-clauses exist, but they express meanings such as willingness rather than simple futurity.",
+      "why_ru": "В обычном First Conditional будущее значение после if выражается Present Simple, а will остаётся в главной части. Отдельные случаи will после if существуют, но выражают специальные значения, например готовность.",
+      "memory_en": "If + present, will + base verb.",
+      "memory_ru": "If + Present Simple, затем will + глагол."
+    },
+    {
+      "id": "very-like",
+      "slug": "i-very-like-vs-i-really-like",
+      "pattern_id": "XPRRTR008",
+      "title_en": "I really like it, not I very like it",
+      "title_ru": "I really like it, не I very like it",
+      "search_title_en": "I very like or I really like? English word order for Russian speakers",
+      "search_title_ru": "I very like или I really like: правильный порядок слов",
+      "wrong_en": "I very like this approach.",
+      "correct_en": "I really like this approach.",
+      "why_en": "Russian очень can modify a verb directly. English very usually modifies adjectives and adverbs; with ordinary verbs, really or very much is the safer frame.",
+      "why_ru": "Русское «очень» свободно усиливает глагол. Английское very обычно относится к прилагательным и наречиям; с обычным глаголом чаще нужны really или very much.",
+      "memory_en": "really + verb; verb + very much.",
+      "memory_ru": "really + verb; либо verb + very much."
+    },
+    {
+      "id": "feel-myself",
+      "slug": "feel-myself-vs-feel",
+      "pattern_id": "XPRRTR009",
+      "title_en": "Feel good, not feel myself good",
+      "title_ru": "Feel good, не feel myself good",
+      "search_title_en": "Feel myself or feel? Russian-to-English reflexive mistake",
+      "search_title_ru": "Feel myself или feel: перенос русской возвратной конструкции",
+      "wrong_en": "I feel myself tired today.",
+      "correct_en": "I feel tired today.",
+      "why_en": "Russian uses a reflexive form in чувствовать себя. Ordinary English feel + adjective does not copy that reflexive pronoun. German is a useful contrast because sich fühlen does require it.",
+      "why_ru": "Русское «чувствовать себя» содержит возвратную форму. Обычное английское feel + adjective не копирует это местоимение. Для сравнения, в немецком sich fühlen возвратность действительно нужна.",
+      "memory_en": "English: feel + adjective. German: sich fühlen + adjective.",
+      "memory_ru": "English: feel + adjective. German: sich fühlen + adjective."
+    }
+  ]
+}
