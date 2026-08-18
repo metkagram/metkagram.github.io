@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "pilot",
+  "description": "Reviewed comparisons between nearby Metkagram reasoning patterns. A contrast explains when two superficially similar structures are not interchangeable.",
+  "items": [
+    {
+      "id": "necessary-vs-not-enough",
+      "patterns": ["CLF041", "CLF042"],
+      "title_en": "Necessary but not sufficient vs X alone is not enough",
+      "title_ru": "Необходимо, но недостаточно vs одного X недостаточно",
+      "question_en": "Do you need to say that X is required, or only that X cannot justify the conclusion by itself?",
+      "question_ru": "Нужно сказать, что X обязательно, или только что одного X недостаточно для вывода?",
+      "distinction_en": "Use CLF041 when X is genuinely required for Y but cannot guarantee Y. Use CLF042 when you only need to reject an overconfident conclusion based on X; it does not claim that X is necessary.",
+      "distinction_ru": "CLF041 подходит, когда X действительно необходим для Y, но сам по себе не гарантирует Y. CLF042 нужен, когда важно лишь отвергнуть слишком сильный вывод из одного X; обязательность X при этом не утверждается.",
+      "relation": "logical-strength",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "without-vs-only-if",
+      "patterns": ["CLF043", "CLF044"],
+      "title_en": "Without X, Y cannot… vs Only if X can Y…",
+      "title_ru": "Без X Y невозможно vs только если X, возможно Y",
+      "question_en": "Are you describing a missing prerequisite, or defining the boundary of the cases where Y is allowed?",
+      "question_ru": "Вы описываете отсутствующее необходимое условие или задаёте границу случаев, в которых Y возможно?",
+      "distinction_en": "CLF043 presents the dependency from the negative side: remove X and Y becomes impossible. CLF044 presents the rule boundary from the positive side: Y is possible only inside cases where X holds. Both express necessity, but their discourse focus is different.",
+      "distinction_ru": "CLF043 показывает зависимость через отсутствие условия: без X Y невозможно. CLF044 задаёт положительную границу правила: Y возможно только в случаях, где выполняется X. Оба каркаса выражают необходимость, но фокус высказывания различается.",
+      "relation": "framing",
+      "review_status": "reviewed"
+    },
+    {
+      "id": "tradeoff-vs-pros-cons",
+      "patterns": ["CLF046", "CLF047"],
+      "title_en": "Trade-off between X and Y vs advantage and downside",
+      "title_ru": "Компромисс между X и Y vs преимущество и недостаток",
+      "question_en": "Are two goals competing, or are you evaluating one option from both sides?",
+      "question_ru": "Конкурируют два критерия или вы оцениваете один вариант с двух сторон?",
+      "distinction_en": "Use CLF046 when improving one desirable dimension tends to cost another desirable dimension. Use CLF047 when the object of discussion is one option and you want to pair its main benefit with its main downside.",
+      "distinction_ru": "CLF046 нужен, когда улучшение одного желательного критерия обычно имеет цену по другому критерию. CLF047 подходит, когда обсуждается один вариант и нужно рядом показать его главное преимущество и главный недостаток.",
+      "relation": "decision-framing",
+      "review_status": "reviewed"
+    }
+  ]
+}
