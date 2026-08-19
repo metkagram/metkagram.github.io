@@ -1,0 +1,262 @@
+[
+  {
+    "pattern_id": "CLF041",
+    "lang": "fr",
+    "formula": "[X] est nécessaire, mais pas suffisant pour [Y].",
+    "example": "Des données sources propres sont nécessaires, mais pas suffisantes pour une automatisation fiable.",
+    "translations": { "ru": "Чистые исходные данные необходимы, но недостаточны для надёжной автоматизации." },
+    "examples": [
+      { "text": "Un identifiant unique est nécessaire, mais pas suffisant pour une corrélation correcte.", "translations": { "ru": "Уникальный идентификатор необходим, но недостаточен для правильной корреляции." } },
+      { "text": "Les tests sont nécessaires, mais pas suffisants pour garantir la préparation à la production.", "translations": { "ru": "Тестирование необходимо, но недостаточно для готовности к продуктиву." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF042",
+    "lang": "fr",
+    "formula": "[X] seul ne suffit pas à [V].",
+    "example": "Un test réussi seul ne suffit pas à prouver que le processus est robuste.",
+    "translations": { "ru": "Одного успешного теста недостаточно, чтобы доказать устойчивость процесса." },
+    "examples": [
+      { "text": "Un score élevé seul ne suffit pas à choisir le modèle.", "translations": { "ru": "Одной высокой оценки недостаточно для выбора модели." } },
+      { "text": "Un coût plus faible seul ne suffit pas à justifier le changement.", "translations": { "ru": "Одной более низкой стоимости недостаточно, чтобы оправдать изменение." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF043",
+    "lang": "fr",
+    "formula": "Sans [X], [Y] ne peut pas [V].",
+    "example": "Sans identifiant stable, le pipeline ne peut pas corréler les enregistrements de manière fiable.",
+    "translations": { "ru": "Без стабильного идентификатора пайплайн не может надёжно сопоставлять записи." },
+    "examples": [
+      { "text": "Sans SLA convenu, nous ne pouvons pas détecter les cas en retard de manière cohérente.", "translations": { "ru": "Без согласованного SLA нельзя последовательно определять просроченные случаи." } },
+      { "text": "Sans horodatage de la source, nous ne pouvons pas reconstruire la séquence avec confiance.", "translations": { "ru": "Без временных меток источника нельзя уверенно восстановить последовательность." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF045",
+    "lang": "fr",
+    "formula": "Avant de pouvoir [X], nous devons [Y].",
+    "example": "Avant de pouvoir automatiser le contrôle, nous devons définir la règle.",
+    "translations": { "ru": "Прежде чем автоматизировать проверку, нужно определить правило." },
+    "examples": [
+      { "text": "Avant de pouvoir comparer les systèmes, nous devons aligner les identifiants.", "translations": { "ru": "Прежде чем сравнивать системы, нужно согласовать идентификаторы." } },
+      { "text": "Avant de pouvoir optimiser les performances, nous devons mesurer le goulot d’étranglement.", "translations": { "ru": "Прежде чем оптимизировать производительность, нужно измерить узкое место." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF046",
+    "lang": "fr",
+    "formula": "Il y a un compromis entre [X] et [Y].",
+    "example": "Il y a un compromis entre l’automatisation et le contrôle manuel.",
+    "translations": { "ru": "Есть компромисс между автоматизацией и ручным контролем." },
+    "examples": [
+      { "text": "Il y a un compromis entre la vitesse et la traçabilité.", "translations": { "ru": "Есть компромисс между скоростью и проверяемостью." } },
+      { "text": "Il y a un compromis entre la flexibilité et la prévisibilité.", "translations": { "ru": "Есть компромисс между гибкостью и предсказуемостью." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF047",
+    "lang": "fr",
+    "formula": "L’avantage de [X], c’est [Y] ; l’inconvénient, c’est [Z].",
+    "example": "L’avantage d’une architecture plus simple, c’est une maintenance réduite ; l’inconvénient, c’est une flexibilité moindre.",
+    "translations": { "ru": "Преимущество более простой архитектуры — меньшие затраты на поддержку; недостаток — меньшая гибкость." },
+    "examples": [
+      { "text": "L’avantage d’une revue manuelle, c’est le contrôle ; l’inconvénient, c’est une faible capacité de passage à l’échelle.", "translations": { "ru": "Преимущество ручной проверки — контроль; недостаток — плохая масштабируемость." } },
+      { "text": "L’avantage d’un service partagé, c’est la réutilisation ; l’inconvénient, c’est une dépendance supplémentaire.", "translations": { "ru": "Преимущество общего сервиса — переиспользование; недостаток — ещё одна зависимость." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF049",
+    "lang": "fr",
+    "formula": "Le choix se résume à [X] ou [Y].",
+    "example": "Le choix se résume à conserver le contrôle manuel ou à accepter davantage de risque lié à l’automatisation.",
+    "translations": { "ru": "Выбор сводится к сохранению ручного контроля или принятию большего риска автоматизации." },
+    "examples": [
+      { "text": "Le choix se résume à corriger l’interface ou à modifier la règle source.", "translations": { "ru": "Выбор сводится к исправлению интерфейса или изменению исходного правила." } },
+      { "text": "Le choix se résume à reporter la mise en production ou à réduire le périmètre.", "translations": { "ru": "Выбор сводится к переносу релиза или сокращению объёма." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF050",
+    "lang": "fr",
+    "formula": "La question n’est pas de savoir si [X], mais comment [Y].",
+    "example": "La question n’est pas de savoir si nous devons valider les données, mais comment le faire à faible coût.",
+    "translations": { "ru": "Вопрос не в том, нужно ли проверять данные, а в том, как сделать это недорого." },
+    "examples": [
+      { "text": "La question n’est pas de savoir s’il faut surveiller le processus, mais à quel moment détecter un retard.", "translations": { "ru": "Вопрос не в том, нужно ли мониторить процесс, а в том, насколько рано можно обнаружить задержку." } },
+      { "text": "La question n’est pas de savoir s’il faut automatiser, mais comment garder la règle visible.", "translations": { "ru": "Вопрос не в том, автоматизировать ли, а в том, как сохранить правило видимым." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF051",
+    "lang": "fr",
+    "formula": "[X] suggère que [Y], mais cela ne le prouve pas.",
+    "example": "Le délai répété suggère que la file est surchargée, mais cela ne le prouve pas.",
+    "translations": { "ru": "Повторяющийся таймаут указывает на перегрузку очереди, но не доказывает её." },
+    "examples": [
+      { "text": "Le taux d’erreur plus faible suggère que la nouvelle règle est meilleure, mais cela ne le prouve pas.", "translations": { "ru": "Более низкий уровень ошибок указывает на лучшее правило, но не доказывает это." } },
+      { "text": "La corrélation suggère que les systèmes partagent une cause, mais cela ne le prouve pas.", "translations": { "ru": "Корреляция указывает на общую причину, но не доказывает её." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF053",
+    "lang": "fr",
+    "formula": "L’explication la plus probable est que [X].",
+    "example": "L’explication la plus probable est que le message est arrivé après la fenêtre du SLA.",
+    "translations": { "ru": "Наиболее вероятное объяснение в том, что сообщение пришло после окна SLA." },
+    "examples": [
+      { "text": "L’explication la plus probable est que l’identifiant a changé dans le système source.", "translations": { "ru": "Наиболее вероятное объяснение — идентификатор изменился выше по потоку." } },
+      { "text": "L’explication la plus probable est que l’échantillon contient des cas en double.", "translations": { "ru": "Наиболее вероятное объяснение — в выборке есть дубликаты." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF054",
+    "lang": "fr",
+    "formula": "Une possibilité est que [X] ; une autre est que [Y].",
+    "example": "Une possibilité est que l’événement ait été retardé ; une autre est qu’il n’ait jamais été émis.",
+    "translations": { "ru": "Одна возможность — событие задержалось; другая — оно вообще не было создано." },
+    "examples": [
+      { "text": "Une possibilité est que le mapping soit incorrect ; une autre est que la valeur source ait changé.", "translations": { "ru": "Одна возможность — неверный маппинг; другая — изменилось исходное значение." } },
+      { "text": "Une possibilité est que le modèle ait régressé ; une autre est que la distribution des données ait changé.", "translations": { "ru": "Одна возможность — модель деградировала; другая — изменилось распределение данных." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF055",
+    "lang": "fr",
+    "formula": "Nous ne pouvons pas exclure [X].",
+    "example": "Nous ne pouvons pas exclure un changement du côté de la source.",
+    "translations": { "ru": "Мы не можем исключить изменение на стороне источника." },
+    "examples": [
+      { "text": "Nous ne pouvons pas exclure un problème de synchronisation.", "translations": { "ru": "Мы не можем исключить проблему со временем." } },
+      { "text": "Nous ne pouvons pas exclure une dépendance cachée.", "translations": { "ru": "Мы не можем исключить скрытую зависимость." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF056",
+    "lang": "fr",
+    "formula": "Si [X] était vrai, nous nous attendrions à [Y].",
+    "example": "Si la file était le goulot d’étranglement, nous nous attendrions à des retards sur plusieurs types de messages.",
+    "translations": { "ru": "Если бы очередь была узким местом, мы ожидали бы задержки по нескольким типам сообщений." },
+    "examples": [
+      { "text": "Si le mapping était en cause, nous nous attendrions à voir la même incohérence sur le même champ.", "translations": { "ru": "Если бы причиной был маппинг, мы ожидали бы одно и то же расхождение в одном и том же поле." } },
+      { "text": "Si le volume était en cause, nous nous attendrions à voir le taux d’échec augmenter avec la charge.", "translations": { "ru": "Если бы причиной был объём, мы ожидали бы роста частоты сбоев вместе с нагрузкой." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF057",
+    "lang": "fr",
+    "formula": "Pour que [X] soit vrai, il faudrait que [Y].",
+    "example": "Pour qu’une nouvelle tentative soit la cause, il faudrait que le doublon apparaisse après le premier échec.",
+    "translations": { "ru": "Чтобы причиной был retry, дубликат должен был бы появиться после первого сбоя." },
+    "examples": [
+      { "text": "Pour que le volume soit la cause, il faudrait que le taux d’échec augmente avec la charge.", "translations": { "ru": "Чтобы причиной был объём, частота сбоев должна расти с нагрузкой." } },
+      { "text": "Pour que le correctif soit complet, il faudrait que le cas limite passe lui aussi.", "translations": { "ru": "Чтобы исправление было полным, крайний случай тоже должен проходить." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF058",
+    "lang": "fr",
+    "formula": "Cela explique [X], mais pas [Y].",
+    "example": "La théorie de la nouvelle tentative explique le doublon, mais pas l’absence du premier événement.",
+    "translations": { "ru": "Теория retry объясняет дубликат, но не объясняет отсутствующее первое событие." },
+    "examples": [
+      { "text": "Le problème de mapping explique la mauvaise valeur, mais pas le retard.", "translations": { "ru": "Проблема маппинга объясняет неверное значение, но не задержку." } },
+      { "text": "Le problème d’interface explique les erreurs utilisateur, mais pas les erreurs générées par le système.", "translations": { "ru": "Проблема интерфейса объясняет ошибки пользователей, но не системные ошибки." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF059",
+    "lang": "fr",
+    "formula": "[X] conduit à [Y], qui à son tour conduit à [Z].",
+    "example": "L’absence de responsabilité claire conduit à des décisions plus lentes, qui à leur tour conduisent à une résolution plus longue des incidents.",
+    "translations": { "ru": "Отсутствие ответственности ведёт к более медленным решениям, что в свою очередь удлиняет устранение инцидентов." },
+    "examples": [
+      { "text": "Davantage d’exceptions conduit à davantage de contrôles manuels, ce qui à son tour conduit à des délais de traitement plus longs.", "translations": { "ru": "Больше исключений ведёт к большему объёму ручной проверки, что увеличивает время обработки." } },
+      { "text": "Des identifiants instables conduisent à une corrélation faible, qui à son tour conduit à un monitoring peu fiable.", "translations": { "ru": "Нестабильные идентификаторы ведут к слабой корреляции, а та — к ненадёжному мониторингу." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF061",
+    "lang": "fr",
+    "formula": "Ce n’est pas que [X] ; c’est que [Y].",
+    "example": "Ce n’est pas que l’approche soit mauvaise ; c’est qu’elle ne passe pas à l’échelle au-delà du pilote.",
+    "translations": { "ru": "Дело не в том, что подход неверен; дело в том, что он не масштабируется за пределы пилота." },
+    "examples": [
+      { "text": "Ce n’est pas que nous manquions de données ; c’est que nous ne pouvons pas encore faire confiance à leur provenance.", "translations": { "ru": "Дело не в нехватке данных; дело в том, что мы пока не можем доверять их происхождению." } },
+      { "text": "Ce n’est pas que le modèle soit lent ; c’est que le workflow l’appelle trop souvent.", "translations": { "ru": "Дело не в том, что модель медленная; дело в том, что процесс вызывает её слишком часто." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF062",
+    "lang": "fr",
+    "formula": "Ce n’est pas tant [X] que [Y].",
+    "example": "Le goulot d’étranglement n’est pas tant le calcul que la coordination entre les étapes.",
+    "translations": { "ru": "Узкое место связано не столько с вычислениями, сколько с координацией между этапами." },
+    "examples": [
+      { "text": "Le risque n’est pas tant le coût initial que la charge de maintenance à long terme.", "translations": { "ru": "Риск связан не столько с первоначальной стоимостью, сколько с долгосрочной нагрузкой на поддержку." } },
+      { "text": "Le problème n’est pas tant le manque de fonctionnalités que des valeurs par défaut peu claires.", "translations": { "ru": "Проблема не столько в недостающих функциях, сколько в непонятных настройках по умолчанию." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF063",
+    "lang": "fr",
+    "formula": "[X], tandis que [Y].",
+    "example": "Le pilote privilégie la vitesse, tandis que la conception de production privilégie la capacité de reprise.",
+    "translations": { "ru": "Пилот оптимизирован под скорость, тогда как продуктивный дизайн ставит на первое место восстановление." },
+    "examples": [
+      { "text": "L’ancien processus réagit après une erreur, tandis que le nouveau détecte le risque avant l’échéance.", "translations": { "ru": "Старый процесс реагирует после ошибки, тогда как новый выявляет риск до пропуска срока." } },
+      { "text": "Une option réduit les coûts, tandis que l’autre réduit l’incertitude opérationnelle.", "translations": { "ru": "Один вариант снижает стоимость, тогда как другой снижает операционную неопределённость." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  },
+  {
+    "pattern_id": "CLF064",
+    "lang": "fr",
+    "formula": "Par rapport à [X], [Y] offre [Z].",
+    "example": "Par rapport à un journal libre, un profil d’événements offre des étapes attendues et des échéances explicites.",
+    "translations": { "ru": "По сравнению со свободным логом профиль событий даёт явные ожидаемые шаги и сроки." },
+    "examples": [
+      { "text": "Par rapport à une checklist manuelle, le pipeline offre une validation reproductible.", "translations": { "ru": "По сравнению с ручным чек-листом пайплайн даёт воспроизводимую проверку." } },
+      { "text": "Par rapport à un score unique, la répartition des erreurs offre un diagnostic plus clair.", "translations": { "ru": "По сравнению с одной оценкой разбивка ошибок даёт более ясную диагностику." } }
+    ],
+    "source_status": "editorial_pilot",
+    "review": { "status": "internal_editorial", "reviewed_on": "2026-08-19", "basis": "French Frame authored for the Metkagram pilot and checked for semantic alignment with the canonical pattern and Move. It is not a native-speaker certification or a cross-language Bridge review." }
+  }
+]
