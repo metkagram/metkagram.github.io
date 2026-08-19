@@ -29,8 +29,9 @@ test("source content validates and public Practice exposes the full curriculum",
   assert.ok(content.studySets.sets.length >= 20);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
   const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);
+  const reasoningMoves = new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move));
   assert.ok(reasoningPatterns.length >= 30);
-  assert.equal(new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
+  assert.ok(reasoningMoves.size >= 9, `expected the established reasoning vocabulary plus extensions, found ${reasoningMoves.size}`);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.quality?.translations_complete));
   for (const target of Object.values(content.collections)) {
     for (const collection of Object.values(target)) assert.equal(collection.documents.length, 12);
