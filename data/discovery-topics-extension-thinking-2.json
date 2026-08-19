@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Additive Pattern Atlas routes for the second Thinking in Language curriculum layer.",
+  "topics": [
+    {
+      "id": "causal-diagnosis",
+      "slug": "causal-diagnosis-and-root-cause-reasoning",
+      "level": "B2–C1",
+      "title_en": "Causal diagnosis and root-cause reasoning",
+      "title_ru": "Причинная диагностика и поиск причин",
+      "search_title_en": "English patterns for causal diagnosis and root-cause reasoning",
+      "search_title_ru": "Английские паттерны для причинной диагностики B2–C1",
+      "description_en": "Separate triggers from causes, compare competing mechanisms, and make causal chains explicit without treating timing as proof.",
+      "description_ru": "Отделяйте триггеры от причин, сравнивайте конкурирующие механизмы и делайте причинные цепочки явными, не принимая последовательность за доказательство.",
+      "use_cases_en": ["separate a trigger from an underlying cause", "compare two plausible causal mechanisms", "state whether a factor is necessary or sufficient", "identify what changed before an outcome"],
+      "use_cases_ru": ["отделить триггер от первопричины", "сравнить два правдоподобных причинных механизма", "различить необходимое и достаточное условие", "определить, что изменилось перед результатом"],
+      "set_ids": ["CDG"],
+      "related": ["thinking-with-language", "argumentation-evidence", "problem-solving-risk"]
+    },
+    {
+      "id": "hypothesis-testing",
+      "slug": "hypothesis-testing-and-evidence",
+      "level": "B2–C1",
+      "title_en": "Hypothesis testing and evidence",
+      "title_ru": "Проверка гипотез и работа с данными",
+      "search_title_en": "English patterns for testing hypotheses and evidence",
+      "search_title_ru": "Английские паттерны для проверки гипотез B2–C1",
+      "description_en": "Turn explanations into observable predictions, identify falsifying evidence, compare alternatives, and choose tests that reduce uncertainty.",
+      "description_ru": "Превращайте объяснения в наблюдаемые предсказания, определяйте опровергающие данные, сравнивайте альтернативы и выбирайте тесты, уменьшающие неопределённость.",
+      "use_cases_en": ["turn a claim into a testable prediction", "say what evidence would change your mind", "compare a hypothesis with an alternative", "choose the next test by information value"],
+      "use_cases_ru": ["превратить утверждение в проверяемое предсказание", "сказать, какие данные изменят ваше мнение", "сравнить гипотезу с альтернативой", "выбрать следующий тест по информативности"],
+      "set_ids": ["HYP"],
+      "related": ["thinking-with-language", "causal-diagnosis", "academic-research-english", "opinions-hedging"]
+    },
+    {
+      "id": "perspective-taking",
+      "slug": "perspective-taking-and-fair-disagreement",
+      "level": "B2–C1",
+      "title_en": "Perspective taking and fair disagreement",
+      "title_ru": "Смена перспективы и корректное несогласие",
+      "search_title_en": "English patterns for perspective taking and fair disagreement",
+      "search_title_ru": "Английские паттерны для смены перспективы и несогласия",
+      "description_en": "Represent another viewpoint fairly, distinguish positions from interests, and reformulate disagreements around the real trade-off.",
+      "description_ru": "Корректно представляйте чужую позицию, отделяйте позиции от интересов и переформулируйте разногласия вокруг реального компромисса.",
+      "use_cases_en": ["state the strongest reasonable objection", "separate a position from the interest behind it", "distinguish disagreement about facts from disagreement about values", "restate a conflict neutrally"],
+      "use_cases_ru": ["сформулировать сильнейшее разумное возражение", "отделить позицию от стоящего за ней интереса", "различить спор о фактах и спор о ценностях", "нейтрально переформулировать конфликт"],
+      "set_ids": ["PST"],
+      "related": ["thinking-with-language", "agreement-disagreement", "negotiation-tradeoffs", "opinions-hedging"]
+    },
+    {
+      "id": "metacognitive-learning",
+      "slug": "metacognitive-learning-and-error-patterns",
+      "level": "B2–C1",
+      "title_en": "Metacognitive learning and error patterns",
+      "title_ru": "Метакогнитивное обучение и паттерны ошибок",
+      "search_title_en": "English patterns for metacognitive learning and feedback",
+      "search_title_ru": "Английские паттерны для осознанного обучения B2–C1",
+      "description_en": "Notice the gap between recognition and recall, diagnose recurring errors, and convert feedback into a concrete next practice target.",
+      "description_ru": "Замечайте разрыв между узнаванием и воспроизведением, диагностируйте повторяющиеся ошибки и превращайте обратную связь в конкретную следующую цель практики.",
+      "use_cases_en": ["identify what you recognise but cannot yet recall", "name the exact distinction you still confuse", "find a recurring error pattern", "turn feedback into one next practice target"],
+      "use_cases_ru": ["определить, что вы узнаёте, но ещё не воспроизводите", "назвать точное различие, которое всё ещё путаете", "найти повторяющийся тип ошибки", "превратить обратную связь в одну следующую цель практики"],
+      "set_ids": ["META"],
+      "related": ["thinking-with-language", "hypothesis-testing", "feedback-performance", "russian-speaker-errors"]
+    }
+  ]
+}
