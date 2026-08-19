@@ -6,6 +6,8 @@ import test from "node:test";
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const topicsSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "discovery-topics.json"), "utf8"));
+const topicExtensions = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "discovery-topics-extension.json"), "utf8"));
+const allTopics = [...topicsSource.topics, ...topicExtensions.topics];
 const opportunitiesSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "partnership-opportunities.json"), "utf8"));
 const studySets = JSON.parse(fs.readFileSync(path.join(DIST, "data", "study-sets.json"), "utf8"));
 const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
@@ -17,15 +19,16 @@ function html(...parts) {
 
 test("Pattern Atlas topics are curated against real study sets", () => {
   assert.equal(topicsSource.schemaVersion, 1);
-  assert.ok(topicsSource.topics.length >= 10);
-  assert.ok(topicsSource.topics.length <= 30, "discovery layer should stay deliberately curated");
+  assert.equal(topicExtensions.schemaVersion, 1);
+  assert.ok(allTopics.length >= 10);
+  assert.ok(allTopics.length <= 30, "discovery layer should stay deliberately curated");
 
   const validSets = new Set(studySets.sets.map((set) => set.id));
-  const ids = new Set(topicsSource.topics.map((topic) => topic.id));
-  assert.equal(ids.size, topicsSource.topics.length);
-  assert.equal(new Set(topicsSource.topics.map((topic) => topic.slug)).size, topicsSource.topics.length);
+  const ids = new Set(allTopics.map((topic) => topic.id));
+  assert.equal(ids.size, allTopics.length);
+  assert.equal(new Set(allTopics.map((topic) => topic.slug)).size, allTopics.length);
 
-  for (const topic of topicsSource.topics) {
+  for (const topic of allTopics) {
     assert.ok(topic.set_ids.length > 0, `${topic.id} has no study sets`);
     assert.ok(topic.use_cases_en.length >= 3, `${topic.id} has too few English use cases`);
     assert.ok(topic.use_cases_ru.length >= 3, `${topic.id} has too few Russian use cases`);
@@ -46,7 +49,7 @@ test("Pattern Atlas is visible, canonical and included in discovery infrastructu
     assert.ok(routes.has(`/${locale}/patterns/`));
     assert.match(sitemap, new RegExp(`<loc>https://metkagram\\.github\\.io/${locale}/patterns/</loc>`));
 
-    for (const topic of topicsSource.topics) {
+    for (const topic of allTopics) {
       const page = html(locale, "patterns", topic.slug);
       assert.match(page, /LearningResource/);
       assert.match(page, /ItemList/);
@@ -59,9 +62,9 @@ test("Pattern Atlas is visible, canonical and included in discovery infrastructu
 
   const publicTopics = JSON.parse(fs.readFileSync(path.join(DIST, "data", "discovery-topics.json"), "utf8"));
   const seoTopics = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "discovery-topics.json"), "utf8"));
-  assert.equal(publicTopics.topics.length, topicsSource.topics.length);
-  assert.equal(seoTopics.topicCount, topicsSource.topics.length);
-  assert.equal(seoTopics.routes.length, topicsSource.topics.length * 2 + 2);
+  assert.equal(publicTopics.topics.length, allTopics.length);
+  assert.equal(seoTopics.topicCount, allTopics.length);
+  assert.equal(seoTopics.routes.length, allTopics.length * 2 + 2);
 });
 
 test("public partnership page exposes bounded pilot packages", () => {
@@ -81,7 +84,7 @@ test("public partnership page exposes bounded pilot packages", () => {
 
 test("Atlas and partnership pilots are discoverable to agents without pretending they improve Google rankings", () => {
   const catalog = JSON.parse(fs.readFileSync(path.join(DIST, "data", "catalog.json"), "utf8"));
-  assert.equal(catalog.patternAtlas.topicCount, topicsSource.topics.length);
+  assert.equal(catalog.patternAtlas.topicCount, allTopics.length);
   assert.match(catalog.patternAtlas.dataset, /\/data\/discovery-topics\.json$/);
   assert.match(catalog.patternAtlas.pages.en, /\/en\/patterns\/$/);
   assert.equal(catalog.partnershipOpportunities.count, opportunitiesSource.opportunities.length);
