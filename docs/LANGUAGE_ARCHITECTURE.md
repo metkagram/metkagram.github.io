@@ -1,6 +1,6 @@
 # Metkagram language architecture
 
-Status: canonical architecture; Phase 3 foundation and reviewed Bridge projection are implemented.
+Status: canonical architecture; the first Frame-only third-language pilot is implemented with French.
 
 ## Principle
 
@@ -16,9 +16,10 @@ A learning language does not need annotation or a localized interface to be usef
 Current state:
 
 - interface: English (`en`), Russian (`ru`);
-- learning: English (`en`), German (`de`);
+- learning: English (`en`), German (`de`), French (`fr`, pilot);
 - translation: Russian (`ru`);
-- annotation: English (`en`), German (`de`).
+- annotation: English (`en`), German (`de`);
+- French status: `learning=true`, `annotation=false`, `interface=false`.
 
 The capability registry lives in `src/language-registry.mjs` and is published at `/data/languages.json`.
 
@@ -28,15 +29,16 @@ The normalized multilingual knowledge layer is:
 
 **Move → Frame → Bridge**
 
-`Pattern` remains the stable public umbrella and compatibility ID. Existing pattern URLs and datasets do not need to change.
+`Pattern` remains the stable public umbrella and compatibility ID. Existing pattern URLs and the historical EN/DE pattern dataset remain stable.
 
-The build now publishes:
+The build publishes:
 
 - `/data/domain/index.json` — model manifest and invariants;
 - `/data/domain/moves.json` — language-independent Moves;
 - `/data/domain/frames.json` — language-specific Frames;
 - `/data/domain/bridges.json` — reviewed cross-language Bridges;
-- `/data/domain/pattern-index.json` — stable pattern ID → Frame/Move mapping.
+- `/data/domain/pattern-index.json` — stable pattern ID → Frame/Move mapping;
+- `/data/domain/language-pilots.json` — capability and coverage metadata for Frame-only pilot languages.
 
 Equivalent API resources are published under `/api/v1/` and exposed through MCP.
 
@@ -54,26 +56,26 @@ A Move is the communicative or reasoning job. It has no learning language.
 }
 ```
 
-One Move may be realised by many patterns and Frames. Not every historical pattern has an explicit Move yet; that is valid and can be enriched incrementally.
-
 ### Frame
 
 A Frame belongs to exactly one learning language.
 
 ```json
 {
-  "id": "frame:clf061:en",
+  "id": "frame:clf061:fr",
   "pattern_id": "CLF061",
   "move_id": "move:reframe",
-  "language": "en",
-  "formula": "It's not that [X]; it's that [Y].",
+  "language": "fr",
+  "formula": "Ce n’est pas que [X] ; c’est que [Y].",
   "translations": {
     "ru": "..."
-  }
+  },
+  "source_kind": "language_extension",
+  "source_status": "editorial_pilot"
 }
 ```
 
-A future French Frame can therefore exist with `language: "fr"` even when French has no annotation profile and no French interface.
+Frame extensions are additive. They do not require rewriting the historical pattern record, which still contains its established EN/DE realizations.
 
 ### Bridge
 
@@ -92,32 +94,54 @@ A Bridge is an explicit reviewed relation between two Frames in different learni
 }
 ```
 
-The crucial rule is negative: **a Bridge is not inferred just because two strings look similar or because a new language was added to a pattern record**.
+The crucial rule is negative: **a Bridge is not inferred because two Frames share a pattern ID, look similar, or came from machine translation**.
 
-The current EN↔DE Bridge dataset is projected from the existing reviewed Cross-language Transfer mappings. A missing Bridge is meaningful and valid.
+The current EN↔DE Bridge dataset is projected from reviewed Cross-language Transfer mappings. The French pilot intentionally starts with **zero reviewed French Bridges**. A missing Bridge is meaningful and valid.
+
+## French pilot
+
+The first real test of the architecture lives in `data/language-pilots/french-v1.json`.
+
+It contains:
+
+- 20 French Frames attached to existing canonical Pattern IDs and Moves;
+- 60 French examples in total;
+- Russian support translations;
+- explicit internal-editorial review metadata;
+- no French annotation profile;
+- no French interface locale;
+- no implied EN↔FR or DE↔FR Bridge.
+
+Human pilot pages are generated at:
+
+- `/en/practice/language/french/`;
+- `/ru/practice/language/french/`.
+
+This is deliberately labelled a pilot. The current editorial check is not presented as native-speaker certification.
 
 ## Pattern compatibility layer
 
 The public pattern ID remains stable because it already anchors URLs, study sets, contrasts, exports and external references.
 
-The normalized layer therefore adds, rather than replaces:
+A pilot parent can therefore resolve to three Frames without changing the canonical Pattern URL:
 
 ```json
 {
   "pattern_id": "CLF061",
   "move_id": "move:reframe",
   "frame_ids": {
+    "de": "frame:clf061:de",
     "en": "frame:clf061:en",
-    "de": "frame:clf061:de"
+    "fr": "frame:clf061:fr"
   }
 }
 ```
 
-This lets old clients continue using pattern IDs while new clients can reason explicitly about language-specific Frames.
+Old clients can continue using pattern IDs. New clients can reason about language-specific Frames.
 
 ## Translation model
 
-New data should use locale maps:
+New data uses locale maps:
 
 ```json
 {
@@ -127,50 +151,42 @@ New data should use locale maps:
 }
 ```
 
-During migration, `normalizeTranslations()` and `getTranslation()` also understand legacy fields such as:
+During migration, `normalizeTranslations()` and `getTranslation()` also understand legacy fields such as `translation_ru` and the historical `translation` field.
 
-```json
-{
-  "translation_ru": "..."
-}
-```
-
-and the older `translation` field inside language-realisation records, where Russian is the historical support locale.
-
-Translation is not a Frame and not a Bridge. A Russian translation of an English example does not make Russian a learning language.
+Translation is not a Frame and not a Bridge. A Russian translation of a French example does not make Russian a learning language.
 
 ## Annotation is optional
 
 Annotation belongs to a language capability, not to the definition of a Frame.
 
-A language may progress through these states:
+French demonstrates the intended progression in production data:
 
 1. registry entry with `learning=true`;
-2. reviewed Frames and examples;
+2. reviewed pilot Frames and examples;
 3. translations in an enabled support locale;
-4. optional reviewed Bridges;
-5. optional annotation profile and annotated reading sets;
-6. optional localized interface.
+4. later, optionally, reviewed Bridges;
+5. later, optionally, annotation profile and annotated reading sets;
+6. later, optionally, localized interface.
 
-This order deliberately avoids requiring a new spaCy/NLP pipeline before a language can appear in Pattern Practice or machine-readable data.
+No empty `/explore/french/` annotation collection is created merely for symmetry.
 
 ## Language identifiers
 
-Use stable BCP 47-compatible codes (`en`, `de`, `ru`, later `fr`, `es`, `pt-BR`, etc.). Slugs and display names are metadata.
+Use stable BCP 47-compatible codes (`en`, `de`, `fr`, `ru`, later `es`, `pt-BR`, etc.). Slugs and display names are metadata.
 
 Do not derive capability logic from strings such as `english`, `german` or field names such as `translation_ru`.
 
-## Current compatibility boundary
+## Compatibility boundary
 
-The base annotated-collection renderer still contains historical EN/DE target metadata. Treat that as a compatibility adapter for the existing annotated corpus, not as the canonical language registry.
+The base annotated-collection renderer still contains historical EN/DE target metadata. Treat that as a compatibility adapter for the annotated corpus, not as the canonical language registry.
 
-This distinction matters: adding a Frame-only learning language must not require adding an empty annotated collection. The normalized domain layer already supports that separation; the annotated collection renderer can be migrated independently later.
+The old `advanced-patterns.json` validation also remains EN/DE-oriented. New learning-language Frames therefore enter through the additive language-extension layer rather than forcing a risky rewrite of thousands of stable records.
 
 ## Adding another language
 
 The operational checklist lives in `docs/ADDING_A_LANGUAGE.md`.
 
-The acceptance rule is simple: a language is useful before it is complete. Expose the capabilities it actually has, and do not fabricate unsupported annotation, translation or Bridge coverage.
+The acceptance rule is simple: a language is useful before it is complete. Expose only the capabilities it actually has.
 
 ## Migration status
 
@@ -183,16 +199,16 @@ The acceptance rule is simple: a language is useful before it is complete. Expos
 
 ### Phase 2 — translations: compatibility implemented, source migration ongoing
 
-- locale-map helper is available;
+- locale-map helper available;
 - legacy Russian fields remain readable;
-- future translations do not require schema-specific `translation_xx` fields.
+- new pilot data uses `translations: { locale: text }`.
 
-### Phase 3 — Frame/Move separation: implemented as normalized sidecar datasets
+### Phase 3 — Frame/Move separation: implemented
 
-- stable Frame IDs per language;
+- stable Frame IDs per learning language;
 - language-independent Move IDs;
 - complete pattern compatibility index;
-- source pattern dataset remains unchanged.
+- additive Frame-extension support.
 
 ### Phase 4 — Bridges: implemented for reviewed EN↔DE mappings
 
@@ -200,6 +216,6 @@ The acceptance rule is simple: a language is useful before it is complete. Expos
 - missing Bridges remain missing;
 - no lexical-similarity inference.
 
-### Phase 5 — new learning language: architecture ready
+### Phase 5 — new learning language: implemented as French pilot
 
-A new language should require data and registry changes, not a global schema redesign. Annotation and interface support remain optional later steps.
+French proves that a third learning language can ship useful Frames without annotation or interface localization. The next quality step is independent French review and then a deliberately small set of EN↔FR / DE↔FR Bridge candidates.
