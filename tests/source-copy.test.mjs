@@ -38,6 +38,6 @@ test("release-contracts verifies home and roadmap instead of rewriting their can
   const source = fs.readFileSync(path.join(ROOT, "scripts", "release-contracts.mjs"), "utf8");
   assert.match(source, /assertCurrent\("en\/index\.html"/);
   assert.match(source, /assertCurrent\("en\/roadmap\/index\.html"/);
-  assert.doesNotMatch(source, /Current release · July 2026", "Current release · August 2026/);
-  assert.doesNotMatch(source, /token-level annotation scheme is also an open, machine-readable research resource",/);
+  assert.doesNotMatch(source, /replaceAllKnown/);
+  assert.doesNotMatch(source, /replaceAll\([^\n]*(?:Current release|token-level annotation scheme)/);
 });
