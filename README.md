@@ -115,7 +115,7 @@ Public visibility does not remove the current licensing and attribution terms. S
 
 ## Local development
 
-Requirements: Node.js 20 or newer.
+Requirements: Node.js 24 or newer.
 
 ```bash
 npm install
