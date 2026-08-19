@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "status": "review_in_progress",
+  "objective": "Precision-first Pattern Lens release policy. Prefer abstention and explicit misses over plausible-looking false positives.",
+  "evidenceBoundary": "The current hard benchmark is an engineering regression fixture. Statistical precision/recall claims remain blocked until the separate release-review set reaches its reviewed coverage target with reviewer provenance.",
+  "engineeringGate": {
+    "positive_pattern_hit_at_3_min": 0.9,
+    "positive_move_hit_at_3_min": 0.9,
+    "negative_abstention_rate_min": 0.9,
+    "false_positive_rate_max": 0.1,
+    "regressionBudget": {
+      "new_false_positive_cases_max": 0,
+      "new_positive_misses_max": 1,
+      "note": "Any new false positive on the frozen hard fixture blocks release unless the fixture itself is explicitly re-reviewed."
+    }
+  },
+  "releaseReviewTarget": {
+    "totalReviewedCasesMin": 150,
+    "languages": ["en", "de"],
+    "buckets": [
+      {"id": "positive_generalisation_en", "language": "en", "kind": "positive", "family": "generalisation", "minimum": 25},
+      {"id": "positive_generalisation_de", "language": "de", "kind": "positive", "family": "generalisation", "minimum": 25},
+      {"id": "near_match_en", "language": "en", "kind": "negative", "family": "near_match", "minimum": 10},
+      {"id": "near_match_de", "language": "de", "kind": "negative", "family": "near_match", "minimum": 10},
+      {"id": "metalinguistic_en", "language": "en", "kind": "negative", "family": "metalinguistic", "minimum": 10},
+      {"id": "metalinguistic_de", "language": "de", "kind": "negative", "family": "metalinguistic", "minimum": 10},
+      {"id": "incomplete_frame_en", "language": "en", "kind": "negative", "family": "incomplete_frame", "minimum": 10},
+      {"id": "incomplete_frame_de", "language": "de", "kind": "negative", "family": "incomplete_frame", "minimum": 10},
+      {"id": "ambiguous_en", "language": "en", "kind": "negative", "family": "ambiguous", "minimum": 10},
+      {"id": "ambiguous_de", "language": "de", "kind": "negative", "family": "ambiguous", "minimum": 10},
+      {"id": "neutral_negative_en", "language": "en", "kind": "negative", "family": "neutral", "minimum": 10},
+      {"id": "neutral_negative_de", "language": "de", "kind": "negative", "family": "neutral", "minimum": 10}
+    ]
+  },
+  "releaseThresholds": {
+    "overall_false_positive_rate_max": 0.05,
+    "language_positive_pattern_hit_at_3_min": 0.9,
+    "language_clear_negative_abstention_rate_min": 0.95,
+    "family_abstention_min": {
+      "near_match": 0.9,
+      "metalinguistic": 1.0,
+      "incomplete_frame": 0.95,
+      "ambiguous": 0.9,
+      "neutral": 0.95
+    },
+    "minimumCasesBeforeSliceMetric": 10
+  },
+  "reviewRequirements": {
+    "requiredFields": ["id", "language", "sentence", "kind", "family", "review"],
+    "positiveRequiredFields": ["expected_pattern", "expected_move"],
+    "reviewFields": ["status", "reviewer_id", "reviewed_at", "independent_of_generation", "notes"],
+    "acceptedReviewStatus": "reviewed",
+    "reviewerRule": "A case counts toward the 150-case release target only after a human reviewer explicitly confirms the label. Generated or self-labelled candidates do not count merely because they are syntactically valid."
+  },
+  "publicClaimPolicy": {
+    "precisionClaimAllowedWhenReady": true,
+    "precisionClaimAllowedBeforeReady": false,
+    "allowedBeforeReady": "Engineering robustness metrics may be published with explicit fixture and evidence limits.",
+    "forbiddenBeforeReady": "Do not describe the current hard fixture as an independent statistical precision/recall estimate."
+  }
+}
