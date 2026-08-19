@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "source": "synthetic-example-not-production-data",
+  "scope": "non_brand",
+  "period": {"start": "2026-05-01", "end": "2026-07-31"},
+  "rows": [
+    {
+      "url": "https://metkagram.github.io/en/patterns/thinking-framing-uncertainty-and-decisions/",
+      "clicks": 14,
+      "impressions": 320,
+      "ctr": 0.04375,
+      "position": 8.4,
+      "crawled": true,
+      "indexed": true,
+      "age_days": 120,
+      "indexing_review_allowed": false
+    },
+    {
+      "url": "https://metkagram.github.io/en/practice/set/hed/",
+      "clicks": 1,
+      "impressions": 180,
+      "ctr": 0.0056,
+      "position": 14.2,
+      "crawled": true,
+      "indexed": true,
+      "age_days": 210,
+      "indexing_review_allowed": false
+    },
+    {
+      "url": "https://metkagram.github.io/en/practice/example-pattern/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 42.1,
+      "crawled": true,
+      "indexed": true,
+      "age_days": 240,
+      "consolidation_group": "synthetic-near-duplicate-cluster",
+      "indexing_review_allowed": false
+    },
+    {
+      "url": "https://metkagram.github.io/en/apps/",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": null,
+      "crawled": true,
+      "indexed": true,
+      "age_days": 365,
+      "indexing_review_allowed": true
+    }
+  ]
+}
