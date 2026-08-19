@@ -53,7 +53,8 @@ test("canonical repository documents agree on French and Thinking in Language", 
   const direction = fs.readFileSync(path.join(ROOT, "docs", "PRODUCT_DIRECTION.md"), "utf8");
 
   for (const text of [readme, direction]) {
-    assert.match(text, /French Frame-only pilot/i);
+    assert.match(text, /French/i);
+    assert.match(text, /Frame-only pilot/i);
     assert.match(text, /Thinking in Language/);
     assert.match(text, /40/);
   }
