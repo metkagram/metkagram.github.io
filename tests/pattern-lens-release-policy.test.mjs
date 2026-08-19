@@ -28,7 +28,10 @@ test("engineering regression thresholds stay aligned with the release policy", (
   assert.equal(hard.thresholds.positive_move_hit_at_3, policy.engineeringGate.positive_move_hit_at_3_min);
   assert.equal(hard.thresholds.negative_abstention_rate, policy.engineeringGate.negative_abstention_rate_min);
   assert.equal(hard.thresholds.false_positive_rate_max, policy.engineeringGate.false_positive_rate_max);
-  assert.equal(hard.gate_passed, true);
+  assert.ok(hard.metrics.positive_pattern_hit_at_3 >= hard.thresholds.positive_pattern_hit_at_3);
+  assert.ok(hard.metrics.positive_move_hit_at_3 >= hard.thresholds.positive_move_hit_at_3);
+  assert.ok(hard.metrics.negative_abstention_rate >= hard.thresholds.negative_abstention_rate);
+  assert.ok(hard.metrics.false_positive_rate <= hard.thresholds.false_positive_rate_max);
 });
 
 test("release readiness does not turn an incomplete review set into a precision claim", () => {
