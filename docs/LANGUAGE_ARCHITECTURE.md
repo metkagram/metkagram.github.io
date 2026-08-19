@@ -1,205 +1,205 @@
 # Metkagram language architecture
 
-Status: canonical direction for multilingual expansion.
+Status: canonical architecture; Phase 3 foundation and reviewed Bridge projection are implemented.
 
 ## Principle
 
-Metkagram must not model “language” as one setting. There are three independent axes:
+Metkagram does not model “language” as one setting. Four capabilities are independent:
 
-1. **Interface locale** — language used by navigation, help and product explanations.
-2. **Learning language** — language whose Frames and examples the learner is studying.
+1. **Interface locale** — navigation, help and product explanations.
+2. **Learning language** — language whose Frames and examples are studied.
 3. **Translation locale** — support language used for translations and learner-facing glosses.
+4. **Annotation capability** — reviewed Metkagram Marks/annotation for that language.
 
-A fourth capability, **annotation**, is optional. A learning language may have useful Frames, examples and translations before Metkagram has a reviewed Mark/annotation profile for it.
+A learning language does not need annotation or a localized interface to be useful.
 
 Current state:
 
-- interface locales: English (`en`), Russian (`ru`);
-- learning languages: English (`en`), German (`de`);
-- translation locale in the canonical pattern data: Russian (`ru`);
-- reviewed annotation languages: English (`en`), German (`de`).
+- interface: English (`en`), Russian (`ru`);
+- learning: English (`en`), German (`de`);
+- translation: Russian (`ru`);
+- annotation: English (`en`), German (`de`).
 
-The central capability registry lives in `src/language-registry.mjs`.
+The capability registry lives in `src/language-registry.mjs` and is published at `/data/languages.json`.
 
-## Why the axes must stay separate
+## Domain model
 
-Russian is currently both an interface language and a translation language, but it is not a learning language in the public curriculum. German is a learning and annotation language, but not an interface language. Future languages may have yet another combination.
+The normalized multilingual knowledge layer is:
 
-Treating these roles as one property creates assumptions such as “every target language must have an annotated corpus” or “every translation language needs a full localized site”. Neither is necessary.
+**Move → Frame → Bridge**
 
-## Language identifiers
+`Pattern` remains the stable public umbrella and compatibility ID. Existing pattern URLs and datasets do not need to change.
 
-Use stable BCP 47-compatible language codes in data (`en`, `de`, `ru`, later `fr`, `es`, `pt-BR`, etc.). Human-readable names and URL slugs are metadata, not identifiers.
+The build now publishes:
 
-Do not derive language logic from strings such as `english`, `german` or field names such as `translation_ru`.
+- `/data/domain/index.json` — model manifest and invariants;
+- `/data/domain/moves.json` — language-independent Moves;
+- `/data/domain/frames.json` — language-specific Frames;
+- `/data/domain/bridges.json` — reviewed cross-language Bridges;
+- `/data/domain/pattern-index.json` — stable pattern ID → Frame/Move mapping.
 
-## Current compatibility model
-
-Existing advanced-pattern records contain language realizations inside `langs[]`, and learner translations are stored in fields such as `translation_ru`.
-
-That format remains readable during migration. New code should use the compatibility helper `getTranslation(record, locale)`, which understands both:
-
-```js
-{
-  translation_ru: "..."
-}
-```
-
-and the future form:
-
-```js
-{
-  translations: {
-    ru: "...",
-    // future support locales can be added without schema surgery
-  }
-}
-```
-
-The goal is additive migration, not a destructive rewrite of every public ID in one release.
-
-## Conceptual model
-
-The long-term model separates language-independent meaning from language-specific realization.
+Equivalent API resources are published under `/api/v1/` and exposed through MCP.
 
 ### Move
 
-A Move describes the communicative or reasoning job and has no learning language of its own.
+A Move is the communicative or reasoning job. It has no learning language.
 
 ```json
 {
-  "id": "correct_framing",
-  "family": "focus_correction"
+  "id": "move:reframe",
+  "kind": "move",
+  "name": "Reframe",
+  "language": null,
+  "language_independent": true
 }
 ```
+
+One Move may be realised by many patterns and Frames. Not every historical pattern has an explicit Move yet; that is valid and can be enriched incrementally.
 
 ### Frame
 
-A Frame belongs to exactly one learning language and can point to a Move.
+A Frame belongs to exactly one learning language.
 
 ```json
 {
-  "id": "correct_framing.en.not_x_but_y",
-  "move_id": "correct_framing",
+  "id": "frame:clf061:en",
+  "pattern_id": "CLF061",
+  "move_id": "move:reframe",
   "language": "en",
   "formula": "It's not that [X]; it's that [Y].",
-  "examples": [
-    {
-      "text": "It's not that the idea is wrong; it's that it does not scale.",
-      "translations": {
-        "ru": "Дело не в том, что идея неверна; дело в том, что она не масштабируется."
-      }
-    }
-  ]
-}
-```
-
-### Bridge
-
-A Bridge relates reviewed Frames across learning languages. It makes cross-language correspondence explicit instead of assuming that two entries under one record are interchangeable.
-
-```json
-{
-  "id": "correct_framing.en-de.1",
-  "move_id": "correct_framing",
-  "from_frame": "correct_framing.en.not_x_but_y",
-  "to_frame": "correct_framing.de.nicht_dass_vielmehr",
-  "relation": "functional_near_equivalent",
-  "review_status": "reviewed"
-}
-```
-
-Recommended relation vocabulary:
-
-- `functional_equivalent`
-- `functional_near_equivalent`
-- `context_limited`
-- `contrastive`
-
-A missing Bridge is valid. Languages are not obliged to provide neat one-to-one symmetry for the convenience of a JSON schema.
-
-## Annotation capability
-
-Annotation belongs to a language profile, not to the definition of a Frame.
-
-A future language can therefore progress through these states:
-
-1. translations only;
-2. reviewed Frames and examples;
-3. Bridges to existing Moves/Frames;
-4. optional annotation profile and annotated reading sets;
-5. optional localized interface.
-
-This order lets Metkagram expand without requiring a new spaCy pipeline or full grammar notation before a language becomes useful.
-
-## URL policy
-
-Keep the current public URLs stable.
-
-- interface locale remains the first segment, currently `/en/` or `/ru/`;
-- learning-language slugs remain readable routes such as `/explore/english/` and `/explore/german/`;
-- new learning-language routes must be generated from the language registry rather than hardcoded conditionals;
-- translation locale should normally be a user preference, not part of the canonical content URL.
-
-The last rule avoids creating separate SEO copies of the same Frame merely because the learner wants a different translation language.
-
-## Public language matrix
-
-The build should expose a small machine-readable language matrix at `/data/languages.json`. It tells clients which roles each language currently supports without forcing them to infer capabilities from available pages.
-
-Example:
-
-```json
-{
-  "languages": {
-    "en": { "roles": { "interface": true, "learning": true, "translation": false, "annotation": true } },
-    "de": { "roles": { "interface": false, "learning": true, "translation": false, "annotation": true } },
-    "ru": { "roles": { "interface": true, "learning": false, "translation": true, "annotation": false } }
+  "translations": {
+    "ru": "..."
   }
 }
 ```
 
-## Migration sequence
+A future French Frame can therefore exist with `language: "fr"` even when French has no annotation profile and no French interface.
 
-### Phase 1 — foundation
+### Bridge
 
-- central language capability registry;
+A Bridge is an explicit reviewed relation between two Frames in different learning languages.
+
+```json
+{
+  "id": "bridge:clf061:en-de",
+  "pattern_id": "CLF061",
+  "move_id": "move:reframe",
+  "from_frame_id": "frame:clf061:en",
+  "to_frame_id": "frame:clf061:de",
+  "relation": "functional_near_equivalent",
+  "review_status": "reviewed",
+  "literal_equivalence": false
+}
+```
+
+The crucial rule is negative: **a Bridge is not inferred just because two strings look similar or because a new language was added to a pattern record**.
+
+The current EN↔DE Bridge dataset is projected from the existing reviewed Cross-language Transfer mappings. A missing Bridge is meaningful and valid.
+
+## Pattern compatibility layer
+
+The public pattern ID remains stable because it already anchors URLs, study sets, contrasts, exports and external references.
+
+The normalized layer therefore adds, rather than replaces:
+
+```json
+{
+  "pattern_id": "CLF061",
+  "move_id": "move:reframe",
+  "frame_ids": {
+    "en": "frame:clf061:en",
+    "de": "frame:clf061:de"
+  }
+}
+```
+
+This lets old clients continue using pattern IDs while new clients can reason explicitly about language-specific Frames.
+
+## Translation model
+
+New data should use locale maps:
+
+```json
+{
+  "translations": {
+    "ru": "..."
+  }
+}
+```
+
+During migration, `normalizeTranslations()` and `getTranslation()` also understand legacy fields such as:
+
+```json
+{
+  "translation_ru": "..."
+}
+```
+
+and the older `translation` field inside language-realisation records, where Russian is the historical support locale.
+
+Translation is not a Frame and not a Bridge. A Russian translation of an English example does not make Russian a learning language.
+
+## Annotation is optional
+
+Annotation belongs to a language capability, not to the definition of a Frame.
+
+A language may progress through these states:
+
+1. registry entry with `learning=true`;
+2. reviewed Frames and examples;
+3. translations in an enabled support locale;
+4. optional reviewed Bridges;
+5. optional annotation profile and annotated reading sets;
+6. optional localized interface.
+
+This order deliberately avoids requiring a new spaCy/NLP pipeline before a language can appear in Pattern Practice or machine-readable data.
+
+## Language identifiers
+
+Use stable BCP 47-compatible codes (`en`, `de`, `ru`, later `fr`, `es`, `pt-BR`, etc.). Slugs and display names are metadata.
+
+Do not derive capability logic from strings such as `english`, `german` or field names such as `translation_ru`.
+
+## Current compatibility boundary
+
+The base annotated-collection renderer still contains historical EN/DE target metadata. Treat that as a compatibility adapter for the existing annotated corpus, not as the canonical language registry.
+
+This distinction matters: adding a Frame-only learning language must not require adding an empty annotated collection. The normalized domain layer already supports that separation; the annotated collection renderer can be migrated independently later.
+
+## Adding another language
+
+The operational checklist lives in `docs/ADDING_A_LANGUAGE.md`.
+
+The acceptance rule is simple: a language is useful before it is complete. Expose the capabilities it actually has, and do not fabricate unsupported annotation, translation or Bridge coverage.
+
+## Migration status
+
+### Phase 1 — foundation: implemented
+
+- central capability registry;
 - canonical terminology and glossary;
-- publish `/data/languages.json`;
-- keep existing IDs and URLs stable.
+- `/data/languages.json`;
+- stable existing IDs and URLs.
 
-### Phase 2 — translations
+### Phase 2 — translations: compatibility implemented, source migration ongoing
 
-- allow `translations: { locale: text }` everywhere translations appear;
-- keep `translation_ru` as a read-compatible legacy field until source data is migrated;
-- move UI labels out of target-language conditionals.
+- locale-map helper is available;
+- legacy Russian fields remain readable;
+- future translations do not require schema-specific `translation_xx` fields.
 
-### Phase 3 — Frame/Move separation
+### Phase 3 — Frame/Move separation: implemented as normalized sidecar datasets
 
-- introduce stable Frame IDs per learning language;
-- retain current pattern IDs as learner-facing compatibility IDs;
-- make Move relations explicit;
-- validate that each Frame has exactly one source language.
+- stable Frame IDs per language;
+- language-independent Move IDs;
+- complete pattern compatibility index;
+- source pattern dataset remains unchanged.
 
-### Phase 4 — Bridges
+### Phase 4 — Bridges: implemented for reviewed EN↔DE mappings
 
-- replace assumptions of same-record EN↔DE equivalence with reviewed Bridge records;
-- preserve relation type and review status;
-- let one Move have zero, one or several Frames per language.
+- reviewed mappings become explicit Bridge records;
+- missing Bridges remain missing;
+- no lexical-similarity inference.
 
-### Phase 5 — new learning language
+### Phase 5 — new learning language: architecture ready
 
-Adding a language should require:
-
-1. one registry entry;
-2. Frames/examples for that language;
-3. translations in at least one enabled translation locale;
-4. optional Bridges;
-5. optional annotation profile;
-6. no changes to global schema structure.
-
-## Acceptance rule for future languages
-
-A language is useful before it is complete. Metkagram should expose the capabilities it actually has instead of hiding a language until every product surface can support it.
-
-That means, for example, French can initially appear in Pattern Practice with Russian translations while Annotated Language remains unavailable for French. The UI should explain the capability honestly rather than fabricate empty annotation pages.
+A new language should require data and registry changes, not a global schema redesign. Annotation and interface support remain optional later steps.
