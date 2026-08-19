@@ -39,11 +39,13 @@ Legacy technical names such as `Pattern Graph`, `Choice Clinic`, `Reasoning Pack
 
 ### 1. Pattern Practice
 
-The established learner-facing curriculum remains the public substrate: 1,000+ reusable B2–C1 English/German patterns organised into study sets and learning paths.
+The established learner-facing curriculum remains the public substrate: 1,000+ reusable B2–C1 English/German patterns organised into study sets and learning paths, plus a bounded French Frame-only pilot.
 
 A learner-facing Pattern packages a language-specific Frame with examples, translations, variations, quality metadata and a canonical route. Existing stable pattern IDs remain valid.
 
 The curriculum should stay broad enough for real practice. Quantity is not a quality metric, but deleting useful content merely to make the product look minimal is not quality either.
+
+The additive **Thinking in Language** layer currently contributes 40 reviewed Frames across eight sets: problem framing, reasoning under uncertainty, systems thinking, decision quality, causal diagnosis, hypothesis testing, perspective taking and metacognitive learning. These Frames must remain natural language worth practising, not translated reasoning jargon.
 
 Status: public and build-validated.
 
@@ -61,7 +63,9 @@ Status: implemented and regression-tested.
 
 Pattern Atlas starts from the job the learner needs to perform rather than from an internal grammar label.
 
-Curated topics connect real jobs such as hedging, disagreement, argumentation, advanced questions and professional communication to validated study sets, Moves and canonical patterns. Atlas pages remain editorial rather than keyword-generated landing-page sludge, a genre the web already possesses in heroic quantities.
+Curated topics connect real jobs such as hedging, disagreement, argumentation, professional communication, causal diagnosis, hypothesis testing, perspective taking and metacognitive learning to validated study sets, Moves and canonical patterns. Atlas pages remain editorial rather than keyword-generated landing-page sludge, a genre the web already possesses in heroic quantities.
+
+Atlas extensions are additive and can live in separate validated topic files so curriculum growth does not require one ever-expanding monolithic discovery document.
 
 Status: implemented as localized topic hubs and structured discovery data.
 
@@ -107,9 +111,11 @@ A Bridge is a reviewed cross-language relation between language-specific Frames 
 
 A Bridge is not a translation. Translation answers “what does this example mean for this learner?” A Bridge answers “how is this communicative Move naturally realised in another language?”
 
-The current EN↔DE implementation can continue to use same-pattern reviewed forms as a safe compatibility source. The long-term data model must make Bridge relations explicit so future languages are not forced into artificial one-to-one symmetry.
+The current EN↔DE implementation can continue to use same-pattern reviewed forms as a safe compatibility source. The long-term data model makes Bridge relations explicit so additional languages are not forced into artificial one-to-one symmetry.
 
-Status: reviewed EN↔DE retrieval layer with a migration path to explicit Bridge records.
+The French pilot deliberately has Frames before reviewed French Bridges. A shared Pattern ID must not be interpreted as proof of EN↔FR or DE↔FR equivalence.
+
+Status: reviewed EN↔DE retrieval layer plus a French Frame-only pilot with Bridge review still gated.
 
 ### 9. Teacher and tutor exports
 
@@ -134,7 +140,7 @@ A useful session follows a small active loop:
 9. produce a new example;
 10. revisit the stable pattern later.
 
-Annotation is helpful but optional. A target language can participate in Frames, Moves, Contrasts, Routes and Bridges before it has its own annotation profile.
+Annotation is helpful but optional. A target language can participate in Frames and Moves before it has its own annotation profile. Contrasts, Routes and especially Bridges still require their own review rather than being inferred from the existence of a Frame.
 
 AI may generate richer context, tutoring and examples around this loop. AI is an interface and tutor, not the canonical curriculum.
 
@@ -151,13 +157,16 @@ Annotation is a fourth optional capability rather than a requirement for every l
 The current public combination is:
 
 - interface: English, Russian;
-- learning: English, German;
+- established learning: English, German;
+- learning pilot: French with Frame-only content;
 - translations in canonical pattern data: Russian;
-- annotation: English, German.
+- annotation: English, German;
+- French annotation: unavailable in the current pilot;
+- reviewed French Bridges: not claimed by the current pilot.
 
 Future languages must be added through the capability registry rather than by extending `if (english) ... else if (german)` branches. See `LANGUAGE_ARCHITECTURE.md`.
 
-This lets a language become useful incrementally. For example, a future French curriculum could begin with Frames, examples and Russian translations while French annotation remains unavailable. Later it can gain Bridges, annotation and a localized interface independently.
+This lets a language become useful incrementally. The French pilot now demonstrates the first step in practice: Frames, examples and Russian learner-support translations can exist while annotation, Bridges and a localized interface remain separate review gates.
 
 ## Research programme
 
@@ -167,7 +176,10 @@ Metkagram separates product claims from research hypotheses. The research progra
 2. Frame variation and transfer to unseen contexts;
 3. retrieval-first Choice and delayed access;
 4. cross-language retrieval through reviewed Bridges;
-5. annotation agreement and content quality.
+5. annotation agreement and content quality;
+6. intent-to-pattern retrieval and calibrated abstention.
+
+The public 54-case reasoning-routing benchmark remains a bounded editorial regression surface. Curriculum growth, including new Thinking in Language Moves, does not silently rewrite that frozen evidence fixture.
 
 Research pages must distinguish evidence about general learning mechanisms from evidence about Metkagram itself. Null results remain useful results.
 
@@ -196,6 +208,8 @@ The private research core may retain the full annotated corpus, bulk model-prepa
 
 The boundary protects reconstruction machinery and unpublished research, not the usefulness of the public learner experience.
 
+Public inspectability is not an unrestricted reuse grant. Current reuse follows `LICENSE`, `LICENSING.md` and the machine-readable rights metadata; historical grants for earlier revisions remain historical grants.
+
 ## Decision rules
 
 A feature belongs in Metkagram when it materially improves at least one of these things:
@@ -217,6 +231,6 @@ A feature should be deferred when it mainly adds generic app surface area, new t
 
 The working sequence is:
 
-**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional languages**
+**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional reviewed language capabilities**
 
 The sequence is a dependency map, not a requirement that every learner visit every screen.

@@ -1,9 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
+import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 
 const DIST = path.resolve("dist");
-const SITE_URL = "https://metkagram.github.io";
-const RELEASE_DATE = "2026-08-17";
 const SOCIAL_PREVIEW = `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`;
 
 function htmlFiles(directory) {
@@ -92,7 +91,7 @@ for (const file of files) {
         url: canonical,
         name: title,
         description,
-        dateModified: RELEASE_DATE,
+        dateModified: SITE_RELEASE_DATE,
         isPartOf: { "@id": `${SITE_URL}/#website` }
       });
       html = html.replace("</head>", `  <script type="application/ld+json">${structured}</script>\n</head>`);
