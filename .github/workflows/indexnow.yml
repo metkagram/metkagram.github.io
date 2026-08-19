@@ -97,7 +97,7 @@ jobs:
             add_url "$BASE/data/intents.json"
           fi
 
-          if grep -Eq '^(data/discovery-topics(-extension(?:-[a-z0-9-]+)?)?\.json|src/discovery-pages\.mjs|scripts/(discovery-growth|practice-intent-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/discovery-topics(-extension(-[a-z0-9-]+)?)?\.json|src/discovery-pages\.mjs|scripts/(discovery-growth|practice-intent-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/patterns/"
             add_url "$BASE/ru/patterns/"
             for topic_file in data/discovery-topics*.json; do
