@@ -24,16 +24,21 @@ function html(...parts) {
 
 test("language capabilities are independent rather than one global language setting", () => {
   assert.deepEqual(interfaceLocales, ["en", "ru"]);
-  assert.deepEqual(learningLanguages, ["en", "de"]);
+  assert.deepEqual(learningLanguages, ["en", "de", "fr"]);
   assert.deepEqual(translationLocales, ["ru"]);
   assert.deepEqual(annotationLanguages, ["en", "de"]);
 
   assert.equal(languageRegistry.de.roles.learning, true);
   assert.equal(languageRegistry.de.roles.interface, false);
+  assert.equal(languageRegistry.fr.roles.learning, true);
+  assert.equal(languageRegistry.fr.roles.annotation, false);
+  assert.equal(languageRegistry.fr.roles.interface, false);
+  assert.equal(languageRegistry.fr.status, "pilot");
   assert.equal(languageRegistry.ru.roles.translation, true);
   assert.equal(languageRegistry.ru.roles.learning, false);
   assert.equal(languageRegistry.en.slug, "english");
   assert.equal(languageRegistry.de.slug, "german");
+  assert.equal(languageRegistry.fr.slug, "french");
 });
 
 test("translation lookup supports future locale maps and legacy translation fields", () => {
@@ -47,11 +52,14 @@ test("public capability matrix exposes actual supported roles", () => {
   const matrix = json("data", "languages.json");
   assert.equal(matrix.schemaVersion, 1);
   assert.deepEqual(matrix.interfaceLocales, ["en", "ru"]);
-  assert.deepEqual(matrix.learningLanguages, ["en", "de"]);
+  assert.deepEqual(matrix.learningLanguages, ["en", "de", "fr"]);
   assert.deepEqual(matrix.translationLocales, ["ru"]);
   assert.deepEqual(matrix.annotationLanguages, ["en", "de"]);
   assert.equal(matrix.languages.ru.roles.annotation, false);
   assert.equal(matrix.languages.de.roles.interface, false);
+  assert.equal(matrix.languages.fr.status, "pilot");
+  assert.equal(matrix.languages.fr.roles.learning, true);
+  assert.equal(matrix.languages.fr.roles.annotation, false);
 });
 
 test("canonical terminology and methodology are published for humans and machines", () => {

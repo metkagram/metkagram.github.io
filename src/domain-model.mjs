@@ -1,6 +1,6 @@
 import { languageRegistry, normalizeTranslations } from "./language-registry.mjs";
 
-export const DOMAIN_MODEL_VERSION = "1.0.0";
+export const DOMAIN_MODEL_VERSION = "1.1.0";
 
 function slug(value) {
   return String(value || "")
@@ -36,14 +36,14 @@ export function bridgeId(patternId, fromLanguage, toLanguage) {
   return `bridge:${String(patternId).toLowerCase()}:${String(fromLanguage).toLowerCase()}-${String(toLanguage).toLowerCase()}`;
 }
 
-function frameRecord(pattern, languageRecord, registry) {
+function frameRecord(pattern, languageRecord, registry, metadata = {}) {
   const language = languageRecord.lang;
   const languageMeta = registry[language];
   if (!languageMeta) throw new Error(`Pattern ${pattern.id} uses unregistered language ${language}.`);
   if (!languageMeta.roles?.learning) throw new Error(`Pattern ${pattern.id} uses ${language} as a Frame language, but it is not enabled for learning.`);
 
   const move = moveId(pattern.reasoning?.move);
-  return {
+  const record = {
     id: frameId(pattern.id, language),
     kind: "frame",
     model_version: DOMAIN_MODEL_VERSION,
@@ -57,8 +57,32 @@ function frameRecord(pattern, languageRecord, registry) {
       text: clean(example.text || ""),
       translations: cleanTranslations(example),
     })),
-    source_status: pattern.quality?.status || pattern.gen?.status || "unknown",
+    source_status: metadata.source_status || languageRecord.source_status || pattern.quality?.status || pattern.gen?.status || "unknown",
+    source_kind: metadata.source_kind || "canonical_pattern",
   };
+  if (metadata.review || languageRecord.review) record.review = metadata.review || languageRecord.review;
+  return record;
+}
+
+function extensionFrameRecords(patterns, frameExtensions, registry, occupiedFrameIds) {
+  const patternById = new Map(patterns.map((pattern) => [pattern.id, pattern]));
+  const result = [];
+  for (const extension of frameExtensions || []) {
+    if (!extension || typeof extension.pattern_id !== "string" || !extension.pattern_id) throw new Error("Frame extension requires pattern_id.");
+    if (typeof extension.lang !== "string" || !extension.lang) throw new Error(`Frame extension ${extension.pattern_id} requires lang.`);
+    const pattern = patternById.get(extension.pattern_id);
+    if (!pattern) throw new Error(`Frame extension ${extension.pattern_id}/${extension.lang} references an unknown canonical pattern.`);
+    const id = frameId(extension.pattern_id, extension.lang);
+    if (occupiedFrameIds.has(id)) throw new Error(`Frame extension duplicates existing Frame ${id}.`);
+    const frame = frameRecord(pattern, extension, registry, {
+      source_status: extension.source_status || "language_extension",
+      source_kind: "language_extension",
+      review: extension.review || null,
+    });
+    occupiedFrameIds.add(id);
+    result.push(frame);
+  }
+  return result;
 }
 
 function moveRecords(patterns, frames) {
@@ -179,6 +203,12 @@ function patternIndex(patterns, frames) {
   })).sort((a, b) => a.pattern_id.localeCompare(b.pattern_id));
 }
 
+function validateTranslationMap(frameIdValue, translations, registry) {
+  for (const locale of Object.keys(translations || {})) {
+    if (!registry[locale]?.roles?.translation) throw new Error(`Frame ${frameIdValue} uses unsupported translation locale ${locale}.`);
+  }
+}
+
 export function validateDomainModel(model, registry = languageRegistry) {
   const moveIds = new Set();
   const frameIds = new Set();
@@ -194,9 +224,16 @@ export function validateDomainModel(model, registry = languageRegistry) {
     if (!frame.id || frameIds.has(frame.id)) throw new Error(`Duplicate or missing Frame id: ${frame.id || "<missing>"}.`);
     if (!frame.language || !registry[frame.language]?.roles?.learning) throw new Error(`Frame ${frame.id} must have exactly one enabled learning language.`);
     if (!frame.formula) throw new Error(`Frame ${frame.id} is missing its formula.`);
+    if (!frame.example) throw new Error(`Frame ${frame.id} is missing its primary example.`);
     if (frame.move_id && !moveIds.has(frame.move_id)) throw new Error(`Frame ${frame.id} references missing Move ${frame.move_id}.`);
-    for (const locale of Object.keys(frame.translations || {})) {
-      if (!registry[locale]?.roles?.translation) throw new Error(`Frame ${frame.id} uses unsupported translation locale ${locale}.`);
+    validateTranslationMap(frame.id, frame.translations, registry);
+    for (const example of frame.examples || []) {
+      if (!example.text) throw new Error(`Frame ${frame.id} contains an empty example.`);
+      validateTranslationMap(frame.id, example.translations, registry);
+    }
+    if (frame.source_kind === "language_extension") {
+      if ((frame.examples || []).length < 2) throw new Error(`Language extension ${frame.id} requires at least two additional examples.`);
+      if (!frame.review?.status || !frame.review?.basis) throw new Error(`Language extension ${frame.id} requires explicit editorial review metadata.`);
     }
     frameIds.add(frame.id);
   }
@@ -215,12 +252,14 @@ export function validateDomainModel(model, registry = languageRegistry) {
   return model;
 }
 
-export function buildDomainModel(patterns, { registry = languageRegistry, reviewedMappings = [] } = {}) {
+export function buildDomainModel(patterns, { registry = languageRegistry, reviewedMappings = [], frameExtensions = [] } = {}) {
   if (!Array.isArray(patterns) || !patterns.length) throw new Error("Multilingual domain model requires canonical patterns.");
 
-  const frames = patterns
-    .flatMap((pattern) => (pattern.langs || []).map((languageRecord) => frameRecord(pattern, languageRecord, registry)))
-    .sort((a, b) => a.id.localeCompare(b.id));
+  const canonicalFrames = patterns
+    .flatMap((pattern) => (pattern.langs || []).map((languageRecord) => frameRecord(pattern, languageRecord, registry)));
+  const occupiedFrameIds = new Set(canonicalFrames.map((frame) => frame.id));
+  const extensionFrames = extensionFrameRecords(patterns, frameExtensions, registry, occupiedFrameIds);
+  const frames = [...canonicalFrames, ...extensionFrames].sort((a, b) => a.id.localeCompare(b.id));
   const moves = moveRecords(patterns, frames);
   const bridges = bridgeRecords(reviewedMappings, frames);
   const index = patternIndex(patterns, frames);
@@ -229,6 +268,7 @@ export function buildDomainModel(patterns, { registry = languageRegistry, review
     schemaVersion: 1,
     modelVersion: DOMAIN_MODEL_VERSION,
     patternCount: patterns.length,
+    extensionFrameCount: extensionFrames.length,
     moves,
     frames,
     bridges,
