@@ -1,0 +1,77 @@
+[
+  {
+    "id": "XTHPST001",
+    "title_ru": "Сформулировать сильнейшее возражение",
+    "group_id": "PST",
+    "set_id": "PST",
+    "logic": "steelman opposing concern",
+    "metaphor_ru": "Проверяйте идею не слабым возражением, а лучшей версией чужой позиции.",
+    "reasoning": {"move": "Perspective", "what_it_does_en": "Restate the strongest reasonable concern before defending a position.", "what_it_does_ru": "Сформулировать сильнейшее разумное возражение до защиты своей позиции."},
+    "practice": {"mode": "produce", "cue": "State the strongest reasonable objection to your own position."},
+    "langs": [
+      {"lang": "en", "formula": "The strongest concern on the other side is that [X].", "example": "The strongest concern on the other side is that the simpler design may hide operational risk.", "translation": "Самое сильное возражение другой стороны состоит в том, что более простой дизайн может скрыть операционный риск.", "examples": [{"text": "The strongest concern on the other side is that faster release cycles may reduce review quality.", "translation_ru": "Самое сильное возражение другой стороны в том, что более быстрые релизы могут снизить качество проверки."}, {"text": "The strongest concern on the other side is that open access may weaken control over reuse.", "translation_ru": "Самое сильное возражение другой стороны в том, что открытый доступ может ослабить контроль над повторным использованием."}]},
+      {"lang": "de", "formula": "Der stärkste Einwand der anderen Seite ist, dass [X].", "example": "Der stärkste Einwand der anderen Seite ist, dass das einfachere Design operative Risiken verdecken könnte.", "translation": "Самое сильное возражение другой стороны состоит в том, что более простой дизайн может скрыть операционный риск.", "examples": [{"text": "Der stärkste Einwand der anderen Seite ist, dass schnellere Release-Zyklen die Prüfqualität senken könnten.", "translation_ru": "Самое сильное возражение другой стороны в том, что более быстрые релизы могут снизить качество проверки."}, {"text": "Der stärkste Einwand der anderen Seite ist, dass offener Zugang die Kontrolle über Wiederverwendung schwächen könnte.", "translation_ru": "Самое сильное возражение другой стороны в том, что открытый доступ может ослабить контроль над повторным использованием."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHPST002",
+    "title_ru": "Отделить позицию от интереса",
+    "group_id": "PST",
+    "set_id": "PST",
+    "logic": "position versus interest",
+    "metaphor_ru": "За жёсткой позицией часто стоит более гибкий интерес, который можно удовлетворить иначе.",
+    "reasoning": {"move": "Perspective", "what_it_does_en": "Separate a stated demand from the underlying need it is trying to protect.", "what_it_does_ru": "Отделить заявленное требование от потребности, которую оно защищает."},
+    "practice": {"mode": "produce", "cue": "Translate a position into the interest behind it."},
+    "langs": [
+      {"lang": "en", "formula": "Their position is [X], but the underlying interest may be [Y].", "example": "Their position is to block the change, but the underlying interest may be predictability during cutover.", "translation": "Их позиция — заблокировать изменение, но лежащий в основе интерес может состоять в предсказуемости во время cutover.", "examples": [{"text": "Their position is to keep every approval, but the underlying interest may be accountability.", "translation_ru": "Их позиция — сохранить все согласования, но реальный интерес может быть в ответственности."}, {"text": "Their position is to require a custom solution, but the underlying interest may be control over exceptions.", "translation_ru": "Их позиция — требовать кастомное решение, но реальный интерес может быть в контроле исключений."}]},
+      {"lang": "de", "formula": "Ihre Position ist [X], aber das zugrunde liegende Interesse könnte [Y] sein.", "example": "Ihre Position ist, die Änderung zu blockieren, aber das zugrunde liegende Interesse könnte Vorhersehbarkeit während des Cutovers sein.", "translation": "Их позиция — заблокировать изменение, но лежащий в основе интерес может состоять в предсказуемости во время cutover.", "examples": [{"text": "Ihre Position ist, jede Freigabe beizubehalten, aber das zugrunde liegende Interesse könnte Verantwortlichkeit sein.", "translation_ru": "Их позиция — сохранить все согласования, но реальный интерес может быть в ответственности."}, {"text": "Ihre Position ist, eine individuelle Lösung zu verlangen, aber das zugrunde liegende Interesse könnte Kontrolle über Ausnahmen sein.", "translation_ru": "Их позиция — требовать кастомное решение, но реальный интерес может быть в контроле исключений."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHPST003",
+    "title_ru": "Разделить факт и ценностное суждение",
+    "group_id": "PST",
+    "set_id": "PST",
+    "logic": "facts versus values",
+    "metaphor_ru": "Люди могут соглашаться с фактами и расходиться в том, что считают важным.",
+    "reasoning": {"move": "Perspective", "what_it_does_en": "Identify whether disagreement is about evidence or about priorities and values.", "what_it_does_ru": "Определить, спор идёт о данных или о приоритетах и ценностях."},
+    "practice": {"mode": "produce", "cue": "Separate the factual disagreement from the value judgement."},
+    "langs": [
+      {"lang": "en", "formula": "We may agree on [X] and still disagree on how much weight to give [Y].", "example": "We may agree on the delivery risk and still disagree on how much weight to give speed.", "translation": "Мы можем соглашаться по поводу риска поставки и всё равно расходиться в том, какой вес придавать скорости.", "examples": [{"text": "We may agree on the cost and still disagree on how much weight to give independence.", "translation_ru": "Мы можем соглашаться по стоимости и расходиться в том, какой вес придавать независимости."}, {"text": "We may agree on the evidence and still disagree on how much weight to give reversibility.", "translation_ru": "Мы можем соглашаться по данным и расходиться в том, какой вес придавать обратимости решения."}]},
+      {"lang": "de", "formula": "Wir können uns bei [X] einig sein und [Y] trotzdem unterschiedlich gewichten.", "example": "Wir können uns beim Lieferrisiko einig sein und Geschwindigkeit trotzdem unterschiedlich gewichten.", "translation": "Мы можем соглашаться по поводу риска поставки и всё равно расходиться в том, какой вес придавать скорости.", "examples": [{"text": "Wir können uns bei den Kosten einig sein und Unabhängigkeit trotzdem unterschiedlich gewichten.", "translation_ru": "Мы можем соглашаться по стоимости и расходиться в том, какой вес придавать независимости."}, {"text": "Wir können uns bei der Evidenz einig sein und Reversibilität trotzdem unterschiedlich gewichten.", "translation_ru": "Мы можем соглашаться по данным и расходиться в том, какой вес придавать обратимости решения."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHPST004",
+    "title_ru": "Нейтрально переформулировать спор",
+    "group_id": "PST",
+    "set_id": "PST",
+    "logic": "neutral reformulation",
+    "metaphor_ru": "Смените обвинительную формулировку на описание реального разногласия.",
+    "reasoning": {"move": "Perspective", "what_it_does_en": "Rephrase a conflict so both sides can recognize the underlying trade-off.", "what_it_does_ru": "Переформулировать конфликт так, чтобы обе стороны видели реальный компромисс."},
+    "practice": {"mode": "produce", "cue": "Rewrite a loaded disagreement as a neutral trade-off."},
+    "langs": [
+      {"lang": "en", "formula": "A more neutral way to state the disagreement is that [X] prioritises [Y], while [Z] prioritises [W].", "example": "A more neutral way to state the disagreement is that operations prioritises stability, while product prioritises iteration speed.", "translation": "Нейтральнее сказать, что operations отдаёт приоритет стабильности, а product — скорости итераций.", "examples": [{"text": "A more neutral way to state the disagreement is that finance prioritises cost control, while engineering prioritises resilience.", "translation_ru": "Нейтральнее сказать, что финансы ставят выше контроль затрат, а инженеры — устойчивость."}, {"text": "A more neutral way to state the disagreement is that one team prioritises consistency, while the other prioritises local flexibility.", "translation_ru": "Нейтральнее сказать, что одна команда ставит выше единообразие, а другая — локальную гибкость."}]},
+      {"lang": "de", "formula": "Neutraler formuliert priorisiert [X] [Y], während [Z] [W] priorisiert.", "example": "Neutraler formuliert priorisiert Operations Stabilität, während Product die Geschwindigkeit der Iteration priorisiert.", "translation": "Нейтральнее сказать, что operations отдаёт приоритет стабильности, а product — скорости итераций.", "examples": [{"text": "Neutraler formuliert priorisiert Finance Kostenkontrolle, während Engineering Resilienz priorisiert.", "translation_ru": "Нейтральнее сказать, что финансы ставят выше контроль затрат, а инженеры — устойчивость."}, {"text": "Neutraler formuliert priorisiert ein Team Konsistenz, während das andere lokale Flexibilität priorisiert.", "translation_ru": "Нейтральнее сказать, что одна команда ставит выше единообразие, а другая — локальную гибкость."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHPST005",
+    "title_ru": "Спросить, что было бы разумно с другой точки зрения",
+    "group_id": "PST",
+    "set_id": "PST",
+    "logic": "perspective-conditioned reasoning",
+    "metaphor_ru": "Решение может выглядеть нелогичным только потому, что мы смотрим не с той позиции.",
+    "reasoning": {"move": "Perspective", "what_it_does_en": "Evaluate a choice using another actor's constraints and incentives.", "what_it_does_ru": "Оценить решение через ограничения и стимулы другого участника."},
+    "practice": {"mode": "produce", "cue": "Reason from another actor's incentives and constraints."},
+    "langs": [
+      {"lang": "en", "formula": "From [X]'s perspective, [Y] is reasonable if [Z].", "example": "From the reviewer's perspective, a slower process is reasonable if it prevents irreversible errors.", "translation": "С точки зрения проверяющего более медленный процесс разумен, если он предотвращает необратимые ошибки.", "examples": [{"text": "From the customer's perspective, duplication is reasonable if it reduces the risk of losing data.", "translation_ru": "С точки зрения клиента дублирование разумно, если снижает риск потери данных."}, {"text": "From the maintainer's perspective, rejecting another dependency is reasonable if ownership is unclear.", "translation_ru": "С точки зрения сопровождающего отказ от ещё одной зависимости разумен, если непонятно, кто будет ею владеть."}]},
+      {"lang": "de", "formula": "Aus Sicht von [X] ist [Y] sinnvoll, wenn [Z].", "example": "Aus Sicht des Prüfers ist ein langsamerer Prozess sinnvoll, wenn er irreversible Fehler verhindert.", "translation": "С точки зрения проверяющего более медленный процесс разумен, если он предотвращает необратимые ошибки.", "examples": [{"text": "Aus Sicht des Kunden ist Redundanz sinnvoll, wenn sie das Risiko von Datenverlust reduziert.", "translation_ru": "С точки зрения клиента дублирование разумно, если снижает риск потери данных."}, {"text": "Aus Sicht des Maintainers ist es sinnvoll, eine weitere Abhängigkeit abzulehnen, wenn die Verantwortung unklar ist.", "translation_ru": "С точки зрения сопровождающего отказ от ещё одной зависимости разумен, если непонятно, кто будет ею владеть."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

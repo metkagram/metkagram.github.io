@@ -1,0 +1,77 @@
+[
+  {
+    "id": "XTHMETA001",
+    "title_ru": "Отличить узнавание от воспроизведения",
+    "group_id": "META",
+    "set_id": "META",
+    "logic": "recognition versus recall",
+    "metaphor_ru": "Узнать знакомую фразу легче, чем самостоятельно достать её из памяти.",
+    "reasoning": {"move": "Learn", "what_it_does_en": "Distinguish passive familiarity from the ability to produce a pattern without a prompt.", "what_it_does_ru": "Отличить пассивную знакомость от способности самостоятельно воспроизвести паттерн."},
+    "practice": {"mode": "produce", "cue": "State what you can recognise but cannot yet recall unaided."},
+    "langs": [
+      {"lang": "en", "formula": "I can recognise [X], but I cannot reliably produce it without [Y] yet.", "example": "I can recognise this contrast pattern, but I cannot reliably produce it without a prompt yet.", "translation": "Я узнаю этот контрастный паттерн, но пока не могу надёжно воспроизвести его без подсказки.", "examples": [{"text": "I can recognise the German word order, but I cannot reliably produce it without seeing the frame yet.", "translation_ru": "Я узнаю немецкий порядок слов, но пока не могу надёжно воспроизвести его без каркаса."}, {"text": "I can recognise the hedging phrase, but I cannot reliably produce it under time pressure yet.", "translation_ru": "Я узнаю фразу для смягчения, но пока не могу надёжно использовать её под давлением времени."}]},
+      {"lang": "de", "formula": "Ich erkenne [X], kann es aber noch nicht zuverlässig ohne [Y] selbst produzieren.", "example": "Ich erkenne dieses Kontrastmuster, kann es aber noch nicht zuverlässig ohne Hinweis selbst produzieren.", "translation": "Я узнаю этот контрастный паттерн, но пока не могу надёжно воспроизвести его без подсказки.", "examples": [{"text": "Ich erkenne die deutsche Wortstellung, kann sie aber noch nicht zuverlässig ohne den Frame selbst produzieren.", "translation_ru": "Я узнаю немецкий порядок слов, но пока не могу надёжно воспроизвести его без каркаса."}, {"text": "Ich erkenne die Abschwächungsformulierung, kann sie aber unter Zeitdruck noch nicht zuverlässig selbst produzieren.", "translation_ru": "Я узнаю фразу для смягчения, но пока не могу надёжно использовать её под давлением времени."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHMETA002",
+    "title_ru": "Назвать точку путаницы",
+    "group_id": "META",
+    "set_id": "META",
+    "logic": "confusion diagnosis",
+    "metaphor_ru": "Полезнее знать не «я не понимаю», а между какими двумя вещами возникает путаница.",
+    "reasoning": {"move": "Learn", "what_it_does_en": "Turn a vague learning difficulty into a specific contrast that can be practised.", "what_it_does_ru": "Превратить расплывчатую трудность в конкретный контраст для практики."},
+    "practice": {"mode": "produce", "cue": "Name the exact distinction that is still unstable."},
+    "langs": [
+      {"lang": "en", "formula": "The part I still confuse is the difference between [X] and [Y].", "example": "The part I still confuse is the difference between sounding cautious and sounding uncertain.", "translation": "Я всё ещё путаю разницу между осторожной формулировкой и неуверенной формулировкой.", "examples": [{"text": "The part I still confuse is the difference between a trigger and an underlying cause.", "translation_ru": "Я всё ещё путаю разницу между триггером и первопричиной."}, {"text": "The part I still confuse is the difference between a necessary condition and a sufficient one.", "translation_ru": "Я всё ещё путаю необходимое и достаточное условие."}]},
+      {"lang": "de", "formula": "Was ich noch verwechsle, ist der Unterschied zwischen [X] und [Y].", "example": "Was ich noch verwechsle, ist der Unterschied zwischen einer vorsichtigen und einer unsicheren Formulierung.", "translation": "Я всё ещё путаю разницу между осторожной формулировкой и неуверенной формулировкой.", "examples": [{"text": "Was ich noch verwechsle, ist der Unterschied zwischen einem Auslöser und der zugrunde liegenden Ursache.", "translation_ru": "Я всё ещё путаю разницу между триггером и первопричиной."}, {"text": "Was ich noch verwechsle, ist der Unterschied zwischen einer notwendigen und einer hinreichenden Bedingung.", "translation_ru": "Я всё ещё путаю необходимое и достаточное условие."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHMETA003",
+    "title_ru": "Найти повторяющийся тип ошибки",
+    "group_id": "META",
+    "set_id": "META",
+    "logic": "error pattern detection",
+    "metaphor_ru": "Одна ошибка может быть случайностью, повторяющийся тип ошибки уже подсказывает, что тренировать.",
+    "reasoning": {"move": "Learn", "what_it_does_en": "Look for a recurring error class rather than treating each mistake as isolated.", "what_it_does_ru": "Искать повторяющийся класс ошибок вместо анализа каждой ошибки отдельно."},
+    "practice": {"mode": "produce", "cue": "Describe the recurring error pattern across examples."},
+    "langs": [
+      {"lang": "en", "formula": "The recurring pattern in my errors is that I [X] when I should [Y].", "example": "The recurring pattern in my errors is that I state conclusions too strongly when I should hedge them.", "translation": "Повторяющийся паттерн моих ошибок в том, что я формулирую выводы слишком категорично, когда нужно их смягчать.", "examples": [{"text": "The recurring pattern in my errors is that I translate Russian word order directly when I should rebuild the German frame.", "translation_ru": "Повторяющаяся ошибка в том, что я напрямую переношу русский порядок слов вместо перестройки немецкого каркаса."}, {"text": "The recurring pattern in my errors is that I explain the symptom when I should identify the mechanism.", "translation_ru": "Повторяющаяся ошибка в том, что я объясняю симптом вместо определения механизма."}]},
+      {"lang": "de", "formula": "Das wiederkehrende Muster in meinen Fehlern ist, dass ich [X], obwohl ich [Y] sollte.", "example": "Das wiederkehrende Muster in meinen Fehlern ist, dass ich Schlussfolgerungen zu stark formuliere, obwohl ich sie abschwächen sollte.", "translation": "Повторяющийся паттерн моих ошибок в том, что я формулирую выводы слишком категорично, когда нужно их смягчать.", "examples": [{"text": "Das wiederkehrende Muster in meinen Fehlern ist, dass ich die russische Wortstellung direkt übertrage, obwohl ich den deutschen Frame neu aufbauen sollte.", "translation_ru": "Повторяющаяся ошибка в том, что я напрямую переношу русский порядок слов вместо перестройки немецкого каркаса."}, {"text": "Das wiederkehrende Muster in meinen Fehlern ist, dass ich das Symptom erkläre, obwohl ich den Mechanismus identifizieren sollte.", "translation_ru": "Повторяющаяся ошибка в том, что я объясняю симптом вместо определения механизма."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHMETA004",
+    "title_ru": "Выбрать следующий объект практики",
+    "group_id": "META",
+    "set_id": "META",
+    "logic": "next practice target",
+    "metaphor_ru": "После ошибки полезен не общий вывод «учить больше», а следующий конкретный навык.",
+    "reasoning": {"move": "Learn", "what_it_does_en": "Convert feedback into one bounded next practice target.", "what_it_does_ru": "Превратить обратную связь в один ограниченный следующий объект практики."},
+    "practice": {"mode": "produce", "cue": "Choose one concrete pattern or contrast to practise next."},
+    "langs": [
+      {"lang": "en", "formula": "The next thing I should practise is [X], because it is the smallest gap blocking [Y].", "example": "The next thing I should practise is causal contrast, because it is the smallest gap blocking clearer analysis.", "translation": "Следующим мне стоит тренировать причинные контрасты, потому что это самый маленький пробел, мешающий более ясному анализу.", "examples": [{"text": "The next thing I should practise is recall without translation, because it is the smallest gap blocking fluent use.", "translation_ru": "Следующим мне стоит тренировать воспроизведение без перевода, потому что это самый маленький пробел, мешающий свободному использованию."}, {"text": "The next thing I should practise is distinguishing claim strength, because it is the smallest gap blocking precise recommendations.", "translation_ru": "Следующим мне стоит тренировать различение силы утверждений, потому что это мешает точным рекомендациям."}]},
+      {"lang": "de", "formula": "Als Nächstes sollte ich üben, [X], weil das die kleinste Lücke ist, die [Y] noch blockiert.", "example": "Als Nächstes sollte ich üben, kausale Kontraste zu unterscheiden, weil das die kleinste Lücke ist, die eine klarere Analyse noch blockiert.", "translation": "Следующим мне стоит тренировать причинные контрасты, потому что это самый маленький пробел, мешающий более ясному анализу.", "examples": [{"text": "Als Nächstes sollte ich üben, ohne Übersetzung abzurufen, weil das die kleinste Lücke ist, die eine flüssige Anwendung noch blockiert.", "translation_ru": "Следующим мне стоит тренировать воспроизведение без перевода, потому что это самый маленький пробел, мешающий свободному использованию."}, {"text": "Als Nächstes sollte ich üben, die Stärke von Aussagen zu unterscheiden, weil das die kleinste Lücke ist, die präzise Empfehlungen noch blockiert.", "translation_ru": "Следующим мне стоит тренировать различение силы утверждений, потому что это мешает точным рекомендациям."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHMETA005",
+    "title_ru": "Извлечь правило после обратной связи",
+    "group_id": "META",
+    "set_id": "META",
+    "logic": "learning from feedback",
+    "metaphor_ru": "Обратная связь полезна, если из конкретного исправления получается переносимое правило.",
+    "reasoning": {"move": "Learn", "what_it_does_en": "Extract a reusable rule from one correction instead of memorising the corrected sentence only.", "what_it_does_ru": "Извлечь переносимое правило из одного исправления вместо запоминания только исправленной фразы."},
+    "practice": {"mode": "produce", "cue": "State the general rule you can reuse after receiving feedback."},
+    "langs": [
+      {"lang": "en", "formula": "The general lesson from this correction is that when [X], I should [Y].", "example": "The general lesson from this correction is that when evidence is incomplete, I should calibrate the strength of the conclusion.", "translation": "Общий вывод из этого исправления в том, что при неполных данных нужно соразмерять силу вывода.", "examples": [{"text": "The general lesson from this correction is that when two explanations fit, I should look for a discriminating test.", "translation_ru": "Общий вывод в том, что если подходят два объяснения, нужно искать тест, который их различит."}, {"text": "The general lesson from this correction is that when the listener resists a position, I should look for the interest behind it.", "translation_ru": "Общий вывод в том, что при сопротивлении позиции стоит искать лежащий за ней интерес."}]},
+      {"lang": "de", "formula": "Die allgemeine Lehre aus dieser Korrektur ist, dass ich bei [X] [Y] sollte.", "example": "Die allgemeine Lehre aus dieser Korrektur ist, dass ich bei unvollständiger Evidenz die Stärke der Schlussfolgerung kalibrieren sollte.", "translation": "Общий вывод из этого исправления в том, что при неполных данных нужно соразмерять силу вывода.", "examples": [{"text": "Die allgemeine Lehre aus dieser Korrektur ist, dass ich bei zwei passenden Erklärungen nach einem unterscheidenden Test suchen sollte.", "translation_ru": "Общий вывод в том, что если подходят два объяснения, нужно искать тест, который их различит."}, {"text": "Die allgemeine Lehre aus dieser Korrektur ist, dass ich bei Widerstand gegen eine Position nach dem dahinterliegenden Interesse suchen sollte.", "translation_ru": "Общий вывод в том, что при сопротивлении позиции стоит искать лежащий за ней интерес."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

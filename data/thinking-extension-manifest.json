@@ -3,18 +3,27 @@
   "status": "curriculum_extension",
   "title": "Thinking in Language",
   "description": "Additive B2–C1 curriculum layer for reusable reasoning language. Existing study sets remain unchanged.",
-  "setIds": ["FRM", "UNC", "SYS", "DEC"],
-  "patternCount": 20,
+  "setIds": ["FRM", "UNC", "SYS", "DEC", "CDG", "HYP", "PST", "META"],
+  "patternCount": 40,
   "patternFiles": [
     "data/reasoning-frames/thinking-framing-v1.json",
     "data/reasoning-frames/thinking-uncertainty-v1.json",
     "data/reasoning-frames/thinking-systems-v1.json",
-    "data/reasoning-frames/thinking-decisions-v1.json"
+    "data/reasoning-frames/thinking-decisions-v1.json",
+    "data/reasoning-frames/thinking-causal-diagnosis-v1.json",
+    "data/reasoning-frames/thinking-hypothesis-testing-v1.json",
+    "data/reasoning-frames/thinking-perspective-taking-v1.json",
+    "data/reasoning-frames/thinking-metacognition-v1.json"
+  ],
+  "phases": [
+    {"id": 1, "setIds": ["FRM", "UNC", "SYS", "DEC"], "focus": "frame problems, calibrate uncertainty, reason about systems, and make decisions"},
+    {"id": 2, "setIds": ["CDG", "HYP", "PST", "META"], "focus": "diagnose causes, test explanations, take perspectives, and learn from feedback"}
   ],
   "principles": [
     "Add new useful sets instead of deleting established curriculum.",
     "A thinking Frame must be both natural language and a reusable reasoning operation.",
     "English and German Frames include Russian learner-support translations.",
-    "Reasoning metadata should improve retrieval and relation discovery without replacing the canonical language examples."
+    "Reasoning metadata should improve retrieval and relation discovery without replacing the canonical language examples.",
+    "Frozen evaluation surfaces remain frozen; curriculum growth must not rewrite historical benchmark claims."
   ]
 }

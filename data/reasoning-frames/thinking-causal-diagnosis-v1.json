@@ -1,0 +1,77 @@
+[
+  {
+    "id": "XTHCDG001",
+    "title_ru": "Отделить триггер от причины",
+    "group_id": "CDG",
+    "set_id": "CDG",
+    "logic": "trigger versus cause",
+    "metaphor_ru": "Событие может запустить сбой, не будучи механизмом, который сделал сбой возможным.",
+    "reasoning": {"move": "Cause", "what_it_does_en": "Separate the event that exposed a problem from the mechanism that produced it.", "what_it_does_ru": "Отделить событие, проявившее проблему, от механизма, который её породил."},
+    "practice": {"mode": "produce", "cue": "Separate the trigger from the underlying cause."},
+    "langs": [
+      {"lang": "en", "formula": "[X] may have triggered [Y], but that does not make it the underlying cause.", "example": "The release may have triggered the incident, but that does not make it the underlying cause.", "translation": "Релиз мог спровоцировать инцидент, но это не делает его первопричиной.", "examples": [{"text": "The traffic spike may have triggered the slowdown, but that does not make it the underlying cause.", "translation_ru": "Скачок трафика мог спровоцировать замедление, но это не делает его первопричиной."}, {"text": "The user action may have triggered the error, but that does not make it the underlying cause.", "translation_ru": "Действие пользователя могло вызвать ошибку, но это не делает его первопричиной."}]},
+      {"lang": "de", "formula": "[X] kann [Y] ausgelöst haben, ist damit aber nicht automatisch die zugrunde liegende Ursache.", "example": "Das Release kann den Vorfall ausgelöst haben, ist damit aber nicht automatisch die zugrunde liegende Ursache.", "translation": "Релиз мог спровоцировать инцидент, но это не делает его первопричиной.", "examples": [{"text": "Die Lastspitze kann die Verlangsamung ausgelöst haben, ist damit aber nicht automatisch die zugrunde liegende Ursache.", "translation_ru": "Скачок нагрузки мог спровоцировать замедление, но это не делает его первопричиной."}, {"text": "Die Nutzeraktion kann den Fehler ausgelöst haben, ist damit aber nicht automatisch die zugrunde liegende Ursache.", "translation_ru": "Действие пользователя могло вызвать ошибку, но это не делает его первопричиной."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHCDG002",
+    "title_ru": "Сравнить конкурирующие причины",
+    "group_id": "CDG",
+    "set_id": "CDG",
+    "logic": "competing causal explanations",
+    "metaphor_ru": "Не выбирайте первую правдоподобную причину, пока не сравнили её с альтернативой.",
+    "reasoning": {"move": "Cause", "what_it_does_en": "Compare competing mechanisms against the same observation.", "what_it_does_ru": "Сравнить конкурирующие механизмы на одном и том же наблюдении."},
+    "practice": {"mode": "produce", "cue": "Compare two plausible causal explanations."},
+    "langs": [
+      {"lang": "en", "formula": "If [X] were the main cause, we would expect [Y]; if [Z] were, we would expect [W].", "example": "If load were the main cause, we would expect failures across regions; if mapping were, we would expect them around the same field.", "translation": "Если бы главной причиной была нагрузка, сбои ожидались бы по регионам; если маппинг, то вокруг одного поля.", "examples": [{"text": "If permissions were the main cause, we would expect user-specific failures; if data quality were, we would expect record-specific failures.", "translation_ru": "Если бы причиной были права, сбои зависели бы от пользователя; если качество данных, то от записи."}, {"text": "If latency were the main cause, we would expect timeouts; if validation were, we would expect deterministic rejects.", "translation_ru": "Если бы причиной была задержка, ожидались бы тайм-ауты; если валидация, то стабильные отклонения."}]},
+      {"lang": "de", "formula": "Wenn [X] die Hauptursache wäre, würden wir [Y] erwarten; wenn es [Z] wäre, würden wir [W] erwarten.", "example": "Wenn die Last die Hauptursache wäre, würden wir Ausfälle über mehrere Regionen erwarten; wenn es das Mapping wäre, würden wir sie beim selben Feld erwarten.", "translation": "Если бы главной причиной была нагрузка, сбои ожидались бы по регионам; если маппинг, то вокруг одного поля.", "examples": [{"text": "Wenn Berechtigungen die Hauptursache wären, würden wir nutzerspezifische Fehler erwarten; bei Datenqualität eher datensatzspezifische.", "translation_ru": "Если бы причиной были права, сбои зависели бы от пользователя; если качество данных, то от записи."}, {"text": "Wenn Latenz die Hauptursache wäre, würden wir Timeouts erwarten; bei Validierung eher reproduzierbare Ablehnungen.", "translation_ru": "Если бы причиной была задержка, ожидались бы тайм-ауты; если валидация, то стабильные отклонения."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHCDG003",
+    "title_ru": "Найти промежуточный механизм",
+    "group_id": "CDG",
+    "set_id": "CDG",
+    "logic": "causal mechanism",
+    "metaphor_ru": "Между X и Y должен быть понятный механизм, иначе причинность остаётся красивой стрелкой.",
+    "reasoning": {"move": "Cause", "what_it_does_en": "Make the intermediate mechanism between a proposed cause and outcome explicit.", "what_it_does_ru": "Сделать явным промежуточный механизм между предполагаемой причиной и результатом."},
+    "practice": {"mode": "produce", "cue": "Name the mechanism connecting cause and effect."},
+    "langs": [
+      {"lang": "en", "formula": "The link from [X] to [Y] only makes sense if [Z] happens in between.", "example": "The link from missing ownership to slower resolution only makes sense if decisions are delayed in between.", "translation": "Связь между отсутствием ответственности и медленным решением понятна только если между ними задерживаются решения.", "examples": [{"text": "The link from bad data to low trust only makes sense if users repeatedly encounter inconsistent results in between.", "translation_ru": "Связь плохих данных с низким доверием понятна, если пользователи сталкиваются с непоследовательными результатами."}, {"text": "The link from extra checks to lower throughput only makes sense if the checks consume constrained reviewer time.", "translation_ru": "Связь дополнительных проверок с падением пропускной способности понятна, если проверки расходуют ограниченное время ревьюеров."}]},
+      {"lang": "de", "formula": "Der Zusammenhang zwischen [X] und [Y] ergibt nur Sinn, wenn dazwischen [Z] passiert.", "example": "Der Zusammenhang zwischen fehlender Verantwortung und langsamerer Lösung ergibt nur Sinn, wenn Entscheidungen dazwischen verzögert werden.", "translation": "Связь между отсутствием ответственности и медленным решением понятна только если между ними задерживаются решения.", "examples": [{"text": "Der Zusammenhang zwischen schlechten Daten und geringem Vertrauen ergibt nur Sinn, wenn Nutzer wiederholt inkonsistente Ergebnisse sehen.", "translation_ru": "Связь плохих данных с низким доверием понятна, если пользователи сталкиваются с непоследовательными результатами."}, {"text": "Der Zusammenhang zwischen zusätzlichen Prüfungen und geringerem Durchsatz ergibt nur Sinn, wenn die Prüfungen knappe Prüferzeit verbrauchen.", "translation_ru": "Связь дополнительных проверок с падением пропускной способности понятна, если проверки расходуют ограниченное время ревьюеров."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHCDG004",
+    "title_ru": "Не путать необходимое и достаточное",
+    "group_id": "CDG",
+    "set_id": "CDG",
+    "logic": "necessary versus sufficient cause",
+    "metaphor_ru": "Фактор может быть необходимым условием и всё равно не объяснять результат самостоятельно.",
+    "reasoning": {"move": "Cause", "what_it_does_en": "Distinguish a necessary condition from a condition sufficient to produce the outcome.", "what_it_does_ru": "Отличить необходимое условие от условия, достаточного для результата."},
+    "practice": {"mode": "produce", "cue": "State whether a factor is necessary, sufficient, or neither."},
+    "langs": [
+      {"lang": "en", "formula": "[X] may be necessary for [Y], but it is not sufficient on its own.", "example": "Access may be necessary for adoption, but it is not sufficient on its own.", "translation": "Доступ может быть необходим для внедрения, но сам по себе недостаточен.", "examples": [{"text": "A valid record may be necessary for replication, but it is not sufficient on its own.", "translation_ru": "Корректная запись может быть необходима для репликации, но сама по себе недостаточна."}, {"text": "Funding may be necessary for the programme, but it is not sufficient on its own.", "translation_ru": "Финансирование может быть необходимо программе, но само по себе недостаточно."}]},
+      {"lang": "de", "formula": "[X] kann für [Y] notwendig sein, ist allein aber nicht hinreichend.", "example": "Zugang kann für die Einführung notwendig sein, ist allein aber nicht hinreichend.", "translation": "Доступ может быть необходим для внедрения, но сам по себе недостаточен.", "examples": [{"text": "Ein gültiger Datensatz kann für die Replikation notwendig sein, ist allein aber nicht hinreichend.", "translation_ru": "Корректная запись может быть необходима для репликации, но сама по себе недостаточна."}, {"text": "Finanzierung kann für das Programm notwendig sein, ist allein aber nicht hinreichend.", "translation_ru": "Финансирование может быть необходимо программе, но само по себе недостаточно."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHCDG005",
+    "title_ru": "Спросить, что изменилось перед эффектом",
+    "group_id": "CDG",
+    "set_id": "CDG",
+    "logic": "change-based diagnosis",
+    "metaphor_ru": "Изменение не доказывает причину, но помогает сузить область поиска.",
+    "reasoning": {"move": "Cause", "what_it_does_en": "Use a change in conditions to narrow causal investigation without treating timing as proof.", "what_it_does_ru": "Использовать изменение условий для сужения поиска причины, не считая совпадение во времени доказательством."},
+    "practice": {"mode": "produce", "cue": "Identify what changed before the outcome and what stayed constant."},
+    "langs": [
+      {"lang": "en", "formula": "What changed before [X], and what stayed the same?", "example": "What changed before the failure rate increased, and what stayed the same?", "translation": "Что изменилось перед ростом числа сбоев, а что осталось прежним?", "examples": [{"text": "What changed before users stopped returning, and what stayed the same?", "translation_ru": "Что изменилось перед тем, как пользователи перестали возвращаться, а что осталось прежним?"}, {"text": "What changed before processing slowed down, and what stayed the same?", "translation_ru": "Что изменилось перед замедлением обработки, а что осталось прежним?"}]},
+      {"lang": "de", "formula": "Was hat sich vor [X] verändert, und was ist gleich geblieben?", "example": "Was hat sich verändert, bevor die Fehlerquote gestiegen ist, und was ist gleich geblieben?", "translation": "Что изменилось перед ростом числа сбоев, а что осталось прежним?", "examples": [{"text": "Was hat sich verändert, bevor Nutzer nicht mehr zurückkamen, und was ist gleich geblieben?", "translation_ru": "Что изменилось перед тем, как пользователи перестали возвращаться, а что осталось прежним?"}, {"text": "Was hat sich verändert, bevor die Verarbeitung langsamer wurde, und was ist gleich geblieben?", "translation_ru": "Что изменилось перед замедлением обработки, а что осталось прежним?"}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

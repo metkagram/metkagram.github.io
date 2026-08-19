@@ -5,10 +5,17 @@ import test from "node:test";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
-const topicsSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "discovery-topics.json"), "utf8"));
-const topicExtensions = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "discovery-topics-extension.json"), "utf8"));
-const allTopics = [...topicsSource.topics, ...topicExtensions.topics];
-const opportunitiesSource = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "partnership-opportunities.json"), "utf8"));
+const DATA = path.join(ROOT, "data");
+const topicsSource = JSON.parse(fs.readFileSync(path.join(DATA, "discovery-topics.json"), "utf8"));
+const topicExtensionFiles = fs.readdirSync(DATA)
+  .filter((name) => /^discovery-topics-extension(?:-[a-z0-9-]+)?\.json$/.test(name))
+  .sort();
+const topicExtensions = topicExtensionFiles.map((name) => ({
+  name,
+  payload: JSON.parse(fs.readFileSync(path.join(DATA, name), "utf8"))
+}));
+const allTopics = [topicsSource, ...topicExtensions.map((entry) => entry.payload)].flatMap((payload) => payload.topics);
+const opportunitiesSource = JSON.parse(fs.readFileSync(path.join(DATA, "partnership-opportunities.json"), "utf8"));
 const studySets = JSON.parse(fs.readFileSync(path.join(DIST, "data", "study-sets.json"), "utf8"));
 const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
 const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "site-pages.json"), "utf8"));
@@ -19,9 +26,13 @@ function html(...parts) {
 
 test("Pattern Atlas topics are curated against real study sets", () => {
   assert.equal(topicsSource.schemaVersion, 1);
-  assert.equal(topicExtensions.schemaVersion, 1);
+  assert.ok(topicExtensions.length >= 1, "at least one additive discovery extension is expected");
+  for (const { name, payload } of topicExtensions) {
+    assert.equal(payload.schemaVersion, 1, `${name} must use schemaVersion 1`);
+    assert.ok(Array.isArray(payload.topics), `${name} must expose topics`);
+  }
   assert.ok(allTopics.length >= 10);
-  assert.ok(allTopics.length <= 30, "discovery layer should stay deliberately curated");
+  assert.ok(allTopics.length <= 40, "discovery layer should stay deliberately curated rather than keyword-generated");
 
   const validSets = new Set(studySets.sets.map((set) => set.id));
   const ids = new Set(allTopics.map((topic) => topic.id));

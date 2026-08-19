@@ -1,52 +1,70 @@
 # Thinking in Language — curriculum backlog
 
-Status: editorial backlog. New sets are additive; established Metkagram study sets are not candidates for deletion merely because this layer expands.
+Status: Phase 2 implemented. New sets remain additive; established Metkagram study sets are not candidates for deletion merely because this layer expands.
 
-## Phase 2 candidates
+## Implemented layers
 
-### Causal diagnosis
+### Phase 1 · Frame and decide
 
-Learner job: explain why something happened without collapsing correlation, mechanism, trigger, and root cause into one claim.
+- FRM — Problem framing and reframing
+- UNC — Reasoning under uncertainty
+- SYS — Systems thinking
+- DEC — Decision quality and trade-offs
 
-Candidate operations:
-- distinguish trigger from underlying cause;
-- compare competing causal explanations;
-- trace a causal chain through intermediate steps;
-- state necessary versus sufficient conditions;
-- identify what evidence would support one mechanism over another.
+### Phase 2 · Diagnose, test, understand, learn
 
-### Hypothesis testing
+- CDG — Causal diagnosis
+- HYP — Hypothesis testing
+- PST — Perspective taking
+- META — Metacognitive learning
 
-Learner job: turn an explanation into something that could be checked rather than defended indefinitely.
+Each implemented set starts with five curated B2–C1 Frames in English and German with Russian learner-support translations and practice examples.
 
-Candidate operations:
-- state a testable hypothesis;
-- derive an observable prediction;
-- name a falsifying observation;
-- distinguish confirmation from absence of contradiction;
-- compare a hypothesis with a simpler alternative.
+## Phase 3 candidates
 
-### Perspective taking
+### Forecasting and calibration
 
-Learner job: represent another viewpoint accurately before agreeing, disagreeing, negotiating, or deciding.
+Learner job: make a prediction with an explicit confidence level, state what drives it, and update it when evidence changes.
 
 Candidate operations:
-- state the other side's strongest concern;
-- separate interests from stated positions;
-- explain how the same evidence looks under another objective;
-- identify a disagreement about values versus facts;
-- reformulate an objection in neutral language.
+- give a bounded forecast rather than a categorical prediction;
+- name the assumptions that dominate the forecast;
+- distinguish confidence from consequence severity;
+- update a forecast after new evidence;
+- explain why uncertainty widened or narrowed.
 
-### Metacognitive learning
+### Counterfactual diagnosis
 
-Learner job: notice what is understood, what only feels familiar, and what needs retrieval or another explanation.
+Learner job: test an explanation by asking what should have happened under a different condition.
 
 Candidate operations:
-- distinguish recognition from recall;
-- state what part is still unclear;
-- identify the error pattern behind a mistake;
-- choose the next practice target;
-- explain what changed after feedback.
+- ask what would have happened without X;
+- compare actual and counterfactual paths;
+- isolate one changed condition;
+- identify a confounder;
+- state the limit of the counterfactual claim.
+
+### Strategic sequencing
+
+Learner job: decide what to do first when several useful actions compete for limited time or capacity.
+
+Candidate operations:
+- identify an enabling step;
+- distinguish urgent from irreversible;
+- defer a decision while preserving options;
+- sequence learning before scaling;
+- explain dependency-driven priority.
+
+### Argument repair
+
+Learner job: improve a weak argument instead of merely attacking it.
+
+Candidate operations:
+- identify the missing premise;
+- narrow an overbroad claim;
+- separate evidence from conclusion;
+- repair a false dichotomy;
+- state the strongest version that the evidence actually supports.
 
 ## Acceptance rule for a new set
 
@@ -58,8 +76,9 @@ A candidate set should enter the public curriculum only when:
 4. each Frame has at least three usable examples per learning language counting the canonical example;
 5. the set has a clear learner-facing job and can be discovered without knowing an internal ID;
 6. automated validation confirms stable IDs, translations, quality metadata, pages, API records, sitemap inclusion, and internal links;
-7. expansion does not require deleting an established study set.
+7. expansion does not require deleting an established study set;
+8. curriculum growth does not silently alter frozen benchmark claims.
 
 ## Longer-term set families
 
-After Phase 2, useful candidates include strategic sequencing, model comparison, counterfactual reasoning, error analysis, collaborative problem solving, and reflective writing. Add them only when the language itself is worth practising, not because a taxonomy has an empty box.
+Useful later candidates include model comparison, collaborative problem solving, reflective writing, prioritisation under constraints, and transfer from feedback into deliberate practice. Add them only when the language itself is worth practising, not because a taxonomy has an empty box.

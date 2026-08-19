@@ -1,0 +1,77 @@
+[
+  {
+    "id": "XTHHYP001",
+    "title_ru": "Сформулировать проверяемую гипотезу",
+    "group_id": "HYP",
+    "set_id": "HYP",
+    "logic": "testable hypothesis",
+    "metaphor_ru": "Хорошая гипотеза говорит не только что мы думаем, но и что должно наблюдаться, если мы правы.",
+    "reasoning": {"move": "Test", "what_it_does_en": "Turn a vague explanation into a claim with an observable implication.", "what_it_does_ru": "Превратить расплывчатое объяснение в утверждение с наблюдаемым следствием."},
+    "practice": {"mode": "produce", "cue": "State a hypothesis together with an observable prediction."},
+    "langs": [
+      {"lang": "en", "formula": "If our hypothesis is right, we should observe [X] when [Y].", "example": "If our hypothesis is right, we should observe more failures when load increases.", "translation": "Если наша гипотеза верна, при росте нагрузки должно наблюдаться больше сбоев.", "examples": [{"text": "If our hypothesis is right, we should observe the same mismatch whenever this mapping path is used.", "translation_ru": "Если гипотеза верна, то при использовании этого пути маппинга должно возникать то же расхождение."}, {"text": "If our hypothesis is right, we should observe retention improve after the onboarding gap is removed.", "translation_ru": "Если гипотеза верна, удержание должно улучшиться после устранения пробела в онбординге."}]},
+      {"lang": "de", "formula": "Wenn unsere Hypothese stimmt, sollten wir [X] beobachten, wenn [Y].", "example": "Wenn unsere Hypothese stimmt, sollten wir mehr Ausfälle beobachten, wenn die Last steigt.", "translation": "Если наша гипотеза верна, при росте нагрузки должно наблюдаться больше сбоев.", "examples": [{"text": "Wenn unsere Hypothese stimmt, sollten wir dieselbe Abweichung beobachten, sobald dieser Mapping-Pfad verwendet wird.", "translation_ru": "Если гипотеза верна, то при использовании этого пути маппинга должно возникать то же расхождение."}, {"text": "Wenn unsere Hypothese stimmt, sollte sich die Nutzerbindung verbessern, nachdem die Lücke im Onboarding geschlossen wurde.", "translation_ru": "Если гипотеза верна, удержание должно улучшиться после устранения пробела в онбординге."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHHYP002",
+    "title_ru": "Назвать опровергающее наблюдение",
+    "group_id": "HYP",
+    "set_id": "HYP",
+    "logic": "falsifying evidence",
+    "metaphor_ru": "Если ничто не способно ослабить гипотезу, это скорее убеждение, чем проверка.",
+    "reasoning": {"move": "Test", "what_it_does_en": "Specify evidence that would materially weaken a hypothesis.", "what_it_does_ru": "Указать данные, которые существенно ослабили бы гипотезу."},
+    "practice": {"mode": "produce", "cue": "Name what evidence would make you revise the hypothesis."},
+    "langs": [
+      {"lang": "en", "formula": "I would revise this hypothesis if [X].", "example": "I would revise this hypothesis if the same failures appeared under low load.", "translation": "Я бы пересмотрел эту гипотезу, если бы те же сбои появились при низкой нагрузке.", "examples": [{"text": "I would revise this hypothesis if users succeeded at the supposedly difficult step.", "translation_ru": "Я бы пересмотрел гипотезу, если бы пользователи успешно проходили якобы сложный шаг."}, {"text": "I would revise this hypothesis if the issue persisted after the suspected dependency was removed.", "translation_ru": "Я бы пересмотрел гипотезу, если бы проблема сохранилась после удаления предполагаемой зависимости."}]},
+      {"lang": "de", "formula": "Ich würde diese Hypothese revidieren, wenn [X].", "example": "Ich würde diese Hypothese revidieren, wenn dieselben Ausfälle bei niedriger Last auftreten würden.", "translation": "Я бы пересмотрел эту гипотезу, если бы те же сбои появились при низкой нагрузке.", "examples": [{"text": "Ich würde diese Hypothese revidieren, wenn Nutzer den angeblich schwierigen Schritt problemlos schaffen würden.", "translation_ru": "Я бы пересмотрел гипотезу, если бы пользователи успешно проходили якобы сложный шаг."}, {"text": "Ich würde diese Hypothese revidieren, wenn das Problem nach Entfernung der vermuteten Abhängigkeit bestehen bliebe.", "translation_ru": "Я бы пересмотрел гипотезу, если бы проблема сохранилась после удаления предполагаемой зависимости."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHHYP003",
+    "title_ru": "Сравнить гипотезу с альтернативой",
+    "group_id": "HYP",
+    "set_id": "HYP",
+    "logic": "alternative hypothesis",
+    "metaphor_ru": "Подтверждение одной версии мало значит, если другая версия предсказывает то же самое.",
+    "reasoning": {"move": "Test", "what_it_does_en": "Ask whether an alternative explanation predicts the same evidence.", "what_it_does_ru": "Проверить, предсказывает ли альтернативное объяснение те же данные."},
+    "practice": {"mode": "produce", "cue": "Compare the preferred explanation with a plausible alternative."},
+    "langs": [
+      {"lang": "en", "formula": "What would distinguish [X] from the alternative that [Y]?", "example": "What would distinguish a capacity problem from the alternative that the queue is misconfigured?", "translation": "Что отличило бы проблему мощности от альтернативы, что очередь настроена неправильно?", "examples": [{"text": "What would distinguish low motivation from the alternative that the task is unclear?", "translation_ru": "Что отличило бы низкую мотивацию от альтернативы, что задача непонятна?"}, {"text": "What would distinguish poor content quality from the alternative that discovery is weak?", "translation_ru": "Что отличило бы плохое качество контента от альтернативы, что его просто плохо находят?"}]},
+      {"lang": "de", "formula": "Woran könnten wir erkennen, ob [X] zutrifft oder stattdessen [Y]?", "example": "Woran könnten wir erkennen, ob ein Kapazitätsproblem vorliegt oder stattdessen die Queue falsch konfiguriert ist?", "translation": "Что отличило бы проблему мощности от альтернативы, что очередь настроена неправильно?", "examples": [{"text": "Woran könnten wir erkennen, ob die Motivation gering ist oder stattdessen die Aufgabe unklar ist?", "translation_ru": "Что отличило бы низкую мотивацию от альтернативы, что задача непонятна?"}, {"text": "Woran könnten wir erkennen, ob die Inhaltsqualität schwach ist oder stattdessen die Auffindbarkeit das Problem ist?", "translation_ru": "Что отличило бы плохое качество контента от альтернативы, что его просто плохо находят?"}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHHYP004",
+    "title_ru": "Выбрать самый информативный тест",
+    "group_id": "HYP",
+    "set_id": "HYP",
+    "logic": "information gain",
+    "metaphor_ru": "Лучший следующий тест не обязательно самый большой, а тот, который сильнее разделяет версии.",
+    "reasoning": {"move": "Test", "what_it_does_en": "Choose a test based on how much it can discriminate between explanations.", "what_it_does_ru": "Выбрать тест по тому, насколько хорошо он различает объяснения."},
+    "practice": {"mode": "produce", "cue": "Choose the smallest test that would most reduce uncertainty."},
+    "langs": [
+      {"lang": "en", "formula": "The most informative next test would be [X], because it would separate [Y] from [Z].", "example": "The most informative next test would be replaying one failed record, because it would separate a data issue from a volume issue.", "translation": "Самым информативным следующим тестом был бы повтор одной сбойной записи, потому что он отделит проблему данных от проблемы объёма.", "examples": [{"text": "The most informative next test would be showing the page to five target users, because it would separate clarity from traffic as the bottleneck.", "translation_ru": "Самым информативным тестом было бы показать страницу пяти целевым пользователям, чтобы отделить проблему ясности от проблемы трафика."}, {"text": "The most informative next test would be disabling the optional check, because it would separate validation cost from database latency.", "translation_ru": "Самым информативным тестом было бы отключить необязательную проверку, чтобы отделить стоимость валидации от задержки базы."}]},
+      {"lang": "de", "formula": "Der informativste nächste Test wäre [X], weil er [Y] von [Z] unterscheiden würde.", "example": "Der informativste nächste Test wäre die erneute Verarbeitung eines fehlerhaften Datensatzes, weil er ein Datenproblem von einem Volumenproblem unterscheiden würde.", "translation": "Самым информативным следующим тестом был бы повтор одной сбойной записи, потому что он отделит проблему данных от проблемы объёма.", "examples": [{"text": "Der informativste nächste Test wäre, die Seite fünf Zielnutzern zu zeigen, weil er Verständlichkeit von Traffic als Engpass unterscheiden würde.", "translation_ru": "Самым информативным тестом было бы показать страницу пяти целевым пользователям, чтобы отделить проблему ясности от проблемы трафика."}, {"text": "Der informativste nächste Test wäre, die optionale Prüfung abzuschalten, weil er Validierungsaufwand von Datenbanklatenz unterscheiden würde.", "translation_ru": "Самым информативным тестом было бы отключить необязательную проверку, чтобы отделить стоимость валидации от задержки базы."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHHYP005",
+    "title_ru": "Не путать отсутствие доказательства с опровержением",
+    "group_id": "HYP",
+    "set_id": "HYP",
+    "logic": "absence of evidence",
+    "metaphor_ru": "Неподтверждённая гипотеза и опровергнутая гипотеза — не одно и то же.",
+    "reasoning": {"move": "Test", "what_it_does_en": "Distinguish lack of support from evidence against a hypothesis.", "what_it_does_ru": "Отличить отсутствие подтверждения от данных против гипотезы."},
+    "practice": {"mode": "produce", "cue": "State whether the evidence is missing or genuinely contradictory."},
+    "langs": [
+      {"lang": "en", "formula": "We have not confirmed [X], but we have not ruled it out either.", "example": "We have not confirmed a caching issue, but we have not ruled it out either.", "translation": "Мы не подтвердили проблему кэша, но и не исключили её.", "examples": [{"text": "We have not confirmed that price is the main barrier, but we have not ruled it out either.", "translation_ru": "Мы не подтвердили, что цена является главным барьером, но и не исключили это."}, {"text": "We have not confirmed a timing dependency, but we have not ruled it out either.", "translation_ru": "Мы не подтвердили зависимость от времени, но и не исключили её."}]},
+      {"lang": "de", "formula": "Für [X] haben wir noch keine Bestätigung; ausgeschlossen ist es aber auch nicht.", "example": "Für ein Cache-Problem haben wir noch keine Bestätigung; ausgeschlossen ist es aber auch nicht.", "translation": "Мы не подтвердили проблему кэша, но и не исключили её.", "examples": [{"text": "Dafür, dass der Preis die größte Hürde ist, haben wir noch keine Bestätigung; ausgeschlossen ist es aber auch nicht.", "translation_ru": "Мы не подтвердили, что цена является главным барьером, но и не исключили это."}, {"text": "Für eine zeitliche Abhängigkeit haben wir noch keine Bestätigung; ausgeschlossen ist sie aber auch nicht.", "translation_ru": "Мы не подтвердили зависимость от времени, но и не исключили её."}]}
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

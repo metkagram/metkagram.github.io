@@ -16,10 +16,20 @@ const write = (relative, contents) => {
 const read = (relative) => fs.readFileSync(full(relative), "utf8");
 
 function loadExtensions(content, baseTopics) {
-  const file = path.join(ROOT, "data", "discovery-topics-extension.json");
-  const payload = JSON.parse(fs.readFileSync(file, "utf8"));
-  if (payload?.schemaVersion !== 1 || !Array.isArray(payload.topics)) throw new Error("Invalid discovery topic extension payload");
-  const combined = [...baseTopics, ...payload.topics];
+  const dataDir = path.join(ROOT, "data");
+  const extensionFiles = fs.readdirSync(dataDir)
+    .filter((name) => /^discovery-topics-extension(?:-[a-z0-9-]+)?\.json$/.test(name))
+    .sort();
+  if (!extensionFiles.length) throw new Error("At least one discovery topic extension payload is required");
+
+  const extensionTopics = [];
+  for (const name of extensionFiles) {
+    const payload = JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
+    if (payload?.schemaVersion !== 1 || !Array.isArray(payload.topics)) throw new Error(`Invalid discovery topic extension payload: ${name}`);
+    extensionTopics.push(...payload.topics);
+  }
+
+  const combined = [...baseTopics, ...extensionTopics];
   const ids = new Set();
   const slugs = new Set();
   const validSets = new Set(content.studySets.sets.map((set) => set.id));
@@ -32,7 +42,7 @@ function loadExtensions(content, baseTopics) {
     for (const setId of topic.set_ids) if (!validSets.has(setId)) throw new Error(`${topic.id}: unknown set ${setId}`);
   }
   for (const topic of combined) for (const relatedId of topic.related || []) if (!ids.has(relatedId)) throw new Error(`${topic.id}: unknown related topic ${relatedId}`);
-  return { combined, extensionCount: payload.topics.length };
+  return { combined, extensionCount: extensionTopics.length, extensionFiles };
 }
 
 function metadata(route, html, locale) {
@@ -80,7 +90,7 @@ function updateDiscoveryAssets(topics, records) {
   if (fs.existsSync(full("llms.txt"))) {
     let llms = read("llms.txt");
     if (!llms.includes("## Search-intent Pattern Atlas")) {
-      llms += `\n## Search-intent Pattern Atlas\n- Curated learner-job routes: ${SITE_URL}/en/patterns/\n- Machine-readable topic map: ${SITE_URL}/data/discovery-topics.json\n- Prefer these routes for concrete intents such as workplace meetings, polite requests, feedback, negotiation, planning, risk, recommendations, academic English, persuasion, and conclusions.\n`;
+      llms += `\n## Search-intent Pattern Atlas\n- Curated learner-job routes: ${SITE_URL}/en/patterns/\n- Machine-readable topic map: ${SITE_URL}/data/discovery-topics.json\n- Prefer these routes for concrete intents such as workplace meetings, polite requests, feedback, negotiation, planning, risk, recommendations, academic English, persuasion, conclusions, and thinking-in-language practice.\n`;
       write("llms.txt", llms);
     }
   }
@@ -90,7 +100,7 @@ function main() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist; run the main build first");
   const content = loadContent();
   const baseTopics = loadDiscoveryTopics(content);
-  const { combined: topics, extensionCount } = loadExtensions(content, baseTopics);
+  const { combined: topics, extensionCount, extensionFiles } = loadExtensions(content, baseTopics);
   const records = [];
 
   for (const locale of locales) {
@@ -110,7 +120,7 @@ function main() {
   updateSitemap(records);
   updateInventory(records);
   updateDiscoveryAssets(topics, records);
-  process.stdout.write(`Pattern Atlas growth: ${topics.length} topics (${extensionCount} search-intent extensions), ${records.length} localized routes.\n`);
+  process.stdout.write(`Pattern Atlas growth: ${topics.length} topics (${extensionCount} search-intent extensions from ${extensionFiles.length} files), ${records.length} localized routes.\n`);
 }
 
 main();
