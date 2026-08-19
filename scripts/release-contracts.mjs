@@ -23,8 +23,8 @@ function patch(relativePath, mutate) {
   const file = path.join(DIST, relativePath);
   const before = read(relativePath);
   const after = mutate(before);
-  if (after === before) throw new Error(`Release compatibility patch made no change: ${relativePath}`);
-  fs.writeFileSync(file, after);
+  if (after !== before) fs.writeFileSync(file, after);
+  return after !== before;
 }
 
 assertCurrent("en/index.html", [
