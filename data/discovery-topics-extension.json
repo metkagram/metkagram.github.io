@@ -151,6 +151,21 @@
       "use_cases_ru": ["подвести итог без повторения всего сказанного", "сделать вывод из доказательств", "обозначить практическое следствие обсуждения"],
       "set_ids": ["SUM", "ARG", "EVD"],
       "related": ["argumentation-evidence", "academic-research-english", "connectors-complex-sentences"]
+    },
+    {
+      "id": "thinking-with-language",
+      "slug": "thinking-framing-uncertainty-and-decisions",
+      "level": "B2–C1",
+      "title_en": "Thinking with language: framing, uncertainty, systems, and decisions",
+      "title_ru": "Мышление через язык: рамки, неопределённость, системы и решения",
+      "search_title_en": "Critical thinking and decision-making phrases in English for B2–C1",
+      "search_title_ru": "Английские паттерны для мышления и принятия решений B2–C1",
+      "description_en": "Use reusable language to frame problems, separate evidence from assumptions, trace system effects, and make clearer decisions under uncertainty.",
+      "description_ru": "Используйте повторно применимые языковые каркасы, чтобы ставить проблемы, отделять данные от предположений, видеть системные эффекты и принимать более ясные решения в условиях неопределённости.",
+      "use_cases_en": ["reframe a problem before proposing a solution", "state what is known versus assumed", "trace a second-order effect or moving bottleneck", "compare decision criteria, delay cost, and risk profiles"],
+      "use_cases_ru": ["переопределить проблему до предложения решения", "разделить известное и предполагаемое", "проследить эффект второго порядка или перемещение узкого места", "сравнить критерии решения, цену ожидания и профили риска"],
+      "set_ids": ["FRM", "UNC", "SYS", "DEC"],
+      "related": ["argumentation-evidence", "comparison-evaluation", "problem-solving-risk", "planning-priorities"]
     }
   ]
 }
