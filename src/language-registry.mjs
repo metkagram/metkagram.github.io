@@ -33,9 +33,9 @@ export const languageRegistry = Object.freeze({
   }),
 });
 
-function codesFor(role) {
-  return Object.values(languageRegistry)
-    .filter((language) => language.roles[role])
+function codesFor(role, registry = languageRegistry) {
+  return Object.values(registry)
+    .filter((language) => language.roles?.[role])
     .map((language) => language.code);
 }
 
@@ -44,29 +44,48 @@ export const learningLanguages = Object.freeze(codesFor("learning"));
 export const translationLocales = Object.freeze(codesFor("translation"));
 export const annotationLanguages = Object.freeze(codesFor("annotation"));
 
-export function getLanguage(code) {
-  return languageRegistry[code] || null;
+export function getLanguage(code, registry = languageRegistry) {
+  return registry[code] || null;
 }
 
-export function getLanguageBySlug(slug) {
-  return Object.values(languageRegistry).find((language) => language.slug === slug) || null;
+export function getLanguageBySlug(slug, registry = languageRegistry) {
+  return Object.values(registry).find((language) => language.slug === slug) || null;
 }
 
-// Compatibility helper for the current dataset while translations migrate from
-// translation_ru to translations: { ru: "...", ... }.
-export function getTranslation(record, locale) {
+export function supportsLanguageRole(code, role, registry = languageRegistry) {
+  return Boolean(registry[code]?.roles?.[role]);
+}
+
+// Canonical translation helper. New records should use translations: { locale: text }.
+// During migration the public corpus also contains translation_ru and, inside
+// language-realisation objects, a legacy translation field whose support locale is Russian.
+export function normalizeTranslations(record, legacyLocale = "ru") {
+  if (!record || typeof record !== "object") return {};
+  const result = { ...(record.translations || {}) };
+  for (const [key, value] of Object.entries(record)) {
+    if (!key.startsWith("translation_") || !value) continue;
+    const locale = key.slice("translation_".length);
+    if (locale && result[locale] == null) result[locale] = value;
+  }
+  if (legacyLocale && record.translation && result[legacyLocale] == null) {
+    result[legacyLocale] = record.translation;
+  }
+  return result;
+}
+
+export function getTranslation(record, locale, legacyLocale = "ru") {
   if (!record || !locale) return null;
-  return record.translations?.[locale] ?? record[`translation_${locale}`] ?? null;
+  return normalizeTranslations(record, legacyLocale)[locale] ?? null;
 }
 
-export function publicLanguageMatrix() {
+export function publicLanguageMatrix(registry = languageRegistry) {
   return {
     schemaVersion: 1,
-    interfaceLocales,
-    learningLanguages,
-    translationLocales,
-    annotationLanguages,
-    languages: Object.fromEntries(Object.entries(languageRegistry).map(([code, language]) => [code, {
+    interfaceLocales: codesFor("interface", registry),
+    learningLanguages: codesFor("learning", registry),
+    translationLocales: codesFor("translation", registry),
+    annotationLanguages: codesFor("annotation", registry),
+    languages: Object.fromEntries(Object.entries(registry).map(([code, language]) => [code, {
       code: language.code,
       slug: language.slug,
       nativeName: language.nativeName,
