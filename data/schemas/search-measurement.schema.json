@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metkagram.github.io/data/schemas/search-measurement.schema.json",
+  "title": "Metkagram aggregate search measurement input",
+  "description": "Privacy-safe page-level aggregate input for local search/content decision reports. Raw search queries are intentionally excluded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scope", "period", "rows"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "source": {"type": "string", "default": "search-console-page-aggregate"},
+    "scope": {"const": "non_brand"},
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {"type": "string", "format": "date"},
+        "end": {"type": "string", "format": "date"}
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "clicks", "impressions"],
+        "properties": {
+          "url": {"type": "string"},
+          "clicks": {"type": "number", "minimum": 0},
+          "impressions": {"type": "number", "minimum": 0},
+          "ctr": {"type": "number", "minimum": 0, "maximum": 1},
+          "position": {"type": ["number", "null"], "minimum": 0},
+          "crawled": {"type": ["boolean", "null"]},
+          "indexed": {"type": ["boolean", "null"]},
+          "age_days": {"type": ["number", "null"], "minimum": 0},
+          "consolidation_group": {"type": ["string", "null"]},
+          "indexing_review_allowed": {"type": "boolean", "default": false}
+        }
+      }
+    }
+  }
+}
