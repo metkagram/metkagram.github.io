@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "status": "collection_open",
+  "purpose": "Human-reviewed release-evaluation set for Pattern Lens precision and abstention slices. Cases are added only after review; generated candidates belong outside this file until a reviewer confirms the label.",
+  "evidenceBoundary": "An empty or incomplete file is not a failed product release. It means statistical precision/recall claims remain blocked while the existing engineering regression gates continue to protect current behavior.",
+  "cases": []
+}
