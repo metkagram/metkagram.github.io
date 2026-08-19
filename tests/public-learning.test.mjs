@@ -14,7 +14,9 @@ const graph = JSON.parse(fs.readFileSync(path.join(DIST, "data", "learning-conne
 const quality = JSON.parse(fs.readFileSync(path.join(DIST, "data", "learning-connections-quality.json"), "utf8"));
 const benchmark = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "evaluation", "public-learning-links.json"), "utf8"));
 const canonical = JSON.parse(fs.readFileSync(path.join(DIST, "data", "canonical-annotations.json"), "utf8"));
-const publicPatterns = new Set(JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8")).map((pattern) => pattern.id));
+const publicPatternRecords = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
+const publicPatterns = new Set(publicPatternRecords.map((pattern) => pattern.id));
+const publicReasoningFrameCount = publicPatternRecords.filter((pattern) => pattern.reasoning?.move).length;
 const intents = JSON.parse(fs.readFileSync(path.join(DIST, "data", "intents.json"), "utf8"));
 const publicIntents = new Set(intents.items.map((intent) => intent.id));
 
@@ -74,7 +76,7 @@ test("public learning links favor reviewed strength over inflated coverage", () 
   assert.equal(graph.schemaVersion, 2);
   assert.equal(graph.sourceCounts.annotatedDocuments, 72);
   assert.equal(graph.sourceCounts.annotatedSentences, 969);
-  assert.equal(graph.sourceCounts.publicReasoningFrames, 30);
+  assert.equal(graph.sourceCounts.publicReasoningFrames, publicReasoningFrameCount);
   assert.equal(graph.sourceCounts.intents, 18);
   assert.equal(Object.keys(graph.documents).length, 72);
   assert.equal(Object.keys(graph.patterns).length, publicPatterns.size);
