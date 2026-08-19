@@ -30,7 +30,7 @@ function patch(relativePath, mutate) {
 assertCurrent("en/index.html", [
   "French Frame-only pilot",
   "Current reuse follows the Metkagram licensing terms.",
-  "The mobile app became a research stage."
+  "The mobile app became a research stage"
 ], [
   "token-level annotation scheme is also an open, machine-readable research resource",
   "The content is free for personal, educational and other non-commercial use with attribution."
@@ -39,7 +39,7 @@ assertCurrent("en/index.html", [
 assertCurrent("ru/index.html", [
   "французский Frame-only пилот",
   "Повторное использование регулируется текущими условиями Metkagram.",
-  "Мобильное приложение стало этапом исследования."
+  "Мобильное приложение стало этапом исследования"
 ], [
   "Токеновая разметка — открытый машиночитаемый ресурс",
   "Материалы бесплатны для некоммерческого использования"
