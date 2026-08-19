@@ -1,0 +1,167 @@
+[
+  {
+    "id": "XTHSYS001",
+    "title_ru": "Непосредственный эффект и эффект второго порядка",
+    "group_id": "SYS",
+    "set_id": "SYS",
+    "logic": "second-order effect",
+    "metaphor_ru": "Смотрите не только на первый результат действия, но и на то, что этот результат запускает дальше.",
+    "reasoning": {"move": "Trace consequences", "what_it_does_en": "Separate an immediate effect from a possible downstream consequence.", "what_it_does_ru": "Отделить непосредственный эффект от возможного последующего последствия."},
+    "practice": {"mode": "produce", "cue": "State the first-order and second-order effects separately."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The immediate effect may be [X], while the second-order effect could be [Y].",
+        "example": "The immediate effect may be faster closure, while the second-order effect could be more reopened cases.",
+        "translation": "Непосредственным эффектом может быть более быстрое закрытие, а эффектом второго порядка — больше повторно открытых случаев.",
+        "examples": [
+          {"text": "The immediate effect may be lower cost, while the second-order effect could be greater dependence on one supplier.", "translation_ru": "Непосредственным эффектом может быть снижение затрат, а эффектом второго порядка — большая зависимость от одного поставщика."},
+          {"text": "The immediate effect may be more automation, while the second-order effect could be weaker operator understanding.", "translation_ru": "Непосредственным эффектом может быть больше автоматизации, а эффектом второго порядка — более слабое понимание процесса операторами."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die unmittelbare Wirkung kann [X] sein, während die Wirkung zweiter Ordnung [Y] sein könnte.",
+        "example": "Die unmittelbare Wirkung kann ein schnellerer Abschluss sein, während die Wirkung zweiter Ordnung mehr wiedereröffnete Fälle sein könnte.",
+        "translation": "Непосредственным эффектом может быть более быстрое закрытие, а эффектом второго порядка — больше повторно открытых случаев.",
+        "examples": [
+          {"text": "Die unmittelbare Wirkung kann niedrigere Kosten sein, während die Wirkung zweiter Ordnung eine stärkere Abhängigkeit von einem Lieferanten sein könnte.", "translation_ru": "Непосредственным эффектом может быть снижение затрат, а эффектом второго порядка — большая зависимость от одного поставщика."},
+          {"text": "Die unmittelbare Wirkung kann mehr Automatisierung sein, während die Wirkung zweiter Ordnung ein schwächeres Prozessverständnis der Anwender sein könnte.", "translation_ru": "Непосредственным эффектом может быть больше автоматизации, а эффектом второго порядка — более слабое понимание процесса операторами."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHSYS002",
+    "title_ru": "Узкое место может просто переместиться",
+    "group_id": "SYS",
+    "set_id": "SYS",
+    "logic": "bottleneck transfer",
+    "metaphor_ru": "Ускорение одного участка не гарантирует ускорение всей системы.",
+    "reasoning": {"move": "Trace consequences", "what_it_does_en": "Show that removing one bottleneck can expose or create another downstream bottleneck.", "what_it_does_ru": "Показать, что устранение одного узкого места может открыть или создать другое дальше по процессу."},
+    "practice": {"mode": "produce", "cue": "Name where the bottleneck may move next."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This removes the bottleneck at [X], but may move it to [Y].",
+        "example": "This removes the bottleneck at data entry, but may move it to manual approval.",
+        "translation": "Это устраняет узкое место на вводе данных, но может перенести его на ручное согласование.",
+        "examples": [
+          {"text": "This removes the bottleneck at model inference, but may move it to retrieval and ranking.", "translation_ru": "Это устраняет узкое место на инференсе модели, но может перенести его на поиск и ранжирование."},
+          {"text": "This removes the bottleneck at content production, but may move it to editorial review.", "translation_ru": "Это устраняет узкое место в производстве контента, но может перенести его на редакционную проверку."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das beseitigt den Engpass bei [X], kann ihn aber zu [Y] verlagern.",
+        "example": "Das beseitigt den Engpass bei der Dateneingabe, kann ihn aber zur manuellen Freigabe verlagern.",
+        "translation": "Это устраняет узкое место на вводе данных, но может перенести его на ручное согласование.",
+        "examples": [
+          {"text": "Das beseitigt den Engpass bei der Modellinferenz, kann ihn aber zu Retrieval und Ranking verlagern.", "translation_ru": "Это устраняет узкое место на инференсе модели, но может перенести его на поиск и ранжирование."},
+          {"text": "Das beseitigt den Engpass bei der Inhaltserstellung, kann ihn aber zur redaktionellen Prüfung verlagern.", "translation_ru": "Это устраняет узкое место в производстве контента, но может перенести его на редакционную проверку."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHSYS003",
+    "title_ru": "Локальная оптимизация может ухудшить систему",
+    "group_id": "SYS",
+    "set_id": "SYS",
+    "logic": "local global tradeoff",
+    "metaphor_ru": "Показатель одного участка может улучшиться ценой результата всей системы.",
+    "reasoning": {"move": "Trace consequences", "what_it_does_en": "Contrast local improvement with whole-system performance.", "what_it_does_ru": "Сопоставить локальное улучшение с результатом всей системы."},
+    "practice": {"mode": "produce", "cue": "Show what gets worse globally when one part is optimised locally."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Optimising [X] locally can make [Y] worse overall.",
+        "example": "Optimising ticket closure locally can make customer resolution quality worse overall.",
+        "translation": "Локальная оптимизация закрытия заявок может ухудшить общее качество решения проблем клиентов.",
+        "examples": [
+          {"text": "Optimising each team's utilisation locally can make end-to-end lead time worse overall.", "translation_ru": "Локальная оптимизация загрузки каждой команды может ухудшить общее время прохождения процесса."},
+          {"text": "Optimising model accuracy locally can make the full product slower and more expensive overall.", "translation_ru": "Локальная оптимизация точности модели может сделать весь продукт медленнее и дороже."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn wir [X] lokal optimieren, kann sich [Y] insgesamt verschlechtern.",
+        "example": "Wenn wir den Ticketabschluss lokal optimieren, kann sich die Qualität der Kundenlösung insgesamt verschlechtern.",
+        "translation": "Локальная оптимизация закрытия заявок может ухудшить общее качество решения проблем клиентов.",
+        "examples": [
+          {"text": "Wenn wir die Auslastung jedes Teams lokal optimieren, kann sich die gesamte Durchlaufzeit verschlechtern.", "translation_ru": "Локальная оптимизация загрузки каждой команды может ухудшить общее время прохождения процесса."},
+          {"text": "Wenn wir die Modellgenauigkeit lokal optimieren, kann das gesamte Produkt langsamer und teurer werden.", "translation_ru": "Локальная оптимизация точности модели может сделать весь продукт медленнее и дороже."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHSYS004",
+    "title_ru": "Симптом и базовый драйвер",
+    "group_id": "SYS",
+    "set_id": "SYS",
+    "logic": "symptom driver distinction",
+    "metaphor_ru": "Уберите причину, которая снова производит симптом, а не только сам симптом.",
+    "reasoning": {"move": "Trace consequences", "what_it_does_en": "Distinguish a visible symptom from the driver that keeps recreating it.", "what_it_does_ru": "Отделить видимый симптом от фактора, который снова его создаёт."},
+    "practice": {"mode": "produce", "cue": "Name the symptom and the underlying driver separately."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "This treats the symptom [X] without changing the underlying driver [Y].",
+        "example": "This treats the symptom of duplicate records without changing the underlying driver of inconsistent identifiers.",
+        "translation": "Это устраняет симптом дублирующихся записей, не меняя базовую причину — несогласованные идентификаторы.",
+        "examples": [
+          {"text": "This treats the symptom of slow review without changing the underlying driver of unclear ownership.", "translation_ru": "Это устраняет симптом медленной проверки, не меняя базовую причину — неясную ответственность."},
+          {"text": "This treats the symptom of low retention without changing the underlying driver of weak repeat value.", "translation_ru": "Это устраняет симптом низкого удержания, не меняя базовую причину — слабую ценность повторного использования."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das behandelt das Symptom [X], ohne den zugrunde liegenden Treiber [Y] zu verändern.",
+        "example": "Das behandelt das Symptom doppelter Datensätze, ohne den zugrunde liegenden Treiber inkonsistenter Identifikatoren zu verändern.",
+        "translation": "Это устраняет симптом дублирующихся записей, не меняя базовую причину — несогласованные идентификаторы.",
+        "examples": [
+          {"text": "Das behandelt das Symptom langsamer Prüfungen, ohne den zugrunde liegenden Treiber unklarer Verantwortlichkeiten zu verändern.", "translation_ru": "Это устраняет симптом медленной проверки, не меняя базовую причину — неясную ответственность."},
+          {"text": "Das behandelt das Symptom niedriger Bindung, ohne den zugrunde liegenden Treiber eines schwachen Wiederholungsnutzens zu verändern.", "translation_ru": "Это устраняет симптом низкого удержания, не меняя базовую причину — слабую ценность повторного использования."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHSYS005",
+    "title_ru": "Система продолжит производить тот же результат",
+    "group_id": "SYS",
+    "set_id": "SYS",
+    "logic": "structural persistence",
+    "metaphor_ru": "Если структура не изменилась, повторение результата не является сюрпризом.",
+    "reasoning": {"move": "Trace consequences", "what_it_does_en": "Link a recurring outcome to a structural condition that remains unchanged.", "what_it_does_ru": "Связать повторяющийся результат со структурным условием, которое остаётся неизменным."},
+    "practice": {"mode": "produce", "cue": "Name the unchanged condition that keeps recreating the outcome."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The system will keep producing [X] as long as [Y] remains unchanged.",
+        "example": "The system will keep producing duplicate work as long as ownership remains fragmented.",
+        "translation": "Система будет продолжать создавать дублирующую работу, пока ответственность остаётся раздробленной.",
+        "examples": [
+          {"text": "The system will keep producing inconsistent decisions as long as the decision rule remains implicit.", "translation_ru": "Система будет продолжать выдавать непоследовательные решения, пока правило принятия решений остаётся неявным."},
+          {"text": "The system will keep producing stale pages as long as publication depends on manual memory.", "translation_ru": "Система будет продолжать производить устаревшие страницы, пока публикация зависит от человеческой памяти."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das System wird weiterhin [X] erzeugen, solange [Y] unverändert bleibt.",
+        "example": "Das System wird weiterhin doppelte Arbeit erzeugen, solange die Verantwortung fragmentiert bleibt.",
+        "translation": "Система будет продолжать создавать дублирующую работу, пока ответственность остаётся раздробленной.",
+        "examples": [
+          {"text": "Das System wird weiterhin inkonsistente Entscheidungen erzeugen, solange die Entscheidungsregel implizit bleibt.", "translation_ru": "Система будет продолжать выдавать непоследовательные решения, пока правило принятия решений остаётся неявным."},
+          {"text": "Das System wird weiterhin veraltete Seiten erzeugen, solange die Veröffentlichung vom manuellen Erinnern abhängt.", "translation_ru": "Система будет продолжать производить устаревшие страницы, пока публикация зависит от человеческой памяти."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

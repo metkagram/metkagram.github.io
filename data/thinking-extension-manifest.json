@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "curriculum_extension",
+  "title": "Thinking in Language",
+  "description": "Additive B2–C1 curriculum layer for reusable reasoning language. Existing study sets remain unchanged.",
+  "setIds": ["FRM", "UNC", "SYS", "DEC"],
+  "patternCount": 20,
+  "patternFiles": [
+    "data/reasoning-frames/thinking-framing-v1.json",
+    "data/reasoning-frames/thinking-uncertainty-v1.json",
+    "data/reasoning-frames/thinking-systems-v1.json",
+    "data/reasoning-frames/thinking-decisions-v1.json"
+  ],
+  "principles": [
+    "Add new useful sets instead of deleting established curriculum.",
+    "A thinking Frame must be both natural language and a reusable reasoning operation.",
+    "English and German Frames include Russian learner-support translations.",
+    "Reasoning metadata should improve retrieval and relation discovery without replacing the canonical language examples."
+  ]
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "XTHUNC001",
+    "title_ru": "Что известно, а что только предполагается",
+    "group_id": "UNC",
+    "set_id": "UNC",
+    "logic": "evidence assumption split",
+    "metaphor_ru": "Разделите твёрдую опору и предположение, чтобы не выдавать одно за другое.",
+    "reasoning": {"move": "Calibrate", "what_it_does_en": "Separate observed evidence from assumptions that still need validation.", "what_it_does_ru": "Отделить наблюдаемые данные от предположений, которые ещё нужно проверить."},
+    "practice": {"mode": "produce", "cue": "State one known fact and one remaining assumption."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "What we know is [X]; what we are still assuming is [Y].",
+        "example": "What we know is that the backlog grew; what we are still assuming is that volume caused it.",
+        "translation": "Мы знаем, что очередь выросла; но пока только предполагаем, что причиной был объём.",
+        "examples": [
+          {"text": "What we know is that users stop after the first session; what we are still assuming is that onboarding is the cause.", "translation_ru": "Мы знаем, что пользователи прекращают после первого сеанса; но пока только предполагаем, что причина в онбординге."},
+          {"text": "What we know is that the error appears after mass changes; what we are still assuming is that the mass-change process creates it.", "translation_ru": "Мы знаем, что ошибка появляется после массовых изменений; но пока только предполагаем, что её создаёт сам процесс массового изменения."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Was wir wissen, ist [X]; was wir noch annehmen, ist [Y].",
+        "example": "Was wir wissen, ist, dass der Rückstand gewachsen ist; was wir noch annehmen, ist, dass das Volumen die Ursache war.",
+        "translation": "Мы знаем, что очередь выросла; но пока только предполагаем, что причиной был объём.",
+        "examples": [
+          {"text": "Was wir wissen, ist, dass Nutzer nach der ersten Sitzung aufhören; was wir noch annehmen, ist, dass das Onboarding die Ursache ist.", "translation_ru": "Мы знаем, что пользователи прекращают после первого сеанса; но пока только предполагаем, что причина в онбординге."},
+          {"text": "Was wir wissen, ist, dass der Fehler nach Massenänderungen auftritt; was wir noch annehmen, ist, dass der Massenänderungsprozess ihn verursacht.", "translation_ru": "Мы знаем, что ошибка появляется после массовых изменений; но пока только предполагаем, что её создаёт сам процесс массового изменения."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHUNC002",
+    "title_ru": "Данные повышают вероятность, но не исключают альтернативу",
+    "group_id": "UNC",
+    "set_id": "UNC",
+    "logic": "probability update",
+    "metaphor_ru": "Данные могут сдвинуть вероятность, не превращаясь в окончательное доказательство.",
+    "reasoning": {"move": "Calibrate", "what_it_does_en": "Update a hypothesis without pretending competing explanations have disappeared.", "what_it_does_ru": "Обновить оценку гипотезы, не делая вид, что альтернативные объяснения исчезли."},
+    "practice": {"mode": "produce", "cue": "Raise one hypothesis while keeping a plausible alternative alive."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The evidence makes [X] more likely, but it does not rule out [Y].",
+        "example": "The repeated timeout makes capacity pressure more likely, but it does not rule out a configuration error.",
+        "translation": "Повторяющийся таймаут делает перегрузку мощностей более вероятной, но не исключает ошибку конфигурации.",
+        "examples": [
+          {"text": "The survey makes confusion more likely, but it does not rule out lack of motivation.", "translation_ru": "Опрос делает непонимание более вероятным, но не исключает нехватку мотивации."},
+          {"text": "The timing makes the deployment a stronger suspect, but it does not rule out an upstream data change.", "translation_ru": "Время появления проблемы усиливает подозрение на релиз, но не исключает изменение данных выше по потоку."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Hinweise machen [X] wahrscheinlicher, schließen [Y] aber nicht aus.",
+        "example": "Die wiederholte Zeitüberschreitung macht Kapazitätsdruck wahrscheinlicher, schließt einen Konfigurationsfehler aber nicht aus.",
+        "translation": "Повторяющийся таймаут делает перегрузку мощностей более вероятной, но не исключает ошибку конфигурации.",
+        "examples": [
+          {"text": "Die Umfrage macht Verwirrung wahrscheinlicher, schließt fehlende Motivation aber nicht aus.", "translation_ru": "Опрос делает непонимание более вероятным, но не исключает нехватку мотивации."},
+          {"text": "Der Zeitpunkt macht das Deployment zu einem stärkeren Verdacht, schließt eine vorgelagerte Datenänderung aber nicht aus.", "translation_ru": "Время появления проблемы усиливает подозрение на релиз, но не исключает изменение данных выше по потоку."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHUNC003",
+    "title_ru": "Что заставило бы меня изменить мнение",
+    "group_id": "UNC",
+    "set_id": "UNC",
+    "logic": "belief revision criterion",
+    "metaphor_ru": "Хорошая гипотеза должна иметь условие, при котором вы готовы от неё отказаться.",
+    "reasoning": {"move": "Calibrate", "what_it_does_en": "Make the evidence threshold for changing your view explicit.", "what_it_does_ru": "Явно обозначить условие, при котором вы измените свою оценку."},
+    "practice": {"mode": "produce", "cue": "Name the observation that would make you revise your view."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I would revise this view if [X] turned out to be true.",
+        "example": "I would revise this view if the same failure appeared in the unchanged control group.",
+        "translation": "Я бы пересмотрел эту точку зрения, если бы та же ошибка появилась в неизменённой контрольной группе.",
+        "examples": [
+          {"text": "I would revise this view if users with complete onboarding showed the same drop-off.", "translation_ru": "Я бы пересмотрел эту точку зрения, если бы пользователи с полным онбордингом показывали такой же отток."},
+          {"text": "I would revise this view if the issue reproduced without the new integration.", "translation_ru": "Я бы пересмотрел эту точку зрения, если бы проблема воспроизводилась без новой интеграции."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich würde diese Einschätzung ändern, wenn sich [X] als zutreffend erweisen würde.",
+        "example": "Ich würde diese Einschätzung ändern, wenn derselbe Fehler in der unveränderten Kontrollgruppe auftreten würde.",
+        "translation": "Я бы пересмотрел эту точку зрения, если бы та же ошибка появилась в неизменённой контрольной группе.",
+        "examples": [
+          {"text": "Ich würde diese Einschätzung ändern, wenn Nutzer mit vollständig abgeschlossenem Onboarding denselben Abbruch zeigen würden.", "translation_ru": "Я бы пересмотрел эту точку зрения, если бы пользователи с полным онбордингом показывали такой же отток."},
+          {"text": "Ich würde diese Einschätzung ändern, wenn sich das Problem ohne die neue Integration reproduzieren ließe.", "translation_ru": "Я бы пересмотрел эту точку зрения, если бы проблема воспроизводилась без новой интеграции."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHUNC004",
+    "title_ru": "Снизить уверенность из-за неизвестного",
+    "group_id": "UNC",
+    "set_id": "UNC",
+    "logic": "confidence calibration",
+    "metaphor_ru": "Неизвестность должна влиять на силу вывода, а не исчезать из формулировки.",
+    "reasoning": {"move": "Calibrate", "what_it_does_en": "Adjust confidence downward when a material variable remains unknown.", "what_it_does_ru": "Снизить уверенность, когда важная переменная остаётся неизвестной."},
+    "practice": {"mode": "produce", "cue": "Name the unknown and lower confidence proportionately."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Our confidence should be lower because [X] is still unknown.",
+        "example": "Our confidence should be lower because the baseline error rate is still unknown.",
+        "translation": "Наша уверенность должна быть ниже, потому что исходный уровень ошибок всё ещё неизвестен.",
+        "examples": [
+          {"text": "Our confidence should be lower because we do not know how the sample was selected.", "translation_ru": "Наша уверенность должна быть ниже, потому что мы не знаем, как была отобрана выборка."},
+          {"text": "Our confidence should be lower because the effect has only been observed for one region.", "translation_ru": "Наша уверенность должна быть ниже, потому что эффект наблюдался только в одном регионе."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Unser Vertrauen in die Schlussfolgerung sollte geringer sein, weil [X] noch unklar ist.",
+        "example": "Unser Vertrauen in die Schlussfolgerung sollte geringer sein, weil die ursprüngliche Fehlerrate noch unklar ist.",
+        "translation": "Наша уверенность должна быть ниже, потому что исходный уровень ошибок всё ещё неизвестен.",
+        "examples": [
+          {"text": "Unser Vertrauen in die Schlussfolgerung sollte geringer sein, weil noch unklar ist, wie die Stichprobe ausgewählt wurde.", "translation_ru": "Наша уверенность должна быть ниже, потому что мы не знаем, как была отобрана выборка."},
+          {"text": "Unser Vertrauen in die Schlussfolgerung sollte geringer sein, weil der Effekt bisher nur in einer Region beobachtet wurde.", "translation_ru": "Наша уверенность должна быть ниже, потому что эффект наблюдался только в одном регионе."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHUNC005",
+    "title_ru": "Какое следующее доказательство полезнее всего",
+    "group_id": "UNC",
+    "set_id": "UNC",
+    "logic": "discriminating evidence",
+    "metaphor_ru": "Ищите не больше данных вообще, а данные, которые различают конкурирующие объяснения.",
+    "reasoning": {"move": "Calibrate", "what_it_does_en": "Choose the next evidence that best separates competing explanations.", "what_it_does_ru": "Выбрать следующее доказательство, которое лучше всего разделит конкурирующие объяснения."},
+    "practice": {"mode": "produce", "cue": "Ask for evidence that would discriminate between two explanations."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The most useful next evidence would be [X], because it would distinguish [Y] from [Z].",
+        "example": "The most useful next evidence would be queue timestamps, because they would distinguish processing delay from delivery delay.",
+        "translation": "Самым полезным следующим доказательством были бы временные метки очереди, потому что они позволили бы отличить задержку обработки от задержки доставки.",
+        "examples": [
+          {"text": "The most useful next evidence would be a holdout group, because it would distinguish seasonality from the campaign effect.", "translation_ru": "Самым полезным следующим доказательством была бы контрольная группа, потому что она позволила бы отличить сезонность от эффекта кампании."},
+          {"text": "The most useful next evidence would be source-system history, because it would distinguish mapping failure from bad upstream data.", "translation_ru": "Самым полезным следующим доказательством была бы история исходной системы, потому что она позволила бы отличить ошибку маппинга от плохих исходных данных."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Der nützlichste nächste Hinweis wäre [X], weil er [Y] von [Z] unterscheiden würde.",
+        "example": "Der nützlichste nächste Hinweis wären Zeitstempel aus der Queue, weil sie Verarbeitungsverzögerung von Zustellungsverzögerung unterscheiden würden.",
+        "translation": "Самым полезным следующим доказательством были бы временные метки очереди, потому что они позволили бы отличить задержку обработки от задержки доставки.",
+        "examples": [
+          {"text": "Der nützlichste nächste Hinweis wäre eine Kontrollgruppe, weil sie Saisonalität vom Kampagneneffekt unterscheiden würde.", "translation_ru": "Самым полезным следующим доказательством была бы контрольная группа, потому что она позволила бы отличить сезонность от эффекта кампании."},
+          {"text": "Der nützlichste nächste Hinweis wäre die Historie des Quellsystems, weil sie einen Mappingfehler von schlechten vorgelagerten Daten unterscheiden würde.", "translation_ru": "Самым полезным следующим доказательством была бы история исходной системы, потому что она позволила бы отличить ошибку маппинга от плохих исходных данных."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]

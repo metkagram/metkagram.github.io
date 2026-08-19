@@ -24,8 +24,9 @@ test("the full learner-facing Practice curriculum is public while the annotation
   assert.ok(counts.advancedPatterns >= 1000, `expected at least 1,000 public practice patterns, found ${counts.advancedPatterns}`);
   assert.ok(content.studySets.sets.length >= 20, "the public Practice taxonomy should expose the full study-set catalogue");
   const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);
+  const reasoningMoves = new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move));
   assert.ok(reasoningPatterns.length >= 30);
-  assert.equal(new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move)).size, 9);
+  assert.ok(reasoningMoves.size >= 9, `expected the established reasoning vocabulary plus extensions, found ${reasoningMoves.size}`);
 });
 
 test("publication manifest records every selected collection and approved evaluation surface", () => {

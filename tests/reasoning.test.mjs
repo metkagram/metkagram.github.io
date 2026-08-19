@@ -19,8 +19,9 @@ test("reasoning subset remains complete inside the full public Practice curricul
   const curriculum = loadContent().advancedPatterns;
   assert.ok(curriculum.length >= 1000);
   const reasoning = curriculum.filter((pattern) => pattern.reasoning?.move);
+  const reasoningMoves = new Set(reasoning.map((pattern) => pattern.reasoning.move));
   assert.ok(reasoning.length >= 30);
-  assert.equal(new Set(reasoning.map((pattern) => pattern.reasoning.move)).size, 9);
+  assert.ok(reasoningMoves.size >= 9, `expected the established reasoning vocabulary plus extensions, found ${reasoningMoves.size}`);
   assert.ok(reasoning.every((pattern) => pattern.langs.length === 2));
   assert.ok(reasoning.every((pattern) => pattern.langs.every((lang) => lang.examples.length >= 2)));
   assert.ok(reasoning.every((pattern) => pattern.quality?.translations_complete));

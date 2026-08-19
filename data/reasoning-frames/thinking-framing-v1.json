@@ -1,0 +1,167 @@
+[
+  {
+    "id": "XTHFRM001",
+    "title_ru": "Полезнее сформулировать X как Y, а не Z",
+    "group_id": "FRM",
+    "set_id": "FRM",
+    "logic": "problem framing",
+    "metaphor_ru": "Смените рамку так, чтобы она направляла внимание на решаемую часть проблемы.",
+    "reasoning": {"move": "Frame", "what_it_does_en": "Replace an unhelpful description with a frame that makes the next reasoning step clearer.", "what_it_does_ru": "Заменить бесполезное описание рамкой, которая делает следующий шаг рассуждения яснее."},
+    "practice": {"mode": "produce", "cue": "Reframe the same situation around the more useful distinction."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "A more useful way to frame [X] is as [Y], rather than [Z].",
+        "example": "A more useful way to frame the delay is as a prioritisation problem, rather than a motivation problem.",
+        "translation": "Полезнее рассматривать задержку как проблему приоритизации, а не как проблему мотивации.",
+        "examples": [
+          {"text": "A more useful way to frame the migration is as a risk-reduction exercise, rather than a technical rewrite.", "translation_ru": "Полезнее рассматривать миграцию как снижение риска, а не как техническое переписывание."},
+          {"text": "A more useful way to frame the discussion is as a choice of trade-offs, rather than a search for a perfect option.", "translation_ru": "Полезнее рассматривать обсуждение как выбор компромиссов, а не как поиск идеального варианта."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Hilfreicher ist es, [X] als [Y] statt als [Z] zu betrachten.",
+        "example": "Hilfreicher ist es, die Verzögerung als Priorisierungsproblem statt als Motivationsproblem zu betrachten.",
+        "translation": "Полезнее рассматривать задержку как проблему приоритизации, а не как проблему мотивации.",
+        "examples": [
+          {"text": "Hilfreicher ist es, die Migration als Maßnahme zur Risikoreduzierung statt als technische Neuentwicklung zu betrachten.", "translation_ru": "Полезнее рассматривать миграцию как снижение риска, а не как техническое переписывание."},
+          {"text": "Hilfreicher ist es, die Diskussion als Wahl zwischen Zielkonflikten statt als Suche nach der perfekten Option zu betrachten.", "translation_ru": "Полезнее рассматривать обсуждение как выбор компромиссов, а не как поиск идеального варианта."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHFRM002",
+    "title_ru": "Сначала определить, что считается успехом",
+    "group_id": "FRM",
+    "set_id": "FRM",
+    "logic": "define success before solution",
+    "metaphor_ru": "Не решайте задачу до того, как определили, какой результат вообще считается решением.",
+    "reasoning": {"move": "Frame", "what_it_does_en": "Make the success criterion explicit before comparing solutions.", "what_it_does_ru": "Сделать критерий успеха явным до сравнения решений."},
+    "practice": {"mode": "produce", "cue": "State the success criterion before proposing a fix."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Before we solve [X], we need to decide what counts as [Y].",
+        "example": "Before we solve the reporting problem, we need to decide what counts as a useful alert.",
+        "translation": "Прежде чем решать проблему отчётности, нужно определить, что считается полезным предупреждением.",
+        "examples": [
+          {"text": "Before we optimise the process, we need to decide what counts as acceptable response time.", "translation_ru": "Прежде чем оптимизировать процесс, нужно определить, какое время ответа считается приемлемым."},
+          {"text": "Before we redesign the page, we need to decide what counts as successful discovery.", "translation_ru": "Прежде чем переделывать страницу, нужно определить, что считается успешным обнаружением контента."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Bevor wir [X] lösen, müssen wir festlegen, was als [Y] gilt.",
+        "example": "Bevor wir das Reporting-Problem lösen, müssen wir festlegen, was als nützliche Warnung gilt.",
+        "translation": "Прежде чем решать проблему отчётности, нужно определить, что считается полезным предупреждением.",
+        "examples": [
+          {"text": "Bevor wir den Prozess optimieren, müssen wir festlegen, was als akzeptable Reaktionszeit gilt.", "translation_ru": "Прежде чем оптимизировать процесс, нужно определить, какое время ответа считается приемлемым."},
+          {"text": "Bevor wir die Seite neu gestalten, müssen wir festlegen, was als erfolgreiche Auffindbarkeit gilt.", "translation_ru": "Прежде чем переделывать страницу, нужно определить, что считается успешным обнаружением контента."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHFRM003",
+    "title_ru": "Проектировать вокруг реального ограничения",
+    "group_id": "FRM",
+    "set_id": "FRM",
+    "logic": "constraint framing",
+    "metaphor_ru": "Отделите ограничение, которое действительно определяет решение, от удобного, но второстепенного фактора.",
+    "reasoning": {"move": "Frame", "what_it_does_en": "Identify the constraint that should shape the solution rather than a convenient proxy.", "what_it_does_ru": "Определить ограничение, которое должно формировать решение, а не удобный заменитель."},
+    "practice": {"mode": "produce", "cue": "Name the constraint the design must actually respect."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The constraint we should design around is [X], not [Y].",
+        "example": "The constraint we should design around is auditability, not the number of screens.",
+        "translation": "Ограничение, вокруг которого нужно проектировать, — проверяемость, а не количество экранов.",
+        "examples": [
+          {"text": "The constraint we should design around is reviewer capacity, not theoretical throughput.", "translation_ru": "Нужно проектировать вокруг пропускной способности проверяющих, а не теоретической производительности."},
+          {"text": "The constraint we should design around is data quality, not model size.", "translation_ru": "Нужно проектировать вокруг качества данных, а не размера модели."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Randbedingung, an der wir uns orientieren sollten, ist [X], nicht [Y].",
+        "example": "Die Randbedingung, an der wir uns orientieren sollten, ist die Prüfbarkeit, nicht die Anzahl der Bildschirme.",
+        "translation": "Ограничение, вокруг которого нужно проектировать, — проверяемость, а не количество экранов.",
+        "examples": [
+          {"text": "Die Randbedingung, an der wir uns orientieren sollten, ist die Kapazität der Prüfer, nicht der theoretische Durchsatz.", "translation_ru": "Нужно проектировать вокруг пропускной способности проверяющих, а не теоретической производительности."},
+          {"text": "Die Randbedingung, an der wir uns orientieren sollten, ist die Datenqualität, nicht die Modellgröße.", "translation_ru": "Нужно проектировать вокруг качества данных, а не размера модели."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHFRM004",
+    "title_ru": "Рамка определяет, что мы оптимизируем",
+    "group_id": "FRM",
+    "set_id": "FRM",
+    "logic": "frame consequence",
+    "metaphor_ru": "Покажите, как формулировка проблемы заранее направляет решение в определённую сторону.",
+    "reasoning": {"move": "Frame", "what_it_does_en": "Expose how a problem definition determines the metric or behaviour that will be optimised.", "what_it_does_ru": "Показать, как определение проблемы задаёт метрику или поведение, которые будут оптимизироваться."},
+    "practice": {"mode": "produce", "cue": "Connect a problem definition to the behaviour it encourages."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "If we define the problem as [X], we will optimise for [Y].",
+        "example": "If we define the problem as reducing tickets, we will optimise for closure rather than resolution quality.",
+        "translation": "Если определить проблему как сокращение числа заявок, мы начнём оптимизировать закрытие, а не качество решения.",
+        "examples": [
+          {"text": "If we define the problem as producing more content, we will optimise for volume rather than usefulness.", "translation_ru": "Если определить проблему как выпуск большего количества контента, мы начнём оптимизировать объём, а не полезность."},
+          {"text": "If we define the problem as speed alone, we will optimise for shorter cycles even when rework increases.", "translation_ru": "Если определить проблему только как скорость, мы начнём сокращать циклы, даже если объём переделок вырастет."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn wir das Problem als [X] definieren, werden wir auf [Y] optimieren.",
+        "example": "Wenn wir das Problem als Reduzierung der Tickets definieren, werden wir auf Abschluss statt auf Lösungsqualität optimieren.",
+        "translation": "Если определить проблему как сокращение числа заявок, мы начнём оптимизировать закрытие, а не качество решения.",
+        "examples": [
+          {"text": "Wenn wir das Problem als Produktion von mehr Inhalten definieren, werden wir auf Menge statt auf Nutzen optimieren.", "translation_ru": "Если определить проблему как выпуск большего количества контента, мы начнём оптимизировать объём, а не полезность."},
+          {"text": "Wenn wir das Problem nur als Geschwindigkeit definieren, werden wir auf kürzere Zyklen optimieren, selbst wenn die Nacharbeit zunimmt.", "translation_ru": "Если определить проблему только как скорость, мы начнём сокращать циклы, даже если объём переделок вырастет."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHFRM005",
+    "title_ru": "Разделить два смешанных вопроса",
+    "group_id": "FRM",
+    "set_id": "FRM",
+    "logic": "distinction reframing",
+    "metaphor_ru": "Иногда спор исчезает, если разделить два понятия, которые раньше обсуждались как одно.",
+    "reasoning": {"move": "Frame", "what_it_does_en": "Change the problem by separating two concepts that were being treated as one.", "what_it_does_ru": "Изменить постановку проблемы, разделив два понятия, которые раньше смешивались."},
+    "practice": {"mode": "produce", "cue": "Name the distinction that changes the question."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The question changes once we distinguish [X] from [Y].",
+        "example": "The question changes once we distinguish adoption from repeated use.",
+        "translation": "Вопрос меняется, если отделить первое использование от повторного использования.",
+        "examples": [
+          {"text": "The question changes once we distinguish correlation from causation.", "translation_ru": "Вопрос меняется, если отделить корреляцию от причинности."},
+          {"text": "The question changes once we distinguish a temporary workaround from a sustainable operating model.", "translation_ru": "Вопрос меняется, если отделить временный обходной путь от устойчивой операционной модели."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Frage verändert sich, sobald wir [X] von [Y] unterscheiden.",
+        "example": "Die Frage verändert sich, sobald wir die erste Nutzung von wiederholter Nutzung unterscheiden.",
+        "translation": "Вопрос меняется, если отделить первое использование от повторного использования.",
+        "examples": [
+          {"text": "Die Frage verändert sich, sobald wir Korrelation von Kausalität unterscheiden.", "translation_ru": "Вопрос меняется, если отделить корреляцию от причинности."},
+          {"text": "Die Frage verändert sich, sobald wir eine vorübergehende Umgehungslösung von einem nachhaltigen Betriebsmodell unterscheiden.", "translation_ru": "Вопрос меняется, если отделить временный обходной путь от устойчивой операционной модели."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]
