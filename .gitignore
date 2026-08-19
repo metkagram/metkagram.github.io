@@ -1,5 +1,6 @@
 node_modules/
 data/canonical-annotations.json
+data/search-measurement/private/
 dist/
 playwright-report/
 test-results/
@@ -9,6 +10,7 @@ reports/brand-audit/
 reports/minimal-home/
 reports/unified-annotation/
 reports/design-qa/
+reports/search-measurement/private/
 .DS_Store
 annotation_service/.venv/
 annotation_service/**/__pycache__/
