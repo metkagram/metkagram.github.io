@@ -43,7 +43,7 @@ export function normalizeSearchRow(row) {
   const route = normalizeRoute(row.url || row.route);
   const clicks = finiteNumber(row.clicks ?? 0, "clicks");
   const impressions = finiteNumber(row.impressions ?? 0, "impressions");
-  let ctr = row.ctr === undefined || row.ctr === null
+  const ctr = row.ctr === undefined || row.ctr === null
     ? (impressions > 0 ? clicks / impressions : 0)
     : finiteNumber(row.ctr, "ctr");
   if (ctr > 1) throw new Error("ctr must be a decimal ratio between 0 and 1, not a percentage value");
@@ -134,6 +134,24 @@ function summarizeRows(rows) {
   };
 }
 
+function groupRecommendationsByRouteType(recommendations) {
+  const grouped = {};
+  for (const routeType of [...new Set(recommendations.map((row) => row.route_type))].sort()) {
+    grouped[routeType] = recommendations
+      .filter((row) => row.route_type === routeType)
+      .map((row) => ({
+        route: row.route,
+        action: row.action,
+        impressions: row.impressions,
+        clicks: row.clicks,
+        ctr: row.ctr,
+        position: row.position,
+        rationale: row.rationale
+      }));
+  }
+  return grouped;
+}
+
 export function buildSearchMeasurementReport(payload) {
   if (!payload || typeof payload !== "object") throw new Error("search measurement payload is required");
   if (payload.schemaVersion !== 1) throw new Error("search measurement schemaVersion must be 1");
@@ -167,6 +185,7 @@ export function buildSearchMeasurementReport(payload) {
     totals: summarizeRows(recommendations),
     actionCounts,
     byRouteType,
+    recommendationsByRouteType: groupRecommendationsByRouteType(recommendations),
     recommendations
   };
 }
@@ -194,7 +213,21 @@ export function renderSearchMeasurementMarkdown(report) {
     lines.push(`| ${routeType} | ${summary.pages} | ${summary.impressions} | ${summary.clicks} | ${percent(summary.ctr)} | ${summary.indexed_to_crawled_ratio === null ? "n/a" : percent(summary.indexed_to_crawled_ratio)} |`);
   }
 
-  lines.push("", "## Decision queue", "");
+  lines.push("", "## Actionable opportunities by route type", "");
+  for (const [routeType, items] of Object.entries(report.recommendationsByRouteType)) {
+    const actionable = items.filter((item) => item.action !== "observe");
+    lines.push(`### ${routeType} (${actionable.length} actionable)`, "");
+    if (!actionable.length) {
+      lines.push("No search-driven action candidate in this aggregate export.", "");
+      continue;
+    }
+    for (const item of actionable) {
+      lines.push(`- **${item.action}** \`${item.route}\` — ${item.impressions} impressions · ${item.clicks} clicks · ${percent(item.ctr)} CTR. ${item.rationale}`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## Decision queue", "");
   for (const action of ["improve", "expand", "consolidate", "noindex", "observe"]) {
     const items = report.recommendations.filter((row) => row.action === action);
     lines.push(`### ${action} (${items.length})`, "");
