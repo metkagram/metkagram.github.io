@@ -1,0 +1,167 @@
+[
+  {
+    "id": "XTHDEC001",
+    "title_ru": "Сначала критерии решения, потом варианты",
+    "group_id": "DEC",
+    "set_id": "DEC",
+    "logic": "decision criteria first",
+    "metaphor_ru": "Не меняйте критерии после того, как увидели любимый вариант.",
+    "reasoning": {"move": "Decide", "what_it_does_en": "Fix the comparison criteria before preferences for individual options distort the decision.", "what_it_does_ru": "Зафиксировать критерии сравнения до того, как предпочтение конкретного варианта исказит решение."},
+    "practice": {"mode": "produce", "cue": "State the criteria before naming the preferred option."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "We should agree on the decision criteria before comparing [X] and [Y].",
+        "example": "We should agree on the decision criteria before comparing the hosted service and the local tool.",
+        "translation": "Нужно согласовать критерии решения, прежде чем сравнивать размещённый сервис и локальный инструмент.",
+        "examples": [
+          {"text": "We should agree on the decision criteria before comparing speed and completeness.", "translation_ru": "Нужно согласовать критерии решения, прежде чем сравнивать скорость и полноту."},
+          {"text": "We should agree on the decision criteria before comparing the two vendors.", "translation_ru": "Нужно согласовать критерии решения, прежде чем сравнивать двух поставщиков."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wir sollten uns auf die Entscheidungskriterien einigen, bevor wir [X] und [Y] vergleichen.",
+        "example": "Wir sollten uns auf die Entscheidungskriterien einigen, bevor wir den gehosteten Dienst und das lokale Werkzeug vergleichen.",
+        "translation": "Нужно согласовать критерии решения, прежде чем сравнивать размещённый сервис и локальный инструмент.",
+        "examples": [
+          {"text": "Wir sollten uns auf die Entscheidungskriterien einigen, bevor wir Geschwindigkeit und Vollständigkeit vergleichen.", "translation_ru": "Нужно согласовать критерии решения, прежде чем сравнивать скорость и полноту."},
+          {"text": "Wir sollten uns auf die Entscheidungskriterien einigen, bevor wir die beiden Anbieter vergleichen.", "translation_ru": "Нужно согласовать критерии решения, прежде чем сравнивать двух поставщиков."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHDEC002",
+    "title_ru": "Обратимое решение можно принять быстрее",
+    "group_id": "DEC",
+    "set_id": "DEC",
+    "logic": "reversibility",
+    "metaphor_ru": "Не требуйте одинаковой степени уверенности от решений, которые легко отменить, и решений, которые трудно повернуть назад.",
+    "reasoning": {"move": "Decide", "what_it_does_en": "Use reversibility to decide how much certainty is worth waiting for.", "what_it_does_ru": "Использовать обратимость решения, чтобы определить, сколько уверенности действительно стоит ждать."},
+    "practice": {"mode": "produce", "cue": "Connect reversibility with the appropriate decision speed."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "If this decision is reversible, we can favour speed over certainty.",
+        "example": "If this decision is reversible, we can favour speed over certainty and test the smaller rollout.",
+        "translation": "Если решение обратимо, можно предпочесть скорость уверенности и проверить меньший запуск.",
+        "examples": [
+          {"text": "If this decision is reversible, we can favour speed over certainty and learn from real usage.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности и учиться на реальном использовании."},
+          {"text": "If this decision is reversible, we can favour speed over certainty instead of extending analysis for another month.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности, а не продлевать анализ ещё на месяц."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit.",
+        "example": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit und den kleineren Rollout testen.",
+        "translation": "Если решение обратимо, можно предпочесть скорость уверенности и проверить меньший запуск.",
+        "examples": [
+          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit und aus der realen Nutzung lernen.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности и учиться на реальном использовании."},
+          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit, statt die Analyse um einen weiteren Monat zu verlängern.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности, а не продлевать анализ ещё на месяц."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHDEC003",
+    "title_ru": "Цена ожидания и цена действия сейчас",
+    "group_id": "DEC",
+    "set_id": "DEC",
+    "logic": "cost of delay",
+    "metaphor_ru": "Ожидание тоже является выбором и тоже имеет цену.",
+    "reasoning": {"move": "Decide", "what_it_does_en": "Compare the cost of delaying a decision with the cost of acting before uncertainty disappears.", "what_it_does_ru": "Сравнить цену задержки решения с ценой действия до исчезновения неопределённости."},
+    "practice": {"mode": "produce", "cue": "Put the cost of waiting and the cost of acting on the same scale."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The cost of waiting is [X], while the cost of acting now is [Y].",
+        "example": "The cost of waiting is another month of manual work, while the cost of acting now is a limited migration risk.",
+        "translation": "Цена ожидания — ещё месяц ручной работы, а цена действия сейчас — ограниченный риск миграции.",
+        "examples": [
+          {"text": "The cost of waiting is lost search traffic, while the cost of acting now is a small chance of rewriting the page later.", "translation_ru": "Цена ожидания — потерянный поисковый трафик, а цена действия сейчас — небольшой шанс позже переписать страницу."},
+          {"text": "The cost of waiting is unresolved customer pain, while the cost of acting now is a controlled pilot failure.", "translation_ru": "Цена ожидания — нерешённая проблема клиента, а цена действия сейчас — контролируемый риск неудачи пилота."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Kosten des Wartens sind [X], während die Kosten des sofortigen Handelns [Y] sind.",
+        "example": "Die Kosten des Wartens sind ein weiterer Monat manueller Arbeit, während die Kosten des sofortigen Handelns ein begrenztes Migrationsrisiko sind.",
+        "translation": "Цена ожидания — ещё месяц ручной работы, а цена действия сейчас — ограниченный риск миграции.",
+        "examples": [
+          {"text": "Die Kosten des Wartens sind verlorener Suchverkehr, während die Kosten des sofortigen Handelns ein kleines Risiko einer späteren Überarbeitung der Seite sind.", "translation_ru": "Цена ожидания — потерянный поисковый трафик, а цена действия сейчас — небольшой шанс позже переписать страницу."},
+          {"text": "Die Kosten des Wartens sind ungelöste Kundenprobleme, während die Kosten des sofortigen Handelns das kontrollierte Risiko eines gescheiterten Piloten sind.", "translation_ru": "Цена ожидания — нерешённая проблема клиента, а цена действия сейчас — контролируемый риск неудачи пилота."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHDEC004",
+    "title_ru": "Выбор не между риском и отсутствием риска",
+    "group_id": "DEC",
+    "set_id": "DEC",
+    "logic": "risk tradeoff",
+    "metaphor_ru": "В реальном решении обычно выбирают не отсутствие риска, а один профиль риска вместо другого.",
+    "reasoning": {"move": "Decide", "what_it_does_en": "Reframe a false safe-versus-risky choice as a comparison between different risks.", "what_it_does_ru": "Заменить ложный выбор «безопасно или рискованно» сравнением разных рисков."},
+    "practice": {"mode": "produce", "cue": "Name the two risks that the decision trades off."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "The choice is not between risk and no risk, but between [X] risk and [Y] risk.",
+        "example": "The choice is not between risk and no risk, but between migration risk and long-term maintenance risk.",
+        "translation": "Выбор не между риском и отсутствием риска, а между риском миграции и долгосрочным риском сопровождения.",
+        "examples": [
+          {"text": "The choice is not between risk and no risk, but between automation risk and scaling risk.", "translation_ru": "Выбор не между риском и отсутствием риска, а между риском автоматизации и риском масштабирования."},
+          {"text": "The choice is not between risk and no risk, but between publishing imperfectly and remaining invisible.", "translation_ru": "Выбор не между риском и отсутствием риска, а между несовершенной публикацией и сохранением невидимости."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Die Wahl besteht nicht zwischen Risiko und keinem Risiko, sondern zwischen [X]-Risiko und [Y]-Risiko.",
+        "example": "Die Wahl besteht nicht zwischen Risiko und keinem Risiko, sondern zwischen Migrationsrisiko und langfristigem Wartungsrisiko.",
+        "translation": "Выбор не между риском и отсутствием риска, а между риском миграции и долгосрочным риском сопровождения.",
+        "examples": [
+          {"text": "Die Wahl besteht nicht zwischen Risiko und keinem Risiko, sondern zwischen Automatisierungsrisiko und Skalierungsrisiko.", "translation_ru": "Выбор не между риском и отсутствием риска, а между риском автоматизации и риском масштабирования."},
+          {"text": "Die Wahl besteht nicht zwischen Risiko und keinem Risiko, sondern zwischen unvollkommener Veröffentlichung und Unsichtbarkeit.", "translation_ru": "Выбор не между риском и отсутствием риска, а между несовершенной публикацией и сохранением невидимости."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  },
+  {
+    "id": "XTHDEC005",
+    "title_ru": "Сохранить пространство для следующего решения",
+    "group_id": "DEC",
+    "set_id": "DEC",
+    "logic": "optionality",
+    "metaphor_ru": "Иногда лучший следующий шаг — не закрыть все варианты, а получить информацию и сохранить возможность изменить курс.",
+    "reasoning": {"move": "Decide", "what_it_does_en": "Choose an action that creates information or progress while preserving future choices.", "what_it_does_ru": "Выбрать действие, которое даёт информацию или прогресс и при этом сохраняет будущие варианты."},
+    "practice": {"mode": "produce", "cue": "Describe a step that preserves optionality while postponing a harder commitment."},
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "We can preserve optionality by [doing X] while postponing [Y].",
+        "example": "We can preserve optionality by running a limited pilot while postponing the full migration.",
+        "translation": "Мы можем сохранить пространство для выбора, запустив ограниченный пилот и отложив полную миграцию.",
+        "examples": [
+          {"text": "We can preserve optionality by publishing the static API while postponing the hosted service.", "translation_ru": "Мы можем сохранить пространство для выбора, опубликовав статический API и отложив размещённый сервис."},
+          {"text": "We can preserve optionality by testing one market while postponing a global rollout.", "translation_ru": "Мы можем сохранить пространство для выбора, протестировав один рынок и отложив глобальный запуск."}
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wir können Handlungsspielraum bewahren, indem wir [X] tun und [Y] aufschieben.",
+        "example": "Wir können Handlungsspielraum bewahren, indem wir einen begrenzten Piloten durchführen und die vollständige Migration aufschieben.",
+        "translation": "Мы можем сохранить пространство для выбора, запустив ограниченный пилот и отложив полную миграцию.",
+        "examples": [
+          {"text": "Wir können Handlungsspielraum bewahren, indem wir die statische API veröffentlichen und den gehosteten Dienst aufschieben.", "translation_ru": "Мы можем сохранить пространство для выбора, опубликовав статический API и отложив размещённый сервис."},
+          {"text": "Wir können Handlungsspielraum bewahren, indem wir einen Markt testen und den globalen Rollout aufschieben.", "translation_ru": "Мы можем сохранить пространство для выбора, протестировав один рынок и отложив глобальный запуск."}
+        ]
+      }
+    ],
+    "gen": {"status": "curated", "iterations": 1, "lastGeneratedAt": "2026-08-19", "languages": ["en", "de"], "notes": "Thinking-in-language curriculum extension."}
+  }
+]
