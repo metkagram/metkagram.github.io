@@ -1,101 +1,25 @@
 {
   "schemaVersion": 1,
   "sets": [
-    {
-      "id": "CGR",
-      "title_en": "Contrast grammar",
-      "title_ru": "Грамматика через контрасты",
-      "description": "Choose between easily confused structures by meaning, not by rule name.",
-      "description_ru": "Выбирайте между похожими конструкциями по смыслу, а не по названию правила.",
-      "level": "B2–C1",
-      "path": "CGR"
-    },
-    {
-      "id": "SPK",
-      "title_en": "Spoken grammar",
-      "title_ru": "Грамматика живой речи",
-      "description": "Use compact spoken frames that organise an idea naturally in conversation.",
-      "description_ru": "Используйте компактные разговорные каркасы, которые естественно организуют мысль.",
-      "level": "B2–C1",
-      "path": "SPK"
-    },
-    {
-      "id": "INT",
-      "title_en": "Interaction moves",
-      "title_ru": "Управление разговором",
-      "description": "Enter, hold, redirect and close a turn without losing the thread.",
-      "description_ru": "Входите в разговор, удерживайте ход мысли, перенаправляйте и завершайте реплику.",
-      "level": "B2–C1",
-      "path": "INT"
-    },
-    {
-      "id": "REG",
-      "title_en": "Register shifting",
-      "title_ru": "Переключение регистра",
-      "description": "Express the same intent in casual, neutral and professional language.",
-      "description_ru": "Выражайте одну и ту же мысль в разговорном, нейтральном и профессиональном регистре.",
-      "level": "B2–C1",
-      "path": "REG"
-    },
-    {
-      "id": "RTR",
-      "title_en": "Russian-speaker transfer traps",
-      "title_ru": "Ловушки переноса из русского",
-      "description": "Correct recurring English and German structures that Russian speakers tend to transfer literally.",
-      "description_ru": "Исправляйте типичные английские и немецкие конструкции, которые русскоязычные переносят буквально.",
-      "level": "B2–C1",
-      "path": "RTR"
-    },
-    {
-      "id": "TRN",
-      "title_en": "Transformations and reformulation",
-      "title_ru": "Трансформации и переформулирование",
-      "description": "Rebuild the same meaning with a different grammatical or discourse frame.",
-      "description_ru": "Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.",
-      "level": "B2–C1",
-      "path": "TRN"
-    },
-    {
-      "id": "FRM",
-      "title_en": "Problem framing and reframing",
-      "title_ru": "Постановка и переопределение проблемы",
-      "description": "Define the problem before solving it, expose hidden assumptions, and choose a more useful frame.",
-      "description_ru": "Определяйте проблему до поиска решения, выявляйте скрытые допущения и выбирайте более полезную рамку.",
-      "level": "B2–C1",
-      "path": "FRM"
-    },
-    {
-      "id": "UNC",
-      "title_en": "Reasoning under uncertainty",
-      "title_ru": "Рассуждение в условиях неопределённости",
-      "description": "Separate evidence from assumptions, calibrate confidence, and identify what information would change the conclusion.",
-      "description_ru": "Отделяйте данные от предположений, соразмеряйте уверенность и определяйте, какая информация изменит вывод.",
-      "level": "B2–C1",
-      "path": "UNC"
-    },
-    {
-      "id": "SYS",
-      "title_en": "Systems thinking",
-      "title_ru": "Системное мышление",
-      "description": "Trace second-order effects, bottlenecks, local optimisation, and the drivers that keep a problem recurring.",
-      "description_ru": "Отслеживайте эффекты второго порядка, узкие места, локальную оптимизацию и причины повторяющихся проблем.",
-      "level": "B2–C1",
-      "path": "SYS"
-    },
-    {
-      "id": "DEC",
-      "title_en": "Decision quality and trade-offs",
-      "title_ru": "Качество решений и компромиссы",
-      "description": "Compare options by explicit criteria, weigh the cost of delay, and preserve useful flexibility when certainty is impossible.",
-      "description_ru": "Сравнивайте варианты по явным критериям, учитывайте цену ожидания и сохраняйте гибкость, когда полной уверенности быть не может.",
-      "level": "B2–C1",
-      "path": "DEC"
-    }
+    {"id":"CGR","title_en":"Contrast grammar","title_ru":"Грамматика через контрасты","description":"Choose between easily confused structures by meaning, not by rule name.","description_ru":"Выбирайте между похожими конструкциями по смыслу, а не по названию правила.","level":"B2–C1","path":"CGR"},
+    {"id":"SPK","title_en":"Spoken grammar","title_ru":"Грамматика живой речи","description":"Use compact spoken frames that organise an idea naturally in conversation.","description_ru":"Используйте компактные разговорные каркасы, которые естественно организуют мысль.","level":"B2–C1","path":"SPK"},
+    {"id":"INT","title_en":"Interaction moves","title_ru":"Управление разговором","description":"Enter, hold, redirect and close a turn without losing the thread.","description_ru":"Входите в разговор, удерживайте ход мысли, перенаправляйте и завершайте реплику.","level":"B2–C1","path":"INT"},
+    {"id":"REG","title_en":"Register shifting","title_ru":"Переключение регистра","description":"Express the same intent in casual, neutral and professional language.","description_ru":"Выражайте одну и ту же мысль в разговорном, нейтральном и профессиональном регистре.","level":"B2–C1","path":"REG"},
+    {"id":"RTR","title_en":"Russian-speaker transfer traps","title_ru":"Ловушки переноса из русского","description":"Correct recurring English and German structures that Russian speakers tend to transfer literally.","description_ru":"Исправляйте типичные английские и немецкие конструкции, которые русскоязычные переносят буквально.","level":"B2–C1","path":"RTR"},
+    {"id":"TRN","title_en":"Transformations and reformulation","title_ru":"Трансформации и переформулирование","description":"Rebuild the same meaning with a different grammatical or discourse frame.","description_ru":"Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.","level":"B2–C1","path":"TRN"},
+    {"id":"FRM","title_en":"Problem framing and reframing","title_ru":"Постановка и переопределение проблемы","description":"Define the problem before solving it, expose hidden assumptions, and choose a more useful frame.","description_ru":"Определяйте проблему до поиска решения, выявляйте скрытые допущения и выбирайте более полезную рамку.","level":"B2–C1","path":"FRM"},
+    {"id":"UNC","title_en":"Reasoning under uncertainty","title_ru":"Рассуждение в условиях неопределённости","description":"Separate evidence from assumptions, calibrate confidence, and identify what information would change the conclusion.","description_ru":"Отделяйте данные от предположений, соразмеряйте уверенность и определяйте, какая информация изменит вывод.","level":"B2–C1","path":"UNC"},
+    {"id":"SYS","title_en":"Systems thinking","title_ru":"Системное мышление","description":"Trace second-order effects, bottlenecks, local optimisation, and the drivers that keep a problem recurring.","description_ru":"Отслеживайте эффекты второго порядка, узкие места, локальную оптимизацию и причины повторяющихся проблем.","level":"B2–C1","path":"SYS"},
+    {"id":"DEC","title_en":"Decision quality and trade-offs","title_ru":"Качество решений и компромиссы","description":"Compare options by explicit criteria, weigh the cost of delay, and preserve useful flexibility when certainty is impossible.","description_ru":"Сравнивайте варианты по явным критериям, учитывайте цену ожидания и сохраняйте гибкость, когда полной уверенности быть не может.","level":"B2–C1","path":"DEC"},
+    {"id":"CDG","title_en":"Causal diagnosis","title_ru":"Причинная диагностика","description":"Separate triggers from causes, compare mechanisms, and diagnose causal structure without treating sequence as proof.","description_ru":"Отделяйте триггеры от причин, сравнивайте механизмы и диагностируйте причинную структуру без подмены причинности последовательностью.","level":"B2–C1","path":"CDG"},
+    {"id":"HYP","title_en":"Hypothesis testing","title_ru":"Проверка гипотез","description":"Turn explanations into testable predictions, seek discriminating evidence, and revise claims when the data require it.","description_ru":"Превращайте объяснения в проверяемые предсказания, ищите различающие данные и пересматривайте выводы, когда этого требуют факты.","level":"B2–C1","path":"HYP"},
+    {"id":"PST","title_en":"Perspective taking","title_ru":"Смена перспективы","description":"Represent another viewpoint fairly, separate positions from interests, and locate the real source of disagreement.","description_ru":"Корректно представляйте чужую точку зрения, отделяйте позиции от интересов и находите реальный источник разногласия.","level":"B2–C1","path":"PST"},
+    {"id":"META","title_en":"Metacognitive learning","title_ru":"Метакогнитивное обучение","description":"Notice what you recognise but cannot recall, diagnose recurring errors, and convert feedback into the next practice target.","description_ru":"Замечайте разницу между узнаванием и воспроизведением, диагностируйте повторяющиеся ошибки и превращайте обратную связь в следующий объект практики.","level":"B2–C1","path":"META"}
   ],
   "learningPathAdds": {
     "C1-GRAMMAR": ["CGR", "RTR"],
-    "C1-FUNCTIONS": ["SPK", "INT", "REG"],
-    "C1-CONTROL": ["TRN", "SYS", "DEC"],
-    "C1-COMMUNICATE": ["FRM", "UNC"]
+    "C1-FUNCTIONS": ["SPK", "INT", "REG", "PST"],
+    "C1-CONTROL": ["TRN", "SYS", "DEC", "CDG", "HYP", "META"],
+    "C1-COMMUNICATE": ["FRM", "UNC", "PST"]
   }
 }
