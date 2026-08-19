@@ -16,7 +16,8 @@
         "examples": [
           {"text": "❌ We discussed problem with client. → ✓ We discussed **the problem with the client**.", "translation_ru": "Мы обсудили проблему с клиентом."},
           {"text": "❌ She opened file from shared folder. → ✓ She opened **the file from the shared folder**.", "translation_ru": "Она открыла файл из общей папки."},
-          {"text": "❌ I need laptop for meeting. → ✓ I need **a laptop for the meeting**.", "translation_ru": "Мне нужен ноутбук для встречи."}
+          {"text": "❌ I need laptop for meeting. → ✓ I need **a laptop for the meeting**.", "translation_ru": "Мне нужен ноутбук для встречи."},
+          {"text": "❌ Could you send report before call? → ✓ Could you send **the report before the call**?", "translation_ru": "Можешь отправить отчёт до звонка?"}
         ]
       },
       {
@@ -27,7 +28,8 @@
         "examples": [
           {"text": "❌ Wir öffneten Datei aus Ordner. → ✓ Wir öffneten **die Datei aus dem Ordner**.", "translation_ru": "Мы открыли файл из папки."},
           {"text": "❌ Sie schickte Bericht an Kunden. → ✓ Sie schickte **den Bericht an den Kunden**.", "translation_ru": "Она отправила отчёт клиенту."},
-          {"text": "❌ Ich brauche Laptop für Besprechung. → ✓ Ich brauche **einen Laptop für die Besprechung**.", "translation_ru": "Мне нужен ноутбук для встречи."}
+          {"text": "❌ Ich brauche Laptop für Besprechung. → ✓ Ich brauche **einen Laptop für die Besprechung**.", "translation_ru": "Мне нужен ноутбук для встречи."},
+          {"text": "❌ Ich habe Termin mit Kunden. → ✓ Ich habe **einen Termin mit dem Kunden**.", "translation_ru": "У меня встреча с клиентом."}
         ]
       }
     ],
@@ -50,7 +52,8 @@
         "examples": [
           {"text": "❌ Please listen me for a minute. → ✓ Please **listen to me** for a minute.", "translation_ru": "Пожалуйста, послушай меня минуту."},
           {"text": "❌ The result depends from the input. → ✓ The result **depends on the input**.", "translation_ru": "Результат зависит от входных данных."},
-          {"text": "❌ It belongs for another team. → ✓ It **belongs to another team**.", "translation_ru": "Это относится к другой команде."}
+          {"text": "❌ It belongs for another team. → ✓ It **belongs to another team**.", "translation_ru": "Это относится к другой команде."},
+          {"text": "❌ She applied on the position. → ✓ She **applied for the position**.", "translation_ru": "Она подала заявку на эту должность."}
         ]
       },
       {
@@ -61,7 +64,8 @@
         "examples": [
           {"text": "❌ Wir warten die Freigabe. → ✓ Wir **warten auf die Freigabe**.", "translation_ru": "Мы ждём согласования."},
           {"text": "❌ Das hängt von die Daten ab. → ✓ Das **hängt von den Daten ab**.", "translation_ru": "Это зависит от данных."},
-          {"text": "❌ Bitte hör mich. → ✓ Bitte **hör mir zu**.", "translation_ru": "Пожалуйста, послушай меня."}
+          {"text": "❌ Bitte hör mich. → ✓ Bitte **hör mir zu**.", "translation_ru": "Пожалуйста, послушай меня."},
+          {"text": "❌ Wir sprechen das Problem morgen. → ✓ Wir **sprechen morgen über das Problem**.", "translation_ru": "Завтра мы поговорим об этой проблеме."}
         ]
       }
     ],
@@ -84,7 +88,8 @@
         "examples": [
           {"text": "❌ We are working on this since Monday. → ✓ We **have been working on this since Monday**.", "translation_ru": "Мы работаем над этим с понедельника."},
           {"text": "❌ She is waiting for an answer for two hours. → ✓ She **has been waiting for an answer for two hours**.", "translation_ru": "Она ждёт ответа уже два часа."},
-          {"text": "❌ I know him since university. → ✓ I **have known him since university**.", "translation_ru": "Я знаю его со времён университета."}
+          {"text": "❌ I know him since university. → ✓ I **have known him since university**.", "translation_ru": "Я знаю его со времён университета."},
+          {"text": "❌ He works here since 2022. → ✓ He **has worked here since 2022**.", "translation_ru": "Он работает здесь с 2022 года."}
         ]
       },
       {
@@ -95,7 +100,8 @@
         "examples": [
           {"text": "❌ Wir arbeiten dafür seit Montag. → ✓ Wir **arbeiten seit Montag daran**.", "translation_ru": "Мы работаем над этим с понедельника."},
           {"text": "❌ Sie wartet für zwei Stunden. → ✓ Sie **wartet seit zwei Stunden**.", "translation_ru": "Она ждёт уже два часа."},
-          {"text": "❌ Ich kenne ihn von Universität. → ✓ Ich **kenne ihn seit der Universität**.", "translation_ru": "Я знаю его со времён университета."}
+          {"text": "❌ Ich kenne ihn von Universität. → ✓ Ich **kenne ihn seit der Universität**.", "translation_ru": "Я знаю его со времён университета."},
+          {"text": "❌ Er arbeitet hier für drei Jahre. → ✓ Er **arbeitet seit drei Jahren hier**.", "translation_ru": "Он работает здесь уже три года."}
         ]
       }
     ],
@@ -118,7 +124,8 @@
         "examples": [
           {"text": "❌ If the test will fail, we will stop the release. → ✓ **If the test fails, we will stop the release**.", "translation_ru": "Если тест провалится, мы остановим релиз."},
           {"text": "❌ If she will confirm today, we can proceed. → ✓ **If she confirms today, we can proceed**.", "translation_ru": "Если она подтвердит сегодня, мы сможем продолжить."},
-          {"text": "❌ When the file will arrive, I will check it. → ✓ **When the file arrives, I will check it**.", "translation_ru": "Когда файл придёт, я его проверю."}
+          {"text": "❌ When the file will arrive, I will check it. → ✓ **When the file arrives, I will check it**.", "translation_ru": "Когда файл придёт, я его проверю."},
+          {"text": "❌ If they will approve it today, we will release tomorrow. → ✓ **If they approve it today, we will release tomorrow**.", "translation_ru": "Если они одобрят это сегодня, завтра мы выпустим релиз."}
         ]
       },
       {
@@ -129,7 +136,8 @@
         "examples": [
           {"text": "❌ Wenn wir würden früher starten, wären wir fertig. → ✓ **Wenn wir früher starten würden, wären wir fertig**.", "translation_ru": "Если бы мы начали раньше, мы бы закончили."},
           {"text": "❌ Wenn er würde zustimmen, könnten wir weitermachen. → ✓ **Wenn er zustimmen würde, könnten wir weitermachen**.", "translation_ru": "Если бы он согласился, мы могли бы продолжить."},
-          {"text": "❌ Wenn ich würde das wissen, hätte ich anders entschieden. → ✓ **Wenn ich das gewusst hätte, hätte ich anders entschieden**.", "translation_ru": "Если бы я это знал, я бы принял другое решение."}
+          {"text": "❌ Wenn ich würde das wissen, hätte ich anders entschieden. → ✓ **Wenn ich das gewusst hätte, hätte ich anders entschieden**.", "translation_ru": "Если бы я это знал, я бы принял другое решение."},
+          {"text": "❌ Wenn sie würden heute zustimmen, könnten wir morgen starten. → ✓ **Wenn sie heute zustimmen würden, könnten wir morgen starten**.", "translation_ru": "Если бы они сегодня согласились, завтра мы могли бы начать."}
         ]
       }
     ],
@@ -152,7 +160,8 @@
         "examples": [
           {"text": "❌ We very need this feature. → ✓ We **really need this feature**.", "translation_ru": "Нам очень нужна эта функция."},
           {"text": "❌ She very wants to join. → ✓ She **really wants to join**.", "translation_ru": "Она очень хочет присоединиться."},
-          {"text": "❌ I like this option very. → ✓ I **like this option very much**.", "translation_ru": "Мне очень нравится этот вариант."}
+          {"text": "❌ I like this option very. → ✓ I **like this option very much**.", "translation_ru": "Мне очень нравится этот вариант."},
+          {"text": "❌ I very appreciate your help. → ✓ I **really appreciate your help**.", "translation_ru": "Я очень ценю твою помощь."}
         ]
       },
       {
@@ -163,7 +172,8 @@
         "examples": [
           {"text": "❌ Wir sehr brauchen diese Funktion. → ✓ Wir **brauchen diese Funktion wirklich**.", "translation_ru": "Нам очень нужна эта функция."},
           {"text": "❌ Sie sehr möchte teilnehmen. → ✓ Sie **möchte wirklich teilnehmen**.", "translation_ru": "Она очень хочет участвовать."},
-          {"text": "❌ Ich sehr schätze die Hilfe. → ✓ Ich **schätze die Hilfe sehr**.", "translation_ru": "Я очень ценю помощь."}
+          {"text": "❌ Ich sehr schätze die Hilfe. → ✓ Ich **schätze die Hilfe sehr**.", "translation_ru": "Я очень ценю помощь."},
+          {"text": "❌ Ich sehr freue mich darüber. → ✓ Ich **freue mich sehr darüber**.", "translation_ru": "Я очень этому рад."}
         ]
       }
     ],
@@ -186,7 +196,8 @@
         "examples": [
           {"text": "❌ She feels herself nervous before presentations. → ✓ She **feels nervous before presentations**.", "translation_ru": "Она нервничает перед презентациями."},
           {"text": "❌ I feel myself much better now. → ✓ I **feel much better now**.", "translation_ru": "Сейчас я чувствую себя намного лучше."},
-          {"text": "❌ Do you feel yourself comfortable here? → ✓ Do you **feel comfortable here**?", "translation_ru": "Тебе здесь комфортно?"}
+          {"text": "❌ Do you feel yourself comfortable here? → ✓ Do you **feel comfortable here**?", "translation_ru": "Тебе здесь комфортно?"},
+          {"text": "❌ We feel ourselves ready to start. → ✓ We **feel ready to start**.", "translation_ru": "Мы чувствуем, что готовы начать."}
         ]
       },
       {
@@ -197,7 +208,8 @@
         "examples": [
           {"text": "English: She **feels nervous**. ↔ German: Sie **fühlt sich nervös**.", "translation_ru": "Она нервничает."},
           {"text": "English: I **feel better**. ↔ German: Ich **fühle mich besser**.", "translation_ru": "Я чувствую себя лучше."},
-          {"text": "English: Do you **feel comfortable**? ↔ German: **Fühlst du dich wohl**?", "translation_ru": "Тебе комфортно?"}
+          {"text": "English: Do you **feel comfortable**? ↔ German: **Fühlst du dich wohl**?", "translation_ru": "Тебе комфортно?"},
+          {"text": "English: We **feel ready**. ↔ German: Wir **fühlen uns bereit**.", "translation_ru": "Мы чувствуем, что готовы."}
         ]
       }
     ],
