@@ -64,7 +64,7 @@ jobs:
             add_url "$BASE/llms.txt"
           fi
 
-          if grep -Eq '^(data/(advanced-patterns|study-sets|practice-extensions)\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice|practice-seo\.mjs)|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/(advanced-patterns|study-sets|practice-extensions)\.json|data/reasoning-frames/.*\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice|practice-seo\.mjs)|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/practice/"
             add_url "$BASE/ru/practice/"
             add_url "$BASE/api/v1/patterns.json"
@@ -78,6 +78,17 @@ jobs:
               jq -r '.sets[].id' data/study-sets.json
               [[ -f data/practice-extensions.json ]] && jq -r '.sets[].id' data/practice-extensions.json
             )
+
+            while IFS= read -r frame_file; do
+              [[ -f "$frame_file" ]] || continue
+              while IFS= read -r pattern_id; do
+                [[ -z "$pattern_id" ]] && continue
+                pattern_slug="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
+                add_url "$BASE/en/practice/$pattern_slug/"
+                add_url "$BASE/ru/practice/$pattern_slug/"
+                add_url "$BASE/api/v1/patterns/$pattern_slug.json"
+              done < <(jq -r '.[].id // empty' "$frame_file")
+            done < <(grep -E '^data/reasoning-frames/.*\.json$' <<<"$CHANGED" || true)
           fi
 
           if grep -Eq '^(src/intents\.mjs|src/intent-|scripts/intent-discovery\.mjs)' <<<"$CHANGED"; then
@@ -86,10 +97,10 @@ jobs:
             add_url "$BASE/data/intents.json"
           fi
 
-          if grep -Eq '^(data/discovery-topics(-extension)?\.json|src/discovery-pages\.mjs|scripts/(discovery-growth|practice-intent-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/discovery-topics(-extension(?:-[a-z0-9-]+)?)?\.json|src/discovery-pages\.mjs|scripts/(discovery-growth|practice-intent-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/patterns/"
             add_url "$BASE/ru/patterns/"
-            for topic_file in data/discovery-topics.json data/discovery-topics-extension.json; do
+            for topic_file in data/discovery-topics*.json; do
               [[ -f "$topic_file" ]] || continue
               while IFS= read -r slug; do
                 [[ -z "$slug" ]] && continue
@@ -98,6 +109,28 @@ jobs:
               done < <(jq -r '.topics[].slug' "$topic_file")
             done
             add_url "$BASE/data/discovery-topics.json"
+          fi
+
+          if grep -Eq '^(data/language-pilots/.*\.json|src/(language-registry|domain-model)\.mjs|scripts/multilingual-domain-model\.mjs|docs/(LANGUAGE_ARCHITECTURE|ADDING_A_LANGUAGE)\.md|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+            add_url "$BASE/en/practice/language/french/"
+            add_url "$BASE/ru/practice/language/french/"
+            add_url "$BASE/en/data/"
+            add_url "$BASE/ru/data/"
+            add_url "$BASE/data/domain/index.json"
+            add_url "$BASE/data/domain/language-pilots.json"
+            add_url "$BASE/api/v1/domain-model.json"
+            add_url "$BASE/api/v1/language-pilots.json"
+            add_url "$BASE/llms.txt"
+          fi
+
+          if grep -Eq '^(data/evaluation/.*\.json|scripts/(reasoning-evaluation|benchmark-publication)\.mjs|docs/.*BENCHMARK.*|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+            add_url "$BASE/en/evals/"
+            add_url "$BASE/ru/evals/"
+            add_url "$BASE/data/benchmark-manifest.json"
+            add_url "$BASE/data/reasoning-benchmark.json"
+            add_url "$BASE/data/reasoning-evaluation.json"
+            add_url "$BASE/api/v1/evals/reasoning-routing.json"
+            add_url "$BASE/llms.txt"
           fi
 
           if grep -Eq '^(data/(contrasts|contrast-extensions)\.json|scripts/(contrast-library|contrast-growth)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
@@ -153,11 +186,30 @@ jobs:
             add_url "$BASE/data/partnership-opportunities.json"
           fi
 
-          if grep -Eq '^(src/render\.mjs|src/i18n\.mjs)' <<<"$CHANGED"; then
+          if grep -Eq '^(src/(render|i18n|site)\.mjs|scripts/release-contracts\.mjs|README\.md|docs/PRODUCT_DIRECTION\.md|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/"
             add_url "$BASE/ru/"
             add_url "$BASE/en/method/"
             add_url "$BASE/ru/method/"
+            add_url "$BASE/en/roadmap/"
+            add_url "$BASE/ru/roadmap/"
+            add_url "$BASE/en/support/"
+            add_url "$BASE/ru/support/"
+          fi
+
+          if grep -Eq '^(LICENSE|LICENSING\.md|CITATION\.cff|docs/(PUBLICATION_BOUNDARY|RESEARCH_USE)\.md|scripts/(patch-licensing|publication-readiness)\.mjs|src/provenance\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+            add_url "$BASE/en/licensing/"
+            add_url "$BASE/ru/licensing/"
+            add_url "$BASE/en/cite/"
+            add_url "$BASE/ru/cite/"
+            add_url "$BASE/en/about/"
+            add_url "$BASE/ru/about/"
+            add_url "$BASE/en/legal/terms/"
+            add_url "$BASE/ru/legal/terms/"
+            add_url "$BASE/data/publication.json"
+            add_url "$BASE/api/v1/publication.json"
+            add_url "$BASE/CITATION.cff"
+            add_url "$BASE/llms.txt"
           fi
 
           if grep -Eq '^(docs/RESEARCH|scripts/(enhance-research|research-pilot)|data/research)' <<<"$CHANGED"; then
@@ -176,6 +228,7 @@ jobs:
             --arg keyLocation "$BASE/${KEY}.txt" \
             '{host:$host,key:$key,keyLocation:$keyLocation,urlList:.}' > indexnow.json
 
+          echo "Submitting ${#URLS[@]} unique URLs to IndexNow."
           cat indexnow.json
           curl --retry 2 --fail-with-body \
             -H 'Content-Type: application/json; charset=utf-8' \
