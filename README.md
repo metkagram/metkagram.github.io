@@ -4,7 +4,7 @@ Metkagram is a research-oriented NLP and language-learning project built around 
 
 > **see the structure → reuse the frame → understand the move → choose → transfer**
 
-The project connects visual sentence annotation with a large learner-facing library of reusable English and German patterns. It does not try to compete with large language models at general writing. Its job is to make useful language structure visible, reusable and comparable.
+The project connects visual sentence annotation with a large learner-facing library of reusable language patterns. English and German remain the established learning languages; French now has a bounded Frame-only pilot. Metkagram does not try to compete with large language models at general writing. Its job is to make useful language structure visible, reusable, comparable and inspectable.
 
 Production: https://metkagram.github.io
 
@@ -13,6 +13,7 @@ Canonical project documents:
 - [Product direction](docs/PRODUCT_DIRECTION.md)
 - [Terminology](docs/TERMINOLOGY.md)
 - [Language architecture](docs/LANGUAGE_ARCHITECTURE.md)
+- [Thinking in Language](docs/THINKING_IN_LANGUAGE.md)
 - [Architecture](ARCHITECTURE.md)
 
 ## Metkagram vocabulary
@@ -41,7 +42,7 @@ Legacy technical names may remain in filenames and URLs while compatibility requ
 
 The public curriculum contains 1,000+ reusable B2–C1 English/German patterns organised through named study sets and learning paths. Existing pattern records preserve stable IDs, formulas, examples, Russian translations, variations and quality metadata.
 
-A smaller reasoning-enabled subset adds reviewed Moves and relation metadata. It complements the full curriculum rather than replacing it.
+A reasoning-enabled layer adds reviewed Moves and relation metadata. The **Thinking in Language** curriculum currently contributes 40 additive Frames across eight sets: problem framing, uncertainty, systems thinking, decision quality, causal diagnosis, hypothesis testing, perspective taking and metacognitive learning. These sets extend the curriculum rather than replacing established material.
 
 ### Pattern Lens
 
@@ -49,7 +50,7 @@ A smaller reasoning-enabled subset adds reviewed Moves and relation metadata. It
 
 ### Pattern Atlas
 
-`/en/patterns/` and `/ru/patterns/` organise existing patterns around real learner jobs such as hedging, disagreement, argumentation, professional communication, advanced questions and German word order.
+`/en/patterns/` and `/ru/patterns/` organise existing patterns around real learner jobs such as hedging, disagreement, argumentation, professional communication, causal diagnosis, hypothesis testing and metacognitive learning. Atlas topics are editorial and additive rather than generated from keyword permutations.
 
 ### Pattern Map
 
@@ -81,17 +82,20 @@ Metkagram treats language as independent capabilities rather than one setting:
 Current public state:
 
 - interface: English (`en`), Russian (`ru`);
-- learning: English (`en`), German (`de`);
-- canonical learner translations: Russian (`ru`);
-- annotation: English (`en`), German (`de`).
+- established learning languages: English (`en`), German (`de`);
+- learning pilot: French (`fr`) with Frame-only content;
+- canonical learner-support translations: Russian (`ru`);
+- annotation: English (`en`), German (`de`);
+- French annotation: not available in the current pilot;
+- reviewed French Bridges: not claimed by the current pilot.
 
-The capability registry lives in `src/language-registry.mjs`. The build publishes `/data/languages.json` and `/data/terminology.json` plus localized glossary pages at `/en/glossary/` and `/ru/glossary/`.
+The capability registry lives in `src/language-registry.mjs`. The build publishes `/data/languages.json` and the normalized Move–Frame–Bridge domain layer plus localized glossary pages at `/en/glossary/` and `/ru/glossary/`.
 
-This structure allows new languages to arrive incrementally. A future language can support Frames and translations before it has its own annotation profile or fully localized interface.
+This structure allows new languages to arrive incrementally. A language can support reviewed Frames and learner translations before it has its own annotation profile, reviewed Bridges or localized interface.
 
 ## Research programme
 
-Metkagram separates product claims from research hypotheses. Current research covers visual cue utility, structural noticing, retrieval-first practice, cross-language retrieval and annotation agreement. Research protocols must distinguish evidence about general learning mechanisms from evidence about Metkagram itself.
+Metkagram separates product claims from research hypotheses. Current research covers visual cue utility, structural noticing, retrieval-first practice, cross-language retrieval, annotation agreement and intent-to-pattern retrieval. Published evaluation fixtures are bounded evidence surfaces, not claims of language-learning efficacy.
 
 AI is treated as a tutor/interface around canonical learning objects, not as the source of truth for the curriculum.
 
@@ -107,7 +111,7 @@ Public visibility does not remove the current licensing and attribution terms. S
 
 ## Product sequence
 
-**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional languages**
+**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional reviewed language capabilities**
 
 ## Local development
 
