@@ -54,11 +54,48 @@
       "description_ru": "Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.",
       "level": "B2–C1",
       "path": "TRN"
+    },
+    {
+      "id": "FRM",
+      "title_en": "Problem framing and reframing",
+      "title_ru": "Постановка и переопределение проблемы",
+      "description": "Define the problem before solving it, expose hidden assumptions, and choose a more useful frame.",
+      "description_ru": "Определяйте проблему до поиска решения, выявляйте скрытые допущения и выбирайте более полезную рамку.",
+      "level": "B2–C1",
+      "path": "FRM"
+    },
+    {
+      "id": "UNC",
+      "title_en": "Reasoning under uncertainty",
+      "title_ru": "Рассуждение в условиях неопределённости",
+      "description": "Separate evidence from assumptions, calibrate confidence, and identify what information would change the conclusion.",
+      "description_ru": "Отделяйте данные от предположений, соразмеряйте уверенность и определяйте, какая информация изменит вывод.",
+      "level": "B2–C1",
+      "path": "UNC"
+    },
+    {
+      "id": "SYS",
+      "title_en": "Systems thinking",
+      "title_ru": "Системное мышление",
+      "description": "Trace second-order effects, bottlenecks, local optimisation, and the drivers that keep a problem recurring.",
+      "description_ru": "Отслеживайте эффекты второго порядка, узкие места, локальную оптимизацию и причины повторяющихся проблем.",
+      "level": "B2–C1",
+      "path": "SYS"
+    },
+    {
+      "id": "DEC",
+      "title_en": "Decision quality and trade-offs",
+      "title_ru": "Качество решений и компромиссы",
+      "description": "Compare options by explicit criteria, weigh the cost of delay, and preserve useful flexibility when certainty is impossible.",
+      "description_ru": "Сравнивайте варианты по явным критериям, учитывайте цену ожидания и сохраняйте гибкость, когда полной уверенности быть не может.",
+      "level": "B2–C1",
+      "path": "DEC"
     }
   ],
   "learningPathAdds": {
     "C1-GRAMMAR": ["CGR", "RTR"],
     "C1-FUNCTIONS": ["SPK", "INT", "REG"],
-    "C1-CONTROL": ["TRN"]
+    "C1-CONTROL": ["TRN", "SYS", "DEC"],
+    "C1-COMMUNICATE": ["FRM", "UNC"]
   }
 }
