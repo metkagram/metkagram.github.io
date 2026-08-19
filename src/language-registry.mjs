@@ -15,6 +15,7 @@ export const languageRegistry = Object.freeze({
     slug: "english",
     nativeName: "English",
     direction: "ltr",
+    status: "stable",
     roles: Object.freeze({ interface: true, learning: true, translation: false, annotation: true }),
   }),
   de: Object.freeze({
@@ -22,13 +23,23 @@ export const languageRegistry = Object.freeze({
     slug: "german",
     nativeName: "Deutsch",
     direction: "ltr",
+    status: "stable",
     roles: Object.freeze({ interface: false, learning: true, translation: false, annotation: true }),
+  }),
+  fr: Object.freeze({
+    code: "fr",
+    slug: "french",
+    nativeName: "Français",
+    direction: "ltr",
+    status: "pilot",
+    roles: Object.freeze({ interface: false, learning: true, translation: false, annotation: false }),
   }),
   ru: Object.freeze({
     code: "ru",
     slug: "russian",
     nativeName: "Русский",
     direction: "ltr",
+    status: "stable",
     roles: Object.freeze({ interface: true, learning: false, translation: true, annotation: false }),
   }),
 });
@@ -90,6 +101,7 @@ export function publicLanguageMatrix(registry = languageRegistry) {
       slug: language.slug,
       nativeName: language.nativeName,
       direction: language.direction,
+      status: language.status || "stable",
       roles: language.roles,
     }])),
   };
