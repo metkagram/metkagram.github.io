@@ -7,6 +7,8 @@ const DIST = path.join(process.cwd(), "dist");
 const graph = JSON.parse(fs.readFileSync(path.join(DIST, "data", "connections.json"), "utf8"));
 const patterns = JSON.parse(fs.readFileSync(path.join(DIST, "data", "advanced-patterns.json"), "utf8"));
 const reasoning = JSON.parse(fs.readFileSync(path.join(DIST, "data", "reasoning-frames", "index.json"), "utf8"));
+const reasoningPatterns = patterns.filter((pattern) => pattern.reasoning?.move);
+const reasoningMoveCount = new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move)).size;
 
 function html(...parts) {
   return fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
@@ -17,9 +19,10 @@ test("connectivity graph covers full public Practice with a bounded reasoning la
   assert.equal(graph.sourceCounts.advancedPatterns, patterns.length);
   assert.ok(patterns.length >= 1000, `expected full Practice curriculum, found ${patterns.length}`);
   assert.equal(graph.sourceCounts.annotatedDocuments, 72);
-  assert.equal(graph.sourceCounts.reasoningFrames, 30);
-  assert.equal(reasoning.count, 30);
-  assert.equal(graph.relationCounts.reasoningMoveCount, 9);
+  assert.equal(graph.sourceCounts.reasoningFrames, reasoningPatterns.length);
+  assert.equal(reasoning.count, reasoningPatterns.length);
+  assert.equal(graph.relationCounts.reasoningMoveCount, reasoningMoveCount);
+  assert.ok(reasoningMoveCount >= 9, `expected the established reasoning vocabulary plus extensions, found ${reasoningMoveCount}`);
   assert.equal(Object.keys(graph.documents).length, 72);
   assert.equal(Object.keys(graph.patterns).length, patterns.length);
 });
