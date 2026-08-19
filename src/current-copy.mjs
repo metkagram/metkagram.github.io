@@ -1,7 +1,7 @@
 export const currentCopy = {
   en: {
     statementDetail: "English and German B2–C1 Frames with visual annotation, plus a bounded French Frame-only learning pilot.",
-    homeIntro: "Metkagram is a research-oriented learning workspace for seeing structure in real language and reusing reviewed Frames, Moves and patterns.",
+    homeIntro: "See the structure. Use the phrase. Metkagram is a research-oriented learning workspace for seeing structure in real language and reusing reviewed Frames, Moves and patterns.",
     historyTitle: "From mobile cards to a language-pattern research system",
     historyWebTitle: "Now: the public web system",
     historyWebDetail: "The mobile app is archived as project history. Current work focuses on the public web curriculum, reviewed language-pattern relations, research and machine-readable data.",
@@ -25,7 +25,7 @@ export const currentCopy = {
   },
   ru: {
     statementDetail: "Английские и немецкие Frames уровня B2–C1 с визуальной разметкой и ограниченный французский Frame-only пилот для обучения.",
-    homeIntro: "Metkagram — исследовательский учебный ресурс: структура остаётся внутри живой фразы, а проверенные Frames, Moves и паттерны можно переносить в новые ситуации.",
+    homeIntro: "Читайте фразы. Замечайте структуру. Metkagram — исследовательский учебный ресурс: структура остаётся внутри живой фразы, а проверенные Frames, Moves и паттерны можно переносить в новые ситуации.",
     historyTitle: "От мобильных карточек к исследовательской системе языковых паттернов",
     historyWebTitle: "Сейчас: публичная веб-система",
     historyWebDetail: "Мобильное приложение осталось частью истории проекта. Сейчас развиваются публичная учебная система, проверенные связи между языковыми паттернами, исследования и машиночитаемые данные.",
