@@ -74,6 +74,7 @@ test("new reasoning operations extend the domain model without rewriting frozen 
   assert.ok(bySet.get("PST").every((pattern) => pattern.reasoning.move === "Perspective"));
   assert.ok(bySet.get("META").every((pattern) => pattern.reasoning.move === "Learn"));
 
-  const benchmark = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "evaluation", "reasoning-benchmark.json"), "utf8"));
-  assert.equal(benchmark.cases.length, 54, "curriculum growth must not silently rewrite the frozen reasoning benchmark");
+  const benchmark = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "evaluation", "reasoning-intents.json"), "utf8"));
+  assert.equal(benchmark.method.caseCount, 54, "curriculum growth must not silently rewrite the frozen reasoning benchmark");
+  assert.equal(benchmark.cases.length, 54, "frozen benchmark fixture must remain 54 cases");
 });
