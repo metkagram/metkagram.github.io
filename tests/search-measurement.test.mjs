@@ -42,6 +42,9 @@ test("aggregate report produces a bounded editorial decision queue", () => {
   assert.equal(report.totals.pages, 5);
   assert.equal(report.byRouteType.pattern.pages, 2);
   assert.equal(report.byRouteType.pattern.indexed_to_crawled_ratio, 1);
+  assert.equal(report.recommendationsByRouteType.pattern.length, 2);
+  assert.equal(report.recommendationsByRouteType.atlas_topic[0].action, "expand");
+  assert.equal(report.recommendationsByRouteType.study_set[0].action, "improve");
   assert.match(report.evidenceBoundary, /not automatic SEO actions/i);
 
   const byRoute = new Map(report.recommendations.map((row) => [row.route, row]));
@@ -91,6 +94,9 @@ test("privacy contract rejects raw search query fields and branded scope", () =>
 test("markdown report exposes route summaries and all decision states", () => {
   const markdown = renderSearchMeasurementMarkdown(buildSearchMeasurementReport(basePayload));
   assert.match(markdown, /## Route-type summary/);
+  assert.match(markdown, /## Actionable opportunities by route type/);
+  assert.match(markdown, /### atlas_topic \(1 actionable\)/);
+  assert.match(markdown, /### pattern \(1 actionable\)/);
   assert.match(markdown, /### improve \(1\)/);
   assert.match(markdown, /### expand \(1\)/);
   assert.match(markdown, /### consolidate \(1\)/);
