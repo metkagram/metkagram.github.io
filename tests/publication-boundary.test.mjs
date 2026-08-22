@@ -8,7 +8,6 @@ const ROOT = process.cwd();
 
 test("private research infrastructure stays outside the public repository", () => {
   for (const relative of [
-    "data/pattern-annotations.json.gz",
     "data/source-tag-rules.ts",
     "annotation_service"
   ]) {
@@ -27,6 +26,8 @@ test("the full learner-facing Practice curriculum is public while the annotation
   const reasoningMoves = new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move));
   assert.ok(reasoningPatterns.length >= 30);
   assert.ok(reasoningMoves.size >= 9, `expected the established reasoning vocabulary plus extensions, found ${reasoningMoves.size}`);
+  const annotationFile = path.join(ROOT, "data", "pattern-annotations.json.gz");
+  assert.ok(fs.existsSync(annotationFile), "the public Practice annotation layer must be present");
 });
 
 test("publication manifest records every selected collection and approved evaluation surface", () => {

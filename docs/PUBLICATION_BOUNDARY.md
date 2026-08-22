@@ -12,6 +12,7 @@ The following are part of the public Metkagram product:
 - study-set and learning-path taxonomy in `data/study-sets.json`;
 - curated reasoning-enabled frames and their public examples;
 - selected examples that explain the visual annotation method;
+- a generated annotation layer for every already-public Practice sentence, with the original source text retained in `data/advanced-patterns.json`;
 - the bounded 72-document annotation showcase;
 - schemas, provenance and interoperability surfaces for published material;
 - bounded evaluation fixtures and reports that operate only on published material;
@@ -38,6 +39,7 @@ The GitHub Pages publication contains:
 
 - 12 documents from each of six English/German source collections, 72 documents total;
 - at least 1,000 complete learner-facing Practice patterns across the published study-set taxonomy;
+- a generated spaCy dependency-annotation sidecar for the complete published Practice corpus; it records offsets and labels but does not replace or rewrite the source sentences;
 - 30 curated reasoning-enabled English/German frames across 9 reasoning moves;
 - a 54-case English/Russian editorial routing benchmark for the published intent/reasoning layer;
 - a 28-case English/German quality fixture for public sentence → intent → recommended-frame links: 18 positive controls and 10 negative controls.
@@ -46,7 +48,7 @@ The 30 reasoning frames are a reviewed research/graph subset inside the much lar
 
 The routing and learning-link benchmarks are regression instruments, not independent validation and not evidence that the learning method improves outcomes. Relation strength remains categorical (`direct`, `supported`, `prompt`); no probability or statistical confidence percentage is claimed.
 
-`/data/advanced-patterns.json`, `/api/v1/patterns.json` and related pattern routes represent the **full deliberately public Practice curriculum**. Annotation datasets and research surfaces remain bounded according to this document.
+`/data/advanced-patterns.json`, `/api/v1/patterns.json`, `/data/pattern-annotations.json.gz` and related pattern routes represent the **full deliberately public Practice curriculum**. The annotation sidecar is derived only from this already-public curriculum; the full legacy document corpus and the annotation engine remain private.
 
 ## Publication gate
 
@@ -65,7 +67,6 @@ Before merging a public release:
 
 The following source paths are intentionally absent from the current public HEAD:
 
-- `data/pattern-annotations.json.gz`
 - `data/source-tag-rules.ts`
 - `annotation_service/`
 

@@ -32,6 +32,7 @@ import { buildQualityReport } from "../src/quality.mjs";
 import { buildCompleteSearchIndex } from "../src/search-index.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
 const ROOT = process.cwd();
@@ -67,11 +68,25 @@ function copyPublic() {
   fs.cpSync(PUBLIC, DIST, { recursive: true });
 }
 
-function loadPatternAnnotations() {
+function loadPatternAnnotations(content) {
   const source = path.join(ROOT, "data", "pattern-annotations.json.gz");
-  if (!fs.existsSync(source)) return {};
+  if (!fs.existsSync(source)) throw new Error("Missing required public Practice annotation layer");
   const payload = JSON.parse(zlib.gunzipSync(fs.readFileSync(source)).toString("utf8"));
   if (payload.count !== Object.keys(payload.items || {}).length) throw new Error("Pattern annotation export count is invalid");
+  let expected = 0;
+  for (const pattern of content.advancedPatterns) for (const language of pattern.langs) {
+    const references = [{ key: "primary", text: language.example }, ...(language.examples || []).map((example, index) => ({ key: String(index + 1), text: example.text }))];
+    for (const reference of references) {
+      expected += 1;
+      const key = `${pattern.id}:${language.lang}:${reference.key}`;
+      const record = payload.items[key];
+      if (!record) throw new Error(`Missing Practice annotation ${key}`);
+      if (record.text !== cleanMarkedText(reference.text) || record.inline_text !== cleanMarkedText(reference.text)) throw new Error(`Practice annotation text mismatch for ${key}`);
+      const errors = validateAnnotation(record);
+      if (errors.length) throw new Error(`Invalid Practice annotation ${key}: ${errors.join(", ")}`);
+    }
+  }
+  if (payload.count !== expected) throw new Error(`Practice annotation export count mismatch: expected ${expected}, found ${payload.count}`);
   return payload.items;
 }
 
@@ -198,7 +213,7 @@ function build() {
   fs.mkdirSync(DIST, { recursive: true });
   copyPublic();
   const content = loadContent();
-  const patternAnnotations = loadPatternAnnotations();
+  const patternAnnotations = loadPatternAnnotations(content);
   const canonicalAnnotations = migrateAnnotations();
   if (canonicalAnnotations.report.errors.length) throw new Error(`Canonical annotation migration failed: ${canonicalAnnotations.report.errors.length} invalid records`);
   const counts = contentCounts(content);

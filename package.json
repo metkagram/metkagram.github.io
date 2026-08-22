@@ -13,6 +13,7 @@
     "transfer:russian": "node scripts/russian-transfer-guide.mjs",
     "annotations:migrate": "node scripts/annotations.mjs",
     "annotations:validate": "node scripts/annotations.mjs",
+    "annotations:practice": "node scripts/generate-practice-annotations.mjs",
     "annotations:research": "node scripts/annotation-research.mjs",
     "research:h1:analyse": "node scripts/analyse-h1-pilot.mjs",
     "test": "node --test tests/*.test.mjs",
