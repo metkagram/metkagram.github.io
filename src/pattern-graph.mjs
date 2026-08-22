@@ -1,3 +1,5 @@
+import { patternPath } from "./seo-slugs.mjs";
+
 const LOGIC_STOP_WORDS = new Set([
   "a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "is", "of", "on", "or", "the", "to", "vs", "with"
 ]);
@@ -47,11 +49,7 @@ function formulaMap(pattern) {
   return Object.fromEntries((pattern.langs || []).map((language) => [language.lang, language.formula]));
 }
 
-function canonicalPatternUrl(id, siteUrl) {
-  return `${siteUrl}/en/practice/${id.toLowerCase()}/`;
-}
-
-export function buildPatternGraph(patterns, { maxRelated = 4, siteUrl = "https://metkagram.github.io" } = {}) {
+export function buildPatternGraph(patterns, { maxRelated = 4, siteUrl = "https://metkagram.github.io", patternPathFor = patternPath } = {}) {
   const publicPatterns = patterns
     .filter((pattern) => pattern?.id && pattern.reasoning?.move)
     .sort((left, right) => left.id.localeCompare(right.id));
@@ -103,7 +101,7 @@ export function buildPatternGraph(patterns, { maxRelated = 4, siteUrl = "https:/
     reasoning_move: pattern.reasoning.move,
     logic: pattern.logic || null,
     formulas: formulaMap(pattern),
-    canonical_url: canonicalPatternUrl(pattern.id, siteUrl),
+    canonical_url: `${siteUrl}${patternPathFor("en", pattern)}`,
     related: relatedById.get(pattern.id) || []
   }));
   const edges = [...selectedEdges.values()].sort((left, right) => left.source.localeCompare(right.source) || left.target.localeCompare(right.target));

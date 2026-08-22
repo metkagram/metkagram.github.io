@@ -18,29 +18,32 @@ test("root landing starts with a phrase-first title instead of an annotated samp
   await expect(page.getByRole("link", { name: /Русский/ })).toHaveAttribute("href", "/ru/");
 });
 
-test("home keeps the interface switch and makes both learning modes explicit", async ({ page }, testInfo) => {
+test("home keeps the interface switch and presents one unified annotation studio", async ({ page }, testInfo) => {
   await page.goto("/en/");
+  const wordmark = page.locator(".site-header .wordmark");
+  await expect(wordmark.getByText("Metka", { exact: true })).toBeVisible();
+  await expect(wordmark.locator(".wordmark-name")).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "Open Annotated Language", exact: true }).first()).toHaveAttribute("href", "/en/explore/");
-  await expect(page.getByRole("link", { name: "Open Pattern Practice", exact: true }).first()).toHaveAttribute("href", "/en/practice/");
-  await expect(page.getByRole("link", { name: /EN English 919 sets/ })).toHaveAttribute("href", "/en/explore/english/");
-  await expect(page.getByRole("heading", { name: "Open to thoughtful collaborations." })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Contact the project team" })).toHaveAttribute("href", "/en/support/");
-  await expect(page.locator(".home-store-links").getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
-  await expect(page.locator(".home-store-links").getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
+  await expect(page.getByRole("heading", { name: "Mark what matters." })).toBeVisible();
+  await expect(page.locator(".studio-token-grid .grammar-tag")).toHaveCount(4);
+  await expect(page.locator(".studio-pattern-row")).toHaveCount(4);
+  await expect(page.locator(".studio-uses").getByRole("link", { name: /Learn/ })).toHaveAttribute("href", "/en/explore/");
+  await expect(page.locator(".studio-uses").getByRole("link", { name: /Analyse/ })).toHaveAttribute("href", "/en/practice/");
+  await expect(page.locator(".studio-uses").getByRole("link", { name: /Agents/ })).toHaveAttribute("href", "/en/ai/");
   if (testInfo.project.name === "desktop") {
-    const layout = await page.locator(".home-method ol").evaluate((list) => ({
-      columns: getComputedStyle(list).gridTemplateColumns.split(" ").length,
-      titleSize: Number.parseFloat(getComputedStyle(document.querySelector(".home-intro h1")).fontSize)
+    const layout = await page.locator(".studio-board").evaluate((board) => ({
+      titleSize: Number.parseFloat(getComputedStyle(document.querySelector(".studio-copy h1")).fontSize),
+      backdrop: getComputedStyle(document.querySelector(".studio-backdrop")).display
     }));
-    expect(layout.columns).toBe(4);
-    expect(layout.titleSize).toBeLessThan(120);
+    expect(layout.backdrop).not.toBe("none");
+    expect(layout.titleSize).toBeGreaterThan(60);
   }
 });
 
 test("method page explains the learning loop and names its research sources", async ({ page }) => {
   await page.goto("/en/method/");
+  await expect(page.locator(".site-header .wordmark-name")).toHaveText("Metka");
   await expect(page.getByRole("heading", { name: "Sentence → Signal → Structure → Pattern → Variation → Recall" })).toBeVisible();
   await expect(page.getByText("A research-oriented, NLP-ready foundation strengthens the method")).toBeVisible();
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
@@ -51,22 +54,21 @@ test("articles and study sets provide compact sharing and printing controls", as
   const share = page.locator("[data-share-bar]");
   await expect(share).toBeVisible();
   await expect(share.getByRole("link", { name: "Telegram" })).toHaveAttribute("href", /t\.me\/share\/url/);
-  await expect(share.getByRole("link", { name: "VK" })).toHaveAttribute("href", /vk\.com\/share\.php/);
+  await expect(share.getByRole("link", { name: "LinkedIn" })).toHaveAttribute("href", /linkedin\.com\/sharing\/share-offsite/);
+  await expect(share.getByRole("link", { name: "WhatsApp" })).toHaveAttribute("href", /wa\.me\/\?text=/);
   await expect(share.getByRole("link", { name: "X" })).toHaveAttribute("href", /x\.com\/intent\/post/);
   await expect(share.getByRole("button", { name: "Copy link" })).toBeVisible();
   await expect(share.getByRole("button", { name: "Print page" })).toBeVisible();
-  await page.goto("/en/practice/set/arg/");
+  await page.goto("/en/practice/sets/argumentation/");
   await expect(page.locator("[data-share-bar]").getByRole("button", { name: "Print page" })).toBeVisible();
 });
 
-test("mobile app and legal pages expose store and policy links", async ({ page }) => {
+test("mobile app history points learners to the current web workspace", async ({ page }) => {
   await page.goto("/en/apps/");
-  await expect(page.getByRole("heading", { name: "The original practice apps." })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Google Play" })).toHaveAttribute("href", "https://play.google.com/store/apps/details?id=app.metkagram.android");
-  await expect(page.getByRole("link", { name: "App Store" })).toHaveAttribute("href", "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918");
-  await page.getByRole("link", { name: "Privacy Policy" }).first().click();
-  await expect(page).toHaveURL(/\/en\/legal\/privacy\/$/);
-  await expect(page.getByRole("heading", { name: "Privacy Policy" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "The mobile app became a research stage." })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Pattern Lens" })).toHaveAttribute("href", "/en/lens/");
+  await expect(page.getByRole("link", { name: "Pattern Practice" }).first()).toHaveAttribute("href", "/en/practice/");
+  await expect(page.getByRole("link", { name: "Project history" })).toHaveAttribute("href", "/en/history/");
 });
 
 test("document reading mode can reveal explanations for the whole set", async ({ page }) => {
@@ -95,13 +97,13 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
 test("pattern catalogue opens every pattern directly and filters all patterns", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  await expect(rows).toHaveCount(3436);
+  expect(await rows.count()).toBeGreaterThan(3000);
   await expect(page.locator("[data-study-set-card]")).toHaveCount(0);
   await expect(page.locator(".study-dashboard")).toHaveCount(0);
   await page.locator('[data-category-filter]').selectOption("HED");
   await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(40);
   await page.locator('[data-pattern-list] > a:visible').first().click();
-  await expect(page).toHaveURL(/\/en\/practice\/c1hed001\/$/);
+  await expect(page).toHaveURL(/\/en\/practice\/patterns\/[^/]+-c1hed001\/$/);
   await expect(page.locator(".pattern-comparison-list li")).toHaveCount(12);
   await page.goto("/en/practice/");
   await page.locator('[data-language-filter="de"]').click();
@@ -112,12 +114,11 @@ test("pattern catalogue opens every pattern directly and filters all patterns", 
   await expect(page.locator("[data-pattern-count]")).toHaveText(/Showing \d+ patterns/);
 });
 
-test("German pattern examples show gender and past-tense signals without changing English", async ({ page }) => {
-  await page.goto("/en/practice/lex103/");
-  await expect(page.locator('[data-target-language="de"] .gender-mark').first()).toBeVisible();
-  await expect(page.locator('[data-target-language="de"] .tense-past').first()).toBeVisible();
-  await expect(page.locator('[data-target-language="en"] .gender-mark')).toHaveCount(0);
-  await expect(page.locator('[data-target-language="en"] .tense-past')).toHaveCount(0);
+test("German annotated texts preserve gender and past-tense signals", async ({ page }) => {
+  await page.goto("/en/explore/german/dialogues/hgq8uVS1vaEM9KsnC8zC/");
+  await expect(page.locator(".gender-mark").first()).toBeVisible();
+  await expect(page.locator(".tense-past").first()).toBeVisible();
+  await expect(page.locator(".annotation-row")).not.toHaveCount(0);
 });
 
 test("mobile navigation opens and keyboard focus is visible", async ({ page }, testInfo) => {

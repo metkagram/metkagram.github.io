@@ -33,7 +33,11 @@ const patterns = [
 ];
 
 test("pattern graph connects explicit reasoning neighbours", () => {
-  const graph = buildPatternGraph(patterns, { maxRelated: 2, siteUrl: "https://example.test" });
+  const graph = buildPatternGraph(patterns, {
+    maxRelated: 2,
+    siteUrl: "https://example.test",
+    patternPathFor: (locale, pattern) => `/${locale}/practice/patterns/${pattern.id.toLowerCase()}/`
+  });
   assert.equal(graph.node_count, 3);
   assert.equal(graph.move_count, 2);
   assert.ok(graph.edge_count >= 1);
@@ -47,7 +51,7 @@ test("pattern graph does not invent relations without explicit evidence", () => 
   const isolated = buildPatternGraph([
     patterns[0],
     { ...patterns[2], id: "Z999", set_id: "EVD", logic: "probability estimate", reasoning: { move: "Estimate" } }
-  ]);
+  ], { patternPathFor: (locale, pattern) => `/${locale}/practice/patterns/${pattern.id.toLowerCase()}/` });
   assert.equal(isolated.edge_count, 0);
   assert.deepEqual(relatedPatternIds(isolated, "A001"), []);
 });

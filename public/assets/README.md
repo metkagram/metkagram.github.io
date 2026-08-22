@@ -13,12 +13,22 @@
 - `web/head-snippet.html` — ready-to-copy HTML tags.
 - `web/site.webmanifest` — basic web app manifest.
 
+## Studio textures
+
+- `images/studio-texture-graphite.jpg` — graphite technical stage for home, route and Pattern Lens backgrounds.
+- `images/studio-texture-yellow.jpg` — warm annotation-paper texture for hero and promo sheets.
+- `images/studio-texture-black.jpg` — dark archive texture for footer and evidence sections.
+
+Generated for Metkagram with OpenAI ImageGen on 22 August 2026. They contain no text or logo and are decorative CSS backgrounds. Use `background-size: cover`, never tile, and keep body copy on an opaque reading surface.
+
 ## Brand colors
 
 - Yellow: `#FFC400`
 - Black: `#111111`
 - Off-white: `#F7F7F3`
 - White: `#FFFFFF`
+- Graphite: `#55575B`
+- Deep graphite: `#3F4246`
 
 ## Usage
 

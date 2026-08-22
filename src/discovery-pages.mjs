@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { SITE_URL, breadcrumbs, escapeHtml, layout, patternTitle } from "./render.mjs";
+import { patternPath, patternUrl, studySetPath } from "./seo-slugs.mjs";
 
 const ROOT = process.cwd();
 
@@ -126,7 +127,7 @@ export function patternTopicPage(locale, topic, topics, content) {
     <ol>${visibleUseCases.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${escapeHtml(item)}</h3></div></li>`).join("")}</ol>
   </section>
   <section class="page-head section-pad compact"><p class="eyebrow">02 · ${ru ? "Наборы" : "Study sets"}</p><h2>${ru ? "Из каких наборов собран маршрут" : "Study the topic from these validated sets"}</h2></section>
-  <section class="document-index section-pad">${sets.map((set, index) => `<a href="/${locale}/practice/set/${set.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(ru ? set.title_ru : set.title_en)}</strong><small>${escapeHtml(ru ? set.description_ru || set.description : set.description)} · ${escapeHtml(set.id)}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>
+  <section class="document-index section-pad">${sets.map((set, index) => `<a href="${studySetPath(locale, set)}"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(ru ? set.title_ru : set.title_en)}</strong><small>${escapeHtml(ru ? set.description_ru || set.description : set.description)} · ${escapeHtml(set.id)}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>
   <section class="page-head section-pad compact ruled"><p class="eyebrow">03 · ${ru ? "Примеры" : "Pattern examples"}</p><h2>${ru ? "Сначала полезная модель, затем варианты" : "Start with a reusable structure"}</h2><p>${ru ? "Ниже показана редакционная выборка. Полный набор остаётся доступен в связанных study sets." : "This is an editorial sample. The linked study sets contain the complete topic collection."}</p></section>
   <section class="pattern-index section-pad">${sample.map((pattern, index) => {
     const english = pattern.langs.find((lang) => lang.lang === "en") || pattern.langs[0];
@@ -135,7 +136,7 @@ export function patternTopicPage(locale, topic, topics, content) {
     const detail = ru
       ? `${english.formula} · ${english.example}`
       : `${english.example}${german?.example ? ` · DE: ${german.example}` : ""}`;
-    return `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(detail)}</small></span><span aria-hidden="true">↗</span></a>`;
+    return `<a href="${patternPath(locale, pattern)}"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(detail)}</small></span><span aria-hidden="true">↗</span></a>`;
   }).join("")}</section>
   <section class="page-head section-pad compact ruled"><p class="eyebrow">04 · ${ru ? "Дальше" : "Related paths"}</p><h2>${ru ? "Соседние речевые задачи" : "Continue by communication goal"}</h2></section>
   <section class="entry-list section-pad">${related.map((item, index) => `<a href="${topicPath(locale, item)}"><span class="entry-index">${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(localized(item, "title", locale))}</strong><span>${escapeHtml(localized(item, "description", locale))}</span><span aria-hidden="true">↗</span></a>`).join("")}</section>`;
@@ -144,7 +145,7 @@ export function patternTopicPage(locale, topic, topics, content) {
     "@type": "ListItem",
     position: index + 1,
     name: patternTitle(pattern, locale, "en"),
-    url: `${SITE_URL}/${locale}/practice/${pattern.id.toLowerCase()}/`
+    url: patternUrl(locale, pattern)
   }));
   const learningResource = {
     "@context": "https://schema.org",

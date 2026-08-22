@@ -3,6 +3,7 @@ import path from 'node:path';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { evaluatePracticeStructure, literalPracticeSegments, nextPracticeReview } from '../public/assets/practice-loop-core.js';
+import { patternPath } from '../src/seo-slugs.mjs';
 
 test('extracts stable formula segments without placeholders', () => {
   assert.deepEqual(
@@ -62,12 +63,9 @@ test('production build wires practice and Lens bridge into generated pages', (t)
 
   assert.match(fs.readFileSync(practiceIndex, 'utf8'), /\/assets\/practice-loop\.js/);
 
-  const patternRoot = path.join(dist, 'en', 'practice');
-  const patternDir = fs.readdirSync(patternRoot, { withFileTypes: true })
-    .find((entry) => entry.isDirectory() && entry.name !== 'set');
-  assert.ok(patternDir, 'expected at least one generated pattern page');
-  const patternHtml = fs.readFileSync(path.join(patternRoot, patternDir.name, 'index.html'), 'utf8');
+  const patternHtml = fs.readFileSync(path.join(dist, patternPath('en', 'CLF041').slice(1), 'index.html'), 'utf8');
   assert.match(patternHtml, /\/assets\/practice-loop\.js/);
+  assert.match(patternHtml, /data-pattern-id="CLF041"/);
 
   const lensHtml = fs.readFileSync(path.join(dist, 'en', 'lens', 'index.html'), 'utf8');
   assert.match(lensHtml, /\/assets\/lens-practice-bridge\.js/);

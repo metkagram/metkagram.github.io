@@ -2,16 +2,9 @@ import { collectionKeys, targetMeta } from "./i18n.mjs";
 import { buildIntentDataset } from "./intent-discovery.mjs";
 import { wrapList } from "./provenance.mjs";
 import { SITE_URL } from "./site.mjs";
+import { patternUrl, studySetSlug, studySetUrl } from "./seo-slugs.mjs";
 
 const API_URL = `${SITE_URL}/api/v1`;
-
-function patternPageUrl(id, locale = "en") {
-  return `${SITE_URL}/${locale}/practice/${id.toLowerCase()}/`;
-}
-
-function setPageUrl(id, locale = "en") {
-  return `${SITE_URL}/${locale}/practice/set/${id.toLowerCase()}/`;
-}
 
 function documentPageUrl(targetKey, collectionKey, id, locale = "en") {
   return `${SITE_URL}/${locale}/explore/${targetKey}/${collectionKey}/${id}/`;
@@ -27,7 +20,7 @@ function patternSummary(pattern) {
     languages: pattern.langs.map((lang) => lang.lang),
     reasoning_move: pattern.reasoning?.move || null,
     quality: pattern.quality || null,
-    canonical_url: patternPageUrl(pattern.id),
+    canonical_url: patternUrl("en", pattern),
     api_url: `${API_URL}/patterns/${pattern.id.toLowerCase()}.json`,
   };
 }
@@ -38,13 +31,14 @@ export function buildCompleteSearchIndex(content) {
     const setPatterns = content.advancedPatterns.filter((pattern) => pattern.set_id === set.id);
     return {
       id: set.id,
+      slug: studySetSlug(set),
       title_en: set.title_en,
       title_ru: set.title_ru,
       description: set.description,
       level: set.level,
       path: set.path,
       pattern_count: setPatterns.length,
-      canonical_url: setPageUrl(set.id),
+      canonical_url: studySetUrl("en", set),
       api_url: `${API_URL}/sets/${set.id.toLowerCase()}.json`,
     };
   });

@@ -36,14 +36,19 @@ function datasetSchema(locale, key, dataset, counts) {
   return {
     "@context": "https://schema.org",
     "@type": "Dataset",
+    "@id": `${SITE_URL}${pathname}#dataset`,
     name: title,
+    identifier: `metkagram:${key}:${getDatasetVersion()}`,
     description,
     url: `${SITE_URL}${pathname}`,
+    mainEntityOfPage: { "@id": `${SITE_URL}${pathname}#webpage` },
+    includedInDataCatalog: { "@id": `${SITE_URL}/${locale}/data/#data-catalog` },
     inLanguage: ["en", "de", "ru"],
     keywords: dataset.keywords,
     license: ATTRIBUTION.license_url,
     creator: { "@type": "Organization", name: ATTRIBUTION.creator, url: ATTRIBUTION.creator_url },
-    publisher: { "@type": "Organization", name: "Metkagram", url: SITE_URL },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    isAccessibleForFree: true,
     version: getDatasetVersion(),
     dateModified: SITE_RELEASE_DATE,
     variableMeasured: key === "patterns" ? ["formula", "example", "translation", "study set", "quality"] : key === "reasoning" ? ["reasoning move", "formula", "example", "translation"] : ["sentence span", "functional role", "translation"],
@@ -69,7 +74,7 @@ export function dataIndexPage(locale, counts) {
     return `<a class="dataset-card" href="/${locale}/data/${key}/"><strong>${escapeHtml(name)}</strong><p>${escapeHtml(text)}</p><span>${ru ? "Открыть набор" : "Open dataset"} →</span></a>`;
   }).join("");
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: ru ? "Главная" : "Home" }, { href: pathname, label: ru ? "Данные" : "Data" }])}<section class="page-head section-pad"><p class="eyebrow">${ru ? "Данные" : "Data"} · ${escapeHtml(getDatasetVersion())}</p><h1>${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p><dl class="project-metrics"><div><dt>${counts.annotatedSentences}</dt><dd>${ru ? "размеченных предложений" : "annotated sentences"}</dd></div><div><dt>${counts.advancedPatterns}</dt><dd>${ru ? "паттернов" : "patterns"}</dd></div></dl></section><section class="ai-section section-pad ruled"><div><p class="eyebrow">01 · ${ru ? "Наборы" : "Datasets"}</p><h2>${ru ? "Выберите слой данных" : "Choose a data layer"}</h2></div><div class="dataset-grid">${cards}</div></section>`;
-  return layout({ locale, pathname, title: `${title} | Metkagram`, description, body, structuredData: [{ "@context": "https://schema.org", "@type": "DataCatalog", name: title, url: `${SITE_URL}${pathname}`, dataset: Object.entries(datasets).map(([key, dataset]) => datasetSchema(locale, key, dataset, counts)) }] });
+  return layout({ locale, pathname, title: `${title} | Metkagram`, description, body, structuredData: [{ "@context": "https://schema.org", "@type": "DataCatalog", "@id": `${SITE_URL}${pathname}#data-catalog`, name: title, description, url: `${SITE_URL}${pathname}`, publisher: { "@id": `${SITE_URL}/#organization` }, dateModified: SITE_RELEASE_DATE, dataset: Object.entries(datasets).map(([key, dataset]) => datasetSchema(locale, key, dataset, counts)) }] });
 }
 
 export function datasetPage(locale, key, counts) {

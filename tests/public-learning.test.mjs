@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { patternPath } from "../src/seo-slugs.mjs";
 import {
   classifyReasoningSentence,
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
@@ -149,10 +150,10 @@ test("document, intent and frame pages expose reviewed connections without fake 
     assert.match(document, /data-public-learning="document-summary"/);
     assert.match(document, /data-strength="(?:direct|supported|prompt)"/);
     assert.match(document, /practice\/intents\/#intent-connect-cause-and-effect/);
-    assert.match(document, /practice\/clf059\/#reasoning-move/);
+    assert.ok(document.includes(`${patternPath(locale, "CLF059")}#reasoning-move`));
     assert.doesNotMatch(document, /(?:strong structural cue|same reasoning move|communicative prompt)[^<]*\b\d{2}%/i);
 
-    const pattern = html(locale, "practice", "clf059");
+    const pattern = fs.readFileSync(path.join(DIST, patternPath(locale, "CLF059").slice(1), "index.html"), "utf8");
     assert.match(pattern, /data-public-learning="pattern-corpus"/);
     assert.match(pattern, /explore\/(?:english|german)\/(?:dialogues|patterns|library)\/.+?#sentence-/);
     assert.match(pattern, /(?:led to|führt zu)/i);

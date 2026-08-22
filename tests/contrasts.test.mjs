@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const source = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "contrasts.json"), "utf8"));
@@ -51,11 +52,11 @@ test("contrast build publishes localized pages and machine-readable data", () =>
     assert.match(index, new RegExp(`/${locale}/contrasts/${source.items[0].id}/`));
     for (const item of expectedApiItems) {
       const detail = fs.readFileSync(path.join(ROOT, "dist", locale, "contrasts", item.id, "index.html"), "utf8");
-      for (const patternId of item.patterns) assert.match(detail, new RegExp(`/${locale}/practice/${patternId.toLowerCase()}/`));
+      for (const patternId of item.patterns) assert.ok(detail.includes(patternPath(locale, patternId)));
     }
     for (const item of extensions.grammar_items) {
       const detail = fs.readFileSync(path.join(ROOT, "dist", locale, "contrasts", item.id, "index.html"), "utf8");
-      assert.match(detail, new RegExp(`/${locale}/practice/${item.pattern_id.toLowerCase()}/`));
+      assert.ok(detail.includes(patternPath(locale, item.pattern_id)));
     }
   }
 });

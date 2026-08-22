@@ -9,10 +9,12 @@ import {
   aiPage,
   appsPage,
   collectionPage,
+  contactPage,
   documentPage,
   explorePage,
   gatewayPage,
   historyPage,
+  ideasPage,
   languageHub,
   localeHome,
   methodPage,
@@ -32,6 +34,7 @@ import { buildQualityReport } from "../src/quality.mjs";
 import { buildCompleteSearchIndex } from "../src/search-index.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { legacyPatternPath, legacyStudySetPath, patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
 import { cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
@@ -61,6 +64,30 @@ function writeRoute(route, html, lastModified = SITE_RELEASE_DATE) {
   seoRecords.push({ route: normalized, canonical, language, title, description, lastModified });
   const file = normalized === "/" ? "index.html" : path.join(normalized.slice(1), "index.html");
   writeFile(file, html);
+}
+
+function writeLegacyRedirect(source, destination, canonicalHtml) {
+  const file = path.join(source.slice(1), "index.html");
+  const language = canonicalHtml.match(/<html lang="([^"]+)">/)?.[1] || "en";
+  const title = canonicalHtml.match(/<title>([^<]+)<\/title>/)?.[1] || "Metkagram";
+  const description = canonicalHtml.match(/<meta name="description" content="([^"]+)">/)?.[1] || "This Metkagram page has moved.";
+  const canonical = canonicalHtml.match(/<link rel="canonical" href="([^"]+)">/)?.[1] || `${SITE_URL}${destination}`;
+  const message = language === "ru" ? "Страница переехала" : "This page has moved";
+  const action = language === "ru" ? "Открыть новый адрес" : "Open the new address";
+  const redirectHtml = `<!doctype html>
+<html lang="${language}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>${title}</title>
+  <meta name="description" content="${description}">
+  <link rel="canonical" href="${canonical}">
+  <meta http-equiv="refresh" content="0;url=${destination}">
+</head>
+<body><main><h1>${message}</h1><p><a href="${destination}">${action}</a></p></main></body>
+</html>
+`;
+  writeFile(file, redirectHtml);
 }
 
 function copyPublic() {
@@ -121,7 +148,7 @@ function buildRedirectManifest(content) {
   add("/ru/metkax/patterns", `${SITE_URL}/data/advanced-patterns.json`);
   for (const pattern of content.advancedPatterns) {
     if (pattern.id.startsWith("C1")) continue;
-    add(`/ru/metkax/${pattern.id}`, `${SITE_URL}/ru/practice/${pattern.id.toLowerCase()}/`);
+    add(`/ru/metkax/${pattern.id}`, patternUrl("ru", pattern));
   }
   add("/products/metkagram", `${SITE_URL}/en/`);
   add("/apps/metkagram", `${SITE_URL}/en/`);
@@ -203,7 +230,7 @@ function buildReasoningIndex(content) {
       logic: pattern.logic || null,
       formulas: pattern.langs.map((lang) => ({ lang: lang.lang, formula: lang.formula })),
       quality: pattern.quality,
-      canonical_url: `${SITE_URL}/en/practice/${pattern.id.toLowerCase()}/`
+      canonical_url: patternUrl("en", pattern)
     }));
   return { schemaVersion: 1, version: getDatasetVersion(), count: items.length, items };
 }
@@ -235,7 +262,9 @@ function build() {
     writeRoute(`/${locale}/legal/terms/`, legalPage(locale, "terms"));
     writeRoute(`/${locale}/history/`, historyPage(locale));
     writeRoute(`/${locale}/roadmap/`, roadmapPage(locale));
+    writeRoute(`/${locale}/ideas/`, ideasPage(locale));
     writeRoute(`/${locale}/support/`, supportPage(locale, counts));
+    writeRoute(`/${locale}/contact/`, contactPage(locale));
     for (const target of Object.values(targetMeta)) {
       writeRoute(`/${locale}/explore/${target.key}/`, languageHub(locale, target.key, content));
       writeRoute(`/${locale}/explore/${target.key}/annotation-rules/`, rulesPage(locale, target.key));
@@ -248,10 +277,14 @@ function build() {
       }
     }
     for (const pattern of content.advancedPatterns) {
-      writeRoute(`/${locale}/practice/${pattern.id.toLowerCase()}/`, patternPage(locale, pattern, patternAnnotations), pattern.gen?.lastGeneratedAt || SITE_RELEASE_DATE);
+      const patternHtml = patternPage(locale, pattern, patternAnnotations);
+      writeRoute(patternPath(locale, pattern), patternHtml, pattern.gen?.lastGeneratedAt || SITE_RELEASE_DATE);
+      writeLegacyRedirect(legacyPatternPath(locale, pattern), patternPath(locale, pattern), patternHtml);
     }
     for (const set of content.studySets.sets) {
-      writeRoute(`/${locale}/practice/set/${set.id.toLowerCase()}/`, studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id)));
+      const setHtml = studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id));
+      writeRoute(studySetPath(locale, set), setHtml);
+      writeLegacyRedirect(legacyStudySetPath(locale, set), studySetPath(locale, set), setHtml);
     }
     writeRoute(`/${locale}/ai/`, aiPage(locale, content, counts, api.routes));
   }

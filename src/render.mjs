@@ -1,6 +1,7 @@
 import { collectionKeys, collectionLabel, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "./site.mjs";
+import { patternPath, studySetPath } from "./seo-slugs.mjs";
 import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalText } from "./annotation-schema.mjs";
 
 export { SITE_URL };
@@ -11,7 +12,6 @@ export const STORE_LINKS = {
 };
 
 function metkagramEntityGraph() {
-  const applicationId = `${SITE_URL}/#mobile-application`;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -20,38 +20,34 @@ function metkagramEntityGraph() {
         "@id": `${SITE_URL}/#organization`,
         name: "Metkagram",
         url: SITE_URL,
-        logo: `${SITE_URL}/assets/icons/metkagram-icon-512x512.png`,
+        description: "Metkagram publishes annotated English and German phrases, reusable language patterns and machine-readable language data.",
+        logo: {
+          "@type": "ImageObject",
+          "@id": `${SITE_URL}/#logo`,
+          url: `${SITE_URL}/assets/icons/metkagram-icon-512x512.png`,
+          contentUrl: `${SITE_URL}/assets/icons/metkagram-icon-512x512.png`,
+          width: 512,
+          height: 512
+        },
+        email: ATTRIBUTION.contact_email,
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "project enquiries",
+          email: ATTRIBUTION.contact_email,
+          url: `${SITE_URL}/en/contact/`,
+          availableLanguage: ["English", "Russian"]
+        },
         sameAs: ["https://github.com/metkagram/metkagram.github.io"]
       },
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
         name: "Metkagram",
+        alternateName: "Metkagram Language Pattern Library",
+        description: "Annotated English and German phrases, reusable B2–C1 language patterns and machine-readable learning data.",
         url: SITE_URL,
         inLanguage: ["en", "ru"],
         publisher: { "@id": `${SITE_URL}/#organization` }
-      },
-      {
-        "@type": ["MobileApplication", "SoftwareApplication"],
-        "@id": applicationId,
-        name: "Metkagram",
-        url: `${SITE_URL}/en/apps/`,
-        mainEntityOfPage: `${SITE_URL}/en/apps/`,
-        applicationCategory: "EducationalApplication",
-        applicationSubCategory: "Language learning",
-        operatingSystem: "Android, iOS",
-        isAccessibleForFree: true,
-        featureList: ["Grammar flashcards", "Minimal pairs", "Grammar drills", "Spaced repetition"],
-        image: `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`,
-        screenshot: `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`,
-        publisher: { "@id": `${SITE_URL}/#organization` },
-        downloadUrl: STORE_LINKS.googlePlay,
-        installUrl: STORE_LINKS.appStore,
-        sameAs: [STORE_LINKS.googlePlay, STORE_LINKS.appStore],
-        offers: [
-          { "@type": "Offer", name: "Metkagram for Android", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: STORE_LINKS.googlePlay },
-          { "@type": "Offer", name: "Metkagram for iOS", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: STORE_LINKS.appStore }
-        ]
       }
     ]
   };
@@ -112,33 +108,53 @@ function breadcrumbJson(pathname, title, locale) {
   const t = ui[locale];
   const parts = slugPath(pathname).split("/").filter(Boolean);
   const items = [{ "@type": "ListItem", position: 1, name: t.home, item: `${SITE_URL}/${locale}/` }];
-  let current = "";
   for (let index = 1; index < parts.length; index += 1) {
-    current += `/${parts[index]}`;
+    const structuralRoute = parts[index] === "legal" || (parts[index - 1] === "practice" && ["patterns", "sets"].includes(parts[index]));
+    if (index < parts.length - 1 && structuralRoute) continue;
     items.push({
       "@type": "ListItem",
       position: items.length + 1,
       name: index === parts.length - 1 ? title : parts[index].replaceAll("-", " "),
-      item: `${SITE_URL}/${locale}${current}/`
+      item: `${SITE_URL}/${parts.slice(0, index + 1).join("/")}/`
     });
   }
   return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items };
 }
 
+function prepareStructuredData(structuredData, canonical, pageEntity) {
+  const entities = structuredData.map((entity) => ({ ...entity }));
+  const breadcrumb = entities.find((entity) => entity?.["@type"] === "BreadcrumbList");
+  if (breadcrumb) {
+    breadcrumb["@id"] ||= `${canonical}#breadcrumb`;
+    pageEntity.breadcrumb = { "@id": breadcrumb["@id"] };
+  }
+
+  const primary = entities.find((entity) => ["LearningResource", "Dataset", "DataCatalog"].includes(entity?.["@type"]) && entity.url === canonical);
+  if (primary) {
+    const suffix = primary["@type"].replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+    primary["@id"] ||= `${canonical}#${suffix}`;
+    primary.mainEntityOfPage ||= { "@id": `${canonical}#webpage` };
+    primary.publisher ||= { "@id": `${SITE_URL}/#organization` };
+    pageEntity.mainEntity = { "@id": primary["@id"] };
+  }
+  return entities;
+}
+
 function header(locale, pathname) {
   const t = ui[locale];
+  const isHome = slugPath(pathname) === `/${locale}/`;
   const nav = [
-    ["navExplore", `/${locale}/explore/`],
-    ["navPractice", `/${locale}/practice/`],
-    ["navMethod", `/${locale}/method/`],
-    ["navAbout", `/${locale}/about/`]
+    [locale === "ru" ? "Разметка" : "Annotations", `/${locale}/explore/`],
+    [locale === "ru" ? "Паттерны" : "Patterns", `/${locale}/practice/`],
+    [t.navMethod, `/${locale}/method/`],
+    [locale === "ru" ? "Для ИИ" : "For AI", `/${locale}/ai/`]
   ];
   return `<a class="skip-link" href="#content">${t.skip}</a>
-  <header class="site-header">
-    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a>
+  <header class="site-header${isHome ? " site-header--studio" : ""}">
+    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><span class="wordmark-name" aria-hidden="true">Metka</span><img src="/assets/logo/metkagram-logo-${isHome ? "light" : "dark"}.svg" width="800" height="200" alt="Metkagram"></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">${t.menu}</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
-      ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${t[label]}</a>`).join("")}
+      ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
     </nav>
     <div class="header-preferences"><div class="locale-switch" aria-label="${t.chooseInterface}">
       <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
@@ -148,14 +164,18 @@ function header(locale, pathname) {
   </header>`;
 }
 
-function footer(locale) {
+function footer(locale, compact = false) {
   const t = ui[locale];
+  if (compact) return `<footer class="site-footer site-footer--studio">
+    <span>${locale === "ru" ? "СТУДИЯ РАЗМЕТКИ" : "ANNOTATION STUDIO"}</span>
+    <nav aria-label="${locale === "ru" ? "Путь по Metkagram" : "Metkagram workflow"}"><a href="/${locale}/explore/">${locale === "ru" ? "РАЗМЕТИТЬ" : "MARK"}</a><i aria-hidden="true">›</i><a href="/${locale}/practice/">${locale === "ru" ? "ПАТТЕРН" : "PATTERN"}</a><i aria-hidden="true">›</i><a href="/${locale}/method/">${locale === "ru" ? "ПРИМЕНИТЬ" : "APPLY"}</a></nav>
+    <a href="/${locale}/contact/">METKAGRAM ©</a>
+  </footer>`;
   return `<footer class="site-footer site-footer--index">
-    <div class="footer-intro"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${locale === "ru" ? "Живые фразы, понятные модели, осознанное повторение." : "Language practice through phrases, patterns, and deliberate return."}</p></div>
-    <nav class="footer-column" aria-label="Learn"><p>${locale === "ru" ? "Учиться" : "Learn"}</p><a href="/${locale}/explore/">${t.navExplore}</a><a href="/${locale}/practice/">${t.navPractice}</a><a href="/${locale}/method/">${t.navMethod}</a><a href="/${locale}/apps/">${t.apps}</a></nav>
-    <nav class="footer-column" aria-label="Project"><p>${locale === "ru" ? "Проект" : "Project"}</p><a href="/${locale}/research/">${locale === "ru" ? "Исследования" : "Research"}</a><a href="/${locale}/support/">${t.support}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/roadmap/">${t.roadmap}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a></nav>
-    <div class="footer-status"><p>${locale === "ru" ? "Доступные коллекции" : "Available collections"}</p><strong>EN · DE</strong><span>${locale === "ru" ? "Паттерны B2–C1" : "B2–C1 patterns"}</span><div class="footer-legal"><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a></div></div>
-    <p class="footer-credit">${t.connected}</p>
+    <div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${locale === "ru" ? "Фразы, паттерны, осознанная практика." : "Phrases, patterns, deliberate practice."}</p></div>
+    <nav class="footer-links" aria-label="${locale === "ru" ? "Навигация в подвале" : "Footer navigation"}"><a href="/${locale}/explore/">${t.navExplore}</a><a href="/${locale}/practice/">${t.navPractice}</a><a href="/${locale}/method/">${t.navMethod}</a><a href="/${locale}/research/">${locale === "ru" ? "Исследования" : "Research"}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/ideas/">${locale === "ru" ? "Идеи и партнёрства" : "Ideas & partnerships"}</a><a href="/${locale}/contact/">${locale === "ru" ? "Контакты" : "Contact"}</a></nav>
+    <p class="footer-languages"><strong>EN · DE</strong><span>${locale === "ru" ? "Паттерны B2–C1" : "B2–C1 patterns"}</span></p>
+    <div class="footer-bottom"><p>${t.connected}</p><nav aria-label="${locale === "ru" ? "Юридическая информация" : "Legal information"}"><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="https://github.com/metkagram/metkagram.github.io">${t.source}</a></nav></div>
   </footer>`;
 }
 
@@ -182,6 +202,8 @@ export function layout({ locale = "en", pathname, title, description, body, type
     },
     dateModified
   };
+  pageEntity.publisher = { "@id": `${SITE_URL}/#organization` };
+  const connectedStructuredData = prepareStructuredData(structuredData, canonical, pageEntity);
   const alternates = notFound ? "" : root
     ? `<link rel="alternate" hreflang="x-default" href="${SITE_URL}/"><link rel="alternate" hreflang="en" href="${SITE_URL}/en/"><link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">`
     : `<link rel="alternate" hreflang="en" href="${SITE_URL}${equivalentLocalePath(pathname, "en")}"><link rel="alternate" hreflang="ru" href="${SITE_URL}${equivalentLocalePath(pathname, "ru")}"><link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`;
@@ -224,13 +246,13 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="/assets/styles.css">
   <meta name="metkagram-sync-endpoint" content="https://metalhatscats.com/api/metkax/srs">
-  ${[metkagramEntityGraph(), pageEntity, ...structuredData].map(jsonLd).join("\n")}
+  ${[metkagramEntityGraph(), pageEntity, ...connectedStructuredData].map(jsonLd).join("\n")}
 </head>
 <body class="${escapeHtml(bodyClass)}" data-locale="${locale}">
   ${root ? "" : header(locale, pathname)}
   <main id="content">${body}</main>
   ${pageActions}
-  ${root ? "" : footer(locale)}
+  ${root ? "" : footer(locale, bodyClass.split(/\s+/).includes("home-studio"))}
   <script type="module" src="/assets/app.js"></script>
 </body>
 </html>`;
@@ -245,7 +267,8 @@ function shareBar(locale, pathname, title) {
   const url = `${SITE_URL}${slugPath(pathname)}`;
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
-  return `<aside class="share-bar section-pad" data-share-bar data-share-url="${escapeHtml(url)}" data-share-title="${escapeHtml(title)}" data-share-copied="${escapeHtml(t.shareCopied)}" aria-label="${escapeHtml(t.shareTitle)}"><span class="share-label">${escapeHtml(t.shareTitle)}</span><div class="share-actions"><button type="button" class="share-button share-button-native" data-native-share hidden>${escapeHtml(t.shareNative)}</button><a class="share-button" href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareTelegram)}</a><a class="share-button" href="https://vk.com/share.php?url=${encodedUrl}&title=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareVk)}</a><a class="share-button" href="https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareX)}</a><button type="button" class="share-button" data-copy-link>${escapeHtml(t.shareCopy)}</button><button type="button" class="share-button" data-print-page>${escapeHtml(t.printPage)}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>`;
+  const encodedShareText = encodeURIComponent(`${title} ${url}`);
+  return `<aside class="share-bar section-pad" data-share-bar data-share-url="${escapeHtml(url)}" data-share-title="${escapeHtml(title)}" data-share-copied="${escapeHtml(t.shareCopied)}" aria-label="${escapeHtml(t.shareTitle)}"><span class="share-label">${escapeHtml(t.shareTitle)}</span><div class="share-actions"><button type="button" class="share-button share-button-native" data-native-share hidden>${escapeHtml(t.shareNative)}</button><a class="share-button" href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareTelegram)}</a><a class="share-button" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareLinkedIn)}</a><a class="share-button" href="https://wa.me/?text=${encodedShareText}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareWhatsApp)}</a><a class="share-button" href="https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.shareX)}</a><button type="button" class="share-button" data-copy-link>${escapeHtml(t.shareCopy)}</button><button type="button" class="share-button" data-print-page>${escapeHtml(t.printPage)}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>`;
 }
 
 export function languageTabs(locale, current = "english", suffix = "") {
@@ -263,49 +286,69 @@ export function annotatedPreview() {
 
 export function localeHome(locale, content) {
   const t = ui[locale];
-  const counts = {};
-  for (const target of Object.values(targetMeta)) {
-    counts[target.key] = Object.fromEntries(collectionKeys.map((key) => [key, content.collections[target.key][key].documents.length]));
-  }
   const pathname = `/${locale}/`;
-  const totalSets = (targetKey) => Object.values(counts[targetKey]).reduce((sum, count) => sum + count, 0);
-  const scheme = locale === "ru"
-    ? [["01", "Прочитать"], ["02", "Увидеть роль"], ["03", "Собрать модель"], ["04", "Использовать"]]
-    : [["01", "Read"], ["02", "See the role"], ["03", "Build the pattern"], ["04", "Use it"]];
-  const body = `<section class="home-hero" aria-labelledby="home-title">
-    <div class="home-hero-shell">
-      <div class="home-hero-top"><p class="eyebrow">${t.homeEyebrow}</p><p class="home-edition">${locale === "ru" ? "ЯЗЫК · В КОНТЕКСТЕ" : "LANGUAGE · IN CONTEXT"}</p></div>
-      <div class="home-intro"><div class="home-hero-copy"><p class="home-brand">Metkagram</p><h1 id="home-title">${t.statement}</h1><p class="home-kicker">${t.homeKicker}</p></div><div class="home-action"><div class="home-schematic" aria-label="${t.homeJourneyLabel}">${scheme.map(([index, label], step) => `<div class="schematic-step" style="--step:${step}"><span>${index}</span><strong>${label}</strong></div>`).join("")}</div><p class="lede">${t.homeIntro}</p><div class="home-cta"><a class="primary-link" href="/${locale}/explore/">${t.homeExplore} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/practice/">${t.homePractice} <span aria-hidden="true">→</span></a><a class="text-link" href="/${locale}/ai/">${t.forAiDevelopers} <span aria-hidden="true">→</span></a></div></div>
-      <div class="home-signal" aria-label="${t.homeJourneyLabel}"><span>01</span><p>${t.homeJourneyStart}</p><span>→</span><p>${t.homeJourneyUnderstand}</p><span>→</span><p>${t.homeJourneyReuse}</p></div>
-    </div>
-  </section>
-  <section class="mode-doors section-pad" aria-labelledby="mode-doors-title"><div class="section-intro"><p class="eyebrow">01 · Metkagram</p><h2 id="mode-doors-title">${t.homeModesTitle}</h2><p>${locale === "ru" ? "Один принцип: учиться на целых фразах." : "Two modes, one principle: think in complete phrases."}</p></div><div class="mode-door-list"><a class="mode-door annotated-door" href="/${locale}/explore/"><span>01</span><div><p class="eyebrow">${t.navExplore}</p><h3>${t.navExplore}</h3><p>${t.homeAnnotatedIntro}</p></div><b aria-hidden="true">→</b></a><a class="mode-door practice-door" href="/${locale}/practice/"><span>02</span><div><p class="eyebrow">B2–C1</p><h3>${t.navPractice}</h3><p>${t.homePracticeIntro}</p></div><b aria-hidden="true">→</b></a></div></section>
-  <section class="home-method section-pad" aria-labelledby="home-method-title"><div><p class="eyebrow">02 · ${t.navMethod}</p><h2 id="home-method-title">${t.homeMethodTitle}</h2></div><div><p class="lede">${t.homeMethodDetail}</p><ol>${t.homeMethodSteps.map((step, index) => `<li><span>0${index + 1}</span><div><strong>${step}</strong><small>${t.homeMethodNotes[index]}</small></div></li>`).join("")}</ol><a class="text-link" href="/${locale}/method/">${t.homeMethodLink} <span aria-hidden="true">→</span></a></div></section>
-  <section class="study-language section-pad" aria-labelledby="language-picker-title"><div><p class="eyebrow" id="language-picker-title">03 · ${t.homeLanguageTitle}</p><h2>${t.homeStartTitle}</h2></div><p>${t.homeLanguageDetail}</p><div class="language-choices">${Object.values(targetMeta).map((target) => `<a href="/${locale}/explore/${target.key}/"><span class="language-choice-code">${target.flag}</span><span><strong>${t[target.key]}</strong><small>${totalSets(target.key).toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.sets} · ${target.native}</small></span><span aria-hidden="true">→</span></a>`).join("")}</div></section>
-  <section class="home-connect section-pad ruled" aria-label="${t.homeCollaborationEyebrow} and ${t.homeAppsEyebrow}"><article><p class="eyebrow">03 · ${t.homeCollaborationEyebrow}</p><h2>${t.homeCollaborationTitle}</h2><p>${t.homeCollaborationDetail}</p><a class="text-link" href="/${locale}/support/">${t.homeCollaborationLink} <span aria-hidden="true">→</span></a></article><article><p class="eyebrow">04 · ${t.homeAppsEyebrow}</p><h2>${t.homeAppsTitle}</h2><p>${t.homeAppsDetail}</p><nav class="home-store-links" aria-label="${t.homeAppsEyebrow}"><a href="${STORE_LINKS.googlePlay}" target="_blank" rel="noreferrer">Google Play <span aria-hidden="true">↗</span></a><a href="${STORE_LINKS.appStore}" target="_blank" rel="noreferrer">App Store <span aria-hidden="true">↗</span></a></nav></article></section>
-  <section class="home-faq section-pad ruled" aria-labelledby="home-faq-title"><div><p class="eyebrow">05 · ${t.homeFaqEyebrow}</p><h2 id="home-faq-title">${t.homeFaqTitle}</h2></div><div><p class="lede">${t.homeFaqIntro}</p><div class="faq-list">${t.homeFaqItems.map(([question, answer, href, label]) => { const external = href.startsWith("http"); const url = external ? href : `/${locale}${href}`; return `<details><summary>${question}</summary><div><p>${answer}</p><a class="text-link" href="${url}"${external ? ' target="_blank" rel="noreferrer"' : ""}>${label} <span aria-hidden="true">${external ? "↗" : "→"}</span></a></div></details>`; }).join("")}</div></div></section>`;
-  const structuredData = [
-    { "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] },
-    { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Metkagram", applicationCategory: "EducationalApplication", operatingSystem: "Web", url: `${SITE_URL}/${locale}/`, offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: t.homeFaqItems.map(([question, answer]) => ({
-        "@type": "Question",
-        name: question,
-        acceptedAnswer: { "@type": "Answer", text: answer }
-      }))
-    }
+  const ru = locale === "ru";
+  const copy = ru ? {
+    eyebrow: "СТУДИЯ РАЗМЕТКИ",
+    title: ["Разметить.", "Найти.", "Применить."],
+    intro: "Разметьте фразу. Найдите паттерн. Перенесите его в следующую фразу.",
+    action: "Открыть тематический сет",
+    library: "Библиотека паттернов",
+    scopeTitle: "Что опубликовано сейчас",
+    scope: "Английские и немецкие фразы с разметкой, большой каталог моделей B2–C1, сеты Thinking in Language и ограниченный французский Frame-only пилот без заявлений о французской разметке или интерфейсе.",
+    rights: "Повторное использование регулируется текущими условиями Metkagram. Существенное повторное использование, распространение, обучение моделей и коммерческая интеграция требуют отдельного согласования.",
+    audiences: [
+      ["Изучать язык", "Читайте живые фразы и замечайте, как устроена речь.", `/${locale}/explore/`],
+      ["Анализировать структуру", "Сравнивайте роли слов и повторяющиеся конструкции.", `/${locale}/method/`],
+      ["Работать с данными", "Подключайте чистые паттерны к агентам и инструментам.", `/${locale}/ai/`],
+      ["Предложить идею", "Обсудите пилот, исследование или партнёрство с командой.", `/${locale}/ideas/`]
+    ]
+  } : {
+    eyebrow: "ANNOTATION STUDIO",
+    title: ["Mark.", "Find.", "Reuse."],
+    intro: "Mark a phrase. Find the pattern. Carry it into the next sentence.",
+    action: "Open a topic set",
+    library: "Pattern library",
+    scopeTitle: "What is published now",
+    scope: "Annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims.",
+    rights: "Current reuse follows the Metkagram licensing terms. Substantial reuse, redistribution, model training and commercial integration require scoped permission.",
+    audiences: [
+      ["Learn a language", "Read real phrases and see how language fits together.", `/${locale}/explore/`],
+      ["Analyse structure", "Compare word roles and recurring constructions.", `/${locale}/method/`],
+      ["Build with data", "Connect clean patterns to agents and language tools.", `/${locale}/ai/`],
+      ["Propose an idea", "Discuss a pilot, study, or partnership with the team.", `/${locale}/ideas/`]
+    ]
+  };
+  const tag = (kind, label) => `<span class="grammar-tag ${kind}">${label}</span>`;
+  const slips = ru ? [
+    ["S", "Мне трудно сосредоточиться, когда всё отвлекает."],
+    ["V", "Когда я составляю план, работать становится легче."],
+    ["p2", "Дайте мне один ясный следующий шаг."]
+  ] : [
+    ["S", "It’s hard to focus with everything pulling at me."],
+    ["V", "When I plan it out, things feel lighter."],
+    ["p2", "Give me one clear next step."]
   ];
-  return layout({ locale, pathname, title: locale === "en" ? "Metkagram — grammar markup for reusable language patterns" : "Metkagram — фразы с понятной разметкой", description: t.statementDetail, body, structuredData });
+  const patterns = ru ? [
+    ["S", "Формулировка трудности", "Мне трудно [V], когда [p2]."],
+    ["V", "Осознание изменения", "Когда я [V], [S] становится [p2]."],
+    ["p2", "Триггер прогресса", "Дайте мне [p2], и я [V]."]
+  ] : [
+    ["S", "Struggle statement", "It’s hard to [V] with [p2]."],
+    ["V", "Value realization", "When I [V], [S] feels [p2]."],
+    ["p2", "Progress trigger", "Give me [p2] and I’ll [V]."]
+  ];
+  const tokenRow = [tag("subject", "S"), tag("verb", "V"), tag("object", "p2"), tag("helper", "Hf")].join("");
+  const body = `<section class="studio-home studio-home-v2" aria-labelledby="home-title"><div class="studio-hero-v2"><div class="studio-manifest"><p class="eyebrow">${copy.eyebrow}</p><h1 id="home-title"><span>${copy.title[0]}</span><span>${copy.title[1]}</span><mark>${copy.title[2]}</mark></h1><p>${copy.intro}</p><a class="studio-primary-action" href="/${locale}/practice/sets/argumentation/">${copy.action}<span aria-hidden="true">↗</span></a></div><div class="studio-flow" aria-label="${ru ? "От размеченных фраз к паттернам" : "From annotated phrases to reusable patterns"}"><div class="studio-slips">${slips.map(([code, sentence], index) => `<article class="studio-slip studio-slip-${index + 1}"><header><span class="studio-slip-code">${code}</span><span class="studio-slip-index">0${index + 1}</span></header><p>${sentence}</p><div class="studio-slip-tags" aria-label="${ru ? "Метки фразы" : "Sentence tags"}">${tokenRow}</div></article>`).join("")}</div><section class="studio-pattern-sheet"><p class="eyebrow">${copy.library}</p>${patterns.map(([code, title, formula]) => `<article><span class="studio-pattern-code">${code}</span><div><strong>${title}</strong><code>${formula}</code></div></article>`).join("")}<a href="/${locale}/practice/">${ru ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→</span></a></section></div></div><nav class="studio-audiences" aria-label="${ru ? "Для кого Metkagram" : "Ways to use Metkagram"}">${copy.audiences.map(([title, detail, href], index) => `<a href="${href}"><span>0${index + 1}</span><strong>${title}</strong><small>${detail}</small><b aria-hidden="true">→</b></a>`).join("")}</nav><section class="ai-section section-pad ruled" data-current-capabilities><div><p class="eyebrow">${ru ? "Границы продукта" : "Product boundary"}</p><h2>${copy.scopeTitle}</h2></div><div><p>${copy.scope}</p><p>${copy.rights}</p><div class="legal-inline-links"><a href="/${locale}/practice/language/french/">${ru ? "Французский пилот" : "French pilot"} →</a><a href="/${locale}/licensing/">${ru ? "Права и лицензирование" : "Rights and licensing"} →</a></div></div></section></section>`;
+  return layout({ locale, pathname, title: locale === "en" ? "Language Annotation & Pattern Library | Metkagram" : "Библиотека разметки и языковых паттернов | Metkagram", description: t.statementDetail, body, bodyClass: "home-studio" });
 }
 
 export function explorePage(locale, content) {
   const t = ui[locale];
   const pathname = `/${locale}/explore/`;
-  const body = `<section class="page-head section-pad"><p class="eyebrow">${t.navExplore}</p><h1>${t.exploreTitle}</h1><p class="lede">${t.exploreIntro}</p></section>
-  <section class="language-planes section-pad ruled">${Object.values(targetMeta).map((target) => `<article><p class="language-code">${target.flag}</p><h2>${t[target.key]} <span>${target.native}</span></h2><ul>${collectionKeys.map((key) => `<li><a href="/${locale}/explore/${target.key}/${key}/"><span>${t[key]}</span><strong>${content.collections[target.key][key].documents.length}</strong></a></li>`).join("")}<li><a href="/${locale}/explore/${target.key}/annotation-rules/"><span>${t.rules}</span><span aria-hidden="true">↗</span></a></li></ul></article>`).join("")}</section>`;
-  return layout({ locale, pathname, title: locale === "en" ? "Explore English & German language patterns — Metkagram" : "Подборки английских и немецких фраз — Metkagram", description: t.exploreIntro, body, structuredData: [breadcrumbJson(pathname, t.navExplore, locale)] });
+  const body = `<section class="studio-route studio-route--explore"><div class="studio-route-backdrop" aria-hidden="true"></div><div class="studio-route-board"><section class="page-head section-pad"><p class="eyebrow">${t.navExplore}</p><h1>${t.exploreTitle}</h1><p class="lede">${t.exploreIntro}</p></section>
+  <section class="language-planes section-pad ruled">${Object.values(targetMeta).map((target) => `<article><p class="language-code">${target.flag}</p><h2>${t[target.key]} <span>${locale === "ru" ? "Разметка и паттерны" : "Annotation and patterns"} · ${target.native}</span></h2><ul>${collectionKeys.map((key) => `<li><a href="/${locale}/explore/${target.key}/${key}/"><span>${t[key]}</span><strong>${content.collections[target.key][key].documents.length}</strong></a></li>`).join("")}<li><a href="/${locale}/explore/${target.key}/annotation-rules/"><span>${t.rules}</span><span aria-hidden="true">↗</span></a></li></ul></article>`).join("")}</section></div></section>`;
+  return layout({ locale, pathname, title: locale === "en" ? "Annotated English & German Phrases | Metkagram" : "Размеченные фразы на английском и немецком | Metkagram", description: t.exploreIntro, body, structuredData: [breadcrumbJson(pathname, t.navExplore, locale)], bodyClass: "studio-route-body" });
 }
 
 export function languageHub(locale, targetKey, content) {
@@ -372,18 +415,21 @@ function renderTaggedSpan(span, text, locale, targetKey, tooltipId) {
   const isPast = targetKey === "german" && String(span.tense || span.role || "").toLowerCase() === "past";
   const rule = tagRule(locale, targetKey, tag, span.role);
   const pastLabel = isPast ? `${tag}, past tense` : tag;
-  return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}${isPast ? " tense-past" : ""}" type="button" aria-label="${escapeHtml(pastLabel)}" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>${renderedText}</span>`;
+  return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}${isPast ? " tense-past" : ""}" type="button" aria-label="${escapeHtml(pastLabel)}" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>&nbsp;${renderedText}</span>`;
 }
 
 function renderAnnotation(annotation, locale, targetKey, index) {
   const t = ui[locale];
+  const lineNumber = String(index + 1).padStart(2, "0");
+  const reviewOff = locale === "ru" ? "Отметить повторённым" : "Mark as repeated";
+  const reviewOn = locale === "ru" ? "Повторено" : "Reviewed";
   const canonical = legacyAnnotationToCanonical(annotation, { language: targetMeta[targetKey].dataKey, dataset: "site" });
   const tokens = renderCanonicalText(canonical, (span, text) => {
       const tooltipId = `tag-rule-${index + 1}-${span.id}`;
       return renderTaggedSpan(span, text, locale, targetKey, tooltipId);
   });
   const russianTranslation = annotation.translations?.ru || annotation.translated_text;
-  return `<article class="annotation-row" id="sentence-${index + 1}"><span class="line-number">${String(index + 1).padStart(2, "0")}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${russianTranslation || annotation.chunkList ? `<dl class="annotation-notes">${russianTranslation ? `<div data-native-translation hidden><dt>${t.translation}</dt><dd lang="ru">${escapeHtml(russianTranslation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
+  return `<article class="annotation-row" id="sentence-${index + 1}" data-review-card><button class="annotation-review-toggle" type="button" aria-pressed="false" aria-label="${reviewOff}" data-review-toggle data-review-id="sentence-${index + 1}" data-review-off="${reviewOff}" data-review-on="${reviewOn}">${lineNumber} · ${reviewOff}</button><span class="line-number">${lineNumber}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${russianTranslation || annotation.chunkList ? `<dl class="annotation-notes">${russianTranslation ? `<div data-native-translation hidden><dt>${t.translation}</dt><dd lang="ru">${escapeHtml(russianTranslation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
 }
 
 export function documentPage(locale, targetKey, collectionKey, document) {
@@ -391,8 +437,8 @@ export function documentPage(locale, targetKey, collectionKey, document) {
   const target = targetMeta[targetKey];
   const pathname = itemUrl(locale, targetKey, collectionKey, document);
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/explore/`, label: t.navExplore }, { href: `/${locale}/explore/${targetKey}/`, label: t[targetKey] }, { href: `/${locale}/explore/${targetKey}/${collectionKey}/`, label: t[collectionKey] }, { href: pathname, label: document.title }])}
-  <article class="document-page"><header class="document-head section-pad"><p class="eyebrow">${target.flag} · ${t[collectionKey]}</p><h1>${escapeHtml(document.title)}</h1><div class="document-context"><p>${t.documentContains} <strong>${document.annotations.length}</strong> ${t.sentences}.</p><p class="document-guide">${t.readingGuide}</p></div>${document.version ? `<p class="version">${t.updated}: ${escapeHtml(document.version)}</p>` : ""}</header><section class="annotation-controls section-pad" data-annotation-controls data-reading-copy="${escapeHtml(t.annotationModeReading)}" data-study-copy="${escapeHtml(t.annotationModeStudyActive)}" aria-label="${t.annotationModeLabel}"><div><p class="eyebrow">${t.annotationModeLabel}</p><p data-annotation-mode-copy>${t.annotationModeReading}</p></div><div class="segmented annotation-mode-switch" role="group" aria-label="${t.annotationModeLabel}"><button type="button" data-annotation-mode="reading" aria-pressed="true">${t.annotationModeReadingButton}</button><button type="button" data-annotation-mode="study" aria-pressed="false">${t.annotationModeStudyButton}</button></div></section><div class="annotation-sheet section-pad">${document.annotations.map((annotation, index) => renderAnnotation(annotation, locale, targetKey, index)).join("")}</div>${shareBar(locale, pathname, document.title)}</article>`;
-  const learningResource = { "@context": "https://schema.org", "@type": "LearningResource", name: document.title, url: `${SITE_URL}${pathname}`, inLanguage: target.dataKey, educationalLevel: "Intermediate to advanced", learningResourceType: collectionLabel(locale, collectionKey), isAccessibleForFree: true };
+  <article class="document-page"><header class="document-head section-pad"><p class="eyebrow">${target.flag} · ${t[collectionKey]}</p><h1>${escapeHtml(document.title)}</h1><div class="document-context"><p>${t.documentContains} <strong>${document.annotations.length}</strong> ${t.sentences}.</p><p class="document-guide">${t.readingGuide}</p></div>${document.version ? `<p class="version">${t.updated}: ${escapeHtml(document.version)}</p>` : ""}</header><section class="annotation-controls section-pad" data-annotation-controls data-reading-copy="${escapeHtml(t.annotationModeReading)}" data-study-copy="${escapeHtml(t.annotationModeStudyActive)}" aria-label="${t.annotationModeLabel}"><div class="annotation-controls-copy"><span class="annotation-session-count" aria-hidden="true">01—${String(document.annotations.length).padStart(2, "0")}</span><div><p class="eyebrow">${t.annotationModeLabel}</p><p data-annotation-mode-copy>${t.annotationModeReading}</p></div></div><div class="segmented annotation-mode-switch" role="group" aria-label="${t.annotationModeLabel}"><button type="button" data-annotation-mode="reading" aria-pressed="true">${t.annotationModeReadingButton}</button><button type="button" data-annotation-mode="study" aria-pressed="false">${t.annotationModeStudyButton}</button></div></section><div class="annotation-sheet section-pad">${document.annotations.map((annotation, index) => renderAnnotation(annotation, locale, targetKey, index)).join("")}</div>${shareBar(locale, pathname, document.title)}</article>`;
+  const learningResource = { "@context": "https://schema.org", "@type": "LearningResource", name: document.title, identifier: document.id, url: `${SITE_URL}${pathname}`, inLanguage: target.dataKey, educationalLevel: "Intermediate to advanced", learningResourceType: collectionLabel(locale, collectionKey), isAccessibleForFree: true };
   const metaTitle = identifiedMetaTitle(document.title, document.id);
   const metaDescription = locale === "en"
     ? `${document.title} (${document.id.slice(0, 8)}): read ${document.annotations.length} annotated ${target.native} sentences and open grammar explanations when needed.`
@@ -453,7 +499,7 @@ export function rulesPage(locale, targetKey) {
   const groupCopy = locale === "ru"
     ? { subject: ["Кто или что", "Кому принадлежит действие или состояние."], verb: ["Действие и форма", "Что происходит и в какой форме стоит глагол."], object: ["Детали конструкции", "Падеж, состояние, дополнение и другие опоры фразы."], helper: ["Служебные глаголы", "Как меняются время, результат или состояние действия."] }
     : { subject: ["Who or what", "The person or thing the sentence is about."], verb: ["Action and form", "What happens and which verb form carries it."], object: ["Sentence details", "Case, state, predicate detail and other structural cues."], helper: ["Helper verbs", "How tense, result or state changes the main verb."] };
-  const sample = guide.sample.map(([tag, text]) => `<span><b class="grammar-tag ${tokenClass(tag)}">${escapeHtml(tag)}</b>${escapeHtml(text)}</span>`).join(" ");
+  const sample = guide.sample.map(([tag, text]) => `<span><b class="grammar-tag ${tokenClass(tag)}">${escapeHtml(tag)}</b>&nbsp;${escapeHtml(text)}</span>`).join(" ");
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/explore/`, label: t.navExplore }, { href: `/${locale}/explore/${targetKey}/`, label: t[targetKey] }, { href: pathname, label: t.rules }])}<section class="rules-hero section-pad"><div><p class="eyebrow">${target.flag} · ${target.native}</p><h1>${guide.title}</h1><p class="lede">${guide.intro}</p><p>${guide.research}</p>${languageTabs(locale, targetKey, "annotation-rules/")}</div><figure class="rules-sample"><figcaption>${guide.label}</figcaption><p>${sample}</p></figure></section><section class="rules-catalogue section-pad ruled">${groups.map(({ kind, entries }, index) => `<section class="rule-group rule-group-${kind}"><header><span>0${index + 1}</span><h2>${groupCopy[kind][0]}</h2><p>${groupCopy[kind][1]}</p></header><div>${entries.map((rule) => { const item = ruleCopy(locale, targetKey, rule); return `<article><span class="grammar-tag ${kind}">${escapeHtml(item.tag)}</span><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p><small><b>${t.tagRuleUse}</b> ${escapeHtml({ subject: t.tagRuleSubjectUse, verb: t.tagRuleVerbUse, object: t.tagRuleObjectUse, helper: t.tagRuleHelperUse }[kind])}</small></div></article>`; }).join("")}</div></section>`).join("")}</section>`;
   return layout({ locale, pathname, title: `${t.rules}: ${t[targetKey]} — Metkagram`, description: locale === "en" ? `A plain-language guide to the ${t[targetKey]} grammar marks used in Metkagram sentences.` : `Понятный справочник по обозначениям грамматики ${t[targetKey].toLowerCase()} в предложениях Metkagram.`, body, structuredData: [breadcrumbJson(pathname, t.rules, locale)] });
 }
@@ -471,7 +517,7 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
   const t = ui[locale];
   const primary = pattern.langs[0];
   const title = patternTitle(pattern, locale, primary.lang);
-  const pathname = `/${locale}/practice/${pattern.id.toLowerCase()}/`;
+  const pathname = patternPath(locale, pattern);
   const cards = new Map(patternToCanonicalCards(pattern, serviceAnnotations).map((card) => [card.language, card]));
   const languages = new Map(pattern.langs.map((lang) => [lang.lang, { ...lang, card: cards.get(lang.lang) }]));
   const english = languages.get("en");
@@ -482,15 +528,15 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     return `<div class="pattern-comparison-language" lang="${language.lang}" data-target-language="${language.lang}"><span class="language-code">${label}</span><p>${renderCanonicalText(item, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${language.lang}-${item.id}-${span.id}`))}</p></div>`;
   };
   const renderTranslation = (translation) => translation ? `<div class="pattern-comparison-translation" data-native-translation hidden><span class="language-code">RU · ${t.translation}</span><p lang="ru">${escapeHtml(translation)}</p></div>` : "";
-  const primaryCard = `<section class="pattern-reference-card"><header><p class="eyebrow">${t.formula}</p></header><div class="pattern-formulas"><div><span class="language-code">EN · ${t.english}</span><code>${escapeHtml(english?.formula || "")}</code></div><div><span class="language-code">DE · ${t.german}</span><code>${escapeHtml(german?.formula || "")}</code></div></div><article class="pattern-comparison-card pattern-primary-example"><div class="pattern-comparison-sentences">${renderSentence(english, english?.card, "EN · " + t.english)}${renderSentence(german, german?.card, "DE · " + t.german)}</div>${renderTranslation(english?.translation || german?.translation)}</article></section>`;
+  const primaryCard = `<section class="pattern-reference-card"><header class="learning-section-label"><span aria-hidden="true">01</span><p class="eyebrow">${t.patternStepFormula}</p></header><div class="pattern-formulas"><div><span class="language-code">EN · ${t.english}</span><code>${escapeHtml(english?.formula || "")}</code></div><div><span class="language-code">DE · ${t.german}</span><code>${escapeHtml(german?.formula || "")}</code></div></div><article class="pattern-comparison-card pattern-primary-example"><header class="learning-section-label example-card-head"><span aria-hidden="true">02</span><p class="eyebrow">${t.patternStepAnchor}</p></header><div class="pattern-comparison-sentences">${renderSentence(english, english?.card, "EN · " + t.english)}${renderSentence(german, german?.card, "DE · " + t.german)}</div>${renderTranslation(english?.translation || german?.translation)}</article></section>`;
   const variationCount = Math.max(english?.card?.examples?.length || 0, german?.card?.examples?.length || 0);
-  const variations = variationCount ? `<section class="pattern-variations" aria-label="${t.examples}"><h2>${t.examples}<small>${variationCount}</small></h2><ol class="pattern-comparison-list">${Array.from({ length: variationCount }, (_, index) => {
+  const variations = variationCount ? `<section class="pattern-variations" aria-label="${t.examples}"><h2><span><b aria-hidden="true">03</b>${t.patternStepVariations}</span><small>${variationCount} · ${t.examples.toLowerCase()}</small></h2><ol class="pattern-comparison-list">${Array.from({ length: variationCount }, (_, index) => {
     const englishExample = english?.card?.examples?.[index];
     const germanExample = german?.card?.examples?.[index];
     return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
   }).join("")}</ol></section>` : "";
   const russianDescription = pattern.metaphor_ru ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.metaphor_ru)}</p></div>` : "";
-  const body = `<article class="pattern-page section-pad">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
+  const body = `<article class="pattern-page section-pad" data-pattern-id="${escapeHtml(pattern.id)}">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
   const metaTitle = identifiedMetaTitle(title, pattern.id);
   const metaDescription = locale === "en"
     ? `Pattern ${pattern.id}: ${primary.formula}. Study this B2–C1 structure with English and German examples.`
@@ -502,7 +548,7 @@ export function practicePage(locale, patterns, studySets) {
   const t = ui[locale];
   const pathname = `/${locale}/practice/`;
   const categories = [...new Set(patterns.map((pattern) => pattern.group_id))].sort();
-  const body = `<section class="page-head section-pad practice-intro"><p class="eyebrow">B2–C1 · ${patterns.length.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.patterns.toLowerCase()}</p><h1>${t.practiceTitle}</h1><p class="lede">${t.practiceIntro}</p><div class="practice-status"><a href="#all-patterns">${t.allPatterns} <b>${patterns.length.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")}</b></a><a href="/${locale}/ai/#connectors">${locale === "ru" ? "Подключить к агенту" : "Connect an agent"}</a></div></section><section id="all-patterns" class="practice-tools section-pad ruled"><div class="filter-field"><p class="filter-label">${t.chooseTarget}</p><div class="segmented" aria-label="${t.chooseTarget}"><button type="button" data-language-filter="en" aria-pressed="true">EN · ${t.english}</button><button type="button" data-language-filter="de" aria-pressed="true">DE · ${t.german}</button></div></div><label>${t.category}<select data-category-filter><option value="">${t.allCategories}</option>${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</select></label><label>${t.search}<input type="search" data-pattern-search></label><output class="result-count practice-count" data-pattern-count aria-live="polite">${t.visibleSets} ${patterns.length} ${t.patterns.toLowerCase()}</output></section><section class="pattern-index section-pad" data-pattern-list>${patterns.map((pattern, index) => `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/" data-language="${pattern.langs.map((lang) => lang.lang).join(" ")}" data-category="${escapeHtml(pattern.group_id)}" data-search-text="${escapeHtml(`${pattern.id} ${pattern.title_ru} ${pattern.formulas?.join(" ") || ""}`.toLowerCase())}"><span class="document-number">${String(index + 1).padStart(4, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.set_id)} · ${pattern.langs.map((lang) => lang.lang.toUpperCase()).join(" / ")}</small></span><span aria-hidden="true">↗</span></a>`).join("")}<p class="empty-state" data-empty-state hidden>${t.noResults}</p></section>`;
+  const body = `<section class="page-head section-pad practice-intro"><p class="eyebrow">B2–C1 · ${patterns.length.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")} ${t.patterns.toLowerCase()}</p><h1>${t.practiceTitle}</h1><p class="lede">${t.practiceIntro}</p><div class="practice-status"><a href="#all-patterns">${t.allPatterns} <b>${patterns.length.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")}</b></a><a href="/${locale}/ai/#connectors">${locale === "ru" ? "Подключить к агенту" : "Connect an agent"}</a></div></section><section id="all-patterns" class="practice-tools section-pad ruled"><div class="filter-field"><p class="filter-label">${t.chooseTarget}</p><div class="segmented" aria-label="${t.chooseTarget}"><button type="button" data-language-filter="en" aria-pressed="true">EN · ${t.english}</button><button type="button" data-language-filter="de" aria-pressed="true">DE · ${t.german}</button></div></div><label>${t.category}<select data-category-filter><option value="">${t.allCategories}</option>${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</select></label><label>${t.search}<input type="search" data-pattern-search></label><output class="result-count practice-count" data-pattern-count aria-live="polite">${t.visibleSets} ${patterns.length} ${t.patterns.toLowerCase()}</output></section><section class="pattern-index section-pad" data-pattern-list>${patterns.map((pattern, index) => `<a href="${patternPath(locale, pattern)}" data-pattern-id="${escapeHtml(pattern.id)}" data-language="${pattern.langs.map((lang) => lang.lang).join(" ")}" data-category="${escapeHtml(pattern.group_id)}" data-search-text="${escapeHtml(`${pattern.id} ${pattern.title_ru} ${pattern.formulas?.join(" ") || ""}`.toLowerCase())}"><span class="document-number">${String(index + 1).padStart(4, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.set_id)} · ${pattern.langs.map((lang) => lang.lang.toUpperCase()).join(" / ")}</small></span><span aria-hidden="true">↗</span></a>`).join("")}<p class="empty-state" data-empty-state hidden>${t.noResults}</p></section>`;
   return layout({ locale, pathname, title: `${t.practiceTitle} — ${patterns.length.toLocaleString()} B2–C1 patterns | Metkagram`, description: t.practiceIntro, body, structuredData: [breadcrumbJson(pathname, t.practiceTitle, locale), { "@context": "https://schema.org", "@type": "ItemList", name: t.practiceTitle, numberOfItems: patterns.length }] });
 }
 
@@ -510,22 +556,22 @@ export function studySetPage(locale, set, patterns) {
   const t = ui[locale];
   const title = locale === "ru" ? set.title_ru : set.title_en;
   const description = locale === "ru" ? set.description_ru || set.description : set.description;
-  const pathname = `/${locale}/practice/set/${set.id.toLowerCase()}/`;
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<section class="page-head section-pad compact study-set-head"><p class="eyebrow">B2–C1 · ${escapeHtml(set.id)} · ${patterns.length} ${t.patterns.toLowerCase()}</p><h1>${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p></section><section class="pattern-index section-pad ruled">${patterns.map((pattern, index) => `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.langs.map((lang) => lang.formula).join(" / "))}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>${shareBar(locale, pathname, title)}`;
-  return layout({ locale, pathname, title: `${title} — ${patterns.length} B2–C1 patterns | Metkagram`, description, body, structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, educationalLevel: "B2–C1", numberOfItems: patterns.length }] });
+  const pathname = studySetPath(locale, set);
+  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<section class="page-head section-pad compact study-set-head"><p class="eyebrow">B2–C1 · ${escapeHtml(set.id)} · ${patterns.length} ${t.patterns.toLowerCase()}</p><h1>${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p></section><section class="pattern-index section-pad ruled">${patterns.map((pattern, index) => `<a href="${patternPath(locale, pattern)}"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.langs.map((lang) => lang.formula).join(" / "))}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>${shareBar(locale, pathname, title)}`;
+  return layout({ locale, pathname, title: `${title} — ${patterns.length} B2–C1 patterns | Metkagram`, description, body, structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: set.id, description, url: `${SITE_URL}${pathname}`, learningResourceType: locale === "ru" ? "Тематический сет языковых паттернов" : "Language pattern topic set", educationalLevel: "B2–C1", inLanguage: ["en", "de"], teaches: patterns.slice(0, 12).map((pattern) => pattern.langs.find((lang) => lang.lang === "en")?.formula || pattern.id), isAccessibleForFree: true, numberOfItems: patterns.length }] });
 }
 
 export function methodPage(locale) {
   const ru = locale === "ru";
   const pathname = `/${locale}/method/`;
   const c = ru ? {
-    eyebrow: "Metkagram · метод", title: "Фраза остаётся живой. Структура становится видимой.", intro: "Metkagram соединяет живые фразы, компактную разметку и интервальное повторение. Вы видите грамматику в контексте, выделяете полезную модель и учитесь применять её.", loop: "Учебный цикл", before: "До и после разметки", variation: "Вариации B2–C1", original: "Система, а не набор ярлыков", evidence: "На чём основан метод", limits: "Что важно учитывать", sources: "Источники", data: "Открытый корпус с функциональной разметкой на уровне слов", recall: "Сначала вспомните конструкцию, затем откройте ответ.", stages: ["Фраза", "Подсказка", "Структура", "Модель", "Вариация", "Воспроизведение", "Повторение"], stageText: ["Прочитайте фразу целиком.", "Заметьте короткую метку рядом со словом.", "Свяжите метку с нужным фрагментом.", "Выделите конструкцию, которую можно повторить.", "Сравните её в другом лице, времени и контексте.", "Восстановите конструкцию без подсказки.", "Вернитесь к ней через подходящий интервал."], originalText: "Metkagram объединяет функциональную разметку, живые фразы, переводы, формулы, вариации и интервальное повторение. Получается открытый корпус для учёбы и NLP-анализа: в нём можно прослеживать роли слов, сравнивать конструкции и проводить воспроизводимые эксперименты.", evidenceText: ["Короткая визуальная подсказка направляет внимание на одну важную деталь.", "Разметка остаётся внутри осмысленной фразы и не отделяет форму от содержания.", "Токеновая схема понятна человеку и пригодна для вычислительного анализа.", "Метка рядом со словом снижает необходимость переключаться между фразой и правилом.", "Целая фраза помогает запомнить модель в контексте и перенести её в новую ситуацию.", "Попытка вспомнить до подсказки укрепляет доступ к модели.", "Интервалы и вариации показывают, что в конструкции меняется, а что остаётся постоянным."], limitsText: "Разметка помогает заметить структуру, но не заменяет чтение, разговор, обратную связь, словарную работу и регулярную практику."
+    eyebrow: "Metkagram · метод разметки", title: "Паттерн внутри фразы.", intro: "Короткие метки показывают роль слова, не разрушая контекст. Так фраза превращается в повторяемый паттерн для учёбы, сравнения языков и машинного анализа.", loop: "От фразы к паттерну", before: "Фраза до и после разметки", variation: "Паттерн в новых контекстах", original: "Единая система разметки", evidence: "Принципы метода", limits: "Границы метода", sources: "Проверяемые источники", data: "Открытый корпус с функциональной разметкой на уровне слов", recall: "Сначала восстановите паттерн, затем откройте подсказку.", stages: ["Фраза", "Метка", "Структура", "Паттерн", "Вариация", "Воспроизведение", "Повторение"], stageText: ["Прочитайте фразу целиком.", "Заметьте короткую метку рядом со словом.", "Свяжите метку с нужным фрагментом.", "Выделите повторяемый грамматический паттерн.", "Сравните его в другом лице, времени и контексте.", "Восстановите паттерн без подсказки.", "Вернитесь к нему через подходящий интервал."], originalText: "Metkagram объединяет функциональную разметку, живые фразы, переводы, формулы и системные вариации. Получается открытая библиотека для учёбы и NLP-анализа: в ней можно прослеживать роли слов, сравнивать паттерны между английским и немецким и строить воспроизводимые эксперименты.", evidenceText: ["Короткая визуальная метка направляет внимание на одну важную деталь.", "Разметка остаётся внутри осмысленной фразы и не отделяет форму от содержания.", "Токеновая схема понятна человеку и пригодна для вычислительного анализа.", "Метка рядом со словом снижает необходимость переключаться между фразой и правилом.", "Целая фраза помогает запомнить паттерн в контексте и перенести его в новую ситуацию.", "Попытка вспомнить до подсказки укрепляет доступ к паттерну.", "Интервалы и вариации показывают, что в структуре меняется, а что остаётся постоянным."], limitsText: "Разметка помогает увидеть структуру, но не заменяет чтение, разговор, обратную связь, словарную работу и регулярную практику."
   } : {
-    eyebrow: "Metkagram · method", title: "The sentence stays readable. Its structure becomes inspectable.", intro: "Metkagram is a research-oriented approach to language learning. It combines compact functional annotation in natural sentences, applied work from cognitive learning research, and NLP-ready data so grammar becomes observable evidence rather than an abstract rule.", loop: "The complete learning loop", before: "Before and after annotation", variation: "B2–C1 variation", original: "A research system, not a collection of labels", evidence: "What informs the design", limits: "Limits", sources: "Verified sources", data: "An open, machine-readable corpus with token-level functional annotation", recall: "Try to retrieve the pattern before revealing the answer.", stages: ["Sentence", "Signal", "Structure", "Pattern", "Variation", "Recall", "Spaced review"], stageText: ["Read one complete, meaningful sentence.", "Notice a minimal tag beside a word or span.", "Connect the tag to the exact part it describes.", "Identify a reusable chunk or structural pattern.", "Compare it across pronouns, questions, negatives, tenses and contexts.", "Attempt to retrieve it before the answer is shown.", "Return to it later through spaced review."], originalText: "Metkagram develops its own applied annotation scheme; it does not claim to have invented linguistic annotation, colour coding, retrieval practice or spaced repetition. We integrate token-level functional tags with natural sentences, explanations, translations, formulas, systematic variation, active recall and spacing. The result is an open structured corpus that serves both learning and NLP analysis: word roles can be traced, constructions compared, and reproducible experiments built on the same evidence.", evidenceText: ["A selective visual cue can support attention to one functionally relevant detail without asking the learner to parse every part at once.", "Inline annotation in meaningful input is consistent with focus on form: the form remains inside a sentence with meaning.", "A token-level annotation scheme makes the learning markup readable to people and ready for computational analysis.", "A short tag beside its word is designed to reduce split attention between a rule screen and the sentence.", "A sentence and its reusable chunk can support contextual encoding and later transfer to a new situation.", "Attempting retrieval before feedback can support later access to a pattern.", "Spaced return and systematic variation help test what changes and what remains reusable."], limitsText: "A research-oriented, NLP-ready foundation strengthens the method; it does not turn it into an automatic language-learning machine. These mechanisms inform the design. Tags do not replace reading, conversation, feedback, vocabulary work or practice."
+    eyebrow: "Metkagram · annotation method", title: "The pattern inside the sentence.", intro: "Compact functional tags reveal the role of a word without breaking the context. Each sentence becomes a reusable pattern for learning, cross-language comparison and machine analysis.", loop: "From sentence to pattern", before: "Before and after annotation", variation: "A pattern across contexts", original: "One coherent annotation system", evidence: "Principles behind the method", limits: "Method boundaries", sources: "Verified sources", data: "An open, machine-readable corpus with token-level functional annotation", recall: "Retrieve the pattern first, then reveal the cue.", stages: ["Sentence", "Tag", "Structure", "Pattern", "Variation", "Recall", "Spaced review"], stageText: ["Read one complete, meaningful sentence.", "Notice a compact tag beside a word or span.", "Connect the tag to the exact part it describes.", "Identify the reusable grammatical pattern.", "Compare it across people, questions, negatives, tenses and contexts.", "Retrieve the pattern before revealing the cue.", "Return to it later through spaced review."], originalText: "Metkagram combines token-level functional annotation with natural sentences, translations, formulas and systematic variation. The result is an open English–German library for learning and NLP analysis: word roles remain traceable, patterns can be compared across languages, and reproducible experiments can use the same structured evidence.", evidenceText: ["A selective visual tag directs attention to one functionally relevant detail.", "Inline annotation keeps form inside a meaningful sentence.", "A token-level scheme stays readable for people and usable for computational analysis.", "A short tag beside its word reduces switching between the sentence and a separate rule.", "A complete sentence supports contextual encoding and transfer to a new situation.", "Retrieving a pattern before feedback can strengthen later access to it.", "Spaced return and systematic variation reveal what changes and what stays reusable."], limitsText: "Annotation makes structure easier to see, but it does not replace reading, conversation, feedback, vocabulary work or regular practice."
   };
   const tagInfo = ru ? { S: ["Подлежащее", "Кто действует или о ком говорится."], V: ["Главный глагол", "Основное действие или состояние."], vI: ["Инфинитив", "Глагол в начальной форме."], M: ["Модальный глагол", "Показывает возможность, просьбу или необходимость."], v2: ["Второй глагол", "Глагольная форма после служебного или модального глагола."], Hr: ["Служебный глагол результата", "Связывает действие с завершённым опытом или результатом."] } : { S: ["Subject", "Who acts or who the sentence is about."], V: ["Main verb", "The primary action or state."], vI: ["Infinitive", "A verb in its base form."], M: ["Modal verb", "Signals possibility, a request, or necessity."], v2: ["Second verb", "The verb form following a helper or modal."], Hr: ["Result helper", "Connects an action to completed experience or result."] };
   let methodTagIndex = 0;
-  const tag = (kind, label, text) => { const id = `method-tag-${++methodTagIndex}`; const [title, description] = tagInfo[label]; return `<span class="method-token"><button class="grammar-tag tag-trigger ${kind}" type="button" aria-expanded="false" aria-describedby="${id}" data-tag-trigger>${label}<span class="tag-tooltip" id="${id}" role="tooltip"><strong>${title}</strong><span>${description}</span></span></button>${text}</span>`; };
+  const tag = (kind, label, text) => { const id = `method-tag-${++methodTagIndex}`; const [title, description] = tagInfo[label]; return `<span class="method-token"><button class="grammar-tag tag-trigger ${kind}" type="button" aria-expanded="false" aria-describedby="${id}" data-tag-trigger>${label}<span class="tag-tooltip" id="${id}" role="tooltip"><strong>${title}</strong><span>${description}</span></span></button>&nbsp;${text}</span>`; };
   const examples = [
     `<p>${tag("subject", "S", "I")} ${tag("verb", "V", "want")} ${tag("verb", "vI", "to develop")} more effective study habits.</p>`,
     `<p>${tag("helper", "M", "Can")} ${tag("subject", "S", "you")} ${tag("verb", "v2", "help")}?</p>`,
@@ -537,9 +583,12 @@ export function methodPage(locale) {
     ["https://pubmed.ncbi.nlm.nih.gov/33006925/", "Karpicke (2020) · Practicing retrieval facilitates learning"],
     ["https://pubmed.ncbi.nlm.nih.gov/30670661/", "Tabibian et al. (2019) · Enhancing human learning via spaced repetition optimization"]
   ];
-  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: ui[locale].home }, { href: pathname, label: ui[locale].navMethod }])}<article class="method-page"><section class="method-hero section-pad"><div><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p></div><div class="method-sentence" aria-label="Annotated sentence examples">${examples.join("")}</div></section><section class="method-loop section-pad ruled"><div><p class="eyebrow">01 · ${c.loop}</p><h2>Sentence → Signal → Structure → Pattern → Variation → Recall</h2></div><ol>${c.stages.map((stage, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><strong>${stage}</strong><p>${c.stageText[index]}</p></li>`).join("")}</ol></section><section class="method-compare section-pad ruled"><div><p class="eyebrow">02 · ${c.before}</p><h2>${ru ? "Сначала смысл, затем опора" : "Meaning first, cue second"}</h2></div><div class="method-compare-lines"><p>I want to develop more effective study habits.</p><p>${tag("subject", "S", "I")} ${tag("verb", "V", "want")} ${tag("verb", "vI", "to develop")} more effective study habits.</p><small>${c.recall}</small></div></section><section class="method-compare section-pad ruled"><div><p class="eyebrow">03 · ${c.variation}</p><h2>${ru ? "Одна схема — новые ситуации" : "One structure, new situations"}</h2></div><div class="method-compare-lines"><p><strong>If + Past Simple, would + V</strong></p><p>If I had more time, I would start a side project.</p><p>Wenn ich mehr Zeit hätte, würde ich ein Nebenprojekt starten.</p><small>${ru ? "Вопрос, отрицание, другое лицо и время меняют фразу, но помогают увидеть переносимую схему." : "Questions, negatives, people and tenses change the sentence while making the reusable structure visible."}</small></div></section><section class="method-original section-pad ruled"><p class="eyebrow">04 · ${c.original}</p><h2>${c.original}</h2><p class="lede">${c.originalText}</p><p class="method-data">${c.data}</p></section><section class="method-evidence section-pad ruled"><div><p class="eyebrow">05 · ${c.evidence}</p><h2>${ru ? "Исследования объясняют логику, а не обещают результат." : "Research informs the logic; it does not promise the outcome."}</h2></div><div class="method-evidence-grid">${c.evidenceText.map((text, index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><p>${text}</p></article>`).join("")}</div></section><section class="method-boundary section-pad ruled"><div><p class="eyebrow">06 · ${c.limits}</p><h2>${c.limits}</h2></div><p class="lede">${c.limitsText}</p></section><section class="method-sources section-pad ruled"><div><p class="eyebrow">07 · ${c.sources}</p><h2>${c.sources}</h2><p class="lede">${ru ? "Названия, авторы, годы и ссылки приведены для различения результатов исследований и интерпретации Metkagram." : "Titles, authors, years and links distinguish research findings from Metkagram’s design interpretation."}</p></div><ol>${sources.map(([href, label], index) => `<li><a href="${href}" target="_blank" rel="noreferrer"><span>${String(index + 1).padStart(2, "0")}</span>${label}<b aria-hidden="true">↗</b></a></li>`).join("")}</ol></section>${shareBar(locale, pathname, c.title)}</article>`;
+  const loopFormula = ru ? "Фраза → Метка → Структура → Паттерн → Вариация → Воспроизведение" : "Sentence → Tag → Structure → Pattern → Variation → Recall";
+  const methodNav = (ru ? ["Процесс", "Разметка", "Вариации", "Система", "Принципы", "Границы", "Источники"] : ["Process", "Annotation", "Variations", "System", "Principles", "Boundaries", "Sources"])
+    .map((label, index) => `<a href="#method-${index + 1}"><span>${String(index + 1).padStart(2, "0")}</span><strong>${label}</strong></a>`).join("");
+  const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: ui[locale].home }, { href: pathname, label: ui[locale].navMethod }])}<section class="studio-route studio-route--method"><div class="studio-route-backdrop" aria-hidden="true"></div><article class="method-page studio-route-board"><section class="method-hero section-pad"><div><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p></div><div class="method-sentence" aria-label="Annotated sentence examples"><p class="method-sentence-label">${ru ? "Живая разметка" : "Live annotation"}</p>${examples.join("")}</div></section><nav class="method-index" aria-label="${ru ? "Разделы метода" : "Method sections"}">${methodNav}</nav><section class="method-loop section-pad ruled" id="method-1"><div><p class="eyebrow">01 · ${c.loop}</p><h2>${loopFormula}</h2></div><ol>${c.stages.map((stage, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><strong>${stage}</strong><p>${c.stageText[index]}</p></li>`).join("")}</ol></section><section class="method-compare section-pad ruled" id="method-2"><div><p class="eyebrow">02 · ${c.before}</p><h2>${ru ? "Сначала смысл, затем метка" : "Meaning first, tag second"}</h2></div><div class="method-compare-lines"><p>I want to develop more effective study habits.</p><p>${tag("subject", "S", "I")} ${tag("verb", "V", "want")} ${tag("verb", "vI", "to develop")} more effective study habits.</p><small>${c.recall}</small></div></section><section class="method-compare section-pad ruled" id="method-3"><div><p class="eyebrow">03 · ${c.variation}</p><h2>${ru ? "Один паттерн — новые ситуации" : "One pattern, new situations"}</h2></div><div class="method-compare-lines"><p><strong>If + Past Simple, would + V</strong></p><p>If I had more time, I would start a side project.</p><p>Wenn ich mehr Zeit hätte, würde ich ein Nebenprojekt starten.</p><small>${ru ? "Вопрос, отрицание, другое лицо и время меняют фразу, но сохраняют узнаваемый паттерн." : "Questions, negatives, people and tenses change the sentence while preserving a recognisable pattern."}</small></div></section><section class="method-original section-pad ruled" id="method-4"><p class="eyebrow">04 · ${c.original}</p><h2>${c.original}</h2><p class="lede">${c.originalText}</p><p class="method-data">${c.data}</p></section><section class="method-evidence section-pad ruled" id="method-5"><div><p class="eyebrow">05 · ${c.evidence}</p><h2>${ru ? "Исследования объясняют принципы, а не обещают результат." : "Research explains the principles; it does not promise an outcome."}</h2></div><div class="method-evidence-grid">${c.evidenceText.map((text, index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><p>${text}</p></article>`).join("")}</div></section><section class="method-boundary section-pad ruled" id="method-6"><div><p class="eyebrow">06 · ${c.limits}</p><h2>${c.limits}</h2></div><p class="lede">${c.limitsText}</p></section><section class="method-sources section-pad ruled" id="method-7"><div><p class="eyebrow">07 · ${c.sources}</p><h2>${c.sources}</h2><p class="lede">${ru ? "Названия, авторы, годы и ссылки отделяют результаты исследований от интерпретации Metkagram." : "Titles, authors, dates and links separate research findings from Metkagram’s interpretation."}</p></div><ol>${sources.map(([href, label], index) => `<li><a href="${href}" target="_blank" rel="noreferrer"><span>${String(index + 1).padStart(2, "0")}</span>${label}<b aria-hidden="true">↗</b></a></li>`).join("")}</ol></section>${shareBar(locale, pathname, c.title)}</article></section>`;
   const structuredData = { "@context": "https://schema.org", "@type": "LearningResource", name: c.title, learningResourceType: "Language learning method", educationalLevel: "B2–C1", inLanguage: locale, teaches: ["Inline functional annotation", "Reusable language patterns", "Active recall", "Spaced review"], isAccessibleForFree: true, url: `${SITE_URL}${pathname}` };
-  return layout({ locale, pathname, title: ru ? "Как работает метод Metkagram" : "How the Metkagram method works", description: c.intro, body, structuredData: [breadcrumbJson(pathname, c.title, locale), structuredData] });
+  return layout({ locale, pathname, title: ru ? "Как работает метод Metkagram" : "How the Metkagram method works", description: c.intro, body, structuredData: [breadcrumbJson(pathname, c.title, locale), structuredData], bodyClass: "studio-route-body" });
 }
 
 function legalSections(locale, kind) {
@@ -613,7 +662,7 @@ export function appsPage(locale) {
   const title = en ? "Metkagram mobile apps for grammar practice" : "Мобильные приложения Metkagram";
   const intro = en ? "The original Metkagram mobile apps remain available in their stores. Use the web workspace for reading annotated sentences and the apps for the original flashcard and drill experience." : "Читайте фразы с разметкой на сайте, а карточки и упражнения открывайте в приложениях.";
   const body = `<section class="app-hero section-pad"><p class="eyebrow">Metkagram · mobile apps</p><h1>${en ? "The original practice apps." : "Приложения для практики."}</h1><p class="lede">${intro}</p>${storeLinks(locale)}</section><section class="app-details section-pad ruled"><div><p class="eyebrow">${en ? "What they contain" : "Что внутри"}</p><h2>${en ? "A focused grammar practice tool." : "Грамматическая практика без лишнего."}</h2></div><div class="app-feature-list"><article><span>01</span><h3>${en ? "Flashcards" : "Карточки"}</h3><p>${en ? "Short sessions built around recurring grammar choices." : "Короткие занятия на повторяющихся конструкциях."}</p></article><article><span>02</span><h3>${en ? "Minimal pairs" : "Минимальные пары"}</h3><p>${en ? "Compare nearby structures and make the contrast visible." : "Сравнивайте близкие конструкции и замечайте разницу."}</p></article><article><span>03</span><h3>${en ? "Spaced return" : "Повторение"}</h3><p>${en ? "Return to patterns over time instead of endlessly rereading them." : "Возвращайтесь к моделям через подходящие интервалы."}</p></article></div></section><section class="app-trust section-pad ruled"><div><p class="eyebrow">${en ? "Status & policies" : "Статус и правила"}</p><h2>${en ? "Mobile history, clear links." : "Условия и конфиденциальность."}</h2></div><div><p class="lede">${en ? "The applications are maintained as part of Metkagram's product history and remain subject to the policies below and the terms of the relevant store." : "Для приложений действуют правила Metkagram и условия соответствующего магазина."}</p><p class="legal-inline-links"><a href="/${locale}/legal/privacy/">${en ? "Privacy Policy" : "Политика конфиденциальности"}</a><a href="/${locale}/legal/terms/">${en ? "Terms of Use" : "Условия использования"}</a></p></div></section>`;
-  return layout({ locale, pathname, title, description: intro, body, structuredData: [breadcrumbJson(pathname, en ? "Mobile apps" : "Мобильные приложения", locale), { "@context": "https://schema.org", "@type": "WebPage", name: title, url: `${SITE_URL}${pathname}`, isPartOf: { "@id": `${SITE_URL}/#website` }, mainEntity: { "@id": `${SITE_URL}/#mobile-application` } }] });
+  return layout({ locale, pathname, title, description: intro, body, structuredData: [breadcrumbJson(pathname, en ? "Mobile apps" : "Мобильные приложения", locale)] });
 }
 
 export function legalPage(locale, kind) {
@@ -622,14 +671,14 @@ export function legalPage(locale, kind) {
   const otherKind = kind === "privacy" ? "terms" : "privacy";
   const otherLabel = locale === "en" ? (otherKind === "privacy" ? "Privacy Policy" : "Terms of Use") : (otherKind === "privacy" ? "Политика конфиденциальности" : "Условия использования");
   const body = `<section class="legal-head section-pad"><p class="eyebrow">${t.eyebrow}</p><h1>${t.title}</h1><p class="lede">${t.intro}</p><p class="legal-updated">${t.updated}</p></section><section class="legal-layout section-pad ruled"><nav class="legal-toc" aria-label="${locale === "en" ? "On this page" : "На странице"}"><p class="eyebrow">${locale === "en" ? "On this page" : "На странице"}</p><ol>${t.sections.map(([heading], index) => `<li><a href="#legal-${index + 1}">${String(index + 1).padStart(2, "0")} · ${heading}</a></li>`).join("")}</ol></nav><article class="legal-document">${t.sections.map(([heading, text], index) => `<section id="legal-${index + 1}"><span>${String(index + 1).padStart(2, "0")}</span><h2>${heading}</h2><p>${text}</p></section>`).join("")}</article></section><section class="legal-related section-pad ruled"><p class="eyebrow">${locale === "en" ? "Related" : "Связанные страницы"}</p><nav><a href="/${locale}/apps/">${locale === "en" ? "Mobile apps" : "Мобильные приложения"} <span aria-hidden="true">→</span></a><a href="/${locale}/legal/${otherKind}/">${otherLabel} <span aria-hidden="true">→</span></a><a href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer">${locale === "en" ? "Contact MetalHatsCats" : "Связаться с MetalHatsCats"} <span aria-hidden="true">↗</span></a></nav></section>`;
-  return layout({ locale, pathname, title: `${t.title} — Metkagram`, description: t.intro, body, structuredData: [breadcrumbJson(pathname, t.title, locale), { "@context": "https://schema.org", "@type": "WebPage", name: t.title, url: `${SITE_URL}${pathname}`, dateModified: "2026-07-14", inLanguage: locale, isPartOf: { "@id": `${SITE_URL}/#website` }, about: { "@id": `${SITE_URL}/#mobile-application` } }] });
+  return layout({ locale, pathname, title: `${t.title} — Metkagram`, description: t.intro, body, structuredData: [breadcrumbJson(pathname, t.title, locale)] });
 }
 
 export function aboutPage(locale) {
   const t = ui[locale];
   const pathname = `/${locale}/about/`;
   const body = `<section class="page-head section-pad"><p class="eyebrow">M: · project notes</p><h1>${t.aboutTitle}</h1><p class="lede">${t.aboutIntro}</p></section><section class="about-sections section-pad ruled"><article id="license"><h2>${t.license}</h2><p>${locale === "ru" ? "Материалы проекта доступны бесплатно для личного, учебного и другого некоммерческого использования с указанием Metkagram. Для коммерческого использования требуется отдельное разрешение." : "Project materials are free for personal, educational, and other non-commercial use with Metkagram attribution. Commercial use requires separate permission."}</p><a href="/LICENSE">CC BY-NC 4.0 →</a></article><article id="privacy"><h2>${t.privacy}</h2><p>${t.privacyText}</p></article><article><h2>${t.source}</h2><p>${t.connected}</p><a href="https://github.com/metkagram/metkagram.github.io">GitHub ↗</a></article></section>`;
-  return layout({ locale, pathname, title: locale === "en" ? "About Metkagram grammar markup" : "О разметке грамматики Metkagram", description: t.aboutIntro, body, structuredData: [breadcrumbJson(pathname, t.aboutTitle, locale), { "@context": "https://schema.org", "@type": "Organization", name: "Metkagram", url: SITE_URL, sameAs: ["https://github.com/metkagram"] }] });
+  return layout({ locale, pathname, title: locale === "en" ? "About Metkagram grammar markup" : "О разметке грамматики Metkagram", description: t.aboutIntro, body, structuredData: [breadcrumbJson(pathname, t.aboutTitle, locale), { "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Metkagram", url: SITE_URL, sameAs: ["https://github.com/metkagram/metkagram.github.io"] }] });
 }
 
 export function roadmapPage(locale) {
@@ -713,18 +762,106 @@ export function researchPage(locale, counts) {
   return layout({ locale, pathname, title: `${title} | Metkagram`, description: c.intro, body: `${body}${shareBar(locale, pathname, title)}`, pageType: "AboutPage", structuredData });
 }
 
+export function ideasPage(locale) {
+  const ru = locale === "ru";
+  const pathname = `/${locale}/ideas/`;
+  const c = ru ? {
+    eyebrow: "Metkagram · идеи и партнёрства",
+    title: "Принесите идею, которую можно проверить.",
+    intro: "Если вы видите полезный сценарий для Metkagram, предложите его. Это может быть учебный формат, исследовательский вопрос, новый язык, набор данных или интеграция — начнём с небольшого результата, а не с абстрактного сотрудничества.",
+    action: "Предложить идею",
+    signalLabel: "Хорошее начало",
+    signalTitle: "Одна проблема. Один следующий шаг. Один критерий успеха.",
+    ideasTitle: "Где идея может помочь",
+    ideas: [
+      ["Учебный сценарий", "Конкретная задача учащегося, преподавателя или автора курса, где фразы и паттерны могут сократить путь к применению."],
+      ["Исследовательский вопрос", "Гипотеза о разметке, извлечении из памяти или переносе паттернов, которую можно проверить на ясной метрике."],
+      ["Язык или контент", "Новая коллекция, язык, набор примеров или редакторская проверка, повышающая качество открытого корпуса."],
+      ["Инструмент или интеграция", "Сценарий для Pattern Lens, API, ИИ-агента или учебного продукта с прозрачным происхождением данных."]
+    ],
+    partnershipsTitle: "Как можно работать вместе",
+    partnerships: [
+      ["Разбор идеи", "Коротко сопоставим задачу с тем, что уже есть в Metkagram, и определим полезный следующий шаг."],
+      ["Ограниченный пилот", "Зафиксируем аудиторию, результат, срок, границы лицензии и критерий успеха до начала работы."],
+      ["Исследование или обучение", "Проведём воспроизводимый эксперимент, учебный модуль или проверку качества с явной атрибуцией."],
+      ["Данные и технологии", "Проверим интеграцию, экспорт, инструменты качества или новый интерфейс без передачи закрытых данных учащихся."]
+    ],
+    briefTitle: "Что прислать",
+    briefIntro: "Не нужен готовый проектный документ. Достаточно трёх коротких пунктов.",
+    brief: [
+      ["01", "Контекст", "Кто столкнулся с задачей и что сейчас не работает?"],
+      ["02", "Идея", "Какой небольшой результат стоит попробовать получить вместе?"],
+      ["03", "Сигнал", "По чему мы поймём, что пилот оказался полезным?"]
+    ],
+    boundariesTitle: "Границы сотрудничества",
+    boundaries: "Основные учебные материалы остаются доступными бесплатно. Партнёры не управляют выводами исследований и редакционными решениями; вклад, лицензия и происхождение данных обозначаются прозрачно.",
+    detailsLink: "Форматы партнёрства и финансирования",
+    researchLink: "Исследовательская программа",
+    roadmapLink: "Открытая дорожная карта"
+  } : {
+    eyebrow: "Metkagram · ideas and partnerships",
+    title: "Bring an idea we can test.",
+    intro: "If you see a useful direction for Metkagram, propose it. It might be a learning format, research question, new language, dataset, or integration—we will start with a small outcome instead of a vague collaboration.",
+    action: "Propose an idea",
+    signalLabel: "A useful starting point",
+    signalTitle: "One problem. One next step. One success signal.",
+    ideasTitle: "Where an idea can help",
+    ideas: [
+      ["Learning scenario", "A concrete learner, teacher, or course-author problem where phrases and patterns could shorten the path to use."],
+      ["Research question", "A hypothesis about annotation, retrieval, or pattern transfer that can be tested against a clear measure."],
+      ["Language or content", "A new collection, language, example set, or editorial review that improves the quality of the open corpus."],
+      ["Tool or integration", "A Pattern Lens, API, AI-agent, or learning-product workflow with transparent data provenance."]
+    ],
+    partnershipsTitle: "Ways to work together",
+    partnerships: [
+      ["Idea review", "We will match the problem against what already exists in Metkagram and identify a useful next step."],
+      ["Bounded pilot", "We will agree on the audience, outcome, time frame, licence boundaries, and success criterion before work begins."],
+      ["Research or teaching", "Run a reproducible study, learning module, or quality review with explicit attribution."],
+      ["Data and technology", "Test an integration, export, quality tool, or interface without exchanging learner-private data."]
+    ],
+    briefTitle: "What to send",
+    briefIntro: "You do not need a finished project brief. Three short points are enough.",
+    brief: [
+      ["01", "Context", "Who has the problem, and what is not working today?"],
+      ["02", "Idea", "What small outcome should we try to produce together?"],
+      ["03", "Signal", "How will we know that the pilot was useful?"]
+    ],
+    boundariesTitle: "Collaboration boundaries",
+    boundaries: "Core learning materials remain free to access. Partners do not control research findings or editorial decisions; contributions, licence terms, and data provenance are made explicit.",
+    detailsLink: "Partnership and funding formats",
+    researchLink: "Research programme",
+    roadmapLink: "Open roadmap"
+  };
+  const body = `<article class="ideas-page"><section class="ideas-hero section-pad"><div><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p><a class="primary-link" href="/${locale}/contact/">${c.action} <span aria-hidden="true">→</span></a></div><aside class="ideas-signal"><span>${c.signalLabel}</span><strong>${c.signalTitle}</strong></aside></section><section class="ideas-section section-pad ruled" aria-labelledby="ideas-title"><div><p class="eyebrow">01 · ${c.ideasTitle}</p><h2 id="ideas-title">${c.ideasTitle}</h2></div><div class="ideas-card-grid">${c.ideas.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><h3>${title}</h3><p>${detail}</p></article>`).join("")}</div></section><section class="ideas-section section-pad ruled" aria-labelledby="partnerships-title"><div><p class="eyebrow">02 · ${c.partnershipsTitle}</p><h2 id="partnerships-title">${c.partnershipsTitle}</h2></div><div class="ideas-card-grid ideas-card-grid--partnerships">${c.partnerships.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><h3>${title}</h3><p>${detail}</p></article>`).join("")}</div></section><section class="ideas-brief section-pad ruled"><div><p class="eyebrow">03 · ${c.briefTitle}</p><h2>${c.briefTitle}</h2><p>${c.briefIntro}</p></div><ol>${c.brief.map(([index, title, detail]) => `<li><span>${index}</span><div><h3>${title}</h3><p>${detail}</p></div></li>`).join("")}</ol></section><section class="ideas-boundaries section-pad ruled"><div><p class="eyebrow">04 · ${c.boundariesTitle}</p><h2>${c.boundariesTitle}</h2></div><div><p class="lede">${c.boundaries}</p><nav class="download-list"><a href="/${locale}/support/">${c.detailsLink} →</a><a href="/${locale}/research/">${c.researchLink} →</a><a href="/${locale}/roadmap/">${c.roadmapLink} →</a></nav></div></section></article>`;
+  const title = ru ? "Идеи и партнёрства с Metkagram" : "Ideas and partnerships with Metkagram";
+  return layout({ locale, pathname, title, description: c.intro, body: `${body}${shareBar(locale, pathname, title)}`, pageType: "AboutPage", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Metkagram", url: SITE_URL, email: ATTRIBUTION.contact_email }] });
+}
+
 export function supportPage(locale, counts) {
   const ru = locale === "ru";
   const pathname = `/${locale}/support/`;
   const c = ru ? {
-    eyebrow: "Metkagram · партнёрство и финансирование", title: "Помогите превратить открытый языковой корпус в проверяемую учебную систему.", intro: "Metkagram уже объединяет размеченный контент, повторно используемые паттерны, статический API и приложения. Мы ищем инвесторов и партнёров для проверки метода, редакционного масштабирования и выхода на новые языки — без ложных заявлений о достигнутой аудитории.", snapshotTitle: "Проект сегодня", thesisTitle: "Почему проект может масштабироваться", thesis: [["Структурированный актив", "Ценность хранится не в отдельных страницах, а в версионированном корпусе, схеме разметки и связях между предложениями, паттернами и наборами."], ["Два канала продукта", "Один и тот же материал работает как учебный интерфейс для людей и как машиночитаемый набор данных для агентов и исследователей."], ["Статическая экономика", "Основной сайт работает без runtime-бэкенда: публикация воспроизводима, обслуживание недорого, а контент остаётся доступным офлайн и на GitHub Pages."], ["Локализация по контракту", "Новые языки добавляются через единые поля, валидаторы и fallback на английский, а не через копирование интерфейса вручную."]], prioritiesTitle: "На что пойдёт следующий ресурс", priorities: [["01", "Проверка метода", "Пилотное исследование с заранее зарегистрированными гипотезами, контрольными условиями и открытым отчётом."], ["02", "Редакционное качество", "Лингвистическая проверка корпуса, согласие разметчиков и исправление слабых или искусственных примеров."], ["03", "Новые языки", "Локализационный pipeline, языковые правила и первый дополнительный целевой язык после English и German."], ["04", "Удержание учащихся", "Личные маршруты, активное извлечение и измеримые циклы возвращения к паттернам."]], modelsTitle: "Форматы участия", ways: [["Инвестиционный разговор", "Обсудить финансирование этапа, показатели успеха, структуру сделки и границы открытой части проекта."], ["Исследовательское партнёрство", "Провести учебный или NLP-эксперимент на корпусе с воспроизводимой методикой и явной атрибуцией."], ["Контент и экспертиза", "Помочь с редактурой, лингвистической проверкой, сценариями использования или новыми языковыми коллекциями."], ["Технологическое партнёрство", "Поддержать API, агентские интеграции, инструменты качества данных, доступность или хостинг."]], promiseTitle: "Что остаётся защищённым", promise: ["Основные учебные материалы остаются доступными бесплатно.", "Спонсоры не получают права менять результаты исследований, разметку или рекомендации под свои интересы.", "Партнёрства и вклад обозначаются прозрачно; данные сохраняют происхождение и атрибуцию.", "Показатели аудитории, эффекта и выручки публикуются только тогда, когда их можно подтвердить."], contactTitle: "Начнём с конкретного предложения", contact: "Напишите MetalHatsCats в LinkedIn: кто вы, какой ресурс или компетенцию предлагаете и какой результат хотите получить. В ответ мы предложим подходящий этап, артефакт и показатель успеха.", contactLink: "Обсудить инвестиции или партнёрство", sourceLink: "Проверить открытый репозиторий"
+    eyebrow: "Metkagram · партнёрство и финансирование", title: "Помогите превратить открытый языковой корпус в проверяемую учебную систему.", intro: "Metkagram уже объединяет размеченный контент, повторно используемые паттерны, статический API и приложения. Мы ищем инвесторов и партнёров для проверки метода, редакционного масштабирования и выхода на новые языки — без ложных заявлений о достигнутой аудитории.", snapshotTitle: "Проект сегодня", thesisTitle: "Почему проект может масштабироваться", thesis: [["Структурированный актив", "Ценность хранится не в отдельных страницах, а в версионированном корпусе, схеме разметки и связях между предложениями, паттернами и наборами."], ["Два канала продукта", "Один и тот же материал работает как учебный интерфейс для людей и как машиночитаемый набор данных для агентов и исследователей."], ["Статическая экономика", "Основной сайт работает без runtime-бэкенда: публикация воспроизводима, обслуживание недорого, а контент остаётся доступным офлайн и на GitHub Pages."], ["Локализация по контракту", "Новые языки добавляются через единые поля, валидаторы и fallback на английский, а не через копирование интерфейса вручную."]], prioritiesTitle: "На что пойдёт следующий ресурс", priorities: [["01", "Проверка метода", "Пилотное исследование с заранее зарегистрированными гипотезами, контрольными условиями и открытым отчётом."], ["02", "Редакционное качество", "Лингвистическая проверка корпуса, согласие разметчиков и исправление слабых или искусственных примеров."], ["03", "Новые языки", "Локализационный pipeline, языковые правила и первый дополнительный целевой язык после English и German."], ["04", "Удержание учащихся", "Личные маршруты, активное извлечение и измеримые циклы возвращения к паттернам."]], modelsTitle: "Форматы участия", ways: [["Инвестиционный разговор", "Обсудить финансирование этапа, показатели успеха, структуру сделки и границы открытой части проекта."], ["Исследовательское партнёрство", "Провести учебный или NLP-эксперимент на корпусе с воспроизводимой методикой и явной атрибуцией."], ["Контент и экспертиза", "Помочь с редактурой, лингвистической проверкой, сценариями использования или новыми языковыми коллекциями."], ["Технологическое партнёрство", "Поддержать API, агентские интеграции, инструменты качества данных, доступность или хостинг."]], promiseTitle: "Что остаётся защищённым", promise: ["Основные учебные материалы остаются доступными бесплатно.", "Спонсоры не получают права менять результаты исследований, разметку или рекомендации под свои интересы.", "Партнёрства и вклад обозначаются прозрачно; данные сохраняют происхождение и атрибуцию.", "Показатели аудитории, эффекта и выручки публикуются только тогда, когда их можно подтвердить."], contactTitle: "Начнём с конкретного предложения", contact: "Откройте контакты Metkagram и выберите email или LinkedIn. Укажите, кто вы, какой ресурс или компетенцию предлагаете и какой результат хотите получить — в ответ мы предложим подходящий этап, артефакт и показатель успеха.", contactLink: "Обсудить инвестиции или партнёрство", sourceLink: "Проверить открытый репозиторий"
   } : {
-    eyebrow: "Metkagram · partnerships and funding", title: "Turn an open language corpus into a testable learning system.", intro: "Metkagram already combines annotated content, reusable patterns, a static API and mobile apps. We are looking for investors and partners to validate the method, scale editorial quality and expand to new languages—without inventing traction claims.", snapshotTitle: "Project snapshot", thesisTitle: "Why this can compound", thesis: [["Structured asset", "Value lives beyond individual pages in a versioned corpus, annotation schema and links between sentences, patterns and study sets."], ["Two product surfaces", "The same material works as a learning interface for people and as machine-readable data for agents and researchers."], ["Static economics", "The core site needs no runtime backend: publication is reproducible, maintenance stays lean, and content remains available on GitHub Pages."], ["Localization by contract", "New languages can enter through shared fields, validators and English fallback rules instead of copied interfaces."]], prioritiesTitle: "What the next resources unlock", priorities: [["01", "Method validation", "A preregistered pilot with comparison conditions, defined outcomes and a public report."], ["02", "Editorial quality", "Linguistic review, inter-annotator agreement and correction of weak or artificial examples."], ["03", "New languages", "A localization pipeline, language-specific rules and the first target language beyond English and German."], ["04", "Learner retention", "Personal paths, active retrieval and measurable return loops around useful patterns."]], modelsTitle: "Ways to participate", ways: [["Investment conversation", "Discuss milestone funding, success measures, deal structure and the boundary of the open project."], ["Research partnership", "Run a learning or NLP experiment on the corpus with a reproducible approach and clear attribution."], ["Content and expertise", "Contribute editorial work, linguistic review, use cases or new language collections."], ["Technology partnership", "Support API access, agent integrations, data-quality tooling, accessibility or hosting."]], promiseTitle: "What stays protected", promise: ["Core learning materials remain free to access.", "Sponsors do not receive the right to alter research findings, annotations or recommendations for their own interests.", "Partnerships and contributions are acknowledged transparently; data keeps its provenance and attribution.", "Audience, efficacy and revenue metrics are published only when they can be verified."], contactTitle: "Start with a concrete proposal", contact: "Message MetalHatsCats on LinkedIn with who you are, the resource or expertise you can contribute and the outcome you want. We will reply with a suitable milestone, artifact and measure of success.", contactLink: "Discuss investment or partnership", sourceLink: "Inspect the open repository"
+    eyebrow: "Metkagram · partnerships and funding", title: "Turn an open language corpus into a testable learning system.", intro: "Metkagram already combines annotated content, reusable patterns, a static API and mobile apps. We are looking for investors and partners to validate the method, scale editorial quality and expand to new languages—without inventing traction claims.", snapshotTitle: "Project snapshot", thesisTitle: "Why this can compound", thesis: [["Structured asset", "Value lives beyond individual pages in a versioned corpus, annotation schema and links between sentences, patterns and study sets."], ["Two product surfaces", "The same material works as a learning interface for people and as machine-readable data for agents and researchers."], ["Static economics", "The core site needs no runtime backend: publication is reproducible, maintenance stays lean, and content remains available on GitHub Pages."], ["Localization by contract", "New languages can enter through shared fields, validators and English fallback rules instead of copied interfaces."]], prioritiesTitle: "What the next resources unlock", priorities: [["01", "Method validation", "A preregistered pilot with comparison conditions, defined outcomes and a public report."], ["02", "Editorial quality", "Linguistic review, inter-annotator agreement and correction of weak or artificial examples."], ["03", "New languages", "A localization pipeline, language-specific rules and the first target language beyond English and German."], ["04", "Learner retention", "Personal paths, active retrieval and measurable return loops around useful patterns."]], modelsTitle: "Ways to participate", ways: [["Investment conversation", "Discuss milestone funding, success measures, deal structure and the boundary of the open project."], ["Research partnership", "Run a learning or NLP experiment on the corpus with a reproducible approach and clear attribution."], ["Content and expertise", "Contribute editorial work, linguistic review, use cases or new language collections."], ["Technology partnership", "Support API access, agent integrations, data-quality tooling, accessibility or hosting."]], promiseTitle: "What stays protected", promise: ["Core learning materials remain free to access.", "Sponsors do not receive the right to alter research findings, annotations or recommendations for their own interests.", "Partnerships and contributions are acknowledged transparently; data keeps its provenance and attribution.", "Audience, efficacy and revenue metrics are published only when they can be verified."], contactTitle: "Start with a concrete proposal", contact: "Open Metkagram contact options and choose email or LinkedIn. Tell us who you are, the resource or expertise you can contribute and the outcome you want; we will reply with a suitable milestone, artifact and measure of success.", contactLink: "Discuss investment or partnership", sourceLink: "Inspect the open repository"
   };
   const metrics = projectMetrics(counts, locale);
-  const body = `<section class="partner-hero section-pad"><div><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p><a class="primary-link" href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer">${c.contactLink} <span aria-hidden="true">↗</span></a></div><dl class="project-metrics" aria-label="${c.snapshotTitle}">${metrics.map(([, value, label]) => `<div><dt>${value}</dt><dd>${label}</dd></div>`).join("")}</dl></section><section class="partner-thesis section-pad ruled"><div><p class="eyebrow">01 · ${c.thesisTitle}</p><h2>${c.thesisTitle}</h2></div><div>${c.thesis.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${detail}</p></div></article>`).join("")}</div></section><section class="partner-priorities section-pad ruled"><div><p class="eyebrow">02 · ${c.prioritiesTitle}</p><h2>${c.prioritiesTitle}</h2></div><ol>${c.priorities.map(([index, title, detail]) => `<li><span>${index}</span><div><h3>${title}</h3><p>${detail}</p></div></li>`).join("")}</ol></section><section class="support-ways section-pad ruled"><div><p class="eyebrow">03 · ${c.modelsTitle}</p><h2>${c.modelsTitle}</h2></div><div>${c.ways.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${detail}</p></div></article>`).join("")}</div></section><section class="support-promise section-pad ruled"><div><p class="eyebrow">04 · ${c.promiseTitle}</p><h2>${c.promiseTitle}</h2></div><ul>${c.promise.map((item) => `<li>${item}</li>`).join("")}</ul></section><section class="support-contact section-pad ruled"><div><p class="eyebrow">05 · ${c.contactTitle}</p><h2>${c.contactTitle}</h2></div><div><p class="lede">${c.contact}</p><nav class="download-list"><a href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer">${c.contactLink} ↗</a><a href="/${locale}/research/">${ru ? "Открыть исследовательскую программу" : "Read the research programme"} →</a><a href="${ATTRIBUTION.source_repository}">${c.sourceLink} ↗</a></nav></div></section>`;
+  const body = `<section class="partner-hero section-pad"><div><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p><a class="primary-link" href="/${locale}/contact/">${c.contactLink} <span aria-hidden="true">→</span></a></div><dl class="project-metrics" aria-label="${c.snapshotTitle}">${metrics.map(([, value, label]) => `<div><dt>${value}</dt><dd>${label}</dd></div>`).join("")}</dl></section><section class="partner-thesis section-pad ruled"><div><p class="eyebrow">01 · ${c.thesisTitle}</p><h2>${c.thesisTitle}</h2></div><div>${c.thesis.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${detail}</p></div></article>`).join("")}</div></section><section class="partner-priorities section-pad ruled"><div><p class="eyebrow">02 · ${c.prioritiesTitle}</p><h2>${c.prioritiesTitle}</h2></div><ol>${c.priorities.map(([index, title, detail]) => `<li><span>${index}</span><div><h3>${title}</h3><p>${detail}</p></div></li>`).join("")}</ol></section><section class="support-ways section-pad ruled"><div><p class="eyebrow">03 · ${c.modelsTitle}</p><h2>${c.modelsTitle}</h2></div><div>${c.ways.map(([title, detail], index) => `<article><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${title}</h3><p>${detail}</p></div></article>`).join("")}</div></section><section class="support-promise section-pad ruled"><div><p class="eyebrow">04 · ${c.promiseTitle}</p><h2>${c.promiseTitle}</h2></div><ul>${c.promise.map((item) => `<li>${item}</li>`).join("")}</ul></section><section class="support-contact section-pad ruled"><div><p class="eyebrow">05 · ${c.contactTitle}</p><h2>${c.contactTitle}</h2></div><div><p class="lede">${c.contact}</p><nav class="download-list"><a href="/${locale}/contact/">${ru ? "Открыть контакты" : "Open contact options"} →</a><a href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer">${ru ? "LinkedIn MetalHatsCats" : "MetalHatsCats on LinkedIn"} ↗</a><a href="/${locale}/research/">${ru ? "Открыть исследовательскую программу" : "Read the research programme"} →</a><a href="${ATTRIBUTION.source_repository}">${c.sourceLink} ↗</a></nav></div></section>`;
   const title = ru ? "Партнёрство и инвестиции в Metkagram" : "Partner with Metkagram: investment, research and language data";
   return layout({ locale, pathname, title, description: c.intro, body: `${body}${shareBar(locale, pathname, c.title)}`, pageType: "AboutPage", structuredData: [breadcrumbJson(pathname, c.title, locale), { "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Metkagram", url: SITE_URL, knowsAbout: ["Language learning", "Functional language annotation", "Natural language processing", "Open educational data"] }] });
+}
+
+export function contactPage(locale) {
+  const ru = locale === "ru";
+  const pathname = `/${locale}/contact/`;
+  const c = ru ? {
+    eyebrow: "Metkagram · контакты", title: "Начнём с ясного вопроса.", intro: "Напишите о задаче, которая стоит перед вами: обучение, исследование, язык, данные или агентская интеграция. Мы подскажем подходящую точку входа в Metkagram.", channelsTitle: "Выберите удобный канал", emailTitle: "Написать по email", emailDetail: "Лучший путь для конкретного запроса, партнёрства или предложения. Откроется ваше почтовое приложение.", emailAction: "Открыть письмо", linkedinTitle: "Написать в LinkedIn", linkedinDetail: "Подходит для первого профессионального контакта с командой MetalHatsCats.", linkedinAction: "Открыть LinkedIn", preparationTitle: "Чтобы ответ был полезным", preparation: [["01", "Контекст", "Коротко опишите, кто вы и какую задачу решаете."], ["02", "Нужный результат", "Укажите, что хотите обсудить: изучение языка, данные, исследование, партнёрство или AI‑интеграцию."], ["03", "Следующий шаг", "Добавьте ссылку, срок или удобный формат разговора, если они уже известны."]], note: "Не добавляйте в письмо приватные данные учащихся или ключи доступа."
+  } : {
+    eyebrow: "Metkagram · contact", title: "Start with a clear question.", intro: "Tell us about the work in front of you: learning, research, language, data, or an agent integration. We will point you to the right place to begin with Metkagram.", channelsTitle: "Choose the channel that fits", emailTitle: "Write by email", emailDetail: "Best for a specific question, partnership, or proposal. It opens your email app.", emailAction: "Open an email", linkedinTitle: "Message on LinkedIn", linkedinDetail: "A good route for a first professional conversation with the MetalHatsCats team.", linkedinAction: "Open LinkedIn", preparationTitle: "Help us give a useful answer", preparation: [["01", "Context", "Briefly say who you are and what you are trying to do."], ["02", "Desired outcome", "Name the topic: language learning, data, research, partnership, or an AI integration."], ["03", "Next step", "Add a link, time frame, or preferred conversation format if you already have one."],], note: "Please do not include learner-private data or access keys in your message."
+  };
+  const subject = encodeURIComponent(ru ? "Запрос по Metkagram" : "Metkagram inquiry");
+  const body = `<article class="contact-page"><section class="contact-hero section-pad"><p class="eyebrow">${c.eyebrow}</p><h1>${c.title}</h1><p class="lede">${c.intro}</p></section><section class="contact-channels section-pad ruled" aria-labelledby="contact-channels-title"><div><p class="eyebrow">01 · ${c.channelsTitle}</p><h2 id="contact-channels-title">${c.channelsTitle}</h2></div><div class="contact-channel-grid"><a class="contact-channel contact-channel--email" href="mailto:${ATTRIBUTION.contact_email}?subject=${subject}"><span class="contact-channel-index">01</span><h3>${c.emailTitle}</h3><p>${c.emailDetail}</p><strong>${ATTRIBUTION.contact_email} <i aria-hidden="true">→</i></strong><small>${c.emailAction}</small></a><a class="contact-channel contact-channel--linkedin" href="${ATTRIBUTION.contact_url}" target="_blank" rel="noreferrer"><span class="contact-channel-index">02</span><h3>${c.linkedinTitle}</h3><p>${c.linkedinDetail}</p><strong>MetalHatsCats <i aria-hidden="true">↗</i></strong><small>${c.linkedinAction}</small></a></div></section><section class="contact-preparation section-pad ruled"><div><p class="eyebrow">02 · ${c.preparationTitle}</p><h2>${c.preparationTitle}</h2></div><ol>${c.preparation.map(([index, title, detail]) => `<li><span>${index}</span><div><h3>${title}</h3><p>${detail}</p></div></li>`).join("")}</ol><p class="contact-note">${c.note}</p></section></article>`;
+  return layout({ locale, pathname, title: ru ? "Контакты Metkagram" : "Contact Metkagram", description: c.intro, body: `${body}${shareBar(locale, pathname, ru ? "Контакты Metkagram" : "Contact Metkagram")}`, pageType: "ContactPage", structuredData: [breadcrumbJson(pathname, ru ? "Контакты" : "Contact", locale)] });
 }
 
 export function historyPage(locale) {
@@ -732,7 +869,7 @@ export function historyPage(locale) {
   const pathname = `/${locale}/history/`;
   const chapters = [["01", t.historyMobileTitle, t.historyMobileDetail], ["02", t.historyIdeaTitle, t.historyIdeaDetail], ["03", t.historyWebTitle, t.historyWebDetail]];
   const body = `<section class="history-head section-pad"><p class="eyebrow">${t.historyEyebrow}</p><h1>${t.historyTitle}</h1><p class="lede">${t.historyIntro}</p></section><section class="history-timeline section-pad ruled">${chapters.map(([index, title, detail]) => `<article><span>${index}</span><div><h2>${title}</h2><p>${detail}</p></div></article>`).join("")}</section><section class="history-sources section-pad ruled"><p class="eyebrow">${t.historySources}</p><nav><a href="https://metalhatscats.com/products/metkagram">${t.historyProductSource} ↗</a><a href="https://play.google.com/store/apps/details?id=app.metkagram.android">${t.historyGoogleSource} ↗</a><a href="https://apps.apple.com/co/app/tarjetas-gram%C3%A1tica-metkagram/id6502211918">${t.historyAppleSource} ↗</a></nav></section>`;
-  return layout({ locale, pathname, title: locale === "en" ? "The history of Metkagram" : "История Metkagram", description: t.historyIntro, body: `${body}${shareBar(locale, pathname, t.historyTitle)}`, structuredData: [breadcrumbJson(pathname, t.history, locale), { "@context": "https://schema.org", "@type": "AboutPage", name: t.historyTitle, url: `${SITE_URL}${pathname}` }] });
+  return layout({ locale, pathname, title: locale === "en" ? "The history of Metkagram" : "История Metkagram", description: t.historyIntro, body: `${body}${shareBar(locale, pathname, t.historyTitle)}`, pageType: "AboutPage", structuredData: [breadcrumbJson(pathname, t.history, locale)] });
 }
 
 const API_URL = `${SITE_URL}/api/v1`;
@@ -762,7 +899,7 @@ export function aiPage(locale, content, counts, apiRoutes) {
     ["GET", `${API_URL}/openapi.json`, en ? "OpenAPI spec" : "Спецификация OpenAPI", true],
     ["GET", `${API_URL}/mcp-server.json`, en ? "MCP tool spec" : "Спецификация инструментов MCP", true],
     ["GET", `${API_URL}/attribution.json`, en ? "Attribution policy" : "Политика атрибуции", true],
-  ].map(([method, url, desc, linked]) => `<tr><td><code>${method}</code></td><td><code>${linked ? `<a href="${url}">${url}</a>` : escapeHtml(url)}</code></td><td>${desc}</td></tr>`).join("");
+  ].map(([method, url, desc, linked]) => `<tr><td><code>${method}</code></td><td><code class="api-url">${linked ? `<a href="${url}">${url}</a>` : escapeHtml(url)}</code></td><td>${desc}</td></tr>`).join("");
 
   const datasets = [
     { id: "patterns", label: en ? "Advanced patterns" : "Продвинутые паттерны", count: counts.advancedPatterns, url: `${API_URL}/patterns.json`, download: `${API_URL}/download/full-patterns.json`, schema: `${API_URL}/schemas/pattern.json` },
@@ -779,7 +916,7 @@ export function aiPage(locale, content, counts, apiRoutes) {
     ["ChatGPT / Claude / Gemini", `${API_URL}/patterns/index.json`, en ? "Fetch summaries, then retrieve /patterns/{id}.json for details." : "Загрузите сводки, затем получите /patterns/{id}.json для деталей."],
     ["Codex & custom agents", `${API_URL}/openapi.json`, en ? "Generate clients from the OpenAPI spec." : "Генерируйте клиенты из спецификации OpenAPI."],
     ["MCP clients", `${API_URL}/mcp-server.json`, en ? "Resolve tool calls by fetching the static URLs in the spec." : "Разрешайте вызовы инструментов, загружая статические URL из спецификации."],
-  ].map(([tool, url, desc]) => `<tr><td>${tool}</td><td><code><a href="${url}">${url}</a></code></td><td>${desc}</td></tr>`).join("");
+  ].map(([tool, url, desc]) => `<tr><td>${tool}</td><td><code class="api-url"><a href="${url}">${url}</a></code></td><td>${desc}</td></tr>`).join("");
 
   const mcpCode = `// MCP tool call resolved statically
 const tool = "metkagram_get_pattern";
@@ -816,7 +953,7 @@ mcp_servers:
     ? "Find three B2–C1 patterns for making a polite request. Give examples, Russian translations and the canonical Metkagram source for each."
     : "Найди три паттерна B2–C1 для вежливой просьбы. Дай примеры, переводы на русский и канонический источник Metkagram для каждого.";
 
-  const body = `<section class="page-head section-pad"><p class="eyebrow">${t.forAiDevelopers}</p><h1>${title}</h1><p class="lede">${intro}</p><div class="ai-status"><a href="${API_URL}/index.json"><span>API index</span><code>${API_URL}/index.json</code></a><a href="${API_URL}/openapi.json"><span>OpenAPI</span><code>${API_URL}/openapi.json</code></a><a href="${API_URL}/mcp-server.json"><span>MCP</span><code>${API_URL}/mcp-server.json</code></a></div></section>
+  const body = `<section class="page-head section-pad ai-page-head"><p class="eyebrow">${t.forAiDevelopers}</p><h1>${title}</h1><p class="lede">${intro}</p><div class="ai-status" aria-label="API entry points"><a href="${API_URL}/index.json"><span>API index</span><code>${API_URL}/index.json</code></a><a href="${API_URL}/openapi.json"><span>OpenAPI</span><code>${API_URL}/openapi.json</code></a><a href="${API_URL}/mcp-server.json"><span>MCP</span><code>${API_URL}/mcp-server.json</code></a></div></section>
 
 <section class="ai-section section-pad ruled" id="datasets"><div><p class="eyebrow">01 · ${t.aiDatasets}</p><h2>${t.aiDatasets}</h2></div><div class="dataset-grid">${datasets}</div></section>
 
@@ -868,7 +1005,7 @@ mcp_servers:
 
 export function gatewayPage() {
   const body = `<section class="gateway"><header class="gateway-header"><a class="wordmark" href="/ru/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a><p>Phrase-first language practice</p></header><div class="gateway-stage"><div class="gateway-copy"><p class="eyebrow">Metkagram</p><h1>Language lives<br>in phrases.</h1><p class="lede">Read one complete thought. Let its structure become clear. Use it again when you need it.</p><nav aria-label="Choose interface language"><a href="/ru/" lang="ru"><strong>Русский</strong><span>Открыть главную <i aria-hidden="true">→</i></span></a><a href="/en/" lang="en"><strong>English</strong><span>Open home <i aria-hidden="true">→</i></span></a></nav></div><figure class="gateway-sentence" aria-label="A sentence read one word at a time"><figcaption>READ IT AS ONE THOUGHT</figcaption><p aria-label="I want to make this phrase mine."><span style="--delay: 0s">I</span><span style="--delay: .55s">want</span><span style="--delay: 1.1s">to</span><span style="--delay: 1.65s">make</span><span style="--delay: 2.2s">this</span><span style="--delay: 2.75s">phrase</span><span style="--delay: 3.3s">mine.</span></p><small>01 / 01</small></figure></div><footer><span>Metkagram · B2–C1</span><a href="https://github.com/metkagram/metkagram.github.io">GitHub</a><a href="/llms.txt">llms.txt</a></footer></section>`;
-  return layout({ locale: "en", pathname: "/", title: "Choose your Metkagram language experience", description: "Choose English or Russian, then explore annotated English and German phrases and reusable language patterns.", body, root: true, bodyClass: "gateway-body", structuredData: [{ "@context": "https://schema.org", "@type": "WebSite", name: "Metkagram", url: SITE_URL, inLanguage: ["en", "ru"] }] });
+  return layout({ locale: "en", pathname: "/", title: "Choose your Metkagram language experience", description: "Choose English or Russian, then explore annotated English and German phrases and reusable language patterns.", body, root: true, bodyClass: "gateway-body" });
 }
 
 export function notFoundPage(locale = "en") {

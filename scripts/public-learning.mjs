@@ -4,6 +4,7 @@ import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, targetMeta } from "../src/i18n.mjs";
 import { intentById } from "../src/intents.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 import {
   classifyReasoningSentence,
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
@@ -178,7 +179,7 @@ function relationBlock(locale, relation, patternById) {
     relation.strength === "direct" ? "direct structural cue" : relation.strength === "prompt" ? "communicative prompt" : "supported reasoning cue",
     relation.strength === "direct" ? "прямой структурный сигнал" : relation.strength === "prompt" ? "коммуникативная задача" : "поддержанный логический сигнал"
   );
-  return `<div class="sentence-reasoning-link" data-reasoning-move="${escapeHtml(relation.reasoning_move)}" data-intent="${escapeHtml(relation.intent_id)}" data-pattern="${escapeHtml(relation.pattern_id)}" data-strength="${escapeHtml(relation.strength)}"><p><strong>${escapeHtml(relation.reasoning_move)}</strong> · <a href="/${locale}/practice/intents/#intent-${escapeHtml(relation.intent_id)}">${escapeHtml(intentTitle(intent, locale))}</a> → <a href="/${locale}/practice/${relation.pattern_id.toLowerCase()}/#reasoning-move">${escapeHtml(patternFormula(pattern, relation.language))}</a></p><small>${escapeHtml(strength)} · ${escapeHtml(relation.evidence)}</small></div>`;
+  return `<div class="sentence-reasoning-link" data-reasoning-move="${escapeHtml(relation.reasoning_move)}" data-intent="${escapeHtml(relation.intent_id)}" data-pattern="${escapeHtml(relation.pattern_id)}" data-strength="${escapeHtml(relation.strength)}"><p><strong>${escapeHtml(relation.reasoning_move)}</strong> · <a href="/${locale}/practice/intents/#intent-${escapeHtml(relation.intent_id)}">${escapeHtml(intentTitle(intent, locale))}</a> → <a href="${patternPath(locale, relation.pattern_id)}#reasoning-move">${escapeHtml(patternFormula(pattern, relation.language))}</a></p><small>${escapeHtml(strength)} · ${escapeHtml(relation.evidence)}</small></div>`;
 }
 
 function injectSentenceLinks(html, locale, documentRelation, patternById) {
@@ -189,7 +190,7 @@ function injectSentenceLinks(html, locale, documentRelation, patternById) {
     bySentence.get(relation.sentence_index).push(relation);
   }
   for (const [sentenceIndex, relations] of bySentence) {
-    const startMarker = `<article class="annotation-row" id="sentence-${sentenceIndex}">`;
+    const startMarker = `<article class="annotation-row" id="sentence-${sentenceIndex}"`;
     const start = result.indexOf(startMarker);
     if (start < 0) continue;
     const end = result.indexOf("</article>", start);
@@ -386,7 +387,7 @@ function updateHtml(content, graph) {
     }
 
     for (const pattern of content.advancedPatterns) {
-      const file = path.join(DIST, locale, "practice", pattern.id.toLowerCase(), "index.html");
+      const file = path.join(DIST, patternPath(locale, pattern).slice(1), "index.html");
       const current = fs.readFileSync(file, "utf8");
       fs.writeFileSync(file, enhancePattern(current, locale, pattern.id, graph));
     }

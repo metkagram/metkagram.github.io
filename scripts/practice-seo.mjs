@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { loadContent } from "../src/content.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
+import { patternPath, studySetPath, studySetSlug, studySetUrl } from "../src/seo-slugs.mjs";
 
 const DIST = path.join(process.cwd(), "dist");
 const LOCALES = ["en", "ru"];
@@ -127,7 +128,7 @@ function exampleSection(locale, set, patterns) {
     const detail = ru
       ? `${en.example}${de?.example ? ` · DE: ${de.example}` : ""}`
       : `${en.example}${de?.formula ? ` · German parallel: ${de.formula}` : ""}`;
-    return `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(detail)}</small></span><span aria-hidden="true">↗</span></a>`;
+    return `<a href="${patternPath(locale, pattern)}"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(detail)}</small></span><span aria-hidden="true">↗</span></a>`;
   }).join("");
 
   return `<section id="practice-set-guide" class="page-head section-pad compact ruled"><p class="eyebrow">01 · ${ru ? "Как использовать набор" : "How to use this set"}</p><h2>${ru ? "Сначала смысл, затем форма" : "Start from the communication job"}</h2><p>${escapeHtml(ru ? set.description_ru || set.description : set.description)}</p><p>${ru ? "Просмотрите модель, попробуйте закончить собственную фразу до открытия примера, затем сравните английскую конструкцию с немецкой параллелью. Это превращает список в практику извлечения, а не в чтение справочника." : "Read the frame, try to complete your own sentence before opening an example, then compare the English structure with its German parallel. The point is retrieval and choice, not passive list reading."}</p></section><section class="page-head section-pad compact"><p class="eyebrow">02 · ${ru ? "Примеры" : "Representative patterns"}</p><h2>${ru ? "С чего начать" : "Start with these reusable frames"}</h2><p>${ru ? `Редакционная выборка из ${patterns.length} моделей набора.` : `A compact sample from the ${patterns.length} patterns in this study set.`}</p></section><section class="pattern-index section-pad">${items}</section><section class="page-head section-pad compact ruled"><p class="eyebrow">03 · ${ru ? "Полный набор" : "Complete set"}</p><h2>${ru ? "Все модели" : "Browse every pattern"}</h2><p>${ru ? "Ниже находится полный канонический список. Каждая карточка имеет стабильный ID и отдельный URL." : "The canonical list follows below. Every pattern has a stable ID and its own page for examples, translation, and reuse."}</p></section>`;
@@ -138,11 +139,11 @@ function relatedSection(locale, content, set) {
   const related = relatedSets(content, set);
   if (!related.length) return "";
   const pathItem = learningPathFor(content, set.id);
-  return `<section class="page-head section-pad compact ruled"><p class="eyebrow">04 · ${ru ? "Продолжить" : "Continue learning"}</p><h2>${escapeHtml(ru ? pathItem?.title_ru || "Связанные наборы" : pathItem?.title_en || "Related study sets")}</h2><p>${ru ? "Соседние наборы из того же учебного маршрута." : "Nearby study sets from the same learning path."}</p></section><section class="document-index section-pad">${related.map((item, index) => `<a href="/${locale}/practice/set/${item.id.toLowerCase()}/"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(ru ? item.title_ru : item.title_en)}</strong><small>${escapeHtml(ru ? item.description_ru || item.description : item.description)}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>`;
+  return `<section class="page-head section-pad compact ruled"><p class="eyebrow">04 · ${ru ? "Куда дальше" : "Continue"}</p><h2>${escapeHtml(ru ? pathItem?.title_ru || "Связанные сеты" : pathItem?.title_en || "Related sets")}</h2><p>${ru ? "Следующий полезный шаг из того же учебного маршрута." : "A useful next step from the same learning path."}</p></section><section class="document-index section-pad">${related.map((item, index) => `<a href="${studySetPath(locale, item)}"><span class="document-number">${String(index + 1).padStart(2, "0")}</span><span><strong>${escapeHtml(ru ? item.title_ru : item.title_en)}</strong><small>${escapeHtml(ru ? item.description_ru || item.description : item.description)}</small></span><span aria-hidden="true">↗</span></a>`).join("")}</section>`;
 }
 
 function patchSetPage(locale, content, set, patterns) {
-  const relative = `${locale}/practice/set/${set.id.toLowerCase()}/index.html`;
+  const relative = `${locale}/practice/sets/${studySetSlug(set)}/index.html`;
   if (!fs.existsSync(full(relative))) throw new Error(`Missing study set page: ${relative}`);
   let html = read(relative);
   const title = searchTitle(locale, set);
@@ -159,7 +160,7 @@ function patchSetPage(locale, content, set, patterns) {
     if (related) html = html.replace("</main>", `${related}</main>`);
   }
   write(relative, html);
-  return { route: `/${locale}/practice/set/${set.id.toLowerCase()}/`, title, description };
+  return { route: studySetPath(locale, set), title, description, slug: studySetSlug(set) };
 }
 
 function patchPracticeIndex(locale, content) {
@@ -169,7 +170,7 @@ function patchPracticeIndex(locale, content) {
   const ru = locale === "ru";
   const byId = new Map(content.studySets.sets.map((set) => [set.id, set]));
   const paths = content.studySets.learningPaths.map((pathItem, index) => {
-    const links = (pathItem.set_ids || []).map((id) => byId.get(id)).filter(Boolean).map((set) => `<a href="/${locale}/practice/set/${set.id.toLowerCase()}/">${escapeHtml(ru ? set.title_ru : set.title_en)}</a>`).join(" · ");
+    const links = (pathItem.set_ids || []).map((id) => byId.get(id)).filter(Boolean).map((set) => `<a href="${studySetPath(locale, set)}">${escapeHtml(ru ? set.title_ru : set.title_en)}</a>`).join(" · ");
     return `<li><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${escapeHtml(ru ? pathItem.title_ru : pathItem.title_en)}</h3><p>${links}</p></div></li>`;
   }).join("");
   const section = `<section id="learning-paths" class="research-questions section-pad ruled"><div><p class="eyebrow">${ru ? "Учиться по маршруту" : "Study by learning path"}</p><h2>${ru ? "От задачи к набору, от набора к модели" : "From learning goal to set to pattern"}</h2><p>${ru ? `${content.studySets.sets.length} учебных наборов сгруппированы в ${content.studySets.learningPaths.length} маршрутов. Начинайте отсюда, если не знаете ID конкретного паттерна.` : `${content.studySets.sets.length} study sets are grouped into ${content.studySets.learningPaths.length} learning paths. Start here when you know what you want to practise but not a pattern ID.`}</p></div><ol>${paths}</ol></section>`;
@@ -179,14 +180,14 @@ function patchPracticeIndex(locale, content) {
 }
 
 function patchPatternContext(locale, content, pattern, setById) {
-  const relative = `${locale}/practice/${pattern.id.toLowerCase()}/index.html`;
+  const relative = `${patternPath(locale, pattern).slice(1)}index.html`;
   if (!fs.existsSync(full(relative))) return;
   let html = read(relative);
   if (html.includes('id="pattern-set-context"')) return;
   const set = setById.get(pattern.set_id);
   if (!set) return;
   const ru = locale === "ru";
-  const block = `<aside id="pattern-set-context" class="section-pad ruled"><p class="eyebrow">${ru ? "Учебный набор" : "Study set"}</p><p>${ru ? "Этот паттерн входит в" : "This pattern belongs to"} <a href="/${locale}/practice/set/${set.id.toLowerCase()}/"><strong>${escapeHtml(ru ? set.title_ru : set.title_en)}</strong></a>. ${escapeHtml(ru ? set.description_ru || set.description : set.description)}</p></aside>`;
+  const block = `<aside id="pattern-set-context" class="section-pad ruled"><p class="eyebrow">${ru ? "Тематический сет" : "Topic set"}</p><p>${ru ? "Этот паттерн входит в сет" : "This pattern belongs to"} <a href="${studySetPath(locale, set)}"><strong>${escapeHtml(ru ? set.title_ru : set.title_en)}</strong></a>. ${escapeHtml(ru ? set.description_ru || set.description : set.description)}</p></aside>`;
   html = html.replace("</main>", `${block}</main>`);
   write(relative, html);
 }
@@ -222,7 +223,8 @@ function publishNavigation(content, records) {
         title_ru: set.title_ru,
         description_en: set.description,
         description_ru: set.description_ru || set.description,
-        urls: { en: `${SITE_URL}/en/practice/set/${set.id.toLowerCase()}/`, ru: `${SITE_URL}/ru/practice/set/${set.id.toLowerCase()}/` }
+        slug: studySetSlug(set),
+        urls: { en: studySetUrl("en", set), ru: studySetUrl("ru", set) }
       }))
     }))
   };
@@ -241,7 +243,7 @@ function assertOutput(content) {
   for (const locale of LOCALES) {
     if (!read(`${locale}/practice/index.html`).includes('id="learning-paths"')) throw new Error(`Learning paths missing from ${locale} Practice`);
     for (const set of content.studySets.sets) {
-      const html = read(`${locale}/practice/set/${set.id.toLowerCase()}/index.html`);
+      const html = read(`${locale}/practice/sets/${studySetSlug(set)}/index.html`);
       if (!html.includes('id="practice-set-guide"')) throw new Error(`SEO guide missing for ${locale}/${set.id}`);
     }
   }

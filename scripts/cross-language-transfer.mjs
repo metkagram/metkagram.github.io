@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -54,8 +55,8 @@ function buildMap(patterns, relations) {
         literal_equivalence: false,
         review_basis: "English and German forms are stored in the same reviewed Metkagram canonical pattern record.",
         canonical_urls: {
-          en: `${SITE_URL}/en/practice/${pattern.id.toLowerCase()}/`,
-          ru: `${SITE_URL}/ru/practice/${pattern.id.toLowerCase()}/`,
+          en: patternUrl("en", pattern),
+          ru: patternUrl("ru", pattern),
         },
         related: relation ? {
           contrasts: relation.contrasts.map((item) => item.id),
@@ -137,7 +138,7 @@ function transferCard(locale, item) {
       <details class="faq-list"><summary><strong>${escapeHtml(t.deToEn)}</strong><br>${escapeHtml(item.formula_de)}</summary><div><p><strong>EN:</strong> ${escapeHtml(item.formula_en)}</p><p>${escapeHtml(item.example_en)}</p></div></details>
     </div>
     <p><strong>${escapeHtml(t.function)}:</strong> ${escapeHtml(functionText)}</p>
-    <div class="legal-inline-links"><a href="/${locale}/practice/${item.pattern_id.toLowerCase()}/">${escapeHtml(t.open)}</a>${relationLinks(locale, item, t)}</div>
+    <div class="legal-inline-links"><a href="${patternPath(locale, item.pattern_id)}">${escapeHtml(t.open)}</a>${relationLinks(locale, item, t)}</div>
   </article>`;
 }
 
@@ -157,7 +158,7 @@ function transferPage(locale, map) {
     description: t.intro,
     body: `<section class="section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)}</p><h1>${escapeHtml(t.title)}</h1><p class="lede">${escapeHtml(t.intro)}</p></section>${sections}`,
     pageType: "CollectionPage",
-    structuredData: [{ "@context": "https://schema.org", "@type": "ItemList", name: "Metkagram English German Functional Transfer Map", numberOfItems: map.items.length, itemListElement: map.items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: `${item.pattern_id}: ${item.formula_en} ↔ ${item.formula_de}`, url: `${SITE_URL}/${locale}/practice/${item.pattern_id.toLowerCase()}/` })) }],
+    structuredData: [{ "@context": "https://schema.org", "@type": "ItemList", name: "Metkagram English German Functional Transfer Map", numberOfItems: map.items.length, itemListElement: map.items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: `${item.pattern_id}: ${item.formula_en} ↔ ${item.formula_de}`, url: patternUrl(locale, item.pattern_id) })) }],
   });
 }
 

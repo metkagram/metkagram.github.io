@@ -90,7 +90,7 @@ function injectRuntime() {
             if (!html.includes("data-learning-activity-bridge")) {
               const label = locale === "ru" ? "Локальная активность" : "Local activity";
               const note = locale === "ru" ? "События остаются в этом браузере." : "Events stay in this browser.";
-              const bridge = `<aside data-learning-activity-bridge style="margin:2rem auto;max-width:72rem;padding:1rem 1.1rem;border:1px solid #e1e1db;border-radius:16px"><strong>${label}</strong><p>${note} <a href="/${locale}/activity/">${label} →</a></p></aside>`;
+              const bridge = `<aside class="learning-activity-bridge" data-learning-activity-bridge><strong>${label}</strong><p>${note} <a href="/${locale}/activity/">${label} →</a></p></aside>`;
               html = html.replace("</main>", `${bridge}</main>`);
             }
             fs.writeFileSync(full, html);

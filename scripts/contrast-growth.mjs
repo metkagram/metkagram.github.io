@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -86,7 +87,7 @@ function patternSummary(pattern, locale, label) {
   const detail = locale === "ru"
     ? clean(pattern.reasoning?.what_it_does_ru || pattern.metaphor_ru || pattern.practice?.cue || "")
     : clean(pattern.reasoning?.what_it_does_en || pattern.practice?.cue || pattern.logic || "");
-  return `<article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(label)} · ${escapeHtml(pattern.id)}</p><h2>${escapeHtml(clean(en?.formula || pattern.id))}</h2><p>${escapeHtml(detail)}</p><dl><div><dt>EN</dt><dd>${escapeHtml(clean(en?.formula))}</dd></div><div><dt>DE</dt><dd>${escapeHtml(clean(de?.formula))}</dd></div></dl><a class="text-link" href="/${locale}/practice/${pattern.id.toLowerCase()}/">${escapeHtml(copy(locale).openPattern)} <span aria-hidden="true">→</span></a></article>`;
+  return `<article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(label)} · ${escapeHtml(pattern.id)}</p><h2>${escapeHtml(clean(en?.formula || pattern.id))}</h2><p>${escapeHtml(detail)}</p><dl><div><dt>EN</dt><dd>${escapeHtml(clean(en?.formula))}</dd></div><div><dt>DE</dt><dd>${escapeHtml(clean(de?.formula))}</dd></div></dl><a class="text-link" href="${patternPath(locale, pattern)}">${escapeHtml(copy(locale).openPattern)} <span aria-hidden="true">→</span></a></article>`;
 }
 
 function pairPage(locale, item, patternMap) {
@@ -116,7 +117,7 @@ function pairPage(locale, item, patternMap) {
       learningResourceType: "Pattern comparison",
       url: `${SITE_URL}${pathname}`,
       isAccessibleForFree: true,
-      about: item.patterns.map((id) => ({ "@type": "DefinedTerm", name: id, url: `${SITE_URL}/${locale}/practice/${id.toLowerCase()}/` })),
+      about: item.patterns.map((id) => ({ "@type": "DefinedTerm", name: id, url: patternUrl(locale, id) })),
     }],
   });
 }
@@ -131,7 +132,7 @@ function grammarPage(locale, item, patternMap) {
   const distinction = local(item, "distinction", locale);
   const pathname = `/${locale}/contrasts/${item.id}/`;
   const meaningKey = locale === "ru" ? "meaning_ru" : "meaning_en";
-  const body = `<article class="pattern-reader section-pad"><p class="eyebrow">Metkagram · ${escapeHtml(t.grammar)} · ${escapeHtml(item.pattern_id)}</p><h1>${escapeHtml(title)}</h1><p class="lede"><strong>${escapeHtml(t.question)}:</strong> ${escapeHtml(question)}</p><section class="pattern-variations"><h2>${escapeHtml(t.difference)}</h2><p>${escapeHtml(distinction)}</p></section><section class="pattern-variations"><div class="pattern-comparison-list"><article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.first)}</p><h2>${escapeHtml(item.left.label)}</h2><p>${escapeHtml(item.left[meaningKey])}</p></article><article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.second)}</p><h2>${escapeHtml(item.right.label)}</h2><p>${escapeHtml(item.right[meaningKey])}</p></article></div></section><section class="pattern-variations"><h2>${locale === "ru" ? "Один паттерн, два значения" : "One contrast pattern, two meanings"}</h2><p><strong>EN:</strong> ${escapeHtml(clean(en?.formula))}</p><p><strong>${escapeHtml(t.example)}:</strong> ${escapeHtml(clean(en?.example))}</p><p><strong>DE:</strong> ${escapeHtml(clean(de?.formula))}</p></section><nav class="legal-inline-links"><a href="/${locale}/practice/${item.pattern_id.toLowerCase()}/">${escapeHtml(t.openPattern)}</a><a href="/${locale}/contrasts/">${escapeHtml(t.all)}</a></nav></article>`;
+  const body = `<article class="pattern-reader section-pad"><p class="eyebrow">Metkagram · ${escapeHtml(t.grammar)} · ${escapeHtml(item.pattern_id)}</p><h1>${escapeHtml(title)}</h1><p class="lede"><strong>${escapeHtml(t.question)}:</strong> ${escapeHtml(question)}</p><section class="pattern-variations"><h2>${escapeHtml(t.difference)}</h2><p>${escapeHtml(distinction)}</p></section><section class="pattern-variations"><div class="pattern-comparison-list"><article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.first)}</p><h2>${escapeHtml(item.left.label)}</h2><p>${escapeHtml(item.left[meaningKey])}</p></article><article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.second)}</p><h2>${escapeHtml(item.right.label)}</h2><p>${escapeHtml(item.right[meaningKey])}</p></article></div></section><section class="pattern-variations"><h2>${locale === "ru" ? "Один паттерн, два значения" : "One contrast pattern, two meanings"}</h2><p><strong>EN:</strong> ${escapeHtml(clean(en?.formula))}</p><p><strong>${escapeHtml(t.example)}:</strong> ${escapeHtml(clean(en?.example))}</p><p><strong>DE:</strong> ${escapeHtml(clean(de?.formula))}</p></section><nav class="legal-inline-links"><a href="${patternPath(locale, item.pattern_id)}">${escapeHtml(t.openPattern)}</a><a href="/${locale}/contrasts/">${escapeHtml(t.all)}</a></nav></article>`;
   return layout({
     locale,
     pathname,
@@ -149,7 +150,7 @@ function grammarPage(locale, item, patternMap) {
       url: `${SITE_URL}${pathname}`,
       isAccessibleForFree: true,
       teaches: [item.left.label, item.right.label],
-      about: { "@type": "DefinedTerm", name: item.pattern_id, url: `${SITE_URL}/${locale}/practice/${item.pattern_id.toLowerCase()}/` },
+      about: { "@type": "DefinedTerm", name: item.pattern_id, url: patternUrl(locale, item.pattern_id) },
     }],
   });
 }
@@ -178,7 +179,7 @@ function patchPatternBacklinks(locale, pairItems, grammarItems) {
   for (const item of pairItems) for (const id of item.patterns) add(id, item);
   for (const item of grammarItems) add(item.pattern_id, item);
   for (const [patternId, items] of byPattern) {
-    const file = path.join(DIST, locale, "practice", patternId.toLowerCase(), "index.html");
+    const file = path.join(DIST, patternPath(locale, patternId).slice(1), "index.html");
     if (!fs.existsSync(file)) continue;
     let html = fs.readFileSync(file, "utf8");
     if (html.includes("data-contrast-backlinks")) continue;

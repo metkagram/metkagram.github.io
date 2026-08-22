@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { buildPatternGraph } from "../src/pattern-graph.mjs";
 import { stableHash, wrapRecord } from "../src/provenance.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const DIST = path.resolve("dist");
 const SITE_URL = "https://metkagram.github.io";
@@ -47,7 +48,7 @@ function patchPatternPages(graph) {
 
   for (const node of graph.nodes) {
     for (const locale of ["en", "ru"]) {
-      const file = path.join(DIST, locale, "practice", node.id.toLowerCase(), "index.html");
+      const file = path.join(DIST, patternPath(locale, node.id).slice(1), "index.html");
       if (!fs.existsSync(file)) continue;
       let html = fs.readFileSync(file, "utf8");
       if (html.includes("data-pattern-graph-related")) continue;
@@ -61,7 +62,7 @@ function patchPatternPages(graph) {
       const items = related.map((item) => {
         const label = locale === "ru" ? item.node.title_ru : item.node.formulas.en || item.node.id;
         const meta = `${item.node.reasoning_move} · ${item.relations.map((relation) => relationLabel(relation, locale)).join(" · ")}`;
-        return `<li class="pattern-comparison-card"><a href="/${locale}/practice/${item.id.toLowerCase()}/"><strong>${escapeHtml(label)}</strong><small>${escapeHtml(meta)}</small></a></li>`;
+        return `<li class="pattern-comparison-card"><a href="${patternPath(locale, item.id)}"><strong>${escapeHtml(label)}</strong><small>${escapeHtml(meta)}</small></a></li>`;
       }).join("");
       const section = `<section class="pattern-variations" data-pattern-graph-related><h2>${title}<small>${related.length}</small></h2><p>${intro}</p><ol class="pattern-comparison-list">${items}</ol></section>`;
       const mainClose = html.indexOf("</main>");

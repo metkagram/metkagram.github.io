@@ -1,4 +1,5 @@
 import { SITE_URL } from "./site.mjs";
+import { patternUrl, studySetSlug, studySetUrl } from "./seo-slugs.mjs";
 import { collectionKeys, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion, getReleaseDate, provenance, stableHash, wrapList, wrapRecord } from "./provenance.mjs";
 
@@ -14,13 +15,9 @@ function apiUrl(path) {
   return `${API_URL}${path}`;
 }
 
-function patternPageUrl(id, locale = "en") {
-  return `${SITE_URL}/${locale}/practice/${id.toLowerCase()}/`;
-}
+function patternPageUrl(pattern, locale = "en") { return patternUrl(locale, pattern); }
 
-function setPageUrl(id, locale = "en") {
-  return `${SITE_URL}/${locale}/practice/set/${id.toLowerCase()}/`;
-}
+function setPageUrl(set, locale = "en") { return studySetUrl(locale, set); }
 
 function documentPageUrl(targetKey, collectionKey, id, locale = "en") {
   return `${SITE_URL}/${locale}/explore/${targetKey}/${collectionKey}/${id}/`;
@@ -52,8 +49,8 @@ function patternSummary(pattern) {
     languages: pattern.langs.map((l) => l.lang),
     formula_en: en?.formula || null,
     formula_de: de?.formula || null,
-    canonical_url: patternPageUrl(pattern.id),
-    page_urls: { en: patternPageUrl(pattern.id, "en"), ru: patternPageUrl(pattern.id, "ru") },
+    canonical_url: patternPageUrl(pattern),
+    page_urls: { en: patternPageUrl(pattern, "en"), ru: patternPageUrl(pattern, "ru") },
     api_url: apiUrl(`/patterns/${pattern.id.toLowerCase()}.json`),
   };
 }
@@ -72,7 +69,7 @@ function patternLanguageRecord(pattern, langKey) {
     example: lang.example,
     translation: lang.translation,
     examples: lang.examples,
-    canonical_url: patternPageUrl(pattern.id),
+    canonical_url: patternPageUrl(pattern),
   };
 }
 
@@ -83,7 +80,7 @@ function buildPatternsApi(patterns, files, routes) {
   // Full dataset with per-record provenance
   const fullItems = sortedPatterns.map((pattern) =>
     wrapRecord(pattern, {
-      canonical_url: patternPageUrl(pattern.id),
+      canonical_url: patternPageUrl(pattern),
       record_type: "pattern",
       record_id: pattern.id,
     })
@@ -113,7 +110,7 @@ function buildPatternsApi(patterns, files, routes) {
   // Individual pattern records
   for (const pattern of sortedPatterns) {
     const record = wrapRecord(pattern, {
-      canonical_url: patternPageUrl(pattern.id),
+      canonical_url: patternPageUrl(pattern),
       record_type: "pattern",
       record_id: pattern.id,
     });
@@ -130,6 +127,7 @@ function buildSetsApi(patterns, studySets, files, routes) {
     const setPatterns = patterns.filter((p) => p.set_id === set.id).sort((a, b) => a.id.localeCompare(b.id));
     return {
       id: set.id,
+      slug: studySetSlug(set),
       title_en: set.title_en,
       title_ru: set.title_ru,
       description: set.description,
@@ -139,8 +137,8 @@ function buildSetsApi(patterns, studySets, files, routes) {
       learning_path_ids: studySets.learningPaths
         .filter((path) => path.set_ids.includes(set.id))
         .map((path) => path.id),
-      canonical_url: setPageUrl(set.id),
-      page_urls: { en: setPageUrl(set.id, "en"), ru: setPageUrl(set.id, "ru") },
+      canonical_url: setPageUrl(set),
+      page_urls: { en: setPageUrl(set, "en"), ru: setPageUrl(set, "ru") },
       api_url: apiUrl(`/sets/${set.id.toLowerCase()}.json`),
     };
   });
@@ -159,14 +157,15 @@ function buildSetsApi(patterns, studySets, files, routes) {
       .map(patternSummary);
     const record = {
       ...set,
+      slug: studySetSlug(set),
       pattern_count: setPatterns.length,
       patterns: setPatterns,
-      canonical_url: setPageUrl(set.id),
-      page_urls: { en: setPageUrl(set.id, "en"), ru: setPageUrl(set.id, "ru") },
+      canonical_url: setPageUrl(set),
+      page_urls: { en: setPageUrl(set, "en"), ru: setPageUrl(set, "ru") },
     };
     const filePath = apiPath(`/sets/${set.id.toLowerCase()}.json`);
     files[filePath] = `${JSON.stringify(
-      wrapRecord(record, { canonical_url: setPageUrl(set.id), record_type: "study_set", record_id: set.id }),
+      wrapRecord(record, { canonical_url: setPageUrl(set), record_type: "study_set", record_id: set.id }),
       null,
       2
     )}\n`;
@@ -315,7 +314,7 @@ function buildSearchIndex(patterns, setSummaries, categories, documentSummaries,
       set_id: p.set_id,
       formulas: p.formulas,
       languages: p.langs.map((l) => l.lang),
-      canonical_url: patternPageUrl(p.id),
+      canonical_url: patternPageUrl(p),
       api_url: apiUrl(`/patterns/${p.id.toLowerCase()}.json`),
     })),
     sets: setSummaries,

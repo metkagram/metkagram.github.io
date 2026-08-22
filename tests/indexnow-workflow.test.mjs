@@ -34,5 +34,8 @@ test("IndexNow maps release, rights and citation changes to public pages", () =>
 test("changed reasoning-frame files submit their individual pattern pages", () => {
   assert.ok(workflow.includes("data/reasoning-frames/.*\\.json"));
   assert.ok(workflow.includes("jq -r '.[].id // empty'"));
-  assert.ok(workflow.includes('add_url "$BASE/api/v1/patterns/$pattern_slug.json"'));
+  assert.ok(workflow.includes("pattern_public_slug"));
+  assert.ok(workflow.includes('add_url "$BASE/en/practice/patterns/$pattern_slug/"'));
+  assert.ok(workflow.includes('add_url "$BASE/api/v1/patterns/$pattern_api_id.json"'));
+  assert.equal(workflow.includes('add_url "$BASE/en/practice/$pattern_slug/"'), false);
 });

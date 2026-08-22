@@ -18,6 +18,11 @@ function escapeAttribute(value = "") {
   return value.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
 }
 
+function ensureMeta(html, attribute, name, content) {
+  if (html.includes(`<meta ${attribute}="${name}"`)) return html;
+  return html.replace("</head>", `  <meta ${attribute}="${name}" content="${content}">\n</head>`);
+}
+
 const copy = {
   en: {
     label: "Licensing",
@@ -73,13 +78,25 @@ for (const file of files) {
     const canonical = `${SITE_URL}/${locale}/licensing/`;
     const title = html.match(/<title>([^<]+)<\/title>/)?.[1] || "Metkagram";
     const description = html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "Metkagram licensing and research use";
+    const socialTitle = html.match(/<meta property="og:title" content="([^"]+)">/)?.[1] || title;
 
-    if (!html.includes("assets/social/metkagram-social-preview-1200x630.png")) {
-      html = html.replace(
-        "</head>",
-        `  <meta property="og:image" content="${SOCIAL_PREVIEW}">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="${SOCIAL_PREVIEW}">\n</head>`
-      );
-    }
+    html = ensureMeta(html, "property", "og:type", "website");
+    html = ensureMeta(html, "property", "og:site_name", "Metkagram");
+    html = ensureMeta(html, "property", "og:locale", locale === "ru" ? "ru_RU" : "en_US");
+    html = ensureMeta(html, "property", "og:locale:alternate", locale === "ru" ? "en_US" : "ru_RU");
+    html = ensureMeta(html, "property", "og:title", socialTitle);
+    html = ensureMeta(html, "property", "og:description", description);
+    html = ensureMeta(html, "property", "og:url", canonical);
+    html = ensureMeta(html, "property", "og:image", SOCIAL_PREVIEW);
+    html = ensureMeta(html, "property", "og:image:type", "image/png");
+    html = ensureMeta(html, "property", "og:image:width", "1200");
+    html = ensureMeta(html, "property", "og:image:height", "630");
+    html = ensureMeta(html, "property", "og:image:alt", "Metkagram — annotated language patterns for English and German");
+    html = ensureMeta(html, "name", "twitter:card", "summary_large_image");
+    html = ensureMeta(html, "name", "twitter:title", socialTitle);
+    html = ensureMeta(html, "name", "twitter:description", description);
+    html = ensureMeta(html, "name", "twitter:image", SOCIAL_PREVIEW);
+    html = ensureMeta(html, "name", "twitter:image:alt", "Metkagram — annotated language patterns for English and German");
     if (!html.includes('rel="manifest" href="/assets/web/site.webmanifest"')) {
       html = html.replace("</head>", '  <link rel="manifest" href="/assets/web/site.webmanifest">\n</head>');
     }

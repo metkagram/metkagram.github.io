@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { ATTRIBUTION, getDatasetVersion, wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -34,7 +35,7 @@ function languageRecord(pattern, lang) {
 }
 
 function objectRoute(locale, step, drillMap) {
-  if (step.kind === "pattern") return `/${locale}/practice/${step.id.toLowerCase()}/`;
+  if (step.kind === "pattern") return patternPath(locale, step.id);
   if (step.kind === "contrast") return `/${locale}/contrasts/${step.id}/`;
   return `/${locale}/clinic/#${drillMap.get(step.id).id}`;
 }

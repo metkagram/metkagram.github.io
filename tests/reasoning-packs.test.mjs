@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -49,7 +50,7 @@ test("Pattern Route pages preserve the ordered canonical route", () => {
       let cursor = -1;
       for (const step of pack.steps) {
         let token;
-        if (step.kind === "pattern") token = `/${locale}/practice/${step.id.toLowerCase()}/`;
+        if (step.kind === "pattern") token = patternPath(locale, step.id);
         else if (step.kind === "contrast") token = `/${locale}/contrasts/${step.id}/`;
         else token = `/${locale}/clinic/#${step.id}`;
         const next = page.indexOf(token);

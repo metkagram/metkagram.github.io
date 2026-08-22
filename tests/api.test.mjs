@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
+import { patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -99,7 +100,7 @@ test("individual pattern endpoint contains a canonical URL", () => {
   const first = patterns.data[0].data;
   const record = readJson(API, "patterns", `${first.id.toLowerCase()}.json`);
   assertProvenance(record, `for pattern ${first.id}`);
-  assert.ok(record.provenance.canonical_url.includes(`/practice/${first.id.toLowerCase()}/`));
+  assert.equal(record.provenance.canonical_url, patternUrl("en", first));
 });
 
 test("study sets expose canonical URLs and pattern counts", () => {

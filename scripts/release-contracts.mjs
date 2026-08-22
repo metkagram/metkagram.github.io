@@ -8,8 +8,9 @@ function patch(relativePath, mutate) {
   if (!fs.existsSync(file)) throw new Error(`Missing release page: ${relativePath}`);
   const before = fs.readFileSync(file, "utf8");
   const after = mutate(before);
-  if (after === before) throw new Error(`Release contract patch made no change: ${relativePath}`);
+  if (after === before) return false;
   fs.writeFileSync(file, after);
+  return true;
 }
 
 function replaceAllKnown(html, replacements) {

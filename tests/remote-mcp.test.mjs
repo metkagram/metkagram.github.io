@@ -14,7 +14,7 @@ function mockFetch(url) {
     "/api/v1/index.json": { dataset_version: "1.2.3+abc123abc123", release_date: "2026-08-19", canonical_url: `${ORIGIN}/api/v1/index.json` },
     "/api/v1/discovery.json": { data: { surfaces: [{ id: "practice" }] }, provenance: { source: "Metkagram" } },
     "/api/v1/ai-recipes.json": { data: { recipes: [{ id: "intent" }] }, provenance: { source: "Metkagram" } },
-    "/api/v1/patterns/xprtest001.json": { data: { id: "XPRTEST001" }, provenance: { source: "Metkagram", canonical_url: `${ORIGIN}/en/practice/xprtest001/` } },
+    "/api/v1/patterns/xprtest001.json": { data: { id: "XPRTEST001" }, provenance: { source: "Metkagram", canonical_url: `${ORIGIN}/en/practice/patterns/test-structure-xprtest001/` } },
     "/api/v1/sets/arg.json": { data: { id: "ARG", patterns: [{ id: "XPRTEST001" }] }, provenance: { source: "Metkagram" } },
     "/api/v1/contrasts.json": { data: { items: [{ id: "contrast-test", patterns: ["XPRTEST001", "XPRTEST002"] }] }, provenance: { source: "Metkagram", dataset_version: "1.2.3+abc123abc123" } },
     "/data/intents.json": {

@@ -4,6 +4,7 @@ import { loadContent } from "../src/content.mjs";
 import { mcpPage } from "../src/mcp-page.mjs";
 import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
+import { patternSlug, patternUrl, studySetSlug, studySetUrl } from "../src/seo-slugs.mjs";
 
 const DIST = path.join(process.cwd(), "dist");
 const LOCALES = ["en", "ru"];
@@ -116,17 +117,18 @@ function transformJsonLd(data, relativePath, content) {
   if (data?.mainEntity?.["@id"] === mobileId) delete data.mainEntity;
   if (data?.["@type"] === "SoftwareApplication" && data?.name === "Metkagram" && data?.operatingSystem === "Web") return null;
   if (data?.["@type"] !== "LearningResource") return data;
-  const patternMatch = relativePath.match(/^(en|ru)\/practice\/([^/]+)\/index\.html$/);
-  const pattern = patternMatch && content.advancedPatterns.find((item) => item.id.toLowerCase() === patternMatch[2].toLowerCase());
+  const patternMatch = relativePath.match(/^(en|ru)\/practice\/patterns\/([^/]+)\/index\.html$/);
+  const pattern = patternMatch && content.advancedPatterns.find((item) => patternSlug(item) === patternMatch[2]);
   if (pattern) {
     data.isAccessibleForFree = true;
     data.learningResourceType = "Reusable language pattern practice";
     data.audience = { "@type": "EducationalAudience", educationalRole: "student" };
     data.educationalAlignment = { "@type": "AlignmentObject", alignmentType: "educationalLevel", educationalFramework: "CEFR", targetName: "B2–C1" };
-    data.isPartOf = { "@type": "LearningResource", url: `${SITE_URL}/${patternMatch[1]}/practice/set/${pattern.set_id.toLowerCase()}/` };
+    const set = content.studySets.sets.find((item) => item.id === pattern.set_id);
+    if (set) data.isPartOf = { "@type": "LearningResource", "@id": `${studySetUrl(patternMatch[1], set)}#learning-resource`, url: studySetUrl(patternMatch[1], set) };
     if (pattern.reasoning?.move) data.about = { "@type": "DefinedTerm", name: pattern.reasoning.move, termCode: pattern.reasoning.move };
   }
-  if (/^(en|ru)\/practice\/set\/[^/]+\/index\.html$/.test(relativePath)) {
+  if (/^(en|ru)\/practice\/sets\/[^/]+\/index\.html$/.test(relativePath)) {
     delete data.numberOfItems;
     data.isAccessibleForFree = true;
     data.learningResourceType = "Language pattern study set";
@@ -161,12 +163,12 @@ function patchHtml(relativePath, content) {
     if (!html.includes(`href="/${locale}/mcp/"`) && footer.test(html)) html = html.replace(footer, `$1<a href="/${locale}/mcp/">MCP</a>$2`);
     html = html.replaceAll(`href="/${locale}/ai/#connectors"`, `href="/${locale}/mcp/"`);
   }
-  const setMatch = relativePath.match(/^(en|ru)\/practice\/set\/([^/]+)\/index\.html$/);
+  const setMatch = relativePath.match(/^(en|ru)\/practice\/sets\/([^/]+)\/index\.html$/);
   if (setMatch && !html.includes('"@type":"ItemList"')) {
-    const set = content.studySets.sets.find((item) => item.id.toLowerCase() === setMatch[2].toLowerCase());
+    const set = content.studySets.sets.find((item) => studySetSlug(item) === setMatch[2]);
     if (set) {
       const patterns = content.advancedPatterns.filter((item) => item.set_id === set.id);
-      const list = { "@context": "https://schema.org", "@type": "ItemList", name: setMatch[1] === "ru" ? set.title_ru : set.title_en, numberOfItems: patterns.length, itemListElement: patterns.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.langs.find((lang) => lang.lang === "en")?.formula || item.id, url: `${SITE_URL}/${setMatch[1]}/practice/${item.id.toLowerCase()}/` })) };
+      const list = { "@context": "https://schema.org", "@type": "ItemList", name: setMatch[1] === "ru" ? set.title_ru : set.title_en, numberOfItems: patterns.length, itemListElement: patterns.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.langs.find((lang) => lang.lang === "en")?.formula || item.id, url: patternUrl(setMatch[1], item) })) };
       html = html.replace("</head>", `  <script type="application/ld+json">${JSON.stringify(list).replaceAll("<", "\\u003c")}</script>\n</head>`);
     }
   }

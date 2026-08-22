@@ -25,8 +25,9 @@ export function classifyRoute(route) {
   const path = normalizeRoute(route);
   if (/^\/(en|ru)\/patterns\/$/.test(path)) return "atlas_index";
   if (/^\/(en|ru)\/patterns\/[^/]+\/$/.test(path)) return "atlas_topic";
-  if (/^\/(en|ru)\/practice\/set\/[^/]+\/$/.test(path)) return "study_set";
-  if (/^\/(en|ru)\/practice\/(?!set\/|intents\/|language\/|activity\/|exports\/|routes\/)[^/]+\/$/.test(path)) return "pattern";
+  if (/^\/(en|ru)\/practice\/(set\/[^/]+|sets\/[^/]+)\/$/.test(path)) return "study_set";
+  if (/^\/(en|ru)\/practice\/patterns\/[^/]+\/$/.test(path)) return "pattern";
+  if (/^\/(en|ru)\/practice\/(?!set\/|sets\/|intents\/|language\/|activity\/|exports\/|routes\/)[^/]+\/$/.test(path)) return "pattern";
   if (/^\/(en|ru)\/(research|method|glossary|roadmap|history)\/$/.test(path)) return "editorial";
   if (/^\/(en|ru)\/(ai|mcp|data|evals|cite|licensing)(\/|$)/.test(path)) return "developer_data";
   if (/^\/(en|ru)\/(apps|legal)(\/|$)/.test(path)) return "utility";

@@ -3,6 +3,7 @@ import path from "node:path";
 import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, targetMeta } from "../src/i18n.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -278,7 +279,7 @@ function enhancePractice(html, locale, graph, patternById) {
   const cards = graph.reasoningMoves.map((move) => {
     const pattern = patternById.get(move.representative_pattern_id);
     const description = locale === "ru" ? move.what_it_does_ru : move.what_it_does_en;
-    return `<a href="/${locale}/practice/${move.representative_pattern_id.toLowerCase()}/#reasoning-move"><span class="document-number">${String(move.count).padStart(2, "0")}</span><span><strong>${escapeHtml(move.move)}</strong><small>${escapeHtml(description)}</small></span><span aria-hidden="true">→</span></a>`;
+    return `<a href="${patternPath(locale, move.representative_pattern_id)}#reasoning-move"><span class="document-number">${String(move.count).padStart(2, "0")}</span><span><strong>${escapeHtml(move.move)}</strong><small>${escapeHtml(description)}</small></span><span aria-hidden="true">→</span></a>`;
   }).join("");
   const section = `<section class="section-pad ruled connectivity-section" data-connectivity="reasoning-nav"><p class="eyebrow">${localized(locale, "Reasoning frames", "Логические каркасы")}</p><h2>${localized(locale, "Start from the move you want to make", "Начните с операции, которую хотите выразить")}</h2><p class="lede">${localized(locale, "Choose a reasoning operation first, then learn sentence frames that perform it in English and German.", "Сначала выберите логическую операцию, затем изучайте английские и немецкие каркасы, которые её выполняют.")}</p><div class="pattern-index connectivity-index">${cards}</div></section>`;
   return stylesheet(html.replace(marker, `${section}${marker}`));
@@ -304,7 +305,7 @@ function enhancePattern(html, locale, pattern, graph, patternById) {
   if (relation.related_patterns.length) {
     const cards = relation.related_patterns.map((id) => {
       const related = patternById.get(id);
-      return `<a href="/${locale}/practice/${id.toLowerCase()}/"><span class="document-number">${escapeHtml(id)}</span><span><strong>${escapeHtml(patternLabel(related, locale))}</strong><small>${escapeHtml(related?.reasoning?.move || related?.set_id || "")}</small></span><span aria-hidden="true">→</span></a>`;
+      return `<a href="${patternPath(locale, id)}"><span class="document-number">${escapeHtml(id)}</span><span><strong>${escapeHtml(patternLabel(related, locale))}</strong><small>${escapeHtml(related?.reasoning?.move || related?.set_id || "")}</small></span><span aria-hidden="true">→</span></a>`;
     }).join("");
     sections.push(`<section class="section-pad ruled connectivity-section"><p class="eyebrow">${localized(locale, "Pattern graph", "Граф паттернов")}</p><h2>${localized(locale, "Continue with nearby patterns", "Продолжите с близкими паттернами")}</h2><div class="pattern-index connectivity-index">${cards}</div></section>`);
   }
@@ -326,7 +327,7 @@ function injectSentenceLink(html, locale, relation, patternById) {
   if (end < 0) return html;
   const row = html.slice(start, end + 10);
   if (row.includes("sentence-pattern-link")) return html;
-  const note = `<p class="sentence-pattern-link"><strong>${localized(locale, "Reusable pattern", "Переиспользуемый паттерн")}:</strong> <a href="/${locale}/practice/${relation.pattern_id.toLowerCase()}/">${escapeHtml(patternLabel(pattern, locale, relation.formula?.startsWith("Wenn") ? "de" : "en"))}</a></p>`;
+  const note = `<p class="sentence-pattern-link"><strong>${localized(locale, "Reusable pattern", "Переиспользуемый паттерн")}:</strong> <a href="${patternPath(locale, relation.pattern_id)}">${escapeHtml(patternLabel(pattern, locale, relation.formula?.startsWith("Wenn") ? "de" : "en"))}</a></p>`;
   const updatedRow = row.replace("</details>", `${note}</details>`);
   return `${html.slice(0, start)}${updatedRow}${html.slice(end + 10)}`;
 }
@@ -338,7 +339,7 @@ function enhanceDocument(html, locale, relation, patternById) {
   if (relation.patterns.length) {
     const cards = relation.patterns.map((item) => {
       const pattern = patternById.get(item.pattern_id);
-      return `<a href="/${locale}/practice/${item.pattern_id.toLowerCase()}/"><span class="document-number">${escapeHtml(item.pattern_id)}</span><span><strong>${escapeHtml(patternLabel(pattern, locale, relation.language))}</strong><small>${escapeHtml(item.sentence)}</small></span><span aria-hidden="true">→</span></a>`;
+      return `<a href="${patternPath(locale, item.pattern_id)}"><span class="document-number">${escapeHtml(item.pattern_id)}</span><span><strong>${escapeHtml(patternLabel(pattern, locale, relation.language))}</strong><small>${escapeHtml(item.sentence)}</small></span><span aria-hidden="true">→</span></a>`;
     }).join("");
     const section = `<section class="section-pad ruled connectivity-section" data-connectivity="document"><p class="eyebrow">${localized(locale, "From sentence to pattern", "От предложения к паттерну")}</p><h2>${localized(locale, "Reusable structures found in this text", "Переиспользуемые структуры в этом тексте")}</h2><p>${localized(locale, "Strong structural matches connect the annotated text to patterns you can practise and reuse.", "Сильные структурные совпадения связывают размеченный текст с паттернами, которые можно тренировать и переиспользовать.")}</p><div class="pattern-index connectivity-index">${cards}</div></section>`;
     const marker = '<aside class="share-bar';
@@ -363,7 +364,7 @@ function updateHtml(content, graph) {
     fs.writeFileSync(practiceFile, enhancePractice(fs.readFileSync(practiceFile, "utf8"), locale, graph, patternById));
 
     for (const pattern of content.advancedPatterns) {
-      const file = path.join(DIST, locale, "practice", pattern.id.toLowerCase(), "index.html");
+      const file = path.join(DIST, patternPath(locale, pattern).slice(1), "index.html");
       fs.writeFileSync(file, enhancePattern(fs.readFileSync(file, "utf8"), locale, pattern, graph, patternById));
     }
 

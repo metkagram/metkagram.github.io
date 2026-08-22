@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -105,7 +106,7 @@ function summary(pattern, locale, label) {
   const detail = locale === "ru"
     ? clean(pattern.reasoning?.what_it_does_ru || pattern.metaphor_ru || "")
     : clean(pattern.reasoning?.what_it_does_en || "");
-  return `<article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(label)} · ${escapeHtml(pattern.id)}</p><h2>${escapeHtml(title)}</h2><p>${escapeHtml(detail)}</p><dl><div><dt>EN</dt><dd>${escapeHtml(clean(lang?.formula))}</dd></div><div><dt>DE</dt><dd>${escapeHtml(clean(german?.formula))}</dd></div></dl><a class="text-link" href="/${locale}/practice/${pattern.id.toLowerCase()}/">${escapeHtml(copy(locale).pattern)} <span aria-hidden="true">→</span></a></article>`;
+  return `<article class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(label)} · ${escapeHtml(pattern.id)}</p><h2>${escapeHtml(title)}</h2><p>${escapeHtml(detail)}</p><dl><div><dt>EN</dt><dd>${escapeHtml(clean(lang?.formula))}</dd></div><div><dt>DE</dt><dd>${escapeHtml(clean(german?.formula))}</dd></div></dl><a class="text-link" href="${patternPath(locale, pattern)}">${escapeHtml(copy(locale).pattern)} <span aria-hidden="true">→</span></a></article>`;
 }
 
 function indexPage(locale, source, patternMap) {
@@ -168,7 +169,7 @@ function detailPage(locale, item, patternMap) {
     learningResourceType: "Pattern comparison",
     isPartOf: { "@id": `${SITE_URL}/#website` },
     url: `${SITE_URL}${pathname}`,
-    about: item.patterns.map((id) => ({ "@type": "DefinedTerm", name: id, url: `${SITE_URL}/${locale}/practice/${id.toLowerCase()}/` })),
+    about: item.patterns.map((id) => ({ "@type": "DefinedTerm", name: id, url: patternUrl(locale, id) })),
   }];
 
   return layout({

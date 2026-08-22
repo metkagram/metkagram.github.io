@@ -23,6 +23,7 @@ export const ATTRIBUTION = {
   attribution_html: 'Source: <a href="https://metkagram.github.io/">Metkagram</a>',
   terms_url: `${SITE_URL}/en/licensing/`,
   privacy_url: `${SITE_URL}/en/legal/privacy/`,
+  contact_email: "metalhatscats@gmail.com",
   contact_url: "https://www.linkedin.com/company/metalhatscats",
   collaboration_url: `${SITE_URL}/en/licensing/`,
 };

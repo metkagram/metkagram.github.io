@@ -1,6 +1,7 @@
 import { intentTaxonomy } from "./intents.mjs";
 import { patternsForIntent } from "./intent-discovery.mjs";
 import { SITE_URL, breadcrumbs, escapeHtml, layout } from "./render.mjs";
+import { patternPath } from "./seo-slugs.mjs";
 
 function localized(locale, en, ru) {
   return locale === "ru" ? ru : en;
@@ -23,7 +24,7 @@ function intentCard(locale, intent, patterns) {
   const patternLinks = ranked.map(({ pattern }) => {
     const en = formula(pattern, "en");
     const de = formula(pattern, "de");
-    return `<a href="/${locale}/practice/${pattern.id.toLowerCase()}/#reasoning-move"><span class="document-number">${escapeHtml(pattern.id)}</span><span><strong>${escapeHtml(en || pattern.id)}</strong><small>DE · ${escapeHtml(de)}</small></span><span aria-hidden="true">→</span></a>`;
+    return `<a href="${patternPath(locale, pattern)}#reasoning-move"><span class="document-number">${escapeHtml(pattern.id)}</span><span><strong>${escapeHtml(en || pattern.id)}</strong><small>DE · ${escapeHtml(de)}</small></span><span aria-hidden="true">→</span></a>`;
   }).join("");
 
   const examples = (locale === "ru" ? intent.queries_ru : intent.queries_en).slice(0, 3);

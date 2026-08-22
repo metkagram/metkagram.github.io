@@ -5,6 +5,7 @@ import { loadContent } from "../src/content.mjs";
 import { layout, escapeHtml, SITE_URL } from "../src/render.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -113,6 +114,7 @@ function lensCopy(locale) {
       english: "English",
       german: "Deutsch",
       resultTitle: "Что здесь можно выучить",
+      ready: "Вставьте фразу и запустите поиск — результат появится здесь.",
       empty: "В публичной подборке нет достаточно сильного совпадения. Это нормально: здесь показывается ограниченный research/public corpus, а не полный annotation engine.",
       boundaryTitle: "Что делает этот preview",
       boundary: "Pattern Lens сопоставляет текст с опубликованными Metkagram patterns и визуально выделяет устойчивые части конструкции. Полный parser, spaCy pipeline, lexical rules и закрытый corpus остаются в private research core.",
@@ -136,6 +138,7 @@ function lensCopy(locale) {
     english: "English",
     german: "Deutsch",
     resultTitle: "What is worth learning here",
+    ready: "Paste a sentence, then run the search. Your learning patterns will appear here.",
     empty: "No strong match was found in the public showcase. That is expected sometimes: this page uses the bounded public research corpus, not the private full annotation engine.",
     boundaryTitle: "What this preview does",
     boundary: "Pattern Lens matches text against published Metkagram patterns and highlights the stable parts of a construction. The full parser, spaCy pipeline, lexical rules and private corpus remain in the private research core.",
@@ -149,21 +152,36 @@ function lensCopy(locale) {
 }
 
 function publicLensPatterns(content) {
-  return content.advancedPatterns.map((pattern) => ({
+  const all = content.advancedPatterns;
+  const selected = [];
+  const seen = new Set();
+  const add = (pattern) => {
+    if (!pattern || seen.has(pattern.id)) return;
+    seen.add(pattern.id);
+    selected.push(pattern);
+  };
+
+  // Lens is intentionally a fast public preview, not the complete private annotation engine.
+  // Keep a varied, reviewed cross-section small enough to work in an ordinary browser tab.
+  all.slice(0, 64).forEach(add);
+  all.filter((pattern) => pattern.reasoning?.move).forEach(add);
+  const stride = Math.max(1, Math.floor(all.length / 96));
+  for (let index = 0; index < all.length; index += stride) add(all[index]);
+
+  // Keep interaction immediate on modest laptops and embedded browser views.
+  // The complete collection remains available from the Pattern Library.
+  return selected.slice(0, 96).map((pattern) => ({
     id: pattern.id,
-    group_id: pattern.group_id,
-    set_id: pattern.set_id,
     reasoning_move: pattern.reasoning?.move || null,
     page_urls: {
-      en: `${SITE_URL}/en/practice/${pattern.id.toLowerCase()}/`,
-      ru: `${SITE_URL}/ru/practice/${pattern.id.toLowerCase()}/`,
+      en: patternUrl("en", pattern),
+      ru: patternUrl("ru", pattern),
     },
     langs: pattern.langs.map((lang) => ({
       lang: lang.lang,
       formula: lang.formula,
       example: lang.example,
       translation: lang.translation,
-      examples: (lang.examples || []).slice(0, 3),
     })),
   }));
 }
@@ -171,7 +189,9 @@ function publicLensPatterns(content) {
 function lensBody(locale, content) {
   const copy = lensCopy(locale);
   const sampleEn = content.advancedPatterns.flatMap((pattern) => pattern.langs.filter((item) => item.lang === "en").map((item) => item.example)).slice(0, 3);
-  const data = { locale, patterns: publicLensPatterns(content), copy };
+  // Ship only enough examples for an immediate, reliable first interaction.
+  // The complete public catalogue is linked through the Pattern Library.
+  const data = { locale, copy, catalogue: publicLensPatterns(content).slice(0, 18) };
   return `
   <section class="lens-shell">
     <div class="lens-hero">
@@ -186,12 +206,13 @@ function lensBody(locale, content) {
           <button type="button" data-lens-language="de" aria-pressed="false">${escapeHtml(copy.german)}</button>
         </div>
         <label>${escapeHtml(copy.inputLabel)}
-          <textarea rows="5" maxlength="1200" data-lens-text placeholder="${escapeHtml(copy.placeholder)}">${escapeHtml(copy.placeholder)}</textarea>
+          <textarea rows="5" maxlength="1200" data-lens-text placeholder="${escapeHtml(copy.placeholder)}"></textarea>
         </label>
         <div class="lens-actions"><button class="lens-primary" type="submit">${escapeHtml(copy.analyze)}</button></div>
       </form>
       <section class="lens-output" aria-live="polite" aria-labelledby="lens-result-title">
         <p class="eyebrow" id="lens-result-title">${escapeHtml(copy.resultTitle)}</p>
+        <p class="lens-ready" data-lens-ready>${escapeHtml(copy.ready)}</p>
         <div data-lens-annotation></div>
         <div class="lens-results" data-lens-results></div>
         <p class="lens-empty" data-lens-empty hidden>${escapeHtml(copy.empty)}</p>
@@ -361,11 +382,12 @@ function patchDiscoveryLinks() {
     const file = path.join(DIST, locale, relative);
     if (!fs.existsSync(file)) continue;
     let html = fs.readFileSync(file, "utf8");
-    if (html.includes("data-pattern-lens-promo")) continue;
     const title = locale === "ru" ? "Попробовать Pattern Lens" : "Try Pattern Lens";
     const text = locale === "ru" ? "Вставьте реальную фразу и найдите конструкции из публичной библиотеки Metkagram." : "Paste a real sentence and find reusable structures from the public Metkagram library.";
-    const promo = `<aside data-pattern-lens-promo style="margin:2rem auto;max-width:72rem;padding:1.25rem;border:1px solid #d9d9d2;border-radius:18px;background:#fffdf5"><strong>${title}</strong><p>${text}</p><a href="/${locale}/lens/">Pattern Lens →</a></aside>`;
-    html = html.replace("</main>", `${promo}</main>`);
+    const promo = `<aside class="lens-promo" data-pattern-lens-promo><div><p class="eyebrow">Metkagram · Pattern Lens</p><h2>${title}</h2><p>${text}</p></div><a href="/${locale}/lens/">Pattern Lens <span aria-hidden="true">→</span></a></aside>`;
+    html = html.includes("data-pattern-lens-promo")
+      ? html.replace(/<aside[^>]*data-pattern-lens-promo[^>]*>[\s\S]*?<\/aside>/, promo)
+      : html.replace("</main>", `${promo}</main>`);
     fs.writeFileSync(file, html);
   }
 }
@@ -388,6 +410,7 @@ function patchGeneratedSchemas() {
 export function buildPatternLens() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the main build before Pattern Lens generation.");
   const content = loadContent();
+  writeDist("data/pattern-lens-patterns.json", `${JSON.stringify(publicLensPatterns(content))}\n`);
   for (const locale of ["en", "ru"]) {
     writeDist(`${locale}/lens/index.html`, buildLensPage(locale, content));
     writeDist(`${locale}/apps/index.html`, archivedAppsPage(locale));

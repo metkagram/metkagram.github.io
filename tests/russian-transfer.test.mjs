@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -63,7 +64,7 @@ test("build publishes localized transfer pages, API, sitemap routes and practice
       assert.ok(page.includes(item.correct_en));
       assert.ok(sitemap.includes(`<loc>https://metkagram.github.io${route}</loc>`));
 
-      const patternPage = read(`dist/${locale}/practice/${item.pattern_id.toLowerCase()}/index.html`);
+      const patternPage = read(`dist${patternPath(locale, item.pattern_id)}index.html`);
       assert.ok(patternPage.includes(route));
     }
   }

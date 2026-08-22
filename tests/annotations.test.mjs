@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalText, validateAnnotation } from "../src/annotation-schema.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 test("legacy annotations migrate to text-first spans with Unicode-safe offsets", () => {
   const record = legacyAnnotationToCanonical({ id: "unicode", original_text: "Ich werde lernen.", text_span: { children: [{ tag: "tag", text: "S" }, { tag: "nsubj", text: "Ich " }, { tag: "tag", text: "Hf" }, { tag: "aux", text: "werde " }, { tag: "ROOT", text: "lernen." }] } }, { language: "de" });
@@ -57,11 +58,25 @@ test("service-produced pattern annotations replace authored-only emphasis", () =
 
 test("support-language preference is available globally and keeps translations opt-in", () => {
   const root = process.cwd();
-  const html = fs.readFileSync(path.join(root, "dist/en/practice/clf041/index.html"), "utf8");
+  const html = fs.readFileSync(path.join(root, "dist", patternPath("en", "CLF041").slice(1), "index.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "public/assets/app.js"), "utf8");
   assert.match(html, /data-native-language-control/);
   assert.match(html, /data-native-translation hidden/);
   assert.match(html, /Translations and explanations in your language are not available yet/);
   assert.match(script, /metkagram:native-language/);
   assert.match(script, /next !== "ru"/);
+});
+
+test("sentence review cards preserve annotation markup and localise the repeat control", () => {
+  const root = process.cwd();
+  const en = fs.readFileSync(path.join(root, "dist/en/explore/english/dialogues/IkXWCWXrzyFAUh2qVACA/index.html"), "utf8");
+  const ru = fs.readFileSync(path.join(root, "dist/ru/explore/english/dialogues/IkXWCWXrzyFAUh2qVACA/index.html"), "utf8");
+  const script = fs.readFileSync(path.join(root, "public/assets/app.js"), "utf8");
+  assert.match(en, /data-review-card/);
+  assert.match(en, /data-review-toggle[^>]+data-review-id="sentence-1"/);
+  assert.match(en, />01 · Mark as repeated<\/button>/);
+  assert.match(ru, />01 · Отметить повторённым<\/button>/);
+  assert.match(en, /class="annotated-token[^>]*"><button class="grammar-tag[^>]*>[\s\S]*?<\/button>&nbsp;/);
+  assert.match(script, /metkagram:sentence-review:v1/);
+  assert.match(script, /classList\.toggle\("is-reviewed", reviewed\)/);
 });

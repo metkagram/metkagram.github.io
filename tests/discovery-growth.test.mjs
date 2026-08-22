@@ -67,7 +67,11 @@ test("Pattern Atlas is visible, canonical and included in discovery infrastructu
       assert.doesNotMatch(page, /#mobile-application/);
       assert.ok(routes.has(`/${locale}/patterns/${topic.slug}/`));
       assert.match(sitemap, new RegExp(`<loc>https://metkagram\\.github\\.io/${locale}/patterns/${topic.slug}/</loc>`));
-      for (const setId of topic.set_ids) assert.match(page, new RegExp(`/practice/set/${setId.toLowerCase()}/`));
+      for (const setId of topic.set_ids) {
+        const set = studySets.sets.find((item) => item.id === setId);
+        assert.match(page, new RegExp(`/practice/sets/[^\"]+/`));
+        assert.match(page, new RegExp(locale === "ru" ? set.title_ru : set.title_en));
+      }
     }
   }
 

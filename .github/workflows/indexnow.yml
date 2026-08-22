@@ -56,6 +56,23 @@ jobs:
             URLS+=("$candidate")
           }
 
+          study_set_public_slug() {
+            local set_id="$1"
+            local slug
+            slug="$(jq -r --arg id "$set_id" '.studySets[$id] // empty' data/seo-slugs.json)"
+            [[ -n "$slug" ]] || { echo "Missing frozen study-set slug for $set_id" >&2; return 1; }
+            printf '%s' "$slug"
+          }
+
+          pattern_public_slug() {
+            local pattern_id="$1"
+            local core id_suffix
+            core="$(jq -r --arg id "$pattern_id" '.patterns[$id] // empty' data/seo-slugs.json)"
+            [[ -n "$core" ]] || { echo "Missing frozen pattern slug for $pattern_id" >&2; return 1; }
+            id_suffix="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
+            printf '%s-%s' "$core" "$id_suffix"
+          }
+
           if grep -Eq '^(src/mcp-page\.mjs|scripts/search-discovery\.mjs|public/connectors/metkagram-mcp\.mjs|src/api\.mjs)' <<<"$CHANGED"; then
             add_url "$BASE/en/mcp/"
             add_url "$BASE/ru/mcp/"
@@ -64,16 +81,16 @@ jobs:
             add_url "$BASE/llms.txt"
           fi
 
-          if grep -Eq '^(data/(advanced-patterns|study-sets|practice-extensions)\.json|data/reasoning-frames/.*\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice|practice-seo\.mjs)|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(data/(advanced-patterns|study-sets|practice-extensions|seo-slugs)\.json|data/reasoning-frames/.*\.json|scripts/(add-|expand-|enrich-|public-learning|active-practice|practice-seo|generate-seo-slugs)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/practice/"
             add_url "$BASE/ru/practice/"
             add_url "$BASE/api/v1/patterns.json"
             add_url "$BASE/data/practice-navigation.json"
             while IFS= read -r set_id; do
               [[ -z "$set_id" ]] && continue
-              set_slug="$(tr '[:upper:]' '[:lower:]' <<<"$set_id")"
-              add_url "$BASE/en/practice/set/$set_slug/"
-              add_url "$BASE/ru/practice/set/$set_slug/"
+              set_slug="$(study_set_public_slug "$set_id")"
+              add_url "$BASE/en/practice/sets/$set_slug/"
+              add_url "$BASE/ru/practice/sets/$set_slug/"
             done < <(
               jq -r '.sets[].id' data/study-sets.json
               [[ -f data/practice-extensions.json ]] && jq -r '.sets[].id' data/practice-extensions.json
@@ -83,10 +100,11 @@ jobs:
               [[ -f "$frame_file" ]] || continue
               while IFS= read -r pattern_id; do
                 [[ -z "$pattern_id" ]] && continue
-                pattern_slug="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
-                add_url "$BASE/en/practice/$pattern_slug/"
-                add_url "$BASE/ru/practice/$pattern_slug/"
-                add_url "$BASE/api/v1/patterns/$pattern_slug.json"
+                pattern_api_id="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
+                pattern_slug="$(pattern_public_slug "$pattern_id")"
+                add_url "$BASE/en/practice/patterns/$pattern_slug/"
+                add_url "$BASE/ru/practice/patterns/$pattern_slug/"
+                add_url "$BASE/api/v1/patterns/$pattern_api_id.json"
               done < <(jq -r '.[].id // empty' "$frame_file")
             done < <(grep -E '^data/reasoning-frames/.*\.json$' <<<"$CHANGED" || true)
           fi
@@ -167,17 +185,19 @@ jobs:
               done < <(jq -r '.items[].slug' data/russian-speaker-errors.json)
               while IFS= read -r pattern_id; do
                 [[ -z "$pattern_id" ]] && continue
-                pattern_slug="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
-                add_url "$BASE/en/practice/$pattern_slug/"
-                add_url "$BASE/ru/practice/$pattern_slug/"
-                add_url "$BASE/api/v1/patterns/$pattern_slug.json"
+                pattern_api_id="$(tr '[:upper:]' '[:lower:]' <<<"$pattern_id")"
+                pattern_slug="$(pattern_public_slug "$pattern_id")"
+                add_url "$BASE/en/practice/patterns/$pattern_slug/"
+                add_url "$BASE/ru/practice/patterns/$pattern_slug/"
+                add_url "$BASE/api/v1/patterns/$pattern_api_id.json"
               done < <(jq -r '.items[].pattern_id' data/russian-speaker-errors.json)
             fi
             add_url "$BASE/data/russian-speaker-errors.json"
             add_url "$BASE/api/v1/russian-speaker-errors.json"
             add_url "$BASE/api/v1/patterns.json"
-            add_url "$BASE/en/practice/set/rtr/"
-            add_url "$BASE/ru/practice/set/rtr/"
+            rtr_slug="$(study_set_public_slug "RTR")"
+            add_url "$BASE/en/practice/sets/$rtr_slug/"
+            add_url "$BASE/ru/practice/sets/$rtr_slug/"
           fi
 
           if grep -Eq '^(data/partnership-opportunities\.json|scripts/discovery-growth\.mjs)' <<<"$CHANGED"; then

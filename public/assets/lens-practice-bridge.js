@@ -8,8 +8,12 @@ if (results) {
       if (!link.getAttribute('href')?.includes('/practice/')) return;
       const url = new URL(link.getAttribute('href'), window.location.origin);
       url.hash = 'active-practice';
-      link.setAttribute('href', `${url.pathname}${url.hash}`);
-      link.textContent = locale === 'ru' ? 'Попробовать паттерн →' : 'Practise this pattern →';
+      const href = `${url.pathname}${url.hash}`;
+      const label = locale === 'ru' ? 'Попробовать паттерн →' : 'Practise this pattern →';
+      // The observer also sees this link's own text node. Only mutate when a
+      // value actually changes, otherwise an arriving result creates a loop.
+      if (link.getAttribute('href') !== href) link.setAttribute('href', href);
+      if (link.textContent !== label) link.textContent = label;
     });
   };
   const observer = new MutationObserver(enhance);

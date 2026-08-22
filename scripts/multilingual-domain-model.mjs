@@ -5,6 +5,7 @@ import { publicLanguageMatrix } from "../src/language-registry.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { escapeHtml, layout } from "../src/render.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
+import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -412,7 +413,7 @@ function frenchPilotPage(locale, frames) {
       <p>${escapeHtml(examples[0])}</p>
       ${support}
       <details class="faq-list"><summary>${ru ? "Ещё примеры" : "More examples"}</summary><div>${examples.slice(1).map((example) => `<p>${escapeHtml(example)}</p>`).join("")}</div></details>
-      <a class="text-link" href="/${locale}/practice/${frame.pattern_id.toLowerCase()}/">${ru ? "Открыть canonical Pattern" : "Open canonical Pattern"} <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="${patternPath(locale, frame.pattern_id)}">${ru ? "Открыть canonical Pattern" : "Open canonical Pattern"} <span aria-hidden="true">→</span></a>
     </article>`;
   }).join("");
   const title = ru ? "Французский: пилот из 20 речевых Frames | Metkagram" : "French Frame Pilot: 20 reusable reasoning patterns | Metkagram";
@@ -434,7 +435,7 @@ function frenchPilotPage(locale, frames) {
         "@type": "ListItem",
         position: index + 1,
         name: `${frame.pattern_id}: ${frame.formula}`,
-        url: `${SITE_URL}/${locale}/practice/${frame.pattern_id.toLowerCase()}/`,
+        url: patternUrl(locale, frame.pattern_id),
       })),
     }],
     body: `<section class="section-pad"><p class="eyebrow">Metkagram · French Frame pilot</p><h1>${ru ? "Французский без фальшивой «полной поддержки»." : "French, without pretending the whole language stack is finished."}</h1><p class="lede">${escapeHtml(description)}</p><div class="legal-inline-links"><a href="/data/domain/frames.json">${ru ? "Машиночитаемые Frames" : "Machine-readable Frames"}</a><a href="/data/domain/language-pilots.json">${ru ? "Статус пилота" : "Pilot status"}</a><a href="/data/languages.json">${ru ? "Языковые возможности" : "Language capabilities"}</a></div></section><section class="section-pad ruled"><p class="eyebrow">20 Frames · 60 examples</p><h2>${ru ? "Что уже можно учить" : "What is usable now"}</h2><p>${ru ? "Каждый Frame привязан к существующему языконезависимому Move и canonical Pattern ID. Русский здесь только язык поддержки. Для French пока нет собственного annotation profile, и EN↔FR / DE↔FR связи не создаются автоматически." : "Each Frame is attached to an existing language-independent Move and canonical Pattern ID. Russian is a support translation locale only. French has no annotation profile yet, and EN↔FR / DE↔FR relations are not inferred automatically."}</p><div class="pattern-comparison-list">${cards}</div></section>`,

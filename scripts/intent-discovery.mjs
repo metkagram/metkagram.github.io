@@ -5,6 +5,7 @@ import { buildIntentDataset } from "../src/intent-discovery.mjs";
 import { intentDiscoveryPage } from "../src/intent-pages.mjs";
 import { intentSearchText, intentTaxonomy, intentsForMove } from "../src/intents.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -124,7 +125,7 @@ function enrichPracticeSearch(html, locale, content) {
   for (const pattern of content.advancedPatterns.filter((item) => item.reasoning?.move)) {
     const intents = intentsForMove(pattern.reasoning.move);
     const terms = intents.map(intentSearchText).join(" ").replaceAll('"', "&quot;");
-    const href = `/${locale}/practice/${pattern.id.toLowerCase()}/`;
+    const href = patternPath(locale, pattern);
     const escapedHref = href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const patternRegex = new RegExp(`(<a href="${escapedHref}"[^>]*data-search-text=")([^"]*)(")`);
     enhanced = enhanced.replace(patternRegex, (_, start, search, end) => `${start}${search} ${terms}${end}`);
@@ -151,7 +152,7 @@ function enhanceReasoningPattern(locale, pattern) {
   if (!pattern.reasoning?.move) return;
   const intents = intentsForMove(pattern.reasoning.move);
   if (!intents.length) return;
-  const relative = path.join(locale, "practice", pattern.id.toLowerCase(), "index.html");
+  const relative = path.join(patternPath(locale, pattern).slice(1), "index.html");
   let html = readFile(relative);
   if (html.includes('data-intent-discovery="pattern"')) return;
   const cards = intents.map((intent) => `<a href="/${locale}/practice/intents/#intent-${intent.id}"><span class="document-number">${escapeHtml(intent.move)}</span><span><strong>${escapeHtml(intentTitle(intent, locale))}</strong><small>${escapeHtml(locale === "ru" ? intent.description_ru : intent.description_en)}</small></span><span aria-hidden="true">→</span></a>`).join("");

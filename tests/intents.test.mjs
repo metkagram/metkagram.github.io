@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const DIST = path.join(process.cwd(), "dist");
 
@@ -73,8 +74,7 @@ test("practice search text includes human intent language", () => {
 test("reasoning pattern pages link back to their human intents", () => {
   const dataset = readJson("data", "intents.json");
   const disagree = dataset.items.find((intent) => intent.id === "disagree-politely");
-  const patternId = disagree.pattern_ids[0].toLowerCase();
-  const page = html("en", "practice", patternId);
+  const page = fs.readFileSync(path.join(DIST, patternPath("en", disagree.pattern_ids[0]).slice(1), "index.html"), "utf8");
   assert.match(page, /data-intent-discovery="pattern"/);
   assert.match(page, /\/en\/practice\/intents\/#intent-disagree-politely/);
 });

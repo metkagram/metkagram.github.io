@@ -98,6 +98,35 @@ function setupAnnotationMode() {
   buttons.forEach((button) => button.addEventListener("click", () => setMode(button.dataset.annotationMode)));
 }
 
+function setupReviewCards() {
+  const toggles = [...document.querySelectorAll("[data-review-toggle]")];
+  if (!toggles.length) return;
+  const storagePrefix = `metkagram:sentence-review:v1:${window.location.pathname}:`;
+  const readStored = (key) => {
+    try { return window.localStorage.getItem(key) === "1"; } catch { return false; }
+  };
+  const writeStored = (key, reviewed) => {
+    try { window.localStorage.setItem(key, reviewed ? "1" : "0"); } catch { /* Local progress stays optional. */ }
+  };
+  const apply = (button, reviewed) => {
+    const card = button.closest("[data-review-card]");
+    const line = card?.querySelector(".line-number")?.textContent?.trim() || "";
+    card?.classList.toggle("is-reviewed", reviewed);
+    button.setAttribute("aria-pressed", String(reviewed));
+    button.setAttribute("aria-label", reviewed ? button.dataset.reviewOn : button.dataset.reviewOff);
+    button.textContent = `${line} · ${reviewed ? button.dataset.reviewOn : button.dataset.reviewOff}`;
+  };
+  toggles.forEach((button) => {
+    const key = `${storagePrefix}${button.dataset.reviewId}`;
+    apply(button, readStored(key));
+    button.addEventListener("click", () => {
+      const reviewed = button.getAttribute("aria-pressed") !== "true";
+      apply(button, reviewed);
+      writeStored(key, reviewed);
+    });
+  });
+}
+
 function setupCollectionSearch() {
   const input = document.querySelector("[data-collection-search]");
   const list = document.querySelector("[data-collection-list]");
@@ -333,6 +362,7 @@ setupLocaleSuggestion();
 setupNativeLanguage();
 setupTagRules();
 setupAnnotationMode();
+setupReviewCards();
 setupCollectionSearch();
 setupShareBars();
 setupHomeMotion();

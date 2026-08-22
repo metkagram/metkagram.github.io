@@ -3,16 +3,22 @@ const root = document.querySelector("[data-pattern-lens]");
 
 if (dataNode && root) {
   const payload = JSON.parse(dataNode.textContent);
-  const { patterns, locale, copy } = payload;
+  const { locale, copy } = payload;
+  // A tiny featured set ships with the page so the first analysis is instant.
+  // The larger public catalogue remains available as an export for the library.
+  let patterns = Array.isArray(payload.catalogue) ? payload.catalogue : [];
   const text = root.querySelector("[data-lens-text]");
   const form = root.querySelector("[data-lens-form]");
   const results = root.querySelector("[data-lens-results]");
   const annotation = root.querySelector("[data-lens-annotation]");
   const empty = root.querySelector("[data-lens-empty]");
+  const ready = root.querySelector("[data-lens-ready]");
   const languageButtons = [...root.querySelectorAll("[data-lens-language]")];
   const sampleButtons = [...document.querySelectorAll("[data-lens-sample]")];
   let language = "en";
   let reasoningRules = null;
+
+  const loadPatterns = async () => patterns;
 
   const normalize = (value = "") => String(value)
     .replaceAll("**", "")
@@ -173,20 +179,23 @@ if (dataNode && root) {
     return parts.join(" · ");
   };
 
-  const render = () => {
+  const render = async () => {
     const input = text.value.trim();
     if (!input) {
       results.innerHTML = "";
       annotation.innerHTML = "";
-      empty.hidden = false;
+      empty.hidden = true;
+      ready.hidden = false;
       return;
     }
+    await loadPatterns();
     const matches = rank(input);
+    ready.hidden = true;
     empty.hidden = matches.length > 0;
     annotation.innerHTML = highlight(input, matches[0]?.hits || []);
     results.innerHTML = matches.map(({ pattern, lang, hits, reasoningMatch, evidenceType, coverage }) => {
       const purpose = (reasoningMatch?.reasoning_move || pattern.reasoning_move) ? `<span>${escapeHtml(reasoningMatch?.reasoning_move || pattern.reasoning_move)}</span>` : "";
-      const page = pattern.page_urls?.[locale] || `/${locale}/practice/${pattern.id.toLowerCase()}/`;
+      const page = pattern.page_urls?.[locale] || `/${locale}/practice/`;
       const metric = reasoningMatch
         ? (locale === "ru" ? `${strengthLabel(reasoningMatch.strength)} логический сигнал` : `${strengthLabel(reasoningMatch.strength)} reasoning cue`)
         : (locale === "ru" ? `${Math.round(coverage * 100)}% покрытия структуры` : `${Math.round(coverage * 100)}% structure coverage`);
@@ -211,28 +220,29 @@ if (dataNode && root) {
     }
   };
 
-  languageButtons.forEach((button) => button.addEventListener("click", () => {
+  languageButtons.forEach((button) => button.addEventListener("click", async () => {
     language = button.dataset.lensLanguage;
     languageButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
     if (language === "de" && text.value.trim() === copy.placeholder.trim()) {
+      await loadPatterns();
       const germanSample = patterns.flatMap((pattern) => pattern.langs.filter((item) => item.lang === "de").map((item) => item.example)).find(Boolean);
       if (germanSample) text.value = germanSample;
     }
-    render();
+    await render();
   }));
 
-  sampleButtons.forEach((button) => button.addEventListener("click", () => {
+  sampleButtons.forEach((button) => button.addEventListener("click", async () => {
     language = "en";
     languageButtons.forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.lensLanguage === "en")));
     text.value = button.dataset.lensSample;
     text.focus();
-    render();
+    await render();
   }));
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    render();
+    await render();
   });
 
-  loadReasoningRules().finally(render);
+  loadReasoningRules();
 }

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -50,7 +51,7 @@ test("Pattern Choice is server-rendered in both interface languages", () => {
     assert.match(page, /LearningResource/);
     for (const item of drills.items) {
       assert.match(page, new RegExp(`id="${item.id}"`));
-      assert.match(page, new RegExp(`/${locale}/practice/${item.answer_pattern.toLowerCase()}/`));
+      assert.ok(page.includes(patternPath(locale, item.answer_pattern)));
     }
   }
 });

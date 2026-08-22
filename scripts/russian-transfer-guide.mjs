@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -94,7 +95,7 @@ function hubPage(locale, source) {
   const pathname = `/${locale}/mistakes/russian-speakers/`;
   const cards = source.items.map((item) => errorCard(locale, item)).join("");
   const research = source.research.map((item) => `<li><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a><span>${escapeHtml(item.publisher)} · ${item.year}</span></li>`).join("");
-  const body = `<section class="section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)} · ${source.items.length} reviewed patterns</p><h1>${escapeHtml(t.hubTitle)}</h1><p class="lede">${escapeHtml(t.hubIntro)}</p><p class="legal-inline-links"><a href="/${locale}/practice/set/rtr/">${escapeHtml(t.set)}</a><a href="/${locale}/contrasts/">Contrast Library</a></p></section><section class="section-pad ruled"><div class="pattern-comparison-list">${cards}</div></section><section class="section-pad ruled"><p class="eyebrow">${escapeHtml(t.research)}</p><h2>${escapeHtml(t.research)}</h2><p>${escapeHtml(t.researchIntro)}</p><ul class="research-list">${research}</ul></section>`;
+  const body = `<section class="section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)} · ${source.items.length} reviewed patterns</p><h1>${escapeHtml(t.hubTitle)}</h1><p class="lede">${escapeHtml(t.hubIntro)}</p><p class="legal-inline-links"><a href="${studySetPath(locale, "RTR")}">${escapeHtml(t.set)}</a><a href="/${locale}/contrasts/">Contrast Library</a></p></section><section class="section-pad ruled"><div class="pattern-comparison-list">${cards}</div></section><section class="section-pad ruled"><p class="eyebrow">${escapeHtml(t.research)}</p><h2>${escapeHtml(t.research)}</h2><p>${escapeHtml(t.researchIntro)}</p><ul class="research-list">${research}</ul></section>`;
   const structuredData = [{
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -138,7 +139,7 @@ function detailPage(locale, source, item, patternMap) {
   const pattern = patternMap.get(item.pattern_id);
   const en = lang(pattern, "en");
   const pathname = `/${locale}/mistakes/russian-speakers/${item.slug}/`;
-  const body = `<article class="pattern-reader section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)} · ${escapeHtml(item.pattern_id)}</p><h1>${escapeHtml(local(item, "title", locale))}</h1><div class="pattern-comparison-list"><section class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.wrong)}</p><p class="lede">✕ ${escapeHtml(item.wrong_en)}</p></section><section class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.correct)}</p><p class="lede">✓ ${escapeHtml(item.correct_en)}</p></section></div><section class="pattern-variations"><h2>${escapeHtml(t.why)}</h2><p>${escapeHtml(local(item, "why", locale))}</p></section><section class="pattern-variations"><h2>${escapeHtml(t.remember)}</h2><p><strong>${escapeHtml(local(item, "memory", locale))}</strong></p><p>${escapeHtml(clean(en?.formula || ""))}</p></section><section class="pattern-variations"><h2>${escapeHtml(t.examples)}</h2><ul class="pattern-list">${exampleRows(pattern)}</ul></section><section class="pattern-variations"><p class="legal-inline-links"><a href="/${locale}/practice/${item.pattern_id.toLowerCase()}/">${escapeHtml(t.practice)}</a><a href="/${locale}/practice/set/rtr/">${escapeHtml(t.set)}</a><a href="/${locale}/mistakes/russian-speakers/">${escapeHtml(t.back)}</a></p></section><section class="pattern-variations"><h2>${escapeHtml(t.related)}</h2><div class="legal-inline-links">${relatedCards(locale, source, item)}</div></section></article>`;
+  const body = `<article class="pattern-reader section-pad"><p class="eyebrow">${escapeHtml(t.eyebrow)} · ${escapeHtml(item.pattern_id)}</p><h1>${escapeHtml(local(item, "title", locale))}</h1><div class="pattern-comparison-list"><section class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.wrong)}</p><p class="lede">✕ ${escapeHtml(item.wrong_en)}</p></section><section class="pattern-comparison-card"><p class="eyebrow">${escapeHtml(t.correct)}</p><p class="lede">✓ ${escapeHtml(item.correct_en)}</p></section></div><section class="pattern-variations"><h2>${escapeHtml(t.why)}</h2><p>${escapeHtml(local(item, "why", locale))}</p></section><section class="pattern-variations"><h2>${escapeHtml(t.remember)}</h2><p><strong>${escapeHtml(local(item, "memory", locale))}</strong></p><p>${escapeHtml(clean(en?.formula || ""))}</p></section><section class="pattern-variations"><h2>${escapeHtml(t.examples)}</h2><ul class="pattern-list">${exampleRows(pattern)}</ul></section><section class="pattern-variations"><p class="legal-inline-links"><a href="${patternPath(locale, item.pattern_id)}">${escapeHtml(t.practice)}</a><a href="${studySetPath(locale, "RTR")}">${escapeHtml(t.set)}</a><a href="/${locale}/mistakes/russian-speakers/">${escapeHtml(t.back)}</a></p></section><section class="pattern-variations"><h2>${escapeHtml(t.related)}</h2><div class="legal-inline-links">${relatedCards(locale, source, item)}</div></section></article>`;
   const structuredData = [{
     "@context": "https://schema.org",
     "@type": "LearningResource",
@@ -151,7 +152,7 @@ function detailPage(locale, source, item, patternMap) {
     audience: { "@type": "EducationalAudience", educationalRole: "student", audienceType: source.audience },
     isPartOf: { "@id": `${SITE_URL}/#website` },
     url: `${SITE_URL}${pathname}`,
-    about: { "@type": "DefinedTerm", name: item.pattern_id, url: `${SITE_URL}/${locale}/practice/${item.pattern_id.toLowerCase()}/` },
+    about: { "@type": "DefinedTerm", name: item.pattern_id, url: patternUrl(locale, item.pattern_id) },
     citation: source.research.map((research) => ({ "@type": "CreativeWork", name: research.title, url: research.url })),
   }];
   return layout({
@@ -183,7 +184,7 @@ function patchPracticeBridge(locale) {
 
 function patchPatternBacklinks(locale, source) {
   for (const item of source.items) {
-    const file = path.join(DIST, locale, "practice", item.pattern_id.toLowerCase(), "index.html");
+    const file = path.join(DIST, patternPath(locale, item.pattern_id).slice(1), "index.html");
     if (!fs.existsSync(file)) continue;
     let html = fs.readFileSync(file, "utf8");
     if (html.includes(`/${locale}/mistakes/russian-speakers/${item.slug}/`)) continue;

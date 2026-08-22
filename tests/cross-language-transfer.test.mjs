@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -35,8 +36,8 @@ test("cross-language map only derives counterparts from the same canonical revie
 
 test("transfer map does not create cross-ID translation pairs", () => {
   for (const item of map.items) {
-    assert.equal(item.canonical_urls.en, `https://metkagram.github.io/en/practice/${item.pattern_id.toLowerCase()}/`);
-    assert.equal(item.canonical_urls.ru, `https://metkagram.github.io/ru/practice/${item.pattern_id.toLowerCase()}/`);
+    assert.equal(item.canonical_urls.en, patternUrl("en", item.pattern_id));
+    assert.equal(item.canonical_urls.ru, patternUrl("ru", item.pattern_id));
     assert.ok(item.formula_en);
     assert.ok(item.formula_de);
     assert.ok(item.example_en);
@@ -55,7 +56,7 @@ test("Pattern Bridge pages expose recall-first EN↔DE practice", () => {
     assert.match(page, /DE → EN/);
     for (const item of map.items) {
       assert.match(page, new RegExp(`id="${item.pattern_id.toLowerCase()}"`));
-      assert.match(page, new RegExp(`/${locale}/practice/${item.pattern_id.toLowerCase()}/`));
+      assert.ok(page.includes(patternPath(locale, item.pattern_id)));
     }
   }
 });

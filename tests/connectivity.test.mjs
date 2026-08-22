@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { patternPath } from "../src/seo-slugs.mjs";
 import test from "node:test";
 
 const DIST = path.join(process.cwd(), "dist");
@@ -32,7 +33,7 @@ test("practice and a reasoning detail page expose server-rendered reasoning navi
   assert.match(practice, /data-connectivity="reasoning-nav"/);
   const reasoningPattern = patterns.find((pattern) => pattern.reasoning?.move);
   assert.ok(reasoningPattern, "expected at least one reasoning-enabled public pattern");
-  const detail = html("en", "practice", reasoningPattern.id.toLowerCase());
+  const detail = fs.readFileSync(path.join(DIST, patternPath("en", reasoningPattern).slice(1), "index.html"), "utf8");
   assert.match(detail, /id="reasoning-move"/);
 });
 

@@ -27,10 +27,10 @@ let lensPages = 0;
 
 for (const locale of ['en', 'ru']) {
   for (const file of htmlFiles(path.join(DIST, locale, 'practice'))) {
-    if (addModuleScript(file, '/assets/practice-loop.js')) practicePages += 1;
+    if (addModuleScript(file, '/assets/practice-loop.js') || fs.readFileSync(file, 'utf8').includes('src="/assets/practice-loop.js"')) practicePages += 1;
   }
   const lens = path.join(DIST, locale, 'lens', 'index.html');
-  if (addModuleScript(lens, '/assets/lens-practice-bridge.js')) lensPages += 1;
+  if (addModuleScript(lens, '/assets/lens-practice-bridge.js') || (fs.existsSync(lens) && fs.readFileSync(lens, 'utf8').includes('src="/assets/lens-practice-bridge.js"'))) lensPages += 1;
 }
 
 if (!practicePages) throw new Error('Active practice runtime was not attached to any practice pages');

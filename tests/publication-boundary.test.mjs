@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
@@ -6,12 +7,21 @@ import { contentCounts, loadContent } from "../src/content.mjs";
 
 const ROOT = process.cwd();
 
+function isTracked(relative) {
+  try {
+    execFileSync("git", ["ls-files", "--error-unmatch", relative], { cwd: ROOT, stdio: "ignore" });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 test("private research infrastructure stays outside the public repository", () => {
   for (const relative of [
     "data/source-tag-rules.ts",
     "annotation_service"
   ]) {
-    assert.equal(fs.existsSync(path.join(ROOT, relative)), false, `${relative} must remain private`);
+    assert.equal(isTracked(relative), false, `${relative} must remain private`);
   }
 });
 

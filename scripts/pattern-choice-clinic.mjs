@@ -3,6 +3,7 @@ import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -119,7 +120,7 @@ function drillCard(locale, drill, patternMap) {
   const whyOther = locale === "ru" ? drill.why_other_ru : drill.why_other_en;
   const answer = patternMap.get(drill.answer_pattern);
   const answerFormula = clean(languageRecord(answer, "en")?.formula || answer.id);
-  return `<article class="pattern-reader" id="${escapeHtml(drill.id)}"><p class="eyebrow">${escapeHtml(t.scenario)} · ${escapeHtml(drill.id)}</p><h3>${escapeHtml(scenario)}</h3><p><strong>${escapeHtml(t.options)}</strong></p><div class="pattern-comparison-list">${optionCard(first, locale, "A")}${optionCard(second, locale, "B")}</div><details class="faq-list"><summary>${escapeHtml(t.reveal)}</summary><div><p><strong>${escapeHtml(t.answer)}:</strong> ${escapeHtml(drill.answer_pattern)} · ${escapeHtml(answerFormula)}</p><p><strong>${escapeHtml(t.why)}:</strong> ${escapeHtml(explanation)}</p><p><strong>${escapeHtml(t.whyOther)}:</strong> ${escapeHtml(whyOther)}</p><a class="text-link" href="/${locale}/practice/${drill.answer_pattern.toLowerCase()}/">${escapeHtml(t.openPattern)} <span aria-hidden="true">→</span></a></div></details></article>`;
+  return `<article class="pattern-reader" id="${escapeHtml(drill.id)}"><p class="eyebrow">${escapeHtml(t.scenario)} · ${escapeHtml(drill.id)}</p><h3>${escapeHtml(scenario)}</h3><p><strong>${escapeHtml(t.options)}</strong></p><div class="pattern-comparison-list">${optionCard(first, locale, "A")}${optionCard(second, locale, "B")}</div><details class="faq-list"><summary>${escapeHtml(t.reveal)}</summary><div><p><strong>${escapeHtml(t.answer)}:</strong> ${escapeHtml(drill.answer_pattern)} · ${escapeHtml(answerFormula)}</p><p><strong>${escapeHtml(t.why)}:</strong> ${escapeHtml(explanation)}</p><p><strong>${escapeHtml(t.whyOther)}:</strong> ${escapeHtml(whyOther)}</p><a class="text-link" href="${patternPath(locale, drill.answer_pattern)}">${escapeHtml(t.openPattern)} <span aria-hidden="true">→</span></a></div></details></article>`;
 }
 
 function clinicPage(locale, source, contrasts, patternMap) {
