@@ -45,10 +45,10 @@ function addAtlasEntryPoint(locale, topics) {
   const html = fs.readFileSync(file, "utf8");
   if (html.includes(`href="/${locale}/patterns/"`)) return;
   const ru = locale === "ru";
-  const teaser = `<section class="section-pad ruled"><div class="page-head compact"><p class="eyebrow">${ru ? "Найти по задаче" : "Find by communication goal"}</p><h2>${ru ? "Атлас паттернов" : "Pattern Atlas"}</h2><p>${ru ? "Не знаете ID или категорию? Начните с того, что хотите сделать в речи: аргументировать, уточнить, не согласиться, сравнить, задать вопрос или построить рабочее сообщение." : "Do not start from an internal category code. Start from what you need to do: argue a point, hedge a claim, disagree, compare options, ask a precise question, or communicate at work."}</p><p><a class="primary-link" href="/${locale}/patterns/">${ru ? "Открыть тематические маршруты" : "Browse communication goals"} <span aria-hidden="true">→</span></a></p><small>${topics.length} ${ru ? "редакционных маршрутов, собранных из существующих проверяемых study sets" : "editorial routes built from existing validated study sets"}</small></div></section>`;
-  const marker = `</section><section id="all-patterns"`;
+  const teaser = `<details id="pattern-atlas" class="practice-secondary-path ruled" data-practice-secondary="atlas"><summary><span>${ru ? "Углублённый поиск" : "Deeper exploration"}</span><strong>${ru ? "Атлас паттернов" : "Pattern Atlas"}</strong><small>${ru ? "Тематические маршруты по коммуникативной задаче" : "Editorial routes organised by communication goal"}</small></summary><div class="practice-secondary-body section-pad"><p>${ru ? "Не знаете ID или категорию? Начните с того, что хотите сделать в речи: аргументировать, уточнить, не согласиться, сравнить, задать вопрос или построить рабочее сообщение." : "Do not start from an internal category code. Start from what you need to do: argue a point, hedge a claim, disagree, compare options, ask a precise question, or communicate at work."}</p><p><a class="primary-link" href="/${locale}/patterns/">${ru ? "Открыть тематические маршруты" : "Browse communication goals"} <span aria-hidden="true">→</span></a></p><small>${topics.length} ${ru ? "редакционных маршрутов, собранных из существующих проверяемых study sets" : "editorial routes built from existing validated study sets"}</small></div></details>`;
+  const marker = `<section id="all-patterns"`;
   if (!html.includes(marker)) throw new Error(`Could not find practice-page insertion point for ${locale}`);
-  fs.writeFileSync(file, html.replace(marker, `</section>${teaser}<section id="all-patterns"`));
+  fs.writeFileSync(file, html.replace(marker, `${teaser}<section id="all-patterns"`));
 }
 
 function addPartnershipPilots(locale, opportunities) {

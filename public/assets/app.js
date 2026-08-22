@@ -43,7 +43,7 @@ function setupNativeLanguage() {
   const key = "metkagram:native-language";
   const labels = controls.map((control) => Object.fromEntries([...control.querySelectorAll("option")].map((option) => [option.value, option.textContent])));
   const saved = localStorage.getItem(key);
-  const value = ["en", "ru", "other"].includes(saved) ? saved : "en";
+  const value = ["en", "ru", "other"].includes(saved) ? saved : (document.documentElement.lang === "ru" ? "ru" : "en");
   const apply = (next) => {
     document.documentElement.dataset.nativeLanguage = next;
     document.querySelectorAll("[data-native-translation]").forEach((item) => { item.hidden = next !== "ru"; });

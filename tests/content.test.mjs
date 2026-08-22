@@ -55,10 +55,14 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.match(en, /<span>Mark\.<\/span><span>Find\.<\/span><mark>Reuse\.<\/mark>/);
   assert.match(en, /ANNOTATION STUDIO/);
   assert.match(en, /Pattern library/);
+  assert.match(en, /class="studio-primary-action" href="\/en\/practice\/">Explore patterns/);
+  assert.doesNotMatch(en, /Open a topic set/);
   assert.doesNotMatch(en, /Разметить\./);
   assert.match(ru, /<html lang="ru">/);
   assert.match(ru, /<span>Разметить\.<\/span><span>Найти\.<\/span><mark>Применить\.<\/mark>/);
   assert.match(ru, /СТУДИЯ РАЗМЕТКИ/);
+  assert.match(ru, /class="studio-primary-action" href="\/ru\/practice\/">Исследовать паттерны/);
+  assert.doesNotMatch(ru, /Открыть тематический сет/);
   assert.doesNotMatch(ru, /<span>Mark\.<\/span>/);
   assert.ok(fs.existsSync(path.join(DIST, "en/lens/index.html")));
   assert.ok(fs.existsSync(path.join(DIST, "ru/lens/index.html")));
@@ -66,6 +70,21 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.match(ru, /href="\/ru\/lens\/"/);
   assert.doesNotMatch(en, /https:\/\/play\.google\.com\/store\/apps/);
   assert.doesNotMatch(en, /https:\/\/apps\.apple\.com\/us\/app/);
+});
+
+test("primary navigation stays stable while About remains a secondary destination", () => {
+  for (const locale of ["en", "ru"]) {
+    const page = fs.readFileSync(path.join(DIST, locale, "practice", "index.html"), "utf8");
+    const header = page.slice(page.indexOf('<header class="site-header'), page.indexOf("</header>") + 9);
+    const primary = header.slice(header.indexOf('<nav id="site-nav"'), header.indexOf("</nav>") + 6);
+    assert.equal((primary.match(/<a /g) || []).length, 4);
+    assert.doesNotMatch(header, /data-native-language-control/);
+    assert.match(header, new RegExp(`href="/${locale}/practice/"`));
+    assert.match(header, /class="locale-switch"/);
+    assert.match(page, new RegExp(`class="footer-links"[\\s\\S]*href="/${locale}/about/"`));
+    assert.match(page, /data-language-filter="en"/);
+    assert.match(page, /data-language-filter="de"/);
+  }
 });
 
 test("Pattern Lens keeps its interactive catalogue outside the initial document", () => {

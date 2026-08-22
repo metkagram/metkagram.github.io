@@ -56,15 +56,19 @@ test("service-produced pattern annotations replace authored-only emphasis", () =
   assert.equal(card.examples[0].spans[0].label, "S");
 });
 
-test("support-language preference is available globally and keeps translations opt-in", () => {
+test("support-language preference appears only where translations have immediate value", () => {
   const root = process.cwd();
   const html = fs.readFileSync(path.join(root, "dist", patternPath("en", "CLF041").slice(1), "index.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "public/assets/app.js"), "utf8");
+  const header = html.slice(html.indexOf("<header"), html.indexOf("</header>") + 9);
+  assert.doesNotMatch(header, /data-native-language-control/);
+  assert.match(html, /class="context-language-preference section-pad"/);
   assert.match(html, /data-native-language-control/);
   assert.match(html, /data-native-translation hidden/);
   assert.match(html, /Translations and explanations in your language are not available yet/);
   assert.match(script, /metkagram:native-language/);
   assert.match(script, /next !== "ru"/);
+  assert.match(script, /document\.documentElement\.lang === "ru"/);
 });
 
 test("sentence review cards preserve annotation markup and localise the repeat control", () => {

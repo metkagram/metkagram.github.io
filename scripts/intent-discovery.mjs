@@ -117,7 +117,7 @@ function intentTitle(intent, locale) {
 function practiceIntentSection(locale) {
   const featured = FEATURED_INTENTS.map((id) => intentTaxonomy.find((intent) => intent.id === id)).filter(Boolean);
   const cards = featured.map((intent) => `<a href="/${locale}/practice/intents/#intent-${intent.id}"><span class="document-number">${escapeHtml(intent.move)}</span><span><strong>${escapeHtml(intentTitle(intent, locale))}</strong><small>${escapeHtml(locale === "ru" ? intent.description_ru : intent.description_en)}</small></span><span aria-hidden="true">→</span></a>`).join("");
-  return `<section class="section-pad ruled" data-intent-discovery="practice"><p class="eyebrow">${localized(locale, "Intent discovery", "Поиск по намерению")}</p><h2>${localized(locale, "What do you want the sentence to do?", "Что должна сделать ваша фраза?")}</h2><p class="lede">${localized(locale, "Start from a goal such as disagreeing politely or correcting an assumption. Metkagram maps it to a reasoning move and reusable English/German frames.", "Начните с цели: например, вежливо не согласиться или исправить предположение. Metkagram свяжет её с логической операцией и английскими/немецкими каркасами.")}</p><div class="pattern-index">${cards}</div><p><a href="/${locale}/practice/intents/">${localized(locale, "Browse all 18 intents", "Все 18 намерений")} →</a></p></section>`;
+  return `<section id="intent-discovery" class="section-pad ruled practice-primary-path" data-intent-discovery="practice"><p class="eyebrow">${localized(locale, "Start with intent", "Начните с намерения")}</p><h2>${localized(locale, "What do you want to say?", "Что вы хотите сказать?")}</h2><p class="lede">${localized(locale, "Start from a real goal such as disagreeing politely or correcting an assumption. Metkagram maps it to a reasoning move and reusable English/German frames.", "Начните с реальной цели: например, вежливо не согласиться или исправить предположение. Metkagram свяжет её с логической операцией и английскими/немецкими каркасами.")}</p><div class="pattern-index">${cards}</div><p><a class="primary-link" href="/${locale}/practice/intents/">${localized(locale, "Browse all 18 intents", "Все 18 намерений")} →</a></p></section>`;
 }
 
 function enrichPracticeSearch(html, locale, content) {
@@ -137,7 +137,7 @@ function enhancePractice(locale, content) {
   const relative = path.join(locale, "practice", "index.html");
   let html = readFile(relative);
   if (!html.includes('data-intent-discovery="practice"')) {
-    const reasoningMarker = '<section class="section-pad ruled connectivity-section" data-connectivity="reasoning-nav">';
+    const reasoningMarker = '<details id="reasoning-frames" class="practice-secondary-path ruled connectivity-section" data-practice-secondary="reasoning" data-connectivity="reasoning-nav">';
     const toolsMarker = '<section id="all-patterns" class="practice-tools';
     const section = practiceIntentSection(locale);
     if (html.includes(reasoningMarker)) html = html.replace(reasoningMarker, `${section}${reasoningMarker}`);

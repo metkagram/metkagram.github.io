@@ -65,10 +65,18 @@ test("intent browser is server-rendered and indexed", () => {
 
 test("practice search text includes human intent language", () => {
   const practice = html("en", "practice");
+  assert.match(practice, /data-practice-entry/);
+  assert.match(practice, /href="#intent-discovery"/);
   assert.match(practice, /data-intent-discovery="practice"/);
+  assert.match(practice, /id="intent-discovery"/);
+  assert.match(practice, /What do you want to say\?/);
   assert.match(practice, /Browse all 18 intents/);
   assert.match(practice, /disagree politely/);
   assert.match(practice, /correct an assumption/);
+  assert.match(practice, /data-practice-secondary="atlas"/);
+  assert.match(practice, /data-practice-secondary="reasoning"/);
+  assert.match(practice, /data-practice-secondary="paths"/);
+  assert.ok(practice.indexOf('id="intent-discovery"') < practice.indexOf('id="all-patterns"'));
 });
 
 test("reasoning pattern pages link back to their human intents", () => {
