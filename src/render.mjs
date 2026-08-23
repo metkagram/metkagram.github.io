@@ -151,7 +151,7 @@ function header(locale, pathname) {
   ];
   return `<a class="skip-link" href="#content">${t.skip}</a>
   <header class="site-header${isHome ? " site-header--studio" : ""}">
-    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><span class="wordmark-name" aria-hidden="true">Metka</span><img src="/assets/logo/metkagram-logo-${isHome ? "light" : "dark"}.svg" width="800" height="200" alt="Metkagram"></a>
+    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-${isHome ? "dark" : "light"}.svg" width="800" height="200" alt="Metkagram"></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">${t.menu}</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
@@ -292,9 +292,9 @@ export function localeHome(locale, content) {
   const pathname = `/${locale}/`;
   const ru = locale === "ru";
   const copy = ru ? {
-    eyebrow: "СТУДИЯ РАЗМЕТКИ",
-    title: ["Разметить.", "Найти.", "Применить."],
-    intro: "Разметьте фразу. Найдите паттерн. Перенесите его в следующую фразу.",
+    eyebrow: "РАЗМЕЧЕННЫЕ ЯЗЫКОВЫЕ ПАТТЕРНЫ",
+    title: ["Учите", "язык", "через", "паттерны."],
+    intro: "Размеченные фразы показывают, как работает каждый паттерн. Заметьте структуру, потренируйте шаблон и используйте его в своей речи.",
     action: "Исследовать паттерны",
     library: "Библиотека паттернов",
     scopeTitle: "Что опубликовано сейчас",
@@ -307,9 +307,9 @@ export function localeHome(locale, content) {
       ["Предложить идею", "Обсудите пилот, исследование или партнёрство с командой.", `/${locale}/ideas/`]
     ]
   } : {
-    eyebrow: "ANNOTATION STUDIO",
-    title: ["Mark.", "Find.", "Reuse."],
-    intro: "Mark a phrase. Find the pattern. Carry it into the next sentence.",
+    eyebrow: "ANNOTATED LANGUAGE PATTERNS",
+    title: ["Learn", "a language", "through", "patterns."],
+    intro: "Annotated phrases show how each pattern works. Notice the structure, practise the template, and reuse it in your own speech.",
     action: "Explore patterns",
     library: "Pattern library",
     scopeTitle: "What is published now",
@@ -342,7 +342,8 @@ export function localeHome(locale, content) {
     ["p2", "Progress trigger", "Give me [p2] and I’ll [V]."]
   ];
   const tokenRow = [tag("subject", "S"), tag("verb", "V"), tag("object", "p2"), tag("helper", "Hf")].join("");
-  const body = `<section class="studio-home studio-home-v2" aria-labelledby="home-title"><div class="studio-hero-v2"><div class="studio-manifest"><p class="eyebrow">${copy.eyebrow}</p><h1 id="home-title"><span>${copy.title[0]}</span><span>${copy.title[1]}</span><mark>${copy.title[2]}</mark></h1><p>${copy.intro}</p><a class="studio-primary-action" href="/${locale}/practice/">${copy.action}<span aria-hidden="true">↗</span></a></div><div class="studio-flow" aria-label="${ru ? "От размеченных фраз к паттернам" : "From annotated phrases to reusable patterns"}"><div class="studio-slips">${slips.map(([code, sentence], index) => `<article class="studio-slip studio-slip-${index + 1}"><header><span class="studio-slip-code">${code}</span><span class="studio-slip-index">0${index + 1}</span></header><p>${sentence}</p><div class="studio-slip-tags" aria-label="${ru ? "Метки фразы" : "Sentence tags"}">${tokenRow}</div></article>`).join("")}</div><section class="studio-pattern-sheet"><p class="eyebrow">${copy.library}</p>${patterns.map(([code, title, formula]) => `<article><span class="studio-pattern-code">${code}</span><div><strong>${title}</strong><code>${formula}</code></div></article>`).join("")}<a href="/${locale}/practice/">${ru ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→</span></a></section></div></div><nav class="studio-audiences" aria-label="${ru ? "Для кого Metkagram" : "Ways to use Metkagram"}">${copy.audiences.map(([title, detail, href], index) => `<a href="${href}"><span>0${index + 1}</span><strong>${title}</strong><small>${detail}</small><b aria-hidden="true">→</b></a>`).join("")}</nav><section class="ai-section section-pad ruled" data-current-capabilities><div><p class="eyebrow">${ru ? "Границы продукта" : "Product boundary"}</p><h2>${copy.scopeTitle}</h2></div><div><p>${copy.scope}</p><p>${copy.rights}</p><div class="legal-inline-links"><a href="/${locale}/practice/language/french/">${ru ? "Французский пилот" : "French pilot"} →</a><a href="/${locale}/licensing/">${ru ? "Права и лицензирование" : "Rights and licensing"} →</a></div></div></section></section>`;
+  const title = copy.title.map((line, index) => index === copy.title.length - 1 ? `<mark>${line}</mark>` : `<span>${line}</span>`).join("");
+  const body = `<section class="studio-home studio-home-v2" aria-labelledby="home-title"><div class="studio-hero-v2"><div class="studio-manifest"><p class="eyebrow">${copy.eyebrow}</p><h1 id="home-title">${title}</h1><p>${copy.intro}</p><a class="studio-primary-action" href="/${locale}/practice/">${copy.action}<span aria-hidden="true">↗</span></a></div><div class="studio-flow" aria-label="${ru ? "От размеченных фраз к паттернам" : "From annotated phrases to reusable patterns"}"><div class="studio-slips">${slips.map(([code, sentence], index) => `<article class="studio-slip studio-slip-${index + 1}"><header><span class="studio-slip-code">${code}</span><span class="studio-slip-index">0${index + 1}</span></header><p>${sentence}</p><div class="studio-slip-tags" aria-label="${ru ? "Метки фразы" : "Sentence tags"}">${tokenRow}</div></article>`).join("")}</div><section class="studio-pattern-sheet"><p class="eyebrow">${copy.library}</p>${patterns.map(([code, title, formula]) => `<article><span class="studio-pattern-code">${code}</span><div><strong>${title}</strong><code>${formula}</code></div></article>`).join("")}<a href="/${locale}/practice/">${ru ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→</span></a></section></div></div><nav class="studio-audiences" aria-label="${ru ? "Для кого Metkagram" : "Ways to use Metkagram"}">${copy.audiences.map(([title, detail, href], index) => `<a href="${href}"><span>0${index + 1}</span><strong>${title}</strong><small>${detail}</small><b aria-hidden="true">→</b></a>`).join("")}</nav><section class="ai-section section-pad ruled" data-current-capabilities><div><p class="eyebrow">${ru ? "Границы продукта" : "Product boundary"}</p><h2>${copy.scopeTitle}</h2></div><div><p>${copy.scope}</p><p>${copy.rights}</p><div class="legal-inline-links"><a href="/${locale}/practice/language/french/">${ru ? "Французский пилот" : "French pilot"} →</a><a href="/${locale}/licensing/">${ru ? "Права и лицензирование" : "Rights and licensing"} →</a></div></div></section></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "Language Annotation & Pattern Library | Metkagram" : "Библиотека разметки и языковых паттернов | Metkagram", description: t.statementDetail, body, bodyClass: "home-studio" });
 }
 

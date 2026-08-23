@@ -58,14 +58,14 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   assert.match(root, /<link rel="canonical" href="https:\/\/metkagram\.github\.io\/en\/">/);
   assert.doesNotMatch(root, /gateway-body|Language lives/);
   assert.match(en, /<html lang="en">/);
-  assert.match(en, /<span>Mark\.<\/span><span>Find\.<\/span><mark>Reuse\.<\/mark>/);
+  assert.match(en, /<span>Learn<\/span><span>a language<\/span><span>through<\/span><mark>patterns\.<\/mark>/);
   assert.match(en, /ANNOTATION STUDIO/);
   assert.match(en, /Pattern library/);
   assert.match(en, /class="studio-primary-action" href="\/en\/practice\/">Explore patterns/);
   assert.doesNotMatch(en, /Open a topic set/);
   assert.doesNotMatch(en, /Разметить\./);
   assert.match(ru, /<html lang="ru">/);
-  assert.match(ru, /<span>Разметить\.<\/span><span>Найти\.<\/span><mark>Применить\.<\/mark>/);
+  assert.match(ru, /<span>Учите<\/span><span>язык<\/span><span>через<\/span><mark>паттерны\.<\/mark>/);
   assert.match(ru, /СТУДИЯ РАЗМЕТКИ/);
   assert.match(ru, /class="studio-primary-action" href="\/ru\/practice\/">Исследовать паттерны/);
   assert.doesNotMatch(ru, /Открыть тематический сет/);

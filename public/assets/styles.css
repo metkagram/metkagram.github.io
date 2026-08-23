@@ -841,8 +841,6 @@ body.home-studio { min-height: 100vh; background-color: var(--studio-stage); bac
 body.home-studio::before { opacity: .16; background-image: radial-gradient(#fff 0.5px, transparent .6px); mix-blend-mode: screen; }
 .home-studio .site-header--studio { width: 100%; max-width: none; grid-template-columns: auto 1fr auto; border: 0; padding: 1.45rem clamp(1.25rem, 4vw, 4rem); background: #080808; color: #fff; }
 .home-studio .site-header--studio .wordmark { width: clamp(12rem, 17vw, 17rem); }
-.home-studio .site-header--studio .wordmark-name { position: absolute; z-index: 3; left: 0; display: block; color: #fff; font-family: var(--sans); font-size: clamp(1.45rem, 2.25vw, 2.35rem); font-weight: 900; letter-spacing: -.085em; line-height: 1; }
-.site-header:not(.site-header--studio) .wordmark-name { display: none; }
 .home-studio .site-header--studio .wordmark img, body:not(.home-studio) .site-header .wordmark img { position: relative; z-index: 2; }
 .home-studio .site-header--studio .site-nav a { color: color-mix(in srgb, #fff 75%, transparent); }
 .home-studio .site-header--studio .site-nav { display: none; }
@@ -850,6 +848,8 @@ body.home-studio::before { opacity: .16; background-image: radial-gradient(#fff 
 .home-studio .site-header--studio .locale-switch a { min-width: 2.5rem; padding: .48rem .35rem; border-radius: 99rem; color: #fff; }
 .home-studio .site-header--studio .locale-switch a[aria-current="page"] { background: var(--brand); color: #111; }
 .home-studio .site-header--studio .locale-switch span, .home-studio .site-header--studio .native-language-control { display: none; }
+.home-studio .site-header--studio .menu-toggle { align-items: center; justify-content: center; min-height: 2.35rem; padding: .48rem .72rem; border: 1px solid var(--brand); background: var(--brand); color: #111; font-family: var(--mono); font-size: .7rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.home-studio .site-header--studio .menu-toggle:hover { border-color: #fff; background: #fff; color: #111; }
 .studio-home { position: relative; padding: clamp(1rem, 2.8vw, 3rem) clamp(5.5rem, 8vw, 8.5rem) clamp(1rem, 2.8vw, 3rem) clamp(1rem, 2.8vw, 3rem); }
 .studio-board { position: relative; display: grid; grid-template-columns: minmax(18rem, .84fr) minmax(25rem, 1.16fr); gap: clamp(1rem, 2.5vw, 3rem); min-height: min(47rem, calc(100vh - 7rem)); padding: clamp(2rem, 5vw, 4.8rem); overflow: hidden; background-color: #ffca08; background-image: linear-gradient(rgba(255, 196, 0, .18), rgba(255, 196, 0, .18)), url("/assets/images/studio-texture-yellow.jpg"); background-size: cover; box-shadow: .85rem .85rem 0 color-mix(in srgb, var(--studio-shadow) 64%, transparent); transform: rotate(-1.15deg); transform-origin: center; }
 .studio-board::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .22; background-image: radial-gradient(#3e2b00 .6px, transparent .7px); background-size: 5px 5px; mix-blend-mode: multiply; }
@@ -992,7 +992,8 @@ body.home-studio::before { opacity: .16; background-image: radial-gradient(#fff 
 .studio-hero-v2 { display: grid; grid-template-columns: minmax(22rem,.82fr) minmax(34rem,1.18fr); min-height: clamp(42rem,72vh,53rem); overflow: hidden; border-bottom: 1px solid #111; }
 .studio-manifest { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(3rem,6vw,6.5rem) clamp(2rem,5.8vw,6rem); background: color-mix(in srgb,#fffdf5 94%,transparent); }
 .studio-manifest .eyebrow { margin-bottom: clamp(2rem,5vw,4.8rem); color: #111; }
-.studio-manifest h1 { display: grid; justify-items: start; margin: 0; color: #111; font-size: clamp(4.2rem,7.2vw,8rem); font-weight: 900; letter-spacing: -.085em; line-height: .78; text-transform: uppercase; }
+.studio-manifest h1 { display: grid; justify-items: start; margin: 0; color: #111; font-size: clamp(3.7rem,5.8vw,6.5rem); font-weight: 900; letter-spacing: -.075em; line-height: .78; text-transform: uppercase; }
+.home-studio[data-locale="ru"] .studio-manifest h1 { font-size: clamp(3.35rem,5.2vw,5.8rem); }
 .studio-manifest h1 span,.studio-manifest h1 mark { display: block; padding: 0 .04em; }
 .studio-manifest h1 mark { margin-top: .09em; background: var(--brand); color: #111; }
 .studio-manifest > p:not(.eyebrow) { max-width: 34rem; margin: clamp(1.8rem,3vw,2.8rem) 0 0; font-family: var(--mono); font-size: clamp(.92rem,1.3vw,1.13rem); font-weight: 600; line-height: 1.5; }
@@ -1066,7 +1067,8 @@ body.home-studio::before { opacity: .16; background-image: radial-gradient(#fff 
 @media(max-width:560px){
   .studio-manifest { min-height:0; padding:3rem 1.2rem; }
   .studio-manifest .eyebrow { margin-bottom:2.5rem; }
-  .studio-manifest h1 { font-size:clamp(3.65rem,18vw,5.2rem); }
+  .studio-manifest h1 { font-size:clamp(3.3rem,15vw,4.5rem); }
+  .home-studio[data-locale="ru"] .studio-manifest h1 { font-size:clamp(3rem,13.5vw,4.1rem); }
   .studio-primary-action { width:100%; min-width:0; }
   .studio-flow { min-height:58rem; padding:1.2rem; }
   .studio-slips { width:100%; min-height:31rem; }

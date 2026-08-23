@@ -14,14 +14,14 @@ test("root opens the redesigned localized home", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveURL(/\/en\/$/);
   await expect(page.locator("body")).toHaveClass(/home-studio/);
-  await expect(page.getByRole("heading", { name: "Mark.Find.Reuse." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Learn a language through patterns." })).toBeVisible();
 });
 
 test("home keeps the interface switch and presents one unified annotation studio", async ({ page }, testInfo) => {
   await page.goto("/en/");
   const wordmark = page.locator(".site-header .wordmark");
-  await expect(wordmark.getByText("Metka", { exact: true })).toBeVisible();
-  await expect(wordmark.locator(".wordmark-name")).toHaveCSS("color", "rgb(255, 255, 255)");
+  await expect(wordmark.locator("img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-dark.svg");
+  await expect(wordmark.locator(".wordmark-name")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
   await expect(page.getByRole("heading", { name: "Mark what matters." })).toBeVisible();
@@ -42,7 +42,7 @@ test("home keeps the interface switch and presents one unified annotation studio
 
 test("method page explains the learning loop and names its research sources", async ({ page }) => {
   await page.goto("/en/method/");
-  await expect(page.locator(".site-header .wordmark-name")).toHaveText("Metka");
+  await expect(page.locator(".site-header .wordmark img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-light.svg");
   await expect(page.getByRole("heading", { name: "Sentence → Signal → Structure → Pattern → Variation → Recall" })).toBeVisible();
   await expect(page.getByText("A research-oriented, NLP-ready foundation strengthens the method")).toBeVisible();
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
