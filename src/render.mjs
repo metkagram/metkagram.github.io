@@ -1012,8 +1012,29 @@ mcp_servers:
 }
 
 export function gatewayPage() {
-  const body = `<section class="gateway"><header class="gateway-header"><a class="wordmark" href="/ru/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-light.svg" width="800" height="200" alt="Metkagram"></a><p>Phrase-first language practice</p></header><div class="gateway-stage"><div class="gateway-copy"><p class="eyebrow">Metkagram</p><h1>Language lives<br>in phrases.</h1><p class="lede">Read one complete thought. Let its structure become clear. Use it again when you need it.</p><nav aria-label="Choose interface language"><a href="/ru/" lang="ru"><strong>Русский</strong><span>Открыть главную <i aria-hidden="true">→</i></span></a><a href="/en/" lang="en"><strong>English</strong><span>Open home <i aria-hidden="true">→</i></span></a></nav></div><figure class="gateway-sentence" aria-label="A sentence read one word at a time"><figcaption>READ IT AS ONE THOUGHT</figcaption><p aria-label="I want to make this phrase mine."><span style="--delay: 0s">I</span><span style="--delay: .55s">want</span><span style="--delay: 1.1s">to</span><span style="--delay: 1.65s">make</span><span style="--delay: 2.2s">this</span><span style="--delay: 2.75s">phrase</span><span style="--delay: 3.3s">mine.</span></p><small>01 / 01</small></figure></div><footer><span>Metkagram · B2–C1</span><a href="https://github.com/metkagram/metkagram.github.io">GitHub</a><a href="/llms.txt">llms.txt</a></footer></section>`;
-  return layout({ locale: "en", pathname: "/", title: "Choose your Metkagram language experience", description: "Choose English or Russian, then explore annotated English and German phrases and reusable language patterns.", body, root: true, bodyClass: "gateway-body" });
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Metkagram</title>
+  <meta name="description" content="Phrase-first language annotation and reusable patterns for deliberate practice.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="${SITE_URL}/en/">
+  <link rel="alternate" hreflang="en" href="${SITE_URL}/en/">
+  <link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">
+  <link rel="alternate" hreflang="x-default" href="${SITE_URL}/en/">
+  <script>
+    const preferredLocale = (navigator.languages || [navigator.language || "en"])
+      .some((language) => String(language).toLowerCase().startsWith("ru")) ? "ru" : "en";
+    location.replace("/" + preferredLocale + "/");
+  </script>
+  <meta http-equiv="refresh" content="0;url=/en/">
+</head>
+<body>
+  <p><a href="/en/">Open Metkagram</a> · <a href="/ru/" lang="ru">Открыть Metkagram</a></p>
+</body>
+</html>`;
 }
 
 export function notFoundPage(locale = "en") {

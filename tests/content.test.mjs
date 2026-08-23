@@ -51,6 +51,12 @@ test("GitHub Pages artifact has root files and localized HTML", () => {
   }
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
   const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
+  const root = fs.readFileSync(path.join(DIST, "index.html"), "utf8");
+  assert.match(root, /location\.replace\("\/" \+ preferredLocale \+ "\/"\)/);
+  assert.match(root, /<meta http-equiv="refresh" content="0;url=\/en\/">/);
+  assert.match(root, /<meta name="robots" content="noindex,follow">/);
+  assert.match(root, /<link rel="canonical" href="https:\/\/metkagram\.github\.io\/en\/">/);
+  assert.doesNotMatch(root, /gateway-body|Language lives/);
   assert.match(en, /<html lang="en">/);
   assert.match(en, /<span>Mark\.<\/span><span>Find\.<\/span><mark>Reuse\.<\/mark>/);
   assert.match(en, /ANNOTATION STUDIO/);

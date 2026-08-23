@@ -61,7 +61,8 @@ function writeRoute(route, html, lastModified = SITE_RELEASE_DATE) {
   const description = copyMatch(/<meta name="description" content="([^"]+)">/);
   const canonical = copyMatch(/<link rel="canonical" href="([^"]+)">/);
   const language = copyMatch(/<html lang="([^"]+)">/);
-  seoRecords.push({ route: normalized, canonical, language, title, description, lastModified });
+  const robots = copyMatch(/<meta name="robots" content="([^"]+)">/);
+  if (!robots.startsWith("noindex")) seoRecords.push({ route: normalized, canonical, language, title, description, lastModified });
   const file = normalized === "/" ? "index.html" : path.join(normalized.slice(1), "index.html");
   writeFile(file, html);
 }
