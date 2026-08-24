@@ -102,7 +102,7 @@ Every API record carries canonical source metadata and a content hash where the 
 
 - `CITATION.cff` and `public/rights.json` are generated artifacts. Regenerate with `node scripts/release-metadata.mjs` (the build does this first); `tests/release-metadata.test.mjs` fails on drift.
 - Pages, API manifests, MCP specs, citation output and distribution exports derive release/rights/citation values from this module or its leaf sources.
-- Semantic rights copy is rendered at build time. Post-render string replacement must never change licensing, citation or capability meaning (`scripts/enhance-licensing-pages.mjs` is limited to presentation metadata on the two static licensing pages).
+- Semantic rights copy is rendered at build time. Post-render string replacement must never change licensing, citation or capability meaning (`scripts/enhance-licensing-pages.mjs` is limited to presentation metadata on the two static licensing pages; `scripts/release-contracts.mjs` only validates rendered output and fails the build on drift — it never rewrites copy).
 - CC BY-NC 4.0 appears only as explicit history (pre-2026-08-17 revisions); the release-metadata tests reject it as a current-rights statement.
 
 ## URL policy

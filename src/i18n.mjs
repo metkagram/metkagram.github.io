@@ -1,4 +1,21 @@
-export const locales = ["en", "ru"];
+import { interfaceLocales } from "./language-registry.mjs";
+import { SITE_RELEASE_DATE } from "./site.mjs";
+
+// Interface locales come from the canonical language registry — do not fork the list here.
+export const locales = interfaceLocales;
+
+const RELEASE_MONTHS = {
+  en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  ru: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
+};
+
+// The roadmap changelog label derives from the verified editorial release date
+// (src/site.mjs) so it can never drift from the canonical release state.
+export function releaseLabel(locale) {
+  const [year, month] = SITE_RELEASE_DATE.split("-");
+  const name = RELEASE_MONTHS[locale][Number(month) - 1];
+  return locale === "ru" ? `Текущий релиз · ${name} ${year}` : `Current release · ${name} ${year}`;
+}
 
 export const ui = {
   en: {
@@ -49,7 +66,7 @@ export const ui = {
     historyIdeaTitle: "The idea",
     historyIdeaDetail: "Grammar is easier to reuse when it stays inside a complete phrase. Markup reveals the roles in that phrase without turning the page into a rulebook.",
     historyWebTitle: "The web edition",
-    historyWebDetail: "The mobile apps remain listed in their stores. The current work focuses on a public, readable web collection of annotated sets and patterns.",
+    historyWebDetail: "The mobile apps are archived as product history. Current work focuses on the web collection, reusable patterns, Pattern Lens and reviewed comparison layers.",
     historySources: "Sources",
     historyProductSource: "MetalHatsCats product page",
     historyGoogleSource: "Google Play listing",
@@ -57,17 +74,17 @@ export const ui = {
     roadmap: "Roadmap",
     changelog: "Changelog",
     roadmapTitle: "Where Metkagram is going",
-    roadmapIntro: "A public working plan for making annotated language practice clearer and more useful.",
+    roadmapIntro: "A public working plan for a reviewed language-pattern system for learners, teachers and AI.",
     roadmapNow: "Now",
     roadmapNext: "Next",
     roadmapLater: "Later",
-    roadmapNowDetail: "English and German annotated sets, a public pattern catalogue, agent access and a clearer notation guide.",
-    roadmapNextDetail: "More curated reading sets, smoother paths from reading to recall, and better explanations for each tag.",
-    roadmapLaterDetail: "More languages and study formats, guided by the patterns learners return to most often.",
+    roadmapNowDetail: "Pattern Practice, Lens, Atlas, Map, Contrasts, Choice, Routes and Bridge; English/German learning content; a French Frame-only pilot; Thinking in Language; and agent-facing data surfaces.",
+    roadmapNextDetail: "Deeper reviewed evidence: richer contrasts and choices, the next Thinking in Language layer, independent benchmark review, search measurement and selected French Bridges after language review.",
+    roadmapLaterDetail: "Additional learning languages and stronger teacher and agent integrations, added through explicit capability and review gates.",
     changelogTitle: "What changed",
     changelogIntro: "A short record of meaningful updates to the public learning workspace.",
-    changelogCurrent: "Current release · July 2026",
-    changelogCurrentDetail: "New Metkagram identity, unified sentence notation, a clearer home page, shareable language collections, and a public static API with provenance for AI agents and developers.",
+    changelogCurrent: releaseLabel("en"),
+    changelogCurrentDetail: "Added the Move–Frame–Bridge domain model, French Frame-only pilot, public retrieval benchmark, source-available rights layer and 40 Thinking in Language Frames across eight additive sets.",
     homeLanguageTitle: "Choose a language to study",
     homeLanguageDetail: "Start with real sentences, then inspect their structure.",
     homeStartTitle: "Continue with one clear next step",
@@ -85,10 +102,10 @@ export const ui = {
     homeFaqIntro: "A quick guide for learners, researchers and agents working with the collection.",
     homeFaqItems: [
       ["What is the Metkagram method?", "Read a meaningful sentence first, then use minimal functional tags to notice its structure. From there, inspect a reusable pattern, compare variations and return to it later.", "/method/", "Read about the method"],
-      ["What is available on the site?", "Annotated English and German sentences, dialogues, reference collections, a notation guide, and a public catalogue of B2–C1 patterns with examples and variations.", "/explore/", "Browse the collections"],
+      ["What is available on the site?", "Annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims.", "/explore/", "Browse the collections"],
       ["Can an AI agent use the data?", "Yes. The static API, search index, downloadable datasets and MCP specification let agents retrieve patterns, sets and annotated documents. Keep the provenance and canonical link when presenting a record.", "/ai/", "Open agent resources"],
-      ["Is this only a learning website?", "No. The token-level annotation scheme is also an open, machine-readable research resource for NLP-oriented analysis, teaching experiments and language-data work.", "/method/", "See the research approach"],
-      ["Can I reuse or contribute to the project?", "The content is free for personal, educational and other non-commercial use with attribution. For sponsorships, collaborations, research or commercial use, see the partnership page.", "/support/", "Support the project"]
+      ["Is this only a learning website?", "No. Selected annotation data and machine-readable pattern and relation datasets also support NLP-oriented analysis, teaching experiments and research. Current reuse follows the Metkagram licensing terms.", "/method/", "See the research approach"],
+      ["Can I reuse or contribute to the project?", "Reading, linking and citation with attribution are welcome. Substantial copying, redistribution, derived corpora and commercial integration require permission under the current terms; pilots and partnerships are discussed separately.", "/support/", "Support the project"]
     ],
     dialogues: "Dialogues",
     patterns: "Patterns",
@@ -285,7 +302,7 @@ export const ui = {
     historyIdeaTitle: "Идея",
     historyIdeaDetail: "Грамматику проще применять, когда она показана в целой фразе. Разметка объясняет роль слов, но не заменяет живой язык правилами.",
     historyWebTitle: "Теперь — веб",
-    historyWebDetail: "Мобильные приложения остаются в магазинах приложений. Сейчас мы развиваем открытую веб-подборку фраз с разметкой и речевых моделей.",
+    historyWebDetail: "Мобильные приложения сохранены как история продукта. Сейчас развивается веб-проект: разметка, речевые модели, Pattern Lens и проверяемые сравнения.",
     historySources: "Источники",
     historyProductSource: "Страница продукта MetalHatsCats",
     historyGoogleSource: "Страница в Google Play",
@@ -293,17 +310,17 @@ export const ui = {
     roadmap: "Планы",
     changelog: "Изменения",
     roadmapTitle: "Куда движется Metkagram",
-    roadmapIntro: "Публичный план развития проекта.",
+    roadmapIntro: "Публичный план развития проверяемой системы языковых моделей для учащихся, преподавателей и ИИ.",
     roadmapNow: "Сейчас",
     roadmapNext: "Далее",
     roadmapLater: "Позже",
-    roadmapNowDetail: "Карточки с разметкой для английского и немецкого, публичный каталог паттернов, доступ для агентов и понятный справочник.",
-    roadmapNextDetail: "Больше материалов для чтения, удобный переход к повторению и ясные пояснения к обозначениям.",
-    roadmapLaterDetail: "Новые языки и форматы — на основе того, что действительно помогает учиться.",
+    roadmapNowDetail: "Pattern Practice, Lens, Atlas, Map, Contrasts, Choice, Routes и Bridge; английский и немецкий учебный контент; французский Frame-only пилот; Thinking in Language и машиночитаемые поверхности для агентов.",
+    roadmapNextDetail: "Глубже проверять качество: развивать контрасты и Choice, следующий слой Thinking in Language, независимую проверку benchmark, измерение поиска и только затем отобранные французские Bridges.",
+    roadmapLaterDetail: "Новые языки обучения и более сильные интеграции для преподавателей и агентов — через явные capability и review gates.",
     changelogTitle: "Что изменилось",
     changelogIntro: "Коротко о важных обновлениях.",
-    changelogCurrent: "Текущий релиз · июль 2026",
-    changelogCurrentDetail: "Новый дизайн, единая разметка фраз, открытые подборки и статическое API с указанием происхождения данных.",
+    changelogCurrent: releaseLabel("ru"),
+    changelogCurrentDetail: "Добавлены доменная модель Move–Frame–Bridge, французский Frame-only пилот, публичный retrieval benchmark, актуальный слой прав и 40 Thinking in Language Frames в восьми дополнительных сетах.",
     homeLanguageTitle: "Выберите язык",
     homeLanguageDetail: "Начните с живых фраз и разбирайте их по ходу чтения.",
     homeStartTitle: "С чего начать",
@@ -321,10 +338,10 @@ export const ui = {
     homeFaqIntro: "Короткие ответы для учащихся, исследователей и разработчиков.",
     homeFaqItems: [
       ["Как работает Metkagram?", "Сначала вы читаете фразу, затем разметка помогает увидеть её устройство. После этого выделяете модель, сравниваете варианты и возвращаетесь к ней позже.", "/method/", "Подробнее о методе"],
-      ["Что есть на сайте?", "Английские и немецкие фразы с разметкой, диалоги, справочник и каталог моделей B2–C1 с примерами.", "/explore/", "Смотреть материалы"],
+      ["Что есть на сайте?", "Английские и немецкие фразы с разметкой, большой каталог моделей B2–C1, сеты Thinking in Language и ограниченный французский Frame-only пилот без заявлений о французской разметке или интерфейсе.", "/explore/", "Смотреть материалы"],
       ["Может ли ИИ использовать данные?", "Да. API, поисковый индекс, датасеты и MCP дают агентам доступ к моделям и аннотированным материалам с указанием источника.", "/ai/", "Для ИИ и разработчиков"],
-      ["Это только учебный сайт?", "Нет. Токеновая разметка — открытый машиночитаемый ресурс для NLP-анализа, исследований и учебных экспериментов.", "/method/", "Об исследовательском подходе"],
-      ["Можно использовать материалы или помочь проекту?", "Материалы бесплатны для некоммерческого использования с указанием Metkagram. Исследования, партнёрства и коммерческие сценарии обсуждаются отдельно.", "/support/", "Участвовать в проекте"]
+      ["Это только учебный сайт?", "Нет. Выбранные данные разметки и машиночитаемые наборы паттернов и связей также подходят для NLP-анализа, учебных экспериментов и исследований. Повторное использование регулируется текущими условиями Metkagram.", "/method/", "Об исследовательском подходе"],
+      ["Можно использовать материалы или помочь проекту?", "Чтение, ссылки и цитирование с указанием Metkagram приветствуются. Существенное копирование, распространение, производные корпуса и коммерческие интеграции требуют разрешения по текущим условиям; пилоты и партнёрства обсуждаются отдельно.", "/support/", "Участвовать в проекте"]
     ],
     dialogues: "Диалоги",
     patterns: "паттерны",

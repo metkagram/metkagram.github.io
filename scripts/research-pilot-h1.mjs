@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { SITE_RELEASE_DATE } from '../src/site.mjs';
+import { SITE_RELEASE_DATE, SITE_URL } from '../src/site.mjs';
+import { ATTRIBUTION } from '../src/provenance.mjs';
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
-const SITE_URL = 'https://metkagram.github.io';
 const SOCIAL_IMAGE = `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`;
 const source = path.join(ROOT, 'data', 'research', 'h1-cue-utility-v1.json');
 const study = JSON.parse(fs.readFileSync(source, 'utf8'));
@@ -112,7 +112,7 @@ function page(locale) {
   <link rel="stylesheet" href="/assets/research-pilot-h1.css">
   <script type="application/ld+json">${pageStructured}</script>
   <script type="application/ld+json">${researchStructured}</script>
-  <meta name="metkagram-rights" content="source-available-not-open-source">
+  <meta name="metkagram-rights" content="${ATTRIBUTION.rights_status}">
   <link rel="license" href="/${locale}/licensing/">
 </head>
 <body class="research-pilot-body" data-locale="${locale}">
@@ -124,11 +124,11 @@ function page(locale) {
     <div class="header-preferences"><div class="locale-switch" aria-label="${ru ? 'Выберите язык интерфейса' : 'Choose the interface language'}"><a href="/en/research/pilot-h1/" lang="en"${locale === 'en' ? ' aria-current="page"' : ''}>EN</a><span aria-hidden="true">/</span><a href="/ru/research/pilot-h1/" lang="ru"${locale === 'ru' ? ' aria-current="page"' : ''}>RU</a></div></div>
   </header>
   <main id="content">
-    <section class="page-head section-pad"><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.headline}</h1><p class="lede">${copy.intro}</p><p>${copy.boundary}</p><p>${copy.notation}</p><div class="pilot-notation-guide" aria-label="Metkagram notation legend"><span><b>S</b> subject</span><span><b>V</b> main verb</span><span><b>M</b> modal / helper</span><span><b>v2</b> verb after modal</span></div><p><a href="https://github.com/metkagram/metkagram.github.io/blob/main/docs/RESEARCH_PILOT_H1.md">${copy.protocol} ↗</a></p><p><small>${copy.privacy}</small></p></section>
+    <section class="page-head section-pad"><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.headline}</h1><p class="lede">${copy.intro}</p><p>${copy.boundary}</p><p>${copy.notation}</p><div class="pilot-notation-guide" aria-label="Metkagram notation legend"><span><b>S</b> subject</span><span><b>V</b> main verb</span><span><b>M</b> modal / helper</span><span><b>v2</b> verb after modal</span></div><p><a href="${ATTRIBUTION.source_repository}/blob/main/docs/RESEARCH_PILOT_H1.md">${copy.protocol} ↗</a></p><p><small>${copy.privacy}</small></p></section>
     <div data-h1-pilot></div>
   </main>
   <aside class="share-bar section-pad" data-share-bar data-share-url="${canonical}" data-share-title="${title}" data-share-copied="${copy.copied}" aria-label="${copy.shareLabel}"><span class="share-label">${copy.shareLabel}</span><div class="share-actions"><button type="button" class="share-button" data-copy-link>${copy.copyLink}</button><button type="button" class="share-button" data-print-page>${copy.print}</button></div><output class="share-feedback" data-share-feedback aria-live="polite"></output></aside>
-  <footer class="site-footer site-footer--index"><div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${ru ? 'Фразы, паттерны, осознанная практика.' : 'Phrases, patterns, deliberate practice.'}</p></div><nav class="footer-links" aria-label="${ru ? 'Навигация в подвале' : 'Footer navigation'}"><a href="/${locale}/explore/">${ru ? 'Библиотека' : 'Library'}</a><a href="/${locale}/practice/">${ru ? 'Практика' : 'Practice'}</a><a href="/${locale}/research/">${copy.back}</a><a href="/${locale}/about/">${ru ? 'О проекте' : 'About'}</a><a href="/${locale}/ai/">${ru ? 'Для ИИ и разработчиков' : 'For AI & Developers'}</a><a href="/${locale}/contact/">${ru ? 'Контакты' : 'Contact'}</a></nav><p class="footer-languages"><strong>EN · DE</strong><span>${ru ? 'Паттерны B2–C1' : 'B2–C1 patterns'}</span></p><div class="footer-bottom"><p>${ru ? 'Проект Applied Systems Lab в MetalHatsCats.' : 'A project connected to Applied Systems Lab at MetalHatsCats.'}</p><nav aria-label="${ru ? 'Юридическая информация' : 'Legal information'}"><a href="/${locale}/legal/privacy/">${ru ? 'Приватность' : 'Privacy'}</a><a href="/${locale}/legal/terms/">${ru ? 'Условия' : 'Terms'}</a><a href="https://github.com/metkagram/metkagram.github.io">${ru ? 'Исходный код' : 'Source'}</a></nav></div></footer>
+  <footer class="site-footer site-footer--index"><div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${ru ? 'Фразы, паттерны, осознанная практика.' : 'Phrases, patterns, deliberate practice.'}</p></div><nav class="footer-links" aria-label="${ru ? 'Навигация в подвале' : 'Footer navigation'}"><a href="/${locale}/explore/">${ru ? 'Библиотека' : 'Library'}</a><a href="/${locale}/practice/">${ru ? 'Практика' : 'Practice'}</a><a href="/${locale}/research/">${copy.back}</a><a href="/${locale}/about/">${ru ? 'О проекте' : 'About'}</a><a href="/${locale}/ai/">${ru ? 'Для ИИ и разработчиков' : 'For AI & Developers'}</a><a href="/${locale}/contact/">${ru ? 'Контакты' : 'Contact'}</a></nav><p class="footer-languages"><strong>EN · DE</strong><span>${ru ? 'Паттерны B2–C1' : 'B2–C1 patterns'}</span></p><div class="footer-bottom"><p>${ru ? 'Проект Applied Systems Lab в MetalHatsCats.' : 'A project connected to Applied Systems Lab at MetalHatsCats.'}</p><nav aria-label="${ru ? 'Юридическая информация' : 'Legal information'}"><a href="/${locale}/legal/privacy/">${ru ? 'Приватность' : 'Privacy'}</a><a href="/${locale}/legal/terms/">${ru ? 'Условия' : 'Terms'}</a><a href="${ATTRIBUTION.source_repository}">${ru ? 'Исходный код' : 'Source'}</a></nav></div></footer>
   <script type="module" src="/assets/app.js"></script>
   <script type="module" src="/assets/research-pilot-h1.js"></script>
 </body>

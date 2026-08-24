@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
+import { releaseLabel } from "../src/i18n.mjs";
+import { getLanguage } from "../src/language-registry.mjs";
 import {
   HISTORICAL_LICENSE,
   RELEASE,
@@ -127,4 +129,44 @@ test("language capability declarations match the registry", () => {
 
   const apiLanguages = JSON.parse(fs.readFileSync(path.join(DIST, "api/v1/languages.json"), "utf8"));
   assert.deepEqual(apiLanguages.data.map((entry) => entry.code), corpusLanguages());
+  for (const entry of apiLanguages.data) {
+    assert.equal(entry.name, getLanguage(entry.code).nativeName, `languages.json name for ${entry.code} must come from the registry`);
+  }
+});
+
+test("human-readable docs carry the canonical academic citation", () => {
+  // Markdown emphasis markers are stripped before comparing against the
+  // canonical plain-text citation from src/release.mjs.
+  const canonical = citationFormats().academic;
+  for (const relative of ["LICENSING.md", "docs/RESEARCH_USE.md"]) {
+    const text = fs.readFileSync(path.join(ROOT, relative), "utf8").replaceAll("*", "");
+    assert.ok(text.includes(canonical), `${relative} drifted from the canonical citation: ${canonical}`);
+  }
+});
+
+test("llms.txt uses the canonical citation formats", () => {
+  const llms = fs.readFileSync(path.join(DIST, "llms.txt"), "utf8");
+  assert.ok(llms.includes(`Academic: ${citationFormats().academic}`), "llms.txt academic citation must come from citationFormats()");
+  assert.ok(llms.includes(`AI-generated answer: "${citationFormats().ai_answer}"`));
+  assert.ok(!llms.includes(HISTORICAL_LICENSE.license), "llms.txt must not name the historical license");
+});
+
+test("distribution surfaces derive rights and language metadata", () => {
+  const card = fs.readFileSync(path.join(DIST, "distribution", "huggingface", "README.md"), "utf8");
+  assert.ok(card.includes(`license_name: ${ATTRIBUTION.license}`));
+  assert.ok(card.includes(`license_link: ${ATTRIBUTION.license_url}`));
+  assert.ok(!card.includes(HISTORICAL_LICENSE.license), "dataset card must not present CC BY-NC as current");
+
+  for (const locale of ["en", "ru"]) {
+    const cite = fs.readFileSync(path.join(DIST, locale, "cite", "index.html"), "utf8");
+    assert.ok(cite.includes(citationFormats().publication), `${locale}/cite/ must carry the canonical publication citation`);
+  }
+});
+
+test("roadmap release label derives from the canonical release date", () => {
+  const month = SITE_RELEASE_DATE.slice(0, 7);
+  for (const locale of ["en", "ru"]) {
+    const html = fs.readFileSync(path.join(DIST, locale, "roadmap", "index.html"), "utf8");
+    assert.ok(html.includes(`<time datetime="${month}">${releaseLabel(locale)}</time>`), `${locale}/roadmap/ release label must derive from SITE_RELEASE_DATE`);
+  }
 });

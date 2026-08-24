@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { SITE_URL, breadcrumbs, escapeHtml, layout, patternTitle } from "./render.mjs";
+import { corpusLanguages } from "./release.mjs";
 import { patternPath, patternUrl, studySetPath } from "./seo-slugs.mjs";
 
 const ROOT = process.cwd();
@@ -157,7 +158,7 @@ export function patternTopicPage(locale, topic, topics, content) {
     learningResourceType: "Language pattern collection",
     teaches: visibleUseCases,
     about: sets.map((set) => ru ? set.title_ru : set.title_en),
-    inLanguage: ["en", "de"],
+    inLanguage: corpusLanguages(),
     isAccessibleForFree: true
   };
 

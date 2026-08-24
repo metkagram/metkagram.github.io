@@ -71,9 +71,9 @@ The project should not claim category 3 on the basis of categories 1 or 2. Resea
 
 The repository history, versioned datasets, stable record identifiers, content hashes, and canonical URLs are part of the project's provenance trail. When publishing work based on Metkagram, record the dataset version and the exact subset used whenever possible.
 
-Recommended project citation:
+Recommended project citation (canonical form generated from `src/release.mjs`):
 
-> Metkagram (2026). *Metkagram: functional language annotation and reusable pattern corpus.* https://metkagram.github.io/
+> Kharlanau, D. (2026). *Metkagram: Visual Language Patterns and Annotated Learning Resources* (version 1.0.0) [Dataset]. https://metkagram.github.io/
 
 For a particular pattern or annotated record, also cite its canonical URL.
 

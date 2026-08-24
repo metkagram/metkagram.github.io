@@ -9,9 +9,8 @@
 // composes: site.mjs, provenance.mjs, language-registry.mjs) instead of keeping
 // their own copies. Validation lives in tests/release-metadata.test.mjs.
 
-import fs from "node:fs";
 import { SITE_RELEASE_DATE, SITE_URL } from "./site.mjs";
-import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
+import { ATTRIBUTION, getDatasetVersion, getProductVersion } from "./provenance.mjs";
 import { languageRegistry, publicLanguageMatrix } from "./language-registry.mjs";
 
 export const RIGHTS_EFFECTIVE_DATE = "2026-08-17";
@@ -25,13 +24,9 @@ export const HISTORICAL_LICENSE = Object.freeze({
   note: "Rights already granted for copies received under prior CC BY-NC 4.0 terms are not revoked.",
 });
 
-export function getProductVersion() {
-  try {
-    return JSON.parse(fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")).version || "1.0.0";
-  } catch {
-    return "1.0.0";
-  }
-}
+// The product version reader lives in provenance.mjs (single implementation);
+// re-exported here so consumers can take everything from the canonical module.
+export { getProductVersion };
 
 // Learning languages with a published pattern corpus. French stays a bounded
 // Frame-only pilot (status "pilot") and is deliberately excluded until its

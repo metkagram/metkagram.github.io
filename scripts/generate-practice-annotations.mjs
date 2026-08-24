@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
-import { cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
+import { ANNOTATION_SCHEMA_VERSION, cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
 import { loadContent } from "../src/content.mjs";
 
 const ROOT = process.cwd();
@@ -67,7 +67,7 @@ async function main() {
 
   if (Object.keys(items).length !== work.length) throw new Error("Annotation export has duplicate or missing record keys");
   const payload = {
-    schema_version: "1.0.0",
+    schema_version: ANNOTATION_SCHEMA_VERSION,
     generated_at: new Date().toISOString(),
     generator: "local-spacy-dependency",
     models: Object.fromEntries(Object.entries(health.models).map(([language, model]) => [language, { name: model.name, version: model.version }])),

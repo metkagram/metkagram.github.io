@@ -1,4 +1,5 @@
 import { patternPath } from "./seo-slugs.mjs";
+import { SITE_URL } from "./site.mjs";
 
 const LOGIC_STOP_WORDS = new Set([
   "a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "is", "of", "on", "or", "the", "to", "vs", "with"
@@ -49,7 +50,7 @@ function formulaMap(pattern) {
   return Object.fromEntries((pattern.langs || []).map((language) => [language.lang, language.formula]));
 }
 
-export function buildPatternGraph(patterns, { maxRelated = 4, siteUrl = "https://metkagram.github.io", patternPathFor = patternPath } = {}) {
+export function buildPatternGraph(patterns, { maxRelated = 4, siteUrl = SITE_URL, patternPathFor = patternPath } = {}) {
   const publicPatterns = patterns
     .filter((pattern) => pattern?.id && pattern.reasoning?.move)
     .sort((left, right) => left.id.localeCompare(right.id));

@@ -5,6 +5,7 @@ import { collectionKeys, targetMeta } from "../src/i18n.mjs";
 import { intentById } from "../src/intents.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { SITE_URL } from "../src/site.mjs";
 import {
   classifyReasoningSentence,
   PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE,
@@ -16,7 +17,7 @@ import {
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
 const TARGET_KEY = { en: "english", de: "german" };
-const BASE_URL = "https://metkagram.github.io";
+const BASE_URL = SITE_URL;
 const QUALITY_BENCHMARK = path.join(ROOT, "data", "evaluation", "public-learning-links.json");
 
 function escapeHtml(value = "") {

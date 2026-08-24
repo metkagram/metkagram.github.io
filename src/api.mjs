@@ -3,7 +3,7 @@ import { patternUrl, studySetSlug, studySetUrl } from "./seo-slugs.mjs";
 import { collectionKeys, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion, getReleaseDate, provenance, stableHash, wrapList, wrapRecord } from "./provenance.mjs";
 import { citationFormats, corpusLanguages } from "./release.mjs";
-import { annotationLanguages } from "./language-registry.mjs";
+import { annotationLanguages, getLanguage } from "./language-registry.mjs";
 
 const API_BASE = "/api/v1";
 const API_URL = `${SITE_URL}${API_BASE}`;
@@ -221,7 +221,7 @@ function buildLanguagesApi(patterns, studySets, files, routes) {
     const count = patterns.filter((p) => p.langs.some((l) => l.lang === lang)).length;
     return {
       code: lang,
-      name: lang === "en" ? "English" : "German",
+      name: getLanguage(lang).nativeName,
       pattern_count: count,
       set_count: studySets.sets.length,
       api_url: apiUrl(`/subsets/language/${lang}.json`),
@@ -617,7 +617,7 @@ function buildAttributionPolicy(files, routes) {
       summary: "Public access supports reading, linking and citation; substantial reuse requires scoped permission under the current Metkagram terms.",
       requirements: [
         "Keep the name 'Metkagram' visible or mentioned when data is shown to users.",
-        "Link to the canonical source URL https://metkagram.github.io/.",
+        `Link to the canonical source URL ${SITE_URL}/.`,
         "Credit the creator/maintainer and link to the profile URLs provided in this record.",
         "State the dataset version when citing or syncing data.",
         "Provide a visible link back to the relevant Metkagram page for every record shown.",
@@ -665,7 +665,7 @@ function buildIndex(apiRoutes, counts, files, routes) {
       { path: "/categories.json", url: apiUrl("/categories.json"), type: "list", description: "Pattern categories" },
       { path: "/categories/{id}.json", url: apiUrl("/categories/{id}.json"), type: "list", description: "Patterns in a category" },
       { path: "/languages.json", url: apiUrl("/languages.json"), type: "list", description: "Target languages and counts" },
-      { path: "/subsets/language/{en|de}.json", url: apiUrl("/subsets/language/en.json"), type: "dataset", description: "Language-specific pattern subset" },
+      { path: `/subsets/language/{${corpusLanguages().join("|")}}.json`, url: apiUrl("/subsets/language/en.json"), type: "dataset", description: "Language-specific pattern subset" },
       { path: "/subsets/set/{id}.json", url: apiUrl("/subsets/set/arg.json"), type: "dataset", description: "Set-specific pattern subset" },
       { path: "/annotations/{target}/{collection}.json", url: apiUrl("/annotations/en/dialogues.json"), type: "list", description: "Annotated documents in a collection" },
       { path: "/annotations/{target}/{collection}/{id}.json", url: apiUrl("/annotations/en/dialogues/example.json"), type: "record", description: "Single annotated document" },
@@ -755,6 +755,7 @@ export function buildApi(content, counts) {
 }
 
 export function buildLlmsTxt(content, counts) {
+  const citations = citationFormats();
   const lines = [
     "# Metkagram",
     "",
@@ -784,9 +785,9 @@ export function buildLlmsTxt(content, counts) {
     "",
     "## How to cite",
     "",
-    'Web page: "Source: Metkagram — https://metkagram.github.io/" with a link to the relevant pattern or document page.',
-    `Academic: Metkagram (${new Date().getFullYear()}). B2–C1 English and German language patterns. ${SITE_URL}. ${ATTRIBUTION.license}.`,
-    'AI-generated answer: "This answer uses data from Metkagram (https://metkagram.github.io/). See the source page for the full pattern and attribution."',
+    `Web page: ${citations.application.replace("{canonical_url}", "the relevant pattern or document page")}`,
+    `Academic: ${citations.academic}`,
+    `AI-generated answer: "${citations.ai_answer}"`,
     "",
     "## Contact",
     "",

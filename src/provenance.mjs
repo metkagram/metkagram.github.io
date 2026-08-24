@@ -31,7 +31,7 @@ export const ATTRIBUTION = {
 const DATA_ROOT = fileURLToPath(new URL("../data/", import.meta.url));
 let cachedDatasetVersion;
 
-function readPackageVersion() {
+export function getProductVersion() {
   try {
     return JSON.parse(fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")).version || "1.0.0";
   } catch {
@@ -65,7 +65,7 @@ function datasetFingerprint() {
 }
 
 export function getDatasetVersion() {
-  if (!cachedDatasetVersion) cachedDatasetVersion = `${readPackageVersion()}+${datasetFingerprint()}`;
+  if (!cachedDatasetVersion) cachedDatasetVersion = `${getProductVersion()}+${datasetFingerprint()}`;
   return cachedDatasetVersion;
 }
 

@@ -1,4 +1,6 @@
 import { ATTRIBUTION, getDatasetVersion } from "./provenance.mjs";
+import { corpusLanguages } from "./release.mjs";
+import { translationLocales } from "./language-registry.mjs";
 import { breadcrumbs, escapeHtml, layout } from "./render.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "./site.mjs";
 
@@ -43,7 +45,7 @@ function datasetSchema(locale, key, dataset, counts) {
     url: `${SITE_URL}${pathname}`,
     mainEntityOfPage: { "@id": `${SITE_URL}${pathname}#webpage` },
     includedInDataCatalog: { "@id": `${SITE_URL}/${locale}/data/#data-catalog` },
-    inLanguage: ["en", "de", "ru"],
+    inLanguage: [...corpusLanguages(), ...translationLocales],
     keywords: dataset.keywords,
     license: ATTRIBUTION.license_url,
     creator: { "@type": "Organization", name: ATTRIBUTION.creator, url: ATTRIBUTION.creator_url },

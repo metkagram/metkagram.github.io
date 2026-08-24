@@ -97,12 +97,10 @@ write("distribution/huggingface/patterns.jsonl", `${jsonl}\n`);
 const datasetCard = `---
 pretty_name: Metkagram Language Pattern Corpus
 language:
-- en
-- de
-- ru
+${[...corpusLanguages(), ...translationLocales].map((lang) => `- ${lang}`).join("\n")}
 license: other
-license_name: Metkagram Source-Available Terms
-license_link: https://metkagram.github.io/en/licensing/
+license_name: ${ATTRIBUTION.license}
+license_link: ${ATTRIBUTION.license_url}
 tags:
 - language-learning
 - linguistic-patterns
@@ -189,7 +187,7 @@ function citationPage(locale) {
         version: getDatasetVersion(),
         license: ATTRIBUTION.terms_url,
         isAccessibleForFree: true,
-        inLanguage: ["en", "de", "ru"],
+        inLanguage: [...corpusLanguages(), ...translationLocales],
       }],
     }),
     metadata: {
@@ -203,10 +201,10 @@ function citationPage(locale) {
   };
 }
 
-const citationPages = ["en", "ru"].map(citationPage);
+const citationPages = interfaceLocales.map(citationPage);
 for (const page of citationPages) write(`${page.route.slice(1)}index.html`, page.html);
 
-for (const locale of ["en", "ru"]) {
+for (const locale of interfaceLocales) {
   const ru = locale === "ru";
   const section = `<section class="ai-section section-pad ruled" data-publication-citation><div><p class="eyebrow">Citation</p><h2>${ru ? "Цитируйте данные как источник" : "Cite the data as a source"}</h2><p>${ru ? "Версия, canonical URLs и текущие условия собраны на отдельной странице." : "Dataset version, canonical URLs and current terms are collected on one page."}</p></div><div class="legal-inline-links"><a href="/${locale}/cite/">${ru ? "Как цитировать" : "How to cite"} →</a></div></section>`;
   for (const relative of [`${locale}/ai/index.html`, `${locale}/data/index.html`, `${locale}/build-with-metkagram/index.html`]) {

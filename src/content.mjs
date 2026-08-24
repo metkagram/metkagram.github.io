@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { collectionKeys, targetMeta } from "./i18n.mjs";
+import { corpusLanguages } from "./release.mjs";
 
 const ROOT = process.cwd();
 const PRACTICE_QUALITY_SET_IDS = new Set(["CGR", "SPK", "INT", "REG", "RTR", "TRN"]);
@@ -206,14 +207,15 @@ function validateDocument(doc, file, index) {
 }
 
 function validatePattern(pattern, index, validSetIds) {
+  const expectedLangs = corpusLanguages();
   assert(typeof pattern.id === "string" && pattern.id, `advanced-patterns[${index}].id is required`);
   assert(typeof pattern.title_ru === "string" && pattern.title_ru, `advanced-patterns[${index}].title_ru is required`);
   assert(typeof pattern.group_id === "string" && pattern.group_id, `advanced-patterns[${index}].group_id is required`);
   assert(typeof pattern.set_id === "string" && validSetIds.has(pattern.set_id), `advanced-patterns[${index}].set_id is not a valid study set`);
   assert(Array.isArray(pattern.langs) && pattern.langs.length > 0, `advanced-patterns[${index}].langs is required`);
-  assert(new Set(pattern.langs.map((lang) => lang.lang)).size === 2, `advanced-patterns[${index}] must include English and German`);
+  assert(new Set(pattern.langs.map((lang) => lang.lang)).size === expectedLangs.length, `advanced-patterns[${index}] must include every corpus language (${expectedLangs.join(", ")})`);
   for (const [langIndex, lang] of pattern.langs.entries()) {
-    assert(["en", "de"].includes(lang.lang), `advanced-patterns[${index}].langs[${langIndex}].lang is invalid`);
+    assert(expectedLangs.includes(lang.lang), `advanced-patterns[${index}].langs[${langIndex}].lang is invalid`);
     assert(typeof lang.formula === "string" && lang.formula.trim(), `advanced-patterns[${index}].langs[${langIndex}].formula is required`);
     assert(typeof lang.example === "string" && lang.example.trim(), `advanced-patterns[${index}].langs[${langIndex}].example is required`);
     assert(typeof lang.translation === "string" && lang.translation.trim(), `advanced-patterns[${index}].langs[${langIndex}].translation is required`);
