@@ -143,7 +143,7 @@ test("method routes keep the learning loop and annotation readable without JavaS
   const ru = fs.readFileSync(path.join(DIST, "ru/method/index.html"), "utf8");
   assert.match(en, /Sentence → Tag → Structure → Pattern → Variation → Recall/);
   assert.match(en, /One coherent annotation system/);
-  assert.match(en, /open English–German library for learning and NLP analysis/);
+  assert.match(en, /publicly inspectable English–German library for learning and NLP analysis/);
   assert.match(en, /spaced repetition\?/);
   assert.match(en, /role="tooltip"/);
   assert.match(en, /aria-describedby="method-tag-/);

@@ -96,6 +96,15 @@ Every API record carries canonical source metadata and a content hash where the 
 
 `SITE_RELEASE_DATE` represents the verified editorial release date for substantial changes. It is not generated from wall-clock build time.
 
+## Release and rights metadata
+
+`src/release.mjs` is the canonical release state for the project: canonical URL, release date, product/dataset versions, current rights/licensing state, citation metadata, language capabilities and the public evidence boundary. It composes the leaf sources (`src/site.mjs`, `src/provenance.mjs`, `src/language-registry.mjs`, `package.json`) instead of duplicating them.
+
+- `CITATION.cff` and `public/rights.json` are generated artifacts. Regenerate with `node scripts/release-metadata.mjs` (the build does this first); `tests/release-metadata.test.mjs` fails on drift.
+- Pages, API manifests, MCP specs, citation output and distribution exports derive release/rights/citation values from this module or its leaf sources.
+- Semantic rights copy is rendered at build time. Post-render string replacement must never change licensing, citation or capability meaning (`scripts/enhance-licensing-pages.mjs` is limited to presentation metadata on the two static licensing pages).
+- CC BY-NC 4.0 appears only as explicit history (pre-2026-08-17 revisions); the release-metadata tests reject it as a current-rights statement.
+
 ## URL policy
 
 - Canonical origin: `https://metkagram.github.io`.

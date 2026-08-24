@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { buildPatternGraph } from "../src/pattern-graph.mjs";
-import { stableHash, wrapRecord } from "../src/provenance.mjs";
+import { wrapRecord } from "../src/provenance.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { SITE_URL } from "../src/site.mjs";
 
 const DIST = path.resolve("dist");
-const SITE_URL = "https://metkagram.github.io";
 const API_URL = `${SITE_URL}/api/v1`;
 
 function readJson(relativePath) {
@@ -146,22 +146,6 @@ patchJson("api/v1/openapi.json", (spec) => {
       }
     }
   };
-});
-
-patchJson("api/v1/attribution.json", (wrapped) => {
-  const policy = wrapped.data?.policy;
-  if (!policy) return;
-  policy.summary = "Public access supports reading, linking and citation; substantial reuse requires scoped permission under the current Metkagram terms.";
-  policy.allowed_use = [
-    "Ordinary personal end-user use of the hosted Metkagram site.",
-    "Reading, linking, citation and inspection consistent with the current Metkagram terms.",
-    "Other reuse only where a scoped written permission or independently applicable law allows it."
-  ];
-  policy.commercial_use = "Commercial integration, redistribution, resale, model training on substantial Metkagram material and derived corpora require prior written permission unless applicable law independently permits the use.";
-  if (policy.citation_formats) {
-    policy.citation_formats.academic = `Metkagram (2026). Visual language annotation and reusable reasoning patterns. ${SITE_URL}. Current rights: ${SITE_URL}/en/licensing/.`;
-  }
-  if (wrapped.provenance) wrapped.provenance.content_hash = stableHash(wrapped.data);
 });
 
 const llmsFile = path.join(DIST, "llms.txt");

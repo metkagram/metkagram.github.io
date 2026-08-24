@@ -32,11 +32,13 @@ import { buildApi, buildLlmsTxt, buildRobotsTxt } from "../src/api.mjs";
 import { dataIndexPage, datasetKeys, datasetPage } from "../src/data-pages.mjs";
 import { buildQualityReport } from "../src/quality.mjs";
 import { buildCompleteSearchIndex } from "../src/search-index.mjs";
-import { getDatasetVersion } from "../src/provenance.mjs";
+import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
+import { corpusLanguages } from "../src/release.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { legacyPatternPath, legacyStudySetPath, patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
 import { cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
+import { writeReleaseMetadata } from "./release-metadata.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -82,6 +84,8 @@ function writeLegacyRedirect(source, destination, canonicalHtml) {
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${title}</title>
   <meta name="description" content="${description}">
+  <meta name="metkagram-rights" content="${ATTRIBUTION.rights_status}">
+  <link rel="license" href="/${language}/licensing/">
   <link rel="canonical" href="${canonical}">
   <meta http-equiv="refresh" content="0;url=${destination}">
 </head>
@@ -200,7 +204,8 @@ function buildCatalog(content, counts) {
     version: getDatasetVersion(),
     name: "Metkagram public collection catalog",
     description: "Annotated English and German documents, reusable B2–C1 patterns, and reasoning frames.",
-    license: "See https://metkagram.github.io/LICENSE",
+    license: ATTRIBUTION.license,
+    license_url: ATTRIBUTION.license_url,
     counts: { ...counts, reasoningFrames: reasoningCount },
     landingPages: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])),
     qualityReport: `${SITE_URL}/data/quality-report.json`,
@@ -237,6 +242,9 @@ function buildReasoningIndex(content) {
 }
 
 function build() {
+  // Canonical release artifacts (CITATION.cff, public/rights.json) are
+  // regenerated from src/release.mjs before anything reads or copies them.
+  writeReleaseMetadata(ROOT);
   fs.rmSync(DIST, { recursive: true, force: true });
   fs.mkdirSync(DIST, { recursive: true });
   copyPublic();
@@ -319,7 +327,7 @@ function build() {
   const catalog = buildCatalog(content, counts);
   writeFile("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
   writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, canonical annotations, complete advanced patterns, quality metadata, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "version", "collections", "advancedPatterns"] }, canonicalAnnotation: { type: "object", required: ["schema_version", "id", "kind", "text", "language", "spans", "source", "validation"], properties: { schema_version: { const: "1.0.0" }, text: { type: "string" }, spans: { type: "array", items: { type: "object", required: ["id", "start", "end", "type", "label"] } } } }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs", "quality"] }, patternQuality: { type: "object", required: ["status", "indexable", "min_unique_examples", "translations_complete", "languages"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
-  writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: ["en", "de"], architecture: "deterministic static HTML with progressive enhancement", datasetVersion: getDatasetVersion(), catalog: `${SITE_URL}/data/catalog.json`, dataDirectory: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])) }, null, 2)}\n`);
+  writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: corpusLanguages(), architecture: "deterministic static HTML with progressive enhancement", datasetVersion: getDatasetVersion(), catalog: `${SITE_URL}/data/catalog.json`, dataDirectory: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])) }, null, 2)}\n`);
 
   const redirects = buildRedirectManifest(content);
   writeFile("migration/redirects.json", `${JSON.stringify(redirects, null, 2)}\n`);

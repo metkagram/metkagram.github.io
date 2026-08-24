@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { ATTRIBUTION, getDatasetVersion, wrapRecord } from "../src/provenance.mjs";
+import { citationFormats, corpusLanguages } from "../src/release.mjs";
+import { interfaceLocales, translationLocales } from "../src/language-registry.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 
 const ROOT = process.cwd();
@@ -52,15 +54,15 @@ const publication = {
   canonicalSite: SITE_URL,
   repository: ATTRIBUTION.source_repository,
   languages: {
-    learning: ["en", "de"],
-    learnerSupport: ["ru"],
-    interface: ["en", "ru"],
+    learning: corpusLanguages(),
+    learnerSupport: [...translationLocales],
+    interface: [...interfaceLocales],
   },
   counts: {
     patterns: patternRecords.length,
   },
   citation: {
-    web: `Metkagram. Visual language patterns and annotated learning resources. ${SITE_URL}/. Dataset version ${getDatasetVersion()}.`,
+    web: citationFormats().publication,
     ai: ATTRIBUTION.attribution_text,
     cff: `${SITE_URL}/CITATION.cff`,
     pages: { en: `${SITE_URL}/en/cite/`, ru: `${SITE_URL}/ru/cite/` },

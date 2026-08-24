@@ -9,51 +9,9 @@ const STORE_URLS = [
   "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918",
 ];
 
-function archiveCopy(locale) {
-  return locale === "ru"
-    ? {
-        eyebrow: "04 · История продукта",
-        title: "Мобильное приложение было этапом исследования",
-        detail: "Карточки, разметка и повторение были проверены в мобильном продукте. Сейчас активный Metkagram развивается в вебе вокруг Pattern Lens, Pattern Atlas, сравнений и практики.",
-        link: "История мобильного приложения",
-      }
-    : {
-        eyebrow: "04 · Product history",
-        title: "The mobile app became a research stage",
-        detail: "Cards, annotation and repetition were tested in the mobile product. Active Metkagram now develops on the web around Pattern Lens, Pattern Atlas, contrasts and practice.",
-        link: "Mobile app history",
-      };
-}
-
 function replaceAllKnown(html, replacements) {
   for (const [from, to] of replacements) html = html.replaceAll(from, to);
   return html;
-}
-
-function patchHome(locale) {
-  const file = path.join(DIST, locale, "index.html");
-  if (!fs.existsSync(file)) return;
-  let html = fs.readFileSync(file, "utf8");
-  const copy = archiveCopy(locale);
-  const replacement = `$1<article><p class="eyebrow">${copy.eyebrow}</p><h2>${copy.title}</h2><p>${copy.detail}</p><a class="text-link" href="/${locale}/apps/">${copy.link} <span aria-hidden="true">→</span></a></article></section>`;
-  html = html.replace(/(<section class="home-connect[^>]*>[\s\S]*?<\/article>)<article>[\s\S]*?<nav class="home-store-links"[\s\S]*?<\/nav><\/article><\/section>/, replacement);
-
-  const replacements = locale === "ru"
-    ? [
-        ["Читайте фразы. Замечайте структуру.", "Из живой фразы — в модель для собственной речи."],
-        ["Английские и немецкие фразы уровня B2–C1 с наглядной грамматической разметкой.", "Замечайте структуру, понимайте речевой ход и переносите модель в новые ситуации."],
-        ["Читайте фразы, замечайте конструкции и переносите их в свою речь.", "Metkagram помогает находить повторно используемые английские и немецкие модели в живом языке, сравнивать близкие конструкции и закреплять их практикой."],
-        ["Материалы бесплатны для некоммерческого использования с указанием Metkagram. Исследования, партнёрства и коммерческие сценарии обсуждаются отдельно.", "Читать, цитировать и ссылаться на материалы можно. Существенное переиспользование, распространение, обучение моделей и коммерческая интеграция требуют отдельного разрешения по текущим условиям Metkagram."],
-      ]
-    : [
-        ["See the structure. Use the phrase.", "Turn real sentences into reusable language patterns."],
-        ["Grammar markup for English and German B2–C1 sentences—so patterns are easier to read, remember and reuse.", "See the structure, understand the communicative move, and reuse it in new contexts."],
-        ["Metkagram is a free learning workspace for reading annotated sets and turning useful phrases into reusable patterns.", "Discover reusable English and German patterns inside real language, compare nearby structures, and practise them for reuse."],
-        ["The content is free for personal, educational and other non-commercial use with attribution. For sponsorships, collaborations, research or commercial use, see the partnership page.", "Reading, linking and citation are welcome. Substantial reuse, redistribution, model training and commercial integration require scoped permission under the current Metkagram terms."],
-      ];
-
-  html = replaceAllKnown(html, replacements);
-  fs.writeFileSync(file, html);
 }
 
 function archiveAppsPage(locale) {
@@ -77,33 +35,6 @@ function archiveAppsPage(locale) {
   html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${description}">`);
   html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${title}">`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${description}">`);
-  fs.writeFileSync(file, html);
-}
-
-function patchSupport(locale) {
-  const file = path.join(DIST, locale, "support", "index.html");
-  if (!fs.existsSync(file)) return;
-  let html = fs.readFileSync(file, "utf8");
-  const replacements = locale === "ru"
-    ? [
-        ["Помогите превратить открытый языковой корпус в проверяемую учебную систему.", "Помогите развить проверяемый слой речевых моделей для людей, преподавателей и ИИ."],
-        ["Metkagram уже объединяет размеченный контент, повторно используемые паттерны, статический API и приложения. Мы ищем инвесторов и партнёров для проверки метода, редакционного масштабирования и выхода на новые языки — без ложных заявлений о достигнутой аудитории.", "Metkagram объединяет модели B2–C1, выбранные примеры с разметкой, Pattern Lens, Pattern Atlas, проверяемые сравнения и статический слой для агентов. Нужны конкретные исследовательские, преподавательские, EdTech и лицензионные пилоты."],
-        ["Один и тот же материал работает как учебный интерфейс для людей и как машиночитаемый набор данных для агентов и исследователей.", "Один проверенный pattern ID может использоваться в Lens, Atlas, сравнении, практике, преподавательском экспорте и ответе ИИ без конкурирующих определений."],
-        ["Инвестиционный разговор", "Преподавательский / EdTech пилот"],
-        ["Обсудить финансирование этапа, показатели успеха, структуру сделки и границы открытой части проекта.", "Проверить Metkagram в реальном учебном или AI-tutor сценарии с конкретным результатом и обратной связью."],
-        ["Основные учебные материалы остаются доступными бесплатно.", "Публичный учебный каталог остаётся доступным на сайте; существенное переиспользование регулируется текущими условиями лицензирования."],
-        ["Проверить открытый репозиторий", "Проверить публичный репозиторий"],
-      ]
-    : [
-        ["Turn an open language corpus into a testable learning system.", "Build a reviewed language-pattern layer for learners, teachers and AI tutors."],
-        ["Metkagram already combines annotated content, reusable patterns, a static API and mobile apps. We are looking for investors and partners to validate the method, scale editorial quality and expand to new languages—without inventing traction claims.", "Metkagram combines reusable B2–C1 patterns, selected annotated examples, Pattern Lens, Pattern Atlas, reviewed contrasts and a static agent-facing reference layer. We are looking for concrete research, teaching, EdTech and licensing pilots."],
-        ["The same material works as a learning interface for people and as machine-readable data for agents and researchers.", "One reviewed pattern ID can travel through Lens, Atlas, contrasts, practice, teacher exports and AI-tutor answers without competing definitions."],
-        ["Investment conversation", "Teacher / EdTech pilot"],
-        ["Discuss milestone funding, success measures, deal structure and the boundary of the open project.", "Test Metkagram in a real teaching or AI-tutor workflow with a concrete outcome and editorial feedback."],
-        ["Core learning materials remain free to access.", "The public learner-facing catalogue remains accessible on the hosted site; substantial reuse follows the current licensing terms."],
-        ["Inspect the open repository", "Inspect the public repository"],
-      ];
-  html = replaceAllKnown(html, replacements).replaceAll("Open educational data", "Language pattern datasets");
   fs.writeFileSync(file, html);
 }
 
@@ -163,9 +94,7 @@ function assertNoActiveStorePromotion() {
 }
 
 for (const locale of ["en", "ru"]) {
-  patchHome(locale);
   archiveAppsPage(locale);
-  patchSupport(locale);
 }
 patchGlobalHistoryClaims();
 assertNoActiveStorePromotion();

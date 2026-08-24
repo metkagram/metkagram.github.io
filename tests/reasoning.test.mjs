@@ -42,5 +42,7 @@ test("practice enhancement still loads every published reasoning source", () => 
   for (const name of FILES) assert.match(app, new RegExp(name.replaceAll(".", "\\.")));
   assert.match(app, /dataReasoning|dataset\.reasoning/);
   assert.match(app, /Reasoning move/);
-  assert.match(app, /import "\.\/licensing-runtime\.js"/);
+  // Rights copy is rendered at build time from the canonical release state;
+  // no client-side licensing patcher may come back.
+  assert.doesNotMatch(app, /licensing-runtime/);
 });

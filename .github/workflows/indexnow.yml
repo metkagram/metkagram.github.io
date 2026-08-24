@@ -217,7 +217,7 @@ jobs:
             add_url "$BASE/ru/support/"
           fi
 
-          if grep -Eq '^(LICENSE|LICENSING\.md|CITATION\.cff|docs/(PUBLICATION_BOUNDARY|RESEARCH_USE)\.md|scripts/(patch-licensing|publication-readiness)\.mjs|src/provenance\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
+          if grep -Eq '^(LICENSE|LICENSING\.md|CITATION\.cff|public/rights\.json|docs/(PUBLICATION_BOUNDARY|RESEARCH_USE)\.md|scripts/(enhance-licensing-pages|release-metadata|publication-readiness)\.mjs|src/(provenance|release|site|language-registry)\.mjs|\.github/workflows/indexnow\.yml)' <<<"$CHANGED"; then
             add_url "$BASE/en/licensing/"
             add_url "$BASE/ru/licensing/"
             add_url "$BASE/en/cite/"

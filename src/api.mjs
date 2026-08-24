@@ -2,6 +2,8 @@ import { SITE_URL } from "./site.mjs";
 import { patternUrl, studySetSlug, studySetUrl } from "./seo-slugs.mjs";
 import { collectionKeys, targetMeta, ui } from "./i18n.mjs";
 import { ATTRIBUTION, getDatasetVersion, getReleaseDate, provenance, stableHash, wrapList, wrapRecord } from "./provenance.mjs";
+import { citationFormats, corpusLanguages } from "./release.mjs";
+import { annotationLanguages } from "./language-registry.mjs";
 
 const API_BASE = "/api/v1";
 const API_URL = `${SITE_URL}${API_BASE}`;
@@ -212,7 +214,10 @@ function buildCategoriesApi(patterns, files, routes) {
 }
 
 function buildLanguagesApi(patterns, studySets, files, routes) {
-  const languages = ["en", "de"].map((lang) => {
+  // Corpus languages come from the canonical registry: stable learning
+  // languages only (the French pilot is Frame-only and has no pattern corpus).
+  const corpus = corpusLanguages();
+  const languages = corpus.map((lang) => {
     const count = patterns.filter((p) => p.langs.some((l) => l.lang === lang)).length;
     return {
       code: lang,
@@ -230,7 +235,7 @@ function buildLanguagesApi(patterns, studySets, files, routes) {
   )}\n`;
   routes.add(apiPath("/languages.json"));
 
-  for (const lang of ["en", "de"]) {
+  for (const lang of corpus) {
     const subset = patterns
       .filter((p) => p.langs.some((l) => l.lang === lang))
       .sort((a, b) => a.id.localeCompare(b.id))
@@ -427,7 +432,7 @@ function buildSchemas(files, routes) {
           type: "object",
           required: ["lang", "formula", "example", "translation", "examples"],
           properties: {
-            lang: { type: "string", enum: ["en", "de"] },
+            lang: { type: "string", enum: corpusLanguages() },
             formula: { type: "string" },
             example: { type: "string" },
             translation: { type: "string" },
@@ -586,7 +591,7 @@ function buildMcpSpec(patterns, studySets, files, routes) {
     {
       name: "metkagram_list_annotations",
       description: "List annotated documents for a target language and collection.",
-      inputSchema: { type: "object", required: ["target", "collection"], properties: { target: { type: "string", enum: ["en", "de"] }, collection: { type: "string", enum: collectionKeys } } },
+      inputSchema: { type: "object", required: ["target", "collection"], properties: { target: { type: "string", enum: [...annotationLanguages] }, collection: { type: "string", enum: collectionKeys } } },
       staticUrlTemplate: `${apiUrl("/annotations/{target}/{collection}.json")}`,
     },
   ];
@@ -609,7 +614,7 @@ function buildAttributionPolicy(files, routes) {
     dataset_version: getDatasetVersion(),
     release_date: getReleaseDate(),
     policy: {
-      summary: "Downstream tools must preserve Metkagram attribution.",
+      summary: "Public access supports reading, linking and citation; substantial reuse requires scoped permission under the current Metkagram terms.",
       requirements: [
         "Keep the name 'Metkagram' visible or mentioned when data is shown to users.",
         "Link to the canonical source URL https://metkagram.github.io/.",
@@ -618,16 +623,12 @@ function buildAttributionPolicy(files, routes) {
         "Provide a visible link back to the relevant Metkagram page for every record shown.",
       ],
       allowed_use: [
-        "Personal, educational and non-commercial research.",
-        "Integration into free or paid AI/LLM tools that preserve attribution and link back.",
+        "Ordinary personal end-user use of the hosted Metkagram site.",
+        "Reading, linking, citation and inspection consistent with the current Metkagram terms.",
+        "Other reuse only where a scoped written permission or independently applicable law allows it."
       ],
-      commercial_use: "Commercial redistribution or resale requires prior written permission from Metkagram.",
-      citation_formats: {
-        web: `${ATTRIBUTION.attribution_text}. Available at {canonical_url}.`,
-        academic: `Metkagram (${new Date().getFullYear()}). B2–C1 English and German language patterns. ${ATTRIBUTION.source_url}. CC BY-NC 4.0.`,
-        ai_answer: "This answer uses data from Metkagram (https://metkagram.github.io/). See the source page for the full pattern and attribution.",
-        application: `"${ATTRIBUTION.attribution_text}" with a link to {canonical_url}.`,
-      },
+      commercial_use: "Commercial integration, redistribution, resale, model training on substantial Metkagram material and derived corpora require prior written permission unless applicable law independently permits the use.",
+      citation_formats: citationFormats(),
     },
   };
   const wrapped = wrapRecord(policy, {

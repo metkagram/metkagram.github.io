@@ -64,9 +64,9 @@ A permission can be narrow: one dataset, one experiment, one publication, one pr
 
 ## Attribution
 
-A compact citation is:
+A compact citation is (canonical form generated from `src/release.mjs`):
 
-> Metkagram (2026). *Metkagram: functional language annotation and reusable pattern corpus.* https://metkagram.github.io/
+> Kharlanau, D. (2026). *Metkagram: Visual Language Patterns and Annotated Learning Resources* (version 1.0.0) [Dataset]. https://metkagram.github.io/
 
 When a specific record is used, retain its canonical Metkagram URL and dataset/version metadata where available.
 

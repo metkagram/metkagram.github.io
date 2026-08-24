@@ -25,7 +25,7 @@ test("IndexNow maps current multilingual and benchmark publication surfaces", ()
 test("IndexNow maps release, rights and citation changes to public pages", () => {
   assert.ok(workflow.includes("scripts/release-contracts\\.mjs"));
   assert.ok(workflow.includes('add_url "$BASE/en/roadmap/"'));
-  assert.ok(workflow.includes("scripts/(patch-licensing|publication-readiness)\\.mjs"));
+  assert.ok(workflow.includes("scripts/(enhance-licensing-pages|release-metadata|publication-readiness)\\.mjs"));
   assert.ok(workflow.includes('add_url "$BASE/en/licensing/"'));
   assert.ok(workflow.includes('add_url "$BASE/en/cite/"'));
   assert.ok(workflow.includes('add_url "$BASE/api/v1/publication.json"'));
