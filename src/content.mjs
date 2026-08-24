@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { collectionKeys, targetMeta } from "./i18n.mjs";
+import { loadPatternShards } from "./pattern-sources.mjs";
 import { corpusLanguages } from "./release.mjs";
 
 const ROOT = process.cwd();
@@ -250,10 +251,9 @@ export function loadContent() {
     }
   }
 
-  const baseAdvancedPatterns = readJson(path.join(ROOT, "data", "advanced-patterns.json"));
-  const supplementalPatterns = readJsonDirectory(path.join(ROOT, "data", "reasoning-frames"));
   const studySets = applyPracticeExtensions(readJson(path.join(ROOT, "data", "study-sets.json")));
-  assert(Array.isArray(baseAdvancedPatterns), "advanced-patterns.json must be an array");
+  const { patterns: baseAdvancedPatterns } = loadPatternShards({ setOrder: studySets.sets.map((set) => set.id) });
+  const supplementalPatterns = readJsonDirectory(path.join(ROOT, "data", "reasoning-frames"));
   assert(Array.isArray(studySets.sets) && studySets.sets.length > 0, "study-sets.json must contain sets");
   const validSetIds = new Set(studySets.sets.map((set) => set.id));
   assert(validSetIds.size === studySets.sets.length, "study set IDs must be unique");
@@ -263,7 +263,7 @@ export function loadContent() {
   supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
   const advancedPatterns = applyPracticeQualityOverrides(mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns))
     .map((pattern) => ({ ...pattern, quality: derivePatternQuality(pattern) }));
-  assert(advancedPatterns.length >= 1000, `advanced-patterns.json requires at least 1,000 patterns; found ${advancedPatterns.length}`);
+  assert(advancedPatterns.length >= 1000, `pattern corpus (data/patterns/) requires at least 1,000 patterns; found ${advancedPatterns.length}`);
   const patternIds = new Set();
   const formulas = new Set();
   advancedPatterns.forEach((pattern, index) => {
