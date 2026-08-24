@@ -3,6 +3,7 @@ import path from "node:path";
 import { legacyAnnotationToCanonical, patternToCanonicalCards, validateAnnotation, ANNOTATION_SCHEMA_VERSION } from "../src/annotation-schema.mjs";
 import { loadContent } from "../src/content.mjs";
 import { collectionKeys, targetMeta } from "../src/i18n.mjs";
+import { SITE_RELEASE_DATE } from "../src/site.mjs";
 
 const ROOT = process.cwd();
 const read = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -11,7 +12,9 @@ export function migrateAnnotations() {
   const records = [];
   const report = {
     schema_version: ANNOTATION_SCHEMA_VERSION,
-    migrated_at: new Date().toISOString(),
+    // Deterministic: output carries the verified editorial release date, never
+    // wall-clock build time (see ARCHITECTURE.md "Reproducibility").
+    migrated_at: SITE_RELEASE_DATE,
     sources: [],
     warnings: [],
     errors: [],

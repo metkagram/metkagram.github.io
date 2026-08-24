@@ -3,6 +3,7 @@ import path from "node:path";
 import { SITE_URL, breadcrumbs, escapeHtml, layout, patternTitle } from "./render.mjs";
 import { corpusLanguages } from "./release.mjs";
 import { patternPath, patternUrl, studySetPath } from "./seo-slugs.mjs";
+import { validateDiscoveryTopics } from "./source-validation.mjs";
 
 const ROOT = process.cwd();
 
@@ -36,6 +37,30 @@ export function loadDiscoveryTopics(content) {
     for (const relatedId of topic.related) assert(ids.has(relatedId), `${topic.id}: unknown related topic ${relatedId}`);
   }
   return payload.topics;
+}
+
+// Loads and merges the base topics with every data/discovery-topics-extension*.json
+// payload, validating the combined set. Shared by the validate stage
+// (scripts/validate-sources.mjs) and the Atlas renderer
+// (scripts/practice-intent-growth.mjs) so both see the same canonical topics.
+export function loadDiscoveryTopicExtensions(content, baseTopics) {
+  const dataDir = path.join(ROOT, "data");
+  const extensionFiles = fs.readdirSync(dataDir)
+    .filter((name) => /^discovery-topics-extension(?:-[a-z0-9-]+)?\.json$/.test(name))
+    .sort();
+  if (!extensionFiles.length) throw new Error("At least one discovery topic extension payload is required");
+
+  const extensionTopics = [];
+  for (const name of extensionFiles) {
+    const payload = JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
+    if (payload?.schemaVersion !== 1 || !Array.isArray(payload.topics)) throw new Error(`Invalid discovery topic extension payload: ${name}`);
+    extensionTopics.push(...payload.topics);
+  }
+
+  const combined = [...baseTopics, ...extensionTopics];
+  const validSets = new Set(content.studySets.sets.map((set) => set.id));
+  validateDiscoveryTopics(combined, validSets);
+  return { combined, extensionCount: extensionTopics.length, extensionFiles };
 }
 
 function topicPath(locale, topic) {

@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
+import { validateRussianSpeakerErrors } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -22,23 +23,6 @@ const lang = (pattern, code) => pattern?.langs?.find((item) => item.lang === cod
 
 function local(item, key, locale) {
   return item[`${key}_${locale}`] || item[`${key}_en`] || "";
-}
-
-function validate(source, patternMap) {
-  if (source?.schemaVersion !== 1 || source.status !== "reviewed-pilot") throw new Error("Russian-speaker error map must be reviewed-pilot schemaVersion 1");
-  if (!Array.isArray(source.items) || source.items.length < 3) throw new Error("Russian-speaker error map requires items");
-  const ids = new Set();
-  const slugs = new Set();
-  for (const item of source.items) {
-    if (!item.id || ids.has(item.id)) throw new Error(`Duplicate or missing Russian-speaker error id: ${item.id || "<missing>"}`);
-    if (!item.slug || slugs.has(item.slug)) throw new Error(`Duplicate or missing Russian-speaker error slug: ${item.slug || "<missing>"}`);
-    ids.add(item.id);
-    slugs.add(item.slug);
-    if (!patternMap.has(item.pattern_id)) throw new Error(`${item.id} references missing pattern ${item.pattern_id}`);
-    for (const field of ["title_en", "title_ru", "search_title_en", "search_title_ru", "wrong_en", "correct_en", "why_en", "why_ru", "memory_en", "memory_ru"]) {
-      if (!item[field]?.trim()) throw new Error(`${item.id} is missing ${field}`);
-    }
-  }
 }
 
 function copy(locale) {
@@ -260,7 +244,7 @@ function patchLlms() {
 const source = readJson(SOURCE);
 const patterns = readJson(path.join(DIST, "data", "advanced-patterns.json"));
 const patternMap = new Map(patterns.map((pattern) => [pattern.id, pattern]));
-validate(source, patternMap);
+validateRussianSpeakerErrors(source, patternMap);
 
 const routes = [];
 const records = [];

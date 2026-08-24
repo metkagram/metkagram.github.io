@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { loadContent } from "../src/content.mjs";
 import { locales } from "../src/i18n.mjs";
-import { loadDiscoveryTopics, patternAtlasIndexPage, patternTopicPage } from "../src/discovery-pages.mjs";
+import { loadDiscoveryTopicExtensions, loadDiscoveryTopics, patternAtlasIndexPage, patternTopicPage } from "../src/discovery-pages.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 
 const ROOT = process.cwd();
@@ -14,36 +14,6 @@ const write = (relative, contents) => {
   fs.writeFileSync(target, contents);
 };
 const read = (relative) => fs.readFileSync(full(relative), "utf8");
-
-function loadExtensions(content, baseTopics) {
-  const dataDir = path.join(ROOT, "data");
-  const extensionFiles = fs.readdirSync(dataDir)
-    .filter((name) => /^discovery-topics-extension(?:-[a-z0-9-]+)?\.json$/.test(name))
-    .sort();
-  if (!extensionFiles.length) throw new Error("At least one discovery topic extension payload is required");
-
-  const extensionTopics = [];
-  for (const name of extensionFiles) {
-    const payload = JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8"));
-    if (payload?.schemaVersion !== 1 || !Array.isArray(payload.topics)) throw new Error(`Invalid discovery topic extension payload: ${name}`);
-    extensionTopics.push(...payload.topics);
-  }
-
-  const combined = [...baseTopics, ...extensionTopics];
-  const ids = new Set();
-  const slugs = new Set();
-  const validSets = new Set(content.studySets.sets.map((set) => set.id));
-  for (const topic of combined) {
-    if (!topic.id || ids.has(topic.id)) throw new Error(`Duplicate or missing discovery topic id: ${topic.id}`);
-    if (!topic.slug || slugs.has(topic.slug)) throw new Error(`Duplicate or missing discovery topic slug: ${topic.slug}`);
-    ids.add(topic.id);
-    slugs.add(topic.slug);
-    if (!Array.isArray(topic.set_ids) || !topic.set_ids.length) throw new Error(`${topic.id}: missing set_ids`);
-    for (const setId of topic.set_ids) if (!validSets.has(setId)) throw new Error(`${topic.id}: unknown set ${setId}`);
-  }
-  for (const topic of combined) for (const relatedId of topic.related || []) if (!ids.has(relatedId)) throw new Error(`${topic.id}: unknown related topic ${relatedId}`);
-  return { combined, extensionCount: extensionTopics.length, extensionFiles };
-}
 
 function metadata(route, html, locale) {
   const pick = (pattern) => html.match(pattern)?.[1] || "";
@@ -100,7 +70,7 @@ function main() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist; run the main build first");
   const content = loadContent();
   const baseTopics = loadDiscoveryTopics(content);
-  const { combined: topics, extensionCount, extensionFiles } = loadExtensions(content, baseTopics);
+  const { combined: topics, extensionCount, extensionFiles } = loadDiscoveryTopicExtensions(content, baseTopics);
   const records = [];
 
   for (const locale of locales) {

@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { ATTRIBUTION, getDatasetVersion, wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { validateTeacherExportSources } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -115,18 +116,6 @@ function resolveCard(pack, step, index, patternMap, contrastMap, drillMap) {
   base.front_ru = `${drill.scenario_ru}\nA/B: ${optionEn}`;
   base.back_ru = `${drill.answer_pattern}: ${answerFormula}\n${drill.explanation_ru}`;
   return base;
-}
-
-function validate(packSource, patternMap, contrastMap, drillMap) {
-  if (packSource.schemaVersion !== 1 || packSource.status !== "reviewed-pilot") throw new Error("Teacher exports require the reviewed Reasoning Pack source.");
-  for (const pack of packSource.packs) {
-    if (pack.review_status !== "reviewed") throw new Error(`Pack ${pack.id} is not reviewed.`);
-    for (const step of pack.steps) {
-      if (step.kind === "pattern" && !patternMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing pattern ${step.id}.`);
-      if (step.kind === "contrast" && !contrastMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing contrast ${step.id}.`);
-      if (step.kind === "drill" && !drillMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing drill ${step.id}.`);
-    }
-  }
 }
 
 function bundleFor(pack, cards) {
@@ -341,7 +330,7 @@ const drills = readJson(path.join(ROOT, "data", "choice-drills.json"));
 const patternMap = new Map(patterns.map((pattern) => [pattern.id, pattern]));
 const contrastMap = new Map(contrasts.items.map((item) => [item.id, item]));
 const drillMap = new Map(drills.items.map((item) => [item.id, item]));
-validate(packSource, patternMap, contrastMap, drillMap);
+validateTeacherExportSources(packSource, patternMap, contrastMap, drillMap);
 
 const items = [];
 for (const pack of packSource.packs) {

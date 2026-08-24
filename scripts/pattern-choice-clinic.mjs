@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { validateChoiceDrills } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -79,29 +80,6 @@ function copy(locale) {
         bridgeTitle: "Can you actually tell the two patterns apart?",
         bridgeText: "Choice Clinic turns the comparison into a short decision task: choose first, then reveal the explanation and practise the canonical pattern.",
       };
-}
-
-function validate(source, contrasts, patternMap) {
-  if (source.schemaVersion !== 1 || !Array.isArray(source.items) || source.items.length < 2) {
-    throw new Error("Choice drill dataset must contain schemaVersion 1 and multiple items.");
-  }
-  const contrastMap = new Map(contrasts.items.map((item) => [item.id, item]));
-  const ids = new Set();
-  for (const item of source.items) {
-    if (!item.id || ids.has(item.id)) throw new Error(`Duplicate or missing drill id: ${item.id || "<missing>"}`);
-    ids.add(item.id);
-    const contrast = contrastMap.get(item.contrast_id);
-    if (!contrast) throw new Error(`Drill ${item.id} references unknown contrast ${item.contrast_id}.`);
-    if (!Array.isArray(item.options) || item.options.length !== 2) throw new Error(`Drill ${item.id} must have exactly two options.`);
-    if (!item.options.includes(item.answer_pattern)) throw new Error(`Drill ${item.id} answer must be one of its options.`);
-    if (new Set(item.options).size !== 2) throw new Error(`Drill ${item.id} options must be distinct.`);
-    if (item.options.some((id) => !patternMap.has(id))) throw new Error(`Drill ${item.id} references a missing pattern.`);
-    if (item.options.some((id) => !contrast.patterns.includes(id))) throw new Error(`Drill ${item.id} options must stay inside contrast ${item.contrast_id}.`);
-    for (const field of ["scenario_en", "scenario_ru", "explanation_en", "explanation_ru", "why_other_en", "why_other_ru"]) {
-      if (!item[field]?.trim()) throw new Error(`Drill ${item.id} is missing ${field}.`);
-    }
-    if (item.review_status !== "reviewed") throw new Error(`Drill ${item.id} must be reviewed before publication.`);
-  }
 }
 
 function optionCard(pattern, locale, label) {
@@ -261,7 +239,7 @@ const source = readJson(SOURCE);
 const contrasts = readJson(CONTRASTS);
 const patterns = readJson(path.join(DIST, "data", "advanced-patterns.json"));
 const patternMap = new Map(patterns.map((pattern) => [pattern.id, pattern]));
-validate(source, contrasts, patternMap);
+validateChoiceDrills(source, contrasts, patternMap);
 
 const routes = [];
 const seoRecords = [];

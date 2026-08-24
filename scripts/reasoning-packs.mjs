@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { validateReasoningPacks } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -62,27 +63,6 @@ function copy(locale) {
         bridgeTitle: "Need a route rather than another card?",
         bridgeText: "Reasoning Packs connect patterns, distinctions and choice drills into short sequences around a real communication job.",
       };
-}
-
-function validate(source, patternMap, contrastMap, drillMap) {
-  if (source.schemaVersion !== 1 || source.status !== "reviewed-pilot" || !Array.isArray(source.packs) || source.packs.length < 3) {
-    throw new Error("Reasoning packs must be a reviewed schemaVersion 1 collection.");
-  }
-  const packIds = new Set();
-  for (const pack of source.packs) {
-    if (!pack.id || packIds.has(pack.id)) throw new Error(`Duplicate or missing pack id: ${pack.id || "<missing>"}`);
-    packIds.add(pack.id);
-    if (pack.review_status !== "reviewed") throw new Error(`Pack ${pack.id} must be reviewed.`);
-    if (!pack.title_en || !pack.title_ru || !pack.description_en || !pack.description_ru || !pack.outcome_en || !pack.outcome_ru) throw new Error(`Pack ${pack.id} is incomplete.`);
-    if (!Array.isArray(pack.steps) || pack.steps.length < 4) throw new Error(`Pack ${pack.id} needs at least four steps.`);
-    for (const step of pack.steps) {
-      if (!step.instruction_en || !step.instruction_ru) throw new Error(`Pack ${pack.id} has an untranslated instruction.`);
-      if (step.kind === "pattern" && !patternMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing pattern ${step.id}.`);
-      if (step.kind === "contrast" && !contrastMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing contrast ${step.id}.`);
-      if (step.kind === "drill" && !drillMap.has(step.id)) throw new Error(`Pack ${pack.id} references missing drill ${step.id}.`);
-      if (!["pattern", "contrast", "drill"].includes(step.kind)) throw new Error(`Pack ${pack.id} has unsupported step kind ${step.kind}.`);
-    }
-  }
 }
 
 function objectRoute(locale, step, drillMap) {
@@ -198,7 +178,7 @@ const drills = readJson(path.join(ROOT, "data", "choice-drills.json"));
 const patternMap = new Map(patterns.map((item) => [item.id, item]));
 const contrastMap = new Map(contrasts.items.map((item) => [item.id, item]));
 const drillMap = new Map(drills.items.map((item) => [item.id, item]));
-validate(source, patternMap, contrastMap, drillMap);
+validateReasoningPacks(source, patternMap, contrastMap, drillMap);
 
 const routes = [];
 const seo = [];

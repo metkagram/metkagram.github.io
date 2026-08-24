@@ -6,6 +6,7 @@ import { wrapRecord } from "../src/provenance.mjs";
 import { escapeHtml, layout } from "../src/render.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
+import { validateLanguagePilotFrames } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -57,7 +58,7 @@ function frameExtensions() {
     .flatMap((name) => {
       const file = path.join(directory, name);
       const value = readJson(file);
-      if (!Array.isArray(value)) throw new Error(`${file} must contain an array of Frame extensions.`);
+      validateLanguagePilotFrames(file, value);
       return value.map((record) => ({ ...record, source_file: `data/language-pilots/${name}` }));
     });
 }

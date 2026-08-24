@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
+import { validateContrastExtensions } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -22,31 +23,6 @@ const lang = (pattern, code) => pattern?.langs?.find((item) => item.lang === cod
 
 function local(item, key, locale) {
   return item[`${key}_${locale}`] || item[`${key}_en`] || "";
-}
-
-function validate(source, patternMap, existingIds) {
-  if (source?.schemaVersion !== 1) throw new Error("contrast-extensions.json must use schemaVersion 1");
-  if (!Array.isArray(source.pair_items) || !Array.isArray(source.grammar_items)) throw new Error("contrast extension arrays are required");
-  const ids = new Set(existingIds);
-  for (const item of [...source.pair_items, ...source.grammar_items]) {
-    if (!item.id || ids.has(item.id)) throw new Error(`Duplicate contrast id: ${item.id || "<missing>"}`);
-    ids.add(item.id);
-    for (const field of ["title_en", "title_ru", "question_en", "question_ru", "distinction_en", "distinction_ru"]) {
-      if (!item[field]?.trim()) throw new Error(`${item.id} is missing ${field}`);
-    }
-    if (item.review_status !== "reviewed") throw new Error(`${item.id} must be reviewed`);
-  }
-  for (const item of source.pair_items) {
-    if (!Array.isArray(item.patterns) || item.patterns.length !== 2) throw new Error(`${item.id} must reference two patterns`);
-    if (item.patterns[0] === item.patterns[1]) throw new Error(`${item.id} repeats the same pattern`);
-    for (const id of item.patterns) if (!patternMap.has(id)) throw new Error(`${item.id} references missing pattern ${id}`);
-  }
-  for (const item of source.grammar_items) {
-    if (!patternMap.has(item.pattern_id)) throw new Error(`${item.id} references missing pattern ${item.pattern_id}`);
-    for (const side of ["left", "right"]) {
-      if (!item[side]?.label || !item[side]?.meaning_en || !item[side]?.meaning_ru) throw new Error(`${item.id} is missing ${side} content`);
-    }
-  }
 }
 
 function copy(locale) {
@@ -277,7 +253,7 @@ const source = readJson(SOURCE);
 const patterns = readJson(path.join(DIST, "data", "advanced-patterns.json"));
 const patternMap = new Map(patterns.map((pattern) => [pattern.id, pattern]));
 const baseContrasts = readJson(path.join(DIST, "data", "contrasts.json"));
-validate(source, patternMap, baseContrasts.items.map((item) => item.id));
+validateContrastExtensions(source, patternMap, baseContrasts.items.map((item) => item.id));
 
 const routes = [];
 const records = [];

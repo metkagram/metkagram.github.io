@@ -4,6 +4,7 @@ import { loadContent } from "../src/content.mjs";
 import { locales } from "../src/i18n.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 import { loadDiscoveryTopics, patternAtlasIndexPage, patternTopicPage } from "../src/discovery-pages.mjs";
+import { validatePartnershipPayload } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -34,9 +35,7 @@ function metadata(route, html, locale) {
 function loadPartnershipOpportunities() {
   const file = path.join(ROOT, "data", "partnership-opportunities.json");
   const payload = JSON.parse(fs.readFileSync(file, "utf8"));
-  if (payload?.schemaVersion !== 1 || !Array.isArray(payload.opportunities) || !payload.opportunities.length) {
-    throw new Error("data/partnership-opportunities.json must contain schemaVersion 1 and opportunities");
-  }
+  validatePartnershipPayload(payload);
   return payload.opportunities;
 }
 

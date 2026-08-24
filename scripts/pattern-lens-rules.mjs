@@ -31,7 +31,6 @@ function serializeRule(item) {
 }
 
 export function exportPatternLensRules() {
-  if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the main build first.");
   const payload = {
     schema_version: 3,
     max_links_per_sentence: Math.max(3, PUBLIC_LEARNING_MAX_LINKS_PER_SENTENCE),

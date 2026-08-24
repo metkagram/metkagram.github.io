@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { layout, escapeHtml, SITE_URL } from "../src/render.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
+import { validateLearningEventSchema } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -181,7 +182,7 @@ function patchDiscovery() {
 export function buildLearningTelemetry() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the main build first.");
   const schema = readJson(SCHEMA_SOURCE);
-  if (schema?.properties?.event_name?.enum?.length < 6) throw new Error("Learning event schema must define the reviewed event vocabulary.");
+  validateLearningEventSchema(schema);
   for (const locale of ["en", "ru"]) writeFile(`${locale}/activity/index.html`, activityPage(locale));
   injectRuntime();
   patchPrivacyPages();

@@ -4,6 +4,7 @@ import { escapeHtml, layout, SITE_URL } from "../src/render.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { patternPath, patternUrl } from "../src/seo-slugs.mjs";
+import { validateContrastLibrary } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -78,25 +79,6 @@ function copy(locale) {
         bridgeTitle: "Not sure which pattern fits?",
         bridgeText: "Contrasts explain a difference in communicative or reasoning function, not just a difference in wording. Start from the job you need to do, then open the canonical pattern for practice.",
       };
-}
-
-function validate(source, patternMap) {
-  if (source.schemaVersion !== 1 || !Array.isArray(source.items) || !source.items.length) {
-    throw new Error("Contrast dataset must contain schemaVersion 1 and at least one item.");
-  }
-  const ids = new Set();
-  for (const item of source.items) {
-    if (!item.id || ids.has(item.id)) throw new Error(`Duplicate or missing contrast id: ${item.id || "<missing>"}`);
-    ids.add(item.id);
-    if (!Array.isArray(item.patterns) || item.patterns.length !== 2) throw new Error(`Contrast ${item.id} must reference exactly two patterns.`);
-    if (item.patterns[0] === item.patterns[1]) throw new Error(`Contrast ${item.id} references the same pattern twice.`);
-    for (const patternId of item.patterns) {
-      if (!patternMap.has(patternId)) throw new Error(`Contrast ${item.id} references missing pattern ${patternId}.`);
-    }
-    for (const field of ["title_en", "title_ru", "question_en", "question_ru", "distinction_en", "distinction_ru"]) {
-      if (!item[field]?.trim()) throw new Error(`Contrast ${item.id} is missing ${field}.`);
-    }
-  }
 }
 
 function summary(pattern, locale, label) {
@@ -227,7 +209,7 @@ function patchSeoInventory(records) {
 const source = readJson(SOURCE);
 const patterns = readJson(path.join(DIST, "data", "advanced-patterns.json"));
 const patternMap = new Map(patterns.map((pattern) => [pattern.id, pattern]));
-validate(source, patternMap);
+validateContrastLibrary(source, patternMap);
 
 const routes = [];
 const seoRecords = [];
