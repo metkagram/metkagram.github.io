@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
 const ROOT = process.cwd();
-const patternsFile = path.join(ROOT, "data", "advanced-patterns.json");
 const setsFile = path.join(ROOT, "data", "study-sets.json");
-const original = JSON.parse(fs.readFileSync(patternsFile, "utf8"));
+const { patterns: original } = loadEditorialCorpus(ROOT);
 
 // These are deliberately communicative frames rather than conjugation drills. Each
 // set is a single C1 move learners can recognise, retrieve, and transfer.
@@ -146,7 +146,7 @@ for (const pattern of original) {
 }
 
 const all = [...original, ...generated];
-fs.writeFileSync(patternsFile, `${JSON.stringify(all, null, 2)}\n`);
+writePatternCorpus(all, { setOrder: sets.map(([id]) => id) });
 fs.writeFileSync(setsFile, `${JSON.stringify({ schemaVersion: 1, learningPaths: [
   { id: "C1-COMMUNICATE", title_en: "C1 Communication", title_ru: "Коммуникация C1", set_ids: ["ARG", "OPI", "EVD", "AGR", "HED", "PRB", "CLR", "CMP", "CAU", "NEG"] },
   { id: "C1-CONTROL", title_en: "C1 Control", title_ru: "Контроль C1", set_ids: ["PRO", "STO", "LNK", "CND", "MOD", "PSV", "REP", "TAS", "QNN", "DGR"] }

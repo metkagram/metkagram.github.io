@@ -1,11 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
 const root = process.cwd();
-const patternsFile = path.join(root, "data", "advanced-patterns.json");
 const setsFile = path.join(root, "data", "study-sets.json");
-const patterns = JSON.parse(fs.readFileSync(patternsFile, "utf8"));
-const studySets = JSON.parse(fs.readFileSync(setsFile, "utf8"));
+const { patterns, studySets } = loadEditorialCorpus(root);
 
 const contexts = [
   ["the team needs another day to decide", "das Team einen weiteren Tag für die Entscheidung braucht", "команде нужен ещё день для решения"],
@@ -95,6 +94,6 @@ for (const [id, title_en, title_ru, description, description_ru, frames] of sets
 }
 
 studySets.learningPaths.push({ id: "C1-QUESTIONS", title_en: "Questions in use", title_ru: "Вопросы в речи", set_ids: sets.map(([id]) => id) });
-fs.writeFileSync(patternsFile, `${JSON.stringify(patterns, null, 2)}\n`);
+writePatternCorpus(patterns, { setOrder: studySets.sets.map((set) => set.id) });
 fs.writeFileSync(setsFile, `${JSON.stringify(studySets, null, 2)}\n`);
 console.log(`Added ${sets.length * 40} question patterns across ${sets.length} study sets.`);

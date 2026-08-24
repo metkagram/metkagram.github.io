@@ -1,8 +1,6 @@
-import fs from "node:fs";
-import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
-const file = path.join(process.cwd(), "data", "advanced-patterns.json");
-const patterns = JSON.parse(fs.readFileSync(file, "utf8"));
+const { patterns, setOrder } = loadEditorialCorpus(process.cwd());
 
 function context(sentence, start, end) {
   const match = sentence.match(new RegExp(`${start}(.+?)${end}`));
@@ -72,4 +70,4 @@ for (const pattern of patterns.filter((item) => item.set_id === "HED")) {
   }
 }
 
-fs.writeFileSync(file, `${JSON.stringify(patterns, null, 2)}\n`);
+writePatternCorpus(patterns, { setOrder });

@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { loadContent } from "../src/content.mjs";
+import { topicPatterns } from "../src/discovery-pages.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -111,4 +113,24 @@ test("Atlas and partnership pilots are discoverable to agents without pretending
   assert.match(llms, /learner knows the communication goal/i);
   assert.match(llms, /## Partnership pilots/);
   assert.match(llms, /not as evidence of existing partners or traction/i);
+});
+
+test("topic pattern samples follow the declared set order, not corpus storage order (#71)", () => {
+  const content = loadContent();
+  const multiSetTopics = allTopics.filter((topic) => topic.set_ids.length > 1);
+  assert.ok(multiSetTopics.length > 0, "expected at least one multi-set topic");
+  for (const topic of multiSetTopics) {
+    const patterns = topicPatterns(content, topic);
+    assert.ok(patterns.length > 0, `${topic.id} maps to no patterns`);
+    const rank = new Map(topic.set_ids.map((id, index) => [id, index]));
+    const ranks = patterns.map((pattern) => rank.get(pattern.set_id));
+    for (let index = 1; index < ranks.length; index += 1) {
+      assert.ok(ranks[index] >= ranks[index - 1], `${topic.id}: patterns must be grouped in declared set_ids order`);
+    }
+    // The displayed editorial sample is the first 24; it must start with the first declared set.
+    assert.equal(patterns[0].set_id, topic.set_ids[0], `${topic.id}: sample must open with ${topic.set_ids[0]}`);
+    // Set grouping is storage-order independent (within-set order follows canonical shard order).
+    const shuffled = { ...content, advancedPatterns: [...content.advancedPatterns].reverse() };
+    assert.deepEqual(topicPatterns(shuffled, topic).map((pattern) => pattern.set_id), patterns.map((pattern) => pattern.set_id), `${topic.id}: set grouping must be storage-order independent`);
+  }
 });

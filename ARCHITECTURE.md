@@ -48,7 +48,7 @@ These sets are deliberately not assumed to be equal. A future learning language 
 
 ## Layers
 
-1. **Canonical content** — source JSON in `data/` holds annotated documents, reusable patterns, study sets and reviewed relation data. UI translations remain separate from learning-language content.
+1. **Canonical content** — source JSON in `data/` holds annotated documents, study sets and reviewed relation data. The reusable pattern corpus lives in per-study-set shards under `data/patterns/<SET_ID>.json`; `src/pattern-sources.mjs` is the single loader (and writer for editorial tooling) for those shards, reconstructing the corpus in study-set order with duplicate-ID, set-membership and shard-shape validation. The consolidated `advanced-patterns.json` still ships under `dist/` as a generated distribution artifact — it is never edited by hand. UI translations remain separate from learning-language content.
 2. **Language capability registry** — `src/language-registry.mjs` describes which language roles are currently supported. New architecture must derive capabilities from this registry instead of hardcoded English/German branches.
 3. **Validation and quality** — `src/content.mjs` validates identifiers, language records, translations, uniqueness and editorial completeness. Existing validation remains compatibility-oriented while the multilingual schema migrates incrementally.
 4. **Static rendering** — `src/render.mjs` owns the shared layout and primary page templates. Build/post-build scripts add reviewed feature surfaces while keeping GitHub Pages output static.
@@ -162,6 +162,13 @@ This allows staged expansion. For example, French could enter Pattern Practice w
 Semantic product state — rights, language capabilities, release identity, citations, domain relations — is resolved before or during rendering and is never decided afterwards. A stage failure aborts the pipeline with the stage, script and exit code in the error.
 
 `npm run verify` runs the staged build plus the unit test suite.
+
+## Editing the pattern corpus
+
+- To change a pattern, edit exactly one file: `data/patterns/<SET_ID>.json`, the shard of its study set.
+- To add a pattern, append it to its study set's shard. A new study set is first registered in `data/study-sets.json`; its shard then holds its patterns.
+- Never recreate or hand-edit `data/advanced-patterns.json` — it was removed as a source in #71 and exists only as a generated artifact under `dist/`.
+- Validation: `npm run build:validate` fails on duplicate IDs, unknown sets or malformed shards; `tests/pattern-shards.test.mjs` guards the frozen migration baseline.
 
 ## Verification and deployment
 

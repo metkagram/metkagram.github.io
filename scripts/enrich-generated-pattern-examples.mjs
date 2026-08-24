@@ -1,8 +1,6 @@
-import fs from "node:fs";
-import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
-const file = path.join(process.cwd(), "data", "advanced-patterns.json");
-const patterns = JSON.parse(fs.readFileSync(file, "utf8"));
+const { patterns, setOrder } = loadEditorialCorpus(process.cwd());
 
 const contexts = [
   ["a funding proposal", "заявка на финансирование", "einen Förderantrag"],
@@ -78,5 +76,5 @@ for (const pattern of patterns.filter((item) => /^C1[A-Z]+\d+$/.test(item.id))) 
   changed += 1;
 }
 
-fs.writeFileSync(file, `${JSON.stringify(patterns, null, 2)}\n`);
+writePatternCorpus(patterns, { setOrder });
 console.log(`Added eight contextual examples in English and German to ${changed} generated patterns.`);

@@ -29,7 +29,7 @@ test("the full learner-facing Practice curriculum is public while the annotation
   const content = loadContent();
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
-  assert.ok(fs.existsSync(path.join(ROOT, "data/advanced-patterns.json")), "the public Practice source must exist");
+  assert.ok(fs.existsSync(path.join(ROOT, "data", "patterns")), "the public Practice source (per-set shards) must exist");
   assert.ok(counts.advancedPatterns >= 1000, `expected at least 1,000 public practice patterns, found ${counts.advancedPatterns}`);
   assert.ok(content.studySets.sets.length >= 20, "the public Practice taxonomy should expose the full study-set catalogue");
   const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);

@@ -8,11 +8,11 @@ Metkagram uses a **private research core → deliberate public product/release**
 
 The following are part of the public Metkagram product:
 
-- the established **1,000+ reusable B2–C1 English/German Practice curriculum** in `data/advanced-patterns.json`;
+- the established **1,000+ reusable B2–C1 English/German Practice curriculum**, authored as per-set shards in `data/patterns/`;
 - study-set and learning-path taxonomy in `data/study-sets.json`;
 - curated reasoning-enabled frames and their public examples;
 - selected examples that explain the visual annotation method;
-- a generated annotation layer for every already-public Practice sentence, with the original source text retained in `data/advanced-patterns.json`;
+- a generated annotation layer for every already-public Practice sentence, with the original source text retained in the pattern shards under `data/patterns/`;
 - the bounded 72-document annotation showcase;
 - schemas, provenance and interoperability surfaces for published material;
 - bounded evaluation fixtures and reports that operate only on published material;
@@ -70,7 +70,7 @@ The following source paths are intentionally absent from the current public HEAD
 - `data/source-tag-rules.ts`
 - `annotation_service/`
 
-`data/advanced-patterns.json` is intentionally **not** on this list. It is the public learner-facing Practice corpus and must not be removed merely to enforce the research boundary.
+The Practice corpus shards in `data/patterns/` are intentionally **not** on this list. They are the public learner-facing Practice corpus and must not be removed merely to enforce the research boundary.
 
 ## Git history
 

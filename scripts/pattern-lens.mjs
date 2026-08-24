@@ -159,7 +159,20 @@ function publicLensPatterns(content) {
 
   // Lens is intentionally a fast public preview, not the complete private annotation engine.
   // Keep a varied, reviewed cross-section small enough to work in an ordinary browser tab.
-  all.slice(0, 64).forEach(add);
+  // The seed selection is an explicit editorial list — it must not depend on incidental
+  // corpus storage order (#71). These are the original core-curriculum patterns.
+  const LENS_SEED_IDS = [
+    "CON001", "CON002", "CON003", "CON004", "CON005", "CON006", "CON007", "CON008",
+    "CON009", "CON010", "CON011", "CON012", "CON013", "CON014", "PAS001", "PAS002",
+    "PAS003", "PAS004", "PAS005", "PAS006", "PAS007", "PERF003", "PERF004", "PERF005",
+    "PERF006", "REL001", "REL002", "REL003", "REL004", "REL005", "REL006", "COM001",
+    "COM002", "COM003", "COM004", "COM005", "COM008", "COM009", "COM010", "GER001",
+    "GER002", "GER003", "GER004", "GER005", "MOD001", "GER006", "GER007", "GER008",
+    "GER009", "MOD002", "MOD003", "MOD004", "MOD005", "PUR001", "PUR002", "PUR003",
+    "PUR004", "PUR005", "PUR006", "CLA001", "CLA002", "CLA003", "CLA005", "QUE001",
+  ];
+  const byId = new Map(all.map((pattern) => [pattern.id, pattern]));
+  for (const id of LENS_SEED_IDS) add(byId.get(id));
   all.filter((pattern) => pattern.reasoning?.move).forEach(add);
   const stride = Math.max(1, Math.floor(all.length / 96));
   for (let index = 0; index < all.length; index += stride) add(all[index]);
@@ -184,10 +197,11 @@ function publicLensPatterns(content) {
 
 function lensBody(locale, content) {
   const copy = lensCopy(locale);
-  const sampleEn = content.advancedPatterns.flatMap((pattern) => pattern.langs.filter((item) => item.lang === "en").map((item) => item.example)).slice(0, 3);
+  const catalogue = publicLensPatterns(content);
+  const sampleEn = catalogue.flatMap((pattern) => pattern.langs.filter((item) => item.lang === "en").map((item) => item.example)).slice(0, 3);
   // Ship only enough examples for an immediate, reliable first interaction.
   // The complete public catalogue is linked through the Pattern Library.
-  const data = { locale, copy, catalogue: publicLensPatterns(content).slice(0, 18) };
+  const data = { locale, copy, catalogue: catalogue.slice(0, 18) };
   return `
   <section class="lens-shell">
     <div class="lens-hero">

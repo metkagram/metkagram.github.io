@@ -71,9 +71,16 @@ function localized(topic, key, locale) {
   return topic[`${key}_${locale}`] || topic[`${key}_en`] || "";
 }
 
-function topicPatterns(content, topic) {
+export function topicPatterns(content, topic) {
   const setIds = new Set(topic.set_ids);
-  return content.advancedPatterns.filter((pattern) => setIds.has(pattern.set_id));
+  const setRank = new Map(topic.set_ids.map((id, index) => [id, index]));
+  // Order by the topic's declared set_ids sequence, then by canonical shard order
+  // within each set — never by incidental corpus storage order (#71).
+  return content.advancedPatterns
+    .filter((pattern) => setIds.has(pattern.set_id))
+    .map((pattern, index) => ({ pattern, index }))
+    .sort((a, b) => (setRank.get(a.pattern.set_id) - setRank.get(b.pattern.set_id)) || (a.index - b.index))
+    .map((entry) => entry.pattern);
 }
 
 function topicSets(content, topic) {

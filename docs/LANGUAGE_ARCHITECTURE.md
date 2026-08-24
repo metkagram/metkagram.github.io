@@ -180,7 +180,7 @@ Do not derive capability logic from strings such as `english`, `german` or field
 
 The base annotated-collection renderer still contains historical EN/DE target metadata. Treat that as a compatibility adapter for the annotated corpus, not as the canonical language registry.
 
-The old `advanced-patterns.json` validation also remains EN/DE-oriented. New learning-language Frames therefore enter through the additive language-extension layer rather than forcing a risky rewrite of thousands of stable records.
+The pattern-corpus validation (`src/content.mjs` over the `data/patterns/` shards) also remains EN/DE-oriented. New learning-language Frames therefore enter through the additive language-extension layer rather than forcing a risky rewrite of thousands of stable records.
 
 ## Adding another language
 

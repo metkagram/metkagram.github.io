@@ -1,11 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
 const root = process.cwd();
-const patternsFile = path.join(root, "data", "advanced-patterns.json");
 const setsFile = path.join(root, "data", "study-sets.json");
-const patterns = JSON.parse(fs.readFileSync(patternsFile, "utf8"));
-const studySets = JSON.parse(fs.readFileSync(setsFile, "utf8"));
+const { patterns, studySets } = loadEditorialCorpus(root);
 
 const contexts = [
   ["the team was reviewing the new policy", "das Team die neue Regelung prüfte", "команда проверяла новую политику"],
@@ -197,6 +196,6 @@ for (const set of sets) {
 }
 
 studySets.learningPaths.push({ id: "C1-GRAMMAR", title_en: "Grammar in use", title_ru: "Грамматика в речи", set_ids: sets.map((set) => set.id) });
-fs.writeFileSync(patternsFile, `${JSON.stringify(patterns, null, 2)}\n`);
+writePatternCorpus(patterns, { setOrder: studySets.sets.map((set) => set.id) });
 fs.writeFileSync(setsFile, `${JSON.stringify(studySets, null, 2)}\n`);
 console.log(`Added ${sets.length * 40} grammatical patterns across ${sets.length} study sets.`);

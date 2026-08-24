@@ -1,9 +1,8 @@
 import fs from "node:fs";
-import path from "node:path";
+import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
 const ROOT = process.cwd();
-const file = path.join(ROOT, "data", "advanced-patterns.json");
-const patterns = JSON.parse(fs.readFileSync(file, "utf8"));
+const { patterns, setOrder } = loadEditorialCorpus(ROOT);
 const limit = 12;
 
 const followUps = {
@@ -145,5 +144,5 @@ for (const [patternIndex, pattern] of patterns.entries()) {
   }
 }
 
-fs.writeFileSync(file, `${JSON.stringify(patterns, null, 2)}\n`);
+writePatternCorpus(patterns, { setOrder });
 console.log(`Expanded ${changed} pattern examples with contextual follow-up sentences.`);
