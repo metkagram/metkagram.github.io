@@ -132,7 +132,7 @@ npm run verify
 npm run test:e2e
 ```
 
-`npm run verify` builds the static site, validates the public curriculum, generates discovery/research/practice outputs, publishes the terminology and language capability layer, runs regression tests and checks internal links.
+`npm run verify` runs the staged build and the regression tests. The build is explicit about its stages (see `ARCHITECTURE.md` → "Build pipeline"): `build:source` regenerates canonical release metadata, `build:validate` validates all canonical source data before rendering, `build:derive` computes deterministic data artifacts, `build:render` renders the static site and feature pages, and `build:audit` runs read-only output checks (release contracts, internal links, SEO graph).
 
 ## Research and licensing
 

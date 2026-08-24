@@ -295,9 +295,11 @@ test("archived mobile app route points learners to the web product without activ
   assert.doesNotMatch(apps, /https:\/\/apps\.apple\.com\/us\/app/);
   assert.doesNotMatch(apps, /"MobileApplication"/);
   assert.doesNotMatch(apps, /"SoftwareApplication"/);
+  // The archived page is noindex, so it must stay out of the sitemap.
+  assert.match(apps, /<meta name="robots" content="noindex,follow">/);
+  assert.doesNotMatch(sitemap, /https:\/\/metkagram\.github\.io\/en\/apps\//);
   assert.match(privacy, /<h1>Privacy Policy<\/h1>/);
   assert.match(privacy, /"@type":"WebPage"/);
-  assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/apps\//);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/legal\/privacy\//);
 });
 

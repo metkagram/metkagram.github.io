@@ -100,7 +100,7 @@ Every API record carries canonical source metadata and a content hash where the 
 
 `src/release.mjs` is the canonical release state for the project: canonical URL, release date, product/dataset versions, current rights/licensing state, citation metadata, language capabilities and the public evidence boundary. It composes the leaf sources (`src/site.mjs`, `src/provenance.mjs`, `src/language-registry.mjs`, `package.json`) instead of duplicating them.
 
-- `CITATION.cff` and `public/rights.json` are generated artifacts. Regenerate with `node scripts/release-metadata.mjs` (the build does this first); `tests/release-metadata.test.mjs` fails on drift.
+- `CITATION.cff` and `public/rights.json` are generated artifacts. Regenerate with `node scripts/release-metadata.mjs` (the build's source stage does this first); `tests/release-metadata.test.mjs` fails on drift.
 - Pages, API manifests, MCP specs, citation output and distribution exports derive release/rights/citation values from this module or its leaf sources.
 - Semantic rights copy is rendered at build time. Post-render string replacement must never change licensing, citation or capability meaning (`scripts/enhance-licensing-pages.mjs` is limited to presentation metadata on the two static licensing pages; `scripts/release-contracts.mjs` only validates rendered output and fails the build on drift — it never rewrites copy).
 - CC BY-NC 4.0 appears only as explicit history (pre-2026-08-17 revisions); the release-metadata tests reject it as a current-rights statement.
@@ -148,6 +148,20 @@ Minimum useful addition:
 7. add an interface locale only when full product copy is localized.
 
 This allows staged expansion. For example, French could enter Pattern Practice with Russian translations while annotated French reading remains unavailable. The product should state that capability honestly rather than generate decorative empty pages.
+
+## Build pipeline
+
+`npm run build` composes five explicit stages; each is a separate `package.json` command (`build:<stage>`) running `scripts/stages/<stage>.mjs`. Stage order is the contract: `source → validate → derive → render → audit`.
+
+1. **source** — cleans `dist/` and regenerates the canonical release artifacts (`CITATION.cff`, `public/rights.json`) from `src/release.mjs`. Inputs are the canonical sources only (`data/`, `src/`, `public/`, `package.json`); nothing reads generated output.
+2. **validate** — `scripts/validate-sources.mjs` validates canonical semantic state before anything renders: content (`src/content.mjs`), canonical and Practice annotations, release/rights consistency (including generated-artifact drift), the language capability registry, and every feature source dataset (contrasts, contrast extensions, choice drills, reasoning packs, teacher export sources, the Russian-speaker error map, public-learning rules, discovery topics, partnership payload, language pilots, domain-model construction, learning-event schema, evaluation fixtures). The shared validators live in `src/source-validation.mjs`; feature renderers import the same functions, so render-time behaviour is unchanged. This stage never reads rendered output — invalid canonical data fails here, not midway through a page patch.
+3. **derive** — deterministic secondary artifacts that need no rendered pages (currently the Pattern Lens rule export). Derived data is never a competing source of truth.
+4. **render** — `scripts/build.mjs` renders the base site (routes, API, sitemap, data exports), then the feature renderers add their pages and cross-links in the fixed, dependency-annotated order listed in `scripts/stages/render.mjs`. `seo-graph-normalize.mjs` closes the stage as the metadata/JSON-LD normalization pass. Some feature renderers still augment earlier pages through marker-based HTML injection; that is legacy render-stage coupling, not post-render work. New features should prefer rendering complete pages over patching, and every renderer stays deterministic (no wall-clock or random output).
+5. **audit** — read-only checks over the finished output: archived-mobile assertion (`scripts/archive-mobile.mjs`), release contracts, internal links, SEO graph. Audit scripts must not write to `dist/`; `tests/build-stages.test.mjs` enforces this.
+
+Semantic product state — rights, language capabilities, release identity, citations, domain relations — is resolved before or during rendering and is never decided afterwards. A stage failure aborts the pipeline with the stage, script and exit code in the error.
+
+`npm run verify` runs the staged build plus the unit test suite.
 
 ## Verification and deployment
 
