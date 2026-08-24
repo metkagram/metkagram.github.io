@@ -8,10 +8,10 @@ import { legacyAnnotationToCanonical, patternToCanonicalCards, renderCanonicalTe
 
 export { SITE_URL };
 
-export const STORE_LINKS = {
-  googlePlay: "https://play.google.com/store/apps/details?id=app.metkagram.android",
-  appStore: "https://apps.apple.com/us/app/grammar-cards-ai-tutor/id6502211918"
-};
+// The mobile apps are archived product history. Store URLs are deliberately not
+// rendered anywhere: the apps pages below are the canonical archive, and the
+// audit stage (scripts/archive-mobile.mjs) fails the build if store promotion
+// or MobileApplication structured data reappears in generated output.
 
 function metkagramEntityGraph() {
   return {
@@ -181,12 +181,12 @@ function footer(locale, compact = false) {
   </footer>`;
 }
 
-export function layout({ locale = "en", pathname, title, description, body, type = "website", pageType = "WebPage", structuredData = [], root = false, notFound = false, bodyClass = "", dateModified = SITE_RELEASE_DATE }) {
+export function layout({ locale = "en", pathname, title, description, body, type = "website", pageType = "WebPage", structuredData = [], root = false, notFound = false, bodyClass = "", dateModified = SITE_RELEASE_DATE, robots: robotsOverride }) {
   const metaTitle = conciseMeta(title, 68);
   const metaDescription = conciseMeta(description, 155);
   const canonicalPath = notFound ? "/404.html" : slugPath(pathname);
   const canonical = `${SITE_URL}${canonicalPath}`;
-  const robots = notFound ? "noindex,follow" : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
+  const robots = robotsOverride ?? (notFound ? "noindex,follow" : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1");
   const pageEntity = {
     "@context": "https://schema.org",
     "@type": pageType,
@@ -664,18 +664,18 @@ function legalSections(locale, kind) {
   };
 }
 
-function storeLinks(locale) {
-  const en = locale === "en";
-  return `<div class="store-links"><a class="primary-link" href="${STORE_LINKS.googlePlay}" target="_blank" rel="noreferrer">Google Play <span aria-hidden="true">↗</span></a><a class="primary-link store-link-secondary" href="${STORE_LINKS.appStore}" target="_blank" rel="noreferrer">App Store <span aria-hidden="true">↗</span></a><a class="text-link" href="/${locale}/legal/privacy/">${en ? "Privacy Policy" : "Политика конфиденциальности"} <span aria-hidden="true">→</span></a></div>`;
-}
-
 export function appsPage(locale) {
-  const en = locale === "en";
+  const ru = locale === "ru";
   const pathname = `/${locale}/apps/`;
-  const title = en ? "Metkagram mobile apps for grammar practice" : "Мобильные приложения Metkagram";
-  const intro = en ? "The original Metkagram mobile apps remain available in their stores. Use the web workspace for reading annotated sentences and the apps for the original flashcard and drill experience." : "Читайте фразы с разметкой на сайте, а карточки и упражнения открывайте в приложениях.";
-  const body = `<section class="app-hero section-pad"><p class="eyebrow">Metkagram · mobile apps</p><h1>${en ? "The original practice apps." : "Приложения для практики."}</h1><p class="lede">${intro}</p>${storeLinks(locale)}</section><section class="app-details section-pad ruled"><div><p class="eyebrow">${en ? "What they contain" : "Что внутри"}</p><h2>${en ? "A focused grammar practice tool." : "Грамматическая практика без лишнего."}</h2></div><div class="app-feature-list"><article><span>01</span><h3>${en ? "Flashcards" : "Карточки"}</h3><p>${en ? "Short sessions built around recurring grammar choices." : "Короткие занятия на повторяющихся конструкциях."}</p></article><article><span>02</span><h3>${en ? "Minimal pairs" : "Минимальные пары"}</h3><p>${en ? "Compare nearby structures and make the contrast visible." : "Сравнивайте близкие конструкции и замечайте разницу."}</p></article><article><span>03</span><h3>${en ? "Spaced return" : "Повторение"}</h3><p>${en ? "Return to patterns over time instead of endlessly rereading them." : "Возвращайтесь к моделям через подходящие интервалы."}</p></article></div></section><section class="app-trust section-pad ruled"><div><p class="eyebrow">${en ? "Status & policies" : "Статус и правила"}</p><h2>${en ? "Mobile history, clear links." : "Условия и конфиденциальность."}</h2></div><div><p class="lede">${en ? "The applications are maintained as part of Metkagram's product history and remain subject to the policies below and the terms of the relevant store." : "Для приложений действуют правила Metkagram и условия соответствующего магазина."}</p><p class="legal-inline-links"><a href="/${locale}/legal/privacy/">${en ? "Privacy Policy" : "Политика конфиденциальности"}</a><a href="/${locale}/legal/terms/">${en ? "Terms of Use" : "Условия использования"}</a></p></div></section>`;
-  return layout({ locale, pathname, title, description: intro, body, structuredData: [breadcrumbJson(pathname, en ? "Mobile apps" : "Мобильные приложения", locale)] });
+  const title = ru ? "Архив мобильного Metkagram | Metkagram" : "Metkagram mobile archive | Metkagram";
+  const description = ru
+    ? "История мобильного этапа Metkagram. Активная разработка продолжается в веб-проекте вокруг языковых моделей, сравнений и практики."
+    : "Product history of the Metkagram mobile stage. Active development continues on the web around reusable patterns, contrasts and practice.";
+  const body = ru
+    ? `<section class="app-hero section-pad"><p class="eyebrow">Metkagram · история продукта</p><h1>Мобильное приложение стало этапом исследования.</h1><p class="lede">Android и iOS приложения были важной частью эксперимента с карточками, разметкой и интервальным повторением. Активный продукт теперь развивается в вебе.</p></section><section class="app-details section-pad ruled"><div><p class="eyebrow">Что осталось</p><h2>Идея пережила приложение.</h2></div><div class="app-feature-list"><article><span>01</span><h3>Разметка</h3><p>Структура остаётся видимой внутри целой фразы.</p></article><article><span>02</span><h3>Речевые модели</h3><p>Полезные конструкции превращаются в стабильные объекты для повторного использования.</p></article><article><span>03</span><h3>Практика</h3><p>Модели возвращаются через активное извлечение вместо бесконечного перечитывания.</p></article></div></section><section class="app-trust section-pad ruled"><div><p class="eyebrow">Текущий Metkagram</p><h2>Продолжение находится в вебе.</h2></div><div><p class="lede">Начните с Pattern Lens, Pattern Atlas, сравнений или каталога практики. Эта страница сохраняется только как история продукта.</p><p class="legal-inline-links"><a href="/${locale}/lens/">Pattern Lens</a><a href="/${locale}/practice/">Речевые модели</a><a href="/${locale}/contrasts/">Сравнения</a><a href="/${locale}/history/">История проекта</a></p></div></section>`
+    : `<section class="app-hero section-pad"><p class="eyebrow">Metkagram · product history</p><h1>The mobile app became a research stage.</h1><p class="lede">The Android and iOS apps were an important experiment with cards, annotation and spaced return. Active product development now happens on the web.</p></section><section class="app-details section-pad ruled"><div><p class="eyebrow">What survived</p><h2>The idea outlived the app.</h2></div><div class="app-feature-list"><article><span>01</span><h3>Visible structure</h3><p>Grammar and function stay attached to the complete sentence.</p></article><article><span>02</span><h3>Reusable patterns</h3><p>Useful structures become stable learning objects that can travel to new contexts.</p></article><article><span>03</span><h3>Active practice</h3><p>Patterns return through retrieval instead of endless rereading.</p></article></div></section><section class="app-trust section-pad ruled"><div><p class="eyebrow">Current Metkagram</p><h2>Continue on the web.</h2></div><div><p class="lede">Start with Pattern Lens, Pattern Atlas, pattern contrasts or the Practice catalogue. This page remains only as product history.</p><p class="legal-inline-links"><a href="/${locale}/lens/">Pattern Lens</a><a href="/${locale}/practice/">Pattern Practice</a><a href="/${locale}/contrasts/">Pattern contrasts</a><a href="/${locale}/history/">Project history</a></p></div></section>`;
+  const html = layout({ locale, pathname, title, description, body, bodyClass: "pattern-lens-page", robots: "noindex,follow" });
+  return html.replace("</head>", "  <link rel=\"stylesheet\" href=\"/assets/pattern-lens.css\">\n</head>");
 }
 
 export function legalPage(locale, kind) {
@@ -882,7 +882,7 @@ export function historyPage(locale) {
   const t = ui[locale];
   const pathname = `/${locale}/history/`;
   const chapters = [["01", t.historyMobileTitle, t.historyMobileDetail], ["02", t.historyIdeaTitle, t.historyIdeaDetail], ["03", t.historyWebTitle, t.historyWebDetail]];
-  const body = `<section class="history-head section-pad"><p class="eyebrow">${t.historyEyebrow}</p><h1>${t.historyTitle}</h1><p class="lede">${t.historyIntro}</p></section><section class="history-timeline section-pad ruled">${chapters.map(([index, title, detail]) => `<article><span>${index}</span><div><h2>${title}</h2><p>${detail}</p></div></article>`).join("")}</section><section class="history-sources section-pad ruled"><p class="eyebrow">${t.historySources}</p><nav><a href="https://metalhatscats.com/products/metkagram">${t.historyProductSource} ↗</a><a href="https://play.google.com/store/apps/details?id=app.metkagram.android">${t.historyGoogleSource} ↗</a><a href="https://apps.apple.com/co/app/tarjetas-gram%C3%A1tica-metkagram/id6502211918">${t.historyAppleSource} ↗</a></nav></section>`;
+  const body = `<section class="history-head section-pad"><p class="eyebrow">${t.historyEyebrow}</p><h1>${t.historyTitle}</h1><p class="lede">${t.historyIntro}</p></section><section class="history-timeline section-pad ruled">${chapters.map(([index, title, detail]) => `<article><span>${index}</span><div><h2>${title}</h2><p>${detail}</p></div></article>`).join("")}</section><section class="history-sources section-pad ruled"><p class="eyebrow">${t.historySources}</p><nav><a href="https://metalhatscats.com/products/metkagram">${t.historyProductSource} ↗</a><a href="/${locale}/apps/">${t.historyGoogleSource} ↗</a><a href="https://apps.apple.com/co/app/tarjetas-gram%C3%A1tica-metkagram/id6502211918">${t.historyAppleSource} ↗</a></nav></section>`;
   return layout({ locale, pathname, title: locale === "en" ? "The history of Metkagram" : "История Metkagram", description: t.historyIntro, body: `${body}${shareBar(locale, pathname, t.historyTitle)}`, pageType: "AboutPage", structuredData: [breadcrumbJson(pathname, t.history, locale)] });
 }
 

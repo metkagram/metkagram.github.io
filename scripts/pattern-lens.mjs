@@ -122,8 +122,6 @@ function lensCopy(locale) {
       aiTitle: "Для AI tutors",
       ai: "ИИ здесь не заменяет Metkagram. Агент может использовать patterns как учебную программу: выбрать конструкцию, объяснить её под контекст пользователя, проверить попытку и вернуть паттерн на повторение.",
       manifest: "Teaching manifest",
-      archivedTitle: "Мобильное приложение стало исследовательским этапом",
-      archivedBody: "Раннее мобильное приложение помогло проверить карточки, разметку и повторение, но больше не является активным продуктом. Текущий Metkagram развивается как web-first research and learning project: Pattern Library, visual annotation и Pattern Lens.",
     };
   }
   return {
@@ -146,8 +144,6 @@ function lensCopy(locale) {
     aiTitle: "For AI tutors",
     ai: "AI is the tutor, not the curriculum. An agent can use Metkagram patterns to choose what a learner should practise, explain it in context, check an attempt, and schedule the pattern for return.",
     manifest: "Teaching manifest",
-    archivedTitle: "The mobile app became a research stage",
-    archivedBody: "The earlier mobile app helped test cards, annotation and repetition, but it is no longer the active product. Metkagram now develops as a web-first research and learning project centred on the Pattern Library, visual annotation and Pattern Lens.",
   };
 }
 
@@ -252,18 +248,6 @@ function buildLensPage(locale, content) {
     }],
   });
   return removeLegacyMobileApplicationSchema(html.replace("</head>", "  <link rel=\"stylesheet\" href=\"/assets/pattern-lens.css\">\n</head>"));
-}
-
-function archivedAppsPage(locale) {
-  const copy = lensCopy(locale);
-  return removeLegacyMobileApplicationSchema(layout({
-    locale,
-    pathname: `/${locale}/apps/`,
-    title: locale === "ru" ? "История мобильного приложения | Metkagram" : "Mobile app history | Metkagram",
-    description: locale === "ru" ? "Мобильное приложение Metkagram закрыто; проект развивается как web-first Pattern Library и Pattern Lens." : "The Metkagram mobile app is no longer active; the project now develops as a web-first Pattern Library and Pattern Lens.",
-    body: `<section class="lens-shell lens-archive"><p class="eyebrow">Project history</p><h1>${escapeHtml(copy.archivedTitle)}</h1><p class="lens-lead">${escapeHtml(copy.archivedBody)}</p><div class="lens-actions"><a class="lens-primary" href="/${locale}/lens/">Pattern Lens</a><a class="lens-secondary" href="/${locale}/practice/">Pattern Library</a></div></section>`,
-    bodyClass: "pattern-lens-page",
-  }).replace("</head>", "  <link rel=\"stylesheet\" href=\"/assets/pattern-lens.css\">\n</head>"));
 }
 
 function teachingManifest(content) {
@@ -413,7 +397,6 @@ export function buildPatternLens() {
   writeDist("data/pattern-lens-patterns.json", `${JSON.stringify(publicLensPatterns(content))}\n`);
   for (const locale of ["en", "ru"]) {
     writeDist(`${locale}/lens/index.html`, buildLensPage(locale, content));
-    writeDist(`${locale}/apps/index.html`, archivedAppsPage(locale));
   }
   patchApi(content);
   patchLlmsTxt();
