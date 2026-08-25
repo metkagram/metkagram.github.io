@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Validate Agent-Ready Web Profile
         uses: dkharlanau/agent-ready-web-profile@2b9c627f9a8cbe5cae2d6aaa78012a1671c4566e
