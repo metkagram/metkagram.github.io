@@ -1,0 +1,21 @@
+name: Google Search Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_inspections: { description: Maximum page URLs to inspect, required: false, default: 500, type: number }
+      inspection_mode: { description: URL selection mode, required: false, default: all, type: choice, options: [all, priority, rotate] }
+  schedule:
+    - cron: "29 5 * * *"
+permissions: { contents: read, actions: read }
+jobs:
+  google-search:
+    uses: dkharlanau/dkharlanau.github.io/.github/workflows/google-search-reusable.yml@e5efe6bfab65db9c3c09615b030f362d7580f4d3
+    with:
+      site_url: https://metkagram.github.io/
+      sitemap_url: https://metkagram.github.io/sitemap.xml
+      runner_ref: e5efe6bfab65db9c3c09615b030f362d7580f4d3
+      max_inspections: ${{ github.event_name == 'schedule' && 120 || inputs.max_inspections }}
+      inspection_mode: ${{ github.event_name == 'schedule' && 'rotate' || inputs.inspection_mode }}
+    secrets:
+      google_search_console_service_account: ${{ secrets.GOOGLE_SEARCH_CONSOLE_SERVICE_ACCOUNT }}
