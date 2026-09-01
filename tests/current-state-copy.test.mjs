@@ -11,24 +11,24 @@ function html(locale, ...parts) {
   return fs.readFileSync(path.join(DIST, locale, ...parts, "index.html"), "utf8");
 }
 
-test("release metadata reflects the current August 2026 public state", () => {
-  assert.equal(SITE_RELEASE_DATE, "2026-08-19");
+test("release metadata reflects the current September 2026 public state", () => {
+  assert.equal(SITE_RELEASE_DATE, "2026-09-01");
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
-  assert.match(sitemap, /<lastmod>2026-08-19<\/lastmod>/);
+  assert.match(sitemap, /<lastmod>2026-09-01<\/lastmod>/);
 });
 
 test("localized roadmap describes the current product instead of the July snapshot", () => {
   const en = html("en", "roadmap");
   const ru = html("ru", "roadmap");
 
-  assert.match(en, /Current release · August 2026/);
-  assert.doesNotMatch(en, /Current release · July 2026/);
+  assert.match(en, /Current release · September 2026/);
+  assert.doesNotMatch(en, /Current release · August 2026/);
   assert.match(en, /French Frame-only pilot/);
   assert.match(en, /40 Thinking in Language Frames/);
   assert.match(en, /Pattern Practice, Lens, Atlas, Map, Contrasts, Choice, Routes and Bridge/);
 
-  assert.match(ru, /Текущий релиз · август 2026/);
-  assert.doesNotMatch(ru, /Текущий релиз · июль 2026/);
+  assert.match(ru, /Текущий релиз · сентябрь 2026/);
+  assert.doesNotMatch(ru, /Текущий релиз · август 2026/);
   assert.match(ru, /французский Frame-only пилот/i);
   assert.match(ru, /40 Thinking in Language Frames/);
 });
