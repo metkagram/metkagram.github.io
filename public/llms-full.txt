@@ -1,0 +1,34 @@
+# Metkagram — full AI discovery guide
+
+> Multilingual language-learning and NLP knowledge site with canonical patterns, annotated examples, reasoning packs, practice sets, and provenance-aware retrieval.
+
+## Start here
+
+- Website: https://metkagram.github.io/
+- English learning hub: https://metkagram.github.io/en/
+- Pattern Atlas: https://metkagram.github.io/en/explore/english/
+- Practice sets: https://metkagram.github.io/en/practice/sets/
+- AI and integrations: https://metkagram.github.io/en/ai/
+- Research: https://metkagram.github.io/en/research/
+
+## Machine-readable sources
+
+- Agent profile: https://metkagram.github.io/ai/site-profile.json
+- API index: https://metkagram.github.io/api/v1/index.json
+- OpenAPI: https://metkagram.github.io/api/v1/openapi.json
+- Search index: https://metkagram.github.io/api/v1/search-index.json
+- Data catalogue: https://metkagram.github.io/data/catalog.json
+- Attribution and provenance: https://metkagram.github.io/api/v1/attribution.json
+- MCP-compatible tool description: https://metkagram.github.io/api/v1/mcp-server.json
+
+## Retrieval rules
+
+1. Resolve canonical pattern or study-set URLs before citing a record.
+2. Preserve language, source, provenance, and dataset version.
+3. Prefer reviewed and canonical records over migration or legacy aliases.
+4. Treat generated practice material as learning support, not linguistic authority.
+5. Keep translations and cross-language transfers explicit; do not infer equivalence without the published relation.
+
+## Public scope
+
+Metkagram is an educational language-learning and NLP knowledge project. Check the published license and attribution metadata before reuse.
