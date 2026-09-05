@@ -1,0 +1,53 @@
+{
+  "version": "0.1",
+  "status": "experimental-project-extension",
+  "scope": "https://metkagram.github.io/",
+  "canonicalLanguage": "en",
+  "fallbackLanguage": "en",
+  "humanInterfaceLanguages": ["en", "ru"],
+  "agentRoutingLanguages": ["en", "ru", "de", "fr"],
+  "locales": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "canonical",
+      "llms": "https://metkagram.github.io/llms.txt"
+    },
+    {
+      "language": "ru",
+      "label": "Русский",
+      "status": "localized-agent-routing",
+      "llms": "https://metkagram.github.io/ru/llms.txt"
+    },
+    {
+      "language": "de",
+      "label": "Deutsch",
+      "status": "localized-agent-routing",
+      "llms": "https://metkagram.github.io/de/llms.txt"
+    },
+    {
+      "language": "fr",
+      "label": "Français",
+      "status": "localized-agent-routing",
+      "llms": "https://metkagram.github.io/fr/llms.txt"
+    }
+  ],
+  "selection": {
+    "explicitLocaleUrlPreferred": true,
+    "httpLanguageNegotiation": false,
+    "fallback": "en",
+    "rule": "Use an explicitly requested published routing locale when available; otherwise use the canonical English llms.txt surface."
+  },
+  "semantics": {
+    "normativeTechnicalLanguage": "en",
+    "translateStablePatternIds": false,
+    "translateJsonFieldNames": false,
+    "localizedSurfaceRole": "discovery-and-routing",
+    "languageCapabilitySource": "https://metkagram.github.io/data/languages.json"
+  },
+  "discovery": {
+    "htmlRelation": "describedby",
+    "languageAttribute": "hreflang",
+    "profileExtension": "io.github.dkharlanau/localized-llms"
+  }
+}
