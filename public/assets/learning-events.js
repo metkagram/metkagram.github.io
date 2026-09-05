@@ -4,6 +4,8 @@
   const MAX_EVENTS = 1000;
   const allowedNames = new Set([
     "lens_analyze",
+    "lens_practice_attempt",
+    "lens_practice_complete",
     "learning_object_open",
     "clinic_feedback_reveal",
     "pack_step_open",
