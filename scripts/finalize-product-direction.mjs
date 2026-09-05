@@ -76,6 +76,45 @@ function patchPatternPages(graph) {
   return patched;
 }
 
+function patchHomeEntry() {
+  const copy = {
+    en: {
+      oldIntro: "Annotated phrases show how each pattern works. Notice the structure, practise the template, and reuse it in your own speech.",
+      intro: "Bring a real sentence you care about. Metkagram finds a reusable frame, shows what it is doing, and asks you to make the structure your own.",
+      primary: "Start with a real sentence",
+      library: "Explore the pattern library"
+    },
+    ru: {
+      oldIntro: "Размеченные фразы показывают, как работает каждый паттерн. Заметьте структуру, потренируйте шаблон и используйте его в своей речи.",
+      intro: "Принесите реальную фразу, которая вам нужна. Metkagram найдёт повторяемый каркас, покажет его задачу и сразу предложит применить структуру в своей фразе.",
+      primary: "Начать с реальной фразы",
+      library: "Исследовать библиотеку паттернов"
+    }
+  };
+
+  for (const locale of ["en", "ru"]) {
+    const file = path.join(DIST, locale, "index.html");
+    if (!fs.existsSync(file)) throw new Error(`Missing localized homepage: ${file}`);
+    let html = fs.readFileSync(file, "utf8");
+    const c = copy[locale];
+    const practiceHref = `/${locale}/practice/`;
+    const lensHref = `/${locale}/lens/`;
+
+    if (!html.includes(c.oldIntro)) throw new Error(`Homepage intro contract changed for ${locale}`);
+    html = html.replace(c.oldIntro, c.intro);
+
+    const primaryPattern = new RegExp(`<a class="studio-primary-action" href="${practiceHref.replaceAll("/", "\\/")}">[^<]+<span aria-hidden="true">↗<\\/span><\\/a>`);
+    if (!primaryPattern.test(html)) throw new Error(`Homepage primary CTA contract changed for ${locale}`);
+    html = html.replace(primaryPattern, `<a class="studio-primary-action" data-product-entry="lens" href="${lensHref}">${c.primary}<span aria-hidden="true">↗</span></a>`);
+
+    const indexPattern = new RegExp(`<a href="${practiceHref.replaceAll("/", "\\/")}">${locale === "ru" ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→<\\/span><\\/a>`);
+    if (!indexPattern.test(html)) throw new Error(`Homepage library CTA contract changed for ${locale}`);
+    html = html.replace(indexPattern, `<a data-product-entry="library" href="${practiceHref}">${c.library} <span aria-hidden="true">→</span></a>`);
+
+    fs.writeFileSync(file, html);
+  }
+}
+
 const patterns = readJson("data/advanced-patterns.json");
 const graph = buildPatternGraph(patterns, { siteUrl: SITE_URL, maxRelated: 4 });
 writeJson("data/pattern-graph.json", graph);
@@ -158,4 +197,5 @@ if (fs.existsSync(llmsFile)) {
 }
 
 const patchedPages = patchPatternPages(graph);
-console.log(`Product direction finalized: ${graph.node_count} graph nodes, ${graph.edge_count} edges, ${patchedPages} pattern pages enriched.`);
+patchHomeEntry();
+console.log(`Product direction finalized: ${graph.node_count} graph nodes, ${graph.edge_count} edges, ${patchedPages} pattern pages enriched; Lens is the primary homepage learner entry.`);
