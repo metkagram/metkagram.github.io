@@ -36,6 +36,6 @@ test("homepage product-entry patch is fail-fast and does not remove the library"
   assert.match(source, /Homepage intro contract changed/);
   assert.match(source, /Homepage primary CTA contract changed/);
   assert.match(source, /Homepage library CTA contract changed/);
-  assert.match(source, /data-product-entry=\\"lens\\"/);
-  assert.match(source, /data-product-entry=\\"library\\"/);
+  assert.match(source, /data-product-entry="lens"/);
+  assert.match(source, /data-product-entry="library"/);
 });
