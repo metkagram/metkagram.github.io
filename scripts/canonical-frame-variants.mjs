@@ -217,6 +217,46 @@ function patchApiDiscovery(model, manifest) {
   });
 }
 
+function patchFeatureResolvers(model, manifest) {
+  const byPattern = new Map(model.patternIndex.map((record) => [record.pattern_id, record]));
+  const resolver = {
+    model_version: DOMAIN_MODEL_VERSION,
+    pattern_index: manifest.datasets.patternIndex,
+    canonical_frames: manifest.datasets.canonicalFrames,
+    frame_variants: manifest.datasets.frameVariants,
+    rule: "Resolve stable Pattern IDs through pattern-index. Absence of frame_variant_ids means the Pattern Frame remains its own canonical Frame; never infer grouping from similarity alone.",
+  };
+
+  for (const relative of ["data/pattern-relations.json", "api/v1/pattern-relations.json"]) {
+    patchJson(relative, (value) => {
+      const root = value.data && typeof value.data === "object" ? value.data : value;
+      root.canonicalFrameResolver = resolver;
+      for (const [patternId, relation] of Object.entries(root.byPattern || {})) {
+        const record = byPattern.get(patternId);
+        if (!record) continue;
+        relation.domain_model = {
+          move_id: record.move_id,
+          frame_ids: record.frame_ids,
+          canonical_frame_ids: record.canonical_frame_ids,
+          frame_variant_ids: record.frame_variant_ids,
+        };
+      }
+    });
+  }
+
+  for (const relative of ["data/discovery.json", "api/v1/discovery.json"]) {
+    patchJson(relative, (value) => {
+      const root = value.data && typeof value.data === "object" ? value.data : value;
+      root.canonicalFrameResolver = resolver;
+      for (const surface of root.surfaces || []) {
+        if (["pattern-lens", "pattern-atlas", "pattern-map", "pattern-contrasts", "pattern-choice", "pattern-routes", "pattern-bridge"].includes(surface.id)) {
+          surface.canonicalFrameResolver = manifest.datasets.patternIndex;
+        }
+      }
+    });
+  }
+}
+
 function patchPatternApi(model) {
   for (const record of model.patternIndex) {
     const relative = `api/v1/patterns/${record.pattern_id.toLowerCase()}.json`;
@@ -259,7 +299,7 @@ function patchPatternPages(model) {
       const formulas = canonicalFrames.map((frame) => `<li><strong>${escapeHtml(frame.language.toUpperCase())}</strong> · <code>${escapeHtml(frame.formula)}</code></li>`).join("");
       const siblingLinks = siblings.slice(0, 7).map((sibling) => `<a href="${patternPath(locale, sibling)}">${escapeHtml(sibling)}</a>`).join(" · ");
       const section = `<section class="section-pad ruled" data-canonical-frame-family="${escapeHtml(canonicalFrames[0]?.family_id || "")}">
-        <p class="eyebrow">${ru ? "Canonical Frame · pilot" : "Canonical Frame · pilot"}</p>
+        <p class="eyebrow">Canonical Frame · pilot</p>
         <h2>${ru ? "Одна структура, несколько контекстов" : "One reusable Frame, several contexts"}</h2>
         <p>${ru ? "Этот Pattern сохранён как стабильная контекстная реализация. Проверенная структурная связь указывает на более общий Frame; старый Pattern ID, URL и API-запись не удаляются." : "This Pattern remains a stable contextual realization. An explicit structural relation points to a more general Frame; the existing Pattern ID, URL and API record remain intact."}</p>
         <ul>${formulas}</ul>
@@ -293,6 +333,7 @@ function main() {
   });
   const manifest = publishDomainCollections(model);
   patchApiDiscovery(model, manifest);
+  patchFeatureResolvers(model, manifest);
   patchPatternApi(model);
   patchPatternPages(model);
   patchLlms(manifest);
