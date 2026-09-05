@@ -21,7 +21,8 @@
 //   → teacher-tutor-exports build on each other's pages and datasets;
 // - lens-knowledge-bridge writes pattern-relations.json read by cross-language-transfer;
 // - learning-telemetry decorates lens/clinic/packs/transfer/exports pages and must
-//   follow their renderers;
+//   follow their renderers; learning-activation-summary then upgrades only the Local
+//   activity page with aggregate pilot reporting;
 // - ai-adoption creates the build-with-metkagram pages that publication-readiness
 //   and benchmark-publication extend;
 // - cross-language-transfer + teacher-tutor-exports feed multilingual-domain-model;
@@ -61,6 +62,7 @@ export const RENDER_STEPS = [
   "scripts/teacher-tutor-exports.mjs",
   "scripts/cross-language-transfer.mjs",
   "scripts/learning-telemetry.mjs",
+  "scripts/learning-activation-summary.mjs",
   "scripts/russian-transfer-guide.mjs",
   "scripts/terminology-language-foundation.mjs",
   "scripts/practice-seo.mjs",
