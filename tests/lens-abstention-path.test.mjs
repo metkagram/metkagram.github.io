@@ -9,7 +9,7 @@ const read = (relative) => fs.readFileSync(path.join(ROOT, relative), "utf8");
 test("Lens abstention routes to intent discovery before the full library", () => {
   const source = read("public/assets/lens-practice-bridge.js");
   assert.match(source, /querySelector\('\[data-lens-empty\]'\)/);
-  assert.match(source, /data\.lensAbstentionPath = 'true'/);
+  assert.match(source, /dataset\.lensAbstentionPath = 'true'/);
   assert.match(source, /No confident reviewed match\./);
   assert.match(source, /Надёжного совпадения не найдено\./);
   assert.match(source, /href="\/\$\{locale\}\/practice\/intents\/"/);
