@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { loadContent } from "../src/content.mjs";
+import { validateFrameQualityBaseline } from "../src/frame-quality-baseline.mjs";
 import { buildFrameQualityAudit, frameQualityAuditMarkdown } from "../src/frame-quality-audit.mjs";
 
 const ROOT = process.cwd();
@@ -39,35 +40,18 @@ function classifyAudit(rawAudit) {
   };
 }
 
-function baselineCandidate(audit) {
-  const duplicateIds = new Set([
-    ...audit.duplicateGroups.exact,
-    ...audit.duplicateGroups.slotVariants,
-    ...audit.duplicateGroups.nearPairs,
-  ].flatMap((item) => item.pattern_ids));
-  const highConfidenceIssues = audit.linguisticIssues.filter((item) => item.confidence === "high").length;
-  const round = (value) => Number(value.toFixed(6));
-  return {
-    schemaVersion: 1,
-    patternCount: audit.coverage.pattern_count,
-    studySetCount: audit.coverage.study_set_count,
-    duplicateAffectedPatternRate: round(duplicateIds.size / audit.coverage.pattern_count),
-    highConfidenceLinguisticIssuesPerPattern: round(highConfidenceIssues / audit.coverage.pattern_count),
-    sets: Object.fromEntries(Object.entries(audit.setMetrics).sort(([a], [b]) => a.localeCompare(b)).map(([id, metrics]) => [id, {
-      duplicateAffectedRate: metrics.duplicate_affected_rate,
-      highConfidenceLinguisticIssuesPerPattern: round(metrics.high_confidence_linguistic_issue_count / Math.max(1, metrics.pattern_count)),
-    }])),
-  };
-}
-
 export function main() {
   const audit = classifyAudit(buildFrameQualityAudit(loadContent()));
+  const snapshot = validateFrameQualityBaseline(audit);
   const directory = path.join(ROOT, "dist", "data", "quality");
   fs.mkdirSync(directory, { recursive: true });
   fs.writeFileSync(path.join(directory, "frame-audit.json"), `${JSON.stringify(audit, null, 2)}\n`);
-  fs.writeFileSync(path.join(directory, "frame-audit.md"), frameQualityAuditMarkdown(audit));
+  fs.writeFileSync(
+    path.join(directory, "frame-audit.md"),
+    `${frameQualityAuditMarkdown(audit)}\n## Regression baseline\n\n- Duplicate/variant-affected Patterns: **${(snapshot.global.duplicateAffectedPatternRate * 100).toFixed(2)}%**\n- High-confidence audit issues: **${(snapshot.global.highConfidenceAuditIssuesPerPattern * 100).toFixed(2)} per 100 Patterns**\n- Guard: current global and established-set rates must not worsen without an explicit baseline review.\n`,
+  );
   console.log(`Frame quality audit: ${audit.coverage.pattern_count} patterns / ${audit.coverage.study_set_count} sets; ${audit.summary.slot_variant_group_count} slot groups; ${audit.summary.near_duplicate_pair_count} near pairs; ${audit.summary.linguistic_issue_count} QA findings.`);
-  console.log(`FRAME_AUDIT_BASELINE_CANDIDATE=${JSON.stringify(baselineCandidate(audit))}`);
+  console.log(`Frame quality baseline passed: ${(snapshot.global.duplicateAffectedPatternRate * 100).toFixed(2)}% duplicate/variant-affected; ${(snapshot.global.highConfidenceAuditIssuesPerPattern * 100).toFixed(2)} high-confidence audit issues per 100 patterns.`);
   return audit;
 }
 
