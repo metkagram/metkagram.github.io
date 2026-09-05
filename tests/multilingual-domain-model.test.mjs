@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { buildDomainModel, frameId, moveId } from "../src/domain-model.mjs";
+import { canonicalFrameId, frameVariantId } from "../src/frame-families.mjs";
 import { languageRegistry, normalizeTranslations } from "../src/language-registry.mjs";
 
 const ROOT = process.cwd();
@@ -12,18 +13,26 @@ const json = (...parts) => JSON.parse(fs.readFileSync(path.join(DIST, ...parts),
 const sourceJson = (...parts) => JSON.parse(fs.readFileSync(path.join(ROOT, ...parts), "utf8"));
 const html = (...parts) => fs.readFileSync(path.join(DIST, ...parts, "index.html"), "utf8");
 
-test("published domain model separates Moves, Frames and reviewed Bridges", () => {
+test("published domain model separates Moves, stable Pattern Frames, canonical Frames, Variants and reviewed Bridges", () => {
   const manifest = json("data", "domain", "index.json");
   const moves = json("data", "domain", "moves.json");
   const frames = json("data", "domain", "frames.json");
+  const canonicalFrames = json("data", "domain", "canonical-frames.json");
+  const frameVariants = json("data", "domain", "frame-variants.json");
   const bridges = json("data", "domain", "bridges.json");
   const frameIds = new Set(frames.items.map((frame) => frame.id));
+  const canonicalFrameIds = new Set(canonicalFrames.items.map((frame) => frame.id));
   const moveIds = new Set(moves.items.map((move) => move.id));
 
-  assert.equal(manifest.modelVersion, "1.1.0");
+  assert.equal(manifest.modelVersion, "1.2.0");
   assert.equal(manifest.counts.moves, moves.count);
   assert.equal(manifest.counts.frames, frames.count);
+  assert.equal(manifest.counts.canonicalFrames, canonicalFrames.count);
+  assert.equal(manifest.counts.frameVariants, frameVariants.count);
   assert.equal(manifest.counts.bridges, bridges.count);
+  assert.equal(manifest.counts.canonicalFrameFamilies, 3);
+  assert.equal(canonicalFrames.count, 6);
+  assert.equal(frameVariants.count, 48);
   assert.ok(moves.count > 0);
   assert.ok(frames.count > 0);
   assert.ok(bridges.count > 0);
@@ -32,6 +41,9 @@ test("published domain model separates Moves, Frames and reviewed Bridges", () =
     assert.equal(move.kind, "move");
     assert.equal(move.language, null);
     assert.equal(move.language_independent, true);
+    for (const id of move.canonical_frame_ids || []) {
+      assert.ok(frameIds.has(id) || canonicalFrameIds.has(id), `Move ${move.id} cannot resolve ${id}`);
+    }
   }
 
   for (const frame of frames.items) {
@@ -39,7 +51,26 @@ test("published domain model separates Moves, Frames and reviewed Bridges", () =
     assert.ok(languageRegistry[frame.language]?.roles.learning);
     assert.ok(frame.formula);
     assert.ok(frame.example);
+    assert.ok(frameIds.has(frame.canonical_frame_id) || canonicalFrameIds.has(frame.canonical_frame_id));
     if (frame.move_id) assert.ok(moveIds.has(frame.move_id));
+  }
+
+  for (const canonicalFrame of canonicalFrames.items) {
+    assert.equal(canonicalFrame.kind, "canonical_frame");
+    assert.equal(canonicalFrame.review_status, "reviewed_pilot");
+    assert.equal(canonicalFrame.review_confidence, "high");
+    assert.equal(canonicalFrame.human_reviewed, false);
+    assert.ok(canonicalFrame.member_pattern_ids.length >= 2);
+    assert.ok(canonicalFrame.member_pattern_ids.includes(canonicalFrame.representative_pattern_id));
+    for (const id of canonicalFrame.pattern_frame_ids) assert.ok(frameIds.has(id));
+  }
+
+  for (const variant of frameVariants.items) {
+    assert.equal(variant.kind, "frame_variant");
+    assert.ok(frameIds.has(variant.pattern_frame_id));
+    assert.ok(canonicalFrameIds.has(variant.canonical_frame_id));
+    assert.equal(variant.review_status, "reviewed_pilot");
+    assert.equal(variant.human_reviewed, false);
   }
 
   for (const bridge of bridges.items) {
@@ -49,10 +80,12 @@ test("published domain model separates Moves, Frames and reviewed Bridges", () =
     assert.notEqual(bridge.from_language, bridge.to_language);
     assert.ok(frameIds.has(bridge.from_frame_id));
     assert.ok(frameIds.has(bridge.to_frame_id));
+    assert.ok(frameIds.has(bridge.from_canonical_frame_id) || canonicalFrameIds.has(bridge.from_canonical_frame_id));
+    assert.ok(frameIds.has(bridge.to_canonical_frame_id) || canonicalFrameIds.has(bridge.to_canonical_frame_id));
   }
 });
 
-test("pattern compatibility index keeps stable pattern IDs while exposing language-specific Frame IDs", () => {
+test("pattern compatibility index keeps stable Pattern Frames while resolving reviewed canonical Frames", () => {
   const patterns = json("data", "advanced-patterns.json");
   const frames = json("data", "domain", "frames.json");
   const index = json("data", "domain", "pattern-index.json");
@@ -66,12 +99,27 @@ test("pattern compatibility index keeps stable pattern IDs while exposing langua
     assert.ok(record, `Missing pattern compatibility record for ${pattern.id}`);
     for (const language of pattern.langs || []) {
       assert.equal(record.frame_ids[language.lang], frameId(pattern.id, language.lang));
+      assert.ok(record.canonical_frame_ids[language.lang]);
     }
     if (pattern.reasoning?.move) assert.equal(record.move_id, moveId(pattern.reasoning.move));
   }
+
+  const hedVariant = index.items.find((item) => item.pattern_id === "C1HED002");
+  assert.equal(hedVariant.frame_ids.en, frameId("C1HED002", "en"));
+  assert.equal(hedVariant.canonical_frame_ids.en, canonicalFrameId("hed-premature-conclusion", "en"));
+  assert.equal(hedVariant.canonical_frame_ids.de, canonicalFrameId("hed-premature-conclusion", "de"));
+  assert.equal(hedVariant.frame_variant_ids.en, frameVariantId("C1HED002", "en"));
+  assert.equal(hedVariant.frame_variant_ids.de, frameVariantId("C1HED002", "de"));
+
+  const standalone = index.items.find((item) => item.pattern_id === "GRMADJ001");
+  assert.ok(standalone, "expected stable non-pilot Pattern GRMADJ001");
+  assert.equal(standalone.canonical_frame_ids.en, frameId("GRMADJ001", "en"));
+  assert.equal(standalone.frame_variant_ids.en, undefined);
+
   for (const pilot of frenchPilot) {
     const record = index.items.find((item) => item.pattern_id === pilot.pattern_id);
     assert.equal(record.frame_ids.fr, frameId(pilot.pattern_id, "fr"));
+    assert.equal(record.canonical_frame_ids.fr, frameId(pilot.pattern_id, "fr"));
   }
 });
 
@@ -99,6 +147,8 @@ test("a future learning language can have Frames before annotation or interface 
   const withoutBridge = buildDomainModel(patterns, { registry, reviewedMappings: [] });
   assert.ok(withoutBridge.frames.some((frame) => frame.language === "es"));
   assert.equal(withoutBridge.bridges.length, 0);
+  assert.equal(withoutBridge.canonicalFrames.length, 0);
+  assert.equal(withoutBridge.frameVariants.length, 0);
   assert.equal(registry.es.roles.annotation, false);
   assert.equal(registry.es.roles.interface, false);
 
@@ -117,9 +167,10 @@ test("a future learning language can have Frames before annotation or interface 
   assert.equal(withBridge.bridges.length, 1);
   assert.equal(withBridge.bridges[0].from_language, "en");
   assert.equal(withBridge.bridges[0].to_language, "es");
+  assert.equal(withBridge.bridges[0].from_canonical_frame_id, frameId("DEMO001", "en"));
 });
 
-test("French pilot proves Frame-only language support without pretending annotation or Bridges", () => {
+test("French pilot proves Frame-only language support without pretending annotation, family grouping or Bridges", () => {
   const source = sourceJson("data", "language-pilots", "french-v1.json");
   const frames = json("data", "domain", "frames.json");
   const bridges = json("data", "domain", "bridges.json");
@@ -139,6 +190,7 @@ test("French pilot proves Frame-only language support without pretending annotat
   assert.ok(frenchFrames.every((frame) => frame.source_status === "editorial_pilot"));
   assert.ok(frenchFrames.every((frame) => frame.review?.status === "internal_editorial"));
   assert.ok(frenchFrames.every((frame) => frame.translations.ru));
+  assert.ok(frenchFrames.every((frame) => frame.canonical_frame_id === frame.id));
   assert.ok(bridges.items.every((bridge) => bridge.from_language !== "fr" && bridge.to_language !== "fr"));
 
   for (const locale of ["en", "ru"]) {
@@ -160,15 +212,15 @@ test("translation maps absorb legacy Russian fields without making Russian a Fra
 
 test("domain model is exposed through API, MCP, discovery and human data pages", () => {
   const api = json("api", "v1", "domain-model.json");
-  assert.equal(api.data.modelVersion, "1.1.0");
+  assert.equal(api.data.modelVersion, "1.2.0");
 
   const openapi = json("api", "v1", "openapi.json");
-  for (const endpoint of ["/domain-model.json", "/moves.json", "/frames.json", "/bridges.json", "/language-pilots.json"]) {
+  for (const endpoint of ["/domain-model.json", "/moves.json", "/frames.json", "/canonical-frames.json", "/frame-variants.json", "/bridges.json", "/language-pilots.json"]) {
     assert.ok(openapi.paths[endpoint], `Missing ${endpoint} from OpenAPI`);
   }
 
   const mcp = json("api", "v1", "mcp-server.json");
-  for (const tool of ["metkagram_get_domain_model", "metkagram_get_moves", "metkagram_get_frames", "metkagram_get_bridges", "metkagram_get_language_pilots"]) {
+  for (const tool of ["metkagram_get_domain_model", "metkagram_get_moves", "metkagram_get_frames", "metkagram_get_canonical_frames", "metkagram_get_frame_variants", "metkagram_get_bridges", "metkagram_get_language_pilots"]) {
     assert.ok(mcp.tools.some((item) => item.name === tool), `Missing MCP tool ${tool}`);
   }
 
@@ -185,4 +237,6 @@ test("domain model is exposed through API, MCP, discovery and human data pages",
   assert.match(llms, /A missing Bridge is meaningful/);
   assert.match(llms, /## French Frame pilot/);
   assert.match(llms, /French is learning=true, annotation=false, interface=false/);
+  assert.match(llms, /## Canonical Frame families/);
+  assert.match(llms, /do not infer grouping from lexical similarity/i);
 });

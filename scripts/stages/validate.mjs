@@ -8,6 +8,7 @@ import { runStage } from "./run.mjs";
 export const VALIDATE_STEPS = [
   "scripts/validate-sources.mjs",
   "scripts/validate-study-set-preservation.mjs",
+  "scripts/validate-frame-families.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {

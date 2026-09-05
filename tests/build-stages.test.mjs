@@ -14,8 +14,6 @@ import { VALIDATE_STEPS } from "../scripts/stages/validate.mjs";
 const ROOT = process.cwd();
 const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8"));
 
-// The build chain as it existed before the staged pipeline (issue #70). Every
-// script that ran in the old opaque chain must keep exactly one explicit stage.
 const LEGACY_CHAIN = [
   "scripts/build.mjs",
   "scripts/connectivity.mjs",
@@ -68,9 +66,6 @@ test("package.json exposes the staged build pipeline in canonical order", () => 
 });
 
 test("every legacy chain script remains assigned to exactly one stage", () => {
-  // New deterministic derive tasks may be added after the staged migration;
-  // this contract protects every script from the original chain plus the two
-  // read-only audits that were intentionally moved into the audit stage.
   const required = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
   const assigned = [...DERIVE_STEPS, ...RENDER_STEPS, ...AUDIT_STEPS];
   assert.equal(new Set(assigned).size, assigned.length, "a script appears in two stages");
@@ -98,6 +93,7 @@ test("validate stage runs before rendering and every validator stays source-only
   assert.deepEqual(VALIDATE_STEPS, [
     "scripts/validate-sources.mjs",
     "scripts/validate-study-set-preservation.mjs",
+    "scripts/validate-frame-families.mjs",
   ]);
   for (const script of VALIDATE_STEPS) {
     const source = fs.readFileSync(path.join(ROOT, script), "utf8");

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "policy": "explicit-reviewed-pilot-only",
+  "families": [
+    {
+      "id": "hed-premature-conclusion",
+      "set_id": "HED",
+      "representative_pattern_id": "C1HED001",
+      "member_pattern_ids": [
+        "C1HED001",
+        "C1HED002",
+        "C1HED003",
+        "C1HED004",
+        "C1HED005",
+        "C1HED006",
+        "C1HED007",
+        "C1HED008"
+      ],
+      "relation": "contextual_realization",
+      "languages": {
+        "en": {
+          "formula": "It would be premature to conclude that [topic] is settled."
+        },
+        "de": {
+          "formula": "Es wäre verfrüht, daraus zu schließen, dass [Thema] abschließend geklärt ist."
+        }
+      },
+      "review": {
+        "status": "reviewed_pilot",
+        "reviewer_type": "editorial_agent",
+        "human_reviewed": false,
+        "reviewed_on": "2026-09-05",
+        "confidence": "high",
+        "basis": "Explicit source review plus deterministic signature validation: member records share the same reusable syntax and learning job and differ in the contextual noun phrase occupying the bracketed slot. No Pattern record is deleted or treated as cross-language evidence."
+      }
+    },
+    {
+      "id": "arg-case-rests-on-assumption",
+      "set_id": "ARG",
+      "representative_pattern_id": "C1ARG001",
+      "member_pattern_ids": [
+        "C1ARG001",
+        "C1ARG002",
+        "C1ARG003",
+        "C1ARG004",
+        "C1ARG005",
+        "C1ARG006",
+        "C1ARG007",
+        "C1ARG008"
+      ],
+      "relation": "contextual_realization",
+      "languages": {
+        "en": {
+          "formula": "The case for [proposal] rests on the assumption that [claim]."
+        },
+        "de": {
+          "formula": "Das Argument für [Vorschlag] beruht auf der Annahme, dass [Behauptung]."
+        }
+      },
+      "review": {
+        "status": "reviewed_pilot",
+        "reviewer_type": "editorial_agent",
+        "human_reviewed": false,
+        "reviewed_on": "2026-09-05",
+        "confidence": "high",
+        "basis": "Explicit source review plus deterministic signature validation: the member Patterns realize the same argumentation Frame while contextual noun phrases vary. The claim slot remains part of the reusable Frame."
+      }
+    },
+    {
+      "id": "pro-writing-to-clarify-impact",
+      "set_id": "PRO",
+      "representative_pattern_id": "C1PRO001",
+      "member_pattern_ids": [
+        "C1PRO001",
+        "C1PRO002",
+        "C1PRO003",
+        "C1PRO004",
+        "C1PRO005",
+        "C1PRO006",
+        "C1PRO007",
+        "C1PRO008"
+      ],
+      "relation": "contextual_realization",
+      "languages": {
+        "en": {
+          "formula": "I am writing to clarify how [topic] affects the next steps."
+        },
+        "de": {
+          "formula": "Ich schreibe, um zu erläutern, wie [Thema] die nächsten Schritte beeinflusst."
+        }
+      },
+      "review": {
+        "status": "reviewed_pilot",
+        "reviewer_type": "editorial_agent",
+        "human_reviewed": false,
+        "reviewed_on": "2026-09-05",
+        "confidence": "high",
+        "basis": "Explicit source review plus deterministic signature validation: the member Patterns express the same professional clarification Frame and vary only the contextual subject/topic realization."
+      }
+    }
+  ]
+}
