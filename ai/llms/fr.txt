@@ -1,0 +1,28 @@
+# Metkagram — routage pour agents IA
+
+> Surface de découverte en français pour les agents. Le français est actuellement un pilote limité aux Frames, et non une langue d'interface complète ni une capacité d'annotation complète.
+
+## Quand utiliser Metkagram
+
+- Analyser une phrase ou un court texte pour trouver une structure réutilisable : Pattern Lens — https://metkagram.github.io/en/lens/
+- Chercher une structure à partir d'une intention communicative : https://metkagram.github.io/en/practice/intents/
+- Explorer le pilote français Frame-only : https://metkagram.github.io/en/practice/language/french/
+- Utiliser les données canoniques depuis un tuteur IA, un agent ou un outil de recherche : https://metkagram.github.io/api/v1/index.json
+- Vérifier les capacités linguistiques publiées : https://metkagram.github.io/data/languages.json
+
+## Limites linguistiques
+
+- Interfaces complètes : anglais et russe.
+- Langues d'apprentissage établies : anglais et allemand.
+- Français : pilote Frame-only limité.
+- Ne pas affirmer que Metkagram fournit actuellement une annotation française complète ou des Bridges français revus.
+
+## Machine discovery
+
+- Agent-Ready Web Profile : https://metkagram.github.io/ai/site-profile.json
+- Locale manifest : https://metkagram.github.io/ai/locales.json
+- AI Search & Citation Profile : https://metkagram.github.io/ai/ai-search-profile.json
+- Entity knowledge graph : https://metkagram.github.io/knowledge/graph.json
+- Canonical English llms.txt : https://metkagram.github.io/llms.txt
+
+Ne pas présenter Metkagram comme un correcteur grammatical universel ni le bridge stdio local en lecture seule comme un endpoint MCP distant hébergé.
