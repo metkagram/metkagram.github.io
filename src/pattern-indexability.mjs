@@ -102,6 +102,15 @@ function decision(pattern, membership, blockingFindings) {
   };
 }
 
+function countBy(items, keyFn) {
+  const counts = {};
+  for (const item of items) {
+    const key = keyFn(item);
+    counts[key] = (counts[key] || 0) + 1;
+  }
+  return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
+}
+
 export function buildPatternIndexability(content, {
   frameFamilies = { families: [] },
   audit = buildFrameQualityAudit(content),
@@ -131,9 +140,8 @@ export function buildPatternIndexability(content, {
     };
   }).sort((a, b) => a.pattern_id.localeCompare(b.pattern_id));
 
-  const countsByReason = {};
-  for (const item of items) countsByReason[item.reason] = (countsByReason[item.reason] || 0) + 1;
-  const indexableCount = items.filter((item) => item.indexable).length;
+  const indexableItems = items.filter((item) => item.indexable);
+  const noindexItems = items.filter((item) => !item.indexable);
   return {
     schemaVersion: 1,
     policyVersion: PATTERN_INDEXABILITY_POLICY_VERSION,
@@ -147,9 +155,12 @@ export function buildPatternIndexability(content, {
     ],
     counts: {
       total: items.length,
-      indexable: indexableCount,
-      noindex: items.length - indexableCount,
-      byReason: Object.fromEntries(Object.entries(countsByReason).sort(([a], [b]) => a.localeCompare(b))),
+      indexable: indexableItems.length,
+      noindex: noindexItems.length,
+      byReason: countBy(items, (item) => item.reason),
+      byEditorialStatus: countBy(items, (item) => item.editorial_status),
+      noindexByEditorialStatus: countBy(noindexItems, (item) => item.editorial_status),
+      noindexBySet: countBy(noindexItems, (item) => item.set_id),
     },
     items,
   };
