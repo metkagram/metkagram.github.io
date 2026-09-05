@@ -9,6 +9,8 @@ const json = (relative) => JSON.parse(read(relative));
 
 const expectedEvents = [
   "lens_analyze",
+  "lens_practice_attempt",
+  "lens_practice_complete",
   "learning_object_open",
   "clinic_feedback_reveal",
   "pack_step_open",
@@ -33,6 +35,15 @@ test("browser runtime is local-only and has no network transport", () => {
   assert.match(source, /MAX_EVENTS = 1000/);
   for (const forbidden of ["fetch(", "sendBeacon", "XMLHttpRequest", "WebSocket", "EventSource"]) assert.equal(source.includes(forbidden), false, `runtime must not use ${forbidden}`);
   assert.equal(source.includes("data-lens-text"), false, "runtime must not read Pattern Lens input text");
+});
+
+test("Lens practice funnel records only bounded object-level signals", () => {
+  const source = read("public/assets/lens-practice-bridge.js");
+  assert.match(source, /lens_practice_attempt/);
+  assert.match(source, /lens_practice_complete/);
+  assert.match(source, /object_type: 'pattern'/);
+  assert.equal(source.includes("answer.value,"), false, "practice text must never be passed into the event recorder");
+  assert.equal(source.includes("metadata: { text"), false, "practice text must never enter event metadata");
 });
 
 test("build publishes localized activity pages with explicit learner control", () => {
