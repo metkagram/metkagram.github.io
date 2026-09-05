@@ -6,6 +6,39 @@ import { buildFrameQualityAudit, frameQualityAuditMarkdown } from "../src/frame-
 
 const ROOT = process.cwd();
 
+function recordKey(setId, lang, patternId) {
+  return `${setId}:${lang}:${patternId}`;
+}
+
+function classifyAudit(rawAudit) {
+  const exact = new Set(rawAudit.duplicateGroups.exact.flatMap((group) => group.pattern_ids.map((id) => recordKey(group.set_id, group.lang, id))));
+  const variants = new Set(rawAudit.duplicateGroups.slotVariants.flatMap((group) => group.pattern_ids.map((id) => recordKey(group.set_id, group.lang, id))));
+  const near = new Set(rawAudit.duplicateGroups.nearPairs.flatMap((group) => group.pattern_ids.map((id) => recordKey(group.set_id, group.lang, id))));
+  const counts = {
+    exact_duplicate_candidate: 0,
+    contextual_variant_candidate: 0,
+    uncertain_near_duplicate: 0,
+    distinct_frame_candidate: 0,
+  };
+  const records = rawAudit.records.map((record) => {
+    const key = recordKey(record.set_id, record.lang, record.pattern_id);
+    const classification = exact.has(key)
+      ? "exact_duplicate_candidate"
+      : variants.has(key)
+        ? "contextual_variant_candidate"
+        : near.has(key)
+          ? "uncertain_near_duplicate"
+          : "distinct_frame_candidate";
+    counts[classification] += 1;
+    return { ...record, classification, human_reviewed: false };
+  });
+  return {
+    ...rawAudit,
+    summary: { ...rawAudit.summary, frame_classifications: counts },
+    records,
+  };
+}
+
 function baselineCandidate(audit) {
   const duplicateIds = new Set([
     ...audit.duplicateGroups.exact,
@@ -28,7 +61,7 @@ function baselineCandidate(audit) {
 }
 
 export function main() {
-  const audit = buildFrameQualityAudit(loadContent());
+  const audit = classifyAudit(buildFrameQualityAudit(loadContent()));
   const directory = path.join(ROOT, "dist", "data", "quality");
   fs.mkdirSync(directory, { recursive: true });
   fs.writeFileSync(path.join(directory, "frame-audit.json"), `${JSON.stringify(audit, null, 2)}\n`);
