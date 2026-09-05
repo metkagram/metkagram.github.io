@@ -111,9 +111,9 @@ test("pattern compatibility index keeps stable Pattern Frames while resolving re
   assert.equal(hedVariant.frame_variant_ids.en, frameVariantId("C1HED002", "en"));
   assert.equal(hedVariant.frame_variant_ids.de, frameVariantId("C1HED002", "de"));
 
-  const standalone = index.items.find((item) => item.pattern_id === "C1FRM001");
-  assert.ok(standalone, "expected stable non-pilot Pattern C1FRM001");
-  assert.equal(standalone.canonical_frame_ids.en, frameId("C1FRM001", "en"));
+  const standalone = index.items.find((item) => item.pattern_id === "GRMADJ001");
+  assert.ok(standalone, "expected stable non-pilot Pattern GRMADJ001");
+  assert.equal(standalone.canonical_frame_ids.en, frameId("GRMADJ001", "en"));
   assert.equal(standalone.frame_variant_ids.en, undefined);
 
   for (const pilot of frenchPilot) {
