@@ -70,9 +70,11 @@ if (dataNode && root) {
     section.setAttribute("aria-label", copy.title);
     section.innerHTML = `<p class="lens-relations-title">${escapeHtml(copy.title)}</p><div class="lens-relation-links">${links}</div>`;
 
-    const inlinePractice = card.querySelector("[data-lens-session]");
-    if (inlinePractice && card.dataset.lensPracticeComplete !== "true") {
-      section.hidden = true;
+    // The reviewed continuation is deliberately gated behind the learner's
+    // first reuse check. Hide it by default so module-fetch timing cannot
+    // expose Contrast / Choice / Route before the practice bridge is ready.
+    section.hidden = card.dataset.lensPracticeComplete !== "true";
+    if (section.hidden) {
       card.addEventListener("metkagram:lens-practice-complete", (event) => {
         if (event.detail?.patternId !== patternId) return;
         section.hidden = false;
