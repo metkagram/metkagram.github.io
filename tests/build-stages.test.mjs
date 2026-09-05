@@ -67,13 +67,16 @@ test("package.json exposes the staged build pipeline in canonical order", () => 
   assert.ok(pkg.scripts.verify.includes("npm run build"), "verify runs the staged build");
 });
 
-test("every legacy chain script is assigned to exactly one stage", () => {
-  // check-links and seo-graph-audit ran outside the old chain (verify step);
-  // the audit stage now owns them.
-  const expected = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
+test("every legacy chain script remains assigned to exactly one stage", () => {
+  // New deterministic derive tasks may be added after the staged migration;
+  // this contract protects every script from the original chain plus the two
+  // read-only audits that were intentionally moved into the audit stage.
+  const required = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
   const assigned = [...DERIVE_STEPS, ...RENDER_STEPS, ...AUDIT_STEPS];
   assert.equal(new Set(assigned).size, assigned.length, "a script appears in two stages");
-  assert.deepEqual([...assigned].sort(), [...expected].sort(), "stage coverage drifted from the legacy chain");
+  for (const script of required) {
+    assert.equal(assigned.filter((candidate) => candidate === script).length, 1, `${script} must remain assigned to exactly one stage`);
+  }
 });
 
 test("stage runner reports stage, script and exit code on failure", () => {
