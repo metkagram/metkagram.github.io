@@ -67,6 +67,7 @@ export const RENDER_STEPS = [
   "scripts/russian-transfer-guide.mjs",
   "scripts/terminology-language-foundation.mjs",
   "scripts/practice-seo.mjs",
+  "scripts/search-demand-seo.mjs",
   "scripts/ai-adoption.mjs",
   "scripts/publication-readiness.mjs",
   "scripts/benchmark-publication.mjs",
