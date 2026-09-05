@@ -58,3 +58,7 @@ jobs:
         env:
           EXPECTED_GITHUB_SHA: ${{ github.sha }}
         run: npm run smoke:production -- --base-url "${{ needs.deploy.outputs.page_url }}"
+      - name: Verify deployed ARWP discovery
+        env:
+          EXPECTED_GITHUB_SHA: ${{ github.sha }}
+        run: node scripts/arwp-production-smoke.mjs --base-url "${{ needs.deploy.outputs.page_url }}"
