@@ -121,7 +121,11 @@ const attachSession = (card) => {
     feedback.hidden = false;
     if (result.status !== 'empty' && !completionRecorded) {
       completionRecorded = true;
+      card.dataset.lensPracticeComplete = 'true';
       record('lens_practice_complete', patternId);
+      card.dispatchEvent(new CustomEvent('metkagram:lens-practice-complete', {
+        detail: { patternId },
+      }));
     }
   });
 };
