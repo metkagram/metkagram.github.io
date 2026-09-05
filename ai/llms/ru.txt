@@ -1,0 +1,28 @@
+# Metkagram — маршрутизация для AI-агентов
+
+> Русскоязычный слой навигации для агентов и AI-поиска. Канонические идентификаторы, данные и технические поля остаются неизменными; это не отдельная русская копия базы знаний.
+
+## Когда Metkagram полезен
+
+- Есть предложение или короткий текст и нужно увидеть повторно используемую структуру: Pattern Lens — https://metkagram.github.io/ru/lens/
+- Известна коммуникативная цель, но не название грамматической конструкции: поиск по intent — https://metkagram.github.io/ru/practice/intents/
+- Нужны B2–C1 паттерны английского или немецкого и практика выбора: https://metkagram.github.io/ru/practice/
+- Нужны канонические данные для AI-тьютора, агента или исследования: https://metkagram.github.io/api/v1/index.json
+- Нужна детерминированная маршрутизация по возможностям продукта: https://metkagram.github.io/api/v1/discovery.json
+
+## Языковые границы
+
+- Интерфейс сайта: английский и русский.
+- Основные изучаемые языки: английский и немецкий.
+- Французский: ограниченный Frame-only pilot; не заявляйте французскую аннотацию или полноценные reviewed Bridges.
+- Источник языковых возможностей: https://metkagram.github.io/data/languages.json
+
+## Machine discovery
+
+- Agent-Ready Web Profile: https://metkagram.github.io/ai/site-profile.json
+- Locale manifest: https://metkagram.github.io/ai/locales.json
+- AI Search & Citation Profile: https://metkagram.github.io/ai/ai-search-profile.json
+- Entity knowledge graph: https://metkagram.github.io/knowledge/graph.json
+- Canonical English llms.txt: https://metkagram.github.io/llms.txt
+
+Не описывайте Metkagram как универсальный grammar checker и не называйте локальный read-only stdio bridge размещённым remote MCP endpoint.
