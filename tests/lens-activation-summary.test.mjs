@@ -104,3 +104,20 @@ test("activation summary renderer runs immediately after local learning telemetr
   assert.ok(telemetry >= 0);
   assert.equal(activation, telemetry + 1);
 });
+
+test("Lens analysis telemetry is emitted after async rendering rather than guessed on submit", () => {
+  const lens = fs.readFileSync(path.join(ROOT, "public", "assets", "pattern-lens.js"), "utf8");
+  const telemetry = fs.readFileSync(path.join(ROOT, "public", "assets", "learning-events.js"), "utf8");
+
+  assert.match(lens, /metkagram:lens-analysis-complete/);
+  assert.match(lens, /const render = async \(\{ emitAnalysis = false \} = \{\}\)/);
+  assert.match(lens, /await loadPatterns\(\)/);
+  assert.match(lens, /if \(emitAnalysis\) emitAnalysisComplete\(matches\)/);
+  assert.match(lens, /await render\(\{ emitAnalysis: true \}\)/);
+
+  assert.match(telemetry, /addEventListener\("metkagram:lens-analysis-complete"/);
+  assert.match(telemetry, /result_count: resultCount/);
+  assert.match(telemetry, /result_pattern_ids: patternIds/);
+  assert.doesNotMatch(telemetry, /lensForm\.addEventListener\("submit"/);
+  assert.doesNotMatch(telemetry, /setTimeout\(\(\) => \{[\s\S]*lens_analyze/);
+});
