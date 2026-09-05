@@ -19,7 +19,7 @@ test("reviewed Lens relations belong only to the focused result", () => {
   const source = read("public/assets/lens-knowledge-bridge.js");
   assert.match(source, /querySelector\("\.lens-card--primary"\)/);
   assert.doesNotMatch(source, /for \(const card of results\.querySelectorAll\("\.lens-card"\)\)/);
-  assert.match(source, /data\.lensPracticeComplete !== "true"/);
+  assert.match(source, /dataset\.lensPracticeComplete !== "true"/);
   assert.match(source, /section\.hidden = true/);
   assert.match(source, /metkagram:lens-practice-complete/);
   assert.match(source, /section\.hidden = false/);
