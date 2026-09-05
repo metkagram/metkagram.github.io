@@ -50,10 +50,12 @@ test("automatic similarity cannot create or alter a canonical family silently", 
 test("one stable Pattern Frame cannot belong to conflicting canonical families", () => {
   const content = loadContent();
   const manifest = structuredClone(loadFrameFamilies());
-  manifest.families[1].member_pattern_ids[0] = "C1HED001";
+  const duplicateFamily = structuredClone(manifest.families[0]);
+  duplicateFamily.id = "hed-premature-conclusion-conflict";
+  manifest.families.push(duplicateFamily);
   assert.throws(
     () => validateFrameFamilies(content.advancedPatterns, manifest),
-    /belongs to HED, not ARG|assigned to more than one canonical Frame family/,
+    /assigned to more than one canonical Frame family/,
   );
 });
 
@@ -71,7 +73,10 @@ test("domain model overlays canonical Frames without deleting legacy Pattern Fra
   assert.equal(hedLegacy.canonical_frame_id, canonicalFrameId("hed-premature-conclusion", "en"));
   assert.equal(hedLegacy.frame_variant_id, frameVariantId("C1HED002", "en"));
 
-  const standalone = model.frames.find((frame) => frame.id === frameId("C1FRM001", "en"));
+  const standalonePattern = content.advancedPatterns.find((pattern) => !["HED", "ARG", "PRO"].includes(pattern.set_id));
+  const standaloneLanguage = standalonePattern?.langs?.[0]?.lang;
+  assert.ok(standalonePattern && standaloneLanguage, "expected at least one non-pilot Pattern");
+  const standalone = model.frames.find((frame) => frame.id === frameId(standalonePattern.id, standaloneLanguage));
   assert.ok(standalone);
   assert.equal(standalone.canonical_frame_id, standalone.id);
   assert.equal(standalone.frame_variant_id, null);
