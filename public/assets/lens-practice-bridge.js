@@ -2,6 +2,7 @@ import { evaluatePracticeStructure } from './practice-loop-core.js';
 
 const root = document.querySelector('[data-pattern-lens]');
 const results = root?.querySelector('[data-lens-results]');
+const emptyState = root?.querySelector('[data-lens-empty]');
 const locale = document.documentElement.lang === 'ru' ? 'ru' : 'en';
 
 const copy = locale === 'ru' ? {
@@ -22,6 +23,10 @@ const copy = locale === 'ru' ? {
   keep: 'Опорные части',
   deeper: 'Примеры, контрасты и повторение',
   practise: 'Практиковать паттерн →',
+  noMatchTitle: 'Надёжного совпадения не найдено.',
+  noMatchBody: 'Лучше честно остановиться, чем показать слабый паттерн. Попробуйте начать с того, что вы хотите выразить.',
+  chooseIntent: 'Что вы хотите сказать?',
+  browseLibrary: 'Открыть библиотеку паттернов',
 } : {
   best: 'Best reusable frame',
   alternatives: 'Other possible matches',
@@ -40,6 +45,10 @@ const copy = locale === 'ru' ? {
   keep: 'Useful anchors',
   deeper: 'Examples, contrasts, and review',
   practise: 'Practise this pattern →',
+  noMatchTitle: 'No confident reviewed match.',
+  noMatchBody: 'It is better to stop than show a weak pattern. Try starting from what you want to express instead.',
+  chooseIntent: 'What do you want to say?',
+  browseLibrary: 'Browse the pattern library',
 };
 
 const escapeHtml = (value = '') => String(value)
@@ -129,6 +138,16 @@ const attachSession = (card) => {
     }
   });
 };
+
+if (emptyState) {
+  emptyState.dataset.lensAbstentionPath = 'true';
+  emptyState.innerHTML = `<strong>${escapeHtml(copy.noMatchTitle)}</strong><br>
+    <span>${escapeHtml(copy.noMatchBody)}</span>
+    <span class="lens-actions">
+      <a class="lens-primary" href="/${locale}/practice/intents/">${escapeHtml(copy.chooseIntent)} →</a>
+      <a class="lens-secondary" href="/${locale}/practice/">${escapeHtml(copy.browseLibrary)}</a>
+    </span>`;
+}
 
 if (results) {
   const enhance = () => {
