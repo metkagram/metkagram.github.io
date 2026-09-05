@@ -12,8 +12,9 @@
 // - intent-discovery creates the intents pages that reasoning-evaluation and
 //   public-learning extend;
 // - reasoning-evaluation publishes the benchmark JSON that benchmark-publication reads;
-// - pattern-lens creates lens pages + teaching-manifest used by the lens
-//   evaluations, active-practice and lens-knowledge-bridge;
+// - pattern-lens creates lens pages + teaching-manifest; lens-catalogue then replaces
+//   the starter/remote catalogue with the bounded job-balanced selection before the
+//   lens evaluations, active-practice and lens-knowledge-bridge consume those pages;
 // - discovery-growth creates the Pattern Atlas pages that practice-intent-growth
 //   regenerates with extension topics and contrast-library links from;
 // - contrast-library → contrast-growth → pattern-choice-clinic → reasoning-packs
@@ -41,6 +42,7 @@ export const RENDER_STEPS = [
   "scripts/enhance-research.mjs",
   "scripts/annotation-research.mjs",
   "scripts/pattern-lens.mjs",
+  "scripts/lens-catalogue.mjs",
   "scripts/pattern-lens-evaluation.mjs",
   "scripts/pattern-lens-hard-evaluation.mjs",
   "scripts/finalize-product-direction.mjs",
