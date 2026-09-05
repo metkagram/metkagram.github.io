@@ -33,5 +33,22 @@
 .lens-samples{display:flex;gap:.55rem;flex-wrap:wrap;margin:1rem 0 3rem}.lens-samples button{max-width:340px;text-align:left;background:#fffdf7}
 .lens-samples button:hover{background:#3f4246;color:#fff}.lens-explain-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-top:1px solid #111;border-left:1px solid #111;box-shadow:.35rem .35rem 0 rgba(34,36,38,.36)}.lens-explain-grid article{padding:1.35rem;border-right:1px solid #111;border-bottom:1px solid #111;background:#fffdf3}.lens-explain-grid h2{font-size:1.45rem;margin:.35rem 0 .65rem}.lens-explain-grid p{line-height:1.6;color:#56534d}
 .lens-archive{max-width:900px}.lens-archive .lens-actions{margin-top:1.5rem}
-@media(max-width:820px){.lens-workbench,.lens-explain-grid{grid-template-columns:1fr}.lens-shell{width:min(100% - 1.2rem,1120px);padding:1.25rem;margin:1rem auto;box-shadow:.45rem .45rem 0 rgba(0,20,112,.48);transform:none}.lens-shell>*{transform:none}.lens-hero h1,.lens-archive h1{font-size:clamp(2.9rem,13vw,5.1rem)}.lens-output{min-height:0}.lens-input{border-right:0;border-bottom:1px solid #111}}
+.lens-card--primary{position:relative;margin:.7rem -.65rem 1.1rem;padding:1.1rem .65rem .9rem;border:2px solid #111;background:#fff;box-shadow:.28rem .28rem 0 #ffc400}
+.lens-card--primary[data-evidence-type="literal+reasoning"]{border-top:2px solid #111}
+.lens-card--alternative{padding-top:.85rem;color:#3d4652}
+.lens-best-label,.lens-alternatives-label{margin:0 0 .65rem;font-family:var(--mono);font-size:.72rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.lens-best-label{display:inline-block;padding:.22rem .38rem;background:#111;color:#ffc400}
+.lens-alternatives-label{padding-top:.35rem;color:#6a7380}
+.lens-session{margin-top:1rem;border-top:1px solid #111;padding-top:1rem}
+.lens-session-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.65rem;margin-bottom:1rem}
+.lens-session-summary>div{padding:.75rem;border:1px solid #c9d1dc;background:#f7f9fc}
+.lens-session-summary small{display:block;margin-bottom:.35rem;font-family:var(--mono);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#687486}
+.lens-session-summary strong,.lens-session-summary code{display:block;font-size:.96rem;line-height:1.45;color:#111;white-space:normal}
+.lens-session-turn{padding:1rem;border:1px solid #111;background:#fff8d6}
+.lens-session-turn>.eyebrow{margin:0 0 .3rem;font-size:.72rem;color:#111}.lens-session-turn>p:not(.eyebrow){margin:.15rem 0 .8rem;color:#4e4938}
+.lens-session-turn textarea{width:100%;min-height:92px;resize:vertical;box-sizing:border-box;border:1px solid #111;border-radius:0;padding:.8rem;font:inherit;line-height:1.5;background:#fff;color:#111}
+.lens-session-turn textarea:focus{outline:3px solid rgba(255,196,0,.45);outline-offset:0}
+.lens-session-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;margin-top:.7rem}.lens-session-actions button{border:1px solid #111;border-radius:0;background:#111;color:#ffc400;padding:.68rem .9rem;font:inherit;font-weight:800;cursor:pointer}.lens-session-actions a{font-weight:750;color:#111}
+.lens-session-feedback{margin-top:.8rem;padding:.75rem;border-left:4px solid #111;background:#fff}.lens-session-feedback-head{display:flex;justify-content:space-between;gap:.75rem;align-items:flex-start}.lens-session-feedback p{margin:.35rem 0;color:#5c5a52;font-size:.86rem;line-height:1.45}.lens-session-coverage{font-family:var(--mono);font-weight:800}.lens-session-anchors{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin-top:.55rem;font-size:.8rem}.lens-session-anchors span{margin-right:.15rem;color:#5c5a52}.lens-session-anchors code{padding:.2rem .35rem;background:#f0f2f5}
+@media(max-width:820px){.lens-workbench,.lens-explain-grid{grid-template-columns:1fr}.lens-shell{width:min(100% - 1.2rem,1120px);padding:1.25rem;margin:1rem auto;box-shadow:.45rem .45rem 0 rgba(0,20,112,.48);transform:none}.lens-shell>*{transform:none}.lens-hero h1,.lens-archive h1{font-size:clamp(2.9rem,13vw,5.1rem)}.lens-output{min-height:0}.lens-input{border-right:0;border-bottom:1px solid #111}.lens-card--primary{margin:.6rem -.25rem 1rem;padding:1rem .5rem}.lens-session-summary{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:no-preference){.lens-card{animation:lens-in .25s ease both}@keyframes lens-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
