@@ -110,9 +110,13 @@ test("published pilot records resolve through data and individual Pattern API", 
   assert.equal(api.data.domain_model.frame_variant_ids.en, frameVariantId("C1HED002", "en"));
 });
 
-test("pilot Pattern pages and canonical URLs remain available in both interface locales", () => {
+test("pilot Pattern pages stay available while sitemap follows editorial indexability", () => {
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
+  const policy = json("data", "quality", "pattern-indexability.json");
+  const decisions = new Map(policy.records.map((record) => [record.pattern_id, record]));
   for (const patternId of ["C1HED001", "C1HED002", "C1ARG002", "C1PRO002"]) {
+    const decision = decisions.get(patternId);
+    assert.ok(decision, `${patternId} needs an indexability decision`);
     for (const locale of ["en", "ru"]) {
       const route = patternPath(locale, patternId);
       const file = routeFile(route);
@@ -120,7 +124,9 @@ test("pilot Pattern pages and canonical URLs remain available in both interface 
       const page = fs.readFileSync(file, "utf8");
       assert.match(page, /data-canonical-frame-family=/);
       assert.match(page, new RegExp(patternId, "i"));
-      assert.ok(sitemap.includes(`<loc>${SITE_URL}${route}</loc>`), `${patternId} ${locale} route left sitemap`);
+      assert.ok(page.includes(`<link rel="canonical" href="${SITE_URL}${route}">`), `${patternId} ${locale} lost self-canonical`);
+      assert.equal(sitemap.includes(`<loc>${SITE_URL}${route}</loc>`), decision.indexable, `${patternId} ${locale} sitemap must follow editorial indexability`);
+      assert.match(page, decision.indexable ? /<meta name="robots" content="index,follow/ : /<meta name="robots" content="noindex,follow">/);
     }
   }
 });
