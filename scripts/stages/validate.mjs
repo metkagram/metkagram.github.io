@@ -5,7 +5,10 @@
 import path from "node:path";
 import { runStage } from "./run.mjs";
 
-export const VALIDATE_STEPS = ["scripts/validate-sources.mjs"];
+export const VALIDATE_STEPS = [
+  "scripts/validate-sources.mjs",
+  "scripts/validate-study-set-preservation.mjs",
+];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {
   runStage("validate", VALIDATE_STEPS);
