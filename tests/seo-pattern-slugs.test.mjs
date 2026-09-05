@@ -12,6 +12,8 @@ const registry = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "seo-slugs.j
 const sitemapUrls = new Set([...fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
 const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "site-pages.json"), "utf8"));
 const inventoryRoutes = new Set(inventory.pages.map((page) => page.route));
+const indexability = JSON.parse(fs.readFileSync(path.join(DIST, "data", "quality", "pattern-indexability.json"), "utf8"));
+const decisions = new Map(indexability.records.map((record) => [record.pattern_id, record]));
 
 const pageFile = (route) => path.join(DIST, route.slice(1), "index.html");
 
@@ -32,12 +34,17 @@ test("frozen SEO registry covers every topic set and every pattern", () => {
   }
 });
 
-test("all localized pattern canonicals exist and are indexable through the sitemap", () => {
+test("all localized Pattern canonicals exist while sitemap and SEO inventory follow editorial indexability", () => {
   for (const locale of ["en", "ru"]) for (const pattern of content.advancedPatterns) {
     const route = patternPath(locale, pattern);
-    assert.ok(fs.existsSync(pageFile(route)), `missing canonical pattern page ${route}`);
-    assert.ok(inventoryRoutes.has(route), `SEO inventory missing ${route}`);
-    assert.ok(sitemapUrls.has(patternUrl(locale, pattern)), `sitemap missing ${route}`);
+    const decision = decisions.get(pattern.id);
+    assert.ok(decision, `missing indexability decision for ${pattern.id}`);
+    assert.ok(fs.existsSync(pageFile(route)), `missing canonical Pattern page ${route}`);
+    assert.equal(inventoryRoutes.has(route), decision.indexable, `SEO inventory drift for ${route}`);
+    assert.equal(sitemapUrls.has(patternUrl(locale, pattern)), decision.indexable, `sitemap drift for ${route}`);
+    const html = fs.readFileSync(pageFile(route), "utf8");
+    assert.ok(html.includes(`<link rel="canonical" href="${patternUrl(locale, pattern)}">`), `${route} must remain self-canonical`);
+    assert.match(html, decision.indexable ? /<meta name="robots" content="index,follow/ : /<meta name="robots" content="noindex,follow">/);
   }
 });
 
@@ -56,7 +63,11 @@ test("every legacy pattern ID route immediately points to its descriptive canoni
 });
 
 test("representative pattern pages expose self-canonical and bilingual alternates", () => {
-  const samples = [content.advancedPatterns[0], content.advancedPatterns.at(-1), content.advancedPatterns.find((pattern) => pattern.id === "CLF041")];
+  const samples = [
+    content.advancedPatterns.find((pattern) => decisions.get(pattern.id)?.indexable),
+    [...content.advancedPatterns].reverse().find((pattern) => decisions.get(pattern.id)?.indexable),
+    content.advancedPatterns.find((pattern) => pattern.id === "CLF041"),
+  ].filter(Boolean);
   for (const pattern of samples) for (const locale of ["en", "ru"]) {
     const html = fs.readFileSync(pageFile(patternPath(locale, pattern)), "utf8");
     assert.ok(html.includes(`<link rel="canonical" href="${patternUrl(locale, pattern)}">`));

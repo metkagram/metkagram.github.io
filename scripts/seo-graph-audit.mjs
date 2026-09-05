@@ -150,7 +150,16 @@ for (const file of files) {
 }
 
 const content = loadContent();
+const indexabilityFile = path.join(DIST, "data", "quality", "pattern-indexability.json");
+const indexability = fs.existsSync(indexabilityFile)
+  ? JSON.parse(fs.readFileSync(indexabilityFile, "utf8"))
+  : null;
+const indexablePatternIds = indexability
+  ? new Set(indexability.records.filter((record) => record.indexable).map((record) => record.pattern_id))
+  : new Set(content.advancedPatterns.map((pattern) => pattern.id));
+
 for (const locale of ["en", "ru"]) for (const pattern of content.advancedPatterns) {
+  if (!indexablePatternIds.has(pattern.id)) continue;
   const route = patternPath(locale, pattern);
   const resource = learningResources.get(route);
   const canonical = patternUrl(locale, pattern);
@@ -180,6 +189,11 @@ const summary = {
   redirects,
   jsonLdBlocks,
   structuredDataTypes: Object.fromEntries([...typeCounts].sort(([left], [right]) => left.localeCompare(right))),
+  patternIndexability: indexability ? {
+    policy: indexability.policy,
+    indexable: indexability.summary.indexablePatternCount,
+    noindex: indexability.summary.nonIndexablePatternCount,
+  } : null,
   patternGraph: { nodes: graph.nodes.length, edges: graph.edges.length, moves: graph.moves.length },
   failures: failures.length
 };

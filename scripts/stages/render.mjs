@@ -27,7 +27,10 @@
 // - cross-language-transfer + teacher-tutor-exports feed multilingual-domain-model;
 // - canonical-frame-variants resolves explicit Frame families over the published
 //   multilingual model and must run after multilingual-domain-model;
-// - seo-graph-normalize is the render finalize pass and must stay last.
+// - pattern-indexability consumes the completed Frame-family layer and the derive-stage
+//   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
+// - seo-graph-normalize is the render finalize pass and must stay last so it cannot
+//   re-add noindex routes.
 import path from "node:path";
 import { runStage } from "./run.mjs";
 
@@ -66,6 +69,7 @@ export const RENDER_STEPS = [
   "scripts/benchmark-publication.mjs",
   "scripts/multilingual-domain-model.mjs",
   "scripts/canonical-frame-variants.mjs",
+  "scripts/pattern-indexability.mjs",
   "scripts/seo-graph-normalize.mjs",
 ];
 
