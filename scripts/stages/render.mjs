@@ -30,7 +30,10 @@
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
 // - seo-graph-normalize is the render finalize pass and must stay last so it cannot
-//   re-add noindex routes.
+//   re-add noindex routes;
+// - consent analytics decorates the completed HTML surface;
+// - ARWP publication runs after every HTML-producing pass so audit sees the exact
+//   machine discovery surface that will be deployed.
 import path from "node:path";
 import { runStage } from "./run.mjs";
 
@@ -72,6 +75,7 @@ export const RENDER_STEPS = [
   "scripts/pattern-indexability.mjs",
   "scripts/seo-graph-normalize.mjs",
   "scripts/apply-consent-analytics.mjs",
+  "scripts/apply-arwp.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {
