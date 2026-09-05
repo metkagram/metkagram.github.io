@@ -1,0 +1,271 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dkharlanau/agent-ready-web-profile/main/schema/ai-search-profile.schema.json",
+  "profileVersion": "0.1",
+  "site": {
+    "id": "metkagram-language-knowledge",
+    "name": "Metkagram",
+    "canonicalUrl": "https://metkagram.github.io/",
+    "languages": ["en", "ru", "de", "fr"],
+    "canonicalLanguage": "en"
+  },
+  "objective": {
+    "primary": "Make Metkagram easy for search systems, AI tutors and agents to identify, retrieve and cite for reusable language patterns, reviewed annotations and bounded language-learning research without overstating evidence or language coverage.",
+    "targetQuestions": [
+      "What is Metkagram and what problem does it solve?",
+      "How can I find a reusable language pattern inside a real sentence?",
+      "Which B2-C1 English or German patterns help with reasoning and professional communication?",
+      "What are Mark, Frame, Move, Contrast, Choice, Route and Bridge in Metkagram?",
+      "How can an AI tutor retrieve canonical Metkagram patterns and study sets?",
+      "What French learning material does Metkagram currently provide and what does it not provide?",
+      "Where are the canonical Metkagram datasets, provenance and citation guidance?"
+    ],
+    "canonicalTerms": [
+      "Metkagram",
+      "Pattern Practice",
+      "Pattern Lens",
+      "Pattern Atlas",
+      "Mark",
+      "Frame",
+      "Move",
+      "Contrast",
+      "Choice",
+      "Route",
+      "Bridge"
+    ]
+  },
+  "surfaces": {
+    "entityHome": {
+      "status": "active",
+      "url": "https://metkagram.github.io/",
+      "mediaType": "text/html"
+    },
+    "siteProfile": {
+      "status": "active",
+      "url": "https://metkagram.github.io/ai/site-profile.json",
+      "mediaType": "application/json"
+    },
+    "llmsCanonical": {
+      "status": "active",
+      "url": "https://metkagram.github.io/llms.txt",
+      "language": "en",
+      "mediaType": "text/plain"
+    },
+    "history": {
+      "status": "active",
+      "url": "https://metkagram.github.io/en/history/",
+      "mediaType": "text/html"
+    },
+    "localeManifest": {
+      "status": "active",
+      "url": "https://metkagram.github.io/ai/locales.json",
+      "mediaType": "application/json"
+    },
+    "sitemap": {
+      "status": "active",
+      "url": "https://metkagram.github.io/sitemap.xml",
+      "mediaType": "application/xml"
+    },
+    "robots": {
+      "status": "active",
+      "url": "https://metkagram.github.io/robots.txt",
+      "mediaType": "text/plain"
+    },
+    "knowledgeGraph": {
+      "status": "active",
+      "url": "https://metkagram.github.io/knowledge/graph.json",
+      "mediaType": "application/ld+json"
+    }
+  },
+  "modules": {
+    "answerPages": {
+      "status": "active",
+      "priority": "P0",
+      "description": "Publish canonical learner-facing pages that answer recurring jobs such as finding a reusable pattern, browsing by communicative intent and understanding project terminology.",
+      "url": "https://metkagram.github.io/en/patterns/"
+    },
+    "originalResearch": {
+      "status": "active",
+      "priority": "P0",
+      "description": "Keep product claims separate from reviewed research hypotheses and publish bounded evaluation fixtures and methodology instead of claiming unmeasured learning efficacy.",
+      "url": "https://metkagram.github.io/en/research/"
+    },
+    "protocolObservatory": {
+      "status": "not-applicable",
+      "priority": "P2",
+      "description": "Metkagram is a language-learning knowledge product rather than a protocol observatory; protocol tracking is outside this site's search purpose."
+    },
+    "comparisonPages": {
+      "status": "active",
+      "priority": "P1",
+      "description": "Use reviewed Pattern Contrasts and Choice surfaces to explain meaningful differences between nearby reusable language structures."
+    },
+    "conceptDefinitions": {
+      "status": "active",
+      "priority": "P0",
+      "description": "Maintain stable definitions for the Metkagram domain vocabulary so humans and retrieval systems can resolve project-specific terms consistently.",
+      "url": "https://metkagram.github.io/en/glossary/"
+    },
+    "claimsRegistry": {
+      "status": "planned",
+      "priority": "P1",
+      "description": "Add stable machine-readable identifiers for important research and product claims only when their evidence status can be reviewed and maintained."
+    },
+    "evidenceReceipts": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Publish replayable evidence records for selected evaluations where durable inputs, outputs and provenance materially improve verification."
+    },
+    "crawlerMatrix": {
+      "status": "not-applicable",
+      "priority": "P2",
+      "description": "Metkagram publishes a clear crawler policy but does not need to maintain a general cross-vendor crawler research matrix."
+    },
+    "agentFetchLab": {
+      "status": "planned",
+      "priority": "P1",
+      "description": "Measure which Metkagram surfaces real agents and retrieval systems use for concrete language-learning tasks before optimizing around assumed agent behavior."
+    },
+    "knowledgeGraph": {
+      "status": "active",
+      "priority": "P0",
+      "description": "Link the Metkagram website, learning surfaces, public datasets and canonical vocabulary in a compact JSON-LD entity graph.",
+      "url": "https://metkagram.github.io/knowledge/graph.json",
+      "machineReadable": ["https://metkagram.github.io/knowledge/graph.json"]
+    },
+    "citationVisuals": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Publish selected reusable diagrams for methods and research with stable source notes, accessible descriptions and explicit rights boundaries."
+    },
+    "openReuseAssets": {
+      "status": "not-applicable",
+      "priority": "P2",
+      "description": "The current Metkagram publication model is source-available with scoped reuse rights, so broad permission-free AI reuse assets are intentionally not claimed."
+    },
+    "trustCenter": {
+      "status": "planned",
+      "priority": "P1",
+      "description": "Unify licensing, provenance, research boundaries, review policy and correction guidance into one canonical trust surface without changing existing rights."
+    },
+    "correctionsLedger": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Add a machine-readable correction history for material factual or dataset errors when a correction policy is formalized."
+    },
+    "softwareProvenance": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Expose verifiable build provenance for published artifacts when it adds practical trust beyond the existing deterministic GitHub Pages pipeline."
+    },
+    "persistentIdentifiers": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Use externally issued persistent identifiers for research releases only when they are actually issued and improve durable citation."
+    },
+    "externalTrustSignals": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Track independent references or evaluations separately from project-authored evidence instead of presenting self-published metadata as external validation."
+    },
+    "externalDistribution": {
+      "status": "planned",
+      "priority": "P2",
+      "description": "Distribute substantial research or learning releases through suitable external channels while keeping Metkagram canonical URLs as the source of record."
+    },
+    "aiVisibility": {
+      "status": "planned",
+      "priority": "P1",
+      "description": "Measure observable AI citations, grounded retrieval and referrals where platforms expose them instead of using a synthetic AI-readiness score.",
+      "cadence": "monthly"
+    },
+    "localization": {
+      "status": "active",
+      "priority": "P0",
+      "description": "Expose canonical English semantics plus reviewed Russian, German and French agent-routing surfaces while preserving the distinction between interface, learning, translation and annotation capabilities.",
+      "machineReadable": [
+        "https://metkagram.github.io/ai/locales.json",
+        "https://metkagram.github.io/data/languages.json"
+      ]
+    },
+    "history": {
+      "status": "active",
+      "priority": "P1",
+      "description": "Keep a public product history so search and research readers can distinguish current capabilities from earlier product states.",
+      "url": "https://metkagram.github.io/en/history/"
+    }
+  },
+  "vocabulary": [
+    {
+      "term": "Mark",
+      "definition": "A reviewed visual cue placed inside a real sentence to make a useful language structure easier to notice.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Frame",
+      "definition": "A reusable language structure that can be learned and applied across multiple real sentences.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Move",
+      "definition": "The communicative or reasoning job a Frame performs, such as qualifying uncertainty or correcting an assumption.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Contrast",
+      "definition": "A reviewed, actionable difference between nearby Frames that a learner might otherwise confuse.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Choice",
+      "definition": "A retrieval-first task where the learner chooses between nearby Frames before bounded feedback is revealed.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Route",
+      "definition": "An ordered learning sequence that composes canonical Metkagram objects without duplicating their source content.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    },
+    {
+      "term": "Bridge",
+      "definition": "A reviewed cross-language relation describing how the same or a related communicative Move is naturally realized in another learning language.",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "status": "active"
+    }
+  ],
+  "measurement": {
+    "signals": [
+      {
+        "name": "indexable canonical inventory",
+        "status": "active",
+        "description": "Track the deterministic inventory of canonical pages that pass Metkagram's editorial indexability gate.",
+        "url": "https://metkagram.github.io/seo/site-pages.json"
+      },
+      {
+        "name": "search visibility",
+        "status": "planned",
+        "description": "Track actual indexed pages, queries, impressions and clicks using available webmaster data rather than inferring visibility from metadata alone."
+      },
+      {
+        "name": "AI citations and referrals",
+        "status": "planned",
+        "description": "Track observable AI citations, grounded retrieval and referrals where platforms expose reliable signals."
+      }
+    ],
+    "reviewCadence": "monthly",
+    "privacy": "Use aggregate, privacy-minimized search and citation signals; do not turn visitor activity or agent queries into a browsing-history dataset."
+  },
+  "guardrails": {
+    "noRankingClaimsWithoutEvidence": true,
+    "separateOwnedFromIndependentEvidence": true,
+    "preserveNegativeResults": true,
+    "canonicalTechnicalSemantics": true,
+    "noFabricatedAdoption": true,
+    "noReadinessScore": true
+  }
+}
