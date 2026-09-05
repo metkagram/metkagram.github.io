@@ -12,6 +12,8 @@ const registry = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "seo-slugs.j
 const sitemapUrls = new Set([...fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
 const inventory = JSON.parse(fs.readFileSync(path.join(DIST, "seo", "site-pages.json"), "utf8"));
 const inventoryRoutes = new Set(inventory.pages.map((page) => page.route));
+const indexability = JSON.parse(fs.readFileSync(path.join(DIST, "data", "quality", "pattern-indexability.json"), "utf8"));
+const indexabilityByPattern = new Map(indexability.items.map((item) => [item.pattern_id, item]));
 
 const pageFile = (route) => path.join(DIST, route.slice(1), "index.html");
 
@@ -32,12 +34,19 @@ test("frozen SEO registry covers every topic set and every pattern", () => {
   }
 });
 
-test("all localized pattern canonicals exist and are indexable through the sitemap", () => {
+test("all localized Pattern canonicals remain available while sitemap promotion follows editorial indexability", () => {
   for (const locale of ["en", "ru"]) for (const pattern of content.advancedPatterns) {
     const route = patternPath(locale, pattern);
+    const decision = indexabilityByPattern.get(pattern.id);
+    assert.ok(decision, `indexability report missing ${pattern.id}`);
     assert.ok(fs.existsSync(pageFile(route)), `missing canonical pattern page ${route}`);
-    assert.ok(inventoryRoutes.has(route), `SEO inventory missing ${route}`);
-    assert.ok(sitemapUrls.has(patternUrl(locale, pattern)), `sitemap missing ${route}`);
+    const inInventory = inventoryRoutes.has(route);
+    const inSitemap = sitemapUrls.has(patternUrl(locale, pattern));
+    assert.equal(inInventory, decision.indexable, `SEO inventory disagrees with ${pattern.id} policy`);
+    assert.equal(inSitemap, decision.indexable, `sitemap disagrees with ${pattern.id} policy`);
+    const html = fs.readFileSync(pageFile(route), "utf8");
+    if (decision.indexable) assert.doesNotMatch(html, /<meta name="robots" content="noindex/);
+    else assert.match(html, /<meta name="robots" content="noindex,follow">/);
   }
 });
 
