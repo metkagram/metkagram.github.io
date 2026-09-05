@@ -137,13 +137,16 @@
     }
   }, { capture: true });
 
-  const lensForm = document.querySelector("[data-lens-form]");
-  if (lensForm) {
-    lensForm.addEventListener("submit", () => {
-      setTimeout(() => {
-        const ids = [...document.querySelectorAll("[data-lens-results] .lens-card-meta code")].map((node) => node.textContent.trim()).filter(Boolean).slice(0, 10);
-        record("lens_analyze", { object_type: "none", metadata: { result_count: ids.length, result_pattern_ids: ids } });
-      }, 0);
+  document.addEventListener("metkagram:lens-analysis-complete", (event) => {
+    if (surface() !== "lens") return;
+    const resultCount = Number.isInteger(event.detail?.resultCount) ? event.detail.resultCount : 0;
+    const patternIds = Array.isArray(event.detail?.patternIds) ? event.detail.patternIds : [];
+    record("lens_analyze", {
+      object_type: "none",
+      metadata: {
+        result_count: resultCount,
+        result_pattern_ids: patternIds,
+      },
     });
-  }
+  });
 })();
