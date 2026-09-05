@@ -42,8 +42,8 @@ test("Lens practice funnel records only bounded object-level signals", () => {
   assert.match(source, /lens_practice_attempt/);
   assert.match(source, /lens_practice_complete/);
   assert.match(source, /object_type: 'pattern'/);
-  assert.equal(source.includes("answer.value,"), false, "practice text must never be passed into the event recorder");
-  assert.equal(source.includes("metadata: { text"), false, "practice text must never enter event metadata");
+  assert.doesNotMatch(source, /record\([^)]*answer\.value/, "practice text must never be passed into the event recorder");
+  assert.doesNotMatch(source, /metadata\s*:\s*\{[^}]*text/i, "practice text must never enter event metadata");
 });
 
 test("build publishes localized activity pages with explicit learner control", () => {
