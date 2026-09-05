@@ -1,6 +1,8 @@
+import { workplacePracticeSection } from "../src/workplace-practice.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { loadContent } from "../src/content.mjs";
+import { familyCoverage } from "../src/frame-families.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 import { patternPath, studySetPath, studySetSlug, studySetUrl } from "../src/seo-slugs.mjs";
 
@@ -65,6 +67,11 @@ function searchTitle(locale, set) {
 }
 
 function searchDescription(locale, set, patternCount) {
+  if (set.frame_families?.length) {
+    return compact(locale === "ru"
+      ? `${set.description_ru || set.description} ${patternCount} контекстных вариантов с английскими и немецкими примерами, общим каркасом и русскими переводами.`
+      : `${set.description} Practise ${patternCount} contextual variants with shared frames, English and German examples, and Russian translations.`);
+  }
   if (locale === "ru") {
     return compact(`${set.description_ru || set.description} ${patternCount} моделей B2–C1: английские и немецкие примеры, русские переводы и связанные учебные наборы.`);
   }
@@ -120,6 +127,15 @@ function samplePatterns(patterns) {
 
 function exampleSection(locale, set, patterns) {
   const ru = locale === "ru";
+  const { families, ungrouped } = familyCoverage(set, patterns);
+  if (families.length) {
+    const byId = new Map(patterns.map((pattern) => [pattern.id, pattern]));
+    const frameCards = families.map((family) => {
+      const representative = byId.get(family.representative_pattern_id);
+      return `<article class="frame-family-card" id="${escapeHtml(family.id.toLowerCase())}"><h3>${escapeHtml(ru ? family.title_ru : family.title_en)}</h3><div class="pattern-formulas"><div><span class="language-code">EN</span><code lang="en">${escapeHtml(family.formulas.en)}</code></div><div><span class="language-code">DE</span><code lang="de">${escapeHtml(family.formulas.de)}</code></div></div><p>${escapeHtml(ru ? family.practice_prompt_ru : family.practice_prompt_en)}</p><a href="${patternPath(locale, representative)}">${ru ? "Открыть пример и попробовать" : "Open an example and try it"} →</a></article>`;
+    }).join("");
+    return `<section id="practice-set-guide" class="page-head section-pad compact ruled"><p class="eyebrow">01 · ${ru ? "Как использовать набор" : "How to use this set"}</p><h2>${ru ? "Перенесите каркас в свою ситуацию" : "Use the frame in your own situation"}</h2><p>${ru ? "Изучите общий каркас, откройте один контекст и составьте собственную фразу. Затем сравните другой контекст и проверьте, что изменилось." : "Study the shared frame, open one context, and write your own sentence. Then compare a different context and check what changed."}</p></section><section id="frame-families" class="section-pad ruled"><p class="eyebrow">02 · ${ru ? "Общие каркасы" : "Shared frames"}</p><h2>${ru ? "Что повторяется в этих примерах" : "The structure these examples share"}</h2><p>${ru ? "Карточки ниже показывают контекстные варианты. Замена темы в скобках сама по себе не создаёт новый каркас." : "The cards below practise contextual variants. Changing the topic inside a slot does not create a new frame."}</p>${frameCards}${ungrouped ? `<p>${ru ? "Карточек, пока не отнесённых к семейству" : "Entries not yet assigned to a frame family"}: ${ungrouped}</p>` : ""}</section>${workplacePracticeSection(locale, set.id)}<section class="page-head section-pad compact ruled"><p class="eyebrow">03 · ${ru ? "Контексты для практики" : "Contexts to practise"}</p><h2>${ru ? "Выберите ситуацию" : "Choose a situation"}</h2><p>${ru ? `В наборе ${patterns.length} карточек. Откройте пример, затем попробуйте применить конструкцию без подсказки.` : `This set contains ${patterns.length} practice entries. Open an example, then try the construction without a prompt.`}</p></section>`;
+  }
   const samples = samplePatterns(patterns);
   const items = samples.map((pattern, index) => {
     const en = pattern.langs.find((lang) => lang.lang === "en") || pattern.langs[0];

@@ -48,6 +48,7 @@ function patternSummary(pattern) {
     title_ru: pattern.title_ru,
     group_id: pattern.group_id,
     set_id: pattern.set_id,
+    ...(pattern.frame_family_id ? { frame_family_id: pattern.frame_family_id } : {}),
     languages: pattern.langs.map((l) => l.lang),
     formula_en: en?.formula || null,
     formula_de: de?.formula || null,
@@ -66,6 +67,7 @@ function patternLanguageRecord(pattern, langKey) {
     metaphor_ru: pattern.metaphor_ru,
     group_id: pattern.group_id,
     set_id: pattern.set_id,
+    ...(pattern.frame_family_id ? { frame_family_id: pattern.frame_family_id } : {}),
     language: langKey,
     formula: lang.formula,
     example: lang.example,
@@ -660,6 +662,7 @@ function buildIndex(apiRoutes, counts, files, routes) {
       { path: "/patterns.json", url: apiUrl("/patterns.json"), type: "dataset", description: "All patterns (full records)" },
       { path: "/patterns/index.json", url: apiUrl("/patterns/index.json"), type: "list", description: "Paginated pattern summaries" },
       { path: "/patterns/{id}.json", url: apiUrl("/patterns/{id}.json"), type: "record", description: "Single pattern" },
+      { path: "/frame-families.json", url: apiUrl("/frame-families.json"), type: "dataset", description: "Explicit editorial grouping pilot; contextual variants share a frame" },
       { path: "/sets.json", url: apiUrl("/sets.json"), type: "dataset", description: "All study sets" },
       { path: "/sets/{id}.json", url: apiUrl("/sets/{id}.json"), type: "record", description: "Single study set with patterns" },
       { path: "/categories.json", url: apiUrl("/categories.json"), type: "list", description: "Pattern categories" },
@@ -676,6 +679,7 @@ function buildIndex(apiRoutes, counts, files, routes) {
     ],
     datasets: [
       { id: "advanced-patterns", label: "Reusable B2–C1 patterns", count: counts.advancedPatterns, url: apiUrl("/patterns.json") },
+      { id: "frame-families", label: "Editorial frame families (pilot)", count: counts.frameFamilies, url: apiUrl("/frame-families.json") },
       { id: "study-sets", label: "Study sets and learning paths", count: counts.sets, url: apiUrl("/sets.json") },
       { id: "annotated-documents", label: "Annotated language documents", count: counts.annotatedDocuments, url: apiUrl("/annotations/en/dialogues.json") },
       { id: "annotated-sentences", label: "Annotated sentences", count: counts.annotatedSentences },
@@ -693,6 +697,7 @@ function buildCatalog(counts, files, routes) {
     schema_version: 1,
     datasets: [
       { id: "patterns", title: "Advanced patterns", description: "Reusable B2–C1 English and German grammar patterns with Russian translations.", count: counts.advancedPatterns, download_url: apiUrl("/download/full-patterns.json"), api_url: apiUrl("/patterns.json"), schema_url: apiUrl("/schemas/pattern.json") },
+      { id: "frame-families", title: "Editorial frame families (pilot)", description: "Explicit group membership; not a count of independently reviewed constructions.", count: counts.frameFamilies, api_url: apiUrl("/frame-families.json") },
       { id: "sets", title: "Study sets", description: "Named study sets and learning paths.", count: counts.sets, api_url: apiUrl("/sets.json"), schema_url: apiUrl("/schemas/set.json") },
       { id: "annotations", title: "Annotated documents", description: "Sentence-first annotated English and German documents.", count: counts.annotatedDocuments, api_url: apiUrl("/annotations/en/dialogues.json"), schema_url: apiUrl("/schemas/document.json") },
     ],
@@ -704,6 +709,9 @@ function buildCatalog(counts, files, routes) {
 export function buildApi(content, counts) {
   const files = {};
   const routes = new Set();
+  const familyPath = apiPath("/frame-families.json");
+  files[familyPath] = `${JSON.stringify(wrapList(content.frameFamilies || [], { canonical_url: apiUrl("/frame-families.json"), record_type: "frame_families" }), null, 2)}\n`;
+  routes.add(familyPath);
 
   const patternSummaries = buildPatternsApi(content.advancedPatterns, files, routes);
   const setSummaries = buildSetsApi(content.advancedPatterns, content.studySets, files, routes);
@@ -721,6 +729,7 @@ export function buildApi(content, counts) {
     { path: "/patterns.json", summary: "All patterns", responseRef: apiUrl("/schemas/pattern.json") },
     { path: "/patterns/index.json", summary: "Pattern summaries (paginated)", paginated: true },
     { path: "/patterns/{id}.json", summary: "Single pattern" },
+    { path: "/frame-families.json", summary: "Explicit editorial families of contextual variants; independent language review pending" },
     { path: "/sets.json", summary: "Study sets" },
     { path: "/sets/{id}.json", summary: "Single study set" },
     { path: "/categories.json", summary: "Categories" },
@@ -743,6 +752,7 @@ export function buildApi(content, counts) {
     annotatedDocuments: counts.annotatedDocuments,
     annotatedSentences: counts.annotatedSentences,
     sets: content.studySets.sets.length,
+    frameFamilies: (content.frameFamilies || []).length,
     learningPaths: content.studySets.learningPaths.length,
     categories: categories.length,
     languages: languages.length,
@@ -775,6 +785,7 @@ export function buildLlmsTxt(content, counts) {
     "## Public datasets",
     "",
     `- Patterns: ${API_URL}/patterns.json (${counts.advancedPatterns} records)`,
+    `- Editorial frame families: ${API_URL}/frame-families.json (${(content.frameFamilies || []).length} pilot groups; contextual variants are not distinct constructions)`,
     `- Study sets: ${API_URL}/sets.json (${content.studySets.sets.length} sets)`,
     `- Annotated documents: ${API_URL}/annotations/en/dialogues.json and /annotations/de/... (${counts.annotatedDocuments} documents, ${counts.annotatedSentences} sentences)`,
     `- Search index: ${API_URL}/search-index.json`,

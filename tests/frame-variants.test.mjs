@@ -31,7 +31,7 @@ test("Frame family pilot is explicit, bounded and source-validated", () => {
   assert.equal(manifest.families.length, 3);
   assert.deepEqual(manifest.families.map((family) => family.set_id), ["HED", "ARG", "PRO"]);
   const members = manifest.families.flatMap((family) => family.member_pattern_ids);
-  assert.equal(new Set(members).size, 24);
+  assert.equal(new Set(members).size, 120);
   assert.ok(manifest.families.every((family) => family.review.status === "reviewed_pilot"));
   assert.ok(manifest.families.every((family) => family.review.confidence === "high"));
   assert.ok(manifest.families.every((family) => family.review.human_reviewed === false));
@@ -45,6 +45,20 @@ test("automatic similarity cannot create or alter a canonical family silently", 
     () => validateFrameFamilies(content.advancedPatterns, manifest),
     /does not match the reviewed abstract Frame signature/,
   );
+});
+
+test("corrected PRO agreement is explicit and cannot permit unrelated syntax", () => {
+  const content = loadContent();
+  const manifest = loadFrameFamilies();
+  validateFrameFamilies(content.advancedPatterns, manifest);
+  const pro = manifest.families.find((family) => family.set_id === "PRO");
+  assert.equal(pro.id, "pro-writing-to-clarify-impact");
+  assert.match(pro.languages.en.agreement_variants[0].formula, /affect the next steps/);
+  const noPlural = structuredClone(manifest);
+  delete noPlural.families.find((family) => family.set_id === "PRO").languages.en.agreement_variants;
+  assert.throws(() => validateFrameFamilies(content.advancedPatterns, noPlural), /does not match/);
+  pro.languages.en.agreement_variants[0].formula = "I am writing to clarify how [topic] might affect the next steps.";
+  assert.throws(() => validateFrameFamilies(content.advancedPatterns, manifest), /preserve all other syntax/);
 });
 
 test("one stable Pattern Frame cannot belong to conflicting canonical families", () => {
@@ -65,7 +79,7 @@ test("domain model overlays canonical Frames without deleting legacy Pattern Fra
   assert.equal(model.patternCount, 3530);
   assert.equal(model.canonicalFrameFamilyCount, 3);
   assert.equal(model.canonicalFrames.length, 6);
-  assert.equal(model.frameVariants.length, 48);
+  assert.equal(model.frameVariants.length, 240);
 
   const hedLegacy = model.frames.find((frame) => frame.id === frameId("C1HED002", "en"));
   assert.ok(hedLegacy, "legacy Pattern Frame must remain retrievable");
@@ -87,11 +101,11 @@ test("published pilot records resolve through data and individual Pattern API", 
   const variants = json("data", "domain", "frame-variants.json");
   const patternIndex = json("data", "domain", "pattern-index.json");
   assert.equal(canonicalFrames.count, 6);
-  assert.equal(variants.count, 48);
+  assert.equal(variants.count, 240);
 
   const canonical = canonicalFrames.items.find((item) => item.id === canonicalFrameId("hed-premature-conclusion", "en"));
   assert.ok(canonical);
-  assert.equal(canonical.member_pattern_ids.length, 8);
+  assert.equal(canonical.member_pattern_ids.length, 40);
   assert.equal(canonical.representative_pattern_id, "C1HED001");
 
   const variant = variants.items.find((item) => item.id === frameVariantId("C1HED002", "en"));

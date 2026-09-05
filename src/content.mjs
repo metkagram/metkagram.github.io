@@ -3,6 +3,7 @@ import path from "node:path";
 import { collectionKeys, targetMeta } from "./i18n.mjs";
 import { loadPatternShards } from "./pattern-sources.mjs";
 import { corpusLanguages } from "./release.mjs";
+import { attachFrameFamilies } from "./frame-families.mjs";
 
 const ROOT = process.cwd();
 const PRACTICE_QUALITY_SET_IDS = new Set(["CGR", "SPK", "INT", "REG", "RTR", "TRN"]);
@@ -286,7 +287,8 @@ export function loadContent() {
   });
   for (const set of studySets.sets) assert(advancedPatterns.some((pattern) => pattern.set_id === set.id), `study set ${set.id} has no complete patterns`);
 
-  return { collections, advancedPatterns, studySets };
+  const frameFamilies = attachFrameFamilies(advancedPatterns, studySets);
+  return { collections, advancedPatterns, studySets, frameFamilies };
 }
 
 export function contentCounts(content) {

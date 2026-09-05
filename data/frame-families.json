@@ -14,7 +14,39 @@
         "C1HED005",
         "C1HED006",
         "C1HED007",
-        "C1HED008"
+        "C1HED008",
+        "C1HED009",
+        "C1HED010",
+        "C1HED011",
+        "C1HED012",
+        "C1HED013",
+        "C1HED014",
+        "C1HED015",
+        "C1HED016",
+        "C1HED017",
+        "C1HED018",
+        "C1HED019",
+        "C1HED020",
+        "C1HED021",
+        "C1HED022",
+        "C1HED023",
+        "C1HED024",
+        "C1HED025",
+        "C1HED026",
+        "C1HED027",
+        "C1HED028",
+        "C1HED029",
+        "C1HED030",
+        "C1HED031",
+        "C1HED032",
+        "C1HED033",
+        "C1HED034",
+        "C1HED035",
+        "C1HED036",
+        "C1HED037",
+        "C1HED038",
+        "C1HED039",
+        "C1HED040"
       ],
       "relation": "contextual_realization",
       "languages": {
@@ -31,7 +63,22 @@
         "human_reviewed": false,
         "reviewed_on": "2026-09-05",
         "confidence": "high",
-        "basis": "Explicit source review plus deterministic signature validation: member records share the same reusable syntax and learning job and differ in the contextual noun phrase occupying the bracketed slot. No Pattern record is deleted or treated as cross-language evidence."
+        "basis": "Explicit source review plus deterministic signature validation: member records share the same reusable syntax and learning job and differ in the contextual noun phrase occupying the bracketed slot. No Pattern record is deleted or treated as cross-language evidence. Extended explicitly from 8 to all 40 preserved Pattern IDs after source inspection. Structural membership does not certify naturalness, translations, CEFR level or learning efficacy."
+      },
+      "title_en": "Withhold a premature conclusion",
+      "title_ru": "Воздержаться от преждевременного вывода",
+      "formulas": {
+        "en": "It would be premature to conclude that [subject] is/are settled.",
+        "de": "Es wäre verfrüht, daraus zu schließen, dass [Subjekt im Nominativ] abschließend geklärt ist/sind."
+      },
+      "practice_prompt_en": "Withhold a final conclusion while important evidence is missing. Say what information would let you decide.",
+      "practice_prompt_ru": "Воздержитесь от окончательного вывода, пока не хватает важных данных. Назовите информацию, которая позволит принять решение.",
+      "review_status": "editorial-pilot",
+      "independent_language_review": "pending",
+      "provenance": {
+        "method": "explicit editorial grouping of existing contextual variants",
+        "date": "2026-09-05",
+        "cross_language_equivalence": "not inferred from family membership"
       }
     },
     {
@@ -46,7 +93,39 @@
         "C1ARG005",
         "C1ARG006",
         "C1ARG007",
-        "C1ARG008"
+        "C1ARG008",
+        "C1ARG009",
+        "C1ARG010",
+        "C1ARG011",
+        "C1ARG012",
+        "C1ARG013",
+        "C1ARG014",
+        "C1ARG015",
+        "C1ARG016",
+        "C1ARG017",
+        "C1ARG018",
+        "C1ARG019",
+        "C1ARG020",
+        "C1ARG021",
+        "C1ARG022",
+        "C1ARG023",
+        "C1ARG024",
+        "C1ARG025",
+        "C1ARG026",
+        "C1ARG027",
+        "C1ARG028",
+        "C1ARG029",
+        "C1ARG030",
+        "C1ARG031",
+        "C1ARG032",
+        "C1ARG033",
+        "C1ARG034",
+        "C1ARG035",
+        "C1ARG036",
+        "C1ARG037",
+        "C1ARG038",
+        "C1ARG039",
+        "C1ARG040"
       ],
       "relation": "contextual_realization",
       "languages": {
@@ -63,7 +142,22 @@
         "human_reviewed": false,
         "reviewed_on": "2026-09-05",
         "confidence": "high",
-        "basis": "Explicit source review plus deterministic signature validation: the member Patterns realize the same argumentation Frame while contextual noun phrases vary. The claim slot remains part of the reusable Frame."
+        "basis": "Explicit source review plus deterministic signature validation: the member Patterns realize the same argumentation Frame while contextual noun phrases vary. The claim slot remains part of the reusable Frame. Extended explicitly from 8 to all 40 preserved Pattern IDs after source inspection. Structural membership does not certify naturalness, translations, CEFR level or learning efficacy."
+      },
+      "title_en": "Make an argument’s assumption explicit",
+      "title_ru": "Выявить предположение в основе аргумента",
+      "formulas": {
+        "en": "The case for [proposal or action] rests on the assumption that [claim].",
+        "de": "Das Argument für [Vorschlag oder Handlung im Akkusativ] beruht auf der Annahme, dass [Aussage mit Verb am Ende]."
+      },
+      "practice_prompt_en": "Name a proposal or action and the assumption that supports it. Then ask what evidence would support or weaken that assumption.",
+      "practice_prompt_ru": "Назовите предложение или действие и предположение в его основе. Подумайте, какие данные подтвердят или ослабят это предположение.",
+      "review_status": "editorial-pilot",
+      "independent_language_review": "pending",
+      "provenance": {
+        "method": "explicit editorial grouping of existing contextual variants",
+        "date": "2026-09-05",
+        "cross_language_equivalence": "not inferred from family membership"
       }
     },
     {
@@ -78,15 +172,59 @@
         "C1PRO005",
         "C1PRO006",
         "C1PRO007",
-        "C1PRO008"
+        "C1PRO008",
+        "C1PRO009",
+        "C1PRO010",
+        "C1PRO011",
+        "C1PRO012",
+        "C1PRO013",
+        "C1PRO014",
+        "C1PRO015",
+        "C1PRO016",
+        "C1PRO017",
+        "C1PRO018",
+        "C1PRO019",
+        "C1PRO020",
+        "C1PRO021",
+        "C1PRO022",
+        "C1PRO023",
+        "C1PRO024",
+        "C1PRO025",
+        "C1PRO026",
+        "C1PRO027",
+        "C1PRO028",
+        "C1PRO029",
+        "C1PRO030",
+        "C1PRO031",
+        "C1PRO032",
+        "C1PRO033",
+        "C1PRO034",
+        "C1PRO035",
+        "C1PRO036",
+        "C1PRO037",
+        "C1PRO038",
+        "C1PRO039",
+        "C1PRO040"
       ],
       "relation": "contextual_realization",
       "languages": {
         "en": {
-          "formula": "I am writing to clarify how [topic] affects the next steps."
+          "formula": "I am writing to clarify how [topic] affects the next steps.",
+          "agreement_variants": [
+            {
+              "number": "plural",
+              "formula": "I am writing to clarify how [topic] affect the next steps."
+            }
+          ]
         },
         "de": {
-          "formula": "Ich schreibe, um zu erläutern, wie [Thema] die nächsten Schritte beeinflusst."
+          "formula": "Ich schreibe, um zu erläutern, wie [Thema] die nächsten Schritte beeinflusst.",
+          "agreement_variants": [
+            {
+              "number": "plural",
+              "formula": "Ich schreibe, um zu erläutern, wie [Thema] die nächsten Schritte beeinflussen."
+            }
+          ]
         }
       },
       "review": {
@@ -95,8 +233,24 @@
         "human_reviewed": false,
         "reviewed_on": "2026-09-05",
         "confidence": "high",
-        "basis": "Explicit source review plus deterministic signature validation: the member Patterns express the same professional clarification Frame and vary only the contextual subject/topic realization."
+        "basis": "Explicit source review plus deterministic signature validation: the member Patterns express the same professional clarification Frame and vary only the contextual subject/topic realization. Extended explicitly from 8 to all 40 preserved Pattern IDs after source inspection. Structural membership does not certify naturalness, translations, CEFR level or learning efficacy. Singular and plural subject agreement are declared separately and validated against the exact permitted verb alternation."
+      },
+      "title_en": "Clarify the impact on next steps",
+      "title_ru": "Пояснить влияние на следующие шаги",
+      "formulas": {
+        "en": "I am writing to clarify how [subject] affects/affect the next steps.",
+        "de": "Ich schreibe, um zu erläutern, wie [Subjekt im Nominativ] die nächsten Schritte beeinflusst/beeinflussen."
+      },
+      "practice_prompt_en": "Choose a subject, then check singular or plural agreement. Use this frame to explain how a situation affects the next steps.",
+      "practice_prompt_ru": "Выберите подлежащее и согласуйте с ним глагол. Используйте каркас, чтобы пояснить влияние ситуации на следующие шаги.",
+      "review_status": "editorial-pilot",
+      "independent_language_review": "pending",
+      "provenance": {
+        "method": "explicit editorial grouping of existing contextual variants",
+        "date": "2026-09-05",
+        "cross_language_equivalence": "not inferred from family membership"
       }
     }
-  ]
+  ],
+  "scope": "Three-set editorial grouping pilot. Membership is not an efficacy claim, an independent linguistic review, or a cross-language Bridge."
 }

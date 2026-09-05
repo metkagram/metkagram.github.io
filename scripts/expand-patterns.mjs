@@ -3,6 +3,11 @@ import path from "node:path";
 import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 
 const ROOT = process.cwd();
+// This historical bootstrap rewrites memberships and regenerates editorial text.
+// Established curricula must be edited in their canonical shards instead.
+if (fs.existsSync(path.join(ROOT, "data", "curriculum-preservation.json"))) {
+  throw new Error("Legacy expansion cannot overwrite a preserved curriculum. Edit canonical shards; see docs/CORPUS_QUALITY_AUDIT.md.");
+}
 const setsFile = path.join(ROOT, "data", "study-sets.json");
 const { patterns: original } = loadEditorialCorpus(ROOT);
 

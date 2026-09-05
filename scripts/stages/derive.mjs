@@ -9,6 +9,8 @@ export const DERIVE_STEPS = [
   "scripts/pattern-lens-rules.mjs",
   // Corpus-wide editorial quality audit over canonical Pattern/Frame data.
   "scripts/frame-quality-audit.mjs",
+  // Exact legacy identity/URL protection and bounded multilingual diagnostics.
+  "scripts/audit-corpus.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {

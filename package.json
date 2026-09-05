@@ -22,6 +22,8 @@
     "annotations:validate": "node scripts/annotations.mjs",
     "annotations:practice": "node scripts/generate-practice-annotations.mjs",
     "annotations:research": "node scripts/annotation-research.mjs",
+    "corpus:audit": "node scripts/audit-corpus.mjs",
+    "corpus:preserve": "node scripts/audit-corpus.mjs --check-preservation-only",
     "research:h1:analyse": "node scripts/analyse-h1-pilot.mjs",
     "test": "node --test tests/*.test.mjs",
     "check:links": "node scripts/check-links.mjs",
