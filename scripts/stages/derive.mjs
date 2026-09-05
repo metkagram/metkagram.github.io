@@ -7,6 +7,8 @@ import { runStage } from "./run.mjs";
 export const DERIVE_STEPS = [
   // Pattern Lens rule configuration: pure serialization of src/ rule modules.
   "scripts/pattern-lens-rules.mjs",
+  // Corpus-wide editorial quality audit over canonical Pattern/Frame data.
+  "scripts/frame-quality-audit.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {
