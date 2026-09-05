@@ -15,14 +15,14 @@ test("Lens practice emits a text-free completion signal after a real check", () 
   assert.doesNotMatch(source, /detail:\s*\{[^}]*text/i);
 });
 
-test("reviewed Lens relations belong only to the focused result", () => {
+test("reviewed Lens relations belong only to the focused result and stay gated before reuse", () => {
   const source = read("public/assets/lens-knowledge-bridge.js");
   assert.match(source, /querySelector\("\.lens-card--primary"\)/);
   assert.doesNotMatch(source, /for \(const card of results\.querySelectorAll\("\.lens-card"\)\)/);
-  assert.match(source, /dataset\.lensPracticeComplete !== "true"/);
-  assert.match(source, /section\.hidden = true/);
+  assert.match(source, /section\.hidden = card\.dataset\.lensPracticeComplete !== "true"/);
   assert.match(source, /metkagram:lens-practice-complete/);
   assert.match(source, /section\.hidden = false/);
+  assert.doesNotMatch(source, /const inlinePractice =/);
 });
 
 test("guided next step preserves reviewed Contrast, Choice and Route destinations", () => {
