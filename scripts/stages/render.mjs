@@ -71,6 +71,7 @@ export const RENDER_STEPS = [
   "scripts/canonical-frame-variants.mjs",
   "scripts/pattern-indexability.mjs",
   "scripts/seo-graph-normalize.mjs",
+  "scripts/apply-consent-analytics.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {

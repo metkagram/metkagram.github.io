@@ -66,7 +66,7 @@ test("package.json exposes the staged build pipeline in canonical order", () => 
 });
 
 test("every legacy chain script remains assigned to exactly one stage", () => {
-  const required = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
+  const required = [...LEGACY_CHAIN, "scripts/apply-consent-analytics.mjs", "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
   const assigned = [...DERIVE_STEPS, ...RENDER_STEPS, ...AUDIT_STEPS];
   assert.equal(new Set(assigned).size, assigned.length, "a script appears in two stages");
   for (const script of required) {

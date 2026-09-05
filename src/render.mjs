@@ -216,6 +216,8 @@ export function layout({ locale = "en", pathname, title, description, body, type
   return `<!doctype html>
 <html lang="${locale}">
 <head>
+  <!-- Consent-aware aggregate website analytics; learning telemetry remains local-only. -->
+  <script src="/assets/analytics-consent.js" defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(metaTitle)}</title>
@@ -614,10 +616,10 @@ function legalSections(locale, kind) {
       updated: "Last updated: 14 July 2026 · Legacy policy first published: 16 April 2023",
       sections: [
         ["Scope", "This policy applies to the Metkagram website and the Android and iOS applications listed below. It describes the current public website and preserves the relevant terms for the legacy mobile apps."],
-        ["Information on the website", "The public website does not require an account and does not use advertising trackers. It serves public language datasets, documentation and a read-only agent connector."],
+        ["Information on the website", "The public website does not require an account and does not use advertising trackers. Optional aggregate Google Analytics loads only after explicit consent. It records ordinary page and device information; learning text and the local learning-event log are not sent."],
         ["Legacy mobile apps", "The mobile apps may use the information needed to provide their features, support a user account where available, process a purchase through the relevant app store, and maintain or secure the service. The apps may rely on platform, cloud, analytics or sign-in services; those providers process data under their own policies."],
         ["Sharing and security", "We do not sell personal information. Information may be processed by service providers that help operate the apps, by app stores when you install or purchase, or where disclosure is required by law. Reasonable safeguards are used, but no online service can promise absolute security."],
-        ["Your choices", "You can clear local website data in your browser and manage app permissions or purchases in the relevant store. For requests concerning the legacy apps or this policy, use the MetalHatsCats contact page."],
+        ["Your choices", "You can allow or decline optional website analytics, clear that choice and local learning data in your browser, and manage app permissions or purchases in the relevant store. For requests concerning the legacy apps or this policy, use the MetalHatsCats contact page."],
         ["Children and changes", "The service is not directed to children under 13. We may update this policy when the service changes; the date above indicates the current version."]
       ]
     } : {
@@ -627,10 +629,10 @@ function legalSections(locale, kind) {
       updated: "Обновлено: 14 июля 2026 · Исходная политика опубликована: 16 апреля 2023",
       sections: [
         ["Область действия", "Политика относится к сайту Metkagram и приложениям для Android и iOS, ссылки на которые приведены ниже. В ней описан текущий публичный сайт и сохранены применимые условия для прежних мобильных приложений."],
-        ["Информация на сайте", "Публичный сайт не требует учётной записи и не использует рекламные трекеры. Он публикует языковые датасеты, документацию и read-only коннектор для агентов."],
+        ["Информация на сайте", "Публичный сайт не требует учётной записи и не использует рекламные трекеры. Необязательная агрегированная Google Analytics загружается только после явного согласия. Она получает обычные сведения о странице и устройстве; учебный текст и локальный журнал учебных событий не отправляются."],
         ["Прежние мобильные приложения", "Мобильные приложения могут использовать данные, необходимые для работы функций, поддержки учётной записи, если она доступна, обработки покупки через соответствующий магазин и защиты сервиса. Приложения могут использовать платформенные, облачные, аналитические или сервисы входа; такие поставщики обрабатывают данные по собственным правилам."],
         ["Передача и защита", "Мы не продаём персональные данные. Информация может обрабатываться поставщиками, которые помогают работе приложений, магазинами приложений при установке или покупке, а также в случаях, предусмотренных законом. Используются разумные меры защиты, но ни один онлайн-сервис не может гарантировать абсолютную безопасность."],
-        ["Ваш выбор", "Вы можете очистить локальные данные сайта в браузере, а также управлять разрешениями и покупками в соответствующем магазине. По вопросам о прежних приложениях и этой политике используйте страницу контактов MetalHatsCats."],
+        ["Ваш выбор", "Вы можете разрешить или отклонить необязательную аналитику сайта, очистить этот выбор и локальные учебные данные в браузере, а также управлять разрешениями и покупками в соответствующем магазине. По вопросам о прежних приложениях и этой политике используйте страницу контактов MetalHatsCats."],
         ["Дети и изменения", "Сервис не предназначен для детей младше 13 лет. Мы можем обновлять политику при изменении сервиса; дата выше обозначает текущую версию."]
       ]
     };
