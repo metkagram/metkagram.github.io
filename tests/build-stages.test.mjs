@@ -91,10 +91,15 @@ test("stage runner reports stage, script and exit code on failure", () => {
   fs.rmSync(fixture, { recursive: true, force: true });
 });
 
-test("validate stage runs before rendering and never reads dist/", () => {
-  assert.deepEqual(VALIDATE_STEPS, ["scripts/validate-sources.mjs"]);
-  const source = fs.readFileSync(path.join(ROOT, "scripts", "validate-sources.mjs"), "utf8");
-  assert.doesNotMatch(source, /dist/, "validate-sources.mjs must not depend on rendered output");
+test("validate stage runs before rendering and every validator stays source-only", () => {
+  assert.deepEqual(VALIDATE_STEPS, [
+    "scripts/validate-sources.mjs",
+    "scripts/validate-study-set-preservation.mjs",
+  ]);
+  for (const script of VALIDATE_STEPS) {
+    const source = fs.readFileSync(path.join(ROOT, script), "utf8");
+    assert.doesNotMatch(source, /dist/, `${script} must not depend on rendered output`);
+  }
   const result = spawnSync(process.execPath, ["scripts/stages/validate.mjs"], { cwd: ROOT, encoding: "utf8" });
   assert.equal(result.status, 0, `validate stage must pass on canonical sources:\n${result.stderr}`);
 });
