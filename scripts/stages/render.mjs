@@ -26,6 +26,8 @@
 // - cross-language-transfer + teacher-tutor-exports feed multilingual-domain-model;
 // - canonical-frame-variants resolves explicit Frame families over the published
 //   multilingual model and must run after multilingual-domain-model;
+// - pattern-indexability-surface applies the pre-derived editorial search policy
+//   only after final Pattern/API surfaces exist and before SEO normalization;
 // - seo-graph-normalize is the render finalize pass and must stay last.
 import path from "node:path";
 import { runStage } from "./run.mjs";
@@ -64,6 +66,7 @@ export const RENDER_STEPS = [
   "scripts/benchmark-publication.mjs",
   "scripts/multilingual-domain-model.mjs",
   "scripts/canonical-frame-variants.mjs",
+  "scripts/pattern-indexability-surface.mjs",
   "scripts/seo-graph-normalize.mjs",
 ];
 
