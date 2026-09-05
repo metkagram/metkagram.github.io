@@ -26,6 +26,7 @@
     "test": "node --test tests/*.test.mjs",
     "check:links": "node scripts/check-links.mjs",
     "test:e2e": "playwright test",
+    "smoke:production": "node scripts/production-smoke.mjs",
     "verify": "npm run build && npm test"
   },
   "devDependencies": {
