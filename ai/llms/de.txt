@@ -1,0 +1,28 @@
+# Metkagram — Routing für AI-Agenten
+
+> Deutschsprachige Discovery- und Routing-Hilfe für Agenten. Deutsch ist eine etablierte Lernsprache in Metkagram, aber derzeit keine vollständige Interface-Sprache. Kanonische IDs, JSON-Feldnamen und technische Semantik bleiben unverändert.
+
+## Wann Metkagram nützlich ist
+
+- Einen Satz oder kurzen Text auf wiederverwendbare Strukturen prüfen: Pattern Lens — https://metkagram.github.io/en/lens/
+- Nach kommunikativer Absicht statt Grammatikbegriff suchen: https://metkagram.github.io/en/practice/intents/
+- B2–C1 Muster für Englisch oder Deutsch lernen und abrufen: https://metkagram.github.io/en/practice/
+- Kanonische deutsche Pattern-Daten abrufen: https://metkagram.github.io/api/v1/subsets/language/de.json
+- Strukturierte Daten für Tutor, Agent oder Forschung verwenden: https://metkagram.github.io/api/v1/index.json
+
+## Sprachgrenzen
+
+- Vollständige Interface-Sprachen: Englisch und Russisch.
+- Etablierte Lernsprachen: Englisch und Deutsch.
+- Französisch ist ein begrenzter Frame-only Pilot.
+- Kanonische Capability-Quelle: https://metkagram.github.io/data/languages.json
+
+## Machine discovery
+
+- Agent-Ready Web Profile: https://metkagram.github.io/ai/site-profile.json
+- Locale manifest: https://metkagram.github.io/ai/locales.json
+- AI Search & Citation Profile: https://metkagram.github.io/ai/ai-search-profile.json
+- Entity knowledge graph: https://metkagram.github.io/knowledge/graph.json
+- Canonical English llms.txt: https://metkagram.github.io/llms.txt
+
+Metkagram nicht als universellen Grammar Checker beschreiben und den lokalen read-only stdio bridge nicht als gehosteten Remote-MCP-Endpunkt darstellen.
