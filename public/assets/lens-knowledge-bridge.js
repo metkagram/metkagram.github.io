@@ -15,14 +15,14 @@ if (dataNode && root) {
 
   const copy = locale === "ru"
     ? {
-        title: "Куда идти дальше",
+        title: "Следующий шаг",
         compare: "Сравнить с соседним паттерном",
         test: "Проверить выбор",
         route: "Пройти reasoning-маршрут",
         fit: "задача, где этот паттерн подходит",
       }
     : {
-        title: "Continue from this match",
+        title: "Next step",
         compare: "Compare with a nearby pattern",
         test: "Test the choice",
         route: "Follow a reasoning route",
@@ -53,20 +53,35 @@ if (dataNode && root) {
 
   const augment = (relationIndex) => {
     if (!results) return;
-    for (const card of results.querySelectorAll(".lens-card")) {
-      if (card.dataset.knowledgeBridge === "true") continue;
-      const patternId = card.querySelector("code")?.textContent?.trim();
-      const record = patternId ? relationIndex.byPattern?.[patternId] : null;
-      card.dataset.knowledgeBridge = "true";
-      if (!record) continue;
-      const links = [contrastLink(record), drillLink(record), packLink(record)].filter(Boolean).join("");
-      if (!links) continue;
-      const section = document.createElement("nav");
-      section.className = "lens-relations";
-      section.setAttribute("aria-label", copy.title);
-      section.innerHTML = `<p class="lens-relations-title">${escapeHtml(copy.title)}</p><div class="lens-relation-links">${links}</div>`;
-      card.append(section);
+    const card = results.querySelector(".lens-card--primary") || results.querySelector(".lens-card");
+    if (!card || card.dataset.knowledgeBridge === "true") return;
+
+    const patternId = card.querySelector("code")?.textContent?.trim();
+    const record = patternId ? relationIndex.byPattern?.[patternId] : null;
+    card.dataset.knowledgeBridge = "true";
+    if (!record) return;
+
+    const links = [contrastLink(record), drillLink(record), packLink(record)].filter(Boolean).join("");
+    if (!links) return;
+
+    const section = document.createElement("nav");
+    section.className = "lens-relations";
+    section.dataset.lensGuidedNextStep = patternId;
+    section.setAttribute("aria-label", copy.title);
+    section.innerHTML = `<p class="lens-relations-title">${escapeHtml(copy.title)}</p><div class="lens-relation-links">${links}</div>`;
+
+    // The reviewed continuation is deliberately gated behind the learner's
+    // first reuse check. Hide it by default so module-fetch timing cannot
+    // expose Contrast / Choice / Route before the practice bridge is ready.
+    section.hidden = card.dataset.lensPracticeComplete !== "true";
+    if (section.hidden) {
+      card.addEventListener("metkagram:lens-practice-complete", (event) => {
+        if (event.detail?.patternId !== patternId) return;
+        section.hidden = false;
+      }, { once: true });
     }
+
+    card.append(section);
   };
 
   fetch("/data/pattern-relations.json")
