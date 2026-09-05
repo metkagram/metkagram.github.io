@@ -67,13 +67,16 @@ test("package.json exposes the staged build pipeline in canonical order", () => 
   assert.ok(pkg.scripts.verify.includes("npm run build"), "verify runs the staged build");
 });
 
-test("every legacy chain script is assigned to exactly one stage", () => {
-  // check-links and seo-graph-audit ran outside the old chain (verify step);
-  // the audit stage now owns them.
-  const expected = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
+test("every legacy chain script remains assigned to exactly one stage", () => {
+  // New deterministic derive tasks may be added after the staged migration;
+  // this contract protects every script from the original chain plus the two
+  // read-only audits that were intentionally moved into the audit stage.
+  const required = [...LEGACY_CHAIN, "scripts/check-links.mjs", "scripts/seo-graph-audit.mjs"];
   const assigned = [...DERIVE_STEPS, ...RENDER_STEPS, ...AUDIT_STEPS];
   assert.equal(new Set(assigned).size, assigned.length, "a script appears in two stages");
-  assert.deepEqual([...assigned].sort(), [...expected].sort(), "stage coverage drifted from the legacy chain");
+  for (const script of required) {
+    assert.equal(assigned.filter((candidate) => candidate === script).length, 1, `${script} must remain assigned to exactly one stage`);
+  }
 });
 
 test("stage runner reports stage, script and exit code on failure", () => {
@@ -91,10 +94,15 @@ test("stage runner reports stage, script and exit code on failure", () => {
   fs.rmSync(fixture, { recursive: true, force: true });
 });
 
-test("validate stage runs before rendering and never reads dist/", () => {
-  assert.deepEqual(VALIDATE_STEPS, ["scripts/validate-sources.mjs"]);
-  const source = fs.readFileSync(path.join(ROOT, "scripts", "validate-sources.mjs"), "utf8");
-  assert.doesNotMatch(source, /dist/, "validate-sources.mjs must not depend on rendered output");
+test("validate stage runs before rendering and every validator stays source-only", () => {
+  assert.deepEqual(VALIDATE_STEPS, [
+    "scripts/validate-sources.mjs",
+    "scripts/validate-study-set-preservation.mjs",
+  ]);
+  for (const script of VALIDATE_STEPS) {
+    const source = fs.readFileSync(path.join(ROOT, script), "utf8");
+    assert.doesNotMatch(source, /dist/, `${script} must not depend on rendered output`);
+  }
   const result = spawnSync(process.execPath, ["scripts/stages/validate.mjs"], { cwd: ROOT, encoding: "utf8" });
   assert.equal(result.status, 0, `validate stage must pass on canonical sources:\n${result.stderr}`);
 });
