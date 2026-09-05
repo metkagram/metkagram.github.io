@@ -201,7 +201,17 @@ if (dataNode && root) {
     return parts.join(" · ");
   };
 
-  const render = async () => {
+  const emitAnalysisComplete = (matches) => {
+    root.dispatchEvent(new CustomEvent("metkagram:lens-analysis-complete", {
+      bubbles: true,
+      detail: {
+        resultCount: matches.length,
+        patternIds: matches.map(({ pattern }) => pattern.id).filter(Boolean).slice(0, 10),
+      },
+    }));
+  };
+
+  const render = async ({ emitAnalysis = false } = {}) => {
     const input = text.value.trim();
     if (!input) {
       results.innerHTML = "";
@@ -230,6 +240,7 @@ if (dataNode && root) {
         <div class="lens-card-foot"><span>${escapeHtml(evidenceType)}</span><a href="${escapeHtml(page)}">${locale === "ru" ? "Учить паттерн" : "Learn this pattern"} →</a></div>
       </article>`;
     }).join("");
+    if (emitAnalysis) emitAnalysisComplete(matches);
   };
 
   const loadReasoningRules = async () => {
@@ -263,7 +274,7 @@ if (dataNode && root) {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    await render();
+    await render({ emitAnalysis: true });
   });
 
   loadReasoningRules();
