@@ -1,0 +1,159 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "https://metkagram.github.io/#website",
+      "@type": "WebSite",
+      "name": "Metkagram",
+      "url": "https://metkagram.github.io/",
+      "description": "A multilingual language-learning and NLP knowledge site for reusable language patterns, reviewed visual annotation and inspectable learning structures.",
+      "inLanguage": ["en", "ru"],
+      "about": {"@id": "https://metkagram.github.io/#project"},
+      "subjectOf": [
+        {"@id": "https://metkagram.github.io/ai/site-profile.json"},
+        {"@id": "https://metkagram.github.io/ai/ai-search-profile.json"}
+      ]
+    },
+    {
+      "@id": "https://metkagram.github.io/#project",
+      "@type": "CreativeWork",
+      "name": "Metkagram",
+      "url": "https://metkagram.github.io/en/",
+      "sameAs": "https://github.com/metkagram/metkagram.github.io",
+      "license": "https://metkagram.github.io/en/licensing/",
+      "keywords": [
+        "language learning",
+        "reusable language patterns",
+        "English B2 C1",
+        "German B2 C1",
+        "visual sentence annotation",
+        "NLP",
+        "communicative intent"
+      ],
+      "mainEntity": {"@id": "https://metkagram.github.io/#vocabulary"},
+      "hasPart": [
+        {"@id": "https://metkagram.github.io/#practice"},
+        {"@id": "https://metkagram.github.io/#lens"},
+        {"@id": "https://metkagram.github.io/#catalog"}
+      ]
+    },
+    {
+      "@id": "https://metkagram.github.io/#practice",
+      "@type": "LearningResource",
+      "name": "Metkagram Pattern Practice",
+      "url": "https://metkagram.github.io/en/practice/",
+      "description": "Learner-facing library and retrieval practice for reusable English and German B2-C1 language patterns.",
+      "learningResourceType": "Reusable language pattern practice",
+      "educationalLevel": "CEFR B2-C1",
+      "isAccessibleForFree": true,
+      "isPartOf": {"@id": "https://metkagram.github.io/#project"},
+      "about": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#lens",
+      "@type": "SoftwareApplication",
+      "name": "Metkagram Pattern Lens",
+      "url": "https://metkagram.github.io/en/lens/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "description": "A precision-first text-to-pattern surface that looks for high-confidence reusable structures in a sentence or short paragraph and abstains when available rules do not support a reliable match.",
+      "isPartOf": {"@id": "https://metkagram.github.io/#project"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#catalog",
+      "@type": "DataCatalog",
+      "name": "Metkagram public data catalog",
+      "url": "https://metkagram.github.io/data/catalog.json",
+      "description": "Catalog of public patterns, annotations, language capabilities and reviewed reasoning data.",
+      "license": "https://metkagram.github.io/en/licensing/",
+      "dataset": [
+        {"@id": "https://metkagram.github.io/#pattern-dataset"},
+        {"@id": "https://metkagram.github.io/#search-index"}
+      ],
+      "isPartOf": {"@id": "https://metkagram.github.io/#project"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#pattern-dataset",
+      "@type": "Dataset",
+      "name": "Metkagram public reusable pattern dataset",
+      "url": "https://metkagram.github.io/api/v1/patterns.json",
+      "license": "https://metkagram.github.io/en/licensing/",
+      "isPartOf": {"@id": "https://metkagram.github.io/#catalog"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#search-index",
+      "@type": "Dataset",
+      "name": "Metkagram retrieval search index",
+      "url": "https://metkagram.github.io/api/v1/search-index.json",
+      "description": "Generated retrieval index covering public patterns, study sets, categories and documents.",
+      "license": "https://metkagram.github.io/en/licensing/",
+      "isPartOf": {"@id": "https://metkagram.github.io/#catalog"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#vocabulary",
+      "@type": "DefinedTermSet",
+      "name": "Metkagram domain vocabulary",
+      "url": "https://metkagram.github.io/en/glossary/",
+      "hasDefinedTerm": [
+        {"@id": "https://metkagram.github.io/#term-mark"},
+        {"@id": "https://metkagram.github.io/#term-frame"},
+        {"@id": "https://metkagram.github.io/#term-move"},
+        {"@id": "https://metkagram.github.io/#term-contrast"},
+        {"@id": "https://metkagram.github.io/#term-choice"},
+        {"@id": "https://metkagram.github.io/#term-route"},
+        {"@id": "https://metkagram.github.io/#term-bridge"}
+      ]
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-mark",
+      "@type": "DefinedTerm",
+      "name": "Mark",
+      "description": "A reviewed visual cue placed inside a real sentence.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-frame",
+      "@type": "DefinedTerm",
+      "name": "Frame",
+      "description": "A reusable structure in one language.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-move",
+      "@type": "DefinedTerm",
+      "name": "Move",
+      "description": "The communicative or reasoning job behind a Frame.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-contrast",
+      "@type": "DefinedTerm",
+      "name": "Contrast",
+      "description": "A reviewed difference between nearby Frames.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-choice",
+      "@type": "DefinedTerm",
+      "name": "Choice",
+      "description": "A task where a learner chooses between nearby Frames before feedback.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-route",
+      "@type": "DefinedTerm",
+      "name": "Route",
+      "description": "An ordered learning sequence composed from canonical Metkagram objects.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    },
+    {
+      "@id": "https://metkagram.github.io/#term-bridge",
+      "@type": "DefinedTerm",
+      "name": "Bridge",
+      "description": "A reviewed cross-language relation between Frames or their communicative Moves.",
+      "inDefinedTermSet": {"@id": "https://metkagram.github.io/#vocabulary"}
+    }
+  ]
+}
