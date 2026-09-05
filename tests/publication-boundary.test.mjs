@@ -19,10 +19,18 @@ function isTracked(relative) {
 test("private research infrastructure stays outside the public repository", () => {
   for (const relative of [
     "data/source-tag-rules.ts",
+    "scripts/refresh-editorial-annotations.mjs",
     "annotation_service"
   ]) {
     assert.equal(isTracked(relative), false, `${relative} must remain private`);
   }
+});
+
+test("editorial annotation release contains prepared data and checks without generation rules", () => {
+  const loader = fs.readFileSync(path.join(ROOT, "src", "practice-annotations.mjs"), "utf8");
+  assert.doesNotMatch(loader, /function frameSpans|createEditorialAnnotation/);
+  assert.match(loader, /payload_sha256/);
+  assert.ok(fs.existsSync(path.join(ROOT, "data", "pattern-annotation-integrity.json")));
 });
 
 test("the full learner-facing Practice curriculum is public while the annotation corpus stays bounded", () => {

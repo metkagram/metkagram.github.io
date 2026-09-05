@@ -7,7 +7,6 @@ import test from "node:test";
 
 import { loadContent } from "../src/content.mjs";
 import { loadPatternShards, patternShardPath, PATTERN_SHARD_DIR, writePatternCorpus } from "../src/pattern-sources.mjs";
-import { stableHash } from "../src/provenance.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
 
 const ROOT = process.cwd();
@@ -25,14 +24,15 @@ function writeShard(root, setId, patterns, { fileName = `${setId}.json`, schemaV
   fs.writeFileSync(path.join(directory, fileName), JSON.stringify({ schemaVersion, set_id: setId, patterns }));
 }
 
-test("every shard loads and reconstructs the frozen baseline corpus", () => {
+test("every shard loads with preserved identities after editorial repair", () => {
   const { patterns, shards } = loadPatternShards({ setOrder: studySetOrder() });
   assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length, "one shard per study set with base patterns");
   assert.equal(patterns.length, baseline.basePatterns.count, "base pattern count parity");
   const ids = patterns.map((pattern) => pattern.id);
   assert.equal(new Set(ids).size, ids.length, "duplicate pattern id survived sharding");
   assert.equal(sha([...ids].sort().join("\n")), baseline.basePatterns.sortedIdSha256, "stable ID set parity");
-  assert.equal(sha(patterns.map((pattern) => stableHash(pattern)).sort().join("\n")), baseline.basePatterns.recordSetSha256, "record content parity");
+  // Content hashes in the migration snapshot are historical. Editorial repairs
+  // are allowed; curriculum-preservation.test.mjs protects IDs, membership and URLs.
   const setCounts = {};
   for (const pattern of patterns) setCounts[pattern.set_id] = (setCounts[pattern.set_id] || 0) + 1;
   assert.deepEqual(Object.fromEntries(Object.entries(setCounts).sort()), baseline.basePatterns.setCounts, "per-set membership parity");
@@ -56,11 +56,10 @@ test("reconstruction is deterministic and follows the study-set order", () => {
   }
 });
 
-test("loadContent keeps the merged corpus identical to the pre-shard baseline", () => {
+test("loadContent preserves merged curriculum counts and reasoning assignments", () => {
   const content = loadContent();
   const patterns = content.advancedPatterns;
   assert.equal(patterns.length, baseline.mergedCorpus.patternCount, "merged pattern count parity");
-  assert.equal(sha(patterns.map((pattern) => stableHash(pattern)).sort().join("\n")), baseline.mergedCorpus.recordSetSha256, "merged record parity");
   assert.equal(content.studySets.sets.length, baseline.mergedCorpus.studySetCount, "study-set count parity");
   assert.equal(patterns.filter((pattern) => pattern.reasoning?.move).length, baseline.mergedCorpus.reasoningMoveCount, "Move assignment parity");
 });

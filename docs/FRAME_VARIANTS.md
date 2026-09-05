@@ -35,7 +35,7 @@ The first pilot covers three high-duplication families found by the corpus-wide 
 - ARG — `The case for [proposal] rests on the assumption that [claim].`;
 - PRO — `I am writing to clarify how [topic] affects the next steps.`.
 
-Each family currently contains eight established Pattern records and has separate English and German canonical Frames. The source manifest is `data/frame-families.json`.
+The initial eight-member groups have been extended to forty established Pattern records each, preserving all three family IDs. Each family has separate English and German canonical Frames. The source manifest is `data/frame-families.json`.
 
 The pilot was reviewed against the canonical source records and protected by exact normalized-Frame validation. It is explicitly marked `human_reviewed: false`: this is a source-verified structural pilot, not a claim of independent human linguistic review.
 
@@ -61,3 +61,16 @@ Pattern API records also expose their domain resolution. Existing Pattern-based 
 6. Handle standalone search indexability separately; Frame grouping itself never deletes content or changes stable URLs.
 
 This makes the model suitable for the next indexability stage without turning SEO cleanup into destructive corpus editing.
+
+## Editorial extension
+
+PRO now declares the exact singular/plural agreement alternatives in
+`languages.*.agreement_variants`. Validation permits only the explicit English
+`affects` → `affect` and German `beeinflusst` → `beeinflussen` changes with all
+other fixed syntax unchanged. Published canonical Frames expose these in
+`formula_variants`. This avoids rejecting corrected plural subjects or broadening
+the grouping rule to arbitrary similar sentences.
+
+The three set pages explain one frame and forty contextual variants. PRO also
+contains a five-step English workplace practice pilot; it is not promoted into
+the independently reviewed route collection. See `IMPROVEMENT_LOOP_2026-09.md`.

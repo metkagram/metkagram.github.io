@@ -296,7 +296,7 @@ function patchPatternPages(model) {
       let page = fs.readFileSync(file, "utf8");
       if (page.includes("data-canonical-frame-family")) continue;
       const ru = locale === "ru";
-      const formulas = canonicalFrames.map((frame) => `<li><strong>${escapeHtml(frame.language.toUpperCase())}</strong> · <code>${escapeHtml(frame.formula)}</code></li>`).join("");
+      const formulas = canonicalFrames.map((frame) => `<li><strong>${escapeHtml(frame.language.toUpperCase())}</strong> · ${(frame.formula_variants || [frame.formula]).map((formula) => `<code lang="${escapeHtml(frame.language)}">${escapeHtml(formula)}</code>`).join(" / ")}</li>`).join("");
       const siblingLinks = siblings.slice(0, 7).map((sibling) => `<a href="${patternPath(locale, sibling)}">${escapeHtml(sibling)}</a>`).join(" · ");
       const section = `<section class="section-pad ruled" data-canonical-frame-family="${escapeHtml(canonicalFrames[0]?.family_id || "")}">
         <p class="eyebrow">Canonical Frame · pilot</p>

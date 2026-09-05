@@ -1,8 +1,8 @@
 # Migration verification
 
-- Dataset version: **1.0.0+cec79e417c6f**
+- Dataset version: **1.0.0+7c4403f01051**
 - Generated routes: **7451**
-- API endpoints: **3962**
+- API endpoints: **3963**
 - Annotated documents: **72**
 - Annotated sentences: **969**
 - Advanced B2–C1 patterns: **3530**

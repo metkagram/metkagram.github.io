@@ -1,3 +1,4 @@
+import { workplacePractice, validateWorkplacePractice } from "../src/workplace-practice.mjs";
 // Build stage 2 — validate (see ARCHITECTURE.md "Build pipeline").
 //
 // Validates the canonical semantic state before any rendering happens:
@@ -6,6 +7,7 @@
 // the validate stage runs before any page exists (tests/build-stages.test.mjs
 // enforces the no-rendered-output rule).
 import fs from "node:fs";
+import { checkCurriculumPreservation } from "../src/corpus-audit.mjs";
 import path from "node:path";
 import { loadContent } from "../src/content.mjs";
 import { buildDomainModel } from "../src/domain-model.mjs";
@@ -53,6 +55,7 @@ function main() {
   let content;
   check("canonical content (data/, src/content.mjs)", () => {
     content = loadContent();
+    validateWorkplacePractice(workplacePractice, content.advancedPatterns);
   });
   const patternMap = new Map(content.advancedPatterns.map((pattern) => [pattern.id, pattern]));
 
@@ -161,6 +164,10 @@ function main() {
     }
   });
 
+  check("permanent curriculum preservation", () => {
+    const result = checkCurriculumPreservation(content, readSourceJson("data/seo-slugs.json"), readSourceJson("data/curriculum-preservation.json"));
+    if (!result.passed) throw new Error(JSON.stringify(result.errors));
+  });
   console.log(`Validate stage passed: ${passed} checks over canonical source data.`);
 }
 

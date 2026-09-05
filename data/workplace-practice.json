@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "explain-a-launch-delay",
+  "set_id": "PRO",
+  "target_language": "en",
+  "review_status": "editorial-pilot",
+  "independent_language_review": "pending",
+  "title_en": "Explain a launch delay in five sentences",
+  "title_ru": "Объясните задержку запуска в пяти фразах",
+  "scenario_en": "Your product is due to launch on Friday. Critical tests are unfinished. Moving the launch to Monday would allow two more days for testing, but the team has not confirmed whether that is enough. Prepare a short message to your manager.",
+  "scenario_ru": "Запуск продукта запланирован на пятницу. Критические тесты ещё не завершены. Перенос на понедельник даст два дополнительных дня на тестирование, но команда пока не подтвердила, хватит ли этого времени. Подготовьте короткое сообщение руководителю.",
+  "steps": [
+    {
+      "pattern_id": "C1PRO002",
+      "prompt_en": "Open the message by explaining what the delay affects. Then add one concrete consequence in your own words.",
+      "prompt_ru": "Начните письмо с пояснения, на что влияет задержка. Затем своими словами добавьте одно конкретное последствие.",
+      "example_en": "I am writing to clarify how a delayed product launch affects the next steps. We would need to update the customer announcement.",
+      "check_en": "Does the reader know what changes? A delayed launch takes affects; unfinished tests take affect.",
+      "check_ru": "Понятно ли читателю, что изменится? A delayed launch требует affects, а unfinished tests — affect.",
+      "title_en": "Explain the impact",
+      "title_ru": "Поясните влияние"
+    },
+    {
+      "pattern_id": "C1ARG002",
+      "prompt_en": "Make the case for delaying until Monday. Name the assumption on which this proposal depends.",
+      "prompt_ru": "Обоснуйте перенос на понедельник. Назовите предположение, от которого зависит это предложение.",
+      "example_en": "The case for delaying the product launch rests on the assumption that two more days will be enough to finish the critical tests.",
+      "check_en": "Did you state an assumption rather than present it as an established fact? What would you ask the test team to confirm?",
+      "check_ru": "Вы обозначили предположение, а не выдали его за установленный факт? Что нужно уточнить у команды тестирования?",
+      "title_en": "Name the assumption",
+      "title_ru": "Назовите предположение"
+    },
+    {
+      "pattern_id": "CLF046",
+      "prompt_en": "Name two goals that are in tension. Show the cost of the proposed delay.",
+      "prompt_ru": "Назовите две цели, между которыми приходится выбирать. Покажите цену предлагаемой задержки.",
+      "example_en": "There is a trade-off between keeping the announced launch date and allowing enough time for testing.",
+      "check_en": "Are both sides desirable goals? A trade-off describes a tension; it does not decide which goal should win.",
+      "check_ru": "Обе стороны — желательные цели? Trade-off обозначает противоречие, но ещё не определяет, какая цель важнее.",
+      "title_en": "Show the trade-off",
+      "title_ru": "Обозначьте компромисс"
+    },
+    {
+      "pattern_id": "CLF066",
+      "prompt_en": "Your manager says that Monday will definitely solve the problem. Challenge the assumption fairly.",
+      "prompt_ru": "Руководитель говорит, что перенос на понедельник точно решит проблему. Корректно поставьте под сомнение предположение.",
+      "example_en": "That assumes that two more days will be enough for testing, which may not hold.",
+      "check_en": "Did you question the assumption without claiming the proposal is certainly wrong? Add one useful question to resolve the uncertainty.",
+      "check_ru": "Вы поставили под сомнение предположение, не объявляя предложение заведомо неверным? Добавьте один вопрос, который поможет снять неопределённость.",
+      "title_en": "Check the assumption",
+      "title_ru": "Проверьте предположение"
+    },
+    {
+      "pattern_id": "CLF069",
+      "prompt_en": "Now imagine the test team has confirmed the extra time is enough and the manager has approved Monday. Report the decision and its actual reason.",
+      "prompt_ru": "Теперь представьте: команда подтвердила, что времени хватит, а руководитель согласовал понедельник. Сообщите принятое решение и его настоящее основание.",
+      "example_en": "Given the unfinished tests, we decided to delay the launch until Monday because the test team confirmed that two more days would be enough.",
+      "check_en": "Use we decided only after approval. Does the reason reflect the new information, rather than the earlier untested assumption?",
+      "check_ru": "Используйте we decided после согласования решения. Отражает ли причина новые данные, а не прежнее непроверенное предположение?",
+      "title_en": "Report the decision",
+      "title_ru": "Сообщите решение"
+    }
+  ],
+  "transfer_en": "Close the examples. A client has sent an incomplete brief, and your colleague wants to start work tomorrow. Write three sentences: identify the effect on the next steps, question one assumption, and ask for the missing information. Choose the frames yourself. Tomorrow, try again without looking.",
+  "transfer_ru": "Закройте примеры. Клиент прислал неполное техническое задание, а коллега хочет начать работу завтра. Напишите три фразы: укажите влияние на следующие шаги, проверьте одно предположение и запросите недостающие сведения. Выберите каркасы самостоятельно. Завтра попробуйте ещё раз без подсказок."
+}

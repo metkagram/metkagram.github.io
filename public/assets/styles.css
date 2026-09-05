@@ -1,3 +1,7 @@
+.workplace-practice-steps { list-style: none; padding: 0; }
+.workplace-practice-step { margin-block: 1.5rem; padding-block: 1rem; border-top: 1px solid currentColor; }
+.workplace-practice-step details { margin-block-start: 1rem; }
+.workplace-practice-step summary { cursor: pointer; }
 :root {
   --paper: #f7f7f3;
   --paper-deep: #ededE7;
@@ -1401,3 +1405,6 @@ body:not(.home-studio) .annotation-controls { background: #fffdf3; }
   .practice-secondary-path > summary::after { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
   .context-language-preference { justify-content: space-between; }
 }
+.frame-family-card { margin-block: 1.5rem; padding-block: 1rem; }
+.frame-family-card code { overflow-wrap: anywhere; white-space: normal; }
+.pattern-family-context { margin-block-start: 1rem; font-size: 1rem; }

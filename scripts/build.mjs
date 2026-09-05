@@ -1,6 +1,6 @@
+import { loadPatternAnnotations } from "../src/practice-annotations.mjs";
 import fs from "node:fs";
 import path from "node:path";
-import zlib from "node:zlib";
 import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, locales, targetMeta } from "../src/i18n.mjs";
 import {
@@ -36,7 +36,7 @@ import { ATTRIBUTION, getDatasetVersion } from "../src/provenance.mjs";
 import { corpusLanguages } from "../src/release.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { legacyPatternPath, legacyStudySetPath, patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
-import { ANNOTATION_SCHEMA_VERSION, cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
+import { ANNOTATION_SCHEMA_VERSION } from "../src/annotation-schema.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
 const ROOT = process.cwd();
@@ -99,27 +99,7 @@ function copyPublic() {
   fs.cpSync(PUBLIC, DIST, { recursive: true });
 }
 
-export function loadPatternAnnotations(content) {
-  const source = path.join(ROOT, "data", "pattern-annotations.json.gz");
-  if (!fs.existsSync(source)) throw new Error("Missing required public Practice annotation layer");
-  const payload = JSON.parse(zlib.gunzipSync(fs.readFileSync(source)).toString("utf8"));
-  if (payload.count !== Object.keys(payload.items || {}).length) throw new Error("Pattern annotation export count is invalid");
-  let expected = 0;
-  for (const pattern of content.advancedPatterns) for (const language of pattern.langs) {
-    const references = [{ key: "primary", text: language.example }, ...(language.examples || []).map((example, index) => ({ key: String(index + 1), text: example.text }))];
-    for (const reference of references) {
-      expected += 1;
-      const key = `${pattern.id}:${language.lang}:${reference.key}`;
-      const record = payload.items[key];
-      if (!record) throw new Error(`Missing Practice annotation ${key}`);
-      if (record.text !== cleanMarkedText(reference.text) || record.inline_text !== cleanMarkedText(reference.text)) throw new Error(`Practice annotation text mismatch for ${key}`);
-      const errors = validateAnnotation(record);
-      if (errors.length) throw new Error(`Invalid Practice annotation ${key}: ${errors.join(", ")}`);
-    }
-  }
-  if (payload.count !== expected) throw new Error(`Practice annotation export count mismatch: expected ${expected}, found ${payload.count}`);
-  return payload.items;
-}
+export { loadPatternAnnotations } from "../src/practice-annotations.mjs";
 
 function xmlEscape(value) {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");

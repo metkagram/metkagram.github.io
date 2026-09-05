@@ -32,7 +32,7 @@ test("published domain model separates Moves, stable Pattern Frames, canonical F
   assert.equal(manifest.counts.bridges, bridges.count);
   assert.equal(manifest.counts.canonicalFrameFamilies, 3);
   assert.equal(canonicalFrames.count, 6);
-  assert.equal(frameVariants.count, 48);
+  assert.equal(frameVariants.count, 240);
   assert.ok(moves.count > 0);
   assert.ok(frames.count > 0);
   assert.ok(bridges.count > 0);
