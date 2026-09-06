@@ -17,7 +17,9 @@ jobs:
   growth-profile:
     runs-on: ubuntu-latest
     env:
-      ARWP_TARGET: https://metkagram.github.io/
+      # `/` is an intentional noindex locale gateway whose canonical target is `/en/`.
+      # Growth eligibility must therefore be evaluated on the indexable canonical landing.
+      ARWP_TARGET: https://metkagram.github.io/en/
     steps:
       - name: Checkout ARWP
         uses: actions/checkout@v7
