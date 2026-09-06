@@ -2,6 +2,11 @@ name: ARWP Growth Profile
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'growth/**'
+      - '.github/workflows/arwp-growth.yml'
   schedule:
     - cron: '17 6 * * 1'
 
