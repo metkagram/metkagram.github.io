@@ -8,6 +8,7 @@ const SOURCE_LOCALES = path.join(SOURCE_AI, "llms");
 const SOURCE_GRAPH = path.join(ROOT, "knowledge", "graph.json");
 const TARGET_GRAPH = path.join(DIST, "knowledge", "graph.json");
 const ROOT_LLMS = path.join(DIST, "llms.txt");
+const AGENT_ROUTING_LOCALES = new Set(["en", "ru", "de", "fr"]);
 
 const DISCOVERY_LINKS = [
   '<link rel="describedby" type="application/json" href="/ai/site-profile.json" title="Agent-Ready Web Profile">',
@@ -80,9 +81,10 @@ function patchCanonicalLlms() {
 }
 
 function localeLlmsLink(html) {
-  const language = html.match(/<html lang="([^"]+)"/)?.[1] || "en";
-  const locale = language === "ru" ? "ru" : "en";
-  const href = locale === "ru" ? "/ru/llms.txt" : "/llms.txt";
+  const declaredLanguage = html.match(/<html lang="([^"]+)"/)?.[1]?.toLowerCase() || "en";
+  const language = declaredLanguage.split("-")[0];
+  const locale = AGENT_ROUTING_LOCALES.has(language) ? language : "en";
+  const href = locale === "en" ? "/llms.txt" : `/${locale}/llms.txt`;
   return `<link rel="describedby" type="text/plain" href="${href}" hreflang="${locale}" title="Metkagram agent routing">`;
 }
 
