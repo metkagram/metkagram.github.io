@@ -1,0 +1,51 @@
+name: ARWP Growth Profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  growth-profile:
+    runs-on: ubuntu-latest
+    env:
+      ARWP_TARGET: https://metkagram.github.io/
+    steps:
+      - name: Checkout ARWP
+        uses: actions/checkout@v7
+        with:
+          repository: dkharlanau/agent-ready-web-profile
+          ref: main
+          path: .arwp
+          persist-credentials: false
+
+      - name: Record evaluated ARWP revision
+        run: git -C .arwp rev-parse HEAD | tee arwp-growth-revision.txt
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: .arwp/package-lock.json
+
+      - name: Install ARWP dependencies
+        run: npm ci --prefix .arwp --ignore-scripts --no-audit --no-fund
+
+      - name: Build current Growth Profile
+        run: |
+          node .arwp/bin/arwp-growth.mjs "$ARWP_TARGET" --json > arwp-growth.json
+          node -e "const p=require('./arwp-growth.json'); console.log('ARWP Growth actions:', p.summary);"
+
+      - name: Upload Growth Profile
+        uses: actions/upload-artifact@v6
+        with:
+          name: arwp-growth-profile
+          path: |
+            arwp-growth.json
+            arwp-growth-revision.txt
+          if-no-files-found: error
+          retention-days: 30
