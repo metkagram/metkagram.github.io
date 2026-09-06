@@ -9,10 +9,12 @@ on:
       - 'data/**'
       - 'api/**'
       - 'remote-mcp/**'
+      - 'growth/**'
       - 'llms.txt'
       - 'scripts/apply-arwp.mjs'
       - 'scripts/stages/render.mjs'
       - '.github/workflows/arwp.yml'
+      - '.github/workflows/arwp-growth.yml'
   pull_request:
     paths:
       - 'ai/**'
@@ -20,10 +22,12 @@ on:
       - 'data/**'
       - 'api/**'
       - 'remote-mcp/**'
+      - 'growth/**'
       - 'llms.txt'
       - 'scripts/apply-arwp.mjs'
       - 'scripts/stages/render.mjs'
       - '.github/workflows/arwp.yml'
+      - '.github/workflows/arwp-growth.yml'
   workflow_dispatch:
 
 permissions:
@@ -37,6 +41,6 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Validate Agent-Ready Web Profile
-        uses: dkharlanau/agent-ready-web-profile@c1d51698e3765d0817ee14bcbc36c67297457260
+        uses: dkharlanau/agent-ready-web-profile@0d60109d0986d1f15fa30cce7bbdaec36ceb108f
         with:
           profile: ai/site-profile.json
