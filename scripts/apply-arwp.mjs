@@ -80,7 +80,7 @@ function patchCanonicalLlms() {
   fs.writeFileSync(ROOT_LLMS, text);
 }
 
-function localeLlmsLink(html) {
+export function localeLlmsLink(html) {
   const declaredLanguage = html.match(/<html lang="([^"]+)"/)?.[1]?.toLowerCase() || "en";
   const language = declaredLanguage.split("-")[0];
   const locale = AGENT_ROUTING_LOCALES.has(language) ? language : "en";
@@ -88,22 +88,26 @@ function localeLlmsLink(html) {
   return `<link rel="describedby" type="text/plain" href="${href}" hreflang="${locale}" title="Metkagram agent routing">`;
 }
 
-publishMachineSurfaces();
-patchCanonicalLlms();
+export function applyArwp() {
+  publishMachineSurfaces();
+  patchCanonicalLlms();
 
-let changed = 0;
-for (const file of htmlFiles(DIST)) {
-  let html = fs.readFileSync(file, "utf8");
-  if (!html.includes("</head>")) continue;
-  const desired = [...DISCOVERY_LINKS, localeLlmsLink(html)];
-  const missing = desired.filter((link) => {
-    const href = link.match(/href="([^"]+)"/)?.[1];
-    return href && !html.includes(`href="${href}"`);
-  });
-  if (!missing.length) continue;
-  html = html.replace("</head>", `${missing.join("\n")}\n</head>`);
-  fs.writeFileSync(file, html);
-  changed += 1;
+  let changed = 0;
+  for (const file of htmlFiles(DIST)) {
+    let html = fs.readFileSync(file, "utf8");
+    if (!html.includes("</head>")) continue;
+    const desired = [...DISCOVERY_LINKS, localeLlmsLink(html)];
+    const missing = desired.filter((link) => {
+      const href = link.match(/href="([^"]+)"/)?.[1];
+      return href && !html.includes(`href="${href}"`);
+    });
+    if (!missing.length) continue;
+    html = html.replace("</head>", `${missing.join("\n")}\n</head>`);
+    fs.writeFileSync(file, html);
+    changed += 1;
+  }
+
+  console.log(`Published ARWP profiles, localized routing and knowledge graph; advertised discovery from ${changed} HTML files.`);
 }
 
-console.log(`Published ARWP profiles, localized routing and knowledge graph; advertised discovery from ${changed} HTML files.`);
+if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) applyArwp();
