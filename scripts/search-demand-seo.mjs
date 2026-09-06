@@ -14,7 +14,7 @@ const DEMAND = {
   SPK: ["Spoken English Sentence Patterns for B2–C1", "Practise reusable spoken English sentence patterns for organising ideas naturally in conversation at B2–C1 level."],
   INT: ["English Conversation Patterns for Managing a Discussion", "Practise English conversation patterns for entering, holding, redirecting and closing a turn without losing the thread."],
   REG: ["Formal and Informal English: Register-Shifting Patterns", "Compare casual, neutral and professional English patterns for expressing the same communicative intent appropriately."],
-  RTR: ["Common English Mistakes for Russian Speakers: Pattern Traps", "Practise recurring English sentence patterns that Russian speakers often transfer literally, with contrasts and corrections."],
+  RTR: ["Common English Pattern Traps for Russian Speakers", "Practise recurring English sentence patterns that Russian speakers often transfer literally, with contrasts and corrections."],
   TRN: ["English Paraphrasing Patterns and Reformulation Practice", "Practise paraphrasing and reformulation by rebuilding the same meaning with different B2–C1 grammatical and discourse frames."],
   FRM: ["Problem-Framing Phrases in English for B2–C1", "Practise English phrases for defining, reframing and questioning a problem before proposing a solution."],
   UNC: ["English Phrases for Uncertainty, Evidence and Confidence", "Practise B2–C1 English patterns for separating evidence from assumptions, calibrating confidence and reasoning under uncertainty."],
