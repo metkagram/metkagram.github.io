@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
+import { localeLlmsLink } from "../scripts/apply-arwp.mjs";
 import { RENDER_STEPS } from "../scripts/stages/render.mjs";
 
 const ROOT = process.cwd();
@@ -66,6 +67,23 @@ test("locale manifest preserves real interface and learning capability boundarie
   assert.equal(routes.ru, "https://metkagram.github.io/ru/llms.txt");
   assert.equal(routes.de, "https://metkagram.github.io/de/llms.txt");
   assert.equal(routes.fr, "https://metkagram.github.io/fr/llms.txt");
+});
+
+test("HTML discovery uses the locale manifest routing contract", () => {
+  for (const item of locales.locales) {
+    const expectedPath = new URL(item.llms).pathname;
+    const link = localeLlmsLink(`<html lang="${item.language}"><head></head></html>`);
+    assert.ok(link.includes(`href="${expectedPath}"`), `${item.language} must advertise ${expectedPath}`);
+    assert.ok(link.includes(`hreflang="${item.language}"`), `${item.language} must preserve its routing language`);
+  }
+
+  const regionalGerman = localeLlmsLink('<html lang="de-DE"><head></head></html>');
+  assert.ok(regionalGerman.includes('href="/de/llms.txt"'));
+  assert.ok(regionalGerman.includes('hreflang="de"'));
+
+  const unsupported = localeLlmsLink('<html lang="it"><head></head></html>');
+  assert.ok(unsupported.includes('href="/llms.txt"'));
+  assert.ok(unsupported.includes('hreflang="en"'));
 });
 
 test("AI search profile is complete and intentionally avoids synthetic readiness claims", () => {
