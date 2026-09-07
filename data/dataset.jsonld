@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@id": "https://metkagram.github.io/data/dataset.jsonld#dataset",
+  "@type": "Dataset",
+  "name": "Metkagram Visual Language Patterns and Annotation Corpus",
+  "description": "A reusable language-learning and linguistic-pattern corpus containing annotated sentence patterns, contrast sets, choice drills, discovery topics, frame families and related evaluation resources used by Metkagram.",
+  "url": "https://metkagram.github.io/",
+  "identifier": "https://metkagram.github.io/data/dataset.jsonld#dataset",
+  "creator": {
+    "@type": "Person",
+    "name": "Dzmitryi Kharlanau",
+    "url": "https://github.com/dkharlanau"
+  },
+  "version": "1.0.0",
+  "datePublished": "2026-09-01",
+  "license": "https://metkagram.github.io/LICENSING.md",
+  "isAccessibleForFree": true,
+  "citation": "https://github.com/metkagram/metkagram.github.io/blob/main/CITATION.cff",
+  "keywords": [
+    "language learning",
+    "natural language processing",
+    "linguistic annotation",
+    "sentence patterns",
+    "English",
+    "German"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Pattern annotations",
+      "contentUrl": "https://metkagram.github.io/data/pattern-annotations.json.gz",
+      "encodingFormat": "application/gzip"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Contrast set",
+      "contentUrl": "https://metkagram.github.io/data/contrasts.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Choice drills",
+      "contentUrl": "https://metkagram.github.io/data/choice-drills.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Discovery topics",
+      "contentUrl": "https://metkagram.github.io/data/discovery-topics.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Frame families",
+      "contentUrl": "https://metkagram.github.io/data/frame-families.json",
+      "encodingFormat": "application/json"
+    }
+  ],
+  "subjectOf": [
+    "https://github.com/metkagram/metkagram.github.io/blob/main/ARCHITECTURE.md",
+    "https://github.com/metkagram/metkagram.github.io/blob/main/LICENSING.md"
+  ]
+}
