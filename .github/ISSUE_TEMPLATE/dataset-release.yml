@@ -1,0 +1,36 @@
+name: Dataset release / DOI
+about: Prepare a versioned Metkagram corpus release for external archival publication and DOI citation.
+title: "Dataset release: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for a deliberate public dataset release. DOI publication provides persistent citation/reproducibility; it is not a Search ranking signal.
+  - type: input
+    id: version
+    attributes:
+      label: Dataset version
+      description: Version of the frozen corpus release.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Release boundary
+      description: Exact public distributions to archive.
+    validations:
+      required: true
+  - type: checkboxes
+    id: readiness
+    attributes:
+      label: Publication readiness
+      options:
+        - label: Dataset metadata reviewed
+        - label: Methodology/provenance/limitations reviewed
+        - label: Licensing boundary reviewed
+        - label: Exact release files frozen
+        - label: SHA-256 checksums generated
+        - label: CITATION.cff reviewed
+        - label: External archive record created
+        - label: Issued DOI verified and written back to dataset metadata
