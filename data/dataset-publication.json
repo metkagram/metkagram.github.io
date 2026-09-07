@@ -1,0 +1,58 @@
+{
+  "version": "0.1",
+  "datasetId": "metkagram-visual-language-patterns-annotations",
+  "canonicalMetadata": "https://metkagram.github.io/data/dataset.jsonld",
+  "publicationState": "doi-not-issued",
+  "releaseVersion": "1.0.0",
+  "archive": {
+    "preferredProvider": "Zenodo",
+    "recordUrl": null
+  },
+  "persistentIdentifier": {
+    "type": "DOI",
+    "state": "not-issued",
+    "value": null,
+    "resolverUrl": null
+  },
+  "releaseBoundary": {
+    "include": [
+      "data/pattern-annotations.json.gz",
+      "data/contrasts.json",
+      "data/contrast-extensions.json",
+      "data/choice-drills.json",
+      "data/discovery-topics.json",
+      "data/frame-families.json"
+    ],
+    "reviewBeforeArchive": true,
+    "note": "Archive a deliberate public corpus release; evaluation or operational files should be included only when they are part of the documented dataset contract."
+  },
+  "citation": {
+    "cff": "https://github.com/metkagram/metkagram.github.io/blob/main/CITATION.cff",
+    "datasetTypeDeclared": true
+  },
+  "methodologyAndProvenance": [
+    "https://github.com/metkagram/metkagram.github.io/blob/main/ARCHITECTURE.md",
+    "https://github.com/metkagram/metkagram.github.io/blob/main/LICENSING.md"
+  ],
+  "license": "https://metkagram.github.io/LICENSING.md",
+  "integrity": {
+    "requiredAtRelease": true,
+    "algorithm": "SHA-256",
+    "state": "pending-release-freeze"
+  },
+  "activation": {
+    "externalOwnerActionRequired": true,
+    "steps": [
+      "Freeze the 1.0.0 public corpus release and compute SHA-256 checksums.",
+      "Publish the frozen release through Zenodo or another appropriate persistent archive.",
+      "Verify the archive record and issued DOI.",
+      "Update this file, data/dataset.jsonld and CITATION.cff with the issued DOI.",
+      "Use a new versioned archive release when cited corpus bytes materially change."
+    ]
+  },
+  "guardrails": [
+    "No DOI is claimed before an external archive issues one.",
+    "A DOI is a persistent citation/version identity signal, not a Search ranking guarantee.",
+    "Live mutable data and archived release identity must not be silently conflated."
+  ]
+}
