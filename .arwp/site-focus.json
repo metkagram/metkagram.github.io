@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dkharlanau/agent-ready-web-profile/main/schema/site-focus-profile-v0.3.schema.json",
+  "version": "0.3",
+  "canonicalUrl": "https://metkagram.github.io/",
+  "thesis": {
+    "primaryProblem": "Language learners often see many examples but still cannot notice the reusable structure, distinguish nearby choices or transfer a useful frame into a new sentence.",
+    "primaryAudience": "B2-C1 English and German learners, plus teachers and researchers evaluating structure-first language practice.",
+    "usefulOutcome": "Notice a reusable language frame, understand the communicative move, compare nearby alternatives, choose deliberately and transfer the structure into new language.",
+    "distinctEvidence": "Reviewed Frames, Moves, Contrasts, Choices, Routes and Bridges with stable identities, annotation provenance, bounded evaluation fixtures and explicit capability limits.",
+    "primaryAction": "Open Pattern Lens or Pattern Practice and work with one reusable structure."
+  },
+  "scope": {
+    "in": [
+      "visual sentence annotation for reusable language structure",
+      "Patterns and Frames for English and German learning",
+      "communicative Moves, Contrasts and deliberate Choice practice",
+      "Pattern Routes and reviewed cross-language Bridges",
+      "structure-first transfer from example to new sentence"
+    ],
+    "adjacent": [
+      "language-learning research and evaluation",
+      "teacher and agent integrations over canonical learning objects",
+      "bounded French Frame-only experimentation",
+      "public datasets and technical reference surfaces"
+    ],
+    "out": [
+      "general-purpose AI writing assistance",
+      "unrestricted translation",
+      "a complete grammar encyclopedia",
+      "an all-purpose conversational AI tutor",
+      "unsupported claims of language-learning efficacy",
+      "search ranking or AI citation guarantees"
+    ]
+  },
+  "problemLanes": [
+    {
+      "id": "notice",
+      "label": "Notice",
+      "job": "Make a reusable structure visible inside a real sentence instead of leaving it as an isolated grammar explanation.",
+      "audience": "A learner who understands individual words but misses the reusable frame or communicative move.",
+      "problem": "Examples are easy to read passively without noticing which part can be reused in a new situation.",
+      "desiredOutcome": "Recognize the Frame and Move that organize the sentence and connect them to a stable learning object.",
+      "primaryAction": "Inspect the sentence in Pattern Lens or open the relevant Pattern."
+    },
+    {
+      "id": "choose",
+      "label": "Choose",
+      "job": "Distinguish nearby reusable structures and decide which one fits the intended move.",
+      "audience": "A learner who knows several plausible patterns but is unsure which one sounds natural or communicates the intended stance.",
+      "problem": "Nearby patterns can look interchangeable when their practical discriminator is not made explicit.",
+      "desiredOutcome": "Compare alternatives, choose before feedback and understand the bounded reason for the choice.",
+      "primaryAction": "Use Pattern Contrasts or Pattern Choice."
+    },
+    {
+      "id": "transfer",
+      "label": "Transfer",
+      "job": "Reuse the learned structure in new language and connect it to a broader route or cross-language relation.",
+      "audience": "A learner who wants to move from recognition to productive reuse.",
+      "problem": "Recognition of an example does not guarantee that the structure can be retrieved and reused later.",
+      "desiredOutcome": "Reuse the Frame in a new sentence and place it in an ordered practice route or reviewed Bridge where available.",
+      "primaryAction": "Continue through Pattern Routes, Bridge or active practice."
+    }
+  ],
+  "homepage": {
+    "primaryLane": "notice",
+    "supportingLanes": ["choose", "transfer"],
+    "requiredSignals": ["problem", "audience", "outcome", "evidence", "action"]
+  },
+  "primaryNavigation": [
+    "/en/lens/",
+    "/en/patterns/",
+    "/en/practice/",
+    "/research/",
+    "/about/"
+  ],
+  "routeRules": [
+    { "match": { "path": "/" }, "role": "problem-commercial", "scope": "IN", "lane": "notice" },
+    { "match": { "pathPrefix": "/en/lens" }, "role": "problem-commercial", "scope": "IN", "lane": "notice" },
+    { "match": { "pathPrefix": "/en/patterns" }, "role": "problem-commercial", "scope": "IN", "lane": "notice" },
+    { "match": { "pathPrefix": "/en/practice" }, "role": "problem-commercial", "scope": "IN", "lane": "transfer" },
+    { "match": { "pathPrefix": "/en/contrasts" }, "role": "problem-commercial", "scope": "IN", "lane": "choose" },
+    { "match": { "pathPrefix": "/en/choice" }, "role": "problem-commercial", "scope": "IN", "lane": "choose" },
+    { "match": { "pathPrefix": "/en/routes" }, "role": "problem-commercial", "scope": "IN", "lane": "transfer" },
+    { "match": { "pathPrefix": "/en/bridge" }, "role": "problem-commercial", "scope": "IN", "lane": "transfer" },
+    { "match": { "pathPrefix": "/ru" }, "role": "localization-equivalent", "scope": "IN", "lane": "notice" },
+    { "match": { "pathPrefix": "/research" }, "role": "proof-portfolio", "scope": "ADJACENT", "lane": "transfer" },
+    { "match": { "pathPrefix": "/data" }, "role": "technical-reference", "scope": "ADJACENT", "lane": "notice" },
+    { "match": { "pathPrefix": "/api" }, "role": "technical-reference", "scope": "ADJACENT", "lane": "notice" },
+    { "match": { "pathPrefix": "/docs" }, "role": "technical-reference", "scope": "ADJACENT", "lane": "notice" },
+    { "match": { "pathPrefix": "/about" }, "role": "trust-utility", "scope": "ADJACENT", "lane": "notice" }
+  ],
+  "experience": {
+    "visualPrinciples": [
+      "Make sentence structure visibly inspectable rather than presenting long prose about grammar.",
+      "Use Marks, Frames and Moves as a coherent visual language across learning surfaces.",
+      "Keep the learner's next practice choice obvious while research and technical detail remain progressively disclosed.",
+      "Preserve strong contrast between nearby language choices without implying that one form is universally correct."
+    ],
+    "navigation": {
+      "maxPrimaryItems": 5,
+      "consistentAcrossPages": true
+    },
+    "performance": {
+      "lcpMsP75Max": 2500,
+      "inpMsP75Max": 200,
+      "clsP75Max": 0.1
+    }
+  },
+  "locales": {
+    "default": "en",
+    "prefixes": {
+      "ru": "/ru"
+    }
+  },
+  "notes": [
+    "Interface locale, learning language, translation locale and annotation capability remain separate concepts; the Site Focus locale map only describes interface route equivalence.",
+    "French remains a bounded Frame-only pilot and must not silently acquire annotation, Bridge or efficacy claims.",
+    "Research and evaluation artifacts are supporting proof, not a second general-purpose product territory."
+  ]
+}
