@@ -28,17 +28,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Metkagram
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Checkout Cite Goose / ARWP v0.3 baseline
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: dkharlanau/agent-ready-web-profile
           ref: 8f1847e9ef7154f69a781071414f88be5b7eddd9
           path: .tools/arwp
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '24'
           cache: npm
