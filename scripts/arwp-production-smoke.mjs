@@ -13,6 +13,10 @@ const ROUTES = [
   "/knowledge/graph.json",
 ];
 
+const SEARCH_INDEX_URL = "https://metkagram.github.io/api/v1/search-index.json";
+const DISCOVERY_INDEX_URL = "https://metkagram.github.io/api/v1/discovery.json";
+const LOCAL_MCP_SOURCE = "https://github.com/metkagram/metkagram.github.io/blob/main/public/connectors/metkagram-mcp.mjs";
+
 function argValue(name) {
   const index = process.argv.indexOf(name);
   return index >= 0 ? process.argv[index + 1] : null;
@@ -64,7 +68,14 @@ function validate(snapshot) {
     if (profile.id !== "metkagram-language-knowledge") addFailure(failures, "/ai/site-profile.json", "unexpected profile id");
     if (profile.extensions?.["io.github.dkharlanau/localized-llms"]?.manifest !== "https://metkagram.github.io/ai/locales.json") addFailure(failures, "/ai/site-profile.json", "localized-llms extension missing");
     if (profile.extensions?.["io.github.dkharlanau/ai-search-profile"]?.knowledgeGraph !== "https://metkagram.github.io/knowledge/graph.json") addFailure(failures, "/ai/site-profile.json", "AI search knowledge graph link missing");
-    if (profile.mcp?.servers?.[0]?.readOnly !== true || profile.mcp?.servers?.[0]?.transport !== "stdio") addFailure(failures, "/ai/site-profile.json", "local read-only MCP boundary drift");
+    if (profile.extensions?.["io.github.dkharlanau/ai-search-profile"]?.discoveryIndex !== DISCOVERY_INDEX_URL) addFailure(failures, "/ai/site-profile.json", "capability discovery index drift");
+
+    if (profile.retrieval?.search !== SEARCH_INDEX_URL) addFailure(failures, "/ai/site-profile.json", "retrieval.search must select the canonical retrieval index");
+    if (!(profile.retrieval?.indexes || []).some((item) => item?.url === SEARCH_INDEX_URL)) addFailure(failures, "/ai/site-profile.json", "canonical retrieval index is missing from retrieval.indexes");
+
+    const localMcp = profile.mcp?.servers?.[0];
+    if (localMcp?.readOnly !== true || localMcp?.transport !== "stdio") addFailure(failures, "/ai/site-profile.json", "local read-only MCP boundary drift");
+    if (localMcp?.source !== LOCAL_MCP_SOURCE) addFailure(failures, "/ai/site-profile.json", "local MCP source path drift");
   }
 
   const locales = snapshot["/ai/locales.json"]?.json;
