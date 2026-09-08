@@ -28,11 +28,11 @@ jobs:
       - name: Checkout Metkagram
         uses: actions/checkout@v4
 
-      - name: Checkout Cite Goose / ARWP
+      - name: Checkout Cite Goose / ARWP v0.3 baseline
         uses: actions/checkout@v4
         with:
           repository: dkharlanau/agent-ready-web-profile
-          ref: main
+          ref: 8f1847e9ef7154f69a781071414f88be5b7eddd9
           path: .tools/arwp
 
       - name: Set up Node
