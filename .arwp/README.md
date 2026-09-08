@@ -1,30 +1,29 @@
-# Agent-Ready Web Profile adoption
+# Cite Goose / ARWP adoption
 
-Start with the repository's governing instructions and `.arwp/adoption.json`. This is a publisher-authored adoption contract, not a ranking certification.
+This directory contains publisher-authored ARWP contracts for Metkagram. They describe product intent and adoption state; they are not ranking, citation, fluency or learning-efficacy certification.
 
-Audience: Language learners inspecting grammar patterns and practice. Useful action: Try one pattern-based practice and inspect its explanation.
+## Current contracts
 
-## Sources and publication
+- `adoption.json` — retained discoverability/adoption experiment contract.
+- `site-focus.json` — Cite Goose Site Focus v0.3 problem, scope, navigation and experience contract.
+- `../ai/site-profile.json` — machine/agent service map for real published interfaces.
 
-- Canonical publication: https://metkagram.github.io/
-- Profile source: `ai/site-profile.json`; public location: `ai/site-profile.json` under the canonical site base.
-- Authoritative site source: `src + data + ai`.
-- Published directory: `dist`.
-- Build evidence: `package.json; .github/workflows/deploy-pages.yml`.
-- Product claims are bounded by `README.md`; CLI or source availability does not imply a hosted agent endpoint.
+The Site Focus contract keeps Metkagram centered on one product thesis: make reusable language structure visible, comparable and transferable. Research, datasets and integrations support that learner journey rather than becoming separate homepage products.
 
-## Editorial experiment
+## Product boundary
 
-Compare two explanations of the same grammar pattern with a worked example and a counterexample; preserve local-only learning telemetry.
+IN: visual sentence structure, Patterns/Frames, communicative Moves, Contrasts, Choice, Routes, reviewed Bridges and transfer practice.
 
-Reuse the existing intent owner before adding a page. Put the direct answer, concrete example, sources and strongest limitation in visible HTML. Keep comparison criteria symmetric; state where another approach is a better fit. Label synthetic fixtures and first-party interpretations.
+ADJACENT: research/evaluation, teacher and agent integrations, public technical surfaces and the bounded French pilot.
 
-The tactic IDs in the adoption contract resolve against [the ARWP corpus](https://github.com/dkharlanau/agent-ready-web-profile/blob/main/knowledge/discoverability-corpus.json). New tactics require evidence and a measurable product consequence.
+OUT: general writing assistance, unrestricted translation, a complete grammar encyclopedia, an all-purpose AI tutor, unsupported efficacy claims and Search/AI guarantees.
 
-## Validation and baseline
+## Validation
 
-Validate the profile against [the ARWP v0.1 schema](https://github.com/dkharlanau/agent-ready-web-profile/blob/main/schema/site-profile.schema.json). Use this repository's existing build and profile publication mechanism; `public/` assets are served directly by Next.js, and root static assets must survive the site generator.
+The Cite Goose Site Focus workflow validates the v0.3 declaration and compares it with the public site using a bounded Site Focus run. The report is retained as a workflow artifact for review.
 
-Check the exact emitted JSON and HTML before release. After an authorized release, verify the canonical live URL, HTTP status, profile link and response body. Record crawl eligibility, index status, search clicks/impressions, useful-action completion and independent AI citation separately. Missing observations remain unavailable; no score is a ranking promise.
+A drift result is not permission to remove content automatically. Check whether the route is a legitimate learner, proof, trust, localization or technical-reference surface before changing the product boundary.
 
-This application is local only. Existing unrelated changes, product telemetry constraints and publication approvals remain in force.
+## Evidence rule
+
+Implementation proof remains separate from language-learning outcomes. A passing focus audit does not demonstrate fluency gains, retention gains, ranking, indexing or AI citation. Research hypotheses and product claims stay separate.
