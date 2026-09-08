@@ -2,6 +2,8 @@
 
 This directory contains publisher-authored ARWP contracts for Metkagram. They describe product intent and adoption state; they are not ranking, citation, fluency or learning-efficacy certification.
 
+Contract revision: 2026-09-08.
+
 ## Current contracts
 
 - `adoption.json` — retained discoverability/adoption experiment contract.
