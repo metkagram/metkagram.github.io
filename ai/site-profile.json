@@ -70,14 +70,14 @@
         "description": "Generated retrieval index covering public patterns, sets, categories and documents."
       }
     ],
-    "search": "https://metkagram.github.io/api/v1/discovery.json"
+    "search": "https://metkagram.github.io/api/v1/search-index.json"
   },
   "mcp": {
     "servers": [
       {
         "name": "metkagram-local-readonly-bridge",
         "transport": "stdio",
-        "source": "https://github.com/metkagram/metkagram.github.io/blob/main/connectors/metkagram-mcp.mjs",
+        "source": "https://github.com/metkagram/metkagram.github.io/blob/main/public/connectors/metkagram-mcp.mjs",
         "documentation": "https://metkagram.github.io/en/mcp/",
         "readOnly": true
       }
