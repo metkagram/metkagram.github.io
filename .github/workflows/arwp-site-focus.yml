@@ -1,0 +1,63 @@
+name: Cite Goose Site Focus
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.arwp/site-focus.json'
+      - '.arwp/README.md'
+      - 'src/**'
+      - 'data/**'
+      - 'docs/**'
+  push:
+    branches: [main]
+    paths:
+      - '.arwp/site-focus.json'
+      - '.arwp/README.md'
+      - 'src/**'
+      - 'data/**'
+      - 'docs/**'
+
+permissions:
+  contents: read
+
+jobs:
+  focus:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Metkagram
+        uses: actions/checkout@v4
+
+      - name: Checkout Cite Goose / ARWP
+        uses: actions/checkout@v4
+        with:
+          repository: dkharlanau/agent-ready-web-profile
+          ref: main
+          path: .tools/arwp
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: .tools/arwp/package-lock.json
+
+      - name: Install ARWP runtime
+        working-directory: .tools/arwp
+        run: npm ci --ignore-scripts
+
+      - name: Compare declared focus with the public site
+        run: >-
+          node .tools/arwp/bin/arwp-focus.mjs
+          https://metkagram.github.io/
+          --focus-profile=.arwp/site-focus.json
+          --max-pages=30
+          --output="$RUNNER_TEMP/site-focus-report.json"
+
+      - name: Upload focus evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: metkagram-site-focus-report
+          path: ${{ runner.temp }}/site-focus-report.json
+          if-no-files-found: error
+          retention-days: 30
