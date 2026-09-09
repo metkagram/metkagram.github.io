@@ -8,6 +8,8 @@ The project connects visual sentence annotation with a large learner-facing libr
 
 Production: https://metkagram.github.io
 
+For repository work from ChatGPT or another coding agent, start with [AGENTS.md](AGENTS.md).
+
 Canonical project documents:
 
 - [Product direction](docs/PRODUCT_DIRECTION.md)
