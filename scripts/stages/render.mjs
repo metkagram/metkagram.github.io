@@ -29,8 +29,10 @@
 //   multilingual model and must run after multilingual-domain-model;
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
-// - seo-graph-normalize is the render finalize pass and must stay last so it cannot
-//   re-add noindex routes;
+// - seo-graph-normalize remains the final broad SEO graph pass so it cannot re-add
+//   noindex routes;
+// - search-release-root then replaces the former noindex client-redirect root with
+//   the canonical hostname identity/language gateway and ensures the root is in the sitemap;
 // - consent analytics decorates the completed HTML surface;
 // - ARWP publication runs after every HTML-producing pass so audit sees the exact
 //   machine discovery surface that will be deployed.
@@ -75,6 +77,7 @@ export const RENDER_STEPS = [
   "scripts/canonical-frame-variants.mjs",
   "scripts/pattern-indexability.mjs",
   "scripts/seo-graph-normalize.mjs",
+  "scripts/search-release-root.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/apply-arwp.mjs",
 ];
