@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { SITE_URL } from "../src/site.mjs";
+import { ATTRIBUTION } from "../src/provenance.mjs";
+import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 
 const root = path.resolve("dist");
 const indexFile = path.join(root, "index.html");
@@ -56,6 +57,7 @@ const webpage = {
     width: 1200,
     height: 630,
   },
+  dateModified: SITE_RELEASE_DATE,
 };
 
 const html = `<!doctype html>
@@ -67,10 +69,12 @@ const html = `<!doctype html>
   <meta name="description" content="${description}">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="application-name" content="Metkagram">
+  <meta name="metkagram-rights" content="${ATTRIBUTION.rights_status}">
   <link rel="canonical" href="${SITE_URL}/">
   <link rel="alternate" hreflang="en" href="${SITE_URL}/en/">
   <link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">
   <link rel="alternate" hreflang="x-default" href="${SITE_URL}/">
+  <link rel="manifest" href="/assets/web/site.webmanifest">
   <link rel="icon" href="/assets/icons/metkagram-icon-512x512.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="/assets/icons/metkagram-icon-512x512.png">
   <meta property="og:type" content="website">
@@ -124,7 +128,7 @@ fs.writeFileSync(indexFile, html);
 
 let sitemap = fs.readFileSync(sitemapFile, "utf8");
 if (!sitemap.includes(`<loc>${SITE_URL}/</loc>`)) {
-  sitemap = sitemap.replace("</urlset>", `  <url><loc>${SITE_URL}/</loc></url>\n</urlset>`);
+  sitemap = sitemap.replace("</urlset>", `  <url><loc>${SITE_URL}/</loc><lastmod>${SITE_RELEASE_DATE}</lastmod></url>\n</urlset>`);
   fs.writeFileSync(sitemapFile, sitemap);
 }
 
@@ -135,8 +139,11 @@ for (const required of [
   `<meta property="og:locale" content="en_US">`,
   `<meta property="og:image:type" content="image/png">`,
   `<meta name="twitter:image:alt"`,
+  `<meta name="metkagram-rights" content="${ATTRIBUTION.rights_status}">`,
+  `<link rel="manifest" href="/assets/web/site.webmanifest">`,
   `"@type":"WebSite"`,
   `"@id":"${SITE_URL}/#webpage"`,
+  `"dateModified":"${SITE_RELEASE_DATE}"`,
   `"name":"Metkagram"`,
   `href="/en/"`,
   `href="/ru/"`,
