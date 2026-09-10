@@ -6,9 +6,11 @@ import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 const root = path.resolve("dist");
 const indexFile = path.join(root, "index.html");
 const sitemapFile = path.join(root, "sitemap.xml");
+const seoInventoryFile = path.join(root, "seo", "site-pages.json");
 
 if (!fs.existsSync(indexFile)) throw new Error("dist/index.html is missing; run the base render first");
 if (!fs.existsSync(sitemapFile)) throw new Error("dist/sitemap.xml is missing; run the base render first");
+if (!fs.existsSync(seoInventoryFile)) throw new Error("dist/seo/site-pages.json is missing; run the base render first");
 
 const title = "Metkagram: Language Patterns and Annotated Examples";
 const description = "Explore annotated English and German phrases, reusable B2–C1 language patterns, contrasts and practice resources from Metkagram.";
@@ -132,6 +134,22 @@ if (!sitemap.includes(`<loc>${SITE_URL}/</loc>`)) {
   fs.writeFileSync(sitemapFile, sitemap);
 }
 
+const inventory = JSON.parse(fs.readFileSync(seoInventoryFile, "utf8"));
+const rootRecord = {
+  route: "/",
+  canonical: `${SITE_URL}/`,
+  language: "en",
+  title,
+  description,
+  lastModified: SITE_RELEASE_DATE,
+};
+const pages = (inventory.pages || []).filter((page) => page.route !== "/");
+pages.push(rootRecord);
+pages.sort((a, b) => a.route.localeCompare(b.route));
+inventory.pages = pages;
+inventory.pageCount = pages.length;
+fs.writeFileSync(seoInventoryFile, `${JSON.stringify(inventory, null, 2)}\n`);
+
 const output = fs.readFileSync(indexFile, "utf8");
 for (const required of [
   `<link rel="canonical" href="${SITE_URL}/">`,
@@ -154,5 +172,9 @@ if (/http-equiv="refresh"|location\.replace\s*\(/i.test(output)) {
   throw new Error("Metkagram root must remain a crawlable language gateway, not a client-side redirect");
 }
 if (!sitemap.includes(`<loc>${SITE_URL}/</loc>`)) throw new Error("Canonical hostname root is missing from sitemap.xml");
+const checkedInventory = JSON.parse(fs.readFileSync(seoInventoryFile, "utf8"));
+if (!checkedInventory.pages.some((page) => page.route === "/" && page.canonical === `${SITE_URL}/`)) {
+  throw new Error("Canonical hostname root is missing from seo/site-pages.json");
+}
 
-console.log("Metkagram search-release root: canonical hostname identity published and sitemap root ensured.");
+console.log("Metkagram search-release root: canonical hostname identity published; sitemap and SEO inventory aligned.");
