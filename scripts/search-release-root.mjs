@@ -40,6 +40,24 @@ const organization = {
   },
 };
 
+const webpage = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_URL}/#webpage`,
+  name: title,
+  description,
+  url: `${SITE_URL}/`,
+  inLanguage: "en",
+  isPartOf: { "@id": `${SITE_URL}/#website` },
+  publisher: { "@id": `${SITE_URL}/#organization` },
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: socialImage,
+    width: 1200,
+    height: 630,
+  },
+};
+
 const html = `<!doctype html>
 <html lang="en">
 <head>
@@ -56,11 +74,13 @@ const html = `<!doctype html>
   <link rel="icon" href="/assets/icons/metkagram-icon-512x512.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="/assets/icons/metkagram-icon-512x512.png">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Metkagram">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:url" content="${SITE_URL}/">
   <meta property="og:image" content="${socialImage}">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Metkagram — annotated language patterns for English and German">
@@ -68,8 +88,10 @@ const html = `<!doctype html>
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${description}">
   <meta name="twitter:image" content="${socialImage}">
+  <meta name="twitter:image:alt" content="Metkagram — annotated language patterns for English and German">
   <script type="application/ld+json">${JSON.stringify(website).replaceAll("<", "\\u003c")}</script>
   <script type="application/ld+json">${JSON.stringify(organization).replaceAll("<", "\\u003c")}</script>
+  <script type="application/ld+json">${JSON.stringify(webpage).replaceAll("<", "\\u003c")}</script>
   <style>
     :root{color-scheme:light;--ink:#171717;--paper:#f6f0e5;--accent:#ff4f00;--line:#171717}
     *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -110,7 +132,11 @@ const output = fs.readFileSync(indexFile, "utf8");
 for (const required of [
   `<link rel="canonical" href="${SITE_URL}/">`,
   `<meta property="og:site_name" content="Metkagram">`,
+  `<meta property="og:locale" content="en_US">`,
+  `<meta property="og:image:type" content="image/png">`,
+  `<meta name="twitter:image:alt"`,
   `"@type":"WebSite"`,
+  `"@id":"${SITE_URL}/#webpage"`,
   `"name":"Metkagram"`,
   `href="/en/"`,
   `href="/ru/"`,
