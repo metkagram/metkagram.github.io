@@ -45,18 +45,21 @@ function langComplete(pattern) {
   return pattern.langs.every((lang) => lang.formula && lang.example && lang.translation && lang.examples.length >= 2);
 }
 
-test("GitHub Pages artifact has root files and localized HTML", () => {
+test("GitHub Pages artifact has a canonical hostname root and localized HTML", () => {
   for (const file of ["index.html", ".nojekyll", "404.html", "sitemap.xml", "robots.txt", "llms.txt", "data/catalog.json", "data/quality-report.json", "data/reasoning-frames/index.json", "seo/site-pages.json", "api/v1/teaching-manifest.json"]) {
     assert.ok(fs.existsSync(path.join(DIST, file)), `${file} must exist`);
   }
   const en = fs.readFileSync(path.join(DIST, "en/index.html"), "utf8");
   const ru = fs.readFileSync(path.join(DIST, "ru/index.html"), "utf8");
   const root = fs.readFileSync(path.join(DIST, "index.html"), "utf8");
-  assert.match(root, /location\.replace\("\/" \+ preferredLocale \+ "\/"\)/);
-  assert.match(root, /<meta http-equiv="refresh" content="0;url=\/en\/">/);
-  assert.match(root, /<meta name="robots" content="noindex,follow">/);
-  assert.match(root, /<link rel="canonical" href="https:\/\/metkagram\.github\.io\/en\/">/);
-  assert.doesNotMatch(root, /gateway-body|Language lives/);
+  assert.match(root, /<meta name="robots" content="index,follow/);
+  assert.match(root, /<link rel="canonical" href="https:\/\/metkagram\.github\.io\/">/);
+  assert.match(root, /<meta property="og:site_name" content="Metkagram">/);
+  assert.match(root, /"@type":"WebSite"/);
+  assert.match(root, /href="\/en\/"/);
+  assert.match(root, /href="\/ru\/"/);
+  assert.doesNotMatch(root, /location\.replace\(/);
+  assert.doesNotMatch(root, /<meta http-equiv="refresh"/);
   assert.match(en, /<html lang="en">/);
   assert.match(en, /<span>Learn<\/span><span>a language<\/span><span>through<\/span><mark>patterns\.<\/mark>/);
   assert.match(en, /ANNOTATION STUDIO/);
@@ -273,6 +276,7 @@ test("canonical, hreflang and sitemap use the production Pages origin", () => {
   assert.ok(sitemap.includes(patternUrl("en", "CLF041")));
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/research\//);
   assert.match(sitemap, /https:\/\/metkagram\.github\.io\/en\/lens\//);
+  assert.match(sitemap, /<loc>https:\/\/metkagram\.github\.io\/<\/loc>/);
   assert.ok(sitemap.includes(`<lastmod>${SITE_RELEASE_DATE}</lastmod>`));
 });
 
@@ -297,7 +301,6 @@ test("archived mobile app route points learners to the web product without activ
   assert.doesNotMatch(apps, /https:\/\/apps\.apple\.com\/us\/app/);
   assert.doesNotMatch(apps, /"MobileApplication"/);
   assert.doesNotMatch(apps, /"SoftwareApplication"/);
-  // The archived page is noindex, so it must stay out of the sitemap.
   assert.match(apps, /<meta name="robots" content="noindex,follow">/);
   assert.doesNotMatch(sitemap, /https:\/\/metkagram\.github\.io\/en\/apps\//);
   assert.match(privacy, /<h1>Privacy Policy<\/h1>/);
@@ -311,6 +314,7 @@ test("every generated page carries the current brand and discoverability metadat
   for (const file of files) {
     const html = fs.readFileSync(file, "utf8");
     if (html.includes('http-equiv="refresh"')) continue;
+    const isRoot = path.relative(DIST, file) === "index.html";
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);
     assert.match(html, /<meta name="description" content="[^"]+">/, `${file} needs a description`);
     assert.match(html, /<meta name="robots" content="(?:index,follow|max-image-preview|noindex,follow)/, `${file} needs crawl directives`);
@@ -321,8 +325,14 @@ test("every generated page carries the current brand and discoverability metadat
     assert.match(html, /og:image:width" content="1200"/, `${file} needs social image dimensions`);
     assert.match(html, /rel="manifest" href="\/assets\/web\/site\.webmanifest"/, `${file} needs the web manifest`);
     assert.match(html, /"@id":"https:\/\/metkagram\.github\.io\/[^"]*#webpage"/, `${file} needs page-level structured data`);
-    assert.match(html, /data-share-bar/, `${file} needs page sharing controls`);
-    assert.match(html, /data-print-page/, `${file} needs a print control`);
+    if (isRoot) {
+      assert.match(html, /property="og:site_name" content="Metkagram"/, `${file} needs hostname site identity`);
+      assert.match(html, /href="\/en\/"/, `${file} needs a crawlable English route`);
+      assert.match(html, /href="\/ru\/"/, `${file} needs a crawlable Russian route`);
+    } else {
+      assert.match(html, /data-share-bar/, `${file} needs page sharing controls`);
+      assert.match(html, /data-print-page/, `${file} needs a print control`);
+    }
     assert.ok(html.includes(`"dateModified":"${SITE_RELEASE_DATE}"`), `${file} needs a verified modification date`);
     assert.doesNotMatch(html, /assets\/social-preview\.png/, `${file} must not use the legacy social preview`);
     const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");
