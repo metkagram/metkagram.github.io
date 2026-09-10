@@ -110,10 +110,14 @@ export function validateProductionSnapshot(snapshot, expected = buildProductionC
     if (record.status !== 200) addFailure(failures, route, `expected HTTP 200, got ${record.status}`, record.status);
   }
 
-  requireText(failures, snapshot, routes.root, '<meta name="robots" content="noindex,follow">', "root noindex gateway");
-  requireText(failures, snapshot, routes.root, '<meta http-equiv="refresh" content="0;url=/en/">', "root English fallback");
-  requireText(failures, snapshot, routes.root, rightsMarkup(expected.release.rights.status), "canonical rights meta");
-  requireText(failures, snapshot, routes.root, canonicalMarkup(`${SITE_URL}/en/`), "root canonical");
+  requirePublishedHtml(failures, snapshot, routes.root, expected, { canonical: `${SITE_URL}/` });
+  requireText(failures, snapshot, routes.root, '<meta name="robots" content="index,follow', "indexable root search surface");
+  requireText(failures, snapshot, routes.root, '<meta property="og:site_name" content="Metkagram">', "root Metkagram site name");
+  requireText(failures, snapshot, routes.root, `\"@id\":\"${SITE_URL}/#website\"`, "root WebSite identity");
+  requireText(failures, snapshot, routes.root, 'href="/en/"', "root English language link");
+  requireText(failures, snapshot, routes.root, 'href="/ru/"', "root Russian language link");
+  forbidText(failures, snapshot, routes.root, 'http-equiv="refresh"', "root meta refresh");
+  forbidText(failures, snapshot, routes.root, 'location.replace(', "root client redirect");
 
   for (const route of [
     routes.homeEn,
@@ -148,8 +152,6 @@ export function validateProductionSnapshot(snapshot, expected = buildProductionC
   requireText(failures, snapshot, routes.aiEn, expected.datasetVersion, "current dataset version");
   requireText(failures, snapshot, routes.aiEn, "/api/v1/attribution.json", "machine-readable attribution link");
 
-  // Licensing may legitimately mention CC BY-NC only as history; current rights must
-  // be explicit independently of that historical note.
   requireText(failures, snapshot, routes.licensingEn, rightsMarkup(expected.release.rights.status), "current licensing rights meta");
   requireText(failures, snapshot, routes.licensingEn, "Publicly inspectable", "current licensing model");
   requireText(failures, snapshot, routes.licensingEn, "all-rights-reserved", "current default rights");
@@ -202,6 +204,7 @@ export function validateProductionSnapshot(snapshot, expected = buildProductionC
   requireText(failures, snapshot, routes.llms, `Academic: ${expected.citation.academic}`, "canonical academic citation");
   forbidText(failures, snapshot, routes.llms, expected.release.rights.historicalLicense.license, "historical license as current agent guidance");
 
+  requireText(failures, snapshot, routes.sitemap, `${SITE_URL}/`, "canonical hostname root in sitemap");
   requireText(failures, snapshot, routes.sitemap, `${SITE_URL}${routes.homeEn}`, "English homepage in sitemap");
   requireText(failures, snapshot, routes.sitemap, `${SITE_URL}${routes.lensEn}`, "Pattern Lens in sitemap");
   requireText(failures, snapshot, routes.sitemap, `${SITE_URL}${routes.samplePatternEn}`, "sample canonical Pattern in sitemap");
