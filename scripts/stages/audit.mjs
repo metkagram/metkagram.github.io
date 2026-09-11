@@ -11,6 +11,8 @@ export const AUDIT_STEPS = [
   "scripts/release-contracts.mjs",
   // Internal links and obsolete-route references.
   "scripts/check-links.mjs",
+  // Contextual continuation and existing-share-bar distribution contract.
+  "scripts/check-internal-discovery-distribution.mjs",
   // Sitemap/canonical/JSON-LD graph integrity.
   "scripts/seo-graph-audit.mjs",
 ];
