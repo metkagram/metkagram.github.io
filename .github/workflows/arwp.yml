@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'ai/**'
+      - '.arwp/**'
       - 'knowledge/**'
       - 'data/**'
       - 'api/**'
@@ -12,12 +13,16 @@ on:
       - 'growth/**'
       - 'llms.txt'
       - 'scripts/apply-arwp.mjs'
+      - 'scripts/apply-internal-discovery-distribution.mjs'
+      - 'scripts/check-internal-discovery-distribution.mjs'
       - 'scripts/stages/render.mjs'
+      - 'scripts/stages/audit.mjs'
       - '.github/workflows/arwp.yml'
       - '.github/workflows/arwp-growth.yml'
   pull_request:
     paths:
       - 'ai/**'
+      - '.arwp/**'
       - 'knowledge/**'
       - 'data/**'
       - 'api/**'
@@ -25,7 +30,10 @@ on:
       - 'growth/**'
       - 'llms.txt'
       - 'scripts/apply-arwp.mjs'
+      - 'scripts/apply-internal-discovery-distribution.mjs'
+      - 'scripts/check-internal-discovery-distribution.mjs'
       - 'scripts/stages/render.mjs'
+      - 'scripts/stages/audit.mjs'
       - '.github/workflows/arwp.yml'
       - '.github/workflows/arwp-growth.yml'
   workflow_dispatch:
@@ -41,6 +49,9 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Validate Agent-Ready Web Profile
-        uses: dkharlanau/agent-ready-web-profile@a60be6a057f6ffe07a85ed884e89c91d2d4d740f
+        uses: dkharlanau/agent-ready-web-profile@793483e3404a97f7892e86bcda3fd317d5c7427c
         with:
           profile: ai/site-profile.json
+
+      - name: Validate Metkagram Internal Discovery contract
+        run: node -e "const c=require('./.arwp/internal-discovery.json'); if(c.arwpRevision!=='793483e3404a97f7892e86bcda3fd317d5c7427c'||c.findings?.length!==10) process.exit(1); console.log('Metkagram Internal Discovery contract OK')"
