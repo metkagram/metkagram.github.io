@@ -29,6 +29,8 @@
 //   multilingual model and must run after multilingual-domain-model;
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
+// - shareable-pattern-cards consumes only the completed indexability policy and
+//   canonical Practice annotation layer, so no unreviewed/noindex Pattern is promoted;
 // - seo-graph-normalize remains the final broad SEO graph pass so it cannot re-add
 //   noindex routes;
 // - search-release-root then replaces the former noindex client-redirect root with
@@ -80,6 +82,7 @@ export const RENDER_STEPS = [
   "scripts/multilingual-domain-model.mjs",
   "scripts/canonical-frame-variants.mjs",
   "scripts/pattern-indexability.mjs",
+  "scripts/shareable-pattern-cards.mjs",
   "scripts/seo-graph-normalize.mjs",
   "scripts/search-release-root.mjs",
   "scripts/apply-internal-discovery-distribution.mjs",
