@@ -55,7 +55,9 @@ test("rendered method hubs discover every localized article", () => {
       assert.ok(fs.existsSync(file), `${pathname} must render`);
       const html = fs.readFileSync(file, "utf8");
       assert.ok(html.includes(`<link rel="canonical" href="${SITE_URL}${pathname}">`), `${pathname} needs canonical`);
-      assert.ok(html.includes(`href="/${locale === "en" ? "ru" : "en"}/method/guides/${guide.slug}/"`), `${pathname} needs alternate locale link`);
+      const alternateLocale = locale === "en" ? "ru" : "en";
+      const alternate = `${SITE_URL}/${alternateLocale}/method/guides/${guide.slug}/`;
+      assert.ok(html.includes(`href="${alternate}"`), `${pathname} needs alternate locale link`);
       assert.ok(html.includes("Evidence boundary") || html.includes("Граница доказательности"), `${pathname} needs explicit evidence boundary`);
     }
     const method = fs.readFileSync(renderedFile(`/${locale}/method/`), "utf8");
