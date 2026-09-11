@@ -33,6 +33,8 @@
 //   noindex routes;
 // - search-release-root then replaces the former noindex client-redirect root with
 //   the canonical hostname identity/language gateway and ensures the root is in the sitemap;
+// - internal-discovery-distribution derives continuation only from the completed
+//   rendered canonical learning graph and extends the existing share bar with Save/Cite;
 // - consent analytics decorates the completed HTML surface;
 // - ARWP publication runs after every HTML-producing pass so audit sees the exact
 //   machine discovery surface that will be deployed.
@@ -78,6 +80,7 @@ export const RENDER_STEPS = [
   "scripts/pattern-indexability.mjs",
   "scripts/seo-graph-normalize.mjs",
   "scripts/search-release-root.mjs",
+  "scripts/apply-internal-discovery-distribution.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/apply-arwp.mjs",
 ];
