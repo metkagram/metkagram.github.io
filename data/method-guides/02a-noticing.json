@@ -1,0 +1,83 @@
+[
+  {
+    "id": "noticing-textual-enhancement",
+    "slug": "noticing-textual-enhancement-language-learning",
+    "category": "learning-science",
+    "source_ids": ["rassaei-jabbarpoor-2025", "boers-lindstromberg-2012"],
+    "related": ["visual-marks", "real-sentence-learning", "variation-practice", "evidence-boundary"],
+    "locales": {
+      "en": {
+        "title": "Noticing in Language Learning: Can Visual Cues Help?",
+        "description": "What research on textual enhancement and attention can tell us about highlighting language structure — and what it cannot prove about Metkagram.",
+        "intro": "A learner can read a sentence, understand the message and still miss the form that made the message possible. That gap is one reason second-language research has paid attention to noticing and textual enhancement: making a target feature visually salient so it has a better chance of entering attention. Metkagram’s inline Marks are related to that design problem, but they are a specific implementation, not a synonym for the research literature.",
+        "sections": [
+          {
+            "heading": "Understanding meaning does not guarantee inspecting form",
+            "paragraphs": [
+              "When reading for meaning, attention naturally goes to the message. That is normally a good thing. But if the learning goal is to notice how a condition, hedge or clause is built, the useful structure can pass by without becoming an object of inspection. A carefully placed cue can create a brief invitation to look again.",
+              "The key word is carefully. The purpose is not to force the learner to consciously analyse every token. It is to make one relevant feature easier to locate while the complete sentence remains visible."
+            ]
+          },
+          {
+            "heading": "Textual enhancement has evidence, but the effect is not magical",
+            "paragraphs": [
+              "A 2025 meta-analysis of textual enhancement studies reported a small-to-medium aggregate effect on L2 development across the included research. The result supports taking visual salience seriously, while also showing why simplistic claims are risky: effects varied, and making something visually obvious is not the same as guaranteeing durable learning.",
+              "For Metkagram, the responsible interpretation is a design rationale. Inline Marks may help direct attention to reviewed structure. Whether the particular Mark–Frame workflow improves a defined learning outcome compared with a suitable alternative remains a question for direct experiments."
+            ]
+          },
+          {
+            "heading": "A cue should lead somewhere",
+            "paragraphs": [
+              "Highlighting on its own can become a dead end. The learner notices a coloured span, says “yes, I see it,” and moves on. Metkagram links the cue to a Frame, then to examples, a Move, Contrasts and retrieval. The visual moment is useful because it opens a path from perception to reuse.",
+              "This also changes how we judge annotation quality. A Mark is not successful because it looks elegant. It is successful as interface design when the learner can tell what it points to and use that observation to understand a reusable structure."
+            ]
+          },
+          {
+            "heading": "Less annotation can be more informative",
+            "paragraphs": [
+              "An over-annotated sentence creates a new decoding task: first learn the label system, then recover the language hiding underneath it. Metkagram therefore treats annotation as selective support. Some examples need several cues; others need only one; future languages may start with Frames and no annotation at all.",
+              "A good practical question is: what do we want the learner to notice on this pass? If the answer is “everything,” the instructional target is probably not yet clear enough."
+            ]
+          }
+        ],
+        "takeaway": "Visual salience can support attention to form, but a highlight is only a doorway. Metkagram uses Marks to lead from noticing toward a reviewed, reusable Frame."
+      },
+      "ru": {
+        "title": "Noticing в изучении языка: помогают ли визуальные подсказки",
+        "description": "Что исследования textual enhancement говорят о визуальном выделении языковой структуры — и чего они не доказывают об эффективности Metkagram.",
+        "intro": "Учащийся может прочитать предложение, прекрасно понять смысл и при этом не заметить форму, которая этот смысл организовала. Поэтому в исследованиях второго языка много внимания уделяется noticing и textual enhancement: целевой элемент делают визуально заметнее, чтобы повысить шанс, что он попадёт в фокус внимания. Inline Marks в Metkagram решают похожую дизайнерскую задачу, но не являются синонимом всей исследовательской области.",
+        "sections": [
+          {
+            "heading": "Понимание смысла не гарантирует внимания к форме",
+            "paragraphs": [
+              "При обычном чтении внимание естественно уходит в сообщение. И это нормально. Но если учебная задача — заметить, как построено условие, смягчение или придаточная часть, полезная структура может пройти мимо, так и не став объектом отдельного наблюдения. Аккуратная подсказка предлагает на секунду посмотреть ещё раз.",
+              "Ключевое слово — аккуратная. Цель не в том, чтобы заставить человека сознательно анализировать каждый токен. Нужно облегчить поиск одной важной детали, сохранив перед глазами полное предложение и его смысл."
+            ]
+          },
+          {
+            "heading": "У textual enhancement есть данные, но это не магия цвета",
+            "paragraphs": [
+              "Мета-анализ 2025 года по textual enhancement обнаружил небольшой или умеренный совокупный эффект на развитие L2 в включённых исследованиях. Это серьёзная причина учитывать визуальную заметность, но одновременно хороший повод не упрощать вывод: результаты различались, а очевидное выделение формы не равно гарантированному долговременному усвоению.",
+              "Для Metkagram корректный вывод — это обоснование дизайна. Inline Marks могут направлять внимание к проверенной структуре. Но вопрос, улучшает ли именно полный Mark–Frame workflow конкретный результат по сравнению с подходящей альтернативой, должен проверяться отдельным экспериментом."
+            ]
+          },
+          {
+            "heading": "Подсказка должна куда-то вести",
+            "paragraphs": [
+              "Само выделение легко становится тупиком. Учащийся видит цветной фрагмент, думает «да, понятно» и идёт дальше. Metkagram связывает метку с Frame, затем с примерами, Move, Contrasts и извлечением из памяти. Визуальный момент имеет смысл потому, что открывает путь от восприятия к повторному использованию.",
+              "Поэтому меняется и критерий качества разметки. Mark хорош не потому, что аккуратно выглядит. Как элемент интерфейса он хорош, если человек понимает, на что именно он указывает, и использует это наблюдение для понимания повторяемой структуры."
+            ]
+          },
+          {
+            "heading": "Меньше разметки иногда информативнее",
+            "paragraphs": [
+              "Переразмеченное предложение создаёт новую задачу декодирования: сначала разберись в системе значков, потом найди язык под ней. Поэтому Metkagram рассматривает annotation как выборочную поддержку. Одному примеру нужны несколько сигналов, другому — один, а новый язык вообще может начать с Frames без разметки.",
+              "Практический вопрос звучит так: что именно мы хотим, чтобы человек заметил при этом проходе? Если ответ — «всё сразу», значит учебная цель, скорее всего, ещё недостаточно сфокусирована."
+            ]
+          }
+        ],
+        "takeaway": "Визуальная заметность может помогать обратить внимание на форму, но выделение — только вход. Metkagram использует Marks, чтобы вести от noticing к проверенному и повторно используемому Frame."
+      }
+    }
+  }
+]

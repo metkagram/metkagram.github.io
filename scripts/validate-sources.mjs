@@ -18,6 +18,7 @@ import {
   publicLanguageMatrix,
   translationLocales,
 } from "../src/language-registry.mjs";
+import { loadMethodGuides } from "../src/method-guides.mjs";
 import { validatePublicLearningRules } from "../src/public-learning.mjs";
 import { citationCff, RELEASE, RIGHTS_EFFECTIVE_DATE, rightsJson } from "../src/release.mjs";
 import { buildSearchOpportunityIndex } from "../src/search-opportunity-map.mjs";
@@ -123,6 +124,11 @@ function main() {
   });
   check("public learning rules", () => {
     validatePublicLearningRules(new Set(content.advancedPatterns.map((pattern) => pattern.id)));
+  });
+  check("method guide editorial cluster", () => {
+    const { guides, sources } = loadMethodGuides();
+    if (guides.length !== 40) throw new Error(`expected 40 method guide concepts, found ${guides.length}`);
+    if (!sources.length) throw new Error("method guide research source registry is empty");
   });
   let discoveryTopics;
   check("discovery topics (base + extensions)", () => {
