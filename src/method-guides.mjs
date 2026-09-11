@@ -3,7 +3,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 export const METHOD_GUIDE_LOCALES = ["en", "ru"];
-export const METHOD_GUIDE_COUNT = 25;
+export const METHOD_GUIDE_COUNT = 40;
 export const METHOD_GUIDE_CATEGORIES = ["foundations", "learning-science", "practice", "transfer", "comparisons"];
 
 function fail(message) {
