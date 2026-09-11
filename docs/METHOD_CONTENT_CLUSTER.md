@@ -8,11 +8,11 @@ The method cluster makes the Metkagram Mark–Frame Method discoverable through 
 
 The cluster answers five classes of reader intent:
 
-1. **Foundations** — what Marks, Frames, Moves, Contrasts and Choices are, and how the method fits together.
-2. **Learning science** — how noticing/textual enhancement, formulaic language, retrieval, spacing and variation inform the design.
-3. **Practice** — how to use real sentences, topic sets, B2–C1 patterns and short routines.
-4. **Transfer** — how reuse, speech and cross-language Bridges work without assuming literal translation equivalence.
-5. **Comparisons** — where Metkagram differs from or complements flashcards, grammar apps, isolated-word study and generative AI tutoring, plus a dedicated evidence-boundary page.
+1. **Foundations** — what Marks, Frames, Moves, Contrasts and Choices are, how Frames are extracted, what makes a pattern useful, and how the method fits together.
+2. **Learning science** — how noticing/textual enhancement, formulaic language, retrieval, spacing, repetition, recognition/recall and variation inform the design.
+3. **Practice** — how to use real sentences, topic sets, B2–C1 patterns, personal work examples, contrast drills, writing Frames and short routines.
+4. **Transfer** — how reuse, speech, paraphrase, register and cross-language Bridges work without assuming literal translation equivalence.
+5. **Comparisons** — where Metkagram differs from or complements flashcards, grammar apps, phrasebooks, corpus tools, textbooks, isolated-word study and generative AI tutoring, plus a dedicated evidence-boundary page.
 
 The public routes are:
 
@@ -20,7 +20,7 @@ The public routes are:
 - `/ru/method/guides/`
 - `/{locale}/method/guides/{stable-slug}/`
 
-There are 25 editorial concepts, fully localized into the two current interface locales (`en`, `ru`), producing 50 article pages plus two hub pages. English and Russian here are interface locales. This does not change the independent learning-language, translation-locale or annotation-capability registries.
+There are 40 distinct editorial concepts, fully localized into the two current interface locales (`en`, `ru`), producing 80 article pages plus two hub pages. English and Russian here are interface locales. This does not change the independent learning-language, translation-locale or annotation-capability registries.
 
 ## Editorial source of truth
 
@@ -70,12 +70,19 @@ The cluster is intended to be discoverable through problem and concept queries, 
 - visual grammar cues;
 - retrieval practice;
 - spaced practice;
+- repetition and recognition vs recall;
 - learning from real sentences;
 - B2–C1 English patterns;
+- personal language pattern sets;
 - English patterns for Russian speakers;
-- German sentence patterns;
+- German sentence patterns and English–German Bridges;
+- translation vs functional paraphrase;
+- language register transfer;
 - flashcards vs patterns;
+- phrasebooks vs reusable Frames;
 - grammar rules vs sentence frames;
+- corpus tools and curated language objects;
+- textbooks and pattern practice;
 - AI language tutors and curated language data.
 
 `/en/method/` and `/ru/method/` link into the cluster. Each hub links every localized article, and article-level related links create lateral paths between concepts. `seo-graph-normalize.mjs` adds the completed indexable pages to the sitemap after rendering and normalizes social/structured metadata.
@@ -98,8 +105,8 @@ The generator also emits `dist/data/method-guides.json`, exposing stable IDs, ca
 
 `tests/method-guides.test.mjs` additionally checks the generated cluster:
 
-- 25 concepts / 50 localized articles;
-- five guides per category;
+- 40 concepts / 80 localized articles;
+- eight guides per category;
 - research provenance;
 - hub-to-article discovery;
 - canonical and alternate-language links;
@@ -119,4 +126,4 @@ Project-wide efficacy-claim, link and SEO graph audits remain in force.
 6. Run `npm run verify` and the normal link checks before merge.
 7. Inspect both locales as rendered pages; passing schema validation is not a substitute for readable prose.
 
-If the cluster expands beyond the current 25-concept release, change `METHOD_GUIDE_COUNT` deliberately and document why the new intent deserves an independent canonical page.
+If the cluster expands beyond the current 40-concept release, change `METHOD_GUIDE_COUNT` deliberately and document why the new intent deserves an independent canonical page.
