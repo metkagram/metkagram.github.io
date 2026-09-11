@@ -92,6 +92,78 @@
         {"kind": "pattern", "id": "CLF068", "instruction_en": "When evidence supports one contributor but not exclusivity, acknowledge contribution without claiming a single cause.", "instruction_ru": "Если данные поддерживают один фактор, но не его исключительность, признайте вклад без утверждения единственной причины."}
       ],
       "review_status": "reviewed"
+    },
+    {
+      "id": "diagnose-a-system-before-optimising",
+      "title_en": "Diagnose a system before optimising it",
+      "title_ru": "Диагностировать систему до оптимизации",
+      "description_en": "Follow effects beyond the first visible result, locate moving bottlenecks, separate symptoms from drivers and avoid local optimisation traps.",
+      "description_ru": "Проследите последствия дальше первого видимого результата, найдите перемещающиеся узкие места, отделите симптомы от драйверов и избегайте ловушки локальной оптимизации.",
+      "outcome_en": "Explain why a local improvement may fail at system level and identify the structural condition that keeps reproducing the outcome.",
+      "outcome_ru": "Объяснять, почему локальное улучшение может не сработать на уровне системы, и находить структурное условие, которое воспроизводит результат.",
+      "audience": ["B2", "C1", "professional English", "systems thinking", "AI tutor"],
+      "steps": [
+        {"kind": "pattern", "id": "XTHSYS001", "instruction_en": "Start by separating the immediate effect from the second-order effect it may trigger.", "instruction_ru": "Начните с разделения непосредственного эффекта и эффекта второго порядка, который он может запустить."},
+        {"kind": "pattern", "id": "XTHSYS002", "instruction_en": "Check whether removing one bottleneck merely moves the constraint somewhere else.", "instruction_ru": "Проверьте, не переносит ли устранение одного узкого места ограничение в другую часть процесса."},
+        {"kind": "pattern", "id": "XTHSYS003", "instruction_en": "Challenge local metrics by asking what the optimisation does to the whole system.", "instruction_ru": "Проверьте локальные метрики вопросом о том, что эта оптимизация делает со всей системой."},
+        {"kind": "pattern", "id": "XTHSYS004", "instruction_en": "Separate the visible symptom from the driver that keeps recreating it.", "instruction_ru": "Отделите видимый симптом от драйвера, который снова его создаёт."},
+        {"kind": "pattern", "id": "XTHSYS005", "instruction_en": "Finish by naming the unchanged structural condition that will keep reproducing the result.", "instruction_ru": "Завершите, назвав неизменное структурное условие, которое продолжит воспроизводить результат."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "reason-under-uncertainty",
+      "title_en": "Reason under uncertainty without pretending certainty",
+      "title_ru": "Рассуждать при неопределённости без иллюзии уверенности",
+      "description_en": "Separate facts from assumptions, update a hypothesis without erasing alternatives, define revision criteria and ask for evidence that actually discriminates between explanations.",
+      "description_ru": "Отделите факты от предположений, обновляйте гипотезу без исчезновения альтернатив, задавайте критерии пересмотра и ищите данные, которые действительно различают объяснения.",
+      "outcome_en": "Make uncertainty inspectable: show what is known, how strongly the evidence shifts belief, what lowers confidence and which next evidence would be most informative.",
+      "outcome_ru": "Сделать неопределённость проверяемой: показать, что известно, насколько данные меняют оценку, что снижает уверенность и какое следующее доказательство будет наиболее информативным.",
+      "audience": ["B2", "C1", "professional English", "decision making", "AI tutor"],
+      "steps": [
+        {"kind": "pattern", "id": "XTHUNC001", "instruction_en": "Separate observed evidence from assumptions that still need validation.", "instruction_ru": "Отделите наблюдаемые данные от предположений, которые ещё нужно проверить."},
+        {"kind": "pattern", "id": "XTHUNC002", "instruction_en": "Let the evidence make one explanation more likely without pretending the alternative has disappeared.", "instruction_ru": "Позвольте данным сделать одно объяснение более вероятным, не делая вид, что альтернатива исчезла."},
+        {"kind": "pattern", "id": "XTHUNC003", "instruction_en": "State the observation that would make you revise the current view.", "instruction_ru": "Назовите наблюдение, которое заставило бы вас пересмотреть текущую оценку."},
+        {"kind": "pattern", "id": "XTHUNC004", "instruction_en": "Lower confidence explicitly when an important variable is still unknown.", "instruction_ru": "Явно снизьте уверенность, когда важная переменная всё ещё неизвестна."},
+        {"kind": "pattern", "id": "XTHUNC005", "instruction_en": "Choose the next evidence for its power to distinguish between competing explanations.", "instruction_ru": "Выберите следующее доказательство по его способности различить конкурирующие объяснения."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "understand-the-other-side-before-disagreeing",
+      "title_en": "Understand the other side before disagreeing",
+      "title_ru": "Понять другую сторону до несогласия",
+      "description_en": "Steelman the opposing concern, separate stated positions from underlying interests, distinguish facts from values and reason from another actor's incentives and constraints.",
+      "description_ru": "Усильте возражение другой стороны, отделите заявленную позицию от интереса, различите факты и ценности и рассуждайте через стимулы и ограничения другого участника.",
+      "outcome_en": "Represent another viewpoint strongly enough that disagreement becomes specific: about evidence, weighting, interests or constraints rather than a caricature.",
+      "outcome_ru": "Представлять чужую позицию достаточно сильно, чтобы разногласие стало конкретным: о данных, их весе, интересах или ограничениях, а не о карикатуре.",
+      "audience": ["B2", "C1", "professional English", "negotiation", "teacher"],
+      "steps": [
+        {"kind": "pattern", "id": "XTHPST001", "instruction_en": "Begin by stating the strongest reasonable objection to your own position.", "instruction_ru": "Начните с сильнейшего разумного возражения против собственной позиции."},
+        {"kind": "pattern", "id": "XTHPST002", "instruction_en": "Translate the stated position into the underlying interest it may be protecting.", "instruction_ru": "Переведите заявленную позицию в лежащий за ней интерес, который она может защищать."},
+        {"kind": "pattern", "id": "XTHPST003", "instruction_en": "Check whether the dispute is about evidence or about how much weight each side gives a priority or value.", "instruction_ru": "Проверьте, спор идёт о данных или о том, какой вес стороны придают приоритету или ценности."},
+        {"kind": "pattern", "id": "XTHPST004", "instruction_en": "Rephrase the conflict neutrally as a difference in priorities rather than blame.", "instruction_ru": "Переформулируйте конфликт нейтрально как различие приоритетов, а не взаимные обвинения."},
+        {"kind": "pattern", "id": "XTHPST005", "instruction_en": "Evaluate the choice from the other actor's perspective using that actor's constraints and incentives.", "instruction_ru": "Оцените выбор с точки зрения другого участника через его ограничения и стимулы."}
+      ],
+      "review_status": "reviewed"
+    },
+    {
+      "id": "turn-feedback-into-practice",
+      "title_en": "Turn feedback into the next practice loop",
+      "title_ru": "Превращать обратную связь в следующий цикл практики",
+      "description_en": "Distinguish recognition from recall, diagnose the exact confusion, detect recurring error classes and convert a correction into a bounded next target and a reusable rule.",
+      "description_ru": "Отделите узнавание от воспроизведения, диагностируйте точную путаницу, найдите повторяющийся тип ошибки и превратите исправление в ограниченную следующую цель и переносимое правило.",
+      "outcome_en": "Use mistakes as diagnostic evidence about what to practise next and extract a rule that transfers beyond the corrected sentence.",
+      "outcome_ru": "Использовать ошибки как диагностические данные о следующем объекте практики и извлекать правило, которое переносится за пределы исправленной фразы.",
+      "audience": ["B2", "C1", "self-study", "teacher", "AI tutor"],
+      "steps": [
+        {"kind": "pattern", "id": "XTHMETA001", "instruction_en": "First distinguish recognising a frame from being able to recall and produce it without a prompt.", "instruction_ru": "Сначала отличите узнавание каркаса от способности самостоятельно вспомнить и воспроизвести его без подсказки."},
+        {"kind": "pattern", "id": "XTHMETA002", "instruction_en": "Turn a vague difficulty into the exact distinction you still confuse.", "instruction_ru": "Превратите расплывчатую трудность в точное различие, которое вы всё ещё путаете."},
+        {"kind": "pattern", "id": "XTHMETA003", "instruction_en": "Look across mistakes for the recurring error pattern instead of treating each one as isolated.", "instruction_ru": "Ищите повторяющийся тип ошибки в нескольких попытках вместо разбора каждой ошибки как отдельной."},
+        {"kind": "pattern", "id": "XTHMETA004", "instruction_en": "Convert that pattern into one small next practice target.", "instruction_ru": "Превратите найденный паттерн в одну небольшую следующую цель практики."},
+        {"kind": "pattern", "id": "XTHMETA005", "instruction_en": "Extract the general rule from the correction so it can be reused in a new case.", "instruction_ru": "Извлеките из исправления общее правило, которое можно повторно использовать в новом случае."}
+      ],
+      "review_status": "reviewed"
     }
   ]
 }

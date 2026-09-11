@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metkagram.github.io/data/schemas/error-cluster.schema.json",
+  "title": "Metkagram ErrorCluster",
+  "description": "A learner-facing error cluster that links an observed or awkward form to a reviewed corrective Pattern. Candidate records may use this schema outside the public release collection; public error collections must pass the stricter reviewed-only build gate.",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "pattern_id",
+    "review_status",
+    "evidence_state",
+    "provenance",
+    "title_en",
+    "title_ru",
+    "search_title_en",
+    "search_title_ru",
+    "wrong_en",
+    "correct_en",
+    "why_en",
+    "why_ru",
+    "memory_en",
+    "memory_ru"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "pattern_id": { "type": "string", "minLength": 1 },
+    "review_status": { "type": "string", "enum": ["candidate", "reviewed"] },
+    "evidence_state": { "type": "string", "enum": ["candidate", "reviewed-editorial", "research-grounded"] },
+    "provenance": {
+      "type": "object",
+      "required": ["review_basis", "note"],
+      "properties": {
+        "review_basis": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 },
+        "source_refs": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "title_en": { "type": "string", "minLength": 1 },
+    "title_ru": { "type": "string", "minLength": 1 },
+    "search_title_en": { "type": "string", "minLength": 1 },
+    "search_title_ru": { "type": "string", "minLength": 1 },
+    "wrong_en": { "type": "string", "minLength": 1 },
+    "correct_en": { "type": "string", "minLength": 1 },
+    "why_en": { "type": "string", "minLength": 1 },
+    "why_ru": { "type": "string", "minLength": 1 },
+    "memory_en": { "type": "string", "minLength": 1 },
+    "memory_ru": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}
