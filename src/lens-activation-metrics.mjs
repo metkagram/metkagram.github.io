@@ -5,6 +5,28 @@ const LENS_EVENT_NAMES = new Set([
   "learning_object_open",
 ]);
 
+const BUNDLE_KEYS = new Set(["schema_version", "exported_at", "source", "privacy", "events"]);
+const EVENT_KEYS = new Set([
+  "schema_version",
+  "event_id",
+  "event_name",
+  "occurred_at",
+  "session_id",
+  "locale",
+  "page",
+  "surface",
+  "object_type",
+  "object_id",
+  "metadata",
+]);
+const METADATA_KEYS = new Set([
+  "result_count",
+  "result_pattern_ids",
+  "target_type",
+  "target_id",
+  "format",
+  "direction",
+]);
 const RAW_TEXT_KEYS = /(^|_)(text|sentence|answer|prompt|query|input|utterance|content)(_|$)/i;
 
 function parseTime(value, field) {
@@ -30,8 +52,15 @@ function rejectRawTextKeys(value, path = "bundle") {
   }
 }
 
+function assertAllowedKeys(value, allowed, path) {
+  for (const key of Object.keys(value || {})) {
+    if (!allowed.has(key)) throw new Error(`${path}.${key} is not part of the privacy-safe learning-event contract`);
+  }
+}
+
 export function validateLearningActivityBundle(bundle) {
   if (!bundle || typeof bundle !== "object" || Array.isArray(bundle)) throw new Error("learning activity bundle must be an object");
+  assertAllowedKeys(bundle, BUNDLE_KEYS, "bundle");
   if (bundle.schema_version !== 1) throw new Error("learning activity bundle schema_version must be 1");
   if (!Array.isArray(bundle.events)) throw new Error("learning activity bundle events must be an array");
   rejectRawTextKeys(bundle.events, "events");
@@ -39,6 +68,11 @@ export function validateLearningActivityBundle(bundle) {
   const eventIds = new Set();
   for (const [index, event] of bundle.events.entries()) {
     if (!event || typeof event !== "object" || Array.isArray(event)) throw new Error(`events[${index}] must be an object`);
+    assertAllowedKeys(event, EVENT_KEYS, `events[${index}]`);
+    if (event.metadata !== undefined) {
+      if (!event.metadata || typeof event.metadata !== "object" || Array.isArray(event.metadata)) throw new Error(`events[${index}].metadata must be an object`);
+      assertAllowedKeys(event.metadata, METADATA_KEYS, `events[${index}].metadata`);
+    }
     if (event.schema_version !== 1) throw new Error(`events[${index}].schema_version must be 1`);
     const eventId = requiredString(event.event_id, `events[${index}].event_id`);
     if (eventIds.has(eventId)) throw new Error(`duplicate event_id: ${eventId}`);
