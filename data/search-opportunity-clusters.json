@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "status": "editorial-pilot",
+  "evidenceBoundary": "These are editorial learner-intent clusters, not copied Search Console queries and not evidence of search demand by themselves. Real metrics must come from aggregated non-brand exports keyed only by cluster id.",
+  "clusters": [
+    {
+      "id": "build-argument-with-evidence",
+      "label_en": "Build an argument with evidence",
+      "learner_job_en": "Support a claim, connect evidence to it, and reach a bounded conclusion.",
+      "topic_id": "argumentation-evidence",
+      "set_ids": ["ARG", "EVD", "CAU"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "hedge-an-uncertain-claim",
+      "label_en": "Hedge an uncertain claim",
+      "learner_job_en": "Express a position or probability without sounding more certain than the evidence allows.",
+      "topic_id": "opinions-hedging",
+      "set_ids": ["OPI", "HED", "PRB"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "disagree-and-clarify",
+      "label_en": "Disagree and clarify",
+      "learner_job_en": "Disagree constructively, correct a misunderstanding, or reformulate the point more precisely.",
+      "topic_id": "agreement-disagreement",
+      "set_ids": ["AGR", "CLR"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "run-a-clear-work-meeting",
+      "label_en": "Run a clear work meeting",
+      "learner_job_en": "Clarify decisions, owners, dependencies, and next actions in workplace discussion.",
+      "topic_id": "meetings-workplace",
+      "set_ids": ["PRO", "ORG", "QWRK", "CLR"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "make-a-polite-request",
+      "label_en": "Make a polite request",
+      "learner_job_en": "Ask for help, information, or action while controlling tone and pressure.",
+      "topic_id": "polite-requests-help",
+      "set_ids": ["QPOL", "RQT", "TCT"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "negotiate-a-tradeoff",
+      "label_en": "Negotiate a trade-off",
+      "learner_job_en": "Open room for compromise, compare concessions, and move toward a workable decision.",
+      "topic_id": "negotiation-tradeoffs",
+      "set_ids": ["NEG", "QNGT", "PRI"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "discuss-risk-and-precautions",
+      "label_en": "Discuss risk and precautions",
+      "learner_job_en": "Describe a problem, state uncertainty, and propose a proportionate safeguard or fallback.",
+      "topic_id": "problem-solving-risk",
+      "set_ids": ["SOL", "RSK", "PRB"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "write-a-careful-research-claim",
+      "label_en": "Write a careful research claim",
+      "learner_job_en": "Connect evidence to a qualified conclusion, attribute sources, and frame a researchable question.",
+      "topic_id": "academic-research-english",
+      "set_ids": ["QACA", "EVD", "HED", "REP"],
+      "review_status": "editorial",
+      "provenance": "Existing Pattern Atlas learner jobs and validated study-set taxonomy."
+    },
+    {
+      "id": "diagnose-a-root-cause",
+      "label_en": "Diagnose a root cause",
+      "learner_job_en": "Separate triggers from causes and compare plausible causal mechanisms.",
+      "topic_id": "causal-diagnosis",
+      "set_ids": ["CDG"],
+      "review_status": "editorial",
+      "provenance": "Existing Thinking in Language Atlas route and validated study-set taxonomy."
+    },
+    {
+      "id": "test-a-hypothesis",
+      "label_en": "Test a hypothesis",
+      "learner_job_en": "Turn an explanation into a prediction, name falsifying evidence, and choose an informative test.",
+      "topic_id": "hypothesis-testing",
+      "set_ids": ["HYP"],
+      "review_status": "editorial",
+      "provenance": "Existing Thinking in Language Atlas route and validated study-set taxonomy."
+    },
+    {
+      "id": "represent-another-view-fairly",
+      "label_en": "Represent another view fairly",
+      "learner_job_en": "State another perspective accurately and reframe disagreement around the real trade-off.",
+      "topic_id": "perspective-taking",
+      "set_ids": ["PST"],
+      "review_status": "editorial",
+      "provenance": "Existing Thinking in Language Atlas route and validated study-set taxonomy."
+    },
+    {
+      "id": "learn-from-a-recurring-error",
+      "label_en": "Learn from a recurring error",
+      "learner_job_en": "Identify a recurring error or confusion and turn feedback into one next practice target.",
+      "topic_id": "metacognitive-learning",
+      "set_ids": ["META"],
+      "review_status": "editorial",
+      "provenance": "Existing Thinking in Language Atlas route and validated study-set taxonomy."
+    }
+  ]
+}

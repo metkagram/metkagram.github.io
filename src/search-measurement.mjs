@@ -1,3 +1,5 @@
+import { joinOpportunityMetrics } from "./search-opportunity-map.mjs";
+
 const CORE_ROUTE_TYPES = new Set(["atlas_index", "atlas_topic", "study_set", "pattern", "editorial", "developer_data"]);
 const ACTION_ORDER = { improve: 0, expand: 1, consolidate: 2, noindex: 3, observe: 4 };
 
@@ -153,12 +155,13 @@ function groupRecommendationsByRouteType(recommendations) {
   return grouped;
 }
 
-export function buildSearchMeasurementReport(payload) {
+export function buildSearchMeasurementReport(payload, opportunityIndex = null) {
   if (!payload || typeof payload !== "object") throw new Error("search measurement payload is required");
   if (payload.schemaVersion !== 1) throw new Error("search measurement schemaVersion must be 1");
   if (payload.scope !== "non_brand") throw new Error("scope must be non_brand; filter branded queries before exporting page aggregates");
   if (!payload.period?.start || !payload.period?.end) throw new Error("period.start and period.end are required");
   if (!Array.isArray(payload.rows)) throw new Error("rows must be an array");
+  if (payload.cluster_rows !== undefined && !opportunityIndex) throw new Error("cluster_rows require a validated search opportunity index");
 
   const recommendations = payload.rows.map(recommendSearchAction).sort((a, b) => {
     const actionDelta = ACTION_ORDER[a.action] - ACTION_ORDER[b.action];
@@ -175,6 +178,8 @@ export function buildSearchMeasurementReport(payload) {
     action,
     recommendations.filter((row) => row.action === action).length
   ]));
+  const opportunityClusters = opportunityIndex ? joinOpportunityMetrics(payload.cluster_rows || [], opportunityIndex) : [];
+  const observedOpportunityClusters = opportunityClusters.filter((cluster) => cluster.metrics !== null).length;
 
   return {
     schemaVersion: 1,
@@ -182,12 +187,19 @@ export function buildSearchMeasurementReport(payload) {
     source: payload.source || "search-console-page-aggregate",
     scope: payload.scope,
     period: payload.period,
-    evidenceBoundary: "Aggregate page-level discovery data supports editorial prioritisation only. Recommendations are not automatic SEO actions and do not justify deleting useful learning content.",
+    evidenceBoundary: "Aggregate page-level discovery data and manually curated cluster aggregates support editorial prioritisation only. Recommendations are not automatic SEO actions and do not justify deleting useful learning content.",
     totals: summarizeRows(recommendations),
     actionCounts,
     byRouteType,
     recommendationsByRouteType: groupRecommendationsByRouteType(recommendations),
-    recommendations
+    recommendations,
+    opportunityClusters,
+    opportunityClusterCoverage: opportunityIndex ? {
+      mapped: opportunityClusters.length,
+      observed: observedOpportunityClusters,
+      unobserved: opportunityClusters.length - observedOpportunityClusters,
+      note: "Unobserved means no aggregate cluster row was supplied for this period. It does not mean zero search demand."
+    } : null
   };
 }
 
@@ -212,6 +224,22 @@ export function renderSearchMeasurementMarkdown(report) {
 
   for (const [routeType, summary] of Object.entries(report.byRouteType)) {
     lines.push(`| ${routeType} | ${summary.pages} | ${summary.impressions} | ${summary.clicks} | ${percent(summary.ctr)} | ${summary.indexed_to_crawled_ratio === null ? "n/a" : percent(summary.indexed_to_crawled_ratio)} |`);
+  }
+
+  if (report.opportunityClusters?.length) {
+    lines.push(
+      "",
+      "## Reviewed learner-job opportunity clusters",
+      "",
+      "These cluster ids are editorial mappings over existing Atlas topics and study sets. Metrics appear only when a privacy-safe aggregate `cluster_rows` record was supplied; an unobserved cluster is not interpreted as zero demand.",
+      "",
+      "| Cluster | Atlas topic | Sets | Representative Patterns | Impressions | Clicks | CTR | Position | Helpfulness |",
+      "|---|---|---|---|---:|---:|---:|---:|---:|"
+    );
+    for (const cluster of report.opportunityClusters) {
+      const metrics = cluster.metrics;
+      lines.push(`| ${cluster.id} | ${cluster.topic_id} | ${cluster.set_ids.join(", ")} | ${cluster.representative_pattern_ids.join(", ")} | ${metrics ? metrics.impressions : "n/a"} | ${metrics ? metrics.clicks : "n/a"} | ${metrics ? percent(metrics.ctr) : "n/a"} | ${metrics?.position === null || !metrics ? "n/a" : metrics.position.toFixed(1)} | ${metrics?.helpfulness_rate === null || !metrics ? "n/a" : percent(metrics.helpfulness_rate)} |`);
+    }
   }
 
   lines.push("", "## Actionable opportunities by route type", "");
