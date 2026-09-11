@@ -31,7 +31,7 @@ test("reviewed search opportunity pilot maps learner jobs to the canonical Atlas
   assert.equal(index.schemaVersion, 1);
   assert.equal(index.status, "editorial-pilot");
   assert.equal(index.clusters.length, 12);
-  assert.match(index.evidenceBoundary, /not.*search-demand evidence/i);
+  assert.match(index.evidenceBoundary, /not evidence of search demand/i);
 
   const patternMap = new Map(content.advancedPatterns.map((pattern) => [pattern.id, pattern]));
   for (const cluster of index.clusters) {
