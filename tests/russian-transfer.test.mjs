@@ -3,17 +3,24 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { validateRussianSpeakerErrors } from "../src/source-validation.mjs";
 
 const ROOT = process.cwd();
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
 const read = (relative) => fs.readFileSync(path.join(ROOT, relative), "utf8");
 
 const source = readJson("data/russian-speaker-errors.json");
+const schema = readJson("data/schemas/error-cluster.schema.json");
 const extension = readJson("data/reasoning-frames/russian-transfer-extension-v2.json");
 
-test("Russian-speaker error map is reviewed and linked to unique practice objects", () => {
+test("Russian-speaker ErrorClusters carry explicit review state and provenance", () => {
   assert.equal(source.schemaVersion, 1);
   assert.equal(source.status, "reviewed-pilot");
+  assert.equal(source.record_schema, "/data/schemas/error-cluster.schema.json");
+  assert.equal(schema.title, "Metkagram ErrorCluster");
+  assert.ok(schema.required.includes("review_status"));
+  assert.ok(schema.required.includes("evidence_state"));
+  assert.ok(schema.required.includes("provenance"));
   assert.equal(source.items.length, 9);
   assert.equal(new Set(source.items.map((item) => item.id)).size, source.items.length);
   assert.equal(new Set(source.items.map((item) => item.slug)).size, source.items.length);
@@ -22,11 +29,34 @@ test("Russian-speaker error map is reviewed and linked to unique practice object
   for (const item of source.items) {
     assert.match(item.pattern_id, /^XPRRTR\d{3}$/);
     if (Number(item.pattern_id.slice(-3)) >= 4) assert.ok(extensionIds.has(item.pattern_id));
+    assert.equal(item.review_status, "reviewed");
+    assert.equal(item.evidence_state, "reviewed-editorial");
+    assert.ok(item.provenance?.review_basis?.trim());
+    assert.ok(item.provenance?.note?.trim());
     assert.ok(item.wrong_en.trim());
     assert.ok(item.correct_en.trim());
     assert.ok(item.why_en.trim());
     assert.ok(item.why_ru.trim());
   }
+});
+
+test("public ErrorCluster validation fails closed on candidate or provenance-free records", () => {
+  const patternMap = new Map(source.items.map((item) => [item.pattern_id, { id: item.pattern_id }]));
+  validateRussianSpeakerErrors(source, patternMap);
+
+  const candidate = structuredClone(source);
+  candidate.items[0].review_status = "candidate";
+  assert.throws(
+    () => validateRussianSpeakerErrors(candidate, patternMap),
+    /must be reviewed before it can enter the public ErrorCluster collection/,
+  );
+
+  const missingProvenance = structuredClone(source);
+  delete missingProvenance.items[0].provenance;
+  assert.throws(
+    () => validateRussianSpeakerErrors(missingProvenance, patternMap),
+    /is missing provenance/,
+  );
 });
 
 test("Russian transfer extension satisfies bilingual practice contracts", () => {
@@ -49,7 +79,7 @@ test("Russian transfer extension satisfies bilingual practice contracts", () => 
   }
 });
 
-test("build publishes localized transfer pages, API, sitemap routes and practice backlinks", () => {
+test("build publishes reviewed transfer pages, API provenance, sitemap routes and practice backlinks", () => {
   const sitemap = read("dist/sitemap.xml");
   const hubEn = read("dist/en/mistakes/russian-speakers/index.html");
   const hubRu = read("dist/ru/mistakes/russian-speakers/index.html");
@@ -72,6 +102,11 @@ test("build publishes localized transfer pages, API, sitemap routes and practice
   const api = readJson("dist/api/v1/russian-speaker-errors.json");
   assert.equal(api.data.items.length, source.items.length);
   assert.equal(api.provenance.record_type, "l1_transfer_error_collection");
+  for (const item of api.data.items) {
+    assert.equal(item.review_status, "reviewed");
+    assert.ok(item.evidence_state);
+    assert.ok(item.provenance?.review_basis);
+  }
   assert.equal(readJson("dist/api/v1/index.json").counts.russianSpeakerErrors, source.items.length);
   assert.ok(read("dist/llms.txt").includes("## Russian-speaker transfer errors"));
 });
