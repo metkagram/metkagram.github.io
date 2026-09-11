@@ -35,6 +35,8 @@
 //   the canonical hostname identity/language gateway and ensures the root is in the sitemap;
 // - internal-discovery-distribution derives continuation only from the completed
 //   rendered canonical learning graph and extends the existing share bar with Save/Cite;
+// - humanize-study-set-labels runs after content-producing Practice passes so internal
+//   set/group IDs remain machine-readable but are never exposed as user-facing labels;
 // - consent analytics decorates the completed HTML surface;
 // - ARWP publication runs after every HTML-producing pass so audit sees the exact
 //   machine discovery surface that will be deployed.
@@ -81,6 +83,7 @@ export const RENDER_STEPS = [
   "scripts/seo-graph-normalize.mjs",
   "scripts/search-release-root.mjs",
   "scripts/apply-internal-discovery-distribution.mjs",
+  "scripts/humanize-study-set-labels.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/apply-arwp.mjs",
 ];
