@@ -108,13 +108,21 @@ function analyzeSession(events) {
   for (const completion of completions) {
     const patternId = String(completion.object_id || "");
     if (!patternId) continue;
-    const priorAnalysis = analyses.find((event) => event._time <= completion._time && resultIds(event).includes(patternId));
-    const priorAttempt = attempts.find((event) => event._time <= completion._time && String(event.object_id || "") === patternId);
-    if (priorAnalysis && priorAttempt) {
+    const priorAnalyses = analyses
+      .filter((event) => event._time <= completion._time && resultIds(event).includes(patternId))
+      .sort((a, b) => b._time - a._time);
+    for (const priorAnalysis of priorAnalyses) {
+      const priorAttempt = attempts.find((event) =>
+        String(event.object_id || "") === patternId
+        && event._time >= priorAnalysis._time
+        && event._time <= completion._time
+      );
+      if (!priorAttempt) continue;
       usefulReuse = true;
       usefulReuseCompletedAt = completion._time;
       break;
     }
+    if (usefulReuse) break;
   }
 
   const continuationAfterReuse = usefulReuse && continuations.some((event) => event._time >= usefulReuseCompletedAt);
