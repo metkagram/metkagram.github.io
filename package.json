@@ -18,6 +18,7 @@
     "seo:audit": "node scripts/seo-graph-audit.mjs",
     "contrasts:growth": "node scripts/contrast-growth.mjs",
     "transfer:russian": "node scripts/russian-transfer-guide.mjs",
+    "lens:activation": "node scripts/lens-activation-pilot.mjs",
     "annotations:migrate": "node scripts/annotations.mjs",
     "annotations:validate": "node scripts/annotations.mjs",
     "annotations:practice": "node scripts/generate-practice-annotations.mjs",
