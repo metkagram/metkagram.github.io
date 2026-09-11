@@ -127,7 +127,7 @@ function main() {
   });
   check("method guide editorial cluster", () => {
     const { guides, sources } = loadMethodGuides();
-    if (guides.length !== 25) throw new Error(`expected 25 method guide concepts, found ${guides.length}`);
+    if (guides.length !== 40) throw new Error(`expected 40 method guide concepts, found ${guides.length}`);
     if (!sources.length) throw new Error("method guide research source registry is empty");
   });
   let discoveryTopics;
