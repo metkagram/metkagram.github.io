@@ -62,3 +62,5 @@ jobs:
         env:
           EXPECTED_GITHUB_SHA: ${{ github.sha }}
         run: node scripts/arwp-production-smoke.mjs --base-url "${{ needs.deploy.outputs.page_url }}"
+      - name: Verify deployed Internal Discovery & Distribution
+        run: node scripts/check-live-internal-discovery-distribution.mjs --base-url="${{ needs.deploy.outputs.page_url }}"
