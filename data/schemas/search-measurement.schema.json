@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://metkagram.github.io/data/schemas/search-measurement.schema.json",
   "title": "Metkagram aggregate search measurement input",
-  "description": "Privacy-safe page-level aggregate input for local search/content decision reports. Raw search queries are intentionally excluded.",
+  "description": "Privacy-safe aggregate input for local search/content decision reports. Raw search queries are intentionally excluded; optional cluster_rows use reviewed learner-intent cluster ids only.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "scope", "period", "rows"],
@@ -36,6 +36,24 @@
           "age_days": {"type": ["number", "null"], "minimum": 0},
           "consolidation_group": {"type": ["string", "null"]},
           "indexing_review_allowed": {"type": "boolean", "default": false}
+        }
+      }
+    },
+    "cluster_rows": {
+      "type": "array",
+      "description": "Optional manually curated aggregate metrics keyed by reviewed search-opportunity cluster id. Never include raw query text.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["cluster_id", "clicks", "impressions"],
+        "properties": {
+          "cluster_id": {"type": "string", "minLength": 1},
+          "clicks": {"type": "number", "minimum": 0},
+          "impressions": {"type": "number", "minimum": 0},
+          "ctr": {"type": "number", "minimum": 0, "maximum": 1},
+          "position": {"type": ["number", "null"], "minimum": 0},
+          "helpful_yes": {"type": "number", "minimum": 0},
+          "helpful_no": {"type": "number", "minimum": 0}
         }
       }
     }
