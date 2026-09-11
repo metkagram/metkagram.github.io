@@ -45,6 +45,14 @@ function scorePattern(pattern) {
   return score;
 }
 
+function hasAnnotatedPrimary(pattern, serviceAnnotations) {
+  return LANGUAGES.every((language) => {
+    if (!pattern.langs.some((item) => item.lang === language)) return false;
+    const primary = serviceAnnotations[`${pattern.id}:${language}:primary`];
+    return Boolean(primary && Array.isArray(primary.spans) && primary.spans.length > 0);
+  });
+}
+
 function annotatedExample(card) {
   let output = "";
   let cursor = 0;
@@ -114,11 +122,11 @@ export function generateShareablePatternCards() {
   const indexable = new Set((indexability.records || []).filter((record) => record.indexable).map((record) => record.pattern_id));
   const candidates = content.advancedPatterns
     .filter((pattern) => indexable.has(pattern.id))
-    .filter((pattern) => LANGUAGES.every((language) => pattern.langs.some((item) => item.lang === language)))
+    .filter((pattern) => hasAnnotatedPrimary(pattern, serviceAnnotations))
     .sort((a, b) => scorePattern(b) - scorePattern(a) || String(a.id).localeCompare(String(b.id)));
 
   const selected = candidates.slice(0, CARD_COUNT);
-  if (selected.length < CARD_COUNT) throw new Error(`Shareable Pattern Cards require ${CARD_COUNT} indexable bilingual Patterns; found ${selected.length}`);
+  if (selected.length < CARD_COUNT) throw new Error(`Shareable Pattern Cards require ${CARD_COUNT} reviewed/indexable bilingual Patterns with annotated primary examples; found ${selected.length}`);
 
   const entries = [];
   for (const pattern of selected) {
@@ -143,7 +151,7 @@ export function generateShareablePatternCards() {
 
   const manifest = {
     schemaVersion: 1,
-    generatedFrom: "reviewed-indexable-canonical-patterns",
+    generatedFrom: "reviewed-indexable-canonical-patterns-with-reviewed-annotations",
     patternCount: selected.length,
     cardCount: entries.length,
     languages: LANGUAGES,
@@ -151,7 +159,7 @@ export function generateShareablePatternCards() {
   };
   write("cards/manifest.json", `${JSON.stringify(manifest, null, 2)}\n`);
   write("cards/index.html", galleryHtml(entries));
-  console.log(`Shareable Pattern Cards: ${entries.length} cards from ${selected.length} indexable bilingual Patterns.`);
+  console.log(`Shareable Pattern Cards: ${entries.length} cards from ${selected.length} reviewed/indexable annotated bilingual Patterns.`);
   return manifest;
 }
 
