@@ -22,11 +22,11 @@ function renderedFile(pathname) {
   return path.join(DIST, pathname.replace(/^\//, ""), "index.html");
 }
 
-test("method content cluster contains 25 concepts and 50 localized articles", () => {
+test("method content cluster contains 40 concepts and 80 localized articles", () => {
   assert.equal(guides.length, METHOD_GUIDE_COUNT);
-  assert.equal(guides.length * METHOD_GUIDE_LOCALES.length, 50);
+  assert.equal(guides.length * METHOD_GUIDE_LOCALES.length, 80);
   for (const category of METHOD_GUIDE_CATEGORIES) {
-    assert.equal(guides.filter((guide) => guide.category === category).length, 5, `${category} should contain five guides`);
+    assert.equal(guides.filter((guide) => guide.category === category).length, 8, `${category} should contain eight guides`);
   }
 });
 
@@ -69,8 +69,8 @@ test("machine-readable method guide catalogue mirrors the public cluster", () =>
   const file = path.join(DIST, "data", "method-guides.json");
   assert.ok(fs.existsSync(file));
   const payload = JSON.parse(fs.readFileSync(file, "utf8"));
-  assert.equal(payload.guide_count, 25);
-  assert.equal(payload.localized_page_count, 50);
-  assert.equal(payload.guides.length, 25);
+  assert.equal(payload.guide_count, 40);
+  assert.equal(payload.localized_page_count, 80);
+  assert.equal(payload.guides.length, 40);
   assert.match(payload.evidence_boundary, /no efficacy claim/i);
 });
