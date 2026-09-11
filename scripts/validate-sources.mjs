@@ -21,6 +21,7 @@ import {
 import { loadMethodGuides } from "../src/method-guides.mjs";
 import { validatePublicLearningRules } from "../src/public-learning.mjs";
 import { citationCff, RELEASE, RIGHTS_EFFECTIVE_DATE, rightsJson } from "../src/release.mjs";
+import { buildSearchOpportunityIndex } from "../src/search-opportunity-map.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 import {
   validateChoiceDrills,
@@ -129,9 +130,19 @@ function main() {
     if (guides.length !== 25) throw new Error(`expected 25 method guide concepts, found ${guides.length}`);
     if (!sources.length) throw new Error("method guide research source registry is empty");
   });
+  let discoveryTopics;
   check("discovery topics (base + extensions)", () => {
     const baseTopics = loadDiscoveryTopics(content);
-    loadDiscoveryTopicExtensions(content, baseTopics);
+    const result = loadDiscoveryTopicExtensions(content, baseTopics);
+    discoveryTopics = result.combined;
+  });
+  check("search opportunity clusters", () => {
+    buildSearchOpportunityIndex(
+      readSourceJson("data/search-opportunity-clusters.json"),
+      discoveryTopics,
+      content.studySets.sets,
+      content.advancedPatterns,
+    );
   });
   check("partnership opportunities", () => {
     validatePartnershipPayload(readSourceJson("data/partnership-opportunities.json"));
