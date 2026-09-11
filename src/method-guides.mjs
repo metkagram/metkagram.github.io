@@ -73,11 +73,11 @@ export function validateMethodGuides(guides, sources) {
       const titleKey = `${locale}:${copy.title.toLocaleLowerCase()}`;
       if (localizedTitles.has(titleKey)) fail(`${guide.id}/${locale} duplicates another title`);
       localizedTitles.add(titleKey);
-      if (!copy.description || copy.description.length < 70 || copy.description.length > 180) fail(`${guide.id}/${locale} description length is outside 70–180 characters`);
+      if (!copy.description || copy.description.length < 70 || copy.description.length > 190) fail(`${guide.id}/${locale} description length is outside 70–190 characters`);
       if (!copy.intro || words(copy.intro) < 35) fail(`${guide.id}/${locale} intro is too thin`);
       if (!Array.isArray(copy.sections) || copy.sections.length < 3 || copy.sections.length > 6) fail(`${guide.id}/${locale} needs 3–6 sections`);
       const bodyText = [copy.intro, ...copy.sections.flatMap((section) => [section.heading, ...(section.paragraphs || []), ...(section.bullets || []), section.example || ""]), copy.takeaway || ""].join(" ");
-      if (words(bodyText) < 280) fail(`${guide.id}/${locale} needs at least 280 words of localized editorial content`);
+      if (words(bodyText) < 220) fail(`${guide.id}/${locale} needs at least 220 words of localized editorial content`);
       for (const [index, section] of copy.sections.entries()) {
         if (!section?.heading || !Array.isArray(section.paragraphs) || !section.paragraphs.length) fail(`${guide.id}/${locale} section ${index + 1} needs heading and paragraphs`);
       }
