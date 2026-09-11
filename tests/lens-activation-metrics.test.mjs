@@ -71,6 +71,18 @@ test("practice completion alone is not counted as useful reuse without a matched
   assert.equal(result.first_session.useful_reuse, false);
 });
 
+test("Useful Reuse Session requires result then attempt then completion in order", () => {
+  const outOfOrder = bundle([
+    event({ id: "event-d-001", name: "lens_practice_attempt", at: "2026-09-01T09:59:00.000Z", session: "session-d1", objectId: "PAT001" }),
+    event({ id: "event-d-002", name: "lens_analyze", at: "2026-09-01T10:00:00.000Z", session: "session-d1", metadata: { result_count: 1, result_pattern_ids: ["PAT001"] } }),
+    event({ id: "event-d-003", name: "lens_practice_complete", at: "2026-09-01T10:01:00.000Z", session: "session-d1", objectId: "PAT001" }),
+  ]);
+  const result = analyzeParticipantLensActivity(outOfOrder);
+  assert.equal(result.first_session.practice_attempt, true);
+  assert.equal(result.first_session.practice_complete, true);
+  assert.equal(result.first_session.useful_reuse, false);
+});
+
 test("pilot aggregation keeps match-returned separate from helpfulness and computes repeat pull", () => {
   const report = aggregateLensActivationPilot([participantA, participantB], { repeatAfterDays: 2 });
   assert.equal(report.participant_count, 2);
@@ -90,10 +102,14 @@ test("pilot aggregation keeps match-returned separate from helpfulness and compu
   assert.doesNotMatch(serialized, /session-a1|event-a-001/);
 });
 
-test("activation input rejects raw learner text fields instead of silently accepting them", () => {
+test("activation input rejects raw learner text and unknown fields instead of silently accepting them", () => {
   const unsafe = structuredClone(participantA);
   unsafe.events[0].metadata.answer_text = "raw learner sentence";
   assert.throws(() => validateLearningActivityBundle(unsafe), /raw learner text field is not allowed/i);
+
+  const unknown = structuredClone(participantA);
+  unknown.events[0].learnerSentence = "raw learner sentence";
+  assert.throws(() => validateLearningActivityBundle(unknown), /not part of the privacy-safe learning-event contract/i);
 });
 
 test("activation markdown states the evidence boundary and missing qualitative signals", () => {
