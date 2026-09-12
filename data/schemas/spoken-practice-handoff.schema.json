@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metkagram.github.io/api/v1/schemas/spoken-practice-handoff.json",
+  "title": "Metkagram Spoken Practice Handoff",
+  "description": "A small immutable projection from a canonical Metkagram language object into an external spoken-rehearsal task. It preserves identity, provenance and rights without copying the canonical corpus or asserting speech-analysis results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "handoff_id",
+    "provider_id",
+    "dataset_version",
+    "release_date",
+    "source_object",
+    "language_context",
+    "semantic_context",
+    "practice_projection",
+    "source_provenance",
+    "rights"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "handoff_id": { "type": "string", "pattern": "^metkagram:spoken-practice:v1:[a-z0-9-]+$" },
+    "provider_id": { "type": "string", "minLength": 1 },
+    "dataset_version": { "type": "string", "minLength": 1 },
+    "release_date": { "type": "string", "format": "date" },
+    "source_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id", "canonical_url", "api_url", "content_hash"],
+      "properties": {
+        "type": { "type": "string", "enum": ["pattern", "choice", "route", "bridge"] },
+        "id": { "type": "string", "minLength": 1 },
+        "canonical_url": { "type": "string", "format": "uri" },
+        "api_url": { "type": "string", "format": "uri" },
+        "content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "language_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["practice_language"],
+      "properties": {
+        "practice_language": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
+        "interface_locale": { "type": ["string", "null"], "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
+        "support_translation_locale": { "type": ["string", "null"], "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
+        "bridge_language": { "type": ["string", "null"], "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" }
+      }
+    },
+    "semantic_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "move_id": { "type": ["string", "null"] },
+        "pattern_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "frame_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "contrast_id": { "type": ["string", "null"] },
+        "choice_id": { "type": ["string", "null"] },
+        "route_id": { "type": ["string", "null"] },
+        "route_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "id"],
+            "properties": {
+              "kind": { "type": "string", "enum": ["pattern", "contrast", "drill"] },
+              "id": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "bridge_id": { "type": ["string", "null"] }
+      }
+    },
+    "practice_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["communicative_job", "production_prompt", "transfer_prompt", "consumer_boundary"],
+      "properties": {
+        "communicative_job": { "type": "string", "minLength": 1 },
+        "production_prompt": { "type": "string", "minLength": 1 },
+        "self_check": { "type": ["string", "null"] },
+        "transfer_prompt": { "type": "string", "minLength": 1 },
+        "consumer_boundary": {
+          "const": "Speech capture, playback, delivery feedback and any speech evaluation belong to the external consumer; Metkagram supplies the reviewed language task only."
+        }
+      }
+    },
+    "source_provenance": {
+      "type": "object",
+      "required": ["source", "source_url", "source_repository", "creator", "dataset_version", "release_date", "canonical_url", "record_type", "record_id", "content_hash"],
+      "properties": {
+        "source": { "const": "Metkagram" },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_repository": { "type": "string", "format": "uri" },
+        "creator": { "type": "string", "minLength": 1 },
+        "dataset_version": { "type": "string", "minLength": 1 },
+        "release_date": { "type": "string", "format": "date" },
+        "canonical_url": { "type": "string", "format": "uri" },
+        "record_type": { "type": "string", "minLength": 1 },
+        "record_id": { "type": "string", "minLength": 1 },
+        "content_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": true
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rights_status", "rights_url", "license_url", "attribution_required", "attribution_text", "cache_scope"],
+      "properties": {
+        "rights_status": { "type": "string", "minLength": 1 },
+        "rights_url": { "type": "string", "format": "uri" },
+        "license_url": { "type": "string", "format": "uri" },
+        "attribution_required": { "type": "boolean" },
+        "attribution_text": { "type": "string", "minLength": 1 },
+        "cache_scope": { "const": "authorized-user-requested-immutable-snapshot-only" }
+      }
+    }
+  }
+}
