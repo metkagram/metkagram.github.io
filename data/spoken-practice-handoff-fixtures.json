@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-reference",
+  "description": "Bounded provider-neutral fixtures used to verify that canonical Metkagram language objects can become productive spoken-practice tasks without copying the source corpus.",
+  "fixtures": [
+    {
+      "id": "pattern-evidence-without-overclaiming",
+      "provider_id": "provider-neutral-reference",
+      "source": { "type": "pattern", "id": "CLF051" },
+      "language_context": {
+        "practice_language": "en",
+        "interface_locale": "en",
+        "support_translation_locale": "ru",
+        "bridge_language": null
+      },
+      "practice_projection": {
+        "communicative_job": "Use a reviewed evidence frame to support a hypothesis without presenting it as proof.",
+        "production_prompt": "A pilot improved one metric, but the sample is still small. Explain what the result suggests without treating it as proof.",
+        "self_check": "Did you separate evidence from proof and leave room for another explanation?",
+        "transfer_prompt": "Now use the same reasoning move for a delayed project where one signal points to a cause but alternatives still remain."
+      }
+    },
+    {
+      "id": "choice-evidence-vs-alternative",
+      "provider_id": "provider-neutral-reference",
+      "source": { "type": "choice", "id": "benchmark-suggests-not-proves" },
+      "language_context": {
+        "practice_language": "en",
+        "interface_locale": "en",
+        "support_translation_locale": "ru",
+        "bridge_language": null
+      },
+      "practice_projection": {
+        "communicative_job": "Choose the right reviewed reasoning frame first, then produce a fresh utterance with that function.",
+        "production_prompt": "A first benchmark looks promising but is not decisive. Choose the better Metkagram frame, then say one new sentence about the evidence in your own words.",
+        "self_check": "Did your wording match the selected function rather than merely repeat the benchmark scenario?",
+        "transfer_prompt": "Repeat the task with a user-behaviour signal that points to a UX problem but does not prove it."
+      }
+    },
+    {
+      "id": "route-reframe-with-precision",
+      "provider_id": "provider-neutral-reference",
+      "source": { "type": "route", "id": "reframe-with-precision" },
+      "language_context": {
+        "practice_language": "en",
+        "interface_locale": "en",
+        "support_translation_locale": "ru",
+        "bridge_language": null
+      },
+      "practice_projection": {
+        "communicative_job": "Follow a reviewed reasoning route to correct an interpretation without flattening the nuance.",
+        "production_prompt": "A team says a project is failing because people lack motivation. Reframe the situation so the stronger underlying constraint becomes visible, while preserving any part of the original concern that may still be true.",
+        "self_check": "Did you choose the strength of correction deliberately instead of treating every disagreement as full negation?",
+        "transfer_prompt": "Use the same route on a different topic: a product is called unsuccessful because adoption is low, but discoverability may be the more useful frame."
+      }
+    }
+  ]
+}
