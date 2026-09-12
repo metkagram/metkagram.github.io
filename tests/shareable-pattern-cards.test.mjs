@@ -41,6 +41,10 @@ test("generated card pages are screenshot/print ready, attributed, and canonical
     const html = read(`dist${card.url}index.html`);
     assert.match(html, /<meta name="robots" content="noindex,follow">/);
     assert.ok(html.includes(`<link rel="canonical" href="${card.canonical_url}">`));
+    assert.ok(html.includes(`<meta property="og:url" content="${card.canonical_url}">`));
+    assert.match(html, /<meta name="metkagram-rights" content="source-available-not-open-source">/);
+    assert.match(html, /assets\/social\/metkagram-social-preview-1200x630\.png/);
+    assert.match(html, /rel="manifest" href="\/assets\/web\/site\.webmanifest"/);
     assert.ok(html.includes(`data-pattern-card="${card.pattern_id}"`));
     assert.ok(html.includes(`data-learning-language="${card.language}"`));
     assert.match(html, /Source-available terms/);
@@ -59,6 +63,7 @@ test("card gallery is non-indexable and card routes never enter the sitemap", ()
   const manifest = readJson("dist/cards/manifest.json");
 
   assert.match(gallery, /<meta name="robots" content="noindex,follow">/);
+  assert.match(gallery, /<meta name="metkagram-rights" content="source-available-not-open-source">/);
   assert.doesNotMatch(sitemap, /https:\/\/metkagram\.github\.io\/cards\//);
   for (const card of manifest.cards.slice(0, 10)) assert.ok(gallery.includes(card.url));
 });
