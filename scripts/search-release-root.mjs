@@ -16,6 +16,7 @@ const title = "Metkagram: Language Patterns and Annotated Examples";
 const description = "Explore annotated English and German phrases, reusable B2–C1 language patterns, contrasts and practice resources from Metkagram.";
 const socialImage = `${SITE_URL}/assets/social/metkagram-social-preview-1200x630.png`;
 const logo = `${SITE_URL}/assets/icons/metkagram-icon-512x512.png`;
+const repositoryUrl = "https://github.com/metkagram/metkagram.github.io";
 
 const website = {
   "@context": "https://schema.org",
@@ -35,6 +36,7 @@ const organization = {
   "@id": `${SITE_URL}/#organization`,
   name: "Metkagram",
   url: `${SITE_URL}/`,
+  sameAs: [repositoryUrl],
   logo: {
     "@type": "ImageObject",
     url: logo,
@@ -106,6 +108,7 @@ const html = `<!doctype html>
     .mark{width:72px;height:72px;object-fit:contain;margin-bottom:28px}p.kicker{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px}
     h1{font-size:clamp(3rem,9vw,7.5rem);line-height:.88;letter-spacing:-.065em;margin:0;max-width:8ch}p.lede{font-size:clamp(1.15rem,2.3vw,1.65rem);max-width:720px;margin:32px 0}
     nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}a{color:inherit;text-decoration:none;border:2px solid var(--line);padding:11px 16px;font-weight:800}a.primary{background:var(--ink);color:var(--paper)}a:hover{transform:translateY(-1px)}
+    .entity-links{margin-top:16px;gap:10px 24px}.entity-links a{border:0;padding:4px 0;text-decoration:underline;text-underline-offset:4px;font-weight:700}
     .note{margin-top:28px;font-size:.92rem;max-width:700px}.accent{color:var(--accent)}
   </style>
 </head>
@@ -119,6 +122,12 @@ const html = `<!doctype html>
     <nav aria-label="Choose Metkagram interface">
       <a class="primary" href="/en/" hreflang="en">Open in English</a>
       <a href="/ru/" hreflang="ru" lang="ru">Открыть на русском</a>
+    </nav>
+    <nav class="entity-links" aria-label="Understand and cite Metkagram">
+      <a href="/en/method/">Method</a>
+      <a href="/en/research/">Research</a>
+      <a href="/en/cite/">Cite</a>
+      <a href="${repositoryUrl}" rel="external">Repository</a>
     </nav>
     <p class="note">For learners, teachers and language tools. Browse annotations, compare patterns, inspect the method, or use the machine-readable data without an account.</p>
   </section>
@@ -163,8 +172,13 @@ for (const required of [
   `"@id":"${SITE_URL}/#webpage"`,
   `"dateModified":"${SITE_RELEASE_DATE}"`,
   `"name":"Metkagram"`,
+  `"sameAs":["${repositoryUrl}"]`,
   `href="/en/"`,
   `href="/ru/"`,
+  `href="/en/method/"`,
+  `href="/en/research/"`,
+  `href="/en/cite/"`,
+  `href="${repositoryUrl}"`,
 ]) {
   if (!output.includes(required)) throw new Error(`Metkagram root search-release invariant missing: ${required}`);
 }
