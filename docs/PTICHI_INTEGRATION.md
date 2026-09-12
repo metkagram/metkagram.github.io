@@ -1,8 +1,8 @@
 # Metkagram ↔ Ptichi spoken-practice integration
 
-Status: **integration architecture and provider contract are in development; native Ptichi module loading is not released.**
+Status: **the Metkagram provider contract and static API reference are published; native Ptichi module loading is not released.**
 
-Coordination: GitHub issue #117 owns the Metkagram-side handoff/API work. Ptichi is the first intended spoken-practice consumer of that provider-neutral contract.
+Coordination: issue #117 defined the Metkagram-side handoff/API work and was implemented by PR #122. Ptichi remains the first intended spoken-practice consumer of that provider-neutral contract. The normative transport boundary is documented in `SPOKEN_PRACTICE_HANDOFF.md`.
 
 ## Product split
 
@@ -34,23 +34,33 @@ The integration is therefore not “learn a sentence in Metkagram, then get a pr
 
 ## Spoken-practice handoff
 
-The planned bridge is a small, versioned, provider-neutral handoff rather than a copied corpus or shared database.
+The published Metkagram bridge is a small, versioned, provider-neutral handoff rather than a copied corpus or shared database.
 
-A handoff may preserve:
+A handoff preserves:
 
 - handoff/schema version;
 - Metkagram dataset/release version;
 - canonical object type and stable ID;
-- canonical URL;
-- provenance/content hash where available;
+- canonical and direct API URLs;
+- provenance/content hash;
 - rights/attribution reference;
 - learning/practice language;
 - optional interface, support-translation and Bridge/reference languages as independent fields;
-- reviewed semantic references such as Move, Pattern/Frame, Contrast, Choice, Route and Bridge IDs;
-- a bounded communicative job and production prompt;
-- a changed-context or changed-wording transfer prompt.
+- bounded semantic references such as Move, Pattern/Frame, Contrast, Choice and ordered Route step IDs;
+- a communicative job and production prompt;
+- an optional self-check;
+- a changed-context or changed-wording transfer prompt;
+- an explicit boundary that speech capture, playback, delivery feedback and speech evaluation belong to the external consumer.
 
-It should copy only the minimum practice material needed for an immutable local snapshot. Metkagram remains the canonical source of the language object.
+The current static reference surfaces are:
+
+- `/api/v1/schemas/spoken-practice-handoff.json` — versioned handoff schema;
+- `/api/v1/spoken-practice-handoffs.json` — deterministic provider-neutral Pattern/Choice/Route reference fixtures;
+- `/api/v1/patterns/{id}.json` — direct Pattern retrieval;
+- `/api/v1/choices/{id}.json` — direct reviewed Choice retrieval;
+- `/api/v1/routes/{id}.json` — direct reviewed Route retrieval.
+
+The handoff copies only the minimum task projection needed for an immutable snapshot. Canonical formulas, examples and full Route instructions stay in their canonical Metkagram objects rather than becoming a second corpus inside the transport record.
 
 ## What the handoff does not mean
 
@@ -104,9 +114,9 @@ An authorized consumer should preserve stable IDs, canonical links, dataset/rele
 
 ### Metkagram
 
-**In development:** issue #117 defines the provider-neutral spoken-practice handoff, fixtures and missing direct retrieval for reviewed objects such as Choice, Route and Bridge.
+**Published:** the provider-neutral handoff schema, three deterministic Pattern/Choice/Route reference projections, static handoff collection, direct Choice/Route retrieval, MCP/OpenAPI discovery and fail-closed validation for unresolved objects/languages.
 
-The current public API/MCP remains usable independently of Ptichi.
+Metkagram does not publish a Ptichi-specific canonical field, callback, account dependency, audio payload or speech score. The public API/MCP remains independently useful when Ptichi is absent.
 
 ### Ptichi
 
