@@ -30,6 +30,8 @@
 //   multilingual model and must run after multilingual-domain-model;
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
+// - study-set-authority consumes finalized indexability plus the reviewed relation
+//   graph and upgrades only the bounded canonical set cohort without creating URLs;
 // - shareable-pattern-cards consumes the finalized indexability decision plus reviewed
 //   annotation data and creates only noindex derivative distribution surfaces;
 // - method-guides renders canonical bilingual editorial pages and extends the existing
@@ -88,6 +90,7 @@ export const RENDER_STEPS = [
   "scripts/multilingual-domain-model.mjs",
   "scripts/canonical-frame-variants.mjs",
   "scripts/pattern-indexability.mjs",
+  "scripts/study-set-authority.mjs",
   "scripts/shareable-pattern-cards.mjs",
   "scripts/method-guides.mjs",
   "scripts/seo-graph-normalize.mjs",
