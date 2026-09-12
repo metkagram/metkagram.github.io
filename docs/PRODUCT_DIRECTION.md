@@ -200,6 +200,39 @@ The public reference layer should support bounded operations particularly well:
 
 The public API exposes learner-facing content and relations without exposing the private annotation/generation pipeline.
 
+## Spoken-practice integration: Ptichi
+
+Ptichi is the first intended spoken-practice consumer of Metkagram's provider-neutral handoff direction.
+
+The integration preserves a strict responsibility split:
+
+- **Metkagram** selects or exposes the reviewed linguistic object and communicative job: Frame, Move, Contrast, Choice, Route or Bridge;
+- **Ptichi** owns local spoken rehearsal: recording, playback, self-listening, a bounded speech intervention, A/B comparison and changed-material transfer;
+- a Metkagram language object is semantic context, not automatic acoustic or prosodic truth.
+
+The target loop is:
+
+```text
+communicative job
+→ reviewed Metkagram object
+→ learner retrieves or creates wording
+→ small provenance-safe practice handoff
+→ Ptichi spoken A/B practice
+→ changed-context transfer
+```
+
+The planned handoff preserves stable IDs, canonical URLs, dataset/release identity, language context, provenance and rights while copying only the minimum practice material required for a reproducible local snapshot. It does not authorize corpus mirroring, shared databases, speech-score write-back or a mandatory live MCP dependency.
+
+Current status:
+
+- Metkagram-side provider contract/API work is tracked in #117;
+- the integration architecture is defined and in development;
+- native Ptichi external-module loading is **not released yet**;
+- there is no current claim that Metkagram performs pronunciation, prosody or voice scoring;
+- ordinary Metkagram learning and API/MCP use remain standalone.
+
+See `PTICHI_INTEGRATION.md` for the detailed boundary and status.
+
 ## Public/private boundary
 
 The public repository intentionally contains the useful publication layer: curriculum, study-set taxonomy, selected annotations, Pattern Atlas topics, reviewed reasoning metadata, Contrasts, Choices, Routes, Bridges, derived relation data, exports, schemas, evaluation fixtures and public research materials.
@@ -223,7 +256,7 @@ A feature belongs in Metkagram when it materially improves at least one of these
 - connecting language-specific Frames through a reviewed Bridge;
 - supporting another interface, learning or translation language without duplicating architecture;
 - improving corpus quality, provenance or evaluation;
-- letting teachers, researchers or agents reuse the same stable objects.
+- letting teachers, researchers, agents or authorized practice tools reuse the same stable objects.
 
 A feature should be deferred when it mainly adds generic app surface area, new terminology or page volume without strengthening one of those mechanisms.
 
@@ -231,6 +264,6 @@ A feature should be deferred when it mainly adds generic app surface area, new t
 
 The working sequence is:
 
-**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional reviewed language capabilities**
+**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent, teacher and spoken-practice integrations → additional reviewed language capabilities**
 
 The sequence is a dependency map, not a requirement that every learner visit every screen.
