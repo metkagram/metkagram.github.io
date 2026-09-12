@@ -202,7 +202,7 @@ The public API exposes learner-facing content and relations without exposing the
 
 ## Spoken-practice integration: Ptichi
 
-Ptichi is the first intended spoken-practice consumer of Metkagram's provider-neutral handoff direction.
+Ptichi is the first intended spoken-practice consumer of Metkagram's provider-neutral handoff.
 
 The integration preserves a strict responsibility split:
 
@@ -221,17 +221,17 @@ communicative job
 → changed-context transfer
 ```
 
-The planned handoff preserves stable IDs, canonical URLs, dataset/release identity, language context, provenance and rights while copying only the minimum practice material required for a reproducible local snapshot. It does not authorize corpus mirroring, shared databases, speech-score write-back or a mandatory live MCP dependency.
+The published handoff preserves stable IDs, canonical/API URLs, dataset/release identity, independent language context, content hash, provenance and rights while copying only the minimum task projection required for an immutable snapshot. It does not authorize corpus mirroring, shared databases, speech-score write-back or a mandatory live MCP dependency.
 
 Current status:
 
-- Metkagram-side provider contract/API work is tracked in #117;
-- the integration architecture is defined and in development;
+- the provider-neutral Metkagram handoff schema and static API reference are published;
+- deterministic Pattern/Choice/Route handoff fixtures and direct Choice/Route retrieval are available to external consumers;
 - native Ptichi external-module loading is **not released yet**;
 - there is no current claim that Metkagram performs pronunciation, prosody or voice scoring;
 - ordinary Metkagram learning and API/MCP use remain standalone.
 
-See `PTICHI_INTEGRATION.md` for the detailed boundary and status.
+See `PTICHI_INTEGRATION.md` and `SPOKEN_PRACTICE_HANDOFF.md` for the detailed product and transport boundaries.
 
 ## Public/private boundary
 
