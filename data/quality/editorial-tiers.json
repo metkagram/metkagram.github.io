@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-09-11",
+  "purpose": "Editorial readiness classification for Metkagram study sets. Tiers describe corpus quality and review state, not learning efficacy.",
+  "principles": [
+    "Stable public Pattern and study-set IDs are preserved; a lower tier is a remediation signal, not a deletion instruction.",
+    "A reviewed core requires human-curated examples plus a clean deterministic quality baseline.",
+    "Automated duplicate and linguistic signals prioritise review but do not replace human linguistic judgement.",
+    "A set can contain reviewed Pattern overlays even while the broader legacy set remains in remediation."
+  ],
+  "tiers": [
+    {
+      "id": "A",
+      "label": "reviewed-core",
+      "set_ids": ["FRM", "UNC", "SYS", "DEC", "CDG", "HYP", "PST", "META"],
+      "meaning": "Reviewed thinking-in-language sets with curated EN/DE Frames, complete Russian learner support and zero duplicate-affected rate in the current frozen quality baseline.",
+      "recommended_use": ["featured routes", "teaching", "AI tutor grounding", "editorial examples"]
+    },
+    {
+      "id": "B",
+      "label": "quality-gated-practice",
+      "set_ids": ["CGR", "SPK", "INT", "REG", "RTR", "TRN"],
+      "meaning": "Practice sets protected by build-time gates for example uniqueness and translation completeness; current frozen duplicate-affected rate is zero.",
+      "recommended_use": ["practice", "featured examples", "AI tutor grounding"]
+    },
+    {
+      "id": "D",
+      "label": "remediation-priority",
+      "set_ids": ["HED", "ARG", "PRO", "AGR", "CLR", "CMP", "CAU", "CND", "RQT", "NEG"],
+      "meaning": "Legacy sets with the highest editorial review priority according to duplicate density, audit severity and product relevance. The set remains usable as a compatibility/reference layer while reviewed Frames are added.",
+      "recommended_use": ["reference with quality context", "editorial remediation queue"]
+    }
+  ],
+  "fallback": {
+    "id": "C",
+    "label": "legacy-reference",
+    "rule": "Every established study set not explicitly assigned to A, B or D.",
+    "meaning": "Stable corpus material retained for coverage and public-ID compatibility. Use selectively until a reviewed core is established."
+  },
+  "reviewedPatternOverlays": {}
+}

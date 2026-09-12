@@ -1,0 +1,69 @@
+[
+  {
+    "id": "real-sentence-learning",
+    "slug": "learn-language-from-real-sentences",
+    "category": "practice",
+    "source_ids": ["puimege-2024", "rassaei-jabbarpoor-2025", "wray-2000"],
+    "related": ["visual-marks", "sentence-frames", "variation-practice", "pattern-to-speech"],
+    "locales": {
+      "en": {
+        "title": "How to Learn from a Sentence You Actually Need",
+        "description": "Turn a real sentence from work, reading or conversation into a reusable Frame instead of collecting another isolated phrase you never revisit.",
+        "intro": "A sentence you genuinely wanted to understand already has one advantage over a random textbook line: it arrived with a reason. Metkagram uses that reason as the starting point. Keep the complete sentence, inspect the structure that carries the useful meaning, extract a Frame, then rebuild the Frame in a situation that is yours.",
+        "sections": [
+          {
+            "heading": "Start with the job, not with every unknown word",
+            "paragraphs": [
+              "Ask what made the sentence worth saving. Was it a clean way to disagree, explain a cause, soften a request or connect two ideas? That question points toward the Move. Vocabulary still matters, but the learning target becomes the relationship you want to reuse rather than a full autopsy of every token.",
+              "If annotation is available, Marks can make selected roles easier to inspect. If it is not, the method can still proceed through examples and Frames."
+            ]
+          },
+          {
+            "heading": "Extract the smallest useful Frame",
+            "paragraphs": [
+              "Do not turn half the sentence into brackets. Keep fixed language that carries the construction and open only the slots that can genuinely vary. Then test the Frame with two or three substitutions. If every substitution breaks it, you probably extracted the wrong abstraction.",
+              "The original sentence remains important. It is the evidence that reminds you how the Frame sounds when meaning, vocabulary and context are present together."
+            ]
+          },
+          {
+            "heading": "Move quickly from inspection to recall",
+            "paragraphs": [
+              "Close the example and try to rebuild the Frame from its purpose. Then make one new sentence that could appear in your email, meeting, essay or conversation. This short retrieval step is more diagnostic than another minute of staring at the highlighted example.",
+              "Later, return after a delay and change the situation again. The goal is not to preserve the original sentence perfectly; it is to preserve the useful relationship while the surface changes."
+            ]
+          }
+        ],
+        "takeaway": "A real sentence becomes a learning object when you identify its job, extract a constrained Frame, retrieve it without the example and adapt it to new content."
+      },
+      "ru": {
+        "title": "Как учиться по предложению, которое вам реально понадобилось",
+        "description": "Превратите реальную фразу из работы, чтения или разговора в повторно используемый Frame вместо ещё одной фразы, которую вы больше не откроете.",
+        "intro": "У предложения, которое вы действительно хотели понять, уже есть преимущество перед случайной строкой из учебника: оно появилось по причине. Metkagram использует эту причину как отправную точку. Сохраните полное предложение, рассмотрите структуру, которая несёт полезный смысл, выделите Frame и затем пересоберите его в собственной ситуации.",
+        "sections": [
+          {
+            "heading": "Начните с задачи, а не со вскрытия каждого слова",
+            "paragraphs": [
+              "Спросите, почему предложение вообще захотелось сохранить. Это был хороший способ не согласиться, объяснить причину, смягчить просьбу или связать две мысли? Такой вопрос ведёт к Move. Лексика всё ещё важна, но целью становится отношение, которое хочется повторить, а не полный разбор каждого токена.",
+              "Если для языка доступна разметка, Marks помогают рассмотреть отдельные роли. Если нет, метод всё равно работает через примеры и Frames."
+            ]
+          },
+          {
+            "heading": "Выделите самый маленький полезный Frame",
+            "paragraphs": [
+              "Не превращайте половину предложения в скобки. Сохраните фиксированные элементы, которые несут конструкцию, и откройте только действительно изменяемые слоты. Затем проверьте Frame двумя-тремя подстановками. Если каждая новая версия ломается, абстракция, вероятно, выбрана неверно.",
+              "Исходное предложение при этом остаётся важным. Оно напоминает, как Frame звучит, когда смысл, лексика и контекст снова собраны вместе."
+            ]
+          },
+          {
+            "heading": "Быстро переходите от наблюдения к вспоминанию",
+            "paragraphs": [
+              "Закройте пример и попробуйте восстановить Frame по его задаче. Затем составьте новую фразу, которая могла бы появиться в вашем письме, встрече, эссе или разговоре. Такая короткая попытка даёт больше диагностики, чем ещё одна минута рассматривания подсветки.",
+              "Позже вернитесь после паузы и снова поменяйте ситуацию. Цель не в идеальном сохранении исходной фразы, а в сохранении полезного отношения при изменении поверхности."
+            ]
+          }
+        ],
+        "takeaway": "Реальное предложение становится учебным объектом, когда вы находите его задачу, выделяете ограниченный Frame, вспоминаете его без примера и переносите на новое содержание."
+      }
+    }
+  }
+]

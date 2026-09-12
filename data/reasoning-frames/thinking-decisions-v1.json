@@ -39,27 +39,27 @@
     "set_id": "DEC",
     "logic": "reversibility",
     "metaphor_ru": "Не требуйте одинаковой степени уверенности от решений, которые легко отменить, и решений, которые трудно повернуть назад.",
-    "reasoning": {"move": "Decide", "what_it_does_en": "Use reversibility to decide how much certainty is worth waiting for.", "what_it_does_ru": "Использовать обратимость решения, чтобы определить, сколько уверенности действительно стоит ждать."},
+    "reasoning": {"move": "Decide", "what_it_does_en": "Use reversibility to decide how much certainty is worth waiting for.", "what_it_does_ru": "Использовать обратимость решения, чтобы определить, какой степени уверенности действительно стоит ждать."},
     "practice": {"mode": "produce", "cue": "Connect reversibility with the appropriate decision speed."},
     "langs": [
       {
         "lang": "en",
         "formula": "If this decision is reversible, we can favour speed over certainty.",
         "example": "If this decision is reversible, we can favour speed over certainty and test the smaller rollout.",
-        "translation": "Если решение обратимо, можно предпочесть скорость уверенности и проверить меньший запуск.",
+        "translation": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, и проверить ограниченный запуск.",
         "examples": [
-          {"text": "If this decision is reversible, we can favour speed over certainty and learn from real usage.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности и учиться на реальном использовании."},
-          {"text": "If this decision is reversible, we can favour speed over certainty instead of extending analysis for another month.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности, а не продлевать анализ ещё на месяц."}
+          {"text": "If this decision is reversible, we can favour speed over certainty and learn from real usage.", "translation_ru": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, и учиться на реальном использовании."},
+          {"text": "If this decision is reversible, we can favour speed over certainty instead of extending analysis for another month.", "translation_ru": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, вместо того чтобы продлевать анализ ещё на месяц."}
         ]
       },
       {
         "lang": "de",
         "formula": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit.",
         "example": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit und den kleineren Rollout testen.",
-        "translation": "Если решение обратимо, можно предпочесть скорость уверенности и проверить меньший запуск.",
+        "translation": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, и проверить ограниченный запуск.",
         "examples": [
-          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit und aus der realen Nutzung lernen.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности и учиться на реальном использовании."},
-          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit, statt die Analyse um einen weiteren Monat zu verlängern.", "translation_ru": "Если решение обратимо, можно предпочесть скорость уверенности, а не продлевать анализ ещё на месяц."}
+          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit und aus der realen Nutzung lernen.", "translation_ru": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, и учиться на реальном использовании."},
+          {"text": "Wenn diese Entscheidung reversibel ist, können wir Geschwindigkeit höher gewichten als Sicherheit, statt die Analyse um einen weiteren Monat zu verlängern.", "translation_ru": "Если решение обратимо, можно действовать быстрее, не дожидаясь полной уверенности, вместо того чтобы продлевать анализ ещё на месяц."}
         ]
       }
     ],

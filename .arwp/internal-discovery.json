@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "reviewedAt": "2026-09-11",
+  "site": "https://metkagram.github.io/",
+  "arwpRevision": "793483e3404a97f7892e86bcda3fd317d5c7427c",
+  "mode": "deep-run-execute",
+  "scope": "canonical rendered Metkagram learning surfaces after Pattern/Frame/Move/Contrast/Choice/Route/Bridge semantics are complete",
+  "findings": [
+    {"id":"IDD-01-canonical-crawlable-paths","status":"implemented-rendered-graph","evidence":"Continuation candidates are accepted only when both source and destination are canonical, indexable URLs present in the completed sitemap."},
+    {"id":"IDD-02-descriptive-anchor-text","status":"implemented","evidence":"Continuation cards name the destination page and its learner-facing surface such as Pattern Atlas, Pattern Practice, Pattern Lens, Pattern Contrast or Pattern Choice."},
+    {"id":"IDD-03-reachability-and-global-only-review","status":"implemented-contextual-only","evidence":"The postprocessor derives continuation only from anchors already present inside the rendered main content, excluding header/footer/global navigation."},
+    {"id":"IDD-04-semantic-related-and-reverse-relations","status":"implemented-by-existing-domain-model","evidence":"No parallel relation graph is invented; existing rendered links produced by Frames, Moves, Contrasts, Choice, Routes and Bridges remain the semantic authority."},
+    {"id":"IDD-05-visible-breadcrumbs-and-schema","status":"covered-by-existing-renderer","evidence":"Metkagram's shared renderer already owns BreadcrumbList generation and page-specific visible breadcrumbs; this layer does not emit a conflicting breadcrumb hierarchy."},
+    {"id":"IDD-06-intentional-continuation","status":"implemented","evidence":"Learning pages with at least two existing contextual links to other canonical learning pages receive a bounded Continue learning block using up to three of those existing routes."},
+    {"id":"IDD-07-share-copy-save-cite-utilities","status":"implemented-by-extension","evidence":"The existing share bar already provides native/share-network/copy/print actions; this layer extends it with browser-local Save and canonical Cite rather than adding a second utility bar."},
+    {"id":"IDD-08-citation-contract","status":"implemented-conservative","evidence":"Cite copies Metkagram, the visible page title and canonical URL without inventing authorship, DOI, learning efficacy or licensing permission."},
+    {"id":"IDD-09-preferred-sources-applicability","status":"watch","evidence":"No Preferred Sources control is added until source-preference availability and publisher applicability are independently verified."},
+    {"id":"IDD-10-regression-safe-graph-gates","status":"implemented","evidence":"The read-only Audit stage verifies canonical continuation sources/targets, noindex boundaries, Save/Cite extension and exact rendered manifest; production smoke verifies the deployed manifest and a bounded live sample."}
+  ],
+  "guardrails": {
+    "noRankingGuarantee": true,
+    "noLearningEfficacyInference": true,
+    "noParallelSemanticGraph": true,
+    "existingShareBarExtendedNotDuplicated": true,
+    "onlyRenderedContextualLinksUsed": true,
+    "canonicalUrlsForDistribution": true,
+    "auditStageReadOnly": true,
+    "liveVerificationAfterDeploy": true
+  }
+}

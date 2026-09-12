@@ -1,0 +1,203 @@
+[
+  {
+    "id": "phrasebooks-comparison",
+    "slug": "metkagram-vs-phrasebooks-reusable-language",
+    "category": "comparisons",
+    "source_ids": ["wray-2000", "schmitt-macis-siyanova-2025"],
+    "related": ["pattern-library-vs-phrasebook", "sentence-frames", "patterns-vs-words", "transfer-reuse"],
+    "locales": {
+      "en": {
+        "title": "Metkagram vs Phrasebooks: Ready-Made Lines or Reusable Frames?",
+        "description": "Phrasebooks optimise for immediate situations. Metkagram focuses on reusable Frames that can be adapted when the next sentence was not written in advance.",
+        "intro": "A phrasebook is excellent when the problem is predictable. You need to ask for directions, check into a hotel or solve another familiar scenario, and a finished line reduces effort immediately. Metkagram is aimed at a different problem: recurring communication jobs whose content keeps changing. Instead of storing only the finished sentence, it tries to preserve the Frame and Move that let the learner build another sentence when the next situation is not already in the book.",
+        "sections": [
+          {
+            "heading": "Phrasebooks trade flexibility for speed",
+            "paragraphs": [
+              "A complete phrase is fast to find and safe to repeat. That is a real advantage, especially when the learner has no time or need to understand the underlying structure. The limitation appears when a slightly different request, opinion or explanation is required and the memorised line no longer fits.",
+              "This is not a defect in the phrasebook; it is a consequence of its job. It optimises immediate lookup rather than abstraction and transfer."
+            ]
+          },
+          {
+            "heading": "Frames preserve the relationship behind several sentences",
+            "paragraphs": [
+              "Metkagram can keep the useful original sentence but also extract a Frame with open slots and constraints. Several examples show how the structure changes, while a Move explains the communication job. The learner gains something that can survive a change of names, topic or context.",
+              "Formulaic-language research gives a wider reason to take recurring multiword structure seriously, but the practical benefit here is simpler: the learner has an object larger than a word and more flexible than one finished phrase."
+            ]
+          },
+          {
+            "heading": "Use each format for the problem it solves",
+            "paragraphs": [
+              "If you need one reliable sentence before a trip, a phrasebook may be the shortest path. If the same kind of request, disagreement or explanation returns every week, it may be worth extracting a Frame and practising variation and retrieval. These are complementary workflows, not mutually exclusive schools of language learning.",
+              "Metkagram becomes useful when the learner wants to move from “what should I say in this exact scene?” to “what reusable relationship can I carry into the next scene?”"
+            ]
+          }
+        ],
+        "takeaway": "Phrasebooks give complete lines for expected scenes; Metkagram preserves reusable Frames for changing scenes. Choose immediate lookup or transferable structure according to the actual problem."
+      },
+      "ru": {
+        "title": "Metkagram и разговорники: готовые реплики или reusable Frames",
+        "description": "Разговорники оптимизируют знакомые ситуации. Metkagram делает ставку на Frames, которые можно адаптировать, когда следующую фразу заранее никто не написал.",
+        "intro": "Разговорник отлично работает, когда проблема предсказуема. Нужно спросить дорогу, заселиться в отель или решить другую знакомую ситуацию — готовая реплика сразу уменьшает нагрузку. Metkagram нацелен на другую проблему: повторяющиеся коммуникативные jobs, содержание которых постоянно меняется. Вместо хранения только законченного предложения система старается сохранить Frame и Move, чтобы человек мог построить новую фразу, когда следующая ситуация не оказалась заранее записана в книге.",
+        "sections": [
+          {
+            "heading": "Разговорник меняет гибкость на скорость",
+            "paragraphs": [
+              "Готовую фразу быстро найти и относительно безопасно повторить. Это настоящее преимущество, особенно когда нет времени или необходимости разбираться во внутренней структуре. Ограничение становится заметным, когда требуется немного другая просьба, мнение или объяснение и выученная строка перестаёт подходить.",
+              "Это не дефект разговорника, а следствие его задачи. Он оптимизирует immediate lookup, а не abstraction и transfer."
+            ]
+          },
+          {
+            "heading": "Frames сохраняют отношение, стоящее за несколькими предложениями",
+            "paragraphs": [
+              "Metkagram может оставить полезный исходный пример, но дополнительно выделить Frame с открытыми слотами и ограничениями. Несколько примеров показывают изменение структуры, а Move объясняет коммуникативную работу. В результате появляется объект, который переживает смену имён, темы и контекста.",
+              "Formulaic-language research даёт более широкий контекст для интереса к повторяющимся многословным структурам, но практическая польза здесь проще: учебный объект крупнее слова и гибче одной законченной фразы."
+            ]
+          },
+          {
+            "heading": "Используйте каждый формат там, где он силён",
+            "paragraphs": [
+              "Если перед поездкой нужна одна надёжная реплика, разговорник может быть самым коротким путём. Если похожая просьба, несогласие или объяснение возвращается каждую неделю, имеет смысл выделить Frame и тренировать variation и retrieval. Это дополняющие workflows, а не враждующие школы изучения языка.",
+              "Metkagram полезен в момент перехода от вопроса «что сказать именно в этой сцене?» к вопросу «какое повторно используемое отношение я могу перенести в следующую сцену?»."
+            ]
+          }
+        ],
+        "takeaway": "Разговорник даёт готовые реплики для ожидаемых сцен; Metkagram сохраняет Frames для меняющихся сцен. Выбирайте immediate lookup или transferable structure под реальную задачу."
+      }
+    }
+  },
+  {
+    "id": "corpus-tools-comparison",
+    "slug": "metkagram-vs-corpus-tools-language-patterns",
+    "category": "comparisons",
+    "source_ids": ["boers-lindstromberg-2012", "meunier-2012", "schmitt-macis-siyanova-2025"],
+    "related": ["formulaic-language", "sentence-frames", "ai-tutors-curated-corpus", "topic-sets"],
+    "locales": {
+      "en": {
+        "title": "Metkagram vs Corpus Tools: Discovery Data and Learning Objects",
+        "description": "Corpus tools reveal authentic usage and frequency. Metkagram turns selected recurring structures into reviewed Frames, Contrasts and practice objects.",
+        "intro": "Corpus tools answer questions that a curated learning library should not pretend to answer by itself. They let researchers, teachers and learners inspect large amounts of real language, compare forms, observe collocations and test intuitions against usage. Metkagram solves a downstream problem. It takes selected structures that are worth teaching and turns them into stable learning objects with constraints, examples, communicative roles and practice relationships.",
+        "sections": [
+          {
+            "heading": "A corpus is evidence, not a finished lesson",
+            "paragraphs": [
+              "Concordance lines can show whether a phrase occurs, what words cluster around it and how usage varies. That evidence is powerful, but raw examples do not automatically identify which distinction a learner needs, how broad a Frame should be or which neighbouring pattern deserves comparison.",
+              "Formulaic-language research has used corpus-informed approaches precisely because repeated multiword structure can be investigated empirically. The pedagogical step still requires selection and interpretation."
+            ]
+          },
+          {
+            "heading": "Metkagram adds curation and stable identities",
+            "paragraphs": [
+              "A reviewed Frame gets a stable identifier, language identity, constraints, examples and links to Moves or Contrasts. That allows the same object to appear in a lesson, API, AI tutor or later evaluation. The goal is not to replace corpus evidence but to make a subset of it usable as a maintained teaching system.",
+              "This distinction also makes provenance clearer. A corpus can support the observation that a structure is used in particular contexts; an editor still owns the decision to publish a certain abstraction as a Metkagram Frame."
+            ]
+          },
+          {
+            "heading": "The strongest workflow moves in both directions",
+            "paragraphs": [
+              "Corpus evidence can challenge an existing Frame: perhaps the examples are too narrow, the register label is wrong or a supposed pattern is rare outside one phrase. A curated library can in turn identify questions worth checking in corpus data, such as whether two Frames really differ in context or frequency.",
+              "For the learner, the result should remain simple. They see reviewed examples and decisions rather than a wall of concordance lines, while the project can still use broader language evidence behind the editorial process."
+            ]
+          }
+        ],
+        "takeaway": "Corpus tools are strong at observing real language; Metkagram is strong at turning selected observations into stable, reviewable learning objects. The two layers should inform each other."
+      },
+      "ru": {
+        "title": "Metkagram и corpus tools: данные об употреблении и learning objects",
+        "description": "Corpus tools показывают реальное употребление и частоту. Metkagram превращает выбранные повторяющиеся структуры в reviewed Frames, Contrasts и practice objects.",
+        "intro": "Corpus tools отвечают на вопросы, на которые curated learning library не должна притворяться способной ответить в одиночку. Они позволяют исследователю, преподавателю или учащемуся смотреть на большие массивы реального языка, сравнивать формы, видеть collocations и проверять интуиции по употреблению. Metkagram решает следующую задачу: выбранные структуры, которые действительно стоит преподавать, превращаются в стабильные learning objects с ограничениями, примерами, коммуникативными ролями и связями для практики.",
+        "sections": [
+          {
+            "heading": "Corpus — это evidence, а не готовый урок",
+            "paragraphs": [
+              "Concordance lines показывают, встречается ли выражение, какие слова находятся рядом и как меняется употребление. Это сильные данные, но сырые примеры автоматически не решают, какое различие нужно учащемуся, насколько широким должен быть Frame и какой соседний паттерн стоит сравнить.",
+              "Formulaic-language research использует corpus-informed approaches именно потому, что повторяющиеся многословные структуры можно исследовать эмпирически. Педагогический шаг всё равно требует отбора и интерпретации."
+            ]
+          },
+          {
+            "heading": "Metkagram добавляет curation и стабильные идентификаторы",
+            "paragraphs": [
+              "Reviewed Frame получает стабильный ID, языковую принадлежность, ограничения, примеры и связи с Moves или Contrasts. Один и тот же объект затем можно использовать в lesson, API, AI tutor или будущей evaluation. Цель не заменить corpus evidence, а сделать его выбранную часть поддерживаемой учебной системой.",
+              "Так становится яснее и provenance. Corpus может поддержать наблюдение о том, что конструкция используется в определённых контекстах; решение опубликовать конкретную абстракцию как Metkagram Frame всё равно остаётся редакционным."
+            ]
+          },
+          {
+            "heading": "Сильный workflow двигается в обе стороны",
+            "paragraphs": [
+              "Corpus evidence может оспорить существующий Frame: возможно, примеры слишком узкие, register label неточен или предполагаемый паттерн почти не встречается за пределами одной фразы. Curated library, в свою очередь, формулирует вопросы для corpus data — например, действительно ли два Frames различаются по контексту или частоте.",
+              "Для учащегося финальная поверхность при этом остаётся простой. Он видит reviewed examples и решения, а не стену concordance lines, тогда как проект способен использовать более широкие языковые данные за редакционным слоем."
+            ]
+          }
+        ],
+        "takeaway": "Corpus tools сильны в наблюдении реального языка, Metkagram — в превращении выбранных наблюдений в стабильные и проверяемые learning objects. Эти слои должны усиливать друг друга."
+      }
+    }
+  },
+  {
+    "id": "textbooks-comparison",
+    "slug": "metkagram-vs-language-textbooks-pattern-practice",
+    "category": "comparisons",
+    "source_ids": ["wray-2000", "meunier-2012", "karpicke-roediger-2008"],
+    "related": ["grammar-apps-comparison", "topic-sets", "ten-minute-routine", "real-sentence-learning"],
+    "locales": {
+      "en": {
+        "title": "Metkagram vs Language Textbooks: Syllabus and Reusable Pattern Layer",
+        "description": "Textbooks provide sequence, explanation and broad coverage. Metkagram adds a searchable layer of reusable Frames, choices and short practice around recurring jobs.",
+        "intro": "A textbook has one advantage that a pattern library should not underestimate: curriculum. It can introduce material in an intentional sequence, provide exercises, reading, cultural context and a sense of progression across many skills. Metkagram is not trying to squeeze that entire job into a catalogue of Frames. Its useful role is narrower: make recurring language relationships searchable, comparable and reusable across the situations where a conventional chapter structure may scatter them.",
+        "sections": [
+          {
+            "heading": "Textbooks organise breadth and progression",
+            "paragraphs": [
+              "A well-designed course can control prerequisites, recycle earlier material and balance grammar, vocabulary, receptive skills and production. That broad structure matters, especially for beginners who do not yet know which gaps deserve attention. A pattern library by itself can become a tempting pile of advanced fragments without a learning path.",
+              "Metkagram therefore benefits from Routes and focused sets rather than pretending that search alone is a curriculum."
+            ]
+          },
+          {
+            "heading": "Pattern objects cut across chapter boundaries",
+            "paragraphs": [
+              "A communicative job such as qualifying a claim may draw on vocabulary, clause structure, stance and register that textbooks introduce in separate units. Frames and Moves let those pieces be regrouped around the decision the learner wants to make now.",
+              "This is especially useful for B2–C1 learners who already have substantial grammatical coverage but need alternatives, precision and faster retrieval. The pattern layer becomes a second index over language knowledge rather than a replacement for the first course."
+            ]
+          },
+          {
+            "heading": "Use a textbook for the map and Frames for recurring friction",
+            "paragraphs": [
+              "A practical combination is simple. Follow a course or other broad input for systematic coverage, then collect the structures that repeatedly slow down your own speaking or writing. Put those into focused pattern sets, compare nearby choices and return through retrieval after a delay.",
+              "The two formats answer different questions: “what should I learn next in this curriculum?” and “which reusable language decision keeps blocking me in real use?” A learner can need both at the same time."
+            ]
+          }
+        ],
+        "takeaway": "Textbooks provide broad sequence and coverage; Metkagram provides a reusable pattern layer across topics. Use curriculum for the map and focused Frames for recurring communication friction."
+      },
+      "ru": {
+        "title": "Metkagram и языковые учебники: syllabus и reusable pattern layer",
+        "description": "Учебники дают последовательность, объяснения и широкий охват. Metkagram добавляет searchable слой Frames, choices и короткой practice вокруг повторяющихся jobs.",
+        "intro": "У учебника есть преимущество, которое pattern library нельзя недооценивать: curriculum. Он способен вводить материал в осмысленной последовательности, давать упражнения, чтение, культурный контекст и ощущение прогресса сразу по многим навыкам. Metkagram не пытается втиснуть всю эту работу в каталог Frames. Его роль уже: сделать повторяющиеся языковые отношения searchable, сравнимыми и переиспользуемыми в ситуациях, где обычная структура по главам может разбрасывать связанные решения.",
+        "sections": [
+          {
+            "heading": "Textbooks организуют широту и progression",
+            "paragraphs": [
+              "Хороший курс контролирует prerequisites, возвращает предыдущий материал и балансирует грамматику, лексику, receptive skills и production. Такая широкая структура особенно важна новичку, который ещё не знает, какие gaps заслуживают внимания. Pattern library сама по себе легко превращается в привлекательную кучу advanced fragments без learning path.",
+              "Поэтому Metkagram нужны Routes и focused sets, а не иллюзия, что один поиск по каталогу уже является curriculum."
+            ]
+          },
+          {
+            "heading": "Pattern objects пересекают границы учебных глав",
+            "paragraphs": [
+              "Коммуникативная задача вроде qualification of a claim может одновременно требовать vocabulary, clause structure, stance и register, которые учебник вводил в разных units. Frames и Moves позволяют заново сгруппировать эти элементы вокруг решения, которое человеку нужно принять сейчас.",
+              "Особенно это полезно на B2–C1, когда основная грамматика уже покрыта, но не хватает альтернатив, precision и быстрого retrieval. Pattern layer становится вторым индексом над языковым знанием, а не заменой базового курса."
+            ]
+          },
+          {
+            "heading": "Используйте textbook как карту, а Frames — для повторяющегося трения",
+            "paragraphs": [
+              "Практическая комбинация проста. Идите по курсу или другому широкому input ради системного покрытия, а конструкции, которые регулярно тормозят собственную речь или письмо, собирайте в focused pattern sets. Сравнивайте соседние choices и возвращайтесь через retrieval после паузы.",
+              "Два формата отвечают на разные вопросы: «что дальше в этой программе?» и «какое повторно используемое языковое решение постоянно мешает мне в реальной коммуникации?». Оба вопроса могут быть важны одновременно."
+            ]
+          }
+        ],
+        "takeaway": "Учебники дают широкую последовательность и coverage; Metkagram добавляет reusable pattern layer поперёк тем. Curriculum работает как карта, а focused Frames — как инструмент для повторяющихся затруднений."
+      }
+    }
+  }
+]

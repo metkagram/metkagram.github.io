@@ -1,0 +1,69 @@
+[
+  {
+    "id": "flashcards-comparison",
+    "slug": "metkagram-vs-flashcards-language-learning",
+    "category": "comparisons",
+    "source_ids": ["webb-yanagisawa-uchihara-2020", "karpicke-roediger-2008", "kim-webb-2022"],
+    "related": ["retrieval-practice", "spaced-practice", "patterns-vs-words", "ten-minute-routine"],
+    "locales": {
+      "en": {
+        "title": "Metkagram vs Flashcards: Words, Frames and Retrieval",
+        "description": "Flashcards are strong at compact retrieval. Metkagram uses retrieval too, but the learning object is often a constrained sentence Frame and a communicative choice.",
+        "intro": "Metkagram is not an argument against flashcards. Flashcards solve a real problem very well: present a compact cue, require retrieval and schedule another encounter. The difference is mostly the object being practised. Metkagram often cares less about recalling one word and more about choosing and rebuilding a reusable relationship inside a sentence.",
+        "sections": [
+          {
+            "heading": "Flashcards compress; Frames preserve structure",
+            "paragraphs": [
+              "A vocabulary card can ask for a form, meaning or example. That compactness is a strength. But some language problems are relational: which clause shape expresses the condition, which stance marker fits the claim, or how should several words combine to perform a Move?",
+              "Metkagram keeps those constraints inside a Frame and connects the Frame to complete examples. The unit is larger because the decision being learned is larger."
+            ]
+          },
+          {
+            "heading": "Both formats can use retrieval and spacing",
+            "paragraphs": [
+              "Retrieval practice and spaced return are not owned by any product format. A good flashcard system can implement both. Metkagram uses the same broad learning mechanisms when Choices hide the answer and when Frames return after a delay.",
+              "The difference appears in feedback: a Frame exercise can explain why another plausible construction is wrong for this context, then ask for a new sentence rather than only marking an item right or wrong."
+            ]
+          },
+          {
+            "heading": "Use the smaller tool for the smaller problem",
+            "paragraphs": [
+              "If you need to remember the meaning of a concrete word, a flashcard may be exactly the right tool. Turning every noun into a full pattern lesson would be absurdly expensive in attention. If you repeatedly fail to assemble a useful structure, a word card may be too small.",
+              "The practical combination is straightforward: cards for compact facts, Frames for reusable language relationships, and real reading or conversation for the messy world where both must work together."
+            ]
+          }
+        ],
+        "takeaway": "Flashcards and Metkagram are complementary. Cards excel at compact recall; Frames add structure, contrast and communicative purpose when the learning target is larger than one item."
+      },
+      "ru": {
+        "title": "Metkagram и flashcards: слова, Frames и retrieval",
+        "description": "Карточки сильны в компактном извлечении. Metkagram тоже использует retrieval, но объектом часто становится constrained Frame и коммуникативный выбор.",
+        "intro": "Metkagram не строится на идее «карточки плохие». Карточки отлично решают конкретную задачу: дают компактную подсказку, требуют retrieval и планируют следующую встречу. Разница прежде всего в объекте практики. Metkagram часто интересует не вспоминание одного слова, а выбор и восстановление повторно используемого отношения внутри предложения.",
+        "sections": [
+          {
+            "heading": "Flashcards сжимают, Frames сохраняют структуру",
+            "paragraphs": [
+              "Карточка с лексикой может спрашивать форму, значение или пример. Компактность — её сила. Но некоторые языковые проблемы являются отношениями: какая структура придаточного выражает условие, какой marker позиции подходит тезису, как несколько слов вместе выполняют Move.",
+              "Metkagram сохраняет такие ограничения внутри Frame и связывает его с полными примерами. Единица крупнее, потому что крупнее само решение, которое нужно научиться принимать."
+            ]
+          },
+          {
+            "heading": "Оба формата могут использовать retrieval и spacing",
+            "paragraphs": [
+              "Retrieval practice и spaced return не принадлежат какому-то одному приложению. Хорошая система карточек реализует оба механизма. Metkagram опирается на те же общие идеи, когда Choice скрывает ответ и когда Frame возвращается после паузы.",
+              "Разница проявляется в обратной связи: упражнение с Frame может объяснить, почему другая правдоподобная конструкция не подходит контексту, а затем попросить построить новую фразу вместо простого right/wrong."
+            ]
+          },
+          {
+            "heading": "Маленькая задача заслуживает маленького инструмента",
+            "paragraphs": [
+              "Если нужно помнить значение конкретного слова, карточка может быть идеальным инструментом. Превращать каждое существительное в полноценный урок по паттернам было бы нелепо дорого по вниманию. Но если вы регулярно не можете собрать полезную конструкцию, карточка с одним словом уже слишком мала.",
+              "Комбинация проста: cards для компактных фактов, Frames для повторяемых языковых отношений, чтение и разговор — для реального мира, где всё это должно встретиться вместе."
+            ]
+          }
+        ],
+        "takeaway": "Flashcards и Metkagram дополняют друг друга. Карточки сильны в компактном recall, а Frames добавляют структуру, контраст и коммуникативную цель для более крупных языковых решений."
+      }
+    }
+  }
+]

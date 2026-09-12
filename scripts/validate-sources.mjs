@@ -18,8 +18,10 @@ import {
   publicLanguageMatrix,
   translationLocales,
 } from "../src/language-registry.mjs";
+import { METHOD_GUIDE_COUNT, loadMethodGuides } from "../src/method-guides.mjs";
 import { validatePublicLearningRules } from "../src/public-learning.mjs";
 import { citationCff, RELEASE, RIGHTS_EFFECTIVE_DATE, rightsJson } from "../src/release.mjs";
+import { buildSearchOpportunityIndex } from "../src/search-opportunity-map.mjs";
 import { SITE_RELEASE_DATE, SITE_URL } from "../src/site.mjs";
 import {
   validateChoiceDrills,
@@ -123,9 +125,24 @@ function main() {
   check("public learning rules", () => {
     validatePublicLearningRules(new Set(content.advancedPatterns.map((pattern) => pattern.id)));
   });
+  check("method guide editorial cluster", () => {
+    const { guides, sources } = loadMethodGuides();
+    if (guides.length !== METHOD_GUIDE_COUNT) throw new Error(`expected ${METHOD_GUIDE_COUNT} method guide concepts, found ${guides.length}`);
+    if (!sources.length) throw new Error("method guide research source registry is empty");
+  });
+  let discoveryTopics;
   check("discovery topics (base + extensions)", () => {
     const baseTopics = loadDiscoveryTopics(content);
-    loadDiscoveryTopicExtensions(content, baseTopics);
+    const result = loadDiscoveryTopicExtensions(content, baseTopics);
+    discoveryTopics = result.combined;
+  });
+  check("search opportunity clusters", () => {
+    buildSearchOpportunityIndex(
+      readSourceJson("data/search-opportunity-clusters.json"),
+      discoveryTopics,
+      content.studySets.sets,
+      content.advancedPatterns,
+    );
   });
   check("partnership opportunities", () => {
     validatePartnershipPayload(readSourceJson("data/partnership-opportunities.json"));

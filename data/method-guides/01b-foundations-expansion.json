@@ -1,0 +1,203 @@
+[
+  {
+    "id": "extract-frame-from-sentence",
+    "slug": "how-to-extract-sentence-frame-from-example",
+    "category": "foundations",
+    "source_ids": ["wray-2000", "boers-lindstromberg-2012"],
+    "related": ["sentence-frames", "real-sentence-learning", "variation-practice", "bad-patterns-and-constraints"],
+    "locales": {
+      "en": {
+        "title": "How to Extract a Reusable Sentence Frame from an Example",
+        "description": "A practical way to move from one useful sentence to a reusable Frame without replacing half the language with meaningless Xs and Ys.",
+        "intro": "Finding a useful sentence is easy. Turning it into a good learning object is harder. If you keep every word, you have a phrase to memorise. If you replace every interesting word with a blank, you have a skeleton that may generate nonsense. Metkagram treats Frame extraction as a constrained editorial step: preserve what carries the relationship, open only the parts that can really vary, then test the result against new examples.",
+        "sections": [
+          {
+            "heading": "First identify what made the sentence worth saving",
+            "paragraphs": [
+              "Ask what the speaker is doing. Are they correcting a premise, adding a condition, softening certainty, contrasting two causes or buying time? That communicative Move tells you which relationship matters. A sentence can contain several grammatical facts, but they do not all need to become the target of the same Frame.",
+              "This protects the extraction from becoming a full parse disguised as a pattern. The learner needs a useful decision, not every property of the sentence at once."
+            ]
+          },
+          {
+            "heading": "Keep fixed material that carries the construction",
+            "paragraphs": [
+              "Open slots only where natural substitutions are possible. Fixed connective language, required prepositions, clause order or verb forms may be the very thing the learner needs to keep. Replacing them with abstract labels can remove the signal you were trying to teach.",
+              "Then make two or three variations. If the Frame survives changes of topic and vocabulary while preserving its meaning and constraints, the abstraction is probably useful. If every variation requires repair, narrow it."
+            ]
+          },
+          {
+            "heading": "Store the example and the abstraction together",
+            "paragraphs": [
+              "A Frame without examples can become cryptic. An example without a Frame can remain a one-off phrase. Keeping both lets the learner move between concrete language and reusable structure. It also gives reviewers evidence for why the Frame was defined in that particular way.",
+              "Metkagram therefore treats extraction as reversible: you should always be able to return from the abstract Frame to natural sentences that demonstrate it."
+            ]
+          }
+        ],
+        "takeaway": "Extract the smallest structure that preserves the useful relationship, keep its real constraints, and test it with new sentences before calling it a reusable Frame."
+      },
+      "ru": {
+        "title": "Как выделить reusable Sentence Frame из реального примера",
+        "description": "Практический способ перейти от полезного предложения к повторно используемому Frame, не превращая половину языка в бессмысленные X и Y.",
+        "intro": "Найти полезное предложение легко. Превратить его в хороший учебный объект сложнее. Если оставить каждое слово, получится готовая фраза для запоминания. Если заменить всё интересное пустыми слотами, получится скелет, способный генерировать ерунду. Metkagram рассматривает выделение Frame как ограниченный редакционный шаг: сохранить то, что несёт отношение, открыть только действительно изменяемые части и затем проверить результат на новых примерах.",
+        "sections": [
+          {
+            "heading": "Сначала определите, зачем вообще захотелось сохранить предложение",
+            "paragraphs": [
+              "Спросите, что делает говорящий. Исправляет исходную посылку, ставит условие, снижает уверенность, противопоставляет две причины или выигрывает время? Этот communicative Move показывает, какое отношение действительно важно. В одном предложении может быть много грамматических фактов, но они не обязаны становиться целью одного Frame.",
+              "Так extraction не превращается в полный синтаксический разбор, замаскированный под паттерн. Учащемуся нужно полезное решение, а не все свойства предложения одновременно."
+            ]
+          },
+          {
+            "heading": "Сохраняйте фиксированные элементы, которые несут конструкцию",
+            "paragraphs": [
+              "Открывайте слоты только там, где естественны реальные подстановки. Фиксированные связки, обязательные предлоги, порядок частей или формы глагола могут быть именно тем, что нужно сохранить. Если заменить их абстрактными метками, исчезнет сам сигнал, ради которого создавался паттерн.",
+              "Затем сделайте две-три variation. Если Frame переживает смену темы и слов, сохраняя смысл и ограничения, абстракция, скорее всего, полезна. Если каждую вариацию приходится чинить вручную, Frame нужно сузить."
+            ]
+          },
+          {
+            "heading": "Храните пример и абстракцию вместе",
+            "paragraphs": [
+              "Frame без примеров легко становится загадочной формулой. Пример без Frame остаётся одноразовой фразой. Вместе они позволяют двигаться между конкретным языком и повторяемой структурой. Заодно у редактора остаётся доказательство того, почему Frame был определён именно так.",
+              "Поэтому extraction в Metkagram должен быть обратимым: из абстрактного Frame всегда можно вернуться к естественным предложениям, которые действительно его демонстрируют."
+            ]
+          }
+        ],
+        "takeaway": "Выделяйте минимальную структуру, сохраняющую полезное отношение, не удаляйте реальные ограничения и обязательно проверяйте Frame новыми предложениями до публикации."
+      }
+    }
+  },
+  {
+    "id": "bad-patterns-and-constraints",
+    "slug": "what-makes-language-pattern-useful-or-bad",
+    "category": "foundations",
+    "source_ids": ["wray-2000", "meunier-2012"],
+    "related": ["sentence-frames", "extract-frame-from-sentence", "variation-practice", "topic-sets"],
+    "locales": {
+      "en": {
+        "title": "What Makes a Language Pattern Useful — and What Makes It Bad",
+        "description": "A useful pattern captures a recurring linguistic relationship with real constraints. A bad one is often just a sentence with random words replaced by slots.",
+        "intro": "Pattern libraries can grow frighteningly fast because almost any sentence can be made to look reusable. Replace a noun with X, a clause with Y, add brackets and suddenly there is another “pattern.” Metkagram uses a stricter test. A Frame should capture a recurring language relationship, state the constraints that matter and survive variation in natural examples. Formatting alone does not create a linguistic regularity.",
+        "sections": [
+          {
+            "heading": "A useful Frame predicts something",
+            "paragraphs": [
+              "If a Frame is worth learning, it tells the learner what remains stable when content changes. That may include word order, a fixed connector, a required form, a semantic relationship or a register boundary. The Frame reduces uncertainty about how to build the next sentence.",
+              "A bad pattern merely points at holes. It tells you where substitutions happened in one example but not what substitutions are licensed or why the relationship matters."
+            ]
+          },
+          {
+            "heading": "Natural variation is a stress test",
+            "paragraphs": [
+              "Change the topic, subject or polarity. Try a second realistic context. If the Frame repeatedly produces awkward or impossible language, the abstraction is too broad or the wrong elements were declared variable. If it works only with one memorised lexical combination, perhaps it should remain an example or phrase rather than a Frame.",
+              "This is why editorial review matters more than raw catalogue size. A smaller collection of constrained objects can support better decisions than a giant library of decorative templates."
+            ]
+          },
+          {
+            "heading": "Uncertainty should be visible rather than hidden",
+            "paragraphs": [
+              "Some candidates are useful but not yet sufficiently reviewed. Metkagram’s broader architecture already distinguishes canonical objects from inferred or lower-confidence relationships. The same principle should apply to content: do not publish confidence you do not possess merely to make the catalogue look complete.",
+              "For learners and AI clients alike, a stable reviewed Frame is valuable because its meaning does not depend on guessing what an editor intended."
+            ]
+          }
+        ],
+        "takeaway": "A good language pattern preserves a real recurring relationship and its constraints. If a template cannot survive natural variation, it should not be promoted merely because it looks reusable."
+      },
+      "ru": {
+        "title": "Что делает языковой паттерн полезным — и каким бывает плохой паттерн",
+        "description": "Полезный паттерн фиксирует повторяемое языковое отношение и реальные ограничения. Плохой часто является обычным предложением со случайными слотами.",
+        "intro": "Библиотека паттернов может расти пугающе быстро, потому что почти любое предложение легко заставить выглядеть переиспользуемым. Заменили существительное на X, придаточное на Y, добавили скобки — и готов ещё один «паттерн». Metkagram использует более жёсткий тест. Frame должен фиксировать повторяемое языковое отношение, сохранять важные ограничения и переживать variation в естественных примерах. Само форматирование не создаёт языковую закономерность.",
+        "sections": [
+          {
+            "heading": "Полезный Frame что-то предсказывает",
+            "paragraphs": [
+              "Если Frame стоит учить, он объясняет, что остаётся стабильным после смены содержания. Это может быть порядок слов, фиксированная связка, обязательная форма, смысловое отношение или граница регистра. Frame уменьшает неопределённость при построении следующего предложения.",
+              "Плохой паттерн показывает только дырки. Видно, где в одном примере сделали подстановки, но неясно, какие подстановки допустимы и почему само отношение вообще важно."
+            ]
+          },
+          {
+            "heading": "Естественная variation работает как стресс-тест",
+            "paragraphs": [
+              "Поменяйте тему, субъект или отрицание. Попробуйте второй реалистичный контекст. Если Frame регулярно производит странный или невозможный язык, абстракция слишком широкая либо переменными объявлены не те элементы. Если конструкция работает только с одной выученной лексической комбинацией, возможно, ей лучше остаться примером или готовой фразой.",
+              "Поэтому редакционная проверка важнее размера каталога. Небольшое число constrained objects может поддерживать лучшие решения, чем гигантская коллекция декоративных шаблонов."
+            ]
+          },
+          {
+            "heading": "Неопределённость лучше показывать, чем прятать",
+            "paragraphs": [
+              "Некоторые кандидаты выглядят полезно, но ещё недостаточно проверены. Архитектура Metkagram уже разделяет канонические объекты и inferred или lower-confidence связи. Такой же принцип нужен контенту: нельзя публиковать уверенность, которой нет, только ради впечатляющего каталога.",
+              "И для человека, и для AI-клиента стабильный reviewed Frame ценен именно тем, что его смысл не приходится восстанавливать по догадкам о намерении редактора."
+            ]
+          }
+        ],
+        "takeaway": "Хороший паттерн сохраняет реальное повторяемое отношение и его ограничения. Если шаблон не выдерживает естественную variation, его не стоит повышать до Frame только за красивый вид."
+      }
+    }
+  },
+  {
+    "id": "pattern-library-vs-phrasebook",
+    "slug": "pattern-library-vs-phrasebook-language-learning",
+    "category": "foundations",
+    "source_ids": ["wray-2000", "schmitt-macis-siyanova-2025"],
+    "related": ["sentence-frames", "topic-sets", "patterns-vs-words", "phrasebooks-comparison"],
+    "locales": {
+      "en": {
+        "title": "Pattern Library vs Phrasebook: Reuse Instead of Scenario Lists",
+        "description": "A phrasebook gives ready-made lines for expected situations. A pattern library keeps reusable structure so the learner can build language for situations nobody pre-wrote.",
+        "intro": "Phrasebooks are useful when the world behaves as expected: ask for a room, order food, find the station. Their weakness appears when the next sentence is not in the book. A pattern library solves a different problem. It stores reusable Frames and relationships that can be adapted when the topic changes, so the learner is not limited to a catalogue of finished lines.",
+        "sections": [
+          {
+            "heading": "Phrasebooks optimise for immediate lookup",
+            "paragraphs": [
+              "A good phrasebook reduces decision-making. It gives a complete expression attached to a familiar scenario. That is exactly what a traveller may need under pressure, and there is no reason to replace it with a ten-minute grammar lesson at the airport counter.",
+              "But immediate lookup and generative learning are different goals. Memorising “Could I have the bill?” does not automatically give a reusable model for every polite request."
+            ]
+          },
+          {
+            "heading": "Frames expose what can travel to another situation",
+            "paragraphs": [
+              "A pattern library asks which part of the expression is stable and which part can change. It can connect several examples to one Frame, then link that Frame to a Move such as requesting, reframing or qualifying a claim. That makes the object useful beyond the original scenario.",
+              "The learner can still keep finished phrases. The difference is that some of them become evidence for a broader structure instead of remaining isolated entries."
+            ]
+          },
+          {
+            "heading": "The two formats belong at different moments",
+            "paragraphs": [
+              "If you need one sentence right now, use the shortest route to that sentence. If the same communication problem keeps returning, extract the Frame and practise variations. Metkagram is designed for the second task: making useful relationships discoverable and reusable.",
+              "That is why its sets are organised around jobs and decisions rather than tourist chapters. The target situation may change, but the communication operation can recur."
+            ]
+          }
+        ],
+        "takeaway": "Phrasebooks provide finished answers for expected scenarios. Pattern libraries preserve structures that can be rebuilt when the scenario changes; both are useful, but for different jobs."
+      },
+      "ru": {
+        "title": "Pattern library и разговорник: reuse вместо списка ситуаций",
+        "description": "Разговорник даёт готовые фразы для ожидаемых ситуаций. Библиотека паттернов сохраняет структуру, из которой можно построить фразу для нового контекста.",
+        "intro": "Разговорники полезны, пока мир ведёт себя ожидаемо: спросить про номер, заказать еду, найти вокзал. Слабое место появляется, когда следующей нужной фразы в книге нет. Pattern library решает другую задачу. Она хранит повторно используемые Frames и отношения, которые можно адаптировать после смены темы, поэтому человек не ограничен каталогом заранее написанных реплик.",
+        "sections": [
+          {
+            "heading": "Разговорник оптимизирует мгновенный поиск",
+            "paragraphs": [
+              "Хороший разговорник уменьшает количество решений. Он даёт законченное выражение для знакомой ситуации. Именно это может быть нужно путешественнику под давлением, и нет никакого смысла заменять такую помощь десятиминутным уроком грамматики у стойки аэропорта.",
+              "Но мгновенный lookup и генеративное обучение — разные цели. Запомненная “Could I have the bill?” сама по себе не превращается в модель для любой вежливой просьбы."
+            ]
+          },
+          {
+            "heading": "Frames показывают, что можно перенести в другую ситуацию",
+            "paragraphs": [
+              "Библиотека паттернов спрашивает, какая часть выражения стабильна, а какая способна меняться. Несколько примеров связываются с одним Frame, а Frame — с Move вроде просьбы, переопределения или ограничения тезиса. Так объект начинает работать за пределами исходной сцены.",
+              "Готовые фразы при этом не запрещены. Просто некоторые из них становятся доказательством более широкой структуры вместо того, чтобы навсегда остаться отдельными записями."
+            ]
+          },
+          {
+            "heading": "Два формата полезны в разные моменты",
+            "paragraphs": [
+              "Если фраза нужна прямо сейчас, используйте самый короткий путь к ней. Если одна и та же коммуникативная проблема возвращается, выделите Frame и потренируйте вариации. Metkagram в первую очередь спроектирован под вторую задачу — сделать полезные отношения обнаруживаемыми и повторно используемыми.",
+              "Поэтому сеты строятся вокруг jobs и decisions, а не только вокруг глав «в отеле» или «в ресторане». Конкретная ситуация меняется, но коммуникативная операция может повторяться."
+            ]
+          }
+        ],
+        "takeaway": "Разговорник даёт готовые ответы для ожидаемых ситуаций. Pattern library сохраняет структуры, которые можно пересобрать после смены контекста; оба формата полезны, но для разных задач."
+      }
+    }
+  }
+]

@@ -109,6 +109,7 @@ export function validateTeacherExportSources(packSource, patternMap, contrastMap
 
 export function validateRussianSpeakerErrors(source, patternMap) {
   if (source?.schemaVersion !== 1 || source.status !== "reviewed-pilot") throw new Error("Russian-speaker error map must be reviewed-pilot schemaVersion 1");
+  if (source.record_schema !== "/data/schemas/error-cluster.schema.json") throw new Error("Russian-speaker error map must declare the ErrorCluster schema");
   if (!Array.isArray(source.items) || source.items.length < 3) throw new Error("Russian-speaker error map requires items");
   const ids = new Set();
   const slugs = new Set();
@@ -118,6 +119,11 @@ export function validateRussianSpeakerErrors(source, patternMap) {
     ids.add(item.id);
     slugs.add(item.slug);
     if (!patternMap.has(item.pattern_id)) throw new Error(`${item.id} references missing pattern ${item.pattern_id}`);
+    if (item.review_status !== "reviewed") throw new Error(`${item.id} must be reviewed before it can enter the public ErrorCluster collection`);
+    if (!item.evidence_state?.trim()) throw new Error(`${item.id} is missing evidence_state`);
+    if (!item.provenance || typeof item.provenance !== "object") throw new Error(`${item.id} is missing provenance`);
+    if (!item.provenance.review_basis?.trim()) throw new Error(`${item.id} provenance is missing review_basis`);
+    if (!item.provenance.note?.trim()) throw new Error(`${item.id} provenance is missing note`);
     for (const field of ["title_en", "title_ru", "search_title_en", "search_title_ru", "wrong_en", "correct_en", "why_en", "why_ru", "memory_en", "memory_ru"]) {
       if (!item[field]?.trim()) throw new Error(`${item.id} is missing ${field}`);
     }
@@ -130,8 +136,6 @@ export function validatePartnershipPayload(payload) {
   }
 }
 
-// Validates the merged base + extension discovery topics. `combined` is the
-// ordered topic list, `validSets` the known study-set ids.
 export function validateDiscoveryTopics(combined, validSets) {
   const ids = new Set();
   const slugs = new Set();

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "retrieval-practice",
+    "slug": "retrieval-practice-language-learning",
+    "category": "learning-science",
+    "source_ids": ["karpicke-roediger-2008", "karpicke-roediger-2007", "webb-yanagisawa-uchihara-2020"],
+    "related": ["contrast-and-choice", "spaced-practice", "ten-minute-routine", "pattern-to-speech"],
+    "locales": {
+      "en": {
+        "title": "Retrieval Practice for Language Learning: Recall Before Re-reading",
+        "description": "Retrieval practice asks you to produce an answer from memory before seeing it again. That is why Metkagram puts Choices before explanations.",
+        "intro": "Re-reading is smooth because the answer is already present. Retrieval feels rougher because the learner must reconstruct something from memory. That difficulty is not automatically good, but a large memory-research literature shows why retrieval deserves a place in learning design. In Metkagram, retrieval appears when the learner must choose or produce a Frame before the explanation is revealed.",
+        "sections": [
+          {
+            "heading": "Recognition and retrieval answer different questions",
+            "paragraphs": [
+              "Looking at “If I had more time, I would…” and thinking “yes, I know this” measures familiarity. Facing a new condition and producing the construction without seeing it measures access. Real conversation is much closer to the second task: the sentence is not printed above your colleague’s head.",
+              "That does not make recognition useless. Examples and explanations build understanding. The problem appears when recognition is the only state ever practised and is then mistaken for readiness to produce."
+            ]
+          },
+          {
+            "heading": "Repeated retrieval became important for a reason",
+            "paragraphs": [
+              "Work by Karpicke and Roediger demonstrated that repeated testing can improve later retention relative to repeated study under specific experimental conditions, including work with foreign-language vocabulary. Those experiments helped separate the act of retrieving from simply seeing material again.",
+              "Language learning is broader than paired vocabulary, so Metkagram does not turn those results into a universal promise. The design lesson is narrower: if a learner needs later access to a Frame, give them opportunities to attempt that access now."
+            ]
+          },
+          {
+            "heading": "Feedback keeps retrieval from becoming blind guessing",
+            "paragraphs": [
+              "A Choice should be bounded enough that an answer is meaningful, then followed by feedback that explains the decisive Contrast. Otherwise active recall can degrade into repeated confident error. The learner needs to know not only which Frame fits, but why nearby alternatives do not fit the same situation.",
+              "Metkagram therefore places retrieval inside a chain: situation, attempt, feedback, contrast, new example. The attempt creates diagnostic information; the feedback turns that information into correction or confirmation."
+            ]
+          },
+          {
+            "heading": "Retrieval should become generative",
+            "paragraphs": [
+              "The practical goal is not endlessly recalling the same completed sentence. Keep the Frame, alter the content and produce something you could actually use. One day the task may be a workplace disagreement, another day a travel problem or a research claim. The structure returns, but the surface changes.",
+              "That makes retrieval a bridge toward transfer rather than a flashcard ritual. The aim is not to win against a deck; it is to make the Frame available when the next situation no longer resembles the practice screen."
+            ]
+          }
+        ],
+        "takeaway": "Retrieval practice shifts the learner from “I recognise it” toward “I can get it when I need it.” Metkagram uses Choices and production before revealing the answer."
+      },
+      "ru": {
+        "title": "Retrieval practice для языка: сначала вспомнить, потом перечитать",
+        "description": "Retrieval practice требует восстановить ответ из памяти до повторного показа. Поэтому Metkagram ставит Choices и попытку перед объяснением.",
+        "intro": "Перечитывание ощущается легко, потому что ответ уже перед глазами. Retrieval сложнее: учащемуся приходится восстанавливать информацию из памяти. Сама трудность ещё не делает упражнение полезным, но большая исследовательская традиция по памяти объясняет, почему извлечение заслуживает места в учебном дизайне. В Metkagram оно появляется, когда нужно выбрать или произвести Frame до показа объяснения.",
+        "sections": [
+          {
+            "heading": "Узнавание и извлечение отвечают на разные вопросы",
+            "paragraphs": [
+              "Смотреть на “If I had more time, I would…” и думать «да, я это знаю» — проверка знакомости. Получить новую ситуацию и самостоятельно собрать конструкцию — проверка доступа. Реальный разговор гораздо ближе ко второй задаче: нужная формула не появляется над головой собеседника в виде подсказки.",
+              "Это не делает узнавание бесполезным. Примеры и объяснения строят понимание. Проблема начинается, когда узнавание остаётся единственным режимом практики, а затем ошибочно принимается за готовность к собственной речи."
+            ]
+          },
+          {
+            "heading": "Повторное извлечение изучают не случайно",
+            "paragraphs": [
+              "Работы Karpicke и Roediger показали, что при определённых экспериментальных условиях повторное тестирование может улучшать последующее удержание по сравнению с повторным изучением; в том числе исследовалась иностранная лексика. Эти эксперименты помогли отделить акт извлечения от простого повторного предъявления.",
+              "Изучение языка гораздо шире пар «слово — перевод», поэтому Metkagram не превращает эти результаты в универсальное обещание. Вывод для дизайна уже: если Frame позже должен быть доступен без подсказки, человеку нужны попытки достать его самостоятельно уже во время практики."
+            ]
+          },
+          {
+            "heading": "Обратная связь не даёт retrieval стать угадайкой",
+            "paragraphs": [
+              "Choice должен быть достаточно ограниченным, чтобы ответ имел смысл, а затем сопровождаться объяснением решающего Contrast. Иначе активное вспоминание легко становится повторением уверенной ошибки. Нужно понимать не только, какой Frame подходит, но и почему соседние варианты не решают ту же задачу.",
+              "Поэтому Metkagram помещает retrieval в цепочку: ситуация, попытка, обратная связь, контраст, новый пример. Попытка создаёт диагностическую информацию, а обратная связь превращает её в исправление или подтверждение."
+            ]
+          },
+          {
+            "heading": "Извлечение должно переходить в генерацию",
+            "paragraphs": [
+              "Практическая цель — не бесконечно вспоминать одно и то же законченное предложение. Сохраните Frame, поменяйте содержание и скажите что-то, что действительно может вам пригодиться. Сегодня это рабочее несогласие, завтра — поездка или аргумент в статье. Структура возвращается, поверхность меняется.",
+              "Так retrieval становится мостом к переносу, а не ритуалом карточек. Цель не победить колоду, а сделать Frame доступным в момент, когда следующая ситуация уже совсем не похожа на учебный экран."
+            ]
+          }
+        ],
+        "takeaway": "Retrieval practice переводит состояние от «я узнаю это» к «я могу достать это, когда понадобится». Metkagram использует выбор и производство до показа ответа."
+      }
+    }
+  }
+]
