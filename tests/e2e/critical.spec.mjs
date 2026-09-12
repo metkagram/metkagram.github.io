@@ -10,41 +10,38 @@ test("English and Russian interfaces stay separate and locale switch preserves c
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Диалоги");
 });
 
-test("root opens the redesigned localized home", async ({ page }) => {
+test("root remains a crawlable multilingual entity gateway", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveURL(/\/en\/$/);
-  await expect(page.locator("body")).toHaveClass(/home-studio/);
-  await expect(page.getByRole("heading", { name: "Learn a language through patterns." })).toBeVisible();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByRole("heading", { name: "Metkagram." })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Open in English" })).toHaveAttribute("href", "/en/");
+  await expect(page.getByRole("link", { name: "Открыть на русском" })).toHaveAttribute("href", "/ru/");
+  await expect(page.getByRole("link", { name: "Method" })).toHaveAttribute("href", "/en/method/");
+  await expect(page.getByRole("link", { name: "Research" })).toHaveAttribute("href", "/en/research/");
+  await expect(page.getByRole("link", { name: "Cite" })).toHaveAttribute("href", "/en/cite/");
+  await expect(page.getByRole("link", { name: "Repository" })).toHaveAttribute("href", "https://github.com/metkagram/metkagram.github.io");
 });
 
-test("home keeps the interface switch and presents one unified annotation studio", async ({ page }, testInfo) => {
+test("home keeps the interface switch and leads with the real-sentence learning flow", async ({ page }) => {
   await page.goto("/en/");
   const wordmark = page.locator(".site-header .wordmark");
   await expect(wordmark.locator("img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-dark.svg");
   await expect(wordmark.locator(".wordmark-name")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
-  await expect(page.getByRole("heading", { name: "Mark what matters." })).toBeVisible();
-  await expect(page.locator(".studio-token-grid .grammar-tag")).toHaveCount(4);
-  await expect(page.locator(".studio-pattern-row")).toHaveCount(4);
-  await expect(page.locator(".studio-uses").getByRole("link", { name: /Learn/ })).toHaveAttribute("href", "/en/explore/");
-  await expect(page.locator(".studio-uses").getByRole("link", { name: /Analyse/ })).toHaveAttribute("href", "/en/practice/");
-  await expect(page.locator(".studio-uses").getByRole("link", { name: /Agents/ })).toHaveAttribute("href", "/en/ai/");
-  if (testInfo.project.name === "desktop") {
-    const layout = await page.locator(".studio-board").evaluate((board) => ({
-      titleSize: Number.parseFloat(getComputedStyle(document.querySelector(".studio-copy h1")).fontSize),
-      backdrop: getComputedStyle(document.querySelector(".studio-backdrop")).display
-    }));
-    expect(layout.backdrop).not.toBe("none");
-    expect(layout.titleSize).toBeGreaterThan(60);
-  }
+  const lensEntry = page.locator('[data-product-entry="lens"]');
+  await expect(lensEntry).toBeVisible();
+  await expect(lensEntry).toContainText("Start with a real sentence");
+  await expect(lensEntry).toHaveAttribute("href", "/en/lens/");
+  await expect(page.getByRole("link", { name: "Explore the pattern library" })).toHaveAttribute("href", "/en/practice/");
+  await expect(page.locator(".studio-board")).toHaveCount(0);
 });
 
 test("method page explains the learning loop and names its research sources", async ({ page }) => {
   await page.goto("/en/method/");
   await expect(page.locator(".site-header .wordmark img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-light.svg");
-  await expect(page.getByRole("heading", { name: "Sentence → Signal → Structure → Pattern → Variation → Recall" })).toBeVisible();
-  await expect(page.getByText("A research-oriented, NLP-ready foundation strengthens the method")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sentence → Tag → Structure → Pattern → Variation → Recall" })).toBeVisible();
+  await expect(page.getByText("Principles behind the method")).toBeVisible();
   await expect(page.getByRole("link", { name: /Karpicke \(2020\)/ })).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/33006925/");
 });
 
