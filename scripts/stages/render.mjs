@@ -19,6 +19,8 @@
 //   regenerates with extension topics and contrast-library links from;
 // - contrast-library → contrast-growth → pattern-choice-clinic → reasoning-packs
 //   → teacher-tutor-exports build on each other's pages and datasets;
+// - spoken-practice-handoff follows reasoning-packs so its bounded Pattern/Choice/Route
+//   projections resolve already validated canonical objects and can publish direct read-only lookups;
 // - lens-knowledge-bridge writes pattern-relations.json read by cross-language-transfer;
 // - learning-telemetry decorates lens/clinic/packs/transfer/exports pages and must
 //   follow their renderers;
@@ -75,6 +77,7 @@ export const RENDER_STEPS = [
   "scripts/contrast-growth.mjs",
   "scripts/pattern-choice-clinic.mjs",
   "scripts/reasoning-packs.mjs",
+  "scripts/spoken-practice-handoff.mjs",
   "scripts/lens-knowledge-bridge.mjs",
   "scripts/teacher-tutor-exports.mjs",
   "scripts/cross-language-transfer.mjs",
