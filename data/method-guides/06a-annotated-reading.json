@@ -1,0 +1,332 @@
+[
+  {
+    "id": "annotated-reading-overview",
+    "slug": "annotated-reading-language-learning",
+    "category": "annotated-reading",
+    "source_ids": ["rassaei-jabbarpoor-2025", "boers-lindstromberg-2012"],
+    "related": ["annotated-reading-first-pass", "selective-marks", "visual-marks", "noticing-textual-enhancement"],
+    "locales": {
+      "en": {
+        "title": "Annotated Reading: Learn Language Through Visible Structure",
+        "description": "A practical introduction to reading with selective in-text Marks: keep meaning first, inspect useful structure, extract a Frame, then reuse it without the cue.",
+        "intro": "Annotated reading is a simple study idea: keep the real sentence in front of you, but make one useful part of its structure easier to see. In Metkagram, compact Marks sit next to reviewed words or spans instead of replacing the sentence with a grammar diagram. The cue is temporary. Its job is to help you notice a reusable Frame, not to become a second language you must decode forever.",
+        "sections": [
+          {
+            "heading": "Read the language before you read the labels",
+            "paragraphs": [
+              "The first pass is for meaning. Read the complete sentence as language, not as a specimen on a laboratory tray. If you already understand the message, good. If not, use the translation or surrounding context before worrying about a subject tag or verb cue. Annotation is most useful when it sharpens something you have already encountered rather than interrupting every few words.",
+              "On the second pass, inspect only the Marks that answer a useful question. Where is the main action? Which part stays stable when the topic changes? Which helper changes the grammar of the main verb? The point is selective attention. Research on textual enhancement gives a reason to take visual salience seriously, but it does not say that more highlighting automatically produces more learning."
+            ]
+          },
+          {
+            "heading": "Move from the marked sentence to a Frame",
+            "paragraphs": [
+              "A marked sentence is still one example. The next useful step is to ask what can survive when the names, topic or details change. That stable structure becomes a Frame. You are no longer memorising one sentence; you are keeping a construction that can carry new content.",
+              "This is where Metkagram differs from decorative highlighting. A colour or tag is not the learning object. It is a pointer from concrete language toward a reviewed reusable form. When the Frame is clear, the Mark has done its job."
+            ],
+            "example": "Sentence → selected Marks → reusable Frame → new sentence."
+          },
+          {
+            "heading": "Then remove the support",
+            "paragraphs": [
+              "If the only version you can understand is the annotated version, the support has become a dependency. A useful routine therefore fades the Marks. Look at the sentence with cues, hide them, reconstruct the Frame, and produce a different example. Retrieval is deliberately less comfortable than rereading, but that difficulty is part of the practice rather than a defect in the interface.",
+              "Metkagram does not claim that this complete workflow is already proven as a product-level learning effect. Research cited here concerns adjacent mechanisms such as textual enhancement, formulaic language and retrieval. The workflow is a research-aware design that still deserves direct comparison with alternatives."
+            ]
+          },
+          {
+            "heading": "Use annotation where the language actually supports it",
+            "paragraphs": [
+              "Metkagram treats annotation as a language capability, not a universal decoration layer. The current reviewed annotation capability is for English and German. A language can still have useful Frames and examples without Marks; the French pilot intentionally works that way today.",
+              "That boundary keeps the idea honest. Annotated reading is valuable when the cues are linguistically reviewed and sparse enough to help. Generating colourful labels for every language before the rules are reliable would create more interface, not more knowledge."
+            ]
+          }
+        ],
+        "takeaway": "Annotated reading keeps the sentence primary. Use a small visual cue to notice structure, turn that observation into a Frame, then remove the cue and reuse the language yourself."
+      },
+      "ru": {
+        "title": "Чтение с разметкой: учим язык через видимую структуру",
+        "description": "Практическое введение в чтение с Marks прямо в тексте: сначала смысл, затем полезная структура, Frame и самостоятельное использование без подсказки.",
+        "intro": "Чтение с разметкой — простая учебная идея: перед глазами остаётся нормальное предложение, но одна полезная часть его структуры становится заметнее. В Metkagram компактные Marks стоят рядом с проверенными словами или фрагментами и не заменяют текст грамматической схемой. Подсказка временная. Она должна помочь увидеть повторно используемый Frame, а не превратиться во второй язык значков, который придётся учить отдельно.",
+        "sections": [
+          {
+            "heading": "Сначала читаем язык, потом метки",
+            "paragraphs": [
+              "Первый проход нужен для смысла. Прочитайте предложение как обычную речь, а не как объект для разбора под микроскопом. Если смысл понятен — отлично. Если нет, сначала используйте перевод или контекст и только потом смотрите на subject, verb или другую метку. Разметка полезнее, когда уточняет уже встреченную конструкцию, а не останавливает чтение через каждые три слова.",
+              "На втором проходе смотрите только на Marks, которые отвечают на конкретный вопрос. Где основное действие? Какая часть останется стабильной, если поменять тему? Какой helper меняет форму основного глагола? Это выборочное внимание. Исследования textual enhancement дают основания серьёзно относиться к визуальной заметности, но не говорят, что чем больше подсветки, тем больше обучения."
+            ]
+          },
+          {
+            "heading": "От размеченного предложения к Frame",
+            "paragraphs": [
+              "Размеченное предложение всё ещё остаётся одним примером. Следующий шаг — понять, что переживёт замену имён, темы и деталей. Эта стабильная конструкция становится Frame. Теперь задача не в том, чтобы запомнить конкретную фразу, а в том, чтобы сохранить форму, в которую можно подставлять новое содержание.",
+              "Здесь Metkagram отличается от декоративного выделения. Цвет или тег не является учебным объектом сам по себе. Это указатель от конкретного языка к проверенной переиспользуемой структуре. Когда Frame стал понятен, Mark свою работу выполнил."
+            ],
+            "example": "Предложение → выборочные Marks → переиспользуемый Frame → новое предложение."
+          },
+          {
+            "heading": "После этого подсказку нужно убрать",
+            "paragraphs": [
+              "Если вы понимаете конструкцию только в размеченном виде, поддержка превратилась в зависимость. Поэтому полезный цикл постепенно убирает Marks: посмотреть на предложение с подсказками, скрыть их, восстановить Frame и придумать другой пример. Извлечение из памяти ощущается труднее, чем повторное чтение, но эта трудность и есть часть практики.",
+              "Metkagram не утверждает, что полный workflow уже доказал собственную эффективность как единый метод. Приведённые исследования относятся к соседним механизмам: textual enhancement, formulaic language и retrieval. Мы используем их как обоснование дизайна, а итоговый подход ещё должен сравниваться с альтернативами напрямую."
+            ]
+          },
+          {
+            "heading": "Разметка нужна только там, где она действительно поддерживается",
+            "paragraphs": [
+              "Metkagram рассматривает annotation как отдельную capability языка, а не как обязательный слой для всего подряд. Сейчас проверенная разметка поддерживается для английского и немецкого. Язык может иметь полезные Frames и примеры без Marks; французский pilot намеренно работает именно так.",
+              "Эта граница делает идею честнее. Чтение с разметкой полезно, когда сигналы лингвистически проверены и достаточно редки, чтобы помогать. Автоматически раскрасить все языки до того, как правила стали надёжными, — значит добавить интерфейс, а не знание."
+            ]
+          }
+        ],
+        "takeaway": "При чтении с разметкой главным остаётся предложение. Mark помогает заметить структуру, затем она превращается во Frame, после чего подсказка убирается и язык нужно использовать самостоятельно."
+      }
+    }
+  },
+  {
+    "id": "annotated-reading-first-pass",
+    "slug": "how-to-read-annotated-sentences",
+    "category": "annotated-reading",
+    "source_ids": ["rassaei-jabbarpoor-2025", "karpicke-roediger-2008"],
+    "related": ["annotated-reading-overview", "annotation-to-frame", "fade-the-marks", "real-sentence-learning"],
+    "locales": {
+      "en": {
+        "title": "How to Read an Annotated Sentence Without Losing the Meaning",
+        "description": "A five-step routine for annotated sentences: read for meaning, inspect one cue, name the structure, hide the help and rebuild the sentence with new content.",
+        "intro": "An annotated sentence can become surprisingly hard to read if you treat every label as equally important. The better approach is staged. Meaning gets the first pass; annotation gets a short second pass; retrieval comes after that. This keeps the sentence as language rather than turning it into a puzzle where the learner spends more time reading the legend than reading the words.",
+        "sections": [
+          {
+            "heading": "Pass 1: understand the message",
+            "paragraphs": [
+              "Read the sentence with the Marks present but do not chase them yet. Ask the ordinary question: what is the speaker saying? If the sentence belongs to a dialogue or article, use that context. A translation can also be useful as support. The goal is not to prove that you can survive without help; it is to establish a meaning for the form you are about to inspect.",
+              "This order matters because a structural cue should connect form with a message. If you start by memorising S, V or another symbol while the sentence itself is still vague, you risk learning labels detached from use."
+            ]
+          },
+          {
+            "heading": "Pass 2: inspect one useful cue",
+            "paragraphs": [
+              "Choose the Mark that solves the current learning problem. Perhaps you want to see where the finite verb sits in German, which helper creates an English construction, or which span forms the stable part of a pattern. Ignore the rest for the moment. One sentence can contain many facts; one study pass does not need all of them.",
+              "Say what the cue tells you in plain language. For example: “this helper carries the tense, while this form carries the main action.” Translating a visual signal into a short explanation checks whether you actually understood the cue rather than merely noticing its colour."
+            ]
+          },
+          {
+            "heading": "Pass 3: compress the example into a Frame",
+            "paragraphs": [
+              "Now remove details that are not essential to the construction. Names, products and topics can become slots. Keep the words or relations that make the structure reusable. If the resulting Frame is so abstract that you no longer know how to speak with it, put some detail back. A good Frame is a tool, not a skeleton assembled for a grammar museum.",
+              "Compare the Frame with the original sentence once more. You should be able to point from each stable part of the Frame to evidence in the example."
+            ]
+          },
+          {
+            "heading": "Pass 4 and 5: hide, retrieve, vary",
+            "paragraphs": [
+              "Hide the annotation first, then if possible hide the Frame. Reconstruct the useful structure from the meaning or communicative job. Finally create a new sentence that changes at least one substantial element: topic, person, time, stance or situation.",
+              "This last step is where rereading becomes practice. Retrieval research is not specific proof for Metkagram, but it gives a strong reason not to end the session at recognition. A cue that never disappears can make study feel smooth while leaving very little demand on memory."
+            ],
+            "example": "Read → inspect one Mark → extract Frame → hide → rebuild with a new example."
+          }
+        ],
+        "takeaway": "Do not read annotated text from label to label. Read the message first, inspect one useful cue, compress it into a Frame, then hide the support and make the structure work again."
+      },
+      "ru": {
+        "title": "Как читать размеченное предложение и не потерять смысл",
+        "description": "Пятишаговый цикл: понять предложение, рассмотреть одну метку, назвать структуру, скрыть помощь и собрать ту же конструкцию с новым содержанием.",
+        "intro": "Размеченное предложение неожиданно легко превратить в тяжёлый ребус, если считать каждую метку одинаково важной. Лучше идти по этапам. Первый проход — смысл, короткий второй — разметка, затем retrieval. Так предложение остаётся языком, а не головоломкой, где человек читает легенду дольше, чем сам текст.",
+        "sections": [
+          {
+            "heading": "Проход 1: понять сообщение",
+            "paragraphs": [
+              "Прочитайте предложение, не гоняясь пока за Marks. Задайте обычный вопрос: что говорит человек? Если фраза взята из диалога или статьи, используйте контекст. Перевод тоже может быть нормальной опорой. Цель не в том, чтобы героически отказаться от помощи, а в том, чтобы связать будущий разбор с понятным смыслом.",
+              "Порядок важен: структурная подсказка должна соединять форму и сообщение. Если начинать с запоминания S, V или другого символа, пока сама фраза остаётся туманной, легко выучить систему значков отдельно от языка."
+            ]
+          },
+          {
+            "heading": "Проход 2: рассмотреть одну полезную метку",
+            "paragraphs": [
+              "Выберите Mark, который решает текущую учебную задачу. Возможно, вы хотите увидеть позицию finite verb в немецком, helper в английской конструкции или стабильный фрагмент паттерна. Остальное пока можно игнорировать. В одном предложении много фактов; один проход не обязан охватывать их все.",
+              "Скажите обычными словами, что именно показывает сигнал. Например: «этот helper несёт время, а эта форма — основное действие». Если удаётся перевести визуальную подсказку в короткое объяснение, значит вы поняли её функцию, а не просто заметили цвет."
+            ]
+          },
+          {
+            "heading": "Проход 3: сжать пример до Frame",
+            "paragraphs": [
+              "Теперь уберите детали, которые не определяют конструкцию. Имена, продукты и темы можно превратить в слоты. Сохраните слова или отношения, за счёт которых структура повторяется. Если Frame получился настолько абстрактным, что по нему уже непонятно, как говорить, верните часть деталей. Frame — рабочий инструмент, а не скелет для музея грамматики.",
+              "Снова сравните его с исходным предложением. У каждой стабильной части должна быть понятная опора в реальном примере."
+            ]
+          },
+          {
+            "heading": "Проходы 4–5: скрыть, вспомнить, изменить",
+            "paragraphs": [
+              "Сначала скройте разметку, затем по возможности и Frame. Попробуйте восстановить полезную конструкцию из смысла или коммуникативной задачи. После этого придумайте новое предложение и поменяйте хотя бы один существенный элемент: тему, человека, время, позицию или ситуацию.",
+              "Именно здесь перечитывание превращается в практику. Исследования retrieval не являются прямым доказательством эффективности Metkagram, но дают серьёзную причину не останавливаться на узнаваемости. Подсказка, которая никогда не исчезает, делает занятие гладким, но почти не требует работы памяти."
+            ],
+            "example": "Прочитать → посмотреть на один Mark → выделить Frame → скрыть → собрать новый пример."
+          }
+        ],
+        "takeaway": "Не читайте размеченный текст от ярлыка к ярлыку. Сначала смысл, затем одна полезная метка, Frame, скрытие поддержки и самостоятельная сборка новой фразы."
+      }
+    }
+  },
+  {
+    "id": "selective-marks",
+    "slug": "how-much-annotation-language-learning",
+    "category": "annotated-reading",
+    "source_ids": ["rassaei-jabbarpoor-2025"],
+    "related": ["annotated-reading-overview", "annotated-reading-first-pass", "fade-the-marks", "visual-marks"],
+    "locales": {
+      "en": {
+        "title": "How Much Annotation Is Enough for Language Learning?",
+        "description": "Why useful annotated reading is selective rather than exhaustive, and how to choose the few Marks that support the current learning goal without burying the sentence.",
+        "intro": "The tempting version of language annotation is also the least readable: label everything. Every noun gets a feature, every verb gets three tags, arrows cross the sentence and the learner is left with a technically rich object that no longer behaves like text. Metkagram takes the opposite position for learner-facing reading. The underlying data may be rich; the visible layer should show only what earns attention on this pass.",
+        "sections": [
+          {
+            "heading": "Annotation competes for attention with the sentence",
+            "paragraphs": [
+              "A visual cue works because it becomes salient. That is precisely why twenty cues can become a problem: they all ask to be looked at. Research on textual enhancement studies this general problem of drawing attention to target forms. The findings justify experimenting with salience, but they also give no basis for the simplistic rule that maximum salience is maximum learning.",
+              "For a learner-facing page, the sentence should still win the competition. If the first thing you notice is a forest of badges and only later discover there was a sentence underneath, the interface has inverted the priority."
+            ]
+          },
+          {
+            "heading": "Choose annotation from the learning question",
+            "paragraphs": [
+              "Start with the question, not the available labels. “Where is the main verb?” may need one cue. “How is this German clause organised?” may need two or three. “What is the reusable core of this expression?” may be better served by a pattern span than by traditional grammatical roles.",
+              "This rule also prevents annotation from becoming an encyclopaedia. A cue is shown because it helps the current decision. Facts that are correct but irrelevant can stay in the data and remain hidden."
+            ]
+          },
+          {
+            "heading": "Use layers rather than one permanent maximal view",
+            "paragraphs": [
+              "The same sentence can support several passes. One view may show the main verbal structure; another may show a reusable construction; a richer research view may expose morphology or provenance. These layers should not all be forced into one learner screenshot.",
+              "Metkagram’s annotation architecture separates the original text from spans, which makes selective rendering possible. The learner can receive a small signal while the system keeps a more inspectable record underneath."
+            ]
+          },
+          {
+            "heading": "A practical test: remove every Mark that cannot justify itself",
+            "paragraphs": [
+              "For each visible cue, ask what the learner can do after seeing it that was harder before. Locate a verb? Compare word order? Extract a Frame? Avoid a predictable mistake? If the answer is merely “it is linguistically true,” the information may belong in an inspector or reference view rather than the reading layer.",
+              "Minimal does not mean vague. The remaining Marks must still be explicit enough to understand without relying on colour alone. Selectivity is about reducing noise, not hiding meaning."
+            ]
+          }
+        ],
+        "takeaway": "The best learner annotation is not the richest possible parse. Show the few Marks that serve the current question, keep the text readable and leave deeper layers available when they are actually needed."
+      },
+      "ru": {
+        "title": "Сколько разметки действительно нужно при изучении языка",
+        "description": "Почему полезная разметка должна быть выборочной и как показывать только те Marks, которые помогают текущей учебной задаче, не пряча само предложение.",
+        "intro": "Самая соблазнительная версия языковой разметки одновременно и самая тяжёлая для чтения: подписать всё. У каждого существительного появляется признак, у каждого глагола три ярлыка, через предложение идут стрелки, и перед учащимся уже не текст, а технически богатый объект. В learner-facing чтении Metkagram выбирает обратный принцип. Внутренние данные могут быть подробными; на экране остаётся только то, что заслуживает внимания на этом проходе.",
+        "sections": [
+          {
+            "heading": "Разметка конкурирует за внимание с самим предложением",
+            "paragraphs": [
+              "Визуальный сигнал работает потому, что становится заметным. Именно поэтому двадцать сигналов легко создают проблему: каждый просит на него посмотреть. Исследования textual enhancement изучают общий эффект привлечения внимания к целевым формам. Они дают основания экспериментировать с заметностью, но не подтверждают примитивное правило «больше выделения — больше обучения».",
+              "На учебной странице предложение должно выигрывать эту конкуренцию. Если сначала виден лес бейджей и только потом обнаруживается, что под ними была фраза, интерфейс поменял приоритеты местами."
+            ]
+          },
+          {
+            "heading": "Выбирать Marks нужно от учебного вопроса",
+            "paragraphs": [
+              "Начинайте с вопроса, а не со списка доступных тегов. «Где основной глагол?» может требовать одной метки. «Как организовано это немецкое придаточное?» — двух или трёх. «Какая часть выражения повторно используется?» иногда лучше решается выделением construction span, а не классическими грамматическими ролями.",
+              "Это правило не даёт разметке превратиться в энциклопедию. Подсказка показывается потому, что помогает текущему решению. Верная, но сейчас бесполезная информация может оставаться в данных и не занимать экран."
+            ]
+          },
+          {
+            "heading": "Лучше слои, чем один вечный максимальный режим",
+            "paragraphs": [
+              "Одно и то же предложение может поддерживать несколько проходов. Один режим показывает основную verbal structure, другой — переиспользуемую конструкцию, исследовательский — morphology или provenance. Не нужно одновременно запихивать все эти уровни в один learner screenshot.",
+              "Архитектура annotation в Metkagram хранит исходный текст отдельно от spans, поэтому выборочный рендеринг возможен технически. Учащийся видит небольшой сигнал, а система при этом сохраняет более подробную и проверяемую запись."
+            ]
+          },
+          {
+            "heading": "Практический тест: убрать каждый Mark, который не может себя оправдать",
+            "paragraphs": [
+              "Для каждой видимой подсказки спросите: что человек сможет сделать после неё, что до неё было сложнее? Найти verb? Сравнить word order? Выделить Frame? Не совершить типичную ошибку? Если ответ только «эта информация лингвистически верна», возможно, ей место в inspector или reference view, а не в режиме чтения.",
+              "Минимальность не означает туманность. Оставшиеся Marks должны быть достаточно явными и понятными без зависимости только от цвета. Selectivity уменьшает шум, а не смысл."
+            ]
+          }
+        ],
+        "takeaway": "Лучшая учебная разметка — не самый подробный parse. Показывайте несколько Marks, которые решают текущий вопрос, сохраняйте текст читаемым, а глубокие слои открывайте только по необходимости."
+      }
+    }
+  },
+  {
+    "id": "annotation-to-frame",
+    "slug": "annotation-to-sentence-frame",
+    "category": "annotated-reading",
+    "source_ids": ["boers-lindstromberg-2012", "wray-2000"],
+    "related": ["annotated-reading-first-pass", "fade-the-marks", "annotated-reading-to-speaking", "sentence-frames"],
+    "locales": {
+      "en": {
+        "title": "From Annotation to Sentence Frame: What Should You Keep?",
+        "description": "Learn how to turn a marked example into a reusable sentence Frame by separating stable structure from replaceable content instead of memorising the whole line.",
+        "intro": "Annotation becomes much more useful when it helps answer a forward-looking question: what from this sentence should I be able to use tomorrow? The answer is rarely every word. A good Frame preserves the stable language that performs a useful job and turns the changing content into slots. Marks can make that boundary easier to inspect, but the learner still has to decide what deserves to survive the example.",
+        "sections": [
+          {
+            "heading": "Do not confuse the example with the reusable object",
+            "paragraphs": [
+              "A memorable sentence can be valuable, but it is still tied to one topic. If you only repeat it intact, you may become excellent at saying something you never need to say. The Frame asks a different question: which structure could carry many messages?",
+              "Formulaic-language research gives a strong reason to take recurring multiword sequences seriously. That does not mean every frequent string is worth memorising. For Metkagram, reuse and communicative function are editorial filters, not merely frequency counts."
+            ]
+          },
+          {
+            "heading": "Keep the words that carry the construction",
+            "paragraphs": [
+              "Look at the annotated example and identify the parts whose relationship creates the target form. A Mark may point to a helper, a verb form, a clause boundary or a construction span. Keep those stable elements. Replace topic-specific nouns, names or claims with slots only where substitution remains natural.",
+              "A Frame should still sound like language when you read it aloud. If abstraction produces a sequence of brackets with no obvious rhythm or grammar, it may be too compressed to teach from."
+            ],
+            "example": "Example: “It’s not that the plan is bad; it’s that it is too expensive.” → Frame: “It’s not that [X]; it’s that [Y].”"
+          },
+          {
+            "heading": "Test the Frame with variation",
+            "paragraphs": [
+              "Before saving a Frame, make two or three new examples. Change more than one noun. Try another topic, another person or a different level of formality. If the supposed Frame collapses as soon as context changes, you may have extracted an accident of one sentence rather than a reusable pattern.",
+              "Variation is also a quality check on the annotation. A Mark that looked meaningful in one sentence should still describe the same functional role in the new examples."
+            ]
+          },
+          {
+            "heading": "Connect form to the Move it performs",
+            "paragraphs": [
+              "A Frame becomes easier to choose when you know what job it does. “It’s not that [X]; it’s that [Y]” is not simply a semicolon pattern; it can correct how a problem has been framed. Another language may use a different Frame for a similar Move.",
+              "Keeping this distinction prevents annotation from shrinking language into syntax. The visible structure matters because speakers use it to reason, hedge, contrast, clarify or organise interaction."
+            ]
+          }
+        ],
+        "takeaway": "Use Marks to find the structural evidence, then keep a Frame that survives variation and still performs a clear communicative job. The reusable object is the construction, not the coloured example."
+      },
+      "ru": {
+        "title": "От разметки к Frame: что именно стоит запоминать",
+        "description": "Как превратить размеченный пример в переиспользуемый sentence Frame: отделить стабильную конструкцию от сменного содержания и не зубрить всю строку.",
+        "intro": "Разметка становится значительно полезнее, когда помогает ответить на вопрос о будущем: что из этого предложения я должен суметь использовать завтра? Ответ редко звучит как «каждое слово». Хороший Frame сохраняет стабильный язык, выполняющий полезную задачу, а меняющееся содержание превращает в слоты. Marks помогают увидеть границу, но решение о том, что должно пережить конкретный пример, всё равно остаётся учебной работой.",
+        "sections": [
+          {
+            "heading": "Не путайте пример с переиспользуемым объектом",
+            "paragraphs": [
+              "Запоминающаяся фраза полезна, но всё ещё привязана к одной теме. Если повторять её только целиком, можно идеально научиться говорить то, что вам никогда не понадобится. Frame задаёт другой вопрос: какая структура способна нести множество сообщений?",
+              "Исследования formulaic language дают серьёзные основания обращать внимание на повторяющиеся многословные последовательности. Но из этого не следует, что любую частую строку нужно учить. В Metkagram повторное использование и коммуникативная функция — редакционные фильтры, а не просто счётчик частоты."
+            ]
+          },
+          {
+            "heading": "Сохраняйте слова, которые несут конструкцию",
+            "paragraphs": [
+              "Посмотрите на размеченный пример и найдите части, чьё отношение создаёт нужную форму. Mark может указывать на helper, форму глагола, границу clause или construction span. Стабильные элементы остаются. Тематические существительные, имена и конкретные утверждения превращаются в слоты только там, где замена звучит естественно.",
+              "Frame должен всё ещё ощущаться языком, если прочитать его вслух. Если после абстракции остаётся цепочка скобок без понятного ритма и грамматики, вероятно, мы сжали пример слишком сильно."
+            ],
+            "example": "Пример: “It’s not that the plan is bad; it’s that it is too expensive.” → Frame: “It’s not that [X]; it’s that [Y].”"
+          },
+          {
+            "heading": "Проверьте Frame вариациями",
+            "paragraphs": [
+              "Перед сохранением придумайте два-три новых примера. Поменяйте не только одно существительное: возьмите другую тему, другого участника, иной уровень формальности. Если предполагаемый Frame разваливается при первой смене контекста, возможно, мы выделили случайную особенность одной фразы, а не рабочий паттерн.",
+              "Variation одновременно проверяет качество annotation. Mark, который выглядел осмысленно в первом предложении, должен описывать ту же функциональную роль и в новых примерах."
+            ]
+          },
+          {
+            "heading": "Свяжите форму с Move, который она выполняет",
+            "paragraphs": [
+              "Frame легче выбирать, когда понятна его работа. “It’s not that [X]; it’s that [Y]” — не просто схема с точкой с запятой; она может исправлять то, как собеседник сформулировал проблему. В другом языке похожий Move может реализовываться совсем другим Frame.",
+              "Это различие не позволяет разметке свести язык к синтаксису. Видимая структура важна потому, что с её помощью люди уточняют, возражают, смягчают, противопоставляют и организуют разговор."
+            ]
+          }
+        ],
+        "takeaway": "Используйте Marks, чтобы увидеть структурное доказательство, затем сохраняйте Frame, который переживает вариации и выполняет понятную коммуникативную задачу. Учебный объект — конструкция, а не цветной пример."
+      }
+    }
+  }
+]
