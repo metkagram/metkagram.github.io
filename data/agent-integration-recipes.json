@@ -46,6 +46,14 @@
       "output_contract": ["keep the shared stable Pattern ID", "preserve both canonical language forms", "state that the mapping is functional rather than word-for-word equivalence", "keep provenance and canonical link"]
     },
     {
+      "id": "canonical-object-to-spoken-practice",
+      "job": "Project one reviewed canonical language object into a bounded external spoken-practice task without adding speech-analysis claims or copying the corpus.",
+      "entrypoint": "/api/v1/spoken-practice-handoffs.json",
+      "lookup": {"handoff_id": "metkagram:spoken-practice:v1:pattern-evidence-without-overclaiming"},
+      "expected": {"source_type": "pattern", "source_id": "CLF051", "provider_id": "provider-neutral-reference", "practice_language": "en"},
+      "output_contract": ["preserve handoff ID and canonical source ID/URL", "preserve source provenance, dataset version and rights references", "treat the prompt as one immutable user-requested practice snapshot rather than a corpus export", "leave recording, delivery feedback and speech evaluation to the external consumer"]
+    },
+    {
       "id": "abstain-on-missing-pattern",
       "job": "Refuse to fabricate a Metkagram object when a requested stable Pattern ID does not exist.",
       "entrypoint": "/api/v1/patterns/metkagram-does-not-exist.json",
