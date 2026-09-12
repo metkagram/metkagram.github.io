@@ -18,8 +18,8 @@ const COPY = {
   en: {
     eyebrow: "Mark–Frame Method",
     hubTitle: "How Metkagram Turns Sentences into Reusable Language",
-    hubDescription: "A research-aware guide to the Metkagram Mark–Frame Method: visual Marks, sentence Frames, communicative Moves, retrieval, spacing, transfer and practical pattern sets.",
-    hubIntro: "Metkagram starts with meaningful language and tries to make reusable structure easier to see, compare, retrieve and reuse. This guide collection explains the method, the research traditions that inform its design, the practical sets built on top of it and the boundaries of what the project can currently claim.",
+    hubDescription: "A research-aware guide to the Metkagram Mark–Frame Method: visual Marks, annotated reading, sentence Frames, communicative Moves, retrieval, spacing and transfer.",
+    hubIntro: "Metkagram starts with meaningful language and tries to make reusable structure easier to see, compare, retrieve and reuse. This guide collection explains the method, a practical annotated-reading path, the research traditions that inform its design, the pattern sets built on top of it and the boundaries of what the project can currently claim.",
     count: `${METHOD_GUIDE_COUNT} guides · ${METHOD_GUIDE_COUNT * METHOD_GUIDE_LOCALES.length} localized articles`,
     researchLabel: "Research context",
     evidenceLabel: "Evidence boundary",
@@ -30,11 +30,12 @@ const COPY = {
     open: "Read guide",
     methodLink: "Explore the full method guide",
     methodPreviewTitle: "Explore the method beyond the overview",
-    methodPreviewText: "Twenty-five focused guides connect the Mark–Frame workflow to practical pattern study, learning research, cross-language transfer and honest comparisons with other study formats.",
+    methodPreviewText: "Focused guides connect the Mark–Frame workflow to annotated reading, practical pattern study, learning research, cross-language transfer and honest comparisons with other study formats.",
     sourceNote: "Metkagram separates product design, research rationale, hypotheses and direct evidence. Sources below support the research context described on this page, not an efficacy claim for the complete product.",
     categories: {
       foundations: ["Method foundations", "Start with the objects: Marks, Frames, Moves, Contrasts and the complete learning loop."],
       "learning-science": ["Learning science around the method", "See how noticing, formulaic language, retrieval, spacing and variation inform the design without becoming product-level proof."],
+      "annotated-reading": ["Annotated reading", "Read the sentence first, use selective Marks to inspect structure, then fade the support and reuse the Frame without the cue."],
       practice: ["How to practise", "Turn a real sentence or focused set into a short repeatable learning routine."],
       transfer: ["Transfer and multilingual reuse", "Move a Frame into speech, new contexts and other languages without reducing everything to literal translation."],
       comparisons: ["Useful comparisons", "Understand where Frames differ from flashcards, grammar apps, isolated words and generated AI tutoring."],
@@ -43,8 +44,8 @@ const COPY = {
   ru: {
     eyebrow: "Метод Mark–Frame",
     hubTitle: "Как Metkagram превращает предложения в повторно используемый язык",
-    hubDescription: "Исследовательский гид по Metkagram Mark–Frame Method: визуальные Marks, sentence Frames, Moves, retrieval, spacing, transfer и практические сеты паттернов.",
-    hubIntro: "Metkagram начинает с осмысленного языка и старается сделать повторяемую структуру видимой, сравнимой, доступной из памяти и пригодной для новой ситуации. Этот кластер объясняет сам метод, исследовательские традиции вокруг его дизайна, практические сеты и границы того, что проект сейчас может утверждать.",
+    hubDescription: "Исследовательский гид по Metkagram Mark–Frame Method: визуальные Marks, чтение с разметкой, sentence Frames, Moves, retrieval, spacing и transfer.",
+    hubIntro: "Metkagram начинает с осмысленного языка и старается сделать повторяемую структуру видимой, сравнимой, доступной из памяти и пригодной для новой ситуации. Этот кластер объясняет сам метод, отдельную траекторию чтения с разметкой, исследовательские традиции вокруг дизайна, практические сеты и границы того, что проект сейчас может утверждать.",
     count: `${METHOD_GUIDE_COUNT} тем · ${METHOD_GUIDE_COUNT * METHOD_GUIDE_LOCALES.length} локализованных статей`,
     researchLabel: "Исследовательский контекст",
     evidenceLabel: "Граница доказательности",
@@ -55,11 +56,12 @@ const COPY = {
     open: "Читать",
     methodLink: "Открыть полный гид по методу",
     methodPreviewTitle: "Метод глубже одной обзорной страницы",
-    methodPreviewText: "Двадцать пять сфокусированных тем связывают Mark–Frame workflow с практикой паттернов, исследованиями обучения, межъязыковым переносом и честным сравнением других форматов.",
+    methodPreviewText: "Сфокусированные темы связывают Mark–Frame workflow с чтением по разметке, практикой паттернов, исследованиями обучения, межъязыковым переносом и честным сравнением других форматов.",
     sourceNote: "Metkagram разделяет дизайн продукта, исследовательское обоснование, гипотезы и прямые доказательства. Источники ниже поддерживают исследовательский контекст страницы, а не claim об эффективности всего продукта.",
     categories: {
       foundations: ["Основа метода", "Начните с объектов метода: Marks, Frames, Moves, Contrasts и полного учебного цикла."],
       "learning-science": ["Наука об обучении вокруг метода", "Разбираем noticing, formulaic language, retrieval, spacing и variation без превращения исследований компонентов в доказательство всего продукта."],
+      "annotated-reading": ["Чтение с разметкой", "Сначала читаем предложение, затем используем выборочные Marks, чтобы увидеть структуру, после чего убираем подсказку и используем Frame самостоятельно."],
       practice: ["Как практиковаться", "Превращаем реальное предложение или фокусный сет в короткий повторяемый учебный цикл."],
       transfer: ["Transfer и многоязычный reuse", "Переносим Frame в речь, новые контексты и другие языки без сведения всего к буквальному переводу."],
       comparisons: ["Полезные сравнения", "Смотрим, чем Frames отличаются от flashcards, grammar apps, отдельных слов и генеративных AI-тьюторов."],
@@ -190,7 +192,7 @@ function enhanceMethodPage(locale) {
   let html = fs.readFileSync(file, "utf8");
   if (html.includes('id="method-guide-cluster"')) return;
   const c = COPY[locale];
-  const featuredIds = ["method-overview", "visual-marks", "retrieval-practice", "topic-sets", "evidence-boundary"];
+  const featuredIds = ["method-overview", "visual-marks", "annotated-reading-overview", "retrieval-practice", "topic-sets", "evidence-boundary"];
   const featured = featuredIds.map((id) => guideById.get(id)).map((guide) => `<a href="${route(locale, guide)}"><strong>${escapeHtml(guide.locales[locale].title)}</strong><span>${escapeHtml(guide.locales[locale].description)}</span></a>`).join("");
   const section = `<section id="method-guide-cluster" class="method-guide-preview section-pad"><p class="eyebrow">${escapeHtml(c.eyebrow)}</p><h2>${escapeHtml(c.methodPreviewTitle)}</h2><p>${escapeHtml(c.methodPreviewText)}</p><div>${featured}</div><a class="method-guide-preview-all" href="${hubRoute(locale)}">${escapeHtml(c.methodLink)} →</a></section>`;
   if (!html.includes("</main>")) throw new Error(`Method page has no </main> marker: ${relative}`);
