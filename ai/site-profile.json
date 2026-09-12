@@ -31,6 +31,13 @@
         "description": "Static tool-to-URL description for the read-only local Metkagram bridge; this is not declared as a hosted MCP server."
       },
       {
+        "name": "Metkagram verified agent integration cookbook",
+        "url": "https://metkagram.github.io/api/v1/agent-integration-recipes.json",
+        "mediaType": "application/json",
+        "role": "other",
+        "description": "Provider-neutral recipes verified against current public Metkagram objects, including provenance preservation and explicit abstention when a reviewed object does not resolve."
+      },
+      {
         "name": "Metkagram agent locale manifest",
         "url": "https://metkagram.github.io/ai/locales.json",
         "mediaType": "application/json",
