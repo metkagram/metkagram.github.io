@@ -21,6 +21,8 @@
 //   → teacher-tutor-exports build on each other's pages and datasets;
 // - spoken-practice-handoff follows reasoning-packs so its bounded Pattern/Choice/Route
 //   projections resolve already validated canonical objects and can publish direct read-only lookups;
+// - reviewed-discovery follows Routes and the handoff API so Practice can lead with
+//   explicit A/B readiness while preserving the complete canonical reference catalogue;
 // - lens-knowledge-bridge writes pattern-relations.json read by cross-language-transfer;
 // - learning-telemetry decorates lens/clinic/packs/transfer/exports pages and must
 //   follow their renderers;
@@ -78,6 +80,7 @@ export const RENDER_STEPS = [
   "scripts/pattern-choice-clinic.mjs",
   "scripts/reasoning-packs.mjs",
   "scripts/spoken-practice-handoff.mjs",
+  "scripts/reviewed-discovery.mjs",
   "scripts/lens-knowledge-bridge.mjs",
   "scripts/teacher-tutor-exports.mjs",
   "scripts/cross-language-transfer.mjs",
