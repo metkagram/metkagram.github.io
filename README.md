@@ -75,9 +75,9 @@ Pattern Bridge supports reviewed cross-language retrieval. A Bridge is not a lea
 
 ### Ptichi spoken-practice integration
 
-Ptichi is the first intended spoken-rehearsal consumer of Metkagram's provider-neutral practice handoff. The products stay separate: Metkagram supplies reviewed language objects and communicative intent; Ptichi will consume a small provenance-safe module and own local recording, self-listening, A/B comparison and changed-context transfer.
+Ptichi is the first intended spoken-rehearsal consumer of Metkagram's provider-neutral practice handoff. The products stay separate: Metkagram supplies reviewed language objects and communicative intent; Ptichi can consume a small provenance-safe module and own local recording, self-listening, A/B comparison and changed-context transfer.
 
-**Current status:** the integration architecture and Metkagram-side contract are in development. Native Ptichi module loading is **not released yet**, and Metkagram remains fully useful on its own. See [docs/PTICHI_INTEGRATION.md](docs/PTICHI_INTEGRATION.md) and issue #117 for the provider-side work.
+**Current status:** the Metkagram-side handoff contract and static API reference are published. Native Ptichi module loading and a production `Open in Ptichi` action are **not released yet**, and Metkagram remains fully useful on its own. See [docs/PTICHI_INTEGRATION.md](docs/PTICHI_INTEGRATION.md) and [docs/SPOKEN_PRACTICE_HANDOFF.md](docs/SPOKEN_PRACTICE_HANDOFF.md).
 
 ## Multilingual architecture
 
