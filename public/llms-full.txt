@@ -21,6 +21,17 @@
 - Attribution and provenance: https://metkagram.github.io/api/v1/attribution.json
 - MCP-compatible tool description: https://metkagram.github.io/api/v1/mcp-server.json
 
+## Spoken-practice handoff
+
+Metkagram can project one reviewed language object into an external rehearsal tool without becoming a speech engine or copying the corpus.
+
+- Contract schema: https://metkagram.github.io/api/v1/schemas/spoken-practice-handoff.json
+- Reference handoffs: https://metkagram.github.io/api/v1/spoken-practice-handoffs.json
+- Direct Choice lookup: https://metkagram.github.io/api/v1/choices/{id}.json
+- Direct Route lookup: https://metkagram.github.io/api/v1/routes/{id}.json
+
+Treat each handoff as one immutable, user-requested practice snapshot. Preserve the source stable ID, canonical URL, provenance, rights and language context. Do not infer additional objects, mirror the Metkagram corpus, or treat a handoff as evidence that any downstream speech product is released or effective. Metkagram owns the language structure and prompt; the external rehearsal tool owns recording, playback, speech evidence, feedback and local session state.
+
 ## Retrieval rules
 
 1. Resolve canonical pattern or study-set URLs before citing a record.
@@ -28,6 +39,7 @@
 3. Prefer reviewed and canonical records over migration or legacy aliases.
 4. Treat generated practice material as learning support, not linguistic authority.
 5. Keep translations and cross-language transfers explicit; do not infer equivalence without the published relation.
+6. For spoken rehearsal, resolve the published handoff/API contract rather than inventing a provider-specific transport, score, acoustic target or completion callback.
 
 ## Public scope
 
