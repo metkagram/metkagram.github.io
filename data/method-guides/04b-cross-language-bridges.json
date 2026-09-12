@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cross-language-bridges",
+    "slug": "cross-language-bridges-not-literal-translation",
+    "category": "transfer",
+    "source_ids": ["wray-2000", "schmitt-macis-siyanova-2025"],
+    "related": ["communicative-moves", "transfer-reuse", "german-sentence-patterns", "english-russian-transfer"],
+    "locales": {
+      "en": {
+        "title": "Cross-Language Bridges: Same Move, Different Wording",
+        "description": "A Metkagram Bridge links reviewed Frames across languages by communicative function without pretending that natural expressions translate word for word.",
+        "intro": "Bilingual learning materials often encourage a dangerous shortcut: line up two sentences and assume every part has a direct partner. Real languages are less cooperative. Metkagram uses Bridges to connect reviewed Frames when they perform the same or a closely related Move, while preserving the fact that wording, grammar, register and typical context can differ.",
+        "sections": [
+          {
+            "heading": "Function is a safer starting point than surface similarity",
+            "paragraphs": [
+              "If an English Frame is used to soften disagreement, the useful question is not “which German or Russian words replace these English words?” It is “how is this communicative job naturally performed in the other language?” Sometimes the answer is structurally similar. Sometimes it is not.",
+              "A Move provides the language-independent anchor. Frames remain language-specific, and the Bridge records a reviewed relationship between them."
+            ]
+          },
+          {
+            "heading": "A Bridge can include asymmetry",
+            "paragraphs": [
+              "Two Frames may overlap in one context but diverge in another. One can sound more formal, more direct or less common. A useful Bridge should preserve those differences instead of flattening them into an equals sign.",
+              "This is why Metkagram avoids generating cross-language relations automatically from translation fields. Translation can suggest a candidate; editorial review decides whether the functional correspondence is strong enough to publish."
+            ]
+          },
+          {
+            "heading": "Bridges support transfer without teaching translation dependence",
+            "paragraphs": [
+              "For a learner, a Bridge can start from a familiar Move, then show how another language realises it. The learner gets a conceptual foothold without being told to translate every future sentence through the first language.",
+              "The long-term goal is independent retrieval: situation → Move → language-specific Frame. The Bridge helps build that path, but it should eventually stop being a required intermediate step."
+            ]
+          }
+        ],
+        "takeaway": "A Bridge connects functions, not word-for-word strings. It helps learners transfer a communicative Move across languages while respecting language-specific Frames and their differences."
+      },
+      "ru": {
+        "title": "Cross-Language Bridges: один Move, разные формулировки",
+        "description": "Bridge в Metkagram связывает проверенные Frames разных языков по функции, не делая вид, что естественные выражения переводятся слово в слово.",
+        "intro": "Двуязычные материалы часто подталкивают к опасному сокращению пути: поставить два предложения рядом и решить, что каждой части обязательно соответствует близнец. Реальные языки так не обязаны работать. Metkagram использует Bridges, чтобы связывать проверенные Frames, выполняющие один или близкий Move, сохраняя различия в словах, грамматике, регистре и типичном контексте.",
+        "sections": [
+          {
+            "heading": "Функция безопаснее поверхностного сходства",
+            "paragraphs": [
+              "Если английский Frame смягчает несогласие, полезный вопрос не «какими немецкими или русскими словами заменить английские?», а «как эта коммуникативная задача естественно решается в другом языке?». Иногда структуры похожи. Иногда — совсем нет.",
+              "Move становится языково-независимой опорой. Frames остаются привязаны к конкретному языку, а Bridge фиксирует проверенное отношение между ними."
+            ]
+          },
+          {
+            "heading": "Bridge может быть асимметричным",
+            "paragraphs": [
+              "Два Frames способны хорошо совпадать в одном контексте и расходиться в другом. Один вариант может звучать формальнее, прямее или просто встречаться реже. Полезный Bridge должен сохранить эти различия, а не расплющить их знаком равенства.",
+              "Поэтому Metkagram не создаёт межъязыковые связи автоматически из полей перевода. Перевод может подсказать кандидата, но публикация функционального соответствия требует редакционной проверки."
+            ]
+          },
+          {
+            "heading": "Bridge помогает переносу, но не учит вечному переводу в голове",
+            "paragraphs": [
+              "Для учащегося Bridge может начать с знакомого Move и показать, как другой язык его реализует. Появляется концептуальная опора, но человеку не предлагают навсегда прогонять каждую новую фразу через первый язык.",
+              "Долгосрочная цель — самостоятельный путь: ситуация → Move → Frame конкретного языка. Bridge помогает его построить, но постепенно должен перестать быть обязательной промежуточной ступенью."
+            ]
+          }
+        ],
+        "takeaway": "Bridge соединяет функции, а не пословные строки. Он помогает переносить коммуникативный Move между языками, сохраняя самостоятельность и различия языковых Frames."
+      }
+    }
+  }
+]

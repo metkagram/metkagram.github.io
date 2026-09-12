@@ -1,0 +1,83 @@
+[
+  {
+    "id": "formulaic-language",
+    "slug": "formulaic-language-sentence-frames-second-language",
+    "category": "learning-science",
+    "source_ids": ["wray-2000", "boers-lindstromberg-2012", "schmitt-macis-siyanova-2025", "puimege-2024"],
+    "related": ["sentence-frames", "pattern-to-speech", "b2-c1-patterns", "real-sentence-learning"],
+    "locales": {
+      "en": {
+        "title": "Formulaic Language and Sentence Frames: What Research Says",
+        "description": "Formulaic language research studies recurring multiword units, collocations and frames. Here is how that literature relates to Metkagram without overselling it.",
+        "intro": "Language is not produced one isolated word at a time. Speakers repeatedly use multiword combinations, collocations, idioms and partly fixed frames. Researchers often discuss these under the broad area of formulaic language, although definitions differ across studies. Metkagram’s Frames live near this territory: they are reusable structures larger than a single word, but the project gives them its own explicit data model and learning workflow.",
+        "sections": [
+          {
+            "heading": "Formulaic does not mean frozen",
+            "paragraphs": [
+              "Some formulaic units are almost fixed, while others contain open slots. “On the other hand” behaves differently from “The point is not X; it is Y,” yet both show why a vocabulary-only view of language is incomplete. Useful knowledge often includes relationships between words and recurring ways of organising meaning.",
+              "For learners, this matters because knowing every word in a sentence does not guarantee being able to assemble an idiomatic sentence quickly. A repertoire of recurring units can provide larger pieces from which speech and writing are built."
+            ]
+          },
+          {
+            "heading": "The research area is useful and methodologically messy",
+            "paragraphs": [
+              "Reviews by Wray, Boers and Lindstromberg, Meunier, and more recent scholarship describe extensive work on formulaic sequences in second-language learning. They also show a recurring methodological issue: researchers do not always mean exactly the same thing by formulaicity, and different kinds of units should not be collapsed into one bucket.",
+              "Metkagram therefore uses the literature as a neighbouring evidence base rather than claiming that every Frame has inherited a proven effect. A Frame is a project-defined reviewed object with constraints, examples, language identity and links to Moves or Contrasts."
+            ]
+          },
+          {
+            "heading": "Attention, exposure and retrieval all matter after the unit is found",
+            "paragraphs": [
+              "Identifying a useful sequence is only the start. Intervention research has explored drawing attention to formulaic sequences, using corpus tools, repeated exposure and activities that help learners remember and use them. Recent work also studies how formulaic sequences are learned from meaning-focused activities rather than only explicit drills.",
+              "That variety fits Metkagram’s philosophy: a Frame should appear in meaningful examples, recur in different contexts and eventually be retrieved for a new task. The system does not assume that displaying a pattern once is equivalent to learning it."
+            ]
+          },
+          {
+            "heading": "A Frame needs a real linguistic regularity behind it",
+            "paragraphs": [
+              "The temptation in a pattern library is quantity. Replace enough nouns with brackets and almost any sentence can masquerade as a reusable frame. Formulaic-language research is a reminder that recurrence, conventionality, processing and pedagogical usefulness are empirical questions, not formatting choices.",
+              "Metkagram’s editorial challenge is therefore to keep Frames that capture useful regularities, attach realistic examples and mark uncertainty instead of manufacturing a huge but shallow catalogue. A smaller reviewed Frame can be more valuable than twenty templates that merely look systematic."
+            ]
+          }
+        ],
+        "takeaway": "Formulaic-language research supports taking recurring multiword structure seriously. Metkagram turns that broad insight into reviewed Frames while keeping product claims separate from the literature."
+      },
+      "ru": {
+        "title": "Formulaic language и sentence frames: что говорит исследование",
+        "description": "Исследования formulaic language изучают устойчивые сочетания, коллокации и frames. Разбираем, как это связано с Metkagram без лишних обещаний.",
+        "intro": "Язык не производится по одному изолированному слову за раз. Говорящие постоянно используют многословные сочетания, коллокации, идиомы и частично фиксированные конструкции. Исследователи часто объединяют такие явления в область formulaic language, хотя определения между работами различаются. Frames в Metkagram находятся рядом с этой областью: это переиспользуемые структуры крупнее слова, но проект задаёт для них собственную явную модель данных и учебный цикл.",
+        "sections": [
+          {
+            "heading": "Formulaic не значит полностью застывший",
+            "paragraphs": [
+              "Некоторые единицы почти фиксированы, другие содержат открытые слоты. “On the other hand” устроено не так, как “The point is not X; it is Y,” но оба примера показывают, почему языка как списка отдельных слов недостаточно. Полезное знание включает связи между словами и повторяющиеся способы организовать смысл.",
+              "Для учащегося это важно ещё и потому, что знание всех слов предложения не гарантирует способность быстро собрать естественную фразу. Запас повторяющихся единиц даёт более крупные строительные блоки для речи и письма."
+            ]
+          },
+          {
+            "heading": "Область полезная, но методологически неоднородная",
+            "paragraphs": [
+              "Обзоры Wray, Boers и Lindstromberg, Meunier и более новые работы описывают большой пласт исследований formulaic sequences во втором языке. Одновременно они показывают проблему: под formulaicity разные авторы не всегда понимают одно и то же, а разные типы единиц опасно сваливать в одну корзину.",
+              "Поэтому Metkagram использует эту литературу как соседнюю доказательную базу, а не утверждает, что любой наш Frame автоматически унаследовал доказанный эффект. Frame — определённый внутри проекта проверенный объект с ограничениями, примерами, языковой принадлежностью и связями с Moves или Contrasts."
+            ]
+          },
+          {
+            "heading": "После обнаружения конструкции нужны внимание, повторные встречи и извлечение",
+            "paragraphs": [
+              "Найти полезную последовательность — только начало. Интервенционные исследования изучали привлечение внимания к formulaic sequences, работу с корпусами, повторные встречи и упражнения, помогающие запоминать и использовать конструкции. Новые работы также рассматривают усвоение формульных единиц в meaning-focused activities, а не только через прямые дриллы.",
+              "Это хорошо сочетается с философией Metkagram: Frame должен встречаться в осмысленных примерах, возвращаться в новых контекстах и в какой-то момент извлекаться для новой задачи. Один показ паттерна не считается эквивалентом обучения."
+            ]
+          },
+          {
+            "heading": "За Frame должна стоять реальная языковая регулярность",
+            "paragraphs": [
+              "У библиотеки паттернов есть опасный соблазн — количество. Если заменить достаточно существительных скобками, почти любое предложение можно выдать за шаблон. Исследования formulaic language напоминают, что повторяемость, конвенциональность, обработка и педагогическая ценность — эмпирические вопросы, а не эффект форматирования.",
+              "Задача редакции Metkagram — сохранять Frames, которые действительно фиксируют полезные регулярности, давать им реалистичные примеры и честно отмечать неопределённость вместо производства огромного, но пустого каталога. Один сильный Frame ценнее двадцати декоративных шаблонов."
+            ]
+          }
+        ],
+        "takeaway": "Исследования formulaic language дают основания серьёзно относиться к повторяющимся многословным структурам. Metkagram превращает эту идею в проверенные Frames, не смешивая её с доказательством всего продукта."
+      }
+    }
+  }
+]

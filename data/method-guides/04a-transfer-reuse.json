@@ -1,0 +1,69 @@
+[
+  {
+    "id": "transfer-reuse",
+    "slug": "language-transfer-reuse-pattern-new-context",
+    "category": "transfer",
+    "source_ids": ["puimege-2024", "boers-lindstromberg-2012", "karpicke-roediger-2008"],
+    "related": ["variation-practice", "pattern-to-speech", "cross-language-bridges", "real-sentence-learning"],
+    "locales": {
+      "en": {
+        "title": "Language Transfer: Reuse a Pattern in a New Context",
+        "description": "Transfer asks whether a learned Frame survives a change of topic, vocabulary or situation. Metkagram treats reuse as the end of the learning loop.",
+        "intro": "A pattern is useful only if it survives leaving the page where it was taught. Transfer is the step from “I can handle this example” to “I can recognise or produce the same relationship when the topic changes.” Metkagram makes reuse explicit because a library of perfectly understood examples can still fail to appear when the learner meets a new situation.",
+        "sections": [
+          {
+            "heading": "Transfer is harder than repeating a model",
+            "paragraphs": [
+              "Copying a sentence with one noun changed is a useful first variation, but it keeps most of the original cues. A stronger transfer task preserves the communicative Move while changing more of the surface: different topic, different vocabulary, perhaps a different register.",
+              "The learner must decide whether the Frame still fits and adapt its open slots without violating the constraints that made the construction natural."
+            ]
+          },
+          {
+            "heading": "The Frame is the candidate for reuse",
+            "paragraphs": [
+              "Metkagram separates the Frame from its examples so there is a stable object to carry forward. Examples show how the structure behaves; the Frame records what should remain reusable. A Move adds a second anchor by preserving the communication job even when the wording changes.",
+              "This lets practice ask a better question than “remember the sentence”: perform the same Move in a new situation and choose a Frame that still works."
+            ]
+          },
+          {
+            "heading": "Failed transfer is valuable evidence",
+            "paragraphs": [
+              "If the learner cannot reuse a Frame, the failure can reveal several problems. The abstraction may be too broad, a hidden grammatical constraint may be missing, the new context may require another register, or the learner may know the structure only by recognition.",
+              "That makes transfer tasks useful for both learning and content quality. A Frame that repeatedly collapses outside its original examples deserves editorial attention rather than more motivational copy."
+            ]
+          }
+        ],
+        "takeaway": "Reuse is the practical test of a Frame. Keep the communicative relationship, change the context and see whether the structure can be retrieved and adapted without the original example."
+      },
+      "ru": {
+        "title": "Language transfer: как перенести паттерн в новый контекст",
+        "description": "Transfer проверяет, переживает ли выученный Frame смену темы, лексики и ситуации. В Metkagram повторное использование завершает учебный цикл.",
+        "intro": "Паттерн полезен только тогда, когда способен покинуть страницу, где его объяснили. Transfer — это переход от «я справляюсь с этим примером» к «я узнаю или строю то же отношение после смены темы». Metkagram делает reuse отдельным шагом, потому что библиотека прекрасно понятных примеров всё равно может не появиться в памяти, когда возникает новая ситуация.",
+        "sections": [
+          {
+            "heading": "Transfer сложнее, чем повторение модели",
+            "paragraphs": [
+              "Скопировать предложение с заменой одного существительного — полезная первая variation, но большинство исходных подсказок остаётся на месте. Более сильная задача сохраняет коммуникативный Move и сильнее меняет поверхность: другую тему, лексику, иногда и регистр.",
+              "Теперь нужно решить, подходит ли Frame вообще, и заполнить открытые слоты так, чтобы не нарушить ограничения естественной конструкции."
+            ]
+          },
+          {
+            "heading": "Frame — кандидат на повторное использование",
+            "paragraphs": [
+              "Metkagram отделяет Frame от примеров, чтобы существовал стабильный объект для переноса. Примеры показывают поведение конструкции, а Frame фиксирует то, что должно оставаться повторяемым. Move даёт вторую опору, сохраняя коммуникативную задачу даже при смене формулировки.",
+              "Поэтому практика может спрашивать не «помнишь ли предложение?», а «выполни тот же Move в новой ситуации и выбери Frame, который здесь всё ещё работает»."
+            ]
+          },
+          {
+            "heading": "Неудачный перенос — полезные данные",
+            "paragraphs": [
+              "Если Frame не получается применить, причина может быть разной: абстракция слишком широкая, пропущено скрытое грамматическое ограничение, новый контекст требует другого регистра или структура знакома только на уровне узнавания.",
+              "Поэтому transfer полезен и для учащегося, и для качества контента. Frame, который постоянно разваливается за пределами исходных примеров, заслуживает редакционной проверки, а не дополнительной мотивационной надписи."
+            ]
+          }
+        ],
+        "takeaway": "Reuse — практическая проверка Frame. Сохраните коммуникативное отношение, поменяйте контекст и проверьте, можно ли восстановить и адаптировать структуру без исходного примера."
+      }
+    }
+  }
+]

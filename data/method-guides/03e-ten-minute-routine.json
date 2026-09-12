@@ -1,0 +1,69 @@
+[
+  {
+    "id": "ten-minute-routine",
+    "slug": "ten-minute-language-pattern-practice-routine",
+    "category": "practice",
+    "source_ids": ["karpicke-roediger-2008", "kim-webb-2022", "uchihara-webb-yanagisawa-2019"],
+    "related": ["retrieval-practice", "spaced-practice", "topic-sets", "pattern-to-speech"],
+    "locales": {
+      "en": {
+        "title": "A 10-Minute Language Pattern Practice Routine",
+        "description": "A compact routine for studying one useful Frame: inspect a real example, retrieve it, contrast a nearby choice, adapt it and schedule a return.",
+        "intro": "Ten minutes is too short for “learn English,” which is useful because that goal was never actionable anyway. It is enough time to work one small learning loop around a Frame. Metkagram’s routine combines inspection, retrieval, variation and later return so a short session has a clear object and a visible finish line.",
+        "sections": [
+          {
+            "heading": "Minutes 1–3: inspect one meaningful example",
+            "paragraphs": [
+              "Choose a Frame from a set that matches a current need. Read the complete example for meaning first. Then inspect the Mark or structural explanation and say what the Frame is doing: hedging, reframing, setting a condition, comparing options or another Move.",
+              "Do not collect five new Frames yet. The first task is to understand one relationship well enough to recognise what stays stable."
+            ]
+          },
+          {
+            "heading": "Minutes 4–7: close the answer and make a decision",
+            "paragraphs": [
+              "Hide the completed example. Reconstruct the Frame from its purpose or answer one Choice that contrasts it with a nearby option. Check feedback immediately and identify the decisive difference if you were wrong.",
+              "Then change one dimension: subject, polarity, time, topic or register. Variation should test the Frame without turning the exercise into an unrelated grammar puzzle."
+            ]
+          },
+          {
+            "heading": "Minutes 8–10: make it yours and leave a return point",
+            "paragraphs": [
+              "Write or say one sentence you could realistically use. If the Frame does not fit anything in your life, that is information: perhaps another set deserves your attention more. Save the Frame for a later return rather than squeezing in another round while it is still obvious.",
+              "On the next visit, begin with retrieval before rereading. A short routine compounds only when the material comes back after some forgetting and still asks you to do something with it."
+            ]
+          }
+        ],
+        "takeaway": "Ten focused minutes can cover a complete micro-loop: understand one Frame, retrieve it, discriminate a nearby choice, adapt it and create a reason to return later."
+      },
+      "ru": {
+        "title": "10 минут практики языковых паттернов: короткий рабочий цикл",
+        "description": "Компактный цикл для одного Frame: разобрать реальный пример, вспомнить конструкцию, сравнить соседний выбор, адаптировать её и вернуться позже.",
+        "intro": "Десяти минут мало для цели «выучить английский», и это даже хорошо: такая цель всё равно непригодна для действия. Зато времени достаточно для одного небольшого цикла вокруг Frame. Практика Metkagram соединяет наблюдение, retrieval, variation и последующий возврат, поэтому короткая сессия получает конкретный объект и понятную точку завершения.",
+        "sections": [
+          {
+            "heading": "Минуты 1–3: один осмысленный пример",
+            "paragraphs": [
+              "Выберите Frame из сета, связанного с текущей задачей. Сначала прочитайте полный пример ради смысла. Затем посмотрите на Mark или структурное объяснение и сформулируйте, что делает Frame: смягчает тезис, переопределяет мысль, ставит условие, сравнивает варианты или выполняет другой Move.",
+              "Пока не собирайте ещё пять новых Frames. Сначала нужно понять одну связь достаточно хорошо, чтобы увидеть, что в ней остаётся стабильным."
+            ]
+          },
+          {
+            "heading": "Минуты 4–7: закройте ответ и примите решение",
+            "paragraphs": [
+              "Спрячьте готовый пример. Восстановите Frame по его задаче или выполните один Choice, где он конкурирует с похожим вариантом. Сразу проверьте обратную связь и найдите решающее различие, если ошиблись.",
+              "Затем измените одно измерение: субъект, отрицание, время, тему или регистр. Variation должна проверять Frame, а не превращать упражнение в совершенно новую грамматическую головоломку."
+            ]
+          },
+          {
+            "heading": "Минуты 8–10: собственная фраза и точка возврата",
+            "paragraphs": [
+              "Скажите или запишите одно предложение, которое реально могло бы вам пригодиться. Если Frame вообще не прикладывается к вашей жизни, это тоже сигнал: возможно, сейчас полезнее другой сет. Сохраните конструкцию для будущего возврата вместо ещё одного повторения, пока ответ и так очевиден.",
+              "В следующий раз начните с retrieval до перечитывания. Короткий цикл накапливает эффект только тогда, когда материал возвращается после некоторого забывания и снова требует действия."
+            ]
+          }
+        ],
+        "takeaway": "Десять сфокусированных минут покрывают полный микроцикл: понять Frame, вспомнить его, различить соседний вариант, адаптировать и создать причину вернуться позже."
+      }
+    }
+  }
+]

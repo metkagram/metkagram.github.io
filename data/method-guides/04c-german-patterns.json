@@ -1,0 +1,69 @@
+[
+  {
+    "id": "german-sentence-patterns",
+    "slug": "german-sentence-patterns-reusable-frames",
+    "category": "transfer",
+    "source_ids": ["wray-2000", "meunier-2012", "schmitt-macis-siyanova-2025"],
+    "related": ["cross-language-bridges", "sentence-frames", "transfer-reuse", "english-russian-transfer"],
+    "locales": {
+      "en": {
+        "title": "German Sentence Patterns: Reusable Frames Without Literal Translation",
+        "description": "Use German Frames as German structures, compare their communicative Moves with English, and avoid treating word-for-word translation as the learning model.",
+        "intro": "German is a good reminder that a useful Frame belongs to a language, not to an abstract translation table. Word order, clause structure, particles and register create patterns that deserve to be learned as German relationships. Metkagram can connect those Frames to familiar communicative Moves without pretending that an English formula can simply be filled with German words.",
+        "sections": [
+          {
+            "heading": "Learn the relationship that German actually uses",
+            "paragraphs": [
+              "A learner often knows what they want to say before they know how German prefers to organise it. Start from the Move — for example, qualifying a claim or introducing a condition — then inspect a reviewed German Frame and several examples. The Frame should make the language-specific constraints visible rather than hiding them behind a translation.",
+              "This helps preserve word order and fixed elements as part of the object being learned, not as corrections added after an English-shaped sentence has already been built."
+            ]
+          },
+          {
+            "heading": "Parallel examples are useful when they are not presented as clones",
+            "paragraphs": [
+              "English and German examples can sit side by side to make functional comparison easier. The important step is to label the relationship honestly: same or related Move, different Frames. A Bridge may connect them after review, but it should keep differences in register, frequency or structure visible.",
+              "That prevents bilingual material from teaching a habit of token-by-token conversion that later has to be unlearned."
+            ]
+          },
+          {
+            "heading": "Variation matters even more with visible word-order constraints",
+            "paragraphs": [
+              "Change the subject, clause content or tense and watch what the German Frame forces to move. A single memorised example can conceal those dependencies; a small family of examples reveals them.",
+              "The practice goal is to retrieve a German construction for a German sentence. English can remain a support language for explanation or comparison, but successful reuse should no longer depend on rebuilding the sentence through English first."
+            ]
+          }
+        ],
+        "takeaway": "German Frames should be learned as German structural relationships. Cross-language comparison can clarify the Move, but the reusable object remains language-specific rather than a translated template."
+      },
+      "ru": {
+        "title": "Немецкие sentence patterns: Frames без буквального перевода",
+        "description": "Изучайте немецкие Frames как немецкие структуры, сравнивайте их Moves с английским и не превращайте пословный перевод в основной учебный механизм.",
+        "intro": "Немецкий хорошо напоминает, что полезный Frame принадлежит конкретному языку, а не абстрактной таблице переводов. Порядок слов, структура придаточных, частицы и регистр создают отношения, которые стоит изучать именно как немецкие. Metkagram может связывать их со знакомыми коммуникативными Moves, не делая вид, что в английскую формулу достаточно подставить немецкие слова.",
+        "sections": [
+          {
+            "heading": "Учите отношение, которое реально использует немецкий",
+            "paragraphs": [
+              "Человек часто уже знает, что хочет сказать, но ещё не знает, как немецкий естественно это организует. Начните с Move — например, ограничения тезиса или постановки условия — затем разберите проверенный немецкий Frame и несколько примеров. Frame должен делать языковые ограничения видимыми, а не прятать их за переводом.",
+              "Так порядок слов и фиксированные элементы входят в сам объект обучения, а не добавляются как исправления после того, как фраза уже была собрана по английской модели."
+            ]
+          },
+          {
+            "heading": "Параллельные примеры полезны, если не выдавать их за клоны",
+            "paragraphs": [
+              "Английский и немецкий примеры можно ставить рядом, чтобы было проще сравнивать функцию. Главное — честно назвать отношение: один или близкий Move, но разные Frames. После проверки их может соединять Bridge, сохраняя различия по регистру, частоте и структуре.",
+              "Это не позволяет двуязычному материалу незаметно обучить привычке пословного преобразования, которую потом придётся долго отучивать."
+            ]
+          },
+          {
+            "heading": "Variation особенно полезна там, где порядок слов явно меняется",
+            "paragraphs": [
+              "Поменяйте субъект, содержание придаточной части или время и наблюдайте, что немецкий Frame заставляет переместиться. Один выученный пример способен скрыть эти зависимости; небольшое семейство примеров делает их видимыми.",
+              "Цель практики — извлекать немецкую конструкцию для немецкого предложения. Английский или русский могут оставаться языком поддержки, но успешное reuse не должно зависеть от предварительной сборки фразы через другой язык."
+            ]
+          }
+        ],
+        "takeaway": "Немецкие Frames стоит учить как немецкие структурные отношения. Межъязыковое сравнение помогает понять Move, но повторно используемый объект остаётся языково-специфичным."
+      }
+    }
+  }
+]
