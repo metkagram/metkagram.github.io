@@ -314,10 +314,19 @@ test("every generated page carries the current brand and discoverability metadat
   for (const file of files) {
     const html = fs.readFileSync(file, "utf8");
     if (html.includes('http-equiv="refresh"')) continue;
-    const isRoot = path.relative(DIST, file) === "index.html";
+    const relative = path.relative(DIST, file).replaceAll(path.sep, "/");
+    const isRoot = relative === "index.html";
+    const isErrorSurface = relative === "404.html";
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);
     assert.match(html, /<meta name="description" content="[^"]+">/, `${file} needs a description`);
     assert.match(html, /<meta name="robots" content="(?:index,follow|max-image-preview|noindex,follow)/, `${file} needs crawl directives`);
+    if (isErrorSurface) {
+      assert.match(html, /<meta name="robots" content="noindex,follow">/, `${file} must stay noindex`);
+      assert.doesNotMatch(html, /rel="canonical"/, `${file} must not advertise canonical content`);
+      assert.doesNotMatch(html, /property="og:url"/, `${file} must not advertise a social canonical URL`);
+      assert.doesNotMatch(html, /application\/ld\+json/, `${file} must not expose structured page identity`);
+      continue;
+    }
     assert.match(html, /rel="canonical" href="https:\/\/metkagram\.github\.io\//, `${file} needs a production canonical`);
     assert.match(html, /property="og:url" content="https:\/\/metkagram\.github\.io\//, `${file} needs a canonical social URL`);
     assert.match(html, /assets\/social\/metkagram-social-preview-1200x630\.png/, `${file} needs the branded social preview`);

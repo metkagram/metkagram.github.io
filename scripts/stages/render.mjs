@@ -30,8 +30,8 @@
 //   multilingual model and must run after multilingual-domain-model;
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
-// - shareable-pattern-cards consumes only completed indexability decisions and reviewed
-//   bilingual annotations, publishing noindex distribution cards that canonicalize to Patterns;
+// - shareable-pattern-cards consumes the finalized indexability decision plus reviewed
+//   annotation data and creates only noindex derivative distribution surfaces;
 // - method-guides renders canonical bilingual editorial pages and extends the existing
 //   Method overview before broad SEO normalization discovers the new indexable routes;
 // - seo-graph-normalize remains the final broad SEO graph pass so it cannot re-add
@@ -42,11 +42,11 @@
 //   rendered canonical learning graph and extends the existing share bar with Save/Cite;
 // - humanize-study-set-labels runs after content-producing Practice passes so internal
 //   set/group IDs remain machine-readable but are never exposed as user-facing labels;
-// - 404 generation runs after normal indexable/distribution HTML work and before
-//   consent/ARWP decoration, so the final error surface is checked after all mutators;
-// - consent analytics decorates the completed HTML surface;
-// - ARWP publication runs after every HTML-producing pass so audit sees the exact
-//   machine discovery surface that will be deployed.
+// - consent analytics decorates the completed normal HTML surface;
+// - ARWP publication runs after every normal HTML-producing pass so agent discovery sees
+//   the exact canonical site surface;
+// - 404 generation runs last, after all global HTML mutators, because the error page is
+//   deliberately a noindex recovery surface without canonical/og:url/JSON-LD identity.
 import path from "node:path";
 import { runStage } from "./run.mjs";
 
@@ -94,9 +94,9 @@ export const RENDER_STEPS = [
   "scripts/search-release-root.mjs",
   "scripts/apply-internal-discovery-distribution.mjs",
   "scripts/humanize-study-set-labels.mjs",
-  "scripts/generate-404.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/apply-arwp.mjs",
+  "scripts/generate-404.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {

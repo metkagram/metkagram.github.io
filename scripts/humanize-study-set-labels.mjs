@@ -36,62 +36,79 @@ function loadLabels() {
   return labels;
 }
 
-function replaceVisibleSetIds(html, locale, labels) {
-  let result = html;
+function compileLabelMatchers(labels) {
+  const ids = [...labels.keys()]
+    .sort((a, b) => b.length - a.length || a.localeCompare(b))
+    .map(escapeRegExp);
+  if (!ids.length) throw new Error("Study-set label humanization requires at least one set ID");
+  const alternatives = ids.join("|");
+  return {
+    option: /(<option\b[^>]*\bvalue="([^"]+)"[^>]*>)([^<]*)(<\/option>)/gi,
+    eyebrow: /(<p\b[^>]*\bclass="[^"]*\beyebrow\b[^"]*"[^>]*>)([\s\S]*?)(<\/p>)/gi,
+    small: /(<small\b[^>]*>)([\s\S]*?)(<\/small>)/gi,
+    separated: new RegExp(`(\\s·\\s)(${alternatives})(\\s·\\s)`, "gi"),
+    separatedAudit: new RegExp(`\\s·\\s(?:${alternatives})\\s·\\s`, "i")
+  };
+}
 
-  for (const [id, localized] of labels) {
-    const label = localized[locale] || localized.en;
-    const technical = escapeRegExp(id);
+function replaceSeparatedIds(inner, locale, labels, separated) {
+  separated.lastIndex = 0;
+  return inner.replace(separated, (match, before, rawId, after) => {
+    const localized = labels.get(String(rawId).toUpperCase());
+    if (!localized) return match;
+    return `${before}${localized[locale] || localized.en}${after}`;
+  });
+}
 
-    // Keep the canonical ID as the option value for filtering, but never expose
-    // that internal value as the option label.
-    result = result.replace(
-      new RegExp(`(<option\\b[^>]*\\bvalue="${technical}"[^>]*>)${technical}(<\\/option>)`, "gi"),
-      `$1${label}$2`
-    );
+function replaceVisibleSetIds(html, locale, labels, matchers) {
+  let result = html.replace(matchers.option, (match, open, rawValue, visible, close) => {
+    const id = String(rawValue).trim().toUpperCase();
+    const localized = labels.get(id);
+    if (!localized || String(visible).trim().toUpperCase() !== id) return match;
+    return `${open}${localized[locale] || localized.en}${close}`;
+  });
 
-    // Pattern headers and index metadata use middle-dot separators. Replace only
-    // the standalone set/group slot; stable pattern IDs such as MOD001 stay intact.
-    const separatedTechnicalId = new RegExp(`(\\s·\\s)${technical}(\\s·\\s)`, "gi");
-    result = result.replace(/<p\b([^>]*\bclass="[^"]*\beyebrow\b[^"]*"[^>]*)>([\s\S]*?)<\/p>/gi, (match, attrs, inner) => {
-      const visible = inner.replace(separatedTechnicalId, `$1${label}$2`);
-      return `<p${attrs}>${visible}</p>`;
-    });
-    result = result.replace(/<small\b([^>]*)>([\s\S]*?)<\/small>/gi, (match, attrs, inner) => {
-      const visible = inner.replace(separatedTechnicalId, `$1${label}$2`);
-      return `<small${attrs}>${visible}</small>`;
+  for (const blockPattern of [matchers.eyebrow, matchers.small]) {
+    blockPattern.lastIndex = 0;
+    result = result.replace(blockPattern, (match, open, inner, close) => {
+      const visible = replaceSeparatedIds(inner, locale, labels, matchers.separated);
+      return visible === inner ? match : `${open}${visible}${close}`;
     });
   }
 
   return result;
 }
 
-function assertNoVisibleTechnicalSetIds(html, file, labels) {
-  for (const id of labels.keys()) {
-    const technical = escapeRegExp(id);
-    const rawOption = new RegExp(`<option\\b[^>]*\\bvalue="${technical}"[^>]*>${technical}<\\/option>`, "i");
-    const separatedRawId = new RegExp(`\\s·\\s${technical}\\s·\\s`, "i");
-    const visibleBlocks = [
-      ...html.matchAll(/<p\b[^>]*\bclass="[^"]*\beyebrow\b[^"]*"[^>]*>([\s\S]*?)<\/p>/gi),
-      ...html.matchAll(/<small\b[^>]*>([\s\S]*?)<\/small>/gi)
-    ].map((match) => match[1]);
+function assertNoVisibleTechnicalSetIds(html, file, labels, matchers) {
+  matchers.option.lastIndex = 0;
+  for (const match of html.matchAll(matchers.option)) {
+    const rawValue = String(match[2]).trim().toUpperCase();
+    if (labels.has(rawValue) && String(match[3]).trim().toUpperCase() === rawValue) {
+      throw new Error(`Visible technical study-set ID ${rawValue} remains in ${path.relative(ROOT, file)}`);
+    }
+  }
 
-    if (rawOption.test(html) || visibleBlocks.some((text) => separatedRawId.test(text))) {
-      throw new Error(`Visible technical study-set ID ${id} remains in ${path.relative(ROOT, file)}`);
+  for (const blockPattern of [matchers.eyebrow, matchers.small]) {
+    blockPattern.lastIndex = 0;
+    for (const match of html.matchAll(blockPattern)) {
+      if (matchers.separatedAudit.test(match[2])) {
+        throw new Error(`Visible technical study-set ID remains in ${path.relative(ROOT, file)}`);
+      }
     }
   }
 }
 
 function main() {
   const labels = loadLabels();
+  const matchers = compileLabelMatchers(labels);
   let changedFiles = 0;
 
   for (const locale of ["en", "ru"]) {
     const practiceRoot = path.join(DIST, locale, "practice");
     for (const file of walkHtml(practiceRoot)) {
       const before = fs.readFileSync(file, "utf8");
-      const after = replaceVisibleSetIds(before, locale, labels);
-      assertNoVisibleTechnicalSetIds(after, file, labels);
+      const after = replaceVisibleSetIds(before, locale, labels, matchers);
+      assertNoVisibleTechnicalSetIds(after, file, labels, matchers);
       if (after !== before) {
         fs.writeFileSync(file, after);
         changedFiles += 1;
