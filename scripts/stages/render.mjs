@@ -22,8 +22,9 @@
 // - lens-knowledge-bridge writes pattern-relations.json read by cross-language-transfer;
 // - learning-telemetry decorates lens/clinic/packs/transfer/exports pages and must
 //   follow their renderers;
-// - ai-adoption creates the build-with-metkagram pages that publication-readiness
-//   and benchmark-publication extend;
+// - ai-adoption creates the build-with-metkagram pages; agent-integration-cookbook
+//   then validates exact current API objects and adds provider-neutral integration
+//   examples before publication-readiness and benchmark-publication extend the pages;
 // - cross-language-transfer + teacher-tutor-exports feed multilingual-domain-model;
 // - canonical-frame-variants resolves explicit Frame families over the published
 //   multilingual model and must run after multilingual-domain-model;
@@ -77,6 +78,7 @@ export const RENDER_STEPS = [
   "scripts/practice-seo.mjs",
   "scripts/search-demand-seo.mjs",
   "scripts/ai-adoption.mjs",
+  "scripts/agent-integration-cookbook.mjs",
   "scripts/publication-readiness.mjs",
   "scripts/benchmark-publication.mjs",
   "scripts/multilingual-domain-model.mjs",
