@@ -1,0 +1,69 @@
+[
+  {
+    "id": "ai-tutors-curated-corpus",
+    "slug": "ai-language-tutors-vs-curated-pattern-corpus",
+    "category": "comparisons",
+    "source_ids": ["schmitt-macis-siyanova-2025", "meunier-2012", "boers-lindstromberg-2012"],
+    "related": ["method-overview", "sentence-frames", "topic-sets", "evidence-boundary"],
+    "locales": {
+      "en": {
+        "title": "AI Language Tutors and Curated Patterns: What Each Is Good At",
+        "description": "Generative AI is useful for dialogue, variation and feedback. A curated corpus gives stable Frames, reviewed examples, provenance and repeatable learning objects.",
+        "intro": "A generative AI tutor can produce a new dialogue in seconds, adapt a prompt to your job and explain a sentence in several ways. That flexibility is genuinely useful. It also creates a different problem: if every explanation, pattern and example is generated on the fly, the learner has no stable object to revisit, compare or cite. Metkagram treats AI as a possible interface around reviewed language objects rather than as the source of truth for those objects.",
+        "sections": [
+          {
+            "heading": "Generation is excellent at breadth and adaptation",
+            "paragraphs": [
+              "An AI tutor can turn one Frame into a workplace example, a travel dialogue, a role-play or a short quiz. It can change difficulty and respond to a learner’s question immediately. Those are strong affordances because language use is contextual and learners do not all need the same scenario.",
+              "Metkagram can benefit from that flexibility when generated activity is anchored to a known Frame, Move or Contrast. The model expands the practice surface; the reviewed object gives the expansion a stable reference point."
+            ]
+          },
+          {
+            "heading": "A curated corpus solves a different problem",
+            "paragraphs": [
+              "A stable Frame can have an identifier, reviewed constraints, examples, relationships, quality metadata and provenance. The same object can appear in a web page, an API, a teacher export or an AI session without silently changing its definition between requests.",
+              "That stability matters for learning history and research. If a learner repeatedly confuses two Frames, the system can refer to the same Contrast tomorrow instead of asking a model to reinvent the distinction from scratch."
+            ]
+          },
+          {
+            "heading": "The strongest combination separates content authority from tutoring behaviour",
+            "paragraphs": [
+              "An AI tutor can choose a prompt, personalise a situation, ask for retrieval and explain feedback. The canonical corpus can define which Frame is being practised and which relationships have actually been reviewed. This division allows creativity at the interface without pretending that every generated linguistic claim is equally verified.",
+              "Metkagram’s architecture follows that principle already: AI can use the corpus, but it does not become the editorial source of truth merely because it can write fluent examples."
+            ]
+          }
+        ],
+        "takeaway": "AI tutors are strong at adaptation and interaction; curated corpora are strong at stable, inspectable knowledge objects. Metkagram is designed so the two can work together without confusing their roles."
+      },
+      "ru": {
+        "title": "AI-тьюторы и проверенные паттерны: где сильнее каждый подход",
+        "description": "Генеративный AI удобен для диалогов, variation и обратной связи. Проверенный корпус даёт стабильные Frames, примеры, provenance и повторяемые объекты.",
+        "intro": "Генеративный AI-тьютор за секунды создаёт новый диалог, адаптирует prompt под вашу работу и объясняет предложение несколькими способами. Такая гибкость действительно полезна. Но появляется другая проблема: если каждое объяснение, pattern и пример генерируются заново, учащемуся не к чему стабильно возвращаться, нечего сравнивать и трудно понять происхождение материала. Metkagram рассматривает AI как возможный интерфейс вокруг проверенных языковых объектов, а не как источник истины для самих объектов.",
+        "sections": [
+          {
+            "heading": "Генерация сильна в широте и адаптации",
+            "paragraphs": [
+              "AI-тьютор может превратить один Frame в рабочий пример, ситуацию из поездки, role-play или короткий quiz. Он меняет сложность и сразу отвечает на вопрос учащегося. Это сильные возможности, потому что язык всегда зависит от контекста, а разным людям нужны разные ситуации.",
+              "Metkagram может использовать такую гибкость, когда сгенерированная активность привязана к известному Frame, Move или Contrast. Модель расширяет практику, а проверенный объект даёт ей стабильную точку отсчёта."
+            ]
+          },
+          {
+            "heading": "Проверенный корпус решает другую задачу",
+            "paragraphs": [
+              "Стабильный Frame получает идентификатор, проверенные ограничения, примеры, отношения, metadata качества и provenance. Один и тот же объект может появляться на сайте, в API, в teacher export или в AI-сессии, не меняя незаметно своё определение от запроса к запросу.",
+              "Такая стабильность важна для истории обучения и исследования. Если человек регулярно путает два Frames, система завтра может вернуться к тому же Contrast, а не просить модель каждый раз заново изобретать различие."
+            ]
+          },
+          {
+            "heading": "Сильная комбинация разделяет авторитет контента и поведение тьютора",
+            "paragraphs": [
+              "AI-тьютор может выбирать prompt, персонализировать ситуацию, просить retrieval и объяснять обратную связь. Канонический корпус определяет, какой именно Frame практикуется и какие связи действительно прошли редакционную проверку. Такое разделение оставляет интерфейсу свободу, не выдавая каждое сгенерированное утверждение за одинаково проверенное.",
+              "Архитектура Metkagram уже следует этому принципу: AI может использовать корпус, но не становится редакционным source of truth только потому, что умеет писать гладкие примеры."
+            ]
+          }
+        ],
+        "takeaway": "AI-тьюторы сильны в адаптации и взаимодействии, проверенные корпусы — в стабильных и проверяемых объектах знаний. Metkagram рассчитан на их совместную работу без смешения ролей."
+      }
+    }
+  }
+]

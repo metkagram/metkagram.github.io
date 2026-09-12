@@ -49,5 +49,24 @@
       "age_days": 365,
       "indexing_review_allowed": true
     }
+  ],
+  "cluster_rows": [
+    {
+      "cluster_id": "build-argument-with-evidence",
+      "clicks": 7,
+      "impressions": 160,
+      "ctr": 0.04375,
+      "position": 10.6,
+      "helpful_yes": 8,
+      "helpful_no": 2
+    },
+    {
+      "cluster_id": "make-a-polite-request",
+      "clicks": 3,
+      "impressions": 90,
+      "position": 15.2,
+      "helpful_yes": 4,
+      "helpful_no": 1
+    }
   ]
 }

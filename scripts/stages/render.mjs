@@ -22,15 +22,18 @@
 // - lens-knowledge-bridge writes pattern-relations.json read by cross-language-transfer;
 // - learning-telemetry decorates lens/clinic/packs/transfer/exports pages and must
 //   follow their renderers;
-// - ai-adoption creates the build-with-metkagram pages that publication-readiness
-//   and benchmark-publication extend;
+// - ai-adoption creates the build-with-metkagram pages; agent-integration-cookbook
+//   then validates exact current API objects and adds provider-neutral integration
+//   examples before publication-readiness and benchmark-publication extend the pages;
 // - cross-language-transfer + teacher-tutor-exports feed multilingual-domain-model;
 // - canonical-frame-variants resolves explicit Frame families over the published
 //   multilingual model and must run after multilingual-domain-model;
 // - pattern-indexability consumes the completed Frame-family layer and the derive-stage
 //   quality audit, then removes noindex Pattern routes from sitemap/SEO inventory;
-// - shareable-pattern-cards consumes only the completed indexability policy and
-//   canonical Practice annotation layer, so no unreviewed/noindex Pattern is promoted;
+// - shareable-pattern-cards consumes only completed indexability decisions and reviewed
+//   bilingual annotations, publishing noindex distribution cards that canonicalize to Patterns;
+// - method-guides renders canonical bilingual editorial pages and extends the existing
+//   Method overview before broad SEO normalization discovers the new indexable routes;
 // - seo-graph-normalize remains the final broad SEO graph pass so it cannot re-add
 //   noindex routes;
 // - search-release-root then replaces the former noindex client-redirect root with
@@ -39,6 +42,8 @@
 //   rendered canonical learning graph and extends the existing share bar with Save/Cite;
 // - humanize-study-set-labels runs after content-producing Practice passes so internal
 //   set/group IDs remain machine-readable but are never exposed as user-facing labels;
+// - 404 generation runs after normal indexable/distribution HTML work and before
+//   consent/ARWP decoration, so the final error surface is checked after all mutators;
 // - consent analytics decorates the completed HTML surface;
 // - ARWP publication runs after every HTML-producing pass so audit sees the exact
 //   machine discovery surface that will be deployed.
@@ -77,16 +82,19 @@ export const RENDER_STEPS = [
   "scripts/practice-seo.mjs",
   "scripts/search-demand-seo.mjs",
   "scripts/ai-adoption.mjs",
+  "scripts/agent-integration-cookbook.mjs",
   "scripts/publication-readiness.mjs",
   "scripts/benchmark-publication.mjs",
   "scripts/multilingual-domain-model.mjs",
   "scripts/canonical-frame-variants.mjs",
   "scripts/pattern-indexability.mjs",
   "scripts/shareable-pattern-cards.mjs",
+  "scripts/method-guides.mjs",
   "scripts/seo-graph-normalize.mjs",
   "scripts/search-release-root.mjs",
   "scripts/apply-internal-discovery-distribution.mjs",
   "scripts/humanize-study-set-labels.mjs",
+  "scripts/generate-404.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/apply-arwp.mjs",
 ];

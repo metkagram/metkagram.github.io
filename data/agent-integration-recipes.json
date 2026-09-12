@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed-reference",
+  "description": "Provider-neutral end-to-end integration recipes over current public Metkagram API objects. Every positive recipe names current stable objects; the abstention recipe names a deliberately absent ID and requires no invention.",
+  "evidenceBoundary": "These recipes validate API/MCP integration behavior and provenance handling. They are not evidence that an AI tutor improves language learning.",
+  "recipes": [
+    {
+      "id": "intent-to-reviewed-surface",
+      "job": "Resolve a learner job to a reviewed Metkagram surface before retrieving content.",
+      "entrypoint": "/api/v1/discovery.json",
+      "lookup": {"surface_id": "reasoning-packs"},
+      "expected": {"surface_id": "reasoning-packs", "next_endpoint": "/api/v1/reasoning-packs.json"},
+      "output_contract": ["preserve the selected surface id", "explain why the surface matches the learner job", "continue only to canonical public objects"]
+    },
+    {
+      "id": "canonical-pattern-with-provenance",
+      "job": "Retrieve one canonical Pattern and keep its stable identity and provenance downstream.",
+      "entrypoint": "/api/v1/patterns/clf051.json",
+      "lookup": {"pattern_id": "CLF051"},
+      "expected": {"pattern_id": "CLF051"},
+      "output_contract": ["preserve stable Pattern ID", "preserve canonical URL", "preserve dataset/version provenance", "do not rewrite the record as a newly invented Metkagram Pattern"]
+    },
+    {
+      "id": "contrast-then-choice",
+      "job": "Retrieve a reviewed distinction and then a bounded practice decision for that same distinction.",
+      "entrypoint": "/api/v1/contrasts.json",
+      "followup_endpoint": "/api/v1/choice-drills.json",
+      "lookup": {"contrast_id": "necessary-vs-not-enough", "drill_id": "testing-required-not-guaranteed"},
+      "expected": {"contrast_patterns": ["CLF041", "CLF042"], "answer_pattern": "CLF041"},
+      "output_contract": ["state the reviewed distinction before the exercise", "present the choice before feedback", "keep both stable Pattern IDs", "do not label the rejected option universally wrong"]
+    },
+    {
+      "id": "follow-reviewed-route",
+      "job": "Retrieve a reviewed ordered Route when the learner needs a sequence rather than one isolated Pattern.",
+      "entrypoint": "/api/v1/reasoning-packs.json",
+      "lookup": {"pack_id": "evidence-without-overclaiming"},
+      "expected": {"pack_id": "evidence-without-overclaiming", "first_step_kind": "pattern", "first_step_id": "CLF051"},
+      "output_contract": ["preserve step order", "resolve referenced Patterns/Contrasts/Choices rather than copying new canonical content", "keep the Route ID and provenance"]
+    },
+    {
+      "id": "english-german-functional-bridge",
+      "job": "Retrieve reviewed English and German forms that perform the same bounded reasoning job.",
+      "entrypoint": "/api/v1/cross-language-map.json",
+      "lookup": {"pattern_id": "CLF051"},
+      "expected": {"pattern_id": "CLF051", "mapping_type": "same-canonical-pattern-functional-counterpart", "literal_equivalence": false},
+      "output_contract": ["keep the shared stable Pattern ID", "preserve both canonical language forms", "state that the mapping is functional rather than word-for-word equivalence", "keep provenance and canonical link"]
+    },
+    {
+      "id": "abstain-on-missing-pattern",
+      "job": "Refuse to fabricate a Metkagram object when a requested stable Pattern ID does not exist.",
+      "entrypoint": "/api/v1/patterns/metkagram-does-not-exist.json",
+      "lookup": {"pattern_id": "METKAGRAM-DOES-NOT-EXIST"},
+      "expected": {"exists": false, "behavior": "abstain"},
+      "output_contract": ["say that no reviewed object was found", "do not invent a stable ID, formula, provenance, or canonical URL", "optionally fall back to discovery or the public pattern index without claiming an exact match"]
+    }
+  ]
+}

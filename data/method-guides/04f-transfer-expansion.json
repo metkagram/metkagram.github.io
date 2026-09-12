@@ -1,0 +1,203 @@
+[
+  {
+    "id": "translation-vs-paraphrase",
+    "slug": "translation-vs-paraphrase-learning-language-patterns",
+    "category": "transfer",
+    "source_ids": ["wray-2000", "schmitt-macis-siyanova-2025", "boers-lindstromberg-2012"],
+    "related": ["cross-language-bridges", "communicative-moves", "english-russian-transfer", "register-transfer"],
+    "locales": {
+      "en": {
+        "title": "Translation vs Paraphrase: Learn the Move, Not the Word Order",
+        "description": "Literal translation preserves visible wording; functional paraphrase preserves what the speaker is trying to do. Language patterns make that distinction practical.",
+        "intro": "Translation is useful until it quietly becomes a construction algorithm. A learner starts with a sentence in one language, replaces words, repairs the grammar and hopes the result is how another language would naturally express the same idea. Functional paraphrase starts from a different anchor: what is the speaker trying to accomplish, and which Frame normally performs that Move in the target language? Metkagram uses this distinction to make cross-language transfer useful without treating languages as interchangeable templates.",
+        "sections": [
+          {
+            "heading": "Literal similarity and functional similarity are different things",
+            "paragraphs": [
+              "Two sentences can share many dictionary equivalents and still differ in register, implication or typical use. The reverse also happens: two natural expressions can look structurally unrelated while performing almost the same communicative job. Word-level alignment is therefore useful evidence, but it is not sufficient evidence of equivalence.",
+              "A Move gives the comparison a second axis. Instead of asking only whether the words match, ask whether the expressions correct the same misunderstanding, hedge the same kind of claim, set the same boundary or perform another comparable job."
+            ]
+          },
+          {
+            "heading": "Paraphrase is a way to search for the target-language decision",
+            "paragraphs": [
+              "Suppose a direct translation sounds possible but stiff. Paraphrase the intended meaning in simpler target-language words, then look for a recurring Frame that naturally carries that function. This can reveal that the target language packages the idea differently rather than merely preferring different vocabulary.",
+              "The process is not permission to invent free translations. A candidate Frame still needs realistic examples and review. Paraphrase helps locate the function; evidence from actual target-language use determines whether the Frame is a good representation."
+            ]
+          },
+          {
+            "heading": "A Bridge records correspondence without erasing differences",
+            "paragraphs": [
+              "When two reviewed Frames perform the same or a closely related Move, Metkagram can connect them with a Bridge. The relationship can preserve notes about register, context or asymmetry instead of pretending that one side is an exact replacement for the other.",
+              "For practice, the learner can begin with an intent, choose the target-language Frame and produce a new sentence. Translation remains available as support, but the long-term path becomes situation to Move to Frame rather than situation to source sentence to word replacement."
+            ]
+          }
+        ],
+        "takeaway": "Use translation to understand meaning, but use communicative function to choose target-language structure. A good paraphrase preserves the Move even when natural wording and word order change."
+      },
+      "ru": {
+        "title": "Translation и paraphrase: учим Move, а не порядок слов",
+        "description": "Буквальный перевод сохраняет видимую форму, functional paraphrase — задачу говорящего. Паттерны делают это различие практическим.",
+        "intro": "Перевод полезен до того момента, пока незаметно не превращается в алгоритм построения фразы. Человек берёт предложение на одном языке, заменяет слова, чинит грамматику и надеется, что именно так другой язык естественно выражает ту же мысль. Functional paraphrase начинает с другой опоры: что говорящий пытается сделать и какой Frame обычно выполняет этот Move в целевом языке? Metkagram использует это различие, чтобы межъязыковой transfer помогал, но не превращал языки во взаимозаменяемые шаблоны.",
+        "sections": [
+          {
+            "heading": "Буквальное сходство и функциональное сходство — не одно и то же",
+            "paragraphs": [
+              "Два предложения могут иметь много словарных соответствий и при этом различаться регистром, импликацией или типичным употреблением. Бывает и наоборот: две естественные фразы структурно почти не похожи, но выполняют одну коммуникативную работу. Поэтому word-level alignment — полезный сигнал, но недостаточное доказательство эквивалентности.",
+              "Move добавляет вторую ось сравнения. Вместо одного вопроса «совпадают ли слова?» можно спросить, исправляют ли выражения одно недопонимание, одинаково ли смягчают тезис, ставят ли сопоставимую границу или выполняют другой общий job."
+            ]
+          },
+          {
+            "heading": "Paraphrase помогает найти решение целевого языка",
+            "paragraphs": [
+              "Если прямой перевод выглядит возможным, но звучит деревянно, попробуйте передать намерение более простыми словами уже на целевом языке, а затем найти повторяющийся Frame, который естественно несёт эту функцию. Часто становится видно, что язык иначе упаковывает саму мысль, а не просто предпочитает другие слова.",
+              "Это не лицензия на свободное сочинение переводов. Candidate Frame всё равно требует естественных примеров и review. Paraphrase помогает найти функцию, а реальное употребление показывает, насколько выбранный Frame её действительно представляет."
+            ]
+          },
+          {
+            "heading": "Bridge фиксирует соответствие, не стирая различия",
+            "paragraphs": [
+              "Когда два reviewed Frames выполняют один или близкий Move, Metkagram может связать их Bridge. Такая связь сохраняет замечания о регистре, контексте и асимметрии вместо утверждения, что одна сторона всегда является точной заменой другой.",
+              "В practice человек может начать с намерения, выбрать Frame целевого языка и построить новое предложение. Перевод остаётся опорой, но долгосрочный путь становится situation → Move → Frame вместо situation → исходная фраза → замена слов."
+            ]
+          }
+        ],
+        "takeaway": "Используйте перевод для понимания смысла, а коммуникативную функцию — для выбора структуры целевого языка. Хороший paraphrase сохраняет Move, даже если естественные слова и порядок меняются."
+      }
+    }
+  },
+  {
+    "id": "register-transfer",
+    "slug": "language-register-transfer-formal-natural-phrases",
+    "category": "transfer",
+    "source_ids": ["wray-2000", "meunier-2012", "schmitt-macis-siyanova-2025"],
+    "related": ["cross-language-bridges", "translation-vs-paraphrase", "b2-c1-patterns", "english-russian-transfer"],
+    "locales": {
+      "en": {
+        "title": "Register Transfer: When a Correct Phrase Sounds Too Formal or Too Direct",
+        "description": "Cross-language mistakes are often not grammar mistakes. The sentence works, but its level of formality, directness or stance was imported from another language.",
+        "intro": "Some of the hardest transfer problems survive grammar correction. The sentence is understandable and may even be technically correct, yet it sounds strangely formal, unnecessarily blunt or mismatched to the situation. Register transfer happens when a familiar way of signalling politeness, authority, caution or distance is carried into another language without checking how that language normally performs the same social Move. Pattern comparison makes those differences easier to inspect.",
+        "sections": [
+          {
+            "heading": "Correctness does not settle appropriateness",
+            "paragraphs": [
+              "A learner can build a grammatical request that sounds more ceremonial than the relationship requires, or a concise disagreement that feels sharper than intended. These are not well described by a red underline. The form may be legal; the problem lies in how the choice positions the speaker relative to the listener.",
+              "For B2–C1 learners, this is often where additional vocabulary produces diminishing returns. Several ways to perform the same Move, labelled by register and stance, can be more useful than another list of synonyms."
+            ]
+          },
+          {
+            "heading": "Compare Frames that solve the same job at different levels",
+            "paragraphs": [
+              "Take one job such as requesting a change, disagreeing or expressing uncertainty. Collect a direct, neutral and more formal Frame where the language genuinely supports those distinctions. Compare realistic contexts instead of attaching vague labels such as “advanced” or “professional.”",
+              "The important question is what changes in social meaning. Who could say this to whom? Would it fit a chat, a meeting, a report or a complaint? These contextual boundaries make register trainable rather than mystical."
+            ]
+          },
+          {
+            "heading": "Cross-language Bridges should carry register notes",
+            "paragraphs": [
+              "If an English and Russian or German Frame share a Move, their Bridge should not imply identical interpersonal force. One side may be the ordinary neutral choice while the closest-looking expression on the other side is marked as formal or unusually direct.",
+              "Practice can then start from a situation and require both a functional and register decision. That is closer to real communication than translating a polite source sentence and assuming its social temperature survives unchanged."
+            ]
+          }
+        ],
+        "takeaway": "Register transfer is a choice problem, not merely a grammar problem. Compare several Frames for the same Move and learn which level of directness, distance and formality fits the situation."
+      },
+      "ru": {
+        "title": "Register transfer: когда правильная фраза звучит слишком формально или резко",
+        "description": "Межъязыковая ошибка часто не грамматическая: предложение работает, но формальность, прямота или stance были перенесены из другого языка.",
+        "intro": "Некоторые из самых трудных transfer-проблем переживают даже грамматическую коррекцию. Предложение понятно и может быть технически правильным, но звучит странно формально, лишне резко или просто не подходит ситуации. Register transfer возникает, когда знакомый способ показывать вежливость, authority, осторожность или дистанцию переносится в другой язык без проверки того, как этот язык обычно выполняет тот же social Move. Сравнение паттернов делает такие различия наблюдаемыми.",
+        "sections": [
+          {
+            "heading": "Correctness не определяет appropriateness",
+            "paragraphs": [
+              "Можно построить грамматичную просьбу, которая звучит церемониальнее, чем требует отношение между людьми, или короткое несогласие, которое воспринимается резче задуманного. Красное подчёркивание здесь почти бесполезно. Форма допустима, но выбор иначе позиционирует говорящего относительно собеседника.",
+              "На B2–C1 это часто важнее очередного пополнения словаря. Несколько способов выполнить один Move с понятным register и stance могут дать больше контроля, чем ещё один список синонимов."
+            ]
+          },
+          {
+            "heading": "Сравнивайте Frames для одной задачи на разных уровнях",
+            "paragraphs": [
+              "Возьмите одну задачу: попросить изменить решение, не согласиться или выразить неопределённость. Найдите direct, neutral и более formal Frame там, где язык действительно поддерживает такое различие. Сравнивайте реальные контексты вместо туманных ярлыков «advanced» или «professional».",
+              "Главный вопрос — что меняется в социальном смысле. Кто мог бы сказать это кому? Подходит ли фраза чату, встрече, отчёту или жалобе? Такие границы превращают register из ощущения в тренируемое решение."
+            ]
+          },
+          {
+            "heading": "Cross-language Bridges должны хранить register notes",
+            "paragraphs": [
+              "Если английский и русский или немецкий Frame выполняют один Move, Bridge не должен обещать одинаковую interpersonal force. На одной стороне выражение может быть обычным neutral choice, а максимально похожая форма на другой — заметно formal или unusually direct.",
+              "Практика тогда начинается с ситуации и требует одновременно functional и register decision. Это ближе к реальной коммуникации, чем перевод вежливой исходной фразы с предположением, что её социальная температура автоматически сохранится."
+            ]
+          }
+        ],
+        "takeaway": "Register transfer — проблема выбора, а не только грамматики. Сравнивайте несколько Frames одного Move и учитесь выбирать уровень прямоты, дистанции и формальности под конкретную ситуацию."
+      }
+    }
+  },
+  {
+    "id": "english-german-bridge-practice",
+    "slug": "english-german-pattern-bridges-compare-functions",
+    "category": "transfer",
+    "source_ids": ["wray-2000", "boers-lindstromberg-2012", "schmitt-macis-siyanova-2025"],
+    "related": ["german-sentence-patterns", "cross-language-bridges", "translation-vs-paraphrase", "register-transfer"],
+    "locales": {
+      "en": {
+        "title": "English–German Pattern Bridges: Compare Functions, Not Templates",
+        "description": "Use English and German Frames side by side to compare a shared communicative Move while keeping word order, register and constraints language-specific.",
+        "intro": "English and German are similar enough to tempt direct mapping and different enough to punish it. That makes them a useful pair for Bridge practice. Rather than starting from an English template and replacing its words, Metkagram can hold two independently reviewed Frames beside one communicative Move. The learner compares how each language performs the job, then practises retrieval inside the target language.",
+        "sections": [
+          {
+            "heading": "Start with a shared job, not a shared string",
+            "paragraphs": [
+              "Choose a Move such as setting a condition, limiting certainty, correcting a framing or managing disagreement. Find a natural English Frame and a natural German Frame that can perform it in comparable situations. Their structures may line up neatly or may diverge in clause order, fixed elements and preferred wording.",
+              "The shared Move explains why the Frames belong together. Surface resemblance is interesting only after both sides are valid learning objects in their own language."
+            ]
+          },
+          {
+            "heading": "Compare constraints before practising translation",
+            "paragraphs": [
+              "Mark what remains fixed in each Frame and what can vary. In German, word order or clause structure may carry an especially visible constraint; in English, the comparable Move may rely on a different configuration. These differences should be part of the comparison, not treated as errors around an underlying English template.",
+              "A Bridge can then note the useful correspondence and any asymmetry in register or context. It remains a reviewed relation between Frames, not an automatically generated translation pair."
+            ]
+          },
+          {
+            "heading": "End with target-language retrieval",
+            "paragraphs": [
+              "After comparison, remove the English side and give a German situation, or remove German and give an English situation. Ask for the Move and then the target-language Frame. This changes Bridge practice from bilingual recognition into language-specific access.",
+              "The support language can return in feedback if the learner needs to understand the distinction. But successful transfer means the target-language Frame eventually appears from the situation itself rather than from translating a visible source sentence."
+            ]
+          }
+        ],
+        "takeaway": "English–German Bridge practice works best when both Frames are independently natural, the shared Move is explicit and final retrieval happens inside the target language rather than through word replacement."
+      },
+      "ru": {
+        "title": "English–German Pattern Bridges: сравниваем функции, а не шаблоны",
+        "description": "Ставьте английский и немецкий Frames рядом по общему Move, сохраняя порядок слов, register и ограничения специфичными для каждого языка.",
+        "intro": "Английский и немецкий достаточно похожи, чтобы провоцировать прямой mapping, и достаточно различаются, чтобы за него наказывать. Поэтому это хорошая пара для Bridge practice. Вместо английского template с заменой слов Metkagram может поставить рядом два независимо reviewed Frames и один communicative Move. Учащийся сравнивает, как каждый язык выполняет задачу, а затем тренирует retrieval уже внутри целевого языка.",
+        "sections": [
+          {
+            "heading": "Начинайте с общей задачи, а не общей строки",
+            "paragraphs": [
+              "Выберите Move: поставить условие, ограничить уверенность, исправить framing или управлять несогласием. Найдите естественный английский и естественный немецкий Frame для сопоставимых ситуаций. Их структуры могут совпасть довольно близко или заметно разойтись по clause order, фиксированным элементам и предпочтительной формулировке.",
+              "Именно общий Move объясняет, почему Frames стоит сравнивать. Поверхностное сходство интересно только после того, как обе стороны являются валидными учебными объектами в собственном языке."
+            ]
+          },
+          {
+            "heading": "Сначала сравните ограничения, потом практикуйте перевод",
+            "paragraphs": [
+              "Отметьте, что фиксировано в каждом Frame и что может меняться. В немецком особенно заметным constraint часто становится порядок слов или структура придаточной части; английский может выполнять сопоставимый Move другой конфигурацией. Эти различия должны быть частью сравнения, а не ошибками вокруг якобы базового английского шаблона.",
+              "После этого Bridge может зафиксировать полезное соответствие и асимметрию по регистру или контексту. Это reviewed relation между Frames, а не автоматически сгенерированная translation pair."
+            ]
+          },
+          {
+            "heading": "Заканчивайте retrieval внутри целевого языка",
+            "paragraphs": [
+              "После сравнения уберите английскую сторону и дайте немецкую ситуацию или наоборот. Сначала попросите определить Move, затем восстановить Frame целевого языка. Так Bridge practice переходит от bilingual recognition к language-specific access.",
+              "Язык поддержки можно вернуть в feedback, если нужно объяснить отличие. Но успешный transfer означает, что Frame целевого языка в итоге появляется из самой ситуации, а не из перевода видимой исходной фразы."
+            ]
+          }
+        ],
+        "takeaway": "English–German Bridge practice сильнее, когда оба Frames естественны сами по себе, общий Move явный, а финальное retrieval идёт внутри целевого языка, а не через замену слов."
+      }
+    }
+  }
+]

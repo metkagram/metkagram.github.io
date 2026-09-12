@@ -1,0 +1,69 @@
+[
+  {
+    "id": "pattern-to-speech",
+    "slug": "from-language-pattern-to-speech-reuse-loop",
+    "category": "transfer",
+    "source_ids": ["karpicke-roediger-2008", "puimege-2024", "boers-lindstromberg-2012"],
+    "related": ["retrieval-practice", "variation-practice", "transfer-reuse", "ten-minute-routine"],
+    "locales": {
+      "en": {
+        "title": "From Language Pattern to Speech: A Practical Reuse Loop",
+        "description": "Move from reading a Frame to producing it: understand the Move, retrieve the structure, vary the content and use it in a realistic speaking prompt.",
+        "intro": "A common failure in language study is a one-way pipeline: see a useful phrase, understand it, perhaps save it, and never produce it again. Metkagram’s reuse loop tries to close that gap. A Frame begins in a real example, becomes an explicit learning object, then returns to a new situation where the learner has to choose and say something without copying the original.",
+        "sections": [
+          {
+            "heading": "Speak from the Move, not from the displayed sentence",
+            "paragraphs": [
+              "After studying a Frame, hide the example and keep only the communication job. For instance: correct a misunderstanding politely, express a condition, or show that evidence is limited. Now retrieve a structure that can perform that Move.",
+              "This removes the strongest visual cue while preserving a meaningful reason to speak. If retrieval fails, briefly inspect the Frame and try again rather than reading the completed sentence aloud five times."
+            ]
+          },
+          {
+            "heading": "Change the content enough to require construction",
+            "paragraphs": [
+              "Use a different topic and vocabulary. A workplace Frame can become a family decision, travel problem or opinion about technology. The goal is to preserve the structural relationship while forcing the open slots to carry new information.",
+              "Record one short answer if useful, but do not turn pronunciation recording into the whole lesson. The central test is whether the Frame appears when the prompt changes."
+            ]
+          },
+          {
+            "heading": "Add pressure only after the relationship is stable",
+            "paragraphs": [
+              "Fluency practice can later reduce preparation time or combine several Moves in a mini-dialogue. Starting with speed too early may simply make the learner rehearse whatever shortcut is already easiest.",
+              "A better progression is accuracy of choice, flexible variation, then faster retrieval. Speech becomes the final surface of the same learning object rather than a separate mysterious skill that starts after grammar study ends."
+            ]
+          }
+        ],
+        "takeaway": "To move a Frame into speech, remove the model, keep the Move, retrieve the structure and rebuild it with new content. Speed comes after flexible, accurate reuse."
+      },
+      "ru": {
+        "title": "От паттерна к речи: практический цикл reuse",
+        "description": "Переход от чтения Frame к собственной речи: понять Move, восстановить структуру, поменять содержание и применить её в реалистичной устной ситуации.",
+        "intro": "Типичная поломка языкового обучения выглядит как односторонний конвейер: увидел полезную фразу, понял её, возможно сохранил — и больше никогда не произнёс. Reuse loop в Metkagram пытается закрыть этот разрыв. Frame начинается в реальном примере, становится явным учебным объектом и затем возвращается в новой ситуации, где нужно самостоятельно выбрать и сказать что-то без копирования исходника.",
+        "sections": [
+          {
+            "heading": "Говорите из Move, а не из показанного предложения",
+            "paragraphs": [
+              "После изучения Frame спрячьте пример и оставьте только коммуникативную задачу. Например: вежливо исправить недопонимание, поставить условие или показать ограниченность доказательств. Теперь восстановите структуру, способную выполнить этот Move.",
+              "Так исчезает главная визуальная подсказка, но остаётся осмысленная причина говорить. Если retrieval не сработал, коротко посмотрите на Frame и попробуйте снова вместо пяти чтений готовой строки вслух."
+            ]
+          },
+          {
+            "heading": "Смените содержание настолько, чтобы пришлось конструировать",
+            "paragraphs": [
+              "Возьмите другую тему и лексику. Рабочий Frame может перейти в семейное решение, проблему в поездке или мнение о технологии. Нужно сохранить структурное отношение, но заставить открытые слоты нести новую информацию.",
+              "Можно записать короткий ответ и послушать себя, но не превращайте запись произношения во весь урок. Главная проверка — появляется ли Frame, когда меняется prompt."
+            ]
+          },
+          {
+            "heading": "Добавляйте скорость после того, как связь стала устойчивой",
+            "paragraphs": [
+              "Позже fluency practice может уменьшать время подготовки или соединять несколько Moves в мини-диалоге. Если начать со скорости слишком рано, человек просто быстрее репетирует уже привычный обходной путь.",
+              "Лучше идти так: точность выбора, гибкая variation, затем более быстрое retrieval. Речь становится финальной поверхностью того же учебного объекта, а не отдельным загадочным навыком, который якобы начинается после грамматики."
+            ]
+          }
+        ],
+        "takeaway": "Чтобы перенести Frame в речь, уберите модель, сохраните Move, восстановите структуру и заполните её новым содержанием. Скорость имеет смысл после точного и гибкого reuse."
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "grammar-apps-comparison",
+    "slug": "metkagram-vs-grammar-apps-rules-and-frames",
+    "category": "comparisons",
+    "source_ids": ["wray-2000", "meunier-2012", "boers-lindstromberg-2012"],
+    "related": ["sentence-frames", "contrast-and-choice", "real-sentence-learning", "patterns-vs-words"],
+    "locales": {
+      "en": {
+        "title": "Metkagram vs Grammar Apps: Rules, Examples and Reuse",
+        "description": "Grammar apps can explain and drill forms. Metkagram starts from meaningful sentences and turns recurring structure into Frames linked to communicative decisions.",
+        "intro": "Grammar apps and Metkagram overlap, but they organise the problem differently. A conventional grammar lesson often starts from a rule or category and then supplies examples. Metkagram usually starts from meaningful language, extracts a reusable Frame, connects it to the Move it performs and later asks the learner to choose or reuse it. Neither direction makes the other obsolete.",
+        "sections": [
+          {
+            "heading": "Rules are useful descriptions, but they are not the only learning object",
+            "paragraphs": [
+              "A rule can explain why a form is grammatical and can compress a large number of examples. That is valuable. The difficulty appears when a learner can repeat the rule but still cannot assemble an expression quickly or select between several grammatical alternatives in context.",
+              "A Frame keeps more of the actual language visible: fixed words, open slots, ordering and constraints. It sits closer to production while still being more general than one memorised sentence."
+            ]
+          },
+          {
+            "heading": "Metkagram organises practice around decisions",
+            "paragraphs": [
+              "Instead of stopping at “use construction A in condition B,” Metkagram can place A beside a nearby Frame and explain the Contrast. A Choice then asks which option fits a new situation. The learner practises the boundary where a real mistake can happen.",
+              "That approach is particularly useful when both alternatives are technically possible but differ in meaning, stance or register. A rule remains part of the explanation; it simply no longer has to carry the whole lesson."
+            ]
+          },
+          {
+            "heading": "The practical question is which representation helps the next sentence",
+            "paragraphs": [
+              "Some topics need a concise grammar explanation. Others become clearer through several examples and a reusable Frame. A good learning system should not force every problem into one format because the interface happens to have a favourite exercise type.",
+              "Metkagram’s wager is that many B2–C1 problems benefit from moving between sentence, Frame, Move, Contrast and reuse. That is a product design choice to test, not a declaration that grammar explanations have become unnecessary."
+            ]
+          }
+        ],
+        "takeaway": "Grammar rules compress explanations; Frames preserve reusable language relationships. Metkagram combines structure, intent and contrast so the learner practises the decision behind the next sentence."
+      },
+      "ru": {
+        "title": "Metkagram и grammar apps: правила, примеры и reuse",
+        "description": "Grammar apps хорошо объясняют и тренируют формы. Metkagram начинает с осмысленного предложения и превращает повторяющуюся структуру в Frame, связанный с выбором.",
+        "intro": "Grammar apps и Metkagram частично пересекаются, но по-разному организуют задачу. Обычный урок грамматики часто начинается с правила или категории, а затем показывает примеры. Metkagram обычно идёт от осмысленного языка: выделяет повторно используемый Frame, связывает его с Move и позже просит выбрать или применить конструкцию. Один путь не отменяет другой.",
+        "sections": [
+          {
+            "heading": "Правило полезно, но оно не обязано быть единственным учебным объектом",
+            "paragraphs": [
+              "Правило может объяснить, почему форма грамматична, и сжать большое количество примеров. Это реальная ценность. Сложность начинается, когда человек умеет повторить правило, но всё ещё медленно собирает выражение или не может выбрать между несколькими грамматичными вариантами в контексте.",
+              "Frame оставляет видимым больше самого языка: фиксированные слова, открытые слоты, порядок и ограничения. Он ближе к производству речи, но всё ещё более общий, чем одно выученное предложение."
+            ]
+          },
+          {
+            "heading": "Metkagram строит практику вокруг решений",
+            "paragraphs": [
+              "Вместо остановки на формуле «используйте конструкцию A при условии B» Metkagram может поставить A рядом с похожим Frame и объяснить Contrast. Затем Choice спрашивает, какой вариант подходит новой ситуации. Тренируется именно граница, где в реальной речи возникает ошибка.",
+              "Это особенно полезно, когда оба варианта формально возможны, но различаются смыслом, позицией говорящего или регистром. Правило остаётся частью объяснения, просто перестаёт нести на себе весь урок."
+            ]
+          },
+          {
+            "heading": "Практический вопрос — какое представление помогает следующему предложению",
+            "paragraphs": [
+              "Некоторым темам нужно короткое грамматическое объяснение. Другие лучше раскрываются через несколько примеров и повторно используемый Frame. Хорошая система не должна насильно загонять любую проблему в один формат только потому, что интерфейс любит определённый тип упражнения.",
+              "Гипотеза дизайна Metkagram в том, что многим задачам B2–C1 полезно движение между sentence, Frame, Move, Contrast и reuse. Это решение продукта, которое нужно проверять, а не заявление о ненужности грамматических объяснений."
+            ]
+          }
+        ],
+        "takeaway": "Правила сжимают объяснение, Frames сохраняют повторно используемое языковое отношение. Metkagram соединяет структуру, намерение и контраст вокруг решения для следующей фразы."
+      }
+    }
+  }
+]

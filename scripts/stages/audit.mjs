@@ -15,6 +15,8 @@ export const AUDIT_STEPS = [
   "scripts/check-internal-discovery-distribution.mjs",
   // Sitemap/canonical/JSON-LD graph integrity.
   "scripts/seo-graph-audit.mjs",
+  // Error route remains a pure noindex recovery surface after consent + ARWP mutators.
+  "scripts/search-release-error-audit.mjs",
 ];
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) {
