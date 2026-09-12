@@ -119,8 +119,11 @@ test("knowledge graph publishes stable Metkagram entities and vocabulary", () =>
   ]) assert.ok(ids.has(id), `missing graph entity ${id}`);
 });
 
-test("ARWP publication is the final HTML-producing render step", () => {
-  assert.equal(RENDER_STEPS.at(-1), "scripts/apply-arwp.mjs");
+test("ARWP is the final normal-page HTML mutator before the dedicated 404 surface", () => {
+  const arwpIndex = RENDER_STEPS.indexOf("scripts/apply-arwp.mjs");
+  assert.ok(arwpIndex >= 0);
+  assert.equal(RENDER_STEPS[arwpIndex + 1], "scripts/generate-404.mjs");
+  assert.equal(RENDER_STEPS.at(-1), "scripts/generate-404.mjs");
   const source = fs.readFileSync(path.join(ROOT, "scripts/apply-arwp.mjs"), "utf8");
   assert.match(source, /\/ai\/site-profile\.json/);
   assert.match(source, /\/ai\/ai-search-profile\.json/);
