@@ -16,6 +16,7 @@ Canonical project documents:
 - [Terminology](docs/TERMINOLOGY.md)
 - [Language architecture](docs/LANGUAGE_ARCHITECTURE.md)
 - [Thinking in Language](docs/THINKING_IN_LANGUAGE.md)
+- [Ptichi spoken-practice integration](docs/PTICHI_INTEGRATION.md)
 - [Architecture](ARCHITECTURE.md)
 
 ## Metkagram vocabulary
@@ -72,6 +73,12 @@ Pattern Routes compose canonical objects into short ordered learning sequences w
 
 Pattern Bridge supports reviewed cross-language retrieval. A Bridge is not a learner translation: translation explains an example in a support language, while a Bridge records how the same or a related communicative Move is naturally realised in another learning language.
 
+### Ptichi spoken-practice integration
+
+Ptichi is the first intended spoken-rehearsal consumer of Metkagram's provider-neutral practice handoff. The products stay separate: Metkagram supplies reviewed language objects and communicative intent; Ptichi will consume a small provenance-safe module and own local recording, self-listening, A/B comparison and changed-context transfer.
+
+**Current status:** the integration architecture and Metkagram-side contract are in development. Native Ptichi module loading is **not released yet**, and Metkagram remains fully useful on its own. See [docs/PTICHI_INTEGRATION.md](docs/PTICHI_INTEGRATION.md) and issue #117 for the provider-side work.
+
 ## Multilingual architecture
 
 Metkagram treats language as independent capabilities rather than one setting:
@@ -113,7 +120,7 @@ Public visibility does not remove the current licensing and attribution terms. S
 
 ## Product sequence
 
-**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent and teacher integrations → additional reviewed language capabilities**
+**Pattern Practice → Pattern Lens + Pattern Atlas → Pattern Map → Pattern Contrasts → Pattern Choice → Pattern Routes → Pattern Bridge → active practice → research/evaluation → agent, teacher and spoken-practice integrations → additional reviewed language capabilities**
 
 ## Local development
 
