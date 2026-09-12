@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { patternToCanonicalCards } from "../src/annotation-schema.mjs";
 import { loadContent } from "../src/content.mjs";
+import { escapeHtml, layout } from "../src/render.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
 import { SITE_URL } from "../src/site.mjs";
 import { loadPatternAnnotations } from "./build.mjs";
@@ -16,15 +17,6 @@ const PRIORITY_SETS = [
   "CMP", "FRM", "UNC", "DEC", "HYP", "SYS", "CDG", "PST", "META",
 ];
 const PRIORITY = new Map(PRIORITY_SETS.map((id, index) => [id, PRIORITY_SETS.length - index]));
-
-function escapeHtml(value = "") {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
 
 function write(relative, contents) {
   const file = path.join(DIST, relative);
@@ -67,52 +59,67 @@ function annotatedExample(card) {
   return output;
 }
 
-function cardHtml({ pattern, card, language }) {
-  const lang = pattern.langs.find((item) => item.lang === language);
-  const canonicalPath = patternPath("en", pattern.id);
-  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
-  const title = `${lang.formula} — ${pattern.id} Pattern Card`;
-  const description = `Annotated ${language.toUpperCase()} Pattern Card for ${pattern.id}, generated from the canonical Metkagram record.`;
-  return `<!doctype html>
-<html lang="${language}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>${escapeHtml(title)}</title>
-  <meta name="description" content="${escapeHtml(description)}">
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="${escapeHtml(canonicalUrl)}">
-  <style>
-    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;background:#f5f5f2}
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}.card-shell{width:min(1200px,100%)}
+function cardStyles() {
+  return `<style>
+    .pattern-card-page{margin:0;min-height:100vh;padding:24px;background:#f5f5f2;color:#111}
+    .pattern-card-page #content{width:min(1200px,100%);margin:0 auto}.card-shell{width:100%}
     .pattern-card{aspect-ratio:16/9;min-height:560px;background:#fff;border:1px solid #d9d9d2;border-radius:28px;padding:52px 58px 42px;display:flex;flex-direction:column;box-shadow:0 16px 46px rgba(0,0,0,.08)}
     .card-head{display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font-weight:800;letter-spacing:.02em}.meta{display:flex;gap:10px;align-items:center;color:#555;font-size:14px}.pill{border:1px solid #ccc;border-radius:999px;padding:5px 10px;font-weight:700;color:#222}
-    h1{font-size:clamp(30px,4.2vw,58px);line-height:1.05;letter-spacing:-.025em;margin:68px 0 34px;max-width:1000px}.example-label{font-size:14px;text-transform:uppercase;letter-spacing:.11em;color:#666;font-weight:750;margin:0 0 14px}
+    .pattern-card h1{font-size:clamp(30px,4.2vw,58px);line-height:1.05;letter-spacing:-.025em;margin:68px 0 34px;max-width:1000px}.example-label{font-size:14px;text-transform:uppercase;letter-spacing:.11em;color:#666;font-weight:750;margin:0 0 14px}
     .example{font-size:clamp(24px,3vw,42px);line-height:1.48;margin:0;max-width:1050px}.mark{display:inline-flex;position:relative;flex-direction:column;vertical-align:baseline;background:transparent;color:inherit;padding:0 .06em;border-bottom:4px solid #888}.mark small{font-size:11px;line-height:1.1;text-transform:uppercase;letter-spacing:.06em;color:#555;margin-top:4px;white-space:nowrap}
     .mark-subject{border-color:#7950f2}.mark-verb{border-color:#2f9e44}.mark-helper{border-color:#1971c2}.mark-function{border-color:#e67700}.mark-pattern_part{border-color:#c2255c}
     .card-foot{margin-top:auto;padding-top:30px;border-top:1px solid #ecece7;display:flex;justify-content:space-between;gap:24px;align-items:flex-end;color:#555;font-size:13px}.canonical{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere}.attribution{text-align:right;max-width:420px}
-    @media(max-width:720px){body{padding:0}.pattern-card{border-radius:0;min-height:100vh;aspect-ratio:auto;padding:32px 24px}.card-head,.card-foot{align-items:flex-start;flex-direction:column}.attribution{text-align:left}h1{margin-top:48px}.example{font-size:28px}.mark small{font-size:9px}}
-    @media print{@page{size:13.333in 7.5in;margin:0}body{padding:0;background:#fff}.card-shell{width:100%}.pattern-card{width:13.333in;height:7.5in;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;page-break-after:always}}
-  </style>
-</head>
-<body>
-  <main class="card-shell">
-    <article class="pattern-card" data-pattern-card="${escapeHtml(pattern.id)}" data-learning-language="${language}">
+    .pattern-card-page>.share-bar{width:min(1200px,100%);margin:14px auto 0;background:#fff;border-radius:18px}
+    @media(max-width:720px){.pattern-card-page{padding:0}.pattern-card{border-radius:0;min-height:100vh;aspect-ratio:auto;padding:32px 24px}.card-head,.card-foot{align-items:flex-start;flex-direction:column}.attribution{text-align:left}.pattern-card h1{margin-top:48px}.example{font-size:28px}.mark small{font-size:9px}.pattern-card-page>.share-bar{margin:0;border-radius:0}}
+    @media print{@page{size:13.333in 7.5in;margin:0}.pattern-card-page{padding:0;background:#fff}.pattern-card-page>.share-bar{display:none!important}.card-shell{width:100%}.pattern-card{width:13.333in;height:7.5in;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;page-break-after:always}}
+  </style>`;
+}
+
+function cardHtml({ pattern, card, language, url }) {
+  const lang = pattern.langs.find((item) => item.lang === language);
+  const canonicalPath = patternPath("en", pattern.id);
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const cardUrl = `${SITE_URL}${url}`;
+  const title = `${pattern.id} · ${language.toUpperCase()} Pattern Card | Metkagram`;
+  const description = `Annotated ${language.toUpperCase()} Pattern Card for ${pattern.id}, generated from a reviewed Metkagram learning record.`;
+  const body = `${cardStyles()}<section class="card-shell"><article class="pattern-card" data-pattern-card="${escapeHtml(pattern.id)}" data-learning-language="${language}">
       <header class="card-head"><div class="brand">Metkagram</div><div class="meta"><span class="pill">${language.toUpperCase()}</span><code>${escapeHtml(pattern.id)}</code></div></header>
       <h1>${escapeHtml(lang.formula)}</h1>
       <p class="example-label">Annotated example</p>
       <p class="example">${annotatedExample(card)}</p>
       <footer class="card-foot"><div class="canonical">${escapeHtml(canonicalUrl)}</div><div class="attribution">Metkagram · canonical Pattern ${escapeHtml(pattern.id)} · Source-available terms · card generated from reviewed/indexable public content</div></footer>
-    </article>
-  </main>
-</body>
-</html>
-`;
+    </article></section>`;
+  let html = layout({
+    locale: "en",
+    pathname: url,
+    title,
+    description,
+    body,
+    root: true,
+    robots: "noindex,follow",
+    bodyClass: "pattern-card-page",
+  });
+  // Cards are derivative distribution surfaces. Their page identity points back to
+  // the canonical reviewed learning record, while the card route remains directly
+  // addressable for screenshot/print use.
+  html = html.replaceAll(cardUrl, canonicalUrl);
+  if (language === "de") html = html.replace('<html lang="en">', '<html lang="de">');
+  return html;
 }
 
 function galleryHtml(entries) {
   const rows = entries.map((entry) => `<li><a href="${escapeHtml(entry.url)}"><strong>${escapeHtml(entry.pattern_id)}</strong> · ${entry.language.toUpperCase()}</a> <span>${escapeHtml(entry.formula)}</span></li>`).join("\n");
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Metkagram Pattern Cards</title><style>body{font:16px/1.5 system-ui;max-width:900px;margin:40px auto;padding:0 20px;color:#111}li{margin:.55rem 0}span{color:#555;margin-left:.5rem}</style></head><body><main><h1>Metkagram Pattern Cards</h1><p>Screenshot/print-ready cards generated from reviewed, search-indexable canonical Patterns. Card pages are intentionally noindex and point canonically to the learning record.</p><ul>${rows}</ul></main></body></html>\n`;
+  const body = `<style>.pattern-card-gallery{font:16px/1.5 system-ui;max-width:900px;margin:40px auto;padding:0 20px;color:#111}.pattern-card-gallery li{margin:.55rem 0}.pattern-card-gallery span{color:#555;margin-left:.5rem}</style><section class="pattern-card-gallery"><h1>Metkagram Pattern Cards</h1><p>Screenshot/print-ready cards generated from reviewed, search-indexable canonical Patterns. Card pages are intentionally noindex and point canonically to the learning record.</p><ul>${rows}</ul></section>`;
+  return layout({
+    locale: "en",
+    pathname: "/cards/",
+    title: "Pattern Cards | Metkagram",
+    description: "Screenshot and print-ready cards generated from reviewed, indexable Metkagram Patterns with annotated examples.",
+    body,
+    root: true,
+    robots: "noindex,follow",
+    bodyClass: "pattern-card-gallery-page",
+  });
 }
 
 export function generateShareablePatternCards() {
@@ -136,7 +143,7 @@ export function generateShareablePatternCards() {
       if (!card) throw new Error(`Missing canonical ${language} card for ${pattern.id}`);
       if (!card.spans?.length) throw new Error(`Shareable card ${pattern.id}:${language} has no reviewed annotation Marks`);
       const url = `/cards/${language}/${pattern.id.toLowerCase()}/`;
-      write(`${url.slice(1)}index.html`, cardHtml({ pattern, card, language }));
+      write(`${url.slice(1)}index.html`, cardHtml({ pattern, card, language, url }));
       entries.push({
         pattern_id: pattern.id,
         set_id: pattern.set_id,
