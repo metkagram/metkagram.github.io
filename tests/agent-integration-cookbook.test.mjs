@@ -14,12 +14,12 @@ const byId = new Map(cookbook.recipes.map((recipe) => [recipe.id, recipe]));
 test("agent integration cookbook publishes at least five exact provider-neutral recipes plus abstention", () => {
   assert.equal(cookbook.schemaVersion, 1);
   assert.equal(cookbook.status, "reviewed-reference");
-  assert.equal(cookbook.recipes.length, 6);
+  assert.ok(cookbook.recipes.length >= 6, "cookbook must remain additive and keep at least five positive recipes plus abstention");
   assert.equal(byId.get("abstain-on-missing-pattern").expected.behavior, "abstain");
   assert.match(cookbook.evidenceBoundary, /not evidence.*improves language learning/i);
 
   const api = readJson("dist/api/v1/agent-integration-recipes.json");
-  assert.equal(dataOf(api).recipes.length, 6);
+  assert.equal(dataOf(api).recipes.length, cookbook.recipes.length);
   assert.equal(api.provenance.record_type, "agent_integration_recipes");
 });
 
@@ -61,6 +61,19 @@ test("Route and Bridge recipes preserve current reviewed identity and boundaries
   const bridge = bridgeMap.items.find((item) => item.pattern_id === "CLF051");
   assert.equal(bridge.mapping_type, "same-canonical-pattern-functional-counterpart");
   assert.equal(bridge.literal_equivalence, false);
+});
+
+test("spoken-practice recipe resolves one immutable canonical handoff", () => {
+  const recipe = byId.get("canonical-object-to-spoken-practice");
+  assert.ok(recipe, "spoken-practice recipe must remain in the provider-neutral cookbook");
+  const collection = dataOf(readJson(`dist${recipe.entrypoint}`));
+  const handoff = collection.handoffs.find((item) => item.handoff_id === recipe.lookup.handoff_id);
+  assert.ok(handoff, `missing spoken-practice handoff ${recipe.lookup.handoff_id}`);
+  assert.equal(handoff.source_object.type, recipe.expected.source_type);
+  assert.equal(handoff.source_object.id, recipe.expected.source_id);
+  assert.equal(handoff.provider_id, recipe.expected.provider_id);
+  assert.equal(handoff.language_context.practice_language, recipe.expected.practice_language);
+  assert.match(recipe.output_contract.join(" "), /external consumer/i);
 });
 
 test("abstention fixture stays absent and never gains fabricated provenance", () => {
