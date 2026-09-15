@@ -49,6 +49,8 @@
 // - humanize-study-set-labels runs after content-producing Practice passes so internal
 //   set/group IDs remain machine-readable but are never exposed as user-facing labels;
 // - consent analytics decorates the completed normal HTML surface;
+// - RSS generation follows normal HTML-producing passes so every canonical page can
+//   advertise the subscription surface before ARWP publication inspects final discovery;
 // - ARWP publication runs after every normal HTML-producing pass so agent discovery sees
 //   the exact canonical site surface;
 // - 404 generation runs last, after all global HTML mutators, because the error page is
@@ -104,6 +106,7 @@ export const RENDER_STEPS = [
   "scripts/apply-internal-discovery-distribution.mjs",
   "scripts/humanize-study-set-labels.mjs",
   "scripts/apply-consent-analytics.mjs",
+  "scripts/generate-rss-feed.mjs",
   "scripts/apply-arwp.mjs",
   "scripts/generate-404.mjs",
 ];
