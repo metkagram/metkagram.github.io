@@ -17,7 +17,13 @@ test("every canonical pattern has 5–7 examples per learning language", () => {
   const violations = [];
 
   for (const pattern of patterns) {
-    for (const language of pattern.langs || []) {
+    const languages = Array.isArray(pattern.langs) ? pattern.langs : [];
+    if (languages.length === 0) {
+      violations.push(`${pattern.set_id}/${pattern.id}: no learning-language records`);
+      continue;
+    }
+
+    for (const language of languages) {
       const count = Array.isArray(language.examples) ? language.examples.length : 0;
       if (count < 5 || count > 7) {
         violations.push(`${pattern.set_id}/${pattern.id}/${language.lang}: ${count}`);
