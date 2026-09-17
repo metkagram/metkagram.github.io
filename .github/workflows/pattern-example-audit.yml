@@ -1,0 +1,17 @@
+name: Pattern example audit
+
+on:
+  push:
+    branches:
+      - chore/pattern-example-audit
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Audit pattern example counts
+        run: node --test tests/pattern-example-count.test.mjs
