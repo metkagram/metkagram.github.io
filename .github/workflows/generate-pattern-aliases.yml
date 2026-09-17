@@ -23,7 +23,7 @@ jobs:
       - run: node scripts/generate-pattern-aliases.mjs
       - name: Commit alias registry
         run: |
-          if git diff --quiet -- data/pattern-aliases.json; then
+          if [ -z "$(git status --porcelain -- data/pattern-aliases.json)" ]; then
             echo "Pattern alias registry is already current."
             exit 0
           fi
