@@ -48,6 +48,8 @@
 //   rendered canonical learning graph and extends the existing share bar with Save/Cite;
 // - humanize-study-set-labels runs after content-producing Practice passes so internal
 //   set/group IDs remain machine-readable but are never exposed as user-facing labels;
+// - pattern-learning-order then makes the final Pattern learning cards retrieval-first:
+//   the Russian meaning is visible before the English and German realizations;
 // - consent analytics decorates the completed normal HTML surface;
 // - RSS generation follows normal HTML-producing passes so every canonical page can
 //   advertise the subscription surface before ARWP publication inspects final discovery;
@@ -105,6 +107,7 @@ export const RENDER_STEPS = [
   "scripts/search-release-root.mjs",
   "scripts/apply-internal-discovery-distribution.mjs",
   "scripts/humanize-study-set-labels.mjs",
+  "scripts/pattern-learning-order.mjs",
   "scripts/apply-consent-analytics.mjs",
   "scripts/generate-rss-feed.mjs",
   "scripts/apply-arwp.mjs",
