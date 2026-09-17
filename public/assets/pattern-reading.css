@@ -83,7 +83,8 @@ body.pattern-reader-body .pattern-page {
   max-width: none;
 }
 
-.pattern-reader-body .pattern-comparison-language p {
+.pattern-reader-body .pattern-comparison-language p,
+.pattern-reader-body .pattern-comparison-list .pattern-comparison-language p {
   width: 100%;
   max-width: none;
   margin-right: 0;
