@@ -6,6 +6,7 @@ on:
       - fix/deduplicate-pattern-corpus
     paths:
       - scripts/deduplicate-pattern-corpus.mjs
+      - scripts/migrate-retired-pattern-references.mjs
       - .github/workflows/deduplicate-pattern-corpus.yml
 
 permissions:
@@ -28,6 +29,8 @@ jobs:
       - run: npm ci
       - name: Deduplicate canonical Pattern corpus
         run: node scripts/deduplicate-pattern-corpus.mjs
+      - name: Migrate retired Pattern references
+        run: node scripts/migrate-retired-pattern-references.mjs
       - name: Verify migrated repository
         run: npm run verify
 
