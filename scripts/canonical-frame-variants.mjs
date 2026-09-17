@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { loadContent } from "../src/content.mjs";
 import { buildDomainModel, DOMAIN_MODEL_VERSION } from "../src/domain-model.mjs";
 import { loadFrameFamilies } from "../src/frame-families.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
@@ -294,7 +295,7 @@ function patchPatternPages(model) {
       const file = patternPageFile(locale, patternId);
       if (!fs.existsSync(file)) continue;
       let page = fs.readFileSync(file, "utf8");
-      if (page.includes("data-canonical-frame-family")) continue;
+      if (page.includes('<meta http-equiv="refresh"') || page.includes("data-canonical-frame-family")) continue;
       const ru = locale === "ru";
       const formulas = canonicalFrames.map((frame) => `<li><strong>${escapeHtml(frame.language.toUpperCase())}</strong> · <code>${escapeHtml(frame.formula)}</code></li>`).join("");
       const siblingLinks = siblings.slice(0, 7).map((sibling) => `<a href="${patternPath(locale, sibling)}">${escapeHtml(sibling)}</a>`).join(" · ");
@@ -325,7 +326,7 @@ function patchLlms(manifest) {
 
 function main() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist. Run the base build first.");
-  const patterns = readJson(path.join(DIST, "data", "advanced-patterns.json"));
+  const patterns = loadContent().advancedPatterns;
   const model = buildDomainModel(patterns, {
     reviewedMappings: reviewedMappings(),
     frameExtensions: frameExtensions(),
