@@ -369,8 +369,6 @@ function patchSeoRecords() {
 
 function patchDiscoveryLinks() {
   const targets = [
-    ["en", "index.html"],
-    ["ru", "index.html"],
     ["en", "practice/index.html"],
     ["ru", "practice/index.html"],
     ["en", "ai/index.html"],

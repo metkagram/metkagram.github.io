@@ -1409,7 +1409,7 @@ body.home-reader { background-image: none; }
 body.home-reader::before { display: none; }
 
 .reader-home { width: min(calc(100% - 2.5rem), var(--reading-column)); margin-inline: auto; padding: clamp(2rem, 6vw, 4rem) 0 var(--space-6); }
-.reader-home .home-hero h1 { max-width: 20ch; margin-bottom: 1.25rem; font-size: clamp(2.3rem, 5.4vw, 3.9rem); letter-spacing: -.03em; }
+.reader-home .reader-hero h1 { max-width: 20ch; margin-bottom: 1.25rem; font-size: clamp(2.3rem, 5.4vw, 3.9rem); letter-spacing: -.03em; }
 .reader-home .home-lede { max-width: 34rem; font-family: var(--serif); font-size: clamp(1.08rem, 1.5vw, 1.25rem); line-height: 1.65; color: var(--reading-ink); }
 .reader-home .home-actions { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; margin-top: 1.75rem; }
 .reader-home .home-primary-action { display: inline-block; padding: .8rem 1.2rem; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--paper); font-weight: 600; text-decoration: none; }
@@ -1436,9 +1436,11 @@ body.home-reader::before { display: none; }
 .practice-intro h1 { max-width: 18ch; font-size: clamp(2.2rem, 4.5vw, 3.5rem); }
 .practice-intro .lede { max-width: 34rem; font-family: var(--serif); font-size: 1.12rem; line-height: 1.6; }
 .practice-intro .practice-entry { display: flex; flex-wrap: wrap; gap: .9rem 1.5rem; align-items: center; margin-top: 1.5rem; border: 0; padding: 0; }
-.practice-intro .practice-entry-primary { display: inline-block; padding: .75rem 1.1rem; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--paper); font-weight: 600; text-decoration: none; }
+.practice-intro .practice-entry-primary { display: inline-block; min-height: 0; padding: .75rem 1.1rem; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--paper); font-weight: 600; text-decoration: none; box-shadow: none; }
 .practice-intro .practice-entry-primary:hover { background: transparent; color: var(--ink); }
-.practice-intro .practice-entry-secondary { display: flex; gap: 1.25rem; }
+.practice-intro .practice-entry-secondary { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; border: 0; background: transparent; }
+.practice-intro .practice-entry-secondary a { padding: 0; border: 0; text-decoration: underline; text-underline-offset: .22em; }
+.practice-intro .practice-entry-secondary a:hover, .practice-intro .practice-entry-secondary a:focus-visible { background: transparent; }
 .practice-continue { padding-top: 0; }
 #all-patterns.practice-tools { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: end; padding-block: 1.5rem; }
 #all-patterns .search-field { flex: 1 1 16rem; }
@@ -1496,3 +1498,16 @@ body.home-reader::before { display: none; }
   .pattern-reader-body .pattern-page { width: min(calc(100% - 1rem), 62rem); }
 }
 .reader-home .home-scope { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; line-height: 1.55; }
+
+/* Calm chrome: the studio board styling steps back on the two reader surfaces */
+body.library-reader { background-color: var(--paper); background-image: none; }
+body.library-reader::before { display: none; }
+body.library-reader main > .page-head, body.library-reader main > .section-pad { background: transparent; }
+body.library-reader .page-head.practice-intro { margin-top: 0; border-top: 0; box-shadow: none; }
+body.library-reader .page-head.practice-intro::before { display: none; }
+body.library-reader #all-patterns.practice-tools { margin-top: 0; padding-inline: 0; border: 0; background: transparent; box-shadow: none; }
+body.library-reader .pattern-index.section-pad > a:hover { background: transparent; color: inherit; }
+body.library-reader .pattern-index.section-pad > a:hover small { color: var(--muted); }
+body.library-reader .ruled { border-color: var(--line); }
+body.library-reader main h1 { letter-spacing: -.04em; }
+.reader-home .home-quiet-action { color: var(--muted); font-size: .92rem; }

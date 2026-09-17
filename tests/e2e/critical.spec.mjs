@@ -144,8 +144,12 @@ test("trilingual review reveals cue, English with annotations, then German", asy
 });
 
 test("unpaired examples skip the missing language without an error state", async ({ page }) => {
+  await page.addInitScript(() => {
+    try { localStorage.setItem("metkagram:pattern-review:v1:FUNADV001", "3"); } catch { /* ignore */ }
+  });
   await page.goto("/en/practice/patterns/i-would-recommend-checking-whether-the-team-funadv001/");
   const card = page.locator('[data-review-card][data-stages="cue en"]').first();
+  await expect(card).toBeVisible();
   await card.locator("[data-review-show-all]").click();
   await expect(card.locator('[data-review-answer="en"]')).toBeVisible();
   await expect(card.locator('[data-review-missing="de"]')).toBeVisible();

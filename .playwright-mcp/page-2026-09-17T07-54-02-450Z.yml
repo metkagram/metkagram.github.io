@@ -1,0 +1,215 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f4e3]:
+    - link "Metkagram" [ref=f4e4] [cursor=pointer]:
+      - /url: /en/
+      - img "Metkagram" [ref=f4e5]
+    - navigation "Primary" [ref=f4e6]:
+      - link "Annotations" [ref=f4e7] [cursor=pointer]:
+        - /url: /en/explore/
+      - link "Patterns" [ref=f4e8] [cursor=pointer]:
+        - /url: /en/practice/
+      - link "Method" [ref=f4e9] [cursor=pointer]:
+        - /url: /en/method/
+      - link "For AI" [ref=f4e10] [cursor=pointer]:
+        - /url: /en/ai/
+    - generic "Choose the interface language" [ref=f4e12]:
+      - link "EN" [ref=f4e13] [cursor=pointer]:
+        - /url: /en/
+      - link "RU" [ref=f4e14] [cursor=pointer]:
+        - /url: /ru/
+  - main [ref=f4e15]:
+    - region [ref=f4e16]:
+      - generic [ref=f4e17]:
+        - heading "Learn a language through patterns." [level=1] [ref=f4e18]
+        - paragraph [ref=f4e19]: Metkagram is a library of real English and German sentences with visual annotations. See how a sentence works, learn the reusable pattern inside it, and use a Russian cue to recall the English and German versions. Then repeat with another example.
+        - paragraph [ref=f4e20]:
+          - link "Open the pattern library" [ref=f4e21] [cursor=pointer]:
+            - /url: /en/practice/
+          - link "How the method works" [ref=f4e22] [cursor=pointer]:
+            - /url: /en/method/
+      - region "A real example from the library" [ref=f4e23]:
+        - paragraph [ref=f4e24]: A real example from the library
+        - paragraph [ref=f4e25]: Russian cue Если бы у меня было больше времени, я бы…
+        - paragraph [ref=f4e26]:
+          - text: If
+          - generic [ref=f4e27]:
+            - button "S" [ref=f4e28]:
+              - text: S
+              - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                - strong: Subject
+                - generic: The main actor or receiver in the sentence.
+                - generic: Use it to find who or what the sentence is about.
+            - text: I
+          - text: had more
+          - generic [ref=f4e29]:
+            - button "p2" [ref=f4e30]:
+              - text: p2
+              - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                - strong: Predicate
+                - generic: Predicate detail connected to the subject.
+                - generic: Use it to notice the detail the action points to.
+            - text: time
+          - text: ","
+          - generic [ref=f4e31]:
+            - button "S" [ref=f4e32]:
+              - text: S
+              - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                - strong: Subject
+                - generic: The main actor or receiver in the sentence.
+                - generic: Use it to find who or what the sentence is about.
+            - text: I
+          - generic [ref=f4e33]:
+            - button "Hf" [ref=f4e34]:
+              - text: Hf
+              - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                - strong: Future helper
+                - generic: A helper projecting action into the future.
+                - generic: Use it to read how time, mood or form changes the verb.
+            - text: would
+          - generic [ref=f4e35]:
+            - button "V" [ref=f4e36]:
+              - text: V
+              - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                - strong: Main verb
+                - generic: The primary action or state.
+                - generic: Use it to follow the action or state through the sentence.
+            - text: start
+          - text: a side
+          - generic [ref=f4e37]:
+            - button "p2" [ref=f4e38]:
+              - text: p2
+              - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                - strong: Predicate
+                - generic: Predicate detail connected to the subject.
+                - generic: Use it to notice the detail the action points to.
+            - text: project
+          - generic [ref=f4e39]:
+            - button "S" [ref=f4e40]:
+              - text: S
+              - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                - strong: Subject
+                - generic: The main actor or receiver in the sentence.
+                - generic: Use it to find who or what the sentence is about.
+            - text: that
+          - text: solves a
+          - generic [ref=f4e41]:
+            - button "p2" [ref=f4e42]:
+              - text: p2
+              - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                - strong: Predicate
+                - generic: Predicate detail connected to the subject.
+                - generic: Use it to notice the detail the action points to.
+            - text: problem
+          - generic [ref=f4e43]:
+            - button "S" [ref=f4e44]:
+              - text: S
+              - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                - strong: Subject
+                - generic: The main actor or receiver in the sentence.
+                - generic: Use it to find who or what the sentence is about.
+            - text: I
+          - text: keep seeing at work.
+        - paragraph [ref=f4e45]: "The small tags show the role of each word. Open any pattern to practise: read the Russian cue, recall the English sentence, then the German one."
+      - region [ref=f4e46]:
+        - generic [ref=f4e47]:
+          - heading "Start with a pattern" [level=2] [ref=f4e48]
+          - paragraph [ref=f4e49]: 3,530 annotated B2–C1 patterns · English and German
+        - list [ref=f4e50]:
+          - listitem [ref=f4e51]:
+            - link "The case for [a funding proposal] rests on the assumption that [claim]. C1ARG001 · ARG" [ref=f4e52] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-a-funding-proposal-rests-on-the-c1arg001/
+              - strong [ref=f4e53]: The case for [a funding proposal] rests on the assumption that [claim].
+              - generic [ref=f4e54]: C1ARG001 · ARG
+          - listitem [ref=f4e55]:
+            - link "The case for [a delayed product launch] rests on the assumption that [claim]. C1ARG002 · ARG" [ref=f4e56] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-a-delayed-product-launch-rests-on-c1arg002/
+              - strong [ref=f4e57]: The case for [a delayed product launch] rests on the assumption that [claim].
+              - generic [ref=f4e58]: C1ARG002 · ARG
+          - listitem [ref=f4e59]:
+            - link "The case for [the team’s research findings] rests on the assumption that [claim]. C1ARG003 · ARG" [ref=f4e60] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-the-team-s-research-findings-rests-c1arg003/
+              - strong [ref=f4e61]: The case for [the team’s research findings] rests on the assumption that [claim].
+              - generic [ref=f4e62]: C1ARG003 · ARG
+          - listitem [ref=f4e63]:
+            - link "The case for [a customer complaint] rests on the assumption that [claim]. C1ARG004 · ARG" [ref=f4e64] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-a-customer-complaint-rests-on-the-c1arg004/
+              - strong [ref=f4e65]: The case for [a customer complaint] rests on the assumption that [claim].
+              - generic [ref=f4e66]: C1ARG004 · ARG
+          - listitem [ref=f4e67]:
+            - link "The case for [a public-transport plan] rests on the assumption that [claim]. C1ARG005 · ARG" [ref=f4e68] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-a-public-transport-plan-rests-on-c1arg005/
+              - strong [ref=f4e69]: The case for [a public-transport plan] rests on the assumption that [claim].
+              - generic [ref=f4e70]: C1ARG005 · ARG
+          - listitem [ref=f4e71]:
+            - link "The case for [a difficult staffing decision] rests on the assumption that [claim]. C1ARG006 · ARG" [ref=f4e72] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-a-difficult-staffing-decision-rests-c1arg006/
+              - strong [ref=f4e73]: The case for [a difficult staffing decision] rests on the assumption that [claim].
+              - generic [ref=f4e74]: C1ARG006 · ARG
+          - listitem [ref=f4e75]:
+            - link "The case for [the revised budget] rests on the assumption that [claim]. C1ARG007 · ARG" [ref=f4e76] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-the-revised-budget-rests-on-the-c1arg007/
+              - strong [ref=f4e77]: The case for [the revised budget] rests on the assumption that [claim].
+              - generic [ref=f4e78]: C1ARG007 · ARG
+          - listitem [ref=f4e79]:
+            - link "The case for [an accessibility requirement] rests on the assumption that [claim]. C1ARG008 · ARG" [ref=f4e80] [cursor=pointer]:
+              - /url: /en/practice/patterns/the-case-for-an-accessibility-requirement-rests-c1arg008/
+              - strong [ref=f4e81]: The case for [an accessibility requirement] rests on the assumption that [claim].
+              - generic [ref=f4e82]: C1ARG008 · ARG
+        - paragraph [ref=f4e83]:
+          - link "Browse the whole library →" [ref=f4e84] [cursor=pointer]:
+            - /url: /en/practice/
+      - paragraph [ref=f4e85]:
+        - text: "Published now: annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims. Current reuse follows the Metkagram licensing terms. Substantial reuse, redistribution, model training and commercial integration require scoped permission."
+        - link "Rights and licensing →" [ref=f4e86] [cursor=pointer]:
+          - /url: /en/licensing/
+    - complementary [ref=f4e87]:
+      - generic [ref=f4e88]:
+        - paragraph [ref=f4e89]: Metkagram · Pattern Lens
+        - heading "Try Pattern Lens" [level=2] [ref=f4e90]
+        - paragraph [ref=f4e91]: Paste a real sentence and find reusable structures from the public Metkagram library.
+      - link "Pattern Lens" [ref=f4e92] [cursor=pointer]:
+        - /url: /en/lens/
+        - text: Pattern Lens
+        - generic [aria-hidden] [ref=f4e93]: →
+  - complementary "Share or print this page" [ref=f4e94]:
+    - generic [ref=f4e96]:
+      - button "Share" [ref=f4e97] [cursor=pointer]
+      - link "Telegram" [ref=f4e98] [cursor=pointer]:
+        - /url: https://t.me/share/url?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F&text=Learn%20a%20language%20through%20patterns%20%7C%20Metkagram
+      - link "LinkedIn" [ref=f4e99] [cursor=pointer]:
+        - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F
+      - link "WhatsApp" [ref=f4e100] [cursor=pointer]:
+        - /url: https://wa.me/?text=Learn%20a%20language%20through%20patterns%20%7C%20Metkagram%20https%3A%2F%2Fmetkagram.github.io%2Fen%2F
+      - link "X" [ref=f4e101] [cursor=pointer]:
+        - /url: https://x.com/intent/post?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F&text=Learn%20a%20language%20through%20patterns%20%7C%20Metkagram
+      - button "Copy link" [ref=f4e102] [cursor=pointer]
+      - button "Print page" [ref=f4e103] [cursor=pointer]
+    - status [ref=f4e104]
+  - contentinfo [ref=f4e105]:
+    - generic [ref=f4e106]: ANNOTATION STUDIO
+    - navigation "Metkagram workflow" [ref=f4e107]:
+      - link "MARK" [ref=f4e108] [cursor=pointer]:
+        - /url: /en/explore/
+      - generic [aria-hidden] [ref=f4e109]: ›
+      - link "PATTERN" [ref=f4e110] [cursor=pointer]:
+        - /url: /en/practice/
+      - generic [aria-hidden] [ref=f4e111]: ›
+      - link "APPLY" [ref=f4e112] [cursor=pointer]:
+        - /url: /en/method/
+    - navigation "About Metkagram" [ref=f4e113]:
+      - link "Research" [ref=f4e114] [cursor=pointer]:
+        - /url: /en/research/
+      - link "For AI & Developers" [ref=f4e115] [cursor=pointer]:
+        - /url: /en/ai/
+      - link "Propose an idea" [ref=f4e116] [cursor=pointer]:
+        - /url: /en/ideas/
+      - link "About" [ref=f4e117] [cursor=pointer]:
+        - /url: /en/about/
+      - link "METKAGRAM ©" [ref=f4e118] [cursor=pointer]:
+        - /url: /en/contact/
+  - dialog "Analytics settings" [ref=f4e119]:
+    - text: We use optional analytics to improve this site.
+    - button "Allow" [ref=f4e120] [cursor=pointer]
+    - button "Decline" [ref=f4e121] [cursor=pointer]

@@ -1,0 +1,1723 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f8e3]:
+    - link "Metkagram" [ref=f8e4] [cursor=pointer]:
+      - /url: /en/
+      - img "Metkagram" [ref=f8e5]
+    - navigation "Primary" [ref=f8e6]:
+      - link "Annotations" [ref=f8e7] [cursor=pointer]:
+        - /url: /en/explore/
+      - link "Patterns" [ref=f8e8] [cursor=pointer]:
+        - /url: /en/practice/
+      - link "Method" [ref=f8e9] [cursor=pointer]:
+        - /url: /en/method/
+      - link "For AI" [ref=f8e10] [cursor=pointer]:
+        - /url: /en/ai/
+    - generic "Choose the interface language" [ref=f8e12]:
+      - link "EN" [ref=f8e13] [cursor=pointer]:
+        - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-the-team-needs-funcmt021/
+      - generic [aria-hidden] [ref=f8e14]: /
+      - link "RU" [ref=f8e15] [cursor=pointer]:
+        - /url: /ru/practice/patterns/i-can-confirm-that-we-will-act-if-the-team-needs-funcmt021/
+  - main [ref=f8e16]:
+    - complementary "Support language" [ref=f8e17]:
+      - paragraph [ref=f8e18]: Translation and explanations
+      - group [ref=f8e19]:
+        - generic "Support language English · default" [ref=f8e20] [cursor=pointer]:
+          - generic [ref=f8e21]: Support language
+          - strong [ref=f8e22]: English · default
+        - option "English · default" [selected]
+        - option "Russian"
+        - option "Another language"
+    - article [ref=f8e23]:
+      - navigation "Breadcrumb" [ref=f8e24]:
+        - link "Home" [ref=f8e25] [cursor=pointer]:
+          - /url: /en/
+        - generic [aria-hidden] [ref=f8e26]: /
+        - link "Pattern Library" [ref=f8e27] [cursor=pointer]:
+          - /url: /en/practice/
+        - generic [aria-hidden] [ref=f8e28]: /
+        - link "I can confirm that we will act if [the team needs another day to decide]." [ref=f8e29] [cursor=pointer]:
+          - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-the-team-needs-funcmt021/
+      - generic [ref=f8e30]:
+        - paragraph [ref=f8e31]: B2–C1 · Commitments and promises · FUNCMT021
+        - heading "I can confirm that we will act if [the team needs another day to decide]." [level=1] [ref=f8e32]
+      - region [ref=f8e33]:
+        - generic [ref=f8e34]:
+          - heading "Review this pattern" [level=2] [ref=f8e35]
+          - paragraph [ref=f8e36]: Try saying it in English before revealing the example. The revealed sentence is a model answer, not the only possible translation.
+        - article [ref=f8e37]:
+          - paragraph [ref=f8e38]: Example 1 of 11
+          - generic [ref=f8e39]:
+            - generic [ref=f8e40]: RU · Cue
+            - paragraph [ref=f8e41]: Я могу подтвердить, что мы будем действовать, если команде нужен ещё день для решения.
+          - generic [ref=f8e42]:
+            - button "Show English" [ref=f8e43] [cursor=pointer]
+            - button "Show all" [ref=f8e44] [cursor=pointer]
+            - button "Skip →" [ref=f8e45] [cursor=pointer]
+        - group [ref=f8e46]:
+          - generic "What the tags mean" [ref=f8e47] [cursor=pointer]
+        - navigation "Next pattern" [ref=f8e48]:
+          - link "← Previous pattern" [ref=f8e49] [cursor=pointer]:
+            - /url: /en/practice/patterns/we-commit-to-reviewing-whether-the-proposal-funcmt020/
+          - link "All patterns in this set" [ref=f8e50] [cursor=pointer]:
+            - /url: /en/practice/sets/commitments-and-promises/
+          - link "Back to the library" [ref=f8e51] [cursor=pointer]:
+            - /url: /en/practice/
+          - link "Next pattern →" [ref=f8e52] [cursor=pointer]:
+            - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-the-revised-funcmt022/
+      - generic [ref=f8e53]:
+        - 'heading "The full pattern: formulas and every example" [level=2] [ref=f8e54]'
+        - generic [ref=f8e55]:
+          - paragraph [ref=f8e56]: Active practice · FUNCMT021
+          - heading "Use the frame yourself" [level=2] [ref=f8e57]
+          - paragraph [ref=f8e58]: Write a new sentence that performs the same reasoning move. The check only looks for the published structural frame; it does not grade your full grammar.
+          - group "Target language" [ref=f8e59]:
+            - button "EN" [pressed] [ref=f8e60] [cursor=pointer]
+            - button "DE" [ref=f8e61] [cursor=pointer]
+          - generic [ref=f8e62]:
+            - generic [ref=f8e63]:
+              - generic [ref=f8e64]: Goal
+              - paragraph
+            - generic [ref=f8e65]:
+              - generic [ref=f8e66]: Formula
+              - code [ref=f8e67]: I can confirm that we will act if [the team needs another day to decide].
+          - generic [ref=f8e68]:
+            - generic [ref=f8e69]: Use the frame yourself
+            - textbox "Use the frame yourself" [ref=f8e70]:
+              - /placeholder: Write your own new example…
+          - button "Check structure" [ref=f8e72] [cursor=pointer]
+          - paragraph [ref=f8e73]: Progress stays only in this browser.
+        - generic [ref=f8e74]:
+          - generic [ref=f8e75]:
+            - generic [ref=f8e76]:
+              - generic [aria-hidden] [ref=f8e77]: "01"
+              - paragraph [ref=f8e78]: Structure
+            - generic [ref=f8e79]:
+              - generic [ref=f8e80]:
+                - generic [ref=f8e81]: EN · English
+                - code [ref=f8e82]: I can confirm that we will act if [the team needs another day to decide].
+              - generic [ref=f8e83]:
+                - generic [ref=f8e84]: DE · German
+                - code [ref=f8e85]: Ich kann bestätigen, dass wir handeln werden, wenn [das Team einen weiteren Tag für die Entscheidung braucht].
+            - article [ref=f8e86]:
+              - generic [ref=f8e87]:
+                - generic [aria-hidden] [ref=f8e88]: "02"
+                - paragraph [ref=f8e89]: Anchor phrase
+              - generic [ref=f8e90]:
+                - generic [ref=f8e91]:
+                  - text: EN · English
+                  - paragraph [ref=f8e92]:
+                    - generic [ref=f8e93]:
+                      - button "S" [ref=f8e94]:
+                        - text: S
+                        - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject
+                          - generic: The main actor or receiver in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: I
+                    - generic [ref=f8e95]:
+                      - button "Hf" [ref=f8e96]:
+                        - text: Hf
+                        - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                          - strong: Future helper
+                          - generic: A helper projecting action into the future.
+                          - generic: Use it to read how time, mood or form changes the verb.
+                      - text: can
+                    - generic [ref=f8e97]:
+                      - button "V" [ref=f8e98]:
+                        - text: V
+                        - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                          - strong: Main verb
+                          - generic: The primary action or state.
+                          - generic: Use it to follow the action or state through the sentence.
+                      - text: confirm
+                    - text: that
+                    - generic [ref=f8e99]:
+                      - button "S" [ref=f8e100]:
+                        - text: S
+                        - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject
+                          - generic: The main actor or receiver in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: we
+                    - generic [ref=f8e101]:
+                      - button "Hf" [ref=f8e102]:
+                        - text: Hf
+                        - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                          - strong: Future helper
+                          - generic: A helper projecting action into the future.
+                          - generic: Use it to read how time, mood or form changes the verb.
+                      - text: will
+                    - text: act if the
+                    - generic [ref=f8e103]:
+                      - button "S" [ref=f8e104]:
+                        - text: S
+                        - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject
+                          - generic: The main actor or receiver in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: team
+                    - text: needs another
+                    - generic [ref=f8e105]:
+                      - button "p2" [ref=f8e106]:
+                        - text: p2
+                        - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                          - strong: Predicate
+                          - generic: Predicate detail connected to the subject.
+                          - generic: Use it to notice the detail the action points to.
+                      - text: day
+                    - generic [ref=f8e107]:
+                      - button "Hf" [ref=f8e108]:
+                        - text: Hf
+                        - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                          - strong: Future helper
+                          - generic: A helper projecting action into the future.
+                          - generic: Use it to read how time, mood or form changes the verb.
+                      - text: to
+                    - text: decide.
+                - generic [ref=f8e109]:
+                  - text: DE · German
+                  - paragraph [ref=f8e110]:
+                    - generic [ref=f8e111]:
+                      - button "S" [ref=f8e112]:
+                        - text: S
+                        - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject (Subjekt)
+                          - generic: The person or thing taking part in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: Ich
+                    - generic [ref=f8e113]:
+                      - button "V" [ref=f8e114]:
+                        - text: V
+                        - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                          - strong: Main verb
+                          - generic: The central verb of the statement.
+                          - generic: Use it to follow the action or state through the sentence.
+                      - text: kann
+                    - generic [ref=f8e115]:
+                      - button "v2" [ref=f8e116]:
+                        - text: v2
+                        - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                          - strong: Second verb
+                          - generic: A verb element in second position.
+                          - generic: Use it to follow the action or state through the sentence.
+                      - text: bestätigen
+                    - text: ", dass"
+                    - generic [ref=f8e117]:
+                      - button "S" [ref=f8e118]:
+                        - text: S
+                        - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject (Subjekt)
+                          - generic: The person or thing taking part in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: wir
+                    - generic [ref=f8e119]:
+                      - button "v2" [ref=f8e120]:
+                        - text: v2
+                        - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                          - strong: Second verb
+                          - generic: A verb element in second position.
+                          - generic: Use it to follow the action or state through the sentence.
+                      - text: handeln
+                    - generic [ref=f8e121]:
+                      - button "v2" [ref=f8e122]:
+                        - text: v2
+                        - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                          - strong: Second verb
+                          - generic: A verb element in second position.
+                          - generic: Use it to follow the action or state through the sentence.
+                      - text: werden
+                    - text: ", wenn das"
+                    - generic [ref=f8e123]:
+                      - button "S" [ref=f8e124]:
+                        - text: S
+                        - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                          - strong: Subject (Subjekt)
+                          - generic: The person or thing taking part in the sentence.
+                          - generic: Use it to find who or what the sentence is about.
+                      - text: Team
+                    - text: einen weiteren
+                    - generic [ref=f8e125]:
+                      - button "p2" [ref=f8e126]:
+                        - text: p2
+                        - tooltip "accusative object Grammar mark Use it to open the full annotation guide for this mark.":
+                          - strong: accusative object
+                          - generic: Grammar mark
+                          - generic: Use it to open the full annotation guide for this mark.
+                      - text: Tag
+                    - text: für die Entscheidung braucht.
+          - region "More examples" [ref=f8e127]:
+            - heading "Try variations 10 · more examples" [level=2] [ref=f8e128]:
+              - generic [ref=f8e129]:
+                - generic [aria-hidden] [ref=f8e130]: "03"
+                - text: Try variations
+              - generic [ref=f8e131]: 10 · more examples
+            - list [ref=f8e132]:
+              - listitem [ref=f8e133]:
+                - generic [ref=f8e134]:
+                  - generic [ref=f8e135]:
+                    - text: EN · English
+                    - paragraph [ref=f8e136]:
+                      - generic [ref=f8e137]:
+                        - button "S" [ref=f8e138]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e139]:
+                        - button "Hf" [ref=f8e140]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e141]:
+                        - button "V" [ref=f8e142]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e143]:
+                        - button "S" [ref=f8e144]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e145]:
+                        - button "Hf" [ref=f8e146]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e147]:
+                        - button "S" [ref=f8e148]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: team
+                      - text: needs another
+                      - generic [ref=f8e149]:
+                        - button "p2" [ref=f8e150]:
+                          - text: p2
+                          - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                            - strong: Predicate
+                            - generic: Predicate detail connected to the subject.
+                            - generic: Use it to notice the detail the action points to.
+                        - text: day
+                      - generic [ref=f8e151]:
+                        - button "Hf" [ref=f8e152]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: to
+                      - text: decide.
+                  - generic [ref=f8e153]:
+                    - text: DE · German
+                    - paragraph [ref=f8e154]:
+                      - generic [ref=f8e155]:
+                        - button "S" [ref=f8e156]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e157]:
+                        - button "V" [ref=f8e158]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e159]:
+                        - button "v2" [ref=f8e160]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e161]:
+                        - button "S" [ref=f8e162]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e163]:
+                        - button "v2" [ref=f8e164]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e165]:
+                        - button "v2" [ref=f8e166]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn das"
+                      - generic [ref=f8e167]:
+                        - button "S" [ref=f8e168]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Team
+                      - text: einen weiteren
+                      - generic [ref=f8e169]:
+                        - button "p2" [ref=f8e170]:
+                          - text: p2
+                          - tooltip "accusative object Grammar mark Use it to open the full annotation guide for this mark.":
+                            - strong: accusative object
+                            - generic: Grammar mark
+                            - generic: Use it to open the full annotation guide for this mark.
+                        - text: Tag
+                      - text: für die Entscheidung braucht.
+              - listitem [ref=f8e171]:
+                - generic [ref=f8e172]:
+                  - generic [ref=f8e173]:
+                    - text: EN · English
+                    - paragraph [ref=f8e174]:
+                      - generic [ref=f8e175]:
+                        - button "S" [ref=f8e176]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e177]:
+                        - button "Hf" [ref=f8e178]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e179]:
+                        - button "V" [ref=f8e180]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e181]:
+                        - button "S" [ref=f8e182]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e183]:
+                        - button "Hf" [ref=f8e184]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the revised plan
+                      - generic [ref=f8e185]:
+                        - button "Hf" [ref=f8e186]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: has
+                      - text: not been shared yet.
+                  - generic [ref=f8e187]:
+                    - text: DE · German
+                    - paragraph [ref=f8e188]:
+                      - generic [ref=f8e189]:
+                        - button "S" [ref=f8e190]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e191]:
+                        - button "V" [ref=f8e192]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e193]:
+                        - button "v2" [ref=f8e194]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e195]:
+                        - button "S" [ref=f8e196]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e197]:
+                        - button "v2" [ref=f8e198]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e199]:
+                        - button "v2" [ref=f8e200]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn der überarbeitete"
+                      - generic [ref=f8e201]:
+                        - button "S" [ref=f8e202]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Plan
+                      - text: noch nicht
+                      - generic [ref=f8e203]:
+                        - button "v2" [ref=f8e204]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: geteilt
+                      - text: wurde.
+              - listitem [ref=f8e205]:
+                - generic [ref=f8e206]:
+                  - generic [ref=f8e207]:
+                    - text: EN · English
+                    - paragraph [ref=f8e208]:
+                      - generic [ref=f8e209]:
+                        - button "S" [ref=f8e210]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e211]:
+                        - button "Hf" [ref=f8e212]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e213]:
+                        - button "V" [ref=f8e214]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e215]:
+                        - button "S" [ref=f8e216]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e217]:
+                        - button "Hf" [ref=f8e218]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if
+                      - generic [ref=f8e219]:
+                        - button "S" [ref=f8e220]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e221]:
+                        - button "Hf" [ref=f8e222]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: should
+                      - text: compare the two
+                      - generic [ref=f8e223]:
+                        - button "p2" [ref=f8e224]:
+                          - text: p2
+                          - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                            - strong: Predicate
+                            - generic: Predicate detail connected to the subject.
+                            - generic: Use it to notice the detail the action points to.
+                        - text: options
+                      - text: .
+                  - generic [ref=f8e225]:
+                    - text: DE · German
+                    - paragraph [ref=f8e226]:
+                      - generic [ref=f8e227]:
+                        - button "S" [ref=f8e228]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e229]:
+                        - button "V" [ref=f8e230]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e231]:
+                        - button "v2" [ref=f8e232]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e233]:
+                        - button "S" [ref=f8e234]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e235]:
+                        - button "v2" [ref=f8e236]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e237]:
+                        - button "v2" [ref=f8e238]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn"
+                      - generic [ref=f8e239]:
+                        - button "S" [ref=f8e240]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - text: die beiden
+                      - generic [ref=f8e241]:
+                        - button "p2" [ref=f8e242]:
+                          - text: p2
+                          - tooltip "accusative object Grammar mark Use it to open the full annotation guide for this mark.":
+                            - strong: accusative object
+                            - generic: Grammar mark
+                            - generic: Use it to open the full annotation guide for this mark.
+                        - text: Optionen
+                      - generic [ref=f8e243]:
+                        - button "v2" [ref=f8e244]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: vergleichen
+                      - text: sollten.
+              - listitem [ref=f8e245]:
+                - generic [ref=f8e246]:
+                  - generic [ref=f8e247]:
+                    - text: EN · English
+                    - paragraph [ref=f8e248]:
+                      - generic [ref=f8e249]:
+                        - button "S" [ref=f8e250]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e251]:
+                        - button "Hf" [ref=f8e252]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e253]:
+                        - button "V" [ref=f8e254]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e255]:
+                        - button "S" [ref=f8e256]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e257]:
+                        - button "Hf" [ref=f8e258]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e259]:
+                        - button "S" [ref=f8e260]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: client
+                      - text: asked for more detail.
+                  - generic [ref=f8e261]:
+                    - text: DE · German
+                    - paragraph [ref=f8e262]:
+                      - generic [ref=f8e263]:
+                        - button "S" [ref=f8e264]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e265]:
+                        - button "V" [ref=f8e266]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e267]:
+                        - button "v2" [ref=f8e268]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e269]:
+                        - button "S" [ref=f8e270]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e271]:
+                        - button "v2" [ref=f8e272]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e273]:
+                        - button "v2" [ref=f8e274]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn der"
+                      - generic [ref=f8e275]:
+                        - button "S" [ref=f8e276]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Kunde
+                      - text: um mehr Details
+                      - generic [ref=f8e277]:
+                        - button "v2" [ref=f8e278]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: gebeten
+                      - text: hat.
+              - listitem [ref=f8e279]:
+                - generic [ref=f8e280]:
+                  - generic [ref=f8e281]:
+                    - text: EN · English
+                    - paragraph [ref=f8e282]:
+                      - generic [ref=f8e283]:
+                        - button "S" [ref=f8e284]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e285]:
+                        - button "Hf" [ref=f8e286]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e287]:
+                        - button "V" [ref=f8e288]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e289]:
+                        - button "S" [ref=f8e290]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e291]:
+                        - button "Hf" [ref=f8e292]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e293]:
+                        - button "S" [ref=f8e294]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: pilot
+                      - generic [ref=f8e295]:
+                        - button "Hf" [ref=f8e296]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: may
+                      - text: continue next month.
+                  - generic [ref=f8e297]:
+                    - text: DE · German
+                    - paragraph [ref=f8e298]:
+                      - generic [ref=f8e299]:
+                        - button "S" [ref=f8e300]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e301]:
+                        - button "V" [ref=f8e302]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e303]:
+                        - button "v2" [ref=f8e304]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e305]:
+                        - button "S" [ref=f8e306]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e307]:
+                        - button "v2" [ref=f8e308]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e309]:
+                        - button "v2" [ref=f8e310]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn das"
+                      - generic [ref=f8e311]:
+                        - button "S" [ref=f8e312]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Pilotprojekt
+                      - text: im nächsten Monat
+                      - generic [ref=f8e313]:
+                        - button "v2" [ref=f8e314]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: weiterlaufen
+                      - text: kann.
+              - listitem [ref=f8e315]:
+                - generic [ref=f8e316]:
+                  - generic [ref=f8e317]:
+                    - text: EN · English
+                    - paragraph [ref=f8e318]:
+                      - generic [ref=f8e319]:
+                        - button "S" [ref=f8e320]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e321]:
+                        - button "Hf" [ref=f8e322]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e323]:
+                        - button "V" [ref=f8e324]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e325]:
+                        - button "S" [ref=f8e326]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e327]:
+                        - button "Hf" [ref=f8e328]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e329]:
+                        - button "S" [ref=f8e330]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: data
+                      - text: need another
+                      - generic [ref=f8e331]:
+                        - button "p2" [ref=f8e332]:
+                          - text: p2
+                          - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                            - strong: Predicate
+                            - generic: Predicate detail connected to the subject.
+                            - generic: Use it to notice the detail the action points to.
+                        - text: check
+                      - text: .
+                  - generic [ref=f8e333]:
+                    - text: DE · German
+                    - paragraph [ref=f8e334]:
+                      - generic [ref=f8e335]:
+                        - button "S" [ref=f8e336]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e337]:
+                        - button "V" [ref=f8e338]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e339]:
+                        - button "v2" [ref=f8e340]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e341]:
+                        - button "S" [ref=f8e342]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e343]:
+                        - button "v2" [ref=f8e344]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e345]:
+                        - button "v2" [ref=f8e346]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn die"
+                      - generic [ref=f8e347]:
+                        - button "S" [ref=f8e348]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Daten
+                      - text: noch einmal
+                      - generic [ref=f8e349]:
+                        - button "v2" [ref=f8e350]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: geprüft
+                      - generic [ref=f8e351]:
+                        - button "v2" [ref=f8e352]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: müssen.
+              - listitem [ref=f8e353]:
+                - generic [ref=f8e354]:
+                  - generic [ref=f8e355]:
+                    - text: EN · English
+                    - paragraph [ref=f8e356]:
+                      - generic [ref=f8e357]:
+                        - button "S" [ref=f8e358]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e359]:
+                        - button "Hf" [ref=f8e360]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e361]:
+                        - button "V" [ref=f8e362]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e363]:
+                        - button "S" [ref=f8e364]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e365]:
+                        - button "Hf" [ref=f8e366]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the meeting was moved.
+                  - generic [ref=f8e367]:
+                    - text: DE · German
+                    - paragraph [ref=f8e368]:
+                      - generic [ref=f8e369]:
+                        - button "S" [ref=f8e370]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e371]:
+                        - button "V" [ref=f8e372]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e373]:
+                        - button "v2" [ref=f8e374]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e375]:
+                        - button "S" [ref=f8e376]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e377]:
+                        - button "v2" [ref=f8e378]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e379]:
+                        - button "v2" [ref=f8e380]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn die"
+                      - generic [ref=f8e381]:
+                        - button "S" [ref=f8e382]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Sitzung
+                      - generic [ref=f8e383]:
+                        - button "v2" [ref=f8e384]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: verschoben
+                      - text: wurde.
+              - listitem [ref=f8e385]:
+                - generic [ref=f8e386]:
+                  - generic [ref=f8e387]:
+                    - text: EN · English
+                    - paragraph [ref=f8e388]:
+                      - generic [ref=f8e389]:
+                        - button "S" [ref=f8e390]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e391]:
+                        - button "Hf" [ref=f8e392]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e393]:
+                        - button "V" [ref=f8e394]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e395]:
+                        - button "S" [ref=f8e396]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e397]:
+                        - button "Hf" [ref=f8e398]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e399]:
+                        - button "S" [ref=f8e400]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: colleagues
+                      - text: prefer remote
+                      - generic [ref=f8e401]:
+                        - button "p2" [ref=f8e402]:
+                          - text: p2
+                          - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                            - strong: Predicate
+                            - generic: Predicate detail connected to the subject.
+                            - generic: Use it to notice the detail the action points to.
+                        - text: participation
+                      - text: .
+                  - generic [ref=f8e403]:
+                    - text: DE · German
+                    - paragraph [ref=f8e404]:
+                      - generic [ref=f8e405]:
+                        - button "S" [ref=f8e406]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e407]:
+                        - button "V" [ref=f8e408]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e409]:
+                        - button "v2" [ref=f8e410]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e411]:
+                        - button "S" [ref=f8e412]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e413]:
+                        - button "v2" [ref=f8e414]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e415]:
+                        - button "v2" [ref=f8e416]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn die"
+                      - generic [ref=f8e417]:
+                        - button "S" [ref=f8e418]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Kolleginnen
+                      - text: und Kollegen eine
+                      - generic [ref=f8e419]:
+                        - button "p2" [ref=f8e420]:
+                          - text: p2
+                          - tooltip "accusative object Grammar mark Use it to open the full annotation guide for this mark.":
+                            - strong: accusative object
+                            - generic: Grammar mark
+                            - generic: Use it to open the full annotation guide for this mark.
+                        - text: Teilnahme
+                      - text: aus der Ferne bevorzugen.
+              - listitem [ref=f8e421]:
+                - generic [ref=f8e422]:
+                  - generic [ref=f8e423]:
+                    - text: EN · English
+                    - paragraph [ref=f8e424]:
+                      - generic [ref=f8e425]:
+                        - button "S" [ref=f8e426]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e427]:
+                        - button "Hf" [ref=f8e428]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e429]:
+                        - button "V" [ref=f8e430]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e431]:
+                        - button "S" [ref=f8e432]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e433]:
+                        - button "Hf" [ref=f8e434]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the final
+                      - generic [ref=f8e435]:
+                        - button "S" [ref=f8e436]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: decision
+                      - text: is still open.
+                  - generic [ref=f8e437]:
+                    - text: DE · German
+                    - paragraph [ref=f8e438]:
+                      - generic [ref=f8e439]:
+                        - button "S" [ref=f8e440]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e441]:
+                        - button "V" [ref=f8e442]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e443]:
+                        - button "v2" [ref=f8e444]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e445]:
+                        - button "S" [ref=f8e446]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e447]:
+                        - button "v2" [ref=f8e448]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e449]:
+                        - button "v2" [ref=f8e450]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn die endgültige"
+                      - generic [ref=f8e451]:
+                        - button "S" [ref=f8e452]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Entscheidung
+                      - text: noch offen ist.
+              - listitem [ref=f8e453]:
+                - generic [ref=f8e454]:
+                  - generic [ref=f8e455]:
+                    - text: EN · English
+                    - paragraph [ref=f8e456]:
+                      - generic [ref=f8e457]:
+                        - button "S" [ref=f8e458]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: I
+                      - generic [ref=f8e459]:
+                        - button "Hf" [ref=f8e460]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: can
+                      - generic [ref=f8e461]:
+                        - button "V" [ref=f8e462]:
+                          - text: V
+                          - tooltip "Main verb The primary action or state. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The primary action or state.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: confirm
+                      - text: that
+                      - generic [ref=f8e463]:
+                        - button "S" [ref=f8e464]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: we
+                      - generic [ref=f8e465]:
+                        - button "Hf" [ref=f8e466]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: will
+                      - text: act if the
+                      - generic [ref=f8e467]:
+                        - button "S" [ref=f8e468]:
+                          - text: S
+                          - tooltip "Subject The main actor or receiver in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject
+                            - generic: The main actor or receiver in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: proposal
+                      - generic [ref=f8e469]:
+                        - button "Hf" [ref=f8e470]:
+                          - text: Hf
+                          - tooltip "Future helper A helper projecting action into the future. Use it to read how time, mood or form changes the verb.":
+                            - strong: Future helper
+                            - generic: A helper projecting action into the future.
+                            - generic: Use it to read how time, mood or form changes the verb.
+                        - text: would
+                      - text: need
+                      - generic [ref=f8e471]:
+                        - button "p2" [ref=f8e472]:
+                          - text: p2
+                          - tooltip "Predicate Predicate detail connected to the subject. Use it to notice the detail the action points to.":
+                            - strong: Predicate
+                            - generic: Predicate detail connected to the subject.
+                            - generic: Use it to notice the detail the action points to.
+                        - text: revision
+                      - text: .
+                  - generic [ref=f8e473]:
+                    - text: DE · German
+                    - paragraph [ref=f8e474]:
+                      - generic [ref=f8e475]:
+                        - button "S" [ref=f8e476]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Ich
+                      - generic [ref=f8e477]:
+                        - button "V" [ref=f8e478]:
+                          - text: V
+                          - tooltip "Main verb The central verb of the statement. Use it to follow the action or state through the sentence.":
+                            - strong: Main verb
+                            - generic: The central verb of the statement.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: kann
+                      - generic [ref=f8e479]:
+                        - button "v2" [ref=f8e480]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: bestätigen
+                      - text: ", dass"
+                      - generic [ref=f8e481]:
+                        - button "S" [ref=f8e482]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: wir
+                      - generic [ref=f8e483]:
+                        - button "v2" [ref=f8e484]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: handeln
+                      - generic [ref=f8e485]:
+                        - button "v2" [ref=f8e486]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: werden
+                      - text: ", wenn der"
+                      - generic [ref=f8e487]:
+                        - button "S" [ref=f8e488]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: Vorschlag
+                      - generic [ref=f8e489]:
+                        - button "v2" [ref=f8e490]:
+                          - text: v2
+                          - tooltip "Second verb A verb element in second position. Use it to follow the action or state through the sentence.":
+                            - strong: Second verb
+                            - generic: A verb element in second position.
+                            - generic: Use it to follow the action or state through the sentence.
+                        - text: überarbeitet
+                      - text: werden
+                      - generic [ref=f8e491]:
+                        - button "S" [ref=f8e492]:
+                          - text: S
+                          - tooltip "Subject (Subjekt) The person or thing taking part in the sentence. Use it to find who or what the sentence is about.":
+                            - strong: Subject (Subjekt)
+                            - generic: The person or thing taking part in the sentence.
+                            - generic: Use it to find who or what the sentence is about.
+                        - text: müsste
+                      - text: .
+      - generic [ref=f8e494]:
+        - paragraph [ref=f8e495]: Pattern graph
+        - heading "Continue with nearby patterns" [level=2] [ref=f8e496]
+        - generic [ref=f8e497]:
+          - link "FUNCMT001 I will make sure that [the team needs another day to decide]. CMT" [ref=f8e498] [cursor=pointer]:
+            - /url: /en/practice/patterns/i-will-make-sure-that-the-team-needs-another-day-funcmt001/
+            - generic [ref=f8e499]: FUNCMT001
+            - generic [ref=f8e500]:
+              - strong [ref=f8e501]: I will make sure that [the team needs another day to decide].
+              - generic [ref=f8e502]: CMT
+            - generic [aria-hidden] [ref=f8e503]: →
+          - link "FUNCMT023 I can confirm that we will act if [we should compare the two options]. CMT" [ref=f8e504] [cursor=pointer]:
+            - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-we-should-funcmt023/
+            - generic [ref=f8e505]: FUNCMT023
+            - generic [ref=f8e506]:
+              - strong [ref=f8e507]: I can confirm that we will act if [we should compare the two options].
+              - generic [ref=f8e508]: CMT
+            - generic [aria-hidden] [ref=f8e509]: →
+          - link "FUNCMT024 I can confirm that we will act if [the client asked for more detail]. CMT" [ref=f8e510] [cursor=pointer]:
+            - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-the-client-funcmt024/
+            - generic [ref=f8e511]: FUNCMT024
+            - generic [ref=f8e512]:
+              - strong [ref=f8e513]: I can confirm that we will act if [the client asked for more detail].
+              - generic [ref=f8e514]: CMT
+            - generic [aria-hidden] [ref=f8e515]: →
+          - link "FUNCMT025 I can confirm that we will act if [the pilot may continue next month]. CMT" [ref=f8e516] [cursor=pointer]:
+            - /url: /en/practice/patterns/i-can-confirm-that-we-will-act-if-the-pilot-may-funcmt025/
+            - generic [ref=f8e517]: FUNCMT025
+            - generic [ref=f8e518]:
+              - strong [ref=f8e519]: I can confirm that we will act if [the pilot may continue next month].
+              - generic [ref=f8e520]: CMT
+            - generic [aria-hidden] [ref=f8e521]: →
+    - complementary [ref=f8e522]:
+      - paragraph [ref=f8e523]: Topic set
+      - paragraph [ref=f8e524]:
+        - text: This pattern belongs to
+        - link [ref=f8e525] [cursor=pointer]:
+          - /url: /en/practice/sets/commitments-and-promises/
+          - strong [ref=f8e526]: Commitments and promises
+        - text: . Make commitments that are specific and accountable.
+    - generic [ref=f8e527]:
+      - paragraph [ref=f8e528]: Continue learning
+      - heading "Choose the next useful route." [level=2] [ref=f8e529]
+      - generic [ref=f8e530]:
+        - link [ref=f8e531] [cursor=pointer]:
+          - /url: /en/practice/
+          - text: Pattern Practice
+          - strong [ref=f8e532]: Find a pattern you can reuse
+          - text: Continue through a canonical Metkagram learning surface already linked from this page.
+        - link [ref=f8e533] [cursor=pointer]:
+          - /url: /en/practice/patterns/we-commit-to-reviewing-whether-the-proposal-funcmt020/
+          - text: Pattern Atlas
+          - strong [ref=f8e534]: We commit to reviewing whether [the proposal would need revision].
+          - text: Continue through a canonical Metkagram learning surface already linked from this page.
+        - link [ref=f8e535] [cursor=pointer]:
+          - /url: /en/practice/sets/commitments-and-promises/
+          - text: Pattern Practice
+          - strong [ref=f8e536]: Commitments and promises
+          - text: Continue through a canonical Metkagram learning surface already linked from this page.
+  - complementary "Share or print this page" [ref=f8e537]:
+    - generic [ref=f8e539]:
+      - button "Share" [ref=f8e540] [cursor=pointer]
+      - link "Telegram" [ref=f8e541] [cursor=pointer]:
+        - /url: https://t.me/share/url?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2Fpractice%2Fpatterns%2Fi-can-confirm-that-we-will-act-if-the-team-needs-funcmt021%2F&text=I%20can%20confirm%20that%20we%20will%20act%20if%20%5Bthe%E2%80%A6%20%C2%B7%20FUNCMT021%20%7C%20Metkagram
+      - link "LinkedIn" [ref=f8e542] [cursor=pointer]:
+        - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2Fpractice%2Fpatterns%2Fi-can-confirm-that-we-will-act-if-the-team-needs-funcmt021%2F
+      - link "WhatsApp" [ref=f8e543] [cursor=pointer]:
+        - /url: https://wa.me/?text=I%20can%20confirm%20that%20we%20will%20act%20if%20%5Bthe%E2%80%A6%20%C2%B7%20FUNCMT021%20%7C%20Metkagram%20https%3A%2F%2Fmetkagram.github.io%2Fen%2Fpractice%2Fpatterns%2Fi-can-confirm-that-we-will-act-if-the-team-needs-funcmt021%2F
+      - link "X" [ref=f8e544] [cursor=pointer]:
+        - /url: https://x.com/intent/post?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2Fpractice%2Fpatterns%2Fi-can-confirm-that-we-will-act-if-the-team-needs-funcmt021%2F&text=I%20can%20confirm%20that%20we%20will%20act%20if%20%5Bthe%E2%80%A6%20%C2%B7%20FUNCMT021%20%7C%20Metkagram
+      - button "Copy link" [ref=f8e545] [cursor=pointer]
+      - button "Print page" [ref=f8e546] [cursor=pointer]
+      - button "Save" [ref=f8e547] [cursor=pointer]
+      - button "Cite" [ref=f8e548] [cursor=pointer]
+    - status
+  - contentinfo [ref=f8e549]:
+    - generic [ref=f8e550]:
+      - link "Metkagram" [ref=f8e551] [cursor=pointer]:
+        - /url: /en/
+        - img "Metkagram" [ref=f8e552]
+      - paragraph [ref=f8e553]: Phrases, patterns, deliberate practice.
+    - navigation "Footer navigation" [ref=f8e554]:
+      - link "Annotation Library" [ref=f8e555] [cursor=pointer]:
+        - /url: /en/explore/
+      - link "Pattern Library" [ref=f8e556] [cursor=pointer]:
+        - /url: /en/practice/
+      - link "Method" [ref=f8e557] [cursor=pointer]:
+        - /url: /en/method/
+      - link "Research" [ref=f8e558] [cursor=pointer]:
+        - /url: /en/research/
+      - link "About" [ref=f8e559] [cursor=pointer]:
+        - /url: /en/about/
+      - link "For AI & Developers" [ref=f8e560] [cursor=pointer]:
+        - /url: /en/ai/
+      - link "Ideas & partnerships" [ref=f8e561] [cursor=pointer]:
+        - /url: /en/ideas/
+      - link "Contact" [ref=f8e562] [cursor=pointer]:
+        - /url: /en/contact/
+    - paragraph [ref=f8e563]:
+      - strong [ref=f8e564]: EN · DE
+      - generic [ref=f8e565]: B2–C1 patterns
+    - generic [ref=f8e566]:
+      - paragraph [ref=f8e567]: A project connected to Applied Systems Lab at MetalHatsCats.
+      - navigation "Legal information" [ref=f8e568]:
+        - link "Privacy" [ref=f8e569] [cursor=pointer]:
+          - /url: /en/legal/privacy/
+        - link "Terms of Use" [ref=f8e570] [cursor=pointer]:
+          - /url: /en/legal/terms/
+        - link "Source" [ref=f8e571] [cursor=pointer]:
+          - /url: https://github.com/metkagram/metkagram.github.io
+  - dialog "Analytics settings" [ref=f8e572]:
+    - text: We use optional analytics to improve this site.
+    - button "Allow" [ref=f8e573] [cursor=pointer]
+    - button "Decline" [ref=f8e574] [cursor=pointer]
