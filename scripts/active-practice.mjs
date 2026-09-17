@@ -40,7 +40,9 @@ for (const locale of ['en', 'ru']) {
   for (const file of htmlFiles(path.join(DIST, locale, 'practice'))) {
     const isPatternPage = file.includes(`${path.sep}patterns${path.sep}`);
     if (isPatternPage) {
-      if (ensureStylesheet(file, '/assets/pattern-reading.css')) patternPages += 1;
+      const hasStyles = ensureStylesheet(file, '/assets/pattern-reading.css');
+      const hasControls = addModuleScript(file, '/assets/pattern-reading.js') || fs.readFileSync(file, 'utf8').includes('src="/assets/pattern-reading.js"');
+      if (hasStyles && hasControls) patternPages += 1;
       continue;
     }
 
@@ -52,5 +54,5 @@ for (const locale of ['en', 'ru']) {
 }
 
 if (!practicePages) throw new Error('Active practice runtime was not attached to any non-pattern practice pages');
-if (!patternPages) throw new Error('Pattern reading typography was not attached to any pattern pages');
-console.log(`Active practice wired into ${practicePages} non-pattern practice pages; reading typography wired into ${patternPages} pattern pages; Lens bridge wired into ${lensPages} Pattern Lens pages.`);
+if (!patternPages) throw new Error('Pattern reading assets were not attached to any pattern pages');
+console.log(`Active practice wired into ${practicePages} non-pattern practice pages; reading assets wired into ${patternPages} pattern pages; Lens bridge wired into ${lensPages} Pattern Lens pages.`);

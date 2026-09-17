@@ -56,7 +56,21 @@ test('schedules needs-work sooner and expands successful review intervals', () =
   assert.equal(laterSuccess.streak, 3);
 });
 
-test('production build keeps active practice off pattern pages and applies reader typography', (t) => {
+test('pattern reader assets keep the requested reading contract', () => {
+  const css = fs.readFileSync(path.resolve('public/assets/pattern-reading.css'), 'utf8');
+  const js = fs.readFileSync(path.resolve('public/assets/pattern-reading.js'), 'utf8');
+
+  assert.match(css, /--reader-page:\s*#fbfaf7/);
+  assert.match(css, /\.pattern-comparison-language p[\s\S]*max-width:\s*none/);
+  assert.match(css, /font-size:\s*1\.375rem/);
+  assert.match(css, /transition:\s*none/);
+  assert.match(css, /data-pattern-language-mode="en"/);
+  assert.match(js, /Только английский/);
+  assert.match(js, /English only/);
+  assert.match(js, /localStorage\.setItem/);
+});
+
+test('production build keeps active practice off pattern pages and applies reader assets', (t) => {
   const dist = path.resolve('dist');
   const practiceIndex = path.join(dist, 'en', 'practice', 'index.html');
   if (!fs.existsSync(practiceIndex)) return t.skip('requires npm run build first');
@@ -66,8 +80,10 @@ test('production build keeps active practice off pattern pages and applies reade
   const patternHtml = fs.readFileSync(path.join(dist, patternPath('en', 'CLF041').slice(1), 'index.html'), 'utf8');
   assert.doesNotMatch(patternHtml, /\/assets\/practice-loop\.js/);
   assert.match(patternHtml, /\/assets\/pattern-reading\.css/);
+  assert.match(patternHtml, /\/assets\/pattern-reading\.js/);
   assert.match(patternHtml, /data-pattern-id="CLF041"/);
   assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-reading.css')), true);
+  assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-reading.js')), true);
 
   const lensHtml = fs.readFileSync(path.join(dist, 'en', 'lens', 'index.html'), 'utf8');
   assert.match(lensHtml, /\/assets\/lens-practice-bridge\.js/);
