@@ -32,6 +32,21 @@ function familyMembership(frameFamilies) {
   return byPattern;
 }
 
+function structuralAliasMembership(patternAliases) {
+  const byPattern = new Map();
+  for (const group of patternAliases?.groups || []) {
+    for (const patternId of group.alias_ids || []) {
+      byPattern.set(patternId, {
+        canonical_pattern_id: group.canonical_id,
+        reason: group.reason || "same_reusable_frame_contextual_realization",
+        set_id: group.set_id,
+        group_id: group.group_id,
+      });
+    }
+  }
+  return byPattern;
+}
+
 function technicalReasons(pattern) {
   const reasons = [];
   if (!pattern.quality?.translations_complete) reasons.push("incomplete_translations");
@@ -40,18 +55,19 @@ function technicalReasons(pattern) {
   return reasons;
 }
 
-export function evaluatePatternIndexability(pattern, { family = null, severeFindings = [] } = {}) {
+export function evaluatePatternIndexability(pattern, { family = null, severeFindings = [], structuralAlias = null } = {}) {
   const reasons = technicalReasons(pattern);
   const editorialStatus = pattern.quality?.status || "unknown";
 
   if (!SEARCH_APPROVED_STATUSES.has(editorialStatus)) reasons.push("unreviewed_editorial_status");
   if (severeFindings.length) reasons.push("unresolved_high_confidence_quality_finding");
   if (family && pattern.id !== family.representative_pattern_id) reasons.push("reviewed_contextual_variant");
+  if (structuralAlias) reasons.push("structural_pattern_alias");
 
   const indexable = reasons.length === 0;
   const evidence = [];
   if (indexable && family && pattern.id === family.representative_pattern_id) evidence.push("reviewed_frame_representative");
-  if (indexable && !family) evidence.push("curated_distinct_pattern");
+  if (indexable && !family && !structuralAlias) evidence.push("curated_distinct_pattern");
   if (pattern.quality?.translations_complete) evidence.push("translations_complete");
   if ((pattern.quality?.min_unique_examples || 0) >= 3) evidence.push("context_examples_sufficient");
   if (!pattern.quality?.has_variation_duplicates) evidence.push("variation_duplicates_absent");
@@ -64,7 +80,9 @@ export function evaluatePatternIndexability(pattern, { family = null, severeFind
     editorial_status: editorialStatus,
     reasons,
     evidence,
-    canonical_pattern_id: family?.representative_pattern_id || pattern.id,
+    canonical_pattern_id: structuralAlias?.canonical_pattern_id || family?.representative_pattern_id || pattern.id,
+    structural_alias_of: structuralAlias?.canonical_pattern_id || null,
+    structural_alias_reason: structuralAlias?.reason || null,
     frame_family_id: family?.family_id || null,
     frame_relation: family?.relation || null,
     frame_review_status: family?.review_status || null,
@@ -73,12 +91,14 @@ export function evaluatePatternIndexability(pattern, { family = null, severeFind
   };
 }
 
-export function buildPatternIndexabilityPolicy(content, frameFamilies, audit) {
+export function buildPatternIndexabilityPolicy(content, frameFamilies, audit, { patternAliases = null } = {}) {
   const families = familyMembership(frameFamilies);
+  const aliases = structuralAliasMembership(patternAliases);
   const severe = highConfidenceSevereFindings(audit);
   const records = content.advancedPatterns.map((pattern) => evaluatePatternIndexability(pattern, {
     family: families.get(pattern.id) || null,
     severeFindings: severe.get(pattern.id) || [],
+    structuralAlias: aliases.get(pattern.id) || null,
   }));
 
   const byReason = {};
@@ -101,7 +121,7 @@ export function buildPatternIndexabilityPolicy(content, frameFamilies, audit) {
   return {
     schemaVersion: 1,
     policy: INDEXABILITY_POLICY_VERSION,
-    purpose: "Search promotion is an editorial decision. Pattern records, study-set membership, stable URLs and API access remain available even when a standalone page is noindex.",
+    purpose: "Search promotion is an editorial decision. Stable Pattern IDs and API records remain available, while contextual aliases resolve to one canonical reusable Pattern page.",
     rules: {
       approvedEditorialStatuses: [...SEARCH_APPROVED_STATUSES].sort(),
       minimumUniqueExamplesPerLanguage: 3,
@@ -109,6 +129,7 @@ export function buildPatternIndexabilityPolicy(content, frameFamilies, audit) {
       duplicateVariationsAllowed: false,
       unresolvedHighConfidenceSevereFindingsAllowed: false,
       reviewedContextualVariantsIndexable: false,
+      structuralPatternAliasesIndexable: false,
       automatedNearDuplicateCandidatesAffectIndexability: false,
       automatedSlotVariantCandidatesAffectIndexability: false,
     },
