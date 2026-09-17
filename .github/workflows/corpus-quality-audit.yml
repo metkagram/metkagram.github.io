@@ -4,24 +4,41 @@ on:
     branches: [fix/corpus-language-quality-2026-09-17]
 permissions:
   contents: read
+concurrency:
+  group: corpus-quality-audit
+  cancel-in-progress: true
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
-      - name: Create exact-revision source snapshot for editorial audit
+      - name: Start isolated LanguageTool checker
         run: |
-          mkdir -p /tmp/corpus-quality-audit
-          git archive --format=tar HEAD | gzip > /tmp/corpus-quality-audit/source.tar.gz
-          printf '%s\n' "$GITHUB_SHA" > /tmp/corpus-quality-audit/revision.txt
+          curl --fail --location --retry 2 --max-time 180 https://languagetool.org/download/LanguageTool-stable.zip -o /tmp/lt.zip
+          sha256sum /tmp/lt.zip
+          unzip -q /tmp/lt.zip -d /tmp/lt
+          touch /tmp/lt.properties
+          LT_DIR=$(find /tmp/lt -name languagetool-server.jar -printf '%h\n' | head -1)
+          java -Xmx3g -cp "$LT_DIR/languagetool-server.jar" org.languagetool.server.HTTPServer --config /tmp/lt.properties --port 8081 > /tmp/languagetool.log 2>&1 &
+          for n in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:8081/v2/languages > /dev/null; then exit 0; fi
+            sleep 2
+          done
+          cat /tmp/languagetool.log
+          exit 1
+      - name: Audit all active EN DE RU corpus prose
+        run: node scripts/audit-corpus-language.mjs --endpoint=http://127.0.0.1:8081
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: corpus-quality-source
-          path: /tmp/corpus-quality-audit/
-          retention-days: 3
+          name: corpus-language-findings
+          path: |
+            reports/corpus-language-audit/
+            /tmp/languagetool.log
+          retention-days: 7
