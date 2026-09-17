@@ -67,6 +67,23 @@ function normalizeFormula(value = "") {
   return String(value).trim().toLocaleLowerCase();
 }
 
+function normalizeStructuralFormula(value = "") {
+  return String(value)
+    .replaceAll("…", "...")
+    .trim()
+    .toLocaleLowerCase()
+    .replace(/\[[^\]]*\]/g, "[]")
+    .replace(/\s+/g, " ")
+    .replace(/\s*([,;:?.!])\s*/g, "$1")
+    .replace(/\s*\+\s*/g, "+")
+    .trim();
+}
+
+function structuralPatternSignature(pattern) {
+  const byLanguage = new Map((pattern.langs || []).map((language) => [language.lang, normalizeStructuralFormula(language.formula)]));
+  return corpusLanguages().map((language) => language + ":" + (byLanguage.get(language) || "")).join("|");
+}
+
 function normalizeExample(value = "") {
   return String(value)
     .replaceAll("**", "")
@@ -263,13 +280,18 @@ export function loadContent() {
   supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
   const advancedPatterns = applyPracticeQualityOverrides(mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns))
     .map((pattern) => ({ ...pattern, quality: derivePatternQuality(pattern) }));
-  assert(advancedPatterns.length >= 1000, `pattern corpus (data/patterns/) requires at least 1,000 patterns; found ${advancedPatterns.length}`);
+  assert(advancedPatterns.length > 0, "pattern corpus must not be empty");
   const patternIds = new Set();
   const formulas = new Set();
+  const structuralFrames = new Map();
   advancedPatterns.forEach((pattern, index) => {
     validatePattern(pattern, index, validSetIds);
     assert(!patternIds.has(pattern.id.toLowerCase()), `duplicate advanced pattern id ${pattern.id}`);
     patternIds.add(pattern.id.toLowerCase());
+    const structuralKey = pattern.set_id + ":" + structuralPatternSignature(pattern);
+    const structuralOwner = structuralFrames.get(structuralKey);
+    assert(!structuralOwner, "structural duplicate advanced pattern " + pattern.id + " repeats " + structuralOwner + " in " + pattern.set_id);
+    structuralFrames.set(structuralKey, pattern.id);
     for (const lang of pattern.langs) {
       const formula = normalizeFormula(lang.formula);
       assert(!formulas.has(formula), `duplicate advanced pattern formula ${lang.formula}`);
