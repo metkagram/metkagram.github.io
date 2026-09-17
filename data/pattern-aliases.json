@@ -1,0 +1,5911 @@
+{
+  "schemaVersion": 1,
+  "policy": "one-reusable-frame-one-canonical-pattern",
+  "generatedFrom": "deterministic EN+DE structural signatures within the same study set and pattern group",
+  "generatedOn": "2026-09-17",
+  "activePatternCountBeforeCanonicalization": 3530,
+  "canonicalPatternCount": 630,
+  "aliasCount": 2900,
+  "groups": [
+    {
+      "canonical_id": "C1AGR001",
+      "alias_ids": [
+        "C1AGR002",
+        "C1AGR003",
+        "C1AGR004",
+        "C1AGR005",
+        "C1AGR006",
+        "C1AGR007",
+        "C1AGR008",
+        "C1AGR009",
+        "C1AGR010",
+        "C1AGR011",
+        "C1AGR012",
+        "C1AGR013",
+        "C1AGR014",
+        "C1AGR015",
+        "C1AGR016",
+        "C1AGR017",
+        "C1AGR018",
+        "C1AGR019",
+        "C1AGR020",
+        "C1AGR021",
+        "C1AGR022",
+        "C1AGR023",
+        "C1AGR024",
+        "C1AGR025",
+        "C1AGR026",
+        "C1AGR027",
+        "C1AGR028",
+        "C1AGR029",
+        "C1AGR030",
+        "C1AGR031",
+        "C1AGR032",
+        "C1AGR033",
+        "C1AGR034",
+        "C1AGR035",
+        "C1AGR036",
+        "C1AGR037",
+        "C1AGR038",
+        "C1AGR039",
+        "C1AGR040"
+      ],
+      "set_id": "AGR",
+      "group_id": "AGR",
+      "structural_signature": "AGR :: AGR :: de:ich erkenne den wert von [slot], würde ihn jedoch anders gewichten. || en:i see the merit in [slot], although i would weigh it differently.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1CAU001",
+      "alias_ids": [
+        "C1CAU002",
+        "C1CAU003",
+        "C1CAU004",
+        "C1CAU005",
+        "C1CAU006",
+        "C1CAU007",
+        "C1CAU008",
+        "C1CAU009",
+        "C1CAU010",
+        "C1CAU011",
+        "C1CAU012",
+        "C1CAU013",
+        "C1CAU014",
+        "C1CAU015",
+        "C1CAU016",
+        "C1CAU017",
+        "C1CAU018",
+        "C1CAU019",
+        "C1CAU020",
+        "C1CAU021",
+        "C1CAU022",
+        "C1CAU023",
+        "C1CAU024",
+        "C1CAU025",
+        "C1CAU026",
+        "C1CAU027",
+        "C1CAU028",
+        "C1CAU029",
+        "C1CAU030",
+        "C1CAU031",
+        "C1CAU032",
+        "C1CAU033",
+        "C1CAU034",
+        "C1CAU035",
+        "C1CAU036",
+        "C1CAU037",
+        "C1CAU038",
+        "C1CAU039",
+        "C1CAU040"
+      ],
+      "set_id": "CAU",
+      "group_id": "CAU",
+      "structural_signature": "CAU :: CAU :: de:weil [slot] übersehen wurde, wurden die folgen schwerer zu bewältigen. || en:because [slot] was overlooked, the consequences became harder to manage.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1CLR001",
+      "alias_ids": [
+        "C1CLR002",
+        "C1CLR003",
+        "C1CLR004",
+        "C1CLR005",
+        "C1CLR006",
+        "C1CLR007",
+        "C1CLR008",
+        "C1CLR009",
+        "C1CLR010",
+        "C1CLR011",
+        "C1CLR012",
+        "C1CLR013",
+        "C1CLR014",
+        "C1CLR015",
+        "C1CLR016",
+        "C1CLR017",
+        "C1CLR018",
+        "C1CLR019",
+        "C1CLR020",
+        "C1CLR021",
+        "C1CLR022",
+        "C1CLR023",
+        "C1CLR024",
+        "C1CLR025",
+        "C1CLR026",
+        "C1CLR027",
+        "C1CLR028",
+        "C1CLR029",
+        "C1CLR030",
+        "C1CLR031",
+        "C1CLR032",
+        "C1CLR033",
+        "C1CLR034",
+        "C1CLR035",
+        "C1CLR036",
+        "C1CLR037",
+        "C1CLR038",
+        "C1CLR039",
+        "C1CLR040"
+      ],
+      "set_id": "CLR",
+      "group_id": "CLR",
+      "structural_signature": "CLR :: CLR :: de:um [slot] genauer zu formulieren: es geht um prioritäten. || en:to put [slot] more precisely, the issue is one of priorities.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1CMP001",
+      "alias_ids": [
+        "C1CMP002",
+        "C1CMP003",
+        "C1CMP004",
+        "C1CMP005",
+        "C1CMP006",
+        "C1CMP007",
+        "C1CMP008",
+        "C1CMP009",
+        "C1CMP010",
+        "C1CMP011",
+        "C1CMP012",
+        "C1CMP013",
+        "C1CMP014",
+        "C1CMP015",
+        "C1CMP016",
+        "C1CMP017",
+        "C1CMP018",
+        "C1CMP019",
+        "C1CMP020",
+        "C1CMP021",
+        "C1CMP022",
+        "C1CMP023",
+        "C1CMP024",
+        "C1CMP025",
+        "C1CMP026",
+        "C1CMP027",
+        "C1CMP028",
+        "C1CMP029",
+        "C1CMP030",
+        "C1CMP031",
+        "C1CMP032",
+        "C1CMP033",
+        "C1CMP034",
+        "C1CMP035",
+        "C1CMP036",
+        "C1CMP037",
+        "C1CMP038",
+        "C1CMP039",
+        "C1CMP040"
+      ],
+      "set_id": "CMP",
+      "group_id": "CMP",
+      "structural_signature": "CMP :: CMP :: de:im vergleich zur alternative bietet [slot] eine nachhaltigere lösung. || en:compared with the alternative, [slot] offers a more durable solution.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1CND001",
+      "alias_ids": [
+        "C1CND002",
+        "C1CND003",
+        "C1CND004",
+        "C1CND005",
+        "C1CND006",
+        "C1CND007",
+        "C1CND008",
+        "C1CND009",
+        "C1CND010",
+        "C1CND011",
+        "C1CND012",
+        "C1CND013",
+        "C1CND014",
+        "C1CND015",
+        "C1CND016",
+        "C1CND017",
+        "C1CND018",
+        "C1CND019",
+        "C1CND020",
+        "C1CND021",
+        "C1CND022",
+        "C1CND023",
+        "C1CND024",
+        "C1CND025",
+        "C1CND026",
+        "C1CND027",
+        "C1CND028",
+        "C1CND029",
+        "C1CND030",
+        "C1CND031",
+        "C1CND032",
+        "C1CND033",
+        "C1CND034",
+        "C1CND035",
+        "C1CND036",
+        "C1CND037",
+        "C1CND038",
+        "C1CND039",
+        "C1CND040"
+      ],
+      "set_id": "CND",
+      "group_id": "CND",
+      "structural_signature": "CND :: CND :: de:wäre [slot] früher angegangen worden, hätten wir die verzögerung vielleicht vermeiden können. || en:had [slot] been addressed earlier, we might have avoided the delay.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1DGR001",
+      "alias_ids": [
+        "C1DGR002",
+        "C1DGR003",
+        "C1DGR004",
+        "C1DGR005",
+        "C1DGR006",
+        "C1DGR007",
+        "C1DGR008",
+        "C1DGR009",
+        "C1DGR010",
+        "C1DGR011",
+        "C1DGR012",
+        "C1DGR013",
+        "C1DGR014",
+        "C1DGR015",
+        "C1DGR016",
+        "C1DGR017",
+        "C1DGR018",
+        "C1DGR019",
+        "C1DGR020",
+        "C1DGR021",
+        "C1DGR022",
+        "C1DGR023",
+        "C1DGR024",
+        "C1DGR025",
+        "C1DGR026",
+        "C1DGR027",
+        "C1DGR028",
+        "C1DGR029",
+        "C1DGR030",
+        "C1DGR031",
+        "C1DGR032",
+        "C1DGR033",
+        "C1DGR034",
+        "C1DGR035",
+        "C1DGR036",
+        "C1DGR037",
+        "C1DGR038",
+        "C1DGR039",
+        "C1DGR040"
+      ],
+      "set_id": "DGR",
+      "group_id": "DGR",
+      "structural_signature": "DGR :: DGR :: de:nicht nur wurde [slot] sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert. || en:not only was [slot] carefully prepared, but it was also clearly communicated.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1EVD001",
+      "alias_ids": [
+        "C1EVD002",
+        "C1EVD003",
+        "C1EVD004",
+        "C1EVD005",
+        "C1EVD006",
+        "C1EVD007",
+        "C1EVD008",
+        "C1EVD009",
+        "C1EVD010",
+        "C1EVD011",
+        "C1EVD012",
+        "C1EVD013",
+        "C1EVD014",
+        "C1EVD015",
+        "C1EVD016",
+        "C1EVD017",
+        "C1EVD018",
+        "C1EVD019",
+        "C1EVD020",
+        "C1EVD021",
+        "C1EVD022",
+        "C1EVD023",
+        "C1EVD024",
+        "C1EVD025",
+        "C1EVD026",
+        "C1EVD027",
+        "C1EVD028",
+        "C1EVD029",
+        "C1EVD030",
+        "C1EVD031",
+        "C1EVD032",
+        "C1EVD033",
+        "C1EVD034",
+        "C1EVD035",
+        "C1EVD036",
+        "C1EVD037",
+        "C1EVD038",
+        "C1EVD039",
+        "C1EVD040"
+      ],
+      "set_id": "EVD",
+      "group_id": "EVD",
+      "structural_signature": "EVD :: EVD :: de:die verfügbaren belege deuten darauf hin, dass [slot] ein wesentlicher faktor ist. || en:the available evidence points to [slot] as a meaningful factor.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1LNK001",
+      "alias_ids": [
+        "C1LNK002",
+        "C1LNK003",
+        "C1LNK004",
+        "C1LNK005",
+        "C1LNK006",
+        "C1LNK007",
+        "C1LNK008",
+        "C1LNK009",
+        "C1LNK010",
+        "C1LNK011",
+        "C1LNK012",
+        "C1LNK013",
+        "C1LNK014",
+        "C1LNK015",
+        "C1LNK016",
+        "C1LNK017",
+        "C1LNK018",
+        "C1LNK019",
+        "C1LNK020",
+        "C1LNK021",
+        "C1LNK022",
+        "C1LNK023",
+        "C1LNK024",
+        "C1LNK025",
+        "C1LNK026",
+        "C1LNK027",
+        "C1LNK028",
+        "C1LNK029",
+        "C1LNK030",
+        "C1LNK031",
+        "C1LNK032",
+        "C1LNK033",
+        "C1LNK034",
+        "C1LNK035",
+        "C1LNK036",
+        "C1LNK037",
+        "C1LNK038",
+        "C1LNK039",
+        "C1LNK040"
+      ],
+      "set_id": "LNK",
+      "group_id": "LNK",
+      "structural_signature": "LNK :: LNK :: de:trotzdem sollte [slot] im größeren zusammenhang betrachtet werden. || en:even so, [slot] should be considered in the wider context.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1MOD001",
+      "alias_ids": [
+        "C1MOD002",
+        "C1MOD003",
+        "C1MOD004",
+        "C1MOD005",
+        "C1MOD006",
+        "C1MOD007",
+        "C1MOD008",
+        "C1MOD009",
+        "C1MOD010",
+        "C1MOD011",
+        "C1MOD012",
+        "C1MOD013",
+        "C1MOD014",
+        "C1MOD015",
+        "C1MOD016",
+        "C1MOD017",
+        "C1MOD018",
+        "C1MOD019",
+        "C1MOD020",
+        "C1MOD021",
+        "C1MOD022",
+        "C1MOD023",
+        "C1MOD024",
+        "C1MOD025",
+        "C1MOD026",
+        "C1MOD027",
+        "C1MOD028",
+        "C1MOD029",
+        "C1MOD030",
+        "C1MOD031",
+        "C1MOD032",
+        "C1MOD033",
+        "C1MOD034",
+        "C1MOD035",
+        "C1MOD036",
+        "C1MOD037",
+        "C1MOD038",
+        "C1MOD039",
+        "C1MOD040"
+      ],
+      "set_id": "MOD",
+      "group_id": "MOD",
+      "structural_signature": "MOD :: MOD :: de:damit [slot] gelingt, müssen alle die grenzen verstehen. || en:for [slot] to succeed, everyone needs to understand the limits.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1NEG001",
+      "alias_ids": [
+        "C1NEG002",
+        "C1NEG003",
+        "C1NEG004",
+        "C1NEG005",
+        "C1NEG006",
+        "C1NEG007",
+        "C1NEG008",
+        "C1NEG009",
+        "C1NEG010",
+        "C1NEG011",
+        "C1NEG012",
+        "C1NEG013",
+        "C1NEG014",
+        "C1NEG015",
+        "C1NEG016",
+        "C1NEG017",
+        "C1NEG018",
+        "C1NEG019",
+        "C1NEG020",
+        "C1NEG021",
+        "C1NEG022",
+        "C1NEG023",
+        "C1NEG024",
+        "C1NEG025",
+        "C1NEG026",
+        "C1NEG027",
+        "C1NEG028",
+        "C1NEG029",
+        "C1NEG030",
+        "C1NEG031",
+        "C1NEG032",
+        "C1NEG033",
+        "C1NEG034",
+        "C1NEG035",
+        "C1NEG036",
+        "C1NEG037",
+        "C1NEG038",
+        "C1NEG039",
+        "C1NEG040"
+      ],
+      "set_id": "NEG",
+      "group_id": "NEG",
+      "structural_signature": "NEG :: NEG :: de:könnten wir [slot] als grundlage für einen tragfähigen kompromiss nehmen? || en:could we treat [slot] as the basis for a workable compromise?",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1OPI001",
+      "alias_ids": [
+        "C1OPI002",
+        "C1OPI003",
+        "C1OPI004",
+        "C1OPI005",
+        "C1OPI006",
+        "C1OPI007",
+        "C1OPI008",
+        "C1OPI009",
+        "C1OPI010",
+        "C1OPI011",
+        "C1OPI012",
+        "C1OPI013",
+        "C1OPI014",
+        "C1OPI015",
+        "C1OPI016",
+        "C1OPI017",
+        "C1OPI018",
+        "C1OPI019",
+        "C1OPI020",
+        "C1OPI021",
+        "C1OPI022",
+        "C1OPI023",
+        "C1OPI024",
+        "C1OPI025",
+        "C1OPI026",
+        "C1OPI027",
+        "C1OPI028",
+        "C1OPI029",
+        "C1OPI030",
+        "C1OPI031",
+        "C1OPI032",
+        "C1OPI033",
+        "C1OPI034",
+        "C1OPI035",
+        "C1OPI036",
+        "C1OPI037",
+        "C1OPI038",
+        "C1OPI039",
+        "C1OPI040"
+      ],
+      "set_id": "OPI",
+      "group_id": "OPI",
+      "structural_signature": "OPI :: OPI :: de:nach reiflicher überlegung bin ich der ansicht, dass [slot] mehr aufmerksamkeit verdient. || en:my considered view is that [slot] deserves closer attention.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1PRB001",
+      "alias_ids": [
+        "C1PRB002",
+        "C1PRB003",
+        "C1PRB004",
+        "C1PRB005",
+        "C1PRB006",
+        "C1PRB007",
+        "C1PRB008",
+        "C1PRB009",
+        "C1PRB010",
+        "C1PRB011",
+        "C1PRB012",
+        "C1PRB013",
+        "C1PRB014",
+        "C1PRB015",
+        "C1PRB016",
+        "C1PRB017",
+        "C1PRB018",
+        "C1PRB019",
+        "C1PRB020",
+        "C1PRB021",
+        "C1PRB022",
+        "C1PRB023",
+        "C1PRB024",
+        "C1PRB025",
+        "C1PRB026",
+        "C1PRB027",
+        "C1PRB028",
+        "C1PRB029",
+        "C1PRB030",
+        "C1PRB031",
+        "C1PRB032",
+        "C1PRB033",
+        "C1PRB034",
+        "C1PRB035",
+        "C1PRB036",
+        "C1PRB037",
+        "C1PRB038",
+        "C1PRB039",
+        "C1PRB040"
+      ],
+      "set_id": "PRB",
+      "group_id": "PRB",
+      "structural_signature": "PRB :: PRB :: de:es besteht eine realistische chance, dass [slot] das ergebnis verändert. || en:there is a realistic chance that [slot] will change the outcome.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1PRO001",
+      "alias_ids": [
+        "C1PRO002",
+        "C1PRO003",
+        "C1PRO004",
+        "C1PRO005",
+        "C1PRO006",
+        "C1PRO007",
+        "C1PRO008",
+        "C1PRO009",
+        "C1PRO010",
+        "C1PRO011",
+        "C1PRO012",
+        "C1PRO013",
+        "C1PRO014",
+        "C1PRO015",
+        "C1PRO016",
+        "C1PRO017",
+        "C1PRO018",
+        "C1PRO019",
+        "C1PRO020",
+        "C1PRO021",
+        "C1PRO022",
+        "C1PRO023",
+        "C1PRO024",
+        "C1PRO025",
+        "C1PRO026",
+        "C1PRO027",
+        "C1PRO028",
+        "C1PRO029",
+        "C1PRO030",
+        "C1PRO031",
+        "C1PRO032",
+        "C1PRO033",
+        "C1PRO034",
+        "C1PRO035",
+        "C1PRO036",
+        "C1PRO037",
+        "C1PRO038",
+        "C1PRO039",
+        "C1PRO040"
+      ],
+      "set_id": "PRO",
+      "group_id": "PRO",
+      "structural_signature": "PRO :: PRO :: de:ich schreibe, um zu erläutern, wie [slot] die nächsten schritte beeinflusst. || en:i am writing to clarify how [slot] affects the next steps.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1PSV001",
+      "alias_ids": [
+        "C1PSV002",
+        "C1PSV003",
+        "C1PSV004",
+        "C1PSV005",
+        "C1PSV006",
+        "C1PSV007",
+        "C1PSV008",
+        "C1PSV009",
+        "C1PSV010",
+        "C1PSV011",
+        "C1PSV012",
+        "C1PSV013",
+        "C1PSV014",
+        "C1PSV015",
+        "C1PSV016",
+        "C1PSV017",
+        "C1PSV018",
+        "C1PSV019",
+        "C1PSV020",
+        "C1PSV021",
+        "C1PSV022",
+        "C1PSV023",
+        "C1PSV024",
+        "C1PSV025",
+        "C1PSV026",
+        "C1PSV027",
+        "C1PSV028",
+        "C1PSV029",
+        "C1PSV030",
+        "C1PSV031",
+        "C1PSV032",
+        "C1PSV033",
+        "C1PSV034",
+        "C1PSV035",
+        "C1PSV036",
+        "C1PSV037",
+        "C1PSV038",
+        "C1PSV039",
+        "C1PSV040"
+      ],
+      "set_id": "PSV",
+      "group_id": "PSV",
+      "structural_signature": "PSV :: PSV :: de:[slot] wird geprüft, bevor eine entscheidung bekannt gegeben wird. || en:[slot] is being reviewed before any decision is announced.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1QNN001",
+      "alias_ids": [
+        "C1QNN002",
+        "C1QNN003",
+        "C1QNN004",
+        "C1QNN005",
+        "C1QNN006",
+        "C1QNN007",
+        "C1QNN008",
+        "C1QNN009",
+        "C1QNN010",
+        "C1QNN011",
+        "C1QNN012",
+        "C1QNN013",
+        "C1QNN014",
+        "C1QNN015",
+        "C1QNN016",
+        "C1QNN017",
+        "C1QNN018",
+        "C1QNN019",
+        "C1QNN020",
+        "C1QNN021",
+        "C1QNN022",
+        "C1QNN023",
+        "C1QNN024",
+        "C1QNN025",
+        "C1QNN026",
+        "C1QNN027",
+        "C1QNN028",
+        "C1QNN029",
+        "C1QNN030",
+        "C1QNN031",
+        "C1QNN032",
+        "C1QNN033",
+        "C1QNN034",
+        "C1QNN035",
+        "C1QNN036",
+        "C1QNN037",
+        "C1QNN038",
+        "C1QNN039",
+        "C1QNN040"
+      ],
+      "set_id": "QNN",
+      "group_id": "QNN",
+      "structural_signature": "QNN :: QNN :: de:was würde verhindern, dass [slot] fair umgesetzt wird? || en:what would prevent [slot] from being implemented fairly?",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1REP001",
+      "alias_ids": [
+        "C1REP002",
+        "C1REP003",
+        "C1REP004",
+        "C1REP005",
+        "C1REP006",
+        "C1REP007",
+        "C1REP008",
+        "C1REP009",
+        "C1REP010",
+        "C1REP011",
+        "C1REP012",
+        "C1REP013",
+        "C1REP014",
+        "C1REP015",
+        "C1REP016",
+        "C1REP017",
+        "C1REP018",
+        "C1REP019",
+        "C1REP020",
+        "C1REP021",
+        "C1REP022",
+        "C1REP023",
+        "C1REP024",
+        "C1REP025",
+        "C1REP026",
+        "C1REP027",
+        "C1REP028",
+        "C1REP029",
+        "C1REP030",
+        "C1REP031",
+        "C1REP032",
+        "C1REP033",
+        "C1REP034",
+        "C1REP035",
+        "C1REP036",
+        "C1REP037",
+        "C1REP038",
+        "C1REP039",
+        "C1REP040"
+      ],
+      "set_id": "REP",
+      "group_id": "REP",
+      "structural_signature": "REP :: REP :: de:sie betonte, dass [slot] nicht als isoliertes problem behandelt werden könne. || en:she stressed that [slot] could not be treated as an isolated issue.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1STO001",
+      "alias_ids": [
+        "C1STO002",
+        "C1STO003",
+        "C1STO004",
+        "C1STO005",
+        "C1STO006",
+        "C1STO007",
+        "C1STO008",
+        "C1STO009",
+        "C1STO010",
+        "C1STO011",
+        "C1STO012",
+        "C1STO013",
+        "C1STO014",
+        "C1STO015",
+        "C1STO016",
+        "C1STO017",
+        "C1STO018",
+        "C1STO019",
+        "C1STO020",
+        "C1STO021",
+        "C1STO022",
+        "C1STO023",
+        "C1STO024",
+        "C1STO025",
+        "C1STO026",
+        "C1STO027",
+        "C1STO028",
+        "C1STO029",
+        "C1STO030",
+        "C1STO031",
+        "C1STO032",
+        "C1STO033",
+        "C1STO034",
+        "C1STO035",
+        "C1STO036",
+        "C1STO037",
+        "C1STO038",
+        "C1STO039",
+        "C1STO040"
+      ],
+      "set_id": "STO",
+      "group_id": "STO",
+      "structural_signature": "STO :: STO :: de:rückblickend war [slot] der moment, in dem sich die situation änderte. || en:looking back, [slot] was the moment when the situation changed.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1TAS001",
+      "alias_ids": [
+        "C1TAS002",
+        "C1TAS003",
+        "C1TAS004",
+        "C1TAS005",
+        "C1TAS006",
+        "C1TAS007",
+        "C1TAS008",
+        "C1TAS009",
+        "C1TAS010",
+        "C1TAS011",
+        "C1TAS012",
+        "C1TAS013",
+        "C1TAS014",
+        "C1TAS015",
+        "C1TAS016",
+        "C1TAS017",
+        "C1TAS018",
+        "C1TAS019",
+        "C1TAS020",
+        "C1TAS021",
+        "C1TAS022",
+        "C1TAS023",
+        "C1TAS024",
+        "C1TAS025",
+        "C1TAS026",
+        "C1TAS027",
+        "C1TAS028",
+        "C1TAS029",
+        "C1TAS030",
+        "C1TAS031",
+        "C1TAS032",
+        "C1TAS033",
+        "C1TAS034",
+        "C1TAS035",
+        "C1TAS036",
+        "C1TAS037",
+        "C1TAS038",
+        "C1TAS039",
+        "C1TAS040"
+      ],
+      "set_id": "TAS",
+      "group_id": "TAS",
+      "structural_signature": "TAS :: TAS :: de:wir verfolgen [slot], seit die ersten warnsignale aufgetreten sind. || en:we have been tracking [slot] since the first warning signs appeared.",
+      "example_overlap": 0.179,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1ARG001",
+      "alias_ids": [
+        "C1ARG002",
+        "C1ARG003",
+        "C1ARG004",
+        "C1ARG005",
+        "C1ARG006",
+        "C1ARG007",
+        "C1ARG008",
+        "C1ARG009",
+        "C1ARG010",
+        "C1ARG011",
+        "C1ARG012",
+        "C1ARG013",
+        "C1ARG014",
+        "C1ARG015",
+        "C1ARG016",
+        "C1ARG017",
+        "C1ARG018",
+        "C1ARG019",
+        "C1ARG020",
+        "C1ARG021",
+        "C1ARG022",
+        "C1ARG023",
+        "C1ARG024",
+        "C1ARG025",
+        "C1ARG026",
+        "C1ARG027",
+        "C1ARG028",
+        "C1ARG029",
+        "C1ARG030",
+        "C1ARG031",
+        "C1ARG032",
+        "C1ARG033",
+        "C1ARG034",
+        "C1ARG035",
+        "C1ARG036",
+        "C1ARG037",
+        "C1ARG038",
+        "C1ARG039",
+        "C1ARG040"
+      ],
+      "set_id": "ARG",
+      "group_id": "ARG",
+      "structural_signature": "ARG :: ARG :: de:das argument für [slot] beruht auf der annahme, dass [slot]. || en:the case for [slot] rests on the assumption that [slot].",
+      "example_overlap": 0.17,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "C1HED001",
+      "alias_ids": [
+        "C1HED002",
+        "C1HED003",
+        "C1HED004",
+        "C1HED005",
+        "C1HED006",
+        "C1HED007",
+        "C1HED008",
+        "C1HED009",
+        "C1HED010",
+        "C1HED011",
+        "C1HED012",
+        "C1HED013",
+        "C1HED014",
+        "C1HED015",
+        "C1HED016",
+        "C1HED017",
+        "C1HED018",
+        "C1HED019",
+        "C1HED020",
+        "C1HED021",
+        "C1HED022",
+        "C1HED023",
+        "C1HED024",
+        "C1HED025",
+        "C1HED026",
+        "C1HED027",
+        "C1HED028",
+        "C1HED029",
+        "C1HED030",
+        "C1HED031",
+        "C1HED032",
+        "C1HED033",
+        "C1HED034",
+        "C1HED035",
+        "C1HED036",
+        "C1HED037",
+        "C1HED038",
+        "C1HED039",
+        "C1HED040"
+      ],
+      "set_id": "HED",
+      "group_id": "HED",
+      "structural_signature": "HED :: HED :: de:es wäre verfrüht, daraus zu schließen, dass [slot] abschließend geklärt ist. || en:it would be premature to conclude that [slot] is settled.",
+      "example_overlap": 0,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNADV001",
+      "alias_ids": [
+        "FUNADV002",
+        "FUNADV003",
+        "FUNADV004",
+        "FUNADV005",
+        "FUNADV006",
+        "FUNADV007",
+        "FUNADV008",
+        "FUNADV009",
+        "FUNADV010"
+      ],
+      "set_id": "ADV",
+      "group_id": "ADV",
+      "structural_signature": "ADV :: ADV :: de:ich würde empfehlen zu prüfen, ob [slot]. || en:i would recommend checking whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNADV011",
+      "alias_ids": [
+        "FUNADV012",
+        "FUNADV013",
+        "FUNADV014",
+        "FUNADV015",
+        "FUNADV016",
+        "FUNADV017",
+        "FUNADV018",
+        "FUNADV019",
+        "FUNADV020"
+      ],
+      "set_id": "ADV",
+      "group_id": "ADV",
+      "structural_signature": "ADV :: ADV :: de:es könnte sich lohnen zu fragen, warum [slot]. || en:it may be worth asking why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNADV021",
+      "alias_ids": [
+        "FUNADV022",
+        "FUNADV023",
+        "FUNADV024",
+        "FUNADV025",
+        "FUNADV026",
+        "FUNADV027",
+        "FUNADV028",
+        "FUNADV029",
+        "FUNADV030"
+      ],
+      "set_id": "ADV",
+      "group_id": "ADV",
+      "structural_signature": "ADV :: ADV :: de:ein praktischer schritt wäre, zu bestätigen, dass [slot]. || en:one practical step would be to confirm that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNADV031",
+      "alias_ids": [
+        "FUNADV032",
+        "FUNADV033",
+        "FUNADV034",
+        "FUNADV035",
+        "FUNADV036",
+        "FUNADV037",
+        "FUNADV038",
+        "FUNADV039",
+        "FUNADV040"
+      ],
+      "set_id": "ADV",
+      "group_id": "ADV",
+      "structural_signature": "ADV :: ADV :: de:wenn [slot], sollten wir den zeitplan überdenken. || en:if [slot], we should reconsider the timetable.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCMT001",
+      "alias_ids": [
+        "FUNCMT002",
+        "FUNCMT003",
+        "FUNCMT004",
+        "FUNCMT005",
+        "FUNCMT006",
+        "FUNCMT007",
+        "FUNCMT008",
+        "FUNCMT009",
+        "FUNCMT010"
+      ],
+      "set_id": "CMT",
+      "group_id": "CMT",
+      "structural_signature": "CMT :: CMT :: de:ich werde dafür sorgen, dass [slot]. || en:i will make sure that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCMT011",
+      "alias_ids": [
+        "FUNCMT012",
+        "FUNCMT013",
+        "FUNCMT014",
+        "FUNCMT015",
+        "FUNCMT016",
+        "FUNCMT017",
+        "FUNCMT018",
+        "FUNCMT019",
+        "FUNCMT020"
+      ],
+      "set_id": "CMT",
+      "group_id": "CMT",
+      "structural_signature": "CMT :: CMT :: de:wir verpflichten uns zu prüfen, ob [slot]. || en:we commit to reviewing whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCMT021",
+      "alias_ids": [
+        "FUNCMT022",
+        "FUNCMT023",
+        "FUNCMT024",
+        "FUNCMT025",
+        "FUNCMT026",
+        "FUNCMT027",
+        "FUNCMT028",
+        "FUNCMT029",
+        "FUNCMT030"
+      ],
+      "set_id": "CMT",
+      "group_id": "CMT",
+      "structural_signature": "CMT :: CMT :: de:ich kann bestätigen, dass wir handeln werden, wenn [slot]. || en:i can confirm that we will act if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCMT031",
+      "alias_ids": [
+        "FUNCMT032",
+        "FUNCMT033",
+        "FUNCMT034",
+        "FUNCMT035",
+        "FUNCMT036",
+        "FUNCMT037",
+        "FUNCMT038",
+        "FUNCMT039",
+        "FUNCMT040"
+      ],
+      "set_id": "CMT",
+      "group_id": "CMT",
+      "structural_signature": "CMT :: CMT :: de:bis freitag werden wir wissen, ob [slot]. || en:by friday, we will know whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCNS001",
+      "alias_ids": [
+        "FUNCNS002",
+        "FUNCNS003",
+        "FUNCNS004",
+        "FUNCNS005",
+        "FUNCNS006",
+        "FUNCNS007",
+        "FUNCNS008",
+        "FUNCNS009",
+        "FUNCNS010"
+      ],
+      "set_id": "CNS",
+      "group_id": "CNS",
+      "structural_signature": "CNS :: CNS :: de:selbst wenn [slot], sollten wir das hauptziel im blick behalten. || en:even if [slot], we should keep the main objective in view.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCNS011",
+      "alias_ids": [
+        "FUNCNS012",
+        "FUNCNS013",
+        "FUNCNS014",
+        "FUNCNS015",
+        "FUNCNS016",
+        "FUNCNS017",
+        "FUNCNS018",
+        "FUNCNS019",
+        "FUNCNS020"
+      ],
+      "set_id": "CNS",
+      "group_id": "CNS",
+      "structural_signature": "CNS :: CNS :: de:obwohl [slot], wäre es verfrüht, eine schlussfolgerung zu ziehen. || en:although [slot], it would be premature to draw a conclusion.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCNS021",
+      "alias_ids": [
+        "FUNCNS022",
+        "FUNCNS023",
+        "FUNCNS024",
+        "FUNCNS025",
+        "FUNCNS026",
+        "FUNCNS027",
+        "FUNCNS028",
+        "FUNCNS029",
+        "FUNCNS030"
+      ],
+      "set_id": "CNS",
+      "group_id": "CNS",
+      "structural_signature": "CNS :: CNS :: de:das gesagt, müssen wir dennoch prüfen, ob [slot]. || en:that said, we still need to check whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNCNS031",
+      "alias_ids": [
+        "FUNCNS032",
+        "FUNCNS033",
+        "FUNCNS034",
+        "FUNCNS035",
+        "FUNCNS036",
+        "FUNCNS037",
+        "FUNCNS038",
+        "FUNCNS039",
+        "FUNCNS040"
+      ],
+      "set_id": "CNS",
+      "group_id": "CNS",
+      "structural_signature": "CNS :: CNS :: de:trotz der tatsache, dass [slot], bleibt die kernfrage offen. || en:despite the fact that [slot], the core issue remains open.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNEXM001",
+      "alias_ids": [
+        "FUNEXM002",
+        "FUNEXM003",
+        "FUNEXM004",
+        "FUNEXM005",
+        "FUNEXM006",
+        "FUNEXM007",
+        "FUNEXM008",
+        "FUNEXM009",
+        "FUNEXM010"
+      ],
+      "set_id": "EXM",
+      "group_id": "EXM",
+      "structural_signature": "EXM :: EXM :: de:zum beispiel sollten wir fragen, ob [slot]. || en:for example, we should ask whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNEXM011",
+      "alias_ids": [
+        "FUNEXM012",
+        "FUNEXM013",
+        "FUNEXM014",
+        "FUNEXM015",
+        "FUNEXM016",
+        "FUNEXM017",
+        "FUNEXM018",
+        "FUNEXM019",
+        "FUNEXM020"
+      ],
+      "set_id": "EXM",
+      "group_id": "EXM",
+      "structural_signature": "EXM :: EXM :: de:ein fall liegt vor, wenn [slot]. || en:one case is when [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNEXM021",
+      "alias_ids": [
+        "FUNEXM022",
+        "FUNEXM023",
+        "FUNEXM024",
+        "FUNEXM025",
+        "FUNEXM026",
+        "FUNEXM027",
+        "FUNEXM028",
+        "FUNEXM029",
+        "FUNEXM030"
+      ],
+      "set_id": "EXM",
+      "group_id": "EXM",
+      "structural_signature": "EXM :: EXM :: de:um den punkt zu veranschaulichen, betrachten sie, warum [slot]. || en:to illustrate the point, consider why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNEXM031",
+      "alias_ids": [
+        "FUNEXM032",
+        "FUNEXM033",
+        "FUNEXM034",
+        "FUNEXM035",
+        "FUNEXM036",
+        "FUNEXM037",
+        "FUNEXM038",
+        "FUNEXM039",
+        "FUNEXM040"
+      ],
+      "set_id": "EXM",
+      "group_id": "EXM",
+      "structural_signature": "EXM :: EXM :: de:ein konkretes beispiel wäre, wenn [slot]. || en:a specific example would be if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFBK001",
+      "alias_ids": [
+        "FUNFBK002",
+        "FUNFBK003",
+        "FUNFBK004",
+        "FUNFBK005",
+        "FUNFBK006",
+        "FUNFBK007",
+        "FUNFBK008",
+        "FUNFBK009",
+        "FUNFBK010"
+      ],
+      "set_id": "FBK",
+      "group_id": "FBK",
+      "structural_signature": "FBK :: FBK :: de:eine stärke ist, dass [slot]. || en:one strength is that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFBK011",
+      "alias_ids": [
+        "FUNFBK012",
+        "FUNFBK013",
+        "FUNFBK014",
+        "FUNFBK015",
+        "FUNFBK016",
+        "FUNFBK017",
+        "FUNFBK018",
+        "FUNFBK019",
+        "FUNFBK020"
+      ],
+      "set_id": "FBK",
+      "group_id": "FBK",
+      "structural_signature": "FBK :: FBK :: de:ein verbesserungsbereich ist die frage, ob [slot]. || en:one area to improve is whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFBK021",
+      "alias_ids": [
+        "FUNFBK022",
+        "FUNFBK023",
+        "FUNFBK024",
+        "FUNFBK025",
+        "FUNFBK026",
+        "FUNFBK027",
+        "FUNFBK028",
+        "FUNFBK029",
+        "FUNFBK030"
+      ],
+      "set_id": "FBK",
+      "group_id": "FBK",
+      "structural_signature": "FBK :: FBK :: de:das ergebnis wäre stärker, wenn [slot]. || en:the result would be stronger if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFBK031",
+      "alias_ids": [
+        "FUNFBK032",
+        "FUNFBK033",
+        "FUNFBK034",
+        "FUNFBK035",
+        "FUNFBK036",
+        "FUNFBK037",
+        "FUNFBK038",
+        "FUNFBK039",
+        "FUNFBK040"
+      ],
+      "set_id": "FBK",
+      "group_id": "FBK",
+      "structural_signature": "FBK :: FBK :: de:ihre erklärung macht deutlich, dass [slot]. || en:your explanation makes it clear that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFEL001",
+      "alias_ids": [
+        "FUNFEL002",
+        "FUNFEL003",
+        "FUNFEL004",
+        "FUNFEL005",
+        "FUNFEL006",
+        "FUNFEL007",
+        "FUNFEL008",
+        "FUNFEL009",
+        "FUNFEL010"
+      ],
+      "set_id": "FEL",
+      "group_id": "FEL",
+      "structural_signature": "FEL :: FEL :: de:ich bin besorgt, dass [slot]. || en:i am concerned that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFEL011",
+      "alias_ids": [
+        "FUNFEL012",
+        "FUNFEL013",
+        "FUNFEL014",
+        "FUNFEL015",
+        "FUNFEL016",
+        "FUNFEL017",
+        "FUNFEL018",
+        "FUNFEL019",
+        "FUNFEL020"
+      ],
+      "set_id": "FEL",
+      "group_id": "FEL",
+      "structural_signature": "FEL :: FEL :: de:es ist beruhigend, dass [slot]. || en:it is reassuring that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFEL021",
+      "alias_ids": [
+        "FUNFEL022",
+        "FUNFEL023",
+        "FUNFEL024",
+        "FUNFEL025",
+        "FUNFEL026",
+        "FUNFEL027",
+        "FUNFEL028",
+        "FUNFEL029",
+        "FUNFEL030"
+      ],
+      "set_id": "FEL",
+      "group_id": "FEL",
+      "structural_signature": "FEL :: FEL :: de:ich bin nicht überzeugt, dass [slot]. || en:i am not convinced that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNFEL031",
+      "alias_ids": [
+        "FUNFEL032",
+        "FUNFEL033",
+        "FUNFEL034",
+        "FUNFEL035",
+        "FUNFEL036",
+        "FUNFEL037",
+        "FUNFEL038",
+        "FUNFEL039",
+        "FUNFEL040"
+      ],
+      "set_id": "FEL",
+      "group_id": "FEL",
+      "structural_signature": "FEL :: FEL :: de:es wäre frustrierend, wenn [slot]. || en:it would be frustrating if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNGOA001",
+      "alias_ids": [
+        "FUNGOA002",
+        "FUNGOA003",
+        "FUNGOA004",
+        "FUNGOA005",
+        "FUNGOA006",
+        "FUNGOA007",
+        "FUNGOA008",
+        "FUNGOA009",
+        "FUNGOA010"
+      ],
+      "set_id": "GOA",
+      "group_id": "GOA",
+      "structural_signature": "GOA :: GOA :: de:unser ziel ist es sicherzustellen, dass [slot]. || en:our aim is to ensure that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNGOA011",
+      "alias_ids": [
+        "FUNGOA012",
+        "FUNGOA013",
+        "FUNGOA014",
+        "FUNGOA015",
+        "FUNGOA016",
+        "FUNGOA017",
+        "FUNGOA018",
+        "FUNGOA019",
+        "FUNGOA020"
+      ],
+      "set_id": "GOA",
+      "group_id": "GOA",
+      "structural_signature": "GOA :: GOA :: de:der zweck besteht darin herauszufinden, ob [slot]. || en:the purpose is to find out whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNGOA021",
+      "alias_ids": [
+        "FUNGOA022",
+        "FUNGOA023",
+        "FUNGOA024",
+        "FUNGOA025",
+        "FUNGOA026",
+        "FUNGOA027",
+        "FUNGOA028",
+        "FUNGOA029",
+        "FUNGOA030"
+      ],
+      "set_id": "GOA",
+      "group_id": "GOA",
+      "structural_signature": "GOA :: GOA :: de:um fortschritte zu machen, müssen wir wissen, warum [slot]. || en:to make progress, we need to know why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNGOA031",
+      "alias_ids": [
+        "FUNGOA032",
+        "FUNGOA033",
+        "FUNGOA034",
+        "FUNGOA035",
+        "FUNGOA036",
+        "FUNGOA037",
+        "FUNGOA038",
+        "FUNGOA039",
+        "FUNGOA040"
+      ],
+      "set_id": "GOA",
+      "group_id": "GOA",
+      "structural_signature": "GOA :: GOA :: de:erfolg würde bedeuten, dass [slot]. || en:success would mean that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNOFR001",
+      "alias_ids": [
+        "FUNOFR002",
+        "FUNOFR003",
+        "FUNOFR004",
+        "FUNOFR005",
+        "FUNOFR006",
+        "FUNOFR007",
+        "FUNOFR008",
+        "FUNOFR009",
+        "FUNOFR010"
+      ],
+      "set_id": "OFR",
+      "group_id": "OFR",
+      "structural_signature": "OFR :: OFR :: de:ich kann die verantwortung übernehmen, wenn [slot]. || en:i can take responsibility if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNOFR011",
+      "alias_ids": [
+        "FUNOFR012",
+        "FUNOFR013",
+        "FUNOFR014",
+        "FUNOFR015",
+        "FUNOFR016",
+        "FUNOFR017",
+        "FUNOFR018",
+        "FUNOFR019",
+        "FUNOFR020"
+      ],
+      "set_id": "OFR",
+      "group_id": "OFR",
+      "structural_signature": "OFR :: OFR :: de:wir könnten helfen, indem wir prüfen, ob [slot]. || en:we could help by checking whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNOFR021",
+      "alias_ids": [
+        "FUNOFR022",
+        "FUNOFR023",
+        "FUNOFR024",
+        "FUNOFR025",
+        "FUNOFR026",
+        "FUNOFR027",
+        "FUNOFR028",
+        "FUNOFR029",
+        "FUNOFR030"
+      ],
+      "set_id": "OFR",
+      "group_id": "OFR",
+      "structural_signature": "OFR :: OFR :: de:ich würde gern erklären, warum [slot]. || en:i would be happy to explain why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNOFR031",
+      "alias_ids": [
+        "FUNOFR032",
+        "FUNOFR033",
+        "FUNOFR034",
+        "FUNOFR035",
+        "FUNOFR036",
+        "FUNOFR037",
+        "FUNOFR038",
+        "FUNOFR039",
+        "FUNOFR040"
+      ],
+      "set_id": "OFR",
+      "group_id": "OFR",
+      "structural_signature": "OFR :: OFR :: de:falls hilfreich, können wir uns auf die möglichkeit vorbereiten, dass [slot]. || en:if useful, we can prepare for the possibility that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNORG001",
+      "alias_ids": [
+        "FUNORG002",
+        "FUNORG003",
+        "FUNORG004",
+        "FUNORG005",
+        "FUNORG006",
+        "FUNORG007",
+        "FUNORG008",
+        "FUNORG009",
+        "FUNORG010"
+      ],
+      "set_id": "ORG",
+      "group_id": "ORG",
+      "structural_signature": "ORG :: ORG :: de:beginnen wir damit zu klären, ob [slot]. || en:let us begin by clarifying whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNORG011",
+      "alias_ids": [
+        "FUNORG012",
+        "FUNORG013",
+        "FUNORG014",
+        "FUNORG015",
+        "FUNORG016",
+        "FUNORG017",
+        "FUNORG018",
+        "FUNORG019",
+        "FUNORG020"
+      ],
+      "set_id": "ORG",
+      "group_id": "ORG",
+      "structural_signature": "ORG :: ORG :: de:bevor wir weitermachen, sollten wir verstehen, warum [slot]. || en:before moving on, we should understand why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNORG021",
+      "alias_ids": [
+        "FUNORG022",
+        "FUNORG023",
+        "FUNORG024",
+        "FUNORG025",
+        "FUNORG026",
+        "FUNORG027",
+        "FUNORG028",
+        "FUNORG029",
+        "FUNORG030"
+      ],
+      "set_id": "ORG",
+      "group_id": "ORG",
+      "structural_signature": "ORG :: ORG :: de:wir können auf die frage zurückkommen, wenn [slot]. || en:we can return to the issue if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNORG031",
+      "alias_ids": [
+        "FUNORG032",
+        "FUNORG033",
+        "FUNORG034",
+        "FUNORG035",
+        "FUNORG036",
+        "FUNORG037",
+        "FUNORG038",
+        "FUNORG039",
+        "FUNORG040"
+      ],
+      "set_id": "ORG",
+      "group_id": "ORG",
+      "structural_signature": "ORG :: ORG :: de:der nächste punkt ist zu entscheiden, ob [slot]. || en:the next item is to decide whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPFR001",
+      "alias_ids": [
+        "FUNPFR002",
+        "FUNPFR003",
+        "FUNPFR004",
+        "FUNPFR005",
+        "FUNPFR006",
+        "FUNPFR007",
+        "FUNPFR008",
+        "FUNPFR009",
+        "FUNPFR010"
+      ],
+      "set_id": "PFR",
+      "group_id": "PFR",
+      "structural_signature": "PFR :: PFR :: de:ich würde es vorziehen, wenn [slot]. || en:i would prefer it if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPFR011",
+      "alias_ids": [
+        "FUNPFR012",
+        "FUNPFR013",
+        "FUNPFR014",
+        "FUNPFR015",
+        "FUNPFR016",
+        "FUNPFR017",
+        "FUNPFR018",
+        "FUNPFR019",
+        "FUNPFR020"
+      ],
+      "set_id": "PFR",
+      "group_id": "PFR",
+      "structural_signature": "PFR :: PFR :: de:statt anzunehmen, dass [slot], würde ich die optionen vergleichen. || en:rather than assume that [slot], i would compare the options.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPFR021",
+      "alias_ids": [
+        "FUNPFR022",
+        "FUNPFR023",
+        "FUNPFR024",
+        "FUNPFR025",
+        "FUNPFR026",
+        "FUNPFR027",
+        "FUNPFR028",
+        "FUNPFR029",
+        "FUNPFR030"
+      ],
+      "set_id": "PFR",
+      "group_id": "PFR",
+      "structural_signature": "PFR :: PFR :: de:ich würde lieber warten, bis wir wissen, ob [slot]. || en:my preference would be to wait until we know whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPFR031",
+      "alias_ids": [
+        "FUNPFR032",
+        "FUNPFR033",
+        "FUNPFR034",
+        "FUNPFR035",
+        "FUNPFR036",
+        "FUNPFR037",
+        "FUNPFR038",
+        "FUNPFR039",
+        "FUNPFR040"
+      ],
+      "set_id": "PFR",
+      "group_id": "PFR",
+      "structural_signature": "PFR :: PFR :: de:da [slot], erscheint die einfachere option vorzugswürdig. || en:given that [slot], the simpler option seems preferable.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPLN001",
+      "alias_ids": [
+        "FUNPLN002",
+        "FUNPLN003",
+        "FUNPLN004",
+        "FUNPLN005",
+        "FUNPLN006",
+        "FUNPLN007",
+        "FUNPLN008",
+        "FUNPLN009",
+        "FUNPLN010"
+      ],
+      "set_id": "PLN",
+      "group_id": "PLN",
+      "structural_signature": "PLN :: PLN :: de:wir sollten die möglichkeit einplanen, dass [slot]. || en:we should plan for the possibility that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPLN011",
+      "alias_ids": [
+        "FUNPLN012",
+        "FUNPLN013",
+        "FUNPLN014",
+        "FUNPLN015",
+        "FUNPLN016",
+        "FUNPLN017",
+        "FUNPLN018",
+        "FUNPLN019",
+        "FUNPLN020"
+      ],
+      "set_id": "PLN",
+      "group_id": "PLN",
+      "structural_signature": "PLN :: PLN :: de:der nächste schritt ist zu bestätigen, ob [slot]. || en:the next step is to confirm whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPLN021",
+      "alias_ids": [
+        "FUNPLN022",
+        "FUNPLN023",
+        "FUNPLN024",
+        "FUNPLN025",
+        "FUNPLN026",
+        "FUNPLN027",
+        "FUNPLN028",
+        "FUNPLN029",
+        "FUNPLN030"
+      ],
+      "set_id": "PLN",
+      "group_id": "PLN",
+      "structural_signature": "PLN :: PLN :: de:bevor wir entscheiden, sollten wir klären, ob [slot]. || en:before we decide, we should establish whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPLN031",
+      "alias_ids": [
+        "FUNPLN032",
+        "FUNPLN033",
+        "FUNPLN034",
+        "FUNPLN035",
+        "FUNPLN036",
+        "FUNPLN037",
+        "FUNPLN038",
+        "FUNPLN039",
+        "FUNPLN040"
+      ],
+      "set_id": "PLN",
+      "group_id": "PLN",
+      "structural_signature": "PLN :: PLN :: de:sobald wir wissen, ob [slot], können wir einen termin festlegen. || en:once we know whether [slot], we can set a date.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRI001",
+      "alias_ids": [
+        "FUNPRI002",
+        "FUNPRI003",
+        "FUNPRI004",
+        "FUNPRI005",
+        "FUNPRI006",
+        "FUNPRI007",
+        "FUNPRI008",
+        "FUNPRI009",
+        "FUNPRI010"
+      ],
+      "set_id": "PRI",
+      "group_id": "PRI",
+      "structural_signature": "PRI :: PRI :: de:da [slot], sollte unsere priorität darin liegen, unsicherheit zu verringern. || en:given that [slot], our priority should be to reduce uncertainty.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRI011",
+      "alias_ids": [
+        "FUNPRI012",
+        "FUNPRI013",
+        "FUNPRI014",
+        "FUNPRI015",
+        "FUNPRI016",
+        "FUNPRI017",
+        "FUNPRI018",
+        "FUNPRI019",
+        "FUNPRI020"
+      ],
+      "set_id": "PRI",
+      "group_id": "PRI",
+      "structural_signature": "PRI :: PRI :: de:wir müssen entscheiden, ob [slot], bevor wir neue aufgaben hinzufügen. || en:we need to decide whether [slot] before we add new tasks.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRI021",
+      "alias_ids": [
+        "FUNPRI022",
+        "FUNPRI023",
+        "FUNPRI024",
+        "FUNPRI025",
+        "FUNPRI026",
+        "FUNPRI027",
+        "FUNPRI028",
+        "FUNPRI029",
+        "FUNPRI030"
+      ],
+      "set_id": "PRI",
+      "group_id": "PRI",
+      "structural_signature": "PRI :: PRI :: de:die dringendste frage ist, ob [slot]. || en:the most urgent question is whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRI031",
+      "alias_ids": [
+        "FUNPRI032",
+        "FUNPRI033",
+        "FUNPRI034",
+        "FUNPRI035",
+        "FUNPRI036",
+        "FUNPRI037",
+        "FUNPRI038",
+        "FUNPRI039",
+        "FUNPRI040"
+      ],
+      "set_id": "PRI",
+      "group_id": "PRI",
+      "structural_signature": "PRI :: PRI :: de:statt alles zu versuchen, sollten wir prüfen, ob [slot]. || en:rather than trying to do everything, we should check whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRM001",
+      "alias_ids": [
+        "FUNPRM002",
+        "FUNPRM003",
+        "FUNPRM004",
+        "FUNPRM005",
+        "FUNPRM006",
+        "FUNPRM007",
+        "FUNPRM008",
+        "FUNPRM009",
+        "FUNPRM010"
+      ],
+      "set_id": "PRM",
+      "group_id": "PRM",
+      "structural_signature": "PRM :: PRM :: de:sie können gern fortfahren, wenn [slot]. || en:you are welcome to proceed if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRM011",
+      "alias_ids": [
+        "FUNPRM012",
+        "FUNPRM013",
+        "FUNPRM014",
+        "FUNPRM015",
+        "FUNPRM016",
+        "FUNPRM017",
+        "FUNPRM018",
+        "FUNPRM019",
+        "FUNPRM020"
+      ],
+      "set_id": "PRM",
+      "group_id": "PRM",
+      "structural_signature": "PRM :: PRM :: de:wir sind nicht befugt fortzufahren, sofern nicht [slot]. || en:we are not authorised to continue unless [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRM021",
+      "alias_ids": [
+        "FUNPRM022",
+        "FUNPRM023",
+        "FUNPRM024",
+        "FUNPRM025",
+        "FUNPRM026",
+        "FUNPRM027",
+        "FUNPRM028",
+        "FUNPRM029",
+        "FUNPRM030"
+      ],
+      "set_id": "PRM",
+      "group_id": "PRM",
+      "structural_signature": "PRM :: PRM :: de:bevor wir annehmen, dass [slot], sollte eine genehmigung eingeholt werden. || en:permission should be sought before we assume that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRM031",
+      "alias_ids": [
+        "FUNPRM032",
+        "FUNPRM033",
+        "FUNPRM034",
+        "FUNPRM035",
+        "FUNPRM036",
+        "FUNPRM037",
+        "FUNPRM038",
+        "FUNPRM039",
+        "FUNPRM040"
+      ],
+      "set_id": "PRM",
+      "group_id": "PRM",
+      "structural_signature": "PRM :: PRM :: de:es ist vertretbar zu pausieren, wenn [slot]. || en:it is acceptable to pause if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRS001",
+      "alias_ids": [
+        "FUNPRS002",
+        "FUNPRS003",
+        "FUNPRS004",
+        "FUNPRS005",
+        "FUNPRS006",
+        "FUNPRS007",
+        "FUNPRS008",
+        "FUNPRS009",
+        "FUNPRS010"
+      ],
+      "set_id": "PRS",
+      "group_id": "PRS",
+      "structural_signature": "PRS :: PRS :: de:der stärkste grund zu handeln ist, dass [slot]. || en:the strongest reason to act is that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRS011",
+      "alias_ids": [
+        "FUNPRS012",
+        "FUNPRS013",
+        "FUNPRS014",
+        "FUNPRS015",
+        "FUNPRS016",
+        "FUNPRS017",
+        "FUNPRS018",
+        "FUNPRS019",
+        "FUNPRS020"
+      ],
+      "set_id": "PRS",
+      "group_id": "PRS",
+      "structural_signature": "PRS :: PRS :: de:wäre es nicht sinnvoll zu prüfen, ob [slot]? || en:wouldn't it make sense to check whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRS021",
+      "alias_ids": [
+        "FUNPRS022",
+        "FUNPRS023",
+        "FUNPRS024",
+        "FUNPRS025",
+        "FUNPRS026",
+        "FUNPRS027",
+        "FUNPRS028",
+        "FUNPRS029",
+        "FUNPRS030"
+      ],
+      "set_id": "PRS",
+      "group_id": "PRS",
+      "structural_signature": "PRS :: PRS :: de:indem wir zeigen, warum [slot], können wir unterstützung gewinnen. || en:by showing why [slot], we can build support.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNPRS031",
+      "alias_ids": [
+        "FUNPRS032",
+        "FUNPRS033",
+        "FUNPRS034",
+        "FUNPRS035",
+        "FUNPRS036",
+        "FUNPRS037",
+        "FUNPRS038",
+        "FUNPRS039",
+        "FUNPRS040"
+      ],
+      "set_id": "PRS",
+      "group_id": "PRS",
+      "structural_signature": "PRS :: PRS :: de:die vorteile würden die kosten überwiegen, wenn [slot]. || en:the benefits would outweigh the cost if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQACA001",
+      "alias_ids": [
+        "QSTQACA002",
+        "QSTQACA003",
+        "QSTQACA004",
+        "QSTQACA005",
+        "QSTQACA006",
+        "QSTQACA007",
+        "QSTQACA008",
+        "QSTQACA009",
+        "QSTQACA010"
+      ],
+      "set_id": "QACA",
+      "group_id": "QACA",
+      "structural_signature": "QACA :: QACA :: de:welche belege würden zeigen, dass [slot]? || en:what evidence would show that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQACA011",
+      "alias_ids": [
+        "QSTQACA012",
+        "QSTQACA013",
+        "QSTQACA014",
+        "QSTQACA015",
+        "QSTQACA016",
+        "QSTQACA017",
+        "QSTQACA018",
+        "QSTQACA019",
+        "QSTQACA020"
+      ],
+      "set_id": "QACA",
+      "group_id": "QACA",
+      "structural_signature": "QACA :: QACA :: de:wie könnten wir prüfen, ob [slot]? || en:how could we test whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQACA021",
+      "alias_ids": [
+        "QSTQACA022",
+        "QSTQACA023",
+        "QSTQACA024",
+        "QSTQACA025",
+        "QSTQACA026",
+        "QSTQACA027",
+        "QSTQACA028",
+        "QSTQACA029",
+        "QSTQACA030"
+      ],
+      "set_id": "QACA",
+      "group_id": "QACA",
+      "structural_signature": "QACA :: QACA :: de:welche frage würde helfen zu erklären, warum [slot]? || en:which question would help explain why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQACA031",
+      "alias_ids": [
+        "QSTQACA032",
+        "QSTQACA033",
+        "QSTQACA034",
+        "QSTQACA035",
+        "QSTQACA036",
+        "QSTQACA037",
+        "QSTQACA038",
+        "QSTQACA039",
+        "QSTQACA040"
+      ],
+      "set_id": "QACA",
+      "group_id": "QACA",
+      "structural_signature": "QACA :: QACA :: de:welche daten bräuchten wir, um zu entscheiden, ob [slot]? || en:what data would we need to decide if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCAU001",
+      "alias_ids": [
+        "QSTQCAU002",
+        "QSTQCAU003",
+        "QSTQCAU004",
+        "QSTQCAU005",
+        "QSTQCAU006",
+        "QSTQCAU007",
+        "QSTQCAU008",
+        "QSTQCAU009",
+        "QSTQCAU010"
+      ],
+      "set_id": "QCAU",
+      "group_id": "QCAU",
+      "structural_signature": "QCAU :: QCAU :: de:was erklärt, warum [slot]? || en:what explains why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCAU011",
+      "alias_ids": [
+        "QSTQCAU012",
+        "QSTQCAU013",
+        "QSTQCAU014",
+        "QSTQCAU015",
+        "QSTQCAU016",
+        "QSTQCAU017",
+        "QSTQCAU018",
+        "QSTQCAU019",
+        "QSTQCAU020"
+      ],
+      "set_id": "QCAU",
+      "group_id": "QCAU",
+      "structural_signature": "QCAU :: QCAU :: de:welcher faktor ist am wichtigsten, wenn [slot]? || en:which factor matters most if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCAU021",
+      "alias_ids": [
+        "QSTQCAU022",
+        "QSTQCAU023",
+        "QSTQCAU024",
+        "QSTQCAU025",
+        "QSTQCAU026",
+        "QSTQCAU027",
+        "QSTQCAU028",
+        "QSTQCAU029",
+        "QSTQCAU030"
+      ],
+      "set_id": "QCAU",
+      "group_id": "QCAU",
+      "structural_signature": "QCAU :: QCAU :: de:wie kam es dazu, dass [slot]? || en:how did it happen that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCAU031",
+      "alias_ids": [
+        "QSTQCAU032",
+        "QSTQCAU033",
+        "QSTQCAU034",
+        "QSTQCAU035",
+        "QSTQCAU036",
+        "QSTQCAU037",
+        "QSTQCAU038",
+        "QSTQCAU039",
+        "QSTQCAU040"
+      ],
+      "set_id": "QCAU",
+      "group_id": "QCAU",
+      "structural_signature": "QCAU :: QCAU :: de:welche folge ergibt sich daraus, dass [slot]? || en:what consequence follows from the fact that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCHO001",
+      "alias_ids": [
+        "QSTQCHO002",
+        "QSTQCHO003",
+        "QSTQCHO004",
+        "QSTQCHO005",
+        "QSTQCHO006",
+        "QSTQCHO007",
+        "QSTQCHO008",
+        "QSTQCHO009",
+        "QSTQCHO010"
+      ],
+      "set_id": "QCHO",
+      "group_id": "QCHO",
+      "structural_signature": "QCHO :: QCHO :: de:sollten wir jetzt entscheiden oder warten, bis wir wissen, ob [slot]? || en:should we decide now or wait until we know whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCHO011",
+      "alias_ids": [
+        "QSTQCHO012",
+        "QSTQCHO013",
+        "QSTQCHO014",
+        "QSTQCHO015",
+        "QSTQCHO016",
+        "QSTQCHO017",
+        "QSTQCHO018",
+        "QSTQCHO019",
+        "QSTQCHO020"
+      ],
+      "set_id": "QCHO",
+      "group_id": "QCHO",
+      "structural_signature": "QCHO :: QCHO :: de:würden sie lieber jetzt handeln oder prüfen, ob [slot]? || en:would you rather act now or check whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCHO021",
+      "alias_ids": [
+        "QSTQCHO022",
+        "QSTQCHO023",
+        "QSTQCHO024",
+        "QSTQCHO025",
+        "QSTQCHO026",
+        "QSTQCHO027",
+        "QSTQCHO028",
+        "QSTQCHO029",
+        "QSTQCHO030"
+      ],
+      "set_id": "QCHO",
+      "group_id": "QCHO",
+      "structural_signature": "QCHO :: QCHO :: de:ist es besser fortzufahren, wenn [slot], oder zu pausieren? || en:is the better option to continue if [slot] or to pause?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCHO031",
+      "alias_ids": [
+        "QSTQCHO032",
+        "QSTQCHO033",
+        "QSTQCHO034",
+        "QSTQCHO035",
+        "QSTQCHO036",
+        "QSTQCHO037",
+        "QSTQCHO038",
+        "QSTQCHO039",
+        "QSTQCHO040"
+      ],
+      "set_id": "QCHO",
+      "group_id": "QCHO",
+      "structural_signature": "QCHO :: QCHO :: de:brauchen wir mehr belege, oder reicht es, dass [slot]? || en:do we need more evidence, or is it enough that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCL001",
+      "alias_ids": [
+        "QSTQCL002",
+        "QSTQCL003",
+        "QSTQCL004",
+        "QSTQCL005",
+        "QSTQCL006",
+        "QSTQCL007",
+        "QSTQCL008",
+        "QSTQCL009",
+        "QSTQCL010"
+      ],
+      "set_id": "QCL",
+      "group_id": "QCL",
+      "structural_signature": "QCL :: QCL :: de:wenn sie sagen, dass [slot], was genau meinen sie? || en:when you say that [slot], what exactly do you mean?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCL011",
+      "alias_ids": [
+        "QSTQCL012",
+        "QSTQCL013",
+        "QSTQCL014",
+        "QSTQCL015",
+        "QSTQCL016",
+        "QSTQCL017",
+        "QSTQCL018",
+        "QSTQCL019",
+        "QSTQCL020"
+      ],
+      "set_id": "QCL",
+      "group_id": "QCL",
+      "structural_signature": "QCL :: QCL :: de:könnten sie klären, ob [slot]? || en:could you clarify whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCL021",
+      "alias_ids": [
+        "QSTQCL022",
+        "QSTQCL023",
+        "QSTQCL024",
+        "QSTQCL025",
+        "QSTQCL026",
+        "QSTQCL027",
+        "QSTQCL028",
+        "QSTQCL029",
+        "QSTQCL030"
+      ],
+      "set_id": "QCL",
+      "group_id": "QCL",
+      "structural_signature": "QCL :: QCL :: de:wie sollten wir verstehen, dass [slot]? || en:how should we understand the fact that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCL031",
+      "alias_ids": [
+        "QSTQCL032",
+        "QSTQCL033",
+        "QSTQCL034",
+        "QSTQCL035",
+        "QSTQCL036",
+        "QSTQCL037",
+        "QSTQCL038",
+        "QSTQCL039",
+        "QSTQCL040"
+      ],
+      "set_id": "QCL",
+      "group_id": "QCL",
+      "structural_signature": "QCL :: QCL :: de:welcher teil braucht eine klärung, wenn [slot]? || en:which part needs clarification if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCMP001",
+      "alias_ids": [
+        "QSTQCMP002",
+        "QSTQCMP003",
+        "QSTQCMP004",
+        "QSTQCMP005",
+        "QSTQCMP006",
+        "QSTQCMP007",
+        "QSTQCMP008",
+        "QSTQCMP009",
+        "QSTQCMP010"
+      ],
+      "set_id": "QCMP",
+      "group_id": "QCMP",
+      "structural_signature": "QCMP :: QCMP :: de:wäre es besser, wenn [slot]? || en:would it be better if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCMP011",
+      "alias_ids": [
+        "QSTQCMP012",
+        "QSTQCMP013",
+        "QSTQCMP014",
+        "QSTQCMP015",
+        "QSTQCMP016",
+        "QSTQCMP017",
+        "QSTQCMP018",
+        "QSTQCMP019",
+        "QSTQCMP020"
+      ],
+      "set_id": "QCMP",
+      "group_id": "QCMP",
+      "structural_signature": "QCMP :: QCMP :: de:welche option ist besser, wenn [slot]? || en:which option is stronger if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCMP021",
+      "alias_ids": [
+        "QSTQCMP022",
+        "QSTQCMP023",
+        "QSTQCMP024",
+        "QSTQCMP025",
+        "QSTQCMP026",
+        "QSTQCMP027",
+        "QSTQCMP028",
+        "QSTQCMP029",
+        "QSTQCMP030"
+      ],
+      "set_id": "QCMP",
+      "group_id": "QCMP",
+      "structural_signature": "QCMP :: QCMP :: de:wie fällt das ergebnis im vergleich aus, wenn [slot]? || en:how does the outcome compare if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCMP031",
+      "alias_ids": [
+        "QSTQCMP032",
+        "QSTQCMP033",
+        "QSTQCMP034",
+        "QSTQCMP035",
+        "QSTQCMP036",
+        "QSTQCMP037",
+        "QSTQCMP038",
+        "QSTQCMP039",
+        "QSTQCMP040"
+      ],
+      "set_id": "QCMP",
+      "group_id": "QCMP",
+      "structural_signature": "QCMP :: QCMP :: de:ist die alternative sicherer, wenn [slot]? || en:is the alternative safer if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCNF001",
+      "alias_ids": [
+        "QSTQCNF002",
+        "QSTQCNF003",
+        "QSTQCNF004",
+        "QSTQCNF005",
+        "QSTQCNF006",
+        "QSTQCNF007",
+        "QSTQCNF008",
+        "QSTQCNF009",
+        "QSTQCNF010"
+      ],
+      "set_id": "QCNF",
+      "group_id": "QCNF",
+      "structural_signature": "QCNF :: QCNF :: de:können sie bestätigen, dass [slot]? || en:can you confirm that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCNF011",
+      "alias_ids": [
+        "QSTQCNF012",
+        "QSTQCNF013",
+        "QSTQCNF014",
+        "QSTQCNF015",
+        "QSTQCNF016",
+        "QSTQCNF017",
+        "QSTQCNF018",
+        "QSTQCNF019",
+        "QSTQCNF020"
+      ],
+      "set_id": "QCNF",
+      "group_id": "QCNF",
+      "structural_signature": "QCNF :: QCNF :: de:sind wir sicher, dass [slot]? || en:are we certain that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCNF021",
+      "alias_ids": [
+        "QSTQCNF022",
+        "QSTQCNF023",
+        "QSTQCNF024",
+        "QSTQCNF025",
+        "QSTQCNF026",
+        "QSTQCNF027",
+        "QSTQCNF028",
+        "QSTQCNF029",
+        "QSTQCNF030"
+      ],
+      "set_id": "QCNF",
+      "group_id": "QCNF",
+      "structural_signature": "QCNF :: QCNF :: de:würden sie prüfen, ob [slot]? || en:would you verify whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQCNF031",
+      "alias_ids": [
+        "QSTQCNF032",
+        "QSTQCNF033",
+        "QSTQCNF034",
+        "QSTQCNF035",
+        "QSTQCNF036",
+        "QSTQCNF037",
+        "QSTQCNF038",
+        "QSTQCNF039",
+        "QSTQCNF040"
+      ],
+      "set_id": "QCNF",
+      "group_id": "QCNF",
+      "structural_signature": "QCNF :: QCNF :: de:gibt es zweifel daran, dass [slot]? || en:is there any doubt that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDEC001",
+      "alias_ids": [
+        "QSTQDEC002",
+        "QSTQDEC003",
+        "QSTQDEC004",
+        "QSTQDEC005",
+        "QSTQDEC006",
+        "QSTQDEC007",
+        "QSTQDEC008",
+        "QSTQDEC009",
+        "QSTQDEC010"
+      ],
+      "set_id": "QDEC",
+      "group_id": "QDEC",
+      "structural_signature": "QDEC :: QDEC :: de:welche entscheidung wäre angemessen, wenn [slot]? || en:what decision would be appropriate if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDEC011",
+      "alias_ids": [
+        "QSTQDEC012",
+        "QSTQDEC013",
+        "QSTQDEC014",
+        "QSTQDEC015",
+        "QSTQDEC016",
+        "QSTQDEC017",
+        "QSTQDEC018",
+        "QSTQDEC019",
+        "QSTQDEC020"
+      ],
+      "set_id": "QDEC",
+      "group_id": "QDEC",
+      "structural_signature": "QDEC :: QDEC :: de:welche option sollten wir wählen, wenn [slot]? || en:which option should we choose if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDEC021",
+      "alias_ids": [
+        "QSTQDEC022",
+        "QSTQDEC023",
+        "QSTQDEC024",
+        "QSTQDEC025",
+        "QSTQDEC026",
+        "QSTQDEC027",
+        "QSTQDEC028",
+        "QSTQDEC029",
+        "QSTQDEC030"
+      ],
+      "set_id": "QDEC",
+      "group_id": "QDEC",
+      "structural_signature": "QDEC :: QDEC :: de:wie sollten wir vorgehen, wenn [slot]? || en:how should we proceed if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDEC031",
+      "alias_ids": [
+        "QSTQDEC032",
+        "QSTQDEC033",
+        "QSTQDEC034",
+        "QSTQDEC035",
+        "QSTQDEC036",
+        "QSTQDEC037",
+        "QSTQDEC038",
+        "QSTQDEC039",
+        "QSTQDEC040"
+      ],
+      "set_id": "QDEC",
+      "group_id": "QDEC",
+      "structural_signature": "QDEC :: QDEC :: de:was würde es sinnvoll machen, zu handeln, wenn [slot]? || en:what would make it reasonable to act if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDIS001",
+      "alias_ids": [
+        "QSTQDIS002",
+        "QSTQDIS003",
+        "QSTQDIS004",
+        "QSTQDIS005",
+        "QSTQDIS006",
+        "QSTQDIS007",
+        "QSTQDIS008",
+        "QSTQDIS009",
+        "QSTQDIS010"
+      ],
+      "set_id": "QDIS",
+      "group_id": "QDIS",
+      "structural_signature": "QDIS :: QDIS :: de:bevor wir fortfahren, können wir klären, ob [slot]? || en:before we continue, can we clarify whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDIS011",
+      "alias_ids": [
+        "QSTQDIS012",
+        "QSTQDIS013",
+        "QSTQDIS014",
+        "QSTQDIS015",
+        "QSTQDIS016",
+        "QSTQDIS017",
+        "QSTQDIS018",
+        "QSTQDIS019",
+        "QSTQDIS020"
+      ],
+      "set_id": "QDIS",
+      "group_id": "QDIS",
+      "structural_signature": "QDIS :: QDIS :: de:können wir darauf zurückkommen, warum [slot]? || en:could we return to why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDIS021",
+      "alias_ids": [
+        "QSTQDIS022",
+        "QSTQDIS023",
+        "QSTQDIS024",
+        "QSTQDIS025",
+        "QSTQDIS026",
+        "QSTQDIS027",
+        "QSTQDIS028",
+        "QSTQDIS029",
+        "QSTQDIS030"
+      ],
+      "set_id": "QDIS",
+      "group_id": "QDIS",
+      "structural_signature": "QDIS :: QDIS :: de:welche frage sollten wir als nächstes stellen, wenn [slot]? || en:what question should we ask next if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQDIS031",
+      "alias_ids": [
+        "QSTQDIS032",
+        "QSTQDIS033",
+        "QSTQDIS034",
+        "QSTQDIS035",
+        "QSTQDIS036",
+        "QSTQDIS037",
+        "QSTQDIS038",
+        "QSTQDIS039",
+        "QSTQDIS040"
+      ],
+      "set_id": "QDIS",
+      "group_id": "QDIS",
+      "structural_signature": "QDIS :: QDIS :: de:gibt es noch etwas, das wir wissen müssen, wenn [slot]? || en:is there anything else we need to know if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFOL001",
+      "alias_ids": [
+        "QSTQFOL002",
+        "QSTQFOL003",
+        "QSTQFOL004",
+        "QSTQFOL005",
+        "QSTQFOL006",
+        "QSTQFOL007",
+        "QSTQFOL008",
+        "QSTQFOL009",
+        "QSTQFOL010"
+      ],
+      "set_id": "QFOL",
+      "group_id": "QFOL",
+      "structural_signature": "QFOL :: QFOL :: de:was folgt daraus, wenn [slot]? || en:what follows if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFOL011",
+      "alias_ids": [
+        "QSTQFOL012",
+        "QSTQFOL013",
+        "QSTQFOL014",
+        "QSTQFOL015",
+        "QSTQFOL016",
+        "QSTQFOL017",
+        "QSTQFOL018",
+        "QSTQFOL019",
+        "QSTQFOL020"
+      ],
+      "set_id": "QFOL",
+      "group_id": "QFOL",
+      "structural_signature": "QFOL :: QFOL :: de:wie wirkt es sich auf den plan aus, wenn [slot]? || en:how does it affect the plan if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFOL021",
+      "alias_ids": [
+        "QSTQFOL022",
+        "QSTQFOL023",
+        "QSTQFOL024",
+        "QSTQFOL025",
+        "QSTQFOL026",
+        "QSTQFOL027",
+        "QSTQFOL028",
+        "QSTQFOL029",
+        "QSTQFOL030"
+      ],
+      "set_id": "QFOL",
+      "group_id": "QFOL",
+      "structural_signature": "QFOL :: QFOL :: de:was sollten wir außerdem berücksichtigen, wenn [slot]? || en:what else should we consider if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFOL031",
+      "alias_ids": [
+        "QSTQFOL032",
+        "QSTQFOL033",
+        "QSTQFOL034",
+        "QSTQFOL035",
+        "QSTQFOL036",
+        "QSTQFOL037",
+        "QSTQFOL038",
+        "QSTQFOL039",
+        "QSTQFOL040"
+      ],
+      "set_id": "QFOL",
+      "group_id": "QFOL",
+      "structural_signature": "QFOL :: QFOL :: de:warum ist das wichtig, wenn [slot]? || en:why does that matter if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFRM001",
+      "alias_ids": [
+        "QSTQFRM002",
+        "QSTQFRM003",
+        "QSTQFRM004",
+        "QSTQFRM005",
+        "QSTQFRM006",
+        "QSTQFRM007",
+        "QSTQFRM008",
+        "QSTQFRM009",
+        "QSTQFRM010"
+      ],
+      "set_id": "QFRM",
+      "group_id": "QFRM",
+      "structural_signature": "QFRM :: QFRM :: de:warum haben wir nicht bemerkt, dass [slot]? || en:why did we not notice that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFRM011",
+      "alias_ids": [
+        "QSTQFRM012",
+        "QSTQFRM013",
+        "QSTQFRM014",
+        "QSTQFRM015",
+        "QSTQFRM016",
+        "QSTQFRM017",
+        "QSTQFRM018",
+        "QSTQFRM019",
+        "QSTQFRM020"
+      ],
+      "set_id": "QFRM",
+      "group_id": "QFRM",
+      "structural_signature": "QFRM :: QFRM :: de:haben wir berücksichtigt, ob [slot]? || en:have we considered whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFRM021",
+      "alias_ids": [
+        "QSTQFRM022",
+        "QSTQFRM023",
+        "QSTQFRM024",
+        "QSTQFRM025",
+        "QSTQFRM026",
+        "QSTQFRM027",
+        "QSTQFRM028",
+        "QSTQFRM029",
+        "QSTQFRM030"
+      ],
+      "set_id": "QFRM",
+      "group_id": "QFRM",
+      "structural_signature": "QFRM :: QFRM :: de:bedeutet das, dass [slot]? || en:does it mean that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQFRM031",
+      "alias_ids": [
+        "QSTQFRM032",
+        "QSTQFRM033",
+        "QSTQFRM034",
+        "QSTQFRM035",
+        "QSTQFRM036",
+        "QSTQFRM037",
+        "QSTQFRM038",
+        "QSTQFRM039",
+        "QSTQFRM040"
+      ],
+      "set_id": "QFRM",
+      "group_id": "QFRM",
+      "structural_signature": "QFRM :: QFRM :: de:wird es eine rolle spielen, wenn [slot]? || en:will it matter if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQHYP001",
+      "alias_ids": [
+        "QSTQHYP002",
+        "QSTQHYP003",
+        "QSTQHYP004",
+        "QSTQHYP005",
+        "QSTQHYP006",
+        "QSTQHYP007",
+        "QSTQHYP008",
+        "QSTQHYP009",
+        "QSTQHYP010"
+      ],
+      "set_id": "QHYP",
+      "group_id": "QHYP",
+      "structural_signature": "QHYP :: QHYP :: de:was würde passieren, wenn [slot]? || en:what would happen if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQHYP011",
+      "alias_ids": [
+        "QSTQHYP012",
+        "QSTQHYP013",
+        "QSTQHYP014",
+        "QSTQHYP015",
+        "QSTQHYP016",
+        "QSTQHYP017",
+        "QSTQHYP018",
+        "QSTQHYP019",
+        "QSTQHYP020"
+      ],
+      "set_id": "QHYP",
+      "group_id": "QHYP",
+      "structural_signature": "QHYP :: QHYP :: de:wie würden wir reagieren, wenn [slot]? || en:how would we respond if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQHYP021",
+      "alias_ids": [
+        "QSTQHYP022",
+        "QSTQHYP023",
+        "QSTQHYP024",
+        "QSTQHYP025",
+        "QSTQHYP026",
+        "QSTQHYP027",
+        "QSTQHYP028",
+        "QSTQHYP029",
+        "QSTQHYP030"
+      ],
+      "set_id": "QHYP",
+      "group_id": "QHYP",
+      "structural_signature": "QHYP :: QHYP :: de:welche annahme würde nicht mehr gelten, wenn [slot]? || en:which assumption would fail if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQHYP031",
+      "alias_ids": [
+        "QSTQHYP032",
+        "QSTQHYP033",
+        "QSTQHYP034",
+        "QSTQHYP035",
+        "QSTQHYP036",
+        "QSTQHYP037",
+        "QSTQHYP038",
+        "QSTQHYP039",
+        "QSTQHYP040"
+      ],
+      "set_id": "QHYP",
+      "group_id": "QHYP",
+      "structural_signature": "QHYP :: QHYP :: de:was hätte sich ändern können, wenn [slot]? || en:what might have changed if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQIND001",
+      "alias_ids": [
+        "QSTQIND002",
+        "QSTQIND003",
+        "QSTQIND004",
+        "QSTQIND005",
+        "QSTQIND006",
+        "QSTQIND007",
+        "QSTQIND008",
+        "QSTQIND009",
+        "QSTQIND010"
+      ],
+      "set_id": "QIND",
+      "group_id": "QIND",
+      "structural_signature": "QIND :: QIND :: de:könnten sie mir sagen, ob [slot]? || en:could you tell me whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQIND011",
+      "alias_ids": [
+        "QSTQIND012",
+        "QSTQIND013",
+        "QSTQIND014",
+        "QSTQIND015",
+        "QSTQIND016",
+        "QSTQIND017",
+        "QSTQIND018",
+        "QSTQIND019",
+        "QSTQIND020"
+      ],
+      "set_id": "QIND",
+      "group_id": "QIND",
+      "structural_signature": "QIND :: QIND :: de:wissen sie zufällig, warum [slot]? || en:do you happen to know why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQIND021",
+      "alias_ids": [
+        "QSTQIND022",
+        "QSTQIND023",
+        "QSTQIND024",
+        "QSTQIND025",
+        "QSTQIND026",
+        "QSTQIND027",
+        "QSTQIND028",
+        "QSTQIND029",
+        "QSTQIND030"
+      ],
+      "set_id": "QIND",
+      "group_id": "QIND",
+      "structural_signature": "QIND :: QIND :: de:würden sie erklären, wie es möglich ist, dass [slot]? || en:would you mind explaining how it is possible that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQIND031",
+      "alias_ids": [
+        "QSTQIND032",
+        "QSTQIND033",
+        "QSTQIND034",
+        "QSTQIND035",
+        "QSTQIND036",
+        "QSTQIND037",
+        "QSTQIND038",
+        "QSTQIND039",
+        "QSTQIND040"
+      ],
+      "set_id": "QIND",
+      "group_id": "QIND",
+      "structural_signature": "QIND :: QIND :: de:darf ich fragen, ob [slot]? || en:may i ask if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNEG001",
+      "alias_ids": [
+        "QSTQNEG002",
+        "QSTQNEG003",
+        "QSTQNEG004",
+        "QSTQNEG005",
+        "QSTQNEG006",
+        "QSTQNEG007",
+        "QSTQNEG008",
+        "QSTQNEG009",
+        "QSTQNEG010"
+      ],
+      "set_id": "QNEG",
+      "group_id": "QNEG",
+      "structural_signature": "QNEG :: QNEG :: de:warum haben wir noch nicht geklärt, ob [slot]? || en:why haven't we clarified whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNEG011",
+      "alias_ids": [
+        "QSTQNEG012",
+        "QSTQNEG013",
+        "QSTQNEG014",
+        "QSTQNEG015",
+        "QSTQNEG016",
+        "QSTQNEG017",
+        "QSTQNEG018",
+        "QSTQNEG019",
+        "QSTQNEG020"
+      ],
+      "set_id": "QNEG",
+      "group_id": "QNEG",
+      "structural_signature": "QNEG :: QNEG :: de:ist es nicht wahrscheinlich, dass [slot]? || en:isn't it likely that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNEG021",
+      "alias_ids": [
+        "QSTQNEG022",
+        "QSTQNEG023",
+        "QSTQNEG024",
+        "QSTQNEG025",
+        "QSTQNEG026",
+        "QSTQNEG027",
+        "QSTQNEG028",
+        "QSTQNEG029",
+        "QSTQNEG030"
+      ],
+      "set_id": "QNEG",
+      "group_id": "QNEG",
+      "structural_signature": "QNEG :: QNEG :: de:konnte niemand bestätigen, dass [slot]? || en:could no one confirm that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNEG031",
+      "alias_ids": [
+        "QSTQNEG032",
+        "QSTQNEG033",
+        "QSTQNEG034",
+        "QSTQNEG035",
+        "QSTQNEG036",
+        "QSTQNEG037",
+        "QSTQNEG038",
+        "QSTQNEG039",
+        "QSTQNEG040"
+      ],
+      "set_id": "QNEG",
+      "group_id": "QNEG",
+      "structural_signature": "QNEG :: QNEG :: de:sollten wir nicht fragen, ob [slot]? || en:shouldn't we ask whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNGT001",
+      "alias_ids": [
+        "QSTQNGT002",
+        "QSTQNGT003",
+        "QSTQNGT004",
+        "QSTQNGT005",
+        "QSTQNGT006",
+        "QSTQNGT007",
+        "QSTQNGT008",
+        "QSTQNGT009",
+        "QSTQNGT010"
+      ],
+      "set_id": "QNGT",
+      "group_id": "QNGT",
+      "structural_signature": "QNGT :: QNGT :: de:wie könnten wir vorgehen, wenn [slot]? || en:how could we proceed if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNGT011",
+      "alias_ids": [
+        "QSTQNGT012",
+        "QSTQNGT013",
+        "QSTQNGT014",
+        "QSTQNGT015",
+        "QSTQNGT016",
+        "QSTQNGT017",
+        "QSTQNGT018",
+        "QSTQNGT019",
+        "QSTQNGT020"
+      ],
+      "set_id": "QNGT",
+      "group_id": "QNGT",
+      "structural_signature": "QNGT :: QNGT :: de:welche zugeständnisse wären möglich, wenn [slot]? || en:what concession would be possible if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNGT021",
+      "alias_ids": [
+        "QSTQNGT022",
+        "QSTQNGT023",
+        "QSTQNGT024",
+        "QSTQNGT025",
+        "QSTQNGT026",
+        "QSTQNGT027",
+        "QSTQNGT028",
+        "QSTQNGT029",
+        "QSTQNGT030"
+      ],
+      "set_id": "QNGT",
+      "group_id": "QNGT",
+      "structural_signature": "QNGT :: QNGT :: de:würde es helfen zu pausieren, wenn [slot]? || en:would it help to pause if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQNGT031",
+      "alias_ids": [
+        "QSTQNGT032",
+        "QSTQNGT033",
+        "QSTQNGT034",
+        "QSTQNGT035",
+        "QSTQNGT036",
+        "QSTQNGT037",
+        "QSTQNGT038",
+        "QSTQNGT039",
+        "QSTQNGT040"
+      ],
+      "set_id": "QNGT",
+      "group_id": "QNGT",
+      "structural_signature": "QNGT :: QNGT :: de:welcher kompromiss könnte funktionieren, wenn [slot]? || en:which compromise could work if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOBJ001",
+      "alias_ids": [
+        "QSTQOBJ002",
+        "QSTQOBJ003",
+        "QSTQOBJ004",
+        "QSTQOBJ005",
+        "QSTQOBJ006",
+        "QSTQOBJ007",
+        "QSTQOBJ008",
+        "QSTQOBJ009",
+        "QSTQOBJ010"
+      ],
+      "set_id": "QOBJ",
+      "group_id": "QOBJ",
+      "structural_signature": "QOBJ :: QOBJ :: de:was wissen wir darüber, dass [slot]? || en:what do we know about the fact that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOBJ011",
+      "alias_ids": [
+        "QSTQOBJ012",
+        "QSTQOBJ013",
+        "QSTQOBJ014",
+        "QSTQOBJ015",
+        "QSTQOBJ016",
+        "QSTQOBJ017",
+        "QSTQOBJ018",
+        "QSTQOBJ019",
+        "QSTQOBJ020"
+      ],
+      "set_id": "QOBJ",
+      "group_id": "QOBJ",
+      "structural_signature": "QOBJ :: QOBJ :: de:was sollten wir tun, wenn [slot]? || en:what should we do if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOBJ021",
+      "alias_ids": [
+        "QSTQOBJ022",
+        "QSTQOBJ023",
+        "QSTQOBJ024",
+        "QSTQOBJ025",
+        "QSTQOBJ026",
+        "QSTQOBJ027",
+        "QSTQOBJ028",
+        "QSTQOBJ029",
+        "QSTQOBJ030"
+      ],
+      "set_id": "QOBJ",
+      "group_id": "QOBJ",
+      "structural_signature": "QOBJ :: QOBJ :: de:welche informationen würden uns helfen zu beurteilen, ob [slot]? || en:what information would help us assess whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOBJ031",
+      "alias_ids": [
+        "QSTQOBJ032",
+        "QSTQOBJ033",
+        "QSTQOBJ034",
+        "QSTQOBJ035",
+        "QSTQOBJ036",
+        "QSTQOBJ037",
+        "QSTQOBJ038",
+        "QSTQOBJ039",
+        "QSTQOBJ040"
+      ],
+      "set_id": "QOBJ",
+      "group_id": "QOBJ",
+      "structural_signature": "QOBJ :: QOBJ :: de:was würde sich ändern, wenn [slot]? || en:what would change if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOP001",
+      "alias_ids": [
+        "QSTQOP002",
+        "QSTQOP003",
+        "QSTQOP004",
+        "QSTQOP005",
+        "QSTQOP006",
+        "QSTQOP007",
+        "QSTQOP008",
+        "QSTQOP009",
+        "QSTQOP010"
+      ],
+      "set_id": "QOP",
+      "group_id": "QOP",
+      "structural_signature": "QOP :: QOP :: de:glauben sie, dass es wahrscheinlich ist, dass [slot]? || en:do you think it is likely that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOP011",
+      "alias_ids": [
+        "QSTQOP012",
+        "QSTQOP013",
+        "QSTQOP014",
+        "QSTQOP015",
+        "QSTQOP016",
+        "QSTQOP017",
+        "QSTQOP018",
+        "QSTQOP019",
+        "QSTQOP020"
+      ],
+      "set_id": "QOP",
+      "group_id": "QOP",
+      "structural_signature": "QOP :: QOP :: de:was erklärt ihrer ansicht nach, warum [slot]? || en:in your view, what explains why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOP021",
+      "alias_ids": [
+        "QSTQOP022",
+        "QSTQOP023",
+        "QSTQOP024",
+        "QSTQOP025",
+        "QSTQOP026",
+        "QSTQOP027",
+        "QSTQOP028",
+        "QSTQOP029",
+        "QSTQOP030"
+      ],
+      "set_id": "QOP",
+      "group_id": "QOP",
+      "structural_signature": "QOP :: QOP :: de:wie würden sie das risiko einschätzen, wenn [slot]? || en:how would you assess the risk if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQOP031",
+      "alias_ids": [
+        "QSTQOP032",
+        "QSTQOP033",
+        "QSTQOP034",
+        "QSTQOP035",
+        "QSTQOP036",
+        "QSTQOP037",
+        "QSTQOP038",
+        "QSTQOP039",
+        "QSTQOP040"
+      ],
+      "set_id": "QOP",
+      "group_id": "QOP",
+      "structural_signature": "QOP :: QOP :: de:wie ist ihre einschätzung dazu, ob [slot]? || en:what is your view on whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPLC001",
+      "alias_ids": [
+        "QSTQPLC002",
+        "QSTQPLC003",
+        "QSTQPLC004",
+        "QSTQPLC005",
+        "QSTQPLC006",
+        "QSTQPLC007",
+        "QSTQPLC008",
+        "QSTQPLC009",
+        "QSTQPLC010"
+      ],
+      "set_id": "QPLC",
+      "group_id": "QPLC",
+      "structural_signature": "QPLC :: QPLC :: de:wo sollten wir besprechen, ob [slot]? || en:where should we discuss whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPLC011",
+      "alias_ids": [
+        "QSTQPLC012",
+        "QSTQPLC013",
+        "QSTQPLC014",
+        "QSTQPLC015",
+        "QSTQPLC016",
+        "QSTQPLC017",
+        "QSTQPLC018",
+        "QSTQPLC019",
+        "QSTQPLC020"
+      ],
+      "set_id": "QPLC",
+      "group_id": "QPLC",
+      "structural_signature": "QPLC :: QPLC :: de:welcher rahmen wäre am besten, wenn [slot]? || en:which setting would be best if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPLC021",
+      "alias_ids": [
+        "QSTQPLC022",
+        "QSTQPLC023",
+        "QSTQPLC024",
+        "QSTQPLC025",
+        "QSTQPLC026",
+        "QSTQPLC027",
+        "QSTQPLC028",
+        "QSTQPLC029",
+        "QSTQPLC030"
+      ],
+      "set_id": "QPLC",
+      "group_id": "QPLC",
+      "structural_signature": "QPLC :: QPLC :: de:wo können wir herausfinden, ob [slot]? || en:where can we find out whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPLC031",
+      "alias_ids": [
+        "QSTQPLC032",
+        "QSTQPLC033",
+        "QSTQPLC034",
+        "QSTQPLC035",
+        "QSTQPLC036",
+        "QSTQPLC037",
+        "QSTQPLC038",
+        "QSTQPLC039",
+        "QSTQPLC040"
+      ],
+      "set_id": "QPLC",
+      "group_id": "QPLC",
+      "structural_signature": "QPLC :: QPLC :: de:in welcher sitzung sollten wir klären, warum [slot]? || en:in which meeting should we clarify why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPOL001",
+      "alias_ids": [
+        "QSTQPOL002",
+        "QSTQPOL003",
+        "QSTQPOL004",
+        "QSTQPOL005",
+        "QSTQPOL006",
+        "QSTQPOL007",
+        "QSTQPOL008",
+        "QSTQPOL009",
+        "QSTQPOL010"
+      ],
+      "set_id": "QPOL",
+      "group_id": "QPOL",
+      "structural_signature": "QPOL :: QPOL :: de:könnten sie uns wissen lassen, ob [slot]? || en:could you let us know whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPOL011",
+      "alias_ids": [
+        "QSTQPOL012",
+        "QSTQPOL013",
+        "QSTQPOL014",
+        "QSTQPOL015",
+        "QSTQPOL016",
+        "QSTQPOL017",
+        "QSTQPOL018",
+        "QSTQPOL019",
+        "QSTQPOL020"
+      ],
+      "set_id": "QPOL",
+      "group_id": "QPOL",
+      "structural_signature": "QPOL :: QPOL :: de:wären sie in der lage zu erklären, warum [slot]? || en:would you be able to explain why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPOL021",
+      "alias_ids": [
+        "QSTQPOL022",
+        "QSTQPOL023",
+        "QSTQPOL024",
+        "QSTQPOL025",
+        "QSTQPOL026",
+        "QSTQPOL027",
+        "QSTQPOL028",
+        "QSTQPOL029",
+        "QSTQPOL030"
+      ],
+      "set_id": "QPOL",
+      "group_id": "QPOL",
+      "structural_signature": "QPOL :: QPOL :: de:würden sie uns bitte sagen, ob [slot]? || en:would you mind telling us whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPOL031",
+      "alias_ids": [
+        "QSTQPOL032",
+        "QSTQPOL033",
+        "QSTQPOL034",
+        "QSTQPOL035",
+        "QSTQPOL036",
+        "QSTQPOL037",
+        "QSTQPOL038",
+        "QSTQPOL039",
+        "QSTQPOL040"
+      ],
+      "set_id": "QPOL",
+      "group_id": "QPOL",
+      "structural_signature": "QPOL :: QPOL :: de:könnten wir sie bitten zu bestätigen, dass [slot]? || en:could we ask you to confirm that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRB001",
+      "alias_ids": [
+        "QSTQPRB002",
+        "QSTQPRB003",
+        "QSTQPRB004",
+        "QSTQPRB005",
+        "QSTQPRB006",
+        "QSTQPRB007",
+        "QSTQPRB008",
+        "QSTQPRB009",
+        "QSTQPRB010"
+      ],
+      "set_id": "QPRB",
+      "group_id": "QPRB",
+      "structural_signature": "QPRB :: QPRB :: de:wie wahrscheinlich ist es, dass [slot]? || en:how likely is it that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRB011",
+      "alias_ids": [
+        "QSTQPRB012",
+        "QSTQPRB013",
+        "QSTQPRB014",
+        "QSTQPRB015",
+        "QSTQPRB016",
+        "QSTQPRB017",
+        "QSTQPRB018",
+        "QSTQPRB019",
+        "QSTQPRB020"
+      ],
+      "set_id": "QPRB",
+      "group_id": "QPRB",
+      "structural_signature": "QPRB :: QPRB :: de:was macht es wahrscheinlich, dass [slot]? || en:what makes it probable that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRB021",
+      "alias_ids": [
+        "QSTQPRB022",
+        "QSTQPRB023",
+        "QSTQPRB024",
+        "QSTQPRB025",
+        "QSTQPRB026",
+        "QSTQPRB027",
+        "QSTQPRB028",
+        "QSTQPRB029",
+        "QSTQPRB030"
+      ],
+      "set_id": "QPRB",
+      "group_id": "QPRB",
+      "structural_signature": "QPRB :: QPRB :: de:könnte es dennoch möglich sein, dass [slot]? || en:could it still be possible that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRB031",
+      "alias_ids": [
+        "QSTQPRB032",
+        "QSTQPRB033",
+        "QSTQPRB034",
+        "QSTQPRB035",
+        "QSTQPRB036",
+        "QSTQPRB037",
+        "QSTQPRB038",
+        "QSTQPRB039",
+        "QSTQPRB040"
+      ],
+      "set_id": "QPRB",
+      "group_id": "QPRB",
+      "structural_signature": "QPRB :: QPRB :: de:welches zeichen würde darauf hindeuten, dass [slot]? || en:which sign would suggest that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRE001",
+      "alias_ids": [
+        "QSTQPRE002",
+        "QSTQPRE003",
+        "QSTQPRE004",
+        "QSTQPRE005",
+        "QSTQPRE006",
+        "QSTQPRE007",
+        "QSTQPRE008",
+        "QSTQPRE009",
+        "QSTQPRE010"
+      ],
+      "set_id": "QPRE",
+      "group_id": "QPRE",
+      "structural_signature": "QPRE :: QPRE :: de:mit wem sollten wir besprechen, ob [slot]? || en:with whom should we discuss whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRE011",
+      "alias_ids": [
+        "QSTQPRE012",
+        "QSTQPRE013",
+        "QSTQPRE014",
+        "QSTQPRE015",
+        "QSTQPRE016",
+        "QSTQPRE017",
+        "QSTQPRE018",
+        "QSTQPRE019",
+        "QSTQPRE020"
+      ],
+      "set_id": "QPRE",
+      "group_id": "QPRE",
+      "structural_signature": "QPRE :: QPRE :: de:aus welchem grund könnte es sein, dass [slot]? || en:for what reason might it be that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRE021",
+      "alias_ids": [
+        "QSTQPRE022",
+        "QSTQPRE023",
+        "QSTQPRE024",
+        "QSTQPRE025",
+        "QSTQPRE026",
+        "QSTQPRE027",
+        "QSTQPRE028",
+        "QSTQPRE029",
+        "QSTQPRE030"
+      ],
+      "set_id": "QPRE",
+      "group_id": "QPRE",
+      "structural_signature": "QPRE :: QPRE :: de:unter welchen bedingungen könnte es sein, dass [slot]? || en:under what conditions could it be that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRE031",
+      "alias_ids": [
+        "QSTQPRE032",
+        "QSTQPRE033",
+        "QSTQPRE034",
+        "QSTQPRE035",
+        "QSTQPRE036",
+        "QSTQPRE037",
+        "QSTQPRE038",
+        "QSTQPRE039",
+        "QSTQPRE040"
+      ],
+      "set_id": "QPRE",
+      "group_id": "QPRE",
+      "structural_signature": "QPRE :: QPRE :: de:in welchem maß würde es eine rolle spielen, wenn [slot]? || en:to what extent would it matter if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRS001",
+      "alias_ids": [
+        "QSTQPRS002",
+        "QSTQPRS003",
+        "QSTQPRS004",
+        "QSTQPRS005",
+        "QSTQPRS006",
+        "QSTQPRS007",
+        "QSTQPRS008",
+        "QSTQPRS009",
+        "QSTQPRS010"
+      ],
+      "set_id": "QPRS",
+      "group_id": "QPRS",
+      "structural_signature": "QPRS :: QPRS :: de:wer kann erklären, warum [slot]? || en:who can explain why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRS011",
+      "alias_ids": [
+        "QSTQPRS012",
+        "QSTQPRS013",
+        "QSTQPRS014",
+        "QSTQPRS015",
+        "QSTQPRS016",
+        "QSTQPRS017",
+        "QSTQPRS018",
+        "QSTQPRS019",
+        "QSTQPRS020"
+      ],
+      "set_id": "QPRS",
+      "group_id": "QPRS",
+      "structural_signature": "QPRS :: QPRS :: de:wen sollten wir fragen, ob [slot]? || en:whom should we ask whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRS021",
+      "alias_ids": [
+        "QSTQPRS022",
+        "QSTQPRS023",
+        "QSTQPRS024",
+        "QSTQPRS025",
+        "QSTQPRS026",
+        "QSTQPRS027",
+        "QSTQPRS028",
+        "QSTQPRS029",
+        "QSTQPRS030"
+      ],
+      "set_id": "QPRS",
+      "group_id": "QPRS",
+      "structural_signature": "QPRS :: QPRS :: de:wer würde entscheiden, wenn [slot]? || en:who would decide if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPRS031",
+      "alias_ids": [
+        "QSTQPRS032",
+        "QSTQPRS033",
+        "QSTQPRS034",
+        "QSTQPRS035",
+        "QSTQPRS036",
+        "QSTQPRS037",
+        "QSTQPRS038",
+        "QSTQPRS039",
+        "QSTQPRS040"
+      ],
+      "set_id": "QPRS",
+      "group_id": "QPRS",
+      "structural_signature": "QPRS :: QPRS :: de:wessen zustimmung bräuchten wir, wenn [slot]? || en:whose approval would we need if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPUR001",
+      "alias_ids": [
+        "QSTQPUR002",
+        "QSTQPUR003",
+        "QSTQPUR004",
+        "QSTQPUR005",
+        "QSTQPUR006",
+        "QSTQPUR007",
+        "QSTQPUR008",
+        "QSTQPUR009",
+        "QSTQPUR010"
+      ],
+      "set_id": "QPUR",
+      "group_id": "QPUR",
+      "structural_signature": "QPUR :: QPUR :: de:welchen zweck hätte es, wenn [slot]? || en:what would be the purpose if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPUR011",
+      "alias_ids": [
+        "QSTQPUR012",
+        "QSTQPUR013",
+        "QSTQPUR014",
+        "QSTQPUR015",
+        "QSTQPUR016",
+        "QSTQPUR017",
+        "QSTQPUR018",
+        "QSTQPUR019",
+        "QSTQPUR020"
+      ],
+      "set_id": "QPUR",
+      "group_id": "QPUR",
+      "structural_signature": "QPUR :: QPUR :: de:warum könnten wir wissen wollen, ob [slot]? || en:why might we want to know whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPUR021",
+      "alias_ids": [
+        "QSTQPUR022",
+        "QSTQPUR023",
+        "QSTQPUR024",
+        "QSTQPUR025",
+        "QSTQPUR026",
+        "QSTQPUR027",
+        "QSTQPUR028",
+        "QSTQPUR029",
+        "QSTQPUR030"
+      ],
+      "set_id": "QPUR",
+      "group_id": "QPUR",
+      "structural_signature": "QPUR :: QPUR :: de:wie würde sich das ziel ändern, wenn [slot]? || en:how would the goal change if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQPUR031",
+      "alias_ids": [
+        "QSTQPUR032",
+        "QSTQPUR033",
+        "QSTQPUR034",
+        "QSTQPUR035",
+        "QSTQPUR036",
+        "QSTQPUR037",
+        "QSTQPUR038",
+        "QSTQPUR039",
+        "QSTQPUR040"
+      ],
+      "set_id": "QPUR",
+      "group_id": "QPUR",
+      "structural_signature": "QPUR :: QPUR :: de:was wollen wir erreichen, wenn [slot]? || en:what are we trying to achieve if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQQNT001",
+      "alias_ids": [
+        "QSTQQNT002",
+        "QSTQQNT003",
+        "QSTQQNT004",
+        "QSTQQNT005",
+        "QSTQQNT006",
+        "QSTQQNT007",
+        "QSTQQNT008",
+        "QSTQQNT009",
+        "QSTQQNT010"
+      ],
+      "set_id": "QQNT",
+      "group_id": "QQNT",
+      "structural_signature": "QQNT :: QQNT :: de:wie viel würde sich ändern, wenn [slot]? || en:how much would change if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQQNT011",
+      "alias_ids": [
+        "QSTQQNT012",
+        "QSTQQNT013",
+        "QSTQQNT014",
+        "QSTQQNT015",
+        "QSTQQNT016",
+        "QSTQQNT017",
+        "QSTQQNT018",
+        "QSTQQNT019",
+        "QSTQQNT020"
+      ],
+      "set_id": "QQNT",
+      "group_id": "QQNT",
+      "structural_signature": "QQNT :: QQNT :: de:wie viele menschen wären betroffen, wenn [slot]? || en:how many people would be affected if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQQNT021",
+      "alias_ids": [
+        "QSTQQNT022",
+        "QSTQQNT023",
+        "QSTQQNT024",
+        "QSTQQNT025",
+        "QSTQQNT026",
+        "QSTQQNT027",
+        "QSTQQNT028",
+        "QSTQQNT029",
+        "QSTQQNT030"
+      ],
+      "set_id": "QQNT",
+      "group_id": "QQNT",
+      "structural_signature": "QQNT :: QQNT :: de:in welchem maß ist es wahrscheinlich, dass [slot]? || en:to what degree is it likely that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQQNT031",
+      "alias_ids": [
+        "QSTQQNT032",
+        "QSTQQNT033",
+        "QSTQQNT034",
+        "QSTQQNT035",
+        "QSTQQNT036",
+        "QSTQQNT037",
+        "QSTQQNT038",
+        "QSTQQNT039",
+        "QSTQQNT040"
+      ],
+      "set_id": "QQNT",
+      "group_id": "QQNT",
+      "structural_signature": "QQNT :: QQNT :: de:wie oft sollten wir prüfen, ob [slot]? || en:how often should we check whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQREP001",
+      "alias_ids": [
+        "QSTQREP002",
+        "QSTQREP003",
+        "QSTQREP004",
+        "QSTQREP005",
+        "QSTQREP006",
+        "QSTQREP007",
+        "QSTQREP008",
+        "QSTQREP009",
+        "QSTQREP010"
+      ],
+      "set_id": "QREP",
+      "group_id": "QREP",
+      "structural_signature": "QREP :: QREP :: de:hat sie gefragt, ob [slot]? || en:did she ask whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQREP011",
+      "alias_ids": [
+        "QSTQREP012",
+        "QSTQREP013",
+        "QSTQREP014",
+        "QSTQREP015",
+        "QSTQREP016",
+        "QSTQREP017",
+        "QSTQREP018",
+        "QSTQREP019",
+        "QSTQREP020"
+      ],
+      "set_id": "QREP",
+      "group_id": "QREP",
+      "structural_signature": "QREP :: QREP :: de:wer wollte wissen, warum [slot]? || en:who wanted to know why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQREP021",
+      "alias_ids": [
+        "QSTQREP022",
+        "QSTQREP023",
+        "QSTQREP024",
+        "QSTQREP025",
+        "QSTQREP026",
+        "QSTQREP027",
+        "QSTQREP028",
+        "QSTQREP029",
+        "QSTQREP030"
+      ],
+      "set_id": "QREP",
+      "group_id": "QREP",
+      "structural_signature": "QREP :: QREP :: de:wie wurde die frage aufgeworfen, ob [slot]? || en:how was the question of whether [slot] raised?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQREP031",
+      "alias_ids": [
+        "QSTQREP032",
+        "QSTQREP033",
+        "QSTQREP034",
+        "QSTQREP035",
+        "QSTQREP036",
+        "QSTQREP037",
+        "QSTQREP038",
+        "QSTQREP039",
+        "QSTQREP040"
+      ],
+      "set_id": "QREP",
+      "group_id": "QREP",
+      "structural_signature": "QREP :: QREP :: de:was sollte laut bericht geschehen, wenn [slot]? || en:what should happen according to the report if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQSUB001",
+      "alias_ids": [
+        "QSTQSUB002",
+        "QSTQSUB003",
+        "QSTQSUB004",
+        "QSTQSUB005",
+        "QSTQSUB006",
+        "QSTQSUB007",
+        "QSTQSUB008",
+        "QSTQSUB009",
+        "QSTQSUB010"
+      ],
+      "set_id": "QSUB",
+      "group_id": "QSUB",
+      "structural_signature": "QSUB :: QSUB :: de:wer kann bestätigen, ob [slot]? || en:who can confirm whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQSUB011",
+      "alias_ids": [
+        "QSTQSUB012",
+        "QSTQSUB013",
+        "QSTQSUB014",
+        "QSTQSUB015",
+        "QSTQSUB016",
+        "QSTQSUB017",
+        "QSTQSUB018",
+        "QSTQSUB019",
+        "QSTQSUB020"
+      ],
+      "set_id": "QSUB",
+      "group_id": "QSUB",
+      "structural_signature": "QSUB :: QSUB :: de:wer weiß, warum [slot]? || en:who knows why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQSUB021",
+      "alias_ids": [
+        "QSTQSUB022",
+        "QSTQSUB023",
+        "QSTQSUB024",
+        "QSTQSUB025",
+        "QSTQSUB026",
+        "QSTQSUB027",
+        "QSTQSUB028",
+        "QSTQSUB029",
+        "QSTQSUB030"
+      ],
+      "set_id": "QSUB",
+      "group_id": "QSUB",
+      "structural_signature": "QSUB :: QSUB :: de:wer sollte entscheiden, wenn [slot]? || en:who should decide if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQSUB031",
+      "alias_ids": [
+        "QSTQSUB032",
+        "QSTQSUB033",
+        "QSTQSUB034",
+        "QSTQSUB035",
+        "QSTQSUB036",
+        "QSTQSUB037",
+        "QSTQSUB038",
+        "QSTQSUB039",
+        "QSTQSUB040"
+      ],
+      "set_id": "QSUB",
+      "group_id": "QSUB",
+      "structural_signature": "QSUB :: QSUB :: de:wer wäre betroffen, wenn [slot]? || en:who would be affected if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTAG001",
+      "alias_ids": [
+        "QSTQTAG002",
+        "QSTQTAG003",
+        "QSTQTAG004",
+        "QSTQTAG005",
+        "QSTQTAG006",
+        "QSTQTAG007",
+        "QSTQTAG008",
+        "QSTQTAG009",
+        "QSTQTAG010"
+      ],
+      "set_id": "QTAG",
+      "group_id": "QTAG",
+      "structural_signature": "QTAG :: QTAG :: de:stimmt es nicht, dass [slot]? || en:isn't it the case that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTAG011",
+      "alias_ids": [
+        "QSTQTAG012",
+        "QSTQTAG013",
+        "QSTQTAG014",
+        "QSTQTAG015",
+        "QSTQTAG016",
+        "QSTQTAG017",
+        "QSTQTAG018",
+        "QSTQTAG019",
+        "QSTQTAG020"
+      ],
+      "set_id": "QTAG",
+      "group_id": "QTAG",
+      "structural_signature": "QTAG :: QTAG :: de:es ist klar, dass [slot], oder? || en:it is clear that [slot], isn't it?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTAG021",
+      "alias_ids": [
+        "QSTQTAG022",
+        "QSTQTAG023",
+        "QSTQTAG024",
+        "QSTQTAG025",
+        "QSTQTAG026",
+        "QSTQTAG027",
+        "QSTQTAG028",
+        "QSTQTAG029",
+        "QSTQTAG030"
+      ],
+      "set_id": "QTAG",
+      "group_id": "QTAG",
+      "structural_signature": "QTAG :: QTAG :: de:würden sie zustimmen, dass [slot]? || en:would you agree that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTAG031",
+      "alias_ids": [
+        "QSTQTAG032",
+        "QSTQTAG033",
+        "QSTQTAG034",
+        "QSTQTAG035",
+        "QSTQTAG036",
+        "QSTQTAG037",
+        "QSTQTAG038",
+        "QSTQTAG039",
+        "QSTQTAG040"
+      ],
+      "set_id": "QTAG",
+      "group_id": "QTAG",
+      "structural_signature": "QTAG :: QTAG :: de:sie würden doch zustimmen, dass [slot], oder? || en:you would agree that [slot], wouldn't you?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTM001",
+      "alias_ids": [
+        "QSTQTM002",
+        "QSTQTM003",
+        "QSTQTM004",
+        "QSTQTM005",
+        "QSTQTM006",
+        "QSTQTM007",
+        "QSTQTM008",
+        "QSTQTM009",
+        "QSTQTM010"
+      ],
+      "set_id": "QTM",
+      "group_id": "QTM",
+      "structural_signature": "QTM :: QTM :: de:wann werden wir wissen, ob [slot]? || en:when will we know whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTM011",
+      "alias_ids": [
+        "QSTQTM012",
+        "QSTQTM013",
+        "QSTQTM014",
+        "QSTQTM015",
+        "QSTQTM016",
+        "QSTQTM017",
+        "QSTQTM018",
+        "QSTQTM019",
+        "QSTQTM020"
+      ],
+      "set_id": "QTM",
+      "group_id": "QTM",
+      "structural_signature": "QTM :: QTM :: de:wie lange wird es dauern, bis wir wissen, ob [slot]? || en:how long will it take before we know if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTM021",
+      "alias_ids": [
+        "QSTQTM022",
+        "QSTQTM023",
+        "QSTQTM024",
+        "QSTQTM025",
+        "QSTQTM026",
+        "QSTQTM027",
+        "QSTQTM028",
+        "QSTQTM029",
+        "QSTQTM030"
+      ],
+      "set_id": "QTM",
+      "group_id": "QTM",
+      "structural_signature": "QTM :: QTM :: de:zu welchem zeitpunkt sollten wir fragen, ob [slot]? || en:at what point should we ask whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQTM031",
+      "alias_ids": [
+        "QSTQTM032",
+        "QSTQTM033",
+        "QSTQTM034",
+        "QSTQTM035",
+        "QSTQTM036",
+        "QSTQTM037",
+        "QSTQTM038",
+        "QSTQTM039",
+        "QSTQTM040"
+      ],
+      "set_id": "QTM",
+      "group_id": "QTM",
+      "structural_signature": "QTM :: QTM :: de:bis wann müssen wir entscheiden, ob [slot]? || en:by when must we decide if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWH001",
+      "alias_ids": [
+        "QSTQWH002",
+        "QSTQWH003",
+        "QSTQWH004",
+        "QSTQWH005",
+        "QSTQWH006",
+        "QSTQWH007",
+        "QSTQWH008",
+        "QSTQWH009",
+        "QSTQWH010"
+      ],
+      "set_id": "QWH",
+      "group_id": "QWH",
+      "structural_signature": "QWH :: QWH :: de:warum ist es wichtig, dass [slot]? || en:why is it important that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWH011",
+      "alias_ids": [
+        "QSTQWH012",
+        "QSTQWH013",
+        "QSTQWH014",
+        "QSTQWH015",
+        "QSTQWH016",
+        "QSTQWH017",
+        "QSTQWH018",
+        "QSTQWH019",
+        "QSTQWH020"
+      ],
+      "set_id": "QWH",
+      "group_id": "QWH",
+      "structural_signature": "QWH :: QWH :: de:wie können wir feststellen, ob [slot]? || en:how can we tell whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWH021",
+      "alias_ids": [
+        "QSTQWH022",
+        "QSTQWH023",
+        "QSTQWH024",
+        "QSTQWH025",
+        "QSTQWH026",
+        "QSTQWH027",
+        "QSTQWH028",
+        "QSTQWH029",
+        "QSTQWH030"
+      ],
+      "set_id": "QWH",
+      "group_id": "QWH",
+      "structural_signature": "QWH :: QWH :: de:was deutet darauf hin, dass [slot]? || en:what suggests that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWH031",
+      "alias_ids": [
+        "QSTQWH032",
+        "QSTQWH033",
+        "QSTQWH034",
+        "QSTQWH035",
+        "QSTQWH036",
+        "QSTQWH037",
+        "QSTQWH038",
+        "QSTQWH039",
+        "QSTQWH040"
+      ],
+      "set_id": "QWH",
+      "group_id": "QWH",
+      "structural_signature": "QWH :: QWH :: de:welche folge hätte es, wenn [slot]? || en:which consequence would follow if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWRK001",
+      "alias_ids": [
+        "QSTQWRK002",
+        "QSTQWRK003",
+        "QSTQWRK004",
+        "QSTQWRK005",
+        "QSTQWRK006",
+        "QSTQWRK007",
+        "QSTQWRK008",
+        "QSTQWRK009",
+        "QSTQWRK010"
+      ],
+      "set_id": "QWRK",
+      "group_id": "QWRK",
+      "structural_signature": "QWRK :: QWRK :: de:könnten sie bis freitag bestätigen, ob [slot]? || en:could you confirm by friday whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWRK011",
+      "alias_ids": [
+        "QSTQWRK012",
+        "QSTQWRK013",
+        "QSTQWRK014",
+        "QSTQWRK015",
+        "QSTQWRK016",
+        "QSTQWRK017",
+        "QSTQWRK018",
+        "QSTQWRK019",
+        "QSTQWRK020"
+      ],
+      "set_id": "QWRK",
+      "group_id": "QWRK",
+      "structural_signature": "QWRK :: QWRK :: de:wen sollten wir kontaktieren, wenn [slot]? || en:who should we contact if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWRK021",
+      "alias_ids": [
+        "QSTQWRK022",
+        "QSTQWRK023",
+        "QSTQWRK024",
+        "QSTQWRK025",
+        "QSTQWRK026",
+        "QSTQWRK027",
+        "QSTQWRK028",
+        "QSTQWRK029",
+        "QSTQWRK030"
+      ],
+      "set_id": "QWRK",
+      "group_id": "QWRK",
+      "structural_signature": "QWRK :: QWRK :: de:wie sollte das team vorgehen, wenn [slot]? || en:how should the team proceed if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQWRK031",
+      "alias_ids": [
+        "QSTQWRK032",
+        "QSTQWRK033",
+        "QSTQWRK034",
+        "QSTQWRK035",
+        "QSTQWRK036",
+        "QSTQWRK037",
+        "QSTQWRK038",
+        "QSTQWRK039",
+        "QSTQWRK040"
+      ],
+      "set_id": "QWRK",
+      "group_id": "QWRK",
+      "structural_signature": "QWRK :: QWRK :: de:können wir uns darauf einigen, was zu tun ist, wenn [slot]? || en:can we agree on what to do if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQYN001",
+      "alias_ids": [
+        "QSTQYN002",
+        "QSTQYN003",
+        "QSTQYN004",
+        "QSTQYN005",
+        "QSTQYN006",
+        "QSTQYN007",
+        "QSTQYN008",
+        "QSTQYN009",
+        "QSTQYN010"
+      ],
+      "set_id": "QYN",
+      "group_id": "QYN",
+      "structural_signature": "QYN :: QYN :: de:wissen sie, ob [slot]? || en:do you know whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQYN011",
+      "alias_ids": [
+        "QSTQYN012",
+        "QSTQYN013",
+        "QSTQYN014",
+        "QSTQYN015",
+        "QSTQYN016",
+        "QSTQYN017",
+        "QSTQYN018",
+        "QSTQYN019",
+        "QSTQYN020"
+      ],
+      "set_id": "QYN",
+      "group_id": "QYN",
+      "structural_signature": "QYN :: QYN :: de:ist es möglich, dass [slot]? || en:is it possible that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQYN021",
+      "alias_ids": [
+        "QSTQYN022",
+        "QSTQYN023",
+        "QSTQYN024",
+        "QSTQYN025",
+        "QSTQYN026",
+        "QSTQYN027",
+        "QSTQYN028",
+        "QSTQYN029",
+        "QSTQYN030"
+      ],
+      "set_id": "QYN",
+      "group_id": "QYN",
+      "structural_signature": "QYN :: QYN :: de:können wir bestätigen, dass [slot]? || en:can we confirm that [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "QSTQYN031",
+      "alias_ids": [
+        "QSTQYN032",
+        "QSTQYN033",
+        "QSTQYN034",
+        "QSTQYN035",
+        "QSTQYN036",
+        "QSTQYN037",
+        "QSTQYN038",
+        "QSTQYN039",
+        "QSTQYN040"
+      ],
+      "set_id": "QYN",
+      "group_id": "QYN",
+      "structural_signature": "QYN :: QYN :: de:würde es etwas ändern, wenn [slot]? || en:would it matter if [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRQT001",
+      "alias_ids": [
+        "FUNRQT002",
+        "FUNRQT003",
+        "FUNRQT004",
+        "FUNRQT005",
+        "FUNRQT006",
+        "FUNRQT007",
+        "FUNRQT008",
+        "FUNRQT009",
+        "FUNRQT010"
+      ],
+      "set_id": "RQT",
+      "group_id": "RQT",
+      "structural_signature": "RQT :: RQT :: de:könnten sie bestätigen, ob [slot]? || en:could you confirm whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRQT011",
+      "alias_ids": [
+        "FUNRQT012",
+        "FUNRQT013",
+        "FUNRQT014",
+        "FUNRQT015",
+        "FUNRQT016",
+        "FUNRQT017",
+        "FUNRQT018",
+        "FUNRQT019",
+        "FUNRQT020"
+      ],
+      "set_id": "RQT",
+      "group_id": "RQT",
+      "structural_signature": "RQT :: RQT :: de:ich wäre ihnen dankbar, wenn sie prüfen könnten, ob [slot]. || en:i would appreciate it if you could check whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRQT021",
+      "alias_ids": [
+        "FUNRQT022",
+        "FUNRQT023",
+        "FUNRQT024",
+        "FUNRQT025",
+        "FUNRQT026",
+        "FUNRQT027",
+        "FUNRQT028",
+        "FUNRQT029",
+        "FUNRQT030"
+      ],
+      "set_id": "RQT",
+      "group_id": "RQT",
+      "structural_signature": "RQT :: RQT :: de:bitte lassen sie uns wissen, wenn [slot]. || en:please let us know if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRQT031",
+      "alias_ids": [
+        "FUNRQT032",
+        "FUNRQT033",
+        "FUNRQT034",
+        "FUNRQT035",
+        "FUNRQT036",
+        "FUNRQT037",
+        "FUNRQT038",
+        "FUNRQT039",
+        "FUNRQT040"
+      ],
+      "set_id": "RQT",
+      "group_id": "RQT",
+      "structural_signature": "RQT :: RQT :: de:wäre es möglich zu klären, warum [slot]? || en:would it be possible to clarify why [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRSK001",
+      "alias_ids": [
+        "FUNRSK002",
+        "FUNRSK003",
+        "FUNRSK004",
+        "FUNRSK005",
+        "FUNRSK006",
+        "FUNRSK007",
+        "FUNRSK008",
+        "FUNRSK009",
+        "FUNRSK010"
+      ],
+      "set_id": "RSK",
+      "group_id": "RSK",
+      "structural_signature": "RSK :: RSK :: de:es besteht das risiko, dass [slot]. || en:there is a risk that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRSK011",
+      "alias_ids": [
+        "FUNRSK012",
+        "FUNRSK013",
+        "FUNRSK014",
+        "FUNRSK015",
+        "FUNRSK016",
+        "FUNRSK017",
+        "FUNRSK018",
+        "FUNRSK019",
+        "FUNRSK020"
+      ],
+      "set_id": "RSK",
+      "group_id": "RSK",
+      "structural_signature": "RSK :: RSK :: de:um das risiko zu verringern, sollten wir prüfen, ob [slot]. || en:to reduce the risk, we should check whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRSK021",
+      "alias_ids": [
+        "FUNRSK022",
+        "FUNRSK023",
+        "FUNRSK024",
+        "FUNRSK025",
+        "FUNRSK026",
+        "FUNRSK027",
+        "FUNRSK028",
+        "FUNRSK029",
+        "FUNRSK030"
+      ],
+      "set_id": "RSK",
+      "group_id": "RSK",
+      "structural_signature": "RSK :: RSK :: de:wir sollten nicht annehmen, dass [slot]. || en:we should not assume that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNRSK031",
+      "alias_ids": [
+        "FUNRSK032",
+        "FUNRSK033",
+        "FUNRSK034",
+        "FUNRSK035",
+        "FUNRSK036",
+        "FUNRSK037",
+        "FUNRSK038",
+        "FUNRSK039",
+        "FUNRSK040"
+      ],
+      "set_id": "RSK",
+      "group_id": "RSK",
+      "structural_signature": "RSK :: RSK :: de:ein notfallplan wird benötigt, wenn [slot]. || en:a contingency plan is needed if [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOC001",
+      "alias_ids": [
+        "FUNSOC002",
+        "FUNSOC003",
+        "FUNSOC004",
+        "FUNSOC005",
+        "FUNSOC006",
+        "FUNSOC007",
+        "FUNSOC008",
+        "FUNSOC009",
+        "FUNSOC010"
+      ],
+      "set_id": "SOC",
+      "group_id": "SOC",
+      "structural_signature": "SOC :: SOC :: de:möchten sie besprechen, ob [slot]? || en:would you like to discuss whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOC011",
+      "alias_ids": [
+        "FUNSOC012",
+        "FUNSOC013",
+        "FUNSOC014",
+        "FUNSOC015",
+        "FUNSOC016",
+        "FUNSOC017",
+        "FUNSOC018",
+        "FUNSOC019",
+        "FUNSOC020"
+      ],
+      "set_id": "SOC",
+      "group_id": "SOC",
+      "structural_signature": "SOC :: SOC :: de:es wäre gut darüber zu sprechen, warum [slot]. || en:it would be good to talk about why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOC021",
+      "alias_ids": [
+        "FUNSOC022",
+        "FUNSOC023",
+        "FUNSOC024",
+        "FUNSOC025",
+        "FUNSOC026",
+        "FUNSOC027",
+        "FUNSOC028",
+        "FUNSOC029",
+        "FUNSOC030"
+      ],
+      "set_id": "SOC",
+      "group_id": "SOC",
+      "structural_signature": "SOC :: SOC :: de:danke, dass sie erklärt haben, dass [slot]. || en:thank you for explaining that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOC031",
+      "alias_ids": [
+        "FUNSOC032",
+        "FUNSOC033",
+        "FUNSOC034",
+        "FUNSOC035",
+        "FUNSOC036",
+        "FUNSOC037",
+        "FUNSOC038",
+        "FUNSOC039",
+        "FUNSOC040"
+      ],
+      "set_id": "SOC",
+      "group_id": "SOC",
+      "structural_signature": "SOC :: SOC :: de:ich freue mich, dass [slot]. || en:i am glad that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOL001",
+      "alias_ids": [
+        "FUNSOL002",
+        "FUNSOL003",
+        "FUNSOL004",
+        "FUNSOL005",
+        "FUNSOL006",
+        "FUNSOL007",
+        "FUNSOL008",
+        "FUNSOL009",
+        "FUNSOL010"
+      ],
+      "set_id": "SOL",
+      "group_id": "SOL",
+      "structural_signature": "SOL :: SOL :: de:die praktischste reaktion wäre zu prüfen, ob [slot]. || en:the most practical response would be to check whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOL011",
+      "alias_ids": [
+        "FUNSOL012",
+        "FUNSOL013",
+        "FUNSOL014",
+        "FUNSOL015",
+        "FUNSOL016",
+        "FUNSOL017",
+        "FUNSOL018",
+        "FUNSOL019",
+        "FUNSOL020"
+      ],
+      "set_id": "SOL",
+      "group_id": "SOL",
+      "structural_signature": "SOL :: SOL :: de:eine möglichkeit, dies anzugehen, ist zu klären, warum [slot]. || en:one way to address this is to establish why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOL021",
+      "alias_ids": [
+        "FUNSOL022",
+        "FUNSOL023",
+        "FUNSOL024",
+        "FUNSOL025",
+        "FUNSOL026",
+        "FUNSOL027",
+        "FUNSOL028",
+        "FUNSOL029",
+        "FUNSOL030"
+      ],
+      "set_id": "SOL",
+      "group_id": "SOL",
+      "structural_signature": "SOL :: SOL :: de:wenn [slot], können wir die auswirkungen verringern, indem wir früh handeln. || en:if [slot], we can reduce the impact by acting early.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSOL031",
+      "alias_ids": [
+        "FUNSOL032",
+        "FUNSOL033",
+        "FUNSOL034",
+        "FUNSOL035",
+        "FUNSOL036",
+        "FUNSOL037",
+        "FUNSOL038",
+        "FUNSOL039",
+        "FUNSOL040"
+      ],
+      "set_id": "SOL",
+      "group_id": "SOL",
+      "structural_signature": "SOL :: SOL :: de:die frage kann gelöst werden, indem wir entscheiden, ob [slot]. || en:the issue can be resolved by deciding whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSUM001",
+      "alias_ids": [
+        "FUNSUM002",
+        "FUNSUM003",
+        "FUNSUM004",
+        "FUNSUM005",
+        "FUNSUM006",
+        "FUNSUM007",
+        "FUNSUM008",
+        "FUNSUM009",
+        "FUNSUM010"
+      ],
+      "set_id": "SUM",
+      "group_id": "SUM",
+      "structural_signature": "SUM :: SUM :: de:zusammenfassend müssen wir noch klären, ob [slot]. || en:to sum up, we still need to establish whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSUM011",
+      "alias_ids": [
+        "FUNSUM012",
+        "FUNSUM013",
+        "FUNSUM014",
+        "FUNSUM015",
+        "FUNSUM016",
+        "FUNSUM017",
+        "FUNSUM018",
+        "FUNSUM019",
+        "FUNSUM020"
+      ],
+      "set_id": "SUM",
+      "group_id": "SUM",
+      "structural_signature": "SUM :: SUM :: de:insgesamt deuten die belege darauf hin, dass [slot]. || en:overall, the evidence suggests that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSUM021",
+      "alias_ids": [
+        "FUNSUM022",
+        "FUNSUM023",
+        "FUNSUM024",
+        "FUNSUM025",
+        "FUNSUM026",
+        "FUNSUM027",
+        "FUNSUM028",
+        "FUNSUM029",
+        "FUNSUM030"
+      ],
+      "set_id": "SUM",
+      "group_id": "SUM",
+      "structural_signature": "SUM :: SUM :: de:der hauptpunkt ist, dass [slot]. || en:the main point is that [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNSUM031",
+      "alias_ids": [
+        "FUNSUM032",
+        "FUNSUM033",
+        "FUNSUM034",
+        "FUNSUM035",
+        "FUNSUM036",
+        "FUNSUM037",
+        "FUNSUM038",
+        "FUNSUM039",
+        "FUNSUM040"
+      ],
+      "set_id": "SUM",
+      "group_id": "SUM",
+      "structural_signature": "SUM :: SUM :: de:zusammengenommen erklären diese punkte, warum [slot]. || en:taken together, these points explain why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNTCT001",
+      "alias_ids": [
+        "FUNTCT002",
+        "FUNTCT003",
+        "FUNTCT004",
+        "FUNTCT005",
+        "FUNTCT006",
+        "FUNTCT007",
+        "FUNTCT008",
+        "FUNTCT009",
+        "FUNTCT010"
+      ],
+      "set_id": "TCT",
+      "group_id": "TCT",
+      "structural_signature": "TCT :: TCT :: de:wären sie offen dafür zu prüfen, ob [slot]? || en:would you be open to checking whether [slot]?",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNTCT011",
+      "alias_ids": [
+        "FUNTCT012",
+        "FUNTCT013",
+        "FUNTCT014",
+        "FUNTCT015",
+        "FUNTCT016",
+        "FUNTCT017",
+        "FUNTCT018",
+        "FUNTCT019",
+        "FUNTCT020"
+      ],
+      "set_id": "TCT",
+      "group_id": "TCT",
+      "structural_signature": "TCT :: TCT :: de:ich hoffe, es macht ihnen nichts aus, wenn wir fragen, ob [slot]. || en:i hope you do not mind if we ask whether [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNTCT021",
+      "alias_ids": [
+        "FUNTCT022",
+        "FUNTCT023",
+        "FUNTCT024",
+        "FUNTCT025",
+        "FUNTCT026",
+        "FUNTCT027",
+        "FUNTCT028",
+        "FUNTCT029",
+        "FUNTCT030"
+      ],
+      "set_id": "TCT",
+      "group_id": "TCT",
+      "structural_signature": "TCT :: TCT :: de:vielleicht könnten wir klären, warum [slot]. || en:perhaps we could clarify why [slot].",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "FUNTCT031",
+      "alias_ids": [
+        "FUNTCT032",
+        "FUNTCT033",
+        "FUNTCT034",
+        "FUNTCT035",
+        "FUNTCT036",
+        "FUNTCT037",
+        "FUNTCT038",
+        "FUNTCT039",
+        "FUNTCT040"
+      ],
+      "set_id": "TCT",
+      "group_id": "TCT",
+      "structural_signature": "TCT :: TCT :: de:ich weiß zu schätzen, dass [slot], aber wir brauchen mehr details. || en:i appreciate that [slot], but we need more detail.",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ001",
+      "alias_ids": [
+        "GRMADJ002",
+        "GRMADJ003",
+        "GRMADJ004",
+        "GRMADJ005"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:ein transparenteres verfahren wäre leichter zu erklären [slot] || en:a more transparent process would be easier to explain [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ006",
+      "alias_ids": [
+        "GRMADJ007",
+        "GRMADJ008",
+        "GRMADJ009",
+        "GRMADJ010"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:die nützlichste option ist nicht immer die schnellste [slot] || en:the most useful option is not always the fastest one [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ011",
+      "alias_ids": [
+        "GRMADJ012",
+        "GRMADJ013",
+        "GRMADJ014",
+        "GRMADJ015"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:wir brauchen eine verlässliche methode für komplexe fälle [slot] || en:we need a reliable method for complex cases [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ016",
+      "alias_ids": [
+        "GRMADJ017",
+        "GRMADJ018",
+        "GRMADJ019",
+        "GRMADJ020"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:der überarbeitete plan enthält mehrere wichtige änderungen [slot] || en:the revised plan contains several important changes [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ021",
+      "alias_ids": [
+        "GRMADJ022",
+        "GRMADJ023",
+        "GRMADJ024",
+        "GRMADJ025"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:ihre erklärung war klarer als die ursprüngliche notiz [slot] || en:her explanation was clearer than the original note [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ026",
+      "alias_ids": [
+        "GRMADJ027",
+        "GRMADJ028",
+        "GRMADJ029",
+        "GRMADJ030"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:eine so kleine änderung kann erhebliche auswirkungen haben [slot] || en:such a small change can have significant effects [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ031",
+      "alias_ids": [
+        "GRMADJ032",
+        "GRMADJ033",
+        "GRMADJ034",
+        "GRMADJ035"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:sie wählten die am wenigsten riskante alternative [slot] || en:they chose the least risky alternative [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMADJ036",
+      "alias_ids": [
+        "GRMADJ037",
+        "GRMADJ038",
+        "GRMADJ039",
+        "GRMADJ040"
+      ],
+      "set_id": "ADJ",
+      "group_id": "ADJ",
+      "structural_signature": "ADJ :: ADJ :: de:die daten vermitteln ein vollständigeres bild der situation [slot] || en:the data provide a more complete picture of the situation [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS001",
+      "alias_ids": [
+        "GRMCAS002",
+        "GRMCAS003",
+        "GRMCAS004",
+        "GRMCAS005"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:sie gab der neuen kollegin eine ausführliche erklärung [slot] || en:she gave the new colleague a detailed explanation [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS006",
+      "alias_ids": [
+        "GRMCAS007",
+        "GRMCAS008",
+        "GRMCAS009",
+        "GRMCAS010"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:der ausschuss prüfte den vorschlag sorgfältig [slot] || en:the committee considered the proposal carefully [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS011",
+      "alias_ids": [
+        "GRMCAS012",
+        "GRMCAS013",
+        "GRMCAS014",
+        "GRMCAS015"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:wir sprachen mit der person, die für das archiv verantwortlich ist [slot] || en:we spoke with the person responsible for the archive [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS016",
+      "alias_ids": [
+        "GRMCAS017",
+        "GRMCAS018",
+        "GRMCAS019",
+        "GRMCAS020"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:der erfolg des projekts hängt von einer verlässlichen koordination ab [slot] || en:the success of the project depends on reliable coordination [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS021",
+      "alias_ids": [
+        "GRMCAS022",
+        "GRMCAS023",
+        "GRMCAS024",
+        "GRMCAS025"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:sie informierten die teilnehmenden über das überarbeitete verfahren [slot] || en:they informed the participants about the revised procedure [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS026",
+      "alias_ids": [
+        "GRMCAS027",
+        "GRMCAS028",
+        "GRMCAS029",
+        "GRMCAS030"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:die leitung dankte dem team für seine arbeit [slot] || en:the manager thanked the team for its work [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS031",
+      "alias_ids": [
+        "GRMCAS032",
+        "GRMCAS033",
+        "GRMCAS034",
+        "GRMCAS035"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:diese entscheidung betrifft alle beteiligten [slot] || en:this decision affects everyone involved [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMCAS036",
+      "alias_ids": [
+        "GRMCAS037",
+        "GRMCAS038",
+        "GRMCAS039",
+        "GRMCAS040"
+      ],
+      "set_id": "CAS",
+      "group_id": "CAS",
+      "structural_signature": "CAS :: CAS :: de:der vorschlag wurde mit unterstützung der berater entwickelt [slot] || en:the proposal was developed with the support of the advisers [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET001",
+      "alias_ids": [
+        "GRMDET002",
+        "GRMDET003",
+        "GRMDET004",
+        "GRMDET005"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:eine sorgfältige artikelwahl macht den bezug eindeutig [slot] || en:a careful choice of article makes the reference clear [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET006",
+      "alias_ids": [
+        "GRMDET007",
+        "GRMDET008",
+        "GRMDET009",
+        "GRMDET010"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:die informationen sind detailliert genug, um die schlussfolgerung zu stützen [slot] || en:the information is detailed enough to support the conclusion [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET011",
+      "alias_ids": [
+        "GRMDET012",
+        "GRMDET013",
+        "GRMDET014",
+        "GRMDET015"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:nur wenige der einwände betreffen die zentrale frage [slot] || en:only a few of the objections concern the central issue [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET016",
+      "alias_ids": [
+        "GRMDET017",
+        "GRMDET018",
+        "GRMDET019",
+        "GRMDET020"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:jede der alternativen hat einen praktischen vorteil [slot] || en:each of the alternatives has a practical advantage [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET021",
+      "alias_ids": [
+        "GRMDET022",
+        "GRMDET023",
+        "GRMDET024",
+        "GRMDET025"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:keiner der beiden vorschläge bietet eine vollständige lösung [slot] || en:neither proposal offers a complete solution [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET026",
+      "alias_ids": [
+        "GRMDET027",
+        "GRMDET028",
+        "GRMDET029",
+        "GRMDET030"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:ein großer teil des fortschritts hängt von der vorbereitung ab [slot] || en:much of the progress depends on preparation [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET031",
+      "alias_ids": [
+        "GRMDET032",
+        "GRMDET033",
+        "GRMDET034",
+        "GRMDET035"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:eine weitere erklärung verdient beachtung [slot] || en:another explanation deserves consideration [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMDET036",
+      "alias_ids": [
+        "GRMDET037",
+        "GRMDET038",
+        "GRMDET039",
+        "GRMDET040"
+      ],
+      "set_id": "DET",
+      "group_id": "DET",
+      "structural_signature": "DET :: DET :: de:derselbe grundsatz gilt für beide fälle [slot] || en:the same principle applies to both cases [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS001",
+      "alias_ids": [
+        "GRMFCS002",
+        "GRMFCS003",
+        "GRMFCS004",
+        "GRMFCS005"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:selten haben wir eine so deutliche verbesserung gesehen [slot] || en:rarely have we seen such a clear improvement [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS006",
+      "alias_ids": [
+        "GRMFCS007",
+        "GRMFCS008",
+        "GRMFCS009",
+        "GRMFCS010"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:erst nach der prüfung wurde das problem sichtbar [slot] || en:only after the review did the problem become visible [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS011",
+      "alias_ids": [
+        "GRMFCS012",
+        "GRMFCS013",
+        "GRMFCS014",
+        "GRMFCS015"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:was der vorschlag braucht, ist ein realistischer zeitplan [slot] || en:what the proposal needs is a realistic timetable [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS016",
+      "alias_ids": [
+        "GRMFCS017",
+        "GRMFCS018",
+        "GRMFCS019",
+        "GRMFCS020"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:es war der mangel an belegen, der die entscheidung veränderte [slot] || en:it was the lack of evidence that changed the decision [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS021",
+      "alias_ids": [
+        "GRMFCS022",
+        "GRMFCS023",
+        "GRMFCS024",
+        "GRMFCS025"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:das team erkannte nicht nur das risiko, sondern verringerte es auch [slot] || en:not only did the team identify the risk, but it also reduced it [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS026",
+      "alias_ids": [
+        "GRMFCS027",
+        "GRMFCS028",
+        "GRMFCS029",
+        "GRMFCS030"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:unter keinen umständen dürfen die daten weitergegeben werden [slot] || en:under no circumstances should the data be shared [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS031",
+      "alias_ids": [
+        "GRMFCS032",
+        "GRMFCS033",
+        "GRMFCS034",
+        "GRMFCS035"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:was ich betonen möchte, ist die notwendigkeit von geduld [slot] || en:the point i want to stress is the need for patience [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMFCS036",
+      "alias_ids": [
+        "GRMFCS037",
+        "GRMFCS038",
+        "GRMFCS039",
+        "GRMFCS040"
+      ],
+      "set_id": "FCS",
+      "group_id": "FCS",
+      "structural_signature": "FCS :: FCS :: de:der zeitpunkt war so wichtig, dass der start verschoben wurde [slot] || en:so important was the timing that the launch was delayed [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF001",
+      "alias_ids": [
+        "GRMINF002",
+        "GRMINF003",
+        "GRMINF004",
+        "GRMINF005"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:sie erklärte sich bereit, den entwurf zu überarbeiten [slot] || en:she agreed to revise the outline [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF006",
+      "alias_ids": [
+        "GRMINF007",
+        "GRMINF008",
+        "GRMINF009",
+        "GRMINF010"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:wir vermieden es, ein vorschnelles versprechen zu geben [slot] || en:we avoided making a premature promise [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF011",
+      "alias_ids": [
+        "GRMINF012",
+        "GRMINF013",
+        "GRMINF014",
+        "GRMINF015"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:nachdem der ausschuss die alternativen geprüft hatte, entschied er sich zu warten [slot] || en:having considered the alternatives, the committee chose to wait [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF016",
+      "alias_ids": [
+        "GRMINF017",
+        "GRMINF018",
+        "GRMINF019",
+        "GRMINF020"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:der bericht ist ohne weitere daten schwer zu interpretieren [slot] || en:the report is difficult to interpret without further data [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF021",
+      "alias_ids": [
+        "GRMINF022",
+        "GRMINF023",
+        "GRMINF024",
+        "GRMINF025"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:um die frage zu klären, setzte das team ein treffen an [slot] || en:to clarify the issue, the team scheduled a meeting [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF026",
+      "alias_ids": [
+        "GRMINF027",
+        "GRMINF028",
+        "GRMINF029",
+        "GRMINF030"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:von ihnen wurde erwartet, bis freitag zu antworten [slot] || en:they were expected to respond by friday [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF031",
+      "alias_ids": [
+        "GRMINF032",
+        "GRMINF033",
+        "GRMINF034",
+        "GRMINF035"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:statt die entscheidung zu verschieben, überarbeiteten wir den plan [slot] || en:instead of postponing the decision, we revised the plan [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMINF036",
+      "alias_ids": [
+        "GRMINF037",
+        "GRMINF038",
+        "GRMINF039",
+        "GRMINF040"
+      ],
+      "set_id": "INF",
+      "group_id": "INF",
+      "structural_signature": "INF :: INF :: de:die leitung ließ das team den neuen prozess testen [slot] || en:the manager let the team test the new process [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON001",
+      "alias_ids": [
+        "GRMKON002",
+        "GRMKON003",
+        "GRMKON004",
+        "GRMKON005"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:wenn die belege überzeugender wären, könnten wir heute entscheiden [slot] || en:if the evidence were stronger, we could decide today [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON006",
+      "alias_ids": [
+        "GRMKON007",
+        "GRMKON008",
+        "GRMKON009",
+        "GRMKON010"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:ich wünschte, das verfahren wäre weniger kompliziert [slot] || en:i wish the process were less complicated [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON011",
+      "alias_ids": [
+        "GRMKON012",
+        "GRMKON013",
+        "GRMKON014",
+        "GRMKON015"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:sie sagte, sie werde das material später prüfen [slot] || en:she said she would review the material later [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON016",
+      "alias_ids": [
+        "GRMKON017",
+        "GRMKON018",
+        "GRMKON019",
+        "GRMKON020"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:die leitung empfahl dem team, den zeitplan noch einmal zu prüfen [slot] || en:the chair recommended that the team reconsider the timetable [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON021",
+      "alias_ids": [
+        "GRMKON022",
+        "GRMKON023",
+        "GRMKON024",
+        "GRMKON025"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:es ist entscheidend, dass alle teilnehmenden informiert werden [slot] || en:it is essential that every participant be informed [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON026",
+      "alias_ids": [
+        "GRMKON027",
+        "GRMKON028",
+        "GRMKON029",
+        "GRMKON030"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:hätte das team früher gehandelt, hätte die verzögerung vielleicht vermieden werden können [slot] || en:had the team acted earlier, the delay might have been avoided [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON031",
+      "alias_ids": [
+        "GRMKON032",
+        "GRMKON033",
+        "GRMKON034",
+        "GRMKON035"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:er scheint die anweisung missverstanden zu haben [slot] || en:he seems to have misunderstood the instruction [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMKON036",
+      "alias_ids": [
+        "GRMKON037",
+        "GRMKON038",
+        "GRMKON039",
+        "GRMKON040"
+      ],
+      "set_id": "KON",
+      "group_id": "KON",
+      "structural_signature": "KON :: KON :: de:der bericht soll eine hilfreiche empfehlung enthalten [slot] || en:the report is said to contain a useful recommendation [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP001",
+      "alias_ids": [
+        "GRMPRP002",
+        "GRMPRP003",
+        "GRMPRP004",
+        "GRMPRP005"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:sie bestand darauf, die frage offen zu besprechen [slot] || en:she insisted on discussing the issue openly [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP006",
+      "alias_ids": [
+        "GRMPRP007",
+        "GRMPRP008",
+        "GRMPRP009",
+        "GRMPRP010"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:das ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten [slot] || en:the outcome depends on how carefully we prepare [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP011",
+      "alias_ids": [
+        "GRMPRP012",
+        "GRMPRP013",
+        "GRMPRP014",
+        "GRMPRP015"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:es gelang uns, eine einigung zu erzielen [slot] || en:we succeeded in reaching an agreement [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP016",
+      "alias_ids": [
+        "GRMPRP017",
+        "GRMPRP018",
+        "GRMPRP019",
+        "GRMPRP020"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:sie wandten sich dagegen, die bedingungen kurzfristig zu ändern [slot] || en:they objected to changing the terms at short notice [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP021",
+      "alias_ids": [
+        "GRMPRP022",
+        "GRMPRP023",
+        "GRMPRP024",
+        "GRMPRP025"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:der vorschlag unterscheidet sich in einem punkt von der früheren fassung [slot] || en:the proposal differs from the earlier version in one respect [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP026",
+      "alias_ids": [
+        "GRMPRP027",
+        "GRMPRP028",
+        "GRMPRP029",
+        "GRMPRP030"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:er ist dafür verantwortlich, dass die daten korrekt sind [slot] || en:he is responsible for ensuring that the data are accurate [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP031",
+      "alias_ids": [
+        "GRMPRP032",
+        "GRMPRP033",
+        "GRMPRP034",
+        "GRMPRP035"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:wir müssen uns auf das konzentrieren, was verbessert werden kann [slot] || en:we need to focus on what can be improved [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMPRP036",
+      "alias_ids": [
+        "GRMPRP037",
+        "GRMPRP038",
+        "GRMPRP039",
+        "GRMPRP040"
+      ],
+      "set_id": "PRP",
+      "group_id": "PRP",
+      "structural_signature": "PRP :: PRP :: de:die entscheidung führte zu einem transparenteren verfahren [slot] || en:the decision resulted in a more transparent process [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL001",
+      "alias_ids": [
+        "GRMREL002",
+        "GRMREL003",
+        "GRMREL004",
+        "GRMREL005"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:der bericht, der gestern überarbeitet wurde, benötigt nun eine genehmigung [slot] || en:the report, which was revised yesterday, now needs approval [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL006",
+      "alias_ids": [
+        "GRMREL007",
+        "GRMREL008",
+        "GRMREL009",
+        "GRMREL010"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:die personen, die am pilotprojekt arbeiten, brauchen klare orientierung [slot] || en:people working on the pilot need clear guidance [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL011",
+      "alias_ids": [
+        "GRMREL012",
+        "GRMREL013",
+        "GRMREL014",
+        "GRMREL015"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:die von den gutachtern geäußerten bedenken wurden berücksichtigt [slot] || en:the concerns raised by the reviewers were addressed [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL016",
+      "alias_ids": [
+        "GRMREL017",
+        "GRMREL018",
+        "GRMREL019",
+        "GRMREL020"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:die kollegin, deren vorschlag wir übernommen haben, wird die nächste phase leiten [slot] || en:the colleague whose proposal we adopted will lead the next phase [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL021",
+      "alias_ids": [
+        "GRMREL022",
+        "GRMREL023",
+        "GRMREL024",
+        "GRMREL025"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:dies ist der grundsatz, nach dem wir die optionen bewerten [slot] || en:this is the principle by which we assess the options [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL026",
+      "alias_ids": [
+        "GRMREL027",
+        "GRMREL028",
+        "GRMREL029",
+        "GRMREL030"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:das team fand eine lösung, die schnell umgesetzt werden konnte [slot] || en:the team found a solution that could be implemented quickly [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL031",
+      "alias_ids": [
+        "GRMREL032",
+        "GRMREL033",
+        "GRMREL034",
+        "GRMREL035"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:nachdem die partner über die änderung informiert worden waren, passten sie ihre pläne an [slot] || en:having been informed of the change, the partners adjusted their plans [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMREL036",
+      "alias_ids": [
+        "GRMREL037",
+        "GRMREL038",
+        "GRMREL039",
+        "GRMREL040"
+      ],
+      "set_id": "REL",
+      "group_id": "REL",
+      "structural_signature": "REL :: REL :: de:das dokument enthält einen abschnitt, der die hauptrisiken darlegt [slot] || en:the document contains a section outlining the main risks [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB001",
+      "alias_ids": [
+        "GRMSUB002",
+        "GRMSUB003",
+        "GRMSUB004",
+        "GRMSUB005"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:obwohl die belege begrenzt sind, ist der trend eindeutig [slot] || en:although the evidence is limited, the trend is consistent [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB006",
+      "alias_ids": [
+        "GRMSUB007",
+        "GRMSUB008",
+        "GRMSUB009",
+        "GRMSUB010"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:nachdem die prüfung abgeschlossen ist, können wir die ergebnisse veröffentlichen [slot] || en:once the review has finished, we can publish the results [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB011",
+      "alias_ids": [
+        "GRMSUB012",
+        "GRMSUB013",
+        "GRMSUB014",
+        "GRMSUB015"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:die frage ist, ob die änderung bestand haben wird [slot] || en:the question is whether the change will last [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB016",
+      "alias_ids": [
+        "GRMSUB017",
+        "GRMSUB018",
+        "GRMSUB019",
+        "GRMSUB020"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:entscheidend ist, dass alle den grund verstehen [slot] || en:what matters is that everyone understands the reason [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB021",
+      "alias_ids": [
+        "GRMSUB022",
+        "GRMSUB023",
+        "GRMSUB024",
+        "GRMSUB025"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:während die erste option zeit spart, verringert die zweite das risiko [slot] || en:whereas the first option saves time, the second reduces risk [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB026",
+      "alias_ids": [
+        "GRMSUB027",
+        "GRMSUB028",
+        "GRMSUB029",
+        "GRMSUB030"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:das team handelte, als ob der termin feststünde [slot] || en:the team acted as if the deadline were fixed [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB031",
+      "alias_ids": [
+        "GRMSUB032",
+        "GRMSUB033",
+        "GRMSUB034",
+        "GRMSUB035"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:vorausgesetzt, dass die daten sicher bleiben, kann das pilotprojekt fortgesetzt werden [slot] || en:provided that the data remain secure, the pilot may continue [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMSUB036",
+      "alias_ids": [
+        "GRMSUB037",
+        "GRMSUB038",
+        "GRMSUB039",
+        "GRMSUB040"
+      ],
+      "set_id": "SUB",
+      "group_id": "SUB",
+      "structural_signature": "SUB :: SUB :: de:das ergebnis hängt davon ab, wie die belege ausgelegt werden [slot] || en:the result depends on how the evidence is interpreted [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR001",
+      "alias_ids": [
+        "GRMWOR002",
+        "GRMWOR003",
+        "GRMWOR004",
+        "GRMWOR005"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:das team hat den überarbeiteten entwurf bereits an die partner geschickt [slot] || en:the team has already sent the revised draft to the partners [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR006",
+      "alias_ids": [
+        "GRMWOR007",
+        "GRMWOR008",
+        "GRMWOR009",
+        "GRMWOR010"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:weil die belege unvollständig waren, verschoben wir die entscheidung [slot] || en:because the evidence was incomplete, we postponed the decision [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR011",
+      "alias_ids": [
+        "GRMWOR012",
+        "GRMWOR013",
+        "GRMWOR014",
+        "GRMWOR015"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:sie sagte, dass der bericht zweimal geprüft worden sei [slot] || en:she said that the report had been checked twice [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR016",
+      "alias_ids": [
+        "GRMWOR017",
+        "GRMWOR018",
+        "GRMWOR019",
+        "GRMWOR020"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:wir werden den vorschlag morgen in der sitzung besprechen [slot] || en:we will discuss the proposal tomorrow in the meeting [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR021",
+      "alias_ids": [
+        "GRMWOR022",
+        "GRMWOR023",
+        "GRMWOR024",
+        "GRMWOR025"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:hätten wir das risiko gekannt, hätten wir früher gehandelt [slot] || en:had we known the risk, we would have acted earlier [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR026",
+      "alias_ids": [
+        "GRMWOR027",
+        "GRMWOR028",
+        "GRMWOR029",
+        "GRMWOR030"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:die frage ist, warum das verfahren so langsam geworden ist [slot] || en:the question is why the process has become so slow [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR031",
+      "alias_ids": [
+        "GRMWOR032",
+        "GRMWOR033",
+        "GRMWOR034",
+        "GRMWOR035"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:bevor die sitzung endet, wird die leitung die entscheidung zusammenfassen [slot] || en:before the meeting ends, the chair will summarise the decision [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    },
+    {
+      "canonical_id": "GRMWOR036",
+      "alias_ids": [
+        "GRMWOR037",
+        "GRMWOR038",
+        "GRMWOR039",
+        "GRMWOR040"
+      ],
+      "set_id": "WOR",
+      "group_id": "WOR",
+      "structural_signature": "WOR :: WOR :: de:das team möchte wissen, ob der plan noch funktionieren kann [slot] || en:the team wants to know whether the plan can still work [slot]",
+      "example_overlap": 1,
+      "reason": "same_reusable_frame_contextual_realization"
+    }
+  ]
+}

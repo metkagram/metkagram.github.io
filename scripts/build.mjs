@@ -37,6 +37,7 @@ import { corpusLanguages } from "../src/release.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 import { legacyPatternPath, legacyStudySetPath, patternPath, patternUrl, studySetPath } from "../src/seo-slugs.mjs";
 import { ANNOTATION_SCHEMA_VERSION, cleanMarkedText, validateAnnotation } from "../src/annotation-schema.mjs";
+import { canonicalPracticePatterns, loadPatternAliases, patternAliasEntries } from "../src/pattern-aliases.mjs";
 import { migrateAnnotations } from "./annotations.mjs";
 
 const ROOT = process.cwd();
@@ -247,18 +248,22 @@ function build() {
   fs.mkdirSync(DIST, { recursive: true });
   copyPublic();
   const content = loadContent();
+  const patternAliases = loadPatternAliases();
+  const practicePatterns = canonicalPracticePatterns(content.advancedPatterns, patternAliases);
+  const publishedContent = { ...content, advancedPatterns: practicePatterns };
+  const patternAliasRecords = patternAliasEntries(patternAliases);
   const patternAnnotations = loadPatternAnnotations(content);
   const canonicalAnnotations = migrateAnnotations();
   if (canonicalAnnotations.report.errors.length) throw new Error(`Canonical annotation migration failed: ${canonicalAnnotations.report.errors.length} invalid records`);
-  const counts = contentCounts(content);
-  const api = buildApi(content, counts);
-  api.files["/api/v1/search-index.json"] = buildCompleteSearchIndex(content);
+  const counts = contentCounts(publishedContent);
+  const api = buildApi(content, contentCounts(content));
+  api.files["/api/v1/search-index.json"] = buildCompleteSearchIndex(publishedContent);
 
   writeRoute("/", gatewayPage());
   for (const locale of locales) {
-    writeRoute(`/${locale}/`, localeHome(locale, content));
-    writeRoute(`/${locale}/explore/`, explorePage(locale, content));
-    writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns, content.studySets));
+    writeRoute(`/${locale}/`, localeHome(locale, publishedContent));
+    writeRoute(`/${locale}/explore/`, explorePage(locale, publishedContent));
+    writeRoute(`/${locale}/practice/`, practicePage(locale, practicePatterns, content.studySets));
     writeRoute(`/${locale}/method/`, methodPage(locale));
     writeRoute(`/${locale}/research/`, researchPage(locale, counts));
     writeRoute(`/${locale}/about/`, aboutPage(locale));
@@ -283,17 +288,28 @@ function build() {
         }
       }
     }
-    for (const pattern of content.advancedPatterns) {
+    const canonicalPatternHtml = new Map();
+    const canonicalPatternById = new Map(practicePatterns.map((pattern) => [pattern.id, pattern]));
+    for (const pattern of practicePatterns) {
       const patternHtml = patternPage(locale, pattern, patternAnnotations);
+      canonicalPatternHtml.set(pattern.id, patternHtml);
       writeRoute(patternPath(locale, pattern), patternHtml, pattern.gen?.lastGeneratedAt || SITE_RELEASE_DATE);
       writeLegacyRedirect(legacyPatternPath(locale, pattern), patternPath(locale, pattern), patternHtml);
     }
+    for (const alias of patternAliasRecords) {
+      const canonicalPattern = canonicalPatternById.get(alias.canonical_id);
+      const canonicalHtml = canonicalPatternHtml.get(alias.canonical_id);
+      if (!canonicalPattern || !canonicalHtml) throw new Error(`Pattern alias ${alias.alias_id} points to missing canonical ${alias.canonical_id}`);
+      const destination = patternPath(locale, canonicalPattern);
+      writeLegacyRedirect(patternPath(locale, alias.alias_id), destination, canonicalHtml);
+      writeLegacyRedirect(legacyPatternPath(locale, alias.alias_id), destination, canonicalHtml);
+    }
     for (const set of content.studySets.sets) {
-      const setHtml = studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id));
+      const setHtml = studySetPage(locale, set, practicePatterns.filter((pattern) => pattern.set_id === set.id));
       writeRoute(studySetPath(locale, set), setHtml);
       writeLegacyRedirect(legacyStudySetPath(locale, set), studySetPath(locale, set), setHtml);
     }
-    writeRoute(`/${locale}/ai/`, aiPage(locale, content, counts, api.routes));
+    writeRoute(`/${locale}/ai/`, aiPage(locale, publishedContent, counts, api.routes));
   }
 
   for (const [filePath, fileContents] of Object.entries(api.files)) {
@@ -309,20 +325,21 @@ function build() {
     .sort((a, b) => a.route.localeCompare(b.route));
   writeFile("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemapPages.map((page) => `\n  <url><loc>${xmlEscape(page.canonical)}</loc><lastmod>${page.lastModified}</lastmod></url>`).join("")}\n</urlset>\n`);
   writeFile("seo/site-pages.json", `${JSON.stringify({ schemaVersion: 2, generatedAt: SITE_RELEASE_DATE, pageCount: seoRecords.length, pages: seoRecords.sort((a, b) => a.route.localeCompare(b.route)) }, null, 2)}\n`);
-  writeFile("llms.txt", buildLlmsTxt(content, counts));
+  writeFile("llms.txt", buildLlmsTxt(publishedContent, counts));
 
-  writeFile("data/advanced-patterns.json", `${JSON.stringify(content.advancedPatterns)}\n`);
+  writeFile("data/advanced-patterns.json", `${JSON.stringify(practicePatterns)}\n`);
+  writeFile("data/pattern-aliases.json", `${JSON.stringify(patternAliases, null, 2)}\n`);
   writeFile("data/canonical-annotations.json", `${JSON.stringify({ schema_version: canonicalAnnotations.report.schema_version, items: canonicalAnnotations.records, pattern_cards: canonicalAnnotations.patternCards })}\n`);
   writeFile("data/annotation-migration-report.json", `${JSON.stringify(canonicalAnnotations.report, null, 2)}\n`);
   writeFile("data/study-sets.json", `${JSON.stringify(content.studySets, null, 2)}\n`);
-  writeFile("data/quality-report.json", `${JSON.stringify(buildQualityReport(content), null, 2)}\n`);
-  writeFile("data/reasoning-frames/index.json", `${JSON.stringify(buildReasoningIndex(content), null, 2)}\n`);
+  writeFile("data/quality-report.json", `${JSON.stringify(buildQualityReport(publishedContent), null, 2)}\n`);
+  writeFile("data/reasoning-frames/index.json", `${JSON.stringify(buildReasoningIndex(publishedContent), null, 2)}\n`);
   for (const target of Object.values(targetMeta)) {
     for (const collectionKey of collectionKeys) {
       writeFile(`data/collections/${target.dataKey}/${collectionKey}.json`, `${JSON.stringify(content.collections[target.key][collectionKey].documents)}\n`);
     }
   }
-  const catalog = buildCatalog(content, counts);
+  const catalog = buildCatalog(publishedContent, counts);
   writeFile("data/catalog.json", `${JSON.stringify(catalog, null, 2)}\n`);
   writeFile("data/schema.json", `${JSON.stringify({ "$schema": "https://json-schema.org/draft/2020-12/schema", title: "Metkagram public datasets", type: "object", description: "Catalog and record shapes for annotated documents, canonical annotations, complete advanced patterns, quality metadata, and study sets.", properties: { catalog: { type: "object", required: ["schemaVersion", "version", "collections", "advancedPatterns"] }, canonicalAnnotation: { type: "object", required: ["schema_version", "id", "kind", "text", "language", "spans", "source", "validation"], properties: { schema_version: { const: ANNOTATION_SCHEMA_VERSION }, text: { type: "string" }, spans: { type: "array", items: { type: "object", required: ["id", "start", "end", "type", "label"] } } } }, annotatedDocument: { type: "object", required: ["id", "language", "title", "annotations"] }, advancedPattern: { type: "object", required: ["id", "group_id", "set_id", "title_ru", "langs", "quality"] }, patternQuality: { type: "object", required: ["status", "indexable", "min_unique_examples", "translations_complete", "languages"] }, studySets: { type: "object", required: ["sets", "learningPaths"] } } }, null, 2)}\n`);
   writeFile("project.json", `${JSON.stringify({ name: "Metkagram", canonicalUrl: SITE_URL, interfaceLocales: locales, targetLanguages: corpusLanguages(), architecture: "deterministic static HTML with progressive enhancement", datasetVersion: getDatasetVersion(), catalog: `${SITE_URL}/data/catalog.json`, dataDirectory: Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}/${locale}/data/`])) }, null, 2)}\n`);

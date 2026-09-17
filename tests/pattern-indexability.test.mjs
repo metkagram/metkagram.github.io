@@ -28,7 +28,7 @@ test("indexability policy publishes one explicit search decision for every Patte
   assert.equal(policy.rules.automatedSlotVariantCandidatesAffectIndexability, false);
 });
 
-test("reviewed Frame-family representatives stay indexable while contextual siblings stay available but noindex", () => {
+test("reviewed Frame-family representatives stay discoverable while contextual aliases redirect", () => {
   const policy = readJson("data/quality/pattern-indexability.json");
   const families = [
     ["C1HED001", "C1HED002"],
@@ -42,7 +42,7 @@ test("reviewed Frame-family representatives stay indexable while contextual sibl
     const representative = decision(policy, representativeId);
     const variant = decision(policy, variantId);
     assert.equal(representative.indexable, true, `${representativeId} should represent its reviewed Frame family in search`);
-    assert.equal(variant.indexable, false, `${variantId} is a reviewed contextual realization, not a separate search concept`);
+    assert.equal(variant.indexable, false, `${variantId} remains a compatibility record, not a separate search concept`);
     assert.ok(variant.reasons.includes("reviewed_contextual_variant"));
     assert.equal(variant.canonical_pattern_id, representativeId);
 
@@ -50,13 +50,13 @@ test("reviewed Frame-family representatives stay indexable while contextual sibl
       const representativeRoute = patternPath(locale, representativeId);
       const variantRoute = patternPath(locale, variantId);
       const variantHtml = page(locale, variantId);
-      assert.match(variantHtml, /<meta name="robots" content="noindex,follow">/);
-      assert.match(variantHtml, new RegExp(`<link rel="canonical" href="${SITE_URL}${variantRoute.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">`), "stable variant URL remains self-canonical and accessible");
+      assert.ok(variantHtml.includes(`<meta http-equiv="refresh" content="0;url=${representativeRoute}">`), `${variantId} must redirect to ${representativeId}`);
+      assert.ok(variantHtml.includes(`<link rel="canonical" href="${SITE_URL}${representativeRoute}">`), `${variantId} redirect canonical must point to representative`);
       assert.ok(sitemap.includes(`${SITE_URL}${representativeRoute}`), `${representativeRoute} stays in sitemap`);
       assert.ok(!sitemap.includes(`${SITE_URL}${variantRoute}`), `${variantRoute} must leave sitemap`);
       assert.ok(inventory.pages.some((entry) => entry.route === representativeRoute), `${representativeRoute} stays in SEO inventory`);
       assert.ok(!inventory.pages.some((entry) => entry.route === variantRoute), `${variantRoute} leaves SEO inventory`);
-      assert.ok(fs.existsSync(path.join(DIST, variantRoute.slice(1), "index.html")), `${variantRoute} must remain a real page`);
+      assert.ok(fs.existsSync(path.join(DIST, variantRoute.slice(1), "index.html")), `${variantRoute} compatibility redirect must remain available`);
     }
   }
 });

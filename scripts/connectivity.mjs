@@ -4,6 +4,7 @@ import { loadContent, contentCounts } from "../src/content.mjs";
 import { collectionKeys, targetMeta } from "../src/i18n.mjs";
 import { getDatasetVersion } from "../src/provenance.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
+import { canonicalPracticePatterns, loadPatternAliases } from "../src/pattern-aliases.mjs";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
@@ -383,9 +384,10 @@ function updateHtml(content, graph) {
 function main() {
   if (!fs.existsSync(DIST)) throw new Error("dist/ does not exist; run the base static build first");
   const content = loadContent();
-  const graph = buildGraph(content);
+  const publicContent = { ...content, advancedPatterns: canonicalPracticePatterns(content.advancedPatterns, loadPatternAliases()) };
+  const graph = buildGraph(publicContent);
   writeGraph(graph);
-  updateHtml(content, graph);
+  updateHtml(publicContent, graph);
   process.stdout.write(`Connectivity: ${graph.relationCounts.connectedDocumentCount} documents, ${graph.relationCounts.connectedSentenceCount} sentence links, ${graph.relationCounts.reasoningMoveCount} reasoning moves.\n`);
 }
 

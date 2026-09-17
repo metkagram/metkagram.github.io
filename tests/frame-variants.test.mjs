@@ -110,23 +110,31 @@ test("published pilot records resolve through data and individual Pattern API", 
   assert.equal(api.data.domain_model.frame_variant_ids.en, frameVariantId("C1HED002", "en"));
 });
 
-test("pilot Pattern pages stay available while sitemap follows editorial indexability", () => {
+test("reviewed Frame representatives remain pages while contextual Pattern aliases redirect", () => {
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
-  const policy = json("data", "quality", "pattern-indexability.json");
-  const decisions = new Map(policy.records.map((record) => [record.pattern_id, record]));
-  for (const patternId of ["C1HED001", "C1HED002", "C1ARG002", "C1PRO002"]) {
-    const decision = decisions.get(patternId);
-    assert.ok(decision, `${patternId} needs an indexability decision`);
+  const families = [
+    ["C1HED001", "C1HED002"],
+    ["C1ARG001", "C1ARG002"],
+    ["C1PRO001", "C1PRO002"],
+  ];
+
+  for (const [representativeId, variantId] of families) {
     for (const locale of ["en", "ru"]) {
-      const route = patternPath(locale, patternId);
-      const file = routeFile(route);
-      assert.ok(fs.existsSync(file), `${patternId} lost ${locale} page`);
-      const page = fs.readFileSync(file, "utf8");
-      assert.match(page, /data-canonical-frame-family=/);
-      assert.match(page, new RegExp(patternId, "i"));
-      assert.ok(page.includes(`<link rel="canonical" href="${SITE_URL}${route}">`), `${patternId} ${locale} lost self-canonical`);
-      assert.equal(sitemap.includes(`<loc>${SITE_URL}${route}</loc>`), decision.indexable, `${patternId} ${locale} sitemap must follow editorial indexability`);
-      assert.match(page, decision.indexable ? /<meta name="robots" content="index,follow/ : /<meta name="robots" content="noindex,follow">/);
+      const representativeRoute = patternPath(locale, representativeId);
+      const variantRoute = patternPath(locale, variantId);
+      const representativeFile = routeFile(representativeRoute);
+      const variantFile = routeFile(variantRoute);
+      assert.ok(fs.existsSync(representativeFile), `${representativeId} lost ${locale} page`);
+      assert.ok(fs.existsSync(variantFile), `${variantId} lost ${locale} compatibility redirect`);
+
+      const representativePage = fs.readFileSync(representativeFile, "utf8");
+      const variantPage = fs.readFileSync(variantFile, "utf8");
+      assert.ok(representativePage.includes(`<link rel="canonical" href="${SITE_URL}${representativeRoute}">`), `${representativeId} ${locale} lost self-canonical`);
+      assert.ok(sitemap.includes(`<loc>${SITE_URL}${representativeRoute}</loc>`), `${representativeId} ${locale} must stay in sitemap`);
+
+      assert.ok(variantPage.includes(`<meta http-equiv="refresh" content="0;url=${representativeRoute}">`), `${variantId} ${locale} must redirect to representative`);
+      assert.ok(variantPage.includes(`<link rel="canonical" href="${SITE_URL}${representativeRoute}">`), `${variantId} ${locale} redirect needs representative canonical`);
+      assert.ok(!sitemap.includes(`<loc>${SITE_URL}${variantRoute}</loc>`), `${variantId} ${locale} alias must stay out of sitemap`);
     }
   }
 });
