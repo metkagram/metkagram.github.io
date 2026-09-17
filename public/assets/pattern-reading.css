@@ -5,20 +5,39 @@
  * generous leading and a dependable local serif stack. UI labels stay sans so
  * formulas, language markers and navigation remain easy to scan.
  */
+.pattern-reader-body {
+  --reader-page: #fbfaf7;
+  --reader-surface: #fffefb;
+  --reader-ink: #211f1b;
+  --reader-muted: #67625b;
+  --reader-line: #e7e2d8;
+  background-color: var(--reader-page);
+  color: var(--reader-ink);
+}
+
+.pattern-reader-body .site-header {
+  border-color: var(--reader-line);
+  background: color-mix(in srgb, var(--reader-page) 96%, transparent);
+}
+
 .pattern-reader-body .pattern-page {
   --reader-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
   --reader-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  width: min(calc(100% - 2rem), 82rem);
+  border-color: var(--reader-line);
+  background: var(--reader-surface);
+  box-shadow: none;
   font-family: var(--reader-serif);
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.375rem;
+  line-height: 1.58;
   text-rendering: optimizeLegibility;
 }
 
 .pattern-reader-body .pattern-page p,
 .pattern-reader-body .pattern-page li {
   font-family: var(--reader-serif);
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.375rem;
+  line-height: 1.58;
   letter-spacing: 0;
 }
 
@@ -28,13 +47,18 @@
 .pattern-reader-body .pattern-page .breadcrumbs,
 .pattern-reader-body .pattern-page small,
 .pattern-reader-body .pattern-page button,
-.pattern-reader-body .pattern-page .language-code {
+.pattern-reader-body .pattern-page .language-code,
+.pattern-reader-body .pattern-reader-controls {
   font-family: var(--reader-sans);
 }
 
+.pattern-reader-body .pattern-page-head {
+  max-width: none;
+}
+
 .pattern-reader-body .pattern-page-head h1 {
-  max-width: 22ch;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  max-width: 24ch;
+  font-size: clamp(2.55rem, 5vw, 3.9rem);
   font-weight: 650;
   line-height: 1.08;
   letter-spacing: -.035em;
@@ -49,38 +73,153 @@
   line-height: 1.45;
 }
 
+.pattern-reader-body .pattern-comparison,
+.pattern-reader-body .pattern-reference-card,
+.pattern-reader-body .pattern-comparison-sentences,
+.pattern-reader-body .pattern-comparison-language {
+  width: 100%;
+  max-width: none;
+}
+
 .pattern-reader-body .pattern-comparison-language p {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
   font-family: var(--reader-serif);
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.375rem;
+  line-height: 1.58;
   letter-spacing: 0;
 }
 
 .pattern-reader-body .pattern-comparison-translation p {
+  width: 100%;
+  max-width: none;
   font-family: var(--reader-serif);
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
 .pattern-reader-body .pattern-formulas code {
-  font-size: 1.05rem;
+  font-size: 1.075rem;
   line-height: 1.55;
 }
 
+.pattern-reader-body .pattern-formulas,
+.pattern-reader-body .pattern-primary-example,
+.pattern-reader-body .pattern-comparison-card,
+.pattern-reader-body .pattern-comparison-translation {
+  border-color: var(--reader-line);
+}
+
+.pattern-reader-body .pattern-primary-example,
+.pattern-reader-body .pattern-primary-example:hover {
+  background: #fffdfa;
+}
+
+.pattern-reader-body .pattern-comparison-card,
+.pattern-reader-body .pattern-comparison-card:hover {
+  border-color: var(--reader-line);
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+
+.pattern-reader-body .pattern-comparison-card:not(.pattern-primary-example),
+.pattern-reader-body .pattern-comparison-card:not(.pattern-primary-example):hover {
+  background: transparent;
+}
+
+.pattern-reader-body .pattern-page a,
+.pattern-reader-body .pattern-page button {
+  transition: none;
+}
+
+.pattern-reader-body .pattern-page button:hover,
+.pattern-reader-body .pattern-page .button-label:hover {
+  transform: none;
+}
+
+.pattern-reader-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem 1rem;
+  margin: calc(-1 * clamp(1rem, 2vw, 1.5rem)) 0 clamp(2rem, 4vw, 3rem);
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--reader-line);
+}
+
+.pattern-reader-controls > span {
+  color: var(--reader-muted);
+  font-size: .78rem;
+  font-weight: 650;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.pattern-reader-controls [role="group"] {
+  display: inline-flex;
+  gap: .4rem;
+}
+
+.pattern-reader-controls button {
+  border: 1px solid var(--reader-line);
+  border-radius: 999px;
+  padding: .48rem .75rem;
+  background: transparent;
+  color: var(--reader-ink);
+  font-size: .8rem;
+  font-weight: 650;
+  line-height: 1.2;
+  box-shadow: none;
+  transform: none;
+}
+
+.pattern-reader-controls button:hover {
+  border-color: var(--reader-line);
+  background: transparent;
+  color: var(--reader-ink);
+}
+
+.pattern-reader-controls button[aria-pressed="true"],
+.pattern-reader-controls button[aria-pressed="true"]:hover {
+  border-color: var(--reader-ink);
+  background: var(--reader-ink);
+  color: var(--reader-surface);
+}
+
+.pattern-reader-body[data-pattern-language-mode="en"] [data-target-language="de"],
+.pattern-reader-body[data-pattern-language-mode="en"] .pattern-formulas > div:nth-child(2) {
+  display: none !important;
+}
+
+.pattern-reader-body[data-pattern-language-mode="en"] .pattern-formulas > div:first-child {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 700px) {
+  .pattern-reader-body .pattern-page {
+    width: min(calc(100% - 1rem), 82rem);
+  }
+
   .pattern-reader-body .pattern-page,
   .pattern-reader-body .pattern-page p,
   .pattern-reader-body .pattern-page li,
   .pattern-reader-body .pattern-comparison-language p {
-    font-size: 1.125rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.58;
   }
 
   .pattern-reader-body .pattern-comparison-translation p {
-    font-size: 1.0625rem;
+    font-size: 1.1rem;
   }
 
   .pattern-reader-body .pattern-page-head h1 {
-    font-size: clamp(2.15rem, 10vw, 3rem);
+    font-size: clamp(2.2rem, 10vw, 3.05rem);
+  }
+
+  .pattern-reader-controls {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
