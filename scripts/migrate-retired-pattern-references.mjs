@@ -2,9 +2,14 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
+import { loadContent } from "../src/content.mjs";
+import { buildFrameQualityAudit } from "../src/frame-quality-audit.mjs";
+import { frameQualitySnapshot } from "../src/frame-quality-baseline.mjs";
+
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, "data");
 const ALIASES_FILE = path.join(DATA, "pattern-aliases.json");
+const FRAME_QUALITY_BASELINE_FILE = path.join(DATA, "quality", "frame-audit-baseline.json");
 
 const aliases = JSON.parse(fs.readFileSync(ALIASES_FILE, "utf8")).aliases || {};
 
@@ -30,6 +35,7 @@ function jsonFiles(directory) {
 const skipped = new Set([
   path.normalize(ALIASES_FILE),
   path.normalize(path.join(DATA, "frame-families.json")),
+  path.normalize(FRAME_QUALITY_BASELINE_FILE),
 ]);
 const patternRoot = path.normalize(path.join(DATA, "patterns")) + path.sep;
 let migratedFiles = 0;
@@ -46,14 +52,14 @@ for (const file of jsonFiles(DATA)) {
     continue;
   }
   const afterValue = transform(parsed);
+  if (JSON.stringify(afterValue) === JSON.stringify(parsed)) continue;
+
   const after = `${JSON.stringify(afterValue, null, 2)}\n`;
-  if (after !== before) {
-    const beforeMatches = Object.keys(aliases).reduce((sum, id) => sum + (before.includes(`"${id}"`) ? 1 : 0), 0);
-    const afterMatches = Object.keys(aliases).reduce((sum, id) => sum + (after.includes(`"${id}"`) ? 1 : 0), 0);
-    migratedValues += Math.max(0, beforeMatches - afterMatches);
-    fs.writeFileSync(file, after);
-    migratedFiles += 1;
-  }
+  const beforeMatches = Object.keys(aliases).reduce((sum, id) => sum + (before.includes(`"${id}"`) ? 1 : 0), 0);
+  const afterMatches = Object.keys(aliases).reduce((sum, id) => sum + (after.includes(`"${id}"`) ? 1 : 0), 0);
+  migratedValues += Math.max(0, beforeMatches - afterMatches);
+  fs.writeFileSync(file, after);
+  migratedFiles += 1;
 }
 
 function sourceFromMain(relative) {
@@ -90,7 +96,24 @@ function patchDomainModelTest() {
   fs.writeFileSync(path.join(ROOT, relative), source);
 }
 
+function recaptureFrameQualityBaseline() {
+  const snapshot = frameQualitySnapshot(buildFrameQualityAudit(loadContent()));
+  const baseline = {
+    schemaVersion: 1,
+    capturedOn: "2026-09-17",
+    patternCountAtCapture: snapshot.patternCount,
+    studySetCountAtCapture: snapshot.studySetCount,
+    global: snapshot.global,
+    sets: snapshot.sets,
+    migrationNote: "Baseline recaptured after canonical structural deduplication changed the Pattern denominator from 3,530 records to 630 active Patterns. This is a denominator reset, not a waiver for new audit regressions."
+  };
+  fs.writeFileSync(FRAME_QUALITY_BASELINE_FILE, `${JSON.stringify(baseline, null, 2)}\n`);
+  return snapshot;
+}
+
 patchContentTest();
 patchDomainModelTest();
+const frameQuality = recaptureFrameQualityBaseline();
 
 console.log(`Retired Pattern references migrated: ${migratedFiles} JSON files updated; ${migratedValues} retired-ID references replaced.`);
+console.log(`Frame quality baseline recaptured: ${frameQuality.patternCount} active patterns / ${frameQuality.studySetCount} study sets.`);
