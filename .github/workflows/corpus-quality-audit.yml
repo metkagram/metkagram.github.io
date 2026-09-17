@@ -1,0 +1,27 @@
+name: Corpus quality audit
+on:
+  push:
+    branches: [fix/corpus-language-quality-2026-09-17]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Create exact-revision source snapshot for editorial audit
+        run: |
+          mkdir -p /tmp/corpus-quality-audit
+          git archive --format=tar HEAD | gzip > /tmp/corpus-quality-audit/source.tar.gz
+          printf '%s\n' "$GITHUB_SHA" > /tmp/corpus-quality-audit/revision.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corpus-quality-source
+          path: /tmp/corpus-quality-audit/
+          retention-days: 3
