@@ -20,7 +20,7 @@
   background: color-mix(in srgb, var(--reader-page) 96%, transparent);
 }
 
-.pattern-reader-body .pattern-page {
+body.pattern-reader-body .pattern-page {
   --reader-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
   --reader-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   width: min(calc(100% - 2rem), 82rem);
@@ -198,7 +198,7 @@
 }
 
 @media (max-width: 700px) {
-  .pattern-reader-body .pattern-page {
+  body.pattern-reader-body .pattern-page {
     width: min(calc(100% - 1rem), 82rem);
   }
 
