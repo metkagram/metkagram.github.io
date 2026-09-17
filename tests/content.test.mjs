@@ -28,7 +28,7 @@ test("source content validates and public Practice exposes the full curriculum",
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
   assert.ok(counts.annotatedSentences > 0);
-  assert.ok(counts.advancedPatterns >= 1000, `expected at least 1,000 patterns, found ${counts.advancedPatterns}`);
+  assert.ok(counts.advancedPatterns >= 600, `expected at least 600 canonical patterns, found ${counts.advancedPatterns}`);
   assert.ok(content.studySets.sets.length >= 20);
   assert.ok(content.advancedPatterns.every((pattern) => pattern.set_id && langComplete(pattern)));
   const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);

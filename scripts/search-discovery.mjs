@@ -183,7 +183,7 @@ function assertOutput(content) {
   for (const relative of htmlFiles(DIST)) if (read(relative).includes(`${SITE_URL}/#mobile-application`)) throw new Error(`Closed mobile app remains in JSON-LD: ${relative}`);
   const mcp = readJson("api/v1/mcp-server.json");
   for (const tool of ["metkagram_discover", "metkagram_list_intents"]) if (!mcp.tools?.some((item) => item.name === tool)) throw new Error(`Missing MCP tool: ${tool}`);
-  if (content.advancedPatterns.length < 1000) throw new Error("Unexpected Practice corpus regression");
+  if (content.advancedPatterns.length < 600) throw new Error("Unexpected canonical Practice corpus regression");
 }
 
 function main() {

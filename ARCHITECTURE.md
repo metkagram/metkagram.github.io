@@ -83,6 +83,7 @@ Metkagram does not treat record count as editorial quality.
 
 For the existing EN/DE curriculum:
 
+- one canonical Pattern represents one EN+DE structural frame inside a study set; historical slot-value expansions are retired aliases, not separate learning objects;
 - required formulas, examples and Russian learner translations remain build-validated;
 - genuine variation remains preferable to synthetic padding;
 - quality metadata records duplicate and translation completeness signals;

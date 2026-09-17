@@ -43,7 +43,7 @@ Legacy technical names may remain in filenames and URLs while compatibility requ
 
 ### Pattern Practice
 
-The public curriculum contains 1,000+ reusable B2–C1 English/German patterns organised through named study sets and learning paths. Existing pattern records preserve stable IDs, formulas, examples, Russian translations, variations and quality metadata.
+The public curriculum contains 600+ reusable B2–C1 English/German patterns organised through named study sets and learning paths. Existing pattern records preserve stable IDs, formulas, examples, Russian translations, variations and quality metadata.
 
 A reasoning-enabled layer adds reviewed Moves and relation metadata. The **Thinking in Language** curriculum currently contributes 40 additive Frames across eight sets: problem framing, uncertainty, systems thinking, decision quality, causal diagnosis, hypothesis testing, perspective taking and metacognitive learning. These sets extend the curriculum rather than replacing established material.
 

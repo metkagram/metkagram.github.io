@@ -3,7 +3,6 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { buildDomainModel, frameId, moveId } from "../src/domain-model.mjs";
-import { canonicalFrameId, frameVariantId } from "../src/frame-families.mjs";
 import { languageRegistry, normalizeTranslations } from "../src/language-registry.mjs";
 
 const ROOT = process.cwd();
@@ -30,9 +29,9 @@ test("published domain model separates Moves, stable Pattern Frames, canonical F
   assert.equal(manifest.counts.canonicalFrames, canonicalFrames.count);
   assert.equal(manifest.counts.frameVariants, frameVariants.count);
   assert.equal(manifest.counts.bridges, bridges.count);
-  assert.equal(manifest.counts.canonicalFrameFamilies, 3);
-  assert.equal(canonicalFrames.count, 6);
-  assert.equal(frameVariants.count, 48);
+  assert.equal(manifest.counts.canonicalFrameFamilies, 0);
+  assert.equal(canonicalFrames.count, 0);
+  assert.equal(frameVariants.count, 0);
   assert.ok(moves.count > 0);
   assert.ok(frames.count > 0);
   assert.ok(bridges.count > 0);
@@ -104,12 +103,12 @@ test("pattern compatibility index keeps stable Pattern Frames while resolving re
     if (pattern.reasoning?.move) assert.equal(record.move_id, moveId(pattern.reasoning.move));
   }
 
-  const hedVariant = index.items.find((item) => item.pattern_id === "C1HED002");
-  assert.equal(hedVariant.frame_ids.en, frameId("C1HED002", "en"));
-  assert.equal(hedVariant.canonical_frame_ids.en, canonicalFrameId("hed-premature-conclusion", "en"));
-  assert.equal(hedVariant.canonical_frame_ids.de, canonicalFrameId("hed-premature-conclusion", "de"));
-  assert.equal(hedVariant.frame_variant_ids.en, frameVariantId("C1HED002", "en"));
-  assert.equal(hedVariant.frame_variant_ids.de, frameVariantId("C1HED002", "de"));
+  const retainedHed = index.items.find((item) => item.pattern_id === "C1HED001");
+  assert.ok(retainedHed, "expected canonical HED Pattern C1HED001");
+  assert.equal(retainedHed.canonical_frame_ids.en, frameId("C1HED001", "en"));
+  assert.equal(retainedHed.canonical_frame_ids.de, frameId("C1HED001", "de"));
+  assert.equal(retainedHed.frame_variant_ids.en, undefined);
+  assert.ok(!index.items.some((item) => item.pattern_id === "C1HED002"), "retired contextual duplicate must not remain active");
 
   const standalone = index.items.find((item) => item.pattern_id === "GRMADJ001");
   assert.ok(standalone, "expected stable non-pilot Pattern GRMADJ001");
