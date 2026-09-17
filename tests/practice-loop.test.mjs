@@ -3,6 +3,13 @@ import path from 'node:path';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { evaluatePracticeStructure, literalPracticeSegments, nextPracticeReview } from '../public/assets/practice-loop-core.js';
+import {
+  PATTERN_PROGRESS_STORAGE_KEY,
+  emptyPatternProgressState,
+  isPatternCompleted,
+  patternProgressSummary,
+  setPatternCompleted,
+} from '../public/assets/pattern-progress-core.js';
 import { patternPath } from '../src/seo-slugs.mjs';
 
 test('extracts stable formula segments without placeholders', () => {
@@ -56,9 +63,31 @@ test('schedules needs-work sooner and expands successful review intervals', () =
   assert.equal(laterSuccess.streak, 3);
 });
 
+test('keeps lightweight pattern completion separate from practice mastery', () => {
+  const initial = emptyPatternProgressState();
+  const first = setPatternCompleted(initial, 'cla002', true, '2026-09-17T12:00:00.000Z');
+  const second = setPatternCompleted(first, 'CLF041', true, '2026-09-17T13:00:00.000Z');
+
+  assert.equal(PATTERN_PROGRESS_STORAGE_KEY, 'metkagram:pattern-progress:v1');
+  assert.equal(isPatternCompleted(second, 'CLA002'), true);
+  assert.equal(isPatternCompleted(second, 'clf041'), true);
+  assert.deepEqual(patternProgressSummary(second), {
+    completedCount: 2,
+    recentlyCompleted: [
+      { patternId: 'CLF041', updatedAt: '2026-09-17T13:00:00.000Z' },
+      { patternId: 'CLA002', updatedAt: '2026-09-17T12:00:00.000Z' },
+    ],
+  });
+
+  const cleared = setPatternCompleted(second, 'CLA002', false, '2026-09-17T14:00:00.000Z');
+  assert.equal(isPatternCompleted(cleared, 'CLA002'), false);
+  assert.equal(patternProgressSummary(cleared).completedCount, 1);
+});
+
 test('pattern reader assets keep the requested reading contract', () => {
   const css = fs.readFileSync(path.resolve('public/assets/pattern-reading.css'), 'utf8');
   const js = fs.readFileSync(path.resolve('public/assets/pattern-reading.js'), 'utf8');
+  const progressCore = fs.readFileSync(path.resolve('public/assets/pattern-progress-core.js'), 'utf8');
 
   assert.match(css, /--reader-page:\s*#fbfaf7/);
   assert.match(css, /body\.pattern-reader-body \.pattern-page[\s\S]*width:\s*calc\(100vw - 2rem\)[\s\S]*max-width:\s*none/);
@@ -66,9 +95,17 @@ test('pattern reader assets keep the requested reading contract', () => {
   assert.match(css, /font-size:\s*1\.375rem/);
   assert.match(css, /transition:\s*none/);
   assert.match(css, /data-pattern-language-mode="en"/);
+  assert.match(css, /pattern-reader-control-group/);
   assert.match(js, /Только английский/);
   assert.match(js, /English only/);
-  assert.match(js, /localStorage\.setItem/);
+  assert.match(js, /Отметить пройденным/);
+  assert.match(js, /Mark complete/);
+  assert.match(js, /document\.modelContext/);
+  assert.match(js, /metkagram_get_pattern_progress/);
+  assert.match(js, /metkagram_set_pattern_progress/);
+  assert.match(js, /metkagram_get_progress_summary/);
+  assert.match(js, /data-pattern-progress-toggle/);
+  assert.match(progressCore, /metkagram:pattern-progress:v1/);
 });
 
 test('production build keeps active practice off pattern pages and applies reader assets', (t) => {
@@ -85,6 +122,7 @@ test('production build keeps active practice off pattern pages and applies reade
   assert.match(patternHtml, /data-pattern-id="CLF041"/);
   assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-reading.css')), true);
   assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-reading.js')), true);
+  assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-progress-core.js')), true);
 
   const lensHtml = fs.readFileSync(path.join(dist, 'en', 'lens', 'index.html'), 'utf8');
   assert.match(lensHtml, /\/assets\/lens-practice-bridge\.js/);

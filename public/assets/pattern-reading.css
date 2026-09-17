@@ -146,13 +146,20 @@ body.pattern-reader-body .pattern-page {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: .65rem 1rem;
+  gap: .8rem 1.5rem;
   margin: calc(-1 * clamp(1rem, 2vw, 1.5rem)) 0 clamp(2rem, 4vw, 3rem);
   padding: 0 0 1.25rem;
   border-bottom: 1px solid var(--reader-line);
 }
 
-.pattern-reader-controls > span {
+.pattern-reader-control-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+}
+
+.pattern-reader-control-group > span {
   color: var(--reader-muted);
   font-size: .78rem;
   font-weight: 650;
@@ -226,5 +233,9 @@ body.pattern-reader-body .pattern-page {
   .pattern-reader-controls {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .pattern-reader-control-group {
+    align-items: flex-start;
   }
 }
