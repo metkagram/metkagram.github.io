@@ -96,6 +96,16 @@ function patchDomainModelTest() {
   fs.writeFileSync(path.join(ROOT, relative), source);
 }
 
+function patchCanonicalCorpusGuards() {
+  const relative = "scripts/search-discovery.mjs";
+  let source = sourceFromMain(relative);
+  source = source.replace(
+    'if (content.advancedPatterns.length < 1000) throw new Error("Unexpected Practice corpus regression");',
+    'if (content.advancedPatterns.length < 600) throw new Error("Unexpected canonical Practice corpus regression");',
+  );
+  fs.writeFileSync(path.join(ROOT, relative), source);
+}
+
 function recaptureFrameQualityBaseline() {
   const snapshot = frameQualitySnapshot(buildFrameQualityAudit(loadContent()));
   const baseline = {
@@ -113,6 +123,7 @@ function recaptureFrameQualityBaseline() {
 
 patchContentTest();
 patchDomainModelTest();
+patchCanonicalCorpusGuards();
 const frameQuality = recaptureFrameQualityBaseline();
 
 console.log(`Retired Pattern references migrated: ${migratedFiles} JSON files updated; ${migratedValues} retired-ID references replaced.`);
