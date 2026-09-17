@@ -1,0 +1,86 @@
+/*
+ * Pattern reader typography.
+ *
+ * Keep the learning content calm and article-like: large readable body text,
+ * generous leading and a dependable local serif stack. UI labels stay sans so
+ * formulas, language markers and navigation remain easy to scan.
+ */
+.pattern-reader-body .pattern-page {
+  --reader-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+  --reader-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--reader-serif);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.pattern-reader-body .pattern-page p,
+.pattern-reader-body .pattern-page li {
+  font-family: var(--reader-serif);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.pattern-reader-body .pattern-page-head h1,
+.pattern-reader-body .pattern-variations h2,
+.pattern-reader-body .pattern-page .eyebrow,
+.pattern-reader-body .pattern-page .breadcrumbs,
+.pattern-reader-body .pattern-page small,
+.pattern-reader-body .pattern-page button,
+.pattern-reader-body .pattern-page .language-code {
+  font-family: var(--reader-sans);
+}
+
+.pattern-reader-body .pattern-page-head h1 {
+  max-width: 22ch;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.pattern-reader-body .pattern-page-head .eyebrow,
+.pattern-reader-body .pattern-page .breadcrumbs,
+.pattern-reader-body .pattern-reference-card > header .eyebrow,
+.pattern-reader-body .pattern-variations h2,
+.pattern-reader-body .pattern-variations h2 small {
+  font-size: .8rem;
+  line-height: 1.45;
+}
+
+.pattern-reader-body .pattern-comparison-language p {
+  font-family: var(--reader-serif);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.pattern-reader-body .pattern-comparison-translation p {
+  font-family: var(--reader-serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.pattern-reader-body .pattern-formulas code {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .pattern-reader-body .pattern-page,
+  .pattern-reader-body .pattern-page p,
+  .pattern-reader-body .pattern-page li,
+  .pattern-reader-body .pattern-comparison-language p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .pattern-reader-body .pattern-comparison-translation p {
+    font-size: 1.0625rem;
+  }
+
+  .pattern-reader-body .pattern-page-head h1 {
+    font-size: clamp(2.15rem, 10vw, 3rem);
+  }
+}
