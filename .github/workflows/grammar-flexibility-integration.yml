@@ -1,0 +1,61 @@
+name: Grammar flexibility integration
+on:
+  push:
+    branches: [feat/grammar-flexibility-300]
+    paths:
+      - scripts/integrate-grammar-flexibility.mjs
+      - .github/workflows/grammar-flexibility-integration.yml
+permissions:
+  contents: write
+concurrency:
+  group: grammar-flexibility-integration
+  cancel-in-progress: false
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/grammar-flexibility-300
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Integrate canonical data and editorial corrections
+        run: node scripts/integrate-grammar-flexibility.mjs
+      - name: Assemble compatibility data
+        run: npm run prepare:content --if-present
+      - name: Validate loader and record counts
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import { loadContent } from './src/content.mjs';
+          const c=loadContent();
+          const patterns=c.advancedPatterns;
+          const added=patterns.filter(p=>/^GF[A-O]\d{3}$/.test(p.id));
+          assert.equal(added.length,300);
+          let sentences=0;
+          for(const p of added) for(const l of p.langs) {
+            const all=[{text:l.example,translation_ru:l.translation},...l.examples];
+            assert.ok(all.length>=3,`${p.id}/${l.lang}: insufficient examples`);
+            for(const e of all){assert.ok(e.text.trim());assert.match(e.translation_ru,/\p{Script=Cyrillic}/u);}
+            sentences+=all.length;
+          }
+          const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2};
+          console.log('GRAMMAR_INTEGRATION '+JSON.stringify(totals));
+          fs.mkdirSync('docs/research',{recursive:true});
+          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-17):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification. No annotation or human-review status is fabricated. Full site verification and duplication review remain release gates.\n');
+          JS
+      - name: Commit integrated source data on the feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs/research/grammar-flexibility-300-integration.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'content: register and normalize 300 bilingual grammar patterns'
+            git push origin HEAD:feat/grammar-flexibility-300
+          fi
