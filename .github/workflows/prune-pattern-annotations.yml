@@ -1,0 +1,33 @@
+name: Prune pattern annotations
+
+on:
+  push:
+    branches:
+      - chore/pattern-example-audit
+
+permissions:
+  contents: write
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Prune stale pattern annotations
+        run: node scripts/prune-practice-annotations.mjs
+      - name: Commit annotation export
+        run: |
+          if git diff --quiet -- data/pattern-annotations.json.gz; then
+            echo "Practice annotation export already synchronized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pattern-annotations.json.gz
+          git commit -m "data: prune stale pattern annotations"
+          git push
