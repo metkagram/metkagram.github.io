@@ -61,7 +61,8 @@ test('pattern reader assets keep the requested reading contract', () => {
   const js = fs.readFileSync(path.resolve('public/assets/pattern-reading.js'), 'utf8');
 
   assert.match(css, /--reader-page:\s*#fbfaf7/);
-  assert.match(css, /\.pattern-comparison-language p[\s\S]*max-width:\s*none/);
+  assert.match(css, /body\.pattern-reader-body \.pattern-page[\s\S]*width:\s*calc\(100vw - 2rem\)[\s\S]*max-width:\s*none/);
+  assert.match(css, /\.pattern-comparison-list \.pattern-comparison-language p[\s\S]*max-width:\s*none/);
   assert.match(css, /font-size:\s*1\.375rem/);
   assert.match(css, /transition:\s*none/);
   assert.match(css, /data-pattern-language-mode="en"/);
