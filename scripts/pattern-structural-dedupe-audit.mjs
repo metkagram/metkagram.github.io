@@ -1,7 +1,10 @@
+import fs from "node:fs";
 import path from "node:path";
 
 import { loadContent } from "../src/content.mjs";
 import { normalizeFrameFormula } from "../src/frame-quality-audit.mjs";
+
+const ROOT = process.cwd();
 
 function structuralSignature(pattern) {
   const languages = [...(pattern.langs || [])]
@@ -98,8 +101,54 @@ export function buildStructuralDuplicateReport(content = loadContent()) {
   };
 }
 
+function walkFiles(directory, output = []) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const full = path.join(directory, entry.name);
+    const relative = path.relative(ROOT, full).replaceAll(path.sep, "/");
+    if (entry.isDirectory()) {
+      if ([".git", "node_modules", "dist"].includes(entry.name)) continue;
+      if (relative === "data/patterns" || relative.startsWith("data/patterns/")) continue;
+      walkFiles(full, output);
+      continue;
+    }
+    if (!/\.(?:json|mjs|js|md|yml|yaml|html|txt)$/i.test(entry.name)) continue;
+    if ([
+      "tests/fixtures/pattern-corpus-baseline.json",
+      "data/seo-slugs.json",
+      ".tmp/pattern-dedupe-audit-trigger.txt",
+    ].includes(relative)) continue;
+    output.push({ full, relative });
+  }
+  return output;
+}
+
+function aliasReferenceReport(report) {
+  const aliasToCanonical = new Map(report.groups.flatMap((group) => group.aliases.map((alias) => [alias, group.canonical_id])));
+  const references = [];
+  const tokenRegex = /\b[A-Z][A-Z0-9]{2,15}\b/g;
+  for (const file of walkFiles(ROOT)) {
+    let text;
+    try { text = fs.readFileSync(file.full, "utf8"); } catch { continue; }
+    const found = new Map();
+    for (const match of text.matchAll(tokenRegex)) {
+      const alias = match[0];
+      if (!aliasToCanonical.has(alias)) continue;
+      found.set(alias, (found.get(alias) || 0) + 1);
+    }
+    if (!found.size) continue;
+    references.push({
+      file: file.relative,
+      alias_count: found.size,
+      occurrence_count: [...found.values()].reduce((sum, count) => sum + count, 0),
+      sample: [...found.entries()].slice(0, 20).map(([alias, occurrences]) => ({ alias, canonical: aliasToCanonical.get(alias), occurrences })),
+    });
+  }
+  return references.sort((a, b) => b.alias_count - a.alias_count || a.file.localeCompare(b.file));
+}
+
 export function main() {
   const report = buildStructuralDuplicateReport();
+  const references = aliasReferenceReport(report);
   console.log(JSON.stringify({
     pattern_count: report.pattern_count,
     duplicate_group_count: report.duplicate_group_count,
@@ -107,12 +156,13 @@ export function main() {
     removable_alias_count: report.removable_alias_count,
     estimated_canonical_pattern_count: report.estimated_canonical_pattern_count,
     by_set: report.by_set,
+    external_reference_files: references,
   }, null, 2));
   console.log("\nTop structural duplicate groups:");
   for (const group of report.groups.slice(0, 120)) {
     console.log(`${group.set_id}\t${group.group_id}\tcount=${group.count}\toverlap=${group.example_overlap}\tcanonical=${group.canonical_id}\taliases=${group.aliases.join(",")}`);
   }
-  return report;
+  return { ...report, external_reference_files: references };
 }
 
 if (process.argv[1] && import.meta.url === `file://${path.resolve(process.argv[1])}`) main();
