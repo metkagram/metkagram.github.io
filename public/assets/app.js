@@ -1,7 +1,7 @@
 const locale = document.documentElement.lang === "ru" ? "ru" : "en";
 const copy = {
-  en: { showing: "Showing", of: "of", sets: "sets", patterns: "patterns" },
-  ru: { showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов" }
+  en: { showing: "Showing", of: "of", sets: "sets", patterns: "patterns", page: "Page" },
+  ru: { showing: "Показано", of: "из", sets: "наборов", patterns: "паттернов", page: "Страница" }
 }[locale];
 
 const reasoningSources = [
@@ -159,76 +159,173 @@ async function loadReasoningFrames() {
   return new Map(responses.flat().map((frame) => [frame.id.toUpperCase(), frame]));
 }
 
+function patternIndexFallback(list) {
+  return [...list.querySelectorAll("a[data-language]")].map((anchor) => ({
+    id: anchor.dataset.patternId,
+    title_ru: anchor.querySelector("small[lang]")?.textContent || "",
+    group_id: anchor.dataset.category || "",
+    set_id: "",
+    languages: (anchor.dataset.language || "en de").split(" "),
+    formulas: [anchor.querySelector("strong")?.textContent || ""],
+    href: anchor.getAttribute("href"),
+    searchText: anchor.dataset.searchText || ""
+  }));
+}
+
+async function loadPatternCatalogue(list) {
+  try {
+    const response = await fetch("/api/v1/search-index.json");
+    if (!response.ok) throw new Error(`search-index ${response.status}`);
+    const payload = await response.json();
+    const root = payload.data && typeof payload.data === "object" ? payload.data : payload;
+    const patterns = Array.isArray(root.patterns) ? root.patterns : [];
+    if (!patterns.length) throw new Error("search-index empty");
+    return patterns.map((record) => ({
+      id: record.id,
+      title_ru: record.title_ru || "",
+      group_id: record.group_id || "",
+      set_id: record.set_id || "",
+      languages: record.languages || ["en", "de"],
+      formulas: record.formulas || [],
+      href: String(record.canonical_url || "").replace(/^https?:\/\/[^/]+/, "").replace(/^\/en\//, `/${locale}/`) || `/${locale}/practice/${String(record.id).toLowerCase()}/`,
+      searchText: `${record.id} ${record.title_ru || ""} ${(record.formulas || []).join(" ")}`.toLocaleLowerCase(locale)
+    }));
+  } catch {
+    return patternIndexFallback(list);
+  }
+}
+
 function setupPatternFilters(reasoningFrames = new Map()) {
   const list = document.querySelector("[data-pattern-list]");
   if (!list) return;
-  const buttons = [...document.querySelectorAll("[data-language-filter]")];
   const category = document.querySelector("[data-category-filter]");
   const search = document.querySelector("[data-pattern-search]");
-  const items = [...list.querySelectorAll("a[data-language]")];
   const empty = list.querySelector("[data-empty-state]");
   const count = document.querySelector("[data-pattern-count]");
-
-  for (const item of items) {
-    const frame = reasoningFrames.get(patternIdFromHref(item.getAttribute("href")));
-    const move = frame?.reasoning?.move || "";
-    item.dataset.reasoning = move;
-    if (frame) {
-      const reasoningSearch = [frame.logic, frame.reasoning?.move, frame.reasoning?.what_it_does_en, frame.reasoning?.what_it_does_ru].filter(Boolean).join(" ");
-      item.dataset.searchText = `${item.dataset.searchText || ""} ${reasoningSearch}`.toLocaleLowerCase(locale);
+  const pagination = document.querySelector("[data-pattern-pagination]");
+  const pageSize = Number.parseInt(list.dataset.pageSize || "30", 10) || 30;
+  const stateKey = `metkagram:practice-list:v1:${locale}`;
+  const store = {
+    read() {
+      try { return JSON.parse(sessionStorage.getItem(stateKey)) || null; } catch { return null; }
+    },
+    write(value) {
+      try { sessionStorage.setItem(stateKey, JSON.stringify(value)); } catch { /* storage unavailable */ }
     }
-  }
-
-  const moves = [...new Set(items.map((item) => item.dataset.reasoning).filter(Boolean))].sort();
-  let reasoning;
-  if (moves.length) {
-    const tools = document.querySelector(".practice-tools");
-    const searchLabel = search?.closest("label");
-    const label = document.createElement("label");
-    label.textContent = locale === "ru" ? "Логический ход" : "Reasoning move";
-    reasoning = document.createElement("select");
-    reasoning.dataset.reasoningFilter = "";
-    const all = document.createElement("option");
-    all.value = "";
-    all.textContent = locale === "ru" ? "Все логические ходы" : "All reasoning moves";
-    reasoning.append(all);
-    for (const move of moves) {
-      const option = document.createElement("option");
-      option.value = move;
-      option.textContent = move;
-      reasoning.append(option);
-    }
-    label.append(reasoning);
-    if (searchLabel) searchLabel.before(label);
-    else tools?.append(label);
-  }
-
-  const apply = () => {
-    const active = buttons.filter((button) => button.getAttribute("aria-pressed") === "true").map((button) => button.dataset.languageFilter);
-    const query = search?.value.trim().toLocaleLowerCase(locale) || "";
-    let visible = 0;
-    for (const item of items) {
-      const languages = item.dataset.language.split(" ");
-      const matchesLanguage = active.some((language) => languages.includes(language));
-      const matchesCategory = !category?.value || item.dataset.category === category.value;
-      const matchesReasoning = !reasoning?.value || item.dataset.reasoning === reasoning.value;
-      const matchesQuery = !query || item.dataset.searchText.includes(query);
-      const match = matchesLanguage && matchesCategory && matchesReasoning && matchesQuery;
-      item.hidden = !match;
-      if (match) visible += 1;
-    }
-    if (empty) empty.hidden = visible > 0;
-    if (count) count.textContent = `${copy.showing} ${visible} ${copy.patterns}`;
   };
-  buttons.forEach((button) => button.addEventListener("click", () => {
-    const next = button.getAttribute("aria-pressed") !== "true";
-    if (!next && buttons.filter((item) => item.getAttribute("aria-pressed") === "true").length === 1) return;
-    button.setAttribute("aria-pressed", String(next));
+
+  loadPatternCatalogue(list).then((catalogue) => {
+    document.querySelector(".practice-nojs-note")?.setAttribute("hidden", "");
+    for (const item of catalogue) {
+      const frame = reasoningFrames.get(String(item.id).toUpperCase());
+      item.reasoning = frame?.reasoning?.move || "";
+      if (frame) {
+        const reasoningSearch = [frame.logic, frame.reasoning?.move, frame.reasoning?.what_it_does_en, frame.reasoning?.what_it_does_ru].filter(Boolean).join(" ");
+        item.searchText = `${item.searchText} ${reasoningSearch}`.toLocaleLowerCase(locale);
+      }
+    }
+
+    let reasoning;
+    const moves = [...new Set(catalogue.map((item) => item.reasoning).filter(Boolean))].sort();
+    if (moves.length) {
+      const filters = document.querySelector(".practice-filters");
+      const label = document.createElement("label");
+      label.textContent = locale === "ru" ? "Логический ход" : "Reasoning move";
+      reasoning = document.createElement("select");
+      reasoning.dataset.reasoningFilter = "";
+      const all = document.createElement("option");
+      all.value = "";
+      all.textContent = locale === "ru" ? "Все логические ходы" : "All reasoning moves";
+      reasoning.append(all);
+      for (const move of moves) {
+        const option = document.createElement("option");
+        option.value = move;
+        option.textContent = move;
+        reasoning.append(option);
+      }
+      label.append(reasoning);
+      (filters || document.querySelector(".practice-tools"))?.append(label);
+    }
+
+    const state = Object.assign({ q: "", category: "", reasoning: "", page: 1, scroll: 0 }, store.read() || {});
+    if (search) search.value = state.q;
+    if (category) category.value = state.category;
+
+    const buildRow = (item, index) => {
+      const anchor = document.createElement("a");
+      anchor.href = item.href;
+      anchor.dataset.patternId = item.id;
+      anchor.dataset.language = item.languages.join(" ");
+      anchor.dataset.category = item.group_id;
+      anchor.dataset.searchText = item.searchText;
+      const number = document.createElement("span");
+      number.className = "document-number";
+      number.textContent = String(index + 1).padStart(4, "0");
+      const body = document.createElement("span");
+      const title = document.createElement("strong");
+      title.textContent = locale === "ru" ? item.title_ru || item.formulas[0] || item.id : item.formulas[0] || item.title_ru || item.id;
+      const cue = document.createElement("small");
+      cue.lang = "ru";
+      cue.textContent = item.title_ru;
+      const meta = document.createElement("small");
+      meta.textContent = `${item.id}${item.set_id ? ` · ${item.set_id}` : ""} · ${item.languages.map((language) => language.toUpperCase()).join(" / ")}`;
+      body.append(title, cue, meta);
+      const arrow = document.createElement("span");
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.textContent = "↗";
+      anchor.append(number, body, arrow);
+      return anchor;
+    };
+
+    const apply = () => {
+      const query = state.q.trim().toLocaleLowerCase(locale);
+      const filtered = catalogue.filter((item) =>
+        (!state.category || item.group_id === state.category) &&
+        (!state.reasoning || item.reasoning === state.reasoning) &&
+        (!query || item.searchText.includes(query)));
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      state.page = Math.min(Math.max(1, state.page), totalPages);
+      const pageItems = filtered.slice((state.page - 1) * pageSize, state.page * pageSize);
+      list.querySelectorAll("a[data-language]").forEach((anchor) => anchor.remove());
+      const fragment = document.createDocumentFragment();
+      pageItems.forEach((item, index) => fragment.append(buildRow(item, (state.page - 1) * pageSize + index)));
+      list.insertBefore(fragment, empty || null);
+      if (empty) empty.hidden = filtered.length > 0;
+      if (count) count.textContent = `${copy.showing} ${filtered.length} ${copy.patterns}`;
+      if (pagination) {
+        pagination.hidden = filtered.length <= pageSize;
+        pagination.replaceChildren();
+        const prev = document.createElement("button");
+        prev.type = "button";
+        prev.textContent = pagination.dataset.copyPrev || "← Previous";
+        prev.disabled = state.page <= 1;
+        prev.addEventListener("click", () => { state.page -= 1; apply(); list.scrollIntoView({ block: "start" }); });
+        const info = document.createElement("span");
+        info.dataset.patternPageInfo = "";
+        info.textContent = `${copy.page} ${state.page} ${copy.of} ${totalPages}`;
+        const next = document.createElement("button");
+        next.type = "button";
+        next.textContent = pagination.dataset.copyNext || "Next →";
+        next.disabled = state.page >= totalPages;
+        next.addEventListener("click", () => { state.page += 1; apply(); list.scrollIntoView({ block: "start" }); });
+        pagination.append(prev, info, next);
+      }
+      store.write(state);
+    };
+
+    search?.addEventListener("input", () => { state.q = search.value; state.page = 1; apply(); });
+    category?.addEventListener("change", () => { state.category = category.value; state.page = 1; apply(); });
+    reasoning?.addEventListener("change", () => { state.reasoning = reasoning.value; state.page = 1; apply(); });
+    list.addEventListener("click", (event) => {
+      if (event.target.closest("a[data-language]")) {
+        state.scroll = window.scrollY;
+        store.write(state);
+      }
+    });
+
     apply();
-  }));
-  category?.addEventListener("change", apply);
-  reasoning?.addEventListener("change", apply);
-  search?.addEventListener("input", apply);
+    if (state.scroll) window.scrollTo(0, state.scroll);
+  });
 }
 
 function findReasoningFrame(reasoningFrames) {

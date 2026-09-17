@@ -226,23 +226,32 @@ async function setupPatternPractice() {
 function setupPracticeQueue() {
   const intro = document.querySelector('.practice-intro');
   const list = document.querySelector('[data-pattern-list]');
-  if (!intro || !list || patternIdFromPath()) return;
+  const continueSlot = document.querySelector('[data-practice-continue]');
+  if ((!intro && !continueSlot) || !list || patternIdFromPath()) return;
 
   const render = () => {
     document.querySelector('[data-practice-review-queue]')?.remove();
     const state = readState();
     const entries = Object.values(state.items || {}).filter((item) => item?.patternId && item?.language && item?.dueAt);
-    if (!entries.length) return;
+    if (!entries.length) {
+      if (continueSlot) continueSlot.hidden = true;
+      return;
+    }
     const now = Date.now();
     const due = entries.filter((item) => new Date(item.dueAt).getTime() <= now).sort((a, b) => new Date(a.dueAt) - new Date(b.dueAt));
     const upcoming = entries.filter((item) => new Date(item.dueAt).getTime() > now).sort((a, b) => new Date(a.dueAt) - new Date(b.dueAt));
     const patternLinks = new Map([...list.querySelectorAll('[data-pattern-id]')].map((link) => [link.dataset.patternId.toUpperCase(), link.getAttribute('href')]));
     const queue = document.createElement('section');
-    queue.className = 'practice-review-queue section-pad ruled';
+    queue.className = continueSlot ? 'practice-review-queue' : 'practice-review-queue section-pad ruled';
     queue.dataset.practiceReviewQueue = '';
     const visible = (due.length ? due : upcoming).slice(0, 6);
-    queue.innerHTML = `<div><p class="eyebrow">${copy.eyebrow}</p><h2>${copy.queueTitle}</h2><div class="practice-review-summary"><span><strong>${due.length}</strong> ${copy.due}</span><span><strong>${upcoming.length}</strong> ${copy.upcoming}</span><span>${copy.localNote}</span></div></div><div class="practice-review-list">${visible.map((item) => `<a href="${escapeHtml(patternLinks.get(item.patternId.toUpperCase()) || item.patternPath || `/${locale}/practice/`)}#active-practice"><span><strong>${escapeHtml(item.patternId)}</strong> · ${item.language.toUpperCase()}<br><small>${new Date(item.dueAt).getTime() <= now ? copy.dueNow : copy.dueOn(formatDate(item.dueAt))}</small></span><span>${copy.review} →</span></a>`).join('')}</div>`;
-    intro.after(queue);
+    queue.innerHTML = `<div><p class="eyebrow">${copy.eyebrow}</p><h2>${copy.queueTitle}</h2><div class="practice-review-summary"><span><strong>${due.length}</strong> ${copy.due}</span><span><strong>${upcoming.length}</strong> ${copy.upcoming}</span><span>${copy.localNote}</span></div></div><div class="practice-review-list">${visible.map((item) => `<a href="${escapeHtml(patternLinks.get(item.patternId.toUpperCase()) || item.patternPath || `/${locale}/practice/${item.patternId.toLowerCase()}/`)}#active-practice"><span><strong>${escapeHtml(item.patternId)}</strong> · ${item.language.toUpperCase()}<br><small>${new Date(item.dueAt).getTime() <= now ? copy.dueNow : copy.dueOn(formatDate(item.dueAt))}</small></span><span>${copy.review} →</span></a>`).join('')}</div>`;
+    if (continueSlot) {
+      continueSlot.hidden = false;
+      continueSlot.replaceChildren(queue);
+    } else {
+      intro.after(queue);
+    }
   };
 
   render();

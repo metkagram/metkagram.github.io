@@ -45,9 +45,9 @@ function addAtlasEntryPoint(locale, topics) {
   if (html.includes(`href="/${locale}/patterns/"`)) return;
   const ru = locale === "ru";
   const teaser = `<details id="pattern-atlas" class="practice-secondary-path ruled" data-practice-secondary="atlas"><summary><span>${ru ? "Углублённый поиск" : "Deeper exploration"}</span><strong>${ru ? "Атлас паттернов" : "Pattern Atlas"}</strong><small>${ru ? "Тематические маршруты по коммуникативной задаче" : "Editorial routes organised by communication goal"}</small></summary><div class="practice-secondary-body section-pad"><p>${ru ? "Не знаете ID или категорию? Начните с того, что хотите сделать в речи: аргументировать, уточнить, не согласиться, сравнить, задать вопрос или построить рабочее сообщение." : "Do not start from an internal category code. Start from what you need to do: argue a point, hedge a claim, disagree, compare options, ask a precise question, or communicate at work."}</p><p><a class="primary-link" href="/${locale}/patterns/">${ru ? "Открыть тематические маршруты" : "Browse communication goals"} <span aria-hidden="true">→</span></a></p><small>${topics.length} ${ru ? "редакционных маршрутов, собранных из существующих проверяемых study sets" : "editorial routes built from existing validated study sets"}</small></div></details>`;
-  const marker = `<section id="all-patterns"`;
-  if (!html.includes(marker)) throw new Error(`Could not find practice-page insertion point for ${locale}`);
-  fs.writeFileSync(file, html.replace(marker, `${teaser}<section id="all-patterns"`));
+  const marker = `<div data-practice-discovery-slot></div>`;
+  if (!html.includes(marker)) throw new Error(`Could not find practice-page discovery slot for ${locale}`);
+  fs.writeFileSync(file, html.replace(marker, `${teaser}${marker}`));
 }
 
 function addPartnershipPilots(locale, opportunities) {

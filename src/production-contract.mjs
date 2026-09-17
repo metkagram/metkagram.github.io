@@ -131,9 +131,9 @@ export function validateProductionSnapshot(snapshot, expected = buildProductionC
     routes.samplePatternEn,
   ]) requirePublishedHtml(failures, snapshot, route, expected);
 
-  requireText(failures, snapshot, routes.homeEn, 'data-product-entry="lens" href="/en/lens/"', "Lens primary product entry");
-  requireText(failures, snapshot, routes.homeEn, 'data-product-entry="library" href="/en/practice/"', "Pattern Library secondary entry");
-  requireText(failures, snapshot, routes.homeRu, 'data-product-entry="lens" href="/ru/lens/"', "Russian Lens primary product entry");
+  requireText(failures, snapshot, routes.homeEn, 'data-product-entry="library" href="/en/practice/"', "Pattern Library primary product entry");
+  requireText(failures, snapshot, routes.homeEn, 'class="annotated-line home-example-sentence"', "homepage real annotated example");
+  requireText(failures, snapshot, routes.homeRu, 'data-product-entry="library" href="/ru/practice/"', "Russian Pattern Library primary product entry");
   requireText(failures, snapshot, routes.practiceEn, 'data-practice-entry', "intent-first Practice entry");
   requireText(failures, snapshot, routes.practiceEn, 'data-intent-discovery="practice"', "reviewed intent discovery");
   requireText(failures, snapshot, routes.lensEn, 'data-pattern-lens', "Pattern Lens workbench");

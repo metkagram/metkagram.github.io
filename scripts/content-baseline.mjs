@@ -1,19 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
-import { loadEditorialCorpus } from "../src/pattern-sources.mjs";
+import { loadContent } from "../src/content.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const TARGET = path.join(ROOT, "reports", "redesign-baseline.json");
 
-const { patterns } = loadEditorialCorpus(ROOT);
-
-const frameDir = path.join(ROOT, "data", "reasoning-frames");
-for (const name of fs.readdirSync(frameDir).filter((file) => file.endsWith(".json")).sort()) {
-  const payload = JSON.parse(fs.readFileSync(path.join(frameDir, name), "utf8"));
-  const frames = Array.isArray(payload) ? payload : Object.values(payload);
-  for (const frame of frames) if (frame && frame.id && Array.isArray(frame.langs)) patterns.push(frame);
-}
+// Use the same loader as the build so enrichment/merge behaviour is included.
+const { advancedPatterns: patterns } = loadContent();
 
 const annotationSource = path.join(ROOT, "data", "pattern-annotations.json.gz");
 const annotationPayload = JSON.parse(zlib.gunzipSync(fs.readFileSync(annotationSource)).toString("utf8"));

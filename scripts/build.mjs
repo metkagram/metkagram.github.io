@@ -256,7 +256,7 @@ function build() {
 
   writeRoute("/", gatewayPage());
   for (const locale of locales) {
-    writeRoute(`/${locale}/`, localeHome(locale, content));
+    writeRoute(`/${locale}/`, localeHome(locale, content, patternAnnotations));
     writeRoute(`/${locale}/explore/`, explorePage(locale, content));
     writeRoute(`/${locale}/practice/`, practicePage(locale, content.advancedPatterns, content.studySets));
     writeRoute(`/${locale}/method/`, methodPage(locale));
@@ -283,11 +283,16 @@ function build() {
         }
       }
     }
-    for (const pattern of content.advancedPatterns) {
-      const patternHtml = patternPage(locale, pattern, patternAnnotations);
+    content.advancedPatterns.forEach((pattern, patternIndex) => {
+      const next = content.advancedPatterns.slice(patternIndex + 1).find((candidate) => candidate.set_id === pattern.set_id) || null;
+      let prev = null;
+      for (let index = patternIndex - 1; index >= 0; index -= 1) {
+        if (content.advancedPatterns[index].set_id === pattern.set_id) { prev = content.advancedPatterns[index]; break; }
+      }
+      const patternHtml = patternPage(locale, pattern, patternAnnotations, { next, prev });
       writeRoute(patternPath(locale, pattern), patternHtml, pattern.gen?.lastGeneratedAt || SITE_RELEASE_DATE);
       writeLegacyRedirect(legacyPatternPath(locale, pattern), patternPath(locale, pattern), patternHtml);
-    }
+    });
     for (const set of content.studySets.sets) {
       const setHtml = studySetPage(locale, set, content.advancedPatterns.filter((pattern) => pattern.set_id === set.id));
       writeRoute(studySetPath(locale, set), setHtml);

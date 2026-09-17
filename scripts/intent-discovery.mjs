@@ -138,7 +138,7 @@ function enhancePractice(locale, content) {
   let html = readFile(relative);
   if (!html.includes('data-intent-discovery="practice"')) {
     const reasoningMarker = '<details id="reasoning-frames" class="practice-secondary-path ruled connectivity-section" data-practice-secondary="reasoning" data-connectivity="reasoning-nav">';
-    const toolsMarker = '<section id="all-patterns" class="practice-tools';
+    const toolsMarker = '<div data-practice-discovery-slot></div>';
     const section = practiceIntentSection(locale);
     if (html.includes(reasoningMarker)) html = html.replace(reasoningMarker, `${section}${reasoningMarker}`);
     else if (html.includes(toolsMarker)) html = html.replace(toolsMarker, `${section}${toolsMarker}`);

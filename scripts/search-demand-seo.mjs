@@ -63,7 +63,7 @@ if (!index.includes('id="search-demand-clusters"')) {
     return `<a href="${studySetPath("en", set)}"><strong>${esc(title)}</strong><small>${esc(set.description)}</small></a>`;
   }).join("");
   const section = `<section id="search-demand-clusters" class="page-head section-pad compact ruled"><p class="eyebrow">Practice by goal</p><h2>English sentence patterns by communication task</h2><p>Choose a focused B2–C1 practice set when you know what you need to say: reframe a problem, hedge a claim, explain a cause, manage disagreement or compare trade-offs.</p></section><section class="document-index section-pad">${links}</section>`;
-  index = index.replace('<section id="all-patterns"', `${section}<section id="all-patterns"`);
+  index = index.replace('<div data-practice-discovery-slot></div>', `${section}<div data-practice-discovery-slot></div>`);
   write("en/practice/index.html", index);
 }
 

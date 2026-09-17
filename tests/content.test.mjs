@@ -61,18 +61,18 @@ test("GitHub Pages artifact has a canonical hostname root and localized HTML", (
   assert.doesNotMatch(root, /location\.replace\(/);
   assert.doesNotMatch(root, /<meta http-equiv="refresh"/);
   assert.match(en, /<html lang="en">/);
-  assert.match(en, /<span>Learn<\/span><span>a language<\/span><span>through<\/span><mark>patterns\.<\/mark>/);
+  assert.match(en, /Learn a language through patterns\./);
   assert.match(en, /ANNOTATION STUDIO/);
-  assert.match(en, /Pattern library/);
-  assert.match(en, /class="studio-primary-action" data-product-entry="lens" href="\/en\/lens\/">Start with a real sentence/);
-  assert.match(en, /data-product-entry="library" href="\/en\/practice\/">Explore the pattern library/);
+  assert.match(en, /A real example from the library/);
+  assert.match(en, /class="home-primary-action" data-product-entry="library" href="\/en\/practice\/">Open the pattern library/);
+  assert.match(en, /class="annotated-line home-example-sentence" lang="en"/);
   assert.doesNotMatch(en, /Open a topic set/);
   assert.doesNotMatch(en, /Разметить\./);
   assert.match(ru, /<html lang="ru">/);
-  assert.match(ru, /<span>Учите<\/span><span>язык<\/span><span>через<\/span><mark>паттерны\.<\/mark>/);
+  assert.match(ru, /Учите язык через паттерны\./);
   assert.match(ru, /СТУДИЯ РАЗМЕТКИ/);
-  assert.match(ru, /class="studio-primary-action" data-product-entry="lens" href="\/ru\/lens\/">Начать с реальной фразы/);
-  assert.match(ru, /data-product-entry="library" href="\/ru\/practice\/">Исследовать библиотеку паттернов/);
+  assert.match(ru, /class="home-primary-action" data-product-entry="library" href="\/ru\/practice\/">Открыть библиотеку паттернов/);
+  assert.match(ru, /Настоящий пример из библиотеки/);
   assert.doesNotMatch(ru, /Открыть тематический сет/);
   assert.doesNotMatch(ru, /<span>Mark\.<\/span>/);
   assert.ok(fs.existsSync(path.join(DIST, "en/lens/index.html")));
@@ -93,8 +93,11 @@ test("primary navigation stays stable while About remains a secondary destinatio
     assert.match(header, new RegExp(`href="/${locale}/practice/"`));
     assert.match(header, /class="locale-switch"/);
     assert.match(page, new RegExp(`class="footer-links"[\\s\\S]*href="/${locale}/about/"`));
-    assert.match(page, /data-language-filter="en"/);
-    assert.match(page, /data-language-filter="de"/);
+    assert.match(page, /data-pattern-search/);
+    assert.match(page, /data-category-filter/);
+    assert.match(page, /data-pattern-pagination/);
+    assert.match(page, /id="study-sets"/);
+    assert.match(page, /data-practice-discovery-slot/);
   }
 });
 
@@ -167,7 +170,7 @@ test("home pages make the unified annotation and pattern routes explicit", () =>
   assert.match(en, /href="\/en\/ai\/"/);
   assert.match(en, /href="\/en\/ideas\/"/);
   assert.match(en, /Propose an idea/);
-  assert.match(ru, /Изучать язык/);
+  assert.match(ru, /Учите язык через паттерны/);
   assert.match(ru, /href="\/ru\/explore\/"/);
   assert.match(ru, /href="\/ru\/practice\/"/);
   assert.match(ru, /href="\/ru\/ai\/"/);

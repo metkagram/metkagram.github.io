@@ -141,9 +141,9 @@ function reviewedSection(locale) {
 for (const locale of ["en", "ru"]) {
   patch(`${locale}/practice/index.html`, (html) => {
     if (html.includes("data-reviewed-discovery")) return html;
-    const marker = /<section\b[^>]*\bid="all-patterns"[^>]*>/i;
-    if (!marker.test(html)) throw new Error(`${locale} Practice page has no #all-patterns catalogue marker`);
-    return html.replace(marker, (match) => `${reviewedSection(locale)}${match}`);
+    const marker = '<div data-practice-discovery-slot></div>';
+    if (!html.includes(marker)) throw new Error(`${locale} Practice page has no discovery slot marker`);
+    return html.replace(marker, `${reviewedSection(locale)}${marker}`);
   });
 }
 
@@ -215,8 +215,8 @@ patch("llms.txt", (text) => text.includes("## Editorial readiness") ? text : `${
 for (const relative of ["en/practice/index.html", "ru/practice/index.html"]) {
   const html = fs.readFileSync(path.join(DIST, relative), "utf8");
   const reviewedIndex = html.indexOf("data-reviewed-discovery");
-  const catalogueIndex = html.indexOf('id="all-patterns"');
-  if (reviewedIndex < 0 || catalogueIndex < 0 || reviewedIndex > catalogueIndex) throw new Error(`${relative}: reviewed discovery must appear before the full catalogue`);
+  const slotIndex = html.indexOf("data-practice-discovery-slot");
+  if (reviewedIndex < 0 || slotIndex < 0 || reviewedIndex > slotIndex) throw new Error(`${relative}: reviewed discovery must be published inside the practice discovery section`);
 }
 if (publication.sets.some((set) => set.tier === "D" && (set.starter_eligible || set.featured_start))) {
   throw new Error("Tier D must fail closed from starter discovery");

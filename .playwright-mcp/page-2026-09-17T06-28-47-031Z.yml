@@ -1,0 +1,161 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f3e3]:
+    - link "Metkagram" [ref=f3e4] [cursor=pointer]:
+      - /url: /en/
+      - img "Metkagram" [ref=f3e5]
+    - button "Menu" [ref=f3e6] [cursor=pointer]
+    - generic "Choose the interface language" [ref=f3e8]:
+      - link "EN" [ref=f3e9] [cursor=pointer]:
+        - /url: /en/
+      - link "RU" [ref=f3e10] [cursor=pointer]:
+        - /url: /ru/
+  - main [ref=f3e11]:
+    - region [ref=f3e12]:
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]:
+          - paragraph [ref=f3e15]: ANNOTATED LANGUAGE PATTERNS
+          - heading "Learn a language through patterns." [level=1] [ref=f3e16]:
+            - generic [ref=f3e17]: Learn
+            - generic [ref=f3e18]: a language
+            - generic [ref=f3e19]: through
+            - mark [ref=f3e20]: patterns.
+          - paragraph [ref=f3e21]: Bring a real sentence you care about. Metkagram finds a reusable frame, shows what it is doing, and asks you to make the structure your own.
+          - link "Start with a real sentence" [ref=f3e22] [cursor=pointer]:
+            - /url: /en/lens/
+            - text: Start with a real sentence
+            - generic [aria-hidden] [ref=f3e23]: ↗
+        - generic "From annotated phrases to reusable patterns" [ref=f3e24]:
+          - generic [ref=f3e25]:
+            - article [ref=f3e26]:
+              - generic [ref=f3e27]:
+                - generic [ref=f3e28]: S
+                - generic [ref=f3e29]: "01"
+              - paragraph [ref=f3e30]: It’s hard to focus with everything pulling at me.
+              - generic "Sentence tags" [ref=f3e31]:
+                - generic [ref=f3e32]: S
+                - generic [ref=f3e33]: V
+                - generic [ref=f3e34]: p2
+                - generic [ref=f3e35]: Hf
+            - article [ref=f3e36]:
+              - generic [ref=f3e37]:
+                - generic [ref=f3e38]: V
+                - generic [ref=f3e39]: "02"
+              - paragraph [ref=f3e40]: When I plan it out, things feel lighter.
+              - generic "Sentence tags" [ref=f3e41]:
+                - generic [ref=f3e42]: S
+                - generic [ref=f3e43]: V
+                - generic [ref=f3e44]: p2
+                - generic [ref=f3e45]: Hf
+            - article [ref=f3e46]:
+              - generic [ref=f3e47]:
+                - generic [ref=f3e48]: p2
+                - generic [ref=f3e49]: "03"
+              - paragraph [ref=f3e50]: Give me one clear next step.
+              - generic "Sentence tags" [ref=f3e51]:
+                - generic [ref=f3e52]: S
+                - generic [ref=f3e53]: V
+                - generic [ref=f3e54]: p2
+                - generic [ref=f3e55]: Hf
+          - generic [ref=f3e56]:
+            - paragraph [ref=f3e57]: Pattern library
+            - article [ref=f3e58]:
+              - generic [ref=f3e59]: S
+              - generic [ref=f3e60]:
+                - strong [ref=f3e61]: Struggle statement
+                - code [ref=f3e62]: It’s hard to [V] with [p2].
+            - article [ref=f3e63]:
+              - generic [ref=f3e64]: V
+              - generic [ref=f3e65]:
+                - strong [ref=f3e66]: Value realization
+                - code [ref=f3e67]: When I [V], [S] feels [p2].
+            - article [ref=f3e68]:
+              - generic [ref=f3e69]: p2
+              - generic [ref=f3e70]:
+                - strong [ref=f3e71]: Progress trigger
+                - code [ref=f3e72]: Give me [p2] and I’ll [V].
+            - link "Explore the pattern library" [ref=f3e73] [cursor=pointer]:
+              - /url: /en/practice/
+              - text: Explore the pattern library
+              - generic [aria-hidden] [ref=f3e74]: →
+      - navigation "Ways to use Metkagram" [ref=f3e75]:
+        - link "01 Learn a language Read real phrases and see how language fits together." [ref=f3e76] [cursor=pointer]:
+          - /url: /en/explore/
+          - generic [ref=f3e77]: "01"
+          - strong [ref=f3e78]: Learn a language
+          - generic [ref=f3e79]: Read real phrases and see how language fits together.
+          - generic [aria-hidden] [ref=f3e80]: →
+        - link "02 Analyse structure Compare word roles and recurring constructions." [ref=f3e81] [cursor=pointer]:
+          - /url: /en/method/
+          - generic [ref=f3e82]: "02"
+          - strong [ref=f3e83]: Analyse structure
+          - generic [ref=f3e84]: Compare word roles and recurring constructions.
+          - generic [aria-hidden] [ref=f3e85]: →
+        - link "03 Build with data Connect clean patterns to agents and language tools." [ref=f3e86] [cursor=pointer]:
+          - /url: /en/ai/
+          - generic [ref=f3e87]: "03"
+          - strong [ref=f3e88]: Build with data
+          - generic [ref=f3e89]: Connect clean patterns to agents and language tools.
+          - generic [aria-hidden] [ref=f3e90]: →
+        - link "04 Propose an idea Discuss a pilot, study, or partnership with the team." [ref=f3e91] [cursor=pointer]:
+          - /url: /en/ideas/
+          - generic [ref=f3e92]: "04"
+          - strong [ref=f3e93]: Propose an idea
+          - generic [ref=f3e94]: Discuss a pilot, study, or partnership with the team.
+          - generic [aria-hidden] [ref=f3e95]: →
+      - generic [ref=f3e96]:
+        - generic [ref=f3e97]:
+          - paragraph [ref=f3e98]: Product boundary
+          - heading "What is published now" [level=2] [ref=f3e99]
+        - generic [ref=f3e100]:
+          - paragraph [ref=f3e101]: Annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims.
+          - paragraph [ref=f3e102]: Current reuse follows the Metkagram licensing terms. Substantial reuse, redistribution, model training and commercial integration require scoped permission.
+          - generic [ref=f3e103]:
+            - link "French pilot →" [ref=f3e104] [cursor=pointer]:
+              - /url: /en/practice/language/french/
+            - link "Rights and licensing →" [ref=f3e105] [cursor=pointer]:
+              - /url: /en/licensing/
+    - complementary [ref=f3e106]:
+      - generic [ref=f3e107]:
+        - paragraph [ref=f3e108]: Metkagram · Pattern Lens
+        - heading "Try Pattern Lens" [level=2] [ref=f3e109]
+        - paragraph [ref=f3e110]: Paste a real sentence and find reusable structures from the public Metkagram library.
+      - link "Pattern Lens" [ref=f3e111] [cursor=pointer]:
+        - /url: /en/lens/
+        - text: Pattern Lens
+        - generic [aria-hidden] [ref=f3e112]: →
+  - complementary "Share or print this page" [ref=f3e113]:
+    - generic [ref=f3e115]:
+      - button "Share" [ref=f3e116] [cursor=pointer]
+      - link "Telegram" [ref=f3e117] [cursor=pointer]:
+        - /url: https://t.me/share/url?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F&text=Language%20Annotation%20%26%20Pattern%20Library%20%7C%20Metkagram
+      - link "LinkedIn" [ref=f3e118] [cursor=pointer]:
+        - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F
+      - link "WhatsApp" [ref=f3e119] [cursor=pointer]:
+        - /url: https://wa.me/?text=Language%20Annotation%20%26%20Pattern%20Library%20%7C%20Metkagram%20https%3A%2F%2Fmetkagram.github.io%2Fen%2F
+      - link "X" [ref=f3e120] [cursor=pointer]:
+        - /url: https://x.com/intent/post?url=https%3A%2F%2Fmetkagram.github.io%2Fen%2F&text=Language%20Annotation%20%26%20Pattern%20Library%20%7C%20Metkagram
+      - button "Copy link" [ref=f3e121] [cursor=pointer]
+      - button "Print page" [ref=f3e122] [cursor=pointer]
+    - status [ref=f3e123]
+  - contentinfo [ref=f3e124]:
+    - generic [ref=f3e125]: ANNOTATION STUDIO
+    - navigation "Metkagram workflow" [ref=f3e126]:
+      - link "MARK" [ref=f3e127] [cursor=pointer]:
+        - /url: /en/explore/
+      - generic [aria-hidden] [ref=f3e128]: ›
+      - link "PATTERN" [ref=f3e129] [cursor=pointer]:
+        - /url: /en/practice/
+      - generic [aria-hidden] [ref=f3e130]: ›
+      - link "APPLY" [ref=f3e131] [cursor=pointer]:
+        - /url: /en/method/
+    - navigation "About Metkagram" [ref=f3e132]:
+      - link "About" [ref=f3e133] [cursor=pointer]:
+        - /url: /en/about/
+      - link "METKAGRAM ©" [ref=f3e134] [cursor=pointer]:
+        - /url: /en/contact/
+  - dialog "Analytics settings" [ref=f3e135]:
+    - text: We use optional analytics to improve this site.
+    - button "Allow" [ref=f3e136] [cursor=pointer]
+    - button "Decline" [ref=f3e137] [cursor=pointer]
