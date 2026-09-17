@@ -56,7 +56,7 @@ test('schedules needs-work sooner and expands successful review intervals', () =
   assert.equal(laterSuccess.streak, 3);
 });
 
-test('production build wires practice and Lens bridge into generated pages', (t) => {
+test('production build keeps active practice off pattern pages and applies reader typography', (t) => {
   const dist = path.resolve('dist');
   const practiceIndex = path.join(dist, 'en', 'practice', 'index.html');
   if (!fs.existsSync(practiceIndex)) return t.skip('requires npm run build first');
@@ -64,8 +64,10 @@ test('production build wires practice and Lens bridge into generated pages', (t)
   assert.match(fs.readFileSync(practiceIndex, 'utf8'), /\/assets\/practice-loop\.js/);
 
   const patternHtml = fs.readFileSync(path.join(dist, patternPath('en', 'CLF041').slice(1), 'index.html'), 'utf8');
-  assert.match(patternHtml, /\/assets\/practice-loop\.js/);
+  assert.doesNotMatch(patternHtml, /\/assets\/practice-loop\.js/);
+  assert.match(patternHtml, /\/assets\/pattern-reading\.css/);
   assert.match(patternHtml, /data-pattern-id="CLF041"/);
+  assert.equal(fs.existsSync(path.join(dist, 'assets', 'pattern-reading.css')), true);
 
   const lensHtml = fs.readFileSync(path.join(dist, 'en', 'lens', 'index.html'), 'utf8');
   assert.match(lensHtml, /\/assets\/lens-practice-bridge\.js/);
