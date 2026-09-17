@@ -38,17 +38,20 @@ export function parsePatternProgress(rawValue) {
   }
 }
 
-export function readPatternProgress(storage = globalThis.localStorage) {
+export function readPatternProgress(storage) {
   try {
-    return parsePatternProgress(storage?.getItem(PATTERN_PROGRESS_STORAGE_KEY));
+    const target = storage === undefined ? globalThis.localStorage : storage;
+    return parsePatternProgress(target?.getItem(PATTERN_PROGRESS_STORAGE_KEY));
   } catch {
     return emptyPatternProgressState();
   }
 }
 
-export function writePatternProgress(state, storage = globalThis.localStorage) {
+export function writePatternProgress(state, storage) {
   try {
-    storage?.setItem(
+    const target = storage === undefined ? globalThis.localStorage : storage;
+    if (!target?.setItem) return false;
+    target.setItem(
       PATTERN_PROGRESS_STORAGE_KEY,
       JSON.stringify(normalizePatternProgressState(state)),
     );
