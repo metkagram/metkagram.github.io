@@ -16,6 +16,12 @@ assert.ok(integrator.includes('p.group_id=family;'));
 const oldNote = "p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';";
 if (!integrator.includes("if (!p.logic.metaphor_ru.includes('meine beiden Eltern'))")) integrator = replaceOnce(integrator, oldNote, "if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) " + oldNote, 'idempotent note');
 if (!integrator.includes("if(p.id==='GFL008')")) integrator = replaceOnce(integrator, "if(p.id==='GFH018')", "if(p.id==='GFL008') p.langs.find(l=>l.lang==='de').formula='Subject + finite verb in second position + ... + wh-phrase + remaining verb parts?';\n  if(p.id==='GFH018')", 'German echo-question formula');
+// The SEO and learner-facing set renderers consume top-level descriptions,
+// not the inventory outcome. Describe the actual topic in both interfaces.
+integrator = replaceOnce(integrator,
+  "title_en:enTitle,levels:['B2','C1']",
+  "title_en:enTitle,description:`Compare how English and German express ${enTitle.toLowerCase()}. Practise reusable constructions with Russian translations.`,description_ru:`${ruTitle}: сравнивайте английские и немецкие конструкции по примерам с русским переводом.`,levels:['B2','C1']",
+  'new set topic descriptions');
 fs.writeFileSync(integratorFile, integrator);
 
 const auditFile = 'src/frame-quality-audit.mjs';
@@ -36,4 +42,22 @@ const newAgreement = `    const normalized = cleanText(text);
     if (match) issues.push({ type: "en_subject_verb_agreement", severity: "high", confidence: "high", evidence: match[0], note: rule.label });`;
 audit = replaceOnce(audit, oldAgreement, newAgreement, 'recognize as-if irrealis without suppressing genuine agreement errors');
 fs.writeFileSync(auditFile, audit);
-console.log('Repaired integration metadata and two grammar-audit false positives; regression thresholds unchanged.');
+
+const shardTestFile = 'tests/pattern-shards.test.mjs';
+let shardTests = fs.readFileSync(shardTestFile, 'utf8');
+shardTests = replaceOnce(shardTests,
+  'const studySets = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "study-sets.json"), "utf8"));',
+  'const studySets = loadContent().studySets;',
+  'shard tests must use the registered extension set order');
+shardTests = replaceOnce(shardTests,
+  'const { patterns, shards } = loadPatternShards({ setOrder: studySetOrder() });',
+  'const { patterns: allPatterns, shards } = loadPatternShards({ setOrder: studySetOrder() });\n  const patterns = allPatterns.filter(isEstablishedPattern);\n  assert.equal(allPatterns.length, baseline.basePatterns.count + expansionPatternIds.length, "established raw patterns plus complete expansion");\n  assert.deepEqual(allPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...expansionPatternIds].sort(), "all new shard IDs must be present");\n  assert.equal(new Set(allPatterns.map(pattern => pattern.id)).size, allPatterns.length, "all shard IDs must be unique");',
+  'separate additive shard membership from the unchanged historical hash');
+shardTests = replaceOnce(shardTests,
+  'assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length, "one shard per study set with base patterns");',
+  'assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length + expansionSetIds.length, "all established shards plus 15 additive sets");',
+  'additive shard count');
+const expansionImport = "import { expansionPatternIds, expansionSetIds } from './helpers/curriculum-contract.mjs';";
+if (!shardTests.includes(expansionImport)) shardTests = expansionImport + '\n' + shardTests;
+fs.writeFileSync(shardTestFile, shardTests);
+console.log('Repaired integration metadata, distinct topic descriptions and additive shard coverage; frozen identity hashes and quality thresholds unchanged.');
