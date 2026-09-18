@@ -7,6 +7,8 @@ import test from "node:test";
 import {
   GENERATED_FOLLOW_UPS,
   hasGeneratedFollowUp,
+  measurePatternExampleDiversity,
+  patternExampleDiversityProblems,
   stripGeneratedFollowUp,
 } from "../src/pattern-example-quality.mjs";
 
@@ -60,6 +62,40 @@ test("canonical pattern shards contain no retired generated follow-up tails", ()
         assertClean(example.translation_ru, "ru", `${base}:examples[${index}].translation_ru`);
         assertClean(example.translation, "ru", `${base}:examples[${index}].translation`);
       }
+    }
+  }
+});
+
+
+test("example diversity gate rejects slot-substitution near-clones", () => {
+  const repetitive = {
+    lang: "en",
+    examples: [
+      { text: "The case for a funding proposal rests on the assumption that the benefits outweigh the cost." },
+      { text: "The case for a product launch rests on the assumption that the benefits outweigh the cost." },
+      { text: "The case for a staffing plan rests on the assumption that the benefits outweigh the cost." },
+      { text: "The case for a supplier change rests on the assumption that the benefits outweigh the cost." },
+      { text: "The case for a transport plan rests on the assumption that the benefits outweigh the cost." }
+    ]
+  };
+  const metrics = measurePatternExampleDiversity(repetitive);
+  assert.ok(metrics.meanPairwiseJaccard > 0.64 || metrics.sharedTokenRatio > 0.58);
+  assert.ok(patternExampleDiversityProblems(repetitive).length > 0);
+});
+
+test("canonical C1 examples are varied enough for productive speaking practice", () => {
+  const patterns = readRawPatterns().filter((pattern) => /^C1[A-Z]+\d+$/.test(pattern.id));
+  assert.ok(patterns.length >= 20, "the canonical C1 communication layer must be covered");
+
+  for (const pattern of patterns) {
+    for (const language of pattern.langs || []) {
+      const problems = patternExampleDiversityProblems(language);
+      const metrics = measurePatternExampleDiversity(language);
+      assert.deepEqual(
+        problems,
+        [],
+        `${pattern.id}/${language.lang}: ${problems.join("; ")}; metrics=${JSON.stringify(metrics)}`
+      );
     }
   }
 });
