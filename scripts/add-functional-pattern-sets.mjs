@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
-import { patternFrameDescription, patternFrameTitle } from "../src/pattern-editorial-copy.mjs";
+import { applyPatternEditorialCopy } from "../src/pattern-editorial-copy.mjs";
 
 const root = process.cwd();
 const setsFile = path.join(root, "data", "study-sets.json");
@@ -70,14 +70,14 @@ for (const [id, title_en, title_ru, description, description_ru, frames] of sets
           examples: contexts.map((context) => ({ text: `**${render(frame[languageIndex], context[languageIndex])}**`, translation_ru: render(frame[2], context[2]) }))
         };
       });
-      patterns.push({
+      patterns.push(applyPatternEditorialCopy({
         id: patternId, group_id: id, set_id: id,
-        title_ru: patternFrameTitle(langs.find((lang) => lang.lang === "en")?.formula || ""),
-        metaphor_ru: patternFrameDescription({ id: patternId, group_id: id, set_id: id, langs }, { id, title_ru, description_ru }),
+        title_ru: render(frame[2], focus[2]),
+        metaphor_ru: `Речевая задача: использовать функцию «${title_ru.toLowerCase()}».`,
         langs,
         formulas: langs.map((lang) => lang.formula),
         gen: { status: "curated", iterations: 1, lastGeneratedAt: "2026-07-17T00:00:00.000Z", languages: ["en", "de"], notes: `Functional pattern: ${title_en}.` }
-      });
+      }, { id, title_en, title_ru, description, description_ru }));
       existingIds.add(patternId);
     });
   });
