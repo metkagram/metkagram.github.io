@@ -606,6 +606,60 @@
       "description_ru": "Говорите об освоении навыка, пересмотре плана, распознавании ошибки и понимании результата.",
       "level": "B2–C1",
       "path": "SHB"
+    },
+    {
+      "id": "SRE",
+      "title_en": "Reporting and evidence in conversation",
+      "title_ru": "Сообщения, источники и признаки",
+      "description": "Report what you have learned, separate observation from hearsay, and qualify evidence without sounding vague.",
+      "description_ru": "Передавайте полученные сведения, отделяйте наблюдение от пересказа и аккуратно формулируйте выводы по признакам.",
+      "level": "B2–C1",
+      "path": "SRE"
+    },
+    {
+      "id": "SCE",
+      "title_en": "Causes, effects and enablement",
+      "title_ru": "Причины, последствия и возможности",
+      "description": "Describe how one action creates, prevents, enables or changes another outcome.",
+      "description_ru": "Описывайте, как одно действие создаёт, предотвращает, облегчает или делает возможным другой результат.",
+      "level": "B2–C1",
+      "path": "SCE"
+    },
+    {
+      "id": "SQT",
+      "title_en": "Questions for deeper reasoning",
+      "title_ru": "Вопросы для более глубокого рассуждения",
+      "description": "Ask about assumptions, alternatives, methods, counterfactuals and the practical meaning of a change.",
+      "description_ru": "Выясняйте основания, альтернативы, способы действия, нереальные сценарии и практический смысл изменений.",
+      "level": "B2–C1",
+      "path": "SQT"
+    },
+    {
+      "id": "SVC",
+      "title_en": "Verb + person + complement patterns",
+      "title_ru": "Глагол + человек + действие",
+      "description": "Practise common verb-complement frames for accusation, influence, permission, reminders, praise and criticism.",
+      "description_ru": "Практикуйте управление глаголов при обвинении, влиянии, разрешении, напоминании, похвале и критике.",
+      "level": "B2–C1",
+      "path": "SVC"
+    },
+    {
+      "id": "SCF",
+      "title_en": "Focus, contrast and reframing",
+      "title_ru": "Фокус, контраст и переформулирование",
+      "description": "Shift attention to the real point, soften disagreement and restate an idea without losing the thread.",
+      "description_ru": "Переносите внимание на главное, мягко корректируйте смысл и переформулируйте мысль без потери нити разговора.",
+      "level": "B2–C1",
+      "path": "SCF"
+    },
+    {
+      "id": "SCH",
+      "title_en": "Change, progression and status",
+      "title_ru": "Изменение, прогресс и состояние",
+      "description": "Describe transitions, unfinished progress, imminent events, likely outcomes and unexpected endpoints.",
+      "description_ru": "Описывайте переходы, незавершённый прогресс, близкие события, ожидаемые результаты и неожиданные итоги.",
+      "level": "B2–C1",
+      "path": "SCH"
     }
   ],
   "learningPathAdds": {
@@ -615,7 +669,9 @@
       "SVA",
       "SVB",
       "SAD",
-      "SNC"
+      "SNC",
+      "SVC",
+      "SCH"
     ],
     "C1-FUNCTIONS": [
       "SPK",
@@ -636,13 +692,17 @@
     "C1-COMMUNICATE": [
       "FRM",
       "UNC",
-      "PST"
+      "PST",
+      "SRE",
+      "SCE",
+      "SCF"
     ],
     "C1-QUESTIONS": [
       "SQA",
       "SQB",
       "SQC",
-      "SQD"
+      "SQD",
+      "SQT"
     ]
   },
   "_updated": "2026-09-17"
