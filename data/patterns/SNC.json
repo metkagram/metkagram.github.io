@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SNC",
+  "patterns": [
+    {
+      "id": "SNC001",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Испытывать трудности с …",
+      "title_en": "[Subject] have/has difficulty [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите конкретное действие, которое даётся трудно. В английском существительное в этом обороте обычно не требует артикля, а действие выражается отглагольной формой.",
+      "editorial_descriptions": {
+        "en": "Name the specific action that is difficult. Difficulty is normally uncountable in this construction and is followed by an -ing form without a to-infinitive.",
+        "ru": "Назовите конкретное действие, которое даётся трудно. В английском существительное в этом обороте обычно не требует артикля, а действие выражается отглагольной формой."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] have/has difficulty [verb-ing].",
+          "example": "I have difficulty distinguishing the two speakers when the recording is noisy.",
+          "translation": "Мне трудно различать двух говорящих, когда на записи много шума.",
+          "examples": [
+            {
+              "text": "I have difficulty distinguishing the two speakers when the recording is noisy.",
+              "translation_ru": "Мне трудно различать двух говорящих, когда на записи много шума."
+            },
+            {
+              "text": "The child had difficulty fastening the tiny buttons on the costume.",
+              "translation_ru": "Ребёнку было трудно застегнуть крошечные пуговицы на костюме."
+            },
+            {
+              "text": "Have you had difficulty getting a straight answer about the delivery date?",
+              "translation_ru": "Тебе было трудно получить прямой ответ о дате доставки?"
+            },
+            {
+              "text": "We no longer have difficulty matching the payments to the correct invoices.",
+              "translation_ru": "Нам больше не трудно сопоставлять платежи с нужными счетами."
+            },
+            {
+              "text": "She may have difficulty finding a quiet place to practise during the festival.",
+              "translation_ru": "Ей может быть трудно найти тихое место для занятий во время фестиваля."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat Schwierigkeiten, [zu + Infinitiv].",
+          "example": "Ich habe Schwierigkeiten, die beiden Sprecher bei einer verrauschten Aufnahme zu unterscheiden.",
+          "translation": "Мне трудно различать двух говорящих, когда на записи много шума.",
+          "examples": [
+            {
+              "text": "Ich habe Schwierigkeiten, die beiden Sprecher bei einer verrauschten Aufnahme zu unterscheiden.",
+              "translation_ru": "Мне трудно различать двух говорящих, когда на записи много шума."
+            },
+            {
+              "text": "Das Kind hatte Schwierigkeiten, die winzigen Knöpfe am Kostüm zu schließen.",
+              "translation_ru": "Ребёнку было трудно застегнуть крошечные пуговицы на костюме."
+            },
+            {
+              "text": "Hast du Schwierigkeiten gehabt, eine klare Antwort zum Liefertermin zu bekommen?",
+              "translation_ru": "Тебе было трудно получить прямой ответ о дате доставки?"
+            },
+            {
+              "text": "Wir haben keine Schwierigkeiten mehr, die Zahlungen den richtigen Rechnungen zuzuordnen.",
+              "translation_ru": "Нам больше не трудно сопоставлять платежи с нужными счетами."
+            },
+            {
+              "text": "Sie könnte Schwierigkeiten haben, während des Festivals einen ruhigen Ort zum Üben zu finden.",
+              "translation_ru": "Ей может быть трудно найти тихое место для занятий во время фестиваля."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] have/has difficulty [verb-ing].",
+        "[Subjekt] hat Schwierigkeiten, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC002",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Совсем не намереваться …",
+      "title_en": "[Subject] have/has no intention of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Чётко отвергните приписываемое намерение или заявите о своём решении. Формулировка сильнее мягкого сомнения и может звучать категорично.",
+      "editorial_descriptions": {
+        "en": "Firmly deny an attributed intention or state a decision not to act. This is stronger than reluctance and can sound categorical in a disagreement.",
+        "ru": "Чётко отвергните приписываемое намерение или заявите о своём решении. Формулировка сильнее мягкого сомнения и может звучать категорично."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] have/has no intention of [verb-ing].",
+          "example": "I have no intention of turning every hobby into another source of income.",
+          "translation": "Я совсем не намерен превращать каждое хобби в ещё один источник дохода.",
+          "examples": [
+            {
+              "text": "I have no intention of turning every hobby into another source of income.",
+              "translation_ru": "Я совсем не намерен превращать каждое хобби в ещё один источник дохода."
+            },
+            {
+              "text": "The owners had no intention of selling the café before the rent increased.",
+              "translation_ru": "До повышения аренды владельцы вовсе не собирались продавать кафе."
+            },
+            {
+              "text": "She has no intention of blaming the apprentices for an unclear instruction.",
+              "translation_ru": "Она вовсе не собирается винить стажёров из-за неясной инструкции."
+            },
+            {
+              "text": "Do they have no intention of telling the audience why the screening was cancelled?",
+              "translation_ru": "Они совсем не намерены объяснять зрителям, почему показ отменили?"
+            },
+            {
+              "text": "We have no intention of discarding the handwritten notes until the scans are checked.",
+              "translation_ru": "Мы вовсе не собираемся выбрасывать рукописные заметки, пока не проверены сканы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat nicht die Absicht, [zu + Infinitiv].",
+          "example": "Ich habe nicht die Absicht, jedes Hobby in eine weitere Einnahmequelle zu verwandeln.",
+          "translation": "Я совсем не намерен превращать каждое хобби в ещё один источник дохода.",
+          "examples": [
+            {
+              "text": "Ich habe nicht die Absicht, jedes Hobby in eine weitere Einnahmequelle zu verwandeln.",
+              "translation_ru": "Я совсем не намерен превращать каждое хобби в ещё один источник дохода."
+            },
+            {
+              "text": "Die Eigentümer hatten nicht die Absicht, das Café zu verkaufen, bevor die Miete stieg.",
+              "translation_ru": "До повышения аренды владельцы вовсе не собирались продавать кафе."
+            },
+            {
+              "text": "Sie hat nicht die Absicht, den Auszubildenden wegen einer unklaren Anweisung die Schuld zu geben.",
+              "translation_ru": "Она вовсе не собирается винить стажёров из-за неясной инструкции."
+            },
+            {
+              "text": "Haben sie nicht die Absicht, dem Publikum zu erklären, warum die Vorführung abgesagt wurde?",
+              "translation_ru": "Они совсем не намерены объяснять зрителям, почему показ отменили?"
+            },
+            {
+              "text": "Wir haben nicht die Absicht, die handschriftlichen Notizen wegzuwerfen, bevor die Scans geprüft sind.",
+              "translation_ru": "Мы вовсе не собираемся выбрасывать рукописные заметки, пока не проверены сканы."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] have/has no intention of [verb-ing].",
+        "[Subjekt] hat nicht die Absicht, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC003",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Не видеть причин, почему …",
+      "title_en": "[Subject] see(s) no reason why [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Отвергните предполагаемое препятствие или необходимость. После английского вопросительного слова идёт прямой порядок слов, потому что это придаточное, а не прямой вопрос.",
+      "editorial_descriptions": {
+        "en": "Reject a supposed obstacle or necessity. The why-clause has statement word order because it is embedded, not a direct question.",
+        "ru": "Отвергните предполагаемое препятствие или необходимость. После английского вопросительного слова идёт прямой порядок слов, потому что это придаточное, а не прямой вопрос."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] see(s) no reason why [clause].",
+          "example": "I see no reason why a beginner should be embarrassed about asking for a demonstration.",
+          "translation": "Я не вижу причин, почему новичок должен стесняться просить показать, как это делается.",
+          "examples": [
+            {
+              "text": "I see no reason why a beginner should be embarrassed about asking for a demonstration.",
+              "translation_ru": "Я не вижу причин, почему новичок должен стесняться просить показать, как это делается."
+            },
+            {
+              "text": "She saw no reason why the spare room could not become a small studio.",
+              "translation_ru": "Она не видела причин, почему свободную комнату нельзя превратить в маленькую студию."
+            },
+            {
+              "text": "Do you see no reason why the cheaper quote might leave something important out?",
+              "translation_ru": "Ты не видишь причин предполагать, что в более дешёвом предложении может не хватать чего-то важного?"
+            },
+            {
+              "text": "We see no reason why every participant needs to print the same twenty pages.",
+              "translation_ru": "Мы не видим причин, по которым каждый участник должен печатать одни и те же двадцать страниц."
+            },
+            {
+              "text": "The baker could see no reason why the dough had risen in one bowl but not the other.",
+              "translation_ru": "Пекарь не мог понять, почему тесто подошло в одной миске, но не в другой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] sieht keinen Grund, warum [Aussage].",
+          "example": "Ich sehe keinen Grund, warum ein Anfänger sich schämen sollte, um eine Vorführung zu bitten.",
+          "translation": "Я не вижу причин, почему новичок должен стесняться просить показать, как это делается.",
+          "examples": [
+            {
+              "text": "Ich sehe keinen Grund, warum ein Anfänger sich schämen sollte, um eine Vorführung zu bitten.",
+              "translation_ru": "Я не вижу причин, почему новичок должен стесняться просить показать, как это делается."
+            },
+            {
+              "text": "Sie sah keinen Grund, warum das freie Zimmer nicht zu einem kleinen Atelier werden könnte.",
+              "translation_ru": "Она не видела причин, почему свободную комнату нельзя превратить в маленькую студию."
+            },
+            {
+              "text": "Siehst du keinen Grund, warum im günstigeren Angebot etwas Wichtiges fehlen könnte?",
+              "translation_ru": "Ты не видишь причин предполагать, что в более дешёвом предложении может не хватать чего-то важного?"
+            },
+            {
+              "text": "Wir sehen keinen Grund, warum jeder Teilnehmer dieselben zwanzig Seiten ausdrucken muss.",
+              "translation_ru": "Мы не видим причин, по которым каждый участник должен печатать одни и те же двадцать страниц."
+            },
+            {
+              "text": "Der Bäcker konnte keinen Grund erkennen, warum der Teig in einer Schüssel aufgegangen war und in der anderen nicht.",
+              "translation_ru": "Пекарь не мог понять, почему тесто подошло в одной миске, но не в другой."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] see(s) no reason why [clause].",
+        "[Subjekt] sieht keinen Grund, warum [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC004",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Мало шансов, что …",
+      "title_en": "There is little chance of [person or thing] [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Осторожно оцените вероятность события как низкую. Это не невозможность; отдельное лицо или предмет перед отглагольной формой показывает участника события.",
+      "editorial_descriptions": {
+        "en": "Estimate an event as unlikely, not impossible. The noun phrase before the -ing form names the participant in that event.",
+        "ru": "Осторожно оцените вероятность события как низкую. Это не невозможность; отдельное лицо или предмет перед отглагольной формой показывает участника события."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is little chance of [person or thing] [verb-ing].",
+          "example": "There is little chance of the paint drying before the guests arrive.",
+          "translation": "Мало шансов, что краска высохнет до прихода гостей.",
+          "examples": [
+            {
+              "text": "There is little chance of the paint drying before the guests arrive.",
+              "translation_ru": "Мало шансов, что краска высохнет до прихода гостей."
+            },
+            {
+              "text": "There was little chance of us finding the lost earring in the long grass.",
+              "translation_ru": "Было мало шансов, что мы найдём потерянную серьгу в высокой траве."
+            },
+            {
+              "text": "Is there little chance of the organiser adding an extra screening?",
+              "translation_ru": "Мало шансов, что организатор добавит ещё один показ?"
+            },
+            {
+              "text": "There is little chance of a single reminder resolving a month of unanswered messages.",
+              "translation_ru": "Мало шансов, что одно напоминание решит проблему сообщений, оставшихся без ответа за целый месяц."
+            },
+            {
+              "text": "There may be little chance of the old battery lasting through the whole recording.",
+              "translation_ru": "Возможно, мало шансов, что старый аккумулятор выдержит всю запись."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Chance, dass [Ereignis], ist gering.",
+          "example": "Die Chance, dass die Farbe vor der Ankunft der Gäste trocknet, ist gering.",
+          "translation": "Мало шансов, что краска высохнет до прихода гостей.",
+          "examples": [
+            {
+              "text": "Die Chance, dass die Farbe vor der Ankunft der Gäste trocknet, ist gering.",
+              "translation_ru": "Мало шансов, что краска высохнет до прихода гостей."
+            },
+            {
+              "text": "Die Chance, dass wir den verlorenen Ohrring im hohen Gras finden würden, war gering.",
+              "translation_ru": "Было мало шансов, что мы найдём потерянную серьгу в высокой траве."
+            },
+            {
+              "text": "Ist die Chance gering, dass der Veranstalter eine zusätzliche Vorführung anbietet?",
+              "translation_ru": "Мало шансов, что организатор добавит ещё один показ?"
+            },
+            {
+              "text": "Die Chance, dass eine einzige Erinnerung einen Monat unbeantworteter Nachrichten ausgleicht, ist gering.",
+              "translation_ru": "Мало шансов, что одно напоминание решит проблему сообщений, оставшихся без ответа за целый месяц."
+            },
+            {
+              "text": "Die Chance, dass der alte Akku die gesamte Aufnahme durchhält, könnte gering sein.",
+              "translation_ru": "Возможно, мало шансов, что старый аккумулятор выдержит всю запись."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "There is little chance of [person or thing] [verb-ing].",
+        "Die Chance, dass [Ereignis], ist gering."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC005",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Есть склонность к тому, чтобы …",
+      "title_en": "There is a tendency for [person or thing] to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите повторяющееся поведение как наблюдение, а не правило для всех случаев. Дополнение после предлога называет того, кто выполняет действие.",
+      "editorial_descriptions": {
+        "en": "Describe an observed tendency without turning it into an absolute rule. For introduces the subject of the following infinitive clause.",
+        "ru": "Опишите повторяющееся поведение как наблюдение, а не правило для всех случаев. Дополнение после предлога называет того, кто выполняет действие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is a tendency for [person or thing] to [verb].",
+          "example": "There is a tendency for discussions in our club to drift away from the original question.",
+          "translation": "В нашем клубе обсуждения имеют обыкновение уходить от исходного вопроса.",
+          "examples": [
+            {
+              "text": "There is a tendency for discussions in our club to drift away from the original question.",
+              "translation_ru": "В нашем клубе обсуждения имеют обыкновение уходить от исходного вопроса."
+            },
+            {
+              "text": "There was a tendency for visitors to crowd around the first exhibit and miss the rest.",
+              "translation_ru": "Посетители часто толпились возле первого экспоната и не замечали остальные."
+            },
+            {
+              "text": "Is there a tendency for the fabric to shrink after the first wash?",
+              "translation_ru": "Есть ли у этой ткани склонность садиться после первой стирки?"
+            },
+            {
+              "text": "We noticed a tendency for new volunteers to take on too many shifts at once.",
+              "translation_ru": "Мы заметили, что новые волонтёры склонны брать на себя слишком много смен сразу."
+            },
+            {
+              "text": "There seems to be a tendency for the dates in this archive to be copied incorrectly.",
+              "translation_ru": "Похоже, даты в этом архиве имеют обыкновение переносить с ошибками."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es gibt eine Tendenz dazu, dass [Aussage].",
+          "example": "Es gibt in unserem Verein eine Tendenz dazu, dass Diskussionen von der ursprünglichen Frage abschweifen.",
+          "translation": "В нашем клубе обсуждения имеют обыкновение уходить от исходного вопроса.",
+          "examples": [
+            {
+              "text": "Es gibt in unserem Verein eine Tendenz dazu, dass Diskussionen von der ursprünglichen Frage abschweifen.",
+              "translation_ru": "В нашем клубе обсуждения имеют обыкновение уходить от исходного вопроса."
+            },
+            {
+              "text": "Es gab eine Tendenz dazu, dass Besucher sich um das erste Exponat drängten und den Rest übersahen.",
+              "translation_ru": "Посетители часто толпились возле первого экспоната и не замечали остальные."
+            },
+            {
+              "text": "Gibt es eine Tendenz dazu, dass der Stoff nach der ersten Wäsche einläuft?",
+              "translation_ru": "Есть ли у этой ткани склонность садиться после первой стирки?"
+            },
+            {
+              "text": "Wir bemerkten eine Tendenz dazu, dass neue Freiwillige zu viele Schichten auf einmal übernahmen.",
+              "translation_ru": "Мы заметили, что новые волонтёры склонны брать на себя слишком много смен сразу."
+            },
+            {
+              "text": "Es scheint eine Tendenz dazu zu geben, dass die Datumsangaben in diesem Archiv falsch übertragen werden.",
+              "translation_ru": "Похоже, даты в этом архиве имеют обыкновение переносить с ошибками."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "There is a tendency for [person or thing] to [verb].",
+        "Es gibt eine Tendenz dazu, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC006",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Перспектива … вызывает …",
+      "title_en": "The prospect of [verb-ing] [verb + reaction].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сделайте возможное будущее событие причиной эмоции или решения. После начальной группы в английском всё предложение согласуется с существительным в единственном числе.",
+      "editorial_descriptions": {
+        "en": "Make a possible future event the cause of a reaction. The head noun prospect is singular, even when the -ing phrase contains plural participants or objects.",
+        "ru": "Сделайте возможное будущее событие причиной эмоции или решения. После начальной группы в английском всё предложение согласуется с существительным в единственном числе."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The prospect of [verb-ing] [verb + reaction].",
+          "example": "The prospect of performing outdoors excited the musicians more than the fee did.",
+          "translation": "Перспектива выступить на открытом воздухе радовала музыкантов больше, чем гонорар.",
+          "examples": [
+            {
+              "text": "The prospect of performing outdoors excited the musicians more than the fee did.",
+              "translation_ru": "Перспектива выступить на открытом воздухе радовала музыкантов больше, чем гонорар."
+            },
+            {
+              "text": "The prospect of sorting forty years of paperwork made him postpone the move.",
+              "translation_ru": "Перспектива разбирать документы за сорок лет заставила его отложить переезд."
+            },
+            {
+              "text": "Does the prospect of sharing a workshop appeal to you?",
+              "translation_ru": "Тебе нравится перспектива пользоваться общей мастерской?"
+            },
+            {
+              "text": "The prospect of losing the only copy prompted us to make two backups.",
+              "translation_ru": "Перспектива потерять единственную копию побудила нас сделать две резервные."
+            },
+            {
+              "text": "She welcomed the prospect of learning a skill that had nothing to do with her job.",
+              "translation_ru": "Она обрадовалась перспективе освоить навык, никак не связанный с её работой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Aussicht darauf, [zu + Infinitiv], [Reaktion].",
+          "example": "Die Aussicht darauf, im Freien aufzutreten, begeisterte die Musiker mehr als das Honorar.",
+          "translation": "Перспектива выступить на открытом воздухе радовала музыкантов больше, чем гонорар.",
+          "examples": [
+            {
+              "text": "Die Aussicht darauf, im Freien aufzutreten, begeisterte die Musiker mehr als das Honorar.",
+              "translation_ru": "Перспектива выступить на открытом воздухе радовала музыкантов больше, чем гонорар."
+            },
+            {
+              "text": "Die Aussicht darauf, vierzig Jahre an Unterlagen zu sortieren, veranlasste ihn, den Umzug zu verschieben.",
+              "translation_ru": "Перспектива разбирать документы за сорок лет заставила его отложить переезд."
+            },
+            {
+              "text": "Spricht dich die Aussicht darauf an, eine Werkstatt gemeinsam zu nutzen?",
+              "translation_ru": "Тебе нравится перспектива пользоваться общей мастерской?"
+            },
+            {
+              "text": "Die Aussicht darauf, die einzige Kopie zu verlieren, veranlasste uns, zwei Sicherungen anzulegen.",
+              "translation_ru": "Перспектива потерять единственную копию побудила нас сделать две резервные."
+            },
+            {
+              "text": "Sie begrüßte die Aussicht darauf, eine Fähigkeit zu erlernen, die nichts mit ihrem Beruf zu tun hatte.",
+              "translation_ru": "Она обрадовалась перспективе освоить навык, никак не связанный с её работой."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The prospect of [verb-ing] [verb + reaction].",
+        "Die Aussicht darauf, [zu + Infinitiv], [Reaktion]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC007",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Вероятность того, что …",
+      "title_en": "The likelihood of [person or thing] [verb-ing] [predicate].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сделайте вероятность отдельной темой предложения. Указывайте основание оценки и не выдавайте предположение за численно установленный риск.",
+      "editorial_descriptions": {
+        "en": "Make probability the topic of the sentence. Give a basis for the assessment where possible; the frame itself does not supply a measured risk.",
+        "ru": "Сделайте вероятность отдельной темой предложения. Указывайте основание оценки и не выдавайте предположение за численно установленный риск."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The likelihood of [person or thing] [verb-ing] [predicate].",
+          "example": "The likelihood of the parcel arriving today seems low, given the tracking update.",
+          "translation": "Судя по обновлению отслеживания, вероятность доставки посылки сегодня кажется низкой.",
+          "examples": [
+            {
+              "text": "The likelihood of the parcel arriving today seems low, given the tracking update.",
+              "translation_ru": "Судя по обновлению отслеживания, вероятность доставки посылки сегодня кажется низкой."
+            },
+            {
+              "text": "The likelihood of rain interrupting the concert influenced our choice of venue.",
+              "translation_ru": "Вероятность дождя во время концерта повлияла на наш выбор площадки."
+            },
+            {
+              "text": "Has the likelihood of the error recurring changed since the settings were corrected?",
+              "translation_ru": "Изменилась ли вероятность повторения ошибки после исправления настроек?"
+            },
+            {
+              "text": "We cannot estimate the likelihood of the tiles cracking without inspecting the floor.",
+              "translation_ru": "Мы не можем оценить вероятность растрескивания плитки, не осмотрев основание."
+            },
+            {
+              "text": "The likelihood of both keys failing at once seems small, but we still need an alternative entrance.",
+              "translation_ru": "Вероятность того, что оба ключа одновременно не сработают, кажется небольшой, но нам всё равно нужен другой вход."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Wahrscheinlichkeit, dass [Ereignis], [Prädikat].",
+          "example": "Die Wahrscheinlichkeit, dass das Paket heute ankommt, erscheint nach der Aktualisierung der Sendungsverfolgung gering.",
+          "translation": "Судя по обновлению отслеживания, вероятность доставки посылки сегодня кажется низкой.",
+          "examples": [
+            {
+              "text": "Die Wahrscheinlichkeit, dass das Paket heute ankommt, erscheint nach der Aktualisierung der Sendungsverfolgung gering.",
+              "translation_ru": "Судя по обновлению отслеживания, вероятность доставки посылки сегодня кажется низкой."
+            },
+            {
+              "text": "Die Wahrscheinlichkeit, dass Regen das Konzert unterbrechen würde, beeinflusste unsere Wahl des Veranstaltungsortes.",
+              "translation_ru": "Вероятность дождя во время концерта повлияла на наш выбор площадки."
+            },
+            {
+              "text": "Hat sich die Wahrscheinlichkeit, dass der Fehler erneut auftritt, seit der Korrektur der Einstellungen geändert?",
+              "translation_ru": "Изменилась ли вероятность повторения ошибки после исправления настроек?"
+            },
+            {
+              "text": "Wir können die Wahrscheinlichkeit, dass die Fliesen reißen, ohne eine Untersuchung des Bodens nicht einschätzen.",
+              "translation_ru": "Мы не можем оценить вероятность растрескивания плитки, не осмотрев основание."
+            },
+            {
+              "text": "Die Wahrscheinlichkeit, dass beide Schlüssel gleichzeitig nicht funktionieren, scheint gering; trotzdem brauchen wir einen anderen Zugang.",
+              "translation_ru": "Вероятность того, что оба ключа одновременно не сработают, кажется небольшой, но нам всё равно нужен другой вход."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The likelihood of [person or thing] [verb-ing] [predicate].",
+        "Die Wahrscheinlichkeit, dass [Ereignis], [Prädikat]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC008",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Степень, в которой …",
+      "title_en": "The extent to which [clause] [predicate].",
+      "level": "B2–C1",
+      "metaphor_ru": "Обсудите не сам факт, а выраженность влияния или изменения. Оборот особенно полезен для ограниченного вывода вместо категоричного утверждения.",
+      "editorial_descriptions": {
+        "en": "Discuss the degree of an effect rather than only whether it exists. To which belongs to extent, and the following clause keeps statement word order.",
+        "ru": "Обсудите не сам факт, а выраженность влияния или изменения. Оборот особенно полезен для ограниченного вывода вместо категоричного утверждения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The extent to which [clause] [predicate].",
+          "example": "The extent to which background noise affects this recording surprised the engineer.",
+          "translation": "Звукорежиссёра удивило, насколько фоновый шум влияет на эту запись.",
+          "examples": [
+            {
+              "text": "The extent to which background noise affects this recording surprised the engineer.",
+              "translation_ru": "Звукорежиссёра удивило, насколько фоновый шум влияет на эту запись."
+            },
+            {
+              "text": "We underestimated the extent to which the missing labels would slow down the move.",
+              "translation_ru": "Мы недооценили, насколько отсутствие подписей на коробках замедлит переезд."
+            },
+            {
+              "text": "Can you show the extent to which the new layout has reduced waiting times?",
+              "translation_ru": "Можешь показать, насколько новая планировка сократила время ожидания?"
+            },
+            {
+              "text": "The extent to which she relied on handwritten notes only became clear during the power cut.",
+              "translation_ru": "Насколько сильно она полагалась на рукописные записи, стало ясно лишь при отключении электричества."
+            },
+            {
+              "text": "The extent to which visitors can touch the exhibits depends on the room they enter.",
+              "translation_ru": "То, насколько посетителям разрешено трогать экспонаты, зависит от зала."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das Ausmaß, in dem [Aussage], [Prädikat].",
+          "example": "Das Ausmaß, in dem Hintergrundgeräusche diese Aufnahme beeinträchtigen, überraschte den Tontechniker.",
+          "translation": "Звукорежиссёра удивило, насколько фоновый шум влияет на эту запись.",
+          "examples": [
+            {
+              "text": "Das Ausmaß, in dem Hintergrundgeräusche diese Aufnahme beeinträchtigen, überraschte den Tontechniker.",
+              "translation_ru": "Звукорежиссёра удивило, насколько фоновый шум влияет на эту запись."
+            },
+            {
+              "text": "Wir unterschätzten das Ausmaß, in dem die fehlenden Etiketten den Umzug verzögern würden.",
+              "translation_ru": "Мы недооценили, насколько отсутствие подписей на коробках замедлит переезд."
+            },
+            {
+              "text": "Kannst du zeigen, in welchem Ausmaß die neue Raumaufteilung die Wartezeiten verkürzt hat?",
+              "translation_ru": "Можешь показать, насколько новая планировка сократила время ожидания?"
+            },
+            {
+              "text": "Das Ausmaß, in dem sie sich auf handschriftliche Notizen stützte, wurde erst beim Stromausfall deutlich.",
+              "translation_ru": "Насколько сильно она полагалась на рукописные записи, стало ясно лишь при отключении электричества."
+            },
+            {
+              "text": "Das Ausmaß, in dem Besucher die Exponate berühren dürfen, hängt vom jeweiligen Raum ab.",
+              "translation_ru": "То, насколько посетителям разрешено трогать экспонаты, зависит от зала."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The extent to which [clause] [predicate].",
+        "Das Ausmaß, in dem [Aussage], [Prädikat]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC009",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Различие между … и …",
+      "title_en": "[Subject] draw(s) a distinction between [verb-ing] and [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Разведите два похожих действия или намерения. Два элемента сравнения должны быть грамматически параллельны и различаться по смыслу.",
+      "editorial_descriptions": {
+        "en": "Separate two easily confused actions or intentions. Keep the compared items grammatically parallel and make the substantive distinction explicit.",
+        "ru": "Разведите два похожих действия или намерения. Два элемента сравнения должны быть грамматически параллельны и различаться по смыслу."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] draw(s) a distinction between [verb-ing] and [verb-ing].",
+          "example": "I draw a distinction between asking for help and handing over all responsibility.",
+          "translation": "Я различаю просьбу о помощи и передачу всей ответственности.",
+          "examples": [
+            {
+              "text": "I draw a distinction between asking for help and handing over all responsibility.",
+              "translation_ru": "Я различаю просьбу о помощи и передачу всей ответственности."
+            },
+            {
+              "text": "The teacher drew a distinction between memorising a paragraph and explaining its meaning.",
+              "translation_ru": "Преподавательница провела различие между заучиванием абзаца и объяснением его смысла."
+            },
+            {
+              "text": "Do you draw a distinction between repairing an object and restoring its original appearance?",
+              "translation_ru": "Ты различаешь ремонт предмета и восстановление его первоначального вида?"
+            },
+            {
+              "text": "We need to draw a distinction between reporting an error and blaming the person who found it.",
+              "translation_ru": "Нам нужно различать сообщение об ошибке и обвинение того, кто её обнаружил."
+            },
+            {
+              "text": "She has always drawn a distinction between being available and answering immediately.",
+              "translation_ru": "Она всегда различала готовность быть на связи и немедленный ответ."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] unterscheidet zwischen [Handlung A] und [Handlung B].",
+          "example": "Ich unterscheide zwischen dem Bitten um Hilfe und dem Abgeben jeder Verantwortung.",
+          "translation": "Я различаю просьбу о помощи и передачу всей ответственности.",
+          "examples": [
+            {
+              "text": "Ich unterscheide zwischen dem Bitten um Hilfe und dem Abgeben jeder Verantwortung.",
+              "translation_ru": "Я различаю просьбу о помощи и передачу всей ответственности."
+            },
+            {
+              "text": "Die Lehrerin unterschied zwischen dem Auswendiglernen eines Absatzes und dem Erklären seiner Bedeutung.",
+              "translation_ru": "Преподавательница провела различие между заучиванием абзаца и объяснением его смысла."
+            },
+            {
+              "text": "Unterscheidest du zwischen der Reparatur eines Gegenstands und der Wiederherstellung seines ursprünglichen Aussehens?",
+              "translation_ru": "Ты различаешь ремонт предмета и восстановление его первоначального вида?"
+            },
+            {
+              "text": "Wir müssen zwischen dem Melden eines Fehlers und dem Beschuldigen der Person unterscheiden, die ihn entdeckt hat.",
+              "translation_ru": "Нам нужно различать сообщение об ошибке и обвинение того, кто её обнаружил."
+            },
+            {
+              "text": "Sie hat immer zwischen Erreichbarkeit und sofortigem Antworten unterschieden.",
+              "translation_ru": "Она всегда различала готовность быть на связи и немедленный ответ."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] draw(s) a distinction between [verb-ing] and [verb-ing].",
+        "[Subjekt] unterscheidet zwischen [Handlung A] und [Handlung B]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SNC010",
+      "set_id": "SNC",
+      "group_id": "SNC",
+      "title_ru": "Необходимое условие для …",
+      "title_en": "[Condition] is a prerequisite for [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите условие, без которого действие невозможно или не допускается. Не путайте необходимое условие с достаточным: его выполнение может ещё не гарантировать успех.",
+      "editorial_descriptions": {
+        "en": "Name a condition that must be met before an action is possible or allowed. A prerequisite is necessary, not necessarily sufficient to guarantee success.",
+        "ru": "Назовите условие, без которого действие невозможно или не допускается. Не путайте необходимое условие с достаточным: его выполнение может ещё не гарантировать успех."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Condition] is a prerequisite for [verb-ing].",
+          "example": "A tested backup is a prerequisite for replacing the main storage drive safely.",
+          "translation": "Проверенная резервная копия — необходимое условие безопасной замены основного диска.",
+          "examples": [
+            {
+              "text": "A tested backup is a prerequisite for replacing the main storage drive safely.",
+              "translation_ru": "Проверенная резервная копия — необходимое условие безопасной замены основного диска."
+            },
+            {
+              "text": "Under the workshop rules, completing the induction is a prerequisite for using the cutting tools.",
+              "translation_ru": "По правилам мастерской вводный инструктаж — необходимое условие работы с режущими инструментами."
+            },
+            {
+              "text": "Is agreement on the budget a prerequisite for booking the musicians?",
+              "translation_ru": "Согласованный бюджет — необходимое условие приглашения музыкантов?"
+            },
+            {
+              "text": "A dry surface was a prerequisite for applying the finish evenly.",
+              "translation_ru": "Сухая поверхность была необходимым условием равномерного нанесения покрытия."
+            },
+            {
+              "text": "Being able to name the problem is not always a prerequisite for noticing that something is wrong.",
+              "translation_ru": "Умение назвать проблему не всегда необходимо, чтобы заметить, что что-то не так."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Bedingung] ist eine Voraussetzung dafür, [zu + Infinitiv].",
+          "example": "Eine getestete Sicherung ist eine Voraussetzung dafür, das Hauptlaufwerk sicher auszutauschen.",
+          "translation": "Проверенная резервная копия — необходимое условие безопасной замены основного диска.",
+          "examples": [
+            {
+              "text": "Eine getestete Sicherung ist eine Voraussetzung dafür, das Hauptlaufwerk sicher auszutauschen.",
+              "translation_ru": "Проверенная резервная копия — необходимое условие безопасной замены основного диска."
+            },
+            {
+              "text": "Nach den Werkstattregeln ist die Einweisung eine Voraussetzung dafür, die Schneidwerkzeuge zu benutzen.",
+              "translation_ru": "По правилам мастерской вводный инструктаж — необходимое условие работы с режущими инструментами."
+            },
+            {
+              "text": "Ist eine Einigung über das Budget eine Voraussetzung dafür, die Musiker zu buchen?",
+              "translation_ru": "Согласованный бюджет — необходимое условие приглашения музыкантов?"
+            },
+            {
+              "text": "Eine trockene Oberfläche war eine Voraussetzung dafür, die Beschichtung gleichmäßig aufzutragen.",
+              "translation_ru": "Сухая поверхность была необходимым условием равномерного нанесения покрытия."
+            },
+            {
+              "text": "Ein Problem benennen zu können, ist nicht immer eine Voraussetzung dafür, zu bemerken, dass etwas nicht stimmt.",
+              "translation_ru": "Умение назвать проблему не всегда необходимо, чтобы заметить, что что-то не так."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Condition] is a prerequisite for [verb-ing].",
+        "[Bedingung] ist eine Voraussetzung dafür, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

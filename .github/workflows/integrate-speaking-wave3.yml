@@ -1,0 +1,60 @@
+name: Integrate speaking expansion wave 3
+on:
+  push:
+    branches: [content/speaking-frames-100-20260918]
+    paths:
+      - .github/workflows/integrate-speaking-wave3.yml
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - name: Decode canonical wave-three shards
+        run: |
+          set -euo pipefail
+          for id in SRQ SDC SMN SRA; do
+            base64 -d ".tmp/wave3/${id}.gz.b64" | gzip -d > "data/patterns/${id}.json"
+            node -e "const fs=require('fs'); const x=JSON.parse(fs.readFileSync('data/patterns/${id}.json','utf8')); if(x.set_id!=='${id}'||x.patterns.length!==10) process.exit(1);"
+          done
+      - name: Register additive SEO routes
+        run: |
+          set -euo pipefail
+          node scripts/generate-seo-slugs.mjs
+      - name: Install dependencies
+        run: npm ci
+      - name: Run focused corpus checks
+        run: |
+          set -euo pipefail
+          node --test \
+            tests/speaking-expansion-wave3.test.mjs \
+            tests/speaking-expansion-wave2.test.mjs \
+            tests/speaking-expansion.test.mjs \
+            tests/speaking-routes.test.mjs \
+            tests/pattern-shards.test.mjs \
+            tests/practice-annotations.test.mjs \
+            tests/pending-c1-annotations.test.mjs \
+            tests/pattern-example-enrichment.test.mjs \
+            tests/pattern-editorial-copy.test.mjs \
+            tests/english-agreement-audit.test.mjs
+      - name: Validate and build complete site
+        run: |
+          set -euo pipefail
+          npm run build
+      - name: Verify generated study-set preservation
+        run: node --test tests/study-set-preservation.test.mjs
+      - name: Commit canonical wave-three content
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/patterns/SRQ.json data/patterns/SDC.json data/patterns/SMN.json data/patterns/SRA.json data/seo-slugs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Integrate 40 final diverse speaking patterns"
+            git push origin HEAD:content/speaking-frames-100-20260918
+          fi

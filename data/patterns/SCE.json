@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SCE",
+  "patterns": [
+    {
+      "id": "SCE001",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Привести к результату …",
+      "title_en": "[Action] resulted in [noun / verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Свяжите действие с фактическим результатом. Формула сообщает о результате, но сама по себе не доказывает единственную причину.",
+      "editorial_descriptions": {
+        "en": "Connect an action with an observed result. The construction reports an outcome but does not by itself prove a single exclusive cause.",
+        "ru": "Свяжите действие с фактическим результатом. Формула сообщает о результате, но сама по себе не доказывает единственную причину."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] resulted in [noun / verb-ing].",
+          "example": "Moving the signs closer to the entrance resulted in fewer visitors getting lost.",
+          "translation": "Перенос указателей ближе ко входу привёл к тому, что меньше посетителей стали теряться.",
+          "examples": [
+            {
+              "text": "Moving the signs closer to the entrance resulted in fewer visitors getting lost.",
+              "translation_ru": "Перенос указателей ближе ко входу привёл к тому, что меньше посетителей стали теряться."
+            },
+            {
+              "text": "A loose cable resulted in intermittent sound during the first recording.",
+              "translation_ru": "Неплотно подключённый кабель привёл к периодическим пропаданиям звука на первой записи."
+            },
+            {
+              "text": "Changing the order of the exercises resulted in a much smoother lesson.",
+              "translation_ru": "Изменение порядка упражнений сделало занятие заметно более плавным."
+            },
+            {
+              "text": "The sudden thaw resulted in water entering the cellar overnight.",
+              "translation_ru": "Резкая оттепель привела к тому, что ночью вода попала в подвал."
+            },
+            {
+              "text": "Removing one approval step resulted in invoices being processed a day earlier.",
+              "translation_ru": "Удаление одного этапа согласования привело к обработке счетов на день раньше."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] führte zu [Nomen / nominalisierter Handlung].",
+          "example": "Das Versetzen der Schilder näher an den Eingang führte dazu, dass sich weniger Besucher verirrten.",
+          "translation": "Перенос указателей ближе ко входу привёл к тому, что меньше посетителей стали теряться.",
+          "examples": [
+            {
+              "text": "Das Versetzen der Schilder näher an den Eingang führte dazu, dass sich weniger Besucher verirrten.",
+              "translation_ru": "Перенос указателей ближе ко входу привёл к тому, что меньше посетителей стали теряться."
+            },
+            {
+              "text": "Ein loses Kabel führte bei der ersten Aufnahme zu zeitweiligen Tonaussetzern.",
+              "translation_ru": "Неплотно подключённый кабель привёл к периодическим пропаданиям звука на первой записи."
+            },
+            {
+              "text": "Die Änderung der Übungsreihenfolge führte zu einem deutlich flüssigeren Unterricht.",
+              "translation_ru": "Изменение порядка упражнений сделало занятие заметно более плавным."
+            },
+            {
+              "text": "Das plötzliche Tauwetter führte dazu, dass über Nacht Wasser in den Keller eindrang.",
+              "translation_ru": "Резкая оттепель привела к тому, что ночью вода попала в подвал."
+            },
+            {
+              "text": "Der Wegfall eines Freigabeschritts führte dazu, dass Rechnungen einen Tag früher bearbeitet wurden.",
+              "translation_ru": "Удаление одного этапа согласования привело к обработке счетов на день раньше."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] resulted in [noun / verb-ing].",
+        "[Handlung] führte zu [Nomen / nominalisierter Handlung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE002",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Привести к изменению или последствию …",
+      "title_en": "[Action] led to [noun / verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите последовательную причинную связь между событием и последствием. В реальном анализе отделяйте временную последовательность от доказанной причинности.",
+      "editorial_descriptions": {
+        "en": "Present an event as leading to a later consequence. In real analysis, distinguish a plausible causal chain from mere sequence in time.",
+        "ru": "Покажите последовательную причинную связь между событием и последствием. В реальном анализе отделяйте временную последовательность от доказанной причинности."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] led to [noun / verb-ing].",
+          "example": "A casual conversation with a neighbour led to us joining the community garden.",
+          "translation": "Случайный разговор с соседом привёл к тому, что мы вступили в общественный сад.",
+          "examples": [
+            {
+              "text": "A casual conversation with a neighbour led to us joining the community garden.",
+              "translation_ru": "Случайный разговор с соседом привёл к тому, что мы вступили в общественный сад."
+            },
+            {
+              "text": "Repeated delays led to the organiser changing the delivery company.",
+              "translation_ru": "Повторные задержки привели к тому, что организатор сменил службу доставки."
+            },
+            {
+              "text": "One wrong measurement led to an entire row of shelves being rebuilt.",
+              "translation_ru": "Один неверный размер привёл к переделке целого ряда полок."
+            },
+            {
+              "text": "Her curiosity about the old map led to months of local-history research.",
+              "translation_ru": "Интерес к старой карте привёл её к многомесячному изучению местной истории."
+            },
+            {
+              "text": "A small change in microphone position led to noticeably clearer speech.",
+              "translation_ru": "Небольшое изменение положения микрофона привело к заметно более чистой речи."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] zog [Folge] nach sich.",
+          "example": "Ein zufälliges Gespräch mit einem Nachbarn zog unseren Beitritt zum Gemeinschaftsgarten nach sich.",
+          "translation": "Случайный разговор с соседом привёл к тому, что мы вступили в общественный сад.",
+          "examples": [
+            {
+              "text": "Ein zufälliges Gespräch mit einem Nachbarn zog unseren Beitritt zum Gemeinschaftsgarten nach sich.",
+              "translation_ru": "Случайный разговор с соседом привёл к тому, что мы вступили в общественный сад."
+            },
+            {
+              "text": "Die wiederholten Verzögerungen zogen einen Wechsel des Lieferdienstes nach sich.",
+              "translation_ru": "Повторные задержки привели к тому, что организатор сменил службу доставки."
+            },
+            {
+              "text": "Ein falsches Maß zog den Neubau einer ganzen Regalreihe nach sich.",
+              "translation_ru": "Один неверный размер привёл к переделке целого ряда полок."
+            },
+            {
+              "text": "Ihre Neugier auf die alte Karte zog monatelange Recherchen zur Lokalgeschichte nach sich.",
+              "translation_ru": "Интерес к старой карте привёл её к многомесячному изучению местной истории."
+            },
+            {
+              "text": "Eine kleine Änderung der Mikrofonposition zog deutlich verständlichere Sprache nach sich.",
+              "translation_ru": "Небольшое изменение положения микрофона привело к заметно более чистой речи."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] led to [noun / verb-ing].",
+        "[Handlung] zog [Folge] nach sich."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE003",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Помешать кому-то сделать …",
+      "title_en": "[Action] prevented [person] from [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите препятствие, из-за которого действие не состоялось. Это сильнее простой трудности: формула утверждает, что результат действительно был заблокирован.",
+      "editorial_descriptions": {
+        "en": "Name a barrier that stopped an action from happening. This is stronger than saying something was difficult: the action was actually prevented.",
+        "ru": "Назовите препятствие, из-за которого действие не состоялось. Это сильнее простой трудности: формула утверждает, что результат действительно был заблокирован."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] prevented [person] from [verb-ing].",
+          "example": "A flat tyre prevented us from reaching the campsite before dark.",
+          "translation": "Проколотая шина помешала нам добраться до кемпинга до темноты.",
+          "examples": [
+            {
+              "text": "A flat tyre prevented us from reaching the campsite before dark.",
+              "translation_ru": "Проколотая шина помешала нам добраться до кемпинга до темноты."
+            },
+            {
+              "text": "The missing receipt prevented her from returning the headphones that afternoon.",
+              "translation_ru": "Отсутствие чека помешало ей вернуть наушники в тот же день."
+            },
+            {
+              "text": "Heavy fog prevented the rescue helicopter from taking off.",
+              "translation_ru": "Сильный туман помешал спасательному вертолёту взлететь."
+            },
+            {
+              "text": "A permissions error prevented the team from opening the archived files.",
+              "translation_ru": "Ошибка прав доступа помешала команде открыть архивные файлы."
+            },
+            {
+              "text": "Stage fright had never prevented him from finishing a performance.",
+              "translation_ru": "Страх сцены никогда не мешал ему закончить выступление."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] hinderte [Person] daran, [zu + Infinitiv].",
+          "example": "Ein platter Reifen hinderte uns daran, den Campingplatz vor Einbruch der Dunkelheit zu erreichen.",
+          "translation": "Проколотая шина помешала нам добраться до кемпинга до темноты.",
+          "examples": [
+            {
+              "text": "Ein platter Reifen hinderte uns daran, den Campingplatz vor Einbruch der Dunkelheit zu erreichen.",
+              "translation_ru": "Проколотая шина помешала нам добраться до кемпинга до темноты."
+            },
+            {
+              "text": "Der fehlende Kassenbon hinderte sie daran, die Kopfhörer noch am selben Nachmittag zurückzugeben.",
+              "translation_ru": "Отсутствие чека помешало ей вернуть наушники в тот же день."
+            },
+            {
+              "text": "Dichter Nebel hinderte den Rettungshubschrauber am Start.",
+              "translation_ru": "Сильный туман помешал спасательному вертолёту взлететь."
+            },
+            {
+              "text": "Ein Berechtigungsfehler hinderte das Team daran, die archivierten Dateien zu öffnen.",
+              "translation_ru": "Ошибка прав доступа помешала команде открыть архивные файлы."
+            },
+            {
+              "text": "Lampenfieber hatte ihn nie daran gehindert, einen Auftritt zu Ende zu bringen.",
+              "translation_ru": "Страх сцены никогда не мешал ему закончить выступление."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] prevented [person] from [verb-ing].",
+        "[Handlung] hinderte [Person] daran, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE004",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Сделать возможным для кого-то …",
+      "title_en": "[Action] enabled [person] to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите, что условие или инструмент сделал действие возможным. Не путайте возможность с гарантией: человек всё ещё может не воспользоваться ею.",
+      "editorial_descriptions": {
+        "en": "Show that a condition or tool made an action possible. Enablement creates an opportunity or capacity; it does not guarantee that the person uses it.",
+        "ru": "Покажите, что условие или инструмент сделал действие возможным. Не путайте возможность с гарантией: человек всё ещё может не воспользоваться ею."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] enabled [person] to [verb].",
+          "example": "A folding ramp enabled the musicians to move the heavy speakers without lifting them.",
+          "translation": "Складной пандус позволил музыкантам переместить тяжёлые колонки, не поднимая их.",
+          "examples": [
+            {
+              "text": "A folding ramp enabled the musicians to move the heavy speakers without lifting them.",
+              "translation_ru": "Складной пандус позволил музыкантам переместить тяжёлые колонки, не поднимая их."
+            },
+            {
+              "text": "The transcript enabled me to notice several phrases I had missed while listening.",
+              "translation_ru": "Расшифровка позволила мне заметить несколько фраз, которые я пропустил на слух."
+            },
+            {
+              "text": "A small grant enabled the club to repair the leaking roof before winter.",
+              "translation_ru": "Небольшая субсидия позволила клубу починить протекающую крышу до зимы."
+            },
+            {
+              "text": "The shared calendar enabled everyone to see when the rehearsal room was free.",
+              "translation_ru": "Общий календарь позволил всем видеть, когда репетиционная комната свободна."
+            },
+            {
+              "text": "Restoring the backup enabled us to recover the missing customer notes.",
+              "translation_ru": "Восстановление резервной копии позволило нам вернуть пропавшие заметки о клиентах."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] ermöglichte [Person], [zu + Infinitiv].",
+          "example": "Eine Klapprampe ermöglichte den Musikern, die schweren Lautsprecher zu bewegen, ohne sie anzuheben.",
+          "translation": "Складной пандус позволил музыкантам переместить тяжёлые колонки, не поднимая их.",
+          "examples": [
+            {
+              "text": "Eine Klapprampe ermöglichte den Musikern, die schweren Lautsprecher zu bewegen, ohne sie anzuheben.",
+              "translation_ru": "Складной пандус позволил музыкантам переместить тяжёлые колонки, не поднимая их."
+            },
+            {
+              "text": "Das Transkript ermöglichte mir, mehrere Formulierungen zu bemerken, die ich beim Hören übersehen hatte.",
+              "translation_ru": "Расшифровка позволила мне заметить несколько фраз, которые я пропустил на слух."
+            },
+            {
+              "text": "Ein kleiner Zuschuss ermöglichte dem Verein, das undichte Dach noch vor dem Winter zu reparieren.",
+              "translation_ru": "Небольшая субсидия позволила клубу починить протекающую крышу до зимы."
+            },
+            {
+              "text": "Der gemeinsame Kalender ermöglichte allen zu sehen, wann der Proberaum frei war.",
+              "translation_ru": "Общий календарь позволил всем видеть, когда репетиционная комната свободна."
+            },
+            {
+              "text": "Die Wiederherstellung der Sicherung ermöglichte uns, die fehlenden Kundennotizen zurückzubekommen.",
+              "translation_ru": "Восстановление резервной копии позволило нам вернуть пропавшие заметки о клиентах."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] enabled [person] to [verb].",
+        "[Handlung] ermöglichte [Person], [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE005",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Облегчить кому-то задачу …",
+      "title_en": "[Action] made it easier for [person] to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите улучшение условий без утверждения, что задача стала простой. Полезно для сравнения процессов до и после изменения.",
+      "editorial_descriptions": {
+        "en": "Describe an improvement in conditions without claiming the task became easy. The frame is useful for comparing a process before and after a change.",
+        "ru": "Опишите улучшение условий без утверждения, что задача стала простой. Полезно для сравнения процессов до и после изменения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] made it easier for [person] to [verb].",
+          "example": "Numbering the boxes made it easier for us to find the kitchen equipment first.",
+          "translation": "Нумерация коробок помогла нам быстрее найти кухонные вещи.",
+          "examples": [
+            {
+              "text": "Numbering the boxes made it easier for us to find the kitchen equipment first.",
+              "translation_ru": "Нумерация коробок помогла нам быстрее найти кухонные вещи."
+            },
+            {
+              "text": "A slower playback speed made it easier for her to hear the unstressed words.",
+              "translation_ru": "Более медленное воспроизведение помогло ей услышать безударные слова."
+            },
+            {
+              "text": "Removing the heavy door made it easier for wheelchair users to enter the studio.",
+              "translation_ru": "Удаление тяжёлой двери облегчило вход в студию людям на инвалидных колясках."
+            },
+            {
+              "text": "The new labels have made it easier for visitors to distinguish originals from copies.",
+              "translation_ru": "Новые подписи помогли посетителям отличать оригиналы от копий."
+            },
+            {
+              "text": "Writing down the criteria made it easier for the group to compare the three options.",
+              "translation_ru": "Записанные критерии облегчили группе сравнение трёх вариантов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] machte es [Person] leichter, [zu + Infinitiv].",
+          "example": "Die Nummerierung der Kartons machte es uns leichter, zuerst die Küchenausrüstung zu finden.",
+          "translation": "Нумерация коробок помогла нам быстрее найти кухонные вещи.",
+          "examples": [
+            {
+              "text": "Die Nummerierung der Kartons machte es uns leichter, zuerst die Küchenausrüstung zu finden.",
+              "translation_ru": "Нумерация коробок помогла нам быстрее найти кухонные вещи."
+            },
+            {
+              "text": "Eine langsamere Wiedergabegeschwindigkeit machte es ihr leichter, die unbetonten Wörter zu hören.",
+              "translation_ru": "Более медленное воспроизведение помогло ей услышать безударные слова."
+            },
+            {
+              "text": "Das Entfernen der schweren Tür machte es Rollstuhlfahrern leichter, das Studio zu betreten.",
+              "translation_ru": "Удаление тяжёлой двери облегчило вход в студию людям на инвалидных колясках."
+            },
+            {
+              "text": "Die neuen Beschriftungen haben es Besuchern leichter gemacht, Originale von Kopien zu unterscheiden.",
+              "translation_ru": "Новые подписи помогли посетителям отличать оригиналы от копий."
+            },
+            {
+              "text": "Das Aufschreiben der Kriterien machte es der Gruppe leichter, die drei Optionen zu vergleichen.",
+              "translation_ru": "Записанные критерии облегчили группе сравнение трёх вариантов."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] made it easier for [person] to [verb].",
+        "[Handlung] machte es [Person] leichter, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE006",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Не оставить другого выбора, кроме …",
+      "title_en": "[Action] left [person] with no choice but to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите ситуацию, в которой доступные варианты фактически исчезли. Используйте осторожно: формула сильная и утверждает отсутствие реальной альтернативы.",
+      "editorial_descriptions": {
+        "en": "Describe a situation in which practical alternatives disappeared. Use it carefully: the frame makes the strong claim that no real choice remained.",
+        "ru": "Опишите ситуацию, в которой доступные варианты фактически исчезли. Используйте осторожно: формула сильная и утверждает отсутствие реальной альтернативы."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] left [person] with no choice but to [verb].",
+          "example": "The cancelled ferry left us with no choice but to stay on the island overnight.",
+          "translation": "Отмена парома не оставила нам другого выбора, кроме как переночевать на острове.",
+          "examples": [
+            {
+              "text": "The cancelled ferry left us with no choice but to stay on the island overnight.",
+              "translation_ru": "Отмена парома не оставила нам другого выбора, кроме как переночевать на острове."
+            },
+            {
+              "text": "A burst pipe left the café with no choice but to close for the morning.",
+              "translation_ru": "Прорыв трубы не оставил кафе другого выбора, кроме как закрыться на утро."
+            },
+            {
+              "text": "Losing the only key left her with no choice but to call a locksmith.",
+              "translation_ru": "Потеря единственного ключа не оставила ей другого выбора, кроме вызова слесаря."
+            },
+            {
+              "text": "The corrupted file left the team with no choice but to restore yesterday's backup.",
+              "translation_ru": "Повреждённый файл не оставил команде другого выбора, кроме восстановления вчерашней резервной копии."
+            },
+            {
+              "text": "The storm left the climbers with no choice but to turn back below the summit.",
+              "translation_ru": "Шторм не оставил альпинистам другого выбора, кроме как повернуть назад ниже вершины."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] ließ [Person] keine andere Wahl, als [zu + Infinitiv].",
+          "example": "Die abgesagte Fähre ließ uns keine andere Wahl, als über Nacht auf der Insel zu bleiben.",
+          "translation": "Отмена парома не оставила нам другого выбора, кроме как переночевать на острове.",
+          "examples": [
+            {
+              "text": "Die abgesagte Fähre ließ uns keine andere Wahl, als über Nacht auf der Insel zu bleiben.",
+              "translation_ru": "Отмена парома не оставила нам другого выбора, кроме как переночевать на острове."
+            },
+            {
+              "text": "Ein Rohrbruch ließ dem Café keine andere Wahl, als am Vormittag zu schließen.",
+              "translation_ru": "Прорыв трубы не оставил кафе другого выбора, кроме как закрыться на утро."
+            },
+            {
+              "text": "Der Verlust des einzigen Schlüssels ließ ihr keine andere Wahl, als einen Schlüsseldienst zu rufen.",
+              "translation_ru": "Потеря единственного ключа не оставила ей другого выбора, кроме вызова слесаря."
+            },
+            {
+              "text": "Die beschädigte Datei ließ dem Team keine andere Wahl, als die Sicherung vom Vortag wiederherzustellen.",
+              "translation_ru": "Повреждённый файл не оставил команде другого выбора, кроме восстановления вчерашней резервной копии."
+            },
+            {
+              "text": "Der Sturm ließ den Bergsteigern keine andere Wahl, als unterhalb des Gipfels umzukehren.",
+              "translation_ru": "Шторм не оставил альпинистам другого выбора, кроме как повернуть назад ниже вершины."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] left [person] with no choice but to [verb].",
+        "[Handlung] ließ [Person] keine andere Wahl, als [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE007",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Породить новую проблему или явление …",
+      "title_en": "[Action] gave rise to [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите, что действие породило новое явление, вопрос или проблему. Оборот несколько формальнее простого cause и хорошо подходит для анализа.",
+      "editorial_descriptions": {
+        "en": "Show that an action generated a new issue, phenomenon or development. The phrase is somewhat more formal than simple cause and works well in analytical speech.",
+        "ru": "Покажите, что действие породило новое явление, вопрос или проблему. Оборот несколько формальнее простого cause и хорошо подходит для анализа."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] gave rise to [noun].",
+          "example": "The shared workshop gave rise to a small network of neighbours who now repair things together.",
+          "translation": "Общая мастерская породила небольшое сообщество соседей, которые теперь ремонтируют вещи вместе.",
+          "examples": [
+            {
+              "text": "The shared workshop gave rise to a small network of neighbours who now repair things together.",
+              "translation_ru": "Общая мастерская породила небольшое сообщество соседей, которые теперь ремонтируют вещи вместе."
+            },
+            {
+              "text": "The unclear wording gave rise to several different interpretations of the rule.",
+              "translation_ru": "Неясная формулировка породила несколько разных трактовок правила."
+            },
+            {
+              "text": "The discovery of the letters gave rise to a new exhibition about the town's history.",
+              "translation_ru": "Обнаружение писем привело к появлению новой выставки об истории города."
+            },
+            {
+              "text": "A change in the route gave rise to complaints from residents near the new bus stop.",
+              "translation_ru": "Изменение маршрута вызвало жалобы жителей рядом с новой автобусной остановкой."
+            },
+            {
+              "text": "The first experiment gave rise to more questions than it answered.",
+              "translation_ru": "Первый эксперимент породил больше вопросов, чем дал ответов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] führte zu [Nomen] / brachte [Nomen] hervor.",
+          "example": "Die gemeinsame Werkstatt brachte ein kleines Netzwerk von Nachbarn hervor, die nun gemeinsam Dinge reparieren.",
+          "translation": "Общая мастерская породила небольшое сообщество соседей, которые теперь ремонтируют вещи вместе.",
+          "examples": [
+            {
+              "text": "Die gemeinsame Werkstatt brachte ein kleines Netzwerk von Nachbarn hervor, die nun gemeinsam Dinge reparieren.",
+              "translation_ru": "Общая мастерская породила небольшое сообщество соседей, которые теперь ремонтируют вещи вместе."
+            },
+            {
+              "text": "Die unklare Formulierung führte zu mehreren unterschiedlichen Auslegungen der Regel.",
+              "translation_ru": "Неясная формулировка породила несколько разных трактовок правила."
+            },
+            {
+              "text": "Die Entdeckung der Briefe führte zu einer neuen Ausstellung über die Geschichte der Stadt.",
+              "translation_ru": "Обнаружение писем привело к появлению новой выставки об истории города."
+            },
+            {
+              "text": "Eine Streckenänderung führte zu Beschwerden von Anwohnern in der Nähe der neuen Bushaltestelle.",
+              "translation_ru": "Изменение маршрута вызвало жалобы жителей рядом с новой автобусной остановкой."
+            },
+            {
+              "text": "Das erste Experiment warf mehr neue Fragen auf, als es beantwortete.",
+              "translation_ru": "Первый эксперимент породил больше вопросов, чем дал ответов."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] gave rise to [noun].",
+        "[Handlung] führte zu [Nomen] / brachte [Nomen] hervor."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE008",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Внести вклад в результат …",
+      "title_en": "[Action] contributed to [noun / verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите один из факторов результата, не выдавая его за единственную причину. Полезная формула для более точной причинной речи.",
+      "editorial_descriptions": {
+        "en": "Name one factor among several rather than presenting it as the sole cause. This is useful for calibrated causal language.",
+        "ru": "Назовите один из факторов результата, не выдавая его за единственную причину. Полезная формула для более точной причинной речи."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] contributed to [noun / verb-ing].",
+          "example": "Better lighting contributed to making the workshop feel safer in the evening.",
+          "translation": "Лучшее освещение помогло сделать мастерскую более безопасной по ощущениям вечером.",
+          "examples": [
+            {
+              "text": "Better lighting contributed to making the workshop feel safer in the evening.",
+              "translation_ru": "Лучшее освещение помогло сделать мастерскую более безопасной по ощущениям вечером."
+            },
+            {
+              "text": "Her regular practice contributed to the steadiness of her presentation voice.",
+              "translation_ru": "Регулярная практика помогла сделать её голос во время презентации более уверенным."
+            },
+            {
+              "text": "Several wet weeks contributed to the path becoming badly eroded.",
+              "translation_ru": "Несколько дождливых недель способствовали сильной эрозии тропы."
+            },
+            {
+              "text": "A confusing subject line may have contributed to people overlooking the email.",
+              "translation_ru": "Запутанная тема письма могла способствовать тому, что его не заметили."
+            },
+            {
+              "text": "The quieter room contributed to clearer recordings, but microphone placement also mattered.",
+              "translation_ru": "Более тихая комната способствовала чистоте записей, но положение микрофона тоже имело значение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] trug zu [Nomen / nominalisierter Handlung] bei.",
+          "example": "Eine bessere Beleuchtung trug dazu bei, dass sich die Werkstatt abends sicherer anfühlte.",
+          "translation": "Лучшее освещение помогло сделать мастерскую более безопасной по ощущениям вечером.",
+          "examples": [
+            {
+              "text": "Eine bessere Beleuchtung trug dazu bei, dass sich die Werkstatt abends sicherer anfühlte.",
+              "translation_ru": "Лучшее освещение помогло сделать мастерскую более безопасной по ощущениям вечером."
+            },
+            {
+              "text": "Ihr regelmäßiges Üben trug zur Stabilität ihrer Stimme bei der Präsentation bei.",
+              "translation_ru": "Регулярная практика помогла сделать её голос во время презентации более уверенным."
+            },
+            {
+              "text": "Mehrere nasse Wochen trugen dazu bei, dass der Weg stark erodierte.",
+              "translation_ru": "Несколько дождливых недель способствовали сильной эрозии тропы."
+            },
+            {
+              "text": "Eine verwirrende Betreffzeile könnte dazu beigetragen haben, dass die E-Mail übersehen wurde.",
+              "translation_ru": "Запутанная тема письма могла способствовать тому, что его не заметили."
+            },
+            {
+              "text": "Der ruhigere Raum trug zu klareren Aufnahmen bei, aber auch die Mikrofonposition spielte eine Rolle.",
+              "translation_ru": "Более тихая комната способствовала чистоте записей, но положение микрофона тоже имело значение."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] contributed to [noun / verb-ing].",
+        "[Handlung] trug zu [Nomen / nominalisierter Handlung] bei."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE009",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Иметь эффект, заключающийся в том, что …",
+      "title_en": "[Action] had the effect of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите наблюдаемое последствие действия, особенно когда эффект был косвенным или неожиданным. Формула не утверждает намерение.",
+      "editorial_descriptions": {
+        "en": "Describe an observed consequence, especially an indirect or unintended one. The construction says what happened, not what the actor intended.",
+        "ru": "Опишите наблюдаемое последствие действия, особенно когда эффект был косвенным или неожиданным. Формула не утверждает намерение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] had the effect of [verb-ing].",
+          "example": "Moving the chairs into a circle had the effect of making the discussion less formal.",
+          "translation": "Расстановка стульев кругом сделала обсуждение менее формальным.",
+          "examples": [
+            {
+              "text": "Moving the chairs into a circle had the effect of making the discussion less formal.",
+              "translation_ru": "Расстановка стульев кругом сделала обсуждение менее формальным."
+            },
+            {
+              "text": "The bright new sign had the effect of drawing people to the wrong entrance.",
+              "translation_ru": "Новая яркая вывеска привела к тому, что люди стали идти к неправильному входу."
+            },
+            {
+              "text": "Closing the window had the effect of reducing the background noise dramatically.",
+              "translation_ru": "Закрытие окна заметно снизило фоновый шум."
+            },
+            {
+              "text": "The discount had the effect of shifting most orders to the largest size.",
+              "translation_ru": "Скидка привела к тому, что большинство заказов сместилось к самому большому размеру."
+            },
+            {
+              "text": "Repeating the warning too often had the effect of making people ignore it.",
+              "translation_ru": "Слишком частое повторение предупреждения привело к тому, что люди стали его игнорировать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] hatte den Effekt, dass [Aussage].",
+          "example": "Das Aufstellen der Stühle im Kreis hatte den Effekt, dass die Diskussion weniger förmlich wurde.",
+          "translation": "Расстановка стульев кругом сделала обсуждение менее формальным.",
+          "examples": [
+            {
+              "text": "Das Aufstellen der Stühle im Kreis hatte den Effekt, dass die Diskussion weniger förmlich wurde.",
+              "translation_ru": "Расстановка стульев кругом сделала обсуждение менее формальным."
+            },
+            {
+              "text": "Das neue helle Schild hatte den Effekt, dass die Leute zum falschen Eingang gingen.",
+              "translation_ru": "Новая яркая вывеска привела к тому, что люди стали идти к неправильному входу."
+            },
+            {
+              "text": "Das Schließen des Fensters hatte den Effekt, dass die Hintergrundgeräusche deutlich abnahmen.",
+              "translation_ru": "Закрытие окна заметно снизило фоновый шум."
+            },
+            {
+              "text": "Der Rabatt hatte den Effekt, dass sich die meisten Bestellungen auf die größte Größe verlagerten.",
+              "translation_ru": "Скидка привела к тому, что большинство заказов сместилось к самому большому размеру."
+            },
+            {
+              "text": "Das zu häufige Wiederholen der Warnung hatte den Effekt, dass die Leute sie ignorierten.",
+              "translation_ru": "Слишком частое повторение предупреждения привело к тому, что люди стали его игнорировать."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] had the effect of [verb-ing].",
+        "[Handlung] hatte den Effekt, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SCE010",
+      "set_id": "SCE",
+      "group_id": "SCE",
+      "title_ru": "Подготовить почву для …",
+      "title_en": "[Action] paved the way for [noun / verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите, что действие создало условия для следующего развития, не вызывая его напрямую и немедленно. Это удобная формула для многоэтапных изменений.",
+      "editorial_descriptions": {
+        "en": "Show that an action created conditions for a later development without directly and immediately causing it. It is useful for multi-step change.",
+        "ru": "Покажите, что действие создало условия для следующего развития, не вызывая его напрямую и немедленно. Это удобная формула для многоэтапных изменений."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Action] paved the way for [noun / verb-ing].",
+          "example": "A successful weekend trial paved the way for the market to open every Saturday.",
+          "translation": "Успешный пробный уикенд подготовил почву для еженедельной работы рынка по субботам.",
+          "examples": [
+            {
+              "text": "A successful weekend trial paved the way for the market to open every Saturday.",
+              "translation_ru": "Успешный пробный уикенд подготовил почву для еженедельной работы рынка по субботам."
+            },
+            {
+              "text": "Digitising the catalogue paved the way for researchers to search the collection remotely.",
+              "translation_ru": "Оцифровка каталога подготовила условия для удалённого поиска по коллекции."
+            },
+            {
+              "text": "Her first small exhibition paved the way for invitations from two larger galleries.",
+              "translation_ru": "Первая небольшая выставка открыла ей дорогу к приглашениям от двух более крупных галерей."
+            },
+            {
+              "text": "Agreeing on common file names paved the way for automating part of the archive process.",
+              "translation_ru": "Согласование единых имён файлов подготовило почву для автоматизации части архивного процесса."
+            },
+            {
+              "text": "The new cycle lane paved the way for several families to stop driving to school.",
+              "translation_ru": "Новая велодорожка создала условия для того, чтобы несколько семей перестали возить детей в школу на машине."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Handlung] ebnete den Weg für [Nomen / nominalisierte Handlung].",
+          "example": "Ein erfolgreicher Wochenendversuch ebnete den Weg dafür, dass der Markt nun jeden Samstag öffnet.",
+          "translation": "Успешный пробный уикенд подготовил почву для еженедельной работы рынка по субботам.",
+          "examples": [
+            {
+              "text": "Ein erfolgreicher Wochenendversuch ebnete den Weg dafür, dass der Markt nun jeden Samstag öffnet.",
+              "translation_ru": "Успешный пробный уикенд подготовил почву для еженедельной работы рынка по субботам."
+            },
+            {
+              "text": "Die Digitalisierung des Katalogs ebnete Forschern den Weg zur Fernsuche in der Sammlung.",
+              "translation_ru": "Оцифровка каталога подготовила условия для удалённого поиска по коллекции."
+            },
+            {
+              "text": "Ihre erste kleine Ausstellung ebnete den Weg für Einladungen von zwei größeren Galerien.",
+              "translation_ru": "Первая небольшая выставка открыла ей дорогу к приглашениям от двух более крупных галерей."
+            },
+            {
+              "text": "Die Einigung auf gemeinsame Dateinamen ebnete den Weg dafür, einen Teil des Archivprozesses zu automatisieren.",
+              "translation_ru": "Согласование единых имён файлов подготовило почву для автоматизации части архивного процесса."
+            },
+            {
+              "text": "Der neue Radweg ebnete mehreren Familien den Weg dazu, nicht mehr mit dem Auto zur Schule zu fahren.",
+              "translation_ru": "Новая велодорожка создала условия для того, чтобы несколько семей перестали возить детей в школу на машине."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Action] paved the way for [noun / verb-ing].",
+        "[Handlung] ebnete den Weg für [Nomen / nominalisierte Handlung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    }
+  ]
+}

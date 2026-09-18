@@ -1,4 +1,4 @@
-import { expansionSetIds } from './helpers/curriculum-contract.mjs';
+import { allExpansionSetIds as expansionSetIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";

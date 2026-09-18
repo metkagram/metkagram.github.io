@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SQD",
+  "patterns": [
+    {
+      "id": "SQD001",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Не мог бы … пошагово объяснить …?",
+      "title_en": "Could [subject] walk [person] through [process]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Попросите пройти по этапам процесса, а не просто дать определение. Английский оборот употребляется и вне рабочих ситуаций.",
+      "editorial_descriptions": {
+        "en": "Request a step-by-step explanation rather than a definition. Walk someone through something is common for practical tasks, not only workplace procedures.",
+        "ru": "Попросите пройти по этапам процесса, а не просто дать определение. Английский оборот употребляется и вне рабочих ситуаций."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could [subject] walk [person] through [process]?",
+          "example": "Could you walk me through the steps for returning this damaged parcel?",
+          "translation": "Не мог бы ты пошагово объяснить мне, как вернуть эту повреждённую посылку?",
+          "examples": [
+            {
+              "text": "Could you walk me through the steps for returning this damaged parcel?",
+              "translation_ru": "Не мог бы ты пошагово объяснить мне, как вернуть эту повреждённую посылку?"
+            },
+            {
+              "text": "Could the instructor walk us through the knot before we try it ourselves?",
+              "translation_ru": "Не мог бы инструктор пошагово показать нам этот узел, прежде чем мы попробуем сами?"
+            },
+            {
+              "text": "Could she walk the new volunteers through the evening closing routine?",
+              "translation_ru": "Не могла бы она пошагово объяснить новым волонтёрам, как закрывать помещение вечером?"
+            },
+            {
+              "text": "Could your accountant walk you through the figures instead of just sending a spreadsheet?",
+              "translation_ru": "Не мог бы твой бухгалтер подробно разобрать с тобой цифры, а не просто присылать таблицу?"
+            },
+            {
+              "text": "Could you walk us through the backup settings without changing anything yet?",
+              "translation_ru": "Не мог бы ты пошагово объяснить нам настройки резервного копирования, пока ничего не меняя?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Könnte [Subjekt] [Person] [Vorgang] Schritt für Schritt erklären?",
+          "example": "Könntest du mir die Rücksendung dieses beschädigten Pakets Schritt für Schritt erklären?",
+          "translation": "Не мог бы ты пошагово объяснить мне, как вернуть эту повреждённую посылку?",
+          "examples": [
+            {
+              "text": "Könntest du mir die Rücksendung dieses beschädigten Pakets Schritt für Schritt erklären?",
+              "translation_ru": "Не мог бы ты пошагово объяснить мне, как вернуть эту повреждённую посылку?"
+            },
+            {
+              "text": "Könnte der Kursleiter uns den Knoten Schritt für Schritt erklären, bevor wir ihn selbst ausprobieren?",
+              "translation_ru": "Не мог бы инструктор пошагово показать нам этот узел, прежде чем мы попробуем сами?"
+            },
+            {
+              "text": "Könnte sie den neuen Freiwilligen den Ablauf beim abendlichen Schließen Schritt für Schritt erklären?",
+              "translation_ru": "Не могла бы она пошагово объяснить новым волонтёрам, как закрывать помещение вечером?"
+            },
+            {
+              "text": "Könnte dein Buchhalter dir die Zahlen Schritt für Schritt erklären, statt nur eine Tabelle zu schicken?",
+              "translation_ru": "Не мог бы твой бухгалтер подробно разобрать с тобой цифры, а не просто присылать таблицу?"
+            },
+            {
+              "text": "Könntest du uns die Sicherungseinstellungen Schritt für Schritt erklären, ohne vorerst etwas zu ändern?",
+              "translation_ru": "Не мог бы ты пошагово объяснить нам настройки резервного копирования, пока ничего не меняя?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Could [subject] walk [person] through [process]?",
+        "Könnte [Subjekt] [Person] [Vorgang] Schritt für Schritt erklären?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD002",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "На что именно … ссылается?",
+      "title_en": "What exactly is/are [subject] referring to [context]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните, к какой вещи или реплике относится сказанное. В английском вопросительное слово связано с предлогом в конце глагольной группы.",
+      "editorial_descriptions": {
+        "en": "Identify the precise referent of a remark. What connects to the stranded preposition to; German normally uses worauf rather than a literal what-plus-preposition translation.",
+        "ru": "Уточните, к какой вещи или реплике относится сказанное. В английском вопросительное слово связано с предлогом в конце глагольной группы."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What exactly is/are [subject] referring to [context]?",
+          "example": "What exactly are you referring to when you mention unexpected charges?",
+          "translation": "О каких именно неожиданных начислениях ты говоришь?",
+          "examples": [
+            {
+              "text": "What exactly are you referring to when you mention unexpected charges?",
+              "translation_ru": "О каких именно неожиданных начислениях ты говоришь?"
+            },
+            {
+              "text": "What exactly is the guide referring to as the original entrance?",
+              "translation_ru": "Что именно путеводитель называет первоначальным входом?"
+            },
+            {
+              "text": "What exactly are they referring to in the last paragraph of the invitation?",
+              "translation_ru": "О чём именно они говорят в последнем абзаце приглашения?"
+            },
+            {
+              "text": "What exactly is she referring to when she says the recording sounds flat?",
+              "translation_ru": "Что именно она имеет в виду, когда говорит, что запись звучит плоско?"
+            },
+            {
+              "text": "What exactly are we referring to as a completed task in this report?",
+              "translation_ru": "Что именно мы называем завершённой задачей в этом отчёте?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Worauf genau bezieht sich [Subjekt] [Kontext]?",
+          "example": "Worauf genau beziehst du dich, wenn du unerwartete Gebühren erwähnst?",
+          "translation": "О каких именно неожиданных начислениях ты говоришь?",
+          "examples": [
+            {
+              "text": "Worauf genau beziehst du dich, wenn du unerwartete Gebühren erwähnst?",
+              "translation_ru": "О каких именно неожиданных начислениях ты говоришь?"
+            },
+            {
+              "text": "Worauf genau bezieht sich der Reiseführer mit der Bezeichnung ursprünglicher Eingang?",
+              "translation_ru": "Что именно путеводитель называет первоначальным входом?"
+            },
+            {
+              "text": "Worauf genau beziehen sie sich im letzten Absatz der Einladung?",
+              "translation_ru": "О чём именно они говорят в последнем абзаце приглашения?"
+            },
+            {
+              "text": "Worauf genau bezieht sie sich, wenn sie sagt, die Aufnahme klinge flach?",
+              "translation_ru": "Что именно она имеет в виду, когда говорит, что запись звучит плоско?"
+            },
+            {
+              "text": "Worauf genau beziehen wir uns in diesem Bericht mit dem Begriff abgeschlossene Aufgabe?",
+              "translation_ru": "Что именно мы называем завершённой задачей в этом отчёте?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What exactly is/are [subject] referring to [context]?",
+        "Worauf genau bezieht sich [Subjekt] [Kontext]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD003",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "С какой частью … возникают трудности?",
+      "title_en": "Which part of [noun] is/are [subject] struggling with?",
+      "level": "B2–C1",
+      "metaphor_ru": "Сузьте проблему до конкретного фрагмента. Так проще ответить, чем на общий вопрос о том, почему всё не получается.",
+      "editorial_descriptions": {
+        "en": "Narrow a difficulty to a specific part. The question invites a more actionable answer than asking why the entire task is going badly.",
+        "ru": "Сузьте проблему до конкретного фрагмента. Так проще ответить, чем на общий вопрос о том, почему всё не получается."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Which part of [noun] is/are [subject] struggling with?",
+          "example": "Which part of the assembly instructions are you struggling with?",
+          "translation": "С какой частью инструкции по сборке у тебя трудности?",
+          "examples": [
+            {
+              "text": "Which part of the assembly instructions are you struggling with?",
+              "translation_ru": "С какой частью инструкции по сборке у тебя трудности?"
+            },
+            {
+              "text": "Which part of the melody is your son struggling with before the recital?",
+              "translation_ru": "С какой частью мелодии у твоего сына трудности перед выступлением?"
+            },
+            {
+              "text": "Which part of the application are the new members struggling with?",
+              "translation_ru": "С какой частью заявления у новых участников возникают трудности?"
+            },
+            {
+              "text": "Which part of the handover are we struggling with despite having written notes?",
+              "translation_ru": "С какой частью передачи дел у нас трудности, несмотря на письменные заметки?"
+            },
+            {
+              "text": "Which part of the recipe is she struggling with on her first attempt?",
+              "translation_ru": "С какой частью рецепта у неё трудности при первой попытке?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mit welchem Teil von [Nomen] hat [Subjekt] Schwierigkeiten?",
+          "example": "Mit welchem Teil der Aufbauanleitung hast du Schwierigkeiten?",
+          "translation": "С какой частью инструкции по сборке у тебя трудности?",
+          "examples": [
+            {
+              "text": "Mit welchem Teil der Aufbauanleitung hast du Schwierigkeiten?",
+              "translation_ru": "С какой частью инструкции по сборке у тебя трудности?"
+            },
+            {
+              "text": "Mit welchem Teil der Melodie hat dein Sohn vor dem Vorspiel Schwierigkeiten?",
+              "translation_ru": "С какой частью мелодии у твоего сына трудности перед выступлением?"
+            },
+            {
+              "text": "Mit welchem Teil des Antrags haben die neuen Mitglieder Schwierigkeiten?",
+              "translation_ru": "С какой частью заявления у новых участников возникают трудности?"
+            },
+            {
+              "text": "Mit welchem Teil der Übergabe haben wir trotz der schriftlichen Notizen Schwierigkeiten?",
+              "translation_ru": "С какой частью передачи дел у нас трудности, несмотря на письменные заметки?"
+            },
+            {
+              "text": "Mit welchem Teil des Rezepts hat sie bei ihrem ersten Versuch Schwierigkeiten?",
+              "translation_ru": "С какой частью рецепта у неё трудности при первой попытке?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Which part of [noun] is/are [subject] struggling with?",
+        "Mit welchem Teil von [Nomen] hat [Subjekt] Schwierigkeiten?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD004",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Что … хотел сказать, сделав …?",
+      "title_en": "What did [person] mean by [verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выясните смысл жеста, слова или поступка. В зависимости от интонации вопрос может быть нейтральным уточнением или выражением недовольства.",
+      "editorial_descriptions": {
+        "en": "Ask about the intended meaning of an action or wording. This can be a neutral clarification or a complaint; it does not simply ask why the event happened.",
+        "ru": "Выясните смысл жеста, слова или поступка. В зависимости от интонации вопрос может быть нейтральным уточнением или выражением недовольства."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What did [person] mean by [verb-ing]?",
+          "example": "What did you mean by calling the proposal ambitious?",
+          "translation": "Что ты хотел сказать, назвав предложение амбициозным?",
+          "examples": [
+            {
+              "text": "What did you mean by calling the proposal ambitious?",
+              "translation_ru": "Что ты хотел сказать, назвав предложение амбициозным?"
+            },
+            {
+              "text": "What did the curator mean by placing the broken clock beside the portrait?",
+              "translation_ru": "Что куратор хотела сказать, поставив сломанные часы рядом с портретом?"
+            },
+            {
+              "text": "What did he mean by describing the route as suitable for confident beginners?",
+              "translation_ru": "Что он хотел сказать, назвав маршрут подходящим для уверенных новичков?"
+            },
+            {
+              "text": "What did she mean by leaving a question mark next to my estimate?",
+              "translation_ru": "Что она хотела сказать, поставив знак вопроса рядом с моей оценкой?"
+            },
+            {
+              "text": "What did they mean by putting the word free in quotation marks?",
+              "translation_ru": "Что они хотели сказать, взяв слово «бесплатно» в кавычки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was wollte [Person] damit sagen, dass [Handlung]?",
+          "example": "Was wolltest du damit sagen, dass du den Vorschlag ehrgeizig genannt hast?",
+          "translation": "Что ты хотел сказать, назвав предложение амбициозным?",
+          "examples": [
+            {
+              "text": "Was wolltest du damit sagen, dass du den Vorschlag ehrgeizig genannt hast?",
+              "translation_ru": "Что ты хотел сказать, назвав предложение амбициозным?"
+            },
+            {
+              "text": "Was wollte die Kuratorin damit sagen, dass sie die kaputte Uhr neben das Porträt gestellt hat?",
+              "translation_ru": "Что куратор хотела сказать, поставив сломанные часы рядом с портретом?"
+            },
+            {
+              "text": "Was wollte er damit sagen, dass er die Strecke als geeignet für sichere Anfänger bezeichnet hat?",
+              "translation_ru": "Что он хотел сказать, назвав маршрут подходящим для уверенных новичков?"
+            },
+            {
+              "text": "Was wollte sie damit sagen, dass sie neben meiner Schätzung ein Fragezeichen gesetzt hat?",
+              "translation_ru": "Что она хотела сказать, поставив знак вопроса рядом с моей оценкой?"
+            },
+            {
+              "text": "Was wollten sie damit sagen, dass sie das Wort kostenlos in Anführungszeichen gesetzt haben?",
+              "translation_ru": "Что они хотели сказать, взяв слово «бесплатно» в кавычки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What did [person] mean by [verb-ing]?",
+        "Was wollte [Person] damit sagen, dass [Handlung]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD005",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Разве нельзя …, не …?",
+      "title_en": "Isn't there a way to [verb] without [verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Предложите поискать способ избежать нежелательного побочного действия. Отрицательный вопрос обычно передаёт надежду, что такой способ существует.",
+      "editorial_descriptions": {
+        "en": "Invite a search for a way to avoid an unwanted side effect. The negative question normally suggests that the speaker hopes such an option exists.",
+        "ru": "Предложите поискать способ избежать нежелательного побочного действия. Отрицательный вопрос обычно передаёт надежду, что такой способ существует."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Isn't there a way to [verb] without [verb-ing]?",
+          "example": "Isn't there a way to clean the filter without taking the whole machine apart?",
+          "translation": "Разве нельзя почистить фильтр, не разбирая всю машину?",
+          "examples": [
+            {
+              "text": "Isn't there a way to clean the filter without taking the whole machine apart?",
+              "translation_ru": "Разве нельзя почистить фильтр, не разбирая всю машину?"
+            },
+            {
+              "text": "Isn't there a way to disagree without making the conversation personal?",
+              "translation_ru": "Разве нельзя возразить, не переходя на личности?"
+            },
+            {
+              "text": "Isn't there a way to reach the lake without crossing private land?",
+              "translation_ru": "Разве нельзя добраться до озера, не пересекая частный участок?"
+            },
+            {
+              "text": "Isn't there a way to shorten the article without removing the useful examples?",
+              "translation_ru": "Разве нельзя сократить статью, не убирая полезные примеры?"
+            },
+            {
+              "text": "Isn't there a way to reset the password without losing the saved settings?",
+              "translation_ru": "Разве нельзя сбросить пароль, не потеряв сохранённые настройки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Gibt es denn keine Möglichkeit, [zu + Infinitiv], ohne [zu + Infinitiv]?",
+          "example": "Gibt es denn keine Möglichkeit, den Filter zu reinigen, ohne die ganze Maschine auseinanderzunehmen?",
+          "translation": "Разве нельзя почистить фильтр, не разбирая всю машину?",
+          "examples": [
+            {
+              "text": "Gibt es denn keine Möglichkeit, den Filter zu reinigen, ohne die ganze Maschine auseinanderzunehmen?",
+              "translation_ru": "Разве нельзя почистить фильтр, не разбирая всю машину?"
+            },
+            {
+              "text": "Gibt es denn keine Möglichkeit, zu widersprechen, ohne persönlich zu werden?",
+              "translation_ru": "Разве нельзя возразить, не переходя на личности?"
+            },
+            {
+              "text": "Gibt es denn keine Möglichkeit, zum See zu gelangen, ohne ein Privatgrundstück zu überqueren?",
+              "translation_ru": "Разве нельзя добраться до озера, не пересекая частный участок?"
+            },
+            {
+              "text": "Gibt es denn keine Möglichkeit, den Artikel zu kürzen, ohne die nützlichen Beispiele zu entfernen?",
+              "translation_ru": "Разве нельзя сократить статью, не убирая полезные примеры?"
+            },
+            {
+              "text": "Gibt es denn keine Möglichkeit, das Passwort zurückzusetzen, ohne die gespeicherten Einstellungen zu verlieren?",
+              "translation_ru": "Разве нельзя сбросить пароль, не потеряв сохранённые настройки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Isn't there a way to [verb] without [verb-ing]?",
+        "Gibt es denn keine Möglichkeit, [zu + Infinitiv], ohne [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD006",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Ты говоришь, что …, или что …?",
+      "title_en": "Is/Are [person] saying that [X], or that [Y]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Разведите два возможных толкования чужой реплики. Повторение союза помогает услышать границу между альтернативами.",
+      "editorial_descriptions": {
+        "en": "Separate two possible interpretations of a remark. Repeating that makes the alternatives clear and avoids silently attributing one interpretation to the speaker.",
+        "ru": "Разведите два возможных толкования чужой реплики. Повторение союза помогает услышать границу между альтернативами."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Is/Are [person] saying that [X], or that [Y]?",
+          "example": "Are you saying that the booking is cancelled, or that the room has changed?",
+          "translation": "Ты говоришь, что бронь отменена или что поменялся номер?",
+          "examples": [
+            {
+              "text": "Are you saying that the booking is cancelled, or that the room has changed?",
+              "translation_ru": "Ты говоришь, что бронь отменена или что поменялся номер?"
+            },
+            {
+              "text": "Is she saying that the file is missing, or that she cannot open it?",
+              "translation_ru": "Она говорит, что файла нет или что она не может его открыть?"
+            },
+            {
+              "text": "Are they saying that the chair cannot be repaired, or that the repair would cost too much?",
+              "translation_ru": "Они говорят, что стул нельзя починить или что ремонт обойдётся слишком дорого?"
+            },
+            {
+              "text": "Are you saying that the recipe needs less salt, or that the cheese is already salty enough?",
+              "translation_ru": "Ты говоришь, что в рецепте нужно меньше соли или что сыр уже достаточно солёный?"
+            },
+            {
+              "text": "Is he saying that we lack evidence, or that he disagrees with the conclusion?",
+              "translation_ru": "Он говорит, что у нас недостаточно подтверждений или что не согласен с выводом?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Meint [Person], dass [X], oder dass [Y]?",
+          "example": "Meinst du, dass die Buchung storniert ist, oder dass sich das Zimmer geändert hat?",
+          "translation": "Ты говоришь, что бронь отменена или что поменялся номер?",
+          "examples": [
+            {
+              "text": "Meinst du, dass die Buchung storniert ist, oder dass sich das Zimmer geändert hat?",
+              "translation_ru": "Ты говоришь, что бронь отменена или что поменялся номер?"
+            },
+            {
+              "text": "Meint sie, dass die Datei fehlt, oder dass sie sie nicht öffnen kann?",
+              "translation_ru": "Она говорит, что файла нет или что она не может его открыть?"
+            },
+            {
+              "text": "Meinen sie, dass der Stuhl nicht repariert werden kann, oder dass die Reparatur zu teuer wäre?",
+              "translation_ru": "Они говорят, что стул нельзя починить или что ремонт обойдётся слишком дорого?"
+            },
+            {
+              "text": "Meinst du, dass das Rezept weniger Salz braucht, oder dass der Käse schon salzig genug ist?",
+              "translation_ru": "Ты говоришь, что в рецепте нужно меньше соли или что сыр уже достаточно солёный?"
+            },
+            {
+              "text": "Meint er, dass uns Belege fehlen, oder dass er der Schlussfolgerung nicht zustimmt?",
+              "translation_ru": "Он говорит, что у нас недостаточно подтверждений или что не согласен с выводом?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Is/Are [person] saying that [X], or that [Y]?",
+        "Meint [Person], dass [X], oder dass [Y]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD007",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Как ещё … мог бы …?",
+      "title_en": "How else could [subject] have [past participle]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Обсудите другой способ действия в уже завершённой ситуации. В немецком сочетание модального глагола с прошедшим требует особого порядка инфинитивов.",
+      "editorial_descriptions": {
+        "en": "Explore alternative ways of acting in a completed situation. German uses the double infinitive with a modal: hätte … erklären können, not a literal participle copy.",
+        "ru": "Обсудите другой способ действия в уже завершённой ситуации. В немецком сочетание модального глагола с прошедшим требует особого порядка инфинитивов."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How else could [subject] have [past participle]?",
+          "example": "How else could you have explained the delay without blaming the receptionist?",
+          "translation": "Как ещё ты мог бы объяснить опоздание, не обвиняя сотрудника на ресепшене?",
+          "examples": [
+            {
+              "text": "How else could you have explained the delay without blaming the receptionist?",
+              "translation_ru": "Как ещё ты мог бы объяснить опоздание, не обвиняя сотрудника на ресепшене?"
+            },
+            {
+              "text": "How else could the family have kept warm during the power cut?",
+              "translation_ru": "Как ещё семья могла бы согреться во время отключения электричества?"
+            },
+            {
+              "text": "How else could she have checked the measurements before ordering the curtains?",
+              "translation_ru": "Как ещё она могла бы проверить размеры перед заказом штор?"
+            },
+            {
+              "text": "How else could we have warned the hikers about the damaged bridge?",
+              "translation_ru": "Как ещё мы могли бы предупредить туристов о повреждённом мосте?"
+            },
+            {
+              "text": "How else could the organiser have handled the queue with only two volunteers?",
+              "translation_ru": "Как ещё организатор мог бы справиться с очередью, имея только двух волонтёров?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie sonst hätte [Subjekt] [Infinitiv] können?",
+          "example": "Wie sonst hättest du die Verspätung erklären können, ohne der Empfangskraft die Schuld zu geben?",
+          "translation": "Как ещё ты мог бы объяснить опоздание, не обвиняя сотрудника на ресепшене?",
+          "examples": [
+            {
+              "text": "Wie sonst hättest du die Verspätung erklären können, ohne der Empfangskraft die Schuld zu geben?",
+              "translation_ru": "Как ещё ты мог бы объяснить опоздание, не обвиняя сотрудника на ресепшене?"
+            },
+            {
+              "text": "Wie sonst hätte die Familie sich während des Stromausfalls warm halten können?",
+              "translation_ru": "Как ещё семья могла бы согреться во время отключения электричества?"
+            },
+            {
+              "text": "Wie sonst hätte sie die Maße prüfen können, bevor sie die Vorhänge bestellt hat?",
+              "translation_ru": "Как ещё она могла бы проверить размеры перед заказом штор?"
+            },
+            {
+              "text": "Wie sonst hätten wir die Wanderer vor der beschädigten Brücke warnen können?",
+              "translation_ru": "Как ещё мы могли бы предупредить туристов о повреждённом мосте?"
+            },
+            {
+              "text": "Wie sonst hätte der Veranstalter die Warteschlange mit nur zwei Freiwilligen bewältigen können?",
+              "translation_ru": "Как ещё организатор мог бы справиться с очередью, имея только двух волонтёров?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How else could [subject] have [past participle]?",
+        "Wie sonst hätte [Subjekt] [Infinitiv] können?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD008",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Кто ещё мог …?",
+      "title_en": "Who else might have [past participle]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите возможного другого участника события в прошлом. В английском вопрос к подлежащему не требует дополнительного вспомогательного глагола.",
+      "editorial_descriptions": {
+        "en": "Ask about another possible participant in a past event. Who is the subject, so no do-support is needed; might have expresses uncertainty rather than confirmed involvement.",
+        "ru": "Назовите возможного другого участника события в прошлом. В английском вопрос к подлежащему не требует дополнительного вспомогательного глагола."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Who else might have [past participle]?",
+          "example": "Who else might have borrowed the ladder without signing it out?",
+          "translation": "Кто ещё мог взять лестницу, не отметившись в журнале?",
+          "examples": [
+            {
+              "text": "Who else might have borrowed the ladder without signing it out?",
+              "translation_ru": "Кто ещё мог взять лестницу, не отметившись в журнале?"
+            },
+            {
+              "text": "Who else might have noticed the smell before the kitchen was evacuated?",
+              "translation_ru": "Кто ещё мог заметить запах до эвакуации кухни?"
+            },
+            {
+              "text": "Who else might have received the invitation with the wrong date?",
+              "translation_ru": "Кто ещё мог получить приглашение с неверной датой?"
+            },
+            {
+              "text": "Who else might have changed the folder permissions while we were away?",
+              "translation_ru": "Кто ещё мог изменить права доступа к папке, пока нас не было?"
+            },
+            {
+              "text": "Who else might have seen where the puppy ran after the gate opened?",
+              "translation_ru": "Кто ещё мог видеть, куда побежал щенок после того, как открылись ворота?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wer könnte sonst noch [Partizip II] haben/sein?",
+          "example": "Wer könnte sonst noch die Leiter ausgeliehen haben, ohne sich einzutragen?",
+          "translation": "Кто ещё мог взять лестницу, не отметившись в журнале?",
+          "examples": [
+            {
+              "text": "Wer könnte sonst noch die Leiter ausgeliehen haben, ohne sich einzutragen?",
+              "translation_ru": "Кто ещё мог взять лестницу, не отметившись в журнале?"
+            },
+            {
+              "text": "Wer könnte den Geruch sonst noch bemerkt haben, bevor die Küche geräumt wurde?",
+              "translation_ru": "Кто ещё мог заметить запах до эвакуации кухни?"
+            },
+            {
+              "text": "Wer könnte sonst noch die Einladung mit dem falschen Datum erhalten haben?",
+              "translation_ru": "Кто ещё мог получить приглашение с неверной датой?"
+            },
+            {
+              "text": "Wer könnte sonst noch die Ordnerberechtigungen geändert haben, während wir weg waren?",
+              "translation_ru": "Кто ещё мог изменить права доступа к папке, пока нас не было?"
+            },
+            {
+              "text": "Wer könnte sonst noch gesehen haben, wohin der Welpe gelaufen ist, nachdem das Tor aufging?",
+              "translation_ru": "Кто ещё мог видеть, куда побежал щенок после того, как открылись ворота?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Who else might have [past participle]?",
+        "Wer könnte sonst noch [Partizip II] haben/sein?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD009",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Почему … должен быть обязан …?",
+      "title_en": "Why should [subject] have to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Поставьте под вопрос справедливость или основание обязанности. Это сильнее обычного запроса о причине действия и может звучать как возражение.",
+      "editorial_descriptions": {
+        "en": "Challenge the basis or fairness of an obligation. Should have to is not a past perfect form; it combines a judgement with a requirement.",
+        "ru": "Поставьте под вопрос справедливость или основание обязанности. Это сильнее обычного запроса о причине действия и может звучать как возражение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Why should [subject] have to [verb]?",
+          "example": "Why should tenants have to pay for damage that was already there?",
+          "translation": "Почему жильцы должны платить за повреждения, которые были до них?",
+          "examples": [
+            {
+              "text": "Why should tenants have to pay for damage that was already there?",
+              "translation_ru": "Почему жильцы должны платить за повреждения, которые были до них?"
+            },
+            {
+              "text": "Why should I have to create an account just to read the opening hours?",
+              "translation_ru": "Почему я должен создавать аккаунт, чтобы просто посмотреть часы работы?"
+            },
+            {
+              "text": "Why should the newest colleague have to take notes at every meeting?",
+              "translation_ru": "Почему самый новый сотрудник должен вести протокол на каждой встрече?"
+            },
+            {
+              "text": "Why should the children have to miss rehearsal because the booking was entered incorrectly?",
+              "translation_ru": "Почему дети должны пропускать репетицию из-за неверно оформленной брони?"
+            },
+            {
+              "text": "Why should we have to explain the same issue to three different departments?",
+              "translation_ru": "Почему мы должны объяснять одну и ту же проблему трём разным отделам?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Warum sollte [Subjekt] [Infinitiv] müssen?",
+          "example": "Warum sollten Mieter für Schäden zahlen müssen, die schon vorher da waren?",
+          "translation": "Почему жильцы должны платить за повреждения, которые были до них?",
+          "examples": [
+            {
+              "text": "Warum sollten Mieter für Schäden zahlen müssen, die schon vorher da waren?",
+              "translation_ru": "Почему жильцы должны платить за повреждения, которые были до них?"
+            },
+            {
+              "text": "Warum sollte ich ein Konto erstellen müssen, nur um die Öffnungszeiten zu lesen?",
+              "translation_ru": "Почему я должен создавать аккаунт, чтобы просто посмотреть часы работы?"
+            },
+            {
+              "text": "Warum sollte der neueste Kollege bei jeder Besprechung Protokoll führen müssen?",
+              "translation_ru": "Почему самый новый сотрудник должен вести протокол на каждой встрече?"
+            },
+            {
+              "text": "Warum sollten die Kinder wegen einer falsch eingetragenen Buchung auf die Probe verzichten müssen?",
+              "translation_ru": "Почему дети должны пропускать репетицию из-за неверно оформленной брони?"
+            },
+            {
+              "text": "Warum sollten wir drei verschiedenen Abteilungen dasselbe Problem erklären müssen?",
+              "translation_ru": "Почему мы должны объяснять одну и ту же проблему трём разным отделам?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Why should [subject] have to [verb]?",
+        "Warum sollte [Subjekt] [Infinitiv] müssen?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQD010",
+      "set_id": "SQD",
+      "group_id": "SQD",
+      "title_ru": "Как … должен … без …?",
+      "title_en": "How is/are [subject] supposed to [verb] without [resource]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите разрыв между ожиданием и доступными средствами. Вопрос часто выражает затруднение или протест, а не просьбу напомнить инструкцию.",
+      "editorial_descriptions": {
+        "en": "Expose a gap between an expectation and the resources available. The question often conveys frustration or a practical obstacle rather than asking for a rule.",
+        "ru": "Покажите разрыв между ожиданием и доступными средствами. Вопрос часто выражает затруднение или протест, а не просьбу напомнить инструкцию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How is/are [subject] supposed to [verb] without [resource]?",
+          "example": "How are we supposed to compare the offers without a clear list of requirements?",
+          "translation": "Как нам сравнивать предложения без чёткого списка требований?",
+          "examples": [
+            {
+              "text": "How are we supposed to compare the offers without a clear list of requirements?",
+              "translation_ru": "Как нам сравнивать предложения без чёткого списка требований?"
+            },
+            {
+              "text": "How is the courier supposed to find the entrance without a building number?",
+              "translation_ru": "Как курьеру найти вход без номера дома?"
+            },
+            {
+              "text": "How am I supposed to rehearse the duet without the other singer?",
+              "translation_ru": "Как мне репетировать дуэт без второго певца?"
+            },
+            {
+              "text": "How are the volunteers supposed to carry the equipment without a trolley?",
+              "translation_ru": "Как волонтёрам переносить оборудование без тележки?"
+            },
+            {
+              "text": "How is she supposed to confirm the payment without access to the transaction history?",
+              "translation_ru": "Как ей подтвердить платёж без доступа к истории операций?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie soll [Subjekt] ohne [Ressource] [Infinitiv]?",
+          "example": "Wie sollen wir ohne eine klare Anforderungsliste die Angebote vergleichen?",
+          "translation": "Как нам сравнивать предложения без чёткого списка требований?",
+          "examples": [
+            {
+              "text": "Wie sollen wir ohne eine klare Anforderungsliste die Angebote vergleichen?",
+              "translation_ru": "Как нам сравнивать предложения без чёткого списка требований?"
+            },
+            {
+              "text": "Wie soll der Kurier ohne Hausnummer den Eingang finden?",
+              "translation_ru": "Как курьеру найти вход без номера дома?"
+            },
+            {
+              "text": "Wie soll ich ohne den anderen Sänger das Duett proben?",
+              "translation_ru": "Как мне репетировать дуэт без второго певца?"
+            },
+            {
+              "text": "Wie sollen die Freiwilligen ohne Transportwagen die Ausrüstung tragen?",
+              "translation_ru": "Как волонтёрам переносить оборудование без тележки?"
+            },
+            {
+              "text": "Wie soll sie ohne Zugriff auf den Transaktionsverlauf die Zahlung bestätigen?",
+              "translation_ru": "Как ей подтвердить платёж без доступа к истории операций?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How is/are [subject] supposed to [verb] without [resource]?",
+        "Wie soll [Subjekt] ohne [Ressource] [Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

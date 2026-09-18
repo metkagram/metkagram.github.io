@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SPH",
+  "patterns": [
+    {
+      "id": "SPH001",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Откладывать …",
+      "title_en": "[Subject] put(s) off [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите перенос действия на более поздний срок. Не путайте это значение английского глагола с другим — отбивать желание у человека.",
+      "editorial_descriptions": {
+        "en": "Describe delaying an action. Put off takes an -ing form in this use; put someone off can instead mean discourage or make something unattractive.",
+        "ru": "Опишите перенос действия на более поздний срок. Не путайте это значение английского глагола с другим — отбивать желание у человека."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] put(s) off [verb-ing].",
+          "example": "I kept putting off sorting the photographs because I did not know where to begin.",
+          "translation": "Я всё откладывал разбор фотографий, потому что не знал, с чего начать.",
+          "examples": [
+            {
+              "text": "I kept putting off sorting the photographs because I did not know where to begin.",
+              "translation_ru": "Я всё откладывал разбор фотографий, потому что не знал, с чего начать."
+            },
+            {
+              "text": "Do not put off asking about the fee until after the work is finished.",
+              "translation_ru": "Не откладывай вопрос об оплате до завершения работы."
+            },
+            {
+              "text": "Have they put off replacing the cracked window again?",
+              "translation_ru": "Они снова отложили замену треснувшего окна?"
+            },
+            {
+              "text": "She had put off recording her first lesson until the room was quiet enough.",
+              "translation_ru": "Она откладывала запись первого урока, пока в комнате не стало достаточно тихо."
+            },
+            {
+              "text": "We may have to put off planting the young trees if the ground remains frozen.",
+              "translation_ru": "Возможно, нам придётся отложить посадку молодых деревьев, если земля останется мёрзлой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] schiebt es auf, [zu + Infinitiv].",
+          "example": "Ich schob es immer wieder auf, die Fotos zu sortieren, weil ich nicht wusste, wo ich anfangen sollte.",
+          "translation": "Я всё откладывал разбор фотографий, потому что не знал, с чего начать.",
+          "examples": [
+            {
+              "text": "Ich schob es immer wieder auf, die Fotos zu sortieren, weil ich nicht wusste, wo ich anfangen sollte.",
+              "translation_ru": "Я всё откладывал разбор фотографий, потому что не знал, с чего начать."
+            },
+            {
+              "text": "Schiebe es nicht auf, nach dem Honorar zu fragen, bis die Arbeit abgeschlossen ist.",
+              "translation_ru": "Не откладывай вопрос об оплате до завершения работы."
+            },
+            {
+              "text": "Haben sie es wieder aufgeschoben, das gesprungene Fenster zu ersetzen?",
+              "translation_ru": "Они снова отложили замену треснувшего окна?"
+            },
+            {
+              "text": "Sie hatte es aufgeschoben, ihre erste Unterrichtseinheit aufzunehmen, bis es im Raum ruhig genug war.",
+              "translation_ru": "Она откладывала запись первого урока, пока в комнате не стало достаточно тихо."
+            },
+            {
+              "text": "Wir müssen es vielleicht aufschieben, die jungen Bäume zu pflanzen, wenn der Boden gefroren bleibt.",
+              "translation_ru": "Возможно, нам придётся отложить посадку молодых деревьев, если земля останется мёрзлой."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] put(s) off [verb-ing].",
+        "[Subjekt] schiebt es auf, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH002",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Продолжать …, несмотря на …",
+      "title_en": "[Subject] carry/carries on [verb-ing] despite [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Подчеркните продолжение действия при помехе. После английского предлога нужна именная группа; для целого предложения требуется другой союз.",
+      "editorial_descriptions": {
+        "en": "Emphasise continuing an activity despite an obstacle. Despite takes a noun phrase or an -ing phrase, not a finite clause introduced directly after it.",
+        "ru": "Подчеркните продолжение действия при помехе. После английского предлога нужна именная группа; для целого предложения требуется другой союз."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] carry/carries on [verb-ing] despite [noun].",
+          "example": "The musicians carried on playing despite the rain blowing onto the stage.",
+          "translation": "Музыканты продолжали играть, несмотря на дождь, который задувало на сцену.",
+          "examples": [
+            {
+              "text": "The musicians carried on playing despite the rain blowing onto the stage.",
+              "translation_ru": "Музыканты продолжали играть, несмотря на дождь, который задувало на сцену."
+            },
+            {
+              "text": "I carried on checking the figures despite the late hour.",
+              "translation_ru": "Я продолжал проверять цифры, несмотря на поздний час."
+            },
+            {
+              "text": "Will she carry on restoring the boat despite the rising cost of timber?",
+              "translation_ru": "Она продолжит восстанавливать лодку, несмотря на рост цен на древесину?"
+            },
+            {
+              "text": "We have carried on meeting online despite the community centre reopening.",
+              "translation_ru": "Мы продолжали встречаться онлайн, несмотря на открытие общественного центра."
+            },
+            {
+              "text": "The children carried on building their cardboard city despite the missing glue.",
+              "translation_ru": "Дети продолжали строить город из картона, несмотря на отсутствие клея."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] [Verb] trotz [Hindernis] weiter.",
+          "example": "Die Musiker spielten trotz des Regens weiter, der auf die Bühne wehte.",
+          "translation": "Музыканты продолжали играть, несмотря на дождь, который задувало на сцену.",
+          "examples": [
+            {
+              "text": "Die Musiker spielten trotz des Regens weiter, der auf die Bühne wehte.",
+              "translation_ru": "Музыканты продолжали играть, несмотря на дождь, который задувало на сцену."
+            },
+            {
+              "text": "Ich prüfte die Zahlen trotz der späten Stunde weiter.",
+              "translation_ru": "Я продолжал проверять цифры, несмотря на поздний час."
+            },
+            {
+              "text": "Wird sie trotz der steigenden Holzpreise das Boot weiter restaurieren?",
+              "translation_ru": "Она продолжит восстанавливать лодку, несмотря на рост цен на древесину?"
+            },
+            {
+              "text": "Wir haben uns trotz der Wiedereröffnung des Gemeindezentrums weiterhin online getroffen.",
+              "translation_ru": "Мы продолжали встречаться онлайн, несмотря на открытие общественного центра."
+            },
+            {
+              "text": "Die Kinder bauten trotz des fehlenden Klebstoffs an ihrer Pappstadt weiter.",
+              "translation_ru": "Дети продолжали строить город из картона, несмотря на отсутствие клея."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] carry/carries on [verb-ing] despite [noun].",
+        "[Subjekt] [Verb] trotz [Hindernis] weiter."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH003",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "В итоге получить … / остаться с …",
+      "title_en": "[Subject] end(s) up with [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите итоговое состояние или результат, особенно непреднамеренный. В отличие от оборота с действием, после предлога здесь используется существительное.",
+      "editorial_descriptions": {
+        "en": "Name the resulting possession or situation, often unintended. End up with takes a noun phrase; end up doing instead describes the resulting activity.",
+        "ru": "Назовите итоговое состояние или результат, особенно непреднамеренный. В отличие от оборота с действием, после предлога здесь используется существительное."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] end(s) up with [noun].",
+          "example": "We ended up with three spare chairs and nowhere to store them.",
+          "translation": "В итоге у нас оказалось три лишних стула, которые негде хранить.",
+          "examples": [
+            {
+              "text": "We ended up with three spare chairs and nowhere to store them.",
+              "translation_ru": "В итоге у нас оказалось три лишних стула, которые негде хранить."
+            },
+            {
+              "text": "If you keep adding water, you will end up with soup rather than sauce.",
+              "translation_ru": "Если продолжишь добавлять воду, в итоге получится суп, а не соус."
+            },
+            {
+              "text": "How did she end up with responsibility for the whole exhibition?",
+              "translation_ru": "Как получилось, что в итоге она стала отвечать за всю выставку?"
+            },
+            {
+              "text": "I do not want to end up with a subscription I never use.",
+              "translation_ru": "Я не хочу в итоге получить подписку, которой никогда не пользуюсь."
+            },
+            {
+              "text": "They have ended up with two versions of the timetable showing different rooms.",
+              "translation_ru": "В итоге у них оказалось два расписания с разными номерами комнат."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat am Ende [Nomen].",
+          "example": "Wir hatten am Ende drei zusätzliche Stühle und keinen Platz, sie unterzubringen.",
+          "translation": "В итоге у нас оказалось три лишних стула, которые негде хранить.",
+          "examples": [
+            {
+              "text": "Wir hatten am Ende drei zusätzliche Stühle und keinen Platz, sie unterzubringen.",
+              "translation_ru": "В итоге у нас оказалось три лишних стула, которые негде хранить."
+            },
+            {
+              "text": "Wenn du weiter Wasser hinzufügst, hast du am Ende eine Suppe statt einer Soße.",
+              "translation_ru": "Если продолжишь добавлять воду, в итоге получится суп, а не соус."
+            },
+            {
+              "text": "Wie kam es, dass sie am Ende die Verantwortung für die ganze Ausstellung hatte?",
+              "translation_ru": "Как получилось, что в итоге она стала отвечать за всю выставку?"
+            },
+            {
+              "text": "Ich möchte am Ende kein Abonnement haben, das ich nie nutze.",
+              "translation_ru": "Я не хочу в итоге получить подписку, которой никогда не пользуюсь."
+            },
+            {
+              "text": "Sie haben jetzt zwei Versionen des Zeitplans mit unterschiedlichen Raumangaben.",
+              "translation_ru": "В итоге у них оказалось два расписания с разными номерами комнат."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] end(s) up with [noun].",
+        "[Subjekt] hat am Ende [Nomen]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH004",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Сделать … без последствий / обойтись …",
+      "title_en": "[Subject] get(s) away with [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите действие, за которое не последовало ожидаемых последствий. Иногда речь не о нарушении, а о том, что минимальных усилий оказалось достаточно.",
+      "editorial_descriptions": {
+        "en": "Describe avoiding expected consequences or managing with less than usual. German distinguishes damit durchkommen for escaping consequences from damit auskommen for having enough.",
+        "ru": "Опишите действие, за которое не последовало ожидаемых последствий. Иногда речь не о нарушении, а о том, что минимальных усилий оказалось достаточно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] get(s) away with [verb-ing].",
+          "example": "You might get away with packing one jumper if the evenings stay warm.",
+          "translation": "Возможно, ты обойдёшься одним свитером, если вечерами будет тепло.",
+          "examples": [
+            {
+              "text": "You might get away with packing one jumper if the evenings stay warm.",
+              "translation_ru": "Возможно, ты обойдёшься одним свитером, если вечерами будет тепло."
+            },
+            {
+              "text": "The actor got away with forgetting a line because his partner improvised smoothly.",
+              "translation_ru": "Актёру сошёл с рук забытый текст, потому что партнёр удачно сымпровизировал."
+            },
+            {
+              "text": "We will not get away with ignoring the missing signatures during the review.",
+              "translation_ru": "Нам не удастся без последствий проигнорировать отсутствующие подписи при проверке."
+            },
+            {
+              "text": "How did they get away with printing the wrong date on every ticket?",
+              "translation_ru": "Как им сошла с рук печать неправильной даты на всех билетах?"
+            },
+            {
+              "text": "She had got away with watering the plants once a week until the heatwave began.",
+              "translation_ru": "Ей хватало поливать растения раз в неделю, пока не началась жара."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] kommt damit durch/aus, [zu + Infinitiv].",
+          "example": "Du könntest damit auskommen, nur einen Pullover einzupacken, wenn die Abende warm bleiben.",
+          "translation": "Возможно, ты обойдёшься одним свитером, если вечерами будет тепло.",
+          "examples": [
+            {
+              "text": "Du könntest damit auskommen, nur einen Pullover einzupacken, wenn die Abende warm bleiben.",
+              "translation_ru": "Возможно, ты обойдёшься одним свитером, если вечерами будет тепло."
+            },
+            {
+              "text": "Der Schauspieler kam damit durch, einen Satz zu vergessen, weil sein Partner geschickt improvisierte.",
+              "translation_ru": "Актёру сошёл с рук забытый текст, потому что партнёр удачно сымпровизировал."
+            },
+            {
+              "text": "Wir werden nicht damit durchkommen, die fehlenden Unterschriften bei der Prüfung zu ignorieren.",
+              "translation_ru": "Нам не удастся без последствий проигнорировать отсутствующие подписи при проверке."
+            },
+            {
+              "text": "Wie konnten sie damit durchkommen, auf jede Eintrittskarte das falsche Datum zu drucken?",
+              "translation_ru": "Как им сошла с рук печать неправильной даты на всех билетах?"
+            },
+            {
+              "text": "Sie war damit ausgekommen, die Pflanzen einmal pro Woche zu gießen, bis die Hitzewelle begann.",
+              "translation_ru": "Ей хватало поливать растения раз в неделю, пока не началась жара."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] get(s) away with [verb-ing].",
+        "[Subjekt] kommt damit durch/aus, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH005",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Наверстать … / разобраться с накопившимся …",
+      "title_en": "[Subject] catch(es) up on [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Вернитесь к тому, что накопилось или было пропущено. Этот оборот отличается от попытки догнать человека или достичь чьего-то уровня.",
+      "editorial_descriptions": {
+        "en": "Deal with activities or information that have accumulated or been missed. Catch up on differs from catch up with a person or a standard.",
+        "ru": "Вернитесь к тому, что накопилось или было пропущено. Этот оборот отличается от попытки догнать человека или достичь чьего-то уровня."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] catch(es) up on [noun].",
+          "example": "I need a quiet hour to catch up on the correspondence from last week.",
+          "translation": "Мне нужен спокойный час, чтобы разобраться с перепиской за прошлую неделю.",
+          "examples": [
+            {
+              "text": "I need a quiet hour to catch up on the correspondence from last week.",
+              "translation_ru": "Мне нужен спокойный час, чтобы разобраться с перепиской за прошлую неделю."
+            },
+            {
+              "text": "She caught up on the missed lectures while the train was delayed.",
+              "translation_ru": "Она наверстала пропущенные лекции, пока задерживался поезд."
+            },
+            {
+              "text": "Have you caught up on the meeting minutes since returning from your trip?",
+              "translation_ru": "Ты уже прочитал накопившиеся протоколы встреч после возвращения из поездки?"
+            },
+            {
+              "text": "We will catch up on the maintenance after the final exhibition closes.",
+              "translation_ru": "Мы наверстаем накопившиеся работы по обслуживанию после закрытия последней выставки."
+            },
+            {
+              "text": "He was catching up on his reading rather than scrolling through old messages.",
+              "translation_ru": "Он наверстывал отложенное чтение, а не листал старые сообщения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] holt [Versäumtes] nach / arbeitet [Rückstand] auf.",
+          "example": "Ich brauche eine ruhige Stunde, um die Korrespondenz der letzten Woche aufzuarbeiten.",
+          "translation": "Мне нужен спокойный час, чтобы разобраться с перепиской за прошлую неделю.",
+          "examples": [
+            {
+              "text": "Ich brauche eine ruhige Stunde, um die Korrespondenz der letzten Woche aufzuarbeiten.",
+              "translation_ru": "Мне нужен спокойный час, чтобы разобраться с перепиской за прошлую неделю."
+            },
+            {
+              "text": "Sie holte die verpassten Vorlesungen nach, während sich die Abfahrt des Zuges verzögerte.",
+              "translation_ru": "Она наверстала пропущенные лекции, пока задерживался поезд."
+            },
+            {
+              "text": "Hast du seit deiner Rückkehr die noch ungelesenen Sitzungsprotokolle aufgearbeitet?",
+              "translation_ru": "Ты уже прочитал накопившиеся протоколы встреч после возвращения из поездки?"
+            },
+            {
+              "text": "Wir werden die liegen gebliebenen Wartungsarbeiten nachholen, nachdem die letzte Ausstellung geschlossen hat.",
+              "translation_ru": "Мы наверстаем накопившиеся работы по обслуживанию после закрытия последней выставки."
+            },
+            {
+              "text": "Er holte seinen Lesestoff nach, statt durch alte Nachrichten zu scrollen.",
+              "translation_ru": "Он наверстывал отложенное чтение, а не листал старые сообщения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] catch(es) up on [noun].",
+        "[Subjekt] holt [Versäumtes] nach / arbeitet [Rückstand] auf."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH006",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Сократить …",
+      "title_en": "[Subject] cut(s) back on [noun or verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите уменьшение объёма или частоты без полного отказа. Дополнение может обозначать ресурс, расходы или привычное занятие.",
+      "editorial_descriptions": {
+        "en": "Describe reducing an amount or frequency without necessarily stopping entirely. The complement can be a resource, expenditure or an activity.",
+        "ru": "Опишите уменьшение объёма или частоты без полного отказа. Дополнение может обозначать ресурс, расходы или привычное занятие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] cut(s) back on [noun or verb-ing].",
+          "example": "We are cutting back on printed handouts because most participants prefer the digital version.",
+          "translation": "Мы сокращаем количество печатных материалов, потому что большинство участников предпочитает электронную версию.",
+          "examples": [
+            {
+              "text": "We are cutting back on printed handouts because most participants prefer the digital version.",
+              "translation_ru": "Мы сокращаем количество печатных материалов, потому что большинство участников предпочитает электронную версию."
+            },
+            {
+              "text": "She cut back on overtime after realising that the extra pay hardly covered childcare.",
+              "translation_ru": "Она сократила сверхурочную работу, когда поняла, что доплата едва покрывает уход за ребёнком."
+            },
+            {
+              "text": "Could the café cut back on packaging without making takeaway orders awkward to carry?",
+              "translation_ru": "Кафе могло бы сократить упаковку, не делая еду навынос неудобной для переноски?"
+            },
+            {
+              "text": "I have cut back on buying tools before checking whether I can borrow them.",
+              "translation_ru": "Я стал реже покупать инструменты, не проверив сначала, можно ли их одолжить."
+            },
+            {
+              "text": "They did not cut back on rehearsal time when the budget became tighter.",
+              "translation_ru": "Они не сократили время репетиций, когда бюджет стал скромнее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] reduziert [Nomen] / schränkt [Nomen] ein.",
+          "example": "Wir reduzieren die gedruckten Unterlagen, weil die meisten Teilnehmer die digitale Version bevorzugen.",
+          "translation": "Мы сокращаем количество печатных материалов, потому что большинство участников предпочитает электронную версию.",
+          "examples": [
+            {
+              "text": "Wir reduzieren die gedruckten Unterlagen, weil die meisten Teilnehmer die digitale Version bevorzugen.",
+              "translation_ru": "Мы сокращаем количество печатных материалов, потому что большинство участников предпочитает электронную версию."
+            },
+            {
+              "text": "Sie reduzierte ihre Überstunden, als sie merkte, dass die zusätzliche Bezahlung kaum die Kinderbetreuung deckte.",
+              "translation_ru": "Она сократила сверхурочную работу, когда поняла, что доплата едва покрывает уход за ребёнком."
+            },
+            {
+              "text": "Könnte das Café weniger Verpackung verwenden, ohne Bestellungen zum Mitnehmen unhandlich zu machen?",
+              "translation_ru": "Кафе могло бы сократить упаковку, не делая еду навынос неудобной для переноски?"
+            },
+            {
+              "text": "Ich kaufe inzwischen seltener Werkzeuge, bevor ich geprüft habe, ob ich sie ausleihen kann.",
+              "translation_ru": "Я стал реже покупать инструменты, не проверив сначала, можно ли их одолжить."
+            },
+            {
+              "text": "Sie reduzierten die Probenzeit nicht, als das Budget knapper wurde.",
+              "translation_ru": "Они не сократили время репетиций, когда бюджет стал скромнее."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] cut(s) back on [noun or verb-ing].",
+        "[Subjekt] reduziert [Nomen] / schränkt [Nomen] ein."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH007",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Придумать … / предложить …",
+      "title_en": "[Subject] come(s) up with [idea or solution].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сообщите о появлении идеи, ответа или решения. Оборот не подтверждает качество идеи: его нужно оценивать отдельно.",
+      "editorial_descriptions": {
+        "en": "Describe producing an idea, answer or solution. Come up with reports that something was proposed, not that it is necessarily good or workable.",
+        "ru": "Сообщите о появлении идеи, ответа или решения. Оборот не подтверждает качество идеи: его нужно оценивать отдельно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] come(s) up with [idea or solution].",
+          "example": "The children came up with a clever way to keep their cardboard bridge upright.",
+          "translation": "Дети придумали хитрый способ удержать картонный мост в вертикальном положении.",
+          "examples": [
+            {
+              "text": "The children came up with a clever way to keep their cardboard bridge upright.",
+              "translation_ru": "Дети придумали хитрый способ удержать картонный мост в вертикальном положении."
+            },
+            {
+              "text": "Can you come up with a title that explains the article without overselling it?",
+              "translation_ru": "Можешь придумать заголовок, который объясняет содержание статьи без чрезмерных обещаний?"
+            },
+            {
+              "text": "We have not come up with a convincing explanation for the missing records yet.",
+              "translation_ru": "Мы пока не придумали убедительного объяснения пропавшим записям."
+            },
+            {
+              "text": "She came up with a vegetarian filling using what was already in the fridge.",
+              "translation_ru": "Она придумала вегетарианскую начинку из того, что уже было в холодильнике."
+            },
+            {
+              "text": "The organiser will need to come up with a fair way of allocating the remaining seats.",
+              "translation_ru": "Организатору нужно будет придумать справедливый способ распределения оставшихся мест."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] entwickelt [Idee oder Lösung].",
+          "example": "Die Kinder entwickelten eine clevere Lösung, damit ihre Pappbrücke stehen blieb.",
+          "translation": "Дети придумали хитрый способ удержать картонный мост в вертикальном положении.",
+          "examples": [
+            {
+              "text": "Die Kinder entwickelten eine clevere Lösung, damit ihre Pappbrücke stehen blieb.",
+              "translation_ru": "Дети придумали хитрый способ удержать картонный мост в вертикальном положении."
+            },
+            {
+              "text": "Kannst du einen Titel entwickeln, der den Artikel erklärt, ohne zu viel zu versprechen?",
+              "translation_ru": "Можешь придумать заголовок, который объясняет содержание статьи без чрезмерных обещаний?"
+            },
+            {
+              "text": "Wir haben noch keine überzeugende Erklärung für die fehlenden Datensätze entwickelt.",
+              "translation_ru": "Мы пока не придумали убедительного объяснения пропавшим записям."
+            },
+            {
+              "text": "Sie entwickelte eine vegetarische Füllung aus den Zutaten, die schon im Kühlschrank waren.",
+              "translation_ru": "Она придумала вегетарианскую начинку из того, что уже было в холодильнике."
+            },
+            {
+              "text": "Der Veranstalter muss eine faire Methode zur Vergabe der verbleibenden Plätze entwickeln.",
+              "translation_ru": "Организатору нужно будет придумать справедливый способ распределения оставшихся мест."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] come(s) up with [idea or solution].",
+        "[Subjekt] entwickelt [Idee oder Lösung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH008",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Терпеть … / мириться с …",
+      "title_en": "[Subject] put(s) up with [noun or verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите терпимое отношение к неприятной ситуации. Это не согласие с ней и не утверждение, что её нужно терпеть дальше.",
+      "editorial_descriptions": {
+        "en": "Describe tolerating an unpleasant situation. Putting up with something does not mean approving of it or believing it should continue.",
+        "ru": "Опишите терпимое отношение к неприятной ситуации. Это не согласие с ней и не утверждение, что её нужно терпеть дальше."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] put(s) up with [noun or verb-ing].",
+          "example": "I can put up with a small kitchen, but not with a front door that will not lock.",
+          "translation": "Я могу мириться с маленькой кухней, но не с входной дверью, которая не запирается.",
+          "examples": [
+            {
+              "text": "I can put up with a small kitchen, but not with a front door that will not lock.",
+              "translation_ru": "Я могу мириться с маленькой кухней, но не с входной дверью, которая не запирается."
+            },
+            {
+              "text": "She had put up with the rattling fan for months before asking for a replacement.",
+              "translation_ru": "Она месяцами терпела дребезжащий вентилятор, прежде чем попросила замену."
+            },
+            {
+              "text": "Why should the volunteers put up with being blamed for unclear arrangements?",
+              "translation_ru": "Почему волонтёры должны мириться с обвинениями из-за неясных договорённостей?"
+            },
+            {
+              "text": "We no longer put up with meetings that end without a single clear decision.",
+              "translation_ru": "Мы больше не миримся со встречами, которые заканчиваются без единого ясного решения."
+            },
+            {
+              "text": "The neighbours were willing to put up with the rehearsals until nine, but not all night.",
+              "translation_ru": "Соседи были готовы терпеть репетиции до девяти, но не всю ночь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] nimmt [Nomen] hin / erträgt [Nomen].",
+          "example": "Ich kann eine kleine Küche hinnehmen, aber keine Haustür, die sich nicht abschließen lässt.",
+          "translation": "Я могу мириться с маленькой кухней, но не с входной дверью, которая не запирается.",
+          "examples": [
+            {
+              "text": "Ich kann eine kleine Küche hinnehmen, aber keine Haustür, die sich nicht abschließen lässt.",
+              "translation_ru": "Я могу мириться с маленькой кухней, но не с входной дверью, которая не запирается."
+            },
+            {
+              "text": "Sie hatte den klappernden Ventilator monatelang ertragen, bevor sie um Ersatz bat.",
+              "translation_ru": "Она месяцами терпела дребезжащий вентилятор, прежде чем попросила замену."
+            },
+            {
+              "text": "Warum sollten die Freiwilligen hinnehmen, für unklare Absprachen verantwortlich gemacht zu werden?",
+              "translation_ru": "Почему волонтёры должны мириться с обвинениями из-за неясных договорённостей?"
+            },
+            {
+              "text": "Wir nehmen Besprechungen nicht mehr hin, die ohne eine einzige klare Entscheidung enden.",
+              "translation_ru": "Мы больше не миримся со встречами, которые заканчиваются без единого ясного решения."
+            },
+            {
+              "text": "Die Nachbarn waren bereit, die Proben bis neun Uhr zu ertragen, aber nicht die ganze Nacht.",
+              "translation_ru": "Соседи были готовы терпеть репетиции до девяти, но не всю ночь."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] put(s) up with [noun or verb-ing].",
+        "[Subjekt] nimmt [Nomen] hin / erträgt [Nomen]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH009",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Исключить вариант …",
+      "title_en": "[Subject] rule(s) out [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Уберите действие из рассматриваемых вариантов. Отрицательная форма, наоборот, оставляет возможность открытой, не обещая её выбрать.",
+      "editorial_descriptions": {
+        "en": "Remove an action from consideration. Not ruling something out keeps the possibility open without committing to it; the complement uses an -ing form.",
+        "ru": "Уберите действие из рассматриваемых вариантов. Отрицательная форма, наоборот, оставляет возможность открытой, не обещая её выбрать."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] rule(s) out [verb-ing].",
+          "example": "We have ruled out moving the event online because the workshop requires shared equipment.",
+          "translation": "Мы исключили проведение мероприятия онлайн, потому что для занятия нужно общее оборудование.",
+          "examples": [
+            {
+              "text": "We have ruled out moving the event online because the workshop requires shared equipment.",
+              "translation_ru": "Мы исключили проведение мероприятия онлайн, потому что для занятия нужно общее оборудование."
+            },
+            {
+              "text": "She did not rule out returning to the course once her schedule settled down.",
+              "translation_ru": "Она не исключала возвращения на курс, когда её график станет стабильнее."
+            },
+            {
+              "text": "Have you ruled out repairing the drawer before ordering a new cabinet?",
+              "translation_ru": "Ты уже исключил ремонт ящика, прежде чем заказывать новый шкаф?"
+            },
+            {
+              "text": "The guide ruled out crossing the exposed ridge while the wind remained strong.",
+              "translation_ru": "Проводник исключил переход по открытому гребню, пока держался сильный ветер."
+            },
+            {
+              "text": "I would not rule out asking a second editor to review the conclusion.",
+              "translation_ru": "Я бы не исключал просьбу ко второму редактору проверить вывод."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] schließt aus, [zu + Infinitiv].",
+          "example": "Wir haben ausgeschlossen, die Veranstaltung online abzuhalten, weil der Workshop gemeinsam genutzte Geräte erfordert.",
+          "translation": "Мы исключили проведение мероприятия онлайн, потому что для занятия нужно общее оборудование.",
+          "examples": [
+            {
+              "text": "Wir haben ausgeschlossen, die Veranstaltung online abzuhalten, weil der Workshop gemeinsam genutzte Geräte erfordert.",
+              "translation_ru": "Мы исключили проведение мероприятия онлайн, потому что для занятия нужно общее оборудование."
+            },
+            {
+              "text": "Sie schloss nicht aus, zum Kurs zurückzukehren, sobald ihr Zeitplan wieder verlässlicher wäre.",
+              "translation_ru": "Она не исключала возвращения на курс, когда её график станет стабильнее."
+            },
+            {
+              "text": "Hast du ausgeschlossen, die Schublade zu reparieren, bevor du einen neuen Schrank bestellst?",
+              "translation_ru": "Ты уже исключил ремонт ящика, прежде чем заказывать новый шкаф?"
+            },
+            {
+              "text": "Der Guide schloss aus, den ungeschützten Grat bei anhaltend starkem Wind zu überqueren.",
+              "translation_ru": "Проводник исключил переход по открытому гребню, пока держался сильный ветер."
+            },
+            {
+              "text": "Ich würde nicht ausschließen, einen zweiten Redakteur um eine Prüfung des Schlusses zu bitten.",
+              "translation_ru": "Я бы не исключал просьбу ко второму редактору проверить вывод."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] rule(s) out [verb-ing].",
+        "[Subjekt] schließt aus, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SPH010",
+      "set_id": "SPH",
+      "group_id": "SPH",
+      "title_ru": "Довести обещанное до конца",
+      "title_en": "[Subject] follow(s) through on [commitment].",
+      "level": "B2–C1",
+      "metaphor_ru": "Подчеркните переход от намерения к выполнению. Упоминание обещания или плана помогает отличить этот оборот от простого продолжения процесса.",
+      "editorial_descriptions": {
+        "en": "Emphasise carrying a commitment into action. Naming the promise or plan distinguishes follow through on from merely continuing an activity.",
+        "ru": "Подчеркните переход от намерения к выполнению. Упоминание обещания или плана помогает отличить этот оборот от простого продолжения процесса."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] follow(s) through on [commitment].",
+          "example": "The landlord followed through on his promise to replace the broken intercom.",
+          "translation": "Хозяин выполнил обещание заменить сломанный домофон.",
+          "examples": [
+            {
+              "text": "The landlord followed through on his promise to replace the broken intercom.",
+              "translation_ru": "Хозяин выполнил обещание заменить сломанный домофон."
+            },
+            {
+              "text": "Have we followed through on the agreement to share written notes after every rehearsal?",
+              "translation_ru": "Мы выполнили договорённость делиться письменными заметками после каждой репетиции?"
+            },
+            {
+              "text": "She has not followed through on her plan to digitise the family recipes yet.",
+              "translation_ru": "Она пока не довела до конца свой план оцифровать семейные рецепты."
+            },
+            {
+              "text": "I will follow through on my offer to help with the move even if it rains.",
+              "translation_ru": "Я выполню обещание помочь с переездом, даже если будет дождь."
+            },
+            {
+              "text": "The club needs to follow through on its commitment to make the entrance accessible.",
+              "translation_ru": "Клубу нужно выполнить обязательство сделать вход доступным для всех."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] setzt [Zusage oder Vorhaben] tatsächlich um.",
+          "example": "Der Vermieter setzte sein Versprechen, die defekte Gegensprechanlage auszutauschen, tatsächlich um.",
+          "translation": "Хозяин выполнил обещание заменить сломанный домофон.",
+          "examples": [
+            {
+              "text": "Der Vermieter setzte sein Versprechen, die defekte Gegensprechanlage auszutauschen, tatsächlich um.",
+              "translation_ru": "Хозяин выполнил обещание заменить сломанный домофон."
+            },
+            {
+              "text": "Haben wir die Vereinbarung, nach jeder Probe schriftliche Notizen zu teilen, tatsächlich umgesetzt?",
+              "translation_ru": "Мы выполнили договорённость делиться письменными заметками после каждой репетиции?"
+            },
+            {
+              "text": "Sie hat ihren Plan, die Familienrezepte zu digitalisieren, noch nicht umgesetzt.",
+              "translation_ru": "Она пока не довела до конца свой план оцифровать семейные рецепты."
+            },
+            {
+              "text": "Ich werde mein Angebot, beim Umzug zu helfen, auch bei Regen in die Tat umsetzen.",
+              "translation_ru": "Я выполню обещание помочь с переездом, даже если будет дождь."
+            },
+            {
+              "text": "Der Verein muss seine Zusage, den Eingang barrierefrei zu gestalten, tatsächlich umsetzen.",
+              "translation_ru": "Клубу нужно выполнить обязательство сделать вход доступным для всех."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] follow(s) through on [commitment].",
+        "[Subjekt] setzt [Zusage oder Vorhaben] tatsächlich um."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

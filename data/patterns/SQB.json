@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SQB",
+  "patterns": [
+    {
+      "id": "SQB001",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что побудило … сделать …?",
+      "title_en": "What led [person] to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните, какое событие или соображение стало причиной решения. После дополнения английский глагол требует инфинитива.",
+      "editorial_descriptions": {
+        "en": "Ask which event or consideration prompted a decision. Lead takes an object followed by a to-infinitive; it does not imply that the decision was a mistake.",
+        "ru": "Уточните, какое событие или соображение стало причиной решения. После дополнения английский глагол требует инфинитива."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What led [person] to [verb]?",
+          "example": "What led you to turn down the promotion despite the higher salary?",
+          "translation": "Что побудило тебя отказаться от повышения, несмотря на более высокую зарплату?",
+          "examples": [
+            {
+              "text": "What led you to turn down the promotion despite the higher salary?",
+              "translation_ru": "Что побудило тебя отказаться от повышения, несмотря на более высокую зарплату?"
+            },
+            {
+              "text": "What led the museum to remove the painting from the exhibition?",
+              "translation_ru": "Что побудило музей убрать картину с выставки?"
+            },
+            {
+              "text": "What led your neighbours to turn their unused garage into a workshop?",
+              "translation_ru": "Что побудило твоих соседей превратить пустующую гаражную постройку в мастерскую?"
+            },
+            {
+              "text": "What led her to question the figures in the annual report?",
+              "translation_ru": "Что побудило её усомниться в цифрах годового отчёта?"
+            },
+            {
+              "text": "What led the chef to replace butter with olive oil in this dish?",
+              "translation_ru": "Что побудило повара заменить в этом блюде сливочное масло оливковым?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hat [Person] dazu bewogen, [zu + Infinitiv]?",
+          "example": "Was hat dich dazu bewogen, die Beförderung trotz des höheren Gehalts abzulehnen?",
+          "translation": "Что побудило тебя отказаться от повышения, несмотря на более высокую зарплату?",
+          "examples": [
+            {
+              "text": "Was hat dich dazu bewogen, die Beförderung trotz des höheren Gehalts abzulehnen?",
+              "translation_ru": "Что побудило тебя отказаться от повышения, несмотря на более высокую зарплату?"
+            },
+            {
+              "text": "Was hat das Museum dazu bewogen, das Gemälde aus der Ausstellung zu nehmen?",
+              "translation_ru": "Что побудило музей убрать картину с выставки?"
+            },
+            {
+              "text": "Was hat deine Nachbarn dazu bewogen, ihre ungenutzte Garage in eine Werkstatt umzubauen?",
+              "translation_ru": "Что побудило твоих соседей превратить пустующую гаражную постройку в мастерскую?"
+            },
+            {
+              "text": "Was hat sie dazu bewogen, die Zahlen im Jahresbericht infrage zu stellen?",
+              "translation_ru": "Что побудило её усомниться в цифрах годового отчёта?"
+            },
+            {
+              "text": "Was hat den Koch dazu bewogen, in diesem Gericht Butter durch Olivenöl zu ersetzen?",
+              "translation_ru": "Что побудило повара заменить в этом блюде сливочное масло оливковым?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What led [person] to [verb]?",
+        "Was hat [Person] dazu bewogen, [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB002",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что помешало … сделать …?",
+      "title_en": "What kept [person] from [verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о препятствии или сдерживающем факторе. Английская форма после предлога обозначает действие, которое не состоялось.",
+      "editorial_descriptions": {
+        "en": "Ask about a barrier or deterrent. Keep someone from doing something focuses on what prevented the action, not on whether they were capable of it.",
+        "ru": "Спросите о препятствии или сдерживающем факторе. Английская форма после предлога обозначает действие, которое не состоялось."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What kept [person] from [verb-ing]?",
+          "example": "What kept you from asking for clarification during the briefing?",
+          "translation": "Что помешало тебе попросить пояснение во время инструктажа?",
+          "examples": [
+            {
+              "text": "What kept you from asking for clarification during the briefing?",
+              "translation_ru": "Что помешало тебе попросить пояснение во время инструктажа?"
+            },
+            {
+              "text": "What kept the tenants from reporting the broken lock sooner?",
+              "translation_ru": "Что помешало жильцам раньше сообщить о сломанном замке?"
+            },
+            {
+              "text": "What kept her from submitting the manuscript before the deadline?",
+              "translation_ru": "Что помешало ей подать рукопись до истечения срока?"
+            },
+            {
+              "text": "What kept the hikers from returning by the shorter route?",
+              "translation_ru": "Что помешало туристам вернуться более коротким маршрутом?"
+            },
+            {
+              "text": "What kept us from noticing the missing attachment in the email?",
+              "translation_ru": "Что помешало нам заметить, что в письме нет вложения?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hat [Person] davon abgehalten, [zu + Infinitiv]?",
+          "example": "Was hat dich davon abgehalten, während der Einweisung nachzufragen?",
+          "translation": "Что помешало тебе попросить пояснение во время инструктажа?",
+          "examples": [
+            {
+              "text": "Was hat dich davon abgehalten, während der Einweisung nachzufragen?",
+              "translation_ru": "Что помешало тебе попросить пояснение во время инструктажа?"
+            },
+            {
+              "text": "Was hat die Mieter davon abgehalten, das defekte Schloss früher zu melden?",
+              "translation_ru": "Что помешало жильцам раньше сообщить о сломанном замке?"
+            },
+            {
+              "text": "Was hat sie davon abgehalten, das Manuskript vor Ablauf der Frist einzureichen?",
+              "translation_ru": "Что помешало ей подать рукопись до истечения срока?"
+            },
+            {
+              "text": "Was hat die Wanderer davon abgehalten, auf dem kürzeren Weg zurückzukehren?",
+              "translation_ru": "Что помешало туристам вернуться более коротким маршрутом?"
+            },
+            {
+              "text": "Was hat uns davon abgehalten, den fehlenden E-Mail-Anhang zu bemerken?",
+              "translation_ru": "Что помешало нам заметить, что в письме нет вложения?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What kept [person] from [verb-ing]?",
+        "Was hat [Person] davon abgehalten, [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB003",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Как … удалось …?",
+      "title_en": "How did [person] manage to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выясните способ достижения результата, который казался трудным. Сам вопрос предполагает, что действие удалось выполнить.",
+      "editorial_descriptions": {
+        "en": "Ask how someone achieved a difficult result. Manage to presents the action as successful; use try to when success is not established.",
+        "ru": "Выясните способ достижения результата, который казался трудным. Сам вопрос предполагает, что действие удалось выполнить."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How did [person] manage to [verb]?",
+          "example": "How did you manage to recover the photographs from the damaged memory card?",
+          "translation": "Как тебе удалось восстановить фотографии с повреждённой карты памяти?",
+          "examples": [
+            {
+              "text": "How did you manage to recover the photographs from the damaged memory card?",
+              "translation_ru": "Как тебе удалось восстановить фотографии с повреждённой карты памяти?"
+            },
+            {
+              "text": "How did the orchestra manage to rehearse without its conductor?",
+              "translation_ru": "Как оркестру удалось провести репетицию без дирижёра?"
+            },
+            {
+              "text": "How did she manage to persuade the landlord to fix the heating?",
+              "translation_ru": "Как ей удалось убедить хозяина починить отопление?"
+            },
+            {
+              "text": "How did the volunteers manage to find homes for all the abandoned kittens?",
+              "translation_ru": "Как волонтёрам удалось найти дом всем брошенным котятам?"
+            },
+            {
+              "text": "How did we manage to finish the stocktake without closing the shop?",
+              "translation_ru": "Как нам удалось завершить инвентаризацию, не закрывая магазин?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie hat [Person] es geschafft, [zu + Infinitiv]?",
+          "example": "Wie hast du es geschafft, die Fotos von der beschädigten Speicherkarte wiederherzustellen?",
+          "translation": "Как тебе удалось восстановить фотографии с повреждённой карты памяти?",
+          "examples": [
+            {
+              "text": "Wie hast du es geschafft, die Fotos von der beschädigten Speicherkarte wiederherzustellen?",
+              "translation_ru": "Как тебе удалось восстановить фотографии с повреждённой карты памяти?"
+            },
+            {
+              "text": "Wie hat das Orchester es geschafft, ohne seinen Dirigenten zu proben?",
+              "translation_ru": "Как оркестру удалось провести репетицию без дирижёра?"
+            },
+            {
+              "text": "Wie hat sie es geschafft, den Vermieter zur Reparatur der Heizung zu bewegen?",
+              "translation_ru": "Как ей удалось убедить хозяина починить отопление?"
+            },
+            {
+              "text": "Wie haben die Freiwilligen es geschafft, für alle ausgesetzten Kätzchen ein Zuhause zu finden?",
+              "translation_ru": "Как волонтёрам удалось найти дом всем брошенным котятам?"
+            },
+            {
+              "text": "Wie haben wir es geschafft, die Inventur abzuschließen, ohne den Laden zu schließen?",
+              "translation_ru": "Как нам удалось завершить инвентаризацию, не закрывая магазин?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How did [person] manage to [verb]?",
+        "Wie hat [Person] es geschafft, [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB004",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Какое отношение … имеет к …?",
+      "title_en": "What does [X] have to do with [Y]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Проверьте связь между двумя вещами. Вопрос может звучать скептически: в спокойном обсуждении следите за интонацией.",
+      "editorial_descriptions": {
+        "en": "Ask how two things are connected. The wording can sound sceptical or dismissive, so tone matters when the relationship is genuinely unclear.",
+        "ru": "Проверьте связь между двумя вещами. Вопрос может звучать скептически: в спокойном обсуждении следите за интонацией."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What does [X] have to do with [Y]?",
+          "example": "What does the age of my laptop have to do with the refund request?",
+          "translation": "Какое отношение возраст моего ноутбука имеет к запросу на возврат денег?",
+          "examples": [
+            {
+              "text": "What does the age of my laptop have to do with the refund request?",
+              "translation_ru": "Какое отношение возраст моего ноутбука имеет к запросу на возврат денег?"
+            },
+            {
+              "text": "What does soil quality have to do with the flavour of tomatoes?",
+              "translation_ru": "Какое отношение качество почвы имеет ко вкусу помидоров?"
+            },
+            {
+              "text": "What does the seating arrangement have to do with who speaks first?",
+              "translation_ru": "Какое отношение рассадка имеет к тому, кто говорит первым?"
+            },
+            {
+              "text": "What does the exchange rate have to do with our software licence?",
+              "translation_ru": "Какое отношение обменный курс имеет к нашей лицензии на программу?"
+            },
+            {
+              "text": "What does the colour of the packaging have to do with whether it can be recycled?",
+              "translation_ru": "Какое отношение цвет упаковки имеет к возможности её переработать?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hat [X] mit [Y] zu tun?",
+          "example": "Was hat das Alter meines Laptops mit dem Erstattungsantrag zu tun?",
+          "translation": "Какое отношение возраст моего ноутбука имеет к запросу на возврат денег?",
+          "examples": [
+            {
+              "text": "Was hat das Alter meines Laptops mit dem Erstattungsantrag zu tun?",
+              "translation_ru": "Какое отношение возраст моего ноутбука имеет к запросу на возврат денег?"
+            },
+            {
+              "text": "Was hat die Bodenqualität mit dem Geschmack von Tomaten zu tun?",
+              "translation_ru": "Какое отношение качество почвы имеет ко вкусу помидоров?"
+            },
+            {
+              "text": "Was hat die Sitzordnung damit zu tun, wer zuerst spricht?",
+              "translation_ru": "Какое отношение рассадка имеет к тому, кто говорит первым?"
+            },
+            {
+              "text": "Was hat der Wechselkurs mit unserer Softwarelizenz zu tun?",
+              "translation_ru": "Какое отношение обменный курс имеет к нашей лицензии на программу?"
+            },
+            {
+              "text": "Was hat die Farbe der Verpackung damit zu tun, ob sie recycelt werden kann?",
+              "translation_ru": "Какое отношение цвет упаковки имеет к возможности её переработать?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What does [X] have to do with [Y]?",
+        "Was hat [X] mit [Y] zu tun?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB005",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что … имеет в виду, когда …?",
+      "title_en": "What do/does [subject] have in mind when [subject] [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните конкретное представление, скрытое за общим словом или предложением. Вопрос относится к замыслу, а не к воспоминанию.",
+      "editorial_descriptions": {
+        "en": "Ask for the concrete idea behind a broad label or suggestion. Have in mind refers to an intention or envisaged option, not to remembering something.",
+        "ru": "Уточните конкретное представление, скрытое за общим словом или предложением. Вопрос относится к замыслу, а не к воспоминанию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What do/does [subject] have in mind when [subject] [verb]?",
+          "example": "What do you have in mind when you suggest a more flexible schedule?",
+          "translation": "Что ты имеешь в виду, когда предлагаешь более гибкий график?",
+          "examples": [
+            {
+              "text": "What do you have in mind when you suggest a more flexible schedule?",
+              "translation_ru": "Что ты имеешь в виду, когда предлагаешь более гибкий график?"
+            },
+            {
+              "text": "What does the architect have in mind when she talks about a welcoming entrance?",
+              "translation_ru": "Что архитектор имеет в виду, когда говорит о приветливой входной зоне?"
+            },
+            {
+              "text": "What do they have in mind when they ask for a memorable birthday gift?",
+              "translation_ru": "Что они имеют в виду, когда просят запоминающийся подарок на день рождения?"
+            },
+            {
+              "text": "What does your editor have in mind when he asks for a stronger ending?",
+              "translation_ru": "Что твой редактор имеет в виду, когда просит сделать концовку сильнее?"
+            },
+            {
+              "text": "What do we have in mind when we promise a simpler registration process?",
+              "translation_ru": "Что мы имеем в виду, когда обещаем более простую регистрацию?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hat [Subjekt] im Sinn, wenn [Aussage]?",
+          "example": "Was hast du im Sinn, wenn du einen flexibleren Zeitplan vorschlägst?",
+          "translation": "Что ты имеешь в виду, когда предлагаешь более гибкий график?",
+          "examples": [
+            {
+              "text": "Was hast du im Sinn, wenn du einen flexibleren Zeitplan vorschlägst?",
+              "translation_ru": "Что ты имеешь в виду, когда предлагаешь более гибкий график?"
+            },
+            {
+              "text": "Was hat die Architektin im Sinn, wenn sie von einem einladenden Eingang spricht?",
+              "translation_ru": "Что архитектор имеет в виду, когда говорит о приветливой входной зоне?"
+            },
+            {
+              "text": "Was haben sie im Sinn, wenn sie sich ein besonderes Geburtstagsgeschenk wünschen?",
+              "translation_ru": "Что они имеют в виду, когда просят запоминающийся подарок на день рождения?"
+            },
+            {
+              "text": "Was hat dein Lektor im Sinn, wenn er einen wirkungsvolleren Schluss verlangt?",
+              "translation_ru": "Что твой редактор имеет в виду, когда просит сделать концовку сильнее?"
+            },
+            {
+              "text": "Was haben wir im Sinn, wenn wir ein einfacheres Anmeldeverfahren versprechen?",
+              "translation_ru": "Что мы имеем в виду, когда обещаем более простую регистрацию?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What do/does [subject] have in mind when [subject] [verb]?",
+        "Was hat [Subjekt] im Sinn, wenn [Aussage]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB006",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Почему … настолько … по поводу …?",
+      "title_en": "What makes [person] so [adjective] about [noun]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выясните источник отношения или оценки. Прилагательное описывает человека, а не способ выполнения действия.",
+      "editorial_descriptions": {
+        "en": "Ask what causes someone's attitude or assessment. The adjective describes the person; it is not an adverb describing how they act.",
+        "ru": "Выясните источник отношения или оценки. Прилагательное описывает человека, а не способ выполнения действия."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What makes [person] so [adjective] about [noun]?",
+          "example": "What makes you so confident about the estimate despite the missing data?",
+          "translation": "Почему ты так уверен в оценке, несмотря на недостающие данные?",
+          "examples": [
+            {
+              "text": "What makes you so confident about the estimate despite the missing data?",
+              "translation_ru": "Почему ты так уверен в оценке, несмотря на недостающие данные?"
+            },
+            {
+              "text": "What makes her so anxious about the first rehearsal?",
+              "translation_ru": "Почему она так волнуется из-за первой репетиции?"
+            },
+            {
+              "text": "What makes the residents so sceptical about the proposed pedestrian zone?",
+              "translation_ru": "Почему жители так скептически относятся к предложенной пешеходной зоне?"
+            },
+            {
+              "text": "What makes your nephew so enthusiastic about restoring old bicycles?",
+              "translation_ru": "Почему твой племянник так увлечён восстановлением старых велосипедов?"
+            },
+            {
+              "text": "What makes the supplier so defensive about the latest batch of deliveries?",
+              "translation_ru": "Почему поставщик так болезненно реагирует на критику последних поставок?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Warum ist/sind [Person] so [Adjektiv] [Ergänzung]?",
+          "example": "Warum bist du so überzeugt von der Schätzung, obwohl wichtige Daten fehlen?",
+          "translation": "Почему ты так уверен в оценке, несмотря на недостающие данные?",
+          "examples": [
+            {
+              "text": "Warum bist du so überzeugt von der Schätzung, obwohl wichtige Daten fehlen?",
+              "translation_ru": "Почему ты так уверен в оценке, несмотря на недостающие данные?"
+            },
+            {
+              "text": "Warum ist sie so nervös wegen der ersten Probe?",
+              "translation_ru": "Почему она так волнуется из-за первой репетиции?"
+            },
+            {
+              "text": "Warum sind die Anwohner so skeptisch gegenüber der geplanten Fußgängerzone?",
+              "translation_ru": "Почему жители так скептически относятся к предложенной пешеходной зоне?"
+            },
+            {
+              "text": "Warum ist dein Neffe so begeistert davon, alte Fahrräder zu restaurieren?",
+              "translation_ru": "Почему твой племянник так увлечён восстановлением старых велосипедов?"
+            },
+            {
+              "text": "Warum ist der Lieferant so empfindlich gegenüber Kritik an seinen jüngsten Lieferungen?",
+              "translation_ru": "Почему поставщик так болезненно реагирует на критику последних поставок?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What makes [person] so [adjective] about [noun]?",
+        "Warum ist/sind [Person] so [Adjektiv] [Ergänzung]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB007",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Чем … может объяснить …?",
+      "title_en": "How can [subject] account for [noun]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Попросите объяснить наблюдаемый результат или несоответствие. Здесь речь не о бухгалтерском учёте; в споре вопрос может звучать требовательно.",
+      "editorial_descriptions": {
+        "en": "Ask for an explanation of an outcome or discrepancy. Account for means explain here, not keep financial records; the question may sound demanding in a dispute.",
+        "ru": "Попросите объяснить наблюдаемый результат или несоответствие. Здесь речь не о бухгалтерском учёте; в споре вопрос может звучать требовательно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How can [subject] account for [noun]?",
+          "example": "How can we account for the sudden drop in attendance after the venue changed?",
+          "translation": "Чем мы можем объяснить резкое падение посещаемости после смены площадки?",
+          "examples": [
+            {
+              "text": "How can we account for the sudden drop in attendance after the venue changed?",
+              "translation_ru": "Чем мы можем объяснить резкое падение посещаемости после смены площадки?"
+            },
+            {
+              "text": "How can the retailer account for the difference between the advertised and final prices?",
+              "translation_ru": "Чем продавец может объяснить разницу между рекламной и итоговой ценой?"
+            },
+            {
+              "text": "How can you account for the scratches on a supposedly unused lens?",
+              "translation_ru": "Чем ты можешь объяснить царапины на якобы неиспользованном объективе?"
+            },
+            {
+              "text": "How can she account for the unusually high electricity bill this month?",
+              "translation_ru": "Чем она может объяснить необычно высокий счёт за электричество в этом месяце?"
+            },
+            {
+              "text": "How can the researchers account for the outliers without simply deleting them?",
+              "translation_ru": "Как исследователи могут объяснить выбросы, не удаляя их из данных?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie kann [Subjekt] [Nomen] erklären?",
+          "example": "Wie können wir den plötzlichen Rückgang der Besucherzahlen nach dem Ortswechsel erklären?",
+          "translation": "Чем мы можем объяснить резкое падение посещаемости после смены площадки?",
+          "examples": [
+            {
+              "text": "Wie können wir den plötzlichen Rückgang der Besucherzahlen nach dem Ortswechsel erklären?",
+              "translation_ru": "Чем мы можем объяснить резкое падение посещаемости после смены площадки?"
+            },
+            {
+              "text": "Wie kann der Händler die Differenz zwischen dem beworbenen Preis und dem Endpreis erklären?",
+              "translation_ru": "Чем продавец может объяснить разницу между рекламной и итоговой ценой?"
+            },
+            {
+              "text": "Wie kannst du die Kratzer auf einem angeblich unbenutzten Objektiv erklären?",
+              "translation_ru": "Чем ты можешь объяснить царапины на якобы неиспользованном объективе?"
+            },
+            {
+              "text": "Wie kann sie die ungewöhnlich hohe Stromrechnung in diesem Monat erklären?",
+              "translation_ru": "Чем она может объяснить необычно высокий счёт за электричество в этом месяце?"
+            },
+            {
+              "text": "Wie können die Forschenden die Ausreißer erklären, ohne sie einfach zu löschen?",
+              "translation_ru": "Как исследователи могут объяснить выбросы, не удаляя их из данных?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How can [subject] account for [noun]?",
+        "Wie kann [Subjekt] [Nomen] erklären?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB008",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что стало с …?",
+      "title_en": "What has become of [person or thing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о дальнейшей судьбе человека, вещи или замысла. Часто подразумевается, что давно не было новостей или всё пошло иначе, чем ожидалось.",
+      "editorial_descriptions": {
+        "en": "Ask what has happened to someone or something over time. This often implies a gap in news or a change from what was expected; it is not a neutral location question.",
+        "ru": "Спросите о дальнейшей судьбе человека, вещи или замысла. Часто подразумевается, что давно не было новостей или всё пошло иначе, чем ожидалось."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What has become of [person or thing]?",
+          "example": "What has become of the old cinema near the railway station?",
+          "translation": "Что стало со старым кинотеатром возле вокзала?",
+          "examples": [
+            {
+              "text": "What has become of the old cinema near the railway station?",
+              "translation_ru": "Что стало со старым кинотеатром возле вокзала?"
+            },
+            {
+              "text": "What has become of the proposal to share a workshop with the neighbours?",
+              "translation_ru": "Что стало с предложением сделать общую мастерскую с соседями?"
+            },
+            {
+              "text": "What has become of the violinist who used to play outside the market?",
+              "translation_ru": "Что стало со скрипачом, который раньше играл возле рынка?"
+            },
+            {
+              "text": "What has become of the money we set aside for new books?",
+              "translation_ru": "Что стало с деньгами, которые мы отложили на новые книги?"
+            },
+            {
+              "text": "What has become of the plan to replace the paper forms?",
+              "translation_ru": "Что стало с планом отказаться от бумажных бланков?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was ist aus [Person oder Sache] geworden?",
+          "example": "Was ist aus dem alten Kino in der Nähe des Bahnhofs geworden?",
+          "translation": "Что стало со старым кинотеатром возле вокзала?",
+          "examples": [
+            {
+              "text": "Was ist aus dem alten Kino in der Nähe des Bahnhofs geworden?",
+              "translation_ru": "Что стало со старым кинотеатром возле вокзала?"
+            },
+            {
+              "text": "Was ist aus dem Vorschlag geworden, eine Werkstatt mit den Nachbarn zu teilen?",
+              "translation_ru": "Что стало с предложением сделать общую мастерскую с соседями?"
+            },
+            {
+              "text": "Was ist aus dem Geiger geworden, der früher vor dem Markt gespielt hat?",
+              "translation_ru": "Что стало со скрипачом, который раньше играл возле рынка?"
+            },
+            {
+              "text": "Was ist aus dem Geld geworden, das wir für neue Bücher zurückgelegt haben?",
+              "translation_ru": "Что стало с деньгами, которые мы отложили на новые книги?"
+            },
+            {
+              "text": "Was ist aus dem Plan geworden, die Papierformulare zu ersetzen?",
+              "translation_ru": "Что стало с планом отказаться от бумажных бланков?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What has become of [person or thing]?",
+        "Was ist aus [Person oder Sache] geworden?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB009",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что изменит … для …?",
+      "title_en": "What difference would [verb-ing] make to [noun]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Проверьте ожидаемый эффект действия для конкретного получателя или результата. В английском действие на месте подлежащего оформляется как отглагольная форма.",
+      "editorial_descriptions": {
+        "en": "Ask about the expected effect of an action on a person or outcome. The -ing clause is the subject of would make, not a future continuous form.",
+        "ru": "Проверьте ожидаемый эффект действия для конкретного получателя или результата. В английском действие на месте подлежащего оформляется как отглагольная форма."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What difference would [verb-ing] make to [noun]?",
+          "example": "What difference would extending the trial make to the reliability of the results?",
+          "translation": "Как продление испытания повлияло бы на надёжность результатов?",
+          "examples": [
+            {
+              "text": "What difference would extending the trial make to the reliability of the results?",
+              "translation_ru": "Как продление испытания повлияло бы на надёжность результатов?"
+            },
+            {
+              "text": "What difference would moving the microphone closer make to the recording?",
+              "translation_ru": "Что изменилось бы в записи, если бы микрофон стоял ближе?"
+            },
+            {
+              "text": "What difference would opening an hour earlier make to the bakery's customers?",
+              "translation_ru": "Что изменилось бы для клиентов пекарни, если бы она открывалась на час раньше?"
+            },
+            {
+              "text": "What difference would sharing the driving make to your weekend?",
+              "translation_ru": "Что изменилось бы в твоих выходных, если бы вы сменяли друг друга за рулём?"
+            },
+            {
+              "text": "What difference would removing one approval step make to the waiting time?",
+              "translation_ru": "Как удаление одного этапа согласования повлияло бы на время ожидания?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Welchen Unterschied würde [Handlung] für [Nomen] machen?",
+          "example": "Welchen Unterschied würde eine Verlängerung des Versuchs für die Zuverlässigkeit der Ergebnisse machen?",
+          "translation": "Как продление испытания повлияло бы на надёжность результатов?",
+          "examples": [
+            {
+              "text": "Welchen Unterschied würde eine Verlängerung des Versuchs für die Zuverlässigkeit der Ergebnisse machen?",
+              "translation_ru": "Как продление испытания повлияло бы на надёжность результатов?"
+            },
+            {
+              "text": "Welchen Unterschied würde es für die Aufnahme machen, das Mikrofon näher heranzurücken?",
+              "translation_ru": "Что изменилось бы в записи, если бы микрофон стоял ближе?"
+            },
+            {
+              "text": "Welchen Unterschied würde eine um eine Stunde frühere Öffnung für die Kunden der Bäckerei machen?",
+              "translation_ru": "Что изменилось бы для клиентов пекарни, если бы она открывалась на час раньше?"
+            },
+            {
+              "text": "Welchen Unterschied würde es für dein Wochenende machen, wenn ihr euch beim Fahren abwechselt?",
+              "translation_ru": "Что изменилось бы в твоих выходных, если бы вы сменяли друг друга за рулём?"
+            },
+            {
+              "text": "Welchen Unterschied würde der Wegfall eines Freigabeschritts für die Wartezeit machen?",
+              "translation_ru": "Как удаление одного этапа согласования повлияло бы на время ожидания?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What difference would [verb-ing] make to [noun]?",
+        "Welchen Unterschied würde [Handlung] für [Nomen] machen?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQB010",
+      "set_id": "SQB",
+      "group_id": "SQB",
+      "title_ru": "Что нужно, чтобы … смог …?",
+      "title_en": "What would it take for [person] to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о необходимых условиях, усилиях или ресурсах для возможного действия. Это не утверждение, что человек обязан согласиться.",
+      "editorial_descriptions": {
+        "en": "Ask which conditions, effort or resources would enable an action. For introduces the person who would act; the question does not establish an obligation to agree.",
+        "ru": "Спросите о необходимых условиях, усилиях или ресурсах для возможного действия. Это не утверждение, что человек обязан согласиться."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would it take for [person] to [verb]?",
+          "example": "What would it take for you to feel comfortable leading the next workshop?",
+          "translation": "Что нужно, чтобы ты спокойно чувствовал себя в роли ведущего следующего семинара?",
+          "examples": [
+            {
+              "text": "What would it take for you to feel comfortable leading the next workshop?",
+              "translation_ru": "Что нужно, чтобы ты спокойно чувствовал себя в роли ведущего следующего семинара?"
+            },
+            {
+              "text": "What would it take for the library to stay open on Sundays?",
+              "translation_ru": "Что нужно, чтобы библиотека могла работать по воскресеньям?"
+            },
+            {
+              "text": "What would it take for the landlord to agree to a longer lease?",
+              "translation_ru": "Что нужно, чтобы хозяин согласился на более долгий срок аренды?"
+            },
+            {
+              "text": "What would it take for the children to organise the picnic themselves?",
+              "translation_ru": "Что нужно, чтобы дети смогли сами организовать пикник?"
+            },
+            {
+              "text": "What would it take for us to restore the backup without losing yesterday's changes?",
+              "translation_ru": "Что нужно, чтобы мы восстановили резервную копию, не потеряв вчерашние изменения?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was wäre nötig, damit [Person] [Verb]?",
+          "example": "Was wäre nötig, damit du dich bei der Leitung des nächsten Workshops wohlfühlst?",
+          "translation": "Что нужно, чтобы ты спокойно чувствовал себя в роли ведущего следующего семинара?",
+          "examples": [
+            {
+              "text": "Was wäre nötig, damit du dich bei der Leitung des nächsten Workshops wohlfühlst?",
+              "translation_ru": "Что нужно, чтобы ты спокойно чувствовал себя в роли ведущего следующего семинара?"
+            },
+            {
+              "text": "Was wäre nötig, damit die Bibliothek sonntags geöffnet bleiben könnte?",
+              "translation_ru": "Что нужно, чтобы библиотека могла работать по воскресеньям?"
+            },
+            {
+              "text": "Was wäre nötig, damit der Vermieter einem längeren Mietvertrag zustimmt?",
+              "translation_ru": "Что нужно, чтобы хозяин согласился на более долгий срок аренды?"
+            },
+            {
+              "text": "Was wäre nötig, damit die Kinder das Picknick selbst organisieren können?",
+              "translation_ru": "Что нужно, чтобы дети смогли сами организовать пикник?"
+            },
+            {
+              "text": "Was wäre nötig, damit wir die Sicherung wiederherstellen können, ohne die gestrigen Änderungen zu verlieren?",
+              "translation_ru": "Что нужно, чтобы мы восстановили резервную копию, не потеряв вчерашние изменения?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would it take for [person] to [verb]?",
+        "Was wäre nötig, damit [Person] [Verb]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

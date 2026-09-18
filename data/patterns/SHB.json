@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SHB",
+  "patterns": [
+    {
+      "id": "SHB001",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Начинать осваиваться с …",
+      "title_en": "[Subject] be getting the hang of [noun or verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите постепенное практическое освоение действия. Это разговорный оборот о навыке, а не заявление о полном мастерстве.",
+      "editorial_descriptions": {
+        "en": "Describe gradually learning how to do something in practice. Getting the hang of is conversational and signals progress, not complete mastery.",
+        "ru": "Опишите постепенное практическое освоение действия. Это разговорный оборот о навыке, а не заявление о полном мастерстве."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be getting the hang of [noun or verb-ing].",
+          "example": "I am getting the hang of adjusting the microphone without making the stand wobble.",
+          "translation": "Я начинаю осваивать настройку микрофона так, чтобы стойка не шаталась.",
+          "examples": [
+            {
+              "text": "I am getting the hang of adjusting the microphone without making the stand wobble.",
+              "translation_ru": "Я начинаю осваивать настройку микрофона так, чтобы стойка не шаталась."
+            },
+            {
+              "text": "She was getting the hang of kneading the dough when the baker introduced a wetter mixture.",
+              "translation_ru": "Она начала осваивать замешивание теста, когда пекарь предложил более влажную смесь."
+            },
+            {
+              "text": "Are the new volunteers getting the hang of sorting donations by condition rather than size?",
+              "translation_ru": "Новые волонтёры начинают осваивать сортировку пожертвованных вещей по состоянию, а не по размеру?"
+            },
+            {
+              "text": "We are finally getting the hang of telling the story without losing the main point.",
+              "translation_ru": "Мы наконец начинаем учиться рассказывать эту историю, не теряя главной мысли."
+            },
+            {
+              "text": "He is not getting the hang of using the new ticket machine yet.",
+              "translation_ru": "Он пока не может освоиться с новым билетным автоматом."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] bekommt langsam den Dreh heraus, wie [Aussage].",
+          "example": "Ich bekomme langsam den Dreh heraus, wie ich das Mikrofon verstelle, ohne dass der Ständer wackelt.",
+          "translation": "Я начинаю осваивать настройку микрофона так, чтобы стойка не шаталась.",
+          "examples": [
+            {
+              "text": "Ich bekomme langsam den Dreh heraus, wie ich das Mikrofon verstelle, ohne dass der Ständer wackelt.",
+              "translation_ru": "Я начинаю осваивать настройку микрофона так, чтобы стойка не шаталась."
+            },
+            {
+              "text": "Sie bekam langsam den Dreh heraus, wie man den Teig knetet, als der Bäcker eine feuchtere Mischung einführte.",
+              "translation_ru": "Она начала осваивать замешивание теста, когда пекарь предложил более влажную смесь."
+            },
+            {
+              "text": "Bekommen die neuen Freiwilligen langsam den Dreh heraus, wie man Spenden nach Zustand statt nach Größe sortiert?",
+              "translation_ru": "Новые волонтёры начинают осваивать сортировку пожертвованных вещей по состоянию, а не по размеру?"
+            },
+            {
+              "text": "Wir bekommen endlich langsam den Dreh heraus, wie wir die Geschichte erzählen, ohne den Hauptgedanken zu verlieren.",
+              "translation_ru": "Мы наконец начинаем учиться рассказывать эту историю, не теряя главной мысли."
+            },
+            {
+              "text": "Er bekommt noch nicht den Dreh heraus, wie man den neuen Fahrkartenautomaten bedient.",
+              "translation_ru": "Он пока не может освоиться с новым билетным автоматом."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be getting the hang of [noun or verb-ing].",
+        "[Subjekt] bekommt langsam den Dreh heraus, wie [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB002",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Принимать … как должное",
+      "title_en": "[Subject] take(s) [noun] for granted.",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите отсутствие внимания к ценности или ненадёжности чего-либо. Оборот может относиться к человеку, условию жизни или предполагаемому результату.",
+      "editorial_descriptions": {
+        "en": "Describe failing to appreciate something or assuming it will remain available. This can concern a person, a practical condition or an expected result.",
+        "ru": "Опишите отсутствие внимания к ценности или ненадёжности чего-либо. Оборот может относиться к человеку, условию жизни или предполагаемому результату."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] take(s) [noun] for granted.",
+          "example": "I had taken the reliable internet connection for granted until the cable was damaged.",
+          "translation": "Я принимал стабильный интернет как должное, пока не повредили кабель.",
+          "examples": [
+            {
+              "text": "I had taken the reliable internet connection for granted until the cable was damaged.",
+              "translation_ru": "Я принимал стабильный интернет как должное, пока не повредили кабель."
+            },
+            {
+              "text": "Do not take your neighbour's willingness to help for granted.",
+              "translation_ru": "Не принимай готовность соседа помочь как должное."
+            },
+            {
+              "text": "Have we been taking the quiet rehearsal room for granted all these years?",
+              "translation_ru": "Мы все эти годы принимали тихую репетиционную комнату как должное?"
+            },
+            {
+              "text": "She no longer takes an accurate timetable for granted after that confusing journey.",
+              "translation_ru": "После той запутанной поездки она больше не считает точность расписания чем-то само собой разумеющимся."
+            },
+            {
+              "text": "The club should not take the volunteers' patience for granted during another reorganisation.",
+              "translation_ru": "Клубу не стоит принимать терпение волонтёров как должное во время очередной реорганизации."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] nimmt [Nomen] als selbstverständlich hin.",
+          "example": "Ich hatte die zuverlässige Internetverbindung als selbstverständlich hingenommen, bis das Kabel beschädigt wurde.",
+          "translation": "Я принимал стабильный интернет как должное, пока не повредили кабель.",
+          "examples": [
+            {
+              "text": "Ich hatte die zuverlässige Internetverbindung als selbstverständlich hingenommen, bis das Kabel beschädigt wurde.",
+              "translation_ru": "Я принимал стабильный интернет как должное, пока не повредили кабель."
+            },
+            {
+              "text": "Nimm die Hilfsbereitschaft deines Nachbarn nicht als selbstverständlich hin.",
+              "translation_ru": "Не принимай готовность соседа помочь как должное."
+            },
+            {
+              "text": "Haben wir den ruhigen Proberaum all die Jahre als selbstverständlich hingenommen?",
+              "translation_ru": "Мы все эти годы принимали тихую репетиционную комнату как должное?"
+            },
+            {
+              "text": "Sie nimmt einen korrekten Fahrplan nach dieser verwirrenden Reise nicht mehr als selbstverständlich hin.",
+              "translation_ru": "После той запутанной поездки она больше не считает точность расписания чем-то само собой разумеющимся."
+            },
+            {
+              "text": "Der Verein sollte die Geduld der Freiwilligen bei einer weiteren Umstrukturierung nicht als selbstverständlich hinnehmen.",
+              "translation_ru": "Клубу не стоит принимать терпение волонтёров как должное во время очередной реорганизации."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] take(s) [noun] for granted.",
+        "[Subjekt] nimmt [Nomen] als selbstverständlich hin."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB003",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Иметь привычку …",
+      "title_en": "[Subject] have/has a habit of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите устойчивое повторяющееся действие. Формулировка часто содержит лёгкую оценку, поэтому не стоит использовать её как диагноз или абсолютное обобщение.",
+      "editorial_descriptions": {
+        "en": "Name a recurring habit. The wording often carries a mild judgement, so avoid treating it as a diagnosis or an absolute description of someone's character.",
+        "ru": "Назовите устойчивое повторяющееся действие. Формулировка часто содержит лёгкую оценку, поэтому не стоит использовать её как диагноз или абсолютное обобщение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] have/has a habit of [verb-ing].",
+          "example": "I have a habit of opening too many tabs before deciding what I actually need.",
+          "translation": "У меня есть привычка открывать слишком много вкладок, прежде чем решить, что мне нужно.",
+          "examples": [
+            {
+              "text": "I have a habit of opening too many tabs before deciding what I actually need.",
+              "translation_ru": "У меня есть привычка открывать слишком много вкладок, прежде чем решить, что мне нужно."
+            },
+            {
+              "text": "The dog had a habit of carrying one slipper to the front door when guests arrived.",
+              "translation_ru": "У пса была привычка приносить один тапок к входной двери, когда приходили гости."
+            },
+            {
+              "text": "Does she have a habit of apologising before she has even asked a question?",
+              "translation_ru": "У неё есть привычка извиняться ещё до того, как она задаст вопрос?"
+            },
+            {
+              "text": "We have developed a habit of photographing the meter before leaving the rented studio.",
+              "translation_ru": "У нас появилась привычка фотографировать счётчик перед уходом из арендованной студии."
+            },
+            {
+              "text": "He does not have a habit of promising dates before checking his diary.",
+              "translation_ru": "У него нет привычки обещать сроки, не заглянув в календарь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat die Angewohnheit, [zu + Infinitiv].",
+          "example": "Ich habe die Angewohnheit, zu viele Tabs zu öffnen, bevor ich entscheide, was ich wirklich brauche.",
+          "translation": "У меня есть привычка открывать слишком много вкладок, прежде чем решить, что мне нужно.",
+          "examples": [
+            {
+              "text": "Ich habe die Angewohnheit, zu viele Tabs zu öffnen, bevor ich entscheide, was ich wirklich brauche.",
+              "translation_ru": "У меня есть привычка открывать слишком много вкладок, прежде чем решить, что мне нужно."
+            },
+            {
+              "text": "Der Hund hatte die Angewohnheit, einen Hausschuh zur Haustür zu tragen, wenn Gäste kamen.",
+              "translation_ru": "У пса была привычка приносить один тапок к входной двери, когда приходили гости."
+            },
+            {
+              "text": "Hat sie die Angewohnheit, sich zu entschuldigen, bevor sie überhaupt eine Frage gestellt hat?",
+              "translation_ru": "У неё есть привычка извиняться ещё до того, как она задаст вопрос?"
+            },
+            {
+              "text": "Wir haben die Angewohnheit entwickelt, den Zähler zu fotografieren, bevor wir das gemietete Studio verlassen.",
+              "translation_ru": "У нас появилась привычка фотографировать счётчик перед уходом из арендованной студии."
+            },
+            {
+              "text": "Er hat nicht die Angewohnheit, Termine zu versprechen, bevor er in seinen Kalender geschaut hat.",
+              "translation_ru": "У него нет привычки обещать сроки, не заглянув в календарь."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] have/has a habit of [verb-ing].",
+        "[Subjekt] hat die Angewohnheit, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB004",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Заставлять … продолжать …",
+      "title_en": "[Subject] keep(s) [person or thing] [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите, что поддерживает чужое действие или состояние. Не путайте этот оборот с предотвращением действия через дополнительный предлог.",
+      "editorial_descriptions": {
+        "en": "Show what causes an action or state to continue. Keep someone doing differs from keep someone from doing, which means prevent it. German uses lassen for making someone wait and other causative constructions for continued activity.",
+        "ru": "Покажите, что поддерживает чужое действие или состояние. Не путайте этот оборот с предотвращением действия через дополнительный предлог."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] keep(s) [person or thing] [verb-ing].",
+          "example": "The unusual opening kept the audience listening even during the technical explanation.",
+          "translation": "Необычное начало удерживало внимание слушателей даже во время технического объяснения.",
+          "examples": [
+            {
+              "text": "The unusual opening kept the audience listening even during the technical explanation.",
+              "translation_ru": "Необычное начало удерживало внимание слушателей даже во время технического объяснения."
+            },
+            {
+              "text": "I am sorry I kept you waiting while I searched for the spare key.",
+              "translation_ru": "Прости, что заставил тебя ждать, пока искал запасной ключ."
+            },
+            {
+              "text": "Will the backup battery keep the lights working until the performance ends?",
+              "translation_ru": "Резервный аккумулятор обеспечит работу освещения до конца спектакля?"
+            },
+            {
+              "text": "She has kept the children guessing about the destination of their birthday trip.",
+              "translation_ru": "Она продолжает держать детей в догадках о том, куда они поедут на день рождения."
+            },
+            {
+              "text": "We cannot keep the printer running all evening if the paper feed keeps jamming.",
+              "translation_ru": "Мы не можем держать принтер включённым весь вечер, если бумага постоянно застревает."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] lässt [Person] [Infinitiv] / sorgt dafür, dass [Handlung] weitergeht.",
+          "example": "Der ungewöhnliche Einstieg sorgte dafür, dass das Publikum auch während der technischen Erklärung weiter zuhörte.",
+          "translation": "Необычное начало удерживало внимание слушателей даже во время технического объяснения.",
+          "examples": [
+            {
+              "text": "Der ungewöhnliche Einstieg sorgte dafür, dass das Publikum auch während der technischen Erklärung weiter zuhörte.",
+              "translation_ru": "Необычное начало удерживало внимание слушателей даже во время технического объяснения."
+            },
+            {
+              "text": "Es tut mir leid, dass ich dich warten ließ, während ich nach dem Ersatzschlüssel suchte.",
+              "translation_ru": "Прости, что заставил тебя ждать, пока искал запасной ключ."
+            },
+            {
+              "text": "Wird der Ersatzakku dafür sorgen, dass die Beleuchtung bis zum Ende der Vorstellung weiter funktioniert?",
+              "translation_ru": "Резервный аккумулятор обеспечит работу освещения до конца спектакля?"
+            },
+            {
+              "text": "Sie hat dafür gesorgt, dass die Kinder weiter rätseln, wohin der Geburtstagsausflug geht.",
+              "translation_ru": "Она продолжает держать детей в догадках о том, куда они поедут на день рождения."
+            },
+            {
+              "text": "Wir können den Drucker nicht den ganzen Abend weiterlaufen lassen, wenn der Papiereinzug ständig klemmt.",
+              "translation_ru": "Мы не можем держать принтер включённым весь вечер, если бумага постоянно застревает."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] keep(s) [person or thing] [verb-ing].",
+        "[Subjekt] lässt [Person] [Infinitiv] / sorgt dafür, dass [Handlung] weitergeht."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB005",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Обнаружить, что … делаешь …",
+      "title_en": "[Subject] find(s) [reflexive pronoun] [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Заметьте собственное действие или неожиданно сложившуюся ситуацию. В английском возвратное местоимение меняется вместе с подлежащим.",
+      "editorial_descriptions": {
+        "en": "Notice yourself doing something or unexpectedly find yourself in a situation. German separates self-observation with sich ertappen from getting into a situation with in die Lage geraten.",
+        "ru": "Заметьте собственное действие или неожиданно сложившуюся ситуацию. В английском возвратное местоимение меняется вместе с подлежащим."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] find(s) [reflexive pronoun] [verb-ing].",
+          "example": "I found myself rehearsing the opening sentence while washing the dishes.",
+          "translation": "Я поймал себя на том, что репетирую первую фразу, пока мою посуду.",
+          "examples": [
+            {
+              "text": "I found myself rehearsing the opening sentence while washing the dishes.",
+              "translation_ru": "Я поймал себя на том, что репетирую первую фразу, пока мою посуду."
+            },
+            {
+              "text": "She often finds herself checking the door twice when she leaves in a hurry.",
+              "translation_ru": "Она часто замечает, что проверяет дверь дважды, когда уходит в спешке."
+            },
+            {
+              "text": "Have you ever found yourself defending a plan you no longer believe in?",
+              "translation_ru": "Ты когда-нибудь замечал, что защищаешь план, в который уже не веришь?"
+            },
+            {
+              "text": "We found ourselves laughing at a mistake that had seemed disastrous the day before.",
+              "translation_ru": "Мы обнаружили, что смеёмся над ошибкой, которая накануне казалась катастрофой."
+            },
+            {
+              "text": "He does not want to find himself explaining the same missing receipt for a third time.",
+              "translation_ru": "Он не хочет в третий раз оказаться в ситуации, когда приходится объяснять отсутствие одного и того же чека."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ertappt sich dabei, [zu + Infinitiv] / gerät in die Lage, [zu + Infinitiv].",
+          "example": "Ich ertappte mich dabei, beim Abwaschen den Eröffnungssatz zu üben.",
+          "translation": "Я поймал себя на том, что репетирую первую фразу, пока мою посуду.",
+          "examples": [
+            {
+              "text": "Ich ertappte mich dabei, beim Abwaschen den Eröffnungssatz zu üben.",
+              "translation_ru": "Я поймал себя на том, что репетирую первую фразу, пока мою посуду."
+            },
+            {
+              "text": "Sie ertappt sich oft dabei, die Tür zweimal zu prüfen, wenn sie es beim Gehen eilig hat.",
+              "translation_ru": "Она часто замечает, что проверяет дверь дважды, когда уходит в спешке."
+            },
+            {
+              "text": "Hast du dich schon einmal dabei ertappt, einen Plan zu verteidigen, an den du nicht mehr glaubst?",
+              "translation_ru": "Ты когда-нибудь замечал, что защищаешь план, в который уже не веришь?"
+            },
+            {
+              "text": "Wir ertappten uns dabei, über einen Fehler zu lachen, der am Vortag noch katastrophal gewirkt hatte.",
+              "translation_ru": "Мы обнаружили, что смеёмся над ошибкой, которая накануне казалась катастрофой."
+            },
+            {
+              "text": "Er möchte nicht zum dritten Mal in die Lage geraten, denselben fehlenden Beleg erklären zu müssen.",
+              "translation_ru": "Он не хочет в третий раз оказаться в ситуации, когда приходится объяснять отсутствие одного и того же чека."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] find(s) [reflexive pronoun] [verb-ing].",
+        "[Subjekt] ertappt sich dabei, [zu + Infinitiv] / gerät in die Lage, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB006",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Начать сомневаться в решении …",
+      "title_en": "[Subject] have/has second thoughts about [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сообщите, что прежнее решение пересматривается. Сомнение ещё не означает, что человек обязательно откажется от первоначального плана.",
+      "editorial_descriptions": {
+        "en": "Say that an earlier decision is being reconsidered. Second thoughts express doubt, not necessarily a final reversal of the plan.",
+        "ru": "Сообщите, что прежнее решение пересматривается. Сомнение ещё не означает, что человек обязательно откажется от первоначального плана."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] have/has second thoughts about [verb-ing].",
+          "example": "I am having second thoughts about renting a room above a busy restaurant.",
+          "translation": "Я начинаю сомневаться, стоит ли снимать комнату над оживлённым рестораном.",
+          "examples": [
+            {
+              "text": "I am having second thoughts about renting a room above a busy restaurant.",
+              "translation_ru": "Я начинаю сомневаться, стоит ли снимать комнату над оживлённым рестораном."
+            },
+            {
+              "text": "She had second thoughts about selling the camera after finding her old travel photographs.",
+              "translation_ru": "Она усомнилась в решении продать камеру, когда нашла старые фотографии из поездок."
+            },
+            {
+              "text": "Are we having second thoughts about inviting everyone to the first rehearsal?",
+              "translation_ru": "Мы начинаем сомневаться, стоит ли приглашать всех на первую репетицию?"
+            },
+            {
+              "text": "They have had second thoughts about replacing the original wooden floor.",
+              "translation_ru": "У них появились сомнения по поводу замены оригинального деревянного пола."
+            },
+            {
+              "text": "He might have second thoughts about accepting the offer once he sees the weekend schedule.",
+              "translation_ru": "Он может усомниться в решении принять предложение, когда увидит график на выходные."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] bekommt Zweifel daran, [zu + Infinitiv].",
+          "example": "Ich bekomme Zweifel daran, ein Zimmer über einem gut besuchten Restaurant zu mieten.",
+          "translation": "Я начинаю сомневаться, стоит ли снимать комнату над оживлённым рестораном.",
+          "examples": [
+            {
+              "text": "Ich bekomme Zweifel daran, ein Zimmer über einem gut besuchten Restaurant zu mieten.",
+              "translation_ru": "Я начинаю сомневаться, стоит ли снимать комнату над оживлённым рестораном."
+            },
+            {
+              "text": "Sie bekam Zweifel daran, die Kamera zu verkaufen, als sie ihre alten Reisefotos fand.",
+              "translation_ru": "Она усомнилась в решении продать камеру, когда нашла старые фотографии из поездок."
+            },
+            {
+              "text": "Bekommen wir Zweifel daran, alle zur ersten Probe einzuladen?",
+              "translation_ru": "Мы начинаем сомневаться, стоит ли приглашать всех на первую репетицию?"
+            },
+            {
+              "text": "Sie haben inzwischen Zweifel daran bekommen, den ursprünglichen Holzboden zu ersetzen.",
+              "translation_ru": "У них появились сомнения по поводу замены оригинального деревянного пола."
+            },
+            {
+              "text": "Er könnte Zweifel daran bekommen, das Angebot anzunehmen, sobald er den Wochenendplan sieht.",
+              "translation_ru": "Он может усомниться в решении принять предложение, когда увидит график на выходные."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] have/has second thoughts about [verb-ing].",
+        "[Subjekt] bekommt Zweifel daran, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB007",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Пока неизвестно, … ли …",
+      "title_en": "It remains to be seen whether [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Отделите возможность от ещё не установленного результата. Это спокойный способ приостановить вывод, а не скрытое отрицание.",
+      "editorial_descriptions": {
+        "en": "Withhold judgement about an outcome that is not yet established. The phrase leaves the question open rather than quietly predicting failure.",
+        "ru": "Отделите возможность от ещё не установленного результата. Это спокойный способ приостановить вывод, а не скрытое отрицание."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It remains to be seen whether [clause].",
+          "example": "It remains to be seen whether the repaired roof will hold during heavy rain.",
+          "translation": "Пока неизвестно, выдержит ли отремонтированная крыша сильный дождь.",
+          "examples": [
+            {
+              "text": "It remains to be seen whether the repaired roof will hold during heavy rain.",
+              "translation_ru": "Пока неизвестно, выдержит ли отремонтированная крыша сильный дождь."
+            },
+            {
+              "text": "It remained to be seen whether the new opening would make the speech easier to follow.",
+              "translation_ru": "Тогда ещё было неизвестно, станет ли речь понятнее с новым вступлением."
+            },
+            {
+              "text": "It remains to be seen whether enough neighbours will sign up for the shared garden.",
+              "translation_ru": "Пока неизвестно, запишется ли достаточно соседей для участия в общем саду."
+            },
+            {
+              "text": "It remains to be seen whether the cheaper paper will work in the old printer.",
+              "translation_ru": "Пока неизвестно, подойдёт ли более дешёвая бумага для старого принтера."
+            },
+            {
+              "text": "It remains to be seen whether the extra rehearsal will resolve the timing problems.",
+              "translation_ru": "Пока неизвестно, поможет ли дополнительная репетиция устранить проблемы с синхронностью."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es bleibt abzuwarten, ob [Aussage].",
+          "example": "Es bleibt abzuwarten, ob das reparierte Dach bei starkem Regen dicht hält.",
+          "translation": "Пока неизвестно, выдержит ли отремонтированная крыша сильный дождь.",
+          "examples": [
+            {
+              "text": "Es bleibt abzuwarten, ob das reparierte Dach bei starkem Regen dicht hält.",
+              "translation_ru": "Пока неизвестно, выдержит ли отремонтированная крыша сильный дождь."
+            },
+            {
+              "text": "Es blieb abzuwarten, ob der neue Einstieg die Rede verständlicher machen würde.",
+              "translation_ru": "Тогда ещё было неизвестно, станет ли речь понятнее с новым вступлением."
+            },
+            {
+              "text": "Es bleibt abzuwarten, ob sich genügend Nachbarn für den Gemeinschaftsgarten anmelden.",
+              "translation_ru": "Пока неизвестно, запишется ли достаточно соседей для участия в общем саду."
+            },
+            {
+              "text": "Es bleibt abzuwarten, ob sich das günstigere Papier im alten Drucker verwenden lässt.",
+              "translation_ru": "Пока неизвестно, подойдёт ли более дешёвая бумага для старого принтера."
+            },
+            {
+              "text": "Es bleibt abzuwarten, ob die zusätzliche Probe die Probleme mit dem Timing löst.",
+              "translation_ru": "Пока неизвестно, поможет ли дополнительная репетиция устранить проблемы с синхронностью."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "It remains to be seen whether [clause].",
+        "Es bleibt abzuwarten, ob [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB008",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Примириться с … / принять …",
+      "title_en": "[Subject] come(s) to terms with [noun or verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите постепенное принятие неприятной или трудной реальности. Это не обязательно одобрение ситуации и не отказ от возможных действий.",
+      "editorial_descriptions": {
+        "en": "Describe gradually accepting a difficult reality. Coming to terms with something does not necessarily mean approving of it or abandoning all action.",
+        "ru": "Опишите постепенное принятие неприятной или трудной реальности. Это не обязательно одобрение ситуации и не отказ от возможных действий."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] come(s) to terms with [noun or verb-ing].",
+          "example": "She is coming to terms with the fact that the old café will not reopen.",
+          "translation": "Она постепенно принимает то, что старое кафе больше не откроется.",
+          "examples": [
+            {
+              "text": "She is coming to terms with the fact that the old café will not reopen.",
+              "translation_ru": "Она постепенно принимает то, что старое кафе больше не откроется."
+            },
+            {
+              "text": "I had to come to terms with needing help to finish the restoration.",
+              "translation_ru": "Мне пришлось принять, что для завершения реставрации нужна помощь."
+            },
+            {
+              "text": "Have the players come to terms with losing the final by a single point?",
+              "translation_ru": "Игроки уже смирились с поражением в финале с разницей всего в одно очко?"
+            },
+            {
+              "text": "We have not yet come to terms with the amount of work the damaged archive requires.",
+              "translation_ru": "Мы ещё не приняли, сколько работы потребует повреждённый архив."
+            },
+            {
+              "text": "He eventually came to terms with being a beginner again after changing careers.",
+              "translation_ru": "После смены профессии он в конце концов принял необходимость снова быть новичком."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] findet sich mit [Nomen] ab.",
+          "example": "Sie findet sich langsam damit ab, dass das alte Café nicht wieder öffnen wird.",
+          "translation": "Она постепенно принимает то, что старое кафе больше не откроется.",
+          "examples": [
+            {
+              "text": "Sie findet sich langsam damit ab, dass das alte Café nicht wieder öffnen wird.",
+              "translation_ru": "Она постепенно принимает то, что старое кафе больше не откроется."
+            },
+            {
+              "text": "Ich musste mich damit abfinden, dass ich für den Abschluss der Restaurierung Hilfe brauchte.",
+              "translation_ru": "Мне пришлось принять, что для завершения реставрации нужна помощь."
+            },
+            {
+              "text": "Haben sich die Spieler damit abgefunden, das Finale mit einem einzigen Punkt Unterschied verloren zu haben?",
+              "translation_ru": "Игроки уже смирились с поражением в финале с разницей всего в одно очко?"
+            },
+            {
+              "text": "Wir haben uns noch nicht mit dem Arbeitsaufwand abgefunden, den das beschädigte Archiv erfordert.",
+              "translation_ru": "Мы ещё не приняли, сколько работы потребует повреждённый архив."
+            },
+            {
+              "text": "Er fand sich schließlich damit ab, nach dem Berufswechsel wieder Anfänger zu sein.",
+              "translation_ru": "После смены профессии он в конце концов принял необходимость снова быть новичком."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] come(s) to terms with [noun or verb-ing].",
+        "[Subjekt] findet sich mit [Nomen] ab."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB009",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Ошибочно принять … за …",
+      "title_en": "[Subject] mistake(s) [X] for [Y].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите ошибочное отождествление двух вещей. Первое дополнение — то, что было на самом деле, второе — то, за что его приняли.",
+      "editorial_descriptions": {
+        "en": "Name a mistaken identification. The first object is what was actually present; the second is what it was wrongly taken to be.",
+        "ru": "Назовите ошибочное отождествление двух вещей. Первое дополнение — то, что было на самом деле, второе — то, за что его приняли."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] mistake(s) [X] for [Y].",
+          "example": "I mistook the repair estimate for the final invoice and paid it too early.",
+          "translation": "Я принял смету ремонта за итоговый счёт и оплатил её слишком рано.",
+          "examples": [
+            {
+              "text": "I mistook the repair estimate for the final invoice and paid it too early.",
+              "translation_ru": "Я принял смету ремонта за итоговый счёт и оплатил её слишком рано."
+            },
+            {
+              "text": "Do not mistake her quiet manner for a lack of interest in the discussion.",
+              "translation_ru": "Не принимай её спокойную манеру за отсутствие интереса к обсуждению."
+            },
+            {
+              "text": "Have you ever mistaken the sound of the kettle for your phone ringing?",
+              "translation_ru": "Ты когда-нибудь принимал звук чайника за звонок телефона?"
+            },
+            {
+              "text": "The visitors mistook the storage entrance for the door to the exhibition.",
+              "translation_ru": "Посетители приняли вход в склад за дверь на выставку."
+            },
+            {
+              "text": "We had mistaken repeated examples for genuine practice with different situations.",
+              "translation_ru": "Мы ошибочно принимали повторяющиеся примеры за настоящую практику с разными ситуациями."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hält [X] irrtümlich für [Y].",
+          "example": "Ich hielt den Kostenvoranschlag irrtümlich für die endgültige Rechnung und bezahlte ihn zu früh.",
+          "translation": "Я принял смету ремонта за итоговый счёт и оплатил её слишком рано.",
+          "examples": [
+            {
+              "text": "Ich hielt den Kostenvoranschlag irrtümlich für die endgültige Rechnung und bezahlte ihn zu früh.",
+              "translation_ru": "Я принял смету ремонта за итоговый счёт и оплатил её слишком рано."
+            },
+            {
+              "text": "Halte ihre ruhige Art nicht irrtümlich für mangelndes Interesse an der Diskussion.",
+              "translation_ru": "Не принимай её спокойную манеру за отсутствие интереса к обсуждению."
+            },
+            {
+              "text": "Hast du das Geräusch des Wasserkochers schon einmal irrtümlich für das Klingeln deines Telefons gehalten?",
+              "translation_ru": "Ты когда-нибудь принимал звук чайника за звонок телефона?"
+            },
+            {
+              "text": "Die Besucher hielten den Lagereingang irrtümlich für den Eingang zur Ausstellung.",
+              "translation_ru": "Посетители приняли вход в склад за дверь на выставку."
+            },
+            {
+              "text": "Wir hatten wiederholte Beispiele irrtümlich für echte Übung mit unterschiedlichen Situationen gehalten.",
+              "translation_ru": "Мы ошибочно принимали повторяющиеся примеры за настоящую практику с разными ситуациями."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] mistake(s) [X] for [Y].",
+        "[Subjekt] hält [X] irrtümlich für [Y]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SHB010",
+      "set_id": "SHB",
+      "group_id": "SHB",
+      "title_ru": "Быть обязанным … благодаря …",
+      "title_en": "[Subject] owe(s) [result or quality] to [cause or person].",
+      "level": "B2–C1",
+      "metaphor_ru": "Укажите, кому или чему приписываете результат. В этом значении речь не о денежном долге; причинную связь нужно обосновывать отдельно.",
+      "editorial_descriptions": {
+        "en": "Attribute a result to a person or cause. Owe is not about a financial debt here; the construction states an attribution rather than proving causation.",
+        "ru": "Укажите, кому или чему приписываете результат. В этом значении речь не о денежном долге; причинную связь нужно обосновывать отдельно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] owe(s) [result or quality] to [cause or person].",
+          "example": "I owe my confidence on stage to a teacher who let me start with very short talks.",
+          "translation": "Уверенностью на сцене я обязан преподавательнице, которая позволяла мне начинать с очень коротких выступлений.",
+          "examples": [
+            {
+              "text": "I owe my confidence on stage to a teacher who let me start with very short talks.",
+              "translation_ru": "Уверенностью на сцене я обязан преподавательнице, которая позволяла мне начинать с очень коротких выступлений."
+            },
+            {
+              "text": "The garden owed much of its character to the trees the previous owner had planted.",
+              "translation_ru": "Своим характером сад во многом был обязан деревьям, посаженным прежним владельцем."
+            },
+            {
+              "text": "Do we owe the faster response to the new software or to the smaller queue?",
+              "translation_ru": "Более быстрым ответом мы обязаны новой программе или меньшей очереди?"
+            },
+            {
+              "text": "She has always said that the exhibition owed its success to the patient volunteers.",
+              "translation_ru": "Она всегда говорила, что успехом выставка обязана терпеливым волонтёрам."
+            },
+            {
+              "text": "The clear recording owes more to the quiet room than to the expensive microphone.",
+              "translation_ru": "Чистота записи больше связана с тихой комнатой, чем с дорогим микрофоном."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] verdankt [Ergebnis] [Ursache oder Person].",
+          "example": "Ich verdanke mein Selbstvertrauen auf der Bühne einer Lehrerin, die mich mit sehr kurzen Vorträgen anfangen ließ.",
+          "translation": "Уверенностью на сцене я обязан преподавательнице, которая позволяла мне начинать с очень коротких выступлений.",
+          "examples": [
+            {
+              "text": "Ich verdanke mein Selbstvertrauen auf der Bühne einer Lehrerin, die mich mit sehr kurzen Vorträgen anfangen ließ.",
+              "translation_ru": "Уверенностью на сцене я обязан преподавательнице, которая позволяла мне начинать с очень коротких выступлений."
+            },
+            {
+              "text": "Der Garten verdankte einen großen Teil seines Charakters den Bäumen, die der frühere Besitzer gepflanzt hatte.",
+              "translation_ru": "Своим характером сад во многом был обязан деревьям, посаженным прежним владельцем."
+            },
+            {
+              "text": "Verdanken wir die schnellere Antwort der neuen Software oder der kürzeren Warteschlange?",
+              "translation_ru": "Более быстрым ответом мы обязаны новой программе или меньшей очереди?"
+            },
+            {
+              "text": "Sie hat immer gesagt, dass die Ausstellung ihren Erfolg den geduldigen Freiwilligen verdankte.",
+              "translation_ru": "Она всегда говорила, что успехом выставка обязана терпеливым волонтёрам."
+            },
+            {
+              "text": "Die klare Aufnahme verdankt ihre Qualität eher dem ruhigen Raum als dem teuren Mikrofon.",
+              "translation_ru": "Чистота записи больше связана с тихой комнатой, чем с дорогим микрофоном."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] owe(s) [result or quality] to [cause or person].",
+        "[Subjekt] verdankt [Ergebnis] [Ursache oder Person]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SVB",
+  "patterns": [
+    {
+      "id": "SVB001",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Заслуживать того, чтобы …",
+      "title_en": "[Subject] deserve(s) to be [past participle].",
+      "level": "B2–C1",
+      "metaphor_ru": "Скажите, какого отношения заслуживает человек или вещь. Пассивный инфинитив показывает, что действие направлено на подлежащее.",
+      "editorial_descriptions": {
+        "en": "Say what treatment a person or thing deserves. The passive infinitive makes the subject the recipient of the action, not its performer.",
+        "ru": "Скажите, какого отношения заслуживает человек или вещь. Пассивный инфинитив показывает, что действие направлено на подлежащее."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] deserve(s) to be [past participle].",
+          "example": "The volunteers deserve to be praised for staying after everyone else had left.",
+          "translation": "Волонтёры заслуживают похвалы за то, что остались после ухода всех остальных.",
+          "examples": [
+            {
+              "text": "The volunteers deserve to be praised for staying after everyone else had left.",
+              "translation_ru": "Волонтёры заслуживают похвалы за то, что остались после ухода всех остальных."
+            },
+            {
+              "text": "This damaged instrument deserves to be repaired, not thrown into a skip.",
+              "translation_ru": "Этот повреждённый инструмент заслуживает ремонта, а не мусорного контейнера."
+            },
+            {
+              "text": "She did not deserve to be blamed for a decision made before she joined.",
+              "translation_ru": "Она не заслуживала обвинений за решение, принятое до её прихода."
+            },
+            {
+              "text": "Does the neglected courtyard deserve to be included in the renovation budget?",
+              "translation_ru": "Заслуживает ли запущенный двор того, чтобы его включили в бюджет ремонта?"
+            },
+            {
+              "text": "Their careful translation deserved to be credited on the programme.",
+              "translation_ru": "Их тщательный перевод заслуживал упоминания в программе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] verdient es, [Partizip II] zu werden.",
+          "example": "Die Freiwilligen verdienen es, dafür gelobt zu werden, dass sie geblieben sind, als alle anderen schon gegangen waren.",
+          "translation": "Волонтёры заслуживают похвалы за то, что остались после ухода всех остальных.",
+          "examples": [
+            {
+              "text": "Die Freiwilligen verdienen es, dafür gelobt zu werden, dass sie geblieben sind, als alle anderen schon gegangen waren.",
+              "translation_ru": "Волонтёры заслуживают похвалы за то, что остались после ухода всех остальных."
+            },
+            {
+              "text": "Dieses beschädigte Instrument verdient es, repariert und nicht in einen Container geworfen zu werden.",
+              "translation_ru": "Этот повреждённый инструмент заслуживает ремонта, а не мусорного контейнера."
+            },
+            {
+              "text": "Sie verdiente es nicht, für eine Entscheidung verantwortlich gemacht zu werden, die vor ihrem Einstieg getroffen worden war.",
+              "translation_ru": "Она не заслуживала обвинений за решение, принятое до её прихода."
+            },
+            {
+              "text": "Verdient es der vernachlässigte Innenhof, in das Renovierungsbudget aufgenommen zu werden?",
+              "translation_ru": "Заслуживает ли запущенный двор того, чтобы его включили в бюджет ремонта?"
+            },
+            {
+              "text": "Ihre sorgfältige Übersetzung verdiente es, im Programmheft gewürdigt zu werden.",
+              "translation_ru": "Их тщательный перевод заслуживал упоминания в программе."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] deserve(s) to be [past participle].",
+        "[Subjekt] verdient es, [Partizip II] zu werden."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB002",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Делать вид, что уже …",
+      "title_en": "[Subject] pretend(s) to have [past participle].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите притворство относительно уже совершённого действия. Завершённый инфинитив относит действие к моменту раньше самого притворства.",
+      "editorial_descriptions": {
+        "en": "Describe pretending that an earlier action has already happened. The perfect infinitive places the claimed action before the act of pretending.",
+        "ru": "Опишите притворство относительно уже совершённого действия. Завершённый инфинитив относит действие к моменту раньше самого притворства."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] pretend(s) to have [past participle].",
+          "example": "He pretended to have read the contract but could not explain the cancellation clause.",
+          "translation": "Он делал вид, что прочитал договор, но не смог объяснить пункт о расторжении.",
+          "examples": [
+            {
+              "text": "He pretended to have read the contract but could not explain the cancellation clause.",
+              "translation_ru": "Он делал вид, что прочитал договор, но не смог объяснить пункт о расторжении."
+            },
+            {
+              "text": "I will not pretend to have understood instructions that are still unclear.",
+              "translation_ru": "Я не стану делать вид, что понял инструкции, которые всё ещё непонятны."
+            },
+            {
+              "text": "Did she pretend to have met the author just to impress the book club?",
+              "translation_ru": "Она притворилась, что встречалась с автором, только чтобы впечатлить книжный клуб?"
+            },
+            {
+              "text": "The child pretended to have forgotten the biscuits hidden behind the cereal.",
+              "translation_ru": "Ребёнок сделал вид, что забыл о печенье, спрятанном за хлопьями."
+            },
+            {
+              "text": "We should not pretend to have tested the export when we have only opened the file.",
+              "translation_ru": "Не стоит делать вид, что мы проверили экспорт, если мы лишь открыли файл."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] tut so, als hätte [Subjekt] [Partizip II].",
+          "example": "Er tat so, als hätte er den Vertrag gelesen, konnte aber die Kündigungsklausel nicht erklären.",
+          "translation": "Он делал вид, что прочитал договор, но не смог объяснить пункт о расторжении.",
+          "examples": [
+            {
+              "text": "Er tat so, als hätte er den Vertrag gelesen, konnte aber die Kündigungsklausel nicht erklären.",
+              "translation_ru": "Он делал вид, что прочитал договор, но не смог объяснить пункт о расторжении."
+            },
+            {
+              "text": "Ich werde nicht so tun, als hätte ich Anweisungen verstanden, die noch unklar sind.",
+              "translation_ru": "Я не стану делать вид, что понял инструкции, которые всё ещё непонятны."
+            },
+            {
+              "text": "Tat sie so, als hätte sie den Autor getroffen, nur um den Buchclub zu beeindrucken?",
+              "translation_ru": "Она притворилась, что встречалась с автором, только чтобы впечатлить книжный клуб?"
+            },
+            {
+              "text": "Das Kind tat so, als hätte es die hinter dem Müsli versteckten Kekse vergessen.",
+              "translation_ru": "Ребёнок сделал вид, что забыл о печенье, спрятанном за хлопьями."
+            },
+            {
+              "text": "Wir sollten nicht so tun, als hätten wir den Export getestet, wenn wir die Datei nur geöffnet haben.",
+              "translation_ru": "Не стоит делать вид, что мы проверили экспорт, если мы лишь открыли файл."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] pretend(s) to have [past participle].",
+        "[Subjekt] tut so, als hätte [Subjekt] [Partizip II]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB003",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Иметь обыкновение … / обычно …",
+      "title_en": "[Subject] tend(s) to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите повторяющуюся склонность, а не неизменный закон. Отрицание показывает, что действие для человека или ситуации скорее нетипично.",
+      "editorial_descriptions": {
+        "en": "Describe a recurring tendency rather than a universal rule. This frame can concern behaviour or repeated events; it is not restricted to expressing opinions.",
+        "ru": "Опишите повторяющуюся склонность, а не неизменный закон. Отрицание показывает, что действие для человека или ситуации скорее нетипично."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] tend(s) to [verb].",
+          "example": "I tend to overpack when I am unsure what the weather will be like.",
+          "translation": "Я обычно беру слишком много вещей, когда не знаю, какая будет погода.",
+          "examples": [
+            {
+              "text": "I tend to overpack when I am unsure what the weather will be like.",
+              "translation_ru": "Я обычно беру слишком много вещей, когда не знаю, какая будет погода."
+            },
+            {
+              "text": "The old gate tends to stick after a night of heavy rain.",
+              "translation_ru": "Старые ворота обычно заедают после ночи сильного дождя."
+            },
+            {
+              "text": "Did she tend to interrupt herself when she lost confidence in an explanation?",
+              "translation_ru": "Она обычно обрывала себя, когда теряла уверенность в своём объяснении?"
+            },
+            {
+              "text": "We do not tend to replace equipment while spare parts are still available.",
+              "translation_ru": "Мы обычно не меняем оборудование, пока для него ещё можно найти запчасти."
+            },
+            {
+              "text": "Visitors tend to overlook the small staircase behind the ticket desk.",
+              "translation_ru": "Посетители часто не замечают маленькую лестницу за билетной кассой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] neigt dazu, [zu + Infinitiv].",
+          "example": "Ich neige dazu, zu viel einzupacken, wenn ich nicht weiß, wie das Wetter wird.",
+          "translation": "Я обычно беру слишком много вещей, когда не знаю, какая будет погода.",
+          "examples": [
+            {
+              "text": "Ich neige dazu, zu viel einzupacken, wenn ich nicht weiß, wie das Wetter wird.",
+              "translation_ru": "Я обычно беру слишком много вещей, когда не знаю, какая будет погода."
+            },
+            {
+              "text": "Das alte Tor neigt dazu, nach einer Nacht mit starkem Regen zu klemmen.",
+              "translation_ru": "Старые ворота обычно заедают после ночи сильного дождя."
+            },
+            {
+              "text": "Neigte sie dazu, sich selbst zu unterbrechen, wenn sie bei einer Erklärung unsicher wurde?",
+              "translation_ru": "Она обычно обрывала себя, когда теряла уверенность в своём объяснении?"
+            },
+            {
+              "text": "Wir neigen nicht dazu, Geräte zu ersetzen, solange noch Ersatzteile erhältlich sind.",
+              "translation_ru": "Мы обычно не меняем оборудование, пока для него ещё можно найти запчасти."
+            },
+            {
+              "text": "Besucher neigen dazu, die kleine Treppe hinter dem Ticketschalter zu übersehen.",
+              "translation_ru": "Посетители часто не замечают маленькую лестницу за билетной кассой."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] tend(s) to [verb].",
+        "[Subjekt] neigt dazu, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB004",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Не выполнить … / не суметь …",
+      "title_en": "[Subject] fail(s) to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Укажите на несостоявшееся действие. Это может быть упущение или неудачная попытка; немецкий выбирает разные глаголы для этих значений.",
+      "editorial_descriptions": {
+        "en": "State that an expected action did not occur. Fail to can describe an omission or an unsuccessful attempt; German distinguishes versäumen from es nicht schaffen according to that meaning.",
+        "ru": "Укажите на несостоявшееся действие. Это может быть упущение или неудачная попытка; немецкий выбирает разные глаголы для этих значений."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] fail(s) to [verb].",
+          "example": "The courier failed to leave a note explaining where the parcel had gone.",
+          "translation": "Курьер не оставил записки с объяснением, куда делась посылка.",
+          "examples": [
+            {
+              "text": "The courier failed to leave a note explaining where the parcel had gone.",
+              "translation_ru": "Курьер не оставил записки с объяснением, куда делась посылка."
+            },
+            {
+              "text": "We have failed to find a venue with both a lift and a rehearsal room.",
+              "translation_ru": "Нам не удалось найти площадку одновременно с лифтом и репетиционной комнатой."
+            },
+            {
+              "text": "Why did you fail to include last month's photographs in the backup?",
+              "translation_ru": "Почему ты не включил фотографии за прошлый месяц в резервную копию?"
+            },
+            {
+              "text": "She failed to persuade the landlord to replace the broken intercom.",
+              "translation_ru": "Ей не удалось убедить хозяина заменить сломанный домофон."
+            },
+            {
+              "text": "The speaker still fails to explain why the two estimates differ so much.",
+              "translation_ru": "Выступающему всё ещё не удаётся объяснить, почему две оценки настолько различаются."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] versäumt es, [zu + Infinitiv] / schafft es nicht, [zu + Infinitiv].",
+          "example": "Der Kurier versäumte es, eine Notiz zu hinterlassen, aus der hervorging, wohin das Paket gebracht worden war.",
+          "translation": "Курьер не оставил записки с объяснением, куда делась посылка.",
+          "examples": [
+            {
+              "text": "Der Kurier versäumte es, eine Notiz zu hinterlassen, aus der hervorging, wohin das Paket gebracht worden war.",
+              "translation_ru": "Курьер не оставил записки с объяснением, куда делась посылка."
+            },
+            {
+              "text": "Wir haben es nicht geschafft, einen Veranstaltungsort mit Aufzug und Proberaum zu finden.",
+              "translation_ru": "Нам не удалось найти площадку одновременно с лифтом и репетиционной комнатой."
+            },
+            {
+              "text": "Warum hast du es versäumt, die Fotos vom letzten Monat in die Sicherung aufzunehmen?",
+              "translation_ru": "Почему ты не включил фотографии за прошлый месяц в резервную копию?"
+            },
+            {
+              "text": "Sie schaffte es nicht, den Vermieter zum Austausch der defekten Gegensprechanlage zu bewegen.",
+              "translation_ru": "Ей не удалось убедить хозяина заменить сломанный домофон."
+            },
+            {
+              "text": "Der Redner schafft es weiterhin nicht, zu erklären, warum sich die beiden Schätzungen so stark unterscheiden.",
+              "translation_ru": "Выступающему всё ещё не удаётся объяснить, почему две оценки настолько различаются."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] fail(s) to [verb].",
+        "[Subjekt] versäumt es, [zu + Infinitiv] / schafft es nicht, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB005",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Как раз случайно …",
+      "title_en": "[Subject] happen(s) to be [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Представьте действие как случайное совпадение. Английская длительная форма может описывать текущий процесс или запланированное будущее; немецкий передаёт случайность отдельным наречием.",
+      "editorial_descriptions": {
+        "en": "Present an activity as a coincidence. The continuous infinitive can describe an action in progress or an arranged future activity; German often uses zufällig, adding gerade for an ongoing action.",
+        "ru": "Представьте действие как случайное совпадение. Английская длительная форма может описывать текущий процесс или запланированное будущее; немецкий передаёт случайность отдельным наречием."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] happen(s) to be [verb-ing].",
+          "example": "I happened to be checking the timetable when the cancellation appeared.",
+          "translation": "Я как раз случайно смотрел расписание, когда появилось сообщение об отмене.",
+          "examples": [
+            {
+              "text": "I happened to be checking the timetable when the cancellation appeared.",
+              "translation_ru": "Я как раз случайно смотрел расписание, когда появилось сообщение об отмене."
+            },
+            {
+              "text": "She happens to be restoring a chair almost identical to the one you found.",
+              "translation_ru": "Она сейчас случайно реставрирует стул, почти такой же, как тот, что ты нашёл."
+            },
+            {
+              "text": "Do you happen to be driving past the library this afternoon?",
+              "translation_ru": "Ты сегодня днём случайно не будешь проезжать мимо библиотеки?"
+            },
+            {
+              "text": "The neighbour happened to be watering his plants when the kitten climbed over the wall.",
+              "translation_ru": "Сосед как раз случайно поливал растения, когда котёнок перелез через стену."
+            },
+            {
+              "text": "We happened to be recording the rehearsal, so the missing cue was easy to locate.",
+              "translation_ru": "Мы как раз случайно записывали репетицию, поэтому пропущенный вступительный сигнал было легко найти."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] [Verb] zufällig (gerade) [Ergänzung].",
+          "example": "Ich war zufällig gerade dabei, den Fahrplan zu prüfen, als die Absage erschien.",
+          "translation": "Я как раз случайно смотрел расписание, когда появилось сообщение об отмене.",
+          "examples": [
+            {
+              "text": "Ich war zufällig gerade dabei, den Fahrplan zu prüfen, als die Absage erschien.",
+              "translation_ru": "Я как раз случайно смотрел расписание, когда появилось сообщение об отмене."
+            },
+            {
+              "text": "Sie ist zufällig gerade dabei, einen fast identischen Stuhl zu restaurieren wie den, den du gefunden hast.",
+              "translation_ru": "Она сейчас случайно реставрирует стул, почти такой же, как тот, что ты нашёл."
+            },
+            {
+              "text": "Fährst du heute Nachmittag zufällig an der Bibliothek vorbei?",
+              "translation_ru": "Ты сегодня днём случайно не будешь проезжать мимо библиотеки?"
+            },
+            {
+              "text": "Der Nachbar war zufällig gerade dabei, seine Pflanzen zu gießen, als das Kätzchen über die Mauer kletterte.",
+              "translation_ru": "Сосед как раз случайно поливал растения, когда котёнок перелез через стену."
+            },
+            {
+              "text": "Wir waren zufällig gerade dabei, die Probe aufzunehmen, deshalb ließ sich der fehlende Einsatz leicht finden.",
+              "translation_ru": "Мы как раз случайно записывали репетицию, поэтому пропущенный вступительный сигнал было легко найти."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] happen(s) to be [verb-ing].",
+        "[Subjekt] [Verb] zufällig (gerade) [Ergänzung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB006",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "С трудом пытаться …",
+      "title_en": "[Subject] struggle(s) to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите действие, которое даётся трудно. В отличие от сообщения о неудаче, здесь результат ещё может быть достигнут.",
+      "editorial_descriptions": {
+        "en": "Describe finding an action difficult. Unlike fail to, struggle to does not establish that the attempt has ended unsuccessfully.",
+        "ru": "Опишите действие, которое даётся трудно. В отличие от сообщения о неудаче, здесь результат ещё может быть достигнут."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] struggle(s) to [verb].",
+          "example": "I struggle to follow a discussion when three people speak at once.",
+          "translation": "Мне трудно следить за обсуждением, когда три человека говорят одновременно.",
+          "examples": [
+            {
+              "text": "I struggle to follow a discussion when three people speak at once.",
+              "translation_ru": "Мне трудно следить за обсуждением, когда три человека говорят одновременно."
+            },
+            {
+              "text": "The gardener struggled to loosen the roots without breaking the pot.",
+              "translation_ru": "Садовнику было трудно освободить корни, не разбив горшок."
+            },
+            {
+              "text": "Has she struggled to find quiet time since moving into the shared flat?",
+              "translation_ru": "Ей было трудно найти время в тишине после переезда в общую квартиру?"
+            },
+            {
+              "text": "We are struggling to reconcile the receipts with the total on the statement.",
+              "translation_ru": "Нам трудно сверить чеки с общей суммой в выписке."
+            },
+            {
+              "text": "You may struggle to carry that bookcase upstairs without removing the shelves.",
+              "translation_ru": "Тебе может быть трудно занести этот книжный шкаф наверх, не вынув полки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat Mühe, [zu + Infinitiv].",
+          "example": "Ich habe Mühe, einer Diskussion zu folgen, wenn drei Personen gleichzeitig sprechen.",
+          "translation": "Мне трудно следить за обсуждением, когда три человека говорят одновременно.",
+          "examples": [
+            {
+              "text": "Ich habe Mühe, einer Diskussion zu folgen, wenn drei Personen gleichzeitig sprechen.",
+              "translation_ru": "Мне трудно следить за обсуждением, когда три человека говорят одновременно."
+            },
+            {
+              "text": "Der Gärtner hatte Mühe, die Wurzeln zu lösen, ohne den Topf zu zerbrechen.",
+              "translation_ru": "Садовнику было трудно освободить корни, не разбив горшок."
+            },
+            {
+              "text": "Hat sie seit dem Einzug in die Wohngemeinschaft Mühe gehabt, ruhige Zeit für sich zu finden?",
+              "translation_ru": "Ей было трудно найти время в тишине после переезда в общую квартиру?"
+            },
+            {
+              "text": "Wir haben Mühe, die Belege mit der Gesamtsumme auf der Abrechnung abzugleichen.",
+              "translation_ru": "Нам трудно сверить чеки с общей суммой в выписке."
+            },
+            {
+              "text": "Du könntest Mühe haben, das Bücherregal nach oben zu tragen, ohne die Einlegeböden herauszunehmen.",
+              "translation_ru": "Тебе может быть трудно занести этот книжный шкаф наверх, не вынув полки."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] struggle(s) to [verb].",
+        "[Subjekt] hat Mühe, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB007",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Не мочь удержаться от …",
+      "title_en": "[Subject] cannot help [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите непроизвольную реакцию или труднопреодолимое побуждение. Английский глагол здесь не означает оказание помощи.",
+      "editorial_descriptions": {
+        "en": "Express an involuntary reaction or a strong impulse. Help is not about assisting someone here; the following action uses an -ing form.",
+        "ru": "Выразите непроизвольную реакцию или труднопреодолимое побуждение. Английский глагол здесь не означает оказание помощи."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] cannot help [verb-ing].",
+          "example": "I cannot help smiling when the dog proudly carries a leaf into the house.",
+          "translation": "Я не могу удержаться от улыбки, когда пёс гордо приносит в дом листок.",
+          "examples": [
+            {
+              "text": "I cannot help smiling when the dog proudly carries a leaf into the house.",
+              "translation_ru": "Я не могу удержаться от улыбки, когда пёс гордо приносит в дом листок."
+            },
+            {
+              "text": "She could not help wondering why the cheapest option had been left out.",
+              "translation_ru": "Она не могла не задуматься, почему самый дешёвый вариант не включили."
+            },
+            {
+              "text": "Can you help laughing when the actor forgets his own character's name?",
+              "translation_ru": "Ты можешь удержаться от смеха, когда актёр забывает имя собственного персонажа?"
+            },
+            {
+              "text": "We cannot help noticing how much quieter the street has become.",
+              "translation_ru": "Мы не можем не замечать, насколько тише стала улица."
+            },
+            {
+              "text": "He could not help feeling disappointed when the exhibition closed a day early.",
+              "translation_ru": "Он не мог не почувствовать разочарования, когда выставка закрылась на день раньше."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] kann nicht anders, als [zu + Infinitiv].",
+          "example": "Ich kann nicht anders, als zu lächeln, wenn der Hund stolz ein Blatt ins Haus trägt.",
+          "translation": "Я не могу удержаться от улыбки, когда пёс гордо приносит в дом листок.",
+          "examples": [
+            {
+              "text": "Ich kann nicht anders, als zu lächeln, wenn der Hund stolz ein Blatt ins Haus trägt.",
+              "translation_ru": "Я не могу удержаться от улыбки, когда пёс гордо приносит в дом листок."
+            },
+            {
+              "text": "Sie konnte nicht anders, als sich zu fragen, warum die günstigste Möglichkeit fehlte.",
+              "translation_ru": "Она не могла не задуматься, почему самый дешёвый вариант не включили."
+            },
+            {
+              "text": "Kannst du anders, als zu lachen, wenn der Schauspieler den Namen seiner eigenen Figur vergisst?",
+              "translation_ru": "Ты можешь удержаться от смеха, когда актёр забывает имя собственного персонажа?"
+            },
+            {
+              "text": "Wir können nicht anders, als zu bemerken, wie viel ruhiger die Straße geworden ist.",
+              "translation_ru": "Мы не можем не замечать, насколько тише стала улица."
+            },
+            {
+              "text": "Er konnte nicht anders, als enttäuscht zu sein, als die Ausstellung einen Tag früher schloss.",
+              "translation_ru": "Он не мог не почувствовать разочарования, когда выставка закрылась на день раньше."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] cannot help [verb-ing].",
+        "[Subjekt] kann nicht anders, als [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB008",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Рисковать тем, что …",
+      "title_en": "[Subject] risk(s) [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите нежелательный исход, который становится возможным из-за действия или бездействия. Английский глагол требует отглагольной формы, а не инфинитива.",
+      "editorial_descriptions": {
+        "en": "Name an unwanted outcome made possible by acting or failing to act. Risk takes an -ing form; it identifies a possibility, not a guaranteed result.",
+        "ru": "Назовите нежелательный исход, который становится возможным из-за действия или бездействия. Английский глагол требует отглагольной формы, а не инфинитива."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] risk(s) [verb-ing].",
+          "example": "We risk losing the original layout if we paste everything as plain text.",
+          "translation": "Мы рискуем потерять исходное оформление, если вставим всё как обычный текст.",
+          "examples": [
+            {
+              "text": "We risk losing the original layout if we paste everything as plain text.",
+              "translation_ru": "Мы рискуем потерять исходное оформление, если вставим всё как обычный текст."
+            },
+            {
+              "text": "She risked damaging the varnish by placing a hot mug directly on the table.",
+              "translation_ru": "Она рисковала повредить лак, поставив горячую кружку прямо на стол."
+            },
+            {
+              "text": "Would you risk missing the last bus for a few more photographs?",
+              "translation_ru": "Ты рискнул бы пропустить последний автобус ради ещё нескольких фотографий?"
+            },
+            {
+              "text": "The organiser did not want to risk disappointing visitors with an unfinished display.",
+              "translation_ru": "Организатор не хотел рисковать разочарованием посетителей из-за незаконченной экспозиции."
+            },
+            {
+              "text": "By skipping the test, they have risked sending incorrect labels to every branch.",
+              "translation_ru": "Пропустив проверку, они рискнули отправить неправильные этикетки во все филиалы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] riskiert, [zu + Infinitiv].",
+          "example": "Wir riskieren, das ursprüngliche Layout zu verlieren, wenn wir alles als reinen Text einfügen.",
+          "translation": "Мы рискуем потерять исходное оформление, если вставим всё как обычный текст.",
+          "examples": [
+            {
+              "text": "Wir riskieren, das ursprüngliche Layout zu verlieren, wenn wir alles als reinen Text einfügen.",
+              "translation_ru": "Мы рискуем потерять исходное оформление, если вставим всё как обычный текст."
+            },
+            {
+              "text": "Sie riskierte, den Lack zu beschädigen, indem sie einen heißen Becher direkt auf den Tisch stellte.",
+              "translation_ru": "Она рисковала повредить лак, поставив горячую кружку прямо на стол."
+            },
+            {
+              "text": "Würdest du riskieren, wegen ein paar weiterer Fotos den letzten Bus zu verpassen?",
+              "translation_ru": "Ты рискнул бы пропустить последний автобус ради ещё нескольких фотографий?"
+            },
+            {
+              "text": "Der Veranstalter wollte nicht riskieren, die Besucher mit einer unfertigen Ausstellung zu enttäuschen.",
+              "translation_ru": "Организатор не хотел рисковать разочарованием посетителей из-за незаконченной экспозиции."
+            },
+            {
+              "text": "Durch das Überspringen des Tests haben sie riskiert, falsche Etiketten an jede Filiale zu schicken.",
+              "translation_ru": "Пропустив проверку, они рискнули отправить неправильные этикетки во все филиалы."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] risk(s) [verb-ing].",
+        "[Subjekt] riskiert, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB009",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "Скучать по тому, как …",
+      "title_en": "[Subject] miss(es) [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите деятельность, которой не хватает после перемены обстоятельств. Это значение отличается от пропуска поезда, срока или события.",
+      "editorial_descriptions": {
+        "en": "Describe an activity someone longs for after circumstances change. This sense differs from failing to catch a train or attend an event.",
+        "ru": "Опишите деятельность, которой не хватает после перемены обстоятельств. Это значение отличается от пропуска поезда, срока или события."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] miss(es) [verb-ing].",
+          "example": "I miss browsing in the little bookshop that used to open late.",
+          "translation": "Мне не хватает прогулок по маленькому книжному магазину, который раньше работал допоздна.",
+          "examples": [
+            {
+              "text": "I miss browsing in the little bookshop that used to open late.",
+              "translation_ru": "Мне не хватает прогулок по маленькому книжному магазину, который раньше работал допоздна."
+            },
+            {
+              "text": "She missed cooking with her grandmother after moving abroad.",
+              "translation_ru": "После переезда за границу ей не хватало совместной готовки с бабушкой."
+            },
+            {
+              "text": "Do you miss cycling along the river now that you work from home?",
+              "translation_ru": "Тебе не хватает поездок на велосипеде вдоль реки теперь, когда ты работаешь из дома?"
+            },
+            {
+              "text": "We will miss hearing the orchestra rehearse through the open windows.",
+              "translation_ru": "Нам будет не хватать звуков репетиций оркестра из открытых окон."
+            },
+            {
+              "text": "He does not miss squeezing onto crowded buses every morning.",
+              "translation_ru": "Он не скучает по необходимости каждое утро протискиваться в переполненный автобус."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] vermisst es, [zu + Infinitiv].",
+          "example": "Ich vermisse es, in der kleinen Buchhandlung zu stöbern, die früher lange geöffnet hatte.",
+          "translation": "Мне не хватает прогулок по маленькому книжному магазину, который раньше работал допоздна.",
+          "examples": [
+            {
+              "text": "Ich vermisse es, in der kleinen Buchhandlung zu stöbern, die früher lange geöffnet hatte.",
+              "translation_ru": "Мне не хватает прогулок по маленькому книжному магазину, который раньше работал допоздна."
+            },
+            {
+              "text": "Sie vermisste es, mit ihrer Großmutter zu kochen, nachdem sie ins Ausland gezogen war.",
+              "translation_ru": "После переезда за границу ей не хватало совместной готовки с бабушкой."
+            },
+            {
+              "text": "Vermisst du es, am Fluss entlangzuradeln, seit du von zu Hause arbeitest?",
+              "translation_ru": "Тебе не хватает поездок на велосипеде вдоль реки теперь, когда ты работаешь из дома?"
+            },
+            {
+              "text": "Wir werden es vermissen, durch die offenen Fenster die Proben des Orchesters zu hören.",
+              "translation_ru": "Нам будет не хватать звуков репетиций оркестра из открытых окон."
+            },
+            {
+              "text": "Er vermisst es nicht, sich jeden Morgen in überfüllte Busse zu drängen.",
+              "translation_ru": "Он не скучает по необходимости каждое утро протискиваться в переполненный автобус."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] miss(es) [verb-ing].",
+        "[Subjekt] vermisst es, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVB010",
+      "set_id": "SVB",
+      "group_id": "SVB",
+      "title_ru": "С ужасом ждать необходимости …",
+      "title_en": "[Subject] dread(s) [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите сильное неприятное ожидание действия. В немецком этот оборот требует дательного падежа; речь идёт об ощущении, а не о доказанной опасности.",
+      "editorial_descriptions": {
+        "en": "Express strong apprehension about an anticipated action. German grauen takes a dative experiencer; the feeling is not evidence that the situation is objectively dangerous.",
+        "ru": "Выразите сильное неприятное ожидание действия. В немецком этот оборот требует дательного падежа; речь идёт об ощущении, а не о доказанной опасности."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] dread(s) [verb-ing].",
+          "example": "I dread sorting through the boxes that have followed us through three moves.",
+          "translation": "Мне страшно подумать о разборе коробок, которые переезжают с нами уже третий раз.",
+          "examples": [
+            {
+              "text": "I dread sorting through the boxes that have followed us through three moves.",
+              "translation_ru": "Мне страшно подумать о разборе коробок, которые переезжают с нами уже третий раз."
+            },
+            {
+              "text": "She dreaded telling the cast that the opening night had been postponed.",
+              "translation_ru": "Ей было тяжело даже думать о том, как сообщить актёрам о переносе премьеры."
+            },
+            {
+              "text": "Do you dread phoning customer support because you expect to repeat everything?",
+              "translation_ru": "Ты с ужасом ждёшь звонка в поддержку, потому что снова придётся всё повторять?"
+            },
+            {
+              "text": "He no longer dreads speaking first now that he prepares a simple opening.",
+              "translation_ru": "Он больше не боится начинать разговор первым, с тех пор как стал готовить простое вступление."
+            },
+            {
+              "text": "We had dreaded carrying the wardrobe upstairs, but the lift was finally repaired.",
+              "translation_ru": "Мы с ужасом представляли, как понесём шкаф наверх, но лифт наконец починили."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person im Dativ] graut davor, [zu + Infinitiv].",
+          "example": "Mir graut davor, die Kartons zu sortieren, die uns schon bei drei Umzügen begleitet haben.",
+          "translation": "Мне страшно подумать о разборе коробок, которые переезжают с нами уже третий раз.",
+          "examples": [
+            {
+              "text": "Mir graut davor, die Kartons zu sortieren, die uns schon bei drei Umzügen begleitet haben.",
+              "translation_ru": "Мне страшно подумать о разборе коробок, которые переезжают с нами уже третий раз."
+            },
+            {
+              "text": "Ihr graute davor, dem Ensemble mitzuteilen, dass die Premiere verschoben worden war.",
+              "translation_ru": "Ей было тяжело даже думать о том, как сообщить актёрам о переносе премьеры."
+            },
+            {
+              "text": "Graut dir davor, beim Kundendienst anzurufen, weil du erwartest, alles wiederholen zu müssen?",
+              "translation_ru": "Ты с ужасом ждёшь звонка в поддержку, потому что снова придётся всё повторять?"
+            },
+            {
+              "text": "Ihm graut nicht mehr davor, als Erster zu sprechen, seit er einen einfachen Einstieg vorbereitet.",
+              "translation_ru": "Он больше не боится начинать разговор первым, с тех пор как стал готовить простое вступление."
+            },
+            {
+              "text": "Uns hatte davor gegraut, den Kleiderschrank nach oben zu tragen, doch der Aufzug wurde endlich repariert.",
+              "translation_ru": "Мы с ужасом представляли, как понесём шкаф наверх, но лифт наконец починили."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] dread(s) [verb-ing].",
+        "[Person im Dativ] graut davor, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

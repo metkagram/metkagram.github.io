@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SQA",
+  "patterns": [
+    {
+      "id": "SQA001",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Когда … в последний раз …?",
+      "title_en": "When was the last time [subject] [past-tense action]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о последнем конкретном случае, а не об общей частоте. В английском после оборота сохраняется прямой порядок слов и прошедшее время.",
+      "editorial_descriptions": {
+        "en": "Ask for the most recent occasion, not a general frequency. The clause after the time expression has statement word order and a past-tense verb.",
+        "ru": "Спросите о последнем конкретном случае, а не об общей частоте. В английском после оборота сохраняется прямой порядок слов и прошедшее время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "When was the last time [subject] [past-tense action]?",
+          "example": "When was the last time you negotiated a better rate with your internet provider?",
+          "translation": "Когда ты в последний раз договаривался с интернет-провайдером о более выгодном тарифе?",
+          "examples": [
+            {
+              "text": "When was the last time you negotiated a better rate with your internet provider?",
+              "translation_ru": "Когда ты в последний раз договаривался с интернет-провайдером о более выгодном тарифе?"
+            },
+            {
+              "text": "When was the last time the neighbours cleared the leaves from the shared courtyard?",
+              "translation_ru": "Когда соседи в последний раз убирали листья в общем дворе?"
+            },
+            {
+              "text": "When was the last time she gave a presentation without reading her notes?",
+              "translation_ru": "Когда она в последний раз выступала с презентацией, не читая по записям?"
+            },
+            {
+              "text": "When was the last time we checked whether the spare key still worked?",
+              "translation_ru": "Когда мы в последний раз проверяли, подходит ли ещё запасной ключ?"
+            },
+            {
+              "text": "When was the last time your brother took a proper break between projects?",
+              "translation_ru": "Когда твой брат в последний раз как следует отдыхал между проектами?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wann hat/ist [Subjekt] zuletzt [Partizip II]?",
+          "example": "Wann hast du zuletzt mit deinem Internetanbieter einen günstigeren Tarif ausgehandelt?",
+          "translation": "Когда ты в последний раз договаривался с интернет-провайдером о более выгодном тарифе?",
+          "examples": [
+            {
+              "text": "Wann hast du zuletzt mit deinem Internetanbieter einen günstigeren Tarif ausgehandelt?",
+              "translation_ru": "Когда ты в последний раз договаривался с интернет-провайдером о более выгодном тарифе?"
+            },
+            {
+              "text": "Wann haben die Nachbarn zuletzt das Laub aus dem gemeinsamen Innenhof entfernt?",
+              "translation_ru": "Когда соседи в последний раз убирали листья в общем дворе?"
+            },
+            {
+              "text": "Wann hat sie zuletzt einen Vortrag gehalten, ohne ihre Notizen abzulesen?",
+              "translation_ru": "Когда она в последний раз выступала с презентацией, не читая по записям?"
+            },
+            {
+              "text": "Wann haben wir zuletzt geprüft, ob der Ersatzschlüssel noch funktioniert?",
+              "translation_ru": "Когда мы в последний раз проверяли, подходит ли ещё запасной ключ?"
+            },
+            {
+              "text": "Wann hat dein Bruder zuletzt zwischen zwei Projekten eine richtige Pause gemacht?",
+              "translation_ru": "Когда твой брат в последний раз как следует отдыхал между проектами?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "When was the last time [subject] [past-tense action]?",
+        "Wann hat/ist [Subjekt] zuletzt [Partizip II]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA002",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Сколько раз … уже …?",
+      "title_en": "How many times have/has [subject] [past participle] so far?",
+      "level": "B2–C1",
+      "metaphor_ru": "Подсчитайте повторения к настоящему моменту. Период ещё не закончен, поэтому английский связывает прошлые случаи с настоящим.",
+      "editorial_descriptions": {
+        "en": "Count repeated events within a period that is still open. Present perfect connects those occasions to the present; so far makes the boundary explicit.",
+        "ru": "Подсчитайте повторения к настоящему моменту. Период ещё не закончен, поэтому английский связывает прошлые случаи с настоящим."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How many times have/has [subject] [past participle] so far?",
+          "example": "How many times have you revised the opening paragraph so far?",
+          "translation": "Сколько раз ты уже перерабатывал первый абзац?",
+          "examples": [
+            {
+              "text": "How many times have you revised the opening paragraph so far?",
+              "translation_ru": "Сколько раз ты уже перерабатывал первый абзац?"
+            },
+            {
+              "text": "How many times has the delivery company rescheduled your parcel so far?",
+              "translation_ru": "Сколько раз служба доставки уже переносила доставку твоей посылки?"
+            },
+            {
+              "text": "How many times have the volunteers tested the emergency radio so far?",
+              "translation_ru": "Сколько раз волонтёры уже проверяли аварийную рацию?"
+            },
+            {
+              "text": "How many times has this recipe gone wrong so far?",
+              "translation_ru": "Сколько раз блюдо по этому рецепту уже не получалось?"
+            },
+            {
+              "text": "How many times have we had to restart the application so far?",
+              "translation_ru": "Сколько раз нам уже приходилось перезапускать приложение?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie oft hat/ist [Subjekt] bisher [Partizip II]?",
+          "example": "Wie oft hast du den Einleitungsabsatz bisher überarbeitet?",
+          "translation": "Сколько раз ты уже перерабатывал первый абзац?",
+          "examples": [
+            {
+              "text": "Wie oft hast du den Einleitungsabsatz bisher überarbeitet?",
+              "translation_ru": "Сколько раз ты уже перерабатывал первый абзац?"
+            },
+            {
+              "text": "Wie oft hat der Paketdienst die Zustellung deines Pakets bisher verschoben?",
+              "translation_ru": "Сколько раз служба доставки уже переносила доставку твоей посылки?"
+            },
+            {
+              "text": "Wie oft haben die Freiwilligen das Notfunkgerät bisher getestet?",
+              "translation_ru": "Сколько раз волонтёры уже проверяли аварийную рацию?"
+            },
+            {
+              "text": "Wie oft ist dieses Rezept bisher misslungen?",
+              "translation_ru": "Сколько раз блюдо по этому рецепту уже не получалось?"
+            },
+            {
+              "text": "Wie oft haben wir die Anwendung bisher neu starten müssen?",
+              "translation_ru": "Сколько раз нам уже приходилось перезапускать приложение?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How many times have/has [subject] [past participle] so far?",
+        "Wie oft hat/ist [Subjekt] bisher [Partizip II]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA003",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Чем … занимается с тех пор, как …?",
+      "title_en": "What have/has [subject] been [verb-ing] since [starting event]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о содержании продолжающейся деятельности. В немецком её длительность обычно передаётся настоящим временем и придаточным с начальной точкой.",
+      "editorial_descriptions": {
+        "en": "Ask what an ongoing activity consists of, rather than how long it has lasted. German normally uses a present-tense main clause and a clause naming the starting point.",
+        "ru": "Спросите о содержании продолжающейся деятельности. В немецком её длительность обычно передаётся настоящим временем и придаточным с начальной точкой."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What have/has [subject] been [verb-ing] since [starting event]?",
+          "example": "What have you been working on since the training course ended?",
+          "translation": "Над чем ты работаешь с тех пор, как закончился курс повышения квалификации?",
+          "examples": [
+            {
+              "text": "What have you been working on since the training course ended?",
+              "translation_ru": "Над чем ты работаешь с тех пор, как закончился курс повышения квалификации?"
+            },
+            {
+              "text": "What has the rescue team been searching for since the signal disappeared?",
+              "translation_ru": "Что ищет спасательная группа с тех пор, как пропал сигнал?"
+            },
+            {
+              "text": "What have your parents been growing since they rented the allotment?",
+              "translation_ru": "Что выращивают твои родители с тех пор, как арендовали садовый участок?"
+            },
+            {
+              "text": "What has she been reading since she joined the book club?",
+              "translation_ru": "Что она читает с тех пор, как вступила в книжный клуб?"
+            },
+            {
+              "text": "What have we been overlooking since the complaints started?",
+              "translation_ru": "Что мы упускаем из виду с тех пор, как начали поступать жалобы?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was [Verb] [Subjekt], seit [Ausgangsereignis]?",
+          "example": "Woran arbeitest du, seit der Weiterbildungskurs zu Ende ist?",
+          "translation": "Над чем ты работаешь с тех пор, как закончился курс повышения квалификации?",
+          "examples": [
+            {
+              "text": "Woran arbeitest du, seit der Weiterbildungskurs zu Ende ist?",
+              "translation_ru": "Над чем ты работаешь с тех пор, как закончился курс повышения квалификации?"
+            },
+            {
+              "text": "Wonach sucht das Rettungsteam, seit das Signal verschwunden ist?",
+              "translation_ru": "Что ищет спасательная группа с тех пор, как пропал сигнал?"
+            },
+            {
+              "text": "Was bauen deine Eltern an, seit sie den Kleingarten gepachtet haben?",
+              "translation_ru": "Что выращивают твои родители с тех пор, как арендовали садовый участок?"
+            },
+            {
+              "text": "Was liest sie, seit sie dem Buchclub beigetreten ist?",
+              "translation_ru": "Что она читает с тех пор, как вступила в книжный клуб?"
+            },
+            {
+              "text": "Was übersehen wir, seit die ersten Beschwerden eingegangen sind?",
+              "translation_ru": "Что мы упускаем из виду с тех пор, как начали поступать жалобы?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What have/has [subject] been [verb-ing] since [starting event]?",
+        "Was [Verb] [Subjekt], seit [Ausgangsereignis]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA004",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Какие … ещё никогда не …?",
+      "title_en": "Which [plural noun] have/has [subject] never [past participle] before?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выделите отсутствующий опыт внутри понятной группы вариантов. Отрицание относится к опыту до настоящего момента, а не к одному завершённому периоду.",
+      "editorial_descriptions": {
+        "en": "Identify gaps in someone's experience within a known category. Never refers to experience up to now, not to one finished past period.",
+        "ru": "Выделите отсутствующий опыт внутри понятной группы вариантов. Отрицание относится к опыту до настоящего момента, а не к одному завершённому периоду."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Which [plural noun] have/has [subject] never [past participle] before?",
+          "example": "Which ingredients have you never cooked with before?",
+          "translation": "С какими ингредиентами ты ещё никогда не готовил?",
+          "examples": [
+            {
+              "text": "Which ingredients have you never cooked with before?",
+              "translation_ru": "С какими ингредиентами ты ещё никогда не готовил?"
+            },
+            {
+              "text": "Which types of complaint has the support team never dealt with before?",
+              "translation_ru": "С какими видами жалоб служба поддержки ещё никогда не работала?"
+            },
+            {
+              "text": "Which hiking routes have they never attempted before?",
+              "translation_ru": "Какие пешие маршруты они ещё никогда не пробовали пройти?"
+            },
+            {
+              "text": "Which musical instruments has your daughter never heard live before?",
+              "translation_ru": "Какие музыкальные инструменты твоя дочь ещё никогда не слышала вживую?"
+            },
+            {
+              "text": "Which household responsibilities have we never shared before?",
+              "translation_ru": "Какие домашние обязанности мы ещё никогда не делили между собой?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Welche [Pluralnomen] hat/ist [Subjekt] noch nie [Partizip II]?",
+          "example": "Mit welchen Zutaten hast du noch nie gekocht?",
+          "translation": "С какими ингредиентами ты ещё никогда не готовил?",
+          "examples": [
+            {
+              "text": "Mit welchen Zutaten hast du noch nie gekocht?",
+              "translation_ru": "С какими ингредиентами ты ещё никогда не готовил?"
+            },
+            {
+              "text": "Welche Arten von Beschwerden hat das Supportteam noch nie bearbeitet?",
+              "translation_ru": "С какими видами жалоб служба поддержки ещё никогда не работала?"
+            },
+            {
+              "text": "Welche Wanderrouten haben sie noch nie ausprobiert?",
+              "translation_ru": "Какие пешие маршруты они ещё никогда не пробовали пройти?"
+            },
+            {
+              "text": "Welche Musikinstrumente hat deine Tochter noch nie live gehört?",
+              "translation_ru": "Какие музыкальные инструменты твоя дочь ещё никогда не слышала вживую?"
+            },
+            {
+              "text": "Welche Aufgaben im Haushalt haben wir uns noch nie geteilt?",
+              "translation_ru": "Какие домашние обязанности мы ещё никогда не делили между собой?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Which [plural noun] have/has [subject] never [past participle] before?",
+        "Welche [Pluralnomen] hat/ist [Subjekt] noch nie [Partizip II]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA005",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Как долго … уже … до того, как …?",
+      "title_en": "How long had [subject] been [verb-ing] before [past event]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните длительность процесса до другого события в прошлом. Немецкий не копирует длительную форму: длительность задаётся вопросом и контекстом.",
+      "editorial_descriptions": {
+        "en": "Ask about the duration of an activity before a later past event. German has no matching continuous form; the question and context carry the duration.",
+        "ru": "Уточните длительность процесса до другого события в прошлом. Немецкий не копирует длительную форму: длительность задаётся вопросом и контекстом."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How long had [subject] been [verb-ing] before [past event]?",
+          "example": "How long had you been saving before you could afford the deposit?",
+          "translation": "Как долго ты копил, прежде чем смог внести первоначальный взнос?",
+          "examples": [
+            {
+              "text": "How long had you been saving before you could afford the deposit?",
+              "translation_ru": "Как долго ты копил, прежде чем смог внести первоначальный взнос?"
+            },
+            {
+              "text": "How long had the mechanic been looking for the fault before the warning light came on again?",
+              "translation_ru": "Как долго механик искал неисправность до того, как снова загорелся предупреждающий индикатор?"
+            },
+            {
+              "text": "How long had they been rehearsing before they performed in public?",
+              "translation_ru": "Как долго они репетировали до выступления перед публикой?"
+            },
+            {
+              "text": "How long had she been commuting before she found a remote position?",
+              "translation_ru": "Как долго она ездила на работу, прежде чем нашла удалённую должность?"
+            },
+            {
+              "text": "How long had the dog been scratching at the door before anyone heard him?",
+              "translation_ru": "Как долго пёс скрёбся в дверь, прежде чем его кто-то услышал?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie lange hatte [Subjekt] schon [Partizip II], bevor [Ereignis]?",
+          "example": "Wie lange hattest du schon gespart, bevor du dir die Anzahlung leisten konntest?",
+          "translation": "Как долго ты копил, прежде чем смог внести первоначальный взнос?",
+          "examples": [
+            {
+              "text": "Wie lange hattest du schon gespart, bevor du dir die Anzahlung leisten konntest?",
+              "translation_ru": "Как долго ты копил, прежде чем смог внести первоначальный взнос?"
+            },
+            {
+              "text": "Wie lange hatte der Mechaniker schon nach dem Fehler gesucht, bevor die Warnleuchte wieder anging?",
+              "translation_ru": "Как долго механик искал неисправность до того, как снова загорелся предупреждающий индикатор?"
+            },
+            {
+              "text": "Wie lange hatten sie schon geprobt, bevor sie öffentlich auftraten?",
+              "translation_ru": "Как долго они репетировали до выступления перед публикой?"
+            },
+            {
+              "text": "Wie lange war sie schon gependelt, bevor sie eine Stelle im Homeoffice fand?",
+              "translation_ru": "Как долго она ездила на работу, прежде чем нашла удалённую должность?"
+            },
+            {
+              "text": "Wie lange hatte der Hund schon an der Tür gekratzt, bevor ihn jemand hörte?",
+              "translation_ru": "Как долго пёс скрёбся в дверь, прежде чем его кто-то услышал?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How long had [subject] been [verb-ing] before [past event]?",
+        "Wie lange hatte [Subjekt] schon [Partizip II], bevor [Ereignis]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA006",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Что … делал в тот момент, когда …?",
+      "title_en": "What was/were [subject] [verb-ing] when [past event]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выясните, какое действие было в процессе в момент события. Немецкое наречие со значением «как раз» помогает передать этот фон.",
+      "editorial_descriptions": {
+        "en": "Ask which activity was in progress when another event occurred. German often uses gerade to make the ongoing background explicit.",
+        "ru": "Выясните, какое действие было в процессе в момент события. Немецкое наречие со значением «как раз» помогает передать этот фон."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What was/were [subject] [verb-ing] when [past event]?",
+          "example": "What were you doing when the power suddenly went out?",
+          "translation": "Что ты делал, когда внезапно отключилось электричество?",
+          "examples": [
+            {
+              "text": "What were you doing when the power suddenly went out?",
+              "translation_ru": "Что ты делал, когда внезапно отключилось электричество?"
+            },
+            {
+              "text": "What was the photographer adjusting when the bird flew away?",
+              "translation_ru": "Что фотограф настраивала, когда птица улетела?"
+            },
+            {
+              "text": "What were the children building when you found them in the garage?",
+              "translation_ru": "Что строили дети, когда ты нашёл их в гараже?"
+            },
+            {
+              "text": "What was he explaining when the interpreter asked him to pause?",
+              "translation_ru": "Что он объяснял, когда переводчица попросила его сделать паузу?"
+            },
+            {
+              "text": "What were we discussing when the fire alarm interrupted the call?",
+              "translation_ru": "Что мы обсуждали, когда пожарная сигнализация прервала разговор?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hat [Subjekt] gerade [Partizip II], als [Ereignis]?",
+          "example": "Was hast du gerade gemacht, als plötzlich der Strom ausfiel?",
+          "translation": "Что ты делал, когда внезапно отключилось электричество?",
+          "examples": [
+            {
+              "text": "Was hast du gerade gemacht, als plötzlich der Strom ausfiel?",
+              "translation_ru": "Что ты делал, когда внезапно отключилось электричество?"
+            },
+            {
+              "text": "Was hat die Fotografin gerade eingestellt, als der Vogel wegflog?",
+              "translation_ru": "Что фотограф настраивала, когда птица улетела?"
+            },
+            {
+              "text": "Was haben die Kinder gerade gebaut, als du sie in der Garage gefunden hast?",
+              "translation_ru": "Что строили дети, когда ты нашёл их в гараже?"
+            },
+            {
+              "text": "Was hat er gerade erklärt, als die Dolmetscherin ihn um eine Pause bat?",
+              "translation_ru": "Что он объяснял, когда переводчица попросила его сделать паузу?"
+            },
+            {
+              "text": "Was haben wir gerade besprochen, als der Feueralarm unser Gespräch unterbrach?",
+              "translation_ru": "Что мы обсуждали, когда пожарная сигнализация прервала разговор?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What was/were [subject] [verb-ing] when [past event]?",
+        "Was hat [Subjekt] gerade [Partizip II], als [Ereignis]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA007",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Как скоро … сможет … после того, как …?",
+      "title_en": "How soon can [subject] [verb] once [condition is met]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о минимальном сроке после выполнения условия. В английской части с условием о будущем используется настоящее время.",
+      "editorial_descriptions": {
+        "en": "Ask for the earliest possible action after a condition is met. The future-oriented once-clause normally uses a present form, not will.",
+        "ru": "Спросите о минимальном сроке после выполнения условия. В английской части с условием о будущем используется настоящее время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How soon can [subject] [verb] once [condition is met]?",
+          "example": "How soon can we move in once the landlord has replaced the boiler?",
+          "translation": "Как скоро мы сможем въехать после того, как хозяин заменит котёл?",
+          "examples": [
+            {
+              "text": "How soon can we move in once the landlord has replaced the boiler?",
+              "translation_ru": "Как скоро мы сможем въехать после того, как хозяин заменит котёл?"
+            },
+            {
+              "text": "How soon can you send the corrected invoice once the address is confirmed?",
+              "translation_ru": "Как скоро ты сможешь отправить исправленный счёт после подтверждения адреса?"
+            },
+            {
+              "text": "How soon can the bakery reopen once the inspection is over?",
+              "translation_ru": "Как скоро пекарня сможет снова открыться после завершения проверки?"
+            },
+            {
+              "text": "How soon can she start practising once the instrument arrives?",
+              "translation_ru": "Как скоро она сможет начать заниматься после доставки инструмента?"
+            },
+            {
+              "text": "How soon can the volunteers distribute the supplies once the road is clear?",
+              "translation_ru": "Как скоро волонтёры смогут раздать припасы после расчистки дороги?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie schnell kann [Subjekt] [Infinitiv], sobald [Bedingung erfüllt ist]?",
+          "example": "Wie schnell können wir einziehen, sobald der Vermieter die Heizungsanlage ausgetauscht hat?",
+          "translation": "Как скоро мы сможем въехать после того, как хозяин заменит котёл?",
+          "examples": [
+            {
+              "text": "Wie schnell können wir einziehen, sobald der Vermieter die Heizungsanlage ausgetauscht hat?",
+              "translation_ru": "Как скоро мы сможем въехать после того, как хозяин заменит котёл?"
+            },
+            {
+              "text": "Wie schnell kannst du die korrigierte Rechnung schicken, sobald die Adresse bestätigt ist?",
+              "translation_ru": "Как скоро ты сможешь отправить исправленный счёт после подтверждения адреса?"
+            },
+            {
+              "text": "Wie schnell kann die Bäckerei wieder öffnen, sobald die Kontrolle abgeschlossen ist?",
+              "translation_ru": "Как скоро пекарня сможет снова открыться после завершения проверки?"
+            },
+            {
+              "text": "Wie schnell kann sie mit dem Üben anfangen, sobald das Instrument angekommen ist?",
+              "translation_ru": "Как скоро она сможет начать заниматься после доставки инструмента?"
+            },
+            {
+              "text": "Wie schnell können die Freiwilligen die Hilfsgüter verteilen, sobald die Straße frei ist?",
+              "translation_ru": "Как скоро волонтёры смогут раздать припасы после расчистки дороги?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How soon can [subject] [verb] once [condition is met]?",
+        "Wie schnell kann [Subjekt] [Infinitiv], sobald [Bedingung erfüllt ist]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA008",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "К какому времени … уже завершит …?",
+      "title_en": "By what time will [subject] have [past participle]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните границу, к которой действие будет завершено. Это не вопрос о времени начала; немецкая форма будущего завершённого здесь тоже выражает результат к сроку.",
+      "editorial_descriptions": {
+        "en": "Ask for the boundary by which an action will be complete, not when it will begin. German future perfect also marks completion here, though simpler forms are often possible in conversation.",
+        "ru": "Уточните границу, к которой действие будет завершено. Это не вопрос о времени начала; немецкая форма будущего завершённого здесь тоже выражает результат к сроку."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "By what time will [subject] have [past participle]?",
+          "example": "By what time will the movers have packed the fragile items in the display cabinet?",
+          "translation": "К какому времени грузчики упакуют хрупкие вещи из витрины?",
+          "examples": [
+            {
+              "text": "By what time will the movers have packed the fragile items in the display cabinet?",
+              "translation_ru": "К какому времени грузчики упакуют хрупкие вещи из витрины?"
+            },
+            {
+              "text": "By what time will you have proofread the entire application?",
+              "translation_ru": "К какому времени ты вычитаешь всю заявку?"
+            },
+            {
+              "text": "By what time will the storm have passed far enough for the ferries to resume?",
+              "translation_ru": "К какому времени буря отступит настолько, что паромы смогут снова ходить?"
+            },
+            {
+              "text": "By what time will the technicians have restored access to the shared drive?",
+              "translation_ru": "К какому времени техники восстановят доступ к общему диску?"
+            },
+            {
+              "text": "By what time will she have collected all the signatures needed to submit the application?",
+              "translation_ru": "К какому времени она соберёт все подписи, необходимые для подачи заявки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Bis wann wird [Subjekt] [Partizip II] haben/sein?",
+          "example": "Bis wann werden die Umzugshelfer die zerbrechlichen Gegenstände in der Vitrine eingepackt haben?",
+          "translation": "К какому времени грузчики упакуют хрупкие вещи из витрины?",
+          "examples": [
+            {
+              "text": "Bis wann werden die Umzugshelfer die zerbrechlichen Gegenstände in der Vitrine eingepackt haben?",
+              "translation_ru": "К какому времени грузчики упакуют хрупкие вещи из витрины?"
+            },
+            {
+              "text": "Bis wann wirst du die gesamte Bewerbung Korrektur gelesen haben?",
+              "translation_ru": "К какому времени ты вычитаешь всю заявку?"
+            },
+            {
+              "text": "Bis wann wird das Unwetter so weit abgezogen sein, dass die Fähren wieder fahren können?",
+              "translation_ru": "К какому времени буря отступит настолько, что паромы смогут снова ходить?"
+            },
+            {
+              "text": "Bis wann werden die Techniker den Zugriff auf das gemeinsame Laufwerk wiederhergestellt haben?",
+              "translation_ru": "К какому времени техники восстановят доступ к общему диску?"
+            },
+            {
+              "text": "Bis wann wird sie alle Unterschriften gesammelt haben, die für die Einreichung des Antrags nötig sind?",
+              "translation_ru": "К какому времени она соберёт все подписи, необходимые для подачи заявки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "By what time will [subject] have [past participle]?",
+        "Bis wann wird [Subjekt] [Partizip II] haben/sein?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA009",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Как часто … раньше …?",
+      "title_en": "How often did [subject] use to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о частоте привычки, которая относится к прошлому. После вспомогательного глагола прошедшего времени в английском используется базовая форма оборота.",
+      "editorial_descriptions": {
+        "en": "Ask about the frequency of a past habit. After did, write use to rather than used to. German expresses the former habit with früher and a past form.",
+        "ru": "Спросите о частоте привычки, которая относится к прошлому. После вспомогательного глагола прошедшего времени в английском используется базовая форма оборота."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How often did [subject] use to [verb]?",
+          "example": "How often did you use to borrow books from the neighbourhood library?",
+          "translation": "Как часто ты раньше брал книги в районной библиотеке?",
+          "examples": [
+            {
+              "text": "How often did you use to borrow books from the neighbourhood library?",
+              "translation_ru": "Как часто ты раньше брал книги в районной библиотеке?"
+            },
+            {
+              "text": "How often did your grandfather use to repair things instead of replacing them?",
+              "translation_ru": "Как часто твой дедушка раньше чинил вещи вместо того, чтобы покупать новые?"
+            },
+            {
+              "text": "How often did the club use to organise open-air screenings?",
+              "translation_ru": "Как часто клуб раньше устраивал кинопоказы под открытым небом?"
+            },
+            {
+              "text": "How often did she use to travel overnight for work?",
+              "translation_ru": "Как часто она раньше ездила по работе ночными рейсами?"
+            },
+            {
+              "text": "How often did we use to back up the photographs before switching phones?",
+              "translation_ru": "Как часто мы раньше делали резервные копии фотографий до смены телефонов?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie oft hat/ist [Subjekt] früher [Partizip II]?",
+          "example": "Wie oft hast du früher Bücher aus der Stadtteilbibliothek ausgeliehen?",
+          "translation": "Как часто ты раньше брал книги в районной библиотеке?",
+          "examples": [
+            {
+              "text": "Wie oft hast du früher Bücher aus der Stadtteilbibliothek ausgeliehen?",
+              "translation_ru": "Как часто ты раньше брал книги в районной библиотеке?"
+            },
+            {
+              "text": "Wie oft hat dein Großvater früher Dinge repariert, statt sie zu ersetzen?",
+              "translation_ru": "Как часто твой дедушка раньше чинил вещи вместо того, чтобы покупать новые?"
+            },
+            {
+              "text": "Wie oft hat der Verein früher Filmvorführungen unter freiem Himmel veranstaltet?",
+              "translation_ru": "Как часто клуб раньше устраивал кинопоказы под открытым небом?"
+            },
+            {
+              "text": "Wie oft ist sie früher beruflich über Nacht gereist?",
+              "translation_ru": "Как часто она раньше ездила по работе ночными рейсами?"
+            },
+            {
+              "text": "Wie oft haben wir früher Sicherungskopien der Fotos erstellt, bevor wir die Handys gewechselt haben?",
+              "translation_ru": "Как часто мы раньше делали резервные копии фотографий до смены телефонов?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How often did [subject] use to [verb]?",
+        "Wie oft hat/ist [Subjekt] früher [Partizip II]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQA010",
+      "set_id": "SQA",
+      "group_id": "SQA",
+      "title_ru": "Что … собирается делать с …?",
+      "title_en": "What is/are [subject] going to do about [problem]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о намерении разобраться с конкретной ситуацией. Предлог вводит проблему, на которую человек собирается повлиять, а не тему разговора вообще.",
+      "editorial_descriptions": {
+        "en": "Ask for an intended response to a specific problem. About introduces the situation that needs action, not merely a topic for discussion.",
+        "ru": "Спросите о намерении разобраться с конкретной ситуацией. Предлог вводит проблему, на которую человек собирается повлиять, а не тему разговора вообще."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What is/are [subject] going to do about [problem]?",
+          "example": "What are you going to do about the recurring leak under the sink?",
+          "translation": "Что ты собираешься делать с постоянно возникающей течью под раковиной?",
+          "examples": [
+            {
+              "text": "What are you going to do about the recurring leak under the sink?",
+              "translation_ru": "Что ты собираешься делать с постоянно возникающей течью под раковиной?"
+            },
+            {
+              "text": "What is the organiser going to do about the shortage of seats?",
+              "translation_ru": "Что организатор собирается делать с нехваткой мест?"
+            },
+            {
+              "text": "What are we going to do about the duplicate customer records?",
+              "translation_ru": "Что мы собираемся делать с дублирующимися записями клиентов?"
+            },
+            {
+              "text": "What is she going to do about the noise from the upstairs flat?",
+              "translation_ru": "Что она собирается делать с шумом из квартиры сверху?"
+            },
+            {
+              "text": "What are the gardeners going to do about the damaged young trees?",
+              "translation_ru": "Что садовники собираются делать с повреждёнными молодыми деревьями?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was wird [Subjekt] wegen [Problem] unternehmen?",
+          "example": "Was wirst du wegen des immer wieder auftretenden Lecks unter der Spüle unternehmen?",
+          "translation": "Что ты собираешься делать с постоянно возникающей течью под раковиной?",
+          "examples": [
+            {
+              "text": "Was wirst du wegen des immer wieder auftretenden Lecks unter der Spüle unternehmen?",
+              "translation_ru": "Что ты собираешься делать с постоянно возникающей течью под раковиной?"
+            },
+            {
+              "text": "Was wird der Veranstalter wegen der fehlenden Sitzplätze unternehmen?",
+              "translation_ru": "Что организатор собирается делать с нехваткой мест?"
+            },
+            {
+              "text": "Was werden wir wegen der doppelten Kundendatensätze unternehmen?",
+              "translation_ru": "Что мы собираемся делать с дублирующимися записями клиентов?"
+            },
+            {
+              "text": "Was wird sie wegen des Lärms aus der Wohnung über ihr unternehmen?",
+              "translation_ru": "Что она собирается делать с шумом из квартиры сверху?"
+            },
+            {
+              "text": "Was werden die Gärtner wegen der beschädigten Jungbäume unternehmen?",
+              "translation_ru": "Что садовники собираются делать с повреждёнными молодыми деревьями?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What is/are [subject] going to do about [problem]?",
+        "Was wird [Subjekt] wegen [Problem] unternehmen?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

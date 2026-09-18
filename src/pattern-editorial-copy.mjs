@@ -326,6 +326,8 @@ export function patternFrameTitleRu(pattern) {
 }
 
 export function patternFrameDescription(pattern, set = null) {
+  const authored = compact(pattern?.editorial_descriptions?.ru || "");
+  if (authored) return authored;
   const use = editorialUse(pattern);
   if (use) return use.ru;
 
@@ -339,6 +341,8 @@ export function patternFrameDescription(pattern, set = null) {
 }
 
 export function patternFrameDescriptionEn(pattern, set = null) {
+  const authored = compact(pattern?.editorial_descriptions?.en || "");
+  if (authored) return authored;
   const use = editorialUse(pattern);
   if (use) return use.en;
 
