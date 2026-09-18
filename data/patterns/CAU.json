@@ -6,96 +6,99 @@
       "id": "C1CAU001",
       "group_id": "CAU",
       "set_id": "CAU",
-      "title_ru": "Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать» в контексте заявка на финансирование.",
+      "title_ru": "Поскольку [X], [Y], из-за чего [Z]",
+      "metaphor_ru": "Стройте причинную цепочку через промежуточное событие, а не перескакивайте сразу от причины к далёкому последствию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Because [a funding proposal] was overlooked, the consequences became harder to manage.",
-          "example": "Because a funding proposal was overlooked, the consequences became harder to manage.",
-          "translation": "Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать.",
+          "formula": "Because [X], [Y], which meant that [Z].",
+          "example": "Because the dependency was missing from the migration inventory, the interface was never tested in the new environment, which meant that the first production run failed.",
+          "translation": "Поскольку зависимость отсутствовала в перечне миграции, интерфейс так и не протестировали в новой среде, из-за чего первый продуктивный запуск завершился неудачно.",
           "examples": [
             {
-              "text": "**Because a funding proposal was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the dependency was missing from the migration inventory, the interface was never tested in the new environment, which meant that the first production run failed.**",
+              "translation_ru": "Поскольку зависимость отсутствовала в перечне миграции, интерфейс так и не протестировали в новой среде, из-за чего первый продуктивный запуск завершился неудачно."
             },
             {
-              "text": "**Because a delayed product launch was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку задерженный запуск продукта упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because last winter’s flood data had been excluded, the threshold was set too high, which meant that residents received the warning later than intended.**",
+              "translation_ru": "Поскольку данные о прошлогоднем зимнем наводнении исключили, порог установили слишком высоким, из-за чего жители получили предупреждение позже запланированного."
             },
             {
-              "text": "**Because the team’s research findings was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку результаты исследования команды упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the contract did not define response times for third-party failures, both vendors disputed ownership, which meant that the outage remained unresolved for hours.**",
+              "translation_ru": "Поскольку контракт не определял сроки реакции на сбои третьих сторон, оба поставщика спорили об ответственности, из-за чего проблема оставалась нерешённой несколько часов."
             },
             {
-              "text": "**Because a customer complaint was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку жалоба клиента упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the alert threshold had gradually been raised, small anomalies stopped triggering notifications, which meant that the team missed the early signs of degradation.**",
+              "translation_ru": "Поскольку порог оповещения постепенно повышали, небольшие аномалии перестали вызывать уведомления, из-за чего команда пропустила ранние признаки ухудшения."
             },
             {
-              "text": "**Because a public-transport plan was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку план общественного транспорта упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the new hires had practised only ideal cases, unusual customer requests slowed them down, which meant that senior staff were pulled back into routine support.**",
+              "translation_ru": "Поскольку новые сотрудники тренировались только на идеальных случаях, необычные запросы клиентов замедляли их работу, из-за чего опытных специалистов снова пришлось подключать к обычной поддержке."
             },
             {
-              "text": "**Because a difficult staffing decision was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку сложное кадровое решение упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the booking system released cancelled slots only once a day, appointments appeared unavailable for hours, which meant that patients kept calling the reception desk.**",
+              "translation_ru": "Поскольку система записи освобождала отменённые слоты только раз в день, часы оставались недоступными в течение нескольких часов, из-за чего пациенты продолжали звонить в регистратуру."
             },
             {
-              "text": "**Because the revised budget was overlooked, the consequences became harder to manage.**",
-              "translation_ru": "Поскольку пересмотренный бюджет упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Because the budget approval arrived after the procurement window had closed, the equipment could not be ordered that quarter, which meant that the field study moved into the following spring.**",
+              "translation_ru": "Поскольку бюджет утвердили уже после закрытия окна закупок, оборудование не удалось заказать в том квартале, из-за чего полевое исследование перенесли на следующую весну."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Weil [einen Förderantrag] übersehen wurde, wurden die Folgen schwerer zu bewältigen.",
-          "example": "Weil einen Förderantrag übersehen wurde, wurden die Folgen schwerer zu bewältigen.",
-          "translation": "Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать.",
+          "formula": "Weil [X], [Y], was dazu führte, dass [Z].",
+          "example": "Weil die Abhängigkeit im Migrationsinventar fehlte, wurde die Schnittstelle in der neuen Umgebung nie getestet, was dazu führte, dass der erste Produktivlauf fehlschlug.",
+          "translation": "Поскольку зависимость отсутствовала в перечне миграции, интерфейс так и не протестировали в новой среде, из-за чего первый продуктивный запуск завершился неудачно.",
           "examples": [
             {
-              "text": "**Weil einen Förderantrag übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку заявка на финансирование упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil die Abhängigkeit im Migrationsinventar fehlte, wurde die Schnittstelle in der neuen Umgebung nie getestet, was dazu führte, dass der erste Produktivlauf fehlschlug.**",
+              "translation_ru": "Поскольку зависимость отсутствовала в перечне миграции, интерфейс так и не протестировали в новой среде, из-за чего первый продуктивный запуск завершился неудачно."
             },
             {
-              "text": "**Weil eine verspätete Produkteinführung übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку задерженный запуск продукта упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil die Hochwasserdaten des letzten Winters ausgeschlossen worden waren, wurde der Schwellenwert zu hoch angesetzt, was dazu führte, dass die Bevölkerung die Warnung später als vorgesehen erhielt.**",
+              "translation_ru": "Поскольку данные о прошлогоднем зимнем наводнении исключили, порог установили слишком высоким, из-за чего жители получили предупреждение позже запланированного."
             },
             {
-              "text": "**Weil die Forschungsergebnisse des Teams übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку результаты исследования команды упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil der Vertrag keine Reaktionszeiten für Ausfälle Dritter festlegte, stritten beide Anbieter über die Zuständigkeit, was dazu führte, dass der Ausfall stundenlang ungelöst blieb.**",
+              "translation_ru": "Поскольку контракт не определял сроки реакции на сбои третьих сторон, оба поставщика спорили об ответственности, из-за чего проблема оставалась нерешённой несколько часов."
             },
             {
-              "text": "**Weil eine Kundenbeschwerde übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку жалоба клиента упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil der Alarmschwellenwert schrittweise angehoben worden war, lösten kleinere Anomalien keine Meldungen mehr aus, was dazu führte, dass das Team die frühen Anzeichen der Verschlechterung übersah.**",
+              "translation_ru": "Поскольку порог оповещения постепенно повышали, небольшие аномалии перестали вызывать уведомления, из-за чего команда пропустила ранние признаки ухудшения."
             },
             {
-              "text": "**Weil einen Plan für den Nahverkehr übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку план общественного транспорта упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil die neuen Mitarbeitenden nur Idealfälle geübt hatten, verlangsamten ungewöhnliche Kundenanfragen ihre Arbeit, was dazu führte, dass erfahrene Kolleginnen und Kollegen wieder in den Standardsupport eingebunden wurden.**",
+              "translation_ru": "Поскольку новые сотрудники тренировались только на идеальных случаях, необычные запросы клиентов замедляли их работу, из-за чего опытных специалистов снова пришлось подключать к обычной поддержке."
             },
             {
-              "text": "**Weil eine schwierige Personalentscheidung übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку сложное кадровое решение упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil das Buchungssystem stornierte Termine nur einmal täglich freigab, wirkten Termine stundenlang nicht verfügbar, was dazu führte, dass Patientinnen und Patienten weiterhin an der Rezeption anriefen.**",
+              "translation_ru": "Поскольку система записи освобождала отменённые слоты только раз в день, часы оставались недоступными в течение нескольких часов, из-за чего пациенты продолжали звонить в регистратуру."
             },
             {
-              "text": "**Weil das überarbeitete Budget übersehen wurde, wurden die Folgen schwerer zu bewältigen.**",
-              "translation_ru": "Поскольку пересмотренный бюджет упустили из виду, последствия стало сложнее контролировать."
+              "text": "**Weil die Budgetfreigabe erst nach Ende des Beschaffungsfensters eintraf, konnte die Ausrüstung in diesem Quartal nicht bestellt werden, was dazu führte, dass die Feldstudie auf das folgende Frühjahr verschoben wurde.**",
+              "translation_ru": "Поскольку бюджет утвердили уже после закрытия окна закупок, оборудование не удалось заказать в том квартале, из-за чего полевое исследование перенесли на следующую весну."
             }
           ]
         }
       ],
       "formulas": [
-        "Because [a funding proposal] was overlooked, the consequences became harder to manage.",
-        "Weil [einen Förderantrag] übersehen wurde, wurden die Folgen schwerer zu bewältigen."
+        "Because [X], [Y], which meant that [Z].",
+        "Weil [X], [Y], was dazu führte, dass [Z]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Cause, effect, and consequence."
-      }
+        "notes": "C1 communicative frame: Cause, effect, and consequence. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Because [X], [Y], which meant that [Z]",
+      "description_en": "Build a causal chain with an explicit intermediate event instead of jumping directly from a cause to a distant outcome.",
+      "description_ru": "Стройте причинную цепочку через промежуточное событие, а не перескакивайте сразу от причины к далёкому последствию."
     }
   ]
 }
