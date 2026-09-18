@@ -45,7 +45,7 @@ Do not load the entire corpus or generated site as first context.
 - Examples should introduce useful B2–C1 vocabulary and natural collocations without turning into thesaurus exercises or unnatural prose.
 - English and German examples must be independently grammatical and idiomatic; Russian learner-support translations must be natural Russian, not word-for-word templates.
 - A fixed tense or construction may remain fixed when that is the actual learning target. Diversity must not erase the feature being practised.
-- New or edited C1 examples must pass the deterministic near-clone and lexical-breadth gate in `tests/pattern-example-quality.test.mjs`.
+- Every new or edited English/German example set must pass the deterministic whole-corpus diversity floor in `tests/pattern-example-quality.test.mjs`; C1 examples additionally pass the stricter lexical-breadth threshold. The gate is a floor, not a substitute for editorial judgment: examples should be interesting enough to practise aloud and should expand productive vocabulary.
 
 ## GitHub / publication boundary
 

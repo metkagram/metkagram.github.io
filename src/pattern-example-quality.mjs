@@ -144,9 +144,17 @@ function jaccard(left, right) {
   return intersection / new Set([...a, ...b]).size;
 }
 
-export const C1_EXAMPLE_DIVERSITY_RULE = Object.freeze({
-  minVocabularySize: 30,
+export const PRACTICE_EXAMPLE_DIVERSITY_RULE = Object.freeze({
+  minExampleCount: 5,
+  maxExampleCount: 7,
+  minVariableVocabularySize: 14,
   maxMeanPairwiseJaccard: 0.64,
+  maxSharedTokenRatio: 0.62
+});
+
+export const C1_EXAMPLE_DIVERSITY_RULE = Object.freeze({
+  ...PRACTICE_EXAMPLE_DIVERSITY_RULE,
+  minVocabularySize: 30,
   maxSharedTokenRatio: 0.58
 });
 
@@ -181,6 +189,8 @@ export function measurePatternExampleDiversity(language) {
       ? similarities.reduce((sum, value) => sum + value, 0) / similarities.length
       : 0,
     maxPairwiseJaccard: similarities.length ? Math.max(...similarities) : 0,
+    sharedTokenCount: sharedTokens.length,
+    variableVocabularySize: Math.max(0, vocabulary.size - sharedTokens.length),
     sharedTokenRatio: averageTokenCount ? sharedTokens.length / averageTokenCount : 0
   };
 }
@@ -189,11 +199,20 @@ export function patternExampleDiversityProblems(language, rule = C1_EXAMPLE_DIVE
   const metrics = measurePatternExampleDiversity(language);
   const problems = [];
 
+  if (rule.minExampleCount != null && metrics.exampleCount < rule.minExampleCount) {
+    problems.push(`too few examples (${metrics.exampleCount}; need at least ${rule.minExampleCount})`);
+  }
+  if (rule.maxExampleCount != null && metrics.exampleCount > rule.maxExampleCount) {
+    problems.push(`too many examples (${metrics.exampleCount}; maximum ${rule.maxExampleCount})`);
+  }
   if (metrics.uniqueExampleCount !== metrics.exampleCount) {
     problems.push(`contains duplicate examples (${metrics.uniqueExampleCount}/${metrics.exampleCount} unique)`);
   }
-  if (metrics.vocabularySize < rule.minVocabularySize) {
+  if (rule.minVocabularySize != null && metrics.vocabularySize < rule.minVocabularySize) {
     problems.push(`vocabulary is too narrow (${metrics.vocabularySize} unique tokens; need at least ${rule.minVocabularySize})`);
+  }
+  if (rule.minVariableVocabularySize != null && metrics.variableVocabularySize < rule.minVariableVocabularySize) {
+    problems.push(`variable vocabulary is too narrow (${metrics.variableVocabularySize} non-shared tokens; need at least ${rule.minVariableVocabularySize})`);
   }
   if (metrics.meanPairwiseJaccard > rule.maxMeanPairwiseJaccard) {
     problems.push(`examples are near-clones (mean Jaccard ${metrics.meanPairwiseJaccard.toFixed(3)} > ${rule.maxMeanPairwiseJaccard})`);

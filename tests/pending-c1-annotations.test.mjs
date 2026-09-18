@@ -6,17 +6,20 @@ import { cleanMarkedText } from "../src/annotation-schema.mjs";
 import { loadContent } from "../src/content.mjs";
 import { loadPracticeAnnotationLayer } from "../src/practice-annotations.mjs";
 
-test("rewritten C1 examples are explicitly pending until local annotation is rebuilt", () => {
+test("rewritten pattern examples are explicitly pending until local annotation is rebuilt", () => {
   const content = loadContent();
   const { items, ledger } = loadPracticeAnnotationLayer(content, process.cwd());
   const ids = new Set((ledger.patterns || []).map((entry) => entry.id));
   const c1Patterns = content.advancedPatterns.filter((pattern) => /^C1[A-Z]+\d+$/.test(pattern.id));
 
-  assert.equal(ids.size, 20);
   assert.equal(c1Patterns.length, 20);
-  assert.deepEqual(new Set(c1Patterns.map((pattern) => pattern.id)), ids);
+  for (const pattern of c1Patterns) assert.ok(ids.has(pattern.id), `${pattern.id}: rewritten C1 pattern must remain in rebuild ledger`);
+  for (const id of ["CON002", "QUE005", "PERF006"]) assert.ok(ids.has(id), `${id}: rewritten legacy pattern must be in rebuild ledger`);
 
-  for (const pattern of c1Patterns) {
+  const pendingPatterns = content.advancedPatterns.filter((pattern) => ids.has(pattern.id));
+  assert.equal(pendingPatterns.length, ids.size);
+
+  for (const pattern of pendingPatterns) {
     for (const language of pattern.langs || []) {
       const references = [
         { key: "primary", text: language.example },

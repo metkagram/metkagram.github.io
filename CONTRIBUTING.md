@@ -52,7 +52,7 @@ A pattern should teach a reusable Frame, not seven cosmetic rewrites of one sent
 - keep English and German independently idiomatic and make Russian support text read as natural Russian;
 - do not introduce variation that obscures the grammar or discourse feature the pattern is meant to teach.
 
-C1 examples are additionally protected by an automated lexical-diversity / near-clone regression gate. Bulk context substitution is not an acceptable enrichment strategy.
+All canonical English/German example sets are protected by an automated near-clone / variable-vocabulary regression gate, with a stricter lexical-breadth threshold for C1. Bulk context substitution is not an acceptable enrichment strategy. Passing the metric is only a floor: examples should still be specific, interesting enough to say aloud, and useful for expanding productive vocabulary.
 
 ## Research collaboration
 
