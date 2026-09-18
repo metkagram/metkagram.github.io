@@ -22,9 +22,23 @@ test('every public pattern has examples and Russian learner translations', () =>
   console.log(`GRAMMAR_AUDIT patterns=${content.advancedPatterns.length} sets=${content.studySets.sets.length} language_examples=${examples}`);
 });
 
-// Temporary compact inventory for the editorial expansion; remove before publication.
-test('inventory existing canonical English grammar frames', () => {
-  for (const p of content.advancedPatterns) {
-    console.log('FRAME ' + p.id + ' | ' + p.set_id + ' | ' + p.langs.find((l) => l.lang === 'en').formula);
+test('the grammar-flexibility expansion publishes all 300 patterns in 15 registered sets', () => {
+  const additions = content.advancedPatterns.filter((pattern) => /^GF[A-O]\d{3}$/.test(pattern.id));
+  assert.equal(additions.length, 300);
+  for (const suffix of 'ABCDEFGHIJKLMNO') {
+    const id = `GF${suffix}`;
+    assert.ok(content.studySets.sets.some((set) => set.id === id), `${id}: missing study set`);
+    const patterns = additions.filter((pattern) => pattern.set_id === id);
+    assert.equal(patterns.length, 20, `${id}: missing patterns`);
+    for (const pattern of patterns) {
+      assert.equal(pattern.group_id, id);
+      assert.match(pattern.title_ru, /\p{Script=Cyrillic}/u);
+      assert.deepEqual(pattern.langs.map((lang) => lang.lang).sort(), ['de', 'en']);
+      for (const lang of pattern.langs) {
+        const all = [{ text: lang.example, translation_ru: lang.translation }, ...lang.examples];
+        assert.equal(new Set(all.map((item) => normalize(item.text))).size, all.length, `${pattern.id}/${lang.lang}: duplicate examples`);
+        for (const example of all) assert.match(example.translation_ru, /\p{Script=Cyrillic}/u);
+      }
+    }
   }
 });
