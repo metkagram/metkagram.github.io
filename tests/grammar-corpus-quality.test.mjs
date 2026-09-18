@@ -23,7 +23,7 @@ test('every public pattern has examples and Russian learner translations', () =>
 });
 
 test('the grammar-flexibility expansion publishes all 400 patterns in 20 registered sets', () => {
-  const additions = content.advancedPatterns.filter((pattern) => /^GF[A-O]\d{3}$/.test(pattern.id));
+  const additions = content.advancedPatterns.filter((pattern) => /^GF[A-T]\d{3}$/.test(pattern.id));
   assert.equal(additions.length, 400);
   for (const suffix of 'ABCDEFGHIJKLMNOPQRST') {
     const id = `GF${suffix}`;
