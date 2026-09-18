@@ -5,7 +5,9 @@ import path from "node:path";
 import test from "node:test";
 
 import {
+  C1_EXAMPLE_DIVERSITY_RULE,
   GENERATED_FOLLOW_UPS,
+  PRACTICE_EXAMPLE_DIVERSITY_RULE,
   hasGeneratedFollowUp,
   measurePatternExampleDiversity,
   patternExampleDiversityProblems,
@@ -89,7 +91,25 @@ test("canonical C1 examples are varied enough for productive speaking practice",
 
   for (const pattern of patterns) {
     for (const language of pattern.langs || []) {
-      const problems = patternExampleDiversityProblems(language);
+      const problems = patternExampleDiversityProblems(language, C1_EXAMPLE_DIVERSITY_RULE);
+      const metrics = measurePatternExampleDiversity(language);
+      assert.deepEqual(
+        problems,
+        [],
+        `${pattern.id}/${language.lang}: ${problems.join("; ")}; metrics=${JSON.stringify(metrics)}`
+      );
+    }
+  }
+});
+
+
+test("all canonical English and German example sets meet the speaking-practice diversity floor", () => {
+  const patterns = readRawPatterns();
+
+  for (const pattern of patterns) {
+    for (const language of pattern.langs || []) {
+      if (!["en", "de"].includes(language.lang)) continue;
+      const problems = patternExampleDiversityProblems(language, PRACTICE_EXAMPLE_DIVERSITY_RULE);
       const metrics = measurePatternExampleDiversity(language);
       assert.deepEqual(
         problems,
