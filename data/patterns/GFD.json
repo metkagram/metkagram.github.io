@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFD",
+  "title": "Comparison and degree",
+  "title_ru": "Сравнения и степень",
+  "patterns": [
+    {
+      "id": "GFD001",
+      "set_id": "GFD",
+      "pattern": "The second route is nowhere near as steep as the first.",
+      "group_title": "A large gap expressed inside an equality comparison",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Strongly denied equality",
+        "form": "Nowhere near as + adjective + as",
+        "metaphor_ru": "Nowhere near усиливает отрицание равенства: второй вариант даже близко не достигает первого по этому признаку."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + nowhere near as + adjective + as + comparison target",
+          "example": "The second route is nowhere near as steep as the first.",
+          "translation": "Второй маршрут далеко не такой крутой, как первый.",
+          "examples": [
+            {
+              "text": "This room is nowhere near as noisy as the one upstairs.",
+              "translation_ru": "Эта комната далеко не такая шумная, как та, что наверху."
+            },
+            {
+              "text": "The final bill was nowhere near as high as we feared.",
+              "translation_ru": "Итоговый счёт оказался далеко не таким большим, как мы боялись."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + bei Weitem nicht so + adjective + wie + comparison target",
+          "example": "Die zweite Route ist bei Weitem nicht so steil wie die erste.",
+          "translation": "Второй маршрут далеко не такой крутой, как первый.",
+          "examples": [
+            {
+              "text": "Dieses Zimmer ist bei Weitem nicht so laut wie das im Obergeschoss.",
+              "translation_ru": "Эта комната далеко не такая шумная, как та, что наверху."
+            },
+            {
+              "text": "Die Endrechnung war bei Weitem nicht so hoch, wie wir befürchtet hatten.",
+              "translation_ru": "Итоговый счёт оказался далеко не таким большим, как мы боялись."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Далеко не равная степень",
+      "title_en": "A large gap expressed inside an equality comparison",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD002",
+      "set_id": "GFD",
+      "pattern": "The new table is twice as wide as the old one.",
+      "group_title": "Multiplying a measurable property",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Multiplicative equality comparison of a dimension",
+        "form": "Multiplier + as + adjective + as",
+        "metaphor_ru": "Twice as wide — ширина в два раза больше исходной. Такая формулировка точнее двусмысленного twice bigger."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + multiplier + as + measurable adjective + as + target",
+          "example": "The new table is twice as wide as the old one.",
+          "translation": "Новый стол вдвое шире старого.",
+          "examples": [
+            {
+              "text": "This cable is three times as long as that one.",
+              "translation_ru": "Этот кабель втрое длиннее того."
+            },
+            {
+              "text": "The upstairs room is half as large as the downstairs room.",
+              "translation_ru": "Комната наверху вдвое меньше комнаты внизу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + doppelt/dreimal/halb so + adjective + wie + target",
+          "example": "Der neue Tisch ist doppelt so breit wie der alte.",
+          "translation": "Новый стол вдвое шире старого.",
+          "examples": [
+            {
+              "text": "Dieses Kabel ist dreimal so lang wie das andere.",
+              "translation_ru": "Этот кабель втрое длиннее того."
+            },
+            {
+              "text": "Das Zimmer oben ist halb so groß wie das Zimmer unten.",
+              "translation_ru": "Комната наверху вдвое меньше комнаты внизу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сравнение размеров в несколько раз",
+      "title_en": "Multiplying a measurable property",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD003",
+      "set_id": "GFD",
+      "pattern": "We received three times as many applications as last year.",
+      "group_title": "Multiplying a count rather than an adjective",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Multiplicative count comparison",
+        "form": "Multiplier + as many + plural noun + as",
+        "metaphor_ru": "Считаемые объекты требуют many и существительного во множественном числе. Множитель относится к числу объектов, а не к их размеру."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + verb + multiplier + as many + plural noun + as + target",
+          "example": "We received three times as many applications as last year.",
+          "translation": "Мы получили втрое больше заявок, чем в прошлом году.",
+          "examples": [
+            {
+              "text": "She read twice as many books as I did.",
+              "translation_ru": "Она прочитала вдвое больше книг, чем я."
+            },
+            {
+              "text": "This room has half as many chairs as the other room.",
+              "translation_ru": "В этой комнате вдвое меньше стульев, чем в другой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + verb + dreimal/doppelt/halb so viele + plural noun + wie + target",
+          "example": "Wir haben dreimal so viele Bewerbungen erhalten wie letztes Jahr.",
+          "translation": "Мы получили втрое больше заявок, чем в прошлом году.",
+          "examples": [
+            {
+              "text": "Sie hat doppelt so viele Bücher gelesen wie ich.",
+              "translation_ru": "Она прочитала вдвое больше книг, чем я."
+            },
+            {
+              "text": "In diesem Zimmer stehen halb so viele Stühle wie im anderen.",
+              "translation_ru": "В этой комнате вдвое меньше стульев, чем в другой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сравнение количества предметов",
+      "title_en": "Multiplying a count rather than an adjective",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD004",
+      "set_id": "GFD",
+      "pattern": "The smaller printer uses half as much ink as the old one.",
+      "group_title": "Multiplying an uncountable amount",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Multiplicative mass comparison",
+        "form": "Multiplier + as much + mass noun + as",
+        "metaphor_ru": "Для вещества, времени, энергии и других неисчисляемых величин нужен much, не many. Немецкий использует so viel без окончания e."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + verb + multiplier + as much + uncountable noun + as + target",
+          "example": "The smaller printer uses half as much ink as the old one.",
+          "translation": "Меньший принтер расходует вдвое меньше чернил, чем старый.",
+          "examples": [
+            {
+              "text": "This method takes twice as much time as the simpler one.",
+              "translation_ru": "Этот метод занимает вдвое больше времени, чем более простой."
+            },
+            {
+              "text": "The large tank holds three times as much water as the small tank.",
+              "translation_ru": "Большой бак вмещает втрое больше воды, чем маленький."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + verb + halb/doppelt/dreimal so viel + mass noun + wie + target",
+          "example": "Der kleinere Drucker verbraucht halb so viel Tinte wie der alte.",
+          "translation": "Меньший принтер расходует вдвое меньше чернил, чем старый.",
+          "examples": [
+            {
+              "text": "Diese Methode braucht doppelt so viel Zeit wie die einfachere.",
+              "translation_ru": "Этот метод занимает вдвое больше времени, чем более простой."
+            },
+            {
+              "text": "Der große Tank fasst dreimal so viel Wasser wie der kleine.",
+              "translation_ru": "Большой бак вмещает втрое больше воды, чем маленький."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сравнение объёма и времени",
+      "title_en": "Multiplying an uncountable amount",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD005",
+      "set_id": "GFD",
+      "pattern": "The repair cost no more than twenty euros.",
+      "group_title": "A surprisingly small amount, not just an upper limit",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Low amount highlighted with no more than",
+        "form": "No more than + quantity",
+        "metaphor_ru": "No more than часто значит «всего лишь». Это оценочный оттенок; нейтральный предел not more than не обязательно подчёркивает малость."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + verb + no more than + quantity",
+          "example": "The repair cost no more than twenty euros.",
+          "translation": "Ремонт обошёлся всего в двадцать евро.",
+          "examples": [
+            {
+              "text": "The talk lasted no more than ten minutes.",
+              "translation_ru": "Выступление длилось всего десять минут."
+            },
+            {
+              "text": "We had no more than three chairs between us.",
+              "translation_ru": "На всех у нас было всего три стула."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + verb + gerade einmal + quantity",
+          "example": "Die Reparatur kostete gerade einmal zwanzig Euro.",
+          "translation": "Ремонт обошёлся всего в двадцать евро.",
+          "examples": [
+            {
+              "text": "Der Vortrag dauerte gerade einmal zehn Minuten.",
+              "translation_ru": "Выступление длилось всего десять минут."
+            },
+            {
+              "text": "Wir hatten zusammen gerade einmal drei Stühle.",
+              "translation_ru": "На всех у нас было всего три стула."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всего лишь указанное количество",
+      "title_en": "A surprisingly small amount, not just an upper limit",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD006",
+      "set_id": "GFD",
+      "pattern": "No fewer than forty people offered to help.",
+      "group_title": "A surprisingly large count despite a negative form",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Large count highlighted with no fewer than",
+        "form": "No fewer than + number + plural noun",
+        "metaphor_ru": "Отрицательная форма подчёркивает большое количество: «целых сорок». Для неисчисляемого количества обычно используют no less than."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "No fewer than + number + plural noun + verb",
+          "example": "No fewer than forty people offered to help.",
+          "translation": "Целых сорок человек предложили помощь.",
+          "examples": [
+            {
+              "text": "No fewer than six buses arrived at once.",
+              "translation_ru": "Сразу приехали целых шесть автобусов."
+            },
+            {
+              "text": "No fewer than twelve versions were stored on the server.",
+              "translation_ru": "На сервере хранилось целых двенадцать версий."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nicht weniger als + number + plural noun + verb",
+          "example": "Nicht weniger als vierzig Menschen boten ihre Hilfe an.",
+          "translation": "Целых сорок человек предложили помощь.",
+          "examples": [
+            {
+              "text": "Nicht weniger als sechs Busse kamen gleichzeitig an.",
+              "translation_ru": "Сразу приехали целых шесть автобусов."
+            },
+            {
+              "text": "Nicht weniger als zwölf Versionen waren auf dem Server gespeichert.",
+              "translation_ru": "На сервере хранилось целых двенадцать версий."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Целых столько объектов",
+      "title_en": "A surprisingly large count despite a negative form",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD007",
+      "set_id": "GFD",
+      "pattern": "This explanation is no clearer than the first one.",
+      "group_title": "A comparison that denies any improvement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "No gain on a comparative scale",
+        "form": "No + comparative + than",
+        "metaphor_ru": "Новый вариант не даёт прибавки по признаку: оба могут быть плохими. Это не утверждение, что второй непременно хуже первого."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + no + comparative adjective + than + target",
+          "example": "This explanation is no clearer than the first one.",
+          "translation": "Это объяснение ничуть не понятнее первого.",
+          "examples": [
+            {
+              "text": "The replacement is no lighter than the original.",
+              "translation_ru": "Замена ничуть не легче оригинала."
+            },
+            {
+              "text": "Her reply was no more helpful than his.",
+              "translation_ru": "Её ответ был ничуть не полезнее его ответа."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + nicht + comparative adjective + als + target",
+          "example": "Diese Erklärung ist nicht klarer als die erste.",
+          "translation": "Это объяснение ничуть не понятнее первого.",
+          "examples": [
+            {
+              "text": "Der Ersatz ist nicht leichter als das Original.",
+              "translation_ru": "Замена ничуть не легче оригинала."
+            },
+            {
+              "text": "Ihre Antwort war nicht hilfreicher als seine.",
+              "translation_ru": "Её ответ был ничуть не полезнее его ответа."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Никакого улучшения",
+      "title_en": "A comparison that denies any improvement",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD008",
+      "set_id": "GFD",
+      "pattern": "Is the paid version any faster than the free one?",
+      "group_title": "Asking whether any degree of improvement exists",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Minimal comparative difference in a question",
+        "form": "Any + comparative + than in questions",
+        "metaphor_ru": "Any спрашивает о наличии хоть какой-то разницы. Это не неопределённое местоимение перед существительным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Be/auxiliary + subject + any + comparative + than + target?",
+          "example": "Is the paid version any faster than the free one?",
+          "translation": "Платная версия хоть сколько-нибудь быстрее бесплатной?",
+          "examples": [
+            {
+              "text": "Does this route take any longer than the usual one?",
+              "translation_ru": "Этот маршрут занимает хоть сколько-нибудь больше времени, чем обычный?"
+            },
+            {
+              "text": "Are these instructions any easier to follow than the old ones?",
+              "translation_ru": "По этим инструкциям хоть сколько-нибудь легче действовать, чем по старым?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Question + überhaupt + comparative + als + target?",
+          "example": "Ist die Bezahlversion überhaupt schneller als die kostenlose?",
+          "translation": "Платная версия хоть сколько-нибудь быстрее бесплатной?",
+          "examples": [
+            {
+              "text": "Dauert diese Route überhaupt länger als die übliche?",
+              "translation_ru": "Этот маршрут занимает хоть сколько-нибудь больше времени, чем обычный?"
+            },
+            {
+              "text": "Sind diese Anweisungen überhaupt leichter zu befolgen als die alten?",
+              "translation_ru": "По этим инструкциям хоть сколько-нибудь легче действовать, чем по старым?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Есть ли хоть какая-то разница",
+      "title_en": "Asking whether any degree of improvement exists",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD009",
+      "set_id": "GFD",
+      "pattern": "Of the two routes, this is the safer one.",
+      "group_title": "Selecting between two with a definite comparative",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Definite comparative within a pair",
+        "form": "Of the two + plural noun, the + comparative + one",
+        "metaphor_ru": "При явном выборе из двух естественен comparative с the. One заменяет повторное существительное; superlative не обязателен."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Of the two + plural noun, subject + be + the + comparative + one",
+          "example": "Of the two routes, this is the safer one.",
+          "translation": "Из этих двух маршрутов этот безопаснее.",
+          "examples": [
+            {
+              "text": "Of the two proposals, hers is the more practical one.",
+              "translation_ru": "Из двух предложений её предложение практичнее."
+            },
+            {
+              "text": "Of the two rooms, this is the quieter one.",
+              "translation_ru": "Из этих двух комнат эта тише."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Von den beiden + plural noun + sein + subject + der/die/das + comparative nominal",
+          "example": "Von den beiden Routen ist diese die sicherere.",
+          "translation": "Из этих двух маршрутов этот безопаснее.",
+          "examples": [
+            {
+              "text": "Von den beiden Vorschlägen ist ihrer der praktischere.",
+              "translation_ru": "Из двух предложений её предложение практичнее."
+            },
+            {
+              "text": "Von den beiden Zimmern ist dieses das ruhigere.",
+              "translation_ru": "Из этих двух комнат эта тише."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Выбор лучшего из двух",
+      "title_en": "Selecting between two with a definite comparative",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD010",
+      "set_id": "GFD",
+      "pattern": "This is one of the most useful courses I have ever taken.",
+      "group_title": "Membership in a top group across personal experience",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Superlative group membership with experiential relative clause",
+        "form": "One of the + superlative + plural noun + present perfect clause",
+        "metaphor_ru": "После one of нужно множественное число: courses. Смысл — один из лучших, а не обязательно единственный лучший."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + one of the + superlative + plural noun + subject + have/has ever + participle",
+          "example": "This is one of the most useful courses I have ever taken.",
+          "translation": "Это один из самых полезных курсов, которые я когда-либо проходил.",
+          "examples": [
+            {
+              "text": "She is one of the kindest people I have ever met.",
+              "translation_ru": "Она одна из самых добрых людей, которых я встречал."
+            },
+            {
+              "text": "That was one of the hardest choices we have ever made.",
+              "translation_ru": "Это был один из самых трудных выборов, которые нам приходилось делать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + einer/eine/eines der + superlative plural noun + relative Perfekt clause",
+          "example": "Das ist einer der nützlichsten Kurse, die ich je besucht habe.",
+          "translation": "Это один из самых полезных курсов, которые я когда-либо проходил.",
+          "examples": [
+            {
+              "text": "Sie ist einer der freundlichsten Menschen, die ich je kennengelernt habe.",
+              "translation_ru": "Она одна из самых добрых людей, которых я встречал."
+            },
+            {
+              "text": "Das war eine der schwierigsten Entscheidungen, die wir je getroffen haben.",
+              "translation_ru": "Это был один из самых трудных выборов, которые нам приходилось делать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Один из лучших в личном опыте",
+      "title_en": "Membership in a top group across personal experience",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD011",
+      "set_id": "GFD",
+      "pattern": "The less you rush, the fewer mistakes you make.",
+      "group_title": "Linked change across an activity and a count",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Correlated degree and count with less versus fewer",
+        "form": "The less + clause, the fewer + plural noun + clause",
+        "metaphor_ru": "В первой части уменьшается степень действия, во второй — число ошибок. Less и fewer нельзя механически менять местами."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The less + subject + verb, the fewer + plural noun + subject + verb",
+          "example": "The less you rush, the fewer mistakes you make.",
+          "translation": "Чем меньше ты торопишься, тем меньше ошибок делаешь.",
+          "examples": [
+            {
+              "text": "The less we travel, the fewer flights we need to book.",
+              "translation_ru": "Чем меньше мы путешествуем, тем меньше рейсов приходится бронировать."
+            },
+            {
+              "text": "The less she buys, the fewer boxes she needs.",
+              "translation_ru": "Чем меньше она покупает, тем меньше коробок ей нужно."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Je weniger + clause, desto weniger + plural noun + main clause",
+          "example": "Je weniger du dich beeilst, desto weniger Fehler machst du.",
+          "translation": "Чем меньше ты торопишься, тем меньше ошибок делаешь.",
+          "examples": [
+            {
+              "text": "Je weniger wir reisen, desto weniger Flüge müssen wir buchen.",
+              "translation_ru": "Чем меньше мы путешествуем, тем меньше рейсов приходится бронировать."
+            },
+            {
+              "text": "Je weniger sie kauft, desto weniger Kartons braucht sie.",
+              "translation_ru": "Чем меньше она покупает, тем меньше коробок ей нужно."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Меньше действия — меньше ошибок",
+      "title_en": "Linked change across an activity and a count",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD012",
+      "set_id": "GFD",
+      "pattern": "The longer I looked, the less certain I became.",
+      "group_title": "One process increasing while confidence decreases",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Opposing correlated changes in past time",
+        "form": "The + comparative adverb + past, the less + adjective + past",
+        "metaphor_ru": "Две шкалы движутся в разные стороны. После начального comparative английский сохраняет обычный порядок подлежащее–сказуемое."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The + comparative adverb + subject + past verb, the less + adjective + subject + became",
+          "example": "The longer I looked, the less certain I became.",
+          "translation": "Чем дольше я смотрел, тем меньше был уверен.",
+          "examples": [
+            {
+              "text": "The harder she pushed, the less willing they became.",
+              "translation_ru": "Чем сильнее она давила, тем меньше они были готовы соглашаться."
+            },
+            {
+              "text": "The further we walked, the less familiar the streets became.",
+              "translation_ru": "Чем дальше мы шли, тем менее знакомыми становились улицы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Je + comparative + past clause, desto weniger + adjective + wurde(n) + subject",
+          "example": "Je länger ich hinsah, desto weniger sicher wurde ich.",
+          "translation": "Чем дольше я смотрел, тем меньше был уверен.",
+          "examples": [
+            {
+              "text": "Je stärker sie drängte, desto weniger bereit waren sie, zuzustimmen.",
+              "translation_ru": "Чем сильнее она давила, тем меньше они были готовы соглашаться."
+            },
+            {
+              "text": "Je weiter wir gingen, desto weniger vertraut wurden uns die Straßen.",
+              "translation_ru": "Чем дальше мы шли, тем менее знакомыми становились улицы."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Противоположные изменения",
+      "title_en": "One process increasing while confidence decreases",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD013",
+      "set_id": "GFD",
+      "pattern": "The new process is as reliable as, if not more reliable than, the old one.",
+      "group_title": "Equality asserted while a stronger comparison remains possible",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Equality with an optional stronger claim",
+        "form": "As + adjective + as, if not + comparative + than",
+        "metaphor_ru": "Сначала гарантируем не меньшую степень, затем допускаем превосходство. У каждого сравнения свой союз: as и than."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + as + adjective + as, if not + comparative + than, + target",
+          "example": "The new process is as reliable as, if not more reliable than, the old one.",
+          "translation": "Новый процесс не менее надёжен, а возможно, и надёжнее старого.",
+          "examples": [
+            {
+              "text": "This route is as quick as, if not quicker than, the motorway.",
+              "translation_ru": "Этот маршрут не медленнее, а возможно, и быстрее шоссе."
+            },
+            {
+              "text": "Her second book is as engaging as, if not more engaging than, her first.",
+              "translation_ru": "Её вторая книга не менее увлекательна, а возможно, и увлекательнее первой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + genauso + adjective + wie + target, wenn nicht sogar + comparative",
+          "example": "Das neue Verfahren ist genauso zuverlässig wie das alte, wenn nicht sogar zuverlässiger.",
+          "translation": "Новый процесс не менее надёжен, а возможно, и надёжнее старого.",
+          "examples": [
+            {
+              "text": "Diese Route ist genauso schnell wie die Autobahn, wenn nicht sogar schneller.",
+              "translation_ru": "Этот маршрут не медленнее, а возможно, и быстрее шоссе."
+            },
+            {
+              "text": "Ihr zweites Buch ist genauso fesselnd wie ihr erstes, wenn nicht sogar fesselnder.",
+              "translation_ru": "Её вторая книга не менее увлекательна, а возможно, и увлекательнее первой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не хуже, а возможно, лучше",
+      "title_en": "Equality asserted while a stronger comparison remains possible",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD014",
+      "set_id": "GFD",
+      "pattern": "It was less of a problem than we had expected.",
+      "group_title": "Comparing how strongly a noun category applies",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Degree comparison of a singular count noun",
+        "form": "Less of a + noun + than",
+        "metaphor_ru": "Сравниваем не количество проблем, а степень проблемности одной ситуации. Поэтому less of a problem, не fewer problems."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + less of a + singular count noun + than + clause",
+          "example": "It was less of a problem than we had expected.",
+          "translation": "Это оказалось меньшей проблемой, чем мы ожидали.",
+          "examples": [
+            {
+              "text": "The journey was less of an ordeal than she had feared.",
+              "translation_ru": "Поездка оказалась не таким испытанием, как она боялась."
+            },
+            {
+              "text": "The change is less of a risk than it first appears.",
+              "translation_ru": "Это изменение не так рискованно, как кажется сначала."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + ein geringerer/kleinerer + noun + als + clause",
+          "example": "Es war ein kleineres Problem, als wir erwartet hatten.",
+          "translation": "Это оказалось меньшей проблемой, чем мы ожидали.",
+          "examples": [
+            {
+              "text": "Die Reise war eine geringere Belastung, als sie befürchtet hatte.",
+              "translation_ru": "Поездка оказалась не таким испытанием, как она боялась."
+            },
+            {
+              "text": "Die Änderung ist ein geringeres Risiko, als es zunächst scheint.",
+              "translation_ru": "Это изменение не так рискованно, как кажется сначала."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Степень соответствия категории",
+      "title_en": "Comparing how strongly a noun category applies",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD015",
+      "set_id": "GFD",
+      "pattern": "She is more of a listener than a talker.",
+      "group_title": "Comparing two descriptions of the same person or thing",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Relative fit of two noun categories",
+        "form": "More of a + noun + than a + noun",
+        "metaphor_ru": "Смысл «скорее X, чем Y»: выбираем более подходящую характеристику. Это не сравнение количества людей или предметов."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + more of a/an + noun + than a/an + noun",
+          "example": "She is more of a listener than a talker.",
+          "translation": "Она скорее слушатель, чем рассказчик.",
+          "examples": [
+            {
+              "text": "It was more of a discussion than a lecture.",
+              "translation_ru": "Это была скорее дискуссия, чем лекция."
+            },
+            {
+              "text": "The room is more of a workshop than an office.",
+              "translation_ru": "Эта комната скорее мастерская, чем офис."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + eher + noun phrase + als + noun phrase",
+          "example": "Sie ist eher eine Zuhörerin als eine Erzählerin.",
+          "translation": "Она скорее слушатель, чем рассказчик.",
+          "examples": [
+            {
+              "text": "Es war eher eine Diskussion als ein Vortrag.",
+              "translation_ru": "Это была скорее дискуссия, чем лекция."
+            },
+            {
+              "text": "Der Raum ist eher eine Werkstatt als ein Büro.",
+              "translation_ru": "Эта комната скорее мастерская, чем офис."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Скорее одно, чем другое",
+      "title_en": "Comparing two descriptions of the same person or thing",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD016",
+      "set_id": "GFD",
+      "pattern": "The queue was shorter than it would otherwise have been.",
+      "group_title": "Comparing reality with an unstated alternative past",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Actual degree versus a counterfactual baseline",
+        "form": "Comparative + than + would otherwise have been",
+        "metaphor_ru": "Сравниваем с тем, что было бы без уже названного вмешательства. Otherwise хранит условие внутри сравнительной части."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were + comparative + than + subject + would otherwise have been",
+          "example": "The queue was shorter than it would otherwise have been.",
+          "translation": "Очередь была короче, чем была бы в противном случае.",
+          "examples": [
+            {
+              "text": "The repair was cheaper than it would otherwise have been.",
+              "translation_ru": "Ремонт обошёлся дешевле, чем обошёлся бы в противном случае."
+            },
+            {
+              "text": "We were better prepared than we would otherwise have been.",
+              "translation_ru": "Мы были подготовлены лучше, чем были бы в противном случае."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + war(en) + comparative, als + subject + sonst + gewesen wäre(n)",
+          "example": "Die Schlange war kürzer, als sie sonst gewesen wäre.",
+          "translation": "Очередь была короче, чем была бы в противном случае.",
+          "examples": [
+            {
+              "text": "Die Reparatur war günstiger, als sie sonst gewesen wäre.",
+              "translation_ru": "Ремонт обошёлся дешевле, чем обошёлся бы в противном случае."
+            },
+            {
+              "text": "Wir waren besser vorbereitet, als wir es sonst gewesen wären.",
+              "translation_ru": "Мы были подготовлены лучше, чем были бы в противном случае."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сравнение с нереальным прошлым",
+      "title_en": "Comparing reality with an unstated alternative past",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD017",
+      "set_id": "GFD",
+      "pattern": "The instructions were not as complicated as they might have seemed.",
+      "group_title": "Correcting an apparent degree rather than an actual measurement",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Denied equality with a possible past impression",
+        "form": "Not as + adjective + as + might have seemed",
+        "metaphor_ru": "Оценка сравнивается с возможным впечатлением. Might have относится к тому, как ситуация могла показаться, а не к реальной сложности."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were not as + adjective + as + subject + might have seemed",
+          "example": "The instructions were not as complicated as they might have seemed.",
+          "translation": "Инструкции были не такими сложными, какими могли показаться.",
+          "examples": [
+            {
+              "text": "The choice was not as obvious as it might have seemed.",
+              "translation_ru": "Выбор был не таким очевидным, каким мог показаться."
+            },
+            {
+              "text": "The figures were not as encouraging as they might have seemed.",
+              "translation_ru": "Цифры были не такими обнадёживающими, какими могли показаться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + war(en) nicht so + adjective, wie + subject + vielleicht + gewirkt hatte(n)",
+          "example": "Die Anweisungen waren nicht so kompliziert, wie sie vielleicht gewirkt hatten.",
+          "translation": "Инструкции были не такими сложными, какими могли показаться.",
+          "examples": [
+            {
+              "text": "Die Wahl war nicht so offensichtlich, wie sie vielleicht gewirkt hatte.",
+              "translation_ru": "Выбор был не таким очевидным, каким мог показаться."
+            },
+            {
+              "text": "Die Zahlen waren nicht so ermutigend, wie sie vielleicht gewirkt hatten.",
+              "translation_ru": "Цифры были не такими обнадёживающими, какими могли показаться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Реальная степень и впечатление",
+      "title_en": "Correcting an apparent degree rather than an actual measurement",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD018",
+      "set_id": "GFD",
+      "pattern": "The room became more and more crowded.",
+      "group_title": "A continuing increase without a named comparison target",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Progressive increase through repeated comparative",
+        "form": "Comparative + and + comparative",
+        "metaphor_ru": "Повтор comparative обозначает нарастающее изменение. Than не нужен: сравниваются последовательные состояния одного объекта."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + become/get + comparative + and + comparative",
+          "example": "The room became more and more crowded.",
+          "translation": "В комнате становилось всё теснее.",
+          "examples": [
+            {
+              "text": "The nights are getting colder and colder.",
+              "translation_ru": "Ночи становятся всё холоднее."
+            },
+            {
+              "text": "Her explanation became clearer and clearer.",
+              "translation_ru": "Её объяснение становилось всё понятнее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + werden + immer + comparative",
+          "example": "Der Raum wurde immer voller.",
+          "translation": "В комнате становилось всё теснее.",
+          "examples": [
+            {
+              "text": "Die Nächte werden immer kälter.",
+              "translation_ru": "Ночи становятся всё холоднее."
+            },
+            {
+              "text": "Ihre Erklärung wurde immer klarer.",
+              "translation_ru": "Её объяснение становилось всё понятнее."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всё больше и больше",
+      "title_en": "A continuing increase without a named comparison target",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD019",
+      "set_id": "GFD",
+      "pattern": "We bought more food than we could possibly eat.",
+      "group_title": "An amount exceeding a realistic capacity",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Quantity beyond modal capacity",
+        "form": "More + noun + than + could possibly + verb",
+        "metaphor_ru": "Сравнение задаёт избыток относительно возможностей, а не относительно другого предмета. Possibly усиливает предел: сколько вообще возможно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + verb + more + noun + than + subject + could possibly + infinitive",
+          "example": "We bought more food than we could possibly eat.",
+          "translation": "Мы купили больше еды, чем вообще могли съесть.",
+          "examples": [
+            {
+              "text": "She received more questions than she could possibly answer.",
+              "translation_ru": "Она получила столько вопросов, что ответить на все было невозможно."
+            },
+            {
+              "text": "They gave us more work than we could possibly finish in a day.",
+              "translation_ru": "Они дали нам больше работы, чем вообще можно было закончить за день."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + verb + mehr + noun, als + subject + überhaupt + infinitive + konnte(n)",
+          "example": "Wir kauften mehr Essen, als wir überhaupt essen konnten.",
+          "translation": "Мы купили больше еды, чем вообще могли съесть.",
+          "examples": [
+            {
+              "text": "Sie erhielt mehr Fragen, als sie überhaupt beantworten konnte.",
+              "translation_ru": "Она получила столько вопросов, что ответить на все было невозможно."
+            },
+            {
+              "text": "Sie gaben uns mehr Arbeit, als wir überhaupt an einem Tag erledigen konnten.",
+              "translation_ru": "Они дали нам больше работы, чем вообще можно было закончить за день."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Больше, чем возможно обработать",
+      "title_en": "An amount exceeding a realistic capacity",
+      "group_id": "GFD"
+    },
+    {
+      "id": "GFD020",
+      "set_id": "GFD",
+      "pattern": "The delay made the journey all the more tiring.",
+      "group_title": "A preceding factor intensifies an existing quality",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Context-driven intensification with all the more",
+        "form": "Make + object + all the more + adjective",
+        "metaphor_ru": "All the more значит «тем более / ещё сильнее» из-за названного обстоятельства. The здесь часть усилительного каркаса, не артикль перед существительным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + make + object + all the more + adjective",
+          "example": "The delay made the journey all the more tiring.",
+          "translation": "Из-за задержки поездка стала ещё утомительнее.",
+          "examples": [
+            {
+              "text": "Her honesty made the apology all the more convincing.",
+              "translation_ru": "Её искренность сделала извинение ещё убедительнее."
+            },
+            {
+              "text": "The lack of instructions made the task all the more difficult.",
+              "translation_ru": "Отсутствие инструкций сделало задачу ещё труднее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + machen + object + umso + comparative",
+          "example": "Die Verzögerung machte die Reise umso anstrengender.",
+          "translation": "Из-за задержки поездка стала ещё утомительнее.",
+          "examples": [
+            {
+              "text": "Ihre Ehrlichkeit machte die Entschuldigung umso überzeugender.",
+              "translation_ru": "Её искренность сделала извинение ещё убедительнее."
+            },
+            {
+              "text": "Die fehlende Anleitung machte die Aufgabe umso schwieriger.",
+              "translation_ru": "Отсутствие инструкций сделало задачу ещё труднее."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Обстоятельство усиливает качество",
+      "title_en": "A preceding factor intensifies an existing quality",
+      "group_id": "GFD"
+    }
+  ]
+}

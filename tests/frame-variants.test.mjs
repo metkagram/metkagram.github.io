@@ -1,3 +1,4 @@
+import { expectedPatternCount, assertCanonicalIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -24,7 +25,7 @@ test("historical contextual Frame families are retired after structural Pattern 
 test("retained canonical Patterns resolve directly to their own language Frames", () => {
   const content = loadContent();
   const model = buildDomainModel(content.advancedPatterns, { frameFamilies: loadFrameFamilies() });
-  assert.equal(model.patternCount, 630);
+  assert.equal(model.patternCount, expectedPatternCount);
   assert.equal(model.canonicalFrameFamilyCount, 0);
   assert.equal(model.canonicalFrames.length, 0);
   assert.equal(model.frameVariants.length, 0);

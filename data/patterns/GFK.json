@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFK",
+  "title": "Reporting and clause complements",
+  "title_ru": "Косвенная речь и дополнения",
+  "patterns": [
+    {
+      "id": "GFK001",
+      "set_id": "GFK",
+      "pattern": "She told us not to open the package yet.",
+      "group_title": "Reporting a negative instruction",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reported command with object and negative infinitive",
+        "form": "Tell + object + not to + infinitive",
+        "metaphor_ru": "У tell нужен адресат: told us. Not стоит перед to; форма не требует отдельного that-придаточного или прямой речи."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + told + object + not to + infinitive",
+          "example": "She told us not to open the package yet.",
+          "translation": "Она сказала нам пока не открывать посылку.",
+          "examples": [
+            {
+              "text": "He told me not to wait outside.",
+              "translation_ru": "Он сказал мне не ждать снаружи."
+            },
+            {
+              "text": "They told the visitors not to take photographs.",
+              "translation_ru": "Они сказали посетителям не фотографировать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n) + dative addressee, nicht + zu-infinitive",
+          "example": "Sie sagte uns, das Paket noch nicht zu öffnen.",
+          "translation": "Она сказала нам пока не открывать посылку.",
+          "examples": [
+            {
+              "text": "Er sagte mir, nicht draußen zu warten.",
+              "translation_ru": "Он сказал мне не ждать снаружи."
+            },
+            {
+              "text": "Sie sagten den Besuchern, keine Fotos zu machen.",
+              "translation_ru": "Они сказали посетителям не фотографировать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Передать отрицательное указание",
+      "title_en": "Reporting a negative instruction",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK002",
+      "set_id": "GFK",
+      "pattern": "She asked whether I had received the invitation.",
+      "group_title": "Reporting a yes-or-no question about an earlier event",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Indirect yes-no question with perfect backshift",
+        "form": "Asked whether + subject + had + participle",
+        "metaphor_ru": "После whether порядок слов обычный: I had received, не had I received. Had переносит более раннее действие относительно момента вопроса."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + asked whether + embedded subject + had + past participle",
+          "example": "She asked whether I had received the invitation.",
+          "translation": "Она спросила, получил ли я приглашение.",
+          "examples": [
+            {
+              "text": "He asked whether we had booked a table.",
+              "translation_ru": "Он спросил, забронировали ли мы столик."
+            },
+            {
+              "text": "They asked whether she had seen the revised plan.",
+              "translation_ru": "Они спросили, видела ли она исправленный план."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + fragte(n), ob + embedded subject + participle + hatte(n)",
+          "example": "Sie fragte, ob ich die Einladung erhalten hatte.",
+          "translation": "Она спросила, получил ли я приглашение.",
+          "examples": [
+            {
+              "text": "Er fragte, ob wir einen Tisch reserviert hatten.",
+              "translation_ru": "Он спросил, забронировали ли мы столик."
+            },
+            {
+              "text": "Sie fragten, ob sie den überarbeiteten Plan gesehen hatte.",
+              "translation_ru": "Они спросили, видела ли она исправленный план."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Косвенный вопрос о прошлом",
+      "title_en": "Reporting a yes-or-no question about an earlier event",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK003",
+      "set_id": "GFK",
+      "pattern": "He asked why the figures did not match.",
+      "group_title": "An indirect wh-question without interrogative word order",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Embedded wh-clause with ordinary subject-verb order",
+        "form": "Asked + wh-word + subject + predicate",
+        "metaphor_ru": "Why сохраняется, но вопросительная инверсия исчезает. Отрицательное did not остаётся частью сказуемого, не переносится перед subject."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + asked + wh-word + embedded subject + ordinary predicate",
+          "example": "He asked why the figures did not match.",
+          "translation": "Он спросил, почему цифры не совпадают.",
+          "examples": [
+            {
+              "text": "She asked where the spare key was.",
+              "translation_ru": "Она спросила, где запасной ключ."
+            },
+            {
+              "text": "We asked when the next session would begin.",
+              "translation_ru": "Мы спросили, когда начнётся следующее занятие."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + fragte(n), wh-word + embedded subject + predicate at end",
+          "example": "Er fragte, warum die Zahlen nicht übereinstimmten.",
+          "translation": "Он спросил, почему цифры не совпадают.",
+          "examples": [
+            {
+              "text": "Sie fragte, wo der Ersatzschlüssel war.",
+              "translation_ru": "Она спросила, где запасной ключ."
+            },
+            {
+              "text": "Wir fragten, wann die nächste Sitzung beginnen würde.",
+              "translation_ru": "Мы спросили, когда начнётся следующее занятие."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Косвенный wh-вопрос без инверсии",
+      "title_en": "An indirect wh-question without interrogative word order",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK004",
+      "set_id": "GFK",
+      "pattern": "She explained how to reset the password.",
+      "group_title": "Reporting procedural knowledge through an infinitive question",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Wh-word plus infinitive as a procedural complement",
+        "form": "Verb + how/where/when + to-infinitive",
+        "metaphor_ru": "Исполнитель понятен из ситуации, поэтому можно how to reset вместо how we should reset. После explain адресат вводится через to, не explain me."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + reporting verb + how/where/when + to-infinitive",
+          "example": "She explained how to reset the password.",
+          "translation": "Она объяснила, как сбросить пароль.",
+          "examples": [
+            {
+              "text": "He showed us where to leave the keys.",
+              "translation_ru": "Он показал нам, где оставить ключи."
+            },
+            {
+              "text": "They told us when to return the equipment.",
+              "translation_ru": "Они сказали нам, когда вернуть оборудование."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + reporting verb, wh-word + man/we + infinitive + soll/kann",
+          "example": "Sie erklärte, wie man das Passwort zurücksetzen kann.",
+          "translation": "Она объяснила, как сбросить пароль.",
+          "examples": [
+            {
+              "text": "Er zeigte uns, wo wir die Schlüssel lassen sollten.",
+              "translation_ru": "Он показал нам, где оставить ключи."
+            },
+            {
+              "text": "Sie sagten uns, wann wir die Ausrüstung zurückgeben sollten.",
+              "translation_ru": "Они сказали нам, когда вернуть оборудование."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Объяснить, как выполнить",
+      "title_en": "Reporting procedural knowledge through an infinitive question",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK005",
+      "set_id": "GFK",
+      "pattern": "She said she had already sent the draft.",
+      "group_title": "A completed event before a past report",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past reporting with a prior completed event",
+        "form": "Said + subject + had already + participle",
+        "metaphor_ru": "Sent произошло раньше said. That можно опустить, но нельзя потерять временную связь: had already сохраняет предшествование."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + embedded subject + had already + past participle",
+          "example": "She said she had already sent the draft.",
+          "translation": "Она сказала, что уже отправила черновик.",
+          "examples": [
+            {
+              "text": "He said he had already spoken to the organiser.",
+              "translation_ru": "Он сказал, что уже поговорил с организатором."
+            },
+            {
+              "text": "They said they had already checked the address.",
+              "translation_ru": "Они сказали, что уже проверили адрес."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), embedded subject + habe(n) bereits + participle",
+          "example": "Sie sagte, sie habe den Entwurf bereits geschickt.",
+          "translation": "Она сказала, что уже отправила черновик.",
+          "examples": [
+            {
+              "text": "Er sagte, er habe bereits mit dem Organisator gesprochen.",
+              "translation_ru": "Он сказал, что уже поговорил с организатором."
+            },
+            {
+              "text": "Sie sagten, sie hätten die Adresse bereits geprüft.",
+              "translation_ru": "Они сказали, что уже проверили адрес."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Событие до момента сообщения",
+      "title_en": "A completed event before a past report",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK006",
+      "set_id": "GFK",
+      "pattern": "She said she would be working from home the following day.",
+      "group_title": "A future ongoing arrangement viewed from a past statement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reported future continuous",
+        "form": "Said + subject + would be + -ing",
+        "metaphor_ru": "Would be working — будущее относительно её слов. Tomorrow часто становится the following day, когда точка отсчёта рассказчика изменилась."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + embedded subject + would be + -ing + relative future time",
+          "example": "She said she would be working from home the following day.",
+          "translation": "Она сказала, что на следующий день будет работать из дома.",
+          "examples": [
+            {
+              "text": "He said he would be waiting at the main entrance.",
+              "translation_ru": "Он сказал, что будет ждать у главного входа."
+            },
+            {
+              "text": "They said they would be travelling throughout the following week.",
+              "translation_ru": "Они сказали, что всю следующую неделю будут в поездке."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), embedded subject + werde(n)/würde(n) + infinitive",
+          "example": "Sie sagte, sie werde am folgenden Tag von zu Hause aus arbeiten.",
+          "translation": "Она сказала, что на следующий день будет работать из дома.",
+          "examples": [
+            {
+              "text": "Er sagte, er werde am Haupteingang warten.",
+              "translation_ru": "Он сказал, что будет ждать у главного входа."
+            },
+            {
+              "text": "Sie sagten, sie würden die ganze folgende Woche unterwegs sein.",
+              "translation_ru": "Они сказали, что всю следующую неделю будут в поездке."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Будущий процесс из прошлого",
+      "title_en": "A future ongoing arrangement viewed from a past statement",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK007",
+      "set_id": "GFK",
+      "pattern": "He said he would have finished by the time we arrived.",
+      "group_title": "Future completion predicted from a past viewpoint",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reported future perfect with a later deadline",
+        "form": "Said + would have + participle + future-in-past boundary",
+        "metaphor_ru": "Would have не всегда условное сожаление. Здесь это переданное will have: завершение ожидалось позднее момента слов, но раньше нашего приезда."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + embedded subject + would have + participle + by + later boundary",
+          "example": "He said he would have finished by the time we arrived.",
+          "translation": "Он сказал, что к нашему приезду уже закончит.",
+          "examples": [
+            {
+              "text": "She said she would have read the report by Friday.",
+              "translation_ru": "Она сказала, что к пятнице уже прочитает отчёт."
+            },
+            {
+              "text": "They said they would have moved out by the end of the month.",
+              "translation_ru": "Они сказали, что к концу месяца уже съедут."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), embedded subject + werde(n)/würde(n) + participle + haben/sein",
+          "example": "Er sagte, er werde fertig geworden sein, wenn wir ankämen.",
+          "translation": "Он сказал, что к нашему приезду уже закончит.",
+          "examples": [
+            {
+              "text": "Sie sagte, sie werde den Bericht bis Freitag gelesen haben.",
+              "translation_ru": "Она сказала, что к пятнице уже прочитает отчёт."
+            },
+            {
+              "text": "Sie sagten, sie würden bis Ende des Monats ausgezogen sein.",
+              "translation_ru": "Они сказали, что к концу месяца уже съедут."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Будущее завершение из прошлого",
+      "title_en": "Future completion predicted from a past viewpoint",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK008",
+      "set_id": "GFK",
+      "pattern": "She explained that she had been waiting for over an hour.",
+      "group_title": "An ongoing earlier process explained from a past reporting point",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reported past duration with perfect progressive",
+        "form": "Explained that + had been + -ing + duration",
+        "metaphor_ru": "Процесс длился до или вокруг момента объяснения. Немецкий обычно передаёт это через Konjunktiv Perfekt и длительность, без отдельного progressive."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + explained that + embedded subject + had been + -ing + duration",
+          "example": "She explained that she had been waiting for over an hour.",
+          "translation": "Она объяснила, что ждала больше часа.",
+          "examples": [
+            {
+              "text": "He explained that he had been using the same method for years.",
+              "translation_ru": "Он объяснил, что годами пользовался одним и тем же методом."
+            },
+            {
+              "text": "They explained that they had been discussing the matter all morning.",
+              "translation_ru": "Они объяснили, что обсуждали этот вопрос всё утро."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + erklärte(n), embedded subject + habe/hätte + duration + participle",
+          "example": "Sie erklärte, sie habe über eine Stunde gewartet.",
+          "translation": "Она объяснила, что ждала больше часа.",
+          "examples": [
+            {
+              "text": "Er erklärte, er habe jahrelang dieselbe Methode verwendet.",
+              "translation_ru": "Он объяснил, что годами пользовался одним и тем же методом."
+            },
+            {
+              "text": "Sie erklärten, sie hätten den ganzen Vormittag über die Sache diskutiert.",
+              "translation_ru": "Они объяснили, что обсуждали этот вопрос всё утро."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Рассказ о прошлой длительности",
+      "title_en": "An ongoing earlier process explained from a past reporting point",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK009",
+      "set_id": "GFK",
+      "pattern": "She said the library closes at six, and that is still the schedule.",
+      "group_title": "Keeping the present when the reported information still holds",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Optional retention of present tense in still-valid reported information",
+        "form": "Past reporting verb + present-tense clause + current-validity context",
+        "metaphor_ru": "Backshift не автоматическая обязанность: если говорящий подтверждает актуальность, настоящее можно сохранить. Контекст явно показывает, что сведения всё ещё верны."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + still-valid present clause + confirmation of current validity",
+          "example": "She said the library closes at six, and that is still the schedule.",
+          "translation": "Она сказала, что библиотека закрывается в шесть, и это расписание всё ещё действует.",
+          "examples": [
+            {
+              "text": "He said the key opens both doors, and it still does.",
+              "translation_ru": "Он сказал, что ключ открывает обе двери, и это по-прежнему так."
+            },
+            {
+              "text": "They said the course includes weekly practice, and the current programme confirms that.",
+              "translation_ru": "Они сказали, что курс включает еженедельную практику, и текущая программа это подтверждает."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), dass + present clause + explicit continuing-validity context",
+          "example": "Sie sagte, dass die Bibliothek um sechs schließt, und dieser Zeitplan gilt noch.",
+          "translation": "Она сказала, что библиотека закрывается в шесть, и это расписание всё ещё действует.",
+          "examples": [
+            {
+              "text": "Er sagte, dass der Schlüssel beide Türen öffnet, und das tut er noch immer.",
+              "translation_ru": "Он сказал, что ключ открывает обе двери, и это по-прежнему так."
+            },
+            {
+              "text": "Sie sagten, dass der Kurs wöchentliche Übungen enthält, und das aktuelle Programm bestätigt das.",
+              "translation_ru": "Они сказали, что курс включает еженедельную практику, и текущая программа это подтверждает."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сохранить настоящее для актуального факта",
+      "title_en": "Keeping the present when the reported information still holds",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK010",
+      "set_id": "GFK",
+      "pattern": "She said we had to return the keys before noon.",
+      "group_title": "Reporting an obligation located in the past",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past obligation reported with had to",
+        "form": "Said + subject + had to + infinitive",
+        "metaphor_ru": "Must обязанности часто становится had to при пересказе из прошлого. Это не правило для must-догадки: значение модальности важно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + embedded subject + had to + infinitive",
+          "example": "She said we had to return the keys before noon.",
+          "translation": "Она сказала, что мы должны были вернуть ключи до полудня.",
+          "examples": [
+            {
+              "text": "He said he had to leave immediately.",
+              "translation_ru": "Он сказал, что должен был немедленно уйти."
+            },
+            {
+              "text": "They said every visitor had to sign in.",
+              "translation_ru": "Они сказали, что каждый посетитель должен был зарегистрироваться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), embedded subject + müsse(n) + infinitive",
+          "example": "Sie sagte, wir müssten die Schlüssel vor Mittag zurückgeben.",
+          "translation": "Она сказала, что мы должны были вернуть ключи до полудня.",
+          "examples": [
+            {
+              "text": "Er sagte, er müsse sofort gehen.",
+              "translation_ru": "Он сказал, что должен был немедленно уйти."
+            },
+            {
+              "text": "Sie sagten, jeder Besucher müsse sich anmelden.",
+              "translation_ru": "Они сказали, что каждый посетитель должен был зарегистрироваться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Передать прошлую обязанность",
+      "title_en": "Reporting an obligation located in the past",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK011",
+      "set_id": "GFK",
+      "pattern": "She said he must have missed the message.",
+      "group_title": "Retaining must when it expresses a deduction",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reported deductive must with perfect infinitive",
+        "form": "Said + must have + participle",
+        "metaphor_ru": "Must — вывод «должно быть», не обязанность. Замена на had to здесь изменила бы смысл с предположения на необходимость."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + embedded subject + must have + past participle",
+          "example": "She said he must have missed the message.",
+          "translation": "Она сказала, что он, должно быть, не заметил сообщение.",
+          "examples": [
+            {
+              "text": "He said we must have taken the wrong turning.",
+              "translation_ru": "Он сказал, что мы, должно быть, свернули не туда."
+            },
+            {
+              "text": "They said the parcel must have arrived earlier.",
+              "translation_ru": "Они сказали, что посылка, должно быть, пришла раньше."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), embedded subject + müsse(n) + participle + haben/sein",
+          "example": "Sie sagte, er müsse die Nachricht übersehen haben.",
+          "translation": "Она сказала, что он, должно быть, не заметил сообщение.",
+          "examples": [
+            {
+              "text": "Er sagte, wir müssten falsch abgebogen sein.",
+              "translation_ru": "Он сказал, что мы, должно быть, свернули не туда."
+            },
+            {
+              "text": "Sie sagten, das Paket müsse früher angekommen sein.",
+              "translation_ru": "Они сказали, что посылка, должно быть, пришла раньше."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Передать вывод с must",
+      "title_en": "Retaining must when it expresses a deduction",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK012",
+      "set_id": "GFK",
+      "pattern": "She said she would have helped if she had known.",
+      "group_title": "Reporting an already counterfactual statement without another backshift",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Stable past counterfactual inside reported speech",
+        "form": "Said + would have + participle + if + past perfect",
+        "metaphor_ru": "Would have и had known уже выражают нереальное прошлое. При пересказе не нужно придумывать ещё одно прошедшее время поверх них."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + said + counterfactual would-have clause + if + past-perfect clause",
+          "example": "She said she would have helped if she had known.",
+          "translation": "Она сказала, что помогла бы, если бы знала.",
+          "examples": [
+            {
+              "text": "He said he would have stayed if the last train had run later.",
+              "translation_ru": "Он сказал, что остался бы, если бы последний поезд отправлялся позже."
+            },
+            {
+              "text": "They said they would have agreed if we had explained the risk.",
+              "translation_ru": "Они сказали, что согласились бы, если бы мы объяснили риск."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sagte(n), past Konjunktiv II main clause + wenn + past Konjunktiv II condition",
+          "example": "Sie sagte, sie hätte geholfen, wenn sie es gewusst hätte.",
+          "translation": "Она сказала, что помогла бы, если бы знала.",
+          "examples": [
+            {
+              "text": "Er sagte, er wäre geblieben, wenn der letzte Zug später gefahren wäre.",
+              "translation_ru": "Он сказал, что остался бы, если бы последний поезд отправлялся позже."
+            },
+            {
+              "text": "Sie sagten, sie hätten zugestimmt, wenn wir das Risiko erklärt hätten.",
+              "translation_ru": "Они сказали, что согласились бы, если бы мы объяснили риск."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Передать нереальное прошлое",
+      "title_en": "Reporting an already counterfactual statement without another backshift",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK013",
+      "set_id": "GFK",
+      "pattern": "She suggested that he take a short break.",
+      "group_title": "A recommendation expressed with a mandative base verb",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Mandative subjunctive after suggest",
+        "form": "Suggest that + subject + base verb",
+        "metaphor_ru": "В мандативной конструкции he take идёт без -s. Это не ошибка согласования; вариант he should take также естественен, особенно в британском употреблении."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + suggested that + embedded subject + base-form verb",
+          "example": "She suggested that he take a short break.",
+          "translation": "Она предложила, чтобы он сделал небольшой перерыв.",
+          "examples": [
+            {
+              "text": "We suggested that the meeting start later.",
+              "translation_ru": "Мы предложили начать встречу позже."
+            },
+            {
+              "text": "He suggested that everyone bring one example.",
+              "translation_ru": "Он предложил, чтобы каждый принёс один пример."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + schlug(en) vor, dass + subject + infinitive + sollte(n)",
+          "example": "Sie schlug vor, dass er eine kurze Pause machen sollte.",
+          "translation": "Она предложила, чтобы он сделал небольшой перерыв.",
+          "examples": [
+            {
+              "text": "Wir schlugen vor, dass die Besprechung später beginnen sollte.",
+              "translation_ru": "Мы предложили начать встречу позже."
+            },
+            {
+              "text": "Er schlug vor, dass jeder ein Beispiel mitbringen sollte.",
+              "translation_ru": "Он предложил, чтобы каждый принёс один пример."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Рекомендация с subjunctive",
+      "title_en": "A recommendation expressed with a mandative base verb",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK014",
+      "set_id": "GFK",
+      "pattern": "She insisted that she had followed the instructions.",
+      "group_title": "Insisting that a proposition is true rather than demanding an action",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Factual insist with an indicative content clause",
+        "form": "Insist that + tensed factual claim",
+        "metaphor_ru": "Insist может означать «настаивать на истинности». Здесь had followed сообщает о факте; в требовании вроде insist that he leave была бы другая конструкция."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + insisted that + ordinary tensed content clause",
+          "example": "She insisted that she had followed the instructions.",
+          "translation": "Она настаивала, что следовала инструкциям.",
+          "examples": [
+            {
+              "text": "He insisted that the door was already open.",
+              "translation_ru": "Он настаивал, что дверь уже была открыта."
+            },
+            {
+              "text": "They insisted that nobody had warned them.",
+              "translation_ru": "Они настаивали, что их никто не предупреждал."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + bestand(en) darauf, dass + reported factual clause",
+          "example": "Sie bestand darauf, dass sie die Anweisungen befolgt habe.",
+          "translation": "Она настаивала, что следовала инструкциям.",
+          "examples": [
+            {
+              "text": "Er bestand darauf, dass die Tür bereits offen gewesen sei.",
+              "translation_ru": "Он настаивал, что дверь уже была открыта."
+            },
+            {
+              "text": "Sie bestanden darauf, dass niemand sie gewarnt habe.",
+              "translation_ru": "Они настаивали, что их никто не предупреждал."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Настаивать на истинности факта",
+      "title_en": "Insisting that a proposition is true rather than demanding an action",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK015",
+      "set_id": "GFK",
+      "pattern": "It is essential that every change be documented.",
+      "group_title": "A required state expressed with the subjunctive be",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Mandative be in an extraposed adjective clause",
+        "form": "It is essential that + subject + be + participle",
+        "metaphor_ru": "Be не изменяется по лицам и числам в таком формальном требовании. Should be documented — альтернативный вариант; is documented описывал бы факт в другом контексте."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It is + requirement adjective + that + subject + be + passive participle",
+          "example": "It is essential that every change be documented.",
+          "translation": "Необходимо, чтобы каждое изменение было задокументировано.",
+          "examples": [
+            {
+              "text": "It is important that the original be preserved.",
+              "translation_ru": "Важно, чтобы оригинал сохранили."
+            },
+            {
+              "text": "It is vital that all participants be informed.",
+              "translation_ru": "Крайне важно, чтобы всех участников уведомили."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es ist + adjective, dass + subject + participle + wird/werden",
+          "example": "Es ist unerlässlich, dass jede Änderung dokumentiert wird.",
+          "translation": "Необходимо, чтобы каждое изменение было задокументировано.",
+          "examples": [
+            {
+              "text": "Es ist wichtig, dass das Original erhalten bleibt.",
+              "translation_ru": "Важно, чтобы оригинал сохранили."
+            },
+            {
+              "text": "Es ist entscheidend, dass alle Teilnehmer informiert werden.",
+              "translation_ru": "Крайне важно, чтобы всех участников уведомили."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Требование с неизменяемым be",
+      "title_en": "A required state expressed with the subjunctive be",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK016",
+      "set_id": "GFK",
+      "pattern": "She advised me to keep a separate copy.",
+      "group_title": "Advice with a named recipient and infinitive action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Advice verb with object control",
+        "form": "Advise + person + to-infinitive",
+        "metaphor_ru": "Me — получатель совета и будущий исполнитель keep. У advise возможен такой каркас; не переносите его автоматически на suggest, где suggest me to неверно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + advised + person/object pronoun + to-infinitive",
+          "example": "She advised me to keep a separate copy.",
+          "translation": "Она посоветовала мне хранить отдельную копию.",
+          "examples": [
+            {
+              "text": "He advised us to check the opening hours.",
+              "translation_ru": "Он посоветовал нам проверить часы работы."
+            },
+            {
+              "text": "They advised her to ask for written confirmation.",
+              "translation_ru": "Они посоветовали ей запросить письменное подтверждение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + riet(en) + dative person, zu-infinitive",
+          "example": "Sie riet mir, eine separate Kopie aufzubewahren.",
+          "translation": "Она посоветовала мне хранить отдельную копию.",
+          "examples": [
+            {
+              "text": "Er riet uns, die Öffnungszeiten zu prüfen.",
+              "translation_ru": "Он посоветовал нам проверить часы работы."
+            },
+            {
+              "text": "Sie rieten ihr, um eine schriftliche Bestätigung zu bitten.",
+              "translation_ru": "Они посоветовали ей запросить письменное подтверждение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Совет конкретному человеку",
+      "title_en": "Advice with a named recipient and infinitive action",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK017",
+      "set_id": "GFK",
+      "pattern": "He admitted to having overlooked the warning.",
+      "group_title": "Admitting an earlier action after a prepositional to",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Admit to with a perfect gerund",
+        "form": "Admit to having + participle",
+        "metaphor_ru": "To здесь предлог, поэтому после него having, не have. Perfect gerund подчёркивает, что действие произошло раньше признания."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + admitted to having + past participle",
+          "example": "He admitted to having overlooked the warning.",
+          "translation": "Он признал, что не обратил внимания на предупреждение.",
+          "examples": [
+            {
+              "text": "She admitted to having copied the wrong address.",
+              "translation_ru": "Она признала, что скопировала не тот адрес."
+            },
+            {
+              "text": "They admitted to having underestimated the time required.",
+              "translation_ru": "Они признали, что недооценили необходимое время."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + gab(en) zu, participle + zu haben",
+          "example": "Er gab zu, die Warnung übersehen zu haben.",
+          "translation": "Он признал, что не обратил внимания на предупреждение.",
+          "examples": [
+            {
+              "text": "Sie gab zu, die falsche Adresse kopiert zu haben.",
+              "translation_ru": "Она признала, что скопировала не тот адрес."
+            },
+            {
+              "text": "Sie gaben zu, den Zeitbedarf unterschätzt zu haben.",
+              "translation_ru": "Они признали, что недооценили необходимое время."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Признать прошлое действие",
+      "title_en": "Admitting an earlier action after a prepositional to",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK018",
+      "set_id": "GFK",
+      "pattern": "They accused him of hiding the results.",
+      "group_title": "An accusation with a person object and gerund complement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Accuse object of gerund",
+        "form": "Accuse + person + of + -ing",
+        "metaphor_ru": "Обвинение — чьё-то утверждение, не установленная вина. Of связывает человека с действием; после предлога нужна форма -ing."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + accused + person + of + -ing phrase",
+          "example": "They accused him of hiding the results.",
+          "translation": "Они обвинили его в сокрытии результатов.",
+          "examples": [
+            {
+              "text": "She accused me of changing the plan without asking.",
+              "translation_ru": "Она обвинила меня в том, что я изменил план, не спросив."
+            },
+            {
+              "text": "He accused the company of ignoring his complaint.",
+              "translation_ru": "Он обвинил компанию в игнорировании его жалобы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + warf(en) + dative person + vor, zu-infinitive",
+          "example": "Sie warfen ihm vor, die Ergebnisse zu verheimlichen.",
+          "translation": "Они обвинили его в сокрытии результатов.",
+          "examples": [
+            {
+              "text": "Sie warf mir vor, den Plan ohne Rückfrage geändert zu haben.",
+              "translation_ru": "Она обвинила меня в том, что я изменил план, не спросив."
+            },
+            {
+              "text": "Er warf dem Unternehmen vor, seine Beschwerde zu ignorieren.",
+              "translation_ru": "Он обвинил компанию в игнорировании его жалобы."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Обвинить в действии",
+      "title_en": "An accusation with a person object and gerund complement",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK019",
+      "set_id": "GFK",
+      "pattern": "She warned us against making a decision too quickly.",
+      "group_title": "A warning advising someone not to take an action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Warn object against gerund",
+        "form": "Warn + person + against + -ing",
+        "metaphor_ru": "Against уже задаёт направление «не делать». Не добавляйте not making автоматически: это поменяет действие, от которого предостерегают."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + warned + person + against + -ing phrase",
+          "example": "She warned us against making a decision too quickly.",
+          "translation": "Она предостерегла нас от слишком поспешного решения.",
+          "examples": [
+            {
+              "text": "He warned me against relying on a single estimate.",
+              "translation_ru": "Он предостерёг меня от опоры на одну оценку."
+            },
+            {
+              "text": "They warned her against sending the original by ordinary post.",
+              "translation_ru": "Они предостерегли её от отправки оригинала обычной почтой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + warnte(n) + person + davor, zu-infinitive",
+          "example": "Sie warnte uns davor, zu schnell eine Entscheidung zu treffen.",
+          "translation": "Она предостерегла нас от слишком поспешного решения.",
+          "examples": [
+            {
+              "text": "Er warnte mich davor, mich auf eine einzige Schätzung zu verlassen.",
+              "translation_ru": "Он предостерёг меня от опоры на одну оценку."
+            },
+            {
+              "text": "Sie warnten sie davor, das Original mit gewöhnlicher Post zu versenden.",
+              "translation_ru": "Они предостерегли её от отправки оригинала обычной почтой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предостеречь от действия",
+      "title_en": "A warning advising someone not to take an action",
+      "group_id": "GFK"
+    },
+    {
+      "id": "GFK020",
+      "set_id": "GFK",
+      "pattern": "He apologised for having kept us waiting.",
+      "group_title": "An apology identifying an earlier action through a perfect gerund",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Apology with for and perfect gerund",
+        "form": "Apologise for having + participle",
+        "metaphor_ru": "For вводит причину извинения, having kept подчёркивает предшествование. После apologise адресат вводится через to, а не как прямое дополнение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + apologised for having + past participle phrase",
+          "example": "He apologised for having kept us waiting.",
+          "translation": "Он извинился за то, что заставил нас ждать.",
+          "examples": [
+            {
+              "text": "She apologised for having sent the wrong attachment.",
+              "translation_ru": "Она извинилась за то, что отправила не то вложение."
+            },
+            {
+              "text": "They apologised for having overlooked our request.",
+              "translation_ru": "Они извинились за то, что не заметили наш запрос."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + entschuldigte(n) sich dafür, participle + zu haben",
+          "example": "Er entschuldigte sich dafür, dass wir auf ihn hatten warten müssen.",
+          "translation": "Он извинился за то, что заставил нас ждать.",
+          "examples": [
+            {
+              "text": "Sie entschuldigte sich dafür, den falschen Anhang geschickt zu haben.",
+              "translation_ru": "Она извинилась за то, что отправила не то вложение."
+            },
+            {
+              "text": "Sie entschuldigten sich dafür, unsere Anfrage übersehen zu haben.",
+              "translation_ru": "Они извинились за то, что не заметили наш запрос."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Извиниться за прошлое действие",
+      "title_en": "An apology identifying an earlier action through a perfect gerund",
+      "group_id": "GFK"
+    }
+  ]
+}

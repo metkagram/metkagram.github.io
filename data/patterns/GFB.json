@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFB",
+  "title": "Modal scope and past inference",
+  "title_ru": "Модальность и выводы о прошлом",
+  "patterns": [
+    {
+      "id": "GFB001",
+      "set_id": "GFB",
+      "pattern": "You needn't have brought any food; we had plenty.",
+      "group_title": "An unnecessary action that was performed",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unnecessary completed action",
+        "form": "Need not have + participle",
+        "metaphor_ru": "Needn't have означает: действие произошло, но необходимости не было. Не путайте с didn't need to, которое само по себе не сообщает, было ли действие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + need not have + past participle",
+          "example": "You needn't have brought any food; we had plenty.",
+          "translation": "Зря ты принёс еду: у нас её было достаточно.",
+          "examples": [
+            {
+              "text": "I needn't have rushed; the train was late.",
+              "translation_ru": "Я зря торопился: поезд опоздал."
+            },
+            {
+              "text": "She needn't have printed the tickets; digital copies were accepted.",
+              "translation_ru": "Она зря распечатала билеты: электронные копии принимали."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hätte(n) + ... + nicht + infinitive + müssen",
+          "example": "Du hättest kein Essen mitbringen müssen; wir hatten genug.",
+          "translation": "Зря ты принёс еду: у нас её было достаточно.",
+          "examples": [
+            {
+              "text": "Ich hätte mich nicht beeilen müssen; der Zug hatte Verspätung.",
+              "translation_ru": "Я зря торопился: поезд опоздал."
+            },
+            {
+              "text": "Sie hätte die Fahrkarten nicht ausdrucken müssen; digitale Kopien wurden akzeptiert.",
+              "translation_ru": "Она зря распечатала билеты: электронные копии принимали."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сделано без необходимости",
+      "title_en": "An unnecessary action that was performed",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB002",
+      "set_id": "GFB",
+      "pattern": "I didn't need to book, so I just turned up.",
+      "group_title": "No past obligation, with the outcome made explicit",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Absent necessity without performed action",
+        "form": "Did not need to + infinitive + explicit outcome",
+        "metaphor_ru": "Didn't need to сообщает об отсутствии необходимости. Добавленная часть so показывает, что именно сделал человек; это не автоматический вывод из самой формы."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + did not need to + infinitive, so + past outcome",
+          "example": "I didn't need to book, so I just turned up.",
+          "translation": "Бронировать не требовалось, поэтому я просто пришёл.",
+          "examples": [
+            {
+              "text": "We didn't need to pay, so we kept the money.",
+              "translation_ru": "Платить не требовалось, поэтому деньги остались у нас."
+            },
+            {
+              "text": "She didn't need to drive, so she took the bus.",
+              "translation_ru": "Ей не требовалось ехать на машине, поэтому она поехала на автобусе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + musste(n) nicht + infinitive, also + past outcome",
+          "example": "Ich musste nicht reservieren, also kam ich einfach vorbei.",
+          "translation": "Бронировать не требовалось, поэтому я просто пришёл.",
+          "examples": [
+            {
+              "text": "Wir mussten nicht bezahlen, also behielten wir das Geld.",
+              "translation_ru": "Платить не требовалось, поэтому деньги остались у нас."
+            },
+            {
+              "text": "Sie musste nicht mit dem Auto fahren, also nahm sie den Bus.",
+              "translation_ru": "Ей не требовалось ехать на машине, поэтому она поехала на автобусе."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не было необходимости",
+      "title_en": "No past obligation, with the outcome made explicit",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB003",
+      "set_id": "GFB",
+      "pattern": "He must have been joking when he said that.",
+      "group_title": "Strong inference about an ongoing past action",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Inferred past process",
+        "form": "Must have been + -ing",
+        "metaphor_ru": "Must выражает уверенный вывод, а не обязанность. Been + -ing показывает процесс в тот прошлый момент."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + must have been + -ing + past context",
+          "example": "He must have been joking when he said that.",
+          "translation": "Должно быть, он шутил, когда это сказал.",
+          "examples": [
+            {
+              "text": "She must have been working when you called.",
+              "translation_ru": "Должно быть, она работала, когда ты позвонил."
+            },
+            {
+              "text": "They must have been waiting for us all evening.",
+              "translation_ru": "Должно быть, они ждали нас весь вечер."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + muss/müssen + ... + participle + haben/sein",
+          "example": "Er muss gescherzt haben, als er das sagte.",
+          "translation": "Должно быть, он шутил, когда это сказал.",
+          "examples": [
+            {
+              "text": "Sie muss gearbeitet haben, als du angerufen hast.",
+              "translation_ru": "Должно быть, она работала, когда ты позвонил."
+            },
+            {
+              "text": "Sie müssen den ganzen Abend auf uns gewartet haben.",
+              "translation_ru": "Должно быть, они ждали нас весь вечер."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вывод о прошлом процессе",
+      "title_en": "Strong inference about an ongoing past action",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB004",
+      "set_id": "GFB",
+      "pattern": "She can't have been listening; she missed the question.",
+      "group_title": "Ruling out an ongoing past action",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Excluded past process",
+        "form": "Cannot have been + -ing",
+        "metaphor_ru": "Это вывод о невозможности прошлого процесса, не запрет. В немецком kann nicht + Infinitiv Perfekt передаёт тот же вывод."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + cannot have been + -ing; evidence",
+          "example": "She can't have been listening; she missed the question.",
+          "translation": "Не может быть, чтобы она слушала: она пропустила вопрос.",
+          "examples": [
+            {
+              "text": "He can't have been driving; I saw him on the train.",
+              "translation_ru": "Не может быть, чтобы он ехал за рулём: я видел его в поезде."
+            },
+            {
+              "text": "They can't have been sleeping; the music was too loud.",
+              "translation_ru": "Не может быть, чтобы они спали: музыка была слишком громкой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + kann/können nicht + ... + participle + haben/sein",
+          "example": "Sie kann nicht zugehört haben; sie hat die Frage verpasst.",
+          "translation": "Не может быть, чтобы она слушала: она пропустила вопрос.",
+          "examples": [
+            {
+              "text": "Er kann nicht Auto gefahren sein; ich habe ihn im Zug gesehen.",
+              "translation_ru": "Не может быть, чтобы он ехал за рулём: я видел его в поезде."
+            },
+            {
+              "text": "Sie können nicht geschlafen haben; die Musik war zu laut.",
+              "translation_ru": "Не может быть, чтобы они спали: музыка была слишком громкой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Исключение прошлого процесса",
+      "title_en": "Ruling out an ongoing past action",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB005",
+      "set_id": "GFB",
+      "pattern": "She may have been trying to protect you.",
+      "group_title": "A possible explanation involving a past process",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Possible past process",
+        "form": "May have been + -ing",
+        "metaphor_ru": "Предлагаем возможное объяснение, не выдавая его за факт. Немецкий könnte с инфинитивом прошедшего времени сохраняет неопределённость."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + may have been + -ing",
+          "example": "She may have been trying to protect you.",
+          "translation": "Возможно, она пыталась тебя защитить.",
+          "examples": [
+            {
+              "text": "He may have been referring to another document.",
+              "translation_ru": "Возможно, он имел в виду другой документ."
+            },
+            {
+              "text": "They may have been using an older version.",
+              "translation_ru": "Возможно, они пользовались более старой версией."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + könnte(n) + ... + participle + haben/sein",
+          "example": "Sie könnte versucht haben, dich zu schützen.",
+          "translation": "Возможно, она пыталась тебя защитить.",
+          "examples": [
+            {
+              "text": "Er könnte sich auf ein anderes Dokument bezogen haben.",
+              "translation_ru": "Возможно, он имел в виду другой документ."
+            },
+            {
+              "text": "Sie könnten eine ältere Version benutzt haben.",
+              "translation_ru": "Возможно, они пользовались более старой версией."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможное объяснение процесса",
+      "title_en": "A possible explanation involving a past process",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB006",
+      "set_id": "GFB",
+      "pattern": "I should have been studying instead of watching videos.",
+      "group_title": "The activity that ought to have occupied past time",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unfulfilled expected past activity",
+        "form": "Should have been + -ing + instead of",
+        "metaphor_ru": "Оцениваем, каким процессом следовало заниматься тогда, вместо реально выбранного занятия."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + should have been + -ing + instead of + -ing",
+          "example": "I should have been studying instead of watching videos.",
+          "translation": "Мне следовало заниматься, а не смотреть видео.",
+          "examples": [
+            {
+              "text": "She should have been resting instead of answering emails.",
+              "translation_ru": "Ей следовало отдыхать, а не отвечать на письма."
+            },
+            {
+              "text": "We should have been checking facts instead of arguing.",
+              "translation_ru": "Нам следовало проверять факты, а не спорить."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hätte(n) + infinitive + sollen, statt + zu-infinitive",
+          "example": "Ich hätte lernen sollen, statt Videos anzusehen.",
+          "translation": "Мне следовало заниматься, а не смотреть видео.",
+          "examples": [
+            {
+              "text": "Sie hätte sich ausruhen sollen, statt E-Mails zu beantworten.",
+              "translation_ru": "Ей следовало отдыхать, а не отвечать на письма."
+            },
+            {
+              "text": "Wir hätten Fakten prüfen sollen, statt zu streiten.",
+              "translation_ru": "Нам следовало проверять факты, а не спорить."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Чем следовало заниматься",
+      "title_en": "The activity that ought to have occupied past time",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB007",
+      "set_id": "GFB",
+      "pattern": "The error could have been prevented with one check.",
+      "group_title": "A preventable past outcome in the passive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unrealised past passive possibility",
+        "form": "Could have been + past participle",
+        "metaphor_ru": "Объект оказывается в центре: что можно было предотвратить или сделать. Контекст показывает нереализованную возможность, а не догадку."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + could have been + past participle + means/context",
+          "example": "The error could have been prevented with one check.",
+          "translation": "Ошибку можно было предотвратить одной проверкой.",
+          "examples": [
+            {
+              "text": "The tickets could have been booked online, but we queued.",
+              "translation_ru": "Билеты можно было купить онлайн, но мы стояли в очереди."
+            },
+            {
+              "text": "The chair could have been repaired instead of replaced.",
+              "translation_ru": "Стул можно было починить, а не заменять."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hätte(n) + participle + werden können",
+          "example": "Der Fehler hätte durch eine einzige Prüfung verhindert werden können.",
+          "translation": "Ошибку можно было предотвратить одной проверкой.",
+          "examples": [
+            {
+              "text": "Die Fahrkarten hätten online gebucht werden können, aber wir standen an.",
+              "translation_ru": "Билеты можно было купить онлайн, но мы стояли в очереди."
+            },
+            {
+              "text": "Der Stuhl hätte repariert werden können, statt ersetzt zu werden.",
+              "translation_ru": "Стул можно было починить, а не заменять."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нереализованная возможность в пассиве",
+      "title_en": "A preventable past outcome in the passive",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB008",
+      "set_id": "GFB",
+      "pattern": "The message might have been sent to the wrong address.",
+      "group_title": "An uncertain past event in the passive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Possible past passive event",
+        "form": "Might have been + past participle",
+        "metaphor_ru": "Неизвестно, случилось ли это. Немецкое könnte ... worden sein описывает предположение; hätte ... werden können означало бы возможность сделать."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + might have been + past participle",
+          "example": "The message might have been sent to the wrong address.",
+          "translation": "Возможно, сообщение отправили не по тому адресу.",
+          "examples": [
+            {
+              "text": "The file might have been deleted by mistake.",
+              "translation_ru": "Возможно, файл удалили по ошибке."
+            },
+            {
+              "text": "The meeting might have been postponed.",
+              "translation_ru": "Возможно, встречу перенесли."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + könnte(n) + participle + worden sein",
+          "example": "Die Nachricht könnte an die falsche Adresse geschickt worden sein.",
+          "translation": "Возможно, сообщение отправили не по тому адресу.",
+          "examples": [
+            {
+              "text": "Die Datei könnte versehentlich gelöscht worden sein.",
+              "translation_ru": "Возможно, файл удалили по ошибке."
+            },
+            {
+              "text": "Die Besprechung könnte verschoben worden sein.",
+              "translation_ru": "Возможно, встречу перенесли."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможное прошлое событие в пассиве",
+      "title_en": "An uncertain past event in the passive",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB009",
+      "set_id": "GFB",
+      "pattern": "The customer should have been informed earlier.",
+      "group_title": "A past duty left unfulfilled in the passive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past passive obligation not met",
+        "form": "Should have been + past participle",
+        "metaphor_ru": "Говорим, что над объектом следовало совершить действие раньше. Обычно это критика невыполненного действия; контекст может также выражать ожидание."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + should have been + past participle + time",
+          "example": "The customer should have been informed earlier.",
+          "translation": "Клиента следовало уведомить раньше.",
+          "examples": [
+            {
+              "text": "These figures should have been checked before publication.",
+              "translation_ru": "Эти цифры следовало проверить до публикации."
+            },
+            {
+              "text": "The door should have been locked last night.",
+              "translation_ru": "Вчера вечером дверь следовало запереть."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hätte(n) + participle + werden sollen",
+          "example": "Der Kunde hätte früher informiert werden sollen.",
+          "translation": "Клиента следовало уведомить раньше.",
+          "examples": [
+            {
+              "text": "Diese Zahlen hätten vor der Veröffentlichung geprüft werden sollen.",
+              "translation_ru": "Эти цифры следовало проверить до публикации."
+            },
+            {
+              "text": "Die Tür hätte gestern Abend abgeschlossen werden sollen.",
+              "translation_ru": "Вчера вечером дверь следовало запереть."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Невыполненная обязанность в пассиве",
+      "title_en": "A past duty left unfulfilled in the passive",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB010",
+      "set_id": "GFB",
+      "pattern": "The lock must have been forced; the frame is damaged.",
+      "group_title": "Strong evidence for a past passive event",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Inferred past passive event",
+        "form": "Must have been + past participle + evidence",
+        "metaphor_ru": "Must выражает вывод из следов. Немецкое muss ... worden sein — догадка о прошлом пассивном событии, не необходимость."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + must have been + past participle; evidence",
+          "example": "The lock must have been forced; the frame is damaged.",
+          "translation": "Должно быть, замок взломали: рама повреждена.",
+          "examples": [
+            {
+              "text": "The room must have been cleaned; everything is spotless.",
+              "translation_ru": "Должно быть, комнату убрали: всё безупречно чисто."
+            },
+            {
+              "text": "The date must have been changed; my calendar says Monday.",
+              "translation_ru": "Должно быть, дату изменили: у меня в календаре стоит понедельник."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + muss/müssen + participle + worden sein; evidence",
+          "example": "Das Schloss muss aufgebrochen worden sein; der Rahmen ist beschädigt.",
+          "translation": "Должно быть, замок взломали: рама повреждена.",
+          "examples": [
+            {
+              "text": "Das Zimmer muss geputzt worden sein; alles ist makellos sauber.",
+              "translation_ru": "Должно быть, комнату убрали: всё безупречно чисто."
+            },
+            {
+              "text": "Das Datum muss geändert worden sein; in meinem Kalender steht Montag.",
+              "translation_ru": "Должно быть, дату изменили: у меня в календаре стоит понедельник."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Уверенный вывод в пассиве",
+      "title_en": "Strong evidence for a past passive event",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB011",
+      "set_id": "GFB",
+      "pattern": "You were supposed to have finished by noon.",
+      "group_title": "Expected completion by an earlier deadline",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Missed expected completion",
+        "form": "Was supposed to have + past participle",
+        "metaphor_ru": "Ожидалось не начало действия, а его завершение к сроку. Форма часто подразумевает, что ожидание не оправдалось."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were supposed to have + past participle + by + deadline",
+          "example": "You were supposed to have finished by noon.",
+          "translation": "Предполагалось, что к полудню ты уже закончишь.",
+          "examples": [
+            {
+              "text": "They were supposed to have arrived by Friday.",
+              "translation_ru": "Предполагалось, что к пятнице они уже приедут."
+            },
+            {
+              "text": "She was supposed to have sent the report by yesterday.",
+              "translation_ru": "Предполагалось, что ко вчерашнему дню она уже отправит отчёт."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sollte(n) + bis + deadline + participle + haben/sein",
+          "example": "Du solltest bis Mittag fertig geworden sein.",
+          "translation": "Предполагалось, что к полудню ты уже закончишь.",
+          "examples": [
+            {
+              "text": "Sie sollten bis Freitag angekommen sein.",
+              "translation_ru": "Предполагалось, что к пятнице они уже приедут."
+            },
+            {
+              "text": "Sie sollte den Bericht bis gestern geschickt haben.",
+              "translation_ru": "Предполагалось, что ко вчерашнему дню она уже отправит отчёт."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ожидаемое завершение к сроку",
+      "title_en": "Expected completion by an earlier deadline",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB012",
+      "set_id": "GFB",
+      "pattern": "You may well be right, but we need evidence.",
+      "group_title": "A plausible concession without certainty",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Plausibility conceded",
+        "form": "May well + infinitive, but",
+        "metaphor_ru": "May well означает «вполне возможно», а не разрешение и не well в значении качества действия. Уступка не отменяет последующее ограничение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + may well + infinitive, but + qualification",
+          "example": "You may well be right, but we need evidence.",
+          "translation": "Вполне возможно, ты прав, но нам нужны доказательства.",
+          "examples": [
+            {
+              "text": "It may well work, but we should test it.",
+              "translation_ru": "Вполне возможно, это сработает, но стоит проверить."
+            },
+            {
+              "text": "She may well agree, but we must ask her.",
+              "translation_ru": "Вполне возможно, она согласится, но мы должны её спросить."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es ist gut möglich, dass + clause, aber + qualification",
+          "example": "Es ist gut möglich, dass du recht hast, aber wir brauchen Belege.",
+          "translation": "Вполне возможно, ты прав, но нам нужны доказательства.",
+          "examples": [
+            {
+              "text": "Es ist gut möglich, dass es funktioniert, aber wir sollten es testen.",
+              "translation_ru": "Вполне возможно, это сработает, но стоит проверить."
+            },
+            {
+              "text": "Es ist gut möglich, dass sie zustimmt, aber wir müssen sie fragen.",
+              "translation_ru": "Вполне возможно, она согласится, но мы должны её спросить."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Правдоподобная уступка",
+      "title_en": "A plausible concession without certainty",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB013",
+      "set_id": "GFB",
+      "pattern": "We might as well walk; the bus has gone.",
+      "group_title": "Choosing a reasonable option when alternatives are weak",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Pragmatic fallback choice",
+        "form": "Might as well + infinitive",
+        "metaphor_ru": "Не «может быть, одинаково хорошо», а предложение воспользоваться разумным вариантом, раз лучший недоступен. Немецкое können genauso gut передаёт этот выбор."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + might as well + infinitive; reason",
+          "example": "We might as well walk; the bus has gone.",
+          "translation": "Можно и пешком пойти: автобус уже ушёл.",
+          "examples": [
+            {
+              "text": "I might as well finish this now; I'm already here.",
+              "translation_ru": "Можно уж закончить это сейчас: я всё равно здесь."
+            },
+            {
+              "text": "You might as well keep the spare key; I have another.",
+              "translation_ru": "Можешь оставить запасной ключ себе: у меня есть ещё один."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + können + genauso gut + infinitive; reason",
+          "example": "Wir können genauso gut zu Fuß gehen; der Bus ist weg.",
+          "translation": "Можно и пешком пойти: автобус уже ушёл.",
+          "examples": [
+            {
+              "text": "Ich kann das genauso gut jetzt fertig machen; ich bin schon hier.",
+              "translation_ru": "Можно уж закончить это сейчас: я всё равно здесь."
+            },
+            {
+              "text": "Du kannst den Ersatzschlüssel genauso gut behalten; ich habe noch einen.",
+              "translation_ru": "Можешь оставить запасной ключ себе: у меня есть ещё один."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Разумный запасной вариант",
+      "title_en": "Choosing a reasonable option when alternatives are weak",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB014",
+      "set_id": "GFB",
+      "pattern": "You cannot be too careful with personal data.",
+      "group_title": "There is no excessive degree of a desirable precaution",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unlimited justified precaution",
+        "form": "Cannot be too + adjective",
+        "metaphor_ru": "Устойчивая логика: осторожность не бывает чрезмерной, то есть нужно быть очень осторожным. Это не «нельзя быть слишком осторожным» как ограничение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + cannot be too + adjective + context",
+          "example": "You cannot be too careful with personal data.",
+          "translation": "С личными данными лишняя осторожность не помешает.",
+          "examples": [
+            {
+              "text": "We cannot be too precise about the deadline.",
+              "translation_ru": "Чем точнее мы обозначим срок, тем лучше."
+            },
+            {
+              "text": "You cannot be too clear when giving emergency instructions.",
+              "translation_ru": "В экстренных инструкциях лишняя ясность не помешает."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + kann/können nicht + adjective + genug + sein",
+          "example": "Mit persönlichen Daten kann man nicht vorsichtig genug sein.",
+          "translation": "С личными данными лишняя осторожность не помешает.",
+          "examples": [
+            {
+              "text": "Bei der Frist können wir nicht genau genug sein.",
+              "translation_ru": "Чем точнее мы обозначим срок, тем лучше."
+            },
+            {
+              "text": "Bei Notfallanweisungen kann man nicht deutlich genug sein.",
+              "translation_ru": "В экстренных инструкциях лишняя ясность не помешает."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Лишняя осторожность не помешает",
+      "title_en": "There is no excessive degree of a desirable precaution",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB015",
+      "set_id": "GFB",
+      "pattern": "That need not mean the plan has failed.",
+      "group_title": "A conclusion is not logically necessary",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Non-necessary inference",
+        "form": "Need not mean + clause",
+        "metaphor_ru": "Отрицается обязательность вывода, а не сам факт. Немецкое muss nicht bedeuten также означает «не обязательно означает»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "This/That + need not mean + finite clause",
+          "example": "That need not mean the plan has failed.",
+          "translation": "Это не обязательно означает, что план провалился.",
+          "examples": [
+            {
+              "text": "This need not mean we have to start again.",
+              "translation_ru": "Это не обязательно означает, что нам придётся начинать заново."
+            },
+            {
+              "text": "That need not mean she disagrees.",
+              "translation_ru": "Это не обязательно означает, что она не согласна."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das + muss nicht bedeuten, dass + clause",
+          "example": "Das muss nicht bedeuten, dass der Plan gescheitert ist.",
+          "translation": "Это не обязательно означает, что план провалился.",
+          "examples": [
+            {
+              "text": "Das muss nicht bedeuten, dass wir neu anfangen müssen.",
+              "translation_ru": "Это не обязательно означает, что нам придётся начинать заново."
+            },
+            {
+              "text": "Das muss nicht bedeuten, dass sie anderer Meinung ist.",
+              "translation_ru": "Это не обязательно означает, что она не согласна."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вывод не обязателен",
+      "title_en": "A conclusion is not logically necessary",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB016",
+      "set_id": "GFB",
+      "pattern": "She may not have understood the question.",
+      "group_title": "Possibility with negation inside its scope",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Possible absence of a past event",
+        "form": "May not have + participle",
+        "metaphor_ru": "Возможно, событие НЕ произошло. Это отличается от can't have: там говорящий исключает событие, здесь только допускает его отсутствие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + may not have + past participle",
+          "example": "She may not have understood the question.",
+          "translation": "Возможно, она не поняла вопрос.",
+          "examples": [
+            {
+              "text": "They may not have received the invitation.",
+              "translation_ru": "Возможно, они не получили приглашение."
+            },
+            {
+              "text": "He may not have noticed the sign.",
+              "translation_ru": "Возможно, он не заметил знак."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Vielleicht + haben/sein + subject + nicht + participle",
+          "example": "Vielleicht hat sie die Frage nicht verstanden.",
+          "translation": "Возможно, она не поняла вопрос.",
+          "examples": [
+            {
+              "text": "Vielleicht haben sie die Einladung nicht erhalten.",
+              "translation_ru": "Возможно, они не получили приглашение."
+            },
+            {
+              "text": "Vielleicht hat er das Schild nicht bemerkt.",
+              "translation_ru": "Возможно, он не заметил знак."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможно, действие не произошло",
+      "title_en": "Possibility with negation inside its scope",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB017",
+      "set_id": "GFB",
+      "pattern": "He would not tell me what had happened.",
+      "group_title": "Refusal in the past rather than future prediction",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past refusal",
+        "form": "Would not + infinitive + past context",
+        "metaphor_ru": "Would not может обозначать упрямый отказ, а не условное будущее. Для неодушевлённого предмета аналогично описывает отказ работать."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + would not + infinitive + past context",
+          "example": "He would not tell me what had happened.",
+          "translation": "Он отказывался сказать мне, что произошло.",
+          "examples": [
+            {
+              "text": "She would not accept any help.",
+              "translation_ru": "Она отказывалась принимать помощь."
+            },
+            {
+              "text": "The engine would not start, however often I tried.",
+              "translation_ru": "Двигатель никак не заводился, сколько бы я ни пытался."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + wollte(n) nicht + infinitive",
+          "example": "Er wollte mir nicht sagen, was passiert war.",
+          "translation": "Он отказывался сказать мне, что произошло.",
+          "examples": [
+            {
+              "text": "Sie wollte keine Hilfe annehmen.",
+              "translation_ru": "Она отказывалась принимать помощь."
+            },
+            {
+              "text": "Der Motor wollte nicht anspringen, so oft ich es auch versuchte.",
+              "translation_ru": "Двигатель никак не заводился, сколько бы я ни пытался."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отказ в прошлом",
+      "title_en": "Refusal in the past rather than future prediction",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB018",
+      "set_id": "GFB",
+      "pattern": "You should know better than to share passwords.",
+      "group_title": "Expected judgement against an unwise action",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reproach for poor judgement",
+        "form": "Should know better than to + infinitive",
+        "metaphor_ru": "Ожидается, что человек достаточно понимает, чтобы так не поступать. Это упрёк, поэтому каркас не нейтрален по тону."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + should know better than to + infinitive",
+          "example": "You should know better than to share passwords.",
+          "translation": "Ты должен понимать, что нельзя делиться паролями.",
+          "examples": [
+            {
+              "text": "She should know better than to trust an unsigned message.",
+              "translation_ru": "Она должна понимать, что нельзя доверять неподписанному сообщению."
+            },
+            {
+              "text": "We should know better than to promise an impossible deadline.",
+              "translation_ru": "Мы должны понимать, что нельзя обещать нереальный срок."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sollte(n) wissen, dass + subject + nicht + ... + darf/dürfen",
+          "example": "Du solltest wissen, dass du Passwörter nicht weitergeben darfst.",
+          "translation": "Ты должен понимать, что нельзя делиться паролями.",
+          "examples": [
+            {
+              "text": "Sie sollte wissen, dass sie einer nicht unterschriebenen Nachricht nicht vertrauen darf.",
+              "translation_ru": "Она должна понимать, что нельзя доверять неподписанному сообщению."
+            },
+            {
+              "text": "Wir sollten wissen, dass wir keinen unmöglichen Termin versprechen dürfen.",
+              "translation_ru": "Мы должны понимать, что нельзя обещать нереальный срок."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Упрёк за неверное решение",
+      "title_en": "Expected judgement against an unwise action",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB019",
+      "set_id": "GFB",
+      "pattern": "You had better not leave this until Friday.",
+      "group_title": "A warning against a specific future action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative advice with a consequence implied",
+        "form": "Had better not + bare infinitive",
+        "metaphor_ru": "Несмотря на had, речь о настоящем или будущем. Not ставится после better; каркас звучит как предупреждение, сильнее обычного совета."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had better not + bare infinitive",
+          "example": "You had better not leave this until Friday.",
+          "translation": "Тебе лучше не откладывать это до пятницы.",
+          "examples": [
+            {
+              "text": "We had better not mention the surprise.",
+              "translation_ru": "Нам лучше не упоминать сюрприз."
+            },
+            {
+              "text": "He had better not lose that key.",
+              "translation_ru": "Ему лучше не терять этот ключ."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sollte(n) + lieber nicht + infinitive",
+          "example": "Du solltest das lieber nicht bis Freitag aufschieben.",
+          "translation": "Тебе лучше не откладывать это до пятницы.",
+          "examples": [
+            {
+              "text": "Wir sollten die Überraschung lieber nicht erwähnen.",
+              "translation_ru": "Нам лучше не упоминать сюрприз."
+            },
+            {
+              "text": "Er sollte diesen Schlüssel lieber nicht verlieren.",
+              "translation_ru": "Ему лучше не терять этот ключ."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предостережение с had better",
+      "title_en": "A warning against a specific future action",
+      "group_id": "GFB"
+    },
+    {
+      "id": "GFB020",
+      "set_id": "GFB",
+      "pattern": "How was I to know the entrance had changed?",
+      "group_title": "Challenging an unrealistic expectation of knowledge",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Rhetorical impossibility of knowing",
+        "form": "How was subject to know + clause?",
+        "metaphor_ru": "Вопрос не столько запрашивает способ узнать, сколько защищает говорящего от несправедливого ожидания. Немецкое Woher sollte ... wissen передаёт тот же смысл."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How + was/were + subject + to know + embedded clause?",
+          "example": "How was I to know the entrance had changed?",
+          "translation": "Откуда мне было знать, что вход изменился?",
+          "examples": [
+            {
+              "text": "How were we to know you needed help?",
+              "translation_ru": "Откуда нам было знать, что тебе нужна помощь?"
+            },
+            {
+              "text": "How was she to know the file was outdated?",
+              "translation_ru": "Откуда ей было знать, что файл устарел?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Woher + sollte(n) + subject + wissen, dass + clause?",
+          "example": "Woher sollte ich wissen, dass der Eingang verlegt worden war?",
+          "translation": "Откуда мне было знать, что вход изменился?",
+          "examples": [
+            {
+              "text": "Woher sollten wir wissen, dass du Hilfe brauchtest?",
+              "translation_ru": "Откуда нам было знать, что тебе нужна помощь?"
+            },
+            {
+              "text": "Woher sollte sie wissen, dass die Datei veraltet war?",
+              "translation_ru": "Откуда ей было знать, что файл устарел?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Откуда было знать",
+      "title_en": "Challenging an unrealistic expectation of knowledge",
+      "group_id": "GFB"
+    }
+  ]
+}

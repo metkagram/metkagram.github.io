@@ -1,3 +1,4 @@
+import { expectedPatternCount, assertCanonicalIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -18,7 +19,7 @@ function html(...parts) {
 test("connectivity graph covers full public Practice with a bounded reasoning layer", () => {
   assert.equal(graph.schemaVersion, 1);
   assert.equal(graph.sourceCounts.advancedPatterns, patterns.length);
-  assert.ok(patterns.length >= 600, `expected canonical Practice curriculum, found ${patterns.length}`);
+  assertCanonicalIds(patterns, "connectivity Pattern source");
   assert.equal(graph.sourceCounts.annotatedDocuments, 72);
   assert.equal(graph.sourceCounts.reasoningFrames, reasoningPatterns.length);
   assert.equal(reasoning.count, reasoningPatterns.length);

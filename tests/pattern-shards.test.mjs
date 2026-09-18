@@ -1,3 +1,5 @@
+import { isEstablishedPattern, expectedPatternCount, expectedStudySetCount } from './helpers/curriculum-contract.mjs';
+import { expansionPatternIds, expansionSetIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -14,7 +16,7 @@ const sha = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const baseline = JSON.parse(fs.readFileSync(path.join(ROOT, "tests", "fixtures", "pattern-corpus-baseline.json"), "utf8"));
 
 function studySetOrder() {
-  const studySets = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "study-sets.json"), "utf8"));
+  const studySets = loadContent().studySets;
   return studySets.sets.map((set) => set.id);
 }
 
@@ -25,8 +27,12 @@ function writeShard(root, setId, patterns, { fileName = `${setId}.json`, schemaV
 }
 
 test("every shard preserves the frozen corpus identity and membership baseline", () => {
-  const { patterns, shards } = loadPatternShards({ setOrder: studySetOrder() });
-  assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length, "one shard per study set with base patterns");
+  const { patterns: allPatterns, shards } = loadPatternShards({ setOrder: studySetOrder() });
+  const patterns = allPatterns.filter(isEstablishedPattern);
+  assert.equal(allPatterns.length, baseline.basePatterns.count + expansionPatternIds.length, "established raw patterns plus complete expansion");
+  assert.deepEqual(allPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...expansionPatternIds].sort(), "all new shard IDs must be present");
+  assert.equal(new Set(allPatterns.map(pattern => pattern.id)).size, allPatterns.length, "all shard IDs must be unique");
+  assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length + expansionSetIds.length, "all established shards plus 15 additive sets");
   assert.equal(patterns.length, baseline.basePatterns.count, "base pattern count parity");
   const ids = patterns.map((pattern) => pattern.id);
   assert.equal(new Set(ids).size, ids.length, "duplicate pattern id survived sharding");
@@ -57,14 +63,15 @@ test("reconstruction is deterministic and follows the study-set order", () => {
 test("loadContent preserves merged corpus identity while allowing editorial text fixes", () => {
   const content = loadContent();
   const patterns = content.advancedPatterns;
-  assert.equal(patterns.length, baseline.mergedCorpus.patternCount, "merged pattern count parity");
-  assert.equal(content.studySets.sets.length, baseline.mergedCorpus.studySetCount, "study-set count parity");
+  assert.equal(patterns.filter(isEstablishedPattern).length, baseline.mergedCorpus.patternCount, "frozen merged corpus remains present");
+  assert.equal(patterns.length, expectedPatternCount, "complete additive corpus");
+  assert.equal(content.studySets.sets.length, expectedStudySetCount, "established sets plus registered additions");
   assert.equal(patterns.filter((pattern) => pattern.reasoning?.move).length, baseline.mergedCorpus.reasoningMoveCount, "Move assignment parity");
 });
 
 test("canonical pattern routes are unchanged by sharding", () => {
   const content = loadContent();
-  const routes = content.advancedPatterns.map((pattern) => `${pattern.id}:${patternPath("en", pattern)}`).sort().join("\n");
+  const routes = content.advancedPatterns.filter(isEstablishedPattern).map((pattern) => `${pattern.id}:${patternPath("en", pattern)}`).sort().join("\n");
   assert.equal(sha(routes), baseline.mergedCorpus.idRouteSha256, "stable ID → canonical route mapping drifted");
 });
 

@@ -1,3 +1,4 @@
+import { historicalAliases } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -20,7 +21,7 @@ const pageFile = (route) => path.join(DIST, route.slice(1), "index.html");
 test("frozen SEO registry covers every topic set and every pattern", () => {
   assert.equal(registry.schemaVersion, 1);
   assert.deepEqual(new Set(Object.keys(registry.studySets)), new Set(content.studySets.sets.map((set) => set.id)));
-  assert.deepEqual(new Set(Object.keys(registry.patterns)), new Set(content.advancedPatterns.map((pattern) => pattern.id)));
+  assert.deepEqual(new Set(Object.keys(registry.patterns)), new Set([...content.advancedPatterns.map((pattern) => pattern.id), ...Object.keys(historicalAliases)]), "registry must cover live patterns AND frozen historical aliases");
 
   const slugs = content.advancedPatterns.map(patternSlug);
   assert.equal(new Set(slugs).size, content.advancedPatterns.length);

@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFE",
+  "title": "Quantification and agreement",
+  "title_ru": "Количество и согласование",
+  "patterns": [
+    {
+      "id": "GFE001",
+      "set_id": "GFE",
+      "pattern": "Not all the files need to be kept.",
+      "group_title": "Negating a universal statement without negating every member",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Partial negation of all",
+        "form": "Not all + plural noun + predicate",
+        "metaphor_ru": "Not all означает «не все», а не «ни один». Отрицание относится к охвату группы, поэтому часть объектов может соответствовать условию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not all + determiner + plural noun + plural predicate",
+          "example": "Not all the files need to be kept.",
+          "translation": "Не все файлы нужно сохранять.",
+          "examples": [
+            {
+              "text": "Not all our guests eat meat.",
+              "translation_ru": "Не все наши гости едят мясо."
+            },
+            {
+              "text": "Not all these changes have been approved.",
+              "translation_ru": "Не все эти изменения одобрены."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nicht alle + plural noun + plural predicate",
+          "example": "Nicht alle Dateien müssen aufbewahrt werden.",
+          "translation": "Не все файлы нужно сохранять.",
+          "examples": [
+            {
+              "text": "Nicht alle unsere Gäste essen Fleisch.",
+              "translation_ru": "Не все наши гости едят мясо."
+            },
+            {
+              "text": "Nicht alle diese Änderungen wurden genehmigt.",
+              "translation_ru": "Не все эти изменения одобрены."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не все — не значит никто",
+      "title_en": "Negating a universal statement without negating every member",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE002",
+      "set_id": "GFE",
+      "pattern": "We cannot use both rooms at the same time.",
+      "group_title": "Excluding a pair jointly without excluding each separately",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Joint possibility denied for both",
+        "form": "Cannot + verb + both + plural noun + together-context",
+        "metaphor_ru": "Нельзя сделать оба одновременно, но один вариант может быть доступен. Контекст at the same time устраняет двусмысленность области отрицания."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + cannot + infinitive + both + plural noun + at the same time",
+          "example": "We cannot use both rooms at the same time.",
+          "translation": "Мы не можем использовать обе комнаты одновременно.",
+          "examples": [
+            {
+              "text": "She cannot attend both meetings at the same time.",
+              "translation_ru": "Она не может присутствовать на обеих встречах одновременно."
+            },
+            {
+              "text": "You cannot charge both devices at the same time.",
+              "translation_ru": "Ты не можешь заряжать оба устройства одновременно."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + kann/können nicht + beide + plural noun + gleichzeitig + infinitive",
+          "example": "Wir können nicht beide Räume gleichzeitig nutzen.",
+          "translation": "Мы не можем использовать обе комнаты одновременно.",
+          "examples": [
+            {
+              "text": "Sie kann nicht an beiden Besprechungen gleichzeitig teilnehmen.",
+              "translation_ru": "Она не может присутствовать на обеих встречах одновременно."
+            },
+            {
+              "text": "Du kannst nicht beide Geräte gleichzeitig laden.",
+              "translation_ru": "Ты не можешь заряжать оба устройства одновременно."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нельзя оба одновременно",
+      "title_en": "Excluding a pair jointly without excluding each separately",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE003",
+      "set_id": "GFE",
+      "pattern": "Neither of the two answers is complete.",
+      "group_title": "Neither member of a pair meets the condition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Neither with singular formal agreement",
+        "form": "Neither of + plural group + singular verb",
+        "metaphor_ru": "В аккуратном письменном английском neither of обычно согласуют в единственном числе. Разговорное множественное встречается, но здесь тренируем устойчивый формальный вариант."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Neither of + definite plural group + singular predicate",
+          "example": "Neither of the two answers is complete.",
+          "translation": "Ни один из двух ответов не является полным.",
+          "examples": [
+            {
+              "text": "Neither of my parents has seen this film.",
+              "translation_ru": "Ни один из моих родителей не видел этот фильм."
+            },
+            {
+              "text": "Neither of these keys fits the lock.",
+              "translation_ru": "Ни один из этих двух ключей не подходит к замку."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Keiner/Keine/Keines der beiden + plural noun + singular predicate",
+          "example": "Keine der beiden Antworten ist vollständig.",
+          "translation": "Ни один из двух ответов не является полным.",
+          "examples": [
+            {
+              "text": "Keiner meiner beiden Elternteile hat diesen Film gesehen.",
+              "translation_ru": "Ни один из моих родителей не видел этот фильм."
+            },
+            {
+              "text": "Keiner dieser beiden Schlüssel passt ins Schloss.",
+              "translation_ru": "Ни один из этих двух ключей не подходит к замку."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ни один из двух",
+      "title_en": "Neither member of a pair meets the condition",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE004",
+      "set_id": "GFE",
+      "pattern": "Either of these two routes takes us to the station.",
+      "group_title": "Each of two alternatives is independently acceptable",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Either with singular distributive agreement",
+        "form": "Either of + two-member group + singular verb",
+        "metaphor_ru": "Either означает «любой из двух». Речь об одном выбранном варианте, поэтому формальное согласование — единственное число."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Either of + definite two-member group + singular predicate",
+          "example": "Either of these two routes takes us to the station.",
+          "translation": "Любой из этих двух маршрутов приведёт нас к вокзалу.",
+          "examples": [
+            {
+              "text": "Either of the two dates suits me.",
+              "translation_ru": "Мне подходит любая из двух дат."
+            },
+            {
+              "text": "Either of these rooms has enough space.",
+              "translation_ru": "В любой из этих двух комнат достаточно места."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jeder/Jede/Jedes der beiden + plural noun + singular predicate",
+          "example": "Jede dieser beiden Routen führt uns zum Bahnhof.",
+          "translation": "Любой из этих двух маршрутов приведёт нас к вокзалу.",
+          "examples": [
+            {
+              "text": "Jeder der beiden Termine passt mir.",
+              "translation_ru": "Мне подходит любая из двух дат."
+            },
+            {
+              "text": "Jedes dieser beiden Zimmer hat genug Platz.",
+              "translation_ru": "В любой из этих двух комнат достаточно места."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Любой из двух",
+      "title_en": "Each of two alternatives is independently acceptable",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE005",
+      "set_id": "GFE",
+      "pattern": "Each of the reports has a separate appendix.",
+      "group_title": "A group considered one member at a time",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Distributive each with singular agreement",
+        "form": "Each of + plural noun + singular verb",
+        "metaphor_ru": "Глагол согласуется с each, не с ближайшим reports. Каждый элемент рассматривается отдельно, даже если группа большая."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Each of + definite plural group + singular predicate",
+          "example": "Each of the reports has a separate appendix.",
+          "translation": "У каждого отчёта есть отдельное приложение.",
+          "examples": [
+            {
+              "text": "Each of our guests needs a visitor pass.",
+              "translation_ru": "Каждому нашему гостю нужен пропуск."
+            },
+            {
+              "text": "Each of these steps takes less than a minute.",
+              "translation_ru": "Каждый из этих шагов занимает меньше минуты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jeder/Jede/Jedes + singular member + singular predicate",
+          "example": "Jeder der Berichte hat einen eigenen Anhang.",
+          "translation": "У каждого отчёта есть отдельное приложение.",
+          "examples": [
+            {
+              "text": "Jeder unserer Gäste braucht einen Besucherausweis.",
+              "translation_ru": "Каждому нашему гостю нужен пропуск."
+            },
+            {
+              "text": "Jeder dieser Schritte dauert weniger als eine Minute.",
+              "translation_ru": "Каждый из этих шагов занимает меньше минуты."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Каждый элемент отдельно",
+      "title_en": "A group considered one member at a time",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE006",
+      "set_id": "GFE",
+      "pattern": "A number of people have asked the same question.",
+      "group_title": "An indefinite quantity takes plural agreement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "A number of as a plural quantifier",
+        "form": "A number of + plural noun + plural verb",
+        "metaphor_ru": "A number of значит «несколько / ряд». Грамматический смысл множественный: have, а не has."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "A number of + plural noun + plural predicate",
+          "example": "A number of people have asked the same question.",
+          "translation": "Несколько человек задали один и тот же вопрос.",
+          "examples": [
+            {
+              "text": "A number of files are missing.",
+              "translation_ru": "Ряд файлов отсутствует."
+            },
+            {
+              "text": "A number of shops close early on Sundays.",
+              "translation_ru": "Несколько магазинов закрываются рано по воскресеньям."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mehrere + plural noun + plural predicate",
+          "example": "Mehrere Menschen haben dieselbe Frage gestellt.",
+          "translation": "Несколько человек задали один и тот же вопрос.",
+          "examples": [
+            {
+              "text": "Mehrere Dateien fehlen.",
+              "translation_ru": "Ряд файлов отсутствует."
+            },
+            {
+              "text": "Mehrere Geschäfte schließen sonntags früh.",
+              "translation_ru": "Несколько магазинов закрываются рано по воскресеньям."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Несколько объектов: a number of",
+      "title_en": "An indefinite quantity takes plural agreement",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE007",
+      "set_id": "GFE",
+      "pattern": "The number of requests has doubled.",
+      "group_title": "The count itself takes singular agreement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "The number of as a singular measured entity",
+        "form": "The number of + plural noun + singular verb",
+        "metaphor_ru": "С the подлежащее — само количество, не люди или заявки. Сравните a number of requests have и the number of requests has."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The number of + plural noun + singular predicate",
+          "example": "The number of requests has doubled.",
+          "translation": "Количество запросов удвоилось.",
+          "examples": [
+            {
+              "text": "The number of available seats is limited.",
+              "translation_ru": "Количество доступных мест ограничено."
+            },
+            {
+              "text": "The number of errors affects the final score.",
+              "translation_ru": "Количество ошибок влияет на итоговый балл."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Zahl/Anzahl der + plural noun + singular predicate",
+          "example": "Die Zahl der Anfragen hat sich verdoppelt.",
+          "translation": "Количество запросов удвоилось.",
+          "examples": [
+            {
+              "text": "Die Anzahl der verfügbaren Plätze ist begrenzt.",
+              "translation_ru": "Количество доступных мест ограничено."
+            },
+            {
+              "text": "Die Zahl der Fehler beeinflusst die Gesamtpunktzahl.",
+              "translation_ru": "Количество ошибок влияет на итоговый балл."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Само количество: the number of",
+      "title_en": "The count itself takes singular agreement",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE008",
+      "set_id": "GFE",
+      "pattern": "More than one person has raised this concern.",
+      "group_title": "A semantically plural quantity with a singular noun and verb",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "More than one with singular agreement",
+        "form": "More than one + singular noun + singular verb",
+        "metaphor_ru": "Несмотря на смысл «несколько», стандартный английский каркас сохраняет one person has. Немецкий эквивалент часто использует множественное mehrere."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "More than one + singular count noun + singular predicate",
+          "example": "More than one person has raised this concern.",
+          "translation": "Не один человек высказал это опасение.",
+          "examples": [
+            {
+              "text": "More than one key is missing.",
+              "translation_ru": "Пропал не один ключ."
+            },
+            {
+              "text": "More than one attempt was needed.",
+              "translation_ru": "Понадобилась не одна попытка."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mehr als ein/eine + singular noun + singular predicate",
+          "example": "Mehr als eine Person hat diese Sorge geäußert.",
+          "translation": "Не один человек высказал это опасение.",
+          "examples": [
+            {
+              "text": "Mehr als ein Schlüssel fehlt.",
+              "translation_ru": "Пропал не один ключ."
+            },
+            {
+              "text": "Mehr als ein Versuch war nötig.",
+              "translation_ru": "Понадобилась не одна попытка."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Более одного: единственное число",
+      "title_en": "A semantically plural quantity with a singular noun and verb",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE009",
+      "set_id": "GFE",
+      "pattern": "One in every five entries contains an error.",
+      "group_title": "A frequency expressed through a singular representative",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "One in a numerical group with singular agreement",
+        "form": "One in every + number + plural noun + singular verb",
+        "metaphor_ru": "One задаёт единственное число сказуемого. Числа в примерах служат только для тренировки формы, не являются статистическими утверждениями."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "One in every + number + plural noun + singular predicate",
+          "example": "One in every five entries contains an error.",
+          "translation": "В каждой пятой записи есть ошибка.",
+          "examples": [
+            {
+              "text": "One in every ten boxes needs a new label.",
+              "translation_ru": "Каждой десятой коробке нужна новая этикетка."
+            },
+            {
+              "text": "One in every four seats has extra legroom.",
+              "translation_ru": "У каждого четвёртого места больше пространства для ног."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jeder/Jede/Jedes + ordinal adjective + singular noun + singular predicate",
+          "example": "Jeder fünfte Eintrag enthält einen Fehler.",
+          "translation": "В каждой пятой записи есть ошибка.",
+          "examples": [
+            {
+              "text": "Jeder zehnte Karton braucht ein neues Etikett.",
+              "translation_ru": "Каждой десятой коробке нужна новая этикетка."
+            },
+            {
+              "text": "Jeder vierte Sitz hat mehr Beinfreiheit.",
+              "translation_ru": "У каждого четвёртого места больше пространства для ног."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Каждый пятый: согласование",
+      "title_en": "A frequency expressed through a singular representative",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE010",
+      "set_id": "GFE",
+      "pattern": "All the equipment has been tested.",
+      "group_title": "All does not make an uncountable noun plural",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Universal mass noun with singular agreement",
+        "form": "All the + uncountable noun + singular verb",
+        "metaphor_ru": "Equipment, information и furniture в этих значениях неисчисляемы. All не добавляет им множественное число и не меняет has на have."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "All the + uncountable noun + singular predicate",
+          "example": "All the equipment has been tested.",
+          "translation": "Всё оборудование проверено.",
+          "examples": [
+            {
+              "text": "All the information is available online.",
+              "translation_ru": "Вся информация доступна онлайн."
+            },
+            {
+              "text": "All the furniture fits through the door.",
+              "translation_ru": "Вся мебель проходит в дверь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die gesamte + mass noun / alle + natural plural equivalent + matching verb",
+          "example": "Die gesamte Ausrüstung wurde getestet.",
+          "translation": "Всё оборудование проверено.",
+          "examples": [
+            {
+              "text": "Alle Informationen sind online verfügbar.",
+              "translation_ru": "Вся информация доступна онлайн."
+            },
+            {
+              "text": "Alle Möbel passen durch die Tür.",
+              "translation_ru": "Вся мебель проходит в дверь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всё неисчисляемое: единственное число",
+      "title_en": "All does not make an uncountable noun plural",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE011",
+      "set_id": "GFE",
+      "pattern": "There is little time left, so we need to decide now.",
+      "group_title": "A small amount presented as insufficient",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative orientation of little without an article",
+        "form": "There is little + mass noun, so + consequence",
+        "metaphor_ru": "Little без a подчёркивает нехватку. A little означало бы, что некоторое количество всё-таки есть и его можно использовать."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is little + uncountable noun, so + consequence",
+          "example": "There is little time left, so we need to decide now.",
+          "translation": "Времени почти не осталось, поэтому нужно решать сейчас.",
+          "examples": [
+            {
+              "text": "There is little evidence, so we should avoid a firm conclusion.",
+              "translation_ru": "Доказательств мало, поэтому не стоит делать категоричный вывод."
+            },
+            {
+              "text": "There is little space, so we cannot add another desk.",
+              "translation_ru": "Места мало, поэтому ещё один стол не поместится."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es gibt/ist nur wenig + mass noun, deshalb + consequence",
+          "example": "Es ist nur wenig Zeit übrig, deshalb müssen wir jetzt entscheiden.",
+          "translation": "Времени почти не осталось, поэтому нужно решать сейчас.",
+          "examples": [
+            {
+              "text": "Es gibt nur wenige Belege, deshalb sollten wir keine feste Schlussfolgerung ziehen.",
+              "translation_ru": "Доказательств мало, поэтому не стоит делать категоричный вывод."
+            },
+            {
+              "text": "Es gibt nur wenig Platz, deshalb können wir keinen weiteren Schreibtisch aufstellen.",
+              "translation_ru": "Места мало, поэтому ещё один стол не поместится."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Little: ресурса почти нет",
+      "title_en": "A small amount presented as insufficient",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE012",
+      "set_id": "GFE",
+      "pattern": "We have a little time, so we can review the plan.",
+      "group_title": "A small amount presented as available",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Positive orientation of a little",
+        "form": "Have a little + mass noun, so + possible action",
+        "metaphor_ru": "A little — немного, но не ноль: акцент на доступном ресурсе. Наличие a меняет смысловой акцент, хотя количество остаётся небольшим."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + have/has a little + uncountable noun, so + possible action",
+          "example": "We have a little time, so we can review the plan.",
+          "translation": "У нас есть немного времени, так что можем пересмотреть план.",
+          "examples": [
+            {
+              "text": "She has a little experience, so she can help us get started.",
+              "translation_ru": "У неё есть небольшой опыт, так что она может помочь нам начать."
+            },
+            {
+              "text": "I have a little money left, so I can buy lunch.",
+              "translation_ru": "У меня осталось немного денег, так что я могу купить обед."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + haben + etwas/ein wenig + mass noun, also + possible action",
+          "example": "Wir haben etwas Zeit, also können wir den Plan durchgehen.",
+          "translation": "У нас есть немного времени, так что можем пересмотреть план.",
+          "examples": [
+            {
+              "text": "Sie hat ein wenig Erfahrung, also kann sie uns beim Einstieg helfen.",
+              "translation_ru": "У неё есть небольшой опыт, так что она может помочь нам начать."
+            },
+            {
+              "text": "Ich habe noch etwas Geld, also kann ich mir ein Mittagessen kaufen.",
+              "translation_ru": "У меня осталось немного денег, так что я могу купить обед."
+            }
+          ]
+        }
+      ],
+      "title_ru": "A little: немного ресурса есть",
+      "title_en": "A small amount presented as available",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE013",
+      "set_id": "GFE",
+      "pattern": "Few people noticed the change, so we explained it again.",
+      "group_title": "A small count presented as nearly absent",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative orientation of few without an article",
+        "form": "Few + plural noun + predicate",
+        "metaphor_ru": "Few без a подчёркивает, что людей или объектов мало, часто меньше ожидаемого. В немецком это wenige, не ein paar."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Few + plural count noun + predicate, so + consequence",
+          "example": "Few people noticed the change, so we explained it again.",
+          "translation": "Мало кто заметил изменение, поэтому мы объяснили его ещё раз.",
+          "examples": [
+            {
+              "text": "Few shops were open, so we went home.",
+              "translation_ru": "Мало магазинов было открыто, поэтому мы пошли домой."
+            },
+            {
+              "text": "Few seats remained, so we booked immediately.",
+              "translation_ru": "Осталось мало мест, поэтому мы сразу забронировали."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nur wenige + plural noun + predicate, deshalb + consequence",
+          "example": "Nur wenige Menschen bemerkten die Änderung, deshalb erklärten wir sie noch einmal.",
+          "translation": "Мало кто заметил изменение, поэтому мы объяснили его ещё раз.",
+          "examples": [
+            {
+              "text": "Nur wenige Geschäfte waren offen, deshalb gingen wir nach Hause.",
+              "translation_ru": "Мало магазинов было открыто, поэтому мы пошли домой."
+            },
+            {
+              "text": "Nur wenige Plätze waren noch frei, deshalb buchten wir sofort.",
+              "translation_ru": "Осталось мало мест, поэтому мы сразу забронировали."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Few: объектов слишком мало",
+      "title_en": "A small count presented as nearly absent",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE014",
+      "set_id": "GFE",
+      "pattern": "A few people volunteered, so we were able to start.",
+      "group_title": "A small count presented as a usable resource",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Positive orientation of a few",
+        "form": "A few + plural noun + predicate",
+        "metaphor_ru": "A few означает «несколько»: есть ненулевое число участников или объектов. Не приравнивайте к few, которое подчёркивает нехватку."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "A few + plural count noun + predicate, so + consequence",
+          "example": "A few people volunteered, so we were able to start.",
+          "translation": "Несколько человек вызвались помочь, поэтому мы смогли начать.",
+          "examples": [
+            {
+              "text": "A few shops were still open, so we bought some bread.",
+              "translation_ru": "Несколько магазинов ещё были открыты, поэтому мы купили хлеб."
+            },
+            {
+              "text": "A few tickets remained, so we managed to get in.",
+              "translation_ru": "Несколько билетов оставалось, поэтому мы смогли попасть внутрь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ein paar + plural noun + predicate, deshalb + consequence",
+          "example": "Ein paar Leute meldeten sich freiwillig, deshalb konnten wir anfangen.",
+          "translation": "Несколько человек вызвались помочь, поэтому мы смогли начать.",
+          "examples": [
+            {
+              "text": "Ein paar Geschäfte waren noch offen, deshalb kauften wir Brot.",
+              "translation_ru": "Несколько магазинов ещё были открыты, поэтому мы купили хлеб."
+            },
+            {
+              "text": "Ein paar Karten waren noch übrig, deshalb kamen wir hinein.",
+              "translation_ru": "Несколько билетов оставалось, поэтому мы смогли попасть внутрь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "A few: несколько объектов есть",
+      "title_en": "A small count presented as a usable resource",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE015",
+      "set_id": "GFE",
+      "pattern": "Both the address and the phone number have changed.",
+      "group_title": "Two coordinated singular nouns form a plural subject",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Additive both-and agreement",
+        "form": "Both + noun phrase + and + noun phrase + plural verb",
+        "metaphor_ru": "Both ... and складывает два элемента. В английском два отдельных единичных предмета требуют множественного согласования."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Both + noun phrase + and + noun phrase + plural predicate",
+          "example": "Both the address and the phone number have changed.",
+          "translation": "Изменились и адрес, и номер телефона.",
+          "examples": [
+            {
+              "text": "Both the manager and the assistant are available.",
+              "translation_ru": "Доступны и руководитель, и помощник."
+            },
+            {
+              "text": "Both the camera and the microphone need permission.",
+              "translation_ru": "И камере, и микрофону нужно разрешение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Sowohl + noun phrase + als auch + noun phrase + plural predicate",
+          "example": "Sowohl die Adresse als auch die Telefonnummer haben sich geändert.",
+          "translation": "Изменились и адрес, и номер телефона.",
+          "examples": [
+            {
+              "text": "Sowohl der Leiter als auch der Assistent sind verfügbar.",
+              "translation_ru": "Доступны и руководитель, и помощник."
+            },
+            {
+              "text": "Sowohl die Kamera als auch das Mikrofon benötigen eine Berechtigung.",
+              "translation_ru": "И камере, и микрофону нужно разрешение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Оба участника: множественное число",
+      "title_en": "Two coordinated singular nouns form a plural subject",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE016",
+      "set_id": "GFE",
+      "pattern": "Either the owner or the manager is responsible.",
+      "group_title": "Two singular alternatives, not two simultaneous subjects",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Either-or with singular alternatives",
+        "form": "Either + singular subject + or + singular subject + singular verb",
+        "metaphor_ru": "Выбирается один из двух, поэтому в этих примерах сказуемое единственное. При смешении чисел лучше перестроить фразу, чем создавать тяжёлое согласование."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Either + singular noun phrase + or + singular noun phrase + singular predicate",
+          "example": "Either the owner or the manager is responsible.",
+          "translation": "Отвечает либо владелец, либо управляющий.",
+          "examples": [
+            {
+              "text": "Either the label or the receipt has the reference number.",
+              "translation_ru": "Номер указан либо на этикетке, либо в чеке."
+            },
+            {
+              "text": "Either the driver or the guide knows the way.",
+              "translation_ru": "Дорогу знает либо водитель, либо гид."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Entweder + singular noun phrase + oder + singular noun phrase + singular predicate",
+          "example": "Entweder der Eigentümer oder der Geschäftsführer ist verantwortlich.",
+          "translation": "Отвечает либо владелец, либо управляющий.",
+          "examples": [
+            {
+              "text": "Entweder das Etikett oder der Beleg enthält die Referenznummer.",
+              "translation_ru": "Номер указан либо на этикетке, либо в чеке."
+            },
+            {
+              "text": "Entweder der Fahrer oder der Reiseführer kennt den Weg.",
+              "translation_ru": "Дорогу знает либо водитель, либо гид."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Один из двух вариантов",
+      "title_en": "Two singular alternatives, not two simultaneous subjects",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE017",
+      "set_id": "GFE",
+      "pattern": "Neither the code nor the password works.",
+      "group_title": "Rejecting two singular alternatives without another not",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Neither-nor coordination without double negation",
+        "form": "Neither + singular noun + nor + singular noun + affirmative-form verb",
+        "metaphor_ru": "Neither ... nor уже делает утверждение отрицательным. Не добавляйте doesn't: в стандартном английском это меняет или ломает требуемую логику."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Neither + singular noun phrase + nor + singular noun phrase + singular predicate",
+          "example": "Neither the code nor the password works.",
+          "translation": "Не работает ни код, ни пароль.",
+          "examples": [
+            {
+              "text": "Neither the date nor the location has been confirmed.",
+              "translation_ru": "Не подтверждены ни дата, ни место."
+            },
+            {
+              "text": "Neither the size nor the colour suits me.",
+              "translation_ru": "Мне не подходит ни размер, ни цвет."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Weder + singular noun phrase + noch + singular noun phrase + predicate",
+          "example": "Weder der Code noch das Passwort funktioniert.",
+          "translation": "Не работает ни код, ни пароль.",
+          "examples": [
+            {
+              "text": "Weder der Termin noch der Ort ist bestätigt worden.",
+              "translation_ru": "Не подтверждены ни дата, ни место."
+            },
+            {
+              "text": "Weder die Größe noch die Farbe passt zu mir.",
+              "translation_ru": "Мне не подходит ни размер, ни цвет."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ни один вариант без второго not",
+      "title_en": "Rejecting two singular alternatives without another not",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE018",
+      "set_id": "GFE",
+      "pattern": "The main report, as well as the attachments, needs approval.",
+      "group_title": "An added phrase does not change the main subject's number",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Agreement unaffected by supplementary as well as",
+        "form": "Singular subject, as well as + plural noun, + singular verb",
+        "metaphor_ru": "В английском добавка as well as не работает как and для согласования. Главное подлежащее остаётся report, поэтому needs."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Singular noun phrase, as well as + plural noun phrase, + singular predicate",
+          "example": "The main report, as well as the attachments, needs approval.",
+          "translation": "Основному отчёту, как и приложениям, нужно одобрение.",
+          "examples": [
+            {
+              "text": "The organiser, as well as the volunteers, has received a badge.",
+              "translation_ru": "Организатор, как и волонтёры, получил бейдж."
+            },
+            {
+              "text": "The kitchen, as well as the bedrooms, is being repainted.",
+              "translation_ru": "Кухню, как и спальни, перекрашивают."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Singular subject + singular predicate + ebenso wie + supplementary group",
+          "example": "Der Hauptbericht braucht ebenso wie die Anhänge eine Freigabe.",
+          "translation": "Основному отчёту, как и приложениям, нужно одобрение.",
+          "examples": [
+            {
+              "text": "Der Organisator hat ebenso wie die Freiwilligen einen Ausweis erhalten.",
+              "translation_ru": "Организатор, как и волонтёры, получил бейдж."
+            },
+            {
+              "text": "Die Küche wird ebenso wie die Schlafzimmer neu gestrichen.",
+              "translation_ru": "Кухню, как и спальни, перекрашивают."
+            }
+          ]
+        }
+      ],
+      "title_ru": "As well as не меняет подлежащее",
+      "title_en": "An added phrase does not change the main subject's number",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE019",
+      "set_id": "GFE",
+      "pattern": "She is one of the people who know the full story.",
+      "group_title": "A relative clause describing the plural group",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Plural relative agreement after one of the people",
+        "form": "One of the + plural noun + who/that + plural verb",
+        "metaphor_ru": "Who относится к people: все люди в этой группе знают историю. Поэтому know, хотя главное подлежащее she — единственное."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + one of the + plural noun + relative pronoun + plural predicate",
+          "example": "She is one of the people who know the full story.",
+          "translation": "Она одна из тех людей, которые знают всю историю.",
+          "examples": [
+            {
+              "text": "This is one of the tools that work offline.",
+              "translation_ru": "Это один из инструментов, которые работают без интернета."
+            },
+            {
+              "text": "He is one of the neighbours who have a spare key.",
+              "translation_ru": "Он один из соседей, у которых есть запасной ключ."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + einer/eine/eines der + plural noun + plural relative clause",
+          "example": "Sie ist eine der Personen, die die ganze Geschichte kennen.",
+          "translation": "Она одна из тех людей, которые знают всю историю.",
+          "examples": [
+            {
+              "text": "Das ist eines der Werkzeuge, die offline funktionieren.",
+              "translation_ru": "Это один из инструментов, которые работают без интернета."
+            },
+            {
+              "text": "Er ist einer der Nachbarn, die einen Ersatzschlüssel haben.",
+              "translation_ru": "Он один из соседей, у которых есть запасной ключ."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Один из людей, которые знают",
+      "title_en": "A relative clause describing the plural group",
+      "group_id": "GFE"
+    },
+    {
+      "id": "GFE020",
+      "set_id": "GFE",
+      "pattern": "She is the only one of us who knows the full story.",
+      "group_title": "A relative clause selecting the single exceptional member",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Singular relative agreement after the only one",
+        "form": "The only one of + group + who/that + singular verb",
+        "metaphor_ru": "The only one выбирает единственного человека: относительная часть относится к one. Поэтому knows, в отличие от one of the people who know."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + the only one of + group + relative pronoun + singular predicate",
+          "example": "She is the only one of us who knows the full story.",
+          "translation": "Она единственная из нас, кто знает всю историю.",
+          "examples": [
+            {
+              "text": "This is the only one of these tools that works offline.",
+              "translation_ru": "Это единственный из этих инструментов, который работает без интернета."
+            },
+            {
+              "text": "He is the only one of the neighbours who has a spare key.",
+              "translation_ru": "Он единственный из соседей, у кого есть запасной ключ."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + der/die/das Einzige aus/in + group + singular relative clause",
+          "example": "Sie ist die Einzige von uns, die die ganze Geschichte kennt.",
+          "translation": "Она единственная из нас, кто знает всю историю.",
+          "examples": [
+            {
+              "text": "Das ist das einzige dieser Werkzeuge, das offline funktioniert.",
+              "translation_ru": "Это единственный из этих инструментов, который работает без интернета."
+            },
+            {
+              "text": "Er ist der Einzige unter den Nachbarn, der einen Ersatzschlüssel hat.",
+              "translation_ru": "Он единственный из соседей, у кого есть запасной ключ."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Единственный, кто знает",
+      "title_en": "A relative clause selecting the single exceptional member",
+      "group_id": "GFE"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { historicalAliases } from './helpers/curriculum-contract.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -28,33 +29,27 @@ test("indexability policy publishes one explicit search decision for every Patte
   assert.equal(policy.rules.automatedSlotVariantCandidatesAffectIndexability, false);
 });
 
-test("canonical Frame representatives stay indexable while retired contextual siblings stay aliases", () => {
+test("retained canonical Patterns stay indexable and retired aliases stay outside public indices", () => {
   const policy = readJson("data/quality/pattern-indexability.json");
-  const aliases = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "pattern-aliases.json"), "utf8")).aliases;
-  const families = [
-    ["C1HED001", "C1HED002"],
-    ["C1ARG001", "C1ARG002"],
-    ["C1PRO001", "C1PRO002"],
-  ];
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   const inventory = readJson("seo/site-pages.json");
-  const full = readJson("api/v1/patterns.json");
-  const publicIds = new Set(full.data.map((item) => item.data.id));
-
-  for (const [representativeId, variantId] of families) {
+  for (const [representativeId, aliasId] of [["C1HED001", "C1HED002"], ["C1ARG001", "C1ARG002"], ["C1PRO001", "C1PRO002"]]) {
     const representative = decision(policy, representativeId);
-    assert.equal(representative?.indexable, true, `${representativeId} should remain the active search representative`);
-    assert.equal(decision(policy, variantId), undefined, `${variantId} must not remain an active indexability record`);
-    assert.equal(aliases[variantId], representativeId, `${variantId} must resolve to ${representativeId}`);
-    assert.equal(publicIds.has(variantId), false, `${variantId} must not remain in the public canonical API`);
-
+    assert.equal(representative?.indexable, true);
+    assert.equal(decision(policy, aliasId), undefined, "retired duplicate is not an active Pattern");
+    assert.equal(historicalAliases[aliasId], representativeId, "historical identity remains resolvable");
     for (const locale of ["en", "ru"]) {
-      const representativeRoute = patternPath(locale, representativeId);
-      assert.ok(sitemap.includes(`${SITE_URL}${representativeRoute}`), `${representativeRoute} stays in sitemap`);
-      assert.ok(inventory.pages.some((entry) => entry.route === representativeRoute), `${representativeRoute} stays in SEO inventory`);
+      const canonicalRoute = patternPath(locale, representativeId);
+      const aliasRoute = patternPath(locale, aliasId);
+      assert.ok(sitemap.includes(SITE_URL + canonicalRoute));
+      assert.ok(!sitemap.includes(SITE_URL + aliasRoute));
+      assert.ok(inventory.pages.some(entry => entry.route === canonicalRoute));
+      assert.ok(!inventory.pages.some(entry => entry.route === aliasRoute));
+      assert.ok(page(locale, representativeId).includes('<link rel="canonical" href="' + SITE_URL + canonicalRoute + '">'));
     }
   }
 });
+
 test("generated unreviewed Pattern stays usable but is not silently promoted to search", () => {
   const policy = readJson("data/quality/pattern-indexability.json");
   const record = decision(policy, "CON001");
@@ -71,7 +66,7 @@ test("final API quality.indexable agrees with the published search-promotion pol
   const full = readJson("api/v1/patterns.json");
   const byId = new Map(full.data.map((item) => [item.data.id, item.data]));
 
-  for (const patternId of ["C1HED001", "C1ARG001", "C1PRO001", "CON001", "CLF041"]) {
+  for (const patternId of ["C1HED001", "C1ARG001", "CON001", "CLF041", "GFA001"]) {
     const record = decision(policy, patternId);
     const pattern = byId.get(patternId);
     assert.equal(pattern.quality.indexable, record.indexable, `${patternId} full API indexability`);

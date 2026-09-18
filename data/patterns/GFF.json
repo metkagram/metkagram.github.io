@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFF",
+  "title": "Negation, inversion and focus",
+  "title_ru": "Отрицание, инверсия и акцент",
+  "patterns": [
+    {
+      "id": "GFF001",
+      "set_id": "GFF",
+      "pattern": "Not until I opened the file did I notice the missing pages.",
+      "group_title": "A delayed event highlighted by negative fronting",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Main-clause inversion after fronted not until",
+        "form": "Not until + clause + did + subject + infinitive",
+        "metaphor_ru": "Инверсия появляется в главной части после всего блока not until, а не внутри придаточного. Did требует начальной формы notice."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not until + past clause + did + subject + bare infinitive",
+          "example": "Not until I opened the file did I notice the missing pages.",
+          "translation": "Только открыв файл, я заметил, что не хватает страниц.",
+          "examples": [
+            {
+              "text": "Not until the room fell silent did she begin.",
+              "translation_ru": "Она начала только тогда, когда в комнате стало тихо."
+            },
+            {
+              "text": "Not until we reached home did we realise what had happened.",
+              "translation_ru": "Только добравшись домой, мы поняли, что произошло."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Erst als + subordinate clause, + finite verb + subject",
+          "example": "Erst als ich die Datei öffnete, bemerkte ich die fehlenden Seiten.",
+          "translation": "Только открыв файл, я заметил, что не хватает страниц.",
+          "examples": [
+            {
+              "text": "Erst als es im Raum still wurde, fing sie an.",
+              "translation_ru": "Она начала только тогда, когда в комнате стало тихо."
+            },
+            {
+              "text": "Erst als wir zu Hause ankamen, verstanden wir, was passiert war.",
+              "translation_ru": "Только добравшись домой, мы поняли, что произошло."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Только после события: not until",
+      "title_en": "A delayed event highlighted by negative fronting",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF002",
+      "set_id": "GFF",
+      "pattern": "Only after checking the figures did we publish the report.",
+      "group_title": "A prerequisite placed before the main event",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Inversion after only plus a non-finite temporal phrase",
+        "form": "Only after + -ing + did + subject + infinitive",
+        "metaphor_ru": "Only after ограничивает время действия и вызывает инверсию в английском. Подразумеваемый исполнитель checking совпадает с we."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Only after + -ing phrase + did + subject + bare infinitive",
+          "example": "Only after checking the figures did we publish the report.",
+          "translation": "Мы опубликовали отчёт только после проверки цифр.",
+          "examples": [
+            {
+              "text": "Only after reading the small print did she sign.",
+              "translation_ru": "Она подписала только после того, как прочитала мелкий шрифт."
+            },
+            {
+              "text": "Only after visiting the flat did I make an offer.",
+              "translation_ru": "Я сделал предложение о покупке только после осмотра квартиры."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Erst nachdem + subject + past clause, + main clause",
+          "example": "Erst nachdem wir die Zahlen geprüft hatten, veröffentlichten wir den Bericht.",
+          "translation": "Мы опубликовали отчёт только после проверки цифр.",
+          "examples": [
+            {
+              "text": "Erst nachdem sie das Kleingedruckte gelesen hatte, unterschrieb sie.",
+              "translation_ru": "Она подписала только после того, как прочитала мелкий шрифт."
+            },
+            {
+              "text": "Erst nachdem ich die Wohnung besichtigt hatte, machte ich ein Kaufangebot.",
+              "translation_ru": "Я сделал предложение о покупке только после осмотра квартиры."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Только после действия: only after",
+      "title_en": "A prerequisite placed before the main event",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF003",
+      "set_id": "GFF",
+      "pattern": "Only by comparing both versions can we find the difference.",
+      "group_title": "A method presented as the necessary route to a result",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Means restriction with modal inversion",
+        "form": "Only by + -ing + can + subject + infinitive",
+        "metaphor_ru": "By + -ing задаёт способ. После вынесенного only by модальный глагол идёт перед подлежащим; дополнительное do не нужно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Only by + -ing phrase + can + subject + bare infinitive",
+          "example": "Only by comparing both versions can we find the difference.",
+          "translation": "Только сравнив обе версии, мы сможем найти различие.",
+          "examples": [
+            {
+              "text": "Only by asking can you find out what she needs.",
+              "translation_ru": "Только спросив, ты сможешь узнать, что ей нужно."
+            },
+            {
+              "text": "Only by practising regularly can I make this feel natural.",
+              "translation_ru": "Только регулярно практикуясь, я смогу довести это до естественности."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nur indem + subordinate clause, + können + subject + infinitive",
+          "example": "Nur indem wir beide Versionen vergleichen, können wir den Unterschied finden.",
+          "translation": "Только сравнив обе версии, мы сможем найти различие.",
+          "examples": [
+            {
+              "text": "Nur indem du fragst, kannst du herausfinden, was sie braucht.",
+              "translation_ru": "Только спросив, ты сможешь узнать, что ей нужно."
+            },
+            {
+              "text": "Nur indem ich regelmäßig übe, kann ich erreichen, dass es sich natürlich anfühlt.",
+              "translation_ru": "Только регулярно практикуясь, я смогу довести это до естественности."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Только таким способом: only by",
+      "title_en": "A method presented as the necessary route to a result",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF004",
+      "set_id": "GFF",
+      "pattern": "Under no circumstances should this door be left unlocked.",
+      "group_title": "An emphatic prohibition with modal inversion",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Absolute prohibition introduced by a negative circumstance phrase",
+        "form": "Under no circumstances + modal + subject + verb",
+        "metaphor_ru": "Сильное формальное запрещение. Отрицание уже находится в начале: не нужно добавлять not после should."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Under no circumstances + modal + subject + bare infinitive phrase",
+          "example": "Under no circumstances should this door be left unlocked.",
+          "translation": "Ни при каких обстоятельствах нельзя оставлять эту дверь незапертой.",
+          "examples": [
+            {
+              "text": "Under no circumstances must visitors enter the laboratory alone.",
+              "translation_ru": "Ни при каких обстоятельствах посетители не должны входить в лабораторию одни."
+            },
+            {
+              "text": "Under no circumstances should you share this access code.",
+              "translation_ru": "Ни при каких обстоятельствах нельзя передавать этот код доступа."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Unter keinen Umständen + dürfen/sollen + subject + infinitive",
+          "example": "Unter keinen Umständen darf diese Tür unverschlossen bleiben.",
+          "translation": "Ни при каких обстоятельствах нельзя оставлять эту дверь незапертой.",
+          "examples": [
+            {
+              "text": "Unter keinen Umständen dürfen Besucher das Labor allein betreten.",
+              "translation_ru": "Ни при каких обстоятельствах посетители не должны входить в лабораторию одни."
+            },
+            {
+              "text": "Unter keinen Umständen darfst du diesen Zugangscode weitergeben.",
+              "translation_ru": "Ни при каких обстоятельствах нельзя передавать этот код доступа."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ни при каких обстоятельствах",
+      "title_en": "An emphatic prohibition with modal inversion",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF005",
+      "set_id": "GFF",
+      "pattern": "At no point was I told that the meeting had been cancelled.",
+      "group_title": "Denying an event throughout an entire period",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Temporal total negation with passive inversion",
+        "form": "At no point + was/were + subject + past participle",
+        "metaphor_ru": "Выражаем «ни на одном этапе». При пассиве was уже служит опорой инверсии; did добавлять нельзя."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "At no point + was/were + subject + passive participle phrase",
+          "example": "At no point was I told that the meeting had been cancelled.",
+          "translation": "Мне ни разу не сообщили, что встречу отменили.",
+          "examples": [
+            {
+              "text": "At no point were the visitors left alone.",
+              "translation_ru": "Посетителей ни на одном этапе не оставляли одних."
+            },
+            {
+              "text": "At no point was the original file overwritten.",
+              "translation_ru": "Исходный файл ни на одном этапе не перезаписывали."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Zu keinem Zeitpunkt + wurde(n) + subject + passive phrase",
+          "example": "Zu keinem Zeitpunkt wurde mir gesagt, dass die Besprechung abgesagt worden war.",
+          "translation": "Мне ни разу не сообщили, что встречу отменили.",
+          "examples": [
+            {
+              "text": "Zu keinem Zeitpunkt wurden die Besucher allein gelassen.",
+              "translation_ru": "Посетителей ни на одном этапе не оставляли одних."
+            },
+            {
+              "text": "Zu keinem Zeitpunkt wurde die Originaldatei überschrieben.",
+              "translation_ru": "Исходный файл ни на одном этапе не перезаписывали."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ни на одном этапе",
+      "title_en": "Denying an event throughout an entire period",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF006",
+      "set_id": "GFF",
+      "pattern": "Not only did she identify the error, but she also explained its cause.",
+      "group_title": "Two achievements with emphasis on the second",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Initial not only with inversion and additive continuation",
+        "form": "Not only did + subject + verb, but + subject + also + past verb",
+        "metaphor_ru": "Инверсия нужна только после начального not only. Во второй части обычный порядок; also помогает удержать параллельную структуру."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not only did + subject + bare infinitive, but + subject + also + past verb",
+          "example": "Not only did she identify the error, but she also explained its cause.",
+          "translation": "Она не только нашла ошибку, но и объяснила её причину.",
+          "examples": [
+            {
+              "text": "Not only did we finish early, but we also stayed within budget.",
+              "translation_ru": "Мы не только закончили раньше, но и уложились в бюджет."
+            },
+            {
+              "text": "Not only did he apologise, but he also offered to repair the damage.",
+              "translation_ru": "Он не только извинился, но и предложил исправить ущерб."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + past verb + nicht nur ..., sondern + past verb + auch ...",
+          "example": "Sie erkannte nicht nur den Fehler, sondern erklärte auch seine Ursache.",
+          "translation": "Она не только нашла ошибку, но и объяснила её причину.",
+          "examples": [
+            {
+              "text": "Wir wurden nicht nur früher fertig, sondern blieben auch im Budget.",
+              "translation_ru": "Мы не только закончили раньше, но и уложились в бюджет."
+            },
+            {
+              "text": "Er entschuldigte sich nicht nur, sondern bot auch an, den Schaden zu beheben.",
+              "translation_ru": "Он не только извинился, но и предложил исправить ущерб."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не только, но и: инверсия",
+      "title_en": "Two achievements with emphasis on the second",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF007",
+      "set_id": "GFF",
+      "pattern": "Little did I know that the conversation would change my plans.",
+      "group_title": "Narrative ignorance of a later consequence",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative knowledge fronting in narrative",
+        "form": "Little did + subject + know + embedded clause",
+        "metaphor_ru": "Little did I know означает «я и не подозревал». Это повествовательный приём: рассказчик теперь знает больше, чем тогда."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Little did + subject + know + that-clause",
+          "example": "Little did I know that the conversation would change my plans.",
+          "translation": "Я и не подозревал, что этот разговор изменит мои планы.",
+          "examples": [
+            {
+              "text": "Little did she know that everyone had already agreed.",
+              "translation_ru": "Она и не подозревала, что все уже договорились."
+            },
+            {
+              "text": "Little did we know that the shop was about to close for good.",
+              "translation_ru": "Мы и не подозревали, что магазин вот-вот закроется навсегда."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + ahnte(n) nicht, dass + clause",
+          "example": "Ich ahnte nicht, dass das Gespräch meine Pläne ändern würde.",
+          "translation": "Я и не подозревал, что этот разговор изменит мои планы.",
+          "examples": [
+            {
+              "text": "Sie ahnte nicht, dass alle bereits zugestimmt hatten.",
+              "translation_ru": "Она и не подозревала, что все уже договорились."
+            },
+            {
+              "text": "Wir ahnten nicht, dass der Laden kurz davorstand, endgültig zu schließen.",
+              "translation_ru": "Мы и не подозревали, что магазин вот-вот закроется навсегда."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я и не подозревал",
+      "title_en": "Narrative ignorance of a later consequence",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF008",
+      "set_id": "GFF",
+      "pattern": "No sooner had we sat down than the alarm went off.",
+      "group_title": "One past event immediately followed by another",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Immediate past sequence with no sooner and than",
+        "form": "No sooner had + subject + participle + than + past clause",
+        "metaphor_ru": "Парный союз здесь than, не when. Первое событие получает past perfect и инверсию, второе — past simple."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "No sooner had + subject + past participle + than + past simple clause",
+          "example": "No sooner had we sat down than the alarm went off.",
+          "translation": "Не успели мы сесть, как сработала сигнализация.",
+          "examples": [
+            {
+              "text": "No sooner had she sent the message than she noticed the typo.",
+              "translation_ru": "Не успела она отправить сообщение, как заметила опечатку."
+            },
+            {
+              "text": "No sooner had I closed the window than someone asked me to open it.",
+              "translation_ru": "Не успел я закрыть окно, как кто-то попросил открыть его."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Kaum + hatte(n) + subject + participle, da + past clause",
+          "example": "Kaum hatten wir uns hingesetzt, da ging der Alarm los.",
+          "translation": "Не успели мы сесть, как сработала сигнализация.",
+          "examples": [
+            {
+              "text": "Kaum hatte sie die Nachricht geschickt, da bemerkte sie den Tippfehler.",
+              "translation_ru": "Не успела она отправить сообщение, как заметила опечатку."
+            },
+            {
+              "text": "Kaum hatte ich das Fenster geschlossen, da bat mich jemand, es zu öffnen.",
+              "translation_ru": "Не успел я закрыть окно, как кто-то попросил открыть его."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не успел, как: no sooner",
+      "title_en": "One past event immediately followed by another",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF009",
+      "set_id": "GFF",
+      "pattern": "Hardly had the train stopped when people began to get off.",
+      "group_title": "A first event barely complete before the next",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Barely completed sequence with hardly and when",
+        "form": "Hardly had + subject + participle + when + past clause",
+        "metaphor_ru": "После hardly используется when; это важное отличие от no sooner ... than. Не добавляйте not: hardly уже несёт отрицательный оттенок."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Hardly had + subject + past participle + when + past simple clause",
+          "example": "Hardly had the train stopped when people began to get off.",
+          "translation": "Поезд едва остановился, как люди начали выходить.",
+          "examples": [
+            {
+              "text": "Hardly had I started reading when the lights went out.",
+              "translation_ru": "Я едва начал читать, как погас свет."
+            },
+            {
+              "text": "Hardly had she arrived when her phone rang.",
+              "translation_ru": "Она едва приехала, как зазвонил её телефон."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Kaum + past-perfect main clause, als + past clause",
+          "example": "Kaum war der Zug zum Stehen gekommen, als die Leute ausstiegen.",
+          "translation": "Поезд едва остановился, как люди начали выходить.",
+          "examples": [
+            {
+              "text": "Kaum hatte ich angefangen zu lesen, als das Licht ausging.",
+              "translation_ru": "Я едва начал читать, как погас свет."
+            },
+            {
+              "text": "Kaum war sie angekommen, als ihr Telefon klingelte.",
+              "translation_ru": "Она едва приехала, как зазвонил её телефон."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Едва произошло: hardly",
+      "title_en": "A first event barely complete before the next",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF010",
+      "set_id": "GFF",
+      "pattern": "Never before have I seen the river this low.",
+      "group_title": "An unprecedented present experience",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Experiential present perfect with never-before inversion",
+        "form": "Never before + have/has + subject + participle",
+        "metaphor_ru": "Present perfect охватывает опыт до настоящего. После never before вспомогательный have или has выходит перед подлежащим."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Never before + have/has + subject + past participle phrase",
+          "example": "Never before have I seen the river this low.",
+          "translation": "Никогда раньше я не видел реку настолько обмелевшей.",
+          "examples": [
+            {
+              "text": "Never before has she had to make such a difficult choice.",
+              "translation_ru": "Никогда раньше ей не приходилось делать такой трудный выбор."
+            },
+            {
+              "text": "Never before have we received so many thoughtful replies.",
+              "translation_ru": "Никогда раньше мы не получали столько содержательных ответов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Noch nie + haben/sein + subject + participle phrase",
+          "example": "Noch nie habe ich den Fluss mit so niedrigem Wasserstand gesehen.",
+          "translation": "Никогда раньше я не видел реку настолько обмелевшей.",
+          "examples": [
+            {
+              "text": "Noch nie hat sie eine so schwierige Entscheidung treffen müssen.",
+              "translation_ru": "Никогда раньше ей не приходилось делать такой трудный выбор."
+            },
+            {
+              "text": "Noch nie haben wir so viele durchdachte Antworten erhalten.",
+              "translation_ru": "Никогда раньше мы не получали столько содержательных ответов."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Никогда раньше",
+      "title_en": "An unprecedented present experience",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF011",
+      "set_id": "GFF",
+      "pattern": "So convincing was her explanation that nobody objected.",
+      "group_title": "Degree placed first to emphasise its result",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Degree-result inversion with so and an adjective",
+        "form": "So + adjective + be + subject + that-clause",
+        "metaphor_ru": "Формальный выразительный порядок. В обычной речи чаще her explanation was so convincing; здесь признак вынесен вперёд ради акцента."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "So + adjective + was/were + subject + that + result clause",
+          "example": "So convincing was her explanation that nobody objected.",
+          "translation": "Её объяснение было настолько убедительным, что никто не возразил.",
+          "examples": [
+            {
+              "text": "So narrow was the passage that we had to walk sideways.",
+              "translation_ru": "Проход был настолько узким, что нам пришлось идти боком."
+            },
+            {
+              "text": "So tired were the children that they fell asleep immediately.",
+              "translation_ru": "Дети были настолько уставшими, что сразу уснули."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + war(en) so + adjective, dass + result clause",
+          "example": "Ihre Erklärung war so überzeugend, dass niemand widersprach.",
+          "translation": "Её объяснение было настолько убедительным, что никто не возразил.",
+          "examples": [
+            {
+              "text": "Der Durchgang war so eng, dass wir seitwärts gehen mussten.",
+              "translation_ru": "Проход был настолько узким, что нам пришлось идти боком."
+            },
+            {
+              "text": "Die Kinder waren so müde, dass sie sofort einschliefen.",
+              "translation_ru": "Дети были настолько уставшими, что сразу уснули."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Настолько выраженный признак",
+      "title_en": "Degree placed first to emphasise its result",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF012",
+      "set_id": "GFF",
+      "pattern": "Such was the demand that we added another session.",
+      "group_title": "A noun's intensity foregrounded as the cause of a result",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Nominal degree-result focus with such was",
+        "form": "Such was + noun phrase + that-clause",
+        "metaphor_ru": "Such относится к силе или масштабу явления, названного существительным. Каркас формальный; немецкий естественно раскрывает степень через so groß."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Such was + singular noun phrase + that + result clause",
+          "example": "Such was the demand that we added another session.",
+          "translation": "Спрос был настолько большим, что мы добавили ещё одно занятие.",
+          "examples": [
+            {
+              "text": "Such was her relief that she began to laugh.",
+              "translation_ru": "Её облегчение было настолько сильным, что она начала смеяться."
+            },
+            {
+              "text": "Such was the confusion that nobody knew where to go.",
+              "translation_ru": "Путаница была такой, что никто не знал, куда идти."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Singular noun phrase + war so groß, dass + result clause",
+          "example": "Die Nachfrage war so groß, dass wir einen weiteren Termin anboten.",
+          "translation": "Спрос был настолько большим, что мы добавили ещё одно занятие.",
+          "examples": [
+            {
+              "text": "Ihre Erleichterung war so groß, dass sie zu lachen begann.",
+              "translation_ru": "Её облегчение было настолько сильным, что она начала смеяться."
+            },
+            {
+              "text": "Die Verwirrung war so groß, dass niemand wusste, wohin er gehen sollte.",
+              "translation_ru": "Путаница была такой, что никто не знал, куда идти."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Такой масштаб явления",
+      "title_en": "A noun's intensity foregrounded as the cause of a result",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF013",
+      "set_id": "GFF",
+      "pattern": "It was not until Monday that we received confirmation.",
+      "group_title": "A time boundary highlighted in an it-cleft",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Delayed timing emphasised without main-clause inversion",
+        "form": "It was not until + time + that + clause",
+        "metaphor_ru": "В отличие от Not until Monday did we receive, расщеплённая конструкция сохраняет обычный порядок после that. Не смешивайте два каркаса."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It was not until + time expression/clause + that + ordinary past clause",
+          "example": "It was not until Monday that we received confirmation.",
+          "translation": "Подтверждение мы получили только в понедельник.",
+          "examples": [
+            {
+              "text": "It was not until I got home that I noticed the stain.",
+              "translation_ru": "Пятно я заметил только когда пришёл домой."
+            },
+            {
+              "text": "It was not until the final chapter that she explained the title.",
+              "translation_ru": "Название она объяснила только в последней главе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Erst + time expression + past main clause / erst als + clause, main clause",
+          "example": "Erst am Montag erhielten wir die Bestätigung.",
+          "translation": "Подтверждение мы получили только в понедельник.",
+          "examples": [
+            {
+              "text": "Erst als ich zu Hause ankam, bemerkte ich den Fleck.",
+              "translation_ru": "Пятно я заметил только когда пришёл домой."
+            },
+            {
+              "text": "Erst im letzten Kapitel erklärte sie den Titel.",
+              "translation_ru": "Название она объяснила только в последней главе."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Акцент на сроке без инверсии",
+      "title_en": "A time boundary highlighted in an it-cleft",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF014",
+      "set_id": "GFF",
+      "pattern": "What I need is a clear example, not another definition.",
+      "group_title": "A focused answer to an implicit what-question",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Pseudo-cleft identifying the needed item",
+        "form": "What + subject + need + be + focus",
+        "metaphor_ru": "Вся часть What I need — подлежащее, поэтому внутри неё нет вопросительной инверсии. Фокус стоит после is."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What + subject + need(s) + is + focused noun phrase, not + alternative",
+          "example": "What I need is a clear example, not another definition.",
+          "translation": "Мне нужен понятный пример, а не ещё одно определение.",
+          "examples": [
+            {
+              "text": "What she needs is a proper rest, not more advice.",
+              "translation_ru": "Ей нужен полноценный отдых, а не новые советы."
+            },
+            {
+              "text": "What we need is a decision, not another meeting.",
+              "translation_ru": "Нам нужно решение, а не ещё одна встреча."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was + subject + braucht/brauchen, ist + focus, nicht + alternative",
+          "example": "Was ich brauche, ist ein klares Beispiel, nicht noch eine Definition.",
+          "translation": "Мне нужен понятный пример, а не ещё одно определение.",
+          "examples": [
+            {
+              "text": "Was sie braucht, ist richtige Erholung, nicht noch mehr Rat.",
+              "translation_ru": "Ей нужен полноценный отдых, а не новые советы."
+            },
+            {
+              "text": "Was wir brauchen, ist eine Entscheidung, nicht noch eine Besprechung.",
+              "translation_ru": "Нам нужно решение, а не ещё одна встреча."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно именно это",
+      "title_en": "A focused answer to an implicit what-question",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF015",
+      "set_id": "GFF",
+      "pattern": "All I did was ask for an explanation.",
+      "group_title": "Restricting one's action to a single simple step",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "All-cleft with do and a bare infinitive complement",
+        "form": "All + subject + did + was + bare infinitive",
+        "metaphor_ru": "После All I did was естественен инфинитив без to. Говорящий ограничивает действие, часто защищаясь от преувеличенного обвинения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "All + subject + did + was + bare infinitive phrase",
+          "example": "All I did was ask for an explanation.",
+          "translation": "Я всего лишь попросил объяснить.",
+          "examples": [
+            {
+              "text": "All she did was move the chair.",
+              "translation_ru": "Она всего лишь передвинула стул."
+            },
+            {
+              "text": "All we did was compare the two lists.",
+              "translation_ru": "Мы всего лишь сравнили два списка."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + haben + lediglich/nur + participle phrase",
+          "example": "Ich habe lediglich um eine Erklärung gebeten.",
+          "translation": "Я всего лишь попросил объяснить.",
+          "examples": [
+            {
+              "text": "Sie hat lediglich den Stuhl verschoben.",
+              "translation_ru": "Она всего лишь передвинула стул."
+            },
+            {
+              "text": "Wir haben lediglich die beiden Listen verglichen.",
+              "translation_ru": "Мы всего лишь сравнили два списка."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я всего лишь сделал",
+      "title_en": "Restricting one's action to a single simple step",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF016",
+      "set_id": "GFF",
+      "pattern": "It is not the price that worries me, but the lack of support.",
+      "group_title": "Correcting the identity of the real concern",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Contrastive it-cleft replacing a focused noun",
+        "form": "It is not + noun + that + clause, but + noun",
+        "metaphor_ru": "Отрицается выбранный фокус price, а не само беспокойство. But подставляет правильный элемент в ту же смысловую позицию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It is not + focused noun phrase + that + clause, but + replacement noun phrase",
+          "example": "It is not the price that worries me, but the lack of support.",
+          "translation": "Меня беспокоит не цена, а отсутствие поддержки.",
+          "examples": [
+            {
+              "text": "It is not the distance that matters, but the time it takes.",
+              "translation_ru": "Важно не расстояние, а время в пути."
+            },
+            {
+              "text": "It is not her answer that surprised me, but her tone.",
+              "translation_ru": "Меня удивил не её ответ, а её тон."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nicht + noun phrase + predicate, sondern + replacement noun phrase",
+          "example": "Nicht der Preis macht mir Sorgen, sondern die fehlende Unterstützung.",
+          "translation": "Меня беспокоит не цена, а отсутствие поддержки.",
+          "examples": [
+            {
+              "text": "Nicht die Entfernung ist wichtig, sondern die benötigte Zeit.",
+              "translation_ru": "Важно не расстояние, а время в пути."
+            },
+            {
+              "text": "Nicht ihre Antwort hat mich überrascht, sondern ihr Ton.",
+              "translation_ru": "Меня удивил не её ответ, а её тон."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не это, а другое",
+      "title_en": "Correcting the identity of the real concern",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF017",
+      "set_id": "GFF",
+      "pattern": "The last thing I want is to make this more complicated.",
+      "group_title": "A strongly undesired action expressed without not",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative preference through the last thing",
+        "form": "The last thing + subject + want + be + to-infinitive",
+        "metaphor_ru": "The last thing здесь значит «меньше всего», а не последнее дело в расписании. Положительная грамматическая форма выражает отрицательное желание."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The last thing + subject + want(s) + is + to-infinitive phrase",
+          "example": "The last thing I want is to make this more complicated.",
+          "translation": "Меньше всего я хочу ещё больше это усложнить.",
+          "examples": [
+            {
+              "text": "The last thing she wants is to start another argument.",
+              "translation_ru": "Меньше всего она хочет начать новый спор."
+            },
+            {
+              "text": "The last thing we want is to waste your time.",
+              "translation_ru": "Меньше всего мы хотим тратить ваше время зря."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das Letzte, was + subject + will/wollen, ist, zu-infinitive",
+          "example": "Das Letzte, was ich will, ist, das noch komplizierter zu machen.",
+          "translation": "Меньше всего я хочу ещё больше это усложнить.",
+          "examples": [
+            {
+              "text": "Das Letzte, was sie will, ist, einen neuen Streit anzufangen.",
+              "translation_ru": "Меньше всего она хочет начать новый спор."
+            },
+            {
+              "text": "Das Letzte, was wir wollen, ist, Ihre Zeit zu verschwenden.",
+              "translation_ru": "Меньше всего мы хотим тратить ваше время зря."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Меньше всего хочется",
+      "title_en": "A strongly undesired action expressed without not",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF018",
+      "set_id": "GFF",
+      "pattern": "A longer answer is not necessarily a better answer.",
+      "group_title": "Denying an automatic relationship rather than the outcome itself",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negated necessity of an inference",
+        "form": "Not necessarily + predicative complement",
+        "metaphor_ru": "Not necessarily оставляет возможность, но отрицает обязательность. Более длинный ответ может быть лучше, просто это не следует автоматически."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + not necessarily + complement",
+          "example": "A longer answer is not necessarily a better answer.",
+          "translation": "Более длинный ответ не обязательно лучше.",
+          "examples": [
+            {
+              "text": "Silence is not necessarily a sign of agreement.",
+              "translation_ru": "Молчание не обязательно означает согласие."
+            },
+            {
+              "text": "The cheapest option is not necessarily the most economical.",
+              "translation_ru": "Самый дешёвый вариант не обязательно самый экономичный."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + nicht unbedingt + complement",
+          "example": "Eine längere Antwort ist nicht unbedingt eine bessere Antwort.",
+          "translation": "Более длинный ответ не обязательно лучше.",
+          "examples": [
+            {
+              "text": "Schweigen ist nicht unbedingt ein Zeichen von Zustimmung.",
+              "translation_ru": "Молчание не обязательно означает согласие."
+            },
+            {
+              "text": "Die billigste Option ist nicht unbedingt die wirtschaftlichste.",
+              "translation_ru": "Самый дешёвый вариант не обязательно самый экономичный."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не обязательно",
+      "title_en": "Denying an automatic relationship rather than the outcome itself",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF019",
+      "set_id": "GFF",
+      "pattern": "Far from solving the problem, the update made it worse.",
+      "group_title": "An action producing the opposite of its expected effect",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Rejected expected outcome via far from plus gerund",
+        "form": "Far from + -ing, contrary main clause",
+        "metaphor_ru": "Far from + -ing означает «вовсе не» с контрастом результата. После from нужна форма -ing, а не to-инфинитив."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Far from + -ing phrase, subject + contrary predicate",
+          "example": "Far from solving the problem, the update made it worse.",
+          "translation": "Обновление не решило проблему, а, наоборот, усугубило её.",
+          "examples": [
+            {
+              "text": "Far from saving time, the shortcut delayed us.",
+              "translation_ru": "Короткий путь не сэкономил время, а, наоборот, задержал нас."
+            },
+            {
+              "text": "Far from reassuring her, his silence increased her doubts.",
+              "translation_ru": "Его молчание не успокоило её, а, наоборот, усилило сомнения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Statt + zu-infinitive, subject + contrary predicate",
+          "example": "Statt das Problem zu lösen, verschlimmerte das Update es.",
+          "translation": "Обновление не решило проблему, а, наоборот, усугубило её.",
+          "examples": [
+            {
+              "text": "Statt Zeit zu sparen, hielt uns die Abkürzung auf.",
+              "translation_ru": "Короткий путь не сэкономил время, а, наоборот, задержал нас."
+            },
+            {
+              "text": "Statt sie zu beruhigen, verstärkte sein Schweigen ihre Zweifel.",
+              "translation_ru": "Его молчание не успокоило её, а, наоборот, усилило сомнения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вместо ожидаемого — обратное",
+      "title_en": "An action producing the opposite of its expected effect",
+      "group_id": "GFF"
+    },
+    {
+      "id": "GFF020",
+      "set_id": "GFF",
+      "pattern": "The process was anything but straightforward.",
+      "group_title": "Strongly rejecting an adjective through an exception phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Emphatic opposite of a named quality",
+        "form": "Anything but + adjective",
+        "metaphor_ru": "Anything but означает «что угодно, только не»: процесс совсем не был простым. Это не положительное anything в обычном неопределённом значении."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + anything but + adjective",
+          "example": "The process was anything but straightforward.",
+          "translation": "Процесс был совсем не простым.",
+          "examples": [
+            {
+              "text": "Her response was anything but reassuring.",
+              "translation_ru": "Её ответ совсем не успокаивал."
+            },
+            {
+              "text": "The room was anything but quiet.",
+              "translation_ru": "В комнате было совсем не тихо."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + alles andere als + adjective",
+          "example": "Der Ablauf war alles andere als unkompliziert.",
+          "translation": "Процесс был совсем не простым.",
+          "examples": [
+            {
+              "text": "Ihre Antwort war alles andere als beruhigend.",
+              "translation_ru": "Её ответ совсем не успокаивал."
+            },
+            {
+              "text": "Das Zimmer war alles andere als ruhig.",
+              "translation_ru": "В комнате было совсем не тихо."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Совсем не такое качество",
+      "title_en": "Strongly rejecting an adjective through an exception phrase",
+      "group_id": "GFF"
+    }
+  ]
+}

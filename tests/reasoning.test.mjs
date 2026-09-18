@@ -1,3 +1,4 @@
+import { expectedPatternCount, assertCanonicalIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -17,7 +18,7 @@ test("reasoning frame source and public assets stay identical", () => {
 
 test("reasoning subset remains complete inside the full public Practice curriculum", () => {
   const curriculum = loadContent().advancedPatterns;
-  assert.ok(curriculum.length >= 600);
+  assertCanonicalIds(curriculum, "reasoning curriculum");
   const reasoning = curriculum.filter((pattern) => pattern.reasoning?.move);
   const reasoningMoves = new Set(reasoning.map((pattern) => pattern.reasoning.move));
   assert.ok(reasoning.length >= 30);

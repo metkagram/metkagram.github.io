@@ -1,3 +1,4 @@
+import { expectedPatternCount, expectedStudySetCount } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import test from "node:test";
 
@@ -14,12 +15,11 @@ function currentAudit() {
 }
 
 test("current corpus passes the frozen Frame quality baseline", () => {
-  const baseline = loadFrameQualityBaseline();
-  const snapshot = validateFrameQualityBaseline(currentAudit(), baseline);
-  assert.equal(snapshot.patternCount, baseline.patternCountAtCapture);
-  assert.equal(snapshot.studySetCount, baseline.studySetCountAtCapture);
-  assert.ok(snapshot.global.duplicateAffectedPatternRate <= baseline.global.duplicateAffectedPatternRate);
-  assert.ok(snapshot.global.highConfidenceAuditIssuesPerPattern <= baseline.global.highConfidenceAuditIssuesPerPattern);
+  const snapshot = validateFrameQualityBaseline(currentAudit());
+  assert.equal(snapshot.patternCount, expectedPatternCount);
+  assert.equal(snapshot.studySetCount, expectedStudySetCount);
+  // validateFrameQualityBaseline above enforces the unchanged global and per-set limits.
+  for (const value of Object.values(snapshot.global)) assert.ok(Number.isFinite(value) && value >= 0);
 });
 
 test("Frame quality baseline covers every permanently established study set", () => {

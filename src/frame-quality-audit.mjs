@@ -24,7 +24,7 @@ function tokens(value = "") {
   return new Set(normalizeFrameFormula(value, { abstractSlots: true })
     .replaceAll(/[^\p{L}\p{N}\[\]]+/gu, " ")
     .split(/\s+/)
-    .filter((token) => token.length > 1));
+    .filter((token) => token.length > 0));
 }
 
 function jaccard(left, right) {
@@ -81,8 +81,15 @@ function detectEnglishAgreement(text) {
     { regex: /\bi\s+(?:is|has|does|are)\b/giu, label: "first-person subject with incompatible auxiliary" },
   ];
   for (const rule of rules) {
-    const match = cleanText(text).match(rule.regex)?.[0];
-    if (match) issues.push({ type: "en_subject_verb_agreement", severity: "high", confidence: "high", evidence: match, note: rule.label });
+    const normalized = cleanText(text);
+    const match = [...normalized.matchAll(rule.regex)].find((candidate) => {
+      // Irrealis were is grammatical directly after as if / as though.
+      // Do not suppress other agreement errors or later errors in the sentence.
+      const prefix = normalized.slice(0, candidate.index);
+      const licensedWere = /\bwere$/iu.test(candidate[0]) && /\bas\s+(?:if|though)\s*$/iu.test(prefix);
+      return !licensedWere;
+    });
+    if (match) issues.push({ type: "en_subject_verb_agreement", severity: "high", confidence: "high", evidence: match[0], note: rule.label });
   }
   return issues;
 }

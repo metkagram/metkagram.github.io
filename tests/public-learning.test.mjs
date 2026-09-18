@@ -1,3 +1,4 @@
+import { expectedPatternCount, assertCanonicalIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -81,7 +82,7 @@ test("public learning links favor reviewed strength over inflated coverage", () 
   assert.equal(graph.sourceCounts.intents, 18);
   assert.equal(Object.keys(graph.documents).length, 72);
   assert.equal(Object.keys(graph.patterns).length, publicPatterns.size);
-  assert.ok(publicPatterns.size >= 600, `expected canonical public Practice curriculum, found ${publicPatterns.size}`);
+  assertCanonicalIds(publicPatterns.keys(), "public learning Pattern membership");
   assert.equal(Object.keys(graph.intents).length, 18);
 
   assert.ok(graph.relationCounts.connectedDocumentCount >= 15);

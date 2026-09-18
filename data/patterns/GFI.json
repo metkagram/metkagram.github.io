@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFI",
+  "title": "Gerund contrasts and participial clauses",
+  "title_ru": "Герундий и причастные конструкции",
+  "patterns": [
+    {
+      "id": "GFI001",
+      "set_id": "GFI",
+      "pattern": "I remember locking the back door.",
+      "group_title": "A memory of an action already performed",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Retrospective remember plus gerund",
+        "form": "Remember + -ing",
+        "metaphor_ru": "Remember doing означает помнить сам прошлый эпизод. Это не напоминание выполнить действие: для него используется remember to do."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + remember(s) + -ing phrase",
+          "example": "I remember locking the back door.",
+          "translation": "Я помню, как запер заднюю дверь.",
+          "examples": [
+            {
+              "text": "She remembers meeting him at a conference.",
+              "translation_ru": "Она помнит, как познакомилась с ним на конференции."
+            },
+            {
+              "text": "We remember waiting outside in the rain.",
+              "translation_ru": "Мы помним, как ждали снаружи под дождём."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sich erinnern, zu-infinitive Perfekt / daran, wie + past clause",
+          "example": "Ich erinnere mich daran, die Hintertür abgeschlossen zu haben.",
+          "translation": "Я помню, как запер заднюю дверь.",
+          "examples": [
+            {
+              "text": "Sie erinnert sich daran, ihn auf einer Konferenz kennengelernt zu haben.",
+              "translation_ru": "Она помнит, как познакомилась с ним на конференции."
+            },
+            {
+              "text": "Wir erinnern uns daran, draußen im Regen gewartet zu haben.",
+              "translation_ru": "Мы помним, как ждали снаружи под дождём."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Remember doing: помнить эпизод",
+      "title_en": "A memory of an action already performed",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI002",
+      "set_id": "GFI",
+      "pattern": "Remember to save your changes before closing the file.",
+      "group_title": "Keeping an intended action in mind until it is done",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Prospective remember plus infinitive",
+        "form": "Remember to + infinitive",
+        "metaphor_ru": "Remember to do направлено вперёд: не забудь выполнить. Для воспоминания о выполненном действии нужен другой каркас, remember doing."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Remember to + infinitive + context",
+          "example": "Remember to save your changes before closing the file.",
+          "translation": "Не забудь сохранить изменения перед закрытием файла.",
+          "examples": [
+            {
+              "text": "Remember to bring the original receipt.",
+              "translation_ru": "Не забудь принести оригинал чека."
+            },
+            {
+              "text": "Remember to ask which entrance we should use.",
+              "translation_ru": "Не забудь спросить, каким входом нам пользоваться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Denk daran, zu-infinitive",
+          "example": "Denk daran, deine Änderungen zu speichern, bevor du die Datei schließt.",
+          "translation": "Не забудь сохранить изменения перед закрытием файла.",
+          "examples": [
+            {
+              "text": "Denk daran, den Originalbeleg mitzubringen.",
+              "translation_ru": "Не забудь принести оригинал чека."
+            },
+            {
+              "text": "Denk daran, zu fragen, welchen Eingang wir benutzen sollen.",
+              "translation_ru": "Не забудь спросить, каким входом нам пользоваться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Remember to: не забыть сделать",
+      "title_en": "Keeping an intended action in mind until it is done",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI003",
+      "set_id": "GFI",
+      "pattern": "She stopped checking her phone during meals.",
+      "group_title": "Ending the activity named by the gerund",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Cessation expressed by stop plus gerund",
+        "form": "Stop + -ing",
+        "metaphor_ru": "Прекращается именно checking. После stop to check, напротив, человек останавливает другое действие, чтобы проверить телефон."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + stop/stopped + -ing phrase",
+          "example": "She stopped checking her phone during meals.",
+          "translation": "Она перестала проверять телефон во время еды.",
+          "examples": [
+            {
+              "text": "We stopped using paper forms last month.",
+              "translation_ru": "В прошлом месяце мы перестали пользоваться бумажными формами."
+            },
+            {
+              "text": "He stopped arguing when he saw the evidence.",
+              "translation_ru": "Он перестал спорить, когда увидел доказательства."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + aufhören, zu-infinitive",
+          "example": "Sie hörte auf, beim Essen auf ihr Handy zu schauen.",
+          "translation": "Она перестала проверять телефон во время еды.",
+          "examples": [
+            {
+              "text": "Wir haben letzten Monat aufgehört, Papierformulare zu verwenden.",
+              "translation_ru": "В прошлом месяце мы перестали пользоваться бумажными формами."
+            },
+            {
+              "text": "Er hörte auf zu streiten, als er die Belege sah.",
+              "translation_ru": "Он перестал спорить, когда увидел доказательства."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Stop doing: прекратить действие",
+      "title_en": "Ending the activity named by the gerund",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI004",
+      "set_id": "GFI",
+      "pattern": "We stopped to check the map.",
+      "group_title": "Interrupting one activity to perform another",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Purpose infinitive after stop",
+        "form": "Stop to + infinitive",
+        "metaphor_ru": "Остановились ради проверки, а не прекратили проверять. Инфинитив называет цель остановки; предыдущее действие понятно из контекста."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + stop/stopped + to-infinitive of purpose",
+          "example": "We stopped to check the map.",
+          "translation": "Мы остановились, чтобы проверить карту.",
+          "examples": [
+            {
+              "text": "She stopped to tie her shoelace.",
+              "translation_ru": "Она остановилась, чтобы завязать шнурок."
+            },
+            {
+              "text": "I stopped to let the ambulance pass.",
+              "translation_ru": "Я остановился, чтобы пропустить скорую помощь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + anhalten/stehen bleiben, um + zu-infinitive",
+          "example": "Wir hielten an, um auf die Karte zu schauen.",
+          "translation": "Мы остановились, чтобы проверить карту.",
+          "examples": [
+            {
+              "text": "Sie blieb stehen, um ihren Schnürsenkel zu binden.",
+              "translation_ru": "Она остановилась, чтобы завязать шнурок."
+            },
+            {
+              "text": "Ich hielt an, um den Krankenwagen vorbeizulassen.",
+              "translation_ru": "Я остановился, чтобы пропустить скорую помощь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Stop to: остановиться ради действия",
+      "title_en": "Interrupting one activity to perform another",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI005",
+      "set_id": "GFI",
+      "pattern": "Try moving the microphone a little closer.",
+      "group_title": "Testing an action as a possible solution",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Experimental try plus gerund",
+        "form": "Try + -ing",
+        "metaphor_ru": "Предлагается эксперимент: сделай это и посмотри на эффект. Try to move означало бы попытку передвинуть, возможно с трудом."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Try + -ing phrase as a possible method",
+          "example": "Try moving the microphone a little closer.",
+          "translation": "Попробуй придвинуть микрофон немного ближе.",
+          "examples": [
+            {
+              "text": "Try reading the sentence aloud.",
+              "translation_ru": "Попробуй прочитать предложение вслух."
+            },
+            {
+              "text": "Try restarting the application before changing the settings.",
+              "translation_ru": "Попробуй перезапустить приложение, прежде чем менять настройки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Probier aus, ob + action/result clause / imperative + einmal",
+          "example": "Rück das Mikrofon versuchsweise etwas näher heran.",
+          "translation": "Попробуй придвинуть микрофон немного ближе.",
+          "examples": [
+            {
+              "text": "Lies den Satz versuchsweise laut vor.",
+              "translation_ru": "Попробуй прочитать предложение вслух."
+            },
+            {
+              "text": "Starte die Anwendung versuchsweise neu, bevor du die Einstellungen änderst.",
+              "translation_ru": "Попробуй перезапустить приложение, прежде чем менять настройки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Try doing: проверить способ",
+      "title_en": "Testing an action as a possible solution",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI006",
+      "set_id": "GFI",
+      "pattern": "I tried to open the window, but it was stuck.",
+      "group_title": "An attempted action whose success is not guaranteed",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Effortful try plus infinitive with explicit failure",
+        "form": "Try to + infinitive, but + obstacle",
+        "metaphor_ru": "Try to описывает попытку достичь цели. Само try to не сообщает, удалось ли; в примерах препятствие делает неуспех явным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + tried to + infinitive, but + obstacle clause",
+          "example": "I tried to open the window, but it was stuck.",
+          "translation": "Я пытался открыть окно, но его заклинило.",
+          "examples": [
+            {
+              "text": "She tried to call him, but there was no signal.",
+              "translation_ru": "Она пыталась ему позвонить, но связи не было."
+            },
+            {
+              "text": "We tried to finish before lunch, but the test took longer than expected.",
+              "translation_ru": "Мы пытались закончить до обеда, но проверка заняла больше времени, чем ожидалось."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + versuchen, zu-infinitive, aber + obstacle",
+          "example": "Ich versuchte, das Fenster zu öffnen, aber es klemmte.",
+          "translation": "Я пытался открыть окно, но его заклинило.",
+          "examples": [
+            {
+              "text": "Sie versuchte, ihn anzurufen, aber es gab keinen Empfang.",
+              "translation_ru": "Она пыталась ему позвонить, но связи не было."
+            },
+            {
+              "text": "Wir versuchten, vor dem Mittagessen fertig zu werden, aber der Test dauerte länger als erwartet.",
+              "translation_ru": "Мы пытались закончить до обеда, но проверка заняла больше времени, чем ожидалось."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Try to: попытаться достичь цели",
+      "title_en": "An attempted action whose success is not guaranteed",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI007",
+      "set_id": "GFI",
+      "pattern": "I regret ignoring her advice.",
+      "group_title": "Regretting an earlier action rather than announcing bad news",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Retrospective regret plus gerund",
+        "form": "Regret + -ing",
+        "metaphor_ru": "Сожаление относится к совершённому действию. Gerund может обозначать прошлое без отдельного прошедшего времени; контекст задаёт порядок."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + regret(s) + -ing phrase",
+          "example": "I regret ignoring her advice.",
+          "translation": "Я жалею, что проигнорировал её совет.",
+          "examples": [
+            {
+              "text": "She regrets selling her old guitar.",
+              "translation_ru": "Она жалеет, что продала старую гитару."
+            },
+            {
+              "text": "We regret making the announcement so early.",
+              "translation_ru": "Мы жалеем, что сделали объявление так рано."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + bereuen, zu-infinitive Perfekt",
+          "example": "Ich bereue, ihren Rat ignoriert zu haben.",
+          "translation": "Я жалею, что проигнорировал её совет.",
+          "examples": [
+            {
+              "text": "Sie bereut, ihre alte Gitarre verkauft zu haben.",
+              "translation_ru": "Она жалеет, что продала старую гитару."
+            },
+            {
+              "text": "Wir bereuen, die Ankündigung so früh gemacht zu haben.",
+              "translation_ru": "Мы жалеем, что сделали объявление так рано."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Regret doing: сожалеть о поступке",
+      "title_en": "Regretting an earlier action rather than announcing bad news",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI008",
+      "set_id": "GFI",
+      "pattern": "We regret to inform you that the event has been cancelled.",
+      "group_title": "A formal announcement of unwelcome information",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Present communicative regret plus infinitive",
+        "form": "Regret to inform/tell/say + message",
+        "metaphor_ru": "Это формальная формула сообщения неприятной новости сейчас. В отличие от regret doing, она не обязательно выражает сожаление о прошлой ошибке."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + regret(s) to + communication verb + that-clause",
+          "example": "We regret to inform you that the event has been cancelled.",
+          "translation": "С сожалением сообщаем, что мероприятие отменено.",
+          "examples": [
+            {
+              "text": "I regret to say that we cannot extend the deadline.",
+              "translation_ru": "С сожалением вынужден сказать, что мы не можем продлить срок."
+            },
+            {
+              "text": "We regret to tell you that your preferred date is unavailable.",
+              "translation_ru": "С сожалением сообщаем, что выбранная вами дата недоступна."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Leider + müssen + subject + mitteilen/sagen, dass + clause",
+          "example": "Leider müssen wir Ihnen mitteilen, dass die Veranstaltung abgesagt wurde.",
+          "translation": "С сожалением сообщаем, что мероприятие отменено.",
+          "examples": [
+            {
+              "text": "Leider muss ich sagen, dass wir die Frist nicht verlängern können.",
+              "translation_ru": "С сожалением вынужден сказать, что мы не можем продлить срок."
+            },
+            {
+              "text": "Leider müssen wir Ihnen mitteilen, dass Ihr Wunschtermin nicht verfügbar ist.",
+              "translation_ru": "С сожалением сообщаем, что выбранная вами дата недоступна."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Regret to: сообщить плохую новость",
+      "title_en": "A formal announcement of unwelcome information",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI009",
+      "set_id": "GFI",
+      "pattern": "Taking the earlier train means getting up before six.",
+      "group_title": "An action's practical implication, not a person's intention",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Consequence expressed by mean plus gerund",
+        "form": "Action + means + -ing",
+        "metaphor_ru": "Mean doing означает «предполагает / влечёт». Это не намерение человека; mean to do имеет другой смысл."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject/action phrase + mean(s) + -ing consequence",
+          "example": "Taking the earlier train means getting up before six.",
+          "translation": "Поехать более ранним поездом означает встать до шести.",
+          "examples": [
+            {
+              "text": "Accepting the offer means moving to another city.",
+              "translation_ru": "Принять предложение означает переехать в другой город."
+            },
+            {
+              "text": "Keeping every version means using more storage space.",
+              "translation_ru": "Хранить каждую версию означает расходовать больше места."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Action/subject phrase + bedeuten, zu-infinitive consequence",
+          "example": "Den früheren Zug zu nehmen bedeutet, vor sechs aufzustehen.",
+          "translation": "Поехать более ранним поездом означает встать до шести.",
+          "examples": [
+            {
+              "text": "Das Angebot anzunehmen bedeutet, in eine andere Stadt zu ziehen.",
+              "translation_ru": "Принять предложение означает переехать в другой город."
+            },
+            {
+              "text": "Jede Version aufzubewahren bedeutet, mehr Speicherplatz zu verbrauchen.",
+              "translation_ru": "Хранить каждую версию означает расходовать больше места."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Mean doing: действие влечёт следствие",
+      "title_en": "An action's practical implication, not a person's intention",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI010",
+      "set_id": "GFI",
+      "pattern": "I meant to reply yesterday, but the day got away from me.",
+      "group_title": "An intention, especially one that was not fulfilled",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Intention expressed by mean plus infinitive",
+        "form": "Mean to + infinitive",
+        "metaphor_ru": "Meant to значит «собирался / намеревался». Не путайте с meant doing, где действие является следствием, а не целью."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + meant to + infinitive, but + explanation",
+          "example": "I meant to reply yesterday, but the day got away from me.",
+          "translation": "Я собирался ответить вчера, но день пролетел незаметно.",
+          "examples": [
+            {
+              "text": "She meant to bring the receipt, but left it at home.",
+              "translation_ru": "Она собиралась принести чек, но оставила его дома."
+            },
+            {
+              "text": "We meant to book earlier, but had not agreed on a date.",
+              "translation_ru": "Мы собирались забронировать раньше, но не согласовали дату."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + wollten eigentlich + infinitive, aber + explanation",
+          "example": "Ich wollte eigentlich gestern antworten, aber der Tag verging wie im Flug.",
+          "translation": "Я собирался ответить вчера, но день пролетел незаметно.",
+          "examples": [
+            {
+              "text": "Sie wollte eigentlich den Beleg mitbringen, ließ ihn aber zu Hause.",
+              "translation_ru": "Она собиралась принести чек, но оставила его дома."
+            },
+            {
+              "text": "Wir wollten eigentlich früher buchen, hatten uns aber noch nicht auf einen Termin geeinigt.",
+              "translation_ru": "Мы собирались забронировать раньше, но не согласовали дату."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Mean to: намереваться",
+      "title_en": "An intention, especially one that was not fulfilled",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI011",
+      "set_id": "GFI",
+      "pattern": "She went on talking after everyone else had stopped.",
+      "group_title": "Continuing the same activity",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Continuation through go on plus gerund",
+        "form": "Go on + -ing",
+        "metaphor_ru": "Go on doing сохраняет прежнее действие. Go on to do переключает рассказ на следующее, другое действие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + went on + -ing phrase",
+          "example": "She went on talking after everyone else had stopped.",
+          "translation": "Она продолжала говорить после того, как все остальные замолчали.",
+          "examples": [
+            {
+              "text": "We went on working despite the noise.",
+              "translation_ru": "Мы продолжали работать, несмотря на шум."
+            },
+            {
+              "text": "He went on asking the same question.",
+              "translation_ru": "Он продолжал задавать один и тот же вопрос."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + finite verb + weiter",
+          "example": "Sie redete weiter, nachdem alle anderen aufgehört hatten.",
+          "translation": "Она продолжала говорить после того, как все остальные замолчали.",
+          "examples": [
+            {
+              "text": "Wir arbeiteten trotz des Lärms weiter.",
+              "translation_ru": "Мы продолжали работать, несмотря на шум."
+            },
+            {
+              "text": "Er stellte weiterhin dieselbe Frage.",
+              "translation_ru": "Он продолжал задавать один и тот же вопрос."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Go on doing: продолжать то же",
+      "title_en": "Continuing the same activity",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI012",
+      "set_id": "GFI",
+      "pattern": "She described the problem and went on to explain the solution.",
+      "group_title": "Proceeding from one completed activity to another",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Sequential transition through go on plus infinitive",
+        "form": "First action + go on to + new action",
+        "metaphor_ru": "После первой темы или действия начинается следующее. To explain — новый шаг, а не продолжение уже начатого объяснения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + first past action + and went on to + different infinitive",
+          "example": "She described the problem and went on to explain the solution.",
+          "translation": "Она описала проблему, а затем перешла к объяснению решения.",
+          "examples": [
+            {
+              "text": "He thanked the guests and went on to introduce the speakers.",
+              "translation_ru": "Он поблагодарил гостей, а затем представил выступающих."
+            },
+            {
+              "text": "We checked the totals and went on to review the individual entries.",
+              "translation_ru": "Мы проверили итоги, а затем перешли к отдельным записям."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + first past action + und + second past action + anschließend",
+          "example": "Sie beschrieb das Problem und erklärte anschließend die Lösung.",
+          "translation": "Она описала проблему, а затем перешла к объяснению решения.",
+          "examples": [
+            {
+              "text": "Er dankte den Gästen und stellte anschließend die Redner vor.",
+              "translation_ru": "Он поблагодарил гостей, а затем представил выступающих."
+            },
+            {
+              "text": "Wir prüften die Summen und sahen uns anschließend die einzelnen Einträge an.",
+              "translation_ru": "Мы проверили итоги, а затем перешли к отдельным записям."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Go on to: перейти к следующему",
+      "title_en": "Proceeding from one completed activity to another",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI013",
+      "set_id": "GFI",
+      "pattern": "She helped without being asked.",
+      "group_title": "An action performed without a passive prerequisite",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Passive gerund after without",
+        "form": "Without being + past participle",
+        "metaphor_ru": "После предлога without нужен gerund. Being asked показывает, что человека просят, а не он сам задаёт вопрос."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + main predicate + without being + passive participle",
+          "example": "She helped without being asked.",
+          "translation": "Она помогла, хотя её не просили.",
+          "examples": [
+            {
+              "text": "He entered without being noticed.",
+              "translation_ru": "Он вошёл незамеченным."
+            },
+            {
+              "text": "The parcel arrived without being damaged.",
+              "translation_ru": "Посылка пришла без повреждений."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause, ohne dass + passive clause",
+          "example": "Sie half, ohne dass sie darum gebeten wurde.",
+          "translation": "Она помогла, хотя её не просили.",
+          "examples": [
+            {
+              "text": "Er trat ein, ohne dass er bemerkt wurde.",
+              "translation_ru": "Он вошёл незамеченным."
+            },
+            {
+              "text": "Das Paket kam an, ohne beschädigt worden zu sein.",
+              "translation_ru": "Посылка пришла без повреждений."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Без пассивного предварительного действия",
+      "title_en": "An action performed without a passive prerequisite",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI014",
+      "set_id": "GFI",
+      "pattern": "She resented having been left out of the discussion.",
+      "group_title": "A reaction to an earlier passive experience",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect passive gerund as a verb complement",
+        "form": "Verb + having been + past participle",
+        "metaphor_ru": "Having been left out подчёркивает, что исключение произошло раньше реакции. Это gerund-дополнение, а не самостоятельное прошедшее время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + reaction verb + having been + passive participle",
+          "example": "She resented having been left out of the discussion.",
+          "translation": "Её возмущало, что её не включили в обсуждение.",
+          "examples": [
+            {
+              "text": "He denied having been warned about the change.",
+              "translation_ru": "Он отрицал, что его предупреждали об изменении."
+            },
+            {
+              "text": "We appreciated having been given extra time.",
+              "translation_ru": "Мы были признательны за то, что нам дали дополнительное время."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main reaction clause + dass + earlier passive clause",
+          "example": "Sie war verärgert darüber, dass sie von der Diskussion ausgeschlossen worden war.",
+          "translation": "Её возмущало, что её не включили в обсуждение.",
+          "examples": [
+            {
+              "text": "Er bestritt, vor der Änderung gewarnt worden zu sein.",
+              "translation_ru": "Он отрицал, что его предупреждали об изменении."
+            },
+            {
+              "text": "Wir waren dankbar dafür, dass uns zusätzliche Zeit gegeben worden war.",
+              "translation_ru": "Мы были признательны за то, что нам дали дополнительное время."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Реакция на прошлое пассивное событие",
+      "title_en": "A reaction to an earlier passive experience",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI015",
+      "set_id": "GFI",
+      "pattern": "Having checked the address, I booked the taxi.",
+      "group_title": "A completed earlier action compressed into a participial clause",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect active participial clause with shared subject",
+        "form": "Having + participle, subject + past verb",
+        "metaphor_ru": "Оба действия выполняет I. Нельзя написать Having checked the address, the taxi arrived: тогда формально адрес проверяло бы такси."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Having + past participle phrase, shared subject + main predicate",
+          "example": "Having checked the address, I booked the taxi.",
+          "translation": "Проверив адрес, я заказал такси.",
+          "examples": [
+            {
+              "text": "Having finished the report, she turned off her laptop.",
+              "translation_ru": "Закончив отчёт, она выключила ноутбук."
+            },
+            {
+              "text": "Having heard both sides, we changed our view.",
+              "translation_ru": "Выслушав обе стороны, мы изменили мнение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nachdem + same-subject past-perfect clause, + main clause",
+          "example": "Nachdem ich die Adresse geprüft hatte, bestellte ich das Taxi.",
+          "translation": "Проверив адрес, я заказал такси.",
+          "examples": [
+            {
+              "text": "Nachdem sie den Bericht fertiggestellt hatte, schaltete sie ihren Laptop aus.",
+              "translation_ru": "Закончив отчёт, она выключила ноутбук."
+            },
+            {
+              "text": "Nachdem wir beide Seiten gehört hatten, änderten wir unsere Ansicht.",
+              "translation_ru": "Выслушав обе стороны, мы изменили мнение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предварительно завершённое действие",
+      "title_en": "A completed earlier action compressed into a participial clause",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI016",
+      "set_id": "GFI",
+      "pattern": "Not having received a reply, I sent a reminder.",
+      "group_title": "An absent earlier event explaining a later action",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative perfect participial clause",
+        "form": "Not having + participle, main clause",
+        "metaphor_ru": "Not ставится перед having. Подразумеваемое подлежащее первой части должно совпадать с исполнителем главной."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not having + past participle phrase, shared subject + main predicate",
+          "example": "Not having received a reply, I sent a reminder.",
+          "translation": "Не получив ответа, я отправил напоминание.",
+          "examples": [
+            {
+              "text": "Not having seen the original, she could not compare the copies.",
+              "translation_ru": "Не видев оригинала, она не могла сравнить копии."
+            },
+            {
+              "text": "Not having booked ahead, we had to wait outside.",
+              "translation_ru": "Не забронировав заранее, мы были вынуждены ждать снаружи."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Da + same subject + negative past-perfect clause, + main clause",
+          "example": "Da ich keine Antwort erhalten hatte, schickte ich eine Erinnerung.",
+          "translation": "Не получив ответа, я отправил напоминание.",
+          "examples": [
+            {
+              "text": "Da sie das Original nicht gesehen hatte, konnte sie die Kopien nicht vergleichen.",
+              "translation_ru": "Не видев оригинала, она не могла сравнить копии."
+            },
+            {
+              "text": "Da wir nicht vorher reserviert hatten, mussten wir draußen warten.",
+              "translation_ru": "Не забронировав заранее, мы были вынуждены ждать снаружи."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не получив результата",
+      "title_en": "An absent earlier event explaining a later action",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI017",
+      "set_id": "GFI",
+      "pattern": "Having been warned about the traffic, we left early.",
+      "group_title": "An earlier passive experience motivating an active response",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect passive participial clause",
+        "form": "Having been + participle, main clause",
+        "metaphor_ru": "We получили предупреждение, затем сами уехали. Совпадает участник, но его роль меняется с получателя действия на исполнителя."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Having been + passive participle phrase, shared subject + main predicate",
+          "example": "Having been warned about the traffic, we left early.",
+          "translation": "Получив предупреждение о пробках, мы выехали рано.",
+          "examples": [
+            {
+              "text": "Having been given more time, she revised the draft.",
+              "translation_ru": "Получив дополнительное время, она переработала черновик."
+            },
+            {
+              "text": "Having been invited personally, I felt obliged to attend.",
+              "translation_ru": "Получив личное приглашение, я почувствовал, что должен прийти."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nachdem + same-subject past passive clause, + main clause",
+          "example": "Nachdem wir vor dem Verkehr gewarnt worden waren, fuhren wir früh los.",
+          "translation": "Получив предупреждение о пробках, мы выехали рано.",
+          "examples": [
+            {
+              "text": "Nachdem ihr mehr Zeit gegeben worden war, überarbeitete sie den Entwurf.",
+              "translation_ru": "Получив дополнительное время, она переработала черновик."
+            },
+            {
+              "text": "Nachdem ich persönlich eingeladen worden war, fühlte ich mich verpflichtet, teilzunehmen.",
+              "translation_ru": "Получив личное приглашение, я почувствовал, что должен прийти."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Получив воздействие, действовать",
+      "title_en": "An earlier passive experience motivating an active response",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI018",
+      "set_id": "GFI",
+      "pattern": "On being asked for proof, he changed the subject.",
+      "group_title": "An immediate reaction to a passive trigger",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Temporal on plus passive gerund",
+        "form": "On being + participle, main clause",
+        "metaphor_ru": "On означает «когда / сразу после», не место. Being asked описывает обращённое к человеку действие, на которое он реагирует."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "On being + passive participle phrase, shared subject + main predicate",
+          "example": "On being asked for proof, he changed the subject.",
+          "translation": "Когда его попросили привести доказательства, он сменил тему.",
+          "examples": [
+            {
+              "text": "On being offered a seat, she smiled with relief.",
+              "translation_ru": "Когда ей предложили сесть, она с облегчением улыбнулась."
+            },
+            {
+              "text": "On being told the result, we checked the figures again.",
+              "translation_ru": "Когда нам сообщили результат, мы снова проверили цифры."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Als + passive event clause, + main reaction clause",
+          "example": "Als er um Belege gebeten wurde, wechselte er das Thema.",
+          "translation": "Когда его попросили привести доказательства, он сменил тему.",
+          "examples": [
+            {
+              "text": "Als ihr ein Sitzplatz angeboten wurde, lächelte sie erleichtert.",
+              "translation_ru": "Когда ей предложили сесть, она с облегчением улыбнулась."
+            },
+            {
+              "text": "Als uns das Ergebnis mitgeteilt wurde, prüften wir die Zahlen erneut.",
+              "translation_ru": "Когда нам сообщили результат, мы снова проверили цифры."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Реакция сразу после обращения",
+      "title_en": "An immediate reaction to a passive trigger",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI019",
+      "set_id": "GFI",
+      "pattern": "With everyone talking at once, I could not hear the question.",
+      "group_title": "An accompanying active situation with its own subject",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "With-absolute clause with present participle",
+        "form": "With + noun/pronoun + -ing, main clause",
+        "metaphor_ru": "В отличие от обычного начального participle, with-конструкция может иметь другого исполнителя: everyone говорит, I слушаю."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "With + independent subject + -ing phrase, main clause",
+          "example": "With everyone talking at once, I could not hear the question.",
+          "translation": "Когда все говорили одновременно, я не мог расслышать вопрос.",
+          "examples": [
+            {
+              "text": "With the deadline approaching, we reduced the scope.",
+              "translation_ru": "Поскольку срок приближался, мы сократили объём работ."
+            },
+            {
+              "text": "With rain falling steadily, the path became slippery.",
+              "translation_ru": "Из-за непрерывного дождя дорожка стала скользкой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Da/während + independent finite clause, + main clause",
+          "example": "Da alle gleichzeitig redeten, konnte ich die Frage nicht hören.",
+          "translation": "Когда все говорили одновременно, я не мог расслышать вопрос.",
+          "examples": [
+            {
+              "text": "Da die Frist näher rückte, verringerten wir den Umfang.",
+              "translation_ru": "Поскольку срок приближался, мы сократили объём работ."
+            },
+            {
+              "text": "Da es ununterbrochen regnete, wurde der Weg rutschig.",
+              "translation_ru": "Из-за непрерывного дождя дорожка стала скользкой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "With и отдельный активный участник",
+      "title_en": "An accompanying active situation with its own subject",
+      "group_id": "GFI"
+    },
+    {
+      "id": "GFI020",
+      "set_id": "GFI",
+      "pattern": "With the final checks completed, we were ready to leave.",
+      "group_title": "An accompanying completed state with a separate subject",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "With-absolute clause with past participle",
+        "form": "With + noun + past participle, main clause",
+        "metaphor_ru": "Checks не выполняют действие, а завершены кем-то. Past participle задаёт состояние; самостоятельный субъект with-блока отличается от we."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "With + independent noun phrase + past participle, main clause",
+          "example": "With the final checks completed, we were ready to leave.",
+          "translation": "Когда заключительные проверки были завершены, мы были готовы уходить.",
+          "examples": [
+            {
+              "text": "With all the seats taken, she stood near the door.",
+              "translation_ru": "Поскольку все места были заняты, она стояла у двери."
+            },
+            {
+              "text": "With the windows closed, the room felt much quieter.",
+              "translation_ru": "С закрытыми окнами в комнате стало гораздо тише."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Da/nachdem + independent state clause, + main clause",
+          "example": "Nachdem die letzten Prüfungen abgeschlossen waren, waren wir bereit aufzubrechen.",
+          "translation": "Когда заключительные проверки были завершены, мы были готовы уходить.",
+          "examples": [
+            {
+              "text": "Da alle Plätze besetzt waren, stand sie an der Tür.",
+              "translation_ru": "Поскольку все места были заняты, она стояла у двери."
+            },
+            {
+              "text": "Mit geschlossenen Fenstern wirkte das Zimmer viel ruhiger.",
+              "translation_ru": "С закрытыми окнами в комнате стало гораздо тише."
+            }
+          ]
+        }
+      ],
+      "title_ru": "With и завершённое состояние",
+      "title_en": "An accompanying completed state with a separate subject",
+      "group_id": "GFI"
+    }
+  ]
+}

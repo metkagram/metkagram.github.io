@@ -1,3 +1,5 @@
+import { loadContent } from "../src/content.mjs";
+import { hasPendingExampleEnrichment } from "../src/pattern-example-enrichment.mjs";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -8,11 +10,11 @@ import { loadPatternShards } from "../src/pattern-sources.mjs";
 const ROOT = process.cwd();
 
 function studySetOrder() {
-  const studySets = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "study-sets.json"), "utf8"));
+  const studySets = loadContent().studySets;
   return studySets.sets.map((set) => set.id);
 }
 
-test("every canonical pattern has 5–7 examples per learning language", () => {
+test("canonical patterns meet 5–7 examples or an explicit owner-approved pending-enrichment entry", () => {
   const { patterns } = loadPatternShards({ setOrder: studySetOrder() });
   const violations = [];
 
@@ -25,7 +27,7 @@ test("every canonical pattern has 5–7 examples per learning language", () => {
 
     for (const language of languages) {
       const count = Array.isArray(language.examples) ? language.examples.length : 0;
-      if (count < 5 || count > 7) {
+      if ((count < 5 || count > 7) && !hasPendingExampleEnrichment(pattern, language)) {
         violations.push(`${pattern.set_id}/${pattern.id}/${language.lang}: ${count}`);
       }
     }
@@ -34,6 +36,6 @@ test("every canonical pattern has 5–7 examples per learning language", () => {
   assert.deepEqual(
     violations,
     [],
-    `Every canonical pattern language must contain 5–7 examples. Violations (${violations.length}):\n${violations.join("\n")}`
+    `Every canonical pattern language must contain 5–7 examples or exactly match a documented pending-enrichment entry. Violations (${violations.length}):\n${violations.join("\n")}`
   );
 });

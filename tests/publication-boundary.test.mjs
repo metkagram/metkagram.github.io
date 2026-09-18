@@ -1,3 +1,4 @@
+import { expectedPatternCount, assertCanonicalIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
@@ -30,7 +31,8 @@ test("the full learner-facing Practice curriculum is public while the annotation
   const counts = contentCounts(content);
   assert.equal(counts.annotatedDocuments, 72);
   assert.ok(fs.existsSync(path.join(ROOT, "data", "patterns")), "the public Practice source (per-set shards) must exist");
-  assert.ok(counts.advancedPatterns >= 600, `expected at least 600 canonical public practice patterns, found ${counts.advancedPatterns}`);
+  assert.equal(counts.advancedPatterns, expectedPatternCount);
+  assertCanonicalIds(content.advancedPatterns, "public Practice source");
   assert.ok(content.studySets.sets.length >= 20, "the public Practice taxonomy should expose the full study-set catalogue");
   const reasoningPatterns = content.advancedPatterns.filter((pattern) => pattern.reasoning?.move);
   const reasoningMoves = new Set(reasoningPatterns.map((pattern) => pattern.reasoning.move));

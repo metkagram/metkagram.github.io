@@ -1,3 +1,4 @@
+import { expansionSetIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -22,8 +23,8 @@ test("the frozen manifest covers every established study set and allows additive
   const manifest = loadStudySetPreservationManifest();
   const summary = validateStudySetPreservation(content, { manifest });
   assert.equal(manifest.establishedSetIds.length, 94, "issue #81 freezes the 94 established study sets");
-  assert.equal(summary.currentCount, 94, "the current curriculum still contains the frozen baseline");
-  assert.deepEqual(summary.additiveSetIds, [], "no post-baseline additive set exists yet");
+  assert.equal(summary.currentCount, manifest.establishedSetIds.length + expansionSetIds.length, "frozen baseline plus registered additions");
+  assert.deepEqual([...summary.additiveSetIds].sort(), [...expansionSetIds].sort(), "all new grammar sets are explicit additions");
 
   const additive = {
     ...content,
@@ -37,7 +38,7 @@ test("the frozen manifest covers every established study set and allows additive
     advancedPatterns: [...content.advancedPatterns, { id: "ZZZ001", set_id: "ZZZ" }],
   };
   const additiveSummary = validateStudySetPreservation(additive, { manifest });
-  assert.deepEqual(additiveSummary.additiveSetIds, ["ZZZ"], "new sets are additive and do not require rewriting the frozen baseline");
+  assert.deepEqual([...additiveSummary.additiveSetIds].sort(), [...expansionSetIds, "ZZZ"].sort(), "future additions do not require rewriting the frozen baseline");
 });
 
 test("removing an established study set fails with the missing stable id", () => {
