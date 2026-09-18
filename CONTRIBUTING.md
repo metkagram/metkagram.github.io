@@ -41,6 +41,19 @@ Useful proposals explain:
 
 Small bug reports, typo reports, accessibility issues, and factual corrections are welcome as ordinary issues.
 
+## Practice-example editorial standard
+
+A pattern should teach a reusable Frame, not seven cosmetic rewrites of one sentence. For every 5–7 example set:
+
+- keep the target structure recognisable while changing the underlying situation and meaning;
+- use materially different domains, participants, nouns, verbs and collocations so practice also expands productive vocabulary;
+- vary time reference, polarity, modality or register when the target Frame allows it;
+- prefer plausible, specific sentences that a learner could reuse in real speech over synthetic filler;
+- keep English and German independently idiomatic and make Russian support text read as natural Russian;
+- do not introduce variation that obscures the grammar or discourse feature the pattern is meant to teach.
+
+C1 examples are additionally protected by an automated lexical-diversity / near-clone regression gate. Bulk context substitution is not an acceptable enrichment strategy.
+
 ## Research collaboration
 
 For experiments, corpus studies, annotation research, model evaluation, or student projects, use [docs/RESEARCH_USE.md](docs/RESEARCH_USE.md) rather than sending a large data/code PR first.
