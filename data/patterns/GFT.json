@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFT",
+  "patterns": [
+    {
+      "id": "GFT001",
+      "set_id": "GFT",
+      "pattern": "We need to reproduce the defect before we can isolate the failing component.",
+      "group_title": "We need to [X] before we can [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We need to [X] before we can [Y]",
+        "form": "We need to + infinitive + before we can + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нужно …, прежде чем можно будет …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We need to + infinitive + before we can + infinitive",
+          "example": "We need to reproduce the defect before we can isolate the failing component.",
+          "translation": "Нужно воспроизвести дефект, прежде чем можно будет локализовать неисправный компонент.",
+          "examples": [
+            {
+              "text": "We need to check the building records before we can judge the renovation risk.",
+              "translation_ru": "Нужно проверить документы по зданию, прежде чем можно будет оценить риск ремонта."
+            },
+            {
+              "text": "We need to hear the phrase in context before we can decide whether it is worth learning.",
+              "translation_ru": "Нужно услышать фразу в контексте, прежде чем можно будет решить, стоит ли её учить."
+            },
+            {
+              "text": "We need to measure the power draw before we can blame the battery.",
+              "translation_ru": "Нужно измерить энергопотребление, прежде чем можно будет винить батарею."
+            },
+            {
+              "text": "We need to confirm the ferry schedule before we can book the connecting bus.",
+              "translation_ru": "Нужно подтвердить расписание парома, прежде чем можно будет бронировать автобусную пересадку."
+            },
+            {
+              "text": "We need to define the target population before we can interpret the percentage.",
+              "translation_ru": "Нужно определить целевую совокупность, прежде чем можно будет интерпретировать процент."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir müssen + infinitive, bevor wir + infinitive + können",
+          "example": "Wir müssen den Fehler reproduzieren, bevor wir die fehlerhafte Komponente eingrenzen können.",
+          "translation": "Нужно воспроизвести дефект, прежде чем можно будет локализовать неисправный компонент.",
+          "examples": [
+            {
+              "text": "Wir müssen die Gebäudeunterlagen prüfen, bevor wir das Renovierungsrisiko beurteilen können.",
+              "translation_ru": "Нужно проверить документы по зданию, прежде чем можно будет оценить риск ремонта."
+            },
+            {
+              "text": "Wir müssen die Wendung im Kontext hören, bevor wir entscheiden können, ob sie sich zu lernen lohnt.",
+              "translation_ru": "Нужно услышать фразу в контексте, прежде чем можно будет решить, стоит ли её учить."
+            },
+            {
+              "text": "Wir müssen den Stromverbrauch messen, bevor wir den Akku verantwortlich machen können.",
+              "translation_ru": "Нужно измерить энергопотребление, прежде чем можно будет винить батарею."
+            },
+            {
+              "text": "Wir müssen den Fährplan bestätigen, bevor wir den Anschlussbus buchen können.",
+              "translation_ru": "Нужно подтвердить расписание парома, прежде чем можно будет бронировать автобусную пересадку."
+            },
+            {
+              "text": "Wir müssen die Zielpopulation definieren, bevor wir den Prozentsatz interpretieren können.",
+              "translation_ru": "Нужно определить целевую совокупность, прежде чем можно будет интерпретировать процент."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно …, прежде чем можно будет …",
+      "title_en": "We need to [X] before we can [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT002",
+      "set_id": "GFT",
+      "pattern": "The first thing to do is preserve the logs before restarting anything.",
+      "group_title": "The first thing to do is [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "The first thing to do is [X]",
+        "form": "The first thing to do is + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: первое, что нужно сделать, — …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The first thing to do is + infinitive",
+          "example": "The first thing to do is preserve the logs before restarting anything.",
+          "translation": "Первое, что нужно сделать, — сохранить логи до любого перезапуска.",
+          "examples": [
+            {
+              "text": "The first thing to do is check where the damp is actually coming from.",
+              "translation_ru": "Первое, что нужно сделать, — проверить, откуда на самом деле идёт влага."
+            },
+            {
+              "text": "The first thing to do is say the answer aloud without looking at the translation.",
+              "translation_ru": "Первое, что нужно сделать, — произнести ответ вслух, не глядя на перевод."
+            },
+            {
+              "text": "The first thing to do is test the charger with another compatible device.",
+              "translation_ru": "Первое, что нужно сделать, — проверить зарядное устройство на другом совместимом устройстве."
+            },
+            {
+              "text": "The first thing to do is find out when the last train leaves.",
+              "translation_ru": "Первое, что нужно сделать, — узнать, когда отправляется последний поезд."
+            },
+            {
+              "text": "The first thing to do is inspect the missing-data pattern rather than delete incomplete rows.",
+              "translation_ru": "Первое, что нужно сделать, — изучить структуру пропусков, а не удалять неполные строки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Als Erstes sollten wir + infinitive / Das Erste ist, + zu-infinitive",
+          "example": "Als Erstes sollten wir die Protokolle sichern, bevor wir irgendetwas neu starten.",
+          "translation": "Первое, что нужно сделать, — сохранить логи до любого перезапуска.",
+          "examples": [
+            {
+              "text": "Als Erstes sollten wir prüfen, woher die Feuchtigkeit tatsächlich kommt.",
+              "translation_ru": "Первое, что нужно сделать, — проверить, откуда на самом деле идёт влага."
+            },
+            {
+              "text": "Als Erstes solltest du die Antwort laut sagen, ohne auf die Übersetzung zu schauen.",
+              "translation_ru": "Первое, что нужно сделать, — произнести ответ вслух, не глядя на перевод."
+            },
+            {
+              "text": "Als Erstes sollten wir das Ladegerät mit einem anderen kompatiblen Gerät testen.",
+              "translation_ru": "Первое, что нужно сделать, — проверить зарядное устройство на другом совместимом устройстве."
+            },
+            {
+              "text": "Als Erstes sollten wir herausfinden, wann der letzte Zug abfährt.",
+              "translation_ru": "Первое, что нужно сделать, — узнать, когда отправляется последний поезд."
+            },
+            {
+              "text": "Als Erstes sollten wir das Muster der fehlenden Werte untersuchen, statt unvollständige Zeilen zu löschen.",
+              "translation_ru": "Первое, что нужно сделать, — изучить структуру пропусков, а не удалять неполные строки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Первое, что нужно сделать, — …",
+      "title_en": "The first thing to do is [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT003",
+      "set_id": "GFT",
+      "pattern": "The next step is to compare the failed request with a successful one.",
+      "group_title": "The next step is to [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "The next step is to [X]",
+        "form": "The next step is to + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: следующий шаг — …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The next step is to + infinitive",
+          "example": "The next step is to compare the failed request with a successful one.",
+          "translation": "Следующий шаг — сравнить неуспешный запрос с успешным.",
+          "examples": [
+            {
+              "text": "The next step is to ask the seller for the latest inspection report.",
+              "translation_ru": "Следующий шаг — запросить у продавца последний отчёт о проверке."
+            },
+            {
+              "text": "The next step is to reuse the pattern with a completely different topic.",
+              "translation_ru": "Следующий шаг — использовать паттерн с совершенно другой темой."
+            },
+            {
+              "text": "The next step is to run the battery test with background syncing disabled.",
+              "translation_ru": "Следующий шаг — провести тест батареи с отключённой фоновой синхронизацией."
+            },
+            {
+              "text": "The next step is to reserve accommodation with free cancellation.",
+              "translation_ru": "Следующий шаг — забронировать жильё с бесплатной отменой."
+            },
+            {
+              "text": "The next step is to test whether the result holds under a different specification.",
+              "translation_ru": "Следующий шаг — проверить, сохраняется ли результат при другой спецификации."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der nächste Schritt ist, + zu-infinitive",
+          "example": "Der nächste Schritt ist, die fehlgeschlagene Anfrage mit einer erfolgreichen zu vergleichen.",
+          "translation": "Следующий шаг — сравнить неуспешный запрос с успешным.",
+          "examples": [
+            {
+              "text": "Der nächste Schritt ist, den Verkäufer nach dem neuesten Prüfbericht zu fragen.",
+              "translation_ru": "Следующий шаг — запросить у продавца последний отчёт о проверке."
+            },
+            {
+              "text": "Der nächste Schritt ist, das Muster mit einem völlig anderen Thema wiederzuverwenden.",
+              "translation_ru": "Следующий шаг — использовать паттерн с совершенно другой темой."
+            },
+            {
+              "text": "Der nächste Schritt ist, den Akkutest mit deaktivierter Hintergrundsynchronisierung durchzuführen.",
+              "translation_ru": "Следующий шаг — провести тест батареи с отключённой фоновой синхронизацией."
+            },
+            {
+              "text": "Der nächste Schritt ist, eine Unterkunft mit kostenloser Stornierung zu reservieren.",
+              "translation_ru": "Следующий шаг — забронировать жильё с бесплатной отменой."
+            },
+            {
+              "text": "Der nächste Schritt ist zu prüfen, ob das Ergebnis unter einer anderen Spezifikation bestehen bleibt.",
+              "translation_ru": "Следующий шаг — проверить, сохраняется ли результат при другой спецификации."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Следующий шаг — …",
+      "title_en": "The next step is to [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT004",
+      "set_id": "GFT",
+      "pattern": "Once the transport is imported, we can run the end-to-end test.",
+      "group_title": "Once [X], we can [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "Once [X], we can [Y]",
+        "form": "Once + clause, we can + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: как только …, можно …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Once + clause, we can + infinitive",
+          "example": "Once the transport is imported, we can run the end-to-end test.",
+          "translation": "Как только транспорт будет импортирован, можно провести сквозной тест.",
+          "examples": [
+            {
+              "text": "Once the survey is complete, we can compare the two neighbourhoods properly.",
+              "translation_ru": "Как только осмотр будет завершён, можно полноценно сравнить два района."
+            },
+            {
+              "text": "Once you can produce the question without a prompt, we can vary the tense and register.",
+              "translation_ru": "Как только вы сможете воспроизвести вопрос без подсказки, можно менять время и регистр."
+            },
+            {
+              "text": "Once the firmware update finishes, we can check whether the fan curve changed.",
+              "translation_ru": "Как только обновление прошивки завершится, можно проверить, изменилась ли кривая вентилятора."
+            },
+            {
+              "text": "Once the weather forecast is clearer, we can choose between the ferry and the mountain road.",
+              "translation_ru": "Как только прогноз погоды станет яснее, можно выбрать между паромом и горной дорогой."
+            },
+            {
+              "text": "Once the confounders are specified, we can estimate the adjusted relationship.",
+              "translation_ru": "Как только будут определены смешивающие факторы, можно оценить скорректированную связь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Sobald + subordinate clause, können wir + infinitive",
+          "example": "Sobald der Transport importiert ist, können wir den End-to-End-Test durchführen.",
+          "translation": "Как только транспорт будет импортирован, можно провести сквозной тест.",
+          "examples": [
+            {
+              "text": "Sobald die Besichtigung abgeschlossen ist, können wir die beiden Viertel sinnvoll vergleichen.",
+              "translation_ru": "Как только осмотр будет завершён, можно полноценно сравнить два района."
+            },
+            {
+              "text": "Sobald du die Frage ohne Vorgabe bilden kannst, können wir Zeitform und Register variieren.",
+              "translation_ru": "Как только вы сможете воспроизвести вопрос без подсказки, можно менять время и регистр."
+            },
+            {
+              "text": "Sobald das Firmware-Update abgeschlossen ist, können wir prüfen, ob sich die Lüfterkurve geändert hat.",
+              "translation_ru": "Как только обновление прошивки завершится, можно проверить, изменилась ли кривая вентилятора."
+            },
+            {
+              "text": "Sobald die Wettervorhersage klarer ist, können wir zwischen Fähre und Bergstraße wählen.",
+              "translation_ru": "Как только прогноз погоды станет яснее, можно выбрать между паромом и горной дорогой."
+            },
+            {
+              "text": "Sobald die Störfaktoren festgelegt sind, können wir den bereinigten Zusammenhang schätzen.",
+              "translation_ru": "Как только будут определены смешивающие факторы, можно оценить скорректированную связь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как только …, можно …",
+      "title_en": "Once [X], we can [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT005",
+      "set_id": "GFT",
+      "pattern": "Before committing to the migration date, we should rehearse the rollback procedure.",
+      "group_title": "Before committing to [X], we should [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "Before committing to [X], we should [Y]",
+        "form": "Before committing to + noun/-ing, we should + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: прежде чем соглашаться на …, стоит …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Before committing to + noun/-ing, we should + infinitive",
+          "example": "Before committing to the migration date, we should rehearse the rollback procedure.",
+          "translation": "Прежде чем соглашаться на дату миграции, стоит отрепетировать процедуру отката.",
+          "examples": [
+            {
+              "text": "Before committing to the mortgage, we should model the monthly cost at a higher rate.",
+              "translation_ru": "Прежде чем соглашаться на ипотеку, стоит рассчитать ежемесячные расходы при более высокой ставке."
+            },
+            {
+              "text": "Before committing to a study plan, we should test whether the daily workload is realistic.",
+              "translation_ru": "Прежде чем соглашаться на учебный план, стоит проверить реалистичность ежедневной нагрузки."
+            },
+            {
+              "text": "Before committing to the premium model, we should compare repair costs and warranty terms.",
+              "translation_ru": "Прежде чем выбирать премиальную модель, стоит сравнить стоимость ремонта и условия гарантии."
+            },
+            {
+              "text": "Before committing to the route, we should check seasonal closures.",
+              "translation_ru": "Прежде чем окончательно выбирать маршрут, стоит проверить сезонные закрытия."
+            },
+            {
+              "text": "Before committing to the claim, we should see how sensitive it is to alternative assumptions.",
+              "translation_ru": "Прежде чем соглашаться с выводом, стоит проверить его чувствительность к альтернативным предположениям."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Bevor wir uns auf + accusative + festlegen, sollten wir + infinitive",
+          "example": "Bevor wir uns auf den Migrationstermin festlegen, sollten wir das Rollback-Verfahren proben.",
+          "translation": "Прежде чем соглашаться на дату миграции, стоит отрепетировать процедуру отката.",
+          "examples": [
+            {
+              "text": "Bevor wir uns auf die Hypothek festlegen, sollten wir die monatlichen Kosten bei einem höheren Zinssatz durchrechnen.",
+              "translation_ru": "Прежде чем соглашаться на ипотеку, стоит рассчитать ежемесячные расходы при более высокой ставке."
+            },
+            {
+              "text": "Bevor wir uns auf einen Lernplan festlegen, sollten wir prüfen, ob die tägliche Belastung realistisch ist.",
+              "translation_ru": "Прежде чем соглашаться на учебный план, стоит проверить реалистичность ежедневной нагрузки."
+            },
+            {
+              "text": "Bevor wir uns auf das Premiummodell festlegen, sollten wir Reparaturkosten und Garantiebedingungen vergleichen.",
+              "translation_ru": "Прежде чем выбирать премиальную модель, стоит сравнить стоимость ремонта и условия гарантии."
+            },
+            {
+              "text": "Bevor wir uns auf die Route festlegen, sollten wir saisonale Sperrungen prüfen.",
+              "translation_ru": "Прежде чем окончательно выбирать маршрут, стоит проверить сезонные закрытия."
+            },
+            {
+              "text": "Bevor wir uns auf die Aussage festlegen, sollten wir prüfen, wie empfindlich sie gegenüber alternativen Annahmen ist.",
+              "translation_ru": "Прежде чем соглашаться с выводом, стоит проверить его чувствительность к альтернативным предположениям."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Прежде чем соглашаться на …, стоит …",
+      "title_en": "Before committing to [X], we should [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT006",
+      "set_id": "GFT",
+      "pattern": "We need to make sure that the source system stops sending updates during the cutover.",
+      "group_title": "We need to make sure that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We need to make sure that [X]",
+        "form": "We need to make sure that + clause",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нужно убедиться, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We need to make sure that + clause",
+          "example": "We need to make sure that the source system stops sending updates during the cutover.",
+          "translation": "Нужно убедиться, что исходная система не отправляет обновления во время переключения.",
+          "examples": [
+            {
+              "text": "We need to make sure that the windows seal properly before winter.",
+              "translation_ru": "Нужно убедиться, что окна хорошо герметизированы до зимы."
+            },
+            {
+              "text": "We need to make sure that every example practises the same frame without repeating the same vocabulary.",
+              "translation_ru": "Нужно убедиться, что каждый пример тренирует один и тот же паттерн без повторения одной и той же лексики."
+            },
+            {
+              "text": "We need to make sure that the power bank supports the laptop's required charging profile.",
+              "translation_ru": "Нужно убедиться, что пауэрбанк поддерживает нужный профиль зарядки ноутбука."
+            },
+            {
+              "text": "We need to make sure that the rental car can cross the border under the contract.",
+              "translation_ru": "Нужно убедиться, что договор разрешает пересечение границы на арендованной машине."
+            },
+            {
+              "text": "We need to make sure that the benchmark uses data the model has not seen during training.",
+              "translation_ru": "Нужно убедиться, что бенчмарк использует данные, которых модель не видела во время обучения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir müssen sicherstellen, dass + subordinate clause",
+          "example": "Wir müssen sicherstellen, dass das Quellsystem während der Umstellung keine Aktualisierungen sendet.",
+          "translation": "Нужно убедиться, что исходная система не отправляет обновления во время переключения.",
+          "examples": [
+            {
+              "text": "Wir müssen sicherstellen, dass die Fenster vor dem Winter richtig abdichten.",
+              "translation_ru": "Нужно убедиться, что окна хорошо герметизированы до зимы."
+            },
+            {
+              "text": "Wir müssen sicherstellen, dass jedes Beispiel dasselbe Muster übt, ohne denselben Wortschatz zu wiederholen.",
+              "translation_ru": "Нужно убедиться, что каждый пример тренирует один и тот же паттерн без повторения одной и той же лексики."
+            },
+            {
+              "text": "Wir müssen sicherstellen, dass die Powerbank das erforderliche Ladeprofil des Laptops unterstützt.",
+              "translation_ru": "Нужно убедиться, что пауэрбанк поддерживает нужный профиль зарядки ноутбука."
+            },
+            {
+              "text": "Wir müssen sicherstellen, dass der Mietwagen laut Vertrag die Grenze überqueren darf.",
+              "translation_ru": "Нужно убедиться, что договор разрешает пересечение границы на арендованной машине."
+            },
+            {
+              "text": "Wir müssen sicherstellen, dass der Benchmark Daten verwendet, die das Modell während des Trainings nicht gesehen hat.",
+              "translation_ru": "Нужно убедиться, что бенчмарк использует данные, которых модель не видела во время обучения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно убедиться, что …",
+      "title_en": "We need to make sure that [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT007",
+      "set_id": "GFT",
+      "pattern": "We should allow for at least an hour of verification after the import.",
+      "group_title": "We should allow for [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We should allow for [X]",
+        "form": "We should allow for + noun",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нужно предусмотреть …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We should allow for + noun",
+          "example": "We should allow for at least an hour of verification after the import.",
+          "translation": "Нужно предусмотреть как минимум час на проверку после импорта.",
+          "examples": [
+            {
+              "text": "We should allow for higher heating costs in a poorly insulated building.",
+              "translation_ru": "Нужно предусмотреть более высокие расходы на отопление в плохо утеплённом доме."
+            },
+            {
+              "text": "We should allow for slower recall when a pattern is still new.",
+              "translation_ru": "Нужно предусмотреть более медленное воспроизведение, пока паттерн ещё новый."
+            },
+            {
+              "text": "We should allow for some battery degradation over three years.",
+              "translation_ru": "Нужно предусмотреть некоторый износ батареи за три года."
+            },
+            {
+              "text": "We should allow for weather delays on the mountain section.",
+              "translation_ru": "Нужно предусмотреть погодные задержки на горном участке."
+            },
+            {
+              "text": "We should allow for uncertainty introduced by measurement error.",
+              "translation_ru": "Нужно предусмотреть неопределённость, возникающую из-за ошибки измерения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir sollten + accusative + einplanen / berücksichtigen",
+          "example": "Wir sollten nach dem Import mindestens eine Stunde für die Prüfung einplanen.",
+          "translation": "Нужно предусмотреть как минимум час на проверку после импорта.",
+          "examples": [
+            {
+              "text": "Wir sollten bei einem schlecht gedämmten Gebäude höhere Heizkosten berücksichtigen.",
+              "translation_ru": "Нужно предусмотреть более высокие расходы на отопление в плохо утеплённом доме."
+            },
+            {
+              "text": "Wir sollten einen langsameren Abruf berücksichtigen, solange ein Muster noch neu ist.",
+              "translation_ru": "Нужно предусмотреть более медленное воспроизведение, пока паттерн ещё новый."
+            },
+            {
+              "text": "Wir sollten über drei Jahre eine gewisse Akkuverschlechterung berücksichtigen.",
+              "translation_ru": "Нужно предусмотреть некоторый износ батареи за три года."
+            },
+            {
+              "text": "Wir sollten auf dem Bergabschnitt wetterbedingte Verzögerungen einplanen.",
+              "translation_ru": "Нужно предусмотреть погодные задержки на горном участке."
+            },
+            {
+              "text": "Wir sollten die durch Messfehler verursachte Unsicherheit berücksichtigen.",
+              "translation_ru": "Нужно предусмотреть неопределённость, возникающую из-за ошибки измерения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно предусмотреть …",
+      "title_en": "We should allow for [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT008",
+      "set_id": "GFT",
+      "pattern": "We need to account for records that arrive after the nightly batch.",
+      "group_title": "We need to account for [X]",
+      "level": "C1",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We need to account for [X]",
+        "form": "We need to account for + noun/-ing",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нужно учесть …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We need to account for + noun/-ing",
+          "example": "We need to account for records that arrive after the nightly batch.",
+          "translation": "Нужно учесть записи, которые приходят после ночной пакетной обработки.",
+          "examples": [
+            {
+              "text": "We need to account for maintenance fees when comparing the two apartments.",
+              "translation_ru": "Нужно учесть расходы на обслуживание при сравнении двух квартир."
+            },
+            {
+              "text": "We need to account for the time it takes to retrieve a phrase, not just recognise it.",
+              "translation_ru": "Нужно учесть время на воспроизведение фразы, а не только её узнавание."
+            },
+            {
+              "text": "We need to account for power loss in the adapter and cable.",
+              "translation_ru": "Нужно учесть потери мощности в адаптере и кабеле."
+            },
+            {
+              "text": "We need to account for the public holiday when planning the return journey.",
+              "translation_ru": "Нужно учесть государственный праздник при планировании обратной поездки."
+            },
+            {
+              "text": "We need to account for clustering when observations come from the same household.",
+              "translation_ru": "Нужно учесть кластеризацию, если наблюдения относятся к одному домохозяйству."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir müssen + accusative + berücksichtigen / Rechnung tragen",
+          "example": "Wir müssen Datensätze berücksichtigen, die nach dem nächtlichen Batch eintreffen.",
+          "translation": "Нужно учесть записи, которые приходят после ночной пакетной обработки.",
+          "examples": [
+            {
+              "text": "Wir müssen die Instandhaltungskosten beim Vergleich der beiden Wohnungen berücksichtigen.",
+              "translation_ru": "Нужно учесть расходы на обслуживание при сравнении двух квартир."
+            },
+            {
+              "text": "Wir müssen berücksichtigen, wie lange der Abruf einer Wendung dauert, nicht nur ihr Wiedererkennen.",
+              "translation_ru": "Нужно учесть время на воспроизведение фразы, а не только её узнавание."
+            },
+            {
+              "text": "Wir müssen Leistungsverluste im Netzteil und im Kabel berücksichtigen.",
+              "translation_ru": "Нужно учесть потери мощности в адаптере и кабеле."
+            },
+            {
+              "text": "Wir müssen den Feiertag bei der Planung der Rückreise berücksichtigen.",
+              "translation_ru": "Нужно учесть государственный праздник при планировании обратной поездки."
+            },
+            {
+              "text": "Wir müssen die Clusterstruktur berücksichtigen, wenn Beobachtungen aus demselben Haushalt stammen.",
+              "translation_ru": "Нужно учесть кластеризацию, если наблюдения относятся к одному домохозяйству."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно учесть …",
+      "title_en": "We need to account for [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT009",
+      "set_id": "GFT",
+      "pattern": "We can't rule out a timing issue between the two services.",
+      "group_title": "We can't rule out [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We can't rule out [X]",
+        "form": "We can't rule out + noun/-ing",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нельзя исключать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We can't rule out + noun/-ing",
+          "example": "We can't rule out a timing issue between the two services.",
+          "translation": "Нельзя исключать проблему синхронизации между двумя сервисами.",
+          "examples": [
+            {
+              "text": "We can't rule out hidden water damage behind the kitchen units.",
+              "translation_ru": "Нельзя исключать скрытое повреждение водой за кухонной мебелью."
+            },
+            {
+              "text": "We can't rule out fatigue as a reason for weaker speaking at the end of the session.",
+              "translation_ru": "Нельзя исключать усталость как причину более слабой речи в конце занятия."
+            },
+            {
+              "text": "We can't rule out a faulty cable until we test another one.",
+              "translation_ru": "Нельзя исключать неисправный кабель, пока не проверим другой."
+            },
+            {
+              "text": "We can't rule out a ferry cancellation if the wind strengthens overnight.",
+              "translation_ru": "Нельзя исключать отмену парома, если ночью усилится ветер."
+            },
+            {
+              "text": "We can't rule out residual confounding even after adjustment.",
+              "translation_ru": "Нельзя исключать остаточное смешение даже после корректировки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir können + accusative + nicht ausschließen",
+          "example": "Wir können ein Timing-Problem zwischen den beiden Diensten nicht ausschließen.",
+          "translation": "Нельзя исключать проблему синхронизации между двумя сервисами.",
+          "examples": [
+            {
+              "text": "Wir können versteckte Wasserschäden hinter den Küchenschränken nicht ausschließen.",
+              "translation_ru": "Нельзя исключать скрытое повреждение водой за кухонной мебелью."
+            },
+            {
+              "text": "Wir können Müdigkeit als Grund für schwächeres Sprechen am Ende der Einheit nicht ausschließen.",
+              "translation_ru": "Нельзя исключать усталость как причину более слабой речи в конце занятия."
+            },
+            {
+              "text": "Wir können ein defektes Kabel nicht ausschließen, bis wir ein anderes getestet haben.",
+              "translation_ru": "Нельзя исключать неисправный кабель, пока не проверим другой."
+            },
+            {
+              "text": "Wir können eine Fährabsage nicht ausschließen, wenn der Wind über Nacht zunimmt.",
+              "translation_ru": "Нельзя исключать отмену парома, если ночью усилится ветер."
+            },
+            {
+              "text": "Wir können verbleibende Störfaktoren auch nach der Bereinigung nicht ausschließen.",
+              "translation_ru": "Нельзя исключать остаточное смешение даже после корректировки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нельзя исключать …",
+      "title_en": "We can't rule out [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT010",
+      "set_id": "GFT",
+      "pattern": "We should keep the rollback time in mind when choosing the deployment window.",
+      "group_title": "We should keep [X] in mind",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We should keep [X] in mind",
+        "form": "We should keep + noun/clause + in mind",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: стоит помнить о …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We should keep + noun/clause + in mind",
+          "example": "We should keep the rollback time in mind when choosing the deployment window.",
+          "translation": "Стоит помнить о времени отката при выборе окна развёртывания.",
+          "examples": [
+            {
+              "text": "We should keep resale costs in mind when comparing the two properties.",
+              "translation_ru": "Стоит помнить о расходах при перепродаже, сравнивая два объекта."
+            },
+            {
+              "text": "We should keep the learner's active vocabulary in mind when writing prompts.",
+              "translation_ru": "Стоит помнить об активном словаре учащегося при создании заданий."
+            },
+            {
+              "text": "We should keep repairability in mind rather than comparing processors alone.",
+              "translation_ru": "Стоит помнить о ремонтопригодности, а не сравнивать только процессоры."
+            },
+            {
+              "text": "We should keep daylight hours in mind when planning the hike.",
+              "translation_ru": "Стоит помнить о длине светового дня при планировании похода."
+            },
+            {
+              "text": "We should keep the uncertainty interval in mind when comparing small differences.",
+              "translation_ru": "Стоит помнить об интервале неопределённости при сравнении небольших различий."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir sollten + accusative + im Hinterkopf behalten",
+          "example": "Wir sollten die Rollback-Zeit bei der Wahl des Bereitstellungsfensters im Hinterkopf behalten.",
+          "translation": "Стоит помнить о времени отката при выборе окна развёртывания.",
+          "examples": [
+            {
+              "text": "Wir sollten die späteren Verkaufskosten beim Vergleich der beiden Immobilien im Hinterkopf behalten.",
+              "translation_ru": "Стоит помнить о расходах при перепродаже, сравнивая два объекта."
+            },
+            {
+              "text": "Wir sollten den aktiven Wortschatz des Lernenden beim Schreiben von Aufgaben im Hinterkopf behalten.",
+              "translation_ru": "Стоит помнить об активном словаре учащегося при создании заданий."
+            },
+            {
+              "text": "Wir sollten die Reparierbarkeit im Hinterkopf behalten, statt nur Prozessoren zu vergleichen.",
+              "translation_ru": "Стоит помнить о ремонтопригодности, а не сравнивать только процессоры."
+            },
+            {
+              "text": "Wir sollten die Tageslichtdauer bei der Planung der Wanderung im Hinterkopf behalten.",
+              "translation_ru": "Стоит помнить о длине светового дня при планировании похода."
+            },
+            {
+              "text": "Wir sollten das Unsicherheitsintervall beim Vergleich kleiner Unterschiede im Hinterkopf behalten.",
+              "translation_ru": "Стоит помнить об интервале неопределённости при сравнении небольших различий."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Стоит помнить о …",
+      "title_en": "We should keep [X] in mind",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT011",
+      "set_id": "GFT",
+      "pattern": "It may be worth capturing a trace while the issue is reproducible.",
+      "group_title": "It may be worth [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "It may be worth [doing X]",
+        "form": "It may be worth + -ing",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: возможно, стоит …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It may be worth + -ing",
+          "example": "It may be worth capturing a trace while the issue is reproducible.",
+          "translation": "Возможно, стоит записать трассировку, пока проблема воспроизводится.",
+          "examples": [
+            {
+              "text": "It may be worth visiting the area again after dark before deciding.",
+              "translation_ru": "Возможно, стоит ещё раз посетить район вечером перед решением."
+            },
+            {
+              "text": "It may be worth shadowing a short recording before attempting the full speech.",
+              "translation_ru": "Возможно, стоит сначала повторить короткую запись за диктором, прежде чем переходить ко всей речи."
+            },
+            {
+              "text": "It may be worth replacing the fan before buying a new computer.",
+              "translation_ru": "Возможно, стоит заменить вентилятор перед покупкой нового компьютера."
+            },
+            {
+              "text": "It may be worth staying one night near the airport before the early flight.",
+              "translation_ru": "Возможно, стоит переночевать рядом с аэропортом перед ранним рейсом."
+            },
+            {
+              "text": "It may be worth repeating the analysis with a preregistered specification.",
+              "translation_ru": "Возможно, стоит повторить анализ с заранее зарегистрированной спецификацией."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es könnte sich lohnen, + zu-infinitive",
+          "example": "Es könnte sich lohnen, einen Trace aufzuzeichnen, solange das Problem reproduzierbar ist.",
+          "translation": "Возможно, стоит записать трассировку, пока проблема воспроизводится.",
+          "examples": [
+            {
+              "text": "Es könnte sich lohnen, die Gegend vor der Entscheidung noch einmal nach Einbruch der Dunkelheit zu besuchen.",
+              "translation_ru": "Возможно, стоит ещё раз посетить район вечером перед решением."
+            },
+            {
+              "text": "Es könnte sich lohnen, zunächst eine kurze Aufnahme nachzusprechen, bevor du die ganze Rede versuchst.",
+              "translation_ru": "Возможно, стоит сначала повторить короткую запись за диктором, прежде чем переходить ко всей речи."
+            },
+            {
+              "text": "Es könnte sich lohnen, den Lüfter zu ersetzen, bevor du einen neuen Computer kaufst.",
+              "translation_ru": "Возможно, стоит заменить вентилятор перед покупкой нового компьютера."
+            },
+            {
+              "text": "Es könnte sich lohnen, vor dem frühen Flug eine Nacht in Flughafennähe zu bleiben.",
+              "translation_ru": "Возможно, стоит переночевать рядом с аэропортом перед ранним рейсом."
+            },
+            {
+              "text": "Es könnte sich lohnen, die Analyse mit einer vorregistrierten Spezifikation zu wiederholen.",
+              "translation_ru": "Возможно, стоит повторить анализ с заранее зарегистрированной спецификацией."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможно, стоит …",
+      "title_en": "It may be worth [doing X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT012",
+      "set_id": "GFT",
+      "pattern": "There is no point in automating the import unless the validation rules are stable.",
+      "group_title": "There is no point in [doing X] unless [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "There is no point in [doing X] unless [Y]",
+        "form": "There is no point in + -ing + unless + clause",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нет смысла …, если …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is no point in + -ing + unless + clause",
+          "example": "There is no point in automating the import unless the validation rules are stable.",
+          "translation": "Нет смысла автоматизировать импорт, если правила проверки нестабильны.",
+          "examples": [
+            {
+              "text": "There is no point in repainting the wall unless the source of the damp is fixed.",
+              "translation_ru": "Нет смысла перекрашивать стену, если не устранён источник влаги."
+            },
+            {
+              "text": "There is no point in memorising fifty patterns unless you can retrieve some of them spontaneously.",
+              "translation_ru": "Нет смысла запоминать пятьдесят паттернов, если вы не можете спонтанно воспроизвести хотя бы часть."
+            },
+            {
+              "text": "There is no point in buying a faster charger unless the device supports the higher power.",
+              "translation_ru": "Нет смысла покупать более мощную зарядку, если устройство не поддерживает повышенную мощность."
+            },
+            {
+              "text": "There is no point in rushing to the station unless the delayed train can still be caught.",
+              "translation_ru": "Нет смысла спешить на вокзал, если на задержанный поезд уже невозможно успеть."
+            },
+            {
+              "text": "There is no point in reporting extra decimals unless the measurement supports that precision.",
+              "translation_ru": "Нет смысла указывать лишние знаки после запятой, если измерение не поддерживает такую точность."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es hat keinen Sinn, + zu-infinitive, wenn nicht + clause",
+          "example": "Es hat keinen Sinn, den Import zu automatisieren, wenn die Validierungsregeln nicht stabil sind.",
+          "translation": "Нет смысла автоматизировать импорт, если правила проверки нестабильны.",
+          "examples": [
+            {
+              "text": "Es hat keinen Sinn, die Wand neu zu streichen, wenn die Ursache der Feuchtigkeit nicht behoben ist.",
+              "translation_ru": "Нет смысла перекрашивать стену, если не устранён источник влаги."
+            },
+            {
+              "text": "Es hat keinen Sinn, fünfzig Muster auswendig zu lernen, wenn du einige davon nicht spontan abrufen kannst.",
+              "translation_ru": "Нет смысла запоминать пятьдесят паттернов, если вы не можете спонтанно воспроизвести хотя бы часть."
+            },
+            {
+              "text": "Es hat keinen Sinn, ein schnelleres Ladegerät zu kaufen, wenn das Gerät die höhere Leistung nicht unterstützt.",
+              "translation_ru": "Нет смысла покупать более мощную зарядку, если устройство не поддерживает повышенную мощность."
+            },
+            {
+              "text": "Es hat keinen Sinn, zum Bahnhof zu eilen, wenn der verspätete Zug nicht mehr erreichbar ist.",
+              "translation_ru": "Нет смысла спешить на вокзал, если на задержанный поезд уже невозможно успеть."
+            },
+            {
+              "text": "Es hat keinen Sinn, zusätzliche Dezimalstellen anzugeben, wenn die Messung diese Genauigkeit nicht hergibt.",
+              "translation_ru": "Нет смысла указывать лишние знаки после запятой, если измерение не поддерживает такую точность."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нет смысла …, если …",
+      "title_en": "There is no point in [doing X] unless [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT013",
+      "set_id": "GFT",
+      "pattern": "We are better off fixing the source mapping than correcting the same records every week.",
+      "group_title": "We are better off [doing X] than [doing Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We are better off [doing X] than [doing Y]",
+        "form": "be better off + -ing + than + -ing",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: лучше …, чем …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "be better off + -ing + than + -ing",
+          "example": "We are better off fixing the source mapping than correcting the same records every week.",
+          "translation": "Лучше исправить исходный маппинг, чем каждую неделю корректировать одни и те же записи.",
+          "examples": [
+            {
+              "text": "We are better off renting a slightly smaller flat than stretching the budget every month.",
+              "translation_ru": "Лучше снять немного меньшую квартиру, чем каждый месяц жить на пределе бюджета."
+            },
+            {
+              "text": "You are better off mastering twenty high-frequency patterns than skimming two hundred once.",
+              "translation_ru": "Лучше освоить двадцать частотных паттернов, чем один раз поверхностно просмотреть двести."
+            },
+            {
+              "text": "We are better off replacing the failing SSD than trying to optimise around it.",
+              "translation_ru": "Лучше заменить выходящий из строя SSD, чем пытаться оптимизировать систему вокруг проблемы."
+            },
+            {
+              "text": "We are better off taking the morning ferry than relying on the last crossing.",
+              "translation_ru": "Лучше выбрать утренний паром, чем полагаться на последний рейс."
+            },
+            {
+              "text": "We are better off reporting the uncertainty openly than hiding it behind a single precise number.",
+              "translation_ru": "Лучше открыто показать неопределённость, чем скрывать её за одним точным числом."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "besser damit fahren, + zu-infinitive, als + zu-infinitive",
+          "example": "Wir fahren besser damit, das Quell-Mapping zu korrigieren, als jede Woche dieselben Datensätze zu berichtigen.",
+          "translation": "Лучше исправить исходный маппинг, чем каждую неделю корректировать одни и те же записи.",
+          "examples": [
+            {
+              "text": "Wir fahren besser damit, eine etwas kleinere Wohnung zu mieten, als das Budget jeden Monat auszureizen.",
+              "translation_ru": "Лучше снять немного меньшую квартиру, чем каждый месяц жить на пределе бюджета."
+            },
+            {
+              "text": "Du fährst besser damit, zwanzig häufige Muster wirklich zu beherrschen, als zweihundert einmal oberflächlich anzusehen.",
+              "translation_ru": "Лучше освоить двадцать частотных паттернов, чем один раз поверхностно просмотреть двести."
+            },
+            {
+              "text": "Wir fahren besser damit, die ausfallende SSD zu ersetzen, als das System darum herum zu optimieren.",
+              "translation_ru": "Лучше заменить выходящий из строя SSD, чем пытаться оптимизировать систему вокруг проблемы."
+            },
+            {
+              "text": "Wir fahren besser damit, die Morgenfähre zu nehmen, als uns auf die letzte Überfahrt zu verlassen.",
+              "translation_ru": "Лучше выбрать утренний паром, чем полагаться на последний рейс."
+            },
+            {
+              "text": "Wir fahren besser damit, die Unsicherheit offen anzugeben, als sie hinter einer einzigen präzisen Zahl zu verbergen.",
+              "translation_ru": "Лучше открыто показать неопределённость, чем скрывать её за одним точным числом."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Лучше …, чем …",
+      "title_en": "We are better off [doing X] than [doing Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT014",
+      "set_id": "GFT",
+      "pattern": "We need to decide whether to patch the current release or wait for the next build.",
+      "group_title": "We need to decide whether to [X] or [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We need to decide whether to [X] or [Y]",
+        "form": "We need to decide whether to + infinitive + or + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: нужно решить, … или …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We need to decide whether to + infinitive + or + infinitive",
+          "example": "We need to decide whether to patch the current release or wait for the next build.",
+          "translation": "Нужно решить, исправлять текущую версию или ждать следующую сборку.",
+          "examples": [
+            {
+              "text": "We need to decide whether to renovate this flat or keep looking.",
+              "translation_ru": "Нужно решить, ремонтировать эту квартиру или продолжать поиски."
+            },
+            {
+              "text": "We need to decide whether to repeat yesterday's patterns or introduce a new set.",
+              "translation_ru": "Нужно решить, повторять вчерашние паттерны или вводить новый сет."
+            },
+            {
+              "text": "We need to decide whether to repair the monitor or replace it.",
+              "translation_ru": "Нужно решить, ремонтировать монитор или заменять его."
+            },
+            {
+              "text": "We need to decide whether to spend the extra day in the city or near the coast.",
+              "translation_ru": "Нужно решить, провести дополнительный день в городе или у побережья."
+            },
+            {
+              "text": "We need to decide whether to model the groups separately or include an interaction term.",
+              "translation_ru": "Нужно решить, моделировать группы отдельно или добавить член взаимодействия."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir müssen entscheiden, ob wir + infinitive + oder + infinitive",
+          "example": "Wir müssen entscheiden, ob wir die aktuelle Version patchen oder auf den nächsten Build warten.",
+          "translation": "Нужно решить, исправлять текущую версию или ждать следующую сборку.",
+          "examples": [
+            {
+              "text": "Wir müssen entscheiden, ob wir diese Wohnung renovieren oder weitersuchen.",
+              "translation_ru": "Нужно решить, ремонтировать эту квартиру или продолжать поиски."
+            },
+            {
+              "text": "Wir müssen entscheiden, ob wir die gestrigen Muster wiederholen oder ein neues Set einführen.",
+              "translation_ru": "Нужно решить, повторять вчерашние паттерны или вводить новый сет."
+            },
+            {
+              "text": "Wir müssen entscheiden, ob wir den Monitor reparieren oder ersetzen.",
+              "translation_ru": "Нужно решить, ремонтировать монитор или заменять его."
+            },
+            {
+              "text": "Wir müssen entscheiden, ob wir den zusätzlichen Tag in der Stadt oder an der Küste verbringen.",
+              "translation_ru": "Нужно решить, провести дополнительный день в городе или у побережья."
+            },
+            {
+              "text": "Wir müssen entscheiden, ob wir die Gruppen getrennt modellieren oder einen Interaktionsterm aufnehmen.",
+              "translation_ru": "Нужно решить, моделировать группы отдельно или добавить член взаимодействия."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нужно решить, … или …",
+      "title_en": "We need to decide whether to [X] or [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT015",
+      "set_id": "GFT",
+      "pattern": "We can always roll back if the validation count changes unexpectedly.",
+      "group_title": "We can always [X] if [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "We can always [X] if [Y]",
+        "form": "We can always + infinitive + if + clause",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: всегда можно …, если …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We can always + infinitive + if + clause",
+          "example": "We can always roll back if the validation count changes unexpectedly.",
+          "translation": "Всегда можно откатиться, если число проверенных записей неожиданно изменится.",
+          "examples": [
+            {
+              "text": "We can always make a lower offer if the inspection reveals expensive repairs.",
+              "translation_ru": "Всегда можно предложить меньшую цену, если проверка выявит дорогой ремонт."
+            },
+            {
+              "text": "We can always slow the exercise down if spontaneous answers become too difficult.",
+              "translation_ru": "Всегда можно замедлить упражнение, если спонтанные ответы станут слишком сложными."
+            },
+            {
+              "text": "We can always switch to the original adapter if charging becomes unstable.",
+              "translation_ru": "Всегда можно вернуться к оригинальному адаптеру, если зарядка станет нестабильной."
+            },
+            {
+              "text": "We can always take the inland route if the coastal road is closed.",
+              "translation_ru": "Всегда можно выбрать внутренний маршрут, если прибрежная дорога закрыта."
+            },
+            {
+              "text": "We can always report both estimates if the modelling choice remains genuinely ambiguous.",
+              "translation_ru": "Всегда можно показать обе оценки, если выбор модели останется действительно неоднозначным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wir können immer noch + infinitive, wenn + clause",
+          "example": "Wir können immer noch zurückrollen, wenn sich die Validierungsanzahl unerwartet ändert.",
+          "translation": "Всегда можно откатиться, если число проверенных записей неожиданно изменится.",
+          "examples": [
+            {
+              "text": "Wir können immer noch ein niedrigeres Angebot machen, wenn die Inspektion teure Reparaturen zeigt.",
+              "translation_ru": "Всегда можно предложить меньшую цену, если проверка выявит дорогой ремонт."
+            },
+            {
+              "text": "Wir können die Übung immer noch verlangsamen, wenn spontane Antworten zu schwierig werden.",
+              "translation_ru": "Всегда можно замедлить упражнение, если спонтанные ответы станут слишком сложными."
+            },
+            {
+              "text": "Wir können immer noch zum Originalnetzteil wechseln, wenn das Laden instabil wird.",
+              "translation_ru": "Всегда можно вернуться к оригинальному адаптеру, если зарядка станет нестабильной."
+            },
+            {
+              "text": "Wir können immer noch die Route im Landesinneren nehmen, wenn die Küstenstraße gesperrt ist.",
+              "translation_ru": "Всегда можно выбрать внутренний маршрут, если прибрежная дорога закрыта."
+            },
+            {
+              "text": "Wir können immer noch beide Schätzungen angeben, wenn die Modellwahl wirklich mehrdeutig bleibt.",
+              "translation_ru": "Всегда можно показать обе оценки, если выбор модели останется действительно неоднозначным."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всегда можно …, если …",
+      "title_en": "We can always [X] if [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT016",
+      "set_id": "GFT",
+      "pattern": "If the issue turns out to be data-specific, we can isolate the affected records.",
+      "group_title": "If [X] turns out to [Y], we can [Z]",
+      "level": "C1",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "If [X] turns out to [Y], we can [Z]",
+        "form": "If + subject + turns out to + infinitive, we can + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: если окажется, что …, можно …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "If + subject + turns out to + infinitive, we can + infinitive",
+          "example": "If the issue turns out to be data-specific, we can isolate the affected records.",
+          "translation": "Если окажется, что проблема связана с конкретными данными, можно изолировать затронутые записи.",
+          "examples": [
+            {
+              "text": "If the room turns out to be noisier at night, we can reconsider the apartment.",
+              "translation_ru": "Если окажется, что ночью комната шумнее, можно пересмотреть выбор квартиры."
+            },
+            {
+              "text": "If the pattern turns out to be too formal, we can replace it with a conversational alternative.",
+              "translation_ru": "Если окажется, что паттерн слишком формальный, можно заменить его разговорным вариантом."
+            },
+            {
+              "text": "If the battery turns out to be healthy, we can investigate background processes next.",
+              "translation_ru": "Если окажется, что батарея исправна, можно затем проверить фоновые процессы."
+            },
+            {
+              "text": "If the pass turns out to be closed, we can stay overnight in the valley.",
+              "translation_ru": "Если окажется, что перевал закрыт, можно переночевать в долине."
+            },
+            {
+              "text": "If the result turns out to depend on one subgroup, we can report that limitation explicitly.",
+              "translation_ru": "Если окажется, что результат зависит от одной подгруппы, можно прямо указать это ограничение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Falls sich herausstellt, dass + clause, können wir + infinitive",
+          "example": "Falls sich herausstellt, dass das Problem datenspezifisch ist, können wir die betroffenen Datensätze isolieren.",
+          "translation": "Если окажется, что проблема связана с конкретными данными, можно изолировать затронутые записи.",
+          "examples": [
+            {
+              "text": "Falls sich herausstellt, dass das Zimmer nachts lauter ist, können wir die Wohnung noch einmal überdenken.",
+              "translation_ru": "Если окажется, что ночью комната шумнее, можно пересмотреть выбор квартиры."
+            },
+            {
+              "text": "Falls sich herausstellt, dass das Muster zu formell ist, können wir es durch eine umgangssprachlichere Alternative ersetzen.",
+              "translation_ru": "Если окажется, что паттерн слишком формальный, можно заменить его разговорным вариантом."
+            },
+            {
+              "text": "Falls sich herausstellt, dass der Akku in Ordnung ist, können wir als Nächstes die Hintergrundprozesse untersuchen.",
+              "translation_ru": "Если окажется, что батарея исправна, можно затем проверить фоновые процессы."
+            },
+            {
+              "text": "Falls sich herausstellt, dass der Pass gesperrt ist, können wir im Tal übernachten.",
+              "translation_ru": "Если окажется, что перевал закрыт, можно переночевать в долине."
+            },
+            {
+              "text": "Falls sich herausstellt, dass das Ergebnis von einer Untergruppe abhängt, können wir diese Einschränkung ausdrücklich angeben.",
+              "translation_ru": "Если окажется, что результат зависит от одной подгруппы, можно прямо указать это ограничение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Если окажется, что …, можно …",
+      "title_en": "If [X] turns out to [Y], we can [Z]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT017",
+      "set_id": "GFT",
+      "pattern": "The safest option is to take a full backup before changing the configuration.",
+      "group_title": "The safest option is to [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "The safest option is to [X]",
+        "form": "The safest option is to + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: самый безопасный вариант — …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The safest option is to + infinitive",
+          "example": "The safest option is to take a full backup before changing the configuration.",
+          "translation": "Самый безопасный вариант — сделать полную резервную копию перед изменением конфигурации.",
+          "examples": [
+            {
+              "text": "The safest option is to have the wiring inspected before renovating the kitchen.",
+              "translation_ru": "Самый безопасный вариант — проверить проводку до ремонта кухни."
+            },
+            {
+              "text": "The safest option is to keep the target sentence visible during the first few repetitions.",
+              "translation_ru": "Самый безопасный вариант — оставить целевое предложение видимым во время первых повторений."
+            },
+            {
+              "text": "The safest option is to use the charger certified for this voltage and power profile.",
+              "translation_ru": "Самый безопасный вариант — использовать зарядку, сертифицированную для нужного напряжения и профиля мощности."
+            },
+            {
+              "text": "The safest option is to book a connection with at least an hour between trains.",
+              "translation_ru": "Самый безопасный вариант — бронировать пересадку минимум с часовым запасом."
+            },
+            {
+              "text": "The safest option is to label the result exploratory until it is replicated.",
+              "translation_ru": "Самый безопасный вариант — считать результат исследовательским до повторного подтверждения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die sicherste Option ist, + zu-infinitive",
+          "example": "Die sicherste Option ist, vor der Konfigurationsänderung eine vollständige Sicherung zu erstellen.",
+          "translation": "Самый безопасный вариант — сделать полную резервную копию перед изменением конфигурации.",
+          "examples": [
+            {
+              "text": "Die sicherste Option ist, die Elektrik vor der Küchenrenovierung prüfen zu lassen.",
+              "translation_ru": "Самый безопасный вариант — проверить проводку до ремонта кухни."
+            },
+            {
+              "text": "Die sicherste Option ist, den Zielsatz bei den ersten Wiederholungen sichtbar zu lassen.",
+              "translation_ru": "Самый безопасный вариант — оставить целевое предложение видимым во время первых повторений."
+            },
+            {
+              "text": "Die sicherste Option ist, das für diese Spannung und dieses Leistungsprofil zertifizierte Ladegerät zu verwenden.",
+              "translation_ru": "Самый безопасный вариант — использовать зарядку, сертифицированную для нужного напряжения и профиля мощности."
+            },
+            {
+              "text": "Die sicherste Option ist, eine Verbindung mit mindestens einer Stunde Umsteigezeit zu buchen.",
+              "translation_ru": "Самый безопасный вариант — бронировать пересадку минимум с часовым запасом."
+            },
+            {
+              "text": "Die sicherste Option ist, das Ergebnis bis zur Replikation als explorativ zu kennzeichnen.",
+              "translation_ru": "Самый безопасный вариант — считать результат исследовательским до повторного подтверждения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Самый безопасный вариант — …",
+      "title_en": "The safest option is to [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT018",
+      "set_id": "GFT",
+      "pattern": "A reasonable compromise would be to automate the common cases and review exceptions manually.",
+      "group_title": "A reasonable compromise would be to [X]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "A reasonable compromise would be to [X]",
+        "form": "A reasonable compromise would be to + infinitive",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: разумный компромисс — …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "A reasonable compromise would be to + infinitive",
+          "example": "A reasonable compromise would be to automate the common cases and review exceptions manually.",
+          "translation": "Разумный компромисс — автоматизировать типовые случаи, а исключения проверять вручную.",
+          "examples": [
+            {
+              "text": "A reasonable compromise would be to rent near the station but choose a smaller flat.",
+              "translation_ru": "Разумный компромисс — жить рядом с вокзалом, но выбрать меньшую квартиру."
+            },
+            {
+              "text": "A reasonable compromise would be to correct only errors that block understanding during free speaking.",
+              "translation_ru": "Разумный компромисс — во время свободной речи исправлять только ошибки, мешающие пониманию."
+            },
+            {
+              "text": "A reasonable compromise would be to buy the mid-range model and add storage later.",
+              "translation_ru": "Разумный компромисс — купить модель среднего уровня и позже добавить хранилище."
+            },
+            {
+              "text": "A reasonable compromise would be to spend two nights in the city and two near the coast.",
+              "translation_ru": "Разумный компромисс — провести две ночи в городе и две у побережья."
+            },
+            {
+              "text": "A reasonable compromise would be to publish the main estimate together with a sensitivity range.",
+              "translation_ru": "Разумный компромисс — опубликовать основную оценку вместе с диапазоном чувствительности."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ein vernünftiger Kompromiss wäre, + zu-infinitive",
+          "example": "Ein vernünftiger Kompromiss wäre, häufige Fälle zu automatisieren und Ausnahmen manuell zu prüfen.",
+          "translation": "Разумный компромисс — автоматизировать типовые случаи, а исключения проверять вручную.",
+          "examples": [
+            {
+              "text": "Ein vernünftiger Kompromiss wäre, in Bahnhofsnähe zu mieten, aber eine kleinere Wohnung zu wählen.",
+              "translation_ru": "Разумный компромисс — жить рядом с вокзалом, но выбрать меньшую квартиру."
+            },
+            {
+              "text": "Ein vernünftiger Kompromiss wäre, beim freien Sprechen nur Fehler zu korrigieren, die das Verständnis verhindern.",
+              "translation_ru": "Разумный компромисс — во время свободной речи исправлять только ошибки, мешающие пониманию."
+            },
+            {
+              "text": "Ein vernünftiger Kompromiss wäre, das Mittelklassemodell zu kaufen und den Speicher später zu erweitern.",
+              "translation_ru": "Разумный компромисс — купить модель среднего уровня и позже добавить хранилище."
+            },
+            {
+              "text": "Ein vernünftiger Kompromiss wäre, zwei Nächte in der Stadt und zwei an der Küste zu verbringen.",
+              "translation_ru": "Разумный компромисс — провести две ночи в городе и две у побережья."
+            },
+            {
+              "text": "Ein vernünftiger Kompromiss wäre, die Hauptschätzung zusammen mit einem Sensitivitätsbereich zu veröffentlichen.",
+              "translation_ru": "Разумный компромисс — опубликовать основную оценку вместе с диапазоном чувствительности."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Разумный компромисс — …",
+      "title_en": "A reasonable compromise would be to [X]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT019",
+      "set_id": "GFT",
+      "pattern": "Let's hold off on changing the mapping until we have compared both payloads.",
+      "group_title": "Let's hold off on [X] until [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "Let's hold off on [X] until [Y]",
+        "form": "Let's hold off on + noun/-ing + until + clause",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: отложим … до тех пор, пока …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Let's hold off on + noun/-ing + until + clause",
+          "example": "Let's hold off on changing the mapping until we have compared both payloads.",
+          "translation": "Отложим изменение маппинга до тех пор, пока не сравним оба сообщения.",
+          "examples": [
+            {
+              "text": "Let's hold off on making an offer until the surveyor has checked the roof.",
+              "translation_ru": "Отложим предложение о покупке до тех пор, пока эксперт не проверит крышу."
+            },
+            {
+              "text": "Let's hold off on adding new patterns until today's ones can be recalled without prompts.",
+              "translation_ru": "Отложим новые паттерны до тех пор, пока сегодняшние не будут воспроизводиться без подсказок."
+            },
+            {
+              "text": "Let's hold off on replacing the laptop until we know whether the memory pressure is the real bottleneck.",
+              "translation_ru": "Отложим замену ноутбука до тех пор, пока не выясним, является ли нехватка памяти реальным узким местом."
+            },
+            {
+              "text": "Let's hold off on booking the boat trip until the wind forecast improves.",
+              "translation_ru": "Отложим бронирование морской прогулки до тех пор, пока прогноз ветра не улучшится."
+            },
+            {
+              "text": "Let's hold off on interpreting the subgroup difference until the interaction test is complete.",
+              "translation_ru": "Отложим интерпретацию различий между подгруппами до завершения теста взаимодействия."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Lass uns mit + dative + warten, bis + subordinate clause",
+          "example": "Lass uns mit der Änderung des Mappings warten, bis wir beide Payloads verglichen haben.",
+          "translation": "Отложим изменение маппинга до тех пор, пока не сравним оба сообщения.",
+          "examples": [
+            {
+              "text": "Lass uns mit dem Angebot warten, bis der Gutachter das Dach geprüft hat.",
+              "translation_ru": "Отложим предложение о покупке до тех пор, пока эксперт не проверит крышу."
+            },
+            {
+              "text": "Lass uns mit neuen Mustern warten, bis die heutigen ohne Vorgabe abgerufen werden können.",
+              "translation_ru": "Отложим новые паттерны до тех пор, пока сегодняшние не будут воспроизводиться без подсказок."
+            },
+            {
+              "text": "Lass uns mit dem Austausch des Laptops warten, bis wir wissen, ob der Speicherdruck der eigentliche Engpass ist.",
+              "translation_ru": "Отложим замену ноутбука до тех пор, пока не выясним, является ли нехватка памяти реальным узким местом."
+            },
+            {
+              "text": "Lass uns mit der Buchung der Bootstour warten, bis sich die Windvorhersage verbessert.",
+              "translation_ru": "Отложим бронирование морской прогулки до тех пор, пока прогноз ветра не улучшится."
+            },
+            {
+              "text": "Lass uns mit der Interpretation des Untergruppenunterschieds warten, bis der Interaktionstest abgeschlossen ist.",
+              "translation_ru": "Отложим интерпретацию различий между подгруппами до завершения теста взаимодействия."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отложим … до тех пор, пока …",
+      "title_en": "Let's hold off on [X] until [Y]",
+      "group_id": "GFT"
+    },
+    {
+      "id": "GFT020",
+      "set_id": "GFT",
+      "pattern": "Let's revisit the deployment date once the performance test is complete.",
+      "group_title": "Let's revisit [X] once [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "planning-constraints-decisions",
+        "core": "Let's revisit [X] once [Y]",
+        "form": "Let's revisit + noun + once + clause",
+        "metaphor_ru": "Рамка помогает планировать действия и учитывать ограничения: вернёмся к …, когда …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Let's revisit + noun + once + clause",
+          "example": "Let's revisit the deployment date once the performance test is complete.",
+          "translation": "Вернёмся к дате развёртывания, когда завершится тест производительности.",
+          "examples": [
+            {
+              "text": "Let's revisit the neighbourhood once we have seen what it is like on a weekday morning.",
+              "translation_ru": "Вернёмся к этому району, когда увидим его утром в рабочий день."
+            },
+            {
+              "text": "Let's revisit this pattern once you have used it in three unscripted answers.",
+              "translation_ru": "Вернёмся к этому паттерну, когда вы используете его в трёх спонтанных ответах."
+            },
+            {
+              "text": "Let's revisit the upgrade once the next hardware generation is announced.",
+              "translation_ru": "Вернёмся к апгрейду, когда анонсируют следующее поколение оборудования."
+            },
+            {
+              "text": "Let's revisit the route once the seasonal timetable is published.",
+              "translation_ru": "Вернёмся к маршруту, когда опубликуют сезонное расписание."
+            },
+            {
+              "text": "Let's revisit the conclusion once the independent replication is available.",
+              "translation_ru": "Вернёмся к выводу, когда появится независимое повторное исследование."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Lass uns auf + accusative + zurückkommen, sobald + subordinate clause",
+          "example": "Lass uns auf den Bereitstellungstermin zurückkommen, sobald der Leistungstest abgeschlossen ist.",
+          "translation": "Вернёмся к дате развёртывания, когда завершится тест производительности.",
+          "examples": [
+            {
+              "text": "Lass uns auf das Viertel zurückkommen, sobald wir gesehen haben, wie es an einem Werktagmorgen ist.",
+              "translation_ru": "Вернёмся к этому району, когда увидим его утром в рабочий день."
+            },
+            {
+              "text": "Lass uns auf dieses Muster zurückkommen, sobald du es in drei spontanen Antworten verwendet hast.",
+              "translation_ru": "Вернёмся к этому паттерну, когда вы используете его в трёх спонтанных ответах."
+            },
+            {
+              "text": "Lass uns auf das Upgrade zurückkommen, sobald die nächste Hardwaregeneration angekündigt wird.",
+              "translation_ru": "Вернёмся к апгрейду, когда анонсируют следующее поколение оборудования."
+            },
+            {
+              "text": "Lass uns auf die Route zurückkommen, sobald der Saisonfahrplan veröffentlicht ist.",
+              "translation_ru": "Вернёмся к маршруту, когда опубликуют сезонное расписание."
+            },
+            {
+              "text": "Lass uns auf die Schlussfolgerung zurückkommen, sobald die unabhängige Replikation verfügbar ist.",
+              "translation_ru": "Вернёмся к выводу, когда появится независимое повторное исследование."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вернёмся к …, когда …",
+      "title_en": "Let's revisit [X] once [Y]",
+      "group_id": "GFT"
+    }
+  ]
+}
