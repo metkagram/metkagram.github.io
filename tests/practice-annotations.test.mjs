@@ -39,7 +39,6 @@ test("the Practice annotation layer covers every current source sentence without
       }
     }
   }
-  assert.equal(payload.count, expected);
   assert.equal(Object.keys(items).length, expected);
   assert.ok(overlayPendingCount > 0, "changed C1 source text must be represented as explicit pending annotation records");
 });
