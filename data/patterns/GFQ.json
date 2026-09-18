@@ -5,75 +5,75 @@
     {
       "id": "GFQ001",
       "set_id": "GFQ",
-      "pattern": "It seems to me that the team is solving the symptom rather than the cause.",
-      "group_title": "It seems to me that [X]",
+      "pattern": "My impression is that the team is solving the symptom rather than the cause.",
+      "group_title": "My impression is that [X]",
       "level": "B2",
       "logic": {
         "function": "stance-and-hedging",
-        "core": "It seems to me that [X]",
-        "form": "It seems to me that + clause",
-        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: мне кажется, что …."
+        "core": "My impression is that [X]",
+        "form": "My impression is that + clause",
+        "metaphor_ru": "Рамка помогает сформулировать личное впечатление без чрезмерной категоричности."
       },
       "langs": [
         {
           "lang": "en",
-          "formula": "It seems to me that + clause",
-          "example": "It seems to me that the team is solving the symptom rather than the cause.",
-          "translation": "Мне кажется, что команда устраняет симптом, а не причину.",
+          "formula": "My impression is that + clause",
+          "example": "My impression is that the team is solving the symptom rather than the cause.",
+          "translation": "У меня сложилось впечатление, что команда устраняет симптом, а не причину.",
           "examples": [
             {
-              "text": "It seems to me that the room gets noisier after the ventilation starts.",
-              "translation_ru": "Мне кажется, что в комнате становится шумнее после включения вентиляции."
+              "text": "My impression is that the room gets noisier after the ventilation starts.",
+              "translation_ru": "У меня сложилось впечатление, что в комнате становится шумнее после включения вентиляции."
             },
             {
-              "text": "It seems to me that she learns faster when the examples are tied to real situations.",
-              "translation_ru": "Мне кажется, что она учится быстрее, когда примеры связаны с реальными ситуациями."
+              "text": "My impression is that she learns faster when the examples are tied to real situations.",
+              "translation_ru": "У меня сложилось впечатление, что она учится быстрее, когда примеры связаны с реальными ситуациями."
             },
             {
-              "text": "It seems to me that the cheaper plan hides more long-term costs.",
-              "translation_ru": "Мне кажется, что более дешёвый тариф скрывает больше долгосрочных расходов."
+              "text": "My impression is that the cheaper plan hides more long-term costs than it first appears to.",
+              "translation_ru": "У меня сложилось впечатление, что более дешёвый тариф скрывает больше долгосрочных расходов, чем кажется сначала."
             },
             {
-              "text": "It seems to me that the second route is safer in bad weather.",
-              "translation_ru": "Мне кажется, что второй маршрут безопаснее в плохую погоду."
+              "text": "My impression is that the second route is safer once the weather deteriorates.",
+              "translation_ru": "У меня сложилось впечатление, что второй маршрут безопаснее, когда погода ухудшается."
             },
             {
-              "text": "It seems to me that the metric rewards activity rather than useful outcomes.",
-              "translation_ru": "Мне кажется, что метрика поощряет активность, а не полезный результат."
+              "text": "My impression is that the metric rewards visible activity rather than genuinely useful outcomes.",
+              "translation_ru": "У меня сложилось впечатление, что метрика поощряет видимую активность, а не действительно полезный результат."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Mir scheint, dass + subordinate clause",
-          "example": "Mir scheint, dass das Team eher das Symptom als die Ursache bekämpft.",
-          "translation": "Мне кажется, что команда устраняет симптом, а не причину.",
+          "formula": "Mein Eindruck ist, dass + subordinate clause",
+          "example": "Mein Eindruck ist, dass das Team eher das Symptom als die Ursache bekämpft.",
+          "translation": "У меня сложилось впечатление, что команда устраняет симптом, а не причину.",
           "examples": [
             {
-              "text": "Mir scheint, dass der Raum lauter wird, sobald die Lüftung startet.",
-              "translation_ru": "Мне кажется, что в комнате становится шумнее после включения вентиляции."
+              "text": "Mein Eindruck ist, dass der Raum lauter wird, sobald die Lüftung startet.",
+              "translation_ru": "У меня сложилось впечатление, что в комнате становится шумнее после включения вентиляции."
             },
             {
-              "text": "Mir scheint, dass sie schneller lernt, wenn die Beispiele mit realen Situationen verknüpft sind.",
-              "translation_ru": "Мне кажется, что она учится быстрее, когда примеры связаны с реальными ситуациями."
+              "text": "Mein Eindruck ist, dass sie schneller lernt, wenn die Beispiele mit realen Situationen verknüpft sind.",
+              "translation_ru": "У меня сложилось впечатление, что она учится быстрее, когда примеры связаны с реальными ситуациями."
             },
             {
-              "text": "Mir scheint, dass der günstigere Tarif mehr langfristige Kosten verbirgt.",
-              "translation_ru": "Мне кажется, что более дешёвый тариф скрывает больше долгосрочных расходов."
+              "text": "Mein Eindruck ist, dass der günstigere Tarif mehr langfristige Kosten verbirgt, als es zunächst scheint.",
+              "translation_ru": "У меня сложилось впечатление, что более дешёвый тариф скрывает больше долгосрочных расходов, чем кажется сначала."
             },
             {
-              "text": "Mir scheint, dass die zweite Strecke bei schlechtem Wetter sicherer ist.",
-              "translation_ru": "Мне кажется, что второй маршрут безопаснее в плохую погоду."
+              "text": "Mein Eindruck ist, dass die zweite Strecke sicherer ist, sobald sich das Wetter verschlechtert.",
+              "translation_ru": "У меня сложилось впечатление, что второй маршрут безопаснее, когда погода ухудшается."
             },
             {
-              "text": "Mir scheint, dass die Kennzahl eher Aktivität als nützliche Ergebnisse belohnt.",
-              "translation_ru": "Мне кажется, что метрика поощряет активность, а не полезный результат."
+              "text": "Mein Eindruck ist, dass die Kennzahl sichtbare Aktivität statt wirklich nützlicher Ergebnisse belohnt.",
+              "translation_ru": "У меня сложилось впечатление, что метрика поощряет видимую активность, а не действительно полезный результат."
             }
           ]
         }
       ],
-      "title_ru": "Мне кажется, что …",
-      "title_en": "It seems to me that [X]",
+      "title_ru": "У меня сложилось впечатление, что …",
+      "title_en": "My impression is that [X]",
       "group_id": "GFQ"
     },
     {
