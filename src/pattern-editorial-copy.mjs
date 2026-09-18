@@ -133,7 +133,15 @@ const RU_TITLE_OVERRIDES = {
   GFO016: "Главное зависит от ответа на вопрос",
   GFO018: "Совершённое каузативное действие",
   GFO020: "Причастная конструкция для предстоящей задачи",
+  XPRCGR001: "Помнить о прошлом действии или не забыть сделать",
+  XPRCGR002: "Привычка в прошлом или привычность к действию",
+  XPRCGR003: "Запрет или отсутствие необходимости",
+  XPRSPK001: "Ввести главное пояснение",
+  XPRSPK002: "Мягко добавить пояснение",
+  XPRSPK003: "Вернуться к прерванной мысли",
   XPRTRN001: "Причина и следствие через результат",
+  XPRTRN002: "От «говорят, что…» к безличной передаче",
+  XPRTRN003: "Инверсия после «только после…»",
   XPRRTR006: "Длительность до настоящего момента",
   XPRRTR007: "Будущее значение в условной части без формы будущего времени",
   XPRRTR008: "Степень перед обычным глаголом",
@@ -314,7 +322,7 @@ export function patternFrameTitleRu(pattern) {
   if (override) return override;
   const synthetic = syntheticRussianTitle(pattern);
   if (synthetic) return synthetic;
-  return trimStatementTitle(pattern?.title_ru || "");
+  return trimStatementTitle(pattern?.title_ru || "").replace(/\b[XYZ]\b/g, "…");
 }
 
 export function patternFrameDescription(pattern, set = null) {
