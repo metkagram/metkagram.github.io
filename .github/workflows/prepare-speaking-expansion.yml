@@ -30,6 +30,8 @@ jobs:
       - name: Import and verify additive content before committing
         if: hashFiles('scripts/editorial/speaking-20260918/READY.json') != ''
         run: |
+          sed -i 's|data/pending-pattern-example-enrichment.json|data/quality/pending-example-enrichment.json|g' scripts/prepare-speaking-expansion.mjs
+          sed -i 's|die noch ungelesenen Sitzungsprotokolle nachgeholt|die noch ungelesenen Sitzungsprotokolle aufgearbeitet|g' scripts/editorial/speaking-20260918/REVISIONS.json
           node scripts/prepare-speaking-expansion.mjs
           node --test tests/speaking-expansion.test.mjs tests/pattern-shards.test.mjs tests/practice-annotations.test.mjs tests/pattern-editorial-copy.test.mjs tests/pattern-example-enrichment.test.mjs 2>&1 | tee .tmp/speaking-expansion/targeted-tests.log
           git config user.name 'github-actions[bot]'
