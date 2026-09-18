@@ -44,7 +44,12 @@ test("generated follow-up detector covers current and legacy padding", () => {
 
 test("canonical pattern shards contain no retired generated follow-up tails", () => {
   const patterns = readRawPatterns();
-  assert.ok(patterns.length >= 600, "expected the complete canonical deduplicated pattern corpus");
+  const baseline = JSON.parse(fs.readFileSync(path.join(ROOT, "tests", "fixtures", "pattern-corpus-baseline.json"), "utf8"));
+  assert.equal(
+    patterns.length,
+    baseline.structuralDeduplication.canonicalBasePatternCount,
+    "expected the complete canonical deduplicated base corpus",
+  );
   assert.ok(patterns.some((pattern) => pattern.id === "CLA002"), "CLA002 must remain in the corpus");
 
   for (const pattern of patterns) {
