@@ -660,6 +660,42 @@
       "description_ru": "Описывайте переходы, незавершённый прогресс, близкие события, ожидаемые результаты и неожиданные итоги.",
       "level": "B2–C1",
       "path": "SCH"
+    },
+    {
+      "id": "SRQ",
+      "title_en": "Polite requests and negotiation",
+      "title_ru": "Вежливые просьбы и переговоры",
+      "description": "Make requests, ask permission and explore alternatives without unnecessary pressure.",
+      "description_ru": "Формулируйте просьбы, спрашивайте разрешение и предлагайте альтернативы без лишнего давления.",
+      "level": "B2–C1",
+      "path": "SRQ"
+    },
+    {
+      "id": "SDC",
+      "title_en": "Contrast and qualification in discourse",
+      "title_ru": "Контраст и оговорки в речи",
+      "description": "Acknowledge competing points, shift emphasis and qualify a conclusion without losing the thread.",
+      "description_ru": "Признавайте сильные контраргументы, переносите акцент и добавляйте оговорки, не теряя нить мысли.",
+      "level": "B2–C1",
+      "path": "SDC"
+    },
+    {
+      "id": "SMN",
+      "title_en": "Thinking and attention frames",
+      "title_ru": "Мышление и внимание",
+      "description": "Track assumptions, notice blind spots, interpret information and keep the important factor in view.",
+      "description_ru": "Отслеживайте предположения, замечайте слепые зоны, осмысливайте информацию и удерживайте важный фактор в фокусе.",
+      "level": "B2–C1",
+      "path": "SMN"
+    },
+    {
+      "id": "SRA",
+      "title_en": "Responsibility, adaptation and recovery",
+      "title_ru": "Ответственность, адаптация и восстановление",
+      "description": "Talk about accountability, coping, adjustment, recovery and sustained commitment in practical situations.",
+      "description_ru": "Говорите о подотчётности, способности справляться, адаптации, восстановлении и устойчивой приверженности.",
+      "level": "B2–C1",
+      "path": "SRA"
     }
   ],
   "learningPathAdds": {
@@ -679,7 +715,10 @@
       "REG",
       "PST",
       "SPH",
-      "SHB"
+      "SHB",
+      "SRQ",
+      "SMN",
+      "SRA"
     ],
     "C1-CONTROL": [
       "TRN",
@@ -695,7 +734,8 @@
       "PST",
       "SRE",
       "SCE",
-      "SCF"
+      "SCF",
+      "SDC"
     ],
     "C1-QUESTIONS": [
       "SQA",
