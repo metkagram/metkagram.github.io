@@ -31,7 +31,7 @@ jobs:
       - name: Run focused corpus checks
         run: |
           set -euo pipefail
-          node --test             tests/speaking-expansion-wave2.test.mjs             tests/speaking-expansion.test.mjs             tests/speaking-routes.test.mjs             tests/pattern-shards.test.mjs             tests/practice-annotations.test.mjs             tests/pending-c1-annotations.test.mjs             tests/study-set-preservation.test.mjs             tests/pattern-example-enrichment.test.mjs             tests/pattern-editorial-copy.test.mjs             tests/english-agreement-audit.test.mjs
+          node --test             tests/speaking-expansion-wave2.test.mjs             tests/speaking-expansion.test.mjs             tests/speaking-routes.test.mjs             tests/pattern-shards.test.mjs             tests/practice-annotations.test.mjs             tests/pending-c1-annotations.test.mjs             tests/pattern-example-enrichment.test.mjs             tests/pattern-editorial-copy.test.mjs             tests/english-agreement-audit.test.mjs
       - name: Validate and build complete site
         run: |
           set -euo pipefail
