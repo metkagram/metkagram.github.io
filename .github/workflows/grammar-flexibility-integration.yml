@@ -15,19 +15,51 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: feat/grammar-flexibility-300
           fetch-depth: 1
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - name: Repair the one-off integrator
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const file = 'scripts/integrate-grammar-flexibility.mjs';
+          let source = fs.readFileSync(file, 'utf8');
+          const oldGroup = 'if (groups) p.group_id=family;';
+          const newGroup = 'p.group_id=family;';
+          assert.ok(source.includes(oldGroup) || source.includes(newGroup), 'Unexpected integrator; refuse a blind patch');
+          source = source.replace(oldGroup, newGroup);
+          const note = ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle наши файлы.';
+          source = source.replace("p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';", "if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';");
+          fs.writeFileSync(file, source);
+          JS
       - name: Integrate canonical data and editorial corrections
         run: node scripts/integrate-grammar-flexibility.mjs
-      - name: Assemble compatibility data
-        run: npm run prepare:content --if-present
+      - name: Inspect formula collisions before validation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const owners = new Map();
+          for (const dir of ['data/patterns', 'data/reasoning-frames']) {
+            for (const name of fs.readdirSync(dir).filter(n => n.endsWith('.json'))) {
+              const doc = JSON.parse(fs.readFileSync(`${dir}/${name}`, 'utf8'));
+              for (const p of Array.isArray(doc) ? doc : doc.patterns) {
+                for (const l of p.langs || []) {
+                  const key = String(l.formula).replaceAll('**', '').replace(/\s+/g, ' ').trim().toLowerCase();
+                  const owner = owners.get(key);
+                  if (owner && owner !== p.id && (/^GF[A-O]\d{3}$/.test(p.id) || /^GF[A-O]\d{3}$/.test(owner))) console.log('FORMULA_COLLISION ' + JSON.stringify({id:p.id, owner, lang:l.lang, formula:l.formula}));
+                  else owners.set(key, p.id);
+                }
+              }
+            }
+          }
+          JS
       - name: Validate loader and record counts
         run: |
           node --input-type=module <<'JS'
@@ -42,20 +74,23 @@ jobs:
           for(const p of added) for(const l of p.langs) {
             const all=[{text:l.example,translation_ru:l.translation},...l.examples];
             assert.ok(all.length>=3,`${p.id}/${l.lang}: insufficient examples`);
+            assert.equal(new Set(all.map(e=>e.text.trim().toLowerCase())).size,all.length,`${p.id}/${l.lang}: duplicate examples`);
             for(const e of all){assert.ok(e.text.trim());assert.match(e.translation_ru,/\p{Script=Cyrillic}/u);}
             sentences+=all.length;
           }
           const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2};
           console.log('GRAMMAR_INTEGRATION '+JSON.stringify(totals));
           fs.mkdirSync('docs/research',{recursive:true});
-          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-17):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification. No annotation or human-review status is fabricated. Full site verification and duplication review remain release gates.\n');
+          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification. No annotation or human-review status is fabricated. Expanding these new patterns to the requested 5–7 examples per language remains editorial follow-up; this merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
           JS
+      - name: Verify complete site and tests before committing
+        run: npm run verify
       - name: Commit integrated source data on the feature branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data docs/research/grammar-flexibility-300-integration.md
+          git add data/patterns/GF*.json data/practice-extensions.json scripts/integrate-grammar-flexibility.mjs docs/research/grammar-flexibility-300-integration.md
           if ! git diff --cached --quiet; then
-            git commit -m 'content: register and normalize 300 bilingual grammar patterns'
+            git commit -m 'content: register and validate 300 bilingual grammar patterns'
             git push origin HEAD:feat/grammar-flexibility-300
           fi
