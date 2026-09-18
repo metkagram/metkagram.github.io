@@ -4,6 +4,7 @@ on:
     branches: [feat/grammar-flexibility-300]
     paths:
       - scripts/integrate-grammar-flexibility.mjs
+      - scripts/repair-grammar-integration.mjs
       - scripts/register-pending-grammar-annotations.mjs
       - .github/workflows/grammar-flexibility-integration.yml
 permissions:
@@ -25,26 +26,8 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
-      - name: Repair the one-off integrator
-        run: |
-          node --input-type=module <<'JS'
-          import fs from 'node:fs';
-          import assert from 'node:assert/strict';
-          const file = 'scripts/integrate-grammar-flexibility.mjs';
-          let source = fs.readFileSync(file, 'utf8');
-          const oldGroup = 'if (groups) p.group_id=family;';
-          const newGroup = 'p.group_id=family;';
-          assert.ok(source.includes(oldGroup) || source.includes(newGroup), 'Unexpected integrator; refuse a blind patch');
-          source = source.replace(oldGroup, newGroup);
-          const oldNote = "p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';";
-          if (!source.includes("if (!p.logic.metaphor_ru.includes('meine beiden Eltern'))")) source = source.replace(oldNote, "if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) " + oldNote);
-          const marker = "if(p.id==='GFH018')";
-          if (!source.includes("if(p.id==='GFL008')")) {
-            assert.ok(source.includes(marker));
-            source = source.replace(marker, "if(p.id==='GFL008') p.langs.find(l=>l.lang==='de').formula='Subject + finite verb in second position + ... + wh-phrase + remaining verb parts?';\n  " + marker);
-          }
-          fs.writeFileSync(file, source);
-          JS
+      - name: Repair integration metadata and grammar-audit false positives
+        run: node scripts/repair-grammar-integration.mjs
       - name: Integrate canonical data and editorial corrections
         run: node scripts/integrate-grammar-flexibility.mjs
       - name: Register pending annotations without changing existing Marks
@@ -73,23 +56,23 @@ jobs:
           const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2,new_pending_annotations:pending};
           console.log('GRAMMAR_INTEGRATION '+JSON.stringify(totals));
           fs.mkdirSync('docs/research',{recursive:true});
-          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification.\n\n## Annotation status\n\nNew examples are published as text-only records with empty spans and explicit `validation.status: pending`, `needs_rebuild: true`, `generator: none`, and a SHA-256 fingerprint of the current text. They are NOT completed parser annotations or human-reviewed grammar Marks. Existing annotation records are preserved without modification. The canonical card export retains pending status. Run the local annotation pipeline to replace pending records with real annotations; reject stale fingerprints after text edits. The compressed export record count includes both completed and pending records and must not be presented as the count of annotated sentences.\n\n## Remaining editorial work\n\nExpand the new patterns to the requested 5–7 examples per language. This merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
+          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification.\n\n## Annotation status\n\nNew examples are text-only records with empty spans and explicit `validation.status: pending`, `needs_rebuild: true`, `generator: none`, and a SHA-256 fingerprint of the current text. They are NOT completed parser annotations or human-reviewed grammar Marks. Existing annotation records are preserved without modification. The canonical card export retains pending status. Run the local annotation pipeline to replace pending records with real annotations; reject stale fingerprints after text edits. The compressed export record count includes both completed and pending records and must not be presented as the count of annotated sentences.\n\n## Audit corrections\n\nThe similarity tokenizer now retains one-letter grammatical words: dropping the article incorrectly collapsed the distinction between `few` and `a few`. The English agreement detector recognizes irrealis `were` immediately after `as if` or `as though`, while retaining detection of other agreement errors, including later errors in the same sentence. Both corrections have positive and negative regression fixtures. No quality baseline or release threshold is relaxed.\n\n## Remaining editorial work\n\nExpand the new patterns to the requested 5–7 examples per language. This merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
           JS
       - name: Verify complete site and tests before committing
         run: |
           if npm run verify > /tmp/grammar-verify.log 2>&1; then
             tail -n 25 /tmp/grammar-verify.log
           else
-            grep -n -E 'Error|error|not ok|failed|failure|AssertionError' /tmp/grammar-verify.log || true
-            tail -n 140 /tmp/grammar-verify.log
+            grep -n -A 18 -B 2 -E '^not ok|^Error:|AssertionError|error:' /tmp/grammar-verify.log || true
+            tail -n 100 /tmp/grammar-verify.log
             exit 1
           fi
       - name: Commit integrated source data on the feature branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/patterns/GF*.json data/practice-extensions.json data/pattern-annotations.json.gz scripts/integrate-grammar-flexibility.mjs docs/research/grammar-flexibility-300-integration.md
+          git add data/patterns/GF*.json data/practice-extensions.json data/pattern-annotations.json.gz scripts/integrate-grammar-flexibility.mjs src/frame-quality-audit.mjs docs/research/grammar-flexibility-300-integration.md
           if ! git diff --cached --quiet; then
-            git commit -m 'content: register 300 grammar patterns and explicit pending annotations'
+            git commit -m 'content: integrate 300 grammar patterns with validated pending annotation state'
             git push origin HEAD:feat/grammar-flexibility-300
           fi
