@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SRE",
+  "patterns": [
+    {
+      "id": "SRE001",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Оказывается, …",
+      "title_en": "It turns out that [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сообщите о факте, который выяснился после проверки или развития событий. Оборот хорошо подходит для исправления прежнего предположения.",
+      "editorial_descriptions": {
+        "en": "Introduce a fact discovered after checking or as events developed. The frame is useful when reality differs from an earlier assumption.",
+        "ru": "Сообщите о факте, который выяснился после проверки или развития событий. Оборот хорошо подходит для исправления прежнего предположения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It turns out that [clause].",
+          "example": "It turns out that the spare key was in the coat pocket all along.",
+          "translation": "Оказывается, запасной ключ всё это время был в кармане пальто.",
+          "examples": [
+            {
+              "text": "It turns out that the spare key was in the coat pocket all along.",
+              "translation_ru": "Оказывается, запасной ключ всё это время был в кармане пальто."
+            },
+            {
+              "text": "It turned out that the café had closed for renovations, not permanently.",
+              "translation_ru": "Оказалось, кафе закрылось на ремонт, а не навсегда."
+            },
+            {
+              "text": "It turns out that the battery is healthy and the charger is faulty.",
+              "translation_ru": "Оказывается, аккумулятор исправен, а неисправно зарядное устройство."
+            },
+            {
+              "text": "It turned out that our evening class had moved to the room upstairs.",
+              "translation_ru": "Оказалось, наше вечернее занятие перенесли в комнату этажом выше."
+            },
+            {
+              "text": "It turns out that the damp patch is coming from a pipe behind the wall.",
+              "translation_ru": "Оказывается, влажное пятно появляется из-за трубы за стеной."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es stellt sich heraus, dass [Aussage].",
+          "example": "Es stellt sich heraus, dass der Ersatzschlüssel die ganze Zeit in der Manteltasche war.",
+          "translation": "Оказывается, запасной ключ всё это время был в кармане пальто.",
+          "examples": [
+            {
+              "text": "Es stellt sich heraus, dass der Ersatzschlüssel die ganze Zeit in der Manteltasche war.",
+              "translation_ru": "Оказывается, запасной ключ всё это время был в кармане пальто."
+            },
+            {
+              "text": "Es stellte sich heraus, dass das Café nur wegen Renovierungsarbeiten geschlossen hatte und nicht dauerhaft.",
+              "translation_ru": "Оказалось, кафе закрылось на ремонт, а не навсегда."
+            },
+            {
+              "text": "Es stellt sich heraus, dass der Akku in Ordnung ist und das Ladegerät defekt ist.",
+              "translation_ru": "Оказывается, аккумулятор исправен, а неисправно зарядное устройство."
+            },
+            {
+              "text": "Es stellte sich heraus, dass unser Abendkurs in den Raum im Obergeschoss verlegt worden war.",
+              "translation_ru": "Оказалось, наше вечернее занятие перенесли в комнату этажом выше."
+            },
+            {
+              "text": "Es stellt sich heraus, dass der feuchte Fleck von einem Rohr hinter der Wand kommt.",
+              "translation_ru": "Оказывается, влажное пятно появляется из-за трубы за стеной."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "It turns out that [clause].",
+        "Es stellt sich heraus, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE002",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Насколько я могу судить, …",
+      "title_en": "From what I can tell, [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Дайте предварительную оценку по доступным признакам и явно ограничьте уверенность. Это удобнее категоричного утверждения, когда данных пока немного.",
+      "editorial_descriptions": {
+        "en": "Give a provisional assessment from the evidence currently visible. The phrase explicitly limits confidence instead of presenting a partial view as certainty.",
+        "ru": "Дайте предварительную оценку по доступным признакам и явно ограничьте уверенность. Это удобнее категоричного утверждения, когда данных пока немного."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "From what I can tell, [clause].",
+          "example": "From what I can tell, the seal is worn but the housing is still intact.",
+          "translation": "Насколько я могу судить, уплотнитель изношен, но корпус всё ещё цел.",
+          "examples": [
+            {
+              "text": "From what I can tell, the seal is worn but the housing is still intact.",
+              "translation_ru": "Насколько я могу судить, уплотнитель изношен, но корпус всё ещё цел."
+            },
+            {
+              "text": "From what I can tell, nobody has replied to the invitation yet.",
+              "translation_ru": "Насколько я вижу, на приглашение пока никто не ответил."
+            },
+            {
+              "text": "From what I can tell, the trail remains passable below the ridge.",
+              "translation_ru": "Насколько я могу судить, тропа ниже гребня всё ещё проходима."
+            },
+            {
+              "text": "From what I can tell, she understands the concept but needs more speaking practice.",
+              "translation_ru": "Насколько я могу судить, она понимает концепцию, но ей нужно больше разговорной практики."
+            },
+            {
+              "text": "From what I can tell, the price difference comes mainly from the longer warranty.",
+              "translation_ru": "Насколько я могу судить, разница в цене в основном связана с более долгой гарантией."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Soweit ich erkennen kann, [Aussage].",
+          "example": "Soweit ich erkennen kann, ist die Dichtung abgenutzt, aber das Gehäuse noch intakt.",
+          "translation": "Насколько я могу судить, уплотнитель изношен, но корпус всё ещё цел.",
+          "examples": [
+            {
+              "text": "Soweit ich erkennen kann, ist die Dichtung abgenutzt, aber das Gehäuse noch intakt.",
+              "translation_ru": "Насколько я могу судить, уплотнитель изношен, но корпус всё ещё цел."
+            },
+            {
+              "text": "Soweit ich erkennen kann, hat noch niemand auf die Einladung geantwortet.",
+              "translation_ru": "Насколько я вижу, на приглашение пока никто не ответил."
+            },
+            {
+              "text": "Soweit ich erkennen kann, ist der Weg unterhalb des Grats noch begehbar.",
+              "translation_ru": "Насколько я могу судить, тропа ниже гребня всё ещё проходима."
+            },
+            {
+              "text": "Soweit ich erkennen kann, versteht sie das Konzept, braucht aber mehr Sprechpraxis.",
+              "translation_ru": "Насколько я могу судить, она понимает концепцию, но ей нужно больше разговорной практики."
+            },
+            {
+              "text": "Soweit ich erkennen kann, ergibt sich der Preisunterschied hauptsächlich aus der längeren Garantie.",
+              "translation_ru": "Насколько я могу судить, разница в цене в основном связана с более долгой гарантией."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "From what I can tell, [clause].",
+        "Soweit ich erkennen kann, [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE003",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Насколько мне известно, …",
+      "title_en": "As far as I know, [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Ограничьте утверждение собственными знаниями. Формула естественно оставляет место для новой информации и не требует излишней уверенности.",
+      "editorial_descriptions": {
+        "en": "Limit a statement to your current knowledge. It leaves room for correction or new information without sounding evasive.",
+        "ru": "Ограничьте утверждение собственными знаниями. Формула естественно оставляет место для новой информации и не требует излишней уверенности."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "As far as I know, [clause].",
+          "example": "As far as I know, the library still lends tools as well as books.",
+          "translation": "Насколько мне известно, библиотека по-прежнему выдаёт не только книги, но и инструменты.",
+          "examples": [
+            {
+              "text": "As far as I know, the library still lends tools as well as books.",
+              "translation_ru": "Насколько мне известно, библиотека по-прежнему выдаёт не только книги, но и инструменты."
+            },
+            {
+              "text": "As far as I know, nobody has changed the rehearsal time for Saturday.",
+              "translation_ru": "Насколько мне известно, время субботней репетиции никто не менял."
+            },
+            {
+              "text": "As far as I know, this paint can be used on metal without a separate primer.",
+              "translation_ru": "Насколько мне известно, эту краску можно наносить на металл без отдельной грунтовки."
+            },
+            {
+              "text": "As far as I knew, he had never driven outside the city before that trip.",
+              "translation_ru": "Насколько я тогда знал, до той поездки он никогда не водил за городом."
+            },
+            {
+              "text": "As far as we know, the missing records were never imported into the new system.",
+              "translation_ru": "Насколько нам известно, пропавшие записи так и не импортировали в новую систему."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Soweit ich weiß, [Aussage].",
+          "example": "Soweit ich weiß, verleiht die Bibliothek weiterhin Werkzeuge und Bücher.",
+          "translation": "Насколько мне известно, библиотека по-прежнему выдаёт не только книги, но и инструменты.",
+          "examples": [
+            {
+              "text": "Soweit ich weiß, verleiht die Bibliothek weiterhin Werkzeuge und Bücher.",
+              "translation_ru": "Насколько мне известно, библиотека по-прежнему выдаёт не только книги, но и инструменты."
+            },
+            {
+              "text": "Soweit ich weiß, hat niemand die Probenzeit für Samstag geändert.",
+              "translation_ru": "Насколько мне известно, время субботней репетиции никто не менял."
+            },
+            {
+              "text": "Soweit ich weiß, kann diese Farbe ohne separate Grundierung auf Metall verwendet werden.",
+              "translation_ru": "Насколько мне известно, эту краску можно наносить на металл без отдельной грунтовки."
+            },
+            {
+              "text": "Soweit ich wusste, war er vor dieser Reise noch nie außerhalb der Stadt gefahren.",
+              "translation_ru": "Насколько я тогда знал, до той поездки он никогда не водил за городом."
+            },
+            {
+              "text": "Soweit wir wissen, wurden die fehlenden Datensätze nie in das neue System importiert.",
+              "translation_ru": "Насколько нам известно, пропавшие записи так и не импортировали в новую систему."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "As far as I know, [clause].",
+        "Soweit ich weiß, [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE004",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Я так понимаю, …",
+      "title_en": "I gather that [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сформулируйте вывод из разговора, письма или косвенных признаков. Это не дословная цитата, а ваше понимание полученной информации.",
+      "editorial_descriptions": {
+        "en": "State what you infer from a conversation, message or indirect clues. It reports your understanding rather than quoting a source verbatim.",
+        "ru": "Сформулируйте вывод из разговора, письма или косвенных признаков. Это не дословная цитата, а ваше понимание полученной информации."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I gather that [clause].",
+          "example": "I gather that the landlord is willing to renew the lease for another year.",
+          "translation": "Я так понимаю, хозяин готов продлить аренду ещё на год.",
+          "examples": [
+            {
+              "text": "I gather that the landlord is willing to renew the lease for another year.",
+              "translation_ru": "Я так понимаю, хозяин готов продлить аренду ещё на год."
+            },
+            {
+              "text": "I gather that you would rather practise with shorter texts at first.",
+              "translation_ru": "Я так понимаю, сначала ты предпочёл бы тренироваться на более коротких текстах."
+            },
+            {
+              "text": "I gather that the repair will take longer because one part has to be ordered.",
+              "translation_ru": "Я так понимаю, ремонт займёт больше времени, потому что одну деталь нужно заказать."
+            },
+            {
+              "text": "I gathered that the committee had already rejected the larger venue.",
+              "translation_ru": "Я понял, что комитет уже отклонил более крупную площадку."
+            },
+            {
+              "text": "I gather that the two versions differ only in the final section.",
+              "translation_ru": "Я так понимаю, две версии различаются только последним разделом."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich entnehme daraus, dass [Aussage].",
+          "example": "Ich entnehme daraus, dass der Vermieter bereit ist, den Mietvertrag um ein weiteres Jahr zu verlängern.",
+          "translation": "Я так понимаю, хозяин готов продлить аренду ещё на год.",
+          "examples": [
+            {
+              "text": "Ich entnehme daraus, dass der Vermieter bereit ist, den Mietvertrag um ein weiteres Jahr zu verlängern.",
+              "translation_ru": "Я так понимаю, хозяин готов продлить аренду ещё на год."
+            },
+            {
+              "text": "Ich entnehme daraus, dass du zunächst lieber mit kürzeren Texten üben möchtest.",
+              "translation_ru": "Я так понимаю, сначала ты предпочёл бы тренироваться на более коротких текстах."
+            },
+            {
+              "text": "Ich entnehme daraus, dass die Reparatur länger dauert, weil ein Teil bestellt werden muss.",
+              "translation_ru": "Я так понимаю, ремонт займёт больше времени, потому что одну деталь нужно заказать."
+            },
+            {
+              "text": "Ich entnahm daraus, dass der Ausschuss den größeren Veranstaltungsort bereits abgelehnt hatte.",
+              "translation_ru": "Я понял, что комитет уже отклонил более крупную площадку."
+            },
+            {
+              "text": "Ich entnehme daraus, dass sich die beiden Versionen nur im letzten Abschnitt unterscheiden.",
+              "translation_ru": "Я так понимаю, две версии различаются только последним разделом."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I gather that [clause].",
+        "Ich entnehme daraus, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE005",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Нет признаков того, что …",
+      "title_en": "There is no indication that [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Скажите, что доступные данные пока не подтверждают предположение. Отсутствие признаков не равнозначно доказательству обратного.",
+      "editorial_descriptions": {
+        "en": "Say that the available evidence does not currently support a claim. Absence of an indication is not the same as proof of the opposite.",
+        "ru": "Скажите, что доступные данные пока не подтверждают предположение. Отсутствие признаков не равнозначно доказательству обратного."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is no indication that [clause].",
+          "example": "There is no indication that the crack has reached the inner layer.",
+          "translation": "Нет признаков того, что трещина дошла до внутреннего слоя.",
+          "examples": [
+            {
+              "text": "There is no indication that the crack has reached the inner layer.",
+              "translation_ru": "Нет признаков того, что трещина дошла до внутреннего слоя."
+            },
+            {
+              "text": "There was no indication that the guests had received the revised address.",
+              "translation_ru": "Не было признаков того, что гости получили исправленный адрес."
+            },
+            {
+              "text": "There is no indication that the new timetable has reduced attendance.",
+              "translation_ru": "Нет признаков того, что новое расписание снизило посещаемость."
+            },
+            {
+              "text": "So far, there is no indication that the medication affected the test equipment.",
+              "translation_ru": "Пока нет признаков того, что препарат повлиял на испытательное оборудование."
+            },
+            {
+              "text": "There is no indication that anyone opened the archive box after it was sealed.",
+              "translation_ru": "Нет признаков того, что кто-то открывал архивную коробку после опечатывания."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es gibt keinen Hinweis darauf, dass [Aussage].",
+          "example": "Es gibt keinen Hinweis darauf, dass der Riss die innere Schicht erreicht hat.",
+          "translation": "Нет признаков того, что трещина дошла до внутреннего слоя.",
+          "examples": [
+            {
+              "text": "Es gibt keinen Hinweis darauf, dass der Riss die innere Schicht erreicht hat.",
+              "translation_ru": "Нет признаков того, что трещина дошла до внутреннего слоя."
+            },
+            {
+              "text": "Es gab keinen Hinweis darauf, dass die Gäste die korrigierte Adresse erhalten hatten.",
+              "translation_ru": "Не было признаков того, что гости получили исправленный адрес."
+            },
+            {
+              "text": "Es gibt keinen Hinweis darauf, dass der neue Zeitplan die Teilnehmerzahl verringert hat.",
+              "translation_ru": "Нет признаков того, что новое расписание снизило посещаемость."
+            },
+            {
+              "text": "Bisher gibt es keinen Hinweis darauf, dass das Medikament die Testausrüstung beeinflusst hat.",
+              "translation_ru": "Пока нет признаков того, что препарат повлиял на испытательное оборудование."
+            },
+            {
+              "text": "Es gibt keinen Hinweis darauf, dass jemand die Archivkiste nach dem Versiegeln geöffnet hat.",
+              "translation_ru": "Нет признаков того, что кто-то открывал архивную коробку после опечатывания."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "There is no indication that [clause].",
+        "Es gibt keinen Hinweis darauf, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE006",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "По сообщениям, … уже …",
+      "title_en": "[Person/thing] is reported to have [past participle].",
+      "level": "B2–C1",
+      "metaphor_ru": "Передайте сообщение об уже произошедшем событии, не представляя его как лично проверенный факт. Английский завершённый инфинитив относит событие в прошлое.",
+      "editorial_descriptions": {
+        "en": "Report an earlier event without presenting it as personally verified. The perfect infinitive places the reported event before the reporting time.",
+        "ru": "Передайте сообщение об уже произошедшем событии, не представляя его как лично проверенный факт. Английский завершённый инфинитив относит событие в прошлое."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person/thing] is reported to have [past participle].",
+          "example": "The missing hiker is reported to have reached a mountain hut before nightfall.",
+          "translation": "По сообщениям, пропавший турист до наступления темноты добрался до горной хижины.",
+          "examples": [
+            {
+              "text": "The missing hiker is reported to have reached a mountain hut before nightfall.",
+              "translation_ru": "По сообщениям, пропавший турист до наступления темноты добрался до горной хижины."
+            },
+            {
+              "text": "The painting is reported to have belonged to the same family for three generations.",
+              "translation_ru": "Сообщается, что картина принадлежала одной семье на протяжении трёх поколений."
+            },
+            {
+              "text": "The company is reported to have withdrawn the disputed advertisement.",
+              "translation_ru": "По сообщениям, компания сняла спорную рекламу."
+            },
+            {
+              "text": "The bridge is reported to have reopened after the safety inspection.",
+              "translation_ru": "Сообщается, что мост снова открыли после проверки безопасности."
+            },
+            {
+              "text": "Two original letters are reported to have survived the fire.",
+              "translation_ru": "По сообщениям, два оригинальных письма уцелели после пожара."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person/Sache] soll [Partizip II] haben/sein.",
+          "example": "Der vermisste Wanderer soll vor Einbruch der Dunkelheit eine Berghütte erreicht haben.",
+          "translation": "По сообщениям, пропавший турист до наступления темноты добрался до горной хижины.",
+          "examples": [
+            {
+              "text": "Der vermisste Wanderer soll vor Einbruch der Dunkelheit eine Berghütte erreicht haben.",
+              "translation_ru": "По сообщениям, пропавший турист до наступления темноты добрался до горной хижины."
+            },
+            {
+              "text": "Das Gemälde soll drei Generationen lang derselben Familie gehört haben.",
+              "translation_ru": "Сообщается, что картина принадлежала одной семье на протяжении трёх поколений."
+            },
+            {
+              "text": "Das Unternehmen soll die umstrittene Werbung zurückgezogen haben.",
+              "translation_ru": "По сообщениям, компания сняла спорную рекламу."
+            },
+            {
+              "text": "Die Brücke soll nach der Sicherheitsprüfung wieder geöffnet worden sein.",
+              "translation_ru": "Сообщается, что мост снова открыли после проверки безопасности."
+            },
+            {
+              "text": "Zwei Originalbriefe sollen den Brand überstanden haben.",
+              "translation_ru": "По сообщениям, два оригинальных письма уцелели после пожара."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person/thing] is reported to have [past participle].",
+        "[Person/Sache] soll [Partizip II] haben/sein."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE007",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "У меня сложилось впечатление, что …",
+      "title_en": "I was led to believe that [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Покажите, что прежнее убеждение возникло из полученной информации. Оборот часто используется, когда позднее выясняется несоответствие.",
+      "editorial_descriptions": {
+        "en": "Show that information from others created an expectation or belief. The phrase is especially useful when later facts do not match that impression.",
+        "ru": "Покажите, что прежнее убеждение возникло из полученной информации. Оборот часто используется, когда позднее выясняется несоответствие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I was led to believe that [clause].",
+          "example": "I was led to believe that breakfast was included in the room price.",
+          "translation": "У меня сложилось впечатление, что завтрак входит в стоимость номера.",
+          "examples": [
+            {
+              "text": "I was led to believe that breakfast was included in the room price.",
+              "translation_ru": "У меня сложилось впечатление, что завтрак входит в стоимость номера."
+            },
+            {
+              "text": "We were led to believe that the replacement part was already in stock.",
+              "translation_ru": "Нам дали понять, что запасная деталь уже есть на складе."
+            },
+            {
+              "text": "She was led to believe that the course required no previous experience.",
+              "translation_ru": "Ей дали понять, что для курса не нужен предыдущий опыт."
+            },
+            {
+              "text": "I had been led to believe that the document had already been approved.",
+              "translation_ru": "Мне дали понять, что документ уже утверждён."
+            },
+            {
+              "text": "The residents were led to believe that the roadworks would finish before winter.",
+              "translation_ru": "Жителям дали понять, что дорожные работы закончат до зимы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mir wurde der Eindruck vermittelt, dass [Aussage].",
+          "example": "Mir wurde der Eindruck vermittelt, dass das Frühstück im Zimmerpreis enthalten sei.",
+          "translation": "У меня сложилось впечатление, что завтрак входит в стоимость номера.",
+          "examples": [
+            {
+              "text": "Mir wurde der Eindruck vermittelt, dass das Frühstück im Zimmerpreis enthalten sei.",
+              "translation_ru": "У меня сложилось впечатление, что завтрак входит в стоимость номера."
+            },
+            {
+              "text": "Uns wurde der Eindruck vermittelt, dass das Ersatzteil bereits auf Lager sei.",
+              "translation_ru": "Нам дали понять, что запасная деталь уже есть на складе."
+            },
+            {
+              "text": "Ihr wurde der Eindruck vermittelt, dass für den Kurs keine Vorkenntnisse erforderlich seien.",
+              "translation_ru": "Ей дали понять, что для курса не нужен предыдущий опыт."
+            },
+            {
+              "text": "Mir war der Eindruck vermittelt worden, dass das Dokument bereits genehmigt worden sei.",
+              "translation_ru": "Мне дали понять, что документ уже утверждён."
+            },
+            {
+              "text": "Den Anwohnern wurde der Eindruck vermittelt, dass die Straßenarbeiten vor dem Winter abgeschlossen würden.",
+              "translation_ru": "Жителям дали понять, что дорожные работы закончат до зимы."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I was led to believe that [clause].",
+        "Mir wurde der Eindruck vermittelt, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE008",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "По общему мнению и сообщениям, …",
+      "title_en": "By all accounts, [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сошлитесь на согласующиеся рассказы нескольких источников. Формула не заменяет проверку источников, но естественно передаёт общий фон.",
+      "editorial_descriptions": {
+        "en": "Summarise a broadly consistent picture from several reports. It conveys consensus in the available accounts without replacing source checking.",
+        "ru": "Сошлитесь на согласующиеся рассказы нескольких источников. Формула не заменяет проверку источников, но естественно передаёт общий фон."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "By all accounts, [clause].",
+          "example": "By all accounts, the new conductor has made rehearsals calmer and more focused.",
+          "translation": "По общему мнению, с новым дирижёром репетиции стали спокойнее и сосредоточеннее.",
+          "examples": [
+            {
+              "text": "By all accounts, the new conductor has made rehearsals calmer and more focused.",
+              "translation_ru": "По общему мнению, с новым дирижёром репетиции стали спокойнее и сосредоточеннее."
+            },
+            {
+              "text": "By all accounts, the coastal road was difficult even before the storm.",
+              "translation_ru": "По всем рассказам, прибрежная дорога была сложной ещё до шторма."
+            },
+            {
+              "text": "By all accounts, she handled the complaint patiently and without becoming defensive.",
+              "translation_ru": "По всем отзывам, она спокойно разобралась с жалобой и не стала защищаться."
+            },
+            {
+              "text": "By all accounts, the old bakery still uses the same sourdough starter.",
+              "translation_ru": "По общим рассказам, старая пекарня до сих пор использует ту же закваску."
+            },
+            {
+              "text": "By all accounts, the exhibition was crowded but exceptionally well organised.",
+              "translation_ru": "По всем отзывам, на выставке было многолюдно, но организовано всё было исключительно хорошо."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Allen Berichten zufolge [Aussage].",
+          "example": "Allen Berichten zufolge hat der neue Dirigent die Proben ruhiger und konzentrierter gemacht.",
+          "translation": "По общему мнению, с новым дирижёром репетиции стали спокойнее и сосредоточеннее.",
+          "examples": [
+            {
+              "text": "Allen Berichten zufolge hat der neue Dirigent die Proben ruhiger und konzentrierter gemacht.",
+              "translation_ru": "По общему мнению, с новым дирижёром репетиции стали спокойнее и сосредоточеннее."
+            },
+            {
+              "text": "Allen Berichten zufolge war die Küstenstraße schon vor dem Sturm schwierig zu befahren.",
+              "translation_ru": "По всем рассказам, прибрежная дорога была сложной ещё до шторма."
+            },
+            {
+              "text": "Allen Berichten zufolge ging sie geduldig mit der Beschwerde um, ohne in die Defensive zu gehen.",
+              "translation_ru": "По всем отзывам, она спокойно разобралась с жалобой и не стала защищаться."
+            },
+            {
+              "text": "Allen Berichten zufolge verwendet die alte Bäckerei noch immer denselben Sauerteigstarter.",
+              "translation_ru": "По общим рассказам, старая пекарня до сих пор использует ту же закваску."
+            },
+            {
+              "text": "Allen Berichten zufolge war die Ausstellung voll, aber außergewöhnlich gut organisiert.",
+              "translation_ru": "По всем отзывам, на выставке было многолюдно, но организовано всё было исключительно хорошо."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "By all accounts, [clause].",
+        "Allen Berichten zufolge [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE009",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "Судя по …, …",
+      "title_en": "Judging by [evidence], [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сделайте вывод из конкретного наблюдаемого признака. Называйте сам признак, чтобы слушателю было понятно основание вывода.",
+      "editorial_descriptions": {
+        "en": "Draw an inference from a specific observable clue. Naming the clue makes the basis of the judgement inspectable rather than vague.",
+        "ru": "Сделайте вывод из конкретного наблюдаемого признака. Называйте сам признак, чтобы слушателю было понятно основание вывода."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Judging by [evidence], [clause].",
+          "example": "Judging by the worn steps, this entrance was used far more often in the past.",
+          "translation": "Судя по стёртым ступеням, раньше этим входом пользовались гораздо чаще.",
+          "examples": [
+            {
+              "text": "Judging by the worn steps, this entrance was used far more often in the past.",
+              "translation_ru": "Судя по стёртым ступеням, раньше этим входом пользовались гораздо чаще."
+            },
+            {
+              "text": "Judging by her notes, she had already compared at least four suppliers.",
+              "translation_ru": "Судя по её записям, она уже сравнила как минимум четырёх поставщиков."
+            },
+            {
+              "text": "Judging by the smell, the beans have been roasting for several minutes.",
+              "translation_ru": "Судя по запаху, зёрна обжариваются уже несколько минут."
+            },
+            {
+              "text": "Judging by the tyre tracks, the van turned around near the gate.",
+              "translation_ru": "Судя по следам шин, фургон развернулся возле ворот."
+            },
+            {
+              "text": "Judging by the questions people asked, the explanation was too technical.",
+              "translation_ru": "Судя по вопросам людей, объяснение было слишком техническим."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Beleg] nach zu urteilen, [Aussage].",
+          "example": "Den abgenutzten Stufen nach zu urteilen, wurde dieser Eingang früher viel häufiger benutzt.",
+          "translation": "Судя по стёртым ступеням, раньше этим входом пользовались гораздо чаще.",
+          "examples": [
+            {
+              "text": "Den abgenutzten Stufen nach zu urteilen, wurde dieser Eingang früher viel häufiger benutzt.",
+              "translation_ru": "Судя по стёртым ступеням, раньше этим входом пользовались гораздо чаще."
+            },
+            {
+              "text": "Ihren Notizen nach zu urteilen, hatte sie bereits mindestens vier Lieferanten verglichen.",
+              "translation_ru": "Судя по её записям, она уже сравнила как минимум четырёх поставщиков."
+            },
+            {
+              "text": "Dem Geruch nach zu urteilen, rösten die Bohnen schon seit mehreren Minuten.",
+              "translation_ru": "Судя по запаху, зёрна обжариваются уже несколько минут."
+            },
+            {
+              "text": "Den Reifenspuren nach zu urteilen, hat der Lieferwagen in der Nähe des Tors gewendet.",
+              "translation_ru": "Судя по следам шин, фургон развернулся возле ворот."
+            },
+            {
+              "text": "Den Fragen der Leute nach zu urteilen, war die Erklärung zu technisch.",
+              "translation_ru": "Судя по вопросам людей, объяснение было слишком техническим."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Judging by [evidence], [clause].",
+        "[Beleg] nach zu urteilen, [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    },
+    {
+      "id": "SRE010",
+      "set_id": "SRE",
+      "group_id": "SRE",
+      "title_ru": "По-видимому, …, но …",
+      "title_en": "Apparently, [clause], but [qualification].",
+      "level": "B2–C1",
+      "metaphor_ru": "Передайте полученную информацию и сразу ограничьте её оговоркой. Это полезно, когда основная картина понятна, но важная деталь остаётся неопределённой.",
+      "editorial_descriptions": {
+        "en": "Report an apparent fact and immediately add a qualification. This is useful when the main picture is plausible but an important detail remains uncertain.",
+        "ru": "Передайте полученную информацию и сразу ограничьте её оговоркой. Это полезно, когда основная картина понятна, но важная деталь остаётся неопределённой."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Apparently, [clause], but [qualification].",
+          "example": "Apparently, the parcel has reached the depot, but nobody can confirm when it will be delivered.",
+          "translation": "По-видимому, посылка уже на складе, но никто не может подтвердить дату доставки.",
+          "examples": [
+            {
+              "text": "Apparently, the parcel has reached the depot, but nobody can confirm when it will be delivered.",
+              "translation_ru": "По-видимому, посылка уже на складе, но никто не может подтвердить дату доставки."
+            },
+            {
+              "text": "Apparently, the hall is available on Friday, but only until nine in the evening.",
+              "translation_ru": "По-видимому, зал свободен в пятницу, но только до девяти вечера."
+            },
+            {
+              "text": "Apparently, the recipe works with frozen berries, but the baking time needs adjusting.",
+              "translation_ru": "По-видимому, рецепт работает и с замороженными ягодами, но время выпечки нужно изменить."
+            },
+            {
+              "text": "Apparently, she has accepted the role, but the contract has not been signed yet.",
+              "translation_ru": "По-видимому, она согласилась на роль, но контракт ещё не подписан."
+            },
+            {
+              "text": "Apparently, the software can import the old format, but some metadata may be lost.",
+              "translation_ru": "По-видимому, программа может импортировать старый формат, но часть метаданных может потеряться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Offenbar [Aussage], allerdings [Einschränkung].",
+          "example": "Offenbar hat das Paket das Verteilzentrum erreicht, allerdings kann niemand bestätigen, wann es zugestellt wird.",
+          "translation": "По-видимому, посылка уже на складе, но никто не может подтвердить дату доставки.",
+          "examples": [
+            {
+              "text": "Offenbar hat das Paket das Verteilzentrum erreicht, allerdings kann niemand bestätigen, wann es zugestellt wird.",
+              "translation_ru": "По-видимому, посылка уже на складе, но никто не может подтвердить дату доставки."
+            },
+            {
+              "text": "Offenbar ist der Saal am Freitag verfügbar, allerdings nur bis neun Uhr abends.",
+              "translation_ru": "По-видимому, зал свободен в пятницу, но только до девяти вечера."
+            },
+            {
+              "text": "Offenbar funktioniert das Rezept auch mit gefrorenen Beeren, allerdings muss die Backzeit angepasst werden.",
+              "translation_ru": "По-видимому, рецепт работает и с замороженными ягодами, но время выпечки нужно изменить."
+            },
+            {
+              "text": "Offenbar hat sie die Rolle angenommen, allerdings ist der Vertrag noch nicht unterschrieben.",
+              "translation_ru": "По-видимому, она согласилась на роль, но контракт ещё не подписан."
+            },
+            {
+              "text": "Offenbar kann die Software das alte Format importieren, allerdings könnten einige Metadaten verloren gehen.",
+              "translation_ru": "По-видимому, программа может импортировать старый формат, но часть метаданных может потеряться."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Apparently, [clause], but [qualification].",
+        "Offenbar [Aussage], allerdings [Einschränkung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918-wave2"
+    }
+  ]
+}
