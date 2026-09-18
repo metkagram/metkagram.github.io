@@ -1,3 +1,4 @@
+import { hasPendingExampleEnrichment } from "./pattern-example-enrichment.mjs";
 // Canonical pattern corpus storage: one reviewable shard per study set.
 //
 // The 31 MB monolithic data/advanced-patterns.json was split (issue #71) into
@@ -9,6 +10,8 @@
 // - shard file name, shard set_id and every pattern's set_id agree;
 // - no duplicate pattern IDs across shards;
 // - no shard for an unknown study set;
+// - learning-language records contain 5–7 practice examples, except the finite
+//   owner-approved pending-enrichment ledger (never silently treated as complete);
 // - deterministic reconstruction: shards are concatenated in study-set order
 //   (the order data/study-sets.json + practice-extensions.json define), with
 //   the within-shard order preserved from the file;
@@ -24,9 +27,27 @@ import path from "node:path";
 const ROOT = process.cwd();
 export const PATTERN_SHARD_DIR = path.join("data", "patterns");
 export const PATTERN_SHARD_SCHEMA_VERSION = 1;
+export const MIN_PATTERN_EXAMPLES = 5;
+export const MAX_PATTERN_EXAMPLES = 7;
 
 function assertShard(condition, message) {
   if (!condition) throw new Error(`Pattern shard validation failed: ${message}`);
+}
+
+function normalizePatternExamples(pattern) {
+  for (const language of pattern.langs || []) {
+    assertShard(
+      Array.isArray(language.examples),
+      `cannot write pattern ${pattern.id}/${language.lang}: examples must be an array`
+    );
+    assertShard(
+      language.examples.length >= MIN_PATTERN_EXAMPLES || hasPendingExampleEnrichment(pattern, language),
+      `cannot write pattern ${pattern.id}/${language.lang}: expected at least ${MIN_PATTERN_EXAMPLES} examples, found ${language.examples.length}`
+    );
+    if (language.examples.length > MAX_PATTERN_EXAMPLES) {
+      language.examples = language.examples.slice(0, MAX_PATTERN_EXAMPLES);
+    }
+  }
 }
 
 export function patternShardPath(setId, root = ROOT) {
@@ -61,6 +82,13 @@ export function loadPatternShards({ root = ROOT, setOrder = [] } = {}) {
       assertShard(typeof pattern.id === "string" && pattern.id, `${name}: every pattern needs an id`);
       assertShard(pattern.set_id === value.set_id, `${name}: pattern ${pattern.id} has set_id ${pattern.set_id} outside shard ${value.set_id}`);
       assertShard(!patternIds.has(pattern.id), `${name}: duplicate pattern id ${pattern.id} (already in another shard)`);
+      for (const language of pattern.langs || []) {
+        const count = Array.isArray(language.examples) ? language.examples.length : 0;
+        assertShard(
+          (count >= MIN_PATTERN_EXAMPLES && count <= MAX_PATTERN_EXAMPLES) || hasPendingExampleEnrichment(pattern, language),
+          `${name}: pattern ${pattern.id}/${language.lang} must contain ${MIN_PATTERN_EXAMPLES}–${MAX_PATTERN_EXAMPLES} examples; found ${count}`
+        );
+      }
       patternIds.add(pattern.id);
     }
     shards.set(value.set_id, value.patterns);
@@ -78,6 +106,10 @@ export function loadPatternShards({ root = ROOT, setOrder = [] } = {}) {
 // registry they belong to. Used by the corpus-growth/enrichment scripts.
 export function loadEditorialCorpus(root = ROOT) {
   const studySets = JSON.parse(fs.readFileSync(path.join(root, "data", "study-sets.json"), "utf8"));
+  const extensionFile = path.join(root, "data", "practice-extensions.json");
+  const extensions = fs.existsSync(extensionFile) ? JSON.parse(fs.readFileSync(extensionFile, "utf8")) : { sets: [] };
+  const existing = new Set(studySets.sets.map(set => set.id));
+  studySets.sets.push(...(extensions.sets || []).filter(set => !existing.has(set.id)));
   const setOrder = studySets.sets.map((set) => set.id);
   const { patterns } = loadPatternShards({ root, setOrder });
   return { patterns, studySets, setOrder };
@@ -85,11 +117,15 @@ export function loadEditorialCorpus(root = ROOT) {
 
 // Writes the corpus back as canonical shards. Used by the one-off migration
 // and by editorial tooling; refuses to write a pattern into an unknown set.
+// Writers may supply more than seven examples while composing a pattern; the
+// canonical shard keeps the first seven. Undersized records are rejected unless
+// their exact identity and count match the explicit pending-enrichment ledger.
 export function writePatternCorpus(patterns, { root = ROOT, setOrder = [] } = {}) {
   const knownSets = new Set(setOrder);
   const bySet = new Map();
   for (const pattern of patterns) {
     assertShard(knownSets.has(pattern.set_id), `cannot write pattern ${pattern.id}: unknown study set ${pattern.set_id}`);
+    normalizePatternExamples(pattern);
     if (!bySet.has(pattern.set_id)) bySet.set(pattern.set_id, []);
     bySet.get(pattern.set_id).push(pattern);
   }

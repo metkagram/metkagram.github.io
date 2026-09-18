@@ -1,12 +1,12 @@
 # Migration verification
 
-- Dataset version: **1.0.0+cec79e417c6f**
-- Generated routes: **7451**
-- API endpoints: **3962**
+- Dataset version: **1.0.0+c40ef7c9cc20**
+- Generated routes: **2281**
+- API endpoints: **1381**
 - Annotated documents: **72**
 - Annotated sentences: **969**
-- Advanced B2–C1 patterns: **3530**
-- Redirect records: **2830**
+- Advanced B2–C1 patterns: **930**
+- Redirect records: **1010**
 - Trailing-slash policy: directory URLs with trailing slash
 - Progress compatibility: The public website no longer includes review or progress synchronization features.
 

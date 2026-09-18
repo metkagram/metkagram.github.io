@@ -10,6 +10,7 @@ const ROOT = process.cwd();
 const DATA = path.join(ROOT, "data");
 const ALIASES_FILE = path.join(DATA, "pattern-aliases.json");
 const FRAME_QUALITY_BASELINE_FILE = path.join(DATA, "quality", "frame-audit-baseline.json");
+const SEO_SLUGS_FILE = path.join(DATA, "seo-slugs.json");
 
 const aliases = JSON.parse(fs.readFileSync(ALIASES_FILE, "utf8")).aliases || {};
 
@@ -62,6 +63,17 @@ for (const file of jsonFiles(DATA)) {
   migratedFiles += 1;
 }
 
+function pruneRetiredSeoSlugs() {
+  const activeIds = new Set(loadContent().advancedPatterns.map((pattern) => pattern.id));
+  const registry = JSON.parse(fs.readFileSync(SEO_SLUGS_FILE, "utf8"));
+  const before = Object.keys(registry.patterns || {}).length;
+  registry.patterns = Object.fromEntries(
+    Object.entries(registry.patterns || {}).filter(([patternId]) => activeIds.has(patternId)),
+  );
+  const after = Object.keys(registry.patterns).length;
+  fs.writeFileSync(SEO_SLUGS_FILE, `${JSON.stringify(registry, null, 2)}\n`);
+  return { before, after, retired: before - after };
+}
 function sourceFromMain(relative) {
   try {
     return execFileSync("git", ["show", `origin/main:${relative}`], { cwd: ROOT, encoding: "utf8" });
@@ -121,6 +133,7 @@ function recaptureFrameQualityBaseline() {
   return snapshot;
 }
 
+const seoSlugs = pruneRetiredSeoSlugs();
 patchContentTest();
 patchDomainModelTest();
 patchCanonicalCorpusGuards();
@@ -128,3 +141,5 @@ const frameQuality = recaptureFrameQualityBaseline();
 
 console.log(`Retired Pattern references migrated: ${migratedFiles} JSON files updated; ${migratedValues} retired-ID references replaced.`);
 console.log(`Frame quality baseline recaptured: ${frameQuality.patternCount} active patterns / ${frameQuality.studySetCount} study sets.`);
+
+console.log(`SEO slug registry pruned ${seoSlugs.retired} retired IDs (${seoSlugs.before} -> ${seoSlugs.after}).`);

@@ -10,7 +10,7 @@ const exampleLanguage = count => ({ lang: 'en', example: 'A primary example.', e
 test('the temporary enrichment ledger covers exactly the approved 300 patterns', () => {
   const ledger = pendingExampleEnrichmentInventory();
   assert.deepEqual([...ledger.patternIds].sort(), [...expansionPatternIds].sort());
-  const patterns = loadContent().advancedPatterns;
+  const patterns = loadEditorialCorpus().patterns;
   for (const pattern of patterns) for (const language of pattern.langs) {
     if (language.examples.length >= 5 && language.examples.length <= 7) continue;
     assert.ok(hasPendingExampleEnrichment(pattern, language), `${pattern.id}/${language.lang}: unregistered example debt`);
