@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFQ",
+  "patterns": [
+    {
+      "id": "GFQ001",
+      "set_id": "GFQ",
+      "pattern": "It seems to me that the team is solving the symptom rather than the cause.",
+      "group_title": "It seems to me that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "It seems to me that [X]",
+        "form": "It seems to me that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: мне кажется, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It seems to me that + clause",
+          "example": "It seems to me that the team is solving the symptom rather than the cause.",
+          "translation": "Мне кажется, что команда устраняет симптом, а не причину.",
+          "examples": [
+            {
+              "text": "It seems to me that the room gets noisier after the ventilation starts.",
+              "translation_ru": "Мне кажется, что в комнате становится шумнее после включения вентиляции."
+            },
+            {
+              "text": "It seems to me that she learns faster when the examples are tied to real situations.",
+              "translation_ru": "Мне кажется, что она учится быстрее, когда примеры связаны с реальными ситуациями."
+            },
+            {
+              "text": "It seems to me that the cheaper plan hides more long-term costs.",
+              "translation_ru": "Мне кажется, что более дешёвый тариф скрывает больше долгосрочных расходов."
+            },
+            {
+              "text": "It seems to me that the second route is safer in bad weather.",
+              "translation_ru": "Мне кажется, что второй маршрут безопаснее в плохую погоду."
+            },
+            {
+              "text": "It seems to me that the metric rewards activity rather than useful outcomes.",
+              "translation_ru": "Мне кажется, что метрика поощряет активность, а не полезный результат."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mir scheint, dass + subordinate clause",
+          "example": "Mir scheint, dass das Team eher das Symptom als die Ursache bekämpft.",
+          "translation": "Мне кажется, что команда устраняет симптом, а не причину.",
+          "examples": [
+            {
+              "text": "Mir scheint, dass der Raum lauter wird, sobald die Lüftung startet.",
+              "translation_ru": "Мне кажется, что в комнате становится шумнее после включения вентиляции."
+            },
+            {
+              "text": "Mir scheint, dass sie schneller lernt, wenn die Beispiele mit realen Situationen verknüpft sind.",
+              "translation_ru": "Мне кажется, что она учится быстрее, когда примеры связаны с реальными ситуациями."
+            },
+            {
+              "text": "Mir scheint, dass der günstigere Tarif mehr langfristige Kosten verbirgt.",
+              "translation_ru": "Мне кажется, что более дешёвый тариф скрывает больше долгосрочных расходов."
+            },
+            {
+              "text": "Mir scheint, dass die zweite Strecke bei schlechtem Wetter sicherer ist.",
+              "translation_ru": "Мне кажется, что второй маршрут безопаснее в плохую погоду."
+            },
+            {
+              "text": "Mir scheint, dass die Kennzahl eher Aktivität als nützliche Ergebnisse belohnt.",
+              "translation_ru": "Мне кажется, что метрика поощряет активность, а не полезный результат."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мне кажется, что …",
+      "title_en": "It seems to me that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ002",
+      "set_id": "GFQ",
+      "pattern": "As far as I can tell, the backup completed without errors.",
+      "group_title": "As far as I can tell, [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "As far as I can tell, [X]",
+        "form": "As far as I can tell, + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: насколько я могу судить, …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "As far as I can tell, + clause",
+          "example": "As far as I can tell, the backup completed without errors.",
+          "translation": "Насколько я могу судить, резервное копирование завершилось без ошибок.",
+          "examples": [
+            {
+              "text": "As far as I can tell, nobody has changed the booking yet.",
+              "translation_ru": "Насколько я могу судить, бронирование пока никто не менял."
+            },
+            {
+              "text": "As far as I can tell, this pronunciation is common in everyday speech.",
+              "translation_ru": "Насколько я могу судить, это произношение часто встречается в повседневной речи."
+            },
+            {
+              "text": "As far as I can tell, the leak is coming from the pipe behind the wall.",
+              "translation_ru": "Насколько я могу судить, протечка идёт от трубы за стеной."
+            },
+            {
+              "text": "As far as I can tell, the offer includes maintenance for the first year.",
+              "translation_ru": "Насколько я могу судить, предложение включает обслуживание на первый год."
+            },
+            {
+              "text": "As far as I can tell, the apparent trend disappears once the outlier is removed.",
+              "translation_ru": "Насколько я могу судить, видимый тренд исчезает после удаления выброса."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Soweit ich das beurteilen kann, + main clause",
+          "example": "Soweit ich das beurteilen kann, wurde die Sicherung ohne Fehler abgeschlossen.",
+          "translation": "Насколько я могу судить, резервное копирование завершилось без ошибок.",
+          "examples": [
+            {
+              "text": "Soweit ich das beurteilen kann, hat noch niemand die Buchung geändert.",
+              "translation_ru": "Насколько я могу судить, бронирование пока никто не менял."
+            },
+            {
+              "text": "Soweit ich das beurteilen kann, ist diese Aussprache in der Alltagssprache üblich.",
+              "translation_ru": "Насколько я могу судить, это произношение часто встречается в повседневной речи."
+            },
+            {
+              "text": "Soweit ich das beurteilen kann, kommt das Leck von dem Rohr hinter der Wand.",
+              "translation_ru": "Насколько я могу судить, протечка идёт от трубы за стеной."
+            },
+            {
+              "text": "Soweit ich das beurteilen kann, umfasst das Angebot die Wartung im ersten Jahr.",
+              "translation_ru": "Насколько я могу судить, предложение включает обслуживание на первый год."
+            },
+            {
+              "text": "Soweit ich das beurteilen kann, verschwindet der scheinbare Trend, sobald der Ausreißer entfernt wird.",
+              "translation_ru": "Насколько я могу судить, видимый тренд исчезает после удаления выброса."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Насколько я могу судить, …",
+      "title_en": "As far as I can tell, [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ003",
+      "set_id": "GFQ",
+      "pattern": "I may be wrong, but I think this requirement was added after the last review.",
+      "group_title": "I may be wrong, but [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I may be wrong, but [X]",
+        "form": "I may be wrong, but + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: возможно, я ошибаюсь, но …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I may be wrong, but + clause",
+          "example": "I may be wrong, but I think this requirement was added after the last review.",
+          "translation": "Возможно, я ошибаюсь, но думаю, что это требование добавили уже после последней проверки.",
+          "examples": [
+            {
+              "text": "I may be wrong, but this road looks closed farther ahead.",
+              "translation_ru": "Возможно, я ошибаюсь, но дальше эта дорога выглядит перекрытой."
+            },
+            {
+              "text": "I may be wrong, but the German version sounds more formal than the English one.",
+              "translation_ru": "Возможно, я ошибаюсь, но немецкая версия звучит формальнее английской."
+            },
+            {
+              "text": "I may be wrong, but the battery seems to drain faster after the update.",
+              "translation_ru": "Возможно, я ошибаюсь, но после обновления батарея, похоже, разряжается быстрее."
+            },
+            {
+              "text": "I may be wrong, but she was expecting a written confirmation.",
+              "translation_ru": "Возможно, я ошибаюсь, но она ожидала письменное подтверждение."
+            },
+            {
+              "text": "I may be wrong, but the experiment does not actually isolate the variable we care about.",
+              "translation_ru": "Возможно, я ошибаюсь, но эксперимент фактически не изолирует нужную нам переменную."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Vielleicht irre ich mich, aber + main clause",
+          "example": "Vielleicht irre ich mich, aber ich glaube, dass diese Anforderung erst nach der letzten Prüfung hinzugefügt wurde.",
+          "translation": "Возможно, я ошибаюсь, но думаю, что это требование добавили уже после последней проверки.",
+          "examples": [
+            {
+              "text": "Vielleicht irre ich mich, aber diese Straße scheint weiter vorne gesperrt zu sein.",
+              "translation_ru": "Возможно, я ошибаюсь, но дальше эта дорога выглядит перекрытой."
+            },
+            {
+              "text": "Vielleicht irre ich mich, aber die deutsche Version klingt formeller als die englische.",
+              "translation_ru": "Возможно, я ошибаюсь, но немецкая версия звучит формальнее английской."
+            },
+            {
+              "text": "Vielleicht irre ich mich, aber der Akku scheint sich seit dem Update schneller zu entladen.",
+              "translation_ru": "Возможно, я ошибаюсь, но после обновления батарея, похоже, разряжается быстрее."
+            },
+            {
+              "text": "Vielleicht irre ich mich, aber sie hat wohl mit einer schriftlichen Bestätigung gerechnet.",
+              "translation_ru": "Возможно, я ошибаюсь, но она ожидала письменное подтверждение."
+            },
+            {
+              "text": "Vielleicht irre ich mich, aber das Experiment isoliert die für uns relevante Variable nicht wirklich.",
+              "translation_ru": "Возможно, я ошибаюсь, но эксперимент фактически не изолирует нужную нам переменную."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможно, я ошибаюсь, но …",
+      "title_en": "I may be wrong, but [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ004",
+      "set_id": "GFQ",
+      "pattern": "I'm inclined to think that we should keep the first release deliberately small.",
+      "group_title": "I'm inclined to think that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I'm inclined to think that [X]",
+        "form": "I'm inclined to think that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я склоняюсь к мысли, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I'm inclined to think that + clause",
+          "example": "I'm inclined to think that we should keep the first release deliberately small.",
+          "translation": "Я склоняюсь к мысли, что первый релиз стоит намеренно сделать небольшим.",
+          "examples": [
+            {
+              "text": "I'm inclined to think that the older apartment has the better layout.",
+              "translation_ru": "Я склоняюсь к мысли, что у более старой квартиры планировка лучше."
+            },
+            {
+              "text": "I'm inclined to think that daily speaking practice matters more than occasional long sessions.",
+              "translation_ru": "Я склоняюсь к мысли, что ежедневная разговорная практика важнее редких длинных занятий."
+            },
+            {
+              "text": "I'm inclined to think that the error is triggered by a sequence of updates.",
+              "translation_ru": "Я склоняюсь к мысли, что ошибка вызывается последовательностью обновлений."
+            },
+            {
+              "text": "I'm inclined to think that we should take the early train and avoid the traffic.",
+              "translation_ru": "Я склоняюсь к мысли, что лучше сесть на ранний поезд и избежать пробок."
+            },
+            {
+              "text": "I'm inclined to think that the decline reflects a measurement change rather than weaker demand.",
+              "translation_ru": "Я склоняюсь к мысли, что спад отражает изменение измерения, а не ослабление спроса."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich neige zu der Ansicht, dass + subordinate clause",
+          "example": "Ich neige zu der Ansicht, dass wir die erste Version bewusst klein halten sollten.",
+          "translation": "Я склоняюсь к мысли, что первый релиз стоит намеренно сделать небольшим.",
+          "examples": [
+            {
+              "text": "Ich neige zu der Ansicht, dass die ältere Wohnung den besseren Grundriss hat.",
+              "translation_ru": "Я склоняюсь к мысли, что у более старой квартиры планировка лучше."
+            },
+            {
+              "text": "Ich neige zu der Ansicht, dass tägliche Sprechpraxis wichtiger ist als seltene lange Einheiten.",
+              "translation_ru": "Я склоняюсь к мысли, что ежедневная разговорная практика важнее редких длинных занятий."
+            },
+            {
+              "text": "Ich neige zu der Ansicht, dass der Fehler durch eine Folge von Aktualisierungen ausgelöst wird.",
+              "translation_ru": "Я склоняюсь к мысли, что ошибка вызывается последовательностью обновлений."
+            },
+            {
+              "text": "Ich neige zu der Ansicht, dass wir den frühen Zug nehmen und den Verkehr vermeiden sollten.",
+              "translation_ru": "Я склоняюсь к мысли, что лучше сесть на ранний поезд и избежать пробок."
+            },
+            {
+              "text": "Ich neige zu der Ansicht, dass der Rückgang eher eine Messänderung als eine schwächere Nachfrage widerspiegelt.",
+              "translation_ru": "Я склоняюсь к мысли, что спад отражает изменение измерения, а не ослабление спроса."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я склоняюсь к мысли, что …",
+      "title_en": "I'm inclined to think that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ005",
+      "set_id": "GFQ",
+      "pattern": "I wouldn't go so far as to say that the project has failed.",
+      "group_title": "I wouldn't go so far as to say that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I wouldn't go so far as to say that [X]",
+        "form": "I wouldn't go so far as to say that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я бы не стал утверждать, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I wouldn't go so far as to say that + clause",
+          "example": "I wouldn't go so far as to say that the project has failed.",
+          "translation": "Я бы не стал утверждать, что проект провалился.",
+          "examples": [
+            {
+              "text": "I wouldn't go so far as to say that the neighbourhood is unsafe.",
+              "translation_ru": "Я бы не стал утверждать, что этот район небезопасен."
+            },
+            {
+              "text": "I wouldn't go so far as to say that grammar explanations are unnecessary.",
+              "translation_ru": "Я бы не стал утверждать, что объяснения грамматики не нужны."
+            },
+            {
+              "text": "I wouldn't go so far as to say that the cheaper device is poor quality.",
+              "translation_ru": "Я бы не стал утверждать, что более дешёвое устройство плохого качества."
+            },
+            {
+              "text": "I wouldn't go so far as to say that the meeting was pointless.",
+              "translation_ru": "Я бы не стал утверждать, что встреча была бессмысленной."
+            },
+            {
+              "text": "I wouldn't go so far as to say that one correlation proves the mechanism.",
+              "translation_ru": "Я бы не стал утверждать, что одна корреляция доказывает механизм."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich würde nicht so weit gehen zu sagen, dass + subordinate clause",
+          "example": "Ich würde nicht so weit gehen zu sagen, dass das Projekt gescheitert ist.",
+          "translation": "Я бы не стал утверждать, что проект провалился.",
+          "examples": [
+            {
+              "text": "Ich würde nicht so weit gehen zu sagen, dass das Viertel unsicher ist.",
+              "translation_ru": "Я бы не стал утверждать, что этот район небезопасен."
+            },
+            {
+              "text": "Ich würde nicht so weit gehen zu sagen, dass Grammatikerklärungen unnötig sind.",
+              "translation_ru": "Я бы не стал утверждать, что объяснения грамматики не нужны."
+            },
+            {
+              "text": "Ich würde nicht so weit gehen zu sagen, dass das günstigere Gerät von schlechter Qualität ist.",
+              "translation_ru": "Я бы не стал утверждать, что более дешёвое устройство плохого качества."
+            },
+            {
+              "text": "Ich würde nicht so weit gehen zu sagen, dass die Besprechung sinnlos war.",
+              "translation_ru": "Я бы не стал утверждать, что встреча была бессмысленной."
+            },
+            {
+              "text": "Ich würde nicht so weit gehen zu sagen, dass eine einzige Korrelation den Mechanismus beweist.",
+              "translation_ru": "Я бы не стал утверждать, что одна корреляция доказывает механизм."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я бы не стал утверждать, что …",
+      "title_en": "I wouldn't go so far as to say that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ006",
+      "set_id": "GFQ",
+      "pattern": "I have some reservations about launching before the migration is fully rehearsed.",
+      "group_title": "I have some reservations about [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I have some reservations about [X]",
+        "form": "I have some reservations about + noun/-ing",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: у меня есть сомнения насчёт …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I have some reservations about + noun/-ing",
+          "example": "I have some reservations about launching before the migration is fully rehearsed.",
+          "translation": "У меня есть сомнения насчёт запуска до полной репетиции миграции.",
+          "examples": [
+            {
+              "text": "I have some reservations about buying a flat without seeing the building records.",
+              "translation_ru": "У меня есть сомнения насчёт покупки квартиры без просмотра документов по зданию."
+            },
+            {
+              "text": "I have some reservations about memorising phrases without producing your own examples.",
+              "translation_ru": "У меня есть сомнения насчёт запоминания фраз без составления собственных примеров."
+            },
+            {
+              "text": "I have some reservations about storing all backups in the same location.",
+              "translation_ru": "У меня есть сомнения насчёт хранения всех резервных копий в одном месте."
+            },
+            {
+              "text": "I have some reservations about committing to a non-refundable fare.",
+              "translation_ru": "У меня есть сомнения насчёт невозвратного тарифа."
+            },
+            {
+              "text": "I have some reservations about drawing conclusions from such a small sample.",
+              "translation_ru": "У меня есть сомнения насчёт выводов по такой маленькой выборке."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich habe gewisse Bedenken bei/gegenüber + noun/-ing",
+          "example": "Ich habe gewisse Bedenken dagegen, vor einer vollständigen Probe der Migration zu starten.",
+          "translation": "У меня есть сомнения насчёт запуска до полной репетиции миграции.",
+          "examples": [
+            {
+              "text": "Ich habe gewisse Bedenken dabei, eine Wohnung zu kaufen, ohne die Unterlagen des Gebäudes zu sehen.",
+              "translation_ru": "У меня есть сомнения насчёт покупки квартиры без просмотра документов по зданию."
+            },
+            {
+              "text": "Ich habe gewisse Bedenken dabei, Wendungen zu lernen, ohne eigene Beispiele zu bilden.",
+              "translation_ru": "У меня есть сомнения насчёт запоминания фраз без составления собственных примеров."
+            },
+            {
+              "text": "Ich habe gewisse Bedenken dabei, alle Sicherungen am selben Ort aufzubewahren.",
+              "translation_ru": "У меня есть сомнения насчёт хранения всех резервных копий в одном месте."
+            },
+            {
+              "text": "Ich habe gewisse Bedenken dabei, einen nicht erstattungsfähigen Tarif zu buchen.",
+              "translation_ru": "У меня есть сомнения насчёт невозвратного тарифа."
+            },
+            {
+              "text": "Ich habe gewisse Bedenken dabei, aus einer so kleinen Stichprobe Schlussfolgerungen zu ziehen.",
+              "translation_ru": "У меня есть сомнения насчёт выводов по такой маленькой выборке."
+            }
+          ]
+        }
+      ],
+      "title_ru": "У меня есть сомнения насчёт …",
+      "title_en": "I have some reservations about [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ007",
+      "set_id": "GFQ",
+      "pattern": "I can see why the team wants a quick fix, but the root cause will still be there.",
+      "group_title": "I can see why [X], but [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I can see why [X], but [Y]",
+        "form": "I can see why + clause, but + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я понимаю, почему …, но …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I can see why + clause, but + clause",
+          "example": "I can see why the team wants a quick fix, but the root cause will still be there.",
+          "translation": "Я понимаю, почему команда хочет быстрое исправление, но первопричина всё равно останется.",
+          "examples": [
+            {
+              "text": "I can see why the larger house is attractive, but the commute would be exhausting.",
+              "translation_ru": "Я понимаю, почему большой дом привлекателен, но дорога на работу будет утомительной."
+            },
+            {
+              "text": "I can see why you want to correct every mistake, but constant interruption can hurt fluency.",
+              "translation_ru": "Я понимаю, почему хочется исправлять каждую ошибку, но постоянные остановки могут мешать беглости."
+            },
+            {
+              "text": "I can see why the cheaper battery looks appealing, but its warranty is much shorter.",
+              "translation_ru": "Я понимаю, почему более дешёвая батарея кажется привлекательной, но гарантия у неё намного короче."
+            },
+            {
+              "text": "I can see why they chose a morning flight, but the connection is extremely tight.",
+              "translation_ru": "Я понимаю, почему они выбрали утренний рейс, но пересадка очень короткая."
+            },
+            {
+              "text": "I can see why the average increased, but that does not tell us whether typical users improved.",
+              "translation_ru": "Я понимаю, почему среднее выросло, но это не говорит, улучшился ли результат у типичных пользователей."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich verstehe, warum + subordinate clause, aber + main clause",
+          "example": "Ich verstehe, warum das Team eine schnelle Lösung will, aber die eigentliche Ursache bleibt bestehen.",
+          "translation": "Я понимаю, почему команда хочет быстрое исправление, но первопричина всё равно останется.",
+          "examples": [
+            {
+              "text": "Ich verstehe, warum das größere Haus attraktiv ist, aber der Arbeitsweg wäre anstrengend.",
+              "translation_ru": "Я понимаю, почему большой дом привлекателен, но дорога на работу будет утомительной."
+            },
+            {
+              "text": "Ich verstehe, warum du jeden Fehler korrigieren willst, aber ständige Unterbrechungen können die Sprechflüssigkeit beeinträchtigen.",
+              "translation_ru": "Я понимаю, почему хочется исправлять каждую ошибку, но постоянные остановки могут мешать беглости."
+            },
+            {
+              "text": "Ich verstehe, warum der günstigere Akku attraktiv wirkt, aber seine Garantie ist deutlich kürzer.",
+              "translation_ru": "Я понимаю, почему более дешёвая батарея кажется привлекательной, но гарантия у неё намного короче."
+            },
+            {
+              "text": "Ich verstehe, warum sie den Morgenflug gewählt haben, aber die Umsteigezeit ist extrem knapp.",
+              "translation_ru": "Я понимаю, почему они выбрали утренний рейс, но пересадка очень короткая."
+            },
+            {
+              "text": "Ich verstehe, warum der Durchschnitt gestiegen ist, aber daraus wissen wir nicht, ob sich typische Nutzer verbessert haben.",
+              "translation_ru": "Я понимаю, почему среднее выросло, но это не говорит, улучшился ли результат у типичных пользователей."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я понимаю, почему …, но …",
+      "title_en": "I can see why [X], but [Y]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ008",
+      "set_id": "GFQ",
+      "pattern": "Sales rose in August, but that doesn't necessarily mean that demand is accelerating.",
+      "group_title": "That doesn't necessarily mean that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "That doesn't necessarily mean that [X]",
+        "form": "That doesn't necessarily mean that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: это не обязательно означает, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "That doesn't necessarily mean that + clause",
+          "example": "Sales rose in August, but that doesn't necessarily mean that demand is accelerating.",
+          "translation": "Продажи выросли в августе, но это не обязательно означает, что спрос ускоряется.",
+          "examples": [
+            {
+              "text": "The room feels cold, but that doesn't necessarily mean that the heating is broken.",
+              "translation_ru": "В комнате холодно, но это не обязательно означает, что отопление сломано."
+            },
+            {
+              "text": "You recognised the phrase, but that doesn't necessarily mean that you can use it spontaneously.",
+              "translation_ru": "Вы узнали фразу, но это не обязательно означает, что сможете спонтанно её использовать."
+            },
+            {
+              "text": "The app opened faster once, but that doesn't necessarily mean that the optimisation worked.",
+              "translation_ru": "Приложение один раз открылось быстрее, но это не обязательно означает, что оптимизация сработала."
+            },
+            {
+              "text": "The train is listed as on time, but that doesn't necessarily mean that the connection is safe.",
+              "translation_ru": "Поезд указан как идущий вовремя, но это не обязательно означает, что пересадка надёжна."
+            },
+            {
+              "text": "Two variables move together, but that doesn't necessarily mean that one causes the other.",
+              "translation_ru": "Две переменные меняются вместе, но это не обязательно означает, что одна вызывает другую."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das bedeutet nicht unbedingt, dass + subordinate clause",
+          "example": "Die Verkäufe stiegen im August, aber das bedeutet nicht unbedingt, dass die Nachfrage zunimmt.",
+          "translation": "Продажи выросли в августе, но это не обязательно означает, что спрос ускоряется.",
+          "examples": [
+            {
+              "text": "Der Raum fühlt sich kalt an, aber das bedeutet nicht unbedingt, dass die Heizung kaputt ist.",
+              "translation_ru": "В комнате холодно, но это не обязательно означает, что отопление сломано."
+            },
+            {
+              "text": "Du hast die Wendung erkannt, aber das bedeutet nicht unbedingt, dass du sie spontan verwenden kannst.",
+              "translation_ru": "Вы узнали фразу, но это не обязательно означает, что сможете спонтанно её использовать."
+            },
+            {
+              "text": "Die App startete einmal schneller, aber das bedeutet nicht unbedingt, dass die Optimierung funktioniert hat.",
+              "translation_ru": "Приложение один раз открылось быстрее, но это не обязательно означает, что оптимизация сработала."
+            },
+            {
+              "text": "Der Zug wird als pünktlich angezeigt, aber das bedeutet nicht unbedingt, dass der Anschluss sicher ist.",
+              "translation_ru": "Поезд указан как идущий вовремя, но это не обязательно означает, что пересадка надёжна."
+            },
+            {
+              "text": "Zwei Variablen bewegen sich gemeinsam, aber das bedeutet nicht unbedingt, dass die eine die andere verursacht.",
+              "translation_ru": "Две переменные меняются вместе, но это не обязательно означает, что одна вызывает другую."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Это не обязательно означает, что …",
+      "title_en": "That doesn't necessarily mean that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ009",
+      "set_id": "GFQ",
+      "pattern": "There is a case to be made for postponing the release until the rollback is tested.",
+      "group_title": "There is a case to be made for [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "There is a case to be made for [X]",
+        "form": "There is a case to be made for + noun/-ing",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: есть аргументы в пользу того, чтобы …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is a case to be made for + noun/-ing",
+          "example": "There is a case to be made for postponing the release until the rollback is tested.",
+          "translation": "Есть аргументы в пользу того, чтобы отложить релиз до проверки отката.",
+          "examples": [
+            {
+              "text": "There is a case to be made for renting for another year before buying.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы ещё год арендовать жильё перед покупкой."
+            },
+            {
+              "text": "There is a case to be made for practising fewer patterns more deeply.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы практиковать меньше паттернов, но глубже."
+            },
+            {
+              "text": "There is a case to be made for replacing the battery instead of the entire device.",
+              "translation_ru": "Есть аргументы в пользу замены батареи вместо всего устройства."
+            },
+            {
+              "text": "There is a case to be made for travelling a day earlier during peak season.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы в высокий сезон ехать на день раньше."
+            },
+            {
+              "text": "There is a case to be made for reporting the median alongside the average.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы указывать медиану вместе со средним значением."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es spricht einiges dafür, + zu-infinitive / noun",
+          "example": "Es spricht einiges dafür, die Veröffentlichung zu verschieben, bis der Rollback getestet ist.",
+          "translation": "Есть аргументы в пользу того, чтобы отложить релиз до проверки отката.",
+          "examples": [
+            {
+              "text": "Es spricht einiges dafür, noch ein Jahr zu mieten, bevor man kauft.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы ещё год арендовать жильё перед покупкой."
+            },
+            {
+              "text": "Es spricht einiges dafür, weniger Muster dafür gründlicher zu üben.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы практиковать меньше паттернов, но глубже."
+            },
+            {
+              "text": "Es spricht einiges dafür, nur den Akku statt des ganzen Geräts zu ersetzen.",
+              "translation_ru": "Есть аргументы в пользу замены батареи вместо всего устройства."
+            },
+            {
+              "text": "Es spricht einiges dafür, in der Hauptsaison einen Tag früher zu reisen.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы в высокий сезон ехать на день раньше."
+            },
+            {
+              "text": "Es spricht einiges dafür, den Median zusammen mit dem Durchschnitt anzugeben.",
+              "translation_ru": "Есть аргументы в пользу того, чтобы указывать медиану вместе со средним значением."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Есть аргументы в пользу того, чтобы …",
+      "title_en": "There is a case to be made for [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ010",
+      "set_id": "GFQ",
+      "pattern": "One could argue that the simplest workflow is also the easiest to maintain.",
+      "group_title": "One could argue that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "One could argue that [X]",
+        "form": "One could argue that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: можно утверждать, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "One could argue that + clause",
+          "example": "One could argue that the simplest workflow is also the easiest to maintain.",
+          "translation": "Можно утверждать, что самый простой процесс легче всего поддерживать.",
+          "examples": [
+            {
+              "text": "One could argue that a longer commute is acceptable for a much better neighbourhood.",
+              "translation_ru": "Можно утверждать, что более долгая дорога приемлема ради значительно лучшего района."
+            },
+            {
+              "text": "One could argue that speaking early matters more than waiting for perfect grammar.",
+              "translation_ru": "Можно утверждать, что начинать говорить рано важнее, чем ждать идеальной грамматики."
+            },
+            {
+              "text": "One could argue that repairability should matter as much as performance.",
+              "translation_ru": "Можно утверждать, что ремонтопригодность должна быть не менее важна, чем производительность."
+            },
+            {
+              "text": "One could argue that direct trains are worth a modest premium.",
+              "translation_ru": "Можно утверждать, что за прямой поезд стоит немного переплатить."
+            },
+            {
+              "text": "One could argue that a stable metric is more useful than a fashionable one.",
+              "translation_ru": "Можно утверждать, что стабильная метрика полезнее модной."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Man könnte argumentieren, dass + subordinate clause",
+          "example": "Man könnte argumentieren, dass der einfachste Arbeitsablauf auch am leichtesten zu pflegen ist.",
+          "translation": "Можно утверждать, что самый простой процесс легче всего поддерживать.",
+          "examples": [
+            {
+              "text": "Man könnte argumentieren, dass ein längerer Arbeitsweg für ein deutlich besseres Wohnviertel vertretbar ist.",
+              "translation_ru": "Можно утверждать, что более долгая дорога приемлема ради значительно лучшего района."
+            },
+            {
+              "text": "Man könnte argumentieren, dass frühes Sprechen wichtiger ist, als auf perfekte Grammatik zu warten.",
+              "translation_ru": "Можно утверждать, что начинать говорить рано важнее, чем ждать идеальной грамматики."
+            },
+            {
+              "text": "Man könnte argumentieren, dass Reparierbarkeit genauso wichtig sein sollte wie Leistung.",
+              "translation_ru": "Можно утверждать, что ремонтопригодность должна быть не менее важна, чем производительность."
+            },
+            {
+              "text": "Man könnte argumentieren, dass Direktzüge einen moderaten Aufpreis wert sind.",
+              "translation_ru": "Можно утверждать, что за прямой поезд стоит немного переплатить."
+            },
+            {
+              "text": "Man könnte argumentieren, dass eine stabile Kennzahl nützlicher ist als eine modische.",
+              "translation_ru": "Можно утверждать, что стабильная метрика полезнее модной."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Можно утверждать, что …",
+      "title_en": "One could argue that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ011",
+      "set_id": "GFQ",
+      "pattern": "I'm not entirely convinced that adding another approval step will reduce risk.",
+      "group_title": "I'm not entirely convinced that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I'm not entirely convinced that [X]",
+        "form": "I'm not entirely convinced that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я не до конца убеждён(а), что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I'm not entirely convinced that + clause",
+          "example": "I'm not entirely convinced that adding another approval step will reduce risk.",
+          "translation": "Я не до конца убеждён, что ещё один этап согласования снизит риск.",
+          "examples": [
+            {
+              "text": "I'm not entirely convinced that the newer building is better insulated.",
+              "translation_ru": "Я не до конца убеждён, что новое здание лучше утеплено."
+            },
+            {
+              "text": "I'm not entirely convinced that passive listening is enough to build speaking fluency.",
+              "translation_ru": "Я не до конца убеждён, что пассивного слушания достаточно для развития беглой речи."
+            },
+            {
+              "text": "I'm not entirely convinced that the premium cable will make a noticeable difference.",
+              "translation_ru": "Я не до конца убеждён, что дорогой кабель даст заметную разницу."
+            },
+            {
+              "text": "I'm not entirely convinced that the shortest route is the fastest at this hour.",
+              "translation_ru": "Я не до конца убеждён, что кратчайший маршрут сейчас самый быстрый."
+            },
+            {
+              "text": "I'm not entirely convinced that the observed effect survives a different sampling method.",
+              "translation_ru": "Я не до конца убеждён, что наблюдаемый эффект сохранится при другом способе выборки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich bin nicht völlig davon überzeugt, dass + subordinate clause",
+          "example": "Ich bin nicht völlig davon überzeugt, dass ein weiterer Genehmigungsschritt das Risiko verringern wird.",
+          "translation": "Я не до конца убеждён, что ещё один этап согласования снизит риск.",
+          "examples": [
+            {
+              "text": "Ich bin nicht völlig davon überzeugt, dass das neuere Gebäude besser gedämmt ist.",
+              "translation_ru": "Я не до конца убеждён, что новое здание лучше утеплено."
+            },
+            {
+              "text": "Ich bin nicht völlig davon überzeugt, dass passives Hören ausreicht, um Sprechflüssigkeit aufzubauen.",
+              "translation_ru": "Я не до конца убеждён, что пассивного слушания достаточно для развития беглой речи."
+            },
+            {
+              "text": "Ich bin nicht völlig davon überzeugt, dass das teure Kabel einen spürbaren Unterschied machen wird.",
+              "translation_ru": "Я не до конца убеждён, что дорогой кабель даст заметную разницу."
+            },
+            {
+              "text": "Ich bin nicht völlig davon überzeugt, dass die kürzeste Strecke um diese Uhrzeit die schnellste ist.",
+              "translation_ru": "Я не до конца убеждён, что кратчайший маршрут сейчас самый быстрый."
+            },
+            {
+              "text": "Ich bin nicht völlig davon überzeugt, dass der beobachtete Effekt bei einer anderen Stichprobenmethode bestehen bleibt.",
+              "translation_ru": "Я не до конца убеждён, что наблюдаемый эффект сохранится при другом способе выборки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я не до конца убеждён(а), что …",
+      "title_en": "I'm not entirely convinced that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ012",
+      "set_id": "GFQ",
+      "pattern": "It would be reasonable to assume that the vendor needs time to reproduce the issue.",
+      "group_title": "It would be reasonable to assume that [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "It would be reasonable to assume that [X]",
+        "form": "It would be reasonable to assume that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: разумно предположить, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It would be reasonable to assume that + clause",
+          "example": "It would be reasonable to assume that the vendor needs time to reproduce the issue.",
+          "translation": "Разумно предположить, что поставщику нужно время, чтобы воспроизвести проблему.",
+          "examples": [
+            {
+              "text": "It would be reasonable to assume that heating costs will be higher in the corner flat.",
+              "translation_ru": "Разумно предположить, что расходы на отопление в угловой квартире будут выше."
+            },
+            {
+              "text": "It would be reasonable to assume that frequent retrieval improves access to common phrases.",
+              "translation_ru": "Разумно предположить, что частое воспроизведение улучшает доступ к распространённым фразам."
+            },
+            {
+              "text": "It would be reasonable to assume that a larger battery adds some weight.",
+              "translation_ru": "Разумно предположить, что более крупная батарея добавит немного веса."
+            },
+            {
+              "text": "It would be reasonable to assume that the museum is busier on a rainy weekend.",
+              "translation_ru": "Разумно предположить, что в дождливые выходные музей будет более загружен."
+            },
+            {
+              "text": "It would be reasonable to assume that a policy change affects the series from that date onward.",
+              "translation_ru": "Разумно предположить, что изменение политики влияет на ряд начиная с этой даты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es wäre vernünftig anzunehmen, dass + subordinate clause",
+          "example": "Es wäre vernünftig anzunehmen, dass der Anbieter Zeit braucht, um das Problem nachzustellen.",
+          "translation": "Разумно предположить, что поставщику нужно время, чтобы воспроизвести проблему.",
+          "examples": [
+            {
+              "text": "Es wäre vernünftig anzunehmen, dass die Heizkosten in der Eckwohnung höher sein werden.",
+              "translation_ru": "Разумно предположить, что расходы на отопление в угловой квартире будут выше."
+            },
+            {
+              "text": "Es wäre vernünftig anzunehmen, dass häufiges Abrufen den Zugriff auf gängige Wendungen verbessert.",
+              "translation_ru": "Разумно предположить, что частое воспроизведение улучшает доступ к распространённым фразам."
+            },
+            {
+              "text": "Es wäre vernünftig anzunehmen, dass ein größerer Akku etwas zusätzliches Gewicht mit sich bringt.",
+              "translation_ru": "Разумно предположить, что более крупная батарея добавит немного веса."
+            },
+            {
+              "text": "Es wäre vernünftig anzunehmen, dass das Museum an einem regnerischen Wochenende voller ist.",
+              "translation_ru": "Разумно предположить, что в дождливые выходные музей будет более загружен."
+            },
+            {
+              "text": "Es wäre vernünftig anzunehmen, dass eine Richtlinienänderung die Zeitreihe ab diesem Datum beeinflusst.",
+              "translation_ru": "Разумно предположить, что изменение политики влияет на ряд начиная с этой даты."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Разумно предположить, что …",
+      "title_en": "It would be reasonable to assume that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ013",
+      "set_id": "GFQ",
+      "pattern": "There is little reason to believe that the incident will resolve itself.",
+      "group_title": "There is little reason to believe that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "There is little reason to believe that [X]",
+        "form": "There is little reason to believe that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: мало оснований считать, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There is little reason to believe that + clause",
+          "example": "There is little reason to believe that the incident will resolve itself.",
+          "translation": "Мало оснований считать, что инцидент разрешится сам собой.",
+          "examples": [
+            {
+              "text": "There is little reason to believe that rent will fall sharply next month.",
+              "translation_ru": "Мало оснований считать, что аренда резко подешевеет в следующем месяце."
+            },
+            {
+              "text": "There is little reason to believe that memorising rare words first will improve everyday fluency.",
+              "translation_ru": "Мало оснований считать, что запоминание редких слов в первую очередь улучшит повседневную беглость."
+            },
+            {
+              "text": "There is little reason to believe that replacing the charger will fix a damaged battery.",
+              "translation_ru": "Мало оснований считать, что замена зарядки исправит повреждённую батарею."
+            },
+            {
+              "text": "There is little reason to believe that the queue will disappear before lunch.",
+              "translation_ru": "Мало оснований считать, что очередь исчезнет до обеда."
+            },
+            {
+              "text": "There is little reason to believe that the estimate is precise to the last decimal place.",
+              "translation_ru": "Мало оснований считать, что оценка точна до последнего знака после запятой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es gibt wenig Grund zu der Annahme, dass + subordinate clause",
+          "example": "Es gibt wenig Grund zu der Annahme, dass sich der Vorfall von selbst erledigt.",
+          "translation": "Мало оснований считать, что инцидент разрешится сам собой.",
+          "examples": [
+            {
+              "text": "Es gibt wenig Grund zu der Annahme, dass die Mieten im nächsten Monat stark fallen.",
+              "translation_ru": "Мало оснований считать, что аренда резко подешевеет в следующем месяце."
+            },
+            {
+              "text": "Es gibt wenig Grund zu der Annahme, dass das frühe Lernen seltener Wörter die Alltagssprache verbessert.",
+              "translation_ru": "Мало оснований считать, что запоминание редких слов в первую очередь улучшит повседневную беглость."
+            },
+            {
+              "text": "Es gibt wenig Grund zu der Annahme, dass ein neues Ladegerät einen beschädigten Akku repariert.",
+              "translation_ru": "Мало оснований считать, что замена зарядки исправит повреждённую батарею."
+            },
+            {
+              "text": "Es gibt wenig Grund zu der Annahme, dass die Warteschlange vor Mittag verschwindet.",
+              "translation_ru": "Мало оснований считать, что очередь исчезнет до обеда."
+            },
+            {
+              "text": "Es gibt wenig Grund zu der Annahme, dass die Schätzung bis zur letzten Dezimalstelle genau ist.",
+              "translation_ru": "Мало оснований считать, что оценка точна до последнего знака после запятой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мало оснований считать, что …",
+      "title_en": "There is little reason to believe that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ014",
+      "set_id": "GFQ",
+      "pattern": "At first glance, the dashboard looks simpler, but several controls are now harder to find.",
+      "group_title": "At first glance, [X], but [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "At first glance, [X], but [Y]",
+        "form": "At first glance, + clause, but + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: на первый взгляд …, но …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "At first glance, + clause, but + clause",
+          "example": "At first glance, the dashboard looks simpler, but several controls are now harder to find.",
+          "translation": "На первый взгляд панель выглядит проще, но несколько элементов управления теперь труднее найти.",
+          "examples": [
+            {
+              "text": "At first glance, the smaller flat seems expensive, but utilities are included.",
+              "translation_ru": "На первый взгляд маленькая квартира кажется дорогой, но коммунальные расходы включены."
+            },
+            {
+              "text": "At first glance, the sentence looks easy, but the word order changes the emphasis.",
+              "translation_ru": "На первый взгляд предложение кажется простым, но порядок слов меняет акцент."
+            },
+            {
+              "text": "At first glance, the old monitor seems outdated, but its text rendering is excellent.",
+              "translation_ru": "На первый взгляд старый монитор кажется устаревшим, но текст на нём отображается отлично."
+            },
+            {
+              "text": "At first glance, the direct flight is pricier, but it avoids an overnight connection.",
+              "translation_ru": "На первый взгляд прямой рейс дороже, но он избавляет от ночной пересадки."
+            },
+            {
+              "text": "At first glance, the average looks stable, but the distribution has changed substantially.",
+              "translation_ru": "На первый взгляд среднее стабильно, но распределение существенно изменилось."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Auf den ersten Blick + main clause, aber + main clause",
+          "example": "Auf den ersten Blick wirkt das Dashboard einfacher, aber mehrere Bedienelemente sind jetzt schwerer zu finden.",
+          "translation": "На первый взгляд панель выглядит проще, но несколько элементов управления теперь труднее найти.",
+          "examples": [
+            {
+              "text": "Auf den ersten Blick wirkt die kleinere Wohnung teuer, aber die Nebenkosten sind enthalten.",
+              "translation_ru": "На первый взгляд маленькая квартира кажется дорогой, но коммунальные расходы включены."
+            },
+            {
+              "text": "Auf den ersten Blick wirkt der Satz einfach, aber die Wortstellung verändert die Betonung.",
+              "translation_ru": "На первый взгляд предложение кажется простым, но порядок слов меняет акцент."
+            },
+            {
+              "text": "Auf den ersten Blick wirkt der alte Monitor veraltet, aber seine Textdarstellung ist hervorragend.",
+              "translation_ru": "На первый взгляд старый монитор кажется устаревшим, но текст на нём отображается отлично."
+            },
+            {
+              "text": "Auf den ersten Blick ist der Direktflug teurer, aber er vermeidet einen nächtlichen Umstieg.",
+              "translation_ru": "На первый взгляд прямой рейс дороже, но он избавляет от ночной пересадки."
+            },
+            {
+              "text": "Auf den ersten Blick wirkt der Durchschnitt stabil, aber die Verteilung hat sich deutlich verändert.",
+              "translation_ru": "На первый взгляд среднее стабильно, но распределение существенно изменилось."
+            }
+          ]
+        }
+      ],
+      "title_ru": "На первый взгляд …, но …",
+      "title_en": "At first glance, [X], but [Y]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ015",
+      "set_id": "GFQ",
+      "pattern": "The new rule has not simplified the process; if anything, it has added another decision point.",
+      "group_title": "If anything, [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "If anything, [X]",
+        "form": "If anything, + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: если уж на то пошло, …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "If anything, + clause",
+          "example": "The new rule has not simplified the process; if anything, it has added another decision point.",
+          "translation": "Новое правило не упростило процесс; если уж на то пошло, оно добавило ещё одну точку принятия решения.",
+          "examples": [
+            {
+              "text": "The neighbourhood did not feel less lively in winter; if anything, the cafés were busier.",
+              "translation_ru": "Район зимой не казался менее оживлённым; если уж на то пошло, кафе были ещё более заполнены."
+            },
+            {
+              "text": "Speaking slowly did not make her sound less confident; if anything, it made her clearer.",
+              "translation_ru": "Медленная речь не сделала её менее уверенной; если уж на то пошло, она стала понятнее."
+            },
+            {
+              "text": "The software update did not reduce battery use; if anything, consumption increased slightly.",
+              "translation_ru": "Обновление не снизило расход батареи; если уж на то пошло, он немного вырос."
+            },
+            {
+              "text": "The detour did not save time; if anything, it made the journey more stressful.",
+              "translation_ru": "Объезд не сэкономил время; если уж на то пошло, поездка стала более напряжённой."
+            },
+            {
+              "text": "The extra data did not strengthen the conclusion; if anything, they exposed more uncertainty.",
+              "translation_ru": "Дополнительные данные не усилили вывод; если уж на то пошло, они показали больше неопределённости."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wenn überhaupt, dann + main clause / Eher + main clause",
+          "example": "Die neue Regel hat den Prozess nicht vereinfacht; wenn überhaupt, hat sie einen weiteren Entscheidungspunkt geschaffen.",
+          "translation": "Новое правило не упростило процесс; если уж на то пошло, оно добавило ещё одну точку принятия решения.",
+          "examples": [
+            {
+              "text": "Das Viertel wirkte im Winter nicht weniger lebendig; eher waren die Cafés sogar voller.",
+              "translation_ru": "Район зимой не казался менее оживлённым; если уж на то пошло, кафе были ещё более заполнены."
+            },
+            {
+              "text": "Langsamer zu sprechen ließ sie nicht weniger selbstbewusst wirken; eher wurde sie dadurch klarer.",
+              "translation_ru": "Медленная речь не сделала её менее уверенной; если уж на то пошло, она стала понятнее."
+            },
+            {
+              "text": "Das Softwareupdate hat den Akkuverbrauch nicht gesenkt; wenn überhaupt, ist er leicht gestiegen.",
+              "translation_ru": "Обновление не снизило расход батареи; если уж на то пошло, он немного вырос."
+            },
+            {
+              "text": "Die Umleitung hat keine Zeit gespart; eher hat sie die Fahrt stressiger gemacht.",
+              "translation_ru": "Объезд не сэкономил время; если уж на то пошло, поездка стала более напряжённой."
+            },
+            {
+              "text": "Die zusätzlichen Daten haben die Schlussfolgerung nicht gestärkt; eher haben sie mehr Unsicherheit sichtbar gemacht.",
+              "translation_ru": "Дополнительные данные не усилили вывод; если уж на то пошло, они показали больше неопределённости."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Если уж на то пошло, …",
+      "title_en": "If anything, [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ016",
+      "set_id": "GFQ",
+      "pattern": "The service is technically available but practically unusable. To put it another way, uptime alone is not enough.",
+      "group_title": "To put it another way, [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "To put it another way, [X]",
+        "form": "To put it another way, + restatement",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: иными словами, …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "To put it another way, + restatement",
+          "example": "The service is technically available but practically unusable. To put it another way, uptime alone is not enough.",
+          "translation": "Сервис технически доступен, но практически непригоден. Иными словами, одного аптайма недостаточно.",
+          "examples": [
+            {
+              "text": "The cheaper flat needs major renovation. To put it another way, the low price shifts costs into the future.",
+              "translation_ru": "Более дешёвая квартира требует серьёзного ремонта. Иными словами, низкая цена переносит расходы в будущее."
+            },
+            {
+              "text": "You can recognise the pattern but cannot produce it quickly. To put it another way, recognition has not become active skill yet.",
+              "translation_ru": "Вы узнаёте паттерн, но не можете быстро его воспроизвести. Иными словами, узнавание ещё не стало активным навыком."
+            },
+            {
+              "text": "The device is fast but difficult to repair. To put it another way, performance comes with a maintenance trade-off.",
+              "translation_ru": "Устройство быстрое, но его трудно ремонтировать. Иными словами, производительность требует компромисса в обслуживании."
+            },
+            {
+              "text": "The connection is legal but risky. To put it another way, a five-minute transfer leaves almost no margin.",
+              "translation_ru": "Пересадка возможна, но рискованна. Иными словами, пять минут почти не оставляют запаса."
+            },
+            {
+              "text": "The model is accurate on average but unstable across groups. To put it another way, aggregate performance hides uneven reliability.",
+              "translation_ru": "Модель в среднем точна, но нестабильна по группам. Иными словами, агрегированный результат скрывает неодинаковую надёжность."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Anders ausgedrückt, + restatement",
+          "example": "Der Dienst ist technisch verfügbar, praktisch aber kaum nutzbar. Anders ausgedrückt, Verfügbarkeit allein reicht nicht aus.",
+          "translation": "Сервис технически доступен, но практически непригоден. Иными словами, одного аптайма недостаточно.",
+          "examples": [
+            {
+              "text": "Die günstigere Wohnung muss umfassend renoviert werden. Anders ausgedrückt, der niedrige Preis verschiebt Kosten in die Zukunft.",
+              "translation_ru": "Более дешёвая квартира требует серьёзного ремонта. Иными словами, низкая цена переносит расходы в будущее."
+            },
+            {
+              "text": "Du erkennst das Muster, kannst es aber nicht schnell bilden. Anders ausgedrückt, Erkennen ist noch keine aktive Fertigkeit.",
+              "translation_ru": "Вы узнаёте паттерн, но не можете быстро его воспроизвести. Иными словами, узнавание ещё не стало активным навыком."
+            },
+            {
+              "text": "Das Gerät ist schnell, aber schwer zu reparieren. Anders ausgedrückt, die Leistung geht mit einem Wartungskompromiss einher.",
+              "translation_ru": "Устройство быстрое, но его трудно ремонтировать. Иными словами, производительность требует компромисса в обслуживании."
+            },
+            {
+              "text": "Die Verbindung ist möglich, aber riskant. Anders ausgedrückt, fünf Minuten Umsteigezeit lassen kaum Spielraum.",
+              "translation_ru": "Пересадка возможна, но рискованна. Иными словами, пять минут почти не оставляют запаса."
+            },
+            {
+              "text": "Das Modell ist im Durchschnitt genau, aber zwischen Gruppen instabil. Anders ausgedrückt, die Gesamtleistung verdeckt ungleichmäßige Zuverlässigkeit.",
+              "translation_ru": "Модель в среднем точна, но нестабильна по группам. Иными словами, агрегированный результат скрывает неодинаковую надёжность."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Иными словами, …",
+      "title_en": "To put it another way, [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ017",
+      "set_id": "GFQ",
+      "pattern": "What I find difficult to accept is that the same defect was closed without a root-cause analysis.",
+      "group_title": "What I find difficult to accept is [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "What I find difficult to accept is [X]",
+        "form": "What I find difficult to accept is + noun/clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: мне трудно принять то, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What I find difficult to accept is + noun/clause",
+          "example": "What I find difficult to accept is that the same defect was closed without a root-cause analysis.",
+          "translation": "Мне трудно принять то, что тот же дефект закрыли без анализа первопричины.",
+          "examples": [
+            {
+              "text": "What I find difficult to accept is paying more for a smaller flat with no storage.",
+              "translation_ru": "Мне трудно принять необходимость платить больше за меньшую квартиру без места для хранения."
+            },
+            {
+              "text": "What I find difficult to accept is treating every accent difference as a mistake.",
+              "translation_ru": "Мне трудно принять подход, при котором каждое различие в акценте считается ошибкой."
+            },
+            {
+              "text": "What I find difficult to accept is replacing a working device because one part cannot be repaired.",
+              "translation_ru": "Мне трудно принять замену работающего устройства из-за одной неремонтируемой детали."
+            },
+            {
+              "text": "What I find difficult to accept is charging a cancellation fee when the train itself was cancelled.",
+              "translation_ru": "Мне трудно принять комиссию за отмену, когда сам поезд был отменён."
+            },
+            {
+              "text": "What I find difficult to accept is presenting a wide confidence interval as a precise forecast.",
+              "translation_ru": "Мне трудно принять подачу широкого доверительного интервала как точного прогноза."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was ich schwer akzeptieren kann, ist + noun/clause",
+          "example": "Was ich schwer akzeptieren kann, ist, dass derselbe Fehler ohne Ursachenanalyse geschlossen wurde.",
+          "translation": "Мне трудно принять то, что тот же дефект закрыли без анализа первопричины.",
+          "examples": [
+            {
+              "text": "Was ich schwer akzeptieren kann, ist, mehr für eine kleinere Wohnung ohne Stauraum zu zahlen.",
+              "translation_ru": "Мне трудно принять необходимость платить больше за меньшую квартиру без места для хранения."
+            },
+            {
+              "text": "Was ich schwer akzeptieren kann, ist, jeden Akzentunterschied als Fehler zu behandeln.",
+              "translation_ru": "Мне трудно принять подход, при котором каждое различие в акценте считается ошибкой."
+            },
+            {
+              "text": "Was ich schwer akzeptieren kann, ist, ein funktionierendes Gerät zu ersetzen, weil ein Teil nicht repariert werden kann.",
+              "translation_ru": "Мне трудно принять замену работающего устройства из-за одной неремонтируемой детали."
+            },
+            {
+              "text": "Was ich schwer akzeptieren kann, ist eine Stornogebühr, obwohl der Zug selbst ausgefallen ist.",
+              "translation_ru": "Мне трудно принять комиссию за отмену, когда сам поезд был отменён."
+            },
+            {
+              "text": "Was ich schwer akzeptieren kann, ist, ein breites Konfidenzintervall als präzise Prognose darzustellen.",
+              "translation_ru": "Мне трудно принять подачу широкого доверительного интервала как точного прогноза."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мне трудно принять то, что …",
+      "title_en": "What I find difficult to accept is [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ018",
+      "set_id": "GFQ",
+      "pattern": "I'm open to the possibility that the current design needs a more radical simplification.",
+      "group_title": "I'm open to the possibility that [X]",
+      "level": "C1",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I'm open to the possibility that [X]",
+        "form": "I'm open to the possibility that + clause",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я допускаю возможность, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I'm open to the possibility that + clause",
+          "example": "I'm open to the possibility that the current design needs a more radical simplification.",
+          "translation": "Я допускаю возможность, что текущий дизайн нужно упростить гораздо сильнее.",
+          "examples": [
+            {
+              "text": "I'm open to the possibility that a different neighbourhood would suit us better.",
+              "translation_ru": "Я допускаю возможность, что другой район подошёл бы нам лучше."
+            },
+            {
+              "text": "I'm open to the possibility that writing first helps some learners speak more accurately.",
+              "translation_ru": "Я допускаю возможность, что предварительное письмо помогает некоторым учащимся говорить точнее."
+            },
+            {
+              "text": "I'm open to the possibility that the noise is caused by the power supply rather than the fan.",
+              "translation_ru": "Я допускаю возможность, что шум идёт от блока питания, а не от вентилятора."
+            },
+            {
+              "text": "I'm open to the possibility that travelling off-season is worth the less predictable weather.",
+              "translation_ru": "Я допускаю возможность, что поездки вне сезона стоят менее предсказуемой погоды."
+            },
+            {
+              "text": "I'm open to the possibility that our original hypothesis was framed too narrowly.",
+              "translation_ru": "Я допускаю возможность, что наша исходная гипотеза была сформулирована слишком узко."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich schließe die Möglichkeit nicht aus, dass + subordinate clause",
+          "example": "Ich schließe die Möglichkeit nicht aus, dass das aktuelle Design stärker vereinfacht werden muss.",
+          "translation": "Я допускаю возможность, что текущий дизайн нужно упростить гораздо сильнее.",
+          "examples": [
+            {
+              "text": "Ich schließe die Möglichkeit nicht aus, dass ein anderes Viertel besser zu uns passen würde.",
+              "translation_ru": "Я допускаю возможность, что другой район подошёл бы нам лучше."
+            },
+            {
+              "text": "Ich schließe die Möglichkeit nicht aus, dass vorheriges Schreiben manchen Lernenden hilft, genauer zu sprechen.",
+              "translation_ru": "Я допускаю возможность, что предварительное письмо помогает некоторым учащимся говорить точнее."
+            },
+            {
+              "text": "Ich schließe die Möglichkeit nicht aus, dass das Geräusch vom Netzteil und nicht vom Lüfter kommt.",
+              "translation_ru": "Я допускаю возможность, что шум идёт от блока питания, а не от вентилятора."
+            },
+            {
+              "text": "Ich schließe die Möglichkeit nicht aus, dass Reisen außerhalb der Saison das unbeständigere Wetter wert sind.",
+              "translation_ru": "Я допускаю возможность, что поездки вне сезона стоят менее предсказуемой погоды."
+            },
+            {
+              "text": "Ich schließe die Möglichkeit nicht aus, dass unsere ursprüngliche Hypothese zu eng formuliert war.",
+              "translation_ru": "Я допускаю возможность, что наша исходная гипотеза была сформулирована слишком узко."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я допускаю возможность, что …",
+      "title_en": "I'm open to the possibility that [X]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ019",
+      "set_id": "GFQ",
+      "pattern": "The evidence points to a configuration issue rather than a software defect.",
+      "group_title": "The evidence points to [X] rather than [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "The evidence points to [X] rather than [Y]",
+        "form": "The evidence points to + noun + rather than + noun",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: данные указывают скорее на …, чем на …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The evidence points to + noun + rather than + noun",
+          "example": "The evidence points to a configuration issue rather than a software defect.",
+          "translation": "Данные указывают скорее на проблему конфигурации, чем на дефект программы.",
+          "examples": [
+            {
+              "text": "The evidence points to poor insulation rather than an undersized heater.",
+              "translation_ru": "Данные указывают скорее на плохую теплоизоляцию, чем на недостаточную мощность отопления."
+            },
+            {
+              "text": "The evidence points to lack of retrieval practice rather than lack of exposure.",
+              "translation_ru": "Данные указывают скорее на нехватку практики воспроизведения, чем на нехватку контакта с языком."
+            },
+            {
+              "text": "The evidence points to a worn battery rather than a faulty charger.",
+              "translation_ru": "Данные указывают скорее на изношенную батарею, чем на неисправную зарядку."
+            },
+            {
+              "text": "The evidence points to a signalling failure rather than bad weather.",
+              "translation_ru": "Данные указывают скорее на сбой сигнализации, чем на плохую погоду."
+            },
+            {
+              "text": "The evidence points to selection bias rather than a genuine behavioural change.",
+              "translation_ru": "Данные указывают скорее на смещение выборки, чем на реальное изменение поведения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Hinweise sprechen eher für + noun + als für + noun",
+          "example": "Die Hinweise sprechen eher für ein Konfigurationsproblem als für einen Softwarefehler.",
+          "translation": "Данные указывают скорее на проблему конфигурации, чем на дефект программы.",
+          "examples": [
+            {
+              "text": "Die Hinweise sprechen eher für eine schlechte Dämmung als für eine zu kleine Heizung.",
+              "translation_ru": "Данные указывают скорее на плохую теплоизоляцию, чем на недостаточную мощность отопления."
+            },
+            {
+              "text": "Die Hinweise sprechen eher für zu wenig Abrufpraxis als für zu wenig Kontakt mit der Sprache.",
+              "translation_ru": "Данные указывают скорее на нехватку практики воспроизведения, чем на нехватку контакта с языком."
+            },
+            {
+              "text": "Die Hinweise sprechen eher für einen verschlissenen Akku als für ein defektes Ladegerät.",
+              "translation_ru": "Данные указывают скорее на изношенную батарею, чем на неисправную зарядку."
+            },
+            {
+              "text": "Die Hinweise sprechen eher für eine Signalstörung als für schlechtes Wetter.",
+              "translation_ru": "Данные указывают скорее на сбой сигнализации, чем на плохую погоду."
+            },
+            {
+              "text": "Die Hinweise sprechen eher für einen Selektionsbias als für eine echte Verhaltensänderung.",
+              "translation_ru": "Данные указывают скорее на смещение выборки, чем на реальное изменение поведения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Данные указывают скорее на …, чем на …",
+      "title_en": "The evidence points to [X] rather than [Y]",
+      "group_id": "GFQ"
+    },
+    {
+      "id": "GFQ020",
+      "set_id": "GFQ",
+      "pattern": "I'd be cautious about automating the decision before the exceptions are understood.",
+      "group_title": "I'd be cautious about [X]",
+      "level": "B2",
+      "logic": {
+        "function": "stance-and-hedging",
+        "core": "I'd be cautious about [X]",
+        "form": "I'd be cautious about + noun/-ing",
+        "metaphor_ru": "Рамка помогает выразить позицию точнее и мягче: я бы осторожно относился к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I'd be cautious about + noun/-ing",
+          "example": "I'd be cautious about automating the decision before the exceptions are understood.",
+          "translation": "Я бы осторожно относился к автоматизации решения до понимания исключений.",
+          "examples": [
+            {
+              "text": "I'd be cautious about buying a house after only one viewing.",
+              "translation_ru": "Я бы осторожно относился к покупке дома после одного просмотра."
+            },
+            {
+              "text": "I'd be cautious about copying native speakers' slang without understanding the register.",
+              "translation_ru": "Я бы осторожно относился к копированию сленга носителей без понимания регистра."
+            },
+            {
+              "text": "I'd be cautious about installing beta firmware on the only device you rely on.",
+              "translation_ru": "Я бы осторожно относился к установке бета-прошивки на единственное важное устройство."
+            },
+            {
+              "text": "I'd be cautious about booking a tight connection during winter storms.",
+              "translation_ru": "Я бы осторожно относился к бронированию короткой пересадки во время зимних штормов."
+            },
+            {
+              "text": "I'd be cautious about treating a statistically significant result as automatically important.",
+              "translation_ru": "Я бы осторожно относился к автоматическому признанию статистически значимого результата практически важным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich wäre vorsichtig damit, + zu-infinitive / noun",
+          "example": "Ich wäre vorsichtig damit, die Entscheidung zu automatisieren, bevor die Ausnahmen verstanden sind.",
+          "translation": "Я бы осторожно относился к автоматизации решения до понимания исключений.",
+          "examples": [
+            {
+              "text": "Ich wäre vorsichtig damit, ein Haus nach nur einer Besichtigung zu kaufen.",
+              "translation_ru": "Я бы осторожно относился к покупке дома после одного просмотра."
+            },
+            {
+              "text": "Ich wäre vorsichtig damit, Slang von Muttersprachlern zu übernehmen, ohne das Register zu verstehen.",
+              "translation_ru": "Я бы осторожно относился к копированию сленга носителей без понимания регистра."
+            },
+            {
+              "text": "Ich wäre vorsichtig damit, Beta-Firmware auf dem einzigen Gerät zu installieren, auf das du angewiesen bist.",
+              "translation_ru": "Я бы осторожно относился к установке бета-прошивки на единственное важное устройство."
+            },
+            {
+              "text": "Ich wäre vorsichtig damit, bei Winterstürmen eine knappe Umsteigeverbindung zu buchen.",
+              "translation_ru": "Я бы осторожно относился к бронированию короткой пересадки во время зимних штормов."
+            },
+            {
+              "text": "Ich wäre vorsichtig damit, ein statistisch signifikantes Ergebnis automatisch für wichtig zu halten.",
+              "translation_ru": "Я бы осторожно относился к автоматическому признанию статистически значимого результата практически важным."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Я бы осторожно относился к …",
+      "title_en": "I'd be cautious about [X]",
+      "group_id": "GFQ"
+    }
+  ]
+}
