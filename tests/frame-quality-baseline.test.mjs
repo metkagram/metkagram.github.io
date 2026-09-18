@@ -14,11 +14,12 @@ function currentAudit() {
 }
 
 test("current corpus passes the frozen Frame quality baseline", () => {
-  const snapshot = validateFrameQualityBaseline(currentAudit());
-  assert.equal(snapshot.patternCount, 3530);
-  assert.equal(snapshot.studySetCount, 94);
-  assert.equal(snapshot.global.duplicateAffectedPatternRate, 0.907082);
-  assert.equal(snapshot.global.highConfidenceAuditIssuesPerPattern, 0.011898);
+  const baseline = loadFrameQualityBaseline();
+  const snapshot = validateFrameQualityBaseline(currentAudit(), baseline);
+  assert.equal(snapshot.patternCount, baseline.patternCountAtCapture);
+  assert.equal(snapshot.studySetCount, baseline.studySetCountAtCapture);
+  assert.equal(snapshot.global.duplicateAffectedPatternRate, baseline.global.duplicateAffectedPatternRate);
+  assert.equal(snapshot.global.highConfidenceAuditIssuesPerPattern, baseline.global.highConfidenceAuditIssuesPerPattern);
 });
 
 test("Frame quality baseline covers every permanently established study set", () => {
