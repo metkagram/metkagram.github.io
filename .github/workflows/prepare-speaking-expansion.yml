@@ -1,0 +1,55 @@
+name: Prepare speaking expansion
+on:
+  push:
+    branches: [content/speaking-frames-100-20260918]
+    paths:
+      - .github/workflows/prepare-speaking-expansion.yml
+      - scripts/prepare-speaking-expansion.mjs
+      - scripts/editorial/speaking-20260918/**
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Inventory canonical frames
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { loadEditorialCorpus } from './src/pattern-sources.mjs';
+          const { patterns, studySets } = loadEditorialCorpus();
+          const rows = patterns.map(p => ({ id:p.id, set:p.set_id, en:p.langs.find(l=>l.lang==='en')?.formula, de:p.langs.find(l=>l.lang==='de')?.formula }));
+          fs.mkdirSync('.tmp/speaking-expansion', {recursive:true});
+          fs.writeFileSync('.tmp/speaking-expansion/inventory.json', JSON.stringify({counts:{patterns:patterns.length,sets:studySets.sets.length},patterns:rows},null,2));
+          console.log('BASELINE', patterns.length, 'patterns;', studySets.sets.length, 'study sets');
+          for (const row of rows) console.log([row.id,row.en,row.de].join(' | '));
+          NODE
+      - name: Prepare requested additions when the editorial package is complete
+        run: |
+          if [ -f scripts/editorial/speaking-20260918/READY.json ]; then
+            node scripts/prepare-speaking-expansion.mjs
+            npm ci
+            npm run verify
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/patterns data/practice-extensions.json docs/SPEAKING_EXPANSION_20260918.md
+            if ! git diff --cached --quiet; then
+              git commit -m 'Add 100 distinct speaking frames with five EN/DE/RU scenarios each'
+              git push origin HEAD:content/speaking-frames-100-20260918
+            fi
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: speaking-expansion-review
+          path: |
+            .tmp/speaking-expansion/
+            src/pattern-example-quality.mjs
+            src/pattern-sources.mjs
+            src/pattern-editorial-copy.mjs
+            data/practice-extensions.json
+          retention-days: 7
