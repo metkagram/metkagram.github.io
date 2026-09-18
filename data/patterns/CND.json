@@ -1336,96 +1336,99 @@
       "id": "C1CND001",
       "group_id": "CND",
       "set_id": "CND",
-      "title_ru": "Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки» в контексте заявка на финансирование.",
+      "title_ru": "Если бы [X] произошло раньше, [Y], возможно, [Z]",
+      "metaphor_ru": "Используйте контрфактическое прошлое, чтобы показать, как более раннее действие могло изменить последующий результат.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Had [a funding proposal] been addressed earlier, we might have avoided the delay.",
-          "example": "Had a funding proposal been addressed earlier, we might have avoided the delay.",
-          "translation": "Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки.",
+          "formula": "Had [X] happened earlier, [Y] might have [Z].",
+          "example": "Had the dependency mapping happened earlier, the team might have discovered the missing interface before the migration weekend.",
+          "translation": "Если бы зависимости сопоставили раньше, команда, возможно, обнаружила бы отсутствующий интерфейс до миграционных выходных.",
           "examples": [
             {
-              "text": "**Had a funding proposal been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the dependency mapping happened earlier, the team might have discovered the missing interface before the migration weekend.**",
+              "translation_ru": "Если бы зависимости сопоставили раньше, команда, возможно, обнаружила бы отсутствующий интерфейс до миграционных выходных."
             },
             {
-              "text": "**Had a delayed product launch been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы задерженный запуск продукта рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the evacuation warning happened earlier, more residents might have moved their cars before the river reached the lower streets.**",
+              "translation_ru": "Если бы предупреждение об эвакуации прозвучало раньше, больше жителей, возможно, успели бы убрать машины до того, как вода дошла до нижних улиц."
             },
             {
-              "text": "**Had the team’s research findings been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы результаты исследования команды рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the legal review happened earlier, we might have renegotiated the liability clause before both sides became committed to the deal.**",
+              "translation_ru": "Если бы юридическая проверка прошла раньше, мы, возможно, пересогласовали бы пункт об ответственности до того, как обе стороны связали себя сделкой."
             },
             {
-              "text": "**Had a customer complaint been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы жалоба клиента рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the prototype test happened earlier, the designers might have abandoned the hidden navigation before hundreds of screens were built around it.**",
+              "translation_ru": "Если бы прототип протестировали раньше, дизайнеры, возможно, отказались бы от скрытой навигации до того, как вокруг неё построили сотни экранов."
             },
             {
-              "text": "**Had a public-transport plan been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы план общественного транспорта рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the funding decision happened earlier, the field team might have completed the survey before the rainy season began.**",
+              "translation_ru": "Если бы решение о финансировании приняли раньше, полевая команда, возможно, завершила бы исследование до начала сезона дождей."
             },
             {
-              "text": "**Had a difficult staffing decision been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы сложное кадровое решение рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had the backup verification happened earlier, the administrator might have noticed that the archive contained metadata but not the actual attachments.**",
+              "translation_ru": "Если бы резервную копию проверили раньше, администратор, возможно, заметил бы, что в архиве были метаданные, но не сами вложения."
             },
             {
-              "text": "**Had the revised budget been addressed earlier, we might have avoided the delay.**",
-              "translation_ru": "Если бы пересмотренный бюджет рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Had someone asked the quieter participants earlier, the meeting might have surfaced the operational risk before the final vote.**",
+              "translation_ru": "Если бы более молчаливых участников спросили раньше, встреча, возможно, выявила бы операционный риск до финального голосования."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wäre [einen Förderantrag] früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.",
-          "example": "Wäre einen Förderantrag früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.",
-          "translation": "Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки.",
+          "formula": "Wäre [X] früher geschehen, hätte [Y] möglicherweise [Z].",
+          "example": "Wäre die Abhängigkeitsanalyse früher erfolgt, hätte das Team die fehlende Schnittstelle möglicherweise vor dem Migrationswochenende entdeckt.",
+          "translation": "Если бы зависимости сопоставили раньше, команда, возможно, обнаружила бы отсутствующий интерфейс до миграционных выходных.",
           "examples": [
             {
-              "text": "**Wäre einen Förderantrag früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы заявка на финансирование рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die Abhängigkeitsanalyse früher erfolgt, hätte das Team die fehlende Schnittstelle möglicherweise vor dem Migrationswochenende entdeckt.**",
+              "translation_ru": "Если бы зависимости сопоставили раньше, команда, возможно, обнаружила бы отсутствующий интерфейс до миграционных выходных."
             },
             {
-              "text": "**Wäre eine verspätete Produkteinführung früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы задерженный запуск продукта рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die Evakuierungswarnung früher erfolgt, hätten möglicherweise mehr Anwohnerinnen und Anwohner ihre Autos weggebracht, bevor der Fluss die tiefer gelegenen Straßen erreichte.**",
+              "translation_ru": "Если бы предупреждение об эвакуации прозвучало раньше, больше жителей, возможно, успели бы убрать машины до того, как вода дошла до нижних улиц."
             },
             {
-              "text": "**Wäre die Forschungsergebnisse des Teams früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы результаты исследования команды рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die rechtliche Prüfung früher erfolgt, hätten wir die Haftungsklausel möglicherweise neu verhandelt, bevor sich beide Seiten auf das Geschäft festlegten.**",
+              "translation_ru": "Если бы юридическая проверка прошла раньше, мы, возможно, пересогласовали бы пункт об ответственности до того, как обе стороны связали себя сделкой."
             },
             {
-              "text": "**Wäre eine Kundenbeschwerde früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы жалоба клиента рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre der Prototypentest früher erfolgt, hätten die Designer die versteckte Navigation möglicherweise verworfen, bevor Hunderte von Bildschirmen darauf aufgebaut wurden.**",
+              "translation_ru": "Если бы прототип протестировали раньше, дизайнеры, возможно, отказались бы от скрытой навигации до того, как вокруг неё построили сотни экранов."
             },
             {
-              "text": "**Wäre einen Plan für den Nahverkehr früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы план общественного транспорта рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die Finanzierungsentscheidung früher gefallen, hätte das Feldteam die Erhebung möglicherweise vor Beginn der Regenzeit abgeschlossen.**",
+              "translation_ru": "Если бы решение о финансировании приняли раньше, полевая команда, возможно, завершила бы исследование до начала сезона дождей."
             },
             {
-              "text": "**Wäre eine schwierige Personalentscheidung früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы сложное кадровое решение рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die Überprüfung der Sicherung früher erfolgt, hätte der Administrator möglicherweise bemerkt, dass das Archiv zwar Metadaten, aber nicht die eigentlichen Anhänge enthielt.**",
+              "translation_ru": "Если бы резервную копию проверили раньше, администратор, возможно, заметил бы, что в архиве были метаданные, но не сами вложения."
             },
             {
-              "text": "**Wäre das überarbeitete Budget früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können.**",
-              "translation_ru": "Если бы пересмотренный бюджет рассмотрели раньше, мы, возможно, избежали бы задержки."
+              "text": "**Wäre die ruhigeren Teilnehmenden früher gefragt worden, hätte die Besprechung das operative Risiko möglicherweise vor der endgültigen Abstimmung sichtbar gemacht.**",
+              "translation_ru": "Если бы более молчаливых участников спросили раньше, встреча, возможно, выявила бы операционный риск до финального голосования."
             }
           ]
         }
       ],
       "formulas": [
-        "Had [a funding proposal] been addressed earlier, we might have avoided the delay.",
-        "Wäre [einen Förderantrag] früher angegangen worden, hätten wir die Verzögerung vielleicht vermeiden können."
+        "Had [X] happened earlier, [Y] might have [Z].",
+        "Wäre [X] früher geschehen, hätte [Y] möglicherweise [Z]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Conditionals and counterfactuals."
-      }
+        "notes": "C1 communicative frame: Conditionals and counterfactuals. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Had [X] happened earlier, [Y] might have [Z]",
+      "description_en": "Use a past counterfactual to examine how an earlier intervention could have changed a later outcome.",
+      "description_ru": "Используйте контрфактическое прошлое, чтобы показать, как более раннее действие могло изменить последующий результат."
     }
   ]
 }
