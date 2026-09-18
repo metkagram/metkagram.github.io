@@ -35,8 +35,13 @@ jobs:
           const newGroup = 'p.group_id=family;';
           assert.ok(source.includes(oldGroup) || source.includes(newGroup), 'Unexpected integrator; refuse a blind patch');
           source = source.replace(oldGroup, newGroup);
-          const note = ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle наши файлы.';
-          source = source.replace("p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';", "if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';");
+          const oldNote = "p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';";
+          if (!source.includes("if (!p.logic.metaphor_ru.includes('meine beiden Eltern'))")) source = source.replace(oldNote, "if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) " + oldNote);
+          const marker = "if(p.id==='GFH018')";
+          if (!source.includes("if(p.id==='GFL008')")) {
+            assert.ok(source.includes(marker));
+            source = source.replace(marker, "if(p.id==='GFL008') p.langs.find(l=>l.lang==='de').formula='Subject + finite verb in second position + ... + wh-phrase + remaining verb parts?';\n  " + marker);
+          }
           fs.writeFileSync(file, source);
           JS
       - name: Integrate canonical data and editorial corrections
@@ -53,8 +58,8 @@ jobs:
                 for (const l of p.langs || []) {
                   const key = String(l.formula).replaceAll('**', '').replace(/\s+/g, ' ').trim().toLowerCase();
                   const owner = owners.get(key);
-                  if (owner && owner !== p.id && (/^GF[A-O]\d{3}$/.test(p.id) || /^GF[A-O]\d{3}$/.test(owner))) console.log('FORMULA_COLLISION ' + JSON.stringify({id:p.id, owner, lang:l.lang, formula:l.formula}));
-                  else owners.set(key, p.id);
+                  if (owner && (/^GF[A-O]\d{3}$/.test(p.id) || /^GF[A-O]\d{3}$/.test(owner.id))) console.log('FORMULA_COLLISION ' + JSON.stringify({id:p.id, owner, lang:l.lang, formula:l.formula}));
+                  else owners.set(key, {id:p.id, lang:l.lang});
                 }
               }
             }
@@ -84,7 +89,14 @@ jobs:
           fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification. No annotation or human-review status is fabricated. Expanding these new patterns to the requested 5–7 examples per language remains editorial follow-up; this merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
           JS
       - name: Verify complete site and tests before committing
-        run: npm run verify
+        run: |
+          if npm run verify > /tmp/grammar-verify.log 2>&1; then
+            tail -n 25 /tmp/grammar-verify.log
+          else
+            grep -n -E 'Error|error|not ok|failed|failure|AssertionError' /tmp/grammar-verify.log || true
+            tail -n 100 /tmp/grammar-verify.log
+            exit 1
+          fi
       - name: Commit integrated source data on the feature branch
         run: |
           git config user.name 'github-actions[bot]'
