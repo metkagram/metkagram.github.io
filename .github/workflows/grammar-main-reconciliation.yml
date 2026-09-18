@@ -45,9 +45,10 @@ jobs:
           }
           assert.equal(execFileSync('git',['diff','--name-only','--diff-filter=U'],{encoding:'utf8'}).trim(),'');
           JS
-          # Current main owns the retained old example texts and their matching
-          # pruned annotations. Append only new pending records to that export.
+          # Preserve the current main annotation export, but keep the complete
+          # frozen URL registry: retired URLs must not be lost by auto-merge.
           git show "$INSPECTED_MAIN:data/pattern-annotations.json.gz" > data/pattern-annotations.json.gz
+          git show HEAD:data/seo-slugs.json > data/seo-slugs.json
       - name: Register finite pending enrichment and preserve current default limits
         run: |
           node --input-type=module <<'JS'
@@ -56,7 +57,7 @@ jobs:
           function patch(source,before,after,label){if(source.includes(after))return source;assert.equal(source.split(before).length,2,label);return source.replace(before,after);}
           const ids=[...'ABCDEFGHIJKLMNO'].flatMap(letter=>Array.from({length:20},(_,index)=>`GF${letter}${String(index+1).padStart(3,'0')}`));
           fs.mkdirSync('data/quality',{recursive:true});
-          fs.writeFileSync('data/quality/pending-example-enrichment.json',JSON.stringify({schemaVersion:1,status:'pending',scope:'grammar-flexibility-300',reason:'Owner approved PR 140 merge after disclosure that the existing expansion has three total examples per language; substantive enrichment to the current 5–7 additional-example contract remains unfinished.',expectedAdditionalExampleCount:2,expectedTotalIncludingPrimary:3,languages:['en','de'],completionRule:'Write genuinely new aligned examples and Russian translations, rebuild affected annotations, then remove completed IDs and retire this temporary exception contract once the batch is complete.',patternIds:ids},null,2)+'\n');
+          fs.writeFileSync('data/quality/pending-example-enrichment.json',JSON.stringify({schemaVersion:1,status:'pending',scope:'grammar-flexibility-300',reason:'Owner approved PR 140 merge after disclosure that the existing expansion has three total examples per language; substantive enrichment to the current 5–7 additional-example contract remains unfinished.',expectedAdditionalExampleCount:2,expectedTotalIncludingPrimary:3,languages:['en','de'],completionRule:'Write genuinely new aligned examples and Russian translations and rebuild affected annotations. Retire this temporary exception contract and its ledger once the entire batch meets the default rule.',patternIds:ids},null,2)+'\n');
           let source=fs.readFileSync('src/pattern-sources.mjs','utf8');
           source=patch(source,'language.examples.length >= MIN_PATTERN_EXAMPLES,','language.examples.length >= MIN_PATTERN_EXAMPLES || hasPendingExampleEnrichment(pattern, language),','writer count rule');
           source=patch(source,'count >= MIN_PATTERN_EXAMPLES && count <= MAX_PATTERN_EXAMPLES,','(count >= MIN_PATTERN_EXAMPLES && count <= MAX_PATTERN_EXAMPLES) || hasPendingExampleEnrichment(pattern, language),','reader count rule');
