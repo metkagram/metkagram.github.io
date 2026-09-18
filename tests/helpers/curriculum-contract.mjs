@@ -13,8 +13,10 @@ export const speakingExpansionSetIds = ["SQA","SQB","SQC","SQD","SVA","SVB","SAD
 export const speakingExpansionPatternIds = speakingExpansionSetIds.flatMap(s => Array.from({length:10}, (_,i) => s + String(i+1).padStart(3,'0')));
 export const speakingExpansionWave2SetIds = ["SRE","SCE","SQT","SVC","SCF","SCH"];
 export const speakingExpansionWave2PatternIds = speakingExpansionWave2SetIds.flatMap(s => Array.from({length:10}, (_,i) => s + String(i+1).padStart(3,'0')));
-export const allExpansionSetIds = [...expansionSetIds, ...speakingExpansionSetIds, ...speakingExpansionWave2SetIds];
-export const allExpansionPatternIds = [...expansionPatternIds, ...speakingExpansionPatternIds, ...speakingExpansionWave2PatternIds];
+export const speakingExpansionWave3SetIds = ["SRQ","SDC","SMN","SRA"];
+export const speakingExpansionWave3PatternIds = speakingExpansionWave3SetIds.flatMap(s => Array.from({length:10}, (_,i) => s + String(i+1).padStart(3,"0")));
+export const allExpansionSetIds = [...expansionSetIds, ...speakingExpansionSetIds, ...speakingExpansionWave2SetIds, ...speakingExpansionWave3SetIds];
+export const allExpansionPatternIds = [...expansionPatternIds, ...speakingExpansionPatternIds, ...speakingExpansionWave2PatternIds, ...speakingExpansionWave3PatternIds];
 const expansionIds = new Set(allExpansionPatternIds);
 export const isEstablishedPattern = pattern => !expansionIds.has(pattern.id);
 export const expectedPatternCount = frozenCorpus.mergedCorpus.patternCount + allExpansionPatternIds.length;
