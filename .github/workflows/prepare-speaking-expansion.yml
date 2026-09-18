@@ -16,30 +16,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Apply bounded auditor correction
+      - name: Register only new frozen routes and verify integration
         run: |
           set -euo pipefail
           mkdir -p .tmp/speaking-expansion
+          cp data/seo-slugs.json .tmp/speaking-expansion/previous-slugs.json
+          node scripts/generate-seo-slugs.mjs
           node --input-type=module <<'NODE'
           import assert from 'node:assert/strict';
           import fs from 'node:fs';
-          const file='src/frame-quality-audit.mjs';
-          let source=fs.readFileSync(file,'utf8');
-          const imported='import { detectEnglishAgreement } from "./english-agreement-audit.mjs";';
-          if(!source.includes(imported)) {
-            const start=source.indexOf('function detectEnglishAgreement(text) {');
-            const end=source.indexOf('function detectGermanAgreement(text) {',start);
-            assert.ok(start>0 && end>start);
-            source=imported+'\n\n'+source.slice(0,start)+source.slice(end);
-            fs.writeFileSync(file,source);
-          }
+          const before=JSON.parse(fs.readFileSync('.tmp/speaking-expansion/previous-slugs.json'));
+          const after=JSON.parse(fs.readFileSync('data/seo-slugs.json'));
+          for(const section of ['patterns','studySets']) for(const [id,slug] of Object.entries(before[section])) assert.equal(after[section][id],slug,id);
+          assert.equal(Object.keys(after.patterns).length-Object.keys(before.patterns).length,100);
+          assert.equal(Object.keys(after.studySets).length-Object.keys(before.studySets).length,10);
+          console.log('All established SEO slugs preserved; added 100 pattern and 10 set routes.');
           NODE
-          node --test tests/english-agreement-audit.test.mjs tests/speaking-expansion.test.mjs tests/pattern-shards.test.mjs tests/practice-annotations.test.mjs tests/pattern-editorial-copy.test.mjs tests/pattern-example-enrichment.test.mjs 2>&1 | tee .tmp/speaking-expansion/targeted-tests.log
+          node --test tests/english-agreement-audit.test.mjs tests/speaking-expansion.test.mjs tests/speaking-routes.test.mjs tests/pattern-shards.test.mjs tests/practice-annotations.test.mjs tests/pattern-editorial-copy.test.mjs tests/pattern-example-enrichment.test.mjs 2>&1 | tee .tmp/speaking-expansion/targeted-tests.log
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add src/frame-quality-audit.mjs
+          git add data/seo-slugs.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Use conservative clause-local English agreement audit'
+            git commit -m 'Register 100 new pattern routes and ten study-set routes without changing old URLs'
             git push origin HEAD:content/speaking-frames-100-20260918
           fi
       - name: Full verification with explicit exit status
