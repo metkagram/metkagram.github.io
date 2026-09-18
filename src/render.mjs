@@ -552,11 +552,14 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
   }).join("")}</ol></section>` : "";
   const localizedDescription = description ? `<div class="pattern-localized-description"><p class="eyebrow">${t.explanation}</p><p class="lede" lang="${locale}">${escapeHtml(description)}</p></div>` : "";
-  const body = `<article class="pattern-page section-pad" data-pattern-id="${escapeHtml(pattern.id)}">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${localizedDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
+  const nativeSupportDescription = locale === "en" && pattern.description_ru
+    ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.description_ru)}</p></div>`
+    : "";
+  const body = `<article class="pattern-page section-pad" data-pattern-id="${escapeHtml(pattern.id)}">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${localizedDescription}${nativeSupportDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
   const metaTitle = identifiedMetaTitle(title, pattern.id);
-  const metaDescription = description || (locale === "en"
-    ? `Pattern ${pattern.id}: ${primary.formula}. Study this B2–C1 structure with English and German examples.`
-    : `Паттерн ${pattern.id}: ${title}. Модель B2–C1 с примерами на английском и немецком.`);
+  const metaDescription = locale === "en"
+    ? `Pattern ${pattern.id}: ${title}. ${description || "Study this reusable B2–C1 structure with English and German examples."}`
+    : `Паттерн ${pattern.id}: ${title}. ${description || "Модель B2–C1 с примерами на английском и немецком."}`;
   return layout({ locale, pathname, title: metaTitle, description: metaDescription, body, type: "article", bodyClass: "pattern-reader-body", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, description, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }
 
