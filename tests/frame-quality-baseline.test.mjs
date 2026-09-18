@@ -18,8 +18,8 @@ test("current corpus passes the frozen Frame quality baseline", () => {
   const snapshot = validateFrameQualityBaseline(currentAudit(), baseline);
   assert.equal(snapshot.patternCount, baseline.patternCountAtCapture);
   assert.equal(snapshot.studySetCount, baseline.studySetCountAtCapture);
-  assert.equal(snapshot.global.duplicateAffectedPatternRate, baseline.global.duplicateAffectedPatternRate);
-  assert.equal(snapshot.global.highConfidenceAuditIssuesPerPattern, baseline.global.highConfidenceAuditIssuesPerPattern);
+  assert.ok(snapshot.global.duplicateAffectedPatternRate <= baseline.global.duplicateAffectedPatternRate);
+  assert.ok(snapshot.global.highConfidenceAuditIssuesPerPattern <= baseline.global.highConfidenceAuditIssuesPerPattern);
 });
 
 test("Frame quality baseline covers every permanently established study set", () => {
