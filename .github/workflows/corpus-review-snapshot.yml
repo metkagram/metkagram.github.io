@@ -1,0 +1,20 @@
+name: Corpus review snapshot
+on:
+  push:
+    branches: [fix/corpus-language-quality-20260918]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Archive tracked review inputs
+        run: git archive --format=tar HEAD | gzip > /tmp/metkagram-review-source.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: metkagram-review-source
+          path: /tmp/metkagram-review-source.tar.gz
+          retention-days: 1
