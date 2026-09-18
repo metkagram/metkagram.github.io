@@ -138,6 +138,7 @@ const RU_TITLE_OVERRIDES = {
   XPRRTR007: "Будущее значение в условной части без формы будущего времени",
   XPRRTR008: "Степень перед обычным глаголом",
   XPRRTR009: "«Чувствовать себя» без возвратного местоимения",
+  LEX379: "Неявное и явное",
   FUNPRM011: "Мы не уполномочены продолжать, если только не …",
   QSTQYN001: "Вы знаете, верно ли, что …?",
   QSTQFRM011: "Мы рассмотрели, верно ли, что …?"
@@ -271,7 +272,9 @@ function compact(value = "") {
 }
 
 function trimStatementTitle(value = "") {
-  return compact(value).replace(/\.$/u, "");
+  const title = compact(value);
+  if (title.endsWith("...") || title.endsWith("…")) return title;
+  return title.replace(/\.$/u, "");
 }
 
 export function patternFrameTitle(formula = "") {
