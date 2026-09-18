@@ -19,6 +19,7 @@ test("published Frame audit classifies every language record without claiming hu
     assert.equal(record.human_reviewed, false);
   }
   const hed = audit.records.find((record) => record.pattern_id === "C1HED001" && record.lang === "en");
-  assert.equal(hed?.classification, "contextual_variant_candidate", "known HED contextual substitution should be classified as a Frame variant candidate");
+  assert.equal(hed?.classification, "distinct_frame_candidate", "retained HED canonical record should no longer be classified against retired contextual duplicates");
+  assert.equal(audit.records.some((record) => record.pattern_id === "C1HED002"), false, "retired HED alias must not remain an active audit record");
   assert.match(audit.reviewState, /not-human-reviewed/);
 });

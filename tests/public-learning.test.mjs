@@ -81,7 +81,7 @@ test("public learning links favor reviewed strength over inflated coverage", () 
   assert.equal(graph.sourceCounts.intents, 18);
   assert.equal(Object.keys(graph.documents).length, 72);
   assert.equal(Object.keys(graph.patterns).length, publicPatterns.size);
-  assert.ok(publicPatterns.size >= 1000, `expected full public Practice curriculum, found ${publicPatterns.size}`);
+  assert.ok(publicPatterns.size >= 600, `expected canonical public Practice curriculum, found ${publicPatterns.size}`);
   assert.equal(Object.keys(graph.intents).length, 18);
 
   assert.ok(graph.relationCounts.connectedDocumentCount >= 15);

@@ -30,16 +30,21 @@ test("Frame audit covers every current study set and Pattern record", () => {
   assert.equal(Object.keys(audit.setMetrics).length, content.studySets.sets.length);
 });
 
-test("slot normalization exposes the known HED contextual-variant family", () => {
+test("retired HED contextual variants resolve through aliases instead of remaining active duplicates", () => {
   const content = loadContent();
   const audit = buildFrameQualityAudit(content);
-  const hed = audit.duplicateGroups.slotVariants.find((group) =>
-    group.set_id === "HED"
-    && group.lang === "en"
-    && group.pattern_ids.includes("C1HED001")
-    && group.pattern_ids.includes("C1HED002")
+  const activeIds = new Set(content.advancedPatterns.map((pattern) => pattern.id));
+  const aliases = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "pattern-aliases.json"), "utf8")).aliases;
+
+  assert.ok(activeIds.has("C1HED001"), "canonical HED Pattern must remain active");
+  assert.equal(activeIds.has("C1HED002"), false, "retired HED duplicate must not remain active");
+  assert.equal(aliases.C1HED002, "C1HED001", "retired HED ID must resolve to its canonical Pattern");
+  assert.equal(
+    [...audit.duplicateGroups.exact, ...audit.duplicateGroups.slotVariants, ...audit.duplicateGroups.nearPairs]
+      .some((group) => group.pattern_ids.includes("C1HED002")),
+    false,
+    "retired alias must not re-enter duplicate audit groups",
   );
-  assert.ok(hed, "HED contextual substitutions should resolve to one reviewable Frame-family candidate");
   assert.equal(
     normalizeFrameFormula("It would be premature to conclude that [a funding proposal] is settled.", { abstractSlots: true }),
     normalizeFrameFormula("It would be premature to conclude that [a delayed product launch] is settled.", { abstractSlots: true }),
