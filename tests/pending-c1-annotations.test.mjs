@@ -1,4 +1,4 @@
-import { speakingExpansionPatternIds, speakingExpansionWave2PatternIds } from './helpers/curriculum-contract.mjs';
+import { speakingExpansionPatternIds, speakingExpansionWave2PatternIds, speakingExpansionWave3PatternIds } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
 import test from "node:test";
@@ -11,7 +11,7 @@ test("rewritten pattern examples are explicitly pending until local annotation i
   const content = loadContent();
   const { items, ledger } = loadPracticeAnnotationLayer(content, process.cwd());
   const ids = new Set((ledger.patterns || []).map((entry) => entry.id));
-  const newSpeakingIds = new Set([...speakingExpansionPatternIds, ...speakingExpansionWave2PatternIds]);
+  const newSpeakingIds = new Set([...speakingExpansionPatternIds, ...speakingExpansionWave2PatternIds, ...speakingExpansionWave3PatternIds]);
   const c1Patterns = content.advancedPatterns.filter((pattern) => /^C1[A-Z]+\d+$/.test(pattern.id));
 
   assert.equal(c1Patterns.length, 20);
