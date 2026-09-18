@@ -5,7 +5,7 @@ on:
     paths:
       - .github/workflows/prepare-speaking-expansion.yml
       - scripts/prepare-speaking-expansion.mjs
-      - scripts/editorial/speaking-20260918/**
+      - scripts/editorial/speaking-20260918/READY.json
 permissions:
   contents: write
 jobs:
@@ -16,24 +16,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Inventory canonical frames
+      - name: Inventory canonical frames and baseline diversity
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
-          import { loadEditorialCorpus } from './src/pattern-sources.mjs';
-          const { patterns, studySets } = loadEditorialCorpus();
+          import { loadContent } from './src/content.mjs';
+          const { advancedPatterns: patterns, studySets } = loadContent();
           const rows = patterns.map(p => ({ id:p.id, set:p.set_id, en:p.langs.find(l=>l.lang==='en')?.formula, de:p.langs.find(l=>l.lang==='de')?.formula }));
           fs.mkdirSync('.tmp/speaking-expansion', {recursive:true});
           fs.writeFileSync('.tmp/speaking-expansion/inventory.json', JSON.stringify({counts:{patterns:patterns.length,sets:studySets.sets.length},patterns:rows},null,2));
           console.log('BASELINE', patterns.length, 'patterns;', studySets.sets.length, 'study sets');
-          for (const row of rows) console.log([row.id,row.en,row.de].join(' | '));
           NODE
-      - name: Prepare requested additions when the editorial package is complete
+          node --test tests/pattern-example-quality.test.mjs > .tmp/speaking-expansion/baseline-diversity.log 2>&1 || true
+      - name: Prepare and commit validated additions when the package is complete
         run: |
           if [ -f scripts/editorial/speaking-20260918/READY.json ]; then
             node scripts/prepare-speaking-expansion.mjs
-            npm ci
-            npm run verify
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add data/patterns data/practice-extensions.json docs/SPEAKING_EXPANSION_20260918.md
@@ -42,14 +40,23 @@ jobs:
               git push origin HEAD:content/speaking-frames-100-20260918
             fi
           fi
+      - name: Verify the complete changed revision
+        if: hashFiles('scripts/editorial/speaking-20260918/READY.json') != ''
+        run: |
+          npm ci
+          npm run verify 2>&1 | tee .tmp/speaking-expansion/verify.log
+      - name: Archive reviewable source
+        if: always()
+        run: tar --exclude=.git --exclude=node_modules --exclude=dist --exclude=.tmp -czf /tmp/metkagram-editorial-source.tar.gz .
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: speaking-expansion-review
-          path: |
-            .tmp/speaking-expansion/
-            src/pattern-example-quality.mjs
-            src/pattern-sources.mjs
-            src/pattern-editorial-copy.mjs
-            data/practice-extensions.json
+          path: .tmp/speaking-expansion/
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: metkagram-editorial-source
+          path: /tmp/metkagram-editorial-source.tar.gz
           retention-days: 7
