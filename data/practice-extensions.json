@@ -516,18 +516,114 @@
         "connector_pattern": "German-led grammatical flexibility",
         "outcome": "Practise german-led grammatical flexibility in English and German with Russian prompts and three contrasting example scenarios."
       }
+    },
+    {
+      "id": "SQA",
+      "title_en": "Questions about experience and time",
+      "title_ru": "Вопросы об опыте и времени",
+      "description": "Ask about experience, frequency, interrupted actions and completion deadlines.",
+      "description_ru": "Спрашивайте об опыте, частоте, прерванных действиях и сроках завершения.",
+      "level": "B2–C1",
+      "path": "SQA"
+    },
+    {
+      "id": "SQB",
+      "title_en": "Questions about causes and explanations",
+      "title_ru": "Вопросы о причинах и объяснениях",
+      "description": "Ask what prompted an action, blocked progress or supports an explanation.",
+      "description_ru": "Выясняйте, что побудило действовать, помешало результату или объясняет ситуацию.",
+      "level": "B2–C1",
+      "path": "SQB"
+    },
+    {
+      "id": "SQC",
+      "title_en": "Questions about choices and limits",
+      "title_ru": "Вопросы о выборе и границах",
+      "description": "Compare options, explore acceptable costs and ask where a compromise should stop.",
+      "description_ru": "Сравнивайте варианты, обсуждайте допустимые затраты и границы компромисса.",
+      "level": "B2–C1",
+      "path": "SQC"
+    },
+    {
+      "id": "SQD",
+      "title_en": "Clarifying and challenging assumptions",
+      "title_ru": "Уточнение смысла и проверка допущений",
+      "description": "Ask for an explanation, repair misunderstandings and challenge an implied obligation.",
+      "description_ru": "Просите пояснение, устраняйте недопонимание и проверяйте подразумеваемые обязанности.",
+      "level": "B2–C1",
+      "path": "SQD"
+    },
+    {
+      "id": "SVA",
+      "title_en": "Verbs and their prepositions",
+      "title_ru": "Глаголы и зависимые предлоги",
+      "description": "Build sentences with approve of, object to, refrain from and other useful complement patterns.",
+      "description_ru": "Стройте фразы об одобрении, возражениях, сдержанности, успехе и влиянии на чужое решение.",
+      "level": "B2–C1",
+      "path": "SVA"
+    },
+    {
+      "id": "SVB",
+      "title_en": "Infinitives and -ing complements",
+      "title_ru": "Инфинитив и отглагольные формы",
+      "description": "Practise deserving, pretending, struggling, risking and other verb-complement choices.",
+      "description_ru": "Говорите о заслугах, притворстве, трудностях, риске и других отношениях к действию.",
+      "level": "B2–C1",
+      "path": "SVB"
+    },
+    {
+      "id": "SAD",
+      "title_en": "Attitudes, capacity and entitlement",
+      "title_ru": "Отношение, возможности и основания",
+      "description": "Practise adjective complements for reluctance, caution, ability, eligibility and mistaken impressions.",
+      "description_ru": "Говорите о нежелании, осторожности, способности, праве на что-либо и ошибочном впечатлении.",
+      "level": "B2–C1",
+      "path": "SAD"
+    },
+    {
+      "id": "SNC",
+      "title_en": "Noun-based frames for precision",
+      "title_ru": "Точные формулировки через существительные",
+      "description": "Express difficulty, intention, likelihood, distinctions and necessary conditions without empty jargon.",
+      "description_ru": "Точно говорите о трудностях, намерениях, вероятности, различиях и необходимых условиях.",
+      "level": "B2–C1",
+      "path": "SNC"
+    },
+    {
+      "id": "SPH",
+      "title_en": "Phrasal verbs in real situations",
+      "title_ru": "Фразовые глаголы в живых ситуациях",
+      "description": "Postpone, persist, catch up, reduce, tolerate and follow through in complete sentences.",
+      "description_ru": "Говорите об откладывании, продолжении, восполнении упущенного, сокращении и выполнении обещаний.",
+      "level": "B2–C1",
+      "path": "SPH"
+    },
+    {
+      "id": "SHB",
+      "title_en": "Habits, adjustment and interpretation",
+      "title_ru": "Привычки, освоение и переосмысление",
+      "description": "Describe getting used to a skill, reconsidering a plan, recognising a mistake and understanding a result.",
+      "description_ru": "Говорите об освоении навыка, пересмотре плана, распознавании ошибки и понимании результата.",
+      "level": "B2–C1",
+      "path": "SHB"
     }
   ],
   "learningPathAdds": {
     "C1-GRAMMAR": [
       "CGR",
-      "RTR"
+      "RTR",
+      "SVA",
+      "SVB",
+      "SAD",
+      "SNC"
     ],
     "C1-FUNCTIONS": [
       "SPK",
       "INT",
       "REG",
-      "PST"
+      "PST",
+      "SPH",
+      "SHB"
     ],
     "C1-CONTROL": [
       "TRN",
@@ -541,6 +637,12 @@
       "FRM",
       "UNC",
       "PST"
+    ],
+    "C1-QUESTIONS": [
+      "SQA",
+      "SQB",
+      "SQC",
+      "SQD"
     ]
   },
   "_updated": "2026-09-17"

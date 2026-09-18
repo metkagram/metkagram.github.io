@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SQC",
+  "patterns": [
+    {
+      "id": "SQC001",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Что … предпочёл бы: … или …?",
+      "title_en": "Which would [subject] prefer: to [verb] or to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Предложите два действия на выбор. Сохраняйте параллельную форму вариантов, чтобы сравнение было легко понять на слух.",
+      "editorial_descriptions": {
+        "en": "Offer two actions as alternatives. Parallel infinitive phrases keep the contrast clear; the question asks for a preference, not necessarily a final decision.",
+        "ru": "Предложите два действия на выбор. Сохраняйте параллельную форму вариантов, чтобы сравнение было легко понять на слух."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Which would [subject] prefer: to [verb] or to [verb]?",
+          "example": "Which would you prefer: to repair the old bicycle or to buy a second-hand one?",
+          "translation": "Что ты предпочёл бы: починить старый велосипед или купить подержанный?",
+          "examples": [
+            {
+              "text": "Which would you prefer: to repair the old bicycle or to buy a second-hand one?",
+              "translation_ru": "Что ты предпочёл бы: починить старый велосипед или купить подержанный?"
+            },
+            {
+              "text": "Which would she prefer: to present the findings alone or to share the session with a colleague?",
+              "translation_ru": "Что она предпочла бы: представить результаты самой или выступить вместе с коллегой?"
+            },
+            {
+              "text": "Which would they prefer: to leave before dawn or to avoid the motorway?",
+              "translation_ru": "Что они предпочли бы: выехать до рассвета или не ехать по автомагистрали?"
+            },
+            {
+              "text": "Which would your guests prefer: to cook together or to order something from the neighbourhood café?",
+              "translation_ru": "Что твои гости предпочли бы: приготовить ужин вместе или заказать что-нибудь из соседнего кафе?"
+            },
+            {
+              "text": "Which would we prefer: to postpone the launch or to remove the unfinished feature?",
+              "translation_ru": "Что мы предпочли бы: отложить запуск или убрать незаконченную функцию?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was würde [Subjekt] vorziehen: [Infinitiv] oder [Infinitiv]?",
+          "example": "Was würdest du vorziehen: das alte Fahrrad reparieren oder ein gebrauchtes kaufen?",
+          "translation": "Что ты предпочёл бы: починить старый велосипед или купить подержанный?",
+          "examples": [
+            {
+              "text": "Was würdest du vorziehen: das alte Fahrrad reparieren oder ein gebrauchtes kaufen?",
+              "translation_ru": "Что ты предпочёл бы: починить старый велосипед или купить подержанный?"
+            },
+            {
+              "text": "Was würde sie vorziehen: die Ergebnisse allein präsentieren oder den Vortrag gemeinsam mit einem Kollegen halten?",
+              "translation_ru": "Что она предпочла бы: представить результаты самой или выступить вместе с коллегой?"
+            },
+            {
+              "text": "Was würden sie vorziehen: vor Sonnenaufgang aufbrechen oder die Autobahn meiden?",
+              "translation_ru": "Что они предпочли бы: выехать до рассвета или не ехать по автомагистрали?"
+            },
+            {
+              "text": "Was würden deine Gäste vorziehen: gemeinsam kochen oder etwas beim Café um die Ecke bestellen?",
+              "translation_ru": "Что твои гости предпочли бы: приготовить ужин вместе или заказать что-нибудь из соседнего кафе?"
+            },
+            {
+              "text": "Was würden wir vorziehen: den Start verschieben oder die unfertige Funktion entfernen?",
+              "translation_ru": "Что мы предпочли бы: отложить запуск или убрать незаконченную функцию?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Which would [subject] prefer: to [verb] or to [verb]?",
+        "Was würde [Subjekt] vorziehen: [Infinitiv] oder [Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC002",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Согласился бы … сделать …, если бы …?",
+      "title_en": "Would [subject] be willing to [verb] if [past-form condition]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Проверьте готовность действовать при гипотетическом условии. Здесь прошедшая форма в английском выражает условность, а не время события.",
+      "editorial_descriptions": {
+        "en": "Test willingness under a hypothetical condition. The past form in the if-clause marks distance from reality rather than past time.",
+        "ru": "Проверьте готовность действовать при гипотетическом условии. Здесь прошедшая форма в английском выражает условность, а не время события."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Would [subject] be willing to [verb] if [past-form condition]?",
+          "example": "Would you be willing to mentor a newcomer if your workload were reduced?",
+          "translation": "Ты согласился бы помочь новому коллеге освоиться, если бы твою нагрузку уменьшили?",
+          "examples": [
+            {
+              "text": "Would you be willing to mentor a newcomer if your workload were reduced?",
+              "translation_ru": "Ты согласился бы помочь новому коллеге освоиться, если бы твою нагрузку уменьшили?"
+            },
+            {
+              "text": "Would the shop be willing to reserve the cabinet if we paid a deposit?",
+              "translation_ru": "Магазин согласился бы зарезервировать шкаф, если бы мы внесли задаток?"
+            },
+            {
+              "text": "Would she be willing to lend us her tent if we collected it ourselves?",
+              "translation_ru": "Она согласилась бы одолжить нам палатку, если бы мы сами её забрали?"
+            },
+            {
+              "text": "Would the residents be willing to share gardening tools if secure storage were available?",
+              "translation_ru": "Жители согласились бы совместно пользоваться садовыми инструментами, если бы было надёжное место для хранения?"
+            },
+            {
+              "text": "Would your tutor be willing to review a recording if you kept it under five minutes?",
+              "translation_ru": "Твоя преподавательница согласилась бы разобрать запись, если бы она длилась меньше пяти минут?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wäre [Subjekt] bereit, [zu + Infinitiv], wenn [Bedingung im Konjunktiv II]?",
+          "example": "Wärst du bereit, einen neuen Kollegen einzuarbeiten, wenn deine Arbeitsbelastung geringer wäre?",
+          "translation": "Ты согласился бы помочь новому коллеге освоиться, если бы твою нагрузку уменьшили?",
+          "examples": [
+            {
+              "text": "Wärst du bereit, einen neuen Kollegen einzuarbeiten, wenn deine Arbeitsbelastung geringer wäre?",
+              "translation_ru": "Ты согласился бы помочь новому коллеге освоиться, если бы твою нагрузку уменьшили?"
+            },
+            {
+              "text": "Wäre das Geschäft bereit, den Schrank zu reservieren, wenn wir eine Anzahlung leisten würden?",
+              "translation_ru": "Магазин согласился бы зарезервировать шкаф, если бы мы внесли задаток?"
+            },
+            {
+              "text": "Wäre sie bereit, uns ihr Zelt zu leihen, wenn wir es selbst abholen würden?",
+              "translation_ru": "Она согласилась бы одолжить нам палатку, если бы мы сами её забрали?"
+            },
+            {
+              "text": "Wären die Anwohner bereit, Gartengeräte gemeinsam zu nutzen, wenn es einen sicheren Lagerraum gäbe?",
+              "translation_ru": "Жители согласились бы совместно пользоваться садовыми инструментами, если бы было надёжное место для хранения?"
+            },
+            {
+              "text": "Wäre deine Lehrerin bereit, eine Aufnahme durchzusehen, wenn sie kürzer als fünf Minuten wäre?",
+              "translation_ru": "Твоя преподавательница согласилась бы разобрать запись, если бы она длилась меньше пяти минут?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Would [subject] be willing to [verb] if [past-form condition]?",
+        "Wäre [Subjekt] bereit, [zu + Infinitiv], wenn [Bedingung im Konjunktiv II]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC003",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Сколько … может позволить себе …?",
+      "title_en": "How much [resource] can [subject] afford to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Уточните допустимую затрату денег, времени или другого ресурса. Глагол выражает не просто наличие ресурса, а приемлемость его расхода.",
+      "editorial_descriptions": {
+        "en": "Ask how much of a resource can be spent or lost without unacceptable consequences. Afford to concerns an acceptable cost, not just physical ability.",
+        "ru": "Уточните допустимую затрату денег, времени или другого ресурса. Глагол выражает не просто наличие ресурса, а приемлемость его расхода."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How much [resource] can [subject] afford to [verb]?",
+          "example": "How much time can we afford to spend polishing the slides before the rehearsal?",
+          "translation": "Сколько времени мы можем позволить себе потратить на доработку слайдов до репетиции?",
+          "examples": [
+            {
+              "text": "How much time can we afford to spend polishing the slides before the rehearsal?",
+              "translation_ru": "Сколько времени мы можем позволить себе потратить на доработку слайдов до репетиции?"
+            },
+            {
+              "text": "How much money can you afford to tie up in a rental deposit?",
+              "translation_ru": "Сколько денег ты можешь позволить себе заморозить в залоге за аренду?"
+            },
+            {
+              "text": "How much storage space can the archive afford to lose during the renovation?",
+              "translation_ru": "Какой площади для хранения архив может позволить себе лишиться на время ремонта?"
+            },
+            {
+              "text": "How much fuel can the expedition afford to use on a detour?",
+              "translation_ru": "Сколько топлива экспедиция может позволить себе потратить на объезд?"
+            },
+            {
+              "text": "How much income can she afford to give up while retraining?",
+              "translation_ru": "От какой части дохода она может позволить себе отказаться на время переквалификации?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie viel [Ressource] kann [Subjekt] sich leisten, [zu + Infinitiv]?",
+          "example": "Wie viel Zeit können wir uns leisten, vor der Probe mit dem Feinschliff an den Folien zu verbringen?",
+          "translation": "Сколько времени мы можем позволить себе потратить на доработку слайдов до репетиции?",
+          "examples": [
+            {
+              "text": "Wie viel Zeit können wir uns leisten, vor der Probe mit dem Feinschliff an den Folien zu verbringen?",
+              "translation_ru": "Сколько времени мы можем позволить себе потратить на доработку слайдов до репетиции?"
+            },
+            {
+              "text": "Wie viel Geld kannst du dir leisten, in einer Mietkaution zu binden?",
+              "translation_ru": "Сколько денег ты можешь позволить себе заморозить в залоге за аренду?"
+            },
+            {
+              "text": "Wie viel Lagerfläche kann das Archiv sich leisten, während des Umbaus zu verlieren?",
+              "translation_ru": "Какой площади для хранения архив может позволить себе лишиться на время ремонта?"
+            },
+            {
+              "text": "Wie viel Treibstoff kann die Expedition sich leisten, für einen Umweg zu verbrauchen?",
+              "translation_ru": "Сколько топлива экспедиция может позволить себе потратить на объезд?"
+            },
+            {
+              "text": "Wie viel Einkommen kann sie sich leisten, während ihrer Umschulung aufzugeben?",
+              "translation_ru": "От какой части дохода она может позволить себе отказаться на время переквалификации?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How much [resource] can [subject] afford to [verb]?",
+        "Wie viel [Ressource] kann [Subjekt] sich leisten, [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC004",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "На что … готов в обмен на …?",
+      "title_en": "What is/are [subject] prepared to [verb] in exchange for [noun]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Спросите о встречной уступке или действии. Готовность относится к конкретному обмену, а не к общей способности человека.",
+      "editorial_descriptions": {
+        "en": "Ask what someone is prepared to offer or concede in a specific exchange. The question makes the cost of a requested benefit explicit.",
+        "ru": "Спросите о встречной уступке или действии. Готовность относится к конкретному обмену, а не к общей способности человека."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What is/are [subject] prepared to [verb] in exchange for [noun]?",
+          "example": "What are you prepared to give up in exchange for a shorter working week?",
+          "translation": "От чего ты готов отказаться в обмен на более короткую рабочую неделю?",
+          "examples": [
+            {
+              "text": "What are you prepared to give up in exchange for a shorter working week?",
+              "translation_ru": "От чего ты готов отказаться в обмен на более короткую рабочую неделю?"
+            },
+            {
+              "text": "What is the supplier prepared to offer in exchange for a longer contract?",
+              "translation_ru": "Что поставщик готов предложить в обмен на более долгий контракт?"
+            },
+            {
+              "text": "What are the neighbours prepared to do in exchange for access to the shared workshop?",
+              "translation_ru": "Что соседи готовы делать в обмен на доступ к общей мастерской?"
+            },
+            {
+              "text": "What is she prepared to contribute in exchange for a place at the exhibition?",
+              "translation_ru": "Что она готова внести в обмен на место на выставке?"
+            },
+            {
+              "text": "What are we prepared to change in exchange for a more predictable delivery schedule?",
+              "translation_ru": "Что мы готовы изменить в обмен на более предсказуемый график поставок?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was ist/sind [Subjekt] bereit, im Austausch für [Nomen] [zu + Infinitiv]?",
+          "example": "Was bist du bereit, im Austausch für eine kürzere Arbeitswoche aufzugeben?",
+          "translation": "От чего ты готов отказаться в обмен на более короткую рабочую неделю?",
+          "examples": [
+            {
+              "text": "Was bist du bereit, im Austausch für eine kürzere Arbeitswoche aufzugeben?",
+              "translation_ru": "От чего ты готов отказаться в обмен на более короткую рабочую неделю?"
+            },
+            {
+              "text": "Was ist der Lieferant bereit, im Austausch für einen längeren Vertrag anzubieten?",
+              "translation_ru": "Что поставщик готов предложить в обмен на более долгий контракт?"
+            },
+            {
+              "text": "Was sind die Nachbarn bereit, im Austausch für den Zugang zur gemeinsamen Werkstatt zu tun?",
+              "translation_ru": "Что соседи готовы делать в обмен на доступ к общей мастерской?"
+            },
+            {
+              "text": "Was ist sie bereit, im Austausch für einen Platz auf der Ausstellung beizutragen?",
+              "translation_ru": "Что она готова внести в обмен на место на выставке?"
+            },
+            {
+              "text": "Was sind wir bereit, im Austausch für einen verlässlicheren Lieferplan zu ändern?",
+              "translation_ru": "Что мы готовы изменить в обмен на более предсказуемый график поставок?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What is/are [subject] prepared to [verb] in exchange for [noun]?",
+        "Was ist/sind [Subjekt] bereit, im Austausch für [Nomen] [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC005",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Стоит ли … того, чтобы …?",
+      "title_en": "Is [verb-ing] worth [cost or verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Сопоставьте действие с его ценой. После английского прилагательного используйте существительное или отглагольную форму, не инфинитив с частицей.",
+      "editorial_descriptions": {
+        "en": "Weigh an action against its cost. Worth takes a noun phrase or an -ing form, not a to-infinitive; the cost can be effort, money or a consequence.",
+        "ru": "Сопоставьте действие с его ценой. После английского прилагательного используйте существительное или отглагольную форму, не инфинитив с частицей."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Is [verb-ing] worth [cost or verb-ing]?",
+          "example": "Is saving a little on rent worth adding an hour to your daily commute?",
+          "translation": "Стоит ли небольшая экономия на аренде лишнего часа ежедневной дороги?",
+          "examples": [
+            {
+              "text": "Is saving a little on rent worth adding an hour to your daily commute?",
+              "translation_ru": "Стоит ли небольшая экономия на аренде лишнего часа ежедневной дороги?"
+            },
+            {
+              "text": "Is repairing this camera worth the cost of a replacement sensor?",
+              "translation_ru": "Стоит ли ремонтировать эту камеру с учётом цены нового сенсора?"
+            },
+            {
+              "text": "Is winning the argument worth making the rest of the dinner uncomfortable?",
+              "translation_ru": "Стоит ли победа в споре неловкости за столом до конца ужина?"
+            },
+            {
+              "text": "Is taking the shortcut worth carrying our bicycles up three flights of stairs?",
+              "translation_ru": "Стоит ли короткий путь того, чтобы нести велосипеды вверх на три этажа?"
+            },
+            {
+              "text": "Is keeping every old receipt worth the space those boxes take up?",
+              "translation_ru": "Стоит ли хранить все старые чеки ради места, которое занимают эти коробки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ist es [Aufwand] wert, [zu + Infinitiv]?",
+          "example": "Ist es den täglichen zusätzlichen Pendelaufwand von einer Stunde wert, etwas Miete zu sparen?",
+          "translation": "Стоит ли небольшая экономия на аренде лишнего часа ежедневной дороги?",
+          "examples": [
+            {
+              "text": "Ist es den täglichen zusätzlichen Pendelaufwand von einer Stunde wert, etwas Miete zu sparen?",
+              "translation_ru": "Стоит ли небольшая экономия на аренде лишнего часа ежедневной дороги?"
+            },
+            {
+              "text": "Ist es die Kosten eines neuen Sensors wert, diese Kamera zu reparieren?",
+              "translation_ru": "Стоит ли ремонтировать эту камеру с учётом цены нового сенсора?"
+            },
+            {
+              "text": "Ist es die unangenehme Stimmung beim restlichen Abendessen wert, den Streit zu gewinnen?",
+              "translation_ru": "Стоит ли победа в споре неловкости за столом до конца ужина?"
+            },
+            {
+              "text": "Ist es die Mühe wert, unsere Fahrräder drei Stockwerke hochzutragen, um die Abkürzung zu nehmen?",
+              "translation_ru": "Стоит ли короткий путь того, чтобы нести велосипеды вверх на три этажа?"
+            },
+            {
+              "text": "Ist es den Platz wert, den diese Kartons beanspruchen, jeden alten Beleg aufzubewahren?",
+              "translation_ru": "Стоит ли хранить все старые чеки ради места, которое занимают эти коробки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Is [verb-ing] worth [cost or verb-ing]?",
+        "Ist es [Aufwand] wert, [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC006",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Какой смысл …, если …?",
+      "title_en": "What is the point of [verb-ing] if [clause]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Поставьте под вопрос пользу действия при определённом условии. Это может быть искренний запрос на объяснение или критическая реплика.",
+      "editorial_descriptions": {
+        "en": "Question the usefulness of an action under a stated condition. It may be a genuine request for a rationale or a critical challenge, depending on tone.",
+        "ru": "Поставьте под вопрос пользу действия при определённом условии. Это может быть искренний запрос на объяснение или критическая реплика."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What is the point of [verb-ing] if [clause]?",
+          "example": "What is the point of collecting feedback if nobody reads the comments?",
+          "translation": "Какой смысл собирать обратную связь, если никто не читает комментарии?",
+          "examples": [
+            {
+              "text": "What is the point of collecting feedback if nobody reads the comments?",
+              "translation_ru": "Какой смысл собирать обратную связь, если никто не читает комментарии?"
+            },
+            {
+              "text": "What is the point of buying a season ticket if you can only attend twice?",
+              "translation_ru": "Какой смысл покупать абонемент, если ты сможешь прийти только два раза?"
+            },
+            {
+              "text": "What is the point of locking the gate if the fence is broken?",
+              "translation_ru": "Какой смысл запирать ворота, если забор сломан?"
+            },
+            {
+              "text": "What is the point of memorising the speech if you do not understand the argument?",
+              "translation_ru": "Какой смысл заучивать речь, если ты не понимаешь ход рассуждения?"
+            },
+            {
+              "text": "What is the point of starting another group chat if the details are already in the calendar?",
+              "translation_ru": "Какой смысл заводить ещё один групповой чат, если все подробности уже есть в календаре?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Welchen Sinn hat es, [zu + Infinitiv], wenn [Aussage]?",
+          "example": "Welchen Sinn hat es, Rückmeldungen zu sammeln, wenn niemand die Kommentare liest?",
+          "translation": "Какой смысл собирать обратную связь, если никто не читает комментарии?",
+          "examples": [
+            {
+              "text": "Welchen Sinn hat es, Rückmeldungen zu sammeln, wenn niemand die Kommentare liest?",
+              "translation_ru": "Какой смысл собирать обратную связь, если никто не читает комментарии?"
+            },
+            {
+              "text": "Welchen Sinn hat es, eine Dauerkarte zu kaufen, wenn du nur zweimal kommen kannst?",
+              "translation_ru": "Какой смысл покупать абонемент, если ты сможешь прийти только два раза?"
+            },
+            {
+              "text": "Welchen Sinn hat es, das Tor abzuschließen, wenn der Zaun kaputt ist?",
+              "translation_ru": "Какой смысл запирать ворота, если забор сломан?"
+            },
+            {
+              "text": "Welchen Sinn hat es, die Rede auswendig zu lernen, wenn du die Argumentation nicht verstehst?",
+              "translation_ru": "Какой смысл заучивать речь, если ты не понимаешь ход рассуждения?"
+            },
+            {
+              "text": "Welchen Sinn hat es, einen weiteren Gruppenchat zu eröffnen, wenn die Einzelheiten schon im Kalender stehen?",
+              "translation_ru": "Какой смысл заводить ещё один групповой чат, если все подробности уже есть в календаре?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What is the point of [verb-ing] if [clause]?",
+        "Welchen Sinn hat es, [zu + Infinitiv], wenn [Aussage]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC007",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Как насчёт … вместо …?",
+      "title_en": "How about [verb-ing] instead of [verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Предложите конкретную замену текущему способу действий. Две отглагольные формы в английском делают альтернативу симметричной.",
+      "editorial_descriptions": {
+        "en": "Suggest a concrete alternative to the current approach. Both actions use -ing forms after how about and instead of; keep their meanings parallel.",
+        "ru": "Предложите конкретную замену текущему способу действий. Две отглагольные формы в английском делают альтернативу симметричной."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How about [verb-ing] instead of [verb-ing]?",
+          "example": "How about borrowing a drill instead of buying one for a single shelf?",
+          "translation": "Как насчёт того, чтобы одолжить дрель, а не покупать её ради одной полки?",
+          "examples": [
+            {
+              "text": "How about borrowing a drill instead of buying one for a single shelf?",
+              "translation_ru": "Как насчёт того, чтобы одолжить дрель, а не покупать её ради одной полки?"
+            },
+            {
+              "text": "How about rehearsing the opening aloud instead of rewriting it again?",
+              "translation_ru": "Как насчёт того, чтобы проговорить начало вслух, а не переписывать его снова?"
+            },
+            {
+              "text": "How about splitting the journey over two days instead of driving through the night?",
+              "translation_ru": "Как насчёт того, чтобы разделить поездку на два дня, а не ехать всю ночь?"
+            },
+            {
+              "text": "How about testing the import on ten records instead of sending the entire file?",
+              "translation_ru": "Как насчёт того, чтобы проверить импорт на десяти записях, а не отправлять весь файл?"
+            },
+            {
+              "text": "How about inviting the neighbours for soup instead of organising a formal dinner?",
+              "translation_ru": "Как насчёт того, чтобы позвать соседей на суп, а не устраивать официальный ужин?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie wäre es damit, [zu + Infinitiv], statt [zu + Infinitiv]?",
+          "example": "Wie wäre es damit, eine Bohrmaschine auszuleihen, statt für ein einziges Regal eine zu kaufen?",
+          "translation": "Как насчёт того, чтобы одолжить дрель, а не покупать её ради одной полки?",
+          "examples": [
+            {
+              "text": "Wie wäre es damit, eine Bohrmaschine auszuleihen, statt für ein einziges Regal eine zu kaufen?",
+              "translation_ru": "Как насчёт того, чтобы одолжить дрель, а не покупать её ради одной полки?"
+            },
+            {
+              "text": "Wie wäre es damit, den Einstieg laut zu üben, statt ihn noch einmal umzuschreiben?",
+              "translation_ru": "Как насчёт того, чтобы проговорить начало вслух, а не переписывать его снова?"
+            },
+            {
+              "text": "Wie wäre es damit, die Fahrt auf zwei Tage aufzuteilen, statt die Nacht durchzufahren?",
+              "translation_ru": "Как насчёт того, чтобы разделить поездку на два дня, а не ехать всю ночь?"
+            },
+            {
+              "text": "Wie wäre es damit, den Import mit zehn Datensätzen zu testen, statt die ganze Datei zu schicken?",
+              "translation_ru": "Как насчёт того, чтобы проверить импорт на десяти записях, а не отправлять весь файл?"
+            },
+            {
+              "text": "Wie wäre es damit, die Nachbarn zu einer Suppe einzuladen, statt ein förmliches Abendessen zu veranstalten?",
+              "translation_ru": "Как насчёт того, чтобы позвать соседей на суп, а не устраивать официальный ужин?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How about [verb-ing] instead of [verb-ing]?",
+        "Wie wäre es damit, [zu + Infinitiv], statt [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC008",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Что … выиграет, если …?",
+      "title_en": "What would [subject] gain by [verb-ing]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Выясните ожидаемую пользу предлагаемого действия. Предлог вводит способ получения выгоды; ответ может показать, что её почти нет.",
+      "editorial_descriptions": {
+        "en": "Ask what benefit an action would produce. By introduces the means of gaining something; the answer may reveal that the benefit is small or absent.",
+        "ru": "Выясните ожидаемую пользу предлагаемого действия. Предлог вводит способ получения выгоды; ответ может показать, что её почти нет."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would [subject] gain by [verb-ing]?",
+          "example": "What would we gain by moving the review to an earlier date?",
+          "translation": "Что мы выиграли бы, перенеся обсуждение на более раннюю дату?",
+          "examples": [
+            {
+              "text": "What would we gain by moving the review to an earlier date?",
+              "translation_ru": "Что мы выиграли бы, перенеся обсуждение на более раннюю дату?"
+            },
+            {
+              "text": "What would you gain by replacing a phone that still works perfectly?",
+              "translation_ru": "Что ты выиграл бы, заменив телефон, который ещё отлично работает?"
+            },
+            {
+              "text": "What would the café gain by offering a smaller menu?",
+              "translation_ru": "Что кафе выиграло бы, сократив меню?"
+            },
+            {
+              "text": "What would she gain by keeping a written record of each negotiation?",
+              "translation_ru": "Что она выиграла бы, записывая итоги каждых переговоров?"
+            },
+            {
+              "text": "What would the players gain by watching footage of last week's match?",
+              "translation_ru": "Что игроки выиграли бы, посмотрев запись матча прошлой недели?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was würde [Subjekt] dadurch gewinnen, dass [Handlung]?",
+          "example": "Was würden wir dadurch gewinnen, dass wir die Besprechung auf einen früheren Termin verlegen?",
+          "translation": "Что мы выиграли бы, перенеся обсуждение на более раннюю дату?",
+          "examples": [
+            {
+              "text": "Was würden wir dadurch gewinnen, dass wir die Besprechung auf einen früheren Termin verlegen?",
+              "translation_ru": "Что мы выиграли бы, перенеся обсуждение на более раннюю дату?"
+            },
+            {
+              "text": "Was würdest du dadurch gewinnen, dass du ein noch einwandfrei funktionierendes Handy ersetzt?",
+              "translation_ru": "Что ты выиграл бы, заменив телефон, который ещё отлично работает?"
+            },
+            {
+              "text": "Was würde das Café dadurch gewinnen, dass es eine kleinere Speisekarte anbietet?",
+              "translation_ru": "Что кафе выиграло бы, сократив меню?"
+            },
+            {
+              "text": "Was würde sie dadurch gewinnen, dass sie jede Verhandlung schriftlich festhält?",
+              "translation_ru": "Что она выиграла бы, записывая итоги каждых переговоров?"
+            },
+            {
+              "text": "Was würden die Spieler dadurch gewinnen, dass sie sich Aufnahmen des Spiels von letzter Woche ansehen?",
+              "translation_ru": "Что игроки выиграли бы, посмотрев запись матча прошлой недели?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would [subject] gain by [verb-ing]?",
+        "Was würde [Subjekt] dadurch gewinnen, dass [Handlung]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC009",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Где … проводит границу между … и …?",
+      "title_en": "Where do/does [subject] draw the line between [X] and [Y]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Попросите назвать критерий, отделяющий допустимое от чрезмерного или одно понятие от другого. Это вопрос о границе, а не только о различиях.",
+      "editorial_descriptions": {
+        "en": "Ask for the boundary between two categories or between acceptable and excessive behaviour. A useful answer supplies a criterion, not just examples of each side.",
+        "ru": "Попросите назвать критерий, отделяющий допустимое от чрезмерного или одно понятие от другого. Это вопрос о границе, а не только о различиях."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Where do/does [subject] draw the line between [X] and [Y]?",
+          "example": "Where do you draw the line between helping a colleague and doing their job for them?",
+          "translation": "Где ты проводишь границу между помощью коллеге и выполнением его работы за него?",
+          "examples": [
+            {
+              "text": "Where do you draw the line between helping a colleague and doing their job for them?",
+              "translation_ru": "Где ты проводишь границу между помощью коллеге и выполнением его работы за него?"
+            },
+            {
+              "text": "Where does the teacher draw the line between a hint and giving away the answer?",
+              "translation_ru": "Где преподавательница проводит границу между подсказкой и готовым ответом?"
+            },
+            {
+              "text": "Where do we draw the line between useful reminders and constant interruptions?",
+              "translation_ru": "Где мы проводим границу между полезными напоминаниями и постоянными отвлечениями?"
+            },
+            {
+              "text": "Where do the organisers draw the line between a lively debate and personal attacks?",
+              "translation_ru": "Где организаторы проводят границу между оживлённым спором и личными нападками?"
+            },
+            {
+              "text": "Where does she draw the line between restoring an old chair and replacing too much of it?",
+              "translation_ru": "Где она проводит границу между реставрацией старого стула и заменой слишком большой части оригинальных деталей?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wo zieht [Subjekt] die Grenze zwischen [X] und [Y]?",
+          "example": "Wo ziehst du die Grenze zwischen der Unterstützung eines Kollegen und der Übernahme seiner Arbeit?",
+          "translation": "Где ты проводишь границу между помощью коллеге и выполнением его работы за него?",
+          "examples": [
+            {
+              "text": "Wo ziehst du die Grenze zwischen der Unterstützung eines Kollegen und der Übernahme seiner Arbeit?",
+              "translation_ru": "Где ты проводишь границу между помощью коллеге и выполнением его работы за него?"
+            },
+            {
+              "text": "Wo zieht die Lehrerin die Grenze zwischen einem Hinweis und dem Verraten der Lösung?",
+              "translation_ru": "Где преподавательница проводит границу между подсказкой и готовым ответом?"
+            },
+            {
+              "text": "Wo ziehen wir die Grenze zwischen nützlichen Erinnerungen und ständigen Unterbrechungen?",
+              "translation_ru": "Где мы проводим границу между полезными напоминаниями и постоянными отвлечениями?"
+            },
+            {
+              "text": "Wo ziehen die Veranstalter die Grenze zwischen einer lebhaften Debatte und persönlichen Angriffen?",
+              "translation_ru": "Где организаторы проводят границу между оживлённым спором и личными нападками?"
+            },
+            {
+              "text": "Wo zieht sie die Grenze zwischen der Restaurierung eines alten Stuhls und dem Austausch zu vieler Originalteile?",
+              "translation_ru": "Где она проводит границу между реставрацией старого стула и заменой слишком большой части оригинальных деталей?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Where do/does [subject] draw the line between [X] and [Y]?",
+        "Wo zieht [Subjekt] die Grenze zwischen [X] und [Y]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SQC010",
+      "set_id": "SQC",
+      "group_id": "SQC",
+      "title_ru": "Как далеко … готов зайти ради …?",
+      "title_en": "How far is/are [subject] willing to go to [verb]?",
+      "level": "B2–C1",
+      "metaphor_ru": "Обсудите предел усилий или уступок ради цели. В отличие от расстояния, здесь обычно спрашивают о допустимых действиях.",
+      "editorial_descriptions": {
+        "en": "Ask about the limits of effort or concessions in pursuit of a goal. Far is usually figurative here rather than a measure of physical distance.",
+        "ru": "Обсудите предел усилий или уступок ради цели. В отличие от расстояния, здесь обычно спрашивают о допустимых действиях."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How far is/are [subject] willing to go to [verb]?",
+          "example": "How far are you willing to go to keep every weekend free from work?",
+          "translation": "Как далеко ты готов зайти, чтобы все выходные оставались свободными от работы?",
+          "examples": [
+            {
+              "text": "How far are you willing to go to keep every weekend free from work?",
+              "translation_ru": "Как далеко ты готов зайти, чтобы все выходные оставались свободными от работы?"
+            },
+            {
+              "text": "How far is the club willing to go to preserve the old rehearsal space?",
+              "translation_ru": "Как далеко клуб готов зайти ради сохранения старой репетиционной комнаты?"
+            },
+            {
+              "text": "How far are the buyers willing to go to secure the house before winter?",
+              "translation_ru": "Как далеко покупатели готовы зайти, чтобы получить дом до зимы?"
+            },
+            {
+              "text": "How far is she willing to go to avoid admitting that the estimate was wrong?",
+              "translation_ru": "Как далеко она готова зайти, чтобы не признавать ошибку в оценке?"
+            },
+            {
+              "text": "How far are we willing to go to make the service accessible without raising the price?",
+              "translation_ru": "Как далеко мы готовы зайти, чтобы сделать сервис доступным, не повышая цену?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie weit ist/sind [Subjekt] bereit zu gehen, um [zu + Infinitiv]?",
+          "example": "Wie weit bist du bereit zu gehen, um jedes Wochenende von Arbeit freizuhalten?",
+          "translation": "Как далеко ты готов зайти, чтобы все выходные оставались свободными от работы?",
+          "examples": [
+            {
+              "text": "Wie weit bist du bereit zu gehen, um jedes Wochenende von Arbeit freizuhalten?",
+              "translation_ru": "Как далеко ты готов зайти, чтобы все выходные оставались свободными от работы?"
+            },
+            {
+              "text": "Wie weit ist der Verein bereit zu gehen, um den alten Proberaum zu erhalten?",
+              "translation_ru": "Как далеко клуб готов зайти ради сохранения старой репетиционной комнаты?"
+            },
+            {
+              "text": "Wie weit sind die Käufer bereit zu gehen, um sich das Haus noch vor dem Winter zu sichern?",
+              "translation_ru": "Как далеко покупатели готовы зайти, чтобы получить дом до зимы?"
+            },
+            {
+              "text": "Wie weit ist sie bereit zu gehen, um nicht zugeben zu müssen, dass die Schätzung falsch war?",
+              "translation_ru": "Как далеко она готова зайти, чтобы не признавать ошибку в оценке?"
+            },
+            {
+              "text": "Wie weit sind wir bereit zu gehen, um den Dienst zugänglich zu machen, ohne den Preis zu erhöhen?",
+              "translation_ru": "Как далеко мы готовы зайти, чтобы сделать сервис доступным, не повышая цену?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How far is/are [subject] willing to go to [verb]?",
+        "Wie weit ist/sind [Subjekt] bereit zu gehen, um [zu + Infinitiv]?"
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

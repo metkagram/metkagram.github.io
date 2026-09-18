@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SVA",
+  "patterns": [
+    {
+      "id": "SVA001",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Одобрять то, что … делает …",
+      "title_en": "[Subject] approve(s) of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите отношение к действию, а не официальное утверждение документа. В английском после предлога нужна отглагольная форма.",
+      "editorial_descriptions": {
+        "en": "Express approval of an action, rather than formally authorising a document. Approve of takes an -ing form; approve a proposal has a different complement and meaning.",
+        "ru": "Выразите отношение к действию, а не официальное утверждение документа. В английском после предлога нужна отглагольная форма."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] approve(s) of [verb-ing].",
+          "example": "I approve of asking awkward questions before we sign anything.",
+          "translation": "Я одобряю то, что мы задаём неудобные вопросы, прежде чем что-то подписывать.",
+          "examples": [
+            {
+              "text": "I approve of asking awkward questions before we sign anything.",
+              "translation_ru": "Я одобряю то, что мы задаём неудобные вопросы, прежде чем что-то подписывать."
+            },
+            {
+              "text": "Her parents did not approve of selling the piano to buy a motorcycle.",
+              "translation_ru": "Её родители не одобрили продажу пианино ради покупки мотоцикла."
+            },
+            {
+              "text": "Do you approve of sharing the workshop with people outside the club?",
+              "translation_ru": "Ты одобряешь то, что мы делимся мастерской с людьми не из клуба?"
+            },
+            {
+              "text": "The curator has always approved of letting visitors sketch in the galleries.",
+              "translation_ru": "Куратор всегда одобряла возможность для посетителей рисовать в выставочных залах."
+            },
+            {
+              "text": "We would not approve of publishing someone's photograph without asking them.",
+              "translation_ru": "Мы не одобрили бы публикацию чужой фотографии без согласия человека."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] findet es gut, dass [Handlung].",
+          "example": "Ich finde es gut, dass wir unbequeme Fragen stellen, bevor wir etwas unterschreiben.",
+          "translation": "Я одобряю то, что мы задаём неудобные вопросы, прежде чем что-то подписывать.",
+          "examples": [
+            {
+              "text": "Ich finde es gut, dass wir unbequeme Fragen stellen, bevor wir etwas unterschreiben.",
+              "translation_ru": "Я одобряю то, что мы задаём неудобные вопросы, прежде чем что-то подписывать."
+            },
+            {
+              "text": "Ihre Eltern fanden es nicht gut, dass sie das Klavier verkaufte, um ein Motorrad zu kaufen.",
+              "translation_ru": "Её родители не одобрили продажу пианино ради покупки мотоцикла."
+            },
+            {
+              "text": "Findest du es gut, dass wir die Werkstatt mit Leuten außerhalb des Vereins teilen?",
+              "translation_ru": "Ты одобряешь то, что мы делимся мастерской с людьми не из клуба?"
+            },
+            {
+              "text": "Die Kuratorin hat es immer gut gefunden, dass Besucher in den Ausstellungsräumen zeichnen dürfen.",
+              "translation_ru": "Куратор всегда одобряла возможность для посетителей рисовать в выставочных залах."
+            },
+            {
+              "text": "Wir fänden es nicht gut, wenn jemand das Foto einer Person veröffentlichen würde, ohne sie zu fragen.",
+              "translation_ru": "Мы не одобрили бы публикацию чужой фотографии без согласия человека."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] approve(s) of [verb-ing].",
+        "[Subjekt] findet es gut, dass [Handlung]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA002",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Возражать против того, чтобы …",
+      "title_en": "[Subject] object(s) to [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите принципиальное или практическое возражение. Английская частица здесь является предлогом, поэтому после неё используется отглагольная форма.",
+      "editorial_descriptions": {
+        "en": "Express a practical or principled objection. To is a preposition here, so use an -ing form rather than an infinitive. German often uses Einwände dagegen haben.",
+        "ru": "Выразите принципиальное или практическое возражение. Английская частица здесь является предлогом, поэтому после неё используется отглагольная форма."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] object(s) to [verb-ing].",
+          "example": "I object to being charged for a service I never requested.",
+          "translation": "Я возражаю против того, чтобы с меня брали деньги за услугу, которую я не заказывал.",
+          "examples": [
+            {
+              "text": "I object to being charged for a service I never requested.",
+              "translation_ru": "Я возражаю против того, чтобы с меня брали деньги за услугу, которую я не заказывал."
+            },
+            {
+              "text": "The residents objected to cutting down the mature trees beside the playground.",
+              "translation_ru": "Жители возражали против вырубки взрослых деревьев рядом с детской площадкой."
+            },
+            {
+              "text": "Would you object to moving the rehearsal to Saturday morning?",
+              "translation_ru": "Ты возражал бы против переноса репетиции на утро субботы?"
+            },
+            {
+              "text": "She has never objected to explaining her calculations to a second reviewer.",
+              "translation_ru": "Она никогда не возражала против того, чтобы объяснить свои расчёты второму проверяющему."
+            },
+            {
+              "text": "We do not object to paying more for parts that can actually be replaced.",
+              "translation_ru": "Мы не возражаем против более высокой цены за детали, которые действительно можно заменить."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat Einwände dagegen, [zu + Infinitiv].",
+          "example": "Ich habe Einwände dagegen, für eine nie bestellte Leistung zur Kasse gebeten zu werden.",
+          "translation": "Я возражаю против того, чтобы с меня брали деньги за услугу, которую я не заказывал.",
+          "examples": [
+            {
+              "text": "Ich habe Einwände dagegen, für eine nie bestellte Leistung zur Kasse gebeten zu werden.",
+              "translation_ru": "Я возражаю против того, чтобы с меня брали деньги за услугу, которую я не заказывал."
+            },
+            {
+              "text": "Die Anwohner hatten Einwände dagegen, die alten Bäume neben dem Spielplatz zu fällen.",
+              "translation_ru": "Жители возражали против вырубки взрослых деревьев рядом с детской площадкой."
+            },
+            {
+              "text": "Hättest du Einwände dagegen, die Probe auf Samstagvormittag zu verlegen?",
+              "translation_ru": "Ты возражал бы против переноса репетиции на утро субботы?"
+            },
+            {
+              "text": "Sie hat nie Einwände dagegen gehabt, ihre Berechnungen einem zweiten Prüfer zu erläutern.",
+              "translation_ru": "Она никогда не возражала против того, чтобы объяснить свои расчёты второму проверяющему."
+            },
+            {
+              "text": "Wir haben keine Einwände dagegen, für tatsächlich austauschbare Teile mehr zu bezahlen.",
+              "translation_ru": "Мы не возражаем против более высокой цены за детали, которые действительно можно заменить."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] object(s) to [verb-ing].",
+        "[Subjekt] hat Einwände dagegen, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA003",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Воздерживаться от …",
+      "title_en": "[Subject] refrain(s) from [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите сознательное решение не делать что-либо. Английский оборот несколько формальнее простого отказа и часто используется в просьбах.",
+      "editorial_descriptions": {
+        "en": "Describe deliberately holding back from an action. Refrain from is somewhat formal and often appears in requests; it is not merely failing to act.",
+        "ru": "Опишите сознательное решение не делать что-либо. Английский оборот несколько формальнее простого отказа и часто используется в просьбах."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] refrain(s) from [verb-ing].",
+          "example": "Please refrain from moving the exhibits, even if the labels are hard to read.",
+          "translation": "Пожалуйста, не передвигайте экспонаты, даже если надписи трудно прочитать.",
+          "examples": [
+            {
+              "text": "Please refrain from moving the exhibits, even if the labels are hard to read.",
+              "translation_ru": "Пожалуйста, не передвигайте экспонаты, даже если надписи трудно прочитать."
+            },
+            {
+              "text": "I refrained from commenting until I had heard both versions of the story.",
+              "translation_ru": "Я воздержался от комментариев, пока не услышал обе версии истории."
+            },
+            {
+              "text": "She has refrained from checking work messages during family dinners.",
+              "translation_ru": "Она воздерживалась от чтения рабочих сообщений за семейным ужином."
+            },
+            {
+              "text": "Can we refrain from changing the requirements while the test is running?",
+              "translation_ru": "Можем мы воздержаться от изменения требований, пока идёт тест?"
+            },
+            {
+              "text": "The reviewer refrained from guessing what the missing chapter might contain.",
+              "translation_ru": "Рецензент воздержался от догадок о том, что может содержаться в отсутствующей главе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] verzichtet darauf, [zu + Infinitiv].",
+          "example": "Bitte verzichten Sie darauf, die Ausstellungsstücke zu bewegen, auch wenn die Beschriftungen schwer zu lesen sind.",
+          "translation": "Пожалуйста, не передвигайте экспонаты, даже если надписи трудно прочитать.",
+          "examples": [
+            {
+              "text": "Bitte verzichten Sie darauf, die Ausstellungsstücke zu bewegen, auch wenn die Beschriftungen schwer zu lesen sind.",
+              "translation_ru": "Пожалуйста, не передвигайте экспонаты, даже если надписи трудно прочитать."
+            },
+            {
+              "text": "Ich verzichtete darauf, mich zu äußern, bis ich beide Versionen der Geschichte gehört hatte.",
+              "translation_ru": "Я воздержался от комментариев, пока не услышал обе версии истории."
+            },
+            {
+              "text": "Sie hat darauf verzichtet, beim Abendessen mit der Familie berufliche Nachrichten zu lesen.",
+              "translation_ru": "Она воздерживалась от чтения рабочих сообщений за семейным ужином."
+            },
+            {
+              "text": "Können wir darauf verzichten, die Anforderungen während des laufenden Tests zu ändern?",
+              "translation_ru": "Можем мы воздержаться от изменения требований, пока идёт тест?"
+            },
+            {
+              "text": "Der Rezensent verzichtete darauf, über den Inhalt des fehlenden Kapitels zu spekulieren.",
+              "translation_ru": "Рецензент воздержался от догадок о том, что может содержаться в отсутствующей главе."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] refrain(s) from [verb-ing].",
+        "[Subjekt] verzichtet darauf, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA004",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Прибегнуть к … как к крайнему средству",
+      "title_en": "[Subject] resort(s) to [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите способ, к которому пришлось прибегнуть после неудачи других вариантов. Английский использует отглагольную форму; немецкий здесь называет запасное средство через существительное.",
+      "editorial_descriptions": {
+        "en": "Describe a measure used when better options have failed or seem unavailable. Resort to takes an -ing form; the German counterpart here names the fallback resource with auf plus an accusative noun phrase.",
+        "ru": "Опишите способ, к которому пришлось прибегнуть после неудачи других вариантов. Английский использует отглагольную форму; немецкий здесь называет запасное средство через существительное."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] resort(s) to [verb-ing].",
+          "example": "When the printer broke, we resorted to writing the place cards by hand.",
+          "translation": "Когда принтер сломался, нам пришлось писать карточки с именами от руки.",
+          "examples": [
+            {
+              "text": "When the printer broke, we resorted to writing the place cards by hand.",
+              "translation_ru": "Когда принтер сломался, нам пришлось писать карточки с именами от руки."
+            },
+            {
+              "text": "She has not resorted to borrowing money to keep the workshop open.",
+              "translation_ru": "Она пока не прибегала к займам, чтобы мастерская продолжала работать."
+            },
+            {
+              "text": "The tenants had resorted to collecting rainwater after the supply failed.",
+              "translation_ru": "После отключения воды жильцам пришлось собирать и использовать дождевую воду."
+            },
+            {
+              "text": "Will the organiser resort to showing a recording if the musicians cannot arrive in time?",
+              "translation_ru": "Прибегнет ли организатор к показу записи, если музыканты не успеют приехать?"
+            },
+            {
+              "text": "The editor refused to resort to inventing quotations to make the story livelier.",
+              "translation_ru": "Редактор отказался прибегать к выдуманным цитатам ради более живого рассказа."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] greift auf [Notlösung] zurück.",
+          "example": "Als der Drucker kaputtging, mussten wir auf handgeschriebene Tischkarten zurückgreifen.",
+          "translation": "Когда принтер сломался, нам пришлось писать карточки с именами от руки.",
+          "examples": [
+            {
+              "text": "Als der Drucker kaputtging, mussten wir auf handgeschriebene Tischkarten zurückgreifen.",
+              "translation_ru": "Когда принтер сломался, нам пришлось писать карточки с именами от руки."
+            },
+            {
+              "text": "Sie hat noch nicht auf geliehenes Geld zurückgegriffen, um die Werkstatt offen zu halten.",
+              "translation_ru": "Она пока не прибегала к займам, чтобы мастерская продолжала работать."
+            },
+            {
+              "text": "Nach dem Ausfall der Wasserversorgung hatten die Mieter auf gesammeltes Regenwasser zurückgegriffen.",
+              "translation_ru": "После отключения воды жильцам пришлось собирать и использовать дождевую воду."
+            },
+            {
+              "text": "Wird der Veranstalter auf eine Aufzeichnung zurückgreifen, wenn die Musiker nicht rechtzeitig kommen können?",
+              "translation_ru": "Прибегнет ли организатор к показу записи, если музыканты не успеют приехать?"
+            },
+            {
+              "text": "Der Redakteur weigerte sich, auf erfundene Zitate zurückzugreifen, um die Geschichte lebendiger zu machen.",
+              "translation_ru": "Редактор отказался прибегать к выдуманным цитатам ради более живого рассказа."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] resort(s) to [verb-ing].",
+        "[Subjekt] greift auf [Notlösung] zurück."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA005",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Быть близким к тому, чтобы …",
+      "title_en": "[Subject] come(s) close to [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите действие или результат, до которого оставалось немного. Это не означает, что он действительно произошёл; после английского предлога нужна отглагольная форма.",
+      "editorial_descriptions": {
+        "en": "Describe nearly reaching an outcome without asserting that it happened. To is a preposition, so it is followed by an -ing form rather than an infinitive.",
+        "ru": "Опишите действие или результат, до которого оставалось немного. Это не означает, что он действительно произошёл; после английского предлога нужна отглагольная форма."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] come(s) close to [verb-ing].",
+          "example": "We came close to missing the train because the platform number changed.",
+          "translation": "Мы чуть не опоздали на поезд, потому что поменялся номер платформы.",
+          "examples": [
+            {
+              "text": "We came close to missing the train because the platform number changed.",
+              "translation_ru": "Мы чуть не опоздали на поезд, потому что поменялся номер платформы."
+            },
+            {
+              "text": "She has come close to winning the regional baking contest twice.",
+              "translation_ru": "Она уже дважды была близка к победе в региональном конкурсе выпечки."
+            },
+            {
+              "text": "I came close to deleting the only copy of the interview recording.",
+              "translation_ru": "Я чуть не удалил единственную копию записи интервью."
+            },
+            {
+              "text": "The committee is coming close to reaching an agreement on the shared garden.",
+              "translation_ru": "Комитет уже близок к договорённости по общему саду."
+            },
+            {
+              "text": "Have you ever come close to abandoning a project just before it started working?",
+              "translation_ru": "Ты когда-нибудь был близок к тому, чтобы бросить проект как раз перед тем, как он начал работать?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ist nahe daran, [zu + Infinitiv].",
+          "example": "Wir waren nahe daran, den Zug zu verpassen, weil sich die Gleisnummer geändert hatte.",
+          "translation": "Мы чуть не опоздали на поезд, потому что поменялся номер платформы.",
+          "examples": [
+            {
+              "text": "Wir waren nahe daran, den Zug zu verpassen, weil sich die Gleisnummer geändert hatte.",
+              "translation_ru": "Мы чуть не опоздали на поезд, потому что поменялся номер платформы."
+            },
+            {
+              "text": "Sie war schon zweimal nahe daran, den regionalen Backwettbewerb zu gewinnen.",
+              "translation_ru": "Она уже дважды была близка к победе в региональном конкурсе выпечки."
+            },
+            {
+              "text": "Ich war nahe daran, die einzige Kopie der Interviewaufnahme zu löschen.",
+              "translation_ru": "Я чуть не удалил единственную копию записи интервью."
+            },
+            {
+              "text": "Der Ausschuss ist inzwischen nahe daran, sich über den Gemeinschaftsgarten zu einigen.",
+              "translation_ru": "Комитет уже близок к договорённости по общему саду."
+            },
+            {
+              "text": "Warst du schon einmal nahe daran, ein Projekt aufzugeben, kurz bevor es zu funktionieren begann?",
+              "translation_ru": "Ты когда-нибудь был близок к тому, чтобы бросить проект как раз перед тем, как он начал работать?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] come(s) close to [verb-ing].",
+        "[Subjekt] ist nahe daran, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA006",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Добиться того, чтобы …",
+      "title_en": "[Subject] succeed(s) in [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сообщите об успешном результате, особенно после усилий или препятствий. В немецком лицо при этом обороте ставится в дательный падеж.",
+      "editorial_descriptions": {
+        "en": "Report a successful outcome, especially after effort or difficulty. German gelingen uses a dative experiencer: mir gelingt es, not ich gelingt.",
+        "ru": "Сообщите об успешном результате, особенно после усилий или препятствий. В немецком лицо при этом обороте ставится в дательный падеж."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] succeed(s) in [verb-ing].",
+          "example": "The locksmith succeeded in opening the door without damaging the frame.",
+          "translation": "Слесарю удалось открыть дверь, не повредив раму.",
+          "examples": [
+            {
+              "text": "The locksmith succeeded in opening the door without damaging the frame.",
+              "translation_ru": "Слесарю удалось открыть дверь, не повредив раму."
+            },
+            {
+              "text": "We have not succeeded in reproducing the error on a smaller sample.",
+              "translation_ru": "Нам не удалось воспроизвести ошибку на меньшей выборке."
+            },
+            {
+              "text": "Did she succeed in persuading the gallery to extend the exhibition?",
+              "translation_ru": "Удалось ли ей убедить галерею продлить выставку?"
+            },
+            {
+              "text": "He finally succeeded in growing tomatoes on the shaded balcony.",
+              "translation_ru": "Ему наконец удалось вырастить помидоры на затенённом балконе."
+            },
+            {
+              "text": "If we succeed in reducing the waiting time, more people may stay for the workshop.",
+              "translation_ru": "Если нам удастся сократить ожидание, возможно, больше людей останутся на семинар."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person im Dativ] gelingt es, [zu + Infinitiv].",
+          "example": "Dem Schlosser gelang es, die Tür zu öffnen, ohne den Rahmen zu beschädigen.",
+          "translation": "Слесарю удалось открыть дверь, не повредив раму.",
+          "examples": [
+            {
+              "text": "Dem Schlosser gelang es, die Tür zu öffnen, ohne den Rahmen zu beschädigen.",
+              "translation_ru": "Слесарю удалось открыть дверь, не повредив раму."
+            },
+            {
+              "text": "Uns ist es nicht gelungen, den Fehler mit einer kleineren Stichprobe zu reproduzieren.",
+              "translation_ru": "Нам не удалось воспроизвести ошибку на меньшей выборке."
+            },
+            {
+              "text": "Ist es ihr gelungen, die Galerie zu einer Verlängerung der Ausstellung zu bewegen?",
+              "translation_ru": "Удалось ли ей убедить галерею продлить выставку?"
+            },
+            {
+              "text": "Ihm gelang es schließlich, auf dem schattigen Balkon Tomaten anzubauen.",
+              "translation_ru": "Ему наконец удалось вырастить помидоры на затенённом балконе."
+            },
+            {
+              "text": "Wenn es uns gelingt, die Wartezeit zu verkürzen, bleiben vielleicht mehr Leute zum Workshop.",
+              "translation_ru": "Если нам удастся сократить ожидание, возможно, больше людей останутся на семинар."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] succeed(s) in [verb-ing].",
+        "[Person im Dativ] gelingt es, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA007",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Винить … в том, что …",
+      "title_en": "[Subject] blame(s) [person] for [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите человека, на которого возлагают ответственность, и действие или результат. Формулировка передаёт обвинение, но сама по себе не доказывает вину.",
+      "editorial_descriptions": {
+        "en": "Name the person held responsible and the action or outcome. The sentence reports an attribution of blame; it does not prove that the person caused the problem.",
+        "ru": "Назовите человека, на которого возлагают ответственность, и действие или результат. Формулировка передаёт обвинение, но сама по себе не доказывает вину."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] blame(s) [person] for [verb-ing].",
+          "example": "Do not blame the receptionist for losing a booking that never reached the system.",
+          "translation": "Не вини сотрудника на ресепшене в потере брони, которая вообще не попала в систему.",
+          "examples": [
+            {
+              "text": "Do not blame the receptionist for losing a booking that never reached the system.",
+              "translation_ru": "Не вини сотрудника на ресепшене в потере брони, которая вообще не попала в систему."
+            },
+            {
+              "text": "She blamed herself for forgetting the spare batteries before the concert.",
+              "translation_ru": "Она винила себя за то, что перед концертом забыла запасные батарейки."
+            },
+            {
+              "text": "The tenants had blamed the cleaner for leaving the window open.",
+              "translation_ru": "Жильцы обвинили уборщика в том, что он оставил окно открытым."
+            },
+            {
+              "text": "Will they blame us for delaying the shipment if we request another inspection?",
+              "translation_ru": "Обвинят ли они нас в задержке отправки, если мы потребуем ещё одну проверку?"
+            },
+            {
+              "text": "I would not blame him for refusing to lend the car after what happened last time.",
+              "translation_ru": "Я бы не винил его за отказ одолжить машину после того, что случилось в прошлый раз."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] gibt [Person] die Schuld daran, dass [Ereignis].",
+          "example": "Gib der Empfangskraft nicht die Schuld daran, dass eine Buchung fehlt, die nie im System angekommen ist.",
+          "translation": "Не вини сотрудника на ресепшене в потере брони, которая вообще не попала в систему.",
+          "examples": [
+            {
+              "text": "Gib der Empfangskraft nicht die Schuld daran, dass eine Buchung fehlt, die nie im System angekommen ist.",
+              "translation_ru": "Не вини сотрудника на ресепшене в потере брони, которая вообще не попала в систему."
+            },
+            {
+              "text": "Sie gab sich selbst die Schuld daran, dass sie vor dem Konzert die Ersatzbatterien vergessen hatte.",
+              "translation_ru": "Она винила себя за то, что перед концертом забыла запасные батарейки."
+            },
+            {
+              "text": "Die Mieter hatten der Reinigungskraft die Schuld daran gegeben, dass das Fenster offen geblieben war.",
+              "translation_ru": "Жильцы обвинили уборщика в том, что он оставил окно открытым."
+            },
+            {
+              "text": "Werden sie uns die Schuld daran geben, dass sich der Versand verzögert, wenn wir eine weitere Kontrolle verlangen?",
+              "translation_ru": "Обвинят ли они нас в задержке отправки, если мы потребуем ещё одну проверку?"
+            },
+            {
+              "text": "Ich würde ihm keinen Vorwurf daraus machen, dass er das Auto nach dem letzten Vorfall nicht mehr verleiht.",
+              "translation_ru": "Я бы не винил его за отказ одолжить машину после того, что случилось в прошлый раз."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] blame(s) [person] for [verb-ing].",
+        "[Subjekt] gibt [Person] die Schuld daran, dass [Ereignis]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA008",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Поздравить … с тем, что …",
+      "title_en": "[Subject] congratulate(s) [person] on [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Поздравьте с конкретным достижением. После английского предлога используйте отглагольную форму; в немецком получатель стоит в дательном падеже.",
+      "editorial_descriptions": {
+        "en": "Congratulate someone on a specific achievement. On takes an -ing form; German gratulieren takes a dative recipient and can introduce the achievement with dazu, dass.",
+        "ru": "Поздравьте с конкретным достижением. После английского предлога используйте отглагольную форму; в немецком получатель стоит в дательном падеже."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] congratulate(s) [person] on [verb-ing].",
+          "example": "We congratulated her on completing the restoration without replacing the original wood.",
+          "translation": "Мы поздравили её с завершением реставрации без замены оригинальной древесины.",
+          "examples": [
+            {
+              "text": "We congratulated her on completing the restoration without replacing the original wood.",
+              "translation_ru": "Мы поздравили её с завершением реставрации без замены оригинальной древесины."
+            },
+            {
+              "text": "Have you congratulated your brother on passing his driving test at the first attempt?",
+              "translation_ru": "Ты уже поздравил брата с тем, что он сдал экзамен по вождению с первой попытки?"
+            },
+            {
+              "text": "The coach congratulated the players on keeping their composure after the disputed goal.",
+              "translation_ru": "Тренер поздравил игроков с тем, что они сохранили самообладание после спорного гола."
+            },
+            {
+              "text": "I want to congratulate you on turning a confusing report into a clear explanation.",
+              "translation_ru": "Хочу поздравить тебя с тем, что ты превратил запутанный отчёт в понятное объяснение."
+            },
+            {
+              "text": "They congratulated the volunteers on finding a suitable home for the elderly dog.",
+              "translation_ru": "Они поздравили волонтёров с тем, что те нашли подходящий дом для пожилой собаки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] gratuliert [Person] dazu, dass [Erfolg].",
+          "example": "Wir gratulierten ihr dazu, dass sie die Restaurierung ohne Austausch des Originalholzes abgeschlossen hatte.",
+          "translation": "Мы поздравили её с завершением реставрации без замены оригинальной древесины.",
+          "examples": [
+            {
+              "text": "Wir gratulierten ihr dazu, dass sie die Restaurierung ohne Austausch des Originalholzes abgeschlossen hatte.",
+              "translation_ru": "Мы поздравили её с завершением реставрации без замены оригинальной древесины."
+            },
+            {
+              "text": "Hast du deinem Bruder dazu gratuliert, dass er die Fahrprüfung beim ersten Versuch bestanden hat?",
+              "translation_ru": "Ты уже поздравил брата с тем, что он сдал экзамен по вождению с первой попытки?"
+            },
+            {
+              "text": "Der Trainer gratulierte den Spielern dazu, dass sie nach dem umstrittenen Tor die Ruhe bewahrt hatten.",
+              "translation_ru": "Тренер поздравил игроков с тем, что они сохранили самообладание после спорного гола."
+            },
+            {
+              "text": "Ich möchte dir dazu gratulieren, dass du aus einem verwirrenden Bericht eine klare Erklärung gemacht hast.",
+              "translation_ru": "Хочу поздравить тебя с тем, что ты превратил запутанный отчёт в понятное объяснение."
+            },
+            {
+              "text": "Sie gratulierten den Freiwilligen dazu, dass sie für den alten Hund ein passendes Zuhause gefunden hatten.",
+              "translation_ru": "Они поздравили волонтёров с тем, что те нашли подходящий дом для пожилой собаки."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] congratulate(s) [person] on [verb-ing].",
+        "[Subjekt] gratuliert [Person] dazu, dass [Erfolg]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA009",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Напоминать … о …",
+      "title_en": "[Subject] remind(s) [person] of [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Свяжите ощущение, вещь или человека с воспоминанием либо сходством. Не путайте этот оборот с просьбой напомнить выполнить действие.",
+      "editorial_descriptions": {
+        "en": "Connect something to a memory or resemblance. Remind someone of something differs from remind someone to do something, which concerns a future task.",
+        "ru": "Свяжите ощущение, вещь или человека с воспоминанием либо сходством. Не путайте этот оборот с просьбой напомнить выполнить действие."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] remind(s) [person] of [noun].",
+          "example": "The smell of warm bread reminds me of the bakery near my childhood home.",
+          "translation": "Запах тёплого хлеба напоминает мне о пекарне возле дома, где я вырос.",
+          "examples": [
+            {
+              "text": "The smell of warm bread reminds me of the bakery near my childhood home.",
+              "translation_ru": "Запах тёплого хлеба напоминает мне о пекарне возле дома, где я вырос."
+            },
+            {
+              "text": "Her dry humour reminded us of our former history teacher.",
+              "translation_ru": "Её сухой юмор напомнил нам нашего бывшего учителя истории."
+            },
+            {
+              "text": "Does this narrow staircase remind you of the flat we rented as students?",
+              "translation_ru": "Эта узкая лестница напоминает тебе квартиру, которую мы снимали студентами?"
+            },
+            {
+              "text": "The failed rehearsal has reminded him of the importance of testing the microphone.",
+              "translation_ru": "Неудачная репетиция напомнила ему о важности проверки микрофона."
+            },
+            {
+              "text": "I do not want the new logo to remind people of a warning sign.",
+              "translation_ru": "Я не хочу, чтобы новый логотип напоминал людям предупреждающий знак."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] erinnert [Person] an [Nomen].",
+          "example": "Der Duft von warmem Brot erinnert mich an die Bäckerei in der Nähe meines Elternhauses.",
+          "translation": "Запах тёплого хлеба напоминает мне о пекарне возле дома, где я вырос.",
+          "examples": [
+            {
+              "text": "Der Duft von warmem Brot erinnert mich an die Bäckerei in der Nähe meines Elternhauses.",
+              "translation_ru": "Запах тёплого хлеба напоминает мне о пекарне возле дома, где я вырос."
+            },
+            {
+              "text": "Ihr trockener Humor erinnerte uns an unseren früheren Geschichtslehrer.",
+              "translation_ru": "Её сухой юмор напомнил нам нашего бывшего учителя истории."
+            },
+            {
+              "text": "Erinnert dich diese schmale Treppe an die Wohnung, die wir als Studenten gemietet hatten?",
+              "translation_ru": "Эта узкая лестница напоминает тебе квартиру, которую мы снимали студентами?"
+            },
+            {
+              "text": "Die misslungene Probe hat ihn daran erinnert, wie wichtig es ist, das Mikrofon zu testen.",
+              "translation_ru": "Неудачная репетиция напомнила ему о важности проверки микрофона."
+            },
+            {
+              "text": "Ich möchte nicht, dass das neue Logo die Leute an ein Warnschild erinnert.",
+              "translation_ru": "Я не хочу, чтобы новый логотип напоминал людям предупреждающий знак."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] remind(s) [person] of [noun].",
+        "[Subjekt] erinnert [Person] an [Nomen]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SVA010",
+      "set_id": "SVA",
+      "group_id": "SVA",
+      "title_ru": "Отговорить … от …",
+      "title_en": "[Subject] talk(s) [person] out of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите убеждение человека отказаться от задуманного действия. Это отличается от запрета: решение меняется в результате разговора.",
+      "editorial_descriptions": {
+        "en": "Describe persuading someone not to carry out an intended action. This differs from forbidding it: the change comes through persuasion.",
+        "ru": "Опишите убеждение человека отказаться от задуманного действия. Это отличается от запрета: решение меняется в результате разговора."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] talk(s) [person] out of [verb-ing].",
+          "example": "My sister talked me out of buying a sofa that would not fit through the door.",
+          "translation": "Сестра отговорила меня покупать диван, который не прошёл бы в дверь.",
+          "examples": [
+            {
+              "text": "My sister talked me out of buying a sofa that would not fit through the door.",
+              "translation_ru": "Сестра отговорила меня покупать диван, который не прошёл бы в дверь."
+            },
+            {
+              "text": "Can you talk him out of sending that angry message before he calms down?",
+              "translation_ru": "Можешь отговорить его отправлять это сердитое сообщение, пока он не успокоится?"
+            },
+            {
+              "text": "The guide had talked the group out of crossing the river after heavy rain.",
+              "translation_ru": "Проводник отговорил группу переходить реку после сильного дождя."
+            },
+            {
+              "text": "Nobody will talk her out of finishing the course she has worked so hard on.",
+              "translation_ru": "Никто не отговорит её закончить курс, в который она вложила столько сил."
+            },
+            {
+              "text": "We talked the organiser out of printing hundreds of programmes before registration closed.",
+              "translation_ru": "Мы отговорили организатора печатать сотни программ до завершения регистрации."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] bringt [Person] davon ab, [zu + Infinitiv].",
+          "example": "Meine Schwester brachte mich davon ab, ein Sofa zu kaufen, das nicht durch die Tür passen würde.",
+          "translation": "Сестра отговорила меня покупать диван, который не прошёл бы в дверь.",
+          "examples": [
+            {
+              "text": "Meine Schwester brachte mich davon ab, ein Sofa zu kaufen, das nicht durch die Tür passen würde.",
+              "translation_ru": "Сестра отговорила меня покупать диван, который не прошёл бы в дверь."
+            },
+            {
+              "text": "Kannst du ihn davon abbringen, diese wütende Nachricht zu schicken, bevor er sich beruhigt hat?",
+              "translation_ru": "Можешь отговорить его отправлять это сердитое сообщение, пока он не успокоится?"
+            },
+            {
+              "text": "Der Guide hatte die Gruppe davon abgebracht, den Fluss nach dem starken Regen zu überqueren.",
+              "translation_ru": "Проводник отговорил группу переходить реку после сильного дождя."
+            },
+            {
+              "text": "Niemand wird sie davon abbringen, den Kurs abzuschließen, für den sie so viel gearbeitet hat.",
+              "translation_ru": "Никто не отговорит её закончить курс, в который она вложила столько сил."
+            },
+            {
+              "text": "Wir brachten den Veranstalter davon ab, Hunderte Programme zu drucken, bevor die Anmeldung abgeschlossen war.",
+              "translation_ru": "Мы отговорили организатора печатать сотни программ до завершения регистрации."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] talk(s) [person] out of [verb-ing].",
+        "[Subjekt] bringt [Person] davon ab, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}

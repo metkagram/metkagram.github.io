@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "set_id": "SAD",
+  "patterns": [
+    {
+      "id": "SAD001",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Неохотно соглашаться … / не решаться …",
+      "title_en": "[Subject] be reluctant to [verb].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите внутреннее нежелание или сомнение перед действием. Оборот не означает окончательного отказа: человек ещё может согласиться.",
+      "editorial_descriptions": {
+        "en": "Express hesitation or unwillingness rather than a final refusal. Reluctant takes a to-infinitive; the person may still agree to act.",
+        "ru": "Опишите внутреннее нежелание или сомнение перед действием. Оборот не означает окончательного отказа: человек ещё может согласиться."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be reluctant to [verb].",
+          "example": "I am reluctant to replace a working appliance just because a newer model exists.",
+          "translation": "Я не хочу менять исправное устройство только потому, что появилась новая модель.",
+          "examples": [
+            {
+              "text": "I am reluctant to replace a working appliance just because a newer model exists.",
+              "translation_ru": "Я не хочу менять исправное устройство только потому, что появилась новая модель."
+            },
+            {
+              "text": "She was reluctant to interrupt the speaker, but the translation was becoming unclear.",
+              "translation_ru": "Она не решалась прервать выступающего, но перевод становился всё менее понятным."
+            },
+            {
+              "text": "Are the neighbours reluctant to lend their tools after the drill went missing?",
+              "translation_ru": "Соседи неохотно одалживают инструменты после пропажи дрели?"
+            },
+            {
+              "text": "We have been reluctant to promise a deadline before checking the damaged files.",
+              "translation_ru": "Мы пока не решались обещать срок, не проверив повреждённые файлы."
+            },
+            {
+              "text": "He may be reluctant to sell the table because his father made it.",
+              "translation_ru": "Возможно, он не хочет продавать стол, потому что его сделал отец."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] zögert, [zu + Infinitiv].",
+          "example": "Ich zögere, ein funktionierendes Gerät zu ersetzen, nur weil es ein neueres Modell gibt.",
+          "translation": "Я не хочу менять исправное устройство только потому, что появилась новая модель.",
+          "examples": [
+            {
+              "text": "Ich zögere, ein funktionierendes Gerät zu ersetzen, nur weil es ein neueres Modell gibt.",
+              "translation_ru": "Я не хочу менять исправное устройство только потому, что появилась новая модель."
+            },
+            {
+              "text": "Sie zögerte, den Redner zu unterbrechen, doch die Übersetzung wurde zunehmend unklar.",
+              "translation_ru": "Она не решалась прервать выступающего, но перевод становился всё менее понятным."
+            },
+            {
+              "text": "Zögern die Nachbarn, ihre Werkzeuge zu verleihen, nachdem die Bohrmaschine verschwunden ist?",
+              "translation_ru": "Соседи неохотно одалживают инструменты после пропажи дрели?"
+            },
+            {
+              "text": "Wir haben bisher gezögert, einen Termin zu versprechen, bevor wir die beschädigten Dateien geprüft haben.",
+              "translation_ru": "Мы пока не решались обещать срок, не проверив повреждённые файлы."
+            },
+            {
+              "text": "Er zögert vielleicht, den Tisch zu verkaufen, weil sein Vater ihn gebaut hat.",
+              "translation_ru": "Возможно, он не хочет продавать стол, потому что его сделал отец."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be reluctant to [verb].",
+        "[Subjekt] zögert, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD002",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Увлекаться … / охотно …",
+      "title_en": "[Subject] be keen on [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите интерес или склонность к занятию. В отрицании английский оборот часто мягко передаёт отсутствие желания, а не сильную неприязнь.",
+      "editorial_descriptions": {
+        "en": "Express enthusiasm for an activity. Not keen on often softens a lack of interest or willingness; it need not mean strong dislike.",
+        "ru": "Выразите интерес или склонность к занятию. В отрицании английский оборот часто мягко передаёт отсутствие желания, а не сильную неприязнь."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be keen on [verb-ing].",
+          "example": "My aunt is keen on restoring old furniture rather than buying matching sets.",
+          "translation": "Моя тётя увлечена реставрацией старой мебели, а не покупкой готовых гарнитуров.",
+          "examples": [
+            {
+              "text": "My aunt is keen on restoring old furniture rather than buying matching sets.",
+              "translation_ru": "Моя тётя увлечена реставрацией старой мебели, а не покупкой готовых гарнитуров."
+            },
+            {
+              "text": "I was not keen on sharing a room with someone who rehearsed the trumpet at dawn.",
+              "translation_ru": "Я был не в восторге от проживания в одной комнате с человеком, который репетировал на трубе на рассвете."
+            },
+            {
+              "text": "Are you keen on exploring the smaller galleries away from the main square?",
+              "translation_ru": "Тебе интересно исследовать маленькие галереи в стороне от главной площади?"
+            },
+            {
+              "text": "She has always been keen on learning how everyday machines work.",
+              "translation_ru": "Ей всегда было интересно разбираться, как работают повседневные устройства."
+            },
+            {
+              "text": "We are not particularly keen on adding another meeting when a note would do.",
+              "translation_ru": "Мы не особенно хотим добавлять ещё одну встречу, когда хватило бы записки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ist begeistert davon, [zu + Infinitiv].",
+          "example": "Meine Tante ist begeistert davon, alte Möbel zu restaurieren, statt zusammenpassende Garnituren zu kaufen.",
+          "translation": "Моя тётя увлечена реставрацией старой мебели, а не покупкой готовых гарнитуров.",
+          "examples": [
+            {
+              "text": "Meine Tante ist begeistert davon, alte Möbel zu restaurieren, statt zusammenpassende Garnituren zu kaufen.",
+              "translation_ru": "Моя тётя увлечена реставрацией старой мебели, а не покупкой готовых гарнитуров."
+            },
+            {
+              "text": "Ich war nicht begeistert davon, ein Zimmer mit jemandem zu teilen, der im Morgengrauen Trompete übte.",
+              "translation_ru": "Я был не в восторге от проживания в одной комнате с человеком, который репетировал на трубе на рассвете."
+            },
+            {
+              "text": "Bist du begeistert davon, die kleineren Galerien abseits des Hauptplatzes zu erkunden?",
+              "translation_ru": "Тебе интересно исследовать маленькие галереи в стороне от главной площади?"
+            },
+            {
+              "text": "Sie ist schon immer begeistert davon gewesen, herauszufinden, wie Alltagsgeräte funktionieren.",
+              "translation_ru": "Ей всегда было интересно разбираться, как работают повседневные устройства."
+            },
+            {
+              "text": "Wir sind nicht besonders begeistert davon, eine weitere Besprechung anzusetzen, wenn eine Notiz reichen würde.",
+              "translation_ru": "Мы не особенно хотим добавлять ещё одну встречу, когда хватило бы записки."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be keen on [verb-ing].",
+        "[Subjekt] ist begeistert davon, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD003",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Быть способным …",
+      "title_en": "[Subject] be capable of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите способность выполнить действие. Это не обещание, что действие обязательно произойдёт, и не свидетельство разрешения его выполнять.",
+      "editorial_descriptions": {
+        "en": "State an ability or capacity, not a promise of actual performance or permission. Capable of takes an -ing form, including passive being plus a participle.",
+        "ru": "Опишите способность выполнить действие. Это не обещание, что действие обязательно произойдёт, и не свидетельство разрешения его выполнять."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be capable of [verb-ing].",
+          "example": "This compact printer is capable of handling thicker paper than I expected.",
+          "translation": "Этот компактный принтер способен работать с более толстой бумагой, чем я ожидал.",
+          "examples": [
+            {
+              "text": "This compact printer is capable of handling thicker paper than I expected.",
+              "translation_ru": "Этот компактный принтер способен работать с более толстой бумагой, чем я ожидал."
+            },
+            {
+              "text": "She was perfectly capable of leading the discussion without reading a script.",
+              "translation_ru": "Она вполне могла вести обсуждение, не читая по готовому тексту."
+            },
+            {
+              "text": "Are we capable of restoring the archive if the main drive fails?",
+              "translation_ru": "Сможем ли мы восстановить архив, если основной диск выйдет из строя?"
+            },
+            {
+              "text": "The volunteers were not capable of lifting the stone bench without equipment.",
+              "translation_ru": "Волонтёры не могли поднять каменную скамью без приспособлений."
+            },
+            {
+              "text": "He has proved capable of turning a tense complaint into a constructive conversation.",
+              "translation_ru": "Он показал, что способен превратить напряжённую жалобу в конструктивный разговор."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ist in der Lage, [zu + Infinitiv].",
+          "example": "Dieser kompakte Drucker ist in der Lage, dickeres Papier zu verarbeiten, als ich erwartet hatte.",
+          "translation": "Этот компактный принтер способен работать с более толстой бумагой, чем я ожидал.",
+          "examples": [
+            {
+              "text": "Dieser kompakte Drucker ist in der Lage, dickeres Papier zu verarbeiten, als ich erwartet hatte.",
+              "translation_ru": "Этот компактный принтер способен работать с более толстой бумагой, чем я ожидал."
+            },
+            {
+              "text": "Sie war durchaus in der Lage, die Diskussion zu leiten, ohne ein Skript abzulesen.",
+              "translation_ru": "Она вполне могла вести обсуждение, не читая по готовому тексту."
+            },
+            {
+              "text": "Sind wir in der Lage, das Archiv wiederherzustellen, wenn das Hauptlaufwerk ausfällt?",
+              "translation_ru": "Сможем ли мы восстановить архив, если основной диск выйдет из строя?"
+            },
+            {
+              "text": "Die Freiwilligen waren nicht in der Lage, die Steinbank ohne Hilfsmittel anzuheben.",
+              "translation_ru": "Волонтёры не могли поднять каменную скамью без приспособлений."
+            },
+            {
+              "text": "Er hat gezeigt, dass er in der Lage ist, aus einer angespannten Beschwerde ein konstruktives Gespräch zu machen.",
+              "translation_ru": "Он показал, что способен превратить напряжённую жалобу в конструктивный разговор."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be capable of [verb-ing].",
+        "[Subjekt] ist in der Lage, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD004",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Быть склонным к …",
+      "title_en": "[Subject] be prone to [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите типичную нежелательную склонность. Немецкий может использовать тот же оборот, что и для нейтральной привычки: нежелательность здесь передаётся содержанием и контекстом.",
+      "editorial_descriptions": {
+        "en": "Describe a recurring vulnerability or undesirable tendency. Prone to is usually negative; German can use the same neigen construction as neutral tend to, with context carrying the undesirable meaning.",
+        "ru": "Опишите типичную нежелательную склонность. Немецкий может использовать тот же оборот, что и для нейтральной привычки: нежелательность здесь передаётся содержанием и контекстом."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be prone to [verb-ing].",
+          "example": "I am prone to overlooking small details when I rush through the final check.",
+          "translation": "Я склонен упускать мелкие детали, особенно когда спешу на заключительной проверке.",
+          "examples": [
+            {
+              "text": "I am prone to overlooking small details when I rush through the final check.",
+              "translation_ru": "Я склонен упускать мелкие детали, особенно когда спешу на заключительной проверке."
+            },
+            {
+              "text": "The old tap was prone to dripping whenever the temperature changed.",
+              "translation_ru": "Старый кран часто начинал капать, особенно при смене температуры."
+            },
+            {
+              "text": "Are these labels prone to peeling off in a damp storeroom?",
+              "translation_ru": "Эти этикетки легко отклеиваются, особенно в сыром помещении?"
+            },
+            {
+              "text": "She has become less prone to doubting herself after every difficult question.",
+              "translation_ru": "Теперь она меньше склонна сомневаться в себе, особенно после трудных вопросов."
+            },
+            {
+              "text": "We were prone to starting too many repairs at once during the first winter.",
+              "translation_ru": "Мы были склонны затевать слишком много ремонтных работ одновременно, особенно в первую зиму."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] neigt dazu, [zu + Infinitiv], besonders [Kontext].",
+          "example": "Ich neige dazu, kleine Details zu übersehen, besonders wenn ich die letzte Prüfung hastig erledige.",
+          "translation": "Я склонен упускать мелкие детали, особенно когда спешу на заключительной проверке.",
+          "examples": [
+            {
+              "text": "Ich neige dazu, kleine Details zu übersehen, besonders wenn ich die letzte Prüfung hastig erledige.",
+              "translation_ru": "Я склонен упускать мелкие детали, особенно когда спешу на заключительной проверке."
+            },
+            {
+              "text": "Der alte Wasserhahn neigte dazu, zu tropfen, besonders bei Temperaturwechseln.",
+              "translation_ru": "Старый кран часто начинал капать, особенно при смене температуры."
+            },
+            {
+              "text": "Neigen diese Etiketten dazu, sich abzulösen, besonders in einem feuchten Lagerraum?",
+              "translation_ru": "Эти этикетки легко отклеиваются, особенно в сыром помещении?"
+            },
+            {
+              "text": "Sie neigt inzwischen weniger dazu, an sich zu zweifeln, besonders nach schwierigen Fragen.",
+              "translation_ru": "Теперь она меньше склонна сомневаться в себе, особенно после трудных вопросов."
+            },
+            {
+              "text": "Wir neigten dazu, zu viele Reparaturen gleichzeitig anzufangen, besonders im ersten Winter.",
+              "translation_ru": "Мы были склонны затевать слишком много ремонтных работ одновременно, особенно в первую зиму."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be prone to [verb-ing].",
+        "[Subjekt] neigt dazu, [zu + Infinitiv], besonders [Kontext]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD005",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Осторожно относиться к …",
+      "title_en": "[Subject] be wary of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Выразите осторожность из-за возможного риска или неприятного опыта. Это не обязательно отказ и не доказательство, что риск реализуется.",
+      "editorial_descriptions": {
+        "en": "Express caution about a possible risk, often informed by experience. Wary of is not necessarily a refusal and does not establish that the feared outcome will occur.",
+        "ru": "Выразите осторожность из-за возможного риска или неприятного опыта. Это не обязательно отказ и не доказательство, что риск реализуется."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be wary of [verb-ing].",
+          "example": "I am wary of agreeing to a price before seeing what the repair actually includes.",
+          "translation": "Я осторожно отношусь к согласию на цену, пока не понятно, что именно входит в ремонт.",
+          "examples": [
+            {
+              "text": "I am wary of agreeing to a price before seeing what the repair actually includes.",
+              "translation_ru": "Я осторожно отношусь к согласию на цену, пока не понятно, что именно входит в ремонт."
+            },
+            {
+              "text": "She was wary of lending the original photographs to an unfamiliar publisher.",
+              "translation_ru": "Она с осторожностью отнеслась к передаче оригинальных фотографий незнакомому издателю."
+            },
+            {
+              "text": "Are you wary of relying on a single review when buying second-hand equipment?",
+              "translation_ru": "Ты осторожно относишься к тому, чтобы полагаться на один отзыв при покупке подержанной техники?"
+            },
+            {
+              "text": "We have become wary of treating a successful demonstration as proof of reliability.",
+              "translation_ru": "Мы стали осторожнее относиться к успешной демонстрации как к доказательству надёжности."
+            },
+            {
+              "text": "The gardener is wary of moving the young tree while its roots are still fragile.",
+              "translation_ru": "Садовник осторожно относится к пересадке молодого дерева, пока его корни ещё хрупкие."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ist vorsichtig damit, [zu + Infinitiv].",
+          "example": "Ich bin vorsichtig damit, einem Preis zuzustimmen, bevor ich weiß, was die Reparatur tatsächlich umfasst.",
+          "translation": "Я осторожно отношусь к согласию на цену, пока не понятно, что именно входит в ремонт.",
+          "examples": [
+            {
+              "text": "Ich bin vorsichtig damit, einem Preis zuzustimmen, bevor ich weiß, was die Reparatur tatsächlich umfasst.",
+              "translation_ru": "Я осторожно отношусь к согласию на цену, пока не понятно, что именно входит в ремонт."
+            },
+            {
+              "text": "Sie war vorsichtig damit, die Originalfotos einem unbekannten Verlag zu leihen.",
+              "translation_ru": "Она с осторожностью отнеслась к передаче оригинальных фотографий незнакомому издателю."
+            },
+            {
+              "text": "Bist du vorsichtig damit, dich beim Kauf gebrauchter Geräte auf eine einzige Bewertung zu verlassen?",
+              "translation_ru": "Ты осторожно относишься к тому, чтобы полагаться на один отзыв при покупке подержанной техники?"
+            },
+            {
+              "text": "Wir sind vorsichtig damit geworden, eine gelungene Vorführung als Beweis für Zuverlässigkeit zu betrachten.",
+              "translation_ru": "Мы стали осторожнее относиться к успешной демонстрации как к доказательству надёжности."
+            },
+            {
+              "text": "Der Gärtner ist vorsichtig damit, den jungen Baum umzusetzen, solange seine Wurzeln noch empfindlich sind.",
+              "translation_ru": "Садовник осторожно относится к пересадке молодого дерева, пока его корни ещё хрупкие."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be wary of [verb-ing].",
+        "[Subjekt] ist vorsichtig damit, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD006",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Соответствовать условиям для …",
+      "title_en": "[Subject] be eligible for [benefit or opportunity].",
+      "level": "B2–C1",
+      "metaphor_ru": "Укажите соответствие формальным условиям участия или получения чего-либо. Это ещё не означает, что заявку одобрят или место предоставят.",
+      "editorial_descriptions": {
+        "en": "State that the qualifying conditions for an opportunity or benefit are met. Eligibility does not by itself guarantee selection, approval or receipt.",
+        "ru": "Укажите соответствие формальным условиям участия или получения чего-либо. Это ещё не означает, что заявку одобрят или место предоставят."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be eligible for [benefit or opportunity].",
+          "example": "According to the workshop rules, beginners are eligible for the introductory discount.",
+          "translation": "По правилам мастерской новички соответствуют условиям получения вводной скидки.",
+          "examples": [
+            {
+              "text": "According to the workshop rules, beginners are eligible for the introductory discount.",
+              "translation_ru": "По правилам мастерской новички соответствуют условиям получения вводной скидки."
+            },
+            {
+              "text": "She was not eligible for the equipment loan because her membership had expired.",
+              "translation_ru": "Она не соответствовала условиям выдачи оборудования, потому что срок её членства истёк."
+            },
+            {
+              "text": "Are returning participants eligible for a place in the advanced rehearsal group?",
+              "translation_ru": "Соответствуют ли прежние участники условиям вступления в продвинутую репетиционную группу?"
+            },
+            {
+              "text": "The club has become eligible for a small grant under the programme's published criteria.",
+              "translation_ru": "Теперь клуб соответствует опубликованным условиям программы для получения небольшой субсидии."
+            },
+            {
+              "text": "We may be eligible for a replacement, but we still need the receipt and serial number.",
+              "translation_ru": "Возможно, мы соответствуем условиям замены, но нам ещё нужны чек и серийный номер."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] erfüllt die Voraussetzungen für [Nomen].",
+          "example": "Laut den Kursregeln erfüllen Anfänger die Voraussetzungen für den Einführungsrabatt.",
+          "translation": "По правилам мастерской новички соответствуют условиям получения вводной скидки.",
+          "examples": [
+            {
+              "text": "Laut den Kursregeln erfüllen Anfänger die Voraussetzungen für den Einführungsrabatt.",
+              "translation_ru": "По правилам мастерской новички соответствуют условиям получения вводной скидки."
+            },
+            {
+              "text": "Sie erfüllte die Voraussetzungen für die Geräteausleihe nicht, weil ihre Mitgliedschaft abgelaufen war.",
+              "translation_ru": "Она не соответствовала условиям выдачи оборудования, потому что срок её членства истёк."
+            },
+            {
+              "text": "Erfüllen frühere Teilnehmer die Voraussetzungen für einen Platz in der fortgeschrittenen Probengruppe?",
+              "translation_ru": "Соответствуют ли прежние участники условиям вступления в продвинутую репетиционную группу?"
+            },
+            {
+              "text": "Der Verein erfüllt inzwischen die veröffentlichten Voraussetzungen des Programms für einen kleinen Zuschuss.",
+              "translation_ru": "Теперь клуб соответствует опубликованным условиям программы для получения небольшой субсидии."
+            },
+            {
+              "text": "Möglicherweise erfüllen wir die Voraussetzungen für einen Ersatz, brauchen aber noch den Beleg und die Seriennummer.",
+              "translation_ru": "Возможно, мы соответствуем условиям замены, но нам ещё нужны чек и серийный номер."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be eligible for [benefit or opportunity].",
+        "[Subjekt] erfüllt die Voraussetzungen für [Nomen]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD007",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Иметь право на …",
+      "title_en": "[Subject] be entitled to [noun].",
+      "level": "B2–C1",
+      "metaphor_ru": "Назовите право, предусмотренное конкретным правилом или соглашением. Отличайте само право от соответствия условиям подачи заявки; примеры не устанавливают юридических норм.",
+      "editorial_descriptions": {
+        "en": "Name an entitlement under a stated rule or agreement. This differs from merely qualifying to apply; these illustrative sentences do not establish legal rights.",
+        "ru": "Назовите право, предусмотренное конкретным правилом или соглашением. Отличайте само право от соответствия условиям подачи заявки; примеры не устанавливают юридических норм."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be entitled to [noun].",
+          "example": "Under the booking terms, we are entitled to a refund if the organiser cancels.",
+          "translation": "По условиям бронирования нам положен возврат, если организатор отменит мероприятие.",
+          "examples": [
+            {
+              "text": "Under the booking terms, we are entitled to a refund if the organiser cancels.",
+              "translation_ru": "По условиям бронирования нам положен возврат, если организатор отменит мероприятие."
+            },
+            {
+              "text": "The volunteers were entitled to a hot meal under the event's written agreement.",
+              "translation_ru": "По письменному соглашению мероприятия волонтёрам полагалась горячая еда."
+            },
+            {
+              "text": "Am I entitled to a second attempt under the course rules?",
+              "translation_ru": "Положена ли мне вторая попытка по правилам курса?"
+            },
+            {
+              "text": "She is not entitled to reserved parking under the membership she chose.",
+              "translation_ru": "Выбранный ею вид членства не даёт права на закреплённое парковочное место."
+            },
+            {
+              "text": "According to our agreement, each exhibitor will be entitled to two guest passes.",
+              "translation_ru": "Согласно нашему соглашению каждому участнику выставки будут положены два гостевых пропуска."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat Anspruch auf [Nomen].",
+          "example": "Nach den Buchungsbedingungen haben wir Anspruch auf eine Erstattung, wenn der Veranstalter absagt.",
+          "translation": "По условиям бронирования нам положен возврат, если организатор отменит мероприятие.",
+          "examples": [
+            {
+              "text": "Nach den Buchungsbedingungen haben wir Anspruch auf eine Erstattung, wenn der Veranstalter absagt.",
+              "translation_ru": "По условиям бронирования нам положен возврат, если организатор отменит мероприятие."
+            },
+            {
+              "text": "Die Freiwilligen hatten nach der schriftlichen Veranstaltungsvereinbarung Anspruch auf eine warme Mahlzeit.",
+              "translation_ru": "По письменному соглашению мероприятия волонтёрам полагалась горячая еда."
+            },
+            {
+              "text": "Habe ich nach den Kursregeln Anspruch auf einen zweiten Versuch?",
+              "translation_ru": "Положена ли мне вторая попытка по правилам курса?"
+            },
+            {
+              "text": "Sie hat mit der von ihr gewählten Mitgliedschaft keinen Anspruch auf einen reservierten Parkplatz.",
+              "translation_ru": "Выбранный ею вид членства не даёт права на закреплённое парковочное место."
+            },
+            {
+              "text": "Nach unserer Vereinbarung wird jeder Aussteller Anspruch auf zwei Gästekarten haben.",
+              "translation_ru": "Согласно нашему соглашению каждому участнику выставки будут положены два гостевых пропуска."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be entitled to [noun].",
+        "[Subjekt] hat Anspruch auf [Nomen]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD008",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Быть под впечатлением, что … / полагать, что …",
+      "title_en": "[Subject] be under the impression that [clause].",
+      "level": "B2–C1",
+      "metaphor_ru": "Передайте своё понимание ситуации, оставляя место для исправления. Оборот часто используется, когда выясняется, что прежнее представление было неточным.",
+      "editorial_descriptions": {
+        "en": "Present an understanding while leaving room for correction. The phrase is often used when an earlier assumption may have been mistaken.",
+        "ru": "Передайте своё понимание ситуации, оставляя место для исправления. Оборот часто используется, когда выясняется, что прежнее представление было неточным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be under the impression that [clause].",
+          "example": "I was under the impression that the room hire included a projector.",
+          "translation": "Я полагал, что проектор входит в стоимость аренды комнаты.",
+          "examples": [
+            {
+              "text": "I was under the impression that the room hire included a projector.",
+              "translation_ru": "Я полагал, что проектор входит в стоимость аренды комнаты."
+            },
+            {
+              "text": "She is under the impression that the gate closes automatically behind visitors.",
+              "translation_ru": "Она считает, что ворота автоматически закрываются за посетителями."
+            },
+            {
+              "text": "Were you under the impression that we had already sent the corrected invitation?",
+              "translation_ru": "Ты думал, что мы уже разослали исправленное приглашение?"
+            },
+            {
+              "text": "We had been under the impression that the photographs were copies rather than originals.",
+              "translation_ru": "Мы до этого полагали, что фотографии были копиями, а не оригиналами."
+            },
+            {
+              "text": "Do not leave customers under the impression that every repair can be completed the same day.",
+              "translation_ru": "Не создавай у клиентов впечатления, что любой ремонт можно закончить в тот же день."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] hat den Eindruck, dass [Aussage].",
+          "example": "Ich hatte den Eindruck, dass die Raummiete einen Beamer einschließt.",
+          "translation": "Я полагал, что проектор входит в стоимость аренды комнаты.",
+          "examples": [
+            {
+              "text": "Ich hatte den Eindruck, dass die Raummiete einen Beamer einschließt.",
+              "translation_ru": "Я полагал, что проектор входит в стоимость аренды комнаты."
+            },
+            {
+              "text": "Sie hat den Eindruck, dass das Tor hinter Besuchern automatisch schließt.",
+              "translation_ru": "Она считает, что ворота автоматически закрываются за посетителями."
+            },
+            {
+              "text": "Hattest du den Eindruck, dass wir die korrigierte Einladung schon verschickt hatten?",
+              "translation_ru": "Ты думал, что мы уже разослали исправленное приглашение?"
+            },
+            {
+              "text": "Wir hatten den Eindruck gehabt, dass die Fotos Kopien und keine Originale waren.",
+              "translation_ru": "Мы до этого полагали, что фотографии были копиями, а не оригиналами."
+            },
+            {
+              "text": "Lass bei Kunden nicht den Eindruck entstehen, dass jede Reparatur am selben Tag abgeschlossen werden kann.",
+              "translation_ru": "Не создавай у клиентов впечатления, что любой ремонт можно закончить в тот же день."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be under the impression that [clause].",
+        "[Subjekt] hat den Eindruck, dass [Aussage]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD009",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Лучше …, чем …",
+      "title_en": "[Subject] be better off [verb-ing] than [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Сравните два действия по практической выгоде для человека. Это совет с учётом ситуации, а не абсолютное правило.",
+      "editorial_descriptions": {
+        "en": "Compare two actions by their practical consequences for someone. Better off gives situation-dependent advice, not a universal rule about what is always best.",
+        "ru": "Сравните два действия по практической выгоде для человека. Это совет с учётом ситуации, а не абсолютное правило."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be better off [verb-ing] than [verb-ing].",
+          "example": "We are better off testing one complete process than collecting another dozen feature ideas.",
+          "translation": "Нам лучше проверить один полный процесс, чем собирать ещё дюжину идей функций.",
+          "examples": [
+            {
+              "text": "We are better off testing one complete process than collecting another dozen feature ideas.",
+              "translation_ru": "Нам лучше проверить один полный процесс, чем собирать ещё дюжину идей функций."
+            },
+            {
+              "text": "She would be better off borrowing a van than making six trips in a small car.",
+              "translation_ru": "Ей было бы лучше одолжить фургон, чем делать шесть поездок на маленькой машине."
+            },
+            {
+              "text": "Are you better off repairing the zipper than replacing the whole coat?",
+              "translation_ru": "Тебе лучше починить молнию, чем менять всё пальто?"
+            },
+            {
+              "text": "I was better off asking one precise question than pretending to follow the explanation.",
+              "translation_ru": "Мне было лучше задать один точный вопрос, чем делать вид, что я понимаю объяснение."
+            },
+            {
+              "text": "The club may be better off sharing a rehearsal room than renting its own premises.",
+              "translation_ru": "Клубу, возможно, лучше пользоваться общей репетиционной комнатой, чем снимать своё помещение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] ist besser beraten, [zu + Infinitiv], als [zu + Infinitiv].",
+          "example": "Wir sind besser beraten, einen vollständigen Ablauf zu testen, als ein weiteres Dutzend Funktionsideen zu sammeln.",
+          "translation": "Нам лучше проверить один полный процесс, чем собирать ещё дюжину идей функций.",
+          "examples": [
+            {
+              "text": "Wir sind besser beraten, einen vollständigen Ablauf zu testen, als ein weiteres Dutzend Funktionsideen zu sammeln.",
+              "translation_ru": "Нам лучше проверить один полный процесс, чем собирать ещё дюжину идей функций."
+            },
+            {
+              "text": "Sie wäre besser beraten, einen Transporter zu leihen, als sechsmal mit einem Kleinwagen zu fahren.",
+              "translation_ru": "Ей было бы лучше одолжить фургон, чем делать шесть поездок на маленькой машине."
+            },
+            {
+              "text": "Bist du besser beraten, den Reißverschluss reparieren zu lassen, als den ganzen Mantel zu ersetzen?",
+              "translation_ru": "Тебе лучше починить молнию, чем менять всё пальто?"
+            },
+            {
+              "text": "Ich war besser beraten, eine präzise Frage zu stellen, als so zu tun, als verstünde ich die Erklärung.",
+              "translation_ru": "Мне было лучше задать один точный вопрос, чем делать вид, что я понимаю объяснение."
+            },
+            {
+              "text": "Der Verein ist möglicherweise besser beraten, einen Proberaum zu teilen, als eigene Räume zu mieten.",
+              "translation_ru": "Клубу, возможно, лучше пользоваться общей репетиционной комнатой, чем снимать своё помещение."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be better off [verb-ing] than [verb-ing].",
+        "[Subjekt] ist besser beraten, [zu + Infinitiv], als [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    },
+    {
+      "id": "SAD010",
+      "set_id": "SAD",
+      "group_id": "SAD",
+      "title_ru": "Быть на грани того, чтобы …",
+      "title_en": "[Subject] be on the verge of [verb-ing].",
+      "level": "B2–C1",
+      "metaphor_ru": "Опишите очень близкую перемену или действие. Оборот допускает и желательные, и нежелательные события; он не подтверждает, что событие уже произошло.",
+      "editorial_descriptions": {
+        "en": "Describe being very close to an event or change. The outcome can be desirable or undesirable; the phrase does not confirm that it has already occurred.",
+        "ru": "Опишите очень близкую перемену или действие. Оборот допускает и желательные, и нежелательные события; он не подтверждает, что событие уже произошло."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] be on the verge of [verb-ing].",
+          "example": "The choir was on the verge of cancelling the concert when a replacement pianist arrived.",
+          "translation": "Хор уже почти отменил концерт, когда приехал пианист на замену.",
+          "examples": [
+            {
+              "text": "The choir was on the verge of cancelling the concert when a replacement pianist arrived.",
+              "translation_ru": "Хор уже почти отменил концерт, когда приехал пианист на замену."
+            },
+            {
+              "text": "I am on the verge of finishing the translation, apart from two awkward sentences.",
+              "translation_ru": "Я почти закончил перевод, остались только два трудных предложения."
+            },
+            {
+              "text": "Was she on the verge of accepting the offer before the working hours changed?",
+              "translation_ru": "Она уже почти приняла предложение до того, как изменились рабочие часы?"
+            },
+            {
+              "text": "The cupboard is on the verge of collapsing under the weight of those books.",
+              "translation_ru": "Шкаф вот-вот рухнет под тяжестью этих книг."
+            },
+            {
+              "text": "We had been on the verge of giving up the search when the missing cat appeared.",
+              "translation_ru": "Мы уже почти собирались прекратить поиски, когда пропавшая кошка нашлась."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] steht kurz davor, [zu + Infinitiv].",
+          "example": "Der Chor stand kurz davor, das Konzert abzusagen, als ein Ersatzpianist eintraf.",
+          "translation": "Хор уже почти отменил концерт, когда приехал пианист на замену.",
+          "examples": [
+            {
+              "text": "Der Chor stand kurz davor, das Konzert abzusagen, als ein Ersatzpianist eintraf.",
+              "translation_ru": "Хор уже почти отменил концерт, когда приехал пианист на замену."
+            },
+            {
+              "text": "Ich stehe kurz davor, die Übersetzung abzuschließen; nur zwei schwierige Sätze fehlen noch.",
+              "translation_ru": "Я почти закончил перевод, остались только два трудных предложения."
+            },
+            {
+              "text": "Stand sie kurz davor, das Angebot anzunehmen, bevor sich die Arbeitszeiten änderten?",
+              "translation_ru": "Она уже почти приняла предложение до того, как изменились рабочие часы?"
+            },
+            {
+              "text": "Der Schrank steht kurz davor, unter dem Gewicht dieser Bücher zusammenzubrechen.",
+              "translation_ru": "Шкаф вот-вот рухнет под тяжестью этих книг."
+            },
+            {
+              "text": "Wir hatten kurz davor gestanden, die Suche aufzugeben, als die vermisste Katze auftauchte.",
+              "translation_ru": "Мы уже почти собирались прекратить поиски, когда пропавшая кошка нашлась."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] be on the verge of [verb-ing].",
+        "[Subjekt] steht kurz davor, [zu + Infinitiv]."
+      ],
+      "gen": {
+        "status": "generated",
+        "iterations": 2,
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Original AI-authored examples with an editorial revision pass and deterministic checks. Not independently native-speaker reviewed. CEFR is an editorial target, not an assessed result."
+      },
+      "editorial_batch": "speaking-20260918"
+    }
+  ]
+}
