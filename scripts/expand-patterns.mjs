@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
+import { patternFrameDescription, patternFrameTitle } from "../src/pattern-editorial-copy.mjs";
 
 const ROOT = process.cwd();
 const setsFile = path.join(ROOT, "data", "study-sets.json");
@@ -117,19 +118,23 @@ for (const set of sets) {
     const ru = fill(ruFrame, ruContext);
     const samples = variants(en, de, ru);
     const id = `C1${set.id}${String(index + 1).padStart(3, "0")}`;
-    generated.push({
+    const enFormula = enFrame.replaceAll("[X]", `[${enContext}]`).replaceAll("[claim]", "[claim]");
+    const deFormula = deFrame.replaceAll("[X]", `[${deContext}]`).replaceAll("[claim]", "[Behauptung]");
+    const pattern = {
       id,
       group_id: set.id,
       set_id: set.id,
-      title_ru: ru.replace(/[.!?]$/, ""),
-      metaphor_ru: `Речевая задача: использовать конструкцию «${ru.replace(/[.!?]$/, "")}» в контексте ${ruContext}.`,
+      title_ru: patternFrameTitle(enFormula),
+      metaphor_ru: "",
       langs: [
-        { lang: "en", formula: enFrame.replaceAll("[X]", `[${enContext}]`).replaceAll("[claim]", "[claim]"), example: en, translation: ru, examples: samples.en },
-        { lang: "de", formula: deFrame.replaceAll("[X]", `[${deContext}]`).replaceAll("[claim]", "[Behauptung]"), example: de, translation: ru, examples: samples.de }
+        { lang: "en", formula: enFormula, example: en, translation: ru, examples: samples.en },
+        { lang: "de", formula: deFormula, example: de, translation: ru, examples: samples.de }
       ],
-      formulas: [enFrame.replaceAll("[X]", `[${enContext}]`).replaceAll("[claim]", "[claim]"), deFrame.replaceAll("[X]", `[${deContext}]`).replaceAll("[claim]", "[Behauptung]")],
+      formulas: [enFormula, deFormula],
       gen: { status: "curated", iterations: 1, lastGeneratedAt: "2026-07-15T00:00:00.000Z", languages: ["en", "de"], notes: `C1 communicative frame: ${set.title_en}.` }
-    });
+    };
+    pattern.metaphor_ru = patternFrameDescription(pattern, set);
+    generated.push(pattern);
   });
 }
 
