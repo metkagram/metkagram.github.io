@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/integrate-grammar-flexibility.mjs
       - scripts/repair-grammar-integration.mjs
+      - scripts/reconcile-curriculum-tests.mjs
       - scripts/register-pending-grammar-annotations.mjs
       - .github/workflows/grammar-flexibility-integration.yml
 permissions:
@@ -28,6 +29,8 @@ jobs:
       - run: npm ci
       - name: Repair integration metadata and grammar-audit false positives
         run: node scripts/repair-grammar-integration.mjs
+      - name: Reconcile stale pre-deduplication test assumptions with preserved identities
+        run: node scripts/reconcile-curriculum-tests.mjs
       - name: Integrate canonical data and editorial corrections
         run: node scripts/integrate-grammar-flexibility.mjs
       - name: Register pending annotations without changing existing Marks
@@ -68,23 +71,25 @@ jobs:
           const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2,new_pending_annotations:pending};
           console.log('GRAMMAR_INTEGRATION '+JSON.stringify(totals));
           fs.mkdirSync('docs/research',{recursive:true});
-          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification.\n\n## Annotation status\n\nNew examples are text-only records with empty spans and explicit `validation.status: pending`, `needs_rebuild: true`, `generator: none`, and a SHA-256 fingerprint of the current text. They are NOT completed parser annotations or human-reviewed grammar Marks. Existing annotation records are preserved without modification. The canonical card export retains pending status. Run the local annotation pipeline to replace pending records with real annotations; reject stale fingerprints after text edits. The compressed export record count includes both completed and pending records and must not be presented as the count of annotated sentences.\n\n## Audit corrections\n\nThe similarity tokenizer now retains one-letter grammatical words: dropping the article incorrectly collapsed the distinction between `few` and `a few`. The English agreement detector recognizes irrealis `were` immediately after `as if` or `as though`, while retaining detection of other agreement errors, including later errors in the same sentence. Both corrections have positive and negative regression fixtures. No quality baseline or release threshold is relaxed.\n\n## Remaining editorial work\n\nExpand the new patterns to the requested 5–7 examples per language. This merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds. Existing SEO slugs are checked for preservation during integration.\n');
+          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification.\n\n## Annotation status\n\nNew examples are text-only records with empty spans and explicit `validation.status: pending`, `needs_rebuild: true`, `generator: none`, and a SHA-256 fingerprint of the current text. These are NOT completed parser annotations or human-reviewed Marks. Existing annotation records are preserved without modification. The canonical card export retains pending status. Run the local annotation pipeline to replace pending records with real annotations; reject stale fingerprints after text edits. The compressed export record count includes both completed and pending records and must not be presented as the count of annotated sentences.\n\n## Verification repairs\n\nThe similarity tokenizer retains one-letter grammatical words, preserving the difference between `few` and `a few`. The agreement detector recognizes irrealis `were` immediately after `as if` or `as though`, without ignoring genuine agreement errors. Positive and negative regression fixtures cover these corrections.\n\nObsolete tests still demanded thousands of physically deleted contextual duplicates and exactly 94 sets. Current tests instead check exact canonical membership, all 300 expected additions, the unchanged frozen SHA-256 identity/URL mapping for the 630 established patterns, retired-alias resolution and additive set preservation. Historical duplicate detection remains covered by explicit synthetic fixtures, not restored duplicate pages. No quality baseline, threshold or frozen identity fixture is rewritten.\n\n## Remaining editorial work\n\nExpand the new patterns to the requested 5–7 examples per language. This merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds. Existing SEO slugs, including historical alias names, are checked for preservation during integration.\n');
           JS
       - name: Verify complete site and tests before committing
         run: |
           if npm run verify > /tmp/grammar-verify.log 2>&1; then
             tail -n 25 /tmp/grammar-verify.log
           else
-            grep -n -A 18 -B 2 -E '^not ok|^Error:|AssertionError|error:' /tmp/grammar-verify.log || true
-            tail -n 100 /tmp/grammar-verify.log
+            grep -E '^(✖|ℹ tests|ℹ pass|ℹ fail|ℹ skipped|ℹ duration)' /tmp/grammar-verify.log || true
+            grep -n -A 14 -B 2 -E '^not ok|^Error:|AssertionError|TypeError|ReferenceError|error:' /tmp/grammar-verify.log || true
+            tail -n 60 /tmp/grammar-verify.log
             exit 1
           fi
-      - name: Commit integrated source data on the feature branch
+      - name: Commit verified integrated source on the feature branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/patterns/GF*.json data/practice-extensions.json data/pattern-annotations.json.gz data/seo-slugs.json scripts/integrate-grammar-flexibility.mjs src/frame-quality-audit.mjs docs/research/grammar-flexibility-300-integration.md
+          git add tests/api.test.mjs tests/connectivity.test.mjs tests/public-learning.test.mjs tests/publication-boundary.test.mjs tests/quality.test.mjs tests/reasoning.test.mjs tests/pattern-example-quality.test.mjs tests/frame-variants.test.mjs tests/pattern-shards.test.mjs tests/frame-quality-baseline.test.mjs tests/frame-quality-audit.test.mjs tests/frame-quality-classification.test.mjs tests/study-set-preservation.test.mjs tests/seo-pattern-slugs.test.mjs tests/practice-annotations.test.mjs tests/pattern-indexability.test.mjs
           if ! git diff --cached --quiet; then
-            git commit -m 'content: integrate 300 grammar patterns with stable URLs and pending annotation state'
+            git commit -m 'content: integrate 300 grammar patterns with preserved canonical identities and pending annotations'
             git push origin HEAD:feat/grammar-flexibility-300
           fi
