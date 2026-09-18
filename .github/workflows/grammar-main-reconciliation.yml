@@ -1,0 +1,127 @@
+name: Reconcile grammar expansion with current main
+on:
+  push:
+    branches: [feat/grammar-flexibility-300]
+    paths: [.github/workflows/grammar-main-reconciliation.yml]
+permissions:
+  contents: write
+concurrency:
+  group: grammar-main-reconciliation
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/grammar-flexibility-300
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - name: Merge the inspected main revision and resolve only known conflicts
+        env:
+          INSPECTED_MAIN: a504a8ccb09ba060aa65479f96b654e2676ef6dd
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$INSPECTED_MAIN"
+          if ! git merge --no-commit --no-ff "$INSPECTED_MAIN"; then
+            git rev-parse --verify MERGE_HEAD
+          fi
+          node --input-type=module <<'JS'
+          import {execFileSync} from 'node:child_process';
+          import assert from 'node:assert/strict';
+          const conflicts=execFileSync('git',['diff','--name-only','--diff-filter=U'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+          const reviewedTests=new Set(['tests/api.test.mjs','tests/connectivity.test.mjs','tests/frame-quality-audit.test.mjs','tests/frame-quality-baseline.test.mjs','tests/frame-quality-classification.test.mjs','tests/pattern-example-quality.test.mjs','tests/pattern-indexability.test.mjs','tests/public-learning.test.mjs','tests/publication-boundary.test.mjs','tests/quality.test.mjs','tests/reasoning.test.mjs']);
+          for(const file of conflicts){
+            const side=file==='data/pattern-annotations.json.gz'?'--theirs':file==='data/seo-slugs.json'||reviewedTests.has(file)?'--ours':null;
+            assert.ok(side,`Unreviewed merge conflict: ${file}`);
+            execFileSync('git',['checkout',side,'--',file]);
+            execFileSync('git',['add',file]);
+          }
+          assert.equal(execFileSync('git',['diff','--name-only','--diff-filter=U'],{encoding:'utf8'}).trim(),'');
+          JS
+          # Current main owns the retained old example texts and their matching
+          # pruned annotations. Append only new pending records to that export.
+          git show "$INSPECTED_MAIN:data/pattern-annotations.json.gz" > data/pattern-annotations.json.gz
+      - name: Register finite pending enrichment and preserve current default limits
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          function patch(source,before,after,label){if(source.includes(after))return source;assert.equal(source.split(before).length,2,label);return source.replace(before,after);}
+          const ids=[...'ABCDEFGHIJKLMNO'].flatMap(letter=>Array.from({length:20},(_,index)=>`GF${letter}${String(index+1).padStart(3,'0')}`));
+          fs.mkdirSync('data/quality',{recursive:true});
+          fs.writeFileSync('data/quality/pending-example-enrichment.json',JSON.stringify({schemaVersion:1,status:'pending',scope:'grammar-flexibility-300',reason:'Owner approved PR 140 merge after disclosure that the existing expansion has three total examples per language; substantive enrichment to the current 5–7 additional-example contract remains unfinished.',expectedAdditionalExampleCount:2,expectedTotalIncludingPrimary:3,languages:['en','de'],completionRule:'Write genuinely new aligned examples and Russian translations, rebuild affected annotations, then remove completed IDs and retire this temporary exception contract once the batch is complete.',patternIds:ids},null,2)+'\n');
+          let source=fs.readFileSync('src/pattern-sources.mjs','utf8');
+          source=patch(source,'language.examples.length >= MIN_PATTERN_EXAMPLES,','language.examples.length >= MIN_PATTERN_EXAMPLES || hasPendingExampleEnrichment(pattern, language),','writer count rule');
+          source=patch(source,'count >= MIN_PATTERN_EXAMPLES && count <= MAX_PATTERN_EXAMPLES,','(count >= MIN_PATTERN_EXAMPLES && count <= MAX_PATTERN_EXAMPLES) || hasPendingExampleEnrichment(pattern, language),','reader count rule');
+          source=patch(source,'const setOrder = studySets.sets.map((set) => set.id);',`const extensionFile = path.join(root, "data", "practice-extensions.json");
+            const extensions = fs.existsSync(extensionFile) ? JSON.parse(fs.readFileSync(extensionFile, "utf8")) : { sets: [] };
+            const existing = new Set(studySets.sets.map(set => set.id));
+            studySets.sets.push(...(extensions.sets || []).filter(set => !existing.has(set.id)));
+            const setOrder = studySets.sets.map((set) => set.id);`,'editorial extension registry');
+          source=source.replace('// - every learning-language record contains 5–7 practice examples;','// - learning-language records contain 5–7 practice examples, except the finite\n//   owner-approved pending-enrichment ledger (never silently treated as complete);');
+          source=source.replace('// canonical shard keeps the first seven. Fewer than five is always rejected.','// canonical shard keeps the first seven. Undersized records are rejected unless\n// their exact identity and count match the explicit pending-enrichment ledger.');
+          const imp='import { hasPendingExampleEnrichment } from "./pattern-example-enrichment.mjs";';
+          if(!source.includes(imp))source=imp+'\n'+source;
+          fs.writeFileSync('src/pattern-sources.mjs',source);
+          const testFile='tests/pattern-example-count.test.mjs';
+          let tests=fs.readFileSync(testFile,'utf8');
+          tests=patch(tests,'const studySets = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "study-sets.json"), "utf8"));','const studySets = loadContent().studySets;','example-count test extension registry');
+          tests=patch(tests,'if (count < 5 || count > 7) {','if ((count < 5 || count > 7) && !hasPendingExampleEnrichment(pattern, language)) {','bounded explicit example debt');
+          tests=tests.replace('every canonical pattern has 5–7 examples per learning language','canonical patterns meet 5–7 examples or an explicit owner-approved pending-enrichment entry');
+          tests=tests.replace('Every canonical pattern language must contain 5–7 examples.','Every canonical pattern language must contain 5–7 examples or exactly match a documented pending-enrichment entry.');
+          tests='import { loadContent } from "../src/content.mjs";\nimport { hasPendingExampleEnrichment } from "../src/pattern-example-enrichment.mjs";\n'+tests;
+          fs.writeFileSync(testFile,tests);
+          const contractTest='tests/pattern-example-enrichment.test.mjs';
+          let contract=fs.readFileSync(contractTest,'utf8');
+          contract=patch(contract,'const patterns = loadContent().advancedPatterns;','const patterns = loadEditorialCorpus().patterns;','enrichment contract applies to canonical authored shards');
+          fs.writeFileSync(contractTest,contract);
+          console.log('Preserved upstream 5–7 default; registered only the 300 disclosed three-example patterns as pending enrichment.');
+          JS
+      - run: npm ci
+      - name: Preserve current main annotations and append the new pending records
+        run: node scripts/register-pending-grammar-annotations.mjs
+      - name: Preserve frozen live and historical URLs
+        run: node scripts/generate-seo-slugs.mjs
+      - name: Record reconciliation evidence
+        env:
+          INSPECTED_MAIN: a504a8ccb09ba060aa65479f96b654e2676ef6dd
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import zlib from 'node:zlib';
+          import assert from 'node:assert/strict';
+          import {execFileSync} from 'node:child_process';
+          import {loadContent} from './src/content.mjs';
+          const main=JSON.parse(zlib.gunzipSync(execFileSync('git',['show',`${process.env.INSPECTED_MAIN}:data/pattern-annotations.json.gz`],{maxBuffer:20*1024*1024})).toString('utf8'));
+          const merged=JSON.parse(zlib.gunzipSync(fs.readFileSync('data/pattern-annotations.json.gz')).toString('utf8'));
+          for(const [key,value] of Object.entries(main.items))assert.deepEqual(merged.items[key],value,`${key}: upstream annotation changed`);
+          const content=loadContent();
+          const pending=Object.values(merged.items).filter(item=>item.validation?.status==='pending').length;
+          const totals={patterns:content.advancedPatterns.length,study_sets:content.studySets.sets.length,preserved_current_main_annotations:Object.keys(main.items).length,new_pending_annotations:pending};
+          assert.equal(totals.patterns,930);assert.equal(totals.study_sets,109);assert.equal(pending,1800);
+          fs.appendFileSync('docs/research/grammar-flexibility-300-integration.md','\n## Concurrent main reconciliation\n\nUpstream revision `'+process.env.INSPECTED_MAIN+'` independently normalized established example counts and pruned obsolete annotation records. This merge preserves every remaining upstream annotation exactly and adds only the 1,800 new pending records.\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe upstream 5–7 additional-example requirement remains the default. Because the owner expressly approved merging this expansion after being told it has three total examples per language, its exact 300 IDs are recorded in `data/quality/pending-example-enrichment.json` as unfinished editorial work. Only the disclosed two-additional-plus-primary count and EN/DE records are allowed; unrelated IDs, languages and arbitrary undersized counts remain rejected. No examples are duplicated or fabricated to satisfy the count. All retained pattern identity and route baselines remain unchanged.\n');
+          console.log('RECONCILED_TOTALS '+JSON.stringify(totals));
+          JS
+      - name: Verify the complete merged site before committing
+        run: |
+          if npm run verify > /tmp/grammar-main-verify.log 2>&1; then
+            tail -n 25 /tmp/grammar-main-verify.log
+          else
+            grep -E '^(✖|ℹ tests|ℹ pass|ℹ fail|ℹ skipped|ℹ duration)' /tmp/grammar-main-verify.log || true
+            grep -n -A 18 -B 2 -E '^not ok|^Error:|AssertionError|TypeError|ReferenceError|error:' /tmp/grammar-main-verify.log || true
+            tail -n 60 /tmp/grammar-main-verify.log
+            exit 1
+          fi
+      - name: Commit the verified merge to the feature branch
+        run: |
+          git add -u
+          git add data/quality/pending-example-enrichment.json
+          git commit -m 'Merge current corpus maintenance into the verified 300-pattern expansion'
+          git push origin HEAD:feat/grammar-flexibility-300
