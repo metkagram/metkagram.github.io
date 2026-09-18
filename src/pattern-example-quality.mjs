@@ -122,3 +122,85 @@ export function cleanPatternGeneratedFollowUps(pattern) {
   }
   return removed;
 }
+
+
+// Speaking practice needs variation inside a stable frame. A list of examples
+// that differs only by one substituted noun teaches the learner one sentence,
+// not a reusable language pattern. These metrics intentionally stay simple and
+// deterministic so they can run in the repository gate without NLP tooling.
+function exampleTokens(value = "") {
+  return String(value)
+    .replaceAll("**", "")
+    .normalize("NFKC")
+    .toLocaleLowerCase()
+    .match(/[\p{L}\p{N}]+(?:[-’'][\p{L}\p{N}]+)*/gu) || [];
+}
+
+function jaccard(left, right) {
+  const a = new Set(left);
+  const b = new Set(right);
+  if (!a.size && !b.size) return 1;
+  const intersection = [...a].filter((token) => b.has(token)).length;
+  return intersection / new Set([...a, ...b]).size;
+}
+
+export const C1_EXAMPLE_DIVERSITY_RULE = Object.freeze({
+  minVocabularySize: 30,
+  maxMeanPairwiseJaccard: 0.64,
+  maxSharedTokenRatio: 0.58
+});
+
+export function measurePatternExampleDiversity(language) {
+  const examples = (language?.examples || [])
+    .map((example) => String(example?.text || "").trim())
+    .filter(Boolean);
+  const tokenLists = examples.map(exampleTokens);
+  const normalizedExamples = tokenLists.map((tokens) => tokens.join(" "));
+  const vocabulary = new Set(tokenLists.flat());
+  const similarities = [];
+
+  for (let left = 0; left < tokenLists.length; left += 1) {
+    for (let right = left + 1; right < tokenLists.length; right += 1) {
+      similarities.push(jaccard(tokenLists[left], tokenLists[right]));
+    }
+  }
+
+  const firstSet = new Set(tokenLists[0] || []);
+  const sharedTokens = [...firstSet].filter((token) =>
+    tokenLists.every((tokens) => new Set(tokens).has(token))
+  );
+  const averageTokenCount = tokenLists.length
+    ? tokenLists.reduce((sum, tokens) => sum + tokens.length, 0) / tokenLists.length
+    : 0;
+
+  return {
+    exampleCount: examples.length,
+    uniqueExampleCount: new Set(normalizedExamples).size,
+    vocabularySize: vocabulary.size,
+    meanPairwiseJaccard: similarities.length
+      ? similarities.reduce((sum, value) => sum + value, 0) / similarities.length
+      : 0,
+    maxPairwiseJaccard: similarities.length ? Math.max(...similarities) : 0,
+    sharedTokenRatio: averageTokenCount ? sharedTokens.length / averageTokenCount : 0
+  };
+}
+
+export function patternExampleDiversityProblems(language, rule = C1_EXAMPLE_DIVERSITY_RULE) {
+  const metrics = measurePatternExampleDiversity(language);
+  const problems = [];
+
+  if (metrics.uniqueExampleCount !== metrics.exampleCount) {
+    problems.push(`contains duplicate examples (${metrics.uniqueExampleCount}/${metrics.exampleCount} unique)`);
+  }
+  if (metrics.vocabularySize < rule.minVocabularySize) {
+    problems.push(`vocabulary is too narrow (${metrics.vocabularySize} unique tokens; need at least ${rule.minVocabularySize})`);
+  }
+  if (metrics.meanPairwiseJaccard > rule.maxMeanPairwiseJaccard) {
+    problems.push(`examples are near-clones (mean Jaccard ${metrics.meanPairwiseJaccard.toFixed(3)} > ${rule.maxMeanPairwiseJaccard})`);
+  }
+  if (metrics.sharedTokenRatio > rule.maxSharedTokenRatio) {
+    problems.push(`too much wording is frozen across the whole set (shared-token ratio ${metrics.sharedTokenRatio.toFixed(3)} > ${rule.maxSharedTokenRatio})`);
+  }
+
+  return problems;
+}
