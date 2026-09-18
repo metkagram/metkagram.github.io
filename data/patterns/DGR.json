@@ -956,96 +956,99 @@
       "id": "C1DGR001",
       "group_id": "DGR",
       "set_id": "DGR",
-      "title_ru": "заявка на финансирование не только тщательно подготовили, но и ясно представили",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «заявка на финансирование не только тщательно подготовили, но и ясно представили» в контексте заявка на финансирование.",
+      "title_ru": "Не только [X], но и [Y] — с инверсией после Not only",
+      "metaphor_ru": "Тренируйте усилительную инверсию после Not only с разными вспомогательными глаголами и временными планами, а не одной застывшей фразой.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Not only was [a funding proposal] carefully prepared, but it was also clearly communicated.",
-          "example": "Not only was a funding proposal carefully prepared, but it was also clearly communicated.",
-          "translation": "заявка на финансирование не только тщательно подготовили, но и ясно представили.",
+          "formula": "Not only + auxiliary + subject + verb, but ... also ...",
+          "example": "Not only did the audit uncover stale permissions, but it also revealed two unused administrator accounts.",
+          "translation": "Аудит не только выявил устаревшие права доступа, но и обнаружил две неиспользуемые учётные записи администратора.",
           "examples": [
             {
-              "text": "**Not only was a funding proposal carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "заявка на финансирование не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only did the audit uncover stale permissions, but it also revealed two unused administrator accounts.**",
+              "translation_ru": "Аудит не только выявил устаревшие права доступа, но и обнаружил две неиспользуемые учётные записи администратора."
             },
             {
-              "text": "**Not only was a delayed product launch carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "задерженный запуск продукта не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only had the storm damaged the bridge, but it had also cut power to the pumping station.**",
+              "translation_ru": "Шторм не только повредил мост, но и отключил электроснабжение насосной станции."
             },
             {
-              "text": "**Not only was the team’s research findings carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "результаты исследования команды не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only will the new timetable add evening trains, but it will also shorten several weekend connections.**",
+              "translation_ru": "Новое расписание не только добавит вечерние поезда, но и сократит время нескольких пересадок по выходным."
             },
             {
-              "text": "**Not only was a customer complaint carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "жалоба клиента не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only was the proposal technically sound, but it was also unusually clear about the trade-offs.**",
+              "translation_ru": "Предложение было не только технически обоснованным, но и необычно ясно описывало компромиссы."
             },
             {
-              "text": "**Not only was a public-transport plan carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "план общественного транспорта не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only has the mentoring scheme improved retention, but it has also created a larger pool of future team leads.**",
+              "translation_ru": "Программа наставничества не только повысила удержание сотрудников, но и сформировала более широкий резерв будущих руководителей команд."
             },
             {
-              "text": "**Not only was a difficult staffing decision carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "сложное кадровое решение не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only can the smaller model run locally, but it can also respond fast enough for interactive use.**",
+              "translation_ru": "Меньшая модель не только может работать локально, но и отвечает достаточно быстро для интерактивного использования."
             },
             {
-              "text": "**Not only was the revised budget carefully prepared, but it was also clearly communicated.**",
-              "translation_ru": "пересмотренный бюджет не только тщательно подготовили, но и ясно представили."
+              "text": "**Not only should the team document what failed, but it should also record which safeguards worked as intended.**",
+              "translation_ru": "Команда должна не только зафиксировать, что не сработало, но и записать, какие защитные меры отработали как задумано."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Nicht nur wurde [einen Förderantrag] sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.",
-          "example": "Nicht nur wurde einen Förderantrag sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.",
-          "translation": "заявка на финансирование не только тщательно подготовили, но и ясно представили.",
+          "formula": "Nicht nur [X], sondern auch [Y].",
+          "example": "Die Prüfung deckte nicht nur veraltete Berechtigungen auf, sondern auch zwei ungenutzte Administratorkonten.",
+          "translation": "Аудит не только выявил устаревшие права доступа, но и обнаружил две неиспользуемые учётные записи администратора.",
           "examples": [
             {
-              "text": "**Nicht nur wurde einen Förderantrag sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "заявка на финансирование не только тщательно подготовили, но и ясно представили."
+              "text": "**Die Prüfung deckte nicht nur veraltete Berechtigungen auf, sondern auch zwei ungenutzte Administratorkonten.**",
+              "translation_ru": "Аудит не только выявил устаревшие права доступа, но и обнаружил две неиспользуемые учётные записи администратора."
             },
             {
-              "text": "**Nicht nur wurde eine verspätete Produkteinführung sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "задерженный запуск продукта не только тщательно подготовили, но и ясно представили."
+              "text": "**Der Sturm hatte nicht nur die Brücke beschädigt, sondern auch die Stromversorgung der Pumpstation unterbrochen.**",
+              "translation_ru": "Шторм не только повредил мост, но и отключил электроснабжение насосной станции."
             },
             {
-              "text": "**Nicht nur wurde die Forschungsergebnisse des Teams sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "результаты исследования команды не только тщательно подготовили, но и ясно представили."
+              "text": "**Der neue Fahrplan wird nicht nur zusätzliche Abendzüge bringen, sondern auch mehrere Wochenendverbindungen verkürzen.**",
+              "translation_ru": "Новое расписание не только добавит вечерние поезда, но и сократит время нескольких пересадок по выходным."
             },
             {
-              "text": "**Nicht nur wurde eine Kundenbeschwerde sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "жалоба клиента не только тщательно подготовили, но и ясно представили."
+              "text": "**Der Vorschlag war nicht nur technisch solide, sondern auch ungewöhnlich klar in Bezug auf die Zielkonflikte.**",
+              "translation_ru": "Предложение было не только технически обоснованным, но и необычно ясно описывало компромиссы."
             },
             {
-              "text": "**Nicht nur wurde einen Plan für den Nahverkehr sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "план общественного транспорта не только тщательно подготовили, но и ясно представили."
+              "text": "**Das Mentoringprogramm hat nicht nur die Mitarbeiterbindung verbessert, sondern auch einen größeren Pool künftiger Teamleitungen geschaffen.**",
+              "translation_ru": "Программа наставничества не только повысила удержание сотрудников, но и сформировала более широкий резерв будущих руководителей команд."
             },
             {
-              "text": "**Nicht nur wurde eine schwierige Personalentscheidung sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "сложное кадровое решение не только тщательно подготовили, но и ясно представили."
+              "text": "**Das kleinere Modell kann nicht nur lokal ausgeführt werden, sondern auch schnell genug für eine interaktive Nutzung reagieren.**",
+              "translation_ru": "Меньшая модель не только может работать локально, но и отвечает достаточно быстро для интерактивного использования."
             },
             {
-              "text": "**Nicht nur wurde das überarbeitete Budget sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert.**",
-              "translation_ru": "пересмотренный бюджет не только тщательно подготовили, но и ясно представили."
+              "text": "**Das Team sollte nicht nur dokumentieren, was fehlgeschlagen ist, sondern auch festhalten, welche Schutzmaßnahmen wie vorgesehen funktioniert haben.**",
+              "translation_ru": "Команда должна не только зафиксировать, что не сработало, но и записать, какие защитные меры отработали как задумано."
             }
           ]
         }
       ],
       "formulas": [
-        "Not only was [a funding proposal] carefully prepared, but it was also clearly communicated.",
-        "Nicht nur wurde [einen Förderantrag] sorgfältig vorbereitet, sondern es wurde auch klar kommuniziert."
+        "Not only + auxiliary + subject + verb, but ... also ...",
+        "Nicht nur [X], sondern auch [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: German grammar in use."
-      }
+        "notes": "C1 communicative frame: German grammar in use. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Not only + auxiliary + subject + verb, but ... also ...",
+      "description_en": "Practise emphatic inversion after “Not only” across several auxiliaries and time references instead of memorising one frozen sentence.",
+      "description_ru": "Тренируйте усилительную инверсию после Not only с разными вспомогательными глаголами и временными планами, а не одной застывшей фразой."
     }
   ]
 }
