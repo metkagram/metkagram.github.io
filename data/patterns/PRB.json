@@ -6,96 +6,99 @@
       "id": "C1PRB001",
       "group_id": "PRB",
       "set_id": "PRB",
-      "title_ru": "Есть реалистичная вероятность, что заявка на финансирование изменит результат",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Есть реалистичная вероятность, что заявка на финансирование изменит результат» в контексте заявка на финансирование.",
+      "title_ru": "Есть реальная вероятность, что [X], если [Y]",
+      "metaphor_ru": "Говорите о вероятном исходе и сразу называйте условие, от которого эта вероятность зависит.",
       "langs": [
         {
           "lang": "en",
-          "formula": "There is a realistic chance that [a funding proposal] will change the outcome.",
-          "example": "There is a realistic chance that a funding proposal will change the outcome.",
-          "translation": "Есть реалистичная вероятность, что заявка на финансирование изменит результат.",
+          "formula": "There is a realistic chance that [X] if [Y].",
+          "example": "There is a realistic chance that the river will reach the lower flood barrier if the rain continues through the night.",
+          "translation": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь.",
           "examples": [
             {
-              "text": "**There is a realistic chance that a funding proposal will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что заявка на финансирование изменит результат."
+              "text": "**There is a realistic chance that the river will reach the lower flood barrier if the rain continues through the night.**",
+              "translation_ru": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь."
             },
             {
-              "text": "**There is a realistic chance that a delayed product launch will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что задерженный запуск продукта изменит результат."
+              "text": "**There is a realistic chance that the supplier can recover the schedule if the replacement parts arrive by Tuesday.**",
+              "translation_ru": "Есть реальная вероятность, что поставщик вернётся в график, если запасные части прибудут ко вторнику."
             },
             {
-              "text": "**There is a realistic chance that the team’s research findings will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что результаты исследования команды изменит результат."
+              "text": "**There is a realistic chance that churn will fall next quarter if the billing complaints are resolved rather than merely acknowledged.**",
+              "translation_ru": "Есть реальная вероятность, что отток снизится в следующем квартале, если жалобы на биллинг будут действительно решены, а не просто зарегистрированы."
             },
             {
-              "text": "**There is a realistic chance that a customer complaint will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что жалоба клиента изменит результат."
+              "text": "**There is a realistic chance that we could fill the role internally if the senior analyst is willing to mentor someone for six months.**",
+              "translation_ru": "Есть реальная вероятность, что мы сможем закрыть позицию внутренним кандидатом, если старший аналитик готов будет наставлять его в течение шести месяцев."
             },
             {
-              "text": "**There is a realistic chance that a public-transport plan will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что план общественного транспорта изменит результат."
+              "text": "**There is a realistic chance that Friday’s release will be postponed if the rollback test fails again tomorrow.**",
+              "translation_ru": "Есть реальная вероятность, что пятничный релиз перенесут, если завтра тест отката снова завершится неудачно."
             },
             {
-              "text": "**There is a realistic chance that a difficult staffing decision will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что сложное кадровое решение изменит результат."
+              "text": "**There is a realistic chance that the apparent effect will disappear if the study is repeated with a larger and more diverse sample.**",
+              "translation_ru": "Есть реальная вероятность, что наблюдаемый эффект исчезнет, если исследование повторят на более крупной и разнообразной выборке."
             },
             {
-              "text": "**There is a realistic chance that the revised budget will change the outcome.**",
-              "translation_ru": "Есть реалистичная вероятность, что пересмотренный бюджет изменит результат."
+              "text": "**There is a realistic chance that congestion will ease once the school term ends, if commuter traffic remains at its current level.**",
+              "translation_ru": "Есть реальная вероятность, что пробки уменьшатся после окончания учебного периода, если поток поездок на работу останется на нынешнем уровне."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es besteht eine realistische Chance, dass [einen Förderantrag] das Ergebnis verändert.",
-          "example": "Es besteht eine realistische Chance, dass einen Förderantrag das Ergebnis verändert.",
-          "translation": "Есть реалистичная вероятность, что заявка на финансирование изменит результат.",
+          "formula": "Es besteht eine realistische Chance, dass [X], wenn [Y].",
+          "example": "Es besteht eine realistische Chance, dass der Fluss die untere Hochwasserschutzmauer erreicht, wenn der Regen die ganze Nacht anhält.",
+          "translation": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь.",
           "examples": [
             {
-              "text": "**Es besteht eine realistische Chance, dass einen Förderantrag das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что заявка на финансирование изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass der Fluss die untere Hochwasserschutzmauer erreicht, wenn der Regen die ganze Nacht anhält.**",
+              "translation_ru": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass eine verspätete Produkteinführung das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что задерженный запуск продукта изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass der Lieferant den Zeitplan wieder einhalten kann, wenn die Ersatzteile bis Dienstag eintreffen.**",
+              "translation_ru": "Есть реальная вероятность, что поставщик вернётся в график, если запасные части прибудут ко вторнику."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass die Forschungsergebnisse des Teams das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что результаты исследования команды изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass die Abwanderung im nächsten Quartal sinkt, wenn die Beschwerden zur Abrechnung gelöst und nicht nur bestätigt werden.**",
+              "translation_ru": "Есть реальная вероятность, что отток снизится в следующем квартале, если жалобы на биллинг будут действительно решены, а не просто зарегистрированы."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass eine Kundenbeschwerde das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что жалоба клиента изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass wir die Stelle intern besetzen könnten, wenn die Senior-Analystin oder der Senior-Analyst bereit ist, sechs Monate lang jemanden zu betreuen.**",
+              "translation_ru": "Есть реальная вероятность, что мы сможем закрыть позицию внутренним кандидатом, если старший аналитик готов будет наставлять его в течение шести месяцев."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass einen Plan für den Nahverkehr das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что план общественного транспорта изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass die Veröffentlichung am Freitag verschoben wird, wenn der Rollback-Test morgen erneut fehlschlägt.**",
+              "translation_ru": "Есть реальная вероятность, что пятничный релиз перенесут, если завтра тест отката снова завершится неудачно."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass eine schwierige Personalentscheidung das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что сложное кадровое решение изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass der beobachtete Effekt verschwindet, wenn die Studie mit einer größeren und vielfältigeren Stichprobe wiederholt wird.**",
+              "translation_ru": "Есть реальная вероятность, что наблюдаемый эффект исчезнет, если исследование повторят на более крупной и разнообразной выборке."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass das überarbeitete Budget das Ergebnis verändert.**",
-              "translation_ru": "Есть реалистичная вероятность, что пересмотренный бюджет изменит результат."
+              "text": "**Es besteht eine realistische Chance, dass sich die Staus nach Ende des Schulhalbjahres verringern, wenn der Pendlerverkehr auf dem aktuellen Niveau bleibt.**",
+              "translation_ru": "Есть реальная вероятность, что пробки уменьшатся после окончания учебного периода, если поток поездок на работу останется на нынешнем уровне."
             }
           ]
         }
       ],
       "formulas": [
-        "There is a realistic chance that [a funding proposal] will change the outcome.",
-        "Es besteht eine realistische Chance, dass [einen Förderantrag] das Ergebnis verändert."
+        "There is a realistic chance that [X] if [Y].",
+        "Es besteht eine realistische Chance, dass [X], wenn [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Probability and prediction."
-      }
+        "notes": "C1 communicative frame: Probability and prediction. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "There is a realistic chance that [X] if [Y]",
+      "description_en": "Express a plausible outcome while naming the condition that makes it more or less likely.",
+      "description_ru": "Говорите о вероятном исходе и сразу называйте условие, от которого эта вероятность зависит."
     }
   ]
 }
