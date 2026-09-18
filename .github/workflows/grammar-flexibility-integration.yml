@@ -4,6 +4,7 @@ on:
     branches: [feat/grammar-flexibility-300]
     paths:
       - scripts/integrate-grammar-flexibility.mjs
+      - scripts/register-pending-grammar-annotations.mjs
       - .github/workflows/grammar-flexibility-integration.yml
 permissions:
   contents: write
@@ -46,29 +47,13 @@ jobs:
           JS
       - name: Integrate canonical data and editorial corrections
         run: node scripts/integrate-grammar-flexibility.mjs
-      - name: Inspect formula collisions before validation
-        run: |
-          node --input-type=module <<'JS'
-          import fs from 'node:fs';
-          const owners = new Map();
-          for (const dir of ['data/patterns', 'data/reasoning-frames']) {
-            for (const name of fs.readdirSync(dir).filter(n => n.endsWith('.json'))) {
-              const doc = JSON.parse(fs.readFileSync(`${dir}/${name}`, 'utf8'));
-              for (const p of Array.isArray(doc) ? doc : doc.patterns) {
-                for (const l of p.langs || []) {
-                  const key = String(l.formula).replaceAll('**', '').replace(/\s+/g, ' ').trim().toLowerCase();
-                  const owner = owners.get(key);
-                  if (owner && (/^GF[A-O]\d{3}$/.test(p.id) || /^GF[A-O]\d{3}$/.test(owner.id))) console.log('FORMULA_COLLISION ' + JSON.stringify({id:p.id, owner, lang:l.lang, formula:l.formula}));
-                  else owners.set(key, {id:p.id, lang:l.lang});
-                }
-              }
-            }
-          }
-          JS
+      - name: Register pending annotations without changing existing Marks
+        run: node scripts/register-pending-grammar-annotations.mjs
       - name: Validate loader and record counts
         run: |
           node --input-type=module <<'JS'
           import fs from 'node:fs';
+          import zlib from 'node:zlib';
           import assert from 'node:assert/strict';
           import { loadContent } from './src/content.mjs';
           const c=loadContent();
@@ -83,10 +68,12 @@ jobs:
             for(const e of all){assert.ok(e.text.trim());assert.match(e.translation_ru,/\p{Script=Cyrillic}/u);}
             sentences+=all.length;
           }
-          const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2};
+          const annotations=JSON.parse(zlib.gunzipSync(fs.readFileSync('data/pattern-annotations.json.gz')).toString('utf8'));
+          const pending=Object.entries(annotations.items).filter(([key,record])=>/^GF[A-O]\d{3}:/.test(key)&&record.validation?.status==='pending').length;
+          const totals={patterns:patterns.length,study_sets:c.studySets.sets.length,new_patterns:added.length,new_language_examples:sentences,new_example_pairs:sentences/2,new_pending_annotations:pending};
           console.log('GRAMMAR_INTEGRATION '+JSON.stringify(totals));
           fs.mkdirSync('docs/research',{recursive:true});
-          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification. No annotation or human-review status is fabricated. Expanding these new patterns to the requested 5–7 examples per language remains editorial follow-up; this merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
+          fs.writeFileSync('docs/research/grammar-flexibility-300-integration.md', '# Grammar flexibility integration\n\nMachine-checked canonical loader totals (2026-09-18):\n\n```json\n'+JSON.stringify(totals,null,2)+'\n```\n\nThe 300 additions contain English and German formulas, three aligned example scenarios, Russian translations and Russian grammatical explanations. CEFR B2/C1 labels are editorial practice targets, not examination certification.\n\n## Annotation status\n\nNew examples are published as text-only records with empty spans and explicit `validation.status: pending`, `needs_rebuild: true`, `generator: none`, and a SHA-256 fingerprint of the current text. They are NOT completed parser annotations or human-reviewed grammar Marks. Existing annotation records are preserved without modification. The canonical card export retains pending status. Run the local annotation pipeline to replace pending records with real annotations; reject stale fingerprints after text edits. The compressed export record count includes both completed and pending records and must not be presented as the count of annotated sentences.\n\n## Remaining editorial work\n\nExpand the new patterns to the requested 5–7 examples per language. This merge does not claim that requirement is complete.\n\nThis report is committed only after the full build and test suite succeeds.\n');
           JS
       - name: Verify complete site and tests before committing
         run: |
@@ -94,15 +81,15 @@ jobs:
             tail -n 25 /tmp/grammar-verify.log
           else
             grep -n -E 'Error|error|not ok|failed|failure|AssertionError' /tmp/grammar-verify.log || true
-            tail -n 100 /tmp/grammar-verify.log
+            tail -n 140 /tmp/grammar-verify.log
             exit 1
           fi
       - name: Commit integrated source data on the feature branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/patterns/GF*.json data/practice-extensions.json scripts/integrate-grammar-flexibility.mjs docs/research/grammar-flexibility-300-integration.md
+          git add data/patterns/GF*.json data/practice-extensions.json data/pattern-annotations.json.gz scripts/integrate-grammar-flexibility.mjs docs/research/grammar-flexibility-300-integration.md
           if ! git diff --cached --quiet; then
-            git commit -m 'content: register and validate 300 bilingual grammar patterns'
+            git commit -m 'content: register 300 grammar patterns and explicit pending annotations'
             git push origin HEAD:feat/grammar-flexibility-300
           fi
