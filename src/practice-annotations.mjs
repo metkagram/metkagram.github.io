@@ -66,6 +66,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
   const pendingEntries = new Map((ledger.patterns || []).map((entry) => [entry.id, entry]));
   const items = { ...payload.items };
   let expected = 0;
+  const expectedKeys = new Set();
   let overlayPendingCount = 0;
 
   for (const pattern of content.advancedPatterns) {
@@ -73,6 +74,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
       for (const reference of referencesFor(language)) {
         expected += 1;
         const key = `${pattern.id}:${language.lang}:${reference.key}`;
+        expectedKeys.add(key);
         const record = payload.items[key];
         if (!record) throw new Error(`Missing Practice annotation ${key}`);
         const expectedText = cleanMarkedText(reference.text);
@@ -96,7 +98,8 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
   }
 
   if (payload.count !== expected) {
-    throw new Error(`Practice annotation export count mismatch: expected ${expected}, found ${payload.count}`);
+    const staleKeys = Object.keys(payload.items || {}).filter((key) => !expectedKeys.has(key));
+    throw new Error(`Practice annotation export count mismatch: expected ${expected}, found ${payload.count}; stale keys: ${staleKeys.slice(0, 30).join(", ") || "none"}`);
   }
 
   return {
