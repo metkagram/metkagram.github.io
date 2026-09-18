@@ -452,7 +452,7 @@ export const intentTaxonomy = [
       "поставить рядом"
     ],
     "pattern_priority": [
-      "C1CMP001",
+      "CLF064",
       "CLF054",
       "CLF063"
     ]
@@ -495,7 +495,7 @@ export const intentTaxonomy = [
     ],
     "pattern_priority": [
       "CLF063",
-      "C1CMP001",
+      "CLF064",
       "CLF054"
     ]
   },
