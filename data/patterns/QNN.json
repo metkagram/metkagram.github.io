@@ -2191,96 +2191,99 @@
       "id": "C1QNN001",
       "group_id": "QNN",
       "set_id": "QNN",
-      "title_ru": "Что могло бы помешать справедливому внедрению заявка на финансирование",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Что могло бы помешать справедливому внедрению заявка на финансирование» в контексте заявка на финансирование.",
+      "title_ru": "Что могло бы помешать [X] выполнить [Y]?",
+      "metaphor_ru": "Спрашивайте о конкретном препятствии, не предполагая заранее, что оно уже существует или что неудача неизбежна.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What would prevent [a funding proposal] from being implemented fairly?",
-          "example": "What would prevent a funding proposal from being implemented fairly?",
-          "translation": "Что могло бы помешать справедливому внедрению заявка на финансирование?",
+          "formula": "What would prevent [X] from [Y]?",
+          "example": "What would prevent a resident without a smartphone from completing the application online?",
+          "translation": "Что могло бы помешать жителю без смартфона полностью заполнить заявку онлайн?",
           "examples": [
             {
-              "text": "**What would prevent a funding proposal from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению заявка на финансирование?"
+              "text": "**What would prevent a resident without a smartphone from completing the application online?**",
+              "translation_ru": "Что могло бы помешать жителю без смартфона полностью заполнить заявку онлайн?"
             },
             {
-              "text": "**What would prevent a delayed product launch from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению задерженный запуск продукта?"
+              "text": "**What would prevent the team from shipping a rollback package alongside Friday’s release?**",
+              "translation_ru": "Что могло бы помешать команде выпустить пакет отката вместе с пятничным релизом?"
             },
             {
-              "text": "**What would prevent the team’s research findings from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению результаты исследования команды?"
+              "text": "**What would prevent the clinic from adopting the reminder system before the winter surge?**",
+              "translation_ru": "Что могло бы помешать клинике внедрить систему напоминаний до зимнего пика?"
             },
             {
-              "text": "**What would prevent a customer complaint from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению жалоба клиента?"
+              "text": "**What would prevent a new volunteer from joining if the mandatory training were offered online?**",
+              "translation_ru": "Что могло бы помешать новому волонтёру присоединиться, если обязательное обучение будет доступно онлайн?"
             },
             {
-              "text": "**What would prevent a public-transport plan from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению план общественного транспорта?"
+              "text": "**What would prevent the supplier from meeting the service level if we held replacement stock locally?**",
+              "translation_ru": "Что могло бы помешать поставщику выполнить SLA, если мы будем хранить резервные запчасти локально?"
             },
             {
-              "text": "**What would prevent a difficult staffing decision from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению сложное кадровое решение?"
+              "text": "**What would prevent a student using a screen reader from accessing the same material as everyone else?**",
+              "translation_ru": "Что могло бы помешать студенту, использующему экранный диктор, получить доступ к тем же материалам, что и остальные?"
             },
             {
-              "text": "**What would prevent the revised budget from being implemented fairly?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению пересмотренный бюджет?"
+              "text": "**What would prevent the city from making the pilot permanent if ridership remains above the agreed threshold?**",
+              "translation_ru": "Что могло бы помешать городу сделать пилот постоянным, если пассажиропоток останется выше согласованного порога?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was würde verhindern, dass [einen Förderantrag] fair umgesetzt wird?",
-          "example": "Was würde verhindern, dass einen Förderantrag fair umgesetzt wird?",
-          "translation": "Что могло бы помешать справедливому внедрению заявка на финансирование?",
+          "formula": "Was würde [X] daran hindern, [Y]?",
+          "example": "Was würde eine Person ohne Smartphone daran hindern, den Antrag online vollständig auszufüllen?",
+          "translation": "Что могло бы помешать жителю без смартфона полностью заполнить заявку онлайн?",
           "examples": [
             {
-              "text": "**Was würde verhindern, dass einen Förderantrag fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению заявка на финансирование?"
+              "text": "**Was würde eine Person ohne Smartphone daran hindern, den Antrag online vollständig auszufüllen?**",
+              "translation_ru": "Что могло бы помешать жителю без смартфона полностью заполнить заявку онлайн?"
             },
             {
-              "text": "**Was würde verhindern, dass eine verspätete Produkteinführung fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению задерженный запуск продукта?"
+              "text": "**Was würde das Team daran hindern, zusammen mit der Freitagsversion ein Rollback-Paket bereitzustellen?**",
+              "translation_ru": "Что могло бы помешать команде выпустить пакет отката вместе с пятничным релизом?"
             },
             {
-              "text": "**Was würde verhindern, dass die Forschungsergebnisse des Teams fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению результаты исследования команды?"
+              "text": "**Was würde die Klinik daran hindern, das Erinnerungssystem vor dem Winteranstieg einzuführen?**",
+              "translation_ru": "Что могло бы помешать клинике внедрить систему напоминаний до зимнего пика?"
             },
             {
-              "text": "**Was würde verhindern, dass eine Kundenbeschwerde fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению жалоба клиента?"
+              "text": "**Was würde eine neue ehrenamtliche Person daran hindern mitzumachen, wenn die verpflichtende Schulung online angeboten würde?**",
+              "translation_ru": "Что могло бы помешать новому волонтёру присоединиться, если обязательное обучение будет доступно онлайн?"
             },
             {
-              "text": "**Was würde verhindern, dass einen Plan für den Nahverkehr fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению план общественного транспорта?"
+              "text": "**Was würde den Lieferanten daran hindern, das Serviceniveau einzuhalten, wenn wir Ersatzbestände vor Ort hielten?**",
+              "translation_ru": "Что могло бы помешать поставщику выполнить SLA, если мы будем хранить резервные запчасти локально?"
             },
             {
-              "text": "**Was würde verhindern, dass eine schwierige Personalentscheidung fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению сложное кадровое решение?"
+              "text": "**Was würde eine Studentin oder einen Studenten mit Screenreader daran hindern, auf dieselben Materialien wie alle anderen zuzugreifen?**",
+              "translation_ru": "Что могло бы помешать студенту, использующему экранный диктор, получить доступ к тем же материалам, что и остальные?"
             },
             {
-              "text": "**Was würde verhindern, dass das überarbeitete Budget fair umgesetzt wird?**",
-              "translation_ru": "Что могло бы помешать справедливому внедрению пересмотренный бюджет?"
+              "text": "**Was würde die Stadt daran hindern, das Pilotprojekt dauerhaft einzuführen, wenn die Fahrgastzahlen über dem vereinbarten Schwellenwert bleiben?**",
+              "translation_ru": "Что могло бы помешать городу сделать пилот постоянным, если пассажиропоток останется выше согласованного порога?"
             }
           ]
         }
       ],
       "formulas": [
-        "What would prevent [a funding proposal] from being implemented fairly?",
-        "Was würde verhindern, dass [einen Förderantrag] fair umgesetzt wird?"
+        "What would prevent [X] from [Y]?",
+        "Was würde [X] daran hindern, [Y]?"
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Questions, negatives, and reference."
-      }
+        "notes": "C1 communicative frame: Questions, negatives, and reference. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "What would prevent [X] from [Y]?",
+      "description_en": "Ask about a concrete blocker without assuming that the blocker already exists or that failure is inevitable.",
+      "description_ru": "Спрашивайте о конкретном препятствии, не предполагая заранее, что оно уже существует или что неудача неизбежна."
     }
   ]
 }

@@ -6,96 +6,99 @@
       "id": "C1NEG001",
       "group_id": "NEG",
       "set_id": "NEG",
-      "title_ru": "Можем ли мы взять заявка на финансирование за основу для рабочего компромисса",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Можем ли мы взять заявка на финансирование за основу для рабочего компромисса» в контексте заявка на финансирование.",
+      "title_ru": "Можем ли мы взять [X] за основу компромисса при условии, что [Y]?",
+      "metaphor_ru": "Переводите разногласие в условное предложение: обозначьте приемлемую основу и условие, необходимое для согласия.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Could we treat [a funding proposal] as the basis for a workable compromise?",
-          "example": "Could we treat a funding proposal as the basis for a workable compromise?",
-          "translation": "Можем ли мы взять заявка на финансирование за основу для рабочего компромисса?",
+          "formula": "Could we treat [X] as the basis for a compromise, provided that [Y]?",
+          "example": "Could we treat the current salary bands as the basis for a compromise, provided that we review the hardest-to-fill roles separately?",
+          "translation": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?",
           "examples": [
             {
-              "text": "**Could we treat a funding proposal as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять заявка на финансирование за основу для рабочего компромисса?"
+              "text": "**Could we treat the current salary bands as the basis for a compromise, provided that we review the hardest-to-fill roles separately?**",
+              "translation_ru": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?"
             },
             {
-              "text": "**Could we treat a delayed product launch as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять задерженный запуск продукта за основу для рабочего компромисса?"
+              "text": "**Could we treat the smaller launch scope as the basis for a compromise, provided that the postponed features receive firm dates?**",
+              "translation_ru": "Можем ли мы взять уменьшенный объём запуска за основу компромисса при условии, что для отложенных функций будут зафиксированы сроки?"
             },
             {
-              "text": "**Could we treat the team’s research findings as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять результаты исследования команды за основу для рабочего компромисса?"
+              "text": "**Could we treat three office days per month as the basis for a compromise, provided that teams can choose the dates themselves?**",
+              "translation_ru": "Можем ли мы взять три офисных дня в месяц за основу компромисса при условии, что команды смогут сами выбирать даты?"
             },
             {
-              "text": "**Could we treat a customer complaint as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять жалоба клиента за основу для рабочего компромисса?"
+              "text": "**Could we treat the supplier’s revised price as the basis for a compromise, provided that it includes spare parts for the first year?**",
+              "translation_ru": "Можем ли мы взять обновлённую цену поставщика за основу компромисса при условии, что в неё войдут запасные части на первый год?"
             },
             {
-              "text": "**Could we treat a public-transport plan as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять план общественного транспорта за основу для рабочего компромисса?"
+              "text": "**Could we treat the proposed timetable as the basis for a compromise, provided that the late shift ends before the final train leaves?**",
+              "translation_ru": "Можем ли мы взять предложенное расписание за основу компромисса при условии, что поздняя смена будет заканчиваться до отправления последнего поезда?"
             },
             {
-              "text": "**Could we treat a difficult staffing decision as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять сложное кадровое решение за основу для рабочего компромисса?"
+              "text": "**Could we treat the department’s budget ceiling as the basis for a compromise, provided that mandatory security work is funded centrally?**",
+              "translation_ru": "Можем ли мы взять бюджетный лимит отдела за основу компромисса при условии, что обязательные работы по безопасности будут профинансированы централизованно?"
             },
             {
-              "text": "**Could we treat the revised budget as the basis for a workable compromise?**",
-              "translation_ru": "Можем ли мы взять пересмотренный бюджет за основу для рабочего компромисса?"
+              "text": "**Could we treat aggregated usage data as the basis for a compromise, provided that no individual user can be re-identified?**",
+              "translation_ru": "Можем ли мы взять агрегированные данные об использовании за основу компромисса при условии, что отдельных пользователей нельзя будет повторно идентифицировать?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Könnten wir [einen Förderantrag] als Grundlage für einen tragfähigen Kompromiss nehmen?",
-          "example": "Könnten wir einen Förderantrag als Grundlage für einen tragfähigen Kompromiss nehmen?",
-          "translation": "Можем ли мы взять заявка на финансирование за основу для рабочего компромисса?",
+          "formula": "Könnten wir [X] als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass [Y]?",
+          "example": "Könnten wir die aktuellen Gehaltsbänder als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass wir die am schwersten zu besetzenden Stellen separat prüfen?",
+          "translation": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?",
           "examples": [
             {
-              "text": "**Könnten wir einen Förderantrag als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять заявка на финансирование за основу для рабочего компромисса?"
+              "text": "**Könnten wir die aktuellen Gehaltsbänder als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass wir die am schwersten zu besetzenden Stellen separat prüfen?**",
+              "translation_ru": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?"
             },
             {
-              "text": "**Könnten wir eine verspätete Produkteinführung als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять задерженный запуск продукта за основу для рабочего компромисса?"
+              "text": "**Könnten wir den kleineren Einführungsumfang als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die verschobenen Funktionen verbindliche Termine erhalten?**",
+              "translation_ru": "Можем ли мы взять уменьшенный объём запуска за основу компромисса при условии, что для отложенных функций будут зафиксированы сроки?"
             },
             {
-              "text": "**Könnten wir die Forschungsergebnisse des Teams als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять результаты исследования команды за основу для рабочего компромисса?"
+              "text": "**Könnten wir drei Bürotage pro Monat als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die Teams die Termine selbst wählen können?**",
+              "translation_ru": "Можем ли мы взять три офисных дня в месяц за основу компромисса при условии, что команды смогут сами выбирать даты?"
             },
             {
-              "text": "**Könnten wir eine Kundenbeschwerde als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять жалоба клиента за основу для рабочего компромисса?"
+              "text": "**Könnten wir den überarbeiteten Preis des Lieferanten als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass Ersatzteile für das erste Jahr enthalten sind?**",
+              "translation_ru": "Можем ли мы взять обновлённую цену поставщика за основу компромисса при условии, что в неё войдут запасные части на первый год?"
             },
             {
-              "text": "**Könnten wir einen Plan für den Nahverkehr als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять план общественного транспорта за основу для рабочего компромисса?"
+              "text": "**Könnten wir den vorgeschlagenen Zeitplan als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die Spätschicht vor der Abfahrt des letzten Zuges endet?**",
+              "translation_ru": "Можем ли мы взять предложенное расписание за основу компромисса при условии, что поздняя смена будет заканчиваться до отправления последнего поезда?"
             },
             {
-              "text": "**Könnten wir eine schwierige Personalentscheidung als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять сложное кадровое решение за основу для рабочего компромисса?"
+              "text": "**Könnten wir die Budgetobergrenze der Abteilung als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass verpflichtende Sicherheitsarbeiten zentral finanziert werden?**",
+              "translation_ru": "Можем ли мы взять бюджетный лимит отдела за основу компромисса при условии, что обязательные работы по безопасности будут профинансированы централизованно?"
             },
             {
-              "text": "**Könnten wir das überarbeitete Budget als Grundlage für einen tragfähigen Kompromiss nehmen?**",
-              "translation_ru": "Можем ли мы взять пересмотренный бюджет за основу для рабочего компромисса?"
+              "text": "**Könnten wir aggregierte Nutzungsdaten als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass einzelne Nutzerinnen und Nutzer nicht erneut identifiziert werden können?**",
+              "translation_ru": "Можем ли мы взять агрегированные данные об использовании за основу компромисса при условии, что отдельных пользователей нельзя будет повторно идентифицировать?"
             }
           ]
         }
       ],
       "formulas": [
-        "Could we treat [a funding proposal] as the basis for a workable compromise?",
-        "Könnten wir [einen Förderantrag] als Grundlage für einen tragfähigen Kompromiss nehmen?"
+        "Could we treat [X] as the basis for a compromise, provided that [Y]?",
+        "Könnten wir [X] als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass [Y]?"
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Negotiation and decisions."
-      }
+        "notes": "C1 communicative frame: Negotiation and decisions. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Could we treat [X] as the basis for a compromise, provided that [Y]?",
+      "description_en": "Turn disagreement into a conditional proposal: name what can be accepted and the safeguard needed for agreement.",
+      "description_ru": "Переводите разногласие в условное предложение: обозначьте приемлемую основу и условие, необходимое для согласия."
     }
   ]
 }

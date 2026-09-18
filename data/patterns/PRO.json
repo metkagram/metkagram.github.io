@@ -6,96 +6,99 @@
       "id": "C1PRO001",
       "group_id": "PRO",
       "set_id": "PRO",
-      "title_ru": "Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги» в контексте заявка на финансирование.",
+      "title_ru": "Пишу, чтобы уточнить [X], прежде чем [Y]",
+      "metaphor_ru": "Начинайте рабочее сообщение с конкретной неопределённости, которую нужно снять до следующего действия.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I am writing to clarify how [a funding proposal] affects the next steps.",
-          "example": "I am writing to clarify how a funding proposal affects the next steps.",
-          "translation": "Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги.",
+          "formula": "I am writing to clarify [X] before [Y].",
+          "example": "I am writing to clarify who owns the final data check before we start the production cutover.",
+          "translation": "Пишу, чтобы уточнить, кто отвечает за финальную проверку данных, прежде чем мы начнём продуктивное переключение.",
           "examples": [
             {
-              "text": "**I am writing to clarify how a funding proposal affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги."
+              "text": "**I am writing to clarify who owns the final data check before we start the production cutover.**",
+              "translation_ru": "Пишу, чтобы уточнить, кто отвечает за финальную проверку данных, прежде чем мы начнём продуктивное переключение."
             },
             {
-              "text": "**I am writing to clarify how a delayed product launch affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как задерженный запуск продукта влияет на следующие шаги."
+              "text": "**I am writing to clarify whether implementation support is included in the contract before we issue the purchase order.**",
+              "translation_ru": "Пишу, чтобы уточнить, входит ли поддержка внедрения в контракт, прежде чем мы выпустим заказ на закупку."
             },
             {
-              "text": "**I am writing to clarify how the team’s research findings affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как результаты исследования команды влияет на следующие шаги."
+              "text": "**I am writing to clarify whether yesterday’s decision is final before we communicate it to the regional teams.**",
+              "translation_ru": "Пишу, чтобы уточнить, окончательно ли вчерашнее решение, прежде чем мы сообщим о нём региональным командам."
             },
             {
-              "text": "**I am writing to clarify how a customer complaint affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как жалоба клиента влияет на следующие шаги."
+              "text": "**I am writing to clarify the difference between the invoice and the approved estimate before the month-end books are closed.**",
+              "translation_ru": "Пишу, чтобы уточнить расхождение между счётом и утверждённой сметой, прежде чем будет закрыт месяц."
             },
             {
-              "text": "**I am writing to clarify how a public-transport plan affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как план общественного транспорта влияет на следующие шаги."
+              "text": "**I am writing to clarify which travel policy applies before I book the customer workshop in Vienna.**",
+              "translation_ru": "Пишу, чтобы уточнить, какая политика командировок применяется, прежде чем я забронирую поездку на клиентский воркшоп в Вене."
             },
             {
-              "text": "**I am writing to clarify how a difficult staffing decision affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как сложное кадровое решение влияет на следующие шаги."
+              "text": "**I am writing to clarify the deployment window before the support team finalises next weekend’s rota.**",
+              "translation_ru": "Пишу, чтобы уточнить окно развёртывания, прежде чем команда поддержки окончательно составит график на следующие выходные."
             },
             {
-              "text": "**I am writing to clarify how the revised budget affects the next steps.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как пересмотренный бюджет влияет на следующие шаги."
+              "text": "**I am writing to clarify the remaining interview steps before I make a decision about my current notice period.**",
+              "translation_ru": "Пишу, чтобы уточнить оставшиеся этапы собеседования, прежде чем принимать решение по текущему сроку уведомления об увольнении."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich schreibe, um zu erläutern, wie [einen Förderantrag] die nächsten Schritte beeinflusst.",
-          "example": "Ich schreibe, um zu erläutern, wie einen Förderantrag die nächsten Schritte beeinflusst.",
-          "translation": "Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги.",
+          "formula": "Ich schreibe, um [X] zu klären, bevor [Y].",
+          "example": "Ich schreibe, um zu klären, wer für die abschließende Datenprüfung verantwortlich ist, bevor wir mit der Produktivumstellung beginnen.",
+          "translation": "Пишу, чтобы уточнить, кто отвечает за финальную проверку данных, прежде чем мы начнём продуктивное переключение.",
           "examples": [
             {
-              "text": "**Ich schreibe, um zu erläutern, wie einen Förderantrag die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как заявка на финансирование влияет на следующие шаги."
+              "text": "**Ich schreibe, um zu klären, wer für die abschließende Datenprüfung verantwortlich ist, bevor wir mit der Produktivumstellung beginnen.**",
+              "translation_ru": "Пишу, чтобы уточнить, кто отвечает за финальную проверку данных, прежде чем мы начнём продуктивное переключение."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie eine verspätete Produkteinführung die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как задерженный запуск продукта влияет на следующие шаги."
+              "text": "**Ich schreibe, um zu klären, ob die Implementierungsunterstützung im Vertrag enthalten ist, bevor wir die Bestellung auslösen.**",
+              "translation_ru": "Пишу, чтобы уточнить, входит ли поддержка внедрения в контракт, прежде чем мы выпустим заказ на закупку."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie die Forschungsergebnisse des Teams die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как результаты исследования команды влияет на следующие шаги."
+              "text": "**Ich schreibe, um zu klären, ob die gestrige Entscheidung endgültig ist, bevor wir sie den regionalen Teams mitteilen.**",
+              "translation_ru": "Пишу, чтобы уточнить, окончательно ли вчерашнее решение, прежде чем мы сообщим о нём региональным командам."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie eine Kundenbeschwerde die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как жалоба клиента влияет на следующие шаги."
+              "text": "**Ich schreibe, um die Abweichung zwischen der Rechnung und dem genehmigten Kostenvoranschlag zu klären, bevor der Monatsabschluss erfolgt.**",
+              "translation_ru": "Пишу, чтобы уточнить расхождение между счётом и утверждённой сметой, прежде чем будет закрыт месяц."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie einen Plan für den Nahverkehr die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как план общественного транспорта влияет на следующие шаги."
+              "text": "**Ich schreibe, um zu klären, welche Reiserichtlinie gilt, bevor ich den Kundenworkshop in Wien buche.**",
+              "translation_ru": "Пишу, чтобы уточнить, какая политика командировок применяется, прежде чем я забронирую поездку на клиентский воркшоп в Вене."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie eine schwierige Personalentscheidung die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как сложное кадровое решение влияет на следующие шаги."
+              "text": "**Ich schreibe, um das Zeitfenster für die Bereitstellung zu klären, bevor das Supportteam den Dienstplan für das nächste Wochenende abschließt.**",
+              "translation_ru": "Пишу, чтобы уточнить окно развёртывания, прежде чем команда поддержки окончательно составит график на следующие выходные."
             },
             {
-              "text": "**Ich schreibe, um zu erläutern, wie das überarbeitete Budget die nächsten Schritte beeinflusst.**",
-              "translation_ru": "Я пишу, чтобы пояснить, как пересмотренный бюджет влияет на следующие шаги."
+              "text": "**Ich schreibe, um die verbleibenden Schritte im Bewerbungsprozess zu klären, bevor ich eine Entscheidung über meine derzeitige Kündigungsfrist treffe.**",
+              "translation_ru": "Пишу, чтобы уточнить оставшиеся этапы собеседования, прежде чем принимать решение по текущему сроку уведомления об увольнении."
             }
           ]
         }
       ],
       "formulas": [
-        "I am writing to clarify how [a funding proposal] affects the next steps.",
-        "Ich schreibe, um zu erläutern, wie [einen Förderantrag] die nächsten Schritte beeinflusst."
+        "I am writing to clarify [X] before [Y].",
+        "Ich schreibe, um [X] zu klären, bevor [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Professional communication."
-      }
+        "notes": "C1 communicative frame: Professional communication. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "I am writing to clarify [X] before [Y]",
+      "description_en": "Open professional correspondence by naming the exact uncertainty that needs resolving before a concrete next step.",
+      "description_ru": "Начинайте рабочее сообщение с конкретной неопределённости, которую нужно снять до следующего действия."
     }
   ]
 }

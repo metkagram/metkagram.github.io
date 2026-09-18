@@ -1621,96 +1621,99 @@
       "id": "C1LNK001",
       "group_id": "LNK",
       "set_id": "LNK",
-      "title_ru": "Тем не менее заявка на финансирование следует рассматривать в более широком контексте",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Тем не менее заявка на финансирование следует рассматривать в более широком контексте» в контексте заявка на финансирование.",
+      "title_ru": "Тем не менее [X]; в более широком контексте [Y]",
+      "metaphor_ru": "Признайте предыдущий аргумент, а затем свяжите его с более широким контекстом, который меняет интерпретацию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Even so, [a funding proposal] should be considered in the wider context.",
-          "example": "Even so, a funding proposal should be considered in the wider context.",
-          "translation": "Тем не менее заявка на финансирование следует рассматривать в более широком контексте.",
+          "formula": "Even so, [X]; in the wider context, [Y].",
+          "example": "The pilot exceeded its budget by eight percent. Even so, it produced reusable infrastructure; in the wider context, the overrun bought capabilities the next project will not need to fund again.",
+          "translation": "Пилот превысил бюджет на восемь процентов. Тем не менее он создал повторно используемую инфраструктуру; в более широком контексте перерасход профинансировал возможности, за которые следующему проекту уже не придётся платить.",
           "examples": [
             {
-              "text": "**Even so, a funding proposal should be considered in the wider context.**",
-              "translation_ru": "Тем не менее заявка на финансирование следует рассматривать в более широком контексте."
+              "text": "**The pilot exceeded its budget by eight percent. Even so, it produced reusable infrastructure; in the wider context, the overrun bought capabilities the next project will not need to fund again.**",
+              "translation_ru": "Пилот превысил бюджет на восемь процентов. Тем не менее он создал повторно используемую инфраструктуру; в более широком контексте перерасход профинансировал возможности, за которые следующему проекту уже не придётся платить."
             },
             {
-              "text": "**Even so, a delayed product launch should be considered in the wider context.**",
-              "translation_ru": "Тем не менее задерженный запуск продукта следует рассматривать в более широком контексте."
+              "text": "**The first month’s adoption was disappointing. Even so, usage has risen every week since then; in the wider context, the launch may have been slow rather than unsuccessful.**",
+              "translation_ru": "Использование в первый месяц разочаровало. Тем не менее с тех пор оно росло каждую неделю; в более широком контексте запуск мог быть медленным, а не неудачным."
             },
             {
-              "text": "**Even so, the team’s research findings should be considered in the wider context.**",
-              "translation_ru": "Тем не менее результаты исследования команды следует рассматривать в более широком контексте."
+              "text": "**The repair will disrupt traffic for most of October. Even so, postponing it would increase the risk of a winter closure; in the wider context, the short disruption protects the only bridge into the district.**",
+              "translation_ru": "Ремонт будет мешать движению почти весь октябрь. Тем не менее перенос увеличил бы риск зимнего закрытия; в более широком контексте краткосрочные неудобства защищают единственный мост в район."
             },
             {
-              "text": "**Even so, a customer complaint should be considered in the wider context.**",
-              "translation_ru": "Тем не менее жалоба клиента следует рассматривать в более широком контексте."
+              "text": "**The model missed several rare cases in testing. Even so, it caught far more routine errors than the current manual check; in the wider context, it may still be useful as a first-pass filter.**",
+              "translation_ru": "Модель пропустила несколько редких случаев на тестировании. Тем не менее она обнаружила намного больше обычных ошибок, чем текущая ручная проверка; в более широком контексте она всё ещё может быть полезна как первичный фильтр."
             },
             {
-              "text": "**Even so, a public-transport plan should be considered in the wider context.**",
-              "translation_ru": "Тем не менее план общественного транспорта следует рассматривать в более широком контексте."
+              "text": "**The candidate has not worked in our industry before. Even so, she has led two comparable transformations; in the wider context, domain experience is only one part of the role.**",
+              "translation_ru": "Кандидат раньше не работала в нашей отрасли. Тем не менее она руководила двумя сопоставимыми трансформациями; в более широком контексте отраслевой опыт — лишь одна часть роли."
             },
             {
-              "text": "**Even so, a difficult staffing decision should be considered in the wider context.**",
-              "translation_ru": "Тем не менее сложное кадровое решение следует рассматривать в более широком контексте."
+              "text": "**The latest survey contains fewer responses than planned. Even so, the demographic mix is closer to the target population; in the wider context, representativeness may matter more than raw volume.**",
+              "translation_ru": "В последнем опросе меньше ответов, чем планировалось. Тем не менее демографический состав ближе к целевой аудитории; в более широком контексте репрезентативность может быть важнее простого объёма."
             },
             {
-              "text": "**Even so, the revised budget should be considered in the wider context.**",
-              "translation_ru": "Тем не менее пересмотренный бюджет следует рассматривать в более широком контексте."
+              "text": "**The new process adds one approval step. Even so, it removes three manual reconciliations later; in the wider context, the extra check may shorten the end-to-end cycle.**",
+              "translation_ru": "Новый процесс добавляет один этап согласования. Тем не менее позже он убирает три ручные сверки; в более широком контексте дополнительная проверка может сократить весь цикл."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Trotzdem sollte [einen Förderantrag] im größeren Zusammenhang betrachtet werden.",
-          "example": "Trotzdem sollte einen Förderantrag im größeren Zusammenhang betrachtet werden.",
-          "translation": "Тем не менее заявка на финансирование следует рассматривать в более широком контексте.",
+          "formula": "Trotzdem [X]; im größeren Zusammenhang [Y].",
+          "example": "Das Pilotprojekt überschritt sein Budget um acht Prozent. Trotzdem entstand wiederverwendbare Infrastruktur; im größeren Zusammenhang finanzierte die Überschreitung Fähigkeiten, für die das nächste Projekt nicht noch einmal zahlen muss.",
+          "translation": "Пилот превысил бюджет на восемь процентов. Тем не менее он создал повторно используемую инфраструктуру; в более широком контексте перерасход профинансировал возможности, за которые следующему проекту уже не придётся платить.",
           "examples": [
             {
-              "text": "**Trotzdem sollte einen Förderantrag im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее заявка на финансирование следует рассматривать в более широком контексте."
+              "text": "**Das Pilotprojekt überschritt sein Budget um acht Prozent. Trotzdem entstand wiederverwendbare Infrastruktur; im größeren Zusammenhang finanzierte die Überschreitung Fähigkeiten, für die das nächste Projekt nicht noch einmal zahlen muss.**",
+              "translation_ru": "Пилот превысил бюджет на восемь процентов. Тем не менее он создал повторно используемую инфраструктуру; в более широком контексте перерасход профинансировал возможности, за которые следующему проекту уже не придётся платить."
             },
             {
-              "text": "**Trotzdem sollte eine verspätete Produkteinführung im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее задерженный запуск продукта следует рассматривать в более широком контексте."
+              "text": "**Die Nutzung im ersten Monat war enttäuschend. Trotzdem ist sie seither jede Woche gestiegen; im größeren Zusammenhang war der Start möglicherweise langsam und nicht erfolglos.**",
+              "translation_ru": "Использование в первый месяц разочаровало. Тем не менее с тех пор оно росло каждую неделю; в более широком контексте запуск мог быть медленным, а не неудачным."
             },
             {
-              "text": "**Trotzdem sollte die Forschungsergebnisse des Teams im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее результаты исследования команды следует рассматривать в более широком контексте."
+              "text": "**Die Reparatur wird den Verkehr fast den ganzen Oktober beeinträchtigen. Trotzdem würde eine Verschiebung das Risiko einer Wintersperrung erhöhen; im größeren Zusammenhang schützt die kurzfristige Störung die einzige Brücke in den Bezirk.**",
+              "translation_ru": "Ремонт будет мешать движению почти весь октябрь. Тем не менее перенос увеличил бы риск зимнего закрытия; в более широком контексте краткосрочные неудобства защищают единственный мост в район."
             },
             {
-              "text": "**Trotzdem sollte eine Kundenbeschwerde im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее жалоба клиента следует рассматривать в более широком контексте."
+              "text": "**Das Modell übersah im Test mehrere seltene Fälle. Trotzdem erkannte es deutlich mehr Routinefehler als die derzeitige manuelle Prüfung; im größeren Zusammenhang könnte es weiterhin als erste Filterstufe nützlich sein.**",
+              "translation_ru": "Модель пропустила несколько редких случаев на тестировании. Тем не менее она обнаружила намного больше обычных ошибок, чем текущая ручная проверка; в более широком контексте она всё ещё может быть полезна как первичный фильтр."
             },
             {
-              "text": "**Trotzdem sollte einen Plan für den Nahverkehr im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее план общественного транспорта следует рассматривать в более широком контексте."
+              "text": "**Die Kandidatin hat bisher nicht in unserer Branche gearbeitet. Trotzdem hat sie zwei vergleichbare Transformationen geleitet; im größeren Zusammenhang ist Branchenerfahrung nur ein Teil der Rolle.**",
+              "translation_ru": "Кандидат раньше не работала в нашей отрасли. Тем не менее она руководила двумя сопоставимыми трансформациями; в более широком контексте отраслевой опыт — лишь одна часть роли."
             },
             {
-              "text": "**Trotzdem sollte eine schwierige Personalentscheidung im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее сложное кадровое решение следует рассматривать в более широком контексте."
+              "text": "**Die jüngste Umfrage enthält weniger Antworten als geplant. Trotzdem entspricht die demografische Zusammensetzung der Zielbevölkerung besser; im größeren Zusammenhang kann Repräsentativität wichtiger sein als die reine Menge.**",
+              "translation_ru": "В последнем опросе меньше ответов, чем планировалось. Тем не менее демографический состав ближе к целевой аудитории; в более широком контексте репрезентативность может быть важнее простого объёма."
             },
             {
-              "text": "**Trotzdem sollte das überarbeitete Budget im größeren Zusammenhang betrachtet werden.**",
-              "translation_ru": "Тем не менее пересмотренный бюджет следует рассматривать в более широком контексте."
+              "text": "**Der neue Prozess fügt einen Genehmigungsschritt hinzu. Trotzdem entfallen später drei manuelle Abstimmungen; im größeren Zusammenhang kann die zusätzliche Prüfung den gesamten Durchlauf verkürzen.**",
+              "translation_ru": "Новый процесс добавляет один этап согласования. Тем не менее позже он убирает три ручные сверки; в более широком контексте дополнительная проверка может сократить весь цикл."
             }
           ]
         }
       ],
       "formulas": [
-        "Even so, [a funding proposal] should be considered in the wider context.",
-        "Trotzdem sollte [einen Förderantrag] im größeren Zusammenhang betrachtet werden."
+        "Even so, [X]; in the wider context, [Y].",
+        "Trotzdem [X]; im größeren Zusammenhang [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Advanced connectors."
-      }
+        "notes": "C1 communicative frame: Advanced connectors. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Even so, [X]; in the wider context, [Y]",
+      "description_en": "Acknowledge the previous point, then reconnect it to a broader consideration that changes how it should be interpreted.",
+      "description_ru": "Признайте предыдущий аргумент, а затем свяжите его с более широким контекстом, который меняет интерпретацию."
     }
   ]
 }

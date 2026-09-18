@@ -6,96 +6,99 @@
       "id": "C1EVD001",
       "group_id": "EVD",
       "set_id": "EVD",
-      "title_ru": "Имеющиеся данные указывают на заявка на финансирование как на значимый фактор",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Имеющиеся данные указывают на заявка на финансирование как на значимый фактор» в контексте заявка на финансирование.",
+      "title_ru": "Имеющиеся данные указывают на [X], хотя [Y]",
+      "metaphor_ru": "Связывайте вывод с данными и одновременно обозначайте ограничение или наблюдение, которое не позволяет переоценить уверенность.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The available evidence points to [a funding proposal] as a meaningful factor.",
-          "example": "The available evidence points to a funding proposal as a meaningful factor.",
-          "translation": "Имеющиеся данные указывают на заявка на финансирование как на значимый фактор.",
+          "formula": "The available evidence suggests that [X], although [Y].",
+          "example": "The available evidence suggests that the new reminder system reduced missed appointments, although the sample covers only three clinics.",
+          "translation": "Имеющиеся данные указывают на то, что новая система напоминаний сократила число пропущенных приёмов, хотя выборка охватывает только три клиники.",
           "examples": [
             {
-              "text": "**The available evidence points to a funding proposal as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на заявка на финансирование как на значимый фактор."
+              "text": "**The available evidence suggests that the new reminder system reduced missed appointments, although the sample covers only three clinics.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что новая система напоминаний сократила число пропущенных приёмов, хотя выборка охватывает только три клиники."
             },
             {
-              "text": "**The available evidence points to a delayed product launch as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на задерженный запуск продукта как на значимый фактор."
+              "text": "**The available evidence suggests that last month’s outage began in the caching layer, although the first alert came from the database.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что прошлый сбой начался в слое кэша, хотя первое предупреждение пришло от базы данных."
             },
             {
-              "text": "**The available evidence points to the team’s research findings as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на результаты исследования команды как на значимый фактор."
+              "text": "**The available evidence suggests that hybrid teams can maintain productivity, although coordination costs rise when time zones barely overlap.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что гибридные команды могут сохранять продуктивность, хотя координация становится дороже при почти не пересекающихся часовых поясах."
             },
             {
-              "text": "**The available evidence points to a customer complaint as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на жалоба клиента как на значимый фактор."
+              "text": "**The available evidence suggests that the price increase will reduce demand, although loyal customers appear less sensitive than occasional buyers.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что повышение цены снизит спрос, хотя постоянные клиенты, похоже, реагируют слабее случайных покупателей."
             },
             {
-              "text": "**The available evidence points to a public-transport plan as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на план общественного транспорта как на значимый фактор."
+              "text": "**The available evidence suggests that the redesigned form is easier to complete, although screen-reader users still encounter one blocking error.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что переработанную форму заполнять легче, хотя пользователи экранных дикторов всё ещё сталкиваются с одной блокирующей ошибкой."
             },
             {
-              "text": "**The available evidence points to a difficult staffing decision as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на сложное кадровое решение как на значимый фактор."
+              "text": "**The available evidence suggests that the mentoring programme has improved retention, although the effect may partly reflect stronger hiring this year.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что программа наставничества повысила удержание сотрудников, хотя часть эффекта может объясняться более сильным наймом в этом году."
             },
             {
-              "text": "**The available evidence points to the revised budget as a meaningful factor.**",
-              "translation_ru": "Имеющиеся данные указывают на пересмотренный бюджет как на значимый фактор."
+              "text": "**The available evidence suggests that the river will exceed the old flood threshold more often, although the long-term model still carries wide uncertainty bands.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что река будет чаще превышать прежний порог наводнения, хотя долгосрочная модель всё ещё имеет широкие интервалы неопределённости."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die verfügbaren Belege deuten darauf hin, dass [einen Förderantrag] ein wesentlicher Faktor ist.",
-          "example": "Die verfügbaren Belege deuten darauf hin, dass einen Förderantrag ein wesentlicher Faktor ist.",
-          "translation": "Имеющиеся данные указывают на заявка на финансирование как на значимый фактор.",
+          "formula": "Die verfügbaren Belege deuten darauf hin, dass [X], obwohl [Y].",
+          "example": "Die verfügbaren Belege deuten darauf hin, dass das neue Erinnerungssystem die Zahl verpasster Termine gesenkt hat, obwohl die Stichprobe nur drei Kliniken umfasst.",
+          "translation": "Имеющиеся данные указывают на то, что новая система напоминаний сократила число пропущенных приёмов, хотя выборка охватывает только три клиники.",
           "examples": [
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass einen Förderantrag ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на заявка на финансирование как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass das neue Erinnerungssystem die Zahl verpasster Termine gesenkt hat, obwohl die Stichprobe nur drei Kliniken umfasst.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что новая система напоминаний сократила число пропущенных приёмов, хотя выборка охватывает только три клиники."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass eine verspätete Produkteinführung ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на задерженный запуск продукта как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass der Ausfall im vergangenen Monat in der Cache-Schicht begann, obwohl die erste Warnung von der Datenbank kam.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что прошлый сбой начался в слое кэша, хотя первое предупреждение пришло от базы данных."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass die Forschungsergebnisse des Teams ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на результаты исследования команды как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass hybride Teams ihre Produktivität halten können, obwohl die Koordinationskosten steigen, wenn sich die Zeitzonen kaum überschneiden.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что гибридные команды могут сохранять продуктивность, хотя координация становится дороже при почти не пересекающихся часовых поясах."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass eine Kundenbeschwerde ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на жалоба клиента как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass die Preiserhöhung die Nachfrage senken wird, obwohl Stammkundinnen und Stammkunden offenbar weniger empfindlich reagieren als Gelegenheitskäufer.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что повышение цены снизит спрос, хотя постоянные клиенты, похоже, реагируют слабее случайных покупателей."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass einen Plan für den Nahverkehr ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на план общественного транспорта как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass das überarbeitete Formular leichter auszufüllen ist, obwohl Nutzerinnen und Nutzer von Screenreadern weiterhin auf einen blockierenden Fehler stoßen.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что переработанную форму заполнять легче, хотя пользователи экранных дикторов всё ещё сталкиваются с одной блокирующей ошибкой."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass eine schwierige Personalentscheidung ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на сложное кадровое решение как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass das Mentoringprogramm die Bindung verbessert hat, obwohl der Effekt teilweise auf die stärkere Personalauswahl in diesem Jahr zurückgehen könnte.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что программа наставничества повысила удержание сотрудников, хотя часть эффекта может объясняться более сильным наймом в этом году."
             },
             {
-              "text": "**Die verfügbaren Belege deuten darauf hin, dass das überarbeitete Budget ein wesentlicher Faktor ist.**",
-              "translation_ru": "Имеющиеся данные указывают на пересмотренный бюджет как на значимый фактор."
+              "text": "**Die verfügbaren Belege deuten darauf hin, dass der Fluss den alten Hochwasserschwellenwert künftig häufiger überschreiten wird, obwohl das Langzeitmodell weiterhin breite Unsicherheitsintervalle aufweist.**",
+              "translation_ru": "Имеющиеся данные указывают на то, что река будет чаще превышать прежний порог наводнения, хотя долгосрочная модель всё ещё имеет широкие интервалы неопределённости."
             }
           ]
         }
       ],
       "formulas": [
-        "The available evidence points to [a funding proposal] as a meaningful factor.",
-        "Die verfügbaren Belege deuten darauf hin, dass [einen Förderantrag] ein wesentlicher Faktor ist."
+        "The available evidence suggests that [X], although [Y].",
+        "Die verfügbaren Belege deuten darauf hin, dass [X], obwohl [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Evidence and inference."
-      }
+        "notes": "C1 communicative frame: Evidence and inference. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "The available evidence suggests that [X], although [Y]",
+      "description_en": "Connect a conclusion to evidence while keeping an explicit limit or competing observation in view.",
+      "description_ru": "Связывайте вывод с данными и одновременно обозначайте ограничение или наблюдение, которое не позволяет переоценить уверенность."
     }
   ]
 }

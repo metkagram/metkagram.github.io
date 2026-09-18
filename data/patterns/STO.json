@@ -6,96 +6,99 @@
       "id": "C1STO001",
       "group_id": "STO",
       "set_id": "STO",
-      "title_ru": "Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась» в контексте заявка на финансирование.",
+      "title_ru": "Оглядываясь назад, [X] стал моментом, когда [Y]",
+      "metaphor_ru": "Выделяйте поворотный момент в прошлом и показывайте, почему после него события пошли иначе.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Looking back, [a funding proposal] was the moment when the situation changed.",
-          "example": "Looking back, a funding proposal was the moment when the situation changed.",
-          "translation": "Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась.",
+          "formula": "Looking back, [X] was the moment when [Y].",
+          "example": "Looking back, the first customer demo was the moment when we realised the roadmap solved the wrong problem.",
+          "translation": "Оглядываясь назад, первая демонстрация клиенту стала моментом, когда мы поняли, что дорожная карта решает не ту проблему.",
           "examples": [
             {
-              "text": "**Looking back, a funding proposal was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, the first customer demo was the moment when we realised the roadmap solved the wrong problem.**",
+              "translation_ru": "Оглядываясь назад, первая демонстрация клиенту стала моментом, когда мы поняли, что дорожная карта решает не ту проблему."
             },
             {
-              "text": "**Looking back, a delayed product launch was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, задерженный запуск продукта стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, the overnight outage was the moment when a supposedly minor dependency became impossible to ignore.**",
+              "translation_ru": "Оглядываясь назад, ночной сбой стал моментом, когда якобы незначительную зависимость уже нельзя было игнорировать."
             },
             {
-              "text": "**Looking back, the team’s research findings was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, результаты исследования команды стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, my mentor’s question was the moment when I stopped trying to defend the original plan and started testing alternatives.**",
+              "translation_ru": "Оглядываясь назад, вопрос наставника стал моментом, когда я перестал защищать исходный план и начал проверять альтернативы."
             },
             {
-              "text": "**Looking back, a customer complaint was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, жалоба клиента стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, the failed prototype was the moment when the team learned more in two days than it had from a month of meetings.**",
+              "translation_ru": "Оглядываясь назад, неудачный прототип стал моментом, когда команда за два дня узнала больше, чем за месяц встреч."
             },
             {
-              "text": "**Looking back, a public-transport plan was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, план общественного транспорта стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, moving the service online was the moment when rural users began to participate in numbers we had never seen before.**",
+              "translation_ru": "Оглядываясь назад, перевод сервиса в онлайн стал моментом, когда пользователи из сельских районов начали участвовать в невиданном прежде количестве."
             },
             {
-              "text": "**Looking back, a difficult staffing decision was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, сложное кадровое решение стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, the budget cut was the moment when we were forced to distinguish essential work from work that was merely familiar.**",
+              "translation_ru": "Оглядываясь назад, сокращение бюджета стало моментом, когда нам пришлось отделить действительно необходимую работу от просто привычной."
             },
             {
-              "text": "**Looking back, the revised budget was the moment when the situation changed.**",
-              "translation_ru": "Оглядываясь назад, пересмотренный бюджет стал моментом, когда ситуация изменилась."
+              "text": "**Looking back, the unexpected criticism after the conference was the moment when I began to explain the trade-offs instead of only presenting the result.**",
+              "translation_ru": "Оглядываясь назад, неожиданная критика после конференции стала моментом, когда я начал объяснять компромиссы, а не только показывать результат."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Rückblickend war [einen Förderantrag] der Moment, in dem sich die Situation änderte.",
-          "example": "Rückblickend war einen Förderantrag der Moment, in dem sich die Situation änderte.",
-          "translation": "Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась.",
+          "formula": "Rückblickend war [X] der Moment, in dem [Y].",
+          "example": "Rückblickend war die erste Kundendemonstration der Moment, in dem wir erkannten, dass unsere Roadmap das falsche Problem löste.",
+          "translation": "Оглядываясь назад, первая демонстрация клиенту стала моментом, когда мы поняли, что дорожная карта решает не ту проблему.",
           "examples": [
             {
-              "text": "**Rückblickend war einen Förderantrag der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, заявка на финансирование стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war die erste Kundendemonstration der Moment, in dem wir erkannten, dass unsere Roadmap das falsche Problem löste.**",
+              "translation_ru": "Оглядываясь назад, первая демонстрация клиенту стала моментом, когда мы поняли, что дорожная карта решает не ту проблему."
             },
             {
-              "text": "**Rückblickend war eine verspätete Produkteinführung der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, задерженный запуск продукта стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war der nächtliche Ausfall der Moment, in dem eine vermeintlich unbedeutende Abhängigkeit nicht mehr zu übersehen war.**",
+              "translation_ru": "Оглядываясь назад, ночной сбой стал моментом, когда якобы незначительную зависимость уже нельзя было игнорировать."
             },
             {
-              "text": "**Rückblickend war die Forschungsergebnisse des Teams der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, результаты исследования команды стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war die Frage meines Mentors der Moment, in dem ich aufhörte, den ursprünglichen Plan zu verteidigen, und begann, Alternativen zu prüfen.**",
+              "translation_ru": "Оглядываясь назад, вопрос наставника стал моментом, когда я перестал защищать исходный план и начал проверять альтернативы."
             },
             {
-              "text": "**Rückblickend war eine Kundenbeschwerde der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, жалоба клиента стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war der gescheiterte Prototyp der Moment, in dem das Team in zwei Tagen mehr lernte als in einem Monat voller Besprechungen.**",
+              "translation_ru": "Оглядываясь назад, неудачный прототип стал моментом, когда команда за два дня узнала больше, чем за месяц встреч."
             },
             {
-              "text": "**Rückblickend war einen Plan für den Nahverkehr der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, план общественного транспорта стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war die Verlagerung des Dienstes ins Internet der Moment, in dem Nutzerinnen und Nutzer aus ländlichen Regionen in zuvor unerreichter Zahl teilnahmen.**",
+              "translation_ru": "Оглядываясь назад, перевод сервиса в онлайн стал моментом, когда пользователи из сельских районов начали участвовать в невиданном прежде количестве."
             },
             {
-              "text": "**Rückblickend war eine schwierige Personalentscheidung der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, сложное кадровое решение стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war die Budgetkürzung der Moment, in dem wir gezwungen waren, unverzichtbare Arbeit von lediglich gewohnter Arbeit zu unterscheiden.**",
+              "translation_ru": "Оглядываясь назад, сокращение бюджета стало моментом, когда нам пришлось отделить действительно необходимую работу от просто привычной."
             },
             {
-              "text": "**Rückblickend war das überarbeitete Budget der Moment, in dem sich die Situation änderte.**",
-              "translation_ru": "Оглядываясь назад, пересмотренный бюджет стал моментом, когда ситуация изменилась."
+              "text": "**Rückblickend war die unerwartete Kritik nach der Konferenz der Moment, in dem ich begann, die Zielkonflikte zu erklären, statt nur das Ergebnis zu präsentieren.**",
+              "translation_ru": "Оглядываясь назад, неожиданная критика после конференции стала моментом, когда я начал объяснять компромиссы, а не только показывать результат."
             }
           ]
         }
       ],
       "formulas": [
-        "Looking back, [a funding proposal] was the moment when the situation changed.",
-        "Rückblickend war [einen Förderantrag] der Moment, in dem sich die Situation änderte."
+        "Looking back, [X] was the moment when [Y].",
+        "Rückblickend war [X] der Moment, in dem [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Storytelling and reflection."
-      }
+        "notes": "C1 communicative frame: Storytelling and reflection. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Looking back, [X] was the moment when [Y]",
+      "description_en": "Use a past turning point to organise a story and explain why later events took a different direction.",
+      "description_ru": "Выделяйте поворотный момент в прошлом и показывайте, почему после него события пошли иначе."
     }
   ]
 }

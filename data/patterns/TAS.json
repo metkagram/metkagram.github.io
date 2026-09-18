@@ -386,96 +386,99 @@
       "id": "C1TAS001",
       "group_id": "TAS",
       "set_id": "TAS",
-      "title_ru": "Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы» в контексте заявка на финансирование.",
+      "title_ru": "Мы выполняем [действие] с момента [Y] и продолжаем сейчас",
+      "metaphor_ru": "Используйте Present Perfect Continuous, чтобы связать продолжающееся действие с точкой начала и его актуальностью сейчас.",
       "langs": [
         {
           "lang": "en",
-          "formula": "We have been tracking [a funding proposal] since the first warning signs appeared.",
-          "example": "We have been tracking a funding proposal since the first warning signs appeared.",
-          "translation": "Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы.",
+          "formula": "We have been [V-ing] [X] since [Y].",
+          "example": "We have been monitoring the sensor drift since the firmware update was installed on Monday.",
+          "translation": "Мы отслеживаем дрейф датчиков с тех пор, как в понедельник установили обновление прошивки.",
           "examples": [
             {
-              "text": "**We have been tracking a funding proposal since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been monitoring the sensor drift since the firmware update was installed on Monday.**",
+              "translation_ru": "Мы отслеживаем дрейф датчиков с тех пор, как в понедельник установили обновление прошивки."
             },
             {
-              "text": "**We have been tracking a delayed product launch since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем задерженный запуск продукта с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been negotiating the lease since the landlord proposed a new service-charge formula.**",
+              "translation_ru": "Мы ведём переговоры по аренде с тех пор, как арендодатель предложил новую формулу сервисных платежей."
             },
             {
-              "text": "**We have been tracking the team’s research findings since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем результаты исследования команды с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been tracking churn by customer segment since the pricing change went live in June.**",
+              "translation_ru": "Мы отслеживаем отток по сегментам клиентов с тех пор, как в июне вступило в силу изменение цен."
             },
             {
-              "text": "**We have been tracking a customer complaint since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем жалоба клиента с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been restoring the archive since the corrupted index was discovered on Tuesday morning.**",
+              "translation_ru": "Мы восстанавливаем архив с тех пор, как во вторник утром обнаружили повреждённый индекс."
             },
             {
-              "text": "**We have been tracking a public-transport plan since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем план общественного транспорта с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been testing keyboard navigation since the first release candidate became available.**",
+              "translation_ru": "Мы тестируем навигацию с клавиатуры с тех пор, как появился первый релиз-кандидат."
             },
             {
-              "text": "**We have been tracking a difficult staffing decision since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем сложное кадровое решение с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been interviewing residents since the redevelopment plan was published for consultation.**",
+              "translation_ru": "Мы опрашиваем жителей с тех пор, как план реконструкции опубликовали для общественного обсуждения."
             },
             {
-              "text": "**We have been tracking the revised budget since the first warning signs appeared.**",
-              "translation_ru": "Мы отслеживаем пересмотренный бюджет с тех пор, как появились первые тревожные сигналы."
+              "text": "**We have been revising the forecast since the central bank changed its guidance on interest rates.**",
+              "translation_ru": "Мы пересматриваем прогноз с тех пор, как центральный банк изменил ориентиры по процентным ставкам."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wir verfolgen [einen Förderantrag], seit die ersten Warnsignale aufgetreten sind.",
-          "example": "Wir verfolgen einen Förderantrag, seit die ersten Warnsignale aufgetreten sind.",
-          "translation": "Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы.",
+          "formula": "Wir [Verb] [X], seit [Y].",
+          "example": "Wir überwachen die Sensordrift, seit am Montag das Firmware-Update installiert wurde.",
+          "translation": "Мы отслеживаем дрейф датчиков с тех пор, как в понедельник установили обновление прошивки.",
           "examples": [
             {
-              "text": "**Wir verfolgen einen Förderantrag, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем заявка на финансирование с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir überwachen die Sensordrift, seit am Montag das Firmware-Update installiert wurde.**",
+              "translation_ru": "Мы отслеживаем дрейф датчиков с тех пор, как в понедельник установили обновление прошивки."
             },
             {
-              "text": "**Wir verfolgen eine verspätete Produkteinführung, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем задерженный запуск продукта с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir verhandeln über den Mietvertrag, seit der Vermieter eine neue Formel für die Nebenkosten vorgeschlagen hat.**",
+              "translation_ru": "Мы ведём переговоры по аренде с тех пор, как арендодатель предложил новую формулу сервисных платежей."
             },
             {
-              "text": "**Wir verfolgen die Forschungsergebnisse des Teams, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем результаты исследования команды с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir verfolgen die Abwanderung nach Kundensegmenten, seit die Preisänderung im Juni in Kraft getreten ist.**",
+              "translation_ru": "Мы отслеживаем отток по сегментам клиентов с тех пор, как в июне вступило в силу изменение цен."
             },
             {
-              "text": "**Wir verfolgen eine Kundenbeschwerde, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем жалоба клиента с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir stellen das Archiv wieder her, seit am Dienstagmorgen der beschädigte Index entdeckt wurde.**",
+              "translation_ru": "Мы восстанавливаем архив с тех пор, как во вторник утром обнаружили повреждённый индекс."
             },
             {
-              "text": "**Wir verfolgen einen Plan für den Nahverkehr, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем план общественного транспорта с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir testen die Tastaturnavigation, seit der erste Release Candidate verfügbar ist.**",
+              "translation_ru": "Мы тестируем навигацию с клавиатуры с тех пор, как появился первый релиз-кандидат."
             },
             {
-              "text": "**Wir verfolgen eine schwierige Personalentscheidung, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем сложное кадровое решение с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir befragen Anwohnerinnen und Anwohner, seit der Bebauungsplan zur Konsultation veröffentlicht wurde.**",
+              "translation_ru": "Мы опрашиваем жителей с тех пор, как план реконструкции опубликовали для общественного обсуждения."
             },
             {
-              "text": "**Wir verfolgen das überarbeitete Budget, seit die ersten Warnsignale aufgetreten sind.**",
-              "translation_ru": "Мы отслеживаем пересмотренный бюджет с тех пор, как появились первые тревожные сигналы."
+              "text": "**Wir überarbeiten die Prognose, seit die Zentralbank ihre Einschätzung zu den Zinssätzen geändert hat.**",
+              "translation_ru": "Мы пересматриваем прогноз с тех пор, как центральный банк изменил ориентиры по процентным ставкам."
             }
           ]
         }
       ],
       "formulas": [
-        "We have been tracking [a funding proposal] since the first warning signs appeared.",
-        "Wir verfolgen [einen Förderantrag], seit die ersten Warnsignale aufgetreten sind."
+        "We have been [V-ing] [X] since [Y].",
+        "Wir [Verb] [X], seit [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Tense and aspect."
-      }
+        "notes": "C1 communicative frame: Tense and aspect. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "We have been [V-ing] [X] since [Y]",
+      "description_en": "Use the present perfect continuous to connect an ongoing activity with a clear starting point and current relevance.",
+      "description_ru": "Используйте Present Perfect Continuous, чтобы связать продолжающееся действие с точкой начала и его актуальностью сейчас."
     }
   ]
 }

@@ -481,96 +481,99 @@
       "id": "C1MOD001",
       "group_id": "MOD",
       "set_id": "MOD",
-      "title_ru": "Чтобы заявка на финансирование сработал, всем нужно понимать ограничения",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Чтобы заявка на финансирование сработал, всем нужно понимать ограничения» в контексте заявка на финансирование.",
+      "title_ru": "Чтобы [X] сработал, [Y] должен [Z]",
+      "metaphor_ru": "Формулируйте конкретное условие успеха и называйте того, кто должен его обеспечить.",
       "langs": [
         {
           "lang": "en",
-          "formula": "For [a funding proposal] to succeed, everyone needs to understand the limits.",
-          "example": "For a funding proposal to succeed, everyone needs to understand the limits.",
-          "translation": "Чтобы заявка на финансирование сработал, всем нужно понимать ограничения.",
+          "formula": "For [X] to succeed, [Y] needs to [Z].",
+          "example": "For the migration to succeed, each source-system owner needs to sign off the mapping before the final load.",
+          "translation": "Чтобы миграция прошла успешно, каждый владелец исходной системы должен подтвердить сопоставление до финальной загрузки.",
           "examples": [
             {
-              "text": "**For a funding proposal to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы заявка на финансирование сработал, всем нужно понимать ограничения."
+              "text": "**For the migration to succeed, each source-system owner needs to sign off the mapping before the final load.**",
+              "translation_ru": "Чтобы миграция прошла успешно, каждый владелец исходной системы должен подтвердить сопоставление до финальной загрузки."
             },
             {
-              "text": "**For a delayed product launch to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы задерженный запуск продукта сработал, всем нужно понимать ограничения."
+              "text": "**For the remote policy to succeed, managers need to judge work by outcomes rather than by visible online time.**",
+              "translation_ru": "Чтобы политика удалённой работы сработала, руководители должны оценивать работу по результату, а не по видимому времени онлайн."
             },
             {
-              "text": "**For the team’s research findings to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы результаты исследования команды сработал, всем нужно понимать ограничения."
+              "text": "**For the new bus route to succeed, the city needs to coordinate its timetable with the last evening trains.**",
+              "translation_ru": "Чтобы новый автобусный маршрут оказался успешным, город должен согласовать расписание с последними вечерними поездами."
             },
             {
-              "text": "**For a customer complaint to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы жалоба клиента сработал, всем нужно понимать ограничения."
+              "text": "**For the experiment to succeed, the research team needs to define the exclusion criteria before seeing the outcomes.**",
+              "translation_ru": "Чтобы эксперимент был качественным, исследовательская команда должна определить критерии исключения до того, как увидит результаты."
             },
             {
-              "text": "**For a public-transport plan to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы план общественного транспорта сработал, всем нужно понимать ограничения."
+              "text": "**For the supplier switch to succeed, procurement needs to secure replacement stock before the old contract expires.**",
+              "translation_ru": "Чтобы смена поставщика прошла успешно, закупки должны обеспечить резервный запас до истечения старого контракта."
             },
             {
-              "text": "**For a difficult staffing decision to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы сложное кадровое решение сработал, всем нужно понимать ограничения."
+              "text": "**For the mentoring programme to succeed, participants need to meet often enough to discuss real work rather than hypothetical exercises.**",
+              "translation_ru": "Чтобы программа наставничества сработала, участники должны встречаться достаточно часто и обсуждать реальную работу, а не только учебные ситуации."
             },
             {
-              "text": "**For the revised budget to succeed, everyone needs to understand the limits.**",
-              "translation_ru": "Чтобы пересмотренный бюджет сработал, всем нужно понимать ограничения."
+              "text": "**For the archive restoration to succeed, the team needs to preserve the original checksums while rebuilding the missing index.**",
+              "translation_ru": "Чтобы восстановление архива прошло успешно, команда должна сохранить исходные контрольные суммы, пока восстанавливает отсутствующий индекс."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Damit [einen Förderantrag] gelingt, müssen alle die Grenzen verstehen.",
-          "example": "Damit einen Förderantrag gelingt, müssen alle die Grenzen verstehen.",
-          "translation": "Чтобы заявка на финансирование сработал, всем нужно понимать ограничения.",
+          "formula": "Damit [X] gelingt, muss [Y] [Z].",
+          "example": "Damit die Migration gelingt, muss jede verantwortliche Person des Quellsystems die Zuordnung vor dem letzten Ladevorgang freigeben.",
+          "translation": "Чтобы миграция прошла успешно, каждый владелец исходной системы должен подтвердить сопоставление до финальной загрузки.",
           "examples": [
             {
-              "text": "**Damit einen Förderantrag gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы заявка на финансирование сработал, всем нужно понимать ограничения."
+              "text": "**Damit die Migration gelingt, muss jede verantwortliche Person des Quellsystems die Zuordnung vor dem letzten Ladevorgang freigeben.**",
+              "translation_ru": "Чтобы миграция прошла успешно, каждый владелец исходной системы должен подтвердить сопоставление до финальной загрузки."
             },
             {
-              "text": "**Damit eine verspätete Produkteinführung gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы задерженный запуск продукта сработал, всем нужно понимать ограничения."
+              "text": "**Damit die Regelung zur Telearbeit gelingt, müssen Führungskräfte die Arbeit nach Ergebnissen und nicht nach sichtbarer Onlinezeit beurteilen.**",
+              "translation_ru": "Чтобы политика удалённой работы сработала, руководители должны оценивать работу по результату, а не по видимому времени онлайн."
             },
             {
-              "text": "**Damit die Forschungsergebnisse des Teams gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы результаты исследования команды сработал, всем нужно понимать ограничения."
+              "text": "**Damit die neue Buslinie gelingt, muss die Stadt ihren Fahrplan mit den letzten Abendzügen abstimmen.**",
+              "translation_ru": "Чтобы новый автобусный маршрут оказался успешным, город должен согласовать расписание с последними вечерними поездами."
             },
             {
-              "text": "**Damit eine Kundenbeschwerde gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы жалоба клиента сработал, всем нужно понимать ограничения."
+              "text": "**Damit das Experiment gelingt, muss das Forschungsteam die Ausschlusskriterien festlegen, bevor es die Ergebnisse sieht.**",
+              "translation_ru": "Чтобы эксперимент был качественным, исследовательская команда должна определить критерии исключения до того, как увидит результаты."
             },
             {
-              "text": "**Damit einen Plan für den Nahverkehr gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы план общественного транспорта сработал, всем нужно понимать ограничения."
+              "text": "**Damit der Lieferantenwechsel gelingt, muss der Einkauf Ersatzbestände sichern, bevor der alte Vertrag ausläuft.**",
+              "translation_ru": "Чтобы смена поставщика прошла успешно, закупки должны обеспечить резервный запас до истечения старого контракта."
             },
             {
-              "text": "**Damit eine schwierige Personalentscheidung gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы сложное кадровое решение сработал, всем нужно понимать ограничения."
+              "text": "**Damit das Mentoringprogramm gelingt, müssen sich die Teilnehmenden häufig genug treffen, um reale Arbeit statt hypothetischer Übungen zu besprechen.**",
+              "translation_ru": "Чтобы программа наставничества сработала, участники должны встречаться достаточно часто и обсуждать реальную работу, а не только учебные ситуации."
             },
             {
-              "text": "**Damit das überarbeitete Budget gelingt, müssen alle die Grenzen verstehen.**",
-              "translation_ru": "Чтобы пересмотренный бюджет сработал, всем нужно понимать ограничения."
+              "text": "**Damit die Wiederherstellung des Archivs gelingt, muss das Team die ursprünglichen Prüfsummen erhalten, während der fehlende Index neu aufgebaut wird.**",
+              "translation_ru": "Чтобы восстановление архива прошло успешно, команда должна сохранить исходные контрольные суммы, пока восстанавливает отсутствующий индекс."
             }
           ]
         }
       ],
       "formulas": [
-        "For [a funding proposal] to succeed, everyone needs to understand the limits.",
-        "Damit [einen Förderantrag] gelingt, müssen alle die Grenzen verstehen."
+        "For [X] to succeed, [Y] needs to [Z].",
+        "Damit [X] gelingt, muss [Y] [Z]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Modality and obligation."
-      }
+        "notes": "C1 communicative frame: Modality and obligation. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "For [X] to succeed, [Y] needs to [Z]",
+      "description_en": "State a concrete prerequisite for success and identify who must satisfy it.",
+      "description_ru": "Формулируйте конкретное условие успеха и называйте того, кто должен его обеспечить."
     }
   ]
 }

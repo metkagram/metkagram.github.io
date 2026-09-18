@@ -6,96 +6,99 @@
       "id": "C1ARG001",
       "group_id": "ARG",
       "set_id": "ARG",
-      "title_ru": "Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost» в контексте заявка на финансирование.",
+      "title_ru": "Аргумент в пользу [X] основан на предположении, что [Y]",
+      "metaphor_ru": "Используйте этот каркас, чтобы сделать ключевое допущение аргумента явным и проверить, действительно ли на нём держится вывод.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The case for [a funding proposal] rests on the assumption that [claim].",
-          "example": "The case for a funding proposal rests on the assumption that the benefits outweigh the short-term cost.",
-          "translation": "Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost.",
+          "formula": "The case for [X] rests on the assumption that [Y].",
+          "example": "The case for extending the pilot rests on the assumption that the savings will persist after the subsidy ends.",
+          "translation": "Аргумент в пользу продления пилота основан на предположении, что экономия сохранится и после окончания субсидии.",
           "examples": [
             {
-              "text": "**The case for a funding proposal rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for extending the pilot rests on the assumption that the savings will persist after the subsidy ends.**",
+              "translation_ru": "Аргумент в пользу продления пилота основан на предположении, что экономия сохранится и после окончания субсидии."
             },
             {
-              "text": "**The case for a delayed product launch rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу задерженный запуск продукта основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for delaying the launch rests on the assumption that fixing the accessibility blockers now will cost less than patching them after release.**",
+              "translation_ru": "Аргумент в пользу переноса запуска основан на предположении, что устранить проблемы доступности сейчас дешевле, чем исправлять их после релиза."
             },
             {
-              "text": "**The case for the team’s research findings rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу результаты исследования команды основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for a remote-work policy rests on the assumption that output matters more than physical presence for these roles.**",
+              "translation_ru": "Аргумент в пользу удалённой работы основан на предположении, что для этих ролей результат важнее физического присутствия."
             },
             {
-              "text": "**The case for a customer complaint rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу жалоба клиента основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for adding late-night buses rests on the assumption that evening ridership will remain above its seasonal baseline.**",
+              "translation_ru": "Аргумент в пользу дополнительных поздних автобусов основан на предположении, что вечерний пассажиропоток останется выше сезонного уровня."
             },
             {
-              "text": "**The case for a public-transport plan rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу план общественного транспорта основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for automated triage rests on the assumption that false positives can be audited before they affect customers.**",
+              "translation_ru": "Аргумент в пользу автоматической первичной сортировки основан на предположении, что ложные срабатывания можно проверить до того, как они затронут клиентов."
             },
             {
-              "text": "**The case for a difficult staffing decision rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу сложное кадровое решение основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for hiring contractors rests on the assumption that the demand spike is temporary rather than structural.**",
+              "translation_ru": "Аргумент в пользу привлечения подрядчиков основан на предположении, что всплеск нагрузки временный, а не структурный."
             },
             {
-              "text": "**The case for the revised budget rests on the assumption that the benefits outweigh the short-term cost.**",
-              "translation_ru": "Аргумент в пользу пересмотренный бюджет основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**The case for keeping the legacy API rests on the assumption that external clients still depend on undocumented behaviour.**",
+              "translation_ru": "Аргумент в пользу сохранения старого API основан на предположении, что внешние клиенты всё ещё зависят от недокументированного поведения."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das Argument für [einen Förderantrag] beruht auf der Annahme, dass [Behauptung].",
-          "example": "Das Argument für einen Förderantrag beruht auf der Annahme, dass the benefits outweigh the short-term cost.",
-          "translation": "Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost.",
+          "formula": "Das Argument für [X] beruht auf der Annahme, dass [Y].",
+          "example": "Das Argument für eine Verlängerung des Pilotprojekts beruht auf der Annahme, dass die Einsparungen auch nach dem Ende der Förderung bestehen bleiben.",
+          "translation": "Аргумент в пользу продления пилота основан на предположении, что экономия сохранится и после окончания субсидии.",
           "examples": [
             {
-              "text": "**Das Argument für einen Förderantrag beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу заявка на финансирование основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für eine Verlängerung des Pilotprojekts beruht auf der Annahme, dass die Einsparungen auch nach dem Ende der Förderung bestehen bleiben.**",
+              "translation_ru": "Аргумент в пользу продления пилота основан на предположении, что экономия сохранится и после окончания субсидии."
             },
             {
-              "text": "**Das Argument für eine verspätete Produkteinführung beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу задерженный запуск продукта основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für eine Verschiebung des Starts beruht auf der Annahme, dass die Behebung der Barrierefreiheitsprobleme jetzt weniger kostet als spätere Korrekturen nach der Veröffentlichung.**",
+              "translation_ru": "Аргумент в пользу переноса запуска основан на предположении, что устранить проблемы доступности сейчас дешевле, чем исправлять их после релиза."
             },
             {
-              "text": "**Das Argument für die Forschungsergebnisse des Teams beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу результаты исследования команды основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für eine Regelung zur Telearbeit beruht auf der Annahme, dass bei diesen Rollen die Ergebnisse wichtiger sind als die physische Anwesenheit.**",
+              "translation_ru": "Аргумент в пользу удалённой работы основан на предположении, что для этих ролей результат важнее физического присутствия."
             },
             {
-              "text": "**Das Argument für eine Kundenbeschwerde beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу жалоба клиента основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für zusätzliche Nachtbusse beruht auf der Annahme, dass die Fahrgastzahlen am Abend über dem saisonalen Ausgangsniveau bleiben werden.**",
+              "translation_ru": "Аргумент в пользу дополнительных поздних автобусов основан на предположении, что вечерний пассажиропоток останется выше сезонного уровня."
             },
             {
-              "text": "**Das Argument für einen Plan für den Nahverkehr beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу план общественного транспорта основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für eine automatisierte Vorprüfung beruht auf der Annahme, dass Fehlalarme überprüft werden können, bevor sie Kundinnen und Kunden betreffen.**",
+              "translation_ru": "Аргумент в пользу автоматической первичной сортировки основан на предположении, что ложные срабатывания можно проверить до того, как они затронут клиентов."
             },
             {
-              "text": "**Das Argument für eine schwierige Personalentscheidung beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу сложное кадровое решение основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für den Einsatz externer Kräfte beruht auf der Annahme, dass der Nachfrageschub vorübergehend und nicht strukturell ist.**",
+              "translation_ru": "Аргумент в пользу привлечения подрядчиков основан на предположении, что всплеск нагрузки временный, а не структурный."
             },
             {
-              "text": "**Das Argument für das überarbeitete Budget beruht auf der Annahme, dass die Vorteile die kurzfristigen Kosten überwiegen.**",
-              "translation_ru": "Аргумент в пользу пересмотренный бюджет основан на предположении, что the benefits outweigh the short-term cost."
+              "text": "**Das Argument für die Beibehaltung der alten API beruht auf der Annahme, dass externe Clients weiterhin von undokumentiertem Verhalten abhängen.**",
+              "translation_ru": "Аргумент в пользу сохранения старого API основан на предположении, что внешние клиенты всё ещё зависят от недокументированного поведения."
             }
           ]
         }
       ],
       "formulas": [
-        "The case for [a funding proposal] rests on the assumption that [claim].",
-        "Das Argument für [einen Förderantrag] beruht auf der Annahme, dass [Behauptung]."
+        "The case for [X] rests on the assumption that [Y].",
+        "Das Argument für [X] beruht auf der Annahme, dass [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Argumentation."
-      }
+        "notes": "C1 communicative frame: Argumentation. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "The case for [X] rests on the assumption that [Y]",
+      "description_en": "Use this frame to expose the assumption an argument depends on, so the assumption can be tested rather than left implicit.",
+      "description_ru": "Используйте этот каркас, чтобы сделать ключевое допущение аргумента явным и проверить, действительно ли на нём держится вывод."
     }
   ]
 }

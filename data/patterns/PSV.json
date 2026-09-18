@@ -671,96 +671,99 @@
       "id": "C1PSV001",
       "group_id": "PSV",
       "set_id": "PSV",
-      "title_ru": "заявка на финансирование рассматривается до объявления какого-либо решения",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «заявка на финансирование рассматривается до объявления какого-либо решения» в контексте заявка на финансирование.",
+      "title_ru": "Перед [X] объект [Y] проходит действие без акцента на исполнителе",
+      "metaphor_ru": "Используйте пассив, когда важнее процесс, объект или результат, а не исполнитель; выбирайте время по реальной временной линии.",
       "langs": [
         {
           "lang": "en",
-          "formula": "[a funding proposal] is being reviewed before any decision is announced.",
-          "example": "a funding proposal is being reviewed before any decision is announced.",
-          "translation": "заявка на финансирование рассматривается до объявления какого-либо решения.",
+          "formula": "Before [X], [Y] is / was / will be [past participle].",
+          "example": "Before a supplier contract is signed, the liability clauses are reviewed by legal counsel.",
+          "translation": "Перед подписанием контракта с поставщиком пункты об ответственности проверяются юридическим отделом.",
           "examples": [
             {
-              "text": "**a funding proposal is being reviewed before any decision is announced.**",
-              "translation_ru": "заявка на финансирование рассматривается до объявления какого-либо решения."
+              "text": "**Before a supplier contract is signed, the liability clauses are reviewed by legal counsel.**",
+              "translation_ru": "Перед подписанием контракта с поставщиком пункты об ответственности проверяются юридическим отделом."
             },
             {
-              "text": "**a delayed product launch is being reviewed before any decision is announced.**",
-              "translation_ru": "задерженный запуск продукта рассматривается до объявления какого-либо решения."
+              "text": "**Before the samples entered the laboratory, each container was photographed and assigned a tracking code.**",
+              "translation_ru": "До поступления образцов в лабораторию каждый контейнер был сфотографирован и получил код отслеживания."
             },
             {
-              "text": "**the team’s research findings is being reviewed before any decision is announced.**",
-              "translation_ru": "результаты исследования команды рассматривается до объявления какого-либо решения."
+              "text": "**Before the panel sees the applications, names and other identifying details will be removed.**",
+              "translation_ru": "Перед тем как комиссия увидит заявки, имена и другие идентифицирующие данные будут удалены."
             },
             {
-              "text": "**a customer complaint is being reviewed before any decision is announced.**",
-              "translation_ru": "жалоба клиента рассматривается до объявления какого-либо решения."
+              "text": "**Before the database migration begins, the latest backup is verified against a clean restore environment.**",
+              "translation_ru": "Перед началом миграции базы данных последняя резервная копия проверяется в чистой среде восстановления."
             },
             {
-              "text": "**a public-transport plan is being reviewed before any decision is announced.**",
-              "translation_ru": "план общественного транспорта рассматривается до объявления какого-либо решения."
+              "text": "**Before the bridge reopened last spring, its load-bearing joints had been inspected twice by independent engineers.**",
+              "translation_ru": "До повторного открытия моста прошлой весной его несущие соединения дважды проверили независимые инженеры."
             },
             {
-              "text": "**a difficult staffing decision is being reviewed before any decision is announced.**",
-              "translation_ru": "сложное кадровое решение рассматривается до объявления какого-либо решения."
+              "text": "**Before the new pricing model goes live, existing customers will be notified at least thirty days in advance.**",
+              "translation_ru": "Перед запуском новой модели цен существующие клиенты будут уведомлены как минимум за тридцать дней."
             },
             {
-              "text": "**the revised budget is being reviewed before any decision is announced.**",
-              "translation_ru": "пересмотренный бюджет рассматривается до объявления какого-либо решения."
+              "text": "**Before an incident is closed, the corrective actions are recorded and assigned to named owners.**",
+              "translation_ru": "Перед закрытием инцидента корректирующие действия фиксируются и назначаются конкретным ответственным."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "[einen Förderantrag] wird geprüft, bevor eine Entscheidung bekannt gegeben wird.",
-          "example": "einen Förderantrag wird geprüft, bevor eine Entscheidung bekannt gegeben wird.",
-          "translation": "заявка на финансирование рассматривается до объявления какого-либо решения.",
+          "formula": "Bevor [X], wird / wurde [Y] [Partizip II].",
+          "example": "Bevor ein Lieferantenvertrag unterzeichnet wird, werden die Haftungsklauseln von der Rechtsabteilung geprüft.",
+          "translation": "Перед подписанием контракта с поставщиком пункты об ответственности проверяются юридическим отделом.",
           "examples": [
             {
-              "text": "**einen Förderantrag wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "заявка на финансирование рассматривается до объявления какого-либо решения."
+              "text": "**Bevor ein Lieferantenvertrag unterzeichnet wird, werden die Haftungsklauseln von der Rechtsabteilung geprüft.**",
+              "translation_ru": "Перед подписанием контракта с поставщиком пункты об ответственности проверяются юридическим отделом."
             },
             {
-              "text": "**eine verspätete Produkteinführung wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "задерженный запуск продукта рассматривается до объявления какого-либо решения."
+              "text": "**Bevor die Proben ins Labor gelangten, wurde jeder Behälter fotografiert und mit einem Trackingcode versehen.**",
+              "translation_ru": "До поступления образцов в лабораторию каждый контейнер был сфотографирован и получил код отслеживания."
             },
             {
-              "text": "**die Forschungsergebnisse des Teams wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "результаты исследования команды рассматривается до объявления какого-либо решения."
+              "text": "**Bevor das Gremium die Bewerbungen sieht, werden Namen und andere identifizierende Angaben entfernt.**",
+              "translation_ru": "Перед тем как комиссия увидит заявки, имена и другие идентифицирующие данные будут удалены."
             },
             {
-              "text": "**eine Kundenbeschwerde wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "жалоба клиента рассматривается до объявления какого-либо решения."
+              "text": "**Bevor die Datenbankmigration beginnt, wird die neueste Sicherung in einer sauberen Wiederherstellungsumgebung überprüft.**",
+              "translation_ru": "Перед началом миграции базы данных последняя резервная копия проверяется в чистой среде восстановления."
             },
             {
-              "text": "**einen Plan für den Nahverkehr wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "план общественного транспорта рассматривается до объявления какого-либо решения."
+              "text": "**Bevor die Brücke im vergangenen Frühjahr wieder geöffnet wurde, waren ihre tragenden Verbindungen zweimal von unabhängigen Ingenieurinnen und Ingenieuren geprüft worden.**",
+              "translation_ru": "До повторного открытия моста прошлой весной его несущие соединения дважды проверили независимые инженеры."
             },
             {
-              "text": "**eine schwierige Personalentscheidung wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "сложное кадровое решение рассматривается до объявления какого-либо решения."
+              "text": "**Bevor das neue Preismodell in Kraft tritt, werden bestehende Kundinnen und Kunden mindestens dreißig Tage im Voraus informiert.**",
+              "translation_ru": "Перед запуском новой модели цен существующие клиенты будут уведомлены как минимум за тридцать дней."
             },
             {
-              "text": "**das überarbeitete Budget wird geprüft, bevor eine Entscheidung bekannt gegeben wird.**",
-              "translation_ru": "пересмотренный бюджет рассматривается до объявления какого-либо решения."
+              "text": "**Bevor ein Vorfall geschlossen wird, werden die Korrekturmaßnahmen dokumentiert und konkreten Verantwortlichen zugewiesen.**",
+              "translation_ru": "Перед закрытием инцидента корректирующие действия фиксируются и назначаются конкретным ответственным."
             }
           ]
         }
       ],
       "formulas": [
-        "[a funding proposal] is being reviewed before any decision is announced.",
-        "[einen Förderantrag] wird geprüft, bevor eine Entscheidung bekannt gegeben wird."
+        "Before [X], [Y] is / was / will be [past participle].",
+        "Bevor [X], wird / wurde [Y] [Partizip II]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Passive and impersonal style."
-      }
+        "notes": "C1 communicative frame: Passive and impersonal style. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "Before [X], [Y] is / was / will be [past participle]",
+      "description_en": "Use the passive when the process, object, or result matters more than who performs the action; vary the tense to match the timeline.",
+      "description_ru": "Используйте пассив, когда важнее процесс, объект или результат, а не исполнитель; выбирайте время по реальной временной линии."
     }
   ]
 }

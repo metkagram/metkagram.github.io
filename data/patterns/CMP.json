@@ -766,96 +766,99 @@
       "id": "C1CMP001",
       "group_id": "CMP",
       "set_id": "CMP",
-      "title_ru": "По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение» в контексте заявка на финансирование.",
+      "title_ru": "Ключевое различие между [X] и [Y] — [Z]",
+      "metaphor_ru": "Сравнивайте варианты по конкретному параметру, который их различает, вместо общего «один лучше другого».",
       "langs": [
         {
           "lang": "en",
-          "formula": "Compared with the alternative, [a funding proposal] offers a more durable solution.",
-          "example": "Compared with the alternative, a funding proposal offers a more durable solution.",
-          "translation": "По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение.",
+          "formula": "The decisive difference between [X] and [Y] is [Z].",
+          "example": "The decisive difference between a big-bang migration and a phased rollout is reversibility: staged changes expose mapping errors before they spread.",
+          "translation": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся.",
           "examples": [
             {
-              "text": "**Compared with the alternative, a funding proposal offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение."
+              "text": "**The decisive difference between a big-bang migration and a phased rollout is reversibility: staged changes expose mapping errors before they spread.**",
+              "translation_ru": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся."
             },
             {
-              "text": "**Compared with the alternative, a delayed product launch offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой задерженный запуск продукта предлагает более устойчивое решение."
+              "text": "**The decisive difference between adding more buses and increasing train frequency is capacity: trains can move more passengers through the busiest corridor.**",
+              "translation_ru": "Ключевое различие между добавлением автобусов и увеличением частоты поездов — пропускная способность: поезда могут перевезти больше пассажиров на самом загруженном направлении."
             },
             {
-              "text": "**Compared with the alternative, the team’s research findings offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой результаты исследования команды предлагает более устойчивое решение."
+              "text": "**The decisive difference between the lowest bidder and the incumbent supplier is recovery speed when a critical component fails.**",
+              "translation_ru": "Ключевое различие между самым дешёвым участником тендера и текущим поставщиком — скорость восстановления при отказе критического компонента."
             },
             {
-              "text": "**Compared with the alternative, a customer complaint offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой жалоба клиента предлагает более устойчивое решение."
+              "text": "**The decisive difference between another presentation and a supervised practice session is the evidence they produce: practice shows whether people can actually perform the task.**",
+              "translation_ru": "Ключевое различие между ещё одной презентацией и практической сессией под наблюдением — в доказательствах результата: практика показывает, умеют ли люди реально выполнять задачу."
             },
             {
-              "text": "**Compared with the alternative, a public-transport plan offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой план общественного транспорта предлагает более устойчивое решение."
+              "text": "**The decisive difference between the larger model and the smaller model is the operating constraint: the smaller one can run locally with lower latency.**",
+              "translation_ru": "Ключевое различие между большой и малой моделью — в требованиях к эксплуатации: меньшую можно запускать локально с меньшей задержкой."
             },
             {
-              "text": "**Compared with the alternative, a difficult staffing decision offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой сложное кадровое решение предлагает более устойчивое решение."
+              "text": "**The decisive difference between complete demolition and selective renovation is what can be preserved: renovation can retain the building’s original character.**",
+              "translation_ru": "Ключевое различие между полным сносом и выборочной реконструкцией — в том, что можно сохранить: реконструкция позволяет сохранить первоначальный характер здания."
             },
             {
-              "text": "**Compared with the alternative, the revised budget offers a more durable solution.**",
-              "translation_ru": "По сравнению с альтернативой пересмотренный бюджет предлагает более устойчивое решение."
+              "text": "**The decisive difference between a nightly full backup and incremental snapshots is recovery granularity during the working day.**",
+              "translation_ru": "Ключевое различие между полной ночной резервной копией и инкрементальными снимками — детализация точек восстановления в течение рабочего дня."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Im Vergleich zur Alternative bietet [einen Förderantrag] eine nachhaltigere Lösung.",
-          "example": "Im Vergleich zur Alternative bietet einen Förderantrag eine nachhaltigere Lösung.",
-          "translation": "По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение.",
+          "formula": "Der entscheidende Unterschied zwischen [X] und [Y] liegt in [Z].",
+          "example": "Der entscheidende Unterschied zwischen einer Big-Bang-Migration und einer schrittweisen Einführung liegt in der Umkehrbarkeit: Etappenweise Änderungen machen Zuordnungsfehler sichtbar, bevor sie sich ausbreiten.",
+          "translation": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся.",
           "examples": [
             {
-              "text": "**Im Vergleich zur Alternative bietet einen Förderantrag eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой заявка на финансирование предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen einer Big-Bang-Migration und einer schrittweisen Einführung liegt in der Umkehrbarkeit: Etappenweise Änderungen machen Zuordnungsfehler sichtbar, bevor sie sich ausbreiten.**",
+              "translation_ru": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet eine verspätete Produkteinführung eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой задерженный запуск продукта предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen zusätzlichen Bussen und einer höheren Zugfrequenz liegt in der Kapazität: Züge können mehr Fahrgäste durch den am stärksten ausgelasteten Korridor befördern.**",
+              "translation_ru": "Ключевое различие между добавлением автобусов и увеличением частоты поездов — пропускная способность: поезда могут перевезти больше пассажиров на самом загруженном направлении."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet die Forschungsergebnisse des Teams eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой результаты исследования команды предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen dem günstigsten Anbieter und dem bisherigen Lieferanten liegt in der Wiederherstellungsgeschwindigkeit, wenn eine kritische Komponente ausfällt.**",
+              "translation_ru": "Ключевое различие между самым дешёвым участником тендера и текущим поставщиком — скорость восстановления при отказе критического компонента."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet eine Kundenbeschwerde eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой жалоба клиента предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen einer weiteren Präsentation und einer betreuten Übungseinheit liegt in den gewonnenen Nachweisen: Die Übung zeigt, ob die Teilnehmenden die Aufgabe tatsächlich ausführen können.**",
+              "translation_ru": "Ключевое различие между ещё одной презентацией и практической сессией под наблюдением — в доказательствах результата: практика показывает, умеют ли люди реально выполнять задачу."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet einen Plan für den Nahverkehr eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой план общественного транспорта предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen dem größeren und dem kleineren Modell liegt in den Betriebsanforderungen: Das kleinere kann lokal mit geringerer Latenz laufen.**",
+              "translation_ru": "Ключевое различие между большой и малой моделью — в требованиях к эксплуатации: меньшую можно запускать локально с меньшей задержкой."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet eine schwierige Personalentscheidung eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой сложное кадровое решение предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen einem vollständigen Abriss und einer gezielten Sanierung liegt darin, was erhalten werden kann: Eine Sanierung kann den ursprünglichen Charakter des Gebäudes bewahren.**",
+              "translation_ru": "Ключевое различие между полным сносом и выборочной реконструкцией — в том, что можно сохранить: реконструкция позволяет сохранить первоначальный характер здания."
             },
             {
-              "text": "**Im Vergleich zur Alternative bietet das überarbeitete Budget eine nachhaltigere Lösung.**",
-              "translation_ru": "По сравнению с альтернативой пересмотренный бюджет предлагает более устойчивое решение."
+              "text": "**Der entscheidende Unterschied zwischen einer nächtlichen Vollsicherung und inkrementellen Snapshots liegt in der Granularität der Wiederherstellung während des Arbeitstags.**",
+              "translation_ru": "Ключевое различие между полной ночной резервной копией и инкрементальными снимками — детализация точек восстановления в течение рабочего дня."
             }
           ]
         }
       ],
       "formulas": [
-        "Compared with the alternative, [a funding proposal] offers a more durable solution.",
-        "Im Vergleich zur Alternative bietet [einen Förderantrag] eine nachhaltigere Lösung."
+        "The decisive difference between [X] and [Y] is [Z].",
+        "Der entscheidende Unterschied zwischen [X] und [Y] liegt in [Z]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Comparison and evaluation."
-      }
+        "notes": "C1 communicative frame: Comparison and evaluation. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "The decisive difference between [X] and [Y] is [Z]",
+      "description_en": "Compare alternatives by naming the specific dimension that separates them, rather than saying only that one is better.",
+      "description_ru": "Сравнивайте варианты по конкретному параметру, который их различает, вместо общего «один лучше другого»."
     }
   ]
 }

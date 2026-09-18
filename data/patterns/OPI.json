@@ -13686,96 +13686,99 @@
       "id": "C1OPI001",
       "group_id": "OPI",
       "set_id": "OPI",
-      "title_ru": "После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания» в контексте заявка на финансирование.",
+      "title_ru": "После тщательного рассмотрения я считаю, что [X], особенно учитывая [Y]",
+      "metaphor_ru": "Формулируйте взвешенную позицию и сразу показывайте основание для неё, а не просто усиливайте мнение.",
       "langs": [
         {
           "lang": "en",
-          "formula": "My considered view is that [a funding proposal] deserves closer attention.",
-          "example": "My considered view is that a funding proposal deserves closer attention.",
-          "translation": "После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания.",
+          "formula": "My considered view is that [X], especially given [Y].",
+          "example": "My considered view is that we should keep the pilot small, especially given how uncertain demand remains.",
+          "translation": "После тщательного рассмотрения я считаю, что пилот стоит оставить небольшим, особенно учитывая сохраняющуюся неопределённость спроса.",
           "examples": [
             {
-              "text": "**My considered view is that a funding proposal deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания."
+              "text": "**My considered view is that we should keep the pilot small, especially given how uncertain demand remains.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что пилот стоит оставить небольшим, особенно учитывая сохраняющуюся неопределённость спроса."
             },
             {
-              "text": "**My considered view is that a delayed product launch deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что задерженный запуск продукта заслуживает большего внимания."
+              "text": "**My considered view is that the team handled the incident well, especially given how little diagnostic data was available at the start.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что команда хорошо справилась с инцидентом, особенно учитывая, как мало диагностических данных было в начале."
             },
             {
-              "text": "**My considered view is that the team’s research findings deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что результаты исследования команды заслуживает большего внимания."
+              "text": "**My considered view is that the deadline should move by two weeks, especially given the new regulatory review.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что срок стоит сдвинуть на две недели, особенно учитывая новую регуляторную проверку."
             },
             {
-              "text": "**My considered view is that a customer complaint deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что жалоба клиента заслуживает большего внимания."
+              "text": "**My considered view is that we will need a second supplier, especially given the volatility we saw last quarter.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что нам понадобится второй поставщик, особенно учитывая нестабильность прошлого квартала."
             },
             {
-              "text": "**My considered view is that a public-transport plan deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что план общественного транспорта заслуживает большего внимания."
+              "text": "**My considered view is that the training worked, especially given how quickly new hires became independent.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что обучение сработало, особенно учитывая, как быстро новые сотрудники стали самостоятельными."
             },
             {
-              "text": "**My considered view is that a difficult staffing decision deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что сложное кадровое решение заслуживает большего внимания."
+              "text": "**My considered view is that we should not automate this step yet, especially given the number of edge cases still unresolved.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что этот шаг пока не стоит автоматизировать, особенно учитывая количество нерешённых пограничных случаев."
             },
             {
-              "text": "**My considered view is that the revised budget deserves closer attention.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что пересмотренный бюджет заслуживает большего внимания."
+              "text": "**My considered view is that the museum should keep the shorter labels, especially given the visitor feedback from the summer trial.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что музею стоит сохранить более короткие подписи, особенно учитывая отзывы посетителей после летнего теста."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Nach reiflicher Überlegung bin ich der Ansicht, dass [einen Förderantrag] mehr Aufmerksamkeit verdient.",
-          "example": "Nach reiflicher Überlegung bin ich der Ansicht, dass einen Förderantrag mehr Aufmerksamkeit verdient.",
-          "translation": "После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания.",
+          "formula": "Nach reiflicher Überlegung bin ich der Ansicht, dass [X], insbesondere angesichts [Y].",
+          "example": "Nach reiflicher Überlegung bin ich der Ansicht, dass wir das Pilotprojekt klein halten sollten, insbesondere angesichts der weiterhin unsicheren Nachfrage.",
+          "translation": "После тщательного рассмотрения я считаю, что пилот стоит оставить небольшим, особенно учитывая сохраняющуюся неопределённость спроса.",
           "examples": [
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass einen Förderantrag mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что заявка на финансирование заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass wir das Pilotprojekt klein halten sollten, insbesondere angesichts der weiterhin unsicheren Nachfrage.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что пилот стоит оставить небольшим, особенно учитывая сохраняющуюся неопределённость спроса."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass eine verspätete Produkteinführung mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что задерженный запуск продукта заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass das Team den Vorfall gut bewältigt hat, insbesondere angesichts der anfangs sehr begrenzten Diagnosedaten.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что команда хорошо справилась с инцидентом, особенно учитывая, как мало диагностических данных было в начале."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass die Forschungsergebnisse des Teams mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что результаты исследования команды заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass die Frist um zwei Wochen verschoben werden sollte, insbesondere angesichts der neuen regulatorischen Prüfung.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что срок стоит сдвинуть на две недели, особенно учитывая новую регуляторную проверку."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass eine Kundenbeschwerde mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что жалоба клиента заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass wir einen zweiten Lieferanten brauchen werden, insbesondere angesichts der Schwankungen im letzten Quartal.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что нам понадобится второй поставщик, особенно учитывая нестабильность прошлого квартала."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass einen Plan für den Nahverkehr mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что план общественного транспорта заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass die Schulung wirksam war, insbesondere angesichts der Geschwindigkeit, mit der neue Mitarbeitende selbstständig wurden.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что обучение сработало, особенно учитывая, как быстро новые сотрудники стали самостоятельными."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass eine schwierige Personalentscheidung mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что сложное кадровое решение заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass wir diesen Schritt noch nicht automatisieren sollten, insbesondere angesichts der vielen noch ungeklärten Sonderfälle.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что этот шаг пока не стоит автоматизировать, особенно учитывая количество нерешённых пограничных случаев."
             },
             {
-              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass das überarbeitete Budget mehr Aufmerksamkeit verdient.**",
-              "translation_ru": "После тщательного рассмотрения я считаю, что пересмотренный бюджет заслуживает большего внимания."
+              "text": "**Nach reiflicher Überlegung bin ich der Ansicht, dass das Museum die kürzeren Beschriftungen beibehalten sollte, insbesondere angesichts des Besucherfeedbacks aus dem Sommertest.**",
+              "translation_ru": "После тщательного рассмотрения я считаю, что музею стоит сохранить более короткие подписи, особенно учитывая отзывы посетителей после летнего теста."
             }
           ]
         }
       ],
       "formulas": [
-        "My considered view is that [a funding proposal] deserves closer attention.",
-        "Nach reiflicher Überlegung bin ich der Ansicht, dass [einen Förderantrag] mehr Aufmerksamkeit verdient."
+        "My considered view is that [X], especially given [Y].",
+        "Nach reiflicher Überlegung bin ich der Ansicht, dass [X], insbesondere angesichts [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Opinions and stance."
-      }
+        "notes": "C1 communicative frame: Opinions and stance. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "My considered view is that [X], especially given [Y]",
+      "description_en": "State a considered position and make the reason for that position visible instead of sounding merely emphatic.",
+      "description_ru": "Формулируйте взвешенную позицию и сразу показывайте основание для неё, а не просто усиливайте мнение."
     }
   ]
 }

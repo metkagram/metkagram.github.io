@@ -6,96 +6,99 @@
       "id": "C1AGR001",
       "group_id": "AGR",
       "set_id": "AGR",
-      "title_ru": "Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе» в контексте заявка на финансирование.",
+      "title_ru": "Я вижу смысл в [X], хотя я бы [Y]",
+      "metaphor_ru": "Признайте сильную сторону чужой позиции, а затем точно обозначьте, где ваш акцент или рекомендация отличаются.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I see the merit in [a funding proposal], although I would weigh it differently.",
-          "example": "I see the merit in a funding proposal, although I would weigh it differently.",
-          "translation": "Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе.",
+          "formula": "I can see the merit in [X], although I would [Y].",
+          "example": "I can see the merit in launching early, although I would keep the first release invitation-only.",
+          "translation": "Я вижу смысл в раннем запуске, хотя первую версию я бы оставил доступной только по приглашениям.",
           "examples": [
             {
-              "text": "**I see the merit in a funding proposal, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in launching early, although I would keep the first release invitation-only.**",
+              "translation_ru": "Я вижу смысл в раннем запуске, хотя первую версию я бы оставил доступной только по приглашениям."
             },
             {
-              "text": "**I see the merit in a delayed product launch, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону задерженный запуск продукта, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in centralising support, although I would keep one specialist close to each product team.**",
+              "translation_ru": "Я вижу смысл в централизации поддержки, хотя я бы оставил по одному специалисту рядом с каждой продуктовой командой."
             },
             {
-              "text": "**I see the merit in the team’s research findings, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону результаты исследования команды, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in the proposed budget cut, although I would protect the security review from further reductions.**",
+              "translation_ru": "Я вижу смысл в предложенном сокращении бюджета, хотя проверку безопасности я бы защитил от дальнейших урезаний."
             },
             {
-              "text": "**I see the merit in a customer complaint, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону жалоба клиента, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in what we tried last year, although I would not repeat the same rollout sequence.**",
+              "translation_ru": "Я вижу смысл в том, что мы пробовали в прошлом году, хотя ту же последовательность внедрения я бы не повторял."
             },
             {
-              "text": "**I see the merit in a public-transport plan, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону план общественного транспорта, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in waiting for more data, although I would decide the reversible parts now.**",
+              "translation_ru": "Я вижу смысл в ожидании дополнительных данных, хотя обратимые решения я бы принял уже сейчас."
             },
             {
-              "text": "**I see the merit in a difficult staffing decision, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону сложное кадровое решение, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in using a single vendor, although I would negotiate an exit clause before signing a three-year term.**",
+              "translation_ru": "Я вижу смысл в одном поставщике, хотя перед трёхлетним контрактом я бы согласовал условие выхода."
             },
             {
-              "text": "**I see the merit in the revised budget, although I would weigh it differently.**",
-              "translation_ru": "Я вижу сильную сторону пересмотренный бюджет, хотя оценил(а) бы её иначе."
+              "text": "**I can see the merit in adding another workshop, although I would first test whether people are actually applying the material from the previous one.**",
+              "translation_ru": "Я вижу смысл в ещё одном воркшопе, хотя сначала я бы проверил, применяют ли люди материал предыдущего."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich erkenne den Wert von [einen Förderantrag], würde ihn jedoch anders gewichten.",
-          "example": "Ich erkenne den Wert von einen Förderantrag, würde ihn jedoch anders gewichten.",
-          "translation": "Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе.",
+          "formula": "Ich sehe den Vorteil von [X], würde aber [Y].",
+          "example": "Ich sehe den Vorteil eines frühen Starts, würde die erste Version aber nur auf Einladung freigeben.",
+          "translation": "Я вижу смысл в раннем запуске, хотя первую версию я бы оставил доступной только по приглашениям.",
           "examples": [
             {
-              "text": "**Ich erkenne den Wert von einen Förderantrag, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону заявка на финансирование, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil eines frühen Starts, würde die erste Version aber nur auf Einladung freigeben.**",
+              "translation_ru": "Я вижу смысл в раннем запуске, хотя первую версию я бы оставил доступной только по приглашениям."
             },
             {
-              "text": "**Ich erkenne den Wert von eine verspätete Produkteinführung, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону задерженный запуск продукта, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil einer zentralen Supportorganisation, würde aber jeweils eine Fachperson eng an jedem Produktteam lassen.**",
+              "translation_ru": "Я вижу смысл в централизации поддержки, хотя я бы оставил по одному специалисту рядом с каждой продуктовой командой."
             },
             {
-              "text": "**Ich erkenne den Wert von die Forschungsergebnisse des Teams, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону результаты исследования команды, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil der vorgeschlagenen Budgetkürzung, würde die Sicherheitsprüfung aber von weiteren Einsparungen ausnehmen.**",
+              "translation_ru": "Я вижу смысл в предложенном сокращении бюджета, хотя проверку безопасности я бы защитил от дальнейших урезаний."
             },
             {
-              "text": "**Ich erkenne den Wert von eine Kundenbeschwerde, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону жалоба клиента, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil in dem, was wir im letzten Jahr versucht haben, würde aber dieselbe Einführungsreihenfolge nicht wiederholen.**",
+              "translation_ru": "Я вижу смысл в том, что мы пробовали в прошлом году, хотя ту же последовательность внедрения я бы не повторял."
             },
             {
-              "text": "**Ich erkenne den Wert von einen Plan für den Nahverkehr, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону план общественного транспорта, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil darin, auf mehr Daten zu warten, würde die reversiblen Teile aber schon jetzt entscheiden.**",
+              "translation_ru": "Я вижу смысл в ожидании дополнительных данных, хотя обратимые решения я бы принял уже сейчас."
             },
             {
-              "text": "**Ich erkenne den Wert von eine schwierige Personalentscheidung, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону сложное кадровое решение, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil eines einzigen Anbieters, würde aber vor einem Dreijahresvertrag eine Ausstiegsklausel aushandeln.**",
+              "translation_ru": "Я вижу смысл в одном поставщике, хотя перед трёхлетним контрактом я бы согласовал условие выхода."
             },
             {
-              "text": "**Ich erkenne den Wert von das überarbeitete Budget, würde ihn jedoch anders gewichten.**",
-              "translation_ru": "Я вижу сильную сторону пересмотренный бюджет, хотя оценил(а) бы её иначе."
+              "text": "**Ich sehe den Vorteil eines weiteren Workshops, würde aber zuerst prüfen, ob die Teilnehmenden die Inhalte des vorherigen Workshops tatsächlich anwenden.**",
+              "translation_ru": "Я вижу смысл в ещё одном воркшопе, хотя сначала я бы проверил, применяют ли люди материал предыдущего."
             }
           ]
         }
       ],
       "formulas": [
-        "I see the merit in [a funding proposal], although I would weigh it differently.",
-        "Ich erkenne den Wert von [einen Förderantrag], würde ihn jedoch anders gewichten."
+        "I can see the merit in [X], although I would [Y].",
+        "Ich sehe den Vorteil von [X], würde aber [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Agreement and disagreement."
-      }
+        "notes": "C1 communicative frame: Agreement and disagreement. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "I can see the merit in [X], although I would [Y]",
+      "description_en": "Acknowledge a useful part of another position before stating exactly where your own emphasis or recommendation differs.",
+      "description_ru": "Признайте сильную сторону чужой позиции, а затем точно обозначьте, где ваш акцент или рекомендация отличаются."
     }
   ]
 }
