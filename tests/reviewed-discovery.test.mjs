@@ -57,9 +57,9 @@ test("Practice leads with reviewed Routes and A/B sets before the full reference
   for (const locale of ["en", "ru"]) {
     const html = read(`dist/${locale}/practice/index.html`);
     const reviewedIndex = html.indexOf("data-reviewed-discovery");
-    const catalogueIndex = html.indexOf('id="all-patterns"');
+    const slotIndex = html.indexOf('data-practice-discovery-slot');
     assert.ok(reviewedIndex >= 0, `${locale} Practice needs reviewed discovery`);
-    assert.ok(catalogueIndex > reviewedIndex, `${locale} reviewed discovery must precede the full catalogue`);
+    assert.ok(slotIndex > reviewedIndex, `${locale} reviewed discovery must lead the practice discovery section`);
     assert.ok(html.includes(`href="/${locale}/packs/"`), `${locale} Practice should lead to reviewed Routes`);
     assert.ok(html.includes('href="#all-patterns"'), `${locale} Practice should retain an explicit route to the complete catalogue`);
 

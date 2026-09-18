@@ -22,18 +22,20 @@ test("root remains a crawlable multilingual entity gateway", async ({ page }) =>
   await expect(page.getByRole("link", { name: "Repository" })).toHaveAttribute("href", "https://github.com/metkagram/metkagram.github.io");
 });
 
-test("home keeps the interface switch and leads with the real-sentence learning flow", async ({ page }) => {
+test("home keeps the interface switch and leads with the pattern library flow", async ({ page }) => {
   await page.goto("/en/");
   const wordmark = page.locator(".site-header .wordmark");
   await expect(wordmark.locator("img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-dark.svg");
   await expect(wordmark.locator(".wordmark-name")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
-  const lensEntry = page.locator('[data-product-entry="lens"]');
-  await expect(lensEntry).toBeVisible();
-  await expect(lensEntry).toContainText("Start with a real sentence");
-  await expect(lensEntry).toHaveAttribute("href", "/en/lens/");
-  await expect(page.getByRole("link", { name: "Explore the pattern library" })).toHaveAttribute("href", "/en/practice/");
+  const libraryEntry = page.locator('[data-product-entry="library"]');
+  await expect(libraryEntry).toBeVisible();
+  await expect(libraryEntry).toContainText("Open the pattern library");
+  await expect(libraryEntry).toHaveAttribute("href", "/en/practice/");
+  await expect(page.locator(".home-example-cue")).toContainText("Если бы у меня было больше времени");
+  await expect(page.locator(".home-example-sentence .annotated-token").first()).toBeVisible();
+  await expect(page.locator(".home-pattern-list a").first()).toBeVisible();
   await expect(page.locator(".studio-board")).toHaveCount(0);
 });
 
@@ -90,24 +92,82 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
   await expect(tag.locator("[role=tooltip]")).toContainText("Use it to find who or what the sentence is about.");
 });
 
-test("pattern catalogue opens every pattern directly and filters all patterns", async ({ page }) => {
+test("pattern catalogue searches everything, paginates and restores context", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  expect(await rows.count()).toBeGreaterThan(3000);
+  await expect(rows).toHaveCount(30);
   await expect(page.locator("[data-study-set-card]")).toHaveCount(0);
   await expect(page.locator(".study-dashboard")).toHaveCount(0);
-  await page.locator('[data-category-filter]').selectOption("HED");
-  await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(40);
-  await page.locator('[data-pattern-list] > a:visible').first().click();
-  await expect(page).toHaveURL(/\/en\/practice\/patterns\/[^/]+-c1hed001\/$/);
-  await expect(page.locator(".pattern-comparison-list li")).toHaveCount(12);
-  await page.goto("/en/practice/");
-  await page.locator('[data-language-filter="de"]').click();
-  const visible = page.locator("[data-pattern-list] > a:visible");
-  await expect(visible).not.toHaveCount(0);
-  await expect(visible.first()).toHaveAttribute("data-language", /en/);
+  await expect(page.locator("#study-sets a").first()).toBeVisible();
   await page.locator("[data-pattern-search]").fill("would");
   await expect(page.locator("[data-pattern-count]")).toHaveText(/Showing \d+ patterns/);
+  const results = page.locator("[data-pattern-list] > a");
+  expect(await results.count()).toBeGreaterThan(0);
+  expect(await results.count()).toBeLessThanOrEqual(30);
+  await expect(results.first()).toContainText(/would/i);
+  await page.locator("[data-pattern-search]").fill("");
+  await page.locator("[data-pattern-pagination] button").nth(1).click();
+  await expect(page.locator("[data-pattern-page-info]")).toHaveText(/Page 2 of \d+/);
+  await page.locator("[data-pattern-list] > a").first().click();
+  await expect(page).toHaveURL(/\/en\/practice\/patterns\/[^/]+\/$/);
+  await expect(page.locator("[data-pattern-review]")).toBeVisible();
+  await page.goBack();
+  await expect(page.locator("[data-pattern-page-info]")).toHaveText(/Page 2 of \d+/);
+});
+
+test("trilingual review reveals cue, English with annotations, then German", async ({ page }) => {
+  await page.goto("/en/practice/patterns/i-can-confirm-that-we-will-act-if-the-team-needs-funcmt021/");
+  const review = page.locator("[data-pattern-review]");
+  await expect(review).toBeVisible();
+  const first = review.locator("[data-review-card]").first();
+  await expect(first.locator(".review-cue p")).toBeVisible();
+  await expect(first.locator('[data-review-answer="en"]')).toBeHidden();
+  await expect(first.locator('[data-review-answer="de"]')).toBeHidden();
+  const advance = first.locator("[data-review-advance]");
+  await expect(advance).toHaveText("Show English");
+  await advance.click();
+  await expect(first.locator('[data-review-answer="en"]')).toBeVisible();
+  await expect(first.locator('[data-review-answer="en"] .annotated-token').first()).toBeVisible();
+  await expect(first.locator('[data-review-answer="de"]')).toBeHidden();
+  await expect(advance).toHaveText("Show German");
+  await advance.click();
+  await expect(first.locator('[data-review-answer="en"]')).toBeVisible();
+  await expect(first.locator('[data-review-answer="de"]')).toBeVisible();
+  await expect(first.locator('[data-review-answer="de"] .annotated-token').first()).toBeVisible();
+  await expect(advance).toHaveText("Next example");
+  await advance.click();
+  const second = review.locator("[data-review-card]").nth(1);
+  await expect(second).toBeVisible();
+  await expect(first).toBeHidden();
+  await expect(second.locator('[data-review-answer="en"]')).toBeHidden();
+  await expect(page.locator(".pattern-full .pattern-comparison-list li")).toHaveCount(10);
+});
+
+test("unpaired examples skip the missing language without an error state", async ({ page }) => {
+  await page.addInitScript(() => {
+    try { localStorage.setItem("metkagram:pattern-review:v1:FUNADV001", "3"); } catch { /* ignore */ }
+  });
+  await page.goto("/en/practice/patterns/i-would-recommend-checking-whether-the-team-funadv001/");
+  const card = page.locator('[data-review-card][data-stages="cue en"]').first();
+  await expect(card).toBeVisible();
+  await card.locator("[data-review-show-all]").click();
+  await expect(card.locator('[data-review-answer="en"]')).toBeVisible();
+  await expect(card.locator('[data-review-missing="de"]')).toBeVisible();
+  await expect(card.locator('[data-review-missing="de"]')).toContainText("no German version");
+});
+
+test("pattern review shows every language version without JavaScript", async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  await page.goto("/en/practice/patterns/i-can-confirm-that-we-will-act-if-the-team-needs-funcmt021/");
+  const answers = page.locator("[data-pattern-review] [data-review-answer]");
+  expect(await answers.count()).toBeGreaterThan(4);
+  await expect(answers.first()).toBeVisible();
+  const first = page.locator("[data-pattern-review] [data-review-card]").first();
+  await expect(first.locator(".review-cue p")).toBeVisible();
+  await expect(page.locator("[data-pattern-review] [data-review-answer='en']").first()).toBeVisible();
+  await expect(page.locator("[data-pattern-review] [data-review-answer='de']").first()).toBeVisible();
+  await context.close();
 });
 
 test("German annotated texts preserve gender and past-tense signals", async ({ page }) => {

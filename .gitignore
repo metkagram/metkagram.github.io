@@ -5,6 +5,7 @@ data/lens-activation/private/
 dist/
 playwright-report/
 test-results/
+.playwright-mcp/
 reports/design-audit/
 reports/design-audit-ux/
 reports/brand-audit/
@@ -17,3 +18,4 @@ reports/lens-activation/private/
 annotation_service/.venv/
 annotation_service/**/__pycache__/
 annotation_service/enGramVerbs/*firebase-adminsdk*.json
+.tmp/

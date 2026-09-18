@@ -71,12 +71,11 @@ test("practice search text includes human intent language", () => {
   assert.match(practice, /id="intent-discovery"/);
   assert.match(practice, /What do you want to say\?/);
   assert.match(practice, /Browse all 18 intents/);
-  assert.match(practice, /disagree politely/);
-  assert.match(practice, /correct an assumption/);
   assert.match(practice, /data-practice-secondary="atlas"/);
   assert.match(practice, /data-practice-secondary="reasoning"/);
   assert.match(practice, /data-practice-secondary="paths"/);
-  assert.ok(practice.indexOf('id="intent-discovery"') < practice.indexOf('id="all-patterns"'));
+  assert.ok(practice.indexOf('id="intent-discovery"') > practice.indexOf('id="practice-discovery"'), "intent discovery lives in the secondary discovery section");
+  assert.ok(practice.indexOf('id="intent-discovery"') < practice.indexOf('data-practice-discovery-slot'), "intent discovery stays inside the discovery section");
 });
 
 test("reasoning pattern pages link back to their human intents", () => {

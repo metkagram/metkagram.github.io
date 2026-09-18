@@ -51,9 +51,9 @@ test("production contract detects stale homepage product entry", () => {
   const contract = buildProductionContract();
   const snapshot = cloneSnapshot(localSnapshot(contract));
   snapshot[contract.routes.homeEn].text = snapshot[contract.routes.homeEn].text
-    .replace('data-product-entry="lens" href="/en/lens/"', 'data-product-entry="legacy" href="/en/practice/"');
+    .replace('data-product-entry="library" href="/en/practice/"', 'data-product-entry="legacy" href="/en/lens/"');
   const failures = validateProductionSnapshot(snapshot, contract);
-  assert.ok(failures.some((failure) => failure.route === contract.routes.homeEn && failure.message.includes("Lens primary product entry")));
+  assert.ok(failures.some((failure) => failure.route === contract.routes.homeEn && failure.message.includes("Pattern Library primary product entry")));
 });
 
 test("production contract detects stale API counts and release metadata", () => {

@@ -171,7 +171,7 @@ function footer(locale, compact = false) {
   if (compact) return `<footer class="site-footer site-footer--studio">
     <span>${locale === "ru" ? "СТУДИЯ РАЗМЕТКИ" : "ANNOTATION STUDIO"}</span>
     <nav aria-label="${locale === "ru" ? "Путь по Metkagram" : "Metkagram workflow"}"><a href="/${locale}/explore/">${locale === "ru" ? "РАЗМЕТИТЬ" : "MARK"}</a><i aria-hidden="true">›</i><a href="/${locale}/practice/">${locale === "ru" ? "ПАТТЕРН" : "PATTERN"}</a><i aria-hidden="true">›</i><a href="/${locale}/method/">${locale === "ru" ? "ПРИМЕНИТЬ" : "APPLY"}</a></nav>
-    <nav class="studio-footer-meta" aria-label="${locale === "ru" ? "О проекте" : "About Metkagram"}"><a href="/${locale}/about/">${t.navAbout}</a><a href="/${locale}/contact/">METKAGRAM ©</a></nav>
+    <nav class="studio-footer-meta" aria-label="${locale === "ru" ? "О проекте" : "About Metkagram"}"><a href="/${locale}/research/">${locale === "ru" ? "Исследования" : "Research"}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/ideas/">${locale === "ru" ? "Предложить идею" : "Propose an idea"}</a><a href="/${locale}/about/">${t.navAbout}</a><a href="/${locale}/contact/">METKAGRAM ©</a></nav>
   </footer>`;
   return `<footer class="site-footer site-footer--index">
     <div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${locale === "ru" ? "Фразы, паттерны, осознанная практика." : "Phrases, patterns, deliberate practice."}</p></div>
@@ -293,64 +293,47 @@ export function annotatedPreview() {
   </div>`;
 }
 
-export function localeHome(locale, content) {
-  const t = ui[locale];
+const HOME_EXAMPLE_PATTERN_ID = "CON001";
+
+export function localeHome(locale, content, serviceAnnotations = {}) {
   const pathname = `/${locale}/`;
   const ru = locale === "ru";
+  const patterns = content.advancedPatterns || [];
+  const example = patterns.find((pattern) => pattern.id === HOME_EXAMPLE_PATTERN_ID);
+  if (!example) throw new Error(`Homepage example pattern ${HOME_EXAMPLE_PATTERN_ID} is missing from the pattern corpus`);
+  const exampleCard = patternToCanonicalCards(example, serviceAnnotations).find((card) => card.language === "en");
+  const exampleSentence = renderCanonicalText(exampleCard, (span, text) => renderTaggedSpan(span, text, locale, "english", `home-example-${span.id}`));
+  const patternCount = patterns.length.toLocaleString(ru ? "ru-RU" : "en-US");
   const copy = ru ? {
-    eyebrow: "РАЗМЕЧЕННЫЕ ЯЗЫКОВЫЕ ПАТТЕРНЫ",
-    title: ["Учите", "язык", "через", "паттерны."],
-    intro: "Размеченные фразы показывают, как работает каждый паттерн. Заметьте структуру, потренируйте шаблон и используйте его в своей речи.",
-    action: "Исследовать паттерны",
-    library: "Библиотека паттернов",
-    scopeTitle: "Что опубликовано сейчас",
-    scope: "Английские и немецкие фразы с разметкой, большой каталог моделей B2–C1, сеты Thinking in Language и ограниченный французский Frame-only пилот без заявлений о французской разметке или интерфейсе.",
-    rights: "Повторное использование регулируется текущими условиями Metkagram. Существенное повторное использование, распространение, обучение моделей и коммерческая интеграция требуют отдельного согласования.",
-    audiences: [
-      ["Изучать язык", "Читайте живые фразы и замечайте, как устроена речь.", `/${locale}/explore/`],
-      ["Анализировать структуру", "Сравнивайте роли слов и повторяющиеся конструкции.", `/${locale}/method/`],
-      ["Работать с данными", "Подключайте чистые паттерны к агентам и инструментам.", `/${locale}/ai/`],
-      ["Предложить идею", "Обсудите пилот, исследование или партнёрство с командой.", `/${locale}/ideas/`]
-    ]
+    title: "Учите язык через паттерны.",
+    lede: "Metkagram — библиотека живых английских и немецких фраз с визуальной разметкой. Разберите, как устроена фраза, выучите повторяемый паттерн внутри неё, а затем по русской подсказке вспомните английскую и немецкую версии. И повторите со следующим примером.",
+    action: "Открыть библиотеку паттернов",
+    method: "Как устроен метод",
+    exampleLabel: "Настоящий пример из библиотеки",
+    cueLabel: "Подсказка",
+    exampleNote: "Короткие метки показывают роль каждого слова. Откройте любой паттерн: прочитайте русскую подсказку, вспомните английскую фразу, затем немецкую.",
+    listTitle: "Начните с паттерна",
+    listMeta: `${patternCount} паттернов B2–C1 с разметкой · английский и немецкий`,
+    listAll: "Вся библиотека →",
+    scope: "Что опубликовано сейчас: английские и немецкие фразы с разметкой, большой каталог паттернов B2–C1, сеты Thinking in Language и ограниченный французский Frame-only пилот без заявлений о французской разметке или интерфейсе. Повторное использование регулируется текущими условиями Metkagram. Существенное повторное использование, распространение, обучение моделей и коммерческая интеграция требуют отдельного согласования.",
+    licensing: "Права и лицензирование"
   } : {
-    eyebrow: "ANNOTATED LANGUAGE PATTERNS",
-    title: ["Learn", "a language", "through", "patterns."],
-    intro: "Annotated phrases show how each pattern works. Notice the structure, practise the template, and reuse it in your own speech.",
-    action: "Explore patterns",
-    library: "Pattern library",
-    scopeTitle: "What is published now",
-    scope: "Annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims.",
-    rights: "Current reuse follows the Metkagram licensing terms. Substantial reuse, redistribution, model training and commercial integration require scoped permission.",
-    audiences: [
-      ["Learn a language", "Read real phrases and see how language fits together.", `/${locale}/explore/`],
-      ["Analyse structure", "Compare word roles and recurring constructions.", `/${locale}/method/`],
-      ["Build with data", "Connect clean patterns to agents and language tools.", `/${locale}/ai/`],
-      ["Propose an idea", "Discuss a pilot, study, or partnership with the team.", `/${locale}/ideas/`]
-    ]
+    title: "Learn a language through patterns.",
+    lede: "Metkagram is a library of real English and German sentences with visual annotations. See how a sentence works, learn the reusable pattern inside it, and use a Russian cue to recall the English and German versions. Then repeat with another example.",
+    action: "Open the pattern library",
+    method: "How the method works",
+    exampleLabel: "A real example from the library",
+    cueLabel: "Russian cue",
+    exampleNote: "The small tags show the role of each word. Open any pattern to practise: read the Russian cue, recall the English sentence, then the German one.",
+    listTitle: "Start with a pattern",
+    listMeta: `${patternCount} annotated B2–C1 patterns · English and German`,
+    listAll: "Browse the whole library →",
+    scope: "Published now: annotated English and German sentences, a large B2–C1 pattern catalogue, Thinking in Language sets, and a bounded French Frame-only pilot without French annotation or interface claims. Current reuse follows the Metkagram licensing terms. Substantial reuse, redistribution, model training and commercial integration require scoped permission.",
+    licensing: "Rights and licensing"
   };
-  const tag = (kind, label) => `<span class="grammar-tag ${kind}">${label}</span>`;
-  const slips = ru ? [
-    ["S", "Мне трудно сосредоточиться, когда всё отвлекает."],
-    ["V", "Когда я составляю план, работать становится легче."],
-    ["p2", "Дайте мне один ясный следующий шаг."]
-  ] : [
-    ["S", "It’s hard to focus with everything pulling at me."],
-    ["V", "When I plan it out, things feel lighter."],
-    ["p2", "Give me one clear next step."]
-  ];
-  const patterns = ru ? [
-    ["S", "Формулировка трудности", "Мне трудно [V], когда [p2]."],
-    ["V", "Осознание изменения", "Когда я [V], [S] становится [p2]."],
-    ["p2", "Триггер прогресса", "Дайте мне [p2], и я [V]."]
-  ] : [
-    ["S", "Struggle statement", "It’s hard to [V] with [p2]."],
-    ["V", "Value realization", "When I [V], [S] feels [p2]."],
-    ["p2", "Progress trigger", "Give me [p2] and I’ll [V]."]
-  ];
-  const tokenRow = [tag("subject", "S"), tag("verb", "V"), tag("object", "p2"), tag("helper", "Hf")].join("");
-  const title = copy.title.map((line, index) => index === copy.title.length - 1 ? `<mark>${line}</mark>` : `<span>${line}</span>`).join("");
-  const body = `<section class="studio-home studio-home-v2" aria-labelledby="home-title"><div class="studio-hero-v2"><div class="studio-manifest"><p class="eyebrow">${copy.eyebrow}</p><h1 id="home-title">${title}</h1><p>${copy.intro}</p><a class="studio-primary-action" href="/${locale}/practice/">${copy.action}<span aria-hidden="true">↗</span></a></div><div class="studio-flow" aria-label="${ru ? "От размеченных фраз к паттернам" : "From annotated phrases to reusable patterns"}"><div class="studio-slips">${slips.map(([code, sentence], index) => `<article class="studio-slip studio-slip-${index + 1}"><header><span class="studio-slip-code">${code}</span><span class="studio-slip-index">0${index + 1}</span></header><p>${sentence}</p><div class="studio-slip-tags" aria-label="${ru ? "Метки фразы" : "Sentence tags"}">${tokenRow}</div></article>`).join("")}</div><section class="studio-pattern-sheet"><p class="eyebrow">${copy.library}</p>${patterns.map(([code, title, formula]) => `<article><span class="studio-pattern-code">${code}</span><div><strong>${title}</strong><code>${formula}</code></div></article>`).join("")}<a href="/${locale}/practice/">${ru ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→</span></a></section></div></div><nav class="studio-audiences" aria-label="${ru ? "Для кого Metkagram" : "Ways to use Metkagram"}">${copy.audiences.map(([title, detail, href], index) => `<a href="${href}"><span>0${index + 1}</span><strong>${title}</strong><small>${detail}</small><b aria-hidden="true">→</b></a>`).join("")}</nav><section class="ai-section section-pad ruled" data-current-capabilities><div><p class="eyebrow">${ru ? "Границы продукта" : "Product boundary"}</p><h2>${copy.scopeTitle}</h2></div><div><p>${copy.scope}</p><p>${copy.rights}</p><div class="legal-inline-links"><a href="/${locale}/practice/language/french/">${ru ? "Французский пилот" : "French pilot"} →</a><a href="/${locale}/licensing/">${ru ? "Права и лицензирование" : "Rights and licensing"} →</a></div></div></section></section>`;
-  return layout({ locale, pathname, title: locale === "en" ? "Language Annotation & Pattern Library | Metkagram" : "Библиотека разметки и языковых паттернов | Metkagram", description: t.statementDetail, body, bodyClass: "home-studio" });
+  const preview = patterns.slice(0, 8);
+  const body = `<section class="reader-home" aria-labelledby="home-title"><header class="reader-hero"><h1 id="home-title">${copy.title}</h1><p class="home-lede">${copy.lede}</p><p class="home-actions"><a class="home-primary-action" data-product-entry="library" href="/${locale}/practice/">${copy.action}</a><a class="home-secondary-action" href="/${locale}/method/">${copy.method}</a><a class="home-quiet-action" href="/${locale}/lens/">Pattern Lens</a></p></header><section class="home-example" aria-label="${copy.exampleLabel}"><p class="home-example-label">${copy.exampleLabel}</p><p class="home-example-cue" lang="ru"><span class="home-cue-label">${copy.cueLabel}</span> ${escapeHtml(example.title_ru)}</p><p class="annotated-line home-example-sentence" lang="en">${exampleSentence}</p><p class="home-example-note">${copy.exampleNote}</p></section><section class="home-patterns" aria-labelledby="home-patterns-title"><header class="home-patterns-head"><h2 id="home-patterns-title">${copy.listTitle}</h2><p>${copy.listMeta}</p></header><ol class="home-pattern-list">${preview.map((pattern) => `<li><a href="${patternPath(locale, pattern)}"><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.set_id)}</small></a></li>`).join("")}</ol><p class="home-all"><a href="/${locale}/practice/">${copy.listAll}</a></p></section><p class="home-scope">${copy.scope} <a href="/${locale}/licensing/">${copy.licensing} →</a></p></section>`;
+  return layout({ locale, pathname, title: ru ? "Metkagram — учите язык через паттерны" : "Learn a language through patterns | Metkagram", description: copy.lede, body, bodyClass: "home-reader" });
 }
 
 export function explorePage(locale, content) {
@@ -523,8 +506,30 @@ export function patternTitle(pattern, locale, targetLanguage = "en") {
   return pattern.langs.find((lang) => lang.lang === targetLanguage)?.formula || pattern.formulas?.[0] || pattern.id;
 }
 
-export function patternPage(locale, pattern, serviceAnnotations = {}) {
+export function buildPatternReviewDeck(cards) {
+  const deck = [];
+  const push = (langKey, item) => {
+    const cue = String(item?.translation || "").trim();
+    if (!cue || !item?.text) return;
+    let entry = deck.find((candidate) => candidate.cue === cue && !candidate[langKey]);
+    if (!entry) {
+      entry = { cue };
+      deck.push(entry);
+    }
+    entry[langKey] = item;
+  };
+  const english = cards.get("en");
+  const german = cards.get("de");
+  push("en", english ? { text: english.text, spans: english.spans, translation: english.translations?.ru } : null);
+  push("de", german ? { text: german.text, spans: german.spans, translation: german.translations?.ru } : null);
+  for (const item of english?.examples || []) push("en", item);
+  for (const item of german?.examples || []) push("de", item);
+  return deck;
+}
+
+export function patternPage(locale, pattern, serviceAnnotations = {}, siblings = {}) {
   const t = ui[locale];
+  const ru = locale === "ru";
   const primary = pattern.langs[0];
   const title = patternTitle(pattern, locale, primary.lang);
   const pathname = patternPath(locale, pattern);
@@ -546,7 +551,65 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
   }).join("")}</ol></section>` : "";
   const russianDescription = pattern.metaphor_ru ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.metaphor_ru)}</p></div>` : "";
-  const body = `<article class="pattern-page section-pad" data-pattern-id="${escapeHtml(pattern.id)}">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header><div class="pattern-comparison">${primaryCard}${variations}</div></article>`;
+  const reviewCopy = ru ? {
+    heading: "Повторение паттерна",
+    instruction: "Попробуйте сказать это по-английски, прежде чем открыть пример. Открытая фраза — образец, а не единственный возможный перевод.",
+    position: (index, total) => `Пример ${index} из ${total}`,
+    cue: "Подсказка",
+    showEnglish: "Показать английский",
+    showGerman: "Показать немецкий",
+    nextExample: "Следующий пример",
+    nextPattern: "Следующий паттерн",
+    prevPattern: "← Предыдущий паттерн",
+    showAll: "Показать всё",
+    skip: "Пропустить →",
+    missingEn: "Для этого примера нет английской версии с такой же русской подсказкой — английские примеры смотрите в полном списке ниже.",
+    missingDe: "Для этого примера нет немецкой версии с такой же русской подсказкой — немецкие примеры смотрите в полном списке ниже.",
+    legend: "Что означают метки",
+    full: "Полный паттерн: формулы и все примеры",
+    backToSet: "Все паттерны сета",
+    backToList: "К библиотеке"
+  } : {
+    heading: "Review this pattern",
+    instruction: "Try saying it in English before revealing the example. The revealed sentence is a model answer, not the only possible translation.",
+    position: (index, total) => `Example ${index} of ${total}`,
+    cue: "Cue",
+    showEnglish: "Show English",
+    showGerman: "Show German",
+    nextExample: "Next example",
+    nextPattern: "Next pattern",
+    prevPattern: "← Previous pattern",
+    showAll: "Show all",
+    skip: "Skip →",
+    missingEn: "This example has no English version with the same Russian cue — see the English examples in the full list below.",
+    missingDe: "This example has no German version with the same Russian cue — see the German examples in the full list below.",
+    legend: "What the tags mean",
+    full: "The full pattern: formulas and every example",
+    backToSet: "All patterns in this set",
+    backToList: "Back to the library"
+  };
+  const deck = buildPatternReviewDeck(cards);
+  const nextPatternPath = siblings.next ? patternPath(locale, siblings.next) : null;
+  const prevPatternPath = siblings.prev ? patternPath(locale, siblings.prev) : null;
+  const setPath = studySetPath(locale, { id: pattern.set_id });
+  const usedTags = { english: new Set(), german: new Set() };
+  for (const entry of deck) {
+    for (const span of entry.en?.spans || []) usedTags.english.add(span.label);
+    for (const span of entry.de?.spans || []) usedTags.german.add(span.label);
+  }
+  const legendItems = (targetKey) => [...usedTags[targetKey]].map((tag) => {
+    const rule = tagRule(locale, targetKey, tag);
+    return `<li><span class="grammar-tag ${tokenClass(tag)}">${escapeHtml(tag)}</span><div><strong>${escapeHtml(rule.title)}</strong><p>${escapeHtml(rule.description)}</p></div></li>`;
+  }).join("");
+  const reviewCards = deck.map((entry, index) => {
+    const answer = (langKey, item, targetKey) => `<div class="review-answer" data-review-answer="${langKey}"><span class="review-lang-label">${langKey.toUpperCase()} · ${langKey === "en" ? t.english : t.german}</span><p class="annotated-line" lang="${langKey}">${renderCanonicalText(item, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `review-${pattern.id}-${index}-${langKey}-${span.id}`))}</p></div>`;
+    const stages = ["cue", ...(entry.en ? ["en"] : []), ...(entry.de ? ["de"] : [])];
+    const isLast = index === deck.length - 1;
+    const firstLabel = entry.en ? reviewCopy.showEnglish : entry.de ? reviewCopy.showGerman : isLast ? reviewCopy.nextPattern : reviewCopy.nextExample;
+    return `<article class="review-card" data-review-card data-stages="${stages.join(" ")}"${index === 0 ? " data-active" : ""}><p class="review-position">${reviewCopy.position(index + 1, deck.length)}</p><div class="review-cue"><span class="review-lang-label">RU · ${reviewCopy.cue}</span><p lang="ru">${escapeHtml(entry.cue)}</p></div>${entry.en ? answer("en", entry.en, "english") : `<p class="review-missing" data-review-missing="en">${reviewCopy.missingEn}</p>`}${entry.de ? answer("de", entry.de, "german") : `<p class="review-missing" data-review-missing="de">${reviewCopy.missingDe}</p>`}<div class="review-actions"><button type="button" data-review-advance aria-expanded="false"${isLast && nextPatternPath ? ` data-review-goto="${nextPatternPath}"` : ""} data-label-en="${escapeHtml(reviewCopy.showEnglish)}" data-label-de="${escapeHtml(reviewCopy.showGerman)}" data-label-next="${escapeHtml(isLast ? reviewCopy.nextPattern : reviewCopy.nextExample)}">${firstLabel}</button><button type="button" class="review-quiet" data-review-show-all>${reviewCopy.showAll}</button>${!isLast ? `<button type="button" class="review-quiet" data-review-skip>${reviewCopy.skip}</button>` : ""}</div></article>`;
+  }).join("");
+  const reviewSection = deck.length ? `<section id="pattern-review" class="pattern-review" data-pattern-review data-next-pattern="${nextPatternPath || ""}" aria-labelledby="pattern-review-title"><script>document.documentElement.classList.add("js");</script><header class="pattern-review-head"><h2 id="pattern-review-title">${reviewCopy.heading}</h2><p>${reviewCopy.instruction}</p></header>${reviewCards}<details class="review-legend"><summary>${reviewCopy.legend}</summary><div class="review-legend-columns"><div><p class="language-code">EN · ${t.english}</p><ul>${legendItems("english")}</ul></div><div><p class="language-code">DE · ${t.german}</p><ul>${legendItems("german")}</ul></div></div></details><nav class="review-sibling-nav" aria-label="${escapeHtml(reviewCopy.nextPattern)}">${prevPatternPath ? `<a href="${prevPatternPath}">${reviewCopy.prevPattern}</a>` : ""}<a href="${setPath}">${reviewCopy.backToSet}</a><a href="/${locale}/practice/">${reviewCopy.backToList}</a>${nextPatternPath ? `<a class="review-next-pattern" href="${nextPatternPath}">${reviewCopy.nextPattern} →</a>` : ""}</nav></section>` : "";
+  const body = `<article class="pattern-page section-pad" data-pattern-id="${escapeHtml(pattern.id)}">${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/practice/`, label: t.navPractice }, { href: pathname, label: title }])}<header class="pattern-page-head"><p class="eyebrow">B2–C1 · ${escapeHtml(pattern.group_id)} · ${escapeHtml(pattern.id)}</p><h1>${escapeHtml(title)}</h1>${russianDescription}</header>${reviewSection}<section class="pattern-full"><h2>${reviewCopy.full}</h2><div class="pattern-comparison">${primaryCard}${variations}</div></section><script type="module" src="/assets/pattern-review.js"></script></article>`;
   const metaTitle = identifiedMetaTitle(title, pattern.id);
   const metaDescription = locale === "en"
     ? `Pattern ${pattern.id}: ${primary.formula}. Study this B2–C1 structure with English and German examples.`
@@ -554,17 +617,52 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
   return layout({ locale, pathname, title: metaTitle, description: metaDescription, body, type: "article", bodyClass: "pattern-reader-body", structuredData: [breadcrumbJson(pathname, title, locale), { "@context": "https://schema.org", "@type": "LearningResource", name: title, identifier: pattern.id, educationalLevel: "B2–C1", teaches: pattern.formulas || pattern.langs.map((lang) => lang.formula), inLanguage: pattern.langs.map((lang) => lang.lang), url: `${SITE_URL}${pathname}` }] });
 }
 
+const PRACTICE_PAGE_SIZE = 30;
+
 export function practicePage(locale, patterns, studySets) {
   const t = ui[locale];
   const pathname = `/${locale}/practice/`;
   const ru = locale === "ru";
   const patternCount = patterns.length.toLocaleString(ru ? "ru-RU" : "en-US");
   const categories = [...new Set(patterns.map((pattern) => pattern.group_id))].sort();
-  const entryCopy = ru
-    ? { label: "Начните здесь", title: "Что вы хотите сказать?", detail: "Выберите реальную речевую задачу — например, вежливо не согласиться, сравнить варианты или объяснить причину.", action: "Выбрать намерение", secondaryLabel: "Другие способы поиска", atlas: "Атлас паттернов", frames: "Логические каркасы", paths: "Учебные маршруты", search: "Поиск по всем паттернам", agent: "Подключить к агенту" }
-    : { label: "Start here", title: "What do you want to say?", detail: "Choose a real communication goal—such as disagreeing politely, comparing options, or explaining a cause.", action: "Choose an intent", secondaryLabel: "Other ways to explore", atlas: "Pattern Atlas", frames: "Reasoning Frames", paths: "Learning paths", search: "Search all patterns", agent: "Connect an agent" };
-  const body = `<section class="page-head section-pad practice-intro"><p class="eyebrow">B2–C1 · ${patternCount} ${t.patterns.toLowerCase()}</p><h1>${t.practiceTitle}</h1><p class="lede">${t.practiceIntro}</p><nav class="practice-entry" data-practice-entry aria-label="${escapeHtml(entryCopy.title)}"><a class="practice-entry-primary" href="#intent-discovery"><span class="eyebrow">${entryCopy.label}</span><strong>${entryCopy.title}</strong><small>${entryCopy.detail}</small><b>${entryCopy.action} <span aria-hidden="true">→</span></b></a><div class="practice-entry-secondary"><p>${entryCopy.secondaryLabel}</p><a href="#pattern-atlas">${entryCopy.atlas}</a><a href="#reasoning-frames">${entryCopy.frames}</a><a href="#learning-paths">${entryCopy.paths}</a><a href="#all-patterns">${entryCopy.search} · ${patternCount}</a></div></nav><a class="practice-agent-link" href="/${locale}/ai/#connectors">${entryCopy.agent} →</a></section><section id="all-patterns" class="practice-tools section-pad ruled"><div class="filter-field"><p class="filter-label">${t.chooseTarget}</p><div class="segmented" aria-label="${t.chooseTarget}"><button type="button" data-language-filter="en" aria-pressed="true">EN · ${t.english}</button><button type="button" data-language-filter="de" aria-pressed="true">DE · ${t.german}</button></div></div><label>${t.category}<select data-category-filter><option value="">${t.allCategories}</option>${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</select></label><label>${t.search}<input type="search" data-pattern-search></label><output class="result-count practice-count" data-pattern-count aria-live="polite">${t.visibleSets} ${patterns.length} ${t.patterns.toLowerCase()}</output></section><section class="pattern-index section-pad" data-pattern-list>${patterns.map((pattern, index) => `<a href="${patternPath(locale, pattern)}" data-pattern-id="${escapeHtml(pattern.id)}" data-language="${pattern.langs.map((lang) => lang.lang).join(" ")}" data-category="${escapeHtml(pattern.group_id)}" data-search-text="${escapeHtml(`${pattern.id} ${pattern.title_ru} ${pattern.formulas?.join(" ") || ""}`.toLowerCase())}"><span class="document-number">${String(index + 1).padStart(4, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.set_id)} · ${pattern.langs.map((lang) => lang.lang.toUpperCase()).join(" / ")}</small></span><span aria-hidden="true">↗</span></a>`).join("")}<p class="empty-state" data-empty-state hidden>${t.noResults}</p></section>`;
-  return layout({ locale, pathname, title: `${t.practiceTitle} — ${patterns.length.toLocaleString()} B2–C1 patterns | Metkagram`, description: t.practiceIntro, body, structuredData: [breadcrumbJson(pathname, t.practiceTitle, locale), { "@context": "https://schema.org", "@type": "ItemList", name: t.practiceTitle, numberOfItems: patterns.length }] });
+  const copy = ru ? {
+    lede: "Откройте паттерн, прочитайте русскую подсказку и вспомните английскую и немецкую фразы с разметкой.",
+    browse: `Все ${patternCount} паттернов`,
+    setsLink: "Просмотр по сетам",
+    discoveryLink: "Другие способы поиска",
+    intentsLink: "Что вы хотите сказать?",
+    filters: "Фильтры",
+    setsTitle: "Просмотр по сетам",
+    discoveryTitle: "Другие способы поиска",
+    discoveryIntro: "Учебные маршруты, атлас паттернов, логические каркасы и проверенные стартовые сеты.",
+    agentLink: "Подключить агента",
+    prev: "← Назад",
+    next: "Вперёд →",
+    page: (page, pages) => `Страница ${page} из ${pages}`,
+    note: "Без JavaScript здесь показаны первые 30 паттернов. Полный каталог доступен через сеты ниже: каждый сет открывается обычной ссылкой."
+  } : {
+    lede: "Open a pattern, read the Russian cue, and recall the annotated English and German sentences.",
+    browse: `Browse all ${patternCount} patterns`,
+    setsLink: "Browse by set",
+    discoveryLink: "More ways to explore",
+    intentsLink: "What do you want to say?",
+    filters: "Filters",
+    setsTitle: "Browse by set",
+    discoveryTitle: "More ways to explore",
+    discoveryIntro: "Learning routes, the pattern atlas, reasoning frames and reviewed starter sets.",
+    agentLink: "Connect an agent",
+    prev: "← Previous",
+    next: "Next →",
+    page: (page, pages) => `Page ${page} of ${pages}`,
+    note: "Without JavaScript this list shows the first 30 patterns. The full catalogue stays reachable through the sets below — every set is a plain link."
+  };
+  const totalPages = Math.max(1, Math.ceil(patterns.length / PRACTICE_PAGE_SIZE));
+  const row = (pattern, index) => `<a href="${patternPath(locale, pattern)}" data-pattern-id="${escapeHtml(pattern.id)}" data-language="${pattern.langs.map((lang) => lang.lang).join(" ")}" data-category="${escapeHtml(pattern.group_id)}" data-search-text="${escapeHtml(`${pattern.id} ${pattern.title_ru} ${pattern.formulas?.join(" ") || ""}`.toLowerCase())}"><span class="document-number">${String(index + 1).padStart(4, "0")}</span><span><strong>${escapeHtml(patternTitle(pattern, locale))}</strong><small lang="ru">${escapeHtml(pattern.title_ru)}</small><small>${escapeHtml(pattern.id)} · ${escapeHtml(pattern.set_id)} · ${pattern.langs.map((lang) => lang.lang.toUpperCase()).join(" / ")}</small></span><span aria-hidden="true">↗</span></a>`;
+  const sets = studySets?.sets || [];
+  const setCounts = new Map();
+  for (const pattern of patterns) setCounts.set(pattern.set_id, (setCounts.get(pattern.set_id) || 0) + 1);
+  const body = `<section class="page-head section-pad practice-intro"><p class="eyebrow">B2–C1 · ${patternCount} ${t.patterns.toLowerCase()}</p><h1>${t.practiceTitle}</h1><p class="lede">${copy.lede}</p><nav class="practice-entry" data-practice-entry aria-label="${escapeHtml(t.practiceTitle)}"><a class="practice-entry-primary" href="#all-patterns">${copy.browse}</a><div class="practice-entry-secondary"><a href="#intent-discovery">${copy.intentsLink}</a><a href="#study-sets">${copy.setsLink}</a><a href="#practice-discovery">${copy.discoveryLink}</a></div></nav></section><section class="practice-continue section-pad" data-practice-continue hidden></section><section id="all-patterns" class="practice-tools section-pad"><label class="search-field">${t.search}<input type="search" data-pattern-search autocomplete="off"></label><details class="practice-filters"><summary>${copy.filters}</summary><label>${t.category}<select data-category-filter><option value="">${t.allCategories}</option>${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}</select></label></details><output class="result-count practice-count" data-pattern-count aria-live="polite">${t.visibleSets} ${patterns.length} ${t.patterns.toLowerCase()}</output></section><section class="pattern-index section-pad" data-pattern-list data-page-size="${PRACTICE_PAGE_SIZE}">${patterns.slice(0, PRACTICE_PAGE_SIZE).map((pattern, index) => row(pattern, index)).join("")}<p class="empty-state" data-empty-state hidden>${t.noResults}</p></section><nav class="pattern-pagination section-pad" data-pattern-pagination data-copy-prev="${escapeHtml(copy.prev)}" data-copy-next="${escapeHtml(copy.next)}" hidden></nav><p class="practice-nojs-note section-pad">${copy.note}</p><section id="study-sets" class="practice-sets section-pad ruled"><h2>${copy.setsTitle}</h2><ol class="practice-set-list">${sets.map((set) => { const title = ru ? set.title_ru : set.title_en; return `<li><a href="${studySetPath(locale, set)}"><strong>${escapeHtml(title)}</strong><small>${escapeHtml(set.id)} · ${escapeHtml(set.level || "B2–C1")} · ${setCounts.get(set.id) || 0} ${t.patterns.toLowerCase()}</small></a></li>`; }).join("")}</ol></section><section id="practice-discovery" class="practice-discovery section-pad ruled"><header><h2>${copy.discoveryTitle}</h2><p>${copy.discoveryIntro}</p><p><a href="/${locale}/ai/#connectors">${copy.agentLink} →</a></p></header><div data-practice-discovery-slot></div></section>`;
+  return layout({ locale, pathname, title: `${t.practiceTitle} — ${patterns.length.toLocaleString()} B2–C1 patterns | Metkagram`, description: copy.lede, body, bodyClass: "library-reader", structuredData: [breadcrumbJson(pathname, t.practiceTitle, locale), { "@context": "https://schema.org", "@type": "ItemList", name: t.practiceTitle, numberOfItems: patterns.length }] });
 }
 
 export function studySetPage(locale, set, patterns) {

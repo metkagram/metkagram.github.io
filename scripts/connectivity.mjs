@@ -274,7 +274,7 @@ function patternLabel(pattern, locale, language = "en") {
 }
 
 function enhancePractice(html, locale, graph, patternById) {
-  const marker = '<section id="all-patterns" class="practice-tools';
+  const marker = '<div data-practice-discovery-slot></div>';
   if (!html.includes(marker) || html.includes('data-connectivity="reasoning-nav"')) return html;
   const cards = graph.reasoningMoves.map((move) => {
     const pattern = patternById.get(move.representative_pattern_id);

@@ -53,14 +53,17 @@ for (const url of canonicalUrls) {
   if (!fs.existsSync(file) || !file.endsWith('.html')) continue;
   const html = fs.readFileSync(file, 'utf8');
   if (canonical(html) !== url || noindex(html)) continue;
-  pages.set(url, { url, file, html, title: h1(html), learning: isLearning(url, html) });
+  // Keep only lightweight metadata in memory; full HTML is re-read per page
+  // below so large catalogues do not accumulate in the heap.
+  pages.set(url, { url, file, title: h1(html), learning: isLearning(url, html) });
 }
 const learningUrls = new Set([...pages.values()].filter((page) => page.learning).map((page) => page.url));
 const enhanced = [];
 const utilities = [];
 for (const page of pages.values()) {
   if (!page.learning) continue;
-  let html = page.html;
+  let html = fs.readFileSync(page.file, 'utf8');
+  const original = html;
   const main = mainHtml(html);
   const links = [];
   const seen = new Set();
@@ -95,7 +98,7 @@ for (const page of pages.values()) {
   if ((html.includes('data-save-page') || html.includes('data-internal-discovery-continuation')) && !html.includes('src="/assets/internal-discovery.js"')) {
     html = html.replace('</body>', '<script src="/assets/internal-discovery.js" defer></script></body>');
   }
-  if (html !== page.html) fs.writeFileSync(page.file, html);
+  if (html !== original) fs.writeFileSync(page.file, html);
 }
 
 const cssFile = path.join(DIST, 'assets', 'styles.css');

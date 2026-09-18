@@ -78,6 +78,7 @@ Use `background-size: cover`; never tile. Keep type on a solid or sufficiently o
 ## 6. Typography
 
 - Reading: Inter with system sans-serif fallbacks.
+- Learning sentences and cues: Georgia with serif fallbacks (`--serif`). Used for annotated sentences, Russian cues and long explanatory passages on the home, library and pattern-review surfaces; never for navigation or labels.
 - Technical labels: IBM Plex Mono with monospace fallbacks.
 - Display headings: heavy sans-serif, tight leading, sentence case or short all-caps statements.
 
@@ -87,13 +88,14 @@ Use `background-size: cover`; never tile. Keep type on a solid or sufficiently o
 | Route H1 | `clamp(2.5rem, 5.5vw, 5.8rem)` | `clamp(2.2rem, 11vw, 3.6rem)` | Prefer 1–3 lines |
 | Section H2 | `clamp(1.6rem, 3vw, 3rem)` | `1.55–2.2rem` | State an idea, not a category |
 | Body | `1–1.125rem` | `1rem` | Line height `1.55–1.7`, max 68 characters |
+| Learning sentence (review card) | `1.25–1.35rem` serif | `1.15rem` serif | Line height `1.6–1.9`, inside `--reading-column` |
 | Label | `.68–.78rem` | same | Mono, uppercase, tracked |
 
 Avoid one-word giant headings. If the heading says only “Method” or “Explore,” add the outcome the visitor gets.
 
 ## 7. Layout and rhythm
 
-- Maximum content width: `82rem`; reading width: `42–48rem`.
+- Maximum content width: `82rem`; reading width: `42–48rem`; the study surfaces (home, pattern review) use `--reading-column: 44rem`.
 - Base spacing: `.375, .625, 1, 1.5, 2.5, 4.5rem`.
 - Page gutters: `clamp(1.25rem, 4vw, 4rem)`.
 - Use one-pixel rules to align unrelated blocks into one system.
@@ -104,9 +106,9 @@ Breakpoints: `860px` for structural collapse, `720px` for navigation and two-col
 
 ## 8. Core compositions
 
-### Home: studio stage
+### Home: calm reading entry
 
-Graphite fills the viewport. One rotated yellow sheet carries the promise, legend and visible pattern samples. Navigation stays black. The first screen explains the product without a generic app mockup.
+A short reading column on the light paper background. Headline, two or three sentences of plain explanation, one real annotated example with its Russian cue, then the first entries of the pattern list. The pattern library is the single primary action; method, research and API links live in navigation and the footer.
 
 ### Explore: library gateway
 
