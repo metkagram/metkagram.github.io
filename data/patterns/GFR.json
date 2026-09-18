@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFR",
+  "patterns": [
+    {
+      "id": "GFR001",
+      "set_id": "GFR",
+      "pattern": "The validation rule prevents users from submitting an incomplete form.",
+      "group_title": "Prevent [someone] from [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Prevent [someone] from [doing X]",
+        "form": "prevent + object + from + -ing",
+        "metaphor_ru": "Практика управления и дополнений: помешать кому-то сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "prevent + object + from + -ing",
+          "example": "The validation rule prevents users from submitting an incomplete form.",
+          "translation": "Правило проверки не позволяет пользователям отправить незаполненную форму.",
+          "examples": [
+            {
+              "text": "A locked gate prevented us from taking the shorter path.",
+              "translation_ru": "Закрытые ворота помешали нам пойти по более короткому пути."
+            },
+            {
+              "text": "Fear of mistakes can prevent learners from speaking spontaneously.",
+              "translation_ru": "Страх ошибок может мешать учащимся говорить спонтанно."
+            },
+            {
+              "text": "The protective case prevented the screen from cracking when the phone fell.",
+              "translation_ru": "Защитный чехол не дал экрану треснуть при падении телефона."
+            },
+            {
+              "text": "Heavy snow prevented several trains from reaching the station.",
+              "translation_ru": "Сильный снегопад помешал нескольким поездам добраться до станции."
+            },
+            {
+              "text": "Poor sampling can prevent an analysis from revealing the real pattern.",
+              "translation_ru": "Плохая выборка может помешать анализу выявить реальную закономерность."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden daran hindern, + zu-infinitive",
+          "example": "Die Validierungsregel hindert Nutzer daran, ein unvollständiges Formular abzusenden.",
+          "translation": "Правило проверки не позволяет пользователям отправить незаполненную форму.",
+          "examples": [
+            {
+              "text": "Ein verschlossenes Tor hinderte uns daran, den kürzeren Weg zu nehmen.",
+              "translation_ru": "Закрытые ворота помешали нам пойти по более короткому пути."
+            },
+            {
+              "text": "Die Angst vor Fehlern kann Lernende daran hindern, spontan zu sprechen.",
+              "translation_ru": "Страх ошибок может мешать учащимся говорить спонтанно."
+            },
+            {
+              "text": "Die Schutzhülle verhinderte, dass der Bildschirm beim Sturz des Handys zerbrach.",
+              "translation_ru": "Защитный чехол не дал экрану треснуть при падении телефона."
+            },
+            {
+              "text": "Starker Schneefall hinderte mehrere Züge daran, den Bahnhof zu erreichen.",
+              "translation_ru": "Сильный снегопад помешал нескольким поездам добраться до станции."
+            },
+            {
+              "text": "Eine schlechte Stichprobe kann verhindern, dass eine Analyse das tatsächliche Muster zeigt.",
+              "translation_ru": "Плохая выборка может помешать анализу выявить реальную закономерность."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Помешать кому-то сделать …",
+      "title_en": "Prevent [someone] from [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR002",
+      "set_id": "GFR",
+      "pattern": "A clear rollback plan kept the team from panicking during the outage.",
+      "group_title": "Keep [someone] from [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Keep [someone] from [doing X]",
+        "form": "keep + object + from + -ing",
+        "metaphor_ru": "Практика управления и дополнений: не дать кому-то сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "keep + object + from + -ing",
+          "example": "A clear rollback plan kept the team from panicking during the outage.",
+          "translation": "Чёткий план отката не дал команде запаниковать во время сбоя.",
+          "examples": [
+            {
+              "text": "Curtains keep the afternoon sun from overheating the room.",
+              "translation_ru": "Шторы не дают дневному солнцу перегревать комнату."
+            },
+            {
+              "text": "Short daily sessions keep me from postponing practice until the weekend.",
+              "translation_ru": "Короткие ежедневные занятия не дают мне откладывать практику до выходных."
+            },
+            {
+              "text": "A password manager keeps people from reusing the same weak password everywhere.",
+              "translation_ru": "Менеджер паролей помогает не использовать один и тот же слабый пароль повсюду."
+            },
+            {
+              "text": "A flexible ticket kept us from losing the full fare when the plan changed.",
+              "translation_ru": "Гибкий билет не дал нам потерять всю стоимость поездки, когда план изменился."
+            },
+            {
+              "text": "Separating training and test data keeps the evaluation from becoming misleading.",
+              "translation_ru": "Разделение обучающих и тестовых данных не даёт оценке стать вводящей в заблуждение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden davon abhalten, + zu-infinitive",
+          "example": "Ein klarer Rollback-Plan hielt das Team davon ab, während des Ausfalls in Panik zu geraten.",
+          "translation": "Чёткий план отката не дал команде запаниковать во время сбоя.",
+          "examples": [
+            {
+              "text": "Vorhänge verhindern, dass die Nachmittagssonne den Raum überhitzt.",
+              "translation_ru": "Шторы не дают дневному солнцу перегревать комнату."
+            },
+            {
+              "text": "Kurze tägliche Einheiten halten mich davon ab, das Üben bis zum Wochenende aufzuschieben.",
+              "translation_ru": "Короткие ежедневные занятия не дают мне откладывать практику до выходных."
+            },
+            {
+              "text": "Ein Passwortmanager hält Menschen davon ab, überall dasselbe schwache Passwort wiederzuverwenden.",
+              "translation_ru": "Менеджер паролей помогает не использовать один и тот же слабый пароль повсюду."
+            },
+            {
+              "text": "Ein flexibles Ticket bewahrte uns davor, bei einer Planänderung den gesamten Fahrpreis zu verlieren.",
+              "translation_ru": "Гибкий билет не дал нам потерять всю стоимость поездки, когда план изменился."
+            },
+            {
+              "text": "Die Trennung von Trainings- und Testdaten verhindert, dass die Bewertung irreführend wird.",
+              "translation_ru": "Разделение обучающих и тестовых данных не даёт оценке стать вводящей в заблуждение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не дать кому-то сделать …",
+      "title_en": "Keep [someone] from [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR003",
+      "set_id": "GFR",
+      "pattern": "The new filter enables analysts to compare regions without rebuilding the report.",
+      "group_title": "Enable [someone] to [do X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Enable [someone] to [do X]",
+        "form": "enable + object + to-infinitive",
+        "metaphor_ru": "Практика управления и дополнений: дать кому-то возможность …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "enable + object + to-infinitive",
+          "example": "The new filter enables analysts to compare regions without rebuilding the report.",
+          "translation": "Новый фильтр позволяет аналитикам сравнивать регионы без пересборки отчёта.",
+          "examples": [
+            {
+              "text": "A folding desk enabled us to use the small room as both an office and a bedroom.",
+              "translation_ru": "Складной стол позволил использовать маленькую комнату и как кабинет, и как спальню."
+            },
+            {
+              "text": "Recording yourself enables you to notice pauses that disappear from memory immediately after speaking.",
+              "translation_ru": "Запись собственного голоса позволяет заметить паузы, которые сразу после речи быстро забываются."
+            },
+            {
+              "text": "USB-C charging enables the laptop to share one adapter with several devices.",
+              "translation_ru": "Зарядка USB-C позволяет ноутбуку использовать один адаптер с несколькими устройствами."
+            },
+            {
+              "text": "Online check-in enabled us to go straight to security.",
+              "translation_ru": "Онлайн-регистрация позволила нам сразу пройти к контролю безопасности."
+            },
+            {
+              "text": "A larger sample enables researchers to estimate rare outcomes with less uncertainty.",
+              "translation_ru": "Большая выборка позволяет исследователям оценивать редкие исходы с меньшей неопределённостью."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemandem ermöglichen, + zu-infinitive",
+          "example": "Der neue Filter ermöglicht Analysten, Regionen zu vergleichen, ohne den Bericht neu aufzubauen.",
+          "translation": "Новый фильтр позволяет аналитикам сравнивать регионы без пересборки отчёта.",
+          "examples": [
+            {
+              "text": "Ein Klapptisch ermöglichte uns, den kleinen Raum sowohl als Büro als auch als Schlafzimmer zu nutzen.",
+              "translation_ru": "Складной стол позволил использовать маленькую комнату и как кабинет, и как спальню."
+            },
+            {
+              "text": "Eine Aufnahme der eigenen Stimme ermöglicht es, Pausen zu bemerken, die direkt nach dem Sprechen schnell vergessen werden.",
+              "translation_ru": "Запись собственного голоса позволяет заметить паузы, которые сразу после речи быстро забываются."
+            },
+            {
+              "text": "USB-C-Laden ermöglicht es dem Laptop, ein Netzteil mit mehreren Geräten zu teilen.",
+              "translation_ru": "Зарядка USB-C позволяет ноутбуку использовать один адаптер с несколькими устройствами."
+            },
+            {
+              "text": "Der Online-Check-in ermöglichte uns, direkt zur Sicherheitskontrolle zu gehen.",
+              "translation_ru": "Онлайн-регистрация позволила нам сразу пройти к контролю безопасности."
+            },
+            {
+              "text": "Eine größere Stichprobe ermöglicht Forschenden, seltene Ergebnisse mit geringerer Unsicherheit zu schätzen.",
+              "translation_ru": "Большая выборка позволяет исследователям оценивать редкие исходы с меньшей неопределённостью."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Дать кому-то возможность …",
+      "title_en": "Enable [someone] to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR004",
+      "set_id": "GFR",
+      "pattern": "The role allows editors to update descriptions without changing the underlying data.",
+      "group_title": "Allow [someone] to [do X]",
+      "level": "C1",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Allow [someone] to [do X]",
+        "form": "allow + object + to-infinitive",
+        "metaphor_ru": "Практика управления и дополнений: разрешить кому-то сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "allow + object + to-infinitive",
+          "example": "The role allows editors to update descriptions without changing the underlying data.",
+          "translation": "Эта роль позволяет редакторам обновлять описания, не меняя исходные данные.",
+          "examples": [
+            {
+              "text": "The landlord allowed us to repaint the living room.",
+              "translation_ru": "Арендодатель разрешил нам перекрасить гостиную."
+            },
+            {
+              "text": "The exercise allows learners to reuse the same structure with completely different vocabulary.",
+              "translation_ru": "Упражнение позволяет учащимся использовать одну структуру с совершенно разной лексикой."
+            },
+            {
+              "text": "The stand allows the microphone to sit closer to the speaker's mouth.",
+              "translation_ru": "Стойка позволяет расположить микрофон ближе ко рту говорящего."
+            },
+            {
+              "text": "The pass allowed us to enter the museum before the general queue.",
+              "translation_ru": "Пропуск позволил нам войти в музей раньше общей очереди."
+            },
+            {
+              "text": "The design allows each assumption to be tested independently.",
+              "translation_ru": "Дизайн позволяет проверять каждое предположение независимо."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemandem erlauben, + zu-infinitive",
+          "example": "Die Rolle erlaubt Redakteuren, Beschreibungen zu aktualisieren, ohne die zugrunde liegenden Daten zu ändern.",
+          "translation": "Эта роль позволяет редакторам обновлять описания, не меняя исходные данные.",
+          "examples": [
+            {
+              "text": "Der Vermieter erlaubte uns, das Wohnzimmer neu zu streichen.",
+              "translation_ru": "Арендодатель разрешил нам перекрасить гостиную."
+            },
+            {
+              "text": "Die Übung erlaubt Lernenden, dieselbe Struktur mit völlig anderem Wortschatz wiederzuverwenden.",
+              "translation_ru": "Упражнение позволяет учащимся использовать одну структуру с совершенно разной лексикой."
+            },
+            {
+              "text": "Der Ständer ermöglicht es, das Mikrofon näher am Mund der sprechenden Person zu positionieren.",
+              "translation_ru": "Стойка позволяет расположить микрофон ближе ко рту говорящего."
+            },
+            {
+              "text": "Der Pass erlaubte uns, das Museum vor der allgemeinen Warteschlange zu betreten.",
+              "translation_ru": "Пропуск позволил нам войти в музей раньше общей очереди."
+            },
+            {
+              "text": "Das Design erlaubt es, jede Annahme unabhängig zu prüfen.",
+              "translation_ru": "Дизайн позволяет проверять каждое предположение независимо."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Разрешить кому-то сделать …",
+      "title_en": "Allow [someone] to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR005",
+      "set_id": "GFR",
+      "pattern": "Please remind me to export the logs before we restart the service.",
+      "group_title": "Remind [someone] to [do X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Remind [someone] to [do X]",
+        "form": "remind + object + to-infinitive",
+        "metaphor_ru": "Практика управления и дополнений: напомнить кому-то сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "remind + object + to-infinitive",
+          "example": "Please remind me to export the logs before we restart the service.",
+          "translation": "Пожалуйста, напомни мне выгрузить логи перед перезапуском сервиса.",
+          "examples": [
+            {
+              "text": "The calendar reminded us to renew the insurance before it expired.",
+              "translation_ru": "Календарь напомнил нам продлить страховку до окончания срока."
+            },
+            {
+              "text": "A note on the desk reminds me to practise the difficult phrases aloud.",
+              "translation_ru": "Записка на столе напоминает мне вслух практиковать трудные фразы."
+            },
+            {
+              "text": "The app reminds users to back up their recovery codes.",
+              "translation_ru": "Приложение напоминает пользователям сохранить коды восстановления."
+            },
+            {
+              "text": "The departure board reminded us to validate the regional ticket.",
+              "translation_ru": "Табло отправлений напомнило нам прокомпостировать региональный билет."
+            },
+            {
+              "text": "The checklist reminds reviewers to distinguish missing data from genuine zeros.",
+              "translation_ru": "Чек-лист напоминает проверяющим отличать отсутствующие данные от настоящих нулевых значений."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden daran erinnern, + zu-infinitive",
+          "example": "Bitte erinnere mich daran, die Protokolle zu exportieren, bevor wir den Dienst neu starten.",
+          "translation": "Пожалуйста, напомни мне выгрузить логи перед перезапуском сервиса.",
+          "examples": [
+            {
+              "text": "Der Kalender erinnerte uns daran, die Versicherung vor Ablauf zu verlängern.",
+              "translation_ru": "Календарь напомнил нам продлить страховку до окончания срока."
+            },
+            {
+              "text": "Ein Zettel auf dem Schreibtisch erinnert mich daran, die schwierigen Wendungen laut zu üben.",
+              "translation_ru": "Записка на столе напоминает мне вслух практиковать трудные фразы."
+            },
+            {
+              "text": "Die App erinnert Nutzer daran, ihre Wiederherstellungscodes zu sichern.",
+              "translation_ru": "Приложение напоминает пользователям сохранить коды восстановления."
+            },
+            {
+              "text": "Die Abfahrtstafel erinnerte uns daran, das Regionalticket zu entwerten.",
+              "translation_ru": "Табло отправлений напомнило нам прокомпостировать региональный билет."
+            },
+            {
+              "text": "Die Checkliste erinnert Prüfer daran, fehlende Daten von echten Nullwerten zu unterscheiden.",
+              "translation_ru": "Чек-лист напоминает проверяющим отличать отсутствующие данные от настоящих нулевых значений."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Напомнить кому-то сделать …",
+      "title_en": "Remind [someone] to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR006",
+      "set_id": "GFR",
+      "pattern": "This defect reminds me of the caching problem we saw last winter.",
+      "group_title": "Remind [someone] of [X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Remind [someone] of [X]",
+        "form": "remind + object + of + noun",
+        "metaphor_ru": "Практика управления и дополнений: напомнить кому-то о …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "remind + object + of + noun",
+          "example": "This defect reminds me of the caching problem we saw last winter.",
+          "translation": "Этот дефект напоминает мне проблему с кэшем, которую мы видели прошлой зимой.",
+          "examples": [
+            {
+              "text": "The smell of the old library reminded her of university.",
+              "translation_ru": "Запах старой библиотеки напомнил ей университет."
+            },
+            {
+              "text": "That rhythm reminds me of a phrase we practised yesterday.",
+              "translation_ru": "Этот ритм напоминает мне фразу, которую мы практиковали вчера."
+            },
+            {
+              "text": "The interface reminds me of early tablet applications.",
+              "translation_ru": "Интерфейс напоминает мне ранние приложения для планшетов."
+            },
+            {
+              "text": "The narrow streets reminded us of the town we visited in Portugal.",
+              "translation_ru": "Узкие улицы напомнили нам город, который мы посещали в Португалии."
+            },
+            {
+              "text": "The curve reminds me of a saturation effect rather than linear growth.",
+              "translation_ru": "Кривая напоминает мне скорее эффект насыщения, чем линейный рост."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden an + accusative + erinnern",
+          "example": "Dieser Fehler erinnert mich an das Cache-Problem vom letzten Winter.",
+          "translation": "Этот дефект напоминает мне проблему с кэшем, которую мы видели прошлой зимой.",
+          "examples": [
+            {
+              "text": "Der Geruch der alten Bibliothek erinnerte sie an die Universität.",
+              "translation_ru": "Запах старой библиотеки напомнил ей университет."
+            },
+            {
+              "text": "Dieser Rhythmus erinnert mich an eine Wendung, die wir gestern geübt haben.",
+              "translation_ru": "Этот ритм напоминает мне фразу, которую мы практиковали вчера."
+            },
+            {
+              "text": "Die Benutzeroberfläche erinnert mich an frühe Tablet-Anwendungen.",
+              "translation_ru": "Интерфейс напоминает мне ранние приложения для планшетов."
+            },
+            {
+              "text": "Die engen Straßen erinnerten uns an die Stadt, die wir in Portugal besucht hatten.",
+              "translation_ru": "Узкие улицы напомнили нам город, который мы посещали в Португалии."
+            },
+            {
+              "text": "Die Kurve erinnert mich eher an einen Sättigungseffekt als an lineares Wachstum.",
+              "translation_ru": "Кривая напоминает мне скорее эффект насыщения, чем линейный рост."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Напомнить кому-то о …",
+      "title_en": "Remind [someone] of [X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR007",
+      "set_id": "GFR",
+      "pattern": "Unclear ownership discourages people from reporting small problems early.",
+      "group_title": "Discourage [someone] from [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Discourage [someone] from [doing X]",
+        "form": "discourage + object + from + -ing",
+        "metaphor_ru": "Практика управления и дополнений: отговорить кого-то от …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "discourage + object + from + -ing",
+          "example": "Unclear ownership discourages people from reporting small problems early.",
+          "translation": "Неясная ответственность отбивает у людей желание сообщать о мелких проблемах заранее.",
+          "examples": [
+            {
+              "text": "High transaction fees discourage buyers from making small transfers.",
+              "translation_ru": "Высокие комиссии отбивают желание делать небольшие переводы."
+            },
+            {
+              "text": "Overcorrection can discourage learners from experimenting with new structures.",
+              "translation_ru": "Чрезмерные исправления могут отбить у учащихся желание экспериментировать с новыми структурами."
+            },
+            {
+              "text": "A complicated setup discourages families from using the device regularly.",
+              "translation_ru": "Сложная настройка отбивает у семей желание регулярно пользоваться устройством."
+            },
+            {
+              "text": "Unpredictable cancellations discourage travellers from booking the last connection of the day.",
+              "translation_ru": "Непредсказуемые отмены отбивают желание бронировать последнюю пересадку дня."
+            },
+            {
+              "text": "Poor documentation discourages researchers from reproducing the analysis.",
+              "translation_ru": "Плохая документация отбивает у исследователей желание воспроизводить анализ."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden davon abhalten, + zu-infinitive",
+          "example": "Unklare Zuständigkeiten halten Menschen davon ab, kleine Probleme früh zu melden.",
+          "translation": "Неясная ответственность отбивает у людей желание сообщать о мелких проблемах заранее.",
+          "examples": [
+            {
+              "text": "Hohe Transaktionsgebühren halten Käufer davon ab, kleine Überweisungen zu tätigen.",
+              "translation_ru": "Высокие комиссии отбивают желание делать небольшие переводы."
+            },
+            {
+              "text": "Zu viele Korrekturen können Lernende davon abhalten, mit neuen Strukturen zu experimentieren.",
+              "translation_ru": "Чрезмерные исправления могут отбить у учащихся желание экспериментировать с новыми структурами."
+            },
+            {
+              "text": "Eine komplizierte Einrichtung hält Familien davon ab, das Gerät regelmäßig zu nutzen.",
+              "translation_ru": "Сложная настройка отбивает у семей желание регулярно пользоваться устройством."
+            },
+            {
+              "text": "Unvorhersehbare Ausfälle halten Reisende davon ab, die letzte Verbindung des Tages zu buchen.",
+              "translation_ru": "Непредсказуемые отмены отбивают желание бронировать последнюю пересадку дня."
+            },
+            {
+              "text": "Eine schlechte Dokumentation hält Forschende davon ab, die Analyse zu reproduzieren.",
+              "translation_ru": "Плохая документация отбивает у исследователей желание воспроизводить анализ."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отговорить кого-то от …",
+      "title_en": "Discourage [someone] from [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR008",
+      "set_id": "GFR",
+      "pattern": "The prototype persuaded the team to invest in a proper usability test.",
+      "group_title": "Persuade [someone] to [do X]",
+      "level": "C1",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Persuade [someone] to [do X]",
+        "form": "persuade + object + to-infinitive",
+        "metaphor_ru": "Практика управления и дополнений: убедить кого-то сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "persuade + object + to-infinitive",
+          "example": "The prototype persuaded the team to invest in a proper usability test.",
+          "translation": "Прототип убедил команду вложиться в полноценное тестирование удобства.",
+          "examples": [
+            {
+              "text": "A detailed inspection persuaded us to renegotiate the price.",
+              "translation_ru": "Подробная проверка убедила нас пересмотреть цену."
+            },
+            {
+              "text": "Hearing her own recording persuaded her to slow down slightly.",
+              "translation_ru": "Прослушивание собственной записи убедило её говорить немного медленнее."
+            },
+            {
+              "text": "The repair estimate persuaded him to keep the old laptop for another year.",
+              "translation_ru": "Смета ремонта убедила его оставить старый ноутбук ещё на год."
+            },
+            {
+              "text": "The weather forecast persuaded us to take the earlier ferry.",
+              "translation_ru": "Прогноз погоды убедил нас выбрать более ранний паром."
+            },
+            {
+              "text": "The sensitivity analysis persuaded the reviewers to weaken the causal claim.",
+              "translation_ru": "Анализ чувствительности убедил рецензентов ослабить причинное утверждение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden dazu bewegen, + zu-infinitive",
+          "example": "Der Prototyp bewegte das Team dazu, in einen richtigen Usability-Test zu investieren.",
+          "translation": "Прототип убедил команду вложиться в полноценное тестирование удобства.",
+          "examples": [
+            {
+              "text": "Eine ausführliche Inspektion bewegte uns dazu, den Preis neu zu verhandeln.",
+              "translation_ru": "Подробная проверка убедила нас пересмотреть цену."
+            },
+            {
+              "text": "Die eigene Aufnahme bewegte sie dazu, etwas langsamer zu sprechen.",
+              "translation_ru": "Прослушивание собственной записи убедило её говорить немного медленнее."
+            },
+            {
+              "text": "Der Kostenvoranschlag für die Reparatur bewegte ihn dazu, den alten Laptop noch ein Jahr zu behalten.",
+              "translation_ru": "Смета ремонта убедила его оставить старый ноутбук ещё на год."
+            },
+            {
+              "text": "Die Wettervorhersage bewegte uns dazu, die frühere Fähre zu nehmen.",
+              "translation_ru": "Прогноз погоды убедил нас выбрать более ранний паром."
+            },
+            {
+              "text": "Die Sensitivitätsanalyse bewegte die Gutachter dazu, die kausale Aussage abzuschwächen.",
+              "translation_ru": "Анализ чувствительности убедил рецензентов ослабить причинное утверждение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Убедить кого-то сделать …",
+      "title_en": "Persuade [someone] to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR009",
+      "set_id": "GFR",
+      "pattern": "The logs convinced us that the failure happened before the database commit.",
+      "group_title": "Convince [someone] that [X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Convince [someone] that [X]",
+        "form": "convince + object + that + clause",
+        "metaphor_ru": "Практика управления и дополнений: убедить кого-то, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "convince + object + that + clause",
+          "example": "The logs convinced us that the failure happened before the database commit.",
+          "translation": "Логи убедили нас, что сбой произошёл до фиксации транзакции в базе данных.",
+          "examples": [
+            {
+              "text": "The second viewing convinced them that the flat was too dark in winter.",
+              "translation_ru": "Второй просмотр убедил их, что зимой квартира будет слишком тёмной."
+            },
+            {
+              "text": "Repeated retelling convinced him that the phrase had become active vocabulary.",
+              "translation_ru": "Повторный пересказ убедил его, что фраза перешла в активный словарь."
+            },
+            {
+              "text": "The thermal images convinced the technician that the fan was not the main problem.",
+              "translation_ru": "Тепловые снимки убедили техника, что вентилятор не был основной проблемой."
+            },
+            {
+              "text": "The delay statistics convinced us that the later train was actually more reliable.",
+              "translation_ru": "Статистика задержек убедила нас, что более поздний поезд на самом деле надёжнее."
+            },
+            {
+              "text": "The replication convinced the team that the effect was not a one-off anomaly.",
+              "translation_ru": "Повторное исследование убедило команду, что эффект не был случайной аномалией."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemanden davon überzeugen, dass + subordinate clause",
+          "example": "Die Protokolle überzeugten uns davon, dass der Fehler vor dem Datenbank-Commit auftrat.",
+          "translation": "Логи убедили нас, что сбой произошёл до фиксации транзакции в базе данных.",
+          "examples": [
+            {
+              "text": "Die zweite Besichtigung überzeugte sie davon, dass die Wohnung im Winter zu dunkel war.",
+              "translation_ru": "Второй просмотр убедил их, что зимой квартира будет слишком тёмной."
+            },
+            {
+              "text": "Wiederholtes Nacherzählen überzeugte ihn davon, dass die Wendung zum aktiven Wortschatz geworden war.",
+              "translation_ru": "Повторный пересказ убедил его, что фраза перешла в активный словарь."
+            },
+            {
+              "text": "Die Wärmebilder überzeugten den Techniker davon, dass der Lüfter nicht das Hauptproblem war.",
+              "translation_ru": "Тепловые снимки убедили техника, что вентилятор не был основной проблемой."
+            },
+            {
+              "text": "Die Verspätungsstatistik überzeugte uns davon, dass der spätere Zug tatsächlich zuverlässiger war.",
+              "translation_ru": "Статистика задержек убедила нас, что более поздний поезд на самом деле надёжнее."
+            },
+            {
+              "text": "Die Replikation überzeugte das Team davon, dass der Effekt keine einmalige Anomalie war.",
+              "translation_ru": "Повторное исследование убедило команду, что эффект не был случайной аномалией."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Убедить кого-то, что …",
+      "title_en": "Convince [someone] that [X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR010",
+      "set_id": "GFR",
+      "pattern": "Several reviewers objected to removing the warning from the final report.",
+      "group_title": "Object to [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Object to [doing X]",
+        "form": "object to + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: возражать против …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "object to + noun/-ing",
+          "example": "Several reviewers objected to removing the warning from the final report.",
+          "translation": "Несколько проверяющих возражали против удаления предупреждения из итогового отчёта.",
+          "examples": [
+            {
+              "text": "The neighbours objected to turning the courtyard into a parking area.",
+              "translation_ru": "Соседи возражали против превращения двора в парковку."
+            },
+            {
+              "text": "Some learners object to being corrected in the middle of every sentence.",
+              "translation_ru": "Некоторые учащиеся возражают против исправлений в середине каждого предложения."
+            },
+            {
+              "text": "Users objected to paying a subscription for features that had previously been free.",
+              "translation_ru": "Пользователи возражали против подписки за функции, которые раньше были бесплатными."
+            },
+            {
+              "text": "Residents objected to closing the footpath during the entire summer.",
+              "translation_ru": "Жители возражали против закрытия пешеходной дорожки на всё лето."
+            },
+            {
+              "text": "The authors objected to interpreting an exploratory result as confirmatory evidence.",
+              "translation_ru": "Авторы возражали против трактовки исследовательского результата как подтверждающего доказательства."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "gegen + noun + Einwände haben / dagegen sein, + zu-infinitive",
+          "example": "Mehrere Prüfer hatten Einwände dagegen, den Warnhinweis aus dem Abschlussbericht zu entfernen.",
+          "translation": "Несколько проверяющих возражали против удаления предупреждения из итогового отчёта.",
+          "examples": [
+            {
+              "text": "Die Nachbarn waren dagegen, den Innenhof in einen Parkplatz umzuwandeln.",
+              "translation_ru": "Соседи возражали против превращения двора в парковку."
+            },
+            {
+              "text": "Manche Lernende sind dagegen, mitten in jedem Satz korrigiert zu werden.",
+              "translation_ru": "Некоторые учащиеся возражают против исправлений в середине каждого предложения."
+            },
+            {
+              "text": "Die Nutzer hatten Einwände dagegen, für zuvor kostenlose Funktionen ein Abonnement zu zahlen.",
+              "translation_ru": "Пользователи возражали против подписки за функции, которые раньше были бесплатными."
+            },
+            {
+              "text": "Die Anwohner waren dagegen, den Fußweg den ganzen Sommer über zu sperren.",
+              "translation_ru": "Жители возражали против закрытия пешеходной дорожки на всё лето."
+            },
+            {
+              "text": "Die Autoren hatten Einwände dagegen, ein exploratives Ergebnis als bestätigende Evidenz zu interpretieren.",
+              "translation_ru": "Авторы возражали против трактовки исследовательского результата как подтверждающего доказательства."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возражать против …",
+      "title_en": "Object to [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR011",
+      "set_id": "GFR",
+      "pattern": "The security team insisted on rotating the exposed credentials immediately.",
+      "group_title": "Insist on [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Insist on [doing X]",
+        "form": "insist on + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: настаивать на …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "insist on + noun/-ing",
+          "example": "The security team insisted on rotating the exposed credentials immediately.",
+          "translation": "Команда безопасности настояла на немедленной смене раскрытых учётных данных.",
+          "examples": [
+            {
+              "text": "The buyer insisted on an independent inspection before signing.",
+              "translation_ru": "Покупатель настоял на независимой проверке до подписания."
+            },
+            {
+              "text": "She insists on speaking without notes for at least part of every practice session.",
+              "translation_ru": "Она настаивает на том, чтобы хотя бы часть каждой тренировки говорить без заметок."
+            },
+            {
+              "text": "The manufacturer insisted on using the original power adapter during diagnostics.",
+              "translation_ru": "Производитель настоял на использовании оригинального блока питания во время диагностики."
+            },
+            {
+              "text": "The guide insisted on turning back before visibility became worse.",
+              "translation_ru": "Гид настоял на возвращении до ухудшения видимости."
+            },
+            {
+              "text": "The reviewers insisted on reporting the uncertainty around every estimate.",
+              "translation_ru": "Рецензенты настояли на указании неопределённости для каждой оценки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "darauf bestehen, + zu-infinitive / auf + noun",
+          "example": "Das Sicherheitsteam bestand darauf, die offengelegten Zugangsdaten sofort zu ändern.",
+          "translation": "Команда безопасности настояла на немедленной смене раскрытых учётных данных.",
+          "examples": [
+            {
+              "text": "Der Käufer bestand vor der Unterschrift auf einer unabhängigen Inspektion.",
+              "translation_ru": "Покупатель настоял на независимой проверке до подписания."
+            },
+            {
+              "text": "Sie besteht darauf, in jeder Übungseinheit zumindest teilweise ohne Notizen zu sprechen.",
+              "translation_ru": "Она настаивает на том, чтобы хотя бы часть каждой тренировки говорить без заметок."
+            },
+            {
+              "text": "Der Hersteller bestand darauf, bei der Diagnose das Originalnetzteil zu verwenden.",
+              "translation_ru": "Производитель настоял на использовании оригинального блока питания во время диагностики."
+            },
+            {
+              "text": "Der Bergführer bestand darauf, umzukehren, bevor die Sicht schlechter wurde.",
+              "translation_ru": "Гид настоял на возвращении до ухудшения видимости."
+            },
+            {
+              "text": "Die Gutachter bestanden darauf, die Unsicherheit zu jeder Schätzung anzugeben.",
+              "translation_ru": "Рецензенты настояли на указании неопределённости для каждой оценки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Настаивать на …",
+      "title_en": "Insist on [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR012",
+      "set_id": "GFR",
+      "pattern": "We finally succeeded in reproducing the issue with a minimal test case.",
+      "group_title": "Succeed in [doing X]",
+      "level": "C1",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Succeed in [doing X]",
+        "form": "succeed in + -ing",
+        "metaphor_ru": "Практика управления и дополнений: суметь добиться …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "succeed in + -ing",
+          "example": "We finally succeeded in reproducing the issue with a minimal test case.",
+          "translation": "Нам наконец удалось воспроизвести проблему на минимальном тестовом случае.",
+          "examples": [
+            {
+              "text": "They succeeded in finding a flat within walking distance of the station.",
+              "translation_ru": "Им удалось найти квартиру в пешей доступности от вокзала."
+            },
+            {
+              "text": "She succeeded in using the new pattern naturally during a real conversation.",
+              "translation_ru": "Ей удалось естественно использовать новый паттерн в реальном разговоре."
+            },
+            {
+              "text": "The technician succeeded in recovering most files from the damaged drive.",
+              "translation_ru": "Технику удалось восстановить большинство файлов с повреждённого диска."
+            },
+            {
+              "text": "We succeeded in changing the booking without paying an extra fee.",
+              "translation_ru": "Нам удалось изменить бронирование без дополнительной комиссии."
+            },
+            {
+              "text": "The team succeeded in reducing bias without sacrificing overall accuracy.",
+              "translation_ru": "Команде удалось снизить смещение без потери общей точности."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "es schaffen, + zu-infinitive / Erfolg damit haben, + zu-infinitive",
+          "example": "Wir haben es schließlich geschafft, das Problem mit einem minimalen Testfall zu reproduzieren.",
+          "translation": "Нам наконец удалось воспроизвести проблему на минимальном тестовом случае.",
+          "examples": [
+            {
+              "text": "Sie haben es geschafft, eine Wohnung in Gehweite zum Bahnhof zu finden.",
+              "translation_ru": "Им удалось найти квартиру в пешей доступности от вокзала."
+            },
+            {
+              "text": "Sie hat es geschafft, das neue Muster in einem echten Gespräch natürlich zu verwenden.",
+              "translation_ru": "Ей удалось естественно использовать новый паттерн в реальном разговоре."
+            },
+            {
+              "text": "Der Techniker hat es geschafft, die meisten Dateien von der beschädigten Festplatte wiederherzustellen.",
+              "translation_ru": "Технику удалось восстановить большинство файлов с повреждённого диска."
+            },
+            {
+              "text": "Wir haben es geschafft, die Buchung ohne zusätzliche Gebühr zu ändern.",
+              "translation_ru": "Нам удалось изменить бронирование без дополнительной комиссии."
+            },
+            {
+              "text": "Das Team hat es geschafft, den Bias zu reduzieren, ohne die Gesamtgenauigkeit zu opfern.",
+              "translation_ru": "Команде удалось снизить смещение без потери общей точности."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Суметь добиться …",
+      "title_en": "Succeed in [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR013",
+      "set_id": "GFR",
+      "pattern": "New users struggle to understand why the save button remains disabled.",
+      "group_title": "Struggle to [do X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Struggle to [do X]",
+        "form": "struggle to + infinitive",
+        "metaphor_ru": "Практика управления и дополнений: с трудом удаётся …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "struggle to + infinitive",
+          "example": "New users struggle to understand why the save button remains disabled.",
+          "translation": "Новым пользователям трудно понять, почему кнопка сохранения остаётся неактивной.",
+          "examples": [
+            {
+              "text": "We struggled to find a quiet hotel near the conference venue.",
+              "translation_ru": "Нам было трудно найти тихий отель рядом с местом конференции."
+            },
+            {
+              "text": "Many learners struggle to ask follow-up questions without translating first.",
+              "translation_ru": "Многим учащимся трудно задавать уточняющие вопросы без предварительного перевода."
+            },
+            {
+              "text": "The old laptop struggles to run two video calls at once.",
+              "translation_ru": "Старому ноутбуку трудно справляться с двумя видеозвонками одновременно."
+            },
+            {
+              "text": "The bus struggled to climb the icy hill.",
+              "translation_ru": "Автобус с трудом поднялся по обледенелому холму."
+            },
+            {
+              "text": "The model struggles to classify examples that combine several rare features.",
+              "translation_ru": "Модели трудно классифицировать примеры, сочетающие несколько редких признаков."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Schwierigkeiten haben, + zu-infinitive",
+          "example": "Neue Nutzer haben Schwierigkeiten zu verstehen, warum die Speichern-Schaltfläche deaktiviert bleibt.",
+          "translation": "Новым пользователям трудно понять, почему кнопка сохранения остаётся неактивной.",
+          "examples": [
+            {
+              "text": "Wir hatten Schwierigkeiten, ein ruhiges Hotel in der Nähe des Tagungsortes zu finden.",
+              "translation_ru": "Нам было трудно найти тихий отель рядом с местом конференции."
+            },
+            {
+              "text": "Viele Lernende haben Schwierigkeiten, Anschlussfragen zu stellen, ohne vorher zu übersetzen.",
+              "translation_ru": "Многим учащимся трудно задавать уточняющие вопросы без предварительного перевода."
+            },
+            {
+              "text": "Der alte Laptop hat Schwierigkeiten, zwei Videoanrufe gleichzeitig zu bewältigen.",
+              "translation_ru": "Старому ноутбуку трудно справляться с двумя видеозвонками одновременно."
+            },
+            {
+              "text": "Der Bus hatte Mühe, den vereisten Hügel hinaufzufahren.",
+              "translation_ru": "Автобус с трудом поднялся по обледенелому холму."
+            },
+            {
+              "text": "Das Modell hat Schwierigkeiten, Beispiele mit mehreren seltenen Merkmalen zu klassifizieren.",
+              "translation_ru": "Модели трудно классифицировать примеры, сочетающие несколько редких признаков."
+            }
+          ]
+        }
+      ],
+      "title_ru": "С трудом удаётся …",
+      "title_en": "Struggle to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR014",
+      "set_id": "GFR",
+      "pattern": "It took me a week to get used to working with the new keyboard layout.",
+      "group_title": "Get used to [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Get used to [doing X]",
+        "form": "get used to + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: привыкнуть к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "get used to + noun/-ing",
+          "example": "It took me a week to get used to working with the new keyboard layout.",
+          "translation": "Мне понадобилась неделя, чтобы привыкнуть работать с новой раскладкой клавиатуры.",
+          "examples": [
+            {
+              "text": "They quickly got used to hearing trains from the nearby line.",
+              "translation_ru": "Они быстро привыкли к шуму поездов на соседней линии."
+            },
+            {
+              "text": "You need time to get used to speaking before you have planned every sentence.",
+              "translation_ru": "Нужно время, чтобы привыкнуть говорить до того, как каждое предложение полностью продумано."
+            },
+            {
+              "text": "She got used to charging the watch every other day.",
+              "translation_ru": "Она привыкла заряжать часы через день."
+            },
+            {
+              "text": "We got used to checking the platform only shortly before departure.",
+              "translation_ru": "Мы привыкли проверять платформу незадолго до отправления."
+            },
+            {
+              "text": "The analysts got used to reporting ranges instead of a single point estimate.",
+              "translation_ru": "Аналитики привыкли указывать диапазоны вместо одной точечной оценки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "sich daran gewöhnen, + zu-infinitive / an + accusative",
+          "example": "Ich brauchte eine Woche, um mich an das Arbeiten mit dem neuen Tastaturlayout zu gewöhnen.",
+          "translation": "Мне понадобилась неделя, чтобы привыкнуть работать с новой раскладкой клавиатуры.",
+          "examples": [
+            {
+              "text": "Sie gewöhnten sich schnell an die Züge auf der nahe gelegenen Strecke.",
+              "translation_ru": "Они быстро привыкли к шуму поездов на соседней линии."
+            },
+            {
+              "text": "Du brauchst Zeit, um dich daran zu gewöhnen, zu sprechen, bevor du jeden Satz geplant hast.",
+              "translation_ru": "Нужно время, чтобы привыкнуть говорить до того, как каждое предложение полностью продумано."
+            },
+            {
+              "text": "Sie gewöhnte sich daran, die Uhr jeden zweiten Tag aufzuladen.",
+              "translation_ru": "Она привыкла заряжать часы через день."
+            },
+            {
+              "text": "Wir gewöhnten uns daran, den Bahnsteig erst kurz vor der Abfahrt zu prüfen.",
+              "translation_ru": "Мы привыкли проверять платформу незадолго до отправления."
+            },
+            {
+              "text": "Die Analysten gewöhnten sich daran, Spannweiten statt eines einzelnen Punktschätzers anzugeben.",
+              "translation_ru": "Аналитики привыкли указывать диапазоны вместо одной точечной оценки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Привыкнуть к …",
+      "title_en": "Get used to [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR015",
+      "set_id": "GFR",
+      "pattern": "The support team is used to handling urgent requests late in the release cycle.",
+      "group_title": "Be used to [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Be used to [doing X]",
+        "form": "be used to + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: быть привыкшим к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "be used to + noun/-ing",
+          "example": "The support team is used to handling urgent requests late in the release cycle.",
+          "translation": "Команда поддержки привыкла обрабатывать срочные запросы в конце цикла релиза.",
+          "examples": [
+            {
+              "text": "People in the building are used to street noise during the day.",
+              "translation_ru": "Жильцы дома привыкли к уличному шуму днём."
+            },
+            {
+              "text": "Advanced learners are used to meeting words whose meaning depends heavily on context.",
+              "translation_ru": "Продвинутые учащиеся привыкли встречать слова, смысл которых сильно зависит от контекста."
+            },
+            {
+              "text": "I am used to carrying one charger for all my devices.",
+              "translation_ru": "Я привык носить одно зарядное устройство для всех устройств."
+            },
+            {
+              "text": "The locals are used to ferries being delayed by strong winds.",
+              "translation_ru": "Местные жители привыкли к задержкам паромов из-за сильного ветра."
+            },
+            {
+              "text": "The research group is used to revising hypotheses after pilot data arrive.",
+              "translation_ru": "Исследовательская группа привыкла пересматривать гипотезы после получения пилотных данных."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "an + accusative + gewöhnt sein / es gewohnt sein, + zu-infinitive",
+          "example": "Das Supportteam ist es gewohnt, spät im Veröffentlichungszyklus dringende Anfragen zu bearbeiten.",
+          "translation": "Команда поддержки привыкла обрабатывать срочные запросы в конце цикла релиза.",
+          "examples": [
+            {
+              "text": "Die Bewohner des Gebäudes sind tagsüber an Straßenlärm gewöhnt.",
+              "translation_ru": "Жильцы дома привыкли к уличному шуму днём."
+            },
+            {
+              "text": "Fortgeschrittene Lernende sind es gewohnt, auf Wörter zu stoßen, deren Bedeutung stark vom Kontext abhängt.",
+              "translation_ru": "Продвинутые учащиеся привыкли встречать слова, смысл которых сильно зависит от контекста."
+            },
+            {
+              "text": "Ich bin es gewohnt, nur ein Ladegerät für alle Geräte mitzunehmen.",
+              "translation_ru": "Я привык носить одно зарядное устройство для всех устройств."
+            },
+            {
+              "text": "Die Einheimischen sind daran gewöhnt, dass Fähren wegen starken Winds verspätet sind.",
+              "translation_ru": "Местные жители привыкли к задержкам паромов из-за сильного ветра."
+            },
+            {
+              "text": "Die Forschungsgruppe ist es gewohnt, Hypothesen nach den ersten Pilotdaten zu überarbeiten.",
+              "translation_ru": "Исследовательская группа привыкла пересматривать гипотезы после получения пилотных данных."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Быть привыкшим к …",
+      "title_en": "Be used to [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR016",
+      "set_id": "GFR",
+      "pattern": "I'm looking forward to seeing whether the new workflow reduces manual checks.",
+      "group_title": "Look forward to [doing X]",
+      "level": "C1",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Look forward to [doing X]",
+        "form": "look forward to + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: с нетерпением ждать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "look forward to + noun/-ing",
+          "example": "I'm looking forward to seeing whether the new workflow reduces manual checks.",
+          "translation": "Я с интересом жду, снизит ли новый процесс количество ручных проверок.",
+          "examples": [
+            {
+              "text": "We're looking forward to moving into the quieter apartment.",
+              "translation_ru": "Мы с нетерпением ждём переезда в более тихую квартиру."
+            },
+            {
+              "text": "She is looking forward to trying the phrases in a real conversation.",
+              "translation_ru": "Она с нетерпением ждёт возможности попробовать фразы в реальном разговоре."
+            },
+            {
+              "text": "I'm looking forward to testing the camera in low light.",
+              "translation_ru": "Я с интересом жду возможности проверить камеру при слабом освещении."
+            },
+            {
+              "text": "They are looking forward to hiking once the trail reopens.",
+              "translation_ru": "Они с нетерпением ждут похода после открытия маршрута."
+            },
+            {
+              "text": "The team is looking forward to comparing the preregistered prediction with the actual result.",
+              "translation_ru": "Команда с интересом ждёт сравнения предварительно зарегистрированного прогноза с фактическим результатом."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "sich darauf freuen, + zu-infinitive / auf + accusative",
+          "example": "Ich freue mich darauf zu sehen, ob der neue Ablauf die manuellen Prüfungen reduziert.",
+          "translation": "Я с интересом жду, снизит ли новый процесс количество ручных проверок.",
+          "examples": [
+            {
+              "text": "Wir freuen uns darauf, in die ruhigere Wohnung umzuziehen.",
+              "translation_ru": "Мы с нетерпением ждём переезда в более тихую квартиру."
+            },
+            {
+              "text": "Sie freut sich darauf, die Wendungen in einem echten Gespräch auszuprobieren.",
+              "translation_ru": "Она с нетерпением ждёт возможности попробовать фразы в реальном разговоре."
+            },
+            {
+              "text": "Ich freue mich darauf, die Kamera bei wenig Licht zu testen.",
+              "translation_ru": "Я с интересом жду возможности проверить камеру при слабом освещении."
+            },
+            {
+              "text": "Sie freuen sich darauf, wieder wandern zu gehen, sobald der Weg geöffnet wird.",
+              "translation_ru": "Они с нетерпением ждут похода после открытия маршрута."
+            },
+            {
+              "text": "Das Team freut sich darauf, die vorregistrierte Vorhersage mit dem tatsächlichen Ergebnis zu vergleichen.",
+              "translation_ru": "Команда с интересом ждёт сравнения предварительно зарегистрированного прогноза с фактическим результатом."
+            }
+          ]
+        }
+      ],
+      "title_ru": "С нетерпением ждать …",
+      "title_en": "Look forward to [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR017",
+      "set_id": "GFR",
+      "pattern": "The migration is worth rehearsing on a realistic copy of the data.",
+      "group_title": "Be worth [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Be worth [doing X]",
+        "form": "be worth + -ing",
+        "metaphor_ru": "Практика управления и дополнений: стоит сделать …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "be worth + -ing",
+          "example": "The migration is worth rehearsing on a realistic copy of the data.",
+          "translation": "Миграцию стоит отрепетировать на реалистичной копии данных.",
+          "examples": [
+            {
+              "text": "The old house is worth viewing despite the dated photos.",
+              "translation_ru": "Старый дом стоит посмотреть, несмотря на устаревшие фотографии."
+            },
+            {
+              "text": "This pattern is worth practising until you can use it without a prompt.",
+              "translation_ru": "Этот паттерн стоит практиковать, пока вы не сможете использовать его без подсказки."
+            },
+            {
+              "text": "The monitor is worth calibrating before you replace it.",
+              "translation_ru": "Монитор стоит откалибровать перед заменой."
+            },
+            {
+              "text": "The coastal route is worth taking if the weather is clear.",
+              "translation_ru": "При ясной погоде стоит выбрать прибрежный маршрут."
+            },
+            {
+              "text": "The result is worth replicating with a larger and more diverse sample.",
+              "translation_ru": "Результат стоит воспроизвести на более крупной и разнообразной выборке."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "es wert sein, + zu-infinitive / sich lohnen",
+          "example": "Es lohnt sich, die Migration mit einer realistischen Kopie der Daten zu proben.",
+          "translation": "Миграцию стоит отрепетировать на реалистичной копии данных.",
+          "examples": [
+            {
+              "text": "Es lohnt sich, das alte Haus trotz der veralteten Fotos zu besichtigen.",
+              "translation_ru": "Старый дом стоит посмотреть, несмотря на устаревшие фотографии."
+            },
+            {
+              "text": "Es lohnt sich, dieses Muster zu üben, bis du es ohne подсказку verwenden kannst.",
+              "translation_ru": "Этот паттерн стоит практиковать, пока вы не сможете использовать его без подсказки."
+            },
+            {
+              "text": "Es lohnt sich, den Monitor zu kalibrieren, bevor du ihn ersetzt.",
+              "translation_ru": "Монитор стоит откалибровать перед заменой."
+            },
+            {
+              "text": "Die Küstenroute lohnt sich bei klarem Wetter.",
+              "translation_ru": "При ясной погоде стоит выбрать прибрежный маршрут."
+            },
+            {
+              "text": "Es lohnt sich, das Ergebnis mit einer größeren und vielfältigeren Stichprobe zu replizieren.",
+              "translation_ru": "Результат стоит воспроизвести на более крупной и разнообразной выборке."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Стоит сделать …",
+      "title_en": "Be worth [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR018",
+      "set_id": "GFR",
+      "pattern": "The team had difficulty separating configuration errors from data errors.",
+      "group_title": "Have difficulty [doing X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Have difficulty [doing X]",
+        "form": "have difficulty + -ing",
+        "metaphor_ru": "Практика управления и дополнений: испытывать трудности с …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "have difficulty + -ing",
+          "example": "The team had difficulty separating configuration errors from data errors.",
+          "translation": "Команде было трудно отделить ошибки конфигурации от ошибок данных.",
+          "examples": [
+            {
+              "text": "She has difficulty sleeping when the room is too warm.",
+              "translation_ru": "Ей трудно спать, когда в комнате слишком тепло."
+            },
+            {
+              "text": "He has difficulty remembering new expressions unless he uses them in conversation.",
+              "translation_ru": "Ему трудно запоминать новые выражения, если он не использует их в разговоре."
+            },
+            {
+              "text": "The router has difficulty maintaining a stable signal through two concrete walls.",
+              "translation_ru": "Роутеру трудно поддерживать стабильный сигнал через две бетонные стены."
+            },
+            {
+              "text": "We had difficulty finding the entrance after the station closed the main hall.",
+              "translation_ru": "Нам было трудно найти вход после закрытия главного зала вокзала."
+            },
+            {
+              "text": "The model has difficulty distinguishing rare genuine cases from labelled noise.",
+              "translation_ru": "Модели трудно отличать редкие реальные случаи от ошибочной разметки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Schwierigkeiten haben, + zu-infinitive / bei + noun",
+          "example": "Das Team hatte Schwierigkeiten, Konfigurationsfehler von Datenfehlern zu trennen.",
+          "translation": "Команде было трудно отделить ошибки конфигурации от ошибок данных.",
+          "examples": [
+            {
+              "text": "Sie hat Schwierigkeiten zu schlafen, wenn das Zimmer zu warm ist.",
+              "translation_ru": "Ей трудно спать, когда в комнате слишком тепло."
+            },
+            {
+              "text": "Er hat Schwierigkeiten, sich neue Wendungen zu merken, wenn er sie nicht im Gespräch verwendet.",
+              "translation_ru": "Ему трудно запоминать новые выражения, если он не использует их в разговоре."
+            },
+            {
+              "text": "Der Router hat Schwierigkeiten, durch zwei Betonwände ein stabiles Signal zu halten.",
+              "translation_ru": "Роутеру трудно поддерживать стабильный сигнал через две бетонные стены."
+            },
+            {
+              "text": "Wir hatten Schwierigkeiten, den Eingang zu finden, nachdem der Bahnhof die Haupthalle geschlossen hatte.",
+              "translation_ru": "Нам было трудно найти вход после закрытия главного зала вокзала."
+            },
+            {
+              "text": "Das Modell hat Schwierigkeiten, seltene echte Fälle von fehlerhaften Labels zu unterscheiden.",
+              "translation_ru": "Модели трудно отличать редкие реальные случаи от ошибочной разметки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Испытывать трудности с …",
+      "title_en": "Have difficulty [doing X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR019",
+      "set_id": "GFR",
+      "pattern": "The corrupted backup left us with no choice but to rebuild the environment from scratch.",
+      "group_title": "Leave [someone] with no choice but to [do X]",
+      "level": "B2",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Leave [someone] with no choice but to [do X]",
+        "form": "leave + object + with no choice but to + infinitive",
+        "metaphor_ru": "Практика управления и дополнений: не оставить другого выбора, кроме как …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "leave + object + with no choice but to + infinitive",
+          "example": "The corrupted backup left us with no choice but to rebuild the environment from scratch.",
+          "translation": "Повреждённая резервная копия не оставила нам другого выбора, кроме как восстановить среду с нуля.",
+          "examples": [
+            {
+              "text": "The structural report left the owners with no choice but to repair the roof immediately.",
+              "translation_ru": "Заключение не оставило владельцам другого выбора, кроме срочного ремонта крыши."
+            },
+            {
+              "text": "The approaching deadline left her with no choice but to focus on the most useful patterns first.",
+              "translation_ru": "Приближающийся срок не оставил ей другого выбора, кроме как сначала сосредоточиться на самых полезных паттернах."
+            },
+            {
+              "text": "The failed battery left him with no choice but to use a power bank during the trip.",
+              "translation_ru": "Неисправная батарея не оставила ему другого выбора, кроме как пользоваться пауэрбанком в поездке."
+            },
+            {
+              "text": "The cancelled ferry left us with no choice but to take the mountain road.",
+              "translation_ru": "Отменённый паром не оставил нам другого выбора, кроме как ехать по горной дороге."
+            },
+            {
+              "text": "Missing baseline data left the researchers with no choice but to narrow the claim.",
+              "translation_ru": "Отсутствие исходных данных не оставило исследователям другого выбора, кроме как сузить вывод."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "jemandem keine andere Wahl lassen, als + zu-infinitive",
+          "example": "Die beschädigte Sicherung ließ uns keine andere Wahl, als die Umgebung von Grund auf neu aufzubauen.",
+          "translation": "Повреждённая резервная копия не оставила нам другого выбора, кроме как восстановить среду с нуля.",
+          "examples": [
+            {
+              "text": "Das Gutachten ließ den Eigentümern keine andere Wahl, als das Dach sofort zu reparieren.",
+              "translation_ru": "Заключение не оставило владельцам другого выбора, кроме срочного ремонта крыши."
+            },
+            {
+              "text": "Die näher rückende Frist ließ ihr keine andere Wahl, als sich zuerst auf die nützlichsten Muster zu konzentrieren.",
+              "translation_ru": "Приближающийся срок не оставил ей другого выбора, кроме как сначала сосредоточиться на самых полезных паттернах."
+            },
+            {
+              "text": "Der defekte Akku ließ ihm keine andere Wahl, als während der Reise eine Powerbank zu benutzen.",
+              "translation_ru": "Неисправная батарея не оставила ему другого выбора, кроме как пользоваться пауэрбанком в поездке."
+            },
+            {
+              "text": "Die ausgefallene Fähre ließ uns keine andere Wahl, als die Bergstraße zu nehmen.",
+              "translation_ru": "Отменённый паром не оставил нам другого выбора, кроме как ехать по горной дороге."
+            },
+            {
+              "text": "Fehlende Ausgangsdaten ließen den Forschenden keine andere Wahl, als die Aussage einzugrenzen.",
+              "translation_ru": "Отсутствие исходных данных не оставило исследователям другого выбора, кроме как сузить вывод."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не оставить другого выбора, кроме как …",
+      "title_en": "Leave [someone] with no choice but to [do X]",
+      "group_id": "GFR"
+    },
+    {
+      "id": "GFR020",
+      "set_id": "GFR",
+      "pattern": "Skipping the validation step resulted in duplicate records entering production.",
+      "group_title": "Result in [X]",
+      "level": "C1",
+      "logic": {
+        "function": "verb-complementation",
+        "core": "Result in [X]",
+        "form": "result in + noun/-ing",
+        "metaphor_ru": "Практика управления и дополнений: привести к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "result in + noun/-ing",
+          "example": "Skipping the validation step resulted in duplicate records entering production.",
+          "translation": "Пропуск проверки привёл к попаданию дубликатов в продуктивную среду.",
+          "examples": [
+            {
+              "text": "Poor ventilation can result in moisture building up behind furniture.",
+              "translation_ru": "Плохая вентиляция может привести к накоплению влаги за мебелью."
+            },
+            {
+              "text": "Practising only recognition can result in slow recall during conversation.",
+              "translation_ru": "Практика только на узнавание может привести к медленному воспроизведению в разговоре."
+            },
+            {
+              "text": "Using an underpowered charger can result in the laptop charging very slowly.",
+              "translation_ru": "Слишком слабая зарядка может привести к очень медленной зарядке ноутбука."
+            },
+            {
+              "text": "A missed connection can result in an overnight stay that was never planned.",
+              "translation_ru": "Пропущенная пересадка может привести к незапланированной ночёвке."
+            },
+            {
+              "text": "Dropping difficult cases from the dataset can result in an unrealistically optimistic score.",
+              "translation_ru": "Удаление сложных случаев из набора данных может привести к нереалистично оптимистичной оценке."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "zu + dative + führen / dazu führen, dass + clause",
+          "example": "Das Überspringen der Validierung führte dazu, dass doppelte Datensätze in die Produktivumgebung gelangten.",
+          "translation": "Пропуск проверки привёл к попаданию дубликатов в продуктивную среду.",
+          "examples": [
+            {
+              "text": "Schlechte Lüftung kann dazu führen, dass sich hinter Möbeln Feuchtigkeit ansammelt.",
+              "translation_ru": "Плохая вентиляция может привести к накоплению влаги за мебелью."
+            },
+            {
+              "text": "Reines Wiedererkennen kann zu langsamem Abruf im Gespräch führen.",
+              "translation_ru": "Практика только на узнавание может привести к медленному воспроизведению в разговоре."
+            },
+            {
+              "text": "Ein zu schwaches Ladegerät kann dazu führen, dass der Laptop sehr langsam lädt.",
+              "translation_ru": "Слишком слабая зарядка может привести к очень медленной зарядке ноутбука."
+            },
+            {
+              "text": "Ein verpasster Anschluss kann zu einer ungeplanten Übernachtung führen.",
+              "translation_ru": "Пропущенная пересадка может привести к незапланированной ночёвке."
+            },
+            {
+              "text": "Das Entfernen schwieriger Fälle aus dem Datensatz kann zu einem unrealistisch optimistischen Wert führen.",
+              "translation_ru": "Удаление сложных случаев из набора данных может привести к нереалистично оптимистичной оценке."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Привести к …",
+      "title_en": "Result in [X]",
+      "group_id": "GFR"
+    }
+  ]
+}
