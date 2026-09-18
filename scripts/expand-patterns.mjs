@@ -3,6 +3,13 @@ import path from "node:path";
 import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
 import { applyPatternEditorialCopy } from "../src/pattern-editorial-copy.mjs";
 
+// Historical one-off generator retained for provenance only.
+// It created 40 slot-value clones per C1 Frame and must never rewrite the
+// deduplicated, editorially curated corpus.
+throw new Error(
+  "Retired: bulk C1 slot generation would destroy the curated corpus. Edit canonical pattern shards instead."
+);
+
 const ROOT = process.cwd();
 const setsFile = path.join(ROOT, "data", "study-sets.json");
 const { patterns: original } = loadEditorialCorpus(ROOT);
