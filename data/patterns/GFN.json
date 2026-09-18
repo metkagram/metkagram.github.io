@@ -1,22 +1,1008 @@
-[
-{"id":"GFN001","set_id":"GFN","pattern":"Despite the fact that the room was small, everyone found a seat.","group_title":"A concession clause introduced through a noun bridge","level":"B2","logic":{"function":"grammar-mechanics","core":"Despite plus the fact that as a bridge to a finite clause","form":"Despite the fact that + clause, main clause","metaphor_ru":"Despite — предлог, поэтому перед полноценным придаточным нужен мостик the fact that. Despite that the room was small не является этим стандартным каркасом."},"langs":[{"lang":"en","formula":"Despite the fact that + finite clause, main clause","example":"Despite the fact that the room was small, everyone found a seat.","translation":"Несмотря на то что комната была маленькой, всем нашлось место.","examples":[{"text":"Despite the fact that she was new, she noticed the problem first.","translation_ru":"Несмотря на то что она была новичком, она первой заметила проблему."},{"text":"Despite the fact that we booked early, we did not get our first choice.","translation_ru":"Несмотря на то что мы забронировали рано, нам не достался предпочтительный вариант."}]},{"lang":"de","formula":"Obwohl + subordinate clause, main clause","example":"Obwohl der Raum klein war, fand jeder einen Sitzplatz.","translation":"Несмотря на то что комната была маленькой, всем нашлось место.","examples":[{"text":"Obwohl sie neu war, bemerkte sie das Problem zuerst.","translation_ru":"Несмотря на то что она была новичком, она первой заметила проблему."},{"text":"Obwohl wir früh gebucht hatten, bekamen wir nicht unsere erste Wahl.","translation_ru":"Несмотря на то что мы забронировали рано, нам не достался предпочтительный вариант."}]}]},
-{"id":"GFN002","set_id":"GFN","pattern":"Despite having checked twice, I still missed the error.","group_title":"A completed earlier action conceded in a gerund phrase","level":"B2","logic":{"function":"grammar-mechanics","core":"Concessive perfect gerund after despite","form":"Despite having + participle, shared-subject main clause","metaphor_ru":"Having checked относится к тому же человеку, что I. Despite требует именной или -ing-блок, не to check; perfect подчёркивает предшествование."},"langs":[{"lang":"en","formula":"Despite having + past participle phrase, shared subject + main predicate","example":"Despite having checked twice, I still missed the error.","translation":"Хотя я проверил дважды, я всё же пропустил ошибку.","examples":[{"text":"Despite having practised, she felt nervous before the talk.","translation_ru":"Хотя она тренировалась, перед выступлением она нервничала."},{"text":"Despite having left early, we arrived late.","translation_ru":"Хотя мы выехали рано, мы опоздали."}]},{"lang":"de","formula":"Obwohl + earlier same-subject clause, main clause","example":"Obwohl ich zweimal geprüft hatte, übersah ich den Fehler trotzdem.","translation":"Хотя я проверил дважды, я всё же пропустил ошибку.","examples":[{"text":"Obwohl sie geübt hatte, war sie vor dem Vortrag nervös.","translation_ru":"Хотя она тренировалась, перед выступлением она нервничала."},{"text":"Obwohl wir früh losgefahren waren, kamen wir zu spät.","translation_ru":"Хотя мы выехали рано, мы опоздали."}]}]},
-{"id":"GFN003","set_id":"GFN","pattern":"Although tired, she stayed to help us finish.","group_title":"A concessive clause with its subject and be omitted","level":"B2","logic":{"function":"grammar-mechanics","core":"Reduced although clause with an adjective","form":"Although + adjective, same-subject main clause","metaphor_ru":"Although tired сокращает although she was tired. Подлежащее должно совпадать с she; иначе возникает подвешенное описание не того участника."},"langs":[{"lang":"en","formula":"Although + adjective phrase, shared subject + main predicate","example":"Although tired, she stayed to help us finish.","translation":"Хотя она устала, она осталась помочь нам закончить.","examples":[{"text":"Although useful, the guide does not cover every situation.","translation_ru":"Хотя руководство полезно, оно не охватывает все ситуации."},{"text":"Although expensive, the repair was cheaper than a replacement.","translation_ru":"Хотя ремонт был дорогим, он обошёлся дешевле замены."}]},{"lang":"de","formula":"Obwohl + explicit-subject finite clause, main clause","example":"Obwohl sie müde war, blieb sie, um uns beim Fertigstellen zu helfen.","translation":"Хотя она устала, она осталась помочь нам закончить.","examples":[{"text":"Obwohl der Leitfaden nützlich ist, deckt er nicht jede Situation ab.","translation_ru":"Хотя руководство полезно, оно не охватывает все ситуации."},{"text":"Obwohl die Reparatur teuer war, war sie günstiger als ein Ersatz.","translation_ru":"Хотя ремонт был дорогим, он обошёлся дешевле замены."}]}]},
-{"id":"GFN004","set_id":"GFN","pattern":"The first option saves time, whereas the second reduces cost.","group_title":"Contrasting two different subjects on parallel dimensions","level":"B2","logic":{"function":"grammar-mechanics","core":"Balanced contrast with whereas","form":"Clause A, whereas + contrasting clause B","metaphor_ru":"Whereas сопоставляет факты и не означает время. Старайтесь строить параллельные части, чтобы различие читалось сразу."},"langs":[{"lang":"en","formula":"Clause about A, whereas + parallel clause about B","example":"The first option saves time, whereas the second reduces cost.","translation":"Первый вариант экономит время, а второй снижает затраты.","examples":[{"text":"She prefers detailed notes, whereas I work better with a short outline.","translation_ru":"Она предпочитает подробные записи, а мне удобнее краткий план."},{"text":"The upstairs room faces the road, whereas this one faces the garden.","translation_ru":"Комната наверху выходит на дорогу, а эта — в сад."}]},{"lang":"de","formula":"Clause about A, während + contrasting subordinate clause about B","example":"Die erste Option spart Zeit, während die zweite die Kosten senkt.","translation":"Первый вариант экономит время, а второй снижает затраты.","examples":[{"text":"Sie bevorzugt ausführliche Notizen, während ich mit einer kurzen Gliederung besser arbeite.","translation_ru":"Она предпочитает подробные записи, а мне удобнее краткий план."},{"text":"Das Zimmer oben geht zur Straße, während dieses zum Garten geht.","translation_ru":"Комната наверху выходит на дорогу, а эта — в сад."}]}]},
-{"id":"GFN005","set_id":"GFN","pattern":"However carefully you plan, something unexpected can happen.","group_title":"An outcome unchanged across any degree of a quality","level":"B2","logic":{"function":"grammar-mechanics","core":"Degree concession with however plus adjective or adverb","form":"However + adjective/adverb + clause, main clause","metaphor_ru":"However здесь значит «как бы ни», не отдельное «однако». После carefully порядок you plan остаётся обычным, без вопросительной инверсии."},"langs":[{"lang":"en","formula":"However + adjective/adverb + subject + verb, main clause","example":"However carefully you plan, something unexpected can happen.","translation":"Как бы тщательно ты ни планировал, может случиться что-то неожиданное.","examples":[{"text":"However late it gets, we must check the final figures.","translation_ru":"Как бы поздно ни стало, мы должны проверить итоговые цифры."},{"text":"However clearly she explains it, someone asks the same question.","translation_ru":"Как бы ясно она это ни объясняла, кто-то задаёт тот же вопрос."}]},{"lang":"de","formula":"Wie + adjective/adverb + subject + auch + verb, main clause","example":"Wie sorgfältig du auch planst, etwas Unerwartetes kann passieren.","translation":"Как бы тщательно ты ни планировал, может случиться что-то неожиданное.","examples":[{"text":"Wie spät es auch wird, wir müssen die endgültigen Zahlen prüfen.","translation_ru":"Как бы поздно ни стало, мы должны проверить итоговые цифры."},{"text":"Wie klar sie es auch erklärt, jemand stellt dieselbe Frage.","translation_ru":"Как бы ясно она это ни объясняла, кто-то задаёт тот же вопрос."}]}]},
-{"id":"GFN006","set_id":"GFN","pattern":"Whatever route you choose, allow extra time.","group_title":"A result independent of which member of a category is chosen","level":"B2","logic":{"function":"grammar-mechanics","core":"Free-choice concessive whatever plus noun","form":"Whatever + noun + clause, main clause","metaphor_ru":"Whatever route — любой выбранный маршрут не меняет рекомендацию. Это уступительная часть, в отличие от object-clause choose whatever route you like."},"langs":[{"lang":"en","formula":"Whatever + noun + subject + verb, main clause","example":"Whatever route you choose, allow extra time.","translation":"Какой бы маршрут ты ни выбрал, заложи дополнительное время.","examples":[{"text":"Whatever answer she gives, listen before responding.","translation_ru":"Какой бы ответ она ни дала, выслушай её, прежде чем отвечать."},{"text":"Whatever changes we make, the original must remain available.","translation_ru":"Какие бы изменения мы ни внесли, оригинал должен остаться доступным."}]},{"lang":"de","formula":"Welchen/Welche + noun + subject + auch + verb, main clause","example":"Welche Route du auch wählst, plane zusätzliche Zeit ein.","translation":"Какой бы маршрут ты ни выбрал, заложи дополнительное время.","examples":[{"text":"Welche Antwort sie auch gibt, hör zu, bevor du reagierst.","translation_ru":"Какой бы ответ она ни дала, выслушай её, прежде чем отвечать."},{"text":"Welche Änderungen wir auch vornehmen, das Original muss verfügbar bleiben.","translation_ru":"Какие бы изменения мы ни внесли, оригинал должен остаться доступным."}]}]},
-{"id":"GFN007","set_id":"GFN","pattern":"Much as I appreciate the offer, I cannot accept it.","group_title":"A strong positive feeling conceded before a refusal","level":"C1","logic":{"function":"grammar-mechanics","core":"Concessive much as with a stance verb","form":"Much as + subject + verb, contrasting main clause","metaphor_ru":"Much as здесь означает «как бы я ни ценил», а не сравнение количества. Формальный, но полезный способ уважительно обозначить ограничение."},"langs":[{"lang":"en","formula":"Much as + subject + stance verb, contrasting main clause","example":"Much as I appreciate the offer, I cannot accept it.","translation":"Как бы я ни ценил предложение, я не могу его принять.","examples":[{"text":"Much as she enjoys travelling, she misses home.","translation_ru":"Как бы она ни любила путешествовать, она скучает по дому."},{"text":"Much as we want to help, we cannot promise that date.","translation_ru":"Как бы мы ни хотели помочь, мы не можем обещать этот срок."}]},{"lang":"de","formula":"So sehr + subject + stance predicate + auch, main clause","example":"So sehr ich das Angebot auch schätze, ich kann es nicht annehmen.","translation":"Как бы я ни ценил предложение, я не могу его принять.","examples":[{"text":"So gern sie auch reist, sie vermisst ihr Zuhause.","translation_ru":"Как бы она ни любила путешествовать, она скучает по дому."},{"text":"So sehr wir auch helfen wollen, wir können diesen Termin nicht versprechen.","translation_ru":"Как бы мы ни хотели помочь, мы не можем обещать этот срок."}]}]},
-{"id":"GFN008","set_id":"GFN","pattern":"Tired though she was, she answered every question.","group_title":"A conceded quality placed before though","level":"C1","logic":{"function":"grammar-mechanics","core":"Predicative adjective fronting in a though-clause","form":"Adjective + though + subject + be, main clause","metaphor_ru":"Прилагательное выходит перед though, но she was сохраняет обычный порядок. Это выразительный вариант although she was tired."},"langs":[{"lang":"en","formula":"Adjective + though + subject + be, contrasting main clause","example":"Tired though she was, she answered every question.","translation":"Хотя она устала, она ответила на каждый вопрос.","examples":[{"text":"Simple though it looks, the task takes practice.","translation_ru":"Хотя задача выглядит простой, для неё нужна практика."},{"text":"Expensive though the repair was, it was worth doing.","translation_ru":"Хотя ремонт был дорогим, его стоило сделать."}]},{"lang":"de","formula":"So + adjective + subordinate clause + auch, main clause","example":"So müde sie auch war, sie beantwortete jede Frage.","translation":"Хотя она устала, она ответила на каждый вопрос.","examples":[{"text":"So einfach die Aufgabe auch aussieht, sie erfordert Übung.","translation_ru":"Хотя задача выглядит простой, для неё нужна практика."},{"text":"So teuer die Reparatur auch war, sie lohnte sich.","translation_ru":"Хотя ремонт был дорогим, его стоило сделать."}]}]},
-{"id":"GFN009","set_id":"GFN","pattern":"The two plans differ in that only one includes ongoing support.","group_title":"The specific respect in which an assertion holds","level":"C1","logic":{"function":"grammar-mechanics","core":"Explanatory limitation with in that","form":"Main claim + in that + specifying clause","metaphor_ru":"In that означает «в том отношении, что». Это более точное ограничение, чем общая причина because: называем конкретный признак различия."},"langs":[{"lang":"en","formula":"Main claim + in that + finite clause specifying the respect","example":"The two plans differ in that only one includes ongoing support.","translation":"Два плана различаются тем, что только один включает постоянную поддержку.","examples":[{"text":"The task is unusual in that no single answer is required.","translation_ru":"Задача необычна тем, что не требует единственного ответа."},{"text":"This version is simpler in that it removes the manual step.","translation_ru":"Эта версия проще в том отношении, что убирает ручной шаг."}]},{"lang":"de","formula":"Main claim + darin/dadurch, dass + specifying clause","example":"Die beiden Pläne unterscheiden sich darin, dass nur einer laufende Unterstützung einschließt.","translation":"Два плана различаются тем, что только один включает постоянную поддержку.","examples":[{"text":"Die Aufgabe ist insofern ungewöhnlich, als keine einzige festgelegte Antwort verlangt wird.","translation_ru":"Задача необычна тем, что не требует единственного ответа."},{"text":"Diese Version ist dadurch einfacher, dass der manuelle Schritt entfällt.","translation_ru":"Эта версия проще в том отношении, что убирает ручной шаг."}]}]},
-{"id":"GFN010","set_id":"GFN","pattern":"I asked not because I doubted you, but because I needed the details.","group_title":"Rejecting one explanation while supplying the real one","level":"B2","logic":{"function":"grammar-mechanics","core":"Contrastive negation of a causal clause","form":"Not because + clause, but because + clause","metaphor_ru":"Отрицается причина, а не действие asked. Повтор because помогает не потерять параллельную связь между двумя объяснениями."},"langs":[{"lang":"en","formula":"Main action + not because + rejected reason, but because + actual reason","example":"I asked not because I doubted you, but because I needed the details.","translation":"Я спросил не потому, что сомневался в тебе, а потому, что мне нужны были детали.","examples":[{"text":"She left not because she was bored, but because her train was due.","translation_ru":"Она ушла не потому, что ей было скучно, а потому, что приближалось время поезда."},{"text":"We changed the plan not because it was wrong, but because the conditions changed.","translation_ru":"Мы изменили план не потому, что он был неправильным, а потому, что изменились условия."}]},{"lang":"de","formula":"Main action + nicht weil + rejected reason, sondern weil + actual reason","example":"Ich fragte nicht, weil ich an dir zweifelte, sondern weil ich die Einzelheiten brauchte.","translation":"Я спросил не потому, что сомневался в тебе, а потому, что мне нужны были детали.","examples":[{"text":"Sie ging nicht, weil sie gelangweilt war, sondern weil ihr Zug bald fuhr.","translation_ru":"Она ушла не потому, что ей было скучно, а потому, что приближалось время поезда."},{"text":"Wir änderten den Plan nicht, weil er falsch war, sondern weil sich die Bedingungen änderten.","translation_ru":"Мы изменили план не потому, что он был неправильным, а потому, что изменились условия."}]}]},
-{"id":"GFN011","set_id":"GFN","pattern":"Now that everyone has arrived, we can begin.","group_title":"A newly established situation enabling the next step","level":"B2","logic":{"function":"grammar-mechanics","core":"Changed circumstances introduced by now that","form":"Now that + clause, main clause","metaphor_ru":"Now that совмещает новую точку времени и причину: теперь, когда условие выполнено. Это не просто указание now без смысловой связи."},"langs":[{"lang":"en","formula":"Now that + newly true clause, resulting main clause","example":"Now that everyone has arrived, we can begin.","translation":"Теперь, когда все пришли, мы можем начинать.","examples":[{"text":"Now that the dates are confirmed, I can book the tickets.","translation_ru":"Теперь, когда даты подтверждены, я могу забронировать билеты."},{"text":"Now that she understands the pattern, she can create her own examples.","translation_ru":"Теперь, когда она понимает паттерн, она может создавать собственные примеры."}]},{"lang":"de","formula":"Jetzt, da + newly true subordinate clause, main clause","example":"Jetzt, da alle angekommen sind, können wir anfangen.","translation":"Теперь, когда все пришли, мы можем начинать.","examples":[{"text":"Jetzt, da die Termine bestätigt sind, kann ich die Fahrkarten buchen.","translation_ru":"Теперь, когда даты подтверждены, я могу забронировать билеты."},{"text":"Jetzt, da sie das Muster versteht, kann sie eigene Beispiele bilden.","translation_ru":"Теперь, когда она понимает паттерн, она может создавать собственные примеры."}]}]},
-{"id":"GFN012","set_id":"GFN","pattern":"Given that we have only an hour, we should focus on the essentials.","group_title":"A premise accepted for the purpose of a decision","level":"B2","logic":{"function":"grammar-mechanics","core":"Premise-setting given that clause","form":"Given that + premise, main judgement","metaphor_ru":"Given that вводит учитываемое обстоятельство или принятую предпосылку. Не выдавайте спорную предпосылку за доказанный факт только за счёт этой формы."},"langs":[{"lang":"en","formula":"Given that + premise clause, main judgement or recommendation","example":"Given that we have only an hour, we should focus on the essentials.","translation":"Учитывая, что у нас только час, стоит сосредоточиться на главном.","examples":[{"text":"Given that she is new, her progress is impressive.","translation_ru":"Учитывая, что она новичок, её прогресс впечатляет."},{"text":"Given that the original is missing, we will have to use a copy.","translation_ru":"Учитывая, что оригинал отсутствует, придётся использовать копию."}]},{"lang":"de","formula":"Da + relevant premise clause, main judgement","example":"Da wir nur eine Stunde haben, sollten wir uns auf das Wesentliche konzentrieren.","translation":"Учитывая, что у нас только час, стоит сосредоточиться на главном.","examples":[{"text":"Da sie neu ist, sind ihre Fortschritte beeindruckend.","translation_ru":"Учитывая, что она новичок, её прогресс впечатляет."},{"text":"Da das Original fehlt, müssen wir eine Kopie verwenden.","translation_ru":"Учитывая, что оригинал отсутствует, придётся использовать копию."}]}]},
-{"id":"GFN013","set_id":"GFN","pattern":"I moved the chair so that she could see the screen.","group_title":"A purpose clause with a separate actor and a past modal","level":"B2","logic":{"function":"grammar-mechanics","core":"Finite purpose clause with so that and could","form":"Past action + so that + different subject + could + verb","metaphor_ru":"I передвинул, she смогла видеть. Отдельное подлежащее требует конечного придаточного; could согласует возможность с прошлым действием."},"langs":[{"lang":"en","formula":"Subject + past action + so that + different subject + could + infinitive","example":"I moved the chair so that she could see the screen.","translation":"Я передвинул стул, чтобы она могла видеть экран.","examples":[{"text":"She sent the notes early so that we could prepare.","translation_ru":"Она отправила записи заранее, чтобы мы могли подготовиться."},{"text":"We left the light on so that the guests could find the entrance.","translation_ru":"Мы оставили свет включённым, чтобы гости могли найти вход."}]},{"lang":"de","formula":"Past action, damit + different subject + infinitive + konnte(n)","example":"Ich verschob den Stuhl, damit sie den Bildschirm sehen konnte.","translation":"Я передвинул стул, чтобы она могла видеть экран.","examples":[{"text":"Sie schickte die Notizen früh, damit wir uns vorbereiten konnten.","translation_ru":"Она отправила записи заранее, чтобы мы могли подготовиться."},{"text":"Wir ließen das Licht an, damit die Gäste den Eingang finden konnten.","translation_ru":"Мы оставили свет включённым, чтобы гости могли найти вход."}]}]},
-{"id":"GFN014","set_id":"GFN","pattern":"Take a screenshot in case the message disappears.","group_title":"A precaution taken before a possible future event","level":"B2","logic":{"function":"grammar-mechanics","core":"Precautionary in case with present tense for future risk","form":"Precaution + in case + present clause","metaphor_ru":"Скриншот делают заранее на случай исчезновения, не только после него. В этом отличие in case от if; в придаточном обычен present, не will."},"langs":[{"lang":"en","formula":"Precautionary action + in case + subject + present predicate","example":"Take a screenshot in case the message disappears.","translation":"Сделай скриншот на случай, если сообщение исчезнет.","examples":[{"text":"Bring a jacket in case it gets cold.","translation_ru":"Возьми куртку на случай, если станет холодно."},{"text":"Keep the receipt in case you need to return it.","translation_ru":"Сохрани чек на случай, если понадобится вернуть покупку."}]},{"lang":"de","formula":"Precautionary action, falls + possible future clause","example":"Mach einen Screenshot, falls die Nachricht verschwindet.","translation":"Сделай скриншот на случай, если сообщение исчезнет.","examples":[{"text":"Nimm eine Jacke mit, falls es kalt wird.","translation_ru":"Возьми куртку на случай, если станет холодно."},{"text":"Heb den Beleg auf, falls du den Artikel zurückgeben musst.","translation_ru":"Сохрани чек на случай, если понадобится вернуть покупку."}]}]},
-{"id":"GFN015","set_id":"GFN","pattern":"I wrote down her number in case I needed to call later.","group_title":"A past precaution for a possible event that was still future then","level":"B2","logic":{"function":"grammar-mechanics","core":"Past viewpoint in a precautionary in-case clause","form":"Past action + in case + past-form possibility","metaphor_ru":"Needed не означает, что необходимость уже возникла: она была будущей относительно записывания. Форма сохраняет прошлую точку отсчёта."},"langs":[{"lang":"en","formula":"Subject + past precaution + in case + subject + past-form predicate","example":"I wrote down her number in case I needed to call later.","translation":"Я записал её номер на случай, если позже понадобится позвонить.","examples":[{"text":"She brought an extra copy in case someone forgot theirs.","translation_ru":"Она принесла лишнюю копию на случай, если кто-то забудет свою."},{"text":"We left a note in case he arrived before us.","translation_ru":"Мы оставили записку на случай, если он придёт раньше нас."}]},{"lang":"de","formula":"Past precaution, falls + possible later past-viewpoint clause","example":"Ich schrieb ihre Nummer auf, falls ich später anrufen musste.","translation":"Я записал её номер на случай, если позже понадобится позвонить.","examples":[{"text":"Sie brachte eine zusätzliche Kopie mit, falls jemand seine vergessen hatte.","translation_ru":"Она принесла лишнюю копию на случай, если кто-то забудет свою."},{"text":"Wir hinterließen einen Zettel, falls er vor uns ankam.","translation_ru":"Мы оставили записку на случай, если он придёт раньше нас."}]}]},
-{"id":"GFN016","set_id":"GFN","pattern":"She looked as if she had not slept all night.","group_title":"A present-looking impression about an earlier experience","level":"B2","logic":{"function":"grammar-mechanics","core":"As-if clause with a prior past-perfect event","form":"Look/seem + as if + past perfect","metaphor_ru":"Had not slept предшествует впечатлению looked. As if не доказывает, что она действительно не спала: это сравнение по внешним признакам."},"langs":[{"lang":"en","formula":"Subject + past appearance verb + as if + subject + had + participle","example":"She looked as if she had not slept all night.","translation":"Она выглядела так, будто не спала всю ночь.","examples":[{"text":"He sounded as if he had just woken up.","translation_ru":"По голосу казалось, будто он только что проснулся."},{"text":"The room looked as if nobody had used it for years.","translation_ru":"Комната выглядела так, будто ею годами никто не пользовался."}]},{"lang":"de","formula":"Subject + wirkte/sah aus/klang, als + past Konjunktiv II clause","example":"Sie sah aus, als hätte sie die ganze Nacht nicht geschlafen.","translation":"Она выглядела так, будто не спала всю ночь.","examples":[{"text":"Er klang, als wäre er gerade aufgewacht.","translation_ru":"По голосу казалось, будто он только что проснулся."},{"text":"Das Zimmer sah aus, als hätte es seit Jahren niemand benutzt.","translation_ru":"Комната выглядела так, будто ею годами никто не пользовался."}]}]},
-{"id":"GFN017","set_id":"GFN","pattern":"He talks as if he were in charge.","group_title":"An unreal or doubtful comparison about the present","level":"B2","logic":{"function":"grammar-mechanics","core":"As-if clause with irrealis were","form":"Present action + as if + subject + were + complement","metaphor_ru":"Were показывает дистанцию от факта: говорящий не считает его руководителем. As if he is in charge допускало бы более реальную интерпретацию."},"langs":[{"lang":"en","formula":"Subject + present predicate + as if + subject + were + complement","example":"He talks as if he were in charge.","translation":"Он говорит так, будто он здесь главный.","examples":[{"text":"She treats the deadline as if it were optional.","translation_ru":"Она относится к сроку так, будто соблюдать его необязательно."},{"text":"They spend money as if it were unlimited.","translation_ru":"Они тратят деньги так, будто их бесконечно много."}]},{"lang":"de","formula":"Present predicate, als + subject + complement + wäre / als wäre + subject","example":"Er redet, als wäre er hier der Chef.","translation":"Он говорит так, будто он здесь главный.","examples":[{"text":"Sie behandelt die Frist, als wäre sie unverbindlich.","translation_ru":"Она относится к сроку так, будто соблюдать его необязательно."},{"text":"Sie geben Geld aus, als wäre es unbegrenzt verfügbar.","translation_ru":"Они тратят деньги так, будто их бесконечно много."}]}]},
-{"id":"GFN018","set_id":"GFN","pattern":"The method is useful insofar as it makes the trade-offs visible.","group_title":"Restricting a claim to the extent of a stated contribution","level":"C1","logic":{"function":"grammar-mechanics","core":"Extent-limited assertion with insofar as","form":"Main judgement + insofar as + limiting clause","metaphor_ru":"Insofar as ограничивает похвалу или согласие конкретным отношением. Это не безусловное «потому что», а «в той мере, в какой»."},"langs":[{"lang":"en","formula":"Main judgement + insofar as + clause defining its extent","example":"The method is useful insofar as it makes the trade-offs visible.","translation":"Метод полезен в той мере, в какой он делает видимыми компромиссы.","examples":[{"text":"I agree insofar as the proposal keeps the process simple.","translation_ru":"Я согласен в той мере, в какой предложение сохраняет простоту процесса."},{"text":"The comparison is fair insofar as both groups had the same task.","translation_ru":"Сравнение справедливо в той мере, в какой обе группы выполняли одну задачу."}]},{"lang":"de","formula":"Main judgement + insofern, als + limiting clause","example":"Die Methode ist insofern nützlich, als sie die Zielkonflikte sichtbar macht.","translation":"Метод полезен в той мере, в какой он делает видимыми компромиссы.","examples":[{"text":"Ich stimme insofern zu, als der Vorschlag den Ablauf einfach hält.","translation_ru":"Я согласен в той мере, в какой предложение сохраняет простоту процесса."},{"text":"Der Vergleich ist insofern fair, als beide Gruppen dieselbe Aufgabe hatten.","translation_ru":"Сравнение справедливо в той мере, в какой обе группы выполняли одну задачу."}]}]},
-{"id":"GFN019","set_id":"GFN","pattern":"The flat is ideal, except that it has no balcony.","group_title":"One finite-clause exception to an otherwise positive judgement","level":"B2","logic":{"function":"grammar-mechanics","core":"Clause-level exception with except that","form":"Main judgement, except that + clause","metaphor_ru":"Except that вводит целое исключение с подлежащим и сказуемым. Except for обычно вводит именную группу: except for the balcony."},"langs":[{"lang":"en","formula":"Main clause, except that + complete exception clause","example":"The flat is ideal, except that it has no balcony.","translation":"Квартира идеальна, за исключением того, что в ней нет балкона.","examples":[{"text":"The plan is clear, except that nobody has assigned the final task.","translation_ru":"План понятен, за исключением того, что никто не распределил последнюю задачу."},{"text":"The trip went smoothly, except that our luggage arrived late.","translation_ru":"Поездка прошла гладко, за исключением того, что багаж пришёл поздно."}]},{"lang":"de","formula":"Main clause, nur dass + exception clause","example":"Die Wohnung ist ideal, nur dass sie keinen Balkon hat.","translation":"Квартира идеальна, за исключением того, что в ней нет балкона.","examples":[{"text":"Der Plan ist klar, nur dass niemand die letzte Aufgabe zugeteilt hat.","translation_ru":"План понятен, за исключением того, что никто не распределил последнюю задачу."},{"text":"Die Reise verlief reibungslos, nur dass unser Gepäck verspätet ankam.","translation_ru":"Поездка прошла гладко, за исключением того, что багаж пришёл поздно."}]}]},
-{"id":"GFN020","set_id":"GFN","pattern":"Rather than adding more rules, we simplified the process.","group_title":"A rejected alternative placed before the chosen action","level":"B2","logic":{"function":"grammar-mechanics","core":"Fronted rather-than gerund clause with shared actor","form":"Rather than + -ing, main action","metaphor_ru":"Начальный блок называет отвергнутый вариант. Исполнитель adding должен совпадать с we; в немецком естественно вместо этого используется statt ... zu."},"langs":[{"lang":"en","formula":"Rather than + -ing phrase, shared subject + chosen action","example":"Rather than adding more rules, we simplified the process.","translation":"Вместо того чтобы добавлять правила, мы упростили процесс.","examples":[{"text":"Rather than guessing, she asked for an example.","translation_ru":"Вместо того чтобы гадать, она попросила пример."},{"text":"Rather than replacing the chair, I repaired it.","translation_ru":"Вместо того чтобы заменять стул, я его починил."}]},{"lang":"de","formula":"Statt + zu-infinitive, shared subject + chosen action","example":"Statt weitere Regeln hinzuzufügen, vereinfachten wir den Ablauf.","translation":"Вместо того чтобы добавлять правила, мы упростили процесс.","examples":[{"text":"Statt zu raten, bat sie um ein Beispiel.","translation_ru":"Вместо того чтобы гадать, она попросила пример."},{"text":"Statt den Stuhl zu ersetzen, reparierte ich ihn.","translation_ru":"Вместо того чтобы заменять стул, я его починил."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFN",
+  "title": "Concession, cause and circumstance",
+  "title_ru": "Уступка, причина, цель и обстоятельства",
+  "patterns": [
+    {
+      "id": "GFN001",
+      "set_id": "GFN",
+      "pattern": "Despite the fact that the room was small, everyone found a seat.",
+      "group_title": "A concession clause introduced through a noun bridge",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Despite plus the fact that as a bridge to a finite clause",
+        "form": "Despite the fact that + clause, main clause",
+        "metaphor_ru": "Despite — предлог, поэтому перед полноценным придаточным нужен мостик the fact that. Despite that the room was small не является этим стандартным каркасом."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Despite the fact that + finite clause, main clause",
+          "example": "Despite the fact that the room was small, everyone found a seat.",
+          "translation": "Несмотря на то что комната была маленькой, всем нашлось место.",
+          "examples": [
+            {
+              "text": "Despite the fact that she was new, she noticed the problem first.",
+              "translation_ru": "Несмотря на то что она была новичком, она первой заметила проблему."
+            },
+            {
+              "text": "Despite the fact that we booked early, we did not get our first choice.",
+              "translation_ru": "Несмотря на то что мы забронировали рано, нам не достался предпочтительный вариант."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Obwohl + subordinate clause, main clause",
+          "example": "Obwohl der Raum klein war, fand jeder einen Sitzplatz.",
+          "translation": "Несмотря на то что комната была маленькой, всем нашлось место.",
+          "examples": [
+            {
+              "text": "Obwohl sie neu war, bemerkte sie das Problem zuerst.",
+              "translation_ru": "Несмотря на то что она была новичком, она первой заметила проблему."
+            },
+            {
+              "text": "Obwohl wir früh gebucht hatten, bekamen wir nicht unsere erste Wahl.",
+              "translation_ru": "Несмотря на то что мы забронировали рано, нам не достался предпочтительный вариант."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Despite перед целым придаточным",
+      "title_en": "A concession clause introduced through a noun bridge",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN002",
+      "set_id": "GFN",
+      "pattern": "Despite having checked twice, I still missed the error.",
+      "group_title": "A completed earlier action conceded in a gerund phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Concessive perfect gerund after despite",
+        "form": "Despite having + participle, shared-subject main clause",
+        "metaphor_ru": "Having checked относится к тому же человеку, что I. Despite требует именной или -ing-блок, не to check; perfect подчёркивает предшествование."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Despite having + past participle phrase, shared subject + main predicate",
+          "example": "Despite having checked twice, I still missed the error.",
+          "translation": "Хотя я проверил дважды, я всё же пропустил ошибку.",
+          "examples": [
+            {
+              "text": "Despite having practised, she felt nervous before the talk.",
+              "translation_ru": "Хотя она тренировалась, перед выступлением она нервничала."
+            },
+            {
+              "text": "Despite having left early, we arrived late.",
+              "translation_ru": "Хотя мы выехали рано, мы опоздали."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Obwohl + earlier same-subject clause, main clause",
+          "example": "Obwohl ich zweimal geprüft hatte, übersah ich den Fehler trotzdem.",
+          "translation": "Хотя я проверил дважды, я всё же пропустил ошибку.",
+          "examples": [
+            {
+              "text": "Obwohl sie geübt hatte, war sie vor dem Vortrag nervös.",
+              "translation_ru": "Хотя она тренировалась, перед выступлением она нервничала."
+            },
+            {
+              "text": "Obwohl wir früh losgefahren waren, kamen wir zu spät.",
+              "translation_ru": "Хотя мы выехали рано, мы опоздали."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Несмотря на завершённое действие",
+      "title_en": "A completed earlier action conceded in a gerund phrase",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN003",
+      "set_id": "GFN",
+      "pattern": "Although tired, she stayed to help us finish.",
+      "group_title": "A concessive clause with its subject and be omitted",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reduced although clause with an adjective",
+        "form": "Although + adjective, same-subject main clause",
+        "metaphor_ru": "Although tired сокращает although she was tired. Подлежащее должно совпадать с she; иначе возникает подвешенное описание не того участника."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Although + adjective phrase, shared subject + main predicate",
+          "example": "Although tired, she stayed to help us finish.",
+          "translation": "Хотя она устала, она осталась помочь нам закончить.",
+          "examples": [
+            {
+              "text": "Although useful, the guide does not cover every situation.",
+              "translation_ru": "Хотя руководство полезно, оно не охватывает все ситуации."
+            },
+            {
+              "text": "Although expensive, the repair was cheaper than a replacement.",
+              "translation_ru": "Хотя ремонт был дорогим, он обошёлся дешевле замены."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Obwohl + explicit-subject finite clause, main clause",
+          "example": "Obwohl sie müde war, blieb sie, um uns beim Fertigstellen zu helfen.",
+          "translation": "Хотя она устала, она осталась помочь нам закончить.",
+          "examples": [
+            {
+              "text": "Obwohl der Leitfaden nützlich ist, deckt er nicht jede Situation ab.",
+              "translation_ru": "Хотя руководство полезно, оно не охватывает все ситуации."
+            },
+            {
+              "text": "Obwohl die Reparatur teuer war, war sie günstiger als ein Ersatz.",
+              "translation_ru": "Хотя ремонт был дорогим, он обошёлся дешевле замены."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Although без подлежащего и be",
+      "title_en": "A concessive clause with its subject and be omitted",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN004",
+      "set_id": "GFN",
+      "pattern": "The first option saves time, whereas the second reduces cost.",
+      "group_title": "Contrasting two different subjects on parallel dimensions",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Balanced contrast with whereas",
+        "form": "Clause A, whereas + contrasting clause B",
+        "metaphor_ru": "Whereas сопоставляет факты и не означает время. Старайтесь строить параллельные части, чтобы различие читалось сразу."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Clause about A, whereas + parallel clause about B",
+          "example": "The first option saves time, whereas the second reduces cost.",
+          "translation": "Первый вариант экономит время, а второй снижает затраты.",
+          "examples": [
+            {
+              "text": "She prefers detailed notes, whereas I work better with a short outline.",
+              "translation_ru": "Она предпочитает подробные записи, а мне удобнее краткий план."
+            },
+            {
+              "text": "The upstairs room faces the road, whereas this one faces the garden.",
+              "translation_ru": "Комната наверху выходит на дорогу, а эта — в сад."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Clause about A, während + contrasting subordinate clause about B",
+          "example": "Die erste Option spart Zeit, während die zweite die Kosten senkt.",
+          "translation": "Первый вариант экономит время, а второй снижает затраты.",
+          "examples": [
+            {
+              "text": "Sie bevorzugt ausführliche Notizen, während ich mit einer kurzen Gliederung besser arbeite.",
+              "translation_ru": "Она предпочитает подробные записи, а мне удобнее краткий план."
+            },
+            {
+              "text": "Das Zimmer oben geht zur Straße, während dieses zum Garten geht.",
+              "translation_ru": "Комната наверху выходит на дорогу, а эта — в сад."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Сопоставление с whereas",
+      "title_en": "Contrasting two different subjects on parallel dimensions",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN005",
+      "set_id": "GFN",
+      "pattern": "However carefully you plan, something unexpected can happen.",
+      "group_title": "An outcome unchanged across any degree of a quality",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Degree concession with however plus adjective or adverb",
+        "form": "However + adjective/adverb + clause, main clause",
+        "metaphor_ru": "However здесь значит «как бы ни», не отдельное «однако». После carefully порядок you plan остаётся обычным, без вопросительной инверсии."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "However + adjective/adverb + subject + verb, main clause",
+          "example": "However carefully you plan, something unexpected can happen.",
+          "translation": "Как бы тщательно ты ни планировал, может случиться что-то неожиданное.",
+          "examples": [
+            {
+              "text": "However late it gets, we must check the final figures.",
+              "translation_ru": "Как бы поздно ни стало, мы должны проверить итоговые цифры."
+            },
+            {
+              "text": "However clearly she explains it, someone asks the same question.",
+              "translation_ru": "Как бы ясно она это ни объясняла, кто-то задаёт тот же вопрос."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie + adjective/adverb + subject + auch + verb, main clause",
+          "example": "Wie sorgfältig du auch planst, etwas Unerwartetes kann passieren.",
+          "translation": "Как бы тщательно ты ни планировал, может случиться что-то неожиданное.",
+          "examples": [
+            {
+              "text": "Wie spät es auch wird, wir müssen die endgültigen Zahlen prüfen.",
+              "translation_ru": "Как бы поздно ни стало, мы должны проверить итоговые цифры."
+            },
+            {
+              "text": "Wie klar sie es auch erklärt, jemand stellt dieselbe Frage.",
+              "translation_ru": "Как бы ясно она это ни объясняла, кто-то задаёт тот же вопрос."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как бы ни менялась степень",
+      "title_en": "An outcome unchanged across any degree of a quality",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN006",
+      "set_id": "GFN",
+      "pattern": "Whatever route you choose, allow extra time.",
+      "group_title": "A result independent of which member of a category is chosen",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Free-choice concessive whatever plus noun",
+        "form": "Whatever + noun + clause, main clause",
+        "metaphor_ru": "Whatever route — любой выбранный маршрут не меняет рекомендацию. Это уступительная часть, в отличие от object-clause choose whatever route you like."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Whatever + noun + subject + verb, main clause",
+          "example": "Whatever route you choose, allow extra time.",
+          "translation": "Какой бы маршрут ты ни выбрал, заложи дополнительное время.",
+          "examples": [
+            {
+              "text": "Whatever answer she gives, listen before responding.",
+              "translation_ru": "Какой бы ответ она ни дала, выслушай её, прежде чем отвечать."
+            },
+            {
+              "text": "Whatever changes we make, the original must remain available.",
+              "translation_ru": "Какие бы изменения мы ни внесли, оригинал должен остаться доступным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Welchen/Welche + noun + subject + auch + verb, main clause",
+          "example": "Welche Route du auch wählst, plane zusätzliche Zeit ein.",
+          "translation": "Какой бы маршрут ты ни выбрал, заложи дополнительное время.",
+          "examples": [
+            {
+              "text": "Welche Antwort sie auch gibt, hör zu, bevor du reagierst.",
+              "translation_ru": "Какой бы ответ она ни дала, выслушай её, прежде чем отвечать."
+            },
+            {
+              "text": "Welche Änderungen wir auch vornehmen, das Original muss verfügbar bleiben.",
+              "translation_ru": "Какие бы изменения мы ни внесли, оригинал должен остаться доступным."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Какой бы вариант ни выбрали",
+      "title_en": "A result independent of which member of a category is chosen",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN007",
+      "set_id": "GFN",
+      "pattern": "Much as I appreciate the offer, I cannot accept it.",
+      "group_title": "A strong positive feeling conceded before a refusal",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Concessive much as with a stance verb",
+        "form": "Much as + subject + verb, contrasting main clause",
+        "metaphor_ru": "Much as здесь означает «как бы я ни ценил», а не сравнение количества. Формальный, но полезный способ уважительно обозначить ограничение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Much as + subject + stance verb, contrasting main clause",
+          "example": "Much as I appreciate the offer, I cannot accept it.",
+          "translation": "Как бы я ни ценил предложение, я не могу его принять.",
+          "examples": [
+            {
+              "text": "Much as she enjoys travelling, she misses home.",
+              "translation_ru": "Как бы она ни любила путешествовать, она скучает по дому."
+            },
+            {
+              "text": "Much as we want to help, we cannot promise that date.",
+              "translation_ru": "Как бы мы ни хотели помочь, мы не можем обещать этот срок."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "So sehr + subject + stance predicate + auch, main clause",
+          "example": "So sehr ich das Angebot auch schätze, ich kann es nicht annehmen.",
+          "translation": "Как бы я ни ценил предложение, я не могу его принять.",
+          "examples": [
+            {
+              "text": "So gern sie auch reist, sie vermisst ihr Zuhause.",
+              "translation_ru": "Как бы она ни любила путешествовать, она скучает по дому."
+            },
+            {
+              "text": "So sehr wir auch helfen wollen, wir können diesen Termin nicht versprechen.",
+              "translation_ru": "Как бы мы ни хотели помочь, мы не можем обещать этот срок."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как бы ни ценил предложение",
+      "title_en": "A strong positive feeling conceded before a refusal",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN008",
+      "set_id": "GFN",
+      "pattern": "Tired though she was, she answered every question.",
+      "group_title": "A conceded quality placed before though",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Predicative adjective fronting in a though-clause",
+        "form": "Adjective + though + subject + be, main clause",
+        "metaphor_ru": "Прилагательное выходит перед though, но she was сохраняет обычный порядок. Это выразительный вариант although she was tired."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Adjective + though + subject + be, contrasting main clause",
+          "example": "Tired though she was, she answered every question.",
+          "translation": "Хотя она устала, она ответила на каждый вопрос.",
+          "examples": [
+            {
+              "text": "Simple though it looks, the task takes practice.",
+              "translation_ru": "Хотя задача выглядит простой, для неё нужна практика."
+            },
+            {
+              "text": "Expensive though the repair was, it was worth doing.",
+              "translation_ru": "Хотя ремонт был дорогим, его стоило сделать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "So + adjective + subordinate clause + auch, main clause",
+          "example": "So müde sie auch war, sie beantwortete jede Frage.",
+          "translation": "Хотя она устала, она ответила на каждый вопрос.",
+          "examples": [
+            {
+              "text": "So einfach die Aufgabe auch aussieht, sie erfordert Übung.",
+              "translation_ru": "Хотя задача выглядит простой, для неё нужна практика."
+            },
+            {
+              "text": "So teuer die Reparatur auch war, sie lohnte sich.",
+              "translation_ru": "Хотя ремонт был дорогим, его стоило сделать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Признак вынесен перед though",
+      "title_en": "A conceded quality placed before though",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN009",
+      "set_id": "GFN",
+      "pattern": "The two plans differ in that only one includes ongoing support.",
+      "group_title": "The specific respect in which an assertion holds",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Explanatory limitation with in that",
+        "form": "Main claim + in that + specifying clause",
+        "metaphor_ru": "In that означает «в том отношении, что». Это более точное ограничение, чем общая причина because: называем конкретный признак различия."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main claim + in that + finite clause specifying the respect",
+          "example": "The two plans differ in that only one includes ongoing support.",
+          "translation": "Два плана различаются тем, что только один включает постоянную поддержку.",
+          "examples": [
+            {
+              "text": "The task is unusual in that no single answer is required.",
+              "translation_ru": "Задача необычна тем, что не требует единственного ответа."
+            },
+            {
+              "text": "This version is simpler in that it removes the manual step.",
+              "translation_ru": "Эта версия проще в том отношении, что убирает ручной шаг."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main claim + darin/dadurch, dass + specifying clause",
+          "example": "Die beiden Pläne unterscheiden sich darin, dass nur einer laufende Unterstützung einschließt.",
+          "translation": "Два плана различаются тем, что только один включает постоянную поддержку.",
+          "examples": [
+            {
+              "text": "Die Aufgabe ist insofern ungewöhnlich, als keine einzige festgelegte Antwort verlangt wird.",
+              "translation_ru": "Задача необычна тем, что не требует единственного ответа."
+            },
+            {
+              "text": "Diese Version ist dadurch einfacher, dass der manuelle Schritt entfällt.",
+              "translation_ru": "Эта версия проще в том отношении, что убирает ручной шаг."
+            }
+          ]
+        }
+      ],
+      "title_ru": "В том отношении, что",
+      "title_en": "The specific respect in which an assertion holds",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN010",
+      "set_id": "GFN",
+      "pattern": "I asked not because I doubted you, but because I needed the details.",
+      "group_title": "Rejecting one explanation while supplying the real one",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Contrastive negation of a causal clause",
+        "form": "Not because + clause, but because + clause",
+        "metaphor_ru": "Отрицается причина, а не действие asked. Повтор because помогает не потерять параллельную связь между двумя объяснениями."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main action + not because + rejected reason, but because + actual reason",
+          "example": "I asked not because I doubted you, but because I needed the details.",
+          "translation": "Я спросил не потому, что сомневался в тебе, а потому, что мне нужны были детали.",
+          "examples": [
+            {
+              "text": "She left not because she was bored, but because her train was due.",
+              "translation_ru": "Она ушла не потому, что ей было скучно, а потому, что приближалось время поезда."
+            },
+            {
+              "text": "We changed the plan not because it was wrong, but because the conditions changed.",
+              "translation_ru": "Мы изменили план не потому, что он был неправильным, а потому, что изменились условия."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main action + nicht weil + rejected reason, sondern weil + actual reason",
+          "example": "Ich fragte nicht, weil ich an dir zweifelte, sondern weil ich die Einzelheiten brauchte.",
+          "translation": "Я спросил не потому, что сомневался в тебе, а потому, что мне нужны были детали.",
+          "examples": [
+            {
+              "text": "Sie ging nicht, weil sie gelangweilt war, sondern weil ihr Zug bald fuhr.",
+              "translation_ru": "Она ушла не потому, что ей было скучно, а потому, что приближалось время поезда."
+            },
+            {
+              "text": "Wir änderten den Plan nicht, weil er falsch war, sondern weil sich die Bedingungen änderten.",
+              "translation_ru": "Мы изменили план не потому, что он был неправильным, а потому, что изменились условия."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не по этой причине, а по другой",
+      "title_en": "Rejecting one explanation while supplying the real one",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN011",
+      "set_id": "GFN",
+      "pattern": "Now that everyone has arrived, we can begin.",
+      "group_title": "A newly established situation enabling the next step",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Changed circumstances introduced by now that",
+        "form": "Now that + clause, main clause",
+        "metaphor_ru": "Now that совмещает новую точку времени и причину: теперь, когда условие выполнено. Это не просто указание now без смысловой связи."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Now that + newly true clause, resulting main clause",
+          "example": "Now that everyone has arrived, we can begin.",
+          "translation": "Теперь, когда все пришли, мы можем начинать.",
+          "examples": [
+            {
+              "text": "Now that the dates are confirmed, I can book the tickets.",
+              "translation_ru": "Теперь, когда даты подтверждены, я могу забронировать билеты."
+            },
+            {
+              "text": "Now that she understands the pattern, she can create her own examples.",
+              "translation_ru": "Теперь, когда она понимает паттерн, она может создавать собственные примеры."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jetzt, da + newly true subordinate clause, main clause",
+          "example": "Jetzt, da alle angekommen sind, können wir anfangen.",
+          "translation": "Теперь, когда все пришли, мы можем начинать.",
+          "examples": [
+            {
+              "text": "Jetzt, da die Termine bestätigt sind, kann ich die Fahrkarten buchen.",
+              "translation_ru": "Теперь, когда даты подтверждены, я могу забронировать билеты."
+            },
+            {
+              "text": "Jetzt, da sie das Muster versteht, kann sie eigene Beispiele bilden.",
+              "translation_ru": "Теперь, когда она понимает паттерн, она может создавать собственные примеры."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Теперь, когда ситуация изменилась",
+      "title_en": "A newly established situation enabling the next step",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN012",
+      "set_id": "GFN",
+      "pattern": "Given that we have only an hour, we should focus on the essentials.",
+      "group_title": "A premise accepted for the purpose of a decision",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Premise-setting given that clause",
+        "form": "Given that + premise, main judgement",
+        "metaphor_ru": "Given that вводит учитываемое обстоятельство или принятую предпосылку. Не выдавайте спорную предпосылку за доказанный факт только за счёт этой формы."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Given that + premise clause, main judgement or recommendation",
+          "example": "Given that we have only an hour, we should focus on the essentials.",
+          "translation": "Учитывая, что у нас только час, стоит сосредоточиться на главном.",
+          "examples": [
+            {
+              "text": "Given that she is new, her progress is impressive.",
+              "translation_ru": "Учитывая, что она новичок, её прогресс впечатляет."
+            },
+            {
+              "text": "Given that the original is missing, we will have to use a copy.",
+              "translation_ru": "Учитывая, что оригинал отсутствует, придётся использовать копию."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Da + relevant premise clause, main judgement",
+          "example": "Da wir nur eine Stunde haben, sollten wir uns auf das Wesentliche konzentrieren.",
+          "translation": "Учитывая, что у нас только час, стоит сосредоточиться на главном.",
+          "examples": [
+            {
+              "text": "Da sie neu ist, sind ihre Fortschritte beeindruckend.",
+              "translation_ru": "Учитывая, что она новичок, её прогресс впечатляет."
+            },
+            {
+              "text": "Da das Original fehlt, müssen wir eine Kopie verwenden.",
+              "translation_ru": "Учитывая, что оригинал отсутствует, придётся использовать копию."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Учитывая исходную предпосылку",
+      "title_en": "A premise accepted for the purpose of a decision",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN013",
+      "set_id": "GFN",
+      "pattern": "I moved the chair so that she could see the screen.",
+      "group_title": "A purpose clause with a separate actor and a past modal",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Finite purpose clause with so that and could",
+        "form": "Past action + so that + different subject + could + verb",
+        "metaphor_ru": "I передвинул, she смогла видеть. Отдельное подлежащее требует конечного придаточного; could согласует возможность с прошлым действием."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + past action + so that + different subject + could + infinitive",
+          "example": "I moved the chair so that she could see the screen.",
+          "translation": "Я передвинул стул, чтобы она могла видеть экран.",
+          "examples": [
+            {
+              "text": "She sent the notes early so that we could prepare.",
+              "translation_ru": "Она отправила записи заранее, чтобы мы могли подготовиться."
+            },
+            {
+              "text": "We left the light on so that the guests could find the entrance.",
+              "translation_ru": "Мы оставили свет включённым, чтобы гости могли найти вход."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Past action, damit + different subject + infinitive + konnte(n)",
+          "example": "Ich verschob den Stuhl, damit sie den Bildschirm sehen konnte.",
+          "translation": "Я передвинул стул, чтобы она могла видеть экран.",
+          "examples": [
+            {
+              "text": "Sie schickte die Notizen früh, damit wir uns vorbereiten konnten.",
+              "translation_ru": "Она отправила записи заранее, чтобы мы могли подготовиться."
+            },
+            {
+              "text": "Wir ließen das Licht an, damit die Gäste den Eingang finden konnten.",
+              "translation_ru": "Мы оставили свет включённым, чтобы гости могли найти вход."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Цель с другим исполнителем и could",
+      "title_en": "A purpose clause with a separate actor and a past modal",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN014",
+      "set_id": "GFN",
+      "pattern": "Take a screenshot in case the message disappears.",
+      "group_title": "A precaution taken before a possible future event",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Precautionary in case with present tense for future risk",
+        "form": "Precaution + in case + present clause",
+        "metaphor_ru": "Скриншот делают заранее на случай исчезновения, не только после него. В этом отличие in case от if; в придаточном обычен present, не will."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Precautionary action + in case + subject + present predicate",
+          "example": "Take a screenshot in case the message disappears.",
+          "translation": "Сделай скриншот на случай, если сообщение исчезнет.",
+          "examples": [
+            {
+              "text": "Bring a jacket in case it gets cold.",
+              "translation_ru": "Возьми куртку на случай, если станет холодно."
+            },
+            {
+              "text": "Keep the receipt in case you need to return it.",
+              "translation_ru": "Сохрани чек на случай, если понадобится вернуть покупку."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Precautionary action, falls + possible future clause",
+          "example": "Mach einen Screenshot, falls die Nachricht verschwindet.",
+          "translation": "Сделай скриншот на случай, если сообщение исчезнет.",
+          "examples": [
+            {
+              "text": "Nimm eine Jacke mit, falls es kalt wird.",
+              "translation_ru": "Возьми куртку на случай, если станет холодно."
+            },
+            {
+              "text": "Heb den Beleg auf, falls du den Artikel zurückgeben musst.",
+              "translation_ru": "Сохрани чек на случай, если понадобится вернуть покупку."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мера предосторожности на будущее",
+      "title_en": "A precaution taken before a possible future event",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN015",
+      "set_id": "GFN",
+      "pattern": "I wrote down her number in case I needed to call later.",
+      "group_title": "A past precaution for a possible event that was still future then",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past viewpoint in a precautionary in-case clause",
+        "form": "Past action + in case + past-form possibility",
+        "metaphor_ru": "Needed не означает, что необходимость уже возникла: она была будущей относительно записывания. Форма сохраняет прошлую точку отсчёта."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + past precaution + in case + subject + past-form predicate",
+          "example": "I wrote down her number in case I needed to call later.",
+          "translation": "Я записал её номер на случай, если позже понадобится позвонить.",
+          "examples": [
+            {
+              "text": "She brought an extra copy in case someone forgot theirs.",
+              "translation_ru": "Она принесла лишнюю копию на случай, если кто-то забудет свою."
+            },
+            {
+              "text": "We left a note in case he arrived before us.",
+              "translation_ru": "Мы оставили записку на случай, если он придёт раньше нас."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Past precaution, falls + possible later past-viewpoint clause",
+          "example": "Ich schrieb ihre Nummer auf, falls ich später anrufen musste.",
+          "translation": "Я записал её номер на случай, если позже понадобится позвонить.",
+          "examples": [
+            {
+              "text": "Sie brachte eine zusätzliche Kopie mit, falls jemand seine vergessen hatte.",
+              "translation_ru": "Она принесла лишнюю копию на случай, если кто-то забудет свою."
+            },
+            {
+              "text": "Wir hinterließen einen Zettel, falls er vor uns ankam.",
+              "translation_ru": "Мы оставили записку на случай, если он придёт раньше нас."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мера предосторожности из прошлого",
+      "title_en": "A past precaution for a possible event that was still future then",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN016",
+      "set_id": "GFN",
+      "pattern": "She looked as if she had not slept all night.",
+      "group_title": "A present-looking impression about an earlier experience",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "As-if clause with a prior past-perfect event",
+        "form": "Look/seem + as if + past perfect",
+        "metaphor_ru": "Had not slept предшествует впечатлению looked. As if не доказывает, что она действительно не спала: это сравнение по внешним признакам."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + past appearance verb + as if + subject + had + participle",
+          "example": "She looked as if she had not slept all night.",
+          "translation": "Она выглядела так, будто не спала всю ночь.",
+          "examples": [
+            {
+              "text": "He sounded as if he had just woken up.",
+              "translation_ru": "По голосу казалось, будто он только что проснулся."
+            },
+            {
+              "text": "The room looked as if nobody had used it for years.",
+              "translation_ru": "Комната выглядела так, будто ею годами никто не пользовался."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + wirkte/sah aus/klang, als + past Konjunktiv II clause",
+          "example": "Sie sah aus, als hätte sie die ganze Nacht nicht geschlafen.",
+          "translation": "Она выглядела так, будто не спала всю ночь.",
+          "examples": [
+            {
+              "text": "Er klang, als wäre er gerade aufgewacht.",
+              "translation_ru": "По голосу казалось, будто он только что проснулся."
+            },
+            {
+              "text": "Das Zimmer sah aus, als hätte es seit Jahren niemand benutzt.",
+              "translation_ru": "Комната выглядела так, будто ею годами никто не пользовался."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Впечатление о более раннем событии",
+      "title_en": "A present-looking impression about an earlier experience",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN017",
+      "set_id": "GFN",
+      "pattern": "He talks as if he were in charge.",
+      "group_title": "An unreal or doubtful comparison about the present",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "As-if clause with irrealis were",
+        "form": "Present action + as if + subject + were + complement",
+        "metaphor_ru": "Were показывает дистанцию от факта: говорящий не считает его руководителем. As if he is in charge допускало бы более реальную интерпретацию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + present predicate + as if + subject + were + complement",
+          "example": "He talks as if he were in charge.",
+          "translation": "Он говорит так, будто он здесь главный.",
+          "examples": [
+            {
+              "text": "She treats the deadline as if it were optional.",
+              "translation_ru": "Она относится к сроку так, будто соблюдать его необязательно."
+            },
+            {
+              "text": "They spend money as if it were unlimited.",
+              "translation_ru": "Они тратят деньги так, будто их бесконечно много."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Present predicate, als + subject + complement + wäre / als wäre + subject",
+          "example": "Er redet, als wäre er hier der Chef.",
+          "translation": "Он говорит так, будто он здесь главный.",
+          "examples": [
+            {
+              "text": "Sie behandelt die Frist, als wäre sie unverbindlich.",
+              "translation_ru": "Она относится к сроку так, будто соблюдать его необязательно."
+            },
+            {
+              "text": "Sie geben Geld aus, als wäre es unbegrenzt verfügbar.",
+              "translation_ru": "Они тратят деньги так, будто их бесконечно много."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Нереальное сравнение с were",
+      "title_en": "An unreal or doubtful comparison about the present",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN018",
+      "set_id": "GFN",
+      "pattern": "The method is useful insofar as it makes the trade-offs visible.",
+      "group_title": "Restricting a claim to the extent of a stated contribution",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Extent-limited assertion with insofar as",
+        "form": "Main judgement + insofar as + limiting clause",
+        "metaphor_ru": "Insofar as ограничивает похвалу или согласие конкретным отношением. Это не безусловное «потому что», а «в той мере, в какой»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main judgement + insofar as + clause defining its extent",
+          "example": "The method is useful insofar as it makes the trade-offs visible.",
+          "translation": "Метод полезен в той мере, в какой он делает видимыми компромиссы.",
+          "examples": [
+            {
+              "text": "I agree insofar as the proposal keeps the process simple.",
+              "translation_ru": "Я согласен в той мере, в какой предложение сохраняет простоту процесса."
+            },
+            {
+              "text": "The comparison is fair insofar as both groups had the same task.",
+              "translation_ru": "Сравнение справедливо в той мере, в какой обе группы выполняли одну задачу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main judgement + insofern, als + limiting clause",
+          "example": "Die Methode ist insofern nützlich, als sie die Zielkonflikte sichtbar macht.",
+          "translation": "Метод полезен в той мере, в какой он делает видимыми компромиссы.",
+          "examples": [
+            {
+              "text": "Ich stimme insofern zu, als der Vorschlag den Ablauf einfach hält.",
+              "translation_ru": "Я согласен в той мере, в какой предложение сохраняет простоту процесса."
+            },
+            {
+              "text": "Der Vergleich ist insofern fair, als beide Gruppen dieselbe Aufgabe hatten.",
+              "translation_ru": "Сравнение справедливо в той мере, в какой обе группы выполняли одну задачу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Утверждение ограничено степенью",
+      "title_en": "Restricting a claim to the extent of a stated contribution",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN019",
+      "set_id": "GFN",
+      "pattern": "The flat is ideal, except that it has no balcony.",
+      "group_title": "One finite-clause exception to an otherwise positive judgement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Clause-level exception with except that",
+        "form": "Main judgement, except that + clause",
+        "metaphor_ru": "Except that вводит целое исключение с подлежащим и сказуемым. Except for обычно вводит именную группу: except for the balcony."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause, except that + complete exception clause",
+          "example": "The flat is ideal, except that it has no balcony.",
+          "translation": "Квартира идеальна, за исключением того, что в ней нет балкона.",
+          "examples": [
+            {
+              "text": "The plan is clear, except that nobody has assigned the final task.",
+              "translation_ru": "План понятен, за исключением того, что никто не распределил последнюю задачу."
+            },
+            {
+              "text": "The trip went smoothly, except that our luggage arrived late.",
+              "translation_ru": "Поездка прошла гладко, за исключением того, что багаж пришёл поздно."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause, nur dass + exception clause",
+          "example": "Die Wohnung ist ideal, nur dass sie keinen Balkon hat.",
+          "translation": "Квартира идеальна, за исключением того, что в ней нет балкона.",
+          "examples": [
+            {
+              "text": "Der Plan ist klar, nur dass niemand die letzte Aufgabe zugeteilt hat.",
+              "translation_ru": "План понятен, за исключением того, что никто не распределил последнюю задачу."
+            },
+            {
+              "text": "Die Reise verlief reibungslos, nur dass unser Gepäck verspätet ankam.",
+              "translation_ru": "Поездка прошла гладко, за исключением того, что багаж пришёл поздно."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Исключение в виде придаточного",
+      "title_en": "One finite-clause exception to an otherwise positive judgement",
+      "group_id": "GFN"
+    },
+    {
+      "id": "GFN020",
+      "set_id": "GFN",
+      "pattern": "Rather than adding more rules, we simplified the process.",
+      "group_title": "A rejected alternative placed before the chosen action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Fronted rather-than gerund clause with shared actor",
+        "form": "Rather than + -ing, main action",
+        "metaphor_ru": "Начальный блок называет отвергнутый вариант. Исполнитель adding должен совпадать с we; в немецком естественно вместо этого используется statt ... zu."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Rather than + -ing phrase, shared subject + chosen action",
+          "example": "Rather than adding more rules, we simplified the process.",
+          "translation": "Вместо того чтобы добавлять правила, мы упростили процесс.",
+          "examples": [
+            {
+              "text": "Rather than guessing, she asked for an example.",
+              "translation_ru": "Вместо того чтобы гадать, она попросила пример."
+            },
+            {
+              "text": "Rather than replacing the chair, I repaired it.",
+              "translation_ru": "Вместо того чтобы заменять стул, я его починил."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Statt + zu-infinitive, shared subject + chosen action",
+          "example": "Statt weitere Regeln hinzuzufügen, vereinfachten wir den Ablauf.",
+          "translation": "Вместо того чтобы добавлять правила, мы упростили процесс.",
+          "examples": [
+            {
+              "text": "Statt zu raten, bat sie um ein Beispiel.",
+              "translation_ru": "Вместо того чтобы гадать, она попросила пример."
+            },
+            {
+              "text": "Statt den Stuhl zu ersetzen, reparierte ich ihn.",
+              "translation_ru": "Вместо того чтобы заменять стул, я его починил."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отвергнутый вариант перед выбранным",
+      "title_en": "A rejected alternative placed before the chosen action",
+      "group_id": "GFN"
+    }
+  ]
+}

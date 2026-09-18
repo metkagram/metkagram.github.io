@@ -1,22 +1,1008 @@
-[
-{"id":"GFA001","set_id":"GFA","pattern":"This is the first time I have chaired a meeting.","group_title":"First experience up to now","level":"B2","logic":{"function":"grammar-mechanics","core":"Present first experience","form":"This is the first time + present perfect","metaphor_ru":"Опыт оценивается из настоящего: в английском после first time используется present perfect, в немецком естественно настоящее время."},"langs":[{"lang":"en","formula":"This is the first time + subject + have/has + past participle","example":"This is the first time I have chaired a meeting.","translation":"Я впервые веду совещание.","examples":[{"text":"This is the first time she has travelled alone.","translation_ru":"Она впервые путешествует одна."},{"text":"This is the first time we have worked together.","translation_ru":"Мы впервые работаем вместе."}]},{"lang":"de","formula":"Das ist das erste Mal, dass + subject + ... + verb","example":"Das ist das erste Mal, dass ich eine Besprechung leite.","translation":"Я впервые веду совещание.","examples":[{"text":"Das ist das erste Mal, dass sie allein reist.","translation_ru":"Она впервые путешествует одна."},{"text":"Das ist das erste Mal, dass wir zusammenarbeiten.","translation_ru":"Мы впервые работаем вместе."}]}]},
-{"id":"GFA002","set_id":"GFA","pattern":"It was the first time I had spoken on stage.","group_title":"First experience viewed from the past","level":"B2","logic":{"function":"grammar-mechanics","core":"Past first experience","form":"It was the first time + past perfect","metaphor_ru":"Точка отсчёта находится в прошлом: предыдущий опыт выражается через had + причастие. Немецкий может описывать сам первый случай через Präteritum."},"langs":[{"lang":"en","formula":"It was the first time + subject + had + past participle","example":"It was the first time I had spoken on stage.","translation":"Тогда я впервые выступал на сцене.","examples":[{"text":"It was the first time she had managed a team.","translation_ru":"Тогда она впервые руководила командой."},{"text":"It was the first time we had met in person.","translation_ru":"Тогда мы впервые встретились лично."}]},{"lang":"de","formula":"Es war das erste Mal, dass + subject + ... + past verb","example":"Es war das erste Mal, dass ich auf einer Bühne sprach.","translation":"Тогда я впервые выступал на сцене.","examples":[{"text":"Es war das erste Mal, dass sie ein Team leitete.","translation_ru":"Тогда она впервые руководила командой."},{"text":"Es war das erste Mal, dass wir uns persönlich trafen.","translation_ru":"Тогда мы впервые встретились лично."}]}]},
-{"id":"GFA003","set_id":"GFA","pattern":"I had been waiting for an hour when she called.","group_title":"Duration before a past interruption","level":"B2","logic":{"function":"grammar-mechanics","core":"Ongoing past duration","form":"Past perfect continuous + when","metaphor_ru":"Показываем, сколько процесс уже длился к событию в прошлом. Немецкий передаёт длительность словами schon и seit, а не отдельным continuous."},"langs":[{"lang":"en","formula":"Subject + had been + -ing + for a duration + when + past simple","example":"I had been waiting for an hour when she called.","translation":"Я ждал уже час, когда она позвонила.","examples":[{"text":"We had been driving for two hours when it started snowing.","translation_ru":"Мы ехали уже два часа, когда пошёл снег."},{"text":"He had been studying for months when the course was cancelled.","translation_ru":"Он занимался уже несколько месяцев, когда курс отменили."}]},{"lang":"de","formula":"Subject + past verb + schon seit + duration, als + past clause","example":"Ich wartete schon seit einer Stunde, als sie anrief.","translation":"Я ждал уже час, когда она позвонила.","examples":[{"text":"Wir waren schon seit zwei Stunden unterwegs, als es anfing zu schneien.","translation_ru":"Мы ехали уже два часа, когда пошёл снег."},{"text":"Er lernte schon seit Monaten, als der Kurs abgesagt wurde.","translation_ru":"Он занимался уже несколько месяцев, когда курс отменили."}]}]},
-{"id":"GFA004","set_id":"GFA","pattern":"By the time you arrive, I will have finished cooking.","group_title":"Completion before a future reference point","level":"B2","logic":{"function":"grammar-mechanics","core":"Future completion deadline","form":"By the time + present; future perfect","metaphor_ru":"В английском придаточное времени получает настоящее, хотя речь о будущем. Немецкий часто использует Perfekt без обязательного Futur II."},"langs":[{"lang":"en","formula":"By the time + subject + present simple, subject + will have + past participle","example":"By the time you arrive, I will have finished cooking.","translation":"К твоему приезду я уже закончу готовить.","examples":[{"text":"By the time the shop opens, we will have left.","translation_ru":"К открытию магазина мы уже уедем."},{"text":"By the time she returns, they will have repaired the roof.","translation_ru":"К её возвращению они уже починят крышу."}]},{"lang":"de","formula":"Bis + future-time clause, subject + haben/sein + ... + participle","example":"Bis du ankommst, habe ich fertig gekocht.","translation":"К твоему приезду я уже закончу готовить.","examples":[{"text":"Bis der Laden öffnet, sind wir schon abgefahren.","translation_ru":"К открытию магазина мы уже уедем."},{"text":"Bis sie zurückkommt, haben sie das Dach repariert.","translation_ru":"К её возвращению они уже починят крышу."}]}]},
-{"id":"GFA005","set_id":"GFA","pattern":"By June, I will have been working here for five years.","group_title":"Duration accumulated by a future date","level":"C1","logic":{"function":"grammar-mechanics","core":"Future accumulated duration","form":"Future perfect continuous","metaphor_ru":"Считаем продолжительность процесса к будущей дате. В немецком будущая дата и seit часто делают отдельное будущее время ненужным."},"langs":[{"lang":"en","formula":"By + future date, subject + will have been + -ing + for + duration","example":"By June, I will have been working here for five years.","translation":"К июню исполнится пять лет, как я здесь работаю.","examples":[{"text":"By Friday, we will have been travelling for three weeks.","translation_ru":"К пятнице мы будем путешествовать уже три недели."},{"text":"By midnight, she will have been driving for six hours.","translation_ru":"К полуночи она будет за рулём уже шесть часов."}]},{"lang":"de","formula":"Future date + verb + subject + schon seit + duration","example":"Im Juni arbeite ich schon seit fünf Jahren hier.","translation":"К июню исполнится пять лет, как я здесь работаю.","examples":[{"text":"Am Freitag sind wir schon seit drei Wochen unterwegs.","translation_ru":"К пятнице мы будем путешествовать уже три недели."},{"text":"Um Mitternacht sitzt sie schon seit sechs Stunden am Steuer.","translation_ru":"К полуночи она будет за рулём уже шесть часов."}]}]},
-{"id":"GFA006","set_id":"GFA","pattern":"I was about to leave when the phone rang.","group_title":"An imminent action interrupted","level":"B2","logic":{"function":"grammar-mechanics","core":"Interrupted imminent action","form":"Was about to + verb + when","metaphor_ru":"Действие было вот-вот готово начаться, но произошло другое событие. Это не утверждение, что первое действие состоялось."},"langs":[{"lang":"en","formula":"Subject + was/were about to + infinitive + when + past clause","example":"I was about to leave when the phone rang.","translation":"Я уже собирался выходить, когда зазвонил телефон.","examples":[{"text":"She was about to pay when she noticed the mistake.","translation_ru":"Она уже собиралась платить, когда заметила ошибку."},{"text":"We were about to start when the lights went out.","translation_ru":"Мы уже собирались начинать, когда погас свет."}]},{"lang":"de","formula":"Subject + wollte gerade + infinitive, als + past clause","example":"Ich wollte gerade gehen, als das Telefon klingelte.","translation":"Я уже собирался выходить, когда зазвонил телефон.","examples":[{"text":"Sie wollte gerade bezahlen, als sie den Fehler bemerkte.","translation_ru":"Она уже собиралась платить, когда заметила ошибку."},{"text":"Wir wollten gerade anfangen, als das Licht ausging.","translation_ru":"Мы уже собирались начинать, когда погас свет."}]}]},
-{"id":"GFA007","set_id":"GFA","pattern":"I had been going to call, but my battery died.","group_title":"An earlier intention that was abandoned","level":"C1","logic":{"function":"grammar-mechanics","core":"Abandoned earlier intention","form":"Had been going to + verb, but","metaphor_ru":"Had been going to помещает намерение раньше последующего изменения обстоятельств. Немецкий естественно использует hatte vor или wollte eigentlich."},"langs":[{"lang":"en","formula":"Subject + had been going to + infinitive, but + past clause","example":"I had been going to call, but my battery died.","translation":"Я собирался позвонить, но телефон разрядился.","examples":[{"text":"We had been going to walk, but it started raining.","translation_ru":"Мы собирались идти пешком, но начался дождь."},{"text":"She had been going to apply, but the deadline had passed.","translation_ru":"Она собиралась подать заявку, но срок уже истёк."}]},{"lang":"de","formula":"Subject + hatte(n) vor, zu + infinitive, aber + past clause","example":"Ich hatte vor, anzurufen, aber mein Akku war leer.","translation":"Я собирался позвонить, но телефон разрядился.","examples":[{"text":"Wir hatten vor, zu Fuß zu gehen, aber es fing an zu regnen.","translation_ru":"Мы собирались идти пешком, но начался дождь."},{"text":"Sie hatte vor, sich zu bewerben, aber die Frist war bereits abgelaufen.","translation_ru":"Она собиралась подать заявку, но срок уже истёк."}]}]},
-{"id":"GFA008","set_id":"GFA","pattern":"I was to learn the truth years later.","group_title":"A later event seen from the past","level":"C1","logic":{"function":"grammar-mechanics","core":"Retrospective future in the past","form":"Was to + infinitive","metaphor_ru":"Рассказчик знает, что случилось позднее. Здесь was to — не обязанность, а повествовательное «предстояло»; немецкое sollte имеет такую же функцию."},"langs":[{"lang":"en","formula":"Subject + was/were to + infinitive + later-time expression","example":"I was to learn the truth years later.","translation":"Правду мне предстояло узнать лишь годы спустя.","examples":[{"text":"They were to meet again the following winter.","translation_ru":"Им предстояло снова встретиться следующей зимой."},{"text":"This decision was to change her life.","translation_ru":"Этому решению предстояло изменить её жизнь."}]},{"lang":"de","formula":"Subject + sollte(n) + ... + infinitive","example":"Ich sollte die Wahrheit erst Jahre später erfahren.","translation":"Правду мне предстояло узнать лишь годы спустя.","examples":[{"text":"Sie sollten sich im folgenden Winter wiedersehen.","translation_ru":"Им предстояло снова встретиться следующей зимой."},{"text":"Diese Entscheidung sollte ihr Leben verändern.","translation_ru":"Этому решению предстояло изменить её жизнь."}]}]},
-{"id":"GFA009","set_id":"GFA","pattern":"She was to have spoken first, but her train was delayed.","group_title":"A planned past event that did not happen","level":"C1","logic":{"function":"grammar-mechanics","core":"Unfulfilled scheduled action","form":"Was to have + past participle","metaphor_ru":"Формальный английский каркас для несостоявшегося плана. Немецкий перевод использует sollte eigentlich; причина отмены делает нереализованность явной."},"langs":[{"lang":"en","formula":"Subject + was/were to have + past participle, but + past clause","example":"She was to have spoken first, but her train was delayed.","translation":"Она должна была выступать первой, но её поезд задержался.","examples":[{"text":"We were to have met on Monday, but he was ill.","translation_ru":"Мы должны были встретиться в понедельник, но он заболел."},{"text":"The museum was to have opened in May, but repairs took longer.","translation_ru":"Музей должен был открыться в мае, но ремонт затянулся."}]},{"lang":"de","formula":"Subject + sollte(n) eigentlich + infinitive, aber + past clause","example":"Sie sollte eigentlich als Erste sprechen, aber ihr Zug hatte Verspätung.","translation":"Она должна была выступать первой, но её поезд задержался.","examples":[{"text":"Wir sollten uns eigentlich am Montag treffen, aber er war krank.","translation_ru":"Мы должны были встретиться в понедельник, но он заболел."},{"text":"Das Museum sollte eigentlich im Mai öffnen, aber die Reparaturen dauerten länger.","translation_ru":"Музей должен был открыться в мае, но ремонт затянулся."}]}]},
-{"id":"GFA010","set_id":"GFA","pattern":"I have yet to receive a reply.","group_title":"Something still not completed","level":"B2","logic":{"function":"grammar-mechanics","core":"Outstanding action","form":"Have yet to + infinitive","metaphor_ru":"Действие пока не произошло, но остаётся ожидаемым. Это не have to в значении обязанности."},"langs":[{"lang":"en","formula":"Subject + have/has yet to + infinitive","example":"I have yet to receive a reply.","translation":"Я пока не получил ответа.","examples":[{"text":"She has yet to choose a date.","translation_ru":"Она пока не выбрала дату."},{"text":"We have yet to test the new version.","translation_ru":"Мы пока не проверили новую версию."}]},{"lang":"de","formula":"Subject + haben + ... + noch nicht + past participle","example":"Ich habe noch keine Antwort erhalten.","translation":"Я пока не получил ответа.","examples":[{"text":"Sie hat noch keinen Termin gewählt.","translation_ru":"Она пока не выбрала дату."},{"text":"Wir haben die neue Version noch nicht getestet.","translation_ru":"Мы пока не проверили новую версию."}]}]},
-{"id":"GFA011","set_id":"GFA","pattern":"It has been three years since I last saw her.","group_title":"Time elapsed since the last occurrence","level":"B2","logic":{"function":"grammar-mechanics","core":"Elapsed time since last event","form":"It has been + duration + since + past simple","metaphor_ru":"Считаем время от последнего случая до настоящего. Last относится к последнему событию, а не к прошлому календарному периоду."},"langs":[{"lang":"en","formula":"It has been + duration + since + subject + last + past verb","example":"It has been three years since I last saw her.","translation":"Прошло три года с тех пор, как я видел её в последний раз.","examples":[{"text":"It has been a week since we last spoke.","translation_ru":"Прошла неделя с нашего последнего разговора."},{"text":"It has been months since he last took a day off.","translation_ru":"Прошло уже несколько месяцев с тех пор, как он последний раз брал выходной."}]},{"lang":"de","formula":"Es ist + duration + her, dass + subject + zuletzt + past clause","example":"Es ist drei Jahre her, dass ich sie zuletzt gesehen habe.","translation":"Прошло три года с тех пор, как я видел её в последний раз.","examples":[{"text":"Es ist eine Woche her, dass wir zuletzt miteinander gesprochen haben.","translation_ru":"Прошла неделя с нашего последнего разговора."},{"text":"Es ist Monate her, dass er zuletzt einen Tag freigenommen hat.","translation_ru":"Прошло уже несколько месяцев с тех пор, как он последний раз брал выходной."}]}]},
-{"id":"GFA012","set_id":"GFA","pattern":"I haven't seen her since she moved away.","group_title":"A negative state extending from a past event","level":"B2","logic":{"function":"grammar-mechanics","core":"No occurrence since a starting event","form":"Negative present perfect + since + past event","metaphor_ru":"Главная часть охватывает период до настоящего, since задаёт начало. Немецкое seitdem соединяет отрицательный Perfekt с событием-границей."},"langs":[{"lang":"en","formula":"Subject + have/has not + past participle + since + past clause","example":"I haven't seen her since she moved away.","translation":"Я не видел её с тех пор, как она переехала.","examples":[{"text":"We haven't used the car since the bridge closed.","translation_ru":"Мы не пользовались машиной с тех пор, как закрыли мост."},{"text":"He hasn't complained since we changed the schedule.","translation_ru":"Он не жаловался с тех пор, как мы изменили расписание."}]},{"lang":"de","formula":"Subject + haben + ... + nicht mehr + participle, seitdem + past clause","example":"Ich habe sie nicht mehr gesehen, seitdem sie weggezogen ist.","translation":"Я не видел её с тех пор, как она переехала.","examples":[{"text":"Wir haben das Auto nicht mehr benutzt, seitdem die Brücke gesperrt wurde.","translation_ru":"Мы не пользовались машиной с тех пор, как закрыли мост."},{"text":"Er hat sich nicht mehr beschwert, seitdem wir den Zeitplan geändert haben.","translation_ru":"Он не жаловался с тех пор, как мы изменили расписание."}]}]},
-{"id":"GFA013","set_id":"GFA","pattern":"I will call as soon as I have checked the figures.","group_title":"Future action after confirmed completion","level":"B2","logic":{"function":"grammar-mechanics","core":"Completed prerequisite in a time clause","form":"As soon as + present perfect","metaphor_ru":"Present perfect после as soon as подчёркивает завершение проверки до звонка. Will не переносится в придаточное времени."},"langs":[{"lang":"en","formula":"Subject + will + infinitive + as soon as + subject + have/has + past participle","example":"I will call as soon as I have checked the figures.","translation":"Я позвоню, как только проверю цифры.","examples":[{"text":"We will leave as soon as everyone has eaten.","translation_ru":"Мы уйдём, как только все поедят."},{"text":"She will reply as soon as she has read the report.","translation_ru":"Она ответит, как только прочитает отчёт."}]},{"lang":"de","formula":"Main clause + sobald + subject + ... + participle + haben/sein","example":"Ich rufe an, sobald ich die Zahlen geprüft habe.","translation":"Я позвоню, как только проверю цифры.","examples":[{"text":"Wir gehen los, sobald alle gegessen haben.","translation_ru":"Мы уйдём, как только все поедят."},{"text":"Sie antwortet, sobald sie den Bericht gelesen hat.","translation_ru":"Она ответит, как только прочитает отчёт."}]}]},
-{"id":"GFA014","set_id":"GFA","pattern":"It won't be long before they notice.","group_title":"A short interval before an expected event","level":"B2","logic":{"function":"grammar-mechanics","core":"Expected event soon","form":"It will not be long before + present","metaphor_ru":"Буквальное «пройдёт немного времени, прежде чем» означает «скоро». В английском после before — настоящее время."},"langs":[{"lang":"en","formula":"It will not be long before + subject + present simple","example":"It won't be long before they notice.","translation":"Они скоро заметят.","examples":[{"text":"It won't be long before she returns.","translation_ru":"Она скоро вернётся."},{"text":"It won't be long before we need a bigger room.","translation_ru":"Скоро нам понадобится комната побольше."}]},{"lang":"de","formula":"Es dauert nicht mehr lange, bis + subject + ... + verb","example":"Es dauert nicht mehr lange, bis sie es bemerken.","translation":"Они скоро заметят.","examples":[{"text":"Es dauert nicht mehr lange, bis sie zurückkommt.","translation_ru":"Она скоро вернётся."},{"text":"Es dauert nicht mehr lange, bis wir einen größeren Raum brauchen.","translation_ru":"Скоро нам понадобится комната побольше."}]}]},
-{"id":"GFA015","set_id":"GFA","pattern":"I hadn't realised how late it was until I checked my phone.","group_title":"Awareness beginning at a later point","level":"B2","logic":{"function":"grammar-mechanics","core":"Delayed awareness","form":"Negative past perfect + until","metaphor_ru":"До обозначенного момента понимания не было. Немецкое erst als естественно выражает то же изменение осознания."},"langs":[{"lang":"en","formula":"Subject + had not + perception participle + embedded clause + until + past clause","example":"I hadn't realised how late it was until I checked my phone.","translation":"Я понял, как поздно, только когда посмотрел на телефон.","examples":[{"text":"She hadn't noticed the error until we pointed it out.","translation_ru":"Она заметила ошибку только после того, как мы на неё указали."},{"text":"We hadn't understood the risk until the system failed.","translation_ru":"Мы поняли риск только тогда, когда система отказала."}]},{"lang":"de","formula":"Subject + past verb + erst, als + past clause","example":"Ich merkte erst, wie spät es war, als ich auf mein Handy schaute.","translation":"Я понял, как поздно, только когда посмотрел на телефон.","examples":[{"text":"Sie bemerkte den Fehler erst, als wir sie darauf hinwiesen.","translation_ru":"Она заметила ошибку только после того, как мы на неё указали."},{"text":"Wir verstanden das Risiko erst, als das System ausfiel.","translation_ru":"Мы поняли риск только тогда, когда система отказала."}]}]},
-{"id":"GFA016","set_id":"GFA","pattern":"She is always leaving the window open.","group_title":"Repeated behaviour with a speaker reaction","level":"B2","logic":{"function":"grammar-mechanics","core":"Evaluated repetition","form":"Always + present continuous","metaphor_ru":"Continuous с always часто передаёт раздражение или другую оценку, а не нейтральную частоту. Немецкий передаёт её через ständig и контекст."},"langs":[{"lang":"en","formula":"Subject + am/is/are always + -ing","example":"She is always leaving the window open.","translation":"Она вечно оставляет окно открытым.","examples":[{"text":"You are always interrupting me.","translation_ru":"Ты вечно меня перебиваешь."},{"text":"He is always finding something to complain about.","translation_ru":"Он вечно находит, на что пожаловаться."}]},{"lang":"de","formula":"Subject + verb + ständig + rest of clause","example":"Sie lässt ständig das Fenster offen.","translation":"Она вечно оставляет окно открытым.","examples":[{"text":"Du unterbrichst mich ständig.","translation_ru":"Ты вечно меня перебиваешь."},{"text":"Er findet ständig etwas, worüber er sich beschweren kann.","translation_ru":"Он вечно находит, на что пожаловаться."}]}]},
-{"id":"GFA017","set_id":"GFA","pattern":"I was wondering whether you could help.","group_title":"Past progressive for a tentative present request","level":"B2","logic":{"function":"grammar-mechanics","core":"Tentative present request","form":"Was wondering whether + could","metaphor_ru":"Форма прошлого смягчает просьбу сейчас, а не обязательно описывает прошлое размышление. Немецкий использует Konjunktiv II."},"langs":[{"lang":"en","formula":"I was wondering whether + subject + could + infinitive","example":"I was wondering whether you could help.","translation":"Я хотел бы узнать, не могли бы вы помочь.","examples":[{"text":"I was wondering whether we could move the meeting.","translation_ru":"Я хотел бы узнать, не могли бы мы перенести встречу."},{"text":"I was wondering whether I could ask a question.","translation_ru":"Я хотел бы узнать, можно ли задать вопрос."}]},{"lang":"de","formula":"Ich wollte fragen, ob + subject + ... + infinitive + könnte(n)","example":"Ich wollte fragen, ob Sie helfen könnten.","translation":"Я хотел бы узнать, не могли бы вы помочь.","examples":[{"text":"Ich wollte fragen, ob wir die Besprechung verschieben könnten.","translation_ru":"Я хотел бы узнать, не могли бы мы перенести встречу."},{"text":"Ich wollte fragen, ob ich eine Frage stellen könnte.","translation_ru":"Я хотел бы узнать, можно ли задать вопрос."}]}]},
-{"id":"GFA018","set_id":"GFA","pattern":"I will be seeing her tomorrow, so I can ask.","group_title":"A future action occurring in the normal course of events","level":"B2","logic":{"function":"grammar-mechanics","core":"Expected future arrangement as context","form":"Future continuous + consequence","metaphor_ru":"Future continuous подаёт встречу как уже ожидаемую часть хода событий, а не как новое решение прямо сейчас."},"langs":[{"lang":"en","formula":"Subject + will be + -ing + future time, so + consequence","example":"I will be seeing her tomorrow, so I can ask.","translation":"Завтра я с ней увижусь, так что могу спросить.","examples":[{"text":"We will be passing the station, so we can collect you.","translation_ru":"Мы будем проезжать мимо вокзала, так что можем тебя забрать."},{"text":"He will be working from home, so he can accept the parcel.","translation_ru":"Он будет работать из дома, так что сможет принять посылку."}]},{"lang":"de","formula":"Expected future clause, also + consequence with modal","example":"Ich treffe sie morgen, also kann ich sie fragen.","translation":"Завтра я с ней увижусь, так что могу спросить.","examples":[{"text":"Wir kommen am Bahnhof vorbei, also können wir dich abholen.","translation_ru":"Мы будем проезжать мимо вокзала, так что можем тебя забрать."},{"text":"Er arbeitet von zu Hause aus, also kann er das Paket annehmen.","translation_ru":"Он будет работать из дома, так что сможет принять посылку."}]}]},
-{"id":"GFA019","set_id":"GFA","pattern":"She had already left by the time I arrived.","group_title":"An event completed before a past arrival","level":"B2","logic":{"function":"grammar-mechanics","core":"Past completion before reference point","form":"Had already + participle + by the time","metaphor_ru":"By the time задаёт прошлую границу, к которой действие уже завершилось. Немецкое als с schon и Plusquamperfekt сохраняет порядок событий."},"langs":[{"lang":"en","formula":"Subject + had already + past participle + by the time + past clause","example":"She had already left by the time I arrived.","translation":"К моему приходу она уже ушла.","examples":[{"text":"The shop had already closed by the time we got there.","translation_ru":"Когда мы добрались туда, магазин уже закрылся."},{"text":"They had already agreed by the time I raised the issue.","translation_ru":"К тому моменту, когда я поднял этот вопрос, они уже договорились."}]},{"lang":"de","formula":"Subject + hatte(n)/war(en) schon + participle, als + past clause","example":"Sie war schon gegangen, als ich ankam.","translation":"К моему приходу она уже ушла.","examples":[{"text":"Der Laden hatte schon geschlossen, als wir dort ankamen.","translation_ru":"Когда мы добрались туда, магазин уже закрылся."},{"text":"Sie hatten sich schon geeinigt, als ich das Thema ansprach.","translation_ru":"К тому моменту, когда я поднял этот вопрос, они уже договорились."}]}]},
-{"id":"GFA020","set_id":"GFA","pattern":"Every time I have tried it, it has worked.","group_title":"Repeated experience within an unfinished period","level":"B2","logic":{"function":"grammar-mechanics","core":"Repeated experience up to now","form":"Every time + present perfect; present perfect","metaphor_ru":"Оба действия принадлежат опыту до настоящего, а не одному закрытому эпизоду. Немецкий Perfekt с jedes Mal естественно сохраняет повторяемость."},"langs":[{"lang":"en","formula":"Every time + subject + have/has + participle, subject + have/has + participle","example":"Every time I have tried it, it has worked.","translation":"Каждый раз, когда я это пробовал, всё работало.","examples":[{"text":"Every time we have visited, they have welcomed us warmly.","translation_ru":"Каждый раз, когда мы приезжали, нас тепло встречали."},{"text":"Every time she has asked, he has said no.","translation_ru":"Каждый раз, когда она спрашивала, он отказывал."}]},{"lang":"de","formula":"Jedes Mal, wenn + Perfekt clause, + Perfekt main clause","example":"Jedes Mal, wenn ich es ausprobiert habe, hat es funktioniert.","translation":"Каждый раз, когда я это пробовал, всё работало.","examples":[{"text":"Jedes Mal, wenn wir zu Besuch gekommen sind, haben sie uns herzlich begrüßt.","translation_ru":"Каждый раз, когда мы приезжали, нас тепло встречали."},{"text":"Jedes Mal, wenn sie gefragt hat, hat er Nein gesagt.","translation_ru":"Каждый раз, когда она спрашивала, он отказывал."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFA",
+  "title": "Time and aspect",
+  "title_ru": "Время и вид действия",
+  "patterns": [
+    {
+      "id": "GFA001",
+      "set_id": "GFA",
+      "pattern": "This is the first time I have chaired a meeting.",
+      "group_title": "First experience up to now",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Present first experience",
+        "form": "This is the first time + present perfect",
+        "metaphor_ru": "Опыт оценивается из настоящего: в английском после first time используется present perfect, в немецком естественно настоящее время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "This is the first time + subject + have/has + past participle",
+          "example": "This is the first time I have chaired a meeting.",
+          "translation": "Я впервые веду совещание.",
+          "examples": [
+            {
+              "text": "This is the first time she has travelled alone.",
+              "translation_ru": "Она впервые путешествует одна."
+            },
+            {
+              "text": "This is the first time we have worked together.",
+              "translation_ru": "Мы впервые работаем вместе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das ist das erste Mal, dass + subject + ... + verb",
+          "example": "Das ist das erste Mal, dass ich eine Besprechung leite.",
+          "translation": "Я впервые веду совещание.",
+          "examples": [
+            {
+              "text": "Das ist das erste Mal, dass sie allein reist.",
+              "translation_ru": "Она впервые путешествует одна."
+            },
+            {
+              "text": "Das ist das erste Mal, dass wir zusammenarbeiten.",
+              "translation_ru": "Мы впервые работаем вместе."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Первый опыт сейчас",
+      "title_en": "First experience up to now",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA002",
+      "set_id": "GFA",
+      "pattern": "It was the first time I had spoken on stage.",
+      "group_title": "First experience viewed from the past",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past first experience",
+        "form": "It was the first time + past perfect",
+        "metaphor_ru": "Точка отсчёта находится в прошлом: предыдущий опыт выражается через had + причастие. Немецкий может описывать сам первый случай через Präteritum."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It was the first time + subject + had + past participle",
+          "example": "It was the first time I had spoken on stage.",
+          "translation": "Тогда я впервые выступал на сцене.",
+          "examples": [
+            {
+              "text": "It was the first time she had managed a team.",
+              "translation_ru": "Тогда она впервые руководила командой."
+            },
+            {
+              "text": "It was the first time we had met in person.",
+              "translation_ru": "Тогда мы впервые встретились лично."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es war das erste Mal, dass + subject + ... + past verb",
+          "example": "Es war das erste Mal, dass ich auf einer Bühne sprach.",
+          "translation": "Тогда я впервые выступал на сцене.",
+          "examples": [
+            {
+              "text": "Es war das erste Mal, dass sie ein Team leitete.",
+              "translation_ru": "Тогда она впервые руководила командой."
+            },
+            {
+              "text": "Es war das erste Mal, dass wir uns persönlich trafen.",
+              "translation_ru": "Тогда мы впервые встретились лично."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Первый опыт в прошлом",
+      "title_en": "First experience viewed from the past",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA003",
+      "set_id": "GFA",
+      "pattern": "I had been waiting for an hour when she called.",
+      "group_title": "Duration before a past interruption",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Ongoing past duration",
+        "form": "Past perfect continuous + when",
+        "metaphor_ru": "Показываем, сколько процесс уже длился к событию в прошлом. Немецкий передаёт длительность словами schon и seit, а не отдельным continuous."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had been + -ing + for a duration + when + past simple",
+          "example": "I had been waiting for an hour when she called.",
+          "translation": "Я ждал уже час, когда она позвонила.",
+          "examples": [
+            {
+              "text": "We had been driving for two hours when it started snowing.",
+              "translation_ru": "Мы ехали уже два часа, когда пошёл снег."
+            },
+            {
+              "text": "He had been studying for months when the course was cancelled.",
+              "translation_ru": "Он занимался уже несколько месяцев, когда курс отменили."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + past verb + schon seit + duration, als + past clause",
+          "example": "Ich wartete schon seit einer Stunde, als sie anrief.",
+          "translation": "Я ждал уже час, когда она позвонила.",
+          "examples": [
+            {
+              "text": "Wir waren schon seit zwei Stunden unterwegs, als es anfing zu schneien.",
+              "translation_ru": "Мы ехали уже два часа, когда пошёл снег."
+            },
+            {
+              "text": "Er lernte schon seit Monaten, als der Kurs abgesagt wurde.",
+              "translation_ru": "Он занимался уже несколько месяцев, когда курс отменили."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Длительность до события",
+      "title_en": "Duration before a past interruption",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA004",
+      "set_id": "GFA",
+      "pattern": "By the time you arrive, I will have finished cooking.",
+      "group_title": "Completion before a future reference point",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Future completion deadline",
+        "form": "By the time + present; future perfect",
+        "metaphor_ru": "В английском придаточное времени получает настоящее, хотя речь о будущем. Немецкий часто использует Perfekt без обязательного Futur II."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "By the time + subject + present simple, subject + will have + past participle",
+          "example": "By the time you arrive, I will have finished cooking.",
+          "translation": "К твоему приезду я уже закончу готовить.",
+          "examples": [
+            {
+              "text": "By the time the shop opens, we will have left.",
+              "translation_ru": "К открытию магазина мы уже уедем."
+            },
+            {
+              "text": "By the time she returns, they will have repaired the roof.",
+              "translation_ru": "К её возвращению они уже починят крышу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Bis + future-time clause, subject + haben/sein + ... + participle",
+          "example": "Bis du ankommst, habe ich fertig gekocht.",
+          "translation": "К твоему приезду я уже закончу готовить.",
+          "examples": [
+            {
+              "text": "Bis der Laden öffnet, sind wir schon abgefahren.",
+              "translation_ru": "К открытию магазина мы уже уедем."
+            },
+            {
+              "text": "Bis sie zurückkommt, haben sie das Dach repariert.",
+              "translation_ru": "К её возвращению они уже починят крышу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Завершение к будущему моменту",
+      "title_en": "Completion before a future reference point",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA005",
+      "set_id": "GFA",
+      "pattern": "By June, I will have been working here for five years.",
+      "group_title": "Duration accumulated by a future date",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Future accumulated duration",
+        "form": "Future perfect continuous",
+        "metaphor_ru": "Считаем продолжительность процесса к будущей дате. В немецком будущая дата и seit часто делают отдельное будущее время ненужным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "By + future date, subject + will have been + -ing + for + duration",
+          "example": "By June, I will have been working here for five years.",
+          "translation": "К июню исполнится пять лет, как я здесь работаю.",
+          "examples": [
+            {
+              "text": "By Friday, we will have been travelling for three weeks.",
+              "translation_ru": "К пятнице мы будем путешествовать уже три недели."
+            },
+            {
+              "text": "By midnight, she will have been driving for six hours.",
+              "translation_ru": "К полуночи она будет за рулём уже шесть часов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Future date + verb + subject + schon seit + duration",
+          "example": "Im Juni arbeite ich schon seit fünf Jahren hier.",
+          "translation": "К июню исполнится пять лет, как я здесь работаю.",
+          "examples": [
+            {
+              "text": "Am Freitag sind wir schon seit drei Wochen unterwegs.",
+              "translation_ru": "К пятнице мы будем путешествовать уже три недели."
+            },
+            {
+              "text": "Um Mitternacht sitzt sie schon seit sechs Stunden am Steuer.",
+              "translation_ru": "К полуночи она будет за рулём уже шесть часов."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Будущая накопленная длительность",
+      "title_en": "Duration accumulated by a future date",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA006",
+      "set_id": "GFA",
+      "pattern": "I was about to leave when the phone rang.",
+      "group_title": "An imminent action interrupted",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Interrupted imminent action",
+        "form": "Was about to + verb + when",
+        "metaphor_ru": "Действие было вот-вот готово начаться, но произошло другое событие. Это не утверждение, что первое действие состоялось."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were about to + infinitive + when + past clause",
+          "example": "I was about to leave when the phone rang.",
+          "translation": "Я уже собирался выходить, когда зазвонил телефон.",
+          "examples": [
+            {
+              "text": "She was about to pay when she noticed the mistake.",
+              "translation_ru": "Она уже собиралась платить, когда заметила ошибку."
+            },
+            {
+              "text": "We were about to start when the lights went out.",
+              "translation_ru": "Мы уже собирались начинать, когда погас свет."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + wollte gerade + infinitive, als + past clause",
+          "example": "Ich wollte gerade gehen, als das Telefon klingelte.",
+          "translation": "Я уже собирался выходить, когда зазвонил телефон.",
+          "examples": [
+            {
+              "text": "Sie wollte gerade bezahlen, als sie den Fehler bemerkte.",
+              "translation_ru": "Она уже собиралась платить, когда заметила ошибку."
+            },
+            {
+              "text": "Wir wollten gerade anfangen, als das Licht ausging.",
+              "translation_ru": "Мы уже собирались начинать, когда погас свет."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Прерванное намерение",
+      "title_en": "An imminent action interrupted",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA007",
+      "set_id": "GFA",
+      "pattern": "I had been going to call, but my battery died.",
+      "group_title": "An earlier intention that was abandoned",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Abandoned earlier intention",
+        "form": "Had been going to + verb, but",
+        "metaphor_ru": "Had been going to помещает намерение раньше последующего изменения обстоятельств. Немецкий естественно использует hatte vor или wollte eigentlich."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had been going to + infinitive, but + past clause",
+          "example": "I had been going to call, but my battery died.",
+          "translation": "Я собирался позвонить, но телефон разрядился.",
+          "examples": [
+            {
+              "text": "We had been going to walk, but it started raining.",
+              "translation_ru": "Мы собирались идти пешком, но начался дождь."
+            },
+            {
+              "text": "She had been going to apply, but the deadline had passed.",
+              "translation_ru": "Она собиралась подать заявку, но срок уже истёк."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hatte(n) vor, zu + infinitive, aber + past clause",
+          "example": "Ich hatte vor, anzurufen, aber mein Akku war leer.",
+          "translation": "Я собирался позвонить, но телефон разрядился.",
+          "examples": [
+            {
+              "text": "Wir hatten vor, zu Fuß zu gehen, aber es fing an zu regnen.",
+              "translation_ru": "Мы собирались идти пешком, но начался дождь."
+            },
+            {
+              "text": "Sie hatte vor, sich zu bewerben, aber die Frist war bereits abgelaufen.",
+              "translation_ru": "Она собиралась подать заявку, но срок уже истёк."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Несостоявшееся намерение",
+      "title_en": "An earlier intention that was abandoned",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA008",
+      "set_id": "GFA",
+      "pattern": "I was to learn the truth years later.",
+      "group_title": "A later event seen from the past",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Retrospective future in the past",
+        "form": "Was to + infinitive",
+        "metaphor_ru": "Рассказчик знает, что случилось позднее. Здесь was to — не обязанность, а повествовательное «предстояло»; немецкое sollte имеет такую же функцию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were to + infinitive + later-time expression",
+          "example": "I was to learn the truth years later.",
+          "translation": "Правду мне предстояло узнать лишь годы спустя.",
+          "examples": [
+            {
+              "text": "They were to meet again the following winter.",
+              "translation_ru": "Им предстояло снова встретиться следующей зимой."
+            },
+            {
+              "text": "This decision was to change her life.",
+              "translation_ru": "Этому решению предстояло изменить её жизнь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sollte(n) + ... + infinitive",
+          "example": "Ich sollte die Wahrheit erst Jahre später erfahren.",
+          "translation": "Правду мне предстояло узнать лишь годы спустя.",
+          "examples": [
+            {
+              "text": "Sie sollten sich im folgenden Winter wiedersehen.",
+              "translation_ru": "Им предстояло снова встретиться следующей зимой."
+            },
+            {
+              "text": "Diese Entscheidung sollte ihr Leben verändern.",
+              "translation_ru": "Этому решению предстояло изменить её жизнь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Будущее глазами рассказчика",
+      "title_en": "A later event seen from the past",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA009",
+      "set_id": "GFA",
+      "pattern": "She was to have spoken first, but her train was delayed.",
+      "group_title": "A planned past event that did not happen",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unfulfilled scheduled action",
+        "form": "Was to have + past participle",
+        "metaphor_ru": "Формальный английский каркас для несостоявшегося плана. Немецкий перевод использует sollte eigentlich; причина отмены делает нереализованность явной."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + was/were to have + past participle, but + past clause",
+          "example": "She was to have spoken first, but her train was delayed.",
+          "translation": "Она должна была выступать первой, но её поезд задержался.",
+          "examples": [
+            {
+              "text": "We were to have met on Monday, but he was ill.",
+              "translation_ru": "Мы должны были встретиться в понедельник, но он заболел."
+            },
+            {
+              "text": "The museum was to have opened in May, but repairs took longer.",
+              "translation_ru": "Музей должен был открыться в мае, но ремонт затянулся."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sollte(n) eigentlich + infinitive, aber + past clause",
+          "example": "Sie sollte eigentlich als Erste sprechen, aber ihr Zug hatte Verspätung.",
+          "translation": "Она должна была выступать первой, но её поезд задержался.",
+          "examples": [
+            {
+              "text": "Wir sollten uns eigentlich am Montag treffen, aber er war krank.",
+              "translation_ru": "Мы должны были встретиться в понедельник, но он заболел."
+            },
+            {
+              "text": "Das Museum sollte eigentlich im Mai öffnen, aber die Reparaturen dauerten länger.",
+              "translation_ru": "Музей должен был открыться в мае, но ремонт затянулся."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Несостоявшийся план",
+      "title_en": "A planned past event that did not happen",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA010",
+      "set_id": "GFA",
+      "pattern": "I have yet to receive a reply.",
+      "group_title": "Something still not completed",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Outstanding action",
+        "form": "Have yet to + infinitive",
+        "metaphor_ru": "Действие пока не произошло, но остаётся ожидаемым. Это не have to в значении обязанности."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + have/has yet to + infinitive",
+          "example": "I have yet to receive a reply.",
+          "translation": "Я пока не получил ответа.",
+          "examples": [
+            {
+              "text": "She has yet to choose a date.",
+              "translation_ru": "Она пока не выбрала дату."
+            },
+            {
+              "text": "We have yet to test the new version.",
+              "translation_ru": "Мы пока не проверили новую версию."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + haben + ... + noch nicht + past participle",
+          "example": "Ich habe noch keine Antwort erhalten.",
+          "translation": "Я пока не получил ответа.",
+          "examples": [
+            {
+              "text": "Sie hat noch keinen Termin gewählt.",
+              "translation_ru": "Она пока не выбрала дату."
+            },
+            {
+              "text": "Wir haben die neue Version noch nicht getestet.",
+              "translation_ru": "Мы пока не проверили новую версию."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ещё не выполненное действие",
+      "title_en": "Something still not completed",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA011",
+      "set_id": "GFA",
+      "pattern": "It has been three years since I last saw her.",
+      "group_title": "Time elapsed since the last occurrence",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Elapsed time since last event",
+        "form": "It has been + duration + since + past simple",
+        "metaphor_ru": "Считаем время от последнего случая до настоящего. Last относится к последнему событию, а не к прошлому календарному периоду."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It has been + duration + since + subject + last + past verb",
+          "example": "It has been three years since I last saw her.",
+          "translation": "Прошло три года с тех пор, как я видел её в последний раз.",
+          "examples": [
+            {
+              "text": "It has been a week since we last spoke.",
+              "translation_ru": "Прошла неделя с нашего последнего разговора."
+            },
+            {
+              "text": "It has been months since he last took a day off.",
+              "translation_ru": "Прошло уже несколько месяцев с тех пор, как он последний раз брал выходной."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es ist + duration + her, dass + subject + zuletzt + past clause",
+          "example": "Es ist drei Jahre her, dass ich sie zuletzt gesehen habe.",
+          "translation": "Прошло три года с тех пор, как я видел её в последний раз.",
+          "examples": [
+            {
+              "text": "Es ist eine Woche her, dass wir zuletzt miteinander gesprochen haben.",
+              "translation_ru": "Прошла неделя с нашего последнего разговора."
+            },
+            {
+              "text": "Es ist Monate her, dass er zuletzt einen Tag freigenommen hat.",
+              "translation_ru": "Прошло уже несколько месяцев с тех пор, как он последний раз брал выходной."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Время с последнего случая",
+      "title_en": "Time elapsed since the last occurrence",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA012",
+      "set_id": "GFA",
+      "pattern": "I haven't seen her since she moved away.",
+      "group_title": "A negative state extending from a past event",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "No occurrence since a starting event",
+        "form": "Negative present perfect + since + past event",
+        "metaphor_ru": "Главная часть охватывает период до настоящего, since задаёт начало. Немецкое seitdem соединяет отрицательный Perfekt с событием-границей."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + have/has not + past participle + since + past clause",
+          "example": "I haven't seen her since she moved away.",
+          "translation": "Я не видел её с тех пор, как она переехала.",
+          "examples": [
+            {
+              "text": "We haven't used the car since the bridge closed.",
+              "translation_ru": "Мы не пользовались машиной с тех пор, как закрыли мост."
+            },
+            {
+              "text": "He hasn't complained since we changed the schedule.",
+              "translation_ru": "Он не жаловался с тех пор, как мы изменили расписание."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + haben + ... + nicht mehr + participle, seitdem + past clause",
+          "example": "Ich habe sie nicht mehr gesehen, seitdem sie weggezogen ist.",
+          "translation": "Я не видел её с тех пор, как она переехала.",
+          "examples": [
+            {
+              "text": "Wir haben das Auto nicht mehr benutzt, seitdem die Brücke gesperrt wurde.",
+              "translation_ru": "Мы не пользовались машиной с тех пор, как закрыли мост."
+            },
+            {
+              "text": "Er hat sich nicht mehr beschwert, seitdem wir den Zeitplan geändert haben.",
+              "translation_ru": "Он не жаловался с тех пор, как мы изменили расписание."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отсутствие события с прошлого момента",
+      "title_en": "A negative state extending from a past event",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA013",
+      "set_id": "GFA",
+      "pattern": "I will call as soon as I have checked the figures.",
+      "group_title": "Future action after confirmed completion",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Completed prerequisite in a time clause",
+        "form": "As soon as + present perfect",
+        "metaphor_ru": "Present perfect после as soon as подчёркивает завершение проверки до звонка. Will не переносится в придаточное времени."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + will + infinitive + as soon as + subject + have/has + past participle",
+          "example": "I will call as soon as I have checked the figures.",
+          "translation": "Я позвоню, как только проверю цифры.",
+          "examples": [
+            {
+              "text": "We will leave as soon as everyone has eaten.",
+              "translation_ru": "Мы уйдём, как только все поедят."
+            },
+            {
+              "text": "She will reply as soon as she has read the report.",
+              "translation_ru": "Она ответит, как только прочитает отчёт."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + sobald + subject + ... + participle + haben/sein",
+          "example": "Ich rufe an, sobald ich die Zahlen geprüft habe.",
+          "translation": "Я позвоню, как только проверю цифры.",
+          "examples": [
+            {
+              "text": "Wir gehen los, sobald alle gegessen haben.",
+              "translation_ru": "Мы уйдём, как только все поедят."
+            },
+            {
+              "text": "Sie antwortet, sobald sie den Bericht gelesen hat.",
+              "translation_ru": "Она ответит, как только прочитает отчёт."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Завершённое предварительное действие",
+      "title_en": "Future action after confirmed completion",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA014",
+      "set_id": "GFA",
+      "pattern": "It won't be long before they notice.",
+      "group_title": "A short interval before an expected event",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Expected event soon",
+        "form": "It will not be long before + present",
+        "metaphor_ru": "Буквальное «пройдёт немного времени, прежде чем» означает «скоро». В английском после before — настоящее время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It will not be long before + subject + present simple",
+          "example": "It won't be long before they notice.",
+          "translation": "Они скоро заметят.",
+          "examples": [
+            {
+              "text": "It won't be long before she returns.",
+              "translation_ru": "Она скоро вернётся."
+            },
+            {
+              "text": "It won't be long before we need a bigger room.",
+              "translation_ru": "Скоро нам понадобится комната побольше."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es dauert nicht mehr lange, bis + subject + ... + verb",
+          "example": "Es dauert nicht mehr lange, bis sie es bemerken.",
+          "translation": "Они скоро заметят.",
+          "examples": [
+            {
+              "text": "Es dauert nicht mehr lange, bis sie zurückkommt.",
+              "translation_ru": "Она скоро вернётся."
+            },
+            {
+              "text": "Es dauert nicht mehr lange, bis wir einen größeren Raum brauchen.",
+              "translation_ru": "Скоро нам понадобится комната побольше."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Скорое ожидаемое событие",
+      "title_en": "A short interval before an expected event",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA015",
+      "set_id": "GFA",
+      "pattern": "I hadn't realised how late it was until I checked my phone.",
+      "group_title": "Awareness beginning at a later point",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Delayed awareness",
+        "form": "Negative past perfect + until",
+        "metaphor_ru": "До обозначенного момента понимания не было. Немецкое erst als естественно выражает то же изменение осознания."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had not + perception participle + embedded clause + until + past clause",
+          "example": "I hadn't realised how late it was until I checked my phone.",
+          "translation": "Я понял, как поздно, только когда посмотрел на телефон.",
+          "examples": [
+            {
+              "text": "She hadn't noticed the error until we pointed it out.",
+              "translation_ru": "Она заметила ошибку только после того, как мы на неё указали."
+            },
+            {
+              "text": "We hadn't understood the risk until the system failed.",
+              "translation_ru": "Мы поняли риск только тогда, когда система отказала."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + past verb + erst, als + past clause",
+          "example": "Ich merkte erst, wie spät es war, als ich auf mein Handy schaute.",
+          "translation": "Я понял, как поздно, только когда посмотрел на телефон.",
+          "examples": [
+            {
+              "text": "Sie bemerkte den Fehler erst, als wir sie darauf hinwiesen.",
+              "translation_ru": "Она заметила ошибку только после того, как мы на неё указали."
+            },
+            {
+              "text": "Wir verstanden das Risiko erst, als das System ausfiel.",
+              "translation_ru": "Мы поняли риск только тогда, когда система отказала."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Запоздалое осознание",
+      "title_en": "Awareness beginning at a later point",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA016",
+      "set_id": "GFA",
+      "pattern": "She is always leaving the window open.",
+      "group_title": "Repeated behaviour with a speaker reaction",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Evaluated repetition",
+        "form": "Always + present continuous",
+        "metaphor_ru": "Continuous с always часто передаёт раздражение или другую оценку, а не нейтральную частоту. Немецкий передаёт её через ständig и контекст."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + am/is/are always + -ing",
+          "example": "She is always leaving the window open.",
+          "translation": "Она вечно оставляет окно открытым.",
+          "examples": [
+            {
+              "text": "You are always interrupting me.",
+              "translation_ru": "Ты вечно меня перебиваешь."
+            },
+            {
+              "text": "He is always finding something to complain about.",
+              "translation_ru": "Он вечно находит, на что пожаловаться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + verb + ständig + rest of clause",
+          "example": "Sie lässt ständig das Fenster offen.",
+          "translation": "Она вечно оставляет окно открытым.",
+          "examples": [
+            {
+              "text": "Du unterbrichst mich ständig.",
+              "translation_ru": "Ты вечно меня перебиваешь."
+            },
+            {
+              "text": "Er findet ständig etwas, worüber er sich beschweren kann.",
+              "translation_ru": "Он вечно находит, на что пожаловаться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Повторение с эмоциональной оценкой",
+      "title_en": "Repeated behaviour with a speaker reaction",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA017",
+      "set_id": "GFA",
+      "pattern": "I was wondering whether you could help.",
+      "group_title": "Past progressive for a tentative present request",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Tentative present request",
+        "form": "Was wondering whether + could",
+        "metaphor_ru": "Форма прошлого смягчает просьбу сейчас, а не обязательно описывает прошлое размышление. Немецкий использует Konjunktiv II."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I was wondering whether + subject + could + infinitive",
+          "example": "I was wondering whether you could help.",
+          "translation": "Я хотел бы узнать, не могли бы вы помочь.",
+          "examples": [
+            {
+              "text": "I was wondering whether we could move the meeting.",
+              "translation_ru": "Я хотел бы узнать, не могли бы мы перенести встречу."
+            },
+            {
+              "text": "I was wondering whether I could ask a question.",
+              "translation_ru": "Я хотел бы узнать, можно ли задать вопрос."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich wollte fragen, ob + subject + ... + infinitive + könnte(n)",
+          "example": "Ich wollte fragen, ob Sie helfen könnten.",
+          "translation": "Я хотел бы узнать, не могли бы вы помочь.",
+          "examples": [
+            {
+              "text": "Ich wollte fragen, ob wir die Besprechung verschieben könnten.",
+              "translation_ru": "Я хотел бы узнать, не могли бы мы перенести встречу."
+            },
+            {
+              "text": "Ich wollte fragen, ob ich eine Frage stellen könnte.",
+              "translation_ru": "Я хотел бы узнать, можно ли задать вопрос."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вежливая предварительная просьба",
+      "title_en": "Past progressive for a tentative present request",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA018",
+      "set_id": "GFA",
+      "pattern": "I will be seeing her tomorrow, so I can ask.",
+      "group_title": "A future action occurring in the normal course of events",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Expected future arrangement as context",
+        "form": "Future continuous + consequence",
+        "metaphor_ru": "Future continuous подаёт встречу как уже ожидаемую часть хода событий, а не как новое решение прямо сейчас."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + will be + -ing + future time, so + consequence",
+          "example": "I will be seeing her tomorrow, so I can ask.",
+          "translation": "Завтра я с ней увижусь, так что могу спросить.",
+          "examples": [
+            {
+              "text": "We will be passing the station, so we can collect you.",
+              "translation_ru": "Мы будем проезжать мимо вокзала, так что можем тебя забрать."
+            },
+            {
+              "text": "He will be working from home, so he can accept the parcel.",
+              "translation_ru": "Он будет работать из дома, так что сможет принять посылку."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Expected future clause, also + consequence with modal",
+          "example": "Ich treffe sie morgen, also kann ich sie fragen.",
+          "translation": "Завтра я с ней увижусь, так что могу спросить.",
+          "examples": [
+            {
+              "text": "Wir kommen am Bahnhof vorbei, also können wir dich abholen.",
+              "translation_ru": "Мы будем проезжать мимо вокзала, так что можем тебя забрать."
+            },
+            {
+              "text": "Er arbeitet von zu Hause aus, also kann er das Paket annehmen.",
+              "translation_ru": "Он будет работать из дома, так что сможет принять посылку."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ожидаемый ход будущих событий",
+      "title_en": "A future action occurring in the normal course of events",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA019",
+      "set_id": "GFA",
+      "pattern": "She had already left by the time I arrived.",
+      "group_title": "An event completed before a past arrival",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Past completion before reference point",
+        "form": "Had already + participle + by the time",
+        "metaphor_ru": "By the time задаёт прошлую границу, к которой действие уже завершилось. Немецкое als с schon и Plusquamperfekt сохраняет порядок событий."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had already + past participle + by the time + past clause",
+          "example": "She had already left by the time I arrived.",
+          "translation": "К моему приходу она уже ушла.",
+          "examples": [
+            {
+              "text": "The shop had already closed by the time we got there.",
+              "translation_ru": "Когда мы добрались туда, магазин уже закрылся."
+            },
+            {
+              "text": "They had already agreed by the time I raised the issue.",
+              "translation_ru": "К тому моменту, когда я поднял этот вопрос, они уже договорились."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hatte(n)/war(en) schon + participle, als + past clause",
+          "example": "Sie war schon gegangen, als ich ankam.",
+          "translation": "К моему приходу она уже ушла.",
+          "examples": [
+            {
+              "text": "Der Laden hatte schon geschlossen, als wir dort ankamen.",
+              "translation_ru": "Когда мы добрались туда, магазин уже закрылся."
+            },
+            {
+              "text": "Sie hatten sich schon geeinigt, als ich das Thema ansprach.",
+              "translation_ru": "К тому моменту, когда я поднял этот вопрос, они уже договорились."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Завершение до прошлого момента",
+      "title_en": "An event completed before a past arrival",
+      "group_id": "GFA"
+    },
+    {
+      "id": "GFA020",
+      "set_id": "GFA",
+      "pattern": "Every time I have tried it, it has worked.",
+      "group_title": "Repeated experience within an unfinished period",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Repeated experience up to now",
+        "form": "Every time + present perfect; present perfect",
+        "metaphor_ru": "Оба действия принадлежат опыту до настоящего, а не одному закрытому эпизоду. Немецкий Perfekt с jedes Mal естественно сохраняет повторяемость."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Every time + subject + have/has + participle, subject + have/has + participle",
+          "example": "Every time I have tried it, it has worked.",
+          "translation": "Каждый раз, когда я это пробовал, всё работало.",
+          "examples": [
+            {
+              "text": "Every time we have visited, they have welcomed us warmly.",
+              "translation_ru": "Каждый раз, когда мы приезжали, нас тепло встречали."
+            },
+            {
+              "text": "Every time she has asked, he has said no.",
+              "translation_ru": "Каждый раз, когда она спрашивала, он отказывал."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jedes Mal, wenn + Perfekt clause, + Perfekt main clause",
+          "example": "Jedes Mal, wenn ich es ausprobiert habe, hat es funktioniert.",
+          "translation": "Каждый раз, когда я это пробовал, всё работало.",
+          "examples": [
+            {
+              "text": "Jedes Mal, wenn wir zu Besuch gekommen sind, haben sie uns herzlich begrüßt.",
+              "translation_ru": "Каждый раз, когда мы приезжали, нас тепло встречали."
+            },
+            {
+              "text": "Jedes Mal, wenn sie gefragt hat, hat er Nein gesagt.",
+              "translation_ru": "Каждый раз, когда она спрашивала, он отказывал."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Повторяющийся опыт до настоящего",
+      "title_en": "Repeated experience within an unfinished period",
+      "group_id": "GFA"
+    }
+  ]
+}

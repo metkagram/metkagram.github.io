@@ -1,22 +1,1008 @@
-[
-{"id":"GFM001","set_id":"GFM","pattern":"A colleague of mine recommended this course.","group_title":"One member of someone's circle without claiming uniqueness","level":"B2","logic":{"function":"grammar-mechanics","core":"Double genitive after an indefinite noun","form":"A + noun + of + possessive pronoun/genitive","metaphor_ru":"A colleague of mine — один из моих коллег. После of нужен mine/hers, не me/her; с именем возможен John's."},"langs":[{"lang":"en","formula":"A/an + noun + of + mine/yours/his/hers/ours/theirs/name's + predicate","example":"A colleague of mine recommended this course.","translation":"Один мой коллега порекомендовал этот курс.","examples":[{"text":"A friend of hers offered to help.","translation_ru":"Один её друг предложил помощь."},{"text":"A neighbour of John's found the missing parcel.","translation_ru":"Один из соседей Джона нашёл пропавшую посылку."}]},{"lang":"de","formula":"Ein/eine + noun + von + dative person + predicate","example":"Ein Kollege von mir empfahl diesen Kurs.","translation":"Один мой коллега порекомендовал этот курс.","examples":[{"text":"Ein Freund von ihr bot seine Hilfe an.","translation_ru":"Один её друг предложил помощь."},{"text":"Ein Nachbar von John fand das vermisste Paket.","translation_ru":"Один из соседей Джона нашёл пропавшую посылку."}]}]},
-{"id":"GFM002","set_id":"GFM","pattern":"We need another chair for the visitor.","group_title":"An additional or different single member","level":"B2","logic":{"function":"grammar-mechanics","core":"Another with a singular count noun","form":"Another + singular noun","metaphor_ru":"Another объединяет an и other: ещё один или другой. Не добавляйте второй артикль и не ставьте обычное множественное chairs сразу после another."},"langs":[{"lang":"en","formula":"Main clause + another + singular count noun","example":"We need another chair for the visitor.","translation":"Нам нужен ещё один стул для посетителя.","examples":[{"text":"She suggested another route to avoid the traffic.","translation_ru":"Она предложила другой маршрут, чтобы объехать пробки."},{"text":"I would like another example before we move on.","translation_ru":"Я хотел бы ещё один пример, прежде чем мы пойдём дальше."}]},{"lang":"de","formula":"Main clause + ein weiterer/ein anderer + singular noun","example":"Wir brauchen einen weiteren Stuhl für den Besucher.","translation":"Нам нужен ещё один стул для посетителя.","examples":[{"text":"Sie schlug eine andere Route vor, um den Stau zu umgehen.","translation_ru":"Она предложила другой маршрут, чтобы объехать пробки."},{"text":"Ich hätte gern noch ein Beispiel, bevor wir weitermachen.","translation_ru":"Я хотел бы ещё один пример, прежде чем мы пойдём дальше."}]}]},
-{"id":"GFM003","set_id":"GFM","pattern":"We should consider other options before deciding.","group_title":"Unspecified additional members of a plural category","level":"B2","logic":{"function":"grammar-mechanics","core":"Other as a determiner before plural nouns","form":"Other + plural noun","metaphor_ru":"Перед существительным other не получает -s: other options, не others options. Здесь группа не ограничена заранее названным остатком."},"langs":[{"lang":"en","formula":"Main clause + other + plural count noun","example":"We should consider other options before deciding.","translation":"Прежде чем решать, нам стоит рассмотреть другие варианты.","examples":[{"text":"She asked other teachers how they handled the issue.","translation_ru":"Она спросила других преподавателей, как они решали этот вопрос."},{"text":"I keep other copies in a separate folder.","translation_ru":"Другие копии я храню в отдельной папке."}]},{"lang":"de","formula":"Main clause + andere + plural noun","example":"Wir sollten andere Optionen prüfen, bevor wir entscheiden.","translation":"Прежде чем решать, нам стоит рассмотреть другие варианты.","examples":[{"text":"Sie fragte andere Lehrkräfte, wie sie mit dem Problem umgingen.","translation_ru":"Она спросила других преподавателей, как они решали этот вопрос."},{"text":"Andere Kopien bewahre ich in einem separaten Ordner auf.","translation_ru":"Другие копии я храню в отдельной папке."}]}]},
-{"id":"GFM004","set_id":"GFM","pattern":"One door is locked, but the other door is open.","group_title":"The remaining member of an explicitly bounded pair","level":"B2","logic":{"function":"grammar-mechanics","core":"The other as the unique remainder of two","form":"One + noun ..., the other + noun ...","metaphor_ru":"The other — второй, оставшийся из двух. Another предложил бы ещё один неопределённый вариант и не сохранял бы тот же ограниченный набор."},"langs":[{"lang":"en","formula":"One + singular noun + predicate, but/and + the other + singular noun + predicate","example":"One door is locked, but the other door is open.","translation":"Одна дверь заперта, а другая открыта.","examples":[{"text":"One applicant can start now; the other applicant needs a month.","translation_ru":"Один кандидат может начать сейчас, а другому нужен месяц."},{"text":"One key is mine, and the other key is yours.","translation_ru":"Один ключ мой, а другой твой."}]},{"lang":"de","formula":"Ein/eine + noun ..., der/die/das andere + noun ...","example":"Eine Tür ist verschlossen, aber die andere Tür ist offen.","translation":"Одна дверь заперта, а другая открыта.","examples":[{"text":"Ein Bewerber kann sofort anfangen; der andere Bewerber braucht einen Monat.","translation_ru":"Один кандидат может начать сейчас, а другому нужен месяц."},{"text":"Ein Schlüssel gehört mir, und der andere Schlüssel gehört dir.","translation_ru":"Один ключ мой, а другой твой."}]}]},
-{"id":"GFM005","set_id":"GFM","pattern":"Some people prefer written instructions; others prefer a demonstration.","group_title":"Contrasting groups without repeating the noun","level":"B2","logic":{"function":"grammar-mechanics","core":"Pronominal others contrasted with some","form":"Some + plural noun ..., others + predicate","metaphor_ru":"Others уже заменяет people, поэтому существительное после него не ставится. The others означало бы весь конкретный остаток группы, а не просто других людей."},"langs":[{"lang":"en","formula":"Some + plural noun + predicate; others + contrasting predicate","example":"Some people prefer written instructions; others prefer a demonstration.","translation":"Одни предпочитают письменные инструкции, другие — показ.","examples":[{"text":"Some seats face the window; others face the aisle.","translation_ru":"Одни места обращены к окну, другие — к проходу."},{"text":"Some questions need a short answer; others need more context.","translation_ru":"Одним вопросам достаточно короткого ответа, другим нужен контекст."}]},{"lang":"de","formula":"Manche + plural noun + predicate; andere + contrasting predicate","example":"Manche Menschen bevorzugen schriftliche Anweisungen; andere bevorzugen eine Vorführung.","translation":"Одни предпочитают письменные инструкции, другие — показ.","examples":[{"text":"Manche Sitze sind zum Fenster ausgerichtet; andere zum Gang.","translation_ru":"Одни места обращены к окну, другие — к проходу."},{"text":"Manche Fragen brauchen eine kurze Antwort; andere brauchen mehr Kontext.","translation_ru":"Одним вопросам достаточно короткого ответа, другим нужен контекст."}]}]},
-{"id":"GFM006","set_id":"GFM","pattern":"It was such a useful example that I wrote it down.","group_title":"Degree expressed through a singular count noun phrase","level":"B2","logic":{"function":"grammar-mechanics","core":"Such a singular count noun with a result clause","form":"Such a/an + adjective + singular noun + that","metaphor_ru":"Порядок such a useful example, не a such и не so useful example. Единственное исчисляемое существительное требует a/an."},"langs":[{"lang":"en","formula":"Main clause + such a/an + adjective + singular count noun + that + result","example":"It was such a useful example that I wrote it down.","translation":"Это был настолько полезный пример, что я его записал.","examples":[{"text":"She gave such a clear answer that nobody asked again.","translation_ru":"Она дала настолько ясный ответ, что никто не переспросил."},{"text":"We had such a long wait that we missed lunch.","translation_ru":"Мы ждали так долго, что пропустили обед."}]},{"lang":"de","formula":"Main clause + ein so + adjective + singular noun, dass + result","example":"Es war ein so nützliches Beispiel, dass ich es aufschrieb.","translation":"Это был настолько полезный пример, что я его записал.","examples":[{"text":"Sie gab eine so klare Antwort, dass niemand noch einmal fragte.","translation_ru":"Она дала настолько ясный ответ, что никто не переспросил."},{"text":"Wir hatten eine so lange Wartezeit, dass wir das Mittagessen verpassten.","translation_ru":"Мы ждали так долго, что пропустили обед."}]}]},
-{"id":"GFM007","set_id":"GFM","pattern":"They gave us such useful advice that we changed the plan.","group_title":"Such before mass nouns and plurals without an indefinite article","level":"B2","logic":{"function":"grammar-mechanics","core":"Such without a before mass or plural nouns","form":"Such + adjective + mass/plural noun + that","metaphor_ru":"Advice неисчисляемо: such useful advice, не such a useful advice. С plural questions артикль a также не появляется."},"langs":[{"lang":"en","formula":"Main clause + such + adjective + mass/plural noun + that + result","example":"They gave us such useful advice that we changed the plan.","translation":"Они дали нам настолько полезный совет, что мы изменили план.","examples":[{"text":"She asked such thoughtful questions that the discussion changed direction.","translation_ru":"Она задала настолько продуманные вопросы, что обсуждение пошло в другую сторону."},{"text":"We had such good weather that we stayed another day.","translation_ru":"Погода была настолько хорошей, что мы остались ещё на день."}]},{"lang":"de","formula":"Main clause + so + adjective + natural noun phrase, dass + result","example":"Sie gaben uns so nützliche Ratschläge, dass wir den Plan änderten.","translation":"Они дали нам настолько полезный совет, что мы изменили план.","examples":[{"text":"Sie stellte so durchdachte Fragen, dass die Diskussion eine andere Richtung nahm.","translation_ru":"Она задала настолько продуманные вопросы, что обсуждение пошло в другую сторону."},{"text":"Wir hatten so gutes Wetter, dass wir noch einen Tag blieben.","translation_ru":"Погода была настолько хорошей, что мы остались ещё на день."}]}]},
-{"id":"GFM008","set_id":"GFM","pattern":"It is too important a decision to rush.","group_title":"Too placed before an adjective and indefinite article","level":"C1","logic":{"function":"grammar-mechanics","core":"Pre-article degree modifier with too","form":"Too + adjective + a/an + noun + to-infinitive","metaphor_ru":"В этом более формальном порядке артикль стоит после прилагательного: too important a decision. Обычная альтернатива: the decision is too important to rush."},"langs":[{"lang":"en","formula":"It/That + be + too + adjective + a/an + singular noun + to-infinitive","example":"It is too important a decision to rush.","translation":"Это слишком важное решение, чтобы принимать его в спешке.","examples":[{"text":"That is too high a price to pay for convenience.","translation_ru":"Это слишком высокая цена за удобство."},{"text":"It was too good an opportunity to ignore.","translation_ru":"Это была слишком хорошая возможность, чтобы её проигнорировать."}]},{"lang":"de","formula":"Subject + sein + ein/eine zu + adjective + noun, um + zu-infinitive","example":"Das ist eine zu wichtige Entscheidung, um sie zu überstürzen.","translation":"Это слишком важное решение, чтобы принимать его в спешке.","examples":[{"text":"Das ist ein zu hoher Preis für Bequemlichkeit.","translation_ru":"Это слишком высокая цена за удобство."},{"text":"Das war eine zu gute Gelegenheit, um sie zu ignorieren.","translation_ru":"Это была слишком хорошая возможность, чтобы её проигнорировать."}]}]},
-{"id":"GFM009","set_id":"GFM","pattern":"It is as good a reason as any to begin.","group_title":"An equality comparison built around a singular noun","level":"C1","logic":{"function":"grammar-mechanics","core":"Pre-article adjective in an as-as noun comparison","form":"As + adjective + a/an + noun + as","metaphor_ru":"Порядок as good a reason as. Это сравнение качества причины, а не количества; форма отличается от such a good reason."},"langs":[{"lang":"en","formula":"Subject + be + as + adjective + a/an + singular noun + as + comparison target","example":"It is as good a reason as any to begin.","translation":"Это не худший повод начать.","examples":[{"text":"She is as careful a driver as her brother.","translation_ru":"Она такой же осторожный водитель, как её брат."},{"text":"This is as clear an explanation as we can give.","translation_ru":"Это настолько ясное объяснение, насколько мы можем дать."}]},{"lang":"de","formula":"Subject + sein + ein/eine ebenso/so + adjective + noun + wie + target","example":"Das ist ein ebenso guter Grund anzufangen wie jeder andere.","translation":"Это не худший повод начать.","examples":[{"text":"Sie ist eine ebenso vorsichtige Fahrerin wie ihr Bruder.","translation_ru":"Она такой же осторожный водитель, как её брат."},{"text":"Das ist eine so klare Erklärung, wie wir sie geben können.","translation_ru":"Это настолько ясное объяснение, насколько мы можем дать."}]}]},
-{"id":"GFM010","set_id":"GFM","pattern":"What a difference one clear example makes!","group_title":"An exclamation foregrounding a noun phrase","level":"B2","logic":{"function":"grammar-mechanics","core":"What-exclamation with ordinary subject-verb order","form":"What a/an + noun + subject + verb!","metaphor_ru":"Это восклицание, не вопрос. Поэтому после вынесенного дополнения сохраняется one example makes, без does."},"langs":[{"lang":"en","formula":"What a/an + singular noun phrase + subject + predicate!","example":"What a difference one clear example makes!","translation":"Как же многое меняет один понятный пример!","examples":[{"text":"What a long way we have come!","translation_ru":"Какой долгий путь мы прошли!"},{"text":"What an impression her speech made!","translation_ru":"Какое впечатление произвела её речь!"}]},{"lang":"de","formula":"Was für ein/eine + noun + clause or natural exclamation","example":"Was für einen Unterschied ein klares Beispiel macht!","translation":"Как же многое меняет один понятный пример!","examples":[{"text":"Was für einen langen Weg wir zurückgelegt haben!","translation_ru":"Какой долгий путь мы прошли!"},{"text":"Was für einen Eindruck ihre Rede gemacht hat!","translation_ru":"Какое впечатление произвела её речь!"}]}]},
-{"id":"GFM011","set_id":"GFM","pattern":"The injured were taken to a nearby hospital.","group_title":"An adjective naming a group of people","level":"B2","logic":{"function":"grammar-mechanics","core":"The plus adjective with plural human reference","form":"The + adjective + plural predicate","metaphor_ru":"The injured обозначает пострадавших как группу и требует were. Не используйте a injured для одного человека: нужен injured person."},"langs":[{"lang":"en","formula":"The + human-group adjective + plural predicate","example":"The injured were taken to a nearby hospital.","translation":"Пострадавших отвезли в ближайшую больницу.","examples":[{"text":"The young and the old both joined the discussion.","translation_ru":"И молодые, и пожилые присоединились к обсуждению."},{"text":"The unemployed were offered places on the training course.","translation_ru":"Безработным предложили места на учебном курсе."}]},{"lang":"de","formula":"Die + capitalised nominalised adjective in plural + plural predicate","example":"Die Verletzten wurden in ein nahe gelegenes Krankenhaus gebracht.","translation":"Пострадавших отвезли в ближайшую больницу.","examples":[{"text":"Die Jungen und die Alten beteiligten sich beide an der Diskussion.","translation_ru":"И молодые, и пожилые присоединились к обсуждению."},{"text":"Den Arbeitslosen wurden Plätze in dem Schulungskurs angeboten.","translation_ru":"Безработным предложили места на учебном курсе."}]}]},
-{"id":"GFM012","set_id":"GFM","pattern":"We scheduled a fifteen-minute break.","group_title":"A measure used as a compound adjective","level":"B2","logic":{"function":"grammar-mechanics","core":"Singular measure noun in a pre-nominal compound","form":"A + number-measure + noun","metaphor_ru":"Перед существительным minute остаётся в единственном числе: a fifteen-minute break. В обычном измерении после существительного было бы fifteen minutes."},"langs":[{"lang":"en","formula":"Main clause + a/an + number-singular measure + head noun","example":"We scheduled a fifteen-minute break.","translation":"Мы запланировали пятнадцатиминутный перерыв.","examples":[{"text":"She signed a two-year agreement.","translation_ru":"Она подписала двухлетнее соглашение."},{"text":"It is a five-kilometre walk from the station.","translation_ru":"От вокзала пять километров пешком."}]},{"lang":"de","formula":"Main clause + inflected measure adjective/compound + noun","example":"Wir planten eine fünfzehnminütige Pause.","translation":"Мы запланировали пятнадцатиминутный перерыв.","examples":[{"text":"Sie unterschrieb eine zweijährige Vereinbarung.","translation_ru":"Она подписала двухлетнее соглашение."},{"text":"Vom Bahnhof ist es ein fünf Kilometer langer Fußweg.","translation_ru":"От вокзала пять километров пешком."}]}]},
-{"id":"GFM013","set_id":"GFM","pattern":"We need two weeks' notice to arrange the visit.","group_title":"A duration expressed as a plural genitive","level":"B2","logic":{"function":"grammar-mechanics","core":"Plural time genitive before a noun","form":"Number + plural time unit + apostrophe + noun","metaphor_ru":"В two weeks' notice апостроф стоит после s. Это другой каркас, чем a two-week notice period, где week — единственное внутри прилагательного."},"langs":[{"lang":"en","formula":"Main clause + number + plural time-unit' + noun","example":"We need two weeks' notice to arrange the visit.","translation":"Для организации визита нам нужно предупреждение за две недели.","examples":[{"text":"She has ten years' experience in the field.","translation_ru":"У неё десять лет опыта в этой области."},{"text":"The files represent three months' work.","translation_ru":"Эти файлы представляют собой результат трёх месяцев работы."}]},{"lang":"de","formula":"Main clause + number + time noun + natural measure construction","example":"Wir brauchen zwei Wochen Vorlauf, um den Besuch zu organisieren.","translation":"Для организации визита нам нужно предупреждение за две недели.","examples":[{"text":"Sie hat zehn Jahre Erfahrung in diesem Bereich.","translation_ru":"У неё десять лет опыта в этой области."},{"text":"Die Dateien sind das Ergebnis von drei Monaten Arbeit.","translation_ru":"Эти файлы представляют собой результат трёх месяцев работы."}]}]},
-{"id":"GFM014","set_id":"GFM","pattern":"I prefer the smaller one because it fits in my bag.","group_title":"Replacing a count noun with one or ones","level":"B2","logic":{"function":"grammar-mechanics","core":"Nominal substitution with one and ones","form":"Determiner + adjective + one/ones","metaphor_ru":"One заменяет исчисляемое существительное, ones — его множественное число. Не переносите этот каркас на неисчисляемое information."},"langs":[{"lang":"en","formula":"Main clause + determiner + adjective + one/ones","example":"I prefer the smaller one because it fits in my bag.","translation":"Я предпочитаю тот, что поменьше, потому что он помещается в сумку.","examples":[{"text":"Keep the signed copies and discard the unsigned ones.","translation_ru":"Сохрани подписанные копии, а неподписанные выбрось."},{"text":"She chose a quieter one near the back.","translation_ru":"Она выбрала более тихий вариант ближе к задней части."}]},{"lang":"de","formula":"Main clause + inflected pronominal adjective / repeated noun","example":"Ich bevorzuge das kleinere, weil es in meine Tasche passt.","translation":"Я предпочитаю тот, что поменьше, потому что он помещается в сумку.","examples":[{"text":"Behalte die unterschriebenen Kopien und entsorge die nicht unterschriebenen.","translation_ru":"Сохрани подписанные копии, а неподписанные выбрось."},{"text":"Sie wählte einen ruhigeren Platz weiter hinten.","translation_ru":"Она выбрала более тихий вариант ближе к задней части."}]}]},
-{"id":"GFM015","set_id":"GFM","pattern":"The colour of this sample differs from that of the original.","group_title":"Replacing a repeated noun in a formal comparison","level":"C1","logic":{"function":"grammar-mechanics","core":"That and those as nominal substitutes in comparisons","form":"Noun + comparison + that/those of + target","metaphor_ru":"That заменяет colour, не весь sample; those заменяет множественное существительное. Сравниваются одинаковые сущности: цвет с цветом, цены с ценами."},"langs":[{"lang":"en","formula":"Noun phrase + comparison predicate + that/those of + comparison owner","example":"The colour of this sample differs from that of the original.","translation":"Цвет этого образца отличается от цвета оригинала.","examples":[{"text":"Our costs are lower than those of the previous project.","translation_ru":"Наши затраты ниже затрат предыдущего проекта."},{"text":"Her experience is different from that of her colleagues.","translation_ru":"Её опыт отличается от опыта её коллег."}]},{"lang":"de","formula":"Noun phrase + comparison + der/die/das/denen + genitive/relative complement","example":"Die Farbe dieses Musters unterscheidet sich von der des Originals.","translation":"Цвет этого образца отличается от цвета оригинала.","examples":[{"text":"Unsere Kosten sind niedriger als die des vorherigen Projekts.","translation_ru":"Наши затраты ниже затрат предыдущего проекта."},{"text":"Ihre Erfahrung unterscheidet sich von der ihrer Kollegen.","translation_ru":"Её опыт отличается от опыта её коллег."}]}]},
-{"id":"GFM016","set_id":"GFM","pattern":"Both my parents prefer travelling by train.","group_title":"A totality word before a possessive determiner","level":"B2","logic":{"function":"grammar-mechanics","core":"Predeterminer all or both before a possessive","form":"All/both + possessive determiner + noun","metaphor_ru":"Порядок both my parents или all our files, не my both parents. Of допустимо: both of my parents; двойное the my не нужно."},"langs":[{"lang":"en","formula":"All/Both + possessive determiner + plural noun + predicate","example":"Both my parents prefer travelling by train.","translation":"Оба моих родителя предпочитают ездить на поезде.","examples":[{"text":"All our files are stored in one place.","translation_ru":"Все наши файлы хранятся в одном месте."},{"text":"Both her suggestions were practical.","translation_ru":"Оба её предложения были практичными."}]},{"lang":"de","formula":"Beide/Alle + possessive determiner + plural noun + predicate","example":"Beide meine Eltern reisen lieber mit dem Zug.","translation":"Оба моих родителя предпочитают ездить на поезде.","examples":[{"text":"Alle unsere Dateien sind an einem Ort gespeichert.","translation_ru":"Все наши файлы хранятся в одном месте."},{"text":"Beide ihre Vorschläge waren praktisch.","translation_ru":"Оба её предложения были практичными."}]}]},
-{"id":"GFM017","set_id":"GFM","pattern":"Can I offer one piece of advice?","group_title":"Counting a unit of an otherwise uncountable noun","level":"B2","logic":{"function":"grammar-mechanics","core":"Countable unit phrase before a mass noun","form":"Number/article + piece of + mass noun","metaphor_ru":"Advice и information не получают -s в этих значениях. Чтобы посчитать единицы, добавляем piece; piece становится исчисляемой частью."},"langs":[{"lang":"en","formula":"Main clause + determiner/number + piece(s) of + uncountable noun","example":"Can I offer one piece of advice?","translation":"Можно дать один совет?","examples":[{"text":"We are missing two pieces of information.","translation_ru":"Нам не хватает двух сведений."},{"text":"She bought a useful piece of equipment for the studio.","translation_ru":"Она купила полезное оборудование для студии — один прибор."}]},{"lang":"de","formula":"Main clause + natural countable equivalent noun","example":"Darf ich einen Rat geben?","translation":"Можно дать один совет?","examples":[{"text":"Uns fehlen zwei Informationen.","translation_ru":"Нам не хватает двух сведений."},{"text":"Sie kaufte ein nützliches Gerät für das Studio.","translation_ru":"Она купила полезное оборудование для студии — один прибор."}]}]},
-{"id":"GFM018","set_id":"GFM","pattern":"Any visitor can ask for a printed guide.","group_title":"Unrestricted choice in an affirmative statement","level":"B2","logic":{"function":"grammar-mechanics","core":"Free-choice any with a singular noun","form":"Any + singular noun + can + verb","metaphor_ru":"Any в утвердительной фразе может значить «любой», не «какой-нибудь». Смысл — отсутствие ограничений на выбор одного участника."},"langs":[{"lang":"en","formula":"Any + singular count noun + can + infinitive","example":"Any visitor can ask for a printed guide.","translation":"Любой посетитель может попросить печатное руководство.","examples":[{"text":"Any team member can suggest a change.","translation_ru":"Любой участник команды может предложить изменение."},{"text":"Any suitable container can be used for this activity.","translation_ru":"Для этого занятия можно использовать любую подходящую ёмкость."}]},{"lang":"de","formula":"Jeder/Jede/Jedes + singular noun + kann + infinitive","example":"Jeder Besucher kann um einen gedruckten Leitfaden bitten.","translation":"Любой посетитель может попросить печатное руководство.","examples":[{"text":"Jedes Teammitglied kann eine Änderung vorschlagen.","translation_ru":"Любой участник команды может предложить изменение."},{"text":"Jeder geeignete Behälter kann für diese Aktivität verwendet werden.","translation_ru":"Для этого занятия можно использовать любую подходящую ёмкость."}]}]},
-{"id":"GFM019","set_id":"GFM","pattern":"Some thirty people attended the first session.","group_title":"Some as an approximation before a number","level":"C1","logic":{"function":"grammar-mechanics","core":"Approximate numerical determiner some","form":"Some + number + noun","metaphor_ru":"Перед числом some может означать «около», особенно в отчётном стиле. Это не «некоторые из тридцати»; для такого смысла нужен some of the thirty."},"langs":[{"lang":"en","formula":"Some + number + noun + predicate","example":"Some thirty people attended the first session.","translation":"На первое занятие пришло около тридцати человек.","examples":[{"text":"The journey took some four hours.","translation_ru":"Поездка заняла около четырёх часов."},{"text":"We received some fifty replies in total.","translation_ru":"Всего мы получили около пятидесяти ответов."}]},{"lang":"de","formula":"Etwa/Rund + number + noun + predicate","example":"Etwa dreißig Personen nahmen an der ersten Sitzung teil.","translation":"На первое занятие пришло около тридцати человек.","examples":[{"text":"Die Reise dauerte etwa vier Stunden.","translation_ru":"Поездка заняла около четырёх часов."},{"text":"Wir erhielten insgesamt rund fünfzig Antworten.","translation_ru":"Всего мы получили около пятидесяти ответов."}]}]},
-{"id":"GFM020","set_id":"GFM","pattern":"A lamp stands on either side of the bed.","group_title":"Either meaning each of two spatial sides","level":"C1","logic":{"function":"grammar-mechanics","core":"Distributive either in paired spatial positions","form":"On/at either + singular spatial noun","metaphor_ru":"В таком пространственном контексте on either side часто значит «по обеим сторонам», по одной лампе с каждой. Это не выбор только одной стороны."},"langs":[{"lang":"en","formula":"Singular item + location verb + on/at either + singular paired location noun","example":"A lamp stands on either side of the bed.","translation":"По обеим сторонам кровати стоит по лампе.","examples":[{"text":"A guard stood on either side of the gate.","translation_ru":"По обеим сторонам ворот стояло по охраннику."},{"text":"A clock hangs at either end of the hall.","translation_ru":"На каждом из двух концов зала висят часы."}]},{"lang":"de","formula":"An/Auf beiden + plural location noun + steht/hängt jeweils + singular item","example":"Auf beiden Seiten des Bettes steht jeweils eine Lampe.","translation":"По обеим сторонам кровати стоит по лампе.","examples":[{"text":"Auf beiden Seiten des Tores stand jeweils ein Wachmann.","translation_ru":"По обеим сторонам ворот стояло по охраннику."},{"text":"An beiden Enden der Halle hängt jeweils eine Uhr.","translation_ru":"На каждом из двух концов зала висят часы."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFM",
+  "title": "Noun phrases and reference",
+  "title_ru": "Именные группы и отсылки",
+  "patterns": [
+    {
+      "id": "GFM001",
+      "set_id": "GFM",
+      "pattern": "A colleague of mine recommended this course.",
+      "group_title": "One member of someone's circle without claiming uniqueness",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Double genitive after an indefinite noun",
+        "form": "A + noun + of + possessive pronoun/genitive",
+        "metaphor_ru": "A colleague of mine — один из моих коллег. После of нужен mine/hers, не me/her; с именем возможен John's."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "A/an + noun + of + mine/yours/his/hers/ours/theirs/name's + predicate",
+          "example": "A colleague of mine recommended this course.",
+          "translation": "Один мой коллега порекомендовал этот курс.",
+          "examples": [
+            {
+              "text": "A friend of hers offered to help.",
+              "translation_ru": "Один её друг предложил помощь."
+            },
+            {
+              "text": "A neighbour of John's found the missing parcel.",
+              "translation_ru": "Один из соседей Джона нашёл пропавшую посылку."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ein/eine + noun + von + dative person + predicate",
+          "example": "Ein Kollege von mir empfahl diesen Kurs.",
+          "translation": "Один мой коллега порекомендовал этот курс.",
+          "examples": [
+            {
+              "text": "Ein Freund von ihr bot seine Hilfe an.",
+              "translation_ru": "Один её друг предложил помощь."
+            },
+            {
+              "text": "Ein Nachbar von John fand das vermisste Paket.",
+              "translation_ru": "Один из соседей Джона нашёл пропавшую посылку."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Один из моих знакомых: of mine",
+      "title_en": "One member of someone's circle without claiming uniqueness",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM002",
+      "set_id": "GFM",
+      "pattern": "We need another chair for the visitor.",
+      "group_title": "An additional or different single member",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Another with a singular count noun",
+        "form": "Another + singular noun",
+        "metaphor_ru": "Another объединяет an и other: ещё один или другой. Не добавляйте второй артикль и не ставьте обычное множественное chairs сразу после another."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + another + singular count noun",
+          "example": "We need another chair for the visitor.",
+          "translation": "Нам нужен ещё один стул для посетителя.",
+          "examples": [
+            {
+              "text": "She suggested another route to avoid the traffic.",
+              "translation_ru": "Она предложила другой маршрут, чтобы объехать пробки."
+            },
+            {
+              "text": "I would like another example before we move on.",
+              "translation_ru": "Я хотел бы ещё один пример, прежде чем мы пойдём дальше."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + ein weiterer/ein anderer + singular noun",
+          "example": "Wir brauchen einen weiteren Stuhl für den Besucher.",
+          "translation": "Нам нужен ещё один стул для посетителя.",
+          "examples": [
+            {
+              "text": "Sie schlug eine andere Route vor, um den Stau zu umgehen.",
+              "translation_ru": "Она предложила другой маршрут, чтобы объехать пробки."
+            },
+            {
+              "text": "Ich hätte gern noch ein Beispiel, bevor wir weitermachen.",
+              "translation_ru": "Я хотел бы ещё один пример, прежде чем мы пойдём дальше."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ещё один или другой: another",
+      "title_en": "An additional or different single member",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM003",
+      "set_id": "GFM",
+      "pattern": "We should consider other options before deciding.",
+      "group_title": "Unspecified additional members of a plural category",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Other as a determiner before plural nouns",
+        "form": "Other + plural noun",
+        "metaphor_ru": "Перед существительным other не получает -s: other options, не others options. Здесь группа не ограничена заранее названным остатком."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + other + plural count noun",
+          "example": "We should consider other options before deciding.",
+          "translation": "Прежде чем решать, нам стоит рассмотреть другие варианты.",
+          "examples": [
+            {
+              "text": "She asked other teachers how they handled the issue.",
+              "translation_ru": "Она спросила других преподавателей, как они решали этот вопрос."
+            },
+            {
+              "text": "I keep other copies in a separate folder.",
+              "translation_ru": "Другие копии я храню в отдельной папке."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + andere + plural noun",
+          "example": "Wir sollten andere Optionen prüfen, bevor wir entscheiden.",
+          "translation": "Прежде чем решать, нам стоит рассмотреть другие варианты.",
+          "examples": [
+            {
+              "text": "Sie fragte andere Lehrkräfte, wie sie mit dem Problem umgingen.",
+              "translation_ru": "Она спросила других преподавателей, как они решали этот вопрос."
+            },
+            {
+              "text": "Andere Kopien bewahre ich in einem separaten Ordner auf.",
+              "translation_ru": "Другие копии я храню в отдельной папке."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Другие предметы: other",
+      "title_en": "Unspecified additional members of a plural category",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM004",
+      "set_id": "GFM",
+      "pattern": "One door is locked, but the other door is open.",
+      "group_title": "The remaining member of an explicitly bounded pair",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "The other as the unique remainder of two",
+        "form": "One + noun ..., the other + noun ...",
+        "metaphor_ru": "The other — второй, оставшийся из двух. Another предложил бы ещё один неопределённый вариант и не сохранял бы тот же ограниченный набор."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "One + singular noun + predicate, but/and + the other + singular noun + predicate",
+          "example": "One door is locked, but the other door is open.",
+          "translation": "Одна дверь заперта, а другая открыта.",
+          "examples": [
+            {
+              "text": "One applicant can start now; the other applicant needs a month.",
+              "translation_ru": "Один кандидат может начать сейчас, а другому нужен месяц."
+            },
+            {
+              "text": "One key is mine, and the other key is yours.",
+              "translation_ru": "Один ключ мой, а другой твой."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ein/eine + noun ..., der/die/das andere + noun ...",
+          "example": "Eine Tür ist verschlossen, aber die andere Tür ist offen.",
+          "translation": "Одна дверь заперта, а другая открыта.",
+          "examples": [
+            {
+              "text": "Ein Bewerber kann sofort anfangen; der andere Bewerber braucht einen Monat.",
+              "translation_ru": "Один кандидат может начать сейчас, а другому нужен месяц."
+            },
+            {
+              "text": "Ein Schlüssel gehört mir, und der andere Schlüssel gehört dir.",
+              "translation_ru": "Один ключ мой, а другой твой."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Оставшийся из двух: the other",
+      "title_en": "The remaining member of an explicitly bounded pair",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM005",
+      "set_id": "GFM",
+      "pattern": "Some people prefer written instructions; others prefer a demonstration.",
+      "group_title": "Contrasting groups without repeating the noun",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Pronominal others contrasted with some",
+        "form": "Some + plural noun ..., others + predicate",
+        "metaphor_ru": "Others уже заменяет people, поэтому существительное после него не ставится. The others означало бы весь конкретный остаток группы, а не просто других людей."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Some + plural noun + predicate; others + contrasting predicate",
+          "example": "Some people prefer written instructions; others prefer a demonstration.",
+          "translation": "Одни предпочитают письменные инструкции, другие — показ.",
+          "examples": [
+            {
+              "text": "Some seats face the window; others face the aisle.",
+              "translation_ru": "Одни места обращены к окну, другие — к проходу."
+            },
+            {
+              "text": "Some questions need a short answer; others need more context.",
+              "translation_ru": "Одним вопросам достаточно короткого ответа, другим нужен контекст."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Manche + plural noun + predicate; andere + contrasting predicate",
+          "example": "Manche Menschen bevorzugen schriftliche Anweisungen; andere bevorzugen eine Vorführung.",
+          "translation": "Одни предпочитают письменные инструкции, другие — показ.",
+          "examples": [
+            {
+              "text": "Manche Sitze sind zum Fenster ausgerichtet; andere zum Gang.",
+              "translation_ru": "Одни места обращены к окну, другие — к проходу."
+            },
+            {
+              "text": "Manche Fragen brauchen eine kurze Antwort; andere brauchen mehr Kontext.",
+              "translation_ru": "Одним вопросам достаточно короткого ответа, другим нужен контекст."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Одни и другие без повтора имени",
+      "title_en": "Contrasting groups without repeating the noun",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM006",
+      "set_id": "GFM",
+      "pattern": "It was such a useful example that I wrote it down.",
+      "group_title": "Degree expressed through a singular count noun phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Such a singular count noun with a result clause",
+        "form": "Such a/an + adjective + singular noun + that",
+        "metaphor_ru": "Порядок such a useful example, не a such и не so useful example. Единственное исчисляемое существительное требует a/an."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + such a/an + adjective + singular count noun + that + result",
+          "example": "It was such a useful example that I wrote it down.",
+          "translation": "Это был настолько полезный пример, что я его записал.",
+          "examples": [
+            {
+              "text": "She gave such a clear answer that nobody asked again.",
+              "translation_ru": "Она дала настолько ясный ответ, что никто не переспросил."
+            },
+            {
+              "text": "We had such a long wait that we missed lunch.",
+              "translation_ru": "Мы ждали так долго, что пропустили обед."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + ein so + adjective + singular noun, dass + result",
+          "example": "Es war ein so nützliches Beispiel, dass ich es aufschrieb.",
+          "translation": "Это был настолько полезный пример, что я его записал.",
+          "examples": [
+            {
+              "text": "Sie gab eine so klare Antwort, dass niemand noch einmal fragte.",
+              "translation_ru": "Она дала настолько ясный ответ, что никто не переспросил."
+            },
+            {
+              "text": "Wir hatten eine so lange Wartezeit, dass wir das Mittagessen verpassten.",
+              "translation_ru": "Мы ждали так долго, что пропустили обед."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Such a с исчисляемым существительным",
+      "title_en": "Degree expressed through a singular count noun phrase",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM007",
+      "set_id": "GFM",
+      "pattern": "They gave us such useful advice that we changed the plan.",
+      "group_title": "Such before mass nouns and plurals without an indefinite article",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Such without a before mass or plural nouns",
+        "form": "Such + adjective + mass/plural noun + that",
+        "metaphor_ru": "Advice неисчисляемо: such useful advice, не such a useful advice. С plural questions артикль a также не появляется."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + such + adjective + mass/plural noun + that + result",
+          "example": "They gave us such useful advice that we changed the plan.",
+          "translation": "Они дали нам настолько полезный совет, что мы изменили план.",
+          "examples": [
+            {
+              "text": "She asked such thoughtful questions that the discussion changed direction.",
+              "translation_ru": "Она задала настолько продуманные вопросы, что обсуждение пошло в другую сторону."
+            },
+            {
+              "text": "We had such good weather that we stayed another day.",
+              "translation_ru": "Погода была настолько хорошей, что мы остались ещё на день."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + so + adjective + natural noun phrase, dass + result",
+          "example": "Sie gaben uns so nützliche Ratschläge, dass wir den Plan änderten.",
+          "translation": "Они дали нам настолько полезный совет, что мы изменили план.",
+          "examples": [
+            {
+              "text": "Sie stellte so durchdachte Fragen, dass die Diskussion eine andere Richtung nahm.",
+              "translation_ru": "Она задала настолько продуманные вопросы, что обсуждение пошло в другую сторону."
+            },
+            {
+              "text": "Wir hatten so gutes Wetter, dass wir noch einen Tag blieben.",
+              "translation_ru": "Погода была настолько хорошей, что мы остались ещё на день."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Such без a с массой и множеством",
+      "title_en": "Such before mass nouns and plurals without an indefinite article",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM008",
+      "set_id": "GFM",
+      "pattern": "It is too important a decision to rush.",
+      "group_title": "Too placed before an adjective and indefinite article",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Pre-article degree modifier with too",
+        "form": "Too + adjective + a/an + noun + to-infinitive",
+        "metaphor_ru": "В этом более формальном порядке артикль стоит после прилагательного: too important a decision. Обычная альтернатива: the decision is too important to rush."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It/That + be + too + adjective + a/an + singular noun + to-infinitive",
+          "example": "It is too important a decision to rush.",
+          "translation": "Это слишком важное решение, чтобы принимать его в спешке.",
+          "examples": [
+            {
+              "text": "That is too high a price to pay for convenience.",
+              "translation_ru": "Это слишком высокая цена за удобство."
+            },
+            {
+              "text": "It was too good an opportunity to ignore.",
+              "translation_ru": "Это была слишком хорошая возможность, чтобы её проигнорировать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + ein/eine zu + adjective + noun, um + zu-infinitive",
+          "example": "Das ist eine zu wichtige Entscheidung, um sie zu überstürzen.",
+          "translation": "Это слишком важное решение, чтобы принимать его в спешке.",
+          "examples": [
+            {
+              "text": "Das ist ein zu hoher Preis für Bequemlichkeit.",
+              "translation_ru": "Это слишком высокая цена за удобство."
+            },
+            {
+              "text": "Das war eine zu gute Gelegenheit, um sie zu ignorieren.",
+              "translation_ru": "Это была слишком хорошая возможность, чтобы её проигнорировать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Too перед прилагательным и артиклем",
+      "title_en": "Too placed before an adjective and indefinite article",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM009",
+      "set_id": "GFM",
+      "pattern": "It is as good a reason as any to begin.",
+      "group_title": "An equality comparison built around a singular noun",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Pre-article adjective in an as-as noun comparison",
+        "form": "As + adjective + a/an + noun + as",
+        "metaphor_ru": "Порядок as good a reason as. Это сравнение качества причины, а не количества; форма отличается от such a good reason."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + as + adjective + a/an + singular noun + as + comparison target",
+          "example": "It is as good a reason as any to begin.",
+          "translation": "Это не худший повод начать.",
+          "examples": [
+            {
+              "text": "She is as careful a driver as her brother.",
+              "translation_ru": "Она такой же осторожный водитель, как её брат."
+            },
+            {
+              "text": "This is as clear an explanation as we can give.",
+              "translation_ru": "Это самое ясное объяснение, которое мы можем дать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + ein/eine ebenso/so + adjective + noun + wie + target",
+          "example": "Das ist ein ebenso guter Grund anzufangen wie jeder andere.",
+          "translation": "Это не худший повод начать.",
+          "examples": [
+            {
+              "text": "Sie ist eine ebenso vorsichtige Fahrerin wie ihr Bruder.",
+              "translation_ru": "Она такой же осторожный водитель, как её брат."
+            },
+            {
+              "text": "Das ist eine so klare Erklärung, wie wir sie geben können.",
+              "translation_ru": "Это самое ясное объяснение, которое мы можем дать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "As good a reason: порядок артикля",
+      "title_en": "An equality comparison built around a singular noun",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM010",
+      "set_id": "GFM",
+      "pattern": "What a difference one clear example makes!",
+      "group_title": "An exclamation foregrounding a noun phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "What-exclamation with ordinary subject-verb order",
+        "form": "What a/an + noun + subject + verb!",
+        "metaphor_ru": "Это восклицание, не вопрос. Поэтому после вынесенного дополнения сохраняется one example makes, без does."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What a/an + singular noun phrase + subject + predicate!",
+          "example": "What a difference one clear example makes!",
+          "translation": "Как же многое меняет один понятный пример!",
+          "examples": [
+            {
+              "text": "What a long way we have come!",
+              "translation_ru": "Какой долгий путь мы прошли!"
+            },
+            {
+              "text": "What an impression her speech made!",
+              "translation_ru": "Какое впечатление произвела её речь!"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was für ein/eine + noun + clause or natural exclamation",
+          "example": "Was für einen Unterschied ein klares Beispiel macht!",
+          "translation": "Как же многое меняет один понятный пример!",
+          "examples": [
+            {
+              "text": "Was für einen langen Weg wir zurückgelegt haben!",
+              "translation_ru": "Какой долгий путь мы прошли!"
+            },
+            {
+              "text": "Was für einen Eindruck ihre Rede gemacht hat!",
+              "translation_ru": "Какое впечатление произвела её речь!"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Восклицание с what",
+      "title_en": "An exclamation foregrounding a noun phrase",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM011",
+      "set_id": "GFM",
+      "pattern": "The injured were taken to a nearby hospital.",
+      "group_title": "An adjective naming a group of people",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "The plus adjective with plural human reference",
+        "form": "The + adjective + plural predicate",
+        "metaphor_ru": "The injured обозначает пострадавших как группу и требует were. Не используйте a injured для одного человека: нужен injured person."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The + human-group adjective + plural predicate",
+          "example": "The injured were taken to a nearby hospital.",
+          "translation": "Пострадавших отвезли в ближайшую больницу.",
+          "examples": [
+            {
+              "text": "The young and the old both joined the discussion.",
+              "translation_ru": "И молодые, и пожилые присоединились к обсуждению."
+            },
+            {
+              "text": "The unemployed were offered places on the training course.",
+              "translation_ru": "Безработным предложили места на учебном курсе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die + capitalised nominalised adjective in plural + plural predicate",
+          "example": "Die Verletzten wurden in ein nahe gelegenes Krankenhaus gebracht.",
+          "translation": "Пострадавших отвезли в ближайшую больницу.",
+          "examples": [
+            {
+              "text": "Die Jungen und die Alten beteiligten sich beide an der Diskussion.",
+              "translation_ru": "И молодые, и пожилые присоединились к обсуждению."
+            },
+            {
+              "text": "Den Arbeitslosen wurden Plätze in dem Schulungskurs angeboten.",
+              "translation_ru": "Безработным предложили места на учебном курсе."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Прилагательное называет группу людей",
+      "title_en": "An adjective naming a group of people",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM012",
+      "set_id": "GFM",
+      "pattern": "We scheduled a fifteen-minute break.",
+      "group_title": "A measure used as a compound adjective",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Singular measure noun in a pre-nominal compound",
+        "form": "A + number-measure + noun",
+        "metaphor_ru": "Перед существительным minute остаётся в единственном числе: a fifteen-minute break. В обычном измерении после существительного было бы fifteen minutes."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + a/an + number-singular measure + head noun",
+          "example": "We scheduled a fifteen-minute break.",
+          "translation": "Мы запланировали пятнадцатиминутный перерыв.",
+          "examples": [
+            {
+              "text": "She signed a two-year agreement.",
+              "translation_ru": "Она подписала двухлетнее соглашение."
+            },
+            {
+              "text": "It is a five-kilometre walk from the station.",
+              "translation_ru": "От вокзала пять километров пешком."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + inflected measure adjective/compound + noun",
+          "example": "Wir planten eine fünfzehnminütige Pause.",
+          "translation": "Мы запланировали пятнадцатиминутный перерыв.",
+          "examples": [
+            {
+              "text": "Sie unterschrieb eine zweijährige Vereinbarung.",
+              "translation_ru": "Она подписала двухлетнее соглашение."
+            },
+            {
+              "text": "Vom Bahnhof ist es ein fünf Kilometer langer Fußweg.",
+              "translation_ru": "От вокзала пять километров пешком."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мера как составное прилагательное",
+      "title_en": "A measure used as a compound adjective",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM013",
+      "set_id": "GFM",
+      "pattern": "We need two weeks' notice to arrange the visit.",
+      "group_title": "A duration expressed as a plural genitive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Plural time genitive before a noun",
+        "form": "Number + plural time unit + apostrophe + noun",
+        "metaphor_ru": "В two weeks' notice апостроф стоит после s. Это другой каркас, чем a two-week notice period, где week — единственное внутри прилагательного."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + number + plural time-unit' + noun",
+          "example": "We need two weeks' notice to arrange the visit.",
+          "translation": "Для организации визита нам нужно предупреждение за две недели.",
+          "examples": [
+            {
+              "text": "She has ten years' experience in the field.",
+              "translation_ru": "У неё десять лет опыта в этой области."
+            },
+            {
+              "text": "The files represent three months' work.",
+              "translation_ru": "Эти файлы представляют собой результат трёх месяцев работы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + number + time noun + natural measure construction",
+          "example": "Wir brauchen zwei Wochen Vorlauf, um den Besuch zu organisieren.",
+          "translation": "Для организации визита нам нужно предупреждение за две недели.",
+          "examples": [
+            {
+              "text": "Sie hat zehn Jahre Erfahrung in diesem Bereich.",
+              "translation_ru": "У неё десять лет опыта в этой области."
+            },
+            {
+              "text": "Die Dateien sind das Ergebnis von drei Monaten Arbeit.",
+              "translation_ru": "Эти файлы представляют собой результат трёх месяцев работы."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Длительность с притяжательным апострофом",
+      "title_en": "A duration expressed as a plural genitive",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM014",
+      "set_id": "GFM",
+      "pattern": "I prefer the smaller one because it fits in my bag.",
+      "group_title": "Replacing a count noun with one or ones",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Nominal substitution with one and ones",
+        "form": "Determiner + adjective + one/ones",
+        "metaphor_ru": "One заменяет исчисляемое существительное, ones — его множественное число. Не переносите этот каркас на неисчисляемое information."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + determiner + adjective + one/ones",
+          "example": "I prefer the smaller one because it fits in my bag.",
+          "translation": "Я предпочитаю тот, что поменьше, потому что он помещается в сумку.",
+          "examples": [
+            {
+              "text": "Keep the signed copies and discard the unsigned ones.",
+              "translation_ru": "Сохрани подписанные копии, а неподписанные выбрось."
+            },
+            {
+              "text": "She chose a quieter one near the back.",
+              "translation_ru": "Она выбрала более тихий вариант ближе к задней части."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + inflected pronominal adjective / repeated noun",
+          "example": "Ich bevorzuge das kleinere, weil es in meine Tasche passt.",
+          "translation": "Я предпочитаю тот, что поменьше, потому что он помещается в сумку.",
+          "examples": [
+            {
+              "text": "Behalte die unterschriebenen Kopien und entsorge die nicht unterschriebenen.",
+              "translation_ru": "Сохрани подписанные копии, а неподписанные выбрось."
+            },
+            {
+              "text": "Sie wählte einen ruhigeren Platz weiter hinten.",
+              "translation_ru": "Она выбрала более тихий вариант ближе к задней части."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Замена существительного через one",
+      "title_en": "Replacing a count noun with one or ones",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM015",
+      "set_id": "GFM",
+      "pattern": "The colour of this sample differs from that of the original.",
+      "group_title": "Replacing a repeated noun in a formal comparison",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "That and those as nominal substitutes in comparisons",
+        "form": "Noun + comparison + that/those of + target",
+        "metaphor_ru": "That заменяет colour, не весь sample; those заменяет множественное существительное. Сравниваются одинаковые сущности: цвет с цветом, цены с ценами."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Noun phrase + comparison predicate + that/those of + comparison owner",
+          "example": "The colour of this sample differs from that of the original.",
+          "translation": "Цвет этого образца отличается от цвета оригинала.",
+          "examples": [
+            {
+              "text": "Our costs are lower than those of the previous project.",
+              "translation_ru": "Наши затраты ниже затрат предыдущего проекта."
+            },
+            {
+              "text": "Her experience is different from that of her colleagues.",
+              "translation_ru": "Её опыт отличается от опыта её коллег."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Noun phrase + comparison + der/die/das/denen + genitive/relative complement",
+          "example": "Die Farbe dieses Musters unterscheidet sich von der des Originals.",
+          "translation": "Цвет этого образца отличается от цвета оригинала.",
+          "examples": [
+            {
+              "text": "Unsere Kosten sind niedriger als die des vorherigen Projekts.",
+              "translation_ru": "Наши затраты ниже затрат предыдущего проекта."
+            },
+            {
+              "text": "Ihre Erfahrung unterscheidet sich von der ihrer Kollegen.",
+              "translation_ru": "Её опыт отличается от опыта её коллег."
+            }
+          ]
+        }
+      ],
+      "title_ru": "That и those в сравнении",
+      "title_en": "Replacing a repeated noun in a formal comparison",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM016",
+      "set_id": "GFM",
+      "pattern": "Both my parents prefer travelling by train.",
+      "group_title": "A totality word before a possessive determiner",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Predeterminer all or both before a possessive",
+        "form": "All/both + possessive determiner + noun",
+        "metaphor_ru": "Порядок both my parents или all our files, не my both parents. Of допустимо: both of my parents; двойное the my не нужно. В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "All/Both + possessive determiner + plural noun + predicate",
+          "example": "Both my parents prefer travelling by train.",
+          "translation": "Оба моих родителя предпочитают ездить на поезде.",
+          "examples": [
+            {
+              "text": "All our files are stored in one place.",
+              "translation_ru": "Все наши файлы хранятся в одном месте."
+            },
+            {
+              "text": "Both her suggestions were practical.",
+              "translation_ru": "Оба её предложения были практичными."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Possessive determiner + beide + plural noun / alle + possessive determiner + plural noun",
+          "example": "Meine beiden Eltern reisen lieber mit dem Zug.",
+          "translation": "Оба моих родителя предпочитают ездить на поезде.",
+          "examples": [
+            {
+              "text": "Alle unsere Dateien sind an einem Ort gespeichert.",
+              "translation_ru": "Все наши файлы хранятся в одном месте."
+            },
+            {
+              "text": "Ihre beiden Vorschläge waren praktisch.",
+              "translation_ru": "Оба её предложения были практичными."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Both и all перед принадлежностью",
+      "title_en": "A totality word before a possessive determiner",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM017",
+      "set_id": "GFM",
+      "pattern": "Can I offer one piece of advice?",
+      "group_title": "Counting a unit of an otherwise uncountable noun",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Countable unit phrase before a mass noun",
+        "form": "Number/article + piece of + mass noun",
+        "metaphor_ru": "Advice и information не получают -s в этих значениях. Чтобы посчитать единицы, добавляем piece; piece становится исчисляемой частью."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + determiner/number + piece(s) of + uncountable noun",
+          "example": "Can I offer one piece of advice?",
+          "translation": "Можно дать один совет?",
+          "examples": [
+            {
+              "text": "We are missing two pieces of information.",
+              "translation_ru": "Нам не хватает двух сведений."
+            },
+            {
+              "text": "She bought a useful piece of equipment for the studio.",
+              "translation_ru": "Она купила полезное оборудование для студии — один прибор."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + natural countable equivalent noun",
+          "example": "Darf ich einen Rat geben?",
+          "translation": "Можно дать один совет?",
+          "examples": [
+            {
+              "text": "Uns fehlen zwei Informationen.",
+              "translation_ru": "Нам не хватает двух сведений."
+            },
+            {
+              "text": "Sie kaufte ein nützliches Gerät für das Studio.",
+              "translation_ru": "Она купила полезное оборудование для студии — один прибор."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Единица неисчисляемого",
+      "title_en": "Counting a unit of an otherwise uncountable noun",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM018",
+      "set_id": "GFM",
+      "pattern": "Any visitor can ask for a printed guide.",
+      "group_title": "Unrestricted choice in an affirmative statement",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Free-choice any with a singular noun",
+        "form": "Any + singular noun + can + verb",
+        "metaphor_ru": "Any в утвердительной фразе может значить «любой», не «какой-нибудь». Смысл — отсутствие ограничений на выбор одного участника."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Any + singular count noun + can + infinitive",
+          "example": "Any visitor can ask for a printed guide.",
+          "translation": "Любой посетитель может попросить печатное руководство.",
+          "examples": [
+            {
+              "text": "Any team member can suggest a change.",
+              "translation_ru": "Любой участник команды может предложить изменение."
+            },
+            {
+              "text": "Any suitable container can be used for this activity.",
+              "translation_ru": "Для этого занятия можно использовать любую подходящую ёмкость."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Jeder/Jede/Jedes + singular noun + kann + infinitive",
+          "example": "Jeder Besucher kann um einen gedruckten Leitfaden bitten.",
+          "translation": "Любой посетитель может попросить печатное руководство.",
+          "examples": [
+            {
+              "text": "Jedes Teammitglied kann eine Änderung vorschlagen.",
+              "translation_ru": "Любой участник команды может предложить изменение."
+            },
+            {
+              "text": "Jeder geeignete Behälter kann für diese Aktivität verwendet werden.",
+              "translation_ru": "Для этого занятия можно использовать любую подходящую ёмкость."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Any означает любой",
+      "title_en": "Unrestricted choice in an affirmative statement",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM019",
+      "set_id": "GFM",
+      "pattern": "Some thirty people attended the first session.",
+      "group_title": "Some as an approximation before a number",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Approximate numerical determiner some",
+        "form": "Some + number + noun",
+        "metaphor_ru": "Перед числом some может означать «около», особенно в отчётном стиле. Это не «некоторые из тридцати»; для такого смысла нужен some of the thirty."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Some + number + noun + predicate",
+          "example": "Some thirty people attended the first session.",
+          "translation": "На первое занятие пришло около тридцати человек.",
+          "examples": [
+            {
+              "text": "The journey took some four hours.",
+              "translation_ru": "Поездка заняла около четырёх часов."
+            },
+            {
+              "text": "We received some fifty replies in total.",
+              "translation_ru": "Всего мы получили около пятидесяти ответов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Etwa/Rund + number + noun + predicate",
+          "example": "Etwa dreißig Personen nahmen an der ersten Sitzung teil.",
+          "translation": "На первое занятие пришло около тридцати человек.",
+          "examples": [
+            {
+              "text": "Die Reise dauerte etwa vier Stunden.",
+              "translation_ru": "Поездка заняла около четырёх часов."
+            },
+            {
+              "text": "Wir erhielten insgesamt rund fünfzig Antworten.",
+              "translation_ru": "Всего мы получили около пятидесяти ответов."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Some перед числом: примерно",
+      "title_en": "Some as an approximation before a number",
+      "group_id": "GFM"
+    },
+    {
+      "id": "GFM020",
+      "set_id": "GFM",
+      "pattern": "A lamp stands on either side of the bed.",
+      "group_title": "Either meaning each of two spatial sides",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Distributive either in paired spatial positions",
+        "form": "On/at either + singular spatial noun",
+        "metaphor_ru": "В таком пространственном контексте on either side часто значит «по обеим сторонам», по одной лампе с каждой. Это не выбор только одной стороны."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Singular item + location verb + on/at either + singular paired location noun",
+          "example": "A lamp stands on either side of the bed.",
+          "translation": "По обеим сторонам кровати стоит по лампе.",
+          "examples": [
+            {
+              "text": "A guard stood on either side of the gate.",
+              "translation_ru": "По обеим сторонам ворот стояло по охраннику."
+            },
+            {
+              "text": "A clock hangs at either end of the hall.",
+              "translation_ru": "На каждом из двух концов зала висят часы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "An/Auf beiden + plural location noun + steht/hängt jeweils + singular item",
+          "example": "Auf beiden Seiten des Bettes steht jeweils eine Lampe.",
+          "translation": "По обеим сторонам кровати стоит по лампе.",
+          "examples": [
+            {
+              "text": "Auf beiden Seiten des Tores stand jeweils ein Wachmann.",
+              "translation_ru": "По обеим сторонам ворот стояло по охраннику."
+            },
+            {
+              "text": "An beiden Enden der Halle hängt jeweils eine Uhr.",
+              "translation_ru": "На каждом из двух концов зала висят часы."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Either side означает обе стороны",
+      "title_en": "Either meaning each of two spatial sides",
+      "group_id": "GFM"
+    }
+  ]
+}

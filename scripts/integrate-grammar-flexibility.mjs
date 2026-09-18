@@ -71,7 +71,7 @@ for (const [family, [enTitle, ruTitle, titleString]] of Object.entries(families)
  for (const [i,p] of patterns.entries()) {
   assert.equal(p.id, family + String(i+1).padStart(3,'0'));
   p.set_id=family; p.title_ru=titles[i]; p.title_en=p.group_title || enTitle;
-  if (groups) p.group_id=family;
+  p.group_id=family;
   assert.ok(['B2','C1'].includes(p.level));
   assert.deepEqual(p.langs.map(l=>l.lang).sort(),['de','en']);
   for (const l of p.langs) {
@@ -80,10 +80,11 @@ for (const [family, [enTitle, ruTitle, titleString]] of Object.entries(families)
    assert.equal(new Set(examples.map(x=>x.text.trim().toLowerCase())).size,3);
    for(const e of examples) { assert.ok(e.text?.trim()); assert.match(e.translation_ru,/\p{Script=Cyrillic}/u); }
   }
+  if(p.id==='GFL008') p.langs.find(l=>l.lang==='de').formula='Subject + finite verb in second position + ... + wh-phrase + remaining verb parts?';
   if(p.id==='GFH018') p.langs.find(l=>l.lang==='de').formula='Subject + hätte(n)/wäre(n) lieber + participle, statt + zu-infinitive';
   if(p.id==='GFM016') {
    p.langs.find(l=>l.lang==='de').formula='Possessive determiner + beide + plural noun / alle + possessive determiner + plural noun';
-   p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';
+   if (!p.logic.metaphor_ru.includes('meine beiden Eltern')) p.logic.metaphor_ru += ' В немецком естественно meine beiden Eltern и ihre beiden Vorschläge; для alle сохраняется alle unsere Dateien.';
   }
   if(p.id==='GFC012') {
    p.pattern='You can use the room provided that you leave it tidy.';
@@ -100,7 +101,7 @@ for (const [family, [enTitle, ruTitle, titleString]] of Object.entries(families)
  if(!Array.isArray(reference)) output={...Object.fromEntries(Object.entries(reference).filter(([k])=>!['patterns','id','set_id','title','title_ru','title_en'].includes(k))),set_id:family,title:enTitle,title_ru:ruTitle,patterns};
  prepared.push([filename,output]);
  if(groups && !groups.some(g=>g.id===family)) groups.push({id:family,title:enTitle,title_en:enTitle,title_ru:ruTitle,description_ru:ruTitle,description_en:enTitle});
- if(!registry.sets.some(s=>s.id===family)) registry.sets.push({id:family,title:enTitle,title_ru:ruTitle,title_en:enTitle,levels:['B2','C1'],tags:['Grammar','B2','C1','EN','DE'],inventory:{communicative_tasks:ruTitle,grammar:ruTitle,lexis:'Everyday life, communication and work; vocabulary supports the grammatical contrast.',connector_pattern:enTitle,outcome:'Produce the target construction in English and German, using Russian prompts and three aligned examples.'}});
+ if(!registry.sets.some(s=>s.id===family)) registry.sets.push({id:family,title:enTitle,title_ru:ruTitle,title_en:enTitle,description:`Compare how English and German express ${enTitle.toLowerCase()}. Practise reusable constructions with Russian translations.`,description_ru:`${ruTitle}: сравнивайте английские и немецкие конструкции по примерам с русским переводом.`,levels:['B2','C1'],tags:['Grammar','B2','C1','EN','DE'],inventory:{communicative_tasks:ruTitle,grammar:ruTitle,lexis:'Everyday life, communication and work; vocabulary supports the grammatical contrast.',connector_pattern:enTitle,outcome:`Practise ${enTitle.toLowerCase()} in English and German with Russian prompts and three contrasting example scenarios.`}});
 }
 assert.equal(prepared.reduce((n,[,d])=>n+asPatterns(d).length,0),300);
 // No existing pattern is removed, renumbered or overwritten by this integration.

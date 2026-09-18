@@ -1,22 +1,1008 @@
-[
-{"id":"GFL001","set_id":"GFL","pattern":"Didn't you receive the updated timetable?","group_title":"A negative question checking an expectation","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative yes-no question expressing surprise","form":"Negative auxiliary + subject + base verb?","metaphor_ru":"Часто говорящий ожидал положительный ответ и удивлён. На Didn't you receive? ответ Yes, I did подтверждает получение, а No, I didn't отрицает его."},"langs":[{"lang":"en","formula":"Didn't + subject + bare infinitive phrase?","example":"Didn't you receive the updated timetable?","translation":"Разве ты не получил обновлённое расписание?","examples":[{"text":"Didn't she mention the change?","translation_ru":"Разве она не упомянула изменение?"},{"text":"Didn't we agree to meet at the main entrance?","translation_ru":"Разве мы не договорились встретиться у главного входа?"}]},{"lang":"de","formula":"Haben/sein + subject + nicht + participle phrase?","example":"Hast du den aktualisierten Fahrplan nicht erhalten?","translation":"Разве ты не получил обновлённое расписание?","examples":[{"text":"Hat sie die Änderung nicht erwähnt?","translation_ru":"Разве она не упомянула изменение?"},{"text":"Hatten wir nicht vereinbart, uns am Haupteingang zu treffen?","translation_ru":"Разве мы не договорились встретиться у главного входа?"}]}]},
-{"id":"GFL002","set_id":"GFL","pattern":"Everyone has received a copy, haven't they?","group_title":"A singular indefinite subject with a plural tag pronoun","level":"B2","logic":{"function":"grammar-mechanics","core":"Singular they in tags after indefinite people pronouns","form":"Everyone/someone + singular verb, plural auxiliary + they?","metaphor_ru":"Everyone согласуется с has в основной части, но tag обычно использует they: haven't they. Немецкий обычно добавляет oder, без такого согласования."},"langs":[{"lang":"en","formula":"Indefinite person pronoun + singular affirmative clause, negative auxiliary + they?","example":"Everyone has received a copy, haven't they?","translation":"Все получили копию, верно?","examples":[{"text":"Someone knows the answer, don't they?","translation_ru":"Кто-то ведь знает ответ, верно?"},{"text":"Everybody is ready, aren't they?","translation_ru":"Все готовы, верно?"}]},{"lang":"de","formula":"Statement about people, oder?","example":"Alle haben eine Kopie erhalten, oder?","translation":"Все получили копию, верно?","examples":[{"text":"Jemand kennt die Antwort, oder?","translation_ru":"Кто-то ведь знает ответ, верно?"},{"text":"Alle sind bereit, oder?","translation_ru":"Все готовы, верно?"}]}]},
-{"id":"GFL003","set_id":"GFL","pattern":"I'm next on the list, aren't I?","group_title":"The special negative tag after I am","level":"B2","logic":{"function":"grammar-mechanics","core":"Aren't I after affirmative I am","form":"I am + complement, aren't I?","metaphor_ru":"Стандартный разговорный tag после I'm — aren't I, не amn't I в большинстве международных вариантов английского. Формальное am I not тоже возможно."},"langs":[{"lang":"en","formula":"I am + affirmative complement, aren't I?","example":"I'm next on the list, aren't I?","translation":"Я следующий в списке, верно?","examples":[{"text":"I'm supposed to bring the original, aren't I?","translation_ru":"Я должен принести оригинал, верно?"},{"text":"I'm a little early, aren't I?","translation_ru":"Я немного рано, верно?"}]},{"lang":"de","formula":"Ich bin/soll + statement, oder?","example":"Ich bin als Nächster auf der Liste, oder?","translation":"Я следующий в списке, верно?","examples":[{"text":"Ich soll das Original mitbringen, oder?","translation_ru":"Я должен принести оригинал, верно?"},{"text":"Ich bin etwas früh dran, oder?","translation_ru":"Я немного рано, верно?"}]}]},
-{"id":"GFL004","set_id":"GFL","pattern":"Let's check the details once more, shall we?","group_title":"A collaborative proposal followed by a special tag","level":"B2","logic":{"function":"grammar-mechanics","core":"Shall we tag after let us","form":"Let's + infinitive, shall we?","metaphor_ru":"После let's обычен shall we, не do we. Это приглашение к совместному действию, а не вопрос о будущем расписании."},"langs":[{"lang":"en","formula":"Let's + bare infinitive phrase, shall we?","example":"Let's check the details once more, shall we?","translation":"Давайте ещё раз проверим детали, хорошо?","examples":[{"text":"Let's take a short break, shall we?","translation_ru":"Давайте сделаем небольшой перерыв, хорошо?"},{"text":"Let's leave the final choice until tomorrow, shall we?","translation_ru":"Давайте оставим окончательный выбор до завтра, хорошо?"}]},{"lang":"de","formula":"Lass uns / Lasst uns + infinitive, ja?","example":"Lasst uns die Einzelheiten noch einmal prüfen, ja?","translation":"Давайте ещё раз проверим детали, хорошо?","examples":[{"text":"Lasst uns eine kurze Pause machen, ja?","translation_ru":"Давайте сделаем небольшой перерыв, хорошо?"},{"text":"Lasst uns die endgültige Entscheidung bis morgen aufschieben, ja?","translation_ru":"Давайте оставим окончательный выбор до завтра, хорошо?"}]}]},
-{"id":"GFL005","set_id":"GFL","pattern":"Keep this between us, will you?","group_title":"A request followed by a willingness tag","level":"B2","logic":{"function":"grammar-mechanics","core":"Will you tag after an imperative","form":"Imperative, will you?","metaphor_ru":"Will you после повеления проверяет готовность выполнить просьбу. Тон зависит от интонации: это может быть дружелюбная просьба или раздражённое требование."},"langs":[{"lang":"en","formula":"Affirmative or negative imperative, will you?","example":"Keep this between us, will you?","translation":"Пусть это останется между нами, хорошо?","examples":[{"text":"Don't forget the receipt, will you?","translation_ru":"Не забудь чек, хорошо?"},{"text":"Send me the final version, will you?","translation_ru":"Отправь мне окончательную версию, хорошо?"}]},{"lang":"de","formula":"Imperative, ja?","example":"Behalte das für dich, ja?","translation":"Пусть это останется между нами, хорошо?","examples":[{"text":"Vergiss den Beleg nicht, ja?","translation_ru":"Не забудь чек, хорошо?"},{"text":"Schick mir die endgültige Version, ja?","translation_ru":"Отправь мне окончательную версию, хорошо?"}]}]},
-{"id":"GFL006","set_id":"GFL","pattern":"She hardly ever complains, does she?","group_title":"A positive tag after a word with negative meaning","level":"B2","logic":{"function":"grammar-mechanics","core":"Positive tag after hardly, never or seldom","form":"Negative-meaning adverb clause, affirmative tag?","metaphor_ru":"Hardly и never уже делают мысль отрицательной по смыслу. Поэтому tag положительный, даже если в главной части нет not."},"langs":[{"lang":"en","formula":"Subject + negative-meaning adverb + predicate, affirmative auxiliary + pronoun?","example":"She hardly ever complains, does she?","translation":"Она почти никогда не жалуется, верно?","examples":[{"text":"He has never used this system, has he?","translation_ru":"Он никогда не пользовался этой системой, верно?"},{"text":"They seldom arrive late, do they?","translation_ru":"Они редко опаздывают, верно?"}]},{"lang":"de","formula":"Negative-meaning statement, oder?","example":"Sie beschwert sich fast nie, oder?","translation":"Она почти никогда не жалуется, верно?","examples":[{"text":"Er hat dieses System noch nie benutzt, oder?","translation_ru":"Он никогда не пользовался этой системой, верно?"},{"text":"Sie kommen selten zu spät, oder?","translation_ru":"Они редко опаздывают, верно?"}]}]},
-{"id":"GFL007","set_id":"GFL","pattern":"There should be another copy, shouldn't there?","group_title":"An existential clause retaining there in its tag","level":"B2","logic":{"function":"grammar-mechanics","core":"Existential there in a question tag","form":"There + auxiliary + predicate, reverse-polarity auxiliary + there?","metaphor_ru":"There остаётся в tag вместо it. Вспомогательный глагол берётся из основной части: should → shouldn't, has → hasn't."},"langs":[{"lang":"en","formula":"There + affirmative existential clause, matching negative auxiliary + there?","example":"There should be another copy, shouldn't there?","translation":"Должна быть ещё одна копия, верно?","examples":[{"text":"There has been a change, hasn't there?","translation_ru":"Произошло изменение, верно?"},{"text":"There were two entrances, weren't there?","translation_ru":"Там было два входа, верно?"}]},{"lang":"de","formula":"Es gibt/gab/müsste geben + statement, oder?","example":"Es müsste noch eine Kopie geben, oder?","translation":"Должна быть ещё одна копия, верно?","examples":[{"text":"Es hat eine Änderung gegeben, oder?","translation_ru":"Произошло изменение, верно?"},{"text":"Es gab zwei Eingänge, oder?","translation_ru":"Там было два входа, верно?"}]}]},
-{"id":"GFL008","set_id":"GFL","pattern":"You paid how much for that chair?","group_title":"Repeating a surprising detail as an echo question","level":"B2","logic":{"function":"grammar-mechanics","core":"In-situ wh-word in an echo question","form":"Statement order with a wh-phrase in the missing slot","metaphor_ru":"Разговорный переспрос может сохранить порядок утверждения и поставить how much на месте удивившей суммы. Это не нейтральный информационный вопрос."},"langs":[{"lang":"en","formula":"Subject + ordinary predicate + in-situ wh-phrase?","example":"You paid how much for that chair?","translation":"Ты сколько заплатил за этот стул?","examples":[{"text":"She wants to meet at what time?","translation_ru":"Она хочет встретиться во сколько?"},{"text":"They sent the parcel where?","translation_ru":"Они куда отправили посылку?"}]},{"lang":"de","formula":"Subject + ordinary predicate + in-situ wh-phrase?","example":"Du hast wie viel für den Stuhl bezahlt?","translation":"Ты сколько заплатил за этот стул?","examples":[{"text":"Sie will sich um wie viel Uhr treffen?","translation_ru":"Она хочет встретиться во сколько?"},{"text":"Sie haben das Paket wohin geschickt?","translation_ru":"Они куда отправили посылку?"}]}]},
-{"id":"GFL009","set_id":"GFL","pattern":"Could you tell me how long the check usually takes?","group_title":"A polite outer question containing a statement-ordered inner question","level":"B2","logic":{"function":"grammar-mechanics","core":"Polite embedded question with only outer inversion","form":"Could you tell me + wh-clause in ordinary order?","metaphor_ru":"Инверсия есть только снаружи: Could you. Внутри — the check takes, не does the check take; вопросительный знак завершает всё предложение."},"langs":[{"lang":"en","formula":"Could you tell me + wh-word/phrase + subject + ordinary predicate?","example":"Could you tell me how long the check usually takes?","translation":"Не могли бы вы сказать, сколько обычно занимает проверка?","examples":[{"text":"Could you tell me where the nearest entrance is?","translation_ru":"Не могли бы вы сказать, где ближайший вход?"},{"text":"Could you tell me which version we should use?","translation_ru":"Не могли бы вы сказать, какую версию нам использовать?"}]},{"lang":"de","formula":"Könnten Sie mir sagen, wh-word + subordinate clause?","example":"Könnten Sie mir sagen, wie lange die Prüfung normalerweise dauert?","translation":"Не могли бы вы сказать, сколько обычно занимает проверка?","examples":[{"text":"Könnten Sie mir sagen, wo der nächste Eingang ist?","translation_ru":"Не могли бы вы сказать, где ближайший вход?"},{"text":"Könnten Sie mir sagen, welche Version wir verwenden sollen?","translation_ru":"Не могли бы вы сказать, какую версию нам использовать?"}]}]},
-{"id":"GFL010","set_id":"GFL","pattern":"Which version contains the latest changes?","group_title":"A wh-phrase asking for the subject without do-support","level":"B2","logic":{"function":"grammar-mechanics","core":"Subject wh-question without auxiliary insertion","form":"Wh-subject + tensed predicate?","metaphor_ru":"Which version само является подлежащим. Поэтому contains идёт сразу после него, без does; сравните Which version did you open?, где вопрос о дополнении."},"langs":[{"lang":"en","formula":"Who/Which + subject noun + tensed predicate?","example":"Which version contains the latest changes?","translation":"Какая версия содержит последние изменения?","examples":[{"text":"Who told you about the cancellation?","translation_ru":"Кто сообщил тебе об отмене?"},{"text":"Which door leads to the courtyard?","translation_ru":"Какая дверь ведёт во двор?"}]},{"lang":"de","formula":"Wer/Welcher + subject noun + finite predicate?","example":"Welche Version enthält die neuesten Änderungen?","translation":"Какая версия содержит последние изменения?","examples":[{"text":"Wer hat dir von der Absage erzählt?","translation_ru":"Кто сообщил тебе об отмене?"},{"text":"Welche Tür führt zum Innenhof?","translation_ru":"Какая дверь ведёт во двор?"}]}]},
-{"id":"GFL011","set_id":"GFL","pattern":"Which version did you open?","group_title":"A wh-phrase asking for the object with do-support","level":"B2","logic":{"function":"grammar-mechanics","core":"Object wh-question with do-support","form":"Wh-object + did + subject + base verb?","metaphor_ru":"You уже подлежащее, а which version — дополнение. Поэтому нужен did и начальная форма open, не opened."},"langs":[{"lang":"en","formula":"Wh-object phrase + did + subject + bare infinitive?","example":"Which version did you open?","translation":"Какую версию ты открыл?","examples":[{"text":"Who did she invite to the meeting?","translation_ru":"Кого она пригласила на встречу?"},{"text":"Which route did they recommend?","translation_ru":"Какой маршрут они порекомендовали?"}]},{"lang":"de","formula":"Wh-object + finite verb + subject + rest of predicate?","example":"Welche Version hast du geöffnet?","translation":"Какую версию ты открыл?","examples":[{"text":"Wen hat sie zu der Besprechung eingeladen?","translation_ru":"Кого она пригласила на встречу?"},{"text":"Welche Route haben sie empfohlen?","translation_ru":"Какой маршрут они порекомендовали?"}]}]},
-{"id":"GFL012","set_id":"GFL","pattern":"Who are you waiting for?","group_title":"A conversational question leaving the preposition at the end","level":"B2","logic":{"function":"grammar-mechanics","core":"Wh-question with a stranded preposition","form":"Wh-word + auxiliary + subject + verb + preposition?","metaphor_ru":"Конечный for — нормальный разговорный английский, не ошибка. В немецком предлог или wo-композит обычно выносится в начало: auf wen, wofür."},"langs":[{"lang":"en","formula":"Wh-word + auxiliary + subject + verb phrase + required preposition?","example":"Who are you waiting for?","translation":"Кого ты ждёшь?","examples":[{"text":"What does this cable connect to?","translation_ru":"К чему подключается этот кабель?"},{"text":"Which team are you working with?","translation_ru":"С какой командой ты работаешь?"}]},{"lang":"de","formula":"Preposition + wh-pronoun / wo-compound + finite question?","example":"Auf wen wartest du?","translation":"Кого ты ждёшь?","examples":[{"text":"Woran wird dieses Kabel angeschlossen?","translation_ru":"К чему подключается этот кабель?"},{"text":"Mit welchem Team arbeitest du?","translation_ru":"С какой командой ты работаешь?"}]}]},
-{"id":"GFL013","set_id":"GFL","pattern":"I have checked the address, and so has she.","group_title":"Adding an affirmative parallel without repeating the verb phrase","level":"B2","logic":{"function":"grammar-mechanics","core":"Affirmative agreement with so auxiliary subject","form":"Affirmative clause, and so + auxiliary + subject","metaphor_ru":"В коротком согласии порядок so has she, не so she has. Последний вариант обычно подтверждает факт «и правда», а не добавляет второго участника."},"langs":[{"lang":"en","formula":"Affirmative clause, and so + matching auxiliary + second subject","example":"I have checked the address, and so has she.","translation":"Я проверил адрес, и она тоже.","examples":[{"text":"He works from home, and so do I.","translation_ru":"Он работает из дома, и я тоже."},{"text":"We were surprised, and so were they.","translation_ru":"Мы были удивлены, и они тоже."}]},{"lang":"de","formula":"Affirmative clause, und + second subject + matching auxiliary + auch","example":"Ich habe die Adresse geprüft, und sie hat das auch.","translation":"Я проверил адрес, и она тоже.","examples":[{"text":"Er arbeitet von zu Hause aus, und ich auch.","translation_ru":"Он работает из дома, и я тоже."},{"text":"Wir waren überrascht, und sie waren es auch.","translation_ru":"Мы были удивлены, и они тоже."}]}]},
-{"id":"GFL014","set_id":"GFL","pattern":"I haven't seen the final draft, and neither has he.","group_title":"Adding a negative parallel without repeating the predicate","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative agreement with neither auxiliary subject","form":"Negative clause, and neither + auxiliary + subject","metaphor_ru":"Neither уже выражает отрицание, поэтому has без not. Вспомогательный глагол должен соответствовать времени первой части."},"langs":[{"lang":"en","formula":"Negative clause, and neither + matching affirmative auxiliary + second subject","example":"I haven't seen the final draft, and neither has he.","translation":"Я не видел окончательный черновик, и он тоже.","examples":[{"text":"She cannot stay late, and neither can we.","translation_ru":"Она не может задержаться, и мы тоже."},{"text":"They did not receive a reply, and neither did I.","translation_ru":"Они не получили ответа, и я тоже."}]},{"lang":"de","formula":"Negative clause, und + second subject + auch nicht","example":"Ich habe den letzten Entwurf nicht gesehen, und er auch nicht.","translation":"Я не видел окончательный черновик, и он тоже.","examples":[{"text":"Sie kann nicht länger bleiben, und wir auch nicht.","translation_ru":"Она не может задержаться, и мы тоже."},{"text":"Sie haben keine Antwort erhalten, und ich auch nicht.","translation_ru":"Они не получили ответа, и я тоже."}]}]},
-{"id":"GFL015","set_id":"GFL","pattern":"Will she agree? I think so.","group_title":"Replacing an affirmative proposition with so","level":"B2","logic":{"function":"grammar-mechanics","core":"Propositional substitution after think","form":"Question + I think so","metaphor_ru":"So заменяет всю мысль she will agree, не отдельное слово. Это позволяет ответить без повтора полного предложения."},"langs":[{"lang":"en","formula":"Yes-no question? Subject + think(s) so.","example":"Will she agree? I think so.","translation":"Она согласится? Думаю, да.","examples":[{"text":"Is this the right entrance? I think so.","translation_ru":"Это нужный вход? Думаю, да."},{"text":"Have they sent the invitation? She thinks so.","translation_ru":"Они отправили приглашение? Она думает, что да."}]},{"lang":"de","formula":"Yes-no question? Subject + glauben/denken + schon.","example":"Wird sie zustimmen? Ich denke schon.","translation":"Она согласится? Думаю, да.","examples":[{"text":"Ist das der richtige Eingang? Ich glaube schon.","translation_ru":"Это нужный вход? Думаю, да."},{"text":"Haben sie die Einladung geschickt? Sie glaubt schon.","translation_ru":"Они отправили приглашение? Она думает, что да."}]}]},
-{"id":"GFL016","set_id":"GFL","pattern":"Will we need to start again? I hope not.","group_title":"A negative proposition omitted after hope","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative propositional substitution with hope not","form":"Question + I hope not","metaphor_ru":"После hope естественно hope not, а не don't hope so для смысла «надеюсь, нет». Это отличается от обычного I don't think so."},"langs":[{"lang":"en","formula":"Undesired yes-no possibility? Subject + hope(s) not.","example":"Will we need to start again? I hope not.","translation":"Нам придётся начинать заново? Надеюсь, нет.","examples":[{"text":"Is the road still closed? I hope not.","translation_ru":"Дорога всё ещё закрыта? Надеюсь, нет."},{"text":"Has she lost the original? He hopes not.","translation_ru":"Она потеряла оригинал? Он надеется, что нет."}]},{"lang":"de","formula":"Undesired yes-no possibility? Subject + hoffen + nicht.","example":"Müssen wir noch einmal anfangen? Ich hoffe nicht.","translation":"Нам придётся начинать заново? Надеюсь, нет.","examples":[{"text":"Ist die Straße noch gesperrt? Ich hoffe nicht.","translation_ru":"Дорога всё ещё закрыта? Надеюсь, нет."},{"text":"Hat sie das Original verloren? Er hofft nicht.","translation_ru":"Она потеряла оригинал? Он надеется, что нет."}]}]},
-{"id":"GFL017","set_id":"GFL","pattern":"You can change the date, but please do so before Friday.","group_title":"Replacing an action with do so","level":"B2","logic":{"function":"grammar-mechanics","core":"Action substitution with do so","form":"Action clause + do so + new circumstance","metaphor_ru":"Do so заменяет ранее названное действие целиком. Новый срок или способ можно добавить после него, не повторяя change the date."},"langs":[{"lang":"en","formula":"Previously named action, + do/does/did so + circumstance","example":"You can change the date, but please do so before Friday.","translation":"Ты можешь изменить дату, но сделай это до пятницы.","examples":[{"text":"She promised to check the figures and did so immediately.","translation_ru":"Она обещала проверить цифры и сразу это сделала."},{"text":"We need to inform the guests, and we should do so today.","translation_ru":"Нам нужно уведомить гостей, и сделать это следует сегодня."}]},{"lang":"de","formula":"Previously named action + das tun/machen + circumstance","example":"Du kannst den Termin ändern, aber tu das bitte vor Freitag.","translation":"Ты можешь изменить дату, но сделай это до пятницы.","examples":[{"text":"Sie versprach, die Zahlen zu prüfen, und tat das sofort.","translation_ru":"Она обещала проверить цифры и сразу это сделала."},{"text":"Wir müssen die Gäste informieren, und das sollten wir heute tun.","translation_ru":"Нам нужно уведомить гостей, и сделать это следует сегодня."}]}]},
-{"id":"GFL018","set_id":"GFL","pattern":"I haven't called yet, but I intend to.","group_title":"Leaving to in place while omitting an understood infinitive","level":"B2","logic":{"function":"grammar-mechanics","core":"To-infinitive ellipsis","form":"Known action + verb selecting to + stranded to","metaphor_ru":"To может остаться одно, если действие уже названо: intend to call. Это полноценное разговорное и письменное сокращение, не незаконченная фраза."},"langs":[{"lang":"en","formula":"Known action clause, but + subject + verb selecting infinitive + to.","example":"I haven't called yet, but I intend to.","translation":"Я ещё не позвонил, но собираюсь.","examples":[{"text":"She did not reply, although she had promised to.","translation_ru":"Она не ответила, хотя обещала."},{"text":"We have not visited the museum, but we would like to.","translation_ru":"Мы не были в музее, но хотели бы."}]},{"lang":"de","formula":"Known action + natural omitted-action or pronominal continuation","example":"Ich habe noch nicht angerufen, aber ich habe es vor.","translation":"Я ещё не позвонил, но собираюсь.","examples":[{"text":"Sie antwortete nicht, obwohl sie es versprochen hatte.","translation_ru":"Она не ответила, хотя обещала."},{"text":"Wir haben das Museum noch nicht besucht, würden es aber gern tun.","translation_ru":"Мы не были в музее, но хотели бы."}]}]},
-{"id":"GFL019","set_id":"GFL","pattern":"Have you received the file? If so, please confirm.","group_title":"A conditional clause replaced by so","level":"B2","logic":{"function":"grammar-mechanics","core":"Affirmative conditional ellipsis with if so","form":"Question or possibility + if so + consequence","metaphor_ru":"If so означает «если это так» и заменяет if you have received the file. Используйте только при ясном предшествующем утверждении."},"langs":[{"lang":"en","formula":"Yes-no question or possibility. If so, + consequence.","example":"Have you received the file? If so, please confirm.","translation":"Ты получил файл? Если да, подтверди, пожалуйста.","examples":[{"text":"The room may already be booked. If so, we will use another one.","translation_ru":"Возможно, комната уже забронирована. Если так, мы используем другую."},{"text":"Are you free tomorrow? If so, we could meet then.","translation_ru":"Ты свободен завтра? Если да, мы могли бы тогда встретиться."}]},{"lang":"de","formula":"Question or possibility. Falls ja / Wenn ja, + consequence.","example":"Hast du die Datei erhalten? Falls ja, bestätige das bitte.","translation":"Ты получил файл? Если да, подтверди, пожалуйста.","examples":[{"text":"Der Raum könnte bereits gebucht sein. Falls ja, nehmen wir einen anderen.","translation_ru":"Возможно, комната уже забронирована. Если так, мы используем другую."},{"text":"Hast du morgen Zeit? Wenn ja, könnten wir uns dann treffen.","translation_ru":"Ты свободен завтра? Если да, мы могли бы тогда встретиться."}]}]},
-{"id":"GFL020","set_id":"GFL","pattern":"I hope the figures are correct; if not, we will revise them.","group_title":"A negative condition left implicit after a stated proposition","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative conditional ellipsis with if not","form":"Proposition + if not + fallback","metaphor_ru":"If not отрицает предыдущее утверждение целиком. Это не unless с отдельным условием, а короткое «если нет»."},"langs":[{"lang":"en","formula":"Known proposition; if not, + alternative consequence","example":"I hope the figures are correct; if not, we will revise them.","translation":"Надеюсь, цифры верны; если нет, мы их пересмотрим.","examples":[{"text":"The shop may still be open; if not, we can return tomorrow.","translation_ru":"Возможно, магазин ещё открыт; если нет, мы можем вернуться завтра."},{"text":"She might have a spare key; if not, I will call the landlord.","translation_ru":"Возможно, у неё есть запасной ключ; если нет, я позвоню хозяину квартиры."}]},{"lang":"de","formula":"Known proposition; falls nicht, + alternative consequence","example":"Ich hoffe, die Zahlen stimmen; falls nicht, werden wir sie überarbeiten.","translation":"Надеюсь, цифры верны; если нет, мы их пересмотрим.","examples":[{"text":"Der Laden könnte noch offen sein; falls nicht, können wir morgen wiederkommen.","translation_ru":"Возможно, магазин ещё открыт; если нет, мы можем вернуться завтра."},{"text":"Sie hat vielleicht einen Ersatzschlüssel; falls nicht, rufe ich den Vermieter an.","translation_ru":"Возможно, у неё есть запасной ключ; если нет, я позвоню хозяину квартиры."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFL",
+  "title": "Questions, tags and ellipsis",
+  "title_ru": "Вопросы, хвостики и сокращения",
+  "patterns": [
+    {
+      "id": "GFL001",
+      "set_id": "GFL",
+      "pattern": "Didn't you receive the updated timetable?",
+      "group_title": "A negative question checking an expectation",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative yes-no question expressing surprise",
+        "form": "Negative auxiliary + subject + base verb?",
+        "metaphor_ru": "Часто говорящий ожидал положительный ответ и удивлён. На Didn't you receive? ответ Yes, I did подтверждает получение, а No, I didn't отрицает его."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Didn't + subject + bare infinitive phrase?",
+          "example": "Didn't you receive the updated timetable?",
+          "translation": "Разве ты не получил обновлённое расписание?",
+          "examples": [
+            {
+              "text": "Didn't she mention the change?",
+              "translation_ru": "Разве она не упомянула изменение?"
+            },
+            {
+              "text": "Didn't we agree to meet at the main entrance?",
+              "translation_ru": "Разве мы не договорились встретиться у главного входа?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Haben/sein + subject + nicht + participle phrase?",
+          "example": "Hast du den aktualisierten Fahrplan nicht erhalten?",
+          "translation": "Разве ты не получил обновлённое расписание?",
+          "examples": [
+            {
+              "text": "Hat sie die Änderung nicht erwähnt?",
+              "translation_ru": "Разве она не упомянула изменение?"
+            },
+            {
+              "text": "Hatten wir nicht vereinbart, uns am Haupteingang zu treffen?",
+              "translation_ru": "Разве мы не договорились встретиться у главного входа?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отрицательный вопрос и ожидание",
+      "title_en": "A negative question checking an expectation",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL002",
+      "set_id": "GFL",
+      "pattern": "Everyone has received a copy, haven't they?",
+      "group_title": "A singular indefinite subject with a plural tag pronoun",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Singular they in tags after indefinite people pronouns",
+        "form": "Everyone/someone + singular verb, plural auxiliary + they?",
+        "metaphor_ru": "Everyone согласуется с has в основной части, но tag обычно использует they: haven't they. Немецкий обычно добавляет oder, без такого согласования."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Indefinite person pronoun + singular affirmative clause, negative auxiliary + they?",
+          "example": "Everyone has received a copy, haven't they?",
+          "translation": "Все получили копию, верно?",
+          "examples": [
+            {
+              "text": "Someone knows the answer, don't they?",
+              "translation_ru": "Кто-то ведь знает ответ, верно?"
+            },
+            {
+              "text": "Everybody is ready, aren't they?",
+              "translation_ru": "Все готовы, верно?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Statement about people, oder?",
+          "example": "Alle haben eine Kopie erhalten, oder?",
+          "translation": "Все получили копию, верно?",
+          "examples": [
+            {
+              "text": "Jemand kennt die Antwort, oder?",
+              "translation_ru": "Кто-то ведь знает ответ, верно?"
+            },
+            {
+              "text": "Alle sind bereit, oder?",
+              "translation_ru": "Все готовы, верно?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Everyone и хвостик с they",
+      "title_en": "A singular indefinite subject with a plural tag pronoun",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL003",
+      "set_id": "GFL",
+      "pattern": "I'm next on the list, aren't I?",
+      "group_title": "The special negative tag after I am",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Aren't I after affirmative I am",
+        "form": "I am + complement, aren't I?",
+        "metaphor_ru": "Стандартный разговорный tag после I'm — aren't I, не amn't I в большинстве международных вариантов английского. Формальное am I not тоже возможно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I am + affirmative complement, aren't I?",
+          "example": "I'm next on the list, aren't I?",
+          "translation": "Я следующий в списке, верно?",
+          "examples": [
+            {
+              "text": "I'm supposed to bring the original, aren't I?",
+              "translation_ru": "Я должен принести оригинал, верно?"
+            },
+            {
+              "text": "I'm a little early, aren't I?",
+              "translation_ru": "Я немного рано, верно?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich bin/soll + statement, oder?",
+          "example": "Ich bin als Nächster auf der Liste, oder?",
+          "translation": "Я следующий в списке, верно?",
+          "examples": [
+            {
+              "text": "Ich soll das Original mitbringen, oder?",
+              "translation_ru": "Я должен принести оригинал, верно?"
+            },
+            {
+              "text": "Ich bin etwas früh dran, oder?",
+              "translation_ru": "Я немного рано, верно?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Особое сочетание I am — arent I",
+      "title_en": "The special negative tag after I am",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL004",
+      "set_id": "GFL",
+      "pattern": "Let's check the details once more, shall we?",
+      "group_title": "A collaborative proposal followed by a special tag",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Shall we tag after let us",
+        "form": "Let's + infinitive, shall we?",
+        "metaphor_ru": "После let's обычен shall we, не do we. Это приглашение к совместному действию, а не вопрос о будущем расписании."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Let's + bare infinitive phrase, shall we?",
+          "example": "Let's check the details once more, shall we?",
+          "translation": "Давайте ещё раз проверим детали, хорошо?",
+          "examples": [
+            {
+              "text": "Let's take a short break, shall we?",
+              "translation_ru": "Давайте сделаем небольшой перерыв, хорошо?"
+            },
+            {
+              "text": "Let's leave the final choice until tomorrow, shall we?",
+              "translation_ru": "Давайте оставим окончательный выбор до завтра, хорошо?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Lass uns / Lasst uns + infinitive, ja?",
+          "example": "Lasst uns die Einzelheiten noch einmal prüfen, ja?",
+          "translation": "Давайте ещё раз проверим детали, хорошо?",
+          "examples": [
+            {
+              "text": "Lasst uns eine kurze Pause machen, ja?",
+              "translation_ru": "Давайте сделаем небольшой перерыв, хорошо?"
+            },
+            {
+              "text": "Lasst uns die endgültige Entscheidung bis morgen aufschieben, ja?",
+              "translation_ru": "Давайте оставим окончательный выбор до завтра, хорошо?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предложение с shall we",
+      "title_en": "A collaborative proposal followed by a special tag",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL005",
+      "set_id": "GFL",
+      "pattern": "Keep this between us, will you?",
+      "group_title": "A request followed by a willingness tag",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Will you tag after an imperative",
+        "form": "Imperative, will you?",
+        "metaphor_ru": "Will you после повеления проверяет готовность выполнить просьбу. Тон зависит от интонации: это может быть дружелюбная просьба или раздражённое требование."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Affirmative or negative imperative, will you?",
+          "example": "Keep this between us, will you?",
+          "translation": "Пусть это останется между нами, хорошо?",
+          "examples": [
+            {
+              "text": "Don't forget the receipt, will you?",
+              "translation_ru": "Не забудь чек, хорошо?"
+            },
+            {
+              "text": "Send me the final version, will you?",
+              "translation_ru": "Отправь мне окончательную версию, хорошо?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Imperative, ja?",
+          "example": "Behalte das für dich, ja?",
+          "translation": "Пусть это останется между нами, хорошо?",
+          "examples": [
+            {
+              "text": "Vergiss den Beleg nicht, ja?",
+              "translation_ru": "Не забудь чек, хорошо?"
+            },
+            {
+              "text": "Schick mir die endgültige Version, ja?",
+              "translation_ru": "Отправь мне окончательную версию, хорошо?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Просьба с will you",
+      "title_en": "A request followed by a willingness tag",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL006",
+      "set_id": "GFL",
+      "pattern": "She hardly ever complains, does she?",
+      "group_title": "A positive tag after a word with negative meaning",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Positive tag after hardly, never or seldom",
+        "form": "Negative-meaning adverb clause, affirmative tag?",
+        "metaphor_ru": "Hardly и never уже делают мысль отрицательной по смыслу. Поэтому tag положительный, даже если в главной части нет not."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + negative-meaning adverb + predicate, affirmative auxiliary + pronoun?",
+          "example": "She hardly ever complains, does she?",
+          "translation": "Она почти никогда не жалуется, верно?",
+          "examples": [
+            {
+              "text": "He has never used this system, has he?",
+              "translation_ru": "Он никогда не пользовался этой системой, верно?"
+            },
+            {
+              "text": "They seldom arrive late, do they?",
+              "translation_ru": "Они редко опаздывают, верно?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Negative-meaning statement, oder?",
+          "example": "Sie beschwert sich fast nie, oder?",
+          "translation": "Она почти никогда не жалуется, верно?",
+          "examples": [
+            {
+              "text": "Er hat dieses System noch nie benutzt, oder?",
+              "translation_ru": "Он никогда не пользовался этой системой, верно?"
+            },
+            {
+              "text": "Sie kommen selten zu spät, oder?",
+              "translation_ru": "Они редко опаздывают, верно?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Положительный хвостик после hardly",
+      "title_en": "A positive tag after a word with negative meaning",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL007",
+      "set_id": "GFL",
+      "pattern": "There should be another copy, shouldn't there?",
+      "group_title": "An existential clause retaining there in its tag",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Existential there in a question tag",
+        "form": "There + auxiliary + predicate, reverse-polarity auxiliary + there?",
+        "metaphor_ru": "There остаётся в tag вместо it. Вспомогательный глагол берётся из основной части: should → shouldn't, has → hasn't."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There + affirmative existential clause, matching negative auxiliary + there?",
+          "example": "There should be another copy, shouldn't there?",
+          "translation": "Должна быть ещё одна копия, верно?",
+          "examples": [
+            {
+              "text": "There has been a change, hasn't there?",
+              "translation_ru": "Произошло изменение, верно?"
+            },
+            {
+              "text": "There were two entrances, weren't there?",
+              "translation_ru": "Там было два входа, верно?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es gibt/gab/müsste geben + statement, oder?",
+          "example": "Es müsste noch eine Kopie geben, oder?",
+          "translation": "Должна быть ещё одна копия, верно?",
+          "examples": [
+            {
+              "text": "Es hat eine Änderung gegeben, oder?",
+              "translation_ru": "Произошло изменение, верно?"
+            },
+            {
+              "text": "Es gab zwei Eingänge, oder?",
+              "translation_ru": "Там было два входа, верно?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "There остаётся в хвостике",
+      "title_en": "An existential clause retaining there in its tag",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL008",
+      "set_id": "GFL",
+      "pattern": "You paid how much for that chair?",
+      "group_title": "Repeating a surprising detail as an echo question",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "In-situ wh-word in an echo question",
+        "form": "Statement order with a wh-phrase in the missing slot",
+        "metaphor_ru": "Разговорный переспрос может сохранить порядок утверждения и поставить how much на месте удивившей суммы. Это не нейтральный информационный вопрос."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + ordinary predicate + in-situ wh-phrase?",
+          "example": "You paid how much for that chair?",
+          "translation": "Ты сколько заплатил за этот стул?",
+          "examples": [
+            {
+              "text": "She wants to meet at what time?",
+              "translation_ru": "Она хочет встретиться во сколько?"
+            },
+            {
+              "text": "They sent the parcel where?",
+              "translation_ru": "Они куда отправили посылку?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + finite verb in second position + ... + wh-phrase + remaining verb parts?",
+          "example": "Du hast wie viel für den Stuhl bezahlt?",
+          "translation": "Ты сколько заплатил за этот стул?",
+          "examples": [
+            {
+              "text": "Sie will sich um wie viel Uhr treffen?",
+              "translation_ru": "Она хочет встретиться во сколько?"
+            },
+            {
+              "text": "Sie haben das Paket wohin geschickt?",
+              "translation_ru": "Они куда отправили посылку?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Удивлённый переспрос",
+      "title_en": "Repeating a surprising detail as an echo question",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL009",
+      "set_id": "GFL",
+      "pattern": "Could you tell me how long the check usually takes?",
+      "group_title": "A polite outer question containing a statement-ordered inner question",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Polite embedded question with only outer inversion",
+        "form": "Could you tell me + wh-clause in ordinary order?",
+        "metaphor_ru": "Инверсия есть только снаружи: Could you. Внутри — the check takes, не does the check take; вопросительный знак завершает всё предложение."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could you tell me + wh-word/phrase + subject + ordinary predicate?",
+          "example": "Could you tell me how long the check usually takes?",
+          "translation": "Не могли бы вы сказать, сколько обычно занимает проверка?",
+          "examples": [
+            {
+              "text": "Could you tell me where the nearest entrance is?",
+              "translation_ru": "Не могли бы вы сказать, где ближайший вход?"
+            },
+            {
+              "text": "Could you tell me which version we should use?",
+              "translation_ru": "Не могли бы вы сказать, какую версию нам использовать?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Könnten Sie mir sagen, wh-word + subordinate clause?",
+          "example": "Könnten Sie mir sagen, wie lange die Prüfung normalerweise dauert?",
+          "translation": "Не могли бы вы сказать, сколько обычно занимает проверка?",
+          "examples": [
+            {
+              "text": "Könnten Sie mir sagen, wo der nächste Eingang ist?",
+              "translation_ru": "Не могли бы вы сказать, где ближайший вход?"
+            },
+            {
+              "text": "Könnten Sie mir sagen, welche Version wir verwenden sollen?",
+              "translation_ru": "Не могли бы вы сказать, какую версию нам использовать?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вежливый вложенный вопрос",
+      "title_en": "A polite outer question containing a statement-ordered inner question",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL010",
+      "set_id": "GFL",
+      "pattern": "Which version contains the latest changes?",
+      "group_title": "A wh-phrase asking for the subject without do-support",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Subject wh-question without auxiliary insertion",
+        "form": "Wh-subject + tensed predicate?",
+        "metaphor_ru": "Which version само является подлежащим. Поэтому contains идёт сразу после него, без does; сравните Which version did you open?, где вопрос о дополнении."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Who/Which + subject noun + tensed predicate?",
+          "example": "Which version contains the latest changes?",
+          "translation": "Какая версия содержит последние изменения?",
+          "examples": [
+            {
+              "text": "Who told you about the cancellation?",
+              "translation_ru": "Кто сообщил тебе об отмене?"
+            },
+            {
+              "text": "Which door leads to the courtyard?",
+              "translation_ru": "Какая дверь ведёт во двор?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wer/Welcher + subject noun + finite predicate?",
+          "example": "Welche Version enthält die neuesten Änderungen?",
+          "translation": "Какая версия содержит последние изменения?",
+          "examples": [
+            {
+              "text": "Wer hat dir von der Absage erzählt?",
+              "translation_ru": "Кто сообщил тебе об отмене?"
+            },
+            {
+              "text": "Welche Tür führt zum Innenhof?",
+              "translation_ru": "Какая дверь ведёт во двор?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вопрос к подлежащему без do",
+      "title_en": "A wh-phrase asking for the subject without do-support",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL011",
+      "set_id": "GFL",
+      "pattern": "Which version did you open?",
+      "group_title": "A wh-phrase asking for the object with do-support",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Object wh-question with do-support",
+        "form": "Wh-object + did + subject + base verb?",
+        "metaphor_ru": "You уже подлежащее, а which version — дополнение. Поэтому нужен did и начальная форма open, не opened."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Wh-object phrase + did + subject + bare infinitive?",
+          "example": "Which version did you open?",
+          "translation": "Какую версию ты открыл?",
+          "examples": [
+            {
+              "text": "Who did she invite to the meeting?",
+              "translation_ru": "Кого она пригласила на встречу?"
+            },
+            {
+              "text": "Which route did they recommend?",
+              "translation_ru": "Какой маршрут они порекомендовали?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wh-object + finite verb + subject + rest of predicate?",
+          "example": "Welche Version hast du geöffnet?",
+          "translation": "Какую версию ты открыл?",
+          "examples": [
+            {
+              "text": "Wen hat sie zu der Besprechung eingeladen?",
+              "translation_ru": "Кого она пригласила на встречу?"
+            },
+            {
+              "text": "Welche Route haben sie empfohlen?",
+              "translation_ru": "Какой маршрут они порекомендовали?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вопрос к дополнению с did",
+      "title_en": "A wh-phrase asking for the object with do-support",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL012",
+      "set_id": "GFL",
+      "pattern": "Who are you waiting for?",
+      "group_title": "A conversational question leaving the preposition at the end",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Wh-question with a stranded preposition",
+        "form": "Wh-word + auxiliary + subject + verb + preposition?",
+        "metaphor_ru": "Конечный for — нормальный разговорный английский, не ошибка. В немецком предлог или wo-композит обычно выносится в начало: auf wen, wofür."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Wh-word + auxiliary + subject + verb phrase + required preposition?",
+          "example": "Who are you waiting for?",
+          "translation": "Кого ты ждёшь?",
+          "examples": [
+            {
+              "text": "What does this cable connect to?",
+              "translation_ru": "К чему подключается этот кабель?"
+            },
+            {
+              "text": "Which team are you working with?",
+              "translation_ru": "С какой командой ты работаешь?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Preposition + wh-pronoun / wo-compound + finite question?",
+          "example": "Auf wen wartest du?",
+          "translation": "Кого ты ждёшь?",
+          "examples": [
+            {
+              "text": "Woran wird dieses Kabel angeschlossen?",
+              "translation_ru": "К чему подключается этот кабель?"
+            },
+            {
+              "text": "Mit welchem Team arbeitest du?",
+              "translation_ru": "С какой командой ты работаешь?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предлог в конце вопроса",
+      "title_en": "A conversational question leaving the preposition at the end",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL013",
+      "set_id": "GFL",
+      "pattern": "I have checked the address, and so has she.",
+      "group_title": "Adding an affirmative parallel without repeating the verb phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Affirmative agreement with so auxiliary subject",
+        "form": "Affirmative clause, and so + auxiliary + subject",
+        "metaphor_ru": "В коротком согласии порядок so has she, не so she has. Последний вариант обычно подтверждает факт «и правда», а не добавляет второго участника."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Affirmative clause, and so + matching auxiliary + second subject",
+          "example": "I have checked the address, and so has she.",
+          "translation": "Я проверил адрес, и она тоже.",
+          "examples": [
+            {
+              "text": "He works from home, and so do I.",
+              "translation_ru": "Он работает из дома, и я тоже."
+            },
+            {
+              "text": "We were surprised, and so were they.",
+              "translation_ru": "Мы были удивлены, и они тоже."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Affirmative clause, und + second subject + matching auxiliary + auch",
+          "example": "Ich habe die Adresse geprüft, und sie hat das auch.",
+          "translation": "Я проверил адрес, и она тоже.",
+          "examples": [
+            {
+              "text": "Er arbeitet von zu Hause aus, und ich auch.",
+              "translation_ru": "Он работает из дома, и я тоже."
+            },
+            {
+              "text": "Wir waren überrascht, und sie waren es auch.",
+              "translation_ru": "Мы были удивлены, и они тоже."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Утвердительное присоединение с so",
+      "title_en": "Adding an affirmative parallel without repeating the verb phrase",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL014",
+      "set_id": "GFL",
+      "pattern": "I haven't seen the final draft, and neither has he.",
+      "group_title": "Adding a negative parallel without repeating the predicate",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative agreement with neither auxiliary subject",
+        "form": "Negative clause, and neither + auxiliary + subject",
+        "metaphor_ru": "Neither уже выражает отрицание, поэтому has без not. Вспомогательный глагол должен соответствовать времени первой части."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Negative clause, and neither + matching affirmative auxiliary + second subject",
+          "example": "I haven't seen the final draft, and neither has he.",
+          "translation": "Я не видел окончательный черновик, и он тоже.",
+          "examples": [
+            {
+              "text": "She cannot stay late, and neither can we.",
+              "translation_ru": "Она не может задержаться, и мы тоже."
+            },
+            {
+              "text": "They did not receive a reply, and neither did I.",
+              "translation_ru": "Они не получили ответа, и я тоже."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Negative clause, und + second subject + auch nicht",
+          "example": "Ich habe den letzten Entwurf nicht gesehen, und er auch nicht.",
+          "translation": "Я не видел окончательный черновик, и он тоже.",
+          "examples": [
+            {
+              "text": "Sie kann nicht länger bleiben, und wir auch nicht.",
+              "translation_ru": "Она не может задержаться, и мы тоже."
+            },
+            {
+              "text": "Sie haben keine Antwort erhalten, und ich auch nicht.",
+              "translation_ru": "Они не получили ответа, и я тоже."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отрицательное присоединение с neither",
+      "title_en": "Adding a negative parallel without repeating the predicate",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL015",
+      "set_id": "GFL",
+      "pattern": "Will she agree? I think so.",
+      "group_title": "Replacing an affirmative proposition with so",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Propositional substitution after think",
+        "form": "Question + I think so",
+        "metaphor_ru": "So заменяет всю мысль she will agree, не отдельное слово. Это позволяет ответить без повтора полного предложения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Yes-no question? Subject + think(s) so.",
+          "example": "Will she agree? I think so.",
+          "translation": "Она согласится? Думаю, да.",
+          "examples": [
+            {
+              "text": "Is this the right entrance? I think so.",
+              "translation_ru": "Это нужный вход? Думаю, да."
+            },
+            {
+              "text": "Have they sent the invitation? She thinks so.",
+              "translation_ru": "Они отправили приглашение? Она думает, что да."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Yes-no question? Subject + glauben/denken + schon.",
+          "example": "Wird sie zustimmen? Ich denke schon.",
+          "translation": "Она согласится? Думаю, да.",
+          "examples": [
+            {
+              "text": "Ist das der richtige Eingang? Ich glaube schon.",
+              "translation_ru": "Это нужный вход? Думаю, да."
+            },
+            {
+              "text": "Haben sie die Einladung geschickt? Sie glaubt schon.",
+              "translation_ru": "Они отправили приглашение? Она думает, что да."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Заменить утверждение словом so",
+      "title_en": "Replacing an affirmative proposition with so",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL016",
+      "set_id": "GFL",
+      "pattern": "Will we need to start again? I hope not.",
+      "group_title": "A negative proposition omitted after hope",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative propositional substitution with hope not",
+        "form": "Question + I hope not",
+        "metaphor_ru": "После hope естественно hope not, а не don't hope so для смысла «надеюсь, нет». Это отличается от обычного I don't think so."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Undesired yes-no possibility? Subject + hope(s) not.",
+          "example": "Will we need to start again? I hope not.",
+          "translation": "Нам придётся начинать заново? Надеюсь, нет.",
+          "examples": [
+            {
+              "text": "Is the road still closed? I hope not.",
+              "translation_ru": "Дорога всё ещё закрыта? Надеюсь, нет."
+            },
+            {
+              "text": "Has she lost the original? He hopes not.",
+              "translation_ru": "Она потеряла оригинал? Он надеется, что нет."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Undesired yes-no possibility? Subject + hoffen + nicht.",
+          "example": "Müssen wir noch einmal anfangen? Ich hoffe nicht.",
+          "translation": "Нам придётся начинать заново? Надеюсь, нет.",
+          "examples": [
+            {
+              "text": "Ist die Straße noch gesperrt? Ich hoffe nicht.",
+              "translation_ru": "Дорога всё ещё закрыта? Надеюсь, нет."
+            },
+            {
+              "text": "Hat sie das Original verloren? Er hofft nicht.",
+              "translation_ru": "Она потеряла оригинал? Он надеется, что нет."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Надеюсь, нет: hope not",
+      "title_en": "A negative proposition omitted after hope",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL017",
+      "set_id": "GFL",
+      "pattern": "You can change the date, but please do so before Friday.",
+      "group_title": "Replacing an action with do so",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Action substitution with do so",
+        "form": "Action clause + do so + new circumstance",
+        "metaphor_ru": "Do so заменяет ранее названное действие целиком. Новый срок или способ можно добавить после него, не повторяя change the date."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Previously named action, + do/does/did so + circumstance",
+          "example": "You can change the date, but please do so before Friday.",
+          "translation": "Ты можешь изменить дату, но сделай это до пятницы.",
+          "examples": [
+            {
+              "text": "She promised to check the figures and did so immediately.",
+              "translation_ru": "Она обещала проверить цифры и сразу это сделала."
+            },
+            {
+              "text": "We need to inform the guests, and we should do so today.",
+              "translation_ru": "Нам нужно уведомить гостей, и сделать это следует сегодня."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Previously named action + das tun/machen + circumstance",
+          "example": "Du kannst den Termin ändern, aber tu das bitte vor Freitag.",
+          "translation": "Ты можешь изменить дату, но сделай это до пятницы.",
+          "examples": [
+            {
+              "text": "Sie versprach, die Zahlen zu prüfen, und tat das sofort.",
+              "translation_ru": "Она обещала проверить цифры и сразу это сделала."
+            },
+            {
+              "text": "Wir müssen die Gäste informieren, und das sollten wir heute tun.",
+              "translation_ru": "Нам нужно уведомить гостей, и сделать это следует сегодня."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Заменить действие через do so",
+      "title_en": "Replacing an action with do so",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL018",
+      "set_id": "GFL",
+      "pattern": "I haven't called yet, but I intend to.",
+      "group_title": "Leaving to in place while omitting an understood infinitive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "To-infinitive ellipsis",
+        "form": "Known action + verb selecting to + stranded to",
+        "metaphor_ru": "To может остаться одно, если действие уже названо: intend to call. Это полноценное разговорное и письменное сокращение, не незаконченная фраза."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Known action clause, but + subject + verb selecting infinitive + to.",
+          "example": "I haven't called yet, but I intend to.",
+          "translation": "Я ещё не позвонил, но собираюсь.",
+          "examples": [
+            {
+              "text": "She did not reply, although she had promised to.",
+              "translation_ru": "Она не ответила, хотя обещала."
+            },
+            {
+              "text": "We have not visited the museum, but we would like to.",
+              "translation_ru": "Мы не были в музее, но хотели бы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Known action + natural omitted-action or pronominal continuation",
+          "example": "Ich habe noch nicht angerufen, aber ich habe es vor.",
+          "translation": "Я ещё не позвонил, но собираюсь.",
+          "examples": [
+            {
+              "text": "Sie antwortete nicht, obwohl sie es versprochen hatte.",
+              "translation_ru": "Она не ответила, хотя обещала."
+            },
+            {
+              "text": "Wir haben das Museum noch nicht besucht, würden es aber gern tun.",
+              "translation_ru": "Мы не были в музее, но хотели бы."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Инфинитив опущен, to остаётся",
+      "title_en": "Leaving to in place while omitting an understood infinitive",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL019",
+      "set_id": "GFL",
+      "pattern": "Have you received the file? If so, please confirm.",
+      "group_title": "A conditional clause replaced by so",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Affirmative conditional ellipsis with if so",
+        "form": "Question or possibility + if so + consequence",
+        "metaphor_ru": "If so означает «если это так» и заменяет if you have received the file. Используйте только при ясном предшествующем утверждении."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Yes-no question or possibility. If so, + consequence.",
+          "example": "Have you received the file? If so, please confirm.",
+          "translation": "Ты получил файл? Если да, подтверди, пожалуйста.",
+          "examples": [
+            {
+              "text": "The room may already be booked. If so, we will use another one.",
+              "translation_ru": "Возможно, комната уже забронирована. Если так, мы используем другую."
+            },
+            {
+              "text": "Are you free tomorrow? If so, we could meet then.",
+              "translation_ru": "Ты свободен завтра? Если да, мы могли бы тогда встретиться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Question or possibility. Falls ja / Wenn ja, + consequence.",
+          "example": "Hast du die Datei erhalten? Falls ja, bestätige das bitte.",
+          "translation": "Ты получил файл? Если да, подтверди, пожалуйста.",
+          "examples": [
+            {
+              "text": "Der Raum könnte bereits gebucht sein. Falls ja, nehmen wir einen anderen.",
+              "translation_ru": "Возможно, комната уже забронирована. Если так, мы используем другую."
+            },
+            {
+              "text": "Hast du morgen Zeit? Wenn ja, könnten wir uns dann treffen.",
+              "translation_ru": "Ты свободен завтра? Если да, мы могли бы тогда встретиться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Если да: if so",
+      "title_en": "A conditional clause replaced by so",
+      "group_id": "GFL"
+    },
+    {
+      "id": "GFL020",
+      "set_id": "GFL",
+      "pattern": "I hope the figures are correct; if not, we will revise them.",
+      "group_title": "A negative condition left implicit after a stated proposition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative conditional ellipsis with if not",
+        "form": "Proposition + if not + fallback",
+        "metaphor_ru": "If not отрицает предыдущее утверждение целиком. Это не unless с отдельным условием, а короткое «если нет»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Known proposition; if not, + alternative consequence",
+          "example": "I hope the figures are correct; if not, we will revise them.",
+          "translation": "Надеюсь, цифры верны; если нет, мы их пересмотрим.",
+          "examples": [
+            {
+              "text": "The shop may still be open; if not, we can return tomorrow.",
+              "translation_ru": "Возможно, магазин ещё открыт; если нет, мы можем вернуться завтра."
+            },
+            {
+              "text": "She might have a spare key; if not, I will call the landlord.",
+              "translation_ru": "Возможно, у неё есть запасной ключ; если нет, я позвоню хозяину квартиры."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Known proposition; falls nicht, + alternative consequence",
+          "example": "Ich hoffe, die Zahlen stimmen; falls nicht, werden wir sie überarbeiten.",
+          "translation": "Надеюсь, цифры верны; если нет, мы их пересмотрим.",
+          "examples": [
+            {
+              "text": "Der Laden könnte noch offen sein; falls nicht, können wir morgen wiederkommen.",
+              "translation_ru": "Возможно, магазин ещё открыт; если нет, мы можем вернуться завтра."
+            },
+            {
+              "text": "Sie hat vielleicht einen Ersatzschlüssel; falls nicht, rufe ich den Vermieter an.",
+              "translation_ru": "Возможно, у неё есть запасной ключ; если нет, я позвоню хозяину квартиры."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Если нет: if not",
+      "title_en": "A negative condition left implicit after a stated proposition",
+      "group_id": "GFL"
+    }
+  ]
+}

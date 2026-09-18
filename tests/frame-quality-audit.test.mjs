@@ -30,9 +30,18 @@ test("Frame audit covers every current study set and Pattern record", () => {
   assert.equal(Object.keys(audit.setMetrics).length, content.studySets.sets.length);
 });
 
-test("slot normalization exposes the known HED contextual-variant family", () => {
+test("slot normalization detects historical HED substitutions in an explicit fixture", () => {
   const content = loadContent();
-  const audit = buildFrameQualityAudit(content);
+  const retained = content.advancedPatterns.find(pattern => pattern.id === "C1HED001");
+  assert.ok(retained);
+  assert.ok(!content.advancedPatterns.some(pattern => pattern.id === "C1HED002"), "retired duplicate must not be restored to satisfy the detector test");
+  const fixture = ["a funding proposal", "a delayed product launch"].map((slot, index) => ({
+    ...structuredClone(retained), id: `C1HED00${index + 1}`,
+    langs: retained.langs.map(language => language.lang === "en"
+      ? { ...language, formula: `It would be premature to conclude that [${slot}] is settled.` }
+      : language)
+  }));
+  const audit = buildFrameQualityAudit({ ...content, advancedPatterns: fixture });
   const hed = audit.duplicateGroups.slotVariants.find((group) =>
     group.set_id === "HED"
     && group.lang === "en"

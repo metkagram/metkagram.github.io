@@ -1,25 +1,547 @@
 {
   "schemaVersion": 1,
   "sets": [
-    {"id":"CGR","title_en":"Contrast grammar","title_ru":"Грамматика через контрасты","description":"Choose between easily confused structures by meaning, not by rule name.","description_ru":"Выбирайте между похожими конструкциями по смыслу, а не по названию правила.","level":"B2–C1","path":"CGR"},
-    {"id":"SPK","title_en":"Spoken grammar","title_ru":"Грамматика живой речи","description":"Use compact spoken frames that organise an idea naturally in conversation.","description_ru":"Используйте компактные разговорные каркасы, которые естественно организуют мысль.","level":"B2–C1","path":"SPK"},
-    {"id":"INT","title_en":"Interaction moves","title_ru":"Управление разговором","description":"Enter, hold, redirect and close a turn without losing the thread.","description_ru":"Входите в разговор, удерживайте ход мысли, перенаправляйте и завершайте реплику.","level":"B2–C1","path":"INT"},
-    {"id":"REG","title_en":"Register shifting","title_ru":"Переключение регистра","description":"Express the same intent in casual, neutral and professional language.","description_ru":"Выражайте одну и ту же мысль в разговорном, нейтральном и профессиональном регистре.","level":"B2–C1","path":"REG"},
-    {"id":"RTR","title_en":"Russian-speaker transfer traps","title_ru":"Ловушки переноса из русского","description":"Correct recurring English and German structures that Russian speakers tend to transfer literally.","description_ru":"Исправляйте типичные английские и немецкие конструкции, которые русскоязычные переносят буквально.","level":"B2–C1","path":"RTR"},
-    {"id":"TRN","title_en":"Transformations and reformulation","title_ru":"Трансформации и переформулирование","description":"Rebuild the same meaning with a different grammatical or discourse frame.","description_ru":"Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.","level":"B2–C1","path":"TRN"},
-    {"id":"FRM","title_en":"Problem framing and reframing","title_ru":"Постановка и переопределение проблемы","description":"Define the problem before solving it, expose hidden assumptions, and choose a more useful frame.","description_ru":"Определяйте проблему до поиска решения, выявляйте скрытые допущения и выбирайте более полезную рамку.","level":"B2–C1","path":"FRM"},
-    {"id":"UNC","title_en":"Reasoning under uncertainty","title_ru":"Рассуждение в условиях неопределённости","description":"Separate evidence from assumptions, calibrate confidence, and identify what information would change the conclusion.","description_ru":"Отделяйте данные от предположений, соразмеряйте уверенность и определяйте, какая информация изменит вывод.","level":"B2–C1","path":"UNC"},
-    {"id":"SYS","title_en":"Systems thinking","title_ru":"Системное мышление","description":"Trace second-order effects, bottlenecks, local optimisation, and the drivers that keep a problem recurring.","description_ru":"Отслеживайте эффекты второго порядка, узкие места, локальную оптимизацию и причины повторяющихся проблем.","level":"B2–C1","path":"SYS"},
-    {"id":"DEC","title_en":"Decision quality and trade-offs","title_ru":"Качество решений и компромиссы","description":"Compare options by explicit criteria, weigh the cost of delay, and preserve useful flexibility when certainty is impossible.","description_ru":"Сравнивайте варианты по явным критериям, учитывайте цену ожидания и сохраняйте гибкость, когда полной уверенности быть не может.","level":"B2–C1","path":"DEC"},
-    {"id":"CDG","title_en":"Causal diagnosis","title_ru":"Причинная диагностика","description":"Separate triggers from causes, compare mechanisms, and diagnose causal structure without treating sequence as proof.","description_ru":"Отделяйте триггеры от причин, сравнивайте механизмы и диагностируйте причинную структуру без подмены причинности последовательностью.","level":"B2–C1","path":"CDG"},
-    {"id":"HYP","title_en":"Hypothesis testing","title_ru":"Проверка гипотез","description":"Turn explanations into testable predictions, seek discriminating evidence, and revise claims when the data require it.","description_ru":"Превращайте объяснения в проверяемые предсказания, ищите различающие данные и пересматривайте выводы, когда этого требуют факты.","level":"B2–C1","path":"HYP"},
-    {"id":"PST","title_en":"Perspective taking","title_ru":"Смена перспективы","description":"Represent another viewpoint fairly, separate positions from interests, and locate the real source of disagreement.","description_ru":"Корректно представляйте чужую точку зрения, отделяйте позиции от интересов и находите реальный источник разногласия.","level":"B2–C1","path":"PST"},
-    {"id":"META","title_en":"Metacognitive learning","title_ru":"Метакогнитивное обучение","description":"Notice what you recognise but cannot recall, diagnose recurring errors, and convert feedback into the next practice target.","description_ru":"Замечайте разницу между узнаванием и воспроизведением, диагностируйте повторяющиеся ошибки и превращайте обратную связь в следующий объект практики.","level":"B2–C1","path":"META"}
+    {
+      "id": "CGR",
+      "title_en": "Contrast grammar",
+      "title_ru": "Грамматика через контрасты",
+      "description": "Choose between easily confused structures by meaning, not by rule name.",
+      "description_ru": "Выбирайте между похожими конструкциями по смыслу, а не по названию правила.",
+      "level": "B2–C1",
+      "path": "CGR"
+    },
+    {
+      "id": "SPK",
+      "title_en": "Spoken grammar",
+      "title_ru": "Грамматика живой речи",
+      "description": "Use compact spoken frames that organise an idea naturally in conversation.",
+      "description_ru": "Используйте компактные разговорные каркасы, которые естественно организуют мысль.",
+      "level": "B2–C1",
+      "path": "SPK"
+    },
+    {
+      "id": "INT",
+      "title_en": "Interaction moves",
+      "title_ru": "Управление разговором",
+      "description": "Enter, hold, redirect and close a turn without losing the thread.",
+      "description_ru": "Входите в разговор, удерживайте ход мысли, перенаправляйте и завершайте реплику.",
+      "level": "B2–C1",
+      "path": "INT"
+    },
+    {
+      "id": "REG",
+      "title_en": "Register shifting",
+      "title_ru": "Переключение регистра",
+      "description": "Express the same intent in casual, neutral and professional language.",
+      "description_ru": "Выражайте одну и ту же мысль в разговорном, нейтральном и профессиональном регистре.",
+      "level": "B2–C1",
+      "path": "REG"
+    },
+    {
+      "id": "RTR",
+      "title_en": "Russian-speaker transfer traps",
+      "title_ru": "Ловушки переноса из русского",
+      "description": "Correct recurring English and German structures that Russian speakers tend to transfer literally.",
+      "description_ru": "Исправляйте типичные английские и немецкие конструкции, которые русскоязычные переносят буквально.",
+      "level": "B2–C1",
+      "path": "RTR"
+    },
+    {
+      "id": "TRN",
+      "title_en": "Transformations and reformulation",
+      "title_ru": "Трансформации и переформулирование",
+      "description": "Rebuild the same meaning with a different grammatical or discourse frame.",
+      "description_ru": "Перестраивайте ту же мысль с помощью другой грамматической или дискурсивной конструкции.",
+      "level": "B2–C1",
+      "path": "TRN"
+    },
+    {
+      "id": "FRM",
+      "title_en": "Problem framing and reframing",
+      "title_ru": "Постановка и переопределение проблемы",
+      "description": "Define the problem before solving it, expose hidden assumptions, and choose a more useful frame.",
+      "description_ru": "Определяйте проблему до поиска решения, выявляйте скрытые допущения и выбирайте более полезную рамку.",
+      "level": "B2–C1",
+      "path": "FRM"
+    },
+    {
+      "id": "UNC",
+      "title_en": "Reasoning under uncertainty",
+      "title_ru": "Рассуждение в условиях неопределённости",
+      "description": "Separate evidence from assumptions, calibrate confidence, and identify what information would change the conclusion.",
+      "description_ru": "Отделяйте данные от предположений, соразмеряйте уверенность и определяйте, какая информация изменит вывод.",
+      "level": "B2–C1",
+      "path": "UNC"
+    },
+    {
+      "id": "SYS",
+      "title_en": "Systems thinking",
+      "title_ru": "Системное мышление",
+      "description": "Trace second-order effects, bottlenecks, local optimisation, and the drivers that keep a problem recurring.",
+      "description_ru": "Отслеживайте эффекты второго порядка, узкие места, локальную оптимизацию и причины повторяющихся проблем.",
+      "level": "B2–C1",
+      "path": "SYS"
+    },
+    {
+      "id": "DEC",
+      "title_en": "Decision quality and trade-offs",
+      "title_ru": "Качество решений и компромиссы",
+      "description": "Compare options by explicit criteria, weigh the cost of delay, and preserve useful flexibility when certainty is impossible.",
+      "description_ru": "Сравнивайте варианты по явным критериям, учитывайте цену ожидания и сохраняйте гибкость, когда полной уверенности быть не может.",
+      "level": "B2–C1",
+      "path": "DEC"
+    },
+    {
+      "id": "CDG",
+      "title_en": "Causal diagnosis",
+      "title_ru": "Причинная диагностика",
+      "description": "Separate triggers from causes, compare mechanisms, and diagnose causal structure without treating sequence as proof.",
+      "description_ru": "Отделяйте триггеры от причин, сравнивайте механизмы и диагностируйте причинную структуру без подмены причинности последовательностью.",
+      "level": "B2–C1",
+      "path": "CDG"
+    },
+    {
+      "id": "HYP",
+      "title_en": "Hypothesis testing",
+      "title_ru": "Проверка гипотез",
+      "description": "Turn explanations into testable predictions, seek discriminating evidence, and revise claims when the data require it.",
+      "description_ru": "Превращайте объяснения в проверяемые предсказания, ищите различающие данные и пересматривайте выводы, когда этого требуют факты.",
+      "level": "B2–C1",
+      "path": "HYP"
+    },
+    {
+      "id": "PST",
+      "title_en": "Perspective taking",
+      "title_ru": "Смена перспективы",
+      "description": "Represent another viewpoint fairly, separate positions from interests, and locate the real source of disagreement.",
+      "description_ru": "Корректно представляйте чужую точку зрения, отделяйте позиции от интересов и находите реальный источник разногласия.",
+      "level": "B2–C1",
+      "path": "PST"
+    },
+    {
+      "id": "META",
+      "title_en": "Metacognitive learning",
+      "title_ru": "Метакогнитивное обучение",
+      "description": "Notice what you recognise but cannot recall, diagnose recurring errors, and convert feedback into the next practice target.",
+      "description_ru": "Замечайте разницу между узнаванием и воспроизведением, диагностируйте повторяющиеся ошибки и превращайте обратную связь в следующий объект практики.",
+      "level": "B2–C1",
+      "path": "META"
+    },
+    {
+      "id": "GFA",
+      "title": "Time and aspect",
+      "title_ru": "Время и вид действия",
+      "title_en": "Time and aspect",
+      "description": "Compare how English and German express time and aspect. Practise reusable constructions with Russian translations.",
+      "description_ru": "Время и вид действия: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Время и вид действия",
+        "grammar": "Время и вид действия",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Time and aspect",
+        "outcome": "Practise time and aspect in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFB",
+      "title": "Modal scope and past inference",
+      "title_ru": "Модальность и выводы о прошлом",
+      "title_en": "Modal scope and past inference",
+      "description": "Compare how English and German express modal scope and past inference. Practise reusable constructions with Russian translations.",
+      "description_ru": "Модальность и выводы о прошлом: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Модальность и выводы о прошлом",
+        "grammar": "Модальность и выводы о прошлом",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Modal scope and past inference",
+        "outcome": "Practise modal scope and past inference in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFC",
+      "title": "Conditions and counterfactuals",
+      "title_ru": "Условия и нереальные ситуации",
+      "title_en": "Conditions and counterfactuals",
+      "description": "Compare how English and German express conditions and counterfactuals. Practise reusable constructions with Russian translations.",
+      "description_ru": "Условия и нереальные ситуации: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Условия и нереальные ситуации",
+        "grammar": "Условия и нереальные ситуации",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Conditions and counterfactuals",
+        "outcome": "Practise conditions and counterfactuals in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFD",
+      "title": "Comparison and degree",
+      "title_ru": "Сравнения и степень",
+      "title_en": "Comparison and degree",
+      "description": "Compare how English and German express comparison and degree. Practise reusable constructions with Russian translations.",
+      "description_ru": "Сравнения и степень: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Сравнения и степень",
+        "grammar": "Сравнения и степень",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Comparison and degree",
+        "outcome": "Practise comparison and degree in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFE",
+      "title": "Quantification and agreement",
+      "title_ru": "Количество и согласование",
+      "title_en": "Quantification and agreement",
+      "description": "Compare how English and German express quantification and agreement. Practise reusable constructions with Russian translations.",
+      "description_ru": "Количество и согласование: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Количество и согласование",
+        "grammar": "Количество и согласование",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Quantification and agreement",
+        "outcome": "Practise quantification and agreement in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFF",
+      "title": "Negation, inversion and focus",
+      "title_ru": "Отрицание, инверсия и акцент",
+      "title_en": "Negation, inversion and focus",
+      "description": "Compare how English and German express negation, inversion and focus. Practise reusable constructions with Russian translations.",
+      "description_ru": "Отрицание, инверсия и акцент: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Отрицание, инверсия и акцент",
+        "grammar": "Отрицание, инверсия и акцент",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Negation, inversion and focus",
+        "outcome": "Practise negation, inversion and focus in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFG",
+      "title": "Relative and nominal clauses",
+      "title_ru": "Относительные и именные придаточные",
+      "title_en": "Relative and nominal clauses",
+      "description": "Compare how English and German express relative and nominal clauses. Practise reusable constructions with Russian translations.",
+      "description_ru": "Относительные и именные придаточные: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Относительные и именные придаточные",
+        "grammar": "Относительные и именные придаточные",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Relative and nominal clauses",
+        "outcome": "Practise relative and nominal clauses in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFH",
+      "title": "Infinitive tense, voice and subject control",
+      "title_ru": "Время, залог и исполнитель инфинитива",
+      "title_en": "Infinitive tense, voice and subject control",
+      "description": "Compare how English and German express infinitive tense, voice and subject control. Practise reusable constructions with Russian translations.",
+      "description_ru": "Время, залог и исполнитель инфинитива: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Время, залог и исполнитель инфинитива",
+        "grammar": "Время, залог и исполнитель инфинитива",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Infinitive tense, voice and subject control",
+        "outcome": "Practise infinitive tense, voice and subject control in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFI",
+      "title": "Gerund contrasts and participial clauses",
+      "title_ru": "Герундий и причастные конструкции",
+      "title_en": "Gerund contrasts and participial clauses",
+      "description": "Compare how English and German express gerund contrasts and participial clauses. Practise reusable constructions with Russian translations.",
+      "description_ru": "Герундий и причастные конструкции: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Герундий и причастные конструкции",
+        "grammar": "Герундий и причастные конструкции",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Gerund contrasts and participial clauses",
+        "outcome": "Practise gerund contrasts and participial clauses in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFJ",
+      "title": "Passive, causative and perception",
+      "title_ru": "Пассив, побуждение и восприятие",
+      "title_en": "Passive, causative and perception",
+      "description": "Compare how English and German express passive, causative and perception. Practise reusable constructions with Russian translations.",
+      "description_ru": "Пассив, побуждение и восприятие: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Пассив, побуждение и восприятие",
+        "grammar": "Пассив, побуждение и восприятие",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Passive, causative and perception",
+        "outcome": "Practise passive, causative and perception in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFK",
+      "title": "Reporting and clause complements",
+      "title_ru": "Косвенная речь и дополнения",
+      "title_en": "Reporting and clause complements",
+      "description": "Compare how English and German express reporting and clause complements. Practise reusable constructions with Russian translations.",
+      "description_ru": "Косвенная речь и дополнения: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Косвенная речь и дополнения",
+        "grammar": "Косвенная речь и дополнения",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Reporting and clause complements",
+        "outcome": "Practise reporting and clause complements in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFL",
+      "title": "Questions, tags and ellipsis",
+      "title_ru": "Вопросы, хвостики и сокращения",
+      "title_en": "Questions, tags and ellipsis",
+      "description": "Compare how English and German express questions, tags and ellipsis. Practise reusable constructions with Russian translations.",
+      "description_ru": "Вопросы, хвостики и сокращения: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Вопросы, хвостики и сокращения",
+        "grammar": "Вопросы, хвостики и сокращения",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Questions, tags and ellipsis",
+        "outcome": "Practise questions, tags and ellipsis in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFM",
+      "title": "Noun phrases and reference",
+      "title_ru": "Именные группы и отсылки",
+      "title_en": "Noun phrases and reference",
+      "description": "Compare how English and German express noun phrases and reference. Practise reusable constructions with Russian translations.",
+      "description_ru": "Именные группы и отсылки: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Именные группы и отсылки",
+        "grammar": "Именные группы и отсылки",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Noun phrases and reference",
+        "outcome": "Practise noun phrases and reference in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFN",
+      "title": "Concession, cause and circumstance",
+      "title_ru": "Уступка, причина, цель и обстоятельства",
+      "title_en": "Concession, cause and circumstance",
+      "description": "Compare how English and German express concession, cause and circumstance. Practise reusable constructions with Russian translations.",
+      "description_ru": "Уступка, причина, цель и обстоятельства: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Уступка, причина, цель и обстоятельства",
+        "grammar": "Уступка, причина, цель и обстоятельства",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "Concession, cause and circumstance",
+        "outcome": "Practise concession, cause and circumstance in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    },
+    {
+      "id": "GFO",
+      "title": "German-led grammatical flexibility",
+      "title_ru": "Немецкие конструкции и английские параллели",
+      "title_en": "German-led grammatical flexibility",
+      "description": "Compare how English and German express german-led grammatical flexibility. Practise reusable constructions with Russian translations.",
+      "description_ru": "Немецкие конструкции и английские параллели: сравнивайте английские и немецкие конструкции по примерам с русским переводом.",
+      "levels": [
+        "B2",
+        "C1"
+      ],
+      "tags": [
+        "Grammar",
+        "B2",
+        "C1",
+        "EN",
+        "DE"
+      ],
+      "inventory": {
+        "communicative_tasks": "Немецкие конструкции и английские параллели",
+        "grammar": "Немецкие конструкции и английские параллели",
+        "lexis": "Everyday life, communication and work; vocabulary supports the grammatical contrast.",
+        "connector_pattern": "German-led grammatical flexibility",
+        "outcome": "Practise german-led grammatical flexibility in English and German with Russian prompts and three contrasting example scenarios."
+      }
+    }
   ],
   "learningPathAdds": {
-    "C1-GRAMMAR": ["CGR", "RTR"],
-    "C1-FUNCTIONS": ["SPK", "INT", "REG", "PST"],
-    "C1-CONTROL": ["TRN", "SYS", "DEC", "CDG", "HYP", "META"],
-    "C1-COMMUNICATE": ["FRM", "UNC", "PST"]
-  }
+    "C1-GRAMMAR": [
+      "CGR",
+      "RTR"
+    ],
+    "C1-FUNCTIONS": [
+      "SPK",
+      "INT",
+      "REG",
+      "PST"
+    ],
+    "C1-CONTROL": [
+      "TRN",
+      "SYS",
+      "DEC",
+      "CDG",
+      "HYP",
+      "META"
+    ],
+    "C1-COMMUNICATE": [
+      "FRM",
+      "UNC",
+      "PST"
+    ]
+  },
+  "_updated": "2026-09-17"
 }

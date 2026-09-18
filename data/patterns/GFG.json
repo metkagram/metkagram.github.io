@@ -1,22 +1,1008 @@
-[
-{"id":"GFG001","set_id":"GFG","pattern":"We need a system whose settings are easy to understand.","group_title":"Possession inside a relative clause, including things","level":"B2","logic":{"function":"grammar-mechanics","core":"Possessive relative whose with animate or inanimate antecedents","form":"Noun + whose + noun + predicate","metaphor_ru":"Whose может относиться не только к человеку, но и к системе или зданию. После whose стоит существительное, без дополнительного the."},"langs":[{"lang":"en","formula":"Main clause + noun + whose + noun phrase + predicate","example":"We need a system whose settings are easy to understand.","translation":"Нам нужна система с понятными настройками.","examples":[{"text":"I met a teacher whose lessons always include a debate.","translation_ru":"Я познакомился с преподавателем, на чьих занятиях всегда есть дискуссия."},{"text":"They chose a building whose windows face the park.","translation_ru":"Они выбрали здание, окна которого выходят на парк."}]},{"lang":"de","formula":"Noun + dessen/deren + noun + relative predicate at end","example":"Wir brauchen ein System, dessen Einstellungen leicht zu verstehen sind.","translation":"Нам нужна система с понятными настройками.","examples":[{"text":"Ich traf eine Lehrerin, deren Unterricht immer eine Diskussion enthält.","translation_ru":"Я познакомился с преподавателем, на чьих занятиях всегда есть дискуссия."},{"text":"Sie wählten ein Gebäude, dessen Fenster zum Park zeigen.","translation_ru":"Они выбрали здание, окна которого выходят на парк."}]}]},
-{"id":"GFG002","set_id":"GFG","pattern":"The person to whom I sent the draft has left the company.","group_title":"A formal person-relative with its preposition at the front","level":"C1","logic":{"function":"grammar-mechanics","core":"Fronted preposition plus whom","form":"Person noun + preposition + whom + clause","metaphor_ru":"После вынесенного предлога используется whom, не who. В разговорном варианте предлог чаще остаётся в конце: the person I sent it to."},"langs":[{"lang":"en","formula":"Person noun + preposition + whom + subject + verb + main continuation","example":"The person to whom I sent the draft has left the company.","translation":"Человек, которому я отправил черновик, ушёл из компании.","examples":[{"text":"The colleague with whom I shared an office now works abroad.","translation_ru":"Коллега, с которым я делил кабинет, теперь работает за границей."},{"text":"The neighbour from whom we borrowed the ladder is away.","translation_ru":"Сосед, у которого мы одолжили лестницу, сейчас в отъезде."}]},{"lang":"de","formula":"Person noun + preposition + case-marked relative pronoun + subordinate clause","example":"Die Person, an die ich den Entwurf geschickt habe, hat das Unternehmen verlassen.","translation":"Человек, которому я отправил черновик, ушёл из компании.","examples":[{"text":"Der Kollege, mit dem ich ein Büro geteilt habe, arbeitet jetzt im Ausland.","translation_ru":"Коллега, с которым я делил кабинет, теперь работает за границей."},{"text":"Der Nachbar, von dem wir die Leiter geliehen haben, ist verreist.","translation_ru":"Сосед, у которого мы одолжили лестницу, сейчас в отъезде."}]}]},
-{"id":"GFG003","set_id":"GFG","pattern":"The purpose for which the data was collected must be clear.","group_title":"A thing-relative preserving the governing preposition","level":"C1","logic":{"function":"grammar-mechanics","core":"Fronted preposition plus which","form":"Thing noun + preposition + which + clause","metaphor_ru":"Предлог определяется смысловой связью: for a purpose, under conditions, on a basis. После вынесенного предлога нельзя заменить which на that."},"langs":[{"lang":"en","formula":"Thing noun + preposition + which + relative clause + main continuation","example":"The purpose for which the data was collected must be clear.","translation":"Должно быть понятно, с какой целью собрали данные.","examples":[{"text":"The conditions under which we tested the device were realistic.","translation_ru":"Условия, в которых мы проверяли устройство, были реалистичными."},{"text":"The basis on which they made the decision remains unclear.","translation_ru":"Основание, на котором они приняли решение, остаётся неясным."}]},{"lang":"de","formula":"Thing noun + preposition + case-marked relative pronoun + subordinate clause","example":"Der Zweck, zu dem die Daten erhoben wurden, muss klar sein.","translation":"Должно быть понятно, с какой целью собрали данные.","examples":[{"text":"Die Bedingungen, unter denen wir das Gerät getestet haben, waren realistisch.","translation_ru":"Условия, в которых мы проверяли устройство, были реалистичными."},{"text":"Die Grundlage, auf der sie die Entscheidung getroffen haben, bleibt unklar.","translation_ru":"Основание, на котором они приняли решение, остаётся неясным."}]}]},
-{"id":"GFG004","set_id":"GFG","pattern":"She offered to help, which surprised everyone.","group_title":"A relative clause commenting on the whole previous event","level":"B2","logic":{"function":"grammar-mechanics","core":"Sentential relative which","form":"Complete clause, which + comment","metaphor_ru":"Which относится ко всему факту «она предложила помощь», а не к отдельному существительному. Нужна запятая; that здесь не заменяет which."},"langs":[{"lang":"en","formula":"Complete clause, which + predicate commenting on that event","example":"She offered to help, which surprised everyone.","translation":"Она предложила помочь, что всех удивило.","examples":[{"text":"The train arrived early, which gave us time for coffee.","translation_ru":"Поезд приехал рано, что дало нам время выпить кофе."},{"text":"He refused to explain, which made the situation worse.","translation_ru":"Он отказался объяснять, что ухудшило ситуацию."}]},{"lang":"de","formula":"Complete clause, was + comment with verb at end","example":"Sie bot ihre Hilfe an, was alle überraschte.","translation":"Она предложила помочь, что всех удивило.","examples":[{"text":"Der Zug kam früh an, was uns Zeit für einen Kaffee gab.","translation_ru":"Поезд приехал рано, что дало нам время выпить кофе."},{"text":"Er weigerte sich, etwas zu erklären, was die Situation verschlimmerte.","translation_ru":"Он отказался объяснять, что ухудшило ситуацию."}]}]},
-{"id":"GFG005","set_id":"GFG","pattern":"We spoke to the residents, many of whom had lived there for decades.","group_title":"A subset of people described within a relative clause","level":"C1","logic":{"function":"grammar-mechanics","core":"Partitive person-relative with quantifier of whom","form":"People noun, quantifier + of whom + clause","metaphor_ru":"Many of whom выделяет часть уже названной группы. Это дополнительная информация после запятой; who после of не подходит."},"langs":[{"lang":"en","formula":"People noun phrase, quantifier + of whom + predicate","example":"We spoke to the residents, many of whom had lived there for decades.","translation":"Мы поговорили с жителями, многие из которых прожили там десятилетия.","examples":[{"text":"She invited six colleagues, two of whom had never met.","translation_ru":"Она пригласила шестерых коллег, двое из которых никогда не встречались."},{"text":"The course attracted beginners, most of whom wanted practical exercises.","translation_ru":"Курс привлёк начинающих, большинство из которых хотели практических упражнений."}]},{"lang":"de","formula":"People noun phrase, von denen + quantifier + subordinate predicate","example":"Wir sprachen mit den Bewohnern, von denen viele seit Jahrzehnten dort lebten.","translation":"Мы поговорили с жителями, многие из которых прожили там десятилетия.","examples":[{"text":"Sie lud sechs Kollegen ein, von denen zwei sich noch nie begegnet waren.","translation_ru":"Она пригласила шестерых коллег, двое из которых никогда не встречались."},{"text":"Der Kurs zog Anfänger an, von denen die meisten praktische Übungen wollten.","translation_ru":"Курс привлёк начинающих, большинство из которых хотели практических упражнений."}]}]},
-{"id":"GFG006","set_id":"GFG","pattern":"They offered three alternatives, none of which met our needs.","group_title":"Rejecting every member of a previously named set of things","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative partitive thing-relative","form":"Plural noun, none of which + predicate","metaphor_ru":"None of which относится к предметам или вариантам, названным до запятой. Второе not не нужно: none уже отрицает всю группу."},"langs":[{"lang":"en","formula":"Plural thing noun phrase, none of which + predicate","example":"They offered three alternatives, none of which met our needs.","translation":"Они предложили три варианта, ни один из которых нам не подошёл.","examples":[{"text":"I tried several passwords, none of which worked.","translation_ru":"Я попробовал несколько паролей, ни один из которых не сработал."},{"text":"She brought two maps, none of which showed the new road.","translation_ru":"Она принесла две карты, ни на одной из которых не было новой дороги."}]},{"lang":"de","formula":"Plural thing noun phrase, von denen + keiner/keine/keines + predicate","example":"Sie boten drei Alternativen an, von denen keine unseren Bedarf deckte.","translation":"Они предложили три варианта, ни один из которых нам не подошёл.","examples":[{"text":"Ich probierte mehrere Passwörter, von denen keines funktionierte.","translation_ru":"Я попробовал несколько паролей, ни один из которых не сработал."},{"text":"Sie brachte zwei Karten mit, von denen keine die neue Straße zeigte.","translation_ru":"Она принесла две карты, ни на одной из которых не было новой дороги."}]}]},
-{"id":"GFG007","set_id":"GFG","pattern":"The review ends in June, by which time we will have collected enough data.","group_title":"A relative time boundary for future completion","level":"C1","logic":{"function":"grammar-mechanics","core":"Relative future deadline with by which time","form":"Future time, by which time + future perfect","metaphor_ru":"By which time отсылает к названному сроку и означает «к этому времени». Это не when в значении просто «в тот момент»."},"langs":[{"lang":"en","formula":"Main clause naming a future time, by which time + subject + will have + participle","example":"The review ends in June, by which time we will have collected enough data.","translation":"Проверка заканчивается в июне; к тому времени мы соберём достаточно данных.","examples":[{"text":"She returns on Friday, by which time I will have prepared the room.","translation_ru":"Она возвращается в пятницу; к тому времени я подготовлю комнату."},{"text":"The doors open at nine, by which time the staff will have checked every ticket scanner.","translation_ru":"Двери откроются в девять; к тому времени сотрудники проверят все сканеры билетов."}]},{"lang":"de","formula":"Main clause naming time; bis dahin + Perfekt expressing future completion","example":"Die Prüfung endet im Juni; bis dahin haben wir genug Daten gesammelt.","translation":"Проверка заканчивается в июне; к тому времени мы соберём достаточно данных.","examples":[{"text":"Sie kommt am Freitag zurück; bis dahin habe ich das Zimmer vorbereitet.","translation_ru":"Она возвращается в пятницу; к тому времени я подготовлю комнату."},{"text":"Die Türen öffnen um neun; bis dahin hat das Personal alle Ticketscanner geprüft.","translation_ru":"Двери откроются в девять; к тому времени сотрудники проверят все сканеры билетов."}]}]},
-{"id":"GFG008","set_id":"GFG","pattern":"He mentioned the deadline, at which point everyone stopped talking.","group_title":"An event used as the exact turning point in a narrative","level":"C1","logic":{"function":"grammar-mechanics","core":"Relative event boundary with at which point","form":"Past event, at which point + next event","metaphor_ru":"At which point подхватывает не предмет, а момент предыдущего события. Связывает две части рассказа без отдельного then."},"langs":[{"lang":"en","formula":"Past event clause, at which point + past event clause","example":"He mentioned the deadline, at which point everyone stopped talking.","translation":"Он упомянул срок, и в этот момент все замолчали.","examples":[{"text":"The lights went out, at which point we left the room.","translation_ru":"Свет погас, и в этот момент мы вышли из комнаты."},{"text":"She showed us the receipt, at which point the misunderstanding became clear.","translation_ru":"Она показала нам чек, и в этот момент стало ясно, в чём недоразумение."}]},{"lang":"de","formula":"Past event clause; in diesem Moment + next event","example":"Er erwähnte die Frist; in diesem Moment hörten alle auf zu reden.","translation":"Он упомянул срок, и в этот момент все замолчали.","examples":[{"text":"Das Licht ging aus; in diesem Moment verließen wir den Raum.","translation_ru":"Свет погас, и в этот момент мы вышли из комнаты."},{"text":"Sie zeigte uns den Beleg; in diesem Moment wurde das Missverständnis klar.","translation_ru":"Она показала нам чек, и в этот момент стало ясно, в чём недоразумение."}]}]},
-{"id":"GFG009","set_id":"GFG","pattern":"Whoever finishes first can choose the next activity.","group_title":"An unspecified person defined by meeting a condition","level":"B2","logic":{"function":"grammar-mechanics","core":"Free person-relative as subject","form":"Whoever + predicate + main predicate","metaphor_ru":"Whoever значит «тот, кто бы ни» без заранее названного человека. Вся первая часть служит подлежащим главной."},"langs":[{"lang":"en","formula":"Whoever + singular subordinate predicate + main predicate","example":"Whoever finishes first can choose the next activity.","translation":"Кто закончит первым, тот сможет выбрать следующее занятие.","examples":[{"text":"Whoever finds the key should leave it at reception.","translation_ru":"Тот, кто найдёт ключ, должен оставить его на стойке регистрации."},{"text":"Whoever wrote this guide understands the problem.","translation_ru":"Тот, кто написал это руководство, понимает проблему."}]},{"lang":"de","formula":"Wer + subordinate clause, der + main clause","example":"Wer zuerst fertig ist, der darf die nächste Aktivität wählen.","translation":"Кто закончит первым, тот сможет выбрать следующее занятие.","examples":[{"text":"Wer den Schlüssel findet, der soll ihn an der Rezeption abgeben.","translation_ru":"Тот, кто найдёт ключ, должен оставить его на стойке регистрации."},{"text":"Wer diese Anleitung geschrieben hat, der versteht das Problem.","translation_ru":"Тот, кто написал это руководство, понимает проблему."}]}]},
-{"id":"GFG010","set_id":"GFG","pattern":"Take whatever you need and leave the rest.","group_title":"An unrestricted set of things as the verb's object","level":"B2","logic":{"function":"grammar-mechanics","core":"Free thing-relative as object","form":"Verb + whatever + subject + verb","metaphor_ru":"Whatever занимает позицию дополнения: всё, что нужно. Это не отдельное what-вопросительное предложение и не требует инверсии."},"langs":[{"lang":"en","formula":"Main verb + whatever + subject + subordinate verb","example":"Take whatever you need and leave the rest.","translation":"Возьми всё, что нужно, а остальное оставь.","examples":[{"text":"She writes down whatever comes to mind.","translation_ru":"Она записывает всё, что приходит в голову."},{"text":"We will use whatever the team recommends.","translation_ru":"Мы воспользуемся тем, что порекомендует команда."}]},{"lang":"de","formula":"Main verb + alles/das, was + subordinate clause","example":"Nimm alles, was du brauchst, und lass den Rest da.","translation":"Возьми всё, что нужно, а остальное оставь.","examples":[{"text":"Sie schreibt alles auf, was ihr in den Sinn kommt.","translation_ru":"Она записывает всё, что приходит в голову."},{"text":"Wir verwenden das, was das Team empfiehlt.","translation_ru":"Мы воспользуемся тем, что порекомендует команда."}]}]},
-{"id":"GFG011","set_id":"GFG","pattern":"Choose whichever route seems safer.","group_title":"Free choice from an understood limited set","level":"B2","logic":{"function":"grammar-mechanics","core":"Whichever plus noun as a bounded free-choice object","form":"Verb + whichever + noun + relative predicate","metaphor_ru":"Whichever предполагает выбор из известного набора. После него можно оставить существительное: route, time, design."},"langs":[{"lang":"en","formula":"Main verb + whichever + singular noun + subordinate predicate","example":"Choose whichever route seems safer.","translation":"Выбери тот из маршрутов, который кажется безопаснее.","examples":[{"text":"Book whichever time suits you best.","translation_ru":"Забронируй то время, которое тебе удобнее всего."},{"text":"Keep whichever design the client prefers.","translation_ru":"Оставь тот вариант дизайна, который предпочитает клиент."}]},{"lang":"de","formula":"Main verb + definite noun, relative clause selecting a member","example":"Wähle die Route, die dir sicherer erscheint.","translation":"Выбери тот из маршрутов, который кажется безопаснее.","examples":[{"text":"Buche den Termin, der dir am besten passt.","translation_ru":"Забронируй то время, которое тебе удобнее всего."},{"text":"Behalte den Entwurf, den der Kunde bevorzugt.","translation_ru":"Оставь тот вариант дизайна, который предпочитает клиент."}]}]},
-{"id":"GFG012","set_id":"GFG","pattern":"What you decide today will affect the next stage.","group_title":"An entire what-clause acting as the subject","level":"B2","logic":{"function":"grammar-mechanics","core":"Fused relative what as a nominal subject","form":"What + subject + verb + main predicate","metaphor_ru":"What уже включает смысл «то, что». Перед ним не нужно the thing, и порядок слов внутри остаётся повествовательным."},"langs":[{"lang":"en","formula":"What + subject + subordinate verb + singular main predicate","example":"What you decide today will affect the next stage.","translation":"То, что ты решишь сегодня, повлияет на следующий этап.","examples":[{"text":"What she said made me reconsider.","translation_ru":"То, что она сказала, заставило меня пересмотреть решение."},{"text":"What we learned from the test matters more than the score.","translation_ru":"То, что мы узнали из теста, важнее балла."}]},{"lang":"de","formula":"Was + subordinate clause, + singular main predicate","example":"Was du heute entscheidest, wird die nächste Phase beeinflussen.","translation":"То, что ты решишь сегодня, повлияет на следующий этап.","examples":[{"text":"Was sie sagte, brachte mich zum Umdenken.","translation_ru":"То, что она сказала, заставило меня пересмотреть решение."},{"text":"Was wir aus dem Test gelernt haben, ist wichtiger als die Punktzahl.","translation_ru":"То, что мы узнали из теста, важнее балла."}]}]},
-{"id":"GFG013","set_id":"GFG","pattern":"We should focus on what we can change.","group_title":"A what-clause governed by a preposition","level":"B2","logic":{"function":"grammar-mechanics","core":"Nominal what-clause after a preposition","form":"Preposition + what + ordinary clause","metaphor_ru":"После on, for или about может стоять целое what-придаточное. Не добавляйте that перед what; это уже самостоятельный именной блок."},"langs":[{"lang":"en","formula":"Main clause + preposition + what + subject + subordinate verb","example":"We should focus on what we can change.","translation":"Нам следует сосредоточиться на том, что мы можем изменить.","examples":[{"text":"She thanked me for what I had done.","translation_ru":"Она поблагодарила меня за то, что я сделал."},{"text":"He was surprised by what he found.","translation_ru":"Он был удивлён тем, что обнаружил."}]},{"lang":"de","formula":"Main clause + das/dem, was + relative clause or da-word + was-clause","example":"Wir sollten uns auf das konzentrieren, was wir ändern können.","translation":"Нам следует сосредоточиться на том, что мы можем изменить.","examples":[{"text":"Sie dankte mir für das, was ich getan hatte.","translation_ru":"Она поблагодарила меня за то, что я сделал."},{"text":"Er war von dem überrascht, was er fand.","translation_ru":"Он был удивлён тем, что обнаружил."}]}]},
-{"id":"GFG014","set_id":"GFG","pattern":"Whether we continue depends on the results.","group_title":"An unresolved yes-or-no question as the subject","level":"C1","logic":{"function":"grammar-mechanics","core":"Initial whether-clause as a nominal subject","form":"Whether + clause + singular main verb","metaphor_ru":"В начале предложения именное придаточное вводится whether, не if. Всё решение «продолжать ли» образует единое подлежащее."},"langs":[{"lang":"en","formula":"Whether + subject + verb + singular main predicate","example":"Whether we continue depends on the results.","translation":"Будем ли мы продолжать, зависит от результатов.","examples":[{"text":"Whether she agrees remains uncertain.","translation_ru":"Согласится ли она, пока неизвестно."},{"text":"Whether the room is available makes a difference.","translation_ru":"Имеет значение, доступна ли комната."}]},{"lang":"de","formula":"Ob + subordinate clause, + singular main predicate","example":"Ob wir weitermachen, hängt von den Ergebnissen ab.","translation":"Будем ли мы продолжать, зависит от результатов.","examples":[{"text":"Ob sie zustimmt, bleibt ungewiss.","translation_ru":"Согласится ли она, пока неизвестно."},{"text":"Ob der Raum verfügbar ist, macht einen Unterschied.","translation_ru":"Имеет значение, доступна ли комната."}]}]},
-{"id":"GFG015","set_id":"GFG","pattern":"The fact that she asked twice suggests the explanation was unclear.","group_title":"A proposition packaged as a noun phrase","level":"B2","logic":{"function":"grammar-mechanics","core":"Content clause attached to the fact","form":"The fact that + clause + main predicate","metaphor_ru":"That раскрывает содержание факта, а не заменяет объект внутри придаточного. Каркас предполагает, что говорящий считает вложенное утверждение установленным."},"langs":[{"lang":"en","formula":"The fact that + complete clause + singular main predicate","example":"The fact that she asked twice suggests the explanation was unclear.","translation":"То, что она спросила дважды, говорит о том, что объяснение было неясным.","examples":[{"text":"The fact that we finished early does not mean we skipped any steps.","translation_ru":"То, что мы закончили раньше, не означает, что мы пропустили какие-то шаги."},{"text":"The fact that he remembered my name made me smile.","translation_ru":"То, что он запомнил моё имя, заставило меня улыбнуться."}]},{"lang":"de","formula":"Die Tatsache, dass + complete clause, + singular main predicate","example":"Die Tatsache, dass sie zweimal fragte, deutet darauf hin, dass die Erklärung unklar war.","translation":"То, что она спросила дважды, говорит о том, что объяснение было неясным.","examples":[{"text":"Die Tatsache, dass wir früher fertig waren, bedeutet nicht, dass wir Schritte ausgelassen haben.","translation_ru":"То, что мы закончили раньше, не означает, что мы пропустили какие-то шаги."},{"text":"Die Tatsache, dass er sich meinen Namen gemerkt hatte, brachte mich zum Lächeln.","translation_ru":"То, что он запомнил моё имя, заставило меня улыбнуться."}]}]},
-{"id":"GFG016","set_id":"GFG","pattern":"We cannot rule out the possibility that the figures are incomplete.","group_title":"An uncertain proposition attached to a possibility noun","level":"B2","logic":{"function":"grammar-mechanics","core":"Possibility noun with a that-content clause","form":"The possibility that + finite clause","metaphor_ru":"Существительное possibility требует that для полного придаточного. В отличие от the fact that, эта конструкция не утверждает истинность вложенной мысли."},"langs":[{"lang":"en","formula":"Main clause + the possibility that + complete finite clause","example":"We cannot rule out the possibility that the figures are incomplete.","translation":"Мы не можем исключить, что цифры неполные.","examples":[{"text":"She mentioned the possibility that the venue might change.","translation_ru":"Она упомянула, что место проведения может измениться."},{"text":"I had not considered the possibility that he already knew.","translation_ru":"Я не рассматривал возможность того, что он уже знает."}]},{"lang":"de","formula":"Main clause + die Möglichkeit, dass + complete clause","example":"Wir können die Möglichkeit nicht ausschließen, dass die Zahlen unvollständig sind.","translation":"Мы не можем исключить, что цифры неполные.","examples":[{"text":"Sie erwähnte die Möglichkeit, dass sich der Veranstaltungsort ändern könnte.","translation_ru":"Она упомянула, что место проведения может измениться."},{"text":"Ich hatte die Möglichkeit nicht bedacht, dass er es bereits wusste.","translation_ru":"Я не рассматривал возможность того, что он уже знает."}]}]},
-{"id":"GFG017","set_id":"GFG","pattern":"We still face the question of whether to continue.","group_title":"An unresolved decision after a noun and preposition","level":"B2","logic":{"function":"grammar-mechanics","core":"Whether-to complement after the question of","form":"The question of whether to + infinitive","metaphor_ru":"После of нужен whether, не if. Инфинитив оставляет исполнителя понятным из контекста и компактно выражает выбор действия."},"langs":[{"lang":"en","formula":"Main clause + the question of whether to + infinitive","example":"We still face the question of whether to continue.","translation":"Перед нами всё ещё стоит вопрос, продолжать ли.","examples":[{"text":"She raised the question of whether to invite the whole team.","translation_ru":"Она подняла вопрос, приглашать ли всю команду."},{"text":"They postponed the question of whether to sell the building.","translation_ru":"Они отложили решение вопроса о том, продавать ли здание."}]},{"lang":"de","formula":"Main clause + die Frage, ob + subject + infinitive + soll/sollen","example":"Wir stehen noch vor der Frage, ob wir weitermachen sollen.","translation":"Перед нами всё ещё стоит вопрос, продолжать ли.","examples":[{"text":"Sie warf die Frage auf, ob wir das ganze Team einladen sollen.","translation_ru":"Она подняла вопрос, приглашать ли всю команду."},{"text":"Sie vertagten die Frage, ob sie das Gebäude verkaufen sollen.","translation_ru":"Они отложили решение вопроса о том, продавать ли здание."}]}]},
-{"id":"GFG018","set_id":"GFG","pattern":"The way in which she handled the complaint impressed me.","group_title":"Describing manner without doubling way and how","level":"C1","logic":{"function":"grammar-mechanics","core":"Manner noun with in which relative","form":"The way in which + clause + main predicate","metaphor_ru":"Можно the way she handled или the way in which she handled. Не соединяйте the way how в стандартном английском."},"langs":[{"lang":"en","formula":"The way in which + subject + verb + main predicate","example":"The way in which she handled the complaint impressed me.","translation":"Меня впечатлило то, как она разобралась с жалобой.","examples":[{"text":"The way in which we present the options affects the discussion.","translation_ru":"То, как мы представляем варианты, влияет на обсуждение."},{"text":"The way in which he explained the rule made it memorable.","translation_ru":"Благодаря тому, как он объяснил правило, оно запомнилось."}]},{"lang":"de","formula":"Die Art, wie + clause, + main predicate","example":"Die Art, wie sie mit der Beschwerde umging, beeindruckte mich.","translation":"Меня впечатлило то, как она разобралась с жалобой.","examples":[{"text":"Die Art, wie wir die Optionen darstellen, beeinflusst die Diskussion.","translation_ru":"То, как мы представляем варианты, влияет на обсуждение."},{"text":"Die Art, wie er die Regel erklärte, machte sie einprägsam.","translation_ru":"Благодаря тому, как он объяснил правило, оно запомнилось."}]}]},
-{"id":"GFG019","set_id":"GFG","pattern":"The reason why I asked is that the two dates do not match.","group_title":"A reason named first and supplied in a that-clause","level":"B2","logic":{"function":"grammar-mechanics","core":"Reason pseudo-cleft with a content complement","form":"The reason why + clause + is that + explanation","metaphor_ru":"Тренируем ясную связку reason ... is that. Она избегает тяжеловесного повтора reason ... is because, хотя такой вариант встречается в речи."},"langs":[{"lang":"en","formula":"The reason why + subject + verb + is/was that + explanation clause","example":"The reason why I asked is that the two dates do not match.","translation":"Я спросил потому, что две даты не совпадают.","examples":[{"text":"The reason why she left early was that her train had been changed.","translation_ru":"Она ушла рано потому, что время её поезда изменили."},{"text":"The reason why we need a copy is that the original must stay here.","translation_ru":"Нам нужна копия потому, что оригинал должен остаться здесь."}]},{"lang":"de","formula":"Der Grund, warum + clause, ist/war, dass + explanation clause","example":"Der Grund, warum ich gefragt habe, ist, dass die beiden Daten nicht übereinstimmen.","translation":"Я спросил потому, что две даты не совпадают.","examples":[{"text":"Der Grund, warum sie früher ging, war, dass ihre Zugverbindung geändert worden war.","translation_ru":"Она ушла рано потому, что время её поезда изменили."},{"text":"Der Grund, warum wir eine Kopie brauchen, ist, dass das Original hierbleiben muss.","translation_ru":"Нам нужна копия потому, что оригинал должен остаться здесь."}]}]},
-{"id":"GFG020","set_id":"GFG","pattern":"The colleague I spoke to suggested a simpler approach.","group_title":"Omitting an object relative pronoun and leaving its preposition behind","level":"B2","logic":{"function":"grammar-mechanics","core":"Zero object relative with stranded preposition","form":"Noun + subject + verb + preposition + main continuation","metaphor_ru":"В ограничительном относительном предложении можно убрать дополнение who/that. Подлежащее убирать нельзя; в немецком относительное местоимение остаётся обязательным."},"langs":[{"lang":"en","formula":"Noun phrase + subject + relative verb + stranded preposition + main predicate","example":"The colleague I spoke to suggested a simpler approach.","translation":"Коллега, с которым я поговорил, предложил более простой подход.","examples":[{"text":"The chair she sat on was broken.","translation_ru":"Стул, на котором она сидела, был сломан."},{"text":"The project we worked on won an award.","translation_ru":"Проект, над которым мы работали, получил награду."}]},{"lang":"de","formula":"Noun phrase, preposition + relative pronoun + subordinate clause, main continuation","example":"Der Kollege, mit dem ich gesprochen habe, schlug einen einfacheren Ansatz vor.","translation":"Коллега, с которым я поговорил, предложил более простой подход.","examples":[{"text":"Der Stuhl, auf dem sie saß, war kaputt.","translation_ru":"Стул, на котором она сидела, был сломан."},{"text":"Das Projekt, an dem wir gearbeitet haben, gewann einen Preis.","translation_ru":"Проект, над которым мы работали, получил награду."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFG",
+  "title": "Relative and nominal clauses",
+  "title_ru": "Относительные и именные придаточные",
+  "patterns": [
+    {
+      "id": "GFG001",
+      "set_id": "GFG",
+      "pattern": "We need a system whose settings are easy to understand.",
+      "group_title": "Possession inside a relative clause, including things",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Possessive relative whose with animate or inanimate antecedents",
+        "form": "Noun + whose + noun + predicate",
+        "metaphor_ru": "Whose может относиться не только к человеку, но и к системе или зданию. После whose стоит существительное, без дополнительного the."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + noun + whose + noun phrase + predicate",
+          "example": "We need a system whose settings are easy to understand.",
+          "translation": "Нам нужна система с понятными настройками.",
+          "examples": [
+            {
+              "text": "I met a teacher whose lessons always include a debate.",
+              "translation_ru": "Я познакомился с преподавателем, на чьих занятиях всегда есть дискуссия."
+            },
+            {
+              "text": "They chose a building whose windows face the park.",
+              "translation_ru": "Они выбрали здание, окна которого выходят на парк."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Noun + dessen/deren + noun + relative predicate at end",
+          "example": "Wir brauchen ein System, dessen Einstellungen leicht zu verstehen sind.",
+          "translation": "Нам нужна система с понятными настройками.",
+          "examples": [
+            {
+              "text": "Ich traf eine Lehrerin, deren Unterricht immer eine Diskussion enthält.",
+              "translation_ru": "Я познакомился с преподавателем, на чьих занятиях всегда есть дискуссия."
+            },
+            {
+              "text": "Sie wählten ein Gebäude, dessen Fenster zum Park zeigen.",
+              "translation_ru": "Они выбрали здание, окна которого выходят на парк."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Принадлежность с whose",
+      "title_en": "Possession inside a relative clause, including things",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG002",
+      "set_id": "GFG",
+      "pattern": "The person to whom I sent the draft has left the company.",
+      "group_title": "A formal person-relative with its preposition at the front",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Fronted preposition plus whom",
+        "form": "Person noun + preposition + whom + clause",
+        "metaphor_ru": "После вынесенного предлога используется whom, не who. В разговорном варианте предлог чаще остаётся в конце: the person I sent it to."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Person noun + preposition + whom + subject + verb + main continuation",
+          "example": "The person to whom I sent the draft has left the company.",
+          "translation": "Человек, которому я отправил черновик, ушёл из компании.",
+          "examples": [
+            {
+              "text": "The colleague with whom I shared an office now works abroad.",
+              "translation_ru": "Коллега, с которым я делил кабинет, теперь работает за границей."
+            },
+            {
+              "text": "The neighbour from whom we borrowed the ladder is away.",
+              "translation_ru": "Сосед, у которого мы одолжили лестницу, сейчас в отъезде."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Person noun + preposition + case-marked relative pronoun + subordinate clause",
+          "example": "Die Person, an die ich den Entwurf geschickt habe, hat das Unternehmen verlassen.",
+          "translation": "Человек, которому я отправил черновик, ушёл из компании.",
+          "examples": [
+            {
+              "text": "Der Kollege, mit dem ich ein Büro geteilt habe, arbeitet jetzt im Ausland.",
+              "translation_ru": "Коллега, с которым я делил кабинет, теперь работает за границей."
+            },
+            {
+              "text": "Der Nachbar, von dem wir die Leiter geliehen haben, ist verreist.",
+              "translation_ru": "Сосед, у которого мы одолжили лестницу, сейчас в отъезде."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предлог перед whom",
+      "title_en": "A formal person-relative with its preposition at the front",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG003",
+      "set_id": "GFG",
+      "pattern": "The purpose for which the data was collected must be clear.",
+      "group_title": "A thing-relative preserving the governing preposition",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Fronted preposition plus which",
+        "form": "Thing noun + preposition + which + clause",
+        "metaphor_ru": "Предлог определяется смысловой связью: for a purpose, under conditions, on a basis. После вынесенного предлога нельзя заменить which на that."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Thing noun + preposition + which + relative clause + main continuation",
+          "example": "The purpose for which the data was collected must be clear.",
+          "translation": "Должно быть понятно, с какой целью собрали данные.",
+          "examples": [
+            {
+              "text": "The conditions under which we tested the device were realistic.",
+              "translation_ru": "Условия, в которых мы проверяли устройство, были реалистичными."
+            },
+            {
+              "text": "The basis on which they made the decision remains unclear.",
+              "translation_ru": "Основание, на котором они приняли решение, остаётся неясным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Thing noun + preposition + case-marked relative pronoun + subordinate clause",
+          "example": "Der Zweck, zu dem die Daten erhoben wurden, muss klar sein.",
+          "translation": "Должно быть понятно, с какой целью собрали данные.",
+          "examples": [
+            {
+              "text": "Die Bedingungen, unter denen wir das Gerät getestet haben, waren realistisch.",
+              "translation_ru": "Условия, в которых мы проверяли устройство, были реалистичными."
+            },
+            {
+              "text": "Die Grundlage, auf der sie die Entscheidung getroffen haben, bleibt unklar.",
+              "translation_ru": "Основание, на котором они приняли решение, остаётся неясным."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предлог перед which",
+      "title_en": "A thing-relative preserving the governing preposition",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG004",
+      "set_id": "GFG",
+      "pattern": "She offered to help, which surprised everyone.",
+      "group_title": "A relative clause commenting on the whole previous event",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Sentential relative which",
+        "form": "Complete clause, which + comment",
+        "metaphor_ru": "Which относится ко всему факту «она предложила помощь», а не к отдельному существительному. Нужна запятая; that здесь не заменяет which."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Complete clause, which + predicate commenting on that event",
+          "example": "She offered to help, which surprised everyone.",
+          "translation": "Она предложила помочь, что всех удивило.",
+          "examples": [
+            {
+              "text": "The train arrived early, which gave us time for coffee.",
+              "translation_ru": "Поезд приехал рано, что дало нам время выпить кофе."
+            },
+            {
+              "text": "He refused to explain, which made the situation worse.",
+              "translation_ru": "Он отказался объяснять, что ухудшило ситуацию."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Complete clause, was + comment with verb at end",
+          "example": "Sie bot ihre Hilfe an, was alle überraschte.",
+          "translation": "Она предложила помочь, что всех удивило.",
+          "examples": [
+            {
+              "text": "Der Zug kam früh an, was uns Zeit für einen Kaffee gab.",
+              "translation_ru": "Поезд приехал рано, что дало нам время выпить кофе."
+            },
+            {
+              "text": "Er weigerte sich, etwas zu erklären, was die Situation verschlimmerte.",
+              "translation_ru": "Он отказался объяснять, что ухудшило ситуацию."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Which относится ко всему событию",
+      "title_en": "A relative clause commenting on the whole previous event",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG005",
+      "set_id": "GFG",
+      "pattern": "We spoke to the residents, many of whom had lived there for decades.",
+      "group_title": "A subset of people described within a relative clause",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Partitive person-relative with quantifier of whom",
+        "form": "People noun, quantifier + of whom + clause",
+        "metaphor_ru": "Many of whom выделяет часть уже названной группы. Это дополнительная информация после запятой; who после of не подходит."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "People noun phrase, quantifier + of whom + predicate",
+          "example": "We spoke to the residents, many of whom had lived there for decades.",
+          "translation": "Мы поговорили с жителями, многие из которых прожили там десятилетия.",
+          "examples": [
+            {
+              "text": "She invited six colleagues, two of whom had never met.",
+              "translation_ru": "Она пригласила шестерых коллег, двое из которых никогда не встречались."
+            },
+            {
+              "text": "The course attracted beginners, most of whom wanted practical exercises.",
+              "translation_ru": "Курс привлёк начинающих, большинство из которых хотели практических упражнений."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "People noun phrase, von denen + quantifier + subordinate predicate",
+          "example": "Wir sprachen mit den Bewohnern, von denen viele seit Jahrzehnten dort lebten.",
+          "translation": "Мы поговорили с жителями, многие из которых прожили там десятилетия.",
+          "examples": [
+            {
+              "text": "Sie lud sechs Kollegen ein, von denen zwei sich noch nie begegnet waren.",
+              "translation_ru": "Она пригласила шестерых коллег, двое из которых никогда не встречались."
+            },
+            {
+              "text": "Der Kurs zog Anfänger an, von denen die meisten praktische Übungen wollten.",
+              "translation_ru": "Курс привлёк начинающих, большинство из которых хотели практических упражнений."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Часть группы людей",
+      "title_en": "A subset of people described within a relative clause",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG006",
+      "set_id": "GFG",
+      "pattern": "They offered three alternatives, none of which met our needs.",
+      "group_title": "Rejecting every member of a previously named set of things",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative partitive thing-relative",
+        "form": "Plural noun, none of which + predicate",
+        "metaphor_ru": "None of which относится к предметам или вариантам, названным до запятой. Второе not не нужно: none уже отрицает всю группу."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Plural thing noun phrase, none of which + predicate",
+          "example": "They offered three alternatives, none of which met our needs.",
+          "translation": "Они предложили три варианта, ни один из которых нам не подошёл.",
+          "examples": [
+            {
+              "text": "I tried several passwords, none of which worked.",
+              "translation_ru": "Я попробовал несколько паролей, ни один из которых не сработал."
+            },
+            {
+              "text": "She brought three maps, none of which showed the new road.",
+              "translation_ru": "Она принесла три карты, ни на одной из которых не было новой дороги."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Plural thing noun phrase, von denen + keiner/keine/keines + predicate",
+          "example": "Sie boten drei Alternativen an, von denen keine unseren Bedarf deckte.",
+          "translation": "Они предложили три варианта, ни один из которых нам не подошёл.",
+          "examples": [
+            {
+              "text": "Ich probierte mehrere Passwörter, von denen keines funktionierte.",
+              "translation_ru": "Я попробовал несколько паролей, ни один из которых не сработал."
+            },
+            {
+              "text": "Sie brachte drei Karten mit, von denen keine die neue Straße zeigte.",
+              "translation_ru": "Она принесла три карты, ни на одной из которых не было новой дороги."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Ни один из названных предметов",
+      "title_en": "Rejecting every member of a previously named set of things",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG007",
+      "set_id": "GFG",
+      "pattern": "The review ends in June, by which time we will have collected enough data.",
+      "group_title": "A relative time boundary for future completion",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Relative future deadline with by which time",
+        "form": "Future time, by which time + future perfect",
+        "metaphor_ru": "By which time отсылает к названному сроку и означает «к этому времени». Это не when в значении просто «в тот момент»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause naming a future time, by which time + subject + will have + participle",
+          "example": "The review ends in June, by which time we will have collected enough data.",
+          "translation": "Проверка заканчивается в июне; к тому времени мы соберём достаточно данных.",
+          "examples": [
+            {
+              "text": "She returns on Friday, by which time I will have prepared the room.",
+              "translation_ru": "Она возвращается в пятницу; к тому времени я подготовлю комнату."
+            },
+            {
+              "text": "The doors open at nine, by which time the staff will have checked every ticket scanner.",
+              "translation_ru": "Двери откроются в девять; к тому времени сотрудники проверят все сканеры билетов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause naming time; bis dahin + Perfekt expressing future completion",
+          "example": "Die Prüfung endet im Juni; bis dahin haben wir genug Daten gesammelt.",
+          "translation": "Проверка заканчивается в июне; к тому времени мы соберём достаточно данных.",
+          "examples": [
+            {
+              "text": "Sie kommt am Freitag zurück; bis dahin habe ich das Zimmer vorbereitet.",
+              "translation_ru": "Она возвращается в пятницу; к тому времени я подготовлю комнату."
+            },
+            {
+              "text": "Die Türen öffnen um neun; bis dahin hat das Personal alle Ticketscanner geprüft.",
+              "translation_ru": "Двери откроются в девять; к тому времени сотрудники проверят все сканеры билетов."
+            }
+          ]
+        }
+      ],
+      "title_ru": "К указанному будущему моменту",
+      "title_en": "A relative time boundary for future completion",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG008",
+      "set_id": "GFG",
+      "pattern": "He mentioned the deadline, at which point everyone stopped talking.",
+      "group_title": "An event used as the exact turning point in a narrative",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Relative event boundary with at which point",
+        "form": "Past event, at which point + next event",
+        "metaphor_ru": "At which point подхватывает не предмет, а момент предыдущего события. Связывает две части рассказа без отдельного then."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Past event clause, at which point + past event clause",
+          "example": "He mentioned the deadline, at which point everyone stopped talking.",
+          "translation": "Он упомянул срок, и в этот момент все замолчали.",
+          "examples": [
+            {
+              "text": "The lights went out, at which point we left the room.",
+              "translation_ru": "Свет погас, и в этот момент мы вышли из комнаты."
+            },
+            {
+              "text": "She showed us the receipt, at which point the misunderstanding became clear.",
+              "translation_ru": "Она показала нам чек, и в этот момент стало ясно, в чём недоразумение."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Past event clause; in diesem Moment + next event",
+          "example": "Er erwähnte die Frist; in diesem Moment hörten alle auf zu reden.",
+          "translation": "Он упомянул срок, и в этот момент все замолчали.",
+          "examples": [
+            {
+              "text": "Das Licht ging aus; in diesem Moment verließen wir den Raum.",
+              "translation_ru": "Свет погас, и в этот момент мы вышли из комнаты."
+            },
+            {
+              "text": "Sie zeigte uns den Beleg; in diesem Moment wurde das Missverständnis klar.",
+              "translation_ru": "Она показала нам чек, и в этот момент стало ясно, в чём недоразумение."
+            }
+          ]
+        }
+      ],
+      "title_ru": "В этот момент рассказа",
+      "title_en": "An event used as the exact turning point in a narrative",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG009",
+      "set_id": "GFG",
+      "pattern": "Whoever finishes first can choose the next activity.",
+      "group_title": "An unspecified person defined by meeting a condition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Free person-relative as subject",
+        "form": "Whoever + predicate + main predicate",
+        "metaphor_ru": "Whoever значит «тот, кто бы ни» без заранее названного человека. Вся первая часть служит подлежащим главной."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Whoever + singular subordinate predicate + main predicate",
+          "example": "Whoever finishes first can choose the next activity.",
+          "translation": "Кто закончит первым, тот сможет выбрать следующее занятие.",
+          "examples": [
+            {
+              "text": "Whoever finds the key should leave it at reception.",
+              "translation_ru": "Тот, кто найдёт ключ, должен оставить его на стойке регистрации."
+            },
+            {
+              "text": "Whoever wrote this guide understands the problem.",
+              "translation_ru": "Тот, кто написал это руководство, понимает проблему."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wer + subordinate clause, der + main clause",
+          "example": "Wer zuerst fertig ist, der darf die nächste Aktivität wählen.",
+          "translation": "Кто закончит первым, тот сможет выбрать следующее занятие.",
+          "examples": [
+            {
+              "text": "Wer den Schlüssel findet, der soll ihn an der Rezeption abgeben.",
+              "translation_ru": "Тот, кто найдёт ключ, должен оставить его на стойке регистрации."
+            },
+            {
+              "text": "Wer diese Anleitung geschrieben hat, der versteht das Problem.",
+              "translation_ru": "Тот, кто написал это руководство, понимает проблему."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Кто бы ни выполнил условие",
+      "title_en": "An unspecified person defined by meeting a condition",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG010",
+      "set_id": "GFG",
+      "pattern": "Take whatever you need and leave the rest.",
+      "group_title": "An unrestricted set of things as the verb's object",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Free thing-relative as object",
+        "form": "Verb + whatever + subject + verb",
+        "metaphor_ru": "Whatever занимает позицию дополнения: всё, что нужно. Это не отдельное what-вопросительное предложение и не требует инверсии."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main verb + whatever + subject + subordinate verb",
+          "example": "Take whatever you need and leave the rest.",
+          "translation": "Возьми всё, что нужно, а остальное оставь.",
+          "examples": [
+            {
+              "text": "She writes down whatever comes to mind.",
+              "translation_ru": "Она записывает всё, что приходит в голову."
+            },
+            {
+              "text": "We will use whatever the team recommends.",
+              "translation_ru": "Мы воспользуемся тем, что порекомендует команда."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main verb + alles/das, was + subordinate clause",
+          "example": "Nimm alles, was du brauchst, und lass den Rest da.",
+          "translation": "Возьми всё, что нужно, а остальное оставь.",
+          "examples": [
+            {
+              "text": "Sie schreibt alles auf, was ihr in den Sinn kommt.",
+              "translation_ru": "Она записывает всё, что приходит в голову."
+            },
+            {
+              "text": "Wir verwenden das, was das Team empfiehlt.",
+              "translation_ru": "Мы воспользуемся тем, что порекомендует команда."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всё, что нужно",
+      "title_en": "An unrestricted set of things as the verb's object",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG011",
+      "set_id": "GFG",
+      "pattern": "Choose whichever route seems safer.",
+      "group_title": "Free choice from an understood limited set",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Whichever plus noun as a bounded free-choice object",
+        "form": "Verb + whichever + noun + relative predicate",
+        "metaphor_ru": "Whichever предполагает выбор из известного набора. После него можно оставить существительное: route, time, design."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main verb + whichever + singular noun + subordinate predicate",
+          "example": "Choose whichever route seems safer.",
+          "translation": "Выбери тот из маршрутов, который кажется безопаснее.",
+          "examples": [
+            {
+              "text": "Book whichever time suits you best.",
+              "translation_ru": "Забронируй то время, которое тебе удобнее всего."
+            },
+            {
+              "text": "Keep whichever design the client prefers.",
+              "translation_ru": "Оставь тот вариант дизайна, который предпочитает клиент."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main verb + definite noun, relative clause selecting a member",
+          "example": "Wähle die Route, die dir sicherer erscheint.",
+          "translation": "Выбери тот из маршрутов, который кажется безопаснее.",
+          "examples": [
+            {
+              "text": "Buche den Termin, der dir am besten passt.",
+              "translation_ru": "Забронируй то время, которое тебе удобнее всего."
+            },
+            {
+              "text": "Behalte den Entwurf, den der Kunde bevorzugt.",
+              "translation_ru": "Оставь тот вариант дизайна, который предпочитает клиент."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Выбор из известного набора",
+      "title_en": "Free choice from an understood limited set",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG012",
+      "set_id": "GFG",
+      "pattern": "What you decide today will affect the next stage.",
+      "group_title": "An entire what-clause acting as the subject",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Fused relative what as a nominal subject",
+        "form": "What + subject + verb + main predicate",
+        "metaphor_ru": "What уже включает смысл «то, что». Перед ним не нужно the thing, и порядок слов внутри остаётся повествовательным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What + subject + subordinate verb + singular main predicate",
+          "example": "What you decide today will affect the next stage.",
+          "translation": "То, что ты решишь сегодня, повлияет на следующий этап.",
+          "examples": [
+            {
+              "text": "What she said made me reconsider.",
+              "translation_ru": "То, что она сказала, заставило меня пересмотреть решение."
+            },
+            {
+              "text": "What we learned from the test matters more than the score.",
+              "translation_ru": "То, что мы узнали из теста, важнее балла."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was + subordinate clause, + singular main predicate",
+          "example": "Was du heute entscheidest, wird die nächste Phase beeinflussen.",
+          "translation": "То, что ты решишь сегодня, повлияет на следующий этап.",
+          "examples": [
+            {
+              "text": "Was sie sagte, brachte mich zum Umdenken.",
+              "translation_ru": "То, что она сказала, заставило меня пересмотреть решение."
+            },
+            {
+              "text": "Was wir aus dem Test gelernt haben, ist wichtiger als die Punktzahl.",
+              "translation_ru": "То, что мы узнали из теста, важнее балла."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Всё придаточное как подлежащее",
+      "title_en": "An entire what-clause acting as the subject",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG013",
+      "set_id": "GFG",
+      "pattern": "We should focus on what we can change.",
+      "group_title": "A what-clause governed by a preposition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Nominal what-clause after a preposition",
+        "form": "Preposition + what + ordinary clause",
+        "metaphor_ru": "После on, for или about может стоять целое what-придаточное. Не добавляйте that перед what; это уже самостоятельный именной блок."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + preposition + what + subject + subordinate verb",
+          "example": "We should focus on what we can change.",
+          "translation": "Нам следует сосредоточиться на том, что мы можем изменить.",
+          "examples": [
+            {
+              "text": "She thanked me for what I had done.",
+              "translation_ru": "Она поблагодарила меня за то, что я сделал."
+            },
+            {
+              "text": "He was surprised by what he found.",
+              "translation_ru": "Он был удивлён тем, что обнаружил."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + das/dem, was + relative clause or da-word + was-clause",
+          "example": "Wir sollten uns auf das konzentrieren, was wir ändern können.",
+          "translation": "Нам следует сосредоточиться на том, что мы можем изменить.",
+          "examples": [
+            {
+              "text": "Sie dankte mir für das, was ich getan hatte.",
+              "translation_ru": "Она поблагодарила меня за то, что я сделал."
+            },
+            {
+              "text": "Er war von dem überrascht, was er fand.",
+              "translation_ru": "Он был удивлён тем, что обнаружил."
+            }
+          ]
+        }
+      ],
+      "title_ru": "What после предлога",
+      "title_en": "A what-clause governed by a preposition",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG014",
+      "set_id": "GFG",
+      "pattern": "Whether we continue depends on the results.",
+      "group_title": "An unresolved yes-or-no question as the subject",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Initial whether-clause as a nominal subject",
+        "form": "Whether + clause + singular main verb",
+        "metaphor_ru": "В начале предложения именное придаточное вводится whether, не if. Всё решение «продолжать ли» образует единое подлежащее."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Whether + subject + verb + singular main predicate",
+          "example": "Whether we continue depends on the results.",
+          "translation": "Будем ли мы продолжать, зависит от результатов.",
+          "examples": [
+            {
+              "text": "Whether she agrees remains uncertain.",
+              "translation_ru": "Согласится ли она, пока неизвестно."
+            },
+            {
+              "text": "Whether the room is available makes a difference.",
+              "translation_ru": "Имеет значение, доступна ли комната."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ob + subordinate clause, + singular main predicate",
+          "example": "Ob wir weitermachen, hängt von den Ergebnissen ab.",
+          "translation": "Будем ли мы продолжать, зависит от результатов.",
+          "examples": [
+            {
+              "text": "Ob sie zustimmt, bleibt ungewiss.",
+              "translation_ru": "Согласится ли она, пока неизвестно."
+            },
+            {
+              "text": "Ob der Raum verfügbar ist, macht einen Unterschied.",
+              "translation_ru": "Имеет значение, доступна ли комната."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Whether-придаточное как подлежащее",
+      "title_en": "An unresolved yes-or-no question as the subject",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG015",
+      "set_id": "GFG",
+      "pattern": "The fact that she asked twice suggests the explanation was unclear.",
+      "group_title": "A proposition packaged as a noun phrase",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Content clause attached to the fact",
+        "form": "The fact that + clause + main predicate",
+        "metaphor_ru": "That раскрывает содержание факта, а не заменяет объект внутри придаточного. Каркас предполагает, что говорящий считает вложенное утверждение установленным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The fact that + complete clause + singular main predicate",
+          "example": "The fact that she asked twice suggests the explanation was unclear.",
+          "translation": "То, что она спросила дважды, говорит о том, что объяснение было неясным.",
+          "examples": [
+            {
+              "text": "The fact that we finished early does not mean we skipped any steps.",
+              "translation_ru": "То, что мы закончили раньше, не означает, что мы пропустили какие-то шаги."
+            },
+            {
+              "text": "The fact that he remembered my name made me smile.",
+              "translation_ru": "То, что он запомнил моё имя, заставило меня улыбнуться."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Tatsache, dass + complete clause, + singular main predicate",
+          "example": "Die Tatsache, dass sie zweimal fragte, deutet darauf hin, dass die Erklärung unklar war.",
+          "translation": "То, что она спросила дважды, говорит о том, что объяснение было неясным.",
+          "examples": [
+            {
+              "text": "Die Tatsache, dass wir früher fertig waren, bedeutet nicht, dass wir Schritte ausgelassen haben.",
+              "translation_ru": "То, что мы закончили раньше, не означает, что мы пропустили какие-то шаги."
+            },
+            {
+              "text": "Die Tatsache, dass er sich meinen Namen gemerkt hatte, brachte mich zum Lächeln.",
+              "translation_ru": "То, что он запомнил моё имя, заставило меня улыбнуться."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Факт как именной блок",
+      "title_en": "A proposition packaged as a noun phrase",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG016",
+      "set_id": "GFG",
+      "pattern": "We cannot rule out the possibility that the figures are incomplete.",
+      "group_title": "An uncertain proposition attached to a possibility noun",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Possibility noun with a that-content clause",
+        "form": "The possibility that + finite clause",
+        "metaphor_ru": "Существительное possibility требует that для полного придаточного. В отличие от the fact that, эта конструкция не утверждает истинность вложенной мысли."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + the possibility that + complete finite clause",
+          "example": "We cannot rule out the possibility that the figures are incomplete.",
+          "translation": "Мы не можем исключить, что цифры неполные.",
+          "examples": [
+            {
+              "text": "She mentioned the possibility that the venue might change.",
+              "translation_ru": "Она упомянула, что место проведения может измениться."
+            },
+            {
+              "text": "I had not considered the possibility that he already knew.",
+              "translation_ru": "Я не рассматривал возможность того, что он уже знает."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + die Möglichkeit, dass + complete clause",
+          "example": "Wir können die Möglichkeit nicht ausschließen, dass die Zahlen unvollständig sind.",
+          "translation": "Мы не можем исключить, что цифры неполные.",
+          "examples": [
+            {
+              "text": "Sie erwähnte die Möglichkeit, dass sich der Veranstaltungsort ändern könnte.",
+              "translation_ru": "Она упомянула, что место проведения может измениться."
+            },
+            {
+              "text": "Ich hatte die Möglichkeit nicht bedacht, dass er es bereits wusste.",
+              "translation_ru": "Я не рассматривал возможность того, что он уже знает."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Возможность без утверждения факта",
+      "title_en": "An uncertain proposition attached to a possibility noun",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG017",
+      "set_id": "GFG",
+      "pattern": "We still face the question of whether to continue.",
+      "group_title": "An unresolved decision after a noun and preposition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Whether-to complement after the question of",
+        "form": "The question of whether to + infinitive",
+        "metaphor_ru": "После of нужен whether, не if. Инфинитив оставляет исполнителя понятным из контекста и компактно выражает выбор действия."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + the question of whether to + infinitive",
+          "example": "We still face the question of whether to continue.",
+          "translation": "Перед нами всё ещё стоит вопрос, продолжать ли.",
+          "examples": [
+            {
+              "text": "She raised the question of whether to invite the whole team.",
+              "translation_ru": "Она подняла вопрос, приглашать ли всю команду."
+            },
+            {
+              "text": "They postponed the question of whether to sell the building.",
+              "translation_ru": "Они отложили решение вопроса о том, продавать ли здание."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + die Frage, ob + subject + infinitive + soll/sollen",
+          "example": "Wir stehen noch vor der Frage, ob wir weitermachen sollen.",
+          "translation": "Перед нами всё ещё стоит вопрос, продолжать ли.",
+          "examples": [
+            {
+              "text": "Sie warf die Frage auf, ob wir das ganze Team einladen sollen.",
+              "translation_ru": "Она подняла вопрос, приглашать ли всю команду."
+            },
+            {
+              "text": "Sie vertagten die Frage, ob sie das Gebäude verkaufen sollen.",
+              "translation_ru": "Они отложили решение вопроса о том, продавать ли здание."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Вопрос о выборе действия",
+      "title_en": "An unresolved decision after a noun and preposition",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG018",
+      "set_id": "GFG",
+      "pattern": "The way in which she handled the complaint impressed me.",
+      "group_title": "Describing manner without doubling way and how",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Manner noun with in which relative",
+        "form": "The way in which + clause + main predicate",
+        "metaphor_ru": "Можно the way she handled или the way in which she handled. Не соединяйте the way how в стандартном английском."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The way in which + subject + verb + main predicate",
+          "example": "The way in which she handled the complaint impressed me.",
+          "translation": "Меня впечатлило то, как она разобралась с жалобой.",
+          "examples": [
+            {
+              "text": "The way in which we present the options affects the discussion.",
+              "translation_ru": "То, как мы представляем варианты, влияет на обсуждение."
+            },
+            {
+              "text": "The way in which he explained the rule made it memorable.",
+              "translation_ru": "Благодаря тому, как он объяснил правило, оно запомнилось."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Art, wie + clause, + main predicate",
+          "example": "Die Art, wie sie mit der Beschwerde umging, beeindruckte mich.",
+          "translation": "Меня впечатлило то, как она разобралась с жалобой.",
+          "examples": [
+            {
+              "text": "Die Art, wie wir die Optionen darstellen, beeinflusst die Diskussion.",
+              "translation_ru": "То, как мы представляем варианты, влияет на обсуждение."
+            },
+            {
+              "text": "Die Art, wie er die Regel erklärte, machte sie einprägsam.",
+              "translation_ru": "Благодаря тому, как он объяснил правило, оно запомнилось."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Способ с the way in which",
+      "title_en": "Describing manner without doubling way and how",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG019",
+      "set_id": "GFG",
+      "pattern": "The reason why I asked is that the two dates do not match.",
+      "group_title": "A reason named first and supplied in a that-clause",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reason pseudo-cleft with a content complement",
+        "form": "The reason why + clause + is that + explanation",
+        "metaphor_ru": "Тренируем ясную связку reason ... is that. Она избегает тяжеловесного повтора reason ... is because, хотя такой вариант встречается в речи."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The reason why + subject + verb + is/was that + explanation clause",
+          "example": "The reason why I asked is that the two dates do not match.",
+          "translation": "Я спросил потому, что две даты не совпадают.",
+          "examples": [
+            {
+              "text": "The reason why she left early was that the departure time of her train had been changed.",
+              "translation_ru": "Она ушла рано потому, что время её поезда изменили."
+            },
+            {
+              "text": "The reason why we need a copy is that the original must stay here.",
+              "translation_ru": "Нам нужна копия потому, что оригинал должен остаться здесь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der Grund, warum + clause, ist/war, dass + explanation clause",
+          "example": "Der Grund, warum ich gefragt habe, ist, dass die beiden Daten nicht übereinstimmen.",
+          "translation": "Я спросил потому, что две даты не совпадают.",
+          "examples": [
+            {
+              "text": "Der Grund, warum sie früher ging, war, dass die Abfahrtszeit ihres Zuges geändert worden war.",
+              "translation_ru": "Она ушла рано потому, что время её поезда изменили."
+            },
+            {
+              "text": "Der Grund, warum wir eine Kopie brauchen, ist, dass das Original hierbleiben muss.",
+              "translation_ru": "Нам нужна копия потому, что оригинал должен остаться здесь."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Причина названа и раскрыта",
+      "title_en": "A reason named first and supplied in a that-clause",
+      "group_id": "GFG"
+    },
+    {
+      "id": "GFG020",
+      "set_id": "GFG",
+      "pattern": "The colleague I spoke to suggested a simpler approach.",
+      "group_title": "Omitting an object relative pronoun and leaving its preposition behind",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Zero object relative with stranded preposition",
+        "form": "Noun + subject + verb + preposition + main continuation",
+        "metaphor_ru": "В ограничительном относительном предложении можно убрать дополнение who/that. Подлежащее убирать нельзя; в немецком относительное местоимение остаётся обязательным."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Noun phrase + subject + relative verb + stranded preposition + main predicate",
+          "example": "The colleague I spoke to suggested a simpler approach.",
+          "translation": "Коллега, с которым я поговорил, предложил более простой подход.",
+          "examples": [
+            {
+              "text": "The chair she sat on was broken.",
+              "translation_ru": "Стул, на котором она сидела, был сломан."
+            },
+            {
+              "text": "The project we worked on won an award.",
+              "translation_ru": "Проект, над которым мы работали, получил награду."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Noun phrase, preposition + relative pronoun + subordinate clause, main continuation",
+          "example": "Der Kollege, mit dem ich gesprochen habe, schlug einen einfacheren Ansatz vor.",
+          "translation": "Коллега, с которым я поговорил, предложил более простой подход.",
+          "examples": [
+            {
+              "text": "Der Stuhl, auf dem sie saß, war kaputt.",
+              "translation_ru": "Стул, на котором она сидела, был сломан."
+            },
+            {
+              "text": "Das Projekt, an dem wir gearbeitet haben, gewann einen Preis.",
+              "translation_ru": "Проект, над которым мы работали, получил награду."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Опущенное местоимение и конечный предлог",
+      "title_en": "Omitting an object relative pronoun and leaving its preposition behind",
+      "group_id": "GFG"
+    }
+  ]
+}

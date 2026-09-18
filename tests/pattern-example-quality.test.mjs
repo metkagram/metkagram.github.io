@@ -1,3 +1,4 @@
+import { minimumShardCount } from './helpers/curriculum-contract.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -44,7 +45,7 @@ test("generated follow-up detector covers current and legacy padding", () => {
 
 test("canonical pattern shards contain no retired generated follow-up tails", () => {
   const patterns = readRawPatterns();
-  assert.ok(patterns.length > 3000, "expected the complete canonical pattern corpus");
+  assert.ok(patterns.length >= minimumShardCount, "established shards and all grammar additions must be inspected");
   assert.ok(patterns.some((pattern) => pattern.id === "CLA002"), "CLA002 must remain in the corpus");
 
   for (const pattern of patterns) {

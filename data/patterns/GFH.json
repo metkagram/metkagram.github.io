@@ -1,22 +1,1008 @@
-[
-{"id":"GFH001","set_id":"GFH","pattern":"She seems to have misunderstood the deadline.","group_title":"An earlier event inferred from the present","level":"B2","logic":{"function":"grammar-mechanics","core":"Perfect infinitive after a present inference verb","form":"Seem to have + past participle","metaphor_ru":"Seem относится к нынешнему впечатлению, а to have misunderstood — к более раннему действию. Это относительное время внутри инфинитива."},"langs":[{"lang":"en","formula":"Subject + seem(s) to have + past participle","example":"She seems to have misunderstood the deadline.","translation":"Похоже, она неправильно поняла срок.","examples":[{"text":"They seem to have left without saying goodbye.","translation_ru":"Похоже, они ушли, не попрощавшись."},{"text":"I seem to have deleted the wrong file.","translation_ru":"Похоже, я удалил не тот файл."}]},{"lang":"de","formula":"Subject + scheinen + participle + zu haben/sein","example":"Sie scheint die Frist falsch verstanden zu haben.","translation":"Похоже, она неправильно поняла срок.","examples":[{"text":"Sie scheinen gegangen zu sein, ohne sich zu verabschieden.","translation_ru":"Похоже, они ушли, не попрощавшись."},{"text":"Ich scheine die falsche Datei gelöscht zu haben.","translation_ru":"Похоже, я удалил не тот файл."}]}]},
-{"id":"GFH002","set_id":"GFH","pattern":"The team appears to be making progress.","group_title":"An apparent process happening around now","level":"B2","logic":{"function":"grammar-mechanics","core":"Progressive infinitive after an appearance verb","form":"Appear to be + -ing","metaphor_ru":"To be making показывает процесс, не законченный результат. В немецком длительность обычно передаётся контекстом или gerade, без отдельной формы continuous."},"langs":[{"lang":"en","formula":"Subject + appear(s) to be + -ing phrase","example":"The team appears to be making progress.","translation":"Похоже, команда продвигается вперёд.","examples":[{"text":"She appears to be waiting for someone.","translation_ru":"Похоже, она кого-то ждёт."},{"text":"The situation appears to be improving.","translation_ru":"Похоже, ситуация улучшается."}]},{"lang":"de","formula":"Subject + scheinen + present infinitive with zu","example":"Das Team scheint Fortschritte zu machen.","translation":"Похоже, команда продвигается вперёд.","examples":[{"text":"Sie scheint auf jemanden zu warten.","translation_ru":"Похоже, она кого-то ждёт."},{"text":"Die Lage scheint sich zu verbessern.","translation_ru":"Похоже, ситуация улучшается."}]}]},
-{"id":"GFH003","set_id":"GFH","pattern":"He seems to have been using an outdated address all this time.","group_title":"An inferred process extending through an earlier period","level":"C1","logic":{"function":"grammar-mechanics","core":"Perfect progressive infinitive","form":"Seem to have been + -ing","metaphor_ru":"To have been using объединяет предшествование и длительность. Немецкий Infinitiv Perfekt сохраняет предшествование, а длительность выражается словами всё это время."},"langs":[{"lang":"en","formula":"Subject + seem(s) to have been + -ing + duration context","example":"He seems to have been using an outdated address all this time.","translation":"Похоже, всё это время он пользовался устаревшим адресом.","examples":[{"text":"They seem to have been discussing the issue for weeks.","translation_ru":"Похоже, они обсуждали этот вопрос неделями."},{"text":"She seems to have been working on the design all night.","translation_ru":"Похоже, она всю ночь работала над дизайном."}]},{"lang":"de","formula":"Subject + scheinen + duration phrase + participle + zu haben","example":"Er scheint die ganze Zeit eine veraltete Adresse benutzt zu haben.","translation":"Похоже, всё это время он пользовался устаревшим адресом.","examples":[{"text":"Sie scheinen wochenlang über das Thema diskutiert zu haben.","translation_ru":"Похоже, они обсуждали этот вопрос неделями."},{"text":"Sie scheint die ganze Nacht am Entwurf gearbeitet zu haben.","translation_ru":"Похоже, она всю ночь работала над дизайном."}]}]},
-{"id":"GFH004","set_id":"GFH","pattern":"He claims to have been given the wrong instructions.","group_title":"A person's claim about a past event affecting them","level":"C1","logic":{"function":"grammar-mechanics","core":"Perfect passive infinitive in a reported claim","form":"Claim to have been + past participle","metaphor_ru":"Подлежащее claims также является получателем действия в пассиве. Каркас сообщает о заявлении человека, не подтверждая его истинность."},"langs":[{"lang":"en","formula":"Subject + claim(s) to have been + passive participle phrase","example":"He claims to have been given the wrong instructions.","translation":"Он утверждает, что ему дали неверные инструкции.","examples":[{"text":"She claims to have been promised a refund.","translation_ru":"Она утверждает, что ей обещали возврат денег."},{"text":"They claim to have been excluded from the discussion.","translation_ru":"Они утверждают, что их исключили из обсуждения."}]},{"lang":"de","formula":"Subject + behaupten, participle + worden zu sein / dass + passive clause","example":"Er behauptet, falsche Anweisungen erhalten zu haben.","translation":"Он утверждает, что ему дали неверные инструкции.","examples":[{"text":"Sie behauptet, dass ihr eine Erstattung versprochen worden sei.","translation_ru":"Она утверждает, что ей обещали возврат денег."},{"text":"Sie behaupten, von der Diskussion ausgeschlossen worden zu sein.","translation_ru":"Они утверждают, что их исключили из обсуждения."}]}]},
-{"id":"GFH005","set_id":"GFH","pattern":"There seems to be a problem with the connection.","group_title":"An apparent existence rather than an identified actor","level":"B2","logic":{"function":"grammar-mechanics","core":"Existential there with a raising verb","form":"There seems/seem to be + noun phrase","metaphor_ru":"There вводит наличие чего-либо. В формальном английском seem согласуется с последующей группой: a problem seems, several options seem."},"langs":[{"lang":"en","formula":"There + seems/seem to be + noun phrase","example":"There seems to be a problem with the connection.","translation":"Похоже, есть проблема с соединением.","examples":[{"text":"There seem to be several ways to solve this.","translation_ru":"Похоже, есть несколько способов это решить."},{"text":"There seems to be no reason to postpone the meeting.","translation_ru":"Похоже, нет причин откладывать встречу."}]},{"lang":"de","formula":"Es scheint + noun phrase + zu geben","example":"Es scheint ein Problem mit der Verbindung zu geben.","translation":"Похоже, есть проблема с соединением.","examples":[{"text":"Es scheint mehrere Möglichkeiten zu geben, das zu lösen.","translation_ru":"Похоже, есть несколько способов это решить."},{"text":"Es scheint keinen Grund zu geben, die Besprechung zu verschieben.","translation_ru":"Похоже, нет причин откладывать встречу."}]}]},
-{"id":"GFH006","set_id":"GFH","pattern":"This report is easy to follow.","group_title":"The main subject understood as the infinitive's object","level":"B2","logic":{"function":"grammar-mechanics","core":"Tough construction with an object gap","form":"Object-like subject + be + adjective + to-infinitive","metaphor_ru":"Report — то, что мы читаем, а не исполнитель follow. Не добавляйте повторное it: This report is easy to follow, не to follow it."},"langs":[{"lang":"en","formula":"Subject + be + easy/difficult/hard + to + transitive verb without repeated object","example":"This report is easy to follow.","translation":"В этом отчёте легко разобраться.","examples":[{"text":"The handle is difficult to reach.","translation_ru":"До ручки трудно дотянуться."},{"text":"Her explanation was hard to forget.","translation_ru":"Её объяснение было трудно забыть."}]},{"lang":"de","formula":"Subject + sein + leicht/schwer + zu-infinitive","example":"Dieser Bericht ist leicht zu verstehen.","translation":"В этом отчёте легко разобраться.","examples":[{"text":"Der Griff ist schwer zu erreichen.","translation_ru":"До ручки трудно дотянуться."},{"text":"Ihre Erklärung war schwer zu vergessen.","translation_ru":"Её объяснение было трудно забыть."}]}]},
-{"id":"GFH007","set_id":"GFH","pattern":"It is unusual for her to miss a deadline.","group_title":"An evaluation of an action with its own explicit subject","level":"B2","logic":{"function":"grammar-mechanics","core":"Extraposed for-to clause after an adjective","form":"It is + adjective + for + object-form subject + to-infinitive","metaphor_ru":"For her задаёт исполнителя инфинитива. После for нужны me/him/her/us/them, а не подлежащие I/he/she/we/they."},"langs":[{"lang":"en","formula":"It + be + adjective + for + noun/object pronoun + to-infinitive","example":"It is unusual for her to miss a deadline.","translation":"Для неё необычно пропускать сроки.","examples":[{"text":"It is difficult for us to compare the two offers.","translation_ru":"Нам трудно сравнить два предложения."},{"text":"It was important for them to hear both sides.","translation_ru":"Им было важно услышать обе стороны."}]},{"lang":"de","formula":"Es + sein + für + accusative subject phrase + adjective, zu-infinitive","example":"Es ist für sie ungewöhnlich, eine Frist zu verpassen.","translation":"Для неё необычно пропускать сроки.","examples":[{"text":"Es ist für uns schwierig, die beiden Angebote zu vergleichen.","translation_ru":"Нам трудно сравнить два предложения."},{"text":"Es war für sie wichtig, beide Seiten zu hören.","translation_ru":"Им было важно услышать обе стороны."}]}]},
-{"id":"GFH008","set_id":"GFH","pattern":"It was thoughtful of you to call first.","group_title":"An adjective evaluating the person through their action","level":"B2","logic":{"function":"grammar-mechanics","core":"Evaluative of-to clause describing the actor","form":"It is + character adjective + of + person + to-infinitive","metaphor_ru":"Of you оценивает поступок как характеристику человека: thoughtful, careless, generous. For you обычно оценивает сложность или важность действия для человека."},"langs":[{"lang":"en","formula":"It + be + evaluative adjective + of + person + to-infinitive","example":"It was thoughtful of you to call first.","translation":"С твоей стороны было заботливо сначала позвонить.","examples":[{"text":"It was careless of me to leave the window open.","translation_ru":"С моей стороны было неосторожно оставить окно открытым."},{"text":"It was generous of her to share the prize.","translation_ru":"С её стороны было щедро поделиться призом."}]},{"lang":"de","formula":"Es + war + evaluative adjective + von + dative person, zu-infinitive","example":"Es war aufmerksam von dir, zuerst anzurufen.","translation":"С твоей стороны было заботливо сначала позвонить.","examples":[{"text":"Es war unvorsichtig von mir, das Fenster offen zu lassen.","translation_ru":"С моей стороны было неосторожно оставить окно открытым."},{"text":"Es war großzügig von ihr, den Preis zu teilen.","translation_ru":"С её стороны было щедро поделиться призом."}]}]},
-{"id":"GFH009","set_id":"GFH","pattern":"For us to stop now would waste the work already done.","group_title":"A for-to clause acting as the whole sentence's subject","level":"C1","logic":{"function":"grammar-mechanics","core":"Initial infinitival subject with an explicit actor","form":"For + subject + to-infinitive + main predicate","metaphor_ru":"Весь блок For us to stop now — подлежащее главной части. Это более формальный вариант, чем It would waste ... if we stopped."},"langs":[{"lang":"en","formula":"For + noun/object pronoun + to-infinitive phrase + singular main predicate","example":"For us to stop now would waste the work already done.","translation":"Если мы остановимся сейчас, уже сделанная работа пропадёт зря.","examples":[{"text":"For her to decline would be entirely understandable.","translation_ru":"Её отказ был бы вполне понятен."},{"text":"For them to arrive so early was a surprise.","translation_ru":"То, что они приехали так рано, стало неожиданностью."}]},{"lang":"de","formula":"Dass/wenn + explicit-subject clause, + main predicate","example":"Wenn wir jetzt aufhören würden, wäre die bereits geleistete Arbeit vergeblich.","translation":"Если мы остановимся сейчас, уже сделанная работа пропадёт зря.","examples":[{"text":"Wenn sie ablehnen würde, wäre das völlig verständlich.","translation_ru":"Её отказ был бы вполне понятен."},{"text":"Dass sie so früh ankamen, war eine Überraschung.","translation_ru":"То, что они приехали так рано, стало неожиданностью."}]}]},
-{"id":"GFH010","set_id":"GFH","pattern":"The box is too heavy for one person to lift.","group_title":"A degree exceeding a named person's capacity","level":"B2","logic":{"function":"grammar-mechanics","core":"Too-adjective with an explicit infinitive subject and object gap","form":"Too + adjective + for + person + to + verb","metaphor_ru":"One person поднимает box. Box уже названо как подлежащее главной части, поэтому после lift второе it не требуется."},"langs":[{"lang":"en","formula":"Subject + be + too + adjective + for + actor + to + transitive infinitive","example":"The box is too heavy for one person to lift.","translation":"Коробка слишком тяжёлая, чтобы один человек мог её поднять.","examples":[{"text":"The print is too small for me to read.","translation_ru":"Шрифт слишком мелкий, чтобы я мог его прочитать."},{"text":"The issue is too complex for us to resolve today.","translation_ru":"Вопрос слишком сложный, чтобы мы решили его сегодня."}]},{"lang":"de","formula":"Subject + sein + zu + adjective, als dass + actor + object + Konjunktiv II modal","example":"Die Kiste ist zu schwer, als dass eine Person sie heben könnte.","translation":"Коробка слишком тяжёлая, чтобы один человек мог её поднять.","examples":[{"text":"Die Schrift ist zu klein, als dass ich sie lesen könnte.","translation_ru":"Шрифт слишком мелкий, чтобы я мог его прочитать."},{"text":"Das Problem ist zu komplex, als dass wir es heute lösen könnten.","translation_ru":"Вопрос слишком сложный, чтобы мы решили его сегодня."}]}]},
-{"id":"GFH011","set_id":"GFH","pattern":"The room is quiet enough for us to record here.","group_title":"A sufficient degree enabling a named person's action","level":"B2","logic":{"function":"grammar-mechanics","core":"Adjective-enough with explicit for-to actor","form":"Adjective + enough + for + actor + to-infinitive","metaphor_ru":"Enough ставится после прилагательного, не перед ним. For us задаёт отдельного исполнителя действия record."},"langs":[{"lang":"en","formula":"Subject + be + adjective + enough + for + actor + to-infinitive","example":"The room is quiet enough for us to record here.","translation":"В комнате достаточно тихо, чтобы мы могли здесь записываться.","examples":[{"text":"The path is wide enough for two people to walk side by side.","translation_ru":"Дорожка достаточно широкая, чтобы двое могли идти рядом."},{"text":"The instructions are clear enough for a beginner to follow.","translation_ru":"Инструкции достаточно понятны, чтобы начинающий мог им следовать."}]},{"lang":"de","formula":"Subject + sein + adjective + genug, damit + actor + modal clause","example":"Der Raum ist ruhig genug, damit wir hier aufnehmen können.","translation":"В комнате достаточно тихо, чтобы мы могли здесь записываться.","examples":[{"text":"Der Weg ist breit genug, damit zwei Personen nebeneinander gehen können.","translation_ru":"Дорожка достаточно широкая, чтобы двое могли идти рядом."},{"text":"Die Anweisungen sind klar genug, damit ein Anfänger ihnen folgen kann.","translation_ru":"Инструкции достаточно понятны, чтобы начинающий мог им следовать."}]}]},
-{"id":"GFH012","set_id":"GFH","pattern":"I hurried to the station, only to find that the train had been cancelled.","group_title":"An unexpected outcome rather than a purpose","level":"B2","logic":{"function":"grammar-mechanics","core":"Unexpected result expressed by only to","form":"Past action, only to + infinitive","metaphor_ru":"Only to здесь не цель «чтобы», а неожиданный, часто неприятный результат. Исполнитель инфинитива совпадает с подлежащим первой части."},"langs":[{"lang":"en","formula":"Subject + past action, only to + infinitive phrase","example":"I hurried to the station, only to find that the train had been cancelled.","translation":"Я поспешил на вокзал и лишь там узнал, что поезд отменили.","examples":[{"text":"She opened the box, only to discover that a part was missing.","translation_ru":"Она открыла коробку и обнаружила, что одной детали не хватает."},{"text":"We drove across town, only to be told that the shop was closed.","translation_ru":"Мы проехали через весь город, но нам сказали, что магазин закрыт."}]},{"lang":"de","formula":"Past action, nur um dann + zu-infinitive of unexpected result","example":"Ich eilte zum Bahnhof, nur um dann festzustellen, dass der Zug ausgefallen war.","translation":"Я поспешил на вокзал и лишь там узнал, что поезд отменили.","examples":[{"text":"Sie öffnete die Schachtel, nur um dann zu entdecken, dass ein Teil fehlte.","translation_ru":"Она открыла коробку и обнаружила, что одной детали не хватает."},{"text":"Wir fuhren quer durch die Stadt, nur um dann zu hören, dass der Laden geschlossen war.","translation_ru":"Мы проехали через весь город, но нам сказали, что магазин закрыт."}]}]},
-{"id":"GFH013","set_id":"GFH","pattern":"I wrote the number down so as not to forget it.","group_title":"A negative purpose with a controlled infinitive subject","level":"B2","logic":{"function":"grammar-mechanics","core":"Negative purpose introduced by so as not to","form":"Action + so as not to + infinitive","metaphor_ru":"Not ставится перед to. Исполнитель обоих действий одинаков; для другого исполнителя нужен отдельный subject-clause."},"langs":[{"lang":"en","formula":"Subject + action + so as not to + bare infinitive","example":"I wrote the number down so as not to forget it.","translation":"Я записал номер, чтобы не забыть его.","examples":[{"text":"She spoke quietly so as not to wake the child.","translation_ru":"Она говорила тихо, чтобы не разбудить ребёнка."},{"text":"We left early so as not to get caught in traffic.","translation_ru":"Мы выехали рано, чтобы не попасть в пробку."}]},{"lang":"de","formula":"Subject + action, um + nicht + zu-infinitive","example":"Ich schrieb die Nummer auf, um sie nicht zu vergessen.","translation":"Я записал номер, чтобы не забыть его.","examples":[{"text":"Sie sprach leise, um das Kind nicht zu wecken.","translation_ru":"Она говорила тихо, чтобы не разбудить ребёнка."},{"text":"Wir fuhren früh los, um nicht in den Stau zu geraten.","translation_ru":"Мы выехали рано, чтобы не попасть в пробку."}]}]},
-{"id":"GFH014","set_id":"GFH","pattern":"We moved the meeting in order for everyone to attend.","group_title":"A purpose carried out by a different explicit subject","level":"C1","logic":{"function":"grammar-mechanics","core":"Purpose for-to clause with an independent actor","form":"In order for + actor + to-infinitive","metaphor_ru":"We переносит встречу, everyone участвует. Английский может назвать нового исполнителя после for; немецкому здесь естественно придаточное damit."},"langs":[{"lang":"en","formula":"Main action + in order for + noun/object pronoun + to-infinitive","example":"We moved the meeting in order for everyone to attend.","translation":"Мы перенесли встречу, чтобы все смогли участвовать.","examples":[{"text":"She stepped aside in order for the children to see.","translation_ru":"Она отошла в сторону, чтобы дети могли видеть."},{"text":"I left a note in order for him to know where we had gone.","translation_ru":"Я оставил записку, чтобы он знал, куда мы ушли."}]},{"lang":"de","formula":"Main action, damit + different subject + subordinate clause","example":"Wir verschoben die Besprechung, damit alle teilnehmen konnten.","translation":"Мы перенесли встречу, чтобы все смогли участвовать.","examples":[{"text":"Sie trat zur Seite, damit die Kinder sehen konnten.","translation_ru":"Она отошла в сторону, чтобы дети могли видеть."},{"text":"Ich hinterließ einen Zettel, damit er wusste, wohin wir gegangen waren.","translation_ru":"Я оставил записку, чтобы он знал, куда мы ушли."}]}]},
-{"id":"GFH015","set_id":"GFH","pattern":"She was the first applicant to be interviewed.","group_title":"An ordinal noun followed by a passive infinitive","level":"B2","logic":{"function":"grammar-mechanics","core":"Ordinal postmodifier in passive voice","form":"The first/last + noun + to be + past participle","metaphor_ru":"Applicant получает действие: её интервьюируют. Без be interviewed фраза to interview означала бы, что она сама проводит интервью."},"langs":[{"lang":"en","formula":"Subject + be + the ordinal/last + noun + to be + passive participle","example":"She was the first applicant to be interviewed.","translation":"Она была первой кандидаткой, с которой провели собеседование.","examples":[{"text":"This was the last room to be cleaned.","translation_ru":"Это была последняя комната, которую убрали."},{"text":"Our proposal was the second item to be discussed.","translation_ru":"Наше предложение было вторым пунктом, который обсудили."}]},{"lang":"de","formula":"Subject + sein + definite ordinal noun, passive relative clause","example":"Sie war die erste Bewerberin, die interviewt wurde.","translation":"Она была первой кандидаткой, с которой провели собеседование.","examples":[{"text":"Das war das letzte Zimmer, das gereinigt wurde.","translation_ru":"Это была последняя комната, которую убрали."},{"text":"Unser Vorschlag war der zweite Punkt, der besprochen wurde.","translation_ru":"Наше предложение было вторым пунктом, который обсудили."}]}]},
-{"id":"GFH016","set_id":"GFH","pattern":"I need someone to discuss this with.","group_title":"An infinitive after a noun retaining its final preposition","level":"B2","logic":{"function":"grammar-mechanics","core":"Infinitival noun postmodifier with a preposition gap","form":"Noun/pronoun + to + verb + preposition","metaphor_ru":"Someone — собеседник, а не отдельное подлежащее infinitive: я обсуждаю с ним. Предлог with завершает связь; удалять его нельзя."},"langs":[{"lang":"en","formula":"Main clause + noun/pronoun + to + infinitive phrase + required preposition","example":"I need someone to discuss this with.","translation":"Мне нужен кто-то, с кем можно это обсудить.","examples":[{"text":"She found a bench to sit on.","translation_ru":"Она нашла скамейку, на которой можно посидеть."},{"text":"We have nothing to write with.","translation_ru":"Нам нечем писать."}]},{"lang":"de","formula":"Main clause + noun/pronoun + relative clause with preposition","example":"Ich brauche jemanden, mit dem ich das besprechen kann.","translation":"Мне нужен кто-то, с кем можно это обсудить.","examples":[{"text":"Sie fand eine Bank, auf der sie sitzen konnte.","translation_ru":"Она нашла скамейку, на которой можно посидеть."},{"text":"Wir haben nichts, womit wir schreiben können.","translation_ru":"Нам нечем писать."}]}]},
-{"id":"GFH017","set_id":"GFH","pattern":"We had no choice but to postpone the trip.","group_title":"An unavoidable action after alternatives are excluded","level":"B2","logic":{"function":"grammar-mechanics","core":"Infinitive exception after no choice but","form":"Have no choice but to + infinitive","metaphor_ru":"But здесь вводит единственное оставшееся действие, а не противопоставляет два предложения. После no choice but используется to-инфинитив."},"langs":[{"lang":"en","formula":"Subject + have/has/had no choice but to + infinitive","example":"We had no choice but to postpone the trip.","translation":"У нас не было другого выбора, кроме как отложить поездку.","examples":[{"text":"She has no choice but to ask for more time.","translation_ru":"У неё нет другого выбора, кроме как попросить больше времени."},{"text":"I had no choice but to start again.","translation_ru":"У меня не было другого выбора, кроме как начать заново."}]},{"lang":"de","formula":"Subject + haben + keine andere Wahl, als + zu-infinitive","example":"Wir hatten keine andere Wahl, als die Reise zu verschieben.","translation":"У нас не было другого выбора, кроме как отложить поездку.","examples":[{"text":"Sie hat keine andere Wahl, als um mehr Zeit zu bitten.","translation_ru":"У неё нет другого выбора, кроме как попросить больше времени."},{"text":"Ich hatte keine andere Wahl, als neu anzufangen.","translation_ru":"У меня не было другого выбора, кроме как начать заново."}]}]},
-{"id":"GFH018","set_id":"GFH","pattern":"I would rather have waited than rushed the decision.","group_title":"A preference between two actions in a completed past","level":"C1","logic":{"function":"grammar-mechanics","core":"Perfect infinitive preference with the same actor","form":"Would rather have + participle + than + participle","metaphor_ru":"Говорящий предпочёл бы другой прошлый выбор. Исполнитель одинаков, поэтому после rather нет отдельного подлежащего, в отличие от I'd rather you had waited."},"langs":[{"lang":"en","formula":"Subject + would rather have + past participle + than + past participle","example":"I would rather have waited than rushed the decision.","translation":"Я предпочёл бы подождать, а не принимать решение в спешке.","examples":[{"text":"She would rather have stayed home than missed the last train.","translation_ru":"Она предпочла бы остаться дома, а не пропустить последний поезд."},{"text":"We would rather have asked twice than misunderstood the task.","translation_ru":"Мы предпочли бы переспросить дважды, а не неправильно понять задачу."}]},{"lang":"de","formula":"Subject + hätte(n)/wäre(n) lieber + participle, als + past infinitive with zu","example":"Ich hätte lieber gewartet, als die Entscheidung überstürzt zu haben.","translation":"Я предпочёл бы подождать, а не принимать решение в спешке.","examples":[{"text":"Sie wäre lieber zu Hause geblieben, als den letzten Zug verpasst zu haben.","translation_ru":"Она предпочла бы остаться дома, а не пропустить последний поезд."},{"text":"Wir hätten lieber zweimal gefragt, als die Aufgabe missverstanden zu haben.","translation_ru":"Мы предпочли бы переспросить дважды, а не неправильно понять задачу."}]}]},
-{"id":"GFH019","set_id":"GFH","pattern":"The issue is too important not to discuss.","group_title":"A high degree making inaction unacceptable","level":"C1","logic":{"function":"grammar-mechanics","core":"Too-adjective with a negative infinitive","form":"Too + adjective + not to + infinitive","metaphor_ru":"Двойная логика: настолько важно, что НЕ обсудить нельзя. Не потеряйте not при переводе, иначе получится противоположный смысл."},"langs":[{"lang":"en","formula":"Subject + be + too + adjective + not to + infinitive","example":"The issue is too important not to discuss.","translation":"Вопрос слишком важен, чтобы его не обсуждать.","examples":[{"text":"The offer was too good not to consider.","translation_ru":"Предложение было слишком хорошим, чтобы его не рассмотреть."},{"text":"The difference is too obvious not to mention.","translation_ru":"Различие слишком очевидно, чтобы о нём не упомянуть."}]},{"lang":"de","formula":"Subject + sein + zu + adjective, um + object + nicht zu + infinitive","example":"Das Thema ist zu wichtig, um es nicht zu besprechen.","translation":"Вопрос слишком важен, чтобы его не обсуждать.","examples":[{"text":"Das Angebot war zu gut, um es nicht in Betracht zu ziehen.","translation_ru":"Предложение было слишком хорошим, чтобы его не рассмотреть."},{"text":"Der Unterschied ist zu offensichtlich, um ihn nicht zu erwähnen.","translation_ru":"Различие слишком очевидно, чтобы о нём не упомянуть."}]}]},
-{"id":"GFH020","set_id":"GFH","pattern":"I cannot decide whether to repair it or replace it.","group_title":"Two possible actions compressed into an indirect choice","level":"B2","logic":{"function":"grammar-mechanics","core":"Whether-to alternative infinitive complement","form":"Whether to + verb + or + verb","metaphor_ru":"Перед инфинитивом используется whether, не if. To можно не повторять во второй параллельной части; исполнитель понятен из decide."},"langs":[{"lang":"en","formula":"Main clause + whether to + infinitive + or + parallel infinitive","example":"I cannot decide whether to repair it or replace it.","translation":"Я не могу решить, чинить это или заменять.","examples":[{"text":"She was unsure whether to call or send a message.","translation_ru":"Она не была уверена, позвонить или отправить сообщение."},{"text":"We discussed whether to wait or leave immediately.","translation_ru":"Мы обсудили, подождать или уйти сразу."}]},{"lang":"de","formula":"Main clause + ob + subject + infinitive + oder + infinitive + soll/sollen","example":"Ich kann mich nicht entscheiden, ob ich es reparieren oder ersetzen soll.","translation":"Я не могу решить, чинить это или заменять.","examples":[{"text":"Sie war unsicher, ob sie anrufen oder eine Nachricht schicken sollte.","translation_ru":"Она не была уверена, позвонить или отправить сообщение."},{"text":"Wir besprachen, ob wir warten oder sofort gehen sollten.","translation_ru":"Мы обсудили, подождать или уйти сразу."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFH",
+  "title": "Infinitive tense, voice and subject control",
+  "title_ru": "Время, залог и исполнитель инфинитива",
+  "patterns": [
+    {
+      "id": "GFH001",
+      "set_id": "GFH",
+      "pattern": "She seems to have misunderstood the deadline.",
+      "group_title": "An earlier event inferred from the present",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect infinitive after a present inference verb",
+        "form": "Seem to have + past participle",
+        "metaphor_ru": "Seem относится к нынешнему впечатлению, а to have misunderstood — к более раннему действию. Это относительное время внутри инфинитива."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + seem(s) to have + past participle",
+          "example": "She seems to have misunderstood the deadline.",
+          "translation": "Похоже, она неправильно поняла срок.",
+          "examples": [
+            {
+              "text": "They seem to have left without saying goodbye.",
+              "translation_ru": "Похоже, они ушли, не попрощавшись."
+            },
+            {
+              "text": "I seem to have deleted the wrong file.",
+              "translation_ru": "Похоже, я удалил не тот файл."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + scheinen + participle + zu haben/sein",
+          "example": "Sie scheint die Frist falsch verstanden zu haben.",
+          "translation": "Похоже, она неправильно поняла срок.",
+          "examples": [
+            {
+              "text": "Sie scheinen gegangen zu sein, ohne sich zu verabschieden.",
+              "translation_ru": "Похоже, они ушли, не попрощавшись."
+            },
+            {
+              "text": "Ich scheine die falsche Datei gelöscht zu haben.",
+              "translation_ru": "Похоже, я удалил не тот файл."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Кажется, действие уже произошло",
+      "title_en": "An earlier event inferred from the present",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH002",
+      "set_id": "GFH",
+      "pattern": "The team appears to be making progress.",
+      "group_title": "An apparent process happening around now",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Progressive infinitive after an appearance verb",
+        "form": "Appear to be + -ing",
+        "metaphor_ru": "To be making показывает процесс, не законченный результат. В немецком длительность обычно передаётся контекстом или gerade, без отдельной формы continuous."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + appear(s) to be + -ing phrase",
+          "example": "The team appears to be making progress.",
+          "translation": "Похоже, команда продвигается вперёд.",
+          "examples": [
+            {
+              "text": "She appears to be waiting for someone.",
+              "translation_ru": "Похоже, она кого-то ждёт."
+            },
+            {
+              "text": "The situation appears to be improving.",
+              "translation_ru": "Похоже, ситуация улучшается."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + scheinen + present infinitive with zu",
+          "example": "Das Team scheint Fortschritte zu machen.",
+          "translation": "Похоже, команда продвигается вперёд.",
+          "examples": [
+            {
+              "text": "Sie scheint auf jemanden zu warten.",
+              "translation_ru": "Похоже, она кого-то ждёт."
+            },
+            {
+              "text": "Die Lage scheint sich zu verbessern.",
+              "translation_ru": "Похоже, ситуация улучшается."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Похоже на текущий процесс",
+      "title_en": "An apparent process happening around now",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH003",
+      "set_id": "GFH",
+      "pattern": "He seems to have been using an outdated address all this time.",
+      "group_title": "An inferred process extending through an earlier period",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect progressive infinitive",
+        "form": "Seem to have been + -ing",
+        "metaphor_ru": "To have been using объединяет предшествование и длительность. Немецкий Infinitiv Perfekt сохраняет предшествование, а длительность выражается словами всё это время."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + seem(s) to have been + -ing + duration context",
+          "example": "He seems to have been using an outdated address all this time.",
+          "translation": "Похоже, всё это время он пользовался устаревшим адресом.",
+          "examples": [
+            {
+              "text": "They seem to have been discussing the issue for weeks.",
+              "translation_ru": "Похоже, они обсуждали этот вопрос неделями."
+            },
+            {
+              "text": "She seems to have been working on the design all night.",
+              "translation_ru": "Похоже, она всю ночь работала над дизайном."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + scheinen + duration phrase + participle + zu haben",
+          "example": "Er scheint die ganze Zeit eine veraltete Adresse benutzt zu haben.",
+          "translation": "Похоже, всё это время он пользовался устаревшим адресом.",
+          "examples": [
+            {
+              "text": "Sie scheinen wochenlang über das Thema diskutiert zu haben.",
+              "translation_ru": "Похоже, они обсуждали этот вопрос неделями."
+            },
+            {
+              "text": "Sie scheint die ganze Nacht am Entwurf gearbeitet zu haben.",
+              "translation_ru": "Похоже, она всю ночь работала над дизайном."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Похоже на длительный прошлый процесс",
+      "title_en": "An inferred process extending through an earlier period",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH004",
+      "set_id": "GFH",
+      "pattern": "He claims to have been given the wrong instructions.",
+      "group_title": "A person's claim about a past event affecting them",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect passive infinitive in a reported claim",
+        "form": "Claim to have been + past participle",
+        "metaphor_ru": "Подлежащее claims также является получателем действия в пассиве. Каркас сообщает о заявлении человека, не подтверждая его истинность."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + claim(s) to have been + passive participle phrase",
+          "example": "He claims to have been given the wrong instructions.",
+          "translation": "Он утверждает, что ему дали неверные инструкции.",
+          "examples": [
+            {
+              "text": "She claims to have been promised a refund.",
+              "translation_ru": "Она утверждает, что ей обещали возврат денег."
+            },
+            {
+              "text": "They claim to have been excluded from the discussion.",
+              "translation_ru": "Они утверждают, что их исключили из обсуждения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + behaupten, participle + worden zu sein / dass + passive clause",
+          "example": "Er behauptet, falsche Anweisungen erhalten zu haben.",
+          "translation": "Он утверждает, что ему дали неверные инструкции.",
+          "examples": [
+            {
+              "text": "Sie behauptet, dass ihr eine Erstattung versprochen worden sei.",
+              "translation_ru": "Она утверждает, что ей обещали возврат денег."
+            },
+            {
+              "text": "Sie behaupten, von der Diskussion ausgeschlossen worden zu sein.",
+              "translation_ru": "Они утверждают, что их исключили из обсуждения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Утверждение о прошлом пассивном событии",
+      "title_en": "A person's claim about a past event affecting them",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH005",
+      "set_id": "GFH",
+      "pattern": "There seems to be a problem with the connection.",
+      "group_title": "An apparent existence rather than an identified actor",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Existential there with a raising verb",
+        "form": "There seems/seem to be + noun phrase",
+        "metaphor_ru": "There вводит наличие чего-либо. В формальном английском seem согласуется с последующей группой: a problem seems, several options seem."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "There + seems/seem to be + noun phrase",
+          "example": "There seems to be a problem with the connection.",
+          "translation": "Похоже, есть проблема с соединением.",
+          "examples": [
+            {
+              "text": "There seem to be several ways to solve this.",
+              "translation_ru": "Похоже, есть несколько способов это решить."
+            },
+            {
+              "text": "There seems to be no reason to postpone the meeting.",
+              "translation_ru": "Похоже, нет причин откладывать встречу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es scheint + noun phrase + zu geben",
+          "example": "Es scheint ein Problem mit der Verbindung zu geben.",
+          "translation": "Похоже, есть проблема с соединением.",
+          "examples": [
+            {
+              "text": "Es scheint mehrere Möglichkeiten zu geben, das zu lösen.",
+              "translation_ru": "Похоже, есть несколько способов это решить."
+            },
+            {
+              "text": "Es scheint keinen Grund zu geben, die Besprechung zu verschieben.",
+              "translation_ru": "Похоже, нет причин откладывать встречу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предполагаемое наличие",
+      "title_en": "An apparent existence rather than an identified actor",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH006",
+      "set_id": "GFH",
+      "pattern": "This report is easy to follow.",
+      "group_title": "The main subject understood as the infinitive's object",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Tough construction with an object gap",
+        "form": "Object-like subject + be + adjective + to-infinitive",
+        "metaphor_ru": "Report — то, что мы читаем, а не исполнитель follow. Не добавляйте повторное it: This report is easy to follow, не to follow it."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + easy/difficult/hard + to + transitive verb without repeated object",
+          "example": "This report is easy to follow.",
+          "translation": "В этом отчёте легко разобраться.",
+          "examples": [
+            {
+              "text": "The handle is difficult to reach.",
+              "translation_ru": "До ручки трудно дотянуться."
+            },
+            {
+              "text": "Her explanation was hard to forget.",
+              "translation_ru": "Её объяснение было трудно забыть."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + leicht/schwer + zu-infinitive",
+          "example": "Dieser Bericht ist leicht zu verstehen.",
+          "translation": "В этом отчёте легко разобраться.",
+          "examples": [
+            {
+              "text": "Der Griff ist schwer zu erreichen.",
+              "translation_ru": "До ручки трудно дотянуться."
+            },
+            {
+              "text": "Ihre Erklärung war schwer zu vergessen.",
+              "translation_ru": "Её объяснение было трудно забыть."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предмет легко обработать",
+      "title_en": "The main subject understood as the infinitive's object",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH007",
+      "set_id": "GFH",
+      "pattern": "It is unusual for her to miss a deadline.",
+      "group_title": "An evaluation of an action with its own explicit subject",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Extraposed for-to clause after an adjective",
+        "form": "It is + adjective + for + object-form subject + to-infinitive",
+        "metaphor_ru": "For her задаёт исполнителя инфинитива. После for нужны me/him/her/us/them, а не подлежащие I/he/she/we/they."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It + be + adjective + for + noun/object pronoun + to-infinitive",
+          "example": "It is unusual for her to miss a deadline.",
+          "translation": "Для неё необычно пропускать сроки.",
+          "examples": [
+            {
+              "text": "It is difficult for us to compare the two offers.",
+              "translation_ru": "Нам трудно сравнить два предложения."
+            },
+            {
+              "text": "It was important for them to hear both sides.",
+              "translation_ru": "Им было важно услышать обе стороны."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es + sein + für + accusative subject phrase + adjective, zu-infinitive",
+          "example": "Es ist für sie ungewöhnlich, eine Frist zu verpassen.",
+          "translation": "Для неё необычно пропускать сроки.",
+          "examples": [
+            {
+              "text": "Es ist für uns schwierig, die beiden Angebote zu vergleichen.",
+              "translation_ru": "Нам трудно сравнить два предложения."
+            },
+            {
+              "text": "Es war für sie wichtig, beide Seiten zu hören.",
+              "translation_ru": "Им было важно услышать обе стороны."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Оценка действия для человека",
+      "title_en": "An evaluation of an action with its own explicit subject",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH008",
+      "set_id": "GFH",
+      "pattern": "It was thoughtful of you to call first.",
+      "group_title": "An adjective evaluating the person through their action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Evaluative of-to clause describing the actor",
+        "form": "It is + character adjective + of + person + to-infinitive",
+        "metaphor_ru": "Of you оценивает поступок как характеристику человека: thoughtful, careless, generous. For you обычно оценивает сложность или важность действия для человека."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "It + be + evaluative adjective + of + person + to-infinitive",
+          "example": "It was thoughtful of you to call first.",
+          "translation": "С твоей стороны было заботливо сначала позвонить.",
+          "examples": [
+            {
+              "text": "It was careless of me to leave the window open.",
+              "translation_ru": "С моей стороны было неосторожно оставить окно открытым."
+            },
+            {
+              "text": "It was generous of her to share the prize.",
+              "translation_ru": "С её стороны было щедро поделиться призом."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es + war + evaluative adjective + von + dative person, zu-infinitive",
+          "example": "Es war aufmerksam von dir, zuerst anzurufen.",
+          "translation": "С твоей стороны было заботливо сначала позвонить.",
+          "examples": [
+            {
+              "text": "Es war unvorsichtig von mir, das Fenster offen zu lassen.",
+              "translation_ru": "С моей стороны было неосторожно оставить окно открытым."
+            },
+            {
+              "text": "Es war großzügig von ihr, den Preis zu teilen.",
+              "translation_ru": "С её стороны было щедро поделиться призом."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Оценка поступка человека",
+      "title_en": "An adjective evaluating the person through their action",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH009",
+      "set_id": "GFH",
+      "pattern": "For us to stop now would waste the work already done.",
+      "group_title": "A for-to clause acting as the whole sentence's subject",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Initial infinitival subject with an explicit actor",
+        "form": "For + subject + to-infinitive + main predicate",
+        "metaphor_ru": "Весь блок For us to stop now — подлежащее главной части. Это более формальный вариант, чем It would waste ... if we stopped."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "For + noun/object pronoun + to-infinitive phrase + singular main predicate",
+          "example": "For us to stop now would waste the work already done.",
+          "translation": "Если мы остановимся сейчас, уже сделанная работа пропадёт зря.",
+          "examples": [
+            {
+              "text": "For her to decline would be entirely understandable.",
+              "translation_ru": "Её отказ был бы вполне понятен."
+            },
+            {
+              "text": "For them to arrive so early was a surprise.",
+              "translation_ru": "То, что они приехали так рано, стало неожиданностью."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Dass/wenn + explicit-subject clause, + main predicate",
+          "example": "Wenn wir jetzt aufhören würden, wäre die bereits geleistete Arbeit vergeblich.",
+          "translation": "Если мы остановимся сейчас, уже сделанная работа пропадёт зря.",
+          "examples": [
+            {
+              "text": "Wenn sie ablehnen würde, wäre das völlig verständlich.",
+              "translation_ru": "Её отказ был бы вполне понятен."
+            },
+            {
+              "text": "Dass sie so früh ankamen, war eine Überraschung.",
+              "translation_ru": "То, что они приехали так рано, стало неожиданностью."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Инфинитивный блок как подлежащее",
+      "title_en": "A for-to clause acting as the whole sentence's subject",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH010",
+      "set_id": "GFH",
+      "pattern": "The box is too heavy for one person to lift.",
+      "group_title": "A degree exceeding a named person's capacity",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Too-adjective with an explicit infinitive subject and object gap",
+        "form": "Too + adjective + for + person + to + verb",
+        "metaphor_ru": "One person поднимает box. Box уже названо как подлежащее главной части, поэтому после lift второе it не требуется."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + too + adjective + for + actor + to + transitive infinitive",
+          "example": "The box is too heavy for one person to lift.",
+          "translation": "Коробка слишком тяжёлая, чтобы один человек мог её поднять.",
+          "examples": [
+            {
+              "text": "The print is too small for me to read.",
+              "translation_ru": "Шрифт слишком мелкий, чтобы я мог его прочитать."
+            },
+            {
+              "text": "The issue is too complex for us to resolve today.",
+              "translation_ru": "Вопрос слишком сложный, чтобы мы решили его сегодня."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + zu + adjective, als dass + actor + object + Konjunktiv II modal",
+          "example": "Die Kiste ist zu schwer, als dass eine Person sie heben könnte.",
+          "translation": "Коробка слишком тяжёлая, чтобы один человек мог её поднять.",
+          "examples": [
+            {
+              "text": "Die Schrift ist zu klein, als dass ich sie lesen könnte.",
+              "translation_ru": "Шрифт слишком мелкий, чтобы я мог его прочитать."
+            },
+            {
+              "text": "Das Problem ist zu komplex, als dass wir es heute lösen könnten.",
+              "translation_ru": "Вопрос слишком сложный, чтобы мы решили его сегодня."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Слишком трудно для исполнителя",
+      "title_en": "A degree exceeding a named person's capacity",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH011",
+      "set_id": "GFH",
+      "pattern": "The room is quiet enough for us to record here.",
+      "group_title": "A sufficient degree enabling a named person's action",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Adjective-enough with explicit for-to actor",
+        "form": "Adjective + enough + for + actor + to-infinitive",
+        "metaphor_ru": "Enough ставится после прилагательного, не перед ним. For us задаёт отдельного исполнителя действия record."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + adjective + enough + for + actor + to-infinitive",
+          "example": "The room is quiet enough for us to record here.",
+          "translation": "В комнате достаточно тихо, чтобы мы могли здесь записываться.",
+          "examples": [
+            {
+              "text": "The path is wide enough for two people to walk side by side.",
+              "translation_ru": "Дорожка достаточно широкая, чтобы двое могли идти рядом."
+            },
+            {
+              "text": "The instructions are clear enough for a beginner to follow.",
+              "translation_ru": "Инструкции достаточно понятны, чтобы начинающий мог им следовать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + adjective + genug, damit + actor + modal clause",
+          "example": "Der Raum ist ruhig genug, damit wir hier aufnehmen können.",
+          "translation": "В комнате достаточно тихо, чтобы мы могли здесь записываться.",
+          "examples": [
+            {
+              "text": "Der Weg ist breit genug, damit zwei Personen nebeneinander gehen können.",
+              "translation_ru": "Дорожка достаточно широкая, чтобы двое могли идти рядом."
+            },
+            {
+              "text": "Die Anweisungen sind klar genug, damit ein Anfänger ihnen folgen kann.",
+              "translation_ru": "Инструкции достаточно понятны, чтобы начинающий мог им следовать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Достаточная степень для действия",
+      "title_en": "A sufficient degree enabling a named person's action",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH012",
+      "set_id": "GFH",
+      "pattern": "I hurried to the station, only to find that the train had been cancelled.",
+      "group_title": "An unexpected outcome rather than a purpose",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Unexpected result expressed by only to",
+        "form": "Past action, only to + infinitive",
+        "metaphor_ru": "Only to здесь не цель «чтобы», а неожиданный, часто неприятный результат. Исполнитель инфинитива совпадает с подлежащим первой части."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + past action, only to + infinitive phrase",
+          "example": "I hurried to the station, only to find that the train had been cancelled.",
+          "translation": "Я поспешил на вокзал и лишь там узнал, что поезд отменили.",
+          "examples": [
+            {
+              "text": "She opened the box, only to discover that a part was missing.",
+              "translation_ru": "Она открыла коробку и обнаружила, что одной детали не хватает."
+            },
+            {
+              "text": "We drove across town, only to be told that the shop was closed.",
+              "translation_ru": "Мы проехали через весь город, но нам сказали, что магазин закрыт."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Past action, nur um dann + zu-infinitive of unexpected result",
+          "example": "Ich eilte zum Bahnhof, nur um dann festzustellen, dass der Zug ausgefallen war.",
+          "translation": "Я поспешил на вокзал и лишь там узнал, что поезд отменили.",
+          "examples": [
+            {
+              "text": "Sie öffnete die Schachtel, nur um dann zu entdecken, dass ein Teil fehlte.",
+              "translation_ru": "Она открыла коробку и обнаружила, что одной детали не хватает."
+            },
+            {
+              "text": "Wir fuhren quer durch die Stadt, nur um dann zu hören, dass der Laden geschlossen war.",
+              "translation_ru": "Мы проехали через весь город, но нам сказали, что магазин закрыт."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Неожиданный результат с only to",
+      "title_en": "An unexpected outcome rather than a purpose",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH013",
+      "set_id": "GFH",
+      "pattern": "I wrote the number down so as not to forget it.",
+      "group_title": "A negative purpose with a controlled infinitive subject",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Negative purpose introduced by so as not to",
+        "form": "Action + so as not to + infinitive",
+        "metaphor_ru": "Not ставится перед to. Исполнитель обоих действий одинаков; для другого исполнителя нужен отдельный subject-clause."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + action + so as not to + bare infinitive",
+          "example": "I wrote the number down so as not to forget it.",
+          "translation": "Я записал номер, чтобы не забыть его.",
+          "examples": [
+            {
+              "text": "She spoke quietly so as not to wake the child.",
+              "translation_ru": "Она говорила тихо, чтобы не разбудить ребёнка."
+            },
+            {
+              "text": "We left early so as not to get caught in traffic.",
+              "translation_ru": "Мы выехали рано, чтобы не попасть в пробку."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + action, um + nicht + zu-infinitive",
+          "example": "Ich schrieb die Nummer auf, um sie nicht zu vergessen.",
+          "translation": "Я записал номер, чтобы не забыть его.",
+          "examples": [
+            {
+              "text": "Sie sprach leise, um das Kind nicht zu wecken.",
+              "translation_ru": "Она говорила тихо, чтобы не разбудить ребёнка."
+            },
+            {
+              "text": "Wir fuhren früh los, um nicht in den Stau zu geraten.",
+              "translation_ru": "Мы выехали рано, чтобы не попасть в пробку."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Отрицательная цель",
+      "title_en": "A negative purpose with a controlled infinitive subject",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH014",
+      "set_id": "GFH",
+      "pattern": "We moved the meeting in order for everyone to attend.",
+      "group_title": "A purpose carried out by a different explicit subject",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Purpose for-to clause with an independent actor",
+        "form": "In order for + actor + to-infinitive",
+        "metaphor_ru": "We переносит встречу, everyone участвует. Английский может назвать нового исполнителя после for; немецкому здесь естественно придаточное damit."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main action + in order for + noun/object pronoun + to-infinitive",
+          "example": "We moved the meeting in order for everyone to attend.",
+          "translation": "Мы перенесли встречу, чтобы все смогли участвовать.",
+          "examples": [
+            {
+              "text": "She stepped aside in order for the children to see.",
+              "translation_ru": "Она отошла в сторону, чтобы дети могли видеть."
+            },
+            {
+              "text": "I left a note in order for him to know where we had gone.",
+              "translation_ru": "Я оставил записку, чтобы он знал, куда мы ушли."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main action, damit + different subject + subordinate clause",
+          "example": "Wir verschoben die Besprechung, damit alle teilnehmen konnten.",
+          "translation": "Мы перенесли встречу, чтобы все смогли участвовать.",
+          "examples": [
+            {
+              "text": "Sie trat zur Seite, damit die Kinder sehen konnten.",
+              "translation_ru": "Она отошла в сторону, чтобы дети могли видеть."
+            },
+            {
+              "text": "Ich hinterließ einen Zettel, damit er wusste, wohin wir gegangen waren.",
+              "translation_ru": "Я оставил записку, чтобы он знал, куда мы ушли."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Цель с другим исполнителем",
+      "title_en": "A purpose carried out by a different explicit subject",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH015",
+      "set_id": "GFH",
+      "pattern": "She was the first applicant to be interviewed.",
+      "group_title": "An ordinal noun followed by a passive infinitive",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Ordinal postmodifier in passive voice",
+        "form": "The first/last + noun + to be + past participle",
+        "metaphor_ru": "Applicant получает действие: её интервьюируют. Без be interviewed фраза to interview означала бы, что она сама проводит интервью."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + the ordinal/last + noun + to be + passive participle",
+          "example": "She was the first applicant to be interviewed.",
+          "translation": "Она была первой кандидаткой, с которой провели собеседование.",
+          "examples": [
+            {
+              "text": "This was the last room to be cleaned.",
+              "translation_ru": "Это была последняя комната, которую убрали."
+            },
+            {
+              "text": "Our proposal was the second item to be discussed.",
+              "translation_ru": "Наше предложение было вторым пунктом, который обсудили."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + definite ordinal noun, passive relative clause",
+          "example": "Sie war die erste Bewerberin, die interviewt wurde.",
+          "translation": "Она была первой кандидаткой, с которой провели собеседование.",
+          "examples": [
+            {
+              "text": "Das war das letzte Zimmer, das gereinigt wurde.",
+              "translation_ru": "Это была последняя комната, которую убрали."
+            },
+            {
+              "text": "Unser Vorschlag war der zweite Punkt, der besprochen wurde.",
+              "translation_ru": "Наше предложение было вторым пунктом, который обсудили."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Первый объект пассивного действия",
+      "title_en": "An ordinal noun followed by a passive infinitive",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH016",
+      "set_id": "GFH",
+      "pattern": "I need someone to discuss this with.",
+      "group_title": "An infinitive after a noun retaining its final preposition",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Infinitival noun postmodifier with a preposition gap",
+        "form": "Noun/pronoun + to + verb + preposition",
+        "metaphor_ru": "Someone — собеседник, а не отдельное подлежащее infinitive: я обсуждаю с ним. Предлог with завершает связь; удалять его нельзя."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + noun/pronoun + to + infinitive phrase + required preposition",
+          "example": "I need someone to discuss this with.",
+          "translation": "Мне нужен кто-то, с кем можно это обсудить.",
+          "examples": [
+            {
+              "text": "She found a bench to sit on.",
+              "translation_ru": "Она нашла скамейку, на которой можно посидеть."
+            },
+            {
+              "text": "We have nothing to write with.",
+              "translation_ru": "Нам нечем писать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + noun/pronoun + relative clause with preposition",
+          "example": "Ich brauche jemanden, mit dem ich das besprechen kann.",
+          "translation": "Мне нужен кто-то, с кем можно это обсудить.",
+          "examples": [
+            {
+              "text": "Sie fand eine Bank, auf der sie sitzen konnte.",
+              "translation_ru": "Она нашла скамейку, на которой можно посидеть."
+            },
+            {
+              "text": "Wir haben nichts, womit wir schreiben können.",
+              "translation_ru": "Нам нечем писать."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предмет или человек для действия",
+      "title_en": "An infinitive after a noun retaining its final preposition",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH017",
+      "set_id": "GFH",
+      "pattern": "We had no choice but to postpone the trip.",
+      "group_title": "An unavoidable action after alternatives are excluded",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Infinitive exception after no choice but",
+        "form": "Have no choice but to + infinitive",
+        "metaphor_ru": "But здесь вводит единственное оставшееся действие, а не противопоставляет два предложения. После no choice but используется to-инфинитив."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + have/has/had no choice but to + infinitive",
+          "example": "We had no choice but to postpone the trip.",
+          "translation": "У нас не было другого выбора, кроме как отложить поездку.",
+          "examples": [
+            {
+              "text": "She has no choice but to ask for more time.",
+              "translation_ru": "У неё нет другого выбора, кроме как попросить больше времени."
+            },
+            {
+              "text": "I had no choice but to start again.",
+              "translation_ru": "У меня не было другого выбора, кроме как начать заново."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + haben + keine andere Wahl, als + zu-infinitive",
+          "example": "Wir hatten keine andere Wahl, als die Reise zu verschieben.",
+          "translation": "У нас не было другого выбора, кроме как отложить поездку.",
+          "examples": [
+            {
+              "text": "Sie hat keine andere Wahl, als um mehr Zeit zu bitten.",
+              "translation_ru": "У неё нет другого выбора, кроме как попросить больше времени."
+            },
+            {
+              "text": "Ich hatte keine andere Wahl, als neu anzufangen.",
+              "translation_ru": "У меня не было другого выбора, кроме как начать заново."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не осталось другого выбора",
+      "title_en": "An unavoidable action after alternatives are excluded",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH018",
+      "set_id": "GFH",
+      "pattern": "I would rather have waited than rushed the decision.",
+      "group_title": "A preference between two actions in a completed past",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect infinitive preference with the same actor",
+        "form": "Would rather have + participle + than + participle",
+        "metaphor_ru": "Говорящий предпочёл бы другой прошлый выбор. Исполнитель одинаков, поэтому после rather нет отдельного подлежащего, в отличие от I'd rather you had waited."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + would rather have + past participle + than + past participle",
+          "example": "I would rather have waited than rushed the decision.",
+          "translation": "Я предпочёл бы подождать, а не принимать решение в спешке.",
+          "examples": [
+            {
+              "text": "She would rather have stayed home than missed the last train.",
+              "translation_ru": "Она предпочла бы остаться дома, а не пропустить последний поезд."
+            },
+            {
+              "text": "We would rather have asked twice than misunderstood the task.",
+              "translation_ru": "Мы предпочли бы переспросить дважды, а не неправильно понять задачу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hätte(n)/wäre(n) lieber + participle, statt + zu-infinitive",
+          "example": "Ich hätte lieber gewartet, statt die Entscheidung zu überstürzen.",
+          "translation": "Я предпочёл бы подождать, а не принимать решение в спешке.",
+          "examples": [
+            {
+              "text": "Sie wäre lieber zu Hause geblieben, statt den letzten Zug zu verpassen.",
+              "translation_ru": "Она предпочла бы остаться дома, а не пропустить последний поезд."
+            },
+            {
+              "text": "Wir hätten lieber zweimal gefragt, statt die Aufgabe misszuverstehen.",
+              "translation_ru": "Мы предпочли бы переспросить дважды, а не неправильно понять задачу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Предпочтительный прошлый выбор",
+      "title_en": "A preference between two actions in a completed past",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH019",
+      "set_id": "GFH",
+      "pattern": "The issue is too important not to discuss.",
+      "group_title": "A high degree making inaction unacceptable",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Too-adjective with a negative infinitive",
+        "form": "Too + adjective + not to + infinitive",
+        "metaphor_ru": "Двойная логика: настолько важно, что НЕ обсудить нельзя. Не потеряйте not при переводе, иначе получится противоположный смысл."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + too + adjective + not to + infinitive",
+          "example": "The issue is too important not to discuss.",
+          "translation": "Вопрос слишком важен, чтобы его не обсуждать.",
+          "examples": [
+            {
+              "text": "The offer was too good not to consider.",
+              "translation_ru": "Предложение было слишком хорошим, чтобы его не рассмотреть."
+            },
+            {
+              "text": "The difference is too obvious not to mention.",
+              "translation_ru": "Различие слишком очевидно, чтобы о нём не упомянуть."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + zu + adjective, um + object + nicht zu + infinitive",
+          "example": "Das Thema ist zu wichtig, um es nicht zu besprechen.",
+          "translation": "Вопрос слишком важен, чтобы его не обсуждать.",
+          "examples": [
+            {
+              "text": "Das Angebot war zu gut, um es nicht in Betracht zu ziehen.",
+              "translation_ru": "Предложение было слишком хорошим, чтобы его не рассмотреть."
+            },
+            {
+              "text": "Der Unterschied ist zu offensichtlich, um ihn nicht zu erwähnen.",
+              "translation_ru": "Различие слишком очевидно, чтобы о нём не упомянуть."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Слишком важно, чтобы не сделать",
+      "title_en": "A high degree making inaction unacceptable",
+      "group_id": "GFH"
+    },
+    {
+      "id": "GFH020",
+      "set_id": "GFH",
+      "pattern": "I cannot decide whether to repair it or replace it.",
+      "group_title": "Two possible actions compressed into an indirect choice",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Whether-to alternative infinitive complement",
+        "form": "Whether to + verb + or + verb",
+        "metaphor_ru": "Перед инфинитивом используется whether, не if. To можно не повторять во второй параллельной части; исполнитель понятен из decide."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + whether to + infinitive + or + parallel infinitive",
+          "example": "I cannot decide whether to repair it or replace it.",
+          "translation": "Я не могу решить, чинить это или заменять.",
+          "examples": [
+            {
+              "text": "She was unsure whether to call or send a message.",
+              "translation_ru": "Она не была уверена, позвонить или отправить сообщение."
+            },
+            {
+              "text": "We discussed whether to wait or leave immediately.",
+              "translation_ru": "Мы обсудили, подождать или уйти сразу."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + ob + subject + infinitive + oder + infinitive + soll/sollen",
+          "example": "Ich kann mich nicht entscheiden, ob ich es reparieren oder ersetzen soll.",
+          "translation": "Я не могу решить, чинить это или заменять.",
+          "examples": [
+            {
+              "text": "Sie war unsicher, ob sie anrufen oder eine Nachricht schicken sollte.",
+              "translation_ru": "Она не была уверена, позвонить или отправить сообщение."
+            },
+            {
+              "text": "Wir besprachen, ob wir warten oder sofort gehen sollten.",
+              "translation_ru": "Мы обсудили, подождать или уйти сразу."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Выбор между инфинитивами",
+      "title_en": "Two possible actions compressed into an indirect choice",
+      "group_id": "GFH"
+    }
+  ]
+}

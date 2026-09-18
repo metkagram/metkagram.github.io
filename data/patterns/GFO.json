@@ -1,22 +1,1008 @@
-[
-{"id":"GFO001","set_id":"GFO","pattern":"You do not need to print the ticket.","group_title":"German negative necessity with brauchen and zu","level":"B2","logic":{"function":"grammar-mechanics","core":"German nicht brauchen zu versus a full modal","form":"Nicht brauchen + zu-infinitive","metaphor_ru":"В аккуратном письменном немецком после brauchen сохраняем zu: du brauchst nicht zu drucken. Смысл — отсутствие необходимости, не запрет."},"langs":[{"lang":"en","formula":"Subject + do/does not need to + infinitive","example":"You do not need to print the ticket.","translation":"Тебе не нужно печатать билет.","examples":[{"text":"She does not need to bring anything.","translation_ru":"Ей не нужно ничего приносить."},{"text":"We do not need to decide today.","translation_ru":"Нам не нужно решать сегодня."}]},{"lang":"de","formula":"Subject + brauchen + nicht/kein + zu-infinitive","example":"Du brauchst das Ticket nicht auszudrucken.","translation":"Тебе не нужно печатать билет.","examples":[{"text":"Sie braucht nichts mitzubringen.","translation_ru":"Ей не нужно ничего приносить."},{"text":"Wir brauchen heute nicht zu entscheiden.","translation_ru":"Нам не нужно решать сегодня."}]}]},
-{"id":"GFO002","set_id":"GFO","pattern":"This error can be corrected without changing the original.","group_title":"German reflexive lassen expressing passive possibility","level":"B2","logic":{"function":"grammar-mechanics","core":"German sich lassen plus infinitive as a passive alternative","form":"Subject + lässt/lassen sich + infinitive","metaphor_ru":"Der Fehler lässt sich beheben означает «ошибку можно устранить». Это не просьба позволить ошибке что-то сделать; zu после lassen не ставится."},"langs":[{"lang":"en","formula":"Affected object + can be + past participle + manner/context","example":"This error can be corrected without changing the original.","translation":"Эту ошибку можно исправить, не меняя оригинал.","examples":[{"text":"The table can be folded in seconds.","translation_ru":"Стол можно сложить за несколько секунд."},{"text":"The difference can be explained with one example.","translation_ru":"Различие можно объяснить одним примером."}]},{"lang":"de","formula":"Affected object + lässt/lassen sich + bare infinitive","example":"Dieser Fehler lässt sich beheben, ohne das Original zu ändern.","translation":"Эту ошибку можно исправить, не меняя оригинал.","examples":[{"text":"Der Tisch lässt sich in Sekunden zusammenklappen.","translation_ru":"Стол можно сложить за несколько секунд."},{"text":"Der Unterschied lässt sich mit einem Beispiel erklären.","translation_ru":"Различие можно объяснить одним примером."}]}]},
-{"id":"GFO003","set_id":"GFO","pattern":"The original must be kept in a safe place.","group_title":"German sein plus zu expressing a passive requirement","level":"C1","logic":{"function":"grammar-mechanics","core":"German sein zu with obligatory passive interpretation","form":"Subject + sein + zu-infinitive","metaphor_ru":"Das Original ist aufzubewahren — формальное требование сохранить оригинал. Sein zu может также выражать возможность; здесь контекст специально задаёт обязанность."},"langs":[{"lang":"en","formula":"Affected object + must be + passive participle","example":"The original must be kept in a safe place.","translation":"Оригинал необходимо хранить в безопасном месте.","examples":[{"text":"All fields must be completed before submission.","translation_ru":"Все поля необходимо заполнить перед отправкой."},{"text":"The instructions must be followed exactly.","translation_ru":"Инструкции необходимо соблюдать точно."}]},{"lang":"de","formula":"Affected object + ist/sind + obligation context + zu-infinitive","example":"Das Original ist an einem sicheren Ort aufzubewahren.","translation":"Оригинал необходимо хранить в безопасном месте.","examples":[{"text":"Alle Felder sind vor dem Absenden auszufüllen.","translation_ru":"Все поля необходимо заполнить перед отправкой."},{"text":"Die Anweisungen sind genau zu befolgen.","translation_ru":"Инструкции необходимо соблюдать точно."}]}]},
-{"id":"GFO004","set_id":"GFO","pattern":"All visitors are required to sign in at reception.","group_title":"German haben plus zu assigning a duty to an actor","level":"C1","logic":{"function":"grammar-mechanics","core":"German haben zu as an active formal obligation","form":"Actor + haben + zu-infinitive","metaphor_ru":"Посетители сами выполняют действие. Haben zu звучит предписывающе и формальнее müssen; используйте его для правил, а не для дружелюбной просьбы."},"langs":[{"lang":"en","formula":"Actor + be required to + infinitive","example":"All visitors are required to sign in at reception.","translation":"Все посетители обязаны зарегистрироваться на стойке регистрации.","examples":[{"text":"The organiser is required to inform the participants of any changes.","translation_ru":"Организатор обязан сообщать участникам обо всех изменениях."},{"text":"We are required to keep a copy of the agreement.","translation_ru":"Мы обязаны хранить копию соглашения."}]},{"lang":"de","formula":"Actor + hat/haben + zu-infinitive","example":"Alle Besucher haben sich an der Rezeption anzumelden.","translation":"Все посетители обязаны зарегистрироваться на стойке регистрации.","examples":[{"text":"Der Organisator hat die Teilnehmer über alle Änderungen zu informieren.","translation_ru":"Организатор обязан сообщать участникам обо всех изменениях."},{"text":"Wir haben eine Kopie der Vereinbarung aufzubewahren.","translation_ru":"Мы обязаны хранить копию соглашения."}]}]},
-{"id":"GFO005","set_id":"GFO","pattern":"This assumption ought to be checked.","group_title":"German gehören with a participle expressing what needs doing","level":"C1","logic":{"function":"grammar-mechanics","core":"German gehören plus past participle as a colloquial passive necessity","form":"Subject + gehören + participle","metaphor_ru":"Das gehört geprüft — разговорное «это нужно проверить». Каркас не означает принадлежность, как gehört mir; уместность зависит от стиля и региона."},"langs":[{"lang":"en","formula":"Affected object + ought to be + passive participle","example":"This assumption ought to be checked.","translation":"Это предположение стоит проверить.","examples":[{"text":"The old lock ought to be replaced.","translation_ru":"Старый замок стоит заменить."},{"text":"These instructions ought to be simplified.","translation_ru":"Эти инструкции стоит упростить."}]},{"lang":"de","formula":"Affected object + gehört/gehören + past participle","example":"Diese Annahme gehört überprüft.","translation":"Это предположение стоит проверить.","examples":[{"text":"Das alte Schloss gehört ausgetauscht.","translation_ru":"Старый замок стоит заменить."},{"text":"Diese Anweisungen gehören vereinfacht.","translation_ru":"Эти инструкции стоит упростить."}]}]},
-{"id":"GFO006","set_id":"GFO","pattern":"She was given a detailed explanation of the process.","group_title":"German recipient passive with bekommen","level":"B2","logic":{"function":"grammar-mechanics","core":"German bekommen-passive promoting a dative recipient","form":"Recipient + bekommen + object + participle","metaphor_ru":"Sie bekam den Ablauf erklärt переводит получателя в подлежащее. Это не просто «получила объяснение» как существительное: erklärt остаётся глагольным причастием."},"langs":[{"lang":"en","formula":"Recipient + was/were + giving/showing passive + information/object","example":"She was given a detailed explanation of the process.","translation":"Ей подробно объяснили процесс.","examples":[{"text":"We were shown the new workspace.","translation_ru":"Нам показали новое рабочее место."},{"text":"I was sent the corrected version by email.","translation_ru":"Мне отправили исправленную версию по электронной почте."}]},{"lang":"de","formula":"Recipient + bekam/bekamen + accusative object + past participle","example":"Sie bekam den Ablauf ausführlich erklärt.","translation":"Ей подробно объяснили процесс.","examples":[{"text":"Wir bekamen den neuen Arbeitsplatz gezeigt.","translation_ru":"Нам показали новое рабочее место."},{"text":"Ich bekam die korrigierte Version per E-Mail geschickt.","translation_ru":"Мне отправили исправленную версию по электронной почте."}]}]},
-{"id":"GFO007","set_id":"GFO","pattern":"She is said to have turned down the offer.","group_title":"German sollen reporting someone else's account of the past","level":"C1","logic":{"function":"grammar-mechanics","core":"German reportative sollen with perfect infinitive","form":"Sollen + participle + haben/sein","metaphor_ru":"Sie soll abgelehnt haben — по чужим сведениям, она отказалась. Это не «она должна была отказаться»: sollen здесь маркирует источник сообщения."},"langs":[{"lang":"en","formula":"Subject + be said to have + past participle","example":"She is said to have turned down the offer.","translation":"Говорят, она отказалась от предложения.","examples":[{"text":"The owner is said to have moved abroad.","translation_ru":"Говорят, владелец переехал за границу."},{"text":"They are said to have reached an agreement.","translation_ru":"Говорят, они достигли соглашения."}]},{"lang":"de","formula":"Subject + soll/sollen + past participle + haben/sein","example":"Sie soll das Angebot abgelehnt haben.","translation":"Говорят, она отказалась от предложения.","examples":[{"text":"Der Eigentümer soll ins Ausland gezogen sein.","translation_ru":"Говорят, владелец переехал за границу."},{"text":"Sie sollen eine Einigung erzielt haben.","translation_ru":"Говорят, они достигли соглашения."}]}]},
-{"id":"GFO008","set_id":"GFO","pattern":"He claims not to have known about the change.","group_title":"German wollen reporting a person's own possibly doubtful claim","level":"C1","logic":{"function":"grammar-mechanics","core":"German reportative wollen with perfect infinitive","form":"Wollen + participle + haben/sein","metaphor_ru":"Er will nichts gewusst haben — он утверждает, что не знал, часто с дистанцией говорящего. Это не желание «хочет не знать»."},"langs":[{"lang":"en","formula":"Subject + claim(s) + perfect infinitive","example":"He claims not to have known about the change.","translation":"Он утверждает, что не знал об изменении.","examples":[{"text":"She claims to have seen the original document.","translation_ru":"Она утверждает, что видела оригинал документа."},{"text":"They claim to have sent the warning in advance.","translation_ru":"Они утверждают, что отправили предупреждение заранее."}]},{"lang":"de","formula":"Subject + will/wollen + past participle + haben/sein","example":"Er will von der Änderung nichts gewusst haben.","translation":"Он утверждает, что не знал об изменении.","examples":[{"text":"Sie will das Originaldokument gesehen haben.","translation_ru":"Она утверждает, что видела оригинал документа."},{"text":"Sie wollen die Warnung im Voraus geschickt haben.","translation_ru":"Они утверждают, что отправили предупреждение заранее."}]}]},
-{"id":"GFO009","set_id":"GFO","pattern":"That is probably the most practical option.","group_title":"German dürfte expressing a cautious probability estimate","level":"C1","logic":{"function":"grammar-mechanics","core":"Epistemic dürfte rather than permission","form":"Subject + dürfte(n) + infinitive","metaphor_ru":"Dürfte sein означает «вероятно, является», не разрешение. Не путайте с darf sein и не трактуйте любую форму dürfen как «можно»."},"langs":[{"lang":"en","formula":"Subject + probably + ordinary predicate","example":"That is probably the most practical option.","translation":"Вероятно, это самый практичный вариант.","examples":[{"text":"She probably knows more about the issue than we do.","translation_ru":"Вероятно, она знает об этом вопросе больше нас."},{"text":"The repair will probably take several days.","translation_ru":"Вероятно, ремонт займёт несколько дней."}]},{"lang":"de","formula":"Subject + dürfte/dürften + bare infinitive","example":"Das dürfte die praktischste Option sein.","translation":"Вероятно, это самый практичный вариант.","examples":[{"text":"Sie dürfte mehr über das Thema wissen als wir.","translation_ru":"Вероятно, она знает об этом вопросе больше нас."},{"text":"Die Reparatur dürfte mehrere Tage dauern.","translation_ru":"Вероятно, ремонт займёт несколько дней."}]}]},
-{"id":"GFO010","set_id":"GFO","pattern":"The method may be simple, but it is not careless.","group_title":"German mögen conceding a point before limiting it","level":"C1","logic":{"function":"grammar-mechanics","core":"Concessive modal mögen","form":"Subject + mag/mögen + infinitive, aber + contrast","metaphor_ru":"Mag einfach sein здесь значит «пусть он и простой / возможно, простой». Это не mögen в значении любить или нравиться."},"langs":[{"lang":"en","formula":"Subject + may + infinitive, but + contrasting clause","example":"The method may be simple, but it is not careless.","translation":"Метод, возможно, прост, но не небрежен.","examples":[{"text":"She may be new, but she asks excellent questions.","translation_ru":"Она, возможно, новичок, но задаёт отличные вопросы."},{"text":"We may disagree, but we can still work together.","translation_ru":"Пусть мы и не согласны, мы всё равно можем работать вместе."}]},{"lang":"de","formula":"Subject + mag/mögen + infinitive, aber + contrast","example":"Die Methode mag einfach sein, aber sie ist nicht nachlässig.","translation":"Метод, возможно, прост, но не небрежен.","examples":[{"text":"Sie mag neu sein, aber sie stellt ausgezeichnete Fragen.","translation_ru":"Она, возможно, новичок, но задаёт отличные вопросы."},{"text":"Wir mögen unterschiedlicher Meinung sein, aber wir können trotzdem zusammenarbeiten.","translation_ru":"Пусть мы и не согласны, мы всё равно можем работать вместе."}]}]},
-{"id":"GFO011","set_id":"GFO","pattern":"We will choose the room depending on whether everyone attends.","group_title":"German je nachdem introducing a contingent choice","level":"B2","logic":{"function":"grammar-mechanics","core":"German je nachdem ob as an alternative-dependent adverbial","form":"Je nachdem, ob + clause","metaphor_ru":"Je nachdem, ob означает «в зависимости от того, ... ли». Это не парное сравнительное je ... desto; здесь выбирают действие по условию."},"langs":[{"lang":"en","formula":"Main action + depending on whether + clause","example":"We will choose the room depending on whether everyone attends.","translation":"Мы выберем комнату в зависимости от того, все ли придут.","examples":[{"text":"She will travel by train or car depending on whether the road is open.","translation_ru":"Она поедет поездом или машиной в зависимости от того, открыта ли дорога."},{"text":"I will send a reminder depending on whether they reply today.","translation_ru":"Я отправлю напоминание в зависимости от того, ответят ли они сегодня."}]},{"lang":"de","formula":"Main clause + je nachdem, ob + subordinate clause","example":"Wir wählen den Raum je nachdem, ob alle teilnehmen.","translation":"Мы выберем комнату в зависимости от того, все ли придут.","examples":[{"text":"Sie fährt mit dem Zug oder mit dem Auto, je nachdem, ob die Straße offen ist.","translation_ru":"Она поедет поездом или машиной в зависимости от того, открыта ли дорога."},{"text":"Ich schicke eine Erinnerung, je nachdem, ob sie heute antworten.","translation_ru":"Я отправлю напоминание в зависимости от того, ответят ли они сегодня."}]}]},
-{"id":"GFO012","set_id":"GFO","pattern":"We will meet outside unless it rains.","group_title":"German es sei denn with main-clause word order after the exception","level":"B2","logic":{"function":"grammar-mechanics","core":"German es sei denn plus verb-second exception clause","form":"Main clause, es sei denn, subject + finite verb","metaphor_ru":"После es sei denn без dass идёт обычный порядок Hauptsatz: es regnet. При добавлении dass глагол уходил бы в конец; не смешивайте варианты."},"langs":[{"lang":"en","formula":"Main clause + unless + exception clause","example":"We will meet outside unless it rains.","translation":"Мы встретимся снаружи, если только не пойдёт дождь.","examples":[{"text":"I will keep the original unless you need it.","translation_ru":"Я оставлю оригинал у себя, если только он тебе не нужен."},{"text":"She can start on Monday unless the date changes.","translation_ru":"Она может начать в понедельник, если только дата не изменится."}]},{"lang":"de","formula":"Main clause, es sei denn, + subject + finite verb + rest","example":"Wir treffen uns draußen, es sei denn, es regnet.","translation":"Мы встретимся снаружи, если только не пойдёт дождь.","examples":[{"text":"Ich behalte das Original, es sei denn, du brauchst es.","translation_ru":"Я оставлю оригинал у себя, если только он тебе не нужен."},{"text":"Sie kann am Montag anfangen, es sei denn, der Termin ändert sich.","translation_ru":"Она может начать в понедельник, если только дата не изменится."}]}]},
-{"id":"GFO013","set_id":"GFO","pattern":"We should book early, especially since there are only a few seats.","group_title":"German zumal introducing an additional supporting reason","level":"C1","logic":{"function":"grammar-mechanics","core":"Additional causal support with zumal","form":"Main judgement, zumal + subordinate clause","metaphor_ru":"Zumal добавляет особенно весомую причину к уже разумному решению. После него глагол в конце; это союз, не наречие вроде deshalb."},"langs":[{"lang":"en","formula":"Main judgement, especially since + supporting reason","example":"We should book early, especially since there are only a few seats.","translation":"Стоит забронировать рано, тем более что мест немного.","examples":[{"text":"She deserves a break, especially since she worked all weekend.","translation_ru":"Она заслуживает перерыва, тем более что работала все выходные."},{"text":"I would keep a copy, especially since the original cannot be replaced.","translation_ru":"Я бы сохранил копию, тем более что оригинал нельзя заменить."}]},{"lang":"de","formula":"Main clause, zumal + subordinate clause with final verb","example":"Wir sollten früh buchen, zumal es nur wenige Plätze gibt.","translation":"Стоит забронировать рано, тем более что мест немного.","examples":[{"text":"Sie verdient eine Pause, zumal sie das ganze Wochenende gearbeitet hat.","translation_ru":"Она заслуживает перерыва, тем более что работала все выходные."},{"text":"Ich würde eine Kopie behalten, zumal das Original nicht ersetzt werden kann.","translation_ru":"Я бы сохранил копию, тем более что оригинал нельзя заменить."}]}]},
-{"id":"GFO014","set_id":"GFO","pattern":"Her progress is all the more impressive because she started only recently.","group_title":"German umso ... als linking an intensified evaluation to a reason","level":"C1","logic":{"function":"grammar-mechanics","core":"Reason-linked comparative emphasis with umso and als","form":"Umso + comparative, als + clause","metaphor_ru":"Здесь als вводит причину усиленной оценки, а не второй объект сравнения. Смысл: тем впечатляющее, что начала недавно."},"langs":[{"lang":"en","formula":"Subject + be + all the more + adjective + because + reason","example":"Her progress is all the more impressive because she started only recently.","translation":"Её прогресс тем более впечатляет, что она начала совсем недавно.","examples":[{"text":"The delay is all the more frustrating because we booked in advance.","translation_ru":"Задержка тем более досадна, что мы бронировали заранее."},{"text":"His support was all the more valuable because he understood the context.","translation_ru":"Его поддержка была тем ценнее, что он понимал контекст."}]},{"lang":"de","formula":"Subject + sein + umso + comparative, als + subordinate reason","example":"Ihre Fortschritte sind umso beeindruckender, als sie erst vor Kurzem angefangen hat.","translation":"Её прогресс тем более впечатляет, что она начала совсем недавно.","examples":[{"text":"Die Verzögerung ist umso ärgerlicher, als wir im Voraus gebucht haben.","translation_ru":"Задержка тем более досадна, что мы бронировали заранее."},{"text":"Seine Unterstützung war umso wertvoller, als er den Zusammenhang verstand.","translation_ru":"Его поддержка была тем ценнее, что он понимал контекст."}]}]},
-{"id":"GFO015","set_id":"GFO","pattern":"We should expect the review to take several days.","group_title":"German anticipatory damit before a dass-clause","level":"B2","logic":{"function":"grammar-mechanics","core":"Rechnen mit expressed through damit dass","form":"Damit rechnen, dass + clause","metaphor_ru":"Mit принадлежит rechnen в значении ожидать. Перед придаточным оно превращается в damit; это не союз damit со значением цели."},"langs":[{"lang":"en","formula":"Subject + expect + embedded subject + to-infinitive","example":"We should expect the review to take several days.","translation":"Нам стоит ожидать, что проверка займёт несколько дней.","examples":[{"text":"She expects the room to be full.","translation_ru":"Она ожидает, что комната будет заполнена."},{"text":"I did not expect the deadline to change.","translation_ru":"Я не ожидал, что срок изменится."}]},{"lang":"de","formula":"Subject + rechnen + damit, dass + subordinate clause","example":"Wir sollten damit rechnen, dass die Prüfung mehrere Tage dauert.","translation":"Нам стоит ожидать, что проверка займёт несколько дней.","examples":[{"text":"Sie rechnet damit, dass der Raum voll sein wird.","translation_ru":"Она ожидает, что комната будет заполнена."},{"text":"Ich habe nicht damit gerechnet, dass sich die Frist ändert.","translation_ru":"Я не ожидал, что срок изменится."}]}]},
-{"id":"GFO016","set_id":"GFO","pattern":"What matters is whether the result can be reproduced.","group_title":"German darauf ankommen with a yes-or-no content clause","level":"B2","logic":{"function":"grammar-mechanics","core":"Correlate darauf before ob with ankommen","form":"Es kommt darauf an, ob + clause","metaphor_ru":"Darauf анонсирует придаточное ob и удерживает управление ankommen auf. В главной части отделяемая приставка an занимает конец рамки."},"langs":[{"lang":"en","formula":"What matters is whether + finite clause","example":"What matters is whether the result can be reproduced.","translation":"Важно, можно ли воспроизвести результат.","examples":[{"text":"What matters is whether everyone understands the next step.","translation_ru":"Важно, все ли понимают следующий шаг."},{"text":"What matters is whether the original remains available.","translation_ru":"Важно, остаётся ли оригинал доступным."}]},{"lang":"de","formula":"Es kommt darauf an, ob + subordinate clause","example":"Es kommt darauf an, ob sich das Ergebnis reproduzieren lässt.","translation":"Важно, можно ли воспроизвести результат.","examples":[{"text":"Es kommt darauf an, ob alle den nächsten Schritt verstehen.","translation_ru":"Важно, все ли понимают следующий шаг."},{"text":"Es kommt darauf an, ob das Original verfügbar bleibt.","translation_ru":"Важно, остаётся ли оригинал доступным."}]}]},
-{"id":"GFO017","set_id":"GFO","pattern":"I was tired because I had had to work late.","group_title":"German perfect modal clusters inside a subordinate clause","level":"C1","logic":{"function":"grammar-mechanics","core":"Subordinate auxiliary-first cluster with modal replacement infinitive","form":"Weil + subject + haben + infinitive + modal infinitive","metaphor_ru":"В группе с Ersatzinfinitiv модального глагола haben ставится перед двумя инфинитивами: weil ich habe arbeiten müssen. Здесь нельзя механически отправить haben последним."},"langs":[{"lang":"en","formula":"Main clause + because + subject + past/perfect necessity or ability predicate","example":"I was tired because I had had to work late.","translation":"Я устал, потому что мне пришлось работать допоздна.","examples":[{"text":"She was relieved because she had been able to finish on time.","translation_ru":"Она почувствовала облегчение, потому что смогла закончить вовремя."},{"text":"We were disappointed because we had not been allowed to enter.","translation_ru":"Мы были разочарованы, потому что нам не разрешили войти."}]},{"lang":"de","formula":"Main clause, weil + subject + hat/haben/hatte(n) + main infinitive + modal infinitive","example":"Ich war müde, weil ich lange hatte arbeiten müssen.","translation":"Я устал, потому что мне пришлось работать допоздна.","examples":[{"text":"Sie war erleichtert, weil sie rechtzeitig hatte fertig werden können.","translation_ru":"Она почувствовала облегчение, потому что смогла закончить вовремя."},{"text":"Wir waren enttäuscht, weil wir nicht hatten hineingehen dürfen.","translation_ru":"Мы были разочарованы, потому что нам не разрешили войти."}]}]},
-{"id":"GFO018","set_id":"GFO","pattern":"I had arranged for the lock to be replaced.","group_title":"German past perfect causative with lassen as a replacement infinitive","level":"C1","logic":{"function":"grammar-mechanics","core":"Perfect causative lassen with two infinitives","form":"Haben + object + infinitive + lassen","metaphor_ru":"После другого инфинитива в этой каузативной конструкции используется lassen, не gelassen: hatte austauschen lassen. Это услуга, а не самостоятельный ремонт владельцем."},"langs":[{"lang":"en","formula":"Subject + had arranged for + object + to be + past participle","example":"I had arranged for the lock to be replaced.","translation":"Я организовал замену замка.","examples":[{"text":"She had arranged for the documents to be translated.","translation_ru":"Она организовала перевод документов."},{"text":"We had arranged for the roof to be inspected.","translation_ru":"Мы организовали проверку крыши."}]},{"lang":"de","formula":"Subject + hatte(n) + object + bare infinitive + lassen","example":"Ich hatte das Schloss austauschen lassen.","translation":"Я организовал замену замка.","examples":[{"text":"Sie hatte die Unterlagen übersetzen lassen.","translation_ru":"Она организовала перевод документов."},{"text":"Wir hatten das Dach überprüfen lassen.","translation_ru":"Мы организовали проверку крыши."}]}]},
-{"id":"GFO019","set_id":"GFO","pattern":"The documents signed by both parties are stored here.","group_title":"German extended passive participles before the noun","level":"C1","logic":{"function":"grammar-mechanics","core":"Extended attributive past participle with case and adjective endings","form":"Article + expanded participle attribute + noun","metaphor_ru":"Немецкий переносит весь блок перед существительным: die von beiden Parteien unterschriebenen Unterlagen. Английский естественно ставит signed by ... после documents."},"langs":[{"lang":"en","formula":"Noun + past participle + expanded complement + main predicate","example":"The documents signed by both parties are stored here.","translation":"Документы, подписанные обеими сторонами, хранятся здесь.","examples":[{"text":"The room reserved for our group is upstairs.","translation_ru":"Комната, забронированная для нашей группы, находится наверху."},{"text":"The changes proposed during the meeting are listed below.","translation_ru":"Изменения, предложенные во время встречи, перечислены ниже."}]},{"lang":"de","formula":"Article + complement + inflected past participle + noun + main predicate","example":"Die von beiden Parteien unterschriebenen Unterlagen werden hier aufbewahrt.","translation":"Документы, подписанные обеими сторонами, хранятся здесь.","examples":[{"text":"Der für unsere Gruppe reservierte Raum liegt oben.","translation_ru":"Комната, забронированная для нашей группы, находится наверху."},{"text":"Die während der Besprechung vorgeschlagenen Änderungen sind unten aufgeführt.","translation_ru":"Изменения, предложенные во время встречи, перечислены ниже."}]}]},
-{"id":"GFO020","set_id":"GFO","pattern":"The data to be checked is marked in the table.","group_title":"German zu-participle attributes expressing a pending passive task","level":"C1","logic":{"function":"grammar-mechanics","core":"German gerundive zu plus inflected present participle","form":"Article + zu + participial adjective + noun","metaphor_ru":"Die zu prüfenden Daten — данные, которые предстоит проверить. Это не die prüfenden Daten: без zu смысл стал бы активным «проверяющие данные»."},"langs":[{"lang":"en","formula":"Noun + to be + passive participle + main predicate","example":"The data to be checked is marked in the table.","translation":"Данные, которые предстоит проверить, отмечены в таблице.","examples":[{"text":"The documents to be signed are on your desk.","translation_ru":"Документы, которые предстоит подписать, лежат на твоём столе."},{"text":"The problem to be solved is described in the first paragraph.","translation_ru":"Проблема, которую предстоит решить, описана в первом абзаце."}]},{"lang":"de","formula":"Article + zu + inflected present participle + noun + predicate","example":"Die zu prüfenden Daten sind in der Tabelle markiert.","translation":"Данные, которые предстоит проверить, отмечены в таблице.","examples":[{"text":"Die zu unterschreibenden Unterlagen liegen auf deinem Schreibtisch.","translation_ru":"Документы, которые предстоит подписать, лежат на твоём столе."},{"text":"Das zu lösende Problem wird im ersten Absatz beschrieben.","translation_ru":"Проблема, которую предстоит решить, описана в первом абзаце."}]}]}
-]
+{
+  "schemaVersion": 1,
+  "set_id": "GFO",
+  "title": "German-led grammatical flexibility",
+  "title_ru": "Немецкие конструкции и английские параллели",
+  "patterns": [
+    {
+      "id": "GFO001",
+      "set_id": "GFO",
+      "pattern": "You do not need to print the ticket.",
+      "group_title": "German negative necessity with brauchen and zu",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German nicht brauchen zu versus a full modal",
+        "form": "Nicht brauchen + zu-infinitive",
+        "metaphor_ru": "В аккуратном письменном немецком после brauchen сохраняем zu: du brauchst nicht zu drucken. Смысл — отсутствие необходимости, не запрет."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + do/does not need to + infinitive",
+          "example": "You do not need to print the ticket.",
+          "translation": "Тебе не нужно печатать билет.",
+          "examples": [
+            {
+              "text": "She does not need to bring anything.",
+              "translation_ru": "Ей не нужно ничего приносить."
+            },
+            {
+              "text": "We do not need to decide today.",
+              "translation_ru": "Нам не нужно решать сегодня."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + brauchen + nicht/kein + zu-infinitive",
+          "example": "Du brauchst das Ticket nicht auszudrucken.",
+          "translation": "Тебе не нужно печатать билет.",
+          "examples": [
+            {
+              "text": "Sie braucht nichts mitzubringen.",
+              "translation_ru": "Ей не нужно ничего приносить."
+            },
+            {
+              "text": "Wir brauchen heute nicht zu entscheiden.",
+              "translation_ru": "Нам не нужно решать сегодня."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Nicht brauchen с zu: нет необходимости",
+      "title_en": "German negative necessity with brauchen and zu",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO002",
+      "set_id": "GFO",
+      "pattern": "This error can be corrected without changing the original.",
+      "group_title": "German reflexive lassen expressing passive possibility",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German sich lassen plus infinitive as a passive alternative",
+        "form": "Subject + lässt/lassen sich + infinitive",
+        "metaphor_ru": "Der Fehler lässt sich beheben означает «ошибку можно устранить». Это не просьба позволить ошибке что-то сделать; zu после lassen не ставится."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Affected object + can be + past participle + manner/context",
+          "example": "This error can be corrected without changing the original.",
+          "translation": "Эту ошибку можно исправить, не меняя оригинал.",
+          "examples": [
+            {
+              "text": "The table can be folded in seconds.",
+              "translation_ru": "Стол можно сложить за несколько секунд."
+            },
+            {
+              "text": "The difference can be explained with one example.",
+              "translation_ru": "Различие можно объяснить одним примером."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Affected object + lässt/lassen sich + bare infinitive",
+          "example": "Dieser Fehler lässt sich beheben, ohne das Original zu ändern.",
+          "translation": "Эту ошибку можно исправить, не меняя оригинал.",
+          "examples": [
+            {
+              "text": "Der Tisch lässt sich in Sekunden zusammenklappen.",
+              "translation_ru": "Стол можно сложить за несколько секунд."
+            },
+            {
+              "text": "Der Unterschied lässt sich mit einem Beispiel erklären.",
+              "translation_ru": "Различие можно объяснить одним примером."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Sich lassen: можно сделать",
+      "title_en": "German reflexive lassen expressing passive possibility",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO003",
+      "set_id": "GFO",
+      "pattern": "The original must be kept in a safe place.",
+      "group_title": "German sein plus zu expressing a passive requirement",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German sein zu with obligatory passive interpretation",
+        "form": "Subject + sein + zu-infinitive",
+        "metaphor_ru": "Das Original ist aufzubewahren — формальное требование сохранить оригинал. Sein zu может также выражать возможность; здесь контекст специально задаёт обязанность."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Affected object + must be + passive participle",
+          "example": "The original must be kept in a safe place.",
+          "translation": "Оригинал необходимо хранить в безопасном месте.",
+          "examples": [
+            {
+              "text": "All fields must be completed before submission.",
+              "translation_ru": "Все поля необходимо заполнить перед отправкой."
+            },
+            {
+              "text": "The instructions must be followed exactly.",
+              "translation_ru": "Инструкции необходимо соблюдать точно."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Affected object + ist/sind + obligation context + zu-infinitive",
+          "example": "Das Original ist an einem sicheren Ort aufzubewahren.",
+          "translation": "Оригинал необходимо хранить в безопасном месте.",
+          "examples": [
+            {
+              "text": "Alle Felder sind vor dem Absenden auszufüllen.",
+              "translation_ru": "Все поля необходимо заполнить перед отправкой."
+            },
+            {
+              "text": "Die Anweisungen sind genau zu befolgen.",
+              "translation_ru": "Инструкции необходимо соблюдать точно."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Sein zu: требуется выполнить",
+      "title_en": "German sein plus zu expressing a passive requirement",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO004",
+      "set_id": "GFO",
+      "pattern": "All visitors are required to sign in at reception.",
+      "group_title": "German haben plus zu assigning a duty to an actor",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German haben zu as an active formal obligation",
+        "form": "Actor + haben + zu-infinitive",
+        "metaphor_ru": "Посетители сами выполняют действие. Haben zu звучит предписывающе и формальнее müssen; используйте его для правил, а не для дружелюбной просьбы."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Actor + be required to + infinitive",
+          "example": "All visitors are required to sign in at reception.",
+          "translation": "Все посетители обязаны зарегистрироваться на стойке регистрации.",
+          "examples": [
+            {
+              "text": "The organiser is required to inform the participants of any changes.",
+              "translation_ru": "Организатор обязан сообщать участникам обо всех изменениях."
+            },
+            {
+              "text": "We are required to keep a copy of the agreement.",
+              "translation_ru": "Мы обязаны хранить копию соглашения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Actor + hat/haben + zu-infinitive",
+          "example": "Alle Besucher haben sich an der Rezeption anzumelden.",
+          "translation": "Все посетители обязаны зарегистрироваться на стойке регистрации.",
+          "examples": [
+            {
+              "text": "Der Organisator hat die Teilnehmer über alle Änderungen zu informieren.",
+              "translation_ru": "Организатор обязан сообщать участникам обо всех изменениях."
+            },
+            {
+              "text": "Wir haben eine Kopie der Vereinbarung aufzubewahren.",
+              "translation_ru": "Мы обязаны хранить копию соглашения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Haben zu: исполнитель обязан",
+      "title_en": "German haben plus zu assigning a duty to an actor",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO005",
+      "set_id": "GFO",
+      "pattern": "This assumption ought to be checked.",
+      "group_title": "German gehören with a participle expressing what needs doing",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German gehören plus past participle as a colloquial passive necessity",
+        "form": "Subject + gehören + participle",
+        "metaphor_ru": "Das gehört geprüft — разговорное «это нужно проверить». Каркас не означает принадлежность, как gehört mir; уместность зависит от стиля и региона."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Affected object + ought to be + passive participle",
+          "example": "This assumption ought to be checked.",
+          "translation": "Это предположение стоит проверить.",
+          "examples": [
+            {
+              "text": "The old lock ought to be replaced.",
+              "translation_ru": "Старый замок стоит заменить."
+            },
+            {
+              "text": "These instructions ought to be simplified.",
+              "translation_ru": "Эти инструкции стоит упростить."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Affected object + gehört/gehören + past participle",
+          "example": "Diese Annahme gehört überprüft.",
+          "translation": "Это предположение стоит проверить.",
+          "examples": [
+            {
+              "text": "Das alte Schloss gehört ausgetauscht.",
+              "translation_ru": "Старый замок стоит заменить."
+            },
+            {
+              "text": "Diese Anweisungen gehören vereinfacht.",
+              "translation_ru": "Эти инструкции стоит упростить."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Gehören с причастием: стоит сделать",
+      "title_en": "German gehören with a participle expressing what needs doing",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO006",
+      "set_id": "GFO",
+      "pattern": "She was given a detailed explanation of the process.",
+      "group_title": "German recipient passive with bekommen",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German bekommen-passive promoting a dative recipient",
+        "form": "Recipient + bekommen + object + participle",
+        "metaphor_ru": "Sie bekam den Ablauf erklärt переводит получателя в подлежащее. Это не просто «получила объяснение» как существительное: erklärt остаётся глагольным причастием."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Recipient + was/were + giving/showing passive + information/object",
+          "example": "She was given a detailed explanation of the process.",
+          "translation": "Ей подробно объяснили процесс.",
+          "examples": [
+            {
+              "text": "We were shown the new workspace.",
+              "translation_ru": "Нам показали новое рабочее место."
+            },
+            {
+              "text": "I was sent the corrected version by email.",
+              "translation_ru": "Мне отправили исправленную версию по электронной почте."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Recipient + bekam/bekamen + accusative object + past participle",
+          "example": "Sie bekam den Ablauf ausführlich erklärt.",
+          "translation": "Ей подробно объяснили процесс.",
+          "examples": [
+            {
+              "text": "Wir bekamen den neuen Arbeitsplatz gezeigt.",
+              "translation_ru": "Нам показали новое рабочее место."
+            },
+            {
+              "text": "Ich bekam die korrigierte Version per E-Mail geschickt.",
+              "translation_ru": "Мне отправили исправленную версию по электронной почте."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Bekommen-пассив получателя",
+      "title_en": "German recipient passive with bekommen",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO007",
+      "set_id": "GFO",
+      "pattern": "She is said to have turned down the offer.",
+      "group_title": "German sollen reporting someone else's account of the past",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German reportative sollen with perfect infinitive",
+        "form": "Sollen + participle + haben/sein",
+        "metaphor_ru": "Sie soll abgelehnt haben — по чужим сведениям, она отказалась. Это не «она должна была отказаться»: sollen здесь маркирует источник сообщения."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be said to have + past participle",
+          "example": "She is said to have turned down the offer.",
+          "translation": "Говорят, она отказалась от предложения.",
+          "examples": [
+            {
+              "text": "The owner is said to have moved abroad.",
+              "translation_ru": "Говорят, владелец переехал за границу."
+            },
+            {
+              "text": "They are said to have reached an agreement.",
+              "translation_ru": "Говорят, они достигли соглашения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + soll/sollen + past participle + haben/sein",
+          "example": "Sie soll das Angebot abgelehnt haben.",
+          "translation": "Говорят, она отказалась от предложения.",
+          "examples": [
+            {
+              "text": "Der Eigentümer soll ins Ausland gezogen sein.",
+              "translation_ru": "Говорят, владелец переехал за границу."
+            },
+            {
+              "text": "Sie sollen eine Einigung erzielt haben.",
+              "translation_ru": "Говорят, они достигли соглашения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Sollen передаёт чужие сведения",
+      "title_en": "German sollen reporting someone else's account of the past",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO008",
+      "set_id": "GFO",
+      "pattern": "He claims not to have known about the change.",
+      "group_title": "German wollen reporting a person's own possibly doubtful claim",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German reportative wollen with perfect infinitive",
+        "form": "Wollen + participle + haben/sein",
+        "metaphor_ru": "Er will nichts gewusst haben — он утверждает, что не знал, часто с дистанцией говорящего. Это не желание «хочет не знать»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + claim(s) + perfect infinitive",
+          "example": "He claims not to have known about the change.",
+          "translation": "Он утверждает, что не знал об изменении.",
+          "examples": [
+            {
+              "text": "She claims to have seen the original document.",
+              "translation_ru": "Она утверждает, что видела оригинал документа."
+            },
+            {
+              "text": "They claim to have sent the warning in advance.",
+              "translation_ru": "Они утверждают, что отправили предупреждение заранее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + will/wollen + past participle + haben/sein",
+          "example": "Er will von der Änderung nichts gewusst haben.",
+          "translation": "Он утверждает, что не знал об изменении.",
+          "examples": [
+            {
+              "text": "Sie will das Originaldokument gesehen haben.",
+              "translation_ru": "Она утверждает, что видела оригинал документа."
+            },
+            {
+              "text": "Sie wollen die Warnung im Voraus geschickt haben.",
+              "translation_ru": "Они утверждают, что отправили предупреждение заранее."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Wollen передаёт заявление человека",
+      "title_en": "German wollen reporting a person's own possibly doubtful claim",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO009",
+      "set_id": "GFO",
+      "pattern": "That is probably the most practical option.",
+      "group_title": "German dürfte expressing a cautious probability estimate",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Epistemic dürfte rather than permission",
+        "form": "Subject + dürfte(n) + infinitive",
+        "metaphor_ru": "Dürfte sein означает «вероятно, является», не разрешение. Не путайте с darf sein и не трактуйте любую форму dürfen как «можно»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + probably + ordinary predicate",
+          "example": "That is probably the most practical option.",
+          "translation": "Вероятно, это самый практичный вариант.",
+          "examples": [
+            {
+              "text": "She probably knows more about the issue than we do.",
+              "translation_ru": "Вероятно, она знает об этом вопросе больше нас."
+            },
+            {
+              "text": "The repair will probably take several days.",
+              "translation_ru": "Вероятно, ремонт займёт несколько дней."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + dürfte/dürften + bare infinitive",
+          "example": "Das dürfte die praktischste Option sein.",
+          "translation": "Вероятно, это самый практичный вариант.",
+          "examples": [
+            {
+              "text": "Sie dürfte mehr über das Thema wissen als wir.",
+              "translation_ru": "Вероятно, она знает об этом вопросе больше нас."
+            },
+            {
+              "text": "Die Reparatur dürfte mehrere Tage dauern.",
+              "translation_ru": "Вероятно, ремонт займёт несколько дней."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Dürfte выражает вероятность",
+      "title_en": "German dürfte expressing a cautious probability estimate",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO010",
+      "set_id": "GFO",
+      "pattern": "The explanation may be brief, but it is not superficial.",
+      "group_title": "German mögen conceding a point before limiting it",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Concessive modal mögen",
+        "form": "Subject + mag/mögen + infinitive, aber + contrast",
+        "metaphor_ru": "Mag einfach sein здесь значит «пусть он и простой / возможно, простой». Это не mögen в значении любить или нравиться."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + may + infinitive, but + contrasting clause",
+          "example": "The explanation may be brief, but it is not superficial.",
+          "translation": "Объяснение, возможно, краткое, но не поверхностное.",
+          "examples": [
+            {
+              "text": "She may be new, but she asks excellent questions.",
+              "translation_ru": "Она, возможно, новичок, но задаёт отличные вопросы."
+            },
+            {
+              "text": "We may disagree, but we can still work together.",
+              "translation_ru": "Пусть мы и не согласны, мы всё равно можем работать вместе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + mag/mögen + infinitive, aber + contrast",
+          "example": "Die Erklärung mag kurz sein, aber sie ist nicht oberflächlich.",
+          "translation": "Объяснение, возможно, краткое, но не поверхностное.",
+          "examples": [
+            {
+              "text": "Sie mag neu sein, aber sie stellt ausgezeichnete Fragen.",
+              "translation_ru": "Она, возможно, новичок, но задаёт отличные вопросы."
+            },
+            {
+              "text": "Wir mögen unterschiedlicher Meinung sein, aber wir können trotzdem zusammenarbeiten.",
+              "translation_ru": "Пусть мы и не согласны, мы всё равно можем работать вместе."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Mögen вводит уступку",
+      "title_en": "German mögen conceding a point before limiting it",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO011",
+      "set_id": "GFO",
+      "pattern": "We will choose the room depending on whether everyone attends.",
+      "group_title": "German je nachdem introducing a contingent choice",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German je nachdem ob as an alternative-dependent adverbial",
+        "form": "Je nachdem, ob + clause",
+        "metaphor_ru": "Je nachdem, ob означает «в зависимости от того, ... ли». Это не парное сравнительное je ... desto; здесь выбирают действие по условию."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main action + depending on whether + clause",
+          "example": "We will choose the room depending on whether everyone attends.",
+          "translation": "Мы выберем комнату в зависимости от того, все ли придут.",
+          "examples": [
+            {
+              "text": "She will travel by train or car depending on whether the road is open.",
+              "translation_ru": "Она поедет поездом или машиной в зависимости от того, открыта ли дорога."
+            },
+            {
+              "text": "I will send a reminder depending on whether they reply today.",
+              "translation_ru": "Я отправлю напоминание в зависимости от того, ответят ли они сегодня."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause + je nachdem, ob + subordinate clause",
+          "example": "Wir wählen den Raum je nachdem, ob alle teilnehmen.",
+          "translation": "Мы выберем комнату в зависимости от того, все ли придут.",
+          "examples": [
+            {
+              "text": "Sie fährt mit dem Zug oder mit dem Auto, je nachdem, ob die Straße offen ist.",
+              "translation_ru": "Она поедет поездом или машиной в зависимости от того, открыта ли дорога."
+            },
+            {
+              "text": "Ich schicke eine Erinnerung, je nachdem, ob sie heute antworten.",
+              "translation_ru": "Я отправлю напоминание в зависимости от того, ответят ли они сегодня."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Je nachdem ob: зависит от ответа",
+      "title_en": "German je nachdem introducing a contingent choice",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO012",
+      "set_id": "GFO",
+      "pattern": "We will meet outside unless it rains.",
+      "group_title": "German es sei denn with main-clause word order after the exception",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German es sei denn plus verb-second exception clause",
+        "form": "Main clause, es sei denn, subject + finite verb",
+        "metaphor_ru": "После es sei denn без dass идёт обычный порядок Hauptsatz: es regnet. При добавлении dass глагол уходил бы в конец; не смешивайте варианты."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + unless + exception clause",
+          "example": "We will meet outside unless it rains.",
+          "translation": "Мы встретимся снаружи, если только не пойдёт дождь.",
+          "examples": [
+            {
+              "text": "I will keep the original unless you need it.",
+              "translation_ru": "Я оставлю оригинал у себя, если только он тебе не нужен."
+            },
+            {
+              "text": "She can start on Monday unless the date changes.",
+              "translation_ru": "Она может начать в понедельник, если только дата не изменится."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause, es sei denn, + subject + finite verb + rest",
+          "example": "Wir treffen uns draußen, es sei denn, es regnet.",
+          "translation": "Мы встретимся снаружи, если только не пойдёт дождь.",
+          "examples": [
+            {
+              "text": "Ich behalte das Original, es sei denn, du brauchst es.",
+              "translation_ru": "Я оставлю оригинал у себя, если только он тебе не нужен."
+            },
+            {
+              "text": "Sie kann am Montag anfangen, es sei denn, der Termin ändert sich.",
+              "translation_ru": "Она может начать в понедельник, если только дата не изменится."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Es sei denn: порядок главного предложения",
+      "title_en": "German es sei denn with main-clause word order after the exception",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO013",
+      "set_id": "GFO",
+      "pattern": "We should book early, especially since there are only a few seats.",
+      "group_title": "German zumal introducing an additional supporting reason",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Additional causal support with zumal",
+        "form": "Main judgement, zumal + subordinate clause",
+        "metaphor_ru": "Zumal добавляет особенно весомую причину к уже разумному решению. После него глагол в конце; это союз, не наречие вроде deshalb."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main judgement, especially since + supporting reason",
+          "example": "We should book early, especially since there are only a few seats.",
+          "translation": "Стоит забронировать рано, тем более что мест немного.",
+          "examples": [
+            {
+              "text": "She deserves a break, especially since she worked all weekend.",
+              "translation_ru": "Она заслуживает перерыва, тем более что работала все выходные."
+            },
+            {
+              "text": "I would keep a copy, especially since the original cannot be replaced.",
+              "translation_ru": "Я бы сохранил копию, тем более что оригинал нельзя заменить."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause, zumal + subordinate clause with final verb",
+          "example": "Wir sollten früh buchen, zumal es nur wenige Plätze gibt.",
+          "translation": "Стоит забронировать рано, тем более что мест немного.",
+          "examples": [
+            {
+              "text": "Sie verdient eine Pause, zumal sie das ganze Wochenende gearbeitet hat.",
+              "translation_ru": "Она заслуживает перерыва, тем более что работала все выходные."
+            },
+            {
+              "text": "Ich würde eine Kopie behalten, zumal das Original nicht ersetzt werden kann.",
+              "translation_ru": "Я бы сохранил копию, тем более что оригинал нельзя заменить."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Zumal: дополнительная причина",
+      "title_en": "German zumal introducing an additional supporting reason",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO014",
+      "set_id": "GFO",
+      "pattern": "Her progress is all the more impressive because she started only recently.",
+      "group_title": "German umso ... als linking an intensified evaluation to a reason",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Reason-linked comparative emphasis with umso and als",
+        "form": "Umso + comparative, als + clause",
+        "metaphor_ru": "Здесь als вводит причину усиленной оценки, а не второй объект сравнения. Смысл: тем впечатляющее, что начала недавно."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + be + all the more + adjective + because + reason",
+          "example": "Her progress is all the more impressive because she started only recently.",
+          "translation": "Её прогресс тем более впечатляет, что она начала совсем недавно.",
+          "examples": [
+            {
+              "text": "The delay is all the more frustrating because we booked in advance.",
+              "translation_ru": "Задержка тем более досадна, что мы бронировали заранее."
+            },
+            {
+              "text": "His support was all the more valuable because he understood the context.",
+              "translation_ru": "Его поддержка была тем ценнее, что он понимал контекст."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + sein + umso + comparative, als + subordinate reason",
+          "example": "Ihre Fortschritte sind umso beeindruckender, als sie erst vor Kurzem angefangen hat.",
+          "translation": "Её прогресс тем более впечатляет, что она начала совсем недавно.",
+          "examples": [
+            {
+              "text": "Die Verzögerung ist umso ärgerlicher, als wir im Voraus gebucht haben.",
+              "translation_ru": "Задержка тем более досадна, что мы бронировали заранее."
+            },
+            {
+              "text": "Seine Unterstützung war umso wertvoller, als er den Zusammenhang verstand.",
+              "translation_ru": "Его поддержка была тем ценнее, что он понимал контекст."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Umso ... als: причина усиления",
+      "title_en": "German umso ... als linking an intensified evaluation to a reason",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO015",
+      "set_id": "GFO",
+      "pattern": "We should expect the review to take several days.",
+      "group_title": "German anticipatory damit before a dass-clause",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Rechnen mit expressed through damit dass",
+        "form": "Damit rechnen, dass + clause",
+        "metaphor_ru": "Mit принадлежит rechnen в значении ожидать. Перед придаточным оно превращается в damit; это не союз damit со значением цели."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + expect + embedded subject + to-infinitive",
+          "example": "We should expect the review to take several days.",
+          "translation": "Нам стоит ожидать, что проверка займёт несколько дней.",
+          "examples": [
+            {
+              "text": "She expects the room to be full.",
+              "translation_ru": "Она ожидает, что комната будет заполнена."
+            },
+            {
+              "text": "I did not expect the deadline to change.",
+              "translation_ru": "Я не ожидал, что срок изменится."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + rechnen + damit, dass + subordinate clause",
+          "example": "Wir sollten damit rechnen, dass die Prüfung mehrere Tage dauert.",
+          "translation": "Нам стоит ожидать, что проверка займёт несколько дней.",
+          "examples": [
+            {
+              "text": "Sie rechnet damit, dass der Raum voll sein wird.",
+              "translation_ru": "Она ожидает, что комната будет заполнена."
+            },
+            {
+              "text": "Ich habe nicht damit gerechnet, dass sich die Frist ändert.",
+              "translation_ru": "Я не ожидал, что срок изменится."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Damit rechnen, dass: ожидать",
+      "title_en": "German anticipatory damit before a dass-clause",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO016",
+      "set_id": "GFO",
+      "pattern": "What matters is whether the result can be reproduced.",
+      "group_title": "German darauf ankommen with a yes-or-no content clause",
+      "level": "B2",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Correlate darauf before ob with ankommen",
+        "form": "Es kommt darauf an, ob + clause",
+        "metaphor_ru": "Darauf анонсирует придаточное ob и удерживает управление ankommen auf. В главной части отделяемая приставка an занимает конец рамки."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What matters is whether + finite clause",
+          "example": "What matters is whether the result can be reproduced.",
+          "translation": "Важно, можно ли воспроизвести результат.",
+          "examples": [
+            {
+              "text": "What matters is whether everyone understands the next step.",
+              "translation_ru": "Важно, все ли понимают следующий шаг."
+            },
+            {
+              "text": "What matters is whether the original remains available.",
+              "translation_ru": "Важно, остаётся ли оригинал доступным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Es kommt darauf an, ob + subordinate clause",
+          "example": "Es kommt darauf an, ob sich das Ergebnis reproduzieren lässt.",
+          "translation": "Важно, можно ли воспроизвести результат.",
+          "examples": [
+            {
+              "text": "Es kommt darauf an, ob alle den nächsten Schritt verstehen.",
+              "translation_ru": "Важно, все ли понимают следующий шаг."
+            },
+            {
+              "text": "Es kommt darauf an, ob das Original verfügbar bleibt.",
+              "translation_ru": "Важно, остаётся ли оригинал доступным."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Darauf ankommen, ob: что важно",
+      "title_en": "German darauf ankommen with a yes-or-no content clause",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO017",
+      "set_id": "GFO",
+      "pattern": "I was tired because I had had to work late.",
+      "group_title": "German perfect modal clusters inside a subordinate clause",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Subordinate auxiliary-first cluster with modal replacement infinitive",
+        "form": "Weil + subject + haben + infinitive + modal infinitive",
+        "metaphor_ru": "В группе с Ersatzinfinitiv модального глагола haben ставится перед двумя инфинитивами: weil ich habe arbeiten müssen. Здесь нельзя механически отправить haben последним."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Main clause + because + subject + past/perfect necessity or ability predicate",
+          "example": "I was tired because I had had to work late.",
+          "translation": "Я устал, потому что мне пришлось работать допоздна.",
+          "examples": [
+            {
+              "text": "She was relieved because she had been able to finish on time.",
+              "translation_ru": "Она почувствовала облегчение, потому что смогла закончить вовремя."
+            },
+            {
+              "text": "We were disappointed because we had not been allowed to enter.",
+              "translation_ru": "Мы были разочарованы, потому что нам не разрешили войти."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Main clause, weil + subject + hat/haben/hatte(n) + main infinitive + modal infinitive",
+          "example": "Ich war müde, weil ich lange hatte arbeiten müssen.",
+          "translation": "Я устал, потому что мне пришлось работать допоздна.",
+          "examples": [
+            {
+              "text": "Sie war erleichtert, weil sie rechtzeitig hatte fertig werden können.",
+              "translation_ru": "Она почувствовала облегчение, потому что смогла закончить вовремя."
+            },
+            {
+              "text": "Wir waren enttäuscht, weil wir nicht hatten hineingehen dürfen.",
+              "translation_ru": "Мы были разочарованы, потому что нам не разрешили войти."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Модальные инфинитивы в придаточном",
+      "title_en": "German perfect modal clusters inside a subordinate clause",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO018",
+      "set_id": "GFO",
+      "pattern": "I had arranged for the lock to be replaced.",
+      "group_title": "German past perfect causative with lassen as a replacement infinitive",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Perfect causative lassen with two infinitives",
+        "form": "Haben + object + infinitive + lassen",
+        "metaphor_ru": "После другого инфинитива в этой каузативной конструкции используется lassen, не gelassen: hatte austauschen lassen. Это услуга, а не самостоятельный ремонт владельцем."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Subject + had arranged for + object + to be + past participle",
+          "example": "I had arranged for the lock to be replaced.",
+          "translation": "Я организовал замену замка.",
+          "examples": [
+            {
+              "text": "She had arranged for the documents to be translated.",
+              "translation_ru": "Она организовала перевод документов."
+            },
+            {
+              "text": "We had arranged for the roof to be inspected.",
+              "translation_ru": "Мы организовали проверку крыши."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Subject + hatte(n) + object + bare infinitive + lassen",
+          "example": "Ich hatte das Schloss austauschen lassen.",
+          "translation": "Я организовал замену замка.",
+          "examples": [
+            {
+              "text": "Sie hatte die Unterlagen übersetzen lassen.",
+              "translation_ru": "Она организовала перевод документов."
+            },
+            {
+              "text": "Wir hatten das Dach überprüfen lassen.",
+              "translation_ru": "Мы организовали проверку крыши."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Перфект каузативного lassen",
+      "title_en": "German past perfect causative with lassen as a replacement infinitive",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO019",
+      "set_id": "GFO",
+      "pattern": "The documents signed by both parties are stored here.",
+      "group_title": "German extended passive participles before the noun",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "Extended attributive past participle with case and adjective endings",
+        "form": "Article + expanded participle attribute + noun",
+        "metaphor_ru": "Немецкий переносит весь блок перед существительным: die von beiden Parteien unterschriebenen Unterlagen. Английский естественно ставит signed by ... после documents."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Noun + past participle + expanded complement + main predicate",
+          "example": "The documents signed by both parties are stored here.",
+          "translation": "Документы, подписанные обеими сторонами, хранятся здесь.",
+          "examples": [
+            {
+              "text": "The room reserved for our group is upstairs.",
+              "translation_ru": "Комната, забронированная для нашей группы, находится наверху."
+            },
+            {
+              "text": "The changes proposed during the meeting are listed below.",
+              "translation_ru": "Изменения, предложенные во время встречи, перечислены ниже."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Article + complement + inflected past participle + noun + main predicate",
+          "example": "Die von beiden Parteien unterschriebenen Unterlagen werden hier aufbewahrt.",
+          "translation": "Документы, подписанные обеими сторонами, хранятся здесь.",
+          "examples": [
+            {
+              "text": "Der für unsere Gruppe reservierte Raum liegt oben.",
+              "translation_ru": "Комната, забронированная для нашей группы, находится наверху."
+            },
+            {
+              "text": "Die während der Besprechung vorgeschlagenen Änderungen sind unten aufgeführt.",
+              "translation_ru": "Изменения, предложенные во время встречи, перечислены ниже."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Распространённое причастие перед именем",
+      "title_en": "German extended passive participles before the noun",
+      "group_id": "GFO"
+    },
+    {
+      "id": "GFO020",
+      "set_id": "GFO",
+      "pattern": "The data to be checked is marked in the table.",
+      "group_title": "German zu-participle attributes expressing a pending passive task",
+      "level": "C1",
+      "logic": {
+        "function": "grammar-mechanics",
+        "core": "German gerundive zu plus inflected present participle",
+        "form": "Article + zu + participial adjective + noun",
+        "metaphor_ru": "Die zu prüfenden Daten — данные, которые предстоит проверить. Это не die prüfenden Daten: без zu смысл стал бы активным «проверяющие данные»."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Noun + to be + passive participle + main predicate",
+          "example": "The data to be checked is marked in the table.",
+          "translation": "Данные, которые предстоит проверить, отмечены в таблице.",
+          "examples": [
+            {
+              "text": "The documents to be signed are on your desk.",
+              "translation_ru": "Документы, которые предстоит подписать, лежат на твоём столе."
+            },
+            {
+              "text": "The problem to be solved is described in the first paragraph.",
+              "translation_ru": "Проблема, которую предстоит решить, описана в первом абзаце."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Article + zu + inflected present participle + noun + predicate",
+          "example": "Die zu prüfenden Daten sind in der Tabelle markiert.",
+          "translation": "Данные, которые предстоит проверить, отмечены в таблице.",
+          "examples": [
+            {
+              "text": "Die zu unterschreibenden Unterlagen liegen auf deinem Schreibtisch.",
+              "translation_ru": "Документы, которые предстоит подписать, лежат на твоём столе."
+            },
+            {
+              "text": "Das zu lösende Problem wird im ersten Absatz beschrieben.",
+              "translation_ru": "Проблема, которую предстоит решить, описана в первом абзаце."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Zu-причастие для предстоящей задачи",
+      "title_en": "German zu-participle attributes expressing a pending passive task",
+      "group_id": "GFO"
+    }
+  ]
+}

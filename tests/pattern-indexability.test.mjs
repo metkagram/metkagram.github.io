@@ -1,3 +1,4 @@
+import { historicalAliases } from './helpers/curriculum-contract.mjs';
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -28,35 +29,23 @@ test("indexability policy publishes one explicit search decision for every Patte
   assert.equal(policy.rules.automatedSlotVariantCandidatesAffectIndexability, false);
 });
 
-test("reviewed Frame-family representatives stay indexable while contextual siblings stay available but noindex", () => {
+test("retained canonical Patterns stay indexable and retired aliases stay outside public indices", () => {
   const policy = readJson("data/quality/pattern-indexability.json");
-  const families = [
-    ["C1HED001", "C1HED002"],
-    ["C1ARG001", "C1ARG002"],
-    ["C1PRO001", "C1PRO002"],
-  ];
   const sitemap = fs.readFileSync(path.join(DIST, "sitemap.xml"), "utf8");
   const inventory = readJson("seo/site-pages.json");
-
-  for (const [representativeId, variantId] of families) {
+  for (const [representativeId, aliasId] of [["C1HED001", "C1HED002"], ["C1ARG001", "C1ARG002"], ["C1PRO001", "C1PRO002"]]) {
     const representative = decision(policy, representativeId);
-    const variant = decision(policy, variantId);
-    assert.equal(representative.indexable, true, `${representativeId} should represent its reviewed Frame family in search`);
-    assert.equal(variant.indexable, false, `${variantId} is a reviewed contextual realization, not a separate search concept`);
-    assert.ok(variant.reasons.includes("reviewed_contextual_variant"));
-    assert.equal(variant.canonical_pattern_id, representativeId);
-
+    assert.equal(representative?.indexable, true);
+    assert.equal(decision(policy, aliasId), undefined, "retired duplicate is not an active Pattern");
+    assert.equal(historicalAliases[aliasId], representativeId, "historical identity remains resolvable");
     for (const locale of ["en", "ru"]) {
-      const representativeRoute = patternPath(locale, representativeId);
-      const variantRoute = patternPath(locale, variantId);
-      const variantHtml = page(locale, variantId);
-      assert.match(variantHtml, /<meta name="robots" content="noindex,follow">/);
-      assert.match(variantHtml, new RegExp(`<link rel="canonical" href="${SITE_URL}${variantRoute.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">`), "stable variant URL remains self-canonical and accessible");
-      assert.ok(sitemap.includes(`${SITE_URL}${representativeRoute}`), `${representativeRoute} stays in sitemap`);
-      assert.ok(!sitemap.includes(`${SITE_URL}${variantRoute}`), `${variantRoute} must leave sitemap`);
-      assert.ok(inventory.pages.some((entry) => entry.route === representativeRoute), `${representativeRoute} stays in SEO inventory`);
-      assert.ok(!inventory.pages.some((entry) => entry.route === variantRoute), `${variantRoute} leaves SEO inventory`);
-      assert.ok(fs.existsSync(path.join(DIST, variantRoute.slice(1), "index.html")), `${variantRoute} must remain a real page`);
+      const canonicalRoute = patternPath(locale, representativeId);
+      const aliasRoute = patternPath(locale, aliasId);
+      assert.ok(sitemap.includes(SITE_URL + canonicalRoute));
+      assert.ok(!sitemap.includes(SITE_URL + aliasRoute));
+      assert.ok(inventory.pages.some(entry => entry.route === canonicalRoute));
+      assert.ok(!inventory.pages.some(entry => entry.route === aliasRoute));
+      assert.ok(page(locale, representativeId).includes('<link rel="canonical" href="' + SITE_URL + canonicalRoute + '">'));
     }
   }
 });
@@ -77,7 +66,7 @@ test("final API quality.indexable agrees with the published search-promotion pol
   const full = readJson("api/v1/patterns.json");
   const byId = new Map(full.data.map((item) => [item.data.id, item.data]));
 
-  for (const patternId of ["C1HED001", "C1HED002", "CON001", "CLF041"]) {
+  for (const patternId of ["C1HED001", "C1ARG001", "CON001", "CLF041", "GFA001"]) {
     const record = decision(policy, patternId);
     const pattern = byId.get(patternId);
     assert.equal(pattern.quality.indexable, record.indexable, `${patternId} full API indexability`);
