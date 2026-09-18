@@ -766,85 +766,85 @@
       "id": "C1CMP001",
       "group_id": "CMP",
       "set_id": "CMP",
-      "title_ru": "По сравнению с [X], [Y] даёт [Z]",
-      "metaphor_ru": "Сравнивайте варианты по явному критерию — стоимости, устойчивости, обратимости, скорости или ценности обучения.",
+      "title_ru": "Ключевое различие между [X] и [Y] — [Z]",
+      "metaphor_ru": "Сравнивайте варианты по конкретному параметру, который их различает, вместо общего «один лучше другого».",
       "langs": [
         {
           "lang": "en",
-          "formula": "Compared with [X], [Y] offers [Z].",
-          "example": "Compared with a big-bang migration, a phased rollout offers more opportunities to detect mapping errors before they spread.",
-          "translation": "По сравнению с одномоментной миграцией поэтапный запуск даёт больше возможностей обнаружить ошибки сопоставления до того, как они распространятся.",
+          "formula": "The decisive difference between [X] and [Y] is [Z].",
+          "example": "The decisive difference between a big-bang migration and a phased rollout is reversibility: staged changes expose mapping errors before they spread.",
+          "translation": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся.",
           "examples": [
             {
-              "text": "**Compared with a big-bang migration, a phased rollout offers more opportunities to detect mapping errors before they spread.**",
-              "translation_ru": "По сравнению с одномоментной миграцией поэтапный запуск даёт больше возможностей обнаружить ошибки сопоставления до того, как они распространятся."
+              "text": "**The decisive difference between a big-bang migration and a phased rollout is reversibility: staged changes expose mapping errors before they spread.**",
+              "translation_ru": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся."
             },
             {
-              "text": "**Compared with adding more buses, increasing train frequency offers more capacity on the busiest corridor.**",
-              "translation_ru": "По сравнению с добавлением автобусов увеличение частоты поездов даёт больше пропускной способности на самом загруженном направлении."
+              "text": "**The decisive difference between adding more buses and increasing train frequency is capacity: trains can move more passengers through the busiest corridor.**",
+              "translation_ru": "Ключевое различие между добавлением автобусов и увеличением частоты поездов — пропускная способность: поезда могут перевезти больше пассажиров на самом загруженном направлении."
             },
             {
-              "text": "**Compared with the lowest bidder, the incumbent supplier offers faster recovery when a critical component fails.**",
-              "translation_ru": "По сравнению с самым дешёвым участником тендера текущий поставщик обеспечивает более быстрое восстановление при отказе критического компонента."
+              "text": "**The decisive difference between the lowest bidder and the incumbent supplier is recovery speed when a critical component fails.**",
+              "translation_ru": "Ключевое различие между самым дешёвым участником тендера и текущим поставщиком — скорость восстановления при отказе критического компонента."
             },
             {
-              "text": "**Compared with another presentation, a supervised practice session offers better evidence that people can actually perform the task.**",
-              "translation_ru": "По сравнению с ещё одной презентацией практическая сессия под наблюдением лучше показывает, умеют ли люди реально выполнять задачу."
+              "text": "**The decisive difference between another presentation and a supervised practice session is the evidence they produce: practice shows whether people can actually perform the task.**",
+              "translation_ru": "Ключевое различие между ещё одной презентацией и практической сессией под наблюдением — в доказательствах результата: практика показывает, умеют ли люди реально выполнять задачу."
             },
             {
-              "text": "**Compared with the larger model, the smaller model offers lower latency and a simpler path to running locally.**",
-              "translation_ru": "По сравнению с более крупной моделью меньшая модель даёт меньшую задержку и проще запускается локально."
+              "text": "**The decisive difference between the larger model and the smaller model is the operating constraint: the smaller one can run locally with lower latency.**",
+              "translation_ru": "Ключевое различие между большой и малой моделью — в требованиях к эксплуатации: меньшую можно запускать локально с меньшей задержкой."
             },
             {
-              "text": "**Compared with complete demolition, selective renovation offers a better chance of preserving the building’s original character.**",
-              "translation_ru": "По сравнению с полным сносом выборочная реконструкция даёт больше шансов сохранить первоначальный характер здания."
+              "text": "**The decisive difference between complete demolition and selective renovation is what can be preserved: renovation can retain the building’s original character.**",
+              "translation_ru": "Ключевое различие между полным сносом и выборочной реконструкцией — в том, что можно сохранить: реконструкция позволяет сохранить первоначальный характер здания."
             },
             {
-              "text": "**Compared with a nightly full backup, incremental snapshots offer shorter recovery points throughout the working day.**",
-              "translation_ru": "По сравнению с полной ночной резервной копией инкрементальные снимки дают более частые точки восстановления в течение рабочего дня."
+              "text": "**The decisive difference between a nightly full backup and incremental snapshots is recovery granularity during the working day.**",
+              "translation_ru": "Ключевое различие между полной ночной резервной копией и инкрементальными снимками — детализация точек восстановления в течение рабочего дня."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Im Vergleich zu [X] bietet [Y] [Z].",
-          "example": "Im Vergleich zu einer Big-Bang-Migration bietet eine schrittweise Einführung mehr Möglichkeiten, Zuordnungsfehler zu erkennen, bevor sie sich ausbreiten.",
-          "translation": "По сравнению с одномоментной миграцией поэтапный запуск даёт больше возможностей обнаружить ошибки сопоставления до того, как они распространятся.",
+          "formula": "Der entscheidende Unterschied zwischen [X] und [Y] liegt in [Z].",
+          "example": "Der entscheidende Unterschied zwischen einer Big-Bang-Migration und einer schrittweisen Einführung liegt in der Umkehrbarkeit: Etappenweise Änderungen machen Zuordnungsfehler sichtbar, bevor sie sich ausbreiten.",
+          "translation": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся.",
           "examples": [
             {
-              "text": "**Im Vergleich zu einer Big-Bang-Migration bietet eine schrittweise Einführung mehr Möglichkeiten, Zuordnungsfehler zu erkennen, bevor sie sich ausbreiten.**",
-              "translation_ru": "По сравнению с одномоментной миграцией поэтапный запуск даёт больше возможностей обнаружить ошибки сопоставления до того, как они распространятся."
+              "text": "**Der entscheidende Unterschied zwischen einer Big-Bang-Migration und einer schrittweisen Einführung liegt in der Umkehrbarkeit: Etappenweise Änderungen machen Zuordnungsfehler sichtbar, bevor sie sich ausbreiten.**",
+              "translation_ru": "Ключевое различие между одномоментной миграцией и поэтапным запуском — обратимость: изменения по этапам позволяют обнаружить ошибки сопоставления до того, как они распространятся."
             },
             {
-              "text": "**Im Vergleich zu zusätzlichen Bussen bietet eine höhere Zugfrequenz mehr Kapazität auf dem am stärksten ausgelasteten Korridor.**",
-              "translation_ru": "По сравнению с добавлением автобусов увеличение частоты поездов даёт больше пропускной способности на самом загруженном направлении."
+              "text": "**Der entscheidende Unterschied zwischen zusätzlichen Bussen und einer höheren Zugfrequenz liegt in der Kapazität: Züge können mehr Fahrgäste durch den am stärksten ausgelasteten Korridor befördern.**",
+              "translation_ru": "Ключевое различие между добавлением автобусов и увеличением частоты поездов — пропускная способность: поезда могут перевезти больше пассажиров на самом загруженном направлении."
             },
             {
-              "text": "**Im Vergleich zum günstigsten Anbieter bietet der bisherige Lieferant eine schnellere Wiederherstellung, wenn eine kritische Komponente ausfällt.**",
-              "translation_ru": "По сравнению с самым дешёвым участником тендера текущий поставщик обеспечивает более быстрое восстановление при отказе критического компонента."
+              "text": "**Der entscheidende Unterschied zwischen dem günstigsten Anbieter und dem bisherigen Lieferanten liegt in der Wiederherstellungsgeschwindigkeit, wenn eine kritische Komponente ausfällt.**",
+              "translation_ru": "Ключевое различие между самым дешёвым участником тендера и текущим поставщиком — скорость восстановления при отказе критического компонента."
             },
             {
-              "text": "**Im Vergleich zu einer weiteren Präsentation liefert eine betreute Übungseinheit bessere Hinweise darauf, dass die Teilnehmenden die Aufgabe tatsächlich ausführen können.**",
-              "translation_ru": "По сравнению с ещё одной презентацией практическая сессия под наблюдением лучше показывает, умеют ли люди реально выполнять задачу."
+              "text": "**Der entscheidende Unterschied zwischen einer weiteren Präsentation und einer betreuten Übungseinheit liegt in den gewonnenen Nachweisen: Die Übung zeigt, ob die Teilnehmenden die Aufgabe tatsächlich ausführen können.**",
+              "translation_ru": "Ключевое различие между ещё одной презентацией и практической сессией под наблюдением — в доказательствах результата: практика показывает, умеют ли люди реально выполнять задачу."
             },
             {
-              "text": "**Im Vergleich zum größeren Modell bietet das kleinere Modell eine geringere Latenz und einen einfacheren Weg zum lokalen Betrieb.**",
-              "translation_ru": "По сравнению с более крупной моделью меньшая модель даёт меньшую задержку и проще запускается локально."
+              "text": "**Der entscheidende Unterschied zwischen dem größeren und dem kleineren Modell liegt in den Betriebsanforderungen: Das kleinere kann lokal mit geringerer Latenz laufen.**",
+              "translation_ru": "Ключевое различие между большой и малой моделью — в требованиях к эксплуатации: меньшую можно запускать локально с меньшей задержкой."
             },
             {
-              "text": "**Im Vergleich zu einem vollständigen Abriss bietet eine gezielte Sanierung bessere Chancen, den ursprünglichen Charakter des Gebäudes zu erhalten.**",
-              "translation_ru": "По сравнению с полным сносом выборочная реконструкция даёт больше шансов сохранить первоначальный характер здания."
+              "text": "**Der entscheidende Unterschied zwischen einem vollständigen Abriss und einer gezielten Sanierung liegt darin, was erhalten werden kann: Eine Sanierung kann den ursprünglichen Charakter des Gebäudes bewahren.**",
+              "translation_ru": "Ключевое различие между полным сносом и выборочной реконструкцией — в том, что можно сохранить: реконструкция позволяет сохранить первоначальный характер здания."
             },
             {
-              "text": "**Im Vergleich zu einer nächtlichen Vollsicherung bieten inkrementelle Snapshots kürzere Wiederherstellungspunkte über den Arbeitstag hinweg.**",
-              "translation_ru": "По сравнению с полной ночной резервной копией инкрементальные снимки дают более частые точки восстановления в течение рабочего дня."
+              "text": "**Der entscheidende Unterschied zwischen einer nächtlichen Vollsicherung und inkrementellen Snapshots liegt in der Granularität der Wiederherstellung während des Arbeitstags.**",
+              "translation_ru": "Ключевое различие между полной ночной резервной копией и инкрементальными снимками — детализация точек восстановления в течение рабочего дня."
             }
           ]
         }
       ],
       "formulas": [
-        "Compared with [X], [Y] offers [Z].",
-        "Im Vergleich zu [X] bietet [Y] [Z]."
+        "The decisive difference between [X] and [Y] is [Z].",
+        "Der entscheidende Unterschied zwischen [X] und [Y] liegt in [Z]."
       ],
       "gen": {
         "status": "curated",
@@ -856,9 +856,9 @@
         ],
         "notes": "C1 communicative frame: Comparison and evaluation. Editorially rewritten for diverse spoken practice."
       },
-      "title_en": "Compared with [X], [Y] offers [Z]",
-      "description_en": "Compare alternatives against an explicit criterion such as cost, resilience, reversibility, speed, or learning value.",
-      "description_ru": "Сравнивайте варианты по явному критерию — стоимости, устойчивости, обратимости, скорости или ценности обучения."
+      "title_en": "The decisive difference between [X] and [Y] is [Z]",
+      "description_en": "Compare alternatives by naming the specific dimension that separates them, rather than saying only that one is better.",
+      "description_ru": "Сравнивайте варианты по конкретному параметру, который их различает, вместо общего «один лучше другого»."
     }
   ]
 }
