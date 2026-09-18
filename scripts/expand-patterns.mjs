@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadEditorialCorpus, writePatternCorpus } from "../src/pattern-sources.mjs";
-import { patternFrameDescription, patternFrameTitle } from "../src/pattern-editorial-copy.mjs";
+import { applyPatternEditorialCopy } from "../src/pattern-editorial-copy.mjs";
 
 const ROOT = process.cwd();
 const setsFile = path.join(ROOT, "data", "study-sets.json");
@@ -124,8 +124,8 @@ for (const set of sets) {
       id,
       group_id: set.id,
       set_id: set.id,
-      title_ru: patternFrameTitle(enFormula),
-      metaphor_ru: "",
+      title_ru: ru.replace(/[.!?]$/, ""),
+      metaphor_ru: `Речевая задача: использовать конструкцию «${ru.replace(/[.!?]$/, "")}».`,
       langs: [
         { lang: "en", formula: enFormula, example: en, translation: ru, examples: samples.en },
         { lang: "de", formula: deFormula, example: de, translation: ru, examples: samples.de }
@@ -133,8 +133,7 @@ for (const set of sets) {
       formulas: [enFormula, deFormula],
       gen: { status: "curated", iterations: 1, lastGeneratedAt: "2026-07-15T00:00:00.000Z", languages: ["en", "de"], notes: `C1 communicative frame: ${set.title_en}.` }
     };
-    pattern.metaphor_ru = patternFrameDescription(pattern, set);
-    generated.push(pattern);
+    generated.push(applyPatternEditorialCopy(pattern, set));
   });
 }
 

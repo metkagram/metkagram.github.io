@@ -124,7 +124,7 @@ function exampleSection(locale, set, patterns) {
   const items = samples.map((pattern, index) => {
     const en = pattern.langs.find((lang) => lang.lang === "en") || pattern.langs[0];
     const de = pattern.langs.find((lang) => lang.lang === "de");
-    const label = ru ? pattern.title_ru : en.formula;
+    const label = ru ? pattern.title_ru : pattern.title_en || en.formula;
     const detail = ru
       ? `${en.example}${de?.example ? ` · DE: ${de.example}` : ""}`
       : `${en.example}${de?.formula ? ` · German parallel: ${de.formula}` : ""}`;

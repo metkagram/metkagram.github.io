@@ -13,7 +13,10 @@ function documentPageUrl(targetKey, collectionKey, id, locale = "en") {
 function patternSummary(pattern) {
   return {
     id: pattern.id,
+    title_en: pattern.title_en,
     title_ru: pattern.title_ru,
+    description_en: pattern.description_en,
+    description_ru: pattern.description_ru,
     group_id: pattern.group_id,
     set_id: pattern.set_id,
     formulas: pattern.formulas || pattern.langs.map((lang) => lang.formula),
