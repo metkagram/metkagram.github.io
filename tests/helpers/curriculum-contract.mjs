@@ -7,6 +7,8 @@ import { patternPath } from '../../src/seo-slugs.mjs';
 // Keep the deduplication fixture frozen. Additions must not conceal a deleted,
 // renamed, or rerouted established Pattern, even when the total count grows.
 export const frozenCorpus = JSON.parse(fs.readFileSync(new URL('../fixtures/pattern-corpus-baseline.json', import.meta.url), 'utf8'));
+export const pendingExampleEnrichmentSetIds = [...'ABCDEFGHIJKLMNO'].map(suffix => `GF${suffix}`);
+export const pendingExampleEnrichmentPatternIds = pendingExampleEnrichmentSetIds.flatMap(setId => Array.from({ length: 20 }, (_, i) => `${setId}${String(i + 1).padStart(3, '0')}`));
 export const expansionSetIds = [...'ABCDEFGHIJKLMNOPQRST'].map(suffix => `GF${suffix}`);
 export const expansionPatternIds = expansionSetIds.flatMap(setId => Array.from({ length: 20 }, (_, i) => `${setId}${String(i + 1).padStart(3, '0')}`));
 const expansionIds = new Set(expansionPatternIds);
