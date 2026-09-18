@@ -6,96 +6,99 @@
       "id": "C1HED001",
       "group_id": "HED",
       "set_id": "HED",
-      "title_ru": "Не спешить с выводами: заявка на финансирование",
-      "metaphor_ru": "Речевая задача: не выдавать промежуточные данные за окончательный вывод.",
+      "title_ru": "Было бы преждевременно заключать, что [X], прежде чем [Y]",
+      "metaphor_ru": "Не делайте сильный вывод раньше времени: укажите, какого факта, срока или шага проверки ещё не хватает.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It would be premature to conclude that [a funding proposal] is settled.",
-          "example": "It would be premature to conclude that a funding proposal is settled.",
-          "translation": "Было бы преждевременно считать вопрос окончательно решённым.",
+          "formula": "It would be premature to conclude that [X] before [Y].",
+          "example": "It would be premature to conclude that the pilot has failed before we separate onboarding errors from product defects.",
+          "translation": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта.",
           "examples": [
             {
-              "text": "**It would be premature to conclude that a funding proposal is settled**, since key evidence is still missing.",
-              "translation_ru": "Было бы преждевременно считать вопрос окончательно решённым: важной информации пока не хватает."
+              "text": "**It would be premature to conclude that the pilot has failed before we separate onboarding errors from product defects.**",
+              "translation_ru": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта."
             },
             {
-              "text": "We should not yet treat **a funding proposal as a settled matter**.",
-              "translation_ru": "Мы не должны пока считать этот вопрос окончательно решённым."
+              "text": "**It would be premature to conclude that demand has recovered before September orders are complete.**",
+              "translation_ru": "Было бы преждевременно заключать, что спрос восстановился, пока не будут собраны все сентябрьские заказы."
             },
             {
-              "text": "Before making a final decision, we need to establish whether **a funding proposal is actually settled**.",
-              "translation_ru": "Прежде чем принимать окончательное решение, нужно выяснить, действительно ли вопрос уже решён."
+              "text": "**It would be premature to conclude that the migration caused the outage before the network traces are reviewed.**",
+              "translation_ru": "Было бы преждевременно заключать, что миграция вызвала сбой, прежде чем будут проверены сетевые трассировки."
             },
             {
-              "text": "The available information calls for caution; **it would be premature to conclude that a funding proposal is settled**.",
-              "translation_ru": "Имеющаяся информация требует осторожности: было бы преждевременно считать вопрос окончательно решённым."
+              "text": "**It would be premature to conclude that the new policy will reduce turnover before employees have experienced it for at least one review cycle.**",
+              "translation_ru": "Было бы преждевременно заключать, что новая политика снизит текучесть, прежде чем сотрудники проживут с ней хотя бы один цикл оценки."
             },
             {
-              "text": "We can revisit the question when the remaining evidence is available; for now, **it would be premature to conclude that a funding proposal is settled**.",
-              "translation_ru": "Мы сможем вернуться к вопросу, когда появится недостающая информация; пока же было бы преждевременно считать его окончательно решённым."
+              "text": "**It would be premature to conclude that the treatment is broadly effective before the larger trial reports adverse events.**",
+              "translation_ru": "Было бы преждевременно заключать, что лечение широко эффективно, прежде чем крупное исследование сообщит о нежелательных явлениях."
             },
             {
-              "text": "Even if the current position looks encouraging, **it would be premature to conclude that a funding proposal is settled**.",
-              "translation_ru": "Даже если текущая ситуация выглядит обнадёживающе, было бы преждевременно считать вопрос окончательно решённым."
+              "text": "**It would be premature to conclude that the cheaper supplier is the better option before we price in support delays and replacement stock.**",
+              "translation_ru": "Было бы преждевременно заключать, что более дешёвый поставщик лучше, прежде чем мы учтём задержки поддержки и резервный запас."
             },
             {
-              "text": "At this stage, **we cannot say that a funding proposal is settled**.",
-              "translation_ru": "На этом этапе нельзя утверждать, что вопрос окончательно решён."
+              "text": "**It would be premature to conclude that the model is biased before we reproduce the result on a balanced test set.**",
+              "translation_ru": "Было бы преждевременно заключать, что модель предвзята, прежде чем мы воспроизведём результат на сбалансированном тестовом наборе."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es wäre verfrüht, daraus zu schließen, dass [Förderantrag] abschließend geklärt ist.",
-          "example": "Es wäre verfrüht, daraus zu schließen, dass ein Förderantrag abschließend geklärt ist.",
-          "translation": "Было бы преждевременно считать вопрос окончательно решённым.",
+          "formula": "Es wäre verfrüht zu schließen, dass [X], bevor [Y].",
+          "example": "Es wäre verfrüht zu schließen, dass das Pilotprojekt gescheitert ist, bevor wir Onboardingfehler von Produktmängeln getrennt haben.",
+          "translation": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта.",
           "examples": [
             {
-              "text": "**Es wäre verfrüht, daraus zu schließen, dass ein Förderantrag abschließend geklärt ist**, weil noch wichtige Informationen fehlen.",
-              "translation_ru": "Было бы преждевременно считать вопрос окончательно решённым: важной информации пока не хватает."
+              "text": "**Es wäre verfrüht zu schließen, dass das Pilotprojekt gescheitert ist, bevor wir Onboardingfehler von Produktmängeln getrennt haben.**",
+              "translation_ru": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта."
             },
             {
-              "text": "Wir sollten **einen Förderantrag noch nicht als abschließend geklärt** behandeln.",
-              "translation_ru": "Мы не должны пока считать этот вопрос окончательно решённым."
+              "text": "**Es wäre verfrüht zu schließen, dass sich die Nachfrage erholt hat, bevor die Septemberbestellungen vollständig vorliegen.**",
+              "translation_ru": "Было бы преждевременно заключать, что спрос восстановился, пока не будут собраны все сентябрьские заказы."
             },
             {
-              "text": "Bevor wir eine endgültige Entscheidung treffen, müssen wir klären, ob **ein Förderantrag tatsächlich abschließend geklärt ist**.",
-              "translation_ru": "Прежде чем принимать окончательное решение, нужно выяснить, действительно ли вопрос уже решён."
+              "text": "**Es wäre verfrüht zu schließen, dass die Migration den Ausfall verursacht hat, bevor die Netzwerk-Traces geprüft wurden.**",
+              "translation_ru": "Было бы преждевременно заключать, что миграция вызвала сбой, прежде чем будут проверены сетевые трассировки."
             },
             {
-              "text": "Die vorliegenden Informationen mahnen zur Vorsicht; **es wäre verfrüht, daraus zu schließen, dass ein Förderantrag abschließend geklärt ist**.",
-              "translation_ru": "Имеющаяся информация требует осторожности: было бы преждевременно считать вопрос окончательно решённым."
+              "text": "**Es wäre verfrüht zu schließen, dass die neue Regelung die Fluktuation senken wird, bevor die Beschäftigten sie mindestens einen Beurteilungszyklus lang erlebt haben.**",
+              "translation_ru": "Было бы преждевременно заключать, что новая политика снизит текучесть, прежде чем сотрудники проживут с ней хотя бы один цикл оценки."
             },
             {
-              "text": "Wir können die Frage erneut prüfen, wenn die fehlenden Informationen vorliegen; bis dahin **wäre es verfrüht, daraus zu schließen, dass ein Förderantrag abschließend geklärt ist**.",
-              "translation_ru": "Мы сможем вернуться к вопросу, когда появится недостающая информация; пока же было бы преждевременно считать его окончательно решённым."
+              "text": "**Es wäre verfrüht zu schließen, dass die Behandlung breit wirksam ist, bevor die größere Studie über unerwünschte Ereignisse berichtet.**",
+              "translation_ru": "Было бы преждевременно заключать, что лечение широко эффективно, прежде чем крупное исследование сообщит о нежелательных явлениях."
             },
             {
-              "text": "Auch wenn der aktuelle Stand ermutigend ist, **wäre es verfrüht, daraus zu schließen, dass ein Förderantrag abschließend geklärt ist**.",
-              "translation_ru": "Даже если текущая ситуация выглядит обнадёживающе, было бы преждевременно считать вопрос окончательно решённым."
+              "text": "**Es wäre verfrüht zu schließen, dass der günstigere Lieferant die bessere Wahl ist, bevor wir Supportverzögerungen und Ersatzbestände eingerechnet haben.**",
+              "translation_ru": "Было бы преждевременно заключать, что более дешёвый поставщик лучше, прежде чем мы учтём задержки поддержки и резервный запас."
             },
             {
-              "text": "Zum jetzigen Zeitpunkt können wir nicht sagen, dass **ein Förderantrag abschließend geklärt ist**.",
-              "translation_ru": "На этом этапе нельзя утверждать, что вопрос окончательно решён."
+              "text": "**Es wäre verfrüht zu schließen, dass das Modell verzerrt ist, bevor wir das Ergebnis auf einem ausgewogenen Testsatz reproduziert haben.**",
+              "translation_ru": "Было бы преждевременно заключать, что модель предвзята, прежде чем мы воспроизведём результат на сбалансированном тестовом наборе."
             }
           ]
         }
       ],
       "formulas": [
-        "It would be premature to conclude that [a funding proposal] is settled.",
-        "Es wäre verfrüht, daraus zu schließen, dass [einen Förderantrag] abschließend geklärt ist."
+        "It would be premature to conclude that [X] before [Y].",
+        "Es wäre verfrüht zu schließen, dass [X], bevor [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Qualification and hedging."
-      }
+        "notes": "C1 communicative frame: Qualification and hedging. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "It would be premature to conclude that [X] before [Y]",
+      "description_en": "Hold back a strong conclusion until a specific piece of evidence, time point, or validation step is available.",
+      "description_ru": "Не делайте сильный вывод раньше времени: укажите, какого факта, срока или шага проверки ещё не хватает."
     }
   ]
 }
