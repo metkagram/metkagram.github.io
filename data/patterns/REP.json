@@ -6,96 +6,99 @@
       "id": "C1REP001",
       "group_id": "REP",
       "set_id": "REP",
-      "title_ru": "Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему» в контексте заявка на финансирование.",
+      "title_ru": "[Источник] подчеркнул, что [X], а не [Y]",
+      "metaphor_ru": "Точно приписывайте различие источнику, чтобы собеседник отличал переданную позицию от вашей собственной.",
       "langs": [
         {
           "lang": "en",
-          "formula": "She stressed that [a funding proposal] could not be treated as an isolated issue.",
-          "example": "She stressed that a funding proposal could not be treated as an isolated issue.",
-          "translation": "Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему.",
+          "formula": "[Source] stressed that [X] rather than [Y].",
+          "example": "The auditor stressed that the main weakness was inconsistent access reviews rather than a lack of security policies.",
+          "translation": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности.",
           "examples": [
             {
-              "text": "**She stressed that a funding proposal could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему."
+              "text": "**The auditor stressed that the main weakness was inconsistent access reviews rather than a lack of security policies.**",
+              "translation_ru": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности."
             },
             {
-              "text": "**She stressed that a delayed product launch could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что задерженный запуск продукта нельзя рассматривать как изолированную проблему."
+              "text": "**The researcher stressed that the study showed an association rather than proof of causation.**",
+              "translation_ru": "Исследователь подчеркнул, что исследование показало связь, а не доказало причинность."
             },
             {
-              "text": "**She stressed that the team’s research findings could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что результаты исследования команды нельзя рассматривать как изолированную проблему."
+              "text": "**The mayor stressed that the road closure would be temporary rather than the first stage of a permanent traffic ban.**",
+              "translation_ru": "Мэр подчеркнула, что перекрытие дороги будет временным, а не первым этапом постоянного запрета движения."
             },
             {
-              "text": "**She stressed that a customer complaint could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что жалоба клиента нельзя рассматривать как изолированную проблему."
+              "text": "**The customer stressed that the problem was unpredictable delivery dates rather than the price itself.**",
+              "translation_ru": "Клиент подчеркнул, что проблема была в непредсказуемых сроках доставки, а не в самой цене."
             },
             {
-              "text": "**She stressed that a public-transport plan could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что план общественного транспорта нельзя рассматривать как изолированную проблему."
+              "text": "**The lead engineer stressed that the incident had exposed a recovery gap rather than a fundamental flaw in the architecture.**",
+              "translation_ru": "Ведущий инженер подчеркнул, что инцидент выявил пробел в восстановлении, а не фундаментальный дефект архитектуры."
             },
             {
-              "text": "**She stressed that a difficult staffing decision could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что сложное кадровое решение нельзя рассматривать как изолированную проблему."
+              "text": "**Counsel stressed that the clause required disclosure of known risks rather than a guarantee that no risk existed.**",
+              "translation_ru": "Юрист подчеркнул, что пункт требует раскрывать известные риски, а не гарантировать полное отсутствие риска."
             },
             {
-              "text": "**She stressed that the revised budget could not be treated as an isolated issue.**",
-              "translation_ru": "Она подчеркнула, что пересмотренный бюджет нельзя рассматривать как изолированную проблему."
+              "text": "**The coach stressed that the goal was to make the ending clearer rather than to make every sentence sound lower in pitch.**",
+              "translation_ru": "Тренер подчеркнул, что цель — сделать окончания фраз яснее, а не понижать тон в каждом предложении."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie betonte, dass [einen Förderantrag] nicht als isoliertes Problem behandelt werden könne.",
-          "example": "Sie betonte, dass einen Förderantrag nicht als isoliertes Problem behandelt werden könne.",
-          "translation": "Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему.",
+          "formula": "[Quelle] betonte, dass [X] und nicht [Y].",
+          "example": "Die Prüferin betonte, dass die größte Schwachstelle in uneinheitlichen Zugriffsprüfungen und nicht in fehlenden Sicherheitsrichtlinien lag.",
+          "translation": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности.",
           "examples": [
             {
-              "text": "**Sie betonte, dass einen Förderantrag nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что заявка на финансирование нельзя рассматривать как изолированную проблему."
+              "text": "**Die Prüferin betonte, dass die größte Schwachstelle in uneinheitlichen Zugriffsprüfungen und nicht in fehlenden Sicherheitsrichtlinien lag.**",
+              "translation_ru": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности."
             },
             {
-              "text": "**Sie betonte, dass eine verspätete Produkteinführung nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что задерженный запуск продукта нельзя рассматривать как изолированную проблему."
+              "text": "**Der Forscher betonte, dass die Studie einen Zusammenhang und keinen Beweis für Kausalität zeigte.**",
+              "translation_ru": "Исследователь подчеркнул, что исследование показало связь, а не доказало причинность."
             },
             {
-              "text": "**Sie betonte, dass die Forschungsergebnisse des Teams nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что результаты исследования команды нельзя рассматривать как изолированную проблему."
+              "text": "**Die Bürgermeisterin betonte, dass die Straßensperrung vorübergehend und nicht der erste Schritt zu einem dauerhaften Fahrverbot sei.**",
+              "translation_ru": "Мэр подчеркнула, что перекрытие дороги будет временным, а не первым этапом постоянного запрета движения."
             },
             {
-              "text": "**Sie betonte, dass eine Kundenbeschwerde nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что жалоба клиента нельзя рассматривать как изолированную проблему."
+              "text": "**Der Kunde betonte, dass das Problem in unvorhersehbaren Lieferterminen und nicht im Preis selbst lag.**",
+              "translation_ru": "Клиент подчеркнул, что проблема была в непредсказуемых сроках доставки, а не в самой цене."
             },
             {
-              "text": "**Sie betonte, dass einen Plan für den Nahverkehr nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что план общественного транспорта нельзя рассматривать как изолированную проблему."
+              "text": "**Der leitende Ingenieur betonte, dass der Vorfall eine Lücke im Wiederherstellungsprozess und keinen grundlegenden Fehler in der Architektur offengelegt habe.**",
+              "translation_ru": "Ведущий инженер подчеркнул, что инцидент выявил пробел в восстановлении, а не фундаментальный дефект архитектуры."
             },
             {
-              "text": "**Sie betonte, dass eine schwierige Personalentscheidung nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что сложное кадровое решение нельзя рассматривать как изолированную проблему."
+              "text": "**Die Rechtsberatung betonte, dass die Klausel die Offenlegung bekannter Risiken und keine Garantie völliger Risikofreiheit verlangte.**",
+              "translation_ru": "Юрист подчеркнул, что пункт требует раскрывать известные риски, а не гарантировать полное отсутствие риска."
             },
             {
-              "text": "**Sie betonte, dass das überarbeitete Budget nicht als isoliertes Problem behandelt werden könne.**",
-              "translation_ru": "Она подчеркнула, что пересмотренный бюджет нельзя рассматривать как изолированную проблему."
+              "text": "**Der Coach betonte, dass das Ziel ein klareres Satzende und nicht eine tiefere Tonlage in jedem einzelnen Satz sei.**",
+              "translation_ru": "Тренер подчеркнул, что цель — сделать окончания фраз яснее, а не понижать тон в каждом предложении."
             }
           ]
         }
       ],
       "formulas": [
-        "She stressed that [a funding proposal] could not be treated as an isolated issue.",
-        "Sie betonte, dass [einen Förderantrag] nicht als isoliertes Problem behandelt werden könne."
+        "[Source] stressed that [X] rather than [Y].",
+        "[Quelle] betonte, dass [X] und nicht [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Reported speech and attribution."
-      }
+        "notes": "C1 communicative frame: Reported speech and attribution. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "[Source] stressed that [X] rather than [Y]",
+      "description_en": "Attribute a precise distinction to its source so your listener can separate reported claims from your own position.",
+      "description_ru": "Точно приписывайте различие источнику, чтобы собеседник отличал переданную позицию от вашей собственной."
     }
   ]
 }
