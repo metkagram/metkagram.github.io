@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { collectionKeys, targetMeta } from "./i18n.mjs";
 import { loadPatternShards } from "./pattern-sources.mjs";
+import { applyPatternEditorialCopy } from "./pattern-editorial-copy.mjs";
 import { corpusLanguages } from "./release.mjs";
 
 const ROOT = process.cwd();
@@ -278,7 +279,9 @@ export function loadContent() {
   for (const pathItem of studySets.learningPaths) for (const setId of pathItem.set_ids || []) assert(validSetIds.has(setId), `learning path ${pathItem.id} references an unknown set ${setId}`);
 
   supplementalPatterns.map(completeSupplementalPattern).forEach((pattern, index) => validatePattern(pattern, index, validSetIds));
+  const studySetById = new Map(studySets.sets.map((set) => [set.id, set]));
   const advancedPatterns = applyPracticeQualityOverrides(mergeSupplementalPatterns(baseAdvancedPatterns, supplementalPatterns))
+    .map((pattern) => applyPatternEditorialCopy(pattern, studySetById.get(pattern.set_id)))
     .map((pattern) => ({ ...pattern, quality: derivePatternQuality(pattern) }));
   assert(advancedPatterns.length > 0, "pattern corpus must not be empty");
   const patternIds = new Set();
