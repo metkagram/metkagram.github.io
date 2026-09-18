@@ -16,31 +16,30 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Inventory canonical frames and baseline diversity
+      - name: Inventory and baseline quality
         run: |
+          mkdir -p .tmp/speaking-expansion
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
           import { loadContent } from './src/content.mjs';
           const { advancedPatterns: patterns, studySets } = loadContent();
-          const rows = patterns.map(p => ({ id:p.id, set:p.set_id, en:p.langs.find(l=>l.lang==='en')?.formula, de:p.langs.find(l=>l.lang==='de')?.formula }));
-          fs.mkdirSync('.tmp/speaking-expansion', {recursive:true});
-          fs.writeFileSync('.tmp/speaking-expansion/inventory.json', JSON.stringify({counts:{patterns:patterns.length,sets:studySets.sets.length},patterns:rows},null,2));
+          fs.writeFileSync('.tmp/speaking-expansion/inventory.json', JSON.stringify({counts:{patterns:patterns.length,sets:studySets.sets.length},patterns:patterns.map(p=>({id:p.id,set:p.set_id,en:p.langs.find(l=>l.lang==='en')?.formula,de:p.langs.find(l=>l.lang==='de')?.formula}))},null,2));
           console.log('BASELINE', patterns.length, 'patterns;', studySets.sets.length, 'study sets');
           NODE
           node --test tests/pattern-example-quality.test.mjs > .tmp/speaking-expansion/baseline-diversity.log 2>&1 || true
-      - name: Prepare and commit validated additions when the package is complete
+      - name: Import and verify additive content before committing
+        if: hashFiles('scripts/editorial/speaking-20260918/READY.json') != ''
         run: |
-          if [ -f scripts/editorial/speaking-20260918/READY.json ]; then
-            node scripts/prepare-speaking-expansion.mjs
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add data/patterns data/practice-extensions.json docs/SPEAKING_EXPANSION_20260918.md
-            if ! git diff --cached --quiet; then
-              git commit -m 'Add 100 distinct speaking frames with five EN/DE/RU scenarios each'
-              git push origin HEAD:content/speaking-frames-100-20260918
-            fi
+          node scripts/prepare-speaking-expansion.mjs
+          node --test tests/speaking-expansion.test.mjs tests/pattern-shards.test.mjs tests/practice-annotations.test.mjs tests/pattern-editorial-copy.test.mjs tests/pattern-example-enrichment.test.mjs 2>&1 | tee .tmp/speaking-expansion/targeted-tests.log
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/patterns data/practice-extensions.json data/pattern-annotations.json.gz data/pending-practice-annotation-rebuilds.json docs/SPEAKING_EXPANSION_20260918.md src/pattern-editorial-copy.mjs tests/helpers/curriculum-contract.mjs tests/pattern-shards.test.mjs tests/speaking-expansion.test.mjs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add 100 speaking frames with five EN/DE/RU scenarios and pending annotations'
+            git push origin HEAD:content/speaking-frames-100-20260918
           fi
-      - name: Verify the complete changed revision
+      - name: Full repository verification
         if: hashFiles('scripts/editorial/speaking-20260918/READY.json') != ''
         run: |
           npm ci
