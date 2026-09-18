@@ -4,6 +4,7 @@ import zlib from 'node:zlib';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import { loadContent } from '../src/content.mjs';
+import { buildFrameQualityAudit } from '../src/frame-quality-audit.mjs';
 import { ANNOTATION_SCHEMA_VERSION, cleanMarkedText, validateAnnotation } from '../src/annotation-schema.mjs';
 
 // The owner permits publishing the new grammar frames before local annotation.
@@ -14,7 +15,8 @@ assert.ok(fs.existsSync(file), 'The existing annotation export must be present')
 const payload = JSON.parse(zlib.gunzipSync(fs.readFileSync(file)).toString('utf8'));
 assert.equal(payload.count, Object.keys(payload.items || {}).length, 'Invalid existing annotation count');
 const original = new Map(Object.entries(payload.items).map(([key, value]) => [key, JSON.stringify(value)]));
-const additions = loadContent().advancedPatterns.filter(p => /^GF[A-O]\d{3}$/.test(p.id));
+const content = loadContent();
+const additions = content.advancedPatterns.filter(p => /^GF[A-O]\d{3}$/.test(p.id));
 assert.equal(additions.length, 300, 'Only the complete grammar-flexibility expansion is supported');
 let added = 0;
 for (const pattern of additions) {
@@ -73,3 +75,9 @@ if (added) {
   fs.renameSync(temporary, file);
 }
 console.log(JSON.stringify({ preserved_existing_records: original.size, added_pending_records: added, total_records: payload.count, pending_records: Object.values(payload.items).filter(record => record.validation?.status === 'pending').length }));
+// Keep release diagnostics scoped to the new, already-public grammar corpus.
+const audit = buildFrameQualityAudit(content);
+for (const groups of Object.values(audit.duplicateGroups)) for (const group of groups) {
+  if (/^GF[A-O]$/.test(group.set_id)) console.log('GRAMMAR_DUPLICATE_CANDIDATE ' + JSON.stringify({ ...group, formulas: content.advancedPatterns.filter(p => group.pattern_ids.includes(p.id)).map(p => ({ id: p.id, language: p.langs.find(l => l.lang === group.lang) })) }));
+}
+for (const item of audit.remediationQueue || []) if (/^GF[A-O]$/.test(item.set_id)) console.log('GRAMMAR_QA_FINDING ' + JSON.stringify(item));
