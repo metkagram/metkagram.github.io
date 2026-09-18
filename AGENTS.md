@@ -38,6 +38,15 @@ Do not load the entire corpus or generated site as first context.
 - Do not expose private research-core material through the public repository.
 - When a generated artifact is wrong, change its canonical source or generator and rebuild; do not hand-edit derived output as a shortcut.
 
+### Practice-example quality
+
+- A 5–7 example list is pedagogical content, not a slot-substitution matrix. Do not satisfy the count by repeating one sentence and swapping a noun phrase.
+- Preserve the target Frame while varying the situation, participants, lexical field, collocations and semantic payload. Where the Frame permits it, also vary time reference, polarity, modality and register.
+- Examples should introduce useful B2–C1 vocabulary and natural collocations without turning into thesaurus exercises or unnatural prose.
+- English and German examples must be independently grammatical and idiomatic; Russian learner-support translations must be natural Russian, not word-for-word templates.
+- A fixed tense or construction may remain fixed when that is the actual learning target. Diversity must not erase the feature being practised.
+- New or edited C1 examples must pass the deterministic near-clone and lexical-breadth gate in `tests/pattern-example-quality.test.mjs`.
+
 ## GitHub / publication boundary
 
 - `main` is the production GitHub Pages source. Do not push or merge to `main` unless the active user request authorizes it.
