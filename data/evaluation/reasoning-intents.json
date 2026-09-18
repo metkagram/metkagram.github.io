@@ -196,7 +196,7 @@
       "query": "I need to compare option A and option B on maintainability so the comparison helps us choose.",
       "expected_intent": "compare-alternatives",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF064", "CLF054"]
+      "acceptable_patterns": ["C1CMP001", "CLF054"]
     },
     {
       "id": "B22",
@@ -205,7 +205,7 @@
       "query": "Хочу сопоставить два варианта по одному критерию, чтобы сравнение помогло принять решение.",
       "expected_intent": "compare-alternatives",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF064", "CLF054"]
+      "acceptable_patterns": ["C1CMP001", "CLF054"]
     },
     {
       "id": "B23",
@@ -214,7 +214,7 @@
       "query": "The pilot optimizes for speed while production needs recoverability; I want that difference to be explicit.",
       "expected_intent": "show-a-difference",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF063", "CLF064"]
+      "acceptable_patterns": ["CLF063", "C1CMP001"]
     },
     {
       "id": "B24",
@@ -223,7 +223,7 @@
       "query": "Нужно явно показать, чем два подхода отличаются по надёжности и скорости.",
       "expected_intent": "show-a-difference",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF063", "CLF064"]
+      "acceptable_patterns": ["CLF063", "C1CMP001"]
     },
     {
       "id": "B25",
@@ -430,7 +430,7 @@
       "query": "Put the two designs side by side on recovery time so we can decide between them.",
       "expected_intent": "compare-alternatives",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF064", "CLF054"]
+      "acceptable_patterns": ["C1CMP001", "CLF054"]
     },
     {
       "id": "H12",
@@ -439,7 +439,7 @@
       "query": "One design favors throughput; the other favors resilience. I want the contrast itself to stand out.",
       "expected_intent": "show-a-difference",
       "expected_move": "Compare",
-      "acceptable_patterns": ["CLF063", "CLF064"]
+      "acceptable_patterns": ["CLF063", "C1CMP001"]
     },
     {
       "id": "H13",
