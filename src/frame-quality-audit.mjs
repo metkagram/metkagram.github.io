@@ -1,3 +1,5 @@
+import { detectEnglishAgreement } from "./english-agreement-audit.mjs";
+
 const PRIORITY_SET_IDS = ["HED", "ARG", "PRO", "AGR", "CLR", "CMP", "CAU", "CND", "RQT", "NEG"];
 const SEVERITY_WEIGHT = { high: 30, medium: 20, low: 10 };
 
@@ -71,27 +73,6 @@ function russianSupportLooksPlausible(value = "") {
   const letters = text.match(/\p{L}/gu) || [];
   const cyrillic = text.match(/[А-Яа-яЁё]/g) || [];
   return letters.length === 0 || cyrillic.length / letters.length >= 0.35;
-}
-
-function detectEnglishAgreement(text) {
-  const issues = [];
-  const rules = [
-    { regex: /\b(?:he|she|it|this|that)\s+(?:do|have|are|were)\b/giu, label: "singular subject with plural/base auxiliary" },
-    { regex: /\b(?:they|we)\s+(?:is|has|does|was)\b/giu, label: "plural subject with singular auxiliary" },
-    { regex: /\bi\s+(?:is|has|does|are)\b/giu, label: "first-person subject with incompatible auxiliary" },
-  ];
-  for (const rule of rules) {
-    const normalized = cleanText(text);
-    const match = [...normalized.matchAll(rule.regex)].find((candidate) => {
-      // Irrealis were is grammatical directly after as if / as though.
-      // Do not suppress other agreement errors or later errors in the sentence.
-      const prefix = normalized.slice(0, candidate.index);
-      const licensedWere = /\bwere$/iu.test(candidate[0]) && /\bas\s+(?:if|though)\s*$/iu.test(prefix);
-      return !licensedWere;
-    });
-    if (match) issues.push({ type: "en_subject_verb_agreement", severity: "high", confidence: "high", evidence: match[0], note: rule.label });
-  }
-  return issues;
 }
 
 function detectGermanAgreement(text) {
