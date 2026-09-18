@@ -64,7 +64,10 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
 
   const ledger = JSON.parse(fs.readFileSync(ledgerFile, "utf8"));
   const pendingEntries = new Map((ledger.patterns || []).map((entry) => [entry.id, entry]));
-  const items = { ...payload.items };
+  const retiredEntries = new Map((ledger.retired_records || []).map((entry) => [entry.key, entry]));
+  const items = Object.fromEntries(
+    Object.entries(payload.items).filter(([key]) => !retiredEntries.has(key))
+  );
   let expected = 0;
   const expectedKeys = new Set();
   let overlayPendingCount = 0;
@@ -97,9 +100,14 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
     }
   }
 
-  if (payload.count !== expected) {
-    const staleKeys = Object.keys(payload.items || {}).filter((key) => !expectedKeys.has(key));
-    throw new Error(`Practice annotation export count mismatch: expected ${expected}, found ${payload.count}; stale keys: ${staleKeys.slice(0, 30).join(", ") || "none"}`);
+  const staleKeys = Object.keys(payload.items || {}).filter((key) => !expectedKeys.has(key));
+  const untrackedStaleKeys = staleKeys.filter((key) => !retiredEntries.has(key));
+  const retiredKeysNoLongerStale = [...retiredEntries.keys()].filter((key) => !staleKeys.includes(key));
+  if (untrackedStaleKeys.length || retiredKeysNoLongerStale.length) {
+    throw new Error(`Practice annotation retirement ledger mismatch; untracked stale keys: ${untrackedStaleKeys.join(", ") || "none"}; retired keys no longer stale: ${retiredKeysNoLongerStale.join(", ") || "none"}`);
+  }
+  if (Object.keys(items).length !== expected) {
+    throw new Error(`Effective Practice annotation count mismatch: expected ${expected}, found ${Object.keys(items).length}`);
   }
 
   return {
@@ -107,6 +115,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
     items,
     ledger,
     pendingPatternIds: new Set(pendingEntries.keys()),
-    overlayPendingCount
+    overlayPendingCount,
+    retiredRawKeys: staleKeys
   };
 }
