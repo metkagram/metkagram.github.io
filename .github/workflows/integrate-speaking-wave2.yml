@@ -36,6 +36,8 @@ jobs:
         run: |
           set -euo pipefail
           npm run build
+      - name: Verify generated study-set preservation
+        run: node --test tests/study-set-preservation.test.mjs
       - name: Commit canonical wave-two content
         run: |
           set -euo pipefail
