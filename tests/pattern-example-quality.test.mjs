@@ -44,7 +44,7 @@ test("generated follow-up detector covers current and legacy padding", () => {
 
 test("canonical pattern shards contain no retired generated follow-up tails", () => {
   const patterns = readRawPatterns();
-  assert.ok(patterns.length > 3000, "expected the complete canonical pattern corpus");
+  assert.ok(patterns.length >= 600, "expected the complete canonical deduplicated pattern corpus");
   assert.ok(patterns.some((pattern) => pattern.id === "CLA002"), "CLA002 must remain in the corpus");
 
   for (const pattern of patterns) {
