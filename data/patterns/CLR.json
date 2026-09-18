@@ -386,96 +386,99 @@
       "id": "C1CLR001",
       "group_id": "CLR",
       "set_id": "CLR",
-      "title_ru": "Точнее говоря о заявка на финансирование, вопрос в приоритетах",
-      "metaphor_ru": "Речевая задача: использовать конструкцию «Точнее говоря о заявка на финансирование, вопрос в приоритетах» в контексте заявка на финансирование.",
+      "title_ru": "Если сформулировать [X] точнее, [Y]",
+      "metaphor_ru": "Используйте каркас, чтобы заменить расплывчатую формулировку точным различием и сделать мысль проверяемой.",
       "langs": [
         {
           "lang": "en",
-          "formula": "To put [a funding proposal] more precisely, the issue is one of priorities.",
-          "example": "To put a funding proposal more precisely, the issue is one of priorities.",
-          "translation": "Точнее говоря о заявка на финансирование, вопрос в приоритетах.",
+          "formula": "To put [X] more precisely, [Y].",
+          "example": "To put the funding request more precisely, we are not asking for a larger budget; we are asking for enough runway to validate the model.",
+          "translation": "Если точнее сформулировать запрос на финансирование, мы просим не увеличить бюджет, а дать достаточно ресурса, чтобы проверить модель.",
           "examples": [
             {
-              "text": "**To put a funding proposal more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о заявка на финансирование, вопрос в приоритетах."
+              "text": "**To put the funding request more precisely, we are not asking for a larger budget; we are asking for enough runway to validate the model.**",
+              "translation_ru": "Если точнее сформулировать запрос на финансирование, мы просим не увеличить бюджет, а дать достаточно ресурса, чтобы проверить модель."
             },
             {
-              "text": "**To put a delayed product launch more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о задерженный запуск продукта, вопрос в приоритетах."
+              "text": "**To put the launch delay more precisely, the software is ready, but the accessibility review is not.**",
+              "translation_ru": "Если точнее описать задержку запуска, программное обеспечение готово, а проверка доступности — ещё нет."
             },
             {
-              "text": "**To put the team’s research findings more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о результаты исследования команды, вопрос в приоритетах."
+              "text": "**To put the research result more precisely, the effect was consistent across groups, not necessarily large.**",
+              "translation_ru": "Если точнее сформулировать результат исследования, эффект был устойчивым в разных группах, но не обязательно большим."
             },
             {
-              "text": "**To put a customer complaint more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о жалоба клиента, вопрос в приоритетах."
+              "text": "**To put the staffing problem more precisely, we lack senior reviewers during peak hours rather than people overall.**",
+              "translation_ru": "Если точнее сформулировать кадровую проблему, нам не хватает опытных проверяющих в часы пик, а не людей вообще."
             },
             {
-              "text": "**To put a public-transport plan more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о план общественного транспорта, вопрос в приоритетах."
+              "text": "**To put the security risk more precisely, the main danger is lateral movement after an account is compromised, not the initial login itself.**",
+              "translation_ru": "Если точнее сформулировать риск безопасности, главная опасность — боковое перемещение после компрометации учётной записи, а не сам первоначальный вход."
             },
             {
-              "text": "**To put a difficult staffing decision more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о сложное кадровое решение, вопрос в приоритетах."
+              "text": "**To put the forecast more precisely, demand has softened since July, but it has not collapsed.**",
+              "translation_ru": "Если точнее сформулировать прогноз, спрос ослаб с июля, но не обвалился."
             },
             {
-              "text": "**To put the revised budget more precisely, the issue is one of priorities.**",
-              "translation_ru": "Точнее говоря о пересмотренный бюджет, вопрос в приоритетах."
+              "text": "**To put the disagreement more precisely, we agree on the goal and differ on the sequence of steps.**",
+              "translation_ru": "Если точнее сформулировать разногласие, мы согласны с целью, но расходимся в последовательности шагов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Um [einen Förderantrag] genauer zu formulieren: Es geht um Prioritäten.",
-          "example": "Um einen Förderantrag genauer zu formulieren: Es geht um Prioritäten.",
-          "translation": "Точнее говоря о заявка на финансирование, вопрос в приоритетах.",
+          "formula": "Um [X] genauer zu formulieren: [Y].",
+          "example": "Um den Finanzierungsantrag genauer zu formulieren: Wir bitten nicht um ein größeres Budget, sondern um genügend Spielraum, um das Modell zu validieren.",
+          "translation": "Если точнее сформулировать запрос на финансирование, мы просим не увеличить бюджет, а дать достаточно ресурса, чтобы проверить модель.",
           "examples": [
             {
-              "text": "**Um einen Förderantrag genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о заявка на финансирование, вопрос в приоритетах."
+              "text": "**Um den Finanzierungsantrag genauer zu formulieren: Wir bitten nicht um ein größeres Budget, sondern um genügend Spielraum, um das Modell zu validieren.**",
+              "translation_ru": "Если точнее сформулировать запрос на финансирование, мы просим не увеличить бюджет, а дать достаточно ресурса, чтобы проверить модель."
             },
             {
-              "text": "**Um eine verspätete Produkteinführung genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о задерженный запуск продукта, вопрос в приоритетах."
+              "text": "**Um die Verzögerung beim Start genauer zu formulieren: Die Software ist fertig, die Prüfung der Barrierefreiheit jedoch noch nicht.**",
+              "translation_ru": "Если точнее описать задержку запуска, программное обеспечение готово, а проверка доступности — ещё нет."
             },
             {
-              "text": "**Um die Forschungsergebnisse des Teams genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о результаты исследования команды, вопрос в приоритетах."
+              "text": "**Um das Forschungsergebnis genauer zu formulieren: Der Effekt war über die Gruppen hinweg konsistent, aber nicht unbedingt groß.**",
+              "translation_ru": "Если точнее сформулировать результат исследования, эффект был устойчивым в разных группах, но не обязательно большим."
             },
             {
-              "text": "**Um eine Kundenbeschwerde genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о жалоба клиента, вопрос в приоритетах."
+              "text": "**Um das Personalproblem genauer zu formulieren: Uns fehlen zu Spitzenzeiten erfahrene Prüferinnen und Prüfer, nicht Personal im Allgemeinen.**",
+              "translation_ru": "Если точнее сформулировать кадровую проблему, нам не хватает опытных проверяющих в часы пик, а не людей вообще."
             },
             {
-              "text": "**Um einen Plan für den Nahverkehr genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о план общественного транспорта, вопрос в приоритетах."
+              "text": "**Um das Sicherheitsrisiko genauer zu formulieren: Die Hauptgefahr besteht in der lateralen Bewegung nach der Kompromittierung eines Kontos, nicht in der ersten Anmeldung selbst.**",
+              "translation_ru": "Если точнее сформулировать риск безопасности, главная опасность — боковое перемещение после компрометации учётной записи, а не сам первоначальный вход."
             },
             {
-              "text": "**Um eine schwierige Personalentscheidung genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о сложное кадровое решение, вопрос в приоритетах."
+              "text": "**Um die Prognose genauer zu formulieren: Die Nachfrage hat sich seit Juli abgeschwächt, ist aber nicht eingebrochen.**",
+              "translation_ru": "Если точнее сформулировать прогноз, спрос ослаб с июля, но не обвалился."
             },
             {
-              "text": "**Um das überarbeitete Budget genauer zu formulieren: Es geht um Prioritäten.**",
-              "translation_ru": "Точнее говоря о пересмотренный бюджет, вопрос в приоритетах."
+              "text": "**Um die Meinungsverschiedenheit genauer zu formulieren: Wir sind uns beim Ziel einig und unterscheiden uns bei der Reihenfolge der Schritte.**",
+              "translation_ru": "Если точнее сформулировать разногласие, мы согласны с целью, но расходимся в последовательности шагов."
             }
           ]
         }
       ],
       "formulas": [
-        "To put [a funding proposal] more precisely, the issue is one of priorities.",
-        "Um [einen Förderantrag] genauer zu formulieren: Es geht um Prioritäten."
+        "To put [X] more precisely, [Y].",
+        "Um [X] genauer zu formulieren: [Y]."
       ],
       "gen": {
         "status": "curated",
         "iterations": 1,
-        "lastGeneratedAt": "2026-07-15T00:00:00.000Z",
+        "lastGeneratedAt": "2026-09-18T00:00:00.000Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": "C1 communicative frame: Clarification and reformulation."
-      }
+        "notes": "C1 communicative frame: Clarification and reformulation. Editorially rewritten for diverse spoken practice."
+      },
+      "title_en": "To put [X] more precisely, [Y]",
+      "description_en": "Repair an imprecise statement by replacing a broad label with the exact distinction you mean.",
+      "description_ru": "Используйте каркас, чтобы заменить расплывчатую формулировку точным различием и сделать мысль проверяемой."
     }
   ]
 }
