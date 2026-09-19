@@ -1,0 +1,38 @@
+{
+  "models": {
+    "en": {
+      "name": "en_core_web_trf",
+      "version": "3.8.0",
+      "dependency_parser": true
+    },
+    "de": {
+      "name": "de_dep_news_trf",
+      "version": "3.8.0",
+      "dependency_parser": true
+    }
+  },
+  "spacy_version": "3.8.7",
+  "heuristics_version": "2026-09-19.8",
+  "patterns": 948,
+  "study_sets": 109,
+  "practice": {
+    "en": 5688,
+    "de": 5688
+  },
+  "showcase": {
+    "en": 573,
+    "de": 396
+  },
+  "target_records": 8046,
+  "predicate_records": 12285,
+  "predicate_groups": 26209,
+  "german_discontinuous_predicates": 3448,
+  "review_records": 3390,
+  "review_reasons": {
+    "target-pattern-not-located": 3255,
+    "competing-pattern-matches": 59,
+    "insufficient-fixed-pattern-anchors": 16,
+    "predicate-not-located": 60
+  },
+  "errors": []
+}

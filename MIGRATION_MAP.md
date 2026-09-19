@@ -3,8 +3,8 @@
 Generated from the validated source datasets. Trailing-slash variants are handled by the same Vercel route rules and redirect directly to the same final URL.
 
 - Annotated documents moved: **72**
-- Advanced patterns moved: **930**
-- URL records: **1010**
+- Advanced patterns moved: **948**
+- URL records: **1028**
 - Redirect policy: permanent 308 at the MetalHatsCats framework layer, except the explicitly retained progress transfer utility and synchronization API.
 
 | Old URL | Exact new URL | Status | Redirect implementation / moved capability |
@@ -963,6 +963,24 @@ Generated from the validated source datasets. Trailing-slash variants are handle
 | `https://metalhatscats.com/ru/metkax/XPRTRN001` | `https://metkagram.github.io/ru/practice/patterns/because-x-y-x-which-is-why-y-xprtrn001/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/XPRTRN002` | `https://metkagram.github.io/ru/practice/patterns/people-say-that-x-x-is-said-to-y-xprtrn002/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/XPRTRN003` | `https://metkagram.github.io/ru/practice/patterns/we-only-did-x-after-y-only-after-y-did-we-do-x-xprtrn003/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRCGR004` | `https://metkagram.github.io/ru/practice/patterns/hope-x-happens-vs-wish-x-were-true-xprcgr004/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRCGR005` | `https://metkagram.github.io/ru/practice/patterns/would-rather-do-x-vs-would-rather-someone-did-y-xprcgr005/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRCGR006` | `https://metkagram.github.io/ru/practice/patterns/it-s-time-to-do-x-vs-it-s-time-someone-did-y-xprcgr006/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRSPK004` | `https://metkagram.github.io/ru/practice/patterns/what-i-mean-is-x-xprspk004/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRSPK005` | `https://metkagram.github.io/ru/practice/patterns/it-s-not-so-much-x-as-y-xprspk005/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRSPK006` | `https://metkagram.github.io/ru/practice/patterns/if-anything-x-xprspk006/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRINT004` | `https://metkagram.github.io/ru/practice/patterns/can-i-finish-this-thought-x-xprint004/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRINT005` | `https://metkagram.github.io/ru/practice/patterns/let-me-make-sure-i-ve-got-this-right-x-xprint005/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRINT006` | `https://metkagram.github.io/ru/practice/patterns/could-we-park-x-and-come-back-to-it-xprint006/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRREG004` | `https://metkagram.github.io/ru/practice/patterns/disagreement-direct-neutral-analytical-xprreg004/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRREG005` | `https://metkagram.github.io/ru/practice/patterns/uncertainty-from-i-don-t-know-to-evidence-limited-xprreg005/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRREG006` | `https://metkagram.github.io/ru/practice/patterns/correction-from-direct-to-neutral-xprreg006/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRRTR010` | `https://metkagram.github.io/ru/practice/patterns/married-with-vs-married-to-xprrtr010/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRRTR011` | `https://metkagram.github.io/ru/practice/patterns/answer-on-vs-answer-respond-to-xprrtr011/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRRTR012` | `https://metkagram.github.io/ru/practice/patterns/information-advice-uncountable-xprrtr012/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRTRN004` | `https://metkagram.github.io/ru/practice/patterns/although-x-y-vs-despite-x-y-xprtrn004/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRTRN005` | `https://metkagram.github.io/ru/practice/patterns/it-wasn-t-until-y-that-i-realised-x-xprtrn005/` | ready | Vercel permanent framework redirect |
+| `https://metalhatscats.com/ru/metkax/XPRTRN006` | `https://metkagram.github.io/ru/practice/patterns/if-it-hadn-t-been-for-x-vs-without-x-xprtrn006/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/XPRRTR004` | `https://metkagram.github.io/ru/practice/patterns/i-sent-document-to-manager-i-sent-a-the-document-xprrtr004/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/XPRRTR005` | `https://metkagram.github.io/ru/practice/patterns/listen-x-depend-from-x-listen-to-x-depend-on-x-xprrtr005/` | ready | Vercel permanent framework redirect |
 | `https://metalhatscats.com/ru/metkax/XPRRTR006` | `https://metkagram.github.io/ru/practice/patterns/i-am-doing-x-for-duration-i-have-been-doing-x-xprrtr006/` | ready | Vercel permanent framework redirect |

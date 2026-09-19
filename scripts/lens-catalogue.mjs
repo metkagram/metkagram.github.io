@@ -60,7 +60,10 @@ function patchLensPage(locale, catalogue) {
     .flatMap((pattern) => pattern.langs.filter((lang) => lang.lang === "en").map((lang) => lang.example))
     .filter(Boolean)
     .slice(0, 3);
-  const sampleMarkup = `<div class="lens-samples" aria-label="Examples">\n      ${samples.map((sample) => `<button type="button" data-lens-sample="${escapeAttribute(sample)}">${escapeText(sample)}</button>`).join("")}\n    </div>`;
+  const sampleMarkup = `<div class="lens-samples" aria-label="Examples">\n      ${samples.map((sample) => {
+    const visibleSample = sample.replace(/\*\*/g, "");
+    return `<button type="button" data-lens-sample="${escapeAttribute(visibleSample)}">${escapeText(visibleSample)}</button>`;
+  }).join("")}\n    </div>`;
   if (!/<div class="lens-samples" aria-label="Examples">[\s\S]*?<\/div>/.test(html)) {
     throw new Error(`Pattern Lens samples container not found in ${file}`);
   }

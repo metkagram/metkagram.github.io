@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { legacyAnnotationToCanonical, patternToCanonicalCards, validateAnnotation, ANNOTATION_SCHEMA_VERSION } from "../src/annotation-schema.mjs";
 import { loadContent } from "../src/content.mjs";
+import { loadPracticeAnnotationLayer } from "../src/practice-annotations.mjs";
 import { collectionKeys, targetMeta } from "../src/i18n.mjs";
 import { SITE_RELEASE_DATE } from "../src/site.mjs";
 
@@ -50,7 +51,9 @@ export function migrateAnnotations() {
 
   // Pattern cards must come through the validated public loader. Reading a private/full
   // source path directly here would bypass the publication boundary.
-  const patternCards = loadContent().advancedPatterns.flatMap(patternToCanonicalCards);
+  const content = loadContent();
+  const { items } = loadPracticeAnnotationLayer(content);
+  const patternCards = content.advancedPatterns.flatMap(pattern => patternToCanonicalCards(pattern, items));
   for (const record of patternCards) {
     const errors = validateAnnotation(record);
     if (errors.length) report.errors.push({ id: record.id, errors });

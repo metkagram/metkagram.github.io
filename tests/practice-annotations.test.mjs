@@ -35,10 +35,13 @@ test("the Practice annotation layer covers every current source sentence without
         assert.equal(annotation.validation.needs_rebuild, true);
         assert.equal(annotation.validation.generator, "none");
       } else {
-        assert.ok(annotation.spans.length > 0, `${key} has no dependency annotations`);
+        assert.ok(annotation.spans.length > 0 || annotation.emphasis?.review.includes("predicate-not-located"), `${key} has no annotation or explicit parser review`);
+        assert.equal(annotation.validation?.spacy_loaded, true, `${key} was not regenerated`);
+        assert.ok(annotation.emphasis?.version, `${key} lacks learning emphasis analysis`);
       }
     }
   }
   assert.equal(Object.keys(items).length, expected);
-  assert.ok(overlayPendingCount > 0, "changed C1 source text must be represented as explicit pending annotation records");
+  assert.equal(overlayPendingCount, 0, "all changed source text must now have regenerated annotations");
+  assert.equal(pendingPatternIds.size, 0);
 });

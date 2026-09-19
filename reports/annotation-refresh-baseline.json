@@ -1,0 +1,32 @@
+{
+  "revision": "pre-refresh",
+  "practice": {
+    "en": 5688,
+    "de": 5688
+  },
+  "showcase": {
+    "en": 573,
+    "de": 396
+  },
+  "models": {
+    "en": {
+      "name": "en_core_web_sm",
+      "version": "3.8.0"
+    },
+    "de": {
+      "name": "de_core_news_sm",
+      "version": "3.8.0"
+    }
+  },
+  "missing": 180,
+  "stale_text": 512,
+  "stale_source_hash": 11196,
+  "schema_failures": 0,
+  "unexpected": 0,
+  "source_revision": "f16953f1b15f76799c81f0e877bb3898f6107499",
+  "patterns": 948,
+  "study_sets": 109,
+  "pending_raw_records": 1800,
+  "de_unsupported_p2_marks": 4051,
+  "en_nonfuture_hf_marks": 1135
+}

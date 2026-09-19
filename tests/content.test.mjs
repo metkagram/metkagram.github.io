@@ -178,8 +178,11 @@ test("home pages make the unified annotation and pattern routes explicit", () =>
 test("inline grammar tags keep a visible separator before their words", () => {
   const dialogue = fs.readFileSync(path.join(DIST, "en/explore/english/dialogues/IkXWCWXrzyFAUh2qVACA/index.html"), "utf8");
   const method = fs.readFileSync(path.join(DIST, "en/method/index.html"), "utf8");
-  assert.match(dialogue, /<\/button>&nbsp;An /);
-  assert.match(dialogue, /<\/button>&nbsp;you /);
+  // Parser refresh can move a Mark from an entire noun phrase to its head.
+  // Check the spacing contract for every tag, without freezing old tag placement.
+  const tags = [...dialogue.matchAll(/<button class="grammar-tag[\s\S]*?<\/button>([^<]*)/g)];
+  assert.ok(tags.length > 20);
+  for (const [, suffix] of tags) assert.match(suffix, /^&nbsp;/);
   assert.match(method, /<\/button>&nbsp;I<\/span>/);
   assert.match(fs.readFileSync(path.join(ROOT, "public/assets/styles.css"), "utf8"), /\.annotated-token > \.grammar-tag[^\{]+\{ margin-inline-end: \.32rem; \}/);
 });

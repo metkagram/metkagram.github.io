@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
+import { annotationSourceHash } from "./annotation-corpus.mjs";
 
 import {
   ANNOTATION_SCHEMA_VERSION,
@@ -90,7 +91,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
           continue;
         }
         const expectedText = cleanMarkedText(reference.text);
-        const matches = record.text === expectedText && record.inline_text === expectedText;
+        const matches = record.text === expectedText && record.inline_text === expectedText && record.language === language.lang;
 
         if (!matches) {
           const pending = pendingEntries.get(pattern.id);
@@ -104,6 +105,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
         }
 
         const errors = validateAnnotation(record);
+        if (record.emphasis && record.source?.source_hash !== annotationSourceHash({ text: expectedText, language: language.lang, formula: language.formula })) errors.push("stale annotation source hash");
         if (errors.length) throw new Error(`Invalid Practice annotation ${key}: ${errors.join(", ")}`);
       }
     }

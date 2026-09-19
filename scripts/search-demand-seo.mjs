@@ -58,11 +58,11 @@ for (const set of content.studySets.sets) {
 
 let index = read("en/practice/index.html");
 if (!index.includes('id="search-demand-clusters"')) {
-  const links = content.studySets.sets.filter((set) => DEMAND[set.id]).map((set) => {
+  const links = content.studySets.sets.filter((set) => DEMAND[set.id]).map((set, position) => {
     const [title] = DEMAND[set.id];
-    return `<a href="${studySetPath("en", set)}"><strong>${esc(title)}</strong><small>${esc(set.description)}</small></a>`;
+    return `<a class="practice-goal-link" href="${studySetPath("en", set)}"><span class="practice-goal-number">${String(position + 1).padStart(2, "0")}</span><span><strong>${esc(title)}</strong><small>${esc(set.description)}</small></span><b aria-hidden="true">↗</b></a>`;
   }).join("");
-  const section = `<section id="search-demand-clusters" class="page-head section-pad compact ruled"><p class="eyebrow">Practice by goal</p><h2>English sentence patterns by communication task</h2><p>Choose a focused B2–C1 practice set when you know what you need to say: reframe a problem, hedge a claim, explain a cause, manage disagreement or compare trade-offs.</p></section><section class="document-index section-pad">${links}</section>`;
+  const section = `<section id="search-demand-clusters" class="practice-goal-intro section-pad ruled"><p class="eyebrow">Practice by goal</p><h2>English sentence patterns by communication task</h2><p class="lede">Choose a focused B2–C1 practice set when you know what you need to say: reframe a problem, hedge a claim, explain a cause, manage disagreement or compare trade-offs.</p></section><nav class="practice-goal-index section-pad" aria-label="Practice sets by communication task">${links}</nav>`;
   index = index.replace('<section id="all-patterns"', `${section}<section id="all-patterns"`);
   write("en/practice/index.html", index);
 }

@@ -1,4 +1,7 @@
 node_modules/
+.tmp/
+.playwright-cli/
+output/playwright/
 data/canonical-annotations.json
 data/search-measurement/private/
 data/lens-activation/private/

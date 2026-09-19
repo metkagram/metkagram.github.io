@@ -63,10 +63,22 @@ function setupTagRules() {
     if (trigger !== except) trigger.setAttribute("aria-expanded", "false");
   });
   triggers.forEach((trigger) => {
+    const positionTooltip = () => {
+      const tooltip = trigger.querySelector(".tag-tooltip");
+      if (!tooltip) return;
+      if (getComputedStyle(tooltip).position === "fixed") { tooltip.style.left = ""; return; }
+      tooltip.style.left = "0px";
+      const rect = tooltip.getBoundingClientRect();
+      const shift = Math.min(0, innerWidth - 16 - rect.right);
+      tooltip.style.left = `${Math.max(shift, 16 - rect.left)}px`;
+    };
+    trigger.addEventListener("pointerenter", positionTooltip);
+    trigger.addEventListener("focus", positionTooltip);
     trigger.addEventListener("click", () => {
       const next = trigger.getAttribute("aria-expanded") !== "true";
       closeAll(trigger);
       trigger.setAttribute("aria-expanded", String(next));
+      if (next) positionTooltip();
     });
     trigger.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {

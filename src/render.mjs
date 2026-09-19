@@ -153,15 +153,13 @@ function header(locale, pathname) {
   ];
   return `<a class="skip-link" href="#content">${t.skip}</a>
   <header class="site-header${isHome ? " site-header--studio" : ""}">
-    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-${isHome ? "dark" : "light"}.svg" width="800" height="200" alt="Metkagram"></a>
+    <a class="wordmark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-${isHome ? "dark" : "light"}.svg" width="800" height="200" alt=""><span class="wordmark-name">Metkagram</span></a>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">${t.menu}</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       ${nav.map(([label, href]) => `<a href="${href}"${slugPath(pathname).startsWith(href) ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
     </nav>
     <div class="header-preferences"><div class="locale-switch" aria-label="${t.chooseInterface}">
-      <a href="${equivalentLocalePath(pathname, "en")}" lang="en"${locale === "en" ? ' aria-current="page"' : ""}>EN</a>
-      <span aria-hidden="true">/</span>
-      <a href="${equivalentLocalePath(pathname, "ru")}" lang="ru"${locale === "ru" ? ' aria-current="page"' : ""}>RU</a>
+      <a class="locale-button" href="${equivalentLocalePath(pathname, locale === "en" ? "ru" : "en")}" lang="${locale === "en" ? "ru" : "en"}" hreflang="${locale === "en" ? "ru" : "en"}" title="${locale === "en" ? "Switch interface to Russian" : "Переключить интерфейс на английский"}">${locale === "en" ? "RU" : "EN"}</a>
     </div></div>
   </header>`;
 }
@@ -174,9 +172,8 @@ function footer(locale, compact = false) {
     <nav class="studio-footer-meta" aria-label="${locale === "ru" ? "О проекте" : "About Metkagram"}"><a href="/${locale}/about/">${t.navAbout}</a><a href="/${locale}/contact/">METKAGRAM ©</a></nav>
   </footer>`;
   return `<footer class="site-footer site-footer--index">
-    <div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt="Metkagram"></a><p>${locale === "ru" ? "Фразы, паттерны, осознанная практика." : "Phrases, patterns, deliberate practice."}</p></div>
+    <div class="footer-brand"><a class="footer-mark" href="/${locale}/" aria-label="Metkagram"><img src="/assets/logo/metkagram-logo-dark.svg" width="800" height="200" alt=""><span>Metkagram</span></a><p>${locale === "ru" ? "Фразы, паттерны, осознанная практика." : "Phrases, patterns, deliberate practice."}</p><p class="footer-language-note">${locale === "ru" ? "Паттерны B2–C1 на английском и немецком." : "B2–C1 patterns in English and German."}</p></div>
     <nav class="footer-links" aria-label="${locale === "ru" ? "Навигация в подвале" : "Footer navigation"}"><a href="/${locale}/explore/">${t.navExplore}</a><a href="/${locale}/practice/">${t.navPractice}</a><a href="/${locale}/method/">${t.navMethod}</a><a href="/${locale}/research/">${locale === "ru" ? "Исследования" : "Research"}</a><a href="/${locale}/about/">${t.navAbout}</a><a href="/${locale}/ai/">${t.forAiDevelopers}</a><a href="/${locale}/ideas/">${locale === "ru" ? "Идеи и партнёрства" : "Ideas & partnerships"}</a><a href="/${locale}/contact/">${locale === "ru" ? "Контакты" : "Contact"}</a></nav>
-    <p class="footer-languages"><strong>EN · DE</strong><span>${locale === "ru" ? "Паттерны B2–C1" : "B2–C1 patterns"}</span></p>
     <div class="footer-bottom"><p>${t.connected}</p><nav aria-label="${locale === "ru" ? "Юридическая информация" : "Legal information"}"><a href="/${locale}/legal/privacy/">${t.privacy}</a><a href="/${locale}/legal/terms/">${t.terms}</a><a href="${ATTRIBUTION.source_repository}">${t.source}</a></nav></div>
   </footer>`;
 }
@@ -383,7 +380,7 @@ export function collectionPage(locale, targetKey, collectionKey, collection) {
   const pathname = `/${locale}/explore/${targetKey}/${collectionKey}/`;
   const totalSentences = collection.documents.reduce((sum, doc) => sum + doc.annotations.length, 0);
   const body = `${breadcrumbs(locale, [{ href: `/${locale}/`, label: t.home }, { href: `/${locale}/explore/`, label: t.navExplore }, { href: `/${locale}/explore/${targetKey}/`, label: t[targetKey] }, { href: pathname, label: t[collectionKey] }])}
-  <section class="page-head section-pad compact"><p class="eyebrow">${target.flag} · ${target.native}</p><h1>${title}</h1><p class="lede"><strong>${collection.documents.length}</strong> ${t.sets} · <strong>${totalSentences.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")}</strong> ${t.sentences}</p>${languageTabs(locale, targetKey, `${collectionKey}/`)}</section>
+  <section class="page-head section-pad compact collection-head"><p class="eyebrow">${target.flag} · ${target.native}</p><h1>${title}</h1><p class="lede"><strong>${collection.documents.length}</strong> ${t.sets} · <strong>${totalSentences.toLocaleString(locale === "ru" ? "ru-RU" : "en-US")}</strong> ${t.sentences}</p>${languageTabs(locale, targetKey, `${collectionKey}/`)}</section>
   <section class="collection-tools section-pad ruled"><div class="collection-toolbar"><div><p class="eyebrow">${t.allItems}</p><output class="result-count" data-collection-count aria-live="polite">${t.visibleSets} ${collection.documents.length} ${t.of} ${collection.documents.length} ${t.sets}</output></div><label class="search-field">${t.search}<input type="search" data-collection-search autocomplete="off"></label></div></section>
   <section class="document-index section-pad" data-collection-list>${collection.documents.map((doc, index) => `<a href="${itemUrl(locale, targetKey, collectionKey, doc)}" data-search-text="${escapeHtml(doc.title.toLowerCase())}"><span class="document-number">${String(index + 1).padStart(3, "0")}</span><span><strong>${escapeHtml(doc.title)}</strong><small>${doc.annotations.length} ${t.sentences}</small></span><span aria-hidden="true">↗</span></a>`).join("")}<p class="empty-state" data-empty-state hidden>${t.noResults}</p></section>`;
   const itemList = collection.documents.map((doc, index) => ({ "@type": "ListItem", position: index + 1, name: doc.title, url: `${SITE_URL}${itemUrl(locale, targetKey, collectionKey, doc)}` }));
@@ -412,20 +409,20 @@ function germanGender(span, targetKey) {
   return ["feminine", "masculine", "neuter"].includes(span.gender) ? span.gender : null;
 }
 
-function renderTaggedSpan(span, text, locale, targetKey, tooltipId) {
+function renderTaggedSpan(span, text, locale, targetKey, tooltipId, renderedText = null) {
   const t = ui[locale];
   const tag = span.label;
   const gender = germanGender(span, targetKey);
-  const renderedText = gender
-    ? `<span class="gender-mark gender-${gender}" data-gender="${gender}">${escapeHtml(text)}</span>`
-    : escapeHtml(text);
+  const markedText = gender
+    ? `<span class="gender-mark gender-${gender}" data-gender="${gender}">${renderedText || escapeHtml(text)}</span>`
+    : renderedText || escapeHtml(text);
   if (gender && (span.role === "gender" || tag === "Gender")) {
-    return `<span class="annotated-token gender-only" aria-label="${escapeHtml(`${text.trim()}, ${gender} gender`)}">${renderedText}</span>`;
+    return `<span class="annotated-token gender-only" aria-label="${escapeHtml(`${text.trim()}, ${gender} gender`)}">${markedText}</span>`;
   }
   const isPast = targetKey === "german" && String(span.tense || span.role || "").toLowerCase() === "past";
   const rule = tagRule(locale, targetKey, tag, span.role);
   const pastLabel = isPast ? `${tag}, past tense` : tag;
-  return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}${isPast ? " tense-past" : ""}" type="button" aria-label="${escapeHtml(pastLabel)}" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>&nbsp;${renderedText}</span>`;
+  return `<span class="annotated-token ${tokenClass(tag)}"><button class="grammar-tag tag-trigger ${tokenClass(tag)}${isPast ? " tense-past" : ""}" type="button" aria-label="${escapeHtml(pastLabel)}" aria-expanded="false" aria-describedby="${tooltipId}" data-tag-trigger>${escapeHtml(tag)}<span class="tag-tooltip" id="${tooltipId}" role="tooltip"><strong>${escapeHtml(rule.title)}</strong><span>${escapeHtml(rule.description)}</span><small><b>${t.tagRuleUse}</b> ${escapeHtml(rule.use)}</small></span></button>&nbsp;<span class="annotated-word">${markedText}</span></span>`;
 }
 
 function renderAnnotation(annotation, locale, targetKey, index) {
@@ -434,9 +431,9 @@ function renderAnnotation(annotation, locale, targetKey, index) {
   const reviewOff = locale === "ru" ? "Отметить повторённым" : "Mark as repeated";
   const reviewOn = locale === "ru" ? "Повторено" : "Reviewed";
   const canonical = legacyAnnotationToCanonical(annotation, { language: targetMeta[targetKey].dataKey, dataset: "site" });
-  const tokens = renderCanonicalText(canonical, (span, text) => {
+  const tokens = renderCanonicalText(canonical, (span, text, inner) => {
       const tooltipId = `tag-rule-${index + 1}-${span.id}`;
-      return renderTaggedSpan(span, text, locale, targetKey, tooltipId);
+      return renderTaggedSpan(span, text, locale, targetKey, tooltipId, inner);
   });
   const russianTranslation = annotation.translations?.ru || annotation.translated_text;
   return `<article class="annotation-row" id="sentence-${index + 1}" data-review-card><button class="annotation-review-toggle" type="button" aria-pressed="false" aria-label="${reviewOff}" data-review-toggle data-review-id="sentence-${index + 1}" data-review-off="${reviewOff}" data-review-on="${reviewOn}">${lineNumber} · ${reviewOff}</button><span class="line-number">${lineNumber}</span><div><p class="annotated-line">${tokens || escapeHtml(annotation.original_text)}</p><details data-annotation-details><summary>${t.openExplanation}</summary><div class="annotation-explanation"><p class="plain-sentence">${escapeHtml(annotation.original_text)}</p>${russianTranslation || annotation.chunkList ? `<dl class="annotation-notes">${russianTranslation ? `<div data-native-translation hidden><dt>${t.translation}</dt><dd lang="ru">${escapeHtml(russianTranslation)}</dd></div>` : ""}${annotation.chunkList ? `<div><dt>${t.patterns}</dt><dd>${escapeHtml(annotation.chunkList)}</dd></div>` : ""}</dl>` : ""}</div></details></div></article>`;
@@ -458,7 +455,7 @@ export function documentPage(locale, targetKey, collectionKey, document) {
 
 const rules = {
   english: [
-    ["S", "Subject", "The main actor or receiver in the sentence."], ["S*", "Subject, emphasized", "A subject highlighted in a trainer prompt."], ["st", "State", "A condition or state."], ["st*", "Passive state", "A state used in passive constructions."], ["v2", "Second verb", "A secondary verb paired with a helper."], ["p2", "Predicate", "Predicate detail connected to the subject."], ["vI", "Infinitive", "A verb in infinitive form."], ["vP", "Participle", "A participle used in a compound tense."], ["Vp", "Participle, alternate", "Alternate participle notation."], ["Hr", "Result helper", "A helper showing a completed result."], ["Hst", "State helper", "A helper emphasizing an ongoing state."], ["pA", "Placeholder A", "A structural placeholder in a rule."], ["pS", "Placeholder S", "A secondary structural placeholder."], ["Hf", "Future helper", "A helper projecting action into the future."], ["V", "Main verb", "The primary action or state."]
+    ["S", "Subject", "The main actor or receiver in the sentence."], ["S*", "Subject, emphasized", "A subject highlighted in a trainer prompt."], ["st", "State", "A condition or state."], ["st*", "Passive state", "A state used in passive constructions."], ["v2", "Second verb", "A secondary verb paired with a helper."], ["p2", "Predicate", "Predicate detail connected to the subject."], ["vI", "Infinitive", "A verb in infinitive form."], ["vP", "Participle", "A participle used in a compound tense."], ["Vp", "Participle, alternate", "Alternate participle notation."], ["Hr", "Result helper", "A helper showing a completed result."], ["Hst", "State helper", "A helper emphasizing an ongoing state."], ["pA", "Placeholder A", "A structural placeholder in a rule."], ["pS", "Placeholder S", "A secondary structural placeholder."], ["Hf", "Future helper", "A helper projecting action into the future."], ["V", "Main verb", "The primary action or state."], ["M", "Modal verb", "A modal verb for ability, possibility, permission or obligation."]
   ],
   german: [
     ["S", "Subject (Subjekt)", "The person or thing taking part in the sentence."], ["S*", "Emphasised subject", "A subject brought forward for emphasis."], ["st", "State (Zustand)", "A condition or state."], ["st*", "Passive state", "A state marker used in passive constructions."], ["v2", "Second verb", "A verb element in second position."], ["vI", "Infinitive", "A verb in infinitive form."], ["/→", "Accusative", "The direct object: whom or what?"], ["\\→", "Dative", "The indirect object: to or for whom?"], ["\\?", "Genitive", "Possession or belonging: whose?"], ["←…", "Inversion", "A change from the usual word order."], ["vP", "Participle", "A participle used in a compound tense."], ["Vp", "Participle, alternate", "Alternate participle notation."], ["Hr", "Result helper", "A helper verb marking a completed result."], ["Hst", "State helper", "A helper verb marking a change of state."], ["Hf", "Future helper", "A helper verb pointing forward in time."], ["V", "Main verb", "The central verb of the statement."], ["M", "Modal verb", "A modal verb for ability, permission or obligation."]
@@ -467,6 +464,7 @@ const rules = {
 
 const ruleCopyRu = {
   english: {
+    M: ["Модальный глагол", "Передаёт возможность, разрешение или необходимость."],
     S: ["Подлежащее", "Тот, кто действует, или то, о чём говорится в предложении."], "S*": ["Выделенное подлежащее", "Подлежащее, на которое в задании нужно обратить особое внимание."], st: ["Состояние", "Состояние или условие."], "st*": ["Пассивное состояние", "Состояние в пассивной конструкции."], v2: ["Второй глагол", "Дополнительный глагол рядом со служебным."], p2: ["Сказуемое", "Часть сказуемого, связанная с подлежащим."], vI: ["Инфинитив", "Глагол в начальной форме."], vP: ["Причастие", "Причастная форма в составном времени."], Vp: ["Причастие, вариант", "Альтернативная запись причастной формы."], Hr: ["Служебный глагол результата", "Помогает показать завершённый результат."], Hst: ["Служебный глагол состояния", "Подчёркивает продолжающееся состояние."], pA: ["Переменная A", "Место для элемента конструкции в правиле."], pS: ["Переменная S", "Дополнительное место для элемента конструкции."], Hf: ["Служебный глагол будущего", "Переносит действие в будущее."], V: ["Главный глагол", "Основное действие или состояние в предложении."]
   },
   german: {
@@ -538,10 +536,12 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
   const languages = new Map(pattern.langs.map((lang) => [lang.lang, { ...lang, card: cards.get(lang.lang) }]));
   const english = languages.get("en");
   const german = languages.get("de");
+  let sentenceIndex = 0;
   const renderSentence = (language, item, label) => {
     if (!language || !item) return "";
     const targetKey = language.lang === "en" ? "english" : "german";
-    return `<div class="pattern-comparison-language" lang="${language.lang}" data-target-language="${language.lang}"><span class="language-code">${label}</span><p>${renderCanonicalText(item, (span, text) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${language.lang}-${item.id}-${span.id}`))}</p></div>`;
+    const sentenceId = ++sentenceIndex;
+    return `<div class="pattern-comparison-language" lang="${language.lang}" data-target-language="${language.lang}"><span class="language-code">${label}</span><p>${renderCanonicalText(item, (span, text, inner) => renderTaggedSpan(span, text, locale, targetKey, `pattern-${pattern.id}-${language.lang}-${sentenceId}-${span.id}`, inner))}</p></div>`;
   };
   const renderTranslation = (translation) => translation ? `<div class="pattern-comparison-translation" data-native-translation hidden><span class="language-code">RU · ${t.translation}</span><p lang="ru">${escapeHtml(translation)}</p></div>` : "";
   const primaryCard = `<section class="pattern-reference-card"><header class="learning-section-label"><span aria-hidden="true">01</span><p class="eyebrow">${t.patternStepFormula}</p></header><div class="pattern-formulas"><div><span class="language-code">EN · ${t.english}</span><code>${escapeHtml(english?.formula || "")}</code></div><div><span class="language-code">DE · ${t.german}</span><code>${escapeHtml(german?.formula || "")}</code></div></div><article class="pattern-comparison-card pattern-primary-example"><header class="learning-section-label example-card-head"><span aria-hidden="true">02</span><p class="eyebrow">${t.patternStepAnchor}</p></header><div class="pattern-comparison-sentences">${renderSentence(english, english?.card, "EN · " + t.english)}${renderSentence(german, german?.card, "DE · " + t.german)}</div>${renderTranslation(english?.translation || german?.translation)}</article></section>`;

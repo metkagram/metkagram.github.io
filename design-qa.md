@@ -1,69 +1,65 @@
-# Design QA — homepage cards and compact footer
+# Design QA
 
-- Source visual truth: `/var/folders/7l/0b29717566jghtwgm8kj7gww0000gn/T/codex-clipboard-02ef3716-b96b-42aa-bdb6-7feccdf1e9cf.png`
-- Implementation hero screenshot: `/private/tmp/metkagram-home-final-cards.png`
-- Implementation footer screenshot: `/private/tmp/metkagram-home-after-footer-final.png`
-- Side-by-side comparison: `/private/tmp/metkagram-home-final-comparison.png`
-- Viewport: 1280 × 720 CSS px; implementation bitmap: 1265 × 712 px.
-- Source bitmap: 1487 × 1058 px. The source was scaled to 712 px high and centered on a 1265 px comparison canvas; density-only differences were ignored.
-- State: English homepage, desktop, default locale; hero at initial load and footer scrolled into view.
+**Source visual truth**
 
-## Findings
+- `/Users/dzmitryikharlanau/.codex/attachments/77fd939e-d225-4cb2-9d57-dc7b4e43066e/image-1.png`
+- Source pixels: 1600 × 1000 at 1× density.
 
-- Fonts and typography: the condensed display hierarchy, mono annotation copy and uppercase labels retain the reference's editorial contrast. Pattern names now use the more descriptive reference-like vocabulary.
-- Spacing and layout rhythm: three overlapping phrase slips sit in front of the dark pattern sheet with distinct rotations and shadows. The live browser viewport is wider than the source, so the yellow audience strip is below the initial 720 px crop rather than compressed into it.
-- Colors and visual tokens: warm paper, annotation yellow, graphite black, cyan verb and violet object tags match the established Metkagram token system and the source hierarchy.
-- Image quality and asset fidelity: the current Metkagram logo and existing project texture assets remain sharp; no replacement or placeholder imagery was introduced.
-- Copy and content: every slip contains a real phrase, its leading code and all four annotation tags. Pattern rows use `Struggle statement`, `Value realization` and `Progress trigger` with reusable formulas.
-- Footer: the homepage now ends with a 37 px graphite utility strip containing `Annotation Studio`, the working sequence `Mark › Pattern › Apply`, and `Metkagram ©`. Existing conversion and sharing sections remain above it, so useful product entry points were not removed.
+**Implementation evidence**
 
-## Comparison history
+- Local URL: `http://127.0.0.1:4173/en/lens/`
+- Browser: Codex in-app browser.
+- Browser viewport: 1056 × 834 CSS px at 1× density; 1041 px content width after scrollbar.
+- Browser-rendered Lens capture: `design-qa-lens.png` (1041 × 2901 pixels, full page).
+- Browser-rendered Explore capture: `design-qa-explore.png` (1041 px content width, full page).
+- Combined visual comparison: `design-qa-comparison.png` (1648 × 1060 pixels). Reference and Lens were normalized to equal 800 × 1000 panels for the comparison.
+- Representative route-family audit: `/en/`, `/en/explore/`, `/en/practice/`, `/en/method/`, `/en/research/`, `/en/ai/`, `/en/about/`, and `/en/lens/`.
 
-1. Initial implementation had plain card indices, a text-only tag summary and the large catalogue footer. These were P2 fidelity gaps against the selected source.
-2. First fix added type badges, complete annotation rows, stronger pattern names and a compact homepage-only footer.
-3. Final fix gave each annotation tag its semantic color. The post-fix combined comparison shows no remaining P0, P1 or P2 mismatch in the requested hero-card and footer regions.
+**State**
 
-## Verification
+- Light theme, English interface, populated Pattern Lens result.
+- First sample selected and submitted; one highlighted match and one result card rendered.
+- Locale switch checked from `/en/lens/` to `/ru/lens/`.
+- Existing annotation reader was checked separately by the end-to-end suite on desktop and mobile; annotation data and behavior were not changed.
 
-- Full-view evidence: combined source/implementation hero comparison listed above.
-- Focused-region evidence: footer screenshot shows the final strip at the bottom edge of the page.
-- Primary interactions: hero CTA still resolves to `/en/practice/sets/argumentation/`; footer workflow links resolve to Explore, Practice and Method; the brand footer link resolves to Contact.
-- Runtime: document state is complete, horizontal overflow is zero, all images loaded, and browser navigation/DOM evaluation completed without uncaught runtime failures. The in-app browser binding does not expose a console-message stream.
-- Automated checks: build completed; 194/194 tests passed before the final CSS-only color refinement; `git diff --check` passed afterward.
+**Full-view comparison evidence**
 
-final result: passed
+- The implementation now follows the source's light editorial direction: white canvas, fine neutral dividers, serif display typography, restrained sans-serif metadata, generous whitespace, centered hero, and minimal navigation.
+- Lens, Explore, Method, Practice, Research, AI, About, and Home all resolve to white body/main surfaces with the same white header and warm-white footer.
+- The implementation retains Metkagram's product copy, interaction model, stable routes, and learning hierarchy instead of copying the reference's content.
+- All audited desktop routes had no horizontal overflow.
 
----
+**Focused-region comparison evidence**
 
-# Design QA — reviewed annotation proof sheet
+- Header: serif wordmark, compact navigation, and a single outlined locale button match the reference's quiet visual weight.
+- Lens workbench: one bordered two-column surface, pill language selector, rounded primary action, readable textarea, and a low-contrast result surface.
+- Result state: yellow is limited to the functional inline match highlight; supporting cards use neutral borders and white surfaces.
+- Explore: white hero, balanced English/German columns, hairline separators, and no legacy graphite/yellow studio canvas.
+- Footer and share tools: white/warm-white surfaces, thin separators, compact pill actions, and text wordmark.
+- Copy: raw Markdown emphasis markers were removed from Lens sample buttons and rendered results while the matching behavior remains intact.
 
-- Source visual truth: `/Users/dzmitryikharlanau/.codex/generated_images/01a01f69-a043-7c82-862d-cf8c21d1bf14/exec-2f193749-66a1-493d-8390-fcadcf7eff9e.png`
-- Implementation screenshot: `/private/tmp/metkagram-reviewed-card-final.png`
-- Side-by-side comparison: `/private/tmp/metkagram-review-card-comparison.png`
-- Viewport: 611 × 657 CSS px; implementation bitmap: 596 × 657 px.
-- Source bitmap: 1254 × 1254 px, scaled to 657 px high for comparison.
-- State: English annotated dialogue; sentence 10 marked as reviewed after a reload.
+**Comparison history**
 
-## Findings
+1. Initial redesign left Lens on its route-specific graphite/yellow studio stylesheet. Replaced that stylesheet with the shared white editorial system.
+2. First Lens QA pass found a dark footer, cream share strip, and visible `**` markers. Reworked footer/share surfaces and sanitized display-only Lens text.
+3. Cross-route computed-style audit found Explore and Method still painted a graphite `main` background. Removed the remaining studio route canvas, shadows, rotation, heavy borders, and dark method section.
+4. Explore visual review found one remaining five-pixel divider above the hero. Removed the inherited page-head border and shadow.
+5. Final comparison found no actionable P0, P1, or P2 issues.
 
-- Typography: the selected proof-sheet tab uses the existing mono system, uppercase label and real sentence number. Sentence and tag typography remain unchanged.
-- Spacing and layout: the reviewed row gains a warm rectangular sheet, hairline frame, centred yellow tab and short graphite offset shadow. Adjacent rows remain flat and readable.
-- Colors: the light paper theme and semantic annotation colors are preserved; the active state uses the project yellow without recoloring the annotation itself.
-- Assets: no placeholder imagery was added. Decorative crop marks from the concept were omitted because they do not communicate state and would require a new ornamental asset.
-- Copy: English uses `Mark as repeated` / `Reviewed`; Russian uses `Отметить повторённым` / `Повторено`.
+**Primary interactions tested**
 
-## Comparison history
+- Pattern Lens sample selection, search submission, match highlight, and result-card rendering.
+- Locale button preserves the Lens route (`/en/lens/` → `/ru/lens/`).
+- Shared route-family rendering across eight representative pages.
+- End-to-end suite checked mobile navigation, annotation tags/tooltips, reading controls, catalogue filtering, locale routing, and desktop/mobile annotation readability.
+- Browser console warnings/errors: none.
 
-1. The pre-change list had flat rows and no visible completion state, a P2 gap against the selected concept.
-2. The first implementation matched the proof-sheet frame and persistent tab, but a pre-existing tooltip layout caused horizontal overflow at the 596 px browser width; this was a P1 responsive issue.
-3. The final fix moved tag tooltips into a viewport-safe overlay below 860 px. The reviewed card now stays within the viewport with no horizontal overflow. No P0, P1 or P2 issues remain in the requested card state.
+**Findings**
 
-## Verification
+- No remaining P0/P1/P2 findings.
 
-- Full-view evidence: the combined source/implementation image listed above.
-- Focused evidence: sentence 10 is framed and labelled `10 · REVIEWED` in the final screenshot.
-- Interaction tested: off → on, on → off, and persistence after reload. State is stored only in the local browser and does not alter annotation data.
-- Runtime: document state `complete`; 0 broken images; 0 horizontal overflow; no browser console warnings or errors.
-- Automated checks: full build completed; 196/196 tests passed; `git diff --check` passed.
+**Follow-up polish**
+
+- P3: a future licensed editorial webfont could reduce platform-dependent serif differences. The current system serif stack avoids an additional network dependency.
 
 final result: passed

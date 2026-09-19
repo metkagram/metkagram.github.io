@@ -1,4 +1,6 @@
 import { expect, test } from "@playwright/test";
+import { expectedPatternCount } from "../helpers/curriculum-contract.mjs";
+import { loadContent } from "../../src/content.mjs";
 
 test("English and Russian interfaces stay separate and locale switch preserves context", async ({ page }) => {
   await page.goto("/en/explore/german/dialogues/");
@@ -26,7 +28,7 @@ test("home keeps the interface switch and leads with the real-sentence learning 
   await page.goto("/en/");
   const wordmark = page.locator(".site-header .wordmark");
   await expect(wordmark.locator("img")).toHaveAttribute("src", "/assets/logo/metkagram-logo-dark.svg");
-  await expect(wordmark.locator(".wordmark-name")).toHaveCount(0);
+  await expect(wordmark.locator(".wordmark-name")).toHaveText("Metkagram");
   await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
   await expect(page.locator(".annotation-sheet")).toHaveCount(0);
   const lensEntry = page.locator('[data-product-entry="lens"]');
@@ -93,14 +95,15 @@ test("grammar tags expose a readable rule on click and keyboard focus", async ({
 test("pattern catalogue opens every pattern directly and filters all patterns", async ({ page }) => {
   await page.goto("/en/practice/");
   const rows = page.locator("[data-pattern-list] > a");
-  expect(await rows.count()).toBeGreaterThan(3000);
+  expect(await rows.count()).toBe(expectedPatternCount);
   await expect(page.locator("[data-study-set-card]")).toHaveCount(0);
   await expect(page.locator(".study-dashboard")).toHaveCount(0);
   await page.locator('[data-category-filter]').selectOption("HED");
-  await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(40);
+  const patterns = loadContent().advancedPatterns;
+  await expect(page.locator("[data-pattern-list] > a:visible")).toHaveCount(patterns.filter(p => p.group_id === "HED").length);
   await page.locator('[data-pattern-list] > a:visible').first().click();
   await expect(page).toHaveURL(/\/en\/practice\/patterns\/[^/]+-c1hed001\/$/);
-  await expect(page.locator(".pattern-comparison-list li")).toHaveCount(12);
+  await expect(page.locator(".pattern-comparison-list li")).toHaveCount(patterns.find(p => p.id === "C1HED001").langs[0].examples.length);
   await page.goto("/en/practice/");
   await page.locator('[data-language-filter="de"]').click();
   const visible = page.locator("[data-pattern-list] > a:visible");

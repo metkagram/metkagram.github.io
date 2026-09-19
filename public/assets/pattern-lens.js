@@ -2,6 +2,7 @@ const dataNode = document.querySelector("#pattern-lens-data");
 const root = document.querySelector("[data-pattern-lens]");
 
 if (dataNode && root) {
+  const visibleText = (value = "") => String(value).replace(/\*\*/g, "");
   const payload = JSON.parse(dataNode.textContent);
   const { locale, copy } = payload;
   // A tiny featured set ships with the page so first paint stays immediate.
@@ -224,7 +225,7 @@ if (dataNode && root) {
       return `<article class="lens-card" data-evidence-type="${escapeHtml(evidenceType)}"${reasoningMatch ? ` data-reasoning-strength="${escapeHtml(reasoningMatch.strength)}"` : ""}>
         <div class="lens-card-meta"><code>${escapeHtml(pattern.id)}</code>${purpose}<span>${escapeHtml(metric)}</span></div>
         <h3>${escapeHtml(lang.formula)}</h3>
-        <p class="lens-example">${escapeHtml(lang.example)}</p>
+        <p class="lens-example">${escapeHtml(visibleText(lang.example))}</p>
         <p class="lens-translation">${escapeHtml(lang.translation || "")}</p>
         <p class="lens-evidence">${escapeHtml(evidenceText({ hits, reasoningMatch }))}</p>
         <div class="lens-card-foot"><span>${escapeHtml(evidenceType)}</span><a href="${escapeHtml(page)}">${locale === "ru" ? "Учить паттерн" : "Learn this pattern"} →</a></div>
