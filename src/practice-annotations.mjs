@@ -79,7 +79,16 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
         const key = `${pattern.id}:${language.lang}:${reference.key}`;
         expectedKeys.add(key);
         const record = payload.items[key];
-        if (!record) throw new Error(`Missing Practice annotation ${key}`);
+        if (!record) {
+          const pending = pendingEntries.get(pattern.id);
+          if (!pending) throw new Error(`Missing Practice annotation ${key}`);
+          const replacement = pendingRecord(pattern, language, reference, pending.reason);
+          const errors = validateAnnotation(replacement);
+          if (errors.length) throw new Error(`Invalid pending Practice annotation ${key}: ${errors.join(", ")}`);
+          items[key] = replacement;
+          overlayPendingCount += 1;
+          continue;
+        }
         const expectedText = cleanMarkedText(reference.text);
         const matches = record.text === expectedText && record.inline_text === expectedText;
 

@@ -174,12 +174,30 @@ export function measurePatternExampleDiversity(language) {
   }
 
   const firstSet = new Set(tokenLists[0] || []);
-  const sharedTokens = [...firstSet].filter((token) =>
+  const rawSharedTokens = [...firstSet].filter((token) =>
     tokenLists.every((tokens) => new Set(tokens).has(token))
   );
+
+  // A productive pattern is supposed to preserve its grammatical scaffold.
+  // Do not treat literal words that are explicitly fixed by a slot-based
+  // formula as lexical repetition. Otherwise a useful frame such as
+  // "One practical step would be to [do X]" is penalised merely for keeping
+  // the words that define the frame. Repetition outside that scaffold is
+  // still measured, and pairwise Jaccard remains an independent clone gate.
+  const hasSlots = /\[[^\]]+\]/u.test(String(language?.formula || ""));
+  const formulaStaticTokens = hasSlots
+    ? new Set(exampleTokens(String(language.formula).replace(/\[[^\]]+\]/gu, " ")))
+    : new Set();
+  const structuralSharedTokens = rawSharedTokens.filter((token) => formulaStaticTokens.has(token));
+  const sharedTokens = rawSharedTokens.filter((token) => !formulaStaticTokens.has(token));
+
   const averageTokenCount = tokenLists.length
     ? tokenLists.reduce((sum, tokens) => sum + tokens.length, 0) / tokenLists.length
     : 0;
+  const effectiveAverageTokenCount = Math.max(
+    0,
+    averageTokenCount - structuralSharedTokens.length
+  );
 
   return {
     exampleCount: examples.length,
@@ -189,9 +207,13 @@ export function measurePatternExampleDiversity(language) {
       ? similarities.reduce((sum, value) => sum + value, 0) / similarities.length
       : 0,
     maxPairwiseJaccard: similarities.length ? Math.max(...similarities) : 0,
+    rawSharedTokenCount: rawSharedTokens.length,
+    structuralSharedTokenCount: structuralSharedTokens.length,
     sharedTokenCount: sharedTokens.length,
-    variableVocabularySize: Math.max(0, vocabulary.size - sharedTokens.length),
-    sharedTokenRatio: averageTokenCount ? sharedTokens.length / averageTokenCount : 0
+    variableVocabularySize: Math.max(0, vocabulary.size - rawSharedTokens.length),
+    sharedTokenRatio: effectiveAverageTokenCount
+      ? sharedTokens.length / effectiveAverageTokenCount
+      : 0
   };
 }
 

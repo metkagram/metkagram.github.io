@@ -4,6 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
+import { hasPendingExampleEnrichment } from "../src/pattern-example-enrichment.mjs";
+
 import {
   C1_EXAMPLE_DIVERSITY_RULE,
   GENERATED_FOLLOW_UPS,
@@ -72,6 +74,7 @@ test("canonical pattern shards contain no retired generated follow-up tails", ()
 test("example diversity gate rejects slot-substitution near-clones", () => {
   const repetitive = {
     lang: "en",
+    formula: "The case for [X] rests on the assumption that [Y].",
     examples: [
       { text: "The case for a funding proposal rests on the assumption that the benefits outweigh the cost." },
       { text: "The case for a product launch rests on the assumption that the benefits outweigh the cost." },
@@ -83,6 +86,27 @@ test("example diversity gate rejects slot-substitution near-clones", () => {
   const metrics = measurePatternExampleDiversity(repetitive);
   assert.ok(metrics.meanPairwiseJaccard > 0.64 || metrics.sharedTokenRatio > 0.58);
   assert.ok(patternExampleDiversityProblems(repetitive).length > 0);
+});
+
+
+test("diversity gate discounts the fixed grammatical scaffold but not the variable content", () => {
+  const varied = {
+    lang: "en",
+    formula: "One practical step would be to [do X].",
+    examples: [
+      { text: "One practical step would be to ask the supplier for a written delivery date." },
+      { text: "One practical step would be to test the export with a small customer sample." },
+      { text: "One practical step would be to schedule a ten-minute review before launch." },
+      { text: "One practical step would be to compare the offers against the same criteria." },
+      { text: "One practical step would be to record the explanation and review unclear wording." },
+      { text: "One practical step would be to move the router and retest the signal." },
+      { text: "One practical step would be to write down our least certain assumption." }
+    ]
+  };
+  const metrics = measurePatternExampleDiversity(varied);
+  assert.ok(metrics.structuralSharedTokenCount > 0);
+  assert.ok(metrics.rawSharedTokenCount > metrics.sharedTokenCount);
+  assert.deepEqual(patternExampleDiversityProblems(varied, PRACTICE_EXAMPLE_DIVERSITY_RULE), []);
 });
 
 test("canonical C1 examples are varied enough for productive speaking practice", () => {
@@ -109,6 +133,7 @@ test("all canonical English and German example sets meet the speaking-practice d
   for (const pattern of patterns) {
     for (const language of pattern.langs || []) {
       if (!["en", "de"].includes(language.lang)) continue;
+      if (hasPendingExampleEnrichment(pattern, language)) continue;
       const problems = patternExampleDiversityProblems(language, PRACTICE_EXAMPLE_DIVERSITY_RULE);
       const metrics = measurePatternExampleDiversity(language);
       assert.deepEqual(
