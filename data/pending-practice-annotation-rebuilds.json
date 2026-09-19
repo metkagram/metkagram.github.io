@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "purpose": "Explicit annotation rebuild ledger for canonical pattern source text changed after the last local dependency-parser export.",
+  "purpose": "Explicit annotation rebuild ledger for new or changed canonical Pattern source text that still requires the local dependency-parser export.",
   "patterns": [
     {
       "id": "C1ARG001",
@@ -116,6 +116,96 @@
       "id": "PERF006",
       "reason": "source_text_changed_requires_local_annotation_rebuild",
       "changed_at": "2026-09-18"
+    },
+    {
+      "id": "XPRCGR004",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRCGR005",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRCGR006",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRSPK004",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRSPK005",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRSPK006",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRINT004",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRINT005",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRINT006",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRREG004",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRREG005",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRREG006",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRRTR010",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRRTR011",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRRTR012",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRTRN004",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRTRN005",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
+    },
+    {
+      "id": "XPRTRN006",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-19"
     }
   ]
 }
