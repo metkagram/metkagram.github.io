@@ -804,61 +804,61 @@
     }
   },
   {
-    "id": "XPRRTR004",
+    "id": "XPRRTR010",
     "group_id": "RTR",
     "set_id": "RTR",
-    "title_ru": "Правильный предлог после устойчивого управления",
+    "title_ru": "Не переносить предлог в конструкции «быть женатым / замужем»",
     "langs": [
       {
         "lang": "en",
-        "formula": "❌ depend from [X] → ✓ depend on [X]",
-        "example": "❌ The result depends from the input. → ✓ The result **depends on the input**.",
-        "translation": "Результат зависит от входных данных.",
+        "formula": "❌ married with [someone] → ✓ married to [someone]",
+        "example": "❌ She is married with an architect. → ✓ She is **married to an architect**.",
+        "translation": "Она замужем за архитектором.",
         "examples": [
           {
-            "text": "❌ It depends from the weather. → ✓ It **depends on the weather**.",
-            "translation_ru": "Это зависит от погоды."
+            "text": "❌ He has been married with Elena for ten years. → ✓ He has been **married to Elena for ten years**.",
+            "translation_ru": "Он женат на Елене уже десять лет."
           },
           {
-            "text": "❌ The fee depends from the room type. → ✓ The fee **depends on the room type**.",
-            "translation_ru": "Стоимость зависит от типа номера."
+            "text": "❌ Are you married with someone from your hometown? → ✓ Are you **married to someone from your hometown**?",
+            "translation_ru": "Вы женаты или замужем за человеком из вашего родного города?"
           },
           {
-            "text": "❌ Success depends from one person. → ✓ Success **depends on more than one person**.",
-            "translation_ru": "Успех зависит не от одного человека."
+            "text": "❌ My sister got married with her university friend. → ✓ My sister **married her university friend**.",
+            "translation_ru": "Моя сестра вышла замуж за друга по университету."
           },
           {
-            "text": "❌ The decision will depend from the test result. → ✓ The decision **will depend on the test result**.",
-            "translation_ru": "Решение будет зависеть от результата теста."
+            "text": "❌ She was married with a doctor before. → ✓ She **was married to a doctor** before.",
+            "translation_ru": "Раньше она была замужем за врачом."
           }
         ]
       },
       {
         "lang": "de",
-        "formula": "❌ interessiert in [X] → ✓ interessiert an [X + Dativ]",
-        "example": "❌ Ich bin interessiert in dem Projekt. → ✓ Ich bin **an dem Projekt interessiert**.",
-        "translation": "Я заинтересован в проекте.",
+        "formula": "❌ verheiratet zu [jemandem] → ✓ verheiratet mit [jemandem + Dativ]",
+        "example": "❌ Sie ist zu einem Architekten verheiratet. → ✓ Sie ist **mit einem Architekten verheiratet**.",
+        "translation": "Она замужем за архитектором.",
         "examples": [
           {
-            "text": "❌ Sie ist interessiert in neuen Methoden. → ✓ Sie ist **an neuen Methoden interessiert**.",
-            "translation_ru": "Она интересуется новыми методами."
+            "text": "❌ Er ist seit zehn Jahren zu Elena verheiratet. → ✓ Er ist seit zehn Jahren **mit Elena verheiratet**.",
+            "translation_ru": "Он женат на Елене уже десять лет."
           },
           {
-            "text": "❌ Wir sind interessiert in einer langfristigen Partnerschaft. → ✓ Wir sind **an einer langfristigen Partnerschaft interessiert**.",
-            "translation_ru": "Мы заинтересованы в долгосрочном партнёрстве."
+            "text": "❌ Bist du zu jemandem aus deiner Heimatstadt verheiratet? → ✓ Bist du **mit jemandem aus deiner Heimatstadt verheiratet**?",
+            "translation_ru": "Вы женаты или замужем за человеком из вашего родного города?"
           },
           {
-            "text": "❌ Er ist nicht interessiert in Details. → ✓ Er ist nicht **an Details interessiert**.",
-            "translation_ru": "Он не интересуется деталями."
+            "text": "❌ Meine Schwester ist zu ihrem Studienfreund verheiratet. → ✓ Meine Schwester ist **mit ihrem Studienfreund verheiratet**.",
+            "translation_ru": "Моя сестра замужем за другом по университету."
           },
           {
-            "text": "❌ Die Kundin war interessiert in dem günstigeren Modell. → ✓ Die Kundin war **an dem günstigeren Modell interessiert**.",
-            "translation_ru": "Клиентка интересовалась более дешёвой моделью."
+            "text": "❌ Sie war früher zu einem Arzt verheiratet. → ✓ Sie war früher **mit einem Arzt verheiratet**.",
+            "translation_ru": "Раньше она была замужем за врачом."
           }
         ]
       }
     ],
-    "logic": "transfer correction for prepositional government",
+    "logic": "transfer correction for fixed prepositions",
     "gen": {
       "status": "curated",
       "iterations": 1,
@@ -867,65 +867,65 @@
         "en",
         "de"
       ],
-      "notes": "Russian-speaker transfer expansion v2."
+      "notes": "Russian-speaker transfer expansion v3."
     }
   },
   {
-    "id": "XPRRTR005",
+    "id": "XPRRTR011",
     "group_id": "RTR",
     "set_id": "RTR",
-    "title_ru": "Не переносить управление русского глагола на английский или немецкий",
+    "title_ru": "Не смешивать answer и respond / beantworten и antworten",
     "langs": [
       {
         "lang": "en",
-        "formula": "❌ a question to [someone] → ✓ a question for [someone]",
-        "example": "❌ I have a question to you. → ✓ I **have a question for you**.",
-        "translation": "У меня к вам вопрос.",
+        "formula": "❌ answer on [a question] → ✓ answer [a question] / respond to [a message]",
+        "example": "❌ Could you answer on my question? → ✓ Could you **answer my question**?",
+        "translation": "Можете ответить на мой вопрос?",
         "examples": [
           {
-            "text": "❌ There is one question to the vendor. → ✓ There is **one question for the vendor**.",
-            "translation_ru": "К поставщику есть один вопрос."
+            "text": "❌ Nobody answered on the final question. → ✓ Nobody **answered the final question**.",
+            "translation_ru": "Никто не ответил на последний вопрос."
           },
           {
-            "text": "❌ I prepared three questions to the interviewer. → ✓ I prepared **three questions for the interviewer**.",
-            "translation_ru": "Я подготовил три вопроса для интервьюера."
+            "text": "❌ Please answer on this email by Friday. → ✓ Please **respond to this email by Friday**.",
+            "translation_ru": "Пожалуйста, ответьте на это письмо до пятницы."
           },
           {
-            "text": "❌ Do you have any questions to me? → ✓ Do you have **any questions for me**?",
-            "translation_ru": "У вас есть ко мне вопросы?"
+            "text": "❌ The report does not answer on the main issue. → ✓ The report does not **answer the main question**.",
+            "translation_ru": "Отчёт не отвечает на главный вопрос."
           },
           {
-            "text": "❌ We have a follow-up question to them. → ✓ We have **a follow-up question for them**.",
-            "translation_ru": "У нас к ним есть дополнительный вопрос."
+            "text": "❌ She responded the request immediately. → ✓ She **responded to the request immediately**.",
+            "translation_ru": "Она сразу ответила на запрос."
           }
         ]
       },
       {
         "lang": "de",
-        "formula": "❌ jemanden warten → ✓ auf [jemanden + Akkusativ] warten",
-        "example": "❌ Ich warte dich unten. → ✓ Ich **warte unten auf dich**.",
-        "translation": "Я жду тебя внизу.",
+        "formula": "❌ auf [eine Frage] beantworten → ✓ [eine Frage] beantworten / auf [eine Frage] antworten",
+        "example": "❌ Können Sie auf meine Frage beantworten? → ✓ Können Sie **meine Frage beantworten**?",
+        "translation": "Можете ответить на мой вопрос?",
         "examples": [
           {
-            "text": "❌ Wir warten den Bus. → ✓ Wir **warten auf den Bus**.",
-            "translation_ru": "Мы ждём автобус."
+            "text": "❌ Niemand hat auf die letzte Frage beantwortet. → ✓ Niemand hat **die letzte Frage beantwortet**.",
+            "translation_ru": "Никто не ответил на последний вопрос."
           },
           {
-            "text": "❌ Sie wartet eine Antwort. → ✓ Sie **wartet auf eine Antwort**.",
-            "translation_ru": "Она ждёт ответа."
+            "text": "❌ Bitte beantworten Sie auf diese E-Mail bis Freitag. → ✓ Bitte **antworten Sie bis Freitag auf diese E-Mail**.",
+            "translation_ru": "Пожалуйста, ответьте на это письмо до пятницы."
           },
           {
-            "text": "❌ Ich habe zwanzig Minuten ihn gewartet. → ✓ Ich habe zwanzig Minuten **auf ihn gewartet**.",
-            "translation_ru": "Я ждал его двадцать минут."
+            "text": "❌ Der Bericht antwortet die zentrale Frage nicht. → ✓ Der Bericht **beantwortet die zentrale Frage nicht**.",
+            "translation_ru": "Отчёт не отвечает на главный вопрос."
           },
           {
-            "text": "❌ Die Kunden warten die neue Version. → ✓ Die Kunden **warten auf die neue Version**.",
-            "translation_ru": "Клиенты ждут новую версию."
+            "text": "❌ Sie beantwortete auf die Anfrage sofort. → ✓ Sie **antwortete sofort auf die Anfrage**.",
+            "translation_ru": "Она сразу ответила на запрос."
           }
         ]
       }
     ],
-    "logic": "transfer correction for verb complements",
+    "logic": "transfer correction for verb-preposition alternation",
     "gen": {
       "status": "curated",
       "iterations": 1,
@@ -934,11 +934,11 @@
         "en",
         "de"
       ],
-      "notes": "Russian-speaker transfer expansion v2."
+      "notes": "Russian-speaker transfer expansion v3."
     }
   },
   {
-    "id": "XPRRTR006",
+    "id": "XPRRTR012",
     "group_id": "RTR",
     "set_id": "RTR",
     "title_ru": "Не делать неисчисляемые слова множественными и не терять немецкий дательный",
@@ -1001,7 +1001,7 @@
         "en",
         "de"
       ],
-      "notes": "Russian-speaker transfer expansion v2."
+      "notes": "Russian-speaker transfer expansion v3."
     }
   },
   {
