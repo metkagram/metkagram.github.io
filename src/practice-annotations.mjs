@@ -64,6 +64,11 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
 
   const ledger = JSON.parse(fs.readFileSync(ledgerFile, "utf8"));
   const pendingEntries = new Map((ledger.patterns || []).map((entry) => [entry.id, entry]));
+  const pendingSetEntries = new Map((ledger.sets || []).map((entry) => [entry.id, entry]));
+  const pendingPatternIds = new Set([
+    ...pendingEntries.keys(),
+    ...content.advancedPatterns.filter((pattern) => pendingSetEntries.has(pattern.set_id)).map((pattern) => pattern.id)
+  ]);
   const retiredEntries = new Map((ledger.retired_records || []).map((entry) => [entry.key, entry]));
   const items = Object.fromEntries(
     Object.entries(payload.items).filter(([key]) => !retiredEntries.has(key))
@@ -79,8 +84,8 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
         const key = `${pattern.id}:${language.lang}:${reference.key}`;
         expectedKeys.add(key);
         const record = payload.items[key];
+        const pending = pendingEntries.get(pattern.id) || pendingSetEntries.get(pattern.set_id);
         if (!record) {
-          const pending = pendingEntries.get(pattern.id);
           if (!pending) throw new Error(`Missing Practice annotation ${key}`);
           const replacement = pendingRecord(pattern, language, reference, pending.reason);
           const errors = validateAnnotation(replacement);
@@ -93,7 +98,6 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
         const matches = record.text === expectedText && record.inline_text === expectedText;
 
         if (!matches) {
-          const pending = pendingEntries.get(pattern.id);
           if (!pending) throw new Error(`Practice annotation text mismatch for ${key}`);
           const replacement = pendingRecord(pattern, language, reference, pending.reason);
           const errors = validateAnnotation(replacement);
@@ -123,7 +127,7 @@ export function loadPracticeAnnotationLayer(content, root = process.cwd()) {
     payload,
     items,
     ledger,
-    pendingPatternIds: new Set(pendingEntries.keys()),
+    pendingPatternIds,
     overlayPendingCount,
     retiredRawKeys: staleKeys
   };
