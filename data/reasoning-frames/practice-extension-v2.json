@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "XPRCGR004",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "title_ru": "Надежда на будущее или сожаление о нереальном",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I hope [X happens]; I wish [X were true].",
+        "example": "I **hope the supplier confirms the date tomorrow**; I **wish the schedule were less fragile**.",
+        "translation": "Надеюсь, поставщик подтвердит дату завтра; жаль, что график такой нестабильный.",
+        "examples": [
+          {
+            "text": "She **hopes the interview goes well**, but she **wishes she felt more confident**.",
+            "translation_ru": "Она надеется, что собеседование пройдёт хорошо, но хотела бы чувствовать себя увереннее."
+          },
+          {
+            "text": "We **hope the rain stops before the match**; I **wish we had an indoor court**.",
+            "translation_ru": "Мы надеемся, что дождь закончится до матча; жаль, что у нас нет крытого корта."
+          },
+          {
+            "text": "I **hope the patch fixes the crash**, though I **wish the root cause were clearer**.",
+            "translation_ru": "Надеюсь, патч устранит сбой, хотя хотелось бы яснее понимать первопричину."
+          },
+          {
+            "text": "They **hope demand recovers next quarter**, but they **wish the current forecast were more reliable**.",
+            "translation_ru": "Они надеются, что спрос восстановится в следующем квартале, но хотели бы иметь более надёжный текущий прогноз."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich hoffe, dass [X passiert]; ich wünschte, [X wäre so].",
+        "example": "Ich **hoffe, dass der Lieferant den Termin morgen bestätigt**; ich **wünschte, der Zeitplan wäre weniger anfällig**.",
+        "translation": "Надеюсь, поставщик подтвердит дату завтра; жаль, что график такой нестабильный.",
+        "examples": [
+          {
+            "text": "Sie **hofft, dass das Vorstellungsgespräch gut läuft**, aber sie **wünschte, sie wäre selbstsicherer**.",
+            "translation_ru": "Она надеется, что собеседование пройдёт хорошо, но хотела бы чувствовать себя увереннее."
+          },
+          {
+            "text": "Wir **hoffen, dass der Regen vor dem Spiel aufhört**; ich **wünschte, wir hätten eine Halle**.",
+            "translation_ru": "Мы надеемся, что дождь закончится до матча; жаль, что у нас нет крытого корта."
+          },
+          {
+            "text": "Ich **hoffe, dass der Patch den Absturz behebt**, obwohl ich **wünschte, die Ursache wäre klarer**.",
+            "translation_ru": "Надеюсь, патч устранит сбой, хотя хотелось бы яснее понимать первопричину."
+          },
+          {
+            "text": "Sie **hoffen, dass sich die Nachfrage im nächsten Quartal erholt**, aber sie **wünschten, die aktuelle Prognose wäre verlässlicher**.",
+            "translation_ru": "Они надеются, что спрос восстановится в следующем квартале, но хотели бы иметь более надёжный текущий прогноз."
+          }
+        ]
+      }
+    ],
+    "logic": "contrastive mood and time reference",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Contrast grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRCGR005",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "title_ru": "Предпочесть действие самому или хотеть действия от другого",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I'd rather [do X] than [do Y]; I'd rather [someone did Z].",
+        "example": "I'd rather **review the contract tonight than rush it tomorrow**, but I'd rather **legal checked the final wording**.",
+        "translation": "Я лучше просмотрю договор сегодня вечером, чем буду спешить завтра, но предпочёл бы, чтобы финальную формулировку проверили юристы.",
+        "examples": [
+          {
+            "text": "She'd rather **cycle to work than sit in traffic**, but she'd rather **her son took the bus in winter**.",
+            "translation_ru": "Она предпочитает ездить на работу на велосипеде, а не стоять в пробках, но зимой хотела бы, чтобы сын ездил на автобусе."
+          },
+          {
+            "text": "We'd rather **run a small pilot than launch everywhere**, and we'd rather **the client saw the prototype first**.",
+            "translation_ru": "Мы предпочли бы провести небольшой пилот, а не запускаться везде, и хотели бы, чтобы клиент сначала увидел прототип."
+          },
+          {
+            "text": "I'd rather **cook at home than queue for a table**, though I'd rather **you chose the menu this time**.",
+            "translation_ru": "Я лучше приготовлю дома, чем буду ждать столик, хотя в этот раз предпочёл бы, чтобы меню выбрал ты."
+          },
+          {
+            "text": "They'd rather **delay the announcement than publish uncertain figures**, but they'd rather **finance confirmed the numbers by noon**.",
+            "translation_ru": "Они скорее отложат объявление, чем опубликуют сомнительные цифры, но хотели бы, чтобы финансовый отдел подтвердил данные к полудню."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich würde lieber [X tun] als [Y tun]; mir wäre lieber, [jemand täte Z].",
+        "example": "Ich würde lieber **den Vertrag heute Abend prüfen, als ihn morgen unter Zeitdruck abzuschließen**, aber mir wäre lieber, **die Rechtsabteilung prüfte die endgültige Formulierung**.",
+        "translation": "Я лучше просмотрю договор сегодня вечером, чем буду спешить завтра, но предпочёл бы, чтобы финальную формулировку проверили юристы.",
+        "examples": [
+          {
+            "text": "Sie würde lieber **mit dem Rad zur Arbeit fahren, als im Stau zu stehen**, aber ihr wäre lieber, **ihr Sohn nähme im Winter den Bus**.",
+            "translation_ru": "Она предпочитает ездить на работу на велосипеде, а не стоять в пробках, но зимой хотела бы, чтобы сын ездил на автобусе."
+          },
+          {
+            "text": "Wir würden lieber **einen kleinen Pilotversuch machen, als überall gleichzeitig zu starten**, und uns wäre lieber, **der Kunde sähe zuerst den Prototyp**.",
+            "translation_ru": "Мы предпочли бы провести небольшой пилот, а не запускаться везде, и хотели бы, чтобы клиент сначала увидел прототип."
+          },
+          {
+            "text": "Ich würde lieber **zu Hause kochen, als auf einen Tisch zu warten**, obwohl mir lieber wäre, **du würdest diesmal das Menü auswählen**.",
+            "translation_ru": "Я лучше приготовлю дома, чем буду ждать столик, хотя в этот раз предпочёл бы, чтобы меню выбрал ты."
+          },
+          {
+            "text": "Sie würden lieber **die Ankündigung verschieben, als unsichere Zahlen zu veröffentlichen**, aber ihnen wäre lieber, **Finance bestätigte die Zahlen bis Mittag**.",
+            "translation_ru": "Они скорее отложат объявление, чем опубликуют сомнительные цифры, но хотели бы, чтобы финансовый отдел подтвердил данные к полудню."
+          }
+        ]
+      }
+    ],
+    "logic": "contrastive preference control",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Contrast grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRCGR006",
+    "group_id": "CGR",
+    "set_id": "CGR",
+    "title_ru": "Пора сделать или уже пора, чтобы кто-то сделал",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It's time to [do X]; it's time [someone did Y].",
+        "example": "It's time to **replace the battery**; it's time **the landlord fixed the faulty socket**.",
+        "translation": "Пора заменить аккумулятор; уже пора, чтобы хозяин квартиры починил неисправную розетку.",
+        "examples": [
+          {
+            "text": "It's time to **leave for the airport**; it's time **the taxi arrived**.",
+            "translation_ru": "Пора выезжать в аэропорт; такси уже пора приехать."
+          },
+          {
+            "text": "It's time to **review our budget**; it's time **the team stopped treating every request as urgent**.",
+            "translation_ru": "Пора пересмотреть бюджет; команде уже пора перестать считать каждый запрос срочным."
+          },
+          {
+            "text": "It's time to **book the dentist**; it's time **I took that recurring pain seriously**.",
+            "translation_ru": "Пора записаться к стоматологу; мне уже пора всерьёз отнестись к этой повторяющейся боли."
+          },
+          {
+            "text": "It's time to **publish the migration guide**; it's time **the project documented its exceptions properly**.",
+            "translation_ru": "Пора опубликовать руководство по миграции; проекту уже пора нормально задокументировать исключения."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es ist Zeit, [X zu tun]; es wird Zeit, dass [jemand Y tut].",
+        "example": "Es ist Zeit, **den Akku zu ersetzen**; es wird Zeit, dass **der Vermieter die defekte Steckdose repariert**.",
+        "translation": "Пора заменить аккумулятор; уже пора, чтобы хозяин квартиры починил неисправную розетку.",
+        "examples": [
+          {
+            "text": "Es ist Zeit, **zum Flughafen aufzubrechen**; es wird Zeit, dass **das Taxi kommt**.",
+            "translation_ru": "Пора выезжать в аэропорт; такси уже пора приехать."
+          },
+          {
+            "text": "Es ist Zeit, **unser Budget zu prüfen**; es wird Zeit, dass **das Team nicht mehr jede Anfrage als dringend behandelt**.",
+            "translation_ru": "Пора пересмотреть бюджет; команде уже пора перестать считать каждый запрос срочным."
+          },
+          {
+            "text": "Es ist Zeit, **einen Zahnarzttermin zu vereinbaren**; es wird Zeit, dass **ich diese wiederkehrenden Schmerzen ernst nehme**.",
+            "translation_ru": "Пора записаться к стоматологу; мне уже пора всерьёз отнестись к этой повторяющейся боли."
+          },
+          {
+            "text": "Es ist Zeit, **den Migrationsleitfaden zu veröffentlichen**; es wird Zeit, dass **das Projekt seine Ausnahmen sauber dokumentiert**.",
+            "translation_ru": "Пора опубликовать руководство по миграции; проекту уже пора нормально задокументировать исключения."
+          }
+        ]
+      }
+    ],
+    "logic": "contrastive time-to-act framing",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Contrast grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRSPK004",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "title_ru": "Переформулировать мысль на ходу",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "What I mean is, [X].",
+        "example": "**What I mean is**, we do not need more features; we need a clearer path to the ones we already have.",
+        "translation": "Я имею в виду, что нам не нужно больше функций; нужен более понятный путь к тем, что уже есть.",
+        "examples": [
+          {
+            "text": "**What I mean is**, the meeting was useful, but it did not resolve the ownership question.",
+            "translation_ru": "Я имею в виду, что встреча была полезной, но вопрос ответственности она не решила."
+          },
+          {
+            "text": "**What I mean is**, I can support the change if we keep a rollback option.",
+            "translation_ru": "Я имею в виду, что могу поддержать изменение, если мы сохраним возможность отката."
+          },
+          {
+            "text": "**What I mean is**, the apartment is not small; the layout simply wastes a lot of space.",
+            "translation_ru": "Я имею в виду, что квартира не маленькая — просто планировка съедает много пространства."
+          },
+          {
+            "text": "**What I mean is**, fluency is not speaking faster; it is retrieving useful structures with less effort.",
+            "translation_ru": "Я имею в виду, что беглость — это не более быстрая речь, а более лёгкое извлечение полезных конструкций."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Was ich meine, ist: [X].",
+        "example": "**Was ich meine, ist:** Wir brauchen nicht mehr Funktionen, sondern einen klareren Weg zu denen, die schon da sind.",
+        "translation": "Я имею в виду, что нам не нужно больше функций; нужен более понятный путь к тем, что уже есть.",
+        "examples": [
+          {
+            "text": "**Was ich meine, ist:** Das Gespräch war nützlich, aber die Frage der Zuständigkeit blieb offen.",
+            "translation_ru": "Я имею в виду, что встреча была полезной, но вопрос ответственности она не решила."
+          },
+          {
+            "text": "**Was ich meine, ist:** Ich kann die Änderung unterstützen, wenn wir eine Rückfalloption behalten.",
+            "translation_ru": "Я имею в виду, что могу поддержать изменение, если мы сохраним возможность отката."
+          },
+          {
+            "text": "**Was ich meine, ist:** Die Wohnung ist nicht klein; der Grundriss verschwendet einfach viel Platz.",
+            "translation_ru": "Я имею в виду, что квартира не маленькая — просто планировка съедает много пространства."
+          },
+          {
+            "text": "**Was ich meine, ist:** Flüssigkeit bedeutet nicht, schneller zu sprechen, sondern nützliche Strukturen mit weniger Aufwand abzurufen.",
+            "translation_ru": "Я имею в виду, что беглость — это не более быстрая речь, а более лёгкое извлечение полезных конструкций."
+          }
+        ]
+      }
+    ],
+    "logic": "spoken reformulation",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Spoken grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRSPK005",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "title_ru": "Сместить акцент: дело не столько в …, сколько в …",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "It's not so much [X] as [Y].",
+        "example": "**It's not so much the price as the uncertainty about maintenance** that worries me.",
+        "translation": "Меня беспокоит не столько цена, сколько неопределённость с обслуживанием.",
+        "examples": [
+          {
+            "text": "**It's not so much that the team lacks skill as that priorities keep changing**.",
+            "translation_ru": "Дело не столько в нехватке навыков у команды, сколько в постоянной смене приоритетов."
+          },
+          {
+            "text": "**It's not so much the distance as the unreliable connection** that makes remote sessions difficult.",
+            "translation_ru": "Удалённые сессии осложняет не столько расстояние, сколько нестабильное соединение."
+          },
+          {
+            "text": "**It's not so much the mistake as the lack of a recovery plan** that concerns the auditors.",
+            "translation_ru": "Аудиторов беспокоит не столько сама ошибка, сколько отсутствие плана восстановления."
+          },
+          {
+            "text": "**It's not so much about memorising rules as about noticing patterns quickly enough to use them**.",
+            "translation_ru": "Речь не столько о запоминании правил, сколько о том, чтобы достаточно быстро замечать паттерны и использовать их."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Es geht weniger um [X] als vielmehr um [Y].",
+        "example": "**Es geht weniger um den Preis als vielmehr um die Unsicherheit bei der Wartung**, die mir Sorgen macht.",
+        "translation": "Меня беспокоит не столько цена, сколько неопределённость с обслуживанием.",
+        "examples": [
+          {
+            "text": "**Es geht weniger darum, dass dem Team Fähigkeiten fehlen, als vielmehr darum, dass sich die Prioritäten ständig ändern**.",
+            "translation_ru": "Дело не столько в нехватке навыков у команды, сколько в постоянной смене приоритетов."
+          },
+          {
+            "text": "**Es geht weniger um die Entfernung als vielmehr um die unzuverlässige Verbindung**, die Remote-Sitzungen schwierig macht.",
+            "translation_ru": "Удалённые сессии осложняет не столько расстояние, сколько нестабильное соединение."
+          },
+          {
+            "text": "**Es geht weniger um den Fehler selbst als vielmehr um den fehlenden Wiederherstellungsplan**, der die Prüfer beunruhigt.",
+            "translation_ru": "Аудиторов беспокоит не столько сама ошибка, сколько отсутствие плана восстановления."
+          },
+          {
+            "text": "**Es geht weniger darum, Regeln auswendig zu lernen, als vielmehr darum, Muster schnell genug zu erkennen, um sie zu benutzen**.",
+            "translation_ru": "Речь не столько о запоминании правил, сколько о том, чтобы достаточно быстро замечать паттерны и использовать их."
+          }
+        ]
+      }
+    ],
+    "logic": "spoken focus shift",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Spoken grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRSPK006",
+    "group_id": "SPK",
+    "set_id": "SPK",
+    "title_ru": "Уточнить направление: если уж что-то и верно, то …",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "If anything, [X].",
+        "example": "The second review did not weaken the case; **if anything, it made the evidence stronger**.",
+        "translation": "Вторая проверка не ослабила аргумент; скорее наоборот, она сделала доказательную базу сильнее.",
+        "examples": [
+          {
+            "text": "Working from home has not made me less social; **if anything, I plan meetings more deliberately now**.",
+            "translation_ru": "Работа из дома не сделала меня менее общительным; скорее наоборот, теперь я планирую встречи более осознанно."
+          },
+          {
+            "text": "The smaller screen did not feel restrictive; **if anything, it helped me focus on one task at a time**.",
+            "translation_ru": "Меньший экран не ощущался ограничением; скорее наоборот, он помог сосредотачиваться на одной задаче за раз."
+          },
+          {
+            "text": "The delay did not reduce demand; **if anything, customers became more impatient to order**.",
+            "translation_ru": "Задержка не снизила спрос; скорее наоборот, клиенты стали ещё сильнее торопиться с заказом."
+          },
+          {
+            "text": "Recording myself did not make practice artificial; **if anything, it exposed habits I had never noticed**.",
+            "translation_ru": "Запись собственной речи не сделала практику искусственной; скорее наоборот, она показала привычки, которых я раньше не замечал."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn überhaupt, dann [X].",
+        "example": "Die zweite Prüfung hat die Argumentation nicht geschwächt; **wenn überhaupt, dann hat sie die Belege noch gestärkt**.",
+        "translation": "Вторая проверка не ослабила аргумент; скорее наоборот, она сделала доказательную базу сильнее.",
+        "examples": [
+          {
+            "text": "Die Arbeit von zu Hause hat mich nicht unsozialer gemacht; **wenn überhaupt, dann plane ich Treffen heute bewusster**.",
+            "translation_ru": "Работа из дома не сделала меня менее общительным; скорее наоборот, теперь я планирую встречи более осознанно."
+          },
+          {
+            "text": "Der kleinere Bildschirm fühlte sich nicht einschränkend an; **wenn überhaupt, dann half er mir, mich jeweils auf eine Aufgabe zu konzentrieren**.",
+            "translation_ru": "Меньший экран не ощущался ограничением; скорее наоборот, он помог сосредотачиваться на одной задаче за раз."
+          },
+          {
+            "text": "Die Verzögerung hat die Nachfrage nicht verringert; **wenn überhaupt, dann wurden die Kunden noch ungeduldiger**.",
+            "translation_ru": "Задержка не снизила спрос; скорее наоборот, клиенты стали ещё сильнее торопиться с заказом."
+          },
+          {
+            "text": "Mich selbst aufzunehmen hat die Übung nicht künstlicher gemacht; **wenn überhaupt, dann hat es Gewohnheiten sichtbar gemacht, die mir nie aufgefallen waren**.",
+            "translation_ru": "Запись собственной речи не сделала практику искусственной; скорее наоборот, она показала привычки, которых я раньше не замечал."
+          }
+        ]
+      }
+    ],
+    "logic": "spoken correction of direction",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Spoken grammar expansion v2."
+    }
+  },
+  {
+    "id": "XPRINT004",
+    "group_id": "INT",
+    "set_id": "INT",
+    "title_ru": "Удержать слово и закончить мысль",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Can I finish this thought? [X].",
+        "example": "**Can I finish this thought?** The risk only becomes visible when we compare the two workflows end to end.",
+        "translation": "Можно я закончу мысль? Риск становится заметен только когда мы сравниваем два процесса целиком.",
+        "examples": [
+          {
+            "text": "**Can I finish this thought?** I agree about the deadline, but the dependency has not disappeared.",
+            "translation_ru": "Можно я закончу мысль? Я согласен насчёт срока, но зависимость никуда не исчезла."
+          },
+          {
+            "text": "**Can I finish this thought?** The cheaper option saves money now, yet it increases maintenance later.",
+            "translation_ru": "Можно я закончу мысль? Более дешёвый вариант экономит деньги сейчас, но увеличивает расходы на обслуживание позже."
+          },
+          {
+            "text": "**Can I finish this thought?** What looked like a user error turned out to be a misleading default.",
+            "translation_ru": "Можно я закончу мысль? То, что выглядело как ошибка пользователя, оказалось неудачным значением по умолчанию."
+          },
+          {
+            "text": "**Can I finish this thought?** We can simplify the page without removing the information experts rely on.",
+            "translation_ru": "Можно я закончу мысль? Мы можем упростить страницу, не удаляя информацию, на которую полагаются специалисты."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Darf ich den Gedanken kurz zu Ende führen? [X].",
+        "example": "**Darf ich den Gedanken kurz zu Ende führen?** Das Risiko wird erst sichtbar, wenn wir beide Abläufe vollständig vergleichen.",
+        "translation": "Можно я закончу мысль? Риск становится заметен только когда мы сравниваем два процесса целиком.",
+        "examples": [
+          {
+            "text": "**Darf ich den Gedanken kurz zu Ende führen?** Beim Termin stimme ich zu, aber die Abhängigkeit ist damit nicht verschwunden.",
+            "translation_ru": "Можно я закончу мысль? Я согласен насчёт срока, но зависимость никуда не исчезла."
+          },
+          {
+            "text": "**Darf ich den Gedanken kurz zu Ende führen?** Die billigere Option spart jetzt Geld, erhöht aber später den Wartungsaufwand.",
+            "translation_ru": "Можно я закончу мысль? Более дешёвый вариант экономит деньги сейчас, но увеличивает расходы на обслуживание позже."
+          },
+          {
+            "text": "**Darf ich den Gedanken kurz zu Ende führen?** Was wie ein Benutzerfehler aussah, war am Ende eine irreführende Voreinstellung.",
+            "translation_ru": "Можно я закончу мысль? То, что выглядело как ошибка пользователя, оказалось неудачным значением по умолчанию."
+          },
+          {
+            "text": "**Darf ich den Gedanken kurz zu Ende führen?** Wir können die Seite vereinfachen, ohne die Informationen zu entfernen, auf die Fachleute angewiesen sind.",
+            "translation_ru": "Можно я закончу мысль? Мы можем упростить страницу, не удаляя информацию, на которую полагаются специалисты."
+          }
+        ]
+      }
+    ],
+    "logic": "turn holding",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Interaction moves expansion v2."
+    }
+  },
+  {
+    "id": "XPRINT005",
+    "group_id": "INT",
+    "set_id": "INT",
+    "title_ru": "Проверить, правильно ли понял собеседника",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Let me make sure I've got this right: [X], right?",
+        "example": "**Let me make sure I've got this right:** we can deploy the fix today, but the data correction waits until Monday, **right?**",
+        "translation": "Дайте проверю, правильно ли я понял: исправление можно развернуть сегодня, а корректировка данных ждёт до понедельника, верно?",
+        "examples": [
+          {
+            "text": "**Let me make sure I've got this right:** you are not rejecting the proposal; you want stronger evidence first, **right?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: вы не отклоняете предложение, а сначала хотите более сильные доказательства, верно?"
+          },
+          {
+            "text": "**Let me make sure I've got this right:** breakfast is included, but parking is charged separately, **right?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: завтрак включён, а парковка оплачивается отдельно, верно?"
+          },
+          {
+            "text": "**Let me make sure I've got this right:** the child can join the class now, but the assessment happens next week, **right?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: ребёнок может присоединиться к занятию сейчас, а оценка будет на следующей неделе, верно?"
+          },
+          {
+            "text": "**Let me make sure I've got this right:** the API is public, but bulk commercial reuse still needs permission, **right?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: API публичный, но массовое коммерческое повторное использование всё равно требует разрешения, верно?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Nur damit ich es richtig verstanden habe: [X], richtig?",
+        "example": "**Nur damit ich es richtig verstanden habe:** Wir können den Fix heute ausrollen, aber die Datenkorrektur wartet bis Montag, **richtig?**",
+        "translation": "Дайте проверю, правильно ли я понял: исправление можно развернуть сегодня, а корректировка данных ждёт до понедельника, верно?",
+        "examples": [
+          {
+            "text": "**Nur damit ich es richtig verstanden habe:** Sie lehnen den Vorschlag nicht ab, sondern möchten zuerst stärkere Belege, **richtig?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: вы не отклоняете предложение, а сначала хотите более сильные доказательства, верно?"
+          },
+          {
+            "text": "**Nur damit ich es richtig verstanden habe:** Das Frühstück ist inklusive, aber der Parkplatz wird separat berechnet, **richtig?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: завтрак включён, а парковка оплачивается отдельно, верно?"
+          },
+          {
+            "text": "**Nur damit ich es richtig verstanden habe:** Das Kind kann jetzt am Kurs teilnehmen, aber die Einstufung findet nächste Woche statt, **richtig?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: ребёнок может присоединиться к занятию сейчас, а оценка будет на следующей неделе, верно?"
+          },
+          {
+            "text": "**Nur damit ich es richtig verstanden habe:** Die API ist öffentlich, aber eine umfangreiche kommerzielle Wiederverwendung braucht weiterhin eine Genehmigung, **richtig?**",
+            "translation_ru": "Дайте проверю, правильно ли я понял: API публичный, но массовое коммерческое повторное использование всё равно требует разрешения, верно?"
+          }
+        ]
+      }
+    ],
+    "logic": "understanding check",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Interaction moves expansion v2."
+    }
+  },
+  {
+    "id": "XPRINT006",
+    "group_id": "INT",
+    "set_id": "INT",
+    "title_ru": "Временно отложить тему и вернуться к ней позже",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Could we park [X] for a moment and come back to it after [Y]?",
+        "example": "**Could we park the pricing question for a moment and come back to it after we agree on scope?**",
+        "translation": "Можем пока отложить вопрос цены и вернуться к нему после того, как согласуем объём?",
+        "examples": [
+          {
+            "text": "**Could we park the naming debate for a moment and come back to it after we test the user flow?**",
+            "translation_ru": "Можем пока отложить спор о названии и вернуться к нему после теста пользовательского сценария?"
+          },
+          {
+            "text": "**Could we park the holiday dates for a moment and come back to them after everyone checks their calendars?**",
+            "translation_ru": "Можем пока отложить даты отпуска и вернуться к ним после того, как все проверят календари?"
+          },
+          {
+            "text": "**Could we park the root-cause discussion for a moment and come back to it after we reproduce the failure?**",
+            "translation_ru": "Можем пока отложить обсуждение первопричины и вернуться к нему после воспроизведения сбоя?"
+          },
+          {
+            "text": "**Could we park the long-term architecture for a moment and come back to it after the pilot gives us real usage data?**",
+            "translation_ru": "Можем пока отложить долгосрочную архитектуру и вернуться к ней после того, как пилот даст реальные данные использования?"
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Könnten wir [X] kurz zurückstellen und nach [Y] darauf zurückkommen?",
+        "example": "**Könnten wir die Preisfrage kurz zurückstellen und nach der Klärung des Umfangs darauf zurückkommen?**",
+        "translation": "Можем пока отложить вопрос цены и вернуться к нему после того, как согласуем объём?",
+        "examples": [
+          {
+            "text": "**Könnten wir die Namensdiskussion kurz zurückstellen und nach dem Test des Nutzerflusses darauf zurückkommen?**",
+            "translation_ru": "Можем пока отложить спор о названии и вернуться к нему после теста пользовательского сценария?"
+          },
+          {
+            "text": "**Könnten wir die Urlaubstermine kurz zurückstellen und darauf zurückkommen, nachdem alle ihre Kalender geprüft haben?**",
+            "translation_ru": "Можем пока отложить даты отпуска и вернуться к ним после того, как все проверят календари?"
+          },
+          {
+            "text": "**Könnten wir die Ursachenanalyse kurz zurückstellen und nach der Reproduktion des Fehlers darauf zurückkommen?**",
+            "translation_ru": "Можем пока отложить обсуждение первопричины и вернуться к нему после воспроизведения сбоя?"
+          },
+          {
+            "text": "**Könnten wir die langfristige Architektur kurz zurückstellen und darauf zurückkommen, wenn der Pilot echte Nutzungsdaten geliefert hat?**",
+            "translation_ru": "Можем пока отложить долгосрочную архитектуру и вернуться к ней после того, как пилот даст реальные данные использования?"
+          }
+        ]
+      }
+    ],
+    "logic": "topic parking",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Interaction moves expansion v2."
+    }
+  },
+  {
+    "id": "XPRREG004",
+    "group_id": "REG",
+    "set_id": "REG",
+    "title_ru": "Несогласие: прямо → нейтрально → аналитично",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "That's wrong. → I don't think that's quite right. → I would question whether that conclusion follows from the evidence.",
+        "example": "That's wrong. → I don't think that's quite right. → **I would question whether that conclusion follows from the evidence.**",
+        "translation": "Это неправильно. → Не думаю, что это совсем верно. → Я бы поставил под вопрос, следует ли этот вывод из имеющихся данных.",
+        "examples": [
+          {
+            "text": "That estimate is wrong. → I'm not sure that estimate is accurate. → **I would question whether the current assumptions support that estimate.**",
+            "translation_ru": "Эта оценка неверна. → Не уверен, что эта оценка точна. → Я бы поставил под вопрос, поддерживают ли текущие предпосылки такую оценку."
+          },
+          {
+            "text": "Your explanation doesn't work. → I don't think that fully explains the result. → **I would question whether the proposed mechanism accounts for all the observations.**",
+            "translation_ru": "Ваше объяснение не работает. → Не думаю, что оно полностью объясняет результат. → Я бы поставил под вопрос, объясняет ли предложенный механизм все наблюдения."
+          },
+          {
+            "text": "That's a bad idea. → I have reservations about that option. → **I would question whether the benefits justify the operational risk.**",
+            "translation_ru": "Это плохая идея. → У меня есть сомнения по поводу этого варианта. → Я бы поставил под вопрос, оправдывают ли преимущества операционный риск."
+          },
+          {
+            "text": "That interpretation is wrong. → I read the evidence differently. → **I would question whether the text supports that interpretation without additional context.**",
+            "translation_ru": "Такая интерпретация неверна. → Я иначе читаю эти данные. → Я бы поставил под вопрос, поддерживает ли текст такую интерпретацию без дополнительного контекста."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Das ist falsch. → Ich glaube nicht, dass das ganz stimmt. → Ich würde infrage stellen, ob diese Schlussfolgerung aus den Belegen folgt.",
+        "example": "Das ist falsch. → Ich glaube nicht, dass das ganz stimmt. → **Ich würde infrage stellen, ob diese Schlussfolgerung aus den Belegen folgt.**",
+        "translation": "Это неправильно. → Не думаю, что это совсем верно. → Я бы поставил под вопрос, следует ли этот вывод из имеющихся данных.",
+        "examples": [
+          {
+            "text": "Diese Schätzung ist falsch. → Ich bin nicht sicher, ob diese Schätzung stimmt. → **Ich würde infrage stellen, ob die aktuellen Annahmen diese Schätzung tragen.**",
+            "translation_ru": "Эта оценка неверна. → Не уверен, что эта оценка точна. → Я бы поставил под вопрос, поддерживают ли текущие предпосылки такую оценку."
+          },
+          {
+            "text": "Ihre Erklärung funktioniert nicht. → Ich glaube nicht, dass das Ergebnis damit vollständig erklärt ist. → **Ich würde infrage stellen, ob der vorgeschlagene Mechanismus alle Beobachtungen erklärt.**",
+            "translation_ru": "Ваше объяснение не работает. → Не думаю, что оно полностью объясняет результат. → Я бы поставил под вопрос, объясняет ли предложенный механизм все наблюдения."
+          },
+          {
+            "text": "Das ist eine schlechte Idee. → Ich habe Vorbehalte gegen diese Option. → **Ich würde infrage stellen, ob der Nutzen das operative Risiko rechtfertigt.**",
+            "translation_ru": "Это плохая идея. → У меня есть сомнения по поводу этого варианта. → Я бы поставил под вопрос, оправдывают ли преимущества операционный риск."
+          },
+          {
+            "text": "Diese Interpretation ist falsch. → Ich lese die Belege anders. → **Ich würde infrage stellen, ob der Text diese Interpretation ohne zusätzlichen Kontext trägt.**",
+            "translation_ru": "Такая интерпретация неверна. → Я иначе читаю эти данные. → Я бы поставил под вопрос, поддерживает ли текст такую интерпретацию без дополнительного контекста."
+          }
+        ]
+      }
+    ],
+    "logic": "register shift for disagreement",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Register shifting expansion v2."
+    }
+  },
+  {
+    "id": "XPRREG005",
+    "group_id": "REG",
+    "set_id": "REG",
+    "title_ru": "Неопределённость: не знаю → пока не уверен → недостаточно данных",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I don't know. → I'm not sure yet. → I don't have enough information to confirm that at this stage.",
+        "example": "I don't know. → I'm not sure yet. → **I don't have enough information to confirm that at this stage.**",
+        "translation": "Не знаю. → Пока не уверен. → На данном этапе у меня недостаточно информации, чтобы это подтвердить.",
+        "examples": [
+          {
+            "text": "I don't know when it will ship. → I'm not sure about the shipping date yet. → **I don't have enough information to confirm the shipping date at this stage.**",
+            "translation_ru": "Не знаю, когда это отправят. → Пока не уверен в дате отправки. → На данном этапе у меня недостаточно информации, чтобы подтвердить дату отправки."
+          },
+          {
+            "text": "I don't know if the treatment helped. → I'm not sure yet whether it helped. → **We don't have enough follow-up data to confirm the effect yet.**",
+            "translation_ru": "Не знаю, помогло ли лечение. → Пока не уверен, помогло ли оно. → Пока у нас недостаточно данных наблюдения, чтобы подтвердить эффект."
+          },
+          {
+            "text": "I don't know who owns this step. → I'm not sure who owns this step yet. → **The current process documentation does not identify a clear owner for this step.**",
+            "translation_ru": "Не знаю, кто отвечает за этот шаг. → Пока не уверен, кто за него отвечает. → В текущей документации процесса нет явно указанного ответственного за этот шаг."
+          },
+          {
+            "text": "I don't know whether the trend is real. → I'm not sure yet whether the trend is stable. → **The sample is still too small to confirm a persistent trend.**",
+            "translation_ru": "Не знаю, реален ли этот тренд. → Пока не уверен, стабилен ли он. → Выборка всё ещё слишком мала, чтобы подтвердить устойчивый тренд."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → Mir fehlen derzeit genügend Informationen, um das zu bestätigen.",
+        "example": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → **Mir fehlen derzeit genügend Informationen, um das zu bestätigen.**",
+        "translation": "Не знаю. → Пока не уверен. → На данном этапе у меня недостаточно информации, чтобы это подтвердить.",
+        "examples": [
+          {
+            "text": "Ich weiß nicht, wann es versendet wird. → Beim Versanddatum bin ich mir noch nicht sicher. → **Mir fehlen derzeit genügend Informationen, um das Versanddatum zu bestätigen.**",
+            "translation_ru": "Не знаю, когда это отправят. → Пока не уверен в дате отправки. → На данном этапе у меня недостаточно информации, чтобы подтвердить дату отправки."
+          },
+          {
+            "text": "Ich weiß nicht, ob die Behandlung geholfen hat. → Ich bin mir noch nicht sicher, ob sie geholfen hat. → **Uns fehlen noch genügend Verlaufsdaten, um die Wirkung zu bestätigen.**",
+            "translation_ru": "Не знаю, помогло ли лечение. → Пока не уверен, помогло ли оно. → Пока у нас недостаточно данных наблюдения, чтобы подтвердить эффект."
+          },
+          {
+            "text": "Ich weiß nicht, wer für diesen Schritt zuständig ist. → Ich bin mir bei der Zuständigkeit noch nicht sicher. → **Die aktuelle Prozessdokumentation nennt für diesen Schritt keine eindeutige verantwortliche Person.**",
+            "translation_ru": "Не знаю, кто отвечает за этот шаг. → Пока не уверен, кто за него отвечает. → В текущей документации процесса нет явно указанного ответственного за этот шаг."
+          },
+          {
+            "text": "Ich weiß nicht, ob der Trend echt ist. → Ich bin mir noch nicht sicher, ob der Trend stabil ist. → **Die Stichprobe ist noch zu klein, um einen dauerhaften Trend zu bestätigen.**",
+            "translation_ru": "Не знаю, реален ли этот тренд. → Пока не уверен, стабилен ли он. → Выборка всё ещё слишком мала, чтобы подтвердить устойчивый тренд."
+          }
+        ]
+      }
+    ],
+    "logic": "register shift for uncertainty",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Register shifting expansion v2."
+    }
+  },
+  {
+    "id": "XPRREG006",
+    "group_id": "REG",
+    "set_id": "REG",
+    "title_ru": "Исправление: прямое замечание → мягкая нейтральная формулировка",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "You missed [X]. → I think [X] may have been missed. → It appears that [X] has not yet been included.",
+        "example": "You missed the attachment. → I think the attachment may have been missed. → **It appears that the attachment has not yet been included.**",
+        "translation": "Вы забыли вложение. → Кажется, вложение могли упустить. → Похоже, вложение пока не добавлено.",
+        "examples": [
+          {
+            "text": "You missed the tax line. → I think the tax line may have been missed. → **It appears that the tax line has not yet been included in the total.**",
+            "translation_ru": "Вы пропустили строку налога. → Кажется, строку налога могли упустить. → Похоже, строка налога пока не включена в итоговую сумму."
+          },
+          {
+            "text": "You forgot the German version. → I think the German version may have been missed. → **It appears that the German version has not yet been added to the release.**",
+            "translation_ru": "Вы забыли немецкую версию. → Кажется, немецкую версию могли упустить. → Похоже, немецкая версия пока не добавлена в релиз."
+          },
+          {
+            "text": "You skipped the consent step. → I think the consent step may have been missed. → **It appears that the consent step has not yet been completed.**",
+            "translation_ru": "Вы пропустили шаг согласия. → Кажется, этот шаг могли упустить. → Похоже, шаг согласия пока не выполнен."
+          },
+          {
+            "text": "You left out the source. → I think the source may have been missed. → **It appears that the supporting source has not yet been cited.**",
+            "translation_ru": "Вы не указали источник. → Кажется, источник могли упустить. → Похоже, подтверждающий источник пока не процитирован."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Sie haben [X] vergessen. → Ich glaube, [X] wurde möglicherweise übersehen. → Es scheint, dass [X] noch nicht aufgenommen wurde.",
+        "example": "Sie haben den Anhang vergessen. → Ich glaube, der Anhang wurde möglicherweise übersehen. → **Es scheint, dass der Anhang noch nicht beigefügt wurde.**",
+        "translation": "Вы забыли вложение. → Кажется, вложение могли упустить. → Похоже, вложение пока не добавлено.",
+        "examples": [
+          {
+            "text": "Sie haben die Steuerzeile vergessen. → Ich glaube, die Steuerzeile wurde möglicherweise übersehen. → **Es scheint, dass die Steuerzeile noch nicht in die Gesamtsumme aufgenommen wurde.**",
+            "translation_ru": "Вы пропустили строку налога. → Кажется, строку налога могли упустить. → Похоже, строка налога пока не включена в итоговую сумму."
+          },
+          {
+            "text": "Sie haben die deutsche Version vergessen. → Ich glaube, die deutsche Version wurde möglicherweise übersehen. → **Es scheint, dass die deutsche Version noch nicht in das Release aufgenommen wurde.**",
+            "translation_ru": "Вы забыли немецкую версию. → Кажется, немецкую версию могли упустить. → Похоже, немецкая версия пока не добавлена в релиз."
+          },
+          {
+            "text": "Sie haben den Zustimmungsschritt übersprungen. → Ich glaube, der Zustimmungsschritt wurde möglicherweise übersehen. → **Es scheint, dass der Zustimmungsschritt noch nicht abgeschlossen wurde.**",
+            "translation_ru": "Вы пропустили шаг согласия. → Кажется, этот шаг могли упустить. → Похоже, шаг согласия пока не выполнен."
+          },
+          {
+            "text": "Sie haben die Quelle weggelassen. → Ich glaube, die Quelle wurde möglicherweise übersehen. → **Es scheint, dass die unterstützende Quelle noch nicht zitiert wurde.**",
+            "translation_ru": "Вы не указали источник. → Кажется, источник могли упустить. → Похоже, подтверждающий источник пока не процитирован."
+          }
+        ]
+      }
+    ],
+    "logic": "register shift for correction",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Register shifting expansion v2."
+    }
+  },
+  {
+    "id": "XPRRTR004",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "title_ru": "Правильный предлог после устойчивого управления",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ depend from [X] → ✓ depend on [X]",
+        "example": "❌ The result depends from the input. → ✓ The result **depends on the input**.",
+        "translation": "Результат зависит от входных данных.",
+        "examples": [
+          {
+            "text": "❌ It depends from the weather. → ✓ It **depends on the weather**.",
+            "translation_ru": "Это зависит от погоды."
+          },
+          {
+            "text": "❌ The fee depends from the room type. → ✓ The fee **depends on the room type**.",
+            "translation_ru": "Стоимость зависит от типа номера."
+          },
+          {
+            "text": "❌ Success depends from one person. → ✓ Success **depends on more than one person**.",
+            "translation_ru": "Успех зависит не от одного человека."
+          },
+          {
+            "text": "❌ The decision will depend from the test result. → ✓ The decision **will depend on the test result**.",
+            "translation_ru": "Решение будет зависеть от результата теста."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ interessiert in [X] → ✓ interessiert an [X + Dativ]",
+        "example": "❌ Ich bin interessiert in dem Projekt. → ✓ Ich bin **an dem Projekt interessiert**.",
+        "translation": "Я заинтересован в проекте.",
+        "examples": [
+          {
+            "text": "❌ Sie ist interessiert in neuen Methoden. → ✓ Sie ist **an neuen Methoden interessiert**.",
+            "translation_ru": "Она интересуется новыми методами."
+          },
+          {
+            "text": "❌ Wir sind interessiert in einer langfristigen Partnerschaft. → ✓ Wir sind **an einer langfristigen Partnerschaft interessiert**.",
+            "translation_ru": "Мы заинтересованы в долгосрочном партнёрстве."
+          },
+          {
+            "text": "❌ Er ist nicht interessiert in Details. → ✓ Er ist nicht **an Details interessiert**.",
+            "translation_ru": "Он не интересуется деталями."
+          },
+          {
+            "text": "❌ Die Kundin war interessiert in dem günstigeren Modell. → ✓ Die Kundin war **an dem günstigeren Modell interessiert**.",
+            "translation_ru": "Клиентка интересовалась более дешёвой моделью."
+          }
+        ]
+      }
+    ],
+    "logic": "transfer correction for prepositional government",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Russian-speaker transfer expansion v2."
+    }
+  },
+  {
+    "id": "XPRRTR005",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "title_ru": "Не переносить управление русского глагола на английский или немецкий",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ a question to [someone] → ✓ a question for [someone]",
+        "example": "❌ I have a question to you. → ✓ I **have a question for you**.",
+        "translation": "У меня к вам вопрос.",
+        "examples": [
+          {
+            "text": "❌ There is one question to the vendor. → ✓ There is **one question for the vendor**.",
+            "translation_ru": "К поставщику есть один вопрос."
+          },
+          {
+            "text": "❌ I prepared three questions to the interviewer. → ✓ I prepared **three questions for the interviewer**.",
+            "translation_ru": "Я подготовил три вопроса для интервьюера."
+          },
+          {
+            "text": "❌ Do you have any questions to me? → ✓ Do you have **any questions for me**?",
+            "translation_ru": "У вас есть ко мне вопросы?"
+          },
+          {
+            "text": "❌ We sent a follow-up question to them for answer. → ✓ We **sent them a follow-up question**.",
+            "translation_ru": "Мы отправили им дополнительный вопрос."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ auf jemanden warten ohne Präposition → ✓ auf [jemanden + Akkusativ] warten",
+        "example": "❌ Ich warte dich unten. → ✓ Ich **warte unten auf dich**.",
+        "translation": "Я жду тебя внизу.",
+        "examples": [
+          {
+            "text": "❌ Wir warten den Bus. → ✓ Wir **warten auf den Bus**.",
+            "translation_ru": "Мы ждём автобус."
+          },
+          {
+            "text": "❌ Sie wartet eine Antwort. → ✓ Sie **wartet auf eine Antwort**.",
+            "translation_ru": "Она ждёт ответа."
+          },
+          {
+            "text": "❌ Ich habe zwanzig Minuten ihn gewartet. → ✓ Ich habe zwanzig Minuten **auf ihn gewartet**.",
+            "translation_ru": "Я ждал его двадцать минут."
+          },
+          {
+            "text": "❌ Die Kunden warten die neue Version. → ✓ Die Kunden **warten auf die neue Version**.",
+            "translation_ru": "Клиенты ждут новую версию."
+          }
+        ]
+      }
+    ],
+    "logic": "transfer correction for verb complements",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Russian-speaker transfer expansion v2."
+    }
+  },
+  {
+    "id": "XPRRTR006",
+    "group_id": "RTR",
+    "set_id": "RTR",
+    "title_ru": "Не делать неисчисляемые слова множественными и не терять немецкий дательный",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "❌ informations / advices → ✓ information / advice",
+        "example": "❌ I need more informations and advices. → ✓ I need **more information and some advice**.",
+        "translation": "Мне нужно больше информации и несколько советов.",
+        "examples": [
+          {
+            "text": "❌ She gave me useful advices. → ✓ She gave me **useful advice**.",
+            "translation_ru": "Она дала мне полезный совет."
+          },
+          {
+            "text": "❌ We collected several important informations. → ✓ We collected **several important pieces of information**.",
+            "translation_ru": "Мы собрали несколько важных сведений."
+          },
+          {
+            "text": "❌ Can you send the latest informations? → ✓ Can you send **the latest information**?",
+            "translation_ru": "Можете прислать последнюю информацию?"
+          },
+          {
+            "text": "❌ He asked for an advice about the contract. → ✓ He asked for **advice about the contract**.",
+            "translation_ru": "Он попросил совета по поводу договора."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "❌ helfen + Akkusativ → ✓ helfen + Dativ",
+        "example": "❌ Kannst du mich mit dem Bericht helfen? → ✓ Kannst du **mir mit dem Bericht helfen**?",
+        "translation": "Можешь помочь мне с отчётом?",
+        "examples": [
+          {
+            "text": "❌ Sie hat ihn bei der Bewerbung geholfen. → ✓ Sie hat **ihm bei der Bewerbung geholfen**.",
+            "translation_ru": "Она помогла ему с заявлением."
+          },
+          {
+            "text": "❌ Das Beispiel hilft die Lernenden. → ✓ Das Beispiel **hilft den Lernenden**.",
+            "translation_ru": "Этот пример помогает учащимся."
+          },
+          {
+            "text": "❌ Können Sie uns helfen? → ✓ Können Sie **uns helfen**?",
+            "translation_ru": "Можете нам помочь?"
+          },
+          {
+            "text": "❌ Die Checkliste hat die neue Kollegin geholfen. → ✓ Die Checkliste hat **der neuen Kollegin geholfen**.",
+            "translation_ru": "Чек-лист помог новой коллеге."
+          }
+        ]
+      }
+    ],
+    "logic": "transfer correction for countability and case government",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Russian-speaker transfer expansion v2."
+    }
+  },
+  {
+    "id": "XPRTRN004",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "title_ru": "Придаточное уступки → компактная конструкция с despite / trotz",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "Although [clause], [Y]. → Despite [noun or -ing], [Y].",
+        "example": "Although **the budget was tight**, we kept the pilot running. → **Despite the tight budget**, we kept the pilot running.",
+        "translation": "Хотя бюджет был ограничен, мы продолжили пилот. → Несмотря на ограниченный бюджет, мы продолжили пилот.",
+        "examples": [
+          {
+            "text": "Although **it was raining heavily**, the race continued. → **Despite the heavy rain**, the race continued.",
+            "translation_ru": "Хотя шёл сильный дождь, гонка продолжилась. → Несмотря на сильный дождь, гонка продолжилась."
+          },
+          {
+            "text": "Although **she had little experience**, she handled the negotiation calmly. → **Despite having little experience**, she handled the negotiation calmly.",
+            "translation_ru": "Хотя у неё было мало опыта, она спокойно провела переговоры. → Несмотря на небольшой опыт, она спокойно провела переговоры."
+          },
+          {
+            "text": "Although **the first test failed**, the team did not abandon the approach. → **Despite the first test failing**, the team did not abandon the approach.",
+            "translation_ru": "Хотя первый тест провалился, команда не отказалась от подхода. → Несмотря на провал первого теста, команда не отказалась от подхода."
+          },
+          {
+            "text": "Although **the apartment is near the centre**, the street is surprisingly quiet. → **Despite its central location**, the street is surprisingly quiet.",
+            "translation_ru": "Хотя квартира близко к центру, улица удивительно тихая. → Несмотря на центральное расположение, улица удивительно тихая."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Obwohl [Nebensatz], [Y]. → Trotz [Nomen], [Y].",
+        "example": "Obwohl **das Budget knapp war**, führten wir den Pilotversuch fort. → **Trotz des knappen Budgets** führten wir den Pilotversuch fort.",
+        "translation": "Хотя бюджет был ограничен, мы продолжили пилот. → Несмотря на ограниченный бюджет, мы продолжили пилот.",
+        "examples": [
+          {
+            "text": "Obwohl **es stark regnete**, wurde das Rennen fortgesetzt. → **Trotz des starken Regens** wurde das Rennen fortgesetzt.",
+            "translation_ru": "Хотя шёл сильный дождь, гонка продолжилась. → Несмотря на сильный дождь, гонка продолжилась."
+          },
+          {
+            "text": "Obwohl **sie wenig Erfahrung hatte**, führte sie die Verhandlung ruhig. → **Trotz ihrer geringen Erfahrung** führte sie die Verhandlung ruhig.",
+            "translation_ru": "Хотя у неё было мало опыта, она спокойно провела переговоры. → Несмотря на небольшой опыт, она спокойно провела переговоры."
+          },
+          {
+            "text": "Obwohl **der erste Test scheiterte**, gab das Team den Ansatz nicht auf. → **Trotz des gescheiterten ersten Tests** gab das Team den Ansatz nicht auf.",
+            "translation_ru": "Хотя первый тест провалился, команда не отказалась от подхода. → Несмотря на провал первого теста, команда не отказалась от подхода."
+          },
+          {
+            "text": "Obwohl **die Wohnung nahe am Zentrum liegt**, ist die Straße erstaunlich ruhig. → **Trotz der zentralen Lage** ist die Straße erstaunlich ruhig.",
+            "translation_ru": "Хотя квартира близко к центру, улица удивительно тихая. → Несмотря на центральное расположение, улица удивительно тихая."
+          }
+        ]
+      }
+    ],
+    "logic": "clause-to-phrase reformulation",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Transformation practice expansion v2."
+    }
+  },
+  {
+    "id": "XPRTRN005",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "title_ru": "Только тогда понял → усиление через it wasn't until / erst als",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "I only realised [X] when [Y]. → It wasn't until [Y] that I realised [X].",
+        "example": "I only realised **how noisy the fan was** when I switched it off. → **It wasn't until I switched it off that I realised how noisy the fan was.**",
+        "translation": "Я понял, насколько шумел вентилятор, только когда выключил его. → Только после выключения я понял, насколько он шумел.",
+        "examples": [
+          {
+            "text": "I only realised **the export was incomplete** when the client opened it. → **It wasn't until the client opened the export that I realised it was incomplete.**",
+            "translation_ru": "Я понял, что экспорт неполный, только когда клиент его открыл. → Только когда клиент открыл экспорт, я понял, что он неполный."
+          },
+          {
+            "text": "She only realised **how tired she was** when the holiday started. → **It wasn't until the holiday started that she realised how tired she was.**",
+            "translation_ru": "Она поняла, насколько устала, только когда начался отпуск. → Только с началом отпуска она поняла, насколько устала."
+          },
+          {
+            "text": "We only realised **the road was closed** when we reached the village. → **It wasn't until we reached the village that we realised the road was closed.**",
+            "translation_ru": "Мы поняли, что дорога закрыта, только когда добрались до деревни. → Только добравшись до деревни, мы поняли, что дорога закрыта."
+          },
+          {
+            "text": "He only realised **the two metrics measured different things** when he compared their definitions. → **It wasn't until he compared the definitions that he realised the metrics measured different things.**",
+            "translation_ru": "Он понял, что две метрики измеряют разные вещи, только когда сравнил их определения. → Только сравнив определения, он понял, что метрики измеряют разное."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Erst als [Y], wurde mir [X] klar.",
+        "example": "**Erst als ich den Lüfter ausschaltete, wurde mir klar, wie laut er gewesen war.**",
+        "translation": "Только после выключения я понял, насколько шумел вентилятор.",
+        "examples": [
+          {
+            "text": "**Erst als der Kunde den Export öffnete, wurde mir klar, dass er unvollständig war.**",
+            "translation_ru": "Только когда клиент открыл экспорт, я понял, что он неполный."
+          },
+          {
+            "text": "**Erst als der Urlaub begann, wurde ihr klar, wie müde sie war.**",
+            "translation_ru": "Только с началом отпуска она поняла, насколько устала."
+          },
+          {
+            "text": "**Erst als wir das Dorf erreichten, wurde uns klar, dass die Straße gesperrt war.**",
+            "translation_ru": "Только добравшись до деревни, мы поняли, что дорога закрыта."
+          },
+          {
+            "text": "**Erst als er die Definitionen verglich, wurde ihm klar, dass die beiden Kennzahlen unterschiedliche Dinge messen.**",
+            "translation_ru": "Только сравнив определения, он понял, что две метрики измеряют разные вещи."
+          }
+        ]
+      }
+    ],
+    "logic": "focus transformation with delayed realization",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Transformation practice expansion v2."
+    }
+  },
+  {
+    "id": "XPRTRN006",
+    "group_id": "TRN",
+    "set_id": "TRN",
+    "title_ru": "Нереальное условие в прошлом → компактная конструкция без if",
+    "langs": [
+      {
+        "lang": "en",
+        "formula": "If it hadn't been for [X], [Y] would have happened. → Without [X], [Y] would have happened.",
+        "example": "If it hadn't been for **the backup**, we would have lost the file. → **Without the backup, we would have lost the file.**",
+        "translation": "Если бы не резервная копия, мы потеряли бы файл. → Без резервной копии мы потеряли бы файл.",
+        "examples": [
+          {
+            "text": "If it hadn't been for **a neighbour's warning**, we would have driven into the flooded road. → **Without the neighbour's warning, we would have driven into the flooded road.**",
+            "translation_ru": "Если бы не предупреждение соседа, мы бы выехали на затопленную дорогу. → Без предупреждения соседа мы бы выехали на затопленную дорогу."
+          },
+          {
+            "text": "If it hadn't been for **the second reviewer**, the mismatch would have reached production. → **Without the second reviewer, the mismatch would have reached production.**",
+            "translation_ru": "Если бы не второй проверяющий, несоответствие дошло бы до продуктивной системы. → Без второго проверяющего несоответствие дошло бы до продуктивной системы."
+          },
+          {
+            "text": "If it hadn't been for **her flexible schedule**, she would have missed the appointment. → **Without her flexible schedule, she would have missed the appointment.**",
+            "translation_ru": "Если бы не её гибкий график, она бы пропустила приём. → Без гибкого графика она бы пропустила приём."
+          },
+          {
+            "text": "If it hadn't been for **the pilot data**, we would have chosen the more complicated design. → **Without the pilot data, we would have chosen the more complicated design.**",
+            "translation_ru": "Если бы не данные пилота, мы бы выбрали более сложный дизайн. → Без данных пилота мы бы выбрали более сложный дизайн."
+          }
+        ]
+      },
+      {
+        "lang": "de",
+        "formula": "Wenn [X] nicht gewesen wäre, hätte [Y] ... → Ohne [X] hätte [Y] ...",
+        "example": "Wenn **die Sicherungskopie** nicht gewesen wäre, hätten wir die Datei verloren. → **Ohne die Sicherungskopie hätten wir die Datei verloren.**",
+        "translation": "Если бы не резервная копия, мы потеряли бы файл. → Без резервной копии мы потеряли бы файл.",
+        "examples": [
+          {
+            "text": "Wenn **die Warnung des Nachbarn** nicht gewesen wäre, wären wir auf die überflutete Straße gefahren. → **Ohne die Warnung des Nachbarn wären wir auf die überflutete Straße gefahren.**",
+            "translation_ru": "Если бы не предупреждение соседа, мы бы выехали на затопленную дорогу. → Без предупреждения соседа мы бы выехали на затопленную дорогу."
+          },
+          {
+            "text": "Wenn **die zweite Prüfung** nicht gewesen wäre, wäre die Abweichung bis ins Produktivsystem gelangt. → **Ohne die zweite Prüfung wäre die Abweichung bis ins Produktivsystem gelangt.**",
+            "translation_ru": "Если бы не второй проверяющий, несоответствие дошло бы до продуктивной системы. → Без второго проверяющего несоответствие дошло бы до продуктивной системы."
+          },
+          {
+            "text": "Wenn **ihr flexibler Zeitplan** nicht gewesen wäre, hätte sie den Termin verpasst. → **Ohne ihren flexiblen Zeitplan hätte sie den Termin verpasst.**",
+            "translation_ru": "Если бы не её гибкий график, она бы пропустила приём. → Без гибкого графика она бы пропустила приём."
+          },
+          {
+            "text": "Wenn **die Daten aus dem Pilotversuch** nicht gewesen wären, hätten wir das kompliziertere Design gewählt. → **Ohne die Daten aus dem Pilotversuch hätten wir das kompliziertere Design gewählt.**",
+            "translation_ru": "Если бы не данные пилота, мы бы выбрали более сложный дизайн. → Без данных пилота мы бы выбрали более сложный дизайн."
+          }
+        ]
+      }
+    ],
+    "logic": "counterfactual condensation",
+    "gen": {
+      "status": "curated",
+      "iterations": 1,
+      "lastGeneratedAt": "2026-09-19",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "notes": "Transformation practice expansion v2."
+    }
+  }
+]
