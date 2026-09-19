@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFS",
+  "patterns": [
+    {
+      "id": "GFS001",
+      "set_id": "GFS",
+      "pattern": "The main reason the rollout is taking longer is that several interfaces still need testing.",
+      "group_title": "The main reason [X] is that [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "The main reason [X] is that [Y]",
+        "form": "The main reason + clause + is that + clause",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: главная причина … в том, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The main reason + clause + is that + clause",
+          "example": "The main reason the rollout is taking longer is that several interfaces still need testing.",
+          "translation": "Главная причина задержки внедрения в том, что несколько интерфейсов всё ещё нужно протестировать.",
+          "examples": [
+            {
+              "text": "The main reason the bedroom stays cool is that it faces north.",
+              "translation_ru": "Главная причина прохлады в спальне в том, что окна выходят на север."
+            },
+            {
+              "text": "The main reason I remember these phrases is that I use them in my own examples.",
+              "translation_ru": "Главная причина, почему я запоминаю эти фразы, в том, что использую их в собственных примерах."
+            },
+            {
+              "text": "The main reason the laptop gets hot is that the vents are partly blocked.",
+              "translation_ru": "Главная причина нагрева ноутбука в том, что вентиляционные отверстия частично перекрыты."
+            },
+            {
+              "text": "The main reason we chose the later train is that it has a much safer connection.",
+              "translation_ru": "Главная причина выбора более позднего поезда в том, что у него намного надёжнее пересадка."
+            },
+            {
+              "text": "The main reason the estimate changed is that the new sample includes smaller firms.",
+              "translation_ru": "Главная причина изменения оценки в том, что новая выборка включает более мелкие компании."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der Hauptgrund dafür, dass + clause, ist, dass + clause",
+          "example": "Der Hauptgrund dafür, dass die Einführung länger dauert, ist, dass mehrere Schnittstellen noch getestet werden müssen.",
+          "translation": "Главная причина задержки внедрения в том, что несколько интерфейсов всё ещё нужно протестировать.",
+          "examples": [
+            {
+              "text": "Der Hauptgrund dafür, dass das Schlafzimmer kühl bleibt, ist, dass es nach Norden ausgerichtet ist.",
+              "translation_ru": "Главная причина прохлады в спальне в том, что окна выходят на север."
+            },
+            {
+              "text": "Der Hauptgrund dafür, dass ich mir diese Wendungen merke, ist, dass ich sie in eigenen Beispielen verwende.",
+              "translation_ru": "Главная причина, почему я запоминаю эти фразы, в том, что использую их в собственных примерах."
+            },
+            {
+              "text": "Der Hauptgrund dafür, dass der Laptop heiß wird, ist, dass die Lüftungsschlitze teilweise blockiert sind.",
+              "translation_ru": "Главная причина нагрева ноутбука в том, что вентиляционные отверстия частично перекрыты."
+            },
+            {
+              "text": "Der Hauptgrund dafür, dass wir den späteren Zug gewählt haben, ist, dass die Umsteigezeit deutlich sicherer ist.",
+              "translation_ru": "Главная причина выбора более позднего поезда в том, что у него намного надёжнее пересадка."
+            },
+            {
+              "text": "Der Hauptgrund dafür, dass sich die Schätzung geändert hat, ist, dass die neue Stichprobe kleinere Unternehmen umfasst.",
+              "translation_ru": "Главная причина изменения оценки в том, что новая выборка включает более мелкие компании."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Главная причина … в том, что …",
+      "title_en": "The main reason [X] is that [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS002",
+      "set_id": "GFS",
+      "pattern": "One consequence of delaying the decision is that the migration window becomes much narrower.",
+      "group_title": "One consequence of [X] is that [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "One consequence of [X] is that [Y]",
+        "form": "One consequence of + noun/-ing + is that + clause",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: одно из последствий … состоит в том, что …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "One consequence of + noun/-ing + is that + clause",
+          "example": "One consequence of delaying the decision is that the migration window becomes much narrower.",
+          "translation": "Одно из последствий задержки решения состоит в том, что окно миграции становится намного уже.",
+          "examples": [
+            {
+              "text": "One consequence of living on the top floor is that the flat warms up faster in summer.",
+              "translation_ru": "Одно из последствий жизни на верхнем этаже в том, что летом квартира быстрее нагревается."
+            },
+            {
+              "text": "One consequence of practising aloud is that weak transitions become easier to notice.",
+              "translation_ru": "Одно из последствий практики вслух в том, что слабые переходы становится легче замечать."
+            },
+            {
+              "text": "One consequence of using a brighter screen is that battery life drops noticeably.",
+              "translation_ru": "Одно из последствий более яркого экрана в том, что время работы от батареи заметно сокращается."
+            },
+            {
+              "text": "One consequence of travelling in the shoulder season is that some attractions have shorter opening hours.",
+              "translation_ru": "Одно из последствий поездки в межсезонье в том, что некоторые достопримечательности работают меньше."
+            },
+            {
+              "text": "One consequence of excluding incomplete cases is that the remaining sample may no longer be representative.",
+              "translation_ru": "Одно из последствий исключения неполных случаев в том, что оставшаяся выборка может стать нерепрезентативной."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Eine Folge von + noun/dative + ist, dass + clause",
+          "example": "Eine Folge der verzögerten Entscheidung ist, dass das Zeitfenster für die Migration deutlich kleiner wird.",
+          "translation": "Одно из последствий задержки решения состоит в том, что окно миграции становится намного уже.",
+          "examples": [
+            {
+              "text": "Eine Folge des Wohnens im obersten Stockwerk ist, dass sich die Wohnung im Sommer schneller aufheizt.",
+              "translation_ru": "Одно из последствий жизни на верхнем этаже в том, что летом квартира быстрее нагревается."
+            },
+            {
+              "text": "Eine Folge des lauten Übens ist, dass schwache Übergänge leichter auffallen.",
+              "translation_ru": "Одно из последствий практики вслух в том, что слабые переходы становится легче замечать."
+            },
+            {
+              "text": "Eine Folge einer höheren Bildschirmhelligkeit ist, dass die Akkulaufzeit merklich sinkt.",
+              "translation_ru": "Одно из последствий более яркого экрана в том, что время работы от батареи заметно сокращается."
+            },
+            {
+              "text": "Eine Folge des Reisens in der Nebensaison ist, dass manche Sehenswürdigkeiten kürzere Öffnungszeiten haben.",
+              "translation_ru": "Одно из последствий поездки в межсезонье в том, что некоторые достопримечательности работают меньше."
+            },
+            {
+              "text": "Eine Folge des Ausschlusses unvollständiger Fälle ist, dass die verbleibende Stichprobe möglicherweise nicht mehr repräsentativ ist.",
+              "translation_ru": "Одно из последствий исключения неполных случаев в том, что оставшаяся выборка может стать нерепрезентативной."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Одно из последствий … состоит в том, что …",
+      "title_en": "One consequence of [X] is that [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS003",
+      "set_id": "GFS",
+      "pattern": "Repeated manual corrections can lead to inconsistent customer records.",
+      "group_title": "This can lead to [X]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "This can lead to [X]",
+        "form": "This can lead to + noun/-ing",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: это может привести к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "This can lead to + noun/-ing",
+          "example": "Repeated manual corrections can lead to inconsistent customer records.",
+          "translation": "Повторные ручные исправления могут привести к несогласованным клиентским данным.",
+          "examples": [
+            {
+              "text": "Poor ventilation can lead to mould behind large furniture.",
+              "translation_ru": "Плохая вентиляция может привести к плесени за крупной мебелью."
+            },
+            {
+              "text": "Avoiding difficult questions can lead to shallow speaking practice.",
+              "translation_ru": "Избегание сложных вопросов может привести к поверхностной разговорной практике."
+            },
+            {
+              "text": "Charging at high temperatures can lead to faster battery degradation.",
+              "translation_ru": "Зарядка при высокой температуре может привести к ускоренному износу батареи."
+            },
+            {
+              "text": "A short transfer can lead to an unexpected overnight stay when the first train is delayed.",
+              "translation_ru": "Короткая пересадка может привести к незапланированной ночёвке при задержке первого поезда."
+            },
+            {
+              "text": "Optimising on the test set can lead to overly optimistic performance estimates.",
+              "translation_ru": "Оптимизация на тестовой выборке может привести к чрезмерно оптимистичной оценке качества."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Das kann zu + dative + führen",
+          "example": "Wiederholte manuelle Korrekturen können zu inkonsistenten Kundendaten führen.",
+          "translation": "Повторные ручные исправления могут привести к несогласованным клиентским данным.",
+          "examples": [
+            {
+              "text": "Schlechte Lüftung kann zu Schimmel hinter großen Möbeln führen.",
+              "translation_ru": "Плохая вентиляция может привести к плесени за крупной мебелью."
+            },
+            {
+              "text": "Das Vermeiden schwieriger Fragen kann zu oberflächlicher Sprechpraxis führen.",
+              "translation_ru": "Избегание сложных вопросов может привести к поверхностной разговорной практике."
+            },
+            {
+              "text": "Laden bei hohen Temperaturen kann zu einer schnelleren Alterung des Akkus führen.",
+              "translation_ru": "Зарядка при высокой температуре может привести к ускоренному износу батареи."
+            },
+            {
+              "text": "Eine knappe Umsteigezeit kann bei Verspätung des ersten Zuges zu einer ungeplanten Übernachtung führen.",
+              "translation_ru": "Короткая пересадка может привести к незапланированной ночёвке при задержке первого поезда."
+            },
+            {
+              "text": "Die Optimierung auf dem Testsatz kann zu übermäßig optimistischen Leistungsschätzungen führen.",
+              "translation_ru": "Оптимизация на тестовой выборке может привести к чрезмерно оптимистичной оценке качества."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Это может привести к …",
+      "title_en": "This can lead to [X]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS004",
+      "set_id": "GFS",
+      "pattern": "Skipping peer review tends to result in avoidable defects reaching production.",
+      "group_title": "[X] tends to result in [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] tends to result in [Y]",
+        "form": "subject + tends to result in + noun/-ing",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … обычно приводит к …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + tends to result in + noun/-ing",
+          "example": "Skipping peer review tends to result in avoidable defects reaching production.",
+          "translation": "Пропуск взаимной проверки обычно приводит к тому, что предотвратимые ошибки доходят до продуктивной среды.",
+          "examples": [
+            {
+              "text": "Leaving windows closed all day tends to result in stale air by evening.",
+              "translation_ru": "Закрытые весь день окна обычно приводят к спертости воздуха к вечеру."
+            },
+            {
+              "text": "Learning words without context tends to result in weak recall during conversation.",
+              "translation_ru": "Заучивание слов без контекста обычно приводит к слабому воспроизведению в разговоре."
+            },
+            {
+              "text": "Running several heavy apps at once tends to result in thermal throttling on this machine.",
+              "translation_ru": "Одновременный запуск нескольких тяжёлых приложений обычно приводит на этом устройстве к снижению частоты из-за нагрева."
+            },
+            {
+              "text": "Booking the last connection of the day tends to result in fewer recovery options after a delay.",
+              "translation_ru": "Бронирование последней пересадки дня обычно оставляет меньше вариантов при задержке."
+            },
+            {
+              "text": "Using only successful cases tends to result in an inflated estimate of effectiveness.",
+              "translation_ru": "Использование только успешных случаев обычно приводит к завышенной оценке эффективности."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + führt häufig zu + dative / hat oft ... zur Folge",
+          "example": "Das Überspringen des Peer-Reviews führt häufig dazu, dass vermeidbare Fehler die Produktivumgebung erreichen.",
+          "translation": "Пропуск взаимной проверки обычно приводит к тому, что предотвратимые ошибки доходят до продуктивной среды.",
+          "examples": [
+            {
+              "text": "Den ganzen Tag geschlossene Fenster führen häufig zu abgestandener Luft am Abend.",
+              "translation_ru": "Закрытые весь день окна обычно приводят к спертости воздуха к вечеру."
+            },
+            {
+              "text": "Das Lernen von Wörtern ohne Kontext führt häufig zu schwachem Abruf im Gespräch.",
+              "translation_ru": "Заучивание слов без контекста обычно приводит к слабому воспроизведению в разговоре."
+            },
+            {
+              "text": "Mehrere anspruchsvolle Anwendungen gleichzeitig führen auf diesem Gerät häufig zu thermischer Drosselung.",
+              "translation_ru": "Одновременный запуск нескольких тяжёлых приложений обычно приводит на этом устройстве к снижению частоты из-за нагрева."
+            },
+            {
+              "text": "Die Buchung der letzten Verbindung des Tages hat bei Verspätungen oft weniger Ausweichmöglichkeiten zur Folge.",
+              "translation_ru": "Бронирование последней пересадки дня обычно оставляет меньше вариантов при задержке."
+            },
+            {
+              "text": "Die Verwendung nur erfolgreicher Fälle führt häufig zu einer überschätzten Wirksamkeit.",
+              "translation_ru": "Использование только успешных случаев обычно приводит к завышенной оценке эффективности."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… обычно приводит к …",
+      "title_en": "[X] tends to result in [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS005",
+      "set_id": "GFS",
+      "pattern": "The repeated delays stem largely from unclear ownership between the two teams.",
+      "group_title": "[X] stems largely from [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] stems largely from [Y]",
+        "form": "subject + stems largely from + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … во многом связано с …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + stems largely from + noun",
+          "example": "The repeated delays stem largely from unclear ownership between the two teams.",
+          "translation": "Повторные задержки во многом связаны с неясным распределением ответственности между двумя командами.",
+          "examples": [
+            {
+              "text": "The high heating bill stems largely from poor insulation around the windows.",
+              "translation_ru": "Высокий счёт за отопление во многом связан с плохой теплоизоляцией вокруг окон."
+            },
+            {
+              "text": "My hesitation in meetings stems largely from trying to formulate perfect sentences before speaking.",
+              "translation_ru": "Моя нерешительность на встречах во многом связана с попыткой сформулировать идеальное предложение до начала речи."
+            },
+            {
+              "text": "The weak Wi-Fi signal stems largely from the reinforced concrete wall between the rooms.",
+              "translation_ru": "Слабый Wi-Fi сигнал во многом связан с железобетонной стеной между комнатами."
+            },
+            {
+              "text": "The price difference stems largely from baggage and seat-selection fees.",
+              "translation_ru": "Разница в цене во многом связана с платой за багаж и выбор места."
+            },
+            {
+              "text": "The discrepancy stems largely from the fact that the two surveys sampled different populations.",
+              "translation_ru": "Расхождение во многом связано с тем, что два опроса охватывали разные группы населения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + ist größtenteils auf + accusative + zurückzuführen",
+          "example": "Die wiederholten Verzögerungen sind größtenteils auf unklare Zuständigkeiten zwischen den beiden Teams zurückzuführen.",
+          "translation": "Повторные задержки во многом связаны с неясным распределением ответственности между двумя командами.",
+          "examples": [
+            {
+              "text": "Die hohen Heizkosten sind größtenteils auf die schlechte Dämmung an den Fenstern zurückzuführen.",
+              "translation_ru": "Высокий счёт за отопление во многом связан с плохой теплоизоляцией вокруг окон."
+            },
+            {
+              "text": "Mein Zögern in Besprechungen ist größtenteils darauf zurückzuführen, dass ich vor dem Sprechen perfekte Sätze formulieren möchte.",
+              "translation_ru": "Моя нерешительность на встречах во многом связана с попыткой сформулировать идеальное предложение до начала речи."
+            },
+            {
+              "text": "Das schwache WLAN-Signal ist größtenteils auf die Stahlbetonwand zwischen den Räumen zurückzuführen.",
+              "translation_ru": "Слабый Wi-Fi сигнал во многом связан с железобетонной стеной между комнатами."
+            },
+            {
+              "text": "Der Preisunterschied ist größtenteils auf Gepäck- und Sitzplatzgebühren zurückzuführen.",
+              "translation_ru": "Разница в цене во многом связана с платой за багаж и выбор места."
+            },
+            {
+              "text": "Die Abweichung ist größtenteils darauf zurückzuführen, dass die beiden Umfragen unterschiedliche Populationen erfassten.",
+              "translation_ru": "Расхождение во многом связано с тем, что два опроса охватывали разные группы населения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… во многом связано с …",
+      "title_en": "[X] stems largely from [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS006",
+      "set_id": "GFS",
+      "pattern": "The increase in support tickets is partly driven by the new authentication flow.",
+      "group_title": "[X] is partly driven by [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] is partly driven by [Y]",
+        "form": "subject + is partly driven by + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … частично обусловлено …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + is partly driven by + noun",
+          "example": "The increase in support tickets is partly driven by the new authentication flow.",
+          "translation": "Рост обращений в поддержку частично обусловлен новым процессом аутентификации.",
+          "examples": [
+            {
+              "text": "Demand for smaller flats is partly driven by rising energy costs.",
+              "translation_ru": "Спрос на небольшие квартиры частично обусловлен ростом затрат на энергию."
+            },
+            {
+              "text": "Vocabulary growth is partly driven by how often learners retrieve words in meaningful contexts.",
+              "translation_ru": "Рост словарного запаса частично обусловлен тем, как часто учащиеся воспроизводят слова в осмысленном контексте."
+            },
+            {
+              "text": "Battery drain is partly driven by background syncing.",
+              "translation_ru": "Разряд батареи частично обусловлен фоновой синхронизацией."
+            },
+            {
+              "text": "Hotel prices are partly driven by major events in the city.",
+              "translation_ru": "Цены на отели частично обусловлены крупными мероприятиями в городе."
+            },
+            {
+              "text": "The observed gap is partly driven by differences in age and prior experience.",
+              "translation_ru": "Наблюдаемый разрыв частично обусловлен различиями в возрасте и предыдущем опыте."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + wird teilweise durch + accusative + bestimmt/getrieben",
+          "example": "Der Anstieg der Supportanfragen wird teilweise durch den neuen Anmeldeprozess verursacht.",
+          "translation": "Рост обращений в поддержку частично обусловлен новым процессом аутентификации.",
+          "examples": [
+            {
+              "text": "Die Nachfrage nach kleineren Wohnungen wird teilweise durch steigende Energiekosten bestimmt.",
+              "translation_ru": "Спрос на небольшие квартиры частично обусловлен ростом затрат на энергию."
+            },
+            {
+              "text": "Der Wortschatzzuwachs wird teilweise dadurch bestimmt, wie oft Lernende Wörter in sinnvollen Kontexten abrufen.",
+              "translation_ru": "Рост словарного запаса частично обусловлен тем, как часто учащиеся воспроизводят слова в осмысленном контексте."
+            },
+            {
+              "text": "Der Akkuverbrauch wird teilweise durch die Synchronisierung im Hintergrund verursacht.",
+              "translation_ru": "Разряд батареи частично обусловлен фоновой синхронизацией."
+            },
+            {
+              "text": "Die Hotelpreise werden teilweise durch Großveranstaltungen in der Stadt bestimmt.",
+              "translation_ru": "Цены на отели частично обусловлены крупными мероприятиями в городе."
+            },
+            {
+              "text": "Die beobachtete Lücke wird teilweise durch Unterschiede bei Alter und Vorerfahrung bestimmt.",
+              "translation_ru": "Наблюдаемый разрыв частично обусловлен различиями в возрасте и предыдущем опыте."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… частично обусловлено …",
+      "title_en": "[X] is partly driven by [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS007",
+      "set_id": "GFS",
+      "pattern": "Clear acceptance criteria contribute to fewer disputes during testing.",
+      "group_title": "[X] contributes to [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] contributes to [Y]",
+        "form": "subject + contributes to + noun/-ing",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … способствует …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + contributes to + noun/-ing",
+          "example": "Clear acceptance criteria contribute to fewer disputes during testing.",
+          "translation": "Чёткие критерии приёмки способствуют меньшему числу споров во время тестирования.",
+          "examples": [
+            {
+              "text": "Trees around the building contribute to cooler rooms in summer.",
+              "translation_ru": "Деревья вокруг здания способствуют более прохладной температуре летом."
+            },
+            {
+              "text": "Frequent paraphrasing contributes to more flexible speaking.",
+              "translation_ru": "Частое перефразирование способствует более гибкой речи."
+            },
+            {
+              "text": "A clean fan contributes to lower operating temperatures.",
+              "translation_ru": "Чистый вентилятор способствует более низкой рабочей температуре."
+            },
+            {
+              "text": "Good rail connections contribute to the town's popularity with weekend visitors.",
+              "translation_ru": "Хорошее железнодорожное сообщение способствует популярности города у туристов выходного дня."
+            },
+            {
+              "text": "Transparent assumptions contribute to more reproducible analysis.",
+              "translation_ru": "Прозрачные предположения способствуют лучшей воспроизводимости анализа."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + trägt zu + dative + bei",
+          "example": "Klare Abnahmekriterien tragen zu weniger Streitfällen während der Tests bei.",
+          "translation": "Чёткие критерии приёмки способствуют меньшему числу споров во время тестирования.",
+          "examples": [
+            {
+              "text": "Bäume rund um das Gebäude tragen im Sommer zu kühleren Räumen bei.",
+              "translation_ru": "Деревья вокруг здания способствуют более прохладной температуре летом."
+            },
+            {
+              "text": "Häufiges Paraphrasieren trägt zu flexiblerem Sprechen bei.",
+              "translation_ru": "Частое перефразирование способствует более гибкой речи."
+            },
+            {
+              "text": "Ein sauberer Lüfter trägt zu niedrigeren Betriebstemperaturen bei.",
+              "translation_ru": "Чистый вентилятор способствует более низкой рабочей температуре."
+            },
+            {
+              "text": "Gute Bahnverbindungen tragen zur Beliebtheit der Stadt bei Wochenendbesuchern bei.",
+              "translation_ru": "Хорошее железнодорожное сообщение способствует популярности города у туристов выходного дня."
+            },
+            {
+              "text": "Transparente Annahmen tragen zu besser reproduzierbaren Analysen bei.",
+              "translation_ru": "Прозрачные предположения способствуют лучшей воспроизводимости анализа."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… способствует …",
+      "title_en": "[X] contributes to [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS008",
+      "set_id": "GFS",
+      "pattern": "Duplicate processing accounts for much of the extra runtime.",
+      "group_title": "[X] accounts for much of [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] accounts for much of [Y]",
+        "form": "subject + accounts for much of + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … объясняет значительную часть …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + accounts for much of + noun",
+          "example": "Duplicate processing accounts for much of the extra runtime.",
+          "translation": "Повторная обработка объясняет значительную часть лишнего времени выполнения.",
+          "examples": [
+            {
+              "text": "Heating accounts for much of the building's winter energy use.",
+              "translation_ru": "Отопление объясняет значительную часть зимнего энергопотребления здания."
+            },
+            {
+              "text": "High-frequency verbs account for much of everyday conversation.",
+              "translation_ru": "Высокочастотные глаголы составляют значительную часть повседневной речи."
+            },
+            {
+              "text": "The display accounts for much of the tablet's power consumption.",
+              "translation_ru": "Экран объясняет значительную часть энергопотребления планшета."
+            },
+            {
+              "text": "Accommodation accounts for much of our travel budget.",
+              "translation_ru": "Жильё составляет значительную часть нашего бюджета поездки."
+            },
+            {
+              "text": "A small number of extreme cases account for much of the variance.",
+              "translation_ru": "Небольшое число экстремальных случаев объясняет значительную часть дисперсии."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + erklärt einen großen Teil von + dative / macht einen großen Teil aus",
+          "example": "Die doppelte Verarbeitung erklärt einen großen Teil der zusätzlichen Laufzeit.",
+          "translation": "Повторная обработка объясняет значительную часть лишнего времени выполнения.",
+          "examples": [
+            {
+              "text": "Die Heizung macht einen großen Teil des winterlichen Energieverbrauchs des Gebäudes aus.",
+              "translation_ru": "Отопление объясняет значительную часть зимнего энергопотребления здания."
+            },
+            {
+              "text": "Häufige Verben machen einen großen Teil der Alltagskommunikation aus.",
+              "translation_ru": "Высокочастотные глаголы составляют значительную часть повседневной речи."
+            },
+            {
+              "text": "Das Display macht einen großen Teil des Stromverbrauchs des Tablets aus.",
+              "translation_ru": "Экран объясняет значительную часть энергопотребления планшета."
+            },
+            {
+              "text": "Die Unterkunft macht einen großen Teil unseres Reisebudgets aus.",
+              "translation_ru": "Жильё составляет значительную часть нашего бюджета поездки."
+            },
+            {
+              "text": "Eine kleine Zahl extremer Fälle erklärt einen großen Teil der Varianz.",
+              "translation_ru": "Небольшое число экстремальных случаев объясняет значительную часть дисперсии."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… объясняет значительную часть …",
+      "title_en": "[X] accounts for much of [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS009",
+      "set_id": "GFS",
+      "pattern": "Higher usage is associated with better retention, but that does not establish causation.",
+      "group_title": "[X] is associated with [Y], but that does not establish causation",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] is associated with [Y], but that does not establish causation",
+        "form": "subject + is associated with + noun, but + clause",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … связано с …, но это не доказывает причинность."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + is associated with + noun, but + clause",
+          "example": "Higher usage is associated with better retention, but that does not establish causation.",
+          "translation": "Более частое использование связано с лучшим удержанием, но это не доказывает причинность.",
+          "examples": [
+            {
+              "text": "Living near green space is associated with higher satisfaction, but other factors may explain the link.",
+              "translation_ru": "Жизнь рядом с зелёными зонами связана с большей удовлетворённостью, но эту связь могут объяснять другие факторы."
+            },
+            {
+              "text": "More speaking practice is associated with higher fluency, but motivated learners may simply practise more.",
+              "translation_ru": "Больше разговорной практики связано с большей беглостью, но мотивированные учащиеся могут просто чаще заниматься."
+            },
+            {
+              "text": "Late-night screen use is associated with shorter sleep, but the relationship is not necessarily causal.",
+              "translation_ru": "Позднее использование экрана связано с более коротким сном, но связь не обязательно причинная."
+            },
+            {
+              "text": "Direct flights are associated with higher fares, but route demand also matters.",
+              "translation_ru": "Прямые рейсы связаны с более высокими тарифами, но важен и спрос на маршрут."
+            },
+            {
+              "text": "The feature is associated with lower churn, but that alone does not show that the feature caused the improvement.",
+              "translation_ru": "Функция связана с меньшим оттоком, но этого недостаточно, чтобы считать её причиной улучшения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + steht mit + dative + in Zusammenhang, aber + main clause",
+          "example": "Eine höhere Nutzung steht mit besserer Bindung in Zusammenhang, aber das belegt keine Kausalität.",
+          "translation": "Более частое использование связано с лучшим удержанием, но это не доказывает причинность.",
+          "examples": [
+            {
+              "text": "Das Wohnen in der Nähe von Grünflächen steht mit höherer Zufriedenheit in Zusammenhang, aber andere Faktoren können den Zusammenhang erklären.",
+              "translation_ru": "Жизнь рядом с зелёными зонами связана с большей удовлетворённостью, но эту связь могут объяснять другие факторы."
+            },
+            {
+              "text": "Mehr Sprechpraxis steht mit höherer Sprechflüssigkeit in Zusammenhang, aber motivierte Lernende üben möglicherweise einfach mehr.",
+              "translation_ru": "Больше разговорной практики связано с большей беглостью, но мотивированные учащиеся могут просто чаще заниматься."
+            },
+            {
+              "text": "Späte Bildschirmnutzung steht mit kürzerem Schlaf in Zusammenhang, aber der Zusammenhang ist nicht zwingend kausal.",
+              "translation_ru": "Позднее использование экрана связано с более коротким сном, но связь не обязательно причинная."
+            },
+            {
+              "text": "Direktflüge stehen mit höheren Preisen in Zusammenhang, aber auch die Streckennachfrage spielt eine Rolle.",
+              "translation_ru": "Прямые рейсы связаны с более высокими тарифами, но важен и спрос на маршрут."
+            },
+            {
+              "text": "Die Funktion steht mit geringerer Abwanderung in Zusammenhang, aber das allein zeigt nicht, dass sie die Verbesserung verursacht hat.",
+              "translation_ru": "Функция связана с меньшим оттоком, но этого недостаточно, чтобы считать её причиной улучшения."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… связано с …, но это не доказывает причинность",
+      "title_en": "[X] is associated with [Y], but that does not establish causation",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS010",
+      "set_id": "GFS",
+      "pattern": "The faster release comes at the expense of a shorter testing window.",
+      "group_title": "[X] comes at the expense of [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] comes at the expense of [Y]",
+        "form": "subject + comes at the expense of + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … достигается ценой …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + comes at the expense of + noun",
+          "example": "The faster release comes at the expense of a shorter testing window.",
+          "translation": "Более быстрый релиз достигается ценой более короткого окна тестирования.",
+          "examples": [
+            {
+              "text": "The lower rent comes at the expense of a much longer commute.",
+              "translation_ru": "Более низкая аренда достигается ценой значительно более долгой дороги."
+            },
+            {
+              "text": "Focusing only on accuracy can come at the expense of speaking fluency.",
+              "translation_ru": "Фокус только на точности может достигаться ценой беглости речи."
+            },
+            {
+              "text": "Maximum screen brightness comes at the expense of battery life.",
+              "translation_ru": "Максимальная яркость экрана достигается ценой времени работы батареи."
+            },
+            {
+              "text": "The scenic route comes at the expense of an extra hour on the road.",
+              "translation_ru": "Живописный маршрут достигается ценой дополнительного часа в дороге."
+            },
+            {
+              "text": "A highly specific model can come at the expense of generalisability.",
+              "translation_ru": "Высокая специфичность модели может достигаться ценой обобщаемости."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + geht auf Kosten von + dative",
+          "example": "Die schnellere Veröffentlichung geht auf Kosten eines kürzeren Testzeitraums.",
+          "translation": "Более быстрый релиз достигается ценой более короткого окна тестирования.",
+          "examples": [
+            {
+              "text": "Die niedrigere Miete geht auf Kosten eines deutlich längeren Arbeitswegs.",
+              "translation_ru": "Более низкая аренда достигается ценой значительно более долгой дороги."
+            },
+            {
+              "text": "Die ausschließliche Konzentration auf Genauigkeit kann auf Kosten der Sprechflüssigkeit gehen.",
+              "translation_ru": "Фокус только на точности может достигаться ценой беглости речи."
+            },
+            {
+              "text": "Maximale Bildschirmhelligkeit geht auf Kosten der Akkulaufzeit.",
+              "translation_ru": "Максимальная яркость экрана достигается ценой времени работы батареи."
+            },
+            {
+              "text": "Die landschaftlich reizvolle Strecke geht auf Kosten einer zusätzlichen Fahrstunde.",
+              "translation_ru": "Живописный маршрут достигается ценой дополнительного часа в дороге."
+            },
+            {
+              "text": "Ein hochspezifisches Modell kann auf Kosten der Übertragbarkeit gehen.",
+              "translation_ru": "Высокая специфичность модели может достигаться ценой обобщаемости."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… достигается ценой …",
+      "title_en": "[X] comes at the expense of [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS011",
+      "set_id": "GFS",
+      "pattern": "The benefit of automating the check has to be weighed against the cost of handling exceptions.",
+      "group_title": "The benefit of [X] has to be weighed against [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "The benefit of [X] has to be weighed against [Y]",
+        "form": "The benefit of + noun/-ing + has to be weighed against + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: преимущество … нужно сопоставить с …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The benefit of + noun/-ing + has to be weighed against + noun",
+          "example": "The benefit of automating the check has to be weighed against the cost of handling exceptions.",
+          "translation": "Преимущество автоматизации проверки нужно сопоставить со стоимостью обработки исключений.",
+          "examples": [
+            {
+              "text": "The benefit of the larger garden has to be weighed against the longer commute.",
+              "translation_ru": "Преимущество большого сада нужно сопоставить с более долгой дорогой."
+            },
+            {
+              "text": "The benefit of immediate correction has to be weighed against the risk of interrupting fluent speech.",
+              "translation_ru": "Преимущество мгновенного исправления нужно сопоставить с риском прерывать беглую речь."
+            },
+            {
+              "text": "The benefit of a thinner laptop has to be weighed against repairability and cooling.",
+              "translation_ru": "Преимущество более тонкого ноутбука нужно сопоставить с ремонтопригодностью и охлаждением."
+            },
+            {
+              "text": "The benefit of a central hotel has to be weighed against the higher nightly rate.",
+              "translation_ru": "Преимущество центрального отеля нужно сопоставить с более высокой стоимостью ночи."
+            },
+            {
+              "text": "The benefit of a strict inclusion rule has to be weighed against the loss of sample size.",
+              "translation_ru": "Преимущество строгого критерия включения нужно сопоставить с уменьшением размера выборки."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der Vorteil von + dative + muss gegen + accusative + abgewogen werden",
+          "example": "Der Vorteil der automatisierten Prüfung muss gegen die Kosten der Ausnahmebehandlung abgewogen werden.",
+          "translation": "Преимущество автоматизации проверки нужно сопоставить со стоимостью обработки исключений.",
+          "examples": [
+            {
+              "text": "Der Vorteil des größeren Gartens muss gegen den längeren Arbeitsweg abgewogen werden.",
+              "translation_ru": "Преимущество большого сада нужно сопоставить с более долгой дорогой."
+            },
+            {
+              "text": "Der Vorteil sofortiger Korrektur muss gegen das Risiko abgewogen werden, flüssiges Sprechen zu unterbrechen.",
+              "translation_ru": "Преимущество мгновенного исправления нужно сопоставить с риском прерывать беглую речь."
+            },
+            {
+              "text": "Der Vorteil eines dünneren Laptops muss gegen Reparierbarkeit und Kühlung abgewogen werden.",
+              "translation_ru": "Преимущество более тонкого ноутбука нужно сопоставить с ремонтопригодностью и охлаждением."
+            },
+            {
+              "text": "Der Vorteil eines zentralen Hotels muss gegen den höheren Übernachtungspreis abgewogen werden.",
+              "translation_ru": "Преимущество центрального отеля нужно сопоставить с более высокой стоимостью ночи."
+            },
+            {
+              "text": "Der Vorteil einer strengen Einschlussregel muss gegen den Verlust an Stichprobengröße abgewogen werden.",
+              "translation_ru": "Преимущество строгого критерия включения нужно сопоставить с уменьшением размера выборки."
+            }
+          ]
+        }
+      ],
+      "title_ru": "Преимущество … нужно сопоставить с …",
+      "title_en": "The benefit of [X] has to be weighed against [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS012",
+      "set_id": "GFS",
+      "pattern": "The reduction in operational risk outweighs the extra day of testing.",
+      "group_title": "[X] outweighs [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] outweighs [Y]",
+        "form": "subject + outweighs + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … перевешивает …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + outweighs + noun",
+          "example": "The reduction in operational risk outweighs the extra day of testing.",
+          "translation": "Снижение операционного риска перевешивает дополнительный день тестирования.",
+          "examples": [
+            {
+              "text": "For us, the quieter location outweighs the smaller kitchen.",
+              "translation_ru": "Для нас более тихое расположение перевешивает маленькую кухню."
+            },
+            {
+              "text": "The chance to practise real conversation outweighs the discomfort of making occasional mistakes.",
+              "translation_ru": "Возможность практиковать реальный разговор перевешивает дискомфорт от редких ошибок."
+            },
+            {
+              "text": "The longer warranty outweighs the small difference in purchase price.",
+              "translation_ru": "Более длительная гарантия перевешивает небольшую разницу в цене."
+            },
+            {
+              "text": "The direct connection outweighs the modest premium during a short trip.",
+              "translation_ru": "Прямое сообщение перевешивает небольшую доплату при короткой поездке."
+            },
+            {
+              "text": "The consistency of the result across datasets outweighs the small drop in headline accuracy.",
+              "translation_ru": "Стабильность результата на разных наборах данных перевешивает небольшое снижение общей точности."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + überwiegt + accusative / wiegt schwerer als",
+          "example": "Die Verringerung des Betriebsrisikos wiegt schwerer als der zusätzliche Testtag.",
+          "translation": "Снижение операционного риска перевешивает дополнительный день тестирования.",
+          "examples": [
+            {
+              "text": "Für uns wiegt die ruhigere Lage schwerer als die kleinere Küche.",
+              "translation_ru": "Для нас более тихое расположение перевешивает маленькую кухню."
+            },
+            {
+              "text": "Die Möglichkeit, echte Gespräche zu üben, wiegt schwerer als das Unbehagen über gelegentliche Fehler.",
+              "translation_ru": "Возможность практиковать реальный разговор перевешивает дискомфорт от редких ошибок."
+            },
+            {
+              "text": "Die längere Garantie wiegt schwerer als der geringe Preisunterschied.",
+              "translation_ru": "Более длительная гарантия перевешивает небольшую разницу в цене."
+            },
+            {
+              "text": "Die direkte Verbindung wiegt bei einer kurzen Reise schwerer als der moderate Aufpreis.",
+              "translation_ru": "Прямое сообщение перевешивает небольшую доплату при короткой поездке."
+            },
+            {
+              "text": "Die Beständigkeit des Ergebnisses über mehrere Datensätze hinweg wiegt schwerer als der kleine Rückgang der Gesamtgenauigkeit.",
+              "translation_ru": "Стабильность результата на разных наборах данных перевешивает небольшое снижение общей точности."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… перевешивает …",
+      "title_en": "[X] outweighs [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS013",
+      "set_id": "GFS",
+      "pattern": "The extra implementation effort is partly offset by lower support costs later.",
+      "group_title": "[X] is offset by [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] is offset by [Y]",
+        "form": "subject + is offset by + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … компенсируется …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + is offset by + noun",
+          "example": "The extra implementation effort is partly offset by lower support costs later.",
+          "translation": "Дополнительные затраты на внедрение частично компенсируются более низкими расходами на поддержку позже.",
+          "examples": [
+            {
+              "text": "The higher rent is offset by not needing a car.",
+              "translation_ru": "Более высокая аренда компенсируется отсутствием необходимости в машине."
+            },
+            {
+              "text": "The slower pace is offset by better pronunciation and fewer restarts.",
+              "translation_ru": "Более медленный темп компенсируется лучшим произношением и меньшим числом перезапусков."
+            },
+            {
+              "text": "The heavier battery is offset by almost two extra days of runtime.",
+              "translation_ru": "Более тяжёлая батарея компенсируется почти двумя дополнительными днями работы."
+            },
+            {
+              "text": "The early departure is offset by arriving before the afternoon crowds.",
+              "translation_ru": "Ранний выезд компенсируется прибытием до дневного наплыва людей."
+            },
+            {
+              "text": "The loss of precision is offset by a substantial gain in recall.",
+              "translation_ru": "Потеря точности компенсируется существенным ростом полноты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + wird durch + accusative + ausgeglichen",
+          "example": "Der zusätzliche Implementierungsaufwand wird teilweise durch niedrigere spätere Supportkosten ausgeglichen.",
+          "translation": "Дополнительные затраты на внедрение частично компенсируются более низкими расходами на поддержку позже.",
+          "examples": [
+            {
+              "text": "Die höhere Miete wird dadurch ausgeglichen, dass kein Auto benötigt wird.",
+              "translation_ru": "Более высокая аренда компенсируется отсутствием необходимости в машине."
+            },
+            {
+              "text": "Das langsamere Tempo wird durch eine bessere Aussprache und weniger Neustarts ausgeglichen.",
+              "translation_ru": "Более медленный темп компенсируется лучшим произношением и меньшим числом перезапусков."
+            },
+            {
+              "text": "Der schwerere Akku wird durch fast zwei zusätzliche Tage Laufzeit ausgeglichen.",
+              "translation_ru": "Более тяжёлая батарея компенсируется почти двумя дополнительными днями работы."
+            },
+            {
+              "text": "Die frühe Abfahrt wird dadurch ausgeglichen, dass man vor dem Nachmittagsandrang ankommt.",
+              "translation_ru": "Ранний выезд компенсируется прибытием до дневного наплыва людей."
+            },
+            {
+              "text": "Der Präzisionsverlust wird durch einen deutlichen Gewinn beim Recall ausgeglichen.",
+              "translation_ru": "Потеря точности компенсируется существенным ростом полноты."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… компенсируется …",
+      "title_en": "[X] is offset by [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS014",
+      "set_id": "GFS",
+      "pattern": "The shorter release cycle creates a trade-off between speed and verification depth.",
+      "group_title": "[X] creates a trade-off between [A] and [B]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] creates a trade-off between [A] and [B]",
+        "form": "subject + creates a trade-off between + noun + and + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … создаёт компромисс между … и …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + creates a trade-off between + noun + and + noun",
+          "example": "The shorter release cycle creates a trade-off between speed and verification depth.",
+          "translation": "Более короткий цикл релиза создаёт компромисс между скоростью и глубиной проверки.",
+          "examples": [
+            {
+              "text": "Moving farther out creates a trade-off between living space and commuting time.",
+              "translation_ru": "Переезд дальше от центра создаёт компромисс между площадью жилья и временем на дорогу."
+            },
+            {
+              "text": "Correcting every error creates a trade-off between accuracy and conversational flow.",
+              "translation_ru": "Исправление каждой ошибки создаёт компромисс между точностью и плавностью разговора."
+            },
+            {
+              "text": "A brighter display creates a trade-off between readability outdoors and battery life.",
+              "translation_ru": "Более яркий экран создаёт компромисс между читаемостью на улице и временем работы батареи."
+            },
+            {
+              "text": "A packed itinerary creates a trade-off between seeing more places and having time to explore them.",
+              "translation_ru": "Плотный маршрут создаёт компромисс между количеством мест и временем на их изучение."
+            },
+            {
+              "text": "A narrow decision threshold creates a trade-off between false positives and false negatives.",
+              "translation_ru": "Узкий порог решения создаёт компромисс между ложноположительными и ложноотрицательными результатами."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + schafft einen Zielkonflikt zwischen + dative + und + dative",
+          "example": "Der kürzere Veröffentlichungszyklus schafft einen Zielkonflikt zwischen Geschwindigkeit und Prüftiefe.",
+          "translation": "Более короткий цикл релиза создаёт компромисс между скоростью и глубиной проверки.",
+          "examples": [
+            {
+              "text": "Ein Umzug weiter nach außen schafft einen Zielkonflikt zwischen Wohnfläche und Pendelzeit.",
+              "translation_ru": "Переезд дальше от центра создаёт компромисс между площадью жилья и временем на дорогу."
+            },
+            {
+              "text": "Die Korrektur jedes Fehlers schafft einen Zielkonflikt zwischen Genauigkeit und Gesprächsfluss.",
+              "translation_ru": "Исправление каждой ошибки создаёт компромисс между точностью и плавностью разговора."
+            },
+            {
+              "text": "Ein helleres Display schafft einen Zielkonflikt zwischen Lesbarkeit im Freien und Akkulaufzeit.",
+              "translation_ru": "Более яркий экран создаёт компромисс между читаемостью на улице и временем работы батареи."
+            },
+            {
+              "text": "Ein dichter Reiseplan schafft einen Zielkonflikt zwischen mehr Sehenswürdigkeiten und genügend Zeit für jede einzelne.",
+              "translation_ru": "Плотный маршрут создаёт компромисс между количеством мест и временем на их изучение."
+            },
+            {
+              "text": "Eine enge Entscheidungsschwelle schafft einen Zielkonflikt zwischen falsch positiven und falsch negativen Ergebnissen.",
+              "translation_ru": "Узкий порог решения создаёт компромисс между ложноположительными и ложноотрицательными результатами."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… создаёт компромисс между … и …",
+      "title_en": "[X] creates a trade-off between [A] and [B]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS015",
+      "set_id": "GFS",
+      "pattern": "Changing the mapping just before go-live poses a risk to data consistency.",
+      "group_title": "[X] poses a risk to [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] poses a risk to [Y]",
+        "form": "subject + poses a risk to + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … создаёт риск для …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + poses a risk to + noun",
+          "example": "Changing the mapping just before go-live poses a risk to data consistency.",
+          "translation": "Изменение маппинга непосредственно перед запуском создаёт риск для согласованности данных.",
+          "examples": [
+            {
+              "text": "Ignoring a recurring damp patch poses a risk to the building fabric.",
+              "translation_ru": "Игнорирование повторяющегося влажного пятна создаёт риск для конструкции здания."
+            },
+            {
+              "text": "Avoiding spontaneous speech poses a risk to developing real-time fluency.",
+              "translation_ru": "Избегание спонтанной речи создаёт риск для развития беглости в реальном времени."
+            },
+            {
+              "text": "Using an unknown charger poses a risk to the device and the battery.",
+              "translation_ru": "Использование неизвестной зарядки создаёт риск для устройства и батареи."
+            },
+            {
+              "text": "Relying on the last ferry poses a risk to the entire return journey.",
+              "translation_ru": "Зависимость от последнего парома создаёт риск для всей обратной поездки."
+            },
+            {
+              "text": "Unreported preprocessing choices pose a risk to reproducibility.",
+              "translation_ru": "Неописанные решения по предобработке создают риск для воспроизводимости."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + stellt ein Risiko für + accusative + dar",
+          "example": "Eine Änderung des Mappings kurz vor dem Produktivstart stellt ein Risiko für die Datenkonsistenz dar.",
+          "translation": "Изменение маппинга непосредственно перед запуском создаёт риск для согласованности данных.",
+          "examples": [
+            {
+              "text": "Ein wiederkehrender Feuchtigkeitsfleck, der ignoriert wird, stellt ein Risiko für die Bausubstanz dar.",
+              "translation_ru": "Игнорирование повторяющегося влажного пятна создаёт риск для конструкции здания."
+            },
+            {
+              "text": "Das Vermeiden spontanen Sprechens stellt ein Risiko für die Entwicklung flüssiger Echtzeitkommunikation dar.",
+              "translation_ru": "Избегание спонтанной речи создаёт риск для развития беглости в реальном времени."
+            },
+            {
+              "text": "Die Verwendung eines unbekannten Ladegeräts stellt ein Risiko für das Gerät und den Akku dar.",
+              "translation_ru": "Использование неизвестной зарядки создаёт риск для устройства и батареи."
+            },
+            {
+              "text": "Sich auf die letzte Fähre zu verlassen, stellt ein Risiko für die gesamte Rückreise dar.",
+              "translation_ru": "Зависимость от последнего парома создаёт риск для всей обратной поездки."
+            },
+            {
+              "text": "Nicht dokumentierte Vorverarbeitungsschritte stellen ein Risiko für die Reproduzierbarkeit dar.",
+              "translation_ru": "Неописанные решения по предобработке создают риск для воспроизводимости."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… создаёт риск для …",
+      "title_en": "[X] poses a risk to [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS016",
+      "set_id": "GFS",
+      "pattern": "The new retention rule has implications for how historical records are archived.",
+      "group_title": "[X] has implications for [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] has implications for [Y]",
+        "form": "subject + has implications for + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … имеет последствия для …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + has implications for + noun",
+          "example": "The new retention rule has implications for how historical records are archived.",
+          "translation": "Новое правило хранения имеет последствия для архивирования исторических записей.",
+          "examples": [
+            {
+              "text": "A north-facing balcony has implications for which plants will thrive there.",
+              "translation_ru": "Балкон на северной стороне имеет последствия для выбора растений."
+            },
+            {
+              "text": "The distinction between recognition and recall has implications for how we design practice.",
+              "translation_ru": "Различие между узнаванием и воспроизведением имеет последствия для дизайна практики."
+            },
+            {
+              "text": "Removing the headphone jack has implications for existing audio equipment.",
+              "translation_ru": "Удаление аудиоразъёма имеет последствия для существующего оборудования."
+            },
+            {
+              "text": "A seasonal road closure has implications for every route through the valley.",
+              "translation_ru": "Сезонное закрытие дороги имеет последствия для всех маршрутов через долину."
+            },
+            {
+              "text": "Changing the outcome definition has implications for every comparison with earlier studies.",
+              "translation_ru": "Изменение определения результата имеет последствия для всех сравнений с предыдущими исследованиями."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + hat Auswirkungen auf + accusative",
+          "example": "Die neue Aufbewahrungsregel hat Auswirkungen darauf, wie historische Datensätze archiviert werden.",
+          "translation": "Новое правило хранения имеет последствия для архивирования исторических записей.",
+          "examples": [
+            {
+              "text": "Ein Nordbalkon hat Auswirkungen darauf, welche Pflanzen dort gut gedeihen.",
+              "translation_ru": "Балкон на северной стороне имеет последствия для выбора растений."
+            },
+            {
+              "text": "Die Unterscheidung zwischen Wiedererkennen und Abruf hat Auswirkungen darauf, wie wir Übungen gestalten.",
+              "translation_ru": "Различие между узнаванием и воспроизведением имеет последствия для дизайна практики."
+            },
+            {
+              "text": "Der Wegfall der Kopfhörerbuchse hat Auswirkungen auf vorhandenes Audiozubehör.",
+              "translation_ru": "Удаление аудиоразъёма имеет последствия для существующего оборудования."
+            },
+            {
+              "text": "Eine saisonale Straßensperrung hat Auswirkungen auf jede Route durch das Tal.",
+              "translation_ru": "Сезонное закрытие дороги имеет последствия для всех маршрутов через долину."
+            },
+            {
+              "text": "Eine Änderung der Ergebnisdefinition hat Auswirkungen auf jeden Vergleich mit früheren Studien.",
+              "translation_ru": "Изменение определения результата имеет последствия для всех сравнений с предыдущими исследованиями."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… имеет последствия для …",
+      "title_en": "[X] has implications for [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS017",
+      "set_id": "GFS",
+      "pattern": "Inconsistent field names make it harder to automate the comparison.",
+      "group_title": "[X] makes it harder to [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] makes it harder to [Y]",
+        "form": "subject + makes it harder to + infinitive",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … усложняет …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + makes it harder to + infinitive",
+          "example": "Inconsistent field names make it harder to automate the comparison.",
+          "translation": "Несогласованные названия полей усложняют автоматизацию сравнения.",
+          "examples": [
+            {
+              "text": "Poor lighting makes it harder to judge the condition of the walls.",
+              "translation_ru": "Плохое освещение усложняет оценку состояния стен."
+            },
+            {
+              "text": "Translating every thought makes it harder to respond quickly in conversation.",
+              "translation_ru": "Перевод каждой мысли усложняет быстрый ответ в разговоре."
+            },
+            {
+              "text": "Glossy glass makes it harder to read the display outdoors.",
+              "translation_ru": "Глянцевое стекло усложняет чтение экрана на улице."
+            },
+            {
+              "text": "A late arrival makes it harder to catch the final local bus.",
+              "translation_ru": "Позднее прибытие усложняет возможность успеть на последний местный автобус."
+            },
+            {
+              "text": "Missing subgroup labels make it harder to test whether the effect is consistent.",
+              "translation_ru": "Отсутствие меток подгрупп усложняет проверку устойчивости эффекта."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + erschwert es, + zu-infinitive",
+          "example": "Uneinheitliche Feldnamen erschweren es, den Vergleich zu automatisieren.",
+          "translation": "Несогласованные названия полей усложняют автоматизацию сравнения.",
+          "examples": [
+            {
+              "text": "Schlechte Beleuchtung erschwert es, den Zustand der Wände zu beurteilen.",
+              "translation_ru": "Плохое освещение усложняет оценку состояния стен."
+            },
+            {
+              "text": "Das Übersetzen jedes Gedankens erschwert es, im Gespräch schnell zu reagieren.",
+              "translation_ru": "Перевод каждой мысли усложняет быстрый ответ в разговоре."
+            },
+            {
+              "text": "Glänzendes Glas erschwert es, das Display im Freien zu lesen.",
+              "translation_ru": "Глянцевое стекло усложняет чтение экрана на улице."
+            },
+            {
+              "text": "Eine späte Ankunft erschwert es, den letzten Regionalbus zu erreichen.",
+              "translation_ru": "Позднее прибытие усложняет возможность успеть на последний местный автобус."
+            },
+            {
+              "text": "Fehlende Untergruppenkennzeichnungen erschweren es zu prüfen, ob der Effekt konsistent ist.",
+              "translation_ru": "Отсутствие меток подгрупп усложняет проверку устойчивости эффекта."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… усложняет …",
+      "title_en": "[X] makes it harder to [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS018",
+      "set_id": "GFS",
+      "pattern": "The specification leaves room for different implementations.",
+      "group_title": "[X] leaves room for [Y]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] leaves room for [Y]",
+        "form": "subject + leaves room for + noun/-ing",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … оставляет пространство для …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + leaves room for + noun/-ing",
+          "example": "The specification leaves room for different implementations.",
+          "translation": "Спецификация оставляет пространство для разных реализаций.",
+          "examples": [
+            {
+              "text": "The open-plan kitchen leaves room for a larger dining table.",
+              "translation_ru": "Открытая кухня оставляет место для более крупного обеденного стола."
+            },
+            {
+              "text": "A flexible speaking task leaves room for learners to use their own vocabulary.",
+              "translation_ru": "Гибкое разговорное задание оставляет учащимся пространство для собственной лексики."
+            },
+            {
+              "text": "The modular design leaves room for a larger battery later.",
+              "translation_ru": "Модульный дизайн оставляет пространство для более крупной батареи в будущем."
+            },
+            {
+              "text": "A free afternoon leaves room for an unplanned stop along the coast.",
+              "translation_ru": "Свободный день оставляет пространство для незапланированной остановки на побережье."
+            },
+            {
+              "text": "A broad confidence interval leaves room for several plausible effect sizes.",
+              "translation_ru": "Широкий доверительный интервал оставляет пространство для нескольких правдоподобных размеров эффекта."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + lässt Raum für + accusative / lässt Spielraum für",
+          "example": "Die Spezifikation lässt Raum für unterschiedliche Implementierungen.",
+          "translation": "Спецификация оставляет пространство для разных реализаций.",
+          "examples": [
+            {
+              "text": "Die offene Küche lässt Raum für einen größeren Esstisch.",
+              "translation_ru": "Открытая кухня оставляет место для более крупного обеденного стола."
+            },
+            {
+              "text": "Eine flexible Sprechaufgabe lässt Lernenden Spielraum für ihren eigenen Wortschatz.",
+              "translation_ru": "Гибкое разговорное задание оставляет учащимся пространство для собственной лексики."
+            },
+            {
+              "text": "Das modulare Design lässt Raum für einen größeren Akku zu einem späteren Zeitpunkt.",
+              "translation_ru": "Модульный дизайн оставляет пространство для более крупной батареи в будущем."
+            },
+            {
+              "text": "Ein freier Nachmittag lässt Spielraum für einen ungeplanten Halt an der Küste.",
+              "translation_ru": "Свободный день оставляет пространство для незапланированной остановки на побережье."
+            },
+            {
+              "text": "Ein breites Konfidenzintervall lässt Raum für mehrere plausible Effektgrößen.",
+              "translation_ru": "Широкий доверительный интервал оставляет пространство для нескольких правдоподобных размеров эффекта."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… оставляет пространство для …",
+      "title_en": "[X] leaves room for [Y]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS019",
+      "set_id": "GFS",
+      "pattern": "A smooth migration depends less on the number of scripts than on how well failures are rehearsed.",
+      "group_title": "[X] depends less on [A] than on [B]",
+      "level": "B2",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] depends less on [A] than on [B]",
+        "form": "subject + depends less on + noun + than on + noun",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … зависит меньше от …, чем от …."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + depends less on + noun + than on + noun",
+          "example": "A smooth migration depends less on the number of scripts than on how well failures are rehearsed.",
+          "translation": "Успешная миграция зависит меньше от числа скриптов, чем от качества репетиции сбоев.",
+          "examples": [
+            {
+              "text": "Comfort depends less on room size than on layout and noise in this apartment.",
+              "translation_ru": "Комфорт в этой квартире зависит меньше от размера комнат, чем от планировки и шума."
+            },
+            {
+              "text": "Fluent speech depends less on knowing rare words than on retrieving common structures quickly.",
+              "translation_ru": "Беглая речь зависит меньше от знания редких слов, чем от быстрого воспроизведения распространённых структур."
+            },
+            {
+              "text": "Real-world battery life depends less on peak capacity than on how the device manages background tasks.",
+              "translation_ru": "Реальное время работы батареи зависит меньше от максимальной ёмкости, чем от управления фоновыми задачами."
+            },
+            {
+              "text": "A pleasant trip depends less on covering every sight than on leaving enough time between stops.",
+              "translation_ru": "Приятная поездка зависит меньше от охвата всех достопримечательностей, чем от достаточного времени между остановками."
+            },
+            {
+              "text": "A trustworthy estimate depends less on a complex model than on credible data and assumptions.",
+              "translation_ru": "Надёжная оценка зависит меньше от сложной модели, чем от качественных данных и предположений."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + hängt weniger von + dative + als von + dative + ab",
+          "example": "Eine reibungslose Migration hängt weniger von der Zahl der Skripte als davon ab, wie gut Fehlerfälle geprobt wurden.",
+          "translation": "Успешная миграция зависит меньше от числа скриптов, чем от качества репетиции сбоев.",
+          "examples": [
+            {
+              "text": "Der Wohnkomfort hängt in dieser Wohnung weniger von der Raumgröße als von Grundriss und Lärm ab.",
+              "translation_ru": "Комфорт в этой квартире зависит меньше от размера комнат, чем от планировки и шума."
+            },
+            {
+              "text": "Flüssiges Sprechen hängt weniger von seltenen Wörtern als vom schnellen Abruf häufiger Strukturen ab.",
+              "translation_ru": "Беглая речь зависит меньше от знания редких слов, чем от быстрого воспроизведения распространённых структур."
+            },
+            {
+              "text": "Die reale Akkulaufzeit hängt weniger von der Spitzenkapazität als davon ab, wie das Gerät Hintergrundaufgaben verwaltet.",
+              "translation_ru": "Реальное время работы батареи зависит меньше от максимальной ёмкости, чем от управления фоновыми задачами."
+            },
+            {
+              "text": "Eine angenehme Reise hängt weniger davon ab, jede Sehenswürdigkeit abzudecken, als genügend Zeit zwischen den Stopps zu lassen.",
+              "translation_ru": "Приятная поездка зависит меньше от охвата всех достопримечательностей, чем от достаточного времени между остановками."
+            },
+            {
+              "text": "Eine verlässliche Schätzung hängt weniger von einem komplexen Modell als von glaubwürdigen Daten und Annahmen ab.",
+              "translation_ru": "Надёжная оценка зависит меньше от сложной модели, чем от качественных данных и предположений."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… зависит меньше от …, чем от …",
+      "title_en": "[X] depends less on [A] than on [B]",
+      "group_id": "GFS"
+    },
+    {
+      "id": "GFS020",
+      "set_id": "GFS",
+      "pattern": "The release date hinges on whether the integration test passes tomorrow.",
+      "group_title": "[X] hinges on whether [Y]",
+      "level": "C1",
+      "logic": {
+        "function": "cause-consequence-tradeoff",
+        "core": "[X] hinges on whether [Y]",
+        "form": "subject + hinges on whether + clause",
+        "metaphor_ru": "Рамка помогает связывать причины, последствия и компромиссы: … зависит от того, … ли."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "subject + hinges on whether + clause",
+          "example": "The release date hinges on whether the integration test passes tomorrow.",
+          "translation": "Дата релиза зависит от того, пройдёт ли завтра интеграционный тест.",
+          "examples": [
+            {
+              "text": "The purchase hinges on whether the inspection finds structural damage.",
+              "translation_ru": "Покупка зависит от того, обнаружит ли проверка конструктивные повреждения."
+            },
+            {
+              "text": "The next exercise hinges on whether the learner can produce the pattern without reading it.",
+              "translation_ru": "Следующее упражнение зависит от того, сможет ли учащийся воспроизвести паттерн без чтения."
+            },
+            {
+              "text": "The repair hinges on whether replacement parts are still available.",
+              "translation_ru": "Ремонт зависит от того, доступны ли ещё запасные части."
+            },
+            {
+              "text": "Our route hinges on whether the mountain pass is open.",
+              "translation_ru": "Наш маршрут зависит от того, открыт ли горный перевал."
+            },
+            {
+              "text": "The interpretation hinges on whether the missing values are random or systematic.",
+              "translation_ru": "Интерпретация зависит от того, являются ли пропуски случайными или систематическими."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "subject + hängt davon ab, ob + subordinate clause",
+          "example": "Der Veröffentlichungstermin hängt davon ab, ob der Integrationstest morgen erfolgreich ist.",
+          "translation": "Дата релиза зависит от того, пройдёт ли завтра интеграционный тест.",
+          "examples": [
+            {
+              "text": "Der Kauf hängt davon ab, ob die Inspektion strukturelle Schäden feststellt.",
+              "translation_ru": "Покупка зависит от того, обнаружит ли проверка конструктивные повреждения."
+            },
+            {
+              "text": "Die nächste Übung hängt davon ab, ob der Lernende das Muster ohne Ablesen bilden kann.",
+              "translation_ru": "Следующее упражнение зависит от того, сможет ли учащийся воспроизвести паттерн без чтения."
+            },
+            {
+              "text": "Die Reparatur hängt davon ab, ob Ersatzteile noch verfügbar sind.",
+              "translation_ru": "Ремонт зависит от того, доступны ли ещё запасные части."
+            },
+            {
+              "text": "Unsere Route hängt davon ab, ob der Gebirgspass geöffnet ist.",
+              "translation_ru": "Наш маршрут зависит от того, открыт ли горный перевал."
+            },
+            {
+              "text": "Die Interpretation hängt davon ab, ob die fehlenden Werte zufällig oder systematisch sind.",
+              "translation_ru": "Интерпретация зависит от того, являются ли пропуски случайными или систематическими."
+            }
+          ]
+        }
+      ],
+      "title_ru": "… зависит от того, … ли",
+      "title_en": "[X] hinges on whether [Y]",
+      "group_id": "GFS"
+    }
+  ]
+}

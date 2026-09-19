@@ -1,0 +1,1486 @@
+{
+  "schemaVersion": 1,
+  "set_id": "GFP",
+  "patterns": [
+    {
+      "id": "GFP001",
+      "set_id": "GFP",
+      "pattern": "What makes this neighbourhood so appealing to young families?",
+      "group_title": "What makes [X] so [adjective]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What makes [X] so [adjective]?",
+        "form": "What makes + noun phrase + adjective?",
+        "metaphor_ru": "Практика вопросительной рамки: что делает … таким/такой …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What makes + noun phrase + adjective?",
+          "example": "What makes this neighbourhood so appealing to young families?",
+          "translation": "Что делает этот район таким привлекательным для молодых семей?",
+          "examples": [
+            {
+              "text": "What makes the new battery more reliable in cold weather?",
+              "translation_ru": "Что делает новый аккумулятор более надёжным в холодную погоду?"
+            },
+            {
+              "text": "What makes her explanation easier to follow than the manual?",
+              "translation_ru": "Что делает её объяснение понятнее, чем инструкция?"
+            },
+            {
+              "text": "What makes a small team effective under tight deadlines?",
+              "translation_ru": "Что делает небольшую команду эффективной при жёстких сроках?"
+            },
+            {
+              "text": "What makes this route safer after dark?",
+              "translation_ru": "Что делает этот маршрут безопаснее после наступления темноты?"
+            },
+            {
+              "text": "What makes the cheaper option expensive in the long run?",
+              "translation_ru": "Что делает более дешёвый вариант дорогим в долгосрочной перспективе?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was macht + noun phrase + adjective?",
+          "example": "Was macht dieses Viertel für junge Familien so attraktiv?",
+          "translation": "Что делает этот район таким привлекательным для молодых семей?",
+          "examples": [
+            {
+              "text": "Was macht den neuen Akku bei Kälte zuverlässiger?",
+              "translation_ru": "Что делает новый аккумулятор более надёжным в холодную погоду?"
+            },
+            {
+              "text": "Was macht ihre Erklärung verständlicher als das Handbuch?",
+              "translation_ru": "Что делает её объяснение понятнее, чем инструкция?"
+            },
+            {
+              "text": "Was macht ein kleines Team unter engen Fristen effektiv?",
+              "translation_ru": "Что делает небольшую команду эффективной при жёстких сроках?"
+            },
+            {
+              "text": "Was macht diese Strecke nach Einbruch der Dunkelheit sicherer?",
+              "translation_ru": "Что делает этот маршрут безопаснее после наступления темноты?"
+            },
+            {
+              "text": "Was macht die günstigere Option langfristig teuer?",
+              "translation_ru": "Что делает более дешёвый вариант дорогим в долгосрочной перспективе?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что делает … таким/такой …?",
+      "title_en": "What makes [X] so [adjective]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP002",
+      "set_id": "GFP",
+      "pattern": "What would it take to cut the waiting time in half?",
+      "group_title": "What would it take to [do X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What would it take to [do X]?",
+        "form": "What would it take to + infinitive?",
+        "metaphor_ru": "Практика вопросительной рамки: что потребуется, чтобы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would it take to + infinitive?",
+          "example": "What would it take to cut the waiting time in half?",
+          "translation": "Что потребуется, чтобы сократить время ожидания вдвое?",
+          "examples": [
+            {
+              "text": "What would it take to make the apartment quieter at night?",
+              "translation_ru": "Что потребуется, чтобы сделать квартиру тише ночью?"
+            },
+            {
+              "text": "What would it take to restore trust after a missed deadline?",
+              "translation_ru": "Что потребуется, чтобы восстановить доверие после сорванного срока?"
+            },
+            {
+              "text": "What would it take to learn enough German for a technical interview?",
+              "translation_ru": "Что потребуется, чтобы выучить достаточно немецкого для технического собеседования?"
+            },
+            {
+              "text": "What would it take to move the service without interrupting customers?",
+              "translation_ru": "Что потребуется, чтобы перенести сервис без перерыва для клиентов?"
+            },
+            {
+              "text": "What would it take to turn this prototype into something people use weekly?",
+              "translation_ru": "Что потребуется, чтобы превратить этот прототип в продукт, которым люди пользуются каждую неделю?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was wäre nötig, um + zu-infinitive?",
+          "example": "Was wäre nötig, um die Wartezeit zu halbieren?",
+          "translation": "Что потребуется, чтобы сократить время ожидания вдвое?",
+          "examples": [
+            {
+              "text": "Was wäre nötig, um die Wohnung nachts ruhiger zu machen?",
+              "translation_ru": "Что потребуется, чтобы сделать квартиру тише ночью?"
+            },
+            {
+              "text": "Was wäre nötig, um nach einer verpassten Frist wieder Vertrauen aufzubauen?",
+              "translation_ru": "Что потребуется, чтобы восстановить доверие после сорванного срока?"
+            },
+            {
+              "text": "Was wäre nötig, um genug Deutsch für ein technisches Vorstellungsgespräch zu lernen?",
+              "translation_ru": "Что потребуется, чтобы выучить достаточно немецкого для технического собеседования?"
+            },
+            {
+              "text": "Was wäre nötig, um den Dienst ohne Unterbrechung für die Kunden umzuziehen?",
+              "translation_ru": "Что потребуется, чтобы перенести сервис без перерыва для клиентов?"
+            },
+            {
+              "text": "Was wäre nötig, um aus diesem Prototyp etwas zu machen, das Menschen wöchentlich nutzen?",
+              "translation_ru": "Что потребуется, чтобы превратить этот прототип в продукт, которым люди пользуются каждую неделю?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что потребуется, чтобы …?",
+      "title_en": "What would it take to [do X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP003",
+      "set_id": "GFP",
+      "pattern": "How come the second estimate is lower than the first one?",
+      "group_title": "How come [clause]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "How come [clause]?",
+        "form": "How come + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: как получилось, что …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How come + clause?",
+          "example": "How come the second estimate is lower than the first one?",
+          "translation": "Как получилось, что вторая оценка ниже первой?",
+          "examples": [
+            {
+              "text": "How come nobody noticed the duplicate records earlier?",
+              "translation_ru": "Как получилось, что никто раньше не заметил дублирующиеся записи?"
+            },
+            {
+              "text": "How come this train takes longer on Sundays?",
+              "translation_ru": "Как получилось, что по воскресеньям этот поезд идёт дольше?"
+            },
+            {
+              "text": "How come you remember spoken phrases better than isolated words?",
+              "translation_ru": "Как получилось, что ты лучше запоминаешь произнесённые фразы, чем отдельные слова?"
+            },
+            {
+              "text": "How come the room feels colder even though the thermostat has not changed?",
+              "translation_ru": "Как получилось, что в комнате кажется холоднее, хотя термостат не менялся?"
+            },
+            {
+              "text": "How come the simplest version attracted the most users?",
+              "translation_ru": "Как получилось, что самая простая версия привлекла больше всего пользователей?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie kommt es, dass + subordinate clause?",
+          "example": "Wie kommt es, dass die zweite Schätzung niedriger ist als die erste?",
+          "translation": "Как получилось, что вторая оценка ниже первой?",
+          "examples": [
+            {
+              "text": "Wie kommt es, dass niemand die doppelten Datensätze früher bemerkt hat?",
+              "translation_ru": "Как получилось, что никто раньше не заметил дублирующиеся записи?"
+            },
+            {
+              "text": "Wie kommt es, dass dieser Zug sonntags länger braucht?",
+              "translation_ru": "Как получилось, что по воскресеньям этот поезд идёт дольше?"
+            },
+            {
+              "text": "Wie kommt es, dass du dir gesprochene Wendungen besser merkst als einzelne Wörter?",
+              "translation_ru": "Как получилось, что ты лучше запоминаешь произнесённые фразы, чем отдельные слова?"
+            },
+            {
+              "text": "Wie kommt es, dass sich das Zimmer kälter anfühlt, obwohl der Thermostat unverändert ist?",
+              "translation_ru": "Как получилось, что в комнате кажется холоднее, хотя термостат не менялся?"
+            },
+            {
+              "text": "Wie kommt es, dass die einfachste Version die meisten Nutzer angezogen hat?",
+              "translation_ru": "Как получилось, что самая простая версия привлекла больше всего пользователей?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как получилось, что …?",
+      "title_en": "How come [clause]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP004",
+      "set_id": "GFP",
+      "pattern": "How far have we got with cleaning up the customer data?",
+      "group_title": "How far have we got with [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "How far have we got with [X]?",
+        "form": "How far have we got with + noun/-ing?",
+        "metaphor_ru": "Практика вопросительной рамки: как далеко мы продвинулись с …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How far have we got with + noun/-ing?",
+          "example": "How far have we got with cleaning up the customer data?",
+          "translation": "Как далеко мы продвинулись с очисткой клиентских данных?",
+          "examples": [
+            {
+              "text": "How far have we got with choosing a school for next year?",
+              "translation_ru": "Как далеко мы продвинулись с выбором школы на следующий год?"
+            },
+            {
+              "text": "How far have we got with testing the new microphone setup?",
+              "translation_ru": "Как далеко мы продвинулись с тестированием новой настройки микрофона?"
+            },
+            {
+              "text": "How far have we got with translating the onboarding guide?",
+              "translation_ru": "Как далеко мы продвинулись с переводом руководства по адаптации?"
+            },
+            {
+              "text": "How far have we got with repairing the roof after the storm?",
+              "translation_ru": "Как далеко мы продвинулись с ремонтом крыши после шторма?"
+            },
+            {
+              "text": "How far have we got with reducing the app's startup time?",
+              "translation_ru": "Как далеко мы продвинулись с сокращением времени запуска приложения?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie weit sind wir mit + noun/-ing?",
+          "example": "Wie weit sind wir mit der Bereinigung der Kundendaten?",
+          "translation": "Как далеко мы продвинулись с очисткой клиентских данных?",
+          "examples": [
+            {
+              "text": "Wie weit sind wir mit der Auswahl einer Schule für nächstes Jahr?",
+              "translation_ru": "Как далеко мы продвинулись с выбором школы на следующий год?"
+            },
+            {
+              "text": "Wie weit sind wir mit dem Testen des neuen Mikrofon-Setups?",
+              "translation_ru": "Как далеко мы продвинулись с тестированием новой настройки микрофона?"
+            },
+            {
+              "text": "Wie weit sind wir mit der Übersetzung des Onboarding-Leitfadens?",
+              "translation_ru": "Как далеко мы продвинулись с переводом руководства по адаптации?"
+            },
+            {
+              "text": "Wie weit sind wir mit der Reparatur des Dachs nach dem Sturm?",
+              "translation_ru": "Как далеко мы продвинулись с ремонтом крыши после шторма?"
+            },
+            {
+              "text": "Wie weit sind wir mit der Verkürzung der Startzeit der App?",
+              "translation_ru": "Как далеко мы продвинулись с сокращением времени запуска приложения?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как далеко мы продвинулись с …?",
+      "title_en": "How far have we got with [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP005",
+      "set_id": "GFP",
+      "pattern": "To what extent does pronunciation improve through deliberate repetition?",
+      "group_title": "To what extent does [X] depend on [Y]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "To what extent does [X] depend on [Y]?",
+        "form": "To what extent + auxiliary + subject + depend on + noun?",
+        "metaphor_ru": "Практика вопросительной рамки: в какой степени … зависит от …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "To what extent + auxiliary + subject + depend on + noun?",
+          "example": "To what extent does pronunciation improve through deliberate repetition?",
+          "translation": "В какой степени произношение улучшается благодаря целенаправленному повторению?",
+          "examples": [
+            {
+              "text": "To what extent does the final price depend on energy costs?",
+              "translation_ru": "В какой степени конечная цена зависит от стоимости энергии?"
+            },
+            {
+              "text": "To what extent does remote work depend on written communication?",
+              "translation_ru": "В какой степени успешная удалённая работа зависит от письменной коммуникации?"
+            },
+            {
+              "text": "To what extent does battery life depend on screen brightness?",
+              "translation_ru": "В какой степени время работы батареи зависит от яркости экрана?"
+            },
+            {
+              "text": "To what extent does the result depend on which sample we choose?",
+              "translation_ru": "В какой степени результат зависит от того, какую выборку мы выберем?"
+            },
+            {
+              "text": "To what extent does sleep quality depend on a consistent schedule?",
+              "translation_ru": "В какой степени качество сна зависит от стабильного режима?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Inwieweit hängt + subject + von + noun + ab?",
+          "example": "Inwieweit verbessert sich die Aussprache durch gezielte Wiederholung?",
+          "translation": "В какой степени произношение улучшается благодаря целенаправленному повторению?",
+          "examples": [
+            {
+              "text": "Inwieweit hängt der Endpreis von den Energiekosten ab?",
+              "translation_ru": "В какой степени конечная цена зависит от стоимости энергии?"
+            },
+            {
+              "text": "Inwieweit hängt erfolgreiche Fernarbeit von schriftlicher Kommunikation ab?",
+              "translation_ru": "В какой степени успешная удалённая работа зависит от письменной коммуникации?"
+            },
+            {
+              "text": "Inwieweit hängt die Akkulaufzeit von der Bildschirmhelligkeit ab?",
+              "translation_ru": "В какой степени время работы батареи зависит от яркости экрана?"
+            },
+            {
+              "text": "Inwieweit hängt das Ergebnis davon ab, welche Stichprobe wir wählen?",
+              "translation_ru": "В какой степени результат зависит от того, какую выборку мы выберем?"
+            },
+            {
+              "text": "Inwieweit hängt die Schlafqualität von einem regelmäßigen Rhythmus ab?",
+              "translation_ru": "В какой степени качество сна зависит от стабильного режима?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "В какой степени … зависит от …?",
+      "title_en": "To what extent does [X] depend on [Y]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP006",
+      "set_id": "GFP",
+      "pattern": "What if the supplier cannot deliver before Friday?",
+      "group_title": "What if [clause]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What if [clause]?",
+        "form": "What if + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: что, если …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What if + clause?",
+          "example": "What if the supplier cannot deliver before Friday?",
+          "translation": "Что, если поставщик не сможет доставить товар до пятницы?",
+          "examples": [
+            {
+              "text": "What if we practise the presentation without slides first?",
+              "translation_ru": "Что, если сначала потренировать презентацию без слайдов?"
+            },
+            {
+              "text": "What if the cheaper hotel is much farther from the station?",
+              "translation_ru": "Что, если более дешёвый отель находится намного дальше от вокзала?"
+            },
+            {
+              "text": "What if the error appears only after several updates?",
+              "translation_ru": "Что, если ошибка появляется только после нескольких обновлений?"
+            },
+            {
+              "text": "What if she has already accepted another offer?",
+              "translation_ru": "Что, если она уже приняла другое предложение?"
+            },
+            {
+              "text": "What if this habit works because it removes a decision rather than adding motivation?",
+              "translation_ru": "Что, если эта привычка работает потому, что убирает необходимость принимать решение, а не добавляет мотивацию?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was ist, wenn + clause?",
+          "example": "Was ist, wenn der Lieferant nicht vor Freitag liefern kann?",
+          "translation": "Что, если поставщик не сможет доставить товар до пятницы?",
+          "examples": [
+            {
+              "text": "Was ist, wenn wir die Präsentation zuerst ohne Folien üben?",
+              "translation_ru": "Что, если сначала потренировать презентацию без слайдов?"
+            },
+            {
+              "text": "Was ist, wenn das günstigere Hotel viel weiter vom Bahnhof entfernt ist?",
+              "translation_ru": "Что, если более дешёвый отель находится намного дальше от вокзала?"
+            },
+            {
+              "text": "Was ist, wenn der Fehler erst nach mehreren Aktualisierungen auftritt?",
+              "translation_ru": "Что, если ошибка появляется только после нескольких обновлений?"
+            },
+            {
+              "text": "Was ist, wenn sie bereits ein anderes Angebot angenommen hat?",
+              "translation_ru": "Что, если она уже приняла другое предложение?"
+            },
+            {
+              "text": "Was ist, wenn diese Gewohnheit funktioniert, weil sie eine Entscheidung beseitigt, statt Motivation hinzuzufügen?",
+              "translation_ru": "Что, если эта привычка работает потому, что убирает необходимость принимать решение, а не добавляет мотивацию?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что, если …?",
+      "title_en": "What if [clause]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP007",
+      "set_id": "GFP",
+      "pattern": "What would happen if we delayed the release by one week?",
+      "group_title": "What would happen if [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What would happen if [X]?",
+        "form": "What would happen if + past simple?",
+        "metaphor_ru": "Практика вопросительной рамки: что бы произошло, если бы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would happen if + past simple?",
+          "example": "What would happen if we delayed the release by one week?",
+          "translation": "Что бы произошло, если бы мы отложили релиз на неделю?",
+          "examples": [
+            {
+              "text": "What would happen if the city removed parking from this street?",
+              "translation_ru": "Что бы произошло, если бы город убрал парковку с этой улицы?"
+            },
+            {
+              "text": "What would happen if you stopped translating every sentence in your head?",
+              "translation_ru": "Что бы произошло, если бы ты перестал переводить каждое предложение в голове?"
+            },
+            {
+              "text": "What would happen if the backup failed during the migration?",
+              "translation_ru": "Что бы произошло, если бы резервная копия дала сбой во время миграции?"
+            },
+            {
+              "text": "What would happen if interest rates stayed high for another year?",
+              "translation_ru": "Что бы произошло, если бы процентные ставки оставались высокими ещё год?"
+            },
+            {
+              "text": "What would happen if everyone chose the fastest solution instead of the most durable one?",
+              "translation_ru": "Что бы произошло, если бы все выбирали самое быстрое решение вместо самого долговечного?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was würde passieren, wenn + Konjunktiv II?",
+          "example": "Was würde passieren, wenn wir die Veröffentlichung um eine Woche verschieben würden?",
+          "translation": "Что бы произошло, если бы мы отложили релиз на неделю?",
+          "examples": [
+            {
+              "text": "Was würde passieren, wenn die Stadt die Parkplätze in dieser Straße abschaffen würde?",
+              "translation_ru": "Что бы произошло, если бы город убрал парковку с этой улицы?"
+            },
+            {
+              "text": "Was würde passieren, wenn du aufhören würdest, jeden Satz im Kopf zu übersetzen?",
+              "translation_ru": "Что бы произошло, если бы ты перестал переводить каждое предложение в голове?"
+            },
+            {
+              "text": "Was würde passieren, wenn die Sicherung während der Migration ausfallen würde?",
+              "translation_ru": "Что бы произошло, если бы резервная копия дала сбой во время миграции?"
+            },
+            {
+              "text": "Was würde passieren, wenn die Zinsen noch ein Jahr hoch blieben?",
+              "translation_ru": "Что бы произошло, если бы процентные ставки оставались высокими ещё год?"
+            },
+            {
+              "text": "Was würde passieren, wenn alle die schnellste statt der dauerhaftesten Lösung wählen würden?",
+              "translation_ru": "Что бы произошло, если бы все выбирали самое быстрое решение вместо самого долговечного?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что бы произошло, если бы …?",
+      "title_en": "What would happen if [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP008",
+      "set_id": "GFP",
+      "pattern": "What would you have done if the client had rejected the revised proposal?",
+      "group_title": "What would you have done if [X had happened]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What would you have done if [X had happened]?",
+        "form": "What would + subject + have done if + past perfect?",
+        "metaphor_ru": "Практика вопросительной рамки: что бы вы сделали, если бы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would + subject + have done if + past perfect?",
+          "example": "What would you have done if the client had rejected the revised proposal?",
+          "translation": "Что бы вы сделали, если бы клиент отклонил пересмотренное предложение?",
+          "examples": [
+            {
+              "text": "What would you have done if your phone had died before boarding?",
+              "translation_ru": "Что бы вы сделали, если бы телефон разрядился перед посадкой?"
+            },
+            {
+              "text": "What would you have done if the landlord had refused to fix the leak?",
+              "translation_ru": "Что бы вы сделали, если бы арендодатель отказался устранять протечку?"
+            },
+            {
+              "text": "What would you have done if the test results had contradicted your assumption?",
+              "translation_ru": "Что бы вы сделали, если бы результаты теста противоречили вашему предположению?"
+            },
+            {
+              "text": "What would you have done if you had missed the last train home?",
+              "translation_ru": "Что бы вы сделали, если бы опоздали на последний поезд домой?"
+            },
+            {
+              "text": "What would you have done if the backup had contained the same corrupted files?",
+              "translation_ru": "Что бы вы сделали, если бы резервная копия содержала те же повреждённые файлы?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was hätte + subject + getan, wenn + Plusquamperfekt Konjunktiv II?",
+          "example": "Was hättest du getan, wenn der Kunde den überarbeiteten Vorschlag abgelehnt hätte?",
+          "translation": "Что бы вы сделали, если бы клиент отклонил пересмотренное предложение?",
+          "examples": [
+            {
+              "text": "Was hättest du getan, wenn dein Handy vor dem Einsteigen ausgegangen wäre?",
+              "translation_ru": "Что бы вы сделали, если бы телефон разрядился перед посадкой?"
+            },
+            {
+              "text": "Was hättest du getan, wenn der Vermieter sich geweigert hätte, das Leck zu reparieren?",
+              "translation_ru": "Что бы вы сделали, если бы арендодатель отказался устранять протечку?"
+            },
+            {
+              "text": "Was hättest du getan, wenn die Testergebnisse deiner Annahme widersprochen hätten?",
+              "translation_ru": "Что бы вы сделали, если бы результаты теста противоречили вашему предположению?"
+            },
+            {
+              "text": "Was hättest du getan, wenn du den letzten Zug nach Hause verpasst hättest?",
+              "translation_ru": "Что бы вы сделали, если бы опоздали на последний поезд домой?"
+            },
+            {
+              "text": "Was hättest du getan, wenn die Sicherung dieselben beschädigten Dateien enthalten hätte?",
+              "translation_ru": "Что бы вы сделали, если бы резервная копия содержала те же повреждённые файлы?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что бы вы сделали, если бы …?",
+      "title_en": "What would you have done if [X had happened]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP009",
+      "set_id": "GFP",
+      "pattern": "Isn't it possible that the apparent improvement is just seasonal?",
+      "group_title": "Isn't it possible that [X]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Isn't it possible that [X]?",
+        "form": "Isn't it possible that + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: разве не возможно, что …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Isn't it possible that + clause?",
+          "example": "Isn't it possible that the apparent improvement is just seasonal?",
+          "translation": "Разве не возможно, что видимое улучшение связано лишь с сезонностью?",
+          "examples": [
+            {
+              "text": "Isn't it possible that she interpreted the message differently?",
+              "translation_ru": "Разве не возможно, что она иначе поняла сообщение?"
+            },
+            {
+              "text": "Isn't it possible that the noise comes from the ventilation system?",
+              "translation_ru": "Разве не возможно, что шум идёт от вентиляционной системы?"
+            },
+            {
+              "text": "Isn't it possible that the shorter lesson is easier to repeat consistently?",
+              "translation_ru": "Разве не возможно, что короткий урок легче регулярно повторять?"
+            },
+            {
+              "text": "Isn't it possible that demand was shifted rather than created?",
+              "translation_ru": "Разве не возможно, что спрос был лишь перераспределён, а не создан?"
+            },
+            {
+              "text": "Isn't it possible that the first measurement was simply inaccurate?",
+              "translation_ru": "Разве не возможно, что первое измерение было просто неточным?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ist es nicht möglich, dass + subordinate clause?",
+          "example": "Ist es nicht möglich, dass die scheinbare Verbesserung nur saisonal bedingt ist?",
+          "translation": "Разве не возможно, что видимое улучшение связано лишь с сезонностью?",
+          "examples": [
+            {
+              "text": "Ist es nicht möglich, dass sie die Nachricht anders verstanden hat?",
+              "translation_ru": "Разве не возможно, что она иначе поняла сообщение?"
+            },
+            {
+              "text": "Ist es nicht möglich, dass das Geräusch von der Lüftungsanlage kommt?",
+              "translation_ru": "Разве не возможно, что шум идёт от вентиляционной системы?"
+            },
+            {
+              "text": "Ist es nicht möglich, dass sich die kürzere Lektion leichter regelmäßig wiederholen lässt?",
+              "translation_ru": "Разве не возможно, что короткий урок легче регулярно повторять?"
+            },
+            {
+              "text": "Ist es nicht möglich, dass die Nachfrage nur verlagert und nicht neu geschaffen wurde?",
+              "translation_ru": "Разве не возможно, что спрос был лишь перераспределён, а не создан?"
+            },
+            {
+              "text": "Ist es nicht möglich, dass die erste Messung einfach ungenau war?",
+              "translation_ru": "Разве не возможно, что первое измерение было просто неточным?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Разве не возможно, что …?",
+      "title_en": "Isn't it possible that [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP010",
+      "set_id": "GFP",
+      "pattern": "Wouldn't it make more sense to test one variable at a time?",
+      "group_title": "Wouldn't it make more sense to [do X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Wouldn't it make more sense to [do X]?",
+        "form": "Wouldn't it make more sense to + infinitive?",
+        "metaphor_ru": "Практика вопросительной рамки: не разумнее ли было бы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Wouldn't it make more sense to + infinitive?",
+          "example": "Wouldn't it make more sense to test one variable at a time?",
+          "translation": "Не разумнее ли было бы проверять по одной переменной за раз?",
+          "examples": [
+            {
+              "text": "Wouldn't it make more sense to repair the current laptop before replacing it?",
+              "translation_ru": "Не разумнее ли было бы сначала отремонтировать нынешний ноутбук, а потом думать о замене?"
+            },
+            {
+              "text": "Wouldn't it make more sense to ask users why they stopped returning?",
+              "translation_ru": "Не разумнее ли было бы спросить пользователей, почему они перестали возвращаться?"
+            },
+            {
+              "text": "Wouldn't it make more sense to learn the common pattern before the exception?",
+              "translation_ru": "Не разумнее ли было бы сначала выучить распространённый паттерн, а затем исключение?"
+            },
+            {
+              "text": "Wouldn't it make more sense to reserve a flexible ticket this time?",
+              "translation_ru": "Не разумнее ли было бы на этот раз забронировать гибкий билет?"
+            },
+            {
+              "text": "Wouldn't it make more sense to document the decision while the reasoning is still fresh?",
+              "translation_ru": "Не разумнее ли было бы задокументировать решение, пока аргументация ещё свежа в памяти?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wäre es nicht sinnvoller, + zu-infinitive?",
+          "example": "Wäre es nicht sinnvoller, jeweils nur eine Variable zu testen?",
+          "translation": "Не разумнее ли было бы проверять по одной переменной за раз?",
+          "examples": [
+            {
+              "text": "Wäre es nicht sinnvoller, den aktuellen Laptop zu reparieren, bevor wir ihn ersetzen?",
+              "translation_ru": "Не разумнее ли было бы сначала отремонтировать нынешний ноутбук, а потом думать о замене?"
+            },
+            {
+              "text": "Wäre es nicht sinnvoller, die Nutzer zu fragen, warum sie nicht mehr zurückkommen?",
+              "translation_ru": "Не разумнее ли было бы спросить пользователей, почему они перестали возвращаться?"
+            },
+            {
+              "text": "Wäre es nicht sinnvoller, zuerst das häufige Muster und dann die Ausnahme zu lernen?",
+              "translation_ru": "Не разумнее ли было бы сначала выучить распространённый паттерн, а затем исключение?"
+            },
+            {
+              "text": "Wäre es nicht sinnvoller, diesmal ein flexibles Ticket zu buchen?",
+              "translation_ru": "Не разумнее ли было бы на этот раз забронировать гибкий билет?"
+            },
+            {
+              "text": "Wäre es nicht sinnvoller, die Entscheidung zu dokumentieren, solange die Begründung noch frisch im Gedächtnis ist?",
+              "translation_ru": "Не разумнее ли было бы задокументировать решение, пока аргументация ещё свежа в памяти?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Не разумнее ли было бы …?",
+      "title_en": "Wouldn't it make more sense to [do X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP011",
+      "set_id": "GFP",
+      "pattern": "Is there any chance that the package will arrive before noon?",
+      "group_title": "Is there any chance that [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Is there any chance that [X]?",
+        "form": "Is there any chance that + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: есть ли шанс, что …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Is there any chance that + clause?",
+          "example": "Is there any chance that the package will arrive before noon?",
+          "translation": "Есть ли шанс, что посылка придёт до полудня?",
+          "examples": [
+            {
+              "text": "Is there any chance that we can move the meeting to Thursday?",
+              "translation_ru": "Есть ли шанс, что мы сможем перенести встречу на четверг?"
+            },
+            {
+              "text": "Is there any chance that this field can be made optional?",
+              "translation_ru": "Есть ли шанс, что это поле можно сделать необязательным?"
+            },
+            {
+              "text": "Is there any chance that the trail will reopen after the inspection?",
+              "translation_ru": "Есть ли шанс, что маршрут снова откроют после проверки?"
+            },
+            {
+              "text": "Is there any chance that the recording can be recovered from the cloud?",
+              "translation_ru": "Есть ли шанс, что запись можно восстановить из облака?"
+            },
+            {
+              "text": "Is there any chance that the lower rate applies to existing customers too?",
+              "translation_ru": "Есть ли шанс, что более низкий тариф распространяется и на существующих клиентов?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Besteht die Möglichkeit, dass + subordinate clause?",
+          "example": "Besteht die Möglichkeit, dass das Paket vor Mittag ankommt?",
+          "translation": "Есть ли шанс, что посылка придёт до полудня?",
+          "examples": [
+            {
+              "text": "Besteht die Möglichkeit, dass wir die Besprechung auf Donnerstag verschieben können?",
+              "translation_ru": "Есть ли шанс, что мы сможем перенести встречу на четверг?"
+            },
+            {
+              "text": "Besteht die Möglichkeit, dass dieses Feld optional gemacht werden kann?",
+              "translation_ru": "Есть ли шанс, что это поле можно сделать необязательным?"
+            },
+            {
+              "text": "Besteht die Möglichkeit, dass der Wanderweg nach der Inspektion wieder geöffnet wird?",
+              "translation_ru": "Есть ли шанс, что маршрут снова откроют после проверки?"
+            },
+            {
+              "text": "Besteht die Möglichkeit, dass die Aufnahme aus der Cloud wiederhergestellt werden kann?",
+              "translation_ru": "Есть ли шанс, что запись можно восстановить из облака?"
+            },
+            {
+              "text": "Besteht die Möglichkeit, dass der niedrigere Tarif auch für bestehende Kunden gilt?",
+              "translation_ru": "Есть ли шанс, что более низкий тариф распространяется и на существующих клиентов?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Есть ли шанс, что …?",
+      "title_en": "Is there any chance that [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP012",
+      "set_id": "GFP",
+      "pattern": "Are we assuming that every user has a stable internet connection?",
+      "group_title": "Are we assuming that [X]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Are we assuming that [X]?",
+        "form": "Are we assuming that + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: мы исходим из того, что …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Are we assuming that + clause?",
+          "example": "Are we assuming that every user has a stable internet connection?",
+          "translation": "Мы исходим из того, что у каждого пользователя стабильное подключение к интернету?",
+          "examples": [
+            {
+              "text": "Are we assuming that the exchange rate will remain unchanged?",
+              "translation_ru": "Мы исходим из того, что курс валют останется неизменным?"
+            },
+            {
+              "text": "Are we assuming that both teams interpret the requirement the same way?",
+              "translation_ru": "Мы исходим из того, что обе команды одинаково понимают требование?"
+            },
+            {
+              "text": "Are we assuming that the child already knows this vocabulary?",
+              "translation_ru": "Мы исходим из того, что ребёнок уже знает эту лексику?"
+            },
+            {
+              "text": "Are we assuming that the apartment will be empty during the repairs?",
+              "translation_ru": "Мы исходим из того, что квартира будет пустой во время ремонта?"
+            },
+            {
+              "text": "Are we assuming that correlation reflects a causal effect here?",
+              "translation_ru": "Мы исходим из того, что корреляция здесь отражает причинный эффект?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Gehen wir davon aus, dass + subordinate clause?",
+          "example": "Gehen wir davon aus, dass jeder Nutzer eine stabile Internetverbindung hat?",
+          "translation": "Мы исходим из того, что у каждого пользователя стабильное подключение к интернету?",
+          "examples": [
+            {
+              "text": "Gehen wir davon aus, dass der Wechselkurs unverändert bleibt?",
+              "translation_ru": "Мы исходим из того, что курс валют останется неизменным?"
+            },
+            {
+              "text": "Gehen wir davon aus, dass beide Teams die Anforderung gleich verstehen?",
+              "translation_ru": "Мы исходим из того, что обе команды одинаково понимают требование?"
+            },
+            {
+              "text": "Gehen wir davon aus, dass das Kind diesen Wortschatz bereits kennt?",
+              "translation_ru": "Мы исходим из того, что ребёнок уже знает эту лексику?"
+            },
+            {
+              "text": "Gehen wir davon aus, dass die Wohnung während der Reparatur leer steht?",
+              "translation_ru": "Мы исходим из того, что квартира будет пустой во время ремонта?"
+            },
+            {
+              "text": "Gehen wir davon aus, dass die Korrelation hier einen kausalen Effekt widerspiegelt?",
+              "translation_ru": "Мы исходим из того, что корреляция здесь отражает причинный эффект?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Мы исходим из того, что …?",
+      "title_en": "Are we assuming that [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP013",
+      "set_id": "GFP",
+      "pattern": "What leads you to believe that the delay is caused by the database?",
+      "group_title": "What leads you to believe that [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What leads you to believe that [X]?",
+        "form": "What leads + person + to believe that + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: что заставляет вас считать, что …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What leads + person + to believe that + clause?",
+          "example": "What leads you to believe that the delay is caused by the database?",
+          "translation": "Что заставляет вас считать, что задержка вызвана базой данных?",
+          "examples": [
+            {
+              "text": "What leads you to believe that the market is ready for a premium version?",
+              "translation_ru": "Что заставляет вас считать, что рынок готов к премиальной версии?"
+            },
+            {
+              "text": "What leads you to believe that she prefers written feedback?",
+              "translation_ru": "Что заставляет вас считать, что она предпочитает письменную обратную связь?"
+            },
+            {
+              "text": "What leads you to believe that the pain comes from the chair rather than the desk?",
+              "translation_ru": "Что заставляет вас считать, что дискомфорт связан со стулом, а не со столом?"
+            },
+            {
+              "text": "What leads you to believe that this route is faster during rush hour?",
+              "translation_ru": "Что заставляет вас считать, что этот маршрут быстрее в час пик?"
+            },
+            {
+              "text": "What leads you to believe that the model is overfitting rather than learning a useful signal?",
+              "translation_ru": "Что заставляет вас считать, что модель переобучается, а не извлекает полезный сигнал?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was lässt + person + glauben, dass + subordinate clause?",
+          "example": "Was lässt dich glauben, dass die Verzögerung von der Datenbank verursacht wird?",
+          "translation": "Что заставляет вас считать, что задержка вызвана базой данных?",
+          "examples": [
+            {
+              "text": "Was lässt dich glauben, dass der Markt für eine Premium-Version bereit ist?",
+              "translation_ru": "Что заставляет вас считать, что рынок готов к премиальной версии?"
+            },
+            {
+              "text": "Was lässt dich glauben, dass sie schriftliches Feedback bevorzugt?",
+              "translation_ru": "Что заставляет вас считать, что она предпочитает письменную обратную связь?"
+            },
+            {
+              "text": "Was lässt dich glauben, dass die Beschwerden eher vom Stuhl als vom Schreibtisch kommen?",
+              "translation_ru": "Что заставляет вас считать, что дискомфорт связан со стулом, а не со столом?"
+            },
+            {
+              "text": "Was lässt dich glauben, dass diese Strecke im Berufsverkehr schneller ist?",
+              "translation_ru": "Что заставляет вас считать, что этот маршрут быстрее в час пик?"
+            },
+            {
+              "text": "Was lässt dich glauben, dass das Modell überangepasst ist, statt ein nützliches Signal zu lernen?",
+              "translation_ru": "Что заставляет вас считать, что модель переобучается, а не извлекает полезный сигнал?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что заставляет вас считать, что …?",
+      "title_en": "What leads you to believe that [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP014",
+      "set_id": "GFP",
+      "pattern": "On what basis are we excluding these records from the analysis?",
+      "group_title": "On what basis are we [doing X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "On what basis are we [doing X]?",
+        "form": "On what basis + auxiliary + subject + verb?",
+        "metaphor_ru": "Практика вопросительной рамки: на каком основании мы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "On what basis + auxiliary + subject + verb?",
+          "example": "On what basis are we excluding these records from the analysis?",
+          "translation": "На каком основании мы исключаем эти записи из анализа?",
+          "examples": [
+            {
+              "text": "On what basis did the insurer reject the claim?",
+              "translation_ru": "На каком основании страховая компания отклонила заявление?"
+            },
+            {
+              "text": "On what basis are we calling this feature essential?",
+              "translation_ru": "На каком основании мы называем эту функцию обязательной?"
+            },
+            {
+              "text": "On what basis should one pronunciation be treated as the only correct one?",
+              "translation_ru": "На каком основании одно произношение следует считать единственно правильным?"
+            },
+            {
+              "text": "On what basis was the building declared safe to reopen?",
+              "translation_ru": "На каком основании здание признали безопасным для повторного открытия?"
+            },
+            {
+              "text": "On what basis are we forecasting demand beyond the current quarter?",
+              "translation_ru": "На каком основании мы прогнозируем спрос дальше текущего квартала?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Auf welcher Grundlage + verb + subject + ...?",
+          "example": "Auf welcher Grundlage schließen wir diese Datensätze aus der Analyse aus?",
+          "translation": "На каком основании мы исключаем эти записи из анализа?",
+          "examples": [
+            {
+              "text": "Auf welcher Grundlage hat die Versicherung den Antrag abgelehnt?",
+              "translation_ru": "На каком основании страховая компания отклонила заявление?"
+            },
+            {
+              "text": "Auf welcher Grundlage bezeichnen wir diese Funktion als unverzichtbar?",
+              "translation_ru": "На каком основании мы называем эту функцию обязательной?"
+            },
+            {
+              "text": "Auf welcher Grundlage sollte eine Aussprache als die einzig richtige gelten?",
+              "translation_ru": "На каком основании одно произношение следует считать единственно правильным?"
+            },
+            {
+              "text": "Auf welcher Grundlage wurde das Gebäude wieder zur Nutzung freigegeben?",
+              "translation_ru": "На каком основании здание признали безопасным для повторного открытия?"
+            },
+            {
+              "text": "Auf welcher Grundlage prognostizieren wir die Nachfrage über das laufende Quartal hinaus?",
+              "translation_ru": "На каком основании мы прогнозируем спрос дальше текущего квартала?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "На каком основании мы …?",
+      "title_en": "On what basis are we [doing X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP015",
+      "set_id": "GFP",
+      "pattern": "How do we know whether users understand the new navigation?",
+      "group_title": "How do we know whether [X]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "How do we know whether [X]?",
+        "form": "How do we know whether + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: как мы узнаем, … ли?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How do we know whether + clause?",
+          "example": "How do we know whether users understand the new navigation?",
+          "translation": "Как мы узнаем, понимают ли пользователи новую навигацию?",
+          "examples": [
+            {
+              "text": "How do we know whether the room is actually too humid?",
+              "translation_ru": "Как мы узнаем, действительно ли в комнате слишком влажно?"
+            },
+            {
+              "text": "How do we know whether the translation sounds natural to a native speaker?",
+              "translation_ru": "Как мы узнаем, звучит ли перевод естественно для носителя языка?"
+            },
+            {
+              "text": "How do we know whether the cheaper component will last as long?",
+              "translation_ru": "Как мы узнаем, прослужит ли более дешёвый компонент столько же?"
+            },
+            {
+              "text": "How do we know whether the customer saw the updated terms?",
+              "translation_ru": "Как мы узнаем, видел ли клиент обновлённые условия?"
+            },
+            {
+              "text": "How do we know whether the apparent trend survives after removing outliers?",
+              "translation_ru": "Как мы узнаем, сохраняется ли видимый тренд после удаления выбросов?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Woher wissen wir, ob + subordinate clause?",
+          "example": "Woher wissen wir, ob die Nutzer die neue Navigation verstehen?",
+          "translation": "Как мы узнаем, понимают ли пользователи новую навигацию?",
+          "examples": [
+            {
+              "text": "Woher wissen wir, ob der Raum tatsächlich zu feucht ist?",
+              "translation_ru": "Как мы узнаем, действительно ли в комнате слишком влажно?"
+            },
+            {
+              "text": "Woher wissen wir, ob die Übersetzung für einen Muttersprachler natürlich klingt?",
+              "translation_ru": "Как мы узнаем, звучит ли перевод естественно для носителя языка?"
+            },
+            {
+              "text": "Woher wissen wir, ob das günstigere Bauteil genauso lange hält?",
+              "translation_ru": "Как мы узнаем, прослужит ли более дешёвый компонент столько же?"
+            },
+            {
+              "text": "Woher wissen wir, ob der Kunde die aktualisierten Bedingungen gesehen hat?",
+              "translation_ru": "Как мы узнаем, видел ли клиент обновлённые условия?"
+            },
+            {
+              "text": "Woher wissen wir, ob der scheinbare Trend nach dem Entfernen der Ausreißer bestehen bleibt?",
+              "translation_ru": "Как мы узнаем, сохраняется ли видимый тренд после удаления выбросов?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Как мы узнаем, … ли?",
+      "title_en": "How do we know whether [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP016",
+      "set_id": "GFP",
+      "pattern": "What exactly do you mean by a 'minimal' release?",
+      "group_title": "What exactly do you mean by [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What exactly do you mean by [X]?",
+        "form": "What exactly do + subject + mean by + noun/-ing?",
+        "metaphor_ru": "Практика вопросительной рамки: что именно вы имеете в виду под …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What exactly do + subject + mean by + noun/-ing?",
+          "example": "What exactly do you mean by a 'minimal' release?",
+          "translation": "Что именно вы имеете в виду под «минимальным» релизом?",
+          "examples": [
+            {
+              "text": "What exactly do you mean by improving fluency during an unscripted conversation?",
+              "translation_ru": "Что именно вы имеете в виду под улучшением беглости во время неподготовленного разговора?"
+            },
+            {
+              "text": "What exactly do you mean by acceptable noise levels in a shared office?",
+              "translation_ru": "Что именно вы имеете в виду под приемлемым уровнем шума в общем офисе?"
+            },
+            {
+              "text": "What exactly do you mean by long-term value when comparing these two options?",
+              "translation_ru": "Что именно вы имеете в виду под долгосрочной ценностью при сравнении этих двух вариантов?"
+            },
+            {
+              "text": "What exactly do you mean by the data being 'complete' enough for migration?",
+              "translation_ru": "Что именно вы имеете в виду, говоря, что данные достаточно «полные» для миграции?"
+            },
+            {
+              "text": "What exactly do you mean by using the tool responsibly in a production environment?",
+              "translation_ru": "Что именно вы имеете в виду под ответственным использованием инструмента в продуктивной среде?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was genau meinst du mit + noun/-ing?",
+          "example": "Was genau meinst du mit einer „minimalen“ Veröffentlichung?",
+          "translation": "Что именно вы имеете в виду под «минимальным» релизом?",
+          "examples": [
+            {
+              "text": "Was genau meinst du mit besserer Sprechflüssigkeit in einem spontanen Gespräch?",
+              "translation_ru": "Что именно вы имеете в виду под улучшением беглости во время неподготовленного разговора?"
+            },
+            {
+              "text": "Was genau meinst du mit einem akzeptablen Geräuschpegel in einem gemeinsam genutzten Büro?",
+              "translation_ru": "Что именно вы имеете в виду под приемлемым уровнем шума в общем офисе?"
+            },
+            {
+              "text": "Was genau meinst du mit langfristigem Wert beim Vergleich dieser beiden Optionen?",
+              "translation_ru": "Что именно вы имеете в виду под долгосрочной ценностью при сравнении этих двух вариантов?"
+            },
+            {
+              "text": "Was genau meinst du damit, dass die Daten für die Migration „vollständig genug“ sind?",
+              "translation_ru": "Что именно вы имеете в виду, говоря, что данные достаточно «полные» для миграции?"
+            },
+            {
+              "text": "Was genau meinst du mit einer verantwortungsvollen Nutzung des Werkzeugs in einer Produktivumgebung?",
+              "translation_ru": "Что именно вы имеете в виду под ответственным использованием инструмента в продуктивной среде?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что именно вы имеете в виду под …?",
+      "title_en": "What exactly do you mean by [X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP017",
+      "set_id": "GFP",
+      "pattern": "Could you walk me through how the approval process works?",
+      "group_title": "Could you walk me through how [X works]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Could you walk me through how [X works]?",
+        "form": "Could you walk me through how + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: можете пошагово объяснить, как …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could you walk me through how + clause?",
+          "example": "Could you walk me through how the approval process works?",
+          "translation": "Можете пошагово объяснить, как работает процесс согласования?",
+          "examples": [
+            {
+              "text": "Could you walk me through how you prepared for the interview?",
+              "translation_ru": "Можете пошагово объяснить, как вы готовились к собеседованию?"
+            },
+            {
+              "text": "Could you walk me through how the backup is restored after a failure?",
+              "translation_ru": "Можете пошагово объяснить, как восстанавливается резервная копия после сбоя?"
+            },
+            {
+              "text": "Could you walk me through how this coffee machine is cleaned?",
+              "translation_ru": "Можете пошагово объяснить, как чистить эту кофемашину?"
+            },
+            {
+              "text": "Could you walk me through how you decide which phrases are worth memorising?",
+              "translation_ru": "Можете пошагово объяснить, как вы решаете, какие фразы стоит запоминать?"
+            },
+            {
+              "text": "Could you walk me through how the forecast changes when the assumption is removed?",
+              "translation_ru": "Можете пошагово объяснить, как меняется прогноз, если убрать это предположение?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Könntest du mir Schritt für Schritt erklären, wie + subordinate clause?",
+          "example": "Könntest du mir Schritt für Schritt erklären, wie der Genehmigungsprozess funktioniert?",
+          "translation": "Можете пошагово объяснить, как работает процесс согласования?",
+          "examples": [
+            {
+              "text": "Könntest du mir Schritt für Schritt erklären, wie du dich auf das Vorstellungsgespräch vorbereitet hast?",
+              "translation_ru": "Можете пошагово объяснить, как вы готовились к собеседованию?"
+            },
+            {
+              "text": "Könntest du mir Schritt für Schritt erklären, wie die Sicherung nach einem Ausfall wiederhergestellt wird?",
+              "translation_ru": "Можете пошагово объяснить, как восстанавливается резервная копия после сбоя?"
+            },
+            {
+              "text": "Könntest du mir Schritt für Schritt erklären, wie diese Kaffeemaschine gereinigt wird?",
+              "translation_ru": "Можете пошагово объяснить, как чистить эту кофемашину?"
+            },
+            {
+              "text": "Könntest du mir Schritt für Schritt erklären, wie du entscheidest, welche Wendungen sich zu lernen lohnen?",
+              "translation_ru": "Можете пошагово объяснить, как вы решаете, какие фразы стоит запоминать?"
+            },
+            {
+              "text": "Könntest du mir Schritt für Schritt erklären, wie sich die Prognose verändert, wenn die Annahme entfällt?",
+              "translation_ru": "Можете пошагово объяснить, как меняется прогноз, если убрать это предположение?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Можете пошагово объяснить, как …?",
+      "title_en": "Could you walk me through how [X works]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP018",
+      "set_id": "GFP",
+      "pattern": "Which matters more: consistency or intensity?",
+      "group_title": "Which matters more: [X] or [Y]?",
+      "level": "C1",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Which matters more: [X] or [Y]?",
+        "form": "Which matters more: + noun phrase + or + noun phrase?",
+        "metaphor_ru": "Практика вопросительной рамки: что важнее: … или …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Which matters more: + noun phrase + or + noun phrase?",
+          "example": "Which matters more: consistency or intensity?",
+          "translation": "Что важнее: регулярность или интенсивность?",
+          "examples": [
+            {
+              "text": "Which matters more: a lower purchase price or cheaper maintenance?",
+              "translation_ru": "Что важнее: более низкая цена покупки или более дешёвое обслуживание?"
+            },
+            {
+              "text": "Which matters more: reaching the deadline or preserving data quality?",
+              "translation_ru": "Что важнее: уложиться в срок или сохранить качество данных?"
+            },
+            {
+              "text": "Which matters more: living closer to work or having an extra room?",
+              "translation_ru": "Что важнее: жить ближе к работе или иметь дополнительную комнату?"
+            },
+            {
+              "text": "Which matters more: sounding natural or avoiding every small mistake?",
+              "translation_ru": "Что важнее: звучать естественно или избегать каждой мелкой ошибки?"
+            },
+            {
+              "text": "Which matters more: a model's average accuracy or its reliability on rare cases?",
+              "translation_ru": "Что важнее: средняя точность модели или её надёжность на редких случаях?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was ist wichtiger: + noun phrase + oder + noun phrase?",
+          "example": "Was ist wichtiger: Regelmäßigkeit oder Intensität?",
+          "translation": "Что важнее: регулярность или интенсивность?",
+          "examples": [
+            {
+              "text": "Was ist wichtiger: ein niedrigerer Kaufpreis oder günstigere Wartung?",
+              "translation_ru": "Что важнее: более низкая цена покупки или более дешёвое обслуживание?"
+            },
+            {
+              "text": "Was ist wichtiger: die Frist einzuhalten oder die Datenqualität zu sichern?",
+              "translation_ru": "Что важнее: уложиться в срок или сохранить качество данных?"
+            },
+            {
+              "text": "Was ist wichtiger: näher an der Arbeit zu wohnen oder ein zusätzliches Zimmer zu haben?",
+              "translation_ru": "Что важнее: жить ближе к работе или иметь дополнительную комнату?"
+            },
+            {
+              "text": "Was ist wichtiger: natürlich zu klingen oder jeden kleinen Fehler zu vermeiden?",
+              "translation_ru": "Что важнее: звучать естественно или избегать каждой мелкой ошибки?"
+            },
+            {
+              "text": "Was ist wichtiger: die durchschnittliche Genauigkeit eines Modells oder seine Zuverlässigkeit bei seltenen Fällen?",
+              "translation_ru": "Что важнее: средняя точность модели или её надёжность на редких случаях?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что важнее: … или …?",
+      "title_en": "Which matters more: [X] or [Y]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP019",
+      "set_id": "GFP",
+      "pattern": "Who else might have access to the archived files?",
+      "group_title": "Who else might [do X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "Who else might [do X]?",
+        "form": "Who else might + infinitive?",
+        "metaphor_ru": "Практика вопросительной рамки: кто ещё мог бы …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Who else might + infinitive?",
+          "example": "Who else might have access to the archived files?",
+          "translation": "У кого ещё может быть доступ к архивным файлам?",
+          "examples": [
+            {
+              "text": "Who else might benefit from a quieter waiting area?",
+              "translation_ru": "Кому ещё мог бы быть полезен более тихий зал ожидания?"
+            },
+            {
+              "text": "Who else might know why the invoice was blocked?",
+              "translation_ru": "Кто ещё может знать, почему счёт был заблокирован?"
+            },
+            {
+              "text": "Who else might be interested in practising these dialogues?",
+              "translation_ru": "Кому ещё может быть интересно практиковать эти диалоги?"
+            },
+            {
+              "text": "Who else might notice the problem before customers do?",
+              "translation_ru": "Кто ещё может заметить проблему раньше клиентов?"
+            },
+            {
+              "text": "Who else might challenge the assumption that growth will continue automatically?",
+              "translation_ru": "Кто ещё может оспорить предположение, что рост продолжится автоматически?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wer sonst könnte + infinitive?",
+          "example": "Wer sonst könnte Zugriff auf die archivierten Dateien haben?",
+          "translation": "У кого ещё может быть доступ к архивным файлам?",
+          "examples": [
+            {
+              "text": "Wer sonst könnte von einem ruhigeren Wartebereich profitieren?",
+              "translation_ru": "Кому ещё мог бы быть полезен более тихий зал ожидания?"
+            },
+            {
+              "text": "Wer sonst könnte wissen, warum die Rechnung gesperrt wurde?",
+              "translation_ru": "Кто ещё может знать, почему счёт был заблокирован?"
+            },
+            {
+              "text": "Wer sonst könnte daran interessiert sein, diese Dialoge zu üben?",
+              "translation_ru": "Кому ещё может быть интересно практиковать эти диалоги?"
+            },
+            {
+              "text": "Wer sonst könnte das Problem bemerken, bevor es die Kunden tun?",
+              "translation_ru": "Кто ещё может заметить проблему раньше клиентов?"
+            },
+            {
+              "text": "Wer sonst könnte die Annahme infrage stellen, dass das Wachstum automatisch weitergeht?",
+              "translation_ru": "Кто ещё может оспорить предположение, что рост продолжится автоматически?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Кто ещё мог бы …?",
+      "title_en": "Who else might [do X]?",
+      "group_id": "GFP"
+    },
+    {
+      "id": "GFP020",
+      "set_id": "GFP",
+      "pattern": "What remains to be done before the change can go live?",
+      "group_title": "What remains to be done before [X]?",
+      "level": "B2",
+      "logic": {
+        "function": "productive-inquiry",
+        "core": "What remains to be done before [X]?",
+        "form": "What remains to be done before + clause?",
+        "metaphor_ru": "Практика вопросительной рамки: что ещё нужно сделать, прежде чем …?."
+      },
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What remains to be done before + clause?",
+          "example": "What remains to be done before the change can go live?",
+          "translation": "Что ещё нужно сделать, прежде чем изменение можно будет запустить в продуктиве?",
+          "examples": [
+            {
+              "text": "What remains to be done before we sign the rental agreement?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем мы подпишем договор аренды?"
+            },
+            {
+              "text": "What remains to be done before the dataset can be published?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем набор данных можно будет опубликовать?"
+            },
+            {
+              "text": "What remains to be done before you can record a clean voice sample?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем можно будет записать чистый образец голоса?"
+            },
+            {
+              "text": "What remains to be done before the garden is ready for winter?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем сад будет готов к зиме?"
+            },
+            {
+              "text": "What remains to be done before we can compare the two scenarios fairly?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем мы сможем честно сравнить два сценария?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was muss noch erledigt werden, bevor + subordinate clause?",
+          "example": "Was muss noch erledigt werden, bevor die Änderung produktiv gehen kann?",
+          "translation": "Что ещё нужно сделать, прежде чем изменение можно будет запустить в продуктиве?",
+          "examples": [
+            {
+              "text": "Was muss noch erledigt werden, bevor wir den Mietvertrag unterschreiben?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем мы подпишем договор аренды?"
+            },
+            {
+              "text": "Was muss noch erledigt werden, bevor der Datensatz veröffentlicht werden kann?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем набор данных можно будет опубликовать?"
+            },
+            {
+              "text": "Was muss noch erledigt werden, bevor du eine saubere Sprachaufnahme machen kannst?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем можно будет записать чистый образец голоса?"
+            },
+            {
+              "text": "Was muss noch erledigt werden, bevor der Garten für den Winter vorbereitet ist?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем сад будет готов к зиме?"
+            },
+            {
+              "text": "Was muss noch erledigt werden, bevor wir die beiden Szenarien fair vergleichen können?",
+              "translation_ru": "Что ещё нужно сделать, прежде чем мы сможем честно сравнить два сценария?"
+            }
+          ]
+        }
+      ],
+      "title_ru": "Что ещё нужно сделать, прежде чем …?",
+      "title_en": "What remains to be done before [X]?",
+      "group_id": "GFP"
+    }
+  ]
+}
