@@ -75,7 +75,7 @@
       {
         "lang": "en",
         "formula": "I'd rather [do X] than [do Y]; I'd rather [someone did Z].",
-        "example": "I'd rather **review the contract tonight than rush it tomorrow**, but I'd rather **legal checked the final wording**.",
+        "example": "I'd rather **review the contract tonight than rush it tomorrow**, but I'd rather **the legal team checked the final wording**.",
         "translation": "Я лучше просмотрю договор сегодня вечером, чем буду спешить завтра, но предпочёл бы, чтобы финальную формулировку проверили юристы.",
         "examples": [
           {
@@ -115,7 +115,7 @@
             "translation_ru": "Я лучше приготовлю дома, чем буду ждать столик, хотя в этот раз предпочёл бы, чтобы меню выбрал ты."
           },
           {
-            "text": "Sie würden lieber **die Ankündigung verschieben, als unsichere Zahlen zu veröffentlichen**, aber ihnen wäre lieber, **Finance bestätigte die Zahlen bis Mittag**.",
+            "text": "Sie würden lieber **die Ankündigung verschieben, als unsichere Zahlen zu veröffentlichen**, aber ihnen wäre lieber, **die Finanzabteilung bestätigte die Zahlen bis Mittag**.",
             "translation_ru": "Они скорее отложат объявление, чем опубликуют сомнительные цифры, но хотели бы, чтобы финансовый отдел подтвердил данные к полудню."
           }
         ]
@@ -241,7 +241,7 @@
             "translation_ru": "Я имею в виду, что встреча была полезной, но вопрос ответственности она не решила."
           },
           {
-            "text": "**Was ich meine, ist:** Ich kann die Änderung unterstützen, wenn wir eine Rückfalloption behalten.",
+            "text": "**Was ich meine, ist:** Ich kann die Änderung unterstützen, wenn wir eine **Rollback-Möglichkeit** behalten.",
             "translation_ru": "Я имею в виду, что могу поддержать изменение, если мы сохраним возможность отката."
           },
           {
@@ -701,16 +701,16 @@
       },
       {
         "lang": "de",
-        "formula": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → Mir fehlen derzeit genügend Informationen, um das zu bestätigen.",
-        "example": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → **Mir fehlen derzeit genügend Informationen, um das zu bestätigen.**",
+        "formula": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → Mir liegen derzeit nicht genügend Informationen vor, um das zu bestätigen.",
+        "example": "Ich weiß es nicht. → Ich bin mir noch nicht sicher. → **Mir liegen derzeit nicht genügend Informationen vor, um das zu bestätigen.**",
         "translation": "Не знаю. → Пока не уверен. → На данном этапе у меня недостаточно информации, чтобы это подтвердить.",
         "examples": [
           {
-            "text": "Ich weiß nicht, wann es versendet wird. → Beim Versanddatum bin ich mir noch nicht sicher. → **Mir fehlen derzeit genügend Informationen, um das Versanddatum zu bestätigen.**",
+            "text": "Ich weiß nicht, wann es versendet wird. → Beim Versanddatum bin ich mir noch nicht sicher. → **Mir liegen derzeit nicht genügend Informationen vor, um das Versanddatum zu bestätigen.**",
             "translation_ru": "Не знаю, когда это отправят. → Пока не уверен в дате отправки. → На данном этапе у меня недостаточно информации, чтобы подтвердить дату отправки."
           },
           {
-            "text": "Ich weiß nicht, ob die Behandlung geholfen hat. → Ich bin mir noch nicht sicher, ob sie geholfen hat. → **Uns fehlen noch genügend Verlaufsdaten, um die Wirkung zu bestätigen.**",
+            "text": "Ich weiß nicht, ob die Behandlung geholfen hat. → Ich bin mir noch nicht sicher, ob sie geholfen hat. → **Uns liegen noch nicht genügend Verlaufsdaten vor, um die Wirkung zu bestätigen.**",
             "translation_ru": "Не знаю, помогло ли лечение. → Пока не уверен, помогло ли оно. → Пока у нас недостаточно данных наблюдения, чтобы подтвердить эффект."
           },
           {
@@ -895,14 +895,14 @@
             "translation_ru": "У вас есть ко мне вопросы?"
           },
           {
-            "text": "❌ We sent a follow-up question to them for answer. → ✓ We **sent them a follow-up question**.",
-            "translation_ru": "Мы отправили им дополнительный вопрос."
+            "text": "❌ We have a follow-up question to them. → ✓ We have **a follow-up question for them**.",
+            "translation_ru": "У нас к ним есть дополнительный вопрос."
           }
         ]
       },
       {
         "lang": "de",
-        "formula": "❌ auf jemanden warten ohne Präposition → ✓ auf [jemanden + Akkusativ] warten",
+        "formula": "❌ jemanden warten → ✓ auf [jemanden + Akkusativ] warten",
         "example": "❌ Ich warte dich unten. → ✓ Ich **warte unten auf dich**.",
         "translation": "Я жду тебя внизу.",
         "examples": [
@@ -982,8 +982,8 @@
             "translation_ru": "Этот пример помогает учащимся."
           },
           {
-            "text": "❌ Können Sie uns helfen? → ✓ Können Sie **uns helfen**?",
-            "translation_ru": "Можете нам помочь?"
+            "text": "❌ Können Sie sie bei der Einrichtung helfen? → ✓ Können Sie **ihr bei der Einrichtung helfen**?",
+            "translation_ru": "Можете помочь ей с настройкой?"
           },
           {
             "text": "❌ Die Checkliste hat die neue Kollegin geholfen. → ✓ Die Checkliste hat **der neuen Kollegin geholfen**.",
@@ -1103,9 +1103,9 @@
       },
       {
         "lang": "de",
-        "formula": "Erst als [Y], wurde mir [X] klar.",
-        "example": "**Erst als ich den Lüfter ausschaltete, wurde mir klar, wie laut er gewesen war.**",
-        "translation": "Только после выключения я понял, насколько шумел вентилятор.",
+        "formula": "Ich erkannte [X] erst, als [Y]. → Erst als [Y], wurde mir [X] klar.",
+        "example": "Ich erkannte erst, **wie laut der Lüfter war**, als ich ihn ausschaltete. → **Erst als ich den Lüfter ausschaltete, wurde mir klar, wie laut er gewesen war.**",
+        "translation": "Я понял, насколько шумел вентилятор, только когда выключил его. → Только после выключения я понял, насколько он шумел.",
         "examples": [
           {
             "text": "**Erst als der Kunde den Export öffnete, wurde mir klar, dass er unvollständig war.**",
