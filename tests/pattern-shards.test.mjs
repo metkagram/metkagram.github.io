@@ -32,7 +32,7 @@ test("every shard preserves the frozen corpus identity and membership baseline",
   assert.equal(allPatterns.length, baseline.basePatterns.count + expansionPatternIds.length, "established raw patterns plus complete expansion");
   assert.deepEqual(allPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...expansionPatternIds].sort(), "all new shard IDs must be present");
   assert.equal(new Set(allPatterns.map(pattern => pattern.id)).size, allPatterns.length, "all shard IDs must be unique");
-  assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length + expansionSetIds.length, "all established shards plus 15 additive sets");
+  assert.equal(shards.size, Object.keys(baseline.basePatterns.setCounts).length + expansionSetIds.length, "all established shards plus 20 additive sets");
   assert.equal(patterns.length, baseline.basePatterns.count, "base pattern count parity");
   const ids = patterns.map((pattern) => pattern.id);
   assert.equal(new Set(ids).size, ids.length, "duplicate pattern id survived sharding");
