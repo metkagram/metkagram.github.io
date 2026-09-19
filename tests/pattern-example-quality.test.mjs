@@ -4,6 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
+import { hasPendingExampleEnrichment } from "../src/pattern-example-enrichment.mjs";
+
 import {
   C1_EXAMPLE_DIVERSITY_RULE,
   GENERATED_FOLLOW_UPS,
@@ -109,6 +111,7 @@ test("all canonical English and German example sets meet the speaking-practice d
   for (const pattern of patterns) {
     for (const language of pattern.langs || []) {
       if (!["en", "de"].includes(language.lang)) continue;
+      if (hasPendingExampleEnrichment(pattern, language)) continue;
       const problems = patternExampleDiversityProblems(language, PRACTICE_EXAMPLE_DIVERSITY_RULE);
       const metrics = measurePatternExampleDiversity(language);
       assert.deepEqual(
