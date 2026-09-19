@@ -576,85 +576,85 @@
       "id": "GRMREL031",
       "group_id": "REL",
       "set_id": "REL",
-      "title_ru": "Узнав об изменении, партнёры скорректировали свои планы",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «узнав об изменении, партнёры скорректировали свои планы» в живом контексте.",
+      "title_ru": "Предшествующее пассивное действие: «после того как …»",
+      "metaphor_ru": "Грамматическая задача: показать, что пассивное действие завершилось раньше основного события.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Having been informed of the change, the partners adjusted their plans [the team was reviewing the new policy]",
-          "example": "Having been informed of the change, the partners adjusted their plans in a situation where the team was reviewing the new policy.",
-          "translation": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где команда проверяла новую политику.",
+          "formula": "Having been [past participle], [subject] [past-tense result].",
+          "example": "Having been warned about black ice, the driver slowed down before the bridge.",
+          "translation": "После предупреждения о гололёде водитель снизил скорость перед мостом.",
           "examples": [
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где команда проверяла новую политику."
+              "text": "Having been warned about black ice, the driver slowed down before the bridge.",
+              "translation_ru": "После предупреждения о гололёде водитель снизил скорость перед мостом."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Having been given access to the production logs, the engineer traced the failure within an hour.",
+              "translation_ru": "Получив доступ к продуктивным логам, инженер нашёл причину сбоя в течение часа."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Having been shortlisted for the role, Maya prepared examples from her recent projects.",
+              "translation_ru": "Попав в шорт-лист на вакансию, Майя подготовила примеры из своих недавних проектов."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Having been told the museum would close early, we changed the order of our visit.",
+              "translation_ru": "Узнав, что музей закроется раньше, мы изменили порядок посещения."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где расписание изменили в последний момент."
+              "text": "Having been assigned a quieter room, the speaker recorded the interview without interruptions.",
+              "translation_ru": "Получив более тихую комнату, спикер записал интервью без помех."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Having been shown the revised floor plan, the tenants asked for more storage space.",
+              "translation_ru": "Ознакомившись с обновлённым планом квартиры, жильцы попросили предусмотреть больше мест для хранения."
             },
             {
-              "text": "**Having been informed of the change, the partners adjusted their plans in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где участники ждали объяснения."
+              "text": "Having been invited to challenge the proposal, the reviewers focused on its riskiest assumptions.",
+              "translation_ru": "Получив приглашение критически проверить предложение, эксперты сосредоточились на самых рискованных допущениях."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an [das Team die neue Regelung prüfte]",
-          "example": "Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где команда проверяла новую политику.",
+          "formula": "Nachdem [X] [Partizip II] worden war/waren, [Y].",
+          "example": "Nachdem der Fahrer vor Glatteis gewarnt worden war, fuhr er vor der Brücke langsamer.",
+          "translation": "После предупреждения о гололёде водитель снизил скорость перед мостом.",
           "examples": [
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где команда проверяла новую политику."
+              "text": "Nachdem der Fahrer vor Glatteis gewarnt worden war, fuhr er vor der Brücke langsamer.",
+              "translation_ru": "После предупреждения о гололёде водитель снизил скорость перед мостом."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Nachdem dem Ingenieur Zugriff auf die Produktionsprotokolle gewährt worden war, fand er die Fehlerursache innerhalb einer Stunde.",
+              "translation_ru": "Получив доступ к продуктивным логам, инженер нашёл причину сбоя в течение часа."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Nachdem Maya für die Stelle in die engere Auswahl genommen worden war, bereitete sie Beispiele aus ihren letzten Projekten vor.",
+              "translation_ru": "Попав в шорт-лист на вакансию, Майя подготовила примеры из своих недавних проектов."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Nachdem wir über die frühere Schließung des Museums informiert worden waren, änderten wir die Reihenfolge unseres Besuchs.",
+              "translation_ru": "Узнав, что музей закроется раньше, мы изменили порядок посещения."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где расписание изменили в последний момент."
+              "text": "Nachdem dem Sprecher ein ruhigerer Raum zugewiesen worden war, nahm er das Interview ohne Unterbrechungen auf.",
+              "translation_ru": "Получив более тихую комнату, спикер записал интервью без помех."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Nachdem den Mietern der überarbeitete Grundriss gezeigt worden war, baten sie um mehr Stauraum.",
+              "translation_ru": "Ознакомившись с обновлённым планом квартиры, жильцы попросили предусмотреть больше мест для хранения."
             },
             {
-              "text": "**Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Узнав об изменении, партнёры скорректировали свои планы в ситуации, где участники ждали объяснения."
+              "text": "Nachdem die Gutachter ausdrücklich zur Kritik am Vorschlag aufgefordert worden waren, konzentrierten sie sich auf die riskantesten Annahmen.",
+              "translation_ru": "Получив приглашение критически проверить предложение, эксперты сосредоточились на самых рискованных допущениях."
             }
           ]
         }
       ],
       "formulas": [
-        "Having been informed of the change, the partners adjusted their plans [the team was reviewing the new policy]",
-        "Nachdem die Partner über die Änderung informiert worden waren, passten sie ihre Pläne an [das Team die neue Regelung prüfte]"
+        "Having been [past participle], [subject] [past-tense result].",
+        "Nachdem [X] [Partizip II] worden war/waren, [Y]."
       ],
       "gen": {
         "status": "curated",
