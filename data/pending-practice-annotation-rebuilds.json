@@ -206,6 +206,11 @@
       "id": "XPRTRN006",
       "reason": "new_pattern_requires_local_annotation_build",
       "changed_at": "2026-09-19"
+    },
+    {
+      "id": "GRMADJ001",
+      "reason": "source_text_changed_requires_local_annotation_rebuild",
+      "changed_at": "2026-09-19"
     }
   ]
 }
