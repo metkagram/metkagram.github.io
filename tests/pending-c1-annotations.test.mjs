@@ -9,7 +9,8 @@ import { loadPracticeAnnotationLayer } from "../src/practice-annotations.mjs";
 test("rewritten pattern examples are explicitly pending until local annotation is rebuilt", () => {
   const content = loadContent();
   const { items, ledger } = loadPracticeAnnotationLayer(content, process.cwd());
-  const ids = new Set((ledger.patterns || []).map((entry) => entry.id));
+  const reasonById = new Map((ledger.patterns || []).map((entry) => [entry.id, entry.reason]));
+  const ids = new Set(reasonById.keys());
   const c1Patterns = content.advancedPatterns.filter((pattern) => /^C1[A-Z]+\d+$/.test(pattern.id));
 
   assert.equal(c1Patterns.length, 20);
@@ -34,7 +35,7 @@ test("rewritten pattern examples are explicitly pending until local annotation i
         assert.equal(record.validation?.status, "pending");
         assert.equal(record.validation?.needs_rebuild, true);
         assert.equal(record.validation?.generator, "none");
-        assert.equal(record.validation?.reason, "source_text_changed_requires_local_annotation_rebuild");
+        assert.equal(record.validation?.reason, reasonById.get(pattern.id));
         assert.deepEqual(record.spans, []);
         assert.equal(
           record.validation?.text_sha256,
