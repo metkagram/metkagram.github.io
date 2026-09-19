@@ -9,9 +9,18 @@ import { patternPath } from '../../src/seo-slugs.mjs';
 export const frozenCorpus = JSON.parse(fs.readFileSync(new URL('../fixtures/pattern-corpus-baseline.json', import.meta.url), 'utf8'));
 export const expansionSetIds = [...'ABCDEFGHIJKLMNO'].map(suffix => `GF${suffix}`);
 export const expansionPatternIds = expansionSetIds.flatMap(setId => Array.from({ length: 20 }, (_, i) => `${setId}${String(i + 1).padStart(3, '0')}`));
-const expansionIds = new Set(expansionPatternIds);
+export const practiceExpansionPatternIds = [
+  "XPRCGR004", "XPRCGR005", "XPRCGR006",
+  "XPRSPK004", "XPRSPK005", "XPRSPK006",
+  "XPRINT004", "XPRINT005", "XPRINT006",
+  "XPRREG004", "XPRREG005", "XPRREG006",
+  "XPRRTR010", "XPRRTR011", "XPRRTR012",
+  "XPRTRN004", "XPRTRN005", "XPRTRN006"
+];
+const additivePatternIds = [...expansionPatternIds, ...practiceExpansionPatternIds];
+const expansionIds = new Set(additivePatternIds);
 export const isEstablishedPattern = pattern => !expansionIds.has(pattern.id);
-export const expectedPatternCount = frozenCorpus.mergedCorpus.patternCount + expansionPatternIds.length;
+export const expectedPatternCount = frozenCorpus.mergedCorpus.patternCount + additivePatternIds.length;
 export const expectedStudySetCount = frozenCorpus.mergedCorpus.studySetCount + expansionSetIds.length;
 export const minimumShardCount = frozenCorpus.basePatterns.count + expansionPatternIds.length;
 export const canonicalContent = loadContent();
@@ -21,7 +30,7 @@ export const historicalAliases = JSON.parse(fs.readFileSync(new URL('../../data/
 assert.equal(frozenCorpus.mergedCorpus.patternCount, 630, 'Do not silently regenerate the preservation baseline');
 assert.equal(canonicalIds.length, expectedPatternCount);
 assert.equal(new Set(canonicalIds).size, canonicalIds.length);
-assert.deepEqual(canonicalContent.advancedPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...expansionPatternIds].sort());
+assert.deepEqual(canonicalContent.advancedPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...additivePatternIds].sort());
 const established = canonicalContent.advancedPatterns.filter(isEstablishedPattern);
 assert.equal(established.length, frozenCorpus.mergedCorpus.patternCount);
 const routes = established.map(pattern => `${pattern.id}:${patternPath('en', pattern)}`).sort().join('\n');
