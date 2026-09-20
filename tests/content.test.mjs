@@ -288,7 +288,7 @@ test("public reasoning pattern pages render both target languages", () => {
   assert.match(html, /data-target-language="en"/);
   assert.match(html, /data-target-language="de"/);
   assert.match(html, /01<\/span><p class="eyebrow">Structure<\/p>/);
-  assert.match(html, /02<\/span><p class="eyebrow">Anchor phrase<\/p>/);
+  assert.doesNotMatch(html, /02<\/span><p class="eyebrow">Anchor phrase<\/p>/);
   assert.match(html, /03<\/b>Try variations/);
   assert.match(html, /id="reasoning-move"/);
 });
