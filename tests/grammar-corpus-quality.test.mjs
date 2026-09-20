@@ -22,10 +22,10 @@ test('every public pattern has examples and Russian learner translations', () =>
   console.log(`GRAMMAR_AUDIT patterns=${content.advancedPatterns.length} sets=${content.studySets.sets.length} language_examples=${examples}`);
 });
 
-test('the grammar-flexibility expansion publishes all 300 patterns in 15 registered sets', () => {
-  const additions = content.advancedPatterns.filter((pattern) => /^GF[A-O]\d{3}$/.test(pattern.id));
-  assert.equal(additions.length, 300);
-  for (const suffix of 'ABCDEFGHIJKLMNO') {
+test('the grammar-flexibility expansion publishes all 400 patterns in 20 registered sets', () => {
+  const additions = content.advancedPatterns.filter((pattern) => /^GF[A-T]\d{3}$/.test(pattern.id));
+  assert.equal(additions.length, 400);
+  for (const suffix of 'ABCDEFGHIJKLMNOPQRST') {
     const id = `GF${suffix}`;
     assert.ok(content.studySets.sets.some((set) => set.id === id), `${id}: missing study set`);
     const patterns = additions.filter((pattern) => pattern.set_id === id);
