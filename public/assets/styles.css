@@ -36,6 +36,12 @@
   --radius: .25rem;
 }
 
+/* Final homepage editorial scale override. */
+body.home-studio { background: #fff !important; color: var(--ink) !important; }
+body.home-studio .studio-manifest { min-height: 0 !important; padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 8vw, 8rem) !important; background: #fff !important; }
+body.home-studio .studio-manifest h1 { max-width: 14ch !important; font-size: clamp(3rem, 5vw, 5.4rem) !important; line-height: .95 !important; letter-spacing: -.06em !important; text-transform: none !important; }
+body.home-studio .studio-manifest > p:not(.eyebrow) { max-width: 48rem !important; font-size: clamp(1rem, 1.5vw, 1.3rem) !important; line-height: 1.5 !important; }
+
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; background: var(--paper); }
@@ -870,6 +876,29 @@ body.pattern-reader-body .connectivity-section .pattern-index > a:hover {
   padding-inline: .5rem !important;
   background: #f5f4f0 !important;
   color: var(--ink) !important;
+}
+
+/* Home hero: editorial width over poster-like stacking. */
+body.home-studio {
+  background: #fff !important;
+  color: var(--ink) !important;
+}
+body.home-studio .studio-manifest {
+  min-height: 0 !important;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 8vw, 8rem) !important;
+  background: #fff !important;
+}
+body.home-studio .studio-manifest h1 {
+  max-width: 14ch !important;
+  font-size: clamp(3rem, 5vw, 5.4rem) !important;
+  line-height: .95 !important;
+  letter-spacing: -.06em !important;
+  text-transform: none !important;
+}
+body.home-studio .studio-manifest > p:not(.eyebrow) {
+  max-width: 48rem !important;
+  font-size: clamp(1rem, 1.5vw, 1.3rem) !important;
+  line-height: 1.5 !important;
 }
 @media (max-width: 700px) {
   body.pattern-reader-body .connectivity-section {
@@ -2514,6 +2543,12 @@ body:not(.home-studio) .practice-goal-link:hover small {
   color: inherit !important;
 }
 
+/* Final homepage editorial scale override. */
+body.home-studio { background: #fff !important; color: var(--ink) !important; }
+body.home-studio .studio-manifest { min-height: 0 !important; padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 8vw, 8rem) !important; background: #fff !important; }
+body.home-studio .studio-manifest h1 { max-width: 14ch !important; font-size: clamp(3rem, 5vw, 5.4rem) !important; line-height: .95 !important; letter-spacing: -.06em !important; text-transform: none !important; }
+body.home-studio .studio-manifest > p:not(.eyebrow) { max-width: 48rem !important; font-size: clamp(1rem, 1.5vw, 1.3rem) !important; line-height: 1.5 !important; }
+
 /* Sitewide light editorial pass: keep every public surface quiet, white, and readable. */
 body.gateway-body {
   background: #fff !important;
@@ -2610,3 +2645,9 @@ body.studio-route-body .studio-route--explore .page-head h1 {
     font-size: clamp(2.25rem, 11vw, 3.8rem) !important;
   }
 }
+
+/* Final homepage editorial scale override. */
+body.home-studio { background: #fff !important; color: var(--ink) !important; }
+body.home-studio .studio-manifest { min-height: 0 !important; padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 8vw, 8rem) !important; background: #fff !important; }
+body.home-studio .studio-manifest h1 { max-width: 14ch !important; font-size: clamp(3rem, 5vw, 5.4rem) !important; line-height: .95 !important; letter-spacing: -.06em !important; text-transform: none !important; }
+body.home-studio .studio-manifest > p:not(.eyebrow) { max-width: 48rem !important; font-size: clamp(1rem, 1.5vw, 1.3rem) !important; line-height: 1.5 !important; }
