@@ -20,8 +20,9 @@
     box.setAttribute("role", "dialog");
     box.setAttribute("aria-label", ru ? "Настройки аналитики" : "Analytics settings");
     box.setAttribute("data-nosnippet", "");
+    box.className = "analytics-consent";
     box.style.cssText = "position:fixed;z-index:2147483647;left:1rem;right:1rem;bottom:1rem;max-width:44rem;margin:auto;padding:1rem;border-radius:12px;background:#111;color:#fff;font:16px/1.45 system-ui;box-shadow:0 8px 30px #0008";
-    box.innerHTML = (ru ? "Мы используем необязательную аналитику, чтобы улучшать сайт. " : "We use optional analytics to improve this site. ") + "<button type=button data-analytics-yes>" + (ru ? "Разрешить" : "Allow") + "</button> <button type=button data-analytics-no>" + (ru ? "Отклонить" : "Decline") + "</button>";
+    box.innerHTML = "<p class=analytics-consent__message>" + (ru ? "Мы используем необязательную аналитику, чтобы улучшать сайт." : "We use optional analytics to improve this site.") + "</p><div class=analytics-consent__actions><button type=button class=analytics-consent__allow data-analytics-yes>" + (ru ? "Разрешить" : "Allow") + "</button><button type=button class=analytics-consent__decline data-analytics-no>" + (ru ? "Отклонить" : "Decline") + "</button></div>";
     box.addEventListener("click", function (event) {
       if (event.target.matches("[data-analytics-yes]")) { localStorage.setItem(key, "yes"); box.remove(); load(); }
       if (event.target.matches("[data-analytics-no]")) { localStorage.setItem(key, "no"); box.remove(); }
