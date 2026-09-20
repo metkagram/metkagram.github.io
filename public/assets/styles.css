@@ -836,6 +836,44 @@ th, td { padding: .7rem; border-bottom: 1px solid var(--line); }
   .pattern-reader-body .pattern-comparison-list > li::before, .pattern-reader-body .pattern-comparison-list > li + li::before { top: 1.1rem; left: 0; }
 }
 
+/* Nearby-pattern navigation should read as a continuation, not a second hero. */
+body.pattern-reader-body .connectivity-section {
+  max-width: 92rem !important;
+  margin-inline: auto !important;
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(2rem, 5vw, 5.5rem) !important;
+  border-top: 1px solid var(--line) !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+body.pattern-reader-body .connectivity-section h2 {
+  max-width: 24ch;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.2rem, 4vw, 3.8rem) !important;
+  line-height: 1 !important;
+}
+body.pattern-reader-body .connectivity-section .pattern-index {
+  max-width: none !important;
+  padding: 0 !important;
+  border-top: 1px solid var(--line) !important;
+}
+body.pattern-reader-body .connectivity-section .pattern-index > a {
+  min-height: 0 !important;
+  padding: 1.15rem 0 !important;
+  border-color: var(--line) !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+body.pattern-reader-body .connectivity-section .pattern-index > a:hover {
+  padding-inline: .5rem !important;
+  background: #f5f4f0 !important;
+  color: var(--ink) !important;
+}
+@media (max-width: 700px) {
+  body.pattern-reader-body .connectivity-section {
+    padding-inline: 1.25rem !important;
+  }
+}
+
 /* Annotation studio home: a single library for markup and reusable patterns. */
 body.home-studio { min-height: 100vh; background-color: var(--studio-stage); background-image: linear-gradient(rgba(44, 45, 46, .16), rgba(44, 45, 46, .16)), url("/assets/images/studio-texture-graphite.jpg"); background-size: cover; background-attachment: fixed; color: #111; }
 body.home-studio::before { opacity: .16; background-image: radial-gradient(#fff 0.5px, transparent .6px); mix-blend-mode: screen; }
