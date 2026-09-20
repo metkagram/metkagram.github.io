@@ -2017,9 +2017,9 @@ body .document-page .annotation-mode-switch {
 
 /* Pattern Reader: one quiet reading column, fewer nested cards, tighter rhythm. */
 body.pattern-reader-body .pattern-page {
-  width: min(calc(100% - 3rem), 72rem) !important;
+  width: min(calc(100% - 4rem), 92rem) !important;
   margin: 1rem auto 2rem !important;
-  padding: clamp(1.5rem, 3.5vw, 3rem) clamp(1rem, 3.5vw, 3rem) !important;
+  padding: clamp(1.5rem, 3.5vw, 3rem) clamp(2rem, 5vw, 5.5rem) !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: #fff !important;
@@ -2028,9 +2028,11 @@ body.pattern-reader-body .pattern-page .breadcrumbs {
   padding-bottom: 1.5rem !important;
 }
 body.pattern-reader-body .pattern-page-head {
+  max-width: 78rem !important;
   margin-bottom: 2.25rem !important;
 }
 body.pattern-reader-body .pattern-page-head h1 {
+  max-width: 24ch !important;
   font-size: clamp(2.35rem, 4vw, 4rem) !important;
 }
 body.pattern-reader-body .pattern-comparison {
