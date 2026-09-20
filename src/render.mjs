@@ -551,7 +551,7 @@ export function patternPage(locale, pattern, serviceAnnotations = {}) {
     const germanExample = german?.card?.examples?.[index];
     return `<li class="pattern-comparison-card"><div class="pattern-comparison-sentences">${renderSentence(english, englishExample, "EN · " + t.english)}${renderSentence(german, germanExample, "DE · " + t.german)}</div>${renderTranslation(englishExample?.translation || germanExample?.translation)}</li>`;
   }).join("")}</ol></section>` : "";
-  const localizedDescription = description ? `<div class="pattern-localized-description"><p class="eyebrow">${t.explanation}</p><p class="lede" lang="${locale}">${escapeHtml(description)}</p></div>` : "";
+  const localizedDescription = description ? `<div class="pattern-localized-description"><p class="lede" lang="${locale}">${escapeHtml(description)}</p></div>` : "";
   const nativeSupportDescription = locale === "en" && pattern.description_ru
     ? `<div class="native-pattern-description" data-native-translation hidden><p class="eyebrow">${t.explanation}</p><p class="lede" lang="ru">${escapeHtml(pattern.description_ru)}</p></div>`
     : "";

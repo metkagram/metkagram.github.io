@@ -2075,7 +2075,8 @@ body.pattern-reader-body .pattern-page-head h1 {
 }
 body.pattern-reader-body .pattern-comparison {
   gap: 2rem !important;
-  padding-top: 1.5rem !important;
+  padding-top: 1rem !important;
+  border-top: 0 !important;
 }
 body.pattern-reader-body .pattern-formulas,
 body.pattern-reader-body .pattern-primary-example,
@@ -2086,14 +2087,19 @@ body.pattern-reader-body .pattern-comparison-card {
 }
 body.pattern-reader-body .pattern-formulas > div {
   padding: .9rem 0 !important;
-  border-bottom: 1px solid var(--reader-line);
+  border-bottom: 0 !important;
 }
 body.pattern-reader-body .pattern-formulas > div:last-child { border-bottom: 0; }
 body.pattern-reader-body .pattern-comparison-language {
   padding: .9rem 0 !important;
+  border: 0 !important;
+}
+body.pattern-reader-body .pattern-comparison-language + .pattern-comparison-language {
+  border: 0 !important;
 }
 body.pattern-reader-body .pattern-variations h2 {
   padding-bottom: .65rem !important;
+  border-bottom: 0 !important;
 }
 body.pattern-reader-body .pattern-comparison-list > li {
   padding-bottom: 1rem !important;
