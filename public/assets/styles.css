@@ -848,8 +848,11 @@ body.pattern-reader-body .connectivity-section {
 body.pattern-reader-body .connectivity-section h2 {
   max-width: 24ch;
   margin-bottom: 1.5rem;
-  font-size: clamp(2.2rem, 4vw, 3.8rem) !important;
+  font-size: clamp(2rem, 3vw, 2.85rem) !important;
   line-height: 1 !important;
+}
+body.pattern-reader-body .connectivity-section > .eyebrow {
+  display: none;
 }
 body.pattern-reader-body .connectivity-section .pattern-index {
   max-width: none !important;
@@ -858,7 +861,7 @@ body.pattern-reader-body .connectivity-section .pattern-index {
 }
 body.pattern-reader-body .connectivity-section .pattern-index > a {
   min-height: 0 !important;
-  padding: 1.15rem 0 !important;
+  padding: .9rem 0 !important;
   border-color: var(--line) !important;
   background: #fff !important;
   box-shadow: none !important;
@@ -2071,7 +2074,7 @@ body.pattern-reader-body .pattern-page-head {
 }
 body.pattern-reader-body .pattern-page-head h1 {
   max-width: 24ch !important;
-  font-size: clamp(2.35rem, 4vw, 4rem) !important;
+  font-size: clamp(2.25rem, 3.3vw, 3.45rem) !important;
 }
 body.pattern-reader-body .pattern-comparison {
   gap: 2rem !important;
