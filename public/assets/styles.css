@@ -2014,6 +2014,60 @@ body .document-page .annotation-mode-switch {
   border-color: var(--line-dark);
   border-radius: 999px;
 }
+
+/* Pattern Reader: one quiet reading column, fewer nested cards, tighter rhythm. */
+body.pattern-reader-body .pattern-page {
+  width: min(calc(100% - 3rem), 72rem) !important;
+  margin: 1rem auto 2rem !important;
+  padding: clamp(1.5rem, 3.5vw, 3rem) clamp(1rem, 3.5vw, 3rem) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+}
+body.pattern-reader-body .pattern-page .breadcrumbs {
+  padding-bottom: 1.5rem !important;
+}
+body.pattern-reader-body .pattern-page-head {
+  margin-bottom: 2.25rem !important;
+}
+body.pattern-reader-body .pattern-page-head h1 {
+  font-size: clamp(2.35rem, 4vw, 4rem) !important;
+}
+body.pattern-reader-body .pattern-comparison {
+  gap: 2rem !important;
+  padding-top: 1.5rem !important;
+}
+body.pattern-reader-body .pattern-formulas,
+body.pattern-reader-body .pattern-primary-example,
+body.pattern-reader-body .pattern-comparison-card {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+}
+body.pattern-reader-body .pattern-formulas > div {
+  padding: .9rem 0 !important;
+  border-bottom: 1px solid var(--reader-line);
+}
+body.pattern-reader-body .pattern-formulas > div:last-child { border-bottom: 0; }
+body.pattern-reader-body .pattern-comparison-language {
+  padding: .9rem 0 !important;
+}
+body.pattern-reader-body .pattern-variations h2 {
+  padding-bottom: .65rem !important;
+}
+body.pattern-reader-body .pattern-comparison-list > li {
+  padding-bottom: 1rem !important;
+}
+body.pattern-reader-body .pattern-comparison-list > li + li {
+  padding-top: 1rem !important;
+}
+@media (max-width: 700px) {
+  body.pattern-reader-body .pattern-page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding-inline: 1.25rem !important;
+  }
+}
 body .document-page .annotation-mode-switch button {
   min-height: 2.5rem;
   padding-inline: .95rem;
