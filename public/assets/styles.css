@@ -2410,3 +2410,100 @@ body:not(.home-studio) .pattern-index > a:hover small,
 body:not(.home-studio) .practice-goal-link:hover small {
   color: inherit !important;
 }
+
+/* Sitewide light editorial pass: keep every public surface quiet, white, and readable. */
+body.gateway-body {
+  background: #fff !important;
+  color: var(--ink) !important;
+}
+body.gateway-body .gateway {
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+  background: #fff;
+}
+body.gateway-body .gateway-header {
+  border-bottom: 1px solid var(--line) !important;
+  padding-block: 1.15rem;
+}
+body.gateway-body .gateway-header .mark,
+body.gateway-body .gateway-header nav a,
+body.gateway-body footer,
+body.gateway-body .gateway footer a {
+  color: var(--ink) !important;
+}
+body.gateway-body .gateway-stage {
+  max-width: 58rem;
+  padding-block: clamp(4rem, 10vw, 8rem) clamp(3rem, 8vw, 6rem);
+}
+body.gateway-body .gateway h1 {
+  max-width: 10ch;
+  margin-bottom: 1.4rem;
+  font-size: clamp(2.8rem, 6vw, 5.6rem) !important;
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+body.gateway-body .gateway .lede {
+  max-width: 38rem;
+  color: var(--muted) !important;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.55;
+}
+body.gateway-body .gateway nav {
+  border-top: 1px solid var(--line) !important;
+}
+body.gateway-body .gateway nav a {
+  min-height: 3.8rem;
+  padding-inline: 0 !important;
+  border-bottom: 1px solid var(--line) !important;
+  transition: color .2s ease, padding-inline .2s ease, background-color .2s ease;
+}
+body.gateway-body .gateway nav a:hover,
+body.gateway-body .gateway nav a:focus-visible {
+  padding-inline: .8rem !important;
+  background: #f4f2ec !important;
+  color: var(--ink) !important;
+}
+body.gateway-body .gateway-sentence {
+  border-block: 1px solid var(--line) !important;
+  background: #faf9f6 !important;
+  color: var(--muted) !important;
+}
+body.gateway-body .gateway footer {
+  border-top: 1px solid var(--line) !important;
+  padding-block: 1.4rem;
+}
+
+/* Heading scale is intentionally restrained on every non-studio public page. */
+body:not(.home-studio) main h1,
+body:not(.home-studio) .page-head h1,
+body:not(.home-studio) .method-page h1,
+body:not(.home-studio) .research-page h1,
+body:not(.home-studio) .support-page h1,
+body:not(.home-studio) .ideas-hero h1,
+body:not(.home-studio) .contact-hero h1,
+body:not(.home-studio) .document-head h1 {
+  font-size: clamp(2.35rem, 4.8vw, 4.6rem) !important;
+  line-height: .98;
+}
+body.studio-route-body .method-page .method-hero h1,
+body.studio-route-body .studio-route--explore .page-head h1 {
+  font-size: clamp(2.45rem, 4.8vw, 4.8rem) !important;
+  line-height: .98;
+}
+@media (max-width: 700px) {
+  body.gateway-body .gateway-stage { padding-block: 3.5rem 3rem; }
+  body.gateway-body .gateway h1 { font-size: clamp(2.6rem, 12vw, 4rem) !important; }
+  body:not(.home-studio) main h1,
+  body:not(.home-studio) .page-head h1,
+  body:not(.home-studio) .method-page h1,
+  body:not(.home-studio) .research-page h1,
+  body:not(.home-studio) .support-page h1,
+  body:not(.home-studio) .ideas-hero h1,
+  body:not(.home-studio) .contact-hero h1,
+  body:not(.home-studio) .document-head h1,
+  body.studio-route-body .method-page .method-hero h1,
+  body.studio-route-body .studio-route--explore .page-head h1 {
+    font-size: clamp(2.25rem, 11vw, 3.8rem) !important;
+  }
+}

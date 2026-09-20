@@ -101,13 +101,13 @@ const html = `<!doctype html>
   <script type="application/ld+json">${JSON.stringify(organization).replaceAll("<", "\\u003c")}</script>
   <script type="application/ld+json">${JSON.stringify(webpage).replaceAll("<", "\\u003c")}</script>
   <style>
-    :root{color-scheme:light;--ink:#171717;--paper:#f6f0e5;--accent:#ff4f00;--line:#171717}
+    :root{color-scheme:light;--ink:#171717;--paper:#fff;--accent:#b85c3a;--line:#deded8}
     *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     main{min-height:100vh;display:grid;place-items:center;padding:clamp(24px,6vw,80px)}
-    .gateway{width:min(980px,100%);border-top:3px solid var(--line);border-bottom:3px solid var(--line);padding:clamp(28px,5vw,64px) 0}
-    .mark{width:72px;height:72px;object-fit:contain;margin-bottom:28px}p.kicker{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px}
-    h1{font-size:clamp(3rem,9vw,7.5rem);line-height:.88;letter-spacing:-.065em;margin:0;max-width:8ch}p.lede{font-size:clamp(1.15rem,2.3vw,1.65rem);max-width:720px;margin:32px 0}
-    nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}a{color:inherit;text-decoration:none;border:2px solid var(--line);padding:11px 16px;font-weight:800}a.primary{background:var(--ink);color:var(--paper)}a:hover{transform:translateY(-1px)}
+    .gateway{width:min(980px,100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(36px,6vw,80px) 0}
+    .mark{width:56px;height:56px;object-fit:contain;margin-bottom:28px}p.kicker{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 16px}
+    h1{font-size:clamp(2.8rem,6vw,5.5rem);line-height:.95;letter-spacing:-.065em;margin:0;max-width:10ch}p.lede{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:680px;margin:28px 0;color:#686862}
+    nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}a{color:inherit;text-decoration:none;border:1px solid var(--ink);padding:11px 16px;font-weight:700}a.primary{background:var(--ink);color:var(--paper)}a:hover{background:#f4f2ec}
     .entity-links{margin-top:16px;gap:10px 24px}.entity-links a{border:0;padding:4px 0;text-decoration:underline;text-underline-offset:4px;font-weight:700}
     .note{margin-top:28px;font-size:.92rem;max-width:700px}.accent{color:var(--accent)}
   </style>
