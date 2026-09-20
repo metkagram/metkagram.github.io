@@ -38,10 +38,14 @@ function setupLocaleSuggestion() {
 function setupNativeLanguage() {
   const controls = [...document.querySelectorAll("[data-native-language-control]")];
   if (!controls.length) return;
-  const key = "metkagram:native-language";
+  // Keep support-language preference local to the interface locale. A Russian
+  // preference from /ru/ must never leak into an English page (or vice versa).
+  const key = `metkagram:native-language:${locale}`;
   const labels = controls.map((control) => Object.fromEntries([...control.querySelectorAll("option")].map((option) => [option.value, option.textContent])));
   const saved = localStorage.getItem(key);
-  const value = ["en", "ru", "other"].includes(saved) ? saved : (document.documentElement.lang === "ru" ? "ru" : "en");
+  const value = locale === "en"
+    ? "en"
+    : (["en", "ru", "other"].includes(saved) ? saved : "ru");
   const apply = (next) => {
     document.documentElement.dataset.nativeLanguage = next;
     document.querySelectorAll("[data-native-translation]").forEach((item) => { item.hidden = next !== "ru"; });
