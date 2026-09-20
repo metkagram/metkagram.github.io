@@ -2131,6 +2131,23 @@ body.pattern-reader-body .pattern-comparison-list > li { padding-right: 0; borde
 body.pattern-reader-body .pattern-comparison-card:hover { border-color: var(--line-dark); background: #fff; }
 body.pattern-reader-body .context-language-preference { border-color: var(--line); background: #fff; }
 
+/* Pattern Reader is a calm reading surface: hovering must not recolour or move content. */
+@media (hover: hover) {
+  body.pattern-reader-body button:hover,
+  body.pattern-reader-body .button-label:hover,
+  body.pattern-reader-body .share-button:hover,
+  body.pattern-reader-body .locale-button:hover,
+  body.pattern-reader-body a:hover,
+  body.pattern-reader-body .pattern-comparison-card:hover,
+  body.pattern-reader-body .practice-entry-secondary a:hover {
+    background: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: inherit !important;
+    transform: none !important;
+  }
+}
+
 /* Final light-surface pass: keep learner-facing pages paper-white; reserve tint for interaction states. */
 body:not(.home-studio):not(.studio-route-body) .practice-primary-path,
 body:not(.home-studio):not(.studio-route-body) .annotation-row.is-reviewed,
