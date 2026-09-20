@@ -102,9 +102,9 @@ const html = `<!doctype html>
   <script type="application/ld+json">${JSON.stringify(webpage).replaceAll("<", "\\u003c")}</script>
   <style>
     :root{color-scheme:light;--ink:#171717;--paper:#fff;--accent:#b85c3a;--line:#deded8}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     main{min-height:100vh;display:grid;place-items:center;padding:clamp(24px,6vw,80px)}
-    .gateway{width:min(980px,100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(36px,6vw,80px) 0}
+    .gateway{width:min(980px,100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(36px,6vw,80px) 0;background:#fff}
     .mark{width:56px;height:56px;object-fit:contain;margin-bottom:28px}p.kicker{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 16px}
     h1{font-size:clamp(2.8rem,6vw,5.5rem);line-height:.95;letter-spacing:-.065em;margin:0;max-width:10ch}p.lede{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:680px;margin:28px 0;color:#686862}
     nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}a{color:inherit;text-decoration:none;border:1px solid var(--ink);padding:11px 16px;font-weight:700}a.primary{background:var(--ink);color:var(--paper)}a:hover{background:#f4f2ec}
