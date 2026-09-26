@@ -99,6 +99,96 @@
       "title_en": "I can see the merit in [X], although I would [Y]",
       "description_en": "Acknowledge a useful part of another position before stating exactly where your own emphasis or recommendation differs.",
       "description_ru": "Признайте сильную сторону чужой позиции, а затем точно обозначьте, где ваш акцент или рекомендация отличаются."
+    },
+    {
+      "id": "C1AGR002",
+      "group_id": "AGR",
+      "set_id": "AGR",
+      "title_ru": "Я понимаю аргумент в пользу [X], но из этого не обязательно следует, что [Y]",
+      "metaphor_ru": "Признайте логику чужого аргумента, но отделите её от вывода, который кажется слишком сильным.",
+      "title_en": "I understand the argument for [X], but I don’t think it necessarily follows that [Y]",
+      "description_en": "Use this frame to disagree with an inference without dismissing the reasoning that led to it.",
+      "description_ru": "Используйте этот каркас, чтобы не соглашаться с выводом, не обесценивая рассуждение, которое к нему привело.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I understand the argument for [X], but I don’t think it necessarily follows that [Y].",
+          "example": "I understand the argument for delaying the hire, but I don’t think it necessarily follows that we should stop interviewing altogether.",
+          "translation": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования.",
+          "examples": [
+            {
+              "text": "**I understand the argument for delaying the hire, but I don’t think it necessarily follows that we should stop interviewing altogether.**",
+              "translation_ru": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования."
+            },
+            {
+              "text": "**I understand the argument for standardising the workflow, but I don’t think it necessarily follows that every regional exception should disappear.**",
+              "translation_ru": "Я понимаю аргумент в пользу стандартизации процесса, но из этого не обязательно следует, что все региональные исключения должны исчезнуть."
+            },
+            {
+              "text": "**I understand the argument for raising the price, but I don’t think it necessarily follows that churn will increase across every customer segment.**",
+              "translation_ru": "Я понимаю аргумент в пользу повышения цены, но из этого не обязательно следует, что отток вырастет во всех клиентских сегментах."
+            },
+            {
+              "text": "**I understand the argument for extending the pilot, but I don’t think it necessarily follows that a full rollout should be postponed.**",
+              "translation_ru": "Я понимаю аргумент в пользу продления пилота, но из этого не обязательно следует, что полный запуск нужно откладывать."
+            },
+            {
+              "text": "**I understand the argument for centralising ownership, but I don’t think it necessarily follows that local teams should lose decision rights.**",
+              "translation_ru": "Я понимаю аргумент в пользу централизации ответственности, но из этого не обязательно следует, что локальные команды должны потерять право принимать решения."
+            },
+            {
+              "text": "**I understand the argument for adding another approval, but I don’t think it necessarily follows that the process will become more reliable.**",
+              "translation_ru": "Я понимаю аргумент в пользу ещё одного согласования, но из этого не обязательно следует, что процесс станет надёжнее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich verstehe das Argument für [X], aber daraus folgt für mich nicht zwangsläufig, dass [Y].",
+          "example": "Ich verstehe das Argument für eine Verschiebung der Einstellung, aber daraus folgt für mich nicht zwangsläufig, dass wir die Bewerbungsgespräche ganz einstellen sollten.",
+          "translation": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования.",
+          "examples": [
+            {
+              "text": "**Ich verstehe das Argument für eine Verschiebung der Einstellung, aber daraus folgt für mich nicht zwangsläufig, dass wir die Bewerbungsgespräche ganz einstellen sollten.**",
+              "translation_ru": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования."
+            },
+            {
+              "text": "**Ich verstehe das Argument für eine Standardisierung des Ablaufs, aber daraus folgt für mich nicht zwangsläufig, dass alle regionalen Ausnahmen verschwinden sollten.**",
+              "translation_ru": "Я понимаю аргумент в пользу стандартизации процесса, но из этого не обязательно следует, что все региональные исключения должны исчезнуть."
+            },
+            {
+              "text": "**Ich verstehe das Argument für eine Preiserhöhung, aber daraus folgt für mich nicht zwangsläufig, dass die Abwanderung in allen Kundensegmenten steigen wird.**",
+              "translation_ru": "Я понимаю аргумент в пользу повышения цены, но из этого не обязательно следует, что отток вырастет во всех клиентских сегментах."
+            },
+            {
+              "text": "**Ich verstehe das Argument für eine Verlängerung des Pilotprojekts, aber daraus folgt für mich nicht zwangsläufig, dass die vollständige Einführung verschoben werden sollte.**",
+              "translation_ru": "Я понимаю аргумент в пользу продления пилота, но из этого не обязательно следует, что полный запуск нужно откладывать."
+            },
+            {
+              "text": "**Ich verstehe das Argument für eine zentralisierte Verantwortung, aber daraus folgt für mich nicht zwangsläufig, dass lokale Teams ihre Entscheidungsrechte verlieren sollten.**",
+              "translation_ru": "Я понимаю аргумент в пользу централизации ответственности, но из этого не обязательно следует, что локальные команды должны потерять право принимать решения."
+            },
+            {
+              "text": "**Ich verstehe das Argument für eine zusätzliche Freigabe, aber daraus folgt für mich nicht zwangsläufig, dass der Prozess dadurch zuverlässiger wird.**",
+              "translation_ru": "Я понимаю аргумент в пользу ещё одного согласования, но из этого не обязательно следует, что процесс станет надёжнее."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I understand the argument for [X], but I don’t think it necessarily follows that [Y].",
+        "Ich verstehe das Argument für [X], aber daraus folgt für mich nicht zwangsläufig, dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: constructive disagreement with an inference."
+      }
     }
   ]
 }
