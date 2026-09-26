@@ -107,9 +107,14 @@ function patchHomeEntry() {
     if (!primaryPattern.test(html)) throw new Error(`Homepage primary CTA contract changed for ${locale}`);
     html = html.replace(primaryPattern, `<a class="studio-primary-action" data-product-entry="lens" href="${lensHref}">${c.primary}<span aria-hidden="true">↗</span></a>`);
 
-    const indexPattern = new RegExp(`<a href="${practiceHref.replaceAll("/", "\\/")}">${locale === "ru" ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→<\\/span><\\/a>`);
-    if (!indexPattern.test(html)) throw new Error(`Homepage library CTA contract changed for ${locale}`);
-    html = html.replace(indexPattern, `<a data-product-entry="library" href="${practiceHref}">${c.library} <span aria-hidden="true">→</span></a>`);
+    const indexPattern = new RegExp(`<a href="${practiceHref.replaceAll("/", "\\\/")}">${locale === "ru" ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→<\\/span><\\/a>`);
+    const hasLegacyStudioFlow = html.includes('class="studio-flow"');
+    if (hasLegacyStudioFlow && !indexPattern.test(html)) {
+      throw new Error(`Homepage library CTA contract changed for ${locale}`);
+    }
+    if (indexPattern.test(html)) {
+      html = html.replace(indexPattern, `<a data-product-entry="library" href="${practiceHref}">${c.library} <span aria-hidden="true">→</span></a>`);
+    }
 
     fs.writeFileSync(file, html);
   }
