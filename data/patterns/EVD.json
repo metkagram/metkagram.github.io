@@ -197,6 +197,96 @@
       "title_en": "Ground the conversation in [facts / evidence / shared context]",
       "description_en": "Use this frame to bring a discussion back to a verifiable basis before interpreting, judging, or deciding.",
       "description_ru": "Используйте этот каркас, чтобы вернуть обсуждение к проверяемой основе до интерпретации, оценки или решения."
+    },
+    {
+      "id": "C1EVD003",
+      "group_id": "EVD",
+      "set_id": "EVD",
+      "title_ru": "Давайте отделим то, что мы знаем о [X], от того, что мы предполагаем",
+      "metaphor_ru": "Разделяйте наблюдаемое и предполагаемое, чтобы спор не превращал гипотезы в факты.",
+      "title_en": "Let’s separate what we know about [X] from what we’re assuming",
+      "description_en": "Use this frame to distinguish observed facts from inference before diagnosing a problem or making a decision.",
+      "description_ru": "Используйте этот каркас, чтобы отделить наблюдаемые факты от выводов до диагностики проблемы или принятия решения.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Let’s separate what we know about [X] from what we’re assuming.",
+          "example": "Let’s separate what we know about the outage from what we’re assuming about its cause.",
+          "translation": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине.",
+          "examples": [
+            {
+              "text": "**Let’s separate what we know about the outage from what we’re assuming about its cause.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине."
+            },
+            {
+              "text": "**Let’s separate what we know about customer churn from what we’re assuming about price sensitivity.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об оттоке клиентов, от наших предположений об их чувствительности к цене."
+            },
+            {
+              "text": "**Let’s separate what we know about the launch delay from what we’re assuming about the vendor.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о задержке запуска, от наших предположений о поставщике."
+            },
+            {
+              "text": "**Let’s separate what we know about the failed test from what we’re assuming about the underlying defect.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о проваленном тесте, от наших предположений о лежащем в основе дефекте."
+            },
+            {
+              "text": "**Let’s separate what we know about the hiring slowdown from what we’re assuming about next year’s budget.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о замедлении найма, от наших предположений о бюджете на следующий год."
+            },
+            {
+              "text": "**Let’s separate what we know about the experiment from what we’re assuming about long-term behaviour.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об эксперименте, от наших предположений о долгосрочном поведении."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Lassen Sie uns bei [X] zwischen dem unterscheiden, was wir wissen, und dem, was wir annehmen.",
+          "example": "Lassen Sie uns beim Ausfall zwischen dem unterscheiden, was wir wissen, und dem, was wir über seine Ursache annehmen.",
+          "translation": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине.",
+          "examples": [
+            {
+              "text": "**Lassen Sie uns beim Ausfall zwischen dem unterscheiden, was wir wissen, und dem, was wir über seine Ursache annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Kundenabwanderung zwischen dem unterscheiden, was wir wissen, und dem, was wir über die Preissensibilität annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об оттоке клиентов, от наших предположений об их чувствительности к цене."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Startverzögerung zwischen dem unterscheiden, was wir wissen, und dem, was wir über den Lieferanten annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о задержке запуска, от наших предположений о поставщике."
+            },
+            {
+              "text": "**Lassen Sie uns beim fehlgeschlagenen Test zwischen dem unterscheiden, was wir wissen, und dem, was wir über den zugrunde liegenden Fehler annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о проваленном тесте, от наших предположений о лежащем в основе дефекте."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Verlangsamung der Einstellungen zwischen dem unterscheiden, was wir wissen, und dem, was wir über das Budget für nächstes Jahr annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о замедлении найма, от наших предположений о бюджете на следующий год."
+            },
+            {
+              "text": "**Lassen Sie uns beim Experiment zwischen dem unterscheiden, was wir wissen, und dem, was wir über das langfristige Verhalten annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об эксперименте, от наших предположений о долгосрочном поведении."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Let’s separate what we know about [X] from what we’re assuming.",
+        "Lassen Sie uns bei [X] zwischen dem unterscheiden, was wir wissen, und dem, was wir annehmen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 evidence frame: separate observed facts from assumptions before reasoning forward."
+      }
     }
   ]
 }
