@@ -99,6 +99,88 @@
       "title_en": "I am writing to clarify [X] before [Y]",
       "description_en": "Open professional correspondence by naming the exact uncertainty that needs resolving before a concrete next step.",
       "description_ru": "Начинайте рабочее сообщение с конкретной неопределённости, которую нужно снять до следующего действия."
+    },
+    {
+      "id": "C1PRO002",
+      "group_id": "PRO",
+      "set_id": "PRO",
+      "title_ru": "Чтобы синхронизироваться: я [X], а вы [Y] к [Z]",
+      "metaphor_ru": "Закройте разговор конкретными действиями, владельцами и сроком.",
+      "title_en": "To make sure we're aligned, I'll [X] and you'll [Y] by [Z]",
+      "description_en": "Turn a discussion into explicit ownership and a deadline.",
+      "description_ru": "Превратите обсуждение в явные действия, ответственность и срок.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "To make sure we're aligned, I'll [X] and you'll [Y] by [Z].",
+          "example": "To make sure we're aligned, I'll update the draft and you'll review the figures by Thursday.",
+          "translation": "Чтобы синхронизироваться: я обновлю черновик, а вы проверите цифры к четвергу.",
+          "examples": [
+            {
+              "text": "**To make sure we're aligned, I'll update the draft and you'll review the figures by Thursday.**",
+              "translation_ru": "Чтобы синхронизироваться: я обновлю черновик, а вы проверите цифры к четвергу."
+            },
+            {
+              "text": "**To make sure we're aligned, I'll reproduce the defect and you'll confirm the expected behaviour by noon.**",
+              "translation_ru": "Чтобы синхронизироваться: я воспроизведу дефект, а вы подтвердите ожидаемое поведение к полудню."
+            },
+            {
+              "text": "**To make sure we're aligned, I'll prepare the shortlist and you'll rank the candidates by Monday.**",
+              "translation_ru": "Чтобы синхронизироваться: я подготовлю короткий список, а вы расставите кандидатов по приоритету к понедельнику."
+            },
+            {
+              "text": "**To make sure we're aligned, I'll revise the forecast and you'll validate the assumptions by month-end.**",
+              "translation_ru": "Чтобы синхронизироваться: я обновлю прогноз, а вы проверите предпосылки к концу месяца."
+            },
+            {
+              "text": "**To make sure we're aligned, I'll send the migration plan and you'll flag any blockers by 15:00.**",
+              "translation_ru": "Чтобы синхронизироваться: я отправлю план миграции, а вы отметите блокирующие вопросы к 15:00."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Damit wir abgestimmt sind, übernehme ich [X], und Sie übernehmen [Y] bis [Z].",
+          "example": "Damit wir abgestimmt sind, übernehme ich die Aktualisierung des Entwurfs, und Sie übernehmen die Prüfung der Zahlen bis Donnerstag.",
+          "translation": "Чтобы синхронизироваться: я обновлю черновик, а вы проверите цифры к четвергу.",
+          "examples": [
+            {
+              "text": "**Damit wir abgestimmt sind, übernehme ich die Aktualisierung des Entwurfs, und Sie übernehmen die Prüfung der Zahlen bis Donnerstag.**",
+              "translation_ru": "Чтобы синхронизироваться: я обновлю черновик, а вы проверите цифры к четвергу."
+            },
+            {
+              "text": "**Damit wir abgestimmt sind, übernehme ich die Reproduktion des Fehlers, und Sie bestätigen das erwartete Verhalten bis Mittag.**",
+              "translation_ru": "Чтобы синхронизироваться: я воспроизведу дефект, а вы подтвердите ожидаемое поведение к полудню."
+            },
+            {
+              "text": "**Damit wir abgestimmt sind, erstelle ich die engere Auswahl, und Sie priorisieren die Kandidaten bis Montag.**",
+              "translation_ru": "Чтобы синхронизироваться: я подготовлю короткий список, а вы расставите кандидатов по приоритету к понедельнику."
+            },
+            {
+              "text": "**Damit wir abgestimmt sind, überarbeite ich die Prognose, und Sie prüfen die Annahmen bis Monatsende.**",
+              "translation_ru": "Чтобы синхронизироваться: я обновлю прогноз, а вы проверите предпосылки к концу месяца."
+            },
+            {
+              "text": "**Damit wir abgestimmt sind, sende ich den Migrationsplan, und Sie markieren mögliche Blocker bis 15 Uhr.**",
+              "translation_ru": "Чтобы синхронизироваться: я отправлю план миграции, а вы отметите блокирующие вопросы к 15:00."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "To make sure we're aligned, I'll [X] and you'll [Y] by [Z].",
+        "Damit wir abgestimmt sind, übernehme ich [X], und Sie übernehmen [Y] bis [Z]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 professional frame: close with ownership and a deadline."
+      }
     }
   ]
 }
