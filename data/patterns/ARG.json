@@ -99,6 +99,96 @@
       "title_en": "The case for [X] rests on the assumption that [Y]",
       "description_en": "Use this frame to expose the assumption an argument depends on, so the assumption can be tested rather than left implicit.",
       "description_ru": "Используйте этот каркас, чтобы сделать ключевое допущение аргумента явным и проверить, действительно ли на нём держится вывод."
+    },
+    {
+      "id": "C1ARG002",
+      "group_id": "ARG",
+      "set_id": "ARG",
+      "title_ru": "Ключевой вопрос — действительно ли [X] приводит к [Y]",
+      "metaphor_ru": "Проверяйте центральную причинную связь в аргументе, прежде чем принимать вывод как очевидный.",
+      "title_en": "The key question is whether [X] actually leads to [Y]",
+      "description_en": "Use this frame to test the causal link at the centre of an argument instead of accepting it implicitly.",
+      "description_ru": "Используйте этот каркас, чтобы проверить причинную связь в центре аргумента, а не принимать её как данность.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The key question is whether [X] actually leads to [Y].",
+          "example": "The key question is whether the extra approval step actually leads to fewer production errors.",
+          "translation": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе.",
+          "examples": [
+            {
+              "text": "**The key question is whether the extra approval step actually leads to fewer production errors.**",
+              "translation_ru": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе."
+            },
+            {
+              "text": "**The key question is whether AI-generated summaries actually lead to faster reviews or simply shift effort into verification.**",
+              "translation_ru": "Ключевой вопрос — действительно ли сгенерированные ИИ резюме ускоряют проверку или просто переносят усилия на верификацию."
+            },
+            {
+              "text": "**The key question is whether a lower entry price actually leads to stronger retention after the first month.**",
+              "translation_ru": "Ключевой вопрос — действительно ли более низкая начальная цена повышает удержание после первого месяца."
+            },
+            {
+              "text": "**The key question is whether more meetings actually lead to better coordination across the two teams.**",
+              "translation_ru": "Ключевой вопрос — действительно ли большее число встреч улучшает координацию между двумя командами."
+            },
+            {
+              "text": "**The key question is whether the training actually leads to different behaviour once people return to normal work.**",
+              "translation_ru": "Ключевой вопрос — действительно ли обучение меняет поведение людей после возвращения к обычной работе."
+            },
+            {
+              "text": "**The key question is whether centralising decisions actually leads to faster delivery when several incidents happen at once.**",
+              "translation_ru": "Ключевой вопрос — действительно ли централизация решений ускоряет работу, когда одновременно происходит несколько инцидентов."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die entscheidende Frage ist, ob [X] tatsächlich zu [Y] führt.",
+          "example": "Die entscheidende Frage ist, ob der zusätzliche Freigabeschritt tatsächlich zu weniger Fehlern im Produktivsystem führt.",
+          "translation": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе.",
+          "examples": [
+            {
+              "text": "**Die entscheidende Frage ist, ob der zusätzliche Freigabeschritt tatsächlich zu weniger Fehlern im Produktivsystem führt.**",
+              "translation_ru": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob KI-generierte Zusammenfassungen tatsächlich zu schnelleren Reviews führen oder den Aufwand nur in die Verifikation verlagern.**",
+              "translation_ru": "Ключевой вопрос — действительно ли сгенерированные ИИ резюме ускоряют проверку или просто переносят усилия на верификацию."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob ein niedrigerer Einstiegspreis tatsächlich zu einer stärkeren Bindung nach dem ersten Monat führt.**",
+              "translation_ru": "Ключевой вопрос — действительно ли более низкая начальная цена повышает удержание после первого месяца."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob mehr Besprechungen tatsächlich zu einer besseren Abstimmung zwischen den beiden Teams führen.**",
+              "translation_ru": "Ключевой вопрос — действительно ли большее число встреч улучшает координацию между двумя командами."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob die Schulung tatsächlich zu einem anderen Verhalten führt, sobald die Mitarbeitenden wieder im normalen Arbeitsalltag sind.**",
+              "translation_ru": "Ключевой вопрос — действительно ли обучение меняет поведение людей после возвращения к обычной работе."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob zentralisierte Entscheidungen tatsächlich zu einer schnelleren Umsetzung führen, wenn mehrere Störungen gleichzeitig auftreten.**",
+              "translation_ru": "Ключевой вопрос — действительно ли централизация решений ускоряет работу, когда одновременно происходит несколько инцидентов."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The key question is whether [X] actually leads to [Y].",
+        "Die entscheidende Frage ist, ob [X] tatsächlich zu [Y] führt."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: test a causal link in an argument."
+      }
     }
   ]
 }

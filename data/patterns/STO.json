@@ -99,6 +99,88 @@
       "title_en": "Looking back, [X] was the moment when [Y]",
       "description_en": "Use a past turning point to organise a story and explain why later events took a different direction.",
       "description_ru": "Выделяйте поворотный момент в прошлом и показывайте, почему после него события пошли иначе."
+    },
+    {
+      "id": "C1STO002",
+      "group_id": "STO",
+      "set_id": "STO",
+      "title_ru": "Поворотным моментом стало [X]; до этого мы исходили из [Y]",
+      "metaphor_ru": "Покажите, какое новое событие заставило пересмотреть прежнее предположение.",
+      "title_en": "The turning point was [X]; until then, we had assumed [Y]",
+      "description_en": "Explain how new information changed an earlier working assumption.",
+      "description_ru": "Покажите, как новая информация изменила прежнее рабочее предположение.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The turning point was [X]; until then, we had assumed [Y].",
+          "example": "The turning point was the second failed test; until then, we had assumed the defect was isolated.",
+          "translation": "Поворотным моментом стал второй проваленный тест; до этого мы считали дефект единичным.",
+          "examples": [
+            {
+              "text": "**The turning point was the second failed test; until then, we had assumed the defect was isolated.**",
+              "translation_ru": "Поворотным моментом стал второй проваленный тест; до этого мы считали дефект единичным."
+            },
+            {
+              "text": "**The turning point was the customer interview; until then, we had assumed price was the main objection.**",
+              "translation_ru": "Поворотным моментом стало интервью с клиентом; до этого мы считали главным возражением цену."
+            },
+            {
+              "text": "**The turning point was the capacity check; until then, we had assumed the deadline was realistic.**",
+              "translation_ru": "Поворотным моментом стала проверка доступных ресурсов; до этого мы считали срок реалистичным."
+            },
+            {
+              "text": "**The turning point was the pilot result; until then, we had assumed more training was the answer.**",
+              "translation_ru": "Поворотным моментом стал результат пилота; до этого мы считали, что ответом будет дополнительное обучение."
+            },
+            {
+              "text": "**The turning point was the regional breakdown; until then, we had assumed the trend was uniform.**",
+              "translation_ru": "Поворотным моментом стала разбивка по регионам; до этого мы считали тенденцию одинаковой повсюду."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der Wendepunkt war [X]; bis dahin waren wir davon ausgegangen, dass [Y].",
+          "example": "Der Wendepunkt war der zweite fehlgeschlagene Test; bis dahin waren wir davon ausgegangen, dass der Fehler ein Einzelfall war.",
+          "translation": "Поворотным моментом стал второй проваленный тест; до этого мы считали дефект единичным.",
+          "examples": [
+            {
+              "text": "**Der Wendepunkt war der zweite fehlgeschlagene Test; bis dahin waren wir davon ausgegangen, dass der Fehler ein Einzelfall war.**",
+              "translation_ru": "Поворотным моментом стал второй проваленный тест; до этого мы считали дефект единичным."
+            },
+            {
+              "text": "**Der Wendepunkt war das Kundengespräch; bis dahin waren wir davon ausgegangen, dass der Preis der wichtigste Einwand war.**",
+              "translation_ru": "Поворотным моментом стало интервью с клиентом; до этого мы считали главным возражением цену."
+            },
+            {
+              "text": "**Der Wendepunkt war die Kapazitätsprüfung; bis dahin waren wir davon ausgegangen, dass der Termin realistisch war.**",
+              "translation_ru": "Поворотным моментом стала проверка доступных ресурсов; до этого мы считали срок реалистичным."
+            },
+            {
+              "text": "**Der Wendepunkt war das Ergebnis des Pilotprojekts; bis dahin waren wir davon ausgegangen, dass mehr Schulung die Lösung war.**",
+              "translation_ru": "Поворотным моментом стал результат пилота; до этого мы считали, что ответом будет дополнительное обучение."
+            },
+            {
+              "text": "**Der Wendepunkt war die regionale Aufschlüsselung; bis dahin waren wir davon ausgegangen, dass der Trend überall gleich war.**",
+              "translation_ru": "Поворотным моментом стала разбивка по регионам; до этого мы считали тенденцию одинаковой повсюду."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The turning point was [X]; until then, we had assumed [Y].",
+        "Der Wendepunkt war [X]; bis dahin waren wir davon ausgegangen, dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 reflective frame: show which evidence changed a prior assumption."
+      }
     }
   ]
 }

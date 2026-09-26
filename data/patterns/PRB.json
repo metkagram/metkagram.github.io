@@ -99,6 +99,96 @@
       "title_en": "There is a realistic chance that [X] if [Y]",
       "description_en": "Express a plausible outcome while naming the condition that makes it more or less likely.",
       "description_ru": "Говорите о вероятном исходе и сразу называйте условие, от которого эта вероятность зависит."
+    },
+    {
+      "id": "C1PRB002",
+      "group_id": "PRB",
+      "set_id": "PRB",
+      "title_ru": "Что должно быть верно, чтобы [X] сработало?",
+      "metaphor_ru": "Разворачивайте решение назад: сначала назовите условия, без которых оно не сможет сработать.",
+      "title_en": "What would have to be true for [X] to work?",
+      "description_en": "Use this question to expose hidden assumptions before investing in a plan, forecast, or solution.",
+      "description_ru": "Используйте этот вопрос, чтобы выявить скрытые предпосылки до того, как вкладываться в план, прогноз или решение.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would have to be true for [X] to work?",
+          "example": "What would have to be true for the migration to finish in one weekend?",
+          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "examples": [
+            {
+              "text": "**What would have to be true for the migration to finish in one weekend?**",
+              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+            },
+            {
+              "text": "**What would have to be true for a four-day week to work without slowing customer support?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+            },
+            {
+              "text": "**What would have to be true for the price increase to work without damaging retention?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+            },
+            {
+              "text": "**What would have to be true for local transcription to work reliably on an eight-gigabyte laptop?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+            },
+            {
+              "text": "**What would have to be true for centralising support to work across three time zones?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+            },
+            {
+              "text": "**What would have to be true for us to launch before the legal review is fully complete?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was müsste zutreffen, damit [X] funktioniert?",
+          "example": "Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?",
+          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "examples": [
+            {
+              "text": "**Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?**",
+              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit eine Vier-Tage-Woche funktioniert, ohne den Kundensupport zu verlangsamen?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit die Preiserhöhung funktioniert, ohne die Kundenbindung zu schwächen?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit lokale Transkription auf einem Laptop mit acht Gigabyte Arbeitsspeicher zuverlässig funktioniert?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit ein zentralisierter Support über drei Zeitzonen hinweg funktioniert?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit wir starten können, bevor die rechtliche Prüfung vollständig abgeschlossen ist?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would have to be true for [X] to work?",
+        "Was müsste zutreffen, damit [X] funktioniert?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 problem-framing question: expose assumptions required for a plan to work."
+      }
     }
   ]
 }

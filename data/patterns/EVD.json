@@ -99,6 +99,194 @@
       "title_en": "The available evidence suggests that [X], although [Y]",
       "description_en": "Connect a conclusion to evidence while keeping an explicit limit or competing observation in view.",
       "description_ru": "Связывайте вывод с данными и одновременно обозначайте ограничение или наблюдение, которое не позволяет переоценить уверенность."
+    },
+    {
+      "id": "C1EVD002",
+      "group_id": "EVD",
+      "set_id": "EVD",
+      "title_ru": "Стройте обсуждение на [фактах / данных / общей основе]",
+      "metaphor_ru": "Возвращайте разговор к проверяемой основе, чтобы отделять наблюдения и данные от предположений и впечатлений.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "ground + conversation/discussion + in + [facts/evidence/shared context]",
+          "example": "Let’s ground the conversation in what the customer actually reported before proposing a fix.",
+          "translation": "Давайте строить обсуждение на том, что клиент действительно сообщил, прежде чем предлагать решение.",
+          "examples": [
+            {
+              "text": "**Let’s ground the conversation in what the customer actually reported before proposing a fix.**",
+              "translation_ru": "Давайте строить обсуждение на том, что клиент действительно сообщил, прежде чем предлагать решение."
+            },
+            {
+              "text": "**We should ground this discussion in the figures from the last two quarters, not in impressions from one unusually strong week.**",
+              "translation_ru": "Нам стоит строить это обсуждение на показателях за последние два квартала, а не на впечатлении от одной необычно сильной недели."
+            },
+            {
+              "text": "**Good retrospectives ground the conversation in observable behaviour rather than guesses about people’s intentions.**",
+              "translation_ru": "Хорошие ретроспективы опирают обсуждение на наблюдаемое поведение, а не на догадки о намерениях людей."
+            },
+            {
+              "text": "**Before we argue about solutions, let’s ground the conversation in a shared definition of the problem.**",
+              "translation_ru": "Прежде чем спорить о решениях, давайте зафиксируем общую формулировку проблемы и строить разговор от неё."
+            },
+            {
+              "text": "**The facilitator grounded the conversation in concrete examples, which helped the team move beyond vague disagreement.**",
+              "translation_ru": "Модератор опирал обсуждение на конкретные примеры, и это помогло команде выйти за пределы расплывчатых разногласий."
+            },
+            {
+              "text": "**When emotions run high, I try to ground the conversation in what we know, what we do not know, and what still needs verification.**",
+              "translation_ru": "Когда эмоции накаляются, я стараюсь опирать разговор на то, что мы знаем, чего не знаем и что ещё нужно проверить."
+            },
+            {
+              "text": "**For a useful design review, we need to ground the conversation in the user’s actual experience rather than the process we expected them to follow.**",
+              "translation_ru": "Чтобы разбор дизайна был полезным, нужно строить обсуждение на реальном опыте пользователя, а не на процессе, которому он, как мы ожидали, должен был следовать."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Gespräch/Diskussion + auf + [Fakten/Belege/gemeinsame Grundlage] + stützen",
+          "example": "Lassen Sie uns das Gespräch auf das stützen, was der Kunde tatsächlich gemeldet hat, bevor wir eine Lösung vorschlagen.",
+          "translation": "Давайте строить обсуждение на том, что клиент действительно сообщил, прежде чем предлагать решение.",
+          "examples": [
+            {
+              "text": "**Lassen Sie uns das Gespräch auf das stützen, was der Kunde tatsächlich gemeldet hat, bevor wir eine Lösung vorschlagen.**",
+              "translation_ru": "Давайте строить обсуждение на том, что клиент действительно сообщил, прежде чем предлагать решение."
+            },
+            {
+              "text": "**Wir sollten die Diskussion auf die Zahlen der letzten beiden Quartale stützen und nicht auf den Eindruck einer ungewöhnlich starken Woche.**",
+              "translation_ru": "Нам стоит строить это обсуждение на показателях за последние два квартала, а не на впечатлении от одной необычно сильной недели."
+            },
+            {
+              "text": "**Gute Retrospektiven stützen das Gespräch auf beobachtbares Verhalten statt auf Vermutungen über die Absichten anderer.**",
+              "translation_ru": "Хорошие ретроспективы опирают обсуждение на наблюдаемое поведение, а не на догадки о намерениях других людей."
+            },
+            {
+              "text": "**Bevor wir über Lösungen streiten, sollten wir das Gespräch auf ein gemeinsames Verständnis des Problems stützen.**",
+              "translation_ru": "Прежде чем спорить о решениях, нам стоит строить разговор на общем понимании проблемы."
+            },
+            {
+              "text": "**Die Moderatorin stützte das Gespräch auf konkrete Beispiele; dadurch konnte das Team über den vagen Dissens hinauskommen.**",
+              "translation_ru": "Модератор опирала обсуждение на конкретные примеры, и благодаря этому команда смогла выйти за пределы расплывчатых разногласий."
+            },
+            {
+              "text": "**Wenn die Emotionen hochkochen, versuche ich, das Gespräch auf das zu stützen, was wir wissen, was wir nicht wissen und was noch überprüft werden muss.**",
+              "translation_ru": "Когда эмоции накаляются, я стараюсь опирать разговор на то, что мы знаем, чего не знаем и что ещё нужно проверить."
+            },
+            {
+              "text": "**Für eine hilfreiche Designbesprechung sollten wir das Gespräch auf die tatsächliche Nutzererfahrung stützen und nicht auf den Ablauf, den wir erwartet hatten.**",
+              "translation_ru": "Чтобы разбор дизайна был полезным, нам стоит строить обсуждение на реальном опыте пользователя, а не на процессе, который мы ожидали увидеть."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "ground + conversation/discussion + in + [facts/evidence/shared context]",
+        "Gespräch/Diskussion + auf + [Fakten/Belege/gemeinsame Grundlage] + stützen"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: ground a conversation in verifiable facts, evidence, or shared context."
+      },
+      "title_en": "Ground the conversation in [facts / evidence / shared context]",
+      "description_en": "Use this frame to bring a discussion back to a verifiable basis before interpreting, judging, or deciding.",
+      "description_ru": "Используйте этот каркас, чтобы вернуть обсуждение к проверяемой основе до интерпретации, оценки или решения."
+    },
+    {
+      "id": "C1EVD003",
+      "group_id": "EVD",
+      "set_id": "EVD",
+      "title_ru": "Давайте отделим то, что мы знаем о [X], от того, что мы предполагаем",
+      "metaphor_ru": "Разделяйте наблюдаемое и предполагаемое, чтобы спор не превращал гипотезы в факты.",
+      "title_en": "Let’s separate what we know about [X] from what we’re assuming",
+      "description_en": "Use this frame to distinguish observed facts from inference before diagnosing a problem or making a decision.",
+      "description_ru": "Используйте этот каркас, чтобы отделить наблюдаемые факты от выводов до диагностики проблемы или принятия решения.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Let’s separate what we know about [X] from what we’re assuming.",
+          "example": "Let’s separate what we know about the outage from what we’re assuming about its cause.",
+          "translation": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине.",
+          "examples": [
+            {
+              "text": "**Let’s separate what we know about the outage from what we’re assuming about its cause.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине."
+            },
+            {
+              "text": "**Let’s separate what we know about customer churn from what we’re assuming about price sensitivity.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об оттоке клиентов, от наших предположений об их чувствительности к цене."
+            },
+            {
+              "text": "**Let’s separate what we know about the launch delay from what we’re assuming about the vendor.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о задержке запуска, от наших предположений о поставщике."
+            },
+            {
+              "text": "**Let’s separate what we know about the failed test from what we’re assuming about the underlying defect.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о проваленном тесте, от наших предположений о лежащем в основе дефекте."
+            },
+            {
+              "text": "**Let’s separate what we know about the hiring slowdown from what we’re assuming about next year’s budget.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о замедлении найма, от наших предположений о бюджете на следующий год."
+            },
+            {
+              "text": "**Let’s separate what we know about the experiment from what we’re assuming about long-term behaviour.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об эксперименте, от наших предположений о долгосрочном поведении."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Lassen Sie uns bei [X] zwischen dem unterscheiden, was wir wissen, und dem, was wir annehmen.",
+          "example": "Lassen Sie uns beim Ausfall zwischen dem unterscheiden, was wir wissen, und dem, was wir über seine Ursache annehmen.",
+          "translation": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине.",
+          "examples": [
+            {
+              "text": "**Lassen Sie uns beim Ausfall zwischen dem unterscheiden, was wir wissen, und dem, was wir über seine Ursache annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о сбое, от наших предположений о его причине."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Kundenabwanderung zwischen dem unterscheiden, was wir wissen, und dem, was wir über die Preissensibilität annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об оттоке клиентов, от наших предположений об их чувствительности к цене."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Startverzögerung zwischen dem unterscheiden, was wir wissen, und dem, was wir über den Lieferanten annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о задержке запуска, от наших предположений о поставщике."
+            },
+            {
+              "text": "**Lassen Sie uns beim fehlgeschlagenen Test zwischen dem unterscheiden, was wir wissen, und dem, was wir über den zugrunde liegenden Fehler annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о проваленном тесте, от наших предположений о лежащем в основе дефекте."
+            },
+            {
+              "text": "**Lassen Sie uns bei der Verlangsamung der Einstellungen zwischen dem unterscheiden, was wir wissen, und dem, was wir über das Budget für nächstes Jahr annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем о замедлении найма, от наших предположений о бюджете на следующий год."
+            },
+            {
+              "text": "**Lassen Sie uns beim Experiment zwischen dem unterscheiden, was wir wissen, und dem, was wir über das langfristige Verhalten annehmen.**",
+              "translation_ru": "Давайте отделим то, что мы знаем об эксперименте, от наших предположений о долгосрочном поведении."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Let’s separate what we know about [X] from what we’re assuming.",
+        "Lassen Sie uns bei [X] zwischen dem unterscheiden, was wir wissen, und dem, was wir annehmen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 evidence frame: separate observed facts from assumptions before reasoning forward."
+      }
     }
   ]
 }

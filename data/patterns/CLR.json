@@ -479,6 +479,96 @@
       "title_en": "To put [X] more precisely, [Y]",
       "description_en": "Repair an imprecise statement by replacing a broad label with the exact distinction you mean.",
       "description_ru": "Используйте каркас, чтобы заменить расплывчатую формулировку точным различием и сделать мысль проверяемой."
+    },
+    {
+      "id": "C1CLR002",
+      "group_id": "CLR",
+      "set_id": "CLR",
+      "title_ru": "Под [X] я здесь имею в виду [Y], а не [Z]",
+      "metaphor_ru": "Закрепляйте значение ключевого слова до того, как участники начнут спорить о разных вещах под одним названием.",
+      "title_en": "What I mean by [X] here is [Y], not [Z]",
+      "description_en": "Use this frame to define a term precisely when different interpretations could derail the discussion.",
+      "description_ru": "Используйте этот каркас, чтобы точно определить термин, если разные трактовки могут увести обсуждение в сторону.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What I mean by [X] here is [Y], not [Z].",
+          "example": "What I mean by fast here is under two seconds, not literally instantaneous.",
+          "translation": "Под «быстро» я здесь имею в виду меньше двух секунд, а не буквально мгновенно.",
+          "examples": [
+            {
+              "text": "**What I mean by fast here is under two seconds, not literally instantaneous.**",
+              "translation_ru": "Под «быстро» я здесь имею в виду меньше двух секунд, а не буквально мгновенно."
+            },
+            {
+              "text": "**What I mean by done here is deployed and monitored, not merely code-complete.**",
+              "translation_ru": "Под «готово» я здесь имею в виду «развёрнуто и находится под наблюдением», а не просто «код дописан»."
+            },
+            {
+              "text": "**What I mean by risk here is an unverified dependency, not a general feeling that something could go wrong.**",
+              "translation_ru": "Под «риском» я здесь имею в виду непроверенную зависимость, а не общее ощущение, что что-то может пойти не так."
+            },
+            {
+              "text": "**What I mean by customer here is the paying account owner, not every person who uses the product.**",
+              "translation_ru": "Под «клиентом» я здесь имею в виду владельца оплачиваемого аккаунта, а не любого пользователя продукта."
+            },
+            {
+              "text": "**What I mean by simple here is fewer choices at each step, not fewer capabilities overall.**",
+              "translation_ru": "Под «простым» я здесь имею в виду меньше вариантов выбора на каждом шаге, а не меньше возможностей в целом."
+            },
+            {
+              "text": "**What I mean by urgent here is before tomorrow’s cutover, not today at any cost.**",
+              "translation_ru": "Под «срочно» я здесь имею в виду «до завтрашнего переключения», а не «сегодня любой ценой»."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Mit [X] meine ich hier [Y], nicht [Z].",
+          "example": "Mit schnell meine ich hier unter zwei Sekunden, nicht buchstäblich augenblicklich.",
+          "translation": "Под «быстро» я здесь имею в виду меньше двух секунд, а не буквально мгновенно.",
+          "examples": [
+            {
+              "text": "**Mit schnell meine ich hier unter zwei Sekunden, nicht buchstäblich augenblicklich.**",
+              "translation_ru": "Под «быстро» я здесь имею в виду меньше двух секунд, а не буквально мгновенно."
+            },
+            {
+              "text": "**Mit fertig meine ich hier produktiv gesetzt und überwacht, nicht nur technisch fertig entwickelt.**",
+              "translation_ru": "Под «готово» я здесь имею в виду «развёрнуто и находится под наблюдением», а не просто «код дописан»."
+            },
+            {
+              "text": "**Mit Risiko meine ich hier eine ungeprüfte Abhängigkeit, nicht nur das allgemeine Gefühl, dass etwas schiefgehen könnte.**",
+              "translation_ru": "Под «риском» я здесь имею в виду непроверенную зависимость, а не общее ощущение, что что-то может пойти не так."
+            },
+            {
+              "text": "**Mit Kunde meine ich hier den zahlenden Account-Inhaber, nicht jede Person, die das Produkt nutzt.**",
+              "translation_ru": "Под «клиентом» я здесь имею в виду владельца оплачиваемого аккаунта, а не любого пользователя продукта."
+            },
+            {
+              "text": "**Mit einfach meine ich hier weniger Auswahlmöglichkeiten pro Schritt, nicht insgesamt weniger Funktionen.**",
+              "translation_ru": "Под «простым» я здесь имею в виду меньше вариантов выбора на каждом шаге, а не меньше возможностей в целом."
+            },
+            {
+              "text": "**Mit dringend meine ich hier vor dem morgigen Cutover, nicht heute um jeden Preis.**",
+              "translation_ru": "Под «срочно» я здесь имею в виду «до завтрашнего переключения», а не «сегодня любой ценой»."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What I mean by [X] here is [Y], not [Z].",
+        "Mit [X] meine ich hier [Y], nicht [Z]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 clarification frame: define a contested or ambiguous term precisely."
+      }
     }
   ]
 }
