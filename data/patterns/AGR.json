@@ -189,6 +189,96 @@
         ],
         "notes": "C1 communicative frame: constructive disagreement with an inference."
       }
+    },
+    {
+      "id": "C1AGR003",
+      "group_id": "AGR",
+      "set_id": "AGR",
+      "title_ru": "То, что [X], ещё не означает, что [Y]",
+      "metaphor_ru": "Отделяйте наблюдаемый факт от вывода, который из него вовсе не обязательно следует.",
+      "title_en": "Just because [X] doesn't mean [Y]",
+      "description_ru": "Разговорная конструкция для мягкого, но ясного возражения против поспешного вывода. В немецком после nur weil идёт придаточная часть с глаголом в конце.",
+      "description_en": "Push back on an unwarranted inference without denying the underlying fact; German uses a nur weil subordinate clause.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Just because [X] doesn't mean [Y].",
+          "example": "Just because Lena is quiet in meetings doesn't mean she has nothing to contribute.",
+          "translation": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить.",
+          "examples": [
+            {
+              "text": "**Just because Lena is quiet in meetings doesn't mean she has nothing to contribute.**",
+              "translation_ru": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить."
+            },
+            {
+              "text": "**Just because the repair was cheap doesn't mean the bicycle is safe to ride.**",
+              "translation_ru": "Недорогой ремонт ещё не означает, что на велосипеде безопасно ездить."
+            },
+            {
+              "text": "**Just because a headline has been shared thousands of times doesn't mean it's accurate.**",
+              "translation_ru": "То, что заголовком поделились тысячи раз, ещё не делает его достоверным."
+            },
+            {
+              "text": "**Just because I disagree with your plan doesn't mean I don't appreciate the effort that went into it.**",
+              "translation_ru": "То, что я не согласен с твоим планом, не означает, что я не ценю вложенные в него усилия."
+            },
+            {
+              "text": "**Just because a child can read individual words doesn't mean they're ready for a whole novel.**",
+              "translation_ru": "Если ребёнок умеет читать отдельные слова, это ещё не значит, что он готов осилить целый роман."
+            },
+            {
+              "text": "**Just because we've automated the import doesn't mean the data are now reliable.**",
+              "translation_ru": "Автоматизация импорта сама по себе ещё не означает, что данные теперь надёжны."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nur weil [X], heißt das noch lange nicht, dass [Y].",
+          "example": "Nur weil Lena in Besprechungen wenig sagt, heißt das noch lange nicht, dass sie nichts beizutragen hat.",
+          "translation": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить.",
+          "examples": [
+            {
+              "text": "**Nur weil Lena in Besprechungen wenig sagt, heißt das noch lange nicht, dass sie nichts beizutragen hat.**",
+              "translation_ru": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить."
+            },
+            {
+              "text": "**Nur weil die Reparatur günstig war, heißt das noch lange nicht, dass das Fahrrad verkehrssicher ist.**",
+              "translation_ru": "Недорогой ремонт ещё не означает, что на велосипеде безопасно ездить."
+            },
+            {
+              "text": "**Nur weil eine Schlagzeile tausendfach geteilt wurde, heißt das noch lange nicht, dass sie stimmt.**",
+              "translation_ru": "То, что заголовком поделились тысячи раз, ещё не делает его достоверным."
+            },
+            {
+              "text": "**Nur weil ich deinem Plan widerspreche, heißt das noch lange nicht, dass ich die Arbeit, die darin steckt, nicht schätze.**",
+              "translation_ru": "То, что я не согласен с твоим планом, не означает, что я не ценю вложенные в него усилия."
+            },
+            {
+              "text": "**Nur weil ein Kind einzelne Wörter lesen kann, heißt das noch lange nicht, dass es schon einen ganzen Roman schafft.**",
+              "translation_ru": "Если ребёнок умеет читать отдельные слова, это ещё не значит, что он готов осилить целый роман."
+            },
+            {
+              "text": "**Nur weil wir den Import automatisiert haben, heißt das noch lange nicht, dass die Daten jetzt zuverlässig sind.**",
+              "translation_ru": "Автоматизация импорта сама по себе ещё не означает, что данные теперь надёжны."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Just because [X] doesn't mean [Y].",
+        "Nur weil [X], heißt das noch lange nicht, dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-11T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 spoken concession/inference contrast. Local spaCy annotation pending."
+      }
     }
   ]
 }
