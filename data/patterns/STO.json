@@ -181,6 +181,96 @@
         ],
         "notes": "C1 reflective frame: show which evidence changed a prior assumption."
       }
+    },
+    {
+      "id": "C1STO003",
+      "group_id": "STO",
+      "set_id": "STO",
+      "title_ru": "Действие вот-вот должно было произойти — и его прервало событие",
+      "metaphor_ru": "Подведите рассказ к моменту действия, которое едва не произошло, и покажите, что вмешалось.",
+      "title_en": "[Person] was about to [X] when [Y]",
+      "description_en": "Narrate an interruption at the very last moment using was/were about to and a past event introduced by when.",
+      "description_ru": "Рассказывайте, что кто-то уже собирался сделать, когда произошло неожиданное событие; тренируйте was/were about to и when.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] was/were about to [action] when [event].",
+          "example": "I was about to get off the train when I noticed my bag was missing.",
+          "translation": "Я уже собирался выйти из поезда, когда заметил, что моей сумки нет.",
+          "examples": [
+            {
+              "text": "**I was about to get off the train when I noticed my bag was missing.**",
+              "translation_ru": "Я уже собирался выйти из поезда, когда заметил, что моей сумки нет."
+            },
+            {
+              "text": "**She was about to call a plumber when the leak suddenly stopped.**",
+              "translation_ru": "Она уже собиралась вызвать сантехника, когда вода вдруг перестала капать."
+            },
+            {
+              "text": "**We were about to cancel the rehearsal when the missing singer walked in.**",
+              "translation_ru": "Мы уже собирались отменить репетицию, когда появилась певица, которую мы ждали."
+            },
+            {
+              "text": "**They were about to publish the survey when someone spotted an error in the questions.**",
+              "translation_ru": "Они уже собирались опубликовать опрос, когда кто-то заметил ошибку в вопросах."
+            },
+            {
+              "text": "**He was about to apologise when his friend explained what had upset her.**",
+              "translation_ru": "Он уже собирался извиниться, когда подруга объяснила, что её задело."
+            },
+            {
+              "text": "**I was about to buy the used bicycle when the seller mentioned a crack in the frame.**",
+              "translation_ru": "Я уже собирался купить подержанный велосипед, когда продавец упомянул трещину в раме."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] wollte(n) gerade [Handlung], als [Ereignis].",
+          "example": "Ich wollte gerade aus dem Zug steigen, als ich bemerkte, dass meine Tasche fehlte.",
+          "translation": "Я уже собирался выйти из поезда, когда заметил, что моей сумки нет.",
+          "examples": [
+            {
+              "text": "**Ich wollte gerade aus dem Zug steigen, als ich bemerkte, dass meine Tasche fehlte.**",
+              "translation_ru": "Я уже собирался выйти из поезда, когда заметил, что моей сумки нет."
+            },
+            {
+              "text": "**Sie wollte gerade einen Klempner anrufen, als das Wasser plötzlich aufhörte zu tropfen.**",
+              "translation_ru": "Она уже собиралась вызвать сантехника, когда вода вдруг перестала капать."
+            },
+            {
+              "text": "**Wir wollten gerade die Probe absagen, als die Sängerin, auf die wir gewartet hatten, zur Tür hereinkam.**",
+              "translation_ru": "Мы уже собирались отменить репетицию, когда появилась певица, которую мы ждали."
+            },
+            {
+              "text": "**Sie wollten gerade die Umfrage veröffentlichen, als jemand einen Fehler in den Fragen entdeckte.**",
+              "translation_ru": "Они уже собирались опубликовать опрос, когда кто-то заметил ошибку в вопросах."
+            },
+            {
+              "text": "**Er wollte sich gerade entschuldigen, als seine Freundin erklärte, was sie verletzt hatte.**",
+              "translation_ru": "Он уже собирался извиниться, когда подруга объяснила, что её задело."
+            },
+            {
+              "text": "**Ich wollte gerade das gebrauchte Fahrrad kaufen, als der Verkäufer einen Riss im Rahmen erwähnte.**",
+              "translation_ru": "Я уже собирался купить подержанный велосипед, когда продавец упомянул трещину в раме."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] was/were about to [action] when [event].",
+        "[Person] wollte(n) gerade [Handlung], als [Ereignis]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-12T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 productive speech frame; local spaCy annotation pending."
+      }
     }
   ]
 }
