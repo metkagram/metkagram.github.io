@@ -99,6 +99,96 @@
       "title_en": "It would be premature to conclude that [X] before [Y]",
       "description_en": "Hold back a strong conclusion until a specific piece of evidence, time point, or validation step is available.",
       "description_ru": "Не делайте сильный вывод раньше времени: укажите, какого факта, срока или шага проверки ещё не хватает."
+    },
+    {
+      "id": "C1HED002",
+      "group_id": "HED",
+      "set_id": "HED",
+      "title_ru": "На этом этапе я бы считал [X] рабочей гипотезой, а не [Y]",
+      "metaphor_ru": "Сохраняйте полезную гипотезу в работе, не превращая её раньше времени в установленный факт.",
+      "title_en": "At this stage, I would treat [X] as a working assumption rather than [Y]",
+      "description_en": "Use this frame when evidence is useful enough to proceed but not strong enough for a firm conclusion.",
+      "description_ru": "Используйте этот каркас, когда данных достаточно для следующего шага, но недостаточно для твёрдого вывода.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "At this stage, I would treat [X] as a working assumption rather than [Y].",
+          "example": "At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.",
+          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "examples": [
+            {
+              "text": "**At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.**",
+              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+            },
+            {
+              "text": "**At this stage, I would treat the caching layer as a working assumption rather than the confirmed root cause.**",
+              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+            },
+            {
+              "text": "**At this stage, I would treat next quarter’s demand forecast as a working assumption rather than a commitment.**",
+              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+            },
+            {
+              "text": "**At this stage, I would treat the July launch date as a working assumption rather than a fixed deadline.**",
+              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+            },
+            {
+              "text": "**At this stage, I would treat the complaint pattern as a working assumption rather than evidence that every customer has the same problem.**",
+              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+            },
+            {
+              "text": "**At this stage, I would treat the supplier’s stated capacity as a working assumption rather than guaranteed availability.**",
+              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten.",
+          "example": "Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.",
+          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "examples": [
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.**",
+              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die Cache-Schicht als Arbeitshypothese und nicht als bestätigte Ursache betrachten.**",
+              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die Nachfrageprognose für das nächste Quartal als Arbeitshypothese und nicht als Zusage betrachten.**",
+              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich den Starttermin im Juli als Arbeitshypothese und nicht als feste Frist betrachten.**",
+              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich das Muster in den Beschwerden als Arbeitshypothese und nicht als Beleg dafür betrachten, dass alle Kunden dasselbe Problem haben.**",
+              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die vom Lieferanten genannte Kapazität als Arbeitshypothese und nicht als garantierte Verfügbarkeit betrachten.**",
+              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "At this stage, I would treat [X] as a working assumption rather than [Y].",
+        "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: proceed under uncertainty without overstating confidence."
+      }
     }
   ]
 }

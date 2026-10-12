@@ -574,6 +574,96 @@
       "title_en": "For [X] to succeed, [Y] needs to [Z]",
       "description_en": "State a concrete prerequisite for success and identify who must satisfy it.",
       "description_ru": "Формулируйте конкретное условие успеха и называйте того, кто должен его обеспечить."
+    },
+    {
+      "id": "C1MOD002",
+      "group_id": "MOD",
+      "set_id": "MOD",
+      "title_ru": "Необязательное действие с условием-исключением",
+      "metaphor_ru": "Назовите обычное отсутствие обязанности и отдельно — исключение, при котором она возникает.",
+      "title_en": "You don't have to [X] unless [Y]",
+      "description_en": "Distinguish an optional action from the specific circumstance that would make it necessary; practise don't have to versus unless.",
+      "description_ru": "Объясняйте, что делать что-то необязательно, кроме оговорённого случая. Тренируйте модальную необходимость и unless.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] doesn't have to [action] unless [exception].",
+          "example": "You don't have to bring a gift unless you really want to.",
+          "translation": "Тебе необязательно приносить подарок, если только ты сам этого не хочешь.",
+          "examples": [
+            {
+              "text": "**You don't have to bring a gift unless you really want to.**",
+              "translation_ru": "Тебе необязательно приносить подарок, если только ты сам этого не хочешь."
+            },
+            {
+              "text": "**We don't have to replace the router unless the connection keeps dropping.**",
+              "translation_ru": "Нам не нужно менять роутер, если только соединение не продолжит обрываться."
+            },
+            {
+              "text": "**Students don't have to memorise every definition unless the exam specifically requires it.**",
+              "translation_ru": "Студентам необязательно заучивать каждое определение, если только этого прямо не требует экзамен."
+            },
+            {
+              "text": "**I don't have to explain the whole story unless someone asks for the background.**",
+              "translation_ru": "Мне необязательно рассказывать всю историю, если только кто-то не попросит объяснить предысторию."
+            },
+            {
+              "text": "**She doesn't have to work late unless the hospital calls her in for an emergency.**",
+              "translation_ru": "Ей не нужно задерживаться на работе, если только больница не вызовет её из-за экстренного случая."
+            },
+            {
+              "text": "**Parents don't have to download an app unless they prefer digital updates.**",
+              "translation_ru": "Родителям необязательно устанавливать приложение, если только им не удобнее получать сообщения в электронном виде."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] muss [Handlung] nicht, es sei denn, [Ausnahme].",
+          "example": "Du musst kein Geschenk mitbringen, es sei denn, du möchtest unbedingt eines schenken.",
+          "translation": "Тебе необязательно приносить подарок, если только ты сам этого не хочешь.",
+          "examples": [
+            {
+              "text": "**Du musst kein Geschenk mitbringen, es sei denn, du möchtest unbedingt eines schenken.**",
+              "translation_ru": "Тебе необязательно приносить подарок, если только ты сам этого не хочешь."
+            },
+            {
+              "text": "**Wir müssen den Router nicht austauschen, es sei denn, die Verbindung bricht weiterhin ab.**",
+              "translation_ru": "Нам не нужно менять роутер, если только соединение не продолжит обрываться."
+            },
+            {
+              "text": "**Studierende müssen nicht jede Definition auswendig lernen, es sei denn, die Prüfung verlangt es ausdrücklich.**",
+              "translation_ru": "Студентам необязательно заучивать каждое определение, если только этого прямо не требует экзамен."
+            },
+            {
+              "text": "**Ich muss nicht die ganze Geschichte erzählen, es sei denn, jemand fragt nach den Hintergründen.**",
+              "translation_ru": "Мне необязательно рассказывать всю историю, если только кто-то не попросит объяснить предысторию."
+            },
+            {
+              "text": "**Sie muss nicht länger arbeiten, es sei denn, das Krankenhaus ruft sie wegen eines Notfalls zurück.**",
+              "translation_ru": "Ей не нужно задерживаться на работе, если только больница не вызовет её из-за экстренного случая."
+            },
+            {
+              "text": "**Eltern müssen keine App herunterladen, es sei denn, sie möchten die Mitteilungen lieber digital erhalten.**",
+              "translation_ru": "Родителям необязательно устанавливать приложение, если только им не удобнее получать сообщения в электронном виде."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] doesn't have to [action] unless [exception].",
+        "[Person] muss [Handlung] nicht, es sei denn, [Ausnahme]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-12T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated C1 productive frame; local spaCy annotation pending."
+      }
     }
   ]
 }
