@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Hypothetical questions."
       }
+    },
+    {
+      "id": "C1QHYP001",
+      "group_id": "QHYP",
+      "set_id": "QHYP",
+      "title_ru": "Если исходное предположение окажется неверным",
+      "metaphor_ru": "Мысленно опровергните уверенное предположение и спросите, как пришлось бы изменить действие. Это не прогноз, а проверка устойчивости плана.",
+      "title_en": "If [X] turned out to be wrong, how would [Y]?",
+      "description_en": "Use a counterfactual question to test what changes if a trusted assumption proves false.",
+      "description_ru": "Мысленно опровергните уверенное предположение и спросите, как пришлось бы изменить действие. Это не прогноз, а проверка устойчивости плана.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "If [X] turned out to be wrong, how would [Y]?",
+          "example": "If our map turned out to be wrong, how would we find the trail back?",
+          "translation": "Если окажется, что наша карта неверна, как мы найдём обратную дорогу?",
+          "examples": [
+            {
+              "text": "**If our map turned out to be wrong, how would we find the trail back?**",
+              "translation_ru": "Если окажется, что наша карта неверна, как мы найдём обратную дорогу?"
+            },
+            {
+              "text": "**If the timetable turned out to be wrong, how would you get to the interview on time?**",
+              "translation_ru": "Если расписание окажется неверным, как ты успеешь на собеседование?"
+            },
+            {
+              "text": "**If our budget estimate turned out to be wrong, how would we adapt the workshop?**",
+              "translation_ru": "Если мы ошиблись с оценкой бюджета, как нам изменить план мастер-класса?"
+            },
+            {
+              "text": "**If the study guide turned out to be wrong, how would you check what the exam really covers?**",
+              "translation_ru": "Если учебное пособие окажется неточным, как ты выяснишь, что действительно будет на экзамене?"
+            },
+            {
+              "text": "**If our diagnosis turned out to be wrong, how would we explain the recurring outages?**",
+              "translation_ru": "Если наша диагностика окажется ошибочной, чем мы объясним повторяющиеся сбои?"
+            },
+            {
+              "text": "**If your first impression of the new neighbour turned out to be wrong, how would you make amends?**",
+              "translation_ru": "Если выяснится, что первое впечатление о новом соседе было ошибочным, как ты исправишь ситуацию?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wenn sich [X] als falsch herausstellen würde, wie würdest du [Y]?",
+          "example": "Wenn sich unsere Karte als falsch herausstellen würde, wie würden wir zum Ausgangspunkt zurückfinden?",
+          "translation": "Если окажется, что наша карта неверна, как мы найдём обратную дорогу?",
+          "examples": [
+            {
+              "text": "**Wenn sich unsere Karte als falsch herausstellen würde, wie würden wir zum Ausgangspunkt zurückfinden?**",
+              "translation_ru": "Если окажется, что наша карта неверна, как мы найдём обратную дорогу?"
+            },
+            {
+              "text": "**Wenn sich der Fahrplan als falsch herausstellen würde, wie würdest du rechtzeitig zum Vorstellungsgespräch kommen?**",
+              "translation_ru": "Если расписание окажется неверным, как ты успеешь на собеседование?"
+            },
+            {
+              "text": "**Wenn sich unsere Kostenschätzung als falsch herausstellen würde, wie würden wir den Workshop umplanen?**",
+              "translation_ru": "Если мы ошиблись с оценкой бюджета, как нам изменить план мастер-класса?"
+            },
+            {
+              "text": "**Wenn sich der Lernleitfaden als falsch herausstellen würde, wie würdest du überprüfen, was in der Prüfung tatsächlich drankommt?**",
+              "translation_ru": "Если учебное пособие окажется неточным, как ты выяснишь, что действительно будет на экзамене?"
+            },
+            {
+              "text": "**Wenn sich unsere Diagnose als falsch herausstellen würde, wie würden wir die wiederkehrenden Ausfälle erklären?**",
+              "translation_ru": "Если наша диагностика окажется ошибочной, чем мы объясним повторяющиеся сбои?"
+            },
+            {
+              "text": "**Wenn sich dein erster Eindruck vom neuen Nachbarn als falsch herausstellen würde, wie würdest du das wieder gutmachen?**",
+              "translation_ru": "Если выяснится, что первое впечатление о новом соседе было ошибочным, как ты исправишь ситуацию?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "If [X] turned out to be wrong, how would [Y]?",
+        "Wenn sich [X] als falsch herausstellen würde, wie würdest du [Y]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 spoken frame; local spaCy annotation pending."
+      }
     }
   ]
 }
