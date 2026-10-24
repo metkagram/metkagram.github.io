@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Follow-up questions."
       }
+    },
+    {
+      "id": "C1QFOL001",
+      "group_id": "QFOL",
+      "set_id": "QFOL",
+      "title_ru": "Попросить собеседника восстановить последовательность событий",
+      "metaphor_ru": "Сначала восстановите последовательность событий, а уже потом делайте выводы о причинах. В немецком потренируйте придаточное предложение с was.",
+      "title_en": "Could you walk me through what happened between [X] and [Y]?",
+      "description_en": "Ask for a chronological account instead of jumping to blame or conclusions. The German version practises an embedded was-clause.",
+      "description_ru": "Сначала восстановите последовательность событий, а уже потом делайте выводы о причинах. В немецком потренируйте придаточное предложение с was.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could you walk me through what happened between [X] and [Y]?",
+          "example": "Could you walk me through what happened between the first error message and the restart?",
+          "translation": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?",
+          "examples": [
+            {
+              "text": "**Could you walk me through what happened between the first error message and the restart?**",
+              "translation_ru": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?"
+            },
+            {
+              "text": "**Could you walk me through what happened between leaving home and discovering your keys were gone?**",
+              "translation_ru": "Можешь восстановить, что случилось после выхода из дома и до того, как ты заметил пропажу ключей?"
+            },
+            {
+              "text": "**Could you walk me through what happened between the first disagreement and the apology?**",
+              "translation_ru": "Расскажешь по порядку, как всё развивалось от первой ссоры до извинения?"
+            },
+            {
+              "text": "**Could you walk me through what happened between taking the samples and publishing the chart?**",
+              "translation_ru": "Можешь объяснить по шагам, что происходило между взятием проб и публикацией диаграммы?"
+            },
+            {
+              "text": "**Could you walk me through what happened between submitting your application and getting the interview invitation?**",
+              "translation_ru": "Можешь рассказать, что происходило после отправки резюме и до приглашения на собеседование?"
+            },
+            {
+              "text": "**Could you walk me through what happened between the delay announcement and the replacement bus arriving?**",
+              "translation_ru": "Можешь рассказать, что было между объявлением о задержке и приездом подменного автобуса?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Kannst du mir Schritt für Schritt schildern, was zwischen [X] und [Y] passiert ist?",
+          "example": "Kannst du mir Schritt für Schritt schildern, was zwischen der ersten Fehlermeldung und dem Neustart passiert ist?",
+          "translation": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?",
+          "examples": [
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der ersten Fehlermeldung und dem Neustart passiert ist?**",
+              "translation_ru": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen deinem Aufbruch und dem Moment passiert ist, in dem dir die fehlenden Schlüssel auffielen?**",
+              "translation_ru": "Можешь восстановить, что случилось после выхода из дома и до того, как ты заметил пропажу ключей?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen dem ersten Streit und der Entschuldigung passiert ist?**",
+              "translation_ru": "Расскажешь по порядку, как всё развивалось от первой ссоры до извинения?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der Probenentnahme und der Veröffentlichung des Diagramms passiert ist?**",
+              "translation_ru": "Можешь объяснить по шагам, что происходило между взятием проб и публикацией диаграммы?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen dem Abschicken deiner Bewerbung und der Einladung zum Vorstellungsgespräch passiert ist?**",
+              "translation_ru": "Можешь рассказать, что происходило после отправки резюме и до приглашения на собеседование?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der Verspätungsdurchsage und der Ankunft des Ersatzbusses passiert ist?**",
+              "translation_ru": "Можешь рассказать, что было между объявлением о задержке и приездом подменного автобуса?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Could you walk me through what happened between [X] and [Y]?",
+        "Kannst du mir Schritt für Schritt schildern, was zwischen [X] und [Y] passiert ist?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

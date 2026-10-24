@@ -287,6 +287,96 @@
         ],
         "notes": "C1 evidence frame: separate observed facts from assumptions before reasoning forward."
       }
+    },
+    {
+      "id": "C1EVD041",
+      "group_id": "EVD",
+      "set_id": "EVD",
+      "title_ru": "Отделить то, что данные показывают, от того, чего они не доказывают",
+      "metaphor_ru": "Называйте подтверждённое наблюдение и отдельно — вопрос, на который источник не отвечает. В немецком тренируйте косвенный вопрос с ob.",
+      "title_en": "The [source] shows that [X], but it doesn't tell us whether [Y]",
+      "description_en": "Make an evidence-limited statement: identify one supported observation, then one unanswered question. The German version uses an indirect ob-question.",
+      "description_ru": "Называйте подтверждённое наблюдение и отдельно — вопрос, на который источник не отвечает. В немецком тренируйте косвенный вопрос с ob.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The [source] shows that [X], but it doesn't tell us whether [Y].",
+          "example": "The attendance sheet shows that every seat was taken, but it doesn't tell us whether people found the workshop useful.",
+          "translation": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно.",
+          "examples": [
+            {
+              "text": "**The attendance sheet shows that every seat was taken, but it doesn't tell us whether people found the workshop useful.**",
+              "translation_ru": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно."
+            },
+            {
+              "text": "**The server log shows that the request timed out, but it doesn't tell us whether the database caused the delay.**",
+              "translation_ru": "Журнал сервера показывает, что запрос завершился по тайм-ауту, но по нему нельзя понять, была ли виновата база данных."
+            },
+            {
+              "text": "**The neighbourhood survey shows that residents want quieter streets, but it doesn't tell us whether they'd accept fewer parking spaces.**",
+              "translation_ru": "Опрос показывает, что жители хотят меньше шума на улицах, но неясно, готовы ли они ради этого отказаться от части парковочных мест."
+            },
+            {
+              "text": "**The shipping receipt shows that the parcel left the warehouse, but it doesn't tell us whether it reached the right address.**",
+              "translation_ru": "Накладная подтверждает отправку посылки со склада, но не позволяет установить, доставили ли её по верному адресу."
+            },
+            {
+              "text": "**The exam report shows that she knows the grammar rules, but it doesn't tell us whether she can use them in a spontaneous conversation.**",
+              "translation_ru": "Результаты экзамена показывают, что она знает правила грамматики, но не говорят, умеет ли она пользоваться ими в живом разговоре."
+            },
+            {
+              "text": "**The sleep diary shows that I woke up several times, but it doesn't tell us whether street noise was the cause.**",
+              "translation_ru": "Из дневника сна видно, что я просыпался несколько раз, но нельзя установить, был ли причиной шум с улицы."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Aus [Quelle] geht hervor, dass [X]. Ob [Y], lässt sich daraus nicht erkennen.",
+          "example": "Aus der Anwesenheitsliste geht hervor, dass alle Plätze besetzt waren. Ob die Teilnehmenden den Workshop hilfreich fanden, lässt sich daraus nicht erkennen.",
+          "translation": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно.",
+          "examples": [
+            {
+              "text": "**Aus der Anwesenheitsliste geht hervor, dass alle Plätze besetzt waren. Ob die Teilnehmenden den Workshop hilfreich fanden, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно."
+            },
+            {
+              "text": "**Aus dem Serverprotokoll geht hervor, dass die Anfrage wegen Zeitüberschreitung abbrach. Ob die Datenbank die Verzögerung verursacht hat, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Журнал сервера показывает, что запрос завершился по тайм-ауту, но по нему нельзя понять, была ли виновата база данных."
+            },
+            {
+              "text": "**Aus der Stadtteilumfrage geht hervor, dass die Anwohner ruhigere Straßen möchten. Ob sie dafür auf Parkplätze verzichten würden, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Опрос показывает, что жители хотят меньше шума на улицах, но неясно, готовы ли они ради этого отказаться от части парковочных мест."
+            },
+            {
+              "text": "**Aus dem Versandbeleg geht hervor, dass das Paket das Lager verlassen hat. Ob es an der richtigen Adresse angekommen ist, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Накладная подтверждает отправку посылки со склада, но не позволяет установить, доставили ли её по верному адресу."
+            },
+            {
+              "text": "**Aus dem Prüfungsbericht geht hervor, dass sie die Grammatikregeln kennt. Ob sie sie in einem spontanen Gespräch anwenden kann, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Результаты экзамена показывают, что она знает правила грамматики, но не говорят, умеет ли она пользоваться ими в живом разговоре."
+            },
+            {
+              "text": "**Aus meinem Schlaftagebuch geht hervor, dass ich mehrmals aufgewacht bin. Ob der Straßenlärm der Grund war, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Из дневника сна видно, что я просыпался несколько раз, но нельзя установить, был ли причиной шум с улицы."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The [source] shows that [X], but it doesn't tell us whether [Y].",
+        "Aus [Quelle] geht hervor, dass [X]. Ob [Y], lässt sich daraus nicht erkennen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

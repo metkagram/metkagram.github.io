@@ -99,6 +99,96 @@
       "title_en": "Because [X], [Y], which meant that [Z]",
       "description_en": "Build a causal chain with an explicit intermediate event instead of jumping directly from a cause to a distant outcome.",
       "description_ru": "Стройте причинную цепочку через промежуточное событие, а не перескакивайте сразу от причины к далёкому последствию."
+    },
+    {
+      "id": "C1CAU041",
+      "group_id": "CAU",
+      "set_id": "CAU",
+      "title_ru": "Пересмотреть первоначальный диагноз после новой проверки",
+      "metaphor_ru": "Показывайте, как новые сведения меняют первоначальное объяснение проблемы. Отрабатывайте английское what и немецкие придаточные с als.",
+      "title_en": "What initially looked like [X] turned out to be [Y] once [Z]",
+      "description_en": "Describe how new information changes the explanation of a problem. Practise English what-clauses and German subordinate clauses with als.",
+      "description_ru": "Показывайте, как новые сведения меняют первоначальное объяснение проблемы. Отрабатывайте английское what и немецкие придаточные с als.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What initially looked like [X] turned out to be [Y] once [Z].",
+          "example": "What initially looked like a broken router turned out to be a loose cable once we checked the connections.",
+          "translation": "Сначала мы решили, что сломался роутер, но после проверки соединений выяснилось, что просто отошёл кабель.",
+          "examples": [
+            {
+              "text": "**What initially looked like a broken router turned out to be a loose cable once we checked the connections.**",
+              "translation_ru": "Сначала мы решили, что сломался роутер, но после проверки соединений выяснилось, что просто отошёл кабель."
+            },
+            {
+              "text": "**What initially looked like indifference turned out to be nervousness once we spoke to her in private.**",
+              "translation_ru": "Поначалу её поведение приняли за равнодушие, но при личном разговоре стало ясно, что она просто нервничала."
+            },
+            {
+              "text": "**What initially looked like a duplicate customer record turned out to be two branches with similar names once we compared their addresses.**",
+              "translation_ru": "Запись выглядела как дубликат клиента, пока мы не сравнили адреса и не увидели, что это два филиала с похожими названиями."
+            },
+            {
+              "text": "**What initially looked like a missed appointment turned out to be a time-zone mix-up once we opened both calendars.**",
+              "translation_ru": "Казалось, что встречу пропустили, но после сверки календарей выяснилось, что перепутали часовые пояса."
+            },
+            {
+              "text": "**What initially looked like a refusal to help turned out to be a workload issue once we asked the volunteers about their shifts.**",
+              "translation_ru": "Сначала показалось, что волонтёры не хотят помогать, но разговор о сменах выявил обычную перегрузку."
+            },
+            {
+              "text": "**What initially looked like damage to the painting turned out to be a shadow once the curtains were opened.**",
+              "translation_ru": "Пятно на картине приняли за повреждение, но, когда раздвинули шторы, оказалось, что это была тень."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was zunächst wie [X] aussah, stellte sich als [Y] heraus, als [Z].",
+          "example": "Was zunächst wie ein defekter Router aussah, stellte sich als ein lockeres Kabel heraus, als wir die Anschlüsse überprüften.",
+          "translation": "Сначала мы решили, что сломался роутер, но после проверки соединений выяснилось, что просто отошёл кабель.",
+          "examples": [
+            {
+              "text": "**Was zunächst wie ein defekter Router aussah, stellte sich als ein lockeres Kabel heraus, als wir die Anschlüsse überprüften.**",
+              "translation_ru": "Сначала мы решили, что сломался роутер, но после проверки соединений выяснилось, что просто отошёл кабель."
+            },
+            {
+              "text": "**Was zunächst wie Desinteresse aussah, stellte sich als Nervosität heraus, als wir unter vier Augen mit ihr sprachen.**",
+              "translation_ru": "Поначалу её поведение приняли за равнодушие, но при личном разговоре стало ясно, что она просто нервничала."
+            },
+            {
+              "text": "**Was zunächst wie ein doppelter Kundeneintrag aussah, stellte sich als zwei Filialen mit ähnlichen Namen heraus, als wir die Anschriften verglichen.**",
+              "translation_ru": "Запись выглядела как дубликат клиента, пока мы не сравнили адреса и не увидели, что это два филиала с похожими названиями."
+            },
+            {
+              "text": "**Was zunächst wie ein versäumter Termin aussah, stellte sich als Verwechslung der Zeitzonen heraus, als wir beide Kalender öffneten.**",
+              "translation_ru": "Казалось, что встречу пропустили, но после сверки календарей выяснилось, что перепутали часовые пояса."
+            },
+            {
+              "text": "**Was zunächst wie mangelnde Hilfsbereitschaft aussah, stellte sich als Überlastung heraus, als wir die Freiwilligen nach ihren Schichten fragten.**",
+              "translation_ru": "Сначала показалось, что волонтёры не хотят помогать, но разговор о сменах выявил обычную перегрузку."
+            },
+            {
+              "text": "**Was zunächst wie ein Schaden am Gemälde aussah, stellte sich als Schatten heraus, als die Vorhänge geöffnet wurden.**",
+              "translation_ru": "Пятно на картине приняли за повреждение, но, когда раздвинули шторы, оказалось, что это была тень."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What initially looked like [X] turned out to be [Y] once [Z].",
+        "Was zunächst wie [X] aussah, stellte sich als [Y] heraus, als [Z]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

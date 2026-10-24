@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Summaries and conclusions."
       }
+    },
+    {
+      "id": "C1SUM001",
+      "group_id": "SUM",
+      "set_id": "SUM",
+      "title_ru": "Подвести итог: о чём договорились, что осталось открытым и что дальше",
+      "metaphor_ru": "Завершайте обсуждение без ложной окончательности: назовите достигнутую договорённость, оставшийся вопрос и конкретный следующий шаг.",
+      "title_en": "We agree on [X], but [Y] is still open. Let's [Z]",
+      "description_en": "Close a discussion without pretending that every question is settled: state agreement, name the unresolved point, and suggest one next step.",
+      "description_ru": "Завершайте обсуждение без ложной окончательности: назовите достигнутую договорённость, оставшийся вопрос и конкретный следующий шаг.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "We agree on [X], but [Y] is still open. Let's [Z].",
+          "example": "We agree on the route, but the departure time is still open. Let's check the last train before we book.",
+          "translation": "Маршрут согласовали, но время выезда ещё не выбрали. Прежде чем бронировать, проверим, когда идёт последний поезд.",
+          "examples": [
+            {
+              "text": "**We agree on the route, but the departure time is still open. Let's check the last train before we book.**",
+              "translation_ru": "Маршрут согласовали, но время выезда ещё не выбрали. Прежде чем бронировать, проверим, когда идёт последний поезд."
+            },
+            {
+              "text": "**We agree on a calmer bedtime routine, but who reads tonight is still open. Let's ask the children what they prefer.**",
+              "translation_ru": "Мы договорились о более спокойном вечере, но кто сегодня читает детям, ещё не решили. Спросим их, чего им хочется."
+            },
+            {
+              "text": "**We agree on the revised introduction, but the closing example is still open. Let's try both versions aloud.**",
+              "translation_ru": "Новое вступление нас устраивает, а заключительный пример ещё не выбрали. Давайте проговорим вслух оба варианта."
+            },
+            {
+              "text": "**We agree on extending the library's hours, but the staffing plan is still open. Let's discuss evening shifts with the librarians.**",
+              "translation_ru": "Мы согласны продлить часы работы библиотеки, но расписание сотрудников ещё не утвердили. Обсудим с ними вечерние смены."
+            },
+            {
+              "text": "**We agree on a smaller first release, but the launch date is still open. Let's review the testing schedule.**",
+              "translation_ru": "Первую версию решили сделать компактнее, но дату запуска ещё не определили. Надо свериться с графиком испытаний."
+            },
+            {
+              "text": "**We agree on the lesson topics, but their order is still open. Let's start by testing the hardest question.**",
+              "translation_ru": "Темы занятий согласованы, но порядок ещё не решили. Начнём с самой сложной задачи."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Bei [X] sind wir uns einig, aber [Y] ist noch offen. Als Nächstes sollten wir [Z].",
+          "example": "Bei der Strecke sind wir uns einig, aber die Abfahrtszeit ist noch offen. Als Nächstes sollten wir die letzte Zugverbindung prüfen.",
+          "translation": "Маршрут согласовали, но время выезда ещё не выбрали. Прежде чем бронировать, проверим, когда идёт последний поезд.",
+          "examples": [
+            {
+              "text": "**Bei der Strecke sind wir uns einig, aber die Abfahrtszeit ist noch offen. Als Nächstes sollten wir die letzte Zugverbindung prüfen.**",
+              "translation_ru": "Маршрут согласовали, но время выезда ещё не выбрали. Прежде чем бронировать, проверим, когда идёт последний поезд."
+            },
+            {
+              "text": "**Bei einem ruhigeren Abendritual sind wir uns einig, aber wer heute vorliest, ist noch offen. Als Nächstes sollten wir die Kinder fragen, was sie möchten.**",
+              "translation_ru": "Мы договорились о более спокойном вечере, но кто сегодня читает детям, ещё не решили. Спросим их, чего им хочется."
+            },
+            {
+              "text": "**Bei der überarbeiteten Einleitung sind wir uns einig, aber das Schlussbeispiel ist noch offen. Als Nächstes sollten wir beide Fassungen laut ausprobieren.**",
+              "translation_ru": "Новое вступление нас устраивает, а заключительный пример ещё не выбрали. Давайте проговорим вслух оба варианта."
+            },
+            {
+              "text": "**Bei den längeren Öffnungszeiten der Bibliothek sind wir uns einig, aber der Dienstplan ist noch offen. Als Nächstes sollten wir die Abendschichten mit dem Bibliothekspersonal besprechen.**",
+              "translation_ru": "Мы согласны продлить часы работы библиотеки, но расписание сотрудников ещё не утвердили. Обсудим с ними вечерние смены."
+            },
+            {
+              "text": "**Bei einer kleineren ersten Version sind wir uns einig, aber der Starttermin ist noch offen. Als Nächstes sollten wir den Testplan prüfen.**",
+              "translation_ru": "Первую версию решили сделать компактнее, но дату запуска ещё не определили. Надо свериться с графиком испытаний."
+            },
+            {
+              "text": "**Bei den Unterrichtsthemen sind wir uns einig, aber ihre Reihenfolge ist noch offen. Als Nächstes sollten wir mit der schwierigsten Frage beginnen.**",
+              "translation_ru": "Темы занятий согласованы, но порядок ещё не решили. Начнём с самой сложной задачи."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "We agree on [X], but [Y] is still open. Let's [Z].",
+        "Bei [X] sind wir uns einig, aber [Y] ist noch offen. Als Nächstes sollten wir [Z]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }
