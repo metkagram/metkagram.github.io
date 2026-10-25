@@ -4,6 +4,7 @@ import { buildPatternGraph } from "../src/pattern-graph.mjs";
 import { wrapRecord } from "../src/provenance.mjs";
 import { patternPath } from "../src/seo-slugs.mjs";
 import { SITE_URL } from "../src/site.mjs";
+import { markHomepageLibraryEntry } from "../src/home-product-entry.mjs";
 
 const DIST = path.resolve("dist");
 const API_URL = `${SITE_URL}/api/v1`;
@@ -81,14 +82,12 @@ function patchHomeEntry() {
     en: {
       oldIntro: "Annotated phrases show how each pattern works. Notice the structure, practise the template, and reuse it in your own speech.",
       intro: "Bring a real sentence you care about. Metkagram finds a reusable frame, shows what it is doing, and asks you to make the structure your own.",
-      primary: "Start with a real sentence",
-      library: "Explore the pattern library"
+      primary: "Start with a real sentence"
     },
     ru: {
       oldIntro: "Размеченные фразы показывают, как работает каждый паттерн. Заметьте структуру, потренируйте шаблон и используйте его в своей речи.",
       intro: "Принесите реальную фразу, которая вам нужна. Metkagram найдёт повторяемый каркас, покажет его задачу и сразу предложит применить структуру в своей фразе.",
-      primary: "Начать с реальной фразы",
-      library: "Исследовать библиотеку паттернов"
+      primary: "Начать с реальной фразы"
     }
   };
 
@@ -107,9 +106,7 @@ function patchHomeEntry() {
     if (!primaryPattern.test(html)) throw new Error(`Homepage primary CTA contract changed for ${locale}`);
     html = html.replace(primaryPattern, `<a class="studio-primary-action" data-product-entry="lens" href="${lensHref}">${c.primary}<span aria-hidden="true">↗</span></a>`);
 
-    const indexPattern = new RegExp(`<a href="${practiceHref.replaceAll("/", "\\/")}">${locale === "ru" ? "Открыть индекс" : "Open the index"} <span aria-hidden="true">→<\\/span><\\/a>`);
-    if (!indexPattern.test(html)) throw new Error(`Homepage library CTA contract changed for ${locale}`);
-    html = html.replace(indexPattern, `<a data-product-entry="library" href="${practiceHref}">${c.library} <span aria-hidden="true">→</span></a>`);
+    html = markHomepageLibraryEntry(html, locale);
 
     fs.writeFileSync(file, html);
   }
