@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Preferences and choices."
       }
+    },
+    {
+      "id": "C1PFR001",
+      "group_id": "PFR",
+      "set_id": "PFR",
+      "title_ru": "Выбрать вариант, несмотря на его недостаток",
+      "metaphor_ru": "Выражайте предпочтение и честно признавайте его цену. В английском отрабатывается would rather ... than ... even if, а в немецком — würde lieber ... als ... auch wenn.",
+      "title_en": "I'd rather [X] than [Y], even if [Z]",
+      "description_en": "Defend a personal preference while openly accepting an inconvenience or downside; use a concession without turning it into a guarantee.",
+      "description_ru": "Выражайте предпочтение и честно признавайте его цену. В английском отрабатывается would rather ... than ... even if, а в немецком — würde lieber ... als ... auch wenn.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I'd rather [X] than [Y], even if [Z].",
+          "example": "I'd rather cook something simple than order takeaway again, even if it means doing the dishes.",
+          "translation": "Я лучше приготовлю что-нибудь простое, чем снова закажу еду, даже если потом придётся мыть посуду.",
+          "examples": [
+            {
+              "text": "**I'd rather cook something simple than order takeaway again, even if it means doing the dishes.**",
+              "translation_ru": "Я лучше приготовлю что-нибудь простое, чем снова закажу еду, даже если потом придётся мыть посуду."
+            },
+            {
+              "text": "**I'd rather ask another question than pretend I understood, even if it feels awkward.**",
+              "translation_ru": "Я лучше переспрошу, чем сделаю вид, что всё понял, пусть это и неловко."
+            },
+            {
+              "text": "**I'd rather take the longer route than cycle on the busy road, even if I arrive ten minutes late.**",
+              "translation_ru": "Я лучше поеду более длинной дорогой, чем по оживлённой улице, даже если опоздаю на десять минут."
+            },
+            {
+              "text": "**I'd rather tell her the truth than let the rumour spread, even if she's upset at first.**",
+              "translation_ru": "Я лучше скажу ей правду, чем позволю слуху расходиться, даже если сначала она расстроится."
+            },
+            {
+              "text": "**I'd rather keep the old laptop for another year than buy a new one on credit, even if it runs a little slowly.**",
+              "translation_ru": "Я лучше ещё год попользуюсь старым ноутбуком, чем куплю новый в рассрочку, пусть он и немного тормозит."
+            },
+            {
+              "text": "**I'd rather postpone the launch than release a version that loses people's notes, even if the team is disappointed.**",
+              "translation_ru": "Я лучше отложу запуск, чем выпущу версию, в которой пропадают заметки, даже если команда будет разочарована."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ich würde lieber [X], als [Y], auch wenn [Z].",
+          "example": "Ich würde lieber etwas Einfaches kochen, als schon wieder Essen zu bestellen, auch wenn ich danach abwaschen muss.",
+          "translation": "Я лучше приготовлю что-нибудь простое, чем снова закажу еду, даже если потом придётся мыть посуду.",
+          "examples": [
+            {
+              "text": "**Ich würde lieber etwas Einfaches kochen, als schon wieder Essen zu bestellen, auch wenn ich danach abwaschen muss.**",
+              "translation_ru": "Я лучше приготовлю что-нибудь простое, чем снова закажу еду, даже если потом придётся мыть посуду."
+            },
+            {
+              "text": "**Ich würde lieber noch einmal nachfragen, als so zu tun, als hätte ich alles verstanden, auch wenn mir das unangenehm ist.**",
+              "translation_ru": "Я лучше переспрошу, чем сделаю вид, что всё понял, пусть это и неловко."
+            },
+            {
+              "text": "**Ich würde lieber den längeren Weg nehmen, als auf der stark befahrenen Straße Rad zu fahren, auch wenn ich zehn Minuten später ankomme.**",
+              "translation_ru": "Я лучше поеду более длинной дорогой, чем по оживлённой улице, даже если опоздаю на десять минут."
+            },
+            {
+              "text": "**Ich würde ihr lieber die Wahrheit sagen, als das Gerücht weiterlaufen zu lassen, auch wenn sie sich zunächst ärgert.**",
+              "translation_ru": "Я лучше скажу ей правду, чем позволю слуху расходиться, даже если сначала она расстроится."
+            },
+            {
+              "text": "**Ich würde den alten Laptop lieber noch ein Jahr behalten, als einen neuen auf Raten zu kaufen, auch wenn er etwas langsam ist.**",
+              "translation_ru": "Я лучше ещё год попользуюсь старым ноутбуком, чем куплю новый в рассрочку, пусть он и немного тормозит."
+            },
+            {
+              "text": "**Ich würde den Start lieber verschieben, als eine Version zu veröffentlichen, in der Notizen verloren gehen, auch wenn das Team enttäuscht ist.**",
+              "translation_ru": "Я лучше отложу запуск, чем выпущу версию, в которой пропадают заметки, даже если команда будет разочарована."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I'd rather [X] than [Y], even if [Z].",
+        "Ich würde lieber [X], als [Y], auch wenn [Z]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

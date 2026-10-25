@@ -1429,6 +1429,96 @@
       "title_en": "Had [X] happened earlier, [Y] might have [Z]",
       "description_en": "Use a past counterfactual to examine how an earlier intervention could have changed a later outcome.",
       "description_ru": "Используйте контрфактическое прошлое, чтобы показать, как более раннее действие могло изменить последующий результат."
+    },
+    {
+      "id": "C1CND041",
+      "group_id": "CND",
+      "set_id": "CND",
+      "title_ru": "Предположить маловероятное будущее событие",
+      "metaphor_ru": "Стройте осторожные сценарии без выдачи их за прогноз. В английском Were ... to ... — формальная инверсия условия, в немецком часто естественнее Sollte ... с сослагательным следствием.",
+      "title_en": "Were [X] to [happen], [Y] would [follow]",
+      "description_en": "Use an inverted conditional to explore an uncertain future possibility and its likely consequence; the German Sollte-clause is idiomatic rather than a word-for-word inversion.",
+      "description_ru": "Стройте осторожные сценарии без выдачи их за прогноз. В английском Were ... to ... — формальная инверсия условия, в немецком часто естественнее Sollte ... с сослагательным следствием.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Were [subject] to [verb], [consequence] would [verb].",
+          "example": "Were the landlord to raise the rent again, we would look for a smaller flat.",
+          "translation": "Если хозяин снова повысит аренду, мы станем искать квартиру поменьше.",
+          "examples": [
+            {
+              "text": "**Were the landlord to raise the rent again, we would look for a smaller flat.**",
+              "translation_ru": "Если хозяин снова повысит аренду, мы станем искать квартиру поменьше."
+            },
+            {
+              "text": "**Were the library to close on Saturdays, many students would lose their quiet study space.**",
+              "translation_ru": "Если библиотеку закроют по субботам, многие студенты лишатся тихого места для занятий."
+            },
+            {
+              "text": "**Were the test to fail in low light, we would adjust the camera settings before repeating it.**",
+              "translation_ru": "Если испытание не пройдёт при слабом освещении, перед повтором мы изменим настройки камеры."
+            },
+            {
+              "text": "**Were I to take the new role, I would have to rearrange childcare for a few weeks.**",
+              "translation_ru": "Если я соглашусь на новую должность, придётся на несколько недель по-другому организовать присмотр за ребёнком."
+            },
+            {
+              "text": "**Were the ferry to be cancelled, we would have to spend the night on the island.**",
+              "translation_ru": "Если паром отменят, нам придётся заночевать на острове."
+            },
+            {
+              "text": "**Were the neighbourhood group to reject the proposal, we would revise it in light of their feedback.**",
+              "translation_ru": "Если инициативная группа жителей отклонит предложение, мы переработаем его с учётом замечаний."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Sollte [Subjekt] [Infinitiv], [Folge im Konjunktiv II].",
+          "example": "Sollte der Vermieter die Miete erneut erhöhen, würden wir nach einer kleineren Wohnung suchen.",
+          "translation": "Если хозяин снова повысит аренду, мы станем искать квартиру поменьше.",
+          "examples": [
+            {
+              "text": "**Sollte der Vermieter die Miete erneut erhöhen, würden wir nach einer kleineren Wohnung suchen.**",
+              "translation_ru": "Если хозяин снова повысит аренду, мы станем искать квартиру поменьше."
+            },
+            {
+              "text": "**Sollte die Bibliothek samstags schließen, würden viele Studierende ihren ruhigen Lernort verlieren.**",
+              "translation_ru": "Если библиотеку закроют по субботам, многие студенты лишатся тихого места для занятий."
+            },
+            {
+              "text": "**Sollte der Test bei schwachem Licht scheitern, würden wir vor der Wiederholung die Kameraeinstellungen ändern.**",
+              "translation_ru": "Если испытание не пройдёт при слабом освещении, перед повтором мы изменим настройки камеры."
+            },
+            {
+              "text": "**Sollte ich die neue Stelle annehmen, müsste ich die Kinderbetreuung für einige Wochen neu organisieren.**",
+              "translation_ru": "Если я соглашусь на новую должность, придётся на несколько недель по-другому организовать присмотр за ребёнком."
+            },
+            {
+              "text": "**Sollte die Fähre ausfallen, müssten wir auf der Insel übernachten.**",
+              "translation_ru": "Если паром отменят, нам придётся заночевать на острове."
+            },
+            {
+              "text": "**Sollte die Nachbarschaftsinitiative den Vorschlag ablehnen, würden wir ihn anhand ihrer Rückmeldungen überarbeiten.**",
+              "translation_ru": "Если инициативная группа жителей отклонит предложение, мы переработаем его с учётом замечаний."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Were [subject] to [verb], [consequence] would [verb].",
+        "Sollte [Subjekt] [Infinitiv], [Folge im Konjunktiv II]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }
