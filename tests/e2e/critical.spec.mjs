@@ -35,8 +35,11 @@ test("home keeps the interface switch and leads with the real-sentence learning 
   await expect(lensEntry).toBeVisible();
   await expect(lensEntry).toContainText("Start with a real sentence");
   await expect(lensEntry).toHaveAttribute("href", "/en/lens/");
-  await expect(page.getByRole("link", { name: "Explore the pattern library" })).toHaveAttribute("href", "/en/practice/");
+  const libraryEntry = page.locator('#site-nav [data-product-entry="library"]');
+  await expect(libraryEntry).toHaveText("Patterns");
+  await expect(libraryEntry).toHaveAttribute("href", "/en/practice/");
   await expect(page.locator(".studio-board")).toHaveCount(0);
+  await expect(page.locator(".studio-flow, .studio-pattern-sheet")).toHaveCount(0);
 });
 
 test("method page explains the learning loop and names its research sources", async ({ page }) => {

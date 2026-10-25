@@ -63,16 +63,15 @@ test("GitHub Pages artifact has a canonical hostname root and localized HTML", (
   assert.match(en, /<html lang="en">/);
   assert.match(en, /<span>Learn<\/span><span>a language<\/span><span>through<\/span><mark>patterns\.<\/mark>/);
   assert.match(en, /ANNOTATION STUDIO/);
-  assert.match(en, /Pattern library/);
   assert.match(en, /class="studio-primary-action" data-product-entry="lens" href="\/en\/lens\/">Start with a real sentence/);
-  assert.match(en, /data-product-entry="library" href="\/en\/practice\/">Explore the pattern library/);
+  assert.match(en, /data-product-entry="library" href="\/en\/practice\/">Patterns<\/a>/);
   assert.doesNotMatch(en, /Open a topic set/);
   assert.doesNotMatch(en, /Разметить\./);
   assert.match(ru, /<html lang="ru">/);
   assert.match(ru, /<span>Учите<\/span><span>язык<\/span><span>через<\/span><mark>паттерны\.<\/mark>/);
   assert.match(ru, /СТУДИЯ РАЗМЕТКИ/);
   assert.match(ru, /class="studio-primary-action" data-product-entry="lens" href="\/ru\/lens\/">Начать с реальной фразы/);
-  assert.match(ru, /data-product-entry="library" href="\/ru\/practice\/">Исследовать библиотеку паттернов/);
+  assert.match(ru, /data-product-entry="library" href="\/ru\/practice\/">Паттерны<\/a>/);
   assert.doesNotMatch(ru, /Открыть тематический сет/);
   assert.doesNotMatch(ru, /<span>Mark\.<\/span>/);
   assert.ok(fs.existsSync(path.join(DIST, "en/lens/index.html")));
