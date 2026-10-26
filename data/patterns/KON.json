@@ -761,6 +761,96 @@
         ],
         "notes": "Grammar pattern: Mood, modality and reported stance."
       }
+    },
+    {
+      "id": "C1KON001",
+      "group_id": "KON",
+      "set_id": "KON",
+      "title_ru": "Объяснить, что изменилось бы без определённого обстоятельства",
+      "metaphor_ru": "Оценивайте роль помощи, препятствия или случайного события в прошлом. Английское if it hadn't been for и немецкое ohne с Konjunktiv II показывают нереализованную альтернативу.",
+      "title_en": "If it hadn't been for [X], [Y] would have [happened]",
+      "description_en": "Use an unreal past condition to show how one circumstance changed an outcome; German expresses the same move naturally with ohne and Konjunktiv II.",
+      "description_ru": "Оценивайте роль помощи, препятствия или случайного события в прошлом. Английское if it hadn't been for и немецкое ohne с Konjunktiv II показывают нереализованную альтернативу.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "If it hadn't been for [X], [Y] would/might have [past participle].",
+          "example": "If it hadn't been for our neighbour's spare key, we'd have spent the night outside.",
+          "translation": "Если бы не запасной ключ у соседки, нам пришлось бы ночевать на улице.",
+          "examples": [
+            {
+              "text": "**If it hadn't been for our neighbour's spare key, we'd have spent the night outside.**",
+              "translation_ru": "Если бы не запасной ключ у соседки, нам пришлось бы ночевать на улице."
+            },
+            {
+              "text": "**If it hadn't been for her patient questions, I would have missed the flaw in my argument.**",
+              "translation_ru": "Если бы не её терпеливые вопросы, я бы не заметил ошибку в своих рассуждениях."
+            },
+            {
+              "text": "**If it hadn't been for the rain, the volunteers would have finished painting the playground on Saturday.**",
+              "translation_ru": "Если бы не дождь, волонтёры закончили бы красить площадку ещё в субботу."
+            },
+            {
+              "text": "**If it hadn't been for the offline backup, we'd have lost our holiday photos when the phone broke.**",
+              "translation_ru": "Если бы не резервная копия, мы бы потеряли фотографии из отпуска, когда сломался телефон."
+            },
+            {
+              "text": "**If it hadn't been for a stranger's directions, the hikers would have taken the wrong path.**",
+              "translation_ru": "Если бы не подсказка случайного прохожего, туристы свернули бы не туда."
+            },
+            {
+              "text": "**If it hadn't been for the translator's careful note, the two teams might have misunderstood the agreement.**",
+              "translation_ru": "Если бы не внимательное замечание переводчицы, две команды могли бы неправильно понять договорённость."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ohne [X] hätte(n)/wäre(n) [Y] [Partizip II].",
+          "example": "Ohne den Ersatzschlüssel unserer Nachbarin hätten wir die Nacht draußen verbracht.",
+          "translation": "Если бы не запасной ключ у соседки, нам пришлось бы ночевать на улице.",
+          "examples": [
+            {
+              "text": "**Ohne den Ersatzschlüssel unserer Nachbarin hätten wir die Nacht draußen verbracht.**",
+              "translation_ru": "Если бы не запасной ключ у соседки, нам пришлось бы ночевать на улице."
+            },
+            {
+              "text": "**Ohne ihre geduldigen Nachfragen hätte ich den Denkfehler in meiner Argumentation übersehen.**",
+              "translation_ru": "Если бы не её терпеливые вопросы, я бы не заметил ошибку в своих рассуждениях."
+            },
+            {
+              "text": "**Ohne den Regen hätten die Freiwilligen den Spielplatz schon am Samstag fertig gestrichen.**",
+              "translation_ru": "Если бы не дождь, волонтёры закончили бы красить площадку ещё в субботу."
+            },
+            {
+              "text": "**Ohne die Sicherungskopie hätten wir unsere Urlaubsfotos verloren, als das Handy kaputtging.**",
+              "translation_ru": "Если бы не резервная копия, мы бы потеряли фотографии из отпуска, когда сломался телефон."
+            },
+            {
+              "text": "**Ohne die Wegbeschreibung eines Fremden wären die Wanderer falsch abgebogen.**",
+              "translation_ru": "Если бы не подсказка случайного прохожего, туристы свернули бы не туда."
+            },
+            {
+              "text": "**Ohne den sorgfältigen Hinweis der Übersetzerin hätten die beiden Teams die Vereinbarung womöglich falsch verstanden.**",
+              "translation_ru": "Если бы не внимательное замечание переводчицы, две команды могли бы неправильно понять договорённость."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "If it hadn't been for [X], [Y] would/might have [past participle].",
+        "Ohne [X] hätte(n)/wäre(n) [Y] [Partizip II]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

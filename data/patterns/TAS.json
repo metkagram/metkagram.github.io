@@ -479,6 +479,96 @@
       "title_en": "We have been [V-ing] [X] since [Y]",
       "description_en": "Use the present perfect continuous to connect an ongoing activity with a clear starting point and current relevance.",
       "description_ru": "Используйте Present Perfect Continuous, чтобы связать продолжающееся действие с точкой начала и его актуальностью сейчас."
+    },
+    {
+      "id": "C1TAS041",
+      "group_id": "TAS",
+      "set_id": "TAS",
+      "title_ru": "Показать, что одно действие завершилось раньше другого в прошлом",
+      "metaphor_ru": "Сопоставляйте два момента в прошлом: к моменту X действие Y уже завершилось. В английском используется Past Perfect, в немецком — Plusquamperfekt.",
+      "title_en": "By the time [X happened], [Y] had already [done Z]",
+      "description_en": "Place a completed action before a later past reference point using English past perfect and German Plusquamperfekt.",
+      "description_ru": "Сопоставляйте два момента в прошлом: к моменту X действие Y уже завершилось. В английском используется Past Perfect, в немецком — Plusquamperfekt.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "By the time [past event], [subject] had already [past participle].",
+          "example": "By the time the plumber arrived, we'd already shut off the water and moved the boxes upstairs.",
+          "translation": "К приезду сантехника мы уже перекрыли воду и отнесли коробки наверх.",
+          "examples": [
+            {
+              "text": "**By the time the plumber arrived, we'd already shut off the water and moved the boxes upstairs.**",
+              "translation_ru": "К приезду сантехника мы уже перекрыли воду и отнесли коробки наверх."
+            },
+            {
+              "text": "**By the time I opened the message, my sister had already booked the tickets.**",
+              "translation_ru": "Когда я открыл сообщение, сестра уже купила билеты."
+            },
+            {
+              "text": "**By the time the meeting started, the developers had already found the bug in the login flow.**",
+              "translation_ru": "К началу встречи разработчики уже нашли ошибку при входе в систему."
+            },
+            {
+              "text": "**By the time the school called, the parents had already heard about the cancelled trip.**",
+              "translation_ru": "Когда позвонили из школы, родители уже знали об отменённой школьной поездке."
+            },
+            {
+              "text": "**By the time we reached the trailhead, the fog had already lifted from the valley.**",
+              "translation_ru": "Когда мы добрались до начала тропы, туман в долине уже рассеялся."
+            },
+            {
+              "text": "**By the time she asked for advice, she'd already decided to start an apprenticeship.**",
+              "translation_ru": "Когда она попросила совета, она уже решила пойти учиться профессии."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Als [späteres Ereignis], hatte(n) [Subjekt] [Handlung] bereits [Partizip II].",
+          "example": "Als der Klempner eintraf, hatten wir das Wasser bereits abgestellt und die Kartons nach oben getragen.",
+          "translation": "К приезду сантехника мы уже перекрыли воду и отнесли коробки наверх.",
+          "examples": [
+            {
+              "text": "**Als der Klempner eintraf, hatten wir das Wasser bereits abgestellt und die Kartons nach oben getragen.**",
+              "translation_ru": "К приезду сантехника мы уже перекрыли воду и отнесли коробки наверх."
+            },
+            {
+              "text": "**Als ich die Nachricht öffnete, hatte meine Schwester die Fahrkarten schon gebucht.**",
+              "translation_ru": "Когда я открыл сообщение, сестра уже купила билеты."
+            },
+            {
+              "text": "**Als die Besprechung begann, hatten die Entwickler den Fehler bei der Anmeldung bereits gefunden.**",
+              "translation_ru": "К началу встречи разработчики уже нашли ошибку при входе в систему."
+            },
+            {
+              "text": "**Als die Schule anrief, hatten die Eltern schon von der abgesagten Klassenfahrt erfahren.**",
+              "translation_ru": "Когда позвонили из школы, родители уже знали об отменённой школьной поездке."
+            },
+            {
+              "text": "**Als wir am Ausgangspunkt des Wanderwegs ankamen, hatte sich der Nebel im Tal bereits aufgelöst.**",
+              "translation_ru": "Когда мы добрались до начала тропы, туман в долине уже рассеялся."
+            },
+            {
+              "text": "**Als sie um Rat bat, hatte sie sich schon für eine Ausbildung entschieden.**",
+              "translation_ru": "Когда она попросила совета, она уже решила пойти учиться профессии."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "By the time [past event], [subject] had already [past participle].",
+        "Als [späteres Ereignis], hatte(n) [Subjekt] [Handlung] bereits [Partizip II]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }
