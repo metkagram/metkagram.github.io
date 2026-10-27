@@ -761,6 +761,96 @@
         ],
         "notes": "Grammar pattern: Subordinate and complement clauses."
       }
+    },
+    {
+      "id": "C1SUB001",
+      "group_id": "SUB",
+      "set_id": "SUB",
+      "title_ru": "Один факт ещё не доказывает другой",
+      "metaphor_ru": "Оспаривайте поспешный вывод, не отрицая исходное наблюдение. Отличайте придаточное причины от отрицания вывода.",
+      "title_en": "Just because [X] doesn't mean [Y]",
+      "description_en": "Reject an unsupported inference while accepting the initial observation; practise clause scope and negation.",
+      "description_ru": "Разделяйте наблюдение и вывод: английское Just because ... doesn't mean ... и немецкое Nur weil ... heißt das noch lange nicht, dass ...",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Just because [X] doesn't mean [Y].",
+          "example": "Just because the app is popular doesn't mean it respects your privacy.",
+          "translation": "Популярность приложения ещё не означает, что оно бережно обращается с твоими данными.",
+          "examples": [
+            {
+              "text": "**Just because the app is popular doesn't mean it respects your privacy.**",
+              "translation_ru": "Популярность приложения ещё не означает, что оно бережно обращается с твоими данными."
+            },
+            {
+              "text": "**Just because he speaks quietly doesn't mean he lacks confidence.**",
+              "translation_ru": "То, что он говорит тихо, ещё не значит, что ему не хватает уверенности."
+            },
+            {
+              "text": "**Just because we reached an agreement doesn't mean every concern has been resolved.**",
+              "translation_ru": "То, что мы договорились, ещё не означает, что все сомнения сняты."
+            },
+            {
+              "text": "**Just because a child can read quickly doesn't mean they understand the story.**",
+              "translation_ru": "Если ребёнок быстро читает, это ещё не значит, что он понимает сюжет."
+            },
+            {
+              "text": "**Just because the rent is lower doesn't mean the flat will be cheaper to live in.**",
+              "translation_ru": "Более низкая аренда ещё не гарантирует, что жить в квартире в целом будет дешевле."
+            },
+            {
+              "text": "**Just because the experiment failed once doesn't mean the hypothesis is wrong.**",
+              "translation_ru": "Один неудачный эксперимент ещё не означает, что гипотеза неверна."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nur weil [X], heißt das noch lange nicht, dass [Y].",
+          "example": "Nur weil die App beliebt ist, heißt das noch lange nicht, dass sie sorgsam mit deinen Daten umgeht.",
+          "translation": "Популярность приложения ещё не означает, что оно бережно обращается с твоими данными.",
+          "examples": [
+            {
+              "text": "**Nur weil die App beliebt ist, heißt das noch lange nicht, dass sie sorgsam mit deinen Daten umgeht.**",
+              "translation_ru": "Популярность приложения ещё не означает, что оно бережно обращается с твоими данными."
+            },
+            {
+              "text": "**Nur weil er leise spricht, heißt das noch lange nicht, dass ihm Selbstvertrauen fehlt.**",
+              "translation_ru": "То, что он говорит тихо, ещё не значит, что ему не хватает уверенности."
+            },
+            {
+              "text": "**Nur weil wir uns geeinigt haben, heißt das noch lange nicht, dass alle Bedenken ausgeräumt sind.**",
+              "translation_ru": "То, что мы договорились, ещё не означает, что все сомнения сняты."
+            },
+            {
+              "text": "**Nur weil ein Kind schnell lesen kann, heißt das noch lange nicht, dass es die Geschichte versteht.**",
+              "translation_ru": "Если ребёнок быстро читает, это ещё не значит, что он понимает сюжет."
+            },
+            {
+              "text": "**Nur weil die Miete niedriger ist, heißt das noch lange nicht, dass die Wohnung insgesamt günstiger sein wird.**",
+              "translation_ru": "Более низкая аренда ещё не гарантирует, что жить в квартире в целом будет дешевле."
+            },
+            {
+              "text": "**Nur weil das Experiment einmal gescheitert ist, heißt das noch lange nicht, dass die Hypothese falsch ist.**",
+              "translation_ru": "Один неудачный эксперимент ещё не означает, что гипотеза неверна."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Just because [X] doesn't mean [Y].",
+        "Nur weil [X], heißt das noch lange nicht, dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }

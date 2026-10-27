@@ -664,6 +664,96 @@
         ],
         "notes": "Manually curated C1 productive frame; local spaCy annotation pending."
       }
+    },
+    {
+      "id": "C1MOD041",
+      "group_id": "MOD",
+      "set_id": "MOD",
+      "title_ru": "Сделали лишнее: об этом стало ясно позже",
+      "metaphor_ru": "Объясняйте, что действие уже совершили, но впоследствии выяснилось: необходимости в нём не было. Не путайте needn't have done с didn't need to do.",
+      "title_en": "Needn't have done it",
+      "description_en": "Express a completed action that turned out to be unnecessary, rather than just a past absence of obligation.",
+      "description_ru": "Тренируйте оценку уже совершённого лишнего действия: английское needn't have + причастие и немецкое hätte ... nicht ... müssen.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] needn't have [past participle] [detail].",
+          "example": "You needn't have printed the tickets; the museum accepts them on your phone.",
+          "translation": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне.",
+          "examples": [
+            {
+              "text": "**You needn't have printed the tickets; the museum accepts them on your phone.**",
+              "translation_ru": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне."
+            },
+            {
+              "text": "**We needn't have rushed to the station; the train was delayed by an hour.**",
+              "translation_ru": "Нам незачем было спешить на вокзал: поезд задержался на час."
+            },
+            {
+              "text": "**She needn't have apologised for asking a difficult question; it exposed a flaw in our plan.**",
+              "translation_ru": "Ей не стоило извиняться за сложный вопрос: он выявил слабое место в нашем плане."
+            },
+            {
+              "text": "**I needn't have bought another charger; the old one was hidden behind the desk.**",
+              "translation_ru": "Мне незачем было покупать ещё одну зарядку: старая лежала за столом."
+            },
+            {
+              "text": "**They needn't have cancelled the picnic; the storm passed before noon.**",
+              "translation_ru": "Им не нужно было отменять пикник: гроза прошла ещё до полудня."
+            },
+            {
+              "text": "**You needn't have rewritten the whole chapter; the editor only wanted a clearer introduction.**",
+              "translation_ru": "Тебе незачем было переписывать всю главу: редактор просила лишь сделать вступление понятнее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] hätte(n) [action] nicht [infinitive] müssen.",
+          "example": "Du hättest die Eintrittskarten nicht ausdrucken müssen; im Museum kannst du sie auf dem Handy vorzeigen.",
+          "translation": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне.",
+          "examples": [
+            {
+              "text": "**Du hättest die Eintrittskarten nicht ausdrucken müssen; im Museum kannst du sie auf dem Handy vorzeigen.**",
+              "translation_ru": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне."
+            },
+            {
+              "text": "**Wir hätten uns nicht zum Bahnhof beeilen müssen; der Zug hatte eine Stunde Verspätung.**",
+              "translation_ru": "Нам незачем было спешить на вокзал: поезд задержался на час."
+            },
+            {
+              "text": "**Sie hätte sich für die schwierige Frage nicht entschuldigen müssen; dadurch wurde eine Schwäche in unserem Plan sichtbar.**",
+              "translation_ru": "Ей не стоило извиняться за сложный вопрос: он выявил слабое место в нашем плане."
+            },
+            {
+              "text": "**Ich hätte kein neues Ladegerät kaufen müssen; das alte lag hinter dem Schreibtisch.**",
+              "translation_ru": "Мне незачем было покупать ещё одну зарядку: старая лежала за столом."
+            },
+            {
+              "text": "**Sie hätten das Picknick nicht absagen müssen; das Gewitter war schon vor Mittag vorbei.**",
+              "translation_ru": "Им не нужно было отменять пикник: гроза прошла ещё до полудня."
+            },
+            {
+              "text": "**Du hättest nicht das ganze Kapitel neu schreiben müssen; die Lektorin wollte nur eine verständlichere Einleitung.**",
+              "translation_ru": "Тебе незачем было переписывать всю главу: редактор просила лишь сделать вступление понятнее."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] needn't have [past participle] [detail].",
+        "[Person] hätte(n) [action] nicht [infinitive] müssen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }

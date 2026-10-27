@@ -189,6 +189,96 @@
         ],
         "notes": "C1 problem-framing question: expose assumptions required for a plan to work."
       }
+    },
+    {
+      "id": "C1PRB041",
+      "group_id": "PRB",
+      "set_id": "PRB",
+      "title_ru": "Не исключать возможность, но указать ограничение",
+      "metaphor_ru": "Оставляйте вариант открытым, не создавая впечатления уверенного прогноза. Сразу называйте условие, проверку или недостаток доказательств.",
+      "title_en": "I wouldn't rule out [X], but [Y]",
+      "description_en": "Keep a plausible possibility open while stating the condition, uncertainty or limitation that still matters.",
+      "description_ru": "Смягчайте прогноз с помощью wouldn't rule out / würde nicht ausschließen и добавляйте содержательную оговорку.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] wouldn't rule out [possibility], but [caveat].",
+          "example": "I wouldn't rule out moving closer to my parents, but we'd need a good school nearby.",
+          "translation": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа.",
+          "examples": [
+            {
+              "text": "**I wouldn't rule out moving closer to my parents, but we'd need a good school nearby.**",
+              "translation_ru": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа."
+            },
+            {
+              "text": "**I wouldn't rule out a software fault, but the logs don't point to one yet.**",
+              "translation_ru": "Я не исключаю сбой в программе, но пока в журналах нет признаков этого."
+            },
+            {
+              "text": "**I wouldn't rule out another heatwave this summer, but the forecast is still too uncertain.**",
+              "translation_ru": "Я не исключаю ещё одну волну жары этим летом, но прогноз пока слишком неопределённый."
+            },
+            {
+              "text": "**I wouldn't rule out restarting the course, but only if it offers much more speaking practice.**",
+              "translation_ru": "Я не исключаю, что начну курс заново, но только если там будет гораздо больше разговорной практики."
+            },
+            {
+              "text": "**We wouldn't rule out a misunderstanding, but we should hear both sides before judging.**",
+              "translation_ru": "Мы не исключаем недоразумения, но прежде чем делать выводы, нужно выслушать обе стороны."
+            },
+            {
+              "text": "**She wouldn't rule out accepting the offer, but she'd want to know whether weekend work is expected.**",
+              "translation_ru": "Она не исключает, что примет предложение, но сначала хочет узнать, придётся ли работать по выходным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] würde [Möglichkeit] nicht ausschließen, aber [Einschränkung].",
+          "example": "Ich würde nicht ausschließen, näher zu meinen Eltern zu ziehen, aber wir bräuchten eine gute Schule in der Nähe.",
+          "translation": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа.",
+          "examples": [
+            {
+              "text": "**Ich würde nicht ausschließen, näher zu meinen Eltern zu ziehen, aber wir bräuchten eine gute Schule in der Nähe.**",
+              "translation_ru": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа."
+            },
+            {
+              "text": "**Einen Softwarefehler würde ich nicht ausschließen, aber die Protokolle liefern bisher keinen Hinweis darauf.**",
+              "translation_ru": "Я не исключаю сбой в программе, но пока в журналах нет признаков этого."
+            },
+            {
+              "text": "**Eine weitere Hitzewelle in diesem Sommer würde ich nicht ausschließen, aber die Vorhersage ist noch zu unsicher.**",
+              "translation_ru": "Я не исключаю ещё одну волну жары этим летом, но прогноз пока слишком неопределённый."
+            },
+            {
+              "text": "**Ich würde nicht ausschließen, den Kurs noch einmal zu beginnen, aber nur, wenn es dort deutlich mehr Sprechübungen gibt.**",
+              "translation_ru": "Я не исключаю, что начну курс заново, но только если там будет гораздо больше разговорной практики."
+            },
+            {
+              "text": "**Ein Missverständnis würden wir nicht ausschließen, aber wir sollten uns beide Seiten anhören, bevor wir urteilen.**",
+              "translation_ru": "Мы не исключаем недоразумения, но прежде чем делать выводы, нужно выслушать обе стороны."
+            },
+            {
+              "text": "**Sie würde nicht ausschließen, das Angebot anzunehmen, möchte aber erst wissen, ob Wochenendarbeit erwartet wird.**",
+              "translation_ru": "Она не исключает, что примет предложение, но сначала хочет узнать, придётся ли работать по выходным."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] wouldn't rule out [possibility], but [caveat].",
+        "[Person] würde [Möglichkeit] nicht ausschließen, aber [Einschränkung]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }

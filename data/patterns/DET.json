@@ -761,6 +761,96 @@
         ],
         "notes": "Grammar pattern: Determiners and quantifiers."
       }
+    },
+    {
+      "id": "C1DET001",
+      "group_id": "DET",
+      "set_id": "DET",
+      "title_ru": "Не каждый случай подпадает под правило",
+      "metaphor_ru": "Ограничивайте чрезмерное обобщение: «не каждый» — не то же самое, что «ни один». Согласуйте сказуемое с единственным числом.",
+      "title_en": "Not every [X] [Y]",
+      "description_en": "Limit a generalisation without denying it universally; practise quantifier scope and singular agreement.",
+      "description_ru": "Уточняйте границы обобщения через Not every ... и Nicht jede/jeder/jedes ..., не превращая частичное отрицание в полное.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not every [singular noun] [singular verb phrase].",
+          "example": "Not every disagreement needs to become an argument.",
+          "translation": "Не каждое разногласие должно перерастать в ссору.",
+          "examples": [
+            {
+              "text": "**Not every disagreement needs to become an argument.**",
+              "translation_ru": "Не каждое разногласие должно перерастать в ссору."
+            },
+            {
+              "text": "**Not every notification deserves your immediate attention.**",
+              "translation_ru": "Не каждое уведомление требует немедленного внимания."
+            },
+            {
+              "text": "**Not every quiet child is struggling with the lesson.**",
+              "translation_ru": "Не каждому тихому ребёнку трудно на уроке."
+            },
+            {
+              "text": "**Not every old building can be made energy-efficient without changing its character.**",
+              "translation_ru": "Не каждое старое здание можно сделать энергоэффективным, не изменив его облик."
+            },
+            {
+              "text": "**Not every promise made under pressure should be treated as a firm commitment.**",
+              "translation_ru": "Не каждое обещание, данное под давлением, стоит считать твёрдым обязательством."
+            },
+            {
+              "text": "**Not every technical problem can be solved by adding another tool.**",
+              "translation_ru": "Не всякую техническую проблему можно решить, добавив ещё один инструмент."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nicht jede/jeder/jedes [singular noun] [verb phrase].",
+          "example": "Nicht jede Meinungsverschiedenheit muss zum Streit werden.",
+          "translation": "Не каждое разногласие должно перерастать в ссору.",
+          "examples": [
+            {
+              "text": "**Nicht jede Meinungsverschiedenheit muss zum Streit werden.**",
+              "translation_ru": "Не каждое разногласие должно перерастать в ссору."
+            },
+            {
+              "text": "**Nicht jede Benachrichtigung verdient sofort deine Aufmerksamkeit.**",
+              "translation_ru": "Не каждое уведомление требует немедленного внимания."
+            },
+            {
+              "text": "**Nicht jedes stille Kind hat Schwierigkeiten mit dem Unterricht.**",
+              "translation_ru": "Не каждому тихому ребёнку трудно на уроке."
+            },
+            {
+              "text": "**Nicht jedes alte Gebäude lässt sich energetisch sanieren, ohne seinen Charakter zu verändern.**",
+              "translation_ru": "Не каждое старое здание можно сделать энергоэффективным, не изменив его облик."
+            },
+            {
+              "text": "**Nicht jedes unter Druck gegebene Versprechen sollte als feste Zusage gelten.**",
+              "translation_ru": "Не каждое обещание, данное под давлением, стоит считать твёрдым обязательством."
+            },
+            {
+              "text": "**Nicht jedes technische Problem lässt sich lösen, indem man ein weiteres Werkzeug einsetzt.**",
+              "translation_ru": "Не всякую техническую проблему можно решить, добавив ещё один инструмент."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Not every [singular noun] [singular verb phrase].",
+        "Nicht jede/jeder/jedes [singular noun] [verb phrase]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }
