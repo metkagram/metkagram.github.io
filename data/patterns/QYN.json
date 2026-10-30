@@ -291,85 +291,85 @@
       "id": "QSTQYN031",
       "group_id": "QYN",
       "set_id": "QYN",
-      "title_ru": "Изменило бы что-то, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Изменило бы что-то, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Проверить, изменило бы условие итоговое решение",
+      "metaphor_ru": "Вопрос с would и if проверяет практическую значимость гипотетического изменения. В немецком сопоставляйте würde с формами Konjunktiv II, а не переносите английское время буквально.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would it matter if [the team needs another day to decide]?",
-          "example": "Would it matter if the team needs another day to decide?",
-          "translation": "Изменило бы что-то, если команде нужен ещё день для решения?",
+          "formula": "Would it make a difference if [hypothetical condition]?",
+          "example": "Would it make a difference if we moved the workshop to Saturday?",
+          "translation": "Изменилось бы что-нибудь, если бы мы перенесли мастер-класс на субботу?",
           "examples": [
             {
-              "text": "**Would it matter if the team needs another day to decide?**",
-              "translation_ru": "Изменило бы что-то, если команде нужен ещё день для решения?"
+              "text": "**Would it make a difference if we moved the workshop to Saturday?**",
+              "translation_ru": "Изменилось бы что-нибудь, если бы мы перенесли мастер-класс на субботу?"
             },
             {
-              "text": "**Would it matter if the revised plan has not been shared yet?**",
-              "translation_ru": "Изменило бы что-то, если обновлённым планом ещё не поделились?"
+              "text": "**Would it make a difference if the report included interviews with residents?**",
+              "translation_ru": "Изменилось бы что-нибудь, если бы в отчёт добавили интервью с местными жителями?"
             },
             {
-              "text": "**Would it matter if we should compare the two options?**",
-              "translation_ru": "Изменило бы что-то, если нам следует сравнить два варианта?"
+              "text": "**Would it make a difference if I could stay another hour?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы я мог остаться ещё на час?"
             },
             {
-              "text": "**Would it matter if the client asked for more detail?**",
-              "translation_ru": "Изменило бы что-то, если клиент попросил больше деталей?"
+              "text": "**Would it make a difference if the bedroom windows faced the courtyard rather than the street?**",
+              "translation_ru": "Была бы разница, если бы окна спальни выходили во двор, а не на улицу?"
             },
             {
-              "text": "**Would it matter if the pilot may continue next month?**",
-              "translation_ru": "Изменило бы что-то, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Would it make a difference if the app worked without facial recognition?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы приложение работало без распознавания лиц?"
             },
             {
-              "text": "**Would it matter if the data need another check?**",
-              "translation_ru": "Изменило бы что-то, если данные нужно проверить ещё раз?"
+              "text": "**Would it make a difference if she gave the talk in German?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы она выступила на немецком?"
             },
             {
-              "text": "**Would it matter if the meeting was moved?**",
-              "translation_ru": "Изменило бы что-то, если встречу перенесли?"
+              "text": "**Would it make a difference if the train left twenty minutes earlier?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы поезд отправлялся на двадцать минут раньше?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Würde es etwas ändern, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Würde es etwas ändern, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Изменило бы что-то, если команде нужен ещё день для решения?",
+          "formula": "Würde es etwas ändern, wenn [hypothetische Bedingung im Konjunktiv II]?",
+          "example": "Würde es etwas ändern, wenn wir den Workshop auf Samstag verlegen würden?",
+          "translation": "Изменилось бы что-нибудь, если бы мы перенесли мастер-класс на субботу?",
           "examples": [
             {
-              "text": "**Würde es etwas ändern, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Изменило бы что-то, если команде нужен ещё день для решения?"
+              "text": "**Würde es etwas ändern, wenn wir den Workshop auf Samstag verlegen würden?**",
+              "translation_ru": "Изменилось бы что-нибудь, если бы мы перенесли мастер-класс на субботу?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Изменило бы что-то, если обновлённым планом ещё не поделились?"
+              "text": "**Würde es etwas ändern, wenn der Bericht auch Gespräche mit Anwohnern enthielte?**",
+              "translation_ru": "Изменилось бы что-нибудь, если бы в отчёт добавили интервью с местными жителями?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Изменило бы что-то, если нам следует сравнить два варианта?"
+              "text": "**Würde es etwas ändern, wenn ich noch eine Stunde bleiben könnte?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы я мог остаться ещё на час?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Изменило бы что-то, если клиент попросил больше деталей?"
+              "text": "**Würde es etwas ändern, wenn die Schlafzimmerfenster zum Innenhof statt zur Straße hinausgingen?**",
+              "translation_ru": "Была бы разница, если бы окна спальни выходили во двор, а не на улицу?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Изменило бы что-то, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Würde es etwas ändern, wenn die App auch ohne Gesichtserkennung nutzbar wäre?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы приложением можно было пользоваться без распознавания лиц?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Изменило бы что-то, если данные нужно проверить ещё раз?"
+              "text": "**Würde es etwas ändern, wenn sie den Vortrag auf Deutsch hielte?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы она выступила на немецком?"
             },
             {
-              "text": "**Würde es etwas ändern, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Изменило бы что-то, если встречу перенесли?"
+              "text": "**Würde es etwas ändern, wenn der Zug zwanzig Minuten früher abfahren würde?**",
+              "translation_ru": "Что-нибудь изменилось бы, если бы поезд отправлялся на двадцать минут раньше?"
             }
           ]
         }
       ],
       "formulas": [
-        "Would it matter if [the team needs another day to decide]?",
-        "Würde es etwas ändern, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Would it make a difference if [hypothetical condition]?",
+        "Würde es etwas ändern, wenn [hypothetische Bedingung im Konjunktiv II]?"
       ],
       "gen": {
         "status": "curated",

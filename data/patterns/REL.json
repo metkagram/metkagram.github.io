@@ -6,85 +6,85 @@
       "id": "GRMREL001",
       "group_id": "REL",
       "set_id": "REL",
-      "title_ru": "Отчёт, который вчера доработали, теперь требует утверждения",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «отчёт, который вчера доработали, теперь требует утверждения» в живом контексте.",
+      "title_ru": "Дополнительное уточнение через относительное придаточное",
+      "metaphor_ru": "В английском which здесь добавляет необязательное пояснение о предмете, поэтому придаточное отделяется запятыми. В немецком все относительные придаточные выделяются запятыми; форму местоимения выбирают по роду существительного и роли внутри придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The report, which was revised yesterday, now needs approval [the team was reviewing the new policy]",
-          "example": "The report, which was revised yesterday, now needs approval in a situation where the team was reviewing the new policy.",
-          "translation": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где команда проверяла новую политику.",
+          "formula": "[Noun phrase], which [additional detail], [main statement].",
+          "example": "The bicycle, which had spent the winter in the shed, finally got a new chain.",
+          "translation": "На велосипед, который всю зиму простоял в сарае, наконец поставили новую цепь.",
           "examples": [
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где команда проверяла новую политику."
+              "text": "**The bicycle, which had spent the winter in the shed, finally got a new chain.**",
+              "translation_ru": "На велосипед, который всю зиму простоял в сарае, наконец поставили новую цепь."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**The neighbourhood library, which now opens on Sundays, has become a gathering place for students.**",
+              "translation_ru": "Районная библиотека, которая теперь работает и по воскресеньям, стала местом встреч студентов."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Our neighbour's dog, which used to bark at every cyclist, hardly makes a sound these days.**",
+              "translation_ru": "Соседская собака, которая раньше облаивала каждого велосипедиста, теперь почти не подаёт голоса."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**The hiking map, which I'd saved offline, proved invaluable when the signal disappeared.**",
+              "translation_ru": "Туристическая карта, которую я заранее сохранил для работы без интернета, очень выручила, когда пропала связь."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где расписание изменили в последний момент."
+              "text": "**The camera, which was supposed to arrive on Tuesday, turned up after our trip.**",
+              "translation_ru": "Камера, которую должны были доставить во вторник, приехала уже после нашей поездки."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Her first novel, which she wrote during her commute, won a regional prize.**",
+              "translation_ru": "Её первый роман, который она писала по дороге на работу, получил региональную премию."
             },
             {
-              "text": "**The report, which was revised yesterday, now needs approval in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где участники ждали объяснения."
+              "text": "**The proposed recycling rule, which still needs public consultation, could affect every household.**",
+              "translation_ru": "Предлагаемое правило сортировки отходов, которое ещё предстоит обсудить с жителями, может затронуть каждую семью."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung [das Team die neue Regelung prüfte]",
-          "example": "Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где команда проверяла новую политику.",
+          "formula": "[Nomen], [passendes Relativpronomen] [Zusatzinformation], [Hauptsatz].",
+          "example": "Das Fahrrad, das den ganzen Winter im Schuppen gestanden hatte, bekam endlich eine neue Kette.",
+          "translation": "На велосипед, который всю зиму простоял в сарае, наконец поставили новую цепь.",
           "examples": [
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где команда проверяла новую политику."
+              "text": "**Das Fahrrad, das den ganzen Winter im Schuppen gestanden hatte, bekam endlich eine neue Kette.**",
+              "translation_ru": "На велосипед, который всю зиму простоял в сарае, наконец поставили новую цепь."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Die Stadtteilbibliothek, die jetzt auch sonntags geöffnet ist, ist für viele Studierende zum Treffpunkt geworden.**",
+              "translation_ru": "Районная библиотека, которая теперь открыта и по воскресеньям, стала местом встреч для многих студентов."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Der Hund unserer Nachbarn, der früher jeden Radfahrer angebellt hat, ist inzwischen erstaunlich ruhig.**",
+              "translation_ru": "Собака наших соседей, которая раньше облаивала каждого велосипедиста, теперь на удивление спокойная."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Die Wanderkarte, die ich vorher offline gespeichert hatte, half uns, als wir keinen Empfang mehr hatten.**",
+              "translation_ru": "Туристическая карта, которую я заранее сохранил для работы без интернета, выручила нас, когда пропала связь."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где расписание изменили в последний момент."
+              "text": "**Die Kamera, die eigentlich am Dienstag kommen sollte, traf erst nach unserem Urlaub ein.**",
+              "translation_ru": "Камера, которую ждали во вторник, пришла только после отпуска."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Ihr Debütroman, den sie auf dem Weg zur Arbeit geschrieben hatte, erhielt einen regionalen Literaturpreis.**",
+              "translation_ru": "Её первый роман, который она писала по дороге на работу, получил региональную литературную премию."
             },
             {
-              "text": "**Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Отчёт, который вчера доработали, теперь требует утверждения в ситуации, где участники ждали объяснения."
+              "text": "**Die neue Mülltrennungsregel, über die noch öffentlich beraten werden soll, könnte alle Haushalte betreffen.**",
+              "translation_ru": "Новое правило сортировки мусора, которое ещё предстоит публично обсудить, может затронуть все семьи."
             }
           ]
         }
       ],
       "formulas": [
-        "The report, which was revised yesterday, now needs approval [the team was reviewing the new policy]",
-        "Der Bericht, der gestern überarbeitet wurde, benötigt nun eine Genehmigung [das Team die neue Regelung prüfte]"
+        "[Noun phrase], which [additional detail], [main statement].",
+        "[Nomen], [passendes Relativpronomen] [Zusatzinformation], [Hauptsatz]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMREL016",
       "group_id": "REL",
       "set_id": "REL",
-      "title_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «коллега, чьё предложение мы приняли, возглавит следующий этап» в живом контексте.",
+      "title_ru": "Выразить принадлежность через whose, dessen и deren",
+      "metaphor_ru": "Английское whose соединяет владельца с предметом или признаком. В немецком dessen относится к владельцу мужского или среднего рода, deren — к женскому роду или множественному числу. Не путайте род владельца с родом самого предмета.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The colleague whose proposal we adopted will lead the next phase [the team was reviewing the new policy]",
-          "example": "The colleague whose proposal we adopted will lead the next phase in a situation where the team was reviewing the new policy.",
-          "translation": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person/place] whose [possessed thing + clause] [main statement].",
+          "example": "The photographer whose lens we borrowed offered to teach us the basics.",
+          "translation": "Фотограф, у которого мы одолжили объектив, предложил научить нас основам съёмки.",
           "examples": [
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где команда проверяла новую политику."
+              "text": "**The photographer whose lens we borrowed offered to teach us the basics.**",
+              "translation_ru": "Фотограф, у которого мы одолжили объектив, предложил научить нас основам съёмки."
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**The family whose garden borders ours grows herbs all year round.**",
+              "translation_ru": "Семья, чей сад граничит с нашим, выращивает зелень круглый год."
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**The student whose essay raised the question is speaking at the debate tonight.**",
+              "translation_ru": "Студент, чьё эссе подняло этот вопрос, сегодня вечером выступает на дискуссии."
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Do you know the designer whose poster won the competition?**",
+              "translation_ru": "Ты знаешь дизайнера, чей плакат победил в конкурсе?"
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где расписание изменили в последний момент."
+              "text": "**We thanked the volunteers whose quick response kept the festival running.**",
+              "translation_ru": "Мы поблагодарили волонтёров, благодаря быстрой реакции которых фестиваль удалось продолжить."
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**The village whose bridge was washed away is still cut off from the main road.**",
+              "translation_ru": "Деревня, мост которой смыло, до сих пор отрезана от главной дороги."
             },
             {
-              "text": "**The colleague whose proposal we adopted will lead the next phase in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где участники ждали объяснения."
+              "text": "**That's the colleague whose advice I should have taken before the interview.**",
+              "translation_ru": "Это тот коллега, к совету которого мне стоило прислушаться до собеседования."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten [das Team die neue Regelung prüfte]",
-          "example": "Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person/Ort], dessen/deren [Besitz + Nebensatz], [Hauptsatz].",
+          "example": "Die Fotografin, deren Objektiv wir uns ausleihen durften, bot uns eine Einführung an.",
+          "translation": "Фотограф, у которой мы одолжили объектив, предложила провести для нас вводное занятие.",
           "examples": [
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где команда проверяла новую политику."
+              "text": "**Die Fotografin, deren Objektiv wir uns ausleihen durften, bot uns eine Einführung an.**",
+              "translation_ru": "Фотограф, у которой мы одолжили объектив, предложила провести для нас вводное занятие."
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Die Familie, deren Garten an unseren grenzt, erntet das ganze Jahr über Kräuter.**",
+              "translation_ru": "Семья, чей сад граничит с нашим, круглый год собирает свежую зелень."
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Der Student, dessen Aufsatz diese Frage aufgeworfen hat, spricht heute bei der Diskussion.**",
+              "translation_ru": "Студент, чьё эссе подняло этот вопрос, сегодня выступает на дискуссии."
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Kennst du die Gestalterin, deren Plakat den Wettbewerb gewonnen hat?**",
+              "translation_ru": "Ты знаком с дизайнером, чей плакат победил в конкурсе?"
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где расписание изменили в последний момент."
+              "text": "**Wir dankten den Freiwilligen, deren schnelles Eingreifen das Fest gerettet hatte.**",
+              "translation_ru": "Мы поблагодарили волонтёров, чьё быстрое вмешательство спасло праздник."
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Das Dorf, dessen Brücke vom Hochwasser zerstört wurde, ist noch immer schwer erreichbar.**",
+              "translation_ru": "До деревни, мост которой разрушило наводнение, до сих пор трудно добраться."
             },
             {
-              "text": "**Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Коллега, чьё предложение мы приняли, возглавит следующий этап в ситуации, где участники ждали объяснения."
+              "text": "**Das ist der Kollege, dessen Rat ich vor dem Vorstellungsgespräch hätte befolgen sollen.**",
+              "translation_ru": "Это тот коллега, к совету которого мне стоило прислушаться перед собеседованием."
             }
           ]
         }
       ],
       "formulas": [
-        "The colleague whose proposal we adopted will lead the next phase [the team was reviewing the new policy]",
-        "Die Kollegin, deren Vorschlag wir übernommen haben, wird die nächste Phase leiten [das Team die neue Regelung prüfte]"
+        "[Person/place] whose [possessed thing + clause] [main statement].",
+        "[Person/Ort], dessen/deren [Besitz + Nebensatz], [Hauptsatz]."
       ],
       "gen": {
         "status": "curated",

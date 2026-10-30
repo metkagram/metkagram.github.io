@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Decision questions."
       }
+    },
+    {
+      "id": "C1QDEC001",
+      "group_id": "QDEC",
+      "set_id": "QDEC",
+      "title_ru": "Спросить, что изменит решение собеседника",
+      "metaphor_ru": "Не спорьте о выборе вслепую: выясните, какие аргументы, условия или доказательства могли бы изменить позицию человека.",
+      "title_en": "What would convince you to [X]?",
+      "description_en": "Ask for the decision threshold or evidence that could change someone's mind, rather than debating without criteria.",
+      "description_ru": "Не спорьте о выборе вслепую: выясните, какие аргументы, условия или доказательства могли бы изменить позицию человека.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would convince you to [X]?",
+          "example": "What would convince you to take the train instead of driving?",
+          "translation": "Что могло бы убедить тебя поехать на поезде вместо машины?",
+          "examples": [
+            {
+              "text": "**What would convince you to take the train instead of driving?**",
+              "translation_ru": "Что могло бы убедить тебя поехать на поезде вместо машины?"
+            },
+            {
+              "text": "**What would convince you to join a conversation class rather than study alone?**",
+              "translation_ru": "Что убедило бы тебя записаться на разговорный курс вместо самостоятельной учёбы?"
+            },
+            {
+              "text": "**What would convince you to buy a refurbished laptop rather than a new one?**",
+              "translation_ru": "Что могло бы убедить тебя купить восстановленный ноутбук вместо нового?"
+            },
+            {
+              "text": "**What would convince you to tell your friend that the joke hurt?**",
+              "translation_ru": "Что помогло бы тебе решиться сказать подруге, что её шутка тебя задела?"
+            },
+            {
+              "text": "**What would convince you to postpone the event until the venue is accessible?**",
+              "translation_ru": "Что убедило бы тебя отложить мероприятие, пока площадка не станет доступной для всех?"
+            },
+            {
+              "text": "**What would convince you to share the raw data instead of just the chart?**",
+              "translation_ru": "Что убедило бы тебя поделиться исходными данными, а не только диаграммой?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was würde dich überzeugen, [X] zu tun?",
+          "example": "Was würde dich überzeugen, den Zug zu nehmen, statt mit dem Auto zu fahren?",
+          "translation": "Что могло бы убедить тебя поехать на поезде вместо машины?",
+          "examples": [
+            {
+              "text": "**Was würde dich überzeugen, den Zug zu nehmen, statt mit dem Auto zu fahren?**",
+              "translation_ru": "Что могло бы убедить тебя поехать на поезде вместо машины?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, einen Konversationskurs zu besuchen, statt allein zu lernen?**",
+              "translation_ru": "Что убедило бы тебя записаться на разговорный курс вместо самостоятельной учёбы?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, einen generalüberholten Laptop statt eines neuen zu kaufen?**",
+              "translation_ru": "Что могло бы убедить тебя купить восстановленный ноутбук вместо нового?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, deiner Freundin zu sagen, dass dich ihr Witz verletzt hat?**",
+              "translation_ru": "Что помогло бы тебе решиться сказать подруге, что её шутка тебя задела?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, die Veranstaltung zu verschieben, bis der Veranstaltungsort barrierefrei ist?**",
+              "translation_ru": "Что убедило бы тебя отложить мероприятие, пока площадка не станет доступной для всех?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, neben der Grafik auch die Rohdaten zu veröffentlichen?**",
+              "translation_ru": "Что убедило бы тебя поделиться исходными данными, а не только диаграммой?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would convince you to [X]?",
+        "Was würde dich überzeugen, [X] zu tun?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 spoken frame; local spaCy annotation pending."
+      }
     }
   ]
 }

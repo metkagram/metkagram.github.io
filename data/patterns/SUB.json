@@ -101,85 +101,85 @@
       "id": "GRMSUB006",
       "group_id": "SUB",
       "set_id": "SUB",
-      "title_ru": "Когда проверка завершится, мы сможем опубликовать результаты",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «когда проверка завершится, мы сможем опубликовать результаты» в живом контексте.",
+      "title_ru": "Действие сразу после выполнения условия",
+      "metaphor_ru": "Once и sobald вводят событие, после которого становится возможным следующее действие. В придаточном предложении немецкий глагол стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Once the review has finished, we can publish the results [the team was reviewing the new policy]",
-          "example": "Once the review has finished, we can publish the results in a situation where the team was reviewing the new policy.",
-          "translation": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где команда проверяла новую политику.",
+          "formula": "Once [prerequisite is complete], [next action].",
+          "example": "Once the soil has warmed up, we'll plant the tomatoes outside.",
+          "translation": "Как только почва прогреется, мы высадим помидоры на улице.",
           "examples": [
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где команда проверяла новую политику."
+              "text": "**Once the soil has warmed up, we'll plant the tomatoes outside.**",
+              "translation_ru": "Как только почва прогреется, мы высадим помидоры на улице."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Once the museum reopens, local schools will be able to use its workshops again.**",
+              "translation_ru": "Когда музей снова откроется, школы поблизости смогут вновь пользоваться его мастерскими."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Once you've backed up the photos, you can safely reset the phone.**",
+              "translation_ru": "Как только сделаешь резервную копию фотографий, сможешь спокойно сбросить настройки телефона."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Once everyone has had a chance to speak, I'll summarise what we agree on.**",
+              "translation_ru": "Когда все выскажутся, я подведу итог тому, в чём мы согласны."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где расписание изменили в последний момент."
+              "text": "**Once the rain stops, we can finish painting the balcony railing.**",
+              "translation_ru": "Как только дождь закончится, сможем докрасить перила балкона."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Once the interview is over, write down the questions that caught you off guard.**",
+              "translation_ru": "После собеседования запиши вопросы, которые застали тебя врасплох."
             },
             {
-              "text": "**Once the review has finished, we can publish the results in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где участники ждали объяснения."
+              "text": "**Once the children have settled into their new school, their parents hope to volunteer at the local library.**",
+              "translation_ru": "Когда дети освоятся в новой школе, родители надеются начать помогать в городской библиотеке."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen [das Team die neue Regelung prüfte]",
-          "example": "Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где команда проверяла новую политику.",
+          "formula": "Sobald [Voraussetzung erfüllt ist], [Hauptsatz].",
+          "example": "Sobald sich der Boden erwärmt hat, pflanzen wir die Tomaten draußen ein.",
+          "translation": "Как только почва прогреется, мы высадим помидоры на улице.",
           "examples": [
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где команда проверяла новую политику."
+              "text": "**Sobald sich der Boden erwärmt hat, pflanzen wir die Tomaten draußen ein.**",
+              "translation_ru": "Как только почва прогреется, мы высадим помидоры на улице."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Sobald das Museum wieder öffnet, können die Schulen aus der Umgebung seine Werkstätten wieder nutzen.**",
+              "translation_ru": "Когда музей снова откроется, школы поблизости смогут вновь пользоваться его мастерскими."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Sobald du die Fotos gesichert hast, kannst du das Handy ohne Bedenken zurücksetzen.**",
+              "translation_ru": "Как только сделаешь резервную копию фотографий, сможешь спокойно сбросить настройки телефона."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Sobald alle zu Wort gekommen sind, fasse ich zusammen, worüber wir uns einig sind.**",
+              "translation_ru": "Когда все выскажутся, я подведу итог тому, в чём мы согласны."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где расписание изменили в последний момент."
+              "text": "**Sobald der Regen aufhört, können wir das Balkongeländer fertig streichen.**",
+              "translation_ru": "Как только дождь закончится, сможем докрасить перила балкона."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Sobald das Gespräch vorbei ist, schreib die Fragen auf, die dich unvorbereitet getroffen haben.**",
+              "translation_ru": "После собеседования запиши вопросы, которые застали тебя врасплох."
             },
             {
-              "text": "**Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Когда проверка завершится, мы сможем опубликовать результаты в ситуации, где участники ждали объяснения."
+              "text": "**Sobald sich die Kinder an der neuen Schule eingelebt haben, möchten ihre Eltern in der Stadtbibliothek ehrenamtlich mithelfen.**",
+              "translation_ru": "Когда дети освоятся в новой школе, родители надеются начать помогать в городской библиотеке."
             }
           ]
         }
       ],
       "formulas": [
-        "Once the review has finished, we can publish the results [the team was reviewing the new policy]",
-        "Nachdem die Prüfung abgeschlossen ist, können wir die Ergebnisse veröffentlichen [das Team die neue Regelung prüfte]"
+        "Once [prerequisite is complete], [next action].",
+        "Sobald [Voraussetzung erfüllt ist], [Hauptsatz]."
       ],
       "gen": {
         "status": "curated",

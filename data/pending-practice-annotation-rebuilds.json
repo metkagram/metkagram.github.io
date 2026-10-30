@@ -1,7 +1,268 @@
 {
   "schemaVersion": 1,
   "purpose": "Explicit annotation rebuild ledger for new or changed canonical Pattern source text that still requires the local dependency-parser export.",
-  "patterns": [],
+  "patterns": [
+    {
+      "id": "C1EVD002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1ARG002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1HED002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1PRB002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1CLR002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1EVD003",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1AGR002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1PRO002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1STO002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1AGR003",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-11"
+    },
+    {
+      "id": "C1SOL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-11"
+    },
+    {
+      "id": "C1MOD002",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-12"
+    },
+    {
+      "id": "C1STO003",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-12"
+    },
+    {
+      "id": "C1QCL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QNGT001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QHYP001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QDIS001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QDEC001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1PRI001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1SUM001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1CAU041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1EVD041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1QFOL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1QFRM001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1CND041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1TCT001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1FBK001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1PFR001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1TAS041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1REP041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1KON001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1FCS001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1PRP001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1MOD041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1INF001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1DET001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1PRB041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "QSTQOP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQPOL001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQCAU021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "GRMPRP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "GRMSUB006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQPRE011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQPRE021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQNEG021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQTAG001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQYN031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "GRMREL001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMREL016",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMCAS001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMCAS016",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "QSTQIND021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    }
+  ],
   "retired_records": [],
   "refreshed_by": "2026-09-19.8"
 }

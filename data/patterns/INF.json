@@ -761,6 +761,96 @@
         ],
         "notes": "Grammar pattern: Verb complements and non-finite clauses."
       }
+    },
+    {
+      "id": "C1INF001",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Объяснить, почему действие даётся трудно",
+      "metaphor_ru": "Называйте конкретную трудность, используя английское формальное it и немецкую конструкцию с дательным падежом для человека, испытывающего трудность.",
+      "title_en": "Find it hard to [do something]",
+      "description_en": "Describe difficulty doing something, with English dummy it and German dative experiencer plus a zu-infinitive.",
+      "description_ru": "Сравнивайте английское find it hard to ... с немецким Mir/Dir/Ihr fällt es schwer, ... zu ..., меняя участников и время.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] find(s)/found it hard to [verb] [context].",
+          "example": "I find it hard to concentrate when three conversations are happening at once.",
+          "translation": "Мне трудно сосредоточиться, когда одновременно идут три разговора.",
+          "examples": [
+            {
+              "text": "**I find it hard to concentrate when three conversations are happening at once.**",
+              "translation_ru": "Мне трудно сосредоточиться, когда одновременно идут три разговора."
+            },
+            {
+              "text": "**She found it hard to trust the advice after the first diagnosis proved wrong.**",
+              "translation_ru": "Ей было трудно доверять совету после того, как первый диагноз оказался неверным."
+            },
+            {
+              "text": "**We find it hard to maintain a routine when the children are ill.**",
+              "translation_ru": "Нам трудно придерживаться привычного распорядка, когда дети болеют."
+            },
+            {
+              "text": "**Many learners find it hard to interrupt politely without losing their train of thought.**",
+              "translation_ru": "Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."
+            },
+            {
+              "text": "**I found it hard to admit that the simpler approach worked better.**",
+              "translation_ru": "Мне было трудно признать, что более простой подход сработал лучше."
+            },
+            {
+              "text": "**They may find it hard to discuss the move openly while their parents are still upset.**",
+              "translation_ru": "Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person in dative] fällt/fiel es schwer, [action] zu [infinitive].",
+          "example": "Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.",
+          "translation": "Мне трудно сосредоточиться, когда одновременно идут три разговора.",
+          "examples": [
+            {
+              "text": "**Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.**",
+              "translation_ru": "Мне трудно сосредоточиться, когда одновременно идут три разговора."
+            },
+            {
+              "text": "**Ihr fiel es schwer, dem Rat zu vertrauen, nachdem sich die erste Diagnose als falsch erwiesen hatte.**",
+              "translation_ru": "Ей было трудно доверять совету после того, как первый диагноз оказался неверным."
+            },
+            {
+              "text": "**Uns fällt es schwer, einen festen Tagesablauf einzuhalten, wenn die Kinder krank sind.**",
+              "translation_ru": "Нам трудно придерживаться привычного распорядка, когда дети болеют."
+            },
+            {
+              "text": "**Vielen Lernenden fällt es schwer, höflich zu unterbrechen, ohne den Faden zu verlieren.**",
+              "translation_ru": "Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."
+            },
+            {
+              "text": "**Mir fiel es schwer, zuzugeben, dass der einfachere Ansatz besser funktionierte.**",
+              "translation_ru": "Мне было трудно признать, что более простой подход сработал лучше."
+            },
+            {
+              "text": "**Ihnen könnte es schwerfallen, offen über den Umzug zu sprechen, solange ihre Eltern noch verärgert sind.**",
+              "translation_ru": "Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] find(s)/found it hard to [verb] [context].",
+        "[Person in dative] fällt/fiel es schwer, [action] zu [infinitive]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }

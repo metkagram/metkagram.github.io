@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Tact and politeness."
       }
+    },
+    {
+      "id": "C1TCT001",
+      "group_id": "TCT",
+      "set_id": "TCT",
+      "title_ru": "Тактично напомнить о договорённости",
+      "metaphor_ru": "Если договорённость понята по-разному, начните с допущения собственной ошибки, а не с обвинения собеседника. Немецкое hätten vereinbart помогает передать осторожность и прошлое ожидание.",
+      "title_en": "I may have misunderstood, but I thought we'd agreed to [X]",
+      "description_en": "Raise a discrepancy in a prior agreement without accusing anyone; German uses a natural tentative preface and Konjunktiv II after dachte.",
+      "description_ru": "Если договорённость понята по-разному, начните с допущения собственной ошибки, а не с обвинения собеседника. Немецкое hätten vereinbart помогает передать осторожность и прошлое ожидание.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I may have misunderstood, but I thought we'd agreed to [X].",
+          "example": "I may have misunderstood, but I thought we'd agreed to keep Saturday free for the family.",
+          "translation": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?",
+          "examples": [
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to keep Saturday free for the family.**",
+              "translation_ru": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to send the corrected invitation before noon.**",
+              "translation_ru": "Может, я неправильно понял: мы же собирались отправить исправленное приглашение до полудня?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to speak to the volunteers before changing the route.**",
+              "translation_ru": "Возможно, я упустил деталь, но мы ведь договорились сначала поговорить с волонтёрами, а потом менять маршрут?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to leave the old photos untouched until we'd made a backup.**",
+              "translation_ru": "Я мог что-то перепутать, но, кажется, мы договорились не трогать старые фотографии до создания резервной копии."
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to leave time for questions after the talk.**",
+              "translation_ru": "Может, я понял неверно, но мы же хотели оставить время на вопросы после выступления?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to try the quieter room before buying another microphone.**",
+              "translation_ru": "Возможно, я ошибаюсь, но мы ведь решили сначала попробовать более тихую комнату, прежде чем покупать ещё один микрофон?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, [X].",
+          "example": "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, den Samstag für die Familie freizuhalten.",
+          "translation": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?",
+          "examples": [
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, den Samstag für die Familie freizuhalten.**",
+              "translation_ru": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, die korrigierte Einladung noch vor Mittag zu verschicken.**",
+              "translation_ru": "Может, я неправильно понял: мы же собирались отправить исправленное приглашение до полудня?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, vor einer Streckenänderung mit den Freiwilligen zu sprechen.**",
+              "translation_ru": "Возможно, я упустил деталь, но мы ведь договорились сначала поговорить с волонтёрами, а потом менять маршрут?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, die alten Fotos nicht anzurühren, bevor wir eine Sicherungskopie haben.**",
+              "translation_ru": "Я мог что-то перепутать, но, кажется, мы договорились не трогать старые фотографии до создания резервной копии."
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, nach dem Vortrag Zeit für Fragen zu lassen.**",
+              "translation_ru": "Может, я понял неверно, но мы же хотели оставить время на вопросы после выступления?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, erst den ruhigeren Raum zu testen, bevor wir ein weiteres Mikrofon kaufen.**",
+              "translation_ru": "Возможно, я ошибаюсь, но мы ведь решили сначала попробовать более тихую комнату, прежде чем покупать ещё один микрофон?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I may have misunderstood, but I thought we'd agreed to [X].",
+        "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, [X]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

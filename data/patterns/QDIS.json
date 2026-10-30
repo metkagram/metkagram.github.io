@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Discourse-management questions."
       }
+    },
+    {
+      "id": "C1QDIS001",
+      "group_id": "QDIS",
+      "set_id": "QDIS",
+      "title_ru": "Мягко вернуть разговор к главному",
+      "metaphor_ru": "Тактично отложите второстепенную тему и верните разговор к незакрытому вопросу, не обрывая собеседника.",
+      "title_en": "Can we put [X] aside for a moment and return to [Y]?",
+      "description_en": "Steer a drifting discussion back to an unresolved point without dismissing the current topic.",
+      "description_ru": "Тактично отложите второстепенную тему и верните разговор к незакрытому вопросу, не обрывая собеседника.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Can we put [X] aside for a moment and return to [Y]?",
+          "example": "Can we put the font debate aside for a moment and return to why the screen is hard to read?",
+          "translation": "Можем ненадолго отложить спор о шрифтах и вернуться к тому, почему текст на экране трудно читать?",
+          "examples": [
+            {
+              "text": "**Can we put the font debate aside for a moment and return to why the screen is hard to read?**",
+              "translation_ru": "Можем ненадолго отложить спор о шрифтах и вернуться к тому, почему текст на экране трудно читать?"
+            },
+            {
+              "text": "**Can we put the holiday dates aside for a moment and return to whether Grandma actually wants to come?**",
+              "translation_ru": "Можем пока не обсуждать даты отпуска и сначала вернуться к вопросу, хочет ли бабушка вообще ехать?"
+            },
+            {
+              "text": "**Can we put the blame aside for a moment and return to what actually happened?**",
+              "translation_ru": "Можем пока не искать виноватых и вернуться к тому, что на самом деле произошло?"
+            },
+            {
+              "text": "**Can we put the price aside for a moment and return to whether the bicycle actually fits?**",
+              "translation_ru": "Можем пока отложить вопрос цены и вернуться к тому, подходит ли вообще этот велосипед по размеру?"
+            },
+            {
+              "text": "**Can we put the slides aside for a moment and return to what participants should learn?**",
+              "translation_ru": "Можем ненадолго забыть о слайдах и вернуться к тому, чему должны научиться участники?"
+            },
+            {
+              "text": "**Can we put the release date aside for a moment and return to the unresolved privacy issue?**",
+              "translation_ru": "Можем пока отложить дату выпуска и вернуться к нерешённому вопросу защиты персональных данных?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Können wir [X] kurz zurückstellen und zu [Y] zurückkehren?",
+          "example": "Können wir die Schriftarten kurz zurückstellen und zu der Frage zurückkehren, warum der Text auf dem Bildschirm so schwer zu lesen ist?",
+          "translation": "Можем ненадолго отложить спор о шрифтах и вернуться к тому, почему текст на экране трудно читать?",
+          "examples": [
+            {
+              "text": "**Können wir die Schriftarten kurz zurückstellen und zu der Frage zurückkehren, warum der Text auf dem Bildschirm so schwer zu lesen ist?**",
+              "translation_ru": "Можем ненадолго отложить спор о шрифтах и вернуться к тому, почему текст на экране трудно читать?"
+            },
+            {
+              "text": "**Können wir die Urlaubstermine kurz zurückstellen und zu der Frage zurückkehren, ob Oma überhaupt mitkommen möchte?**",
+              "translation_ru": "Можем пока не обсуждать даты отпуска и сначала вернуться к вопросу, хочет ли бабушка вообще ехать?"
+            },
+            {
+              "text": "**Können wir die Schuldfrage kurz zurückstellen und zu dem zurückkehren, was tatsächlich passiert ist?**",
+              "translation_ru": "Можем пока не искать виноватых и вернуться к тому, что на самом деле произошло?"
+            },
+            {
+              "text": "**Können wir den Preis kurz zurückstellen und darauf zurückkommen, ob das Fahrrad überhaupt die richtige Größe hat?**",
+              "translation_ru": "Можем пока отложить вопрос цены и вернуться к тому, подходит ли вообще этот велосипед по размеру?"
+            },
+            {
+              "text": "**Können wir die Folien kurz zurückstellen und zu der Frage zurückkehren, was die Teilnehmenden lernen sollen?**",
+              "translation_ru": "Можем ненадолго забыть о слайдах и вернуться к тому, чему должны научиться участники?"
+            },
+            {
+              "text": "**Können wir den Veröffentlichungstermin kurz zurückstellen und auf das ungelöste Datenschutzproblem zurückkommen?**",
+              "translation_ru": "Можем пока отложить дату выпуска и вернуться к нерешённому вопросу защиты персональных данных?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Can we put [X] aside for a moment and return to [Y]?",
+        "Können wir [X] kurz zurückstellen und zu [Y] zurückkehren?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 spoken frame; local spaCy annotation pending."
+      }
     }
   ]
 }
