@@ -196,85 +196,85 @@
       "id": "QSTQIND021",
       "group_id": "QIND",
       "set_id": "QIND",
-      "title_ru": "Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Вежливо выяснить, как что-то устроено или произошло",
+      "metaphor_ru": "После how в английском косвенном вопросе идёт обычный порядок слов: how the system works, а не how does the system work. В немецком после wie спрягаемый глагол уходит в конец придаточного. Можно спрашивать прямо или использовать мягкое вступление.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would you mind explaining how it is possible that [the team needs another day to decide]?",
-          "example": "Would you mind explaining how it is possible that the team needs another day to decide?",
-          "translation": "Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения?",
+          "formula": "Could you explain how [subject + verb]? / I'd like to understand how [subject + verb].",
+          "example": "Could you explain how the new recycling rules apply to our building?",
+          "translation": "Можете объяснить, как новые правила сортировки отходов действуют в нашем доме?",
           "examples": [
             {
-              "text": "**Would you mind explaining how it is possible that the team needs another day to decide?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения?"
+              "text": "**Could you explain how the new recycling rules apply to our building?**",
+              "translation_ru": "Можете объяснить, как новые правила сортировки отходов действуют в нашем доме?"
             },
             {
-              "text": "**Would you mind explaining how it is possible that the revised plan has not been shared yet?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что обновлённым планом ещё не поделились?"
+              "text": "**Can you show me how you fixed the dripping tap without buying new parts?**",
+              "translation_ru": "Покажешь, как ты починил капающий кран без покупки новых деталей?"
             },
             {
-              "text": "**Would you mind explaining how it is possible that we should compare the two options?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что нам следует сравнить два варианта?"
+              "text": "**Could you walk me through how the booking system handles cancellations?**",
+              "translation_ru": "Можете подробно объяснить, как система бронирования обрабатывает отмены?"
             },
             {
-              "text": "**Would you mind explaining how it is possible that the client asked for more detail?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что клиент попросил больше деталей?"
+              "text": "**I'd like to understand how you arrived at that conclusion from the data.**",
+              "translation_ru": "Я хотел бы понять, как вы пришли к такому выводу на основе этих данных."
             },
             {
-              "text": "**Would you mind explaining how it is possible that the pilot may continue next month?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Can you show me how I can adjust the brightness without washing out the colours?**",
+              "translation_ru": "Покажешь, как мне настроить яркость, чтобы цвета не стали блеклыми?"
             },
             {
-              "text": "**Would you mind explaining how it is possible that the data need another check?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что данные нужно проверить ещё раз?"
+              "text": "**I'm curious how the neighbourhood group decides which projects to support.**",
+              "translation_ru": "Мне интересно, как районная инициативная группа выбирает проекты для поддержки."
             },
             {
-              "text": "**Would you mind explaining how it is possible that the meeting was moved?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что встречу перенесли?"
+              "text": "**I still don't understand how the app saves my progress when I'm offline.**",
+              "translation_ru": "Я всё ещё не понимаю, как приложение сохраняет мой прогресс без подключения к интернету."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Würden Sie erklären, wie es möglich ist, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Würden Sie erklären, wie es möglich ist, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения?",
+          "formula": "Könnten Sie erklären, wie [Subjekt ... Verb]? / Ich würde gern verstehen, wie [Subjekt ... Verb].",
+          "example": "Könnten Sie mir erklären, wie die neuen Mülltrennungsregeln in unserem Haus gelten?",
+          "translation": "Можете объяснить, как новые правила сортировки отходов действуют в нашем доме?",
           "examples": [
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что команде нужен ещё день для решения?"
+              "text": "**Könnten Sie mir erklären, wie die neuen Mülltrennungsregeln in unserem Haus gelten?**",
+              "translation_ru": "Можете объяснить, как новые правила сортировки отходов действуют в нашем доме?"
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что обновлённым планом ещё не поделились?"
+              "text": "**Kannst du mir zeigen, wie du den tropfenden Wasserhahn ohne neue Teile repariert hast?**",
+              "translation_ru": "Покажешь, как ты починил капающий кран без новых деталей?"
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что нам следует сравнить два варианта?"
+              "text": "**Könnten Sie mir erläutern, wie das Buchungssystem mit Stornierungen umgeht?**",
+              "translation_ru": "Можете подробно объяснить, как система бронирования обрабатывает отмены?"
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что клиент попросил больше деталей?"
+              "text": "**Ich würde gern verstehen, wie Sie anhand dieser Daten zu dem Schluss gekommen sind.**",
+              "translation_ru": "Я хотел бы понять, как вы пришли к такому выводу на основе этих данных."
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Kannst du mir zeigen, wie ich die Helligkeit ändern kann, ohne die Farben zu verfälschen?**",
+              "translation_ru": "Покажешь, как мне изменить яркость, не исказив цвета?"
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что данные нужно проверить ещё раз?"
+              "text": "**Mich würde interessieren, wie die Nachbarschaftsgruppe über neue Projekte entscheidet.**",
+              "translation_ru": "Мне интересно, как районная инициативная группа принимает решения по новым проектам."
             },
             {
-              "text": "**Würden Sie erklären, wie es möglich ist, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Не могли бы вы объяснить, как возможно, что встречу перенесли?"
+              "text": "**Ich verstehe noch nicht, wie die App meinen Lernfortschritt ohne Internetverbindung speichert.**",
+              "translation_ru": "Я пока не понимаю, как приложение сохраняет мой учебный прогресс без интернета."
             }
           ]
         }
       ],
       "formulas": [
-        "Would you mind explaining how it is possible that [the team needs another day to decide]?",
-        "Würden Sie erklären, wie es möglich ist, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Could you explain how [subject + verb]? / I'd like to understand how [subject + verb].",
+        "Könnten Sie erklären, wie [Subjekt ... Verb]? / Ich würde gern verstehen, wie [Subjekt ... Verb]."
       ],
       "gen": {
         "status": "curated",
