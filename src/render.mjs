@@ -249,6 +249,7 @@ export function layout({ locale = "en", pathname, title, description, body, type
   <link rel="icon" href="/assets/icons/metkagram-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/icons/metkagram-icon-180x180.png">
   <link rel="manifest" href="/assets/web/site.webmanifest">
+  <script src="/assets/pwa-register.js" defer></script>
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="/assets/styles.css">
   <meta name="metkagram-sync-endpoint" content="https://metalhatscats.com/api/metkax/srs">

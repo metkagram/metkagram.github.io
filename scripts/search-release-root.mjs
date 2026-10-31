@@ -79,6 +79,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="ru" href="${SITE_URL}/ru/">
   <link rel="alternate" hreflang="x-default" href="${SITE_URL}/">
   <link rel="manifest" href="/assets/web/site.webmanifest">
+  <script src="/assets/pwa-register.js" defer></script>
   <link rel="icon" href="/assets/icons/metkagram-icon-512x512.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="/assets/icons/metkagram-icon-512x512.png">
   <meta property="og:type" content="website">

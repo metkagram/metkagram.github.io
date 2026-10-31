@@ -1,19 +1,26 @@
 {
+  "id": "/",
   "name": "Metkagram",
   "short_name": "Metkagram",
+  "description": "Learn English and German through annotated examples, language patterns and deliberate practice.",
+  "lang": "en",
+  "start_url": "/en/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#FFC400",
   "icons": [
     {
       "src": "/assets/icons/metkagram-icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/assets/icons/metkagram-icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
-  ],
-  "theme_color": "#FFC400",
-  "background_color": "#111111",
-  "display": "standalone"
+  ]
 }
