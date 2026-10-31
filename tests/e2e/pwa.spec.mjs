@@ -22,6 +22,8 @@ test("Chromium reads the install manifest and controls public learning routes", 
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.reload();
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
+  // Chromium installability eligibility, not merely a parseable manifest.
+  await expect.poll(async () => (await cdp.send("Page.getInstallabilityErrors")).installabilityErrors).toEqual([]);
 
   await page.goto("/ru/practice/");
   await expect(page.locator("html")).toHaveAttribute("lang", "ru");
