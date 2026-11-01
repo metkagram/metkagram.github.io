@@ -196,85 +196,85 @@
       "id": "GRMWOR011",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Она сказала, что отчёт проверили дважды",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «она сказала, что отчёт проверили дважды» в живом контексте.",
+      "title_ru": "Косвенная речь о ранее завершённом действии",
+      "metaphor_ru": "Передавайте чьи-то слова о завершённом действии: в английском используйте had been + причастие, а в немецком письменная косвенная речь часто использует Konjunktiv I (worden sei / seien).",
       "langs": [
         {
           "lang": "en",
-          "formula": "She said that the report had been checked twice [the team was reviewing the new policy]",
-          "example": "She said that the report had been checked twice in a situation where the team was reviewing the new policy.",
-          "translation": "Она сказала, что отчёт проверили дважды в ситуации, где команда проверяла новую политику.",
+          "formula": "[Speaker] said/explained that [thing] had been [past participle] ...",
+          "example": "The curator said that the paintings had been restored before the exhibition opened.",
+          "translation": "Куратор сказала, что картины отреставрировали до открытия выставки.",
           "examples": [
             {
-              "text": "**She said that the report had been checked twice in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где команда проверяла новую политику."
+              "text": "The curator said that the paintings had been restored before the exhibition opened.",
+              "translation_ru": "Куратор сказала, что картины отреставрировали до открытия выставки."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Our neighbour said that the water leak had been repaired while we were away.",
+              "translation_ru": "Сосед сказал, что протечку устранили, пока нас не было."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The guide explained that the old bridge had been closed after the storm.",
+              "translation_ru": "Гид объяснил, что старый мост закрыли после шторма."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где доступные данные всё ещё были неполными."
+              "text": "My sister said that her application had been rejected without an explanation.",
+              "translation_ru": "Сестра сказала, что её заявление отклонили без объяснения причин."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где расписание изменили в последний момент."
+              "text": "The librarian told us that the rare books had been moved to a climate-controlled room.",
+              "translation_ru": "Библиотекарь сказала нам, что редкие книги перенесли в помещение с регулируемым климатом."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "The engineer confirmed that the faulty sensor had been replaced before the test.",
+              "translation_ru": "Инженер подтвердила, что неисправный датчик заменили до испытания."
             },
             {
-              "text": "**She said that the report had been checked twice in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где участники ждали объяснения."
+              "text": "A volunteer said that all the donated blankets had been distributed by morning.",
+              "translation_ru": "Волонтёр сказал, что к утру все пожертвованные одеяла раздали."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie sagte, dass der Bericht zweimal geprüft worden sei [das Team die neue Regelung prüfte]",
-          "example": "Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Она сказала, что отчёт проверили дважды в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] sagte/erklärte, dass [Sache] ... [Partizip II] worden sei/seien.",
+          "example": "Die Kuratorin erklärte, dass die Gemälde vor der Ausstellungseröffnung restauriert worden seien.",
+          "translation": "Куратор сказала, что картины отреставрировали до открытия выставки.",
           "examples": [
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где команда проверяла новую политику."
+              "text": "Die Kuratorin erklärte, dass die Gemälde vor der Ausstellungseröffnung restauriert worden seien.",
+              "translation_ru": "Куратор сказала, что картины отреставрировали до открытия выставки."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Unser Nachbar sagte, dass das Wasserleck während unserer Abwesenheit behoben worden sei.",
+              "translation_ru": "Сосед сказал, что протечку устранили, пока нас не было."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Der Reiseführer erklärte, dass die alte Brücke nach dem Sturm gesperrt worden sei.",
+              "translation_ru": "Гид объяснил, что старый мост закрыли после шторма."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Meine Schwester berichtete, dass ihre Bewerbung ohne Begründung abgelehnt worden sei.",
+              "translation_ru": "Сестра сказала, что её заявление отклонили без объяснения причин."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где расписание изменили в последний момент."
+              "text": "Die Bibliothekarin sagte uns, dass die seltenen Bücher in einen klimatisierten Raum gebracht worden seien.",
+              "translation_ru": "Библиотекарь сказала нам, что редкие книги перенесли в помещение с регулируемым климатом."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Die Ingenieurin bestätigte, dass der defekte Sensor vor dem Test ausgetauscht worden sei.",
+              "translation_ru": "Инженер подтвердила, что неисправный датчик заменили до испытания."
             },
             {
-              "text": "**Sie sagte, dass der Bericht zweimal geprüft worden sei in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Она сказала, что отчёт проверили дважды в ситуации, где участники ждали объяснения."
+              "text": "Ein Helfer sagte, dass alle gespendeten Decken bis zum Morgen verteilt worden seien.",
+              "translation_ru": "Волонтёр сказал, что к утру все пожертвованные одеяла раздали."
             }
           ]
         }
       ],
       "formulas": [
-        "She said that the report had been checked twice [the team was reviewing the new policy]",
-        "Sie sagte, dass der Bericht zweimal geprüft worden sei [das Team die neue Regelung prüfte]"
+        "[Speaker] said/explained that [thing] had been [past participle] ...",
+        "[Person] sagte/erklärte, dass [Sache] ... [Partizip II] worden sei/seien."
       ],
       "gen": {
         "status": "curated",
@@ -386,85 +386,85 @@
       "id": "GRMWOR021",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Если бы мы знали о риске, мы бы действовали раньше",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «если бы мы знали о риске, мы бы действовали раньше» в живом контексте.",
+      "title_ru": "Условие о прошлом без if",
+      "metaphor_ru": "В английском инверсия Had + подлежащее + причастие заменяет If ... had ...; в немецком Konjunktiv II тоже может начинать условие без wenn. Упражняйтесь в последствиях, которых не произошло.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Had we known the risk, we would have acted earlier [the team was reviewing the new policy]",
-          "example": "Had we known the risk, we would have acted earlier in a situation where the team was reviewing the new policy.",
-          "translation": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где команда проверяла новую политику.",
+          "formula": "Had [subject] [past participle], [subject] would/could/might have [past participle].",
+          "example": "Had I checked the tide tables, we wouldn't have been stranded on the beach.",
+          "translation": "Если бы я проверил таблицу приливов, мы бы не застряли на пляже.",
           "examples": [
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где команда проверяла новую политику."
+              "text": "Had I checked the tide tables, we wouldn't have been stranded on the beach.",
+              "translation_ru": "Если бы я проверил таблицу приливов, мы бы не застряли на пляже."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Had the council listened to the residents, it might have preserved the old trees.",
+              "translation_ru": "Если бы городской совет прислушался к жителям, старые деревья, возможно, удалось бы сохранить."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Had we backed up the photos, we could have recovered the lost album.",
+              "translation_ru": "Если бы мы сделали резервную копию фотографий, то смогли бы восстановить потерянный альбом."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Had the train left on time, she would have caught the last ferry.",
+              "translation_ru": "Если бы поезд отправился вовремя, она успела бы на последний паром."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где расписание изменили в последний момент."
+              "text": "Had the teacher noticed his confusion, she would have explained the rule differently.",
+              "translation_ru": "Если бы учительница заметила его растерянность, она объяснила бы правило иначе."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Had you warned me about the steep path, I'd have worn sturdier shoes.",
+              "translation_ru": "Если бы ты предупредил меня о крутой тропе, я надел бы более прочную обувь."
             },
             {
-              "text": "**Had we known the risk, we would have acted earlier in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где участники ждали объяснения."
+              "text": "Had the team tested the translation with native speakers, it might have avoided an awkward slogan.",
+              "translation_ru": "Если бы команда проверила перевод с носителями языка, она, возможно, избежала бы неудачного слогана."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Hätten wir das Risiko gekannt, hätten wir früher gehandelt [das Team die neue Regelung prüfte]",
-          "example": "Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где команда проверяла новую политику.",
+          "formula": "Hätte/Wäre [Subjekt] ... [Partizip II], hätte/wäre [Subjekt] ... [Partizip II].",
+          "example": "Hätte ich die Gezeitentabelle geprüft, wären wir nicht am Strand festgesessen.",
+          "translation": "Если бы я проверил таблицу приливов, мы бы не застряли на пляже.",
           "examples": [
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где команда проверяла новую политику."
+              "text": "Hätte ich die Gezeitentabelle geprüft, wären wir nicht am Strand festgesessen.",
+              "translation_ru": "Если бы я проверил таблицу приливов, мы бы не застряли на пляже."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Hätte der Stadtrat auf die Anwohner gehört, hätte er die alten Bäume vielleicht erhalten.",
+              "translation_ru": "Если бы городской совет прислушался к жителям, старые деревья, возможно, удалось бы сохранить."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Hätten wir die Fotos gesichert, hätten wir das verlorene Album wiederherstellen können.",
+              "translation_ru": "Если бы мы сделали резервную копию фотографий, то смогли бы восстановить потерянный альбом."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Wäre der Zug pünktlich abgefahren, hätte sie die letzte Fähre erreicht.",
+              "translation_ru": "Если бы поезд отправился вовремя, она успела бы на последний паром."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где расписание изменили в последний момент."
+              "text": "Hätte die Lehrerin seine Verwirrung bemerkt, hätte sie die Regel anders erklärt.",
+              "translation_ru": "Если бы учительница заметила его растерянность, она объяснила бы правило иначе."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Hättest du mich vor dem steilen Weg gewarnt, hätte ich festere Schuhe angezogen.",
+              "translation_ru": "Если бы ты предупредил меня о крутой тропе, я надел бы более прочную обувь."
             },
             {
-              "text": "**Hätten wir das Risiko gekannt, hätten wir früher gehandelt in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Если бы мы знали о риске, мы бы действовали раньше в ситуации, где участники ждали объяснения."
+              "text": "Hätte das Team die Übersetzung mit Muttersprachlern getestet, hätte es einen unglücklichen Slogan vielleicht vermieden.",
+              "translation_ru": "Если бы команда проверила перевод с носителями языка, она, возможно, избежала бы неудачного слогана."
             }
           ]
         }
       ],
       "formulas": [
-        "Had we known the risk, we would have acted earlier [the team was reviewing the new policy]",
-        "Hätten wir das Risiko gekannt, hätten wir früher gehandelt [das Team die neue Regelung prüfte]"
+        "Had [subject] [past participle], [subject] would/could/might have [past participle].",
+        "Hätte/Wäre [Subjekt] ... [Partizip II], hätte/wäre [Subjekt] ... [Partizip II]."
       ],
       "gen": {
         "status": "curated",

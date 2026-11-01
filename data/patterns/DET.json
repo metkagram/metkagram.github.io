@@ -386,85 +386,85 @@
       "id": "GRMDET021",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Ни одно из предложений не даёт полного решения",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «ни одно из предложений не даёт полного решения» в живом контексте.",
+      "title_ru": "Ни один из двух вариантов",
+      "metaphor_ru": "Neither относится строго к двум предметам или людям; в стандартном английском после него обычно стоит глагол в единственном числе. В немецком выбирайте keiner/keine/keines der beiden по роду существительного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Neither proposal offers a complete solution [the team was reviewing the new policy]",
-          "example": "Neither proposal offers a complete solution in a situation where the team was reviewing the new policy.",
-          "translation": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику.",
+          "formula": "Neither [singular noun] [singular verb] ... / Neither of the two [plural nouns] [singular verb] ...",
+          "example": "Neither route is safe after heavy rain.",
+          "translation": "После сильного дождя ни один из двух маршрутов не безопасен.",
           "examples": [
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику."
+              "text": "Neither route is safe after heavy rain.",
+              "translation_ru": "После сильного дождя ни один из двух маршрутов не безопасен."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Neither candidate has enough experience to lead the workshop alone.",
+              "translation_ru": "Ни у одного из двух кандидатов нет достаточного опыта, чтобы самостоятельно вести занятие."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Neither explanation accounts for the sudden drop in temperature.",
+              "translation_ru": "Ни одно из двух объяснений не объясняет резкого похолодания."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Neither child wants to miss the school play.",
+              "translation_ru": "Ни один из двух детей не хочет пропустить школьный спектакль."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где расписание изменили в последний момент."
+              "text": "Neither device works without an internet connection.",
+              "translation_ru": "Ни одно из двух устройств не работает без подключения к интернету."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Neither suggestion addresses the neighbours' concerns about noise.",
+              "translation_ru": "Ни одно из двух предложений не учитывает жалобы соседей на шум."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где участники ждали объяснения."
+              "text": "Neither answer tells us how the mistake occurred.",
+              "translation_ru": "Ни один из двух ответов не объясняет, как возникла ошибка."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Keiner der beiden Vorschläge bietet eine vollständige Lösung [das Team die neue Regelung prüfte]",
-          "example": "Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику.",
+          "formula": "Keiner/Keine/Keines der beiden [Pluralnomen] [Singularverb] ...",
+          "example": "Keiner der beiden Wege ist nach starkem Regen sicher.",
+          "translation": "После сильного дождя ни один из двух маршрутов не безопасен.",
           "examples": [
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику."
+              "text": "Keiner der beiden Wege ist nach starkem Regen sicher.",
+              "translation_ru": "После сильного дождя ни один из двух маршрутов не безопасен."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Keiner der beiden Bewerber hat genug Erfahrung, um den Workshop allein zu leiten.",
+              "translation_ru": "Ни у одного из двух кандидатов нет достаточного опыта, чтобы самостоятельно вести занятие."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Keine der beiden Erklärungen kann den plötzlichen Temperaturabfall erklären.",
+              "translation_ru": "Ни одно из двух объяснений не объясняет резкого похолодания."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Keines der beiden Kinder möchte das Schultheaterstück verpassen.",
+              "translation_ru": "Ни один из двух детей не хочет пропустить школьный спектакль."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где расписание изменили в последний момент."
+              "text": "Keines der beiden Geräte funktioniert ohne Internetverbindung.",
+              "translation_ru": "Ни одно из двух устройств не работает без подключения к интернету."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Keiner der beiden Vorschläge geht auf die Lärmsorgen der Nachbarn ein.",
+              "translation_ru": "Ни одно из двух предложений не учитывает жалобы соседей на шум."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где участники ждали объяснения."
+              "text": "Keine der beiden Antworten erklärt, wie es zu dem Fehler kam.",
+              "translation_ru": "Ни один из двух ответов не объясняет, как возникла ошибка."
             }
           ]
         }
       ],
       "formulas": [
-        "Neither proposal offers a complete solution [the team was reviewing the new policy]",
-        "Keiner der beiden Vorschläge bietet eine vollständige Lösung [das Team die neue Regelung prüfte]"
+        "Neither [singular noun] [singular verb] ... / Neither of the two [plural nouns] [singular verb] ...",
+        "Keiner/Keine/Keines der beiden [Pluralnomen] [Singularverb] ..."
       ],
       "gen": {
         "status": "curated",
