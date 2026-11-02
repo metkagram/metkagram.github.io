@@ -101,85 +101,85 @@
       "id": "QSTQACA011",
       "group_id": "QACA",
       "set_id": "QACA",
-      "title_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как мы могли бы проверить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Предложить способ проверки утверждения",
+      "metaphor_ru": "Вопрос How could we test the claim that требует проверяемого утверждения и обсуждения метода, а не впечатления. Немецкое eine Behauptung überprüfen передаёт ту же исследовательскую задачу.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How could we test whether [the team needs another day to decide]?",
-          "example": "How could we test whether the team needs another day to decide?",
-          "translation": "Как мы могли бы проверить, команде нужен ещё день для решения?",
+          "formula": "How could we test the claim that [X]?",
+          "example": "How could we test the claim that a shorter commute improves sleep?",
+          "translation": "Как мы могли бы проверить утверждение, что более короткая дорога на работу улучшает сон?",
           "examples": [
             {
-              "text": "**How could we test whether the team needs another day to decide?**",
-              "translation_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?"
+              "text": "How could we test the claim that a shorter commute improves sleep?",
+              "translation_ru": "Как мы могли бы проверить утверждение, что более короткая дорога на работу улучшает сон?"
             },
             {
-              "text": "**How could we test whether the revised plan has not been shared yet?**",
-              "translation_ru": "Как мы могли бы проверить, обновлённым планом ещё не поделились?"
+              "text": "How could we test the claim that this water filter removes microplastics?",
+              "translation_ru": "Как проверить утверждение, что этот фильтр удаляет микропластик из воды?"
             },
             {
-              "text": "**How could we test whether we should compare the two options?**",
-              "translation_ru": "Как мы могли бы проверить, нам следует сравнить два варианта?"
+              "text": "How could we test the claim that people remember instructions better when they explain them aloud?",
+              "translation_ru": "Как проверить утверждение, что люди лучше запоминают инструкции, когда объясняют их вслух?"
             },
             {
-              "text": "**How could we test whether the client asked for more detail?**",
-              "translation_ru": "Как мы могли бы проверить, клиент попросил больше деталей?"
+              "text": "How could we test the claim that the bike lane has reduced traffic accidents?",
+              "translation_ru": "Как проверить утверждение, что велодорожка сократила число ДТП?"
             },
             {
-              "text": "**How could we test whether the pilot may continue next month?**",
-              "translation_ru": "Как мы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "How could we test the claim that older phones use less power in airplane mode?",
+              "translation_ru": "Как проверить утверждение, что старые телефоны тратят меньше энергии в авиарежиме?"
             },
             {
-              "text": "**How could we test whether the data need another check?**",
-              "translation_ru": "Как мы могли бы проверить, данные нужно проверить ещё раз?"
+              "text": "How could we test the claim that bread made with this recipe stays fresh longer?",
+              "translation_ru": "Как проверить утверждение, что хлеб по этому рецепту дольше остаётся свежим?"
             },
             {
-              "text": "**How could we test whether the meeting was moved?**",
-              "translation_ru": "Как мы могли бы проверить, встречу перенесли?"
+              "text": "How could we test the claim that reading together helps children learn new words?",
+              "translation_ru": "Как проверить утверждение, что совместное чтение помогает детям учить новые слова?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie könnten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie könnten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как мы могли бы проверить, команде нужен ещё день для решения?",
+          "formula": "Wie könnten wir die Behauptung überprüfen, dass [X]?",
+          "example": "Wie könnten wir die Behauptung überprüfen, dass ein kürzerer Arbeitsweg den Schlaf verbessert?",
+          "translation": "Как проверить утверждение, что более короткая дорога на работу улучшает сон?",
           "examples": [
             {
-              "text": "**Wie könnten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass ein kürzerer Arbeitsweg den Schlaf verbessert?",
+              "translation_ru": "Как проверить утверждение, что более короткая дорога на работу улучшает сон?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как мы могли бы проверить, обновлённым планом ещё не поделились?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass dieser Wasserfilter Mikroplastik entfernt?",
+              "translation_ru": "Как можно проверить, действительно ли этот фильтр удаляет микропластик?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как мы могли бы проверить, нам следует сравнить два варианта?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass sich Menschen Anweisungen besser merken, wenn sie sie laut erklären?",
+              "translation_ru": "Как проверить утверждение, что инструкции лучше запоминаются при объяснении вслух?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как мы могли бы проверить, клиент попросил больше деталей?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass der Radweg die Zahl der Verkehrsunfälle gesenkt hat?",
+              "translation_ru": "Как проверить утверждение, что благодаря велодорожке стало меньше аварий?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как мы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass ältere Handys im Flugmodus weniger Strom verbrauchen?",
+              "translation_ru": "Как проверить утверждение, что старые телефоны потребляют меньше энергии в режиме полёта?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как мы могли бы проверить, данные нужно проверить ещё раз?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass Brot nach diesem Rezept länger frisch bleibt?",
+              "translation_ru": "Как проверить утверждение, что хлеб по этому рецепту дольше не черствеет?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Как мы могли бы проверить, встречу перенесли?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass gemeinsames Lesen Kindern hilft, neue Wörter zu lernen?",
+              "translation_ru": "Как проверить утверждение, что чтение вместе со взрослыми помогает детям усваивать новые слова?"
             }
           ]
         }
       ],
       "formulas": [
-        "How could we test whether [the team needs another day to decide]?",
-        "Wie könnten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How could we test the claim that [X]?",
+        "Wie könnten wir die Behauptung überprüfen, dass [X]?"
       ],
       "gen": {
         "status": "curated",

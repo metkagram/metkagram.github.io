@@ -6,85 +6,85 @@
       "id": "QSTQOBJ001",
       "group_id": "QOBJ",
       "set_id": "QOBJ",
-      "title_ru": "Что мы знаем о том, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что мы знаем о том, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Отделить известные факты от предположений",
+      "metaphor_ru": "What do we actually know about вводит предмет вопроса и возвращает разговор от слухов к проверенным сведениям. Немецкое eigentlich выполняет сходную разговорную функцию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What do we know about the fact that [the team needs another day to decide]?",
-          "example": "What do we know about the fact that the team needs another day to decide?",
-          "translation": "Что мы знаем о том, что команде нужен ещё день для решения?",
+          "formula": "What do we actually know about [X]?",
+          "example": "What do we actually know about the cause of the water leak?",
+          "translation": "Что мы вообще знаем о причине протечки?",
           "examples": [
             {
-              "text": "**What do we know about the fact that the team needs another day to decide?**",
-              "translation_ru": "Что мы знаем о том, что команде нужен ещё день для решения?"
+              "text": "What do we actually know about the cause of the water leak?",
+              "translation_ru": "Что мы вообще знаем о причине протечки?"
             },
             {
-              "text": "**What do we know about the fact that the revised plan has not been shared yet?**",
-              "translation_ru": "Что мы знаем о том, что обновлённым планом ещё не поделились?"
+              "text": "What do we actually know about the effects of this medicine on sleep?",
+              "translation_ru": "Что мы на самом деле знаем о влиянии этого лекарства на сон?"
             },
             {
-              "text": "**What do we know about the fact that we should compare the two options?**",
-              "translation_ru": "Что мы знаем о том, что нам следует сравнить два варианта?"
+              "text": "What do we actually know about the people who built this bridge?",
+              "translation_ru": "Что мы действительно знаем о людях, построивших этот мост?"
             },
             {
-              "text": "**What do we know about the fact that the client asked for more detail?**",
-              "translation_ru": "Что мы знаем о том, что клиент попросил больше деталей?"
+              "text": "What do we actually know about the new school's admission rules?",
+              "translation_ru": "Что нам точно известно о правилах приёма в новую школу?"
             },
             {
-              "text": "**What do we know about the fact that the pilot may continue next month?**",
-              "translation_ru": "Что мы знаем о том, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "What do we actually know about the risks of storing photos in the cloud?",
+              "translation_ru": "Что нам действительно известно о рисках хранения фотографий в облаке?"
             },
             {
-              "text": "**What do we know about the fact that the data need another check?**",
-              "translation_ru": "Что мы знаем о том, что данные нужно проверить ещё раз?"
+              "text": "What do we actually know about her reasons for leaving?",
+              "translation_ru": "Что мы вообще знаем о причинах её ухода?"
             },
             {
-              "text": "**What do we know about the fact that the meeting was moved?**",
-              "translation_ru": "Что мы знаем о том, что встречу перенесли?"
+              "text": "What do we actually know about life in that village a century ago?",
+              "translation_ru": "Что нам известно о жизни в той деревне сто лет назад?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was wissen wir darüber, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was wissen wir darüber, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что мы знаем о том, что команде нужен ещё день для решения?",
+          "formula": "Was wissen wir eigentlich über [X]?",
+          "example": "Was wissen wir eigentlich über die Ursache des Wasserlecks?",
+          "translation": "Что нам действительно известно о причине протечки?",
           "examples": [
             {
-              "text": "**Was wissen wir darüber, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что мы знаем о том, что команде нужен ещё день для решения?"
+              "text": "Was wissen wir eigentlich über die Ursache des Wasserlecks?",
+              "translation_ru": "Что нам действительно известно о причине протечки?"
             },
             {
-              "text": "**Was wissen wir darüber, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что мы знаем о том, что обновлённым планом ещё не поделились?"
+              "text": "Was wissen wir eigentlich über die Wirkung dieses Medikaments auf den Schlaf?",
+              "translation_ru": "Что нам известно о влиянии этого препарата на сон?"
             },
             {
-              "text": "**Was wissen wir darüber, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что мы знаем о том, что нам следует сравнить два варианта?"
+              "text": "Was wissen wir eigentlich über die Menschen, die diese Brücke gebaut haben?",
+              "translation_ru": "Что мы знаем о людях, которые построили этот мост?"
             },
             {
-              "text": "**Was wissen wir darüber, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что мы знаем о том, что клиент попросил больше деталей?"
+              "text": "Was wissen wir eigentlich über die Aufnahmebedingungen der neuen Schule?",
+              "translation_ru": "Что мы на самом деле знаем об условиях приёма в новую школу?"
             },
             {
-              "text": "**Was wissen wir darüber, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что мы знаем о том, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Was wissen wir eigentlich über die Risiken der Speicherung von Fotos in der Cloud?",
+              "translation_ru": "Что мы точно знаем о рисках хранения фотографий в облачном сервисе?"
             },
             {
-              "text": "**Was wissen wir darüber, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что мы знаем о том, что данные нужно проверить ещё раз?"
+              "text": "Was wissen wir eigentlich über ihre Gründe für den Weggang?",
+              "translation_ru": "Что мы на самом деле знаем о том, почему она ушла?"
             },
             {
-              "text": "**Was wissen wir darüber, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Что мы знаем о том, что встречу перенесли?"
+              "text": "Was wissen wir eigentlich über das Leben in diesem Dorf vor hundert Jahren?",
+              "translation_ru": "Что нам действительно известно о жизни в этой деревне сто лет назад?"
             }
           ]
         }
       ],
       "formulas": [
-        "What do we know about the fact that [the team needs another day to decide]?",
-        "Was wissen wir darüber, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What do we actually know about [X]?",
+        "Was wissen wir eigentlich über [X]?"
       ],
       "gen": {
         "status": "curated",
