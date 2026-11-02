@@ -318,7 +318,8 @@ test("every generated page carries the current brand and discoverability metadat
     if (html.includes('http-equiv="refresh"')) continue;
     const relative = path.relative(DIST, file).replaceAll(path.sep, "/");
     const isRoot = relative === "index.html";
-    const isErrorSurface = relative === "404.html";
+    // The PWA offline fallback is a noindex recovery page, never a canonical learning route.
+    const isErrorSurface = relative === "404.html" || relative === "offline.html";
     assert.match(html, /<title>[^<]+<\/title>/, `${file} needs a title`);
     assert.match(html, /<meta name="description" content="[^"]+">/, `${file} needs a description`);
     assert.match(html, /<meta name="robots" content="(?:index,follow|max-image-preview|noindex,follow)/, `${file} needs crawl directives`);
@@ -326,7 +327,7 @@ test("every generated page carries the current brand and discoverability metadat
       assert.match(html, /<meta name="robots" content="noindex,follow">/, `${file} must stay noindex`);
       assert.doesNotMatch(html, /rel="canonical"/, `${file} must not advertise canonical content`);
       assert.doesNotMatch(html, /property="og:url"/, `${file} must not advertise a social canonical URL`);
-      assert.doesNotMatch(html, /application\/ld\+json/, `${file} must not expose structured page identity`);
+      assert.doesNotMatch(html, /<script\b[^>]*type="application\/ld\+json"/, `${file} must not expose structured page identity`);
       continue;
     }
     assert.match(html, /rel="canonical" href="https:\/\/metkagram\.github\.io\//, `${file} needs a production canonical`);
