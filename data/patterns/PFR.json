@@ -6,85 +6,85 @@
       "id": "FUNPFR001",
       "group_id": "PFR",
       "set_id": "PFR",
-      "title_ru": "Я бы предпочёл(а), чтобы команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «предпочтения и выбор» в живом контексте.",
+      "title_ru": "Вежливо выразить предпочтение относительно чужого действия",
+      "metaphor_ru": "Мягко предложить, чтобы ситуация развивалась иначе. В английском после I'd prefer it if обычно используется Past Simple, хотя речь может идти о будущем; в немецком естественен Konjunktiv II.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I would prefer it if [the team needs another day to decide].",
-          "example": "I would prefer it if the team needs another day to decide.",
-          "translation": "Я бы предпочёл(а), чтобы команде нужен ещё день для решения.",
+          "formula": "I'd prefer it if [subject + past simple / didn't + verb].",
+          "example": "I'd prefer it if we took the back roads to avoid traffic.",
+          "translation": "Я бы предпочёл, чтобы мы поехали по второстепенным дорогам и избежали пробок.",
           "examples": [
             {
-              "text": "**I would prefer it if the team needs another day to decide.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы команде нужен ещё день для решения."
+              "text": "**I'd prefer it if we took the back roads to avoid traffic.**",
+              "translation_ru": "Я бы предпочёл, чтобы мы поехали по второстепенным дорогам и избежали пробок."
             },
             {
-              "text": "**I would prefer it if the revised plan has not been shared yet.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы обновлённым планом ещё не поделились."
+              "text": "**She'd prefer it if you asked before sharing her photo.**",
+              "translation_ru": "Она предпочла бы, чтобы ты спросил разрешения, прежде чем делиться её фотографией."
             },
             {
-              "text": "**I would prefer it if we should compare the two options.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы нам следует сравнить два варианта."
+              "text": "**We'd prefer it if the landlord repaired the heating before winter.**",
+              "translation_ru": "Мы бы предпочли, чтобы хозяин квартиры починил отопление до зимы."
             },
             {
-              "text": "**I would prefer it if the client asked for more detail.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы клиент попросил больше деталей."
+              "text": "**He'd prefer it if the teacher gave him feedback in private.**",
+              "translation_ru": "Ему было бы комфортнее получать обратную связь от преподавателя наедине."
             },
             {
-              "text": "**I would prefer it if the pilot may continue next month.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы пилотный проект может продолжиться в следующем месяце."
+              "text": "**I'd prefer it if the app didn't request my location every time.**",
+              "translation_ru": "Я бы предпочёл, чтобы приложение не запрашивало моё местоположение каждый раз."
             },
             {
-              "text": "**I would prefer it if the data need another check.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы данные нужно проверить ещё раз."
+              "text": "**Our neighbours would prefer it if we finished the noisy work by six.**",
+              "translation_ru": "Наши соседи предпочли бы, чтобы мы заканчивали шумные работы к шести."
             },
             {
-              "text": "**I would prefer it if the meeting was moved.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы встречу перенесли."
+              "text": "**I'd prefer it if we discussed the evidence before drawing conclusions.**",
+              "translation_ru": "Я бы предпочёл, чтобы мы обсудили доказательства, прежде чем делать выводы."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich würde es vorziehen, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Ich würde es vorziehen, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Я бы предпочёл(а), чтобы команде нужен ещё день для решения.",
+          "formula": "Mir/Uns wäre lieber, wenn [subject + Konjunktiv II / würde + Infinitiv].",
+          "example": "Mir wäre lieber, wenn wir über die Nebenstraßen fahren würden, um dem Verkehr auszuweichen.",
+          "translation": "Я бы предпочёл, чтобы мы поехали по второстепенным дорогам и избежали пробок.",
           "examples": [
             {
-              "text": "**Ich würde es vorziehen, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы команде нужен ещё день для решения."
+              "text": "**Mir wäre lieber, wenn wir über die Nebenstraßen fahren würden, um dem Verkehr auszuweichen.**",
+              "translation_ru": "Я бы предпочёл, чтобы мы поехали по второстепенным дорогам и избежали пробок."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы обновлённым планом ещё не поделились."
+              "text": "**Ihr wäre lieber, wenn du sie fragen würdest, bevor du ihr Foto teilst.**",
+              "translation_ru": "Она предпочла бы, чтобы ты спросил разрешения, прежде чем делиться её фотографией."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы нам следует сравнить два варианта."
+              "text": "**Uns wäre lieber, wenn der Vermieter die Heizung noch vor dem Winter reparieren würde.**",
+              "translation_ru": "Мы бы предпочли, чтобы хозяин квартиры починил отопление до зимы."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы клиент попросил больше деталей."
+              "text": "**Ihm wäre lieber, wenn die Lehrerin ihm unter vier Augen Rückmeldung geben würde.**",
+              "translation_ru": "Ему было бы комфортнее получать обратную связь от преподавателя наедине."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы пилотный проект может продолжиться в следующем месяце."
+              "text": "**Mir wäre lieber, wenn die App nicht jedes Mal meinen Standort abfragen würde.**",
+              "translation_ru": "Я бы предпочёл, чтобы приложение не запрашивало моё местоположение каждый раз."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы данные нужно проверить ещё раз."
+              "text": "**Unseren Nachbarn wäre lieber, wenn wir die lauten Arbeiten bis sechs erledigen würden.**",
+              "translation_ru": "Наши соседи предпочли бы, чтобы мы заканчивали шумные работы к шести."
             },
             {
-              "text": "**Ich würde es vorziehen, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Я бы предпочёл(а), чтобы встречу перенесли."
+              "text": "**Mir wäre lieber, wenn wir die Belege besprechen würden, bevor wir Schlussfolgerungen ziehen.**",
+              "translation_ru": "Я бы предпочёл, чтобы мы обсудили доказательства, прежде чем делать выводы."
             }
           ]
         }
       ],
       "formulas": [
-        "I would prefer it if [the team needs another day to decide].",
-        "Ich würde es vorziehen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "I'd prefer it if [subject + past simple / didn't + verb].",
+        "Mir/Uns wäre lieber, wenn [subject + Konjunktiv II / würde + Infinitiv]."
       ],
       "gen": {
         "status": "curated",

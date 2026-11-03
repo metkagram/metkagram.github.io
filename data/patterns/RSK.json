@@ -101,85 +101,85 @@
       "id": "FUNRSK011",
       "group_id": "RSK",
       "set_id": "RSK",
-      "title_ru": "Чтобы снизить риск, нам следует проверить, команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «риск и меры предосторожности» в живом контексте.",
+      "title_ru": "Назвать конкретный риск и меру его снижения",
+      "metaphor_ru": "Говорите не об абстрактном риске, а о вероятном нежелательном событии и проверяемой мере предосторожности. Английское of требует существительного или -ing; немецкое um ... zu выражает цель.",
       "langs": [
         {
           "lang": "en",
-          "formula": "To reduce the risk, we should check whether [the team needs another day to decide].",
-          "example": "To reduce the risk, we should check whether the team needs another day to decide.",
-          "translation": "Чтобы снизить риск, нам следует проверить, команде нужен ещё день для решения.",
+          "formula": "To reduce the risk of [noun / -ing], [specific precaution].",
+          "example": "To reduce the risk of losing our holiday photos, we keep a copy on an external drive.",
+          "translation": "Чтобы не потерять фотографии из отпуска, мы храним копию на внешнем диске.",
           "examples": [
             {
-              "text": "**To reduce the risk, we should check whether the team needs another day to decide.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, команде нужен ещё день для решения."
+              "text": "**To reduce the risk of losing our holiday photos, we keep a copy on an external drive.**",
+              "translation_ru": "Чтобы не потерять фотографии из отпуска, мы храним копию на внешнем диске."
             },
             {
-              "text": "**To reduce the risk, we should check whether the revised plan has not been shared yet.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, обновлённым планом ещё не поделились."
+              "text": "**To reduce the risk of a fall, Dad installed a handrail beside the stairs.**",
+              "translation_ru": "Чтобы снизить риск падения, папа установил поручень у лестницы."
             },
             {
-              "text": "**To reduce the risk, we should check whether we should compare the two options.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, нам следует сравнить два варианта."
+              "text": "**To reduce the risk of misunderstandings, let's confirm the meeting place in writing.**",
+              "translation_ru": "Чтобы избежать недоразумений, давай письменно подтвердим место встречи."
             },
             {
-              "text": "**To reduce the risk, we should check whether the client asked for more detail.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, клиент попросил больше деталей."
+              "text": "**To reduce the risk of biased results, the researchers reviewed the answers anonymously.**",
+              "translation_ru": "Чтобы снизить риск необъективных результатов, исследователи изучили ответы без имён участников."
             },
             {
-              "text": "**To reduce the risk, we should check whether the pilot may continue next month.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**To reduce the risk of burns, let the pan cool before washing it.**",
+              "translation_ru": "Чтобы не обжечься, дай сковороде остыть перед мытьём."
             },
             {
-              "text": "**To reduce the risk, we should check whether the data need another check.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, данные нужно проверить ещё раз."
+              "text": "**To reduce the risk of a rushed decision, she asked for another day to think.**",
+              "translation_ru": "Чтобы не принимать поспешное решение, она попросила ещё день на размышление."
             },
             {
-              "text": "**To reduce the risk, we should check whether the meeting was moved.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, встречу перенесли."
+              "text": "**To reduce the risk of missing the deadline, we set a reminder a week in advance.**",
+              "translation_ru": "Чтобы не пропустить срок, мы поставили напоминание за неделю."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Um das Risiko zu verringern, sollten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Um das Risiko zu verringern, sollten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Чтобы снизить риск, нам следует проверить, команде нужен ещё день для решения.",
+          "formula": "Um [das Risiko / konkrete Gefahr] zu verringern, [konkrete Maßnahme].",
+          "example": "Um das Risiko eines Datenverlusts zu verringern, speichern wir unsere Urlaubsfotos zusätzlich auf einer externen Festplatte.",
+          "translation": "Чтобы не потерять фотографии из отпуска, мы храним копию на внешнем диске.",
           "examples": [
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, команде нужен ещё день для решения."
+              "text": "**Um das Risiko eines Datenverlusts zu verringern, speichern wir unsere Urlaubsfotos zusätzlich auf einer externen Festplatte.**",
+              "translation_ru": "Чтобы не потерять фотографии из отпуска, мы храним копию на внешнем диске."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, обновлённым планом ещё не поделились."
+              "text": "**Um die Sturzgefahr zu verringern, hat mein Vater ein Geländer an der Treppe angebracht.**",
+              "translation_ru": "Чтобы снизить риск падения, папа установил поручень у лестницы."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, нам следует сравнить два варианта."
+              "text": "**Um das Risiko von Missverständnissen zu verringern, sollten wir den Treffpunkt schriftlich bestätigen.**",
+              "translation_ru": "Чтобы избежать недоразумений, давай письменно подтвердим место встречи."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, клиент попросил больше деталей."
+              "text": "**Um das Risiko verzerrter Ergebnisse zu verringern, werteten die Forschenden die Antworten anonym aus.**",
+              "translation_ru": "Чтобы снизить риск необъективных результатов, исследователи изучили ответы без имён участников."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**Um die Verbrennungsgefahr zu verringern, lass die Pfanne vor dem Abwaschen abkühlen.**",
+              "translation_ru": "Чтобы не обжечься, дай сковороде остыть перед мытьём."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, данные нужно проверить ещё раз."
+              "text": "**Um das Risiko einer übereilten Entscheidung zu verringern, bat sie um einen weiteren Tag Bedenkzeit.**",
+              "translation_ru": "Чтобы не принимать поспешное решение, она попросила ещё день на размышление."
             },
             {
-              "text": "**Um das Risiko zu verringern, sollten wir prüfen, ob die Sitzung verschoben wurde.**",
-              "translation_ru": "Чтобы снизить риск, нам следует проверить, встречу перенесли."
+              "text": "**Um das Risiko einer verpassten Frist zu verringern, richten wir eine Woche vorher eine Erinnerung ein.**",
+              "translation_ru": "Чтобы не пропустить срок, мы поставили напоминание за неделю."
             }
           ]
         }
       ],
       "formulas": [
-        "To reduce the risk, we should check whether [the team needs another day to decide].",
-        "Um das Risiko zu verringern, sollten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "To reduce the risk of [noun / -ing], [specific precaution].",
+        "Um [das Risiko / konkrete Gefahr] zu verringern, [konkrete Maßnahme]."
       ],
       "gen": {
         "status": "curated",
