@@ -6,85 +6,85 @@
       "id": "QSTQDEC001",
       "group_id": "QDEC",
       "set_id": "QDEC",
-      "title_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какое решение было бы уместно, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить о справедливом решении при ограничениях",
+      "metaphor_ru": "Вместо абстрактного «что решить?» уточняйте конкретную проблему и ограничение: what would be a fair way to ... if ...? В немецком используйте естественное wie ließe sich ... fair ...? Это вопрос о критерии справедливости, а не готовый ответ.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What decision would be appropriate if [the team needs another day to decide]?",
-          "example": "What decision would be appropriate if the team needs another day to decide?",
-          "translation": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
+          "formula": "What would be a fair way to [do X] if [constraint]? / How could we [act] fairly if [constraint]?",
+          "example": "What would be a fair way to divide the chores if one of us works night shifts?",
+          "translation": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?",
           "examples": [
             {
-              "text": "**What decision would be appropriate if the team needs another day to decide?**",
-              "translation_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?"
+              "text": "**What would be a fair way to divide the chores if one of us works night shifts?**",
+              "translation_ru": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?"
             },
             {
-              "text": "**What decision would be appropriate if the revised plan has not been shared yet?**",
-              "translation_ru": "Какое решение было бы уместно, если обновлённым планом ещё не поделились?"
+              "text": "**How could we allocate the rehearsal space fairly if three bands need it on Fridays?**",
+              "translation_ru": "Как честно распределить репетиционное помещение, если оно нужно трём группам по пятницам?"
             },
             {
-              "text": "**What decision would be appropriate if we should compare the two options?**",
-              "translation_ru": "Какое решение было бы уместно, если нам следует сравнить два варианта?"
+              "text": "**What would be a fair response if half the concert was cancelled?**",
+              "translation_ru": "Какое решение было бы справедливым, если половину концерта отменили?"
             },
             {
-              "text": "**What decision would be appropriate if the client asked for more detail?**",
-              "translation_ru": "Какое решение было бы уместно, если клиент попросил больше деталей?"
+              "text": "**How could we fairly decide who speaks first if both groups want the floor?**",
+              "translation_ru": "Как справедливо решить, кто выступает первым, если обе группы хотят высказаться?"
             },
             {
-              "text": "**What decision would be appropriate if the pilot may continue next month?**",
-              "translation_ru": "Какое решение было бы уместно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**How should we divide the community garden plots fairly if demand exceeds the space available?**",
+              "translation_ru": "Как разделить грядки в общественном саду, если места на всех не хватает?"
             },
             {
-              "text": "**What decision would be appropriate if the data need another check?**",
-              "translation_ru": "Какое решение было бы уместно, если данные нужно проверить ещё раз?"
+              "text": "**What's a fair way to handle the noise complaint if the building has no clear rules?**",
+              "translation_ru": "Как справедливо разобраться с жалобой на шум, если в доме нет чётких правил?"
             },
             {
-              "text": "**What decision would be appropriate if the meeting was moved?**",
-              "translation_ru": "Какое решение было бы уместно, если встречу перенесли?"
+              "text": "**How can we assess the applicants fairly when some couldn't afford extra courses?**",
+              "translation_ru": "Как объективно оценить кандидатов, если некоторые не могли позволить себе дополнительные курсы?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welche Entscheidung wäre angemessen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welche Entscheidung wäre angemessen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
+          "formula": "Wie ließe sich [X] fair [Verb], wenn [Bedingung]? / Wie könnten wir [X] fair [Verb]?",
+          "example": "Wie ließen sich die Hausarbeiten fair aufteilen, wenn einer von uns Nachtschicht hat?",
+          "translation": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?",
           "examples": [
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?"
+              "text": "**Wie ließen sich die Hausarbeiten fair aufteilen, wenn einer von uns Nachtschicht hat?**",
+              "translation_ru": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какое решение было бы уместно, если обновлённым планом ещё не поделились?"
+              "text": "**Wie könnten wir die Proberäume fair vergeben, wenn drei Bands sie freitags brauchen?**",
+              "translation_ru": "Как честно распределить репетиционное помещение, если оно нужно трём группам по пятницам?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какое решение было бы уместно, если нам следует сравнить два варианта?"
+              "text": "**Was wäre eine faire Lösung, wenn die Hälfte des Konzerts ausgefallen ist?**",
+              "translation_ru": "Какое решение было бы справедливым, если половину концерта отменили?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какое решение было бы уместно, если клиент попросил больше деталей?"
+              "text": "**Wie könnten wir fair entscheiden, wer zuerst spricht, wenn beide Gruppen das Wort ergreifen möchten?**",
+              "translation_ru": "Как справедливо решить, кто выступает первым, если обе группы хотят высказаться?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какое решение было бы уместно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wie ließen sich die Beete im Gemeinschaftsgarten gerecht verteilen, wenn der Platz nicht für alle reicht?**",
+              "translation_ru": "Как разделить грядки в общественном саду, если места на всех не хватает?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какое решение было бы уместно, если данные нужно проверить ещё раз?"
+              "text": "**Wie könnten wir mit der Lärmbeschwerde fair umgehen, wenn es im Haus keine klaren Regeln gibt?**",
+              "translation_ru": "Как справедливо разобраться с жалобой на шум, если в доме нет чётких правил?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Какое решение было бы уместно, если встречу перенесли?"
+              "text": "**Wie können wir die Bewerber fair beurteilen, wenn sich manche keine zusätzlichen Kurse leisten konnten?**",
+              "translation_ru": "Как объективно оценить кандидатов, если некоторые не могли позволить себе дополнительные курсы?"
             }
           ]
         }
       ],
       "formulas": [
-        "What decision would be appropriate if [the team needs another day to decide]?",
-        "Welche Entscheidung wäre angemessen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would be a fair way to [do X] if [constraint]? / How could we [act] fairly if [constraint]?",
+        "Wie ließe sich [X] fair [Verb], wenn [Bedingung]? / Wie könnten wir [X] fair [Verb]?"
       ],
       "gen": {
         "status": "curated",

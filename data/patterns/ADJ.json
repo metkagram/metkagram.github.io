@@ -576,85 +576,85 @@
       "id": "GRMADJ031",
       "group_id": "ADJ",
       "set_id": "ADJ",
-      "title_ru": "Они выбрали наименее рискованную альтернативу",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «они выбрали наименее рискованную альтернативу» в живом контексте.",
+      "title_ru": "Выбрать наименее затратный или сложный вариант",
+      "metaphor_ru": "Выделяйте вариант с минимальной выраженностью признака: английское the least + adjective, немецкое am wenigsten + Adjektiv или естественная превосходная степень. Сравнивайте варианты по ясному критерию, а не повторяйте одну готовую фразу.",
       "langs": [
         {
           "lang": "en",
-          "formula": "They chose the least risky alternative [the team was reviewing the new policy]",
-          "example": "They chose the least risky alternative in a situation where the team was reviewing the new policy.",
-          "translation": "Они выбрали наименее рискованную альтернативу в ситуации, где команда проверяла новую политику.",
+          "formula": "the least [adjective] [noun] / be the least [adjective]",
+          "example": "For a first hike with the children, we chose the least demanding route.",
+          "translation": "Для первого похода с детьми мы выбрали самый лёгкий маршрут.",
           "examples": [
             {
-              "text": "**They chose the least risky alternative in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где команда проверяла новую политику."
+              "text": "**For a first hike with the children, we chose the least demanding route.**",
+              "translation_ru": "Для первого похода с детьми мы выбрали самый лёгкий маршрут."
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Of the three explanations, hers was the least convincing.**",
+              "translation_ru": "Из трёх объяснений её версия была наименее убедительной."
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**We need the least disruptive way to repair the lift while residents are at home.**",
+              "translation_ru": "Нам нужен такой способ починить лифт, который доставит жильцам минимум неудобств."
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**We chose the least wasteful packaging even though it cost a little more.**",
+              "translation_ru": "Мы выбрали упаковку с наименьшим количеством отходов, хотя она стоила чуть дороже."
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где расписание изменили в последний момент."
+              "text": "**Would the least expensive repair still be safe in winter?**",
+              "translation_ru": "Будет ли самый недорогой ремонт безопасным и зимой?"
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**The second draft is the least formal, but it sounds the most sincere.**",
+              "translation_ru": "Второй вариант текста наименее официальный, зато звучит искреннее всего."
             },
             {
-              "text": "**They chose the least risky alternative in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где участники ждали объяснения."
+              "text": "**Let's start with the least controversial proposal and return to the others later.**",
+              "translation_ru": "Давай начнём с предложения, вызывающего меньше всего споров, а к остальным вернёмся позже."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie wählten die am wenigsten riskante Alternative [das Team die neue Regelung prüfte]",
-          "example": "Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Они выбрали наименее рискованную альтернативу в ситуации, где команда проверяла новую политику.",
+          "formula": "der/die/das am wenigsten [Adjektiv] [Nomen] / am wenigsten [Adjektiv] / [Superlativ]",
+          "example": "Für die erste Wanderung mit den Kindern wählten wir die einfachste Strecke.",
+          "translation": "Для первого похода с детьми мы выбрали самый лёгкий маршрут.",
           "examples": [
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где команда проверяла новую политику."
+              "text": "**Für die erste Wanderung mit den Kindern wählten wir die einfachste Strecke.**",
+              "translation_ru": "Для первого похода с детьми мы выбрали самый лёгкий маршрут."
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Von den drei Erklärungen war ihre am wenigsten überzeugend.**",
+              "translation_ru": "Из трёх объяснений её версия была наименее убедительной."
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Wir suchen die am wenigsten störende Lösung für die Aufzugsreparatur, solange die Bewohner zu Hause sind.**",
+              "translation_ru": "Нам нужен такой способ починить лифт, который доставит жильцам минимум неудобств."
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Wir entschieden uns trotz des etwas höheren Preises für die Verpackung, bei der am wenigsten Abfall anfällt.**",
+              "translation_ru": "Мы выбрали упаковку с наименьшим количеством отходов, хотя она стоила чуть дороже."
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где расписание изменили в последний момент."
+              "text": "**Wäre die günstigste Reparatur auch im Winter noch sicher?**",
+              "translation_ru": "Будет ли самый недорогой ремонт безопасным и зимой?"
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Der zweite Entwurf ist am wenigsten förmlich, klingt aber am aufrichtigsten.**",
+              "translation_ru": "Второй вариант текста наименее официальный, зато звучит искреннее всего."
             },
             {
-              "text": "**Sie wählten die am wenigsten riskante Alternative in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Они выбрали наименее рискованную альтернативу в ситуации, где участники ждали объяснения."
+              "text": "**Fangen wir mit dem am wenigsten umstrittenen Vorschlag an und kommen später auf die anderen zurück.**",
+              "translation_ru": "Давай начнём с предложения, вызывающего меньше всего споров, а к остальным вернёмся позже."
             }
           ]
         }
       ],
       "formulas": [
-        "They chose the least risky alternative [the team was reviewing the new policy]",
-        "Sie wählten die am wenigsten riskante Alternative [das Team die neue Regelung prüfte]"
+        "the least [adjective] [noun] / be the least [adjective]",
+        "der/die/das am wenigsten [Adjektiv] [Nomen] / am wenigsten [Adjektiv] / [Superlativ]"
       ],
       "gen": {
         "status": "curated",

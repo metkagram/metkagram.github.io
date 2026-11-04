@@ -6,85 +6,85 @@
       "id": "QSTQDIS001",
       "group_id": "QDIS",
       "set_id": "QDIS",
-      "title_ru": "Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Сначала прояснить факт, затем переходить к действию",
+      "metaphor_ru": "Используйте Before we ... , could we clarify whether ...? чтобы не продолжать обсуждение на непроверенной предпосылке. В немецком после ob действует порядок придаточного предложения: личный глагол в конце. Меняйте следующий шаг и проверяемый факт.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Before we continue, can we clarify whether [the team needs another day to decide]?",
-          "example": "Before we continue, can we clarify whether the team needs another day to decide?",
-          "translation": "Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения?",
+          "formula": "Before [we + next step], can/could we clarify whether [statement]?",
+          "example": "Before we book the cabin, could we clarify whether dogs are allowed?",
+          "translation": "Прежде чем бронировать домик, давай уточним, можно ли туда с собаками.",
           "examples": [
             {
-              "text": "**Before we continue, can we clarify whether the team needs another day to decide?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения?"
+              "text": "**Before we book the cabin, could we clarify whether dogs are allowed?**",
+              "translation_ru": "Прежде чем бронировать домик, давай уточним, можно ли туда с собаками."
             },
             {
-              "text": "**Before we continue, can we clarify whether the revised plan has not been shared yet?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, обновлённым планом ещё не поделились?"
+              "text": "**Before you share the photo, can we check whether everyone is comfortable with it?**",
+              "translation_ru": "Прежде чем ты опубликуешь фотографию, давай проверим, все ли на это согласны."
             },
             {
-              "text": "**Before we continue, can we clarify whether we should compare the two options?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, нам следует сравнить два варианта?"
+              "text": "**Before we redesign the app, can we establish whether people actually struggle with this screen?**",
+              "translation_ru": "Прежде чем переделывать приложение, давай выясним, действительно ли людям трудно пользоваться этим экраном."
             },
             {
-              "text": "**Before we continue, can we clarify whether the client asked for more detail?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, клиент попросил больше деталей?"
+              "text": "**Before the vote starts, could we clarify whether tenants have a say too?**",
+              "translation_ru": "Прежде чем начнётся голосование, давай уточним, имеют ли арендаторы право голоса."
             },
             {
-              "text": "**Before we continue, can we clarify whether the pilot may continue next month?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Before we apologise on her behalf, could we check whether she wants us to?**",
+              "translation_ru": "Прежде чем извиняться от её имени, давай проверим, хочет ли она этого."
             },
             {
-              "text": "**Before we continue, can we clarify whether the data need another check?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, данные нужно проверить ещё раз?"
+              "text": "**Before we leave the station, can we check whether the last bus is still running?**",
+              "translation_ru": "Прежде чем уходить с вокзала, давай проверим, ходит ли ещё последний автобус."
             },
             {
-              "text": "**Before we continue, can we clarify whether the meeting was moved?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, встречу перенесли?"
+              "text": "**Before we announce the exam date, could we confirm whether the room is available?**",
+              "translation_ru": "Прежде чем объявлять дату экзамена, давай убедимся, что аудитория свободна."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Bevor wir fortfahren, können wir klären, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Bevor wir fortfahren, können wir klären, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения?",
+          "formula": "Bevor [wir + nächster Schritt], können/könnten wir klären, ob [Nebensatz mit Verb am Ende]?",
+          "example": "Bevor wir die Hütte buchen, könnten wir klären, ob Hunde erlaubt sind?",
+          "translation": "Прежде чем бронировать домик, давай уточним, можно ли туда с собаками.",
           "examples": [
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, команде нужен ещё день для решения?"
+              "text": "**Bevor wir die Hütte buchen, könnten wir klären, ob Hunde erlaubt sind?**",
+              "translation_ru": "Прежде чем бронировать домик, давай уточним, можно ли туда с собаками."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, обновлённым планом ещё не поделились?"
+              "text": "**Bevor du das Foto teilst, können wir prüfen, ob alle damit einverstanden sind?**",
+              "translation_ru": "Прежде чем ты опубликуешь фотографию, давай проверим, все ли на это согласны."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, нам следует сравнить два варианта?"
+              "text": "**Bevor wir die App neu gestalten, können wir klären, ob die Nutzer mit diesem Bildschirm tatsächlich Schwierigkeiten haben?**",
+              "translation_ru": "Прежде чем переделывать приложение, давай выясним, действительно ли людям трудно пользоваться этим экраном."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, клиент попросил больше деталей?"
+              "text": "**Bevor die Abstimmung beginnt, könnten wir klären, ob auch Mieter mitentscheiden dürfen?**",
+              "translation_ru": "Прежде чем начнётся голосование, давай уточним, имеют ли арендаторы право голоса."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Bevor wir uns in ihrem Namen entschuldigen, könnten wir prüfen, ob sie das überhaupt möchte?**",
+              "translation_ru": "Прежде чем извиняться от её имени, давай проверим, хочет ли она этого."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, данные нужно проверить ещё раз?"
+              "text": "**Bevor wir den Bahnhof verlassen, können wir nachsehen, ob der letzte Bus noch fährt?**",
+              "translation_ru": "Прежде чем уходить с вокзала, давай проверим, ходит ли ещё последний автобус."
             },
             {
-              "text": "**Bevor wir fortfahren, können wir klären, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Прежде чем продолжить, можем ли мы прояснить, встречу перенесли?"
+              "text": "**Bevor wir den Prüfungstermin bekannt geben, könnten wir bestätigen, ob der Raum frei ist?**",
+              "translation_ru": "Прежде чем объявлять дату экзамена, давай убедимся, что аудитория свободна."
             }
           ]
         }
       ],
       "formulas": [
-        "Before we continue, can we clarify whether [the team needs another day to decide]?",
-        "Bevor wir fortfahren, können wir klären, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Before [we + next step], can/could we clarify whether [statement]?",
+        "Bevor [wir + nächster Schritt], können/könnten wir klären, ob [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
         "status": "curated",
