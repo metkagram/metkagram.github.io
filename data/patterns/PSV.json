@@ -385,85 +385,85 @@
     {
       "id": "PAS005",
       "group_id": "PAS",
-      "title_ru": "Запланированное действие",
-      "metaphor_ru": "Как расписание поезда: всё запланировано и идёт по графику. Ты знаешь, что поезд прибудет точно в назначенное время, никто не может изменить маршрут в последний момент.",
+      "title_ru": "Планируемое действие без указания исполнителя",
+      "metaphor_ru": "Сообщайте, что запланировано на определённый срок, с английским be scheduled to be + причастие. По-немецки естественнее sollen + Partizip II + werden или es ist vorgesehen, dass…",
       "langs": [
         {
           "lang": "en",
-          "formula": "The report is scheduled to be + Past Participle",
-          "example": "The report is scheduled to be delivered next Monday.",
-          "translation": "Отчёт запланировано отправить в следующий понедельник.",
+          "formula": "[Thing] is / was / isn't scheduled to be + past participle + [time].",
+          "example": "The village bridge is scheduled to be inspected before winter.",
+          "translation": "Деревенский мост планируют проверить до наступления зимы.",
           "examples": [
             {
-              "text": "The **software patch** is scheduled to be **deployed** tonight.",
-              "translation_ru": "Патч программного обеспечения запланирован на установку сегодня ночью."
+              "text": "The village bridge is scheduled to be inspected before winter.",
+              "translation_ru": "Деревенский мост планируют проверить до наступления зимы."
             },
             {
-              "text": "Is the **delivery** scheduled to be **completed** by **Friday**?",
-              "translation_ru": "Доставка запланирована на завершение к пятнице?"
+              "text": "The museum's new wing is scheduled to be opened in April.",
+              "translation_ru": "Новое крыло музея планируют открыть в апреле."
             },
             {
-              "text": "Our **strategy meeting** is scheduled to be **held** at **2 PM**.",
-              "translation_ru": "Наша стратегическая встреча запланирована на 2 часа дня."
+              "text": "Is the leaking roof scheduled to be repaired before the next storm?",
+              "translation_ru": "Протекающую крышу собираются починить до следующего шторма?"
             },
             {
-              "text": "The **AI update** is scheduled to be **released** next **month**.",
-              "translation_ru": "Обновление ИИ запланировано на выпуск в следующем месяце."
+              "text": "The medical records are scheduled to be transferred to the new system overnight.",
+              "translation_ru": "Медицинские карты планируют перенести в новую систему за ночь."
             },
             {
-              "text": "Their **contract** is scheduled to be **signed** today.",
-              "translation_ru": "Их контракт запланирован на подписание сегодня."
+              "text": "The playground is scheduled to be reopened once the safety checks are complete.",
+              "translation_ru": "Детскую площадку планируют снова открыть после проверки безопасности."
             },
             {
-              "text": "The **network maintenance** is scheduled to be **done** over the **weekend**.",
-              "translation_ru": "Техническое обслуживание сети запланировано на выходные."
+              "text": "The final episode was scheduled to be released last Friday, but it was delayed.",
+              "translation_ru": "Последняя серия должна была выйти в прошлую пятницу, но выпуск отложили."
             },
             {
-              "text": "Is your **appointment** scheduled to be **canceled**?",
-              "translation_ru": "Ваше назначение запланировано на отмену?"
+              "text": "The footpath isn't scheduled to be resurfaced until next spring.",
+              "translation_ru": "Пешеходную дорожку планируют обновить только следующей весной."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Bericht ist geplant, am + Datum + geliefert zu werden",
-          "example": "Der Bericht ist geplant, nächsten Montag geliefert zu werden.",
-          "translation": "Отчёт запланировано отправить в следующий понедельник.",
+          "formula": "[Sache] soll / sollte + Partizip II + werden; Es ist vorgesehen, dass + Passivsatz.",
+          "example": "Die Brücke im Dorf soll noch vor dem Winter überprüft werden.",
+          "translation": "Мост в деревне планируют проверить ещё до зимы.",
           "examples": [
             {
-              "text": "Das **Software-Update** ist geplant, heute Nacht **installiert** zu werden.",
-              "translation_ru": "Обновление программного обеспечения запланировано на установку сегодня ночью."
+              "text": "Die Brücke im Dorf soll noch vor dem Winter überprüft werden.",
+              "translation_ru": "Мост в деревне планируют проверить ещё до зимы."
             },
             {
-              "text": "Ist die **Lieferung** geplant, bis **Freitag** **abgeschlossen** zu werden?",
-              "translation_ru": "Доставка запланирована на завершение к пятнице?"
+              "text": "Es ist vorgesehen, dass der neue Museumsflügel im April eröffnet wird.",
+              "translation_ru": "Новое крыло музея предполагается открыть в апреле."
             },
             {
-              "text": "Unser **Strategiemeeting** ist geplant, um **14 Uhr** **stattzufinden**.",
-              "translation_ru": "Наша стратегическая встреча запланирована на 14 часов."
+              "text": "Ist geplant, dass das undichte Dach noch vor dem nächsten Sturm repariert wird?",
+              "translation_ru": "Протекающую крышу собираются отремонтировать до следующего шторма?"
             },
             {
-              "text": "Das **KI-Update** ist geplant, nächsten **Monat** **veröffentlicht** zu werden.",
-              "translation_ru": "Обновление ИИ запланировано на выпуск в следующем месяце."
+              "text": "Die Patientenakten sollen über Nacht in das neue System übertragen werden.",
+              "translation_ru": "Медицинские карты должны перенести в новую систему за ночь."
             },
             {
-              "text": "Ihr **Vertrag** ist geplant, heute **unterschrieben** zu werden.",
-              "translation_ru": "Их контракт запланирован на подписание сегодня."
+              "text": "Der Spielplatz soll nach Abschluss der Sicherheitsprüfungen wieder geöffnet werden.",
+              "translation_ru": "Детскую площадку планируют открыть после проверки безопасности."
             },
             {
-              "text": "Die **Netzwerkwartung** ist geplant, am **Wochenende** **durchgeführt** zu werden.",
-              "translation_ru": "Техническое обслуживание сети запланировано на выходные."
+              "text": "Die letzte Folge sollte eigentlich letzten Freitag veröffentlicht werden, wurde aber verschoben.",
+              "translation_ru": "Последняя серия должна была выйти ещё в прошлую пятницу, но выход перенесли."
             },
             {
-              "text": "Ist Ihr **Termin** geplant, **abgesagt** zu werden?",
-              "translation_ru": "Ваше назначение запланировано на отмену?"
+              "text": "Der Gehweg soll erst im nächsten Frühjahr erneuert werden.",
+              "translation_ru": "Тротуар планируют обновить только следующей весной."
             }
           ]
         }
       ],
       "formulas": [
-        "The report is scheduled to be + Past Participle",
-        "Der Bericht ist geplant, am + Datum + geliefert zu werden"
+        "[Thing] is / was / isn't scheduled to be + past participle + [time].",
+        "[Sache] soll / sollte + Partizip II + werden; Es ist vorgesehen, dass + Passivsatz."
       ],
       "gen": {
         "status": "generated",
