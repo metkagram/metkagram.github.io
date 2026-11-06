@@ -6,12 +6,12 @@
       "id": "FUNADV001",
       "group_id": "ADV",
       "set_id": "ADV",
-      "title_ru": "Посоветовать проверить предположение до принятия решения",
-      "metaphor_ru": "Мягкий совет: recommend + -ing + whether / empfehlen + zu-Infinitiv + ob. Не превращайте косвенный вопрос в прямой; проверяйте факт до следующего шага.",
+      "title_ru": "Я бы рекомендовал(а) проверить, …",
+      "metaphor_ru": "Мягко предлагает сначала проверить предположение, а уже потом действовать. После whether и ob сохраняется порядок слов косвенного вопроса.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I'd recommend checking whether [assumption] before [decision].",
+          "formula": "I would recommend checking whether [X]",
           "example": "I'd recommend checking whether the landlord has approved the repair before we book a plumber.",
           "translation": "Я бы посоветовал сначала проверить, согласовал ли хозяин квартиры ремонт, прежде чем вызывать сантехника.",
           "examples": [
@@ -83,7 +83,7 @@
         }
       ],
       "formulas": [
-        "I'd recommend checking whether [assumption] before [decision].",
+        "I would recommend checking whether [X]",
         "Ich würde empfehlen, zu prüfen, ob [Annahme], bevor [Entscheidung]."
       ],
       "gen": {
