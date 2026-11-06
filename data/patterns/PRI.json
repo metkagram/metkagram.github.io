@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Priorities and trade-offs."
       }
+    },
+    {
+      "id": "C1PRI001",
+      "group_id": "PRI",
+      "set_id": "PRI",
+      "title_ru": "При нехватке времени предпочесть одно дело другому",
+      "metaphor_ru": "Прямо обозначайте нехватку ресурсов и выбирайте, что делать первым. В немецком обратите внимание на управление глагола vorziehen: предпочитаемое — в винительном падеже, альтернатива — в дательном.",
+      "title_en": "If we can't do both, I'd prioritise [X] over [Y]",
+      "description_en": "Name a real resource constraint and explicitly choose what takes priority; the German version practises the accusative–dative pattern with vorziehen.",
+      "description_ru": "Прямо обозначайте нехватку ресурсов и выбирайте, что делать первым. В немецком обратите внимание на управление глагола vorziehen: предпочитаемое — в винительном падеже, альтернатива — в дательном.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "If we can't do both, I'd prioritise [X] over [Y].",
+          "example": "If we can't do both, I'd prioritise fixing the leaking roof over repainting the kitchen.",
+          "translation": "Если на оба дела не хватит времени, я бы сначала починил протекающую крышу, а покраску кухни отложил.",
+          "examples": [
+            {
+              "text": "**If we can't do both, I'd prioritise fixing the leaking roof over repainting the kitchen.**",
+              "translation_ru": "Если на оба дела не хватит времени, я бы сначала починил протекающую крышу, а покраску кухни отложил."
+            },
+            {
+              "text": "**If we can't do both, I'd prioritise rehearsing the talk over redesigning the handouts.**",
+              "translation_ru": "Если придётся выбирать, я бы лучше отрепетировал выступление, чем снова переделывал раздаточные материалы."
+            },
+            {
+              "text": "**If we can't do both, I'd prioritise making the school crossing safer over adding decorative lights.**",
+              "translation_ru": "Если ресурсов на всё не хватит, я бы прежде всего обезопасил переход у школы, а декоративные фонари оставил на потом."
+            },
+            {
+              "text": "**If we can't do both, I'd prioritise backing up the family photos over organising the folders by year.**",
+              "translation_ru": "Если на оба дела времени нет, я бы сперва сохранил копии семейных фотографий, а сортировку по годам отложил."
+            },
+            {
+              "text": "**If we can't do both, I'd prioritise visiting our elderly neighbour over finishing the garden fence.**",
+              "translation_ru": "Если получится сделать только одно, я бы навестил пожилую соседку, а забор в саду доделал позже."
+            },
+            {
+              "text": "**If we can't do both, I'd prioritise checking the source records over publishing the dashboard today.**",
+              "translation_ru": "Если выбирать между двумя задачами, я бы перепроверил исходные записи, а публикацию панели показателей перенёс."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wenn wir nicht beides schaffen, würde ich [X] [Y] vorziehen.",
+          "example": "Wenn wir nicht beides schaffen, würde ich die Reparatur des undichten Dachs dem Neuanstrich der Küche vorziehen.",
+          "translation": "Если на оба дела не хватит времени, я бы сначала починил протекающую крышу, а покраску кухни отложил.",
+          "examples": [
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich die Reparatur des undichten Dachs dem Neuanstrich der Küche vorziehen.**",
+              "translation_ru": "Если на оба дела не хватит времени, я бы сначала починил протекающую крышу, а покраску кухни отложил."
+            },
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich das Üben des Vortrags der Neugestaltung der Handzettel vorziehen.**",
+              "translation_ru": "Если придётся выбирать, я бы лучше отрепетировал выступление, чем снова переделывал раздаточные материалы."
+            },
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich die Sicherung des Schulübergangs zusätzlichen Zierleuchten vorziehen.**",
+              "translation_ru": "Если ресурсов на всё не хватит, я бы прежде всего обезопасил переход у школы, а декоративные фонари оставил на потом."
+            },
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich die Sicherung der Familienfotos dem Sortieren der Ordner nach Jahren vorziehen.**",
+              "translation_ru": "Если на оба дела времени нет, я бы сперва сохранил копии семейных фотографий, а сортировку по годам отложил."
+            },
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich einen Besuch bei unserer älteren Nachbarin der Fertigstellung des Gartenzauns vorziehen.**",
+              "translation_ru": "Если получится сделать только одно, я бы навестил пожилую соседку, а забор в саду доделал позже."
+            },
+            {
+              "text": "**Wenn wir nicht beides schaffen, würde ich die Prüfung der Quelldaten der heutigen Veröffentlichung des Dashboards vorziehen.**",
+              "translation_ru": "Если выбирать между двумя задачами, я бы перепроверил исходные записи, а публикацию панели показателей перенёс."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "If we can't do both, I'd prioritise [X] over [Y].",
+        "Wenn wir nicht beides schaffen, würde ich [X] [Y] vorziehen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

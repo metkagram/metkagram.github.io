@@ -6,85 +6,85 @@
       "id": "QSTQOP001",
       "group_id": "QOP",
       "set_id": "QOP",
-      "title_ru": "Как вы думаете, вероятно ли, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как вы думаете, вероятно ли, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Оценить вероятность события через вопрос собеседнику",
+      "metaphor_ru": "Вежливо запросить оценку вероятности; вопросительный каркас сохраняется, а событие меняется.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Do you think it is likely that [the team needs another day to decide]?",
-          "example": "Do you think it is likely that the team needs another day to decide?",
-          "translation": "Как вы думаете, вероятно ли, что команде нужен ещё день для решения?",
+          "formula": "Do you think it's likely that [event]?",
+          "example": "Do you think it's likely that the night train will be cancelled because of the storm?",
+          "translation": "Как вы думаете, велика ли вероятность, что ночной поезд отменят из-за шторма?",
           "examples": [
             {
-              "text": "**Do you think it is likely that the team needs another day to decide?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что команде нужен ещё день для решения?"
+              "text": "**Do you think it's likely that the night train will be cancelled because of the storm?**",
+              "translation_ru": "Как вы думаете, велика ли вероятность, что ночной поезд отменят из-за шторма?"
             },
             {
-              "text": "**Do you think it is likely that the revised plan has not been shared yet?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что обновлённым планом ещё не поделились?"
+              "text": "**Do you think it's likely that our neighbour has already found someone to look after her cat?**",
+              "translation_ru": "Как вы думаете, соседка уже нашла кого-то, кто присмотрит за её кошкой?"
             },
             {
-              "text": "**Do you think it is likely that we should compare the two options?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что нам следует сравнить два варианта?"
+              "text": "**Do you think it's likely that the new accessibility rules will change how websites are designed?**",
+              "translation_ru": "Как вы считаете, новые требования к доступности изменят подход к созданию сайтов?"
             },
             {
-              "text": "**Do you think it is likely that the client asked for more detail?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что клиент попросил больше деталей?"
+              "text": "**Do you think it's likely that he misunderstood the invitation rather than ignored it?**",
+              "translation_ru": "Как вы думаете, он скорее неправильно понял приглашение, чем намеренно его проигнорировал?"
             },
             {
-              "text": "**Do you think it is likely that the pilot may continue next month?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Do you think it's likely that the researchers have overlooked a simpler explanation?**",
+              "translation_ru": "Как вы считаете, исследователи могли упустить более простое объяснение?"
             },
             {
-              "text": "**Do you think it is likely that the data need another check?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что данные нужно проверить ещё раз?"
+              "text": "**Do you think it's likely that my application will be reviewed before the deadline?**",
+              "translation_ru": "Как вы думаете, моё заявление успеют рассмотреть до окончания срока?"
             },
             {
-              "text": "**Do you think it is likely that the meeting was moved?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что встречу перенесли?"
+              "text": "**Do you think it's likely that more people would cycle to work if the route were safer?**",
+              "translation_ru": "Как вы думаете, больше людей ездили бы на работу на велосипеде, если бы дорога была безопаснее?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Glauben Sie, dass es wahrscheinlich ist, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Glauben Sie, dass es wahrscheinlich ist, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как вы думаете, вероятно ли, что команде нужен ещё день для решения?",
+          "formula": "Halten Sie es für wahrscheinlich, dass [Ereignis]?",
+          "example": "Halten Sie es für wahrscheinlich, dass der Nachtzug wegen des Sturms ausfällt?",
+          "translation": "Как вы думаете, велика ли вероятность, что ночной поезд отменят из-за шторма?",
           "examples": [
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что команде нужен ещё день для решения?"
+              "text": "**Halten Sie es für wahrscheinlich, dass der Nachtzug wegen des Sturms ausfällt?**",
+              "translation_ru": "Как вы думаете, велика ли вероятность, что ночной поезд отменят из-за шторма?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что обновлённым планом ещё не поделились?"
+              "text": "**Halten Sie es für wahrscheinlich, dass unsere Nachbarin schon jemanden gefunden hat, der sich um ihre Katze kümmert?**",
+              "translation_ru": "Как вы думаете, соседка уже нашла кого-то, кто присмотрит за её кошкой?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что нам следует сравнить два варианта?"
+              "text": "**Halten Sie es für wahrscheinlich, dass die neuen Regeln zur Barrierefreiheit die Gestaltung von Websites verändern werden?**",
+              "translation_ru": "Как вы считаете, новые требования к доступности изменят подход к созданию сайтов?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что клиент попросил больше деталей?"
+              "text": "**Halten Sie es für wahrscheinlich, dass er die Einladung missverstanden hat, statt sie absichtlich zu ignorieren?**",
+              "translation_ru": "Как вы думаете, он скорее неправильно понял приглашение, чем намеренно его проигнорировал?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Halten Sie es für wahrscheinlich, dass die Forschenden eine einfachere Erklärung übersehen haben?**",
+              "translation_ru": "Как вы считаете, исследователи могли упустить более простое объяснение?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что данные нужно проверить ещё раз?"
+              "text": "**Halten Sie es für wahrscheinlich, dass mein Antrag noch vor Ablauf der Frist geprüft wird?**",
+              "translation_ru": "Как вы думаете, моё заявление успеют рассмотреть до окончания срока?"
             },
             {
-              "text": "**Glauben Sie, dass es wahrscheinlich ist, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Как вы думаете, вероятно ли, что встречу перенесли?"
+              "text": "**Halten Sie es für wahrscheinlich, dass mehr Menschen mit dem Rad zur Arbeit fahren würden, wenn der Weg sicherer wäre?**",
+              "translation_ru": "Как вы думаете, больше людей ездили бы на работу на велосипеде, если бы дорога была безопаснее?"
             }
           ]
         }
       ],
       "formulas": [
-        "Do you think it is likely that [the team needs another day to decide]?",
-        "Glauben Sie, dass es wahrscheinlich ist, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Do you think it's likely that [event]?",
+        "Halten Sie es für wahrscheinlich, dass [Ereignis]?"
       ],
       "gen": {
         "status": "curated",

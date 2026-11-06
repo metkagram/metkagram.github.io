@@ -99,6 +99,96 @@
       "title_en": "[Source] stressed that [X] rather than [Y]",
       "description_en": "Attribute a precise distinction to its source so your listener can separate reported claims from your own position.",
       "description_ru": "Точно приписывайте различие источнику, чтобы собеседник отличал переданную позицию от вашей собственной."
+    },
+    {
+      "id": "C1REP041",
+      "group_id": "REP",
+      "set_id": "REP",
+      "title_ru": "Передать неподтверждённое сообщение о прошлом действии",
+      "metaphor_ru": "Сообщайте о чужих утверждениях, не выдавая их за проверенный факт. Английское is said to have done и немецкое soll ... getan haben относятся к предполагаемому действию в прошлом.",
+      "title_en": "[X] is said to have [done Y], but [verification limit]",
+      "description_en": "Report an unverified claim about a completed event and make the limit of available confirmation explicit.",
+      "description_ru": "Сообщайте о чужих утверждениях, не выдавая их за проверенный факт. Английское is said to have done и немецкое soll ... getan haben относятся к предполагаемому действию в прошлом.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] is/are said to have [past participle], but [verification limit].",
+          "example": "The council is said to have revised the bus timetable, but the new departure times aren't online yet.",
+          "translation": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте.",
+          "examples": [
+            {
+              "text": "**The council is said to have revised the bus timetable, but the new departure times aren't online yet.**",
+              "translation_ru": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте."
+            },
+            {
+              "text": "**The museum is said to have acquired a rare map, though its catalogue hasn't been updated.**",
+              "translation_ru": "По сообщениям, музей приобрёл редкую карту, но каталог ещё не обновлён."
+            },
+            {
+              "text": "**The app is said to have fixed the sync bug, but I haven't tested the update myself.**",
+              "translation_ru": "Говорят, в приложении исправили ошибку синхронизации, но сам я обновление пока не проверял."
+            },
+            {
+              "text": "**The neighbourhood group is said to have secured money for the playground, but work hasn't begun.**",
+              "translation_ru": "Сообщается, что инициативной группе удалось получить деньги на детскую площадку, однако работы ещё не начались."
+            },
+            {
+              "text": "**The researchers are said to have found a simpler method, although the full paper isn't available yet.**",
+              "translation_ru": "По сообщениям, исследователи нашли более простой метод, хотя полная статья пока недоступна."
+            },
+            {
+              "text": "**The theatre is said to have added another performance, but ticket sales still show only two dates.**",
+              "translation_ru": "Говорят, театр добавил ещё один спектакль, но в продаже по-прежнему видны только две даты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] soll(en) [Ergänzung] [Partizip II] haben, aber [Prüfgrenze].",
+          "example": "Der Stadtrat soll den Busfahrplan überarbeitet haben, aber die neuen Abfahrtszeiten stehen noch nicht online.",
+          "translation": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте.",
+          "examples": [
+            {
+              "text": "**Der Stadtrat soll den Busfahrplan überarbeitet haben, aber die neuen Abfahrtszeiten stehen noch nicht online.**",
+              "translation_ru": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте."
+            },
+            {
+              "text": "**Das Museum soll eine seltene Karte erworben haben, doch der Katalog ist noch nicht aktualisiert.**",
+              "translation_ru": "По сообщениям, музей приобрёл редкую карту, но каталог ещё не обновлён."
+            },
+            {
+              "text": "**Die App soll den Synchronisierungsfehler behoben haben, aber ich habe das Update noch nicht selbst getestet.**",
+              "translation_ru": "Говорят, в приложении исправили ошибку синхронизации, но сам я обновление пока не проверял."
+            },
+            {
+              "text": "**Die Nachbarschaftsinitiative soll Geld für den Spielplatz bekommen haben, allerdings haben die Arbeiten noch nicht begonnen.**",
+              "translation_ru": "Сообщается, что инициативной группе удалось получить деньги на детскую площадку, однако работы ещё не начались."
+            },
+            {
+              "text": "**Die Forschenden sollen eine einfachere Methode gefunden haben, obwohl die vollständige Studie noch nicht vorliegt.**",
+              "translation_ru": "По сообщениям, исследователи нашли более простой метод, хотя полная статья пока недоступна."
+            },
+            {
+              "text": "**Das Theater soll eine zusätzliche Vorstellung angesetzt haben, aber im Vorverkauf werden weiterhin nur zwei Termine angezeigt.**",
+              "translation_ru": "Говорят, театр добавил ещё один спектакль, но в продаже по-прежнему видны только две даты."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] is/are said to have [past participle], but [verification limit].",
+        "[Subjekt] soll(en) [Ergänzung] [Partizip II] haben, aber [Prüfgrenze]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

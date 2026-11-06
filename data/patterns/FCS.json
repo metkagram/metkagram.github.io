@@ -761,6 +761,96 @@
         ],
         "notes": "Grammar pattern: Focus, inversion and emphasis."
       }
+    },
+    {
+      "id": "C1FCS001",
+      "group_id": "FCS",
+      "set_id": "FCS",
+      "title_ru": "Выделить то, чего никто не ожидал",
+      "metaphor_ru": "Переносите акцент на неожиданную часть истории с помощью английского What ... hadn't expected was ... и немецкого Womit ... nicht gerechnet hatte, war .... Это фокусирующая конструкция, а не просто перечисление событий.",
+      "title_en": "What [someone] hadn't expected was [the outcome]",
+      "description_en": "Bring the surprising part of an experience into focus with an English what-cleft and a natural German womit-clause.",
+      "description_ru": "Переносите акцент на неожиданную часть истории с помощью английского What ... hadn't expected was ... и немецкого Womit ... nicht gerechnet hatte, war .... Это фокусирующая конструкция, а не просто перечисление событий.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What [subject] hadn't expected was [surprising outcome].",
+          "example": "What I hadn't expected was how quickly the garden recovered after the storm.",
+          "translation": "Я никак не ожидал, что сад так быстро восстановится после бури.",
+          "examples": [
+            {
+              "text": "**What I hadn't expected was how quickly the garden recovered after the storm.**",
+              "translation_ru": "Я никак не ожидал, что сад так быстро восстановится после бури."
+            },
+            {
+              "text": "**What the organisers hadn't expected was a queue stretching around the library.**",
+              "translation_ru": "Организаторы не ожидали, что очередь растянется вокруг библиотеки."
+            },
+            {
+              "text": "**What she hadn't expected was that her brother would apologise first.**",
+              "translation_ru": "Она не ожидала, что брат извинится первым."
+            },
+            {
+              "text": "**What the designers hadn't expected was how often people used the search shortcut.**",
+              "translation_ru": "Разработчики не ожидали, что люди будут так часто пользоваться сочетанием клавиш для поиска."
+            },
+            {
+              "text": "**What we hadn't expected was a complete change of tone halfway through the discussion.**",
+              "translation_ru": "Мы не ожидали, что во второй половине разговора тон настолько изменится."
+            },
+            {
+              "text": "**What the young musician hadn't expected was to feel so nervous at a small neighbourhood concert.**",
+              "translation_ru": "Молодой музыкант не ожидал, что так разволнуется на небольшом концерте в районе."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Womit [Subjekt] nicht gerechnet hatte(n), war [überraschendes Ergebnis].",
+          "example": "Womit ich nicht gerechnet hatte, war, wie schnell sich der Garten nach dem Sturm erholte.",
+          "translation": "Я никак не ожидал, что сад так быстро восстановится после бури.",
+          "examples": [
+            {
+              "text": "**Womit ich nicht gerechnet hatte, war, wie schnell sich der Garten nach dem Sturm erholte.**",
+              "translation_ru": "Я никак не ожидал, что сад так быстро восстановится после бури."
+            },
+            {
+              "text": "**Womit die Veranstalter nicht gerechnet hatten, war eine Schlange, die sich um das Bibliotheksgebäude zog.**",
+              "translation_ru": "Организаторы не ожидали, что очередь растянется вокруг библиотеки."
+            },
+            {
+              "text": "**Womit sie nicht gerechnet hatte, war, dass ihr Bruder sich als Erster entschuldigen würde.**",
+              "translation_ru": "Она не ожидала, что брат извинится первым."
+            },
+            {
+              "text": "**Womit die Entwickler nicht gerechnet hatten, war, wie häufig die Leute das Tastenkürzel für die Suche nutzten.**",
+              "translation_ru": "Разработчики не ожидали, что люди будут так часто пользоваться сочетанием клавиш для поиска."
+            },
+            {
+              "text": "**Womit wir nicht gerechnet hatten, war ein völlig anderer Ton in der zweiten Hälfte des Gesprächs.**",
+              "translation_ru": "Мы не ожидали, что во второй половине разговора тон настолько изменится."
+            },
+            {
+              "text": "**Womit der junge Musiker nicht gerechnet hatte, war, dass er bei einem kleinen Konzert im Viertel so nervös sein würde.**",
+              "translation_ru": "Молодой музыкант не ожидал, что так разволнуется на небольшом концерте в районе."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What [subject] hadn't expected was [surprising outcome].",
+        "Womit [Subjekt] nicht gerechnet hatte(n), war [überraschendes Ergebnis]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

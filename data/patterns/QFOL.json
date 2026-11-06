@@ -6,85 +6,85 @@
       "id": "QSTQFOL001",
       "group_id": "QFOL",
       "set_id": "QFOL",
-      "title_ru": "Что следует из этого, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что следует из этого, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, какие выводы следуют из условия",
+      "metaphor_ru": "What would follow if / Was würde daraus folgen, wenn: проверяйте логическое следствие предположения, а не спрашивайте просто, почему что-то важно. В немецком гипотетическое условие естественно оформляется Konjunktiv II.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What follows if [the team needs another day to decide]?",
-          "example": "What follows if the team needs another day to decide?",
-          "translation": "Что следует из этого, если команде нужен ещё день для решения?",
+          "formula": "What would follow if [hypothesis]?",
+          "example": "What would follow if smaller classes actually improved attendance rather than test scores?",
+          "translation": "Какие выводы следовали бы из того, что небольшие классы улучшают посещаемость, но не результаты тестов?",
           "examples": [
             {
-              "text": "**What follows if the team needs another day to decide?**",
-              "translation_ru": "Что следует из этого, если команде нужен ещё день для решения?"
+              "text": "**What would follow if smaller classes actually improved attendance rather than test scores?**",
+              "translation_ru": "Какие выводы следовали бы из того, что небольшие классы улучшают посещаемость, но не результаты тестов?"
             },
             {
-              "text": "**What follows if the revised plan has not been shared yet?**",
-              "translation_ru": "Что следует из этого, если обновлённым планом ещё не поделились?"
+              "text": "**What would follow if the accessibility map missed most of the stairs near the station?**",
+              "translation_ru": "Что из этого следовало бы, если бы карта доступности не отмечала большинство лестниц у станции?"
             },
             {
-              "text": "**What follows if we should compare the two options?**",
-              "translation_ru": "Что следует из этого, если нам следует сравнить два варианта?"
+              "text": "**What would follow if the study showed a correlation but no evidence of causation?**",
+              "translation_ru": "Какой вывод можно было бы сделать, если бы исследование показало корреляцию, но не подтвердило причинную связь?"
             },
             {
-              "text": "**What follows if the client asked for more detail?**",
-              "translation_ru": "Что следует из этого, если клиент попросил больше деталей?"
+              "text": "**What would follow if tests confirmed that the local pond was contaminated?**",
+              "translation_ru": "Какие выводы следовали бы, если бы анализы подтвердили загрязнение местного пруда?"
             },
             {
-              "text": "**What follows if the pilot may continue next month?**",
-              "translation_ru": "Что следует из этого, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would follow if a service kept exporting user data after people opted out?**",
+              "translation_ru": "Что из этого следовало бы, если бы сервис продолжал передавать данные пользователей после их отказа?"
             },
             {
-              "text": "**What follows if the data need another check?**",
-              "translation_ru": "Что следует из этого, если данные нужно проверить ещё раз?"
+              "text": "**What would follow if she wanted to travel alone to become more independent?**",
+              "translation_ru": "Какие выводы следовали бы, если бы она хотела путешествовать одна, чтобы стать самостоятельнее?"
             },
             {
-              "text": "**What follows if the meeting was moved?**",
-              "translation_ru": "Что следует из этого, если встречу перенесли?"
+              "text": "**What would follow if the new shift schedule made it impossible for parents to collect their children?**",
+              "translation_ru": "Какие последствия были бы, если бы новый график смен мешал родителям забирать детей?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was folgt daraus, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was folgt daraus, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что следует из этого, если команде нужен ещё день для решения?",
+          "formula": "Was würde daraus folgen, wenn [hypothetische Bedingung]?",
+          "example": "Was würde daraus folgen, wenn kleinere Klassen zwar die Anwesenheit, aber nicht die Testergebnisse verbesserten?",
+          "translation": "Что следовало бы из того, что меньшие классы повышали бы посещаемость, но не оценки за тесты?",
           "examples": [
             {
-              "text": "**Was folgt daraus, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что следует из этого, если команде нужен ещё день для решения?"
+              "text": "**Was würde daraus folgen, wenn kleinere Klassen zwar die Anwesenheit, aber nicht die Testergebnisse verbesserten?**",
+              "translation_ru": "Что следовало бы из того, что меньшие классы повышали бы посещаемость, но не оценки за тесты?"
             },
             {
-              "text": "**Was folgt daraus, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что следует из этого, если обновлённым планом ещё не поделились?"
+              "text": "**Was würde daraus folgen, wenn die Karte zur Barrierefreiheit die meisten Treppen am Bahnhof nicht erfasste?**",
+              "translation_ru": "Какие выводы следовали бы, если бы карта доступности пропускала большинство лестниц у вокзала?"
             },
             {
-              "text": "**Was folgt daraus, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что следует из этого, если нам следует сравнить два варианта?"
+              "text": "**Was würde daraus folgen, wenn die Studie nur einen Zusammenhang, aber keinen ursächlichen Einfluss nachwiese?**",
+              "translation_ru": "Что из этого следовало бы, если бы исследование обнаружило связь, но не доказало причинность?"
             },
             {
-              "text": "**Was folgt daraus, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что следует из этого, если клиент попросил больше деталей?"
+              "text": "**Was würde daraus folgen, wenn Messungen bestätigten, dass der Teich im Ort verschmutzt ist?**",
+              "translation_ru": "Какие последствия были бы, если бы измерения подтвердили загрязнение местного пруда?"
             },
             {
-              "text": "**Was folgt daraus, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что следует из этого, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was würde daraus folgen, wenn ein Dienst Nutzerdaten weiterhin exportierte, obwohl die Betroffenen widersprochen hatten?**",
+              "translation_ru": "Что следовало бы из того, что сервис продолжал передавать пользовательские данные вопреки отказу людей?"
             },
             {
-              "text": "**Was folgt daraus, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что следует из этого, если данные нужно проверить ещё раз?"
+              "text": "**Was würde daraus folgen, wenn sie allein reisen wollte, um selbstständiger zu werden?**",
+              "translation_ru": "Какие выводы следовало бы сделать, если бы она хотела путешествовать одна, чтобы стать самостоятельнее?"
             },
             {
-              "text": "**Was folgt daraus, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Что следует из этого, если встречу перенесли?"
+              "text": "**Was würde daraus folgen, wenn Eltern wegen des neuen Schichtplans ihre Kinder nicht mehr abholen könnten?**",
+              "translation_ru": "Что из этого следовало бы, если бы из-за нового графика смен родители больше не могли забирать детей?"
             }
           ]
         }
       ],
       "formulas": [
-        "What follows if [the team needs another day to decide]?",
-        "Was folgt daraus, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would follow if [hypothesis]?",
+        "Was würde daraus folgen, wenn [hypothetische Bedingung]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQFOL021",
       "group_id": "QFOL",
       "set_id": "QFOL",
-      "title_ru": "Что ещё нам следует учесть, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что ещё нам следует учесть, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить об упущенных условиях и последствиях",
+      "metaphor_ru": "What else should we consider if / Was sollten wir außerdem bedenken, wenn: дополнительный вопрос о рисках, людях и скрытых ограничениях после первоначального решения. Придаточное с wenn требует глагол в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What else should we consider if [the team needs another day to decide]?",
-          "example": "What else should we consider if the team needs another day to decide?",
-          "translation": "Что ещё нам следует учесть, если команде нужен ещё день для решения?",
+          "formula": "What else should we consider if [circumstance]?",
+          "example": "What else should we consider if Grandma moves into a flat without a lift?",
+          "translation": "Что ещё нужно учесть, если бабушка переедет в квартиру без лифта?",
           "examples": [
             {
-              "text": "**What else should we consider if the team needs another day to decide?**",
-              "translation_ru": "Что ещё нам следует учесть, если команде нужен ещё день для решения?"
+              "text": "**What else should we consider if Grandma moves into a flat without a lift?**",
+              "translation_ru": "Что ещё нужно учесть, если бабушка переедет в квартиру без лифта?"
             },
             {
-              "text": "**What else should we consider if the revised plan has not been shared yet?**",
-              "translation_ru": "Что ещё нам следует учесть, если обновлённым планом ещё не поделились?"
+              "text": "**What else should we consider if the language lessons are recorded for absent students?**",
+              "translation_ru": "Что ещё следует учесть, если языковые занятия будут записывать для отсутствующих учеников?"
             },
             {
-              "text": "**What else should we consider if we should compare the two options?**",
-              "translation_ru": "Что ещё нам следует учесть, если нам следует сравнить два варианта?"
+              "text": "**What else should we consider if our son changes schools halfway through the year?**",
+              "translation_ru": "Что ещё стоит обдумать, если сын сменит школу посреди учебного года?"
             },
             {
-              "text": "**What else should we consider if the client asked for more detail?**",
-              "translation_ru": "Что ещё нам следует учесть, если клиент попросил больше деталей?"
+              "text": "**What else should we consider if several families share responsibility for the community garden?**",
+              "translation_ru": "Что ещё нужно предусмотреть, если за общественный сад будут отвечать несколько семей?"
             },
             {
-              "text": "**What else should we consider if the pilot may continue next month?**",
-              "translation_ru": "Что ещё нам следует учесть, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What else should we consider if the dog gets anxious on a long train journey?**",
+              "translation_ru": "Что ещё следует учитывать, если собака тревожится во время долгой поездки на поезде?"
             },
             {
-              "text": "**What else should we consider if the data need another check?**",
-              "translation_ru": "Что ещё нам следует учесть, если данные нужно проверить ещё раз?"
+              "text": "**What else should we consider if the library stays open late during exam week?**",
+              "translation_ru": "Что ещё нужно учесть, если библиотека будет работать допоздна во время экзаменов?"
             },
             {
-              "text": "**What else should we consider if the meeting was moved?**",
-              "translation_ru": "Что ещё нам следует учесть, если встречу перенесли?"
+              "text": "**What else should we consider if the old application depends on a component that is no longer supported?**",
+              "translation_ru": "Какие ещё риски нужно учесть, если старое приложение зависит от компонента, который больше не поддерживается?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was sollten wir außerdem berücksichtigen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was sollten wir außerdem berücksichtigen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что ещё нам следует учесть, если команде нужен ещё день для решения?",
+          "formula": "Was sollten wir außerdem bedenken, wenn [Situation]?",
+          "example": "Was sollten wir außerdem bedenken, wenn Oma in eine Wohnung ohne Aufzug zieht?",
+          "translation": "Что ещё стоит учесть, если бабушка переедет в квартиру без лифта?",
           "examples": [
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что ещё нам следует учесть, если команде нужен ещё день для решения?"
+              "text": "**Was sollten wir außerdem bedenken, wenn Oma in eine Wohnung ohne Aufzug zieht?**",
+              "translation_ru": "Что ещё стоит учесть, если бабушка переедет в квартиру без лифта?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что ещё нам следует учесть, если обновлённым планом ещё не поделились?"
+              "text": "**Was sollten wir außerdem bedenken, wenn der Sprachunterricht für fehlende Lernende aufgezeichnet wird?**",
+              "translation_ru": "Что ещё надо учесть, если уроки языка записывают для тех, кто отсутствует?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что ещё нам следует учесть, если нам следует сравнить два варианта?"
+              "text": "**Was sollten wir außerdem bedenken, wenn unser Sohn mitten im Schuljahr die Schule wechselt?**",
+              "translation_ru": "Что ещё нужно обдумать, если сын сменит школу в середине учебного года?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что ещё нам следует учесть, если клиент попросил больше деталей?"
+              "text": "**Was sollten wir außerdem bedenken, wenn sich mehrere Familien gemeinsam um den Gemeinschaftsgarten kümmern?**",
+              "translation_ru": "Что ещё стоит предусмотреть, если за общественным садом будут вместе ухаживать несколько семей?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что ещё нам следует учесть, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was sollten wir außerdem bedenken, wenn der Hund auf längeren Zugfahrten unruhig wird?**",
+              "translation_ru": "Что ещё нужно учесть, если собака беспокоится в долгих поездках на поезде?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что ещё нам следует учесть, если данные нужно проверить ещё раз?"
+              "text": "**Was sollten wir außerdem bedenken, wenn die Bibliothek in der Prüfungswoche länger geöffnet bleibt?**",
+              "translation_ru": "Что ещё стоит учесть, если библиотека во время экзаменов будет работать дольше?"
             },
             {
-              "text": "**Was sollten wir außerdem berücksichtigen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Что ещё нам следует учесть, если встречу перенесли?"
+              "text": "**Was sollten wir außerdem bedenken, wenn die alte Anwendung von einer Komponente abhängt, die nicht mehr unterstützt wird?**",
+              "translation_ru": "Что ещё стоит учитывать, если старое приложение зависит от компонента без поддержки?"
             }
           ]
         }
       ],
       "formulas": [
-        "What else should we consider if [the team needs another day to decide]?",
-        "Was sollten wir außerdem berücksichtigen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What else should we consider if [circumstance]?",
+        "Was sollten wir außerdem bedenken, wenn [Situation]?"
       ],
       "gen": {
         "status": "curated",
@@ -380,6 +380,96 @@
           "de"
         ],
         "notes": "Question pattern: Follow-up questions."
+      }
+    },
+    {
+      "id": "C1QFOL001",
+      "group_id": "QFOL",
+      "set_id": "QFOL",
+      "title_ru": "Попросить собеседника восстановить последовательность событий",
+      "metaphor_ru": "Сначала восстановите последовательность событий, а уже потом делайте выводы о причинах. В немецком потренируйте придаточное предложение с was.",
+      "title_en": "Could you walk me through what happened between [X] and [Y]?",
+      "description_en": "Ask for a chronological account instead of jumping to blame or conclusions. The German version practises an embedded was-clause.",
+      "description_ru": "Сначала восстановите последовательность событий, а уже потом делайте выводы о причинах. В немецком потренируйте придаточное предложение с was.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could you walk me through what happened between [X] and [Y]?",
+          "example": "Could you walk me through what happened between the first error message and the restart?",
+          "translation": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?",
+          "examples": [
+            {
+              "text": "**Could you walk me through what happened between the first error message and the restart?**",
+              "translation_ru": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?"
+            },
+            {
+              "text": "**Could you walk me through what happened between leaving home and discovering your keys were gone?**",
+              "translation_ru": "Можешь восстановить, что случилось после выхода из дома и до того, как ты заметил пропажу ключей?"
+            },
+            {
+              "text": "**Could you walk me through what happened between the first disagreement and the apology?**",
+              "translation_ru": "Расскажешь по порядку, как всё развивалось от первой ссоры до извинения?"
+            },
+            {
+              "text": "**Could you walk me through what happened between taking the samples and publishing the chart?**",
+              "translation_ru": "Можешь объяснить по шагам, что происходило между взятием проб и публикацией диаграммы?"
+            },
+            {
+              "text": "**Could you walk me through what happened between submitting your application and getting the interview invitation?**",
+              "translation_ru": "Можешь рассказать, что происходило после отправки резюме и до приглашения на собеседование?"
+            },
+            {
+              "text": "**Could you walk me through what happened between the delay announcement and the replacement bus arriving?**",
+              "translation_ru": "Можешь рассказать, что было между объявлением о задержке и приездом подменного автобуса?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Kannst du mir Schritt für Schritt schildern, was zwischen [X] und [Y] passiert ist?",
+          "example": "Kannst du mir Schritt für Schritt schildern, was zwischen der ersten Fehlermeldung und dem Neustart passiert ist?",
+          "translation": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?",
+          "examples": [
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der ersten Fehlermeldung und dem Neustart passiert ist?**",
+              "translation_ru": "Можешь по порядку рассказать, что происходило от первого сообщения об ошибке до перезапуска?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen deinem Aufbruch und dem Moment passiert ist, in dem dir die fehlenden Schlüssel auffielen?**",
+              "translation_ru": "Можешь восстановить, что случилось после выхода из дома и до того, как ты заметил пропажу ключей?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen dem ersten Streit und der Entschuldigung passiert ist?**",
+              "translation_ru": "Расскажешь по порядку, как всё развивалось от первой ссоры до извинения?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der Probenentnahme und der Veröffentlichung des Diagramms passiert ist?**",
+              "translation_ru": "Можешь объяснить по шагам, что происходило между взятием проб и публикацией диаграммы?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen dem Abschicken deiner Bewerbung und der Einladung zum Vorstellungsgespräch passiert ist?**",
+              "translation_ru": "Можешь рассказать, что происходило после отправки резюме и до приглашения на собеседование?"
+            },
+            {
+              "text": "**Kannst du mir Schritt für Schritt schildern, was zwischen der Verspätungsdurchsage und der Ankunft des Ersatzbusses passiert ist?**",
+              "translation_ru": "Можешь рассказать, что было между объявлением о задержке и приездом подменного автобуса?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Could you walk me through what happened between [X] and [Y]?",
+        "Kannst du mir Schritt für Schritt schildern, was zwischen [X] und [Y] passiert ist?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-24T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 editorial source frame; local spaCy annotation pending."
       }
     }
   ]

@@ -6,85 +6,85 @@
       "id": "GRMCAS001",
       "group_id": "CAS",
       "set_id": "CAS",
-      "title_ru": "Она дала новой коллеге подробное объяснение",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «она дала новой коллеге подробное объяснение» в живом контексте.",
+      "title_ru": "Дать, показать или передать кому-то что-то",
+      "metaphor_ru": "В немецком адресат обычно стоит в дательном падеже (кому?), а передаваемый предмет — в винительном (что?). В английском с give, send, show, offer и teach часто используется порядок: получатель, затем предмет. Не переносите этот порядок механически на любой глагол.",
       "langs": [
         {
           "lang": "en",
-          "formula": "She gave the new colleague a detailed explanation [the team was reviewing the new policy]",
-          "example": "She gave the new colleague a detailed explanation in a situation where the team was reviewing the new policy.",
-          "translation": "Она дала новой коллеге подробное объяснение в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subject] + give/send/show/offer/teach + [recipient] + [thing].",
+          "example": "Could you send my sister the address before she sets off?",
+          "translation": "Можешь отправить моей сестре адрес, пока она не выехала?",
           "examples": [
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где команда проверяла новую политику."
+              "text": "**Could you send my sister the address before she sets off?**",
+              "translation_ru": "Можешь отправить моей сестре адрес, пока она не выехала?"
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**The guide showed the children a quieter path through the woods.**",
+              "translation_ru": "Проводница показала детям более спокойную тропу через лес."
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**I've promised my parents a proper visit this winter.**",
+              "translation_ru": "Я пообещал родителям как следует навестить их этой зимой."
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Please don't give the dog any chocolate, even as a treat.**",
+              "translation_ru": "Пожалуйста, не давай собаке шоколад, даже в качестве лакомства."
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где расписание изменили в последний момент."
+              "text": "**She offered her neighbour a spare key while he was away.**",
+              "translation_ru": "Она предложила соседу запасной ключ на время его отъезда."
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**The app gives beginners useful feedback after each recording.**",
+              "translation_ru": "После каждой записи приложение даёт новичкам полезную обратную связь."
             },
             {
-              "text": "**She gave the new colleague a detailed explanation in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где участники ждали объяснения."
+              "text": "**Who taught you that trick for remembering people's names?**",
+              "translation_ru": "Кто научил тебя этому способу запоминать имена?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie gab der neuen Kollegin eine ausführliche Erklärung [das Team die neue Regelung prüfte]",
-          "example": "Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Она дала новой коллеге подробное объяснение в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] + geben/schicken/zeigen/anbieten + [Empfänger im Dativ] + [Sache im Akkusativ].",
+          "example": "Kannst du meiner Schwester die Adresse schicken, bevor sie losfährt?",
+          "translation": "Можешь отправить моей сестре адрес, пока она не выехала?",
           "examples": [
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где команда проверяла новую политику."
+              "text": "**Kannst du meiner Schwester die Adresse schicken, bevor sie losfährt?**",
+              "translation_ru": "Можешь отправить моей сестре адрес, пока она не выехала?"
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Die Wanderführerin zeigte den Kindern einen ruhigeren Weg durch den Wald.**",
+              "translation_ru": "Проводница показала детям более тихую тропу через лес."
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Ich habe meinen Eltern für diesen Winter einen längeren Besuch versprochen.**",
+              "translation_ru": "Я пообещал родителям навестить их этой зимой и провести с ними побольше времени."
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Gib dem Hund bitte keine Schokolade, auch nicht als Leckerli.**",
+              "translation_ru": "Пожалуйста, не давай собаке шоколад, даже в качестве лакомства."
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где расписание изменили в последний момент."
+              "text": "**Sie bot ihrem Nachbarn für die Urlaubszeit einen Ersatzschlüssel an.**",
+              "translation_ru": "Она предложила соседу запасной ключ на время его отпуска."
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Die App gibt Anfängern nach jeder Aufnahme eine hilfreiche Rückmeldung.**",
+              "translation_ru": "После каждой записи приложение даёт начинающим полезную обратную связь."
             },
             {
-              "text": "**Sie gab der neuen Kollegin eine ausführliche Erklärung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Она дала новой коллеге подробное объяснение в ситуации, где участники ждали объяснения."
+              "text": "**Wer hat dir diesen Trick zum Merken von Namen beigebracht?**",
+              "translation_ru": "Кто научил тебя этому приёму запоминания имён?"
             }
           ]
         }
       ],
       "formulas": [
-        "She gave the new colleague a detailed explanation [the team was reviewing the new policy]",
-        "Sie gab der neuen Kollegin eine ausführliche Erklärung [das Team die neue Regelung prüfte]"
+        "[Subject] + give/send/show/offer/teach + [recipient] + [thing].",
+        "[Subjekt] + geben/schicken/zeigen/anbieten + [Empfänger im Dativ] + [Sache im Akkusativ]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMCAS016",
       "group_id": "CAS",
       "set_id": "CAS",
-      "title_ru": "Успех проекта зависит от надёжной координации",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «успех проекта зависит от надёжной координации» в живом контексте.",
+      "title_ru": "Показать, от чего зависит результат",
+      "metaphor_ru": "В английском depend on связывает результат с определяющим фактором. Немецкое abhängen — отделяемый глагол с von + Dativ; при зависимости от целого придаточного естественно использовать davon abhängen, ob/wie/wer ... .",
       "langs": [
         {
           "lang": "en",
-          "formula": "The success of the project depends on reliable coordination [the team was reviewing the new policy]",
-          "example": "The success of the project depends on reliable coordination in a situation where the team was reviewing the new policy.",
-          "translation": "Успех проекта зависит от надёжной координации в ситуации, где команда проверяла новую политику.",
+          "formula": "[Outcome] depends on [factor / how-whether clause].",
+          "example": "Whether we go hiking tomorrow depends on the weather.",
+          "translation": "Пойдём ли мы завтра в поход, зависит от погоды.",
           "examples": [
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где команда проверяла новую политику."
+              "text": "**Whether we go hiking tomorrow depends on the weather.**",
+              "translation_ru": "Пойдём ли мы завтра в поход, зависит от погоды."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**A child's confidence often depends on how adults react to mistakes.**",
+              "translation_ru": "Уверенность ребёнка часто зависит от того, как взрослые реагируют на ошибки."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**How much water these seedlings need depends on the soil, not just the temperature.**",
+              "translation_ru": "Сколько воды нужно этим саженцам, зависит от почвы, а не только от температуры."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Our decision to reschedule will depend on who can attend.**",
+              "translation_ru": "Решение о переносе встречи будет зависеть от того, кто сможет прийти."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где расписание изменили в последний момент."
+              "text": "**The accuracy of the transcript depends on the quality of the recording.**",
+              "translation_ru": "Точность расшифровки зависит от качества записи."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Keeping the flat cool in summer doesn't depend on expensive equipment alone.**",
+              "translation_ru": "Прохлада в квартире летом зависит не только от дорогой техники."
             },
             {
-              "text": "**The success of the project depends on reliable coordination in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где участники ждали объяснения."
+              "text": "**Does admission depend on age, or is the workshop open to everyone?**",
+              "translation_ru": "Участие зависит от возраста или мастер-класс открыт для всех?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab [das Team die neue Regelung prüfte]",
-          "example": "Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Успех проекта зависит от надёжной координации в ситуации, где команда проверяла новую политику.",
+          "formula": "[Ergebnis] hängt von [Faktor im Dativ] ab / hängt davon ab, [Nebensatz].",
+          "example": "Ob wir morgen wandern gehen, hängt vom Wetter ab.",
+          "translation": "Пойдём ли мы завтра в поход, зависит от погоды.",
           "examples": [
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где команда проверяла новую политику."
+              "text": "**Ob wir morgen wandern gehen, hängt vom Wetter ab.**",
+              "translation_ru": "Пойдём ли мы завтра в поход, зависит от погоды."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Wie viel sich ein Kind zutraut, hängt oft davon ab, wie Erwachsene auf Fehler reagieren.**",
+              "translation_ru": "Насколько ребёнок уверен в своих силах, часто зависит от реакции взрослых на ошибки."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Wie viel Wasser die Setzlinge brauchen, hängt vom Boden ab, nicht nur von der Temperatur.**",
+              "translation_ru": "Сколько воды нужно саженцам, зависит от почвы, а не только от температуры."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Ob wir den Termin verschieben, wird davon abhängen, wer teilnehmen kann.**",
+              "translation_ru": "Перенесём ли мы встречу, будет зависеть от того, кто сможет участвовать."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где расписание изменили в последний момент."
+              "text": "**Wie genau das Transkript ist, hängt von der Qualität der Aufnahme ab.**",
+              "translation_ru": "Точность расшифровки зависит от качества записи."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Ob die Wohnung im Sommer kühl bleibt, hängt nicht nur von teurer Technik ab.**",
+              "translation_ru": "Будет ли в квартире прохладно летом, зависит не только от дорогой техники."
             },
             {
-              "text": "**Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Успех проекта зависит от надёжной координации в ситуации, где участники ждали объяснения."
+              "text": "**Hängt die Teilnahme vom Alter ab, oder steht der Workshop allen offen?**",
+              "translation_ru": "Участие зависит от возраста или мастер-класс открыт для всех?"
             }
           ]
         }
       ],
       "formulas": [
-        "The success of the project depends on reliable coordination [the team was reviewing the new policy]",
-        "Der Erfolg des Projekts hängt von einer verlässlichen Koordination ab [das Team die neue Regelung prüfte]"
+        "[Outcome] depends on [factor / how-whether clause].",
+        "[Ergebnis] hängt von [Faktor im Dativ] ab / hängt davon ab, [Nebensatz]."
       ],
       "gen": {
         "status": "curated",

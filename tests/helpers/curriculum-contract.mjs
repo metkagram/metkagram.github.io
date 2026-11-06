@@ -17,7 +17,48 @@ export const practiceExpansionPatternIds = [
   "XPRRTR010", "XPRRTR011", "XPRRTR012",
   "XPRTRN004", "XPRTRN005", "XPRTRN006"
 ];
-const additivePatternIds = [...expansionPatternIds, ...practiceExpansionPatternIds];
+// Reviewed additions to the draft C1 curriculum; keep explicit, not derived
+// from the pending annotation ledger (which must become empty after spaCy rebuild).
+export const approvedC1PatternIds = [
+  "C1EVD042",
+  "C1ARG041",
+  "C1HED041",
+  "C1PRB042",
+  "C1CLR041",
+  "C1EVD043",
+  "C1AGR041",
+  "C1PRO041",
+  "C1STO041",
+  "C1AGR042",
+  "C1SOL001",
+  "C1MOD042",
+  "C1STO042",
+  "C1QCL001",
+  "C1QNGT001",
+  "C1QHYP001",
+  "C1QDIS001",
+  "C1QDEC001",
+  "C1PRI001",
+  "C1SUM001",
+  "C1CAU041",
+  "C1EVD041",
+  "C1QFOL001",
+  "C1QFRM001",
+  "C1CND041",
+  "C1TCT001",
+  "C1FBK001",
+  "C1PFR001",
+  "C1TAS041",
+  "C1REP041",
+  "C1KON001",
+  "C1FCS001",
+  "C1PRP001",
+  "C1MOD041",
+  "C1INF001",
+  "C1DET001",
+  "C1PRB041",
+];
+const additivePatternIds = [...expansionPatternIds, ...practiceExpansionPatternIds, ...approvedC1PatternIds];
 const expansionIds = new Set(additivePatternIds);
 export const isEstablishedPattern = pattern => !expansionIds.has(pattern.id);
 export const expectedPatternCount = frozenCorpus.mergedCorpus.patternCount + additivePatternIds.length;
@@ -28,6 +69,11 @@ export const canonicalIds = canonicalContent.advancedPatterns.map(pattern => pat
 export const historicalAliases = JSON.parse(fs.readFileSync(new URL('../../data/pattern-aliases.json', import.meta.url), 'utf8')).aliases;
 
 assert.equal(frozenCorpus.mergedCorpus.patternCount, 630, 'Do not silently regenerate the preservation baseline');
+assert.equal(approvedC1PatternIds.length, 37, 'approved C1 additions need explicit review');
+assert.equal(new Set(approvedC1PatternIds).size, approvedC1PatternIds.length, 'duplicate approved C1 additions');
+for (const id of approvedC1PatternIds) {
+  assert.ok(!Object.hasOwn(historicalAliases, id), `${id}: an approved C1 addition cannot reuse a retired alias`);
+}
 assert.equal(canonicalIds.length, expectedPatternCount);
 assert.equal(new Set(canonicalIds).size, canonicalIds.length);
 assert.deepEqual(canonicalContent.advancedPatterns.filter(pattern => !isEstablishedPattern(pattern)).map(pattern => pattern.id).sort(), [...additivePatternIds].sort());

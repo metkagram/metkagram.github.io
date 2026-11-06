@@ -101,85 +101,85 @@
       "id": "QSTQPRE011",
       "group_id": "QPRE",
       "set_id": "QPRE",
-      "title_ru": "По какой причине может быть так, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «По какой причине может быть так, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, на чём основан вывод или решение",
+      "metaphor_ru": "В английском вопросе предлог on часто стоит в конце, а в немецком worauf — в начале. Просите собеседника назвать основания оценки, а не повторить своё мнение.",
       "langs": [
         {
           "lang": "en",
-          "formula": "For what reason might it be that [the team needs another day to decide]?",
-          "example": "For what reason might it be that the team needs another day to decide?",
-          "translation": "По какой причине может быть так, что команде нужен ещё день для решения?",
+          "formula": "What are you basing [your conclusion] on?",
+          "example": "What are you basing your estimate of the repair time on?",
+          "translation": "На чём ты основываешь оценку времени ремонта?",
           "examples": [
             {
-              "text": "**For what reason might it be that the team needs another day to decide?**",
-              "translation_ru": "По какой причине может быть так, что команде нужен ещё день для решения?"
+              "text": "**What are you basing your estimate of the repair time on?**",
+              "translation_ru": "На чём ты основываешь оценку времени ремонта?"
             },
             {
-              "text": "**For what reason might it be that the revised plan has not been shared yet?**",
-              "translation_ru": "По какой причине может быть так, что обновлённым планом ещё не поделились?"
+              "text": "**What did the school base its decision to shorten the break on?**",
+              "translation_ru": "На чём школа основывала решение сократить перемену?"
             },
             {
-              "text": "**For what reason might it be that we should compare the two options?**",
-              "translation_ru": "По какой причине может быть так, что нам следует сравнить два варианта?"
+              "text": "**What would you base a recommendation to first-time travelers on?**",
+              "translation_ru": "На чём ты бы основывал совет людям, которые впервые отправляются в путешествие?"
             },
             {
-              "text": "**For what reason might it be that the client asked for more detail?**",
-              "translation_ru": "По какой причине может быть так, что клиент попросил больше деталей?"
+              "text": "**What is the council basing its flood warning on?**",
+              "translation_ru": "На каких данных местные власти основывают предупреждение о наводнении?"
             },
             {
-              "text": "**For what reason might it be that the pilot may continue next month?**",
-              "translation_ru": "По какой причине может быть так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What have they based their diagnosis of the network outage on?**",
+              "translation_ru": "На чём они основывали вывод о причине сбоя сети?"
             },
             {
-              "text": "**For what reason might it be that the data need another check?**",
-              "translation_ru": "По какой причине может быть так, что данные нужно проверить ещё раз?"
+              "text": "**What can we base our forecast for winter demand on?**",
+              "translation_ru": "На чём мы можем построить прогноз спроса на зиму?"
             },
             {
-              "text": "**For what reason might it be that the meeting was moved?**",
-              "translation_ru": "По какой причине может быть так, что встречу перенесли?"
+              "text": "**What are you basing your doubts about the study on?**",
+              "translation_ru": "На чём основаны твои сомнения в этом исследовании?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Aus welchem Grund könnte es sein, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Aus welchem Grund könnte es sein, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "По какой причине может быть так, что команде нужен ещё день для решения?",
+          "formula": "Worauf stützt [jemand] [seine Einschätzung]?",
+          "example": "Worauf stützt du deine Schätzung der Reparaturdauer?",
+          "translation": "На чём ты основываешь оценку времени ремонта?",
           "examples": [
             {
-              "text": "**Aus welchem Grund könnte es sein, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "По какой причине может быть так, что команде нужен ещё день для решения?"
+              "text": "**Worauf stützt du deine Schätzung der Reparaturdauer?**",
+              "translation_ru": "На чём ты основываешь оценку времени ремонта?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "По какой причине может быть так, что обновлённым планом ещё не поделились?"
+              "text": "**Worauf hat die Schule ihre Entscheidung gestützt, die Pause zu verkürzen?**",
+              "translation_ru": "На чём школа основывала решение сократить перемену?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "По какой причине может быть так, что нам следует сравнить два варианта?"
+              "text": "**Worauf würdest du eine Empfehlung für Menschen stützen, die zum ersten Mal verreisen?**",
+              "translation_ru": "На чём ты бы основывал совет людям, которые впервые отправляются в путешествие?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "По какой причине может быть так, что клиент попросил больше деталей?"
+              "text": "**Worauf stützt die Gemeinde ihre Hochwasserwarnung?**",
+              "translation_ru": "На каких данных местные власти основывают предупреждение о наводнении?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "По какой причине может быть так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Worauf haben sie ihre Diagnose der Netzstörung gestützt?**",
+              "translation_ru": "На чём они основывали вывод о причине сбоя сети?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "По какой причине может быть так, что данные нужно проверить ещё раз?"
+              "text": "**Worauf können wir unsere Prognose für den Bedarf im Winter stützen?**",
+              "translation_ru": "На чём мы можем построить прогноз спроса на зиму?"
             },
             {
-              "text": "**Aus welchem Grund könnte es sein, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "По какой причине может быть так, что встречу перенесли?"
+              "text": "**Worauf stützt du deine Zweifel an dieser Studie?**",
+              "translation_ru": "На чём основаны твои сомнения в этом исследовании?"
             }
           ]
         }
       ],
       "formulas": [
-        "For what reason might it be that [the team needs another day to decide]?",
-        "Aus welchem Grund könnte es sein, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What are you basing [your conclusion] on?",
+        "Worauf stützt [jemand] [seine Einschätzung]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQPRE021",
       "group_id": "QPRE",
       "set_id": "QPRE",
-      "title_ru": "При каких условиях может быть так, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «При каких условиях может быть так, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить, на кого можно положиться",
+      "metaphor_ru": "Тренируйте управление rely on в английском и sich auf jemanden verlassen в немецком. Меняйте ситуацию и время, сохраняя вопрос о надёжной поддержке.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Under what conditions could it be that [the team needs another day to decide]?",
-          "example": "Under what conditions could it be that the team needs another day to decide?",
-          "translation": "При каких условиях может быть так, что команде нужен ещё день для решения?",
+          "formula": "Who can [we] rely on [to help]?",
+          "example": "Who can we rely on to water the plants while we're away?",
+          "translation": "На кого можно положиться, чтобы поливать растения, пока нас нет дома?",
           "examples": [
             {
-              "text": "**Under what conditions could it be that the team needs another day to decide?**",
-              "translation_ru": "При каких условиях может быть так, что команде нужен ещё день для решения?"
+              "text": "**Who can we rely on to water the plants while we're away?**",
+              "translation_ru": "На кого можно положиться, чтобы поливать растения, пока нас нет дома?"
             },
             {
-              "text": "**Under what conditions could it be that the revised plan has not been shared yet?**",
-              "translation_ru": "При каких условиях может быть так, что обновлённым планом ещё не поделились?"
+              "text": "**Who did you rely on when you moved to Berlin?**",
+              "translation_ru": "На кого ты опирался, когда переехал в Берлин?"
             },
             {
-              "text": "**Under what conditions could it be that we should compare the two options?**",
-              "translation_ru": "При каких условиях может быть так, что нам следует сравнить два варианта?"
+              "text": "**Who could the students rely on for honest feedback before their presentations?**",
+              "translation_ru": "Кто мог бы дать студентам честный отзыв перед выступлением?"
             },
             {
-              "text": "**Under what conditions could it be that the client asked for more detail?**",
-              "translation_ru": "При каких условиях может быть так, что клиент попросил больше деталей?"
+              "text": "**Who are the neighbors relying on to organize the clean-up after the storm?**",
+              "translation_ru": "На кого рассчитывают соседи при организации уборки после бури?"
             },
             {
-              "text": "**Under what conditions could it be that the pilot may continue next month?**",
-              "translation_ru": "При каких условиях может быть так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Who would she rely on if her train were canceled tonight?**",
+              "translation_ru": "К кому она обратилась бы за помощью, если бы сегодня вечером отменили её поезд?"
             },
             {
-              "text": "**Under what conditions could it be that the data need another check?**",
-              "translation_ru": "При каких условиях может быть так, что данные нужно проверить ещё раз?"
+              "text": "**Who can your parents rely on if they need help with their new phone?**",
+              "translation_ru": "Кто поможет твоим родителям, если они не разберутся с новым телефоном?"
             },
             {
-              "text": "**Under what conditions could it be that the meeting was moved?**",
-              "translation_ru": "При каких условиях может быть так, что встречу перенесли?"
+              "text": "**Who did the volunteers rely on to translate the event invitation?**",
+              "translation_ru": "На чью помощь рассчитывали волонтёры при переводе приглашения на мероприятие?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Unter welchen Bedingungen könnte es sein, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Unter welchen Bedingungen könnte es sein, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "При каких условиях может быть так, что команде нужен ещё день для решения?",
+          "formula": "Auf wen können [wir] uns verlassen, wenn [Hilfe nötig ist]?",
+          "example": "Auf wen können wir uns verlassen, wenn wir weg sind und die Pflanzen gegossen werden müssen?",
+          "translation": "На кого можно положиться, чтобы поливать растения, пока нас нет дома?",
           "examples": [
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "При каких условиях может быть так, что команде нужен ещё день для решения?"
+              "text": "**Auf wen können wir uns verlassen, wenn wir weg sind und die Pflanzen gegossen werden müssen?**",
+              "translation_ru": "На кого можно положиться, чтобы поливать растения, пока нас нет дома?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "При каких условиях может быть так, что обновлённым планом ещё не поделились?"
+              "text": "**Auf wen hast du dich verlassen, als du nach Berlin gezogen bist?**",
+              "translation_ru": "На кого ты опирался, когда переехал в Берлин?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "При каких условиях может быть так, что нам следует сравнить два варианта?"
+              "text": "**Auf wen könnten sich die Studierenden verlassen, wenn sie vor ihren Vorträgen ehrliches Feedback brauchen?**",
+              "translation_ru": "Кто мог бы дать студентам честный отзыв перед выступлением?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "При каких условиях может быть так, что клиент попросил больше деталей?"
+              "text": "**Auf wen verlassen sich die Nachbarn bei der Organisation der Aufräumarbeiten nach dem Sturm?**",
+              "translation_ru": "На кого рассчитывают соседи при организации уборки после бури?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "При каких условиях может быть так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Auf wen würde sie sich verlassen, wenn ihr Zug heute Abend ausfiele?**",
+              "translation_ru": "К кому она обратилась бы за помощью, если бы сегодня вечером отменили её поезд?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "При каких условиях может быть так, что данные нужно проверить ещё раз?"
+              "text": "**Auf wen können sich deine Eltern verlassen, wenn sie mit ihrem neuen Handy Hilfe brauchen?**",
+              "translation_ru": "Кто поможет твоим родителям, если они не разберутся с новым телефоном?"
             },
             {
-              "text": "**Unter welchen Bedingungen könnte es sein, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "При каких условиях может быть так, что встречу перенесли?"
+              "text": "**Auf wen haben sich die Freiwilligen verlassen, als die Einladung zur Veranstaltung übersetzt werden musste?**",
+              "translation_ru": "На чью помощь рассчитывали волонтёры при переводе приглашения на мероприятие?"
             }
           ]
         }
       ],
       "formulas": [
-        "Under what conditions could it be that [the team needs another day to decide]?",
-        "Unter welchen Bedingungen könnte es sein, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Who can [we] rely on [to help]?",
+        "Auf wen können [wir] uns verlassen, wenn [Hilfe nötig ist]?"
       ],
       "gen": {
         "status": "curated",

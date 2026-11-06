@@ -6,85 +6,85 @@
       "id": "QSTQTAG001",
       "group_id": "QTAG",
       "set_id": "QTAG",
-      "title_ru": "Разве не так, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Разве не так, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Проверить предположение коротким вопросом в конце",
+      "metaphor_ru": "В английском согласуйте вспомогательный глагол и отрицание с основным утверждением: didn't you, has it, won't they. В разговорном немецком такую роль обычно выполняет oder?",
       "langs": [
         {
           "lang": "en",
-          "formula": "Isn't it the case that [the team needs another day to decide]?",
-          "example": "Isn't it the case that the team needs another day to decide?",
-          "translation": "Разве не так, что команде нужен ещё день для решения?",
+          "formula": "[Statement], [matching auxiliary + pronoun]?",
+          "example": "You locked the balcony door, didn't you?",
+          "translation": "Ты ведь запер балконную дверь?",
           "examples": [
             {
-              "text": "**Isn't it the case that the team needs another day to decide?**",
-              "translation_ru": "Разве не так, что команде нужен ещё день для решения?"
+              "text": "**You locked the balcony door, didn't you?**",
+              "translation_ru": "Ты ведь запер балконную дверь?"
             },
             {
-              "text": "**Isn't it the case that the revised plan has not been shared yet?**",
-              "translation_ru": "Разве не так, что обновлённым планом ещё не поделились?"
+              "text": "**The parcel hasn't arrived yet, has it?**",
+              "translation_ru": "Посылка ведь ещё не пришла?"
             },
             {
-              "text": "**Isn't it the case that we should compare the two options?**",
-              "translation_ru": "Разве не так, что нам следует сравнить два варианта?"
+              "text": "**They'll publish the timetable on Friday, won't they?**",
+              "translation_ru": "Расписание ведь опубликуют в пятницу?"
             },
             {
-              "text": "**Isn't it the case that the client asked for more detail?**",
-              "translation_ru": "Разве не так, что клиент попросил больше деталей?"
+              "text": "**This soup doesn't contain nuts, does it?**",
+              "translation_ru": "В этом супе ведь нет орехов?"
             },
             {
-              "text": "**Isn't it the case that the pilot may continue next month?**",
-              "translation_ru": "Разве не так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**You'd rather take the train, wouldn't you?**",
+              "translation_ru": "Ты ведь предпочёл бы поезд?"
             },
             {
-              "text": "**Isn't it the case that the data need another check?**",
-              "translation_ru": "Разве не так, что данные нужно проверить ещё раз?"
+              "text": "**Mina has met our new neighbor, hasn't she?**",
+              "translation_ru": "Мина ведь уже познакомилась с нашим новым соседом?"
             },
             {
-              "text": "**Isn't it the case that the meeting was moved?**",
-              "translation_ru": "Разве не так, что встречу перенесли?"
+              "text": "**I should bring my passport, shouldn't I?**",
+              "translation_ru": "Мне ведь нужно взять паспорт?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Stimmt es nicht, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Stimmt es nicht, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Разве не так, что команде нужен ещё день для решения?",
+          "formula": "[Aussage], oder?",
+          "example": "Du hast die Balkontür abgeschlossen, oder?",
+          "translation": "Ты ведь запер балконную дверь?",
           "examples": [
             {
-              "text": "**Stimmt es nicht, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Разве не так, что команде нужен ещё день для решения?"
+              "text": "**Du hast die Balkontür abgeschlossen, oder?**",
+              "translation_ru": "Ты ведь запер балконную дверь?"
             },
             {
-              "text": "**Stimmt es nicht, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Разве не так, что обновлённым планом ещё не поделились?"
+              "text": "**Das Paket ist noch nicht angekommen, oder?**",
+              "translation_ru": "Посылка ведь ещё не пришла?"
             },
             {
-              "text": "**Stimmt es nicht, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Разве не так, что нам следует сравнить два варианта?"
+              "text": "**Sie veröffentlichen den Fahrplan am Freitag, oder?**",
+              "translation_ru": "Расписание ведь опубликуют в пятницу?"
             },
             {
-              "text": "**Stimmt es nicht, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Разве не так, что клиент попросил больше деталей?"
+              "text": "**In dieser Suppe sind keine Nüsse, oder?**",
+              "translation_ru": "В этом супе ведь нет орехов?"
             },
             {
-              "text": "**Stimmt es nicht, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Разве не так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Du würdest lieber mit dem Zug fahren, oder?**",
+              "translation_ru": "Ты ведь предпочёл бы поезд?"
             },
             {
-              "text": "**Stimmt es nicht, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Разве не так, что данные нужно проверить ещё раз?"
+              "text": "**Mina hat unseren neuen Nachbarn schon kennengelernt, oder?**",
+              "translation_ru": "Мина ведь уже познакомилась с нашим новым соседом?"
             },
             {
-              "text": "**Stimmt es nicht, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Разве не так, что встречу перенесли?"
+              "text": "**Ich sollte meinen Reisepass mitnehmen, oder?**",
+              "translation_ru": "Мне ведь нужно взять паспорт?"
             }
           ]
         }
       ],
       "formulas": [
-        "Isn't it the case that [the team needs another day to decide]?",
-        "Stimmt es nicht, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "[Statement], [matching auxiliary + pronoun]?",
+        "[Aussage], oder?"
       ],
       "gen": {
         "status": "curated",

@@ -6,85 +6,85 @@
       "id": "QSTQPOL001",
       "group_id": "QPOL",
       "set_id": "QPOL",
-      "title_ru": "Не могли бы вы сообщить нам, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Не могли бы вы сообщить нам, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Вежливо запросить уточнение: верно ли обстоятельство",
+      "metaphor_ru": "Использовать косвенный вопрос с whether / ob, не сохраняя прямой порядок слов после вводной просьбы.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Could you let us know whether [the team needs another day to decide]?",
-          "example": "Could you let us know whether the team needs another day to decide?",
-          "translation": "Не могли бы вы сообщить нам, команде нужен ещё день для решения?",
+          "formula": "Could you let us know whether [statement]?",
+          "example": "Could you let us know whether the exhibition is accessible without stairs?",
+          "translation": "Не могли бы вы уточнить, можно ли попасть на выставку без лестниц?",
           "examples": [
             {
-              "text": "**Could you let us know whether the team needs another day to decide?**",
-              "translation_ru": "Не могли бы вы сообщить нам, команде нужен ещё день для решения?"
+              "text": "**Could you let us know whether the exhibition is accessible without stairs?**",
+              "translation_ru": "Не могли бы вы уточнить, можно ли попасть на выставку без лестниц?"
             },
             {
-              "text": "**Could you let us know whether the revised plan has not been shared yet?**",
-              "translation_ru": "Не могли бы вы сообщить нам, обновлённым планом ещё не поделились?"
+              "text": "**Could you let us know whether the parcel was left at the reception desk?**",
+              "translation_ru": "Не могли бы вы сообщить, оставили ли посылку на стойке регистрации?"
             },
             {
-              "text": "**Could you let us know whether we should compare the two options?**",
-              "translation_ru": "Не могли бы вы сообщить нам, нам следует сравнить два варианта?"
+              "text": "**Could you let us know whether participants may switch language groups halfway through the course?**",
+              "translation_ru": "Не могли бы вы уточнить, могут ли участники перейти в другую языковую группу посреди курса?"
             },
             {
-              "text": "**Could you let us know whether the client asked for more detail?**",
-              "translation_ru": "Не могли бы вы сообщить нам, клиент попросил больше деталей?"
+              "text": "**Could you let us know whether any of the recordings contain personal information?**",
+              "translation_ru": "Не могли бы вы уточнить, есть ли в какой-нибудь записи персональные данные?"
             },
             {
-              "text": "**Could you let us know whether the pilot may continue next month?**",
-              "translation_ru": "Не могли бы вы сообщить нам, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Could you let us know whether our booking can be moved to Saturday evening?**",
+              "translation_ru": "Не могли бы вы сообщить, можно ли перенести нашу бронь на вечер субботы?"
             },
             {
-              "text": "**Could you let us know whether the data need another check?**",
-              "translation_ru": "Не могли бы вы сообщить нам, данные нужно проверить ещё раз?"
+              "text": "**Could you let us know whether the revised timetable has been approved by the volunteers?**",
+              "translation_ru": "Не могли бы вы уточнить, согласовали ли волонтёры изменённое расписание?"
             },
             {
-              "text": "**Could you let us know whether the meeting was moved?**",
-              "translation_ru": "Не могли бы вы сообщить нам, встречу перенесли?"
+              "text": "**Could you let us know whether we need to bring our own equipment to the workshop?**",
+              "translation_ru": "Не могли бы вы уточнить, нужно ли приносить своё оборудование на практическое занятие?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Könnten Sie uns wissen lassen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Könnten Sie uns wissen lassen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Не могли бы вы сообщить нам, команде нужен ещё день для решения?",
+          "formula": "Könnten Sie uns mitteilen, ob [Nebensatz]?",
+          "example": "Könnten Sie uns mitteilen, ob die Ausstellung stufenlos zugänglich ist?",
+          "translation": "Не могли бы вы уточнить, можно ли попасть на выставку без лестниц?",
           "examples": [
             {
-              "text": "**Könnten Sie uns wissen lassen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Не могли бы вы сообщить нам, команде нужен ещё день для решения?"
+              "text": "**Könnten Sie uns mitteilen, ob die Ausstellung stufenlos zugänglich ist?**",
+              "translation_ru": "Не могли бы вы уточнить, можно ли попасть на выставку без лестниц?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Не могли бы вы сообщить нам, обновлённым планом ещё не поделились?"
+              "text": "**Könnten Sie uns mitteilen, ob das Paket am Empfang abgegeben wurde?**",
+              "translation_ru": "Не могли бы вы сообщить, оставили ли посылку на стойке регистрации?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Не могли бы вы сообщить нам, нам следует сравнить два варианта?"
+              "text": "**Könnten Sie uns mitteilen, ob Teilnehmende während des Kurses die Sprachgruppe wechseln dürfen?**",
+              "translation_ru": "Не могли бы вы уточнить, могут ли участники перейти в другую языковую группу посреди курса?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Не могли бы вы сообщить нам, клиент попросил больше деталей?"
+              "text": "**Könnten Sie uns mitteilen, ob eine der Aufnahmen personenbezogene Daten enthält?**",
+              "translation_ru": "Не могли бы вы уточнить, есть ли в какой-нибудь записи персональные данные?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Не могли бы вы сообщить нам, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Könnten Sie uns mitteilen, ob wir unsere Reservierung auf Samstagabend verschieben können?**",
+              "translation_ru": "Не могли бы вы сообщить, можно ли перенести нашу бронь на вечер субботы?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Не могли бы вы сообщить нам, данные нужно проверить ещё раз?"
+              "text": "**Könnten Sie uns mitteilen, ob die Ehrenamtlichen dem überarbeiteten Zeitplan zugestimmt haben?**",
+              "translation_ru": "Не могли бы вы уточнить, согласовали ли волонтёры изменённое расписание?"
             },
             {
-              "text": "**Könnten Sie uns wissen lassen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Не могли бы вы сообщить нам, встречу перенесли?"
+              "text": "**Könnten Sie uns mitteilen, ob wir zum Workshop eigene Geräte mitbringen müssen?**",
+              "translation_ru": "Не могли бы вы уточнить, нужно ли приносить своё оборудование на практическое занятие?"
             }
           ]
         }
       ],
       "formulas": [
-        "Could you let us know whether [the team needs another day to decide]?",
-        "Könnten Sie uns wissen lassen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Could you let us know whether [statement]?",
+        "Könnten Sie uns mitteilen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

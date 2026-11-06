@@ -385,85 +385,85 @@
     {
       "id": "GER005",
       "group_id": "GER",
-      "title_ru": "Привык к чему-то",
-      "metaphor_ru": "Как износившиеся кроссовки: сначала натирают, но со временем становятся второй кожей — ты не замечаешь и чувствуешь себя уверенно.",
+      "title_ru": "Привычное действие или условие: уже привык",
+      "metaphor_ru": "Английское be used to + существительное или -ing обозначает уже сложившуюся привычку, а не процесс привыкания. Немецкие соответствия: es gewohnt sein, ... zu и an + Akkusativ gewöhnt sein.",
       "langs": [
         {
           "lang": "en",
-          "formula": "be used to + V-ing",
-          "example": "I’m used to working under pressure.",
-          "translation": "Я привык работать под давлением.",
+          "formula": "subject + be (not) used to + noun / verb-ing.",
+          "example": "I'm used to taking the early train, so the six o'clock departure doesn't bother me.",
+          "translation": "Я привык ездить на раннем поезде, поэтому отправление в шесть меня не смущает.",
           "examples": [
             {
-              "text": "She is **used to** **working** late nights.",
-              "translation_ru": "Она привыкла работать допоздна."
+              "text": "I'm used to taking the early train, so the six o'clock departure doesn't bother me.",
+              "translation_ru": "Я привык ездить на раннем поезде, поэтому отправление в шесть меня не смущает."
             },
             {
-              "text": "Are you **used to** **eating** spicy food?",
-              "translation_ru": "Ты привык есть острую еду?"
+              "text": "She wasn't used to sharing a kitchen when she moved into the flat.",
+              "translation_ru": "Когда она переехала в квартиру, ей было непривычно делить кухню с другими."
             },
             {
-              "text": "They are **getting used to** **the new software**.",
-              "translation_ru": "Они привыкают к новому программному обеспечению."
+              "text": "Are you used to giving presentations without reading from your notes?",
+              "translation_ru": "Ты привык выступать с презентациями, не зачитывая текст по бумажке?"
             },
             {
-              "text": "He wasn’t **used to** **driving** in the city.",
-              "translation_ru": "Он не привык водить в городе."
+              "text": "After years by the sea, they're used to strong winds in autumn.",
+              "translation_ru": "После многих лет у моря они привыкли к сильным осенним ветрам."
             },
             {
-              "text": "We’re **used to** **the noise** from the street.",
-              "translation_ru": "Мы привыкли к шуму с улицы."
+              "text": "We're not used to such blunt feedback, but I appreciate the clarity.",
+              "translation_ru": "Мы не привыкли к такой прямой обратной связи, но я ценю эту ясность."
             },
             {
-              "text": "I'm slowly **getting used to** **the cold weather**.",
-              "translation_ru": "Я постепенно привыкаю к холодной погоде."
+              "text": "My grandfather is used to doing the crossword before breakfast.",
+              "translation_ru": "Мой дедушка привык разгадывать кроссворд перед завтраком."
             },
             {
-              "text": "Is she **used to** **the new job** yet?",
-              "translation_ru": "Она уже привыкла к новой работе?"
+              "text": "He was used to working alone and felt uneasy at his first orchestra rehearsal.",
+              "translation_ru": "Он привык работать в одиночку и чувствовал себя неуверенно на первой репетиции оркестра."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "an + Akkusativ + gewöhnt sein, + zu + Infinitiv",
-          "example": "Ich bin daran gewöhnt, unter Druck zu arbeiten.",
-          "translation": "Я привык работать под давлением.",
+          "formula": "an + Akkusativ gewöhnt sein / es gewohnt sein, ... zu + Infinitiv.",
+          "example": "Ich bin es gewohnt, den ersten Zug zu nehmen; das frühe Aufstehen macht mir nichts aus.",
+          "translation": "Я привык садиться на самый ранний поезд, поэтому ранний подъём меня не беспокоит.",
           "examples": [
             {
-              "text": "Sie ist **daran gewöhnt**, **spät zu arbeiten**.",
-              "translation_ru": "Она привыкла работать допоздна."
+              "text": "Ich bin es gewohnt, den ersten Zug zu nehmen; das frühe Aufstehen macht mir nichts aus.",
+              "translation_ru": "Я привык садиться на самый ранний поезд, поэтому ранний подъём меня не беспокоит."
             },
             {
-              "text": "Bist du **daran gewöhnt**, **scharfes Essen zu essen**?",
-              "translation_ru": "Ты привык есть острую еду?"
+              "text": "Sie war es nicht gewohnt, sich die Küche zu teilen, als sie in die WG zog.",
+              "translation_ru": "Когда она поселилась с соседями, ей было непривычно пользоваться общей кухней."
             },
             {
-              "text": "Sie **gewöhnen sich** **an die neue Software**.",
-              "translation_ru": "Они привыкают к новому программному обеспечению."
+              "text": "Bist du es gewohnt, frei zu sprechen, ohne von deinen Notizen abzulesen?",
+              "translation_ru": "Ты привык говорить свободно, не зачитывая текст из заметок?"
             },
             {
-              "text": "Er war nicht **daran gewöhnt**, **in der Stadt zu fahren**.",
-              "translation_ru": "Он не привык водить в городе."
+              "text": "Nach vielen Jahren an der Küste sind sie an starken Herbstwind gewöhnt.",
+              "translation_ru": "После многих лет на побережье они привыкли к сильному осеннему ветру."
             },
             {
-              "text": "Wir sind **an den Lärm von der Straße gewöhnt**.",
-              "translation_ru": "Мы привыкли к шуму с улицы."
+              "text": "Wir sind diese direkte Art von Feedback nicht gewohnt, aber ich finde sie hilfreich.",
+              "translation_ru": "Мы не привыкли к такой прямой обратной связи, но я считаю её полезной."
             },
             {
-              "text": "Ich **gewöhne mich** **langsam an das kalte Wetter**.",
-              "translation_ru": "Я постепенно привыкаю к холодной погоде."
+              "text": "Mein Großvater ist es gewohnt, vor dem Frühstück Kreuzworträtsel zu lösen.",
+              "translation_ru": "Мой дедушка привык разгадывать кроссворды перед завтраком."
             },
             {
-              "text": "Ist sie **schon an die neue Arbeit gewöhnt**?",
-              "translation_ru": "Она уже привыкла к новой работе?"
+              "text": "Er war es gewohnt, allein zu arbeiten, und fühlte sich bei der ersten Orchesterprobe unsicher.",
+              "translation_ru": "Он привык работать один и чувствовал себя неуверенно на первой репетиции оркестра."
             }
           ]
         }
       ],
       "formulas": [
-        "be used to + V-ing",
-        "an + Akkusativ + gewöhnt sein, + zu + Infinitiv"
+        "subject + be (not) used to + noun / verb-ing.",
+        "an + Akkusativ gewöhnt sein / es gewohnt sein, ... zu + Infinitiv."
       ],
       "gen": {
         "status": "generated",
@@ -480,85 +480,85 @@
     {
       "id": "GER006",
       "group_id": "GER",
-      "title_ru": "Привыкаю к чему-то новому",
-      "metaphor_ru": "Как катиться на новом велосипеде: сначала неуверенно, но постепенно руки и тело учатся держать баланс.",
+      "title_ru": "Постепенно привыкать к новому",
+      "metaphor_ru": "Get used to + -ing/существительное выражает переход от непривычного к привычному. В отличие от be used to, это процесс. В немецком используется sich an + Akkusativ gewöhnen или sich daran gewöhnen, ... zu.",
       "langs": [
         {
           "lang": "en",
-          "formula": "get used to + V-ing",
-          "example": "I’m getting used to managing a larger team.",
-          "translation": "Я привыкаю управлять большей командой.",
+          "formula": "subject + get / be getting / got used to + noun / verb-ing.",
+          "example": "I'm slowly getting used to answering questions in German without translating first.",
+          "translation": "Я постепенно привыкаю отвечать на немецком, не переводя сначала в голове.",
           "examples": [
             {
-              "text": "They are **getting used to** **living** in a new city.",
-              "translation_ru": "Они привыкают жить в новом городе."
+              "text": "I'm slowly getting used to answering questions in German without translating first.",
+              "translation_ru": "Я постепенно привыкаю отвечать на немецком, не переводя сначала в голове."
             },
             {
-              "text": "Are you **getting used to** **the new software**?",
-              "translation_ru": "Ты привыкаешь к новому программному обеспечению?"
+              "text": "Are the children getting used to the new school timetable?",
+              "translation_ru": "Дети уже привыкают к новому школьному расписанию?"
             },
             {
-              "text": "She can't **get used to** **the cold weather**.",
-              "translation_ru": "Она не может привыкнуть к холодной погоде."
+              "text": "She never quite got used to living above a noisy café.",
+              "translation_ru": "Она так и не привыкла жить над шумным кафе."
             },
             {
-              "text": "We quickly **got used to** **the faster pace**.",
-              "translation_ru": "Мы быстро привыкли к более быстрому темпу."
+              "text": "It took us weeks to get used to cooking on an induction hob.",
+              "translation_ru": "Нам понадобилось несколько недель, чтобы привыкнуть готовить на индукционной плите."
             },
             {
-              "text": "He is **getting used to** **speaking** in public.",
-              "translation_ru": "Он привыкает выступать на публике."
+              "text": "You'll get used to cycling in the rain if you give yourself time.",
+              "translation_ru": "Со временем ты привыкнешь ездить на велосипеде под дождём."
             },
             {
-              "text": "I'm not **getting used to** **the noise**.",
-              "translation_ru": "Я не привыкаю к шуму."
+              "text": "We're still getting used to the updated accessibility settings.",
+              "translation_ru": "Мы всё ещё привыкаем к обновлённым настройкам доступности."
             },
             {
-              "text": "Are they **getting used to** **remote work**?",
-              "translation_ru": "Они привыкают к удаленной работе?"
+              "text": "How long did it take you to get used to speaking into a microphone?",
+              "translation_ru": "Сколько времени тебе понадобилось, чтобы привыкнуть говорить в микрофон?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "sich daran gewöhnen, + zu + Infinitiv",
-          "example": "Ich gewöhne mich daran, ein größeres Team zu leiten.",
-          "translation": "Я привыкаю управлять большей командой.",
+          "formula": "sich an + Akkusativ gewöhnen / sich daran gewöhnen, ... zu + Infinitiv.",
+          "example": "Ich gewöhne mich langsam daran, auf Deutsch zu antworten, ohne vorher zu übersetzen.",
+          "translation": "Я понемногу привыкаю отвечать по-немецки без предварительного перевода.",
           "examples": [
             {
-              "text": "Sie **gewöhnen sich daran**, **in einer neuen Stadt zu leben**.",
-              "translation_ru": "Они привыкают жить в новом городе."
+              "text": "Ich gewöhne mich langsam daran, auf Deutsch zu antworten, ohne vorher zu übersetzen.",
+              "translation_ru": "Я понемногу привыкаю отвечать по-немецки без предварительного перевода."
             },
             {
-              "text": "Gewöhnst du dich **an die neue Software**?",
-              "translation_ru": "Ты привыкаешь к новому программному обеспечению?"
+              "text": "Haben sich die Kinder inzwischen an den neuen Stundenplan gewöhnt?",
+              "translation_ru": "Дети уже привыкли к новому расписанию?"
             },
             {
-              "text": "Sie kann sich nicht **an das kalte Wetter gewöhnen**.",
-              "translation_ru": "Она не может привыкнуть к холодной погоде."
+              "text": "Sie hat sich nie richtig daran gewöhnt, über einem lauten Café zu wohnen.",
+              "translation_ru": "Она так и не привыкла жить над шумным кафе."
             },
             {
-              "text": "Wir haben uns schnell **an das schnellere Tempo gewöhnt**.",
-              "translation_ru": "Мы быстро привыкли к более быстрому темпу."
+              "text": "Es hat Wochen gedauert, bis wir uns an den Induktionsherd gewöhnt hatten.",
+              "translation_ru": "Нам потребовались недели, чтобы привыкнуть к индукционной плите."
             },
             {
-              "text": "Er **gewöhnt sich daran**, **öffentlich zu sprechen**.",
-              "translation_ru": "Он привыкает выступать на публике."
+              "text": "Mit der Zeit wirst du dich daran gewöhnen, auch bei Regen Rad zu fahren.",
+              "translation_ru": "Со временем ты привыкнешь ездить на велосипеде даже в дождь."
             },
             {
-              "text": "Ich **gewöhne mich nicht an den Lärm**.",
-              "translation_ru": "Я не привыкаю к шуму."
+              "text": "Wir gewöhnen uns noch an die neuen Bedienungshilfen der App.",
+              "translation_ru": "Мы пока привыкаем к новым функциям доступности в приложении."
             },
             {
-              "text": "Gewöhnen sie sich **an die Fernarbeit**?",
-              "translation_ru": "Они привыкают к удаленной работе?"
+              "text": "Wie lange hast du gebraucht, um dich daran zu gewöhnen, ins Mikrofon zu sprechen?",
+              "translation_ru": "Сколько тебе потребовалось времени, чтобы привыкнуть говорить в микрофон?"
             }
           ]
         }
       ],
       "formulas": [
-        "get used to + V-ing",
-        "sich daran gewöhnen, + zu + Infinitiv"
+        "subject + get / be getting / got used to + noun / verb-ing.",
+        "sich an + Akkusativ gewöhnen / sich daran gewöhnen, ... zu + Infinitiv."
       ],
       "gen": {
         "status": "generated",

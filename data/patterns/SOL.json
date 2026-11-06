@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Problem-solving."
       }
+    },
+    {
+      "id": "C1SOL001",
+      "group_id": "SOL",
+      "set_id": "SOL",
+      "title_ru": "Проверить важные условия до окончательного выбора",
+      "metaphor_ru": "Отложите необратимое решение ради дешёвой проверки. Английское before we commit to ... требует существительного или -ing, немецкое sich auf ... festlegen — винительного падежа.",
+      "title_en": "Before we commit to [X], let's [Y]",
+      "description_ru": "Отложите необратимое решение ради дешёвой проверки. Английское before we commit to ... требует существительного или -ing, немецкое sich auf ... festlegen — винительного падежа.",
+      "description_en": "Suggest a small, useful check before committing to a difficult-to-reverse course of action.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Before we commit to [X], let's [Y].",
+          "example": "Before we commit to a longer lease, let's check how noisy the street gets at night.",
+          "translation": "Прежде чем подписывать договор аренды на долгий срок, давай проверим, насколько шумно ночью на этой улице.",
+          "examples": [
+            {
+              "text": "**Before we commit to a longer lease, let's check how noisy the street gets at night.**",
+              "translation_ru": "Прежде чем подписывать договор аренды на долгий срок, давай проверим, насколько шумно ночью на этой улице."
+            },
+            {
+              "text": "**Before we commit to a new study plan, let's try a week of speaking practice and see what sticks.**",
+              "translation_ru": "Прежде чем утверждать новый план учёбы, давай неделю попрактикуем разговорную речь и посмотрим, что усвоится."
+            },
+            {
+              "text": "**Before we commit to that hiking route, let's check whether the bridge has reopened after the floods.**",
+              "translation_ru": "Прежде чем выбирать этот маршрут, давай узнаем, открыли ли мост после наводнения."
+            },
+            {
+              "text": "**Before we commit to a complete rewrite of the app, let's measure where the delays actually come from.**",
+              "translation_ru": "Прежде чем переписывать приложение с нуля, давай выясним измерениями, откуда на самом деле возникают задержки."
+            },
+            {
+              "text": "**Before we commit to a group gift, let's find out whether she already has one.**",
+              "translation_ru": "Прежде чем договариваться о совместном подарке, давай выясним, нет ли у неё уже такой вещи."
+            },
+            {
+              "text": "**Before we commit to announcing the event publicly, let's ask the volunteers whether those dates work.**",
+              "translation_ru": "Прежде чем публично объявлять о мероприятии, давай спросим волонтёров, подходят ли им даты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Bevor wir uns auf [X] festlegen, sollten wir erst [Y].",
+          "example": "Bevor wir uns auf einen längeren Mietvertrag festlegen, sollten wir erst prüfen, wie laut es nachts auf der Straße wird.",
+          "translation": "Прежде чем подписывать договор аренды на долгий срок, давай проверим, насколько шумно ночью на этой улице.",
+          "examples": [
+            {
+              "text": "**Bevor wir uns auf einen längeren Mietvertrag festlegen, sollten wir erst prüfen, wie laut es nachts auf der Straße wird.**",
+              "translation_ru": "Прежде чем подписывать договор аренды на долгий срок, давай проверим, насколько шумно ночью на этой улице."
+            },
+            {
+              "text": "**Bevor wir uns auf einen neuen Lernplan festlegen, sollten wir erst eine Woche lang Sprechen üben und sehen, was hängen bleibt.**",
+              "translation_ru": "Прежде чем утверждать новый план учёбы, давай неделю попрактикуем разговорную речь и посмотрим, что усвоится."
+            },
+            {
+              "text": "**Bevor wir uns auf diese Wanderroute festlegen, sollten wir erst prüfen, ob die Brücke nach dem Hochwasser wieder offen ist.**",
+              "translation_ru": "Прежде чем выбирать этот маршрут, давай узнаем, открыли ли мост после наводнения."
+            },
+            {
+              "text": "**Bevor wir uns auf eine vollständige Neuentwicklung der App festlegen, sollten wir erst messen, woher die Verzögerungen tatsächlich kommen.**",
+              "translation_ru": "Прежде чем переписывать приложение с нуля, давай выясним измерениями, откуда на самом деле возникают задержки."
+            },
+            {
+              "text": "**Bevor wir uns auf ein gemeinsames Geschenk festlegen, sollten wir erst herausfinden, ob sie so etwas schon hat.**",
+              "translation_ru": "Прежде чем договариваться о совместном подарке, давай выясним, нет ли у неё уже такой вещи."
+            },
+            {
+              "text": "**Bevor wir uns auf eine öffentliche Ankündigung der Veranstaltung festlegen, sollten wir erst die Ehrenamtlichen fragen, ob ihnen die Termine passen.**",
+              "translation_ru": "Прежде чем публично объявлять о мероприятии, давай спросим волонтёров, подходят ли им даты."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Before we commit to [X], let's [Y].",
+        "Bevor wir uns auf [X] festlegen, sollten wir erst [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-11T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Reviewed-language learning frame; local spaCy annotation pending."
+      }
     }
   ]
 }

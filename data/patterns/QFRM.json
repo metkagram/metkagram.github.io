@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Question forms and auxiliaries."
       }
+    },
+    {
+      "id": "C1QFRM001",
+      "group_id": "QFRM",
+      "set_id": "QFRM",
+      "title_ru": "Спросить, как давно длится действие",
+      "metaphor_ru": "Различайте английское Present Perfect Continuous и немецкое настоящее время с schon. Вежливый вопрос помогает уточнить длительность, не предполагая дату начала.",
+      "title_en": "How long has [someone] been [doing something]?",
+      "description_en": "Ask about an activity continuing into the present: English uses have/has been + -ing; German typically uses present tense with schon.",
+      "description_ru": "Различайте английское Present Perfect Continuous и немецкое настоящее время с schon. Вежливый вопрос помогает уточнить длительность, не предполагая дату начала.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "How long has/have [subject] been [verb-ing]?",
+          "example": "How long have you been waiting for the repair technician?",
+          "translation": "Как давно вы ждёте мастера?",
+          "examples": [
+            {
+              "text": "**How long have you been waiting for the repair technician?**",
+              "translation_ru": "Как давно вы ждёте мастера?"
+            },
+            {
+              "text": "**How long has your sister been preparing for her driving test?**",
+              "translation_ru": "Как давно твоя сестра готовится к экзамену по вождению?"
+            },
+            {
+              "text": "**How long have the neighbours upstairs been renovating their flat?**",
+              "translation_ru": "Как давно соседи сверху делают ремонт?"
+            },
+            {
+              "text": "**How long has the heating been making that rattling noise?**",
+              "translation_ru": "Давно отопление так стучит?"
+            },
+            {
+              "text": "**How long have you been researching the history of this building?**",
+              "translation_ru": "Как давно ты изучаешь историю этого здания?"
+            },
+            {
+              "text": "**How long has the council been discussing a safer crossing near the school?**",
+              "translation_ru": "Как давно городской совет обсуждает более безопасный пешеходный переход возле школы?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?",
+          "example": "Wie lange warten Sie schon auf den Reparaturdienst?",
+          "translation": "Как давно вы ждёте мастера?",
+          "examples": [
+            {
+              "text": "**Wie lange warten Sie schon auf den Reparaturdienst?**",
+              "translation_ru": "Как давно вы ждёте мастера?"
+            },
+            {
+              "text": "**Wie lange bereitet sich deine Schwester schon auf die Fahrprüfung vor?**",
+              "translation_ru": "Как давно твоя сестра готовится к экзамену по вождению?"
+            },
+            {
+              "text": "**Wie lange renovieren die Nachbarn über uns schon ihre Wohnung?**",
+              "translation_ru": "Как давно соседи сверху делают ремонт?"
+            },
+            {
+              "text": "**Wie lange klappert die Heizung denn schon so?**",
+              "translation_ru": "Давно отопление так стучит?"
+            },
+            {
+              "text": "**Wie lange recherchierst du schon zur Geschichte dieses Hauses?**",
+              "translation_ru": "Как давно ты изучаешь историю этого здания?"
+            },
+            {
+              "text": "**Wie lange diskutiert der Stadtrat schon über einen sichereren Fußgängerüberweg bei der Schule?**",
+              "translation_ru": "Как давно городской совет обсуждает более безопасный пешеходный переход возле школы?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "How long has/have [subject] been [verb-ing]?",
+        "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

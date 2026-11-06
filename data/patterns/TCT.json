@@ -196,85 +196,85 @@
       "id": "FUNTCT021",
       "group_id": "TCT",
       "set_id": "TCT",
-      "title_ru": "Возможно, мы могли бы прояснить, почему команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «такт и вежливость» в живом контексте.",
+      "title_ru": "Тактично предложить прояснить причину",
+      "metaphor_ru": "Perhaps we could clarify why / Vielleicht könnten wir klären, warum: мягко предложите совместное выяснение причины до оценки, обвинения или действия. Косвенный вопрос в немецком заканчивается сказуемым.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Perhaps we could clarify why [the team needs another day to decide].",
-          "example": "Perhaps we could clarify why the team needs another day to decide.",
-          "translation": "Возможно, мы могли бы прояснить, почему команде нужен ещё день для решения.",
+          "formula": "Perhaps we could clarify why [event happened] before [reaction].",
+          "example": "Perhaps we could clarify why the deadline was moved before blaming anyone for the delay.",
+          "translation": "Может, сначала выясним, почему перенесли срок, прежде чем кого-то обвинять?",
           "examples": [
             {
-              "text": "**Perhaps we could clarify why the team needs another day to decide.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему команде нужен ещё день для решения."
+              "text": "**Perhaps we could clarify why the deadline was moved before blaming anyone for the delay.**",
+              "translation_ru": "Может, сначала выясним, почему перенесли срок, прежде чем кого-то обвинять?"
             },
             {
-              "text": "**Perhaps we could clarify why the revised plan has not been shared yet.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему обновлённым планом ещё не поделились."
+              "text": "**Perhaps we could clarify why Lena felt excluded before planning another group activity.**",
+              "translation_ru": "Может, сперва выясним, почему Лена почувствовала себя чужой, прежде чем снова что-то планировать вместе?"
             },
             {
-              "text": "**Perhaps we could clarify why we should compare the two options.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему нам следует сравнить два варианта."
+              "text": "**Perhaps we could clarify why the kitchen tap keeps dripping before replacing the entire fitting.**",
+              "translation_ru": "Может, сначала выясним, почему на кухне постоянно капает кран, прежде чем менять весь смеситель?"
             },
             {
-              "text": "**Perhaps we could clarify why the client asked for more detail.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему клиент попросил больше деталей."
+              "text": "**Perhaps we could clarify why the survey reached so few older residents before drawing conclusions.**",
+              "translation_ru": "Может, стоит понять, почему опрос охватил так мало пожилых жителей, прежде чем делать выводы?"
             },
             {
-              "text": "**Perhaps we could clarify why the pilot may continue next month.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**Perhaps we could clarify why the subtitles disappear on mobile before publishing the video.**",
+              "translation_ru": "Может, сначала выясним, почему субтитры пропадают на телефоне, прежде чем публиковать видео?"
             },
             {
-              "text": "**Perhaps we could clarify why the data need another check.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему данные нужно проверить ещё раз."
+              "text": "**Perhaps we could clarify why he prefers to practise alone before assigning him a partner.**",
+              "translation_ru": "Может, сначала выясним, почему ему удобнее заниматься одному, прежде чем назначать ему напарника?"
             },
             {
-              "text": "**Perhaps we could clarify why the meeting was moved.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему встречу перенесли."
+              "text": "**Perhaps we could clarify why the instructions contradict each other before training the new volunteers.**",
+              "translation_ru": "Может, сначала разберёмся, почему инструкции друг другу противоречат, прежде чем обучать новых волонтёров?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Vielleicht könnten wir klären, warum [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Vielleicht könnten wir klären, warum das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Возможно, мы могли бы прояснить, почему команде нужен ещё день для решения.",
+          "formula": "Vielleicht könnten wir erst klären, warum [Ereignis], bevor [Reaktion].",
+          "example": "Vielleicht könnten wir erst klären, warum die Frist verschoben wurde, bevor wir jemandem die Schuld geben.",
+          "translation": "Может, сначала выясним, почему перенесли срок, а уже потом будем искать виноватых?",
           "examples": [
             {
-              "text": "**Vielleicht könnten wir klären, warum das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему команде нужен ещё день для решения."
+              "text": "**Vielleicht könnten wir erst klären, warum die Frist verschoben wurde, bevor wir jemandem die Schuld geben.**",
+              "translation_ru": "Может, сначала выясним, почему перенесли срок, а уже потом будем искать виноватых?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему обновлённым планом ещё не поделились."
+              "text": "**Vielleicht könnten wir erst klären, warum Lena sich ausgeschlossen fühlte, bevor wir die nächste Gruppenaktivität planen.**",
+              "translation_ru": "Может, сначала разберёмся, почему Лена чувствовала себя исключённой, прежде чем организовывать новое групповое занятие?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему нам следует сравнить два варианта."
+              "text": "**Vielleicht könnten wir erst klären, warum der Wasserhahn in der Küche ständig tropft, bevor wir die ganze Armatur austauschen.**",
+              "translation_ru": "Может, сначала выясним, почему постоянно капает кухонный кран, прежде чем менять весь смеситель?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему клиент попросил больше деталей."
+              "text": "**Vielleicht könnten wir erst klären, warum so wenige ältere Menschen an der Umfrage teilgenommen haben, bevor wir Schlüsse ziehen.**",
+              "translation_ru": "Может, сначала выясним, почему в опросе участвовало так мало пожилых людей, прежде чем делать выводы?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**Vielleicht könnten wir erst klären, warum die Untertitel auf dem Handy verschwinden, bevor wir das Video veröffentlichen.**",
+              "translation_ru": "Может, выясним, почему на телефоне исчезают субтитры, прежде чем публиковать ролик?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему данные нужно проверить ещё раз."
+              "text": "**Vielleicht könnten wir erst klären, warum er lieber allein übt, bevor wir ihm einen Lernpartner zuteilen.**",
+              "translation_ru": "Может, сначала выясним, почему он предпочитает заниматься один, прежде чем назначать партнёра?"
             },
             {
-              "text": "**Vielleicht könnten wir klären, warum die Sitzung verschoben wurde.**",
-              "translation_ru": "Возможно, мы могли бы прояснить, почему встречу перенесли."
+              "text": "**Vielleicht könnten wir erst klären, warum sich die Anleitungen widersprechen, bevor wir die neuen Ehrenamtlichen einarbeiten.**",
+              "translation_ru": "Может, сначала выясним, почему инструкции противоречат друг другу, прежде чем обучать новых волонтёров?"
             }
           ]
         }
       ],
       "formulas": [
-        "Perhaps we could clarify why [the team needs another day to decide].",
-        "Vielleicht könnten wir klären, warum [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "Perhaps we could clarify why [event happened] before [reaction].",
+        "Vielleicht könnten wir erst klären, warum [Ereignis], bevor [Reaktion]."
       ],
       "gen": {
         "status": "curated",
@@ -380,6 +380,96 @@
           "de"
         ],
         "notes": "Functional pattern: Tact and politeness."
+      }
+    },
+    {
+      "id": "C1TCT001",
+      "group_id": "TCT",
+      "set_id": "TCT",
+      "title_ru": "Тактично напомнить о договорённости",
+      "metaphor_ru": "Если договорённость понята по-разному, начните с допущения собственной ошибки, а не с обвинения собеседника. Немецкое hätten vereinbart помогает передать осторожность и прошлое ожидание.",
+      "title_en": "I may have misunderstood, but I thought we'd agreed to [X]",
+      "description_en": "Raise a discrepancy in a prior agreement without accusing anyone; German uses a natural tentative preface and Konjunktiv II after dachte.",
+      "description_ru": "Если договорённость понята по-разному, начните с допущения собственной ошибки, а не с обвинения собеседника. Немецкое hätten vereinbart помогает передать осторожность и прошлое ожидание.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "I may have misunderstood, but I thought we'd agreed to [X].",
+          "example": "I may have misunderstood, but I thought we'd agreed to keep Saturday free for the family.",
+          "translation": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?",
+          "examples": [
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to keep Saturday free for the family.**",
+              "translation_ru": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to send the corrected invitation before noon.**",
+              "translation_ru": "Может, я неправильно понял: мы же собирались отправить исправленное приглашение до полудня?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to speak to the volunteers before changing the route.**",
+              "translation_ru": "Возможно, я упустил деталь, но мы ведь договорились сначала поговорить с волонтёрами, а потом менять маршрут?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to leave the old photos untouched until we'd made a backup.**",
+              "translation_ru": "Я мог что-то перепутать, но, кажется, мы договорились не трогать старые фотографии до создания резервной копии."
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to leave time for questions after the talk.**",
+              "translation_ru": "Может, я понял неверно, но мы же хотели оставить время на вопросы после выступления?"
+            },
+            {
+              "text": "**I may have misunderstood, but I thought we'd agreed to try the quieter room before buying another microphone.**",
+              "translation_ru": "Возможно, я ошибаюсь, но мы ведь решили сначала попробовать более тихую комнату, прежде чем покупать ещё один микрофон?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, [X].",
+          "example": "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, den Samstag für die Familie freizuhalten.",
+          "translation": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?",
+          "examples": [
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, den Samstag für die Familie freizuhalten.**",
+              "translation_ru": "Возможно, я что-то не так понял, но разве мы не договорились оставить субботу для семьи?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, die korrigierte Einladung noch vor Mittag zu verschicken.**",
+              "translation_ru": "Может, я неправильно понял: мы же собирались отправить исправленное приглашение до полудня?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, vor einer Streckenänderung mit den Freiwilligen zu sprechen.**",
+              "translation_ru": "Возможно, я упустил деталь, но мы ведь договорились сначала поговорить с волонтёрами, а потом менять маршрут?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, die alten Fotos nicht anzurühren, bevor wir eine Sicherungskopie haben.**",
+              "translation_ru": "Я мог что-то перепутать, но, кажется, мы договорились не трогать старые фотографии до создания резервной копии."
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, nach dem Vortrag Zeit für Fragen zu lassen.**",
+              "translation_ru": "Может, я понял неверно, но мы же хотели оставить время на вопросы после выступления?"
+            },
+            {
+              "text": "**Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, erst den ruhigeren Raum zu testen, bevor wir ein weiteres Mikrofon kaufen.**",
+              "translation_ru": "Возможно, я ошибаюсь, но мы ведь решили сначала попробовать более тихую комнату, прежде чем покупать ещё один микрофон?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "I may have misunderstood, but I thought we'd agreed to [X].",
+        "Vielleicht habe ich das missverstanden, aber ich dachte, wir hätten vereinbart, [X]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
       }
     }
   ]

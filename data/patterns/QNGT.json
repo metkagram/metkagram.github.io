@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Negotiation questions."
       }
+    },
+    {
+      "id": "C1QNGT001",
+      "group_id": "QNGT",
+      "set_id": "QNGT",
+      "title_ru": "Предложить уступку в обмен на условие",
+      "metaphor_ru": "Договаривайтесь без давления: спросите о готовности к конкретной уступке, предложив условие, которое делает её приемлемой.",
+      "title_en": "Would you be open to [X] if [Y]?",
+      "description_en": "Explore a mutually workable compromise by making a specific conditional offer without demanding agreement.",
+      "description_ru": "Договаривайтесь без давления: спросите о готовности к конкретной уступке, предложив условие, которое делает её приемлемой.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Would you be open to [X] if [Y]?",
+          "example": "Would you be open to swapping shifts if I covered your Sunday morning?",
+          "translation": "Ты согласился бы поменяться сменами, если я выйду за тебя в воскресенье утром?",
+          "examples": [
+            {
+              "text": "**Would you be open to swapping shifts if I covered your Sunday morning?**",
+              "translation_ru": "Ты согласился бы поменяться сменами, если я выйду за тебя в воскресенье утром?"
+            },
+            {
+              "text": "**Would you be open to keeping the music down on weekdays if weekends were a little more flexible?**",
+              "translation_ru": "Ты не против делать музыку тише по будням, если по выходным правила будут чуть свободнее?"
+            },
+            {
+              "text": "**Would you be open to postponing the launch by two days if we used the time to improve accessibility?**",
+              "translation_ru": "Ты согласился бы отложить запуск на два дня, если мы потратим это время на улучшение доступности приложения?"
+            },
+            {
+              "text": "**Would you be open to taking a shorter hiking route if the forecast still showed thunderstorms?**",
+              "translation_ru": "Ты согласился бы выбрать маршрут покороче, если прогноз по-прежнему обещает грозы?"
+            },
+            {
+              "text": "**Would you be open to sharing your notes if I wrote a summary of the missing chapter?**",
+              "translation_ru": "Ты поделился бы конспектом, если я подготовлю краткое изложение пропущенной главы?"
+            },
+            {
+              "text": "**Would you be open to trying the new schedule for a month if everyone could opt out afterwards?**",
+              "translation_ru": "Ты согласился бы попробовать новое расписание в течение месяца, если потом каждый сможет отказаться?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wärst du bereit, [X] zu tun, wenn [Y]?",
+          "example": "Wärst du bereit, die Schichten zu tauschen, wenn ich deinen Sonntagvormittag übernehme?",
+          "translation": "Ты согласился бы поменяться сменами, если я выйду за тебя в воскресенье утром?",
+          "examples": [
+            {
+              "text": "**Wärst du bereit, die Schichten zu tauschen, wenn ich deinen Sonntagvormittag übernehme?**",
+              "translation_ru": "Ты согласился бы поменяться сменами, если я выйду за тебя в воскресенье утром?"
+            },
+            {
+              "text": "**Wärst du bereit, die Musik unter der Woche leiser zu stellen, wenn wir am Wochenende etwas flexibler wären?**",
+              "translation_ru": "Ты не против делать музыку тише по будням, если по выходным правила будут чуть свободнее?"
+            },
+            {
+              "text": "**Wärst du bereit, den Start um zwei Tage zu verschieben, wenn wir in der Zeit die Barrierefreiheit verbessern?**",
+              "translation_ru": "Ты согласился бы отложить запуск на два дня, если мы потратим это время на улучшение доступности приложения?"
+            },
+            {
+              "text": "**Wärst du bereit, eine kürzere Wanderroute zu wählen, wenn der Wetterbericht weiterhin Gewitter ankündigt?**",
+              "translation_ru": "Ты согласился бы выбрать маршрут покороче, если прогноз по-прежнему обещает грозы?"
+            },
+            {
+              "text": "**Wärst du bereit, mir deine Mitschriften zu geben, wenn ich dafür das fehlende Kapitel zusammenfasse?**",
+              "translation_ru": "Ты поделился бы конспектом, если я подготовлю краткое изложение пропущенной главы?"
+            },
+            {
+              "text": "**Wärst du bereit, den neuen Dienstplan einen Monat lang auszuprobieren, wenn danach alle wieder aussteigen könnten?**",
+              "translation_ru": "Ты согласился бы попробовать новое расписание в течение месяца, если потом каждый сможет отказаться?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Would you be open to [X] if [Y]?",
+        "Wärst du bereit, [X] zu tun, wenn [Y]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 productive frame; local spaCy dependency annotation pending."
+      }
     }
   ]
 }

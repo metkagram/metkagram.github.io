@@ -381,6 +381,96 @@
         ],
         "notes": "Functional pattern: Feedback and evaluation."
       }
+    },
+    {
+      "id": "C1FBK001",
+      "group_id": "FBK",
+      "set_id": "FBK",
+      "title_ru": "Оценить сильную сторону и предложить улучшение",
+      "metaphor_ru": "Не ограничивайтесь общим одобрением или критикой: назовите удачную деталь и одну конкретную правку. В английском тренируются две what-clause, в немецком — живой порядок слов с вынесенным дополнением.",
+      "title_en": "What works about [X] is [Y]; what I'd change is [Z]",
+      "description_en": "Give balanced, actionable feedback by naming one successful feature and one specific change rather than vague praise or criticism.",
+      "description_ru": "Не ограничивайтесь общим одобрением или критикой: назовите удачную деталь и одну конкретную правку. В английском тренируются две what-clause, в немецком — живой порядок слов с вынесенным дополнением.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What works well about [X] is [Y]; what I'd change is [Z].",
+          "example": "What works well about your explanation is the example from daily life; what I'd change is the abrupt ending.",
+          "translation": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил.",
+          "examples": [
+            {
+              "text": "**What works well about your explanation is the example from daily life; what I'd change is the abrupt ending.**",
+              "translation_ru": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил."
+            },
+            {
+              "text": "**What works well about the neighbourhood map is its large labels; what I'd change is the confusing legend.**",
+              "translation_ru": "На карте района мне нравятся крупные подписи, но запутанную легенду я бы упростил."
+            },
+            {
+              "text": "**What works well about the workshop is the practical exercise; what I'd change is the rushed introduction.**",
+              "translation_ru": "В вашем мастер-классе особенно полезно практическое упражнение, а слишком поспешное вступление стоило бы доработать."
+            },
+            {
+              "text": "**What works well about this recipe is the short ingredient list; what I'd change is the vague baking time.**",
+              "translation_ru": "В этом рецепте хорош короткий список продуктов, но время выпечки нужно указать точнее."
+            },
+            {
+              "text": "**What works well about the new app is the offline search; what I'd change is the crowded settings screen.**",
+              "translation_ru": "В новом приложении отлично работает поиск без интернета, но перегруженный экран настроек я бы упростил."
+            },
+            {
+              "text": "**What works well about the weekly schedule is the longer break; what I'd change is the late finish for parents.**",
+              "translation_ru": "В расписании мне нравится длинный перерыв, но слишком позднее окончание для родителей я бы пересмотрел."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "An [X] gefällt mir besonders [Y]; [Z] würde ich noch [verb].",
+          "example": "An deiner Erklärung gefällt mir besonders das Alltagsbeispiel; den abrupten Schluss würde ich noch überarbeiten.",
+          "translation": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил.",
+          "examples": [
+            {
+              "text": "**An deiner Erklärung gefällt mir besonders das Alltagsbeispiel; den abrupten Schluss würde ich noch überarbeiten.**",
+              "translation_ru": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил."
+            },
+            {
+              "text": "**An der Karte unseres Viertels gefallen mir besonders die großen Beschriftungen; die unübersichtliche Legende würde ich noch vereinfachen.**",
+              "translation_ru": "На карте района мне нравятся крупные подписи, но запутанную легенду я бы упростил."
+            },
+            {
+              "text": "**An eurem Workshop gefällt mir besonders die praktische Übung; den hastigen Einstieg würde ich noch verbessern.**",
+              "translation_ru": "В вашем мастер-классе особенно полезно практическое упражнение, а слишком поспешное вступление стоило бы доработать."
+            },
+            {
+              "text": "**An diesem Rezept gefällt mir besonders die kurze Zutatenliste; die ungenaue Backzeit würde ich noch präzisieren.**",
+              "translation_ru": "В этом рецепте хорош короткий список продуктов, но время выпечки нужно указать точнее."
+            },
+            {
+              "text": "**An der neuen App gefällt mir besonders die Suche ohne Internetverbindung; die überladene Einstellungsseite würde ich noch vereinfachen.**",
+              "translation_ru": "В новом приложении отлично работает поиск без интернета, но перегруженный экран настроек я бы упростил."
+            },
+            {
+              "text": "**Am Wochenplan gefällt mir besonders die längere Pause; das späte Ende für Eltern würde ich noch überdenken.**",
+              "translation_ru": "В расписании мне нравится длинный перерыв, но слишком позднее окончание для родителей я бы пересмотрел."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What works well about [X] is [Y]; what I'd change is [Z].",
+        "An [X] gefällt mir besonders [Y]; [Z] würde ich noch [verb]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

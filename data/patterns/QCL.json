@@ -381,6 +381,96 @@
         ],
         "notes": "Question pattern: Clarification questions."
       }
+    },
+    {
+      "id": "C1QCL001",
+      "group_id": "QCL",
+      "set_id": "QCL",
+      "title_ru": "Два возможных смысла одного высказывания",
+      "metaphor_ru": "Уточняйте неоднозначное слово или утверждение через две конкретные трактовки вместо расплывчатого «Что ты имеешь в виду?».",
+      "title_en": "When you say [X], do you mean [Y] or [Z]?",
+      "description_en": "Resolve ambiguous language by offering two plausible interpretations and asking which one the speaker intends.",
+      "description_ru": "Уточняйте неоднозначное слово или утверждение через две конкретные трактовки вместо расплывчатого «Что ты имеешь в виду?».",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "When you say [X], do you mean [Y] or [Z]?",
+          "example": "When you say 'soon', do you mean before lunch or sometime this week?",
+          "translation": "Когда ты говоришь «скоро», ты имеешь в виду до обеда или когда-нибудь на этой неделе?",
+          "examples": [
+            {
+              "text": "**When you say 'soon', do you mean before lunch or sometime this week?**",
+              "translation_ru": "Когда ты говоришь «скоро», ты имеешь в виду до обеда или когда-нибудь на этой неделе?"
+            },
+            {
+              "text": "**When you say the room is 'available', do you mean we can use it now or book it for Saturday?**",
+              "translation_ru": "Когда ты говоришь, что комната свободна, ты имеешь в виду, что мы можем занять её сейчас или забронировать на субботу?"
+            },
+            {
+              "text": "**When you say the lesson was 'challenging', do you mean the grammar was unfamiliar or the pace was too fast?**",
+              "translation_ru": "Когда ты говоришь, что занятие было сложным, дело в незнакомой грамматике или в слишком быстром темпе?"
+            },
+            {
+              "text": "**When you say 'offline', do you mean without an internet connection or without an account?**",
+              "translation_ru": "Когда ты говоришь «офлайн», ты имеешь в виду без подключения к интернету или без учётной записи?"
+            },
+            {
+              "text": "**When you say we 'agreed', do you mean everyone approved the plan or simply that nobody objected?**",
+              "translation_ru": "Когда ты говоришь, что мы договорились, все одобрили план или просто никто не возразил?"
+            },
+            {
+              "text": "**When you say she's 'independent', do you mean she prefers working alone or rarely asks for help?**",
+              "translation_ru": "Когда ты называешь её самостоятельной, ты имеешь в виду, что она предпочитает работать одна или редко просит помощи?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Wenn du [X] sagst, meinst du [Y] oder [Z]?",
+          "example": "Wenn du „bald“ sagst, meinst du noch vor dem Mittagessen oder irgendwann diese Woche?",
+          "translation": "Когда ты говоришь «скоро», ты имеешь в виду до обеда или когда-нибудь на этой неделе?",
+          "examples": [
+            {
+              "text": "**Wenn du „bald“ sagst, meinst du noch vor dem Mittagessen oder irgendwann diese Woche?**",
+              "translation_ru": "Когда ты говоришь «скоро», ты имеешь в виду до обеда или когда-нибудь на этой неделе?"
+            },
+            {
+              "text": "**Wenn du sagst, der Raum sei „frei“, meinst du, dass wir ihn jetzt nutzen oder für Samstag reservieren können?**",
+              "translation_ru": "Когда ты говоришь, что комната свободна, ты имеешь в виду, что мы можем занять её сейчас или забронировать на субботу?"
+            },
+            {
+              "text": "**Wenn du den Unterricht „anspruchsvoll“ nennst, meinst du die ungewohnte Grammatik oder das hohe Tempo?**",
+              "translation_ru": "Когда ты говоришь, что занятие было сложным, дело в незнакомой грамматике или в слишком быстром темпе?"
+            },
+            {
+              "text": "**Wenn du „offline“ sagst, meinst du ohne Internetverbindung oder ohne Benutzerkonto?**",
+              "translation_ru": "Когда ты говоришь «офлайн», ты имеешь в виду без подключения к интернету или без учётной записи?"
+            },
+            {
+              "text": "**Wenn du sagst, wir seien uns „einig“, meinst du, dass alle zugestimmt haben oder dass einfach niemand widersprochen hat?**",
+              "translation_ru": "Когда ты говоришь, что мы договорились, все одобрили план или просто никто не возразил?"
+            },
+            {
+              "text": "**Wenn du sie als „selbstständig“ beschreibst, meinst du, dass sie lieber allein arbeitet oder selten um Hilfe bittet?**",
+              "translation_ru": "Когда ты называешь её самостоятельной, ты имеешь в виду, что она предпочитает работать одна или редко просит помощи?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "When you say [X], do you mean [Y] or [Z]?",
+        "Wenn du [X] sagst, meinst du [Y] oder [Z]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 productive frame; local spaCy dependency annotation pending."
+      }
     }
   ]
 }
