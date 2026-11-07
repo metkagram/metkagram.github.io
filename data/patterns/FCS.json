@@ -6,85 +6,85 @@
       "id": "GRMFCS001",
       "group_id": "FCS",
       "set_id": "FCS",
-      "title_ru": "Мы редко видели столь явное улучшение",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «мы редко видели столь явное улучшение» в живом контексте.",
+      "title_ru": "Редкое событие: инверсия в начале фразы",
+      "metaphor_ru": "Слово rarely в начале английского предложения требует обратного порядка вспомогательного глагола и подлежащего; немецкое selten занимает первое место, после него идёт личная форма глагола.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Rarely have we seen such a clear improvement [the team was reviewing the new policy]",
-          "example": "Rarely have we seen such a clear improvement in a situation where the team was reviewing the new policy.",
-          "translation": "Мы редко видели столь явное улучшение в ситуации, где команда проверяла новую политику.",
+          "formula": "Rarely + auxiliary/modal + subject + main verb ... .",
+          "example": "Rarely have I felt so relieved as when our missing dog finally came home.",
+          "translation": "Редко я испытывал такое облегчение, как в тот вечер, когда наш пропавший пёс наконец вернулся домой.",
           "examples": [
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где команда проверяла новую политику."
+              "text": "**Rarely have I felt so relieved as when our missing dog finally came home.**",
+              "translation_ru": "Редко я испытывал такое облегчение, как в тот вечер, когда наш пропавший пёс наконец вернулся домой."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Rarely do we get a chance to hear both sides before a decision is made.**",
+              "translation_ru": "Нам редко выпадает возможность выслушать обе стороны до принятия решения."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Rarely had the village seen such heavy rain before the river burst its banks.**",
+              "translation_ru": "До разлива реки деревня почти не сталкивалась с такими сильными дождями."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Rarely does she interrupt, but this time the claim was plainly wrong.**",
+              "translation_ru": "Она почти никогда не перебивает, но на этот раз утверждение было откровенно неверным."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где расписание изменили в последний момент."
+              "text": "**Rarely have students challenged a textbook as thoughtfully as this group did.**",
+              "translation_ru": "Студенты редко подвергали учебник столь вдумчивой критике, как эта группа."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Rarely can a small change make such a difference to daily life.**",
+              "translation_ru": "Редко небольшое изменение способно настолько облегчить повседневную жизнь."
             },
             {
-              "text": "**Rarely have we seen such a clear improvement in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где участники ждали объяснения."
+              "text": "**Rarely did the neighbours agree on anything, yet they all supported the new crossing.**",
+              "translation_ru": "Соседи редко в чём-то сходились, но новый пешеходный переход поддержали все."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Selten haben wir eine so deutliche Verbesserung gesehen [das Team die neue Regelung prüfte]",
-          "example": "Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Мы редко видели столь явное улучшение в ситуации, где команда проверяла новую политику.",
+          "formula": "Selten + finites Verb + Subjekt + ... .",
+          "example": "Selten war ich so erleichtert wie an dem Abend, als unser entlaufener Hund zurückkam.",
+          "translation": "Редко я испытывал такое облегчение, как в тот вечер, когда наш убежавший пёс вернулся домой.",
           "examples": [
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где команда проверяла новую политику."
+              "text": "**Selten war ich so erleichtert wie an dem Abend, als unser entlaufener Hund zurückkam.**",
+              "translation_ru": "Редко я испытывал такое облегчение, как в тот вечер, когда наш убежавший пёс вернулся домой."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Selten bekommen wir die Gelegenheit, beide Seiten zu hören, bevor eine Entscheidung fällt.**",
+              "translation_ru": "Нам редко удаётся выслушать обе стороны до принятия решения."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Selten hatte das Dorf so starken Regen erlebt, bevor der Fluss über die Ufer trat.**",
+              "translation_ru": "До разлива реки деревня почти не знала таких сильных дождей."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Selten unterbricht sie jemanden, doch diesmal war die Behauptung schlicht falsch.**",
+              "translation_ru": "Она редко кого-то перебивает, но на этот раз утверждение было совершенно неверным."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где расписание изменили в последний момент."
+              "text": "**Selten haben Schülerinnen und Schüler ein Lehrbuch so kritisch hinterfragt wie diese Gruppe.**",
+              "translation_ru": "Школьники редко ставили учебник под сомнение так вдумчиво, как эта группа."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Selten kann eine kleine Änderung den Alltag so spürbar erleichtern.**",
+              "translation_ru": "Редко небольшая перемена может настолько заметно облегчить повседневную жизнь."
             },
             {
-              "text": "**Selten haben wir eine so deutliche Verbesserung gesehen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Мы редко видели столь явное улучшение в ситуации, где участники ждали объяснения."
+              "text": "**Selten waren sich die Nachbarn einig, aber für den neuen Zebrastreifen waren alle.**",
+              "translation_ru": "Соседи редко бывали единодушны, но новый пешеходный переход поддержали все."
             }
           ]
         }
       ],
       "formulas": [
-        "Rarely have we seen such a clear improvement [the team was reviewing the new policy]",
-        "Selten haben wir eine so deutliche Verbesserung gesehen [das Team die neue Regelung prüfte]"
+        "Rarely + auxiliary/modal + subject + main verb ... .",
+        "Selten + finites Verb + Subjekt + ... ."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMFCS016",
       "group_id": "FCS",
       "set_id": "FCS",
-      "title_ru": "Именно нехватка данных изменила решение",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «именно нехватка данных изменила решение» в живом контексте.",
+      "title_ru": "Выделить решающий фактор",
+      "metaphor_ru": "Подчеркните, какой человек или факт действительно определил результат: английское выделительное предложение и немецкое предложение с относительным местоимением.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It was the lack of evidence that changed the decision [the team was reviewing the new policy]",
-          "example": "It was the lack of evidence that changed the decision in a situation where the team was reviewing the new policy.",
-          "translation": "Именно нехватка данных изменила решение в ситуации, где команда проверяла новую политику.",
+          "formula": "It was [focus] who/that [event or effect].",
+          "example": "It was my sister who noticed the damp patch behind the wardrobe.",
+          "translation": "Именно моя сестра заметила сырое пятно за шкафом.",
           "examples": [
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где команда проверяла новую политику."
+              "text": "**It was my sister who noticed the damp patch behind the wardrobe.**",
+              "translation_ru": "Именно моя сестра заметила сырое пятно за шкафом."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**It was the final question that changed my mind about the course.**",
+              "translation_ru": "Именно последний вопрос заставил меня пересмотреть мнение о курсе."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**It was the broken lift, not the stairs, that prevented her from seeing the exhibition.**",
+              "translation_ru": "Посетить выставку ей помешал именно сломанный лифт, а не лестница."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**It was the quietest student who offered the clearest explanation.**",
+              "translation_ru": "Самое понятное объяснение дал именно самый тихий ученик."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где расписание изменили в последний момент."
+              "text": "**It was a misleading headline that caused the confusion, not the article itself.**",
+              "translation_ru": "Путаницу вызвал именно вводящий в заблуждение заголовок, а не сама статья."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**It was our neighbour who found the missing key under the bench.**",
+              "translation_ru": "Потерянный ключ под скамейкой нашёл именно сосед."
             },
             {
-              "text": "**It was the lack of evidence that changed the decision in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где участники ждали объяснения."
+              "text": "**It was the chance to practise aloud that made the language group worthwhile.**",
+              "translation_ru": "Именно возможность практиковаться вслух сделала языковую группу полезной."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es war der Mangel an Belegen, der die Entscheidung veränderte [das Team die neue Regelung prüfte]",
-          "example": "Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Именно нехватка данных изменила решение в ситуации, где команда проверяла новую политику.",
+          "formula": "Es war [Fokus], der/die/das [Handlung oder Wirkung].",
+          "example": "Es war meine Schwester, die den feuchten Fleck hinter dem Schrank bemerkte.",
+          "translation": "Именно моя сестра заметила сырое пятно за шкафом.",
           "examples": [
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где команда проверяла новую политику."
+              "text": "**Es war meine Schwester, die den feuchten Fleck hinter dem Schrank bemerkte.**",
+              "translation_ru": "Именно моя сестра заметила сырое пятно за шкафом."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Es war die letzte Frage, die meine Meinung über den Kurs änderte.**",
+              "translation_ru": "Именно последний вопрос изменил моё мнение о курсе."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Es war der defekte Aufzug, der ihr den Besuch der Ausstellung unmöglich machte, nicht die Treppe.**",
+              "translation_ru": "Посетить выставку ей помешал именно неисправный лифт, а не лестница."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Es war ausgerechnet der stillste Schüler, der die verständlichste Erklärung gab.**",
+              "translation_ru": "Самое понятное объяснение дал как раз самый тихий ученик."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где расписание изменили в последний момент."
+              "text": "**Es war eine irreführende Überschrift, die für Verwirrung sorgte, nicht der Artikel selbst.**",
+              "translation_ru": "Путаницу вызвал именно обманчивый заголовок, а не сама статья."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Es war unser Nachbar, der den verlorenen Schlüssel unter der Bank fand.**",
+              "translation_ru": "Потерянный ключ под скамейкой нашёл именно наш сосед."
             },
             {
-              "text": "**Es war der Mangel an Belegen, der die Entscheidung veränderte in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Именно нехватка данных изменила решение в ситуации, где участники ждали объяснения."
+              "text": "**Es war die Möglichkeit, laut zu üben, die die Sprachgruppe so wertvoll machte.**",
+              "translation_ru": "Именно возможность тренироваться вслух сделала языковую группу такой ценной."
             }
           ]
         }
       ],
       "formulas": [
-        "It was the lack of evidence that changed the decision [the team was reviewing the new policy]",
-        "Es war der Mangel an Belegen, der die Entscheidung veränderte [das Team die neue Regelung prüfte]"
+        "It was [focus] who/that [event or effect].",
+        "Es war [Fokus], der/die/das [Handlung oder Wirkung]."
       ],
       "gen": {
         "status": "curated",
@@ -386,85 +386,85 @@
       "id": "GRMFCS021",
       "group_id": "FCS",
       "set_id": "FCS",
-      "title_ru": "Команда не только выявила риск, но и снизила его",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «команда не только выявила риск, но и снизила его» в живом контексте.",
+      "title_ru": "Не только сделать, но и пойти дальше",
+      "metaphor_ru": "Соедините два существенных достижения и выделите добавочное действие. После начального not only английский требует инверсии; в немецком естественна связка nicht nur ... sondern auch.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Not only did the team identify the risk, but it also reduced it [the team was reviewing the new policy]",
-          "example": "Not only did the team identify the risk, but it also reduced it in a situation where the team was reviewing the new policy.",
-          "translation": "Команда не только выявила риск, но и снизила его в ситуации, где команда проверяла новую политику.",
+          "formula": "Not only + auxiliary/modal + subject + verb ..., but [subject] also ... .",
+          "example": "Not only did Maya fix the bicycle, but she also taught her son how to adjust the brakes.",
+          "translation": "Майя не только починила велосипед, но и научила сына регулировать тормоза.",
           "examples": [
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где команда проверяла новую политику."
+              "text": "**Not only did Maya fix the bicycle, but she also taught her son how to adjust the brakes.**",
+              "translation_ru": "Майя не только починила велосипед, но и научила сына регулировать тормоза."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Not only did the library extend its opening hours, but it also introduced a quiet study room.**",
+              "translation_ru": "Библиотека не только продлила часы работы, но и открыла тихую комнату для занятий."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Not only have we cut food waste, but we've also started sharing surplus meals with neighbours.**",
+              "translation_ru": "Мы не только сократили пищевые отходы, но и начали делиться лишней едой с соседями."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Not only did he admit he was wrong, but he also listened without interrupting.**",
+              "translation_ru": "Он не только признал свою ошибку, но и выслушал собеседника, не перебивая."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где расписание изменили в последний момент."
+              "text": "**Not only can this app read text aloud, but it can also enlarge the letters for readers with low vision.**",
+              "translation_ru": "Приложение умеет не только читать текст вслух, но и увеличивать шрифт для слабовидящих."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Not only did they restore the old footpath, but they also planted trees along it.**",
+              "translation_ru": "Они не только восстановили старую пешеходную тропу, но и посадили вдоль неё деревья."
             },
             {
-              "text": "**Not only did the team identify the risk, but it also reduced it in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где участники ждали объяснения."
+              "text": "**Not only was the explanation clear, but it also left room for disagreement.**",
+              "translation_ru": "Объяснение было не только понятным, но и оставляло пространство для несогласия."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das Team erkannte nicht nur das Risiko, sondern verringerte es auch [das Team die neue Regelung prüfte]",
-          "example": "Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Команда не только выявила риск, но и снизила его в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] + Verb + nicht nur [A], sondern auch [B].",
+          "example": "Maya hat nicht nur das Fahrrad repariert, sondern ihrem Sohn auch gezeigt, wie man die Bremsen einstellt.",
+          "translation": "Майя не только починила велосипед, но и показала сыну, как регулировать тормоза.",
           "examples": [
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где команда проверяла новую политику."
+              "text": "**Maya hat nicht nur das Fahrrad repariert, sondern ihrem Sohn auch gezeigt, wie man die Bremsen einstellt.**",
+              "translation_ru": "Майя не только починила велосипед, но и показала сыну, как регулировать тормоза."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Die Bibliothek hat nicht nur ihre Öffnungszeiten verlängert, sondern auch einen ruhigen Lernraum eingerichtet.**",
+              "translation_ru": "Библиотека не только увеличила часы работы, но и обустроила тихую комнату для учёбы."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Wir haben nicht nur weniger Lebensmittel weggeworfen, sondern teilen überschüssiges Essen inzwischen auch mit unseren Nachbarn.**",
+              "translation_ru": "Мы не только стали выбрасывать меньше продуктов, но теперь ещё и делимся лишней едой с соседями."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Er hat nicht nur seinen Fehler zugegeben, sondern auch zugehört, ohne jemanden zu unterbrechen.**",
+              "translation_ru": "Он не только признал ошибку, но и внимательно выслушал других, никого не перебивая."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где расписание изменили в последний момент."
+              "text": "**Die App kann Texte nicht nur vorlesen, sondern auch die Schrift für Menschen mit Sehbeeinträchtigung vergrößern.**",
+              "translation_ru": "Приложение может не только озвучивать текст, но и увеличивать шрифт для людей со слабым зрением."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Sie haben nicht nur den alten Wanderweg wiederhergestellt, sondern auch Bäume entlang des Weges gepflanzt.**",
+              "translation_ru": "Они не только восстановили старую тропу, но и посадили вдоль неё деревья."
             },
             {
-              "text": "**Das Team erkannte nicht nur das Risiko, sondern verringerte es auch in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Команда не только выявила риск, но и снизила его в ситуации, где участники ждали объяснения."
+              "text": "**Die Erklärung war nicht nur verständlich, sondern ließ auch Raum für Widerspruch.**",
+              "translation_ru": "Объяснение было не только понятным, но и допускало возражения."
             }
           ]
         }
       ],
       "formulas": [
-        "Not only did the team identify the risk, but it also reduced it [the team was reviewing the new policy]",
-        "Das Team erkannte nicht nur das Risiko, sondern verringerte es auch [das Team die neue Regelung prüfte]"
+        "Not only + auxiliary/modal + subject + verb ..., but [subject] also ... .",
+        "[Subjekt] + Verb + nicht nur [A], sondern auch [B]."
       ],
       "gen": {
         "status": "curated",
