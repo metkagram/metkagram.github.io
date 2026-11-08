@@ -860,85 +860,85 @@
     {
       "id": "CON010",
       "group_id": "CON",
-      "title_ru": "В случае, если…",
-      "metaphor_ru": "Представь себе зонт, который ты берёшь в ясный день. Ты не знаешь, пойдёт ли дождь, но берёшь его на всякий случай. Это не страх, а спокойная подготовка к неожиданностям.",
+      "title_ru": "Подстраховаться на случай возможного события",
+      "metaphor_ru": "Действие совершается заранее как мера предосторожности. Английское in case — не обычное if: мы готовимся до события; в немецком часто естественно falls.",
       "langs": [
         {
           "lang": "en",
-          "formula": "In case + present simple, will + V",
-          "example": "In case you need extra time, we will extend the deadline.",
-          "translation": "В случае, если тебе понадобится больше времени, мы продлим дедлайн.",
+          "formula": "[Precaution] in case [subject + present verb].",
+          "example": "I kept the receipt in case the headphones stopped working.",
+          "translation": "Я сохранил чек на случай, если наушники перестанут работать.",
           "examples": [
             {
-              "text": "In case **the meeting is canceled**, **we will inform** everyone.",
-              "translation_ru": "Если встречу отменят, мы всех проинформируем."
+              "text": "I kept the receipt in case the headphones stopped working.",
+              "translation_ru": "Я сохранил чек на случай, если наушники перестанут работать."
             },
             {
-              "text": "In case **you need** directions, **ask** the receptionist.",
-              "translation_ru": "Если тебе нужны указания, спроси у администратора."
+              "text": "Take a photo of the timetable in case your phone loses its signal.",
+              "translation_ru": "Сфотографируй расписание на случай, если телефон потеряет сеть."
             },
             {
-              "text": "In case **he doesn't reply**, **send** a follow-up email.",
-              "translation_ru": "Если он не ответит, отправь повторное письмо."
+              "text": "We've left a spare key with the neighbours in case we lock ourselves out.",
+              "translation_ru": "Мы оставили запасной ключ соседям на случай, если захлопнем дверь."
             },
             {
-              "text": "In case **it gets cold**, **wear** a jacket.",
-              "translation_ru": "Если станет холодно, надень куртку."
+              "text": "She wrote down the address in case the map app failed on the way.",
+              "translation_ru": "Она записала адрес на случай, если навигатор подведёт в дороге."
             },
             {
-              "text": "In case **we lose** contact, **use** the backup plan.",
-              "translation_ru": "Если мы потеряем связь, используй запасной план."
+              "text": "I carry a small notebook in case an idea comes to me on the train.",
+              "translation_ru": "Я ношу с собой блокнот на случай, если в поезде придёт идея."
             },
             {
-              "text": "In case **they arrive** early, **let them in**.",
-              "translation_ru": "Если они приедут рано, впусти их."
+              "text": "Let's print one copy in case the projector doesn't work.",
+              "translation_ru": "Давай распечатаем экземпляр на случай, если проектор не заработает."
             },
             {
-              "text": "In case **the system fails**, **call** IT support.",
-              "translation_ru": "Если система выйдет из строя, позвони в техподдержку."
+              "text": "He left a light on in the hallway in case his daughter woke up at night.",
+              "translation_ru": "Он оставил свет в коридоре на случай, если дочь проснётся ночью."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Für den Fall, dass + present, wird + Infinitiv",
-          "example": "Für den Fall, dass du mehr Zeit brauchst, werden wir die Frist verlängern.",
-          "translation": "Если вдруг понадобится больше времени, мы продлим срок.",
+          "formula": "[Vorsorge], falls [Subjekt ... Verb].",
+          "example": "Ich habe den Kassenbon aufgehoben, falls die Kopfhörer nicht mehr funktionieren.",
+          "translation": "Я сохранил чек на случай, если наушники перестанут работать.",
           "examples": [
             {
-              "text": "Für den Fall, dass **das Meeting abgesagt wird**, **informieren wir** alle.",
-              "translation_ru": "Если встречу отменят, мы всех проинформируем."
+              "text": "Ich habe den Kassenbon aufgehoben, falls die Kopfhörer nicht mehr funktionieren.",
+              "translation_ru": "Я сохранил чек на случай, если наушники перестанут работать."
             },
             {
-              "text": "Für den Fall, dass **du Hilfe brauchst**, **frag** den Empfang.",
-              "translation_ru": "Если тебе нужна помощь, спроси на ресепшене."
+              "text": "Fotografier den Fahrplan, falls dein Handy unterwegs keinen Empfang hat.",
+              "translation_ru": "Сфотографируй расписание на случай, если телефон в дороге останется без связи."
             },
             {
-              "text": "Für den Fall, dass **er nicht antwortet**, **sende** eine weitere E-Mail.",
-              "translation_ru": "Если он не ответит, отправь еще одно письмо."
+              "text": "Wir haben bei den Nachbarn einen Ersatzschlüssel hinterlegt, falls wir uns aussperren.",
+              "translation_ru": "Мы оставили запасной ключ у соседей на случай, если не сможем попасть домой."
             },
             {
-              "text": "Für den Fall, dass **es kalt wird**, **zieh** eine Jacke an.",
-              "translation_ru": "Если станет холодно, надень куртку."
+              "text": "Sie schrieb sich die Adresse auf, falls die Karten-App unterwegs ausfallen sollte.",
+              "translation_ru": "Она записала адрес на случай, если приложение с картой откажет по дороге."
             },
             {
-              "text": "Für den Fall, dass **wir den Kontakt verlieren**, **nutzen** wir den Notfallplan.",
-              "translation_ru": "Если мы потеряем связь, используем план на случай ЧП."
+              "text": "Ich habe ein kleines Notizbuch dabei, falls mir im Zug eine Idee kommt.",
+              "translation_ru": "Я беру с собой маленький блокнот на случай, если в поезде появится интересная мысль."
             },
             {
-              "text": "Für den Fall, dass **sie früh kommen**, **lass** sie rein.",
-              "translation_ru": "Если они приедут рано, впусти их."
+              "text": "Lass uns ein Exemplar ausdrucken, falls der Beamer streikt.",
+              "translation_ru": "Давай распечатаем один экземпляр на случай, если проектор подведёт."
             },
             {
-              "text": "Für den Fall, dass **das System ausfällt**, **ruf** den IT-Support an.",
-              "translation_ru": "Если система выйдет из строя, позвони в техподдержку."
+              "text": "Er ließ im Flur ein Licht an, falls seine Tochter nachts aufwachte.",
+              "translation_ru": "Он оставил свет в коридоре на случай, если дочь проснётся ночью."
             }
           ]
         }
       ],
       "formulas": [
-        "In case + present simple, will + V",
-        "Für den Fall, dass + present, wird + Infinitiv"
+        "[Precaution] in case [subject + present verb].",
+        "[Vorsorge], falls [Subjekt ... Verb]."
       ],
       "gen": {
         "status": "generated",
@@ -955,85 +955,85 @@
     {
       "id": "CON011",
       "group_id": "CON",
-      "title_ru": "Если бы не одно «но», я бы…",
-      "metaphor_ru": "Как якорь, который держит корабль в порту. Всё готово: ветер в паруса, команда на старте, но одно «но» не даёт отплыть. Если бы не этот якорь, ты уже был бы в открытом море.",
+      "title_ru": "Представить, что изменилось бы в прошлом без одного фактора",
+      "metaphor_ru": "Контрфакт о прошлом: значимый фактор уже повлиял на исход. Английское if it hadn't been for сочетается с would/could/might have + причастие; немецкое ohne + Akkusativ требует прошедшего Konjunktiv II.",
       "langs": [
         {
           "lang": "en",
-          "formula": "If it hadn’t been for + noun, I would have + V3",
-          "example": "If it hadn’t been for the budget cut, I would have finished the project earlier.",
-          "translation": "Если бы не сокращение бюджета, я бы закончил проект раньше.",
+          "formula": "If it hadn't been for [past factor], [subject] would/could/might have [past participle].",
+          "example": "If it hadn't been for the neighbour's quick reaction, the fire could have spread to the roof.",
+          "translation": "Если бы соседка не среагировала так быстро, огонь мог бы дойти до крыши.",
           "examples": [
             {
-              "text": "If not for **the traffic**, you would **be here** by now.",
-              "translation_ru": "Если бы не пробки, ты бы уже был здесь."
+              "text": "If it hadn't been for the neighbour's quick reaction, the fire could have spread to the roof.",
+              "translation_ru": "Если бы соседка не среагировала так быстро, огонь мог бы дойти до крыши."
             },
             {
-              "text": "If it hadn't been for **his advice**, she would have **quit**.",
-              "translation_ru": "Если бы не его совет, она бы уволилась."
+              "text": "If it hadn't been for the language exchange, I'd never have met my closest friend.",
+              "translation_ru": "Если бы не языковой обмен, я бы никогда не познакомился с лучшим другом."
             },
             {
-              "text": "If it hadn't been for **the deadline**, we would have **relaxed more**.",
-              "translation_ru": "Если бы не дедлайн, мы бы больше расслабились."
+              "text": "If it hadn't been for that misleading headline, I wouldn't have questioned the figures.",
+              "translation_ru": "Если бы не вводящий в заблуждение заголовок, я бы не усомнился в цифрах."
             },
             {
-              "text": "If not for **the storm**, they would **sail today**.",
-              "translation_ru": "Если бы не шторм, они бы сегодня отплыли."
+              "text": "If it hadn't been for the storm warning, we'd have taken the boat out.",
+              "translation_ru": "Если бы не штормовое предупреждение, мы бы вышли на лодке."
             },
             {
-              "text": "If it hadn't been for **the warning**, he would have **missed the chance**.",
-              "translation_ru": "Если бы не предупреждение, он бы упустил шанс."
+              "text": "If it hadn't been for her patience, the children might have abandoned the experiment.",
+              "translation_ru": "Если бы не её терпение, дети, возможно, бросили бы эксперимент."
             },
             {
-              "text": "If not for **your support**, I would **have given up**.",
-              "translation_ru": "Если бы не твоя поддержка, я бы сдался."
+              "text": "If it hadn't been for the backup, we would have lost all our holiday photos.",
+              "translation_ru": "Если бы не резервная копия, мы потеряли бы все фотографии из отпуска."
             },
             {
-              "text": "If it hadn't been for **the noise**, we would have **concentrated better**.",
-              "translation_ru": "Если бы не шум, мы бы лучше сосредоточились."
+              "text": "If it hadn't been for the extra rehearsal, I wouldn't have felt confident during the interview.",
+              "translation_ru": "Если бы не дополнительная репетиция, на собеседовании я бы не чувствовал себя уверенно."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wenn es nicht ... gegeben hätte, hätte ich + Partizip II",
-          "example": "Wenn es die Budgetkürzung nicht gegeben hätte, hätte ich das Projekt früher abgeschlossen.",
-          "translation": "Если бы не сокращение бюджета, я бы закончил проект раньше.",
+          "formula": "Ohne [Akkusativ] hätte/wäre [Subjekt] ... [Partizip II].",
+          "example": "Ohne die schnelle Reaktion der Nachbarin hätte sich das Feuer bis zum Dach ausbreiten können.",
+          "translation": "Если бы соседка не отреагировала так быстро, огонь мог бы распространиться до крыши.",
           "examples": [
             {
-              "text": "Wenn es **den Verkehr** nicht gegeben hätte, wärst du **jetzt hier**.",
-              "translation_ru": "Если бы не пробки, ты бы уже был здесь."
+              "text": "Ohne die schnelle Reaktion der Nachbarin hätte sich das Feuer bis zum Dach ausbreiten können.",
+              "translation_ru": "Если бы соседка не отреагировала так быстро, огонь мог бы распространиться до крыши."
             },
             {
-              "text": "Wenn es **seinen Rat** nicht gegeben hätte, hätte sie **gekündigt**.",
-              "translation_ru": "Если бы не его совет, она бы уволилась."
+              "text": "Ohne den Sprachaustausch hätte ich meinen besten Freund nie kennengelernt.",
+              "translation_ru": "Если бы не языковой обмен, я бы никогда не встретил своего лучшего друга."
             },
             {
-              "text": "Wenn es **die Frist** nicht gegeben hätte, hätten wir **mehr entspannt**.",
-              "translation_ru": "Если бы не срок, мы бы больше расслабились."
+              "text": "Ohne die irreführende Überschrift hätte ich die Zahlen nicht hinterfragt.",
+              "translation_ru": "Если бы не обманчивый заголовок, я бы не стал проверять приведённые цифры."
             },
             {
-              "text": "Wenn es **den Sturm** nicht gegeben hätte, würden sie **heute segeln**.",
-              "translation_ru": "Если бы не шторм, они бы сегодня отплыли."
+              "text": "Ohne die Sturmwarnung wären wir mit dem Boot hinausgefahren.",
+              "translation_ru": "Если бы не предупреждение о шторме, мы бы отправились на лодке."
             },
             {
-              "text": "Wenn es **die Warnung** nicht gegeben hätte, hätte er **die Chance verpasst**.",
-              "translation_ru": "Если бы не предупреждение, он бы упустил шанс."
+              "text": "Ohne ihre Geduld hätten die Kinder den Versuch vielleicht abgebrochen.",
+              "translation_ru": "Если бы не её терпение, дети могли бы прекратить опыт."
             },
             {
-              "text": "Wenn es **deine Unterstützung** nicht gegeben hätte, hätte ich **aufgegeben**.",
-              "translation_ru": "Если бы не твоя поддержка, я бы сдался."
+              "text": "Ohne die Sicherungskopie hätten wir alle Urlaubsfotos verloren.",
+              "translation_ru": "Если бы не резервная копия, все наши отпускные фотографии пропали бы."
             },
             {
-              "text": "Wenn es **den Lärm** nicht gegeben hätte, hätten wir **besser konzentriert**.",
-              "translation_ru": "Если бы не шум, мы бы лучше сосредоточились."
+              "text": "Ohne die zusätzliche Probe hätte ich mich beim Vorstellungsgespräch nicht sicher gefühlt.",
+              "translation_ru": "Если бы не дополнительная репетиция, на собеседовании мне не хватило бы уверенности."
             }
           ]
         }
       ],
       "formulas": [
-        "If it hadn’t been for + noun, I would have + V3",
-        "Wenn es nicht ... gegeben hätte, hätte ich + Partizip II"
+        "If it hadn't been for [past factor], [subject] would/could/might have [past participle].",
+        "Ohne [Akkusativ] hätte/wäre [Subjekt] ... [Partizip II]."
       ],
       "gen": {
         "status": "generated",
@@ -1050,85 +1050,85 @@
     {
       "id": "CON012",
       "group_id": "CON",
-      "title_ru": "Только после того как…",
-      "metaphor_ru": "Как закрытая дверь с секретным замком: пока не вставишь правильный ключ, не попадёшь внутрь. Всё зависит от первого шага — только после него откроется следующий.",
+      "title_ru": "Выделить событие, после которого стало возможным другое",
+      "metaphor_ru": "После начального Only after в английском обязательна инверсия вспомогательного или модального глагола в главной части: did I, could we, will they. В немецком после придаточного с erst nachdem — обычный порядок главной части: сказуемое перед подлежащим.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Only after + subject + has/have + V3, will + subject + V",
-          "example": "Only after you have completed the training, will you get access.",
-          "translation": "Только после того как пройдёшь обучение, получишь доступ.",
+          "formula": "Only after [event/clause] + [did/could/should/will] + [subject] + [verb].",
+          "example": "Only after the children had fallen asleep did we discuss the move.",
+          "translation": "Только когда дети уснули, мы обсудили переезд.",
           "examples": [
             {
-              "text": "Only after **the system updates**, **will it reboot**.",
-              "translation_ru": "Только после того как система обновится, она перезагрузится."
+              "text": "Only after the children had fallen asleep did we discuss the move.",
+              "translation_ru": "Только когда дети уснули, мы обсудили переезд."
             },
             {
-              "text": "Only after **we sign** the contract, **can we start** the project.",
-              "translation_ru": "Только после того как мы подпишем контракт, мы сможем начать проект."
+              "text": "Only after I compared both translations did I notice the missing nuance.",
+              "translation_ru": "Только сравнив оба перевода, я заметил упущенный оттенок смысла."
             },
             {
-              "text": "Only after **you log in**, **will the dashboard appear**.",
-              "translation_ru": "Только после того как ты войдёшь в систему, появится панель управления."
+              "text": "Only after the bridge had been inspected could the buses cross it again.",
+              "translation_ru": "Автобусы смогли снова ездить по мосту только после проверки."
             },
             {
-              "text": "Only after **she approves** the budget, **can the team proceed**.",
-              "translation_ru": "Только после того как она утвердит бюджет, команда сможет продолжить."
+              "text": "Only after you have backed up your photos should you reset the phone.",
+              "translation_ru": "Сбрасывать настройки телефона стоит лишь после сохранения фотографий."
             },
             {
-              "text": "Only after **they confirm** attendance, **will we book** the venue.",
-              "translation_ru": "Только после того как они подтвердят участие, мы забронируем место."
+              "text": "Only after she explained why she was upset did I understand her silence.",
+              "translation_ru": "Только когда она объяснила, почему расстроилась, я понял её молчание."
             },
             {
-              "text": "Only after **the data is analyzed**, **can we draw** conclusions.",
-              "translation_ru": "Только после того как данные будут проанализированы, мы сможем сделать выводы."
+              "text": "Only after the council publishes the full proposal will residents be able to comment.",
+              "translation_ru": "Жители смогут высказаться только после публикации полного предложения советом."
             },
             {
-              "text": "Only after **you pay**, **will the order be processed**.",
-              "translation_ru": "Только после того как ты заплатишь, заказ будет обработан."
+              "text": "Only after we had tested the ramp with a wheelchair did we realise how steep it was.",
+              "translation_ru": "Лишь проверив пандус на инвалидной коляске, мы поняли, насколько он крутой."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Erst nachdem + subject + Partizip II + hat, wird + subject + Infinitiv",
-          "example": "Erst nachdem du das Training abgeschlossen hast, wirst du Zugriff erhalten.",
-          "translation": "Только после обучения получишь доступ.",
+          "formula": "Erst nachdem [Nebensatz mit Verb am Ende], [Verb] [Subjekt] ...",
+          "example": "Erst nachdem die Kinder eingeschlafen waren, haben wir über den Umzug gesprochen.",
+          "translation": "Мы обсудили переезд лишь после того, как дети уснули.",
           "examples": [
             {
-              "text": "Erst nachdem **das System aktualisiert wird**, **wird es neu starten**.",
-              "translation_ru": "Только после того как система обновится, она перезагрузится."
+              "text": "Erst nachdem die Kinder eingeschlafen waren, haben wir über den Umzug gesprochen.",
+              "translation_ru": "Мы обсудили переезд лишь после того, как дети уснули."
             },
             {
-              "text": "Erst nachdem **wir den Vertrag unterschreiben**, **können wir das Projekt beginnen**.",
-              "translation_ru": "Только после того как мы подпишем контракт, мы сможем начать проект."
+              "text": "Erst nachdem ich beide Übersetzungen verglichen hatte, fiel mir die fehlende Nuance auf.",
+              "translation_ru": "Лишь сравнив оба перевода, я заметил недостающий оттенок смысла."
             },
             {
-              "text": "Erst nachdem **du dich einloggst**, **wird das Dashboard erscheinen**.",
-              "translation_ru": "Только после того как ты войдёшь в систему, появится панель управления."
+              "text": "Erst nachdem die Brücke überprüft worden war, durften die Busse wieder darüberfahren.",
+              "translation_ru": "Только после проверки моста автобусам снова разрешили по нему ездить."
             },
             {
-              "text": "Erst nachdem **sie das Budget genehmigt**, **kann das Team fortfahren**.",
-              "translation_ru": "Только после того как она утвердит бюджет, команда сможет продолжить."
+              "text": "Erst nachdem du deine Fotos gesichert hast, solltest du das Handy zurücksetzen.",
+              "translation_ru": "Сбрасывать настройки телефона стоит только после того, как сохранишь фотографии."
             },
             {
-              "text": "Erst nachdem **sie die Teilnahme bestätigen**, **werden wir den Ort buchen**.",
-              "translation_ru": "Только после того как они подтвердят участие, мы забронируем место."
+              "text": "Erst nachdem sie erklärt hatte, warum sie verletzt war, verstand ich ihr Schweigen.",
+              "translation_ru": "Я понял причину её молчания лишь после того, как она объяснила, что её задело."
             },
             {
-              "text": "Erst nachdem **die Daten analysiert werden**, **können wir Schlussfolgerungen ziehen**.",
-              "translation_ru": "Только после того как данные будут проанализированы, мы сможем сделать выводы."
+              "text": "Erst nachdem der Stadtrat den vollständigen Entwurf veröffentlicht hat, können sich die Anwohner dazu äußern.",
+              "translation_ru": "Местные жители смогут высказаться лишь после публикации полного проекта городским советом."
             },
             {
-              "text": "Erst nachdem **du bezahlst**, **wird die Bestellung bearbeitet**.",
-              "translation_ru": "Только после того как ты заплатишь, заказ будет обработан."
+              "text": "Erst nachdem wir die Rampe mit einem Rollstuhl getestet hatten, merkten wir, wie steil sie war.",
+              "translation_ru": "Только когда мы испытали пандус с коляской, стало ясно, насколько он крутой."
             }
           ]
         }
       ],
       "formulas": [
-        "Only after + subject + has/have + V3, will + subject + V",
-        "Erst nachdem + subject + Partizip II + hat, wird + subject + Infinitiv"
+        "Only after [event/clause] + [did/could/should/will] + [subject] + [verb].",
+        "Erst nachdem [Nebensatz mit Verb am Ende], [Verb] [Subjekt] ..."
       ],
       "gen": {
         "status": "generated",

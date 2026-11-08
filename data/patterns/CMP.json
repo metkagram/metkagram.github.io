@@ -385,85 +385,85 @@
     {
       "id": "COM005",
       "group_id": "COM",
-      "title_ru": "Вовсе не…, а наоборот…",
-      "metaphor_ru": "Как развенчание мифа: ты сначала показываешь ярлык (ожидание), а потом резко ломаешь его и демонстрируешь реальную ценность.",
+      "title_ru": "Опровергнуть ожидание через противоположный результат",
+      "metaphor_ru": "Английское far from + -ing показывает, что реальный эффект не просто не совпал с ожидаемым, а часто оказался противоположным. Немецкое statt ... zu + Infinitiv передаёт этот ход естественнее, чем буквальная калька.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Far from being + adjective/noun, subject + verb...",
-          "example": "Far from being useless, the meeting helped clarify our goals.",
-          "translation": "Вовсе не бесполезная: встреча помогла прояснить наши цели.",
+          "formula": "Far from [V-ing + expected effect], [subject + actual effect].",
+          "example": "Far from wasting time, the extra rehearsal exposed a flaw in our presentation.",
+          "translation": "Дополнительная репетиция вовсе не была потерей времени: она выявила слабое место презентации.",
           "examples": [
             {
-              "text": "Far from being **obsolete**, the technology **revolutionized** our industry.",
-              "translation_ru": "Технология вовсе не устарела, а наоборот, революционизировала нашу отрасль."
+              "text": "Far from wasting time, the extra rehearsal exposed a flaw in our presentation.",
+              "translation_ru": "Дополнительная репетиция вовсе не была потерей времени: она выявила слабое место презентации."
             },
             {
-              "text": "Far from being **expensive**, the solution **saved** us money.",
-              "translation_ru": "Решение вовсе не было дорогим, а наоборот, сэкономило нам деньги."
+              "text": "Far from confusing the children, the drawings helped them follow the story.",
+              "translation_ru": "Рисунки не запутали детей, а помогли им следить за сюжетом."
             },
             {
-              "text": "Far from being **simple**, the problem **required** complex solutions.",
-              "translation_ru": "Проблема была вовсе не простой, а наоборот, требовала сложных решений."
+              "text": "Far from making the room feel smaller, the light curtains opened it up.",
+              "translation_ru": "Светлые шторы не уменьшили комнату визуально, а сделали её просторнее."
             },
             {
-              "text": "Far from being **a setback**, the event **boosted** our morale.",
-              "translation_ru": "Событие вовсе не стало неудачей, а наоборот, подняло наш боевой дух."
+              "text": "Far from weakening the argument, her question revealed its strongest point.",
+              "translation_ru": "Её вопрос не ослабил аргумент, а выявил его самую сильную сторону."
             },
             {
-              "text": "Far from being **ineffective**, the campaign **doubled** our sales.",
-              "translation_ru": "Кампания вовсе не была неэффективной, а наоборот, удвоила наши продажи."
+              "text": "Far from solving the problem, the quick patch introduced two new errors.",
+              "translation_ru": "Быстрая заплатка не устранила проблему, а породила две новые ошибки."
             },
             {
-              "text": "Far from being **a waste**, the project **yielded** valuable insights.",
-              "translation_ru": "Проект вовсе не был пустой тратой, а наоборот, дал ценные инсайты."
+              "text": "Far from discouraging me, the criticism made me practise more deliberately.",
+              "translation_ru": "Критика не отбила у меня охоту заниматься, а подтолкнула тренироваться осознаннее."
             },
             {
-              "text": "Far from being **confusing**, the new policy **clarified** our procedures.",
-              "translation_ru": "Новая политика вовсе не запутала, а наоборот, прояснила наши процедуры."
+              "text": "Far from protecting the park, the new fence cut off the only accessible path.",
+              "translation_ru": "Новый забор не защитил парк, а перекрыл единственную доступную дорожку."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Weit davon entfernt, + zu + sein, verb + subject...",
-          "example": "Weit davon entfernt, nutzlos zu sein, hat das Meeting geholfen, unsere Ziele zu klären.",
-          "translation": "Вовсе не бесполезная: встреча помогла прояснить наши цели.",
+          "formula": "Statt [erwartete Wirkung] zu [Infinitiv], [tatsächliche Wirkung].",
+          "example": "Statt Zeit zu verschwenden, hat die zusätzliche Probe eine Schwäche in unserer Präsentation aufgedeckt.",
+          "translation": "Дополнительная репетиция не отняла время впустую, а помогла найти слабое место в презентации.",
           "examples": [
             {
-              "text": "Weit davon entfernt, **veraltet** zu sein, hat die Technologie **unsere Branche revolutioniert**.",
-              "translation_ru": "Технология вовсе не устарела, а наоборот, революционизировала нашу отрасль."
+              "text": "Statt Zeit zu verschwenden, hat die zusätzliche Probe eine Schwäche in unserer Präsentation aufgedeckt.",
+              "translation_ru": "Дополнительная репетиция не отняла время впустую, а помогла найти слабое место в презентации."
             },
             {
-              "text": "Weit davon entfernt, **teuer** zu sein, hat die Lösung **uns Geld gespart**.",
-              "translation_ru": "Решение вовсе не было дорогим, а наоборот, сэкономило нам деньги."
+              "text": "Statt die Kinder zu verwirren, halfen ihnen die Zeichnungen, der Geschichte zu folgen.",
+              "translation_ru": "Рисунки вовсе не сбили детей с толку — с ними было легче понять историю."
             },
             {
-              "text": "Weit davon entfernt, **einfach** zu sein, **erforderte** das Problem komplexe Lösungen.",
-              "translation_ru": "Проблема была вовсе не простой, а наоборот, требовала сложных решений."
+              "text": "Statt den Raum kleiner wirken zu lassen, ließen ihn die hellen Vorhänge größer erscheinen.",
+              "translation_ru": "Светлые шторы не сузили пространство, а зрительно расширили комнату."
             },
             {
-              "text": "Weit davon entfernt, **ein Rückschlag** zu sein, hat das Ereignis **unsere Moral gestärkt**.",
-              "translation_ru": "Событие вовсе не стало неудачей, а наоборот, подняло наш боевой дух."
+              "text": "Statt das Argument zu schwächen, brachte ihre Frage dessen stärksten Punkt zum Vorschein.",
+              "translation_ru": "Её вопрос не ослабил довод, а, наоборот, показал его наиболее убедительную часть."
             },
             {
-              "text": "Weit davon entfernt, **ineffektiv** zu sein, hat die Kampagne **unsere Verkäufe verdoppelt**.",
-              "translation_ru": "Кампания вовсе не была неэффективной, а наоборот, удвоила наши продажи."
+              "text": "Statt das Problem zu lösen, verursachte die schnelle Korrektur zwei neue Fehler.",
+              "translation_ru": "Спешное исправление не решило проблему, а создало две новые ошибки."
             },
             {
-              "text": "Weit davon entfernt, **eine Verschwendung** zu sein, hat das Projekt **wertvolle Einblicke geliefert**.",
-              "translation_ru": "Проект вовсе не был пустой тратой, а наоборот, дал ценные инсайты."
+              "text": "Statt mich zu entmutigen, brachte mich die Kritik dazu, gezielter zu üben.",
+              "translation_ru": "Критика не обескуражила меня, а помогла перейти к более целенаправленной практике."
             },
             {
-              "text": "Weit davon entfernt, **verwirrend** zu sein, hat die neue Politik **unsere Verfahren geklärt**.",
-              "translation_ru": "Новая политика вовсе не запутала, а наоборот, прояснила наши процедуры."
+              "text": "Statt den Park zu schützen, versperrte der neue Zaun den einzigen barrierefreien Zugang.",
+              "translation_ru": "Новый забор не защитил парк, а закрыл единственный безбарьерный проход."
             }
           ]
         }
       ],
       "formulas": [
-        "Far from being + adjective/noun, subject + verb...",
-        "Weit davon entfernt, + zu + sein, verb + subject..."
+        "Far from [V-ing + expected effect], [subject + actual effect].",
+        "Statt [erwartete Wirkung] zu [Infinitiv], [tatsächliche Wirkung]."
       ],
       "gen": {
         "status": "generated",

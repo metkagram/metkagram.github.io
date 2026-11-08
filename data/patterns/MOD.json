@@ -385,85 +385,85 @@
     {
       "id": "MOD005",
       "group_id": "MOD",
-      "title_ru": "Вежливое предположение или разрешение",
-      "metaphor_ru": "Как мягкий зелёный свет светофора — не обязывает ехать, но даёт возможность спокойно двигаться.",
+      "title_ru": "Выразить вероятность, не выдавая догадку за факт",
+      "metaphor_ru": "Здесь may/might выражают вероятность, а не разрешение. Немецкое dürfen сообщает о разрешении и не подходит для таких предположений: используйте könnte, vielleicht или möglicherweise.",
       "langs": [
         {
           "lang": "en",
-          "formula": "may / might + V",
-          "example": "You may leave early today if your tasks are done.",
-          "translation": "Можешь уйти пораньше, если все задачи завершены.",
+          "formula": "[Subject] may/might (not) [infinitive] / may/might have [past participle].",
+          "example": "The delay may be caused by a damaged cable.",
+          "translation": "Возможно, задержка вызвана повреждённым кабелем.",
           "examples": [
             {
-              "text": "He **might** bring the documents tomorrow.",
-              "translation_ru": "Он может принести документы завтра."
+              "text": "The delay may be caused by a damaged cable.",
+              "translation_ru": "Возможно, задержка вызвана повреждённым кабелем."
             },
             {
-              "text": "We **may** need more data for the analysis.",
-              "translation_ru": "Нам может понадобиться больше данных для анализа."
+              "text": "She might have misunderstood my joke.",
+              "translation_ru": "Возможно, она неправильно поняла мою шутку."
             },
             {
-              "text": "**May** I **use** your phone?",
-              "translation_ru": "Можно я воспользуюсь вашим телефоном?"
+              "text": "We may need a quieter place to practise speaking.",
+              "translation_ru": "Возможно, нам понадобится более тихое место для разговорной практики."
             },
             {
-              "text": "They **might** not **come** to the meeting.",
-              "translation_ru": "Они могут не прийти на встречу."
+              "text": "The museum might not be open on Mondays.",
+              "translation_ru": "Возможно, по понедельникам музей закрыт."
             },
             {
-              "text": "You **may** **access** the files online.",
-              "translation_ru": "Вы можете получить доступ к файлам онлайн."
+              "text": "He may have forgotten to save the draft.",
+              "translation_ru": "Возможно, он забыл сохранить черновик."
             },
             {
-              "text": "She **may** **start** the project next week.",
-              "translation_ru": "Она может начать проект на следующей неделе."
+              "text": "If we move the router, the connection might improve.",
+              "translation_ru": "Если переставить роутер, связь, возможно, улучшится."
             },
             {
-              "text": "**Might** we **consider** an alternative plan?",
-              "translation_ru": "Можем ли мы рассмотреть альтернативный план?"
+              "text": "This explanation may sound convincing, but the evidence is thin.",
+              "translation_ru": "Объяснение может звучать убедительно, хотя доказательств мало."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "dürfen + Infinitiv / vielleicht + Verb",
-          "example": "Du darfst heute früher gehen, wenn deine Aufgaben erledigt sind.",
-          "translation": "Можешь уйти пораньше, если все задачи завершены.",
+          "formula": "[Subjekt] könnte [Infinitiv] / Vielleicht [Verb + Subjekt] / [Subjekt] ... möglicherweise.",
+          "example": "Die Verzögerung könnte an einem beschädigten Kabel liegen.",
+          "translation": "Возможно, причина задержки — повреждённый кабель.",
           "examples": [
             {
-              "text": "Er **darf** die Dokumente morgen **bringen**.",
-              "translation_ru": "Он может принести документы завтра."
+              "text": "Die Verzögerung könnte an einem beschädigten Kabel liegen.",
+              "translation_ru": "Возможно, причина задержки — повреждённый кабель."
             },
             {
-              "text": "Wir **dürfen** mehr Daten für die Analyse **brauchen**.",
-              "translation_ru": "Нам может понадобиться больше данных для анализа."
+              "text": "Vielleicht hat sie meinen Witz falsch verstanden.",
+              "translation_ru": "Может быть, она не так поняла мою шутку."
             },
             {
-              "text": "**Darf** ich dein Telefon **benutzen**?",
-              "translation_ru": "Можно я воспользуюсь твоим телефоном?"
+              "text": "Vielleicht brauchen wir einen ruhigeren Ort, um das Sprechen zu üben.",
+              "translation_ru": "Для разговорных упражнений нам, возможно, нужно место потише."
             },
             {
-              "text": "Sie **dürfen** nicht zur Besprechung **kommen**.",
-              "translation_ru": "Они могут не прийти на встречу."
+              "text": "Das Museum hat montags möglicherweise geschlossen.",
+              "translation_ru": "Может быть, по понедельникам музей не работает."
             },
             {
-              "text": "Du **darfst** die Dateien online **zugreifen**.",
-              "translation_ru": "Ты можешь получить доступ к файлам онлайн."
+              "text": "Er hat vielleicht vergessen, den Entwurf zu speichern.",
+              "translation_ru": "Вероятно, он забыл сохранить черновик."
             },
             {
-              "text": "Sie **darf** das Projekt nächste Woche **starten**.",
-              "translation_ru": "Она может начать проект на следующей неделе."
+              "text": "Wenn wir den Router umstellen, könnte die Verbindung besser werden.",
+              "translation_ru": "Если мы переместим роутер, связь может стать лучше."
             },
             {
-              "text": "**Dürfen** wir einen alternativen Plan **erwägen**?",
-              "translation_ru": "Можем ли мы рассмотреть альтернативный план?"
+              "text": "Diese Erklärung klingt vielleicht überzeugend, aber die Belege sind dürftig.",
+              "translation_ru": "Это объяснение, возможно, и звучит убедительно, но доказательств недостаточно."
             }
           ]
         }
       ],
       "formulas": [
-        "may / might + V",
-        "dürfen + Infinitiv / vielleicht + Verb"
+        "[Subject] may/might (not) [infinitive] / may/might have [past participle].",
+        "[Subjekt] könnte [Infinitiv] / Vielleicht [Verb + Subjekt] / [Subjekt] ... möglicherweise."
       ],
       "gen": {
         "status": "generated",
