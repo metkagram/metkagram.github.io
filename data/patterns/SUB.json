@@ -6,85 +6,85 @@
       "id": "GRMSUB001",
       "group_id": "SUB",
       "set_id": "SUB",
-      "title_ru": "Хотя данные ограничены, тенденция остаётся устойчивой",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «хотя данные ограничены, тенденция остаётся устойчивой» в живом контексте.",
+      "title_ru": "Уступка: признать препятствие, но сохранить вывод",
+      "metaphor_ru": "Although / obwohl сообщает о факте, который мог бы вызвать противоположное ожидание, а главная часть даёт реальный результат. В немецком глагол в obwohl-придаточном стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Although the evidence is limited, the trend is consistent [the team was reviewing the new policy]",
-          "example": "Although the evidence is limited, the trend is consistent in a situation where the team was reviewing the new policy.",
-          "translation": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где команда проверяла новую политику.",
+          "formula": "Although [unexpected fact], [main outcome].",
+          "example": "Although the route is shorter, it takes longer when the buses are crowded.",
+          "translation": "Хотя маршрут короче, в переполненных автобусах дорога занимает больше времени.",
           "examples": [
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где команда проверяла новую политику."
+              "text": "**Although the route is shorter, it takes longer when the buses are crowded.**",
+              "translation_ru": "Хотя маршрут короче, в переполненных автобусах дорога занимает больше времени."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Although she speaks confidently in meetings, she still rehearses difficult conversations at home.**",
+              "translation_ru": "Хотя на встречах она говорит уверенно, трудные разговоры она всё равно репетирует дома."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Although the new recipe uses fewer ingredients, it tastes richer than the old one.**",
+              "translation_ru": "Хотя в новом рецепте меньше ингредиентов, вкус получается насыщеннее."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Although we've checked the numbers twice, I wouldn't publish them without an independent review.**",
+              "translation_ru": "Хотя мы дважды проверили цифры, я бы не публиковал их без независимой проверки."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где расписание изменили в последний момент."
+              "text": "**Although the landlord agreed to the repair, no one has fixed the leaking tap yet.**",
+              "translation_ru": "Хотя арендодатель согласился на ремонт, протекающий кран до сих пор никто не починил."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Although the documentary was filmed ten years ago, its questions about privacy feel surprisingly current.**",
+              "translation_ru": "Хотя документальный фильм сняли десять лет назад, его вопросы о приватности удивительно актуальны."
             },
             {
-              "text": "**Although the evidence is limited, the trend is consistent in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где участники ждали объяснения."
+              "text": "**Although he could have challenged the decision, he chose to listen first.**",
+              "translation_ru": "Хотя он мог оспорить решение, сначала он предпочёл выслушать других."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Obwohl die Belege begrenzt sind, ist der Trend eindeutig [das Team die neue Regelung prüfte]",
-          "example": "Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где команда проверяла новую политику.",
+          "formula": "Obwohl [unerwarteter Umstand], [Hauptaussage].",
+          "example": "Obwohl die Strecke kürzer ist, dauert die Fahrt bei vollen Bussen länger.",
+          "translation": "Хотя путь короче, в переполненном автобусе дорога занимает больше времени.",
           "examples": [
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где команда проверяла новую политику."
+              "text": "**Obwohl die Strecke kürzer ist, dauert die Fahrt bei vollen Bussen länger.**",
+              "translation_ru": "Хотя путь короче, в переполненном автобусе дорога занимает больше времени."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Obwohl sie in Besprechungen selbstbewusst spricht, übt sie schwierige Gespräche zu Hause immer noch.**",
+              "translation_ru": "Хотя на встречах она говорит уверенно, сложные разговоры она всё ещё репетирует дома."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Obwohl das neue Rezept mit weniger Zutaten auskommt, schmeckt es intensiver als das alte.**",
+              "translation_ru": "Хотя для нового рецепта нужно меньше ингредиентов, вкус получается насыщеннее."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Obwohl wir die Zahlen zweimal geprüft haben, würde ich sie ohne eine unabhängige Kontrolle nicht veröffentlichen.**",
+              "translation_ru": "Хотя мы дважды проверили цифры, я бы не стал их публиковать без независимой проверки."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где расписание изменили в последний момент."
+              "text": "**Obwohl der Vermieter die Reparatur zugesagt hat, hat noch niemand den tropfenden Wasserhahn repariert.**",
+              "translation_ru": "Хотя хозяин квартиры обещал ремонт, капающий кран до сих пор никто не починил."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Obwohl der Dokumentarfilm vor zehn Jahren gedreht wurde, wirken seine Fragen zum Datenschutz erstaunlich aktuell.**",
+              "translation_ru": "Хотя документальный фильм сняли десять лет назад, его вопросы о защите личных данных поразительно актуальны."
             },
             {
-              "text": "**Obwohl die Belege begrenzt sind, ist der Trend eindeutig in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Хотя данные ограничены, тенденция остаётся устойчивой в ситуации, где участники ждали объяснения."
+              "text": "**Obwohl er die Entscheidung hätte anfechten können, hörte er erst einmal zu.**",
+              "translation_ru": "Хотя он мог оспорить решение, сначала он предпочёл послушать."
             }
           ]
         }
       ],
       "formulas": [
-        "Although the evidence is limited, the trend is consistent [the team was reviewing the new policy]",
-        "Obwohl die Belege begrenzt sind, ist der Trend eindeutig [das Team die neue Regelung prüfte]"
+        "Although [unexpected fact], [main outcome].",
+        "Obwohl [unerwarteter Umstand], [Hauptaussage]."
       ],
       "gen": {
         "status": "curated",

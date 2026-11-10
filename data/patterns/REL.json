@@ -101,85 +101,85 @@
       "id": "GRMREL006",
       "group_id": "REL",
       "set_id": "REL",
-      "title_ru": "Людям, работающим над пилотом, нужны ясные ориентиры",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «людям, работающим над пилотом, нужны ясные ориентиры» в живом контексте.",
+      "title_ru": "Определять людей через их действия",
+      "metaphor_ru": "В английском оборот после существительного (people working...) сокращает who are working. В немецком естественный аналог — относительное придаточное с der/die/das и глаголом в конце. Оборот должен определять человека, а не добавлять случайный фон к готовой фразе.",
       "langs": [
         {
           "lang": "en",
-          "formula": "People working on the pilot need clear guidance [the team was reviewing the new policy]",
-          "example": "People working on the pilot need clear guidance in a situation where the team was reviewing the new policy.",
-          "translation": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person or group] [doing something] [main predicate].",
+          "example": "People learning a language through conversation often remember phrases better than isolated words.",
+          "translation": "Люди, изучающие язык через разговоры, часто лучше запоминают выражения, чем отдельные слова.",
           "examples": [
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где команда проверяла новую политику."
+              "text": "**People learning a language through conversation often remember phrases better than isolated words.**",
+              "translation_ru": "Люди, изучающие язык через разговоры, часто лучше запоминают выражения, чем отдельные слова."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**The cyclist waiting outside the bakery asked whether anyone had seen his helmet.**",
+              "translation_ru": "Велосипедист, ожидавший у пекарни, спросил, не видел ли кто-нибудь его шлем."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Families living near the river were warned about rising water overnight.**",
+              "translation_ru": "Семьи, живущие рядом с рекой, ночью предупредили о подъёме воды."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**A teacher working with adult beginners recommended short daily speaking exercises.**",
+              "translation_ru": "Преподавательница, работающая со взрослыми новичками, посоветовала короткие ежедневные разговорные упражнения."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где расписание изменили в последний момент."
+              "text": "**Students looking for a quiet place to study can use the upstairs reading room.**",
+              "translation_ru": "Студенты, которым нужно тихое место для занятий, могут пользоваться читальным залом наверху."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**The volunteers repairing the footpath found an old boundary stone beneath the gravel.**",
+              "translation_ru": "Волонтёры, ремонтировавшие тропинку, нашли под гравием старый межевой камень."
             },
             {
-              "text": "**People working on the pilot need clear guidance in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где участники ждали объяснения."
+              "text": "**The engineer reviewing our accessibility feedback spotted a problem nobody else had noticed.**",
+              "translation_ru": "Инженер, изучавшая наши замечания о доступности, заметила проблему, которую остальные упустили."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung [das Team die neue Regelung prüfte]",
-          "example": "Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person(en)], der/die [Handlung im Relativsatz], [Hauptaussage].",
+          "example": "Menschen, die eine Sprache im Gespräch lernen, merken sich Wendungen oft besser als einzelne Wörter.",
+          "translation": "Люди, изучающие язык в разговорах, часто лучше запоминают обороты, чем отдельные слова.",
           "examples": [
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где команда проверяла новую политику."
+              "text": "**Menschen, die eine Sprache im Gespräch lernen, merken sich Wendungen oft besser als einzelne Wörter.**",
+              "translation_ru": "Люди, изучающие язык в разговорах, часто лучше запоминают обороты, чем отдельные слова."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Der Radfahrer, der vor der Bäckerei wartete, fragte, ob jemand seinen Helm gesehen hatte.**",
+              "translation_ru": "Велосипедист, ожидавший у пекарни, спросил, не видел ли кто-нибудь его шлем."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Familien, die in der Nähe des Flusses wohnen, wurden nachts vor steigendem Wasser gewarnt.**",
+              "translation_ru": "Семьи, живущие рядом с рекой, ночью предупредили о подъёме воды."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Eine Lehrerin, die mit erwachsenen Anfängern arbeitet, empfahl kurze tägliche Sprechübungen.**",
+              "translation_ru": "Преподавательница, работающая со взрослыми начинающими, рекомендовала короткие ежедневные упражнения для разговорной практики."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где расписание изменили в последний момент."
+              "text": "**Studierende, die einen ruhigen Platz zum Lernen suchen, können den Lesesaal im Obergeschoss nutzen.**",
+              "translation_ru": "Студенты, которые ищут тихое место для занятий, могут воспользоваться читальным залом на верхнем этаже."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Die Freiwilligen, die den Fußweg ausbesserten, fanden unter dem Schotter einen alten Grenzstein.**",
+              "translation_ru": "Добровольцы, чинившие тропинку, нашли под щебнем старый межевой камень."
             },
             {
-              "text": "**Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Людям, работающим над пилотом, нужны ясные ориентиры в ситуации, где участники ждали объяснения."
+              "text": "**Die Ingenieurin, die unsere Rückmeldungen zur Barrierefreiheit auswertete, entdeckte ein Problem, das sonst niemand bemerkt hatte.**",
+              "translation_ru": "Инженер, изучавшая отзывы о доступности, обнаружила проблему, которую никто другой не заметил."
             }
           ]
         }
       ],
       "formulas": [
-        "People working on the pilot need clear guidance [the team was reviewing the new policy]",
-        "Die Personen, die am Pilotprojekt arbeiten, brauchen klare Orientierung [das Team die neue Regelung prüfte]"
+        "[Person or group] [doing something] [main predicate].",
+        "[Person(en)], der/die [Handlung im Relativsatz], [Hauptaussage]."
       ],
       "gen": {
         "status": "curated",

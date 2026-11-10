@@ -6,85 +6,85 @@
       "id": "FUNPRI001",
       "group_id": "PRI",
       "set_id": "PRI",
-      "title_ru": "Учитывая, что команде нужен ещё день для решения, нашим приоритетом должно быть снижение неопределённости.",
-      "metaphor_ru": "Речевая задача: использовать функцию «приоритеты и компромиссы» в живом контексте.",
+      "title_ru": "Обосновать приоритет с учётом обстоятельств",
+      "metaphor_ru": "Given that / Da вводит реальное ограничение; основной частью мы объясняем, почему одна мера важнее другой. Приоритет должен логически вытекать из причины.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Given that [the team needs another day to decide], our priority should be to reduce uncertainty.",
-          "example": "Given that the team needs another day to decide, our priority should be to reduce uncertainty.",
-          "translation": "Учитывая, что команде нужен ещё день для решения, нашим приоритетом должно быть снижение неопределённости.",
+          "formula": "Given that [constraint], [action] should take priority over [alternative].",
+          "example": "Given that the storm may cut the power tonight, charging our phones should take priority over streaming a film.",
+          "translation": "Поскольку ночью из-за бури может отключиться электричество, зарядить телефоны важнее, чем посмотреть фильм онлайн.",
           "examples": [
             {
-              "text": "**Given that the team needs another day to decide, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что команде нужен ещё день для решения, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the storm may cut the power tonight, charging our phones should take priority over streaming a film.**",
+              "translation_ru": "Поскольку ночью из-за бури может отключиться электричество, зарядить телефоны важнее, чем посмотреть фильм онлайн."
             },
             {
-              "text": "**Given that the revised plan has not been shared yet, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что обновлённым планом ещё не поделились, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the neighbours have complained about the noise, repairing the loose floorboards should take priority over repainting the hallway.**",
+              "translation_ru": "Раз соседи жалуются на шум, починить расшатанные половицы важнее, чем перекрасить коридор."
             },
             {
-              "text": "**Given that we should compare the two options, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что нам следует сравнить два варианта, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the course ends on Friday, practising for the oral exam should take priority over polishing the slides.**",
+              "translation_ru": "Поскольку курс заканчивается в пятницу, подготовка к устному экзамену важнее доводки слайдов."
             },
             {
-              "text": "**Given that the client asked for more detail, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что клиент попросил больше деталей, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the app collects children's locations, protecting their privacy should take priority over a flashy launch.**",
+              "translation_ru": "Раз приложение собирает геоданные детей, их конфиденциальность должна быть важнее эффектного запуска."
             },
             {
-              "text": "**Given that the pilot may continue next month, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что пилотный проект может продолжиться в следующем месяце, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the only accessible entrance is closed, reopening it should take priority over decorating the lobby.**",
+              "translation_ru": "Поскольку единственный доступный для людей с инвалидностью вход закрыт, открыть его снова важнее, чем украшать холл."
             },
             {
-              "text": "**Given that the data need another check, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что данные нужно проверить ещё раз, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that we've promised to help Mum move, finding a van should take priority over making weekend plans.**",
+              "translation_ru": "Раз мы обещали помочь маме с переездом, сначала нужно найти машину, а потом строить планы на выходные."
             },
             {
-              "text": "**Given that the meeting was moved, our priority should be to reduce uncertainty.**",
-              "translation_ru": "Учитывая, что встречу перенесли, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Given that the evidence is still patchy, checking the sources should take priority over publishing a strong claim.**",
+              "translation_ru": "Поскольку доказательства пока неполные, проверка источников важнее громкого заявления."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Da [das Team einen weiteren Tag für die Entscheidung braucht], sollte unsere Priorität darin liegen, Unsicherheit zu verringern.",
-          "example": "Da das Team einen weiteren Tag für die Entscheidung braucht, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.",
-          "translation": "Учитывая, что команде нужен ещё день для решения, нашим приоритетом должно быть снижение неопределённости.",
+          "formula": "Da [Grund], sollte [Maßnahme] Vorrang vor [Alternative] haben.",
+          "example": "Da heute Nacht wegen des Sturms der Strom ausfallen könnte, sollte das Aufladen der Handys Vorrang vor einem Filmabend haben.",
+          "translation": "Поскольку ночью из-за бури может пропасть электричество, зарядка телефонов важнее просмотра фильма.",
           "examples": [
             {
-              "text": "**Da das Team einen weiteren Tag für die Entscheidung braucht, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что команде нужен ещё день для решения, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da heute Nacht wegen des Sturms der Strom ausfallen könnte, sollte das Aufladen der Handys Vorrang vor einem Filmabend haben.**",
+              "translation_ru": "Поскольку ночью из-за бури может пропасть электричество, зарядка телефонов важнее просмотра фильма."
             },
             {
-              "text": "**Da der überarbeitete Plan noch nicht geteilt wurde, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что обновлённым планом ещё не поделились, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da sich die Nachbarn über den Lärm beschwert haben, sollte die Reparatur der lockeren Dielen Vorrang vor dem Streichen des Flurs haben.**",
+              "translation_ru": "Раз соседи пожаловались на шум, починка половиц важнее покраски коридора."
             },
             {
-              "text": "**Da wir die beiden Optionen vergleichen sollten, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что нам следует сравнить два варианта, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da der Kurs am Freitag endet, sollte die Vorbereitung auf die mündliche Prüfung Vorrang vor dem Feinschliff der Folien haben.**",
+              "translation_ru": "Поскольку курс заканчивается в пятницу, подготовка к устному экзамену важнее последних правок слайдов."
             },
             {
-              "text": "**Da der Kunde um mehr Details gebeten hat, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что клиент попросил больше деталей, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da die App Standortdaten von Kindern erfasst, sollte der Schutz dieser Daten Vorrang vor einer schnellen Veröffentlichung haben.**",
+              "translation_ru": "Раз приложение собирает данные о местоположении детей, их защита важнее поспешного выпуска."
             },
             {
-              "text": "**Da das Pilotprojekt im nächsten Monat weiterlaufen kann, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что пилотный проект может продолжиться в следующем месяце, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da der einzige barrierefreie Eingang gesperrt ist, sollte seine Wiedereröffnung Vorrang vor der Neugestaltung des Foyers haben.**",
+              "translation_ru": "Поскольку единственный безбарьерный вход закрыт, важнее открыть его, чем обновлять фойе."
             },
             {
-              "text": "**Da die Daten noch einmal geprüft werden müssen, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что данные нужно проверить ещё раз, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da wir versprochen haben, Mama beim Umzug zu helfen, sollte die Suche nach einem Transporter Vorrang vor der Wochenendplanung haben.**",
+              "translation_ru": "Раз мы обещали помочь маме с переездом, поиск фургона важнее планов на выходные."
             },
             {
-              "text": "**Da die Sitzung verschoben wurde, sollte unsere Priorität darin liegen, Unsicherheit zu verringern.**",
-              "translation_ru": "Учитывая, что встречу перенесли, нашим приоритетом должно быть снижение неопределённости."
+              "text": "**Da die Belege noch lückenhaft sind, sollte die Prüfung der Quellen Vorrang vor einer zugespitzten Behauptung haben.**",
+              "translation_ru": "Поскольку доказательства пока неполные, проверка источников важнее категоричного утверждения."
             }
           ]
         }
       ],
       "formulas": [
-        "Given that [the team needs another day to decide], our priority should be to reduce uncertainty.",
-        "Da [das Team einen weiteren Tag für die Entscheidung braucht], sollte unsere Priorität darin liegen, Unsicherheit zu verringern."
+        "Given that [constraint], [action] should take priority over [alternative].",
+        "Da [Grund], sollte [Maßnahme] Vorrang vor [Alternative] haben."
       ],
       "gen": {
         "status": "curated",

@@ -6,85 +6,85 @@
       "id": "GRMWOR001",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Команда уже отправила партнёрам обновлённый черновик",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «команда уже отправила партнёрам обновлённый черновик» в живом контексте.",
+      "title_ru": "Уже выполненное действие с результатом сейчас",
+      "metaphor_ru": "Already + Present Perfect показывает, что действие завершилось к настоящему моменту. Немецкий Perfekt с schon/bereits требует причастие в конце; в английском вопросе вспомогательный глагол предшествует подлежащему.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The team has already sent the revised draft to the partners [the team was reviewing the new policy]",
-          "example": "The team has already sent the revised draft to the partners in a situation where the team was reviewing the new policy.",
-          "translation": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subject] have/has already [past participle] [object]. / Have [subject] already [done X]?",
+          "example": "I've already sent the landlord photos of the damaged ceiling.",
+          "translation": "Я уже отправил хозяину квартиры фотографии повреждённого потолка.",
           "examples": [
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где команда проверяла новую политику."
+              "text": "**I've already sent the landlord photos of the damaged ceiling.**",
+              "translation_ru": "Я уже отправил хозяину квартиры фотографии повреждённого потолка."
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Have you already told your sister about the change of plans?**",
+              "translation_ru": "Ты уже рассказал сестре, что планы изменились?"
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**The museum has already added subtitles to the recorded tour.**",
+              "translation_ru": "Музей уже добавил субтитры к записи экскурсии."
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**We've already tested the new route with a wheelchair user.**",
+              "translation_ru": "Мы уже проверили новый маршрут вместе с человеком на коляске."
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где расписание изменили в последний момент."
+              "text": "**She's already picked up the medicine, so there's no need to stop at the pharmacy.**",
+              "translation_ru": "Она уже забрала лекарства, поэтому заезжать в аптеку не нужно."
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**They've already translated the safety instructions into three languages.**",
+              "translation_ru": "Они уже перевели инструкции по безопасности на три языка."
             },
             {
-              "text": "**The team has already sent the revised draft to the partners in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где участники ждали объяснения."
+              "text": "**My neighbours have already planted trees along the shared fence.**",
+              "translation_ru": "Соседи уже посадили деревья вдоль нашего общего забора."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt [das Team die neue Regelung prüfte]",
-          "example": "Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] hat/haben [Objekt] schon/bereits [Partizip II]. / Hat [Subjekt] ... schon [Partizip II]?",
+          "example": "Ich habe dem Vermieter die Fotos von der beschädigten Decke schon geschickt.",
+          "translation": "Я уже отправил арендодателю фотографии повреждённого потолка.",
           "examples": [
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где команда проверяла новую политику."
+              "text": "**Ich habe dem Vermieter die Fotos von der beschädigten Decke schon geschickt.**",
+              "translation_ru": "Я уже отправил арендодателю фотографии повреждённого потолка."
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Hast du deiner Schwester schon von der Planänderung erzählt?**",
+              "translation_ru": "Ты уже сообщил сестре об изменении планов?"
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Das Museum hat die aufgezeichnete Führung bereits mit Untertiteln versehen.**",
+              "translation_ru": "Музей уже добавил субтитры к записи экскурсии."
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Wir haben die neue Strecke bereits mit einer Rollstuhlfahrerin getestet.**",
+              "translation_ru": "Мы уже опробовали новый маршрут вместе с женщиной на коляске."
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где расписание изменили в последний момент."
+              "text": "**Sie hat die Medikamente schon abgeholt, also müssen wir nicht mehr zur Apotheke.**",
+              "translation_ru": "Она уже забрала лекарства, поэтому нам больше не нужно идти в аптеку."
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Sie haben die Sicherheitshinweise bereits in drei Sprachen übersetzt.**",
+              "translation_ru": "Они уже перевели инструкции по безопасности на три языка."
             },
             {
-              "text": "**Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Команда уже отправила партнёрам обновлённый черновик в ситуации, где участники ждали объяснения."
+              "text": "**Unsere Nachbarn haben entlang des gemeinsamen Zauns schon Bäume gepflanzt.**",
+              "translation_ru": "Соседи уже посадили деревья вдоль общего забора."
             }
           ]
         }
       ],
       "formulas": [
-        "The team has already sent the revised draft to the partners [the team was reviewing the new policy]",
-        "Das Team hat den überarbeiteten Entwurf bereits an die Partner geschickt [das Team die neue Regelung prüfte]"
+        "[Subject] have/has already [past participle] [object]. / Have [subject] already [done X]?",
+        "[Subjekt] hat/haben [Objekt] schon/bereits [Partizip II]. / Hat [Subjekt] ... schon [Partizip II]?"
       ],
       "gen": {
         "status": "curated",
