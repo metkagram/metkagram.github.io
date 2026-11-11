@@ -291,85 +291,85 @@
       "id": "QSTQNEG031",
       "group_id": "QNEG",
       "set_id": "QNEG",
-      "title_ru": "Разве нам не стоит спросить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Разве нам не стоит спросить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Предложить проверку до решения",
+      "metaphor_ru": "Отрицательный вопрос мягко ставит под сомнение поспешный шаг и предлагает предварительную проверку: Shouldn't we ...? / Sollten wir nicht ...? Это предложение для совместного обсуждения, а не упрёк. Добавляйте before/bevor, чтобы показать порядок действий.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Shouldn't we ask whether [the team needs another day to decide]?",
-          "example": "Shouldn't we ask whether the team needs another day to decide?",
-          "translation": "Разве нам не стоит спросить, команде нужен ещё день для решения?",
+          "formula": "Shouldn't we [check/ask/clarify] ... before [we act]? / Wouldn't it be wiser to [check] first?",
+          "example": "Shouldn't we ask the neighbours before moving the shared bicycles?",
+          "translation": "Может, сначала спросим соседей, прежде чем переставлять общие велосипеды?",
           "examples": [
             {
-              "text": "**Shouldn't we ask whether the team needs another day to decide?**",
-              "translation_ru": "Разве нам не стоит спросить, команде нужен ещё день для решения?"
+              "text": "**Shouldn't we ask the neighbours before moving the shared bicycles?**",
+              "translation_ru": "Может, сначала спросим соседей, прежде чем переставлять общие велосипеды?"
             },
             {
-              "text": "**Shouldn't we ask whether the revised plan has not been shared yet?**",
-              "translation_ru": "Разве нам не стоит спросить, обновлённым планом ещё не поделились?"
+              "text": "**Shouldn't we check whether the new rules apply to children before buying tickets?**",
+              "translation_ru": "Не стоит ли проверить, распространяются ли новые правила на детей, прежде чем покупать билеты?"
             },
             {
-              "text": "**Shouldn't we ask whether we should compare the two options?**",
-              "translation_ru": "Разве нам не стоит спросить, нам следует сравнить два варианта?"
+              "text": "**Wouldn't it be wiser to test the microphone before recording the interview?**",
+              "translation_ru": "Не разумнее ли проверить микрофон перед записью интервью?"
             },
             {
-              "text": "**Shouldn't we ask whether the client asked for more detail?**",
-              "translation_ru": "Разве нам не стоит спросить, клиент попросил больше деталей?"
+              "text": "**Shouldn't we ask what she actually meant before assuming she was upset?**",
+              "translation_ru": "Может, сначала спросим, что она имела в виду, прежде чем решать, что она расстроена?"
             },
             {
-              "text": "**Shouldn't we ask whether the pilot may continue next month?**",
-              "translation_ru": "Разве нам не стоит спросить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wouldn't it help to compare both translations before choosing one for the poster?**",
+              "translation_ru": "Не лучше ли сравнить оба перевода, прежде чем выбрать один для плаката?"
             },
             {
-              "text": "**Shouldn't we ask whether the data need another check?**",
-              "translation_ru": "Разве нам не стоит спросить, данные нужно проверить ещё раз?"
+              "text": "**Shouldn't we find out who owns the photos before putting them on the website?**",
+              "translation_ru": "Может, сначала выясним, кому принадлежат фотографии, прежде чем размещать их на сайте?"
             },
             {
-              "text": "**Shouldn't we ask whether the meeting was moved?**",
-              "translation_ru": "Разве нам не стоит спросить, встречу перенесли?"
+              "text": "**Don't you think we ought to hear the other side before making a decision?**",
+              "translation_ru": "Тебе не кажется, что перед решением стоит выслушать и другую сторону?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sollten wir nicht fragen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Sollten wir nicht fragen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Разве нам не стоит спросить, команде нужен ещё день для решения?",
+          "formula": "Sollten wir nicht erst [prüfen/fragen], bevor [wir handeln]? / Wäre es nicht klüger, ...?",
+          "example": "Sollten wir nicht erst die Nachbarn fragen, bevor wir die Gemeinschaftsfahrräder umstellen?",
+          "translation": "Может, сначала спросим соседей, прежде чем переставлять общие велосипеды?",
           "examples": [
             {
-              "text": "**Sollten wir nicht fragen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Разве нам не стоит спросить, команде нужен ещё день для решения?"
+              "text": "**Sollten wir nicht erst die Nachbarn fragen, bevor wir die Gemeinschaftsfahrräder umstellen?**",
+              "translation_ru": "Может, сначала спросим соседей, прежде чем переставлять общие велосипеды?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Разве нам не стоит спросить, обновлённым планом ещё не поделились?"
+              "text": "**Sollten wir nicht prüfen, ob die neuen Regeln auch für Kinder gelten, bevor wir Tickets kaufen?**",
+              "translation_ru": "Не стоит ли проверить, распространяются ли новые правила на детей, прежде чем покупать билеты?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Разве нам не стоит спросить, нам следует сравнить два варианта?"
+              "text": "**Wäre es nicht klüger, das Mikrofon zu testen, bevor wir das Interview aufnehmen?**",
+              "translation_ru": "Не разумнее ли проверить микрофон перед записью интервью?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Разве нам не стоит спросить, клиент попросил больше деталей?"
+              "text": "**Sollten wir nicht erst fragen, was sie eigentlich gemeint hat, bevor wir annehmen, dass sie verärgert ist?**",
+              "translation_ru": "Может, сначала спросим, что она имела в виду, прежде чем решать, что она расстроена?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Разве нам не стоит спросить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wäre es nicht hilfreich, beide Übersetzungen zu vergleichen, bevor wir eine für das Plakat auswählen?**",
+              "translation_ru": "Не лучше ли сравнить оба перевода, прежде чем выбрать один для плаката?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Разве нам не стоит спросить, данные нужно проверить ещё раз?"
+              "text": "**Sollten wir nicht klären, wem die Fotos gehören, bevor wir sie auf die Website stellen?**",
+              "translation_ru": "Может, сначала выясним, кому принадлежат фотографии, прежде чем размещать их на сайте?"
             },
             {
-              "text": "**Sollten wir nicht fragen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Разве нам не стоит спросить, встречу перенесли?"
+              "text": "**Findest du nicht auch, dass wir die andere Seite anhören sollten, bevor wir uns entscheiden?**",
+              "translation_ru": "Тебе не кажется, что перед решением стоит выслушать и другую сторону?"
             }
           ]
         }
       ],
       "formulas": [
-        "Shouldn't we ask whether [the team needs another day to decide]?",
-        "Sollten wir nicht fragen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Shouldn't we [check/ask/clarify] ... before [we act]? / Wouldn't it be wiser to [check] first?",
+        "Sollten wir nicht erst [prüfen/fragen], bevor [wir handeln]? / Wäre es nicht klüger, ...?"
       ],
       "gen": {
         "status": "curated",

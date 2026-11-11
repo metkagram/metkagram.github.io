@@ -6,85 +6,85 @@
       "id": "QSTQPRE001",
       "group_id": "QPRE",
       "set_id": "QPRE",
-      "title_ru": "С кем нам обсудить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «С кем нам обсудить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Уточнить, к кому обратиться",
+      "metaphor_ru": "В английской разговорной речи предлог в вопросе часто остаётся после глагола: Who should I speak to about ...? В немецком mit wem / an wen / bei wem обычно ставятся в начало; падеж определяется предлогом. Вопрос помогает найти ответственного человека, а не просто попросить решение.",
       "langs": [
         {
           "lang": "en",
-          "formula": "With whom should we discuss whether [the team needs another day to decide]?",
-          "example": "With whom should we discuss whether the team needs another day to decide?",
-          "translation": "С кем нам обсудить, команде нужен ещё день для решения?",
+          "formula": "Who should [I/we] speak to about [issue]? / Who did [you] discuss [issue] with?",
+          "example": "Who should I speak to about the broken lift in our building?",
+          "translation": "С кем мне поговорить по поводу сломанного лифта в нашем доме?",
           "examples": [
             {
-              "text": "**With whom should we discuss whether the team needs another day to decide?**",
-              "translation_ru": "С кем нам обсудить, команде нужен ещё день для решения?"
+              "text": "**Who should I speak to about the broken lift in our building?**",
+              "translation_ru": "С кем мне поговорить по поводу сломанного лифта в нашем доме?"
             },
             {
-              "text": "**With whom should we discuss whether the revised plan has not been shared yet?**",
-              "translation_ru": "С кем нам обсудить, обновлённым планом ещё не поделились?"
+              "text": "**Who could we talk to about arranging subtitles for the lecture?**",
+              "translation_ru": "С кем можно обсудить субтитры для лекции?"
             },
             {
-              "text": "**With whom should we discuss whether we should compare the two options?**",
-              "translation_ru": "С кем нам обсудить, нам следует сравнить два варианта?"
+              "text": "**Who did you check the allergy information with before booking the restaurant?**",
+              "translation_ru": "У кого ты уточнил информацию об аллергенах перед бронированием ресторана?"
             },
             {
-              "text": "**With whom should we discuss whether the client asked for more detail?**",
-              "translation_ru": "С кем нам обсудить, клиент попросил больше деталей?"
+              "text": "**Who can I turn to for advice about moving to another course?**",
+              "translation_ru": "К кому я могу обратиться за советом по переходу на другой курс?"
             },
             {
-              "text": "**With whom should we discuss whether the pilot may continue next month?**",
-              "translation_ru": "С кем нам обсудить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Who would be the right person to speak to about the missing parcel?**",
+              "translation_ru": "К кому лучше обратиться по поводу пропавшей посылки?"
             },
             {
-              "text": "**With whom should we discuss whether the data need another check?**",
-              "translation_ru": "С кем нам обсудить, данные нужно проверить ещё раз?"
+              "text": "**Who should the neighbours raise the noise complaint with?**",
+              "translation_ru": "Кому соседям следует пожаловаться на ночной шум?"
             },
             {
-              "text": "**With whom should we discuss whether the meeting was moved?**",
-              "translation_ru": "С кем нам обсудить, встречу перенесли?"
+              "text": "**Who did you discuss the revised timetable with?**",
+              "translation_ru": "С кем ты обсуждал изменённое расписание?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Mit wem sollten wir besprechen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Mit wem sollten wir besprechen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "С кем нам обсудить, команде нужен ещё день для решения?",
+          "formula": "Mit wem sollte [ich] über [Thema] sprechen? / An wen kann ich mich wegen [Thema] wenden?",
+          "example": "Mit wem sollte ich wegen des kaputten Aufzugs in unserem Haus sprechen?",
+          "translation": "С кем мне поговорить по поводу сломанного лифта в нашем доме?",
           "examples": [
             {
-              "text": "**Mit wem sollten wir besprechen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "С кем нам обсудить, команде нужен ещё день для решения?"
+              "text": "**Mit wem sollte ich wegen des kaputten Aufzugs in unserem Haus sprechen?**",
+              "translation_ru": "С кем мне поговорить по поводу сломанного лифта в нашем доме?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "С кем нам обсудить, обновлённым планом ещё не поделились?"
+              "text": "**Mit wem könnten wir über Untertitel für den Vortrag sprechen?**",
+              "translation_ru": "С кем можно обсудить субтитры для лекции?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "С кем нам обсудить, нам следует сравнить два варианта?"
+              "text": "**Bei wem hast du dich vor der Restaurantbuchung wegen der Allergene erkundigt?**",
+              "translation_ru": "У кого ты уточнил информацию об аллергенах перед бронированием ресторана?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "С кем нам обсудить, клиент попросил больше деталей?"
+              "text": "**An wen kann ich mich wegen eines Kurswechsels wenden?**",
+              "translation_ru": "К кому я могу обратиться за советом по переходу на другой курс?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "С кем нам обсудить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wer wäre die richtige Ansprechperson für das verschwundene Paket?**",
+              "translation_ru": "К кому лучше обратиться по поводу пропавшей посылки?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "С кем нам обсудить, данные нужно проверить ещё раз?"
+              "text": "**Bei wem sollten sich die Nachbarn über den nächtlichen Lärm beschweren?**",
+              "translation_ru": "Кому соседям следует пожаловаться на ночной шум?"
             },
             {
-              "text": "**Mit wem sollten wir besprechen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "С кем нам обсудить, встречу перенесли?"
+              "text": "**Mit wem hast du den geänderten Fahrplan besprochen?**",
+              "translation_ru": "С кем ты обсуждал изменённое расписание?"
             }
           ]
         }
       ],
       "formulas": [
-        "With whom should we discuss whether [the team needs another day to decide]?",
-        "Mit wem sollten wir besprechen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Who should [I/we] speak to about [issue]? / Who did [you] discuss [issue] with?",
+        "Mit wem sollte [ich] über [Thema] sprechen? / An wen kann ich mich wegen [Thema] wenden?"
       ],
       "gen": {
         "status": "curated",

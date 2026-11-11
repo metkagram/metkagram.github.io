@@ -101,85 +101,85 @@
       "id": "QSTQIND011",
       "group_id": "QIND",
       "set_id": "QIND",
-      "title_ru": "Вы случайно не знаете, почему команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Вы случайно не знаете, почему команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Вежливо узнать причину",
+      "metaphor_ru": "Косвенный вопрос о причине звучит мягче прямого «почему?». После why сохраняйте порядок слов утверждения; после немецкого warum спрягаемый глагол уходит в конец придаточного. Меняйте обращение и время, не превращая вопрос в обвинение.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Do you happen to know why [the team needs another day to decide]?",
-          "example": "Do you happen to know why the team needs another day to decide?",
-          "translation": "Вы случайно не знаете, почему команде нужен ещё день для решения?",
+          "formula": "Do you happen to know why [subject + verb]? / Does anyone know why [subject + verb]?",
+          "example": "Do you happen to know why the evening train no longer stops at our station?",
+          "translation": "Вы случайно не знаете, почему вечерний поезд больше не останавливается на нашей станции?",
           "examples": [
             {
-              "text": "**Do you happen to know why the team needs another day to decide?**",
-              "translation_ru": "Вы случайно не знаете, почему команде нужен ещё день для решения?"
+              "text": "**Do you happen to know why the evening train no longer stops at our station?**",
+              "translation_ru": "Вы случайно не знаете, почему вечерний поезд больше не останавливается на нашей станции?"
             },
             {
-              "text": "**Do you happen to know why the revised plan has not been shared yet?**",
-              "translation_ru": "Вы случайно не знаете, почему обновлённым планом ещё не поделились?"
+              "text": "**Does anyone happen to know why the library closes an hour earlier on Fridays?**",
+              "translation_ru": "Кто-нибудь знает, почему по пятницам библиотека закрывается на час раньше?"
             },
             {
-              "text": "**Do you happen to know why we should compare the two options?**",
-              "translation_ru": "Вы случайно не знаете, почему нам следует сравнить два варианта?"
+              "text": "**Do you happen to know why Mia stopped coming to the language exchange?**",
+              "translation_ru": "Ты случайно не знаешь, почему Миа перестала приходить на языковые встречи?"
             },
             {
-              "text": "**Do you happen to know why the client asked for more detail?**",
-              "translation_ru": "Вы случайно не знаете, почему клиент попросил больше деталей?"
+              "text": "**Would you happen to know why these old photos look blurred on my phone?**",
+              "translation_ru": "Вы случайно не знаете, почему старые фотографии на моём телефоне выглядят размытыми?"
             },
             {
-              "text": "**Do you happen to know why the pilot may continue next month?**",
-              "translation_ru": "Вы случайно не знаете, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Do you happen to know why the museum changed its entry rules?**",
+              "translation_ru": "Ты случайно не знаешь, почему музей изменил правила посещения?"
             },
             {
-              "text": "**Do you happen to know why the data need another check?**",
-              "translation_ru": "Вы случайно не знаете, почему данные нужно проверить ещё раз?"
+              "text": "**Do you know by any chance why the flat smells of paint again?**",
+              "translation_ru": "Ты случайно не знаешь, почему в квартире снова пахнет краской?"
             },
             {
-              "text": "**Do you happen to know why the meeting was moved?**",
-              "translation_ru": "Вы случайно не знаете, почему встречу перенесли?"
+              "text": "**Does anyone know why the subtitles disappeared after the update?**",
+              "translation_ru": "Кто-нибудь знает, почему после обновления пропали субтитры?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wissen Sie zufällig, warum [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wissen Sie zufällig, warum das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Вы случайно не знаете, почему команде нужен ещё день для решения?",
+          "formula": "Wissen Sie / Weißt du zufällig, warum [Subjekt ... Verb am Ende]?",
+          "example": "Wissen Sie zufällig, warum der Abendzug nicht mehr an unserem Bahnhof hält?",
+          "translation": "Вы случайно не знаете, почему вечерний поезд больше не останавливается на нашей станции?",
           "examples": [
             {
-              "text": "**Wissen Sie zufällig, warum das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Вы случайно не знаете, почему команде нужен ещё день для решения?"
+              "text": "**Wissen Sie zufällig, warum der Abendzug nicht mehr an unserem Bahnhof hält?**",
+              "translation_ru": "Вы случайно не знаете, почему вечерний поезд больше не останавливается на нашей станции?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Вы случайно не знаете, почему обновлённым планом ещё не поделились?"
+              "text": "**Weiß jemand zufällig, warum die Bibliothek freitags eine Stunde früher schließt?**",
+              "translation_ru": "Кто-нибудь знает, почему по пятницам библиотека закрывается на час раньше?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Вы случайно не знаете, почему нам следует сравнить два варианта?"
+              "text": "**Weißt du zufällig, warum Mia nicht mehr zum Sprachtreff kommt?**",
+              "translation_ru": "Ты случайно не знаешь, почему Миа перестала приходить на языковые встречи?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Вы случайно не знаете, почему клиент попросил больше деталей?"
+              "text": "**Wissen Sie vielleicht, warum die alten Fotos auf meinem Handy so unscharf aussehen?**",
+              "translation_ru": "Вы случайно не знаете, почему старые фотографии на моём телефоне выглядят размытыми?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Вы случайно не знаете, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Weißt du zufällig, warum das Museum seine Eintrittsregeln geändert hat?**",
+              "translation_ru": "Ты случайно не знаешь, почему музей изменил правила посещения?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Вы случайно не знаете, почему данные нужно проверить ещё раз?"
+              "text": "**Weißt du zufällig, warum es in der Wohnung schon wieder nach Farbe riecht?**",
+              "translation_ru": "Ты случайно не знаешь, почему в квартире снова пахнет краской?"
             },
             {
-              "text": "**Wissen Sie zufällig, warum die Sitzung verschoben wurde?**",
-              "translation_ru": "Вы случайно не знаете, почему встречу перенесли?"
+              "text": "**Weiß jemand, warum die Untertitel nach dem Update verschwunden sind?**",
+              "translation_ru": "Кто-нибудь знает, почему после обновления пропали субтитры?"
             }
           ]
         }
       ],
       "formulas": [
-        "Do you happen to know why [the team needs another day to decide]?",
-        "Wissen Sie zufällig, warum [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Do you happen to know why [subject + verb]? / Does anyone know why [subject + verb]?",
+        "Wissen Sie / Weißt du zufällig, warum [Subjekt ... Verb am Ende]?"
       ],
       "gen": {
         "status": "curated",

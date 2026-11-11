@@ -1,1 +1,386 @@
-{"schemaVersion":1,"set_id":"QCNF","patterns":[{"id":"QSTQCNF001","group_id":"QCNF","set_id":"QCNF","title_ru":"Можете подтвердить, что команде нужен ещё день для решения?","metaphor_ru":"Речевая задача: задать вопрос «Можете подтвердить, что команде нужен ещё день для решения» в подходящей ситуации.","langs":[{"lang":"en","formula":"Can you confirm that [the team needs another day to decide]?","example":"Can you confirm that the team needs another day to decide?","translation":"Можете подтвердить, что команде нужен ещё день для решения?","examples":[{"text":"**Can you confirm that the team needs another day to decide?**","translation_ru":"Можете подтвердить, что команде нужен ещё день для решения?"},{"text":"**Can you confirm that the revised plan has not been shared yet?**","translation_ru":"Можете подтвердить, что обновлённым планом ещё не поделились?"},{"text":"**Can you confirm that we should compare the two options?**","translation_ru":"Можете подтвердить, что нам следует сравнить два варианта?"},{"text":"**Can you confirm that the client asked for more detail?**","translation_ru":"Можете подтвердить, что клиент попросил больше деталей?"},{"text":"**Can you confirm that the pilot may continue next month?**","translation_ru":"Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"},{"text":"**Can you confirm that the data need another check?**","translation_ru":"Можете подтвердить, что данные нужно проверить ещё раз?"},{"text":"**Can you confirm that the meeting was moved?**","translation_ru":"Можете подтвердить, что встречу перенесли?"}]},{"lang":"de","formula":"Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?","example":"Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?","translation":"Можете подтвердить, что команде нужен ещё день для решения?","examples":[{"text":"**Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?**","translation_ru":"Можете подтвердить, что команде нужен ещё день для решения?"},{"text":"**Können Sie bestätigen, dass der überarbeitete Plan noch nicht geteilt wurde?**","translation_ru":"Можете подтвердить, что обновлённым планом ещё не поделились?"},{"text":"**Können Sie bestätigen, dass wir die beiden Optionen vergleichen sollten?**","translation_ru":"Можете подтвердить, что нам следует сравнить два варианта?"},{"text":"**Können Sie bestätigen, dass der Kunde um mehr Details gebeten hat?**","translation_ru":"Можете подтвердить, что клиент попросил больше деталей?"},{"text":"**Können Sie bestätigen, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**","translation_ru":"Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"},{"text":"**Können Sie bestätigen, dass die Daten noch einmal geprüft werden müssen?**","translation_ru":"Можете подтвердить, что данные нужно проверить ещё раз?"},{"text":"**Können Sie bestätigen, dass die Sitzung verschoben wurde?**","translation_ru":"Можете подтвердить, что встречу перенесли?"}]}],"formulas":["Can you confirm that [the team needs another day to decide]?","Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Question pattern: Confirmation questions."}},{"id":"QSTQCNF011","group_id":"QCNF","set_id":"QCNF","title_ru":"Проверить уверенность в утверждении","metaphor_ru":"Учитесь уточнять степень уверенности, а не требовать формального подтверждения. Английское be sure/certain that и немецкое sicher sein, dass помогают вежливо поставить предположение под вопрос.","langs":[{"lang":"en","formula":"Is/Are [someone] sure/certain that [a claim is true]?","example":"Are you sure that the parcel was delivered to the right building?","translation":"Ты уверен, что посылку доставили в нужный дом?","examples":[{"text":"**Are you sure that the parcel was delivered to the right building?**","translation_ru":"Ты уверен, что посылку доставили в нужный дом?"},{"text":"**Are we certain that this quotation comes from the original interview?**","translation_ru":"Мы уверены, что эта цитата взята из первоначального интервью?"},{"text":"**Is Lena certain that the exhibition opens on Thursday?**","translation_ru":"Лена уверена, что выставка откроется в четверг?"},{"text":"**Are they sure that the footpath remains accessible after the flood?**","translation_ru":"Они уверены, что после паводка по тропе всё ещё можно пройти?"},{"text":"**Are you certain that the landlord approved the changes in writing?**","translation_ru":"Вы уверены, что арендодатель письменно согласовал изменения?"},{"text":"**Are we sure that the missing records weren't archived under another name?**","translation_ru":"Мы уверены, что пропавшие документы не сохранили в архиве под другим названием?"},{"text":"**Are the researchers certain that the birds returned to the same nesting site?**","translation_ru":"Исследователи уверены, что птицы вернулись к прежнему месту гнездования?"}]},{"lang":"de","formula":"Ist/Sind [jemand] sicher, dass [eine Aussage stimmt]?","example":"Bist du sicher, dass das Paket im richtigen Haus abgegeben wurde?","translation":"Ты уверен, что посылку доставили в нужный дом?","examples":[{"text":"**Bist du sicher, dass das Paket im richtigen Haus abgegeben wurde?**","translation_ru":"Ты уверен, что посылку доставили в нужный дом?"},{"text":"**Sind wir sicher, dass dieses Zitat aus dem ursprünglichen Interview stammt?**","translation_ru":"Мы уверены, что эта цитата взята из первоначального интервью?"},{"text":"**Ist Lena sicher, dass die Ausstellung am Donnerstag eröffnet wird?**","translation_ru":"Лена уверена, что выставка откроется в четверг?"},{"text":"**Sind sie sicher, dass der Wanderweg nach dem Hochwasser noch begehbar ist?**","translation_ru":"Они уверены, что после паводка по тропе всё ещё можно пройти?"},{"text":"**Sind Sie sicher, dass der Vermieter den Änderungen schriftlich zugestimmt hat?**","translation_ru":"Вы уверены, что арендодатель письменно согласовал изменения?"},{"text":"**Sind wir sicher, dass die fehlenden Unterlagen nicht unter einem anderen Namen archiviert wurden?**","translation_ru":"Мы уверены, что пропавшие документы не сохранили в архиве под другим названием?"},{"text":"**Sind die Forschenden sicher, dass die Vögel zum selben Nistplatz zurückgekehrt sind?**","translation_ru":"Исследователи уверены, что птицы вернулись к прежнему месту гнездования?"}]}],"formulas":["Is/Are [someone] sure/certain that [a claim is true]?","Ist/Sind [jemand] sicher, dass [eine Aussage stimmt]?"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Question pattern: Confirmation questions."}},{"id":"QSTQCNF021","group_id":"QCNF","set_id":"QCNF","title_ru":"Вы могли бы проверить, команде нужен ещё день для решения?","metaphor_ru":"Речевая задача: задать вопрос «Вы могли бы проверить, команде нужен ещё день для решения» в подходящей ситуации.","langs":[{"lang":"en","formula":"Would you verify whether [the team needs another day to decide]?","example":"Would you verify whether the team needs another day to decide?","translation":"Вы могли бы проверить, команде нужен ещё день для решения?","examples":[{"text":"**Would you verify whether the team needs another day to decide?**","translation_ru":"Вы могли бы проверить, команде нужен ещё день для решения?"},{"text":"**Would you verify whether the revised plan has not been shared yet?**","translation_ru":"Вы могли бы проверить, обновлённым планом ещё не поделились?"},{"text":"**Would you verify whether we should compare the two options?**","translation_ru":"Вы могли бы проверить, нам следует сравнить два варианта?"},{"text":"**Would you verify whether the client asked for more detail?**","translation_ru":"Вы могли бы проверить, клиент попросил больше деталей?"},{"text":"**Would you verify whether the pilot may continue next month?**","translation_ru":"Вы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"},{"text":"**Would you verify whether the data need another check?**","translation_ru":"Вы могли бы проверить, данные нужно проверить ещё раз?"},{"text":"**Would you verify whether the meeting was moved?**","translation_ru":"Вы могли бы проверить, встречу перенесли?"}]},{"lang":"de","formula":"Würden Sie prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?","example":"Würden Sie prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?","translation":"Вы могли бы проверить, команде нужен ещё день для решения?","examples":[{"text":"**Würden Sie prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?**","translation_ru":"Вы могли бы проверить, команде нужен ещё день для решения?"},{"text":"**Würden Sie prüfen, ob der überarbeitete Plan noch nicht geteilt wurde?**","translation_ru":"Вы могли бы проверить, обновлённым планом ещё не поделились?"},{"text":"**Würden Sie prüfen, ob wir die beiden Optionen vergleichen sollten?**","translation_ru":"Вы могли бы проверить, нам следует сравнить два варианта?"},{"text":"**Würden Sie prüfen, ob der Kunde um mehr Details gebeten hat?**","translation_ru":"Вы могли бы проверить, клиент попросил больше деталей?"},{"text":"**Würden Sie prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**","translation_ru":"Вы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"},{"text":"**Würden Sie prüfen, ob die Daten noch einmal geprüft werden müssen?**","translation_ru":"Вы могли бы проверить, данные нужно проверить ещё раз?"},{"text":"**Würden Sie prüfen, ob die Sitzung verschoben wurde?**","translation_ru":"Вы могли бы проверить, встречу перенесли?"}]}],"formulas":["Would you verify whether [the team needs another day to decide]?","Würden Sie prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Question pattern: Confirmation questions."}},{"id":"QSTQCNF031","group_id":"QCNF","set_id":"QCNF","title_ru":"Есть ли сомнения, что команде нужен ещё день для решения?","metaphor_ru":"Речевая задача: задать вопрос «Есть ли сомнения, что команде нужен ещё день для решения» в подходящей ситуации.","langs":[{"lang":"en","formula":"Is there any doubt that [the team needs another day to decide]?","example":"Is there any doubt that the team needs another day to decide?","translation":"Есть ли сомнения, что команде нужен ещё день для решения?","examples":[{"text":"**Is there any doubt that the team needs another day to decide?**","translation_ru":"Есть ли сомнения, что команде нужен ещё день для решения?"},{"text":"**Is there any doubt that the revised plan has not been shared yet?**","translation_ru":"Есть ли сомнения, что обновлённым планом ещё не поделились?"},{"text":"**Is there any doubt that we should compare the two options?**","translation_ru":"Есть ли сомнения, что нам следует сравнить два варианта?"},{"text":"**Is there any doubt that the client asked for more detail?**","translation_ru":"Есть ли сомнения, что клиент попросил больше деталей?"},{"text":"**Is there any doubt that the pilot may continue next month?**","translation_ru":"Есть ли сомнения, что пилотный проект может продолжиться в следующем месяце?"},{"text":"**Is there any doubt that the data need another check?**","translation_ru":"Есть ли сомнения, что данные нужно проверить ещё раз?"},{"text":"**Is there any doubt that the meeting was moved?**","translation_ru":"Есть ли сомнения, что встречу перенесли?"}]},{"lang":"de","formula":"Gibt es Zweifel daran, dass [das Team einen weiteren Tag für die Entscheidung braucht]?","example":"Gibt es Zweifel daran, dass das Team einen weiteren Tag für die Entscheidung braucht?","translation":"Есть ли сомнения, что команде нужен ещё день для решения?","examples":[{"text":"**Gibt es Zweifel daran, dass das Team einen weiteren Tag für die Entscheidung braucht?**","translation_ru":"Есть ли сомнения, что команде нужен ещё день для решения?"},{"text":"**Gibt es Zweifel daran, dass der überarbeitete Plan noch nicht geteilt wurde?**","translation_ru":"Есть ли сомнения, что обновлённым планом ещё не поделились?"},{"text":"**Gibt es Zweifel daran, dass wir die beiden Optionen vergleichen sollten?**","translation_ru":"Есть ли сомнения, что нам следует сравнить два варианта?"},{"text":"**Gibt es Zweifel daran, dass der Kunde um mehr Details gebeten hat?**","translation_ru":"Есть ли сомнения, что клиент попросил больше деталей?"},{"text":"**Gibt es Zweifel daran, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**","translation_ru":"Есть ли сомнения, что пилотный проект может продолжиться в следующем месяце?"},{"text":"**Gibt es Zweifel daran, dass die Daten noch einmal geprüft werden müssen?**","translation_ru":"Есть ли сомнения, что данные нужно проверить ещё раз?"},{"text":"**Gibt es Zweifel daran, dass die Sitzung verschoben wurde?**","translation_ru":"Есть ли сомнения, что встречу перенесли?"}]}],"formulas":["Is there any doubt that [the team needs another day to decide]?","Gibt es Zweifel daran, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Question pattern: Confirmation questions."}}]}
+{
+  "schemaVersion": 1,
+  "set_id": "QCNF",
+  "patterns": [
+    {
+      "id": "QSTQCNF001",
+      "group_id": "QCNF",
+      "set_id": "QCNF",
+      "title_ru": "Можете подтвердить, что команде нужен ещё день для решения?",
+      "metaphor_ru": "Речевая задача: задать вопрос «Можете подтвердить, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Can you confirm that [the team needs another day to decide]?",
+          "example": "Can you confirm that the team needs another day to decide?",
+          "translation": "Можете подтвердить, что команде нужен ещё день для решения?",
+          "examples": [
+            {
+              "text": "**Can you confirm that the team needs another day to decide?**",
+              "translation_ru": "Можете подтвердить, что команде нужен ещё день для решения?"
+            },
+            {
+              "text": "**Can you confirm that the revised plan has not been shared yet?**",
+              "translation_ru": "Можете подтвердить, что обновлённым планом ещё не поделились?"
+            },
+            {
+              "text": "**Can you confirm that we should compare the two options?**",
+              "translation_ru": "Можете подтвердить, что нам следует сравнить два варианта?"
+            },
+            {
+              "text": "**Can you confirm that the client asked for more detail?**",
+              "translation_ru": "Можете подтвердить, что клиент попросил больше деталей?"
+            },
+            {
+              "text": "**Can you confirm that the pilot may continue next month?**",
+              "translation_ru": "Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"
+            },
+            {
+              "text": "**Can you confirm that the data need another check?**",
+              "translation_ru": "Можете подтвердить, что данные нужно проверить ещё раз?"
+            },
+            {
+              "text": "**Can you confirm that the meeting was moved?**",
+              "translation_ru": "Можете подтвердить, что встречу перенесли?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
+          "example": "Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?",
+          "translation": "Можете подтвердить, что команде нужен ещё день для решения?",
+          "examples": [
+            {
+              "text": "**Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
+              "translation_ru": "Можете подтвердить, что команде нужен ещё день для решения?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass der überarbeitete Plan noch nicht geteilt wurde?**",
+              "translation_ru": "Можете подтвердить, что обновлённым планом ещё не поделились?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass wir die beiden Optionen vergleichen sollten?**",
+              "translation_ru": "Можете подтвердить, что нам следует сравнить два варианта?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass der Kunde um mehr Details gebeten hat?**",
+              "translation_ru": "Можете подтвердить, что клиент попросил больше деталей?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
+              "translation_ru": "Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass die Daten noch einmal geprüft werden müssen?**",
+              "translation_ru": "Можете подтвердить, что данные нужно проверить ещё раз?"
+            },
+            {
+              "text": "**Können Sie bestätigen, dass die Sitzung verschoben wurde?**",
+              "translation_ru": "Можете подтвердить, что встречу перенесли?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Can you confirm that [the team needs another day to decide]?",
+        "Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Question pattern: Confirmation questions."
+      }
+    },
+    {
+      "id": "QSTQCNF011",
+      "group_id": "QCNF",
+      "set_id": "QCNF",
+      "title_ru": "Проверить уверенность в утверждении",
+      "metaphor_ru": "Учитесь уточнять степень уверенности, а не требовать формального подтверждения. Английское be sure/certain that и немецкое sicher sein, dass помогают вежливо поставить предположение под вопрос.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Is/Are [someone] sure/certain that [a claim is true]?",
+          "example": "Are you sure that the parcel was delivered to the right building?",
+          "translation": "Ты уверен, что посылку доставили в нужный дом?",
+          "examples": [
+            {
+              "text": "**Are you sure that the parcel was delivered to the right building?**",
+              "translation_ru": "Ты уверен, что посылку доставили в нужный дом?"
+            },
+            {
+              "text": "**Are we certain that this quotation comes from the original interview?**",
+              "translation_ru": "Мы уверены, что эта цитата взята из первоначального интервью?"
+            },
+            {
+              "text": "**Is Lena certain that the exhibition opens on Thursday?**",
+              "translation_ru": "Лена уверена, что выставка откроется в четверг?"
+            },
+            {
+              "text": "**Are they sure that the footpath remains accessible after the flood?**",
+              "translation_ru": "Они уверены, что после паводка по тропе всё ещё можно пройти?"
+            },
+            {
+              "text": "**Are you certain that the landlord approved the changes in writing?**",
+              "translation_ru": "Вы уверены, что арендодатель письменно согласовал изменения?"
+            },
+            {
+              "text": "**Are we sure that the missing records weren't archived under another name?**",
+              "translation_ru": "Мы уверены, что пропавшие документы не сохранили в архиве под другим названием?"
+            },
+            {
+              "text": "**Are the researchers certain that the birds returned to the same nesting site?**",
+              "translation_ru": "Исследователи уверены, что птицы вернулись к прежнему месту гнездования?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Ist/Sind [jemand] sicher, dass [eine Aussage stimmt]?",
+          "example": "Bist du sicher, dass das Paket im richtigen Haus abgegeben wurde?",
+          "translation": "Ты уверен, что посылку доставили в нужный дом?",
+          "examples": [
+            {
+              "text": "**Bist du sicher, dass das Paket im richtigen Haus abgegeben wurde?**",
+              "translation_ru": "Ты уверен, что посылку доставили в нужный дом?"
+            },
+            {
+              "text": "**Sind wir sicher, dass dieses Zitat aus dem ursprünglichen Interview stammt?**",
+              "translation_ru": "Мы уверены, что эта цитата взята из первоначального интервью?"
+            },
+            {
+              "text": "**Ist Lena sicher, dass die Ausstellung am Donnerstag eröffnet wird?**",
+              "translation_ru": "Лена уверена, что выставка откроется в четверг?"
+            },
+            {
+              "text": "**Sind sie sicher, dass der Wanderweg nach dem Hochwasser noch begehbar ist?**",
+              "translation_ru": "Они уверены, что после паводка по тропе всё ещё можно пройти?"
+            },
+            {
+              "text": "**Sind Sie sicher, dass der Vermieter den Änderungen schriftlich zugestimmt hat?**",
+              "translation_ru": "Вы уверены, что арендодатель письменно согласовал изменения?"
+            },
+            {
+              "text": "**Sind wir sicher, dass die fehlenden Unterlagen nicht unter einem anderen Namen archiviert wurden?**",
+              "translation_ru": "Мы уверены, что пропавшие документы не сохранили в архиве под другим названием?"
+            },
+            {
+              "text": "**Sind die Forschenden sicher, dass die Vögel zum selben Nistplatz zurückgekehrt sind?**",
+              "translation_ru": "Исследователи уверены, что птицы вернулись к прежнему месту гнездования?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Is/Are [someone] sure/certain that [a claim is true]?",
+        "Ist/Sind [jemand] sicher, dass [eine Aussage stimmt]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Question pattern: Confirmation questions."
+      }
+    },
+    {
+      "id": "QSTQCNF021",
+      "group_id": "QCNF",
+      "set_id": "QCNF",
+      "title_ru": "Попросить перепроверить факт",
+      "metaphor_ru": "Проверяйте конкретное обстоятельство до следующего действия. В английском whether/if вводит косвенный вопрос без инверсии, в немецком ob отправляет глагол в конец. Отличайте просьбу проверить факт от предположения, что он уже верен.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Could you check whether [fact is true] before [action]? / Would you confirm whether [fact]?",
+          "example": "Could you check whether the medicine needs to be kept cool before we pack it?",
+          "translation": "Можешь проверить, нужно ли хранить лекарство в прохладе, прежде чем мы его упакуем?",
+          "examples": [
+            {
+              "text": "**Could you check whether the medicine needs to be kept cool before we pack it?**",
+              "translation_ru": "Можешь проверить, нужно ли хранить лекарство в прохладе, прежде чем мы его упакуем?"
+            },
+            {
+              "text": "**Would you mind confirming whether the balcony door is locked before you leave?**",
+              "translation_ru": "Не мог бы ты проверить, заперта ли балконная дверь, прежде чем уйти?"
+            },
+            {
+              "text": "**Could you check whether bicycles are allowed on that train before we buy tickets?**",
+              "translation_ru": "Можешь проверить, разрешено ли провозить велосипеды в этом поезде, прежде чем мы купим билеты?"
+            },
+            {
+              "text": "**Can you verify whether the caption file includes German before the video goes live?**",
+              "translation_ru": "Можете проверить, есть ли немецкие субтитры в файле, прежде чем публиковать видео?"
+            },
+            {
+              "text": "**Could you confirm whether the repair crew has the correct address before they set off?**",
+              "translation_ru": "Можете подтвердить, что у ремонтников правильный адрес, прежде чем они выедут?"
+            },
+            {
+              "text": "**Would you check whether the school is open on the public holiday before I arrange childcare?**",
+              "translation_ru": "Можешь проверить, открыта ли школа в праздничный день, прежде чем я договорюсь о присмотре за ребёнком?"
+            },
+            {
+              "text": "**Could you make sure all personal files have been removed from the borrowed laptop before we return it?**",
+              "translation_ru": "Можешь проверить, удалены ли все личные файлы с одолженного ноутбука, прежде чем мы его вернём?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Könnten Sie prüfen, ob [Sachverhalt ... Verb am Ende], bevor [Handlung]?",
+          "example": "Könntest du nachsehen, ob das Medikament kühl gelagert werden muss, bevor wir es einpacken?",
+          "translation": "Можешь проверить, нужно ли хранить лекарство в прохладе, прежде чем мы его упакуем?",
+          "examples": [
+            {
+              "text": "**Könntest du nachsehen, ob das Medikament kühl gelagert werden muss, bevor wir es einpacken?**",
+              "translation_ru": "Можешь проверить, нужно ли хранить лекарство в прохладе, прежде чем мы его упакуем?"
+            },
+            {
+              "text": "**Kannst du bitte prüfen, ob die Balkontür abgeschlossen ist, bevor du gehst?**",
+              "translation_ru": "Не мог бы ты проверить, заперта ли балконная дверь, прежде чем уйти?"
+            },
+            {
+              "text": "**Könntest du nachsehen, ob wir in diesem Zug Fahrräder mitnehmen dürfen, bevor wir die Tickets kaufen?**",
+              "translation_ru": "Можешь проверить, разрешено ли провозить велосипеды в этом поезде, прежде чем мы купим билеты?"
+            },
+            {
+              "text": "**Könnten Sie prüfen, ob die Untertiteldatei auch Deutsch enthält, bevor das Video veröffentlicht wird?**",
+              "translation_ru": "Можете проверить, есть ли немецкие субтитры в файле, прежде чем публиковать видео?"
+            },
+            {
+              "text": "**Könnten Sie bestätigen, ob die Handwerker die richtige Adresse haben, bevor sie losfahren?**",
+              "translation_ru": "Можете подтвердить, что у ремонтников правильный адрес, прежде чем они выедут?"
+            },
+            {
+              "text": "**Könntest du nachsehen, ob die Schule am Feiertag geöffnet ist, bevor ich die Kinderbetreuung organisiere?**",
+              "translation_ru": "Можешь проверить, открыта ли школа в праздничный день, прежде чем я договорюсь о присмотре за ребёнком?"
+            },
+            {
+              "text": "**Kannst du überprüfen, ob alle persönlichen Dateien vom geliehenen Laptop gelöscht wurden, bevor wir ihn zurückgeben?**",
+              "translation_ru": "Можешь проверить, удалены ли все личные файлы с одолженного ноутбука, прежде чем мы его вернём?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Could you check whether [fact is true] before [action]? / Would you confirm whether [fact]?",
+        "Könnten Sie prüfen, ob [Sachverhalt ... Verb am Ende], bevor [Handlung]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Question pattern: Confirmation questions."
+      }
+    },
+    {
+      "id": "QSTQCNF031",
+      "group_id": "QCNF",
+      "set_id": "QCNF",
+      "title_ru": "Есть ли сомнения, что команде нужен ещё день для решения?",
+      "metaphor_ru": "Речевая задача: задать вопрос «Есть ли сомнения, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Is there any doubt that [the team needs another day to decide]?",
+          "example": "Is there any doubt that the team needs another day to decide?",
+          "translation": "Есть ли сомнения, что команде нужен ещё день для решения?",
+          "examples": [
+            {
+              "text": "**Is there any doubt that the team needs another day to decide?**",
+              "translation_ru": "Есть ли сомнения, что команде нужен ещё день для решения?"
+            },
+            {
+              "text": "**Is there any doubt that the revised plan has not been shared yet?**",
+              "translation_ru": "Есть ли сомнения, что обновлённым планом ещё не поделились?"
+            },
+            {
+              "text": "**Is there any doubt that we should compare the two options?**",
+              "translation_ru": "Есть ли сомнения, что нам следует сравнить два варианта?"
+            },
+            {
+              "text": "**Is there any doubt that the client asked for more detail?**",
+              "translation_ru": "Есть ли сомнения, что клиент попросил больше деталей?"
+            },
+            {
+              "text": "**Is there any doubt that the pilot may continue next month?**",
+              "translation_ru": "Есть ли сомнения, что пилотный проект может продолжиться в следующем месяце?"
+            },
+            {
+              "text": "**Is there any doubt that the data need another check?**",
+              "translation_ru": "Есть ли сомнения, что данные нужно проверить ещё раз?"
+            },
+            {
+              "text": "**Is there any doubt that the meeting was moved?**",
+              "translation_ru": "Есть ли сомнения, что встречу перенесли?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Gibt es Zweifel daran, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
+          "example": "Gibt es Zweifel daran, dass das Team einen weiteren Tag für die Entscheidung braucht?",
+          "translation": "Есть ли сомнения, что команде нужен ещё день для решения?",
+          "examples": [
+            {
+              "text": "**Gibt es Zweifel daran, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
+              "translation_ru": "Есть ли сомнения, что команде нужен ещё день для решения?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass der überarbeitete Plan noch nicht geteilt wurde?**",
+              "translation_ru": "Есть ли сомнения, что обновлённым планом ещё не поделились?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass wir die beiden Optionen vergleichen sollten?**",
+              "translation_ru": "Есть ли сомнения, что нам следует сравнить два варианта?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass der Kunde um mehr Details gebeten hat?**",
+              "translation_ru": "Есть ли сомнения, что клиент попросил больше деталей?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
+              "translation_ru": "Есть ли сомнения, что пилотный проект может продолжиться в следующем месяце?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass die Daten noch einmal geprüft werden müssen?**",
+              "translation_ru": "Есть ли сомнения, что данные нужно проверить ещё раз?"
+            },
+            {
+              "text": "**Gibt es Zweifel daran, dass die Sitzung verschoben wurde?**",
+              "translation_ru": "Есть ли сомнения, что встречу перенесли?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Is there any doubt that [the team needs another day to decide]?",
+        "Gibt es Zweifel daran, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Question pattern: Confirmation questions."
+      }
+    }
+  ]
+}
