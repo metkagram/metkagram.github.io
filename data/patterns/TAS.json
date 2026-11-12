@@ -100,85 +100,85 @@
     {
       "id": "PERF004",
       "group_id": "PERF",
-      "title_ru": "К (какому-то моменту в будущем) я проработаю / сделаю …",
-      "metaphor_ru": "Как финишная ленточка на марафоне — ты видишь её вдалеке и знаешь, что обязательно её пересечёшь.",
+      "title_ru": "Что уже будет завершено к будущему сроку",
+      "metaphor_ru": "Английский Future Perfect (will have + Participle II) смотрит из будущего назад: к указанному сроку действие уже завершится. В живом немецком ту же мысль нередко передают Präsens или Perfekt с bis/dann; Futur II допустим, но не обязателен во всех ситуациях.",
       "langs": [
         {
           "lang": "en",
-          "formula": "By (future point), I will have + Past Participle",
-          "example": "By next year, I’ll have worked here for 10 years.",
-          "translation": "К следующему году я проработаю здесь уже 10 лет.",
+          "formula": "By + [future point], + [subject] + will (not) have + past participle. / Will + [subject] + have + past participle + by ...?",
+          "example": "By the time the guests arrive, we'll have cleaned the kitchen and set the table.",
+          "translation": "К приходу гостей мы уже уберём кухню и накроем на стол.",
           "examples": [
             {
-              "text": "By **2025**, they will have **built** the new bridge.",
-              "translation_ru": "К 2025 году они построят новый мост."
+              "text": "By the time the guests arrive, we'll have cleaned the kitchen and set the table.",
+              "translation_ru": "К приходу гостей мы уже уберём кухню и накроем на стол."
             },
             {
-              "text": "By **tomorrow**, she will have **sent** the email.",
-              "translation_ru": "К завтрашнему дню она отправит электронное письмо."
+              "text": "By Friday, the volunteers will have translated the guide into three languages.",
+              "translation_ru": "К пятнице волонтёры переведут руководство на три языка."
             },
             {
-              "text": "Will you have **finished** the report by **Friday**?",
-              "translation_ru": "Ты закончишь отчет к пятнице?"
+              "text": "Will you have finished your driving lessons by the end of May?",
+              "translation_ru": "Ты успеешь закончить уроки вождения к концу мая?"
             },
             {
-              "text": "By **next summer**, we will have **visited** ten countries.",
-              "translation_ru": "К следующему лету мы посетим десять стран."
+              "text": "By the time the train reaches Dresden, we'll have crossed the border.",
+              "translation_ru": "К тому моменту, как поезд доедет до Дрездена, мы уже пересечём границу."
             },
             {
-              "text": "By **the meeting**, I will have **reviewed** all documents.",
-              "translation_ru": "К встрече я просмотрю все документы."
+              "text": "By next spring, she will have lived in the village for a full decade.",
+              "translation_ru": "К следующей весне исполнится десять лет, как она живёт в деревне."
             },
             {
-              "text": "By **next week**, the software will have **been updated**.",
-              "translation_ru": "К следующей неделе программное обеспечение будет обновлено."
+              "text": "The repairs won't have been completed by Monday if the replacement parts arrive late.",
+              "translation_ru": "Если запчасти придут с опозданием, к понедельнику ремонт ещё не будет закончен."
             },
             {
-              "text": "By **tonight**, the team will have **resolved** the issue.",
-              "translation_ru": "К вечеру команда решит проблему."
+              "text": "By tomorrow evening, I will have checked every recording for background noise.",
+              "translation_ru": "К завтрашнему вечеру я проверю все записи на посторонние шумы."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Bis (Zeitpunkt) werde ich + Partizip II + haben",
-          "example": "Bis nächstes Jahr werde ich hier seit 10 Jahren gearbeitet haben.",
-          "translation": "К следующему году я проработаю здесь уже 10 лет.",
+          "formula": "Bis + [Zeitpunkt] + werden + [Subjekt] + Partizip II + haben/sein (Futur II); im Alltag auch: Bis ... haben/ist ... / Präsens.",
+          "example": "Bis die Gäste kommen, haben wir die Küche aufgeräumt und den Tisch gedeckt.",
+          "translation": "К приходу гостей мы уже уберём кухню и накроем на стол.",
           "examples": [
             {
-              "text": "Bis **2025** werden sie die neue Brücke **gebaut haben**.",
-              "translation_ru": "К 2025 году они построят новый мост."
+              "text": "Bis die Gäste kommen, haben wir die Küche aufgeräumt und den Tisch gedeckt.",
+              "translation_ru": "К приходу гостей мы уже уберём кухню и накроем на стол."
             },
             {
-              "text": "Bis **morgen** wird sie die E-Mail **gesendet haben**.",
-              "translation_ru": "К завтрашнему дню она отправит электронное письмо."
+              "text": "Bis Freitag werden die Freiwilligen den Leitfaden in drei Sprachen übersetzt haben.",
+              "translation_ru": "К пятнице волонтёры переведут руководство на три языка."
             },
             {
-              "text": "Wirst du den Bericht bis **Freitag** **fertiggestellt haben**?",
-              "translation_ru": "Ты закончишь отчет к пятнице?"
+              "text": "Bist du bis Ende Mai mit deinen Fahrstunden fertig?",
+              "translation_ru": "Ты успеешь закончить уроки вождения к концу мая?"
             },
             {
-              "text": "Bis **nächsten Sommer** werden wir zehn Länder **besucht haben**.",
-              "translation_ru": "К следующему лету мы посетим десять стран."
+              "text": "Wenn der Zug Dresden erreicht, haben wir die Grenze bereits überquert.",
+              "translation_ru": "К тому моменту, как поезд доедет до Дрездена, мы уже пересечём границу."
             },
             {
-              "text": "Bis **zum Treffen** werde ich alle Dokumente **überprüft haben**.",
-              "translation_ru": "К встрече я просмотрю все документы."
+              "text": "Im nächsten Frühjahr wohnt sie seit zehn Jahren in dem Dorf.",
+              "translation_ru": "К следующей весне исполнится десять лет, как она живёт в деревне."
             },
             {
-              "text": "Bis **nächste Woche** wird die Software **aktualisiert worden sein**.",
-              "translation_ru": "К следующей неделе программное обеспечение будет обновлено."
+              "text": "Wenn die Ersatzteile zu spät kommen, werden die Reparaturen bis Montag nicht abgeschlossen sein.",
+              "translation_ru": "Если запчасти придут с опозданием, к понедельнику ремонт ещё не будет закончен."
             },
             {
-              "text": "Bis **heute Abend** wird das Team das Problem **gelöst haben**.",
-              "translation_ru": "К вечеру команда решит проблему."
+              "text": "Bis morgen Abend werde ich alle Aufnahmen auf Hintergrundgeräusche geprüft haben.",
+              "translation_ru": "К завтрашнему вечеру я проверю все записи на посторонние шумы."
             }
           ]
         }
       ],
       "formulas": [
-        "By (future point), I will have + Past Participle",
-        "Bis (Zeitpunkt) werde ich + Partizip II + haben"
+        "By + [future point], + [subject] + will (not) have + past participle. / Will + [subject] + have + past participle + by ...?",
+        "Bis + [Zeitpunkt] + werden + [Subjekt] + Partizip II + haben/sein (Futur II); im Alltag auch: Bis ... haben/ist ... / Präsens."
       ],
       "gen": {
         "status": "generated",

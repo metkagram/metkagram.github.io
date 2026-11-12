@@ -6,85 +6,85 @@
       "id": "GRMDET001",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Точный выбор артикля делает отсылку понятной",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «точный выбор артикля делает отсылку понятной» в живом контексте.",
+      "title_ru": "Впервые назвать предмет, затем сослаться на него",
+      "metaphor_ru": "Сначала вводим новый предмет неопределённым артиклем (a/an; ein/eine), затем возвращаемся к уже известному предмету с определённым (the; der/die/das). В немецком артикль дополнительно согласуется с падежом; это не механическая замена слов.",
       "langs": [
         {
           "lang": "en",
-          "formula": "A careful choice of article makes the reference clear [the team was reviewing the new policy]",
-          "example": "A careful choice of article makes the reference clear in a situation where the team was reviewing the new policy.",
-          "translation": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику.",
+          "formula": "a/an + new singular countable noun → the + already introduced noun/reference.",
+          "example": "A neighbour lent me a ladder yesterday. The ladder was tall enough to reach the roof.",
+          "translation": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши.",
           "examples": [
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику."
+              "text": "A neighbour lent me a ladder yesterday. The ladder was tall enough to reach the roof.",
+              "translation_ru": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где партнёрам требовалось ясное решение."
+              "text": "We found a quiet café behind the library. The café has a courtyard where you can read outside.",
+              "translation_ru": "За библиотекой мы нашли тихое кафе. У него есть дворик, где можно посидеть с книгой."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "She installed an update before the meeting. The update fixed the microphone problem but slowed down the laptop.",
+              "translation_ru": "Перед встречей она установила обновление. Оно устранило проблему с микрофоном, но замедлило ноутбук."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где доступные данные всё ещё были неполными."
+              "text": "I bought a second-hand coat at the market. The coat needed a new button, but the fabric was excellent.",
+              "translation_ru": "На рынке я купил подержанное пальто. Нужно было пришить пуговицу, зато ткань оказалась отличной."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где расписание изменили в последний момент."
+              "text": "A student raised a difficult question during the lecture. The question changed the direction of our discussion.",
+              "translation_ru": "Во время лекции одна студентка задала сложный вопрос. Он изменил ход обсуждения."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "The council proposed a new crossing near the school. The crossing would make the morning walk safer for children.",
+              "translation_ru": "Городские власти предложили сделать новый пешеходный переход возле школы. С ним детям было бы безопаснее добираться утром."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где участники ждали объяснения."
+              "text": "He sent me a voice message after our disagreement. The message sounded calmer than his earlier texts.",
+              "translation_ru": "После нашей ссоры он прислал мне голосовое сообщение. Оно звучало спокойнее, чем его предыдущие сообщения."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Eine sorgfältige Artikelwahl macht den Bezug eindeutig [das Team die neue Regelung prüfte]",
-          "example": "Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику.",
+          "formula": "ein/eine/einen + neues zählbares Nomen → der/die/das/den + bereits bekanntes Nomen (Kasus beachten).",
+          "example": "Ein Nachbar hat mir gestern eine Leiter geliehen. Die Leiter war hoch genug, um ans Dach zu kommen.",
+          "translation": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши.",
           "examples": [
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику."
+              "text": "Ein Nachbar hat mir gestern eine Leiter geliehen. Die Leiter war hoch genug, um ans Dach zu kommen.",
+              "translation_ru": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Hinter der Bibliothek haben wir ein ruhiges Café entdeckt. Das Café hat einen Innenhof, in dem man draußen lesen kann.",
+              "translation_ru": "За библиотекой мы нашли тихое кафе. У него есть дворик, где можно посидеть с книгой."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Sie hat vor der Besprechung ein Update installiert. Das Update hat das Mikrofonproblem behoben, aber den Laptop langsamer gemacht.",
+              "translation_ru": "Перед встречей она установила обновление. Оно устранило проблему с микрофоном, но замедлило ноутбук."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Auf dem Markt habe ich einen gebrauchten Mantel gekauft. Der Mantel brauchte einen neuen Knopf, aber der Stoff war hervorragend.",
+              "translation_ru": "На рынке я купил подержанное пальто. Нужно было пришить пуговицу, зато ткань оказалась отличной."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где расписание изменили в последний момент."
+              "text": "Während der Vorlesung stellte eine Studentin eine schwierige Frage. Die Frage gab unserer Diskussion eine neue Richtung.",
+              "translation_ru": "Во время лекции одна студентка задала сложный вопрос. Он изменил ход обсуждения."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Die Stadtverwaltung schlug einen neuen Zebrastreifen in der Nähe der Schule vor. Der Zebrastreifen würde den Schulweg am Morgen sicherer machen.",
+              "translation_ru": "Городские власти предложили сделать новый пешеходный переход возле школы. С ним детям было бы безопаснее добираться утром."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где участники ждали объяснения."
+              "text": "Nach unserem Streit schickte er mir eine Sprachnachricht. Die Nachricht klang ruhiger als seine vorherigen Texte.",
+              "translation_ru": "После нашей ссоры он прислал мне голосовое сообщение. Оно звучало спокойнее, чем его предыдущие сообщения."
             }
           ]
         }
       ],
       "formulas": [
-        "A careful choice of article makes the reference clear [the team was reviewing the new policy]",
-        "Eine sorgfältige Artikelwahl macht den Bezug eindeutig [das Team die neue Regelung prüfte]"
+        "a/an + new singular countable noun → the + already introduced noun/reference.",
+        "ein/eine/einen + neues zählbares Nomen → der/die/das/den + bereits bekanntes Nomen (Kasus beachten)."
       ],
       "gen": {
         "status": "curated",

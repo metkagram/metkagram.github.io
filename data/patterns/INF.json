@@ -1,1 +1,856 @@
-{"schemaVersion":1,"set_id":"INF","patterns":[{"id":"GRMINF001","group_id":"INF","set_id":"INF","title_ru":"Согласиться выполнить действие","metaphor_ru":"Отрабатывайте согласие на конкретное действие: в английском после agree употребляется инфинитив с to, в немецком — естественная конструкция sich bereit erklären, etwas zu tun. Меняйте лицо, время, отрицание и условия, сохраняя значение добровольного согласия.","langs":[{"lang":"en","formula":"[Someone] agree(s)/agreed to [do something].","example":"The museum guide agreed to show us the restored courtyard after closing time.","translation":"Экскурсовод согласился показать нам отреставрированный двор после закрытия музея.","examples":[{"text":"**The museum guide agreed to show us the restored courtyard after closing time.**","translation_ru":"Экскурсовод согласился показать нам отреставрированный двор после закрытия музея."},{"text":"**I didn't agree to share our private messages with anyone.**","translation_ru":"Я не соглашался показывать кому-либо нашу личную переписку."},{"text":"**Would your neighbour agree to water the plants while you're away?**","translation_ru":"Твоя соседка согласилась бы поливать растения, пока тебя нет?"},{"text":"**After hearing both sides, the editor agreed to correct the misleading headline.**","translation_ru":"Выслушав обе стороны, редактор согласилась исправить вводящий в заблуждение заголовок."},{"text":"**The school has agreed to offer an evening class for adults.**","translation_ru":"Школа согласилась организовать вечерний курс для взрослых."},{"text":"**They had agreed to postpone the hike if the weather became dangerous.**","translation_ru":"Они согласились отложить поход, если погода станет опасной."},{"text":"**Despite the short notice, the neighbours agreed to help us carry the piano upstairs.**","translation_ru":"Несмотря на просьбу в последний момент, соседи согласились помочь занести пианино наверх."}]},{"lang":"de","formula":"[Jemand] erklärt(e) sich bereit, [etwas] zu [tun].","example":"Der Museumsführer erklärte sich bereit, uns nach der Schließung den restaurierten Innenhof zu zeigen.","translation":"Экскурсовод согласился показать нам отреставрированный двор после закрытия музея.","examples":[{"text":"**Der Museumsführer erklärte sich bereit, uns nach der Schließung den restaurierten Innenhof zu zeigen.**","translation_ru":"Экскурсовод согласился показать нам отреставрированный двор после закрытия музея."},{"text":"**Ich habe mich nicht bereit erklärt, unsere privaten Nachrichten mit irgendjemandem zu teilen.**","translation_ru":"Я не соглашался показывать кому-либо нашу личную переписку."},{"text":"**Würde sich deine Nachbarin bereit erklären, die Pflanzen zu gießen, während du weg bist?**","translation_ru":"Твоя соседка согласилась бы поливать растения, пока тебя нет?"},{"text":"**Nachdem sie beide Seiten gehört hatte, erklärte sich die Redakteurin bereit, die irreführende Überschrift zu korrigieren.**","translation_ru":"Выслушав обе стороны, редактор согласилась исправить вводящий в заблуждение заголовок."},{"text":"**Die Schule hat sich bereit erklärt, einen Abendkurs für Erwachsene anzubieten.**","translation_ru":"Школа согласилась организовать вечерний курс для взрослых."},{"text":"**Sie hatten sich bereit erklärt, die Wanderung bei gefährlichem Wetter zu verschieben.**","translation_ru":"Они согласились отложить поход, если погода станет опасной."},{"text":"**Trotz der kurzfristigen Bitte erklärten sich die Nachbarn bereit, uns zu helfen, das Klavier nach oben zu tragen.**","translation_ru":"Несмотря на просьбу в последний момент, соседи согласились помочь занести пианино наверх."}]}],"formulas":["[Someone] agree(s)/agreed to [do something].","[Jemand] erklärt(e) sich bereit, [etwas] zu [tun]."],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF006","group_id":"INF","set_id":"INF","title_ru":"Избежать действия: глагол с герундием","metaphor_ru":"Практикуйте английское avoid + -ing и немецкое vermeiden, etwas zu tun. Говорите об осознанном отказе от действия, а не о расплывчатой «ситуации», которая ничего не добавляет к мысли.","langs":[{"lang":"en","formula":"[Someone] avoid(s)/avoided [doing something].","example":"We avoided waking the baby by closing the door gently.","translation":"Мы постарались не разбудить малыша и тихо прикрыли дверь.","examples":[{"text":"**We avoided waking the baby by closing the door gently.**","translation_ru":"Мы постарались не разбудить малыша и тихо прикрыли дверь."},{"text":"**She avoids checking her phone while somebody is speaking.**","translation_ru":"Она старается не смотреть в телефон, когда с ней разговаривают."},{"text":"**The hikers avoided crossing the swollen river after the storm.**","translation_ru":"После бури туристы не стали переходить разлившуюся реку."},{"text":"**Can we avoid discussing the children in front of them?**","translation_ru":"Можем не обсуждать детей в их присутствии?"},{"text":"**He had avoided telling his sister about the surprise for weeks.**","translation_ru":"Он неделями старался не рассказывать сестре о сюрпризе."},{"text":"**Mina avoided relying solely on cloud storage by keeping an offline copy.**","translation_ru":"Мина не стала полагаться только на облако и сохранила копию у себя."},{"text":"**I avoid judging people by their accents.**","translation_ru":"Я стараюсь не судить о людях по их акценту."}]},{"lang":"de","formula":"[Jemand] vermeidet/vermied es, [etwas] zu [tun].","example":"Wir vermieden es, das Baby zu wecken, indem wir die Tür leise schlossen.","translation":"Мы постарались не разбудить малыша и тихо прикрыли дверь.","examples":[{"text":"**Wir vermieden es, das Baby zu wecken, indem wir die Tür leise schlossen.**","translation_ru":"Мы постарались не разбудить малыша и тихо прикрыли дверь."},{"text":"**Sie vermeidet es, auf ihr Handy zu schauen, während jemand spricht.**","translation_ru":"Она старается не смотреть в телефон, когда с ней разговаривают."},{"text":"**Die Wanderer vermieden es, nach dem Sturm den angeschwollenen Fluss zu überqueren.**","translation_ru":"После бури туристы не стали переходить разлившуюся реку."},{"text":"**Können wir es vermeiden, vor den Kindern über sie zu sprechen?**","translation_ru":"Можем не обсуждать детей в их присутствии?"},{"text":"**Er hatte es wochenlang vermieden, seiner Schwester von der Überraschung zu erzählen.**","translation_ru":"Он неделями старался не рассказывать сестре о сюрпризе."},{"text":"**Mina vermied es, sich allein auf die Cloud zu verlassen, und legte eine Offline-Kopie an.**","translation_ru":"Мина не стала полагаться только на облако и сохранила копию у себя."},{"text":"**Ich vermeide es, Menschen nach ihrem Akzent zu beurteilen.**","translation_ru":"Я стараюсь не судить о людях по их акценту."}]}],"formulas":["[Someone] avoid(s)/avoided [doing something].","[Jemand] vermeidet/vermied es, [etwas] zu [tun]."],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF011","group_id":"INF","set_id":"INF","title_ru":"Рассмотрев альтернативы, комитет решил подождать","metaphor_ru":"Грамматическая задача: выбрать конструкцию «рассмотрев альтернативы, комитет решил подождать» в живом контексте.","langs":[{"lang":"en","formula":"Having considered the alternatives, the committee chose to wait [the team was reviewing the new policy]","example":"Having considered the alternatives, the committee chose to wait in a situation where the team was reviewing the new policy.","translation":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the team was reviewing the new policy.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где команда проверяла новую политику."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the partners needed a clear decision.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the pilot was entering its final phase.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the available evidence was still incomplete.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the timetable had changed at short notice.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где расписание изменили в последний момент."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the reviewers were comparing two alternatives.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Having considered the alternatives, the committee chose to wait in a situation where the participants were waiting for an explanation.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten [das Team die neue Regelung prüfte]","example":"Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где команда проверяла новую политику."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где расписание изменили в последний момент."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"Рассмотрев альтернативы, комитет решил подождать в ситуации, где участники ждали объяснения."}]}],"formulas":["Having considered the alternatives, the committee chose to wait [the team was reviewing the new policy]","Nachdem der Ausschuss die Alternativen geprüft hatte, entschied er sich zu warten [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF016","group_id":"INF","set_id":"INF","title_ru":"Отчёт трудно интерпретировать без дополнительных данных","metaphor_ru":"Грамматическая задача: выбрать конструкцию «отчёт трудно интерпретировать без дополнительных данных» в живом контексте.","langs":[{"lang":"en","formula":"The report is difficult to interpret without further data [the team was reviewing the new policy]","example":"The report is difficult to interpret without further data in a situation where the team was reviewing the new policy.","translation":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику.","examples":[{"text":"**The report is difficult to interpret without further data in a situation where the team was reviewing the new policy.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику."},{"text":"**The report is difficult to interpret without further data in a situation where the partners needed a clear decision.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где партнёрам требовалось ясное решение."},{"text":"**The report is difficult to interpret without further data in a situation where the pilot was entering its final phase.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**The report is difficult to interpret without further data in a situation where the available evidence was still incomplete.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где доступные данные всё ещё были неполными."},{"text":"**The report is difficult to interpret without further data in a situation where the timetable had changed at short notice.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где расписание изменили в последний момент."},{"text":"**The report is difficult to interpret without further data in a situation where the reviewers were comparing two alternatives.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**The report is difficult to interpret without further data in a situation where the participants were waiting for an explanation.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Der Bericht ist ohne weitere Daten schwer zu interpretieren [das Team die neue Regelung prüfte]","example":"Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где расписание изменили в последний момент."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"Отчёт трудно интерпретировать без дополнительных данных в ситуации, где участники ждали объяснения."}]}],"formulas":["The report is difficult to interpret without further data [the team was reviewing the new policy]","Der Bericht ist ohne weitere Daten schwer zu interpretieren [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF021","group_id":"INF","set_id":"INF","title_ru":"Чтобы прояснить вопрос, команда назначила встречу","metaphor_ru":"Грамматическая задача: выбрать конструкцию «чтобы прояснить вопрос, команда назначила встречу» в живом контексте.","langs":[{"lang":"en","formula":"To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]","example":"To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.","translation":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.","examples":[{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the partners needed a clear decision.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the pilot was entering its final phase.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the available evidence was still incomplete.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the timetable had changed at short notice.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the reviewers were comparing two alternatives.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**To clarify the issue, the team scheduled a meeting in a situation where the participants were waiting for an explanation.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]","example":"Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."}]}],"formulas":["To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]","Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF026","group_id":"INF","set_id":"INF","title_ru":"От них ожидали ответа к пятнице","metaphor_ru":"Грамматическая задача: выбрать конструкцию «от них ожидали ответа к пятнице» в живом контексте.","langs":[{"lang":"en","formula":"They were expected to respond by Friday [the team was reviewing the new policy]","example":"They were expected to respond by Friday in a situation where the team was reviewing the new policy.","translation":"От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику.","examples":[{"text":"**They were expected to respond by Friday in a situation where the team was reviewing the new policy.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику."},{"text":"**They were expected to respond by Friday in a situation where the partners needed a clear decision.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где партнёрам требовалось ясное решение."},{"text":"**They were expected to respond by Friday in a situation where the pilot was entering its final phase.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**They were expected to respond by Friday in a situation where the available evidence was still incomplete.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где доступные данные всё ещё были неполными."},{"text":"**They were expected to respond by Friday in a situation where the timetable had changed at short notice.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где расписание изменили в последний момент."},{"text":"**They were expected to respond by Friday in a situation where the reviewers were comparing two alternatives.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**They were expected to respond by Friday in a situation where the participants were waiting for an explanation.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Von ihnen wurde erwartet, bis Freitag zu antworten [das Team die neue Regelung prüfte]","example":"Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где расписание изменили в последний момент."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"От них ожидали ответа к пятнице в ситуации, где участники ждали объяснения."}]}],"formulas":["They were expected to respond by Friday [the team was reviewing the new policy]","Von ihnen wurde erwartet, bis Freitag zu antworten [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF031","group_id":"INF","set_id":"INF","title_ru":"Вместо переноса решения мы пересмотрели план","metaphor_ru":"Грамматическая задача: выбрать конструкцию «вместо переноса решения мы пересмотрели план» в живом контексте.","langs":[{"lang":"en","formula":"Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]","example":"Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.","translation":"Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the partners needed a clear decision.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the pilot was entering its final phase.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the available evidence was still incomplete.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the timetable had changed at short notice.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the reviewers were comparing two alternatives.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Instead of postponing the decision, we revised the plan in a situation where the participants were waiting for an explanation.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]","example":"Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."}]}],"formulas":["Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]","Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"GRMINF036","group_id":"INF","set_id":"INF","title_ru":"Руководитель дал команде протестировать новый процесс","metaphor_ru":"Грамматическая задача: выбрать конструкцию «руководитель дал команде протестировать новый процесс» в живом контексте.","langs":[{"lang":"en","formula":"The manager let the team test the new process [the team was reviewing the new policy]","example":"The manager let the team test the new process in a situation where the team was reviewing the new policy.","translation":"Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.","examples":[{"text":"**The manager let the team test the new process in a situation where the team was reviewing the new policy.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."},{"text":"**The manager let the team test the new process in a situation where the partners needed a clear decision.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."},{"text":"**The manager let the team test the new process in a situation where the pilot was entering its final phase.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**The manager let the team test the new process in a situation where the available evidence was still incomplete.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."},{"text":"**The manager let the team test the new process in a situation where the timetable had changed at short notice.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."},{"text":"**The manager let the team test the new process in a situation where the reviewers were comparing two alternatives.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**The manager let the team test the new process in a situation where the participants were waiting for an explanation.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."}]},{"lang":"de","formula":"Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]","example":"Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.","translation":"Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.","examples":[{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."},{"text":"**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**","translation_ru":"Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."}]}],"formulas":["The manager let the team test the new process [the team was reviewing the new policy]","Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]"],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-07-17T00:00:00.000Z","languages":["en","de"],"notes":"Grammar pattern: Verb complements and non-finite clauses."}},{"id":"C1INF001","group_id":"INF","set_id":"INF","title_ru":"Объяснить, почему действие даётся трудно","metaphor_ru":"Называйте конкретную трудность, используя английское формальное it и немецкую конструкцию с дательным падежом для человека, испытывающего трудность.","title_en":"Find it hard to [do something]","description_en":"Describe difficulty doing something, with English dummy it and German dative experiencer plus a zu-infinitive.","description_ru":"Сравнивайте английское find it hard to ... с немецким Mir/Dir/Ihr fällt es schwer, ... zu ..., меняя участников и время.","langs":[{"lang":"en","formula":"[Person] find(s)/found it hard to [verb] [context].","example":"I find it hard to concentrate when three conversations are happening at once.","translation":"Мне трудно сосредоточиться, когда одновременно идут три разговора.","examples":[{"text":"**I find it hard to concentrate when three conversations are happening at once.**","translation_ru":"Мне трудно сосредоточиться, когда одновременно идут три разговора."},{"text":"**She found it hard to trust the advice after the first diagnosis proved wrong.**","translation_ru":"Ей было трудно доверять совету после того, как первый диагноз оказался неверным."},{"text":"**We find it hard to maintain a routine when the children are ill.**","translation_ru":"Нам трудно придерживаться привычного распорядка, когда дети болеют."},{"text":"**Many learners find it hard to interrupt politely without losing their train of thought.**","translation_ru":"Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."},{"text":"**I found it hard to admit that the simpler approach worked better.**","translation_ru":"Мне было трудно признать, что более простой подход сработал лучше."},{"text":"**They may find it hard to discuss the move openly while their parents are still upset.**","translation_ru":"Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."}]},{"lang":"de","formula":"[Person in dative] fällt/fiel es schwer, [action] zu [infinitive].","example":"Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.","translation":"Мне трудно сосредоточиться, когда одновременно идут три разговора.","examples":[{"text":"**Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.**","translation_ru":"Мне трудно сосредоточиться, когда одновременно идут три разговора."},{"text":"**Ihr fiel es schwer, dem Rat zu vertrauen, nachdem sich die erste Diagnose als falsch erwiesen hatte.**","translation_ru":"Ей было трудно доверять совету после того, как первый диагноз оказался неверным."},{"text":"**Uns fällt es schwer, einen festen Tagesablauf einzuhalten, wenn die Kinder krank sind.**","translation_ru":"Нам трудно придерживаться привычного распорядка, когда дети болеют."},{"text":"**Vielen Lernenden fällt es schwer, höflich zu unterbrechen, ohne den Faden zu verlieren.**","translation_ru":"Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."},{"text":"**Mir fiel es schwer, zuzugeben, dass der einfachere Ansatz besser funktionierte.**","translation_ru":"Мне было трудно признать, что более простой подход сработал лучше."},{"text":"**Ihnen könnte es schwerfallen, offen über den Umzug zu sprechen, solange ihre Eltern noch verärgert sind.**","translation_ru":"Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."}]}],"formulas":["[Person] find(s)/found it hard to [verb] [context].","[Person in dative] fällt/fiel es schwer, [action] zu [infinitive]."],"gen":{"status":"curated","iterations":1,"lastGeneratedAt":"2026-10-27T00:00:00.000Z","languages":["en","de"],"notes":"Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."}}]}
+{
+  "schemaVersion": 1,
+  "set_id": "INF",
+  "patterns": [
+    {
+      "id": "GRMINF001",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Согласиться выполнить действие",
+      "metaphor_ru": "Отрабатывайте согласие на конкретное действие: в английском после agree употребляется инфинитив с to, в немецком — естественная конструкция sich bereit erklären, etwas zu tun. Меняйте лицо, время, отрицание и условия, сохраняя значение добровольного согласия.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Someone] agree(s)/agreed to [do something].",
+          "example": "The museum guide agreed to show us the restored courtyard after closing time.",
+          "translation": "Экскурсовод согласился показать нам отреставрированный двор после закрытия музея.",
+          "examples": [
+            {
+              "text": "**The museum guide agreed to show us the restored courtyard after closing time.**",
+              "translation_ru": "Экскурсовод согласился показать нам отреставрированный двор после закрытия музея."
+            },
+            {
+              "text": "**I didn't agree to share our private messages with anyone.**",
+              "translation_ru": "Я не соглашался показывать кому-либо нашу личную переписку."
+            },
+            {
+              "text": "**Would your neighbour agree to water the plants while you're away?**",
+              "translation_ru": "Твоя соседка согласилась бы поливать растения, пока тебя нет?"
+            },
+            {
+              "text": "**After hearing both sides, the editor agreed to correct the misleading headline.**",
+              "translation_ru": "Выслушав обе стороны, редактор согласилась исправить вводящий в заблуждение заголовок."
+            },
+            {
+              "text": "**The school has agreed to offer an evening class for adults.**",
+              "translation_ru": "Школа согласилась организовать вечерний курс для взрослых."
+            },
+            {
+              "text": "**They had agreed to postpone the hike if the weather became dangerous.**",
+              "translation_ru": "Они согласились отложить поход, если погода станет опасной."
+            },
+            {
+              "text": "**Despite the short notice, the neighbours agreed to help us carry the piano upstairs.**",
+              "translation_ru": "Несмотря на просьбу в последний момент, соседи согласились помочь занести пианино наверх."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Jemand] erklärt(e) sich bereit, [etwas] zu [tun].",
+          "example": "Der Museumsführer erklärte sich bereit, uns nach der Schließung den restaurierten Innenhof zu zeigen.",
+          "translation": "Экскурсовод согласился показать нам отреставрированный двор после закрытия музея.",
+          "examples": [
+            {
+              "text": "**Der Museumsführer erklärte sich bereit, uns nach der Schließung den restaurierten Innenhof zu zeigen.**",
+              "translation_ru": "Экскурсовод согласился показать нам отреставрированный двор после закрытия музея."
+            },
+            {
+              "text": "**Ich habe mich nicht bereit erklärt, unsere privaten Nachrichten mit irgendjemandem zu teilen.**",
+              "translation_ru": "Я не соглашался показывать кому-либо нашу личную переписку."
+            },
+            {
+              "text": "**Würde sich deine Nachbarin bereit erklären, die Pflanzen zu gießen, während du weg bist?**",
+              "translation_ru": "Твоя соседка согласилась бы поливать растения, пока тебя нет?"
+            },
+            {
+              "text": "**Nachdem sie beide Seiten gehört hatte, erklärte sich die Redakteurin bereit, die irreführende Überschrift zu korrigieren.**",
+              "translation_ru": "Выслушав обе стороны, редактор согласилась исправить вводящий в заблуждение заголовок."
+            },
+            {
+              "text": "**Die Schule hat sich bereit erklärt, einen Abendkurs für Erwachsene anzubieten.**",
+              "translation_ru": "Школа согласилась организовать вечерний курс для взрослых."
+            },
+            {
+              "text": "**Sie hatten sich bereit erklärt, die Wanderung bei gefährlichem Wetter zu verschieben.**",
+              "translation_ru": "Они согласились отложить поход, если погода станет опасной."
+            },
+            {
+              "text": "**Trotz der kurzfristigen Bitte erklärten sich die Nachbarn bereit, uns zu helfen, das Klavier nach oben zu tragen.**",
+              "translation_ru": "Несмотря на просьбу в последний момент, соседи согласились помочь занести пианино наверх."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Someone] agree(s)/agreed to [do something].",
+        "[Jemand] erklärt(e) sich bereit, [etwas] zu [tun]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF006",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Избежать действия: глагол с герундием",
+      "metaphor_ru": "Практикуйте английское avoid + -ing и немецкое vermeiden, etwas zu tun. Говорите об осознанном отказе от действия, а не о расплывчатой «ситуации», которая ничего не добавляет к мысли.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Someone] avoid(s)/avoided [doing something].",
+          "example": "We avoided waking the baby by closing the door gently.",
+          "translation": "Мы постарались не разбудить малыша и тихо прикрыли дверь.",
+          "examples": [
+            {
+              "text": "**We avoided waking the baby by closing the door gently.**",
+              "translation_ru": "Мы постарались не разбудить малыша и тихо прикрыли дверь."
+            },
+            {
+              "text": "**She avoids checking her phone while somebody is speaking.**",
+              "translation_ru": "Она старается не смотреть в телефон, когда с ней разговаривают."
+            },
+            {
+              "text": "**The hikers avoided crossing the swollen river after the storm.**",
+              "translation_ru": "После бури туристы не стали переходить разлившуюся реку."
+            },
+            {
+              "text": "**Can we avoid discussing the children in front of them?**",
+              "translation_ru": "Можем не обсуждать детей в их присутствии?"
+            },
+            {
+              "text": "**He had avoided telling his sister about the surprise for weeks.**",
+              "translation_ru": "Он неделями старался не рассказывать сестре о сюрпризе."
+            },
+            {
+              "text": "**Mina avoided relying solely on cloud storage by keeping an offline copy.**",
+              "translation_ru": "Мина не стала полагаться только на облако и сохранила копию у себя."
+            },
+            {
+              "text": "**I avoid judging people by their accents.**",
+              "translation_ru": "Я стараюсь не судить о людях по их акценту."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Jemand] vermeidet/vermied es, [etwas] zu [tun].",
+          "example": "Wir vermieden es, das Baby zu wecken, indem wir die Tür leise schlossen.",
+          "translation": "Мы постарались не разбудить малыша и тихо прикрыли дверь.",
+          "examples": [
+            {
+              "text": "**Wir vermieden es, das Baby zu wecken, indem wir die Tür leise schlossen.**",
+              "translation_ru": "Мы постарались не разбудить малыша и тихо прикрыли дверь."
+            },
+            {
+              "text": "**Sie vermeidet es, auf ihr Handy zu schauen, während jemand spricht.**",
+              "translation_ru": "Она старается не смотреть в телефон, когда с ней разговаривают."
+            },
+            {
+              "text": "**Die Wanderer vermieden es, nach dem Sturm den angeschwollenen Fluss zu überqueren.**",
+              "translation_ru": "После бури туристы не стали переходить разлившуюся реку."
+            },
+            {
+              "text": "**Können wir es vermeiden, vor den Kindern über sie zu sprechen?**",
+              "translation_ru": "Можем не обсуждать детей в их присутствии?"
+            },
+            {
+              "text": "**Er hatte es wochenlang vermieden, seiner Schwester von der Überraschung zu erzählen.**",
+              "translation_ru": "Он неделями старался не рассказывать сестре о сюрпризе."
+            },
+            {
+              "text": "**Mina vermied es, sich allein auf die Cloud zu verlassen, und legte eine Offline-Kopie an.**",
+              "translation_ru": "Мина не стала полагаться только на облако и сохранила копию у себя."
+            },
+            {
+              "text": "**Ich vermeide es, Menschen nach ihrem Akzent zu beurteilen.**",
+              "translation_ru": "Я стараюсь не судить о людях по их акценту."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Someone] avoid(s)/avoided [doing something].",
+        "[Jemand] vermeidet/vermied es, [etwas] zu [tun]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF011",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Сделав одно, перейти к следующему действию",
+      "metaphor_ru": "В английском Having + Participle II подчёркивает завершение первого действия до второго; подразумеваемый исполнитель обоих действий должен совпадать. По-немецки обычно естественнее придаточное с nachdem и Plusquamperfekt, а не калька причастного оборота.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Having + past participle + [earlier action], [same subject] + [later action]. / Not having + past participle, ...",
+          "example": "Having read the safety instructions, Leila felt confident enough to repair the lamp herself.",
+          "translation": "Прочитав инструкцию по безопасности, Лейла решилась починить лампу сама.",
+          "examples": [
+            {
+              "text": "Having read the safety instructions, Leila felt confident enough to repair the lamp herself.",
+              "translation_ru": "Прочитав инструкцию по безопасности, Лейла решилась починить лампу сама."
+            },
+            {
+              "text": "Having missed the last bus, we walked home along the river instead.",
+              "translation_ru": "Опоздав на последний автобус, мы решили идти домой пешком вдоль реки."
+            },
+            {
+              "text": "Having compared several language courses, Jonas chose the one with more speaking practice.",
+              "translation_ru": "Сравнив несколько языковых курсов, Йонас выбрал тот, где больше разговорной практики."
+            },
+            {
+              "text": "Not having heard from her brother all week, Nina called to check if everything was all right.",
+              "translation_ru": "Не получая вестей от брата всю неделю, Нина позвонила узнать, всё ли в порядке."
+            },
+            {
+              "text": "Having tested the backup procedure twice, the volunteers were ready to use it during the festival.",
+              "translation_ru": "Дважды проверив порядок резервного копирования, волонтёры были готовы использовать его на фестивале."
+            },
+            {
+              "text": "Having listened to both neighbours, the mediator suggested a quieter time for deliveries.",
+              "translation_ru": "Выслушав обоих соседей, посредница предложила перенести доставку на более тихое время."
+            },
+            {
+              "text": "Having realised how little sleep he was getting, Omar stopped checking his phone in bed.",
+              "translation_ru": "Осознав, как мало он спит, Омар перестал листать телефон в постели."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nachdem + Subjekt + ... + Partizip II + hatte/war, + [spätere Hauptsatzhandlung].",
+          "example": "Nachdem Leila die Sicherheitshinweise gelesen hatte, traute sie sich zu, die Lampe selbst zu reparieren.",
+          "translation": "Прочитав инструкцию по безопасности, Лейла решилась починить лампу сама.",
+          "examples": [
+            {
+              "text": "Nachdem Leila die Sicherheitshinweise gelesen hatte, traute sie sich zu, die Lampe selbst zu reparieren.",
+              "translation_ru": "Прочитав инструкцию по безопасности, Лейла решилась починить лампу сама."
+            },
+            {
+              "text": "Nachdem wir den letzten Bus verpasst hatten, gingen wir stattdessen am Fluss entlang nach Hause.",
+              "translation_ru": "Опоздав на последний автобус, мы решили идти домой пешком вдоль реки."
+            },
+            {
+              "text": "Nachdem Jonas mehrere Sprachkurse verglichen hatte, entschied er sich für den mit mehr Sprechpraxis.",
+              "translation_ru": "Сравнив несколько языковых курсов, Йонас выбрал тот, где больше разговорной практики."
+            },
+            {
+              "text": "Nachdem Nina eine Woche lang nichts von ihrem Bruder gehört hatte, rief sie an, um zu fragen, ob alles in Ordnung war.",
+              "translation_ru": "Не получая вестей от брата всю неделю, Нина позвонила узнать, всё ли в порядке."
+            },
+            {
+              "text": "Nachdem die Freiwilligen das neue Sicherungsverfahren zweimal getestet hatten, konnten sie es beim Festival einsetzen.",
+              "translation_ru": "Дважды проверив порядок резервного копирования, волонтёры были готовы использовать его на фестивале."
+            },
+            {
+              "text": "Nachdem die Vermittlerin beide Nachbarn angehört hatte, schlug sie eine ruhigere Lieferzeit vor.",
+              "translation_ru": "Выслушав обоих соседей, посредница предложила перенести доставку на более тихое время."
+            },
+            {
+              "text": "Nachdem Omar gemerkt hatte, wie wenig er schlief, hörte er auf, im Bett aufs Handy zu schauen.",
+              "translation_ru": "Осознав, как мало он спит, Омар перестал листать телефон в постели."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Having + past participle + [earlier action], [same subject] + [later action]. / Not having + past participle, ...",
+        "Nachdem + Subjekt + ... + Partizip II + hatte/war, + [spätere Hauptsatzhandlung]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF016",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Отчёт трудно интерпретировать без дополнительных данных",
+      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «отчёт трудно интерпретировать без дополнительных данных» в живом контексте.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The report is difficult to interpret without further data [the team was reviewing the new policy]",
+          "example": "The report is difficult to interpret without further data in a situation where the team was reviewing the new policy.",
+          "translation": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the team was reviewing the new policy.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the partners needed a clear decision.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the pilot was entering its final phase.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the available evidence was still incomplete.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the timetable had changed at short notice.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the reviewers were comparing two alternatives.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**The report is difficult to interpret without further data in a situation where the participants were waiting for an explanation.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где участники ждали объяснения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Der Bericht ist ohne weitere Daten schwer zu interpretieren [das Team die neue Regelung prüfte]",
+          "example": "Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
+          "translation": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Der Bericht ist ohne weitere Daten schwer zu interpretieren in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
+              "translation_ru": "Отчёт трудно интерпретировать без дополнительных данных в ситуации, где участники ждали объяснения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The report is difficult to interpret without further data [the team was reviewing the new policy]",
+        "Der Bericht ist ohne weitere Daten schwer zu interpretieren [das Team die neue Regelung prüfte]"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF021",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Чтобы прояснить вопрос, команда назначила встречу",
+      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «чтобы прояснить вопрос, команда назначила встречу» в живом контексте.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]",
+          "example": "To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.",
+          "translation": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the partners needed a clear decision.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the pilot was entering its final phase.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the available evidence was still incomplete.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the timetable had changed at short notice.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the reviewers were comparing two alternatives.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the participants were waiting for an explanation.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]",
+          "example": "Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
+          "translation": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
+              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]",
+        "Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF026",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "От них ожидали ответа к пятнице",
+      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «от них ожидали ответа к пятнице» в живом контексте.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "They were expected to respond by Friday [the team was reviewing the new policy]",
+          "example": "They were expected to respond by Friday in a situation where the team was reviewing the new policy.",
+          "translation": "От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**They were expected to respond by Friday in a situation where the team was reviewing the new policy.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the partners needed a clear decision.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the pilot was entering its final phase.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the available evidence was still incomplete.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the timetable had changed at short notice.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the reviewers were comparing two alternatives.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**They were expected to respond by Friday in a situation where the participants were waiting for an explanation.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где участники ждали объяснения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Von ihnen wurde erwartet, bis Freitag zu antworten [das Team die neue Regelung prüfte]",
+          "example": "Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
+          "translation": "От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Von ihnen wurde erwartet, bis Freitag zu antworten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
+              "translation_ru": "От них ожидали ответа к пятнице в ситуации, где участники ждали объяснения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "They were expected to respond by Friday [the team was reviewing the new policy]",
+        "Von ihnen wurde erwartet, bis Freitag zu antworten [das Team die neue Regelung prüfte]"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF031",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Вместо переноса решения мы пересмотрели план",
+      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «вместо переноса решения мы пересмотрели план» в живом контексте.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]",
+          "example": "Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.",
+          "translation": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the partners needed a clear decision.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the pilot was entering its final phase.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the available evidence was still incomplete.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the timetable had changed at short notice.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the reviewers were comparing two alternatives.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Instead of postponing the decision, we revised the plan in a situation where the participants were waiting for an explanation.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]",
+          "example": "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
+          "translation": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
+              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]",
+        "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "GRMINF036",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Руководитель дал команде протестировать новый процесс",
+      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «руководитель дал команде протестировать новый процесс» в живом контексте.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The manager let the team test the new process [the team was reviewing the new policy]",
+          "example": "The manager let the team test the new process in a situation where the team was reviewing the new policy.",
+          "translation": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**The manager let the team test the new process in a situation where the team was reviewing the new policy.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the partners needed a clear decision.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the pilot was entering its final phase.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the available evidence was still incomplete.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the timetable had changed at short notice.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the reviewers were comparing two alternatives.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**The manager let the team test the new process in a situation where the participants were waiting for an explanation.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]",
+          "example": "Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
+          "translation": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.",
+          "examples": [
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."
+            },
+            {
+              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
+              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The manager let the team test the new process [the team was reviewing the new policy]",
+        "Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-07-17T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Grammar pattern: Verb complements and non-finite clauses."
+      }
+    },
+    {
+      "id": "C1INF001",
+      "group_id": "INF",
+      "set_id": "INF",
+      "title_ru": "Объяснить, почему действие даётся трудно",
+      "metaphor_ru": "Называйте конкретную трудность, используя английское формальное it и немецкую конструкцию с дательным падежом для человека, испытывающего трудность.",
+      "title_en": "Find it hard to [do something]",
+      "description_en": "Describe difficulty doing something, with English dummy it and German dative experiencer plus a zu-infinitive.",
+      "description_ru": "Сравнивайте английское find it hard to ... с немецким Mir/Dir/Ihr fällt es schwer, ... zu ..., меняя участников и время.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] find(s)/found it hard to [verb] [context].",
+          "example": "I find it hard to concentrate when three conversations are happening at once.",
+          "translation": "Мне трудно сосредоточиться, когда одновременно идут три разговора.",
+          "examples": [
+            {
+              "text": "**I find it hard to concentrate when three conversations are happening at once.**",
+              "translation_ru": "Мне трудно сосредоточиться, когда одновременно идут три разговора."
+            },
+            {
+              "text": "**She found it hard to trust the advice after the first diagnosis proved wrong.**",
+              "translation_ru": "Ей было трудно доверять совету после того, как первый диагноз оказался неверным."
+            },
+            {
+              "text": "**We find it hard to maintain a routine when the children are ill.**",
+              "translation_ru": "Нам трудно придерживаться привычного распорядка, когда дети болеют."
+            },
+            {
+              "text": "**Many learners find it hard to interrupt politely without losing their train of thought.**",
+              "translation_ru": "Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."
+            },
+            {
+              "text": "**I found it hard to admit that the simpler approach worked better.**",
+              "translation_ru": "Мне было трудно признать, что более простой подход сработал лучше."
+            },
+            {
+              "text": "**They may find it hard to discuss the move openly while their parents are still upset.**",
+              "translation_ru": "Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person in dative] fällt/fiel es schwer, [action] zu [infinitive].",
+          "example": "Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.",
+          "translation": "Мне трудно сосредоточиться, когда одновременно идут три разговора.",
+          "examples": [
+            {
+              "text": "**Mir fällt es schwer, mich zu konzentrieren, wenn drei Gespräche gleichzeitig geführt werden.**",
+              "translation_ru": "Мне трудно сосредоточиться, когда одновременно идут три разговора."
+            },
+            {
+              "text": "**Ihr fiel es schwer, dem Rat zu vertrauen, nachdem sich die erste Diagnose als falsch erwiesen hatte.**",
+              "translation_ru": "Ей было трудно доверять совету после того, как первый диагноз оказался неверным."
+            },
+            {
+              "text": "**Uns fällt es schwer, einen festen Tagesablauf einzuhalten, wenn die Kinder krank sind.**",
+              "translation_ru": "Нам трудно придерживаться привычного распорядка, когда дети болеют."
+            },
+            {
+              "text": "**Vielen Lernenden fällt es schwer, höflich zu unterbrechen, ohne den Faden zu verlieren.**",
+              "translation_ru": "Многим учащимся трудно вежливо перебить собеседника и при этом не потерять мысль."
+            },
+            {
+              "text": "**Mir fiel es schwer, zuzugeben, dass der einfachere Ansatz besser funktionierte.**",
+              "translation_ru": "Мне было трудно признать, что более простой подход сработал лучше."
+            },
+            {
+              "text": "**Ihnen könnte es schwerfallen, offen über den Umzug zu sprechen, solange ihre Eltern noch verärgert sind.**",
+              "translation_ru": "Им может быть трудно открыто говорить о переезде, пока родители всё ещё расстроены."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] find(s)/found it hard to [verb] [context].",
+        "[Person in dative] fällt/fiel es schwer, [action] zu [infinitive]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
+    }
+  ]
+}

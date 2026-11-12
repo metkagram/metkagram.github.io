@@ -195,85 +195,85 @@
     {
       "id": "GER003",
       "group_id": "GER",
-      "title_ru": "В итоге я оказался делая что-то",
-      "metaphor_ru": "Как если бы ты шёл по ровной дороге, а потом неожиданно свернул на грунтовку — не планировал, но оказался там.",
+      "title_ru": "В итоге произошло не совсем то, что планировали",
+      "metaphor_ru": "End up + -ing рассказывает о фактическом, часто неожиданном результате: к чему всё пришло. В немецком обычно используют am Ende / schließlich / letztlich с обычной глагольной формой; дословного герундия здесь нет.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I ended up + V-ing",
-          "example": "I ended up working late.",
-          "translation": "Свернул на грунтовку: в итоге я задержался на работе допоздна.",
+          "formula": "[Someone] end(s)/ended up + verb-ing; didn't end up + verb-ing; Did ... end up + verb-ing?",
+          "example": "We went out for bread and ended up talking to the baker for half an hour.",
+          "translation": "Мы вышли за хлебом, а в итоге полчаса проболтали с пекарем.",
           "examples": [
             {
-              "text": "She **ended up** buying the wrong size.",
-              "translation_ru": "В итоге она купила не тот размер."
+              "text": "We went out for bread and ended up talking to the baker for half an hour.",
+              "translation_ru": "Мы вышли за хлебом, а в итоге полчаса проболтали с пекарем."
             },
             {
-              "text": "We **found ourselves** arguing over nothing.",
-              "translation_ru": "Мы в итоге спорили из-за ерунды."
+              "text": "After weeks of comparing models, I ended up repairing my old headphones.",
+              "translation_ru": "После нескольких недель сравнения моделей я в итоге починил свои старые наушники."
             },
             {
-              "text": "Did you **end up** finishing the report?",
-              "translation_ru": "Ты в итоге закончил отчёт?"
+              "text": "Did she end up telling her friend why she had left early?",
+              "translation_ru": "Она всё-таки объяснила подруге, почему ушла раньше?"
             },
             {
-              "text": "He **ended up** moving to Berlin.",
-              "translation_ru": "Он в итоге переехал в Берлин."
+              "text": "They didn't end up moving abroad; they found a better place in their own town.",
+              "translation_ru": "В итоге они не переехали за границу, а нашли жильё получше в своём городе."
             },
             {
-              "text": "They **found themselves** lost in the city.",
-              "translation_ru": "Они в итоге заблудились в городе."
+              "text": "The debate started with parking rules and ended up revealing a wider problem with access for disabled residents.",
+              "translation_ru": "Начали спорить о парковке, а в итоге обнаружили более серьёзную проблему доступности для жителей с инвалидностью."
             },
             {
-              "text": "I **ended up** cooking dinner for everyone.",
-              "translation_ru": "В итоге я готовил ужин для всех."
+              "text": "He ended up learning more from the workshop discussions than from the slides.",
+              "translation_ru": "В итоге он узнал больше из обсуждений на семинаре, чем из слайдов."
             },
             {
-              "text": "We **ended up** using the old software.",
-              "translation_ru": "В итоге мы использовали старое ПО."
+              "text": "I was trying to fix one typo but ended up rewriting the whole introduction.",
+              "translation_ru": "Я хотел исправить одну опечатку, а в итоге переписал всё вступление."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Am Ende habe ich + Partizip II / Ich bin schließlich + Partizip II",
-          "example": "Am Ende habe ich bis spät gearbeitet.",
-          "translation": "В итоге я задержался на работе допоздна.",
+          "formula": "[Subjekt] hat/ist am Ende, schließlich oder letztlich + [Handlung im Perfekt]; auch: ist schließlich dazu gekommen, ...",
+          "example": "Wir wollten nur Brot holen und haben uns dann eine halbe Stunde mit dem Bäcker unterhalten.",
+          "translation": "Мы вышли за хлебом, а в итоге полчаса проболтали с пекарем.",
           "examples": [
             {
-              "text": "Sie hat **am Ende die falsche Größe gekauft**.",
-              "translation_ru": "В итоге она купила не тот размер."
+              "text": "Wir wollten nur Brot holen und haben uns dann eine halbe Stunde mit dem Bäcker unterhalten.",
+              "translation_ru": "Мы вышли за хлебом, а в итоге полчаса проболтали с пекарем."
             },
             {
-              "text": "Wir haben **uns am Ende gestritten**.",
-              "translation_ru": "Мы в итоге спорили."
+              "text": "Nach wochenlangem Vergleichen habe ich am Ende doch meine alten Kopfhörer repariert.",
+              "translation_ru": "После нескольких недель сравнения моделей я в итоге починил свои старые наушники."
             },
             {
-              "text": "Hast du **am Ende den Bericht fertiggestellt**?",
-              "translation_ru": "Ты в итоге закончил отчёт?"
+              "text": "Hat sie ihrer Freundin schließlich erzählt, warum sie früher gegangen war?",
+              "translation_ru": "Она всё-таки объяснила подруге, почему ушла раньше?"
             },
             {
-              "text": "Er ist **schließlich nach Berlin gezogen**.",
-              "translation_ru": "Он в итоге переехал в Берлин."
+              "text": "Sie sind am Ende doch nicht ins Ausland gezogen, sondern haben in ihrer Stadt eine bessere Wohnung gefunden.",
+              "translation_ru": "В итоге они не переехали за границу, а нашли жильё получше в своём городе."
             },
             {
-              "text": "Sie haben **sich schließlich in der Stadt verirrt**.",
-              "translation_ru": "Они в итоге заблудились в городе."
+              "text": "Die Debatte begann mit Parkregeln und zeigte schließlich ein größeres Problem bei der Barrierefreiheit im Viertel auf.",
+              "translation_ru": "Начали спорить о парковке, а в итоге обнаружили более серьёзную проблему доступности для жителей с инвалидностью."
             },
             {
-              "text": "Ich habe **am Ende für alle gekocht**.",
-              "translation_ru": "В итоге я готовил для всех."
+              "text": "Letztlich hat er aus den Gesprächen im Workshop mehr gelernt als aus den Folien.",
+              "translation_ru": "В итоге он узнал больше из обсуждений на семинаре, чем из слайдов."
             },
             {
-              "text": "Wir haben **am Ende die alte Software benutzt**.",
-              "translation_ru": "В итоге мы использовали старое ПО."
+              "text": "Ich wollte nur einen Tippfehler korrigieren und habe schließlich die ganze Einleitung neu geschrieben.",
+              "translation_ru": "Я хотел исправить одну опечатку, а в итоге переписал всё вступление."
             }
           ]
         }
       ],
       "formulas": [
-        "I ended up + V-ing",
-        "Am Ende habe ich + Partizip II / Ich bin schließlich + Partizip II"
+        "[Someone] end(s)/ended up + verb-ing; didn't end up + verb-ing; Did ... end up + verb-ing?",
+        "[Subjekt] hat/ist am Ende, schließlich oder letztlich + [Handlung im Perfekt]; auch: ist schließlich dazu gekommen, ..."
       ],
       "gen": {
         "status": "generated",

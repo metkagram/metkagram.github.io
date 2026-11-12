@@ -480,85 +480,85 @@
     {
       "id": "PAS006",
       "group_id": "PAS",
-      "title_ru": "Ожидание события",
-      "metaphor_ru": "Как часы, которые все смотрят в ожидании часа Х. Все знают — событие неизбежно, осталось только дождаться момента.",
+      "title_ru": "Передать ожидание без указания источника",
+      "metaphor_ru": "Безличный пассив It is expected that / Es wird erwartet, dass передаёт прогноз или ожидание без ссылки на конкретного говорящего. Это не обещание и не обязанность; время, отрицание и вопрос меняют коммуникативный оттенок.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It is expected that + subject + will + verb",
-          "example": "It is expected that the project will be completed by December.",
-          "translation": "Ожидается, что проект будет завершён к декабрю.",
+          "formula": "It is/was (not) expected that + clause. / Is it expected that + clause?",
+          "example": "It is expected that the library will reopen after the roof repairs in April.",
+          "translation": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши.",
           "examples": [
             {
-              "text": "It is expected that **the new software** will **launch** next month.",
-              "translation_ru": "Ожидается, что новое программное обеспечение запустят в следующем месяце."
+              "text": "It is expected that the library will reopen after the roof repairs in April.",
+              "translation_ru": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши."
             },
             {
-              "text": "Is it expected that **you** will **attend** the conference?",
-              "translation_ru": "Ожидается, что ты посетишь конференцию?"
+              "text": "It isn't expected that the storm will reach the coast before midnight.",
+              "translation_ru": "Не ожидается, что шторм достигнет побережья до полуночи."
             },
             {
-              "text": "It is not expected that **he** will **participate** in the meeting.",
-              "translation_ru": "Не ожидается, что он примет участие в собрании."
+              "text": "Is it expected that the new bus route will serve the hospital as well?",
+              "translation_ru": "Ожидается ли, что новый автобусный маршрут будет проходить и через больницу?"
             },
             {
-              "text": "It is expected that **they** will **deliver** the goods by tomorrow.",
-              "translation_ru": "Ожидается, что они доставят товары к завтрашнему дню."
+              "text": "It was expected that the witnesses would give separate accounts of the incident.",
+              "translation_ru": "Предполагалось, что свидетели расскажут о происшествии независимо друг от друга."
             },
             {
-              "text": "It is expected that **we** will **complete** the project on time.",
-              "translation_ru": "Ожидается, что мы завершим проект вовремя."
+              "text": "It is expected that more residents will use the shared garden once the lighting improves.",
+              "translation_ru": "Ожидается, что после улучшения освещения общим садом будут пользоваться больше жильцов."
             },
             {
-              "text": "Why is it expected that **the results** will **be delayed**?",
-              "translation_ru": "Почему ожидается, что результаты задержатся?"
+              "text": "Why is it expected that the translation will take longer than the original draft?",
+              "translation_ru": "Почему предполагается, что перевод займёт больше времени, чем подготовка первого текста?"
             },
             {
-              "text": "It is expected that **the network** will **be upgraded** soon.",
-              "translation_ru": "Ожидается, что сеть скоро обновят."
+              "text": "It is expected that the repaired bridge will be open to cyclists by summer.",
+              "translation_ru": "Ожидается, что к лету отремонтированный мост снова откроют для велосипедистов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es wird erwartet, dass + subject + wird + Verb",
-          "example": "Es wird erwartet, dass das Projekt bis Dezember abgeschlossen wird.",
-          "translation": "Ожидается, что проект будет завершён к декабрю.",
+          "formula": "Es wird/wurde (nicht) erwartet, dass + Nebensatz (Verb am Ende). / Wird erwartet, dass ...?",
+          "example": "Es wird erwartet, dass die Bibliothek nach der Dachreparatur im April wieder öffnet.",
+          "translation": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши.",
           "examples": [
             {
-              "text": "Es wird erwartet, dass **die neue Software** nächsten Monat **startet**.",
-              "translation_ru": "Ожидается, что новое программное обеспечение запустят в следующем месяце."
+              "text": "Es wird erwartet, dass die Bibliothek nach der Dachreparatur im April wieder öffnet.",
+              "translation_ru": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши."
             },
             {
-              "text": "Wird es erwartet, dass **du** an der Konferenz **teilnimmst**?",
-              "translation_ru": "Ожидается, что ты посетишь конференцию?"
+              "text": "Es wird nicht erwartet, dass der Sturm die Küste vor Mitternacht erreicht.",
+              "translation_ru": "Не ожидается, что шторм достигнет побережья до полуночи."
             },
             {
-              "text": "Es wird nicht erwartet, dass **er** am Meeting **teilnimmt**.",
-              "translation_ru": "Не ожидается, что он примет участие в собрании."
+              "text": "Wird erwartet, dass die neue Buslinie auch das Krankenhaus anfährt?",
+              "translation_ru": "Ожидается ли, что новый автобусный маршрут будет проходить и через больницу?"
             },
             {
-              "text": "Es wird erwartet, dass **sie** die Waren bis morgen **liefern**.",
-              "translation_ru": "Ожидается, что они доставят товары к завтрашнему дню."
+              "text": "Es wurde erwartet, dass die Zeugen den Vorfall unabhängig voneinander schildern würden.",
+              "translation_ru": "Предполагалось, что свидетели расскажут о происшествии независимо друг от друга."
             },
             {
-              "text": "Es wird erwartet, dass **wir** das Projekt rechtzeitig **abschließen**.",
-              "translation_ru": "Ожидается, что мы завершим проект вовремя."
+              "text": "Es wird erwartet, dass mehr Anwohner den Gemeinschaftsgarten nutzen, sobald die Beleuchtung verbessert ist.",
+              "translation_ru": "Ожидается, что после улучшения освещения общим садом будут пользоваться больше жильцов."
             },
             {
-              "text": "Warum wird erwartet, dass **die Ergebnisse** sich **verspäten**?",
-              "translation_ru": "Почему ожидается, что результаты задержатся?"
+              "text": "Warum wird erwartet, dass die Übersetzung länger dauert als der erste Entwurf?",
+              "translation_ru": "Почему предполагается, что перевод займёт больше времени, чем подготовка первого текста?"
             },
             {
-              "text": "Es wird erwartet, dass **das Netzwerk** bald **aufgerüstet** wird.",
-              "translation_ru": "Ожидается, что сеть скоро обновят."
+              "text": "Es wird erwartet, dass die reparierte Brücke bis zum Sommer wieder für Radfahrer freigegeben wird.",
+              "translation_ru": "Ожидается, что к лету отремонтированный мост снова откроют для велосипедистов."
             }
           ]
         }
       ],
       "formulas": [
-        "It is expected that + subject + will + verb",
-        "Es wird erwartet, dass + subject + wird + Verb"
+        "It is/was (not) expected that + clause. / Is it expected that + clause?",
+        "Es wird/wurde (nicht) erwartet, dass + Nebensatz (Verb am Ende). / Wird erwartet, dass ...?"
       ],
       "gen": {
         "status": "generated",
