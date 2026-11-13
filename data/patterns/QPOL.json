@@ -101,85 +101,85 @@
       "id": "QSTQPOL011",
       "group_id": "QPOL",
       "set_id": "QPOL",
-      "title_ru": "Вы могли бы объяснить, почему команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Вы могли бы объяснить, почему команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Вежливо попросить объяснить причину",
+      "metaphor_ru": "Выясняйте причину без обвинительного тона. Английское Could you explain why / Would you mind explaining why требует прямого порядка слов после why. Немецкое Könnten Sie erläutern, warum использует придаточное с глаголом в конце; для знакомых уместно Kannst du mir erklären.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would you be able to explain why [the team needs another day to decide]?",
-          "example": "Would you be able to explain why the team needs another day to decide?",
-          "translation": "Вы могли бы объяснить, почему команде нужен ещё день для решения?",
+          "formula": "Could you [explain/clarify] why [subject + verb]? / Would you mind explaining why [clause]?",
+          "example": "Would you be able to explain why the accessibility lift is out of service again?",
+          "translation": "Не могли бы вы объяснить, почему подъёмник для маломобильных посетителей снова не работает?",
           "examples": [
             {
-              "text": "**Would you be able to explain why the team needs another day to decide?**",
-              "translation_ru": "Вы могли бы объяснить, почему команде нужен ещё день для решения?"
+              "text": "**Would you be able to explain why the accessibility lift is out of service again?**",
+              "translation_ru": "Не могли бы вы объяснить, почему подъёмник для маломобильных посетителей снова не работает?"
             },
             {
-              "text": "**Would you be able to explain why the revised plan has not been shared yet?**",
-              "translation_ru": "Вы могли бы объяснить, почему обновлённым планом ещё не поделились?"
+              "text": "**Could you clarify why the appointment was moved without notifying the patients?**",
+              "translation_ru": "Не могли бы вы уточнить, почему запись перенесли, не предупредив пациентов?"
             },
             {
-              "text": "**Would you be able to explain why we should compare the two options?**",
-              "translation_ru": "Вы могли бы объяснить, почему нам следует сравнить два варианта?"
+              "text": "**Would you mind explaining why the app keeps asking for location access?**",
+              "translation_ru": "Вы не могли бы объяснить, почему приложение постоянно запрашивает доступ к геолокации?"
             },
             {
-              "text": "**Would you be able to explain why the client asked for more detail?**",
-              "translation_ru": "Вы могли бы объяснить, почему клиент попросил больше деталей?"
+              "text": "**Could you walk me through why this sentence needs the past perfect?**",
+              "translation_ru": "Можешь по шагам объяснить, почему здесь нужно Past Perfect?"
             },
             {
-              "text": "**Would you be able to explain why the pilot may continue next month?**",
-              "translation_ru": "Вы могли бы объяснить, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Would you be able to tell us why the old trees were removed before the public meeting?**",
+              "translation_ru": "Не могли бы вы сказать, почему старые деревья срубили ещё до встречи с жителями?"
             },
             {
-              "text": "**Would you be able to explain why the data need another check?**",
-              "translation_ru": "Вы могли бы объяснить, почему данные нужно проверить ещё раз?"
+              "text": "**Could you help me understand why the parcel was returned despite the correct address?**",
+              "translation_ru": "Помогите, пожалуйста, понять, почему посылку вернули, хотя адрес был указан правильно."
             },
             {
-              "text": "**Would you be able to explain why the meeting was moved?**",
-              "translation_ru": "Вы могли бы объяснить, почему встречу перенесли?"
+              "text": "**Would you be able to explain why the deadline still applies when the guidelines changed yesterday?**",
+              "translation_ru": "Не могли бы вы объяснить, почему срок остался прежним, хотя правила вчера изменились?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wären Sie in der Lage zu erklären, warum [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wären Sie in der Lage zu erklären, warum das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Вы могли бы объяснить, почему команде нужен ещё день для решения?",
+          "formula": "Könnten Sie [erklären/erläutern], warum [Nebensatz mit Verb am Ende]? / Kannst du mir erklären, warum [Nebensatz]?",
+          "example": "Könnten Sie erklären, warum der Aufzug für den barrierefreien Zugang schon wieder außer Betrieb ist?",
+          "translation": "Не могли бы вы объяснить, почему лифт для безбарьерного доступа снова не работает?",
           "examples": [
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Вы могли бы объяснить, почему команде нужен ещё день для решения?"
+              "text": "**Könnten Sie erklären, warum der Aufzug für den barrierefreien Zugang schon wieder außer Betrieb ist?**",
+              "translation_ru": "Не могли бы вы объяснить, почему лифт для безбарьерного доступа снова не работает?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Вы могли бы объяснить, почему обновлённым планом ещё не поделились?"
+              "text": "**Könnten Sie bitte erläutern, warum der Termin verschoben wurde, ohne die Patienten zu informieren?**",
+              "translation_ru": "Не могли бы вы объяснить, почему приём перенесли, не сообщив об этом пациентам?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Вы могли бы объяснить, почему нам следует сравнить два варианта?"
+              "text": "**Würden Sie mir erklären, warum die App immer wieder Zugriff auf meinen Standort verlangt?**",
+              "translation_ru": "Вы не могли бы объяснить, почему приложение снова и снова требует доступ к моему местоположению?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Вы могли бы объяснить, почему клиент попросил больше деталей?"
+              "text": "**Kannst du mir erklären, warum hier das Plusquamperfekt stehen muss?**",
+              "translation_ru": "Можешь объяснить, почему здесь нужно предпрошедшее время?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Вы могли бы объяснить, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Könnten Sie uns sagen, warum die alten Bäume noch vor der Bürgerversammlung gefällt wurden?**",
+              "translation_ru": "Не могли бы вы сказать, почему старые деревья срубили до собрания жителей?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Вы могли бы объяснить, почему данные нужно проверить ещё раз?"
+              "text": "**Könnten Sie mir helfen zu verstehen, warum das Paket trotz korrekter Adresse zurückgeschickt wurde?**",
+              "translation_ru": "Не могли бы вы помочь разобраться, почему посылку отправили обратно, несмотря на верный адрес?"
             },
             {
-              "text": "**Wären Sie in der Lage zu erklären, warum die Sitzung verschoben wurde?**",
-              "translation_ru": "Вы могли бы объяснить, почему встречу перенесли?"
+              "text": "**Wäre es möglich, kurz zu erläutern, warum die Frist weiterhin gilt, obwohl die Richtlinien gestern geändert wurden?**",
+              "translation_ru": "Не могли бы вы кратко пояснить, почему срок всё ещё действует, хотя правила вчера изменились?"
             }
           ]
         }
       ],
       "formulas": [
-        "Would you be able to explain why [the team needs another day to decide]?",
-        "Wären Sie in der Lage zu erklären, warum [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Could you [explain/clarify] why [subject + verb]? / Would you mind explaining why [clause]?",
+        "Könnten Sie [erklären/erläutern], warum [Nebensatz mit Verb am Ende]? / Kannst du mir erklären, warum [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

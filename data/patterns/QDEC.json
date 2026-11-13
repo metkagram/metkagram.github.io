@@ -291,85 +291,85 @@
       "id": "QSTQDEC031",
       "group_id": "QDEC",
       "set_id": "QDEC",
-      "title_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что сделало бы действие разумным, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, когда действие действительно оправдано",
+      "metaphor_ru": "Ищите проверяемое условие, при котором рискованное или преждевременное действие становится разумным. Английские what would make it reasonable и what would justify не всегда дословно соответствуют немецким was würde ... rechtfertigen и unter welchen Voraussetzungen wäre es vertretbar. В условных ситуациях отличайте реальные факты от контрфактов прошлого.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What would make it reasonable to act if [the team needs another day to decide]?",
-          "example": "What would make it reasonable to act if the team needs another day to decide?",
-          "translation": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
+          "formula": "What would make it reasonable to [act] if [uncertainty]? / Under what conditions would [action] be justified?",
+          "example": "What would make it reasonable to book the tickets now if our travel dates might still change?",
+          "translation": "Что позволило бы обоснованно купить билеты сейчас, если даты поездки ещё могут измениться?",
           "examples": [
             {
-              "text": "**What would make it reasonable to act if the team needs another day to decide?**",
-              "translation_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?"
+              "text": "**What would make it reasonable to book the tickets now if our travel dates might still change?**",
+              "translation_ru": "Что позволило бы обоснованно купить билеты сейчас, если даты поездки ещё могут измениться?"
             },
             {
-              "text": "**What would make it reasonable to act if the revised plan has not been shared yet?**",
-              "translation_ru": "Что сделало бы действие разумным, если обновлённым планом ещё не поделились?"
+              "text": "**What would justify replacing the boiler if the technician says it can still be repaired?**",
+              "translation_ru": "При каких условиях стоит менять котёл, если мастер считает, что его ещё можно починить?"
             },
             {
-              "text": "**What would make it reasonable to act if we should compare the two options?**",
-              "translation_ru": "Что сделало бы действие разумным, если нам следует сравнить два варианта?"
+              "text": "**Under what conditions would it be reasonable to publish the findings before an independent review?**",
+              "translation_ru": "При каких условиях можно обоснованно публиковать результаты до независимой проверки?"
             },
             {
-              "text": "**What would make it reasonable to act if the client asked for more detail?**",
-              "translation_ru": "Что сделало бы действие разумным, если клиент попросил больше деталей?"
+              "text": "**What evidence would make it reasonable to reopen the path if the bridge has been inspected only once?**",
+              "translation_ru": "Какие доказательства позволили бы открыть тропу, если мост проверили всего один раз?"
             },
             {
-              "text": "**What would make it reasonable to act if the pilot may continue next month?**",
-              "translation_ru": "Что сделало бы действие разумным, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would make it worth trying another language exchange if the first conversation felt awkward?**",
+              "translation_ru": "Что сделало бы ещё одну попытку языкового обмена разумной, если первый разговор вышел неловким?"
             },
             {
-              "text": "**What would make it reasonable to act if the data need another check?**",
-              "translation_ru": "Что сделало бы действие разумным, если данные нужно проверить ещё раз?"
+              "text": "**What would have justified postponing the move if the landlord had offered us a shorter lease?**",
+              "translation_ru": "Что оправдало бы перенос переезда, если бы хозяин предложил нам более короткий договор аренды?"
             },
             {
-              "text": "**What would make it reasonable to act if the meeting was moved?**",
-              "translation_ru": "Что сделало бы действие разумным, если встречу перенесли?"
+              "text": "**Under what circumstances would sharing the recording be justified if not everyone has agreed to be identified?**",
+              "translation_ru": "При каких обстоятельствах можно было бы поделиться записью, если не все согласились на раскрытие своих имён?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was würde es sinnvoll machen, zu handeln, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was würde es sinnvoll machen, zu handeln, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
+          "formula": "Was würde es rechtfertigen, [Handlung] zu [Infinitiv], wenn [Unsicherheit]? / Unter welchen Voraussetzungen wäre [Handlung] vertretbar?",
+          "example": "Was würde es rechtfertigen, die Fahrkarten jetzt schon zu buchen, wenn sich unsere Reisedaten noch ändern könnten?",
+          "translation": "Что оправдало бы покупку билетов уже сейчас, если даты поездки ещё могут измениться?",
           "examples": [
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?"
+              "text": "**Was würde es rechtfertigen, die Fahrkarten jetzt schon zu buchen, wenn sich unsere Reisedaten noch ändern könnten?**",
+              "translation_ru": "Что оправдало бы покупку билетов уже сейчас, если даты поездки ещё могут измениться?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что сделало бы действие разумным, если обновлённым планом ещё не поделились?"
+              "text": "**Was würde einen Austausch der Heizung rechtfertigen, wenn sie laut Techniker noch repariert werden kann?**",
+              "translation_ru": "Что оправдало бы замену отопления, если, по словам мастера, его ещё можно починить?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что сделало бы действие разумным, если нам следует сравнить два варианта?"
+              "text": "**Unter welchen Voraussetzungen wäre es vertretbar, die Ergebnisse vor einer unabhängigen Prüfung zu veröffentlichen?**",
+              "translation_ru": "При каких условиях допустимо публиковать результаты до независимой проверки?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что сделало бы действие разумным, если клиент попросил больше деталей?"
+              "text": "**Welche Nachweise bräuchten wir, um den Weg wieder freizugeben, wenn die Brücke erst einmal geprüft wurde?**",
+              "translation_ru": "Какие подтверждения нужны, чтобы вновь открыть тропу, если мост осмотрели всего один раз?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что сделало бы действие разумным, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was müsste sich ändern, damit sich nach einem holprigen ersten Gespräch ein zweiter Sprachaustausch lohnt?**",
+              "translation_ru": "Что должно измениться, чтобы после неловкого первого разговора стоило ещё раз попробовать языковой обмен?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что сделало бы действие разумным, если данные нужно проверить ещё раз?"
+              "text": "**Was hätte dafür gesprochen, den Umzug zu verschieben, wenn der Vermieter uns einen kürzeren Mietvertrag angeboten hätte?**",
+              "translation_ru": "Что говорило бы в пользу переноса переезда, если бы арендодатель предложил более короткий договор?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Что сделало бы действие разумным, если встречу перенесли?"
+              "text": "**Unter welchen Umständen wäre es vertretbar, die Aufnahme weiterzugeben, wenn nicht alle Beteiligten der Nennung ihrer Namen zugestimmt haben?**",
+              "translation_ru": "В каких обстоятельствах допустимо передать запись, если не все участники согласились на упоминание своих имён?"
             }
           ]
         }
       ],
       "formulas": [
-        "What would make it reasonable to act if [the team needs another day to decide]?",
-        "Was würde es sinnvoll machen, zu handeln, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would make it reasonable to [act] if [uncertainty]? / Under what conditions would [action] be justified?",
+        "Was würde es rechtfertigen, [Handlung] zu [Infinitiv], wenn [Unsicherheit]? / Unter welchen Voraussetzungen wäre [Handlung] vertretbar?"
       ],
       "gen": {
         "status": "curated",

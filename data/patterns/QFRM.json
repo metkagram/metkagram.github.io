@@ -101,85 +101,85 @@
       "id": "QSTQFRM011",
       "group_id": "QFRM",
       "set_id": "QFRM",
-      "title_ru": "Мы рассмотрели, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Мы рассмотрели, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Проверить, не упустили ли важное обстоятельство",
+      "metaphor_ru": "Вопрос Have we considered whether ...? помогает выявить упущенное предположение до принятия решения. Английские whether/if вводят косвенный вопрос без инверсии; немецкие ob-придаточные требуют конечной позиции глагола. Варьируйте Have we considered, Did we consider, Haben wir bedacht и Haben wir geprüft по ситуации.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Have we considered whether [the team needs another day to decide]?",
-          "example": "Have we considered whether the team needs another day to decide?",
-          "translation": "Мы рассмотрели, команде нужен ещё день для решения?",
+          "formula": "Have we [considered/checked] whether [possibility]? / Did we consider whether [possibility]?",
+          "example": "Have we considered whether the noise is coming from the ventilation rather than the street?",
+          "translation": "Мы не упустили возможность, что шум идёт от вентиляции, а не с улицы?",
           "examples": [
             {
-              "text": "**Have we considered whether the team needs another day to decide?**",
-              "translation_ru": "Мы рассмотрели, команде нужен ещё день для решения?"
+              "text": "**Have we considered whether the noise is coming from the ventilation rather than the street?**",
+              "translation_ru": "Мы не упустили возможность, что шум идёт от вентиляции, а не с улицы?"
             },
             {
-              "text": "**Have we considered whether the revised plan has not been shared yet?**",
-              "translation_ru": "Мы рассмотрели, обновлённым планом ещё не поделились?"
+              "text": "**Before we accept the offer, have we checked whether the travel costs are included?**",
+              "translation_ru": "Прежде чем принимать предложение, мы проверили, включены ли транспортные расходы?"
             },
             {
-              "text": "**Have we considered whether we should compare the two options?**",
-              "translation_ru": "Мы рассмотрели, нам следует сравнить два варианта?"
+              "text": "**Have we thought about whether our daughter actually wants to change schools?**",
+              "translation_ru": "Мы вообще спрашивали себя, хочет ли дочь переходить в другую школу?"
             },
             {
-              "text": "**Have we considered whether the client asked for more detail?**",
-              "translation_ru": "Мы рассмотрели, клиент попросил больше деталей?"
+              "text": "**Did we consider whether older residents could reach the new clinic by bus?**",
+              "translation_ru": "Мы учли, смогут ли пожилые жители добраться до новой поликлиники автобусом?"
             },
             {
-              "text": "**Have we considered whether the pilot may continue next month?**",
-              "translation_ru": "Мы рассмотрели, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Have we considered whether this headline might mislead readers who only see the preview?**",
+              "translation_ru": "Мы подумали, не введёт ли этот заголовок в заблуждение тех, кто увидит только анонс?"
             },
             {
-              "text": "**Have we considered whether the data need another check?**",
-              "translation_ru": "Мы рассмотрели, данные нужно проверить ещё раз?"
+              "text": "**Have we asked ourselves whether the disagreement is about timing rather than the goal?**",
+              "translation_ru": "Мы задавались вопросом, спорим ли мы о сроках, а не о самой цели?"
             },
             {
-              "text": "**Have we considered whether the meeting was moved?**",
-              "translation_ru": "Мы рассмотрели, встречу перенесли?"
+              "text": "**Before choosing a tool, have we considered whether the team can maintain it without outside help?**",
+              "translation_ru": "Прежде чем выбирать инструмент, мы подумали, сможет ли команда поддерживать его без внешней помощи?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Haben wir berücksichtigt, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Haben wir berücksichtigt, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Мы рассмотрели, команде нужен ещё день для решения?",
+          "formula": "Haben wir [bedacht/geprüft], ob [Nebensatz mit Verb am Ende]? / Haben wir uns gefragt, ob [Nebensatz]?",
+          "example": "Haben wir bedacht, ob der Lärm vielleicht von der Lüftung und nicht von der Straße kommt?",
+          "translation": "Мы учли, что шум может идти от вентиляции, а не с улицы?",
           "examples": [
             {
-              "text": "**Haben wir berücksichtigt, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Мы рассмотрели, команде нужен ещё день для решения?"
+              "text": "**Haben wir bedacht, ob der Lärm vielleicht von der Lüftung und nicht von der Straße kommt?**",
+              "translation_ru": "Мы учли, что шум может идти от вентиляции, а не с улицы?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Мы рассмотрели, обновлённым планом ещё не поделились?"
+              "text": "**Bevor wir das Angebot annehmen: Haben wir geprüft, ob die Fahrtkosten enthalten sind?**",
+              "translation_ru": "Прежде чем принять предложение, мы проверили, входят ли расходы на дорогу?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Мы рассмотрели, нам следует сравнить два варианта?"
+              "text": "**Haben wir überhaupt darüber nachgedacht, ob unsere Tochter die Schule wechseln möchte?**",
+              "translation_ru": "А мы вообще подумали, хочет ли наша дочь менять школу?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Мы рассмотрели, клиент попросил больше деталей?"
+              "text": "**Haben wir berücksichtigt, ob ältere Menschen die neue Praxis mit dem Bus erreichen können?**",
+              "translation_ru": "Мы учли, могут ли пожилые люди добраться до нового медицинского центра на автобусе?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Мы рассмотрели, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Haben wir überlegt, ob diese Überschrift Leser in die Irre führen könnte, die nur die Vorschau sehen?**",
+              "translation_ru": "Мы подумали, не обманет ли этот заголовок ожидания читателей, которые видят только анонс?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Мы рассмотрели, данные нужно проверить ещё раз?"
+              "text": "**Haben wir uns gefragt, ob wir über den Zeitpunkt streiten und nicht über das Ziel?**",
+              "translation_ru": "Мы спросили себя, не в сроках ли дело, а не в самой цели?"
             },
             {
-              "text": "**Haben wir berücksichtigt, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Мы рассмотрели, встречу перенесли?"
+              "text": "**Haben wir vor der Auswahl des Werkzeugs geprüft, ob das Team es ohne externe Hilfe warten kann?**",
+              "translation_ru": "Перед выбором инструмента мы проверили, сможет ли команда самостоятельно его поддерживать?"
             }
           ]
         }
       ],
       "formulas": [
-        "Have we considered whether [the team needs another day to decide]?",
-        "Haben wir berücksichtigt, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Have we [considered/checked] whether [possibility]? / Did we consider whether [possibility]?",
+        "Haben wir [bedacht/geprüft], ob [Nebensatz mit Verb am Ende]? / Haben wir uns gefragt, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

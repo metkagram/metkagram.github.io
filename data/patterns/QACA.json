@@ -291,85 +291,85 @@
       "id": "QSTQACA031",
       "group_id": "QACA",
       "set_id": "QACA",
-      "title_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какие данные нужны, чтобы решить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Определить, какие данные нужны для решения",
+      "metaphor_ru": "Прежде чем спорить о выводе, запросите конкретные данные, измерения или наблюдения для проверки альтернатив. В английском decide whether / find out whether требуют косвенного порядка слов; немецкое um zu entscheiden, ob ... и um herauszufinden, ob ... ставит спрягаемый глагол в конец придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What data would we need to decide if [the team needs another day to decide]?",
-          "example": "What data would we need to decide if the team needs another day to decide?",
-          "translation": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
+          "formula": "What [data/evidence/measurements] would we need to decide whether [claim]? / What should we measure to find out whether [X]?",
+          "example": "What evidence would we need to decide whether the new bus route really saves residents time?",
+          "translation": "Какие данные нужны, чтобы понять, действительно ли новый автобусный маршрут экономит время жителям?",
           "examples": [
             {
-              "text": "**What data would we need to decide if the team needs another day to decide?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?"
+              "text": "**What evidence would we need to decide whether the new bus route really saves residents time?**",
+              "translation_ru": "Какие данные нужны, чтобы понять, действительно ли новый автобусный маршрут экономит время жителям?"
             },
             {
-              "text": "**What data would we need to decide if the revised plan has not been shared yet?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, обновлённым планом ещё не поделились?"
+              "text": "**Which measurements would tell us whether the air purifier helps with nighttime allergies?**",
+              "translation_ru": "Какие измерения покажут, помогает ли очиститель воздуха справляться с ночными приступами аллергии?"
             },
             {
-              "text": "**What data would we need to decide if we should compare the two options?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, нам следует сравнить два варианта?"
+              "text": "**What data would we need to judge whether shorter lessons improve long-term recall?**",
+              "translation_ru": "Какие данные помогли бы оценить, улучшают ли короткие занятия долговременное запоминание?"
             },
             {
-              "text": "**What data would we need to decide if the client asked for more detail?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, клиент попросил больше деталей?"
+              "text": "**How many independent reports would we need before deciding whether the trail is safe to reopen?**",
+              "translation_ru": "Сколько независимых отчётов понадобится, прежде чем решать, безопасно ли снова открывать тропу?"
             },
             {
-              "text": "**What data would we need to decide if the pilot may continue next month?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would we have to measure to find out whether the building loses most of its heat through the windows?**",
+              "translation_ru": "Что нужно измерить, чтобы выяснить, уходит ли большая часть тепла через окна?"
             },
             {
-              "text": "**What data would we need to decide if the data need another check?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, данные нужно проверить ещё раз?"
+              "text": "**What evidence would help us decide whether the phone's microphone works reliably on noisy streets?**",
+              "translation_ru": "Какие данные помогут решить, надёжно ли работает микрофон телефона на шумной улице?"
             },
             {
-              "text": "**What data would we need to decide if the meeting was moved?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, встречу перенесли?"
+              "text": "**Which observations would be enough to test whether the changes made the public website easier to use?**",
+              "translation_ru": "Каких наблюдений хватит, чтобы проверить, стало ли после изменений удобнее пользоваться публичным сайтом?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welche Daten bräuchten wir, um zu entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welche Daten bräuchten wir, um zu entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
+          "formula": "Welche [Daten/Messwerte/Belege] bräuchten wir, um zu entscheiden, ob [Nebensatz]? / Was müssten wir messen, um herauszufinden, ob [X]?",
+          "example": "Welche Daten bräuchten wir, um zu entscheiden, ob die neue Buslinie den Anwohnern tatsächlich Zeit spart?",
+          "translation": "Какие данные нужны, чтобы выяснить, действительно ли новая автобусная линия экономит время жителям?",
           "examples": [
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?"
+              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die neue Buslinie den Anwohnern tatsächlich Zeit spart?**",
+              "translation_ru": "Какие данные нужны, чтобы выяснить, действительно ли новая автобусная линия экономит время жителям?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, обновлённым планом ещё не поделились?"
+              "text": "**Welche Messwerte würden uns zeigen, ob der Luftreiniger die nächtlichen Allergiebeschwerden lindert?**",
+              "translation_ru": "Какие результаты измерений покажут, облегчает ли очиститель воздуха симптомы аллергии по ночам?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, нам следует сравнить два варианта?"
+              "text": "**Welche Daten müssten wir erheben, um zu beurteilen, ob kürzere Lerneinheiten langfristig besser im Gedächtnis bleiben?**",
+              "translation_ru": "Какие данные нужно собрать, чтобы оценить, лучше ли короткие уроки запоминаются надолго?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, клиент попросил больше деталей?"
+              "text": "**Wie viele voneinander unabhängige Berichte bräuchten wir, bevor wir entscheiden, ob der Wanderweg wieder sicher ist?**",
+              "translation_ru": "Сколько независимых отчётов понадобится, прежде чем мы решим, можно ли снова безопасно открыть тропу?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was müssten wir messen, um herauszufinden, ob das Haus den Großteil der Wärme über die Fenster verliert?**",
+              "translation_ru": "Что следовало бы измерить, чтобы понять, теряет ли дом большую часть тепла через окна?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, данные нужно проверить ещё раз?"
+              "text": "**Welche Belege würden uns helfen zu beurteilen, ob das Handymikrofon an einer lauten Straße zuverlässig funktioniert?**",
+              "translation_ru": "Какие данные помогут определить, стабильно ли работает микрофон телефона на шумной улице?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, встречу перенесли?"
+              "text": "**Welche Beobachtungen würden ausreichen, um zu prüfen, ob die Änderungen die Website verständlicher gemacht haben?**",
+              "translation_ru": "Каких наблюдений было бы достаточно, чтобы проверить, сделали ли изменения сайт понятнее?"
             }
           ]
         }
       ],
       "formulas": [
-        "What data would we need to decide if [the team needs another day to decide]?",
-        "Welche Daten bräuchten wir, um zu entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What [data/evidence/measurements] would we need to decide whether [claim]? / What should we measure to find out whether [X]?",
+        "Welche [Daten/Messwerte/Belege] bräuchten wir, um zu entscheiden, ob [Nebensatz]? / Was müssten wir messen, um herauszufinden, ob [X]?"
       ],
       "gen": {
         "status": "curated",
