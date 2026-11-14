@@ -101,85 +101,85 @@
       "id": "QSTQCL011",
       "group_id": "QCL",
       "set_id": "QCL",
-      "title_ru": "Не могли бы вы уточнить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Не могли бы вы уточнить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Вежливо уточнить, верно ли понято условие",
+      "metaphor_ru": "Вопрос Could you clarify whether ...? / Könnten Sie bitte klarstellen, ob ...? проверяет факт или условие без обвинительного тона. После whether/ob используйте порядок слов придаточного предложения: английский без вопросительной инверсии, немецкий со спрягаемым глаголом в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Could you clarify whether [the team needs another day to decide]?",
-          "example": "Could you clarify whether the team needs another day to decide?",
-          "translation": "Не могли бы вы уточнить, команде нужен ещё день для решения?",
+          "formula": "Could you clarify whether [statement with normal clause word order]?",
+          "example": "Could you clarify whether the museum ticket includes the temporary exhibition?",
+          "translation": "Не могли бы вы уточнить, включает ли билет в музей посещение временной выставки?",
           "examples": [
             {
-              "text": "**Could you clarify whether the team needs another day to decide?**",
-              "translation_ru": "Не могли бы вы уточнить, команде нужен ещё день для решения?"
+              "text": "**Could you clarify whether the museum ticket includes the temporary exhibition?**",
+              "translation_ru": "Не могли бы вы уточнить, включает ли билет в музей посещение временной выставки?"
             },
             {
-              "text": "**Could you clarify whether the revised plan has not been shared yet?**",
-              "translation_ru": "Не могли бы вы уточнить, обновлённым планом ещё не поделились?"
+              "text": "**Could you clarify whether the landlord has agreed to replace the faulty heater?**",
+              "translation_ru": "Не могли бы вы уточнить, согласился ли арендодатель заменить неисправное отопление?"
             },
             {
-              "text": "**Could you clarify whether we should compare the two options?**",
-              "translation_ru": "Не могли бы вы уточнить, нам следует сравнить два варианта?"
+              "text": "**Could you clarify whether we should cite the original study or the review?**",
+              "translation_ru": "Не могли бы вы уточнить, на что нам ссылаться: на исходное исследование или на обзор?"
             },
             {
-              "text": "**Could you clarify whether the client asked for more detail?**",
-              "translation_ru": "Не могли бы вы уточнить, клиент попросил больше деталей?"
+              "text": "**Could you clarify whether my recording will be kept after the language lesson?**",
+              "translation_ru": "Не могли бы вы уточнить, сохранится ли моя запись после языкового занятия?"
             },
             {
-              "text": "**Could you clarify whether the pilot may continue next month?**",
-              "translation_ru": "Не могли бы вы уточнить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Could you clarify whether visitors may use the side entrance during the renovation?**",
+              "translation_ru": "Не могли бы вы уточнить, разрешён ли посетителям вход через боковую дверь во время ремонта?"
             },
             {
-              "text": "**Could you clarify whether the data need another check?**",
-              "translation_ru": "Не могли бы вы уточнить, данные нужно проверить ещё раз?"
+              "text": "**Could you clarify whether the revised timetable also applies to volunteers?**",
+              "translation_ru": "Не могли бы вы уточнить, распространяется ли обновлённое расписание и на волонтёров?"
             },
             {
-              "text": "**Could you clarify whether the meeting was moved?**",
-              "translation_ru": "Не могли бы вы уточнить, встречу перенесли?"
+              "text": "**Could you clarify whether she meant to postpone dinner or cancel it altogether?**",
+              "translation_ru": "Не могли бы вы уточнить, она хотела перенести ужин или совсем отменить его?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Könnten Sie klären, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Könnten Sie klären, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Не могли бы вы уточнить, команде нужен ещё день для решения?",
+          "formula": "Könnten Sie bitte klarstellen, ob [Nebensatz mit Verb am Ende]?",
+          "example": "Könnten Sie bitte klarstellen, ob die Eintrittskarte auch für die Sonderausstellung gilt?",
+          "translation": "Не могли бы вы уточнить, включает ли билет в музей посещение временной выставки?",
           "examples": [
             {
-              "text": "**Könnten Sie klären, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Не могли бы вы уточнить, команде нужен ещё день для решения?"
+              "text": "**Könnten Sie bitte klarstellen, ob die Eintrittskarte auch für die Sonderausstellung gilt?**",
+              "translation_ru": "Не могли бы вы уточнить, включает ли билет в музей посещение временной выставки?"
             },
             {
-              "text": "**Könnten Sie klären, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Не могли бы вы уточнить, обновлённым планом ещё не поделились?"
+              "text": "**Könnten Sie bitte klarstellen, ob der Vermieter dem Austausch der defekten Heizung zugestimmt hat?**",
+              "translation_ru": "Не могли бы вы уточнить, согласился ли арендодатель заменить неисправное отопление?"
             },
             {
-              "text": "**Könnten Sie klären, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Не могли бы вы уточнить, нам следует сравнить два варианта?"
+              "text": "**Könnten Sie bitte klarstellen, ob wir die Originalstudie oder den Übersichtsartikel zitieren sollen?**",
+              "translation_ru": "Не могли бы вы уточнить, на что нам ссылаться: на исходное исследование или на обзор?"
             },
             {
-              "text": "**Könnten Sie klären, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Не могли бы вы уточнить, клиент попросил больше деталей?"
+              "text": "**Könnten Sie bitte klarstellen, ob meine Aufnahme nach der Sprachstunde gespeichert bleibt?**",
+              "translation_ru": "Не могли бы вы уточнить, сохранится ли моя запись после языкового занятия?"
             },
             {
-              "text": "**Könnten Sie klären, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Не могли бы вы уточнить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Könnten Sie bitte klarstellen, ob Besucher während des Umbaus den Seiteneingang benutzen dürfen?**",
+              "translation_ru": "Не могли бы вы уточнить, разрешён ли посетителям вход через боковую дверь во время ремонта?"
             },
             {
-              "text": "**Könnten Sie klären, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Не могли бы вы уточнить, данные нужно проверить ещё раз?"
+              "text": "**Könnten Sie bitte klarstellen, ob der geänderte Zeitplan auch für die Ehrenamtlichen gilt?**",
+              "translation_ru": "Не могли бы вы уточнить, распространяется ли обновлённое расписание и на волонтёров?"
             },
             {
-              "text": "**Könnten Sie klären, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Не могли бы вы уточнить, встречу перенесли?"
+              "text": "**Könnten Sie bitte klarstellen, ob sie das Abendessen nur verschieben oder ganz absagen wollte?**",
+              "translation_ru": "Не могли бы вы уточнить, она хотела перенести ужин или совсем отменить его?"
             }
           ]
         }
       ],
       "formulas": [
-        "Could you clarify whether [the team needs another day to decide]?",
-        "Könnten Sie klären, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Could you clarify whether [statement with normal clause word order]?",
+        "Könnten Sie bitte klarstellen, ob [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
         "status": "curated",
