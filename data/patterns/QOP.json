@@ -196,85 +196,85 @@
       "id": "QSTQOP021",
       "group_id": "QOP",
       "set_id": "QOP",
-      "title_ru": "Как бы вы оценили риск, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как бы вы оценили риск, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Оценить риск последствия при заданном условии",
+      "metaphor_ru": "How would you assess the risk of ... if ...? позволяет обсуждать конкретное негативное последствие, а не абстрактный «риск». Немецкое Wie hoch schätzen Sie das Risiko ein, dass ... wenn ...? требует финального положения глагола в обоих придаточных. Важно отдельно назвать последствие и условие.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How would you assess the risk if [the team needs another day to decide]?",
-          "example": "How would you assess the risk if the team needs another day to decide?",
-          "translation": "Как бы вы оценили риск, если команде нужен ещё день для решения?",
+          "formula": "How would you assess the risk of [negative outcome] if [condition]?",
+          "example": "How would you assess the risk of losing our deposit if the renovation is delayed until winter?",
+          "translation": "Как вы оценили бы риск потерять предоплату, если ремонт затянется до зимы?",
           "examples": [
             {
-              "text": "**How would you assess the risk if the team needs another day to decide?**",
-              "translation_ru": "Как бы вы оценили риск, если команде нужен ещё день для решения?"
+              "text": "**How would you assess the risk of losing our deposit if the renovation is delayed until winter?**",
+              "translation_ru": "Как вы оценили бы риск потерять предоплату, если ремонт затянется до зимы?"
             },
             {
-              "text": "**How would you assess the risk if the revised plan has not been shared yet?**",
-              "translation_ru": "Как бы вы оценили риск, если обновлённым планом ещё не поделились?"
+              "text": "**How would you assess the risk of heat exhaustion if we start the hike at noon?**",
+              "translation_ru": "Как вы оценили бы риск перегреться, если мы отправимся в поход только в полдень?"
             },
             {
-              "text": "**How would you assess the risk if we should compare the two options?**",
-              "translation_ru": "Как бы вы оценили риск, если нам следует сравнить два варианта?"
+              "text": "**How would you assess the risk of misleading readers if we publish the chart without a source?**",
+              "translation_ru": "Как вы оценили бы риск ввести читателей в заблуждение, если опубликовать график без ссылки на источник?"
             },
             {
-              "text": "**How would you assess the risk if the client asked for more detail?**",
-              "translation_ru": "Как бы вы оценили риск, если клиент попросил больше деталей?"
+              "text": "**How would you assess the risk of a privacy breach if the app stores recordings by default?**",
+              "translation_ru": "Как вы оценили бы риск утечки личных записей, если приложение сохраняет их по умолчанию?"
             },
             {
-              "text": "**How would you assess the risk if the pilot may continue next month?**",
-              "translation_ru": "Как бы вы оценили риск, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**How would you assess the risk of damaging our friendship if I raise the issue in public?**",
+              "translation_ru": "Как вы оценили бы риск испортить нашу дружбу, если я подниму этот вопрос при других?"
             },
             {
-              "text": "**How would you assess the risk if the data need another check?**",
-              "translation_ru": "Как бы вы оценили риск, если данные нужно проверить ещё раз?"
+              "text": "**How would you assess the risk of falling behind if we skip the introductory course?**",
+              "translation_ru": "Как вы оценили бы риск отстать от программы, если мы пропустим вводный курс?"
             },
             {
-              "text": "**How would you assess the risk if the meeting was moved?**",
-              "translation_ru": "Как бы вы оценили риск, если встречу перенесли?"
+              "text": "**How would you assess the risk of missing the last train if we stay for the encore?**",
+              "translation_ru": "Как вы оценили бы риск опоздать на последний поезд, если останемся на бис?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie würden Sie das Risiko einschätzen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie würden Sie das Risiko einschätzen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как бы вы оценили риск, если команде нужен ещё день для решения?",
+          "formula": "Wie hoch schätzen Sie das Risiko ein, dass [negative Folge], wenn [Bedingung]?",
+          "example": "Wie hoch schätzen Sie das Risiko ein, dass wir unsere Anzahlung verlieren, wenn sich die Renovierung bis in den Winter verzögert?",
+          "translation": "Как вы оценили бы риск потерять предоплату, если ремонт затянется до зимы?",
           "examples": [
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как бы вы оценили риск, если команде нужен ещё день для решения?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass wir unsere Anzahlung verlieren, wenn sich die Renovierung bis in den Winter verzögert?**",
+              "translation_ru": "Как вы оценили бы риск потерять предоплату, если ремонт затянется до зимы?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как бы вы оценили риск, если обновлённым планом ещё не поделились?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass wir durch die Hitze erschöpft werden, wenn wir erst mittags loswandern?**",
+              "translation_ru": "Как вы оценили бы риск перегреться, если мы отправимся в поход только в полдень?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как бы вы оценили риск, если нам следует сравнить два варианта?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass wir die Leser in die Irre führen, wenn wir die Grafik ohne Quellenangabe veröffentlichen?**",
+              "translation_ru": "Как вы оценили бы риск ввести читателей в заблуждение, если опубликовать график без ссылки на источник?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как бы вы оценили риск, если клиент попросил больше деталей?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass private Aufnahmen nach außen gelangen, wenn die App sie standardmäßig speichert?**",
+              "translation_ru": "Как вы оценили бы риск утечки личных записей, если приложение сохраняет их по умолчанию?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как бы вы оценили риск, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass unsere Freundschaft darunter leidet, wenn ich das Thema vor anderen anspreche?**",
+              "translation_ru": "Как вы оценили бы риск испортить нашу дружбу, если я подниму этот вопрос при других?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как бы вы оценили риск, если данные нужно проверить ещё раз?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass wir den Anschluss verlieren, wenn wir den Einführungskurs überspringen?**",
+              "translation_ru": "Как вы оценили бы риск отстать от программы, если мы пропустим вводный курс?"
             },
             {
-              "text": "**Wie würden Sie das Risiko einschätzen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Как бы вы оценили риск, если встречу перенесли?"
+              "text": "**Wie hoch schätzen Sie das Risiko ein, dass wir den letzten Zug verpassen, wenn wir bis zur Zugabe bleiben?**",
+              "translation_ru": "Как вы оценили бы риск опоздать на последний поезд, если останемся на бис?"
             }
           ]
         }
       ],
       "formulas": [
-        "How would you assess the risk if [the team needs another day to decide]?",
-        "Wie würden Sie das Risiko einschätzen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How would you assess the risk of [negative outcome] if [condition]?",
+        "Wie hoch schätzen Sie das Risiko ein, dass [negative Folge], wenn [Bedingung]?"
       ],
       "gen": {
         "status": "curated",
