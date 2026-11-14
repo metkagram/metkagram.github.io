@@ -196,85 +196,85 @@
       "id": "QSTQSUB021",
       "group_id": "QSUB",
       "set_id": "QSUB",
-      "title_ru": "Кто должен решать, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Кто должен решать, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Уточнить, кому принадлежит право решения",
+      "metaphor_ru": "Вопрос Who gets to decide whether уточняет полномочия, а не просто спрашивает, кто выскажет мнение. Немецкий эквивалент с darf сохраняет акцент на праве решать.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Who should decide if [the team needs another day to decide]?",
-          "example": "Who should decide if the team needs another day to decide?",
-          "translation": "Кто должен решать, если команде нужен ещё день для решения?",
+          "formula": "Who gets to decide whether [X]?",
+          "example": "Who gets to decide whether we adopt a second dog?",
+          "translation": "Кто вправе решать, возьмём ли мы вторую собаку?",
           "examples": [
             {
-              "text": "**Who should decide if the team needs another day to decide?**",
-              "translation_ru": "Кто должен решать, если команде нужен ещё день для решения?"
+              "text": "Who gets to decide whether we adopt a second dog?",
+              "translation_ru": "Кто вправе решать, возьмём ли мы вторую собаку?"
             },
             {
-              "text": "**Who should decide if the revised plan has not been shared yet?**",
-              "translation_ru": "Кто должен решать, если обновлённым планом ещё не поделились?"
+              "text": "Who gets to decide whether the old trees are cut down?",
+              "translation_ru": "Кто вправе решать, срубят ли старые деревья?"
             },
             {
-              "text": "**Who should decide if we should compare the two options?**",
-              "translation_ru": "Кто должен решать, если нам следует сравнить два варианта?"
+              "text": "Who gets to decide whether a student can retake the exam?",
+              "translation_ru": "Кто вправе решать, может ли ученик пересдать экзамен?"
             },
             {
-              "text": "**Who should decide if the client asked for more detail?**",
-              "translation_ru": "Кто должен решать, если клиент попросил больше деталей?"
+              "text": "Who gets to decide whether the recording is published?",
+              "translation_ru": "Кто вправе решать, опубликуют ли запись?"
             },
             {
-              "text": "**Who should decide if the pilot may continue next month?**",
-              "translation_ru": "Кто должен решать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "Who gets to decide whether we spend the holiday at home?",
+              "translation_ru": "Кто решает, останемся ли мы на каникулы дома?"
             },
             {
-              "text": "**Who should decide if the data need another check?**",
-              "translation_ru": "Кто должен решать, если данные нужно проверить ещё раз?"
+              "text": "Who gets to decide whether a patient seeks a second opinion?",
+              "translation_ru": "Кто вправе решать, будет ли пациент обращаться за вторым мнением?"
             },
             {
-              "text": "**Who should decide if the meeting was moved?**",
-              "translation_ru": "Кто должен решать, если встречу перенесли?"
+              "text": "Who gets to decide whether the team drops an accessibility feature?",
+              "translation_ru": "Кто вправе решать, откажется ли команда от функции доступности?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wer sollte entscheiden, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wer sollte entscheiden, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Кто должен решать, если команде нужен ещё день для решения?",
+          "formula": "Wer darf entscheiden, ob [X]?",
+          "example": "Wer darf entscheiden, ob wir einen zweiten Hund aufnehmen?",
+          "translation": "Кто может решать, возьмём ли мы вторую собаку?",
           "examples": [
             {
-              "text": "**Wer sollte entscheiden, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Кто должен решать, если команде нужен ещё день для решения?"
+              "text": "Wer darf entscheiden, ob wir einen zweiten Hund aufnehmen?",
+              "translation_ru": "Кто может решать, возьмём ли мы вторую собаку?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Кто должен решать, если обновлённым планом ещё не поделились?"
+              "text": "Wer darf entscheiden, ob die alten Bäume gefällt werden?",
+              "translation_ru": "Кто вправе решать, будут ли вырублены старые деревья?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Кто должен решать, если нам следует сравнить два варианта?"
+              "text": "Wer darf entscheiden, ob ein Schüler die Prüfung wiederholen darf?",
+              "translation_ru": "Кто решает, разрешат ли ученику пересдать экзамен?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Кто должен решать, если клиент попросил больше деталей?"
+              "text": "Wer darf entscheiden, ob die Aufnahme veröffentlicht wird?",
+              "translation_ru": "Кто вправе решать, будет ли опубликована запись?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Кто должен решать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "Wer darf entscheiden, ob wir die Ferien zu Hause verbringen?",
+              "translation_ru": "Кто вправе решать, проведём ли мы каникулы дома?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Кто должен решать, если данные нужно проверить ещё раз?"
+              "text": "Wer darf entscheiden, ob ein Patient eine zweite ärztliche Meinung einholt?",
+              "translation_ru": "Кто вправе решать, обратится ли пациент за мнением другого врача?"
             },
             {
-              "text": "**Wer sollte entscheiden, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Кто должен решать, если встречу перенесли?"
+              "text": "Wer darf entscheiden, ob das Team auf eine Barrierefreiheitsfunktion verzichtet?",
+              "translation_ru": "Кто вправе решать, может ли команда отказаться от функции для людей с ограниченными возможностями?"
             }
           ]
         }
       ],
       "formulas": [
-        "Who should decide if [the team needs another day to decide]?",
-        "Wer sollte entscheiden, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Who gets to decide whether [X]?",
+        "Wer darf entscheiden, ob [X]?"
       ],
       "gen": {
         "status": "curated",

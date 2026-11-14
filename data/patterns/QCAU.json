@@ -101,85 +101,85 @@
       "id": "QSTQCAU011",
       "group_id": "QCAU",
       "set_id": "QCAU",
-      "title_ru": "Какой фактор важнее всего, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какой фактор важнее всего, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить главный критерий при нескольких ограничениях",
+      "metaphor_ru": "Спрашивайте, что должно иметь наибольший вес в реальном выборе, вместо абстрактного «что важнее». В английском используйте which factor/consideration matters most или should weigh most heavily; в немецком — worauf kommt es an, welcher Aspekt wiegt am schwersten. Условие с if/wenn задаёт ограничения выбора.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Which factor matters most if [the team needs another day to decide]?",
-          "example": "Which factor matters most if the team needs another day to decide?",
-          "translation": "Какой фактор важнее всего, если команде нужен ещё день для решения?",
+          "formula": "Which [factor/consideration] matters most if [constraint]? / What should matter most if [choice]?",
+          "example": "Which factor matters most if the new flat is cheaper but much farther from school?",
+          "translation": "Какой фактор важнее, если новая квартира дешевле, но значительно дальше от школы?",
           "examples": [
             {
-              "text": "**Which factor matters most if the team needs another day to decide?**",
-              "translation_ru": "Какой фактор важнее всего, если команде нужен ещё день для решения?"
+              "text": "**Which factor matters most if the new flat is cheaper but much farther from school?**",
+              "translation_ru": "Какой фактор важнее, если новая квартира дешевле, но значительно дальше от школы?"
             },
             {
-              "text": "**Which factor matters most if the revised plan has not been shared yet?**",
-              "translation_ru": "Какой фактор важнее всего, если обновлённым планом ещё не поделились?"
+              "text": "**Which consideration matters most if both candidates meet the technical requirements?**",
+              "translation_ru": "Какой критерий главный, если оба кандидата соответствуют профессиональным требованиям?"
             },
             {
-              "text": "**Which factor matters most if we should compare the two options?**",
-              "translation_ru": "Какой фактор важнее всего, если нам следует сравнить два варианта?"
+              "text": "**Which factor should weigh most heavily if our parents need help and we can rarely visit?**",
+              "translation_ru": "Какой фактор стоит учитывать прежде всего, если родителям нужна помощь, а приезжать мы можем редко?"
             },
             {
-              "text": "**Which factor matters most if the client asked for more detail?**",
-              "translation_ru": "Какой фактор важнее всего, если клиент попросил больше деталей?"
+              "text": "**Which factor matters most if the weather forecast changes before our hike?**",
+              "translation_ru": "Что важнее всего, если прогноз погоды изменится перед походом?"
             },
             {
-              "text": "**Which factor matters most if the pilot may continue next month?**",
-              "translation_ru": "Какой фактор важнее всего, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**If residents disagree about the redesign, which concern should carry the most weight?**",
+              "translation_ru": "Если жители разойдутся во мнениях о реконструкции, чьи опасения следует учесть в первую очередь?"
             },
             {
-              "text": "**Which factor matters most if the data need another check?**",
-              "translation_ru": "Какой фактор важнее всего, если данные нужно проверить ещё раз?"
+              "text": "**What should matter most if the language course is affordable but leaves almost no time to practise?**",
+              "translation_ru": "Что должно быть главным, если языковые занятия доступны по цене, но почти не оставляют времени на практику?"
             },
             {
-              "text": "**Which factor matters most if the meeting was moved?**",
-              "translation_ru": "Какой фактор важнее всего, если встречу перенесли?"
+              "text": "**Which factor matters most if a phone has excellent battery life but unreliable microphones?**",
+              "translation_ru": "Что важнее всего, если телефон долго держит заряд, но микрофоны у него ненадёжные?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welcher Faktor ist am wichtigsten, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welcher Faktor ist am wichtigsten, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какой фактор важнее всего, если команде нужен ещё день для решения?",
+          "formula": "Welcher [Faktor/Aspekt] wiegt am schwersten, wenn [Bedingung]? / Worauf kommt es an, wenn [Wahl]?",
+          "example": "Welcher Punkt ist entscheidend, wenn die neue Wohnung zwar günstiger ist, aber weit von der Schule entfernt liegt?",
+          "translation": "Что решает дело, если новая квартира дешевле, но находится далеко от школы?",
           "examples": [
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какой фактор важнее всего, если команде нужен ещё день для решения?"
+              "text": "**Welcher Punkt ist entscheidend, wenn die neue Wohnung zwar günstiger ist, aber weit von der Schule entfernt liegt?**",
+              "translation_ru": "Что решает дело, если новая квартира дешевле, но находится далеко от школы?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какой фактор важнее всего, если обновлённым планом ещё не поделились?"
+              "text": "**Worauf kommt es am meisten an, wenn beide Bewerber die fachlichen Anforderungen erfüllen?**",
+              "translation_ru": "На что прежде всего смотреть, если оба кандидата отвечают профессиональным требованиям?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какой фактор важнее всего, если нам следует сравнить два варианта?"
+              "text": "**Was sollte am schwersten wiegen, wenn unsere Eltern Unterstützung brauchen und wir selten zu Besuch kommen können?**",
+              "translation_ru": "Что должно иметь наибольший вес, если родителям нужна помощь, а навещать их мы можем редко?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какой фактор важнее всего, если клиент попросил больше деталей?"
+              "text": "**Welcher Faktor zählt am meisten, wenn sich die Wettervorhersage vor der Wanderung ändert?**",
+              "translation_ru": "Какой фактор важнее всего, если перед походом изменится прогноз погоды?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какой фактор важнее всего, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Welches Anliegen sollte Vorrang haben, wenn die Anwohner über die Umgestaltung unterschiedlicher Meinung sind?**",
+              "translation_ru": "Какому вопросу уделить первоочередное внимание, если жители не согласны друг с другом по поводу реконструкции?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какой фактор важнее всего, если данные нужно проверить ещё раз?"
+              "text": "**Was ist ausschlaggebend, wenn der Sprachkurs erschwinglich ist, aber kaum Zeit zum Üben lässt?**",
+              "translation_ru": "Что будет решающим, если языковой курс недорогой, но почти не оставляет времени на практику?"
             },
             {
-              "text": "**Welcher Faktor ist am wichtigsten, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Какой фактор важнее всего, если встречу перенесли?"
+              "text": "**Welcher Aspekt wiegt schwerer, wenn ein Handy lange durchhält, aber unzuverlässige Mikrofone hat?**",
+              "translation_ru": "Что перевешивает, если телефон долго работает без подзарядки, но микрофоны у него ненадёжные?"
             }
           ]
         }
       ],
       "formulas": [
-        "Which factor matters most if [the team needs another day to decide]?",
-        "Welcher Faktor ist am wichtigsten, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Which [factor/consideration] matters most if [constraint]? / What should matter most if [choice]?",
+        "Welcher [Faktor/Aspekt] wiegt am schwersten, wenn [Bedingung]? / Worauf kommt es an, wenn [Wahl]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQCAU021",
       "group_id": "QCAU",
       "set_id": "QCAU",
-      "title_ru": "Как получилось, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как получилось, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, как возник неожиданный результат",
+      "metaphor_ru": "Вопрос о цепочке обстоятельств, приведшей к неожиданному событию, а не просто просьба назвать одну причину.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How did it happen that [the team needs another day to decide]?",
-          "example": "How did it happen that the team needs another day to decide?",
-          "translation": "Как получилось, что команде нужен ещё день для решения?",
+          "formula": "How did it come about that [unexpected outcome]?",
+          "example": "How did it come about that the town's oldest library almost closed?",
+          "translation": "Как получилось, что старейшая библиотека города едва не закрылась?",
           "examples": [
             {
-              "text": "**How did it happen that the team needs another day to decide?**",
-              "translation_ru": "Как получилось, что команде нужен ещё день для решения?"
+              "text": "**How did it come about that the town's oldest library almost closed?**",
+              "translation_ru": "Как получилось, что старейшая библиотека города едва не закрылась?"
             },
             {
-              "text": "**How did it happen that the revised plan has not been shared yet?**",
-              "translation_ru": "Как получилось, что обновлённым планом ещё не поделились?"
+              "text": "**How did it come about that the error wasn't spotted until the exhibition opened?**",
+              "translation_ru": "Как вышло, что ошибку заметили лишь при открытии выставки?"
             },
             {
-              "text": "**How did it happen that we should compare the two options?**",
-              "translation_ru": "Как получилось, что нам следует сравнить два варианта?"
+              "text": "**How did it come about that the two neighbours stopped speaking to each other?**",
+              "translation_ru": "Как получилось, что двое соседей перестали разговаривать друг с другом?"
             },
             {
-              "text": "**How did it happen that the client asked for more detail?**",
-              "translation_ru": "Как получилось, что клиент попросил больше деталей?"
+              "text": "**How did it come about that a small volunteer project grew into a citywide initiative?**",
+              "translation_ru": "Как небольшая волонтёрская затея превратилась в инициативу городского масштаба?"
             },
             {
-              "text": "**How did it happen that the pilot may continue next month?**",
-              "translation_ru": "Как получилось, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**How did it come about that the backup files could no longer be opened?**",
+              "translation_ru": "Как получилось, что резервные копии вдруг перестали открываться?"
             },
             {
-              "text": "**How did it happen that the data need another check?**",
-              "translation_ru": "Как получилось, что данные нужно проверить ещё раз?"
+              "text": "**How did it come about that she changed her mind after months of preparation?**",
+              "translation_ru": "Как вышло, что после нескольких месяцев подготовки она передумала?"
             },
             {
-              "text": "**How did it happen that the meeting was moved?**",
-              "translation_ru": "Как получилось, что встречу перенесли?"
+              "text": "**How did it come about that the river flooded despite the new barriers?**",
+              "translation_ru": "Почему река вышла из берегов, несмотря на новые защитные сооружения?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie kam es dazu, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie kam es dazu, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как получилось, что команде нужен ещё день для решения?",
+          "formula": "Wie kam es dazu, dass [unerwartetes Ergebnis]?",
+          "example": "Wie kam es dazu, dass die älteste Bibliothek der Stadt beinahe schließen musste?",
+          "translation": "Как получилось, что старейшая библиотека города едва не закрылась?",
           "examples": [
             {
-              "text": "**Wie kam es dazu, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как получилось, что команде нужен ещё день для решения?"
+              "text": "**Wie kam es dazu, dass die älteste Bibliothek der Stadt beinahe schließen musste?**",
+              "translation_ru": "Как получилось, что старейшая библиотека города едва не закрылась?"
             },
             {
-              "text": "**Wie kam es dazu, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как получилось, что обновлённым планом ещё не поделились?"
+              "text": "**Wie kam es dazu, dass der Fehler erst bei der Eröffnung der Ausstellung auffiel?**",
+              "translation_ru": "Как вышло, что ошибку заметили лишь при открытии выставки?"
             },
             {
-              "text": "**Wie kam es dazu, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как получилось, что нам следует сравнить два варианта?"
+              "text": "**Wie kam es dazu, dass die beiden Nachbarn nicht mehr miteinander reden?**",
+              "translation_ru": "Как получилось, что двое соседей перестали разговаривать друг с другом?"
             },
             {
-              "text": "**Wie kam es dazu, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как получилось, что клиент попросил больше деталей?"
+              "text": "**Wie kam es dazu, dass aus einem kleinen Freiwilligenprojekt eine Initiative für die ganze Stadt wurde?**",
+              "translation_ru": "Как небольшая волонтёрская затея превратилась в инициативу городского масштаба?"
             },
             {
-              "text": "**Wie kam es dazu, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как получилось, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wie kam es dazu, dass sich die Sicherungskopien plötzlich nicht mehr öffnen ließen?**",
+              "translation_ru": "Как получилось, что резервные копии вдруг перестали открываться?"
             },
             {
-              "text": "**Wie kam es dazu, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как получилось, что данные нужно проверить ещё раз?"
+              "text": "**Wie kam es dazu, dass sie ihre Meinung nach monatelanger Vorbereitung änderte?**",
+              "translation_ru": "Как вышло, что после нескольких месяцев подготовки она передумала?"
             },
             {
-              "text": "**Wie kam es dazu, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Как получилось, что встречу перенесли?"
+              "text": "**Wie kam es dazu, dass der Fluss trotz der neuen Schutzwälle über die Ufer trat?**",
+              "translation_ru": "Почему река вышла из берегов, несмотря на новые защитные сооружения?"
             }
           ]
         }
       ],
       "formulas": [
-        "How did it happen that [the team needs another day to decide]?",
-        "Wie kam es dazu, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How did it come about that [unexpected outcome]?",
+        "Wie kam es dazu, dass [unerwartetes Ergebnis]?"
       ],
       "gen": {
         "status": "curated",

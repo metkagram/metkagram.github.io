@@ -6,85 +6,85 @@
       "id": "C1HED001",
       "group_id": "HED",
       "set_id": "HED",
-      "title_ru": "Было бы преждевременно заключать, что [X], прежде чем [Y]",
-      "metaphor_ru": "Не делайте сильный вывод раньше времени: укажите, какого факта, срока или шага проверки ещё не хватает.",
+      "title_ru": "Не спешить с выводом",
+      "metaphor_ru": "Не объявляйте вывод доказанным, пока не проверили недостающий факт. Отрабатывайте осторожную оценку, вопросы и оговорки.",
       "langs": [
         {
           "lang": "en",
           "formula": "It would be premature to conclude that [X] before [Y].",
-          "example": "It would be premature to conclude that the pilot has failed before we separate onboarding errors from product defects.",
-          "translation": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта.",
+          "example": "It would be premature to conclude that our neighbour is unfriendly before we've actually spoken to her.",
+          "translation": "Было бы поспешно считать соседку неприветливой, пока мы даже не поговорили с ней.",
           "examples": [
             {
-              "text": "**It would be premature to conclude that the pilot has failed before we separate onboarding errors from product defects.**",
-              "translation_ru": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта."
+              "text": "**It would be premature to conclude that our neighbour is unfriendly before we've actually spoken to her.**",
+              "translation_ru": "Было бы поспешно считать соседку неприветливой, пока мы даже не поговорили с ней."
             },
             {
-              "text": "**It would be premature to conclude that demand has recovered before September orders are complete.**",
-              "translation_ru": "Было бы преждевременно заключать, что спрос восстановился, пока не будут собраны все сентябрьские заказы."
+              "text": "**I'd say it's premature to conclude that the new bus route is unpopular when half the stops still lack timetables.**",
+              "translation_ru": "Я бы не спешил говорить, что новый автобусный маршрут непопулярен, пока на половине остановок даже нет расписания."
             },
             {
-              "text": "**It would be premature to conclude that the migration caused the outage before the network traces are reviewed.**",
-              "translation_ru": "Было бы преждевременно заключать, что миграция вызвала сбой, прежде чем будут проверены сетевые трассировки."
+              "text": "**Wouldn't it be premature to conclude that the children aren't making progress before we ask what they've been practising?**",
+              "translation_ru": "Разве не рано утверждать, что дети не продвигаются в учёбе, пока мы не спросили, что именно они тренировали?"
             },
             {
-              "text": "**It would be premature to conclude that the new policy will reduce turnover before employees have experienced it for at least one review cycle.**",
-              "translation_ru": "Было бы преждевременно заключать, что новая политика снизит текучесть, прежде чем сотрудники проживут с ней хотя бы один цикл оценки."
+              "text": "**It would be premature to conclude that the voice assistant misheard me before we've checked whether the microphone was muted.**",
+              "translation_ru": "Рано винить голосового помощника в ошибке распознавания, пока мы не проверили, не был ли отключён микрофон."
             },
             {
-              "text": "**It would be premature to conclude that the treatment is broadly effective before the larger trial reports adverse events.**",
-              "translation_ru": "Было бы преждевременно заключать, что лечение широко эффективно, прежде чем крупное исследование сообщит о нежелательных явлениях."
+              "text": "**It would be premature to conclude that the repairs worked before the roof has survived a heavy storm.**",
+              "translation_ru": "Рано считать ремонт успешным, пока крыша не выдержала хотя бы одну сильную бурю."
             },
             {
-              "text": "**It would be premature to conclude that the cheaper supplier is the better option before we price in support delays and replacement stock.**",
-              "translation_ru": "Было бы преждевременно заключать, что более дешёвый поставщик лучше, прежде чем мы учтём задержки поддержки и резервный запас."
+              "text": "**Before we hear both accounts, it would be premature to conclude that the argument was anyone's fault.**",
+              "translation_ru": "Пока мы не выслушали обе стороны, рано решать, кто виноват в ссоре."
             },
             {
-              "text": "**It would be premature to conclude that the model is biased before we reproduce the result on a balanced test set.**",
-              "translation_ru": "Было бы преждевременно заключать, что модель предвзята, прежде чем мы воспроизведём результат на сбалансированном тестовом наборе."
+              "text": "**It would be premature to conclude that the accessibility changes have helped before wheelchair users have tried the entrance.**",
+              "translation_ru": "Преждевременно называть изменения удачными, пока люди на инвалидных колясках не опробовали вход."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es wäre verfrüht zu schließen, dass [X], bevor [Y].",
-          "example": "Es wäre verfrüht zu schließen, dass das Pilotprojekt gescheitert ist, bevor wir Onboardingfehler von Produktmängeln getrennt haben.",
-          "translation": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта.",
+          "formula": "Es wäre voreilig, [X] anzunehmen, bevor [Y].",
+          "example": "Es wäre voreilig, unsere Nachbarin für unfreundlich zu halten, bevor wir überhaupt mit ihr gesprochen haben.",
+          "translation": "Было бы поспешно считать соседку неприветливой, пока мы даже не поговорили с ней.",
           "examples": [
             {
-              "text": "**Es wäre verfrüht zu schließen, dass das Pilotprojekt gescheitert ist, bevor wir Onboardingfehler von Produktmängeln getrennt haben.**",
-              "translation_ru": "Было бы преждевременно заключать, что пилот провалился, прежде чем мы отделим ошибки онбординга от дефектов продукта."
+              "text": "**Es wäre voreilig, unsere Nachbarin für unfreundlich zu halten, bevor wir überhaupt mit ihr gesprochen haben.**",
+              "translation_ru": "Было бы поспешно считать соседку неприветливой, пока мы даже не поговорили с ней."
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass sich die Nachfrage erholt hat, bevor die Septemberbestellungen vollständig vorliegen.**",
-              "translation_ru": "Было бы преждевременно заключать, что спрос восстановился, пока не будут собраны все сентябрьские заказы."
+              "text": "**Ich fände es voreilig, die neue Buslinie für unbeliebt zu erklären, solange an der Hälfte der Haltestellen noch Fahrpläne fehlen.**",
+              "translation_ru": "Я бы не спешил говорить, что новый автобусный маршрут непопулярен, пока на половине остановок даже нет расписания."
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass die Migration den Ausfall verursacht hat, bevor die Netzwerk-Traces geprüft wurden.**",
-              "translation_ru": "Было бы преждевременно заключать, что миграция вызвала сбой, прежде чем будут проверены сетевые трассировки."
+              "text": "**Wäre es nicht voreilig, den Kindern fehlende Fortschritte zu unterstellen, bevor wir fragen, was sie geübt haben?**",
+              "translation_ru": "Разве не рано утверждать, что дети не продвигаются в учёбе, пока мы не спросили, что именно они тренировали?"
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass die neue Regelung die Fluktuation senken wird, bevor die Beschäftigten sie mindestens einen Beurteilungszyklus lang erlebt haben.**",
-              "translation_ru": "Было бы преждевременно заключать, что новая политика снизит текучесть, прежде чем сотрудники проживут с ней хотя бы один цикл оценки."
+              "text": "**Es wäre voreilig, dem Sprachassistenten einen Erkennungsfehler zuzuschreiben, bevor wir geprüft haben, ob das Mikrofon stummgeschaltet war.**",
+              "translation_ru": "Рано винить голосового помощника в ошибке распознавания, пока мы не проверили, не был ли отключён микрофон."
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass die Behandlung breit wirksam ist, bevor die größere Studie über unerwünschte Ereignisse berichtet.**",
-              "translation_ru": "Было бы преждевременно заключать, что лечение широко эффективно, прежде чем крупное исследование сообщит о нежелательных явлениях."
+              "text": "**Es wäre voreilig, von einer gelungenen Reparatur auszugehen, bevor das Dach den nächsten starken Sturm überstanden hat.**",
+              "translation_ru": "Рано считать ремонт успешным, пока крыша не выдержала хотя бы одну сильную бурю."
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass der günstigere Lieferant die bessere Wahl ist, bevor wir Supportverzögerungen und Ersatzbestände eingerechnet haben.**",
-              "translation_ru": "Было бы преждевременно заключать, что более дешёвый поставщик лучше, прежде чем мы учтём задержки поддержки и резервный запас."
+              "text": "**Bevor wir beide Seiten gehört haben, wäre es voreilig, jemandem die Schuld an dem Streit zu geben.**",
+              "translation_ru": "Пока мы не выслушали обе стороны, рано решать, кто виноват в ссоре."
             },
             {
-              "text": "**Es wäre verfrüht zu schließen, dass das Modell verzerrt ist, bevor wir das Ergebnis auf einem ausgewogenen Testsatz reproduziert haben.**",
-              "translation_ru": "Было бы преждевременно заключать, что модель предвзята, прежде чем мы воспроизведём результат на сбалансированном тестовом наборе."
+              "text": "**Es wäre voreilig, die Umbauten als Erfolg zu bewerten, bevor Menschen im Rollstuhl den Eingang getestet haben.**",
+              "translation_ru": "Преждевременно называть изменения удачными, пока люди на инвалидных колясках не опробовали вход."
             }
           ]
         }
       ],
       "formulas": [
         "It would be premature to conclude that [X] before [Y].",
-        "Es wäre verfrüht zu schließen, dass [X], bevor [Y]."
+        "Es wäre voreilig, [X] anzunehmen, bevor [Y]."
       ],
       "gen": {
         "status": "curated",
@@ -97,8 +97,98 @@
         "notes": "C1 communicative frame: Qualification and hedging. Editorially rewritten for diverse spoken practice."
       },
       "title_en": "It would be premature to conclude that [X] before [Y]",
-      "description_en": "Hold back a strong conclusion until a specific piece of evidence, time point, or validation step is available.",
-      "description_ru": "Не делайте сильный вывод раньше времени: укажите, какого факта, срока или шага проверки ещё не хватает."
+      "description_en": "Avoid a firm conclusion until the missing evidence or first-hand check is available.",
+      "description_ru": "Не объявляйте вывод доказанным, пока не проверили недостающий факт. Отрабатывайте осторожную оценку, вопросы и оговорки."
+    },
+    {
+      "id": "C1HED041",
+      "group_id": "HED",
+      "set_id": "HED",
+      "title_ru": "На этом этапе я бы считал [X] рабочей гипотезой, а не [Y]",
+      "metaphor_ru": "Сохраняйте полезную гипотезу в работе, не превращая её раньше времени в установленный факт.",
+      "title_en": "At this stage, I would treat [X] as a working assumption rather than [Y]",
+      "description_en": "Use this frame when evidence is useful enough to proceed but not strong enough for a firm conclusion.",
+      "description_ru": "Используйте этот каркас, когда данных достаточно для следующего шага, но недостаточно для твёрдого вывода.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "At this stage, I would treat [X] as a working assumption rather than [Y].",
+          "example": "At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.",
+          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "examples": [
+            {
+              "text": "**At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.**",
+              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+            },
+            {
+              "text": "**At this stage, I would treat the caching layer as a working assumption rather than the confirmed root cause.**",
+              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+            },
+            {
+              "text": "**At this stage, I would treat next quarter’s demand forecast as a working assumption rather than a commitment.**",
+              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+            },
+            {
+              "text": "**At this stage, I would treat the July launch date as a working assumption rather than a fixed deadline.**",
+              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+            },
+            {
+              "text": "**At this stage, I would treat the complaint pattern as a working assumption rather than evidence that every customer has the same problem.**",
+              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+            },
+            {
+              "text": "**At this stage, I would treat the supplier’s stated capacity as a working assumption rather than guaranteed availability.**",
+              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten.",
+          "example": "Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.",
+          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "examples": [
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.**",
+              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die Cache-Schicht als Arbeitshypothese und nicht als bestätigte Ursache betrachten.**",
+              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die Nachfrageprognose für das nächste Quartal als Arbeitshypothese und nicht als Zusage betrachten.**",
+              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich den Starttermin im Juli als Arbeitshypothese und nicht als feste Frist betrachten.**",
+              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich das Muster in den Beschwerden als Arbeitshypothese und nicht als Beleg dafür betrachten, dass alle Kunden dasselbe Problem haben.**",
+              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+            },
+            {
+              "text": "**Zum jetzigen Zeitpunkt würde ich die vom Lieferanten genannte Kapazität als Arbeitshypothese und nicht als garantierte Verfügbarkeit betrachten.**",
+              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "At this stage, I would treat [X] as a working assumption rather than [Y].",
+        "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: proceed under uncertainty without overstating confidence."
+      }
     }
   ]
 }

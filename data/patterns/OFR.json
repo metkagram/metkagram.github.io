@@ -101,85 +101,85 @@
       "id": "FUNOFR011",
       "group_id": "OFR",
       "set_id": "OFR",
-      "title_ru": "Мы могли бы помочь, проверив, команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «предложения помощи» в живом контексте.",
+      "title_ru": "Предложить помощь конкретным действием",
+      "metaphor_ru": "Английское could help by + -ing и немецкое könnten helfen, indem… показывают не только готовность помочь, но и конкретный способ. Меняйте участника, действие и контекст, сохраняя предложение помощи.",
       "langs": [
         {
           "lang": "en",
-          "formula": "We could help by checking whether [the team needs another day to decide].",
-          "example": "We could help by checking whether the team needs another day to decide.",
-          "translation": "Мы могли бы помочь, проверив, команде нужен ещё день для решения.",
+          "formula": "Subject + could / might help by + verb-ing.",
+          "example": "We could help by mapping a step-free route to the concert hall.",
+          "translation": "Мы могли бы помочь, проложив маршрут к концертному залу без лестниц.",
           "examples": [
             {
-              "text": "**We could help by checking whether the team needs another day to decide.**",
-              "translation_ru": "Мы могли бы помочь, проверив, команде нужен ещё день для решения."
+              "text": "We could help by mapping a step-free route to the concert hall.",
+              "translation_ru": "Мы могли бы помочь, проложив маршрут к концертному залу без лестниц."
             },
             {
-              "text": "**We could help by checking whether the revised plan has not been shared yet.**",
-              "translation_ru": "Мы могли бы помочь, проверив, обновлённым планом ещё не поделились."
+              "text": "I could help by proofreading your application before you send it.",
+              "translation_ru": "Я могу помочь: вычитать твоё заявление перед отправкой."
             },
             {
-              "text": "**We could help by checking whether we should compare the two options.**",
-              "translation_ru": "Мы могли бы помочь, проверив, нам следует сравнить два варианта."
+              "text": "Could we help by looking after the dog while you're at the hospital?",
+              "translation_ru": "Может, мы поможем и присмотрим за собакой, пока ты в больнице?"
             },
             {
-              "text": "**We could help by checking whether the client asked for more detail.**",
-              "translation_ru": "Мы могли бы помочь, проверив, клиент попросил больше деталей."
+              "text": "The neighbours could help by taking spare blankets to the night shelter.",
+              "translation_ru": "Соседи могли бы помочь, отнеся запасные одеяла в ночной приют."
             },
             {
-              "text": "**We could help by checking whether the pilot may continue next month.**",
-              "translation_ru": "Мы могли бы помочь, проверив, пилотный проект может продолжиться в следующем месяце."
+              "text": "She could help by showing beginners how to edit short videos.",
+              "translation_ru": "Она могла бы помочь, показав новичкам, как монтировать короткие видео."
             },
             {
-              "text": "**We could help by checking whether the data need another check.**",
-              "translation_ru": "Мы могли бы помочь, проверив, данные нужно проверить ещё раз."
+              "text": "We might help by testing the translated instructions with actual users.",
+              "translation_ru": "Возможно, мы помогли бы, проверив переведённую инструкцию на реальных пользователях."
             },
             {
-              "text": "**We could help by checking whether the meeting was moved.**",
-              "translation_ru": "Мы могли бы помочь, проверив, встречу перенесли."
+              "text": "The students could help by recording stories told in the local dialect.",
+              "translation_ru": "Студенты могли бы помочь, записав рассказы на местном диалекте."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wir könnten helfen, indem wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Wir könnten helfen, indem wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Мы могли бы помочь, проверив, команде нужен ещё день для решения.",
+          "formula": "Subjekt + könnte / könnten helfen, indem + Nebensatz (Verb am Ende).",
+          "example": "Wir könnten helfen, indem wir einen barrierefreien Weg zum Konzerthaus heraussuchen.",
+          "translation": "Мы могли бы помочь, найдя удобный маршрут к концертному залу без препятствий.",
           "examples": [
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Мы могли бы помочь, проверив, команде нужен ещё день для решения."
+              "text": "Wir könnten helfen, indem wir einen barrierefreien Weg zum Konzerthaus heraussuchen.",
+              "translation_ru": "Мы могли бы помочь, найдя удобный маршрут к концертному залу без препятствий."
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Мы могли бы помочь, проверив, обновлённым планом ещё не поделились."
+              "text": "Ich könnte dir helfen, indem ich deine Bewerbung vor dem Abschicken gegenlese.",
+              "translation_ru": "Я мог бы помочь тебе, вычитав твоё заявление перед отправкой."
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Мы могли бы помочь, проверив, нам следует сравнить два варианта."
+              "text": "Könnten wir helfen, indem wir auf den Hund aufpassen, während du im Krankenhaus bist?",
+              "translation_ru": "Может, мы поможем и присмотрим за собакой, пока ты в больнице?"
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Мы могли бы помочь, проверив, клиент попросил больше деталей."
+              "text": "Die Nachbarn könnten helfen, indem sie warme Decken in die Notunterkunft bringen.",
+              "translation_ru": "Соседи могли бы помочь, привезя тёплые одеяла в пункт временного размещения."
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Мы могли бы помочь, проверив, пилотный проект может продолжиться в следующем месяце."
+              "text": "Sie könnte helfen, indem sie Anfängern erklärt, wie man kurze Videos schneidet.",
+              "translation_ru": "Она могла бы помочь, объяснив новичкам, как монтировать короткие ролики."
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Мы могли бы помочь, проверив, данные нужно проверить ещё раз."
+              "text": "Vielleicht könnten wir helfen, indem wir die übersetzte Anleitung mit echten Nutzern testen.",
+              "translation_ru": "Возможно, мы могли бы помочь, проверив перевод инструкции с настоящими пользователями."
             },
             {
-              "text": "**Wir könnten helfen, indem wir prüfen, ob die Sitzung verschoben wurde.**",
-              "translation_ru": "Мы могли бы помочь, проверив, встречу перенесли."
+              "text": "Die Studierenden könnten helfen, indem sie Erzählungen im örtlichen Dialekt aufnehmen.",
+              "translation_ru": "Студенты могли бы помочь, записав рассказы на местном диалекте."
             }
           ]
         }
       ],
       "formulas": [
-        "We could help by checking whether [the team needs another day to decide].",
-        "Wir könnten helfen, indem wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "Subject + could / might help by + verb-ing.",
+        "Subjekt + könnte / könnten helfen, indem + Nebensatz (Verb am Ende)."
       ],
       "gen": {
         "status": "curated",

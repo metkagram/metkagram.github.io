@@ -6,85 +6,85 @@
       "id": "FUNORG001",
       "group_id": "ORG",
       "set_id": "ORG",
-      "title_ru": "Давайте начнём с уточнения, команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «организация разговора» в живом контексте.",
+      "title_ru": "Прояснить вопрос до следующего действия",
+      "metaphor_ru": "Before we / Bevor wir обозначает следующий шаг, а whether / ob вводит косвенный вопрос. Так можно организовать разговор, не принимая решение преждевременно. В немецком ob-придаточном сказуемое стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Let us begin by clarifying whether [the team needs another day to decide].",
-          "example": "Let us begin by clarifying whether the team needs another day to decide.",
-          "translation": "Давайте начнём с уточнения, команде нужен ещё день для решения.",
+          "formula": "Before we [next step], let's clarify whether [question].",
+          "example": "Before we choose a contractor, let's clarify whether the repairs are covered by the warranty.",
+          "translation": "Прежде чем выбирать мастера, давайте выясним, действует ли гарантия на этот ремонт.",
           "examples": [
             {
-              "text": "**Let us begin by clarifying whether the team needs another day to decide.**",
-              "translation_ru": "Давайте начнём с уточнения, команде нужен ещё день для решения."
+              "text": "**Before we choose a contractor, let's clarify whether the repairs are covered by the warranty.**",
+              "translation_ru": "Прежде чем выбирать мастера, давайте выясним, действует ли гарантия на этот ремонт."
             },
             {
-              "text": "**Let us begin by clarifying whether the revised plan has not been shared yet.**",
-              "translation_ru": "Давайте начнём с уточнения, обновлённым планом ещё не поделились."
+              "text": "**Before we book the tickets, let's clarify whether everyone can travel on Sunday.**",
+              "translation_ru": "Прежде чем покупать билеты, давайте уточним, все ли могут поехать в воскресенье."
             },
             {
-              "text": "**Let us begin by clarifying whether we should compare the two options.**",
-              "translation_ru": "Давайте начнём с уточнения, нам следует сравнить два варианта."
+              "text": "**Before we redesign the sign-up screen, let's clarify whether newcomers actually struggle with it.**",
+              "translation_ru": "Прежде чем переделывать экран регистрации, давайте выясним, действительно ли новичкам трудно им пользоваться."
             },
             {
-              "text": "**Let us begin by clarifying whether the client asked for more detail.**",
-              "translation_ru": "Давайте начнём с уточнения, клиент попросил больше деталей."
+              "text": "**Before we blame the neighbour, let's clarify whether the noise came from their flat.**",
+              "translation_ru": "Прежде чем винить соседа, давайте проверим, действительно ли шум доносился из его квартиры."
             },
             {
-              "text": "**Let us begin by clarifying whether the pilot may continue next month.**",
-              "translation_ru": "Давайте начнём с уточнения, пилотный проект может продолжиться в следующем месяце."
+              "text": "**Before we publish the figures, let's clarify whether the survey included rural households.**",
+              "translation_ru": "Прежде чем публиковать цифры, давайте уточним, охватывал ли опрос сельские семьи."
             },
             {
-              "text": "**Let us begin by clarifying whether the data need another check.**",
-              "translation_ru": "Давайте начнём с уточнения, данные нужно проверить ещё раз."
+              "text": "**Before we move on to the next chapter, let's clarify whether anyone is still confused by the example.**",
+              "translation_ru": "Прежде чем переходить к следующей главе, давайте узнаем, всем ли понятен пример."
             },
             {
-              "text": "**Let us begin by clarifying whether the meeting was moved.**",
-              "translation_ru": "Давайте начнём с уточнения, встречу перенесли."
+              "text": "**Before we cancel the rehearsal, let's clarify whether the singer can join us remotely.**",
+              "translation_ru": "Прежде чем отменять репетицию, давайте выясним, может ли певица подключиться дистанционно."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Beginnen wir damit zu klären, ob [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Beginnen wir damit zu klären, ob das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Давайте начнём с уточнения, команде нужен ещё день для решения.",
+          "formula": "Bevor wir [nächster Schritt], sollten wir klären, ob [Frage].",
+          "example": "Bevor wir einen Handwerker beauftragen, sollten wir klären, ob die Reparatur noch unter die Garantie fällt.",
+          "translation": "Прежде чем нанимать мастера, стоит выяснить, действует ли ещё гарантия.",
           "examples": [
             {
-              "text": "**Beginnen wir damit zu klären, ob das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Давайте начнём с уточнения, команде нужен ещё день для решения."
+              "text": "**Bevor wir einen Handwerker beauftragen, sollten wir klären, ob die Reparatur noch unter die Garantie fällt.**",
+              "translation_ru": "Прежде чем нанимать мастера, стоит выяснить, действует ли ещё гарантия."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Давайте начнём с уточнения, обновлённым планом ещё не поделились."
+              "text": "**Bevor wir die Fahrkarten buchen, sollten wir klären, ob alle am Sonntag reisen können.**",
+              "translation_ru": "Прежде чем бронировать билеты, нужно уточнить, все ли могут ехать в воскресенье."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Давайте начнём с уточнения, нам следует сравнить два варианта."
+              "text": "**Bevor wir die Anmeldung neu gestalten, sollten wir klären, ob Neulinge damit tatsächlich Schwierigkeiten haben.**",
+              "translation_ru": "Прежде чем переделывать регистрацию, стоит выяснить, действительно ли новичкам сложно."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Давайте начнём с уточнения, клиент попросил больше деталей."
+              "text": "**Bevor wir dem Nachbarn die Schuld geben, sollten wir klären, ob der Lärm wirklich aus seiner Wohnung kam.**",
+              "translation_ru": "Прежде чем обвинять соседа, следует проверить, действительно ли шум шёл из его квартиры."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Давайте начнём с уточнения, пилотный проект может продолжиться в следующем месяце."
+              "text": "**Bevor wir die Zahlen veröffentlichen, sollten wir klären, ob die Umfrage auch Haushalte auf dem Land erfasst hat.**",
+              "translation_ru": "Прежде чем публиковать цифры, нужно выяснить, участвовали ли в опросе сельские семьи."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Давайте начнём с уточнения, данные нужно проверить ещё раз."
+              "text": "**Bevor wir zum nächsten Kapitel übergehen, sollten wir klären, ob jemand das Beispiel noch nicht verstanden hat.**",
+              "translation_ru": "Прежде чем идти к следующей главе, стоит узнать, остались ли вопросы по примеру."
             },
             {
-              "text": "**Beginnen wir damit zu klären, ob die Sitzung verschoben wurde.**",
-              "translation_ru": "Давайте начнём с уточнения, встречу перенесли."
+              "text": "**Bevor wir die Probe absagen, sollten wir klären, ob die Sängerin online dazukommen kann.**",
+              "translation_ru": "Прежде чем отменять репетицию, стоит выяснить, может ли певица подключиться онлайн."
             }
           ]
         }
       ],
       "formulas": [
-        "Let us begin by clarifying whether [the team needs another day to decide].",
-        "Beginnen wir damit zu klären, ob [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "Before we [next step], let's clarify whether [question].",
+        "Bevor wir [nächster Schritt], sollten wir klären, ob [Frage]."
       ],
       "gen": {
         "status": "curated",

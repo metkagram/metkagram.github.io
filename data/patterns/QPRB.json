@@ -291,85 +291,85 @@
       "id": "QSTQPRB031",
       "group_id": "QPRB",
       "set_id": "QPRB",
-      "title_ru": "Какой признак указал бы на то, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какой признак указал бы на то, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить, какой признак подтвердил бы предположение",
+      "metaphor_ru": "What would indicate that ...? и Woran würden wir erkennen, dass ...? помогают искать наблюдаемые признаки, а не выдавать догадку за факт. Английское that и немецкое dass вводят содержание проверяемого предположения; в немецком спрягаемый глагол уходит в конец.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Which sign would suggest that [the team needs another day to decide]?",
-          "example": "Which sign would suggest that the team needs another day to decide?",
-          "translation": "Какой признак указал бы на то, что команде нужен ещё день для решения?",
+          "formula": "What would indicate that [testable claim]?",
+          "example": "What would indicate that the child is ready to cycle without training wheels?",
+          "translation": "По каким признакам мы поймём, что ребёнок уже готов кататься без дополнительных колёс?",
           "examples": [
             {
-              "text": "**Which sign would suggest that the team needs another day to decide?**",
-              "translation_ru": "Какой признак указал бы на то, что команде нужен ещё день для решения?"
+              "text": "**What would indicate that the child is ready to cycle without training wheels?**",
+              "translation_ru": "По каким признакам мы поймём, что ребёнок уже готов кататься без дополнительных колёс?"
             },
             {
-              "text": "**Which sign would suggest that the revised plan has not been shared yet?**",
-              "translation_ru": "Какой признак указал бы на то, что обновлённым планом ещё не поделились?"
+              "text": "**What would indicate that the app is collecting more data than it needs?**",
+              "translation_ru": "Что указывало бы на то, что приложение собирает больше данных, чем ему нужно?"
             },
             {
-              "text": "**Which sign would suggest that we should compare the two options?**",
-              "translation_ru": "Какой признак указал бы на то, что нам следует сравнить два варианта?"
+              "text": "**What would indicate that the apartment has a moisture problem rather than poor ventilation?**",
+              "translation_ru": "Как понять, что в квартире проблема с сыростью, а не просто недостаточное проветривание?"
             },
             {
-              "text": "**Which sign would suggest that the client asked for more detail?**",
-              "translation_ru": "Какой признак указал бы на то, что клиент попросил больше деталей?"
+              "text": "**What would indicate that the new bus timetable is actually helping commuters?**",
+              "translation_ru": "По чему мы поймём, что новое расписание автобусов действительно удобно пассажирам?"
             },
             {
-              "text": "**Which sign would suggest that the pilot may continue next month?**",
-              "translation_ru": "Какой признак указал бы на то, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would indicate that a study's conclusions go beyond the available evidence?**",
+              "translation_ru": "Какие признаки покажут, что выводы исследования выходят за пределы имеющихся данных?"
             },
             {
-              "text": "**Which sign would suggest that the data need another check?**",
-              "translation_ru": "Какой признак указал бы на то, что данные нужно проверить ещё раз?"
+              "text": "**What would indicate that our apology was understood rather than merely accepted?**",
+              "translation_ru": "Как понять, что наше извинение действительно поняли, а не просто приняли?"
             },
             {
-              "text": "**Which sign would suggest that the meeting was moved?**",
-              "translation_ru": "Какой признак указал бы на то, что встречу перенесли?"
+              "text": "**What would indicate that the seedlings are getting too little light?**",
+              "translation_ru": "По каким признакам мы поймём, что рассаде не хватает света?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welches Zeichen würde darauf hindeuten, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welches Zeichen würde darauf hindeuten, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какой признак указал бы на то, что команде нужен ещё день для решения?",
+          "formula": "Woran würden wir erkennen, dass [überprüfbare Annahme]?",
+          "example": "Woran würden wir erkennen, dass das Kind schon ohne Stützräder fahren kann?",
+          "translation": "По каким признакам мы поймём, что ребёнок уже готов кататься без дополнительных колёс?",
           "examples": [
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какой признак указал бы на то, что команде нужен ещё день для решения?"
+              "text": "**Woran würden wir erkennen, dass das Kind schon ohne Stützräder fahren kann?**",
+              "translation_ru": "По каким признакам мы поймём, что ребёнок уже готов кататься без дополнительных колёс?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какой признак указал бы на то, что обновлённым планом ещё не поделились?"
+              "text": "**Woran würden wir erkennen, dass die App mehr Daten sammelt, als sie benötigt?**",
+              "translation_ru": "Что указывало бы на то, что приложение собирает больше данных, чем ему нужно?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какой признак указал бы на то, что нам следует сравнить два варианта?"
+              "text": "**Woran würden wir erkennen, dass die Wohnung ein Feuchtigkeitsproblem hat und nicht nur schlecht gelüftet wird?**",
+              "translation_ru": "Как понять, что в квартире проблема с сыростью, а не просто недостаточное проветривание?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какой признак указал бы на то, что клиент попросил больше деталей?"
+              "text": "**Woran würden wir erkennen, dass der neue Busfahrplan den Pendlern tatsächlich hilft?**",
+              "translation_ru": "По чему мы поймём, что новое расписание автобусов действительно удобно пассажирам?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какой признак указал бы на то, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Woran würden wir erkennen, dass die Schlussfolgerungen einer Studie über die vorhandenen Belege hinausgehen?**",
+              "translation_ru": "Какие признаки покажут, что выводы исследования выходят за пределы имеющихся данных?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какой признак указал бы на то, что данные нужно проверить ещё раз?"
+              "text": "**Woran würden wir erkennen, dass unsere Entschuldigung wirklich verstanden und nicht nur angenommen wurde?**",
+              "translation_ru": "Как понять, что наше извинение действительно поняли, а не просто приняли?"
             },
             {
-              "text": "**Welches Zeichen würde darauf hindeuten, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Какой признак указал бы на то, что встречу перенесли?"
+              "text": "**Woran würden wir erkennen, dass die Setzlinge zu wenig Licht bekommen?**",
+              "translation_ru": "По каким признакам мы поймём, что рассаде не хватает света?"
             }
           ]
         }
       ],
       "formulas": [
-        "Which sign would suggest that [the team needs another day to decide]?",
-        "Welches Zeichen würde darauf hindeuten, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would indicate that [testable claim]?",
+        "Woran würden wir erkennen, dass [überprüfbare Annahme]?"
       ],
       "gen": {
         "status": "curated",

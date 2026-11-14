@@ -1430,85 +1430,85 @@
     {
       "id": "LIN059",
       "group_id": "LIN",
-      "title_ru": "После того как…",
-      "metaphor_ru": "Как финишная ленточка: сначала пройти её, потом следующий шаг.",
+      "title_ru": "Показать, что одно действие следует за другим",
+      "metaphor_ru": "After и nachdem вводят временное придаточное. В немецком сказуемое стоит в конце придаточного; для двух завершённых прошлых событий часто употребляют Plusquamperfekt в более раннем.",
       "langs": [
         {
           "lang": "en",
-          "formula": "after + subject + verb",
-          "example": "We will review the results after we receive all data.",
-          "translation": "Мы проверим результаты после того, как получим все данные.",
+          "formula": "After [subject + verb/completed event], [main clause].",
+          "example": "After we had checked the tide tables, we changed our walking route.",
+          "translation": "Проверив расписание приливов, мы изменили маршрут прогулки.",
           "examples": [
             {
-              "text": "They will launch the product **after** the tests **are completed**.",
-              "translation_ru": "Они запустят продукт после того, как тесты будут завершены."
+              "text": "After we had checked the tide tables, we changed our walking route.",
+              "translation_ru": "Проверив расписание приливов, мы изменили маршрут прогулки."
             },
             {
-              "text": "Can you call me **after** you **finish** the report?",
-              "translation_ru": "Ты можешь позвонить мне после того, как закончишь отчет?"
+              "text": "She felt more at ease after she had spoken to the doctor.",
+              "translation_ru": "После разговора с врачом ей стало спокойнее."
             },
             {
-              "text": "The system will update **after** the server **restarts**.",
-              "translation_ru": "Система обновится после перезагрузки сервера."
+              "text": "After you finish the chapter, try explaining it without looking at your notes.",
+              "translation_ru": "Закончив главу, попробуй объяснить её содержание без подсказок."
             },
             {
-              "text": "She will apply for the job **after** she **graduates**.",
-              "translation_ru": "Она подаст заявление на работу после окончания учебы."
+              "text": "The children went outside after the rain had stopped.",
+              "translation_ru": "Дети вышли на улицу после того, как закончился дождь."
             },
             {
-              "text": "Read the document **after** you **receive** it.",
-              "translation_ru": "Прочитай документ после того, как его получишь."
+              "text": "After the update is installed, the app should start more quickly.",
+              "translation_ru": "После установки обновления приложение должно запускаться быстрее."
             },
             {
-              "text": "The team will meet **after** lunch **ends**.",
-              "translation_ru": "Команда встретится после окончания обеда."
+              "text": "We'll talk about the offer after we've had time to compare the conditions.",
+              "translation_ru": "Мы обсудим предложение, когда успеем сравнить условия."
             },
             {
-              "text": "He will decide **after** he **considers** all options.",
-              "translation_ru": "Он примет решение после того, как рассмотрит все варианты."
+              "text": "After she apologised, they finally found a way to work together.",
+              "translation_ru": "После её извинения они наконец нашли способ работать вместе."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "nachdem + subject + verb",
-          "example": "Wir werden die Ergebnisse überprüfen, nachdem wir alle Daten erhalten haben.",
-          "translation": "Мы проверим результаты после того, как получим все данные.",
+          "formula": "Nachdem [Subjekt ... Verb am Ende], [Hauptsatz].",
+          "example": "Nachdem wir die Gezeitentabelle geprüft hatten, änderten wir unsere Wanderroute.",
+          "translation": "После проверки таблицы приливов мы изменили маршрут похода.",
           "examples": [
             {
-              "text": "Sie werden das Produkt einführen, **nachdem** die Tests **abgeschlossen sind**.",
-              "translation_ru": "Они запустят продукт после того, как тесты будут завершены."
+              "text": "Nachdem wir die Gezeitentabelle geprüft hatten, änderten wir unsere Wanderroute.",
+              "translation_ru": "После проверки таблицы приливов мы изменили маршрут похода."
             },
             {
-              "text": "Kannst du mich anrufen, **nachdem** du den Bericht **fertiggestellt hast**?",
-              "translation_ru": "Ты можешь позвонить мне после того, как закончишь отчет?"
+              "text": "Sie war erleichtert, nachdem sie mit der Ärztin gesprochen hatte.",
+              "translation_ru": "После разговора с врачом она почувствовала облегчение."
             },
             {
-              "text": "Das System aktualisiert sich, **nachdem** der Server **neu gestartet wurde**.",
-              "translation_ru": "Система обновится после перезагрузки сервера."
+              "text": "Nachdem du das Kapitel gelesen hast, versuch, es ohne Notizen zu erklären.",
+              "translation_ru": "Прочитав главу, попробуй пересказать её без заметок."
             },
             {
-              "text": "Sie wird sich bewerben, **nachdem** sie **absolviert hat**.",
-              "translation_ru": "Она подаст заявление на работу после окончания учебы."
+              "text": "Nachdem der Regen aufgehört hatte, gingen die Kinder nach draußen.",
+              "translation_ru": "Когда дождь закончился, дети вышли во двор."
             },
             {
-              "text": "Lies das Dokument, **nachdem** du es **erhalten hast**.",
-              "translation_ru": "Прочитай документ после того, как его получишь."
+              "text": "Nachdem das Update installiert ist, sollte die App schneller starten.",
+              "translation_ru": "После установки обновления приложение должно открываться быстрее."
             },
             {
-              "text": "Das Team trifft sich, **nachdem** das Mittagessen **vorbei ist**.",
-              "translation_ru": "Команда встретится после окончания обеда."
+              "text": "Wir sprechen über das Angebot, nachdem wir die Bedingungen in Ruhe verglichen haben.",
+              "translation_ru": "Мы обсудим предложение после того, как спокойно сравним условия."
             },
             {
-              "text": "Er wird entscheiden, **nachdem** er alle Optionen **erwogen hat**.",
-              "translation_ru": "Он примет решение после того, как рассмотрит все варианты."
+              "text": "Nachdem sie sich entschuldigt hatte, fanden sie endlich einen Weg, zusammenzuarbeiten.",
+              "translation_ru": "После того как она извинилась, они наконец сумели договориться о совместной работе."
             }
           ]
         }
       ],
       "formulas": [
-        "after + subject + verb",
-        "nachdem + subject + verb"
+        "After [subject + verb/completed event], [main clause].",
+        "Nachdem [Subjekt ... Verb am Ende], [Hauptsatz]."
       ],
       "gen": {
         "status": "generated",

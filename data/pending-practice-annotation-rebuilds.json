@@ -1,7 +1,693 @@
 {
   "schemaVersion": 1,
   "purpose": "Explicit annotation rebuild ledger for new or changed canonical Pattern source text that still requires the local dependency-parser export.",
-  "patterns": [],
+  "patterns": [
+    {
+      "id": "C1EVD042",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1ARG041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1HED041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1PRB042",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1CLR041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1EVD043",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1AGR041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1PRO041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1STO041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-09-26"
+    },
+    {
+      "id": "C1AGR042",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-11"
+    },
+    {
+      "id": "C1SOL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-11"
+    },
+    {
+      "id": "C1MOD042",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-12"
+    },
+    {
+      "id": "C1STO042",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-12"
+    },
+    {
+      "id": "C1QCL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QNGT001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QHYP001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QDIS001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1QDEC001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-23"
+    },
+    {
+      "id": "C1PRI001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1SUM001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1CAU041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1EVD041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1QFOL001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-24"
+    },
+    {
+      "id": "C1QFRM001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1CND041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1TCT001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1FBK001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1PFR001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-25"
+    },
+    {
+      "id": "C1TAS041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1REP041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1KON001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1FCS001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1PRP001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-26"
+    },
+    {
+      "id": "C1MOD041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1INF001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1DET001",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "C1PRB041",
+      "reason": "new_pattern_requires_local_annotation_build",
+      "changed_at": "2026-10-27"
+    },
+    {
+      "id": "QSTQOP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQPOL001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQCAU021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "GRMPRP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "GRMSUB006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-28"
+    },
+    {
+      "id": "QSTQPRE011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQPRE021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQNEG021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQTAG001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "QSTQYN031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-29"
+    },
+    {
+      "id": "GRMREL001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMREL016",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMCAS001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMCAS016",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "QSTQIND021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-30"
+    },
+    {
+      "id": "GRMINF001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-31"
+    },
+    {
+      "id": "GRMINF006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-31"
+    },
+    {
+      "id": "QSTQCHO001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-31"
+    },
+    {
+      "id": "QSTQCHO011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-31"
+    },
+    {
+      "id": "QSTQCNF011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-10-31"
+    },
+    {
+      "id": "GRMWOR011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-01"
+    },
+    {
+      "id": "GRMWOR021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-01"
+    },
+    {
+      "id": "GRMSUB021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-01"
+    },
+    {
+      "id": "GRMSUB026",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-01"
+    },
+    {
+      "id": "GRMDET021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-01"
+    },
+    {
+      "id": "QSTQWH001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-02"
+    },
+    {
+      "id": "QSTQWH031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-02"
+    },
+    {
+      "id": "QSTQSUB021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-02"
+    },
+    {
+      "id": "QSTQOBJ001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-02"
+    },
+    {
+      "id": "QSTQACA011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-02"
+    },
+    {
+      "id": "FUNPFR001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-03"
+    },
+    {
+      "id": "FUNCNS011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-03"
+    },
+    {
+      "id": "FUNCNS021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-03"
+    },
+    {
+      "id": "FUNRSK011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-03"
+    },
+    {
+      "id": "FUNRQT011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-03"
+    },
+    {
+      "id": "GRMADJ031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-04"
+    },
+    {
+      "id": "GRMPRP011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-04"
+    },
+    {
+      "id": "GRMKON006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-04"
+    },
+    {
+      "id": "QSTQDEC001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-04"
+    },
+    {
+      "id": "QSTQDIS001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-04"
+    },
+    {
+      "id": "GRMKON001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "GRMKON021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "PAS005",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "GER005",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "GER006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "FUNOFR011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-05"
+    },
+    {
+      "id": "FUNADV001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "FUNADV011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "QSTQFOL001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "QSTQFOL021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "FUNGOA001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "FUNTCT021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-06"
+    },
+    {
+      "id": "GRMFCS001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "GRMFCS016",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "GRMFCS021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "FUNFBK021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "QSTQNGT011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "QSTQHYP031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-07"
+    },
+    {
+      "id": "CON010",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "CON011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "CON012",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "MOD005",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "LIN059",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "COM005",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-08"
+    },
+    {
+      "id": "C1HED001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "C1PRB001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "C1NEG001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "C1STO001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "C1REP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "C1PRO001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-09"
+    },
+    {
+      "id": "FUNPRI001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "FUNORG001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "FUNPRM001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "GRMSUB001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "GRMREL006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "GRMWOR001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-10"
+    },
+    {
+      "id": "QSTQIND011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "QSTQPRE001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "QSTQCNF021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "QSTQCHO021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "QSTQNEG031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "GRMCAS021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-11"
+    },
+    {
+      "id": "GRMDET001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "GRMINF011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "PAS006",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "PERF004",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "GER003",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "QSTQTAG021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-12"
+    },
+    {
+      "id": "QSTQCAU011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQDEC031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQPOL011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQWRK031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQACA031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQFRM011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-13"
+    },
+    {
+      "id": "QSTQCL011",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    },
+    {
+      "id": "QSTQOP021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    },
+    {
+      "id": "QSTQCMP001",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    },
+    {
+      "id": "QSTQPRB031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    },
+    {
+      "id": "QSTQNGT031",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    },
+    {
+      "id": "FUNRQT021",
+      "reason": "source_examples_rewritten_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-14"
+    }
+  ],
   "retired_records": [],
   "refreshed_by": "2026-09-19.8"
 }
