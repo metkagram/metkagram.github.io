@@ -196,85 +196,85 @@
       "id": "FUNRQT021",
       "group_id": "RQT",
       "set_id": "RQT",
-      "title_ru": "Пожалуйста, сообщите нам, если команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «просьбы и дальнейшие действия» в живом контексте.",
+      "title_ru": "Попросить сообщить о значимом изменении или условии",
+      "metaphor_ru": "Please let [recipient] know if ... / Bitte gib [jemandem] Bescheid, falls ... — краткая, практичная просьба держать человека в курсе. В английском if может обозначать условие или факт, который нужно проверить; немецкое falls подчёркивает условность. Выбирайте адресата и уровень вежливости, а не повторяйте одну фразу механически.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Please let us know if [the team needs another day to decide].",
-          "example": "Please let us know if the team needs another day to decide.",
-          "translation": "Пожалуйста, сообщите нам, если команде нужен ещё день для решения.",
+          "formula": "Please let [recipient] know if [condition or new information].",
+          "example": "Please let me know if the parcel arrives while I'm out.",
+          "translation": "Сообщи мне, пожалуйста, если посылка придёт, пока меня нет дома.",
           "examples": [
             {
-              "text": "**Please let us know if the team needs another day to decide.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если команде нужен ещё день для решения."
+              "text": "**Please let me know if the parcel arrives while I'm out.**",
+              "translation_ru": "Сообщи мне, пожалуйста, если посылка придёт, пока меня нет дома."
             },
             {
-              "text": "**Please let us know if the revised plan has not been shared yet.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если обновлённым планом ещё не поделились."
+              "text": "**Please let the neighbours know if the water will be shut off tomorrow.**",
+              "translation_ru": "Пожалуйста, предупредите соседей, если завтра будут отключать воду."
             },
             {
-              "text": "**Please let us know if we should compare the two options.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если нам следует сравнить два варианта."
+              "text": "**Please let me know if the rehearsal starts earlier than planned.**",
+              "translation_ru": "Сообщи мне, пожалуйста, если репетиция начнётся раньше, чем планировалось."
             },
             {
-              "text": "**Please let us know if the client asked for more detail.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если клиент попросил больше деталей."
+              "text": "**Please let the teacher know if your child needs a quieter place to work.**",
+              "translation_ru": "Пожалуйста, сообщите учительнице, если вашему ребёнку нужно более тихое место для занятий."
             },
             {
-              "text": "**Please let us know if the pilot may continue next month.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**Please let the group know if the walking route becomes inaccessible.**",
+              "translation_ru": "Пожалуйста, предупредите группу, если пешеходный маршрут станет непроходимым."
             },
             {
-              "text": "**Please let us know if the data need another check.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если данные нужно проверить ещё раз."
+              "text": "**Please let us know if you find a counterexample to this rule.**",
+              "translation_ru": "Пожалуйста, сообщите нам, если найдёте пример, опровергающий это правило."
             },
             {
-              "text": "**Please let us know if the meeting was moved.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если встречу перенесли."
+              "text": "**Please let your sister know if you won't make it to dinner.**",
+              "translation_ru": "Пожалуйста, предупреди сестру, если не успеешь к ужину."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Bitte lassen Sie uns wissen, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Bitte lassen Sie uns wissen, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Пожалуйста, сообщите нам, если команде нужен ещё день для решения.",
+          "formula": "Bitte gib / geben Sie [Dativ-Empfänger] Bescheid, falls [Nebensatz].",
+          "example": "Gib mir bitte Bescheid, falls das Paket ankommt, während ich unterwegs bin.",
+          "translation": "Сообщи мне, пожалуйста, если посылка придёт, пока меня нет дома.",
           "examples": [
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если команде нужен ещё день для решения."
+              "text": "**Gib mir bitte Bescheid, falls das Paket ankommt, während ich unterwegs bin.**",
+              "translation_ru": "Сообщи мне, пожалуйста, если посылка придёт, пока меня нет дома."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если обновлённым планом ещё не поделились."
+              "text": "**Bitte geben Sie den Nachbarn Bescheid, falls morgen das Wasser abgestellt wird.**",
+              "translation_ru": "Пожалуйста, предупредите соседей, если завтра будут отключать воду."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если нам следует сравнить два варианта."
+              "text": "**Gib mir bitte Bescheid, falls die Probe früher beginnt als geplant.**",
+              "translation_ru": "Сообщи мне, пожалуйста, если репетиция начнётся раньше, чем планировалось."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если клиент попросил больше деталей."
+              "text": "**Bitte geben Sie der Lehrerin Bescheid, falls Ihr Kind einen ruhigeren Arbeitsplatz braucht.**",
+              "translation_ru": "Пожалуйста, сообщите учительнице, если вашему ребёнку нужно более тихое место для занятий."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**Bitte geben Sie der Gruppe Bescheid, falls der Wanderweg nicht mehr passierbar ist.**",
+              "translation_ru": "Пожалуйста, предупредите группу, если пешеходный маршрут станет непроходимым."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если данные нужно проверить ещё раз."
+              "text": "**Bitte geben Sie uns Bescheid, falls Sie ein Gegenbeispiel zu dieser Regel finden.**",
+              "translation_ru": "Пожалуйста, сообщите нам, если найдёте пример, опровергающий это правило."
             },
             {
-              "text": "**Bitte lassen Sie uns wissen, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Пожалуйста, сообщите нам, если встречу перенесли."
+              "text": "**Sag deiner Schwester bitte Bescheid, falls du es nicht zum Abendessen schaffst.**",
+              "translation_ru": "Пожалуйста, предупреди сестру, если не успеешь к ужину."
             }
           ]
         }
       ],
       "formulas": [
-        "Please let us know if [the team needs another day to decide].",
-        "Bitte lassen Sie uns wissen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "Please let [recipient] know if [condition or new information].",
+        "Bitte gib / geben Sie [Dativ-Empfänger] Bescheid, falls [Nebensatz]."
       ],
       "gen": {
         "status": "curated",
