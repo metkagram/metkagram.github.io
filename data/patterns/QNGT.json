@@ -291,85 +291,85 @@
       "id": "QSTQNGT031",
       "group_id": "QNGT",
       "set_id": "QNGT",
-      "title_ru": "Какой компромисс мог бы сработать, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какой компромисс мог бы сработать, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Найти компромисс при реальном ограничении",
+      "metaphor_ru": "What compromise could work if ...? / Welcher Kompromiss wäre möglich, wenn ...? задаёт переговорный вопрос, не навязывая готовое решение. После if/wenn формулируйте конкретное ограничение или несовпадение интересов. Это не обещание уступки, а приглашение искать взаимоприемлемый вариант.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Which compromise could work if [the team needs another day to decide]?",
-          "example": "Which compromise could work if the team needs another day to decide?",
-          "translation": "Какой компромисс мог бы сработать, если команде нужен ещё день для решения?",
+          "formula": "What compromise could work if [concrete constraint or competing need]?",
+          "example": "What compromise could work if both neighbours need the courtyard on Saturday?",
+          "translation": "Какой компромисс возможен, если обоим соседям нужен двор в субботу?",
           "examples": [
             {
-              "text": "**Which compromise could work if the team needs another day to decide?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если команде нужен ещё день для решения?"
+              "text": "**What compromise could work if both neighbours need the courtyard on Saturday?**",
+              "translation_ru": "Какой компромисс возможен, если обоим соседям нужен двор в субботу?"
             },
             {
-              "text": "**Which compromise could work if the revised plan has not been shared yet?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если обновлённым планом ещё не поделились?"
+              "text": "**What compromise could work if my parents want a visit but we can only stay one night?**",
+              "translation_ru": "Как найти компромисс, если родители хотят нас видеть, а мы можем остаться только на одну ночь?"
             },
             {
-              "text": "**Which compromise could work if we should compare the two options?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если нам следует сравнить два варианта?"
+              "text": "**What compromise could work if the volunteers cannot cover the morning shift?**",
+              "translation_ru": "Какой компромисс возможен, если волонтёры не могут выйти в утреннюю смену?"
             },
             {
-              "text": "**Which compromise could work if the client asked for more detail?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если клиент попросил больше деталей?"
+              "text": "**What compromise could work if we disagree about how much screen time is reasonable?**",
+              "translation_ru": "Какой компромисс найти, если мы расходимся во мнениях о допустимом времени перед экраном?"
             },
             {
-              "text": "**Which compromise could work if the pilot may continue next month?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What compromise could work if the landlord refuses to renovate the entire kitchen?**",
+              "translation_ru": "Какой компромисс возможен, если арендодатель отказывается полностью ремонтировать кухню?"
             },
             {
-              "text": "**Which compromise could work if the data need another check?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если данные нужно проверить ещё раз?"
+              "text": "**What compromise could work if the students need more practice but the course cannot be extended?**",
+              "translation_ru": "Какой компромисс возможен, если студентам нужно больше практики, а продлить курс нельзя?"
             },
             {
-              "text": "**Which compromise could work if the meeting was moved?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если встречу перенесли?"
+              "text": "**What compromise could work if one partner wants to move abroad and the other wants to stay?**",
+              "translation_ru": "Какой компромисс возможен, если один партнёр хочет переехать за границу, а другой предпочёл бы остаться?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welcher Kompromiss könnte funktionieren, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welcher Kompromiss könnte funktionieren, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какой компромисс мог бы сработать, если команде нужен ещё день для решения?",
+          "formula": "Welcher Kompromiss wäre möglich, wenn [konkrete Einschränkung oder unterschiedliche Interessen]?",
+          "example": "Welcher Kompromiss wäre möglich, wenn beide Nachbarn den Innenhof am Samstag nutzen möchten?",
+          "translation": "Какой компромисс возможен, если обоим соседям нужен двор в субботу?",
           "examples": [
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если команде нужен ещё день для решения?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn beide Nachbarn den Innenhof am Samstag nutzen möchten?**",
+              "translation_ru": "Какой компромисс возможен, если обоим соседям нужен двор в субботу?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если обновлённым планом ещё не поделились?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn meine Eltern sich Besuch wünschen, wir aber nur eine Nacht bleiben können?**",
+              "translation_ru": "Как найти компромисс, если родители хотят нас видеть, а мы можем остаться только на одну ночь?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если нам следует сравнить два варианта?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn die Ehrenamtlichen die Frühschicht nicht übernehmen können?**",
+              "translation_ru": "Какой компромисс возможен, если волонтёры не могут выйти в утреннюю смену?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если клиент попросил больше деталей?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn wir uns nicht einig sind, wie viel Bildschirmzeit angemessen ist?**",
+              "translation_ru": "Какой компромисс найти, если мы расходимся во мнениях о допустимом времени перед экраном?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn der Vermieter die Küche nicht vollständig renovieren will?**",
+              "translation_ru": "Какой компромисс возможен, если арендодатель отказывается полностью ремонтировать кухню?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если данные нужно проверить ещё раз?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn die Lernenden mehr Übung brauchen, der Kurs aber nicht verlängert werden kann?**",
+              "translation_ru": "Какой компромисс возможен, если студентам нужно больше практики, а продлить курс нельзя?"
             },
             {
-              "text": "**Welcher Kompromiss könnte funktionieren, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Какой компромисс мог бы сработать, если встречу перенесли?"
+              "text": "**Welcher Kompromiss wäre möglich, wenn ein Partner ins Ausland ziehen möchte und der andere lieber bleiben würde?**",
+              "translation_ru": "Какой компромисс возможен, если один партнёр хочет переехать за границу, а другой предпочёл бы остаться?"
             }
           ]
         }
       ],
       "formulas": [
-        "Which compromise could work if [the team needs another day to decide]?",
-        "Welcher Kompromiss könnte funktionieren, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What compromise could work if [concrete constraint or competing need]?",
+        "Welcher Kompromiss wäre möglich, wenn [konkrete Einschränkung oder unterschiedliche Interessen]?"
       ],
       "gen": {
         "status": "curated",
