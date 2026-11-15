@@ -101,85 +101,85 @@
       "id": "GRMPRP006",
       "group_id": "PRP",
       "set_id": "PRP",
-      "title_ru": "Результат зависит от того, насколько тщательно мы подготовимся",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «результат зависит от того, насколько тщательно мы подготовимся» в живом контексте.",
+      "title_ru": "Показать, от какого условия зависит результат",
+      "metaphor_ru": "Глагол depend требует on перед существительным или косвенным вопросом: depends on how/whether/who… В немецком с придаточным используйте коррелят davon: hängt davon ab, wie/ob/wer…; отделяемая часть ab уходит в конец главного предложения.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The outcome depends on how carefully we prepare [the team was reviewing the new policy]",
-          "example": "The outcome depends on how carefully we prepare in a situation where the team was reviewing the new policy.",
-          "translation": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где команда проверяла новую политику.",
+          "formula": "[Outcome] depend(s)/depended on how/whether/who/what [finite clause].",
+          "example": "The success of the workshop depends on how clearly we explain the first exercise.",
+          "translation": "Успех занятия зависит от того, насколько понятно мы объясним первое упражнение.",
           "examples": [
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где команда проверяла новую политику."
+              "text": "**The success of the workshop depends on how clearly we explain the first exercise.**",
+              "translation_ru": "Успех занятия зависит от того, насколько понятно мы объясним первое упражнение."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Whether the seedlings survive depends on how often we water them during the heatwave.**",
+              "translation_ru": "Выживет ли рассада, зависит от того, как часто мы будем поливать её в жару."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**My decision will depend on whether the evening train still runs after ten.**",
+              "translation_ru": "Моё решение будет зависеть от того, ходит ли вечерний поезд после десяти."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**How smoothly the move goes depends on who can help us carry the furniture.**",
+              "translation_ru": "То, насколько гладко пройдёт переезд, зависит от того, кто сможет помочь перенести мебель."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где расписание изменили в последний момент."
+              "text": "**The accuracy of the summary depends on what the witnesses actually said.**",
+              "translation_ru": "Точность пересказа зависит от того, что свидетели сказали на самом деле."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Your progress may depend on how regularly you practise speaking aloud.**",
+              "translation_ru": "Твой прогресс может зависеть от того, насколько регулярно ты тренируешь устную речь."
             },
             {
-              "text": "**The outcome depends on how carefully we prepare in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где участники ждали объяснения."
+              "text": "**It all depended on whether the neighbours agreed to share the garden.**",
+              "translation_ru": "Всё зависело от того, согласятся ли соседи пользоваться садом вместе."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten [das Team die neue Regelung prüfte]",
-          "example": "Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где команда проверяла новую политику.",
+          "formula": "[Ergebnis] hängt/hing davon ab, wie/ob/wer/was [Nebensatz mit Verb am Ende].",
+          "example": "Ob der Workshop gelingt, hängt davon ab, wie verständlich wir die erste Übung erklären.",
+          "translation": "Успех занятия зависит от того, насколько понятно мы объясним первое упражнение.",
           "examples": [
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где команда проверяла новую политику."
+              "text": "**Ob der Workshop gelingt, hängt davon ab, wie verständlich wir die erste Übung erklären.**",
+              "translation_ru": "Успех занятия зависит от того, насколько понятно мы объясним первое упражнение."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Ob die Setzlinge die Hitze überstehen, hängt davon ab, wie regelmäßig wir sie gießen.**",
+              "translation_ru": "Выживет ли рассада, зависит от того, как часто мы будем поливать её в жару."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Meine Entscheidung wird davon abhängen, ob der Abendzug nach zehn noch fährt.**",
+              "translation_ru": "Моё решение будет зависеть от того, ходит ли вечерний поезд после десяти."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Wie reibungslos der Umzug läuft, hängt davon ab, wer uns beim Tragen der Möbel helfen kann.**",
+              "translation_ru": "То, насколько гладко пройдёт переезд, зависит от того, кто сможет помочь перенести мебель."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где расписание изменили в последний момент."
+              "text": "**Wie genau die Zusammenfassung ist, hängt davon ab, was die Zeugen tatsächlich gesagt haben.**",
+              "translation_ru": "Точность пересказа зависит от того, что свидетели сказали на самом деле."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Deine Fortschritte können davon abhängen, wie regelmäßig du das freie Sprechen übst.**",
+              "translation_ru": "Твой прогресс может зависеть от того, насколько регулярно ты тренируешь устную речь."
             },
             {
-              "text": "**Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Результат зависит от того, насколько тщательно мы подготовимся в ситуации, где участники ждали объяснения."
+              "text": "**Letztlich hing alles davon ab, ob die Nachbarn den Garten gemeinsam nutzen wollten.**",
+              "translation_ru": "Всё зависело от того, согласятся ли соседи пользоваться садом вместе."
             }
           ]
         }
       ],
       "formulas": [
-        "The outcome depends on how carefully we prepare [the team was reviewing the new policy]",
-        "Das Ergebnis hängt davon ab, wie sorgfältig wir uns vorbereiten [das Team die neue Regelung prüfte]"
+        "[Outcome] depend(s)/depended on how/whether/who/what [finite clause].",
+        "[Ergebnis] hängt/hing davon ab, wie/ob/wer/was [Nebensatz mit Verb am Ende]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMPRP016",
       "group_id": "PRP",
       "set_id": "PRP",
-      "title_ru": "Они возразили против изменения условий в последний момент",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «они возразили против изменения условий в последний момент» в живом контексте.",
+      "title_ru": "Возразить против действия или изменения",
+      "metaphor_ru": "После object to используется существительное или -ing, потому что to здесь предлог, а не показатель инфинитива. По-немецки естественны sich dagegen aussprechen, … zu + Infinitiv и etwas dagegen haben, … zu + Infinitiv; это не механическая калька.",
       "langs": [
         {
           "lang": "en",
-          "formula": "They objected to changing the terms at short notice [the team was reviewing the new policy]",
-          "example": "They objected to changing the terms at short notice in a situation where the team was reviewing the new policy.",
-          "translation": "Они возразили против изменения условий в последний момент в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] object(s)/objected to [V-ing]; [Person] has no objection to [V-ing].",
+          "example": "Several residents objected to closing the library on Saturdays.",
+          "translation": "Несколько жителей выступили против закрытия библиотеки по субботам.",
           "examples": [
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где команда проверяла новую политику."
+              "text": "**Several residents objected to closing the library on Saturdays.**",
+              "translation_ru": "Несколько жителей выступили против закрытия библиотеки по субботам."
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**I don't object to sharing the photos, but please ask everyone pictured first.**",
+              "translation_ru": "Я не против публикации фотографий, но сначала спроси всех, кто на них изображён."
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Why did the teacher object to using AI for the first draft?**",
+              "translation_ru": "Почему преподавательница возражала против использования ИИ для первого черновика?"
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**My brother objects to being filmed during family dinners.**",
+              "translation_ru": "Мой брат против того, чтобы его снимали за семейным ужином."
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где расписание изменили в последний момент."
+              "text": "**The cycling group objected to removing the only safe crossing.**",
+              "translation_ru": "Велосипедисты возразили против ликвидации единственного безопасного перехода."
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**We wouldn't object to moving the rehearsal if everyone could make it on Friday.**",
+              "translation_ru": "Мы были бы не против перенести репетицию, если все смогут прийти в пятницу."
             },
             {
-              "text": "**They objected to changing the terms at short notice in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где участники ждали объяснения."
+              "text": "**They objected to being charged for a repair that should have been covered by the warranty.**",
+              "translation_ru": "Они возразили против платы за ремонт, который должна была покрывать гарантия."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern [das Team die neue Regelung prüfte]",
-          "example": "Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Они возразили против изменения условий в последний момент в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] spricht sich dagegen aus, [etwas] zu [Infinitiv]; [Person] hat (nichts) dagegen, [etwas] zu [Infinitiv].",
+          "example": "Mehrere Anwohner sprachen sich dagegen aus, die Bibliothek samstags zu schließen.",
+          "translation": "Несколько жителей выступили против закрытия библиотеки по субботам.",
           "examples": [
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где команда проверяла новую политику."
+              "text": "**Mehrere Anwohner sprachen sich dagegen aus, die Bibliothek samstags zu schließen.**",
+              "translation_ru": "Несколько жителей выступили против закрытия библиотеки по субботам."
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Ich habe nichts dagegen, die Fotos zu teilen, aber frag bitte zuerst alle, die darauf zu sehen sind.**",
+              "translation_ru": "Я не против публикации фотографий, но сначала спроси всех, кто на них изображён."
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Warum war die Lehrerin dagegen, KI schon für den ersten Entwurf einzusetzen?**",
+              "translation_ru": "Почему преподавательница возражала против использования ИИ для первого черновика?"
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Mein Bruder hat etwas dagegen, beim Familienessen gefilmt zu werden.**",
+              "translation_ru": "Мой брат против того, чтобы его снимали за семейным ужином."
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где расписание изменили в последний момент."
+              "text": "**Die Radfahrgruppe wandte sich dagegen, den einzigen sicheren Übergang abzuschaffen.**",
+              "translation_ru": "Велосипедисты возразили против ликвидации единственного безопасного перехода."
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Wir hätten nichts dagegen, die Probe zu verschieben, wenn am Freitag alle Zeit hätten.**",
+              "translation_ru": "Мы были бы не против перенести репетицию, если все смогут прийти в пятницу."
             },
             {
-              "text": "**Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Они возразили против изменения условий в последний момент в ситуации, где участники ждали объяснения."
+              "text": "**Sie wandten sich dagegen, für eine Reparatur zahlen zu müssen, die von der Garantie gedeckt sein sollte.**",
+              "translation_ru": "Они возразили против платы за ремонт, который должна была покрывать гарантия."
             }
           ]
         }
       ],
       "formulas": [
-        "They objected to changing the terms at short notice [the team was reviewing the new policy]",
-        "Sie wandten sich dagegen, die Bedingungen kurzfristig zu ändern [das Team die neue Regelung prüfte]"
+        "[Person] object(s)/objected to [V-ing]; [Person] has no objection to [V-ing].",
+        "[Person] spricht sich dagegen aus, [etwas] zu [Infinitiv]; [Person] hat (nichts) dagegen, [etwas] zu [Infinitiv]."
       ],
       "gen": {
         "status": "curated",
@@ -386,85 +386,85 @@
       "id": "GRMPRP021",
       "group_id": "PRP",
       "set_id": "PRP",
-      "title_ru": "Предложение отличается от предыдущей версии в одном аспекте",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «предложение отличается от предыдущей версии в одном аспекте» в живом контексте.",
+      "title_ru": "Точно назвать различие между двумя вариантами",
+      "metaphor_ru": "Английское differ from [comparison point] in [aspect] и немецкое sich von [Dativ] in [Dativ] unterscheiden помогают не просто сказать «разные», а назвать конкретное отличие. Возможны Worin unterscheidet sich…? и differ in [aspect].",
       "langs": [
         {
           "lang": "en",
-          "formula": "The proposal differs from the earlier version in one respect [the team was reviewing the new policy]",
-          "example": "The proposal differs from the earlier version in one respect in a situation where the team was reviewing the new policy.",
-          "translation": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где команда проверяла новую политику.",
+          "formula": "[X] differ(s)/differed from [Y] in [specific respect].",
+          "example": "The new recipe differs from the old one mainly in its seasoning.",
+          "translation": "Новый рецепт отличается от старого прежде всего набором специй.",
           "examples": [
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где команда проверяла новую политику."
+              "text": "**The new recipe differs from the old one mainly in its seasoning.**",
+              "translation_ru": "Новый рецепт отличается от старого прежде всего набором специй."
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**These two apartments differ in how much natural light they get.**",
+              "translation_ru": "Эти две квартиры различаются количеством естественного света."
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Her description differs from mine in one crucial detail: she saw the cyclist turn left.**",
+              "translation_ru": "Её рассказ отличается от моего одной важной деталью: она видела, как велосипедист повернул налево."
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**How does this course differ from the beginner's course in terms of speaking practice?**",
+              "translation_ru": "Чем этот курс отличается от начального в плане разговорной практики?"
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где расписание изменили в последний момент."
+              "text": "**The final design differs from the sketch in the position of the windows.**",
+              "translation_ru": "Итоговый проект отличается от эскиза расположением окон."
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Our memories of that evening differ in several surprising respects.**",
+              "translation_ru": "Наши воспоминания о том вечере неожиданно расходятся в нескольких деталях."
             },
             {
-              "text": "**The proposal differs from the earlier version in one respect in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где участники ждали объяснения."
+              "text": "**The timetable in the app differs from the station display in the departure times for regional trains.**",
+              "translation_ru": "Расписание в приложении отличается от табло на станции временем отправления региональных поездов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung [das Team die neue Regelung prüfte]",
-          "example": "Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где команда проверяла новую политику.",
+          "formula": "[X] unterscheidet sich von [Y im Dativ] in [Aspekt im Dativ]; Worin unterscheidet sich [X] von [Y]?",
+          "example": "Das neue Rezept unterscheidet sich vom alten vor allem in der Würzung.",
+          "translation": "Новый рецепт отличается от старого прежде всего набором специй.",
           "examples": [
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где команда проверяла новую политику."
+              "text": "**Das neue Rezept unterscheidet sich vom alten vor allem in der Würzung.**",
+              "translation_ru": "Новый рецепт отличается от старого прежде всего набором специй."
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где партнёрам требовалось ясное решение."
+              "text": "**Die beiden Wohnungen unterscheiden sich darin, wie viel Tageslicht sie bekommen.**",
+              "translation_ru": "Эти две квартиры различаются количеством естественного света."
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "**Ihre Schilderung unterscheidet sich von meiner in einem entscheidenden Detail: Sie sah, wie der Radfahrer links abbog.**",
+              "translation_ru": "Её рассказ отличается от моего одной важной деталью: она видела, как велосипедист повернул налево."
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где доступные данные всё ещё были неполными."
+              "text": "**Worin unterscheidet sich dieser Kurs vom Anfängerkurs, was die Sprechpraxis angeht?**",
+              "translation_ru": "Чем этот курс отличается от начального в плане разговорной практики?"
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где расписание изменили в последний момент."
+              "text": "**Der endgültige Entwurf unterscheidet sich von der Skizze in der Anordnung der Fenster.**",
+              "translation_ru": "Итоговый проект отличается от эскиза расположением окон."
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "**Unsere Erinnerungen an den Abend unterscheiden sich in einigen überraschenden Punkten.**",
+              "translation_ru": "Наши воспоминания о том вечере неожиданно расходятся в нескольких деталях."
             },
             {
-              "text": "**Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Предложение отличается от предыдущей версии в одном аспекте в ситуации, где участники ждали объяснения."
+              "text": "**Der Fahrplan in der App unterscheidet sich bei den Abfahrtszeiten der Regionalzüge von der Anzeige am Bahnhof.**",
+              "translation_ru": "Расписание в приложении отличается от табло на станции временем отправления региональных поездов."
             }
           ]
         }
       ],
       "formulas": [
-        "The proposal differs from the earlier version in one respect [the team was reviewing the new policy]",
-        "Der Vorschlag unterscheidet sich in einem Punkt von der früheren Fassung [das Team die neue Regelung prüfte]"
+        "[X] differ(s)/differed from [Y] in [specific respect].",
+        "[X] unterscheidet sich von [Y im Dativ] in [Aspekt im Dativ]; Worin unterscheidet sich [X] von [Y]?"
       ],
       "gen": {
         "status": "curated",

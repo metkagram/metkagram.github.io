@@ -101,85 +101,85 @@
       "id": "QSTQWH011",
       "group_id": "QWH",
       "set_id": "QWH",
-      "title_ru": "Как мы можем понять, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как мы можем понять, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, по каким признакам проверить предположение",
+      "metaphor_ru": "How can we tell whether…? спрашивает о способе отличить одну возможность от другой. В немецком естественны Woran erkennen wir, ob…? или Wie lässt sich feststellen, ob…?; после ob глагол уходит в конец. Варьируйте проверяемое утверждение и критерий.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How can we tell whether [the team needs another day to decide]?",
-          "example": "How can we tell whether the team needs another day to decide?",
-          "translation": "Как мы можем понять, команде нужен ещё день для решения?",
+          "formula": "How can [person] tell whether [clause]? / How could [person] find out whether [clause]?",
+          "example": "How can we tell whether the new filter is actually removing the smell?",
+          "translation": "Как проверить, действительно ли новый фильтр устраняет запах?",
           "examples": [
             {
-              "text": "**How can we tell whether the team needs another day to decide?**",
-              "translation_ru": "Как мы можем понять, команде нужен ещё день для решения?"
+              "text": "**How can we tell whether the new filter is actually removing the smell?**",
+              "translation_ru": "Как проверить, действительно ли новый фильтр устраняет запах?"
             },
             {
-              "text": "**How can we tell whether the revised plan has not been shared yet?**",
-              "translation_ru": "Как мы можем понять, обновлённым планом ещё не поделились?"
+              "text": "**How can you tell whether a news photo has been edited?**",
+              "translation_ru": "Как понять, редактировали ли фотографию из новостей?"
             },
             {
-              "text": "**How can we tell whether we should compare the two options?**",
-              "translation_ru": "Как мы можем понять, нам следует сравнить два варианта?"
+              "text": "**How could we find out whether the language exercises improve spontaneous speech?**",
+              "translation_ru": "Как выяснить, помогают ли языковые упражнения говорить спонтанно?"
             },
             {
-              "text": "**How can we tell whether the client asked for more detail?**",
-              "translation_ru": "Как мы можем понять, клиент попросил больше деталей?"
+              "text": "**How can parents tell whether a child needs a break rather than more practice?**",
+              "translation_ru": "Как родителям понять, что ребёнку нужен отдых, а не дополнительные занятия?"
             },
             {
-              "text": "**How can we tell whether the pilot may continue next month?**",
-              "translation_ru": "Как мы можем понять, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**How do we know whether the battery is failing or the cable is loose?**",
+              "translation_ru": "Как определить, выходит ли из строя аккумулятор или просто отходит кабель?"
             },
             {
-              "text": "**How can we tell whether the data need another check?**",
-              "translation_ru": "Как мы можем понять, данные нужно проверить ещё раз?"
+              "text": "**How could she check whether the room is accessible without travelling there first?**",
+              "translation_ru": "Как ей проверить доступность помещения, не приезжая туда заранее?"
             },
             {
-              "text": "**How can we tell whether the meeting was moved?**",
-              "translation_ru": "Как мы можем понять, встречу перенесли?"
+              "text": "**How can we tell whether the quieter route is also safer after dark?**",
+              "translation_ru": "Как выяснить, безопаснее ли тихая дорога после наступления темноты?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie können wir feststellen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie können wir feststellen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как мы можем понять, команде нужен ещё день для решения?",
+          "formula": "Woran erkennt [Person], ob [Nebensatz]? / Wie lässt sich feststellen, ob [Nebensatz]?",
+          "example": "Woran erkennen wir, ob der neue Filter den Geruch tatsächlich beseitigt?",
+          "translation": "Как проверить, действительно ли новый фильтр устраняет запах?",
           "examples": [
             {
-              "text": "**Wie können wir feststellen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как мы можем понять, команде нужен ещё день для решения?"
+              "text": "**Woran erkennen wir, ob der neue Filter den Geruch tatsächlich beseitigt?**",
+              "translation_ru": "Как проверить, действительно ли новый фильтр устраняет запах?"
             },
             {
-              "text": "**Wie können wir feststellen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как мы можем понять, обновлённым планом ещё не поделились?"
+              "text": "**Woran kann man erkennen, ob ein Nachrichtenfoto bearbeitet wurde?**",
+              "translation_ru": "Как понять, редактировали ли фотографию из новостей?"
             },
             {
-              "text": "**Wie können wir feststellen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как мы можем понять, нам следует сравнить два варианта?"
+              "text": "**Wie könnten wir herausfinden, ob die Sprachübungen das spontane Sprechen verbessern?**",
+              "translation_ru": "Как выяснить, помогают ли языковые упражнения говорить спонтанно?"
             },
             {
-              "text": "**Wie können wir feststellen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как мы можем понять, клиент попросил больше деталей?"
+              "text": "**Woran können Eltern erkennen, ob ein Kind eine Pause braucht, statt noch mehr zu üben?**",
+              "translation_ru": "Как родителям понять, что ребёнку нужен отдых, а не дополнительные занятия?"
             },
             {
-              "text": "**Wie können wir feststellen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как мы можем понять, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wie finden wir heraus, ob der Akku schwächelt oder nur das Kabel locker sitzt?**",
+              "translation_ru": "Как определить, выходит ли из строя аккумулятор или просто отходит кабель?"
             },
             {
-              "text": "**Wie können wir feststellen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как мы можем понять, данные нужно проверить ещё раз?"
+              "text": "**Wie könnte sie überprüfen, ob der Raum barrierefrei ist, ohne vorher hinzufahren?**",
+              "translation_ru": "Как ей проверить доступность помещения, не приезжая туда заранее?"
             },
             {
-              "text": "**Wie können wir feststellen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Как мы можем понять, встречу перенесли?"
+              "text": "**Woran erkennen wir, ob der ruhigere Weg nach Einbruch der Dunkelheit auch sicherer ist?**",
+              "translation_ru": "Как выяснить, безопаснее ли тихая дорога после наступления темноты?"
             }
           ]
         }
       ],
       "formulas": [
-        "How can we tell whether [the team needs another day to decide]?",
-        "Wie können wir feststellen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How can [person] tell whether [clause]? / How could [person] find out whether [clause]?",
+        "Woran erkennt [Person], ob [Nebensatz]? / Wie lässt sich feststellen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

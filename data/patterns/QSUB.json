@@ -101,85 +101,85 @@
       "id": "QSTQSUB011",
       "group_id": "QSUB",
       "set_id": "QSUB",
-      "title_ru": "Кто знает, почему команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Кто знает, почему команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить, кто знает или объяснит причину",
+      "metaphor_ru": "В вопросе Who knows/can explain why… слово who — подлежащее главного вопроса, поэтому do-support перед knows не нужен. После why идёт порядок слов утверждения. Немецкое wer тоже является подлежащим, а глагол придаточного после warum стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Who knows why [the team needs another day to decide]?",
-          "example": "Who knows why the team needs another day to decide?",
-          "translation": "Кто знает, почему команде нужен ещё день для решения?",
+          "formula": "Who [knows / can explain / remembers / could tell me] why [subject + verb]?",
+          "example": "Who knows why the public pool closes an hour earlier in winter?",
+          "translation": "Кто знает, почему зимой бассейн закрывается на час раньше?",
           "examples": [
             {
-              "text": "**Who knows why the team needs another day to decide?**",
-              "translation_ru": "Кто знает, почему команде нужен ещё день для решения?"
+              "text": "**Who knows why the public pool closes an hour earlier in winter?**",
+              "translation_ru": "Кто знает, почему зимой бассейн закрывается на час раньше?"
             },
             {
-              "text": "**Who knows why the revised plan has not been shared yet?**",
-              "translation_ru": "Кто знает, почему обновлённым планом ещё не поделились?"
+              "text": "**Who can explain why the same sentence sounds polite in English but blunt in German?**",
+              "translation_ru": "Кто может объяснить, почему одна и та же фраза звучит вежливо по-английски, но резко по-немецки?"
             },
             {
-              "text": "**Who knows why we should compare the two options?**",
-              "translation_ru": "Кто знает, почему нам следует сравнить два варианта?"
+              "text": "**Who remembers why we decided against the cheaper apartment?**",
+              "translation_ru": "Кто помнит, почему мы отказались от более дешёвой квартиры?"
             },
             {
-              "text": "**Who knows why the client asked for more detail?**",
-              "translation_ru": "Кто знает, почему клиент попросил больше деталей?"
+              "text": "**Who could tell me why my account keeps signing out after the update?**",
+              "translation_ru": "Кто подскажет, почему после обновления меня постоянно выбрасывает из аккаунта?"
             },
             {
-              "text": "**Who knows why the pilot may continue next month?**",
-              "translation_ru": "Кто знает, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Who knows why the neighbours' cat has started waiting outside our door?**",
+              "translation_ru": "Кто знает, почему соседская кошка вдруг стала ждать у нашей двери?"
             },
             {
-              "text": "**Who knows why the data need another check?**",
-              "translation_ru": "Кто знает, почему данные нужно проверить ещё раз?"
+              "text": "**Who can clarify why the survey excluded people without smartphones?**",
+              "translation_ru": "Кто может пояснить, почему в опросе не участвовали люди без смартфонов?"
             },
             {
-              "text": "**Who knows why the meeting was moved?**",
-              "translation_ru": "Кто знает, почему встречу перенесли?"
+              "text": "**Who could explain why the train stopped between stations without an announcement?**",
+              "translation_ru": "Кто может объяснить, почему поезд остановился между станциями без объявления?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wer weiß, warum [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wer weiß, warum das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Кто знает, почему команде нужен ещё день для решения?",
+          "formula": "Wer [weiß / kann erklären / erinnert sich daran / könnte sagen], warum [Nebensatz mit Verb am Ende]?",
+          "example": "Wer weiß, warum das Hallenbad im Winter eine Stunde früher schließt?",
+          "translation": "Кто знает, почему зимой бассейн закрывается на час раньше?",
           "examples": [
             {
-              "text": "**Wer weiß, warum das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Кто знает, почему команде нужен ещё день для решения?"
+              "text": "**Wer weiß, warum das Hallenbad im Winter eine Stunde früher schließt?**",
+              "translation_ru": "Кто знает, почему зимой бассейн закрывается на час раньше?"
             },
             {
-              "text": "**Wer weiß, warum der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Кто знает, почему обновлённым планом ещё не поделились?"
+              "text": "**Wer kann erklären, warum derselbe Satz auf Englisch höflich, auf Deutsch aber schroff klingt?**",
+              "translation_ru": "Кто может объяснить, почему одна и та же фраза звучит вежливо по-английски, но резко по-немецки?"
             },
             {
-              "text": "**Wer weiß, warum wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Кто знает, почему нам следует сравнить два варианта?"
+              "text": "**Wer erinnert sich daran, warum wir uns gegen die günstigere Wohnung entschieden haben?**",
+              "translation_ru": "Кто помнит, почему мы отказались от более дешёвой квартиры?"
             },
             {
-              "text": "**Wer weiß, warum der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Кто знает, почему клиент попросил больше деталей?"
+              "text": "**Wer könnte mir sagen, warum ich mich seit dem Update ständig neu anmelden muss?**",
+              "translation_ru": "Кто подскажет, почему после обновления меня постоянно выбрасывает из аккаунта?"
             },
             {
-              "text": "**Wer weiß, warum das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Кто знает, почему пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wer weiß, warum die Katze der Nachbarn plötzlich vor unserer Tür wartet?**",
+              "translation_ru": "Кто знает, почему соседская кошка вдруг стала ждать у нашей двери?"
             },
             {
-              "text": "**Wer weiß, warum die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Кто знает, почему данные нужно проверить ещё раз?"
+              "text": "**Wer kann erläutern, warum Menschen ohne Smartphone bei der Umfrage nicht berücksichtigt wurden?**",
+              "translation_ru": "Кто может пояснить, почему в опросе не участвовали люди без смартфонов?"
             },
             {
-              "text": "**Wer weiß, warum die Sitzung verschoben wurde?**",
-              "translation_ru": "Кто знает, почему встречу перенесли?"
+              "text": "**Wer könnte erklären, warum der Zug ohne Durchsage zwischen zwei Bahnhöfen stehen geblieben ist?**",
+              "translation_ru": "Кто может объяснить, почему поезд остановился между станциями без объявления?"
             }
           ]
         }
       ],
       "formulas": [
-        "Who knows why [the team needs another day to decide]?",
-        "Wer weiß, warum [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Who [knows / can explain / remembers / could tell me] why [subject + verb]?",
+        "Wer [weiß / kann erklären / erinnert sich daran / könnte sagen], warum [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
         "status": "curated",

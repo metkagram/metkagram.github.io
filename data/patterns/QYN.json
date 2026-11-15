@@ -101,85 +101,85 @@
       "id": "QSTQYN011",
       "group_id": "QYN",
       "set_id": "QYN",
-      "title_ru": "Возможно ли, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Возможно ли, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Осторожно предположить возможную причину",
+      "metaphor_ru": "Is it possible that…? и более разговорное Could it be that…? позволяют выдвинуть гипотезу без обвинения. В немецком естественно Kann/Könnte es sein, dass…?; после dass финитный глагол стоит в конце. Не добавляйте второй модальный глагол без необходимости.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Is it possible that [the team needs another day to decide]?",
-          "example": "Is it possible that the team needs another day to decide?",
-          "translation": "Возможно ли, что команде нужен ещё день для решения?",
+          "formula": "Is it possible that [clause]? / Could it be that [clause]?",
+          "example": "Could it be that the notifications were switched off after the update?",
+          "translation": "Может быть, после обновления уведомления отключились?",
           "examples": [
             {
-              "text": "**Is it possible that the team needs another day to decide?**",
-              "translation_ru": "Возможно ли, что команде нужен ещё день для решения?"
+              "text": "**Could it be that the notifications were switched off after the update?**",
+              "translation_ru": "Может быть, после обновления уведомления отключились?"
             },
             {
-              "text": "**Is it possible that the revised plan has not been shared yet?**",
-              "translation_ru": "Возможно ли, что обновлённым планом ещё не поделились?"
+              "text": "**Is it possible that she misunderstood the invitation rather than ignored it?**",
+              "translation_ru": "Возможно, она неправильно поняла приглашение, а не проигнорировала его?"
             },
             {
-              "text": "**Is it possible that we should compare the two options?**",
-              "translation_ru": "Возможно ли, что нам следует сравнить два варианта?"
+              "text": "**Could it be that the plants are getting too much water, not too little?**",
+              "translation_ru": "А может, растения получают слишком много воды, а не слишком мало?"
             },
             {
-              "text": "**Is it possible that the client asked for more detail?**",
-              "translation_ru": "Возможно ли, что клиент попросил больше деталей?"
+              "text": "**Is it possible that the noise comes from the ventilation system?**",
+              "translation_ru": "Может быть, шум идёт от вентиляции?"
             },
             {
-              "text": "**Is it possible that the pilot may continue next month?**",
-              "translation_ru": "Возможно ли, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Could it be that we measured the distance from the wrong entrance?**",
+              "translation_ru": "Возможно, мы измерили расстояние от неправильного входа?"
             },
             {
-              "text": "**Is it possible that the data need another check?**",
-              "translation_ru": "Возможно ли, что данные нужно проверить ещё раз?"
+              "text": "**Is it possible that the survey reached mostly people who already support the plan?**",
+              "translation_ru": "Может быть, в опросе участвовали в основном те, кто и так поддерживает план?"
             },
             {
-              "text": "**Is it possible that the meeting was moved?**",
-              "translation_ru": "Возможно ли, что встречу перенесли?"
+              "text": "**Could it be that the child is tired rather than unwilling to cooperate?**",
+              "translation_ru": "Может быть, ребёнок просто устал, а не отказывается сотрудничать?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ist es möglich, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Ist es möglich, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Возможно ли, что команде нужен ещё день для решения?",
+          "formula": "Kann es sein, dass [Nebensatz]? / Könnte es sein, dass [Nebensatz]?",
+          "example": "Kann es sein, dass die Benachrichtigungen nach dem Update ausgeschaltet wurden?",
+          "translation": "Может быть, после обновления уведомления отключились?",
           "examples": [
             {
-              "text": "**Ist es möglich, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Возможно ли, что команде нужен ещё день для решения?"
+              "text": "**Kann es sein, dass die Benachrichtigungen nach dem Update ausgeschaltet wurden?**",
+              "translation_ru": "Может быть, после обновления уведомления отключились?"
             },
             {
-              "text": "**Ist es möglich, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Возможно ли, что обновлённым планом ещё не поделились?"
+              "text": "**Könnte es sein, dass sie die Einladung missverstanden hat, statt sie zu ignorieren?**",
+              "translation_ru": "Возможно, она неправильно поняла приглашение, а не проигнорировала его?"
             },
             {
-              "text": "**Ist es möglich, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Возможно ли, что нам следует сравнить два варианта?"
+              "text": "**Kann es sein, dass die Pflanzen zu viel Wasser bekommen und nicht zu wenig?**",
+              "translation_ru": "А может, растения получают слишком много воды, а не слишком мало?"
             },
             {
-              "text": "**Ist es möglich, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Возможно ли, что клиент попросил больше деталей?"
+              "text": "**Ist es möglich, dass das Geräusch von der Lüftungsanlage kommt?**",
+              "translation_ru": "Может быть, шум идёт от вентиляции?"
             },
             {
-              "text": "**Ist es möglich, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Возможно ли, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Könnte es sein, dass wir die Entfernung vom falschen Eingang aus gemessen haben?**",
+              "translation_ru": "Возможно, мы измерили расстояние от неправильного входа?"
             },
             {
-              "text": "**Ist es möglich, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Возможно ли, что данные нужно проверить ещё раз?"
+              "text": "**Kann es sein, dass die Umfrage vor allem Menschen erreicht hat, die den Plan ohnehin unterstützen?**",
+              "translation_ru": "Может быть, в опросе участвовали в основном те, кто и так поддерживает план?"
             },
             {
-              "text": "**Ist es möglich, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Возможно ли, что встречу перенесли?"
+              "text": "**Könnte es sein, dass das Kind einfach müde ist und nicht absichtlich die Mitarbeit verweigert?**",
+              "translation_ru": "Может быть, ребёнок просто устал, а не отказывается сотрудничать?"
             }
           ]
         }
       ],
       "formulas": [
-        "Is it possible that [the team needs another day to decide]?",
-        "Ist es möglich, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Is it possible that [clause]? / Could it be that [clause]?",
+        "Kann es sein, dass [Nebensatz]? / Könnte es sein, dass [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
