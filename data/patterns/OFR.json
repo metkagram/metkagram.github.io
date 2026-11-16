@@ -196,85 +196,85 @@
       "id": "FUNOFR021",
       "group_id": "OFR",
       "set_id": "OFR",
-      "title_ru": "Я с радостью объясню, почему команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «предложения помощи» в живом контексте.",
+      "title_ru": "Вежливо предложить конкретную помощь",
+      "metaphor_ru": "I'd be happy to + инфинитив позволяет предложить конкретное действие без навязчивости; можно добавить условие или ограничение. В немецком для живой речи естественнее Ich … gern / Ich kann … gern, чем механически переводить happy словом glücklich. Варьируйте обращение, лицо и регистр.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I would be happy to explain why [the team needs another day to decide].",
-          "example": "I would be happy to explain why the team needs another day to decide.",
-          "translation": "Я с радостью объясню, почему команде нужен ещё день для решения.",
+          "formula": "I'd / We'd be happy to [specific helpful action] (if [condition]).",
+          "example": "I'd be happy to walk you through the settings if the menu is confusing.",
+          "translation": "Если меню непонятное, я с радостью помогу тебе разобраться с настройками.",
           "examples": [
             {
-              "text": "**I would be happy to explain why the team needs another day to decide.**",
-              "translation_ru": "Я с радостью объясню, почему команде нужен ещё день для решения."
+              "text": "**I'd be happy to walk you through the settings if the menu is confusing.**",
+              "translation_ru": "Если меню непонятное, я с радостью помогу тебе разобраться с настройками."
             },
             {
-              "text": "**I would be happy to explain why the revised plan has not been shared yet.**",
-              "translation_ru": "Я с радостью объясню, почему обновлённым планом ещё не поделились."
+              "text": "**I'd be happy to water your plants while you're away.**",
+              "translation_ru": "С удовольствием полью твои растения, пока тебя не будет."
             },
             {
-              "text": "**I would be happy to explain why we should compare the two options.**",
-              "translation_ru": "Я с радостью объясню, почему нам следует сравнить два варианта."
+              "text": "**If it helps, I'd be happy to read your application and flag any unclear passages.**",
+              "translation_ru": "Если тебе пригодится, я с радостью прочитаю твоё заявление и отмечу непонятные места."
             },
             {
-              "text": "**I would be happy to explain why the client asked for more detail.**",
-              "translation_ru": "Я с радостью объясню, почему клиент попросил больше деталей."
+              "text": "**We'd be happy to show the visitors a quieter route through the city.**",
+              "translation_ru": "Мы с удовольствием покажем гостям более спокойный маршрут по городу."
             },
             {
-              "text": "**I would be happy to explain why the pilot may continue next month.**",
-              "translation_ru": "Я с радостью объясню, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**I'd be happy to take the earlier shift, but I can't stay past six.**",
+              "translation_ru": "Я с радостью возьму раннюю смену, но не смогу остаться после шести."
             },
             {
-              "text": "**I would be happy to explain why the data need another check.**",
-              "translation_ru": "Я с радостью объясню, почему данные нужно проверить ещё раз."
+              "text": "**I'd be happy to explain how we tested the app, but I can't promise it works on every phone.**",
+              "translation_ru": "С радостью расскажу, как мы тестировали приложение, но не могу обещать, что оно работает на любом телефоне."
             },
             {
-              "text": "**I would be happy to explain why the meeting was moved.**",
-              "translation_ru": "Я с радостью объясню, почему встречу перенесли."
+              "text": "**She said she'd be happy to translate the notice for the neighbours.**",
+              "translation_ru": "Она сказала, что с удовольствием переведёт объявление для соседей."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich würde gern erklären, warum [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Ich würde gern erklären, warum das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Я с радостью объясню, почему команде нужен ещё день для решения.",
+          "formula": "Ich / Wir [Verb] gern [konkrete Hilfe] (wenn [Bedingung]).",
+          "example": "Wenn das Menü unübersichtlich ist, gehe ich die Einstellungen gern mit dir durch.",
+          "translation": "Если меню непонятное, я с радостью помогу тебе разобраться с настройками.",
           "examples": [
             {
-              "text": "**Ich würde gern erklären, warum das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Я с радостью объясню, почему команде нужен ещё день для решения."
+              "text": "**Wenn das Menü unübersichtlich ist, gehe ich die Einstellungen gern mit dir durch.**",
+              "translation_ru": "Если меню непонятное, я с радостью помогу тебе разобраться с настройками."
             },
             {
-              "text": "**Ich würde gern erklären, warum der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Я с радостью объясню, почему обновлённым планом ещё не поделились."
+              "text": "**Ich gieße gern deine Pflanzen, während du weg bist.**",
+              "translation_ru": "С удовольствием полью твои растения, пока тебя не будет."
             },
             {
-              "text": "**Ich würde gern erklären, warum wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Я с радостью объясню, почему нам следует сравнить два варианта."
+              "text": "**Wenn es dir hilft, lese ich deinen Antrag gern durch und markiere unklare Stellen.**",
+              "translation_ru": "Если тебе пригодится, я с радостью прочитаю твоё заявление и отмечу непонятные места."
             },
             {
-              "text": "**Ich würde gern erklären, warum der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Я с радостью объясню, почему клиент попросил больше деталей."
+              "text": "**Wir zeigen den Gästen gern einen ruhigeren Weg durch die Stadt.**",
+              "translation_ru": "Мы с удовольствием покажем гостям более спокойный маршрут по городу."
             },
             {
-              "text": "**Ich würde gern erklären, warum das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Я с радостью объясню, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**Ich übernehme gern die frühere Schicht, kann aber nicht länger als bis sechs bleiben.**",
+              "translation_ru": "Я с радостью возьму раннюю смену, но не смогу остаться после шести."
             },
             {
-              "text": "**Ich würde gern erklären, warum die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Я с радостью объясню, почему данные нужно проверить ещё раз."
+              "text": "**Ich erkläre gern, wie wir die App getestet haben, kann aber nicht versprechen, dass sie auf jedem Handy läuft.**",
+              "translation_ru": "С радостью расскажу, как мы тестировали приложение, но не могу обещать, что оно работает на любом телефоне."
             },
             {
-              "text": "**Ich würde gern erklären, warum die Sitzung verschoben wurde.**",
-              "translation_ru": "Я с радостью объясню, почему встречу перенесли."
+              "text": "**Sie sagte, sie würde den Aushang für die Nachbarn gern übersetzen.**",
+              "translation_ru": "Она сказала, что с удовольствием переведёт объявление для соседей."
             }
           ]
         }
       ],
       "formulas": [
-        "I would be happy to explain why [the team needs another day to decide].",
-        "Ich würde gern erklären, warum [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "I'd / We'd be happy to [specific helpful action] (if [condition]).",
+        "Ich / Wir [Verb] gern [konkrete Hilfe] (wenn [Bedingung])."
       ],
       "gen": {
         "status": "curated",
