@@ -196,85 +196,77 @@
       "id": "GRMKON011",
       "group_id": "KON",
       "set_id": "KON",
-      "title_ru": "Она сказала, что позже проверит материал",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «она сказала, что позже проверит материал» в живом контексте.",
+      "title_ru": "Передать обещание или прогноз из прошлого",
+      "metaphor_ru": "Future in the past: после said, promised, thought, warned ожидаемое будущее относительно прошлого момента часто передают через would + инфинитив. В немецком чужую речь можно передать через Konjunktiv I (werde), а мысли в прошлом — через würde. Не смешивайте это с прямым прогнозом will.",
       "langs": [
         {
           "lang": "en",
-          "formula": "She said she would review the material later [the team was reviewing the new policy]",
-          "example": "She said she would review the material later in a situation where the team was reviewing the new policy.",
-          "translation": "Она сказала, что позже проверит материал в ситуации, где команда проверяла новую политику.",
+          "formula": "[Someone] said/promised/thought (that) [subject] would [infinitive].",
+          "example": "Our neighbour said she would water the balcony plants while we were away.",
+          "translation": "Соседка сказала, что будет поливать растения на балконе, пока нас не будет.",
           "examples": [
             {
-              "text": "**She said she would review the material later in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где команда проверяла новую политику."
+              "text": "Our neighbour said she would water the balcony plants while we were away.",
+              "translation_ru": "Соседка сказала, что будет поливать растения на балконе, пока нас не будет."
             },
             {
-              "text": "**She said she would review the material later in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The librarian promised she would set aside the novel until Friday.",
+              "translation_ru": "Библиотекарь пообещала отложить роман до пятницы."
             },
             {
-              "text": "**She said she would review the material later in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "I thought the rain would stop before the children came home.",
+              "translation_ru": "Я думал, что дождь закончится до возвращения детей домой."
             },
             {
-              "text": "**She said she would review the material later in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Did he say he would call the repair shop this morning?",
+              "translation_ru": "Он говорил, что сегодня утром позвонит в мастерскую?"
             },
             {
-              "text": "**She said she would review the material later in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где расписание изменили в последний момент."
+              "text": "They warned us the path would become slippery after sunset.",
+              "translation_ru": "Нас предупредили, что после заката тропинка станет скользкой."
             },
             {
-              "text": "**She said she would review the material later in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**She said she would review the material later in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где участники ждали объяснения."
+              "text": "Mira explained that she would send the recording to anyone who missed the workshop.",
+              "translation_ru": "Мира объяснила, что отправит запись всем, кто пропустил занятие."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie sagte, sie werde das Material später prüfen [das Team die neue Regelung prüfte]",
-          "example": "Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Она сказала, что позже проверит материал в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] sagte/versprach, [Subjekt] werde [Infinitiv]. / Ich dachte, [Subjekt] würde [Infinitiv].",
+          "example": "Unsere Nachbarin sagte, sie werde während unseres Urlaubs die Balkonpflanzen gießen.",
+          "translation": "Соседка сказала, что будет поливать растения на балконе во время нашего отпуска.",
           "examples": [
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где команда проверяла новую политику."
+              "text": "Unsere Nachbarin sagte, sie werde während unseres Urlaubs die Balkonpflanzen gießen.",
+              "translation_ru": "Соседка сказала, что будет поливать растения на балконе во время нашего отпуска."
             },
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Die Bibliothekarin versprach, sie werde den Roman bis Freitag für mich zurücklegen.",
+              "translation_ru": "Библиотекарь пообещала отложить для меня роман до пятницы."
             },
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Ich dachte, der Regen würde aufhören, bevor die Kinder nach Hause kommen.",
+              "translation_ru": "Я думал, что дождь закончится до возвращения детей домой."
             },
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Hat er gesagt, er werde heute Vormittag bei der Werkstatt anrufen?",
+              "translation_ru": "Он сказал, что сегодня утром позвонит в мастерскую?"
             },
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где расписание изменили в последний момент."
+              "text": "Man warnte uns, der Weg werde nach Sonnenuntergang rutschig.",
+              "translation_ru": "Нас предупредили, что после заката дорожка станет скользкой."
             },
             {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Sie sagte, sie werde das Material später prüfen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Она сказала, что позже проверит материал в ситуации, где участники ждали объяснения."
+              "text": "Mira erklärte, sie werde die Aufnahme an alle schicken, die den Workshop verpasst hatten.",
+              "translation_ru": "Мира объяснила, что отправит запись всем, кто пропустил занятие."
             }
           ]
         }
       ],
       "formulas": [
-        "She said she would review the material later [the team was reviewing the new policy]",
-        "Sie sagte, sie werde das Material später prüfen [das Team die neue Regelung prüfte]"
+        "[Someone] said/promised/thought (that) [subject] would [infinitive].",
+        "[Person] sagte/versprach, [Subjekt] werde [Infinitiv]. / Ich dachte, [Subjekt] würde [Infinitiv]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +283,77 @@
       "id": "GRMKON016",
       "group_id": "KON",
       "set_id": "KON",
-      "title_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «ведущий рекомендовал команде ещё раз рассмотреть график» в живом контексте.",
+      "title_ru": "Передать рекомендацию или требование к действию",
+      "metaphor_ru": "В формальном английском после recommend, suggest, propose, insist, request, ask that возможен mandative subjunctive: основная форма глагола без -s (или be + Participle в пассиве). В немецком естественны empfehlen/raten + zu-Infinitiv, dass-придаточное и darum bitten: точную английскую форму не копируют.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The chair recommended that the team reconsider the timetable [the team was reviewing the new policy]",
-          "example": "The chair recommended that the team reconsider the timetable in a situation where the team was reviewing the new policy.",
-          "translation": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] recommended/suggested/insisted/asked that [subject] (not) [base verb] / be [past participle].",
+          "example": "The physiotherapist recommended that I avoid running until the pain settled.",
+          "translation": "Физиотерапевт посоветовала мне не бегать, пока боль не утихнет.",
           "examples": [
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где команда проверяла новую политику."
+              "text": "The physiotherapist recommended that I avoid running until the pain settled.",
+              "translation_ru": "Физиотерапевт посоветовала мне не бегать, пока боль не утихнет."
             },
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The teacher suggested that each student record a short explanation in their own words.",
+              "translation_ru": "Учитель предложил каждому ученику записать короткое объяснение своими словами."
             },
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The council proposed that the crossing be moved closer to the bus stop.",
+              "translation_ru": "Муниципальный совет предложил перенести переход ближе к автобусной остановке."
             },
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где доступные данные всё ещё были неполными."
+              "text": "I insist that nobody share the family photos without permission.",
+              "translation_ru": "Я настаиваю, чтобы никто не пересылал семейные фотографии без разрешения."
             },
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где расписание изменили в последний момент."
+              "text": "The editor asked that the final paragraph be rewritten in plain language.",
+              "translation_ru": "Редактор попросила переписать последний абзац понятным языком."
             },
             {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**The chair recommended that the team reconsider the timetable in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где участники ждали объяснения."
+              "text": "They requested that the lights remain on until everyone had left.",
+              "translation_ru": "Они попросили не выключать свет, пока все не уйдут."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen [das Team die neue Regelung prüfte]",
-          "example": "Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где команда проверяла новую политику.",
+          "formula": "[Person] empfahl/riet, [etwas] zu [Infinitiv]. / [Person] schlug vor/bestand darauf, dass [Nebensatz].",
+          "example": "Die Physiotherapeutin riet mir, erst wieder zu laufen, wenn die Schmerzen nachlassen.",
+          "translation": "Физиотерапевт посоветовала мне снова бегать только после того, как боль утихнет.",
           "examples": [
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где команда проверяла новую политику."
+              "text": "Die Physiotherapeutin riet mir, erst wieder zu laufen, wenn die Schmerzen nachlassen.",
+              "translation_ru": "Физиотерапевт посоветовала мне снова бегать только после того, как боль утихнет."
             },
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Die Lehrerin schlug vor, dass alle Lernenden eine kurze Erklärung mit eigenen Worten aufnehmen.",
+              "translation_ru": "Учительница предложила всем ученикам записать короткое объяснение своими словами."
             },
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Der Gemeinderat regte an, den Zebrastreifen näher an die Bushaltestelle zu verlegen.",
+              "translation_ru": "Муниципальный совет предложил перенести переход ближе к автобусной остановке."
             },
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Ich bestehe darauf, dass niemand die Familienfotos ohne Erlaubnis weitergibt.",
+              "translation_ru": "Я настаиваю, чтобы никто не пересылал семейные фотографии без разрешения."
             },
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где расписание изменили в последний момент."
+              "text": "Die Lektorin bat darum, den letzten Absatz verständlicher zu formulieren.",
+              "translation_ru": "Редактор попросила изложить последний абзац понятнее."
             },
             {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Ведущий рекомендовал команде ещё раз рассмотреть график в ситуации, где участники ждали объяснения."
+              "text": "Sie baten darum, das Licht anzulassen, bis alle das Gebäude verlassen hatten.",
+              "translation_ru": "Они попросили оставить свет включённым, пока все не покинут здание."
             }
           ]
         }
       ],
       "formulas": [
-        "The chair recommended that the team reconsider the timetable [the team was reviewing the new policy]",
-        "Die Leitung empfahl dem Team, den Zeitplan noch einmal zu prüfen [das Team die neue Regelung prüfte]"
+        "[Person] recommended/suggested/insisted/asked that [subject] (not) [base verb] / be [past participle].",
+        "[Person] empfahl/riet, [etwas] zu [Infinitiv]. / [Person] schlug vor/bestand darauf, dass [Nebensatz]."
       ],
       "gen": {
         "status": "curated",
@@ -481,85 +465,77 @@
       "id": "GRMKON026",
       "group_id": "KON",
       "set_id": "KON",
-      "title_ru": "Если бы команда действовала раньше, задержки можно было бы избежать",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «если бы команда действовала раньше, задержки можно было бы избежать» в живом контексте.",
+      "title_ru": "Представить альтернативное прошлое без «если»",
+      "metaphor_ru": "Формальная английская инверсия третьего условного предложения: Had + subject + Past Participle вместо If + Past Perfect; результат — would/could/might have + Past Participle. В немецком условие без wenn начинается с Hätte/Wäre + подлежащее и завершается причастием; результат тоже в Konjunktiv II Vergangenheit. Это размышление о несбывшемся прошлом.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Had the team acted earlier, the delay might have been avoided [the team was reviewing the new policy]",
-          "example": "Had the team acted earlier, the delay might have been avoided in a situation where the team was reviewing the new policy.",
-          "translation": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где команда проверяла новую политику.",
+          "formula": "Had + [subject] + [past participle], [subject] would/could/might have + [past participle].",
+          "example": "Had we checked the tide table, we wouldn't have taken the coastal path at high tide.",
+          "translation": "Если бы мы проверили расписание приливов, то не пошли бы по прибрежной тропе во время высокой воды.",
           "examples": [
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где команда проверяла новую политику."
+              "text": "Had we checked the tide table, we wouldn't have taken the coastal path at high tide.",
+              "translation_ru": "Если бы мы проверили расписание приливов, то не пошли бы по прибрежной тропе во время высокой воды."
             },
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Had the neighbour not heard the alarm, the fire might have spread to the attic.",
+              "translation_ru": "Если бы сосед не услышал сигнализацию, огонь мог бы добраться до чердака."
             },
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Had I saved a copy, I could have restored the draft after the laptop crashed.",
+              "translation_ru": "Если бы я сохранил копию, смог бы восстановить черновик после сбоя ноутбука."
             },
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Had she known the course was accessible, she would have signed up months earlier.",
+              "translation_ru": "Если бы она знала, что курс доступен для людей с инвалидностью, записалась бы на несколько месяцев раньше."
             },
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где расписание изменили в последний момент."
+              "text": "Had you told me the train was cancelled, I'd have picked you up at the station.",
+              "translation_ru": "Если бы ты сказал, что поезд отменили, я бы забрал тебя со станции."
             },
             {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Had the team acted earlier, the delay might have been avoided in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где участники ждали объяснения."
+              "text": "Had the committee listened to residents, it might have preserved the old trees.",
+              "translation_ru": "Если бы комитет прислушался к жителям, старые деревья, возможно, удалось бы сохранить."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können [das Team die neue Regelung prüfte]",
-          "example": "Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где команда проверяла новую политику.",
+          "formula": "Hätte/Wäre + [Subjekt] ... [Partizip II], hätte/wäre + [Subjekt] ... [Partizip II] (Konjunktiv II Vergangenheit).",
+          "example": "Hätten wir vorher den Gezeitenkalender geprüft, wären wir bei Flut nicht den Küstenweg entlanggegangen.",
+          "translation": "Если бы мы заранее проверили расписание приливов, то не пошли бы по прибрежной тропе во время высокой воды.",
           "examples": [
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где команда проверяла новую политику."
+              "text": "Hätten wir vorher den Gezeitenkalender geprüft, wären wir bei Flut nicht den Küstenweg entlanggegangen.",
+              "translation_ru": "Если бы мы заранее проверили расписание приливов, то не пошли бы по прибрежной тропе во время высокой воды."
             },
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Hätte der Nachbar den Alarm nicht gehört, hätte sich das Feuer womöglich bis zum Dachboden ausgebreitet.",
+              "translation_ru": "Если бы сосед не услышал сигнализацию, огонь мог бы распространиться до чердака."
             },
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Hätte ich eine Kopie gespeichert, hätte ich den Entwurf nach dem Absturz des Laptops wiederherstellen können.",
+              "translation_ru": "Если бы я сохранил копию, смог бы восстановить черновик после сбоя ноутбука."
             },
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Hätte sie gewusst, dass der Kurs barrierefrei ist, hätte sie sich schon Monate früher angemeldet.",
+              "translation_ru": "Если бы она знала, что курс доступен для людей с инвалидностью, записалась бы на несколько месяцев раньше."
             },
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где расписание изменили в последний момент."
+              "text": "Hättest du mir gesagt, dass der Zug ausfällt, hätte ich dich am Bahnhof abgeholt.",
+              "translation_ru": "Если бы ты сказал, что поезд отменили, я бы встретил тебя на вокзале."
             },
             {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Если бы команда действовала раньше, задержки можно было бы избежать в ситуации, где участники ждали объяснения."
+              "text": "Hätte der Ausschuss auf die Anwohner gehört, wären die alten Bäume vielleicht stehen geblieben.",
+              "translation_ru": "Если бы комитет прислушался к жителям, старые деревья, возможно, остались бы стоять."
             }
           ]
         }
       ],
       "formulas": [
-        "Had the team acted earlier, the delay might have been avoided [the team was reviewing the new policy]",
-        "Hätte das Team früher gehandelt, hätte die Verzögerung vielleicht vermieden werden können [das Team die neue Regelung prüfte]"
+        "Had + [subject] + [past participle], [subject] would/could/might have + [past participle].",
+        "Hätte/Wäre + [Subjekt] ... [Partizip II], hätte/wäre + [Subjekt] ... [Partizip II] (Konjunktiv II Vergangenheit)."
       ],
       "gen": {
         "status": "curated",
@@ -576,85 +552,77 @@
       "id": "GRMKON031",
       "group_id": "KON",
       "set_id": "KON",
-      "title_ru": "Похоже, он неверно понял инструкцию",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «похоже, он неверно понял инструкцию» в живом контексте.",
+      "title_ru": "Осторожно предположить, что уже произошло",
+      "metaphor_ru": "Seems/appears to have + Past Participle выражает вывод о завершённом событии по косвенным признакам, а не установленный факт. Немецкое соответствие — scheint ... Partizip II + zu haben/sein. Не путайте с is said to: там передаются чужие слова, а здесь — осторожный вывод по наблюдениям.",
       "langs": [
         {
           "lang": "en",
-          "formula": "He seems to have misunderstood the instruction [the team was reviewing the new policy]",
-          "example": "He seems to have misunderstood the instruction in a situation where the team was reviewing the new policy.",
-          "translation": "Похоже, он неверно понял инструкцию в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subject] seems/appears to have + [past participle] (+ [evidence or reservation]).",
+          "example": "The courier seems to have left the parcel at the wrong entrance.",
+          "translation": "Похоже, курьер оставил посылку не у того входа.",
           "examples": [
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где команда проверяла новую политику."
+              "text": "The courier seems to have left the parcel at the wrong entrance.",
+              "translation_ru": "Похоже, курьер оставил посылку не у того входа."
             },
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где партнёрам требовалось ясное решение."
+              "text": "She appears to have misunderstood the difference between saving and publishing a draft.",
+              "translation_ru": "Похоже, она перепутала сохранение черновика с его публикацией."
             },
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The children seem to have forgotten their raincoats at school.",
+              "translation_ru": "Кажется, дети забыли дождевики в школе."
             },
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где доступные данные всё ещё были неполными."
+              "text": "From the smell, someone seems to have burned the toast.",
+              "translation_ru": "Судя по запаху, кто-то сжёг тосты."
             },
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где расписание изменили в последний момент."
+              "text": "The update appears to have fixed the battery drain, at least on my phone.",
+              "translation_ru": "Похоже, обновление устранило быструю разрядку аккумулятора — по крайней мере, на моём телефоне."
             },
             {
-              "text": "**He seems to have misunderstood the instruction in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**He seems to have misunderstood the instruction in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где участники ждали объяснения."
+              "text": "My parents seem to have enjoyed the concert more than they expected.",
+              "translation_ru": "Кажется, родителям концерт понравился больше, чем они ожидали."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Er scheint die Anweisung missverstanden zu haben [das Team die neue Regelung prüfte]",
-          "example": "Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Похоже, он неверно понял инструкцию в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] scheint ... [Partizip II] zu haben/sein (+ [Beobachtung]).",
+          "example": "Der Paketbote scheint das Paket am falschen Eingang abgestellt zu haben.",
+          "translation": "Похоже, курьер оставил посылку не у того входа.",
           "examples": [
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где команда проверяла новую политику."
+              "text": "Der Paketbote scheint das Paket am falschen Eingang abgestellt zu haben.",
+              "translation_ru": "Похоже, курьер оставил посылку не у того входа."
             },
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Sie scheint den Unterschied zwischen dem Speichern und dem Veröffentlichen eines Entwurfs missverstanden zu haben.",
+              "translation_ru": "Похоже, она не поняла разницы между сохранением и публикацией черновика."
             },
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Die Kinder scheinen ihre Regenjacken in der Schule vergessen zu haben.",
+              "translation_ru": "Кажется, дети забыли дождевики в школе."
             },
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Dem Geruch nach scheint jemand den Toast verbrannt zu haben.",
+              "translation_ru": "Судя по запаху, кто-то сжёг тосты."
             },
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где расписание изменили в последний момент."
+              "text": "Das Update scheint den hohen Akkuverbrauch behoben zu haben, zumindest auf meinem Handy.",
+              "translation_ru": "Кажется, обновление исправило проблему быстрого разряда аккумулятора — во всяком случае, на моём телефоне."
             },
             {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Er scheint die Anweisung missverstanden zu haben in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Похоже, он неверно понял инструкцию в ситуации, где участники ждали объяснения."
+              "text": "Meine Eltern scheinen das Konzert mehr genossen zu haben, als sie erwartet hatten.",
+              "translation_ru": "Похоже, родителям концерт понравился больше, чем они ожидали."
             }
           ]
         }
       ],
       "formulas": [
-        "He seems to have misunderstood the instruction [the team was reviewing the new policy]",
-        "Er scheint die Anweisung missverstanden zu haben [das Team die neue Regelung prüfte]"
+        "[Subject] seems/appears to have + [past participle] (+ [evidence or reservation]).",
+        "[Subjekt] scheint ... [Partizip II] zu haben/sein (+ [Beobachtung])."
       ],
       "gen": {
         "status": "curated",
@@ -671,85 +639,77 @@
       "id": "GRMKON036",
       "group_id": "KON",
       "set_id": "KON",
-      "title_ru": "Говорят, что в отчёте есть полезная рекомендация",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «говорят, что в отчёте есть полезная рекомендация» в живом контексте.",
+      "title_ru": "Передать неподтверждённые сведения без утверждения от себя",
+      "metaphor_ru": "Is said/reported to + инфинитив означает, что информация пришла из других источников и может быть непроверенной. Немецкое soll + Infinitiv здесь передаёт слух, а не обязанность. Для собственного вывода по косвенным признакам используйте seems/appears или scheint.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The report is said to contain a useful recommendation [the team was reviewing the new policy]",
-          "example": "The report is said to contain a useful recommendation in a situation where the team was reviewing the new policy.",
-          "translation": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subject] is said/reported to + [infinitive] (+ [verification limit]).",
+          "example": "The old cinema is said to reopen as a community theatre next spring.",
+          "translation": "Говорят, следующей весной старый кинотеатр откроется как общественный театр.",
           "examples": [
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где команда проверяла новую политику."
+              "text": "The old cinema is said to reopen as a community theatre next spring.",
+              "translation_ru": "Говорят, следующей весной старый кинотеатр откроется как общественный театр."
             },
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The new path is reported to be accessible to wheelchair users, but I haven't tried it.",
+              "translation_ru": "Сообщают, что новая дорожка доступна для людей на колясках, но я сам пока её не проверял."
             },
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The restaurant is said to have a quiet room for families with young children.",
+              "translation_ru": "Говорят, в ресторане есть тихая комната для семей с маленькими детьми."
             },
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где доступные данные всё ещё были неполными."
+              "text": "This language app is said to work offline even on older phones.",
+              "translation_ru": "Говорят, это приложение для изучения языков работает без интернета даже на старых телефонах."
             },
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где расписание изменили в последний момент."
+              "text": "The village library is reported to lend out tools as well as books.",
+              "translation_ru": "По сообщениям, сельская библиотека выдаёт не только книги, но и инструменты."
             },
             {
-              "text": "**The report is said to contain a useful recommendation in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**The report is said to contain a useful recommendation in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где участники ждали объяснения."
+              "text": "The revised timetable is said to reduce waiting times in the evenings.",
+              "translation_ru": "Говорят, обновлённое расписание сокращает время ожидания по вечерам."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Bericht soll eine hilfreiche Empfehlung enthalten [das Team die neue Regelung prüfte]",
-          "example": "Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] soll + [Infinitiv] (+ [Einschränkung zur Quelle]).",
+          "example": "Das alte Kino soll im nächsten Frühjahr als Nachbarschaftstheater wiedereröffnen.",
+          "translation": "Говорят, следующей весной старый кинотеатр снова откроется как театр для местных жителей.",
           "examples": [
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где команда проверяла новую политику."
+              "text": "Das alte Kino soll im nächsten Frühjahr als Nachbarschaftstheater wiedereröffnen.",
+              "translation_ru": "Говорят, следующей весной старый кинотеатр снова откроется как театр для местных жителей."
             },
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Der neue Weg soll mit dem Rollstuhl gut befahrbar sein, aber ich habe ihn selbst noch nicht ausprobiert.",
+              "translation_ru": "Говорят, по новой дорожке удобно проехать на коляске, но я сам пока не проверял."
             },
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Das Restaurant soll einen ruhigen Raum für Familien mit kleinen Kindern haben.",
+              "translation_ru": "Говорят, в ресторане есть тихая комната для семей с маленькими детьми."
             },
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Diese Sprachlern-App soll auch auf älteren Handys offline funktionieren.",
+              "translation_ru": "Говорят, приложение для изучения языков работает без интернета даже на старых телефонах."
             },
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где расписание изменили в последний момент."
+              "text": "Die Dorfbibliothek soll neben Büchern auch Werkzeuge verleihen.",
+              "translation_ru": "По слухам, сельская библиотека выдаёт не только книги, но и инструменты."
             },
             {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Der Bericht soll eine hilfreiche Empfehlung enthalten in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Говорят, что в отчёте есть полезная рекомендация в ситуации, где участники ждали объяснения."
+              "text": "Der neue Fahrplan soll abends die Wartezeiten verkürzen.",
+              "translation_ru": "Говорят, новое расписание сокращает время ожидания по вечерам."
             }
           ]
         }
       ],
       "formulas": [
-        "The report is said to contain a useful recommendation [the team was reviewing the new policy]",
-        "Der Bericht soll eine hilfreiche Empfehlung enthalten [das Team die neue Regelung prüfte]"
+        "[Subject] is said/reported to + [infinitive] (+ [verification limit]).",
+        "[Subjekt] soll + [Infinitiv] (+ [Einschränkung zur Quelle])."
       ],
       "gen": {
         "status": "curated",

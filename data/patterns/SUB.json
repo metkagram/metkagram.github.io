@@ -196,85 +196,77 @@
       "id": "GRMSUB011",
       "group_id": "SUB",
       "set_id": "SUB",
-      "title_ru": "Вопрос в том, сохранится ли это изменение",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «вопрос в том, сохранится ли это изменение» в живом контексте.",
+      "title_ru": "Поставить вопрос через косвенное «ли»",
+      "metaphor_ru": "Whether вводит зависимый вопрос (подлежащее перед сказуемым, без порядка прямого вопроса); в немецком — ob и сказуемое в конце придаточного. Конструкция работает после The question is, wonder, establish, know, а также Die Frage ist, sich fragen, klären, wissen. Она помогает взвесить альтернативы без преждевременного вывода.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The question is whether the change will last [the team was reviewing the new policy]",
-          "example": "The question is whether the change will last in a situation where the team was reviewing the new policy.",
-          "translation": "Вопрос в том, сохранится ли это изменение в ситуации, где команда проверяла новую политику.",
+          "formula": "The question is whether [subject + verb]. / [Person] wonders/needs to establish whether [subject + verb].",
+          "example": "The question is whether the landlord will repair the heating before winter.",
+          "translation": "Вопрос в том, успеет ли хозяин квартиры починить отопление до зимы.",
           "examples": [
             {
-              "text": "**The question is whether the change will last in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где команда проверяла новую политику."
+              "text": "The question is whether the landlord will repair the heating before winter.",
+              "translation_ru": "Вопрос в том, успеет ли хозяин квартиры починить отопление до зимы."
             },
             {
-              "text": "**The question is whether the change will last in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The question is whether the children can get there without crossing a busy road.",
+              "translation_ru": "Главный вопрос — смогут ли дети туда добраться, не переходя оживлённую дорогу."
             },
             {
-              "text": "**The question is whether the change will last in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "We need to establish whether the data were collected with consent.",
+              "translation_ru": "Нам нужно выяснить, собирались ли данные с согласия людей."
             },
             {
-              "text": "**The question is whether the change will last in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "No one knows yet whether the scholarship covers travel expenses.",
+              "translation_ru": "Пока никто не знает, покрывает ли стипендия расходы на дорогу."
             },
             {
-              "text": "**The question is whether the change will last in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где расписание изменили в последний момент."
+              "text": "I keep wondering whether we're judging the idea before giving it a fair trial.",
+              "translation_ru": "Я всё думаю, не судим ли мы об идее слишком рано, так и не испытав её как следует."
             },
             {
-              "text": "**The question is whether the change will last in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**The question is whether the change will last in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где участники ждали объяснения."
+              "text": "At the meeting, the main question was whether the park could stay open during renovations.",
+              "translation_ru": "На собрании обсуждали прежде всего, сможет ли парк оставаться открытым во время ремонта."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Frage ist, ob die Änderung Bestand haben wird [das Team die neue Regelung prüfte]",
-          "example": "Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Вопрос в том, сохранится ли это изменение в ситуации, где команда проверяла новую политику.",
+          "formula": "Die Frage ist, ob [Subjekt ... Verb]. / [Person] fragt sich/klärt, ob [Subjekt ... Verb am Ende].",
+          "example": "Die Frage ist, ob der Vermieter die Heizung noch vor dem Winter reparieren lässt.",
+          "translation": "Вопрос в том, успеет ли арендодатель починить отопление до зимы.",
           "examples": [
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где команда проверяла новую политику."
+              "text": "Die Frage ist, ob der Vermieter die Heizung noch vor dem Winter reparieren lässt.",
+              "translation_ru": "Вопрос в том, успеет ли арендодатель починить отопление до зимы."
             },
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Die Frage ist, ob die Kinder dorthin gelangen können, ohne eine stark befahrene Straße zu überqueren.",
+              "translation_ru": "Главный вопрос — смогут ли дети добраться туда, не переходя оживлённую дорогу."
             },
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Wir müssen klären, ob die Daten mit Einwilligung erhoben wurden.",
+              "translation_ru": "Нам нужно выяснить, собирались ли данные с согласия людей."
             },
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Noch weiß niemand, ob das Stipendium auch die Reisekosten abdeckt.",
+              "translation_ru": "Пока никто не знает, покрывает ли стипендия ещё и расходы на дорогу."
             },
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где расписание изменили в последний момент."
+              "text": "Ich frage mich immer wieder, ob wir die Idee vorschnell beurteilen, statt sie ernsthaft auszuprobieren.",
+              "translation_ru": "Я постоянно думаю, не судим ли мы об идее поспешно, вместо того чтобы всерьёз её испытать."
             },
             {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Die Frage ist, ob die Änderung Bestand haben wird in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Вопрос в том, сохранится ли это изменение в ситуации, где участники ждали объяснения."
+              "text": "In der Sitzung ging es vor allem darum, ob der Park während der Bauarbeiten geöffnet bleiben könnte.",
+              "translation_ru": "На собрании главным образом обсуждали, сможет ли парк оставаться открытым во время строительных работ."
             }
           ]
         }
       ],
       "formulas": [
-        "The question is whether the change will last [the team was reviewing the new policy]",
-        "Die Frage ist, ob die Änderung Bestand haben wird [das Team die neue Regelung prüfte]"
+        "The question is whether [subject + verb]. / [Person] wonders/needs to establish whether [subject + verb].",
+        "Die Frage ist, ob [Subjekt ... Verb]. / [Person] fragt sich/klärt, ob [Subjekt ... Verb am Ende]."
       ],
       "gen": {
         "status": "curated",

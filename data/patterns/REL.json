@@ -196,85 +196,77 @@
       "id": "GRMREL011",
       "group_id": "REL",
       "set_id": "REL",
-      "title_ru": "Замечания экспертов были учтены",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «замечания экспертов были учтены» в живом контексте.",
+      "title_ru": "Сжато уточнить предмет через уже выполненное действие",
+      "metaphor_ru": "Английское сокращённое пассивное относительное придаточное: the complaints received (= that were received); причастная группа следует за существительным. В немецком часто употребляется согласованное причастное определение перед существительным (die durch den Sturm beschädigte Brücke), а в разговорной речи — относительное придаточное. Сохраняйте пассивный смысл: предмет подвергся действию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The concerns raised by the reviewers were addressed [the team was reviewing the new policy]",
-          "example": "The concerns raised by the reviewers were addressed in a situation where the team was reviewing the new policy.",
-          "translation": "Замечания экспертов были учтены в ситуации, где команда проверяла новую политику.",
+          "formula": "[Noun] + [past participle passive modifier] + [main clause]. (= [noun] that was/were [past participle])",
+          "example": "The complaints received last week point to a problem with the new timetable.",
+          "translation": "Жалобы, полученные на прошлой неделе, указывают на проблему с новым расписанием.",
           "examples": [
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где команда проверяла новую политику."
+              "text": "The complaints received last week point to a problem with the new timetable.",
+              "translation_ru": "Жалобы, полученные на прошлой неделе, указывают на проблему с новым расписанием."
             },
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The bridge damaged by the storm is still closed to cyclists.",
+              "translation_ru": "Мост, повреждённый бурей, по-прежнему закрыт для велосипедистов."
             },
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The photos shared without permission were removed from the group.",
+              "translation_ru": "Фотографии, распространённые без разрешения, удалили из группы."
             },
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где доступные данные всё ещё были неполными."
+              "text": "The suggestions made by local residents shaped the final design of the square.",
+              "translation_ru": "Предложения местных жителей повлияли на окончательный проект площади."
             },
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где расписание изменили в последний момент."
+              "text": "The rules introduced in September have already confused several volunteers.",
+              "translation_ru": "Правила, введённые в сентябре, уже запутали нескольких волонтёров."
             },
             {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**The concerns raised by the reviewers were addressed in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где участники ждали объяснения."
+              "text": "The notes written during the interview helped me spot what I'd missed.",
+              "translation_ru": "Заметки, сделанные во время собеседования, помогли мне заметить упущенное."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt [das Team die neue Regelung prüfte]",
-          "example": "Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Замечания экспертов были учтены в ситуации, где команда проверяла новую политику.",
+          "formula": "[Artikel] + [Partizip II als flektiertes Attribut] + [Nomen] ... / [Nomen], die/der/das ... [Partizip II] wurde(n), ...",
+          "example": "Die Beschwerden, die letzte Woche eingegangen sind, deuten auf ein Problem mit dem neuen Fahrplan hin.",
+          "translation": "Жалобы, поступившие на прошлой неделе, указывают на проблему с новым расписанием.",
           "examples": [
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где команда проверяла новую политику."
+              "text": "Die Beschwerden, die letzte Woche eingegangen sind, deuten auf ein Problem mit dem neuen Fahrplan hin.",
+              "translation_ru": "Жалобы, поступившие на прошлой неделе, указывают на проблему с новым расписанием."
             },
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Die durch den Sturm beschädigte Brücke ist für Radfahrer weiterhin gesperrt.",
+              "translation_ru": "Повреждённый бурей мост по-прежнему закрыт для велосипедистов."
             },
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Die ohne Zustimmung geteilten Fotos wurden aus der Gruppe entfernt.",
+              "translation_ru": "Фотографии, которыми поделились без разрешения, удалили из группы."
             },
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Die von Anwohnern eingebrachten Vorschläge haben die endgültige Gestaltung des Platzes geprägt.",
+              "translation_ru": "Предложения местных жителей повлияли на окончательное оформление площади."
             },
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где расписание изменили в последний момент."
+              "text": "Die im September eingeführten Regeln haben bereits einige Ehrenamtliche verwirrt.",
+              "translation_ru": "Правила, введённые в сентябре, уже запутали нескольких волонтёров."
             },
             {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где эксперты сравнивали две альтернативы."
-            },
-            {
-              "text": "**Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Замечания экспертов были учтены в ситуации, где участники ждали объяснения."
+              "text": "Die Notizen, die ich während des Gesprächs gemacht hatte, halfen mir zu erkennen, was ich übersehen hatte.",
+              "translation_ru": "Заметки, сделанные во время разговора, помогли мне понять, что я упустил."
             }
           ]
         }
       ],
       "formulas": [
-        "The concerns raised by the reviewers were addressed [the team was reviewing the new policy]",
-        "Die von den Gutachtern geäußerten Bedenken wurden berücksichtigt [das Team die neue Regelung prüfte]"
+        "[Noun] + [past participle passive modifier] + [main clause]. (= [noun] that was/were [past participle])",
+        "[Artikel] + [Partizip II als flektiertes Attribut] + [Nomen] ... / [Nomen], die/der/das ... [Partizip II] wurde(n), ..."
       ],
       "gen": {
         "status": "curated",
