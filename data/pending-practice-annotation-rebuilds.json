@@ -788,6 +788,77 @@
       "changed_at": "2026-11-17"
     }
   ],
-  "retired_records": [],
+  "retired_records": [
+    {
+      "key": "GRMKON011:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON011:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON016:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON016:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON026:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON026:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON031:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON031:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON036:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMKON036:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMSUB011:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMSUB011:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMREL011:en:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    },
+    {
+      "key": "GRMREL011:de:7",
+      "reason": "example_count_reduced_from_seven_to_six_requires_local_annotation_rebuild",
+      "changed_at": "2026-11-17"
+    }
+  ],
   "refreshed_by": "2026-09-19.8"
 }
