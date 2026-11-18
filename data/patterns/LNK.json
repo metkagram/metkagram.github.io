@@ -670,85 +670,85 @@
     {
       "id": "LIN050",
       "group_id": "LIN",
-      "title_ru": "Едва мы начали, как сразу...",
+      "title_ru": "Передать мгновенную последовательность двух событий",
       "metaphor_ru": "Как кнопка старт на ракете — только нажал, и тут же взлёт, без задержки.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Hardly + had + subject + Past Participle when + subject + verb",
-          "example": "Hardly had we started when the client called.",
-          "translation": "Едва мы начали, как тут же позвонил клиент.",
+          "formula": "Hardly had [subject] [past participle] when [second event in past].",
+          "example": "Hardly had I put the kettle on when the electricity went out.",
+          "translation": "Едва я включил чайник, как отключили электричество.",
           "examples": [
             {
-              "text": "**Hardly** had **she** **finished** her work when **the** phone rang.",
-              "translation_ru": "Едва она закончила работу, как сразу зазвонил телефон."
+              "text": "Hardly had I put the kettle on when the electricity went out.",
+              "translation_ru": "Едва я включил чайник, как отключили электричество."
             },
             {
-              "text": "**No sooner** had **I** **sent** the email than **I** got a reply.",
-              "translation_ru": "Как только я отправил письмо, тут же получил ответ."
+              "text": "Hardly had the concert begun when someone in the audience fainted.",
+              "translation_ru": "Концерт едва начался, как кому-то в зале стало плохо и он потерял сознание."
             },
             {
-              "text": "**Hardly** had **the team** **launched** the app when **users** found bugs.",
-              "translation_ru": "Едва команда запустила приложение, как пользователи нашли ошибки."
+              "text": "Hardly had we pitched the tent when the wind pulled a peg out of the ground.",
+              "translation_ru": "Едва мы поставили палатку, как ветер вырвал колышек из земли."
             },
             {
-              "text": "**No sooner** had **we** **opened** the store than **customers** arrived.",
-              "translation_ru": "Как только мы открыли магазин, сразу пришли покупатели."
+              "text": "Hardly had she sent the message when she noticed the wrong attachment.",
+              "translation_ru": "Едва она отправила сообщение, как заметила, что прикрепила не тот файл."
             },
             {
-              "text": "**Hardly** had **he** **entered** the room when **the meeting** started.",
-              "translation_ru": "Едва он вошел в комнату, как сразу началось собрание."
+              "text": "Hardly had the children fallen asleep when the doorbell rang.",
+              "translation_ru": "Дети только уснули, как раздался звонок в дверь."
             },
             {
-              "text": "**No sooner** had **they** **agreed** on the deal than **problems** arose.",
-              "translation_ru": "Как только они договорились о сделке, сразу возникли проблемы."
+              "text": "Hardly had the update finished installing when the laptop restarted again.",
+              "translation_ru": "Обновление едва установилось, как ноутбук снова перезагрузился."
             },
             {
-              "text": "**Hardly** had **we** **installed** the software when **it** crashed.",
-              "translation_ru": "Едва мы установили программу, как она сразу сломалась."
+              "text": "Hardly had I claimed to know the way when we reached a dead end.",
+              "translation_ru": "Я едва успел заявить, что знаю дорогу, как мы оказались в тупике."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Kaum + hatte + subject + Partizip II, als + subject + verb",
-          "example": "Kaum hatten wir begonnen, als der Kunde anrief.",
-          "translation": "Едва мы начали, как тут же позвонил клиент.",
+          "formula": "Kaum hatte/war [Subjekt] [Partizip II], da/als [zweites Ereignis].",
+          "example": "Kaum hatte ich den Wasserkocher eingeschaltet, da fiel der Strom aus.",
+          "translation": "Едва я включил чайник, как отключили электричество.",
           "examples": [
             {
-              "text": "**Kaum** hatte **sie** **ihren Bericht** geschrieben, als **das Telefon** klingelte.",
-              "translation_ru": "Едва она написала отчет, как сразу зазвонил телефон."
+              "text": "Kaum hatte ich den Wasserkocher eingeschaltet, da fiel der Strom aus.",
+              "translation_ru": "Едва я включил чайник, как отключили электричество."
             },
             {
-              "text": "**Sobald** **ich** **die E-Mail** gesendet hatte, **bekam** **ich** eine Antwort.",
-              "translation_ru": "Как только я отправил письмо, тут же получил ответ."
+              "text": "Kaum hatte das Konzert begonnen, da wurde jemand im Publikum ohnmächtig.",
+              "translation_ru": "Концерт едва начался, как кому-то в зале стало плохо и он потерял сознание."
             },
             {
-              "text": "**Kaum** hatte **das Team** **die App** gestartet, als **Nutzer** Fehler fanden.",
-              "translation_ru": "Едва команда запустила приложение, как пользователи нашли ошибки."
+              "text": "Kaum hatten wir das Zelt aufgebaut, da riss der Wind einen Hering aus dem Boden.",
+              "translation_ru": "Едва мы поставили палатку, как ветер вырвал колышек из земли."
             },
             {
-              "text": "**Sobald** **wir** **den Laden** geöffnet hatten, **kamen** **Kunden**.",
-              "translation_ru": "Как только мы открыли магазин, сразу пришли покупатели."
+              "text": "Kaum hatte sie die Nachricht abgeschickt, da bemerkte sie den falschen Anhang.",
+              "translation_ru": "Едва она отправила сообщение, как заметила, что прикрепила не тот файл."
             },
             {
-              "text": "**Kaum** war **er** **im Raum**, als **das Meeting** begann.",
-              "translation_ru": "Едва он вошел в комнату, как сразу началось собрание."
+              "text": "Kaum waren die Kinder eingeschlafen, da klingelte es an der Tür.",
+              "translation_ru": "Дети только уснули, как раздался звонок в дверь."
             },
             {
-              "text": "**Sobald** **sie** **den Vertrag** unterschrieben hatten, **traten** **Probleme** auf.",
-              "translation_ru": "Как только они подписали договор, сразу возникли проблемы."
+              "text": "Kaum war das Update fertig installiert, da startete der Laptop schon wieder neu.",
+              "translation_ru": "Обновление едва установилось, как ноутбук снова перезагрузился."
             },
             {
-              "text": "**Kaum** hatten **wir** **die Software** installiert, als **sie** abstürzte.",
-              "translation_ru": "Едва мы установили программу, как она сразу сломалась."
+              "text": "Kaum hatte ich behauptet, den Weg zu kennen, da standen wir vor einer Sackgasse.",
+              "translation_ru": "Я едва успел заявить, что знаю дорогу, как мы оказались в тупике."
             }
           ]
         }
       ],
       "formulas": [
-        "Hardly + had + subject + Past Participle when + subject + verb",
-        "Kaum + hatte + subject + Partizip II, als + subject + verb"
+        "Hardly had [subject] [past participle] when [second event in past].",
+        "Kaum hatte/war [Subjekt] [Partizip II], da/als [zweites Ereignis]."
       ],
       "gen": {
         "status": "generated",
@@ -760,7 +760,8 @@
         ],
         "notes": ""
       },
-      "set_id": "LNK"
+      "set_id": "LNK",
+      "description_ru": "Hardly had ... when ... — выразительная инверсия для рассказа о прошлом: второе событие случилось почти сразу после первого. После Hardly ставится had перед подлежащим; don't заменять when на than (than относится к отдельному No sooner). В немецком естественны Kaum hatte/war ..., da/als ...; выбирайте haben/sein по глаголу."
     },
     {
       "id": "LIN051",
@@ -1240,85 +1241,85 @@
     {
       "id": "LIN057",
       "group_id": "LIN",
-      "title_ru": "В то время как…",
+      "title_ru": "Описать два действия, происходящие одновременно",
       "metaphor_ru": "Как два поезда на соседних рельсах — действия идут параллельно или противопоставляются.",
       "langs": [
         {
           "lang": "en",
-          "formula": "while + subject + verb",
-          "example": "While I was working, she was preparing dinner.",
-          "translation": "В то время как я работал, она готовила ужин.",
+          "formula": "While [ongoing time clause], [simultaneous action/event].",
+          "example": "While the bread is baking, I'll set the table.",
+          "translation": "Пока печётся хлеб, я накрою на стол.",
           "examples": [
             {
-              "text": "While **he** finished the report, **they** discussed the results.",
-              "translation_ru": "Пока он заканчивал отчёт, они обсуждали результаты."
+              "text": "While the bread is baking, I'll set the table.",
+              "translation_ru": "Пока печётся хлеб, я накрою на стол."
             },
             {
-              "text": "While **we** waited, **you** checked the emails.",
-              "translation_ru": "Пока мы ждали, ты проверял почту."
+              "text": "Keep the dog in the kitchen while the floor dries.",
+              "translation_ru": "Пусть собака побудет на кухне, пока высыхает пол."
             },
             {
-              "text": "While **you** were online, **I** updated the software.",
-              "translation_ru": "Пока ты был в сети, я обновил программное обеспечение."
+              "text": "While I was looking for the receipt, the cashier checked the serial number.",
+              "translation_ru": "Пока я искал чек, кассир проверяла серийный номер."
             },
             {
-              "text": "While **she** slept, **he** worked on the project.",
-              "translation_ru": "Пока она спала, он работал над проектом."
+              "text": "We listened to an interview while we walked along the river.",
+              "translation_ru": "Мы слушали интервью, пока шли вдоль реки."
             },
             {
-              "text": "While **they** were away, **we** organized the files.",
-              "translation_ru": "Пока они были в отъезде, мы организовали файлы."
+              "text": "While her son practises the piano, she reads in the next room.",
+              "translation_ru": "Пока её сын занимается на пианино, она читает в соседней комнате."
             },
             {
-              "text": "While **I** called, **you** answered the questions.",
-              "translation_ru": "Пока я звонил, ты отвечал на вопросы."
+              "text": "The screen stays on while the file is being uploaded.",
+              "translation_ru": "Экран остаётся включённым, пока файл загружается."
             },
             {
-              "text": "While **he** repaired the car, **she** cleaned the garage.",
-              "translation_ru": "Пока он чинил машину, она убирала гараж."
+              "text": "While we waited for the rain to ease, we made up a story about the old house.",
+              "translation_ru": "Пока мы ждали, когда дождь стихнет, мы придумали историю о старом доме."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "während + subject + verb",
-          "example": "Während ich gearbeitet habe, hat sie das Abendessen vorbereitet.",
-          "translation": "В то время как я работал, она готовила ужин.",
+          "formula": "Während [Nebensatz, Verb am Ende], [Hauptsatz] / [Hauptsatz], während ...",
+          "example": "Während das Brot im Ofen backt, decke ich den Tisch.",
+          "translation": "Пока печётся хлеб, я накрою на стол.",
           "examples": [
             {
-              "text": "Während **er** den Bericht fertigstellte, **diskutierten** sie die Ergebnisse.",
-              "translation_ru": "Пока он заканчивал отчёт, они обсуждали результаты."
+              "text": "Während das Brot im Ofen backt, decke ich den Tisch.",
+              "translation_ru": "Пока печётся хлеб, я накрою на стол."
             },
             {
-              "text": "Während **wir** warteten, **hast** du die E-Mails überprüft.",
-              "translation_ru": "Пока мы ждали, ты проверял почту."
+              "text": "Lass den Hund in der Küche, während der Boden trocknet.",
+              "translation_ru": "Пусть собака побудет на кухне, пока высыхает пол."
             },
             {
-              "text": "Während **du** online warst, **habe** ich die Software aktualisiert.",
-              "translation_ru": "Пока ты был в сети, я обновил программное обеспечение."
+              "text": "Während ich nach dem Kassenbon suchte, überprüfte die Kassiererin die Seriennummer.",
+              "translation_ru": "Пока я искал чек, кассир проверяла серийный номер."
             },
             {
-              "text": "Während **sie** schlief, **arbeitete** er am Projekt.",
-              "translation_ru": "Пока она спала, он работал над проектом."
+              "text": "Wir hörten uns ein Interview an, während wir am Fluss entlanggingen.",
+              "translation_ru": "Мы слушали интервью, пока шли вдоль реки."
             },
             {
-              "text": "Während **sie** weg waren, **haben** wir die Dateien organisiert.",
-              "translation_ru": "Пока они были в отъезде, мы организовали файлы."
+              "text": "Während ihr Sohn Klavier übt, liest sie im Nebenzimmer.",
+              "translation_ru": "Пока её сын занимается на пианино, она читает в соседней комнате."
             },
             {
-              "text": "Während **ich** anrief, **hast** du die Fragen beantwortet.",
-              "translation_ru": "Пока я звонил, ты отвечал на вопросы."
+              "text": "Der Bildschirm bleibt an, während die Datei hochgeladen wird.",
+              "translation_ru": "Экран остаётся включённым, пока файл загружается."
             },
             {
-              "text": "Während **er** das Auto reparierte, **hat** sie die Garage geputzt.",
-              "translation_ru": "Пока он чинил машину, она убирала гараж."
+              "text": "Während wir darauf warteten, dass der Regen nachließ, dachten wir uns eine Geschichte über das alte Haus aus.",
+              "translation_ru": "Пока мы ждали, когда дождь стихнет, мы придумали историю о старом доме."
             }
           ]
         }
       ],
       "formulas": [
-        "while + subject + verb",
-        "während + subject + verb"
+        "While [ongoing time clause], [simultaneous action/event].",
+        "Während [Nebensatz, Verb am Ende], [Hauptsatz] / [Hauptsatz], während ..."
       ],
       "gen": {
         "status": "generated",
@@ -1330,7 +1331,8 @@
         ],
         "notes": ""
       },
-      "set_id": "LNK"
+      "set_id": "LNK",
+      "description_ru": "While вводит временное придаточное «пока / в то время как»; выбор времён отражает длительность и завершённость действий. Немецкое während требует глагола в конце придаточного. Здесь тренируется одновременность, а не логическое противопоставление, которое разбирается отдельно."
     },
     {
       "id": "LIN058",

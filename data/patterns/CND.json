@@ -195,85 +195,85 @@
     {
       "id": "CON003",
       "group_id": "CON",
-      "title_ru": "Если бы не …, я бы не…",
+      "title_ru": "Объяснить, что удерживает ситуацию от худшего исхода",
       "metaphor_ru": "Представь пропасть между твоими целями и результатами. Есть только один мост, который позволяет тебе перейти на другую сторону. Без него ты бы так и остался на старом берегу. Этот мост — человек, поддержка, случай или твоя внутренняя сила.",
       "langs": [
         {
           "lang": "en",
-          "formula": "If it weren’t for + noun/phrase, I wouldn’t + V",
-          "example": "If it weren’t for my team’s support, I wouldn’t have finished the project on time.",
-          "translation": "Если бы не поддержка моей команды, я бы не закончил проект вовремя.",
+          "formula": "If it weren't for [factor], [subject] would/could [verb or state].",
+          "example": "If it weren't for the evening bus, I couldn't get home after my shift.",
+          "translation": "Если бы не вечерний автобус, после смены я бы не смог добраться домой.",
           "examples": [
             {
-              "text": "Without **your guidance**, I wouldn’t **succeed**.",
-              "translation_ru": "Без твоего руководства я бы не добился успеха."
+              "text": "If it weren't for the evening bus, I couldn't get home after my shift.",
+              "translation_ru": "Если бы не вечерний автобус, после смены я бы не смог добраться домой."
             },
             {
-              "text": "If it weren’t for **my mentor**, I wouldn’t **be here**.",
-              "translation_ru": "Если бы не мой наставник, я бы не был здесь."
+              "text": "If it weren't for my sister's reminders, I'd forget half my appointments.",
+              "translation_ru": "Если бы сестра мне не напоминала, я бы забывал половину своих встреч."
             },
             {
-              "text": "Without **the map**, we wouldn’t **find the route**.",
-              "translation_ru": "Без карты мы бы не нашли маршрут."
+              "text": "If it weren't for subtitles, we'd understand very little of this documentary.",
+              "translation_ru": "Без субтитров мы бы почти ничего не поняли в этом документальном фильме."
             },
             {
-              "text": "If it weren’t for **their support**, they wouldn’t **have achieved this**.",
-              "translation_ru": "Если бы не их поддержка, они бы не добились этого."
+              "text": "If it weren't for the quiet room upstairs, she couldn't focus on her exams.",
+              "translation_ru": "Если бы не тихая комната наверху, ей было бы трудно сосредоточиться на подготовке к экзаменам."
             },
             {
-              "text": "Without **the vaccine**, we wouldn’t **feel safe**.",
-              "translation_ru": "Без вакцины мы бы не чувствовали себя в безопасности."
+              "text": "If it weren't for that open-source library, building this app would take months.",
+              "translation_ru": "Если бы не эта библиотека с открытым кодом, разработка приложения заняла бы несколько месяцев."
             },
             {
-              "text": "If it weren’t for **the storm**, we wouldn’t **stay home**.",
-              "translation_ru": "Если бы не буря, мы бы не остались дома."
+              "text": "If it weren't for our neighbour's spare key, we'd be locked out right now.",
+              "translation_ru": "Если бы не запасной ключ у соседки, мы бы сейчас не могли попасть домой."
             },
             {
-              "text": "Without **the translator**, I wouldn’t **understand the text**.",
-              "translation_ru": "Без переводчика я бы не понял текст."
+              "text": "If it weren't for his weekly walks with friends, he'd hardly ever leave his desk.",
+              "translation_ru": "Если бы не еженедельные прогулки с друзьями, он бы почти не отходил от рабочего стола."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ohne + Akkusativ, würde ich nicht + Infinitiv",
-          "example": "Ohne die Unterstützung meines Teams würde ich das Projekt nicht rechtzeitig abgeschlossen haben.",
-          "translation": "Если бы не поддержка моей команды, я бы не закончил проект вовремя.",
+          "formula": "Ohne [Akkusativ] würde/könnte [Subjekt] [Infinitiv] / wäre [Subjekt] ...",
+          "example": "Ohne den Abendbus käme ich nach meiner Schicht nicht nach Hause.",
+          "translation": "Если бы не вечерний автобус, после смены я бы не смог добраться домой.",
           "examples": [
             {
-              "text": "Ohne **deine Führung** würde ich **nicht erfolgreich sein**.",
-              "translation_ru": "Без твоего руководства я бы не добился успеха."
+              "text": "Ohne den Abendbus käme ich nach meiner Schicht nicht nach Hause.",
+              "translation_ru": "Если бы не вечерний автобус, после смены я бы не смог добраться домой."
             },
             {
-              "text": "Ohne **meinen Mentor** wäre ich **nicht hier**.",
-              "translation_ru": "Без моего наставника я бы не был здесь."
+              "text": "Ohne die Erinnerungen meiner Schwester würde ich die Hälfte meiner Termine vergessen.",
+              "translation_ru": "Если бы сестра мне не напоминала, я бы забывал половину своих встреч."
             },
             {
-              "text": "Ohne **die Karte** würden wir **den Weg nicht finden**.",
-              "translation_ru": "Без карты мы бы не нашли маршрут."
+              "text": "Ohne Untertitel würden wir von dieser Dokumentation kaum etwas verstehen.",
+              "translation_ru": "Без субтитров мы бы почти ничего не поняли в этом документальном фильме."
             },
             {
-              "text": "Ohne **ihre Unterstützung** würden sie **das nicht erreichen**.",
-              "translation_ru": "Без их поддержки они бы не добились этого."
+              "text": "Ohne das ruhige Zimmer im Obergeschoss könnte sie sich kaum auf ihre Prüfungen konzentrieren.",
+              "translation_ru": "Если бы не тихая комната наверху, ей было бы трудно сосредоточиться на подготовке к экзаменам."
             },
             {
-              "text": "Ohne **den Impfstoff** würden wir uns **nicht sicher fühlen**.",
-              "translation_ru": "Без вакцины мы бы не чувствовали себя в безопасности."
+              "text": "Ohne diese Open-Source-Bibliothek würde die Entwicklung der App Monate dauern.",
+              "translation_ru": "Если бы не эта библиотека с открытым кодом, разработка приложения заняла бы несколько месяцев."
             },
             {
-              "text": "Ohne **den Sturm** würden wir **nicht zu Hause bleiben**.",
-              "translation_ru": "Без бури мы бы не остались дома."
+              "text": "Ohne den Ersatzschlüssel unserer Nachbarin stünden wir gerade vor verschlossener Tür.",
+              "translation_ru": "Если бы не запасной ключ у соседки, мы бы сейчас не могли попасть домой."
             },
             {
-              "text": "Ohne **den Übersetzer** würde ich **den Text nicht verstehen**.",
-              "translation_ru": "Без переводчика я бы не понял текст."
+              "text": "Ohne die wöchentlichen Spaziergänge mit Freunden würde er seinen Schreibtisch kaum verlassen.",
+              "translation_ru": "Если бы не еженедельные прогулки с друзьями, он бы почти не отходил от рабочего стола."
             }
           ]
         }
       ],
       "formulas": [
-        "If it weren’t for + noun/phrase, I wouldn’t + V",
-        "Ohne + Akkusativ, würde ich nicht + Infinitiv"
+        "If it weren't for [factor], [subject] would/could [verb or state].",
+        "Ohne [Akkusativ] würde/könnte [Subjekt] [Infinitiv] / wäre [Subjekt] ..."
       ],
       "gen": {
         "status": "generated",
@@ -285,90 +285,91 @@
         ],
         "notes": ""
       },
-      "set_id": "CND"
+      "set_id": "CND",
+      "description_ru": "If it weren't for + существительное задаёт нереальное условие в настоящем: без этого фактора ситуация была бы иной. Не смешивайте его с If it hadn't been for для завершённого прошлого. В немецком естественно Ohne + Akkusativ с Konjunktiv II."
     },
     {
       "id": "CON004",
       "group_id": "CON",
-      "title_ru": "Если не …, то …",
+      "title_ru": "Обозначить последствие, если условие не выполнится",
       "metaphor_ru": "Представь дверь с электронным замком: без правильного кода она остаётся закрытой. Можешь стучать и злиться — ничего не произойдёт, пока не выполнишь условие.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Unless + present simple, will + V",
-          "example": "Unless you submit the report today, no one will review it tomorrow.",
-          "translation": "Если не отправишь отчёт сегодня, завтра никто не посмотрит.",
+          "formula": "[Consequence] unless [condition in present / present perfect].",
+          "example": "Unless we leave before seven, we'll get caught in the school-run traffic.",
+          "translation": "Если не выедем до семи, попадём в утренние пробки возле школ.",
           "examples": [
             {
-              "text": "Unless **we act** now, **the chance will slip** away.",
-              "translation_ru": "Если мы не будем действовать сейчас, шанс упустится."
+              "text": "Unless we leave before seven, we'll get caught in the school-run traffic.",
+              "translation_ru": "Если не выедем до семи, попадём в утренние пробки возле школ."
             },
             {
-              "text": "If **she doesn't reply** soon, **we'll assume** she's uninterested.",
-              "translation_ru": "Если она не ответит скоро, мы предположим, что она не заинтересована."
+              "text": "I won't lend you the drill unless you promise to bring it back on Sunday.",
+              "translation_ru": "Я одолжу тебе дрель, только если пообещаешь вернуть её в воскресенье."
             },
             {
-              "text": "Unless **they repair** the server, **it won't work**.",
-              "translation_ru": "Если они не починят сервер, он не будет работать."
+              "text": "Unless the figures have been checked, we shouldn't quote them in the article.",
+              "translation_ru": "Пока цифры не проверены, не стоит приводить их в статье."
             },
             {
-              "text": "If **you don't check** the email, **you might miss** the update.",
-              "translation_ru": "Если ты не проверишь почту, можешь пропустить обновление."
+              "text": "The seedlings will dry out unless someone waters them during the heatwave.",
+              "translation_ru": "Если во время жары никто не польёт рассаду, она засохнет."
             },
             {
-              "text": "Unless **he confirms** by tomorrow, **we'll cancel** the order.",
-              "translation_ru": "Если он не подтвердит до завтра, мы отменим заказ."
+              "text": "Unless you tell me what's bothering you, I can't do much to help.",
+              "translation_ru": "Если не расскажешь, что тебя тревожит, я мало чем смогу помочь."
             },
             {
-              "text": "If **we don't leave** soon, **we'll hit** traffic.",
-              "translation_ru": "Если мы скоро не выйдем, попадем в пробку."
+              "text": "Don't update the router unless you've saved its settings.",
+              "translation_ru": "Не обновляй роутер, пока не сохранишь его настройки."
             },
             {
-              "text": "Unless **you register**, **you won't gain** access.",
-              "translation_ru": "Если ты не зарегистрируешься, ты не получишь доступ."
+              "text": "Unless the museum extends its opening hours, we might have to skip the final exhibition.",
+              "translation_ru": "Если музей не продлит часы работы, возможно, последнюю выставку придётся пропустить."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wenn ... nicht + present, wird + Infinitiv",
-          "example": "Wenn du den Bericht nicht heute einreichst, wird ihn morgen niemand prüfen.",
-          "translation": "Не сдашь отчёт сегодня — завтра никто не посмотрит.",
+          "formula": "Wenn/Falls [Bedingung] nicht ..., [Folge] / [Folge] nur oder erst, wenn [Bedingung].",
+          "example": "Wenn wir nicht vor sieben losfahren, geraten wir in den morgendlichen Schulverkehr.",
+          "translation": "Если не выедем до семи, попадём в утренние пробки возле школ.",
           "examples": [
             {
-              "text": "Wenn **wir jetzt nicht handeln**, **entgeht uns die Chance**.",
-              "translation_ru": "Если мы не будем действовать сейчас, шанс упустится."
+              "text": "Wenn wir nicht vor sieben losfahren, geraten wir in den morgendlichen Schulverkehr.",
+              "translation_ru": "Если не выедем до семи, попадём в утренние пробки возле школ."
             },
             {
-              "text": "Falls **sie bald nicht antwortet**, **nehmen wir an**, dass sie nicht interessiert ist.",
-              "translation_ru": "Если она не ответит скоро, мы предположим, что она не заинтересована."
+              "text": "Ich leihe dir die Bohrmaschine nur, wenn du versprichst, sie am Sonntag zurückzubringen.",
+              "translation_ru": "Я одолжу тебе дрель, только если пообещаешь вернуть её в воскресенье."
             },
             {
-              "text": "Wenn **sie den Server nicht reparieren**, **funktioniert er nicht**.",
-              "translation_ru": "Если они не починят сервер, он не будет работать."
+              "text": "Solange die Zahlen nicht überprüft sind, sollten wir sie im Artikel nicht zitieren.",
+              "translation_ru": "Пока цифры не проверены, не стоит приводить их в статье."
             },
             {
-              "text": "Falls **du die E-Mail nicht überprüfst**, **könntest du das Update verpassen**.",
-              "translation_ru": "Если ты не проверишь почту, можешь пропустить обновление."
+              "text": "Die Setzlinge vertrocknen, wenn sie während der Hitzewelle niemand gießt.",
+              "translation_ru": "Если во время жары никто не польёт рассаду, она засохнет."
             },
             {
-              "text": "Wenn **er bis morgen nicht bestätigt**, **stornieren wir** die Bestellung.",
-              "translation_ru": "Если он не подтвердит до завтра, мы отменим заказ."
+              "text": "Wenn du mir nicht sagst, was dich bedrückt, kann ich dir kaum helfen.",
+              "translation_ru": "Если не расскажешь, что тебя тревожит, я мало чем смогу помочь."
             },
             {
-              "text": "Falls **wir nicht bald gehen**, **kommen wir in den Verkehr**.",
-              "translation_ru": "Если мы скоро не выйдем, попадем в пробку."
+              "text": "Aktualisiere den Router erst, wenn du seine Einstellungen gesichert hast.",
+              "translation_ru": "Не обновляй роутер, пока не сохранишь его настройки."
             },
             {
-              "text": "Wenn **du dich nicht anmeldest**, **bekommst du keinen Zugang**.",
-              "translation_ru": "Если ты не зарегистрируешься, ты не получишь доступ."
+              "text": "Falls das Museum seine Öffnungszeiten nicht verlängert, müssen wir die letzte Ausstellung vielleicht auslassen.",
+              "translation_ru": "Если музей не продлит часы работы, возможно, последнюю выставку придётся пропустить."
             }
           ]
         }
       ],
       "formulas": [
-        "Unless + present simple, will + V",
-        "Wenn ... nicht + present, wird + Infinitiv"
+        "[Consequence] unless [condition in present / present perfect].",
+        "Wenn/Falls [Bedingung] nicht ..., [Folge] / [Folge] nur oder erst, wenn [Bedingung]."
       ],
       "gen": {
         "status": "generated",
@@ -380,7 +381,8 @@
         ],
         "notes": ""
       },
-      "set_id": "CND"
+      "set_id": "CND",
+      "description_ru": "Unless обозначает «если не» и вводит исключение из основного утверждения: после unless обычно не нужно добавлять not. В придаточном о будущем употребляется Present Simple или Present Perfect, а не will. Немецкий естественный эквивалент зависит от контекста: wenn ... nicht, nur wenn, erst wenn, solange ... nicht."
     },
     {
       "id": "CON005",
