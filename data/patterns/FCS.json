@@ -101,85 +101,85 @@
       "id": "GRMFCS006",
       "group_id": "FCS",
       "set_id": "FCS",
-      "title_ru": "Лишь после проверки проблема стала заметна",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «лишь после проверки проблема стала заметна» в живом контексте.",
+      "title_ru": "Лишь после события стало ясно: Only after",
+      "metaphor_ru": "В английском Only after... в начале требует инверсии в главной части: did/could/had + подлежащее. В немецком Erst nach / Erst als / Erst nachdem выдвигает временное обстоятельство вперёд, но личная форма глагола главного предложения занимает вторую позицию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Only after the review did the problem become visible [the team was reviewing the new policy]",
-          "example": "Only after the review did the problem become visible in a situation where the team was reviewing the new policy.",
-          "translation": "Лишь после проверки проблема стала заметна в ситуации, где команда проверяла новую политику.",
+          "formula": "Only after + event + auxiliary/modal + subject + verb ... .",
+          "example": "Only after the rain stopped did we realise the cellar had flooded.",
+          "translation": "Только когда дождь прекратился, мы поняли, что подвал затопило.",
           "examples": [
             {
-              "text": "**Only after the review did the problem become visible in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где команда проверяла новую политику."
+              "text": "Only after the rain stopped did we realise the cellar had flooded.",
+              "translation_ru": "Только когда дождь прекратился, мы поняли, что подвал затопило."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Only after reading the small print did she notice that the subscription renewed automatically.",
+              "translation_ru": "Лишь прочитав мелкий шрифт, она заметила, что подписка продлевается автоматически."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Only after the rehearsal did the choir discover how poor the acoustics were.",
+              "translation_ru": "Только после репетиции хор понял, насколько плохая в зале акустика."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Only after I switched off the notifications could I concentrate on the chapter.",
+              "translation_ru": "Лишь отключив уведомления, я смог сосредоточиться на главе."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где расписание изменили в последний момент."
+              "text": "Only after the council published the figures did residents see how much the repairs would cost.",
+              "translation_ru": "Лишь после публикации расчётов жители узнали, во сколько обойдётся ремонт."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Only after trying to explain it in German did he notice the gaps in his vocabulary.",
+              "translation_ru": "Только попытавшись объяснить это по-немецки, он заметил пробелы в своём словаре."
             },
             {
-              "text": "**Only after the review did the problem become visible in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где участники ждали объяснения."
+              "text": "Only after the second interview did they offer her the job.",
+              "translation_ru": "Лишь после второго собеседования ей предложили работу."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Erst nach der Prüfung wurde das Problem sichtbar [das Team die neue Regelung prüfte]",
-          "example": "Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Лишь после проверки проблема стала заметна в ситуации, где команда проверяла новую политику.",
+          "formula": "Erst nach + Dativ / Erst als(nachdem) + Nebensatz, + finites Verb + Subjekt ... .",
+          "example": "Erst als der Regen aufgehört hatte, merkten wir, dass der Keller unter Wasser stand.",
+          "translation": "Только когда дождь закончился, мы поняли, что подвал затопило.",
           "examples": [
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где команда проверяла новую политику."
+              "text": "Erst als der Regen aufgehört hatte, merkten wir, dass der Keller unter Wasser stand.",
+              "translation_ru": "Только когда дождь закончился, мы поняли, что подвал затопило."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Erst beim Lesen des Kleingedruckten bemerkte sie, dass sich das Abo automatisch verlängert.",
+              "translation_ru": "Лишь прочитав мелкий шрифт, она заметила, что подписка продлевается автоматически."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Erst nach der Probe merkte der Chor, wie schlecht die Akustik war.",
+              "translation_ru": "Только после репетиции хор понял, насколько плохая акустика."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Erst nachdem ich die Benachrichtigungen ausgeschaltet hatte, konnte ich mich auf das Kapitel konzentrieren.",
+              "translation_ru": "Лишь отключив уведомления, я смог сосредоточиться на главе."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где расписание изменили в последний момент."
+              "text": "Erst als die Stadt die Zahlen veröffentlichte, erfuhren die Anwohner, wie teuer die Reparaturen werden würden.",
+              "translation_ru": "Лишь после публикации цифр жители узнали, во сколько обойдётся ремонт."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Erst als er versuchte, es auf Deutsch zu erklären, merkte er, welche Wörter ihm noch fehlten.",
+              "translation_ru": "Только попытавшись объяснить это по-немецки, он понял, каких слов ему не хватает."
             },
             {
-              "text": "**Erst nach der Prüfung wurde das Problem sichtbar in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Лишь после проверки проблема стала заметна в ситуации, где участники ждали объяснения."
+              "text": "Erst nach dem zweiten Vorstellungsgespräch bot man ihr die Stelle an.",
+              "translation_ru": "Лишь после второго собеседования ей предложили работу."
             }
           ]
         }
       ],
       "formulas": [
-        "Only after the review did the problem become visible [the team was reviewing the new policy]",
-        "Erst nach der Prüfung wurde das Problem sichtbar [das Team die neue Regelung prüfte]"
+        "Only after + event + auxiliary/modal + subject + verb ... .",
+        "Erst nach + Dativ / Erst als(nachdem) + Nebensatz, + finites Verb + Subjekt ... ."
       ],
       "gen": {
         "status": "curated",
@@ -189,92 +189,92 @@
           "en",
           "de"
         ],
-        "notes": "Grammar pattern: Focus, inversion and emphasis."
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       }
     },
     {
       "id": "GRMFCS011",
       "group_id": "FCS",
       "set_id": "FCS",
-      "title_ru": "Предложению нужен реалистичный график",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «предложению нужен реалистичный график» в живом контексте.",
+      "title_ru": "Выделить главное, что действительно нужно",
+      "metaphor_ru": "What X needs is Y — выделительное предложение (pseudo-cleft): называем ситуацию и фокусируемся на её главной потребности, вместо простого X needs Y. Немецкий использует разговорное Was X braucht, ist Y; при отрицании возможен контраст kein ..., sondern ... .",
       "langs": [
         {
           "lang": "en",
-          "formula": "What the proposal needs is a realistic timetable [the team was reviewing the new policy]",
-          "example": "What the proposal needs is a realistic timetable in a situation where the team was reviewing the new policy.",
-          "translation": "Предложению нужен реалистичный график в ситуации, где команда проверяла новую политику.",
+          "formula": "What + subject + need(s)/needed + is/was + focus.",
+          "example": "What this kitchen needs is better lighting, not another gadget.",
+          "translation": "Этой кухне нужен прежде всего хороший свет, а не очередной гаджет.",
           "examples": [
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где команда проверяла новую политику."
+              "text": "What this kitchen needs is better lighting, not another gadget.",
+              "translation_ru": "Этой кухне нужен прежде всего хороший свет, а не очередной гаджет."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где партнёрам требовалось ясное решение."
+              "text": "What our debate needs is one clear question that everyone can answer.",
+              "translation_ru": "Нашему обсуждению нужен один ясный вопрос, на который смогут ответить все."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "What I needed after that exhausting journey was an hour of peace and quiet.",
+              "translation_ru": "После изматывающей дороги мне нужен был хотя бы час тишины и покоя."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где доступные данные всё ещё были неполными."
+              "text": "What beginners need is time to practise without being interrupted.",
+              "translation_ru": "Новичкам нужно время на практику, чтобы их никто не перебивал."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где расписание изменили в последний момент."
+              "text": "What this app needs is an offline mode for train journeys.",
+              "translation_ru": "Этому приложению нужен офлайн-режим для поездок на поезде."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "What the neighbourhood really needs is a safe crossing near the school.",
+              "translation_ru": "Району прежде всего нужен безопасный переход возле школы."
             },
             {
-              "text": "**What the proposal needs is a realistic timetable in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где участники ждали объяснения."
+              "text": "What she needs right now isn't advice but someone who will listen.",
+              "translation_ru": "Сейчас ей нужны не советы, а человек, который её выслушает."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was der Vorschlag braucht, ist ein realistischer Zeitplan [das Team die neue Regelung prüfte]",
-          "example": "Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Предложению нужен реалистичный график в ситуации, где команда проверяла новую политику.",
+          "formula": "Was + Subjekt + braucht/brauchte, ist/war + Fokus.",
+          "example": "Was diese Küche braucht, ist besseres Licht, nicht noch ein Gerät.",
+          "translation": "Этой кухне нужен хороший свет, а не ещё один прибор.",
           "examples": [
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где команда проверяла новую политику."
+              "text": "Was diese Küche braucht, ist besseres Licht, nicht noch ein Gerät.",
+              "translation_ru": "Этой кухне нужен хороший свет, а не ещё один прибор."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Was unsere Diskussion braucht, ist eine klare Frage, auf die alle antworten können.",
+              "translation_ru": "Нашему обсуждению нужен один ясный вопрос, на который смогут ответить все."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Was ich nach der anstrengenden Reise brauchte, war eine Stunde Ruhe.",
+              "translation_ru": "После утомительной дороги мне нужен был час покоя."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Was Anfänger brauchen, ist Zeit zum Üben, ohne ständig unterbrochen zu werden.",
+              "translation_ru": "Новичкам нужно время на практику, чтобы их постоянно не прерывали."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где расписание изменили в последний момент."
+              "text": "Was diese App braucht, ist ein Offline-Modus für Zugfahrten.",
+              "translation_ru": "Этому приложению нужен офлайн-режим для поездок на поезде."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Was dieses Viertel dringend braucht, ist ein sicherer Übergang in der Nähe der Schule.",
+              "translation_ru": "Этому району срочно нужен безопасный переход рядом со школой."
             },
             {
-              "text": "**Was der Vorschlag braucht, ist ein realistischer Zeitplan in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Предложению нужен реалистичный график в ситуации, где участники ждали объяснения."
+              "text": "Was sie jetzt braucht, ist kein guter Rat, sondern jemand, der ihr zuhört.",
+              "translation_ru": "Сейчас ей нужны не советы, а кто-то, кто её выслушает."
             }
           ]
         }
       ],
       "formulas": [
-        "What the proposal needs is a realistic timetable [the team was reviewing the new policy]",
-        "Was der Vorschlag braucht, ist ein realistischer Zeitplan [das Team die neue Regelung prüfte]"
+        "What + subject + need(s)/needed + is/was + focus.",
+        "Was + Subjekt + braucht/brauchte, ist/war + Fokus."
       ],
       "gen": {
         "status": "curated",
@@ -284,7 +284,7 @@
           "en",
           "de"
         ],
-        "notes": "Grammar pattern: Focus, inversion and emphasis."
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       }
     },
     {

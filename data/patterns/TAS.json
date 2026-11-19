@@ -5,95 +5,95 @@
     {
       "id": "PERF003",
       "group_id": "PERF",
-      "title_ru": "Я никогда не думал об этом, пока…",
-      "metaphor_ru": "Как свет в тёмной комнате — пока не щёлкнул выключатель, ты ничего не видел. Щёлк — и всё стало ясно, по-новому.",
+      "title_ru": "До того момента такого опыта ещё не было",
+      "metaphor_ru": "Past Perfect (had never + V3) показывает отсутствие опыта до определённого момента в прошлом; until называет момент перемены. Немецкий обычно использует Plusquamperfekt (hatte/war ... Partizip II) с bis, но времена двух языков не совпадают механически.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I had never + Past Participle + until...",
-          "example": "I had never thought about automation until I started working with this team.",
-          "translation": "Щёлкнул свет: я никогда не думал об автоматизации, пока не начал работать с этой командой.",
+          "formula": "subject + had never + past participle + until + past event.",
+          "example": "I had never noticed how noisy the road was until the town closed it for a Sunday market.",
+          "translation": "Я не замечал, насколько шумная у нас улица, пока её не перекрыли ради воскресного рынка.",
           "examples": [
             {
-              "text": "She had **never considered** a career in tech until she **attended** that seminar.",
-              "translation_ru": "Она никогда не думала о карьере в технологиях, пока не посетила тот семинар."
+              "text": "I had never noticed how noisy the road was until the town closed it for a Sunday market.",
+              "translation_ru": "Я не замечал, насколько шумная у нас улица, пока её не перекрыли ради воскресного рынка."
             },
             {
-              "text": "We had **never faced** such a challenge until the new regulations **came**.",
-              "translation_ru": "Мы никогда не сталкивались с таким вызовом, пока не вступили в силу новые правила."
+              "text": "She had never spoken German outside class until she helped a lost visitor at the station.",
+              "translation_ru": "Она ни разу не говорила по-немецки вне занятий, пока не помогла заблудившемуся пассажиру на вокзале."
             },
             {
-              "text": "They had **never realized** the importance of networking until the conference **happened**.",
-              "translation_ru": "Они никогда не осознавали важность нетворкинга, пока не состоялась конференция."
+              "text": "We had never questioned the survey results until someone pointed out the missing age groups.",
+              "translation_ru": "Мы не сомневались в результатах опроса, пока кто-то не заметил, что в нём не представлены некоторые возрастные группы."
             },
             {
-              "text": "You had **never tried** sushi until you **visited** Japan.",
-              "translation_ru": "Ты никогда не пробовал суши, пока не посетил Японию."
+              "text": "He had never cooked for ten people until his sister asked him to host the family reunion.",
+              "translation_ru": "Он никогда не готовил на десятерых, пока сестра не попросила его принять у себя всю семью."
             },
             {
-              "text": "He had **never understood** the concept until the teacher **explained** it clearly.",
-              "translation_ru": "Он никогда не понимал концепцию, пока учитель её ясно не объяснил."
+              "text": "Until the power went out, I had never realised how much I relied on the lift.",
+              "translation_ru": "Пока не отключили электричество, я не понимал, насколько завишу от лифта."
             },
             {
-              "text": "I had **never been** so excited until the project **kicked off**.",
-              "translation_ru": "Я никогда не был так взволнован, пока проект не стартовал."
+              "text": "They had never considered moving until their youngest child started school across town.",
+              "translation_ru": "Они даже не думали о переезде, пока младший ребёнок не пошёл в школу на другом конце города."
             },
             {
-              "text": "She had **never cooked** a full meal until her parents **visited**.",
-              "translation_ru": "Она никогда не готовила полноценный обед, пока её родители не приехали."
+              "text": "I had never read a novel in another language until a friend lent me a short mystery.",
+              "translation_ru": "Я ни разу не читал роман на иностранном языке, пока друг не одолжил мне небольшой детектив."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich hatte nie + Partizip II + bis...",
-          "example": "Ich hatte nie über Automatisierung nachgedacht, bis ich mit diesem Team gearbeitet habe.",
-          "translation": "Я никогда не думал об автоматизации, пока не начал работать с этой командой.",
+          "formula": "Subjekt + hatte/war + noch nie + Partizip II, bis + Ereignis.",
+          "example": "Ich hatte nie bemerkt, wie laut die Straße war, bis sie für einen Sonntagsmarkt gesperrt wurde.",
+          "translation": "Я не замечал, насколько шумная эта улица, пока её не перекрыли ради воскресного рынка.",
           "examples": [
             {
-              "text": "Er hatte **nie über KI nachgedacht**, bis er **den Artikel las**.",
-              "translation_ru": "Он никогда не думал об ИИ, пока не прочитал статью."
+              "text": "Ich hatte nie bemerkt, wie laut die Straße war, bis sie für einen Sonntagsmarkt gesperrt wurde.",
+              "translation_ru": "Я не замечал, насколько шумная эта улица, пока её не перекрыли ради воскресного рынка."
             },
             {
-              "text": "Wir hatten **nie Französisch gelernt**, bis wir **umgezogen sind**.",
-              "translation_ru": "Мы никогда не учили французский, пока не переехали."
+              "text": "Sie hatte außerhalb des Unterrichts noch nie Deutsch gesprochen, bis sie einem verirrten Reisenden am Bahnhof half.",
+              "translation_ru": "Она ни разу не говорила по-немецки вне занятий, пока не помогла заблудившемуся пассажиру на вокзале."
             },
             {
-              "text": "Sie hatte **nie ein Buch geschrieben**, bis der Verleger **sie kontaktierte**.",
-              "translation_ru": "Она никогда не писала книгу, пока издатель не связался с ней."
+              "text": "Wir hatten die Umfrageergebnisse nie hinterfragt, bis jemand auf die fehlenden Altersgruppen hinwies.",
+              "translation_ru": "Мы не ставили под сомнение результаты опроса, пока кто-то не указал на отсутствующие возрастные группы."
             },
             {
-              "text": "Ich hatte **nie über Gesundheit nachgedacht**, bis ich **krank wurde**.",
-              "translation_ru": "Я никогда не думал о здоровье, пока не заболел."
+              "text": "Er hatte noch nie für zehn Personen gekocht, bis seine Schwester ihn bat, das Familientreffen auszurichten.",
+              "translation_ru": "Он никогда не готовил на десятерых, пока сестра не попросила его устроить семейную встречу."
             },
             {
-              "text": "Du hattest **nie ein Auto gefahren**, bis du **den Führerschein bekamst**.",
-              "translation_ru": "Ты никогда не водил машину, пока не получил права."
+              "text": "Bis der Strom ausfiel, hatte ich nie gemerkt, wie sehr ich auf den Aufzug angewiesen war.",
+              "translation_ru": "Пока не отключили электричество, я не понимал, насколько завишу от лифта."
             },
             {
-              "text": "Sie hatten **nie an einem Marathon teilgenommen**, bis sie **sich anmeldeten**.",
-              "translation_ru": "Они никогда не участвовали в марафоне, пока не зарегистрировались."
+              "text": "Sie hatten nie über einen Umzug nachgedacht, bis ihr jüngstes Kind am anderen Ende der Stadt eingeschult wurde.",
+              "translation_ru": "Они не думали о переезде, пока младший ребёнок не пошёл в школу на другом конце города."
             },
             {
-              "text": "Er hatte **nie an die Umwelt gedacht**, bis er **die Doku sah**.",
-              "translation_ru": "Он никогда не думал об окружающей среде, пока не посмотрел документальный фильм."
+              "text": "Ich hatte noch nie einen Roman auf einer anderen Sprache gelesen, bis mir eine Freundin einen kurzen Krimi lieh.",
+              "translation_ru": "Я ни разу не читал роман на иностранном языке, пока подруга не одолжила мне небольшой детектив."
             }
           ]
         }
       ],
       "formulas": [
-        "I had never + Past Participle + until...",
-        "Ich hatte nie + Partizip II + bis..."
+        "subject + had never + past participle + until + past event.",
+        "Subjekt + hatte/war + noch nie + Partizip II, bis + Ereignis."
       ],
       "gen": {
-        "status": "generated",
+        "status": "curated",
         "iterations": 1,
         "lastGeneratedAt": "2025-09-15T19:40:23.719Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": ""
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       },
       "set_id": "TAS"
     },
@@ -195,95 +195,95 @@
     {
       "id": "PERF005",
       "group_id": "PERF",
-      "title_ru": "Мне говорили, что…",
-      "metaphor_ru": "Как будто получаешь письмо по почте от знакомого — информация приходит через посредника, и ты делишься ею, не утверждая лично.",
+      "title_ru": "Передать услышанное, не выдавая за проверенный факт",
+      "metaphor_ru": "Have/has been told that... передаёт информацию от других с акцентом на полученном сообщении, не на истинности утверждения. По-немецки естественно Mir/uns wurde gesagt, dass...; времена не обязаны совпадать один в один. Для отрицания и вопросов меняется только внешняя рамка.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I have been told that + clause",
-          "example": "I have been told that the new policy will improve efficiency.",
-          "translation": "Мне говорили, что новая политика повысит эффективность.",
+          "formula": "subject + have/has (not) been told (that) + clause.",
+          "example": "I've been told that the library stays open late on Thursdays; is that still true?",
+          "translation": "Мне сказали, что по четвергам библиотека работает допоздна. Это ещё так?",
           "examples": [
             {
-              "text": "They say that **the new app** is **amazing**.",
-              "translation_ru": "Говорят, что новое приложение потрясающее."
+              "text": "I've been told that the library stays open late on Thursdays; is that still true?",
+              "translation_ru": "Мне сказали, что по четвергам библиотека работает допоздна. Это ещё так?"
             },
             {
-              "text": "I have been told that **you** are **leaving** soon.",
-              "translation_ru": "Мне сказали, что ты скоро уезжаешь."
+              "text": "We've been told that the hiking trail closes after heavy rain.",
+              "translation_ru": "Нам сообщили, что после сильного дождя туристическую тропу закрывают."
             },
             {
-              "text": "They say that **AI** will **transform** industries.",
-              "translation_ru": "Говорят, что ИИ изменит индустрии."
+              "text": "She's been told that the interview will include a short practical exercise.",
+              "translation_ru": "Её предупредили, что на собеседовании будет небольшое практическое задание."
             },
             {
-              "text": "I have been told that **the book** is **a bestseller**.",
-              "translation_ru": "Мне сказали, что книга бестселлер."
+              "text": "Have you been told that the rent includes heating, or should we check the contract?",
+              "translation_ru": "Тебе говорили, что отопление включено в аренду, или лучше проверить договор?"
             },
             {
-              "text": "They say that **the weather** will **improve** tomorrow.",
-              "translation_ru": "Говорят, что погода завтра улучшится."
+              "text": "I've been told that the new app requires us to sign in again, but I can't find the instructions.",
+              "translation_ru": "Мне сказали, что в новом приложении нужно войти заново, но я не могу найти инструкцию."
             },
             {
-              "text": "I have been told that **you** should **rest** more.",
-              "translation_ru": "Мне сказали, что тебе надо больше отдыхать."
+              "text": "Several parents have been told that the school bus will take a different route next week.",
+              "translation_ru": "Нескольким родителям сообщили, что на следующей неделе школьный автобус поедет другим маршрутом."
             },
             {
-              "text": "They say that **the project** is **delayed**.",
-              "translation_ru": "Говорят, что проект задерживается."
+              "text": "I haven't been told that the concert was cancelled; where did you hear that?",
+              "translation_ru": "Мне не сообщали, что концерт отменили. Откуда у тебя эта информация?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Mir wurde gesagt, dass + Nebensatz",
-          "example": "Mir wurde gesagt, dass die neue Richtlinie die Effizienz verbessern wird.",
-          "translation": "Мне говорили, что новая политика повысит эффективность.",
+          "formula": "Mir/uns/ihr wurde (nicht) gesagt, dass + Nebensatz.",
+          "example": "Mir wurde gesagt, dass die Bibliothek donnerstags länger geöffnet hat. Stimmt das noch?",
+          "translation": "Мне сказали, что по четвергам библиотека работает дольше. Это ещё так?",
           "examples": [
             {
-              "text": "Mir wurde gesagt, dass **die neue App** **fantastisch** ist.",
-              "translation_ru": "Мне сказали, что новое приложение потрясающее."
+              "text": "Mir wurde gesagt, dass die Bibliothek donnerstags länger geöffnet hat. Stimmt das noch?",
+              "translation_ru": "Мне сказали, что по четвергам библиотека работает дольше. Это ещё так?"
             },
             {
-              "text": "Man sagt, dass **du** bald **gehst**.",
-              "translation_ru": "Говорят, что ты скоро уезжаешь."
+              "text": "Uns wurde gesagt, dass der Wanderweg nach starkem Regen gesperrt wird.",
+              "translation_ru": "Нам сообщили, что после сильного дождя туристическую тропу закрывают."
             },
             {
-              "text": "Mir wurde gesagt, dass **KI** die Branche **verändern** wird.",
-              "translation_ru": "Мне сказали, что ИИ изменит отрасль."
+              "text": "Ihr wurde gesagt, dass beim Vorstellungsgespräch eine kurze praktische Aufgabe drankommt.",
+              "translation_ru": "Ей сообщили, что на собеседовании будет небольшое практическое задание."
             },
             {
-              "text": "Man sagt, dass **das Buch** **ein Bestseller** ist.",
-              "translation_ru": "Говорят, что книга бестселлер."
+              "text": "Wurde dir gesagt, dass die Heizkosten in der Miete enthalten sind, oder sollten wir im Vertrag nachsehen?",
+              "translation_ru": "Тебе говорили, что отопление входит в арендную плату, или лучше проверить договор?"
             },
             {
-              "text": "Mir wurde gesagt, dass **das Wetter** morgen **besser** wird.",
-              "translation_ru": "Мне сказали, что погода завтра улучшится."
+              "text": "Mir wurde gesagt, dass man sich bei der neuen App erneut anmelden muss, aber ich finde keine Anleitung.",
+              "translation_ru": "Мне сказали, что в новом приложении нужно войти заново, но я не нахожу инструкцию."
             },
             {
-              "text": "Man sagt, dass **du** mehr **ruhen** solltest.",
-              "translation_ru": "Говорят, что тебе надо больше отдыхать."
+              "text": "Mehreren Eltern wurde gesagt, dass der Schulbus nächste Woche eine andere Strecke fährt.",
+              "translation_ru": "Нескольким родителям сообщили, что на следующей неделе школьный автобус поедет по другому маршруту."
             },
             {
-              "text": "Mir wurde gesagt, dass **das Projekt** **verzögert** ist.",
-              "translation_ru": "Мне сказали, что проект задерживается."
+              "text": "Mir wurde nicht gesagt, dass das Konzert abgesagt wurde. Woher weißt du das?",
+              "translation_ru": "Мне не сообщали, что концерт отменили. Откуда ты это знаешь?"
             }
           ]
         }
       ],
       "formulas": [
-        "I have been told that + clause",
-        "Mir wurde gesagt, dass + Nebensatz"
+        "subject + have/has (not) been told (that) + clause.",
+        "Mir/uns/ihr wurde (nicht) gesagt, dass + Nebensatz."
       ],
       "gen": {
-        "status": "generated",
+        "status": "curated",
         "iterations": 1,
         "lastGeneratedAt": "2025-09-15T19:40:59.827Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": ""
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       },
       "set_id": "TAS"
     },
