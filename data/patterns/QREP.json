@@ -11,7 +11,7 @@
       "langs": [
         {
           "lang": "en",
-          "formula": "Did/Has [speaker] ask whether/if [subject + verb + ...]?",
+          "formula": "Did [speaker] ask / Has [speaker] asked whether/if [subject + verb + ...]?",
           "example": "Did Maya ask whether the museum offers quiet visiting hours for children who are sensitive to noise?",
           "translation": "Майя спрашивала, бывают ли в музее спокойные часы для детей, чувствительных к шуму?",
           "examples": [
@@ -41,7 +41,7 @@
             },
             {
               "text": "**Did the neighbours ask whether we could turn the music down while their baby was asleep?**",
-              "translation_ru": "Соседи просили узнать, можем ли мы сделать музыку потише, пока их малыш спит?"
+              "translation_ru": "Соседи спрашивали, могли бы мы сделать музыку потише, пока их малыш спит?"
             }
           ]
         },
@@ -77,13 +77,13 @@
             },
             {
               "text": "**Haben die Nachbarn gefragt, ob wir die Musik leiser stellen könnten, während ihr Baby schläft?**",
-              "translation_ru": "Соседи спрашивали, можем ли мы сделать музыку потише, пока их малыш спит?"
+              "translation_ru": "Соседи спрашивали, могли бы мы сделать музыку потише, пока их малыш спит?"
             }
           ]
         }
       ],
       "formulas": [
-        "Did/Has [speaker] ask whether/if [subject + verb + ...]?",
+        "Did [speaker] ask / Has [speaker] asked whether/if [subject + verb + ...]?",
         "Hat/Haben [Person(en)] gefragt, ob [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
