@@ -6,85 +6,85 @@
       "id": "C1NEG001",
       "group_id": "NEG",
       "set_id": "NEG",
-      "title_ru": "Можем ли мы взять [X] за основу компромисса при условии, что [Y]?",
-      "metaphor_ru": "Переводите разногласие в условное предложение: обозначьте приемлемую основу и условие, необходимое для согласия.",
+      "title_ru": "Компромисс с условием",
+      "metaphor_ru": "Предлагайте уступку так, чтобы условие было конкретным и проверяемым; варьируйте просьбу, предложение и готовность согласиться.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Could we treat [X] as the basis for a compromise, provided that [Y]?",
-          "example": "Could we treat the current salary bands as the basis for a compromise, provided that we review the hardest-to-fill roles separately?",
-          "translation": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?",
+          "formula": "Could we agree on [X], provided that [Y]? / I'd agree to [X] as long as [Y].",
+          "example": "Could we agree to share the garden on alternate weekends, provided we both put the tools back in the shed?",
+          "translation": "Можем договориться пользоваться садом по очереди через выходные, если каждый будет возвращать инструменты в сарай?",
           "examples": [
             {
-              "text": "**Could we treat the current salary bands as the basis for a compromise, provided that we review the hardest-to-fill roles separately?**",
-              "translation_ru": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?"
+              "text": "**Could we agree to share the garden on alternate weekends, provided we both put the tools back in the shed?**",
+              "translation_ru": "Можем договориться пользоваться садом по очереди через выходные, если каждый будет возвращать инструменты в сарай?"
             },
             {
-              "text": "**Could we treat the smaller launch scope as the basis for a compromise, provided that the postponed features receive firm dates?**",
-              "translation_ru": "Можем ли мы взять уменьшенный объём запуска за основу компромисса при условии, что для отложенных функций будут зафиксированы сроки?"
+              "text": "**I'd be willing to postpone the trip, as long as we pick a new date before the tickets expire.**",
+              "translation_ru": "Я согласен перенести поездку, если мы выберем новую дату до истечения срока действия билетов."
             },
             {
-              "text": "**Could we treat three office days per month as the basis for a compromise, provided that teams can choose the dates themselves?**",
-              "translation_ru": "Можем ли мы взять три офисных дня в месяц за основу компромисса при условии, что команды смогут сами выбирать даты?"
+              "text": "**What if we keep the old family photos online, on condition that everyone pictured can ask for one to be removed?**",
+              "translation_ru": "Может, оставим старые семейные фотографии в интернете, но дадим каждому изображённому право попросить удалить снимок?"
             },
             {
-              "text": "**Could we treat the supplier’s revised price as the basis for a compromise, provided that it includes spare parts for the first year?**",
-              "translation_ru": "Можем ли мы взять обновлённую цену поставщика за основу компромисса при условии, что в неё войдут запасные части на первый год?"
+              "text": "**Could we accept the later delivery date, provided the seller covers the installation fee?**",
+              "translation_ru": "Можем согласиться на более позднюю доставку при условии, что продавец оплатит установку?"
             },
             {
-              "text": "**Could we treat the proposed timetable as the basis for a compromise, provided that the late shift ends before the final train leaves?**",
-              "translation_ru": "Можем ли мы взять предложенное расписание за основу компромисса при условии, что поздняя смена будет заканчиваться до отправления последнего поезда?"
+              "text": "**I could support closing the street to cars on Sundays, provided residents still had access to their garages.**",
+              "translation_ru": "Я мог бы поддержать перекрытие улицы для машин по воскресеньям, если жильцы сохранят доступ к гаражам."
             },
             {
-              "text": "**Could we treat the department’s budget ceiling as the basis for a compromise, provided that mandatory security work is funded centrally?**",
-              "translation_ru": "Можем ли мы взять бюджетный лимит отдела за основу компромисса при условии, что обязательные работы по безопасности будут профинансированы централизованно?"
+              "text": "**Would you be open to swapping shifts if I took your early Saturday shift next week?**",
+              "translation_ru": "Ты согласился бы поменяться сменами, если я возьму твою раннюю субботнюю смену на следующей неделе?"
             },
             {
-              "text": "**Could we treat aggregated usage data as the basis for a compromise, provided that no individual user can be re-identified?**",
-              "translation_ru": "Можем ли мы взять агрегированные данные об использовании за основу компромисса при условии, что отдельных пользователей нельзя будет повторно идентифицировать?"
+              "text": "**We could use the simpler design as a compromise, as long as every control remains accessible by keyboard.**",
+              "translation_ru": "Можно договориться о более простом дизайне, если всеми элементами по-прежнему можно будет пользоваться с клавиатуры."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Könnten wir [X] als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass [Y]?",
-          "example": "Könnten wir die aktuellen Gehaltsbänder als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass wir die am schwersten zu besetzenden Stellen separat prüfen?",
-          "translation": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?",
+          "formula": "Könnten wir uns auf [X] einigen, sofern [Y]? / Ich könnte [X] zustimmen, wenn [Y].",
+          "example": "Könnten wir uns darauf einigen, den Garten an wechselnden Wochenenden zu nutzen, sofern wir beide die Werkzeuge wieder in den Schuppen räumen?",
+          "translation": "Можем договориться пользоваться садом по очереди через выходные, если каждый будет возвращать инструменты в сарай?",
           "examples": [
             {
-              "text": "**Könnten wir die aktuellen Gehaltsbänder als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass wir die am schwersten zu besetzenden Stellen separat prüfen?**",
-              "translation_ru": "Можем ли мы взять текущие диапазоны зарплат за основу компромисса при условии, что отдельно пересмотрим позиции, которые сложнее всего закрыть?"
+              "text": "**Könnten wir uns darauf einigen, den Garten an wechselnden Wochenenden zu nutzen, sofern wir beide die Werkzeuge wieder in den Schuppen räumen?**",
+              "translation_ru": "Можем договориться пользоваться садом по очереди через выходные, если каждый будет возвращать инструменты в сарай?"
             },
             {
-              "text": "**Könnten wir den kleineren Einführungsumfang als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die verschobenen Funktionen verbindliche Termine erhalten?**",
-              "translation_ru": "Можем ли мы взять уменьшенный объём запуска за основу компромисса при условии, что для отложенных функций будут зафиксированы сроки?"
+              "text": "**Ich wäre bereit, die Reise zu verschieben, solange wir vor Ablauf der Tickets einen neuen Termin festlegen.**",
+              "translation_ru": "Я согласен перенести поездку, если мы выберем новую дату до истечения срока действия билетов."
             },
             {
-              "text": "**Könnten wir drei Bürotage pro Monat als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die Teams die Termine selbst wählen können?**",
-              "translation_ru": "Можем ли мы взять три офисных дня в месяц за основу компромисса при условии, что команды смогут сами выбирать даты?"
+              "text": "**Was hältst du davon, die alten Familienfotos online zu lassen, vorausgesetzt, dass alle Abgebildeten einzelne Bilder entfernen lassen können?**",
+              "translation_ru": "Может, оставим старые семейные фотографии в интернете, но дадим каждому изображённому право попросить удалить снимок?"
             },
             {
-              "text": "**Könnten wir den überarbeiteten Preis des Lieferanten als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass Ersatzteile für das erste Jahr enthalten sind?**",
-              "translation_ru": "Можем ли мы взять обновлённую цену поставщика за основу компромисса при условии, что в неё войдут запасные части на первый год?"
+              "text": "**Könnten wir den späteren Liefertermin akzeptieren, wenn der Händler dafür die Montagekosten übernimmt?**",
+              "translation_ru": "Можем согласиться на более позднюю доставку при условии, что продавец оплатит установку?"
             },
             {
-              "text": "**Könnten wir den vorgeschlagenen Zeitplan als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass die Spätschicht vor der Abfahrt des letzten Zuges endet?**",
-              "translation_ru": "Можем ли мы взять предложенное расписание за основу компромисса при условии, что поздняя смена будет заканчиваться до отправления последнего поезда?"
+              "text": "**Ich könnte autofreie Sonntage in unserer Straße unterstützen, sofern Anwohner weiterhin zu ihren Garagen kommen.**",
+              "translation_ru": "Я мог бы поддержать перекрытие улицы для машин по воскресеньям, если жильцы сохранят доступ к гаражам."
             },
             {
-              "text": "**Könnten wir die Budgetobergrenze der Abteilung als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass verpflichtende Sicherheitsarbeiten zentral finanziert werden?**",
-              "translation_ru": "Можем ли мы взять бюджетный лимит отдела за основу компромисса при условии, что обязательные работы по безопасности будут профинансированы централизованно?"
+              "text": "**Wärst du bereit, die Schichten zu tauschen, wenn ich dafür nächste Woche deinen frühen Samstagsdienst übernehme?**",
+              "translation_ru": "Ты согласился бы поменяться сменами, если я возьму твою раннюю субботнюю смену на следующей неделе?"
             },
             {
-              "text": "**Könnten wir aggregierte Nutzungsdaten als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass einzelne Nutzerinnen und Nutzer nicht erneut identifiziert werden können?**",
-              "translation_ru": "Можем ли мы взять агрегированные данные об использовании за основу компромисса при условии, что отдельных пользователей нельзя будет повторно идентифицировать?"
+              "text": "**Wir könnten uns auf das schlichtere Design einigen, solange sich alle Bedienelemente weiterhin per Tastatur bedienen lassen.**",
+              "translation_ru": "Можно договориться о более простом дизайне, если всеми элементами по-прежнему можно будет пользоваться с клавиатуры."
             }
           ]
         }
       ],
       "formulas": [
-        "Could we treat [X] as the basis for a compromise, provided that [Y]?",
-        "Könnten wir [X] als Grundlage für einen Kompromiss nehmen, vorausgesetzt, dass [Y]?"
+        "Could we agree on [X], provided that [Y]? / I'd agree to [X] as long as [Y].",
+        "Könnten wir uns auf [X] einigen, sofern [Y]? / Ich könnte [X] zustimmen, wenn [Y]."
       ],
       "gen": {
         "status": "curated",
@@ -97,8 +97,8 @@
         "notes": "C1 communicative frame: Negotiation and decisions. Editorially rewritten for diverse spoken practice."
       },
       "title_en": "Could we treat [X] as the basis for a compromise, provided that [Y]?",
-      "description_en": "Turn disagreement into a conditional proposal: name what can be accepted and the safeguard needed for agreement.",
-      "description_ru": "Переводите разногласие в условное предложение: обозначьте приемлемую основу и условие, необходимое для согласия."
+      "description_en": "Propose a concrete, conditional compromise and name what each party needs to accept it.",
+      "description_ru": "Предлагайте уступку так, чтобы условие было конкретным и проверяемым; варьируйте просьбу, предложение и готовность согласиться."
     }
   ]
 }

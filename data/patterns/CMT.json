@@ -6,85 +6,85 @@
       "id": "FUNCMT001",
       "group_id": "CMT",
       "set_id": "CMT",
-      "title_ru": "Я позабочусь о том, чтобы команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «обязательства и обещания» в живом контексте.",
+      "title_ru": "Обеспечить конкретный результат",
+      "metaphor_ru": "Английское make sure (that) + придаточное указывает на результат, который нужно проверить или обеспечить. В немецком чаще употребляются dafür sorgen, dass… и sicherstellen, dass…; после dass сказуемое стоит в конце придаточного. Меняйте лицо, время, отрицание и степень обязательства.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I will make sure that [the team needs another day to decide].",
-          "example": "I will make sure that the team needs another day to decide.",
-          "translation": "Я позабочусь о том, чтобы команде нужен ещё день для решения.",
+          "formula": "[Speaker] make(s)/made sure (that) [required result].",
+          "example": "I'll make sure the spare key is with the neighbours before we leave.",
+          "translation": "Я позабочусь, чтобы перед нашим отъездом запасной ключ был у соседей.",
           "examples": [
             {
-              "text": "**I will make sure that the team needs another day to decide.**",
-              "translation_ru": "Я позабочусь о том, чтобы команде нужен ещё день для решения."
+              "text": "**I'll make sure the spare key is with the neighbours before we leave.**",
+              "translation_ru": "Я позабочусь, чтобы перед нашим отъездом запасной ключ был у соседей."
             },
             {
-              "text": "**I will make sure that the revised plan has not been shared yet.**",
-              "translation_ru": "Я позабочусь о том, чтобы обновлённым планом ещё не поделились."
+              "text": "**She made sure everyone could read the instructions without installing an app.**",
+              "translation_ru": "Она позаботилась о том, чтобы все могли прочитать инструкцию без установки приложения."
             },
             {
-              "text": "**I will make sure that we should compare the two options.**",
-              "translation_ru": "Я позабочусь о том, чтобы нам следует сравнить два варианта."
+              "text": "**Could you make sure the windows are closed before you go out?**",
+              "translation_ru": "Можешь, пожалуйста, проверить, чтобы окна были закрыты, прежде чем уйдёшь?"
             },
             {
-              "text": "**I will make sure that the client asked for more detail.**",
-              "translation_ru": "Я позабочусь о том, чтобы клиент попросил больше деталей."
+              "text": "**We need to make sure the new students know where to ask for help.**",
+              "translation_ru": "Нам нужно убедиться, что новые студенты знают, к кому обращаться за помощью."
             },
             {
-              "text": "**I will make sure that the pilot may continue next month.**",
-              "translation_ru": "Я позабочусь о том, чтобы пилотный проект может продолжиться в следующем месяце."
+              "text": "**He'd made sure his parents had a lift home after the concert.**",
+              "translation_ru": "Он заранее позаботился, чтобы родители смогли добраться домой после концерта."
             },
             {
-              "text": "**I will make sure that the data need another check.**",
-              "translation_ru": "Я позабочусь о том, чтобы данные нужно проверить ещё раз."
+              "text": "**We should make sure the accessibility information is accurate before publishing the map.**",
+              "translation_ru": "Перед публикацией карты стоит убедиться, что сведения о доступности точны."
             },
             {
-              "text": "**I will make sure that the meeting was moved.**",
-              "translation_ru": "Я позабочусь о том, чтобы встречу перенесли."
+              "text": "**We can make sure the app works offline on the most common phones, but we can't test every model.**",
+              "translation_ru": "Мы можем проверить, что приложение работает без интернета на самых распространённых телефонах, но не сможем протестировать каждую модель."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich werde dafür sorgen, dass [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Ich werde dafür sorgen, dass das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Я позабочусь о том, чтобы команде нужен ещё день для решения.",
+          "formula": "[Person] sorgt/sorgte dafür, dass [gewünschtes Ergebnis] / stellt sicher, dass [...].",
+          "example": "Ich sorge dafür, dass der Ersatzschlüssel vor unserer Abreise bei den Nachbarn liegt.",
+          "translation": "Я позабочусь, чтобы перед нашим отъездом запасной ключ был у соседей.",
           "examples": [
             {
-              "text": "**Ich werde dafür sorgen, dass das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Я позабочусь о том, чтобы команде нужен ещё день для решения."
+              "text": "**Ich sorge dafür, dass der Ersatzschlüssel vor unserer Abreise bei den Nachbarn liegt.**",
+              "translation_ru": "Я позабочусь, чтобы перед нашим отъездом запасной ключ был у соседей."
             },
             {
-              "text": "**Ich werde dafür sorgen, dass der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Я позабочусь о том, чтобы обновлённым планом ещё не поделились."
+              "text": "**Sie hat dafür gesorgt, dass alle die Anleitung ohne zusätzliche App lesen konnten.**",
+              "translation_ru": "Она позаботилась о том, чтобы все могли прочитать инструкцию без установки приложения."
             },
             {
-              "text": "**Ich werde dafür sorgen, dass wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Я позабочусь о том, чтобы нам следует сравнить два варианта."
+              "text": "**Kannst du bitte dafür sorgen, dass die Fenster zu sind, bevor du gehst?**",
+              "translation_ru": "Можешь, пожалуйста, проверить, чтобы окна были закрыты, прежде чем уйдёшь?"
             },
             {
-              "text": "**Ich werde dafür sorgen, dass der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Я позабочусь о том, чтобы клиент попросил больше деталей."
+              "text": "**Wir müssen dafür sorgen, dass die neuen Studierenden wissen, an wen sie sich wenden können.**",
+              "translation_ru": "Нам нужно убедиться, что новые студенты знают, к кому обращаться за помощью."
             },
             {
-              "text": "**Ich werde dafür sorgen, dass das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Я позабочусь о том, чтобы пилотный проект может продолжиться в следующем месяце."
+              "text": "**Er hatte dafür gesorgt, dass seine Eltern nach dem Konzert sicher nach Hause kamen.**",
+              "translation_ru": "Он заранее позаботился, чтобы родители благополучно добрались домой после концерта."
             },
             {
-              "text": "**Ich werde dafür sorgen, dass die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Я позабочусь о том, чтобы данные нужно проверить ещё раз."
+              "text": "**Wir sollten sicherstellen, dass die Angaben zur Barrierefreiheit stimmen, bevor wir die Karte veröffentlichen.**",
+              "translation_ru": "Перед публикацией карты стоит убедиться, что сведения о доступности точны."
             },
             {
-              "text": "**Ich werde dafür sorgen, dass die Sitzung verschoben wurde.**",
-              "translation_ru": "Я позабочусь о том, чтобы встречу перенесли."
+              "text": "**Wir können sicherstellen, dass die App auf den gängigsten Handys offline funktioniert, aber nicht jedes Modell testen.**",
+              "translation_ru": "Мы можем проверить, что приложение работает без интернета на самых распространённых телефонах, но не сможем протестировать каждую модель."
             }
           ]
         }
       ],
       "formulas": [
-        "I will make sure that [the team needs another day to decide].",
-        "Ich werde dafür sorgen, dass [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "[Speaker] make(s)/made sure (that) [required result].",
+        "[Person] sorgt/sorgte dafür, dass [gewünschtes Ergebnis] / stellt sicher, dass [...]."
       ],
       "gen": {
         "status": "curated",

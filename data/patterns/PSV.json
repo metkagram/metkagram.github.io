@@ -385,85 +385,85 @@
     {
       "id": "PAS005",
       "group_id": "PAS",
-      "title_ru": "Запланированное действие",
-      "metaphor_ru": "Как расписание поезда: всё запланировано и идёт по графику. Ты знаешь, что поезд прибудет точно в назначенное время, никто не может изменить маршрут в последний момент.",
+      "title_ru": "Планируемое действие без указания исполнителя",
+      "metaphor_ru": "Сообщайте, что запланировано на определённый срок, с английским be scheduled to be + причастие. По-немецки естественнее sollen + Partizip II + werden или es ist vorgesehen, dass…",
       "langs": [
         {
           "lang": "en",
-          "formula": "The report is scheduled to be + Past Participle",
-          "example": "The report is scheduled to be delivered next Monday.",
-          "translation": "Отчёт запланировано отправить в следующий понедельник.",
+          "formula": "[Thing] is / was / isn't scheduled to be + past participle + [time].",
+          "example": "The village bridge is scheduled to be inspected before winter.",
+          "translation": "Деревенский мост планируют проверить до наступления зимы.",
           "examples": [
             {
-              "text": "The **software patch** is scheduled to be **deployed** tonight.",
-              "translation_ru": "Патч программного обеспечения запланирован на установку сегодня ночью."
+              "text": "The village bridge is scheduled to be inspected before winter.",
+              "translation_ru": "Деревенский мост планируют проверить до наступления зимы."
             },
             {
-              "text": "Is the **delivery** scheduled to be **completed** by **Friday**?",
-              "translation_ru": "Доставка запланирована на завершение к пятнице?"
+              "text": "The museum's new wing is scheduled to be opened in April.",
+              "translation_ru": "Новое крыло музея планируют открыть в апреле."
             },
             {
-              "text": "Our **strategy meeting** is scheduled to be **held** at **2 PM**.",
-              "translation_ru": "Наша стратегическая встреча запланирована на 2 часа дня."
+              "text": "Is the leaking roof scheduled to be repaired before the next storm?",
+              "translation_ru": "Протекающую крышу собираются починить до следующего шторма?"
             },
             {
-              "text": "The **AI update** is scheduled to be **released** next **month**.",
-              "translation_ru": "Обновление ИИ запланировано на выпуск в следующем месяце."
+              "text": "The medical records are scheduled to be transferred to the new system overnight.",
+              "translation_ru": "Медицинские карты планируют перенести в новую систему за ночь."
             },
             {
-              "text": "Their **contract** is scheduled to be **signed** today.",
-              "translation_ru": "Их контракт запланирован на подписание сегодня."
+              "text": "The playground is scheduled to be reopened once the safety checks are complete.",
+              "translation_ru": "Детскую площадку планируют снова открыть после проверки безопасности."
             },
             {
-              "text": "The **network maintenance** is scheduled to be **done** over the **weekend**.",
-              "translation_ru": "Техническое обслуживание сети запланировано на выходные."
+              "text": "The final episode was scheduled to be released last Friday, but it was delayed.",
+              "translation_ru": "Последняя серия должна была выйти в прошлую пятницу, но выпуск отложили."
             },
             {
-              "text": "Is your **appointment** scheduled to be **canceled**?",
-              "translation_ru": "Ваше назначение запланировано на отмену?"
+              "text": "The footpath isn't scheduled to be resurfaced until next spring.",
+              "translation_ru": "Пешеходную дорожку планируют обновить только следующей весной."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Bericht ist geplant, am + Datum + geliefert zu werden",
-          "example": "Der Bericht ist geplant, nächsten Montag geliefert zu werden.",
-          "translation": "Отчёт запланировано отправить в следующий понедельник.",
+          "formula": "[Sache] soll / sollte + Partizip II + werden; Es ist vorgesehen, dass + Passivsatz.",
+          "example": "Die Brücke im Dorf soll noch vor dem Winter überprüft werden.",
+          "translation": "Мост в деревне планируют проверить ещё до зимы.",
           "examples": [
             {
-              "text": "Das **Software-Update** ist geplant, heute Nacht **installiert** zu werden.",
-              "translation_ru": "Обновление программного обеспечения запланировано на установку сегодня ночью."
+              "text": "Die Brücke im Dorf soll noch vor dem Winter überprüft werden.",
+              "translation_ru": "Мост в деревне планируют проверить ещё до зимы."
             },
             {
-              "text": "Ist die **Lieferung** geplant, bis **Freitag** **abgeschlossen** zu werden?",
-              "translation_ru": "Доставка запланирована на завершение к пятнице?"
+              "text": "Es ist vorgesehen, dass der neue Museumsflügel im April eröffnet wird.",
+              "translation_ru": "Новое крыло музея предполагается открыть в апреле."
             },
             {
-              "text": "Unser **Strategiemeeting** ist geplant, um **14 Uhr** **stattzufinden**.",
-              "translation_ru": "Наша стратегическая встреча запланирована на 14 часов."
+              "text": "Ist geplant, dass das undichte Dach noch vor dem nächsten Sturm repariert wird?",
+              "translation_ru": "Протекающую крышу собираются отремонтировать до следующего шторма?"
             },
             {
-              "text": "Das **KI-Update** ist geplant, nächsten **Monat** **veröffentlicht** zu werden.",
-              "translation_ru": "Обновление ИИ запланировано на выпуск в следующем месяце."
+              "text": "Die Patientenakten sollen über Nacht in das neue System übertragen werden.",
+              "translation_ru": "Медицинские карты должны перенести в новую систему за ночь."
             },
             {
-              "text": "Ihr **Vertrag** ist geplant, heute **unterschrieben** zu werden.",
-              "translation_ru": "Их контракт запланирован на подписание сегодня."
+              "text": "Der Spielplatz soll nach Abschluss der Sicherheitsprüfungen wieder geöffnet werden.",
+              "translation_ru": "Детскую площадку планируют открыть после проверки безопасности."
             },
             {
-              "text": "Die **Netzwerkwartung** ist geplant, am **Wochenende** **durchgeführt** zu werden.",
-              "translation_ru": "Техническое обслуживание сети запланировано на выходные."
+              "text": "Die letzte Folge sollte eigentlich letzten Freitag veröffentlicht werden, wurde aber verschoben.",
+              "translation_ru": "Последняя серия должна была выйти ещё в прошлую пятницу, но выход перенесли."
             },
             {
-              "text": "Ist Ihr **Termin** geplant, **abgesagt** zu werden?",
-              "translation_ru": "Ваше назначение запланировано на отмену?"
+              "text": "Der Gehweg soll erst im nächsten Frühjahr erneuert werden.",
+              "translation_ru": "Тротуар планируют обновить только следующей весной."
             }
           ]
         }
       ],
       "formulas": [
-        "The report is scheduled to be + Past Participle",
-        "Der Bericht ist geplant, am + Datum + geliefert zu werden"
+        "[Thing] is / was / isn't scheduled to be + past participle + [time].",
+        "[Sache] soll / sollte + Partizip II + werden; Es ist vorgesehen, dass + Passivsatz."
       ],
       "gen": {
         "status": "generated",
@@ -480,85 +480,85 @@
     {
       "id": "PAS006",
       "group_id": "PAS",
-      "title_ru": "Ожидание события",
-      "metaphor_ru": "Как часы, которые все смотрят в ожидании часа Х. Все знают — событие неизбежно, осталось только дождаться момента.",
+      "title_ru": "Передать ожидание без указания источника",
+      "metaphor_ru": "Безличный пассив It is expected that / Es wird erwartet, dass передаёт прогноз или ожидание без ссылки на конкретного говорящего. Это не обещание и не обязанность; время, отрицание и вопрос меняют коммуникативный оттенок.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It is expected that + subject + will + verb",
-          "example": "It is expected that the project will be completed by December.",
-          "translation": "Ожидается, что проект будет завершён к декабрю.",
+          "formula": "It is/was (not) expected that + clause. / Is it expected that + clause?",
+          "example": "It is expected that the library will reopen after the roof repairs in April.",
+          "translation": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши.",
           "examples": [
             {
-              "text": "It is expected that **the new software** will **launch** next month.",
-              "translation_ru": "Ожидается, что новое программное обеспечение запустят в следующем месяце."
+              "text": "It is expected that the library will reopen after the roof repairs in April.",
+              "translation_ru": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши."
             },
             {
-              "text": "Is it expected that **you** will **attend** the conference?",
-              "translation_ru": "Ожидается, что ты посетишь конференцию?"
+              "text": "It isn't expected that the storm will reach the coast before midnight.",
+              "translation_ru": "Не ожидается, что шторм достигнет побережья до полуночи."
             },
             {
-              "text": "It is not expected that **he** will **participate** in the meeting.",
-              "translation_ru": "Не ожидается, что он примет участие в собрании."
+              "text": "Is it expected that the new bus route will serve the hospital as well?",
+              "translation_ru": "Ожидается ли, что новый автобусный маршрут будет проходить и через больницу?"
             },
             {
-              "text": "It is expected that **they** will **deliver** the goods by tomorrow.",
-              "translation_ru": "Ожидается, что они доставят товары к завтрашнему дню."
+              "text": "It was expected that the witnesses would give separate accounts of the incident.",
+              "translation_ru": "Предполагалось, что свидетели расскажут о происшествии независимо друг от друга."
             },
             {
-              "text": "It is expected that **we** will **complete** the project on time.",
-              "translation_ru": "Ожидается, что мы завершим проект вовремя."
+              "text": "It is expected that more residents will use the shared garden once the lighting improves.",
+              "translation_ru": "Ожидается, что после улучшения освещения общим садом будут пользоваться больше жильцов."
             },
             {
-              "text": "Why is it expected that **the results** will **be delayed**?",
-              "translation_ru": "Почему ожидается, что результаты задержатся?"
+              "text": "Why is it expected that the translation will take longer than the original draft?",
+              "translation_ru": "Почему предполагается, что перевод займёт больше времени, чем подготовка первого текста?"
             },
             {
-              "text": "It is expected that **the network** will **be upgraded** soon.",
-              "translation_ru": "Ожидается, что сеть скоро обновят."
+              "text": "It is expected that the repaired bridge will be open to cyclists by summer.",
+              "translation_ru": "Ожидается, что к лету отремонтированный мост снова откроют для велосипедистов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es wird erwartet, dass + subject + wird + Verb",
-          "example": "Es wird erwartet, dass das Projekt bis Dezember abgeschlossen wird.",
-          "translation": "Ожидается, что проект будет завершён к декабрю.",
+          "formula": "Es wird/wurde (nicht) erwartet, dass + Nebensatz (Verb am Ende). / Wird erwartet, dass ...?",
+          "example": "Es wird erwartet, dass die Bibliothek nach der Dachreparatur im April wieder öffnet.",
+          "translation": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши.",
           "examples": [
             {
-              "text": "Es wird erwartet, dass **die neue Software** nächsten Monat **startet**.",
-              "translation_ru": "Ожидается, что новое программное обеспечение запустят в следующем месяце."
+              "text": "Es wird erwartet, dass die Bibliothek nach der Dachreparatur im April wieder öffnet.",
+              "translation_ru": "Ожидается, что библиотека снова откроется в апреле после ремонта крыши."
             },
             {
-              "text": "Wird es erwartet, dass **du** an der Konferenz **teilnimmst**?",
-              "translation_ru": "Ожидается, что ты посетишь конференцию?"
+              "text": "Es wird nicht erwartet, dass der Sturm die Küste vor Mitternacht erreicht.",
+              "translation_ru": "Не ожидается, что шторм достигнет побережья до полуночи."
             },
             {
-              "text": "Es wird nicht erwartet, dass **er** am Meeting **teilnimmt**.",
-              "translation_ru": "Не ожидается, что он примет участие в собрании."
+              "text": "Wird erwartet, dass die neue Buslinie auch das Krankenhaus anfährt?",
+              "translation_ru": "Ожидается ли, что новый автобусный маршрут будет проходить и через больницу?"
             },
             {
-              "text": "Es wird erwartet, dass **sie** die Waren bis morgen **liefern**.",
-              "translation_ru": "Ожидается, что они доставят товары к завтрашнему дню."
+              "text": "Es wurde erwartet, dass die Zeugen den Vorfall unabhängig voneinander schildern würden.",
+              "translation_ru": "Предполагалось, что свидетели расскажут о происшествии независимо друг от друга."
             },
             {
-              "text": "Es wird erwartet, dass **wir** das Projekt rechtzeitig **abschließen**.",
-              "translation_ru": "Ожидается, что мы завершим проект вовремя."
+              "text": "Es wird erwartet, dass mehr Anwohner den Gemeinschaftsgarten nutzen, sobald die Beleuchtung verbessert ist.",
+              "translation_ru": "Ожидается, что после улучшения освещения общим садом будут пользоваться больше жильцов."
             },
             {
-              "text": "Warum wird erwartet, dass **die Ergebnisse** sich **verspäten**?",
-              "translation_ru": "Почему ожидается, что результаты задержатся?"
+              "text": "Warum wird erwartet, dass die Übersetzung länger dauert als der erste Entwurf?",
+              "translation_ru": "Почему предполагается, что перевод займёт больше времени, чем подготовка первого текста?"
             },
             {
-              "text": "Es wird erwartet, dass **das Netzwerk** bald **aufgerüstet** wird.",
-              "translation_ru": "Ожидается, что сеть скоро обновят."
+              "text": "Es wird erwartet, dass die reparierte Brücke bis zum Sommer wieder für Radfahrer freigegeben wird.",
+              "translation_ru": "Ожидается, что к лету отремонтированный мост снова откроют для велосипедистов."
             }
           ]
         }
       ],
       "formulas": [
-        "It is expected that + subject + will + verb",
-        "Es wird erwartet, dass + subject + wird + Verb"
+        "It is/was (not) expected that + clause. / Is it expected that + clause?",
+        "Es wird/wurde (nicht) erwartet, dass + Nebensatz (Verb am Ende). / Wird erwartet, dass ...?"
       ],
       "gen": {
         "status": "generated",

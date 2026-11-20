@@ -6,85 +6,85 @@
       "id": "QSTQOBJ001",
       "group_id": "QOBJ",
       "set_id": "QOBJ",
-      "title_ru": "Что мы знаем о том, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что мы знаем о том, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Отделить известные факты от предположений",
+      "metaphor_ru": "What do we actually know about вводит предмет вопроса и возвращает разговор от слухов к проверенным сведениям. Немецкое eigentlich выполняет сходную разговорную функцию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What do we know about the fact that [the team needs another day to decide]?",
-          "example": "What do we know about the fact that the team needs another day to decide?",
-          "translation": "Что мы знаем о том, что команде нужен ещё день для решения?",
+          "formula": "What do we actually know about [X]?",
+          "example": "What do we actually know about the cause of the water leak?",
+          "translation": "Что мы вообще знаем о причине протечки?",
           "examples": [
             {
-              "text": "**What do we know about the fact that the team needs another day to decide?**",
-              "translation_ru": "Что мы знаем о том, что команде нужен ещё день для решения?"
+              "text": "What do we actually know about the cause of the water leak?",
+              "translation_ru": "Что мы вообще знаем о причине протечки?"
             },
             {
-              "text": "**What do we know about the fact that the revised plan has not been shared yet?**",
-              "translation_ru": "Что мы знаем о том, что обновлённым планом ещё не поделились?"
+              "text": "What do we actually know about the effects of this medicine on sleep?",
+              "translation_ru": "Что мы на самом деле знаем о влиянии этого лекарства на сон?"
             },
             {
-              "text": "**What do we know about the fact that we should compare the two options?**",
-              "translation_ru": "Что мы знаем о том, что нам следует сравнить два варианта?"
+              "text": "What do we actually know about the people who built this bridge?",
+              "translation_ru": "Что мы действительно знаем о людях, построивших этот мост?"
             },
             {
-              "text": "**What do we know about the fact that the client asked for more detail?**",
-              "translation_ru": "Что мы знаем о том, что клиент попросил больше деталей?"
+              "text": "What do we actually know about the new school's admission rules?",
+              "translation_ru": "Что нам точно известно о правилах приёма в новую школу?"
             },
             {
-              "text": "**What do we know about the fact that the pilot may continue next month?**",
-              "translation_ru": "Что мы знаем о том, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "What do we actually know about the risks of storing photos in the cloud?",
+              "translation_ru": "Что нам действительно известно о рисках хранения фотографий в облаке?"
             },
             {
-              "text": "**What do we know about the fact that the data need another check?**",
-              "translation_ru": "Что мы знаем о том, что данные нужно проверить ещё раз?"
+              "text": "What do we actually know about her reasons for leaving?",
+              "translation_ru": "Что мы вообще знаем о причинах её ухода?"
             },
             {
-              "text": "**What do we know about the fact that the meeting was moved?**",
-              "translation_ru": "Что мы знаем о том, что встречу перенесли?"
+              "text": "What do we actually know about life in that village a century ago?",
+              "translation_ru": "Что нам известно о жизни в той деревне сто лет назад?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was wissen wir darüber, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was wissen wir darüber, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что мы знаем о том, что команде нужен ещё день для решения?",
+          "formula": "Was wissen wir eigentlich über [X]?",
+          "example": "Was wissen wir eigentlich über die Ursache des Wasserlecks?",
+          "translation": "Что нам действительно известно о причине протечки?",
           "examples": [
             {
-              "text": "**Was wissen wir darüber, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что мы знаем о том, что команде нужен ещё день для решения?"
+              "text": "Was wissen wir eigentlich über die Ursache des Wasserlecks?",
+              "translation_ru": "Что нам действительно известно о причине протечки?"
             },
             {
-              "text": "**Was wissen wir darüber, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что мы знаем о том, что обновлённым планом ещё не поделились?"
+              "text": "Was wissen wir eigentlich über die Wirkung dieses Medikaments auf den Schlaf?",
+              "translation_ru": "Что нам известно о влиянии этого препарата на сон?"
             },
             {
-              "text": "**Was wissen wir darüber, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что мы знаем о том, что нам следует сравнить два варианта?"
+              "text": "Was wissen wir eigentlich über die Menschen, die diese Brücke gebaut haben?",
+              "translation_ru": "Что мы знаем о людях, которые построили этот мост?"
             },
             {
-              "text": "**Was wissen wir darüber, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что мы знаем о том, что клиент попросил больше деталей?"
+              "text": "Was wissen wir eigentlich über die Aufnahmebedingungen der neuen Schule?",
+              "translation_ru": "Что мы на самом деле знаем об условиях приёма в новую школу?"
             },
             {
-              "text": "**Was wissen wir darüber, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что мы знаем о том, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Was wissen wir eigentlich über die Risiken der Speicherung von Fotos in der Cloud?",
+              "translation_ru": "Что мы точно знаем о рисках хранения фотографий в облачном сервисе?"
             },
             {
-              "text": "**Was wissen wir darüber, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что мы знаем о том, что данные нужно проверить ещё раз?"
+              "text": "Was wissen wir eigentlich über ihre Gründe für den Weggang?",
+              "translation_ru": "Что мы на самом деле знаем о том, почему она ушла?"
             },
             {
-              "text": "**Was wissen wir darüber, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Что мы знаем о том, что встречу перенесли?"
+              "text": "Was wissen wir eigentlich über das Leben in diesem Dorf vor hundert Jahren?",
+              "translation_ru": "Что нам действительно известно о жизни в этой деревне сто лет назад?"
             }
           ]
         }
       ],
       "formulas": [
-        "What do we know about the fact that [the team needs another day to decide]?",
-        "Was wissen wir darüber, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What do we actually know about [X]?",
+        "Was wissen wir eigentlich über [X]?"
       ],
       "gen": {
         "status": "curated",
@@ -101,85 +101,85 @@
       "id": "QSTQOBJ011",
       "group_id": "QOBJ",
       "set_id": "QOBJ",
-      "title_ru": "Что нам следует сделать, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что нам следует сделать, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить о действии на случай конкретной проблемы",
+      "metaphor_ru": "What should/could/would [person] do if…? задаёт практический вопрос о следующем шаге, а не просто о факте. Реальные условия допускают present в if-части, гипотетические — past/second conditional. В немецком различайте sollen/können и sollten/könnten/würden, а сказуемое после wenn ставьте в конец.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What should we do if [the team needs another day to decide]?",
-          "example": "What should we do if the team needs another day to decide?",
-          "translation": "Что нам следует сделать, если команде нужен ещё день для решения?",
+          "formula": "What [should / can / could / would] [person] do if [condition]?",
+          "example": "What should we do if the landlord doesn't fix the leak this week?",
+          "translation": "Что нам делать, если хозяин квартиры не устранит протечку на этой неделе?",
           "examples": [
             {
-              "text": "**What should we do if the team needs another day to decide?**",
-              "translation_ru": "Что нам следует сделать, если команде нужен ещё день для решения?"
+              "text": "**What should we do if the landlord doesn't fix the leak this week?**",
+              "translation_ru": "Что нам делать, если хозяин квартиры не устранит протечку на этой неделе?"
             },
             {
-              "text": "**What should we do if the revised plan has not been shared yet?**",
-              "translation_ru": "Что нам следует сделать, если обновлённым планом ещё не поделились?"
+              "text": "**What would you do if a friend shared a private message without asking?**",
+              "translation_ru": "Что бы ты сделал, если бы друг переслал личное сообщение без разрешения?"
             },
             {
-              "text": "**What should we do if we should compare the two options?**",
-              "translation_ru": "Что нам следует сделать, если нам следует сравнить два варианта?"
+              "text": "**What can I do if the app keeps losing my notes?**",
+              "translation_ru": "Что мне делать, если приложение постоянно теряет мои заметки?"
             },
             {
-              "text": "**What should we do if the client asked for more detail?**",
-              "translation_ru": "Что нам следует сделать, если клиент попросил больше деталей?"
+              "text": "**What should the school do if some students cannot access the online materials?**",
+              "translation_ru": "Как должна поступить школа, если часть учеников не может открыть онлайн-материалы?"
             },
             {
-              "text": "**What should we do if the pilot may continue next month?**",
-              "translation_ru": "Что нам следует сделать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What could we do if the train is cancelled after the last bus has left?**",
+              "translation_ru": "Что мы могли бы сделать, если поезд отменят, когда последний автобус уже уйдёт?"
             },
             {
-              "text": "**What should we do if the data need another check?**",
-              "translation_ru": "Что нам следует сделать, если данные нужно проверить ещё раз?"
+              "text": "**What should I say if they ask why I changed my mind?**",
+              "translation_ru": "Что мне сказать, если меня спросят, почему я передумал?"
             },
             {
-              "text": "**What should we do if the meeting was moved?**",
-              "translation_ru": "Что нам следует сделать, если встречу перенесли?"
+              "text": "**What would the neighbours do if the shared garden were sold?**",
+              "translation_ru": "Что бы сделали соседи, если бы общий сад продали?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was sollten wir tun, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was sollten wir tun, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что нам следует сделать, если команде нужен ещё день для решения?",
+          "formula": "Was [sollten / könnten / würden] [wir / Sie / andere] tun, wenn [Nebensatz]?",
+          "example": "Was sollten wir tun, wenn der Vermieter das Leck diese Woche nicht repariert?",
+          "translation": "Что нам делать, если хозяин квартиры не устранит протечку на этой неделе?",
           "examples": [
             {
-              "text": "**Was sollten wir tun, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что нам следует сделать, если команде нужен ещё день для решения?"
+              "text": "**Was sollten wir tun, wenn der Vermieter das Leck diese Woche nicht repariert?**",
+              "translation_ru": "Что нам делать, если хозяин квартиры не устранит протечку на этой неделе?"
             },
             {
-              "text": "**Was sollten wir tun, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что нам следует сделать, если обновлённым планом ещё не поделились?"
+              "text": "**Was würdest du tun, wenn ein Freund ohne zu fragen eine private Nachricht weiterleiten würde?**",
+              "translation_ru": "Что бы ты сделал, если бы друг переслал личное сообщение без разрешения?"
             },
             {
-              "text": "**Was sollten wir tun, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что нам следует сделать, если нам следует сравнить два варианта?"
+              "text": "**Was kann ich tun, wenn die App meine Notizen immer wieder verliert?**",
+              "translation_ru": "Что мне делать, если приложение постоянно теряет мои заметки?"
             },
             {
-              "text": "**Was sollten wir tun, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что нам следует сделать, если клиент попросил больше деталей?"
+              "text": "**Was sollte die Schule tun, wenn manche Schüler keinen Zugang zu den Online-Materialien haben?**",
+              "translation_ru": "Как должна поступить школа, если часть учеников не может открыть онлайн-материалы?"
             },
             {
-              "text": "**Was sollten wir tun, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что нам следует сделать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was könnten wir tun, wenn der Zug ausfällt, nachdem der letzte Bus abgefahren ist?**",
+              "translation_ru": "Что мы могли бы сделать, если поезд отменят, когда последний автобус уже уйдёт?"
             },
             {
-              "text": "**Was sollten wir tun, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что нам следует сделать, если данные нужно проверить ещё раз?"
+              "text": "**Was soll ich sagen, wenn sie fragen, warum ich meine Meinung geändert habe?**",
+              "translation_ru": "Что мне сказать, если меня спросят, почему я передумал?"
             },
             {
-              "text": "**Was sollten wir tun, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Что нам следует сделать, если встречу перенесли?"
+              "text": "**Was würden die Nachbarn tun, wenn der Gemeinschaftsgarten verkauft würde?**",
+              "translation_ru": "Что бы сделали соседи, если бы общий сад продали?"
             }
           ]
         }
       ],
       "formulas": [
-        "What should we do if [the team needs another day to decide]?",
-        "Was sollten wir tun, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What [should / can / could / would] [person] do if [condition]?",
+        "Was [sollten / könnten / würden] [wir / Sie / andere] tun, wenn [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

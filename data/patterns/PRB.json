@@ -6,85 +6,85 @@
       "id": "C1PRB001",
       "group_id": "PRB",
       "set_id": "PRB",
-      "title_ru": "Есть реальная вероятность, что [X], если [Y]",
-      "metaphor_ru": "Говорите о вероятном исходе и сразу называйте условие, от которого эта вероятность зависит.",
+      "title_ru": "Вероятный исход при условии",
+      "metaphor_ru": "Называйте правдоподобный исход вместе с условием, которое может на него повлиять. Не выдавайте возможность за гарантию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "There is a realistic chance that [X] if [Y].",
-          "example": "There is a realistic chance that the river will reach the lower flood barrier if the rain continues through the night.",
-          "translation": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь.",
+          "formula": "There's a real/good chance (that) [X] if [Y].",
+          "example": "There's a good chance we'll catch the last train if we leave the gallery now.",
+          "translation": "Вполне возможно, что мы успеем на последний поезд, если сейчас выйдем из галереи.",
           "examples": [
             {
-              "text": "**There is a realistic chance that the river will reach the lower flood barrier if the rain continues through the night.**",
-              "translation_ru": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь."
+              "text": "**There's a good chance we'll catch the last train if we leave the gallery now.**",
+              "translation_ru": "Вполне возможно, что мы успеем на последний поезд, если сейчас выйдем из галереи."
             },
             {
-              "text": "**There is a realistic chance that the supplier can recover the schedule if the replacement parts arrive by Tuesday.**",
-              "translation_ru": "Есть реальная вероятность, что поставщик вернётся в график, если запасные части прибудут ко вторнику."
+              "text": "**There is a real chance the seedlings will survive if we move them out of the midday sun.**",
+              "translation_ru": "Есть шанс, что рассада выживет, если убрать её с полуденного солнца."
             },
             {
-              "text": "**There is a realistic chance that churn will fall next quarter if the billing complaints are resolved rather than merely acknowledged.**",
-              "translation_ru": "Есть реальная вероятность, что отток снизится в следующем квартале, если жалобы на биллинг будут действительно решены, а не просто зарегистрированы."
+              "text": "**There's a decent chance she'll agree to talk if we give her time to read the message first.**",
+              "translation_ru": "Вполне возможно, она согласится поговорить, если сначала дать ей время прочитать сообщение."
             },
             {
-              "text": "**There is a realistic chance that we could fill the role internally if the senior analyst is willing to mentor someone for six months.**",
-              "translation_ru": "Есть реальная вероятность, что мы сможем закрыть позицию внутренним кандидатом, если старший аналитик готов будет наставлять его в течение шести месяцев."
+              "text": "**We stand a good chance of finding a quieter flat if we're flexible about the neighbourhood.**",
+              "translation_ru": "У нас хорошие шансы найти более тихую квартиру, если не привязываться к одному району."
             },
             {
-              "text": "**There is a realistic chance that Friday’s release will be postponed if the rollback test fails again tomorrow.**",
-              "translation_ru": "Есть реальная вероятность, что пятничный релиз перенесут, если завтра тест отката снова завершится неудачно."
+              "text": "**There's a real chance our pronunciation will improve if we record ourselves and pay attention to sentence rhythm.**",
+              "translation_ru": "Наше произношение вполне может улучшиться, если записывать себя и следить за ритмом фраз."
             },
             {
-              "text": "**There is a realistic chance that the apparent effect will disappear if the study is repeated with a larger and more diverse sample.**",
-              "translation_ru": "Есть реальная вероятность, что наблюдаемый эффект исчезнет, если исследование повторят на более крупной и разнообразной выборке."
+              "text": "**Do you think there's a good chance the library could open on Sundays if enough volunteers joined the rota?**",
+              "translation_ru": "Как думаешь, библиотека могла бы открываться по воскресеньям, если бы нашлось достаточно волонтёров для дежурств?"
             },
             {
-              "text": "**There is a realistic chance that congestion will ease once the school term ends, if commuter traffic remains at its current level.**",
-              "translation_ru": "Есть реальная вероятность, что пробки уменьшатся после окончания учебного периода, если поток поездок на работу останется на нынешнем уровне."
+              "text": "**There is a real chance the battery will last all day if we stop the app from running in the background.**",
+              "translation_ru": "Вполне возможно, заряда хватит на весь день, если приложение перестанет постоянно работать в фоновом режиме."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es besteht eine realistische Chance, dass [X], wenn [Y].",
-          "example": "Es besteht eine realistische Chance, dass der Fluss die untere Hochwasserschutzmauer erreicht, wenn der Regen die ganze Nacht anhält.",
-          "translation": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь.",
+          "formula": "Es ist gut möglich, dass [X], wenn [Y].",
+          "example": "Es ist gut möglich, dass wir den letzten Zug noch erwischen, wenn wir die Ausstellung jetzt verlassen.",
+          "translation": "Вполне возможно, что мы успеем на последний поезд, если сейчас выйдем из галереи.",
           "examples": [
             {
-              "text": "**Es besteht eine realistische Chance, dass der Fluss die untere Hochwasserschutzmauer erreicht, wenn der Regen die ganze Nacht anhält.**",
-              "translation_ru": "Есть реальная вероятность, что река достигнет нижней противопаводковой дамбы, если дождь продолжится всю ночь."
+              "text": "**Es ist gut möglich, dass wir den letzten Zug noch erwischen, wenn wir die Ausstellung jetzt verlassen.**",
+              "translation_ru": "Вполне возможно, что мы успеем на последний поезд, если сейчас выйдем из галереи."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass der Lieferant den Zeitplan wieder einhalten kann, wenn die Ersatzteile bis Dienstag eintreffen.**",
-              "translation_ru": "Есть реальная вероятность, что поставщик вернётся в график, если запасные части прибудут ко вторнику."
+              "text": "**Es ist durchaus möglich, dass die Setzlinge überleben, wenn wir sie vor der Mittagssonne schützen.**",
+              "translation_ru": "Есть шанс, что рассада выживет, если убрать её с полуденного солнца."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass die Abwanderung im nächsten Quartal sinkt, wenn die Beschwerden zur Abrechnung gelöst und nicht nur bestätigt werden.**",
-              "translation_ru": "Есть реальная вероятность, что отток снизится в следующем квартале, если жалобы на биллинг будут действительно решены, а не просто зарегистрированы."
+              "text": "**Es ist gut möglich, dass sie zu einem Gespräch bereit ist, wenn sie erst einmal Zeit bekommt, die Nachricht zu lesen.**",
+              "translation_ru": "Вполне возможно, она согласится поговорить, если сначала дать ей время прочитать сообщение."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass wir die Stelle intern besetzen könnten, wenn die Senior-Analystin oder der Senior-Analyst bereit ist, sechs Monate lang jemanden zu betreuen.**",
-              "translation_ru": "Есть реальная вероятность, что мы сможем закрыть позицию внутренним кандидатом, если старший аналитик готов будет наставлять его в течение шести месяцев."
+              "text": "**Wir haben gute Chancen, eine ruhigere Wohnung zu finden, wenn wir beim Stadtteil flexibel bleiben.**",
+              "translation_ru": "У нас хорошие шансы найти более тихую квартиру, если не привязываться к одному району."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass die Veröffentlichung am Freitag verschoben wird, wenn der Rollback-Test morgen erneut fehlschlägt.**",
-              "translation_ru": "Есть реальная вероятность, что пятничный релиз перенесут, если завтра тест отката снова завершится неудачно."
+              "text": "**Es ist durchaus möglich, dass sich unsere Aussprache verbessert, wenn wir uns aufnehmen und auf den Satzrhythmus achten.**",
+              "translation_ru": "Наше произношение вполне может улучшиться, если записывать себя и следить за ритмом фраз."
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass der beobachtete Effekt verschwindet, wenn die Studie mit einer größeren und vielfältigeren Stichprobe wiederholt wird.**",
-              "translation_ru": "Есть реальная вероятность, что наблюдаемый эффект исчезнет, если исследование повторят на более крупной и разнообразной выборке."
+              "text": "**Meinst du, die Bibliothek könnte sonntags öffnen, wenn sich genug Ehrenamtliche für die Schichten melden würden?**",
+              "translation_ru": "Как думаешь, библиотека могла бы открываться по воскресеньям, если бы нашлось достаточно волонтёров для дежурств?"
             },
             {
-              "text": "**Es besteht eine realistische Chance, dass sich die Staus nach Ende des Schulhalbjahres verringern, wenn der Pendlerverkehr auf dem aktuellen Niveau bleibt.**",
-              "translation_ru": "Есть реальная вероятность, что пробки уменьшатся после окончания учебного периода, если поток поездок на работу останется на нынешнем уровне."
+              "text": "**Es ist gut möglich, dass der Akku den ganzen Tag hält, wenn die App nicht ständig im Hintergrund läuft.**",
+              "translation_ru": "Вполне возможно, заряда хватит на весь день, если приложение перестанет постоянно работать в фоновом режиме."
             }
           ]
         }
       ],
       "formulas": [
-        "There is a realistic chance that [X] if [Y].",
-        "Es besteht eine realistische Chance, dass [X], wenn [Y]."
+        "There's a real/good chance (that) [X] if [Y].",
+        "Es ist gut möglich, dass [X], wenn [Y]."
       ],
       "gen": {
         "status": "curated",
@@ -97,8 +97,188 @@
         "notes": "C1 communicative frame: Probability and prediction. Editorially rewritten for diverse spoken practice."
       },
       "title_en": "There is a realistic chance that [X] if [Y]",
-      "description_en": "Express a plausible outcome while naming the condition that makes it more or less likely.",
-      "description_ru": "Говорите о вероятном исходе и сразу называйте условие, от которого эта вероятность зависит."
+      "description_en": "Present a plausible outcome without treating it as certain; make the enabling condition explicit.",
+      "description_ru": "Называйте правдоподобный исход вместе с условием, которое может на него повлиять. Не выдавайте возможность за гарантию."
+    },
+    {
+      "id": "C1PRB042",
+      "group_id": "PRB",
+      "set_id": "PRB",
+      "title_ru": "Что должно быть верно, чтобы [X] сработало?",
+      "metaphor_ru": "Разворачивайте решение назад: сначала назовите условия, без которых оно не сможет сработать.",
+      "title_en": "What would have to be true for [X] to work?",
+      "description_en": "Use this question to expose hidden assumptions before investing in a plan, forecast, or solution.",
+      "description_ru": "Используйте этот вопрос, чтобы выявить скрытые предпосылки до того, как вкладываться в план, прогноз или решение.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would have to be true for [X] to work?",
+          "example": "What would have to be true for the migration to finish in one weekend?",
+          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "examples": [
+            {
+              "text": "**What would have to be true for the migration to finish in one weekend?**",
+              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+            },
+            {
+              "text": "**What would have to be true for a four-day week to work without slowing customer support?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+            },
+            {
+              "text": "**What would have to be true for the price increase to work without damaging retention?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+            },
+            {
+              "text": "**What would have to be true for local transcription to work reliably on an eight-gigabyte laptop?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+            },
+            {
+              "text": "**What would have to be true for centralising support to work across three time zones?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+            },
+            {
+              "text": "**What would have to be true for us to launch before the legal review is fully complete?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was müsste zutreffen, damit [X] funktioniert?",
+          "example": "Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?",
+          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "examples": [
+            {
+              "text": "**Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?**",
+              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit eine Vier-Tage-Woche funktioniert, ohne den Kundensupport zu verlangsamen?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit die Preiserhöhung funktioniert, ohne die Kundenbindung zu schwächen?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit lokale Transkription auf einem Laptop mit acht Gigabyte Arbeitsspeicher zuverlässig funktioniert?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit ein zentralisierter Support über drei Zeitzonen hinweg funktioniert?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+            },
+            {
+              "text": "**Was müsste zutreffen, damit wir starten können, bevor die rechtliche Prüfung vollständig abgeschlossen ist?**",
+              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would have to be true for [X] to work?",
+        "Was müsste zutreffen, damit [X] funktioniert?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 problem-framing question: expose assumptions required for a plan to work."
+      }
+    },
+    {
+      "id": "C1PRB041",
+      "group_id": "PRB",
+      "set_id": "PRB",
+      "title_ru": "Не исключать возможность, но указать ограничение",
+      "metaphor_ru": "Оставляйте вариант открытым, не создавая впечатления уверенного прогноза. Сразу называйте условие, проверку или недостаток доказательств.",
+      "title_en": "I wouldn't rule out [X], but [Y]",
+      "description_en": "Keep a plausible possibility open while stating the condition, uncertainty or limitation that still matters.",
+      "description_ru": "Смягчайте прогноз с помощью wouldn't rule out / würde nicht ausschließen и добавляйте содержательную оговорку.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] wouldn't rule out [possibility], but [caveat].",
+          "example": "I wouldn't rule out moving closer to my parents, but we'd need a good school nearby.",
+          "translation": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа.",
+          "examples": [
+            {
+              "text": "**I wouldn't rule out moving closer to my parents, but we'd need a good school nearby.**",
+              "translation_ru": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа."
+            },
+            {
+              "text": "**I wouldn't rule out a software fault, but the logs don't point to one yet.**",
+              "translation_ru": "Я не исключаю сбой в программе, но пока в журналах нет признаков этого."
+            },
+            {
+              "text": "**I wouldn't rule out another heatwave this summer, but the forecast is still too uncertain.**",
+              "translation_ru": "Я не исключаю ещё одну волну жары этим летом, но прогноз пока слишком неопределённый."
+            },
+            {
+              "text": "**I wouldn't rule out restarting the course, but only if it offers much more speaking practice.**",
+              "translation_ru": "Я не исключаю, что начну курс заново, но только если там будет гораздо больше разговорной практики."
+            },
+            {
+              "text": "**We wouldn't rule out a misunderstanding, but we should hear both sides before judging.**",
+              "translation_ru": "Мы не исключаем недоразумения, но прежде чем делать выводы, нужно выслушать обе стороны."
+            },
+            {
+              "text": "**She wouldn't rule out accepting the offer, but she'd want to know whether weekend work is expected.**",
+              "translation_ru": "Она не исключает, что примет предложение, но сначала хочет узнать, придётся ли работать по выходным."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] würde [Möglichkeit] nicht ausschließen, aber [Einschränkung].",
+          "example": "Ich würde nicht ausschließen, näher zu meinen Eltern zu ziehen, aber wir bräuchten eine gute Schule in der Nähe.",
+          "translation": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа.",
+          "examples": [
+            {
+              "text": "**Ich würde nicht ausschließen, näher zu meinen Eltern zu ziehen, aber wir bräuchten eine gute Schule in der Nähe.**",
+              "translation_ru": "Я не исключаю переезда поближе к родителям, но рядом должна быть хорошая школа."
+            },
+            {
+              "text": "**Einen Softwarefehler würde ich nicht ausschließen, aber die Protokolle liefern bisher keinen Hinweis darauf.**",
+              "translation_ru": "Я не исключаю сбой в программе, но пока в журналах нет признаков этого."
+            },
+            {
+              "text": "**Eine weitere Hitzewelle in diesem Sommer würde ich nicht ausschließen, aber die Vorhersage ist noch zu unsicher.**",
+              "translation_ru": "Я не исключаю ещё одну волну жары этим летом, но прогноз пока слишком неопределённый."
+            },
+            {
+              "text": "**Ich würde nicht ausschließen, den Kurs noch einmal zu beginnen, aber nur, wenn es dort deutlich mehr Sprechübungen gibt.**",
+              "translation_ru": "Я не исключаю, что начну курс заново, но только если там будет гораздо больше разговорной практики."
+            },
+            {
+              "text": "**Ein Missverständnis würden wir nicht ausschließen, aber wir sollten uns beide Seiten anhören, bevor wir urteilen.**",
+              "translation_ru": "Мы не исключаем недоразумения, но прежде чем делать выводы, нужно выслушать обе стороны."
+            },
+            {
+              "text": "**Sie würde nicht ausschließen, das Angebot anzunehmen, möchte aber erst wissen, ob Wochenendarbeit erwartet wird.**",
+              "translation_ru": "Она не исключает, что примет предложение, но сначала хочет узнать, придётся ли работать по выходным."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] wouldn't rule out [possibility], but [caveat].",
+        "[Person] würde [Möglichkeit] nicht ausschließen, aber [Einschränkung]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }

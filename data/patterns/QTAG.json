@@ -6,85 +6,85 @@
       "id": "QSTQTAG001",
       "group_id": "QTAG",
       "set_id": "QTAG",
-      "title_ru": "Разве не так, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Разве не так, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Проверить предположение коротким вопросом в конце",
+      "metaphor_ru": "В английском согласуйте вспомогательный глагол и отрицание с основным утверждением: didn't you, has it, won't they. В разговорном немецком такую роль обычно выполняет oder?",
       "langs": [
         {
           "lang": "en",
-          "formula": "Isn't it the case that [the team needs another day to decide]?",
-          "example": "Isn't it the case that the team needs another day to decide?",
-          "translation": "Разве не так, что команде нужен ещё день для решения?",
+          "formula": "[Statement], [matching auxiliary + pronoun]?",
+          "example": "You locked the balcony door, didn't you?",
+          "translation": "Ты ведь запер балконную дверь?",
           "examples": [
             {
-              "text": "**Isn't it the case that the team needs another day to decide?**",
-              "translation_ru": "Разве не так, что команде нужен ещё день для решения?"
+              "text": "**You locked the balcony door, didn't you?**",
+              "translation_ru": "Ты ведь запер балконную дверь?"
             },
             {
-              "text": "**Isn't it the case that the revised plan has not been shared yet?**",
-              "translation_ru": "Разве не так, что обновлённым планом ещё не поделились?"
+              "text": "**The parcel hasn't arrived yet, has it?**",
+              "translation_ru": "Посылка ведь ещё не пришла?"
             },
             {
-              "text": "**Isn't it the case that we should compare the two options?**",
-              "translation_ru": "Разве не так, что нам следует сравнить два варианта?"
+              "text": "**They'll publish the timetable on Friday, won't they?**",
+              "translation_ru": "Расписание ведь опубликуют в пятницу?"
             },
             {
-              "text": "**Isn't it the case that the client asked for more detail?**",
-              "translation_ru": "Разве не так, что клиент попросил больше деталей?"
+              "text": "**This soup doesn't contain nuts, does it?**",
+              "translation_ru": "В этом супе ведь нет орехов?"
             },
             {
-              "text": "**Isn't it the case that the pilot may continue next month?**",
-              "translation_ru": "Разве не так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**You'd rather take the train, wouldn't you?**",
+              "translation_ru": "Ты ведь предпочёл бы поезд?"
             },
             {
-              "text": "**Isn't it the case that the data need another check?**",
-              "translation_ru": "Разве не так, что данные нужно проверить ещё раз?"
+              "text": "**Mina has met our new neighbor, hasn't she?**",
+              "translation_ru": "Мина ведь уже познакомилась с нашим новым соседом?"
             },
             {
-              "text": "**Isn't it the case that the meeting was moved?**",
-              "translation_ru": "Разве не так, что встречу перенесли?"
+              "text": "**I should bring my passport, shouldn't I?**",
+              "translation_ru": "Мне ведь нужно взять паспорт?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Stimmt es nicht, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Stimmt es nicht, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Разве не так, что команде нужен ещё день для решения?",
+          "formula": "[Aussage], oder?",
+          "example": "Du hast die Balkontür abgeschlossen, oder?",
+          "translation": "Ты ведь запер балконную дверь?",
           "examples": [
             {
-              "text": "**Stimmt es nicht, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Разве не так, что команде нужен ещё день для решения?"
+              "text": "**Du hast die Balkontür abgeschlossen, oder?**",
+              "translation_ru": "Ты ведь запер балконную дверь?"
             },
             {
-              "text": "**Stimmt es nicht, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Разве не так, что обновлённым планом ещё не поделились?"
+              "text": "**Das Paket ist noch nicht angekommen, oder?**",
+              "translation_ru": "Посылка ведь ещё не пришла?"
             },
             {
-              "text": "**Stimmt es nicht, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Разве не так, что нам следует сравнить два варианта?"
+              "text": "**Sie veröffentlichen den Fahrplan am Freitag, oder?**",
+              "translation_ru": "Расписание ведь опубликуют в пятницу?"
             },
             {
-              "text": "**Stimmt es nicht, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Разве не так, что клиент попросил больше деталей?"
+              "text": "**In dieser Suppe sind keine Nüsse, oder?**",
+              "translation_ru": "В этом супе ведь нет орехов?"
             },
             {
-              "text": "**Stimmt es nicht, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Разве не так, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Du würdest lieber mit dem Zug fahren, oder?**",
+              "translation_ru": "Ты ведь предпочёл бы поезд?"
             },
             {
-              "text": "**Stimmt es nicht, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Разве не так, что данные нужно проверить ещё раз?"
+              "text": "**Mina hat unseren neuen Nachbarn schon kennengelernt, oder?**",
+              "translation_ru": "Мина ведь уже познакомилась с нашим новым соседом?"
             },
             {
-              "text": "**Stimmt es nicht, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Разве не так, что встречу перенесли?"
+              "text": "**Ich sollte meinen Reisepass mitnehmen, oder?**",
+              "translation_ru": "Мне ведь нужно взять паспорт?"
             }
           ]
         }
       ],
       "formulas": [
-        "Isn't it the case that [the team needs another day to decide]?",
-        "Stimmt es nicht, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "[Statement], [matching auxiliary + pronoun]?",
+        "[Aussage], oder?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQTAG021",
       "group_id": "QTAG",
       "set_id": "QTAG",
-      "title_ru": "Вы согласились бы, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Вы согласились бы, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Тактично предложить собеседнику согласиться с оценкой",
+      "metaphor_ru": "Would you agree that ...? приглашает оценить тезис, не объявляя согласие обязательным. В немецком подбирайте дистанцию общения: Würden Sie zustimmen ...? (формально) или Würdest du auch sagen ...? (разговорно). Отличается от навязывающего You would agree ..., wouldn't you?",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would you agree that [the team needs another day to decide]?",
-          "example": "Would you agree that the team needs another day to decide?",
-          "translation": "Вы согласились бы, что команде нужен ещё день для решения?",
+          "formula": "Would you agree that + [debatable claim]? / Would you say that + [assessment]?",
+          "example": "Would you agree that the well-lit route is safer in bad weather, even if it takes ten minutes longer?",
+          "translation": "Согласишься, что в плохую погоду безопаснее идти по освещённой дороге, даже если это на десять минут дольше?",
           "examples": [
             {
-              "text": "**Would you agree that the team needs another day to decide?**",
-              "translation_ru": "Вы согласились бы, что команде нужен ещё день для решения?"
+              "text": "Would you agree that the well-lit route is safer in bad weather, even if it takes ten minutes longer?",
+              "translation_ru": "Согласишься, что в плохую погоду безопаснее идти по освещённой дороге, даже если это на десять минут дольше?"
             },
             {
-              "text": "**Would you agree that the revised plan has not been shared yet?**",
-              "translation_ru": "Вы согласились бы, что обновлённым планом ещё не поделились?"
+              "text": "Would you agree that children need room to make small mistakes rather than constant supervision?",
+              "translation_ru": "Согласишься, что детям полезнее иногда ошибаться самим, чем постоянно быть под присмотром?"
             },
             {
-              "text": "**Would you agree that we should compare the two options?**",
-              "translation_ru": "Вы согласились бы, что нам следует сравнить два варианта?"
+              "text": "Would you agree that the evidence is too thin to draw a firm conclusion yet?",
+              "translation_ru": "Вы согласны, что пока недостаточно данных для уверенного вывода?"
             },
             {
-              "text": "**Would you agree that the client asked for more detail?**",
-              "translation_ru": "Вы согласились бы, что клиент попросил больше деталей?"
+              "text": "Would you agree that we should ask the neighbours before changing the shared garden?",
+              "translation_ru": "Согласишься, что перед переделкой общего сада стоит спросить соседей?"
             },
             {
-              "text": "**Would you agree that the pilot may continue next month?**",
-              "translation_ru": "Вы согласились бы, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Would you agree that the app should explain why it asks for location access?",
+              "translation_ru": "Вы согласны, что приложение должно объяснять, зачем ему доступ к геолокации?"
             },
             {
-              "text": "**Would you agree that the data need another check?**",
-              "translation_ru": "Вы согласились бы, что данные нужно проверить ещё раз?"
+              "text": "Would you say that his apology matters more than whether he chose the perfect words?",
+              "translation_ru": "Как думаешь, его извинение важнее того, насколько идеально он подобрал слова?"
             },
             {
-              "text": "**Would you agree that the meeting was moved?**",
-              "translation_ru": "Вы согласились бы, что встречу перенесли?"
+              "text": "Would you agree that postponing the vote would give everyone time to read the proposal?",
+              "translation_ru": "Вы согласны, что перенос голосования дал бы всем время прочитать предложение?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Würden Sie zustimmen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Würden Sie zustimmen, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Вы согласились бы, что команде нужен ещё день для решения?",
+          "formula": "Würden Sie zustimmen, dass + [These]? / Würdest du auch sagen, dass + [Einschätzung]?",
+          "example": "Würdest du zustimmen, dass der gut beleuchtete Weg bei schlechtem Wetter sicherer ist, auch wenn er zehn Minuten länger dauert?",
+          "translation": "Согласишься, что в плохую погоду безопаснее идти по освещённой дороге, даже если это на десять минут дольше?",
           "examples": [
             {
-              "text": "**Würden Sie zustimmen, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Вы согласились бы, что команде нужен ещё день для решения?"
+              "text": "Würdest du zustimmen, dass der gut beleuchtete Weg bei schlechtem Wetter sicherer ist, auch wenn er zehn Minuten länger dauert?",
+              "translation_ru": "Согласишься, что в плохую погоду безопаснее идти по освещённой дороге, даже если это на десять минут дольше?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Вы согласились бы, что обновлённым планом ещё не поделились?"
+              "text": "Würdest du auch sagen, dass Kinder eigene kleine Fehler machen dürfen, statt ständig beaufsichtigt zu werden?",
+              "translation_ru": "Согласишься, что детям полезнее иногда ошибаться самим, чем постоянно быть под присмотром?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Вы согласились бы, что нам следует сравнить два варианта?"
+              "text": "Würden Sie zustimmen, dass die Belege noch nicht ausreichen, um eine eindeutige Schlussfolgerung zu ziehen?",
+              "translation_ru": "Вы согласны, что пока недостаточно данных для уверенного вывода?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Вы согласились бы, что клиент попросил больше деталей?"
+              "text": "Würdest du zustimmen, dass wir erst die Nachbarn fragen sollten, bevor wir den Gemeinschaftsgarten umgestalten?",
+              "translation_ru": "Согласишься, что перед переделкой общего сада стоит спросить соседей?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Вы согласились бы, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Würden Sie zustimmen, dass die App erklären sollte, warum sie Zugriff auf den Standort verlangt?",
+              "translation_ru": "Вы согласны, что приложение должно объяснять, зачем ему доступ к геолокации?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Вы согласились бы, что данные нужно проверить ещё раз?"
+              "text": "Würdest du auch sagen, dass seine Entschuldigung wichtiger ist als die perfekten Worte?",
+              "translation_ru": "Как думаешь, его извинение важнее того, насколько идеально он подобрал слова?"
             },
             {
-              "text": "**Würden Sie zustimmen, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Вы согласились бы, что встречу перенесли?"
+              "text": "Würden Sie zustimmen, dass eine Verschiebung der Abstimmung allen Zeit gäbe, den Vorschlag zu lesen?",
+              "translation_ru": "Вы согласны, что перенос голосования дал бы всем время прочитать предложение?"
             }
           ]
         }
       ],
       "formulas": [
-        "Would you agree that [the team needs another day to decide]?",
-        "Würden Sie zustimmen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Would you agree that + [debatable claim]? / Would you say that + [assessment]?",
+        "Würden Sie zustimmen, dass + [These]? / Würdest du auch sagen, dass + [Einschätzung]?"
       ],
       "gen": {
         "status": "curated",

@@ -56,8 +56,8 @@ test("representative synthetic, grammar and legacy titles are clear in both loca
 
   const discourseQuestion = byId.get("QSTQDIS001");
   assert.ok(discourseQuestion);
-  assert.equal(discourseQuestion.title_en, "Before we continue, can we clarify whether [X]?");
-  assert.equal(discourseQuestion.title_ru, "Прежде чем продолжить, можем ли мы прояснить, …?");
+  assert.equal(discourseQuestion.title_en, "Before [X], can/could we clarify whether [Y]?");
+  assert.equal(discourseQuestion.title_ru, "Сначала прояснить факт, затем переходить к действию");
   assert.match(discourseQuestion.description_ru, /прояснить/u);
 
   const grammar = byId.get("GFI001");

@@ -291,85 +291,85 @@
       "id": "FUNFEL031",
       "group_id": "FEL",
       "set_id": "FEL",
-      "title_ru": "Было бы досадно, если команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «чувства и реакции» в живом контексте.",
+      "title_ru": "Выразить сожаление о возможном исходе",
+      "metaphor_ru": "Для гипотетической эмоциональной реакции используйте It would be… if… с формой прошедшего времени в условном придаточном. В немецком это Es wäre… wenn… с Konjunktiv II (würde, könnte или соответствующая форма). Не путайте воображаемую ситуацию с уже установленным фактом.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It would be frustrating if [the team needs another day to decide].",
-          "example": "It would be frustrating if the team needs another day to decide.",
-          "translation": "Было бы досадно, если команде нужен ещё день для решения.",
+          "formula": "It would be [frustrating/disappointing/a shame] if [hypothetical situation].",
+          "example": "It would be frustrating if the library closed just as more students started using it.",
+          "translation": "Было бы досадно, если бы библиотека закрылась как раз тогда, когда туда стало ходить больше студентов.",
           "examples": [
             {
-              "text": "**It would be frustrating if the team needs another day to decide.**",
-              "translation_ru": "Было бы досадно, если команде нужен ещё день для решения."
+              "text": "**It would be frustrating if the library closed just as more students started using it.**",
+              "translation_ru": "Было бы досадно, если бы библиотека закрылась как раз тогда, когда туда стало ходить больше студентов."
             },
             {
-              "text": "**It would be frustrating if the revised plan has not been shared yet.**",
-              "translation_ru": "Было бы досадно, если обновлённым планом ещё не поделились."
+              "text": "**It would be a shame if we lost those family recordings because nobody made a backup.**",
+              "translation_ru": "Было бы жаль потерять семейные записи только потому, что никто не сделал резервную копию."
             },
             {
-              "text": "**It would be frustrating if we should compare the two options.**",
-              "translation_ru": "Было бы досадно, если нам следует сравнить два варианта."
+              "text": "**Wouldn't it be disappointing if the concert were cancelled after everyone had travelled so far?**",
+              "translation_ru": "Разве не было бы обидно, если бы концерт отменили после того, как все приехали издалека?"
             },
             {
-              "text": "**It would be frustrating if the client asked for more detail.**",
-              "translation_ru": "Было бы досадно, если клиент попросил больше деталей."
+              "text": "**I'd find it frustrating if an app demanded access to my contacts just to show a timetable.**",
+              "translation_ru": "Меня бы раздражало, если бы приложение требовало доступ к контактам только ради расписания."
             },
             {
-              "text": "**It would be frustrating if the pilot may continue next month.**",
-              "translation_ru": "Было бы досадно, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**It would be hurtful if she heard about our move from a neighbour rather than from us.**",
+              "translation_ru": "Ей было бы обидно узнать о нашем переезде от соседа, а не от нас."
             },
             {
-              "text": "**It would be frustrating if the data need another check.**",
-              "translation_ru": "Было бы досадно, если данные нужно проверить ещё раз."
+              "text": "**It wouldn't be so disappointing if we could at least visit the museum another day.**",
+              "translation_ru": "Было бы не так обидно, если бы мы хотя бы смогли сходить в музей в другой день."
             },
             {
-              "text": "**It would be frustrating if the meeting was moved.**",
-              "translation_ru": "Было бы досадно, если встречу перенесли."
+              "text": "**It would be frustrating if the repair fixed the noise but left the leak untouched.**",
+              "translation_ru": "Было бы досадно, если бы ремонт устранил шум, но протечку оставил как есть."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es wäre frustrierend, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Es wäre frustrierend, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Было бы досадно, если команде нужен ещё день для решения.",
+          "formula": "Es wäre [ärgerlich/enttäuschend/schade], wenn [Konjunktiv-II-Situation].",
+          "example": "Es wäre ärgerlich, wenn die Bibliothek ausgerechnet jetzt schließen würde, wo immer mehr Studierende dorthin kommen.",
+          "translation": "Было бы досадно, если бы библиотека закрылась как раз теперь, когда туда ходит всё больше студентов.",
           "examples": [
             {
-              "text": "**Es wäre frustrierend, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Было бы досадно, если команде нужен ещё день для решения."
+              "text": "**Es wäre ärgerlich, wenn die Bibliothek ausgerechnet jetzt schließen würde, wo immer mehr Studierende dorthin kommen.**",
+              "translation_ru": "Было бы досадно, если бы библиотека закрылась как раз теперь, когда туда ходит всё больше студентов."
             },
             {
-              "text": "**Es wäre frustrierend, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Было бы досадно, если обновлённым планом ещё не поделились."
+              "text": "**Es wäre schade, wenn wir die alten Familienaufnahmen verlieren würden, nur weil niemand eine Sicherungskopie gemacht hat.**",
+              "translation_ru": "Было бы жаль потерять старые семейные записи только потому, что никто не сделал резервную копию."
             },
             {
-              "text": "**Es wäre frustrierend, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Было бы досадно, если нам следует сравнить два варианта."
+              "text": "**Wäre es nicht enttäuschend, wenn das Konzert abgesagt würde, nachdem alle so weit angereist sind?**",
+              "translation_ru": "Разве не было бы обидно, если бы концерт отменили после того, как все приехали издалека?"
             },
             {
-              "text": "**Es wäre frustrierend, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Было бы досадно, если клиент попросил больше деталей."
+              "text": "**Ich fände es ärgerlich, wenn eine App nur für den Fahrplan Zugriff auf meine Kontakte verlangen würde.**",
+              "translation_ru": "Меня бы раздражало, если бы приложение требовало доступ к контактам только ради расписания."
             },
             {
-              "text": "**Es wäre frustrierend, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Было бы досадно, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**Es wäre verletzend, wenn sie von unserem Umzug durch einen Nachbarn und nicht von uns erfahren würde.**",
+              "translation_ru": "Ей было бы обидно узнать о нашем переезде от соседа, а не от нас."
             },
             {
-              "text": "**Es wäre frustrierend, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Было бы досадно, если данные нужно проверить ещё раз."
+              "text": "**Es wäre nicht ganz so enttäuschend, wenn wir das Museum wenigstens an einem anderen Tag besuchen könnten.**",
+              "translation_ru": "Было бы не так обидно, если бы мы хотя бы смогли сходить в музей в другой день."
             },
             {
-              "text": "**Es wäre frustrierend, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Было бы досадно, если встречу перенесли."
+              "text": "**Es wäre ärgerlich, wenn die Reparatur zwar das Geräusch beseitigen würde, das Leck aber bestehen bliebe.**",
+              "translation_ru": "Было бы досадно, если бы ремонт устранил шум, но протечку оставил как есть."
             }
           ]
         }
       ],
       "formulas": [
-        "It would be frustrating if [the team needs another day to decide].",
-        "Es wäre frustrierend, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "It would be [frustrating/disappointing/a shame] if [hypothetical situation].",
+        "Es wäre [ärgerlich/enttäuschend/schade], wenn [Konjunktiv-II-Situation]."
       ],
       "gen": {
         "status": "curated",

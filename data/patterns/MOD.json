@@ -5,95 +5,95 @@
     {
       "id": "MOD001",
       "group_id": "MOD",
-      "title_ru": "Ты, должно быть, уже это видел",
-      "metaphor_ru": "Как если бы ты открыл дверь и увидел следы — почти точно знаешь, кто здесь уже был.",
+      "title_ru": "Уверенный вывод о прошлом по признакам",
+      "metaphor_ru": "Must have + V3 — логический вывод о уже произошедшем, а не обязанность. В немецком: müssen + Partizip II + haben/sein; вспомогательный глагол зависит от смыслового глагола.",
       "langs": [
         {
           "lang": "en",
-          "formula": "must have + Past Participle",
-          "example": "You must have seen this document already.",
-          "translation": "Следы на полу: ты, должно быть, уже видел этот документ.",
+          "formula": "subject + must have + past participle (+ evidence).",
+          "example": "The hallway smells of fresh paint; the landlord must have repainted it over the weekend.",
+          "translation": "В подъезде пахнет свежей краской — хозяин, должно быть, покрасил стены за выходные.",
           "examples": [
             {
-              "text": "She **must have forgotten** her keys at home.",
-              "translation_ru": "Она, должно быть, забыла ключи дома."
+              "text": "The hallway smells of fresh paint; the landlord must have repainted it over the weekend.",
+              "translation_ru": "В подъезде пахнет свежей краской — хозяин, должно быть, покрасил стены за выходные."
             },
             {
-              "text": "They **must have completed** the project on time.",
-              "translation_ru": "Они, должно быть, завершили проект вовремя."
+              "text": "She must have taken the earlier train; her coat is already hanging by the door.",
+              "translation_ru": "Она, должно быть, села на более ранний поезд: её пальто уже висит у двери."
             },
             {
-              "text": "He **must have been** tired after the trip.",
-              "translation_ru": "Он, должно быть, был уставшим после поездки."
+              "text": "The recipe must have changed since last year, because the soup tastes much less salty.",
+              "translation_ru": "Рецепт, должно быть, изменился с прошлого года: суп стал гораздо менее солёным."
             },
             {
-              "text": "We **must have missed** the announcement.",
-              "translation_ru": "Мы, должно быть, пропустили объявление."
+              "text": "We must have misunderstood the recycling rules; our bins were left unemptied again.",
+              "translation_ru": "Мы, должно быть, неправильно поняли правила сортировки: наши контейнеры снова не опустошили."
             },
             {
-              "text": "I **must have left** my phone at work.",
-              "translation_ru": "Я, должно быть, оставил телефон на работе."
+              "text": "He must have practised that speech for weeks; he barely glanced at his notes.",
+              "translation_ru": "Он, должно быть, неделями репетировал выступление — почти не заглядывал в записи."
             },
             {
-              "text": "You **must have heard** the news by now.",
-              "translation_ru": "Ты, должно быть, уже слышал новости."
+              "text": "The update must have fixed the login bug; I can finally sign in on my phone.",
+              "translation_ru": "Обновление, должно быть, исправило ошибку входа: теперь я наконец могу зайти с телефона."
             },
             {
-              "text": "The package **must have arrived** yesterday.",
-              "translation_ru": "Посылка, должно быть, прибыла вчера."
+              "text": "You must have been exhausted after carrying those boxes up five flights of stairs.",
+              "translation_ru": "Ты, должно быть, совсем вымотался, поднимая эти коробки на пятый этаж."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "müssen + Partizip II + haben",
-          "example": "Du musst dieses Dokument schon gesehen haben.",
-          "translation": "Ты, должно быть, уже видел этот документ.",
+          "formula": "Subjekt + muss/müssen + Partizip II + haben/sein (+ Hinweis).",
+          "example": "Im Treppenhaus riecht es nach frischer Farbe; der Vermieter muss am Wochenende gestrichen haben.",
+          "translation": "В подъезде пахнет свежей краской — хозяин, должно быть, красил стены на выходных.",
           "examples": [
             {
-              "text": "Sie **muss** ihre Schlüssel zu Hause **vergessen haben**.",
-              "translation_ru": "Она, должно быть, забыла ключи дома."
+              "text": "Im Treppenhaus riecht es nach frischer Farbe; der Vermieter muss am Wochenende gestrichen haben.",
+              "translation_ru": "В подъезде пахнет свежей краской — хозяин, должно быть, красил стены на выходных."
             },
             {
-              "text": "Sie **müssen** das Projekt rechtzeitig **abgeschlossen haben**.",
-              "translation_ru": "Они, должно быть, завершили проект вовремя."
+              "text": "Sie muss den früheren Zug genommen haben; ihr Mantel hängt schon an der Garderobe.",
+              "translation_ru": "Она, должно быть, села на более ранний поезд: её пальто уже висит в прихожей."
             },
             {
-              "text": "Er **muss** nach der Reise müde **gewesen sein**.",
-              "translation_ru": "Он, должно быть, был уставшим после поездки."
+              "text": "Das Rezept muss sich seit letztem Jahr geändert haben; die Suppe schmeckt viel weniger salzig.",
+              "translation_ru": "Рецепт, должно быть, изменился с прошлого года: суп стал намного менее солёным."
             },
             {
-              "text": "Wir **müssen** die Ankündigung **verpasst haben**.",
-              "translation_ru": "Мы, должно быть, пропустили объявление."
+              "text": "Wir müssen die Regeln zur Mülltrennung falsch verstanden haben; unsere Tonnen wurden schon wieder nicht geleert.",
+              "translation_ru": "Мы, должно быть, неправильно поняли правила сортировки: наши баки опять не опустошили."
             },
             {
-              "text": "Ich **muss** mein Handy bei der Arbeit **gelassen haben**.",
-              "translation_ru": "Я, должно быть, оставил телефон на работе."
+              "text": "Er muss diese Rede wochenlang geübt haben; er hat kaum auf seine Notizen geschaut.",
+              "translation_ru": "Он, должно быть, неделями репетировал выступление: почти не смотрел в записи."
             },
             {
-              "text": "Du **musst** die Nachricht inzwischen **gehört haben**.",
-              "translation_ru": "Ты, должно быть, уже слышал новости."
+              "text": "Das Update muss den Anmeldefehler behoben haben; auf meinem Handy klappt es endlich wieder.",
+              "translation_ru": "Обновление, должно быть, исправило ошибку входа: на телефоне всё наконец работает."
             },
             {
-              "text": "Das Paket **muss** gestern **angekommen sein**.",
-              "translation_ru": "Посылка, должно быть, прибыла вчера."
+              "text": "Du musst völlig erschöpft gewesen sein, nachdem du die Kartons fünf Stockwerke hochgetragen hast.",
+              "translation_ru": "Ты, должно быть, совсем вымотался, пока поднимал коробки на пятый этаж."
             }
           ]
         }
       ],
       "formulas": [
-        "must have + Past Participle",
-        "müssen + Partizip II + haben"
+        "subject + must have + past participle (+ evidence).",
+        "Subjekt + muss/müssen + Partizip II + haben/sein (+ Hinweis)."
       ],
       "gen": {
-        "status": "generated",
+        "status": "curated",
         "iterations": 1,
         "lastGeneratedAt": "2025-09-15T19:48:57.737Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": ""
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       },
       "set_id": "MOD"
     },
@@ -195,95 +195,95 @@
     {
       "id": "MOD003",
       "group_id": "MOD",
-      "title_ru": "Тебе следовало (сделать что-то)",
-      "metaphor_ru": "Как дорожный знак, который ты проехал мимо — теперь уже поздно, но он всё равно напоминает, что нужно было свернуть раньше.",
+      "title_ru": "Что следовало сделать раньше: совет задним числом",
+      "metaphor_ru": "Should (not) have + V3 оценивает уже совершённое или упущенное действие; это не совет на будущее. Немецкий использует hätte(n) + Infinitiv + sollen, а не обычный Partizip II смыслового глагола.",
       "langs": [
         {
           "lang": "en",
-          "formula": "should have + Past Participle",
-          "example": "You should’ve informed me earlier.",
-          "translation": "Знак уже позади: тебе следовало сообщить мне раньше.",
+          "formula": "subject + should (not) have + past participle.",
+          "example": "I should have asked the neighbour before drilling into the shared wall.",
+          "translation": "Мне стоило спросить соседа, прежде чем сверлить общую стену.",
           "examples": [
             {
-              "text": "I **should have called** you yesterday.",
-              "translation_ru": "Мне следовало позвонить тебе вчера."
+              "text": "I should have asked the neighbour before drilling into the shared wall.",
+              "translation_ru": "Мне стоило спросить соседа, прежде чем сверлить общую стену."
             },
             {
-              "text": "They **should have finished** the report by now.",
-              "translation_ru": "Им следовало закончить отчет к этому времени."
+              "text": "You shouldn't have shared her photo without asking.",
+              "translation_ru": "Не стоило выкладывать её фотографию без разрешения."
             },
             {
-              "text": "We **should have taken** the other route.",
-              "translation_ru": "Нам следовало выбрать другой маршрут."
+              "text": "We should have checked the train timetable before leaving the hotel.",
+              "translation_ru": "Надо было проверить расписание поездов до выхода из гостиницы."
             },
             {
-              "text": "He **should not have ignored** the warning.",
-              "translation_ru": "Ему не следовало игнорировать предупреждение."
+              "text": "She should have mentioned that the course required prior experience.",
+              "translation_ru": "Ей следовало предупредить, что для курса нужен предыдущий опыт."
             },
             {
-              "text": "She **should have sent** the email sooner.",
-              "translation_ru": "Ей следовало отправить письмо раньше."
+              "text": "I really should have listened when you warned me about the flooded shortcut.",
+              "translation_ru": "Надо было тебя послушать, когда ты предупредил о затопленной короткой дороге."
             },
             {
-              "text": "You **should have backed up** the data.",
-              "translation_ru": "Тебе следовало сделать резервную копию данных."
+              "text": "Shouldn't they have consulted residents before closing the playground?",
+              "translation_ru": "Разве не следовало посоветоваться с жителями, прежде чем закрывать детскую площадку?"
             },
             {
-              "text": "They **should have listened** to the advice.",
-              "translation_ru": "Им следовало прислушаться к совету."
+              "text": "The clinic should have explained the side effects in plain language.",
+              "translation_ru": "В клинике должны были объяснить побочные эффекты простыми словами."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "hättest + Partizip II + sollen",
-          "example": "Du hättest mich früher informieren sollen.",
-          "translation": "Тебе следовало сообщить мне раньше.",
+          "formula": "Subjekt + hätte(n) + (nicht) + Infinitiv + sollen.",
+          "example": "Ich hätte den Nachbarn fragen sollen, bevor ich in die gemeinsame Wand gebohrt habe.",
+          "translation": "Мне следовало спросить соседа, прежде чем сверлить общую стену.",
           "examples": [
             {
-              "text": "Ich **hätte dich gestern anrufen** sollen.",
-              "translation_ru": "Мне следовало позвонить тебе вчера."
+              "text": "Ich hätte den Nachbarn fragen sollen, bevor ich in die gemeinsame Wand gebohrt habe.",
+              "translation_ru": "Мне следовало спросить соседа, прежде чем сверлить общую стену."
             },
             {
-              "text": "Sie **hätten den Bericht jetzt fertigstellen** sollen.",
-              "translation_ru": "Им следовало закончить отчет к этому времени."
+              "text": "Du hättest ihr Foto nicht ohne Erlaubnis teilen sollen.",
+              "translation_ru": "Не стоило делиться её фотографией без разрешения."
             },
             {
-              "text": "Wir **hätten die andere Route nehmen** sollen.",
-              "translation_ru": "Нам следовало выбрать другой маршрут."
+              "text": "Wir hätten den Fahrplan prüfen sollen, bevor wir das Hotel verlassen haben.",
+              "translation_ru": "Надо было проверить расписание поездов до выхода из гостиницы."
             },
             {
-              "text": "Er **hätte die Warnung nicht ignorieren** sollen.",
-              "translation_ru": "Ему не следовало игнорировать предупреждение."
+              "text": "Sie hätte erwähnen sollen, dass man für den Kurs Vorkenntnisse braucht.",
+              "translation_ru": "Ей стоило сказать, что для курса нужны предварительные знания."
             },
             {
-              "text": "Sie **hätte die E-Mail früher senden** sollen.",
-              "translation_ru": "Ей следовало отправить письмо раньше."
+              "text": "Ich hätte wirklich auf dich hören sollen, als du mich vor dem überschwemmten Weg gewarnt hast.",
+              "translation_ru": "Надо было тебя послушать, когда ты предупредил о затопленной дороге."
             },
             {
-              "text": "Du **hättest die Daten sichern** sollen.",
-              "translation_ru": "Тебе следовало сделать резервную копию данных."
+              "text": "Hätten sie nicht die Anwohner fragen sollen, bevor sie den Spielplatz geschlossen haben?",
+              "translation_ru": "Разве им не следовало спросить жителей, прежде чем закрывать детскую площадку?"
             },
             {
-              "text": "Sie **hätten auf den Rat hören** sollen.",
-              "translation_ru": "Им следовало прислушаться к совету."
+              "text": "Die Arztpraxis hätte die Nebenwirkungen verständlich erklären sollen.",
+              "translation_ru": "Врачебной практике следовало объяснить побочные эффекты понятным языком."
             }
           ]
         }
       ],
       "formulas": [
-        "should have + Past Participle",
-        "hättest + Partizip II + sollen"
+        "subject + should (not) have + past participle.",
+        "Subjekt + hätte(n) + (nicht) + Infinitiv + sollen."
       ],
       "gen": {
-        "status": "generated",
+        "status": "curated",
         "iterations": 1,
         "lastGeneratedAt": "2025-09-15T19:51:27.436Z",
         "languages": [
           "en",
           "de"
         ],
-        "notes": ""
+        "notes": "Manually rewritten B2–C1 practice examples; local spaCy annotation pending. No POS/dependency labels generated."
       },
       "set_id": "MOD"
     },
@@ -385,85 +385,85 @@
     {
       "id": "MOD005",
       "group_id": "MOD",
-      "title_ru": "Вежливое предположение или разрешение",
-      "metaphor_ru": "Как мягкий зелёный свет светофора — не обязывает ехать, но даёт возможность спокойно двигаться.",
+      "title_ru": "Выразить вероятность, не выдавая догадку за факт",
+      "metaphor_ru": "Здесь may/might выражают вероятность, а не разрешение. Немецкое dürfen сообщает о разрешении и не подходит для таких предположений: используйте könnte, vielleicht или möglicherweise.",
       "langs": [
         {
           "lang": "en",
-          "formula": "may / might + V",
-          "example": "You may leave early today if your tasks are done.",
-          "translation": "Можешь уйти пораньше, если все задачи завершены.",
+          "formula": "[Subject] may/might (not) [infinitive] / may/might have [past participle].",
+          "example": "The delay may be caused by a damaged cable.",
+          "translation": "Возможно, задержка вызвана повреждённым кабелем.",
           "examples": [
             {
-              "text": "He **might** bring the documents tomorrow.",
-              "translation_ru": "Он может принести документы завтра."
+              "text": "The delay may be caused by a damaged cable.",
+              "translation_ru": "Возможно, задержка вызвана повреждённым кабелем."
             },
             {
-              "text": "We **may** need more data for the analysis.",
-              "translation_ru": "Нам может понадобиться больше данных для анализа."
+              "text": "She might have misunderstood my joke.",
+              "translation_ru": "Возможно, она неправильно поняла мою шутку."
             },
             {
-              "text": "**May** I **use** your phone?",
-              "translation_ru": "Можно я воспользуюсь вашим телефоном?"
+              "text": "We may need a quieter place to practise speaking.",
+              "translation_ru": "Возможно, нам понадобится более тихое место для разговорной практики."
             },
             {
-              "text": "They **might** not **come** to the meeting.",
-              "translation_ru": "Они могут не прийти на встречу."
+              "text": "The museum might not be open on Mondays.",
+              "translation_ru": "Возможно, по понедельникам музей закрыт."
             },
             {
-              "text": "You **may** **access** the files online.",
-              "translation_ru": "Вы можете получить доступ к файлам онлайн."
+              "text": "He may have forgotten to save the draft.",
+              "translation_ru": "Возможно, он забыл сохранить черновик."
             },
             {
-              "text": "She **may** **start** the project next week.",
-              "translation_ru": "Она может начать проект на следующей неделе."
+              "text": "If we move the router, the connection might improve.",
+              "translation_ru": "Если переставить роутер, связь, возможно, улучшится."
             },
             {
-              "text": "**Might** we **consider** an alternative plan?",
-              "translation_ru": "Можем ли мы рассмотреть альтернативный план?"
+              "text": "This explanation may sound convincing, but the evidence is thin.",
+              "translation_ru": "Объяснение может звучать убедительно, хотя доказательств мало."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "dürfen + Infinitiv / vielleicht + Verb",
-          "example": "Du darfst heute früher gehen, wenn deine Aufgaben erledigt sind.",
-          "translation": "Можешь уйти пораньше, если все задачи завершены.",
+          "formula": "[Subjekt] könnte [Infinitiv] / Vielleicht [Verb + Subjekt] / [Subjekt] ... möglicherweise.",
+          "example": "Die Verzögerung könnte an einem beschädigten Kabel liegen.",
+          "translation": "Возможно, причина задержки — повреждённый кабель.",
           "examples": [
             {
-              "text": "Er **darf** die Dokumente morgen **bringen**.",
-              "translation_ru": "Он может принести документы завтра."
+              "text": "Die Verzögerung könnte an einem beschädigten Kabel liegen.",
+              "translation_ru": "Возможно, причина задержки — повреждённый кабель."
             },
             {
-              "text": "Wir **dürfen** mehr Daten für die Analyse **brauchen**.",
-              "translation_ru": "Нам может понадобиться больше данных для анализа."
+              "text": "Vielleicht hat sie meinen Witz falsch verstanden.",
+              "translation_ru": "Может быть, она не так поняла мою шутку."
             },
             {
-              "text": "**Darf** ich dein Telefon **benutzen**?",
-              "translation_ru": "Можно я воспользуюсь твоим телефоном?"
+              "text": "Vielleicht brauchen wir einen ruhigeren Ort, um das Sprechen zu üben.",
+              "translation_ru": "Для разговорных упражнений нам, возможно, нужно место потише."
             },
             {
-              "text": "Sie **dürfen** nicht zur Besprechung **kommen**.",
-              "translation_ru": "Они могут не прийти на встречу."
+              "text": "Das Museum hat montags möglicherweise geschlossen.",
+              "translation_ru": "Может быть, по понедельникам музей не работает."
             },
             {
-              "text": "Du **darfst** die Dateien online **zugreifen**.",
-              "translation_ru": "Ты можешь получить доступ к файлам онлайн."
+              "text": "Er hat vielleicht vergessen, den Entwurf zu speichern.",
+              "translation_ru": "Вероятно, он забыл сохранить черновик."
             },
             {
-              "text": "Sie **darf** das Projekt nächste Woche **starten**.",
-              "translation_ru": "Она может начать проект на следующей неделе."
+              "text": "Wenn wir den Router umstellen, könnte die Verbindung besser werden.",
+              "translation_ru": "Если мы переместим роутер, связь может стать лучше."
             },
             {
-              "text": "**Dürfen** wir einen alternativen Plan **erwägen**?",
-              "translation_ru": "Можем ли мы рассмотреть альтернативный план?"
+              "text": "Diese Erklärung klingt vielleicht überzeugend, aber die Belege sind dürftig.",
+              "translation_ru": "Это объяснение, возможно, и звучит убедительно, но доказательств недостаточно."
             }
           ]
         }
       ],
       "formulas": [
-        "may / might + V",
-        "dürfen + Infinitiv / vielleicht + Verb"
+        "[Subject] may/might (not) [infinitive] / may/might have [past participle].",
+        "[Subjekt] könnte [Infinitiv] / Vielleicht [Verb + Subjekt] / [Subjekt] ... möglicherweise."
       ],
       "gen": {
         "status": "generated",
@@ -574,6 +574,186 @@
       "title_en": "For [X] to succeed, [Y] needs to [Z]",
       "description_en": "State a concrete prerequisite for success and identify who must satisfy it.",
       "description_ru": "Формулируйте конкретное условие успеха и называйте того, кто должен его обеспечить."
+    },
+    {
+      "id": "C1MOD042",
+      "group_id": "MOD",
+      "set_id": "MOD",
+      "title_ru": "Необязательное действие с условием-исключением",
+      "metaphor_ru": "Назовите обычное отсутствие обязанности и отдельно — исключение, при котором она возникает.",
+      "title_en": "You don't have to [X] unless [Y]",
+      "description_en": "Distinguish an optional action from the specific circumstance that would make it necessary; practise don't have to versus unless.",
+      "description_ru": "Объясняйте, что делать что-то необязательно, кроме оговорённого случая. Тренируйте модальную необходимость и unless.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] doesn't have to [action] unless [exception].",
+          "example": "You don't have to bring a gift unless you really want to.",
+          "translation": "Можешь не приносить подарок — разве что сам захочешь его подарить.",
+          "examples": [
+            {
+              "text": "**You don't have to bring a gift unless you really want to.**",
+              "translation_ru": "Можешь не приносить подарок — разве что сам захочешь его подарить."
+            },
+            {
+              "text": "**We don't have to replace the router unless the connection keeps dropping.**",
+              "translation_ru": "Нам не нужно менять роутер, если только соединение не продолжит обрываться."
+            },
+            {
+              "text": "**Students don't have to memorise every definition unless the exam specifically requires it.**",
+              "translation_ru": "Студентам необязательно заучивать каждое определение, если только этого прямо не требует экзамен."
+            },
+            {
+              "text": "**I don't have to explain the whole story unless someone asks for the background.**",
+              "translation_ru": "Мне необязательно рассказывать всю историю, если только кто-то не попросит объяснить предысторию."
+            },
+            {
+              "text": "**She doesn't have to work late unless the hospital calls her in for an emergency.**",
+              "translation_ru": "Ей не нужно задерживаться на работе, если только больница не вызовет её из-за экстренного случая."
+            },
+            {
+              "text": "**Parents don't have to download an app unless they prefer digital updates.**",
+              "translation_ru": "Родителям необязательно устанавливать приложение, если только им не удобнее получать сообщения в электронном виде."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] muss [Handlung] nicht, es sei denn, [Ausnahme].",
+          "example": "Du musst kein Geschenk mitbringen, es sei denn, du möchtest unbedingt eines schenken.",
+          "translation": "Можешь не приносить подарок — разве что сам захочешь его подарить.",
+          "examples": [
+            {
+              "text": "**Du musst kein Geschenk mitbringen, es sei denn, du möchtest unbedingt eines schenken.**",
+              "translation_ru": "Можешь не приносить подарок — разве что сам захочешь его подарить."
+            },
+            {
+              "text": "**Wir müssen den Router nicht austauschen, es sei denn, die Verbindung bricht weiterhin ab.**",
+              "translation_ru": "Нам не нужно менять роутер, если только соединение не продолжит обрываться."
+            },
+            {
+              "text": "**Studierende müssen nicht jede Definition auswendig lernen, es sei denn, die Prüfung verlangt es ausdrücklich.**",
+              "translation_ru": "Студентам необязательно заучивать каждое определение, если только этого прямо не требует экзамен."
+            },
+            {
+              "text": "**Ich muss nicht die ganze Geschichte erzählen, es sei denn, jemand fragt nach den Hintergründen.**",
+              "translation_ru": "Мне необязательно рассказывать всю историю, если только кто-то не попросит объяснить предысторию."
+            },
+            {
+              "text": "**Sie muss nicht länger arbeiten, es sei denn, das Krankenhaus ruft sie wegen eines Notfalls zurück.**",
+              "translation_ru": "Ей не нужно задерживаться на работе, если только больница не вызовет её из-за экстренного случая."
+            },
+            {
+              "text": "**Eltern müssen keine App herunterladen, es sei denn, sie möchten die Mitteilungen lieber digital erhalten.**",
+              "translation_ru": "Родителям необязательно устанавливать приложение, если только им не удобнее получать сообщения в электронном виде."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] doesn't have to [action] unless [exception].",
+        "[Person] muss [Handlung] nicht, es sei denn, [Ausnahme]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-12T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated C1 productive frame; local spaCy annotation pending."
+      }
+    },
+    {
+      "id": "C1MOD041",
+      "group_id": "MOD",
+      "set_id": "MOD",
+      "title_ru": "Сделали лишнее: об этом стало ясно позже",
+      "metaphor_ru": "Объясняйте, что действие уже совершили, но впоследствии выяснилось: необходимости в нём не было. Не путайте needn't have done с didn't need to do.",
+      "title_en": "Needn't have done it",
+      "description_en": "Express a completed action that turned out to be unnecessary, rather than just a past absence of obligation.",
+      "description_ru": "Тренируйте оценку уже совершённого лишнего действия: английское needn't have + причастие и немецкое hätte ... nicht ... müssen.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Person] needn't have [past participle] [detail].",
+          "example": "You needn't have printed the tickets; the museum accepts them on your phone.",
+          "translation": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне.",
+          "examples": [
+            {
+              "text": "**You needn't have printed the tickets; the museum accepts them on your phone.**",
+              "translation_ru": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне."
+            },
+            {
+              "text": "**We needn't have rushed to the station; the train was delayed by an hour.**",
+              "translation_ru": "Нам незачем было спешить на вокзал: поезд задержался на час."
+            },
+            {
+              "text": "**She needn't have apologised for asking a difficult question; it exposed a flaw in our plan.**",
+              "translation_ru": "Ей не стоило извиняться за сложный вопрос: он выявил слабое место в нашем плане."
+            },
+            {
+              "text": "**I needn't have bought another charger; the old one was hidden behind the desk.**",
+              "translation_ru": "Мне незачем было покупать ещё одну зарядку: старая лежала за столом."
+            },
+            {
+              "text": "**They needn't have cancelled the picnic; the storm passed before noon.**",
+              "translation_ru": "Им не нужно было отменять пикник: гроза прошла ещё до полудня."
+            },
+            {
+              "text": "**You needn't have rewritten the whole chapter; the editor only wanted a clearer introduction.**",
+              "translation_ru": "Тебе незачем было переписывать всю главу: редактор просила лишь сделать вступление понятнее."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Person] hätte(n) [action] nicht [infinitive] müssen.",
+          "example": "Du hättest die Eintrittskarten nicht ausdrucken müssen; im Museum kannst du sie auf dem Handy vorzeigen.",
+          "translation": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне.",
+          "examples": [
+            {
+              "text": "**Du hättest die Eintrittskarten nicht ausdrucken müssen; im Museum kannst du sie auf dem Handy vorzeigen.**",
+              "translation_ru": "Тебе не нужно было распечатывать билеты: в музее их можно показать на телефоне."
+            },
+            {
+              "text": "**Wir hätten uns nicht zum Bahnhof beeilen müssen; der Zug hatte eine Stunde Verspätung.**",
+              "translation_ru": "Нам незачем было спешить на вокзал: поезд задержался на час."
+            },
+            {
+              "text": "**Sie hätte sich für die schwierige Frage nicht entschuldigen müssen; dadurch wurde eine Schwäche in unserem Plan sichtbar.**",
+              "translation_ru": "Ей не стоило извиняться за сложный вопрос: он выявил слабое место в нашем плане."
+            },
+            {
+              "text": "**Ich hätte kein neues Ladegerät kaufen müssen; das alte lag hinter dem Schreibtisch.**",
+              "translation_ru": "Мне незачем было покупать ещё одну зарядку: старая лежала за столом."
+            },
+            {
+              "text": "**Sie hätten das Picknick nicht absagen müssen; das Gewitter war schon vor Mittag vorbei.**",
+              "translation_ru": "Им не нужно было отменять пикник: гроза прошла ещё до полудня."
+            },
+            {
+              "text": "**Du hättest nicht das ganze Kapitel neu schreiben müssen; die Lektorin wollte nur eine verständlichere Einleitung.**",
+              "translation_ru": "Тебе незачем было переписывать всю главу: редактор просила лишь сделать вступление понятнее."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Person] needn't have [past participle] [detail].",
+        "[Person] hätte(n) [action] nicht [infinitive] müssen."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
+      }
     }
   ]
 }
