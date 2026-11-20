@@ -6,85 +6,85 @@
       "id": "QSTQREP001",
       "group_id": "QREP",
       "set_id": "QREP",
-      "title_ru": "Она спросила, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Она спросила, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Уточнить, спрашивал ли кто-то об этом",
+      "metaphor_ru": "Передавайте чужой вопрос «да/нет» через whether/if или ob. Во вложенном вопросе сохраняется прямой порядок слов; меняйте говорящего, время и модальность, а не только тему вопроса.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Did she ask whether [the team needs another day to decide]?",
-          "example": "Did she ask whether the team needs another day to decide?",
-          "translation": "Она спросила, команде нужен ещё день для решения?",
+          "formula": "Did/Has [speaker] ask whether/if [subject + verb + ...]?",
+          "example": "Did Maya ask whether the museum offers quiet visiting hours for children who are sensitive to noise?",
+          "translation": "Майя спрашивала, бывают ли в музее спокойные часы для детей, чувствительных к шуму?",
           "examples": [
             {
-              "text": "**Did she ask whether the team needs another day to decide?**",
-              "translation_ru": "Она спросила, команде нужен ещё день для решения?"
+              "text": "**Did Maya ask whether the museum offers quiet visiting hours for children who are sensitive to noise?**",
+              "translation_ru": "Майя спрашивала, бывают ли в музее спокойные часы для детей, чувствительных к шуму?"
             },
             {
-              "text": "**Did she ask whether the revised plan has not been shared yet?**",
-              "translation_ru": "Она спросила, обновлённым планом ещё не поделились?"
+              "text": "**Has your brother asked if the landlord will replace the faulty heating valve before winter?**",
+              "translation_ru": "Твой брат уже узнавал, заменит ли хозяин квартиры неисправный вентиль отопления до зимы?"
             },
             {
-              "text": "**Did she ask whether we should compare the two options?**",
-              "translation_ru": "Она спросила, нам следует сравнить два варианта?"
+              "text": "**Did the editor check whether the photograph could be published with the family's consent?**",
+              "translation_ru": "Редактор уточнял, можно ли опубликовать фотографию с согласия семьи?"
             },
             {
-              "text": "**Did she ask whether the client asked for more detail?**",
-              "translation_ru": "Она спросила, клиент попросил больше деталей?"
+              "text": "**Wasn't the instructor asking whether we'd practised the pronunciation aloud rather than just reading the rules?**",
+              "translation_ru": "Разве преподаватель не спрашивал, тренировались ли мы произносить слова вслух, а не просто читали правила?"
             },
             {
-              "text": "**Did she ask whether the pilot may continue next month?**",
-              "translation_ru": "Она спросила, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Did anyone ask if the night bus still stops near the hospital after midnight?**",
+              "translation_ru": "Кто-нибудь узнавал, останавливается ли ночной автобус у больницы после полуночи?"
             },
             {
-              "text": "**Did she ask whether the data need another check?**",
-              "translation_ru": "Она спросила, данные нужно проверить ещё раз?"
+              "text": "**Has she asked whether the app stores voice recordings on the device or uploads them?**",
+              "translation_ru": "Она уже выясняла, хранит ли приложение голосовые записи на устройстве или загружает их в сеть?"
             },
             {
-              "text": "**Did she ask whether the meeting was moved?**",
-              "translation_ru": "Она спросила, встречу перенесли?"
+              "text": "**Did the neighbours ask whether we could turn the music down while their baby was asleep?**",
+              "translation_ru": "Соседи просили узнать, можем ли мы сделать музыку потише, пока их малыш спит?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Hat sie gefragt, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Hat sie gefragt, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Она спросила, команде нужен ещё день для решения?",
+          "formula": "Hat/Haben [Person(en)] gefragt, ob [Nebensatz mit Verb am Ende]?",
+          "example": "Hat Maya gefragt, ob es im Museum ruhige Besuchszeiten für geräuschempfindliche Kinder gibt?",
+          "translation": "Майя спрашивала, бывают ли в музее спокойные часы для детей, чувствительных к шуму?",
           "examples": [
             {
-              "text": "**Hat sie gefragt, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Она спросила, команде нужен ещё день для решения?"
+              "text": "**Hat Maya gefragt, ob es im Museum ruhige Besuchszeiten für geräuschempfindliche Kinder gibt?**",
+              "translation_ru": "Майя спрашивала, бывают ли в музее спокойные часы для детей, чувствительных к шуму?"
             },
             {
-              "text": "**Hat sie gefragt, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Она спросила, обновлённым планом ещё не поделились?"
+              "text": "**Hat dein Bruder nachgefragt, ob der Vermieter das defekte Heizungsventil noch vor dem Winter austauscht?**",
+              "translation_ru": "Твой брат уже узнавал, заменит ли хозяин квартиры неисправный вентиль отопления до зимы?"
             },
             {
-              "text": "**Hat sie gefragt, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Она спросила, нам следует сравнить два варианта?"
+              "text": "**Hat die Redakteurin gefragt, ob das Foto mit Einwilligung der Familie veröffentlicht werden darf?**",
+              "translation_ru": "Редактор уточняла, можно ли опубликовать фотографию с согласия семьи?"
             },
             {
-              "text": "**Hat sie gefragt, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Она спросила, клиент попросил больше деталей?"
+              "text": "**Wollte die Kursleiterin nicht wissen, ob wir die Aussprache laut geübt haben, statt nur die Regeln zu lesen?**",
+              "translation_ru": "Разве преподавательница не спрашивала, тренировались ли мы произносить слова вслух, а не просто читали правила?"
             },
             {
-              "text": "**Hat sie gefragt, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Она спросила, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Hat jemand gefragt, ob der Nachtbus nach Mitternacht noch in der Nähe des Krankenhauses hält?**",
+              "translation_ru": "Кто-нибудь узнавал, останавливается ли ночной автобус у больницы после полуночи?"
             },
             {
-              "text": "**Hat sie gefragt, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Она спросила, данные нужно проверить ещё раз?"
+              "text": "**Hat sie nachgefragt, ob die App Sprachaufnahmen auf dem Gerät speichert oder hochlädt?**",
+              "translation_ru": "Она уже выясняла, хранит ли приложение голосовые записи на устройстве или загружает их в сеть?"
             },
             {
-              "text": "**Hat sie gefragt, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Она спросила, встречу перенесли?"
+              "text": "**Haben die Nachbarn gefragt, ob wir die Musik leiser stellen könnten, während ihr Baby schläft?**",
+              "translation_ru": "Соседи спрашивали, можем ли мы сделать музыку потише, пока их малыш спит?"
             }
           ]
         }
       ],
       "formulas": [
-        "Did she ask whether [the team needs another day to decide]?",
-        "Hat sie gefragt, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Did/Has [speaker] ask whether/if [subject + verb + ...]?",
+        "Hat/Haben [Person(en)] gefragt, ob [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQREP021",
       "group_id": "QREP",
       "set_id": "QREP",
-      "title_ru": "Как был поднят вопрос о том, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как был поднят вопрос о том, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, как возник вопрос о спорном условии",
+      "metaphor_ru": "Разбирайтесь, кто, когда и при каких обстоятельствах поднял вопрос «так ли это». В английском используйте the question/issue of whether и косвенный порядок слов; по-немецки естественнее die Frage, ob. Не смешивайте это с ответом на сам вопрос.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How was the question of whether [the team needs another day to decide] raised?",
-          "example": "How was the question of whether the team needs another day to decide raised?",
-          "translation": "Как был поднят вопрос о том, команде нужен ещё день для решения?",
+          "formula": "How/when/by whom was the question of whether [X] raised?",
+          "example": "How did the question of whether the attic was safe to use come up at the residents' meeting?",
+          "translation": "Как на собрании жильцов возник вопрос, безопасно ли пользоваться чердаком?",
           "examples": [
             {
-              "text": "**How was the question of whether the team needs another day to decide raised?**",
-              "translation_ru": "Как был поднят вопрос о том, команде нужен ещё день для решения?"
+              "text": "**How did the question of whether the attic was safe to use come up at the residents' meeting?**",
+              "translation_ru": "Как на собрании жильцов возник вопрос, безопасно ли пользоваться чердаком?"
             },
             {
-              "text": "**How was the question of whether the revised plan has not been shared yet raised?**",
-              "translation_ru": "Как был поднят вопрос о том, обновлённым планом ещё не поделились?"
+              "text": "**Who first raised the question of whether the footbridge was accessible to wheelchair users?**",
+              "translation_ru": "Кто первым поднял вопрос о доступности пешеходного моста для людей на колясках?"
             },
             {
-              "text": "**How was the question of whether we should compare the two options raised?**",
-              "translation_ru": "Как был поднят вопрос о том, нам следует сравнить два варианта?"
+              "text": "**Was the question of whether the old files could be restored raised by the teacher or by the students?**",
+              "translation_ru": "Вопрос о восстановлении старых файлов поднял преподаватель или сами студенты?"
             },
             {
-              "text": "**How was the question of whether the client asked for more detail raised?**",
-              "translation_ru": "Как был поднят вопрос о том, клиент попросил больше деталей?"
+              "text": "**How did the issue of whether to cancel the outdoor concert arise?**",
+              "translation_ru": "Как вообще возник вопрос об отмене концерта под открытым небом?"
             },
             {
-              "text": "**How was the question of whether the pilot may continue next month raised?**",
-              "translation_ru": "Как был поднят вопрос о том, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**At what point did the question of whether the examination had been fair come up?**",
+              "translation_ru": "На каком этапе заговорили о том, была ли экзаменационная оценка справедливой?"
             },
             {
-              "text": "**How was the question of whether the data need another check raised?**",
-              "translation_ru": "Как был поднят вопрос о том, данные нужно проверить ещё раз?"
+              "text": "**How did the question of whether the house needed a structural survey make it onto the agenda?**",
+              "translation_ru": "Как вопрос о техническом обследовании дома оказался в повестке?"
             },
             {
-              "text": "**How was the question of whether the meeting was moved raised?**",
-              "translation_ru": "Как был поднят вопрос о том, встречу перенесли?"
+              "text": "**Why was the question of whether the trail map was accurate brought up so late?**",
+              "translation_ru": "Почему вопрос о точности карты маршрута подняли так поздно?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie wurde die Frage aufgeworfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie wurde die Frage aufgeworfen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как был поднят вопрос о том, команде нужен ещё день для решения?",
+          "formula": "Wie/wann/von wem wurde die Frage aufgeworfen, ob [Nebensatz]?",
+          "example": "Wie kam bei der Hausversammlung die Frage auf, ob der Dachboden sicher genutzt werden kann?",
+          "translation": "Как на собрании жильцов возник вопрос, безопасно ли пользоваться чердаком?",
           "examples": [
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как был поднят вопрос о том, команде нужен ещё день для решения?"
+              "text": "**Wie kam bei der Hausversammlung die Frage auf, ob der Dachboden sicher genutzt werden kann?**",
+              "translation_ru": "Как на собрании жильцов возник вопрос, безопасно ли пользоваться чердаком?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как был поднят вопрос о том, обновлённым планом ещё не поделились?"
+              "text": "**Wer hat zuerst die Frage aufgeworfen, ob die Fußgängerbrücke für Menschen im Rollstuhl zugänglich ist?**",
+              "translation_ru": "Кто первым поднял вопрос о доступности пешеходного моста для людей на колясках?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как был поднят вопрос о том, нам следует сравнить два варианта?"
+              "text": "**Kam die Frage, ob sich die alten Dateien wiederherstellen lassen, von der Lehrerin oder von den Schülern?**",
+              "translation_ru": "Вопрос о восстановлении старых файлов подняла преподавательница или сами школьники?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как был поднят вопрос о том, клиент попросил больше деталей?"
+              "text": "**Wie kam die Frage auf, ob das Open-Air-Konzert abgesagt werden sollte?**",
+              "translation_ru": "Как вообще возник вопрос об отмене концерта под открытым небом?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как был поднят вопрос о том, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wann kam die Frage auf, ob die Prüfung fair bewertet worden war?**",
+              "translation_ru": "Когда заговорили о том, справедливо ли оценили экзамен?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как был поднят вопрос о том, данные нужно проверить ещё раз?"
+              "text": "**Wie kam die Frage, ob das Haus statisch geprüft werden muss, überhaupt auf die Tagesordnung?**",
+              "translation_ru": "Как вопрос о проверке несущих конструкций дома вообще оказался в повестке?"
             },
             {
-              "text": "**Wie wurde die Frage aufgeworfen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Как был поднят вопрос о том, встречу перенесли?"
+              "text": "**Warum wurde die Frage, ob die Wanderkarte zuverlässig ist, erst so spät angesprochen?**",
+              "translation_ru": "Почему вопрос о достоверности карты маршрута подняли так поздно?"
             }
           ]
         }
       ],
       "formulas": [
-        "How was the question of whether [the team needs another day to decide] raised?",
-        "Wie wurde die Frage aufgeworfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How/when/by whom was the question of whether [X] raised?",
+        "Wie/wann/von wem wurde die Frage aufgeworfen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
