@@ -104,80 +104,88 @@
       "id": "C1HED041",
       "group_id": "HED",
       "set_id": "HED",
-      "title_ru": "На этом этапе я бы считал [X] рабочей гипотезой, а не [Y]",
-      "metaphor_ru": "Сохраняйте полезную гипотезу в работе, не превращая её раньше времени в установленный факт.",
-      "title_en": "At this stage, I would treat [X] as a working assumption rather than [Y]",
-      "description_en": "Use this frame when evidence is useful enough to proceed but not strong enough for a firm conclusion.",
-      "description_ru": "Используйте этот каркас, когда данных достаточно для следующего шага, но недостаточно для твёрдого вывода.",
+      "title_ru": "Рабочая гипотеза — ещё не факт",
+      "metaphor_ru": "Используйте рабочую гипотезу для следующего шага, не выдавая её за установленную причину или гарантию. Отрабатывайте would/should и немецкий Konjunktiv II с als Arbeitshypothese.",
+      "title_en": "Treat [X] as a working hypothesis, not an established fact",
+      "description_en": "Keep a plausible explanation provisional until evidence confirms it, instead of using it as a settled cause.",
+      "description_ru": "Используйте рабочую гипотезу для следующего шага, не выдавая её за установленную причину или гарантию. Отрабатывайте would/should и немецкий Konjunktiv II с als Arbeitshypothese.",
       "langs": [
         {
           "lang": "en",
-          "formula": "At this stage, I would treat [X] as a working assumption rather than [Y].",
-          "example": "At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.",
-          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "formula": "[For now / until Y], [I'd / we'd] treat [X] as a working hypothesis, not [a confirmed fact].",
+          "example": "For now, I'd treat a leaking pipe as a working hypothesis, not the established cause of the damp patch.",
+          "translation": "Пока я бы считал протечку трубы лишь рабочей гипотезой, а не доказанной причиной сырого пятна.",
           "examples": [
             {
-              "text": "**At this stage, I would treat the eight-percent uplift as a working assumption rather than a proven effect.**",
-              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+              "text": "**For now, I'd treat a leaking pipe as a working hypothesis, not the established cause of the damp patch.**",
+              "translation_ru": "Пока я бы считал протечку трубы лишь рабочей гипотезой, а не доказанной причиной сырого пятна."
             },
             {
-              "text": "**At this stage, I would treat the caching layer as a working assumption rather than the confirmed root cause.**",
-              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+              "text": "**Until we speak to the parents, let's treat a timetable clash as a working hypothesis, not the reason the child stopped attending.**",
+              "translation_ru": "Пока мы не поговорим с родителями, будем считать накладку в расписании версией, а не установленной причиной пропусков."
             },
             {
-              "text": "**At this stage, I would treat next quarter’s demand forecast as a working assumption rather than a commitment.**",
-              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+              "text": "**I'd treat a muted microphone as a working hypothesis rather than assume the speech-recognition software is broken.**",
+              "translation_ru": "Я бы сначала проверил версию с выключенным микрофоном, а не объявлял систему распознавания речи неисправной."
             },
             {
-              "text": "**At this stage, I would treat the July launch date as a working assumption rather than a fixed deadline.**",
-              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+              "text": "**After only three interviews, we should treat the idea that commuters feel unsafe as a working hypothesis, not a citywide finding.**",
+              "translation_ru": "После всего трёх интервью ощущение небезопасности у пассажиров — пока гипотеза, а не вывод обо всём городе."
             },
             {
-              "text": "**At this stage, I would treat the complaint pattern as a working assumption rather than evidence that every customer has the same problem.**",
-              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+              "text": "**For the first week, I'd treat the idea that an earlier bedtime improves her sleep as a working hypothesis, not a guarantee.**",
+              "translation_ru": "В первую неделю я бы проверял, помогает ли ей более ранний отход ко сну, а не обещал улучшение заранее."
             },
             {
-              "text": "**At this stage, I would treat the supplier’s stated capacity as a working assumption rather than guaranteed availability.**",
-              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+              "text": "**Until we review the session recordings, I'd treat the redesigned menu as a working hypothesis for the drop-off, not a confirmed cause.**",
+              "translation_ru": "Пока мы не изучили записи пользовательских сессий, новое меню — лишь возможное объяснение роста отказов."
+            },
+            {
+              "text": "**Even if several neighbours suspect the same thing, we should treat late-night deliveries as a working hypothesis, not a proven source of the noise.**",
+              "translation_ru": "Даже если несколько соседей думают одинаково, ночные доставки пока лишь предполагаемый, а не доказанный источник шума."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten.",
-          "example": "Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.",
-          "translation": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом.",
+          "formula": "[Vorerst / bis Y] würde(n) [wir / ich] [X] als Arbeitshypothese betrachten, nicht als [gesicherten Befund].",
+          "example": "Vorerst würde ich ein undichtes Rohr als Arbeitshypothese betrachten, nicht als gesicherte Ursache für den feuchten Fleck.",
+          "translation": "Пока я бы считал протечку трубы лишь рабочей гипотезой, а не доказанной причиной сырого пятна.",
           "examples": [
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich den Anstieg um acht Prozent als Arbeitshypothese und nicht als nachgewiesenen Effekt betrachten.**",
-              "translation_ru": "На этом этапе я бы считал рост на восемь процентов рабочей гипотезой, а не доказанным эффектом."
+              "text": "**Vorerst würde ich ein undichtes Rohr als Arbeitshypothese betrachten, nicht als gesicherte Ursache für den feuchten Fleck.**",
+              "translation_ru": "Пока я бы считал протечку трубы лишь рабочей гипотезой, а не доказанной причиной сырого пятна."
             },
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich die Cache-Schicht als Arbeitshypothese und nicht als bestätigte Ursache betrachten.**",
-              "translation_ru": "На этом этапе я бы считал слой кэша рабочей гипотезой, а не подтверждённой первопричиной."
+              "text": "**Bis wir mit den Eltern gesprochen haben, sollten wir einen Terminkonflikt als Arbeitshypothese behandeln, nicht als erwiesenen Grund für das Fernbleiben des Kindes.**",
+              "translation_ru": "Пока мы не поговорим с родителями, будем считать накладку в расписании версией, а не установленной причиной пропусков."
             },
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich die Nachfrageprognose für das nächste Quartal als Arbeitshypothese und nicht als Zusage betrachten.**",
-              "translation_ru": "На этом этапе я бы рассматривал прогноз спроса на следующий квартал как рабочую гипотезу, а не как обязательство."
+              "text": "**Ich würde ein stummgeschaltetes Mikrofon zunächst als Arbeitshypothese betrachten, statt sofort von einem Fehler in der Spracherkennung auszugehen.**",
+              "translation_ru": "Я бы сначала проверил версию с выключенным микрофоном, а не объявлял систему распознавания речи неисправной."
             },
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich den Starttermin im Juli als Arbeitshypothese und nicht als feste Frist betrachten.**",
-              "translation_ru": "На этом этапе я бы считал июльскую дату запуска рабочим ориентиром, а не жёстким сроком."
+              "text": "**Nach nur drei Interviews sollten wir die Vermutung, dass sich Pendler unsicher fühlen, als Arbeitshypothese behandeln, nicht als Befund für die ganze Stadt.**",
+              "translation_ru": "После всего трёх интервью ощущение небезопасности у пассажиров — пока гипотеза, а не вывод обо всём городе."
             },
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich das Muster in den Beschwerden als Arbeitshypothese und nicht als Beleg dafür betrachten, dass alle Kunden dasselbe Problem haben.**",
-              "translation_ru": "На этом этапе я бы считал повторяющийся тип жалоб рабочей гипотезой, а не доказательством того, что у всех клиентов одна и та же проблема."
+              "text": "**In der ersten Woche würde ich die Annahme, dass sie durch früheres Zubettgehen besser schläft, als Arbeitshypothese betrachten, nicht als Gewissheit.**",
+              "translation_ru": "В первую неделю я бы проверял, помогает ли ей более ранний отход ко сну, а не обещал улучшение заранее."
             },
             {
-              "text": "**Zum jetzigen Zeitpunkt würde ich die vom Lieferanten genannte Kapazität als Arbeitshypothese und nicht als garantierte Verfügbarkeit betrachten.**",
-              "translation_ru": "На этом этапе я бы рассматривал заявленную мощность поставщика как рабочую гипотезу, а не как гарантированную доступность."
+              "text": "**Bis wir die Sitzungsaufzeichnungen geprüft haben, würde ich das neue Menü als Arbeitshypothese für die Abbrüche ansehen, nicht als nachgewiesene Ursache.**",
+              "translation_ru": "Пока мы не изучили записи пользовательских сессий, новое меню — лишь возможное объяснение роста отказов."
+            },
+            {
+              "text": "**Auch wenn mehrere Nachbarn dasselbe vermuten, sollten wir die nächtlichen Lieferungen als Arbeitshypothese ansehen, nicht als nachgewiesene Lärmquelle.**",
+              "translation_ru": "Даже если несколько соседей думают одинаково, ночные доставки пока лишь предполагаемый, а не доказанный источник шума."
             }
           ]
         }
       ],
       "formulas": [
-        "At this stage, I would treat [X] as a working assumption rather than [Y].",
-        "Zum jetzigen Zeitpunkt würde ich [X] als Arbeitshypothese und nicht als [Y] betrachten."
+        "[For now / until Y], [I'd / we'd] treat [X] as a working hypothesis, not [a confirmed fact].",
+        "[Vorerst / bis Y] würde(n) [wir / ich] [X] als Arbeitshypothese betrachten, nicht als [gesicherten Befund]."
       ],
       "gen": {
         "status": "curated",
