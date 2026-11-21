@@ -104,80 +104,88 @@
       "id": "C1AGR041",
       "group_id": "AGR",
       "set_id": "AGR",
-      "title_ru": "Я понимаю аргумент в пользу [X], но из этого не обязательно следует, что [Y]",
-      "metaphor_ru": "Признайте логику чужого аргумента, но отделите её от вывода, который кажется слишком сильным.",
-      "title_en": "I understand the argument for [X], but I don’t think it necessarily follows that [Y]",
-      "description_en": "Use this frame to disagree with an inference without dismissing the reasoning that led to it.",
-      "description_ru": "Используйте этот каркас, чтобы не соглашаться с выводом, не обесценивая рассуждение, которое к нему привело.",
+      "title_ru": "Признать довод, но оспорить вывод",
+      "metaphor_ru": "Сначала признайте разумный довод собеседника, затем покажите, что из него не обязательно следует предложенный вывод. В английском закрепляйте it doesn't follow that, в немецком — daraus folgt nicht, dass.",
+      "title_en": "I see the argument, but it doesn't necessarily follow that [Y]",
+      "description_en": "Acknowledge a legitimate concern while challenging an inference that goes beyond what the concern establishes.",
+      "description_ru": "Сначала признайте разумный довод собеседника, затем покажите, что из него не обязательно следует предложенный вывод. В английском закрепляйте it doesn't follow that, в немецком — daraus folgt nicht, dass.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I understand the argument for [X], but I don’t think it necessarily follows that [Y].",
-          "example": "I understand the argument for delaying the hire, but I don’t think it necessarily follows that we should stop interviewing altogether.",
-          "translation": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования.",
+          "formula": "[Acknowledge X], but it doesn't (necessarily) follow that [Y].",
+          "example": "I understand why the school wants less screen time, but it doesn't follow that all digital homework should be banned.",
+          "translation": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания.",
           "examples": [
             {
-              "text": "**I understand the argument for delaying the hire, but I don’t think it necessarily follows that we should stop interviewing altogether.**",
-              "translation_ru": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования."
+              "text": "**I understand why the school wants less screen time, but it doesn't follow that all digital homework should be banned.**",
+              "translation_ru": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания."
             },
             {
-              "text": "**I understand the argument for standardising the workflow, but I don’t think it necessarily follows that every regional exception should disappear.**",
-              "translation_ru": "Я понимаю аргумент в пользу стандартизации процесса, но из этого не обязательно следует, что все региональные исключения должны исчезнуть."
+              "text": "**It's fair to ask for a quieter street, but it doesn't necessarily follow that the bus stop has to move.**",
+              "translation_ru": "Желание сделать улицу тише вполне понятно, но это не обязательно означает, что остановку нужно переносить."
             },
             {
-              "text": "**I understand the argument for raising the price, but I don’t think it necessarily follows that churn will increase across every customer segment.**",
-              "translation_ru": "Я понимаю аргумент в пользу повышения цены, но из этого не обязательно следует, что отток вырастет во всех клиентских сегментах."
+              "text": "**I see why you want to protect your evenings, but it doesn't follow that you need to ignore every message from your friends.**",
+              "translation_ru": "Я понимаю, почему ты хочешь оставить вечера для себя, но ради этого необязательно игнорировать все сообщения друзей."
             },
             {
-              "text": "**I understand the argument for extending the pilot, but I don’t think it necessarily follows that a full rollout should be postponed.**",
-              "translation_ru": "Я понимаю аргумент в пользу продления пилота, но из этого не обязательно следует, что полный запуск нужно откладывать."
+              "text": "**We agree that the app collects too much data, but it doesn't follow that we should remove useful accessibility features.**",
+              "translation_ru": "Мы согласны, что приложение собирает слишком много данных, но это не значит, что нужно удалять полезные функции доступности."
             },
             {
-              "text": "**I understand the argument for centralising ownership, but I don’t think it necessarily follows that local teams should lose decision rights.**",
-              "translation_ru": "Я понимаю аргумент в пользу централизации ответственности, но из этого не обязательно следует, что локальные команды должны потерять право принимать решения."
+              "text": "**I understand the concern about rising rents, but it doesn't necessarily follow that new housing should be blocked.**",
+              "translation_ru": "Я понимаю тревогу из-за роста аренды, но это не обязательно довод против строительства нового жилья."
             },
             {
-              "text": "**I understand the argument for adding another approval, but I don’t think it necessarily follows that the process will become more reliable.**",
-              "translation_ru": "Я понимаю аргумент в пользу ещё одного согласования, но из этого не обязательно следует, что процесс станет надёжнее."
+              "text": "**You're right that the explanation was confusing, but it doesn't follow that the student misunderstood the whole topic.**",
+              "translation_ru": "Ты прав, объяснение было запутанным, но это ещё не значит, что ученик не понял всю тему."
+            },
+            {
+              "text": "**I take your point about the tight deadline, but it doesn't follow that we must skip the safety review.**",
+              "translation_ru": "Я понимаю твоё замечание о жёстком сроке, но из этого не следует, что проверкой безопасности можно пренебречь."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich verstehe das Argument für [X], aber daraus folgt für mich nicht zwangsläufig, dass [Y].",
-          "example": "Ich verstehe das Argument für eine Verschiebung der Einstellung, aber daraus folgt für mich nicht zwangsläufig, dass wir die Bewerbungsgespräche ganz einstellen sollten.",
-          "translation": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования.",
+          "formula": "[Einwand anerkennen], aber daraus folgt nicht (zwangsläufig), dass [Y].",
+          "example": "Ich verstehe, warum die Schule die Bildschirmzeit verringern will, aber daraus folgt nicht, dass digitale Hausaufgaben ganz verboten werden sollten.",
+          "translation": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания.",
           "examples": [
             {
-              "text": "**Ich verstehe das Argument für eine Verschiebung der Einstellung, aber daraus folgt für mich nicht zwangsläufig, dass wir die Bewerbungsgespräche ganz einstellen sollten.**",
-              "translation_ru": "Я понимаю аргумент в пользу отсрочки найма, но из этого не обязательно следует, что нам нужно полностью остановить собеседования."
+              "text": "**Ich verstehe, warum die Schule die Bildschirmzeit verringern will, aber daraus folgt nicht, dass digitale Hausaufgaben ganz verboten werden sollten.**",
+              "translation_ru": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания."
             },
             {
-              "text": "**Ich verstehe das Argument für eine Standardisierung des Ablaufs, aber daraus folgt für mich nicht zwangsläufig, dass alle regionalen Ausnahmen verschwinden sollten.**",
-              "translation_ru": "Я понимаю аргумент в пользу стандартизации процесса, но из этого не обязательно следует, что все региональные исключения должны исчезнуть."
+              "text": "**Der Wunsch nach einer ruhigeren Straße ist berechtigt, aber daraus folgt nicht zwangsläufig, dass die Bushaltestelle verlegt werden muss.**",
+              "translation_ru": "Желание сделать улицу тише вполне понятно, но это не обязательно означает, что остановку нужно переносить."
             },
             {
-              "text": "**Ich verstehe das Argument für eine Preiserhöhung, aber daraus folgt für mich nicht zwangsläufig, dass die Abwanderung in allen Kundensegmenten steigen wird.**",
-              "translation_ru": "Я понимаю аргумент в пользу повышения цены, но из этого не обязательно следует, что отток вырастет во всех клиентских сегментах."
+              "text": "**Ich verstehe, dass du deine Abende für dich haben möchtest, aber daraus folgt nicht, dass du jede Nachricht von Freunden ignorieren musst.**",
+              "translation_ru": "Я понимаю, почему ты хочешь оставить вечера для себя, но ради этого необязательно игнорировать все сообщения друзей."
             },
             {
-              "text": "**Ich verstehe das Argument für eine Verlängerung des Pilotprojekts, aber daraus folgt für mich nicht zwangsläufig, dass die vollständige Einführung verschoben werden sollte.**",
-              "translation_ru": "Я понимаю аргумент в пользу продления пилота, но из этого не обязательно следует, что полный запуск нужно откладывать."
+              "text": "**Wir sind uns einig, dass die App zu viele Daten sammelt, aber daraus folgt nicht, dass wir nützliche Funktionen zur Barrierefreiheit streichen sollten.**",
+              "translation_ru": "Мы согласны, что приложение собирает слишком много данных, но это не значит, что нужно удалять полезные функции доступности."
             },
             {
-              "text": "**Ich verstehe das Argument für eine zentralisierte Verantwortung, aber daraus folgt für mich nicht zwangsläufig, dass lokale Teams ihre Entscheidungsrechte verlieren sollten.**",
-              "translation_ru": "Я понимаю аргумент в пользу централизации ответственности, но из этого не обязательно следует, что локальные команды должны потерять право принимать решения."
+              "text": "**Ich verstehe die Sorge über steigende Mieten, aber daraus folgt nicht zwangsläufig, dass der Bau neuer Wohnungen verhindert werden sollte.**",
+              "translation_ru": "Я понимаю тревогу из-за роста аренды, но это не обязательно довод против строительства нового жилья."
             },
             {
-              "text": "**Ich verstehe das Argument für eine zusätzliche Freigabe, aber daraus folgt für mich nicht zwangsläufig, dass der Prozess dadurch zuverlässiger wird.**",
-              "translation_ru": "Я понимаю аргумент в пользу ещё одного согласования, но из этого не обязательно следует, что процесс станет надёжнее."
+              "text": "**Du hast recht, die Erklärung war verwirrend, aber daraus folgt nicht, dass der Schüler das gesamte Thema missverstanden hat.**",
+              "translation_ru": "Ты прав, объяснение было запутанным, но это ещё не значит, что ученик не понял всю тему."
+            },
+            {
+              "text": "**Deinen Einwand wegen der knappen Frist verstehe ich, aber daraus folgt nicht, dass wir auf die Sicherheitsprüfung verzichten müssen.**",
+              "translation_ru": "Я понимаю твоё замечание о жёстком сроке, но из этого не следует, что проверкой безопасности можно пренебречь."
             }
           ]
         }
       ],
       "formulas": [
-        "I understand the argument for [X], but I don’t think it necessarily follows that [Y].",
-        "Ich verstehe das Argument für [X], aber daraus folgt für mich nicht zwangsläufig, dass [Y]."
+        "[Acknowledge X], but it doesn't (necessarily) follow that [Y].",
+        "[Einwand anerkennen], aber daraus folgt nicht (zwangsläufig), dass [Y]."
       ],
       "gen": {
         "status": "curated",
