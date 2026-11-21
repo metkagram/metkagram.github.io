@@ -104,80 +104,88 @@
       "id": "C1PRB042",
       "group_id": "PRB",
       "set_id": "PRB",
-      "title_ru": "Что должно быть верно, чтобы [X] сработало?",
-      "metaphor_ru": "Разворачивайте решение назад: сначала назовите условия, без которых оно не сможет сработать.",
-      "title_en": "What would have to be true for [X] to work?",
-      "description_en": "Use this question to expose hidden assumptions before investing in a plan, forecast, or solution.",
-      "description_ru": "Используйте этот вопрос, чтобы выявить скрытые предпосылки до того, как вкладываться в план, прогноз или решение.",
+      "title_ru": "Какие условия нужны, чтобы план сработал?",
+      "metaphor_ru": "Ищите необходимые условия до начала действий: would have to / would need to выражают гипотетическую необходимость; немецкий müsste / müssten с damit требует глагола в конце придаточного.",
+      "title_en": "What would need to be true for [plan] to work?",
+      "description_en": "Work backwards from a proposed outcome to the conditions required for it to become feasible.",
+      "description_ru": "Ищите необходимые условия до начала действий: would have to / would need to выражают гипотетическую необходимость; немецкий müsste / müssten с damit требует глагола в конце придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What would have to be true for [X] to work?",
-          "example": "What would have to be true for the migration to finish in one weekend?",
-          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "formula": "What would have to be true / in place / change for [plan] to work?",
+          "example": "What would have to be in place for our grandparents to manage the move without outside help?",
+          "translation": "Что потребуется, чтобы бабушка с дедушкой смогли справиться с переездом без посторонней помощи?",
           "examples": [
             {
-              "text": "**What would have to be true for the migration to finish in one weekend?**",
-              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+              "text": "**What would have to be in place for our grandparents to manage the move without outside help?**",
+              "translation_ru": "Что потребуется, чтобы бабушка с дедушкой смогли справиться с переездом без посторонней помощи?"
             },
             {
-              "text": "**What would have to be true for a four-day week to work without slowing customer support?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+              "text": "**What would have to change for the village bus service to run reliably through winter?**",
+              "translation_ru": "Что должно измениться, чтобы деревенский автобус надёжно ходил и зимой?"
             },
             {
-              "text": "**What would have to be true for the price increase to work without damaging retention?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+              "text": "**What would have to be true for a shorter school day to improve learning rather than shift homework into the evening?**",
+              "translation_ru": "При каких условиях сокращённый учебный день улучшил бы обучение, а не просто перенёс домашние задания на вечер?"
             },
             {
-              "text": "**What would have to be true for local transcription to work reliably on an eight-gigabyte laptop?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+              "text": "**What would need to be in place for visitors with limited mobility to use the museum's side entrance independently?**",
+              "translation_ru": "Что нужно предусмотреть, чтобы посетители с ограниченной подвижностью могли самостоятельно пользоваться боковым входом музея?"
             },
             {
-              "text": "**What would have to be true for centralising support to work across three time zones?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+              "text": "**What would have to be true for our open-source tool to remain useful after the volunteers step back?**",
+              "translation_ru": "Что должно быть обеспечено, чтобы открытый инструмент оставался полезным, когда волонтёры отойдут от проекта?"
             },
             {
-              "text": "**What would have to be true for us to launch before the legal review is fully complete?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+              "text": "**What would need to change for this compromise to feel fair to both siblings?**",
+              "translation_ru": "Что пришлось бы изменить, чтобы этот компромисс казался справедливым обоим детям?"
+            },
+            {
+              "text": "**What would have to be in place for video consultations to protect patients' privacy?**",
+              "translation_ru": "Какие меры нужны, чтобы видеоконсультации защищали личные данные пациентов?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was müsste zutreffen, damit [X] funktioniert?",
-          "example": "Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?",
-          "translation": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?",
+          "formula": "Welche Voraussetzungen müssten erfüllt sein / Was müsste sich ändern, damit [Vorhaben] funktioniert?",
+          "example": "Welche Voraussetzungen müssten erfüllt sein, damit unsere Großeltern den Umzug ohne fremde Hilfe schaffen?",
+          "translation": "Что потребуется, чтобы бабушка с дедушкой смогли справиться с переездом без посторонней помощи?",
           "examples": [
             {
-              "text": "**Was müsste zutreffen, damit die Migration an einem einzigen Wochenende abgeschlossen werden kann?**",
-              "translation_ru": "Что должно быть верно, чтобы миграцию удалось завершить за одни выходные?"
+              "text": "**Welche Voraussetzungen müssten erfüllt sein, damit unsere Großeltern den Umzug ohne fremde Hilfe schaffen?**",
+              "translation_ru": "Что потребуется, чтобы бабушка с дедушкой смогли справиться с переездом без посторонней помощи?"
             },
             {
-              "text": "**Was müsste zutreffen, damit eine Vier-Tage-Woche funktioniert, ohne den Kundensupport zu verlangsamen?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы четырёхдневная рабочая неделя не замедляла поддержку клиентов?"
+              "text": "**Was müsste sich ändern, damit der Dorfbus auch im Winter zuverlässig fährt?**",
+              "translation_ru": "Что должно измениться, чтобы деревенский автобус надёжно ходил и зимой?"
             },
             {
-              "text": "**Was müsste zutreffen, damit die Preiserhöhung funktioniert, ohne die Kundenbindung zu schwächen?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы повышение цены сработало без ухудшения удержания клиентов?"
+              "text": "**Welche Voraussetzungen müssten erfüllt sein, damit ein kürzerer Schultag das Lernen verbessert, statt nur die Hausaufgaben in den Abend zu verlagern?**",
+              "translation_ru": "При каких условиях сокращённый учебный день улучшил бы обучение, а не просто перенёс домашние задания на вечер?"
             },
             {
-              "text": "**Was müsste zutreffen, damit lokale Transkription auf einem Laptop mit acht Gigabyte Arbeitsspeicher zuverlässig funktioniert?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы локальная транскрибация надёжно работала на ноутбуке с восемью гигабайтами памяти?"
+              "text": "**Was müsste vorhanden sein, damit Menschen mit eingeschränkter Mobilität den Seiteneingang des Museums selbstständig nutzen können?**",
+              "translation_ru": "Что нужно предусмотреть, чтобы посетители с ограниченной подвижностью могли самостоятельно пользоваться боковым входом музея?"
             },
             {
-              "text": "**Was müsste zutreffen, damit ein zentralisierter Support über drei Zeitzonen hinweg funktioniert?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы централизованная поддержка работала в трёх часовых поясах?"
+              "text": "**Welche Voraussetzungen müssten erfüllt sein, damit unser Open-Source-Werkzeug auch dann nützlich bleibt, wenn sich die Freiwilligen zurückziehen?**",
+              "translation_ru": "Что должно быть обеспечено, чтобы открытый инструмент оставался полезным, когда волонтёры отойдут от проекта?"
             },
             {
-              "text": "**Was müsste zutreffen, damit wir starten können, bevor die rechtliche Prüfung vollständig abgeschlossen ist?**",
-              "translation_ru": "Какие условия должны выполняться, чтобы мы могли запуститься до полного завершения юридической проверки?"
+              "text": "**Was müsste sich ändern, damit sich dieser Kompromiss für beide Geschwister fair anfühlt?**",
+              "translation_ru": "Что пришлось бы изменить, чтобы этот компромисс казался справедливым обоим детям?"
+            },
+            {
+              "text": "**Welche Voraussetzungen müssten erfüllt sein, damit Videosprechstunden die Privatsphäre der Patienten schützen?**",
+              "translation_ru": "Какие меры нужны, чтобы видеоконсультации защищали личные данные пациентов?"
             }
           ]
         }
       ],
       "formulas": [
-        "What would have to be true for [X] to work?",
-        "Was müsste zutreffen, damit [X] funktioniert?"
+        "What would have to be true / in place / change for [plan] to work?",
+        "Welche Voraussetzungen müssten erfüllt sein / Was müsste sich ändern, damit [Vorhaben] funktioniert?"
       ],
       "gen": {
         "status": "curated",
