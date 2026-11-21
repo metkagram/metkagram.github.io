@@ -292,80 +292,88 @@
       "id": "C1EVD041",
       "group_id": "EVD",
       "set_id": "EVD",
-      "title_ru": "Отделить то, что данные показывают, от того, чего они не доказывают",
-      "metaphor_ru": "Называйте подтверждённое наблюдение и отдельно — вопрос, на который источник не отвечает. В немецком тренируйте косвенный вопрос с ob.",
-      "title_en": "The [source] shows that [X], but it doesn't tell us whether [Y]",
-      "description_en": "Make an evidence-limited statement: identify one supported observation, then one unanswered question. The German version uses an indirect ob-question.",
-      "description_ru": "Называйте подтверждённое наблюдение и отдельно — вопрос, на который источник не отвечает. В немецком тренируйте косвенный вопрос с ob.",
+      "title_ru": "Что источник показывает, а что остаётся неизвестным",
+      "metaphor_ru": "Разграничивайте наблюдение и интерпретацию. В английском используйте косвенный вопрос с whether, в немецком — ob и глагол в конце придаточного. Не делайте из данных вывод, которого они не подтверждают.",
+      "title_en": "The source shows [X], but not whether [Y]",
+      "description_en": "State what a source establishes, then explicitly name what it cannot establish; practise indirect whether/ob questions.",
+      "description_ru": "Разграничивайте наблюдение и интерпретацию. В английском используйте косвенный вопрос с whether, в немецком — ob и глагол в конце придаточного. Не делайте из данных вывод, которого они не подтверждают.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The [source] shows that [X], but it doesn't tell us whether [Y].",
-          "example": "The attendance sheet shows that every seat was taken, but it doesn't tell us whether people found the workshop useful.",
-          "translation": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно.",
+          "formula": "[Source] shows that [observation], but it doesn't tell us whether [open question].",
+          "example": "The electricity bill shows that usage jumped in January, but it doesn't tell us whether the old heater caused it.",
+          "translation": "По счёту видно, что в январе вырос расход электричества, но нельзя утверждать, что виноват старый обогреватель.",
           "examples": [
             {
-              "text": "**The attendance sheet shows that every seat was taken, but it doesn't tell us whether people found the workshop useful.**",
-              "translation_ru": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно."
+              "text": "**The electricity bill shows that usage jumped in January, but it doesn't tell us whether the old heater caused it.**",
+              "translation_ru": "По счёту видно, что в январе вырос расход электричества, но нельзя утверждать, что виноват старый обогреватель."
             },
             {
-              "text": "**The server log shows that the request timed out, but it doesn't tell us whether the database caused the delay.**",
-              "translation_ru": "Журнал сервера показывает, что запрос завершился по тайм-ауту, но по нему нельзя понять, была ли виновата база данных."
+              "text": "**The class quiz shows that the students remembered the rules, but it doesn't tell us whether they can use them in conversation.**",
+              "translation_ru": "Короткий тест показал, что ученики помнят правила, но неясно, умеют ли они применять их в разговоре."
             },
             {
-              "text": "**The neighbourhood survey shows that residents want quieter streets, but it doesn't tell us whether they'd accept fewer parking spaces.**",
-              "translation_ru": "Опрос показывает, что жители хотят меньше шума на улицах, но неясно, готовы ли они ради этого отказаться от части парковочных мест."
+              "text": "**The map shows where the public drinking fountains are, but it doesn't tell us whether any of them work in winter.**",
+              "translation_ru": "На карте отмечены питьевые фонтанчики, но из неё нельзя узнать, работают ли они зимой."
             },
             {
-              "text": "**The shipping receipt shows that the parcel left the warehouse, but it doesn't tell us whether it reached the right address.**",
-              "translation_ru": "Накладная подтверждает отправку посылки со склада, но не позволяет установить, доставили ли её по верному адресу."
+              "text": "**The chat history shows that an invitation was sent, but it doesn't tell us whether it reached the right person.**",
+              "translation_ru": "Из переписки видно, что приглашение отправили, но неизвестно, дошло ли оно нужному человеку."
             },
             {
-              "text": "**The exam report shows that she knows the grammar rules, but it doesn't tell us whether she can use them in a spontaneous conversation.**",
-              "translation_ru": "Результаты экзамена показывают, что она знает правила грамматики, но не говорят, умеет ли она пользоваться ими в живом разговоре."
+              "text": "**The museum's attendance figures show that visitor numbers rose, but they don't tell us whether people came for the new exhibition.**",
+              "translation_ru": "Посещаемость музея выросла, но статистика не говорит, пришли ли люди ради новой выставки."
             },
             {
-              "text": "**The sleep diary shows that I woke up several times, but it doesn't tell us whether street noise was the cause.**",
-              "translation_ru": "Из дневника сна видно, что я просыпался несколько раз, но нельзя установить, был ли причиной шум с улицы."
+              "text": "**The sleep tracker shows that he woke up four times, but it doesn't tell us whether the noise from upstairs was to blame.**",
+              "translation_ru": "Трекер сна зафиксировал четыре пробуждения, но не установил, был ли причиной шум сверху."
+            },
+            {
+              "text": "**The bug report shows that the export failed on one device, but it doesn't tell us whether other operating systems are affected.**",
+              "translation_ru": "Отчёт об ошибке подтверждает сбой экспорта на одном устройстве, но не позволяет судить, затронуты ли другие операционные системы."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Aus [Quelle] geht hervor, dass [X]. Ob [Y], lässt sich daraus nicht erkennen.",
-          "example": "Aus der Anwesenheitsliste geht hervor, dass alle Plätze besetzt waren. Ob die Teilnehmenden den Workshop hilfreich fanden, lässt sich daraus nicht erkennen.",
-          "translation": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно.",
+          "formula": "[Quelle] zeigt, dass [Beobachtung]. Ob [offene Frage], lässt sich daraus nicht erkennen.",
+          "example": "Die Stromrechnung zeigt, dass der Verbrauch im Januar stark gestiegen ist. Ob die alte Heizung dafür verantwortlich war, lässt sich daraus nicht erkennen.",
+          "translation": "По счёту видно, что в январе вырос расход электричества, но нельзя утверждать, что виноват старый обогреватель.",
           "examples": [
             {
-              "text": "**Aus der Anwesenheitsliste geht hervor, dass alle Plätze besetzt waren. Ob die Teilnehmenden den Workshop hilfreich fanden, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "По списку видно, что свободных мест на занятии не было, но он ничего не говорит о том, насколько участникам было полезно."
+              "text": "**Die Stromrechnung zeigt, dass der Verbrauch im Januar stark gestiegen ist. Ob die alte Heizung dafür verantwortlich war, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "По счёту видно, что в январе вырос расход электричества, но нельзя утверждать, что виноват старый обогреватель."
             },
             {
-              "text": "**Aus dem Serverprotokoll geht hervor, dass die Anfrage wegen Zeitüberschreitung abbrach. Ob die Datenbank die Verzögerung verursacht hat, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "Журнал сервера показывает, что запрос завершился по тайм-ауту, но по нему нельзя понять, была ли виновата база данных."
+              "text": "**Der Kurztest zeigt, dass sich die Lernenden die Regeln gemerkt haben. Ob sie sie im Gespräch anwenden können, bleibt offen.**",
+              "translation_ru": "Короткий тест показал, что ученики помнят правила, но неясно, умеют ли они применять их в разговоре."
             },
             {
-              "text": "**Aus der Stadtteilumfrage geht hervor, dass die Anwohner ruhigere Straßen möchten. Ob sie dafür auf Parkplätze verzichten würden, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "Опрос показывает, что жители хотят меньше шума на улицах, но неясно, готовы ли они ради этого отказаться от части парковочных мест."
+              "text": "**Auf der Karte sind die öffentlichen Trinkbrunnen eingezeichnet. Ob sie im Winter funktionieren, geht daraus nicht hervor.**",
+              "translation_ru": "На карте отмечены питьевые фонтанчики, но из неё нельзя узнать, работают ли они зимой."
             },
             {
-              "text": "**Aus dem Versandbeleg geht hervor, dass das Paket das Lager verlassen hat. Ob es an der richtigen Adresse angekommen ist, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "Накладная подтверждает отправку посылки со склада, но не позволяет установить, доставили ли её по верному адресу."
+              "text": "**Aus dem Chatverlauf geht hervor, dass eine Einladung verschickt wurde. Ob sie die richtige Person erreicht hat, lässt sich daraus nicht erkennen.**",
+              "translation_ru": "Из переписки видно, что приглашение отправили, но неизвестно, дошло ли оно нужному человеку."
             },
             {
-              "text": "**Aus dem Prüfungsbericht geht hervor, dass sie die Grammatikregeln kennt. Ob sie sie in einem spontanen Gespräch anwenden kann, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "Результаты экзамена показывают, что она знает правила грамматики, но не говорят, умеет ли она пользоваться ими в живом разговоре."
+              "text": "**Die Besucherzahlen des Museums zeigen einen Anstieg. Ob die Menschen wegen der neuen Ausstellung kamen, lässt sich daraus nicht ableiten.**",
+              "translation_ru": "Посещаемость музея выросла, но статистика не говорит, пришли ли люди ради новой выставки."
             },
             {
-              "text": "**Aus meinem Schlaftagebuch geht hervor, dass ich mehrmals aufgewacht bin. Ob der Straßenlärm der Grund war, lässt sich daraus nicht erkennen.**",
-              "translation_ru": "Из дневника сна видно, что я просыпался несколько раз, но нельзя установить, был ли причиной шум с улицы."
+              "text": "**Der Schlaftracker zeigt vier Wachphasen. Ob der Lärm aus der Wohnung darüber die Ursache war, ist damit nicht geklärt.**",
+              "translation_ru": "Трекер сна зафиксировал четыре пробуждения, но не установил, был ли причиной шум сверху."
+            },
+            {
+              "text": "**Der Fehlerbericht zeigt, dass der Export auf einem Gerät gescheitert ist. Ob auch andere Betriebssysteme betroffen sind, geht daraus nicht hervor.**",
+              "translation_ru": "Отчёт об ошибке подтверждает сбой экспорта на одном устройстве, но не позволяет судить, затронуты ли другие операционные системы."
             }
           ]
         }
       ],
       "formulas": [
-        "The [source] shows that [X], but it doesn't tell us whether [Y].",
-        "Aus [Quelle] geht hervor, dass [X]. Ob [Y], lässt sich daraus nicht erkennen."
+        "[Source] shows that [observation], but it doesn't tell us whether [open question].",
+        "[Quelle] zeigt, dass [Beobachtung]. Ob [offene Frage], lässt sich daraus nicht erkennen."
       ],
       "gen": {
         "status": "curated",
