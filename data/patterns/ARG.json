@@ -104,80 +104,88 @@
       "id": "C1ARG041",
       "group_id": "ARG",
       "set_id": "ARG",
-      "title_ru": "Ключевой вопрос — действительно ли [X] приводит к [Y]",
-      "metaphor_ru": "Проверяйте центральную причинную связь в аргументе, прежде чем принимать вывод как очевидный.",
-      "title_en": "The key question is whether [X] actually leads to [Y]",
-      "description_en": "Use this frame to test the causal link at the centre of an argument instead of accepting it implicitly.",
-      "description_ru": "Используйте этот каркас, чтобы проверить причинную связь в центре аргумента, а не принимать её как данность.",
+      "title_ru": "Проверить причинную связь",
+      "metaphor_ru": "Проверяйте, вызывает ли предложенная мера ожидаемый результат. Английский косвенный вопрос после whether имеет прямой порядок слов; немецкий после ob — глагол в конце придаточного.",
+      "title_en": "The key question is whether [X] really leads to [Y]",
+      "description_en": "Test a proposed cause-and-effect link rather than treating a plausible explanation as a proven result.",
+      "description_ru": "Проверяйте, вызывает ли предложенная мера ожидаемый результат. Английский косвенный вопрос после whether имеет прямой порядок слов; немецкий после ob — глагол в конце придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The key question is whether [X] actually leads to [Y].",
-          "example": "The key question is whether the extra approval step actually leads to fewer production errors.",
-          "translation": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе.",
+          "formula": "The key question is whether [change] actually [has the claimed effect].",
+          "example": "The key question is whether extending library hours actually helps residents who work late.",
+          "translation": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу.",
           "examples": [
             {
-              "text": "**The key question is whether the extra approval step actually leads to fewer production errors.**",
-              "translation_ru": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе."
+              "text": "**The key question is whether extending library hours actually helps residents who work late.**",
+              "translation_ru": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу."
             },
             {
-              "text": "**The key question is whether AI-generated summaries actually lead to faster reviews or simply shift effort into verification.**",
-              "translation_ru": "Ключевой вопрос — действительно ли сгенерированные ИИ резюме ускоряют проверку или просто переносят усилия на верификацию."
+              "text": "**The key question is whether daily vocabulary drills actually make learners more fluent in spontaneous conversation.**",
+              "translation_ru": "Важно понять, помогают ли ежедневные упражнения на лексику свободнее говорить без подготовки."
             },
             {
-              "text": "**The key question is whether a lower entry price actually leads to stronger retention after the first month.**",
-              "translation_ru": "Ключевой вопрос — действительно ли более низкая начальная цена повышает удержание после первого месяца."
+              "text": "**The key question is whether the new road layout actually prevents accidents or merely slows traffic.**",
+              "translation_ru": "Нужно выяснить, предотвращает ли новая схема движения аварии или просто замедляет поток."
             },
             {
-              "text": "**The key question is whether more meetings actually lead to better coordination across the two teams.**",
-              "translation_ru": "Ключевой вопрос — действительно ли большее число встреч улучшает координацию между двумя командами."
+              "text": "**The key question is whether automatic captions actually make the tutorial easier to follow for viewers with hearing loss.**",
+              "translation_ru": "Главное — действительно ли автоматические субтитры делают инструкцию доступнее для людей с нарушением слуха."
             },
             {
-              "text": "**The key question is whether the training actually leads to different behaviour once people return to normal work.**",
-              "translation_ru": "Ключевой вопрос — действительно ли обучение меняет поведение людей после возвращения к обычной работе."
+              "text": "**The key question is whether more frequent check-ins actually build trust between parents and their teenager.**",
+              "translation_ru": "Вопрос в том, укрепляют ли более частые разговоры доверие между родителями и подростком."
             },
             {
-              "text": "**The key question is whether centralising decisions actually leads to faster delivery when several incidents happen at once.**",
-              "translation_ru": "Ключевой вопрос — действительно ли централизация решений ускоряет работу, когда одновременно происходит несколько инцидентов."
+              "text": "**The key question is whether removing the login step actually improves access without exposing private notes.**",
+              "translation_ru": "Стоит проверить, упрощает ли отказ от входа в систему доступ, не раскрывая при этом личные заметки."
+            },
+            {
+              "text": "**The key question is whether bringing in a mediator actually helps the neighbours settle their dispute.**",
+              "translation_ru": "Важнее всего выяснить, помогает ли посредник соседям урегулировать спор."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die entscheidende Frage ist, ob [X] tatsächlich zu [Y] führt.",
-          "example": "Die entscheidende Frage ist, ob der zusätzliche Freigabeschritt tatsächlich zu weniger Fehlern im Produktivsystem führt.",
-          "translation": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе.",
+          "formula": "Die entscheidende Frage ist, ob [Maßnahme] tatsächlich [die behauptete Wirkung] erzielt.",
+          "example": "Die entscheidende Frage ist, ob längere Öffnungszeiten der Bibliothek Menschen, die spät arbeiten, tatsächlich helfen.",
+          "translation": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу.",
           "examples": [
             {
-              "text": "**Die entscheidende Frage ist, ob der zusätzliche Freigabeschritt tatsächlich zu weniger Fehlern im Produktivsystem führt.**",
-              "translation_ru": "Ключевой вопрос — действительно ли дополнительное согласование приводит к меньшему числу ошибок в продуктивной системе."
+              "text": "**Die entscheidende Frage ist, ob längere Öffnungszeiten der Bibliothek Menschen, die spät arbeiten, tatsächlich helfen.**",
+              "translation_ru": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу."
             },
             {
-              "text": "**Die entscheidende Frage ist, ob KI-generierte Zusammenfassungen tatsächlich zu schnelleren Reviews führen oder den Aufwand nur in die Verifikation verlagern.**",
-              "translation_ru": "Ключевой вопрос — действительно ли сгенерированные ИИ резюме ускоряют проверку или просто переносят усилия на верификацию."
+              "text": "**Entscheidend ist, ob tägliche Wortschatzübungen dazu führen, dass Lernende in spontanen Gesprächen flüssiger sprechen.**",
+              "translation_ru": "Важно понять, помогают ли ежедневные упражнения на лексику свободнее говорить без подготовки."
             },
             {
-              "text": "**Die entscheidende Frage ist, ob ein niedrigerer Einstiegspreis tatsächlich zu einer stärkeren Bindung nach dem ersten Monat führt.**",
-              "translation_ru": "Ключевой вопрос — действительно ли более низкая начальная цена повышает удержание после первого месяца."
+              "text": "**Die entscheidende Frage ist, ob die neue Straßenführung tatsächlich Unfälle verhindert oder lediglich den Verkehr verlangsamt.**",
+              "translation_ru": "Нужно выяснить, предотвращает ли новая схема движения аварии или просто замедляет поток."
             },
             {
-              "text": "**Die entscheidende Frage ist, ob mehr Besprechungen tatsächlich zu einer besseren Abstimmung zwischen den beiden Teams führen.**",
-              "translation_ru": "Ключевой вопрос — действительно ли большее число встреч улучшает координацию между двумя командами."
+              "text": "**Entscheidend ist, ob automatische Untertitel das Tutorial für Menschen mit Hörverlust tatsächlich leichter verständlich machen.**",
+              "translation_ru": "Главное — действительно ли автоматические субтитры делают инструкцию доступнее для людей с нарушением слуха."
             },
             {
-              "text": "**Die entscheidende Frage ist, ob die Schulung tatsächlich zu einem anderen Verhalten führt, sobald die Mitarbeitenden wieder im normalen Arbeitsalltag sind.**",
-              "translation_ru": "Ключевой вопрос — действительно ли обучение меняет поведение людей после возвращения к обычной работе."
+              "text": "**Die entscheidende Frage ist, ob häufigere Gespräche das Vertrauen zwischen den Eltern und ihrem Teenager tatsächlich stärken.**",
+              "translation_ru": "Вопрос в том, укрепляют ли более частые разговоры доверие между родителями и подростком."
             },
             {
-              "text": "**Die entscheidende Frage ist, ob zentralisierte Entscheidungen tatsächlich zu einer schnelleren Umsetzung führen, wenn mehrere Störungen gleichzeitig auftreten.**",
-              "translation_ru": "Ключевой вопрос — действительно ли централизация решений ускоряет работу, когда одновременно происходит несколько инцидентов."
+              "text": "**Die entscheidende Frage ist, ob der Verzicht auf die Anmeldung den Zugang tatsächlich erleichtert, ohne private Notizen offenzulegen.**",
+              "translation_ru": "Стоит проверить, упрощает ли отказ от входа в систему доступ, не раскрывая при этом личные заметки."
+            },
+            {
+              "text": "**Entscheidend ist, ob eine neutrale Vermittlung den Nachbarn tatsächlich hilft, ihren Streit beizulegen.**",
+              "translation_ru": "Важнее всего выяснить, помогает ли посредник соседям урегулировать спор."
             }
           ]
         }
       ],
       "formulas": [
-        "The key question is whether [X] actually leads to [Y].",
-        "Die entscheidende Frage ist, ob [X] tatsächlich zu [Y] führt."
+        "The key question is whether [change] actually [has the claimed effect].",
+        "Die entscheidende Frage ist, ob [Maßnahme] tatsächlich [die behauptete Wirkung] erzielt."
       ],
       "gen": {
         "status": "curated",
