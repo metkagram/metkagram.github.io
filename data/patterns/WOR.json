@@ -101,85 +101,85 @@
       "id": "GRMWOR006",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Поскольку данных не хватало, мы отложили решение",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «поскольку данных не хватало, мы отложили решение» в живом контексте.",
+      "title_ru": "Сначала причина, затем решение",
+      "metaphor_ru": "Причину можно вынести в начало фразы. В английском после because сохраняется обычный порядок слов; в немецком после weil сказуемое стоит в конце придаточного, а главное предложение начинается с личной формы глагола.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Because the evidence was incomplete, we postponed the decision [the team was reviewing the new policy]",
-          "example": "Because the evidence was incomplete, we postponed the decision in a situation where the team was reviewing the new policy.",
-          "translation": "Поскольку данных не хватало, мы отложили решение в ситуации, где команда проверяла новую политику.",
+          "formula": "Because [reason], [subject] [action / decision].",
+          "example": "Because the stairs were icy, we took the lift instead.",
+          "translation": "Поскольку лестница обледенела, мы воспользовались лифтом.",
           "examples": [
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где команда проверяла новую политику."
+              "text": "Because the stairs were icy, we took the lift instead.",
+              "translation_ru": "Поскольку лестница обледенела, мы воспользовались лифтом."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Because I hadn't heard back from the clinic, I called before leaving work.",
+              "translation_ru": "Поскольку из клиники мне так и не ответили, я позвонил туда перед уходом с работы."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Because the results contradicted our initial assumption, we repeated the experiment.",
+              "translation_ru": "Поскольку результаты противоречили исходному предположению, мы повторили эксперимент."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Because the old laptop no longer receives security updates, she's replacing it this month.",
+              "translation_ru": "Поскольку на старый ноутбук больше не приходят обновления безопасности, она заменит его в этом месяце."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где расписание изменили в последний момент."
+              "text": "Because neither neighbour could meet on Saturday, we moved the clean-up to Sunday.",
+              "translation_ru": "Поскольку ни один из соседей не мог в субботу, мы перенесли уборку территории на воскресенье."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Because the translation sounded overly formal, I rewrote it for a casual conversation.",
+              "translation_ru": "Поскольку перевод звучал слишком официально, я переделал его для непринуждённого разговора."
             },
             {
-              "text": "**Because the evidence was incomplete, we postponed the decision in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где участники ждали объяснения."
+              "text": "Because the bus route had changed without warning, several parents raised the issue at the town meeting.",
+              "translation_ru": "Поскольку автобусный маршрут изменили без предупреждения, несколько родителей подняли этот вопрос на городском собрании."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Weil die Belege unvollständig waren, verschoben wir die Entscheidung [das Team die neue Regelung prüfte]",
-          "example": "Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Поскольку данных не хватало, мы отложили решение в ситуации, где команда проверяла новую политику.",
+          "formula": "Weil [Grund; Verb am Ende], [Verb] [Subjekt] [Folge].",
+          "example": "Weil der Aufzug seit Tagen kaputt ist, nehmen wir die Treppe.",
+          "translation": "Поскольку лифт уже несколько дней не работает, мы ходим по лестнице.",
           "examples": [
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где команда проверяла новую политику."
+              "text": "Weil der Aufzug seit Tagen kaputt ist, nehmen wir die Treppe.",
+              "translation_ru": "Поскольку лифт уже несколько дней не работает, мы ходим по лестнице."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Weil meine Schwester die neue Adresse nicht gefunden hatte, schickte ich ihr den Standort.",
+              "translation_ru": "Поскольку сестра не смогла найти новый адрес, я отправил ей геолокацию."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Weil die Messwerte stark schwankten, haben wir die Probe erneut untersucht.",
+              "translation_ru": "Поскольку результаты измерений сильно различались, мы повторно исследовали образец."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Weil der Router regelmäßig ausfällt, werde ich ihn am Wochenende austauschen.",
+              "translation_ru": "Поскольку роутер постоянно отключается, на выходных я его заменю."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где расписание изменили в последний момент."
+              "text": "Weil sich beide Seiten auf keinen Termin einigen konnten, wurde das Gespräch vertagt.",
+              "translation_ru": "Поскольку стороны не смогли согласовать дату, разговор отложили."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Weil die Erklärung zu technisch klang, habe ich sie für die Eltern vereinfacht.",
+              "translation_ru": "Поскольку объяснение было слишком техническим, я упростил его для родителей."
             },
             {
-              "text": "**Weil die Belege unvollständig waren, verschoben wir die Entscheidung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Поскольку данных не хватало, мы отложили решение в ситуации, где участники ждали объяснения."
+              "text": "Weil der letzte Zug ausfiel, mussten die Gäste in der Stadt übernachten.",
+              "translation_ru": "Поскольку последний поезд отменили, гостям пришлось заночевать в городе."
             }
           ]
         }
       ],
       "formulas": [
-        "Because the evidence was incomplete, we postponed the decision [the team was reviewing the new policy]",
-        "Weil die Belege unvollständig waren, verschoben wir die Entscheidung [das Team die neue Regelung prüfte]"
+        "Because [reason], [subject] [action / decision].",
+        "Weil [Grund; Verb am Ende], [Verb] [Subjekt] [Folge]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMWOR016",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Завтра мы обсудим предложение на встрече",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «завтра мы обсудим предложение на встрече» в живом контексте.",
+      "title_ru": "Поставить время в начало высказывания",
+      "metaphor_ru": "Начните с того, когда произойдёт действие. В английском после обстоятельства времени сохраняется прямой порядок слов, а в немецком личная форма глагола занимает вторую позицию: Morgen bespreche ich ..., а не Morgen ich bespreche ... . Будущие планы не всегда требуют отдельной формы будущего времени.",
       "langs": [
         {
           "lang": "en",
-          "formula": "We will discuss the proposal tomorrow in the meeting [the team was reviewing the new policy]",
-          "example": "We will discuss the proposal tomorrow in the meeting in a situation where the team was reviewing the new policy.",
-          "translation": "Завтра мы обсудим предложение на встрече в ситуации, где команда проверяла новую политику.",
+          "formula": "[Time expression], [subject] [finite verb / future arrangement] ... .",
+          "example": "Tomorrow, I'm meeting the landlord to discuss the leaking window.",
+          "translation": "Завтра я встречаюсь с хозяином квартиры, чтобы обсудить протекающее окно.",
           "examples": [
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где команда проверяла новую политику."
+              "text": "Tomorrow, I'm meeting the landlord to discuss the leaking window.",
+              "translation_ru": "Завтра я встречаюсь с хозяином квартиры, чтобы обсудить протекающее окно."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где партнёрам требовалось ясное решение."
+              "text": "On Friday, we'll compare the two offers before choosing a contractor.",
+              "translation_ru": "В пятницу мы сравним два предложения, прежде чем выбрать подрядчика."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Next week, the library is hosting a workshop on digital privacy.",
+              "translation_ru": "На следующей неделе библиотека проведёт занятие по цифровой приватности."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где доступные данные всё ещё были неполными."
+              "text": "By this evening, I should have an answer from the language school.",
+              "translation_ru": "К сегодняшнему вечеру я, вероятно, уже получу ответ из языковой школы."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где расписание изменили в последний момент."
+              "text": "After lunch, we're going to practise the interview questions aloud.",
+              "translation_ru": "После обеда мы собираемся вслух потренировать ответы на вопросы для собеседования."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Later this month, my brother will move into his first flat.",
+              "translation_ru": "Позже в этом месяце брат переедет в свою первую квартиру."
             },
             {
-              "text": "**We will discuss the proposal tomorrow in the meeting in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где участники ждали объяснения."
+              "text": "At the next meeting, we need to revisit the concerns about accessibility.",
+              "translation_ru": "На следующей встрече нам нужно снова обсудить вопросы доступности."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wir werden den Vorschlag morgen in der Sitzung besprechen [das Team die neue Regelung prüfte]",
-          "example": "Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Завтра мы обсудим предложение на встрече в ситуации, где команда проверяла новую политику.",
+          "formula": "[Zeitangabe], [finites Verb] [Subjekt] ... .",
+          "example": "Morgen bespreche ich mit meiner Nachbarin die Nutzung des gemeinsamen Gartens.",
+          "translation": "Завтра я обсужу с соседкой, как пользоваться общим садом.",
           "examples": [
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где команда проверяла новую политику."
+              "text": "Morgen bespreche ich mit meiner Nachbarin die Nutzung des gemeinsamen Gartens.",
+              "translation_ru": "Завтра я обсужу с соседкой, как пользоваться общим садом."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Am Freitag bringen wir die ausgeliehenen Bücher zurück.",
+              "translation_ru": "В пятницу мы вернём взятые в библиотеке книги."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Nächste Woche bietet die Volkshochschule einen Kurs zur Datensicherheit an.",
+              "translation_ru": "На следующей неделе центр образования взрослых проведёт курс по безопасности данных."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Bis heute Abend sollte ich eine Rückmeldung von der Hausverwaltung haben.",
+              "translation_ru": "К сегодняшнему вечеру я, по идее, должен получить ответ от управляющей компании."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где расписание изменили в последний момент."
+              "text": "Nach dem Mittagessen üben wir die schwierigen Fragen für das Vorstellungsgespräch.",
+              "translation_ru": "После обеда мы потренируемся отвечать на сложные вопросы на собеседовании."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Im kommenden Monat zieht meine Cousine in eine kleinere Wohnung.",
+              "translation_ru": "В следующем месяце моя двоюродная сестра переедет в квартиру поменьше."
             },
             {
-              "text": "**Wir werden den Vorschlag morgen in der Sitzung besprechen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Завтра мы обсудим предложение на встрече в ситуации, где участники ждали объяснения."
+              "text": "Bei der nächsten Sitzung sprechen wir noch einmal über die Barrierefreiheit.",
+              "translation_ru": "На следующем заседании мы ещё раз обсудим доступность для людей с инвалидностью."
             }
           ]
         }
       ],
       "formulas": [
-        "We will discuss the proposal tomorrow in the meeting [the team was reviewing the new policy]",
-        "Wir werden den Vorschlag morgen in der Sitzung besprechen [das Team die neue Regelung prüfte]"
+        "[Time expression], [subject] [finite verb / future arrangement] ... .",
+        "[Zeitangabe], [finites Verb] [Subjekt] ... ."
       ],
       "gen": {
         "status": "curated",
@@ -481,85 +481,85 @@
       "id": "GRMWOR026",
       "group_id": "WOR",
       "set_id": "WOR",
-      "title_ru": "Вопрос в том, почему процесс стал таким медленным",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «вопрос в том, почему процесс стал таким медленным» в живом контексте.",
+      "title_ru": "Поставить открытый вопрос внутри утверждения",
+      "metaphor_ru": "Конструкция The question is why/how/whether ... превращает прямой вопрос в часть утверждения: без инверсии подлежащего и сказуемого. В немецком после Die Frage ist, warum/wie/ob ... глагол придаточного уходит в конец. Так можно обсуждать причины, способы и неопределённые решения.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The question is why the process has become so slow [the team was reviewing the new policy]",
-          "example": "The question is why the process has become so slow in a situation where the team was reviewing the new policy.",
-          "translation": "Вопрос в том, почему процесс стал таким медленным в ситуации, где команда проверяла новую политику.",
+          "formula": "The question is [why / how / whether] [subject] [verb] ... .",
+          "example": "The question is why the heating keeps cutting out on cold nights.",
+          "translation": "Вопрос в том, почему в холодные ночи постоянно отключается отопление.",
           "examples": [
             {
-              "text": "**The question is why the process has become so slow in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где команда проверяла новую политику."
+              "text": "The question is why the heating keeps cutting out on cold nights.",
+              "translation_ru": "Вопрос в том, почему в холодные ночи постоянно отключается отопление."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The question is whether the museum can stay open during renovations.",
+              "translation_ru": "Вопрос в том, сможет ли музей работать во время ремонта."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The question is how we can protect the photos without making them impossible to share.",
+              "translation_ru": "Вопрос в том, как защитить фотографии, но при этом сохранить возможность делиться ими."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где доступные данные всё ещё были неполными."
+              "text": "The question is why she wasn't told about the schedule change.",
+              "translation_ru": "Вопрос в том, почему ей не сообщили об изменении расписания."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где расписание изменили в последний момент."
+              "text": "The question is whether this claim is supported by independent evidence.",
+              "translation_ru": "Вопрос в том, подтверждается ли это утверждение независимыми данными."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "The question is how much time the volunteers will actually need.",
+              "translation_ru": "Вопрос в том, сколько времени волонтёрам на самом деле понадобится."
             },
             {
-              "text": "**The question is why the process has become so slow in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где участники ждали объяснения."
+              "text": "The question is why the first attempt failed even though we followed the instructions.",
+              "translation_ru": "Вопрос в том, почему первая попытка провалилась, хотя мы следовали инструкции."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Frage ist, warum das Verfahren so langsam geworden ist [das Team die neue Regelung prüfte]",
-          "example": "Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Вопрос в том, почему процесс стал таким медленным в ситуации, где команда проверяла новую политику.",
+          "formula": "Die Frage ist, [warum / wie / ob] [Subjekt] ... [Verb].",
+          "example": "Die Frage ist, warum die Heizung gerade nachts ständig ausfällt.",
+          "translation": "Вопрос в том, почему отопление постоянно отключается именно ночью.",
           "examples": [
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где команда проверяла новую политику."
+              "text": "Die Frage ist, warum die Heizung gerade nachts ständig ausfällt.",
+              "translation_ru": "Вопрос в том, почему отопление постоянно отключается именно ночью."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Die Frage ist, ob das Schwimmbad während der Renovierung geöffnet bleiben kann.",
+              "translation_ru": "Вопрос в том, сможет ли бассейн работать во время ремонта."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Die Frage ist, wie wir die Fotos sichern können, ohne sie ständig hin- und herzuschicken.",
+              "translation_ru": "Вопрос в том, как сохранить фотографии в безопасности, не пересылая их постоянно туда-сюда."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Die Frage ist, weshalb niemand die Eltern über die Änderung informiert hat.",
+              "translation_ru": "Вопрос в том, почему никто не сообщил родителям об изменении."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где расписание изменили в последний момент."
+              "text": "Die Frage ist, ob die Behauptung durch unabhängige Daten gestützt wird.",
+              "translation_ru": "Вопрос в том, подтверждается ли это утверждение независимыми данными."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Die Frage ist, wie viel Zeit die Ehrenamtlichen dafür wirklich brauchen.",
+              "translation_ru": "Вопрос в том, сколько времени волонтёрам действительно понадобится на это."
             },
             {
-              "text": "**Die Frage ist, warum das Verfahren so langsam geworden ist in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Вопрос в том, почему процесс стал таким медленным в ситуации, где участники ждали объяснения."
+              "text": "Die Frage ist, warum der zweite Versuch trotz genauer Anleitung gescheitert ist.",
+              "translation_ru": "Вопрос в том, почему вторая попытка не удалась, несмотря на подробную инструкцию."
             }
           ]
         }
       ],
       "formulas": [
-        "The question is why the process has become so slow [the team was reviewing the new policy]",
-        "Die Frage ist, warum das Verfahren so langsam geworden ist [das Team die neue Regelung prüfte]"
+        "The question is [why / how / whether] [subject] [verb] ... .",
+        "Die Frage ist, [warum / wie / ob] [Subjekt] ... [Verb]."
       ],
       "gen": {
         "status": "curated",
