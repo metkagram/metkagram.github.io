@@ -6,85 +6,85 @@
       "id": "QSTQCNF001",
       "group_id": "QCNF",
       "set_id": "QCNF",
-      "title_ru": "Можете подтвердить, что команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Можете подтвердить, что команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Попросить подтвердить конкретный проверяемый факт",
+      "metaphor_ru": "Просите подтвердить дату, состояние, правило или уже выполненное действие, а не мнение о том, как следует поступить. Could you confirm that смягчает запрос; немецкое Könnten Sie bestätigen, dass требует глагола в конце придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Can you confirm that [the team needs another day to decide]?",
-          "example": "Can you confirm that the team needs another day to decide?",
-          "translation": "Можете подтвердить, что команде нужен ещё день для решения?",
+          "formula": "Could you confirm that [specific verifiable fact]?",
+          "example": "Could you confirm that the replacement key is available at reception?",
+          "translation": "Можете подтвердить, что запасной ключ находится на стойке регистрации?",
           "examples": [
             {
-              "text": "**Can you confirm that the team needs another day to decide?**",
-              "translation_ru": "Можете подтвердить, что команде нужен ещё день для решения?"
+              "text": "Could you confirm that the replacement key is available at reception?",
+              "translation_ru": "Можете подтвердить, что запасной ключ находится на стойке регистрации?"
             },
             {
-              "text": "**Can you confirm that the revised plan has not been shared yet?**",
-              "translation_ru": "Можете подтвердить, что обновлённым планом ещё не поделились?"
+              "text": "Could you confirm that the last train leaves at half past ten, not eleven?",
+              "translation_ru": "Можете подтвердить, что последний поезд отправляется в 10:30, а не в 11?"
             },
             {
-              "text": "**Can you confirm that we should compare the two options?**",
-              "translation_ru": "Можете подтвердить, что нам следует сравнить два варианта?"
+              "text": "Could you confirm that my application reached the admissions office before the deadline?",
+              "translation_ru": "Можете подтвердить, что моя заявка поступила в приёмную комиссию до окончания срока?"
             },
             {
-              "text": "**Can you confirm that the client asked for more detail?**",
-              "translation_ru": "Можете подтвердить, что клиент попросил больше деталей?"
+              "text": "Could you confirm that the audio recordings will remain private after the workshop?",
+              "translation_ru": "Можете подтвердить, что аудиозаписи останутся конфиденциальными после семинара?"
             },
             {
-              "text": "**Can you confirm that the pilot may continue next month?**",
-              "translation_ru": "Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Could you confirm that the apartment's heating was inspected this autumn?",
+              "translation_ru": "Можете подтвердить, что отопление в квартире проверяли этой осенью?"
             },
             {
-              "text": "**Can you confirm that the data need another check?**",
-              "translation_ru": "Можете подтвердить, что данные нужно проверить ещё раз?"
+              "text": "Could you confirm that the updated privacy settings apply to existing accounts?",
+              "translation_ru": "Можете подтвердить, что новые настройки конфиденциальности распространяются и на существующие аккаунты?"
             },
             {
-              "text": "**Can you confirm that the meeting was moved?**",
-              "translation_ru": "Можете подтвердить, что встречу перенесли?"
+              "text": "Could you confirm that no extra fee is charged for bringing a wheelchair on the ferry?",
+              "translation_ru": "Можете подтвердить, что за провоз инвалидной коляски на пароме не взимается дополнительная плата?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Можете подтвердить, что команде нужен ещё день для решения?",
+          "formula": "Könnten Sie bestätigen, dass [nachprüfbare Tatsache]?",
+          "example": "Könnten Sie bestätigen, dass der Ersatzschlüssel an der Rezeption hinterlegt ist?",
+          "translation": "Можете подтвердить, что запасной ключ находится на стойке регистрации?",
           "examples": [
             {
-              "text": "**Können Sie bestätigen, dass das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Можете подтвердить, что команде нужен ещё день для решения?"
+              "text": "Könnten Sie bestätigen, dass der Ersatzschlüssel an der Rezeption hinterlegt ist?",
+              "translation_ru": "Можете подтвердить, что запасной ключ находится на стойке регистрации?"
             },
             {
-              "text": "**Können Sie bestätigen, dass der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Можете подтвердить, что обновлённым планом ещё не поделились?"
+              "text": "Könnten Sie bestätigen, dass der letzte Zug um halb elf und nicht erst um elf fährt?",
+              "translation_ru": "Можете подтвердить, что последний поезд отправляется в 10:30, а не в 11?"
             },
             {
-              "text": "**Können Sie bestätigen, dass wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Можете подтвердить, что нам следует сравнить два варианта?"
+              "text": "Könnten Sie bestätigen, dass meine Bewerbung vor Ablauf der Frist bei der Zulassungsstelle eingegangen ist?",
+              "translation_ru": "Можете подтвердить, что моя заявка поступила в приёмную комиссию до окончания срока?"
             },
             {
-              "text": "**Können Sie bestätigen, dass der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Можете подтвердить, что клиент попросил больше деталей?"
+              "text": "Könnten Sie bestätigen, dass die Tonaufnahmen auch nach dem Workshop vertraulich bleiben?",
+              "translation_ru": "Можете подтвердить, что аудиозаписи останутся конфиденциальными после семинара?"
             },
             {
-              "text": "**Können Sie bestätigen, dass das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Можете подтвердить, что пилотный проект может продолжиться в следующем месяце?"
+              "text": "Könnten Sie bestätigen, dass die Heizung der Wohnung in diesem Herbst überprüft wurde?",
+              "translation_ru": "Можете подтвердить, что отопление в квартире проверяли этой осенью?"
             },
             {
-              "text": "**Können Sie bestätigen, dass die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Можете подтвердить, что данные нужно проверить ещё раз?"
+              "text": "Könnten Sie bestätigen, dass die aktualisierten Datenschutzeinstellungen auch für bestehende Konten gelten?",
+              "translation_ru": "Можете подтвердить, что новые настройки конфиденциальности распространяются и на существующие аккаунты?"
             },
             {
-              "text": "**Können Sie bestätigen, dass die Sitzung verschoben wurde?**",
-              "translation_ru": "Можете подтвердить, что встречу перенесли?"
+              "text": "Könnten Sie bestätigen, dass für die Mitnahme eines Rollstuhls auf der Fähre keine zusätzliche Gebühr anfällt?",
+              "translation_ru": "Можете подтвердить, что за провоз инвалидной коляски на пароме не взимается дополнительная плата?"
             }
           ]
         }
       ],
       "formulas": [
-        "Can you confirm that [the team needs another day to decide]?",
-        "Können Sie bestätigen, dass [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Could you confirm that [specific verifiable fact]?",
+        "Könnten Sie bestätigen, dass [nachprüfbare Tatsache]?"
       ],
       "gen": {
         "status": "curated",

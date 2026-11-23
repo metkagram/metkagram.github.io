@@ -291,85 +291,85 @@
       "id": "QSTQPRE031",
       "group_id": "QPRE",
       "set_id": "QPRE",
-      "title_ru": "В какой степени это было бы важно, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «В какой степени это было бы важно, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Оценить значимость возможного изменения",
+      "metaphor_ru": "Спросите не просто, произойдёт ли событие, а насколько оно изменило бы решение или оценку. Английское to what extent и немецкое ins Gewicht fallen выражают степень важности; гипотетическое условие допускает would / Konjunktiv II.",
       "langs": [
         {
           "lang": "en",
-          "formula": "To what extent would it matter if [the team needs another day to decide]?",
-          "example": "To what extent would it matter if the team needs another day to decide?",
-          "translation": "В какой степени это было бы важно, если команде нужен ещё день для решения?",
+          "formula": "To what extent would it matter if [plausible change]?",
+          "example": "To what extent would it matter if the hearing were held online instead of in person?",
+          "translation": "Насколько важно было бы, если бы слушания провели онлайн, а не очно?",
           "examples": [
             {
-              "text": "**To what extent would it matter if the team needs another day to decide?**",
-              "translation_ru": "В какой степени это было бы важно, если команде нужен ещё день для решения?"
+              "text": "To what extent would it matter if the hearing were held online instead of in person?",
+              "translation_ru": "Насколько важно было бы, если бы слушания провели онлайн, а не очно?"
             },
             {
-              "text": "**To what extent would it matter if the revised plan has not been shared yet?**",
-              "translation_ru": "В какой степени это было бы важно, если обновлённым планом ещё не поделились?"
+              "text": "To what extent would it matter if we missed the last train home?",
+              "translation_ru": "Насколько серьёзной проблемой было бы опоздать на последний поезд домой?"
             },
             {
-              "text": "**To what extent would it matter if we should compare the two options?**",
-              "translation_ru": "В какой степени это было бы важно, если нам следует сравнить два варианта?"
+              "text": "To what extent would it matter if the course offered feedback only at the end?",
+              "translation_ru": "Насколько существенно, если бы обратную связь на курсе давали только в конце?"
             },
             {
-              "text": "**To what extent would it matter if the client asked for more detail?**",
-              "translation_ru": "В какой степени это было бы важно, если клиент попросил больше деталей?"
+              "text": "To what extent would it matter if the new phone stopped receiving security updates next year?",
+              "translation_ru": "Насколько важно, если бы новый телефон перестал получать обновления безопасности уже в следующем году?"
             },
             {
-              "text": "**To what extent would it matter if the pilot may continue next month?**",
-              "translation_ru": "В какой степени это было бы важно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "To what extent would it matter if your parents needed help with shopping twice a week?",
+              "translation_ru": "Насколько это повлияло бы на ситуацию, если бы родителям требовалась помощь с покупками дважды в неделю?"
             },
             {
-              "text": "**To what extent would it matter if the data need another check?**",
-              "translation_ru": "В какой степени это было бы важно, если данные нужно проверить ещё раз?"
+              "text": "To what extent would it matter if the town removed parking spaces near the school?",
+              "translation_ru": "Насколько значимым было бы решение города убрать парковочные места рядом со школой?"
             },
             {
-              "text": "**To what extent would it matter if the meeting was moved?**",
-              "translation_ru": "В какой степени это было бы важно, если встречу перенесли?"
+              "text": "To what extent would it matter if the prototype failed in cold weather?",
+              "translation_ru": "Насколько критично было бы, если бы прототип отказывал на холоде?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "In welchem Maß würde es eine Rolle spielen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "In welchem Maß würde es eine Rolle spielen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "В какой степени это было бы важно, если команде нужен ещё день для решения?",
+          "formula": "Wie sehr würde es ins Gewicht fallen, wenn [hypothetische Änderung]?",
+          "example": "Wie sehr würde es ins Gewicht fallen, wenn die Anhörung online statt vor Ort stattfände?",
+          "translation": "Насколько важно было бы, если бы слушания провели онлайн, а не очно?",
           "examples": [
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "В какой степени это было бы важно, если команде нужен ещё день для решения?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn die Anhörung online statt vor Ort stattfände?",
+              "translation_ru": "Насколько важно было бы, если бы слушания провели онлайн, а не очно?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "В какой степени это было бы важно, если обновлённым планом ещё не поделились?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn wir den letzten Zug nach Hause verpassen würden?",
+              "translation_ru": "Насколько серьёзной проблемой было бы опоздать на последний поезд домой?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "В какой степени это было бы важно, если нам следует сравнить два варианта?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn der Kurs erst am Ende Rückmeldung bieten würde?",
+              "translation_ru": "Насколько существенно, если бы обратную связь на курсе давали только в конце?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "В какой степени это было бы важно, если клиент попросил больше деталей?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn das neue Handy schon nächstes Jahr keine Sicherheitsupdates mehr bekäme?",
+              "translation_ru": "Насколько важно, если бы новый телефон перестал получать обновления безопасности уже в следующем году?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "В какой степени это было бы важно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn deine Eltern zweimal pro Woche Hilfe beim Einkaufen bräuchten?",
+              "translation_ru": "Насколько это повлияло бы на ситуацию, если бы родителям требовалась помощь с покупками дважды в неделю?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "В какой степени это было бы важно, если данные нужно проверить ещё раз?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn die Stadt Parkplätze in der Nähe der Schule abschaffen würde?",
+              "translation_ru": "Насколько значимым было бы решение города убрать парковочные места рядом со школой?"
             },
             {
-              "text": "**In welchem Maß würde es eine Rolle spielen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "В какой степени это было бы важно, если встречу перенесли?"
+              "text": "Wie sehr würde es ins Gewicht fallen, wenn der Prototyp bei Kälte ausfallen würde?",
+              "translation_ru": "Насколько критично было бы, если бы прототип отказывал на холоде?"
             }
           ]
         }
       ],
       "formulas": [
-        "To what extent would it matter if [the team needs another day to decide]?",
-        "In welchem Maß würde es eine Rolle spielen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "To what extent would it matter if [plausible change]?",
+        "Wie sehr würde es ins Gewicht fallen, wenn [hypothetische Änderung]?"
       ],
       "gen": {
         "status": "curated",

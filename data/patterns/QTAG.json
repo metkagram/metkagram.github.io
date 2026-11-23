@@ -101,85 +101,85 @@
       "id": "QSTQTAG011",
       "group_id": "QTAG",
       "set_id": "QTAG",
-      "title_ru": "Ясно, что команде нужен ещё день для решения, не так ли?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Ясно, что команде нужен ещё день для решения, не так ли» в подходящей ситуации.",
+      "title_ru": "Предварительный вывод и короткий запрос согласия",
+      "metaphor_ru": "Опишите впечатление по наблюдаемым признакам, а затем проверьте, видит ли собеседник ситуацию так же. Английский tag относится к главной части it seems; немецкий вариант использует als + Konjunktiv II и короткое oder?",
       "langs": [
         {
           "lang": "en",
-          "formula": "It is clear that [the team needs another day to decide], isn't it?",
-          "example": "It is clear that the team needs another day to decide, isn't it?",
-          "translation": "Ясно, что команде нужен ещё день для решения, не так ли?",
+          "formula": "It seems that [observation], doesn't it?",
+          "example": "It seems that the neighbours' basement has flooded again, doesn't it?",
+          "translation": "Похоже, у соседей снова затопило подвал, да?",
           "examples": [
             {
-              "text": "**It is clear that the team needs another day to decide, isn't it?**",
-              "translation_ru": "Ясно, что команде нужен ещё день для решения, не так ли?"
+              "text": "It seems that the neighbours' basement has flooded again, doesn't it?",
+              "translation_ru": "Похоже, у соседей снова затопило подвал, да?"
             },
             {
-              "text": "**It is clear that the revised plan has not been shared yet, isn't it?**",
-              "translation_ru": "Ясно, что обновлённым планом ещё не поделились, не так ли?"
+              "text": "It seems that the children have finally settled into their new school, doesn't it?",
+              "translation_ru": "Кажется, дети наконец освоились в новой школе, правда?"
             },
             {
-              "text": "**It is clear that we should compare the two options, isn't it?**",
-              "translation_ru": "Ясно, что нам следует сравнить два варианта, не так ли?"
+              "text": "It seems that the old charger is damaging the battery, doesn't it?",
+              "translation_ru": "Похоже, старое зарядное устройство портит аккумулятор, да?"
             },
             {
-              "text": "**It is clear that the client asked for more detail, isn't it?**",
-              "translation_ru": "Ясно, что клиент попросил больше деталей, не так ли?"
+              "text": "It seems that the train will be delayed by the storm, doesn't it?",
+              "translation_ru": "Кажется, из-за шторма поезд задержится, правда?"
             },
             {
-              "text": "**It is clear that the pilot may continue next month, isn't it?**",
-              "translation_ru": "Ясно, что пилотный проект может продолжиться в следующем месяце, не так ли?"
+              "text": "It seems that the landlord has agreed to replace the windows, doesn't it?",
+              "translation_ru": "Похоже, хозяин квартиры согласился заменить окна, да?"
             },
             {
-              "text": "**It is clear that the data need another check, isn't it?**",
-              "translation_ru": "Ясно, что данные нужно проверить ещё раз, не так ли?"
+              "text": "It seems that she is avoiding the subject rather than saying no, doesn't it?",
+              "translation_ru": "Кажется, она уходит от темы вместо того, чтобы прямо отказать, верно?"
             },
             {
-              "text": "**It is clear that the meeting was moved, isn't it?**",
-              "translation_ru": "Ясно, что встречу перенесли, не так ли?"
+              "text": "It seems that the local library is attracting more visitors since the renovation, doesn't it?",
+              "translation_ru": "Похоже, после ремонта в местную библиотеку стало приходить больше людей, да?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es ist klar, dass [das Team einen weiteren Tag für die Entscheidung braucht], oder?",
-          "example": "Es ist klar, dass das Team einen weiteren Tag für die Entscheidung braucht, oder?",
-          "translation": "Ясно, что команде нужен ещё день для решения, не так ли?",
+          "formula": "Es sieht so aus, als [Beobachtung im Konjunktiv II], oder?",
+          "example": "Es sieht so aus, als wäre der Keller der Nachbarn wieder überflutet, oder?",
+          "translation": "Похоже, у соседей снова затопило подвал, да?",
           "examples": [
             {
-              "text": "**Es ist klar, dass das Team einen weiteren Tag für die Entscheidung braucht, oder?**",
-              "translation_ru": "Ясно, что команде нужен ещё день для решения, не так ли?"
+              "text": "Es sieht so aus, als wäre der Keller der Nachbarn wieder überflutet, oder?",
+              "translation_ru": "Похоже, у соседей снова затопило подвал, да?"
             },
             {
-              "text": "**Es ist klar, dass der überarbeitete Plan noch nicht geteilt wurde, oder?**",
-              "translation_ru": "Ясно, что обновлённым планом ещё не поделились, не так ли?"
+              "text": "Es sieht so aus, als hätten sich die Kinder inzwischen an ihre neue Schule gewöhnt, oder?",
+              "translation_ru": "Кажется, дети уже освоились в новой школе, правда?"
             },
             {
-              "text": "**Es ist klar, dass wir die beiden Optionen vergleichen sollten, oder?**",
-              "translation_ru": "Ясно, что нам следует сравнить два варианта, не так ли?"
+              "text": "Es sieht so aus, als würde das alte Ladegerät den Akku beschädigen, oder?",
+              "translation_ru": "Похоже, старое зарядное устройство портит аккумулятор, да?"
             },
             {
-              "text": "**Es ist klar, dass der Kunde um mehr Details gebeten hat, oder?**",
-              "translation_ru": "Ясно, что клиент попросил больше деталей, не так ли?"
+              "text": "Es sieht so aus, als würde sich der Zug wegen des Sturms verspäten, oder?",
+              "translation_ru": "Похоже, из-за шторма поезд задержится, да?"
             },
             {
-              "text": "**Es ist klar, dass das Pilotprojekt im nächsten Monat weiterlaufen kann, oder?**",
-              "translation_ru": "Ясно, что пилотный проект может продолжиться в следующем месяце, не так ли?"
+              "text": "Es sieht so aus, als hätte der Vermieter dem Fensteraustausch zugestimmt, oder?",
+              "translation_ru": "Кажется, хозяин квартиры согласился заменить окна, правда?"
             },
             {
-              "text": "**Es ist klar, dass die Daten noch einmal geprüft werden müssen, oder?**",
-              "translation_ru": "Ясно, что данные нужно проверить ещё раз, не так ли?"
+              "text": "Es sieht so aus, als würde sie dem Thema ausweichen, statt direkt Nein zu sagen, oder?",
+              "translation_ru": "Кажется, она уходит от темы вместо того, чтобы прямо отказать, да?"
             },
             {
-              "text": "**Es ist klar, dass die Sitzung verschoben wurde, oder?**",
-              "translation_ru": "Ясно, что встречу перенесли, не так ли?"
+              "text": "Es sieht so aus, als kämen seit der Renovierung mehr Leute in die Stadtbibliothek, oder?",
+              "translation_ru": "Похоже, после ремонта в городскую библиотеку стало приходить больше людей, да?"
             }
           ]
         }
       ],
       "formulas": [
-        "It is clear that [the team needs another day to decide], isn't it?",
-        "Es ist klar, dass [das Team einen weiteren Tag für die Entscheidung braucht], oder?"
+        "It seems that [observation], doesn't it?",
+        "Es sieht so aus, als [Beobachtung im Konjunktiv II], oder?"
       ],
       "gen": {
         "status": "curated",

@@ -291,85 +291,85 @@
       "id": "FUNADV031",
       "group_id": "ADV",
       "set_id": "ADV",
-      "title_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
-      "metaphor_ru": "Речевая задача: использовать функцию «советы и рекомендации» в живом контексте.",
+      "title_ru": "Дать условный совет с конкретным следующим шагом",
+      "metaphor_ru": "Свяжите наблюдаемое условие с выполнимой рекомендацией, а не с универсальным призывом пересмотреть план. В английском сохраняйте if + условие, should + действие; в немецком — wenn с глаголом в конце и sollte(n) в главной части.",
       "langs": [
         {
           "lang": "en",
-          "formula": "If [the team needs another day to decide], we should reconsider the timetable.",
-          "example": "If the team needs another day to decide, we should reconsider the timetable.",
-          "translation": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
+          "formula": "If [condition], [person] should [practical action].",
+          "example": "If the window still lets in a draught after sealing, we should have the frame inspected.",
+          "translation": "Если из окна продолжит дуть после замены уплотнителя, стоит проверить раму у специалиста.",
           "examples": [
             {
-              "text": "**If the team needs another day to decide, we should reconsider the timetable.**",
-              "translation_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график."
+              "text": "If the window still lets in a draught after sealing, we should have the frame inspected.",
+              "translation_ru": "Если из окна продолжит дуть после замены уплотнителя, стоит проверить раму у специалиста."
             },
             {
-              "text": "**If the revised plan has not been shared yet, we should reconsider the timetable.**",
-              "translation_ru": "Если обновлённым планом ещё не поделились, нам следует пересмотреть график."
+              "text": "If your colleague keeps talking over you, you should raise it privately before the next meeting.",
+              "translation_ru": "Если коллега постоянно тебя перебивает, стоит поговорить с ним наедине до следующего совещания."
             },
             {
-              "text": "**If we should compare the two options, we should reconsider the timetable.**",
-              "translation_ru": "Если нам следует сравнить два варианта, нам следует пересмотреть график."
+              "text": "If the bus route changes in December, commuters should check the timetable before renewing their passes.",
+              "translation_ru": "Если в декабре изменится маршрут автобуса, пассажирам стоит проверить расписание перед продлением проездных."
             },
             {
-              "text": "**If the client asked for more detail, we should reconsider the timetable.**",
-              "translation_ru": "Если клиент попросил больше деталей, нам следует пересмотреть график."
+              "text": "If the translation sounds too formal, you should read it to a native speaker and ask how it comes across.",
+              "translation_ru": "Если перевод звучит слишком официально, стоит прочитать его носителю языка и спросить, какое он производит впечатление."
             },
             {
-              "text": "**If the pilot may continue next month, we should reconsider the timetable.**",
-              "translation_ru": "Если пилотный проект может продолжиться в следующем месяце, нам следует пересмотреть график."
+              "text": "If our prototype overheats under load, we should log the temperature before replacing the hardware.",
+              "translation_ru": "Если прототип перегревается под нагрузкой, стоит сначала записать показания температуры, а потом менять оборудование."
             },
             {
-              "text": "**If the data need another check, we should reconsider the timetable.**",
-              "translation_ru": "Если данные нужно проверить ещё раз, нам следует пересмотреть график."
+              "text": "If your father finds video appointments confusing, you should practise one with him without rushing.",
+              "translation_ru": "Если отцу сложно разобраться с видеоконсультациями, стоит спокойно потренироваться вместе с ним."
             },
             {
-              "text": "**If the meeting was moved, we should reconsider the timetable.**",
-              "translation_ru": "Если встречу перенесли, нам следует пересмотреть график."
+              "text": "If the community garden runs short of water again, the organisers should collect rainwater instead of using drinking water.",
+              "translation_ru": "Если в общественном саду снова не хватит воды, организаторам стоит собирать дождевую, а не расходовать питьевую."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wenn [das Team einen weiteren Tag für die Entscheidung braucht], sollten wir den Zeitplan überdenken.",
-          "example": "Wenn das Team einen weiteren Tag für die Entscheidung braucht, sollten wir den Zeitplan überdenken.",
-          "translation": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
+          "formula": "Wenn [Bedingung], sollte [Person] [konkrete Handlung].",
+          "example": "Wenn es trotz der neuen Dichtung weiter durchs Fenster zieht, sollten wir den Rahmen prüfen lassen.",
+          "translation": "Если из окна продолжит дуть даже после замены уплотнителя, стоит проверить раму у специалиста.",
           "examples": [
             {
-              "text": "**Wenn das Team einen weiteren Tag für die Entscheidung braucht, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график."
+              "text": "Wenn es trotz der neuen Dichtung weiter durchs Fenster zieht, sollten wir den Rahmen prüfen lassen.",
+              "translation_ru": "Если из окна продолжит дуть даже после замены уплотнителя, стоит проверить раму у специалиста."
             },
             {
-              "text": "**Wenn der überarbeitete Plan noch nicht geteilt wurde, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если обновлённым планом ещё не поделились, нам следует пересмотреть график."
+              "text": "Wenn dein Kollege dich ständig unterbricht, solltest du das vor der nächsten Besprechung unter vier Augen ansprechen.",
+              "translation_ru": "Если коллега постоянно тебя перебивает, стоит поговорить с ним наедине до следующего совещания."
             },
             {
-              "text": "**Wenn wir die beiden Optionen vergleichen sollten, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если нам следует сравнить два варианта, нам следует пересмотреть график."
+              "text": "Wenn sich die Buslinie im Dezember ändert, sollten Pendler vor der Verlängerung ihrer Monatskarte den neuen Fahrplan prüfen.",
+              "translation_ru": "Если в декабре изменится маршрут автобуса, пассажирам стоит проверить расписание перед продлением проездных."
             },
             {
-              "text": "**Wenn der Kunde um mehr Details gebeten hat, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если клиент попросил больше деталей, нам следует пересмотреть график."
+              "text": "Wenn die Übersetzung zu förmlich klingt, solltest du sie jemandem mit Deutsch als Muttersprache vorlesen und nach seiner Meinung fragen.",
+              "translation_ru": "Если перевод звучит слишком официально, стоит прочитать его носителю немецкого языка и спросить его мнение."
             },
             {
-              "text": "**Wenn das Pilotprojekt im nächsten Monat weiterlaufen kann, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если пилотный проект может продолжиться в следующем месяце, нам следует пересмотреть график."
+              "text": "Wenn unser Prototyp unter Last überhitzt, sollten wir die Temperatur protokollieren, bevor wir die Hardware austauschen.",
+              "translation_ru": "Если прототип перегревается под нагрузкой, стоит сначала записать показания температуры, а потом менять оборудование."
             },
             {
-              "text": "**Wenn die Daten noch einmal geprüft werden müssen, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если данные нужно проверить ещё раз, нам следует пересмотреть график."
+              "text": "Wenn dein Vater mit Videoterminen nicht zurechtkommt, solltest du einen Termin in Ruhe mit ihm durchspielen.",
+              "translation_ru": "Если отцу сложно разобраться с видеоконсультациями, стоит спокойно потренироваться вместе с ним."
             },
             {
-              "text": "**Wenn die Sitzung verschoben wurde, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если встречу перенесли, нам следует пересмотреть график."
+              "text": "Wenn dem Gemeinschaftsgarten erneut Wasser fehlt, sollten die Verantwortlichen Regenwasser sammeln, statt Trinkwasser zu verbrauchen.",
+              "translation_ru": "Если в общественном саду снова не хватит воды, организаторам стоит собирать дождевую, а не расходовать питьевую."
             }
           ]
         }
       ],
       "formulas": [
-        "If [the team needs another day to decide], we should reconsider the timetable.",
-        "Wenn [das Team einen weiteren Tag für die Entscheidung braucht], sollten wir den Zeitplan überdenken."
+        "If [condition], [person] should [practical action].",
+        "Wenn [Bedingung], sollte [Person] [konkrete Handlung]."
       ],
       "gen": {
         "status": "curated",
