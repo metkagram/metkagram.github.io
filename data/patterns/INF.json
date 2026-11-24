@@ -386,85 +386,85 @@
       "id": "GRMINF021",
       "group_id": "INF",
       "set_id": "INF",
-      "title_ru": "Чтобы прояснить вопрос, команда назначила встречу",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «чтобы прояснить вопрос, команда назначила встречу» в живом контексте.",
+      "title_ru": "Выразить цель действия инфинитивом",
+      "metaphor_ru": "Вынесите цель в начало предложения: английское to + инфинитив и немецкое um … zu. Исполнитель целевого и основного действия должен совпадать; для разных исполнителей в немецком обычно нужно damit.",
       "langs": [
         {
           "lang": "en",
-          "formula": "To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]",
-          "example": "To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.",
-          "translation": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.",
+          "formula": "To [base verb + complement], [same actor + main clause]. / [Main clause] to [verb].",
+          "example": "To reduce food waste, we freeze leftover soup in small portions.",
+          "translation": "Чтобы меньше выбрасывать продукты, мы замораживаем оставшийся суп небольшими порциями.",
           "examples": [
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."
+              "text": "To reduce food waste, we freeze leftover soup in small portions.",
+              "translation_ru": "Чтобы меньше выбрасывать продукты, мы замораживаем оставшийся суп небольшими порциями."
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."
+              "text": "To get a more reliable reading, the technician repeated the measurement outdoors.",
+              "translation_ru": "Чтобы получить более надёжное показание, техник повторил измерение на улице."
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "To make the instructions accessible, the library will provide an audio version.",
+              "translation_ru": "Чтобы сделать инструкцию доступнее, библиотека предоставит её аудиоверсию."
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."
+              "text": "To avoid waking the baby, could you switch your phone to silent mode?",
+              "translation_ru": "Не мог бы ты выключить звук на телефоне, чтобы не разбудить малыша?"
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."
+              "text": "To preserve the original colours, the conservator kept the photographs away from direct sunlight.",
+              "translation_ru": "Чтобы сохранить первоначальные цвета, реставратор защитила фотографии от прямых солнечных лучей."
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "To gain fluency, I try to retell an article without looking at the text.",
+              "translation_ru": "Чтобы научиться говорить свободнее, я стараюсь пересказывать статьи, не подглядывая в текст."
             },
             {
-              "text": "**To clarify the issue, the team scheduled a meeting in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."
+              "text": "To keep the discussion fair, the moderator asked everyone to state their objections in turn.",
+              "translation_ru": "Чтобы обсуждение было справедливым, ведущая попросила всех по очереди высказать возражения."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]",
-          "example": "Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику.",
+          "formula": "Um [Ergänzungen] zu [Infinitiv], [Hauptsatz mit demselben Handelnden]. / [Hauptsatz], um ... zu [Infinitiv].",
+          "example": "Um weniger Lebensmittel wegzuwerfen, frieren wir Suppenreste portionsweise ein.",
+          "translation": "Чтобы меньше выбрасывать продукты, мы замораживаем оставшийся суп небольшими порциями.",
           "examples": [
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где команда проверяла новую политику."
+              "text": "Um weniger Lebensmittel wegzuwerfen, frieren wir Suppenreste portionsweise ein.",
+              "translation_ru": "Чтобы меньше выбрасывать продукты, мы замораживаем оставшийся суп небольшими порциями."
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Um einen zuverlässigeren Messwert zu erhalten, wiederholte der Techniker die Messung im Freien.",
+              "translation_ru": "Чтобы получить более надёжное показание, техник повторил измерение на улице."
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Um die Anleitung barrierefrei zugänglich zu machen, wird die Bibliothek eine Audioversion anbieten.",
+              "translation_ru": "Чтобы сделать инструкцию доступнее, библиотека предоставит её аудиоверсию."
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Könntest du dein Handy lautlos stellen, um das Baby nicht zu wecken?",
+              "translation_ru": "Не мог бы ты выключить звук на телефоне, чтобы не разбудить малыша?"
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где расписание изменили в последний момент."
+              "text": "Um die ursprünglichen Farben zu erhalten, schützte die Restauratorin die Fotografien vor direkter Sonneneinstrahlung.",
+              "translation_ru": "Чтобы сохранить первоначальные цвета, реставратор защитила фотографии от прямых солнечных лучей."
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Um flüssiger sprechen zu lernen, versuche ich, einen Artikel nachzuerzählen, ohne auf den Text zu schauen.",
+              "translation_ru": "Чтобы научиться говорить свободнее, я стараюсь пересказывать статьи, не подглядывая в текст."
             },
             {
-              "text": "**Um die Frage zu klären, setzte das Team ein Treffen an in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Чтобы прояснить вопрос, команда назначила встречу в ситуации, где участники ждали объяснения."
+              "text": "Um eine faire Diskussion zu gewährleisten, bat die Moderatorin alle, ihre Einwände der Reihe nach vorzubringen.",
+              "translation_ru": "Чтобы обсуждение было справедливым, ведущая попросила всех по очереди высказать возражения."
             }
           ]
         }
       ],
       "formulas": [
-        "To clarify the issue, the team scheduled a meeting [the team was reviewing the new policy]",
-        "Um die Frage zu klären, setzte das Team ein Treffen an [das Team die neue Regelung prüfte]"
+        "To [base verb + complement], [same actor + main clause]. / [Main clause] to [verb].",
+        "Um [Ergänzungen] zu [Infinitiv], [Hauptsatz mit demselben Handelnden]. / [Hauptsatz], um ... zu [Infinitiv]."
       ],
       "gen": {
         "status": "curated",
@@ -576,85 +576,85 @@
       "id": "GRMINF031",
       "group_id": "INF",
       "set_id": "INF",
-      "title_ru": "Вместо переноса решения мы пересмотрели план",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «вместо переноса решения мы пересмотрели план» в живом контексте.",
+      "title_ru": "Выбрать действие вместо другого",
+      "metaphor_ru": "Сопоставляйте реально выбранное или предлагаемое действие с отвергнутой альтернативой. После instead of употребляется герундий, после (an)statt в немецком — инфинитив с zu при совпадении исполнителя.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]",
-          "example": "Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.",
-          "translation": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.",
+          "formula": "Instead of [verb-ing], [same actor + main clause]. / [Main clause] instead of [verb-ing].",
+          "example": "Instead of replacing the whole tap, we changed the worn washer.",
+          "translation": "Вместо замены всего крана мы поменяли только изношенную прокладку.",
           "examples": [
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."
+              "text": "Instead of replacing the whole tap, we changed the worn washer.",
+              "translation_ru": "Вместо замены всего крана мы поменяли только изношенную прокладку."
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Instead of memorising isolated words, try using them in a short conversation.",
+              "translation_ru": "Вместо заучивания отдельных слов попробуй употребить их в коротком разговоре."
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Instead of blaming her colleague, Maya asked what had gone wrong.",
+              "translation_ru": "Вместо того чтобы обвинять коллегу, Майя спросила, что пошло не так."
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Instead of clearing the entire database, we could restore the missing entries from a backup.",
+              "translation_ru": "Вместо очистки всей базы данных мы могли бы восстановить недостающие записи из резервной копии."
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."
+              "text": "Why did you drive across town instead of taking the tram?",
+              "translation_ru": "Почему ты поехал через весь город на машине, вместо того чтобы сесть на трамвай?"
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Instead of rushing to a verdict, the panel will hear from both witnesses.",
+              "translation_ru": "Вместо поспешного решения комиссия выслушает обоих свидетелей."
             },
             {
-              "text": "**Instead of postponing the decision, we revised the plan in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."
+              "text": "Instead of throwing away the fabric scraps, she stitched them into a cushion cover.",
+              "translation_ru": "Вместо того чтобы выбросить обрезки ткани, она сшила из них наволочку."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]",
-          "example": "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику.",
+          "formula": "(An)statt [Ergänzungen] zu [Infinitiv], [Hauptsatz mit demselben Handelnden].",
+          "example": "Statt den ganzen Wasserhahn auszutauschen, haben wir nur die abgenutzte Dichtung ersetzt.",
+          "translation": "Вместо замены всего крана мы поменяли только изношенную прокладку.",
           "examples": [
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где команда проверяла новую политику."
+              "text": "Statt den ganzen Wasserhahn auszutauschen, haben wir nur die abgenutzte Dichtung ersetzt.",
+              "translation_ru": "Вместо замены всего крана мы поменяли только изношенную прокладку."
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Statt einzelne Wörter auswendig zu lernen, versuch, sie in einem kurzen Gespräch zu verwenden.",
+              "translation_ru": "Вместо заучивания отдельных слов попробуй употребить их в коротком разговоре."
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Statt ihrer Kollegin die Schuld zu geben, fragte Maya, was schiefgelaufen war.",
+              "translation_ru": "Вместо того чтобы обвинять коллегу, Майя спросила, что пошло не так."
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Statt die gesamte Datenbank zu leeren, könnten wir die fehlenden Einträge aus einer Sicherung wiederherstellen.",
+              "translation_ru": "Вместо очистки всей базы данных мы могли бы восстановить недостающие записи из резервной копии."
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где расписание изменили в последний момент."
+              "text": "Warum bist du quer durch die Stadt gefahren, statt die Straßenbahn zu nehmen?",
+              "translation_ru": "Почему ты поехал через весь город на машине, вместо того чтобы сесть на трамвай?"
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Statt vorschnell ein Urteil zu fällen, wird das Gremium beide Zeugen anhören.",
+              "translation_ru": "Вместо поспешного решения комиссия выслушает обоих свидетелей."
             },
             {
-              "text": "**Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Вместо переноса решения мы пересмотрели план в ситуации, где участники ждали объяснения."
+              "text": "Statt die Stoffreste wegzuwerfen, nähte sie daraus einen Kissenbezug.",
+              "translation_ru": "Вместо того чтобы выбросить обрезки ткани, она сшила из них наволочку."
             }
           ]
         }
       ],
       "formulas": [
-        "Instead of postponing the decision, we revised the plan [the team was reviewing the new policy]",
-        "Statt die Entscheidung zu verschieben, überarbeiteten wir den Plan [das Team die neue Regelung prüfte]"
+        "Instead of [verb-ing], [same actor + main clause]. / [Main clause] instead of [verb-ing].",
+        "(An)statt [Ergänzungen] zu [Infinitiv], [Hauptsatz mit demselben Handelnden]."
       ],
       "gen": {
         "status": "curated",
@@ -671,85 +671,85 @@
       "id": "GRMINF036",
       "group_id": "INF",
       "set_id": "INF",
-      "title_ru": "Руководитель дал команде протестировать новый процесс",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «руководитель дал команде протестировать новый процесс» в живом контексте.",
+      "title_ru": "Позволить кому-то сделать что-либо",
+      "metaphor_ru": "После let в значении разрешения или создания возможности используется объект и инфинитив без to. В немецком lassen требует винительного падежа и инфинитива без zu. Не смешивайте разрешение с отдельным значением lassen — поручить кому-то выполнить работу.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The manager let the team test the new process [the team was reviewing the new policy]",
-          "example": "The manager let the team test the new process in a situation where the team was reviewing the new policy.",
-          "translation": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subject] let(s)/let + [object] + [base verb without to]. / Let [object] [verb].",
+          "example": "My aunt let me choose the music on the way home.",
+          "translation": "Тётя позволила мне выбрать музыку по дороге домой.",
           "examples": [
             {
-              "text": "**The manager let the team test the new process in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."
+              "text": "My aunt let me choose the music on the way home.",
+              "translation_ru": "Тётя позволила мне выбрать музыку по дороге домой."
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."
+              "text": "The landlord lets us grow herbs on the balcony.",
+              "translation_ru": "Хозяин квартиры разрешает нам выращивать зелень на балконе."
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "The teacher didn't let the children leave until the storm had passed.",
+              "translation_ru": "Учительница не отпускала детей, пока не закончилась гроза."
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Will you let me finish before you respond?",
+              "translation_ru": "Ты дашь мне договорить, прежде чем ответить?"
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."
+              "text": "Let the dough rest for half an hour before you roll it out.",
+              "translation_ru": "Дай тесту отдохнуть полчаса, прежде чем раскатывать его."
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "The guide let visitors sketch the sculptures as long as they didn't block the passage.",
+              "translation_ru": "Экскурсовод разрешила посетителям зарисовывать скульптуры, если они не загораживали проход."
             },
             {
-              "text": "**The manager let the team test the new process in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."
+              "text": "We should let the tenants decide how to use the shared courtyard.",
+              "translation_ru": "Нам стоит предоставить жильцам право решать, как использовать общий двор."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]",
-          "example": "Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику.",
+          "formula": "[Subjekt] lässt/ließ + [Akkusativobjekt] + [Infinitiv ohne zu]. / Lass [Objekt] [Infinitiv]. / [Modalverb] ... lassen.",
+          "example": "Meine Tante ließ mich auf dem Heimweg die Musik aussuchen.",
+          "translation": "Тётя позволила мне выбрать музыку по дороге домой.",
           "examples": [
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где команда проверяла новую политику."
+              "text": "Meine Tante ließ mich auf dem Heimweg die Musik aussuchen.",
+              "translation_ru": "Тётя позволила мне выбрать музыку по дороге домой."
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Der Vermieter lässt uns auf dem Balkon Kräuter anbauen.",
+              "translation_ru": "Хозяин квартиры разрешает нам выращивать зелень на балконе."
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Die Lehrerin ließ die Kinder erst gehen, als das Gewitter vorüber war.",
+              "translation_ru": "Учительница не отпускала детей, пока не закончилась гроза."
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Lässt du mich bitte ausreden, bevor du antwortest?",
+              "translation_ru": "Ты дашь мне договорить, прежде чем ответить?"
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где расписание изменили в последний момент."
+              "text": "Lass den Teig eine halbe Stunde ruhen, bevor du ihn ausrollst.",
+              "translation_ru": "Дай тесту отдохнуть полчаса, прежде чем раскатывать его."
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Die Museumsführerin ließ die Besucher die Skulpturen zeichnen, solange sie den Durchgang nicht versperrten.",
+              "translation_ru": "Экскурсовод разрешила посетителям зарисовывать скульптуры, если они не загораживали проход."
             },
             {
-              "text": "**Die Leitung ließ das Team den neuen Prozess testen in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Руководитель дал команде протестировать новый процесс в ситуации, где участники ждали объяснения."
+              "text": "Wir sollten die Mieter entscheiden lassen, wie der gemeinsame Innenhof genutzt wird.",
+              "translation_ru": "Нам стоит предоставить жильцам право решать, как использовать общий двор."
             }
           ]
         }
       ],
       "formulas": [
-        "The manager let the team test the new process [the team was reviewing the new policy]",
-        "Die Leitung ließ das Team den neuen Prozess testen [das Team die neue Regelung prüfte]"
+        "[Subject] let(s)/let + [object] + [base verb without to]. / Let [object] [verb].",
+        "[Subjekt] lässt/ließ + [Akkusativobjekt] + [Infinitiv ohne zu]. / Lass [Objekt] [Infinitiv]. / [Modalverb] ... lassen."
       ],
       "gen": {
         "status": "curated",
