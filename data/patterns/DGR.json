@@ -290,85 +290,85 @@
     {
       "id": "GER004",
       "group_id": "GER",
-      "title_ru": "Я с нетерпением жду, чтобы сделать...",
-      "metaphor_ru": "Как стоять на старте перед забегом — всё тело готово рвануть вперёд, ждёшь только сигнала.",
+      "title_ru": "Ожидание приятного события",
+      "metaphor_ru": "После английского look forward to употребляется существительное или форма глагола с окончанием -ing: to здесь предлог, а не частица инфинитива. Немецкое sich darauf freuen, ... zu выражает ожидание будущего действия, а sich auf с винительным падежом — ожидание события. В отрицании говорящий признаёт, что предстоящее действие его не радует.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I’m looking forward to + V-ing",
-          "example": "I’m looking forward to discussing the details in the meeting.",
-          "translation": "Стою на старте: я с нетерпением жду обсуждения деталей на встрече.",
+          "formula": "[Subject] be (not) looking forward to + [verb-ing / noun]. / Are ... looking forward to ...?",
+          "example": "I'm looking forward to hearing how your first week at the new school went.",
+          "translation": "Мне не терпится узнать, как прошла твоя первая неделя в новой школе.",
           "examples": [
             {
-              "text": "We’re looking forward to **launching** the new product.",
-              "translation_ru": "Мы с нетерпением ждем запуска нового продукта."
+              "text": "I'm looking forward to hearing how your first week at the new school went.",
+              "translation_ru": "Мне не терпится узнать, как прошла твоя первая неделя в новой школе."
             },
             {
-              "text": "She’s looking forward to **meeting** you tomorrow.",
-              "translation_ru": "Она с нетерпением ждет встречи с вами завтра."
+              "text": "She's looking forward to having the kitchen to herself while the children are away.",
+              "translation_ru": "Она рада, что сможет одна хозяйничать на кухне, пока детей не будет дома."
             },
             {
-              "text": "Are you looking forward to **starting** the project?",
-              "translation_ru": "Ты с нетерпением ждешь начала проекта?"
+              "text": "Are you looking forward to catching up with your former classmates?",
+              "translation_ru": "Ты с нетерпением ждёшь встречи с бывшими одноклассниками?"
             },
             {
-              "text": "He wasn’t looking forward to **giving** the presentation.",
-              "translation_ru": "Он не ждал с нетерпением презентации."
+              "text": "I wasn't looking forward to telling my neighbours about the damage to their fence.",
+              "translation_ru": "Мне совсем не хотелось сообщать соседям о повреждении их забора."
             },
             {
-              "text": "They’re looking forward to **exploring** new markets.",
-              "translation_ru": "Они с нетерпением ждут исследования новых рынков."
+              "text": "We're looking forward to seeing the restored paintings in their original setting.",
+              "translation_ru": "Нам не терпится увидеть отреставрированные картины в их первоначальном окружении."
             },
             {
-              "text": "I’m not looking forward to **cleaning** the garage.",
-              "translation_ru": "Я не жду с нетерпением уборки в гараже."
+              "text": "He's not looking forward to going through all the paperwork again.",
+              "translation_ru": "Его совсем не радует перспектива снова разбираться со всеми документами."
             },
             {
-              "text": "We're looking forward to **seeing** the results.",
-              "translation_ru": "Мы с нетерпением ждем результатов."
+              "text": "The volunteers were looking forward to welcoming the first families into the new shelter.",
+              "translation_ru": "Волонтёры с нетерпением ждали возможности принять первые семьи в новом приюте."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich freue mich darauf, + zu + Infinitiv",
-          "example": "Ich freue mich darauf, die Details im Meeting zu besprechen.",
-          "translation": "Я с нетерпением жду обсуждения деталей на встрече.",
+          "formula": "[Subjekt] freut(e) sich (nicht) darauf, [zu + Infinitiv] / auf + [Akkusativ]. / Freust du dich darauf, ...?",
+          "example": "Ich freue mich darauf, zu hören, wie deine erste Woche an der neuen Schule gelaufen ist.",
+          "translation": "Мне не терпится узнать, как прошла твоя первая неделя в новой школе.",
           "examples": [
             {
-              "text": "Wir freuen uns darauf, das neue Produkt **zu launchen**.",
-              "translation_ru": "Мы с нетерпением ждем запуска нового продукта."
+              "text": "Ich freue mich darauf, zu hören, wie deine erste Woche an der neuen Schule gelaufen ist.",
+              "translation_ru": "Мне не терпится узнать, как прошла твоя первая неделя в новой школе."
             },
             {
-              "text": "Sie freut sich darauf, dich morgen **zu treffen**.",
-              "translation_ru": "Она с нетерпением ждет встречи с тобой завтра."
+              "text": "Sie freut sich darauf, die Küche für sich allein zu haben, solange die Kinder weg sind.",
+              "translation_ru": "Она рада, что сможет одна хозяйничать на кухне, пока детей не будет дома."
             },
             {
-              "text": "Freust du dich darauf, das Projekt **zu starten**?",
-              "translation_ru": "Ты с нетерпением ждешь начала проекта?"
+              "text": "Freust du dich darauf, deine ehemaligen Mitschüler wiederzusehen?",
+              "translation_ru": "Ты с нетерпением ждёшь встречи с бывшими одноклассниками?"
             },
             {
-              "text": "Er freute sich nicht darauf, die Präsentation **zu halten**.",
-              "translation_ru": "Он не ждал с нетерпением презентации."
+              "text": "Ich freute mich nicht gerade darauf, den Nachbarn von dem Schaden an ihrem Zaun zu erzählen.",
+              "translation_ru": "Мне совсем не хотелось сообщать соседям о повреждении их забора."
             },
             {
-              "text": "Sie freuen sich darauf, neue Märkte **zu erkunden**.",
-              "translation_ru": "Они с нетерпением ждут исследования новых рынков."
+              "text": "Wir freuen uns darauf, die restaurierten Gemälde in ihrer ursprünglichen Umgebung zu sehen.",
+              "translation_ru": "Нам не терпится увидеть отреставрированные картины в их первоначальном окружении."
             },
             {
-              "text": "Ich freue mich nicht darauf, die Garage **zu putzen**.",
-              "translation_ru": "Я не жду с нетерпением уборки в гараже."
+              "text": "Er freut sich nicht gerade darauf, sich noch einmal durch den ganzen Papierkram zu arbeiten.",
+              "translation_ru": "Его совсем не радует перспектива снова разбираться со всеми документами."
             },
             {
-              "text": "Wir freuen uns darauf, die Ergebnisse **zu sehen**.",
-              "translation_ru": "Мы с нетерпением ждем результатов."
+              "text": "Die Ehrenamtlichen freuten sich darauf, die ersten Familien in der neuen Unterkunft willkommen zu heißen.",
+              "translation_ru": "Волонтёры с нетерпением ждали возможности принять первые семьи в новом приюте."
             }
           ]
         }
       ],
       "formulas": [
-        "I’m looking forward to + V-ing",
-        "Ich freue mich darauf, + zu + Infinitiv"
+        "[Subject] be (not) looking forward to + [verb-ing / noun]. / Are ... looking forward to ...?",
+        "[Subjekt] freut(e) sich (nicht) darauf, [zu + Infinitiv] / auf + [Akkusativ]. / Freust du dich darauf, ...?"
       ],
       "gen": {
         "status": "generated",
@@ -575,85 +575,85 @@
     {
       "id": "GER007",
       "group_id": "GER",
-      "title_ru": "Ожидается или предполагается",
-      "metaphor_ru": "Как невидимая инструкция на коробке: даже если её не видно, все знают, что так нужно сделать.",
+      "title_ru": "Ожидания, правила и договорённости",
+      "metaphor_ru": "Конструкция be supposed to указывает на внешнее ожидание, инструкцию или заранее согласованный порядок. В немецком часто соответствует sollen с инфинитивом. Прошедшая форма может противопоставлять план реальности, а отрицание — обозначать правило, запрещающее действие. Это не обязательно совет самого говорящего.",
       "langs": [
         {
           "lang": "en",
-          "formula": "be supposed to + V",
-          "example": "We’re supposed to finish this by Friday.",
-          "translation": "Мы должны закончить это к пятнице.",
+          "formula": "[Subject] is/are/was/were (not) supposed to + [base verb]. / Am/Is/Are ... supposed to ...?",
+          "example": "We're supposed to leave the keys with the caretaker, not in the letterbox.",
+          "translation": "По договорённости мы должны оставить ключи у смотрителя, а не в почтовом ящике.",
           "examples": [
             {
-              "text": "He’s **supposed to** call you today.",
-              "translation_ru": "Он должен позвонить тебе сегодня."
+              "text": "We're supposed to leave the keys with the caretaker, not in the letterbox.",
+              "translation_ru": "По договорённости мы должны оставить ключи у смотрителя, а не в почтовом ящике."
             },
             {
-              "text": "Am I **supposed to** know this?",
-              "translation_ru": "Я должен это знать?"
+              "text": "The train was supposed to arrive at six, but it's still outside the city.",
+              "translation_ru": "По расписанию поезд должен был прибыть в шесть, но он всё ещё за городом."
             },
             {
-              "text": "They **weren’t supposed to** see that.",
-              "translation_ru": "Они не должны были это видеть."
+              "text": "Am I supposed to include travel expenses in this form?",
+              "translation_ru": "Мне нужно указать транспортные расходы в этой форме?"
             },
             {
-              "text": "You’re **supposed to** wear a helmet.",
-              "translation_ru": "Ты должен носить шлем."
+              "text": "You're not supposed to feed the birds near the playground.",
+              "translation_ru": "По правилам нельзя кормить птиц рядом с детской площадкой."
             },
             {
-              "text": "Is she **supposed to** be here?",
-              "translation_ru": "Она должна быть здесь?"
+              "text": "What are the students supposed to do if the link to the assignment doesn't work?",
+              "translation_ru": "Что ученикам следует делать, если ссылка на задание не работает?"
             },
             {
-              "text": "We **weren’t supposed to** meet yet.",
-              "translation_ru": "Мы не должны были ещё встречаться."
+              "text": "She was supposed to bring the spare microphone, but she lent it to a colleague instead.",
+              "translation_ru": "Она должна была принести запасной микрофон, но вместо этого одолжила его коллеге."
             },
             {
-              "text": "I’m **supposed to** submit the report.",
-              "translation_ru": "Я должен сдать отчет."
+              "text": "A password reset is supposed to take only a few minutes, so something seems to be wrong.",
+              "translation_ru": "Сброс пароля должен занимать всего несколько минут, так что, похоже, что-то пошло не так."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "sollen + Infinitiv",
-          "example": "Wir sollen das bis Freitag fertigstellen.",
-          "translation": "Мы должны закончить это к пятнице.",
+          "formula": "[Subjekt] soll/sollen/sollte/sollten (nicht) + [Infinitiv]. / Soll ... + [Infinitiv]?",
+          "example": "Wir sollen die Schlüssel beim Hausmeister abgeben und nicht in den Briefkasten werfen.",
+          "translation": "По договорённости мы должны оставить ключи у смотрителя, а не бросать их в почтовый ящик.",
           "examples": [
             {
-              "text": "Er **soll** dich heute anrufen.",
-              "translation_ru": "Он должен позвонить тебе сегодня."
+              "text": "Wir sollen die Schlüssel beim Hausmeister abgeben und nicht in den Briefkasten werfen.",
+              "translation_ru": "По договорённости мы должны оставить ключи у смотрителя, а не бросать их в почтовый ящик."
             },
             {
-              "text": "Soll ich das wissen?",
-              "translation_ru": "Я должен это знать?"
+              "text": "Der Zug sollte um sechs ankommen, ist aber immer noch außerhalb der Stadt.",
+              "translation_ru": "По расписанию поезд должен был прибыть в шесть, но он всё ещё за городом."
             },
             {
-              "text": "Sie **sollten** das nicht sehen.",
-              "translation_ru": "Они не должны были это видеть."
+              "text": "Soll ich die Fahrtkosten in diesem Formular angeben?",
+              "translation_ru": "Мне нужно указать транспортные расходы в этой форме?"
             },
             {
-              "text": "Du **sollst** einen Helm tragen.",
-              "translation_ru": "Ты должен носить шлем."
+              "text": "Du sollst die Vögel in der Nähe des Spielplatzes nicht füttern.",
+              "translation_ru": "По правилам нельзя кормить птиц рядом с детской площадкой."
             },
             {
-              "text": "Soll sie hier sein?",
-              "translation_ru": "Она должна быть здесь?"
+              "text": "Was sollen die Schüler machen, wenn der Link zur Aufgabe nicht funktioniert?",
+              "translation_ru": "Что ученикам следует делать, если ссылка на задание не работает?"
             },
             {
-              "text": "Wir **sollten** uns noch nicht treffen.",
-              "translation_ru": "Мы не должны были ещё встречаться."
+              "text": "Sie sollte das Ersatzmikrofon mitbringen, hat es aber stattdessen einem Kollegen geliehen.",
+              "translation_ru": "Она должна была принести запасной микрофон, но вместо этого одолжила его коллеге."
             },
             {
-              "text": "Ich **soll** den Bericht einreichen.",
-              "translation_ru": "Я должен сдать отчет."
+              "text": "Das Zurücksetzen des Passworts soll nur wenige Minuten dauern, also stimmt offenbar etwas nicht.",
+              "translation_ru": "Сброс пароля должен занимать всего несколько минут, так что, похоже, что-то не так."
             }
           ]
         }
       ],
       "formulas": [
-        "be supposed to + V",
-        "sollen + Infinitiv"
+        "[Subject] is/are/was/were (not) supposed to + [base verb]. / Am/Is/Are ... supposed to ...?",
+        "[Subjekt] soll/sollen/sollte/sollten (nicht) + [Infinitiv]. / Soll ... + [Infinitiv]?"
       ],
       "gen": {
         "status": "generated",

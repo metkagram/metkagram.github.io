@@ -100,85 +100,85 @@
     {
       "id": "PAS002",
       "group_id": "PAS",
-      "title_ru": "Процесс в моменте",
-      "metaphor_ru": "Как посылка в сортировочном центре — уже в процессе, движется по системе. Не важно, кто именно её обрабатывает, главное — процесс идёт.",
+      "title_ru": "Действие в процессе: длительный пассив",
+      "metaphor_ru": "Английская конструкция с being описывает действие, которое идёт в данный момент или шло в определённый момент прошлого. В немецком для этого достаточно процессуального пассива с werden; gerade, noch или временной контекст передают длительность. Не путайте процесс с уже достигнутым состоянием.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The report is being + Past Participle",
-          "example": "The report is being reviewed.",
-          "translation": "Отчёт прямо сейчас крутится в «центре обработки» — проверяется.",
+          "formula": "[Subject] is/are/was/were (not) being + [past participle]. / Is/Are ... being + [past participle]?",
+          "example": "The lift is being repaired, so please use the stairs.",
+          "translation": "Лифт сейчас ремонтируют, поэтому воспользуйтесь лестницей.",
           "examples": [
             {
-              "text": "The **software** is being **updated**.",
-              "translation_ru": "Программное обеспечение обновляется."
+              "text": "The lift is being repaired, so please use the stairs.",
+              "translation_ru": "Лифт сейчас ремонтируют, поэтому воспользуйтесь лестницей."
             },
             {
-              "text": "Are the **reports** being **verified**?",
-              "translation_ru": "Отчеты проверяются?"
+              "text": "When we arrived, the last seedlings were still being planted.",
+              "translation_ru": "Когда мы приехали, последние саженцы ещё высаживали."
             },
             {
-              "text": "The **contract** is not being **renewed**.",
-              "translation_ru": "Контракт не продлевается."
+              "text": "Why is the footpath being widened at this end?",
+              "translation_ru": "Почему тротуар расширяют именно с этой стороны?"
             },
             {
-              "text": "Why is the **meeting** being **postponed**?",
-              "translation_ru": "Почему встреча откладывается?"
+              "text": "Your complaint isn't being ignored; the landlord is waiting for a plumber's assessment.",
+              "translation_ru": "Вашу жалобу не игнорируют: арендодатель ждёт заключения сантехника."
             },
             {
-              "text": "Your **order** is being **processed**.",
-              "translation_ru": "Ваш заказ обрабатывается."
+              "text": "Are the interviews being recorded with the participants' consent?",
+              "translation_ru": "Интервью записывают с согласия участников?"
             },
             {
-              "text": "The **network** is being **monitored**.",
-              "translation_ru": "Сеть отслеживается."
+              "text": "While the pavement was being cleared of snow, buses had to take a different route.",
+              "translation_ru": "Пока с тротуара убирали снег, автобусам пришлось ехать по другому маршруту."
             },
             {
-              "text": "Is the **application** being **submitted**?",
-              "translation_ru": "Заявка подается?"
+              "text": "Several backup copies are being checked for corrupted files.",
+              "translation_ru": "Несколько резервных копий сейчас проверяют на наличие повреждённых файлов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Bericht wird gerade + Partizip II",
-          "example": "Der Bericht wird gerade überprüft.",
-          "translation": "Отчёт сейчас проверяется, в процессе.",
+          "formula": "[Subjekt] wird/werden/wurde/wurden (gerade/noch/nicht) + [Partizip II]. / Wird ... + [Partizip II]?",
+          "example": "Der Aufzug wird gerade repariert, deshalb nehmen Sie bitte die Treppe.",
+          "translation": "Лифт сейчас ремонтируют, поэтому воспользуйтесь лестницей.",
           "examples": [
             {
-              "text": "Die **Software** wird gerade **aktualisiert**.",
-              "translation_ru": "Программное обеспечение обновляется."
+              "text": "Der Aufzug wird gerade repariert, deshalb nehmen Sie bitte die Treppe.",
+              "translation_ru": "Лифт сейчас ремонтируют, поэтому воспользуйтесь лестницей."
             },
             {
-              "text": "Werden die **Berichte** gerade **verifiziert**?",
-              "translation_ru": "Отчеты проверяются?"
+              "text": "Als wir ankamen, wurden die letzten Setzlinge noch eingepflanzt.",
+              "translation_ru": "Когда мы приехали, последние саженцы ещё высаживали."
             },
             {
-              "text": "Der **Vertrag** wird nicht **verlängert**.",
-              "translation_ru": "Контракт не продлевается."
+              "text": "Warum wird der Radweg ausgerechnet an dieser Stelle verbreitert?",
+              "translation_ru": "Почему велодорожку расширяют именно в этом месте?"
             },
             {
-              "text": "Warum wird das **Treffen** **verschoben**?",
-              "translation_ru": "Почему встреча откладывается?"
+              "text": "Deine Anfrage wird nicht ignoriert; sie liegt gerade bei der zuständigen Stelle.",
+              "translation_ru": "Твой запрос не игнорируют: сейчас он находится в ответственном подразделении."
             },
             {
-              "text": "Ihre **Bestellung** wird gerade **bearbeitet**.",
-              "translation_ru": "Ваш заказ обрабатывается."
+              "text": "Werden die Gespräche mit Einwilligung der Beteiligten aufgezeichnet?",
+              "translation_ru": "Беседы записывают с согласия участников?"
             },
             {
-              "text": "Das **Netzwerk** wird gerade **überwacht**.",
-              "translation_ru": "Сеть отслеживается."
+              "text": "Während die Fenster ausgetauscht wurden, konnten wir das Zimmer kaum nutzen.",
+              "translation_ru": "Пока меняли окна, мы почти не могли пользоваться комнатой."
             },
             {
-              "text": "Wird die **Bewerbung** gerade **eingereicht**?",
-              "translation_ru": "Заявка подается?"
+              "text": "Die Sicherungskopien werden gerade auf beschädigte Dateien überprüft.",
+              "translation_ru": "Резервные копии сейчас проверяют на наличие повреждённых файлов."
             }
           ]
         }
       ],
       "formulas": [
-        "The report is being + Past Participle",
-        "Der Bericht wird gerade + Partizip II"
+        "[Subject] is/are/was/were (not) being + [past participle]. / Is/Are ... being + [past participle]?",
+        "[Subjekt] wird/werden/wurde/wurden (gerade/noch/nicht) + [Partizip II]. / Wird ... + [Partizip II]?"
       ],
       "gen": {
         "status": "generated",
@@ -195,85 +195,85 @@
     {
       "id": "PAS003",
       "group_id": "PAS",
-      "title_ru": "Решение будет принято скоро",
-      "metaphor_ru": "Как стрелка на часах, которая медленно идёт к нужной точке. Ты знаешь, что момент наступит — вопрос только во времени.",
+      "title_ru": "Будущее действие в пассиве",
+      "metaphor_ru": "Используйте will be с причастием прошедшего времени, чтобы сообщить о будущем действии, не называя исполнителя. В немецком возможен будущий пассив с werden в начале и в конце глагольной группы, но в обычной речи естественнее настоящее время с явным указанием будущего срока. Это прогноз или план, а не обязанность.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The decision will be + Past Participle",
-          "example": "The decision will be made soon.",
-          "translation": "Часовая стрелка почти дошла: решение скоро будет принято.",
+          "formula": "[Subject] will (not) be / is going to be + [past participle] + [future context]. / Will ... be + [past participle]?",
+          "example": "The old railway station will be converted into a community centre next year.",
+          "translation": "В следующем году старый вокзал переоборудуют в общественный центр.",
           "examples": [
             {
-              "text": "The **report** will be **completed** by tomorrow.",
-              "translation_ru": "Отчёт будет завершён к завтрашнему дню."
+              "text": "The old railway station will be converted into a community centre next year.",
+              "translation_ru": "В следующем году старый вокзал переоборудуют в общественный центр."
             },
             {
-              "text": "Your **idea** is going to be **considered**.",
-              "translation_ru": "Ваша идея будет рассмотрена."
+              "text": "Will the deposit be refunded if we cancel before the end of May?",
+              "translation_ru": "Вернут ли задаток, если мы отменим бронирование до конца мая?"
             },
             {
-              "text": "Will the **meeting** be **held** next week?",
-              "translation_ru": "Встреча состоится на следующей неделе?"
+              "text": "Your name won't be printed in the programme unless you give permission.",
+              "translation_ru": "Ваше имя не напечатают в программе без вашего разрешения."
             },
             {
-              "text": "The **software** will be **updated** soon.",
-              "translation_ru": "Программное обеспечение будет обновлено скоро."
+              "text": "The damaged section of the fence is going to be replaced as soon as the ground dries out.",
+              "translation_ru": "Повреждённую секцию забора заменят, как только земля подсохнет."
             },
             {
-              "text": "The **contract** is not going to be **signed**.",
-              "translation_ru": "Контракт не будет подписан."
+              "text": "Once the translation is ready, both versions will be made available to readers.",
+              "translation_ru": "Как только перевод будет готов, читателям предоставят обе версии."
             },
             {
-              "text": "Is the **project** going to be **approved**?",
-              "translation_ru": "Проект будет одобрен?"
+              "text": "How will the donated books be distributed among the schools?",
+              "translation_ru": "Как пожертвованные книги распределят между школами?"
             },
             {
-              "text": "The **results** will be **published** on Friday.",
-              "translation_ru": "Результаты будут опубликованы в пятницу."
+              "text": "The footage will be deleted automatically after thirty days.",
+              "translation_ru": "Видеозапись автоматически удалят через тридцать дней."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Entscheidung wird + Partizip II + werden",
-          "example": "Die Entscheidung wird bald getroffen werden.",
-          "translation": "Решение скоро будет принято, осталось чуть-чуть.",
+          "formula": "[Subjekt] wird/werden + [Partizip II] + werden (Futur I) / wird/werden + [Zeitangabe] + [Partizip II] (Präsens mit Zukunftsbezug).",
+          "example": "Der alte Bahnhof wird nächstes Jahr zu einem Nachbarschaftszentrum umgebaut.",
+          "translation": "В следующем году старый вокзал переоборудуют в общественный центр.",
           "examples": [
             {
-              "text": "Das **Projekt** wird morgen **abgeschlossen** werden.",
-              "translation_ru": "Проект будет завершён завтра."
+              "text": "Der alte Bahnhof wird nächstes Jahr zu einem Nachbarschaftszentrum umgebaut.",
+              "translation_ru": "В следующем году старый вокзал переоборудуют в общественный центр."
             },
             {
-              "text": "Wird die **Idee** **berücksichtigt**?",
-              "translation_ru": "Идея будет учтена?"
+              "text": "Wird die Anzahlung zurückerstattet, wenn wir bis Ende Mai absagen?",
+              "translation_ru": "Вернут ли задаток, если мы отменим бронирование до конца мая?"
             },
             {
-              "text": "Das **Meeting** wird nächste Woche **stattfinden**.",
-              "translation_ru": "Встреча состоится на следующей неделе."
+              "text": "Ohne deine Zustimmung wird dein Name nicht im Programmheft veröffentlicht werden.",
+              "translation_ru": "Без твоего согласия твоё имя не опубликуют в программке."
             },
             {
-              "text": "Die **Software** wird bald **aktualisiert** werden.",
-              "translation_ru": "Программное обеспечение будет скоро обновлено."
+              "text": "Sobald der Boden trocken ist, wird der beschädigte Zaunabschnitt ersetzt.",
+              "translation_ru": "Как только земля подсохнет, повреждённую секцию забора заменят."
             },
             {
-              "text": "Der **Vertrag** wird nicht **unterzeichnet** werden.",
-              "translation_ru": "Контракт не будет подписан."
+              "text": "Die Ergebnisse werden voraussichtlich im Herbst veröffentlicht werden.",
+              "translation_ru": "Результаты предположительно опубликуют осенью."
             },
             {
-              "text": "Wird das **Projekt** **genehmigt** werden?",
-              "translation_ru": "Проект будет одобрен?"
+              "text": "Wie werden die gespendeten Bücher auf die Schulen verteilt?",
+              "translation_ru": "Как пожертвованные книги распределят между школами?"
             },
             {
-              "text": "Die **Ergebnisse** werden am Freitag **veröffentlicht**.",
-              "translation_ru": "Результаты будут опубликованы в пятницу."
+              "text": "Die Aufnahmen werden nach dreißig Tagen automatisch gelöscht.",
+              "translation_ru": "Записи автоматически удалят через тридцать дней."
             }
           ]
         }
       ],
       "formulas": [
-        "The decision will be + Past Participle",
-        "Die Entscheidung wird + Partizip II + werden"
+        "[Subject] will (not) be / is going to be + [past participle] + [future context]. / Will ... be + [past participle]?",
+        "[Subjekt] wird/werden + [Partizip II] + werden (Futur I) / wird/werden + [Zeitangabe] + [Partizip II] (Präsens mit Zukunftsbezug)."
       ],
       "gen": {
         "status": "generated",
@@ -290,85 +290,85 @@
     {
       "id": "PAS004",
       "group_id": "PAS",
-      "title_ru": "Все документы должны быть отправлены к…",
-      "metaphor_ru": "Как таймер с автосбросом — если не успел до момента X, окно захлопывается. Без вариантов.",
+      "title_ru": "Срок выполнения обязательного действия",
+      "metaphor_ru": "Сочетайте модальный глагол необходимости с пассивным инфинитивом и сроком. Английское by и немецкое bis задают последний допустимый момент; английское until обычно обозначает длительность, а не крайний срок. В немецком после модального глагола причастие и werden стоят в конце главного предложения. В отрицательной конструкции с until срок означает, что раньше выполнять действие не требуется.",
       "langs": [
         {
           "lang": "en",
-          "formula": "All documents must be + Past Participle + by (deadline)",
-          "example": "All documents must be submitted by Friday.",
-          "translation": "Таймер тикает: все документы должны быть отправлены до пятницы.",
+          "formula": "[Subject] must / should / need(s) to be + [past participle] + by/before [deadline]. / Should ... be ...? / ... doesn't need to be ... until [time].",
+          "example": "All bicycle reservations must be confirmed by noon on the day before departure.",
+          "translation": "Все бронирования велосипедов нужно подтвердить до полудня накануне поездки.",
           "examples": [
             {
-              "text": "The report must be **completed** by **tomorrow**.",
-              "translation_ru": "Отчет должен быть завершён к завтрашнему дню."
+              "text": "All bicycle reservations must be confirmed by noon on the day before departure.",
+              "translation_ru": "Все бронирования велосипедов нужно подтвердить до полудня накануне поездки."
             },
             {
-              "text": "Can the files be **reviewed** by **next week**?",
-              "translation_ru": "Можно ли просмотреть файлы к следующей неделе?"
+              "text": "The leaking pipe needs to be replaced before the next cold spell.",
+              "translation_ru": "Протекающую трубу нужно заменить до следующего похолодания."
             },
             {
-              "text": "All invoices should be **paid** by **the end of the month**.",
-              "translation_ru": "Все счета должны быть оплачены к концу месяца."
+              "text": "Should the consent forms be collected by the end of the first lesson?",
+              "translation_ru": "Нужно ли собрать формы согласия к концу первого урока?"
             },
             {
-              "text": "The project needs to be **approved** by **the board meeting**.",
-              "translation_ru": "Проект должен быть утверждён к заседанию совета."
+              "text": "The withdrawn consent must be recorded no later than the next working day.",
+              "translation_ru": "Отзыв согласия необходимо зафиксировать не позднее следующего рабочего дня."
             },
             {
-              "text": "Will the software be **installed** by **Monday**?",
-              "translation_ru": "Программное обеспечение будет установлено к понедельнику?"
+              "text": "These seedlings should be transplanted by early May to give the roots time to settle.",
+              "translation_ru": "Эти саженцы желательно пересадить к началу мая, чтобы корни успели прижиться."
             },
             {
-              "text": "Your application must be **submitted** by **midnight**.",
-              "translation_ru": "Ваше заявление должно быть подано до полуночи."
+              "text": "Your access card doesn't need to be returned until your last day at the office.",
+              "translation_ru": "Пропуск можно не возвращать до последнего рабочего дня в офисе."
             },
             {
-              "text": "All tasks must be **finished** by **the deadline**.",
-              "translation_ru": "Все задачи должны быть выполнены к сроку."
+              "text": "Any outstanding objections must be submitted by midnight on Sunday.",
+              "translation_ru": "Все оставшиеся возражения необходимо подать до полуночи в воскресенье."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Alle Dokumente müssen bis (Termin) + Partizip II + werden",
-          "example": "Alle Dokumente müssen bis Freitag eingereicht werden.",
-          "translation": "Таймер тикает: все документы должны быть отправлены до пятницы.",
+          "formula": "[Subjekt] muss/sollte + bis/vor/spätestens [Zeitpunkt] + [Partizip II] + werden. / Muss ... + [Partizip II] + werden? / ... muss erst ...",
+          "example": "Alle Fahrradreservierungen müssen bis zwölf Uhr am Vortag bestätigt werden.",
+          "translation": "Все бронирования велосипедов нужно подтвердить до полудня накануне поездки.",
           "examples": [
             {
-              "text": "Der Bericht muss bis **morgen** **fertiggestellt** werden.",
-              "translation_ru": "Отчёт должен быть завершён к завтрашнему дню."
+              "text": "Alle Fahrradreservierungen müssen bis zwölf Uhr am Vortag bestätigt werden.",
+              "translation_ru": "Все бронирования велосипедов нужно подтвердить до полудня накануне поездки."
             },
             {
-              "text": "Können die Akten bis **nächste Woche** **überprüft** werden?",
-              "translation_ru": "Можно ли проверить документы к следующей неделе?"
+              "text": "Das undichte Rohr muss vor dem nächsten Kälteeinbruch ausgetauscht werden.",
+              "translation_ru": "Протекающую трубу нужно заменить до следующего похолодания."
             },
             {
-              "text": "Alle Rechnungen sollten bis **Monatsende** **bezahlt** werden.",
-              "translation_ru": "Все счета должны быть оплачены к концу месяца."
+              "text": "Müssen die Einverständniserklärungen bis zum Ende der ersten Unterrichtsstunde eingesammelt werden?",
+              "translation_ru": "Нужно ли собрать формы согласия к концу первого урока?"
             },
             {
-              "text": "Das Projekt muss bis zur **Vorstandssitzung** **genehmigt** werden.",
-              "translation_ru": "Проект должен быть утверждён к заседанию совета."
+              "text": "Der Widerruf muss spätestens am nächsten Werktag dokumentiert werden.",
+              "translation_ru": "Отзыв необходимо зафиксировать не позднее следующего рабочего дня."
             },
             {
-              "text": "Wird die Software bis **Montag** **installiert**?",
-              "translation_ru": "Программное обеспечение будет установлено к понедельнику?"
+              "text": "Die Setzlinge sollten bis Anfang Mai umgepflanzt werden, damit sie gut anwurzeln können.",
+              "translation_ru": "Саженцы желательно пересадить к началу мая, чтобы они успели хорошо укорениться."
             },
             {
-              "text": "Ihre Bewerbung muss bis **Mitternacht** **eingereicht** werden.",
-              "translation_ru": "Ваше заявление должно быть подано до полуночи."
+              "text": "Der Ausweis muss erst am letzten Arbeitstag im Büro zurückgegeben werden.",
+              "translation_ru": "Пропуск нужно вернуть только в последний рабочий день в офисе."
             },
             {
-              "text": "Alle Aufgaben müssen bis zur **Frist** **abgeschlossen** werden.",
-              "translation_ru": "Все задачи должны быть выполнены к сроку."
+              "text": "Alle noch offenen Einwände müssen bis Sonntag um Mitternacht eingereicht werden.",
+              "translation_ru": "Все оставшиеся возражения необходимо подать до полуночи в воскресенье."
             }
           ]
         }
       ],
       "formulas": [
-        "All documents must be + Past Participle + by (deadline)",
-        "Alle Dokumente müssen bis (Termin) + Partizip II + werden"
+        "[Subject] must / should / need(s) to be + [past participle] + by/before [deadline]. / Should ... be ...? / ... doesn't need to be ... until [time].",
+        "[Subjekt] muss/sollte + bis/vor/spätestens [Zeitpunkt] + [Partizip II] + werden. / Muss ... + [Partizip II] + werden? / ... muss erst ..."
       ],
       "gen": {
         "status": "generated",
@@ -575,85 +575,85 @@
     {
       "id": "PAS007",
       "group_id": "PAS",
-      "title_ru": "Обязательство выполнить",
-      "metaphor_ru": "Как список дел на доске — ясно, кто и что должен сделать к определённому сроку. Никаких сомнений и вариантов, всё чётко распределено.",
+      "title_ru": "Предписание в официальной речи",
+      "metaphor_ru": "Английское be to be с причастием и немецкое sein zu с инфинитивом выражают официальное предписание без указания исполнителя. Это характерно для инструкций, правил и протоколов. В отрицании конструкция может выражать запрет. В отличие от обычного модального пассива здесь важен регистр официального распоряжения.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The tasks are to be + Past Participle + by (someone/time)",
-          "example": "The tasks are to be completed by the end of the week.",
-          "translation": "Задачи должны быть выполнены к концу недели.",
+          "formula": "[Subject] is/are/was/were (not) to be + [past participle]. / Is ... to be + [past participle]?",
+          "example": "Visitors' coats are to be left in the cloakroom rather than beside the exhibits.",
+          "translation": "Верхнюю одежду посетителей следует оставлять в гардеробе, а не рядом с экспонатами.",
           "examples": [
             {
-              "text": "**Reports** are to be **submitted** by **Monday**.",
-              "translation_ru": "Отчёты должны быть сданы к понедельнику."
+              "text": "Visitors' coats are to be left in the cloakroom rather than beside the exhibits.",
+              "translation_ru": "Верхнюю одежду посетителей следует оставлять в гардеробе, а не рядом с экспонатами."
             },
             {
-              "text": "The **presentation** is to be **prepared** by **the team**.",
-              "translation_ru": "Презентацию должна подготовить команда."
+              "text": "The emergency exit is not to be blocked under any circumstances.",
+              "translation_ru": "Запасной выход запрещено загораживать при любых обстоятельствах."
             },
             {
-              "text": "Are the **updates** to be **finalized** by **tomorrow**?",
-              "translation_ru": "Обновления должны быть завершены к завтрашнему дню?"
+              "text": "Where are the signed originals to be kept after the hearing?",
+              "translation_ru": "Где следует хранить подписанные оригиналы после слушания?"
             },
             {
-              "text": "The **documents** are not to be **shared** with **anyone**.",
-              "translation_ru": "Документы не должны быть переданы никому."
+              "text": "Under the original agreement, the rent was to be reviewed only once a year.",
+              "translation_ru": "По первоначальному соглашению арендную плату следовало пересматривать лишь раз в год."
             },
             {
-              "text": "Is the **software** to be **installed** by **the IT department**?",
-              "translation_ru": "Программное обеспечение должно быть установлено ИТ-отделом?"
+              "text": "Complaints are to be handled by someone who was not involved in the initial decision.",
+              "translation_ru": "Жалобы должен рассматривать человек, не участвовавший в принятии первоначального решения."
             },
             {
-              "text": "The **contract** is to be **reviewed** by **legal**.",
-              "translation_ru": "Контракт должен быть проверен юридическим отделом."
+              "text": "Is the sample to be sealed immediately after collection?",
+              "translation_ru": "Образец следует герметично упаковать сразу после отбора?"
             },
             {
-              "text": "The **system** is to be **upgraded** by **next month**.",
-              "translation_ru": "Система должна быть обновлена к следующему месяцу."
+              "text": "Each participant's written consent is to be obtained before the recording begins.",
+              "translation_ru": "До начала записи необходимо получить письменное согласие каждого участника."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Die Aufgaben sind bis + Termin + von + jemandem + zu + Partizip II",
-          "example": "Die Aufgaben sind bis Ende der Woche von den Mitarbeitern zu erledigen.",
-          "translation": "Задачи должны быть выполнены к концу недели.",
+          "formula": "[Subjekt] ist/sind/war/waren (nicht) + [zu + Infinitiv]. / Ist ... + [zu + Infinitiv]?",
+          "example": "Die Mäntel der Besucher sind in der Garderobe und nicht neben den Exponaten aufzubewahren.",
+          "translation": "Верхнюю одежду посетителей следует оставлять в гардеробе, а не рядом с экспонатами.",
           "examples": [
             {
-              "text": "Die **Berichte** sind bis **Montag** zu **übergeben**.",
-              "translation_ru": "Отчёты должны быть переданы к понедельнику."
+              "text": "Die Mäntel der Besucher sind in der Garderobe und nicht neben den Exponaten aufzubewahren.",
+              "translation_ru": "Верхнюю одежду посетителей следует оставлять в гардеробе, а не рядом с экспонатами."
             },
             {
-              "text": "Der **Plan** ist bis **morgen** zu **fertigstellen**.",
-              "translation_ru": "План должен быть завершён к завтрашнему дню."
+              "text": "Der Notausgang ist unter keinen Umständen zu versperren.",
+              "translation_ru": "Запасной выход запрещено загораживать при любых обстоятельствах."
             },
             {
-              "text": "Sind die **Änderungen** bis **Freitag** zu **implementieren**?",
-              "translation_ru": "Изменения должны быть внедрены к пятнице?"
+              "text": "Wo sind die unterschriebenen Originale nach der Anhörung aufzubewahren?",
+              "translation_ru": "Где следует хранить подписанные оригиналы после слушания?"
             },
             {
-              "text": "Die **Daten** sind nicht an **Dritte** zu **geben**.",
-              "translation_ru": "Данные не должны быть переданы третьим лицам."
+              "text": "Laut der ursprünglichen Vereinbarung war die Miete nur einmal im Jahr zu überprüfen.",
+              "translation_ru": "По первоначальному соглашению арендную плату следовало пересматривать лишь раз в год."
             },
             {
-              "text": "Ist die **Software** bis **nächste Woche** zu **installieren**?",
-              "translation_ru": "Программное обеспечение должно быть установлено к следующей неделе?"
+              "text": "Beschwerden sind von einer Person zu bearbeiten, die an der ursprünglichen Entscheidung nicht beteiligt war.",
+              "translation_ru": "Жалобы должен рассматривать человек, не участвовавший в принятии первоначального решения."
             },
             {
-              "text": "Der **Vertrag** ist von **der Rechtsabteilung** zu **prüfen**.",
-              "translation_ru": "Контракт должен быть проверен юридическим отделом."
+              "text": "Ist die Probe unmittelbar nach der Entnahme zu versiegeln?",
+              "translation_ru": "Образец следует герметично упаковать сразу после отбора?"
             },
             {
-              "text": "Das **System** ist bis **Ende des Monats** zu **aktualisieren**.",
-              "translation_ru": "Система должна быть обновлена к концу месяца."
+              "text": "Vor Beginn der Aufnahme ist die schriftliche Einwilligung aller Beteiligten einzuholen.",
+              "translation_ru": "До начала записи необходимо получить письменное согласие всех участников."
             }
           ]
         }
       ],
       "formulas": [
-        "The tasks are to be + Past Participle + by (someone/time)",
-        "Die Aufgaben sind bis + Termin + von + jemandem + zu + Partizip II"
+        "[Subject] is/are/was/were (not) to be + [past participle]. / Is ... to be + [past participle]?",
+        "[Subjekt] ist/sind/war/waren (nicht) + [zu + Infinitiv]. / Ist ... + [zu + Infinitiv]?"
       ],
       "gen": {
         "status": "generated",
