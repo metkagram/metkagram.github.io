@@ -195,85 +195,85 @@
     {
       "id": "REL003",
       "group_id": "REL",
-      "title_ru": "Причина, по которой я выбрал этот вариант",
-      "metaphor_ru": "Как указатель на карте — ты не просто показываешь точку, но и объясняешь маршрут, как туда пришёл.",
+      "title_ru": "Выделить причину с помощью придаточного",
+      "metaphor_ru": "Конструкция the reason (why) … is/was that … выделяет причину в отдельном придаточном; why можно опустить. В немецком Der Grund, warum …, ist/war, dass … требует двух придаточных с конечной позицией глагола. Это способ пояснить мотив или обстоятельство, а не просто назвать тему разговора.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The reason why + subject + verb + is...",
-          "example": "The reason why I chose this strategy is its flexibility.",
-          "translation": "Маршрут отмечен: причина, по которой я выбрал эту стратегию, это её гибкость.",
+          "formula": "The reason (why) [subject + verb] is/was that [clause].",
+          "example": "The reason why we chose the ground-floor flat was that my father could no longer climb stairs comfortably.",
+          "translation": "Мы выбрали квартиру на первом этаже, потому что отцу уже было трудно подниматься по лестнице.",
           "examples": [
             {
-              "text": "The reason why **we switched** platforms is **better security**.",
-              "translation_ru": "Причина, по которой мы сменили платформы, — это лучшая безопасность."
+              "text": "**The reason why we chose the ground-floor flat was that my father could no longer climb stairs comfortably.**",
+              "translation_ru": "Мы выбрали квартиру на первом этаже, потому что отцу уже было трудно подниматься по лестнице."
             },
             {
-              "text": "The reason why **he declined** the offer is **personal commitments**.",
-              "translation_ru": "Причина, по которой он отказался от предложения, — это личные обязательства."
+              "text": "**The reason I don't share my location is that I value my privacy.**",
+              "translation_ru": "Я не делюсь своим местоположением, потому что ценю личную жизнь."
             },
             {
-              "text": "The reason why **they succeeded** is **hard work**.",
-              "translation_ru": "Причина, по которой они добились успеха, — это упорный труд."
+              "text": "**The reason why the seedlings died was that the pots had no drainage holes.**",
+              "translation_ru": "Рассада погибла из-за того, что в горшках не было дренажных отверстий."
             },
             {
-              "text": "The reason why **you should invest** is **high returns**.",
-              "translation_ru": "Причина, по которой вам стоит инвестировать, — это высокая доходность."
+              "text": "**The reason she turned down the promotion was that it involved regular travel abroad.**",
+              "translation_ru": "Она отказалась от повышения, потому что оно предполагало регулярные зарубежные поездки."
             },
             {
-              "text": "The reason why **it failed** is **poor planning**.",
-              "translation_ru": "Причина, по которой это провалилось, — это плохое планирование."
+              "text": "**The reason why this shortcut is unreliable is that it assumes the files are always in the same folder.**",
+              "translation_ru": "Этот способ ненадёжен, поскольку предполагает, что файлы всегда находятся в одной папке."
             },
             {
-              "text": "The reason why **we're late** is **traffic**.",
-              "translation_ru": "Причина, по которой мы опоздали, — это пробки."
+              "text": "**The reason we keep a written record is that agreements are easy to misremember.**",
+              "translation_ru": "Мы фиксируем договорённости письменно, потому что их легко запомнить неправильно."
             },
             {
-              "text": "The reason why **she's upset** is **the news**.",
-              "translation_ru": "Причина, по которой она расстроена, — это новости."
+              "text": "**The reason why he struggled with the interview was that he had rehearsed answers rather than practised conversation.**",
+              "translation_ru": "Собеседование далось ему трудно, потому что он заучивал ответы вместо того, чтобы практиковаться в разговоре."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Der Grund, warum + subject + verb, ist...",
-          "example": "Der Grund, warum ich diese Strategie gewählt habe, ist ihre Flexibilität.",
-          "translation": "Маршрут отмечен: причина, по которой я выбрал эту стратегию, это её гибкость.",
+          "formula": "Der Grund, warum [Nebensatz], ist/war, dass [Nebensatz].",
+          "example": "Der Grund, warum wir in eine kleinere Wohnung gezogen sind, war, dass uns die Gartenarbeit zu viel wurde.",
+          "translation": "Мы переехали в квартиру поменьше, потому что уход за садом стал для нас слишком обременительным.",
           "examples": [
             {
-              "text": "Der Grund, warum **wir die Plattform gewechselt haben**, ist **bessere Sicherheit**.",
-              "translation_ru": "Причина, по которой мы сменили платформу, — это лучшая безопасность."
+              "text": "**Der Grund, warum wir in eine kleinere Wohnung gezogen sind, war, dass uns die Gartenarbeit zu viel wurde.**",
+              "translation_ru": "Мы переехали в квартиру поменьше, потому что уход за садом стал для нас слишком обременительным."
             },
             {
-              "text": "Der Grund, warum **er das Angebot ablehnte**, ist **persönliche Verpflichtungen**.",
-              "translation_ru": "Причина, по которой он отказался от предложения, — это личные обязательства."
+              "text": "**Der Grund, warum ich keine Fotos meiner Kinder ins Netz stelle, ist, dass ich ihre Privatsphäre schützen möchte.**",
+              "translation_ru": "Я не выкладываю фотографии детей в интернет, потому что хочу защитить их личную жизнь."
             },
             {
-              "text": "Der Grund, warum **sie erfolgreich waren**, ist **harte Arbeit**.",
-              "translation_ru": "Причина, по которой они добились успеха, — это упорный труд."
+              "text": "**Der Grund, warum die Wäsche nicht trocken wurde, war, dass die Luft im Keller zu feucht war.**",
+              "translation_ru": "Бельё не высохло, потому что воздух в подвале был слишком влажным."
             },
             {
-              "text": "Der Grund, warum **du investieren solltest**, ist **hohe Renditen**.",
-              "translation_ru": "Причина, по которой тебе стоит инвестировать, — это высокая доходность."
+              "text": "**Der Grund, warum sie den Kurs abgebrochen hat, war, dass er sich zeitlich nicht mit ihrer Ausbildung vereinbaren ließ.**",
+              "translation_ru": "Она бросила курс, потому что не могла совмещать его по времени со своим профессиональным обучением."
             },
             {
-              "text": "Der Grund, warum **es gescheitert ist**, ist **schlechte Planung**.",
-              "translation_ru": "Причина, по которой это провалилось, — это плохое планирование."
+              "text": "**Der Grund, warum die Sicherung immer wieder auslöst, ist, dass der Stromkreis überlastet ist.**",
+              "translation_ru": "Предохранитель постоянно срабатывает из-за перегрузки электрической цепи."
             },
             {
-              "text": "Der Grund, warum **wir zu spät sind**, ist **Verkehr**.",
-              "translation_ru": "Причина, по которой мы опоздали, — это пробки."
+              "text": "**Der Grund, warum wir die Absprachen schriftlich festhalten, ist, dass wir Missverständnisse vermeiden wollen.**",
+              "translation_ru": "Мы фиксируем договорённости письменно, потому что хотим избежать недоразумений."
             },
             {
-              "text": "Der Grund, warum **sie verärgert ist**, ist **die Nachrichten**.",
-              "translation_ru": "Причина, по которой она расстроена, — это новости."
+              "text": "**Der Grund, warum er bei der Prüfung so nervös war, war, dass er noch nie vor Publikum gesprochen hatte.**",
+              "translation_ru": "Он так нервничал на экзамене, потому что раньше никогда не выступал перед публикой."
             }
           ]
         }
       ],
       "formulas": [
-        "The reason why + subject + verb + is...",
-        "Der Grund, warum + subject + verb, ist..."
+        "The reason (why) [subject + verb] is/was that [clause].",
+        "Der Grund, warum [Nebensatz], ist/war, dass [Nebensatz]."
       ],
       "gen": {
         "status": "generated",
@@ -860,85 +860,85 @@
     {
       "id": "QUE004",
       "group_id": "QUE",
-      "title_ru": "Как вы думаете, кто/что/когда…?",
-      "metaphor_ru": "Как дать микрофон собеседнику прямо на сцене — ты ставишь его точку зрения в центр внимания.",
+      "title_ru": "Спросить мнение о неизвестной детали",
+      "metaphor_ru": "В английском вопросительное слово выносится перед do you think; после think нет дополнительной инверсии. В немецком естественнее начать с Was meinst du / Was meinen Sie, а затем задать обычный вопрос с глаголом на втором месте. Если вопросительное слово само является подлежащим, отдельное подлежащее не требуется.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Who/What/When do you think + subject + verb… ?",
-          "example": "Who do you think will lead the next project?",
-          "translation": "Микрофон в руки: как вы думаете, кто будет вести следующий проект?",
+          "formula": "[Wh-word] do you think [subject + verb / verb if wh-word is the subject]?",
+          "example": "What do you think caused the sudden drop in water pressure?",
+          "translation": "Как думаешь, что вызвало резкое падение напора воды?",
           "examples": [
             {
-              "text": "What do you think **she will say** about the proposal?",
-              "translation_ru": "Как вы думаете, что она скажет о предложении?"
+              "text": "**What do you think caused the sudden drop in water pressure?**",
+              "translation_ru": "Как думаешь, что вызвало резкое падение напора воды?"
             },
             {
-              "text": "When do you think **the meeting will start**?",
-              "translation_ru": "Как вы думаете, когда начнётся встреча?"
+              "text": "**When do you think the landlord will get back to us?**",
+              "translation_ru": "Как думаешь, когда хозяин квартиры нам ответит?"
             },
             {
-              "text": "Who do you think **invented** this gadget?",
-              "translation_ru": "Как вы думаете, кто изобрёл этот гаджет?"
+              "text": "**Who do you think should represent the residents at the hearing?**",
+              "translation_ru": "Как думаешь, кто должен представлять жильцов на слушаниях?"
             },
             {
-              "text": "What do you think **they are planning** for the weekend?",
-              "translation_ru": "Как вы думаете, что они планируют на выходные?"
+              "text": "**How much do you think we'll have to set aside for repairs?**",
+              "translation_ru": "Как думаешь, сколько нам придётся отложить на ремонт?"
             },
             {
-              "text": "Who do you think **can solve** this problem?",
-              "translation_ru": "Как вы думаете, кто может решить эту проблему?"
+              "text": "**Where do you think I left my glasses last night?**",
+              "translation_ru": "Как думаешь, где я вчера вечером оставил очки?"
             },
             {
-              "text": "When do you think **we should leave** for the airport?",
-              "translation_ru": "Как вы думаете, когда нам стоит выехать в аэропорт?"
+              "text": "**Which version do you think would run better on an older laptop?**",
+              "translation_ru": "Как думаешь, какая версия лучше работала бы на старом ноутбуке?"
             },
             {
-              "text": "What do you think **is causing** the delay?",
-              "translation_ru": "Как вы думаете, что вызывает задержку?"
+              "text": "**Why do you think so many pupils avoid speaking in class?**",
+              "translation_ru": "Как думаешь, почему столько учеников избегают разговоров на уроке?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wer/Was/Wann denken Sie, dass + subject + verb… ?",
-          "example": "Wer denken Sie, wird das nächste Projekt leiten?",
-          "translation": "Как вы думаете, кто будет вести следующий проект?",
+          "formula": "Was meinst du / Was meinen Sie, [W-Frage mit Verbzweitstellung]?",
+          "example": "Was meinst du, woran liegt der plötzliche Druckabfall in der Wasserleitung?",
+          "translation": "Как думаешь, из-за чего резко упал напор воды?",
           "examples": [
             {
-              "text": "Was denken Sie, **wird sie sagen** über den Vorschlag?",
-              "translation_ru": "Как вы думаете, что она скажет о предложении?"
+              "text": "**Was meinst du, woran liegt der plötzliche Druckabfall in der Wasserleitung?**",
+              "translation_ru": "Как думаешь, из-за чего резко упал напор воды?"
             },
             {
-              "text": "Wann denken Sie, **wird das Meeting beginnen**?",
-              "translation_ru": "Как вы думаете, когда начнётся встреча?"
+              "text": "**Was meinen Sie, wann wird die Behörde unseren Antrag bearbeiten?**",
+              "translation_ru": "Как вы думаете, когда ведомство рассмотрит наше заявление?"
             },
             {
-              "text": "Wer denken Sie, **hat dieses Gerät erfunden**?",
-              "translation_ru": "Как вы думаете, кто изобрёл этот гаджет?"
+              "text": "**Was meinst du, wer könnte während der Ferien auf die Katze aufpassen?**",
+              "translation_ru": "Как думаешь, кто мог бы присмотреть за кошкой во время каникул?"
             },
             {
-              "text": "Was denken Sie, **planen sie** für das Wochenende?",
-              "translation_ru": "Как вы думаете, что они планируют на выходные?"
+              "text": "**Was meinst du, wie viel Platz brauchen wir für die Bücherregale?**",
+              "translation_ru": "Как думаешь, сколько места нам понадобится для книжных стеллажей?"
             },
             {
-              "text": "Wer denken Sie, **kann dieses Problem lösen**?",
-              "translation_ru": "Как вы думаете, кто может решить эту проблему?"
+              "text": "**Was meinst du, wo habe ich den Schlüssel liegen lassen?**",
+              "translation_ru": "Как думаешь, где я оставил ключ?"
             },
             {
-              "text": "Wann denken Sie, **sollen wir zum Flughafen fahren**?",
-              "translation_ru": "Как вы думаете, когда нам стоит выехать в аэропорт?"
+              "text": "**Was meinen Sie, welches Verfahren wäre für kleinere Betriebe geeignet?**",
+              "translation_ru": "Как вы думаете, какой метод подошёл бы небольшим предприятиям?"
             },
             {
-              "text": "Was denken Sie, **verursacht** die Verzögerung?",
-              "translation_ru": "Как вы думаете, что вызывает задержку?"
+              "text": "**Was meinst du, warum traut sich Leon nicht, vor der Gruppe zu sprechen?**",
+              "translation_ru": "Как думаешь, почему Леон не решается выступать перед группой?"
             }
           ]
         }
       ],
       "formulas": [
-        "Who/What/When do you think + subject + verb… ?",
-        "Wer/Was/Wann denken Sie, dass + subject + verb… ?"
+        "[Wh-word] do you think [subject + verb / verb if wh-word is the subject]?",
+        "Was meinst du / Was meinen Sie, [W-Frage mit Verbzweitstellung]?"
       ],
       "gen": {
         "status": "generated",
@@ -1145,85 +1145,85 @@
     {
       "id": "QUE007",
       "group_id": "QUE",
-      "title_ru": "Как долго…?",
-      "metaphor_ru": "Как песочные часы — ты хочешь понять, сколько песка уже прошло или ещё пройдёт, чтобы видеть общую картину.",
+      "title_ru": "Спросить, как долго продолжается действие",
+      "metaphor_ru": "Для действия, начавшегося в прошлом и продолжающегося сейчас, в английском используйте have/has been + форму на -ing. В немецком для той же длительности обычно нужен Präsens с schon, а не Perfekt. Не путайте с вопросом о времени, необходимом для выполнения задачи.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How long + have/has + subject + been + V-ing… ?",
-          "example": "How long have you been working on this project?",
-          "translation": "Песочные часы: как долго ты работаешь над этим проектом?",
+          "formula": "How long have/has [subject] been [verb-ing + complement]?",
+          "example": "How long have you been looking for a flat within walking distance of the school?",
+          "translation": "Как давно ты ищешь квартиру в пешей доступности от школы?",
           "examples": [
             {
-              "text": "How long has **she** been **learning** Spanish?",
-              "translation_ru": "Как долго она учит испанский?"
+              "text": "**How long have you been looking for a flat within walking distance of the school?**",
+              "translation_ru": "Как давно ты ищешь квартиру в пешей доступности от школы?"
             },
             {
-              "text": "How long have **they** been **waiting** for the bus?",
-              "translation_ru": "Как долго они ждут автобус?"
+              "text": "**How long has your neighbour been renovating the kitchen?**",
+              "translation_ru": "Как давно ваш сосед ремонтирует кухню?"
             },
             {
-              "text": "How long have **we** been **using** this software?",
-              "translation_ru": "Как долго мы используем это программное обеспечение?"
+              "text": "**How long have the volunteers been delivering groceries to housebound residents?**",
+              "translation_ru": "Как давно волонтёры доставляют продукты жителям, которые не могут выходить из дома?"
             },
             {
-              "text": "How long has **he** been **running** the company?",
-              "translation_ru": "Как долго он управляет компанией?"
+              "text": "**How long has the washing machine been making that rattling noise?**",
+              "translation_ru": "Как давно стиральная машина издаёт этот дребезжащий звук?"
             },
             {
-              "text": "How long have **you** been **living** here?",
-              "translation_ru": "Как долго ты живешь здесь?"
+              "text": "**How long have you been keeping a diary in English?**",
+              "translation_ru": "Как давно ты ведёшь дневник на английском?"
             },
             {
-              "text": "How long has **the team** been **developing** the app?",
-              "translation_ru": "Как долго команда разрабатывает приложение?"
+              "text": "**How long has she been working night shifts at the hospital?**",
+              "translation_ru": "Как давно она работает в больнице в ночные смены?"
             },
             {
-              "text": "How long have **you** been **waiting** for my call?",
-              "translation_ru": "Как долго ты ждешь моего звонка?"
+              "text": "**How long have researchers been monitoring the river's water quality?**",
+              "translation_ru": "Как давно исследователи следят за качеством воды в реке?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie lange + haben/hat + subject + schon + Partizip II… ?",
-          "example": "Wie lange hast du schon an diesem Projekt gearbeitet?",
-          "translation": "Как долго ты уже работаешь над этим проектом?",
+          "formula": "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?",
+          "example": "Wie lange suchst du schon eine Wohnung in Schulnähe?",
+          "translation": "Как давно ты ищешь квартиру рядом со школой?",
           "examples": [
             {
-              "text": "Wie lange hat **sie** schon **Französisch gelernt**?",
-              "translation_ru": "Как долго она уже учит французский?"
+              "text": "**Wie lange suchst du schon eine Wohnung in Schulnähe?**",
+              "translation_ru": "Как давно ты ищешь квартиру рядом со школой?"
             },
             {
-              "text": "Wie lange haben **sie** schon auf den Bus **gewartet**?",
-              "translation_ru": "Как долго они уже ждут автобус?"
+              "text": "**Wie lange baut ihr schon das Dachgeschoss aus?**",
+              "translation_ru": "Как давно вы обустраиваете мансарду?"
             },
             {
-              "text": "Wie lange haben **wir** schon diese Software **benutzt**?",
-              "translation_ru": "Как долго мы уже используем это программное обеспечение?"
+              "text": "**Wie lange engagiert sich Mara schon in der Nachbarschaftshilfe?**",
+              "translation_ru": "Как давно Мара участвует в программе помощи соседям?"
             },
             {
-              "text": "Wie lange hat **er** schon die Firma **geleitet**?",
-              "translation_ru": "Как долго он уже управляет компанией?"
+              "text": "**Wie lange verliert die Heizung schon Wasser?**",
+              "translation_ru": "Как давно из системы отопления подтекает вода?"
             },
             {
-              "text": "Wie lange wohnst **du** schon hier?",
-              "translation_ru": "Как долго ты уже живешь здесь?"
+              "text": "**Wie lange schreibst du schon regelmäßig auf Deutsch?**",
+              "translation_ru": "Как давно ты регулярно пишешь на немецком?"
             },
             {
-              "text": "Wie lange hat **das Team** schon die App **entwickelt**?",
-              "translation_ru": "Как долго команда уже разрабатывает приложение?"
+              "text": "**Wie lange arbeitet Ihr Bruder schon im Schichtdienst?**",
+              "translation_ru": "Как давно ваш брат работает посменно?"
             },
             {
-              "text": "Wie lange hast **du** schon auf meinen Anruf **gewartet**?",
-              "translation_ru": "Как долго ты уже ждешь моего звонка?"
+              "text": "**Wie lange untersucht das Forschungsteam schon die Auswirkungen der Dürre?**",
+              "translation_ru": "Как давно исследовательская группа изучает последствия засухи?"
             }
           ]
         }
       ],
       "formulas": [
-        "How long + have/has + subject + been + V-ing… ?",
-        "Wie lange + haben/hat + subject + schon + Partizip II… ?"
+        "How long have/has [subject] been [verb-ing + complement]?",
+        "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?"
       ],
       "gen": {
         "status": "generated",
@@ -1240,85 +1240,85 @@
     {
       "id": "QUE008",
       "group_id": "QUE",
-      "title_ru": "Почему так...?",
-      "metaphor_ru": "Как поднять брови, когда что-то не сходится — ты не просто спрашиваешь «почему», ты хочешь, чтобы тебе объяснили суть без лишних деталей.",
+      "title_ru": "Спросить о неожиданной причине",
+      "metaphor_ru": "Разговорное how come выражает удивление или недоумение; после него используется прямой порядок слов, без вспомогательного do. В немецком Wie kommt es, dass требует глагола в конце придаточного. Интонация может превратить вопрос в упрёк, поэтому учитывайте ситуацию.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How come + subject + verb… ?",
-          "example": "How come you didn’t join the meeting yesterday?",
-          "translation": "Поднял брови: почему ты не присоединился к встрече вчера?",
+          "formula": "How come [subject + verb + complement]?",
+          "example": "How come the rent went up when nothing in the building has been repaired?",
+          "translation": "Как так вышло, что аренда подорожала, хотя в доме ничего не отремонтировали?",
           "examples": [
             {
-              "text": "How come **the report** isn't **finished** yet?",
-              "translation_ru": "Почему отчет еще не готов?"
+              "text": "**How come the rent went up when nothing in the building has been repaired?**",
+              "translation_ru": "Как так вышло, что аренда подорожала, хотя в доме ничего не отремонтировали?"
             },
             {
-              "text": "How come **she** always **gets** the best projects?",
-              "translation_ru": "Почему она всегда получает лучшие проекты?"
+              "text": "**How come you can read German novels but find phone calls so difficult?**",
+              "translation_ru": "Почему ты читаешь немецкие романы, а телефонные разговоры даются тебе так трудно?"
             },
             {
-              "text": "How come **we** never **hear** about these changes?",
-              "translation_ru": "Почему мы никогда не слышим об этих изменениях?"
+              "text": "**How come nobody noticed that the emergency exit was locked?**",
+              "translation_ru": "Как получилось, что никто не заметил запертого аварийного выхода?"
             },
             {
-              "text": "How come **they** **decided** to cancel the event?",
-              "translation_ru": "Почему они решили отменить мероприятие?"
+              "text": "**How come the seedlings are growing faster on the shady side of the balcony?**",
+              "translation_ru": "Почему рассада быстрее растёт на затенённой стороне балкона?"
             },
             {
-              "text": "How come **your computer** **crashes** so often?",
-              "translation_ru": "Почему твой компьютер так часто ломается?"
+              "text": "**How come we weren't invited to the discussion about changes to our timetable?**",
+              "translation_ru": "Почему нас не пригласили обсудить изменения в нашем расписании?"
             },
             {
-              "text": "How come **the package** hasn't **arrived**?",
-              "translation_ru": "Почему посылка еще не пришла?"
+              "text": "**How come your old headphones still sound better than the new pair?**",
+              "translation_ru": "Почему твои старые наушники до сих пор звучат лучше новых?"
             },
             {
-              "text": "How come **we** **missed** the deadline?",
-              "translation_ru": "Почему мы пропустили дедлайн?"
+              "text": "**How come the library doesn't lend out board games anymore?**",
+              "translation_ru": "Почему библиотека больше не выдаёт настольные игры на дом?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie kommt es, dass + subject + verb… ?",
-          "example": "Wie kommt es, dass du gestern nicht am Meeting teilgenommen hast?",
-          "translation": "Почему так вышло, что ты вчера не участвовал во встрече?",
+          "formula": "Wie kommt es, dass [Nebensatz mit Verb am Ende]?",
+          "example": "Wie kommt es, dass die Nebenkosten gestiegen sind, obwohl wir weniger heizen?",
+          "translation": "Почему коммунальные расходы выросли, хотя мы меньше отапливаем квартиру?",
           "examples": [
             {
-              "text": "Wie kommt es, dass **der Bericht** noch nicht **fertig ist**?",
-              "translation_ru": "Почему отчет еще не готов?"
+              "text": "**Wie kommt es, dass die Nebenkosten gestiegen sind, obwohl wir weniger heizen?**",
+              "translation_ru": "Почему коммунальные расходы выросли, хотя мы меньше отапливаем квартиру?"
             },
             {
-              "text": "Wie kommt es, dass **sie** immer die besten Projekte **bekommt**?",
-              "translation_ru": "Почему она всегда получает лучшие проекты?"
+              "text": "**Wie kommt es, dass du beim Lesen kaum Probleme hast, aber beim Sprechen stockst?**",
+              "translation_ru": "Почему при чтении у тебя почти нет проблем, а в разговоре ты запинаешься?"
             },
             {
-              "text": "Wie kommt es, dass **wir** nie von diesen Änderungen **hören**?",
-              "translation_ru": "Почему мы никогда не слышим об этих изменениях?"
+              "text": "**Wie kommt es, dass niemand den Termin abgesagt hat?**",
+              "translation_ru": "Как так вышло, что никто не отменил встречу?"
             },
             {
-              "text": "Wie kommt es, dass **sie** sich entschieden haben, die Veranstaltung **abzusagen**?",
-              "translation_ru": "Почему они решили отменить мероприятие?"
+              "text": "**Wie kommt es, dass die Kräuter im Schatten besser gedeihen?**",
+              "translation_ru": "Почему пряные травы лучше растут в тени?"
             },
             {
-              "text": "Wie kommt es, dass **dein Computer** so oft **abstürzt**?",
-              "translation_ru": "Почему твой компьютер так часто ломается?"
+              "text": "**Wie kommt es, dass wir erst heute von der Sperrung erfahren?**",
+              "translation_ru": "Почему мы только сегодня узнаём о перекрытии?"
             },
             {
-              "text": "Wie kommt es, dass **das Paket** noch nicht **angekommen ist**?",
-              "translation_ru": "Почему посылка еще не пришла?"
+              "text": "**Wie kommt es, dass dein Akku trotz intensiver Nutzung so lange hält?**",
+              "translation_ru": "Почему твой аккумулятор так долго держит заряд, несмотря на активное использование?"
             },
             {
-              "text": "Wie kommt es, dass **wir** die Frist **verpasst haben**?",
-              "translation_ru": "Почему мы пропустили дедлайн?"
+              "text": "**Wie kommt es, dass die Bücherei samstags nicht mehr geöffnet ist?**",
+              "translation_ru": "Почему библиотека больше не работает по субботам?"
             }
           ]
         }
       ],
       "formulas": [
-        "How come + subject + verb… ?",
-        "Wie kommt es, dass + subject + verb… ?"
+        "How come [subject + verb + complement]?",
+        "Wie kommt es, dass [Nebensatz mit Verb am Ende]?"
       ],
       "gen": {
         "status": "generated",
@@ -1525,85 +1525,85 @@
     {
       "id": "QUE011",
       "group_id": "QUE",
-      "title_ru": "Сколько времени занимает…?",
-      "metaphor_ru": "Как включить секундомер перед стартом — ты хочешь заранее знать, сколько времени уйдёт на дистанцию, чтобы лучше планировать силы.",
+      "title_ru": "Спросить, сколько времени требуется на действие",
+      "metaphor_ru": "How long does/did/will it take to … спрашивает о времени, необходимом для завершения действия. Немецкое Wie lange dauert(e) es / wird es dauern, … zu … строится с инфинитивом; у отделяемых глаголов zu помещается между приставкой и основой. В отличие от вопроса о продолжающемся действии, здесь важна длительность до результата.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How long does it take to + verb?",
-          "example": "How long does it take to prepare the monthly report?",
-          "translation": "Сколько времени занимает подготовка ежемесячного отчёта?",
+          "formula": "How long does/did/will it take to [verb + complement]?",
+          "example": "How long does it take to get a replacement passport if yours has expired?",
+          "translation": "Сколько времени требуется, чтобы получить новый паспорт взамен просроченного?",
           "examples": [
             {
-              "text": "How long does it take to **bake** a cake?",
-              "translation_ru": "Сколько времени занимает испечь торт?"
+              "text": "**How long does it take to get a replacement passport if yours has expired?**",
+              "translation_ru": "Сколько времени требуется, чтобы получить новый паспорт взамен просроченного?"
             },
             {
-              "text": "How long will it take to **finish** the project?",
-              "translation_ru": "Сколько времени уйдёт на завершение проекта?"
+              "text": "**How long did it take to restore all the files from the backup?**",
+              "translation_ru": "Сколько времени заняло восстановление всех файлов из резервной копии?"
             },
             {
-              "text": "How long does it take to **charge** the battery?",
-              "translation_ru": "Сколько времени занимает зарядка батареи?"
+              "text": "**How long will it take to repaint the hallway without closing the main entrance?**",
+              "translation_ru": "Сколько времени займёт перекраска коридора без закрытия главного входа?"
             },
             {
-              "text": "How long will it take to **learn** German?",
-              "translation_ru": "Сколько времени потребуется, чтобы выучить немецкий?"
+              "text": "**How long does it take to become comfortable holding a conversation in German?**",
+              "translation_ru": "Сколько времени нужно, чтобы научиться уверенно поддерживать разговор на немецком?"
             },
             {
-              "text": "How long does it take to **get** to the airport?",
-              "translation_ru": "Сколько времени занимает добраться до аэропорта?"
+              "text": "**How long did it take to settle the dispute with your former landlord?**",
+              "translation_ru": "Сколько времени заняло урегулирование спора с прежним арендодателем?"
             },
             {
-              "text": "How long will it take to **write** the report?",
-              "translation_ru": "Сколько времени займёт написание отчёта?"
+              "text": "**How long will it take to walk from the station to the campsite with heavy backpacks?**",
+              "translation_ru": "Сколько времени займёт пеший путь от станции до кемпинга с тяжёлыми рюкзаками?"
             },
             {
-              "text": "How long does it take to **set up** the equipment?",
-              "translation_ru": "Сколько времени занимает настройка оборудования?"
+              "text": "**How long does it take to train a new volunteer to handle emergency calls?**",
+              "translation_ru": "Сколько времени нужно, чтобы обучить нового волонтёра принимать экстренные вызовы?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie lange dauert es, + zu + Infinitiv?",
-          "example": "Wie lange dauert es, den Monatsbericht vorzubereiten?",
-          "translation": "Сколько времени занимает подготовка ежемесячного отчёта?",
+          "formula": "Wie lange dauert(e) es / wird es dauern, [Infinitivgruppe mit zu]?",
+          "example": "Wie lange dauert es, einen neuen Reisepass zu beantragen und zu erhalten?",
+          "translation": "Сколько времени нужно, чтобы подать заявление на новый загранпаспорт и получить его?",
           "examples": [
             {
-              "text": "Wie lange dauert es, **einen Kuchen zu backen**?",
-              "translation_ru": "Сколько времени занимает испечь торт?"
+              "text": "**Wie lange dauert es, einen neuen Reisepass zu beantragen und zu erhalten?**",
+              "translation_ru": "Сколько времени нужно, чтобы подать заявление на новый загранпаспорт и получить его?"
             },
             {
-              "text": "Wie lange wird es dauern, **das Projekt abzuschließen**?",
-              "translation_ru": "Сколько времени уйдёт на завершение проекта?"
+              "text": "**Wie lange hat es gedauert, die Daten vom alten Handy zu übertragen?**",
+              "translation_ru": "Сколько времени занял перенос данных со старого телефона?"
             },
             {
-              "text": "Wie lange dauert es, **die Batterie aufzuladen**?",
-              "translation_ru": "Сколько времени занимает зарядка батареи?"
+              "text": "**Wie lange wird es dauern, die beschädigten Fliesen auszutauschen?**",
+              "translation_ru": "Сколько времени займёт замена повреждённой плитки?"
             },
             {
-              "text": "Wie lange wird es dauern, **Deutsch zu lernen**?",
-              "translation_ru": "Сколько времени потребуется, чтобы выучить немецкий?"
+              "text": "**Wie lange dauert es, sich an die Aussprache einer fremden Sprache zu gewöhnen?**",
+              "translation_ru": "Сколько времени нужно, чтобы привыкнуть к произношению иностранного языка?"
             },
             {
-              "text": "Wie lange dauert es, **zum Flughafen zu kommen**?",
-              "translation_ru": "Сколько времени занимает добраться до аэропорта?"
+              "text": "**Wie lange hat es gedauert, sich mit den Nachbarn auf einen Kompromiss zu einigen?**",
+              "translation_ru": "Сколько времени заняло согласование компромисса с соседями?"
             },
             {
-              "text": "Wie lange wird es dauern, **den Bericht zu schreiben**?",
-              "translation_ru": "Сколько времени займёт написание отчёта?"
+              "text": "**Wie lange wird es dauern, mit den Kindern den Aussichtspunkt zu erreichen?**",
+              "translation_ru": "Сколько времени займёт путь с детьми до смотровой площадки?"
             },
             {
-              "text": "Wie lange dauert es, **die Ausrüstung einzurichten**?",
-              "translation_ru": "Сколько времени занимает настройка оборудования?"
+              "text": "**Wie lange dauert es, neue Ehrenamtliche in ihre Aufgaben einzuarbeiten?**",
+              "translation_ru": "Сколько времени требуется, чтобы ввести новых волонтёров в курс их обязанностей?"
             }
           ]
         }
       ],
       "formulas": [
-        "How long does it take to + verb?",
-        "Wie lange dauert es, + zu + Infinitiv?"
+        "How long does/did/will it take to [verb + complement]?",
+        "Wie lange dauert(e) es / wird es dauern, [Infinitivgruppe mit zu]?"
       ],
       "gen": {
         "status": "generated",
