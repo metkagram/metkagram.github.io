@@ -1145,85 +1145,85 @@
     {
       "id": "QUE007",
       "group_id": "QUE",
-      "title_ru": "Спросить, как долго продолжается действие",
-      "metaphor_ru": "Для действия, начавшегося в прошлом и продолжающегося сейчас, в английском используйте have/has been + форму на -ing. В немецком для той же длительности обычно нужен Präsens с schon, а не Perfekt. Не путайте с вопросом о времени, необходимом для выполнения задачи.",
+      "title_ru": "Как долго…?",
+      "metaphor_ru": "Как песочные часы — ты хочешь понять, сколько песка уже прошло или ещё пройдёт, чтобы видеть общую картину.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How long have/has [subject] been [verb-ing + complement]?",
-          "example": "How long have you been looking for a flat within walking distance of the school?",
-          "translation": "Как давно ты ищешь квартиру в пешей доступности от школы?",
+          "formula": "How long + have/has + subject + been + V-ing… ?",
+          "example": "How long have you been working on this project?",
+          "translation": "Песочные часы: как долго ты работаешь над этим проектом?",
           "examples": [
             {
-              "text": "**How long have you been looking for a flat within walking distance of the school?**",
-              "translation_ru": "Как давно ты ищешь квартиру в пешей доступности от школы?"
+              "text": "How long has **she** been **learning** Spanish?",
+              "translation_ru": "Как долго она учит испанский?"
             },
             {
-              "text": "**How long has your neighbour been renovating the kitchen?**",
-              "translation_ru": "Как давно ваш сосед ремонтирует кухню?"
+              "text": "How long have **they** been **waiting** for the bus?",
+              "translation_ru": "Как долго они ждут автобус?"
             },
             {
-              "text": "**How long have the volunteers been delivering groceries to housebound residents?**",
-              "translation_ru": "Как давно волонтёры доставляют продукты жителям, которые не могут выходить из дома?"
+              "text": "How long have **we** been **using** this software?",
+              "translation_ru": "Как долго мы используем это программное обеспечение?"
             },
             {
-              "text": "**How long has the washing machine been making that rattling noise?**",
-              "translation_ru": "Как давно стиральная машина издаёт этот дребезжащий звук?"
+              "text": "How long has **he** been **running** the company?",
+              "translation_ru": "Как долго он управляет компанией?"
             },
             {
-              "text": "**How long have you been keeping a diary in English?**",
-              "translation_ru": "Как давно ты ведёшь дневник на английском?"
+              "text": "How long have **you** been **living** here?",
+              "translation_ru": "Как долго ты живешь здесь?"
             },
             {
-              "text": "**How long has she been working night shifts at the hospital?**",
-              "translation_ru": "Как давно она работает в больнице в ночные смены?"
+              "text": "How long has **the team** been **developing** the app?",
+              "translation_ru": "Как долго команда разрабатывает приложение?"
             },
             {
-              "text": "**How long have researchers been monitoring the river's water quality?**",
-              "translation_ru": "Как давно исследователи следят за качеством воды в реке?"
+              "text": "How long have **you** been **waiting** for my call?",
+              "translation_ru": "Как долго ты ждешь моего звонка?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?",
-          "example": "Wie lange suchst du schon eine Wohnung in Schulnähe?",
-          "translation": "Как давно ты ищешь квартиру рядом со школой?",
+          "formula": "Wie lange + haben/hat + subject + schon + Partizip II… ?",
+          "example": "Wie lange hast du schon an diesem Projekt gearbeitet?",
+          "translation": "Как долго ты уже работаешь над этим проектом?",
           "examples": [
             {
-              "text": "**Wie lange suchst du schon eine Wohnung in Schulnähe?**",
-              "translation_ru": "Как давно ты ищешь квартиру рядом со школой?"
+              "text": "Wie lange hat **sie** schon **Französisch gelernt**?",
+              "translation_ru": "Как долго она уже учит французский?"
             },
             {
-              "text": "**Wie lange baut ihr schon das Dachgeschoss aus?**",
-              "translation_ru": "Как давно вы обустраиваете мансарду?"
+              "text": "Wie lange haben **sie** schon auf den Bus **gewartet**?",
+              "translation_ru": "Как долго они уже ждут автобус?"
             },
             {
-              "text": "**Wie lange engagiert sich Mara schon in der Nachbarschaftshilfe?**",
-              "translation_ru": "Как давно Мара участвует в программе помощи соседям?"
+              "text": "Wie lange haben **wir** schon diese Software **benutzt**?",
+              "translation_ru": "Как долго мы уже используем это программное обеспечение?"
             },
             {
-              "text": "**Wie lange verliert die Heizung schon Wasser?**",
-              "translation_ru": "Как давно из системы отопления подтекает вода?"
+              "text": "Wie lange hat **er** schon die Firma **geleitet**?",
+              "translation_ru": "Как долго он уже управляет компанией?"
             },
             {
-              "text": "**Wie lange schreibst du schon regelmäßig auf Deutsch?**",
-              "translation_ru": "Как давно ты регулярно пишешь на немецком?"
+              "text": "Wie lange wohnst **du** schon hier?",
+              "translation_ru": "Как долго ты уже живешь здесь?"
             },
             {
-              "text": "**Wie lange arbeitet Ihr Bruder schon im Schichtdienst?**",
-              "translation_ru": "Как давно ваш брат работает посменно?"
+              "text": "Wie lange hat **das Team** schon die App **entwickelt**?",
+              "translation_ru": "Как долго команда уже разрабатывает приложение?"
             },
             {
-              "text": "**Wie lange untersucht das Forschungsteam schon die Auswirkungen der Dürre?**",
-              "translation_ru": "Как давно исследовательская группа изучает последствия засухи?"
+              "text": "Wie lange hast **du** schon auf meinen Anruf **gewartet**?",
+              "translation_ru": "Как долго ты уже ждешь моего звонка?"
             }
           ]
         }
       ],
       "formulas": [
-        "How long have/has [subject] been [verb-ing + complement]?",
-        "Wie lange [Verb im Präsens] [Subjekt] schon [Ergänzung]?"
+        "How long + have/has + subject + been + V-ing… ?",
+        "Wie lange + haben/hat + subject + schon + Partizip II… ?"
       ],
       "gen": {
         "status": "generated",
@@ -1430,85 +1430,85 @@
     {
       "id": "QUE010",
       "group_id": "QUE",
-      "title_ru": "Кто отвечает за…?",
-      "metaphor_ru": "Как метко поставить флажок на карте — ты чётко отмечаешь, кто держит контроль за определённой зоной.",
+      "title_ru": "Уточнить, кто за что отвечает",
+      "metaphor_ru": "Используйте responsible for + существительное или форму на -ing для зоны ответственности; в немецком für требует Akkusativ, а verantwortlich остаётся неизменным после sein. Можно спросить, кто отвечает за задачу, или проверить, входит ли она в обязанности конкретного человека.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Who is responsible for + noun/gerund?",
-          "example": "Who is responsible for updating the client list?",
-          "translation": "Кто отвечает за обновление клиентского списка?",
+          "formula": "Who is/was responsible for [noun / verb-ing]? / Is/Are [subject] responsible for [X]? / Who will be responsible for [X]?",
+          "example": "Who is responsible for checking the smoke alarms in rented flats?",
+          "translation": "Кто отвечает за проверку дымовых извещателей в арендованных квартирах?",
           "examples": [
             {
-              "text": "Who is responsible for **maintaining** the website?",
-              "translation_ru": "Кто отвечает за поддержку сайта?"
+              "text": "**Who is responsible for checking the smoke alarms in rented flats?**",
+              "translation_ru": "Кто отвечает за проверку дымовых извещателей в арендованных квартирах?"
             },
             {
-              "text": "Is she responsible for **leading** the project?",
-              "translation_ru": "Она отвечает за руководство проектом?"
+              "text": "**Are we responsible for replacing the damaged paving stones outside our house?**",
+              "translation_ru": "Мы отвечаем за замену повреждённой тротуарной плитки возле нашего дома?"
             },
             {
-              "text": "Who was responsible for **fixing** the bug?",
-              "translation_ru": "Кто отвечал за исправление ошибки?"
+              "text": "**Who was responsible for keeping the minutes at yesterday's meeting?**",
+              "translation_ru": "Кто отвечал за ведение протокола вчерашнего собрания?"
             },
             {
-              "text": "Who will be responsible for **hosting** the event?",
-              "translation_ru": "Кто будет отвечать за проведение мероприятия?"
+              "text": "**Is the school responsible for arranging transport for pupils with disabilities?**",
+              "translation_ru": "Школа отвечает за организацию транспорта для учащихся с инвалидностью?"
             },
             {
-              "text": "Are we responsible for **managing** the finances?",
-              "translation_ru": "Мы отвечаем за управление финансами?"
+              "text": "**Who will be responsible for granting access to the shared drive?**",
+              "translation_ru": "Кто будет отвечать за предоставление доступа к общему диску?"
             },
             {
-              "text": "Who is responsible for **customer service**?",
-              "translation_ru": "Кто отвечает за обслуживание клиентов?"
+              "text": "**Are the tenants responsible for routine maintenance of the heating system?**",
+              "translation_ru": "Арендаторы отвечают за регулярное обслуживание системы отопления?"
             },
             {
-              "text": "Who takes responsibility for **data security**?",
-              "translation_ru": "Кто берет на себя ответственность за безопасность данных?"
+              "text": "**Who is responsible for making sure the ingredients are clearly labelled?**",
+              "translation_ru": "Кто отвечает за то, чтобы состав продуктов был чётко указан?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wer ist für + Akk + verantwortlich?",
-          "example": "Wer ist für die Aktualisierung der Kundenliste verantwortlich?",
-          "translation": "Кто отвечает за обновление списка клиентов?",
+          "formula": "Wer ist/war für [Akkusativ] verantwortlich? / Ist/Sind [Subjekt] für [X] verantwortlich? / Wer wird für [X] verantwortlich sein?",
+          "example": "Wer ist für die regelmäßige Prüfung der Rauchmelder verantwortlich?",
+          "translation": "Кто отвечает за регулярную проверку дымовых извещателей?",
           "examples": [
             {
-              "text": "Wer ist für die **Wartung** der Website verantwortlich?",
-              "translation_ru": "Кто отвечает за поддержку сайта?"
+              "text": "**Wer ist für die regelmäßige Prüfung der Rauchmelder verantwortlich?**",
+              "translation_ru": "Кто отвечает за регулярную проверку дымовых извещателей?"
             },
             {
-              "text": "Ist sie für die **Leitung** des Projekts verantwortlich?",
-              "translation_ru": "Она отвечает за руководство проектом?"
+              "text": "**Sind wir für die Instandhaltung des Gehwegs vor dem Haus verantwortlich?**",
+              "translation_ru": "Мы отвечаем за содержание тротуара перед домом?"
             },
             {
-              "text": "Wer war für die **Behebung** des Fehlers verantwortlich?",
-              "translation_ru": "Кто отвечал за исправление ошибки?"
+              "text": "**Wer war für das Protokoll der letzten Sitzung verantwortlich?**",
+              "translation_ru": "Кто отвечал за протокол прошлого заседания?"
             },
             {
-              "text": "Wer wird für die **Veranstaltung** verantwortlich sein?",
-              "translation_ru": "Кто будет отвечать за проведение мероприятия?"
+              "text": "**Ist die Schule für die Betreuung der Kinder in den Ferien verantwortlich?**",
+              "translation_ru": "Школа отвечает за присмотр за детьми на каникулах?"
             },
             {
-              "text": "Sind wir für das **Finanzmanagement** verantwortlich?",
-              "translation_ru": "Мы отвечаем за управление финансами?"
+              "text": "**Wer wird für die Vergabe der Zugriffsrechte verantwortlich sein?**",
+              "translation_ru": "Кто будет отвечать за предоставление прав доступа?"
             },
             {
-              "text": "Wer ist für den **Kundendienst** verantwortlich?",
-              "translation_ru": "Кто отвечает за обслуживание клиентов?"
+              "text": "**Sind die Mieter für kleinere Reparaturen in der Wohnung verantwortlich?**",
+              "translation_ru": "Арендаторы отвечают за мелкий ремонт в квартире?"
             },
             {
-              "text": "Wer übernimmt die Verantwortung für die **Datensicherheit**?",
-              "translation_ru": "Кто берет на себя ответственность за безопасность данных?"
+              "text": "**Wer ist für die Kennzeichnung der Allergene auf der Speisekarte verantwortlich?**",
+              "translation_ru": "Кто отвечает за указание аллергенов в меню?"
             }
           ]
         }
       ],
       "formulas": [
-        "Who is responsible for + noun/gerund?",
-        "Wer ist für + Akk + verantwortlich?"
+        "Who is/was responsible for [noun / verb-ing]? / Is/Are [subject] responsible for [X]? / Who will be responsible for [X]?",
+        "Wer ist/war für [Akkusativ] verantwortlich? / Ist/Sind [Subjekt] für [X] verantwortlich? / Wer wird für [X] verantwortlich sein?"
       ],
       "gen": {
         "status": "generated",
