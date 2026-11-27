@@ -6,85 +6,85 @@
       "id": "QSTQTM001",
       "group_id": "QTM",
       "set_id": "QTM",
-      "title_ru": "Когда мы узнаем, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Когда мы узнаем, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Когда станет известно, так ли это",
+      "metaphor_ru": "Спросите, когда появится достоверный ответ на вопрос с двумя возможными исходами. В английском после whether сохраняется прямой порядок слов; в немецком после ob спрягаемый глагол стоит в конце. Вопрос о сроке получения информации, а не о сроке принятия решения.",
       "langs": [
         {
           "lang": "en",
-          "formula": "When will we know whether [the team needs another day to decide]?",
-          "example": "When will we know whether the team needs another day to decide?",
-          "translation": "Когда мы узнаем, команде нужен ещё день для решения?",
+          "formula": "When will [subject] know whether [subject + verb]?",
+          "example": "When will we know whether the swimming pool will reopen this winter?",
+          "translation": "Когда мы узнаем, откроется ли бассейн этой зимой?",
           "examples": [
             {
-              "text": "**When will we know whether the team needs another day to decide?**",
-              "translation_ru": "Когда мы узнаем, команде нужен ещё день для решения?"
+              "text": "**When will we know whether the swimming pool will reopen this winter?**",
+              "translation_ru": "Когда мы узнаем, откроется ли бассейн этой зимой?"
             },
             {
-              "text": "**When will we know whether the revised plan has not been shared yet?**",
-              "translation_ru": "Когда мы узнаем, обновлённым планом ещё не поделились?"
+              "text": "**When will you know whether your application has been approved?**",
+              "translation_ru": "Когда ты узнаешь, одобрили ли твою заявку?"
             },
             {
-              "text": "**When will we know whether we should compare the two options?**",
-              "translation_ru": "Когда мы узнаем, нам следует сравнить два варианта?"
+              "text": "**When will the farmers know whether the frost has damaged the seedlings?**",
+              "translation_ru": "Когда фермеры узнают, повредили ли заморозки рассаду?"
             },
             {
-              "text": "**When will we know whether the client asked for more detail?**",
-              "translation_ru": "Когда мы узнаем, клиент попросил больше деталей?"
+              "text": "**When will I know whether my luggage has been located?**",
+              "translation_ru": "Когда я узнаю, нашли ли мой багаж?"
             },
             {
-              "text": "**When will we know whether the pilot may continue next month?**",
-              "translation_ru": "Когда мы узнаем, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**When will the tenants know whether they need to vacate the building?**",
+              "translation_ru": "Когда жильцы узнают, нужно ли им освободить здание?"
             },
             {
-              "text": "**When will we know whether the data need another check?**",
-              "translation_ru": "Когда мы узнаем, данные нужно проверить ещё раз?"
+              "text": "**When will she know whether the course counts towards her degree?**",
+              "translation_ru": "Когда она узнает, зачтут ли ей этот курс в рамках учебной программы?"
             },
             {
-              "text": "**When will we know whether the meeting was moved?**",
-              "translation_ru": "Когда мы узнаем, встречу перенесли?"
+              "text": "**When will the developers know whether the patch actually fixes the memory leak?**",
+              "translation_ru": "Когда разработчики узнают, действительно ли исправление устраняет утечку памяти?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wann werden wir wissen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wann werden wir wissen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Когда мы узнаем, команде нужен ещё день для решения?",
+          "formula": "Wann weiß/wissen [Subjekt], ob [Nebensatz]? / Wann wird/werden [Subjekt] wissen, ob [Nebensatz]?",
+          "example": "Wann wissen wir, ob das Freibad diesen Sommer wieder öffnet?",
+          "translation": "Когда мы узнаем, откроется ли снова открытый бассейн этим летом?",
           "examples": [
             {
-              "text": "**Wann werden wir wissen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Когда мы узнаем, команде нужен ещё день для решения?"
+              "text": "**Wann wissen wir, ob das Freibad diesen Sommer wieder öffnet?**",
+              "translation_ru": "Когда мы узнаем, откроется ли снова открытый бассейн этим летом?"
             },
             {
-              "text": "**Wann werden wir wissen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Когда мы узнаем, обновлённым планом ещё не поделились?"
+              "text": "**Wann weißt du, ob du den Zuschuss bekommst?**",
+              "translation_ru": "Когда ты узнаешь, получишь ли субсидию?"
             },
             {
-              "text": "**Wann werden wir wissen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Когда мы узнаем, нам следует сравнить два варианта?"
+              "text": "**Wann wissen die Winzer, ob der Hagel die Ernte vernichtet hat?**",
+              "translation_ru": "Когда виноделы узнают, уничтожил ли град урожай?"
             },
             {
-              "text": "**Wann werden wir wissen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Когда мы узнаем, клиент попросил больше деталей?"
+              "text": "**Wann werde ich wissen, ob mein Gepäck gefunden wurde?**",
+              "translation_ru": "Когда я узнаю, нашли ли мой багаж?"
             },
             {
-              "text": "**Wann werden wir wissen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Когда мы узнаем, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wann wissen die Bewohner, ob sie vorübergehend ausziehen müssen?**",
+              "translation_ru": "Когда жильцы узнают, нужно ли им временно съехать?"
             },
             {
-              "text": "**Wann werden wir wissen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Когда мы узнаем, данные нужно проверить ещё раз?"
+              "text": "**Wann weiß sie, ob ihr Auslandssemester anerkannt wird?**",
+              "translation_ru": "Когда она узнает, зачтут ли ей семестр обучения за границей?"
             },
             {
-              "text": "**Wann werden wir wissen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Когда мы узнаем, встречу перенесли?"
+              "text": "**Wann werden die Techniker wissen, ob sich die Störung dauerhaft beheben lässt?**",
+              "translation_ru": "Когда технические специалисты узнают, можно ли устранить неисправность окончательно?"
             }
           ]
         }
       ],
       "formulas": [
-        "When will we know whether [the team needs another day to decide]?",
-        "Wann werden wir wissen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "When will [subject] know whether [subject + verb]?",
+        "Wann weiß/wissen [Subjekt], ob [Nebensatz]? / Wann wird/werden [Subjekt] wissen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "QSTQTM031",
       "group_id": "QTM",
       "set_id": "QTM",
-      "title_ru": "До какого срока нам нужно решить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «До какого срока нам нужно решить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "К какому сроку нужно принять решение",
+      "metaphor_ru": "Уточните последний допустимый срок выбора. By when соответствует bis wann, а не how long: речь о конечной дате или моменте. После whether или if в косвенном вопросе английский сохраняет прямой порядок слов; после ob немецкий ставит спрягаемый глагол в конец.",
       "langs": [
         {
           "lang": "en",
-          "formula": "By when must we decide if [the team needs another day to decide]?",
-          "example": "By when must we decide if the team needs another day to decide?",
-          "translation": "До какого срока нам нужно решить, команде нужен ещё день для решения?",
+          "formula": "By when must [subject] decide whether [clause / to-infinitive]? / By when do/does [subject] have/need to decide whether [clause / to-infinitive]?",
+          "example": "By when do we need to decide whether to renew the lease?",
+          "translation": "К какому сроку нам нужно решить, продлевать ли договор аренды?",
           "examples": [
             {
-              "text": "**By when must we decide if the team needs another day to decide?**",
-              "translation_ru": "До какого срока нам нужно решить, команде нужен ещё день для решения?"
+              "text": "**By when do we need to decide whether to renew the lease?**",
+              "translation_ru": "К какому сроку нам нужно решить, продлевать ли договор аренды?"
             },
             {
-              "text": "**By when must we decide if the revised plan has not been shared yet?**",
-              "translation_ru": "До какого срока нам нужно решить, обновлённым планом ещё не поделились?"
+              "text": "**By when must the council decide whether it will pedestrianise the square?**",
+              "translation_ru": "К какому сроку муниципальный совет должен решить, станет ли площадь пешеходной?"
             },
             {
-              "text": "**By when must we decide if we should compare the two options?**",
-              "translation_ru": "До какого срока нам нужно решить, нам следует сравнить два варианта?"
+              "text": "**By when does she have to decide whether to accept the scholarship?**",
+              "translation_ru": "К какому сроку ей нужно решить, принимать ли стипендию?"
             },
             {
-              "text": "**By when must we decide if the client asked for more detail?**",
-              "translation_ru": "До какого срока нам нужно решить, клиент попросил больше деталей?"
+              "text": "**By when do you need to decide whether you are bringing a guest?**",
+              "translation_ru": "К какому сроку тебе нужно решить, придёшь ли ты с гостем?"
             },
             {
-              "text": "**By when must we decide if the pilot may continue next month?**",
-              "translation_ru": "До какого срока нам нужно решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**By when must the publishers decide whether the manuscript needs further revisions?**",
+              "translation_ru": "К какому сроку издатели должны решить, нужна ли рукописи дополнительная доработка?"
             },
             {
-              "text": "**By when must we decide if the data need another check?**",
-              "translation_ru": "До какого срока нам нужно решить, данные нужно проверить ещё раз?"
+              "text": "**By when do the volunteers have to decide whether they can cover the night shift?**",
+              "translation_ru": "К какому сроку волонтёры должны решить, смогут ли они выйти в ночную смену?"
             },
             {
-              "text": "**By when must we decide if the meeting was moved?**",
-              "translation_ru": "До какого срока нам нужно решить, встречу перенесли?"
+              "text": "**By when do I need to decide whether to appeal the fine?**",
+              "translation_ru": "К какому сроку мне нужно решить, обжаловать ли штраф?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Bis wann müssen wir entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Bis wann müssen wir entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "До какого срока нам нужно решить, команде нужен ещё день для решения?",
+          "formula": "Bis wann muss/müssen [Subjekt] entscheiden, ob [Nebensatz]?",
+          "example": "Bis wann müssen wir entscheiden, ob wir den Mietvertrag verlängern?",
+          "translation": "К какому сроку нам нужно решить, продлевать ли договор аренды?",
           "examples": [
             {
-              "text": "**Bis wann müssen wir entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "До какого срока нам нужно решить, команде нужен ещё день для решения?"
+              "text": "**Bis wann müssen wir entscheiden, ob wir den Mietvertrag verlängern?**",
+              "translation_ru": "К какому сроку нам нужно решить, продлевать ли договор аренды?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "До какого срока нам нужно решить, обновлённым планом ещё не поделились?"
+              "text": "**Bis wann muss der Stadtrat entscheiden, ob die Straße für Autos gesperrt wird?**",
+              "translation_ru": "К какому сроку городской совет должен решить, закроют ли улицу для автомобилей?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "До какого срока нам нужно решить, нам следует сравнить два варианта?"
+              "text": "**Bis wann muss sie entscheiden, ob sie das Stipendium annimmt?**",
+              "translation_ru": "К какому сроку ей нужно решить, принимать ли стипендию?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "До какого срока нам нужно решить, клиент попросил больше деталей?"
+              "text": "**Bis wann musst du entscheiden, ob du jemanden zur Feier mitbringst?**",
+              "translation_ru": "К какому сроку тебе нужно решить, придёшь ли ты на праздник с кем-нибудь?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "До какого срока нам нужно решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Bis wann muss der Verlag entscheiden, ob das Buch noch einmal überarbeitet wird?**",
+              "translation_ru": "К какому сроку издательство должно решить, будут ли ещё раз дорабатывать книгу?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "До какого срока нам нужно решить, данные нужно проверить ещё раз?"
+              "text": "**Bis wann müssen die Helfer entscheiden, ob sie am Wochenende einspringen können?**",
+              "translation_ru": "К какому сроку помощники должны решить, смогут ли они подменить кого-нибудь на выходных?"
             },
             {
-              "text": "**Bis wann müssen wir entscheiden, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "До какого срока нам нужно решить, встречу перенесли?"
+              "text": "**Bis wann muss ich entscheiden, ob ich gegen den Bescheid Widerspruch einlege?**",
+              "translation_ru": "К какому сроку мне нужно решить, подавать ли возражение на официальное решение?"
             }
           ]
         }
       ],
       "formulas": [
-        "By when must we decide if [the team needs another day to decide]?",
-        "Bis wann müssen wir entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "By when must [subject] decide whether [clause / to-infinitive]? / By when do/does [subject] have/need to decide whether [clause / to-infinitive]?",
+        "Bis wann muss/müssen [Subjekt] entscheiden, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

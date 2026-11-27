@@ -6,85 +6,85 @@
       "id": "QSTQPLC001",
       "group_id": "QPLC",
       "set_id": "QPLC",
-      "title_ru": "Где нам обсудить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Где нам обсудить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Где лучше обсудить спорный вопрос",
+      "metaphor_ru": "Выберите подходящее место или формат для обсуждения открытого вопроса. Английское discuss не требует about; после whether сохраняется прямой порядок слов. Немецкое besprechen с ob также вводит косвенный вопрос, но глагол придаточного стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Where should we discuss whether [the team needs another day to decide]?",
-          "example": "Where should we discuss whether the team needs another day to decide?",
-          "translation": "Где нам обсудить, команде нужен ещё день для решения?",
+          "formula": "Where should [subject] discuss whether [clause]?",
+          "example": "Where should we discuss whether the rent increase is justified?",
+          "translation": "Где нам лучше обсудить, обосновано ли повышение арендной платы?",
           "examples": [
             {
-              "text": "**Where should we discuss whether the team needs another day to decide?**",
-              "translation_ru": "Где нам обсудить, команде нужен ещё день для решения?"
+              "text": "**Where should we discuss whether the rent increase is justified?**",
+              "translation_ru": "Где нам лучше обсудить, обосновано ли повышение арендной платы?"
             },
             {
-              "text": "**Where should we discuss whether the revised plan has not been shared yet?**",
-              "translation_ru": "Где нам обсудить, обновлённым планом ещё не поделились?"
+              "text": "**Where should the parents discuss whether children need a separate playground?**",
+              "translation_ru": "Где родителям лучше обсудить, нужна ли детям отдельная игровая площадка?"
             },
             {
-              "text": "**Where should we discuss whether we should compare the two options?**",
-              "translation_ru": "Где нам обсудить, нам следует сравнить два варианта?"
+              "text": "**Where should you discuss whether your workload has become unreasonable?**",
+              "translation_ru": "Где тебе лучше обсудить, не стала ли твоя рабочая нагрузка чрезмерной?"
             },
             {
-              "text": "**Where should we discuss whether the client asked for more detail?**",
-              "translation_ru": "Где нам обсудить, клиент попросил больше деталей?"
+              "text": "**Where should the neighbours discuss whether to share the cost of repairing the fence?**",
+              "translation_ru": "Где соседям лучше обсудить, стоит ли разделить расходы на ремонт забора?"
             },
             {
-              "text": "**Where should we discuss whether the pilot may continue next month?**",
-              "translation_ru": "Где нам обсудить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Where should the researchers discuss whether their findings can be made public?**",
+              "translation_ru": "Где исследователям лучше обсудить, можно ли обнародовать их результаты?"
             },
             {
-              "text": "**Where should we discuss whether the data need another check?**",
-              "translation_ru": "Где нам обсудить, данные нужно проверить ещё раз?"
+              "text": "**Where should the students discuss whether the marking criteria are fair?**",
+              "translation_ru": "Где студентам лучше обсудить, справедливы ли критерии оценивания?"
             },
             {
-              "text": "**Where should we discuss whether the meeting was moved?**",
-              "translation_ru": "Где нам обсудить, встречу перенесли?"
+              "text": "**Where should we discuss whether the children are ready to hear the news?**",
+              "translation_ru": "Где нам лучше обсудить, готовы ли дети услышать эту новость?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wo sollten wir besprechen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wo sollten wir besprechen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Где нам обсудить, команде нужен ещё день для решения?",
+          "formula": "Wo sollte/sollten [Subjekt] besprechen, ob [Nebensatz]?",
+          "example": "Wo sollten wir besprechen, ob die Mieterhöhung gerechtfertigt ist?",
+          "translation": "Где нам лучше обсудить, обосновано ли повышение арендной платы?",
           "examples": [
             {
-              "text": "**Wo sollten wir besprechen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Где нам обсудить, команде нужен ещё день для решения?"
+              "text": "**Wo sollten wir besprechen, ob die Mieterhöhung gerechtfertigt ist?**",
+              "translation_ru": "Где нам лучше обсудить, обосновано ли повышение арендной платы?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Где нам обсудить, обновлённым планом ещё не поделились?"
+              "text": "**Wo sollten die Eltern besprechen, ob ein zusätzlicher Spielplatz nötig ist?**",
+              "translation_ru": "Где родителям лучше обсудить, нужна ли дополнительная игровая площадка?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Где нам обсудить, нам следует сравнить два варианта?"
+              "text": "**Wo solltest du besprechen, ob dir zu viele Aufgaben übertragen wurden?**",
+              "translation_ru": "Где тебе лучше обсудить, не поручили ли тебе слишком много задач?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Где нам обсудить, клиент попросил больше деталей?"
+              "text": "**Wo sollten die Nachbarn besprechen, ob sie sich an den Reparaturkosten beteiligen?**",
+              "translation_ru": "Где соседям лучше обсудить, будут ли они участвовать в оплате ремонта?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Где нам обсудить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wo sollten die Forschenden besprechen, ob die Ergebnisse veröffentlicht werden dürfen?**",
+              "translation_ru": "Где исследователям лучше обсудить, разрешено ли публиковать результаты?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Где нам обсудить, данные нужно проверить ещё раз?"
+              "text": "**Wo sollten die Studierenden besprechen, ob die Prüfung fair bewertet wurde?**",
+              "translation_ru": "Где студентам лучше обсудить, справедливо ли оценили экзамен?"
             },
             {
-              "text": "**Wo sollten wir besprechen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Где нам обсудить, встречу перенесли?"
+              "text": "**Wo sollten wir besprechen, ob wir unseren Sohn in die Entscheidung einbeziehen?**",
+              "translation_ru": "Где нам лучше обсудить, стоит ли привлекать нашего сына к принятию решения?"
             }
           ]
         }
       ],
       "formulas": [
-        "Where should we discuss whether [the team needs another day to decide]?",
-        "Wo sollten wir besprechen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Where should [subject] discuss whether [clause]?",
+        "Wo sollte/sollten [Subjekt] besprechen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQPLC021",
       "group_id": "QPLC",
       "set_id": "QPLC",
-      "title_ru": "Где мы можем выяснить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Где мы можем выяснить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Где можно выяснить, так ли это",
+      "metaphor_ru": "Спросите об источнике или месте, где можно получить проверяемый ответ. Английское find out whether вводит косвенный вопрос без инверсии. В немецком sich erkundigen или herausfinden с ob выражают соответственно запрос информации и выяснение факта; глагол в придаточном стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Where can we find out whether [the team needs another day to decide]?",
-          "example": "Where can we find out whether the team needs another day to decide?",
-          "translation": "Где мы можем выяснить, команде нужен ещё день для решения?",
+          "formula": "Where can [subject] find out whether [clause]?",
+          "example": "Where can I find out whether this path is open to cyclists?",
+          "translation": "Где я могу узнать, разрешено ли велосипедистам пользоваться этой дорожкой?",
           "examples": [
             {
-              "text": "**Where can we find out whether the team needs another day to decide?**",
-              "translation_ru": "Где мы можем выяснить, команде нужен ещё день для решения?"
+              "text": "**Where can I find out whether this path is open to cyclists?**",
+              "translation_ru": "Где я могу узнать, разрешено ли велосипедистам пользоваться этой дорожкой?"
             },
             {
-              "text": "**Where can we find out whether the revised plan has not been shared yet?**",
-              "translation_ru": "Где мы можем выяснить, обновлённым планом ещё не поделились?"
+              "text": "**Where can we find out whether the flat is covered by rent controls?**",
+              "translation_ru": "Где нам узнать, распространяется ли на эту квартиру регулирование арендной платы?"
             },
             {
-              "text": "**Where can we find out whether we should compare the two options?**",
-              "translation_ru": "Где мы можем выяснить, нам следует сравнить два варианта?"
+              "text": "**Where can she find out whether her foreign qualifications are recognised?**",
+              "translation_ru": "Где она может узнать, признают ли её зарубежную квалификацию?"
             },
             {
-              "text": "**Where can we find out whether the client asked for more detail?**",
-              "translation_ru": "Где мы можем выяснить, клиент попросил больше деталей?"
+              "text": "**Where can passengers find out whether their tickets are valid on regional buses?**",
+              "translation_ru": "Где пассажиры могут узнать, действуют ли их билеты на региональных автобусах?"
             },
             {
-              "text": "**Where can we find out whether the pilot may continue next month?**",
-              "translation_ru": "Где мы можем выяснить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Where can parents find out whether the summer camp still has vacancies?**",
+              "translation_ru": "Где родители могут узнать, остались ли места в летнем лагере?"
             },
             {
-              "text": "**Where can we find out whether the data need another check?**",
-              "translation_ru": "Где мы можем выяснить, данные нужно проверить ещё раз?"
+              "text": "**Where can you find out whether the charity publishes audited accounts?**",
+              "translation_ru": "Где можно узнать, публикует ли благотворительная организация отчётность, прошедшую аудит?"
             },
             {
-              "text": "**Where can we find out whether the meeting was moved?**",
-              "translation_ru": "Где мы можем выяснить, встречу перенесли?"
+              "text": "**Where can the engineers find out whether this component is still supported?**",
+              "translation_ru": "Где инженеры могут узнать, продолжается ли поддержка этого компонента?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wo können wir herausfinden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wo können wir herausfinden, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Где мы можем выяснить, команде нужен ещё день для решения?",
+          "formula": "Wo kann/können [Subjekt] herausfinden, ob [Nebensatz]? / Wo kann/können [Subjekt] sich erkundigen, ob [Nebensatz]?",
+          "example": "Wo kann ich mich erkundigen, ob der Radweg im Winter geräumt wird?",
+          "translation": "Где я могу узнать, очищают ли велодорожку зимой?",
           "examples": [
             {
-              "text": "**Wo können wir herausfinden, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Где мы можем выяснить, команде нужен ещё день для решения?"
+              "text": "**Wo kann ich mich erkundigen, ob der Radweg im Winter geräumt wird?**",
+              "translation_ru": "Где я могу узнать, очищают ли велодорожку зимой?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Где мы можем выяснить, обновлённым планом ещё не поделились?"
+              "text": "**Wo können wir herausfinden, ob für die Wohnung eine Mietpreisbindung gilt?**",
+              "translation_ru": "Где нам выяснить, действует ли для этой квартиры ограничение арендной платы?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Где мы можем выяснить, нам следует сравнить два варианта?"
+              "text": "**Wo kann sie sich erkundigen, ob ihr ausländischer Berufsabschluss anerkannt wird?**",
+              "translation_ru": "Где она может узнать, признают ли её зарубежный диплом о профессиональном образовании?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Где мы можем выяснить, клиент попросил больше деталей?"
+              "text": "**Wo können Fahrgäste herausfinden, ob ihr Ticket auch in der Straßenbahn gilt?**",
+              "translation_ru": "Где пассажиры могут узнать, действует ли их билет и в трамвае?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Где мы можем выяснить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wo können sich Eltern erkundigen, ob im Ferienprogramm noch Plätze frei sind?**",
+              "translation_ru": "Где родители могут узнать, остались ли свободные места в программе на каникулы?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Где мы можем выяснить, данные нужно проверить ещё раз?"
+              "text": "**Wo kannst du herausfinden, ob der Verein seine Finanzen offenlegt?**",
+              "translation_ru": "Где ты можешь узнать, раскрывает ли объединение информацию о своих финансах?"
             },
             {
-              "text": "**Wo können wir herausfinden, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Где мы можем выяснить, встречу перенесли?"
+              "text": "**Wo können die Techniker herausfinden, ob es für das Gerät noch Ersatzteile gibt?**",
+              "translation_ru": "Где технические специалисты могут узнать, есть ли ещё запчасти для этого устройства?"
             }
           ]
         }
       ],
       "formulas": [
-        "Where can we find out whether [the team needs another day to decide]?",
-        "Wo können wir herausfinden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Where can [subject] find out whether [clause]?",
+        "Wo kann/können [Subjekt] herausfinden, ob [Nebensatz]? / Wo kann/können [Subjekt] sich erkundigen, ob [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
