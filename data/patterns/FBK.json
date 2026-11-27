@@ -196,85 +196,85 @@
       "id": "FUNFBK021",
       "group_id": "FBK",
       "set_id": "FBK",
-      "title_ru": "Результат был бы сильнее, если команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «обратная связь и оценка» в живом контексте.",
+      "title_ru": "Предложить конкретное улучшение",
+      "metaphor_ru": "Дайте конструктивную обратную связь: назовите качество результата и одно изменение, которое могло бы его улучшить, без расплывчатой критики.",
       "langs": [
         {
           "lang": "en",
-          "formula": "The result would be stronger if [the team needs another day to decide].",
-          "example": "The result would be stronger if the team needs another day to decide.",
-          "translation": "Результат был бы сильнее, если команде нужен ещё день для решения.",
+          "formula": "[Work or message] would be [comparative] if [specific improvement].",
+          "example": "Your argument would be more convincing if you explained where the numbers came from.",
+          "translation": "Твой аргумент звучал бы убедительнее, если бы ты объяснил, откуда взялись цифры.",
           "examples": [
             {
-              "text": "**The result would be stronger if the team needs another day to decide.**",
-              "translation_ru": "Результат был бы сильнее, если команде нужен ещё день для решения."
+              "text": "**Your argument would be more convincing if you explained where the numbers came from.**",
+              "translation_ru": "Твой аргумент звучал бы убедительнее, если бы ты объяснил, откуда взялись цифры."
             },
             {
-              "text": "**The result would be stronger if the revised plan has not been shared yet.**",
-              "translation_ru": "Результат был бы сильнее, если обновлённым планом ещё не поделились."
+              "text": "**The instructions would be easier to follow if each step included a photo.**",
+              "translation_ru": "Инструкцию было бы проще выполнять, если бы к каждому шагу прилагалось фото."
             },
             {
-              "text": "**The result would be stronger if we should compare the two options.**",
-              "translation_ru": "Результат был бы сильнее, если нам следует сравнить два варианта."
+              "text": "**Her presentation would feel less rushed if she paused after the key examples.**",
+              "translation_ru": "Её выступление не казалось бы таким торопливым, если бы она делала паузы после ключевых примеров."
             },
             {
-              "text": "**The result would be stronger if the client asked for more detail.**",
-              "translation_ru": "Результат был бы сильнее, если клиент попросил больше деталей."
+              "text": "**The invitation would sound warmer if you told the neighbours why you'd like them to come.**",
+              "translation_ru": "Приглашение звучало бы теплее, если бы ты сказал соседям, почему хочешь их видеть."
             },
             {
-              "text": "**The result would be stronger if the pilot may continue next month.**",
-              "translation_ru": "Результат был бы сильнее, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**This article would be more balanced if it included the residents' perspective.**",
+              "translation_ru": "Статья была бы объективнее, если бы в ней прозвучало мнение местных жителей."
             },
             {
-              "text": "**The result would be stronger if the data need another check.**",
-              "translation_ru": "Результат был бы сильнее, если данные нужно проверить ещё раз."
+              "text": "**The exercise would work better if students could try the phrase in a real conversation.**",
+              "translation_ru": "Упражнение было бы полезнее, если бы учащиеся могли попробовать выражение в настоящем разговоре."
             },
             {
-              "text": "**The result would be stronger if the meeting was moved.**",
-              "translation_ru": "Результат был бы сильнее, если встречу перенесли."
+              "text": "**Our proposal would be easier to assess if we separated the costs from the risks.**",
+              "translation_ru": "Наше предложение было бы проще оценить, если бы мы отделили затраты от рисков."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das Ergebnis wäre stärker, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Das Ergebnis wäre stärker, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Результат был бы сильнее, если команде нужен ещё день для решения.",
+          "formula": "[Ergebnis] wäre [Komparativ], wenn [konkrete Änderung im Konjunktiv II].",
+          "example": "Deine Argumentation wäre überzeugender, wenn du erklären würdest, woher die Zahlen stammen.",
+          "translation": "Твои доводы были бы убедительнее, если бы ты объяснил, откуда взялись цифры.",
           "examples": [
             {
-              "text": "**Das Ergebnis wäre stärker, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Результат был бы сильнее, если команде нужен ещё день для решения."
+              "text": "**Deine Argumentation wäre überzeugender, wenn du erklären würdest, woher die Zahlen stammen.**",
+              "translation_ru": "Твои доводы были бы убедительнее, если бы ты объяснил, откуда взялись цифры."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Результат был бы сильнее, если обновлённым планом ещё не поделились."
+              "text": "**Die Anleitung wäre leichter nachzuvollziehen, wenn jeder Schritt ein Foto hätte.**",
+              "translation_ru": "Инструкцию было бы легче понять, если бы каждый шаг сопровождался фотографией."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Результат был бы сильнее, если нам следует сравнить два варианта."
+              "text": "**Ihr Vortrag würde weniger gehetzt wirken, wenn sie nach den wichtigsten Beispielen eine Pause machen würde.**",
+              "translation_ru": "Её выступление не выглядело бы таким торопливым, если бы она делала паузу после важных примеров."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Результат был бы сильнее, если клиент попросил больше деталей."
+              "text": "**Die Einladung klänge herzlicher, wenn du den Nachbarn sagen würdest, warum du sie gern dabeihättest.**",
+              "translation_ru": "Приглашение звучало бы душевнее, если бы ты объяснил соседям, почему хочешь их видеть."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Результат был бы сильнее, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**Der Artikel wäre ausgewogener, wenn auch die Sicht der Anwohner zur Sprache käme.**",
+              "translation_ru": "Статья была бы более взвешенной, если бы в ней отразили и точку зрения жителей."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Результат был бы сильнее, если данные нужно проверить ещё раз."
+              "text": "**Die Übung wäre hilfreicher, wenn die Lernenden die Wendung in einem echten Gespräch ausprobieren könnten.**",
+              "translation_ru": "Упражнение принесло бы больше пользы, если бы ученики могли опробовать выражение в настоящем разговоре."
             },
             {
-              "text": "**Das Ergebnis wäre stärker, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Результат был бы сильнее, если встречу перенесли."
+              "text": "**Unser Vorschlag ließe sich leichter beurteilen, wenn wir Kosten und Risiken getrennt darstellen würden.**",
+              "translation_ru": "Наше предложение было бы проще оценить, если бы мы представили затраты и риски отдельно."
             }
           ]
         }
       ],
       "formulas": [
-        "The result would be stronger if [the team needs another day to decide].",
-        "Das Ergebnis wäre stärker, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "[Work or message] would be [comparative] if [specific improvement].",
+        "[Ergebnis] wäre [Komparativ], wenn [konkrete Änderung im Konjunktiv II]."
       ],
       "gen": {
         "status": "curated",
@@ -380,6 +380,96 @@
           "de"
         ],
         "notes": "Functional pattern: Feedback and evaluation."
+      }
+    },
+    {
+      "id": "C1FBK001",
+      "group_id": "FBK",
+      "set_id": "FBK",
+      "title_ru": "Оценить сильную сторону и предложить улучшение",
+      "metaphor_ru": "Не ограничивайтесь общим одобрением или критикой: назовите удачную деталь и одну конкретную правку. В английском тренируются две what-clause, в немецком — живой порядок слов с вынесенным дополнением.",
+      "title_en": "What works about [X] is [Y]; what I'd change is [Z]",
+      "description_en": "Give balanced, actionable feedback by naming one successful feature and one specific change rather than vague praise or criticism.",
+      "description_ru": "Не ограничивайтесь общим одобрением или критикой: назовите удачную деталь и одну конкретную правку. В английском тренируются две what-clause, в немецком — живой порядок слов с вынесенным дополнением.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What works well about [X] is [Y]; what I'd change is [Z].",
+          "example": "What works well about your explanation is the example from daily life; what I'd change is the abrupt ending.",
+          "translation": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил.",
+          "examples": [
+            {
+              "text": "**What works well about your explanation is the example from daily life; what I'd change is the abrupt ending.**",
+              "translation_ru": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил."
+            },
+            {
+              "text": "**What works well about the neighbourhood map is its large labels; what I'd change is the confusing legend.**",
+              "translation_ru": "На карте района мне нравятся крупные подписи, но запутанную легенду я бы упростил."
+            },
+            {
+              "text": "**What works well about the workshop is the practical exercise; what I'd change is the rushed introduction.**",
+              "translation_ru": "В вашем мастер-классе особенно полезно практическое упражнение, а слишком поспешное вступление стоило бы доработать."
+            },
+            {
+              "text": "**What works well about this recipe is the short ingredient list; what I'd change is the vague baking time.**",
+              "translation_ru": "В этом рецепте хорош короткий список продуктов, но время выпечки нужно указать точнее."
+            },
+            {
+              "text": "**What works well about the new app is the offline search; what I'd change is the crowded settings screen.**",
+              "translation_ru": "В новом приложении отлично работает поиск без интернета, но перегруженный экран настроек я бы упростил."
+            },
+            {
+              "text": "**What works well about the weekly schedule is the longer break; what I'd change is the late finish for parents.**",
+              "translation_ru": "В расписании мне нравится длинный перерыв, но слишком позднее окончание для родителей я бы пересмотрел."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "An [X] gefällt mir besonders [Y]; [Z] würde ich noch [verb].",
+          "example": "An deiner Erklärung gefällt mir besonders das Alltagsbeispiel; den abrupten Schluss würde ich noch überarbeiten.",
+          "translation": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил.",
+          "examples": [
+            {
+              "text": "**An deiner Erklärung gefällt mir besonders das Alltagsbeispiel; den abrupten Schluss würde ich noch überarbeiten.**",
+              "translation_ru": "В твоём объяснении удачен пример из повседневной жизни, а резкое завершение я бы смягчил."
+            },
+            {
+              "text": "**An der Karte unseres Viertels gefallen mir besonders die großen Beschriftungen; die unübersichtliche Legende würde ich noch vereinfachen.**",
+              "translation_ru": "На карте района мне нравятся крупные подписи, но запутанную легенду я бы упростил."
+            },
+            {
+              "text": "**An eurem Workshop gefällt mir besonders die praktische Übung; den hastigen Einstieg würde ich noch verbessern.**",
+              "translation_ru": "В вашем мастер-классе особенно полезно практическое упражнение, а слишком поспешное вступление стоило бы доработать."
+            },
+            {
+              "text": "**An diesem Rezept gefällt mir besonders die kurze Zutatenliste; die ungenaue Backzeit würde ich noch präzisieren.**",
+              "translation_ru": "В этом рецепте хорош короткий список продуктов, но время выпечки нужно указать точнее."
+            },
+            {
+              "text": "**An der neuen App gefällt mir besonders die Suche ohne Internetverbindung; die überladene Einstellungsseite würde ich noch vereinfachen.**",
+              "translation_ru": "В новом приложении отлично работает поиск без интернета, но перегруженный экран настроек я бы упростил."
+            },
+            {
+              "text": "**Am Wochenplan gefällt mir besonders die längere Pause; das späte Ende für Eltern würde ich noch überdenken.**",
+              "translation_ru": "В расписании мне нравится длинный перерыв, но слишком позднее окончание для родителей я бы пересмотрел."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What works well about [X] is [Y]; what I'd change is [Z].",
+        "An [X] gefällt mir besonders [Y]; [Z] würde ich noch [verb]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-25T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2-C1 editorial source frame; local spaCy annotation pending."
       }
     }
   ]

@@ -6,85 +6,85 @@
       "id": "FUNADV001",
       "group_id": "ADV",
       "set_id": "ADV",
-      "title_ru": "Я бы рекомендовал(а) проверить, команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «советы и рекомендации» в живом контексте.",
+      "title_ru": "Я бы рекомендовал(а) проверить, …",
+      "metaphor_ru": "Мягко предлагает сначала проверить предположение, а уже потом действовать. После whether и ob сохраняется порядок слов косвенного вопроса.",
       "langs": [
         {
           "lang": "en",
-          "formula": "I would recommend checking whether [the team needs another day to decide].",
-          "example": "I would recommend checking whether the team needs another day to decide.",
-          "translation": "Я бы рекомендовал(а) проверить, команде нужен ещё день для решения.",
+          "formula": "I would recommend checking whether [X]",
+          "example": "I'd recommend checking whether the landlord has approved the repair before we book a plumber.",
+          "translation": "Я бы посоветовал сначала проверить, согласовал ли хозяин квартиры ремонт, прежде чем вызывать сантехника.",
           "examples": [
             {
-              "text": "**I would recommend checking whether the team needs another day to decide.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, команде нужен ещё день для решения."
+              "text": "**I'd recommend checking whether the landlord has approved the repair before we book a plumber.**",
+              "translation_ru": "Я бы посоветовал сначала проверить, согласовал ли хозяин квартиры ремонт, прежде чем вызывать сантехника."
             },
             {
-              "text": "**I would recommend checking whether the revised plan has not been shared yet.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, обновлённым планом ещё не поделились."
+              "text": "**I'd recommend checking whether the course includes live speaking practice, not just recorded lectures.**",
+              "translation_ru": "Я бы рекомендовал выяснить, есть ли на курсе живая разговорная практика, а не только лекции в записи."
             },
             {
-              "text": "**I would recommend checking whether we should compare the two options.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, нам следует сравнить два варианта."
+              "text": "**I'd recommend checking whether the app retains voice recordings after an account is deleted.**",
+              "translation_ru": "Советую проверить, хранит ли приложение голосовые записи после удаления учётной записи."
             },
             {
-              "text": "**I would recommend checking whether the client asked for more detail.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, клиент попросил больше деталей."
+              "text": "**I'd recommend checking whether the library has step-free access before inviting the whole group.**",
+              "translation_ru": "Прежде чем звать всю группу, я бы рекомендовал проверить, можно ли попасть в библиотеку без ступенек."
             },
             {
-              "text": "**I would recommend checking whether the pilot may continue next month.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**I'd recommend checking whether the headline reflects what the original study actually found.**",
+              "translation_ru": "Я бы посоветовал сверить заголовок с тем, что действительно показало исходное исследование."
             },
             {
-              "text": "**I would recommend checking whether the data need another check.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, данные нужно проверить ещё раз."
+              "text": "**I'd recommend checking whether the last train still runs on Sundays before buying the tickets.**",
+              "translation_ru": "Советую узнать, ходит ли последний поезд по воскресеньям, прежде чем покупать билеты."
             },
             {
-              "text": "**I would recommend checking whether the meeting was moved.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, встречу перенесли."
+              "text": "**I'd recommend checking whether she actually wants advice before offering another solution.**",
+              "translation_ru": "Прежде чем предлагать очередное решение, я бы посоветовал выяснить, нужен ли ей вообще совет."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ich würde empfehlen zu prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Ich würde empfehlen zu prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Я бы рекомендовал(а) проверить, команде нужен ещё день для решения.",
+          "formula": "Ich würde empfehlen, zu prüfen, ob [Annahme], bevor [Entscheidung].",
+          "example": "Ich würde empfehlen, vor der Beauftragung eines Installateurs zu prüfen, ob der Vermieter der Reparatur zugestimmt hat.",
+          "translation": "Я бы рекомендовал перед вызовом сантехника уточнить, согласовал ли хозяин квартиры ремонт.",
           "examples": [
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, команде нужен ещё день для решения."
+              "text": "**Ich würde empfehlen, vor der Beauftragung eines Installateurs zu prüfen, ob der Vermieter der Reparatur zugestimmt hat.**",
+              "translation_ru": "Я бы рекомендовал перед вызовом сантехника уточнить, согласовал ли хозяин квартиры ремонт."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, обновлённым планом ещё не поделились."
+              "text": "**Ich würde empfehlen, zu prüfen, ob der Kurs auch echte Sprechübungen bietet und nicht nur aufgezeichnete Vorträge.**",
+              "translation_ru": "Я бы посоветовал проверить, есть ли на курсе настоящая разговорная практика, а не только записи лекций."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, нам следует сравнить два варианта."
+              "text": "**Ich würde empfehlen, zu prüfen, ob die App Sprachaufnahmen auch nach der Löschung eines Kontos speichert.**",
+              "translation_ru": "Советую выяснить, сохраняет ли приложение голосовые записи после удаления аккаунта."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, клиент попросил больше деталей."
+              "text": "**Ich würde empfehlen, vor der Einladung der ganzen Gruppe zu prüfen, ob die Bibliothek barrierefrei zugänglich ist.**",
+              "translation_ru": "Прежде чем приглашать всю группу, советую проверить, есть ли в библиотеке безбарьерный вход."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**Ich würde empfehlen, zu prüfen, ob die Schlagzeile die Ergebnisse der ursprünglichen Studie richtig wiedergibt.**",
+              "translation_ru": "Я бы рекомендовал проверить, правильно ли заголовок передаёт результаты исходного исследования."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, данные нужно проверить ещё раз."
+              "text": "**Ich würde empfehlen, vor dem Ticketkauf zu prüfen, ob der letzte Zug sonntags noch fährt.**",
+              "translation_ru": "Я бы посоветовал перед покупкой билетов проверить, ходит ли последний поезд по воскресеньям."
             },
             {
-              "text": "**Ich würde empfehlen zu prüfen, ob die Sitzung verschoben wurde.**",
-              "translation_ru": "Я бы рекомендовал(а) проверить, встречу перенесли."
+              "text": "**Ich würde empfehlen, erst zu prüfen, ob sie überhaupt einen Rat möchte, bevor du ihr noch eine Lösung vorschlägst.**",
+              "translation_ru": "Я бы посоветовал сначала выяснить, хочет ли она совета, прежде чем предлагать ещё одно решение."
             }
           ]
         }
       ],
       "formulas": [
-        "I would recommend checking whether [the team needs another day to decide].",
-        "Ich würde empfehlen zu prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "I would recommend checking whether [X]",
+        "Ich würde empfehlen, zu prüfen, ob [Annahme], bevor [Entscheidung]."
       ],
       "gen": {
         "status": "curated",
@@ -101,85 +101,85 @@
       "id": "FUNADV011",
       "group_id": "ADV",
       "set_id": "ADV",
-      "title_ru": "Возможно, стоит спросить, почему команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «советы и рекомендации» в живом контексте.",
+      "title_ru": "Осторожно предложить выяснить причину",
+      "metaphor_ru": "It might be worth + -ing / es könnte sich lohnen + zu-Infinitiv: предложите задать вопрос о причине, не выдавая её за установленный факт. В косвенном вопросе сохраняется обычный порядок слов.",
       "langs": [
         {
           "lang": "en",
-          "formula": "It may be worth asking why [the team needs another day to decide].",
-          "example": "It may be worth asking why the team needs another day to decide.",
-          "translation": "Возможно, стоит спросить, почему команде нужен ещё день для решения.",
+          "formula": "It might be worth asking why [unexpected fact] (before [judgment]).",
+          "example": "It might be worth asking why the neighbours oppose the new cycle lane before dismissing their concerns.",
+          "translation": "Возможно, стоит узнать, почему соседи против новой велодорожки, прежде чем отмахиваться от их опасений.",
           "examples": [
             {
-              "text": "**It may be worth asking why the team needs another day to decide.**",
-              "translation_ru": "Возможно, стоит спросить, почему команде нужен ещё день для решения."
+              "text": "**It might be worth asking why the neighbours oppose the new cycle lane before dismissing their concerns.**",
+              "translation_ru": "Возможно, стоит узнать, почему соседи против новой велодорожки, прежде чем отмахиваться от их опасений."
             },
             {
-              "text": "**It may be worth asking why the revised plan has not been shared yet.**",
-              "translation_ru": "Возможно, стоит спросить, почему обновлённым планом ещё не поделились."
+              "text": "**It might be worth asking why the laptop overheats only during video calls.**",
+              "translation_ru": "Пожалуй, стоит выяснить, почему ноутбук перегревается только во время видеозвонков."
             },
             {
-              "text": "**It may be worth asking why we should compare the two options.**",
-              "translation_ru": "Возможно, стоит спросить, почему нам следует сравнить два варианта."
+              "text": "**It might be worth asking why your daughter avoids reading aloud, even though she enjoys books.**",
+              "translation_ru": "Возможно, стоит спросить, почему дочь избегает чтения вслух, хотя книги ей нравятся."
             },
             {
-              "text": "**It may be worth asking why the client asked for more detail.**",
-              "translation_ru": "Возможно, стоит спросить, почему клиент попросил больше деталей."
+              "text": "**It might be worth asking why the museum has left local artists out of the programme.**",
+              "translation_ru": "Возможно, стоит спросить, почему музей не включил местных художников в программу."
             },
             {
-              "text": "**It may be worth asking why the pilot may continue next month.**",
-              "translation_ru": "Возможно, стоит спросить, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**It might be worth asking why the tutor challenged your conclusion rather than defending it immediately.**",
+              "translation_ru": "Возможно, стоит выяснить, почему преподаватель усомнился в твоём выводе, а не сразу его защищать."
             },
             {
-              "text": "**It may be worth asking why the data need another check.**",
-              "translation_ru": "Возможно, стоит спросить, почему данные нужно проверить ещё раз."
+              "text": "**It might be worth asking why your father has been so quiet since the family gathering.**",
+              "translation_ru": "Пожалуй, стоит спросить, почему отец так притих после семейной встречи."
             },
             {
-              "text": "**It may be worth asking why the meeting was moved.**",
-              "translation_ru": "Возможно, стоит спросить, почему встречу перенесли."
+              "text": "**It might be worth asking why so many people stopped attending the conversation club.**",
+              "translation_ru": "Возможно, стоит узнать, почему столько людей перестали ходить в разговорный клуб."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Es könnte sich lohnen zu fragen, warum [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Es könnte sich lohnen zu fragen, warum das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Возможно, стоит спросить, почему команде нужен ещё день для решения.",
+          "formula": "Es könnte sich lohnen, nachzufragen, warum [unerwarteter Sachverhalt] (bevor [Urteil]).",
+          "example": "Es könnte sich lohnen, nachzufragen, warum die Nachbarn gegen den neuen Radweg sind, bevor wir ihre Bedenken abtun.",
+          "translation": "Возможно, стоит спросить, почему соседи против новой велодорожки, прежде чем отмахиваться от их опасений.",
           "examples": [
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Возможно, стоит спросить, почему команде нужен ещё день для решения."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum die Nachbarn gegen den neuen Radweg sind, bevor wir ihre Bedenken abtun.**",
+              "translation_ru": "Возможно, стоит спросить, почему соседи против новой велодорожки, прежде чем отмахиваться от их опасений."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Возможно, стоит спросить, почему обновлённым планом ещё не поделились."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum der Laptop nur bei Videokonferenzen überhitzt.**",
+              "translation_ru": "Возможно, стоит выяснить, почему ноутбук перегревается только во время видеоконференций."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Возможно, стоит спросить, почему нам следует сравнить два варианта."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum deine Tochter nicht gern vorliest, obwohl sie Bücher liebt.**",
+              "translation_ru": "Пожалуй, стоит выяснить, почему дочери не нравится читать вслух, хотя она любит книги."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Возможно, стоит спросить, почему клиент попросил больше деталей."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum das Museum keine lokalen Künstler ins Programm aufgenommen hat.**",
+              "translation_ru": "Возможно, стоит выяснить, почему музей не включил местных художников в программу."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Возможно, стоит спросить, почему пилотный проект может продолжиться в следующем месяце."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum die Tutorin deine Schlussfolgerung hinterfragt hat, statt sie sofort zu verteidigen.**",
+              "translation_ru": "Пожалуй, стоит спросить, почему преподаватель поставила твой вывод под сомнение, прежде чем сразу защищать его."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Возможно, стоит спросить, почему данные нужно проверить ещё раз."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum dein Vater seit dem Familientreffen so still ist.**",
+              "translation_ru": "Возможно, стоит выяснить, почему отец после семейной встречи стал таким молчаливым."
             },
             {
-              "text": "**Es könnte sich lohnen zu fragen, warum die Sitzung verschoben wurde.**",
-              "translation_ru": "Возможно, стоит спросить, почему встречу перенесли."
+              "text": "**Es könnte sich lohnen, nachzufragen, warum so viele Leute nicht mehr zum Sprachcafé kommen.**",
+              "translation_ru": "Пожалуй, стоит спросить, почему столько людей перестали приходить в разговорный клуб."
             }
           ]
         }
       ],
       "formulas": [
-        "It may be worth asking why [the team needs another day to decide].",
-        "Es könnte sich lohnen zu fragen, warum [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "It might be worth asking why [unexpected fact] (before [judgment]).",
+        "Es könnte sich lohnen, nachzufragen, warum [unerwarteter Sachverhalt] (bevor [Urteil])."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "FUNADV031",
       "group_id": "ADV",
       "set_id": "ADV",
-      "title_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
-      "metaphor_ru": "Речевая задача: использовать функцию «советы и рекомендации» в живом контексте.",
+      "title_ru": "Дать условный совет с конкретным следующим шагом",
+      "metaphor_ru": "Свяжите наблюдаемое условие с выполнимой рекомендацией, а не с универсальным призывом пересмотреть план. В английском сохраняйте if + условие, should + действие; в немецком — wenn с глаголом в конце и sollte(n) в главной части.",
       "langs": [
         {
           "lang": "en",
-          "formula": "If [the team needs another day to decide], we should reconsider the timetable.",
-          "example": "If the team needs another day to decide, we should reconsider the timetable.",
-          "translation": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
+          "formula": "If [condition], [person] should [practical action].",
+          "example": "If the window still lets in a draught after sealing, we should have the frame inspected.",
+          "translation": "Если из окна продолжит дуть после замены уплотнителя, стоит проверить раму у специалиста.",
           "examples": [
             {
-              "text": "**If the team needs another day to decide, we should reconsider the timetable.**",
-              "translation_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график."
+              "text": "If the window still lets in a draught after sealing, we should have the frame inspected.",
+              "translation_ru": "Если из окна продолжит дуть после замены уплотнителя, стоит проверить раму у специалиста."
             },
             {
-              "text": "**If the revised plan has not been shared yet, we should reconsider the timetable.**",
-              "translation_ru": "Если обновлённым планом ещё не поделились, нам следует пересмотреть график."
+              "text": "If your colleague keeps talking over you, you should raise it privately before the next meeting.",
+              "translation_ru": "Если коллега постоянно тебя перебивает, стоит поговорить с ним наедине до следующего совещания."
             },
             {
-              "text": "**If we should compare the two options, we should reconsider the timetable.**",
-              "translation_ru": "Если нам следует сравнить два варианта, нам следует пересмотреть график."
+              "text": "If the bus route changes in December, commuters should check the timetable before renewing their passes.",
+              "translation_ru": "Если в декабре изменится маршрут автобуса, пассажирам стоит проверить расписание перед продлением проездных."
             },
             {
-              "text": "**If the client asked for more detail, we should reconsider the timetable.**",
-              "translation_ru": "Если клиент попросил больше деталей, нам следует пересмотреть график."
+              "text": "If the translation sounds too formal, you should read it to a native speaker and ask how it comes across.",
+              "translation_ru": "Если перевод звучит слишком официально, стоит прочитать его носителю языка и спросить, какое он производит впечатление."
             },
             {
-              "text": "**If the pilot may continue next month, we should reconsider the timetable.**",
-              "translation_ru": "Если пилотный проект может продолжиться в следующем месяце, нам следует пересмотреть график."
+              "text": "If our prototype overheats under load, we should log the temperature before replacing the hardware.",
+              "translation_ru": "Если прототип перегревается под нагрузкой, стоит сначала записать показания температуры, а потом менять оборудование."
             },
             {
-              "text": "**If the data need another check, we should reconsider the timetable.**",
-              "translation_ru": "Если данные нужно проверить ещё раз, нам следует пересмотреть график."
+              "text": "If your father finds video appointments confusing, you should practise one with him without rushing.",
+              "translation_ru": "Если отцу сложно разобраться с видеоконсультациями, стоит спокойно потренироваться вместе с ним."
             },
             {
-              "text": "**If the meeting was moved, we should reconsider the timetable.**",
-              "translation_ru": "Если встречу перенесли, нам следует пересмотреть график."
+              "text": "If the community garden runs short of water again, the organisers should collect rainwater instead of using drinking water.",
+              "translation_ru": "Если в общественном саду снова не хватит воды, организаторам стоит собирать дождевую, а не расходовать питьевую."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wenn [das Team einen weiteren Tag für die Entscheidung braucht], sollten wir den Zeitplan überdenken.",
-          "example": "Wenn das Team einen weiteren Tag für die Entscheidung braucht, sollten wir den Zeitplan überdenken.",
-          "translation": "Если команде нужен ещё день для решения, нам следует пересмотреть график.",
+          "formula": "Wenn [Bedingung], sollte [Person] [konkrete Handlung].",
+          "example": "Wenn es trotz der neuen Dichtung weiter durchs Fenster zieht, sollten wir den Rahmen prüfen lassen.",
+          "translation": "Если из окна продолжит дуть даже после замены уплотнителя, стоит проверить раму у специалиста.",
           "examples": [
             {
-              "text": "**Wenn das Team einen weiteren Tag für die Entscheidung braucht, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если команде нужен ещё день для решения, нам следует пересмотреть график."
+              "text": "Wenn es trotz der neuen Dichtung weiter durchs Fenster zieht, sollten wir den Rahmen prüfen lassen.",
+              "translation_ru": "Если из окна продолжит дуть даже после замены уплотнителя, стоит проверить раму у специалиста."
             },
             {
-              "text": "**Wenn der überarbeitete Plan noch nicht geteilt wurde, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если обновлённым планом ещё не поделились, нам следует пересмотреть график."
+              "text": "Wenn dein Kollege dich ständig unterbricht, solltest du das vor der nächsten Besprechung unter vier Augen ansprechen.",
+              "translation_ru": "Если коллега постоянно тебя перебивает, стоит поговорить с ним наедине до следующего совещания."
             },
             {
-              "text": "**Wenn wir die beiden Optionen vergleichen sollten, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если нам следует сравнить два варианта, нам следует пересмотреть график."
+              "text": "Wenn sich die Buslinie im Dezember ändert, sollten Pendler vor der Verlängerung ihrer Monatskarte den neuen Fahrplan prüfen.",
+              "translation_ru": "Если в декабре изменится маршрут автобуса, пассажирам стоит проверить расписание перед продлением проездных."
             },
             {
-              "text": "**Wenn der Kunde um mehr Details gebeten hat, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если клиент попросил больше деталей, нам следует пересмотреть график."
+              "text": "Wenn die Übersetzung zu förmlich klingt, solltest du sie jemandem mit Deutsch als Muttersprache vorlesen und nach seiner Meinung fragen.",
+              "translation_ru": "Если перевод звучит слишком официально, стоит прочитать его носителю немецкого языка и спросить его мнение."
             },
             {
-              "text": "**Wenn das Pilotprojekt im nächsten Monat weiterlaufen kann, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если пилотный проект может продолжиться в следующем месяце, нам следует пересмотреть график."
+              "text": "Wenn unser Prototyp unter Last überhitzt, sollten wir die Temperatur protokollieren, bevor wir die Hardware austauschen.",
+              "translation_ru": "Если прототип перегревается под нагрузкой, стоит сначала записать показания температуры, а потом менять оборудование."
             },
             {
-              "text": "**Wenn die Daten noch einmal geprüft werden müssen, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если данные нужно проверить ещё раз, нам следует пересмотреть график."
+              "text": "Wenn dein Vater mit Videoterminen nicht zurechtkommt, solltest du einen Termin in Ruhe mit ihm durchspielen.",
+              "translation_ru": "Если отцу сложно разобраться с видеоконсультациями, стоит спокойно потренироваться вместе с ним."
             },
             {
-              "text": "**Wenn die Sitzung verschoben wurde, sollten wir den Zeitplan überdenken.**",
-              "translation_ru": "Если встречу перенесли, нам следует пересмотреть график."
+              "text": "Wenn dem Gemeinschaftsgarten erneut Wasser fehlt, sollten die Verantwortlichen Regenwasser sammeln, statt Trinkwasser zu verbrauchen.",
+              "translation_ru": "Если в общественном саду снова не хватит воды, организаторам стоит собирать дождевую, а не расходовать питьевую."
             }
           ]
         }
       ],
       "formulas": [
-        "If [the team needs another day to decide], we should reconsider the timetable.",
-        "Wenn [das Team einen weiteren Tag für die Entscheidung braucht], sollten wir den Zeitplan überdenken."
+        "If [condition], [person] should [practical action].",
+        "Wenn [Bedingung], sollte [Person] [konkrete Handlung]."
       ],
       "gen": {
         "status": "curated",

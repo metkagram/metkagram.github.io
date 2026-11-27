@@ -6,85 +6,85 @@
       "id": "GRMDET001",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Точный выбор артикля делает отсылку понятной",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «точный выбор артикля делает отсылку понятной» в живом контексте.",
+      "title_ru": "Впервые назвать предмет, затем сослаться на него",
+      "metaphor_ru": "Сначала вводим новый предмет неопределённым артиклем (a/an; ein/eine), затем возвращаемся к уже известному предмету с определённым (the; der/die/das). В немецком артикль дополнительно согласуется с падежом; это не механическая замена слов.",
       "langs": [
         {
           "lang": "en",
-          "formula": "A careful choice of article makes the reference clear [the team was reviewing the new policy]",
-          "example": "A careful choice of article makes the reference clear in a situation where the team was reviewing the new policy.",
-          "translation": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику.",
+          "formula": "a/an + new singular countable noun → the + already introduced noun/reference.",
+          "example": "A neighbour lent me a ladder yesterday. The ladder was tall enough to reach the roof.",
+          "translation": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши.",
           "examples": [
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику."
+              "text": "A neighbour lent me a ladder yesterday. The ladder was tall enough to reach the roof.",
+              "translation_ru": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где партнёрам требовалось ясное решение."
+              "text": "We found a quiet café behind the library. The café has a courtyard where you can read outside.",
+              "translation_ru": "За библиотекой мы нашли тихое кафе. У него есть дворик, где можно посидеть с книгой."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "She installed an update before the meeting. The update fixed the microphone problem but slowed down the laptop.",
+              "translation_ru": "Перед встречей она установила обновление. Оно устранило проблему с микрофоном, но замедлило ноутбук."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где доступные данные всё ещё были неполными."
+              "text": "I bought a second-hand coat at the market. The coat needed a new button, but the fabric was excellent.",
+              "translation_ru": "На рынке я купил подержанное пальто. Нужно было пришить пуговицу, зато ткань оказалась отличной."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где расписание изменили в последний момент."
+              "text": "A student raised a difficult question during the lecture. The question changed the direction of our discussion.",
+              "translation_ru": "Во время лекции одна студентка задала сложный вопрос. Он изменил ход обсуждения."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "The council proposed a new crossing near the school. The crossing would make the morning walk safer for children.",
+              "translation_ru": "Городские власти предложили сделать новый пешеходный переход возле школы. С ним детям было бы безопаснее добираться утром."
             },
             {
-              "text": "**A careful choice of article makes the reference clear in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где участники ждали объяснения."
+              "text": "He sent me a voice message after our disagreement. The message sounded calmer than his earlier texts.",
+              "translation_ru": "После нашей ссоры он прислал мне голосовое сообщение. Оно звучало спокойнее, чем его предыдущие сообщения."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Eine sorgfältige Artikelwahl macht den Bezug eindeutig [das Team die neue Regelung prüfte]",
-          "example": "Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику.",
+          "formula": "ein/eine/einen + neues zählbares Nomen → der/die/das/den + bereits bekanntes Nomen (Kasus beachten).",
+          "example": "Ein Nachbar hat mir gestern eine Leiter geliehen. Die Leiter war hoch genug, um ans Dach zu kommen.",
+          "translation": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши.",
           "examples": [
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где команда проверяла новую политику."
+              "text": "Ein Nachbar hat mir gestern eine Leiter geliehen. Die Leiter war hoch genug, um ans Dach zu kommen.",
+              "translation_ru": "Вчера сосед одолжил мне лестницу. Она оказалась достаточно высокой, чтобы достать до крыши."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Hinter der Bibliothek haben wir ein ruhiges Café entdeckt. Das Café hat einen Innenhof, in dem man draußen lesen kann.",
+              "translation_ru": "За библиотекой мы нашли тихое кафе. У него есть дворик, где можно посидеть с книгой."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Sie hat vor der Besprechung ein Update installiert. Das Update hat das Mikrofonproblem behoben, aber den Laptop langsamer gemacht.",
+              "translation_ru": "Перед встречей она установила обновление. Оно устранило проблему с микрофоном, но замедлило ноутбук."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Auf dem Markt habe ich einen gebrauchten Mantel gekauft. Der Mantel brauchte einen neuen Knopf, aber der Stoff war hervorragend.",
+              "translation_ru": "На рынке я купил подержанное пальто. Нужно было пришить пуговицу, зато ткань оказалась отличной."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где расписание изменили в последний момент."
+              "text": "Während der Vorlesung stellte eine Studentin eine schwierige Frage. Die Frage gab unserer Diskussion eine neue Richtung.",
+              "translation_ru": "Во время лекции одна студентка задала сложный вопрос. Он изменил ход обсуждения."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Die Stadtverwaltung schlug einen neuen Zebrastreifen in der Nähe der Schule vor. Der Zebrastreifen würde den Schulweg am Morgen sicherer machen.",
+              "translation_ru": "Городские власти предложили сделать новый пешеходный переход возле школы. С ним детям было бы безопаснее добираться утром."
             },
             {
-              "text": "**Eine sorgfältige Artikelwahl macht den Bezug eindeutig in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Точный выбор артикля делает отсылку понятной в ситуации, где участники ждали объяснения."
+              "text": "Nach unserem Streit schickte er mir eine Sprachnachricht. Die Nachricht klang ruhiger als seine vorherigen Texte.",
+              "translation_ru": "После нашей ссоры он прислал мне голосовое сообщение. Оно звучало спокойнее, чем его предыдущие сообщения."
             }
           ]
         }
       ],
       "formulas": [
-        "A careful choice of article makes the reference clear [the team was reviewing the new policy]",
-        "Eine sorgfältige Artikelwahl macht den Bezug eindeutig [das Team die neue Regelung prüfte]"
+        "a/an + new singular countable noun → the + already introduced noun/reference.",
+        "ein/eine/einen + neues zählbares Nomen → der/die/das/den + bereits bekanntes Nomen (Kasus beachten)."
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "GRMDET011",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Лишь немногие возражения касаются главного вопроса",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «лишь немногие возражения касаются главного вопроса» в живом контексте.",
+      "title_ru": "Лишь немногие из определённой группы",
+      "metaphor_ru": "Выделяйте небольшую часть известной группы: после a few of нужен определитель или местоимение, а сказуемое стоит во множественном числе. В немецком естественны родительный падеж или оборот с von.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Only a few of the objections concern the central issue [the team was reviewing the new policy]",
-          "example": "Only a few of the objections concern the central issue in a situation where the team was reviewing the new policy.",
-          "translation": "Лишь немногие возражения касаются главного вопроса в ситуации, где команда проверяла новую политику.",
+          "formula": "Only a few of [the/these/my + plural noun] + [plural verb phrase].",
+          "example": "Only a few of the seedlings survived the frost.",
+          "translation": "Лишь немногие из саженцев пережили заморозки.",
           "examples": [
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где команда проверяла новую политику."
+              "text": "Only a few of the seedlings survived the frost.",
+              "translation_ru": "Лишь немногие из саженцев пережили заморозки."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Only a few of my classmates have kept in touch since graduation.",
+              "translation_ru": "Лишь немногие из моих одноклассников поддерживают связь после окончания школы."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Only a few of these files contain sensitive information.",
+              "translation_ru": "Лишь в нескольких из этих файлов содержится конфиденциальная информация."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Only a few of the witnesses could recall the exact wording.",
+              "translation_ru": "Лишь немногие из свидетелей смогли вспомнить точную формулировку."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где расписание изменили в последний момент."
+              "text": "Only a few of our neighbours are willing to share the cost of repairing the fence.",
+              "translation_ru": "Лишь немногие из наших соседей готовы разделить расходы на ремонт забора."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Only a few of the recipes call for hard-to-find ingredients.",
+              "translation_ru": "Лишь для нескольких рецептов нужны труднодоступные ингредиенты."
             },
             {
-              "text": "**Only a few of the objections concern the central issue in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где участники ждали объяснения."
+              "text": "Only a few of those proposals would actually improve access to public transport.",
+              "translation_ru": "Лишь немногие из этих предложений действительно улучшили бы доступ к общественному транспорту."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Nur wenige der Einwände betreffen die zentrale Frage [das Team die neue Regelung prüfte]",
-          "example": "Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Лишь немногие возражения касаются главного вопроса в ситуации, где команда проверяла новую политику.",
+          "formula": "Nur wenige der [Nomen im Genitiv Plural] / Nur wenige von [Gruppe] + [Verb im Plural].",
+          "example": "Nur wenige der Setzlinge haben den Frost überstanden.",
+          "translation": "Лишь немногие из саженцев пережили заморозки.",
           "examples": [
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где команда проверяла новую политику."
+              "text": "Nur wenige der Setzlinge haben den Frost überstanden.",
+              "translation_ru": "Лишь немногие из саженцев пережили заморозки."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Nur wenige meiner ehemaligen Mitschüler haben seit dem Schulabschluss Kontakt gehalten.",
+              "translation_ru": "Лишь немногие из моих одноклассников поддерживают связь после окончания школы."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Nur wenige dieser Dateien enthalten vertrauliche Informationen.",
+              "translation_ru": "Лишь в нескольких из этих файлов содержится конфиденциальная информация."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Nur wenige der Zeugen konnten sich an den genauen Wortlaut erinnern.",
+              "translation_ru": "Лишь немногие из свидетелей смогли вспомнить точную формулировку."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где расписание изменили в последний момент."
+              "text": "Nur wenige unserer Nachbarn sind bereit, sich an den Kosten für die Reparatur des Zauns zu beteiligen.",
+              "translation_ru": "Лишь немногие из наших соседей готовы разделить расходы на ремонт забора."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Nur wenige der Rezepte erfordern Zutaten, die schwer zu bekommen sind.",
+              "translation_ru": "Лишь для нескольких рецептов нужны труднодоступные ингредиенты."
             },
             {
-              "text": "**Nur wenige der Einwände betreffen die zentrale Frage in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Лишь немногие возражения касаются главного вопроса в ситуации, где участники ждали объяснения."
+              "text": "Nur wenige dieser Vorschläge würden den Zugang zum öffentlichen Nahverkehr tatsächlich verbessern.",
+              "translation_ru": "Лишь немногие из этих предложений действительно улучшили бы доступ к общественному транспорту."
             }
           ]
         }
       ],
       "formulas": [
-        "Only a few of the objections concern the central issue [the team was reviewing the new policy]",
-        "Nur wenige der Einwände betreffen die zentrale Frage [das Team die neue Regelung prüfte]"
+        "Only a few of [the/these/my + plural noun] + [plural verb phrase].",
+        "Nur wenige der [Nomen im Genitiv Plural] / Nur wenige von [Gruppe] + [Verb im Plural]."
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "GRMDET016",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "У каждой альтернативы есть практическое преимущество",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «у каждой альтернативы есть практическое преимущество» в живом контексте.",
+      "title_ru": "Каждый из группы по отдельности",
+      "metaphor_ru": "Подчёркивайте отдельного участника или предмет внутри группы. После each of существительное во множественном числе, но нормативное сказуемое — в единственном; немецкое jeder согласуется с родом подразумеваемого существительного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Each of the alternatives has a practical advantage [the team was reviewing the new policy]",
-          "example": "Each of the alternatives has a practical advantage in a situation where the team was reviewing the new policy.",
-          "translation": "У каждой альтернативы есть практическое преимущество в ситуации, где команда проверяла новую политику.",
+          "formula": "Each of [the/these/my + plural noun] + [singular verb phrase].",
+          "example": "Each of the drawers has a separate lock.",
+          "translation": "У каждого ящика свой замок.",
           "examples": [
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где команда проверяла новую политику."
+              "text": "Each of the drawers has a separate lock.",
+              "translation_ru": "У каждого ящика свой замок."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the partners needed a clear decision.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Each of these exercises targets a different pronunciation difficulty.",
+              "translation_ru": "Каждое из этих упражнений направлено на отработку отдельной трудности произношения."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Each of the candidates was given ten minutes to present their idea.",
+              "translation_ru": "Каждому из кандидатов дали десять минут на представление своей идеи."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Each of our dogs needs a slightly different feeding routine.",
+              "translation_ru": "Каждой из наших собак нужен немного отличающийся режим кормления."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где расписание изменили в последний момент."
+              "text": "Each of the backup copies is stored in a different location.",
+              "translation_ru": "Каждая резервная копия хранится в отдельном месте."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Each of these decisions could affect the children for years to come.",
+              "translation_ru": "Каждое из этих решений может отразиться на детях на долгие годы."
             },
             {
-              "text": "**Each of the alternatives has a practical advantage in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где участники ждали объяснения."
+              "text": "Each of the rooms offers a different view of the harbour.",
+              "translation_ru": "Из каждого номера открывается свой вид на гавань."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Jede der Alternativen hat einen praktischen Vorteil [das Team die neue Regelung prüfte]",
-          "example": "Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "У каждой альтернативы есть практическое преимущество в ситуации, где команда проверяла новую политику.",
+          "formula": "Jeder/Jede/Jedes der [Nomen im Genitiv Plural] / Jede(r) von [Gruppe] + [Verb im Singular].",
+          "example": "Jede der Schubladen hat ein eigenes Schloss.",
+          "translation": "У каждого ящика свой замок.",
           "examples": [
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где команда проверяла новую политику."
+              "text": "Jede der Schubladen hat ein eigenes Schloss.",
+              "translation_ru": "У каждого ящика свой замок."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Jede dieser Übungen zielt auf eine andere Schwierigkeit bei der Aussprache ab.",
+              "translation_ru": "Каждое из этих упражнений направлено на отработку отдельной трудности произношения."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Jeder der Bewerber bekam zehn Minuten Zeit, um seine Idee vorzustellen.",
+              "translation_ru": "Каждому из кандидатов дали десять минут на представление своей идеи."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Jeder unserer Hunde braucht einen etwas anderen Fütterungsrhythmus.",
+              "translation_ru": "Каждой из наших собак нужен немного отличающийся режим кормления."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где расписание изменили в последний момент."
+              "text": "Jede der Sicherungskopien wird an einem anderen Ort aufbewahrt.",
+              "translation_ru": "Каждая резервная копия хранится в отдельном месте."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Jede dieser Entscheidungen könnte sich noch jahrelang auf die Kinder auswirken.",
+              "translation_ru": "Каждое из этих решений может отразиться на детях на долгие годы."
             },
             {
-              "text": "**Jede der Alternativen hat einen praktischen Vorteil in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "У каждой альтернативы есть практическое преимущество в ситуации, где участники ждали объяснения."
+              "text": "Jedes der Zimmer bietet einen anderen Blick auf den Hafen.",
+              "translation_ru": "Из каждого номера открывается свой вид на гавань."
             }
           ]
         }
       ],
       "formulas": [
-        "Each of the alternatives has a practical advantage [the team was reviewing the new policy]",
-        "Jede der Alternativen hat einen praktischen Vorteil [das Team die neue Regelung prüfte]"
+        "Each of [the/these/my + plural noun] + [singular verb phrase].",
+        "Jeder/Jede/Jedes der [Nomen im Genitiv Plural] / Jede(r) von [Gruppe] + [Verb im Singular]."
       ],
       "gen": {
         "status": "curated",
@@ -386,85 +386,85 @@
       "id": "GRMDET021",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Ни одно из предложений не даёт полного решения",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «ни одно из предложений не даёт полного решения» в живом контексте.",
+      "title_ru": "Ни один из двух вариантов",
+      "metaphor_ru": "Neither относится строго к двум предметам или людям; в стандартном английском после него обычно стоит глагол в единственном числе. В немецком выбирайте keiner/keine/keines der beiden по роду существительного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Neither proposal offers a complete solution [the team was reviewing the new policy]",
-          "example": "Neither proposal offers a complete solution in a situation where the team was reviewing the new policy.",
-          "translation": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику.",
+          "formula": "Neither [singular noun] [singular verb] ... / Neither of the two [plural nouns] [singular verb] ...",
+          "example": "Neither route is safe after heavy rain.",
+          "translation": "После сильного дождя ни один из двух маршрутов не безопасен.",
           "examples": [
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику."
+              "text": "Neither route is safe after heavy rain.",
+              "translation_ru": "После сильного дождя ни один из двух маршрутов не безопасен."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Neither candidate has enough experience to lead the workshop alone.",
+              "translation_ru": "Ни у одного из двух кандидатов нет достаточного опыта, чтобы самостоятельно вести занятие."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Neither explanation accounts for the sudden drop in temperature.",
+              "translation_ru": "Ни одно из двух объяснений не объясняет резкого похолодания."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Neither child wants to miss the school play.",
+              "translation_ru": "Ни один из двух детей не хочет пропустить школьный спектакль."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где расписание изменили в последний момент."
+              "text": "Neither device works without an internet connection.",
+              "translation_ru": "Ни одно из двух устройств не работает без подключения к интернету."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Neither suggestion addresses the neighbours' concerns about noise.",
+              "translation_ru": "Ни одно из двух предложений не учитывает жалобы соседей на шум."
             },
             {
-              "text": "**Neither proposal offers a complete solution in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где участники ждали объяснения."
+              "text": "Neither answer tells us how the mistake occurred.",
+              "translation_ru": "Ни один из двух ответов не объясняет, как возникла ошибка."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Keiner der beiden Vorschläge bietet eine vollständige Lösung [das Team die neue Regelung prüfte]",
-          "example": "Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику.",
+          "formula": "Keiner/Keine/Keines der beiden [Pluralnomen] [Singularverb] ...",
+          "example": "Keiner der beiden Wege ist nach starkem Regen sicher.",
+          "translation": "После сильного дождя ни один из двух маршрутов не безопасен.",
           "examples": [
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где команда проверяла новую политику."
+              "text": "Keiner der beiden Wege ist nach starkem Regen sicher.",
+              "translation_ru": "После сильного дождя ни один из двух маршрутов не безопасен."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Keiner der beiden Bewerber hat genug Erfahrung, um den Workshop allein zu leiten.",
+              "translation_ru": "Ни у одного из двух кандидатов нет достаточного опыта, чтобы самостоятельно вести занятие."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Keine der beiden Erklärungen kann den plötzlichen Temperaturabfall erklären.",
+              "translation_ru": "Ни одно из двух объяснений не объясняет резкого похолодания."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Keines der beiden Kinder möchte das Schultheaterstück verpassen.",
+              "translation_ru": "Ни один из двух детей не хочет пропустить школьный спектакль."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где расписание изменили в последний момент."
+              "text": "Keines der beiden Geräte funktioniert ohne Internetverbindung.",
+              "translation_ru": "Ни одно из двух устройств не работает без подключения к интернету."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Keiner der beiden Vorschläge geht auf die Lärmsorgen der Nachbarn ein.",
+              "translation_ru": "Ни одно из двух предложений не учитывает жалобы соседей на шум."
             },
             {
-              "text": "**Keiner der beiden Vorschläge bietet eine vollständige Lösung in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Ни одно из предложений не даёт полного решения в ситуации, где участники ждали объяснения."
+              "text": "Keine der beiden Antworten erklärt, wie es zu dem Fehler kam.",
+              "translation_ru": "Ни один из двух ответов не объясняет, как возникла ошибка."
             }
           ]
         }
       ],
       "formulas": [
-        "Neither proposal offers a complete solution [the team was reviewing the new policy]",
-        "Keiner der beiden Vorschläge bietet eine vollständige Lösung [das Team die neue Regelung prüfte]"
+        "Neither [singular noun] [singular verb] ... / Neither of the two [plural nouns] [singular verb] ...",
+        "Keiner/Keine/Keines der beiden [Pluralnomen] [Singularverb] ..."
       ],
       "gen": {
         "status": "curated",
@@ -481,85 +481,85 @@
       "id": "GRMDET026",
       "group_id": "DET",
       "set_id": "DET",
-      "title_ru": "Большая часть прогресса зависит от подготовки",
-      "metaphor_ru": "Грамматическая задача: выбрать конструкцию «большая часть прогресса зависит от подготовки» в живом контексте.",
+      "title_ru": "Значительная часть неисчисляемого целого",
+      "metaphor_ru": "Обозначайте значительную часть известного объёма времени, работы, информации или другого неисчисляемого целого. Much of обычно сочетается с неисчисляемым существительным; по-немецки естественны ein großer Teil и viel von. Не путайте с many of для счётных предметов.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Much of the progress depends on preparation [the team was reviewing the new policy]",
-          "example": "Much of the progress depends on preparation in a situation where the team was reviewing the new policy.",
-          "translation": "Большая часть прогресса зависит от подготовки в ситуации, где команда проверяла новую политику.",
+          "formula": "Much of [the/this/our + uncountable noun] + [singular verb phrase].",
+          "example": "Much of the furniture was damaged by damp.",
+          "translation": "Значительная часть мебели пострадала от сырости.",
           "examples": [
             {
-              "text": "**Much of the progress depends on preparation in a situation where the team was reviewing the new policy.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где команда проверяла новую политику."
+              "text": "Much of the furniture was damaged by damp.",
+              "translation_ru": "Значительная часть мебели пострадала от сырости."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the partners needed a clear decision.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Much of our time is spent sorting out misunderstandings.",
+              "translation_ru": "Значительная часть нашего времени уходит на устранение недопониманий."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the pilot was entering its final phase.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Much of the evidence has yet to be examined independently.",
+              "translation_ru": "Значительную часть доказательств ещё предстоит независимо проверить."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the available evidence was still incomplete.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Much of the funding will go towards improving wheelchair access.",
+              "translation_ru": "Значительная часть финансирования пойдёт на улучшение доступности для людей на инвалидных колясках."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the timetable had changed at short notice.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где расписание изменили в последний момент."
+              "text": "Much of her confidence came from performing in front of small audiences.",
+              "translation_ru": "Во многом её уверенность в себе появилась благодаря выступлениям перед небольшой аудиторией."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the reviewers were comparing two alternatives.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Much of the software can run without an internet connection.",
+              "translation_ru": "Значительная часть программного обеспечения может работать без подключения к интернету."
             },
             {
-              "text": "**Much of the progress depends on preparation in a situation where the participants were waiting for an explanation.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где участники ждали объяснения."
+              "text": "Much of the advice in this handbook no longer applies to modern heating systems.",
+              "translation_ru": "Значительная часть советов в этом руководстве уже неприменима к современным системам отопления."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ein großer Teil des Fortschritts hängt von der Vorbereitung ab [das Team die neue Regelung prüfte]",
-          "example": "Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem das Team die neue Regelung prüfte.",
-          "translation": "Большая часть прогресса зависит от подготовки в ситуации, где команда проверяла новую политику.",
+          "formula": "Ein großer Teil [Genitivattribut] + [Verb im Singular].",
+          "example": "Ein großer Teil der Möbel wurde durch Feuchtigkeit beschädigt.",
+          "translation": "Значительная часть мебели пострадала от сырости.",
           "examples": [
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem das Team die neue Regelung prüfte.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где команда проверяла новую политику."
+              "text": "Ein großer Teil der Möbel wurde durch Feuchtigkeit beschädigt.",
+              "translation_ru": "Значительная часть мебели пострадала от сырости."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem die Partner eine klare Entscheidung brauchten.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где партнёрам требовалось ясное решение."
+              "text": "Ein großer Teil unserer Zeit geht dafür drauf, Missverständnisse zu klären.",
+              "translation_ru": "Значительная часть нашего времени уходит на устранение недопониманий."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem das Pilotprojekt in seine letzte Phase ging.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где пилотный проект входил в заключительную фазу."
+              "text": "Ein großer Teil des Beweismaterials muss noch unabhängig geprüft werden.",
+              "translation_ru": "Значительную часть доказательств ещё предстоит независимо проверить."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem die verfügbaren Belege noch unvollständig waren.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где доступные данные всё ещё были неполными."
+              "text": "Ein großer Teil der Fördermittel wird in einen besseren Zugang für Rollstuhlfahrer fließen.",
+              "translation_ru": "Значительная часть финансирования пойдёт на улучшение доступности для людей на инвалидных колясках."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem der Zeitplan kurzfristig geändert worden war.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где расписание изменили в последний момент."
+              "text": "Ein großer Teil ihres Selbstvertrauens entstand durch Auftritte vor kleinem Publikum.",
+              "translation_ru": "Во многом её уверенность в себе появилась благодаря выступлениям перед небольшой аудиторией."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem die Gutachter zwei Alternativen verglichen.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где эксперты сравнивали две альтернативы."
+              "text": "Ein großer Teil der Software funktioniert auch ohne Internetverbindung.",
+              "translation_ru": "Значительная часть программного обеспечения может работать без подключения к интернету."
             },
             {
-              "text": "**Ein großer Teil des Fortschritts hängt von der Vorbereitung ab in einem Zusammenhang, in dem die Teilnehmenden auf eine Erklärung warteten.**",
-              "translation_ru": "Большая часть прогресса зависит от подготовки в ситуации, где участники ждали объяснения."
+              "text": "Ein großer Teil der Ratschläge in diesem Handbuch gilt für moderne Heizungsanlagen nicht mehr.",
+              "translation_ru": "Значительная часть советов в этом руководстве уже неприменима к современным системам отопления."
             }
           ]
         }
       ],
       "formulas": [
-        "Much of the progress depends on preparation [the team was reviewing the new policy]",
-        "Ein großer Teil des Fortschritts hängt von der Vorbereitung ab [das Team die neue Regelung prüfte]"
+        "Much of [the/this/our + uncountable noun] + [singular verb phrase].",
+        "Ein großer Teil [Genitivattribut] + [Verb im Singular]."
       ],
       "gen": {
         "status": "curated",
@@ -760,6 +760,96 @@
           "de"
         ],
         "notes": "Grammar pattern: Determiners and quantifiers."
+      }
+    },
+    {
+      "id": "C1DET001",
+      "group_id": "DET",
+      "set_id": "DET",
+      "title_ru": "Не каждый случай подпадает под правило",
+      "metaphor_ru": "Ограничивайте чрезмерное обобщение: «не каждый» — не то же самое, что «ни один». Согласуйте сказуемое с единственным числом.",
+      "title_en": "Not every [X] [Y]",
+      "description_en": "Limit a generalisation without denying it universally; practise quantifier scope and singular agreement.",
+      "description_ru": "Уточняйте границы обобщения через Not every ... и Nicht jede/jeder/jedes ..., не превращая частичное отрицание в полное.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Not every [singular noun] [singular verb phrase].",
+          "example": "Not every disagreement needs to become an argument.",
+          "translation": "Не каждое разногласие должно перерастать в ссору.",
+          "examples": [
+            {
+              "text": "**Not every disagreement needs to become an argument.**",
+              "translation_ru": "Не каждое разногласие должно перерастать в ссору."
+            },
+            {
+              "text": "**Not every notification deserves your immediate attention.**",
+              "translation_ru": "Не каждое уведомление требует немедленного внимания."
+            },
+            {
+              "text": "**Not every quiet child is struggling with the lesson.**",
+              "translation_ru": "Не каждому тихому ребёнку трудно на уроке."
+            },
+            {
+              "text": "**Not every old building can be made energy-efficient without changing its character.**",
+              "translation_ru": "Не каждое старое здание можно сделать энергоэффективным, не изменив его облик."
+            },
+            {
+              "text": "**Not every promise made under pressure should be treated as a firm commitment.**",
+              "translation_ru": "Не каждое обещание, данное под давлением, стоит считать твёрдым обязательством."
+            },
+            {
+              "text": "**Not every technical problem can be solved by adding another tool.**",
+              "translation_ru": "Не всякую техническую проблему можно решить, добавив ещё один инструмент."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nicht jede/jeder/jedes [singular noun] [verb phrase].",
+          "example": "Nicht jede Meinungsverschiedenheit muss zum Streit werden.",
+          "translation": "Не каждое разногласие должно перерастать в ссору.",
+          "examples": [
+            {
+              "text": "**Nicht jede Meinungsverschiedenheit muss zum Streit werden.**",
+              "translation_ru": "Не каждое разногласие должно перерастать в ссору."
+            },
+            {
+              "text": "**Nicht jede Benachrichtigung verdient sofort deine Aufmerksamkeit.**",
+              "translation_ru": "Не каждое уведомление требует немедленного внимания."
+            },
+            {
+              "text": "**Nicht jedes stille Kind hat Schwierigkeiten mit dem Unterricht.**",
+              "translation_ru": "Не каждому тихому ребёнку трудно на уроке."
+            },
+            {
+              "text": "**Nicht jedes alte Gebäude lässt sich energetisch sanieren, ohne seinen Charakter zu verändern.**",
+              "translation_ru": "Не каждое старое здание можно сделать энергоэффективным, не изменив его облик."
+            },
+            {
+              "text": "**Nicht jedes unter Druck gegebene Versprechen sollte als feste Zusage gelten.**",
+              "translation_ru": "Не каждое обещание, данное под давлением, стоит считать твёрдым обязательством."
+            },
+            {
+              "text": "**Nicht jedes technische Problem lässt sich lösen, indem man ein weiteres Werkzeug einsetzt.**",
+              "translation_ru": "Не всякую техническую проблему можно решить, добавив ещё один инструмент."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Not every [singular noun] [singular verb phrase].",
+        "Nicht jede/jeder/jedes [singular noun] [verb phrase]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-27T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Manually curated B2–C1 practice frame; local spaCy annotation pending, no linguistic tags generated."
       }
     }
   ]

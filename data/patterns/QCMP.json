@@ -6,85 +6,85 @@
       "id": "QSTQCMP001",
       "group_id": "QCMP",
       "set_id": "QCMP",
-      "title_ru": "Было бы лучше, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Было бы лучше, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Сравнить варианты через гипотетическое изменение",
+      "metaphor_ru": "Would it be better if + Past Simple ...? обсуждает возможный альтернативный вариант, а не прошлое событие. В немецком Wäre es besser, wenn ...? обычно используется Konjunktiv II (würde + Infinitiv либо форма bliebe/könnte). Не смешивайте эту модель с вопросом о фактическом прошлом.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would it be better if [the team needs another day to decide]?",
-          "example": "Would it be better if the team needs another day to decide?",
-          "translation": "Было бы лучше, если команде нужен ещё день для решения?",
+          "formula": "Would it be better if [subject + hypothetical past-form verb ...]?",
+          "example": "Would it be better if we held the family discussion somewhere neutral?",
+          "translation": "Было бы лучше обсудить семейный вопрос на нейтральной территории?",
           "examples": [
             {
-              "text": "**Would it be better if the team needs another day to decide?**",
-              "translation_ru": "Было бы лучше, если команде нужен ещё день для решения?"
+              "text": "**Would it be better if we held the family discussion somewhere neutral?**",
+              "translation_ru": "Было бы лучше обсудить семейный вопрос на нейтральной территории?"
             },
             {
-              "text": "**Would it be better if the revised plan has not been shared yet?**",
-              "translation_ru": "Было бы лучше, если обновлённым планом ещё не поделились?"
+              "text": "**Would it be better if the library stayed open an hour longer on weekdays?**",
+              "translation_ru": "Было бы лучше, если бы библиотека в будни работала на час дольше?"
             },
             {
-              "text": "**Would it be better if we should compare the two options?**",
-              "translation_ru": "Было бы лучше, если нам следует сравнить два варианта?"
+              "text": "**Would it be better if I kept my phone outside the bedroom at night?**",
+              "translation_ru": "Было бы лучше, если бы я на ночь оставлял телефон за пределами спальни?"
             },
             {
-              "text": "**Would it be better if the client asked for more detail?**",
-              "translation_ru": "Было бы лучше, если клиент попросил больше деталей?"
+              "text": "**Would it be better if we tested the prototype with older users first?**",
+              "translation_ru": "Не лучше ли сначала проверить прототип с участием пожилых пользователей?"
             },
             {
-              "text": "**Would it be better if the pilot may continue next month?**",
-              "translation_ru": "Было бы лучше, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Would it be better if the teacher gave us feedback before the final presentation?**",
+              "translation_ru": "Было бы лучше, если бы преподаватель дал нам обратную связь до итогового выступления?"
             },
             {
-              "text": "**Would it be better if the data need another check?**",
-              "translation_ru": "Было бы лучше, если данные нужно проверить ещё раз?"
+              "text": "**Would it be better if the council explained the changes in plain language?**",
+              "translation_ru": "Было бы лучше, если бы городские власти объяснили изменения простым языком?"
             },
             {
-              "text": "**Would it be better if the meeting was moved?**",
-              "translation_ru": "Было бы лучше, если встречу перенесли?"
+              "text": "**Would it be better if we shared one car instead of driving separately?**",
+              "translation_ru": "Не лучше ли нам поехать на одной машине, а не каждому на своей?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wäre es besser, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wäre es besser, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Было бы лучше, если команде нужен ещё день для решения?",
+          "formula": "Wäre es besser, wenn [Subjekt + Konjunktiv II ...]?",
+          "example": "Wäre es besser, wenn wir das Familiengespräch an einem neutralen Ort führen würden?",
+          "translation": "Было бы лучше обсудить семейный вопрос на нейтральной территории?",
           "examples": [
             {
-              "text": "**Wäre es besser, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Было бы лучше, если команде нужен ещё день для решения?"
+              "text": "**Wäre es besser, wenn wir das Familiengespräch an einem neutralen Ort führen würden?**",
+              "translation_ru": "Было бы лучше обсудить семейный вопрос на нейтральной территории?"
             },
             {
-              "text": "**Wäre es besser, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Было бы лучше, если обновлённым планом ещё не поделились?"
+              "text": "**Wäre es besser, wenn die Bibliothek unter der Woche eine Stunde länger geöffnet bliebe?**",
+              "translation_ru": "Было бы лучше, если бы библиотека в будни работала на час дольше?"
             },
             {
-              "text": "**Wäre es besser, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Было бы лучше, если нам следует сравнить два варианта?"
+              "text": "**Wäre es besser, wenn ich mein Handy nachts außerhalb des Schlafzimmers lassen würde?**",
+              "translation_ru": "Было бы лучше, если бы я на ночь оставлял телефон за пределами спальни?"
             },
             {
-              "text": "**Wäre es besser, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Было бы лучше, если клиент попросил больше деталей?"
+              "text": "**Wäre es besser, wenn wir den Prototyp zuerst mit älteren Menschen testen würden?**",
+              "translation_ru": "Не лучше ли сначала проверить прототип с участием пожилых пользователей?"
             },
             {
-              "text": "**Wäre es besser, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Было бы лучше, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wäre es besser, wenn die Lehrerin uns vor dem Abschlussvortrag Rückmeldung geben würde?**",
+              "translation_ru": "Было бы лучше, если бы преподаватель дал нам обратную связь до итогового выступления?"
             },
             {
-              "text": "**Wäre es besser, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Было бы лучше, если данные нужно проверить ещё раз?"
+              "text": "**Wäre es besser, wenn die Stadtverwaltung die Änderungen in verständlicher Sprache erklären würde?**",
+              "translation_ru": "Было бы лучше, если бы городские власти объяснили изменения простым языком?"
             },
             {
-              "text": "**Wäre es besser, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Было бы лучше, если встречу перенесли?"
+              "text": "**Wäre es besser, wenn wir gemeinsam in einem Auto fahren würden, statt getrennt loszufahren?**",
+              "translation_ru": "Не лучше ли нам поехать на одной машине, а не каждому на своей?"
             }
           ]
         }
       ],
       "formulas": [
-        "Would it be better if [the team needs another day to decide]?",
-        "Wäre es besser, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Would it be better if [subject + hypothetical past-form verb ...]?",
+        "Wäre es besser, wenn [Subjekt + Konjunktiv II ...]?"
       ],
       "gen": {
         "status": "curated",

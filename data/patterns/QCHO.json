@@ -6,85 +6,85 @@
       "id": "QSTQCHO001",
       "group_id": "QCHO",
       "set_id": "QCHO",
-      "title_ru": "Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Действовать сейчас или дождаться события",
+      "metaphor_ru": "Задавайте альтернативный вопрос о времени действия: сделать что-то сейчас или дождаться конкретного события. В немецком следите за положением глагола в придаточном с bis.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Should we decide now or wait until we know whether [the team needs another day to decide]?",
-          "example": "Should we decide now or wait until we know whether the team needs another day to decide?",
-          "translation": "Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения?",
+          "formula": "Should [we] [act now] or wait until [something happens]?",
+          "example": "Should we plant the seedlings today or wait until the ground dries out?",
+          "translation": "Посадим рассаду сегодня или подождём, пока земля просохнет?",
           "examples": [
             {
-              "text": "**Should we decide now or wait until we know whether the team needs another day to decide?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения?"
+              "text": "**Should we plant the seedlings today or wait until the ground dries out?**",
+              "translation_ru": "Посадим рассаду сегодня или подождём, пока земля просохнет?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether the revised plan has not been shared yet?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, обновлённым планом ещё не поделились?"
+              "text": "**Should I send the apology now or wait until we've both calmed down?**",
+              "translation_ru": "Мне извиниться сейчас или подождать, пока мы оба успокоимся?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether we should compare the two options?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, нам следует сравнить два варианта?"
+              "text": "**Should we replace the router tonight or wait until everyone is offline?**",
+              "translation_ru": "Заменим роутер сегодня вечером или подождём, пока все выйдут из сети?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether the client asked for more detail?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, клиент попросил больше деталей?"
+              "text": "**Should they announce the results now or wait until the appeals have been reviewed?**",
+              "translation_ru": "Им объявить результаты сейчас или дождаться рассмотрения апелляций?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether the pilot may continue next month?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Should we leave for the coast at dawn or wait until the storm passes?**",
+              "translation_ru": "Поедем к морю на рассвете или подождём, пока пройдёт шторм?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether the data need another check?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, данные нужно проверить ещё раз?"
+              "text": "**Should she apply for the course now or wait until she has a stronger portfolio?**",
+              "translation_ru": "Ей подать заявку на курс сейчас или сначала собрать более сильное портфолио?"
             },
             {
-              "text": "**Should we decide now or wait until we know whether the meeting was moved?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, встречу перенесли?"
+              "text": "**Should we discuss the proposal tonight or wait until Nadia has read it?**",
+              "translation_ru": "Обсудим предложение сегодня вечером или подождём, пока Надя его прочитает?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения?",
+          "formula": "Sollen [wir] [jetzt handeln] oder warten, bis [etwas geschieht]?",
+          "example": "Sollen wir die Setzlinge heute pflanzen oder warten, bis der Boden getrocknet ist?",
+          "translation": "Посадим рассаду сегодня или подождём, пока земля просохнет?",
           "examples": [
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, команде нужен ещё день для решения?"
+              "text": "**Sollen wir die Setzlinge heute pflanzen oder warten, bis der Boden getrocknet ist?**",
+              "translation_ru": "Посадим рассаду сегодня или подождём, пока земля просохнет?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, обновлённым планом ещё не поделились?"
+              "text": "**Soll ich mich jetzt entschuldigen oder warten, bis wir uns beide beruhigt haben?**",
+              "translation_ru": "Мне извиниться сейчас или подождать, пока мы оба успокоимся?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, нам следует сравнить два варианта?"
+              "text": "**Sollen wir den Router heute Abend austauschen oder warten, bis niemand mehr online ist?**",
+              "translation_ru": "Заменим роутер сегодня вечером или подождём, пока все выйдут из сети?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, клиент попросил больше деталей?"
+              "text": "**Sollen sie die Ergebnisse jetzt bekannt geben oder warten, bis die Einsprüche geprüft worden sind?**",
+              "translation_ru": "Им объявить результаты сейчас или дождаться рассмотрения апелляций?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Sollen wir im Morgengrauen an die Küste fahren oder warten, bis der Sturm vorübergezogen ist?**",
+              "translation_ru": "Поедем к морю на рассвете или подождём, пока пройдёт шторм?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, данные нужно проверить ещё раз?"
+              "text": "**Soll sie sich jetzt für den Kurs bewerben oder warten, bis ihre Arbeitsproben überzeugender sind?**",
+              "translation_ru": "Ей подать заявку на курс сейчас или сначала собрать более сильное портфолио?"
             },
             {
-              "text": "**Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Нам решить сейчас или подождать, пока мы не узнаем, встречу перенесли?"
+              "text": "**Sollen wir den Vorschlag heute Abend besprechen oder warten, bis Nadia ihn gelesen hat?**",
+              "translation_ru": "Обсудим предложение сегодня вечером или подождём, пока Надя его прочитает?"
             }
           ]
         }
       ],
       "formulas": [
-        "Should we decide now or wait until we know whether [the team needs another day to decide]?",
-        "Sollten wir jetzt entscheiden oder warten, bis wir wissen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Should [we] [act now] or wait until [something happens]?",
+        "Sollen [wir] [jetzt handeln] oder warten, bis [etwas geschieht]?"
       ],
       "gen": {
         "status": "curated",
@@ -101,85 +101,85 @@
       "id": "QSTQCHO011",
       "group_id": "QCHO",
       "set_id": "QCHO",
-      "title_ru": "Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить, что человек предпочёл бы",
+      "metaphor_ru": "Тренируйте вопрос о личном предпочтении между двумя действиями: would rather ... or ... и немецкое würde lieber ... oder ... . Это не совет и не приказ, а приглашение выбрать вариант.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Would you rather act now or check whether [the team needs another day to decide]?",
-          "example": "Would you rather act now or check whether the team needs another day to decide?",
-          "translation": "Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения?",
+          "formula": "Would [someone] rather [do A] or [do B]?",
+          "example": "Would you rather take the ferry or cycle along the shore?",
+          "translation": "Ты бы предпочёл переправиться на пароме или проехать на велосипеде вдоль берега?",
           "examples": [
             {
-              "text": "**Would you rather act now or check whether the team needs another day to decide?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения?"
+              "text": "**Would you rather take the ferry or cycle along the shore?**",
+              "translation_ru": "Ты бы предпочёл переправиться на пароме или проехать на велосипеде вдоль берега?"
             },
             {
-              "text": "**Would you rather act now or check whether the revised plan has not been shared yet?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, обновлённым планом ещё не поделились?"
+              "text": "**Would your grandfather rather have visitors in the morning or rest until lunch?**",
+              "translation_ru": "Твой дедушка предпочёл бы принять гостей утром или отдохнуть до обеда?"
             },
             {
-              "text": "**Would you rather act now or check whether we should compare the two options?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, нам следует сравнить два варианта?"
+              "text": "**Would we rather fix the old camera or save up for a second-hand one?**",
+              "translation_ru": "Нам лучше починить старую камеру или накопить на подержанную?"
             },
             {
-              "text": "**Would you rather act now or check whether the client asked for more detail?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, клиент попросил больше деталей?"
+              "text": "**Would the students rather debate the article or write a short response?**",
+              "translation_ru": "Студенты предпочли бы обсудить статью или написать короткий отклик?"
             },
             {
-              "text": "**Would you rather act now or check whether the pilot may continue next month?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Would you rather tell her directly or ask someone to raise the subject?**",
+              "translation_ru": "Ты бы предпочёл сказать ей прямо или попросить кого-нибудь поднять эту тему?"
             },
             {
-              "text": "**Would you rather act now or check whether the data need another check?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, данные нужно проверить ещё раз?"
+              "text": "**Would they rather keep the shared garden wild or add a paved path?**",
+              "translation_ru": "Они предпочли бы оставить общий сад в естественном виде или проложить дорожку?"
             },
             {
-              "text": "**Would you rather act now or check whether the meeting was moved?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, встречу перенесли?"
+              "text": "**Would she rather learn the dialect through conversations or follow a structured course?**",
+              "translation_ru": "Она предпочла бы изучать диалект в разговорах или пройти курс по программе?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Würden Sie lieber jetzt handeln oder prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Würden Sie lieber jetzt handeln oder prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения?",
+          "formula": "Würde [jemand] lieber [A tun] oder [B tun]?",
+          "example": "Würdest du lieber die Fähre nehmen oder am Ufer entlangradeln?",
+          "translation": "Ты бы предпочёл переправиться на пароме или проехать на велосипеде вдоль берега?",
           "examples": [
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, команде нужен ещё день для решения?"
+              "text": "**Würdest du lieber die Fähre nehmen oder am Ufer entlangradeln?**",
+              "translation_ru": "Ты бы предпочёл переправиться на пароме или проехать на велосипеде вдоль берега?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, обновлённым планом ещё не поделились?"
+              "text": "**Würde dein Großvater lieber morgens Besuch bekommen oder sich bis zum Mittagessen ausruhen?**",
+              "translation_ru": "Твой дедушка предпочёл бы принять гостей утром или отдохнуть до обеда?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, нам следует сравнить два варианта?"
+              "text": "**Würden wir lieber die alte Kamera reparieren oder für eine gebrauchte sparen?**",
+              "translation_ru": "Нам лучше починить старую камеру или накопить на подержанную?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, клиент попросил больше деталей?"
+              "text": "**Würden die Studierenden lieber über den Artikel diskutieren oder eine kurze Stellungnahme schreiben?**",
+              "translation_ru": "Студенты предпочли бы обсудить статью или написать короткий отклик?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Würdest du es ihr lieber direkt sagen oder jemanden bitten, das Thema anzusprechen?**",
+              "translation_ru": "Ты бы предпочёл сказать ей прямо или попросить кого-нибудь поднять эту тему?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, данные нужно проверить ещё раз?"
+              "text": "**Würden sie den Gemeinschaftsgarten lieber naturbelassen lassen oder einen gepflasterten Weg anlegen?**",
+              "translation_ru": "Они предпочли бы оставить общий сад в естественном виде или проложить дорожку?"
             },
             {
-              "text": "**Würden Sie lieber jetzt handeln oder prüfen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Вы предпочли бы действовать сейчас или проверить, встречу перенесли?"
+              "text": "**Würde sie den Dialekt lieber im Gespräch lernen oder einen strukturierten Kurs besuchen?**",
+              "translation_ru": "Она предпочла бы изучать диалект в разговорах или пройти курс по программе?"
             }
           ]
         }
       ],
       "formulas": [
-        "Would you rather act now or check whether [the team needs another day to decide]?",
-        "Würden Sie lieber jetzt handeln oder prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Would [someone] rather [do A] or [do B]?",
+        "Würde [jemand] lieber [A tun] oder [B tun]?"
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "QSTQCHO021",
       "group_id": "QCHO",
       "set_id": "QCHO",
-      "title_ru": "Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу» в подходящей ситуации.",
+      "title_ru": "Выбрать вариант с учётом условия",
+      "metaphor_ru": "Назовите реальное ограничение и сравните два осуществимых действия. Английское if и немецкое wenn вводят условие; в немецком после придаточного основной глагол занимает вторую позицию. Вопрос не предполагает заранее «правильного» варианта.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Is the better option to continue if [the team needs another day to decide] or to pause?",
-          "example": "Is the better option to continue if the team needs another day to decide or to pause?",
-          "translation": "Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу?",
+          "formula": "If [constraint], would it make more sense to [A] or [B]?",
+          "example": "If the rain doesn't let up, would it make more sense to take the bus or postpone the hike?",
+          "translation": "Если дождь не прекратится, разумнее поехать на автобусе или перенести поход?",
           "examples": [
             {
-              "text": "**Is the better option to continue if the team needs another day to decide or to pause?**",
-              "translation_ru": "Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу?"
+              "text": "**If the rain doesn't let up, would it make more sense to take the bus or postpone the hike?**",
+              "translation_ru": "Если дождь не прекратится, разумнее поехать на автобусе или перенести поход?"
             },
             {
-              "text": "**Is the better option to continue if the revised plan has not been shared yet or to pause?**",
-              "translation_ru": "Лучше продолжить, если обновлённым планом ещё не поделились, или сделать паузу?"
+              "text": "**If she needs a quieter place to study, should we move the desk or agree on quiet hours?**",
+              "translation_ru": "Если ей нужно более тихое место для учёбы, переставить стол или договориться о часах тишины?"
             },
             {
-              "text": "**Is the better option to continue if we should compare the two options or to pause?**",
-              "translation_ru": "Лучше продолжить, если нам следует сравнить два варианта, или сделать паузу?"
+              "text": "**If the volunteers can't stay late, would it be better to shorten the programme or start earlier?**",
+              "translation_ru": "Если волонтёры не могут задержаться, лучше сократить программу или начать раньше?"
             },
             {
-              "text": "**Is the better option to continue if the client asked for more detail or to pause?**",
-              "translation_ru": "Лучше продолжить, если клиент попросил больше деталей, или сделать паузу?"
+              "text": "**If my phone battery keeps draining, should I replace it or first check which apps run in the background?**",
+              "translation_ru": "Если телефон постоянно быстро разряжается, стоит заменить аккумулятор или сначала проверить фоновые приложения?"
             },
             {
-              "text": "**Is the better option to continue if the pilot may continue next month or to pause?**",
-              "translation_ru": "Лучше продолжить, если пилотный проект может продолжиться в следующем месяце, или сделать паузу?"
+              "text": "**If we can't translate the whole guide by Friday, should we publish the essential sections or delay the release?**",
+              "translation_ru": "Если не успеем перевести всё руководство к пятнице, опубликовать основные разделы или перенести выпуск?"
             },
             {
-              "text": "**Is the better option to continue if the data need another check or to pause?**",
-              "translation_ru": "Лучше продолжить, если данные нужно проверить ещё раз, или сделать паузу?"
+              "text": "**If the landlord won't fix the heating this week, would you rather ask for a temporary heater or stay somewhere else?**",
+              "translation_ru": "Если хозяин квартиры не починит отопление на этой неделе, ты бы предпочёл попросить обогреватель или временно пожить в другом месте?"
             },
             {
-              "text": "**Is the better option to continue if the meeting was moved or to pause?**",
-              "translation_ru": "Лучше продолжить, если встречу перенесли, или сделать паузу?"
+              "text": "**If both roads are blocked, should we wait for an update or take the longer route through the valley?**",
+              "translation_ru": "Если обе дороги перекрыты, ждать новостей или ехать более длинным путём через долину?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ist es besser fortzufahren, wenn [das Team einen weiteren Tag für die Entscheidung braucht], oder zu pausieren?",
-          "example": "Ist es besser fortzufahren, wenn das Team einen weiteren Tag für die Entscheidung braucht, oder zu pausieren?",
-          "translation": "Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу?",
+          "formula": "Wenn [Bedingung ... Verb am Ende], wäre es sinnvoller, [A] oder [B] zu [tun]?",
+          "example": "Wenn der Regen nicht nachlässt, wäre es sinnvoller, den Bus zu nehmen oder die Wanderung zu verschieben?",
+          "translation": "Если дождь не прекратится, разумнее поехать на автобусе или перенести поход?",
           "examples": [
             {
-              "text": "**Ist es besser fortzufahren, wenn das Team einen weiteren Tag für die Entscheidung braucht, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если команде нужен ещё день для решения, или сделать паузу?"
+              "text": "**Wenn der Regen nicht nachlässt, wäre es sinnvoller, den Bus zu nehmen oder die Wanderung zu verschieben?**",
+              "translation_ru": "Если дождь не прекратится, разумнее поехать на автобусе или перенести поход?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn der überarbeitete Plan noch nicht geteilt wurde, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если обновлённым планом ещё не поделились, или сделать паузу?"
+              "text": "**Wenn sie zum Lernen mehr Ruhe braucht, sollten wir den Schreibtisch umstellen oder feste Ruhezeiten vereinbaren?**",
+              "translation_ru": "Если ей нужно более тихое место для учёбы, переставить стол или договориться о часах тишины?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn wir die beiden Optionen vergleichen sollten, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если нам следует сравнить два варианта, или сделать паузу?"
+              "text": "**Wenn die Freiwilligen nicht länger bleiben können, sollten wir das Programm kürzen oder früher anfangen?**",
+              "translation_ru": "Если волонтёры не могут задержаться, лучше сократить программу или начать раньше?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn der Kunde um mehr Details gebeten hat, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если клиент попросил больше деталей, или сделать паузу?"
+              "text": "**Wenn mein Handyakku ständig leer ist, sollte ich ihn austauschen oder erst prüfen, welche Apps im Hintergrund laufen?**",
+              "translation_ru": "Если телефон постоянно быстро разряжается, стоит заменить аккумулятор или сначала проверить фоновые приложения?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если пилотный проект может продолжиться в следующем месяце, или сделать паузу?"
+              "text": "**Wenn wir den gesamten Leitfaden bis Freitag nicht übersetzen können, sollten wir die wichtigsten Abschnitte veröffentlichen oder die Veröffentlichung verschieben?**",
+              "translation_ru": "Если не успеем перевести всё руководство к пятнице, опубликовать основные разделы или перенести выпуск?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn die Daten noch einmal geprüft werden müssen, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если данные нужно проверить ещё раз, или сделать паузу?"
+              "text": "**Wenn der Vermieter die Heizung diese Woche nicht repariert, würdest du lieber um ein Ersatzheizgerät bitten oder vorübergehend woanders unterkommen?**",
+              "translation_ru": "Если хозяин квартиры не починит отопление на этой неделе, ты бы предпочёл попросить обогреватель или временно пожить в другом месте?"
             },
             {
-              "text": "**Ist es besser fortzufahren, wenn die Sitzung verschoben wurde, oder zu pausieren?**",
-              "translation_ru": "Лучше продолжить, если встречу перенесли, или сделать паузу?"
+              "text": "**Wenn beide Straßen gesperrt sind, sollen wir auf neue Informationen warten oder den längeren Weg durchs Tal nehmen?**",
+              "translation_ru": "Если обе дороги перекрыты, ждать новостей или ехать более длинным путём через долину?"
             }
           ]
         }
       ],
       "formulas": [
-        "Is the better option to continue if [the team needs another day to decide] or to pause?",
-        "Ist es besser fortzufahren, wenn [das Team einen weiteren Tag für die Entscheidung braucht], oder zu pausieren?"
+        "If [constraint], would it make more sense to [A] or [B]?",
+        "Wenn [Bedingung ... Verb am Ende], wäre es sinnvoller, [A] oder [B] zu [tun]?"
       ],
       "gen": {
         "status": "curated",

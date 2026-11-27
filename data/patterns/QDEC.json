@@ -6,85 +6,85 @@
       "id": "QSTQDEC001",
       "group_id": "QDEC",
       "set_id": "QDEC",
-      "title_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какое решение было бы уместно, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Спросить о справедливом решении при ограничениях",
+      "metaphor_ru": "Вместо абстрактного «что решить?» уточняйте конкретную проблему и ограничение: what would be a fair way to ... if ...? В немецком используйте естественное wie ließe sich ... fair ...? Это вопрос о критерии справедливости, а не готовый ответ.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What decision would be appropriate if [the team needs another day to decide]?",
-          "example": "What decision would be appropriate if the team needs another day to decide?",
-          "translation": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
+          "formula": "What would be a fair way to [do X] if [constraint]? / How could we [act] fairly if [constraint]?",
+          "example": "What would be a fair way to divide the chores if one of us works night shifts?",
+          "translation": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?",
           "examples": [
             {
-              "text": "**What decision would be appropriate if the team needs another day to decide?**",
-              "translation_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?"
+              "text": "**What would be a fair way to divide the chores if one of us works night shifts?**",
+              "translation_ru": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?"
             },
             {
-              "text": "**What decision would be appropriate if the revised plan has not been shared yet?**",
-              "translation_ru": "Какое решение было бы уместно, если обновлённым планом ещё не поделились?"
+              "text": "**How could we allocate the rehearsal space fairly if three bands need it on Fridays?**",
+              "translation_ru": "Как честно распределить репетиционное помещение, если оно нужно трём группам по пятницам?"
             },
             {
-              "text": "**What decision would be appropriate if we should compare the two options?**",
-              "translation_ru": "Какое решение было бы уместно, если нам следует сравнить два варианта?"
+              "text": "**What would be a fair response if half the concert was cancelled?**",
+              "translation_ru": "Какое решение было бы справедливым, если половину концерта отменили?"
             },
             {
-              "text": "**What decision would be appropriate if the client asked for more detail?**",
-              "translation_ru": "Какое решение было бы уместно, если клиент попросил больше деталей?"
+              "text": "**How could we fairly decide who speaks first if both groups want the floor?**",
+              "translation_ru": "Как справедливо решить, кто выступает первым, если обе группы хотят высказаться?"
             },
             {
-              "text": "**What decision would be appropriate if the pilot may continue next month?**",
-              "translation_ru": "Какое решение было бы уместно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**How should we divide the community garden plots fairly if demand exceeds the space available?**",
+              "translation_ru": "Как разделить грядки в общественном саду, если места на всех не хватает?"
             },
             {
-              "text": "**What decision would be appropriate if the data need another check?**",
-              "translation_ru": "Какое решение было бы уместно, если данные нужно проверить ещё раз?"
+              "text": "**What's a fair way to handle the noise complaint if the building has no clear rules?**",
+              "translation_ru": "Как справедливо разобраться с жалобой на шум, если в доме нет чётких правил?"
             },
             {
-              "text": "**What decision would be appropriate if the meeting was moved?**",
-              "translation_ru": "Какое решение было бы уместно, если встречу перенесли?"
+              "text": "**How can we assess the applicants fairly when some couldn't afford extra courses?**",
+              "translation_ru": "Как объективно оценить кандидатов, если некоторые не могли позволить себе дополнительные курсы?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welche Entscheidung wäre angemessen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welche Entscheidung wäre angemessen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какое решение было бы уместно, если команде нужен ещё день для решения?",
+          "formula": "Wie ließe sich [X] fair [Verb], wenn [Bedingung]? / Wie könnten wir [X] fair [Verb]?",
+          "example": "Wie ließen sich die Hausarbeiten fair aufteilen, wenn einer von uns Nachtschicht hat?",
+          "translation": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?",
           "examples": [
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какое решение было бы уместно, если команде нужен ещё день для решения?"
+              "text": "**Wie ließen sich die Hausarbeiten fair aufteilen, wenn einer von uns Nachtschicht hat?**",
+              "translation_ru": "Как справедливо распределить домашние дела, если один из нас работает в ночную смену?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какое решение было бы уместно, если обновлённым планом ещё не поделились?"
+              "text": "**Wie könnten wir die Proberäume fair vergeben, wenn drei Bands sie freitags brauchen?**",
+              "translation_ru": "Как честно распределить репетиционное помещение, если оно нужно трём группам по пятницам?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какое решение было бы уместно, если нам следует сравнить два варианта?"
+              "text": "**Was wäre eine faire Lösung, wenn die Hälfte des Konzerts ausgefallen ist?**",
+              "translation_ru": "Какое решение было бы справедливым, если половину концерта отменили?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какое решение было бы уместно, если клиент попросил больше деталей?"
+              "text": "**Wie könnten wir fair entscheiden, wer zuerst spricht, wenn beide Gruppen das Wort ergreifen möchten?**",
+              "translation_ru": "Как справедливо решить, кто выступает первым, если обе группы хотят высказаться?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какое решение было бы уместно, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wie ließen sich die Beete im Gemeinschaftsgarten gerecht verteilen, wenn der Platz nicht für alle reicht?**",
+              "translation_ru": "Как разделить грядки в общественном саду, если места на всех не хватает?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какое решение было бы уместно, если данные нужно проверить ещё раз?"
+              "text": "**Wie könnten wir mit der Lärmbeschwerde fair umgehen, wenn es im Haus keine klaren Regeln gibt?**",
+              "translation_ru": "Как справедливо разобраться с жалобой на шум, если в доме нет чётких правил?"
             },
             {
-              "text": "**Welche Entscheidung wäre angemessen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Какое решение было бы уместно, если встречу перенесли?"
+              "text": "**Wie können wir die Bewerber fair beurteilen, wenn sich manche keine zusätzlichen Kurse leisten konnten?**",
+              "translation_ru": "Как объективно оценить кандидатов, если некоторые не могли позволить себе дополнительные курсы?"
             }
           ]
         }
       ],
       "formulas": [
-        "What decision would be appropriate if [the team needs another day to decide]?",
-        "Welche Entscheidung wäre angemessen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would be a fair way to [do X] if [constraint]? / How could we [act] fairly if [constraint]?",
+        "Wie ließe sich [X] fair [Verb], wenn [Bedingung]? / Wie könnten wir [X] fair [Verb]?"
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "QSTQDEC031",
       "group_id": "QDEC",
       "set_id": "QDEC",
-      "title_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Что сделало бы действие разумным, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, когда действие действительно оправдано",
+      "metaphor_ru": "Ищите проверяемое условие, при котором рискованное или преждевременное действие становится разумным. Английские what would make it reasonable и what would justify не всегда дословно соответствуют немецким was würde ... rechtfertigen и unter welchen Voraussetzungen wäre es vertretbar. В условных ситуациях отличайте реальные факты от контрфактов прошлого.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What would make it reasonable to act if [the team needs another day to decide]?",
-          "example": "What would make it reasonable to act if the team needs another day to decide?",
-          "translation": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
+          "formula": "What would make it reasonable to [act] if [uncertainty]? / Under what conditions would [action] be justified?",
+          "example": "What would make it reasonable to book the tickets now if our travel dates might still change?",
+          "translation": "Что позволило бы обоснованно купить билеты сейчас, если даты поездки ещё могут измениться?",
           "examples": [
             {
-              "text": "**What would make it reasonable to act if the team needs another day to decide?**",
-              "translation_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?"
+              "text": "**What would make it reasonable to book the tickets now if our travel dates might still change?**",
+              "translation_ru": "Что позволило бы обоснованно купить билеты сейчас, если даты поездки ещё могут измениться?"
             },
             {
-              "text": "**What would make it reasonable to act if the revised plan has not been shared yet?**",
-              "translation_ru": "Что сделало бы действие разумным, если обновлённым планом ещё не поделились?"
+              "text": "**What would justify replacing the boiler if the technician says it can still be repaired?**",
+              "translation_ru": "При каких условиях стоит менять котёл, если мастер считает, что его ещё можно починить?"
             },
             {
-              "text": "**What would make it reasonable to act if we should compare the two options?**",
-              "translation_ru": "Что сделало бы действие разумным, если нам следует сравнить два варианта?"
+              "text": "**Under what conditions would it be reasonable to publish the findings before an independent review?**",
+              "translation_ru": "При каких условиях можно обоснованно публиковать результаты до независимой проверки?"
             },
             {
-              "text": "**What would make it reasonable to act if the client asked for more detail?**",
-              "translation_ru": "Что сделало бы действие разумным, если клиент попросил больше деталей?"
+              "text": "**What evidence would make it reasonable to reopen the path if the bridge has been inspected only once?**",
+              "translation_ru": "Какие доказательства позволили бы открыть тропу, если мост проверили всего один раз?"
             },
             {
-              "text": "**What would make it reasonable to act if the pilot may continue next month?**",
-              "translation_ru": "Что сделало бы действие разумным, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would make it worth trying another language exchange if the first conversation felt awkward?**",
+              "translation_ru": "Что сделало бы ещё одну попытку языкового обмена разумной, если первый разговор вышел неловким?"
             },
             {
-              "text": "**What would make it reasonable to act if the data need another check?**",
-              "translation_ru": "Что сделало бы действие разумным, если данные нужно проверить ещё раз?"
+              "text": "**What would have justified postponing the move if the landlord had offered us a shorter lease?**",
+              "translation_ru": "Что оправдало бы перенос переезда, если бы хозяин предложил нам более короткий договор аренды?"
             },
             {
-              "text": "**What would make it reasonable to act if the meeting was moved?**",
-              "translation_ru": "Что сделало бы действие разумным, если встречу перенесли?"
+              "text": "**Under what circumstances would sharing the recording be justified if not everyone has agreed to be identified?**",
+              "translation_ru": "При каких обстоятельствах можно было бы поделиться записью, если не все согласились на раскрытие своих имён?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was würde es sinnvoll machen, zu handeln, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was würde es sinnvoll machen, zu handeln, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Что сделало бы действие разумным, если команде нужен ещё день для решения?",
+          "formula": "Was würde es rechtfertigen, [Handlung] zu [Infinitiv], wenn [Unsicherheit]? / Unter welchen Voraussetzungen wäre [Handlung] vertretbar?",
+          "example": "Was würde es rechtfertigen, die Fahrkarten jetzt schon zu buchen, wenn sich unsere Reisedaten noch ändern könnten?",
+          "translation": "Что оправдало бы покупку билетов уже сейчас, если даты поездки ещё могут измениться?",
           "examples": [
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Что сделало бы действие разумным, если команде нужен ещё день для решения?"
+              "text": "**Was würde es rechtfertigen, die Fahrkarten jetzt schon zu buchen, wenn sich unsere Reisedaten noch ändern könnten?**",
+              "translation_ru": "Что оправдало бы покупку билетов уже сейчас, если даты поездки ещё могут измениться?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Что сделало бы действие разумным, если обновлённым планом ещё не поделились?"
+              "text": "**Was würde einen Austausch der Heizung rechtfertigen, wenn sie laut Techniker noch repariert werden kann?**",
+              "translation_ru": "Что оправдало бы замену отопления, если, по словам мастера, его ещё можно починить?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Что сделало бы действие разумным, если нам следует сравнить два варианта?"
+              "text": "**Unter welchen Voraussetzungen wäre es vertretbar, die Ergebnisse vor einer unabhängigen Prüfung zu veröffentlichen?**",
+              "translation_ru": "При каких условиях допустимо публиковать результаты до независимой проверки?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Что сделало бы действие разумным, если клиент попросил больше деталей?"
+              "text": "**Welche Nachweise bräuchten wir, um den Weg wieder freizugeben, wenn die Brücke erst einmal geprüft wurde?**",
+              "translation_ru": "Какие подтверждения нужны, чтобы вновь открыть тропу, если мост осмотрели всего один раз?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Что сделало бы действие разумным, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was müsste sich ändern, damit sich nach einem holprigen ersten Gespräch ein zweiter Sprachaustausch lohnt?**",
+              "translation_ru": "Что должно измениться, чтобы после неловкого первого разговора стоило ещё раз попробовать языковой обмен?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Что сделало бы действие разумным, если данные нужно проверить ещё раз?"
+              "text": "**Was hätte dafür gesprochen, den Umzug zu verschieben, wenn der Vermieter uns einen kürzeren Mietvertrag angeboten hätte?**",
+              "translation_ru": "Что говорило бы в пользу переноса переезда, если бы арендодатель предложил более короткий договор?"
             },
             {
-              "text": "**Was würde es sinnvoll machen, zu handeln, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Что сделало бы действие разумным, если встречу перенесли?"
+              "text": "**Unter welchen Umständen wäre es vertretbar, die Aufnahme weiterzugeben, wenn nicht alle Beteiligten der Nennung ihrer Namen zugestimmt haben?**",
+              "translation_ru": "В каких обстоятельствах допустимо передать запись, если не все участники согласились на упоминание своих имён?"
             }
           ]
         }
       ],
       "formulas": [
-        "What would make it reasonable to act if [the team needs another day to decide]?",
-        "Was würde es sinnvoll machen, zu handeln, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would make it reasonable to [act] if [uncertainty]? / Under what conditions would [action] be justified?",
+        "Was würde es rechtfertigen, [Handlung] zu [Infinitiv], wenn [Unsicherheit]? / Unter welchen Voraussetzungen wäre [Handlung] vertretbar?"
       ],
       "gen": {
         "status": "curated",
@@ -380,6 +380,96 @@
           "de"
         ],
         "notes": "Question pattern: Decision questions."
+      }
+    },
+    {
+      "id": "C1QDEC001",
+      "group_id": "QDEC",
+      "set_id": "QDEC",
+      "title_ru": "Спросить, что изменит решение собеседника",
+      "metaphor_ru": "Не спорьте о выборе вслепую: выясните, какие аргументы, условия или доказательства могли бы изменить позицию человека.",
+      "title_en": "What would convince you to [X]?",
+      "description_en": "Ask for the decision threshold or evidence that could change someone's mind, rather than debating without criteria.",
+      "description_ru": "Не спорьте о выборе вслепую: выясните, какие аргументы, условия или доказательства могли бы изменить позицию человека.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "What would convince you to [X]?",
+          "example": "What would convince you to take the train instead of driving?",
+          "translation": "Что могло бы убедить тебя поехать на поезде вместо машины?",
+          "examples": [
+            {
+              "text": "**What would convince you to take the train instead of driving?**",
+              "translation_ru": "Что могло бы убедить тебя поехать на поезде вместо машины?"
+            },
+            {
+              "text": "**What would convince you to join a conversation class rather than study alone?**",
+              "translation_ru": "Что убедило бы тебя записаться на разговорный курс вместо самостоятельной учёбы?"
+            },
+            {
+              "text": "**What would convince you to buy a refurbished laptop rather than a new one?**",
+              "translation_ru": "Что могло бы убедить тебя купить восстановленный ноутбук вместо нового?"
+            },
+            {
+              "text": "**What would convince you to tell your friend that the joke hurt?**",
+              "translation_ru": "Что помогло бы тебе решиться сказать подруге, что её шутка тебя задела?"
+            },
+            {
+              "text": "**What would convince you to postpone the event until the venue is accessible?**",
+              "translation_ru": "Что убедило бы тебя отложить мероприятие, пока площадка не станет доступной для всех?"
+            },
+            {
+              "text": "**What would convince you to share the raw data instead of just the chart?**",
+              "translation_ru": "Что убедило бы тебя поделиться исходными данными, а не только диаграммой?"
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Was würde dich überzeugen, [X] zu tun?",
+          "example": "Was würde dich überzeugen, den Zug zu nehmen, statt mit dem Auto zu fahren?",
+          "translation": "Что могло бы убедить тебя поехать на поезде вместо машины?",
+          "examples": [
+            {
+              "text": "**Was würde dich überzeugen, den Zug zu nehmen, statt mit dem Auto zu fahren?**",
+              "translation_ru": "Что могло бы убедить тебя поехать на поезде вместо машины?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, einen Konversationskurs zu besuchen, statt allein zu lernen?**",
+              "translation_ru": "Что убедило бы тебя записаться на разговорный курс вместо самостоятельной учёбы?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, einen generalüberholten Laptop statt eines neuen zu kaufen?**",
+              "translation_ru": "Что могло бы убедить тебя купить восстановленный ноутбук вместо нового?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, deiner Freundin zu sagen, dass dich ihr Witz verletzt hat?**",
+              "translation_ru": "Что помогло бы тебе решиться сказать подруге, что её шутка тебя задела?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, die Veranstaltung zu verschieben, bis der Veranstaltungsort barrierefrei ist?**",
+              "translation_ru": "Что убедило бы тебя отложить мероприятие, пока площадка не станет доступной для всех?"
+            },
+            {
+              "text": "**Was würde dich überzeugen, neben der Grafik auch die Rohdaten zu veröffentlichen?**",
+              "translation_ru": "Что убедило бы тебя поделиться исходными данными, а не только диаграммой?"
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "What would convince you to [X]?",
+        "Was würde dich überzeugen, [X] zu tun?"
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-23T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "Editorially curated C1 spoken frame; local spaCy annotation pending."
       }
     }
   ]

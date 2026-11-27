@@ -6,85 +6,85 @@
       "id": "C1REP001",
       "group_id": "REP",
       "set_id": "REP",
-      "title_ru": "[Источник] подчеркнул, что [X], а не [Y]",
-      "metaphor_ru": "Точно приписывайте различие источнику, чтобы собеседник отличал переданную позицию от вашей собственной.",
+      "title_ru": "Точно передать чужое уточнение",
+      "metaphor_ru": "Отделяйте позицию источника от собственной: передавайте, что именно человек противопоставил, уточнил или отверг.",
       "langs": [
         {
           "lang": "en",
-          "formula": "[Source] stressed that [X] rather than [Y].",
-          "example": "The auditor stressed that the main weakness was inconsistent access reviews rather than a lack of security policies.",
-          "translation": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности.",
+          "formula": "[Source] stressed/clarified that [X] rather than [Y].",
+          "example": "The librarian stressed that late returns were a staffing issue rather than a reason to shame readers.",
+          "translation": "Библиотекарь подчеркнула: просроченные возвраты — организационная проблема, а не повод стыдить читателей.",
           "examples": [
             {
-              "text": "**The auditor stressed that the main weakness was inconsistent access reviews rather than a lack of security policies.**",
-              "translation_ru": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности."
+              "text": "**The librarian stressed that late returns were a staffing issue rather than a reason to shame readers.**",
+              "translation_ru": "Библиотекарь подчеркнула: просроченные возвраты — организационная проблема, а не повод стыдить читателей."
             },
             {
-              "text": "**The researcher stressed that the study showed an association rather than proof of causation.**",
-              "translation_ru": "Исследователь подчеркнул, что исследование показало связь, а не доказало причинность."
+              "text": "**My sister pointed out that I was asking for reassurance rather than practical advice.**",
+              "translation_ru": "Сестра заметила, что мне нужна была поддержка, а не практический совет."
             },
             {
-              "text": "**The mayor stressed that the road closure would be temporary rather than the first stage of a permanent traffic ban.**",
-              "translation_ru": "Мэр подчеркнула, что перекрытие дороги будет временным, а не первым этапом постоянного запрета движения."
+              "text": "**The teacher emphasised that the exercise tested how we argued, not which conclusion we reached.**",
+              "translation_ru": "Учительница подчеркнула: в задании оценивалась аргументация, а не то, к какому выводу мы пришли."
             },
             {
-              "text": "**The customer stressed that the problem was unpredictable delivery dates rather than the price itself.**",
-              "translation_ru": "Клиент подчеркнул, что проблема была в непредсказуемых сроках доставки, а не в самой цене."
+              "text": "**During the hearing, the engineer clarified that the bridge had been inspected, not repaired.**",
+              "translation_ru": "На слушаниях инженер уточнил, что мост обследовали, но не ремонтировали."
             },
             {
-              "text": "**The lead engineer stressed that the incident had exposed a recovery gap rather than a fundamental flaw in the architecture.**",
-              "translation_ru": "Ведущий инженер подчеркнул, что инцидент выявил пробел в восстановлении, а не фундаментальный дефект архитектуры."
+              "text": "**The doctor stressed that the recommendation was to rest the ankle rather than give up all exercise indefinitely.**",
+              "translation_ru": "Врач подчеркнула, что нужно дать голеностопу отдых, а не навсегда отказаться от любой физической активности."
             },
             {
-              "text": "**Counsel stressed that the clause required disclosure of known risks rather than a guarantee that no risk existed.**",
-              "translation_ru": "Юрист подчеркнул, что пункт требует раскрывать известные риски, а не гарантировать полное отсутствие риска."
+              "text": "**The organiser reminded us that the discussion was meant to include residents, not just property owners.**",
+              "translation_ru": "Организатор напомнила, что в обсуждении должны участвовать все жильцы, а не только собственники квартир."
             },
             {
-              "text": "**The coach stressed that the goal was to make the ending clearer rather than to make every sentence sound lower in pitch.**",
-              "translation_ru": "Тренер подчеркнул, что цель — сделать окончания фраз яснее, а не понижать тон в каждом предложении."
+              "text": "**The reviewer noted that the problem lay in the confusing labels rather than the number of options.**",
+              "translation_ru": "Участница тестирования заметила, что проблема в непонятных названиях, а не в количестве вариантов."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "[Quelle] betonte, dass [X] und nicht [Y].",
-          "example": "Die Prüferin betonte, dass die größte Schwachstelle in uneinheitlichen Zugriffsprüfungen und nicht in fehlenden Sicherheitsrichtlinien lag.",
-          "translation": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности.",
+          "formula": "[Quelle] betonte/stellte klar, dass [X] und nicht [Y].",
+          "example": "Die Bibliothekarin betonte, dass verspätete Rückgaben ein organisatorisches Problem seien und kein Grund, Leser bloßzustellen.",
+          "translation": "Библиотекарь подчеркнула: просроченные возвраты — организационная проблема, а не повод стыдить читателей.",
           "examples": [
             {
-              "text": "**Die Prüferin betonte, dass die größte Schwachstelle in uneinheitlichen Zugriffsprüfungen und nicht in fehlenden Sicherheitsrichtlinien lag.**",
-              "translation_ru": "Аудитор подчеркнула, что главной слабостью были непоследовательные проверки доступа, а не отсутствие политик безопасности."
+              "text": "**Die Bibliothekarin betonte, dass verspätete Rückgaben ein organisatorisches Problem seien und kein Grund, Leser bloßzustellen.**",
+              "translation_ru": "Библиотекарь подчеркнула: просроченные возвраты — организационная проблема, а не повод стыдить читателей."
             },
             {
-              "text": "**Der Forscher betonte, dass die Studie einen Zusammenhang und keinen Beweis für Kausalität zeigte.**",
-              "translation_ru": "Исследователь подчеркнул, что исследование показало связь, а не доказало причинность."
+              "text": "**Meine Schwester wies darauf hin, dass ich eigentlich Zuspruch suchte und keine praktischen Ratschläge.**",
+              "translation_ru": "Сестра заметила, что мне нужна была поддержка, а не практический совет."
             },
             {
-              "text": "**Die Bürgermeisterin betonte, dass die Straßensperrung vorübergehend und nicht der erste Schritt zu einem dauerhaften Fahrverbot sei.**",
-              "translation_ru": "Мэр подчеркнула, что перекрытие дороги будет временным, а не первым этапом постоянного запрета движения."
+              "text": "**Die Lehrerin betonte, dass es bei der Aufgabe auf die Begründung ankam und nicht darauf, zu welchem Ergebnis wir kamen.**",
+              "translation_ru": "Учительница подчеркнула: в задании оценивалась аргументация, а не то, к какому выводу мы пришли."
             },
             {
-              "text": "**Der Kunde betonte, dass das Problem in unvorhersehbaren Lieferterminen und nicht im Preis selbst lag.**",
-              "translation_ru": "Клиент подчеркнул, что проблема была в непредсказуемых сроках доставки, а не в самой цене."
+              "text": "**Bei der Anhörung stellte der Ingenieur klar, dass die Brücke geprüft, aber nicht repariert worden war.**",
+              "translation_ru": "На слушаниях инженер уточнил, что мост обследовали, но не ремонтировали."
             },
             {
-              "text": "**Der leitende Ingenieur betonte, dass der Vorfall eine Lücke im Wiederherstellungsprozess und keinen grundlegenden Fehler in der Architektur offengelegt habe.**",
-              "translation_ru": "Ведущий инженер подчеркнул, что инцидент выявил пробел в восстановлении, а не фундаментальный дефект архитектуры."
+              "text": "**Die Ärztin betonte, dass ich den Knöchel schonen solle, statt auf unbestimmte Zeit jede Bewegung zu vermeiden.**",
+              "translation_ru": "Врач подчеркнула, что нужно дать голеностопу отдых, а не навсегда отказаться от любой физической активности."
             },
             {
-              "text": "**Die Rechtsberatung betonte, dass die Klausel die Offenlegung bekannter Risiken und keine Garantie völliger Risikofreiheit verlangte.**",
-              "translation_ru": "Юрист подчеркнул, что пункт требует раскрывать известные риски, а не гарантировать полное отсутствие риска."
+              "text": "**Die Organisatorin erinnerte uns daran, dass bei der Diskussion alle Bewohner zu Wort kommen sollten und nicht nur Eigentümer.**",
+              "translation_ru": "Организатор напомнила, что в обсуждении должны участвовать все жильцы, а не только собственники квартир."
             },
             {
-              "text": "**Der Coach betonte, dass das Ziel ein klareres Satzende und nicht eine tiefere Tonlage in jedem einzelnen Satz sei.**",
-              "translation_ru": "Тренер подчеркнул, что цель — сделать окончания фраз яснее, а не понижать тон в каждом предложении."
+              "text": "**Die Testerin merkte an, dass die unklaren Beschriftungen das Problem seien, nicht die Anzahl der Optionen.**",
+              "translation_ru": "Участница тестирования заметила, что проблема в непонятных названиях, а не в количестве вариантов."
             }
           ]
         }
       ],
       "formulas": [
-        "[Source] stressed that [X] rather than [Y].",
-        "[Quelle] betonte, dass [X] und nicht [Y]."
+        "[Source] stressed/clarified that [X] rather than [Y].",
+        "[Quelle] betonte/stellte klar, dass [X] und nicht [Y]."
       ],
       "gen": {
         "status": "curated",
@@ -97,8 +97,98 @@
         "notes": "C1 communicative frame: Reported speech and attribution. Editorially rewritten for diverse spoken practice."
       },
       "title_en": "[Source] stressed that [X] rather than [Y]",
-      "description_en": "Attribute a precise distinction to its source so your listener can separate reported claims from your own position.",
-      "description_ru": "Точно приписывайте различие источнику, чтобы собеседник отличал переданную позицию от вашей собственной."
+      "description_en": "Attribute an important distinction accurately to its speaker rather than presenting it as your own claim.",
+      "description_ru": "Отделяйте позицию источника от собственной: передавайте, что именно человек противопоставил, уточнил или отверг."
+    },
+    {
+      "id": "C1REP041",
+      "group_id": "REP",
+      "set_id": "REP",
+      "title_ru": "Передать неподтверждённое сообщение о прошлом действии",
+      "metaphor_ru": "Сообщайте о чужих утверждениях, не выдавая их за проверенный факт. Английское is said to have done и немецкое soll ... getan haben относятся к предполагаемому действию в прошлом.",
+      "title_en": "[X] is said to have [done Y], but [verification limit]",
+      "description_en": "Report an unverified claim about a completed event and make the limit of available confirmation explicit.",
+      "description_ru": "Сообщайте о чужих утверждениях, не выдавая их за проверенный факт. Английское is said to have done и немецкое soll ... getan haben относятся к предполагаемому действию в прошлом.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Subject] is/are said to have [past participle], but [verification limit].",
+          "example": "The council is said to have revised the bus timetable, but the new departure times aren't online yet.",
+          "translation": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте.",
+          "examples": [
+            {
+              "text": "**The council is said to have revised the bus timetable, but the new departure times aren't online yet.**",
+              "translation_ru": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте."
+            },
+            {
+              "text": "**The museum is said to have acquired a rare map, though its catalogue hasn't been updated.**",
+              "translation_ru": "По сообщениям, музей приобрёл редкую карту, но каталог ещё не обновлён."
+            },
+            {
+              "text": "**The app is said to have fixed the sync bug, but I haven't tested the update myself.**",
+              "translation_ru": "Говорят, в приложении исправили ошибку синхронизации, но сам я обновление пока не проверял."
+            },
+            {
+              "text": "**The neighbourhood group is said to have secured money for the playground, but work hasn't begun.**",
+              "translation_ru": "Сообщается, что инициативной группе удалось получить деньги на детскую площадку, однако работы ещё не начались."
+            },
+            {
+              "text": "**The researchers are said to have found a simpler method, although the full paper isn't available yet.**",
+              "translation_ru": "По сообщениям, исследователи нашли более простой метод, хотя полная статья пока недоступна."
+            },
+            {
+              "text": "**The theatre is said to have added another performance, but ticket sales still show only two dates.**",
+              "translation_ru": "Говорят, театр добавил ещё один спектакль, но в продаже по-прежнему видны только две даты."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Subjekt] soll(en) [Ergänzung] [Partizip II] haben, aber [Prüfgrenze].",
+          "example": "Der Stadtrat soll den Busfahrplan überarbeitet haben, aber die neuen Abfahrtszeiten stehen noch nicht online.",
+          "translation": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте.",
+          "examples": [
+            {
+              "text": "**Der Stadtrat soll den Busfahrplan überarbeitet haben, aber die neuen Abfahrtszeiten stehen noch nicht online.**",
+              "translation_ru": "Говорят, городской совет изменил расписание автобусов, но новых часов отправления пока нет на сайте."
+            },
+            {
+              "text": "**Das Museum soll eine seltene Karte erworben haben, doch der Katalog ist noch nicht aktualisiert.**",
+              "translation_ru": "По сообщениям, музей приобрёл редкую карту, но каталог ещё не обновлён."
+            },
+            {
+              "text": "**Die App soll den Synchronisierungsfehler behoben haben, aber ich habe das Update noch nicht selbst getestet.**",
+              "translation_ru": "Говорят, в приложении исправили ошибку синхронизации, но сам я обновление пока не проверял."
+            },
+            {
+              "text": "**Die Nachbarschaftsinitiative soll Geld für den Spielplatz bekommen haben, allerdings haben die Arbeiten noch nicht begonnen.**",
+              "translation_ru": "Сообщается, что инициативной группе удалось получить деньги на детскую площадку, однако работы ещё не начались."
+            },
+            {
+              "text": "**Die Forschenden sollen eine einfachere Methode gefunden haben, obwohl die vollständige Studie noch nicht vorliegt.**",
+              "translation_ru": "По сообщениям, исследователи нашли более простой метод, хотя полная статья пока недоступна."
+            },
+            {
+              "text": "**Das Theater soll eine zusätzliche Vorstellung angesetzt haben, aber im Vorverkauf werden weiterhin nur zwei Termine angezeigt.**",
+              "translation_ru": "Говорят, театр добавил ещё один спектакль, но в продаже по-прежнему видны только две даты."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Subject] is/are said to have [past participle], but [verification limit].",
+        "[Subjekt] soll(en) [Ergänzung] [Partizip II] haben, aber [Prüfgrenze]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 editorial source frame; local spaCy annotation pending."
+      }
     }
   ]
 }

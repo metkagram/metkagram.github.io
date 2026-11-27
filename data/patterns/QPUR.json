@@ -6,85 +6,85 @@
       "id": "QSTQPUR001",
       "group_id": "QPUR",
       "set_id": "QPUR",
-      "title_ru": "Какова была бы цель, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какова была бы цель, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Есть ли смысл в действии при таком условии",
+      "metaphor_ru": "Проверьте практический смысл предполагаемого действия при заданном условии. После английского of употребляется форма на -ing, а гипотетическое условие выражается через if и прошедшую форму. Немецкий естественный вариант — Was hätte es für einen Sinn с инфинитивом с zu и условием в Konjunktiv II.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What would be the purpose if [the team needs another day to decide]?",
-          "example": "What would be the purpose if the team needs another day to decide?",
-          "translation": "Какова была бы цель, если команде нужен ещё день для решения?",
+          "formula": "What would be the point of [verb-ing] if [subject + past form]?",
+          "example": "What would be the point of insulating the loft if we left the windows open all winter?",
+          "translation": "Какой смысл утеплять чердак, если бы мы всю зиму держали окна открытыми?",
           "examples": [
             {
-              "text": "**What would be the purpose if the team needs another day to decide?**",
-              "translation_ru": "Какова была бы цель, если команде нужен ещё день для решения?"
+              "text": "**What would be the point of insulating the loft if we left the windows open all winter?**",
+              "translation_ru": "Какой смысл утеплять чердак, если бы мы всю зиму держали окна открытыми?"
             },
             {
-              "text": "**What would be the purpose if the revised plan has not been shared yet?**",
-              "translation_ru": "Какова была бы цель, если обновлённым планом ещё не поделились?"
+              "text": "**What would be the point of conducting a survey if nobody acted on the results?**",
+              "translation_ru": "Какой смысл проводить опрос, если бы никто не учитывал его результаты?"
             },
             {
-              "text": "**What would be the purpose if we should compare the two options?**",
-              "translation_ru": "Какова была бы цель, если нам следует сравнить два варианта?"
+              "text": "**What would be the point of apologising if you had no intention of changing your behaviour?**",
+              "translation_ru": "Какой смысл извиняться, если бы ты не собирался менять своё поведение?"
             },
             {
-              "text": "**What would be the purpose if the client asked for more detail?**",
-              "translation_ru": "Какова была бы цель, если клиент попросил больше деталей?"
+              "text": "**What would be the point of buying a season ticket if the route were discontinued?**",
+              "translation_ru": "Какой смысл покупать проездной на сезон, если бы маршрут отменили?"
             },
             {
-              "text": "**What would be the purpose if the pilot may continue next month?**",
-              "translation_ru": "Какова была бы цель, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would be the point of encrypting the backup if anyone could obtain the password?**",
+              "translation_ru": "Какой смысл шифровать резервную копию, если бы пароль мог получить кто угодно?"
             },
             {
-              "text": "**What would be the purpose if the data need another check?**",
-              "translation_ru": "Какова была бы цель, если данные нужно проверить ещё раз?"
+              "text": "**What would be the point of extending the deadline if the library remained closed?**",
+              "translation_ru": "Какой смысл продлевать срок, если бы библиотека оставалась закрытой?"
             },
             {
-              "text": "**What would be the purpose if the meeting was moved?**",
-              "translation_ru": "Какова была бы цель, если встречу перенесли?"
+              "text": "**What would be the point of setting up a complaints procedure if it offered no anonymity?**",
+              "translation_ru": "Какой смысл вводить процедуру подачи жалоб, если бы она не обеспечивала анонимность?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welchen Zweck hätte es, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welchen Zweck hätte es, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какова была бы цель, если команде нужен ещё день для решения?",
+          "formula": "Was hätte es für einen Sinn, [Infinitiv mit zu], wenn [Konjunktiv-II-Nebensatz]?",
+          "example": "Was hätte es für einen Sinn, das Dach zu dämmen, wenn wir trotzdem die ganze Nacht die Fenster offen ließen?",
+          "translation": "Какой смысл утеплять крышу, если бы мы всё равно оставляли окна открытыми на всю ночь?",
           "examples": [
             {
-              "text": "**Welchen Zweck hätte es, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какова была бы цель, если команде нужен ещё день для решения?"
+              "text": "**Was hätte es für einen Sinn, das Dach zu dämmen, wenn wir trotzdem die ganze Nacht die Fenster offen ließen?**",
+              "translation_ru": "Какой смысл утеплять крышу, если бы мы всё равно оставляли окна открытыми на всю ночь?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какова была бы цель, если обновлённым планом ещё не поделились?"
+              "text": "**Was hätte es für einen Sinn, die Anwohner zu befragen, wenn ihre Vorschläge ohnehin ignoriert würden?**",
+              "translation_ru": "Какой смысл опрашивать местных жителей, если бы их предложения всё равно игнорировали?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какова была бы цель, если нам следует сравнить два варианта?"
+              "text": "**Was hätte es für einen Sinn, sich zu entschuldigen, wenn man gar nichts am eigenen Verhalten ändern wollte?**",
+              "translation_ru": "Какой смысл извиняться, если бы человек вовсе не хотел менять своё поведение?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какова была бы цель, если клиент попросил больше деталей?"
+              "text": "**Was hätte es für einen Sinn, eine Jahreskarte zu kaufen, wenn das Schwimmbad bald schließen müsste?**",
+              "translation_ru": "Какой смысл покупать годовой абонемент, если бы бассейн вскоре пришлось закрыть?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какова была бы цель, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was hätte es für einen Sinn, die Daten zu verschlüsseln, wenn alle das Passwort kennen würden?**",
+              "translation_ru": "Какой смысл шифровать данные, если бы все знали пароль?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какова была бы цель, если данные нужно проверить ещё раз?"
+              "text": "**Was hätte es für einen Sinn, die Abgabefrist zu verlängern, wenn die nötigen Unterlagen weiterhin fehlten?**",
+              "translation_ru": "Какой смысл продлевать срок сдачи, если бы необходимых документов по-прежнему не было?"
             },
             {
-              "text": "**Welchen Zweck hätte es, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Какова была бы цель, если встречу перенесли?"
+              "text": "**Was hätte es für einen Sinn, eine Beschwerdestelle einzurichten, wenn niemand ihr vertrauen könnte?**",
+              "translation_ru": "Какой смысл создавать службу приёма жалоб, если бы никто не мог ей доверять?"
             }
           ]
         }
       ],
       "formulas": [
-        "What would be the purpose if [the team needs another day to decide]?",
-        "Welchen Zweck hätte es, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What would be the point of [verb-ing] if [subject + past form]?",
+        "Was hätte es für einen Sinn, [Infinitiv mit zu], wenn [Konjunktiv-II-Nebensatz]?"
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "QSTQPUR031",
       "group_id": "QPUR",
       "set_id": "QPUR",
-      "title_ru": "Чего мы пытаемся добиться, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Чего мы пытаемся добиться, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Чего мы хотим добиться этим действием",
+      "metaphor_ru": "Отделите намеченное действие от его цели: спросите, какой результат человек пытается получить. В английском by требует формы на -ing; немецкий выражает тот же вопрос через mit + Dativ или dadurch, dass с глаголом в конце придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What are we trying to achieve if [the team needs another day to decide]?",
-          "example": "What are we trying to achieve if the team needs another day to decide?",
-          "translation": "Чего мы пытаемся добиться, если команде нужен ещё день для решения?",
+          "formula": "What am/is/are [subject] trying to achieve by [verb-ing]?",
+          "example": "What are we trying to achieve by reducing the speed limit near the school?",
+          "translation": "Чего мы хотим добиться, снижая максимально допустимую скорость возле школы?",
           "examples": [
             {
-              "text": "**What are we trying to achieve if the team needs another day to decide?**",
-              "translation_ru": "Чего мы пытаемся добиться, если команде нужен ещё день для решения?"
+              "text": "**What are we trying to achieve by reducing the speed limit near the school?**",
+              "translation_ru": "Чего мы хотим добиться, снижая максимально допустимую скорость возле школы?"
             },
             {
-              "text": "**What are we trying to achieve if the revised plan has not been shared yet?**",
-              "translation_ru": "Чего мы пытаемся добиться, если обновлённым планом ещё не поделились?"
+              "text": "**What are you trying to achieve by rearranging the furniture?**",
+              "translation_ru": "Чего ты хочешь добиться, переставляя мебель?"
             },
             {
-              "text": "**What are we trying to achieve if we should compare the two options?**",
-              "translation_ru": "Чего мы пытаемся добиться, если нам следует сравнить два варианта?"
+              "text": "**What is the teacher trying to achieve by letting pupils assess each other's work?**",
+              "translation_ru": "Чего учитель хочет добиться, позволяя ученикам оценивать работы друг друга?"
             },
             {
-              "text": "**What are we trying to achieve if the client asked for more detail?**",
-              "translation_ru": "Чего мы пытаемся добиться, если клиент попросил больше деталей?"
+              "text": "**What is she trying to achieve by withholding her consent?**",
+              "translation_ru": "Чего она хочет добиться, не давая своего согласия?"
             },
             {
-              "text": "**What are we trying to achieve if the pilot may continue next month?**",
-              "translation_ru": "Чего мы пытаемся добиться, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What are the organisers trying to achieve by making the exhibition free of charge?**",
+              "translation_ru": "Чего организаторы хотят добиться, делая выставку бесплатной?"
             },
             {
-              "text": "**What are we trying to achieve if the data need another check?**",
-              "translation_ru": "Чего мы пытаемся добиться, если данные нужно проверить ещё раз?"
+              "text": "**What is the developer trying to achieve by separating the login service from the main application?**",
+              "translation_ru": "Чего разработчик хочет добиться, отделяя сервис входа в систему от основного приложения?"
             },
             {
-              "text": "**What are we trying to achieve if the meeting was moved?**",
-              "translation_ru": "Чего мы пытаемся добиться, если встречу перенесли?"
+              "text": "**What am I trying to achieve by checking my messages every ten minutes?**",
+              "translation_ru": "Чего я пытаюсь добиться, проверяя сообщения каждые десять минут?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Was wollen wir erreichen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Was wollen wir erreichen, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Чего мы пытаемся добиться, если команде нужен ещё день для решения?",
+          "formula": "Was will/wollen [Subjekt] mit [Dativ] erreichen? / Was will/wollen [Subjekt] damit/dadurch erreichen, dass [Nebensatz]?",
+          "example": "Was wollen wir damit erreichen, dass wir vor der Schule Tempo dreißig einführen?",
+          "translation": "Чего мы хотим добиться, вводя ограничение скорости в тридцать километров в час перед школой?",
           "examples": [
             {
-              "text": "**Was wollen wir erreichen, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Чего мы пытаемся добиться, если команде нужен ещё день для решения?"
+              "text": "**Was wollen wir damit erreichen, dass wir vor der Schule Tempo dreißig einführen?**",
+              "translation_ru": "Чего мы хотим добиться, вводя ограничение скорости в тридцать километров в час перед школой?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Чего мы пытаемся добиться, если обновлённым планом ещё не поделились?"
+              "text": "**Was willst du mit dem Umbau der Küche erreichen?**",
+              "translation_ru": "Чего ты хочешь добиться перестройкой кухни?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Чего мы пытаемся добиться, если нам следует сравнить два варианта?"
+              "text": "**Was will die Lehrerin dadurch erreichen, dass die Kinder ihre Lösungen selbst vergleichen?**",
+              "translation_ru": "Чего учительница хочет добиться, предлагая детям самостоятельно сравнивать свои решения?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Чего мы пытаемся добиться, если клиент попросил больше деталей?"
+              "text": "**Was will er damit erreichen, dass er seine Zustimmung verweigert?**",
+              "translation_ru": "Чего он хочет добиться, отказываясь дать согласие?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Чего мы пытаемся добиться, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was wollen die Veranstalter mit dem freien Eintritt erreichen?**",
+              "translation_ru": "Чего организаторы хотят добиться бесплатным входом?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Чего мы пытаемся добиться, если данные нужно проверить ещё раз?"
+              "text": "**Was will die Entwicklerin dadurch erreichen, dass sie die Suche vom Rest der Anwendung trennt?**",
+              "translation_ru": "Чего разработчица хочет добиться, отделяя поиск от остальной части приложения?"
             },
             {
-              "text": "**Was wollen wir erreichen, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Чего мы пытаемся добиться, если встречу перенесли?"
+              "text": "**Was will ich damit erreichen, dass ich ständig auf mein Handy schaue?**",
+              "translation_ru": "Чего я пытаюсь добиться, постоянно заглядывая в телефон?"
             }
           ]
         }
       ],
       "formulas": [
-        "What are we trying to achieve if [the team needs another day to decide]?",
-        "Was wollen wir erreichen, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What am/is/are [subject] trying to achieve by [verb-ing]?",
+        "Was will/wollen [Subjekt] mit [Dativ] erreichen? / Was will/wollen [Subjekt] damit/dadurch erreichen, dass [Nebensatz]?"
       ],
       "gen": {
         "status": "curated",

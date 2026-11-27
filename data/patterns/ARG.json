@@ -99,6 +99,104 @@
       "title_en": "The case for [X] rests on the assumption that [Y]",
       "description_en": "Use this frame to expose the assumption an argument depends on, so the assumption can be tested rather than left implicit.",
       "description_ru": "Используйте этот каркас, чтобы сделать ключевое допущение аргумента явным и проверить, действительно ли на нём держится вывод."
+    },
+    {
+      "id": "C1ARG041",
+      "group_id": "ARG",
+      "set_id": "ARG",
+      "title_ru": "Проверить причинную связь",
+      "metaphor_ru": "Проверяйте, вызывает ли предложенная мера ожидаемый результат. Английский косвенный вопрос после whether имеет прямой порядок слов; немецкий после ob — глагол в конце придаточного.",
+      "title_en": "The key question is whether [X] really leads to [Y]",
+      "description_en": "Test a proposed cause-and-effect link rather than treating a plausible explanation as a proven result.",
+      "description_ru": "Проверяйте, вызывает ли предложенная мера ожидаемый результат. Английский косвенный вопрос после whether имеет прямой порядок слов; немецкий после ob — глагол в конце придаточного.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "The key question is whether [change] actually [has the claimed effect].",
+          "example": "The key question is whether extending library hours actually helps residents who work late.",
+          "translation": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу.",
+          "examples": [
+            {
+              "text": "**The key question is whether extending library hours actually helps residents who work late.**",
+              "translation_ru": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу."
+            },
+            {
+              "text": "**The key question is whether daily vocabulary drills actually make learners more fluent in spontaneous conversation.**",
+              "translation_ru": "Важно понять, помогают ли ежедневные упражнения на лексику свободнее говорить без подготовки."
+            },
+            {
+              "text": "**The key question is whether the new road layout actually prevents accidents or merely slows traffic.**",
+              "translation_ru": "Нужно выяснить, предотвращает ли новая схема движения аварии или просто замедляет поток."
+            },
+            {
+              "text": "**The key question is whether automatic captions actually make the tutorial easier to follow for viewers with hearing loss.**",
+              "translation_ru": "Главное — действительно ли автоматические субтитры делают инструкцию доступнее для людей с нарушением слуха."
+            },
+            {
+              "text": "**The key question is whether more frequent check-ins actually build trust between parents and their teenager.**",
+              "translation_ru": "Вопрос в том, укрепляют ли более частые разговоры доверие между родителями и подростком."
+            },
+            {
+              "text": "**The key question is whether removing the login step actually improves access without exposing private notes.**",
+              "translation_ru": "Стоит проверить, упрощает ли отказ от входа в систему доступ, не раскрывая при этом личные заметки."
+            },
+            {
+              "text": "**The key question is whether bringing in a mediator actually helps the neighbours settle their dispute.**",
+              "translation_ru": "Важнее всего выяснить, помогает ли посредник соседям урегулировать спор."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Die entscheidende Frage ist, ob [Maßnahme] tatsächlich [die behauptete Wirkung] erzielt.",
+          "example": "Die entscheidende Frage ist, ob längere Öffnungszeiten der Bibliothek Menschen, die spät arbeiten, tatsächlich helfen.",
+          "translation": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу.",
+          "examples": [
+            {
+              "text": "**Die entscheidende Frage ist, ob längere Öffnungszeiten der Bibliothek Menschen, die spät arbeiten, tatsächlich helfen.**",
+              "translation_ru": "Главный вопрос — помогают ли продлённые часы работы библиотеки тем, кто поздно заканчивает работу."
+            },
+            {
+              "text": "**Entscheidend ist, ob tägliche Wortschatzübungen dazu führen, dass Lernende in spontanen Gesprächen flüssiger sprechen.**",
+              "translation_ru": "Важно понять, помогают ли ежедневные упражнения на лексику свободнее говорить без подготовки."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob die neue Straßenführung tatsächlich Unfälle verhindert oder lediglich den Verkehr verlangsamt.**",
+              "translation_ru": "Нужно выяснить, предотвращает ли новая схема движения аварии или просто замедляет поток."
+            },
+            {
+              "text": "**Entscheidend ist, ob automatische Untertitel das Tutorial für Menschen mit Hörverlust tatsächlich leichter verständlich machen.**",
+              "translation_ru": "Главное — действительно ли автоматические субтитры делают инструкцию доступнее для людей с нарушением слуха."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob häufigere Gespräche das Vertrauen zwischen den Eltern und ihrem Teenager tatsächlich stärken.**",
+              "translation_ru": "Вопрос в том, укрепляют ли более частые разговоры доверие между родителями и подростком."
+            },
+            {
+              "text": "**Die entscheidende Frage ist, ob der Verzicht auf die Anmeldung den Zugang tatsächlich erleichtert, ohne private Notizen offenzulegen.**",
+              "translation_ru": "Стоит проверить, упрощает ли отказ от входа в систему доступ, не раскрывая при этом личные заметки."
+            },
+            {
+              "text": "**Entscheidend ist, ob eine neutrale Vermittlung den Nachbarn tatsächlich hilft, ihren Streit beizulegen.**",
+              "translation_ru": "Важнее всего выяснить, помогает ли посредник соседям урегулировать спор."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "The key question is whether [change] actually [has the claimed effect].",
+        "Die entscheidende Frage ist, ob [Maßnahme] tatsächlich [die behauptete Wirkung] erzielt."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: test a causal link in an argument."
+      }
     }
   ]
 }

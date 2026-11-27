@@ -101,85 +101,85 @@
       "id": "FUNEXM011",
       "group_id": "EXM",
       "set_id": "EXM",
-      "title_ru": "Один из случаев — когда команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «примеры и конкретизация» в живом контексте.",
+      "title_ru": "Показать общий принцип на конкретном случае",
+      "metaphor_ru": "Формула An example of… is when… связывает абстрактное понятие с наблюдаемой ситуацией, а не просто перечисляет факты. В немецком естественно: Ein Beispiel für… ist, wenn…; в более формальном регистре — Ein typischer Fall liegt vor, wenn… . После wenn глагол ставится в конец придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "One case is when [the team needs another day to decide].",
-          "example": "One case is when the team needs another day to decide.",
-          "translation": "Один из случаев — когда команде нужен ещё день для решения.",
+          "formula": "An example of [general concept] is when [observable situation].",
+          "example": "A good example of quiet support is when a friend brings you dinner after a difficult day.",
+          "translation": "Хороший пример ненавязчивой заботы — когда друг приносит ужин после тяжёлого дня.",
           "examples": [
             {
-              "text": "**One case is when the team needs another day to decide.**",
-              "translation_ru": "Один из случаев — когда команде нужен ещё день для решения."
+              "text": "**A good example of quiet support is when a friend brings you dinner after a difficult day.**",
+              "translation_ru": "Хороший пример ненавязчивой заботы — когда друг приносит ужин после тяжёлого дня."
             },
             {
-              "text": "**One case is when the revised plan has not been shared yet.**",
-              "translation_ru": "Один из случаев — когда обновлённым планом ещё не поделились."
+              "text": "**One example of a misleading chart is when the vertical axis starts at 90 rather than zero.**",
+              "translation_ru": "Пример вводящего в заблуждение графика — когда вертикальная ось начинается с 90, а не с нуля."
             },
             {
-              "text": "**One case is when we should compare the two options.**",
-              "translation_ru": "Один из случаев — когда нам следует сравнить два варианта."
+              "text": "**A common example of digital exclusion is when a public service accepts bookings only through an app.**",
+              "translation_ru": "Частый пример цифровой недоступности — когда записаться на госуслугу можно только через приложение."
             },
             {
-              "text": "**One case is when the client asked for more detail.**",
-              "translation_ru": "Один из случаев — когда клиент попросил больше деталей."
+              "text": "**A clear example of active listening is when someone repeats your concern before suggesting a solution.**",
+              "translation_ru": "Хороший пример активного слушания — когда собеседник сначала повторяет вашу проблему своими словами и лишь затем предлагает решение."
             },
             {
-              "text": "**One case is when the pilot may continue next month.**",
-              "translation_ru": "Один из случаев — когда пилотный проект может продолжиться в следующем месяце."
+              "text": "**One example of false certainty is when people call a rumour 'confirmed' because three accounts repeat it.**",
+              "translation_ru": "Пример ложной уверенности — когда слух называют «подтверждённым» лишь потому, что его повторили три аккаунта."
             },
             {
-              "text": "**One case is when the data need another check.**",
-              "translation_ru": "Один из случаев — когда данные нужно проверить ещё раз."
+              "text": "**An everyday example of compromise is when flatmates agree to keep the music down after ten.**",
+              "translation_ru": "Повседневный пример компромисса — когда соседи по квартире договариваются убавлять музыку после десяти."
             },
             {
-              "text": "**One case is when the meeting was moved.**",
-              "translation_ru": "Один из случаев — когда встречу перенесли."
+              "text": "**A revealing example of good teaching is when learners explain a rule in their own words before using it.**",
+              "translation_ru": "Показательный пример хорошего преподавания — когда учащиеся сначала объясняют правило своими словами, а потом применяют его."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Ein Fall liegt vor, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Ein Fall liegt vor, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Один из случаев — когда команде нужен ещё день для решения.",
+          "formula": "Ein Beispiel für [Begriff] ist, wenn [konkrete Situation].",
+          "example": "Ein gutes Beispiel für unaufdringliche Hilfe ist, wenn dir eine Freundin nach einem schweren Tag etwas zu essen vorbeibringt.",
+          "translation": "Хороший пример ненавязчивой заботы — когда подруга приносит что-нибудь поесть после тяжёлого дня.",
           "examples": [
             {
-              "text": "**Ein Fall liegt vor, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Один из случаев — когда команде нужен ещё день для решения."
+              "text": "**Ein gutes Beispiel für unaufdringliche Hilfe ist, wenn dir eine Freundin nach einem schweren Tag etwas zu essen vorbeibringt.**",
+              "translation_ru": "Хороший пример ненавязчивой заботы — когда подруга приносит что-нибудь поесть после тяжёлого дня."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Один из случаев — когда обновлённым планом ещё не поделились."
+              "text": "**Ein Beispiel für ein irreführendes Diagramm ist, wenn die senkrechte Achse erst bei 90 statt bei null beginnt.**",
+              "translation_ru": "Пример вводящего в заблуждение графика — когда вертикальная ось начинается с 90, а не с нуля."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Один из случаев — когда нам следует сравнить два варианта."
+              "text": "**Ein typischer Fall digitaler Ausgrenzung liegt vor, wenn man einen Behördentermin nur per App buchen kann.**",
+              "translation_ru": "Типичный пример цифровой недоступности — когда записаться на приём в госучреждение можно только через приложение."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Один из случаев — когда клиент попросил больше деталей."
+              "text": "**Ein gutes Beispiel für aktives Zuhören ist, wenn jemand dein Anliegen erst in eigenen Worten wiedergibt, bevor er einen Rat gibt.**",
+              "translation_ru": "Хороший пример активного слушания — когда собеседник сначала пересказывает твою проблему своими словами и только потом даёт совет."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Один из случаев — когда пилотный проект может продолжиться в следующем месяце."
+              "text": "**Ein Beispiel für Scheinsicherheit ist, wenn Leute ein Gerücht für bestätigt halten, bloß weil drei Accounts es verbreiten.**",
+              "translation_ru": "Пример ложной уверенности — когда слух считают подтверждённым лишь потому, что его распространили три аккаунта."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Один из случаев — когда данные нужно проверить ещё раз."
+              "text": "**Ein alltägliches Beispiel für einen Kompromiss ist, wenn Mitbewohner vereinbaren, ab zehn leiser Musik zu hören.**",
+              "translation_ru": "Повседневный пример компромисса — когда соседи по квартире договариваются слушать музыку тише после десяти."
             },
             {
-              "text": "**Ein Fall liegt vor, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Один из случаев — когда встречу перенесли."
+              "text": "**Ein gutes Beispiel für gelungenen Unterricht ist, wenn Lernende eine Regel zuerst mit eigenen Worten erklären und sie dann anwenden.**",
+              "translation_ru": "Показательный пример хорошего урока — когда учащиеся сначала объясняют правило своими словами, а затем применяют его."
             }
           ]
         }
       ],
       "formulas": [
-        "One case is when [the team needs another day to decide].",
-        "Ein Fall liegt vor, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "An example of [general concept] is when [observable situation].",
+        "Ein Beispiel für [Begriff] ist, wenn [konkrete Situation]."
       ],
       "gen": {
         "status": "curated",

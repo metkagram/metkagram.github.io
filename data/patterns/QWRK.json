@@ -291,85 +291,85 @@
       "id": "QSTQWRK031",
       "group_id": "QWRK",
       "set_id": "QWRK",
-      "title_ru": "Можем ли мы договориться, что делать, если команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Можем ли мы договориться, что делать, если команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Заранее договориться о действиях на случай сбоя",
+      "metaphor_ru": "Закрепляйте заранее согласованный план для условной ситуации: кто решает, кого информируют и что делают при сбое. Английские agree on who/what и agree on a fallback требуют существительного или косвенного вопроса; немецкие sich darauf einigen, was ... / vereinbaren, wer ... часто естественнее, чем дословный перевод.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Can we agree on what to do if [the team needs another day to decide]?",
-          "example": "Can we agree on what to do if the team needs another day to decide?",
-          "translation": "Можем ли мы договориться, что делать, если команде нужен ещё день для решения?",
+          "formula": "Can we agree on [who/what/how] if [contingency]? / Could we agree on a fallback if [problem]?",
+          "example": "Can we agree on who will speak to the neighbours if the renovation runs into the evening?",
+          "translation": "Можем договориться, кто поговорит с соседями, если ремонт затянется до вечера?",
           "examples": [
             {
-              "text": "**Can we agree on what to do if the team needs another day to decide?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если команде нужен ещё день для решения?"
+              "text": "**Can we agree on who will speak to the neighbours if the renovation runs into the evening?**",
+              "translation_ru": "Можем договориться, кто поговорит с соседями, если ремонт затянется до вечера?"
             },
             {
-              "text": "**Can we agree on what to do if the revised plan has not been shared yet?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если обновлённым планом ещё не поделились?"
+              "text": "**Before we publish, can we agree on what to do if someone spots a factual error?**",
+              "translation_ru": "Прежде чем публиковать, можем договориться, что делать, если кто-то заметит фактическую ошибку?"
             },
             {
-              "text": "**Can we agree on what to do if we should compare the two options?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если нам следует сравнить два варианта?"
+              "text": "**Could we agree on a fallback if the video call drops during the interview?**",
+              "translation_ru": "Можем заранее согласовать запасной вариант, если видеозвонок прервётся во время собеседования?"
             },
             {
-              "text": "**Can we agree on what to do if the client asked for more detail?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если клиент попросил больше деталей?"
+              "text": "**Can we settle how to split the childcare if one of us has to work late?**",
+              "translation_ru": "Можем решить, как распределить заботу о ребёнке, если одному из нас придётся задержаться на работе?"
             },
             {
-              "text": "**Can we agree on what to do if the pilot may continue next month?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Would it help to agree now on what happens if the train is cancelled?**",
+              "translation_ru": "Может, лучше сейчас договориться, что будем делать, если поезд отменят?"
             },
             {
-              "text": "**Can we agree on what to do if the data need another check?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если данные нужно проверить ещё раз?"
+              "text": "**Can we agree on who makes the final call if the trial results are inconclusive?**",
+              "translation_ru": "Можем договориться, кто примет окончательное решение, если результаты испытания окажутся неоднозначными?"
             },
             {
-              "text": "**Can we agree on what to do if the meeting was moved?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если встречу перенесли?"
+              "text": "**Could we agree on a way to raise concerns if the conversation becomes heated?**",
+              "translation_ru": "Можем договориться, как высказывать опасения, если разговор станет напряжённым?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Können wir uns darauf einigen, was zu tun ist, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Können wir uns darauf einigen, was zu tun ist, wenn das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Можем ли мы договориться, что делать, если команде нужен ещё день для решения?",
+          "formula": "Können wir [vereinbaren/festlegen], [wer/was/wie ...], falls [Störung]? / Können wir uns auf [Plan B] einigen, wenn [Bedingung]?",
+          "example": "Können wir festlegen, wer mit den Nachbarn spricht, falls die Renovierung bis in den Abend dauert?",
+          "translation": "Давайте определим, кто поговорит с соседями, если ремонт затянется до вечера?",
           "examples": [
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если команде нужен ещё день для решения?"
+              "text": "**Können wir festlegen, wer mit den Nachbarn spricht, falls die Renovierung bis in den Abend dauert?**",
+              "translation_ru": "Давайте определим, кто поговорит с соседями, если ремонт затянется до вечера?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если обновлённым планом ещё не поделились?"
+              "text": "**Bevor wir etwas veröffentlichen: Können wir vereinbaren, was wir tun, wenn jemand einen sachlichen Fehler entdeckt?**",
+              "translation_ru": "Прежде чем что-то публиковать, можем договориться, как поступать, если кто-то обнаружит фактическую ошибку?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если нам следует сравнить два варианта?"
+              "text": "**Könnten wir uns auf einen Plan B einigen, falls die Videokonferenz während des Bewerbungsgesprächs abbricht?**",
+              "translation_ru": "Можем договориться о запасном плане, если видеосвязь оборвётся во время собеседования?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если клиент попросил больше деталей?"
+              "text": "**Können wir absprechen, wie wir die Kinderbetreuung aufteilen, wenn einer von uns länger arbeiten muss?**",
+              "translation_ru": "Можем условиться, как распределить уход за ребёнком, если кому-то придётся работать допоздна?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Wäre es sinnvoll, jetzt schon zu vereinbaren, was wir machen, falls der Zug ausfällt?**",
+              "translation_ru": "Не лучше ли заранее договориться, что делать, если поезд отменят?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если данные нужно проверить ещё раз?"
+              "text": "**Können wir festlegen, wer entscheidet, wenn die Ergebnisse des Probelaufs nicht eindeutig sind?**",
+              "translation_ru": "Можем определить, кто будет принимать решение, если результаты пробного запуска окажутся неясными?"
             },
             {
-              "text": "**Können wir uns darauf einigen, was zu tun ist, wenn die Sitzung verschoben wurde?**",
-              "translation_ru": "Можем ли мы договориться, что делать, если встречу перенесли?"
+              "text": "**Könnten wir vereinbaren, wie wir Bedenken ansprechen, falls das Gespräch hitzig wird?**",
+              "translation_ru": "Можем заранее условиться, как поднимать спорные вопросы, если разговор накалится?"
             }
           ]
         }
       ],
       "formulas": [
-        "Can we agree on what to do if [the team needs another day to decide]?",
-        "Können wir uns darauf einigen, was zu tun ist, wenn [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Can we agree on [who/what/how] if [contingency]? / Could we agree on a fallback if [problem]?",
+        "Können wir [vereinbaren/festlegen], [wer/was/wie ...], falls [Störung]? / Können wir uns auf [Plan B] einigen, wenn [Bedingung]?"
       ],
       "gen": {
         "status": "curated",

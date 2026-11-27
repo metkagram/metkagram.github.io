@@ -101,85 +101,85 @@
       "id": "FUNCNS011",
       "group_id": "CNS",
       "set_id": "CNS",
-      "title_ru": "Хотя команде нужен ещё день для решения, было бы преждевременно делать вывод.",
-      "metaphor_ru": "Речевая задача: использовать функцию «уступка и контраст» в живом контексте.",
+      "title_ru": "Уступить в одном, не отказываясь от основного утверждения",
+      "metaphor_ru": "Although/obwohl связывают признанный факт с неожиданным или контрастным результатом. В немецком сказуемое придаточного с obwohl ставится в конец.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Although [the team needs another day to decide], it would be premature to draw a conclusion.",
-          "example": "Although the team needs another day to decide, it would be premature to draw a conclusion.",
-          "translation": "Хотя команде нужен ещё день для решения, было бы преждевременно делать вывод.",
+          "formula": "Although [conceded fact], [contrasting outcome or judgment].",
+          "example": "Although the train was delayed, we got to the exhibition before closing.",
+          "translation": "Хотя поезд задержался, мы успели на выставку до закрытия.",
           "examples": [
             {
-              "text": "**Although the team needs another day to decide, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя команде нужен ещё день для решения, было бы преждевременно делать вывод."
+              "text": "**Although the train was delayed, we got to the exhibition before closing.**",
+              "translation_ru": "Хотя поезд задержался, мы успели на выставку до закрытия."
             },
             {
-              "text": "**Although the revised plan has not been shared yet, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя обновлённым планом ещё не поделились, было бы преждевременно делать вывод."
+              "text": "**Although he sounds confident, he checks the sources before giving advice.**",
+              "translation_ru": "Хотя он говорит уверенно, перед советами он проверяет источники."
             },
             {
-              "text": "**Although we should compare the two options, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя нам следует сравнить два варианта, было бы преждевременно делать вывод."
+              "text": "**Although the instructions looked simple, several students missed the final step.**",
+              "translation_ru": "Хотя инструкция казалась простой, несколько студентов пропустили последний шаг."
             },
             {
-              "text": "**Although the client asked for more detail, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя клиент попросил больше деталей, было бы преждевременно делать вывод."
+              "text": "**Although I had promised to rest, I ended up repairing the leaking tap.**",
+              "translation_ru": "Хотя я собирался отдохнуть, в итоге пришлось чинить протекающий кран."
             },
             {
-              "text": "**Although the pilot may continue next month, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя пилотный проект может продолжиться в следующем месяце, было бы преждевременно делать вывод."
+              "text": "**Although the new route is longer, it feels safer after dark.**",
+              "translation_ru": "Хотя новый маршрут длиннее, в темноте по нему идти спокойнее."
             },
             {
-              "text": "**Although the data need another check, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя данные нужно проверить ещё раз, было бы преждевременно делать вывод."
+              "text": "**Although we disagree about the cause, we both want to solve the problem.**",
+              "translation_ru": "Хотя мы расходимся во мнениях о причине, оба хотим решить проблему."
             },
             {
-              "text": "**Although the meeting was moved, it would be premature to draw a conclusion.**",
-              "translation_ru": "Хотя встречу перенесли, было бы преждевременно делать вывод."
+              "text": "**Although her presentation wasn't polished, her central argument was persuasive.**",
+              "translation_ru": "Хотя её выступление было неидеальным, главный аргумент звучал убедительно."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Obwohl [das Team einen weiteren Tag für die Entscheidung braucht], wäre es verfrüht, eine Schlussfolgerung zu ziehen.",
-          "example": "Obwohl das Team einen weiteren Tag für die Entscheidung braucht, wäre es verfrüht, eine Schlussfolgerung zu ziehen.",
-          "translation": "Хотя команде нужен ещё день для решения, было бы преждевременно делать вывод.",
+          "formula": "Obwohl [Nebensatz mit Verb am Ende], [Hauptsatz mit Gegensatz].",
+          "example": "Obwohl der Zug Verspätung hatte, kamen wir noch vor Schließung zur Ausstellung.",
+          "translation": "Хотя поезд задержался, мы успели на выставку до закрытия.",
           "examples": [
             {
-              "text": "**Obwohl das Team einen weiteren Tag für die Entscheidung braucht, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя команде нужен ещё день для решения, было бы преждевременно делать вывод."
+              "text": "**Obwohl der Zug Verspätung hatte, kamen wir noch vor Schließung zur Ausstellung.**",
+              "translation_ru": "Хотя поезд задержался, мы успели на выставку до закрытия."
             },
             {
-              "text": "**Obwohl der überarbeitete Plan noch nicht geteilt wurde, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя обновлённым планом ещё не поделились, было бы преждевременно делать вывод."
+              "text": "**Obwohl er sehr sicher klingt, prüft er seine Quellen, bevor er Ratschläge gibt.**",
+              "translation_ru": "Хотя он говорит уверенно, перед советами он проверяет источники."
             },
             {
-              "text": "**Obwohl wir die beiden Optionen vergleichen sollten, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя нам следует сравнить два варианта, было бы преждевременно делать вывод."
+              "text": "**Obwohl die Anleitung einfach aussah, übersahen mehrere Studierende den letzten Schritt.**",
+              "translation_ru": "Хотя инструкция казалась простой, несколько студентов пропустили последний шаг."
             },
             {
-              "text": "**Obwohl der Kunde um mehr Details gebeten hat, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя клиент попросил больше деталей, было бы преждевременно делать вывод."
+              "text": "**Obwohl ich mir vorgenommen hatte, mich auszuruhen, habe ich schließlich den tropfenden Wasserhahn repariert.**",
+              "translation_ru": "Хотя я собирался отдохнуть, в итоге пришлось чинить протекающий кран."
             },
             {
-              "text": "**Obwohl das Pilotprojekt im nächsten Monat weiterlaufen kann, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя пилотный проект может продолжиться в следующем месяце, было бы преждевременно делать вывод."
+              "text": "**Obwohl der neue Weg länger ist, fühle ich mich dort nach Einbruch der Dunkelheit sicherer.**",
+              "translation_ru": "Хотя новый маршрут длиннее, в темноте по нему идти спокойнее."
             },
             {
-              "text": "**Obwohl die Daten noch einmal geprüft werden müssen, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя данные нужно проверить ещё раз, было бы преждевременно делать вывод."
+              "text": "**Obwohl wir über die Ursache uneinig sind, wollen wir beide das Problem lösen.**",
+              "translation_ru": "Хотя мы расходимся во мнениях о причине, оба хотим решить проблему."
             },
             {
-              "text": "**Obwohl die Sitzung verschoben wurde, wäre es verfrüht, eine Schlussfolgerung zu ziehen.**",
-              "translation_ru": "Хотя встречу перенесли, было бы преждевременно делать вывод."
+              "text": "**Obwohl ihr Vortrag nicht besonders geschliffen war, war ihr Hauptargument überzeugend.**",
+              "translation_ru": "Хотя её выступление было неидеальным, главный аргумент звучал убедительно."
             }
           ]
         }
       ],
       "formulas": [
-        "Although [the team needs another day to decide], it would be premature to draw a conclusion.",
-        "Obwohl [das Team einen weiteren Tag für die Entscheidung braucht], wäre es verfrüht, eine Schlussfolgerung zu ziehen."
+        "Although [conceded fact], [contrasting outcome or judgment].",
+        "Obwohl [Nebensatz mit Verb am Ende], [Hauptsatz mit Gegensatz]."
       ],
       "gen": {
         "status": "curated",
@@ -196,85 +196,85 @@
       "id": "FUNCNS021",
       "group_id": "CNS",
       "set_id": "CNS",
-      "title_ru": "Тем не менее нам всё ещё нужно проверить, команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «уступка и контраст» в живом контексте.",
+      "title_ru": "Признать сильную сторону и добавить существенную оговорку",
+      "metaphor_ru": "Сначала признайте аргумент собеседника, затем добавьте ограничение. Английское That said часто открывает новую фразу; немецкое Allerdings вводит естественное противопоставление с инверсией.",
       "langs": [
         {
           "lang": "en",
-          "formula": "That said, we still need to check whether [the team needs another day to decide].",
-          "example": "That said, we still need to check whether the team needs another day to decide.",
-          "translation": "Тем не менее нам всё ещё нужно проверить, команде нужен ещё день для решения.",
+          "formula": "[Acknowledge a strength]. That said, [important qualification].",
+          "example": "The new bus line would save time. That said, it wouldn't help people travelling late at night.",
+          "translation": "Новый автобусный маршрут сэкономил бы время. Правда, тем, кто ездит поздно вечером, он почти не поможет.",
           "examples": [
             {
-              "text": "**That said, we still need to check whether the team needs another day to decide.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, команде нужен ещё день для решения."
+              "text": "**The new bus line would save time. That said, it wouldn't help people travelling late at night.**",
+              "translation_ru": "Новый автобусный маршрут сэкономил бы время. Правда, тем, кто ездит поздно вечером, он почти не поможет."
             },
             {
-              "text": "**That said, we still need to check whether the revised plan has not been shared yet.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, обновлённым планом ещё не поделились."
+              "text": "**I understand why you want to move. That said, let's visit the neighbourhood after dark.**",
+              "translation_ru": "Я понимаю, почему ты хочешь переехать. Но давай сначала посмотрим на этот район вечером."
             },
             {
-              "text": "**That said, we still need to check whether we should compare the two options.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, нам следует сравнить два варианта."
+              "text": "**The course covers the basics well. That said, it offers little speaking practice.**",
+              "translation_ru": "Курс хорошо объясняет основы. При этом разговорной практики в нём мало."
             },
             {
-              "text": "**That said, we still need to check whether the client asked for more detail.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, клиент попросил больше деталей."
+              "text": "**The phone takes excellent photos. That said, the battery barely lasts a day.**",
+              "translation_ru": "Телефон отлично снимает. Но батареи едва хватает на день."
             },
             {
-              "text": "**That said, we still need to check whether the pilot may continue next month.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**We fixed the bug. That said, we still don't know what caused it.**",
+              "translation_ru": "Ошибку мы исправили. Однако её причину пока не установили."
             },
             {
-              "text": "**That said, we still need to check whether the data need another check.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, данные нужно проверить ещё раз."
+              "text": "**The proposal addresses the immediate problem. That said, it says nothing about maintenance costs.**",
+              "translation_ru": "Предложение решает срочную проблему. Но о расходах на обслуживание в нём ни слова."
             },
             {
-              "text": "**That said, we still need to check whether the meeting was moved.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, встречу перенесли."
+              "text": "**She made a compelling case. That said, the survey included only twenty people.**",
+              "translation_ru": "Она привела убедительные доводы. Однако в опросе участвовало всего двадцать человек."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Das gesagt, müssen wir dennoch prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Das gesagt, müssen wir dennoch prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Тем не менее нам всё ещё нужно проверить, команде нужен ещё день для решения.",
+          "formula": "[Zugeständnis]. Allerdings [Einschränkung mit Verbzweitstellung].",
+          "example": "Die neue Buslinie würde Zeit sparen. Allerdings würde sie Menschen, die spätabends unterwegs sind, kaum helfen.",
+          "translation": "Новый автобусный маршрут сэкономил бы время. Правда, тем, кто ездит поздно вечером, он почти не поможет.",
           "examples": [
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, команде нужен ещё день для решения."
+              "text": "**Die neue Buslinie würde Zeit sparen. Allerdings würde sie Menschen, die spätabends unterwegs sind, kaum helfen.**",
+              "translation_ru": "Новый автобусный маршрут сэкономил бы время. Правда, тем, кто ездит поздно вечером, он почти не поможет."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, обновлённым планом ещё не поделились."
+              "text": "**Ich verstehe, warum du umziehen möchtest. Allerdings sollten wir uns die Gegend auch abends ansehen.**",
+              "translation_ru": "Я понимаю, почему ты хочешь переехать. Но давай сначала посмотрим на этот район вечером."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, нам следует сравнить два варианта."
+              "text": "**Der Kurs vermittelt die Grundlagen gut. Allerdings kommt die Sprechpraxis zu kurz.**",
+              "translation_ru": "Курс хорошо объясняет основы. При этом разговорной практики в нём мало."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, клиент попросил больше деталей."
+              "text": "**Das Handy macht hervorragende Fotos. Allerdings hält der Akku kaum einen Tag durch.**",
+              "translation_ru": "Телефон отлично снимает. Но батареи едва хватает на день."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, пилотный проект может продолжиться в следующем месяце."
+              "text": "**Wir haben den Fehler behoben. Allerdings wissen wir noch nicht, wodurch er entstanden ist.**",
+              "translation_ru": "Ошибку мы исправили. Однако её причину пока не установили."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, данные нужно проверить ещё раз."
+              "text": "**Der Vorschlag löst das akute Problem. Allerdings lässt er die Wartungskosten offen.**",
+              "translation_ru": "Предложение решает срочную проблему. Но о расходах на обслуживание в нём ни слова."
             },
             {
-              "text": "**Das gesagt, müssen wir dennoch prüfen, ob die Sitzung verschoben wurde.**",
-              "translation_ru": "Тем не менее нам всё ещё нужно проверить, встречу перенесли."
+              "text": "**Sie hat überzeugend argumentiert. Allerdings wurden nur zwanzig Menschen befragt.**",
+              "translation_ru": "Она привела убедительные доводы. Однако в опросе участвовало всего двадцать человек."
             }
           ]
         }
       ],
       "formulas": [
-        "That said, we still need to check whether [the team needs another day to decide].",
-        "Das gesagt, müssen wir dennoch prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "[Acknowledge a strength]. That said, [important qualification].",
+        "[Zugeständnis]. Allerdings [Einschränkung mit Verbzweitstellung]."
       ],
       "gen": {
         "status": "curated",

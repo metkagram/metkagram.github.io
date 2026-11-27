@@ -196,85 +196,85 @@
       "id": "FUNSOC021",
       "group_id": "SOC",
       "set_id": "SOC",
-      "title_ru": "Спасибо, что объяснили, что команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «социальное взаимодействие» в живом контексте.",
+      "title_ru": "Поблагодарить за конкретное действие",
+      "metaphor_ru": "В английском thank someone for + глагол с -ing называет поступок, за который вы благодарите; отрицание not ставится перед -ing. Немецкий естественный аналог — Danke, dass… или sich bei jemandem dafür bedanken, dass… . Избегайте буквального дублирования dass, если можно назвать действие прямо.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Thank you for explaining that [the team needs another day to decide].",
-          "example": "Thank you for explaining that the team needs another day to decide.",
-          "translation": "Спасибо, что объяснили, что команде нужен ещё день для решения.",
+          "formula": "Thank [someone] for [verb-ing + specific action].",
+          "example": "Thanks for pointing out the missing step in my explanation.",
+          "translation": "Спасибо, что заметил пропущенный шаг в моём объяснении.",
           "examples": [
             {
-              "text": "**Thank you for explaining that the team needs another day to decide.**",
-              "translation_ru": "Спасибо, что объяснили, что команде нужен ещё день для решения."
+              "text": "**Thanks for pointing out the missing step in my explanation.**",
+              "translation_ru": "Спасибо, что заметил пропущенный шаг в моём объяснении."
             },
             {
-              "text": "**Thank you for explaining that the revised plan has not been shared yet.**",
-              "translation_ru": "Спасибо, что объяснили, что обновлённым планом ещё не поделились."
+              "text": "**Thank you for staying on the call until the connection was stable.**",
+              "translation_ru": "Спасибо, что оставались на связи, пока соединение не стало устойчивым."
             },
             {
-              "text": "**Thank you for explaining that we should compare the two options.**",
-              "translation_ru": "Спасибо, что объяснили, что нам следует сравнить два варианта."
+              "text": "**Thanks for checking on my father while I was away.**",
+              "translation_ru": "Спасибо, что навещал моего отца, пока меня не было."
             },
             {
-              "text": "**Thank you for explaining that the client asked for more detail.**",
-              "translation_ru": "Спасибо, что объяснили, что клиент попросил больше деталей."
+              "text": "**We wanted to thank the volunteers for making the path accessible again after the storm.**",
+              "translation_ru": "Мы хотели поблагодарить волонтёров за то, что после бури они снова сделали тропинку проходимой."
             },
             {
-              "text": "**Thank you for explaining that the pilot may continue next month.**",
-              "translation_ru": "Спасибо, что объяснили, что пилотный проект может продолжиться в следующем месяце."
+              "text": "**Thanks for not sharing the photo before asking everyone in it.**",
+              "translation_ru": "Спасибо, что не выкладывал фото, не спросив сначала разрешения у всех, кто на нём."
             },
             {
-              "text": "**Thank you for explaining that the data need another check.**",
-              "translation_ru": "Спасибо, что объяснили, что данные нужно проверить ещё раз."
+              "text": "**Thank you for explaining why the deadline was moved, even though the conversation was uncomfortable.**",
+              "translation_ru": "Спасибо, что объяснили причину переноса срока, хотя разговор был непростым."
             },
             {
-              "text": "**Thank you for explaining that the meeting was moved.**",
-              "translation_ru": "Спасибо, что объяснили, что встречу перенесли."
+              "text": "**I forgot to thank you for lending me your notes before the exam.**",
+              "translation_ru": "Я забыл поблагодарить тебя за конспекты, которые ты одолжил мне перед экзаменом."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Danke, dass Sie erklärt haben, dass [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Danke, dass Sie erklärt haben, dass das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Спасибо, что объяснили, что команде нужен ещё день для решения.",
+          "formula": "Danke, dass [Person + Verb am Ende] / sich bei [Person] dafür bedanken, dass [...].",
+          "example": "Danke, dass du mich auf den fehlenden Schritt in meiner Erklärung aufmerksam gemacht hast.",
+          "translation": "Спасибо, что заметил пропущенный шаг в моём объяснении.",
           "examples": [
             {
-              "text": "**Danke, dass Sie erklärt haben, dass das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Спасибо, что объяснили, что команде нужен ещё день для решения."
+              "text": "**Danke, dass du mich auf den fehlenden Schritt in meiner Erklärung aufmerksam gemacht hast.**",
+              "translation_ru": "Спасибо, что заметил пропущенный шаг в моём объяснении."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Спасибо, что объяснили, что обновлённым планом ещё не поделились."
+              "text": "**Vielen Dank, dass Sie in der Leitung geblieben sind, bis die Verbindung wieder stabil war.**",
+              "translation_ru": "Спасибо, что оставались на связи, пока соединение не стало устойчивым."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Спасибо, что объяснили, что нам следует сравнить два варианта."
+              "text": "**Danke, dass du während meiner Abwesenheit nach meinem Vater gesehen hast.**",
+              "translation_ru": "Спасибо, что присматривал за моим отцом, пока меня не было."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Спасибо, что объяснили, что клиент попросил больше деталей."
+              "text": "**Wir wollten uns bei den Freiwilligen dafür bedanken, dass sie den Weg nach dem Sturm wieder begehbar gemacht haben.**",
+              "translation_ru": "Мы хотели поблагодарить волонтёров за то, что после бури они снова сделали тропинку проходимой."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Спасибо, что объяснили, что пилотный проект может продолжиться в следующем месяце."
+              "text": "**Danke, dass du das Foto erst geteilt hast, nachdem du alle Abgebildeten gefragt hast.**",
+              "translation_ru": "Спасибо, что выложил фото только после того, как спросил разрешения у всех, кто на нём."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Спасибо, что объяснили, что данные нужно проверить ещё раз."
+              "text": "**Vielen Dank, dass Sie erklärt haben, warum die Frist verschoben wurde, obwohl das Gespräch unangenehm war.**",
+              "translation_ru": "Спасибо, что объяснили причину переноса срока, хотя разговор был непростым."
             },
             {
-              "text": "**Danke, dass Sie erklärt haben, dass die Sitzung verschoben wurde.**",
-              "translation_ru": "Спасибо, что объяснили, что встречу перенесли."
+              "text": "**Ich habe ganz vergessen, mich bei dir dafür zu bedanken, dass du mir vor der Prüfung deine Mitschriften geliehen hast.**",
+              "translation_ru": "Я совсем забыл поблагодарить тебя за конспекты, которые ты одолжил мне перед экзаменом."
             }
           ]
         }
       ],
       "formulas": [
-        "Thank you for explaining that [the team needs another day to decide].",
-        "Danke, dass Sie erklärt haben, dass [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "Thank [someone] for [verb-ing + specific action].",
+        "Danke, dass [Person + Verb am Ende] / sich bei [Person] dafür bedanken, dass [...]."
       ],
       "gen": {
         "status": "curated",

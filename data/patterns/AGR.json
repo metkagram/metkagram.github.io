@@ -99,6 +99,194 @@
       "title_en": "I can see the merit in [X], although I would [Y]",
       "description_en": "Acknowledge a useful part of another position before stating exactly where your own emphasis or recommendation differs.",
       "description_ru": "Признайте сильную сторону чужой позиции, а затем точно обозначьте, где ваш акцент или рекомендация отличаются."
+    },
+    {
+      "id": "C1AGR041",
+      "group_id": "AGR",
+      "set_id": "AGR",
+      "title_ru": "Признать довод, но оспорить вывод",
+      "metaphor_ru": "Сначала признайте разумный довод собеседника, затем покажите, что из него не обязательно следует предложенный вывод. В английском закрепляйте it doesn't follow that, в немецком — daraus folgt nicht, dass.",
+      "title_en": "I see the argument, but it doesn't necessarily follow that [Y]",
+      "description_en": "Acknowledge a legitimate concern while challenging an inference that goes beyond what the concern establishes.",
+      "description_ru": "Сначала признайте разумный довод собеседника, затем покажите, что из него не обязательно следует предложенный вывод. В английском закрепляйте it doesn't follow that, в немецком — daraus folgt nicht, dass.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "[Acknowledge X], but it doesn't (necessarily) follow that [Y].",
+          "example": "I understand why the school wants less screen time, but it doesn't follow that all digital homework should be banned.",
+          "translation": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания.",
+          "examples": [
+            {
+              "text": "**I understand why the school wants less screen time, but it doesn't follow that all digital homework should be banned.**",
+              "translation_ru": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания."
+            },
+            {
+              "text": "**It's fair to ask for a quieter street, but it doesn't necessarily follow that the bus stop has to move.**",
+              "translation_ru": "Желание сделать улицу тише вполне понятно, но это не обязательно означает, что остановку нужно переносить."
+            },
+            {
+              "text": "**I see why you want to protect your evenings, but it doesn't follow that you need to ignore every message from your friends.**",
+              "translation_ru": "Я понимаю, почему ты хочешь оставить вечера для себя, но ради этого необязательно игнорировать все сообщения друзей."
+            },
+            {
+              "text": "**We agree that the app collects too much data, but it doesn't follow that we should remove useful accessibility features.**",
+              "translation_ru": "Мы согласны, что приложение собирает слишком много данных, но это не значит, что нужно удалять полезные функции доступности."
+            },
+            {
+              "text": "**I understand the concern about rising rents, but it doesn't necessarily follow that new housing should be blocked.**",
+              "translation_ru": "Я понимаю тревогу из-за роста аренды, но это не обязательно довод против строительства нового жилья."
+            },
+            {
+              "text": "**You're right that the explanation was confusing, but it doesn't follow that the student misunderstood the whole topic.**",
+              "translation_ru": "Ты прав, объяснение было запутанным, но это ещё не значит, что ученик не понял всю тему."
+            },
+            {
+              "text": "**I take your point about the tight deadline, but it doesn't follow that we must skip the safety review.**",
+              "translation_ru": "Я понимаю твоё замечание о жёстком сроке, но из этого не следует, что проверкой безопасности можно пренебречь."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "[Einwand anerkennen], aber daraus folgt nicht (zwangsläufig), dass [Y].",
+          "example": "Ich verstehe, warum die Schule die Bildschirmzeit verringern will, aber daraus folgt nicht, dass digitale Hausaufgaben ganz verboten werden sollten.",
+          "translation": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания.",
+          "examples": [
+            {
+              "text": "**Ich verstehe, warum die Schule die Bildschirmzeit verringern will, aber daraus folgt nicht, dass digitale Hausaufgaben ganz verboten werden sollten.**",
+              "translation_ru": "Понимаю, почему школа хочет сократить экранное время, но это ещё не повод запрещать все цифровые домашние задания."
+            },
+            {
+              "text": "**Der Wunsch nach einer ruhigeren Straße ist berechtigt, aber daraus folgt nicht zwangsläufig, dass die Bushaltestelle verlegt werden muss.**",
+              "translation_ru": "Желание сделать улицу тише вполне понятно, но это не обязательно означает, что остановку нужно переносить."
+            },
+            {
+              "text": "**Ich verstehe, dass du deine Abende für dich haben möchtest, aber daraus folgt nicht, dass du jede Nachricht von Freunden ignorieren musst.**",
+              "translation_ru": "Я понимаю, почему ты хочешь оставить вечера для себя, но ради этого необязательно игнорировать все сообщения друзей."
+            },
+            {
+              "text": "**Wir sind uns einig, dass die App zu viele Daten sammelt, aber daraus folgt nicht, dass wir nützliche Funktionen zur Barrierefreiheit streichen sollten.**",
+              "translation_ru": "Мы согласны, что приложение собирает слишком много данных, но это не значит, что нужно удалять полезные функции доступности."
+            },
+            {
+              "text": "**Ich verstehe die Sorge über steigende Mieten, aber daraus folgt nicht zwangsläufig, dass der Bau neuer Wohnungen verhindert werden sollte.**",
+              "translation_ru": "Я понимаю тревогу из-за роста аренды, но это не обязательно довод против строительства нового жилья."
+            },
+            {
+              "text": "**Du hast recht, die Erklärung war verwirrend, aber daraus folgt nicht, dass der Schüler das gesamte Thema missverstanden hat.**",
+              "translation_ru": "Ты прав, объяснение было запутанным, но это ещё не значит, что ученик не понял всю тему."
+            },
+            {
+              "text": "**Deinen Einwand wegen der knappen Frist verstehe ich, aber daraus folgt nicht, dass wir auf die Sicherheitsprüfung verzichten müssen.**",
+              "translation_ru": "Я понимаю твоё замечание о жёстком сроке, но из этого не следует, что проверкой безопасности можно пренебречь."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "[Acknowledge X], but it doesn't (necessarily) follow that [Y].",
+        "[Einwand anerkennen], aber daraus folgt nicht (zwangsläufig), dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-09-26T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "C1 communicative frame: constructive disagreement with an inference."
+      }
+    },
+    {
+      "id": "C1AGR042",
+      "group_id": "AGR",
+      "set_id": "AGR",
+      "title_ru": "То, что [X], ещё не означает, что [Y]",
+      "metaphor_ru": "Отделяйте наблюдаемый факт от вывода, который из него вовсе не обязательно следует.",
+      "title_en": "Just because [X] doesn't mean [Y]",
+      "description_ru": "Разговорная конструкция для мягкого, но ясного возражения против поспешного вывода. В немецком после nur weil идёт придаточная часть с глаголом в конце.",
+      "description_en": "Push back on an unwarranted inference without denying the underlying fact; German uses a nur weil subordinate clause.",
+      "langs": [
+        {
+          "lang": "en",
+          "formula": "Just because [X] doesn't mean [Y].",
+          "example": "Just because Lena is quiet in meetings doesn't mean she has nothing to contribute.",
+          "translation": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить.",
+          "examples": [
+            {
+              "text": "**Just because Lena is quiet in meetings doesn't mean she has nothing to contribute.**",
+              "translation_ru": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить."
+            },
+            {
+              "text": "**Just because the repair was cheap doesn't mean the bicycle is safe to ride.**",
+              "translation_ru": "Недорогой ремонт ещё не означает, что на велосипеде безопасно ездить."
+            },
+            {
+              "text": "**Just because a headline has been shared thousands of times doesn't mean it's accurate.**",
+              "translation_ru": "То, что заголовком поделились тысячи раз, ещё не делает его достоверным."
+            },
+            {
+              "text": "**Just because I disagree with your plan doesn't mean I don't appreciate the effort that went into it.**",
+              "translation_ru": "То, что я не согласен с твоим планом, не означает, что я не ценю вложенные в него усилия."
+            },
+            {
+              "text": "**Just because a child can read individual words doesn't mean they're ready for a whole novel.**",
+              "translation_ru": "Если ребёнок умеет читать отдельные слова, это ещё не значит, что он готов осилить целый роман."
+            },
+            {
+              "text": "**Just because we've automated the import doesn't mean the data are now reliable.**",
+              "translation_ru": "Автоматизация импорта сама по себе ещё не означает, что данные теперь надёжны."
+            }
+          ]
+        },
+        {
+          "lang": "de",
+          "formula": "Nur weil [X], heißt das noch lange nicht, dass [Y].",
+          "example": "Nur weil Lena in Besprechungen wenig sagt, heißt das noch lange nicht, dass sie nichts beizutragen hat.",
+          "translation": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить.",
+          "examples": [
+            {
+              "text": "**Nur weil Lena in Besprechungen wenig sagt, heißt das noch lange nicht, dass sie nichts beizutragen hat.**",
+              "translation_ru": "То, что Лена мало говорит на встречах, вовсе не значит, что ей нечего добавить."
+            },
+            {
+              "text": "**Nur weil die Reparatur günstig war, heißt das noch lange nicht, dass das Fahrrad verkehrssicher ist.**",
+              "translation_ru": "Недорогой ремонт ещё не означает, что на велосипеде безопасно ездить."
+            },
+            {
+              "text": "**Nur weil eine Schlagzeile tausendfach geteilt wurde, heißt das noch lange nicht, dass sie stimmt.**",
+              "translation_ru": "То, что заголовком поделились тысячи раз, ещё не делает его достоверным."
+            },
+            {
+              "text": "**Nur weil ich deinem Plan widerspreche, heißt das noch lange nicht, dass ich die Arbeit, die darin steckt, nicht schätze.**",
+              "translation_ru": "То, что я не согласен с твоим планом, не означает, что я не ценю вложенные в него усилия."
+            },
+            {
+              "text": "**Nur weil ein Kind einzelne Wörter lesen kann, heißt das noch lange nicht, dass es schon einen ganzen Roman schafft.**",
+              "translation_ru": "Если ребёнок умеет читать отдельные слова, это ещё не значит, что он готов осилить целый роман."
+            },
+            {
+              "text": "**Nur weil wir den Import automatisiert haben, heißt das noch lange nicht, dass die Daten jetzt zuverlässig sind.**",
+              "translation_ru": "Автоматизация импорта сама по себе ещё не означает, что данные теперь надёжны."
+            }
+          ]
+        }
+      ],
+      "formulas": [
+        "Just because [X] doesn't mean [Y].",
+        "Nur weil [X], heißt das noch lange nicht, dass [Y]."
+      ],
+      "gen": {
+        "status": "curated",
+        "iterations": 1,
+        "lastGeneratedAt": "2026-10-11T00:00:00.000Z",
+        "languages": [
+          "en",
+          "de"
+        ],
+        "notes": "B2–C1 spoken concession/inference contrast. Local spaCy annotation pending."
+      }
     }
   ]
 }

@@ -101,85 +101,85 @@
       "id": "QSTQPRS011",
       "group_id": "QPRS",
       "set_id": "QPRS",
-      "title_ru": "Кого нам следует спросить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Кого нам следует спросить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Выяснить, у кого можно уточнить конкретный факт",
+      "metaphor_ru": "Найдите подходящий источник информации, не подменяя проверку догадкой. В английском тренируйте check with someone to find out whether, в немецком — bei jemandem nachfragen, ob с глаголом в конце придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Whom should we ask whether [the team needs another day to decide]?",
-          "example": "Whom should we ask whether the team needs another day to decide?",
-          "translation": "Кого нам следует спросить, команде нужен ещё день для решения?",
+          "formula": "Who should we check with to find out whether [fact]?",
+          "example": "Who should we check with to find out whether the footbridge is open after the floods?",
+          "translation": "У кого уточнить, открыт ли пешеходный мост после паводка?",
           "examples": [
             {
-              "text": "**Whom should we ask whether the team needs another day to decide?**",
-              "translation_ru": "Кого нам следует спросить, команде нужен ещё день для решения?"
+              "text": "Who should we check with to find out whether the footbridge is open after the floods?",
+              "translation_ru": "У кого уточнить, открыт ли пешеходный мост после паводка?"
             },
             {
-              "text": "**Whom should we ask whether the revised plan has not been shared yet?**",
-              "translation_ru": "Кого нам следует спросить, обновлённым планом ещё не поделились?"
+              "text": "Who should we check with to find out whether foreign qualifications are recognised here?",
+              "translation_ru": "У кого узнать, признаются ли здесь иностранные дипломы?"
             },
             {
-              "text": "**Whom should we ask whether we should compare the two options?**",
-              "translation_ru": "Кого нам следует спросить, нам следует сравнить два варианта?"
+              "text": "Who should we check with to find out whether the museum offers tours for visitors with hearing impairments?",
+              "translation_ru": "У кого уточнить, проводит ли музей экскурсии для посетителей с нарушениями слуха?"
             },
             {
-              "text": "**Whom should we ask whether the client asked for more detail?**",
-              "translation_ru": "Кого нам следует спросить, клиент попросил больше деталей?"
+              "text": "Who should we check with to find out whether the shared garden has a waiting list?",
+              "translation_ru": "У кого узнать, есть ли список ожидания для общего сада?"
             },
             {
-              "text": "**Whom should we ask whether the pilot may continue next month?**",
-              "translation_ru": "Кого нам следует спросить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "Who should we check with to find out whether recordings of the lectures are available?",
+              "translation_ru": "У кого спросить, доступны ли записи лекций?"
             },
             {
-              "text": "**Whom should we ask whether the data need another check?**",
-              "translation_ru": "Кого нам следует спросить, данные нужно проверить ещё раз?"
+              "text": "Who should we check with to find out whether the backup finished before the outage?",
+              "translation_ru": "У кого проверить, успела ли завершиться резервная копия до сбоя?"
             },
             {
-              "text": "**Whom should we ask whether the meeting was moved?**",
-              "translation_ru": "Кого нам следует спросить, встречу перенесли?"
+              "text": "Who should we check with to find out whether the theatre has changed the start time?",
+              "translation_ru": "У кого уточнить, перенёс ли театр начало спектакля?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wen sollten wir fragen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wen sollten wir fragen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Кого нам следует спросить, команде нужен ещё день для решения?",
+          "formula": "Bei wem sollten wir nachfragen, ob [Sachverhalt]?",
+          "example": "Bei wem sollten wir nachfragen, ob die Fußgängerbrücke nach dem Hochwasser wieder offen ist?",
+          "translation": "У кого уточнить, открыт ли пешеходный мост после паводка?",
           "examples": [
             {
-              "text": "**Wen sollten wir fragen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Кого нам следует спросить, команде нужен ещё день для решения?"
+              "text": "Bei wem sollten wir nachfragen, ob die Fußgängerbrücke nach dem Hochwasser wieder offen ist?",
+              "translation_ru": "У кого уточнить, открыт ли пешеходный мост после паводка?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Кого нам следует спросить, обновлённым планом ещё не поделились?"
+              "text": "Bei wem sollten wir nachfragen, ob ausländische Abschlüsse hier anerkannt werden?",
+              "translation_ru": "У кого узнать, признаются ли здесь иностранные дипломы?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Кого нам следует спросить, нам следует сравнить два варианта?"
+              "text": "Bei wem sollten wir nachfragen, ob das Museum Führungen für Menschen mit Hörbeeinträchtigung anbietet?",
+              "translation_ru": "У кого уточнить, проводит ли музей экскурсии для людей с нарушениями слуха?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Кого нам следует спросить, клиент попросил больше деталей?"
+              "text": "Bei wem sollten wir nachfragen, ob es für den Gemeinschaftsgarten eine Warteliste gibt?",
+              "translation_ru": "У кого узнать, есть ли список ожидания для общего сада?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Кого нам следует спросить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "Bei wem sollten wir nachfragen, ob Aufzeichnungen der Vorlesungen verfügbar sind?",
+              "translation_ru": "У кого спросить, доступны ли записи лекций?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Кого нам следует спросить, данные нужно проверить ещё раз?"
+              "text": "Bei wem sollten wir nachfragen, ob die Datensicherung vor dem Ausfall abgeschlossen war?",
+              "translation_ru": "У кого проверить, завершилось ли резервное копирование до сбоя?"
             },
             {
-              "text": "**Wen sollten wir fragen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Кого нам следует спросить, встречу перенесли?"
+              "text": "Bei wem sollten wir nachfragen, ob das Theater den Vorstellungsbeginn verschoben hat?",
+              "translation_ru": "У кого уточнить, перенёс ли театр начало спектакля?"
             }
           ]
         }
       ],
       "formulas": [
-        "Whom should we ask whether [the team needs another day to decide]?",
-        "Wen sollten wir fragen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "Who should we check with to find out whether [fact]?",
+        "Bei wem sollten wir nachfragen, ob [Sachverhalt]?"
       ],
       "gen": {
         "status": "curated",

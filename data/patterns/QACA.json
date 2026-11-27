@@ -101,85 +101,85 @@
       "id": "QSTQACA011",
       "group_id": "QACA",
       "set_id": "QACA",
-      "title_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Как мы могли бы проверить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Предложить способ проверки утверждения",
+      "metaphor_ru": "Вопрос How could we test the claim that требует проверяемого утверждения и обсуждения метода, а не впечатления. Немецкое eine Behauptung überprüfen передаёт ту же исследовательскую задачу.",
       "langs": [
         {
           "lang": "en",
-          "formula": "How could we test whether [the team needs another day to decide]?",
-          "example": "How could we test whether the team needs another day to decide?",
-          "translation": "Как мы могли бы проверить, команде нужен ещё день для решения?",
+          "formula": "How could we test the claim that [X]?",
+          "example": "How could we test the claim that a shorter commute improves sleep?",
+          "translation": "Как мы могли бы проверить утверждение, что более короткая дорога на работу улучшает сон?",
           "examples": [
             {
-              "text": "**How could we test whether the team needs another day to decide?**",
-              "translation_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?"
+              "text": "How could we test the claim that a shorter commute improves sleep?",
+              "translation_ru": "Как мы могли бы проверить утверждение, что более короткая дорога на работу улучшает сон?"
             },
             {
-              "text": "**How could we test whether the revised plan has not been shared yet?**",
-              "translation_ru": "Как мы могли бы проверить, обновлённым планом ещё не поделились?"
+              "text": "How could we test the claim that this water filter removes microplastics?",
+              "translation_ru": "Как проверить утверждение, что этот фильтр удаляет микропластик из воды?"
             },
             {
-              "text": "**How could we test whether we should compare the two options?**",
-              "translation_ru": "Как мы могли бы проверить, нам следует сравнить два варианта?"
+              "text": "How could we test the claim that people remember instructions better when they explain them aloud?",
+              "translation_ru": "Как проверить утверждение, что люди лучше запоминают инструкции, когда объясняют их вслух?"
             },
             {
-              "text": "**How could we test whether the client asked for more detail?**",
-              "translation_ru": "Как мы могли бы проверить, клиент попросил больше деталей?"
+              "text": "How could we test the claim that the bike lane has reduced traffic accidents?",
+              "translation_ru": "Как проверить утверждение, что велодорожка сократила число ДТП?"
             },
             {
-              "text": "**How could we test whether the pilot may continue next month?**",
-              "translation_ru": "Как мы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "How could we test the claim that older phones use less power in airplane mode?",
+              "translation_ru": "Как проверить утверждение, что старые телефоны тратят меньше энергии в авиарежиме?"
             },
             {
-              "text": "**How could we test whether the data need another check?**",
-              "translation_ru": "Как мы могли бы проверить, данные нужно проверить ещё раз?"
+              "text": "How could we test the claim that bread made with this recipe stays fresh longer?",
+              "translation_ru": "Как проверить утверждение, что хлеб по этому рецепту дольше остаётся свежим?"
             },
             {
-              "text": "**How could we test whether the meeting was moved?**",
-              "translation_ru": "Как мы могли бы проверить, встречу перенесли?"
+              "text": "How could we test the claim that reading together helps children learn new words?",
+              "translation_ru": "Как проверить утверждение, что совместное чтение помогает детям учить новые слова?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Wie könnten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Wie könnten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Как мы могли бы проверить, команде нужен ещё день для решения?",
+          "formula": "Wie könnten wir die Behauptung überprüfen, dass [X]?",
+          "example": "Wie könnten wir die Behauptung überprüfen, dass ein kürzerer Arbeitsweg den Schlaf verbessert?",
+          "translation": "Как проверить утверждение, что более короткая дорога на работу улучшает сон?",
           "examples": [
             {
-              "text": "**Wie könnten wir prüfen, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Как мы могли бы проверить, команде нужен ещё день для решения?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass ein kürzerer Arbeitsweg den Schlaf verbessert?",
+              "translation_ru": "Как проверить утверждение, что более короткая дорога на работу улучшает сон?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Как мы могли бы проверить, обновлённым планом ещё не поделились?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass dieser Wasserfilter Mikroplastik entfernt?",
+              "translation_ru": "Как можно проверить, действительно ли этот фильтр удаляет микропластик?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Как мы могли бы проверить, нам следует сравнить два варианта?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass sich Menschen Anweisungen besser merken, wenn sie sie laut erklären?",
+              "translation_ru": "Как проверить утверждение, что инструкции лучше запоминаются при объяснении вслух?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Как мы могли бы проверить, клиент попросил больше деталей?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass der Radweg die Zahl der Verkehrsunfälle gesenkt hat?",
+              "translation_ru": "Как проверить утверждение, что благодаря велодорожке стало меньше аварий?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Как мы могли бы проверить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass ältere Handys im Flugmodus weniger Strom verbrauchen?",
+              "translation_ru": "Как проверить утверждение, что старые телефоны потребляют меньше энергии в режиме полёта?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Как мы могли бы проверить, данные нужно проверить ещё раз?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass Brot nach diesem Rezept länger frisch bleibt?",
+              "translation_ru": "Как проверить утверждение, что хлеб по этому рецепту дольше не черствеет?"
             },
             {
-              "text": "**Wie könnten wir prüfen, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Как мы могли бы проверить, встречу перенесли?"
+              "text": "Wie könnten wir die Behauptung überprüfen, dass gemeinsames Lesen Kindern hilft, neue Wörter zu lernen?",
+              "translation_ru": "Как проверить утверждение, что чтение вместе со взрослыми помогает детям усваивать новые слова?"
             }
           ]
         }
       ],
       "formulas": [
-        "How could we test whether [the team needs another day to decide]?",
-        "Wie könnten wir prüfen, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "How could we test the claim that [X]?",
+        "Wie könnten wir die Behauptung überprüfen, dass [X]?"
       ],
       "gen": {
         "status": "curated",
@@ -291,85 +291,85 @@
       "id": "QSTQACA031",
       "group_id": "QACA",
       "set_id": "QACA",
-      "title_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
-      "metaphor_ru": "Речевая задача: задать вопрос «Какие данные нужны, чтобы решить, команде нужен ещё день для решения» в подходящей ситуации.",
+      "title_ru": "Определить, какие данные нужны для решения",
+      "metaphor_ru": "Прежде чем спорить о выводе, запросите конкретные данные, измерения или наблюдения для проверки альтернатив. В английском decide whether / find out whether требуют косвенного порядка слов; немецкое um zu entscheiden, ob ... и um herauszufinden, ob ... ставит спрягаемый глагол в конец придаточного.",
       "langs": [
         {
           "lang": "en",
-          "formula": "What data would we need to decide if [the team needs another day to decide]?",
-          "example": "What data would we need to decide if the team needs another day to decide?",
-          "translation": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
+          "formula": "What [data/evidence/measurements] would we need to decide whether [claim]? / What should we measure to find out whether [X]?",
+          "example": "What evidence would we need to decide whether the new bus route really saves residents time?",
+          "translation": "Какие данные нужны, чтобы понять, действительно ли новый автобусный маршрут экономит время жителям?",
           "examples": [
             {
-              "text": "**What data would we need to decide if the team needs another day to decide?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?"
+              "text": "**What evidence would we need to decide whether the new bus route really saves residents time?**",
+              "translation_ru": "Какие данные нужны, чтобы понять, действительно ли новый автобусный маршрут экономит время жителям?"
             },
             {
-              "text": "**What data would we need to decide if the revised plan has not been shared yet?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, обновлённым планом ещё не поделились?"
+              "text": "**Which measurements would tell us whether the air purifier helps with nighttime allergies?**",
+              "translation_ru": "Какие измерения покажут, помогает ли очиститель воздуха справляться с ночными приступами аллергии?"
             },
             {
-              "text": "**What data would we need to decide if we should compare the two options?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, нам следует сравнить два варианта?"
+              "text": "**What data would we need to judge whether shorter lessons improve long-term recall?**",
+              "translation_ru": "Какие данные помогли бы оценить, улучшают ли короткие занятия долговременное запоминание?"
             },
             {
-              "text": "**What data would we need to decide if the client asked for more detail?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, клиент попросил больше деталей?"
+              "text": "**How many independent reports would we need before deciding whether the trail is safe to reopen?**",
+              "translation_ru": "Сколько независимых отчётов понадобится, прежде чем решать, безопасно ли снова открывать тропу?"
             },
             {
-              "text": "**What data would we need to decide if the pilot may continue next month?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**What would we have to measure to find out whether the building loses most of its heat through the windows?**",
+              "translation_ru": "Что нужно измерить, чтобы выяснить, уходит ли большая часть тепла через окна?"
             },
             {
-              "text": "**What data would we need to decide if the data need another check?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, данные нужно проверить ещё раз?"
+              "text": "**What evidence would help us decide whether the phone's microphone works reliably on noisy streets?**",
+              "translation_ru": "Какие данные помогут решить, надёжно ли работает микрофон телефона на шумной улице?"
             },
             {
-              "text": "**What data would we need to decide if the meeting was moved?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, встречу перенесли?"
+              "text": "**Which observations would be enough to test whether the changes made the public website easier to use?**",
+              "translation_ru": "Каких наблюдений хватит, чтобы проверить, стало ли после изменений удобнее пользоваться публичным сайтом?"
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Welche Daten bräuchten wir, um zu entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?",
-          "example": "Welche Daten bräuchten wir, um zu entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?",
-          "translation": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?",
+          "formula": "Welche [Daten/Messwerte/Belege] bräuchten wir, um zu entscheiden, ob [Nebensatz]? / Was müssten wir messen, um herauszufinden, ob [X]?",
+          "example": "Welche Daten bräuchten wir, um zu entscheiden, ob die neue Buslinie den Anwohnern tatsächlich Zeit spart?",
+          "translation": "Какие данные нужны, чтобы выяснить, действительно ли новая автобусная линия экономит время жителям?",
           "examples": [
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob das Team einen weiteren Tag für die Entscheidung braucht?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, команде нужен ещё день для решения?"
+              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die neue Buslinie den Anwohnern tatsächlich Zeit spart?**",
+              "translation_ru": "Какие данные нужны, чтобы выяснить, действительно ли новая автобусная линия экономит время жителям?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob der überarbeitete Plan noch nicht geteilt wurde?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, обновлённым планом ещё не поделились?"
+              "text": "**Welche Messwerte würden uns zeigen, ob der Luftreiniger die nächtlichen Allergiebeschwerden lindert?**",
+              "translation_ru": "Какие результаты измерений покажут, облегчает ли очиститель воздуха симптомы аллергии по ночам?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob wir die beiden Optionen vergleichen sollten?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, нам следует сравнить два варианта?"
+              "text": "**Welche Daten müssten wir erheben, um zu beurteilen, ob kürzere Lerneinheiten langfristig besser im Gedächtnis bleiben?**",
+              "translation_ru": "Какие данные нужно собрать, чтобы оценить, лучше ли короткие уроки запоминаются надолго?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob der Kunde um mehr Details gebeten hat?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, клиент попросил больше деталей?"
+              "text": "**Wie viele voneinander unabhängige Berichte bräuchten wir, bevor wir entscheiden, ob der Wanderweg wieder sicher ist?**",
+              "translation_ru": "Сколько независимых отчётов понадобится, прежде чем мы решим, можно ли снова безопасно открыть тропу?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob das Pilotprojekt im nächsten Monat weiterlaufen kann?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, пилотный проект может продолжиться в следующем месяце?"
+              "text": "**Was müssten wir messen, um herauszufinden, ob das Haus den Großteil der Wärme über die Fenster verliert?**",
+              "translation_ru": "Что следовало бы измерить, чтобы понять, теряет ли дом большую часть тепла через окна?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die Daten noch einmal geprüft werden müssen?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, данные нужно проверить ещё раз?"
+              "text": "**Welche Belege würden uns helfen zu beurteilen, ob das Handymikrofon an einer lauten Straße zuverlässig funktioniert?**",
+              "translation_ru": "Какие данные помогут определить, стабильно ли работает микрофон телефона на шумной улице?"
             },
             {
-              "text": "**Welche Daten bräuchten wir, um zu entscheiden, ob die Sitzung verschoben wurde?**",
-              "translation_ru": "Какие данные нужны, чтобы решить, встречу перенесли?"
+              "text": "**Welche Beobachtungen würden ausreichen, um zu prüfen, ob die Änderungen die Website verständlicher gemacht haben?**",
+              "translation_ru": "Каких наблюдений было бы достаточно, чтобы проверить, сделали ли изменения сайт понятнее?"
             }
           ]
         }
       ],
       "formulas": [
-        "What data would we need to decide if [the team needs another day to decide]?",
-        "Welche Daten bräuchten wir, um zu entscheiden, ob [das Team einen weiteren Tag für die Entscheidung braucht]?"
+        "What [data/evidence/measurements] would we need to decide whether [claim]? / What should we measure to find out whether [X]?",
+        "Welche [Daten/Messwerte/Belege] bräuchten wir, um zu entscheiden, ob [Nebensatz]? / Was müssten wir messen, um herauszufinden, ob [X]?"
       ],
       "gen": {
         "status": "curated",

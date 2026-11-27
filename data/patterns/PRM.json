@@ -6,85 +6,85 @@
       "id": "FUNPRM001",
       "group_id": "PRM",
       "set_id": "PRM",
-      "title_ru": "Вы можете продолжить, если команде нужен ещё день для решения.",
-      "metaphor_ru": "Речевая задача: использовать функцию «разрешение и границы» в живом контексте.",
+      "title_ru": "Разрешить действие при соблюдении условия",
+      "metaphor_ru": "As long as / solange вводит условие, при котором разрешение действует. Это не безусловное «можно»: говорящий одновременно предлагает возможность и устанавливает её границы.",
       "langs": [
         {
           "lang": "en",
-          "formula": "You are welcome to proceed if [the team needs another day to decide].",
-          "example": "You are welcome to proceed if the team needs another day to decide.",
-          "translation": "Вы можете продолжить, если команде нужен ещё день для решения.",
+          "formula": "[Person] can/may [action] as long as [condition].",
+          "example": "You can borrow the bicycle as long as you bring it back before dark.",
+          "translation": "Можешь взять велосипед, если вернёшь его до темноты.",
           "examples": [
             {
-              "text": "**You are welcome to proceed if the team needs another day to decide.**",
-              "translation_ru": "Вы можете продолжить, если команде нужен ещё день для решения."
+              "text": "**You can borrow the bicycle as long as you bring it back before dark.**",
+              "translation_ru": "Можешь взять велосипед, если вернёшь его до темноты."
             },
             {
-              "text": "**You are welcome to proceed if the revised plan has not been shared yet.**",
-              "translation_ru": "Вы можете продолжить, если обновлённым планом ещё не поделились."
+              "text": "**Guests can use the garden as long as they keep the gate shut.**",
+              "translation_ru": "Гости могут пользоваться садом, если будут закрывать калитку."
             },
             {
-              "text": "**You are welcome to proceed if we should compare the two options.**",
-              "translation_ru": "Вы можете продолжить, если нам следует сравнить два варианта."
+              "text": "**You can quote my interview as long as you don't take the answer out of context.**",
+              "translation_ru": "Можешь цитировать моё интервью, если не будешь вырывать ответ из контекста."
             },
             {
-              "text": "**You are welcome to proceed if the client asked for more detail.**",
-              "translation_ru": "Вы можете продолжить, если клиент попросил больше деталей."
+              "text": "**Students can consult a dictionary as long as they don't use translation apps.**",
+              "translation_ru": "Студентам можно пользоваться словарём, но не приложениями-переводчиками."
             },
             {
-              "text": "**You are welcome to proceed if the pilot may continue next month.**",
-              "translation_ru": "Вы можете продолжить, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**You can share the photos as long as everyone in them has agreed.**",
+              "translation_ru": "Можешь публиковать фотографии, если все, кто на них есть, дали согласие."
             },
             {
-              "text": "**You are welcome to proceed if the data need another check.**",
-              "translation_ru": "Вы можете продолжить, если данные нужно проверить ещё раз."
+              "text": "**Visitors can record the talk as long as they ask the speaker beforehand.**",
+              "translation_ru": "Посетители могут записывать выступление, если заранее спросят разрешения у докладчика."
             },
             {
-              "text": "**You are welcome to proceed if the meeting was moved.**",
-              "translation_ru": "Вы можете продолжить, если встречу перенесли."
+              "text": "**We can extend the trial as long as participants can opt out at any time.**",
+              "translation_ru": "Мы можем продлить тестирование, если участники смогут отказаться от него в любой момент."
             }
           ]
         },
         {
           "lang": "de",
-          "formula": "Sie können gern fortfahren, wenn [das Team einen weiteren Tag für die Entscheidung braucht].",
-          "example": "Sie können gern fortfahren, wenn das Team einen weiteren Tag für die Entscheidung braucht.",
-          "translation": "Вы можете продолжить, если команде нужен ещё день для решения.",
+          "formula": "[Person] kann/darf [Handlung], solange [Bedingung].",
+          "example": "Du kannst dir das Fahrrad leihen, solange du es vor Einbruch der Dunkelheit zurückbringst.",
+          "translation": "Можешь взять велосипед, если вернёшь его до темноты.",
           "examples": [
             {
-              "text": "**Sie können gern fortfahren, wenn das Team einen weiteren Tag für die Entscheidung braucht.**",
-              "translation_ru": "Вы можете продолжить, если команде нужен ещё день для решения."
+              "text": "**Du kannst dir das Fahrrad leihen, solange du es vor Einbruch der Dunkelheit zurückbringst.**",
+              "translation_ru": "Можешь взять велосипед, если вернёшь его до темноты."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn der überarbeitete Plan noch nicht geteilt wurde.**",
-              "translation_ru": "Вы можете продолжить, если обновлённым планом ещё не поделились."
+              "text": "**Die Gäste dürfen den Garten benutzen, solange sie das Tor geschlossen halten.**",
+              "translation_ru": "Гости могут пользоваться садом, если будут закрывать ворота."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn wir die beiden Optionen vergleichen sollten.**",
-              "translation_ru": "Вы можете продолжить, если нам следует сравнить два варианта."
+              "text": "**Du kannst aus meinem Interview zitieren, solange du die Antwort nicht aus dem Zusammenhang reißt.**",
+              "translation_ru": "Можешь цитировать моё интервью, если не станешь вырывать ответ из контекста."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn der Kunde um mehr Details gebeten hat.**",
-              "translation_ru": "Вы можете продолжить, если клиент попросил больше деталей."
+              "text": "**Studierende dürfen ein Wörterbuch benutzen, solange sie keine Übersetzungs-Apps verwenden.**",
+              "translation_ru": "Студентам можно пользоваться словарём, но не приложениями для перевода."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn das Pilotprojekt im nächsten Monat weiterlaufen kann.**",
-              "translation_ru": "Вы можете продолжить, если пилотный проект может продолжиться в следующем месяце."
+              "text": "**Du kannst die Fotos teilen, solange alle Abgebildeten damit einverstanden sind.**",
+              "translation_ru": "Можешь делиться фотографиями, если все изображённые на них согласны."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn die Daten noch einmal geprüft werden müssen.**",
-              "translation_ru": "Вы можете продолжить, если данные нужно проверить ещё раз."
+              "text": "**Besucher dürfen den Vortrag aufzeichnen, solange sie die Rednerin vorher um Erlaubnis bitten.**",
+              "translation_ru": "Посетители могут записывать выступление, если заранее попросят разрешения у докладчицы."
             },
             {
-              "text": "**Sie können gern fortfahren, wenn die Sitzung verschoben wurde.**",
-              "translation_ru": "Вы можете продолжить, если встречу перенесли."
+              "text": "**Wir können die Testphase verlängern, solange die Teilnehmenden jederzeit aussteigen können.**",
+              "translation_ru": "Мы можем продлить тестирование, если участники смогут выйти из него в любой момент."
             }
           ]
         }
       ],
       "formulas": [
-        "You are welcome to proceed if [the team needs another day to decide].",
-        "Sie können gern fortfahren, wenn [das Team einen weiteren Tag für die Entscheidung braucht]."
+        "[Person] can/may [action] as long as [condition].",
+        "[Person] kann/darf [Handlung], solange [Bedingung]."
       ],
       "gen": {
         "status": "curated",
