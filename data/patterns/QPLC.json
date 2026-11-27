@@ -6,12 +6,12 @@
       "id": "QSTQPLC001",
       "group_id": "QPLC",
       "set_id": "QPLC",
-      "title_ru": "Где лучше обсудить спорный вопрос",
-      "metaphor_ru": "Выберите подходящее место или формат для обсуждения открытого вопроса. Английское discuss не требует about; после whether сохраняется прямой порядок слов. Немецкое besprechen с ob также вводит косвенный вопрос, но глагол придаточного стоит в конце.",
+      "title_ru": "Выбрать место для обсуждения",
+      "metaphor_ru": "Выберите подходящее место или формат для обсуждения открытого вопроса. Английское discuss не требует about; после whether сохраняется прямой порядок слов, а при совпадении субъекта возможен инфинитив с to. Немецкое besprechen с ob вводит косвенный вопрос, в котором спрягаемый глагол стоит в конце.",
       "langs": [
         {
           "lang": "en",
-          "formula": "Where should [subject] discuss whether [clause]?",
+          "formula": "Where should [subject] discuss whether [clause / to-infinitive]?",
           "example": "Where should we discuss whether the rent increase is justified?",
           "translation": "Где нам лучше обсудить, обосновано ли повышение арендной платы?",
           "examples": [
@@ -83,7 +83,7 @@
         }
       ],
       "formulas": [
-        "Where should [subject] discuss whether [clause]?",
+        "Where should [subject] discuss whether [clause / to-infinitive]?",
         "Wo sollte/sollten [Subjekt] besprechen, ob [Nebensatz]?"
       ],
       "gen": {
